@@ -4,7 +4,7 @@ Los medios de pago ofrecidos por Mercado Pago varían según cada país.
 
 ## Obteniendo los medios de pago
 
-Los medios disponibles pueden ser obtenidos programáticamente de la siguiente forma:
+Los medios pueden ser obtenidos de la siguiente forma:
 
 **GET /v1/payment_methods**
 
@@ -58,7 +58,7 @@ Los medios disponibles pueden ser obtenidos programáticamente de la siguiente f
 		...
 	]
 
-Los medios incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago. Podrás obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).
+Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).
 
 ## Medios de pago por país
 
@@ -110,25 +110,47 @@ Giftcard                	| `digital_currency`       | `giftcard`
 
 Medio de pago   				| Payment Type ID          | ID  
 :-------------------------	| :----------------------- |:--------------------
-Visa							| Tarjeta de Crédito       | `visa`
-MasterCard					| Tarjeta de Crédito       | `master`
-American Express				| Tarjeta de Crédito       | `amex`
-Diners Club International	| Tarjeta de Crédito       | `diners`
-Tarjeta CMR             	| Tarjeta de Crédito       | `cmr`
-Tarjeta Magna             	| Tarjeta de Crédito       | `magna`
-Tarjeta Magna             	| Tarjeta de Crédito       | `presto`
-Servipag      				| Efectivo                 | `servipag`
+Visa							| `credit_card`            | `visa`
+MasterCard					| `credit_card`            | `master`
+American Express				| `credit_card`            | `amex`
+Diners Club International	| `credit_card`            | `diners`
+Tarjeta CMR             	| `credit_card`            | `cmr`
+Tarjeta Magna             	| `credit_card`            | `magna`
+Tarjeta Magna             	| `credit_card`            | `presto`
+Servipag      				| `ticket`                 | `servipag`
 
 ### Colombia
 
 Medio de pago   				| Payment Type ID          | ID  
 :-------------------------	| :----------------------- |:--------------------
-Visa							| Tarjeta de Crédito       | `visa`
-MasterCard					| Tarjeta de Crédito       | `master`
-American Express				| Tarjeta de Crédito       | `amex`
-Diners Club International	| Tarjeta de Crédito       | `diners`
-Crédito Fácil Codensa    	| Tarjeta de Crédito       | `codensa`
-Diners Club International	| Tarjeta de Crédito       | `diners`
-Efecty        				| Efectivo                 | `efecty`
-Davivienda       			| Efectivo                 | `davivienda`
-PSE    			       	| Transferencia Bancaria   | `pse`
+Visa							| `credit_card`            | `visa`
+MasterCard					| `credit_card`            | `master`
+American Express				| `credit_card`            | `amex`
+Diners Club International	| `credit_card`            | `diners`
+Crédito Fácil Codensa    	| `credit_card`            | `codensa`
+Diners Club International	| `credit_card`            | `diners`
+Efecty        				| `ticket`                 | `efecty`
+Davivienda       			| `ticket`                 | `davivienda`
+PSE    			       	| `bank_transfer`          | `pse`
+
+### México
+
+Medio de pago   				| Payment Type ID          | ID  
+:-------------------------	| :----------------------- |:--------------------
+Visa							| `credit_card`            | `visa`
+
+### Perú
+
+Medio de pago   				| Payment Type ID          | ID  
+:-------------------------	| :----------------------- |:--------------------
+Visa							| `credit_card`            | `visa`
+
+### Uruguay
+
+Medio de pago   				| Payment Type ID          | ID  
+:-------------------------	| :----------------------- |:--------------------
+Visa							| `credit_card`            | `visa`
+
+
+
+
