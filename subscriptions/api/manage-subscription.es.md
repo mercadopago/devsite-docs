@@ -42,7 +42,7 @@ HTTP status code: 200 OK
 }
 ```
 
-Además, puedes hacerlo directamente desde el sitio de MercadoPago. Accede a la sección Suscripciones, selecciona los usuarios necesarios y confirma la acción.
+Además, puedes hacerlo directamente desde el sitio de Mercado Pago. Accede a la sección Suscripciones, selecciona los usuarios necesarios y confirma la acción.
 
 ## Pausar y reactivar una suscripción
 
@@ -79,7 +79,7 @@ Para reactivar una suscripción debes hacerlo de la siguiente manera:
 curl -X PUT \
         -H 'accept: application/json' \
         -H 'content-type: application/json' \
-        'https://api.mercadopago.com/v1/subscriptions/SUBSCRIPTION_ID?access_token=TEST-7977993246787016-031011-8be58d53e97be0035353cf87b084bf63__LB_LC__-130379930' \
+        'https://api.mercadopago.com/v1/subscriptions/SUBSCRIPTION_ID?access_token=ACCESS_TOKEN' \
         -d '{
                 "status": "authorized"
         }'
