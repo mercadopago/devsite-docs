@@ -162,7 +162,7 @@ En muchos casos es útil realizar un cobro extra al momento de suscribir a tu us
 
 ### Cobra una comisión por transacción
 
-Si implementas MercadoPago Connect y operas con las credenciales de tus usuarios conectados; puedes cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario. Para esto sólo debes agregar dicho monto en el parámetro application_fee al crear el plan:
+Si implementas Marketplace y operas con las credenciales de tus usuarios conectados; puedes cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario. Para esto sólo debes agregar dicho monto en el parámetro application_fee al crear el plan:
 
 ```curl
 {
