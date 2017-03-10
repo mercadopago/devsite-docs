@@ -55,7 +55,7 @@ Realiza un POST especificando el identificador del plan y del customer a asociar
 curl -X POST \
         -H 'accept: application/json' \
         -H 'content-type: application/json' \
-'https://api.mercadopago.com/v1/subscriptions?access_token=TEST-7977993246787016-031011-8be58d53e97be0035353cf87b084bf63__LB_LC__-130379930' \
+        'https://api.mercadopago.com/v1/subscriptions?access_token=ACCESS_TOKEN' \
         -d '{
                 "plan_id": "PLAN_ID",
                 "payer": {
