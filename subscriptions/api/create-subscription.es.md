@@ -193,3 +193,15 @@ Algunas opciones son:
 ### Acciona ante rechazos de pago
 
 Cada pago rechazado te será notificado mediante [Webhooks](). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+
+## Próximos pasos
+
+### Activa notificaciones de pagos
+
+Podrás saber todo lo que sucede durante el ciclo de vida de todas las suscripciones de tus customers a través de los Webhooks. Además de recibir eventos ante las creaciones y modificaciones de planes y suscripciones, podrás saber cuándo se crea un nuevo invoice y cuándo se procesan cada uno de los pagos en cuestión. También podrás saber si la tarjeta usada en los pagos por tu usuario está próxima a vencer, así podrás pedirle que la actualice. Visita la sección [Webhooks](#) para  hacerlo.
+
+Ten siempre presente los posibles [estados de un invoice](), para saber si ya está pago, si hay dificultades con el cobro y se están realizando reintentos, o si ya no procederá a cobrarse.
+
+### Prueba tu integración
+
+Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello te ofrecemos usuarios y tarjetas de prueba. Visita la sección [Probando](#) para  hacerlo.
