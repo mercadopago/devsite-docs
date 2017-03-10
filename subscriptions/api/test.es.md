@@ -2,7 +2,7 @@
 
 Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello, puedes utilizar tarjetas de prueba y simular las distintas respuestas de pagos, sin necesidad de utilizar una tarjeta real.
 
-Para eso, utiliza tus credenciales de Sandbox y alguna de las tarjetas que te facilitamos a continuación, dependiendo de tu país:
+Utiliza tus credenciales de Sandbox y alguna de las tarjetas que te facilitamos a continuación, dependiendo de tu país:
 
 | País       | Visa                | Mastercard          | American Express  |
 | ---------- | ------------------- | ------------------- | ----------------- |
@@ -14,7 +14,7 @@ Para eso, utiliza tus credenciales de Sandbox y alguna de las tarjetas que te fa
 | Perú       | 4009 1753 3280 6176 | no disponible       | no disponible     |
 | Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | no disponible     |
 
-Tenemos [más tarjetas de prueba]() disponibles para medios de pago locales de cada país.
+> Tenemos [más tarjetas de prueba]() disponibles para medios de pago locales de cada país.
 
 Para probar los posibles resultados de un pago, utiliza alguno de los siguientes prefijos en el campo `name` de **/card_tokens** o en el campo `cardholderName`:
 
