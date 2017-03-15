@@ -106,4 +106,4 @@ Entonces, es importante que expires la preferencia de pagos cuando supere la fec
 ```
 
 
-
+Para conocer más sobre los atributos de la preferencia, [consultá la documentación de la API](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/)
