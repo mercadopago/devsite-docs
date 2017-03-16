@@ -1,5 +1,5 @@
-#Checkout
-##Qué es?
+# Checkout
+## Qué es?
 
 Recibe pagos en cuestion de minutos, integrando nuestro checkout. Te brindamos todas las herramientas necesarias para que puedas cobrar a través de nuestro formulario de manera simple, rápida y segura.   
 
@@ -14,7 +14,7 @@ Trabajamos para que tus usuarios tengan la mejor experiencia de pago ofreciendo:
 *   Todos los **medios de pago** con la mejor **financiación**: Pago con Tarjeta de crédito o débito, transferencia bancaria, efectivo mediante pago fácil o rapipago o dinero en cuenta. Utiliza nuestros banners de tarjetas y promociones para que tu cliente conozca las promociones.
 
 
-##Cómo funciona
+## Cómo funciona
 
 Integrar el checkout es muy fácil:
 
@@ -23,14 +23,14 @@ Integrar el checkout es muy fácil:
 3. Inicia el proceso de pago desde un botón en tu sitio.
 4. Enterate del pago escuchando notificaciones.
 
-###Incluye Mercado Envíos
+### Incluye Mercado Envíos
 
 Te damos todo resuelto! Recibí el pago del producto y del envío en la misma operación.  
 Sólo tenes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. 
 En tu preferencia de pagos, debes incluir el atributo que indica que vas a activar Mercado Envíos y listo, nosotros nos encargamos de todo.  
 
 
-#Matriz Cross-Country
+
 
 
 
