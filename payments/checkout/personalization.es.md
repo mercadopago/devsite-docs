@@ -1,4 +1,4 @@
-#Personalización
+# Personalización
 
 ## ¿Qué se puede definir desde la Preferencia?
 
@@ -43,7 +43,7 @@ Enviar datos del comprador, además de servir de input para los sistemas de frau
 		
 ```
 
-###Indica URLs de Retorno
+### Indica URLs de Retorno
 
 Al finalizar el proceso de pago, es muy importante que comuniques a tu comprador cuáles son los siguientes pasos y de ésta manera darle confianza respecto del resultado de la operación. Para ello, utilizamos las **back_urls** y el atributo **auto_return** para que se redirecciones en forma automática pasados los 5 segundos.
 
