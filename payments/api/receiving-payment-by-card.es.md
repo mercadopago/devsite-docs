@@ -101,7 +101,7 @@ Es importante que obtengamos el medio de pago de la tarjeta para poder realizar 
 
 Esto puede ser realizado utilizando el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este método acepta dos parámetros: un json con parámetros y una función de callback.
 
-```
+```javascript
 Mercadopago.getPaymentMethod({
     "bin": bin
 }, setPaymentMethodInfo);
@@ -134,7 +134,7 @@ Enviando el `form`, y utilizando los atributos `data-checkout` se realiza la cap
 
 El método `createToken` devolverá un card_token, la representación segura de la tarjeta:
 
-```
+```json
 {
     "id": "ff8080814cbd77a8014cc",
     "public_key": "TEST-b3d5b663-664a-4e8f-b759-de5d7c12ef8f",
@@ -166,7 +166,7 @@ El segundo campo del método `createToken` es `sdkResponseHandler`, la cual es u
 
 Utilizaremos esta para crear un campo oculto (input hidden), y almacenaremos el valor de `id`, para luego enviar el formulario a tus servidores.
 
-```
+```javascript
 function sdkResponseHandler(status, response) {
     if (status != 200 && status != 201) {
         alert("verify filled data");
@@ -187,11 +187,11 @@ Puedes descargar el ejemplo completo desde [aquí](#).
 
 ## Recibir un pago con tarjeta
 
-Debemos obtener de los parametros enviados en el `POST` el id del `card_token` para realizar un pago único.
+Debes obtener de los parametros enviados en el `POST` el id del `card_token` para realizar un pago único.
 
 Los `card_token` tienen una validez de *7 días* y son de único uso.
 
-Para realizar el pago solamente debemos realizar un API call:
+Para realizar el pago solamente debes realizar un API call:
 
 ```php
 <?php
@@ -201,12 +201,12 @@ require_once ('mercadopago.php');
 $mp = new MP('SECRET_ACCESS_TOKEN');
 
 $payment_data = array(
-	"transaction_amount" => 100,
-	"token" => "ff8080814c11e237014c1ff593b57b4d",
-	"payment_method_id" => "visa",
-	"payer" => array (
-		"email" => "test_user_19653727@testuser.com"
-	)
+    "transaction_amount" => 100,
+    "token" => "ff8080814c11e237014c1ff593b57b4d",
+    "payment_method_id" => "visa",
+    "payer" => array (
+        "email" => "test_user_19653727@testuser.com"
+    )
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
@@ -226,7 +226,7 @@ El campo `installments` corresponde a la cantidad de cuotas que el comprador eli
 
 Para obtener las cuotas disponibles 
 
-```
+```javascript
 Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount
@@ -235,27 +235,27 @@ Mercadopago.getInstallments({
 
 La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recomendado para cada una de las cuotas disponibles indicando el valor a pagar:
 
-```
+```json
 [
   {
     "payment_method_id": "amex",
     "payment_type_id": "credit_card",
     "issuer": {
-      "id": "310",
-       ...,
-      {
-        "installments": 3,
-        "installment_rate": 18.9,
-        "discount_rate": 0,
-        "labels": [
-        ],
-        "min_allowed_amount": 2,
-        "max_allowed_amount": 250000,
-        "recommended_message": "3 cuotas de $ 396,33 ($ 1.189,00)",
-        "installment_amount": 396.33,
-        "total_amount": 1189
-      }
-      ...,
+        "id": "310",
+        ...,
+        {
+            "installments": 3,
+            "installment_rate": 18.9,
+            "discount_rate": 0,
+            "labels": [
+            ],
+            "min_allowed_amount": 2,
+            "max_allowed_amount": 250000,
+            "recommended_message": "3 cuotas de $ 396,33 ($ 1.189,00)",
+            "installment_amount": 396.33,
+            "total_amount": 1189
+        }
+        ...,
     ]
   }
 ]
@@ -272,14 +272,14 @@ require_once ('mercadopago.php');
 $mp = new MP('SECRET_ACCESS_TOKEN');
 
 $payment_data = array(
-	"transaction_amount" => 100,
-	"token" => "ff8080814c11e237014c1ff593b57b4d",
-	"payer" => array (
-		"email" => "test_user_19653727@testuser.com"
-	),
-	"installments" => 3,
-	"payment_method_id" => "amex",
-	"issuer_id" => 310
+    "transaction_amount" => 100,
+    "token" => "ff8080814c11e237014c1ff593b57b4d",
+    "payer" => array (
+        "email" => "test_user_19653727@testuser.com"
+    ),
+    "installments" => 3,
+    "payment_method_id" => "amex",
+    "issuer_id" => 310
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
@@ -293,6 +293,103 @@ Te recomendamos leer el artículo sobre el [manejo de respuestas](handling-respo
 
 ## Recibir una notificación del pago
 
-WIP
+Es importante que te enteres de cualquier actualización del estado de tu pago. Para esto se deben utilizar _Webhooks_.
 
-Tokenización + Payment Methods + Payment + Cuotas + Intro a gestión de estados + Webhook
+Un _Webhook_ es una notificación que se envía de un servidor a otro mediante un request `HTTP POST`.
+
+### Configuración
+
+Para recibir _webhooks_ debes [configurar una URL](https://www.mercadopago.com/mla/account/webhooks) donde recibirás las notificaciones.
+
+### Notificaciones
+
+Las notificaciones serán recibidas mediante un request `HTTP POST`. El body recibido en este request será un JSON:
+
+```json
+{
+    "id": 12345,
+    "live_mode": true,
+    "type": "payment",
+    "date_created": "2016-03-25T10:04:58.396-04:00",
+    "user_id": 44444,
+    "api_version": "v1",
+    "action": "payment.created",
+    "data": {
+        "id": "999999999"
+    }
+}
+```
+
+Esto indica que se creó el pago **999999999** para el usuario **44444** en **modo productivo** con la versión V1 de la API. Dicho evento ocurrió en la fecha **2016-03-25T10:04:58.396-04:00**.
+
+El listado de posibles notificaciones:
+
+| Tipo de notificación |           Acción           |         Descripción          |
+| :------------------- | :------------------------- | :--------------------------- |
+| `payment`            | `payment.created`          | Creación de un pago          |
+| `payment`            | `payment.updated`          | Actualización de un pago     |
+| `mp-connect`         | `application.deauthorized` | Desvinculación de una cuenta |
+| `mp-connect`         | `application.authorized`   | Vinculación de una cuenta    |
+| `plan`               | `application.authorized`   | Vinculación de una cuenta    |
+| `subscription`       | `application.authorized`   | Vinculación de una cuenta    |
+| `invoice`            | `application.authorized`   | Vinculación de una cuenta    |
+
+
+### Qué hacer al recibir una notificación
+
+Cuando recibas una notificación de tipo `payment` en tu plataforma, esta indicará que se creo o actualizó un pago, pero no tenemos la información del estado del pago (Por ejemplo, aprobado).
+
+Para obtener el estado del pago debes realizar un request `HTTP GET`:
+
+```php
+<?php
+require_once "mercadopago.php";
+
+$mp = new MP("ACCESS_TOKEN");
+
+$json_event = file_get_contents('php://input', true);
+$event = json_decode($json_event);
+
+// Validamos que el body tenga el atributo data y data->id
+if (!isset($event->type, $event->data) || !ctype_digit($event->data->id)) {
+    http_response_code(400);
+    return;
+}
+
+if ($event->type == 'payment'){
+    // Obtener la información del pago para el payment id recibido
+    $payment_info = $mp->get('/v1/payments/'.$event->data->id);
+
+    if ($payment_info["status"] == 200) {
+        // El pago fue encontrado
+        print_r($payment_info["response"]);
+        // Mostramos el status
+        print_r($payment_info["response"]["status"]);
+        http_response_code(200);
+    }
+}
+?>
+```
+
+Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
+
+Si tu aplicación responde un error `4XX`, Mercado Pago no reintentará enviar la notificación.
+
+> Recuerda que esta comunicación es exclusivamente entre los servidores de MercadoPago y tu servidor, por lo cual no habrá un usuario físico viendo ningún tipo de resultado.
+
+### Reintentos
+
+Si tu aplicación no se encuentra disponible o demora mucho en responder, Mercado Pago reintentará enviar la notificación mediante el siguiente esquema:
+
+1. Reintento a los 5 minutos.
+2. Reintento a los 45 minutos.
+3. Reintento a las 6 horas.
+4. Reintento a los 2 días.
+5. Reintento a los 4 días.
+
+Es necesario que cuando la recibas devuelvas una respuesta `HTTP STATUS 200 (OK)` ó `201 (CREATED)` para recibir notificaciones duplicadas.
+
+
+## Próximos pasos
+
+### Integra 

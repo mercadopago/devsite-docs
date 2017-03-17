@@ -2,6 +2,8 @@
 
 Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees, manteniendo la experiencia de compra.
 
+# !!! SUMAR BENEFICIOS !!!
+
 ## Comenzando
 
 Contamos con dos entornos, _sandbox_ y _production_. El entorno _sandbox_ es el que utilizaras para realizar la integración, y donde puedes utilizar tarjetas de crédito de pruebas.
