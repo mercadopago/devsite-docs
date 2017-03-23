@@ -392,4 +392,8 @@ Es necesario que cuando la recibas devuelvas una respuesta `HTTP STATUS 200 (OK)
 
 ## Próximos pasos
 
-### Integra 
+### Recibe pagos con tarjetas guardadas
+
+Puedes almacenar de forma segura las tarjetas de tus clientes y realizar cobros con una experiencia one-click-to-buy.
+
+[Más información](customers-and-cards.es.md)
