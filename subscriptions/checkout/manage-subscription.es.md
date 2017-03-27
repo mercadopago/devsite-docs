@@ -2,9 +2,9 @@
 
 Índice de contenido:
 
-1. [Actualizar el monto de una suscripción]()
-2. [Pausar y reactivar una suscripción]()
-3. [Cancelar una suscripción]()
+1. [Actualizar el monto de una suscripción](#actualizar-el-monto-de-una-suscripción)
+2. [Pausar y reactivar una suscripción](#pausar-y-reactivar-una-suscripción)
+3. [Cancelar una suscripción](#cancelar-una-suscripción)
 
 
 ## Actualizar el monto de una suscripción
@@ -102,7 +102,7 @@ HTTP status code: 200 OK
 
 **Importante:** los períodos que transcurran durante la pausa de la suscripción no serán cobrados, aunque la suscripción seguirá ejecutando su agenda. 
 
-## Cancelar un plan o una suscripción
+## Cancelar una suscripción
 
 Puedes cancelar las suscripciones en cualquier momento. De este modo, se dejará de cobrar a tus clientes.
 
