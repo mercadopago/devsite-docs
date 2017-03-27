@@ -2,6 +2,12 @@
 
 Crea planes de suscripción y suscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
+> Pre-requisitos:
+> 
+> * Tener implementada la [captura de datos de tarjeta]().
+> * Almacenar [clientes y tarjetas]().
+
+
 ## Crea un plan de suscripción
 
 Realiza un POST a la API indicando cuánto será el monto del plan y cada cuánto tiempo debe cobrarse a los customers que suscribas. En el siguiente ejemplo, cobraremos $200 cada mes:
@@ -63,7 +69,7 @@ curl -X POST \
                 }
         }'
 ```
-> El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de suscripciones. [Revisa la documentación de clientes y tarjetas]() para conocer cómo hacerlo.
+> El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de suscripciones.
 
 **Respuesta:**
 
