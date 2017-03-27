@@ -19,7 +19,7 @@ require_once ('mercadopago.php');
 $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
 ```
 
-Luego, deberás agregar los atributos de tu preferencia de pago:
+Luego, deberás agregar los atributos de tu preferencia:
 
 ```php
 $preapproval_data = array(
@@ -38,6 +38,7 @@ $preapproval_data = array(
 $preapproval = $mp->create_preapproval_payment($preapproval_data);
 ?>
 ```
+> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](#añade-características-especiales-a-tu-plan).
 
 Por último, debes agregar un botón para abrir el Checkout. Utiliza la URL que encontrarás en el atributo `init_point` en la respuesta de la creación de tu preferencia.
 
@@ -91,21 +92,16 @@ Puedes indicar que las suscripciones sólo durarán un período determinado de t
 
 ## Consideraciones y sugerencias
 
-Es recomendable seguir una serie de buenas prácticas para que los índices de aprobación sean los mejores posibles durante el tiempo de vida de la suscripción. Ten en cuenta que es posible que sólo dispongas de la atención de tu usuario al momento de darse de alta en tu servicio, y toda comunicación futura puede resultar complicada de llevarse a cabo. Por esto es que debes asegurarte de lograr la mejor condición posible de suscripción, durante el alta.
-
 Mercado Pago realizará su mejor esfuerzo posible para lograr que tus suscripciones resulten pagas, sin requerir acción alguna de tu parte. En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago y se prosiga a agendar el próximo.
 
 Cada pago rechazado te será notificado mediante [Notificaciones](). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
-
-
 
 ## Próximos pasos
 
 ### Activa notificaciones de pagos
 
-Puedes recibir notificaciones cada vez que se cree un nuevo pago o se modifique uno ya existente. Esto te permitirá conocer el estado del pago, administrar tu stock y mantener tu sistema sincronizado. Visita la sección [Notificaciones](#) para  hacerlo.
-
+Puedes recibir notificaciones cada vez que se cree un nuevo pago o se modifique uno ya existente. Esto te permitirá conocer el estado del pago, administrar tu stock y mantener tu sistema sincronizado. Visita la sección [Notificaciones](#).
 
 ### Prueba tu integración
 
-Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello te ofrecemos usuario y tarjetas de prueba. Visita la sección [Probando](#) para  hacerlo.
+Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello te ofrecemos usuario y tarjetas de prueba. Visita la sección [Probando](#).
