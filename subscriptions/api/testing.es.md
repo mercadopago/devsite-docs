@@ -16,7 +16,7 @@ Utiliza tus credenciales de Sandbox y alguna de las tarjetas que te facilitamos 
 
 > Tenemos [más tarjetas de prueba]() disponibles para medios de pago locales de cada país.
 
-Para probar los posibles resultados de un pago, utiliza alguno de los siguientes prefijos en el campo `name` de **/card_tokens** o en el campo `cardholderName`:
+Para probar los posibles resultados de un pago, utiliza alguno de los siguientes prefijos en el campo `name` de */card_tokens* o en el campo `cardholderName`:
 
 | Prefijo | Descripción                     |
 | ------- | ------------------------------- |
@@ -29,4 +29,4 @@ Para probar los posibles resultados de un pago, utiliza alguno de los siguientes
 | FORM    | Rechazo por error en formulario |
 | OTHE    | Rechazo general                 |
 
-Una vez finalices tus pruebas y estés listo para recibir pagos productivos, deberás reemplazar las [credenciales]() por las de producción y pasar un [proceso de homologación](). **No necesitas cambiar otra cosa de tu código**.
+Una vez finalices tus pruebas y estés listo para recibir pagos productivos, deberás reemplazar las [credenciales]() por las de producción y [activar el Modo Producción](#). **No necesitas cambiar otra cosa de tu código**.
