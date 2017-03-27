@@ -38,7 +38,7 @@ $preapproval_data = array(
 $preapproval = $mp->create_preapproval_payment($preapproval_data);
 ?>
 ```
-> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](#añade-características-especiales-a-tu-plan).
+> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu suscripción](#añade-características-especiales-a-tu-suscripción).
 
 Por último, debes agregar un botón para abrir el Checkout. Utiliza la URL que encontrarás en el atributo `init_point` en la respuesta de la creación de tu preferencia.
 
@@ -54,9 +54,9 @@ Por último, debes agregar un botón para abrir el Checkout. Utiliza la URL que 
 </html>
 ```
 
-## Añade características especiales a tu plan
+## Añade características especiales a tu suscripción
 
-Revisa el [API Doc de Preapproval]() para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Revisa el [API Doc de Preapproval]() para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear una suscripcin. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
 ### Ofrece un período gratuito de prueba
 
