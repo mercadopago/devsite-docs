@@ -4,8 +4,8 @@ Crea planes de suscripción y suscribe a tus clientes para recibir pagos de form
 
 > Pre-requisitos:
 > 
-> * Tener implementada la [captura de datos de tarjeta]().
-> * Almacenar [clientes y tarjetas]().
+> * Tener implementada la [captura de datos de tarjeta](#).
+> * Almacenar [clientes y tarjetas](#).
 
 
 ## Crea un plan de suscripción
@@ -27,7 +27,7 @@ curl -X POST \
         }'
 ```
 
-> Estos son los datos mínimos e indispensables para crear un plan, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan]().
+> Estos son los datos mínimos e indispensables para crear un plan, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](#añade-características-especiales-a-tu-plan).
 
 **Respuesta:**
 
@@ -99,7 +99,7 @@ Se generarán `invoices` en cada período de pago, para que recibas tus cobros d
 
 ## Añade características especiales a tu plan
 
-Revisa el [API Doc de plans]() para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Revisa el [API Doc de plans](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
 ### Limita la cantidad de cuotas de la suscripción
 
@@ -168,7 +168,7 @@ En muchos casos es útil realizar un cobro extra al momento de suscribir a tu us
 
 ### Cobra una comisión por transacción
 
-Si implementas [Marketplace]() y operas con las credenciales de tus usuarios conectados; puedes cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario. Para esto sólo debes agregar dicho monto en el parámetro application_fee al crear el plan:
+Si implementas [Marketplace](#) y operas con las credenciales de tus usuarios conectados; puedes cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario. Para esto sólo debes agregar dicho monto en el parámetro application_fee al crear el plan:
 
 ```curl
 {
@@ -179,8 +179,6 @@ Si implementas [Marketplace]() y operas con las credenciales de tus usuarios con
 ```
 
 ## Consideraciones y sugerencias
-
-Es recomendable seguir una serie de buenas prácticas para que los índices de aprobación sean los mejores posibles durante el tiempo de vida de la suscripción. Ten en cuenta que es posible que sólo dispongas de la atención de tu usuario al momento de darse de alta en tu servicio, y toda comunicación futura puede resultar complicada de llevarse a cabo. Por esto es que debes asegurarte de lograr la mejor condición posible de suscripción, durante el alta.
 
 Mercado Pago realizará su mejor esfuerzo posible para lograr que tus `invoices` resulten pagos, sin requerir acción alguna de tu parte. En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el `invoice` quede marcado como impago y se prosiga a agendar el próximo.
 
@@ -198,16 +196,16 @@ Algunas opciones son:
 
 ### Acciona ante rechazos de pago
 
-Cada pago rechazado te será notificado mediante [Webhooks](). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+Cada pago rechazado te será notificado mediante [Webhooks](#). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
 ## Próximos pasos
 
-### Activa notificaciones de pagos
+### Activa las notificaciones
 
-Podrás saber todo lo que sucede durante el ciclo de vida de todas las suscripciones de tus customers a través de los Webhooks. Además de recibir eventos ante las creaciones y modificaciones de planes y suscripciones, podrás saber cuándo se crea un nuevo invoice y cuándo se procesan cada uno de los pagos en cuestión. También podrás saber si la tarjeta usada en los pagos por tu usuario está próxima a vencer, así podrás pedirle que la actualice. Visita la sección [Webhooks](#) para  hacerlo.
+Podrás saber todo lo que sucede durante el ciclo de vida de todas las suscripciones de tus customers a través de los Webhooks. Además de recibir eventos ante las creaciones y modificaciones de planes y suscripciones, podrás saber cuándo se crea un nuevo invoice y cuándo se procesan cada uno de los pagos en cuestión. También podrás saber si la tarjeta usada en los pagos por tu usuario está próxima a vencer, así podrás pedirle que la actualice. Visita la sección [Webhooks](#).
 
-Ten siempre presente los posibles [estados de un invoice](), para saber si ya está pago, si hay dificultades con el cobro y se están realizando reintentos, o si ya no procederá a cobrarse.
+Ten siempre presente los posibles [estados de un invoice](#), para saber si ya está pago, si hay dificultades con el cobro y se están realizando reintentos, o si ya no procederá a cobrarse.
 
 ### Prueba tu integración
 
-Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello te ofrecemos usuarios y tarjetas de prueba. Visita la sección [Probando](#) para  hacerlo.
+Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello utiliza tus credenciales de Modo Sandbox y las tarjetas de prueba. Visita la sección [Probando](#).
