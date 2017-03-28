@@ -23,7 +23,7 @@ Para hacer uso de esta librería debes comenzar insertando el siguiente en nuest
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
->_**Nota**_: Es importante que la librería **siempre** se importe desde _https://secure.mlstatic.com_.
+> _**Nota**_: Es importante que la librería **siempre** se importe desde _https://secure.mlstatic.com_.
 
 ### 2. Configura tu public key
 
@@ -83,7 +83,7 @@ El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer est
 </form>
 ```
 
->_**Importante:**_ Los campos que tienen datos sensibles no cuentan con el atributo `name`, de esta forma nunca llegarán a tus servidores.
+> _**Importante:**_ Los campos que tienen datos sensibles no cuentan con el atributo `name`, de esta forma nunca llegarán a tus servidores.
 
 #### Obtener el tipo de documento
 
