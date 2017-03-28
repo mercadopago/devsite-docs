@@ -63,6 +63,112 @@ Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta 
 
 ## Capturar un pago
 
-WIP
+Para poder cobrarle a tu cliente es necesario capturar los fondos que reservaste.
+
+Es posible realizar la captura por el monto total o de forma parcial.
+
+### Capturar el monto total de una reserva
+
+Para hacer la captura por el monto total solo debes enviar el atributo `capture` en **true** en un request `HTTP PUT`.
+
+```php
+<?php
+require_once ('mercadopago.php');
+
+$mp = new MP('ACCESS_TOKEN');
+
+$payment_data = array(
+	"capture" => true
+);
+
+$payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+```
+
+La respuesta esperada actualizará el status a `approved` con un status_detail `accredited`:
+
+```json
+{
+  ...
+  "status": "approved",
+  "status_detail": "accredited",
+  ...
+  "captured": true,
+  ...
+}
+```
+
+Siempre que no especifiques un monto se capturará el monto total reservado.
+
+> _**Nota**_: Si la reserva había sido exitosa, la operación de captura siempre será exitosa también.
 
 ### Capturar un pago por un monto menor al reservado
+
+> En Argentina solo disponible para Visa y American Express
+
+Si decides capturar por un monto menor al reservado, es necesario que además de enviar el atributo `capture`, envies el atributo `transaction_amount` con el nuevo monto.
+
+```php
+<?php
+require_once ('mercadopago.php');
+
+$mp = new MP('ACCESS_TOKEN');
+
+$payment_data = array(
+	"transaction_amount" => 75,
+	"capture" => true
+);
+
+$payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+```
+
+Respuesta:
+
+```json
+{
+  ...
+  "status": "approved",
+  "status_detail": "accredited",
+  ...
+  "transaction_amount": 75,
+  ...
+  "captured": true,
+  ...
+}
+```
+
+> _**Nota**_: No es posible capturar un monto mayor al reservado, para eso es necesario realizar cancelar la reserva y generar una nueva.
+
+
+## Cancelar una reserva
+
+Si no harás uso del dinero reservado, es importante que canceles la reserva para liberar el dinero de la tarjeta.
+
+Para hacer esto debes actualizar el atributo `status` del pago a un estado `cancelled`:
+
+```php
+<?php
+require_once ('mercadopago.php');
+
+$mp = new MP('ACCESS_TOKEN');
+
+$payment_data = array(
+	"status" => "cancelled"
+);
+
+$payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+```
+
+Respuesta:
+
+```json
+{
+  ...
+  "status": "cancelled",
+  "status_detail": "by_collector",
+  ...
+  "captured": false,
+  ...
+}
+```
+
+> _**Nota**_: Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía Webhooks del cambio de estado del pago.
