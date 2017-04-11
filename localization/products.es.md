@@ -1,21 +1,18 @@
 # Productos
 
-Los productos ofrecidos por Mercado Pago varían según cada país.
+Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 
 ## Disponibilidad por país
 
 Producto                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
 :---------------------- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |
-Botón de pago           | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+Botón de cobro          | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
 Checkout                | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
-API                     | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+API                     | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |      | ✔    |
 
-*Con distinto soporte de medios de pago. Ver detalle debajo.
+## Medios de pago no disponibles
 
-
-## Detalle por país
-
-Puede suceder que determinados [medios de pago]() no estén disponibles en algunos productos. A continuación se indica dicho detalle.
+Puede suceder que determinados [medios de pago]() no estén disponibles en algunos productos. A continuación se indica en detalle que medios de pago no están disponibles por producto, por país.
 
 ### Argentina
 
