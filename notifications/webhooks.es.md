@@ -74,7 +74,7 @@ Utiliza las credenciales de tu aplicación:
  <?php
 require_once "mercadopago.php";
 
-$mp = new MP("TEST-7977993246787016-031011-8be58d53e97be0035353cf87b084bf63__LB_LC__-130379930");
+$mp = new MP("ACCESS_TOKEN");
 
 $json_event = file_get_contents('php://input', true);
 $event = json_decode($json_event);
