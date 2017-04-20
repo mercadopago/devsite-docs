@@ -5,25 +5,26 @@ MercadoPago te permite acceder a la información de las cuentas de tus clientes.
 Además, si eres una tienda virtual o cualquier otro sistema que permita a tus clientes cobrar, puedes ofrecerles cualquier solución de pagos y cobrar una comisión por el servicio.
 
 
-## Como es el flujo?
+## Cómo es el flujo?
 
-Cuando tu cliente desee conectar su cuenta de Mercado Pago a la tuya para que gestiones sus pagos, tendrá que atravesar los siguientes pasos:
+Cuando tu cliente desee conectar su cuenta de Mercado Pago a tu aplicación para que gestiones sus pagos, tendrá que realizar los siguientes pasos:
 
-1. Comenzando en una página de tu sitio, tu cliente tendr un link que lo llevará a una ventana de Mercado Pago donde podrá darte permisos para que gestiones sus cobros.
+1. Comenzando en tu sitio, tu cliente podrá vincular su cuenta a tu aplicación a través de un link que lo llevará a una ventana de Mercado Pago. De este modo, podrá darle a tu aplicación los permisos necesarios para gestionar sus cobros.
 
 2. En la ventana de Mercado Pago, tu cliente deberá iniciar sesión con su cuenta de Mercado Pago o crear una nueva cuenta en caso que no tenga una.
 
-3. Una vez que finalice el flujo en la ventana de Mercado Pago, el cliente será redirigido nuevamente a tu sitio (especificamente a la redirect_uri de tu aplicación), enviando un código de autorización o un error si la vinculación de cuentas no fue exitosa.
+3. Una vez que finalice el flujo, el cliente será redirigido nuevamente a tu sitio (especificamente a la redirect_uri definida en tu aplicación), enviando un código de autorización. En caso que la vinculación sea denegada, recibirás un error en lugar del código de autorización.
 
 4. Tu sitio usará el código de autorización del paso anterior para obtener las credenciales de tu cliente y almacenarlas en tu sitio.
 
-5. A partir de este momento, podrás gestionar los pagos de tu cliente utilizando las credenciales autorizadas obtenidas en el paso anterior.
+5. A partir de este momento, podrás gestionar los pagos de tu cliente utilizando las credenciales obtenidas en el paso anterior.
 
 ## Implementación
 
 ### 1. Crea tu aplicación
 
 Crea tu aplicación y obtén el APP_ID (identificador de aplicación) necesario para el siguiente paso. 
+
 Asegúrate de marcar la opción para indicar que deseas operar en modo marketplace y seleccionar el scope offline_access.
 
 ### 2. Conecta tus usuarios
@@ -41,11 +42,9 @@ Este AUTHORIZATION_CODE tiene un tiempo de validez de 10 minutos, así que aseg�
 
 Consejo: puedes incluir algún parámetro en redirect_uri para identificar a qué vendedor corresponde el código de autorización que recibiste, como su e-mail, el ID de usuario en tu sistema o cualquier otra referencia útil. 
 
-Puedes recibir notificaciones vía Webhooks cada vez que un usuario autorice o desautorice tu aplicación.
-
 ### 3. Obtén las credenciales de tu usuario
 
-Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.
+Usa el código de autorización obtenido en el paso anterior para generar las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.
 
 Utiliza las credenciales de tu aplicación:  
 SHORT_NAME:
@@ -86,7 +85,7 @@ Además del access_token y la public_key generados para ser usados como las cred
 Consejo: Guarda y mantén actualizadas las credenciales obtenidas, asociadas a tus usuarios, ya que las necesitarás para operar más adelante. Si no lo haces, deberás volver a solicitar la autorización al usuario.
 
 ### 4. Recibe notificaciones
-Utilizá webhooks para recibir todas las novedades respecto a las vinculaciones o desvinculaciones a tu aplicación.
+Utilizá webhooks para recibir todas las novedades cada vez que un cliente autorice o desautorice tu aplicación.
 
 
 ## Tu cliente ya está conectado!
