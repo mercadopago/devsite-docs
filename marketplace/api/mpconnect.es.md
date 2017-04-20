@@ -1,14 +1,35 @@
-# MP Connect
+# Vinculando cuentas
 
-## Antes de empezar
+MercadoPago te permite acceder a la información de las cuentas de tus clientes. Esto te posibilita realizar cobros para ellos y acceder a la información de los mismos.
+
+Además, si eres una tienda virtual o cualquier otro sistema que permita a tus clientes cobrar, puedes ofrecerles cualquier solución de pagos y cobrar una comisión por el servicio.
+
+
+## Como es el flujo?
+
+Cuando tu cliente desee conectar su cuenta de Mercado Pago a la tuya para que gestiones sus pagos, tendrá que atravesar los siguientes pasos:
+
+1. Comenzando en una página de tu sitio, tu cliente tendr un link que lo llevará a una ventana de Mercado Pago donde podrá darte permisos para que gestiones sus cobros.
+
+2. En la ventana de Mercado Pago, tu cliente deberá iniciar sesión con su cuenta de Mercado Pago o crear una nueva cuenta en caso que no tenga una.
+
+3. Una vez que finalice el flujo en la ventana de Mercado Pago, el cliente será redirigido nuevamente a tu sitio (especificamente a la redirect_uri de tu aplicación), enviando un código de autorización o un error si la vinculación de cuentas no fue exitosa.
+
+4. Tu sitio usará el código de autorización del paso anterior para obtener las credenciales de tu cliente y almacenarlas en tu sitio.
+
+5. A partir de este momento, podrás gestionar los pagos de tu cliente utilizando las credenciales autorizadas obtenidas en el paso anterior.
+
+## Implementación
+
+### 1. Crea tu aplicación
 
 Crea tu aplicación y obtén el APP_ID (identificador de aplicación) necesario para el siguiente paso. 
-
 Asegúrate de marcar la opción para indicar que deseas operar en modo marketplace y seleccionar el scope offline_access.
 
-## Conecta tus usuarios
+### 2. Conecta tus usuarios
 
-Para operar en MercadoPago en nombre de tu usuario, debes primero solicitarle autorización. Para esto, redirige al usuario a la siguiente URL enviando en client_id el valor de APP_ID que obtuviste en el paso anterior:
+Para operar en MercadoPago en nombre de tu cliente, debes primero solicitarle autorización. 
+Para esto, redirige a tu cliente a la siguiente URL enviando en client_id el valor de APP_ID que obtuviste en el paso anterior:
 
 https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com
 
@@ -22,7 +43,7 @@ Consejo: puedes incluir algún parámetro en redirect_uri para identificar a qu�
 
 Puedes recibir notificaciones vía Webhooks cada vez que un usuario autorice o desautorice tu aplicación.
 
-## Obtén las credenciales de tu usuario
+### 3. Obtén las credenciales de tu usuario
 
 Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.
 
@@ -64,4 +85,12 @@ Además del access_token y la public_key generados para ser usados como las cred
 
 Consejo: Guarda y mantén actualizadas las credenciales obtenidas, asociadas a tus usuarios, ya que las necesitarás para operar más adelante. Si no lo haces, deberás volver a solicitar la autorización al usuario.
 
+### 4. Recibe notificaciones
+Utilizá webhooks para recibir todas las novedades respecto a las vinculaciones o desvinculaciones a tu aplicación.
 
+
+## Tu cliente ya está conectado!
+A partir de ahora, podes gestionar los pagos de tu cliente utilizando las credenciales que obtuviste.
+
+## Próximos pasos:
+Recibir un pago para tu cliente cobrando o no una comisión.
