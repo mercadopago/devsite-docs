@@ -4,9 +4,26 @@ Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 
 ## Disponibilidad por país
 
+### Pagos:
+
 Producto                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
 :---------------------- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |
 Botón de cobro          | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+Checkout                | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+API                     | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |      | ✔    |
+
+### Suscripciones:
+
+Producto                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
+:---------------------- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |
+Botón de cobro          | ✔    | ✔    |      |      | ✔    |      |      |      |
+Checkout                | ✔    | ✔    |      |      | ✔    |      |      |      |
+API                     | ✔    | ✔    |      |      | ✔    |      |      |      |
+
+### Marketplace:
+
+Producto                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
+:---------------------- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |
 Checkout                | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
 API                     | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |      | ✔    |
 
@@ -21,6 +38,7 @@ Producto                | Medios de pago no disponibles
 Botón de pago           | N/A
 Checkout                | N/A
 API                     | N/A
+Suscripciones           | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `cmr_master`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `rapipago`, `rapipago`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
 
 ### Brasil
 
@@ -29,6 +47,7 @@ Producto                | Medios de pago no disponibles
 Botón de pago           | N/A
 Checkout                | N/A
 API                     | N/A
+Suscripciones           | `bolbradesco`, `giftcard`
 
 ### Chile
 
@@ -46,6 +65,15 @@ Botón de pago           | N/A
 Checkout                | `davivienda`
 API                     | `pse`
 
+### México
+
+Producto                | Medios de pago no disponibles
+:---------------------- |:------------------------------- |
+Botón de pago           | N/A
+Checkout                | N/A
+API                     | N/A
+Suscripciones           | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
+
 ### Perú
 
 Producto                | Medios de pago no disponibles
@@ -62,7 +90,6 @@ Botón de pago           | N/A
 Checkout                | N/A
 API                     | N/A
 
-
 ### Venezuela
 
 Producto                | Medios de pago no disponibles
@@ -70,4 +97,3 @@ Producto                | Medios de pago no disponibles
 Botón de pago           | N/A
 Checkout                | N/A
 API                     | N/A
-
