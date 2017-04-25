@@ -66,91 +66,122 @@ A continuación se indican los medios de pago disponibles para cada país.
 
 ### Argentina
 
-Medio de pago   				| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
-MasterCard					| `credit_card`            | `master`
-American Express				| `credit_card`            | `amex`
+Medio de pago   		| Payment Type ID          | ID  
+:-----------------------------	| :----------------------- | :--------------------
+Visa				| `credit_card`            | `visa`
+Mastercard			| `credit_card`            | `master`
+American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
-Tarjeta Naranja				| `credit_card`            | `naranja`
-Tarjeta Nativa				| `credit_card`            | `nativa`
-Tarjeta Shopping				| `credit_card`            | `shopping`
-Tarjeta Cencosud				| `credit_card`            | `cencosud`
+Tarjeta Naranja			| `credit_card`            | `naranja`
+Tarjeta Nativa			| `credit_card`            | `nativa`
+Tarjeta Shopping		| `credit_card`            | `shopping`
+Tarjeta Cencosud		| `credit_card`            | `cencosud`
 Tarjeta CMR MasterCard   	| `credit_card`            | `cmr_master`
-Argencard      				| `credit_card`            | `argencard`
-Nativa         				| `credit_card`            | `nativa`
-Cordial      		    		| `credit_card`            | `cordial`
-Cordobesa      				| `credit_card`            | `cordobesa`
-Cabal							| `credit_card`            | `cabal`
-Visa Débito       			| `debit_card`             | `debvisa`
-MasterCard Débito			| `debit_card`             | `debmaster`
-PagoFácil						| `ticket`                 | `pagofacil`
-RapiPago						| `ticket`                 | `rapipago`
-Provincia NET					| `ticket`                 | `provincia`
-Carga Virtual					| `ticket`                 | `cargavirtual`
-Red Link			       	| `bank_transfer`          | `redlink`
-Dinero en cuenta	       	| `digital_currency`       | `account_money`
+Argencard      			| `credit_card`            | `argencard`
+Cordial      		    	| `credit_card`            | `cordial`
+Cordobesa      			| `credit_card`            | `cordobesa`
+Cabal				| `credit_card`            | `cabal`
+Visa Débito       		| `debit_card`             | `debvisa`
+Mastercard Débito		| `debit_card`             | `debmaster`
+Maestro                         | `debit_card`             | `maestro`
+Cabal Débito                    | `debit_card`             | `debcabal`
+Pago Fácil			| `ticket`                 | `pagofacil`
+RapiPago			| `ticket`                 | `rapipago`
+Provincia Pagos			| `ticket`                 | `bapropagos`
+Carga Virtual			| `ticket`                 | `cargavirtual`
+Red Link		  	| `atm`		           | `redlink`
+Dinero en cuenta	       	| `account_money`          | `account_money`
 
 ### Brasil
 
-Medio de pago   				| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
-MasterCard					| `credit_card`            | `master`
-American Express				| `credit_card`            | `amex`
-Hipercard						| `credit_card`            | `hipercard`
+Medio de pago   		| Payment Type ID          | ID  
+:------------------------------	| :----------------------- | :--------------------
+Visa				| `credit_card`            | `visa`
+Mastercard			| `credit_card`            | `master`
+American Express		| `credit_card`            | `amex`
+Hipercard			| `credit_card`            | `hipercard`
 Diners Club International	| `credit_card`            | `diners`
-Elo								| `credit_card`            | `elo`
-Tarjeta Mercado Livre		| `credit_card`            | `mercadolivre`
-Boleto Bancario				| `ticket`                 | `boleto`
-Dinero en cuenta	       	| `digital_currency`       | `account_money`
+Elo				| `credit_card`            | `elo`
+Tarjeta Mercado Livre		| `credit_card`            | `melicard`
+Boleto Bancario			| `ticket`                 | `bolbradesco`
+Dinero en cuenta	       	| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 
 ### Chile
 
-Medio de pago   				| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
-MasterCard					| `credit_card`            | `master`
-American Express				| `credit_card`            | `amex`
+Medio de pago   		| Payment Type ID          | ID  
+:------------------------------	| :----------------------- | :--------------------
+Visa				| `credit_card`            | `visa`
+Mastercard			| `credit_card`            | `master`
+American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
 Tarjeta CMR             	| `credit_card`            | `cmr`
 Tarjeta Magna             	| `credit_card`            | `magna`
-Tarjeta Magna             	| `credit_card`            | `presto`
-Servipag      				| `ticket`                 | `servipag`
+Tarjeta Presto             	| `credit_card`            | `presto`
+Servipag      			| `ticket`                 | `servipag`
+Red Compras (Webpay)		| `bank_transfer`          | `webpay`
+Khipu      			| `bank_transfer`          | `khipu`
+Dinero en cuenta	       	| `account_money`          | `account_money`
 
 ### Colombia
 
-Medio de pago   				| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
-MasterCard					| `credit_card`            | `master`
-American Express				| `credit_card`            | `amex`
+Medio de pago   		| Payment Type ID          | ID  
+:------------------------------	| :----------------------- | :--------------------
+Visa				| `credit_card`            | `visa`
+Mastercard			| `credit_card`            | `master`
+American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
 Crédito Fácil Codensa    	| `credit_card`            | `codensa`
-Diners Club International	| `credit_card`            | `diners`
-Efecty        				| `ticket`                 | `efecty`
-Davivienda       			| `ticket`                 | `davivienda`
+Efecty        			| `ticket`                 | `efecty`
+Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
+Dinero en cuenta	       	| `account_money`          | `account_money`
 
 ### México
 
-Medio de pago   				| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
+Medio de pago   		| Payment Type ID          | ID  
+:------------------------------	| :----------------------- | :--------------------
+Visa				| `credit_card`            | `visa`
+Mastercard			| `credit_card`            | `master`
+American Express		| `credit_card`            | `amex`
+Visa Débito       		| `debit_card`             | `debvisa`
+Mastercard Débito		| `debit_card`             | `debmaster`
+Tarjeta MercadoPago		| `prepaid_card`           | `mercadopagocard`
+Oxxo            		| `ticket`                 | `oxxo`
+BBVA Bancomer    	    	| `atm`		           | `bancomer`
+Banamex    		       	| `atm`		           | `banamex`
+Santander    		       	| `atm`		           | `serfin`
+Dinero en cuenta	       	| `account_money`          | `account_money`
+Bitcoin	                	| `digital_currency`       | `bitcoin`
 
 ### Perú
 
-Medio de pago   				| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
+Medio de pago   		| Payment Type ID          | ID  
+:-------------------------	| :----------------------- | :--------------------
+Visa				| `credit_card`            | `visa`
+Visa Débito			| `dedit_card`             | `debvisa`
+BCP, BBVA Continental u otros  	| `atm`                    | `pagoefectivo_atm`
+Dinero en cuenta	       	| `account_money`          | `account_money`
 
 ### Uruguay
 
-Medio de pago   				| Payment Type ID          | ID  
+Medio de pago   		| Payment Type ID          | ID  
 :-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
+Visa				| `credit_card`            | `visa`
+Mastercard			| `credit_card`            | `master`
+Diners Club International	| `credit_card`            | `diners`
+OCA				| `credit_card`            | `oca`
+Lider				| `credit_card`            | `lider`
+Abitab				| `ticket`                 | `abitab`
+Red Pagos			| `ticket`                 | `redpagos`
+Dinero en cuenta	       	| `account_money`          | `account_money`
 
+### Venezuela
 
-
-
+Medio de pago   		| Payment Type ID          | ID  
+:-------------------------	| :----------------------- |:--------------------
+Visa				| `credit_card`            | `visa`
+Mastercard			| `credit_card`            | `master`
+BBVA Provincial			| `ticket`                 | `provincial`
+Banco Mercantil			| `atm`                    | `mercantil`
+Dinero en cuenta	       	| `account_money`          | `account_money`

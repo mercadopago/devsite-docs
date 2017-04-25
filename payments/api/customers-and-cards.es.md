@@ -4,7 +4,7 @@
 > 
 > * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
-Los clientes y tarjetas (Customers & Cards) son la forma de almacenar datos de tarjeta de tus clientes de **forma segura** para mejorar la experiencia de compra.
+Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **forma segura** para mejorar la experiencia de compra.
 
 Esto te permitiría mostrar las tarjetas guardadas y poder ofrecer por ejemplo one-click-buy.
 

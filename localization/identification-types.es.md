@@ -36,19 +36,60 @@ A continuación se indican los tipos de documento aceptados para cada país.
 
 ### Argentina
 
-Medio de pago   				| ID
-:-------------------------	| :----------------------- |
-DNI                        | `DNI`                    |
-Cédula de Identidad        | `CI`                     |
-Libreta Cívica             | `LC`                     |
-Libreta de Enrolamiento    | `LE`                     |
+Tipo de docuemnto               | ID                       |
+:------------------------------ | :----------------------- |
+Documento Nacional de Identidad | `DNI`                    |
+Cédula de Identidad             | `CI`                     |
+Libreta Cívica                  | `LC`                     |
+Libreta de Enrolamiento         | `LE`                     |
+Otro                            | `Otro`                   |
 
 ### Brasil
 
-....
+Tipo de docuemnto           | ID                       |
+:-------------------------- | :----------------------- |
+Cadastro de Pessoas Físicas | `CPF`                    |
 
+### Chile
 
+Tipo de docuemnto          | ID                       |
+:------------------------- | :----------------------- |
+Rol Único Tributario       | `RUT`                    |
+Otro                       | `Otro`                   |
 
+### Colombia
 
+Tipo de docuemnto                   | ID                       |
+:---------------------------------- | :----------------------- |
+Cédula de Ciudadanía                | `CC`                     |
+Cédula de Extranjeria               | `CE`                     |
+Número de Identificación Tributaria | `NIT`                    |
+Otro                                | `Otro`                   |
 
+### Perú
 
+Tipo de docuemnto                | ID                       |
+:------------------------------- | :----------------------- |
+Documento Nacional de Identidad  | `DNI`                    |
+Carné de Extranjería             | `CE`                     |
+Registro Único de Contribuyentes | `RUC`                    |
+
+### Uruguay
+
+Tipo de docuemnto          | ID                       |
+:------------------------- | :----------------------- |
+Cédula de Identidad        | `CI`                    |
+Otro                       | `Otro`                   |
+
+### Venezuela
+
+Tipo de docuemnto                | ID                       |
+:------------------------------- | :----------------------- |
+Cédula de Identidad V            | `CI-V`                   |
+Cédula de Identidad E            | `CI-E`                   |
+Registro de Informacion Fiscal J | `RIF-J`                  |
+Registro de Informacion Fiscal P | `RIF-P`                  |
+Registro de Informacion Fiscal V | `RIF-V`                  |
+Registro de Informacion Fiscal E | `RIF-E`                  |
+Registro de Informacion Fiscal G | `RIF-G`                  |
+Pasaporte                        | `Pasaporte`              |
