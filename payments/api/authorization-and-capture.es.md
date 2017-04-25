@@ -1,3 +1,10 @@
+---
+sites_supported:
+    - mla
+    - mlb 
+    - mpe
+---
+
 # Autorización y captura
 
 > Pre-requisitos:
