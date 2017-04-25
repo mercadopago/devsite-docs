@@ -13,15 +13,7 @@ Puedes devolver total o parcialmente los pagos que hayas recibido de tus usuario
 
 ## Realiza la devolución del pago
 
-Para realizar la devolución:
-
-Utiliza las credenciales de tu aplicación:
-
-```
-SHORT_NAME:
-PUBLIC_KEY:
-ACCESS_TOKEN:
-```
+Para realizar la devolución, utiliza las [credenciales de tu aplicación]():
 
 ```curl
 curl -X POST \
@@ -122,13 +114,7 @@ Para realizar devoluciones totales o parciales, debes tener en cuenta las siguie
 
 ## Realiza la cancelación del pago
 
-Para realizar la cancelación, utiliza las credenciales de tu aplicación:
-
-```
-SHORT_NAME: 
-PUBLIC_KEY: 
-ACCESS_TOKEN:
-```
+Para realizar la cancelación, utiliza las [credenciales de tu aplicación]():
 
 ```curl
 curl -X PUT \
