@@ -36,7 +36,7 @@ A continuación se indican los tipos de documento aceptados para cada país.
 
 ### Argentina
 
-Tipo de docuemnto               | ID                       |
+Tipo de documento               | ID                       |
 :------------------------------ | :----------------------- |
 Documento Nacional de Identidad | `DNI`                    |
 Cédula de Identidad             | `CI`                     |
@@ -46,20 +46,20 @@ Otro                            | `Otro`                   |
 
 ### Brasil
 
-Tipo de docuemnto           | ID                       |
+Tipo de documento           | ID                       |
 :-------------------------- | :----------------------- |
 Cadastro de Pessoas Físicas | `CPF`                    |
 
 ### Chile
 
-Tipo de docuemnto          | ID                       |
+Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Rol Único Tributario       | `RUT`                    |
 Otro                       | `Otro`                   |
 
 ### Colombia
 
-Tipo de docuemnto                   | ID                       |
+Tipo de documento                   | ID                       |
 :---------------------------------- | :----------------------- |
 Cédula de Ciudadanía                | `CC`                     |
 Cédula de Extranjeria               | `CE`                     |
@@ -68,7 +68,7 @@ Otro                                | `Otro`                   |
 
 ### Perú
 
-Tipo de docuemnto                | ID                       |
+Tipo de documento                | ID                       |
 :------------------------------- | :----------------------- |
 Documento Nacional de Identidad  | `DNI`                    |
 Carné de Extranjería             | `CE`                     |
@@ -76,14 +76,14 @@ Registro Único de Contribuyentes | `RUC`                    |
 
 ### Uruguay
 
-Tipo de docuemnto          | ID                       |
+Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Cédula de Identidad        | `CI`                    |
 Otro                       | `Otro`                   |
 
 ### Venezuela
 
-Tipo de docuemnto                | ID                       |
+Tipo de documento                | ID                       |
 :------------------------------- | :----------------------- |
 Cédula de Identidad V            | `CI-V`                   |
 Cédula de Identidad E            | `CI-E`                   |
