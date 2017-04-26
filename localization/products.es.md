@@ -38,7 +38,7 @@ Producto                | Medios de pago no disponibles
 Botón de pago           | N/A
 Checkout                | N/A
 API                     | N/A
-Suscripciones           | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `cmr_master`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `rapipago`, `rapipago`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
+Suscripciones           | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
 
 ### Brasil
 
