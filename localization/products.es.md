@@ -33,67 +33,87 @@ Puede suceder que determinados [medios de pago]() no estén disponibles en algun
 
 ### Argentina
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | N/A
-API                     | N/A
-Suscripciones           | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | N/A
+Pagos         | API             | N/A
+Suscripciones | Botón de pago   | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
+Suscripciones | Checkout        | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
+Suscripciones | API             | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
+Marketplace   | Checkout        | N/A
+Marketplace   | API             | N/A
 
 ### Brasil
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | N/A
-API                     | N/A
-Suscripciones           | `bolbradesco`, `giftcard`
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | N/A
+Pagos         | API             | N/A
+Suscripciones | Botón de pago   | `bolbradesco`, `giftcard`
+Suscripciones | Checkout        | `bolbradesco`, `giftcard`
+Suscripciones | API             | `bolbradesco`, `giftcard`
+Marketplace   | Checkout        | N/A
+Marketplace   | API             | N/A
 
 ### Chile
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | N/A
-API                     | `khipu`
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | N/A
+Pagos         | API             | `khipu`
+Marketplace   | Checkout        | N/A
+Marketplace   | API             | `khipu`
 
 ### Colombia
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | `davivienda`
-API                     | `pse`
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | `davivienda`
+Pagos         | API             | `pse`
+Marketplace   | Checkout        | `davivienda`
+Marketplace   | API             | `pse`
 
 ### México
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | N/A
-API                     | N/A
-Suscripciones           | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | N/A
+Pagos         | API             | N/A
+Suscripciones | Botón de pago   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
+Suscripciones | Checkout        | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
+Suscripciones | API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
+Marketplace   | Checkout        | N/A
+Marketplace   | API             | N/A
 
 ### Perú
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | N/A
-API                     | N/A
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | N/A
+Pagos         | API             | N/A
+Marketplace   | Checkout        | N/A
+Marketplace   | API             | N/A
 
 ### Uruguay
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | N/A
-API                     | N/A
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | N/A
+Marketplace   | Checkout        | N/A
 
 ### Venezuela
 
-Producto                | Medios de pago no disponibles
-:---------------------- |:------------------------------- |
-Botón de pago           | N/A
-Checkout                | N/A
-API                     | N/A
+Producto      | Solución        | Medios de pago no disponibles
+:------------ |:--------------- |:------------------------------- |
+Pagos         | Botón de pago   | N/A
+Pagos         | Checkout        | N/A
+Pagos         | API             | N/A
+Marketplace   | Checkout        | N/A
+Marketplace   | API             | N/A
