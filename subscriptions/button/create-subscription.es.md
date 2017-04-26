@@ -1,3 +1,10 @@
+---
+sites_supported:
+    - mla
+    - mlb 
+    - mlm
+---
+
 # Creando una suscripción
 
 Puedes crear un botón de suscripción que **te permitirá recibir pagos de manera periódica**. Eliges cada cuanto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
