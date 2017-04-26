@@ -1,3 +1,10 @@
+---
+sites_supported:
+    - mla
+    - mlb 
+    - mlm
+---
+
 # Introducción
 
 La facturación recurrente es un modelo de negocio común, y fácil de implementar con Mercado Pago, que requiere sólo dos pasos:
