@@ -1,16 +1,16 @@
-# Descuentos y Cupones
+# Ofrecer descuentos
+
+Mercado Pago te permite crear campañas de descuentos directos o con cupones, que aplicarán cuando el pago sea procesado. Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras. Ingresa a [Crear descuento](https://www.mercadopago.com.ar/campaigns/create) para configurarlo.
+
+A continuación te mostraremos cómo aplicar un [Descuento directo](#descuento-directo) o un [Cupón de descuento](#cupón-de-descuento).
 
 ## Descuento Directo
 
-Mercado Pago te permite crear campañas de descuentos que aplicarán cuando el pago sea procesado.
-
-Es importante verificar y notificar al comprador si el descuento aplicó o no.
-
-Esta API tiene como objetivo proporcionar la información correcta y actualizada a fin de dar una buena y clara experiencia de compra.
+Esta API tiene como objetivo proporcionar la información correcta y actualizada a fin de dar una buena y clara experiencia de compra. Es importante verificar y notificar al comprador si el descuento aplicó o no.
 
 ### Verifica si el comprador tiene un descuento disponible:
 
-Para verificar, utiliza las [credenciales de tu aplicación]():
+Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
 
 ```curl
 curl -H "Accept: application/json" \
@@ -29,7 +29,7 @@ curl -H "Accept: application/json" \
     "percent_off": 10,
     "amount_off": 0,
     "coupon_amount": 30,
-    "currency_id": "BRL"
+    "currency_id": "ARS"
 }
 ```
 
@@ -39,7 +39,7 @@ curl -H "Accept: application/json" \
 
 ### Procesar pago
 
-Para procesar, utiliza las [credenciales de tu aplicación]():
+Para procesar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
 
 ```curl
 curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
@@ -47,7 +47,7 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 -d '{
     "transaction_amount": 299.99,
     "description": "Title of what you are paying for",
-    "payment_method_id": "mastercard",
+    "payment_method_id": "master",
     "payer":{
         "email": "test_user_85556797@testuser.com"
     },
@@ -62,13 +62,13 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 {
 	"id": 25417,
 	"description": "Title of what you are paying for",
-	"payment_method_id": "mastercard",
+	"payment_method_id": "master",
 	"payer": {
 		"email": "test_user_23700775@testuser.com",
 		...
 	},
 	"transaction_amount": 299.99,
-	"currency_id": "BRL",
+	"currency_id": "ARS",
 	"coupon_amount": 30,
 	"transaction_details": {
 		"total_paid_amount": 269.99,
@@ -82,9 +82,9 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 - El `total_paid_amount` es el importe total pagado por el comprador.
 - El `coupon_amount` es el importe del descuento.
 
-Como puedes ver el descuento se aplicó y el comprador sólo tendrá que pagar R$ 269.99. 
+Como puedes ver el descuento se aplicó y el comprador sólo tendrá que pagar $269.99. 
 
-En este ejemplo utilizamos `mastercard`. Todos los medios de pago tienen el mismo comportamiento.
+En este ejemplo utilizamos `master`. Todos los medios de pago tienen el mismo comportamiento.
 
 ---
 
@@ -96,10 +96,10 @@ Puedes agregar un campo adicional en el formulario de pago para poder capturar e
 
 ### Verifica si el comprador tiene un descuento disponible:
 
-Para verificar, utiliza las [credenciales de tu aplicación]():
+Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
 
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTEMP&access_token=ACCESS_TOKEN'
+curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'
 ```
 
 - El `transaction_amount ` es el importe total de la compra.
@@ -115,7 +115,7 @@ Si el comprador tiene el descuento disponible, la API devolverá:
     "percent_off": 10,
     "amount_off": 0,
     "coupon_amount": 100,
-    "currency_id": "BRL"
+    "currency_id": "ARS"
 }
 ```
 
@@ -149,7 +149,7 @@ https://api.mercadolibre.com/v1/payments?access_token=ACCESS_TOKEN \
     "payer": {
         "email": "test_user_99525168@testuser.com"
     },
-    "coupon_code": "TESTEMP"
+    "coupon_code": "TESTMP"
 }'
 ```
 
@@ -159,13 +159,13 @@ https://api.mercadolibre.com/v1/payments?access_token=ACCESS_TOKEN \
 {
 	"id": 25416,
 	"description": "Title of what you are paying for",
-	"payment_method_id": "mastercard",
+	"payment_method_id": "master",
 	"payer": {
 		"email": "test_user_99525168@testuser.com",
 		...
 	},
 	"transaction_amount": 299.99,
-	"currency_id": "BRL",
+	"currency_id": "ARS",
 	"coupon_amount": 29.99,
 	"transaction_details": {
 		"total_paid_amount": 269.98,
