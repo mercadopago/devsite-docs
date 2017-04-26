@@ -34,6 +34,8 @@ Los resultados incluídos en esta respuesta coincidirán con el país asociado a
 
 A continuación se indican los tipos de documento aceptados para cada país.
 
+Sólo México no requiere esta información.
+
 ### Argentina
 
 Tipo de documento               | ID                       |
