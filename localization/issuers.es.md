@@ -30,34 +30,3 @@ Los emisores pueden ser obtenidos de la siguiente forma:
 	]
 
 Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago y *los parámetros (querystring) que hayas utilizado*. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).
-
-## Emisores por país
-
-A continuación se indican los emisores disponibles para cada país.
-
-### Argentina
-
-Medio de pago   				| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa							| `credit_card`            | `visa`
-MasterCard					| `credit_card`            | `master`
-American Express				| `credit_card`            | `amex`
-Diners Club International	| `credit_card`            | `diners`
-Tarjeta Naranja				| `credit_card`            | `naranja`
-Tarjeta Nativa				| `credit_card`            | `nativa`
-Tarjeta Shopping				| `credit_card`            | `shopping`
-Tarjeta Cencosud				| `credit_card`            | `cencosud`
-Tarjeta CMR MasterCard   	| `credit_card`            | `cmr_master`
-Argencard      				| `credit_card`            | `argencard`
-Nativa         				| `credit_card`            | `nativa`
-Cordial      		    		| `credit_card`            | `cordial`
-Cordobesa      				| `credit_card`            | `cordobesa`
-Cabal							| `credit_card`            | `cabal`
-Visa Débito       			| `debit_card`             | `debvisa`
-MasterCard Débito			| `debit_card`             | `debmaster`
-PagoFácil						| `ticket`                 | `pagofacil`
-RapiPago						| `ticket`                 | `rapipago`
-Provincia NET					| `ticket`                 | `provincia`
-Carga Virtual					| `ticket`                 | `cargavirtual`
-Red Link			       	| `bank_transfer`          | `redlink`
-Dinero en cuenta	       	| `digital_currency`       | `account_money`
