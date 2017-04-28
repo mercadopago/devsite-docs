@@ -261,7 +261,7 @@ La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recome
 ]
 ```
 
-> **Nota**: Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
+> _**Nota**_ Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
 
 Para crear el pago es importante enviar los datos indicados anteriormente:
 
