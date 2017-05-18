@@ -1,20 +1,23 @@
 # Checkout
-## Qué es?
 
-Recibe pagos en cuestion de minutos, integrando nuestro checkout. Te brindamos todas las herramientas necesarias para que puedas cobrar a través de nuestro formulario de manera simple, rápida y segura.   
-
-Somos PCI Compliance, protegemos la información que viaja desde el formulario hasta nuestro servidor. Encriptamos los datos en forma segura (TLS) y así cumplimos con los más altos estándares de seguridad online.
+Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario de manera simple, rápida y segura.
 
 Trabajamos para que tus usuarios tengan la mejor experiencia de pago ofreciendo:  
 
-* Compra con **un click**: Recordamos los datos de tus usuarios, permitiendo pagar sólo ingresando el código de seguridad. 
-*  Checkout **Responsive**: La mejor experiencia de compra desde cualquier dispositivo mobile o desktop.
-*   Pago como **invitado**: No es requerida la creción de una cuenta de Mercado Pago. 
-*   Split de Pagos: Posibilidad de **pagar con 2 tarjetas**
-*   Todos los **medios de pago** con la mejor **financiación**: Pago con Tarjeta de crédito o débito, transferencia bancaria, efectivo mediante pago fácil o rapipago o dinero en cuenta. Utiliza nuestros banners de tarjetas y promociones para que tu cliente conozca las promociones.
+* Compra con **un click**: Recordamos los datos de tus usuarios, permitiendo pagar sólo ingresando el código de seguridad de la tarjeta. 
+* Checkout **Responsive**: La mejor experiencia de compra desde cualquier dispositivo mobile o desktop.
+* Pago como **invitado**: No es requerida la creación de una cuenta de Mercado Pago.
+* Split de Pagos: Posibilidad de **pagar con 2 tarjetas**.
+* Los **medios de pago** principales en todos los países.
+* **Financiación**: Ofrecé cuotas con la mejor financiación posible.
 
+Contamos con la certificación [PCI DSS](https://www.pcisecuritystandards.org/), lo cuál avala que guardamos, procesamos o intercambiamos información de tarjeta de crédito de forma segura.
+
+Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones.
 
 ## Cómo funciona
+
+![imagen](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
 
 Integrar el checkout es muy fácil:
 

@@ -1,18 +1,18 @@
-# Recibiendo un pago
+# Recibir un pago
 
-Recibe pagos en cuestión de segundos de manera simple y segura utilizando el Checkout de Mercado Pago.
+Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
 
 
-## Crea una preferencia de pago
+## 1. Crea una preferencia de pago
 
-Una preferencia de pago contiene toda el detalle de información del producto o servicio que se va a pagar. Por ejempo: 
+Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
 
-1. Datos y monto de lo que se va a pagar.
-2. Datos de tu comprador.
+1. Descripción y monto.
+2. Información de tu comprador (Email, nombre, dirección, etc).
 3. Medios de pago que aceptas.
 4. ID de referencia de tu sistema.
 
-Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar el objeto **MP** con tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar el objeto `MP` con tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 ```php
 <?php
@@ -29,7 +29,9 @@ $preference_data = array(
 			"title" => "Multicolor kite",
 			"quantity" => 1,
 			"currency_id" => "ARS",
-			"unit_price" => 10.00
+			"unit_price" => 10.00,
+			"description" => "",
+			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
 		)
 	),
 	"payer" => array(
@@ -41,43 +43,17 @@ $preference = $mp->create_preference($preference_data);
 ?>
 ```
 
-Por último, debes agregar un botón para abrir el Checkout. Utiliza la URL que encontrarás en el atributo `init_point` en la respuesta de la creación de tu preferencia.
+### Contenido de la preferencia
 
-```html
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Pagar</title>
-	</head>
-	<body>
-		<a href="<?php echo $preference['response']['init_point']; ?>">Pay</a>
-	</body>
-</html>
-```
+Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-## Mejora la experiencia de compra
+#### Payer
 
-### Completa la preferencia
+Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, no se le pedirá durante el proceso de pago.
 
-Mientras más información nos envíes, mejor será la aprobación de pagos y la experiencia de tus usuarios. Envíanos los datos de tu comprador, completa los datos del ítem, y las páginas de retorno a tu plataforma.
-
-Aquí tienes un ejemplo de una preferencia completa:
-
-
-```curl
+```json
 {
-	"items": [
-		{
-			"id": "item-ID-1234",
-			"title": "Title of what you are paying for. It will be displayed in the payment process.",
-			"currency_id": "ARS",
-			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
-			"description": "Item description",
-			"category_id": "art", // Available categories at https://api.mercadopago.com/item_categories
-			"quantity": 1,
-			"unit_price": 100
-		}
-	],
+   ...,
 	"payer": {
 		"name": "user-name",
 		"surname": "user-surname",
@@ -97,27 +73,15 @@ Aquí tienes un ejemplo de una preferencia completa:
 			"zip_code": "5700"
 		} 
 	},
-	"back_urls": {
-		"success": "https://www.success.com",
-		"failure": "http://www.failure.com",
-		"pending": "http://www.pending.com"
-	},
-	"auto_return": "approved",
-	"payment_methods": {
-		"excluded_payment_methods": [
-			{
-				"id": "master"
-			}
-		],
-		"excluded_payment_types": [
-			{
-				"id": "ticket"
-			}
-		],
-		"installments": 12,
-		"default_payment_method_id": null,
-		"default_installments": null
-	},
+	...
+}
+```
+
+#### Shipments
+
+```json
+{
+	...,
 	"shipments": {
 		"receiver_address": {
 			"zip_code": "5700",
@@ -126,27 +90,46 @@ Aquí tienes un ejemplo de una preferencia completa:
 			"floor": 4,
 			"apartment": "C"
 		}
-	},
-	"notification_url": "https://www.your-site.com/ipn",
-	"external_reference": "Reference_1234",
-	"expires": true,
-	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
-	"expiration_date_to": "2016-02-28T12:00:00.000-04:00"
+	}
 }
 ```
 
-### Recibe pagos con 2 tarjetas de crédito
+## 2. Lleva a tu comprador al checkout
 
-Tus clientes pueden dividir el pago entre 2 tarjetas de crédito. Esto te permitirá mejorar la conversión ante montos de venta altos. Activalo ingresando a la [configuración de tu cuenta](https://www.mercadopago.com.ar/settings/my-business).
+Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pagar</title>
+	</head>
+	<body>
+		<a href="<?php echo $preference['response']['init_point']; ?>">Pay</a>
+	</body>
+</html>
+```
+
+## 3. Activa las notificaciones de pagos
+
+Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+
+Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
+
+Visita la sección [Notificaciones](#) para conocer más sobre esto.
+
+## 4. Cancelar un pago
+
+Los medios de pago en efectivo deben ser pagados entre los 3 a 5 días dependiendo de cada uno.
+
+El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](../account/refunds-and-cancellations.es.md) luego del vencimiento.
 
 
-## Próximos pasos
+## 5. Prueba tu integración
 
-### Activa notificaciones de pagos
+Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Puedes recibir notificaciones cada vez que se cree un nuevo pago o se modifique uno ya existente. Esto te permitirá conocer el estado del pago, administrar tu stock y mantener tu sistema sincronizado. Visita la sección [Notificaciones](#) para  hacerlo.
+Para ello debes usar usuario y tarjetas de prueba.
 
+Visita la sección [Probando](./testing.es.md) para más información.
 
-### Prueba tu integración
-
-Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello te ofrecemos usuario y tarjetas de prueba. Visita la sección [Probando](#) para  hacerlo.

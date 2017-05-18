@@ -164,11 +164,3 @@ Te recomendamos leer el artículo sobre el [manejo de respuestas](handling-respo
 Es importante que te enteres de cualquier actualización del estado de tu pago. Para esto se deben utilizar _Webhooks_.
 
 Puedes leer todo para su implementación en el [artículo de Webhooks](#).
-
-## Próximos pasos
-
-### Recibe pagos con tarjetas guardadas
-
-Puedes almacenar de forma segura las tarjetas de tus clientes y realizar cobros con una experiencia one-click-to-buy.
-
-[Más información](customers-and-cards.es.md)
