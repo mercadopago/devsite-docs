@@ -18,7 +18,7 @@ Ingresando en este link, tus compradores serán redirigidos al checkout donde ve
 Además te brindaremos un **Código HTML** que puedes incluir en tu sitio web y un **Código QR**  para que compartas con tus clientes.
 
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout](../web-checkout/receive-payments.es.md)** o **[API](../api/receiving-payment-by-card.es.md)**.
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout](../web-checkout/introduction.es.md)** o **[API](../api/introduction.es.md)**.
 
 
 ### [Crear herramienta de cobro](https://www.mercadopago.com.ar/tools/create)
