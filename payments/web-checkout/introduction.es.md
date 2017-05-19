@@ -15,7 +15,7 @@ Contamos con la certificación [PCI DSS](https://www.pcisecuritystandards.org/),
 
 Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones.
 
-## Cómo funciona
+## ¿Cómo funciona?
 
 ![imagen](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
 
