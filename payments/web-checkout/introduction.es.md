@@ -32,14 +32,3 @@ Te damos todo resuelto! Recibí el pago del producto y del envío en la misma op
 Sólo tenes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. 
 En tu preferencia de pagos, debes incluir el atributo que indica que vas a activar Mercado Envíos y listo, nosotros nos encargamos de todo.  
 
-
-
-
-
-
-
-
-
-
-
- 
