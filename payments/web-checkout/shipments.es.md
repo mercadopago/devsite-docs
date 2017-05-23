@@ -11,10 +11,10 @@ Te damos todo resuelto: Recibe el pago del producto y del envío en la misma ope
 4. [Cómo implementarlo](#cómo-implementarlo)
 
 ## Beneficios
-####Mejores costos
+#### Mejores costos
 
 
-####Compra protegida 
+#### Compra protegida
 Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
 
 
@@ -54,10 +54,10 @@ Agrega las dimensiones y peso de tus productos en la preferencia de pago.
 }
 ```
 
->El formato de las dimensiones
+> El formato de las dimensiones
 ```alto x ancho x largo (centímetros), peso (gramos)```
 
->Si indicas mal las dimensiones y no coinciden con el paquete físico, OCA podría no admitir el envío. En caso de que te admitan el paquete, te descontaremos de tu cuenta la diferencia automáticamente.
+> Si indicas mal las dimensiones y no coinciden con el paquete físico, OCA podría no admitir el envío. En caso de que te admitan el paquete, te descontaremos de tu cuenta la diferencia automáticamente.
 
 #### Retiro por sucursal
 Puedes ofrecer la posibilidad de retirar el producto por tu local, en este caso es tu responsabilidad la de comunicarle al comprador dónde y cuándo debe retirar el producto. Para esto, debes incluir:
@@ -145,7 +145,7 @@ $preference = $mp->create_preference($preference_data);
 
 
 
-###Paso 3: Mejora la experiencia con la calculadora de cuotas
+### Paso 3: Mejora la experiencia con la calculadora de cuotas
 
 Si bien no es necesario que integres la calculadora de cuotas, esto puede mejorar mucho la experiencia.
 
