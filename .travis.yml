@@ -20,7 +20,7 @@ install:
   - printf "$(tree) /home/travis/build" 
   - sudo mv devsite-engine /home/travis/build/mercadolibre/devsite-engine
   - printf "$(tree) /home/travis/build" 
-  - sed -i 's/git@github.com:mercadopago/$USER_TOKEN@github.com:mercadopago/g' /home/travis/build/mercadolibre/devsite-engine/.gitmodules
+  - sed -i 's/git@github.com:mercadopago/https:\/\/$USER_TOKEN@github.com\/mercadopago/g' /home/travis/build/mercadolibre/devsite-engine/.gitmodules
   - (cd /home/travis/build/mercadolibre/devsite-engine && git submodule update --init --recursive)
 script:
   - printf "$(pwd)"
