@@ -20,6 +20,7 @@ install:
   - rm -rf /home/travis/build/mercadolibre/devsite-engine/source
   - (cd /home/travis/build/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
   - cp -R /home/travis/build/mercadopago/devsite-docs /home/travis/build/mercadolibre/devsite-engine/source/docs
+  - (cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp)
   
 script:
   - (cd /home/travis/build/mercadolibre/devsite-engine/source && gulp deploy)
