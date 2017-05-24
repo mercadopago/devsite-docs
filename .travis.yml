@@ -3,7 +3,7 @@ language: ruby
 rvm:
   - 2.3.3
 node_js:
-  - 7.9
+  - 7
   
 sudo: required
 
@@ -12,6 +12,8 @@ before_install:
   - sudo apt-get install -y sed
   - sudo add-apt-repository -y ppa:chris-lea/node.js 
   - sudo apt-get update   
+  - curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
   - npm install gulp 
 
 install: 
