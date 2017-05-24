@@ -12,8 +12,7 @@ before_install:
   - sudo npm install -g gulp 
 
 install:
-  - git clone https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git 
-  - cd devsite-engine & bundle install  
+  - git clone https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
   - pwd
   - ls -la
   - tree
