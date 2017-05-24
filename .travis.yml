@@ -9,9 +9,8 @@ before_install:
   - sudo apt-get install -y tree
   - sudo apt-get install -y sed
   - sudo add-apt-repository -y ppa:chris-lea/node.js 
-  - sudo apt-get update
-  - sudo apt-get install -y nodejs
-  - npm install -g gulp 
+  - sudo apt-get update 
+  - npm install gulp 
 
 install: 
   - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
@@ -22,7 +21,7 @@ install:
   - cp -R /home/travis/build/mercadopago/devsite-docs /home/travis/build/mercadolibre/devsite-engine/source/docs
   - (cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp)
   - (cd /home/travis/build/mercadolibre/devsite-engine/ && bundle install)
-    
+  - git config --global user.name "devsite bot"
 script:
   - (cd /home/travis/build/mercadolibre/devsite-engine/source && gulp deploy)
   - (cd /home/travis/build/mercadolibre/devsite-engine && TARGET=test middleman deploy) 
