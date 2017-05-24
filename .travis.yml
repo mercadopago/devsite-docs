@@ -13,6 +13,9 @@ before_install:
   - sudo add-apt-repository -y ppa:chris-lea/node.js 
   - sudo apt-get update   
   - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && sudo apt-get install -y nodejs && npm install gulp  && npm install npm@latest -g
+  - sudo npm cache clean -f
+  - sudo npm install -g n
+  - sudo n latest
 
 install: 
   - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
