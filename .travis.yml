@@ -12,11 +12,11 @@ before_install:
   - sudo apt-get install -y sed
   - sudo add-apt-repository -y ppa:chris-lea/node.js 
   - sudo apt-get update   
-  - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && sudo apt-get install -y nodejs && npm install gulp  && npm install npm@latest -g
-  - sudo npm cache clean -f
-  - sudo npm install -g n
-  - sudo n latest
-
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+  - source ~/.profile
+  - echo "NVM Version: $(nvm --version)"
+  - nvm install node
+  
 install: 
   - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
   - mkdir /home/travis/build/mercadolibre 
@@ -24,11 +24,11 @@ install:
   - rm -rf /home/travis/build/mercadolibre/devsite-engine/source
   - (cd /home/travis/build/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
   - cp -R /home/travis/build/mercadopago/devsite-docs /home/travis/build/mercadolibre/devsite-engine/source/docs
-  - (sudo n latest && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp)
+  - (nvm use node && sudo n latest && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp)
   - (cd /home/travis/build/mercadolibre/devsite-engine/ && bundle install)
   - git config --global user.name "devsite bot"
 script:
-  - (sudo n latest && cd /home/travis/build/mercadolibre/devsite-engine/source && gulp deploy)
-  - (cd /home/travis/build/mercadolibre/devsite-engine && TARGET=test middleman deploy) 
+  - (nvm use node && sudo n latest && cd /home/travis/build/mercadolibre/devsite-engine/source && gulp deploy)
+  - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine && TARGET=test middleman deploy) 
    
   
