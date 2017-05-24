@@ -16,12 +16,12 @@ before_install:
 install:
   - printf "$(tree) /home/travis/build" 
   - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
-  - mkdir /home/travis/build/mercadolibre
-  - printf "$(tree) /home/travis/build" 
-  - sudo mv devsite-engine /home/travis/build/mercadolibre/devsite-engine
-  - printf "$(tree) /home/travis/build" 
-  - sed -i 's/git@github.com:mercadopago/https:\/\/$USER_TOKEN@github.com\/mercadopago/g' /home/travis/build/mercadolibre/devsite-engine/.gitmodules
-  - (cd /home/travis/build/mercadolibre/devsite-engine && git submodule update --init --recursive)
+  - mkdir /home/travis/mercadolibre 
+  - sudo mv devsite-engine /home/travis/mercadolibre/devsite-engine  
+  - printf "$(tree) /home/travis/" 
+  - rm -rf /home/travis/mercadolibre/devsite-engine/source
+  - (cd /home/travis/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
+  - cp -R /home/travis/build /home/travis/mercadolibre/devsite-engine/source/docs 
 script:
   - printf "$(pwd)"
   - printf "$(ls -la)"
