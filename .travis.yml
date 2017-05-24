@@ -36,8 +36,7 @@ install:
   - git config --global user.email "devsitebot@ml.com"
   - mkdir /home/travis/build/mercadolibre/devsite-engine/build/bundles
 script:
-  - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && gulp svgo)
-  - (cp -R /home/travis/build/mercadolibre/devsite-engine/source/bundles/. /home/travis/build/mercadolibre/devsite-engine/build/bundles)
+  - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && gulp svgo) 
   - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine && TARGET=test middleman deploy) 
    
   
