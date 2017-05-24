@@ -7,6 +7,7 @@ sudo: required
 
 before_install:
   - sudo apt-get install -y tree
+  - sudo apt-get install -y sed
   - sudo add-apt-repository -y ppa:chris-lea/node.js 
   - sudo apt-get update
   - sudo apt-get install -y nodejs
@@ -14,7 +15,10 @@ before_install:
 
 install:
   - git clone https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
-
+  - mkdir /home/travis/build/mercadolibre
+  - mv devsite-engine /home/travis/build/mercadolibre/devsite-engine
+  - sed -i 's/git@github.com:mercadopago/$USER_TOKEN@github.com:mercadopago/g' /home/travis/build/mercadolibre/devsite-engine.gitmodules
+  - (cd /home/travis/build/mercadolibre/devsite-engine && git submodule update --init --recursive)
 script:
   - printf "$(pwd)"
   - printf "$(ls -la)"
