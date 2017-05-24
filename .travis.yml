@@ -32,6 +32,7 @@ install:
   - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp) 
   - (cd /home/travis/build/mercadolibre/devsite-engine/ && bundle install)
   - git config --global user.name "devsite bot"
+  - mkdir /home/travis/build/mercadolibre/devsite-engine/build/bundles
 script:
   - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm run-script deploy)
   - (cp -R /home/travis/build/mercadolibre/devsite-engine/source/bundles/. /home/travis/build/mercadolibre/devsite-engine/build/bundles)
