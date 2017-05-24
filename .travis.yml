@@ -14,17 +14,17 @@ before_install:
   - sudo npm install -g gulp 
 
 install:
-  - printf "$(tree /home/travis/build)" 
+  - printf "$(tree /home/travis/build/)" 
   - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
   - mkdir /home/travis/mercadolibre 
   - sudo mv devsite-engine /home/travis/mercadolibre/devsite-engine  
-  - printf "$(tree /home/travis/)" 
+  - printf "$(tree /home/travis/build/)" 
   - rm -rf /home/travis/mercadolibre/devsite-engine/source
   - (cd /home/travis/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
-  - cp -R /home/travis/build/devsite-docs /home/travis/mercadolibre/devsite-engine/source/docs 
+  - cp -R /home/travis/build/mercadopago/devsite-docs /home/travis/mercadolibre/devsite-engine/source/docs 
 script:
   - printf "$(pwd)"
   - printf "$(ls -la)"
-  - printf "$(tree /)" 
+  - printf "$(tree /home/travis/build/)" 
    
   
