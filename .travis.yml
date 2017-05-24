@@ -1,0 +1,10 @@
+language: ruby
+
+rvm:
+  - 2.3.3
+  
+sudo: required
+
+install:
+  - git clone https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git
+  - cd devsite-engine & bundle install 
