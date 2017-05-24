@@ -2,6 +2,8 @@ language: ruby
 
 rvm:
   - 2.3.3
+node_js:
+  - 7.9
   
 sudo: required
 
