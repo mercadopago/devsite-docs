@@ -6,12 +6,15 @@ rvm:
 sudo: required
 
 before_install:
-  - sudo add-apt-repository ppa:chris-lea/node.js 
+  - sudo add-apt-repository -y ppa:chris-lea/node.js 
   - sudo apt-get update
-  - sudo apt-get install nodejs
+  - sudo apt-get install -y nodejs
   - sudo npm install -g gulp 
 
 install:
   - git clone https://$USER_NAME:$USER_TOKEN@github.com/mercadolibre/devsite-engine.git
   - cd devsite-engine & bundle install 
+  - cd devsite-engine/source & npm install
   - pwd
+  - ls -la
+  - tree
