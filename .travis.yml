@@ -13,7 +13,7 @@ before_install:
   - sudo apt-get install -y nodejs
   - sudo npm install -g gulp 
 
-install:
+script:
   - printf "$(tree /home/travis/build/)" 
   - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
   - mkdir /home/travis/mercadolibre 
@@ -21,8 +21,7 @@ install:
   - printf "$(tree /home/travis/build/)" 
   - rm -rf /home/travis/mercadolibre/devsite-engine/source
   - (cd /home/travis/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
-  - cp -R /home/travis/build/mercadopago/devsite-docs /home/travis/mercadolibre/devsite-engine/source/docs 
-script:
+  - cp -R /home/travis/build/mercadopago/devsite-docs /home/travis/mercadolibre/devsite-engine/source/docs  
   - printf "$(pwd)"
   - printf "$(ls -la)"
   - printf "$(tree /home/travis/build/)" 
