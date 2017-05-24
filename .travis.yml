@@ -7,6 +7,10 @@ node_js:
   
 sudo: required
 
+branches:
+  only:
+    - master
+
 before_install:
   - sudo apt-get install -y tree
   - sudo apt-get install -y sed
@@ -14,7 +18,7 @@ before_install:
   - sudo apt-get update   
   - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
   - source ~/.profile
-  - echo "NVM Version: $(nvm --version)"
+  - echo "$(nvm --version)"
   - nvm install node
   
 install: 
