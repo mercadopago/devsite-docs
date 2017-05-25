@@ -27,7 +27,7 @@ install:
   - sudo mv devsite-engine /home/travis/build/mercadolibre/devsite-engine   
   - rm -rf /home/travis/build/mercadolibre/devsite-engine/source
   - (cd /home/travis/build/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
-  - mv /home/travis/build/mercadopago/devsite-docs/ /home/travis/build/mercadolibre/devsite-engine/source/docs
+  - mv /home/travis/build/mercadopago/devsite-docs /home/travis/build/mercadolibre/devsite-engine/source/docs
   - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install)
   - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp) 
   - (cd /home/travis/build/mercadolibre/devsite-engine/ && bundle install)
