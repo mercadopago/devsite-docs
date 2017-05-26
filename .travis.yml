@@ -12,6 +12,7 @@ branches:
     - master
 
 before_install:
+  - rm /bin/sh && ln -s /bin/bash /bin/sh
   - sudo apt-get install -y tree
   - sudo apt-get install -y sed
   - sudo add-apt-repository -y ppa:chris-lea/node.js 
