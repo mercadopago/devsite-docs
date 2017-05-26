@@ -1,6 +1,6 @@
 # Otros medios de pago
 
-Existen otros medios de pago en cada país además de tarjetas de crédito o débito, con los que puedes recibir pagos. En su mayoría son lo que llamamos medios de pago "offline" o "cash".
+Existen otros medios de pago en cada país además de tarjetas de crédito o débito, con los que puedes recibir pagos. En su mayoría son lo que llamamos medios de pago "offline" o "en efectivo".
 
 Los tipos de medio de pago disponibles son:
 
@@ -20,7 +20,7 @@ require_once ('mercadopago.php');
 
 $mp = new MP ("ACCESS_TOKEN");
 
-$payment_methods = $mp->get ("/v1/payment_methods");
+$payment_methods = $mp->get("/v1/payment_methods");
 
 print_r ($payment_methods);
 ?>
@@ -58,9 +58,9 @@ El resultado será un _array_ con los medios de pago y sus propiedades:
 ]
 ```
 
-## Recibí un pago con un medio de pago cash
+## Recibí un pago con un medio de pago en efectivo
 
-Para poder recibir pagos de medio cash solamente debes recolectar el `email` del comprador. Luego es necesario hacer un request `HTTP POST` enviando el `transaction_amount`, `payment_method_id` y el `email` recolectado:
+Para poder recibir pagos de medio en efectivo solamente debes recolectar el `email` del comprador. Luego es necesario hacer un request `HTTP POST` enviando el `transaction_amount`, `payment_method_id` y el `email` recolectado:
 
 ```php
 <?php
@@ -104,20 +104,35 @@ Recibirás una respuesta con un `status` **pending** hasta que el comprador real
 
 En el campo `external_resource_url` tienes una url que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el link para acceda.
 
-> _**Nota**_: Tu comprador tiene entre **3** a **5** días para realizar el pago dependiendo del medio de pago. Luego de estas fechas **debes** cancelar el pago.
+> _**Nota**_: Tu comprador tiene entre **3** a **5** días para pagar dependiendo del medio de pago. Luego de estas fechas **debes** cancelarlo.
 
 ## Cancelar un pago
 
-Los pagos de medios cash deben ser realizados entre los 3 a 5 días dependiendo de cada uno.
+Los pagos de medios en efectivo deben ser pagados entre los 3 a 7 días dependiendo de cada uno.
 
 El vencimiento de estos no es automático, por lo cuál es necesario que ejecutes la [cancelación del pago](#) luego del vencimiento.
 
+Puedes ver el [listado de vencimientos completo](#).
+
+## Tiempos de acreditación del pago
+
+Cada medio de pago tiene su propia fecha de acreditación, en algunos casos esta es inmediata y en otros la demora es de hasta 3 días hábiles.
+
+Recomendamos revisar los [tiempos de acreditación por medio de pago](#).
+
+## Devoluciones
+
+Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Refunds*. Todas las devoluciones de medios de pago en efectivo son devueltas en la cuenta de Mercado Pago de tu comprador.
+
+Si este no cuenta con una, recibirá un email en la dirección enviada en el pago con instrucciones de cómo retirar su dinero.
+
+Para más puedes ver el artículo sobre [devoluciones](#).
 
 ## Integrar Webpay (Chile)
 
 Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes el **RUT**, **tipo de persona**, **dirección IP** del comprador, y la **institución financiera** que procesará el pago. 
 
-> _**Nota**_: Consulta todas los _financial_institutions_ que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
+> _**Nota**_: Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
 > 
 > ```json
 > {
@@ -134,7 +149,7 @@ Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pa
   }
   ```
 
-Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **webpay**, el `identification number`, el `financial_institution` :
+Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **webpay**, el `identification number` y el `financial_institution`:
 
 ```php
 <?php
@@ -166,7 +181,7 @@ $payment_data = array(
 $payment = $mp->post("/v1/payments", $payment_data);
 ```
 
-> _**Nota**_: Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas)
+> _**Nota**_: Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas).
 
 La respuesta que recibirás:
 

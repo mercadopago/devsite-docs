@@ -19,7 +19,7 @@ sites_supported:
 
 Mercado Pago ofrecé la posibilidad de realizar una autorización antes de generar una captura.
 
-La autorización es una reserva de fondos en la tarjeta de tu comprador. Esto significa que al realizar una autorización todavía no se le cobró a tu cliente. Solo cuando se realice una captura el cliente verá el pago.
+La autorización es una reserva de fondos en la tarjeta de tu comprador. Esto significa que al realizarla todavía no se le generó un cobró a tu cliente en su tarjeta. Solo cuando se realice una captura el cliente verá el pago.
 
 ## Realizar una reserva de fondos
 
@@ -61,12 +61,12 @@ Respuesta:
 
 La respuesta indica que el pago se encuentra **autorizado** y **pendiente de captura**.
 
-Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta que no sean capturados, por lo cuál recomendamos realizar la captura por el menor tiempo posible.
+Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta que no sean capturados, por lo cuál recomendamos realizar la captura en el menor tiempo posible.
 
 > **Consideraciones**:   
 > 
 > * La reserva tendrá una validez de [AR:7][BR:5][PE:22] días. Si no la capturas hasta ese momento será cancelada.
-> * La reserva también puede resultar rechazada, como cualquier otro pago normal.
+> * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
 
 ## Capturar un pago
 
@@ -91,7 +91,7 @@ $payment_data = array(
 $payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
 ```
 
-La respuesta esperada actualizará el status a `approved` con un status_detail `accredited`:
+El request actualizará el status a `approved` con un `status_detail=accredited`:
 
 ```json
 {
@@ -178,4 +178,4 @@ Respuesta:
 }
 ```
 
-> _**Nota**_: Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía Webhooks del cambio de estado del pago.
+> _**Nota**_: Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](webhooks.es.md) del cambio de estado del pago.
