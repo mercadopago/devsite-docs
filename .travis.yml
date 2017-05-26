@@ -17,7 +17,7 @@ before_install:
   - sudo add-apt-repository -y ppa:chris-lea/node.js 
   - sudo apt-get update 
   - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-  - source ~/.profile
+  - bash -c "source ~/.profile"
   - echo "$(nvm --version)"
   - nvm install node
   
@@ -28,15 +28,15 @@ install:
   - rm -rf /home/travis/build/mercadolibre/devsite-engine/source
   - (cd /home/travis/build/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
   - cp -R /home/travis/build/mercadopago/devsite-docs/. /home/travis/build/mercadolibre/devsite-engine/source/docs/
-  - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install)
-  - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp) 
+  - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install")
+  - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp") 
   - (cd /home/travis/build/mercadolibre/devsite-engine/ && bundle install)
   - echo "$(tree -L 3 /home/travis/build/)"
   - echo "$(tree -L 3 /home/travis/build/mercadolibre/devsite-engine)"
   - git config --global user.name "devsitebot"
   - git config --global user.email "devsitebot@ml.com" 
 script:
-  - (nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && gulp svgo) 
-  - (cd /home/travis/build/mercadolibre/devsite-engine && TARGET=test middleman deploy) 
+  - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && gulp svgo") 
+  - (bash -c "cd /home/travis/build/mercadolibre/devsite-engine && TARGET=test middleman deploy") 
    
   
