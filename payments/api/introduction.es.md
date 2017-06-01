@@ -6,7 +6,7 @@ Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu siti
 
 ## Credenciales
 
-Cuentas con dos pares de claves para conectarte con la API, uno para un entorno de pruebas y otro productivo. Estas claves las encuentras en la sección [credenciales de tu cuenta]().
+Cuentas con dos pares de claves para conectarte con la API, uno para un entorno de pruebas y otro productivo. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com/mla/account/credentials).
 
 La **credencial pública**, o *public key*, es la utilizada para acceder a todos los recursos que necesitará tu frontend para recolectar los datos de tarjeta de crédito, y tokenizar.
 
