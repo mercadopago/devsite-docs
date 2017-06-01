@@ -1,14 +1,14 @@
-# Cómo integrar Marketplace en el Checkout Web
+# Cómo integrar Marketplace con la API
 
 > Pre-requisitos:
 > 
-> * Tener implementado [Checkout](../../payments/web-checkout/introduction.es.md).
+> * Tener implementado [API](../../payments/api/introduction.es.md).
 
 Para comenzar debes:
 
 1. Dar de alta una aplicación de tipo Marketplace
 2. Solicitar a tus vendedores que se vinculen
-3. Crear preferencias de pago en nombre de tus vendedores
+3. Crear los pagos en nombre de tus vendedores
 
 
 ## 1. Cómo crear tu aplicación
@@ -64,15 +64,18 @@ Response:
 
 ```json
 {
-    "access_token": "MARKETPLACE_SELLER_TOKEN", 
-    "token_type": "bearer", 
-    "expires_in": 15552000, 
-    "scope": "offline_access read write", 
-    "refresh_token": "TG-XXXXXXXX"
+    "access_token": "MARKETPLACE_SELLER_TOKEN",
+    "public_key": "PUBLIC_KEY",
+    "refresh_token": "TG-XXXXXXXXX-XXXXX",
+    "live_mode": true,
+    "user_id": USER_ID,
+    "token_type": "bearer",
+    "expires_in": 15552000,
+    "scope": "offline_access payments write"
 }
 ```
 
-En la respuesta, además del Access Token del vendedor que se ha vinculado, obtienes el Refresh Token que debes utilizar para renovar periódicamente sus credenciales.
+En la respuesta, además del `access_token` y `public_key` del vendedor que se ha vinculado, obtienes el `refresh_token` que debes utilizar para renovar periódicamente sus credenciales.
 
 > _**Nota**_: Las credenciales tienen un **tiempo de validez de 6 meses**.
 
@@ -88,8 +91,7 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_id=CLIENT_ID' \
-     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_secret= ACCESS_TOKEN' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_RT'
 ```
@@ -98,55 +100,52 @@ Respuesta esperada:
 
 ```json
 {
-    "access_token": "MARKETPLACE_SELLER_TOKEN", 
-    "token_type": "bearer", 
-    "expires_in": 15552000, 
-    "scope": "offline_access read write", 
-    "refresh_token": "TG-XXXXXXXX"
+    "access_token": "MARKETPLACE_SELLER_TOKEN",
+    "public_key": "PUBLIC_KEY",
+    "refresh_token": "TG-XXXXXXXXX-XXXXX",
+    "live_mode": true,
+    "user_id": USER_ID,
+    "token_type": "bearer",
+    "expires_in": 15552000,
+    "scope": "offline_access payments write"
 }
 ```
 
+## 3. Integra la API para recibir pagos
 
-## 3. Integra el checkout
+Para recibir pagos en nombre de tus vendedores debes integrar la [API](../../payments/api/introduction.es.md), utilizando el `access_token` de cada vendedor para tu aplicación.
 
-Para cobrar en nombre de tus vendedores debes integrar [Checkout](../../payments/web-checkout/introduction.es.md), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
-
-Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
+Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario, sólo debes agregar dicho monto en el parámetro `application_fee` al crear el pago:
 
 ```php
 <?php
 require_once ('mercadopago.php');
-$mp = new MP ("MARKETPLACE_SELLER_TOKEN");
 
-$preference_data = array(
-   	"marketplace_fee" => 100,
-   	"notification_url" => "http://urlmarketplace.com/notification_ipn"
-	"items" => array(
-		array(
-			"title" => "Multicolor kite",
-			"quantity" => 1,
-			"currency_id" => "ARS",
-			"unit_price" => 500,
-			"description" => "",
-			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
-		)
-	),
-	"payer" => array(
-		"email" => "usuario@mail.com"
-	)
+// Setup the marketplace seller key
+$mp = new MP('MARKETPLACE_SELLER_TOKEN');
+
+$payment_data = array(
+    "transaction_amount" => 100,
+    "application_fee" => 20,
+    "token" => "ff8080814c11e237014c1ff593b57b4d",
+    "payment_method_id" => "visa",
+    "payer" => array (
+        "email" => "test_user_19653727@testuser.com"
+    )
 );
 
-$preference = $mp->create_preference($preference_data);
-?>
+$payment = $mp->post("/v1/payments", $payment_data);
 ```
 
-El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.
+El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago, como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.
 
 ### Notificaciones
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
 
-En el artículo de [notificaciones](../../notifications/ipn.es.md) podes obtener más información.
+Puedes recibir notificaciones cuando tus clientes autoricen o desautoricen tu aplicación, [configurando la URL](https://www.mercadopago.com/mla/account/webhooks) en tu cuenta.
+
+En el artículo de [notificaciones](../../notifications/webhooks.es.md) podes obtener más información.
 
 ### Devoluciones y cancelaciones
 
@@ -155,4 +154,3 @@ Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
 Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](../../account/refunds-and-cancellations.es.md).
-

@@ -2,7 +2,11 @@
 
 Un **MarketPlace** es un sitio o aplicación que permite a vendedores y compradores relacionarse para efectuar una transacción comercial. El propietario del Marketplace proporciona espacio a los vendedores para mostrar sus bienes o servicios, y se encarga de gestionar todos los aspectos de la transacción. Por ejemplo, Mercado Libre es un Marketplace.
 
-Mercado Pago le permite crear su propio Marketplace, dónde podrá interactuar con las cuentas de Mercado Pago de sus vendedores, para generar transacciones y, opcionalmente, cobrar una comisión por el servicio ofrecido.
+Mercado Pago te permite realizar cobros a nombre de los vendedores de tu plataforma y opcionalmente cobrar una comisión por la transacción.
+
+Cuando se genera un pago, el dinero es dividido en el instante entre la cuenta de tu vendedor y la tuya, en caso de cobres una comisión.
+
+> _**Nota**_: La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor.
 
 Marketplace requiere de 3 pasos:
 
@@ -15,9 +19,9 @@ Después de crear la aplicación, sólo es necesario ejecutar el segundo y terce
 
 ## Credenciales
 
-Al igual que con el Checkout de Pagos, cuentas con un par de claves privadas para conectarte con la API. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com/mla/account/credentials?type=basic).
+Al igual que con el Checkout de Pagos, cuentas con un par de claves privadas para conectarte con la API. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com/mla/account/credentials).
 
-Las **credenciales privadas**, se utilizan para todas las llamadas a las APIs, como procesar un pago, realizar reembolsos, y más. Las claves privadas deben ser mantenidas **confidencialmente** en tus servidores de backend y nunca deben ser publicadas.
+Las **credenciales privadas** (también llamada `access_token`), se utilizan para todas las llamadas a las APIs, como procesar un pago, realizar reembolsos, y más. Las claves privadas deben ser mantenidas **confidencialmente** en tus servidores de backend y nunca deben ser publicadas.
 
 
-#### [Comenzar a crear mi Marketplace]()
+#### [Comenzar a crear mi Marketplace](create-marketplace.es.md)
