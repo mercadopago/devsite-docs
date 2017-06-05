@@ -1,15 +1,15 @@
-# Receber o pagamento
+# Receber um pagamento
 
 Receba pagamentos de maneira simples e segura utilizando o Checkout do Mercado Pago.
 
 
-## 1. Crie a preferência do pagamento
+## 1. Crie uma preferência de pagamento
 
-Uma preferência de pagamento contém todas as informações sobre o produto ou serviço pelo qual vai se pagar. Por exemplo:
+Uma preferência de pagamento contém todas as informações sobre o produto ou serviço pelo qual se vai pagar. Por exemplo:
 
 1. Descrição e montante.
-2. Informações sobre o comprador (Email, nome, endereço, etc).
-3. Formas de pagamento aceitos
+2. Informações sobre seu comprador (Email, nome, endereço, etc).
+3. Formas de pagamento aceitas.
 4. ID de referência de seu sistema.
 
 Para criar uma preferência de pagamento deve [instalar o SDK do Mercado Pago](https://github.com/mercadopago) e configurar o objeto `MP` com suas [credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
@@ -49,7 +49,7 @@ Quanto mais informações nos enviar, melhor será a taxa de aprovação dos pag
 
 #### Comprador
 
-É obrigatório o envio do `email` de seu comprador. Se nos enviar dados como tipo e número de documento, os mesmos são serão solicitados durante o processo de pagamento.
+É obrigatório o envio do `email` de seu comprador. Se nos enviar dados como tipo e número do documento de identificação, os mesmos não são serão solicitados durante o processo de pagamento.
 
 ```json
 {
@@ -112,7 +112,7 @@ Uma vez criada a preferência utilize a URL localizada no atributo `init_point` 
 
 ## 3. Ative as notificações de pagamentos
 
-As notificações são uma forma automática de inteirar-se sobre seus novos pagamentos e as atualizações referente aos seus estados.
+As notificações são uma forma automática de inteirar-se sobre seus novos pagamentos e as atualizações de seus estados.
 
 Isto lhe permitirá administrar seu estoque e manter seu sistema sincronizado.
 
@@ -120,9 +120,9 @@ Visite a seção de [Notificações](#) para saber mais sobre o assunto.
 
 ## 4. Cancelar um pagamento
 
-As formas de pagamentos em dinheiro devem ser efetivadas dentre 3 a 5 dias dependendo de cada uma.
+As formas de pagamentos em dinheiro devem ser efetivadas entre 3 a 5 dias dependendo de cada uma.
 
-O vencimento destes pagamentos **não é automático**, pelo qual é necessário que se execute o [cancelamento do pagamento](../account/refunds-and-cancellations.pt.md) após o vencimento.
+O vencimento destes pagamentos **não é automático**, nesse caso é necessário que se execute o [cancelamento do pagamento](../account/refunds-and-cancellations.pt.md) após o vencimento.
 
 
 ## 5. Teste sua integração
