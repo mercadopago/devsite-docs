@@ -77,6 +77,6 @@ El proceso completo para probar el checkout es el siguiente:
     * **OTHE**: Rechazo general
 6. Valida, en caso de reintento, que se lleven a cabo correctamente.
 7. Verifica que la notificación te ha llegado correctamente
-8. Verifica que la división del pago entre las cuentas del **marketplace** y la del **vendedor** se ha realizado en forma correca
+8. Verifica que la división del pago entre las cuentas del **marketplace** y la del **vendedor** se ha realizado en forma correcta según lo especificado en el atributo `marketplace\_fee` de la preferencia de pagos
 8. Realiza la devolución de un pago acreditado
 
