@@ -76,7 +76,7 @@ Además de devolver los campos `processing_mode` y `merchant_account_id` se agre
 
 ## Recibir un pago en cuotas
 
-Para hacer uso de tus promociones bancarias que ofrece Mercado Pago, es importante que se envíe el campo `installments` y `processing_mode` en `gateway` al momento de crear un pago.
+Para hacer uso de tus promociones bancarias, es importante que se envíe el campo `installments` y `processing_mode` en `gateway` al momento de crear un pago.
 
 El campo `installments` corresponde a la cantidad de cuotas que el comprador elije.
 
@@ -128,6 +128,9 @@ La respuesta cuenta con la información de las cuotas disponibles indicando el v
 ]
 
 ```
+
+En el caso de que vayas a ofrecer cuotas con interés, debes adicionar el costo de estos al `transaction_amount`.
+
 
 > _**Nota**_: Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
 
