@@ -1,4 +1,4 @@
-# Creando una suscripción
+# Creando una subscripción
 
 Subscribe a tus clientes para recibir de forma periódica y automatizada.
 
@@ -8,7 +8,7 @@ Subscribe a tus clientes para recibir de forma periódica y automatizada.
 > * Almacenar [clientes y tarjetas](../../payments/customers-and-cards.es.md).
 
 
-## 1. Crea un plan de suscripción
+## 1. Crea un plan de subscripción
 
 El plan contiene la información de periodicidad de cobro y monto a cobrar.
 
@@ -65,10 +65,10 @@ Algunas opciones para realizarlo son:
 
 1. [Realizar una autorización](../../payments/api/authorization-and-capture.es.md) por un monto bajo a la tarjeta y cancelarla luego, para confirmar que la tarjeta es válida.
 
-2. Utilizar el atributo `setup_fee`, que realizará un cobro extra al intentar suscribir a tu usuario; y sólo si dicho cobro es exitoso, se procede con el alta de la suscripción.
+2. Utilizar el atributo `setup_fee`, que realizará un cobro extra al intentar suscribir a tu usuario; y sólo si dicho cobro es exitoso, se procede con el alta de la subscripción.
 
 
-## 3. Suscribe un customer a un plan
+## 3. Subscribe un customer a un plan
 
 Una subscripción es un objeto que relaciona un `Plan` y un `Customer`.
 
@@ -86,7 +86,7 @@ curl -X POST \
                 }
         }'
 ```
-> _**Nota**_: El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de suscripciones.
+> _**Nota**_: El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de subscripciones.
 
 **Respuesta:**
 
@@ -134,11 +134,11 @@ Visita la sección [Webhooks](#) para más información.
 
 ## Añade características especiales a tu plan
 
-Revisa el [API Doc de plans](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Revisa el [API Doc de plans](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
-### Limita la cantidad de cuotas de la suscripción
+### Limita la cantidad de cuotas de la subscripción
 
-Puedes indicar que las suscripciones sólo durarán un período determinado de tiempo (por ejemplo que recibirán hasta 24 cobros):
+Puedes indicar que las subscripciones sólo durarán un período determinado de tiempo (por ejemplo que recibirán hasta 24 cobros):
 
 ```json
 {
@@ -154,7 +154,7 @@ Puedes indicar que las suscripciones sólo durarán un período determinado de t
 
 ### Agenda los cobros para un día determinado del mes
 
-Si tu plan de suscripción es en base a meses, puedes especificar exactamente qué día del mes quieres que se realicen los cobros:
+Si tu plan de subscripción es en base a meses, puedes especificar exactamente qué día del mes quieres que se realicen los cobros:
 
 ```json
 {
@@ -168,7 +168,7 @@ Si tu plan de suscripción es en base a meses, puedes especificar exactamente qu
 }
 ```
 
-Si no especificas este atributo, los cobros se agendarán para el mismo día en que realizaste el alta de la suscripción.
+Si no especificas este atributo, los cobros se agendarán para el mismo día en que realizaste el alta de la subscripción.
 
 ### Ofrece un período gratuito de prueba
 
@@ -203,7 +203,7 @@ Debes especificar el monto a cobrar al crear el plan:
 }
 ```
 
-Este pago no cancela ni forma parte del primer invoice de la suscripción.
+Este pago no cancela ni forma parte del primer invoice de la subscripción.
 
 En caso de que no podamos realizar este cobro, la subscripción no se creará.
 
