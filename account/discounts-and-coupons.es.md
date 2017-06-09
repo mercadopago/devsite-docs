@@ -84,9 +84,7 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 
 Como puedes ver el descuento se aplicó y el comprador sólo tendrá que pagar $269.99. 
 
-En este ejemplo utilizamos `master`. Todos los medios de pago tienen el mismo comportamiento.
 
----
 
 # Cupón de descuento
 
@@ -102,7 +100,7 @@ Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercado
 curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'
 ```
 
-- El `transaction_amount ` es el importe total de la compra.
+- El `transaction_amount` es el importe total de la compra.
 - El `payer_email` es el email del comprador en tu plataforma.
 - El `coupon_code` es el código insertado por el comprador.
 

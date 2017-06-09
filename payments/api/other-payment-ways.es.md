@@ -108,7 +108,9 @@ En el campo `external_resource_url` tienes una url que contiene las instruccione
 
 ## Cancelar un pago
 
-Los pagos de medios en efectivo deben ser pagados entre los 3 a 7 días dependiendo de cada uno.
+Únicamente puedes cancelar pagos que se encuentren en un estado `pending` o `in_process`.
+
+Los pagos de medios en efectivo deben ser pagados entre los 3 a 7 días dependiendo del vencimiento de cada uno.
 
 El vencimiento de estos no es automático, por lo cuál es necesario que ejecutes la [cancelación del pago](#) luego del vencimiento.
 
@@ -126,7 +128,7 @@ Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Re
 
 Si este no cuenta con una, recibirá un email en la dirección enviada en el pago con instrucciones de cómo retirar su dinero.
 
-Para más puedes ver el artículo sobre [devoluciones](#).
+Para más información puedes ver el artículo sobre [devoluciones](#).
 
 ## Integrar Webpay (Chile)
 

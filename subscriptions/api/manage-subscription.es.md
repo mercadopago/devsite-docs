@@ -14,7 +14,6 @@ Puedes cambiar el monto de los planes en cualquier momento. A partir del momento
 Para cambiar el monto de un plan debes hacerlo de la siguiente manera:
 
 ```php
-
 <?php
 require_once ('mercadopago.php');
 
@@ -26,6 +25,7 @@ $plan_data = array(
     	"transaction_amount" => $NEW_AMOUNT
     )
 );
+$plan  = $mp->put("/v1/plans/". $PLAN_ID, $plan_data);
 ```
 
 **Respuesta:**

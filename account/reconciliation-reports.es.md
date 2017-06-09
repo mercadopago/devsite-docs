@@ -1,22 +1,21 @@
 # Reportes de conciliación
 
-## ¿Qué son?
+Mercado Pago te brinda reportes para conciliar tus operaciones con tus sistemas internos. Tenemos dos reportes para distintas necesidades.
 
-Son reportes predefinidos para conciliar la cuenta de MercadoPago con tus sistemas internos. Tenemos dos reportes para distintas necesidades.
 
-**Reporte de dinero disponible**
+**Reporte de dinero en cuenta (Settlement Report)**
+
+Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron tu balance dentro del período solicitado.
+
+**Reporte de dinero disponible (Bank Report)**
 
 Contiene todos los pagos liberados dentro del período solicitado. Sirve para conciliar tu dinero disponible en el sitio. Este reporte también puede usarse, por ejemplo, para ver qué pagos forman parte de un retiro que realizaste a tu cuenta bancaria.
-
-**Reporte de dinero en cuenta**
-
-Contiene todos los eventos de pagos (acreditación, devolución, mediación) que afectaron a tu cuenta dentro del período solicitado. Sirve para conciliar el dinero total en tu cuenta de MercadoPago.
 
 Ambos reportes pueden generarse en forma manual o automática.
 
 ## ¿Cómo se usan?
 
-Ejemplo de generación manual para el reporte de dinero disponible
+Ejemplo de generación manual para el reporte de dinero disponible.
 
 Realiza el POST a la API de la siguiente manera:
 
@@ -84,7 +83,7 @@ Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguien
 
 
 
-## Reporte de dinero disponible
+## Reporte de dinero disponible (Bank Report)
 
 ### Generación y búsqueda
 
@@ -131,7 +130,7 @@ Realiza la descarga del archivo especificado:
 	GET /v1/account/bank_report/:file_name
 
 
-## Reporte de dinero en cuenta
+## Reporte de dinero en cuenta (Settlement Report)
 
 ### Generación y búsqueda
 
