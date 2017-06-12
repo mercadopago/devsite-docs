@@ -100,37 +100,40 @@ Consultar los valores disponibles en: XXXX (API ML)
 
 Un ejemplo de Checkout básico con MercadoEnvíos, aplicando todo lo anterior, quedaría de la siguiente manera:
 
-```
+```php
 <?php
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-$mp = new MP('7050452359528728', '2HTipLZ0NjWggrS13Sb9GbefkP67QEIa');
+  $mp = new MP('7050452359528728', '2HTipLZ0NjWggrS13Sb9GbefkP67QEIa');
 
-$preference_data = array(
-	"items" => array(
-		array(
-			"title" => "Multicolor kite",
-			"quantity" => 1,
-			"currency_id" => "ARS", // Available currencies at: https://api.mercadopago.com/currencies
-			"unit_price" => 10.00
-		)
-	),
-	"shipments" => array(
-		"mode" => "me2",
-		"dimensions" => "30x30x30,500",
-		"local_pickup" => true,
-		"free_methods" => array(
-			array(
-				"id" => 73328
-			)
-		),
-		"default_shipping_method" => 73328,
-		"zip_code" => "5700"
-	)
-);
+  $preference_data = array(
+  	"items" => array(
+  		array(
+  			"title" => "Multicolor kite",
+  			"quantity" => 1,
+  			"currency_id" => "ARS", // Available currencies at: https://api.mercadopago.com/currencies
+  			"unit_price" => 10.00
+  		)
+  	),
+  	"shipments" => array(
+  		"mode" => "me2",
+  		"dimensions" => "30x30x30,500",
+  		"local_pickup" => true,
+  		"free_methods" => array(
+  			array(
+  				"id" => 73328
+  			)
+  		),
+  		"default_shipping_method" => 73328,
+  		"zip_code" => "5700"
+  	)
+  );
 
-$preference = $mp->create_preference($preference_data);
+  $preference = $mp->create_preference($preference_data);
 ?>
+```
+
+```html
 
 <!DOCTYPE html>
 <html>
@@ -161,11 +164,10 @@ Para poder realizar el cálculo, necesitamos que nos envíes cierta información
 
 * free_method (opcional): Puedes ofrecer envío gratis, esto te permite generar más ventas. Sólo debes indicarnos el medio de envío que vas a ofrecer como gratis. Luego, el monto del mismo te será debitado de tu cuenta al momento de recibir un pago. 
 
-Nombre	ID
-OCA Estándar	73328
-OCA Prioritario	73330
-
-
+Nombre	|   ID
+|---|---|
+OCA Estándar	|   73328
+OCA Prioritario	|   73330
 
 
 ### Paso 4: Imprimí la etiqueta

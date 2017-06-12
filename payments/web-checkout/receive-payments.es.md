@@ -15,32 +15,34 @@ Una preferencia de pago contiene toda la información del producto o servicio qu
 Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar el objeto `MP` con tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 ```php
-<?php
-require_once ('mercadopago.php');
-$mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+  <?php
+    require_once ('mercadopago.php');
+    $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+  ?>
 ```
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
 
 ```php
-$preference_data = array(
-	"items" => array(
-		array(
-			"title" => "Multicolor kite",
-			"quantity" => 1,
-			"currency_id" => "ARS",
-			"unit_price" => 10.00,
-			"description" => "",
-			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
-		)
-	),
-	"payer" => array(
-		"email" => "usuario@mail.com"
-	)
-);
+  <?php
+    $preference_data = array(
+    	"items" => array(
+    		array(
+    			"title" => "Multicolor kite",
+    			"quantity" => 1,
+    			"currency_id" => "ARS",
+    			"unit_price" => 10.00,
+    			"description" => "",
+    			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
+    		)
+    	),
+    	"payer" => array(
+    		"email" => "usuario@mail.com"
+    	)
+    );
 
-$preference = $mp->create_preference($preference_data);
-?>
+    $preference = $mp->create_preference($preference_data);
+  ?>
 ```
 
 ### Contenido de la preferencia
