@@ -1,6 +1,5 @@
 # Personalización
 
-
 Desde la preferencia de pagos no sólo puedes enviar información del item a pagar y del comprador, si no también puedes definir medios de pago que no deseas aceptar, URL de retorno a tu sitio después del pago, métodos de envío y demas.   
 
 
@@ -69,7 +68,7 @@ $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
 
 $mp->get('/v1/payments/search?external_reference=EXTERNAL');
 
->
+?>
 ```
 
 

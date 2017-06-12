@@ -1,6 +1,6 @@
-# Checkout
+# Checkout Web
 
-Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario de manera simple, rápida y segura.
+Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
 
 Trabajamos para que tus usuarios tengan la mejor experiencia de pago ofreciendo:  
 
@@ -9,7 +9,7 @@ Trabajamos para que tus usuarios tengan la mejor experiencia de pago ofreciendo:
 * Pago como **invitado**: No es requerida la creación de una cuenta de Mercado Pago.
 * Split de Pagos: Posibilidad de **pagar con 2 tarjetas**.
 * Los **medios de pago** principales en todos los países.
-* **Financiación**: Ofrecé cuotas con la mejor financiación posible.
+* **Financiación**: Ofrece cuotas con la mejor financiación posible.
 
 Contamos con la certificación [PCI DSS](https://www.pcisecuritystandards.org/), lo cuál avala que guardamos, procesamos o intercambiamos información de tarjeta de crédito de forma segura.
 
@@ -21,10 +21,10 @@ Todos nuestros pagos son analizados por nuestra herramienta de prevención de fr
 
 Integrar el checkout es muy fácil:
 
-1. Incluí el SDK.
-2. Colocá tus credenciales y creá la preferencia de pagos.
+1. Incluye el SDK en tu proyecto.
+2. Coloca tus credenciales y crea la preferencia de pagos.
 3. Inicia el proceso de pago desde un botón en tu sitio.
-4. Enterate del pago escuchando notificaciones.
+4. Enterate del pago escuchando las notificaciones que te enviamos.
 
 ### Incluye Mercado Envíos
 

@@ -9,16 +9,14 @@ Te guiaremos para que puedas configurar:
 * Medios de pago que aceptas: tarjetas de crédito o débito y pagos en efectivo.
 * Fecha entre las que deseas permitir el pago.
 * Código de referencia para identificar la venta en tu backend.
-* Redirecciones hacia tu sitio web.
+* Url de redireccion hacia tu sitio web.
 
 Con ésta configuración **obtendrás un link** que puedes enviar por e-mail, publicar en redes sociales, o donde quieras. 
 
 Ingresando en este link, tus compradores serán redirigidos al checkout donde verán los datos que configuraste y podrán elegir cómo pagar. Pueden realizar el pago sin necesidad de tener una cuenta de Mercado Pago.
 
-Además te brindaremos un **Código HTML** que puedes incluir en tu sitio web y un **Código QR**  para que compartas con tus clientes.
-
+Además te brindaremos un **Script HTML** que puedes incluir en tu sitio web y un **Código QR**  para que compartas con tus clientes.
 
 > Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout](../web-checkout/introduction.es.md)** o **[API](../api/introduction.es.md)**.
 
-
-### [Crear herramienta de cobro](https://www.mercadopago.com.ar/tools/create)
+Puedes revisar tambien: [Crear herramienta de cobro](https://www.mercadopago.com.ar/tools/create)
