@@ -64,7 +64,9 @@ Puedes listar las tarjetas almacenadas para que tu cliente elija con cuál quier
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 
 ```php
+<?php
 $cards = $mp->get("/v1/customers/".$customer_id."/cards");
+?>
 ```
 
 Respuesta:
@@ -82,7 +84,7 @@ Respuesta:
 
 Con esta respuesta recomendamos realizar un formulario:
 
-```php
+```html
 <li>
 	<label>Payment Method:</label>
 	<select id="cardId" name="cardId" data-checkout='cardId'>
@@ -151,6 +153,7 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 Eso es todo, la respuesta tendrá el estado del pago (`approved`, `rejected` o `in_process`). 
@@ -187,12 +190,14 @@ print_r ($card);
 En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
 
 ```php
-$customer = array (
-    "email" => "your.payer@email.com"
-);
+<?php
+  $customer = array (
+      "email" => "your.payer@email.com"
+  );
 
-$saved_customer = $mp->get("/v1/customers/search", $customer);
-$customer_id = $saved_customer["response"]["results"][0]["id"];
+  $saved_customer = $mp->get("/v1/customers/search", $customer);
+  $customer_id = $saved_customer["response"]["results"][0]["id"];
+?>
 ```
 
 > SUMAR RESPUESTA
@@ -202,8 +207,10 @@ $customer_id = $saved_customer["response"]["results"][0]["id"];
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 
 ```php
-$cards = $mp->get("/v1/customers/".$customer_id."/cards");
-print_r($cards);
+<?php
+  $cards = $mp->get("/v1/customers/".$customer_id."/cards");
+  print_r($cards);
+?>
 ```
 
 Respuesta:

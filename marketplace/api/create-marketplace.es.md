@@ -135,6 +135,7 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago, como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.

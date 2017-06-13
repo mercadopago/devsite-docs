@@ -14,7 +14,7 @@ El plan contiene la información de periodicidad de cobro y monto a cobrar.
 
 Para crearlo debes realizar un request POST:
 
-```php
+```curl
 curl -X POST \
         -H 'accept: application/json' \
         -H 'content-type: application/json' \

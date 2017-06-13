@@ -35,23 +35,24 @@ Una vez que cuentas con el id del `card_token` puedes realizar el pago realizand
 
 ```php
 <?php
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-// Setup your private key
-$mp = new MP('SECRET_ACCESS_TOKEN');
+  // Setup your private key
+  $mp = new MP('SECRET_ACCESS_TOKEN');
 
-$payment_data = array(
-    "transaction_amount" => 100,
-    "token" => "ff8080814c11e237014c1ff593b57b4d",
-    "payment_method_id" => "visa",
-    "payer" => array (
-        "email" => "test_user_19653727@testuser.com"
-    ),
-    "processing_mode" => "gateway",
-    "merchant_account_id" => "#hashMerchantAccountID"
-);
+  $payment_data = array(
+      "transaction_amount" => 100,
+      "token" => "ff8080814c11e237014c1ff593b57b4d",
+      "payment_method_id" => "visa",
+      "payer" => array (
+          "email" => "test_user_19653727@testuser.com"
+      ),
+      "processing_mode" => "gateway",
+      "merchant_account_id" => "#hashMerchantAccountID"
+  );
 
-$payment = $mp->post("/v1/payments", $payment_data);
+  $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 La respuesta esperada será la siguiente:
@@ -66,6 +67,7 @@ La respuesta esperada será la siguiente:
   "merchant_account_id": "#hashMerchantAccountID",
   "acquirer": "visa",
   "merchant_number": "1234567"
+}
 ```
 
 Además de devolver los campos `processing_mode` y `merchant_account_id` se agregan dos más:
@@ -121,7 +123,9 @@ La respuesta cuenta con la información de las cuotas disponibles indicando el v
     {
         "payment_method_id": "amex",
         "payment_type_id": "credit_card",
-        "processing_mode" : "gateway",
+        "pr
+        
+        ocessing_mode" : "gateway",
         "merchant_account_id" : "#hashMerchantAccountID-2",
         ...
   }
@@ -138,22 +142,23 @@ Para crear el pago es importante enviar la cantidad de `installments` y el `proc
 
 ```php
 <?php
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-$mp = new MP('SECRET_ACCESS_TOKEN');
+  $mp = new MP('SECRET_ACCESS_TOKEN');
 
-$payment_data = array(
-    "transaction_amount" => 100,
-    "token" => "ff8080814c11e237014c1ff593b57b4d",
-    "payer" => array (
-        "email" => "test_user_19653727@testuser.com"
-    ),
-    "installments" => 3,
-    "processing_mode" => "gateway",
-    "payment_method_id" => "amex"
-);
+  $payment_data = array(
+      "transaction_amount" => 100,
+      "token" => "ff8080814c11e237014c1ff593b57b4d",
+      "payer" => array (
+          "email" => "test_user_19653727@testuser.com"
+      ),
+      "installments" => 3,
+      "processing_mode" => "gateway",
+      "payment_method_id" => "amex"
+  );
 
-$payment = $mp->post("/v1/payments", $payment_data);
+  $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 ## Manejo de respuestas

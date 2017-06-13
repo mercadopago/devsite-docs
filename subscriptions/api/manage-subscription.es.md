@@ -26,6 +26,7 @@ $plan_data = array(
     )
 );
 $plan  = $mp->put("/v1/plans/". $PLAN_ID, $plan_data);
+?>
 ```
 
 **Respuesta:**
@@ -63,6 +64,7 @@ $subscription_data = array(
 );
 
 $subscription = $mp->put("/v1/subscriptions/". $SUBSCRIPTION_ID, $subscription_data);
+?>
 ```
 
 **Respuesta:**
@@ -91,6 +93,7 @@ $subscription_data = array(
 );
 
 $subscription = $mp->put("/v1/subscriptions/". $SUBSCRIPTION_ID, $subscription_data);
+?>
 ```
 
 **Respuesta:**
@@ -125,6 +128,7 @@ $plan_data = array(
 );
 
 $plan = $mp->put("/v1/plans/". $PLAN_ID, $plan_data);
+?>
 ```
 
 > _**Nota**_: Cuando ejecutes esta acción, todas las subscripciones serán marcadas con un status `cancelled`
@@ -155,6 +159,7 @@ $subscription_data = array(
 );
 
 $subscription = $mp->put("/v1/subscriptions/". $SUBSCRIPTION_ID, $subscription_data);
+?>
 ```
 
 **Respuesta:**

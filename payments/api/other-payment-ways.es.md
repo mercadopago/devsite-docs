@@ -16,13 +16,13 @@ Puedes obtener el listado de medios de pago disponibles realizando un request `H
 ```php
 <?php
 
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-$mp = new MP ("ACCESS_TOKEN");
+  $mp = new MP ("ACCESS_TOKEN");
 
-$payment_methods = $mp->get("/v1/payment_methods");
+  $payment_methods = $mp->get("/v1/payment_methods");
 
-print_r ($payment_methods);
+  print_r ($payment_methods);
 ?>
 ```
 
@@ -78,6 +78,7 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 Respuesta:
@@ -181,6 +182,7 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 > _**Nota**_: Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas).

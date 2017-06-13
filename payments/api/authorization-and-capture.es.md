@@ -116,16 +116,18 @@ Si decides capturar por un monto menor al reservado, es necesario que además de
 
 ```php
 <?php
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-$mp = new MP('ACCESS_TOKEN');
+  $mp = new MP('ACCESS_TOKEN');
 
-$payment_data = array(
-	"transaction_amount" => 75,
-	"capture" => true
-);
+  $payment_data = array(
+  	"transaction_amount" => 75,
+  	"capture" => true
+  );
 
-$payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+  $payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+?>
+
 ```
 
 Respuesta:
@@ -163,6 +165,7 @@ $payment_data = array(
 );
 
 $payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+?>
 ```
 
 Respuesta:

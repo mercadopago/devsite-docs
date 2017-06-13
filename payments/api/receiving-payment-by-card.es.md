@@ -211,21 +211,22 @@ Para realizar el pago solamente debes realizar un API call:
 
 ```php
 <?php
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-// Setup your private key
-$mp = new MP('SECRET_ACCESS_TOKEN');
+  // Setup your private key
+  $mp = new MP('SECRET_ACCESS_TOKEN');
 
-$payment_data = array(
-    "transaction_amount" => 100,
-    "token" => "ff8080814c11e237014c1ff593b57b4d",
-    "payment_method_id" => "visa",
-    "payer" => array (
-        "email" => "test_user_19653727@testuser.com"
-    )
-);
+  $payment_data = array(
+      "transaction_amount" => 100,
+      "token" => "ff8080814c11e237014c1ff593b57b4d",
+      "payment_method_id" => "visa",
+      "payer" => array (
+          "email" => "test_user_19653727@testuser.com"
+      )
+  );
 
-$payment = $mp->post("/v1/payments", $payment_data);
+  $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 > Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
@@ -299,6 +300,7 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 ## Manejo de respuestas

@@ -22,6 +22,7 @@ require_once ('mercadopago.php');
 $mp = new MP('SECRET_ACCESS_TOKEN');
 
 $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
+?>
 ```
 
 **Response status code: 201 Created**
@@ -55,6 +56,7 @@ $refund_data = array(
 );
 
 $refund = $mp->post("/v1/payments/". $PAYMENT_ID ."/refunds", $refund_data);
+?>
 ```
 
 ## Obtén las devoluciones realizadas
@@ -68,6 +70,7 @@ require_once ('mercadopago.php');
 $mp = new MP('SECRET_ACCESS_TOKEN');
 
 $refund = $mp->get("/v1/payments/". $PAYMENT_ID ."/refunds");
+?>
 ```
 
 Respuesta:
