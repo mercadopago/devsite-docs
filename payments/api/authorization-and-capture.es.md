@@ -43,6 +43,7 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 Respuesta:
@@ -89,6 +90,7 @@ $payment_data = array(
 );
 
 $payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+?>
 ```
 
 El request actualizará el status a `approved` con un `status_detail=accredited`:
@@ -156,15 +158,15 @@ Para hacer esto debes actualizar el atributo `status` del pago a un estado `canc
 
 ```php
 <?php
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-$mp = new MP('ACCESS_TOKEN');
+  $mp = new MP('ACCESS_TOKEN');
 
-$payment_data = array(
-	"status" => "cancelled"
-);
+  $payment_data = array(
+  	"status" => "cancelled"
+  );
 
-$payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
+  $payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
 ?>
 ```
 
