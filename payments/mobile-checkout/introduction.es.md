@@ -1,11 +1,11 @@
 **Introducción**
 ============
 
-Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Utiliza nuestra SDK e instantáneamente ofrecerás a tus usuarios:
+Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
  
  - Pagos con tarjeta en una o más cuotas, efectivo o transferencia bancaria. 
  - Comunicación de descuentos y promociones.
- - Comunicación del resultado de su pago.
+ - Comunicación del resultado de los pagos.
 
 
 Añade la dependencia a tu proyecto
@@ -13,13 +13,13 @@ Añade la dependencia a tu proyecto
 
 [Android]
 
-Añade la dependencia en el archivo **build.gradle** del módulo donde nos integres con el siguiente código: 
+En el archivo **build.gradle** añade el siguiente código: 
 
     dependencies {
        compile 'com.mercadopago:sdk:3.0.0'
     }
 
-Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo en tu proyecto.
+Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
 
 ----------
 [iOS - Swift/Objective-C]
