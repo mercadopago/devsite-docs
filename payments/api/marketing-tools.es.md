@@ -1,20 +1,17 @@
-# Ofrecer descuentos
+# Herramientas de Marketing
 
-Mercado Pago te permite crear campañas de descuentos para todos tus compradores en forma directa o para aquellos que tengan un código de descuento en particular. Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras. 
-Ingresa a [Crear descuento](https://www.mercadopago.com.ar/campaigns/create) para configurar la campaña de descuentos.
+Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de Mercado Pago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).
 
-## Pre-requisitos
+Puedes crear campañas que afecten a todos tus compradores por ejemplo para cuando quieres hacer rebajas por temporada, o bien puedes alcanzar a ciertos compradores objetivo los cuáles cuentan con un código de descuento que obtuvieron por ejemplo al efectuar una compra.
 
-
-## //Ver de diferenciar dos articulos. Uno para chechout y el otro para API. Sección: herramientas de markenting. VER
+Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras. 
 
 
+## Consulta el descuento para incluirlo en el pago
 
-## Descuento Directo
+Antes de crear el pago, consulta si tu comprador es alcanzado por alguna de tus campañas de descuentos.
 
-Esta API tiene como objetivo proporcionar la información correcta y actualizada a fin de dar una buena y clara experiencia de compra. Es importante verificar y notificar al comprador si el descuento aplicó o no.
-
-### Verifica si el comprador tiene un descuento disponible:
+### Descuento Directo
 
 Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
 
@@ -44,7 +41,7 @@ curl -H "Accept: application/json" \
 - El `amount_off` es el monto fijo que definiste en tu campaña de descuento.
 - El `coupon_amount` es el importe del descuento que se aplicará. Guárdalo, también lo usarás al procesar el pago.
 
-### Procesar pago
+#### Procesar pago
 
 Para procesar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
 
@@ -93,13 +90,11 @@ Como puedes ver el descuento se aplicó y el comprador sólo tendrá que pagar $
 
 
 
-# Cupón con código de descuento
+### Cupón con código de descuento
 
-También puedes crear cupones de descuento, que aplicarán cuando se procese el pago.
+Agrega un campo adicional en el formulario de pago para poder capturar el código de cupón que tu comprador ingrese.
 
-Puedes agregar un campo adicional en el formulario de pago para poder capturar el código de cupón.
-
-### Verifica si el comprador tiene un descuento disponible:
+#### Verifica si el comprador tiene un descuento disponible:
 
 Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
 
@@ -142,7 +137,7 @@ Si el descuento no está disponible porque el comprador ya lo utilizó, la API d
 
 En este momento puedes mostrar que el cupón no es válido o ya no está disponible.
 
-### Procesar pago
+#### Procesar pago
 
 ```curl
 curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
