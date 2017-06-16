@@ -1,19 +1,29 @@
 # Devoluciones y cancelaciones
 
-Puedes devolver total o parcialmente los pagos que hayas recibido de tus usuarios. Esto te permitirá, por ejemplo, corregir situaciones en las cuales un usuario te haya pagado un monto mayor, haya pagado dos veces un mismo artículo, o se cancele la operación.
+Existen diferentes situaciones en las que puedes querer cancelar una venta, ya sea porque no has podido hacer la entrega del producto, porque tu comprador solicitó la devolución del dinero o bien porque el pago quedó en estado pendiente y tu modelo de negocio sólo permite guardar stock por un plazo determinado.
 
-### Índice:
+Si el `status`del pago es `approved` entonces tu comprador pudo efectuar el pago y tu has recibido el dinero. Por lo tanto, para reversar la transacción deberás efectuar una devulución. También puedes devolver un monto parcial de un pago.
+Todas las comisiones e intereses cobrados serán devueltos total o parcialmente según corresponda.
 
-1. [Realiza la devolución del pago](#realiza-la-devolución-del-pago)
-2. [Realiza una devolución parcial](#realiza-una-devolución-parcial)
-3. [Obtén las devoluciones realizadas](#obtén-las-devoluciones-realizadas)
-4. [Consideraciones sobre las devoluciones](#consideraciones-sobre-las-devoluciones)
-5. [Realiza la cancelación del pago](#realiza-la-cancelación-del-pago)
+Si el status del pago es `pending`o `in_process` el dinero aún no se le ha cobrado al comprador, por lo que se debe proceder a efectuar una cancelación del mismo evitando que se pueda concretar el pago. Este tipo se utiliza principalmente en el caso que tengas **ventas con medios offline** (cupones para pagar en efectivo) y sólo deses dar un plazo determinado para recibir el pago.
 
 
-## Realiza la devolución del pago
+## Devoluciones
 
-Para realizar la devolución, utiliza las [credenciales de tu aplicación]():
+Puedes devolver un pago dentro de los **90 días** desde su acreditación.
+Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto del pago satisfactoriamente. De lo contrario obtendrás un error `400 Bad Request`.
+Si tu comprador realizó el pago con tarjeta, la devolución será reintegrada en el resumen de la misma. 
+Si el pago fue realizado con otro medio, se reintegrará en la cuenta de Mercado Pago del comprador. En caso que no tenga una cuenta, crearemos una bajo su mail para hacer el reintegro.
+
+
+# (TODAS ESTAS NO LAS PONDRÍA,O LAS INCLUIRÍA EN LA PARTE DE REGIONAL)
+- Por el momento, no es posible hacer devoluciones parciales a pagos de artículos de Mercado Libre (`marketplace=MELI`).
+- Por el momento, no es posible hacer devoluciones parciales a pagos realizados con la tarjeta de Mercado Libre de Brasil (`payment_method_id=melicard`).
+- Por el momento, no es posible hacer devoluciones parciales a pagos recurrentes de Argentina (`operation_type=recurring_payment`).
+
+### Realiza la devolución total del pago
+
+Para realizar la devolución, utiliza las [credenciales de tu aplicación](). El pago quedará en estado `refunded`.
 
 ```php
 <?php
@@ -42,9 +52,11 @@ $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 }
 ```
 
-## Realiza una devolución parcial
+### Realiza una devolución parcial
 
-También puedes realizar una devolución parcial especificando el monto de la misma:
+Puedes realizar hasta 20 devoluciones parciales a un mismo pago. Una vez efectuada, el estado del pago será `approved:partially_refunded`
+
+Indica el monto que 
 
 ```php
 <?php
@@ -59,7 +71,7 @@ $refund = $mp->post("/v1/payments/". $PAYMENT_ID ."/refunds", $refund_data);
 ?>
 ```
 
-## Obtén las devoluciones realizadas
+### Obtén las devoluciones realizadas
 
 Puedes ver los refunds realizados con el siguiente request:
 
@@ -99,30 +111,13 @@ Respuesta:
 }
 ```
 
-## Consideraciones sobre las devoluciones
 
-Para realizar devoluciones totales o parciales, debes tener en cuenta las siguientes consideraciones.
+## Cancelaciones
 
-### Restricciones
-
-- Sólo se pueden devolver pagos en estado `approved`.
-- Puedes devolver un pago dentro de los **90 días** desde su acreditación.
-- Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto del pago satisfactoriamente. De lo contrario obtendrás un error `400 Bad Request`.
-- Puedes realizar hasta 20 devoluciones parciales a un mismo pago.
-- Por el momento, no es posible hacer devoluciones parciales a pagos de artículos de Mercado Libre (`marketplace=MELI`).
-- Por el momento, no es posible hacer devoluciones parciales a pagos realizados con la tarjeta de Mercado Libre de Brasil (`payment_method_id=melicard`).
-- Por el momento, no es posible hacer devoluciones parciales a pagos recurrentes de Argentina (`operation_type=recurring_payment`).
-
-### Comportamiento
-
-- El estado del pago será `approved:partially_refunded` hasta que se haya devuelto la totalidad. Recién en ese momento el estado pasará a ser `refunded`.
-- Las devoluciones de pagos hechos con tarjeta serán reintegradas en el resumen de la misma.
-- Las devoluciones de pagos hechos con otros medios serán depositadas en la cuenta de Mercado Pago del comprador.
-- Todas las comisiones e intereses cobrados serán devueltos parcialmente en forma proporcional.
-
-## Realiza la cancelación del pago
+Sólo puedes cancelar pagos que aún no han sido aprobados, es decir que no han sido cobrados a tu comprador por lo que se encuentran pendientes o en proceso. Cuando los cancelas, ya no podrán aprobarse y podrs liberar el stock que tenas pendiente de confirmación.
 
 Para realizar la cancelación, utiliza las [credenciales de tu aplicación]():
+
 
 ```curl
 curl -X PUT \
@@ -133,8 +128,4 @@ curl -X PUT \
 
 **Response status code: 200 OK**
 
-### Consideraciones
 
-- Puedes cancelar pagos que se encuentren en los siguientes estados de operación: `pending`, `in_process`.
-- Los pagos con tarjeta de crédito que se cancelen, no podrán volver a cambiar de estado.
-- Los pagos con **cupones, depósitos y/o transferencias** que se cancelen, serán depositados en la cuenta de Mercado Pago del comprador.
