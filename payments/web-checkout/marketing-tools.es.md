@@ -1,6 +1,6 @@
 # Herramientas de Marketing
 
-Puedes crear campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de Mercado Pago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create) para configurar la campaña de descuentos. 
+Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de Mercado Pago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).
 
 Puedes crear campañas que afecten a todos tus compradores por ejemplo para cuando quieres hacer rebajas por temporada, o bien puedes alcanzar a ciertos compradores objetivo los cuáles cuentan con un código de descuento que obtuvieron por ejemplo al efectuar una compra.
 
