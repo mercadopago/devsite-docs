@@ -15,10 +15,14 @@ Puedes devolver total o parcialmente los pagos que hayas recibido de tus usuario
 
 Para realizar la devolución, utiliza las [credenciales de tu aplicación]():
 
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
+```php
+<?php
+require_once ('mercadopago.php');
+
+$mp = new MP('SECRET_ACCESS_TOKEN');
+
+$refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
+?>
 ```
 
 **Response status code: 201 Created**
@@ -42,16 +46,34 @@ curl -X POST \
 
 También puedes realizar una devolución parcial especificando el monto de la misma:
 
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN' \
--d '{"amount":10.5}'
+```php
+<?php
+require_once ('mercadopago.php');
+
+$mp = new MP('SECRET_ACCESS_TOKEN');
+$refund_data = array(
+	"amount" => 10.5
+);
+
+$refund = $mp->post("/v1/payments/". $PAYMENT_ID ."/refunds", $refund_data);
+?>
 ```
 
 ## Obtén las devoluciones realizadas
 
-Verás las devoluciones parciales realizadas en el pago de esta manera:
+Puedes ver los refunds realizados con el siguiente request:
+
+```php
+<?php
+require_once ('mercadopago.php');
+
+$mp = new MP('SECRET_ACCESS_TOKEN');
+
+$refund = $mp->get("/v1/payments/". $PAYMENT_ID ."/refunds");
+?>
+```
+
+Respuesta:
 
 ```json
 {
@@ -71,20 +93,6 @@ Verás las devoluciones parciales realizadas en el pago de esta manera:
             "type": "collector"
         },
         "date_created": "2014-12-04T17:00:03.000-04:00",
-        "unique_sequence_number": null
-      },
-      {
-        "id": 222,
-        "payment_id": PAYMENT_ID,
-        "amount": 10,
-        "metadata": {
-        },
-        "source": {
-            "id": "USER_ID",
-            "name": "Firstname Lastname",
-            "type": "collector"
-        },
-        "date_created": "2014-12-04T16:55:50.000-04:00",
         "unique_sequence_number": null
       }
     ]

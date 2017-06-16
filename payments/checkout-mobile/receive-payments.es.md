@@ -23,9 +23,9 @@ La preferencia debe ser creada desde tu servidor en los servidores de Mercado Pa
 
 #### Primero:
 
- 1. [Registra la cuenta de MercadoPago](https://registration.mercadopago.com.ar/registration-mp?mode=mp) dónde recibirás el dinero.
- 2. [Crea una aplicación.](https://applications.mercadopago.com.ar/list?platform=mp)
- 3. [Configura tus credenciales.](https://www.mercadopago.com/mla/account/credentials?type=basic)
+1. [Registra la cuenta de MercadoPago](https://registration.mercadopago.com.ar/registration-mp?mode=mp) dónde recibirás el dinero.
+2. [Crea una aplicación.](https://applications.mercadopago.com.ar/list?platform=mp)
+3. [Configura tus credenciales.](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
 #### Luego, en tu Servidor:
 
@@ -49,64 +49,64 @@ Crea la preferencia en tu servidor desde tu aplicación con el siguiente código
 
 [Android]
 ```java
-    public void submit(View view) {
-        // Crea un mapa con los datos de la compra y el mail de tu cliente.
-        Map<String, Object> preferenceMap = new HashMap<>();
-        preferenceMap.put("item_id", "1");
-        preferenceMap.put("amount", new BigDecimal(10));
-        preferenceMap.put("currency_id", "ARS");
-        preferenceMap.put("payer_email", "customermail@test.com");
+public void submit(View view) {
+// Crea un mapa con los datos de la compra y el mail de tu cliente.
+Map<String, Object> preferenceMap = new HashMap<>();
+preferenceMap.put("item_id", "1");
+preferenceMap.put("amount", new BigDecimal(10));
+preferenceMap.put("currency_id", "ARS");
+preferenceMap.put("payer_email", "customermail@test.com");
 
-        final Activity activity = this;
-        LayoutUtil.showProgressLayout(activity);
-        CustomServer.createCheckoutPreference(activity, "https://api.tunombre.com", "/create_preference", preferenceMap, new Callback<CheckoutPreference>() {
-            @Override
-            public void success(CheckoutPreference checkoutPreference) {
-                startMercadoPagoCheckout(checkoutPreference);
-                LayoutUtil.showRegularLayout(activity);
-            }
+final Activity activity = this;
+LayoutUtil.showProgressLayout(activity);
+CustomServer.createCheckoutPreference(activity, "https://api.tunombre.com", "/create_preference", preferenceMap, new Callback<CheckoutPreference>() {
+@Override
+public void success(CheckoutPreference checkoutPreference) {
+startMercadoPagoCheckout(checkoutPreference);
+LayoutUtil.showRegularLayout(activity);
+}
 
-            @Override
-            public void failure(ApiException apiException) {
-                // Ups, something went wrong
-            }
-        });
-    }
+@Override
+public void failure(ApiException apiException) {
+// Ups, something went wrong
+}
+});
+}
 ```
 [iOS - Swift]
 ```swift
-  let preferenceBody : [String : Any] = ["amount" : 10,
-                      "itemId" : 29334, "customerId": 207,
-                      "payer_email" : "customermail@test.com"]
+let preferenceBody : [String : Any] = ["amount" : 10,
+"itemId" : 29334, "customerId": 207,
+"payer_email" : "customermail@test.com"]
 
-  let servicePreference = ServicePreference()
-           servicePreference.setCreateCheckoutPreference(baseURL: “https://api.tunombre.com“, URI: “/create_preference”, additionalInfo: preferenceBody as NSDictionary)
-  MercadoPagoCheckout.setServicePreference(servicePreference)
+let servicePreference = ServicePreference()
+servicePreference.setCreateCheckoutPreference(baseURL: “https://api.tunombre.com“, URI: “/create_preference”, additionalInfo: preferenceBody as NSDictionary)
+MercadoPagoCheckout.setServicePreference(servicePreference)
 
-  MerchantServer.createPreference(
-    success: { (checkoutPreference) in
-        startMercadoPagoCheckout(checkoutPreference)
-  }, failure: { (error) in
-       // Ups, something went wrong
-  })
+MerchantServer.createPreference(
+success: { (checkoutPreference) in
+startMercadoPagoCheckout(checkoutPreference)
+}, failure: { (error) in
+// Ups, something went wrong
+})
 ```
 [iOS - Objective-C]
 ```Objective-c
-  NSDictionary *preferenceBody = @{
-                                 @“amount” : @10,
-                                 @“itemId” : @29334,
-                                 @"customerId" : @207,
-                                 @"payerEmail" : @"cusomermail@test.com" };
+NSDictionary *preferenceBody = @{
+@“amount” : @10,
+@“itemId” : @29334,
+@"customerId" : @207,
+@"payerEmail" : @"cusomermail@test.com" };
 
-  ServicePreference * servicePreference = [[ServicePreference alloc] init];
-    [servicePreference setCreateCheckoutPreferenceWithBaseURL:@"" URI:@"" additionalInfo:preferenceBody];
-  [MercadoPagoCheckout setServicePreference:servicePreference];
+ServicePreference * servicePreference = [[ServicePreference alloc] init];
+[servicePreference setCreateCheckoutPreferenceWithBaseURL:@"" URI:@"" additionalInfo:preferenceBody];
+[MercadoPagoCheckout setServicePreference:servicePreference];
 
-  [MerchantServer createPreferenceWithSuccess:^(CheckoutPreference * checkoutPreference) {
-        [self startMercadoPagoCheckoutWithCheckoutPreference: checkoutPreference];
-    } failure:^(NSError * _Nonnull) {
-        // Ups, something went wrong
-    }];
+[MerchantServer createPreferenceWithSuccess:^(CheckoutPreference * checkoutPreference) {
+[self startMercadoPagoCheckoutWithCheckoutPreference: checkoutPreference];
+} failure:^(NSError * _Nonnull) {
+// Ups, something went wrong
+}];
 ```
 
 ### Crea un botón de pago
@@ -118,38 +118,38 @@ Crea la preferencia en tu servidor desde tu aplicación con el siguiente código
 > 2. Agrega un campo de texto para mostrar el resultado del pago. 
 > 3. Pega el siguiente código de ejemplo en **res/layout/activity_main.xml**.
 ```xml
-    <FrameLayout xmlns:android='http://schemas.android.com/apk/res/android'
-             xmlns:tools='http://schemas.android.com/tools'
-             android:layout_width='match_parent'
-             android:layout_height='match_parent'
-             android:paddingLeft='@dimen/activity_horizontal_margin'
-             android:paddingRight='@dimen/activity_horizontal_margin'
-             android:paddingTop='@dimen/activity_vertical_margin'
-             android:paddingBottom='@dimen/activity_vertical_margin'
-             android:orientation='vertical'
-             tools:context='.MainActivity'>
-      <include layout="@layout/mpsdk_view_progress_bar"/>
-      <LinearLayout
-              android:id="@+id/mpsdkRegularLayout"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<FrameLayout xmlns:android='http://schemas.android.com/apk/res/android'
+xmlns:tools='http://schemas.android.com/tools'
+android:layout_width='match_parent'
+android:layout_height='match_parent'
+android:paddingLeft='@dimen/activity_horizontal_margin'
+android:paddingRight='@dimen/activity_horizontal_margin'
+android:paddingTop='@dimen/activity_vertical_margin'
+android:paddingBottom='@dimen/activity_vertical_margin'
+android:orientation='vertical'
+tools:context='.MainActivity'>
+<include layout="@layout/mpsdk_view_progress_bar"/>
+<LinearLayout
+android:id="@+id/mpsdkRegularLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
 
-          <Button
-                  android:layout_width='match_parent'
-                  android:layout_height='50dp'
-                  android:layout_marginTop='25dp'
-                  android:gravity='center'
-                  android:text='Pagar $10'
-                  android:onClick='submit'/>
+<Button
+android:layout_width='match_parent'
+android:layout_height='50dp'
+android:layout_marginTop='25dp'
+android:gravity='center'
+android:text='Pagar $10'
+android:onClick='submit'/>
 
-          <TextView
-                  android:layout_width='match_parent'
-                  android:layout_height='wrap_content'
-                  android:id='@+id/mp_results'
-                  android:paddingTop='50dp'/>
-      </LinearLayout>
-    </FrameLayout>
+<TextView
+android:layout_width='match_parent'
+android:layout_height='wrap_content'
+android:id='@+id/mp_results'
+android:paddingTop='50dp'/>
+</LinearLayout>
+</FrameLayout>
 ```
 ----------
 [iOS - Swift]
@@ -159,21 +159,21 @@ Crea la preferencia en tu servidor desde tu aplicación con el siguiente código
 > 4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
 > 5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
 ```swift
-  import UIKit
-  import MercadoPagoSDK
-  
-     class MainViewController: UIViewController {
-     @IBOutlet weak var payButton: UIButton!
-     @IBOutlet weak var paymentResult: UITextField!
+import UIKit
+import MercadoPagoSDK
 
-     override func viewDidLoad() {
-       super.viewDidLoad()
+class MainViewController: UIViewController {
+@IBOutlet weak var payButton: UIButton!
+@IBOutlet weak var paymentResult: UITextField!
 
-       self.payButton.addTarget(self,
-         action: #selector(MainViewController.startCheckout),
-         for: .touchUpInside)
-       }
-     }
+override func viewDidLoad() {
+super.viewDidLoad()
+
+self.payButton.addTarget(self,
+action: #selector(MainViewController.startCheckout),
+for: .touchUpInside)
+}
+}
 ```   
 ----------
 [iOS - Objective]
@@ -184,22 +184,22 @@ Crea la preferencia en tu servidor desde tu aplicación con el siguiente código
 > 5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
 
 ```Objective-c
-  @import MercadoPagoSDK;
+@import MercadoPagoSDK;
 
-   @interface MainExamplesViewController()
-   @property (weak, nonatomic) IBOutlet UIButton *button;
-   @property (weak, nonatomic) IBOutlet UILabel *label;
+@interface MainExamplesViewController()
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
-   @end
-   @implementation MainExamplesViewController
+@end
+@implementation MainExamplesViewController
 
-     - (void)viewDidLoad {
-       [super viewDidLoad];
+- (void)viewDidLoad {
+[super viewDidLoad];
 
-       [_button addTarget:self action:@selector(startCheckout:)
-           forControlEvents:UIControlEventTouchUpInside];
-     }
-   @end
+[_button addTarget:self action:@selector(startCheckout:)
+forControlEvents:UIControlEventTouchUpInside];
+}
+@end
 ```
 ----------
 
@@ -208,43 +208,43 @@ Crea la preferencia en tu servidor desde tu aplicación con el siguiente código
 Para iniciar nuestro checkout sólo necesitas:
 
 1. Clave pública: es un identificador único de tu cuenta, tu aplicación y sus configuraciones.
-  - [Crea tus credenciales.](https://www.mercadopago.com/mla/account/credentials)
-  - [Configura tu aplicación.](https://applications.mercadopago.com/)
+- [Crea tus credenciales.](https://www.mercadopago.com/mla/account/credentials)
+- [Configura tu aplicación.](https://applications.mercadopago.com/)
 2. Identificador de la preferencia de pago.
 
 Una vez creada la Preferencia de Pago estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
 [Android]
 ```java
-    private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-        new MercadoPagoCheckout.Builder()
-                .setActivity(activity)
-                .setPublicKey(publicKey)                .setCheckoutPreference(checkoutPreference)
-                .startForPayment();
-    }
+private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
+new MercadoPagoCheckout.Builder()
+.setActivity(activity)
+.setPublicKey(publicKey)                .setCheckoutPreference(checkoutPreference)
+.startForPayment();
+}
 ```
 [iOS - Swift]
 
 El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
 
 ```swift
-    public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-     let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
+public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
+let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
 
-     let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
-       navigationController: self.navigationController!)
+let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
+navigationController: self.navigationController!)
 
-       checkout.start()
- }
+checkout.start()
+}
 ```
 [iOS - Objective-C]
 
 El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
 ```Objective-c
-      -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-        self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
-    [self.mpCheckout start];
-  }
+-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
+self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
+[self.mpCheckout start];
+}
 ```
 ### ¡Obtén la respuesta!
 
@@ -267,42 +267,42 @@ Podrás obtener la respuesta con el siguiente código:
 
 [Android]
 ```java
-  @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == MercadoPagoCheckout.CHECKOUT_REQUEST_CODE) {
-            if (resultCode == MercadoPagoCheckout.PAYMENT_RESULT_CODE) {
-                Payment payment = JsonUtil.getInstance().fromJson(data.getStringExtra("payment"), Payment.class);
-                ((TextView) findViewById(R.id.mp_results)).setText("Resultado del pago: " + payment.getStatus());
-                //Done!
-            } else if (resultCode == RESULT_CANCELED) {
-                if (data != null && data.getStringExtra("mercadoPagoError") != null) {
-                    //Resolve error in checkout
-                } else {
-                    //Resolve canceled checkout
-                }
-            }
-        }
-    }
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+if (requestCode == MercadoPagoCheckout.CHECKOUT_REQUEST_CODE) {
+if (resultCode == MercadoPagoCheckout.PAYMENT_RESULT_CODE) {
+Payment payment = JsonUtil.getInstance().fromJson(data.getStringExtra("payment"), Payment.class);
+((TextView) findViewById(R.id.mp_results)).setText("Resultado del pago: " + payment.getStatus());
+//Done!
+} else if (resultCode == RESULT_CANCELED) {
+if (data != null && data.getStringExtra("mercadoPagoError") != null) {
+//Resolve error in checkout
+} else {
+//Resolve canceled checkout
+}
+}
+}
+}
 ```      
 [iOS - Swift]
 ```swift
-  MercadoPagoCheckout.setPaymentCallback { (payment) in
-    self.payment = payment
-  }
+MercadoPagoCheckout.setPaymentCallback { (payment) in
+self.payment = payment
+}
 
-  MercadoPagoCheckout.setCallback { (Void) in
-    // Resolved cancel checkout
-  }
+MercadoPagoCheckout.setCallback { (Void) in
+// Resolved cancel checkout
+}
 ```
 [iOS - Objective-C]
 ```Objective-c
-  [MercadoPagoCheckout setPaymentCallbackWithPaymentCallback:^(Payment * payment) {
-  self.payment = payment
-  }];
+[MercadoPagoCheckout setPaymentCallbackWithPaymentCallback:^(Payment * payment) {
+self.payment = payment
+}];
 
-  [MercadoPagoCheckout setCallbackWithCallback:^{
-  // Resolved cancel checkout
-  }];
+[MercadoPagoCheckout setCallbackWithCallback:^{
+// Resolved cancel checkout
+}];
 ```
 
 **Configura tu color**
@@ -312,35 +312,35 @@ Puedes cambiar los colores de la interfaz gráfica del flujo de pago, como así 
 
 [Android]
 ```java
-  private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-  DecorationPreference decorationPreference = new DecorationPreference.Builder()
-        .setBaseColor(ContextCompat.getColor(context, R.color.your_color))
-        .enableDarkFont() //Optional
-        .build();
+private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
+DecorationPreference decorationPreference = new DecorationPreference.Builder()
+.setBaseColor(ContextCompat.getColor(context, R.color.your_color))
+.enableDarkFont() //Optional
+.build();
 
-  new MercadoPagoCheckout.Builder()
-        .setActivity(activity)
-       .setDecorationPreference(decorationPreference)
-        .setPublicKey(publicKey)
-        .setCheckoutPreference(checkoutPreference)
-        .startForPayment();
-  }
- ``` 
+new MercadoPagoCheckout.Builder()
+.setActivity(activity)
+.setDecorationPreference(decorationPreference)
+.setPublicKey(publicKey)
+.setCheckoutPreference(checkoutPreference)
+.startForPayment();
+}
+``` 
 [iOS - Swift]
 ```swift
-  public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-     let decorationPreference: DecorationPreference = DecorationPreference()
-     decorationPreference.setBaseColor(color: UIColor.purple)
-     decorationPreference.enableDarkFont()
-     MercadoPagoCheckout.setDecorationPreference(decorationPreference)
+public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
+let decorationPreference: DecorationPreference = DecorationPreference()
+decorationPreference.setBaseColor(color: UIColor.purple)
+decorationPreference.enableDarkFont()
+MercadoPagoCheckout.setDecorationPreference(decorationPreference)
 
-     let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
+let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
 
-     let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
-         navigationController: self.navigationController!)
+let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
+navigationController: self.navigationController!)
 
-     checkout.start()
-  }
+checkout.start()
+}
 ```
 [iOS - Objective-C]
 ```Objective-c
@@ -348,15 +348,15 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 [decorationPreference enableDarkFont];
 [MercadoPagoCheckout setDecorationPreference:decorationPreference];
 
-   -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-        self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
-    [self.mpCheckout start];
-  }
+-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
+self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
+[self.mpCheckout start];
+}
 ```
 El SDK permite setear el color en el formato hexadecimal,es decir por ejemplo **setBaseColor("#13123");**.
 
 *** Próximos pasos
 
-- Visita la sección Personalización si necesitas adecuar el flujo de pago.
+- Visita la sección Personalización para adecuar el flujo de pago a tus necesidades.
 - Haz pruebas de la integración antes de salir a producción.
 ----------

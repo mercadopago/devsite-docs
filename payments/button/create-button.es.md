@@ -1,22 +1,22 @@
-# Recibiendo un pago
+# Recibir un pago
 
-Con las herramientas de cobro, puedes crear **botones de pago para un sitio web, links para redes sociales o e-mails y también un código QR**.  
+Desde tu cuenta de Mercado Pago, tienes la opción de generar un link que le puedes enviar a tu comprador para que pueda efectuar el pago. No necesitas saber de programación.   
 
-No necesitas saber de programación. Te guiaremos para que puedas configurar:
+Te guiaremos para que puedas configurar:
 
 * Precio, descripción y foto de lo que vendes. 
+* Si deseas utilizar **Mercado Envíos**.
+* Medios de pago que aceptas: tarjetas de crédito o débito y pagos en efectivo.
+* Fecha entre las que deseas permitir el pago.
+* Código de referencia para identificar la venta en tu backend.
+* Url de redireccion hacia tu sitio web.
 
-* Medios de pago que aceptas.
+Con ésta configuración **obtendrás un link** que puedes enviar por e-mail, publicar en redes sociales, o donde quieras. 
 
-* Y más!
+Ingresando en este link, tus compradores serán redirigidos al checkout donde verán los datos que configuraste y podrán elegir cómo pagar. Pueden realizar el pago sin necesidad de tener una cuenta de Mercado Pago.
 
-Tus compradores entrarán en una pantalla de pago donde verán tu logo y los datos que configuraste, y podrán elegir cómo pagarlo, aunque no estén registrados en Mercado Pago.
+Además te brindaremos un **Script HTML** que puedes incluir en tu sitio web y un **Código QR**  para que compartas con tus clientes.
 
-Al final, **te daremos un código o un link** que podrás pegar en tu sitio web, en un e-mail, en redes sociales, o donde quieras.
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout](../web-checkout/introduction.es.md)** o **[API](../api/introduction.es.md)**.
 
-También, puedes incluir [Mercado Envíos]() y recibirás el pago del envío y el domicilio del comprador en una etiqueta lista para imprimir.
-
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **Checkout** o **API**.
-
-
-### [Crear herramienta de cobro]()
+Puedes revisar tambien: [Crear herramienta de cobro](https://www.mercadopago.com.ar/tools/create)

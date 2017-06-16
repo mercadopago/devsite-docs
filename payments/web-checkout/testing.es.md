@@ -61,11 +61,11 @@ curl -X POST \
 
 El proceso completo para probar el checkout es el siguiente:
 
-1. Inicia sesión de Mercado Pago con el **vendedor** y toma las [credenciales](https://www.mercadopago.com/mla/account/credentials) para configurarlas en tu preferencia de pago. Así indicas que esa venta se acreditará en esa cuenta vendedor.
+1. Inicia sesión de Mercado Pago con el **vendedor** y toma las [credenciales](https://www.mercadopago.com/mla/account/credentials) para configurarlas en la creación preferencia de pago. 
 2. Cierra sesión de Mercado Pago.
-3. Puedes enviar el mail del **comprador** en la preferencia de pago, o probar el flujo como *invitado*. El email del comprador va a ser requerido al finalizar la compra.
-4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 dígitos.
-5. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:  
+3. Envía el mail del **comprador** en la preferencia de pago.
+4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 4 dígitos aleatorios para tarjetas Amex o 3 para cualquier otra.
+5. En el nombre del titular de la tarjeta puedes ingresar alguno de los siguientes prefijos para probar los distintos resultados (pagos aprobados, rechazados o pendientes):
     * **APRO**: Pago aprobado  
     * **CONT**: Pago pendiente  
     * **CALL**: Rechazo llamar para autorizar  
@@ -74,7 +74,7 @@ El proceso completo para probar el checkout es el siguiente:
     * **EXPI**: Rechazo por fecha de expiración  
     * **FORM**: Rechazo por error en formulario  
     * **OTHE**: Rechazo general
-6. Valida, en caso de reintento, que se lleven a cabo correctamente.
-7. Verifica que la notificación te ha llegado correctamente
-8. Realiza la devolución de un pago acreditado
+6. En caso de pago rechazado, podrás efectuar el reintento del mismo y simular algún otro resultado tal como se indica en el punto anterior.
+7. Verifica que la notificación te haya llegado correctamente.
+8. Realiza la devolución de un pago acreditado y verifica que te haya llegado la notificación con la actualización del estado del pago.
 

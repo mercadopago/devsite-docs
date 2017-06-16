@@ -7,21 +7,22 @@ sites_supported:
 
 # Creando una suscripción
 
-Puedes crear un botón de suscripción que **te permitirá recibir pagos de manera periódica**. Eliges cada cuanto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
+Desde tu cuenta de Mercado Pago puedes crear un link de suscripción que te permitirá enviarselo a tus compradores y **recibir pagos de manera periódica**. Lo puedes usar para: cobrar cuotas del gimnasio, cobrar alquieres o recibir donaciones.
+No necesitas saber de programación. 
 
-Al igual que nuestros botones de pago, no necesitas saber de programación. Te guiaremos para que puedas configurar:
+Te guiaremos para que puedas configurar:
 
-* Si tendrá un monto fijo o dejarás que tu cliente lo elija.
+* Monto fijo o variable (a elección del comprador).
+* Frecuencia de pago: semanal, quincenal, mensual.
+* Duración de la suscripción: ilimitada o limitada a una cantidad de cobros.
 
-* Cada cuánto quieres recibir el pago: una semana, 15 días, un mes, etc.
+Obtendrás **un link** que puedes enviar por e-mail, publicar en redes sociales, o donde quieras.
 
-* Cómo se verá el botón en tu sitio.
+Además te brindaremos un **Código HTML** que puedes incluir en tu sitio web y un **Código QR** para que compartas con tus clientes.
 
-Al final, **te daremos un código o un link** que podrás pegar en tu sitio web, en un e-mail, en redes sociales, o donde quieras.
+> En Argentina, el procesamiento con tarjeta VISA demora hasta 48hs, por lo que tus pagos quedarán pendientes durante ese plazo.
 
-Muchos vendedores, empresas e instituciones ya lo están usando, por ejemplo, para recibir donaciones, cuotas del gimnasio, pago de clases, expensas o alquileres. ¡Úsalo para lo que se te ocurra!
-
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **Checkout** o **API**.
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Suscripciones vía API](../API/introduction.es.md).
 
 
-### [Crear botón de suscripción]()
+### [Crear botón de suscripción](https://www.mercadopago.com.ar/subscription-plans/create)

@@ -1,12 +1,12 @@
-# Recibiendo un pago con tarjeta
+# Recibir un pago con tarjeta
 
-Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura manteniendo el control de la experiencia de compra que le brindas a tus usuarios.
+Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura, manteniendo el control de la experiencia de compra que le brindas a tus usuarios.
 
 Esto se divide en tres pasos principales:
 
-1. Captura de los datos de tarjeta
-2. Obtención del tipo de tarjeta
-3. Creación del pago
+* Captura de los datos de tarjeta
+* Obtención del tipo de tarjeta
+* Creación del pago
 
 
 ## Captura los datos de tarjeta
@@ -17,7 +17,7 @@ Mercado Pago cuenta con una librería Javascript para ayudarte a realizar esto d
 
 ### 1. Incluir MercadoPago.js
 
-Para hacer uso de esta librería debes comenzar insertando el siguiente en nuestro checkout:
+Para hacer uso de esta librería debes comenzar insertando el siguiente código en nuestro checkout:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
@@ -38,6 +38,7 @@ Mercadopago.setPublishableKey("TEST-b3d5b663-664a-4e8f-b759-de5d7c12ef8f");
 ### 3. Capturar datos de tarjeta
 
 #### Formulario
+
 El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer esto es importante contar con un formulario que utilice los siguientes atributos `data-checkout`:
 
 ```html
@@ -91,15 +92,15 @@ Entre los campos requeridos se encuentra el tipo y número de documento.
 
 Poder obtener el listado de documentos disponibles:
 
-```
+```javascript
 Mercadopago.getIdentificationTypes();
 ```
 
 #### Obtener el medio de pago de la tarjeta
 
-Es importante que obtengamos el medio de pago de la tarjeta para poder realizar el cobro.
+Es importante que obtengamos el medio de pago de la tarjeta para poder realizar el pago.
 
-Esto puede ser realizado utilizando el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este método acepta dos parámetros: un json con parámetros y una función de callback.
+Para obtener el medio de pago, utiliza el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este acepta dos parámetros: un objeto y una función de callback.
 
 ```javascript
 Mercadopago.getPaymentMethod({
@@ -107,13 +108,28 @@ Mercadopago.getPaymentMethod({
 }, setPaymentMethodInfo);
 ```
 
-El `bin` corresponde a los primeros 6 dígitos de la tarjeta, y son los que identifican el medio de pago y banco emisor de la tarjeta.
+El `bin` corresponde a los primeros 6 dígitos de la tarjeta, y son los que identifican el medio de pago y banco emisor de esta.
 
-El callback recibe un status y un response. La función se encarga de almacenar el id de la respuesta en el campo `paymentMethodId` (input hidden).
+El callback recibe un status y un response. La función deberá almacenar el id de la respuesta en el campo `paymentMethodId` (input hidden), por ejemplo:
+
+```
+function setPaymentMethodInfo(status, response) {
+    if (status == 200) {
+        paymentMethod.setAttribute('name', "paymentMethodId");
+        paymentMethod.setAttribute('type', "hidden");
+        paymentMethod.setAttribute('value', response[0].id);
+
+        form.appendChild(paymentMethod);
+        } else {
+            document.querySelector("input[name=paymentMethodId]").value = response[0].id;
+        }
+    }
+};
+```
 
 #### Capturar los datos
 
-Antes de enviar el formulario, vamos a capturar el evento `submit` y utilizar el método `Mercadopago.createToken(form, sdkRespondeHandler);`.
+Antes de enviar el formulario, debes capturar el evento `submit` y utilizar el método `Mercadopago.createToken(form, sdkRespondeHandler);`.
 
 ```javascript
 doSubmit = false;
@@ -132,7 +148,7 @@ function doPay(event){
 
 Enviando el `form`, y utilizando los atributos `data-checkout` se realiza la captura de todos los campos.
 
-El método `createToken` devolverá un card_token, la representación segura de la tarjeta:
+El método `createToken` devolverá un card_token, lo cual es la representación segura de la tarjeta:
 
 ```json
 {
@@ -195,21 +211,22 @@ Para realizar el pago solamente debes realizar un API call:
 
 ```php
 <?php
-require_once ('mercadopago.php');
+  require_once ('mercadopago.php');
 
-// Setup your private key
-$mp = new MP('SECRET_ACCESS_TOKEN');
+  // Setup your private key
+  $mp = new MP('SECRET_ACCESS_TOKEN');
 
-$payment_data = array(
-    "transaction_amount" => 100,
-    "token" => "ff8080814c11e237014c1ff593b57b4d",
-    "payment_method_id" => "visa",
-    "payer" => array (
-        "email" => "test_user_19653727@testuser.com"
-    )
-);
+  $payment_data = array(
+      "transaction_amount" => 100,
+      "token" => "ff8080814c11e237014c1ff593b57b4d",
+      "payment_method_id" => "visa",
+      "payer" => array (
+          "email" => "test_user_19653727@testuser.com"
+      )
+  );
 
-$payment = $mp->post("/v1/payments", $payment_data);
+  $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 > Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
@@ -233,7 +250,7 @@ Mercadopago.getInstallments({
 }, setInstallmentInfo);
 ```
 
-La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recomendado para cada una de las cuotas disponibles indicando el valor a pagar:
+La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recomendado para mostrar en cada una de las cuotas disponibles indicando el valor a pagar:
 
 ```json
 [
@@ -261,7 +278,7 @@ La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recome
 ]
 ```
 
-> _**Nota**_ Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
+> _**Nota**_: Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
 
 Para crear el pago es importante enviar los datos indicados anteriormente:
 
@@ -283,27 +300,28 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
 ## Manejo de respuestas
 
 Es **muy importante** comunicar correctamente los resultados recibidos al crear un pago. Esto ayudará a mejorar la conversión en los casos de rechazos, y evitar contracargos en los casos de transacciones aprobadas.
 
-Te recomendamos leer el artículo sobre el [manejo de respuestas](handling-responses.es.md) y utilizar la comunicación recomendada en cada uno de los casos.
+Te recomendamos leer el artículo sobre el [manejo de respuestas](handling-responses.es.md) y utilizar la comunicación sugerida en cada uno de los casos.
 
 ## Recibir una notificación del pago
 
-Es importante que te enteres de cualquier actualización del estado de tu pago. Para esto se deben utilizar _Webhooks_.
+Es importante que te enteres de cualquier actualización del estado de tu pago. Para esto se debe utilizar _Webhooks_.
 
 Un _Webhook_ es una notificación que se envía de un servidor a otro mediante un request `HTTP POST`.
 
 ### Configuración
 
-Para recibir _webhooks_ debes [configurar una URL](https://www.mercadopago.com/mla/account/webhooks) donde recibirás las notificaciones.
+Para recibir _webhooks_ debes [configurar la URL](https://www.mercadopago.com/mla/account/webhooks) donde recibirás las notificaciones.
 
 ### Notificaciones
 
-Las notificaciones serán recibidas mediante un request `HTTP POST`. El body recibido en este request será un JSON:
+Las notificaciones serán recibidas mediante un request `HTTP POST`. El body recibido en este request será un JSON con el siguiente formato:
 
 ```json
 {
@@ -337,9 +355,9 @@ El listado de posibles notificaciones:
 
 ### Qué hacer al recibir una notificación
 
-Cuando recibas una notificación de tipo `payment` en tu plataforma, esta indicará que se creo o actualizó un pago, pero no tenemos la información del estado del pago (Por ejemplo, aprobado).
+Cuando recibas una notificación de tipo `payment` en tu plataforma, esta indicará que se creo o actualizó un pago, pero todavía no cuentas con el estado del mismo (Por ejemplo, aprobado).
 
-Para obtener el estado del pago debes realizar un request `HTTP GET`:
+Para obtener el estado del pago debes realizar un request `HTTP GET` con el `id` del pago:
 
 ```php
 <?php
@@ -371,7 +389,7 @@ if ($event->type == 'payment'){
 ?>
 ```
 
-Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
+Mercado Pago espera una respuesta para validar que recibiste la notificación correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
 
 Si tu aplicación responde un error `4XX`, Mercado Pago no reintentará enviar la notificación.
 
@@ -387,13 +405,13 @@ Si tu aplicación no se encuentra disponible o demora mucho en responder, Mercad
 4. Reintento a los 2 días.
 5. Reintento a los 4 días.
 
-Es necesario que cuando la recibas devuelvas una respuesta `HTTP STATUS 200 (OK)` ó `201 (CREATED)` para recibir notificaciones duplicadas.
+Es necesario que cuando la recibas devuelvas una respuesta `HTTP STATUS 200 (OK)` ó `201 (CREATED)` para no recibir notificaciones duplicadas.
 
 
 ## Próximos pasos
 
 ### Recibe pagos con tarjetas guardadas
 
-Puedes almacenar de forma segura las tarjetas de tus clientes y realizar cobros con una experiencia one-click-to-buy.
+Puedes almacenar de forma segura las tarjetas de tus clientes y realizar pagos con una experiencia one-click-to-buy.
 
 [Más información](customers-and-cards.es.md)

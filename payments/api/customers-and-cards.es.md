@@ -4,15 +4,15 @@
 > 
 > * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
-Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **forma segura** para mejorar la experiencia de compra.
+Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **manera segura** para mejorar la experiencia de compra.
 
-Esto te permitiría mostrar las tarjetas guardadas y poder ofrecer por ejemplo one-click-buy.
+Esto te permitiría que tus clientes finalicen sus compras mucho más rápido y de forma más sencilla, ya que no deberán completar nuevamente sus datos de tarjeta.
 
-Los clientes representan, como su nombre lo indica, a tu cliente. Las tarjetas que almacenes serán para este cliente especifico.
+Los *customers* representan, como su nombre lo indica, a tu cliente. Las tarjetas que almacenes serán para este cliente específico.
 
 ## Creación de un customer y una card
 
-Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por los menos los campos `email` y `token`.
+Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
 
 ```php
 <?php
@@ -31,7 +31,7 @@ $customer = $mp->post(
 ?>
 ```
 
-Respuesta:
+Respuesta esperada:
 
 ```json
 {
@@ -55,7 +55,7 @@ Respuesta:
 
 ## Recibir un pago de un Customer
 
-Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario volver a capturar el **código de seguridad** de la tarjeta. Por cuestiones de seguridad, Mercado Pago no puede almacenar este dato.
+Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario volver a capturar el **código de seguridad** de la esta. Por cuestiones de seguridad, Mercado Pago no puede almacenar este dato.
 
 ### 1. Mostrar las tarjetas almacenadas
 
@@ -64,7 +64,9 @@ Puedes listar las tarjetas almacenadas para que tu cliente elija con cuál quier
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 
 ```php
+<?php
 $cards = $mp->get("/v1/customers/".$customer_id."/cards");
+?>
 ```
 
 Respuesta:
@@ -82,7 +84,7 @@ Respuesta:
 
 Con esta respuesta recomendamos realizar un formulario:
 
-```php
+```html
 <li>
 	<label>Payment Method:</label>
 	<select id="cardId" name="cardId" data-checkout='cardId'>
@@ -120,7 +122,7 @@ function doPay(event){
 };
 ```
 
-El método `createToken` devolverá un card_token, la representación segura de la tarjeta:
+El método `createToken` devolverá un `card_token` (la representación segura de la tarjeta):
 
 ```json
 {
@@ -133,7 +135,7 @@ El método `createToken` devolverá un card_token, la representación segura de 
 
 Una vez obtenido el token del paso anterior, podrás generar el pago por el monto correspondiente.
 
-Al ser un pago con tarjeta guardada, deberás enviar el id de customers asociado junto al token.
+Al ser un pago con tarjeta guardada, deberás enviar el id de customer asociado junto al token.
 
 ```php
 <?php
@@ -151,16 +153,17 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+?>
 ```
 
-Eso es todo, la respuesta tendrá el estado del pago (approved, rejected o in_process). 
+Eso es todo, la respuesta tendrá el estado del pago (`approved`, `rejected` o `in_process`). 
 
 > Puedes ver más información sobre el [manejo de respuestas](#manejo-de-respuestas).
 
 
 ## Agregar nuevas tarjetas a un Customer
 
-Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes tener crear un `token` y hacer un request `HTTP POST` al `Customer`.
+Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `token` y hacer un request `HTTP POST` al `Customer`.
 
 ```php
 <?php
@@ -180,26 +183,34 @@ print_r ($card);
 ?>
 ```
 
+> SUMAR RESPUESTA
+
 ## Buscar un Customer
 
-En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`:
+En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
 
 ```php
-$customer = array (
-    "email" => "your.payer@email.com"
-);
+<?php
+  $customer = array (
+      "email" => "your.payer@email.com"
+  );
 
-$saved_customer = $mp->get("/v1/customers/search", $customer);
-$customer_id = $saved_customer["response"]["results"][0]["id"];
+  $saved_customer = $mp->get("/v1/customers/search", $customer);
+  $customer_id = $saved_customer["response"]["results"][0]["id"];
+?>
 ```
+
+> SUMAR RESPUESTA
 
 ## Obtener las Cards de un Customer
 
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 
 ```php
-$cards = $mp->get("/v1/customers/".$customer_id."/cards");
-print_r($cards);
+<?php
+  $cards = $mp->get("/v1/customers/".$customer_id."/cards");
+  print_r($cards);
+?>
 ```
 
 Respuesta:

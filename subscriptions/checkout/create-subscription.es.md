@@ -15,27 +15,29 @@ Para crear una preferencia de suscripción debes [instalar el SDK de Mercado Pag
 
 ```php
 <?php
-require_once ('mercadopago.php');
-$mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+  require_once ('mercadopago.php');
+  $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+?>
 ```
 
 Luego, deberás agregar los atributos de tu preferencia:
 
 ```php
-$preapproval_data = array(
-	"payer_email" => "my_customer@my-site.com",
-	"back_url" => "http://www.my-site.com",
-	"reason" => "Monthly subscription to premium package",
-	"external_reference" => "OP-1234",
-	"auto_recurring" => array(
-		"frequency" => 1,
-		"frequency_type" => "months",
-		"transaction_amount" => 60,
-		"currency_id" => "ARS"
-	)
-);
+<?php
+  $preapproval_data = array(
+  	"payer_email" => "my_customer@my-site.com",
+  	"back_url" => "http://www.my-site.com",
+  	"reason" => "Monthly subscription to premium package",
+  	"external_reference" => "OP-1234",
+  	"auto_recurring" => array(
+  		"frequency" => 1,
+  		"frequency_type" => "months",
+  		"transaction_amount" => 60,
+  		"currency_id" => "ARS"
+  	)
+  );
 
-$preapproval = $mp->create_preapproval_payment($preapproval_data);
+  $preapproval = $mp->create_preapproval_payment($preapproval_data);
 ?>
 ```
 > Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu suscripción](#añade-características-especiales-a-tu-suscripción).
@@ -62,7 +64,7 @@ Revisa el [API Doc de Preapproval]() para conocer todas las configuraciones que 
 
 ¿Quieres ofrecer un mes gratis de tu producto, antes de comenzar a cobrarle a tu usuario? Agrega lo siguiente:
 
-```
+```json
 {
   ...
   "auto_recurring": {
@@ -78,7 +80,7 @@ Revisa el [API Doc de Preapproval]() para conocer todas las configuraciones que 
 
 Puedes indicar que las suscripciones sólo durarán un período determinado de tiempo:
 
-```curl
+```json
 {
   ...
   "auto_recurring": {

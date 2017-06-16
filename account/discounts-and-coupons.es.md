@@ -1,8 +1,14 @@
 # Ofrecer descuentos
 
-Mercado Pago te permite crear campañas de descuentos directos o con cupones, que aplicarán cuando el pago sea procesado. Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras. Ingresa a [Crear descuento](https://www.mercadopago.com.ar/campaigns/create) para configurarlo.
+Mercado Pago te permite crear campañas de descuentos para todos tus compradores en forma directa o para aquellos que tengan un código de descuento en particular. Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras. 
+Ingresa a [Crear descuento](https://www.mercadopago.com.ar/campaigns/create) para configurar la campaña de descuentos.
 
-A continuación te mostraremos cómo aplicar un [Descuento directo](#descuento-directo) o un [Cupón de descuento](#cupón-de-descuento).
+## Pre-requisitos
+
+
+## //Ver de diferenciar dos articulos. Uno para chechout y el otro para API. Sección: herramientas de markenting. VER
+
+
 
 ## Descuento Directo
 
@@ -34,7 +40,8 @@ curl -H "Accept: application/json" \
 ```
 
 - El `id` identifica la campaña. Guárdalo, lo usarás al procesar el pago.
-- El `percent_off` es la tasa de descuento que se aplicará.
+- El `percent_off` es la tasa de descuento que se aplicará, en caso de que hayas creado una campaña con porcentaje de descuento.
+- El `amount_off` es el monto fijo que definiste en tu campaña de descuento.
 - El `coupon_amount` es el importe del descuento que se aplicará. Guárdalo, también lo usarás al procesar el pago.
 
 ### Procesar pago
@@ -78,17 +85,15 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 }
 ```
 
-- El `transaction_amount` es el importe total del pago.
+- El `transaction_amount` es el importe original de los items a pagar.
 - El `total_paid_amount` es el importe total pagado por el comprador.
-- El `coupon_amount` es el importe del descuento.
+- El `coupon_amount` es el importe del descuento aplicado.
 
 Como puedes ver el descuento se aplicó y el comprador sólo tendrá que pagar $269.99. 
 
-En este ejemplo utilizamos `master`. Todos los medios de pago tienen el mismo comportamiento.
 
----
 
-# Cupón de descuento
+# Cupón con código de descuento
 
 También puedes crear cupones de descuento, que aplicarán cuando se procese el pago.
 
@@ -102,9 +107,9 @@ Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercado
 curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'
 ```
 
-- El `transaction_amount ` es el importe total de la compra.
+- El `transaction_amount` es el importe total de la compra.
 - El `payer_email` es el email del comprador en tu plataforma.
-- El `coupon_code` es el código insertado por el comprador.
+- El `coupon_code` es el código insertado por el comprador. Este lo utilizarás cuando proceses el pago en caso de que el comprador tenga el descuento.
 
 Si el comprador tiene el descuento disponible, la API devolverá:
 
@@ -118,9 +123,11 @@ Si el comprador tiene el descuento disponible, la API devolverá:
     "currency_id": "ARS"
 }
 ```
+- El `id` identifica la campaña. 
+- El `percent_off` es la tasa de descuento que se aplicará, en caso de que hayas creado una campaña con porcentaje de descuento.
+- El `amount_off` es el monto fijo que definiste en tu campaña de descuento.
+- El `coupon_amount` es el importe del descuento que se aplicará. Guárdalo, también lo usarás al procesar el pago.
 
-- El `percent_off` es la tasa de descuento que se aplicará.
-- El `coupon_amount` es el importe de descuento que se aplicará.
 
 Si el descuento no está disponible porque el comprador ya lo utilizó, la API devolverá:
 
