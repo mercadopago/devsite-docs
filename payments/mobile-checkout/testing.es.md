@@ -29,17 +29,4 @@ Usa estas tarjetas de prueba para testear los diferentes resultados del pago.
 | Uruguay  	| 4014 6823 8753 2428|5808 8877 7464 1586|no disponible     |
 | Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|no disponible     |
 
-## Prueba rápido con nuestros datos
 
-Usa nuestros datos, así podrás probar rápido la experiencia completa.
-
-| País 		| Public key de prueba 				 | Checkout preference id de prueba        |
-| ---- 		| ---- 				 | ----------        |
-| Argentina  	| | |
-| Brasil  	|  | |
-| Chile   	| | |
-| Colombia  	| | |
-| México  	| | |
-| Perú    	| | |
-| Uruguay  	| | |
-| Venezuela  	| | |
