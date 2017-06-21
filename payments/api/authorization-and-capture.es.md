@@ -1,8 +1,8 @@
 ---
-sites_supported:
-    - mla
-    - mlb 
-    - mpe
+  sites_supported:
+      - mla
+      - mlb 
+      - mpe
 ---
 
 # Autorización y captura
