@@ -1,29 +1,35 @@
-# Introduccion
+**Introducción**
+============
 
-Recibe pagos en cuestión de segundos de manera simple y segura utilizando el SDK de Mercado Pago.
+Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
+ 
+ - Pagos con tarjeta en una o más cuotas, efectivo o transferencia bancaria. 
+ - Comunicación de descuentos y promociones.
+ - Comunicación del resultado de los pagos.
 
-## Agrega la dependencia a tu proyecto
 
-Si en tu proyecto usas CocoaPods, puedes agregar la dependencia en el Podfile del módulo donde nos integres.
+Añade la dependencia a tu proyecto
+----------------------------------
 
-Si no utilizas CocoaPods, descarga la SDK de MercadoPago:
+[Android]
 
-- Android: https://github.com/mercadopago/px-android/releases
-- iOS: https://github.com/mercadopago/px-ios/releases
-- Cordova Plugin: https://github.com/mercadopago/px-hybrid
+En el archivo **build.gradle** añade el siguiente código: 
 
-```bash
- cordova plugin add mercadopago-plugin
-```
-```java
-dependencies {
-   compile 'com.mercadopago:sdk:2.5.0'
-}
-```
-```bash
-source 'https://github.com/CocoaPods/Specs.git'
-# Se necesita este parámetro por ser una SDK en swift
-use_frameworks!
-platform :ios, '8.0'
-pod 'MercadoPagoSDK', 'workshop'
-```
+    dependencies {
+       compile 'com.mercadopago:sdk:3.0.0'
+    }
+
+Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
+
+----------
+[iOS - Swift/Objective-C]
+
+Si en tu proyecto utilizas **CocoaPods**, puedes añadir la dependencia en el **Podfile** del módulo donde nos integres con el siguiente código:
+
+    source 'https://github.com/CocoaPods/Specs.git'
+	#Se necesita este parámetro por ser una SDK en swift
+    use_frameworks!
+    platform :ios, '8.2'
+    pod 'MercadoPagoSDK', '3.0.0'
+
+Sino puedes [descargar el SDK](https://github.com/mercadopago/px-ios/releases) y añadirlo a tu proyecto.
