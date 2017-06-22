@@ -1,6 +1,6 @@
 # Clientes y tarjetas almacenadas
 
-> INFO
+> WARNING
 >
 > Pre-requisitos:
 > 
