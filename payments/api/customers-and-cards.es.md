@@ -1,5 +1,7 @@
 # Clientes y tarjetas almacenadas
 
+> INFO
+>
 > Pre-requisitos:
 > 
 > * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
