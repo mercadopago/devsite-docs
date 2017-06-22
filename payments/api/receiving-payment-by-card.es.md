@@ -23,7 +23,11 @@ Para hacer uso de esta librería debes comenzar insertando el siguiente código 
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
-> _**Nota**_: Es importante que la librería **siempre** se importe desde _https://secure.mlstatic.com_.
+> NOTE
+>
+> Nota
+>
+> Es importante que la librería **siempre** se importe desde _https://secure.mlstatic.com_.
 
 ### 2. Configura tu public key
 
@@ -33,7 +37,12 @@ Tu clave pública es la que es la que te identifica para poder capturar los dato
 Mercadopago.setPublishableKey("TEST-b3d5b663-664a-4e8f-b759-de5d7c12ef8f");
 ```
 
->_**Nota**_: Esta es una clave pública del entorno de pruebas. Para capturar tarjetas reales deberás reemplazarla por tu [clave pública productiva](https://www.mercadopago.com/mla/account/credentials).
+> NOTE
+>
+> Nota
+>
+> Esta es una clave pública del entorno de pruebas. Para capturar tarjetas reales deberás reemplazarla por tu [clave pública productiva](https://www.mercadopago.com/mla/account/credentials).
+
 
 ### 3. Capturar datos de tarjeta
 
@@ -84,7 +93,12 @@ El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer est
 </form>
 ```
 
-> _**Importante:**_ Los campos que tienen datos sensibles no cuentan con el atributo `name`, de esta forma nunca llegarán a tus servidores.
+> WARNING
+>
+> Importante
+> 
+> Los campos que tienen datos sensibles no cuentan con el atributo `name`, de esta forma nunca llegarán a tus servidores.
+
 
 #### Obtener el tipo de documento
 
@@ -278,7 +292,12 @@ La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recome
 ]
 ```
 
-> _**Nota**_: Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
+> NOTE
+>
+> Nota
+>
+> Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
+
 
 Para crear el pago es importante enviar los datos indicados anteriormente:
 
