@@ -14,14 +14,11 @@ Una preferencia de pago contiene toda la información del producto o servicio qu
 
 Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
-```php
+```php 
   <?php  
-    MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'APP_USR-6295877106812064-042916-5ab7e29152843f61b4c218a551227728__LC_LB__-202809963']);
- 
+    MercadoPago\SDK::configure(['ACCESS_TOKEN' => ENV_ACCESS_TOKEN]); 
   ?>
 ```
-
-
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
 
