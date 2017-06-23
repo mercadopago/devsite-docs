@@ -8,7 +8,7 @@ Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu 
 
 Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones. 
 
-## Añade la dependencia a tu proyecto
+## Añade la dependencia a tu proyecto
 
 ```
 ===
