@@ -392,5 +392,3 @@ Para incorporar en el Checkout las opciones configuradas en la clase FlowPrefere
 	}
 ```
 Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.
-
-----------
