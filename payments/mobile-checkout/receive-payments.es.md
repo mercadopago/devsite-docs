@@ -252,13 +252,6 @@ forControlEvents:UIControlEventTouchUpInside];
 
 ### ¡Inicia nuestro Checkout!
 
-Para iniciar nuestro checkout sólo necesitas:
-
-1. Clave pública: es un identificador único de tu cuenta, tu aplicación y sus configuraciones.
-- [Crea tus credenciales.](https://www.mercadopago.com/mla/account/credentials)
-- [Configura tu aplicación.](https://applications.mercadopago.com/)
-2. Identificador de la preferencia de pago.
-
 Una vez creada la Preferencia de Pago estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
 ```java
