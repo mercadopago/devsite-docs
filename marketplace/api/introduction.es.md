@@ -6,7 +6,11 @@ Mercado Pago te permite realizar cobros a nombre de los vendedores de tu platafo
 
 Cuando se genera un pago, el dinero es dividido en el instante entre la cuenta de tu vendedor y la tuya, en caso de cobres una comisión.
 
-> _**Nota**_: La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor.
+> NOTE
+>
+> Nota
+>
+> La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor.
 
 Marketplace requiere de 3 pasos:
 
