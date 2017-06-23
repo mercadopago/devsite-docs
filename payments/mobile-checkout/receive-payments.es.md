@@ -1,7 +1,8 @@
-**Recibiendo Pagos**
-============
+# Recibiendo Pagos
 
-> Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
+> Pre-requisitos:
+>
+> * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
 
 Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio pago del usuario y la comunicación del resultado de pago.
 
@@ -10,44 +11,90 @@ Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago e
 
 Para poder iniciar el flujo de pago, necesitas obtener la información sobre el producto o servicio a pagar. 
 
-Esta información se llama [preferencia de pago](https://www.mercadopago.com.ar/developers/en/api-docs/basic-checkout/checkout-preferences/) y contiene: 
+Esta entidad es la preferencia de pago y contiene: 
 
-1. Datos y monto de lo que se va a pagar.
-2. Datos de tu comprador.
+1. Descripción y monto.
+2. Información de tu comprador (Email, nombre, dirección, etc).
 3. Medios de pago que aceptas.
-4. ID de referencia en tu sistema.
+4. ID de referencia de tu sistema.
 
-La preferencia debe ser creada desde tu servidor en los servidores de Mercado Pago.
+```php 
+===
+Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago/sdk-php) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+===
+  <?php  
+    MercadoPago\SDK::configure(['ACCESS_TOKEN' => ENV_ACCESS_TOKEN]); 
+  ?>
+```
 
-### ¿Cómo crear una Preferencia de Pago?
+Luego, deberás agregar los atributos de tu preferencia de pago:
 
-#### Primero:
+```php
+  <?php
+    $preference_data = array(
+    	"items" => array(
+    		array(
+    			"title" => "Multicolor kite",
+    			"quantity" => 1,
+    			"currency_id" => "ARS",
+    			"unit_price" => 10.00,
+    			"description" => "",
+    			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
+    		)
+    	),
+    	"payer" => array(
+    		"email" => "usuario@mail.com"
+    	)
+    );
 
-1. [Registra la cuenta de MercadoPago](https://registration.mercadopago.com.ar/registration-mp?mode=mp) dónde recibirás el dinero.
-2. [Crea una aplicación.](https://applications.mercadopago.com.ar/list?platform=mp)
-3. [Configura tus credenciales.](https://www.mercadopago.com/mla/account/credentials?type=basic)
+    $preference = $mp->create_preference($preference_data);
+  ?>
+```
 
-#### Luego, en tu Servidor:
+### Contenido de la preferencia
 
-[Crea una preferencia de pago](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/) y retorna la respuesta que te dan nuestros servicios. Hazlo desde tu servidor, porque tendrás que firmarla con tu clave privada. De esta forma nos aseguramos proteger tanto al comprador, como a tu propio usuario vendedor. 
+Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-En tu servidor, al crear la preferencia, podrás configurar si deseas excluir algún medio de pago y si deseas una cantidad de cuotas por defecto.
+#### Payer
 
-Las preferencias completas funcionan mucho mejor. Envíanos toda la información que puedas y verás que ofrecerás tan buena experiencia para los compradores, que **¡tendrás más pagos acreditados!**
+Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, no se le pedirá durante el proceso de pago.
 
-> **Tip:** Puedes probar [nuestras SDKs del lado Servidor.](https://www.mercadopago.com.ar/developers/es/tools/)
+```json
+{
+   ...,
+	"payer": {
+		"name": "user-name",
+		"surname": "user-surname",
+		"email": "user@email.com",
+		"date_created": "2015-06-02T12:58:41.425-04:00",
+		"phone": {
+			"area_code": "11",
+			"number": "4444-4444"
+		},
+		"identification": {
+			"type": "DNI", // Available ID types at https://api.mercadopago.com/v1/identification_types
+			"number": "12345678"
+		},
+		"address": {
+			"street_name": "Street",
+			"street_number": 123,
+			"zip_code": "5700"
+		} 
+	},
+	...
+}
+```
 
 ## Integra el flujo de pago de Mercado Pago en tu aplicación
 
-### Conecta tu aplicación con tu servidor
+### 1. Conecta tu aplicación con tu servidor
 
-En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método createPreference hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (preferenceMap). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
+En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (`preferenceMap`). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
 
 CustomServer se encargará de transformar la respuesta de tu servicio (la misma que los servicios de Mercado Pago) en un objeto **CheckoutPreference**, que cuyo ID es el punto de entrada a nuestro checkout.
 
 Crea la preferencia en tu servidor desde tu aplicación con el siguiente código:
 
-[Android]
 ```java
 public void submit(View view) {
 // Crea un mapa con los datos de la compra y el mail de tu cliente.
@@ -73,7 +120,6 @@ public void failure(ApiException apiException) {
 });
 }
 ```
-[iOS - Swift]
 ```swift
 let preferenceBody : [String : Any] = ["amount" : 10,
 "itemId" : 29334, "customerId": 207,
@@ -90,7 +136,6 @@ startMercadoPagoCheckout(checkoutPreference)
 // Ups, something went wrong
 })
 ```
-[iOS - Objective-C]
 ```Objective-c
 NSDictionary *preferenceBody = @{
 @“amount” : @10,
@@ -111,13 +156,14 @@ ServicePreference * servicePreference = [[ServicePreference alloc] init];
 
 ### Crea un botón de pago
 
-#### A modo de ejemplo proponemos que inicies el flujo de MercadoPago desde un botón.
+A modo de ejemplo proponemos que inicies el flujo de MercadoPago desde un botón.
 
-[Android]
-> 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
-> 2. Agrega un campo de texto para mostrar el resultado del pago. 
-> 3. Pega el siguiente código de ejemplo en **res/layout/activity_main.xml**.
 ```xml
+===
+1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
+2. Agrega un campo de texto para mostrar el resultado del pago. 
+3. Pega el siguiente código de ejemplo en **res/layout/activity_main.xml**.
+===
 <FrameLayout xmlns:android='http://schemas.android.com/apk/res/android'
 xmlns:tools='http://schemas.android.com/tools'
 android:layout_width='match_parent'
@@ -151,14 +197,14 @@ android:paddingTop='50dp'/>
 </LinearLayout>
 </FrameLayout>
 ```
-----------
-[iOS - Swift]
-> 1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
->2.  Inserta un botón en el **.xib** correspondiente.
-> 3. Agrega un campo de texto para mostrar el resultado del pago.
-> 4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
-> 5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
 ```swift
+===
+1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
+2. Inserta un botón en el **.xib** correspondiente.
+3. Agrega un campo de texto para mostrar el resultado del pago.
+4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
+5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
+===
 import UIKit
 import MercadoPagoSDK
 
@@ -175,15 +221,15 @@ for: .touchUpInside)
 }
 }
 ```   
-----------
-[iOS - Objective]
-> 1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
->2.  Inserta un botón en el .xib correspondiente.
-> 3. Agrega un campo de texto (en nuestro caso lo llamamos paymentResult) para mostrar el resultado del pago.
-> 4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
-> 5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
-
 ```Objective-c
+===
+1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
+2.  Inserta un botón en el .xib correspondiente.
+3. Agrega un campo de texto (en nuestro caso lo llamamos paymentResult) para mostrar el resultado del pago.
+4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
+5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
+===
+
 @import MercadoPagoSDK;
 
 @interface MainExamplesViewController()
@@ -203,31 +249,22 @@ forControlEvents:UIControlEventTouchUpInside];
 ```
 ----------
 
-#### ¡Inicia nuestro Checkout!
-
-Para iniciar nuestro checkout sólo necesitas:
-
-1. Clave pública: es un identificador único de tu cuenta, tu aplicación y sus configuraciones.
-- [Crea tus credenciales.](https://www.mercadopago.com/mla/account/credentials)
-- [Configura tu aplicación.](https://applications.mercadopago.com/)
-2. Identificador de la preferencia de pago.
+### 2. ¡Inicia nuestro Checkout!
 
 Una vez creada la Preferencia de Pago estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
-[Android]
 ```java
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
 new MercadoPagoCheckout.Builder()
 .setActivity(activity)
-.setPublicKey(publicKey)                .setCheckoutPreference(checkoutPreference)
+.setPublicKey(publicKey).setCheckoutPreference(checkoutPreference)
 .startForPayment();
 }
 ```
-[iOS - Swift]
-
-El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
-
 ```swift
+===
+El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
+===
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
 
@@ -237,16 +274,16 @@ navigationController: self.navigationController!)
 checkout.start()
 }
 ```
-[iOS - Objective-C]
-
-El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
 ```Objective-c
+===
+El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
+===
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
 self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
 [self.mpCheckout start];
 }
 ```
-### ¡Obtén la respuesta!
+### 3. Obtén la respuesta
 
 El SDK devolverá siempre un resultado del pago.
 
@@ -256,8 +293,8 @@ Estos son los atributos más importantes del pago:
 
 - id: Identificador del pago.
 - status: [Estados del pago.](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/)
-- payment_method_id: Identificador del medio de pago que eligió tu usuario.
-- payment_type_id: Tipo de medio elegido.
+- payment\_method\_id: Identificador del medio de pago que eligió tu usuario.
+- payment\_type\_id: Tipo de medio elegido.
 - card: Objeto que identifica la tarjeta de tu usuario.
 - issuer_id: Identificador del banco de la tarjeta que eligió tu usuario.
 - installments: Cantidad de cuotas elegidas.
@@ -265,7 +302,6 @@ Estos son los atributos más importantes del pago:
 
 Podrás obtener la respuesta con el siguiente código:
 
-[Android]
 ```java
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -284,7 +320,6 @@ if (data != null && data.getStringExtra("mercadoPagoError") != null) {
 }
 }
 ```      
-[iOS - Swift]
 ```swift
 MercadoPagoCheckout.setPaymentCallback { (payment) in
 self.payment = payment
@@ -294,7 +329,6 @@ MercadoPagoCheckout.setCallback { (Void) in
 // Resolved cancel checkout
 }
 ```
-[iOS - Objective-C]
 ```Objective-c
 [MercadoPagoCheckout setPaymentCallbackWithPaymentCallback:^(Payment * payment) {
 self.payment = payment
@@ -305,12 +339,10 @@ self.payment = payment
 }];
 ```
 
-**Configura tu color**
-============
+### Configura tu color
 
 Puedes cambiar los colores de la interfaz gráfica del flujo de pago, como así también hacer más oscura la fuente utilizando la clase DecorationPreference. Esto lo puedes lograr con el siguiente código:
 
-[Android]
 ```java
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
 DecorationPreference decorationPreference = new DecorationPreference.Builder()
@@ -326,7 +358,6 @@ new MercadoPagoCheckout.Builder()
 .startForPayment();
 }
 ``` 
-[iOS - Swift]
 ```swift
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 let decorationPreference: DecorationPreference = DecorationPreference()
@@ -342,7 +373,6 @@ navigationController: self.navigationController!)
 checkout.start()
 }
 ```
-[iOS - Objective-C]
 ```Objective-c
 DecorationPreference *decorationPreference = [[DecorationPreference alloc] initWithBaseColor:[UIColor fromHex:@"#CA254D"]];
 [decorationPreference enableDarkFont];
@@ -355,8 +385,14 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 ```
 El SDK permite setear el color en el formato hexadecimal,es decir por ejemplo **setBaseColor("#13123");**.
 
-*** Próximos pasos
+### Prueba la integración
+
+Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
+
+Para ello debes usar usuario y tarjetas de prueba.
+
+Visita la sección [Probando](./testing.es.md) para más información.
+
+### Próximos pasos
 
 - Visita la sección Personalización para adecuar el flujo de pago a tus necesidades.
-- Haz pruebas de la integración antes de salir a producción.
-----------

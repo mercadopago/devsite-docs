@@ -1,8 +1,17 @@
 # Probando la integración
 
-Para probar la integración sigue estos pasos
-1. Configura las credenciales de sandbox
-2. Crea la preferencia con la public key de sandbox.
+Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
+Debes verificar que:
+
++ La información del bien o servicio a pagar es correcta.
++ Se reconoce la cuenta del cliente, porque envías el email.
++ Ofreces la formas de pago que deseas.
++ La experiencia de pagos es la adecuada y se informa el resultado del pago.
+
+Para probar la integración sigue estos pasos:
+
+1. Configura la [public key de sandbox](https://www.mercadopago.com/mla/account/credentials?type=basic) en tu aplicación.
+2. Crea la preferencia en tu servidor con el access token.
 3. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 o 4 dígitos dependiendo de la tarjeta.
 4. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:
         * **APRO**: Pago aprobado  
