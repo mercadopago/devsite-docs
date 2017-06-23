@@ -17,7 +17,7 @@ En el archivo **build.gradle** añade el siguiente código:
     dependencies {
        compile 'com.mercadopago:sdk:3.0.0'
     }
-
+```
 Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
 
 
