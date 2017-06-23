@@ -100,7 +100,11 @@ HTTP status code: 200 OK
 }
 ```
 
-**Importante:** los períodos que transcurran durante la pausa de la suscripción no serán cobrados, aunque la suscripción seguirá ejecutando su agenda. 
+> WARNING
+>
+> Importante
+>
+> los períodos que transcurran durante la pausa de la suscripción no serán cobrados, aunque la suscripción seguirá ejecutando su agenda. 
 
 ## Cancelar una suscripción
 
