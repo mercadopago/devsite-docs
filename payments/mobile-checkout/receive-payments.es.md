@@ -1,4 +1,4 @@
-# Recibiendo Pagos
+# Recibiendo Pagos
 
 > Pre-requisitos:
 >
@@ -158,7 +158,6 @@ ServicePreference * servicePreference = [[ServicePreference alloc] init];
 
 A modo de ejemplo proponemos que inicies el flujo de MercadoPago desde un botón.
 
-[Android]
 ```xml
 ===
 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
@@ -291,7 +290,7 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 [self.mpCheckout start];
 }
 ```
-### ¡Obtén la respuesta!
+### Obtén la respuesta
 
 El SDK devolverá siempre un resultado del pago.
 
@@ -393,7 +392,7 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 ```
 El SDK permite setear el color en el formato hexadecimal,es decir por ejemplo **setBaseColor("#13123");**.
 
-### Prueba tu integración
+### Prueba la integración
 
 Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
@@ -401,6 +400,6 @@ Para ello debes usar usuario y tarjetas de prueba.
 
 Visita la sección [Probando](./testing.es.md) para más información.
 
-#### Próximos pasos
+### Próximos pasos
 
 - Visita la sección Personalización para adecuar el flujo de pago a tus necesidades.
