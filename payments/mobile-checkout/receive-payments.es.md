@@ -11,7 +11,7 @@ Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago e
 
 Para poder iniciar el flujo de pago, necesitas obtener la información sobre el producto o servicio a pagar. 
 
-Esta entidad es la [preferencia de pago](https://www.mercadopago.com.ar/developers/en/api-docs/basic-checkout/checkout-preferences/) y contiene: 
+Esta entidad es la preferencia de pago y contiene: 
 
 1. Descripción y monto.
 2. Información de tu comprador (Email, nombre, dirección, etc).
@@ -87,9 +87,9 @@ Es requerido el envío del `email` de tu comprador. Si nos envías datos como ti
 
 ## Integra el flujo de pago de Mercado Pago en tu aplicación
 
-### Conecta tu aplicación con tu servidor
+### 1. Conecta tu aplicación con tu servidor
 
-En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método createPreference hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (preferenceMap). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
+En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (`preferenceMap`). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
 
 CustomServer se encargará de transformar la respuesta de tu servicio (la misma que los servicios de Mercado Pago) en un objeto **CheckoutPreference**, que cuyo ID es el punto de entrada a nuestro checkout.
 
@@ -249,7 +249,7 @@ forControlEvents:UIControlEventTouchUpInside];
 ```
 ----------
 
-### ¡Inicia nuestro Checkout!
+### 2. ¡Inicia nuestro Checkout!
 
 Una vez creada la Preferencia de Pago estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
@@ -283,7 +283,7 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 [self.mpCheckout start];
 }
 ```
-### Obtén la respuesta
+### 3. Obtén la respuesta
 
 El SDK devolverá siempre un resultado del pago.
 
@@ -293,8 +293,8 @@ Estos son los atributos más importantes del pago:
 
 - id: Identificador del pago.
 - status: [Estados del pago.](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/)
-- payment_method_id: Identificador del medio de pago que eligió tu usuario.
-- payment_type_id: Tipo de medio elegido.
+- payment\_method\_id: Identificador del medio de pago que eligió tu usuario.
+- payment\_type\_id: Tipo de medio elegido.
 - card: Objeto que identifica la tarjeta de tu usuario.
 - issuer_id: Identificador del banco de la tarjeta que eligió tu usuario.
 - installments: Cantidad de cuotas elegidas.
