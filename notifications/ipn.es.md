@@ -1,5 +1,11 @@
 # Notificaciones IPN
 
+> WARNING
+>
+> Pre-requisitos:
+>
+> * Tener implementado [Checkout](../payments/web-checkout/introduction.es.md).
+
 **IPN** (Instant Payment Notification) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
 Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
