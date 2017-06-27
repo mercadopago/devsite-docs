@@ -2,6 +2,8 @@
 
 Subscribe a tus clientes para recibir de forma periódica y automatizada.
 
+> WARNING
+> 
 > Pre-requisitos:
 > 
 > * Tener implementada la [captura de datos de tarjeta](../../payments/receiving-payment-by-card.es.md).
@@ -86,7 +88,13 @@ curl -X POST \
                 }
         }'
 ```
-> _**Nota**_: El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de subscripciones.
+
+> NOTE
+> 
+> Nota
+>
+> El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de subscripciones.
+
 
 **Respuesta:**
 

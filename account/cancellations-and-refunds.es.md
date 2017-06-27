@@ -55,8 +55,11 @@ $mp = new MP('SECRET_ACCESS_TOKEN');
 $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 ?>
 ```
-
-> Nota: El pago quedará con `status` en `refunded`.
+> NOTE
+> 
+> Nota
+>
+> El pago quedará con `status` en `refunded`.
 
 
 **Response status code: 201 Created**

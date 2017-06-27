@@ -109,7 +109,11 @@ HTTP status code: 200 OK
 }
 ```
 
-**Importante:** los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda. Esto significa que los `invoices` generados quedarán con un `status` en `unpaid` durante el tiempo de pausa, y no se cobrarán cuando se reactive la subscripción.
+> WARNING
+>
+> Importante
+>
+> Los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda. Esto significa que los `invoices` generados quedarán con un `status` en `unpaid` durante el tiempo de pausa, y no se cobrarán cuando se reactive la subscripción.
 
 ## Cancelar un plan o una subscripción
 
@@ -130,8 +134,11 @@ $plan_data = array(
 $plan = $mp->put("/v1/plans/". $PLAN_ID, $plan_data);
 ?>
 ```
-
-> _**Nota**_: Cuando ejecutes esta acción, todas las subscripciones serán marcadas con un status `cancelled`
+> NOTE
+>
+> Nota
+>
+> Cuando ejecutes esta acción, todas las subscripciones serán marcadas con un status `cancelled`
 
 **Respuesta:** 
 

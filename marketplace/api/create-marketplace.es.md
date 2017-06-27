@@ -1,6 +1,8 @@
 # Cómo integrar Marketplace con la API
 
-> Pre-requisitos:
+> WARNING
+>
+> Pre-requisitos
 > 
 > * Tener implementado [API](../../payments/api/introduction.es.md).
 
@@ -31,7 +33,11 @@ Recibirás el código de autorización en la url que especificaste:
    
 Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene un tiempo de validez de 10 minutos.
 
-> _**Consejo**_: puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su e-mail, el ID de usuario en tu sistema o cualquier otra referencia útil.
+> WARNING
+>
+> Consejo
+>
+> Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su e-mail, el ID de usuario en tu sistema o cualquier otra referencia útil.
 
 
 ### Crea las credenciales de tus vendedores
@@ -77,7 +83,11 @@ Response:
 
 En la respuesta, además del `access_token` y `public_key` del vendedor que se ha vinculado, obtienes el `refresh_token` que debes utilizar para renovar periódicamente sus credenciales.
 
-> _**Nota**_: Las credenciales tienen un **tiempo de validez de 6 meses**.
+> NOTE
+>
+> Nota
+>
+> Las credenciales tienen un **tiempo de validez de 6 meses**.
 
 
 ### Renueva las credenciales de tus vendedores
