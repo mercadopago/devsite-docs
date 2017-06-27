@@ -2,7 +2,7 @@
 
 > WARNING
 >
-> Pre-requisitos:
+> Pre-requisitos
 >
 > * Tener implementado [API](../payments/api/introduction.es.md).
 

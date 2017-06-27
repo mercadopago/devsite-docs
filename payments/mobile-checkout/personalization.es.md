@@ -1,6 +1,8 @@
 # **Personalización**
 
-> Pre-requisitos:
+> WARNING
+> 
+> Pre-requisitos
 >
 > *  Esta guía asume que ya has seguido los pasos de la sección introducción y recibiendo pagos de la documentación para la instalación del SDK y la integración por defecto, junto con la creación de la preferencia de pago.
 
