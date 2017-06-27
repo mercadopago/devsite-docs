@@ -2,7 +2,11 @@
 
 Mercado Pago permite a vendedores que cumplen con las normativas PCI Compliance, cobrar a una tarjeta enviando los datos de la tarjeta junto a lo que se desea cobrar, sin necesidad de tokenizar la tarjeta previamente.
 
-> Nota: La siguiente documentación extiende la documentación de [Pagos vía API]().
+> NOTE
+>
+> Nota
+>
+> La siguiente documentación extiende la documentación de [Pagos vía API]().
 
 **Request**
 

@@ -2,7 +2,7 @@
 
 > WARNING
 >
-> Pre-requisitos:
+> Pre-requisitos
 >
 > * Tener implementado [Checkout](../payments/web-checkout/introduction.es.md).
 

@@ -2,7 +2,11 @@
 
 Mercado Pago permite a vendedores que cumplen con las normativas PCI Compliance, tokenizar las tarjetas por backend.
 
-> Nota: La siguiente documentación extiende la documentación de [Pagos vía API]().
+> NOTE
+>
+> Nota
+>
+> La siguiente documentación extiende la documentación de [Pagos vía API]().
 
 **Request**
 
