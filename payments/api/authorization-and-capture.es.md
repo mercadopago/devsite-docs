@@ -66,7 +66,9 @@ La respuesta indica que el pago se encuentra **autorizado** y **pendiente de cap
 
 Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta que no sean capturados, por lo cuál recomendamos realizar la captura en el menor tiempo posible.
 
-> **Consideraciones**:   
+> WARNING
+> 
+> Consideraciones
 > 
 > * La reserva tendrá una validez de [AR:7][BR:5][PE:22] días. Si no la capturas hasta ese momento será cancelada.
 > * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
