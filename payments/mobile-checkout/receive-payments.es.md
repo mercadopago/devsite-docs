@@ -1,6 +1,8 @@
 # Recibiendo Pagos
 
-> Pre-requisitos:
+> WARNING
+> 
+> Pre-requisitos
 >
 > * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
 

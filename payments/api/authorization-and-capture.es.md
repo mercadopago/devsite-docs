@@ -7,8 +7,10 @@
 
 # Autorización y captura
 
-> Pre-requisitos:
+> WARNING
 > 
+> Pre-requisitos
+>
 > * Tener implementado el [procesamiento de pagos con tarjeta](receiving-payment-by-card.es.md).
 > 
 > Disponible solamente en:
