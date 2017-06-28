@@ -95,7 +95,8 @@ CustomServer se encargará de transformar la respuesta de tu servicio (la misma 
 
 Crea la preferencia en tu servidor desde tu aplicación con el siguiente código:
 
-```java
+[[[
+```android
 public void submit(View view) {
 // Crea un mapa con los datos de la compra y el mail de tu cliente.
 Map<String, Object> preferenceMap = new HashMap<>();
@@ -153,11 +154,13 @@ ServicePreference * servicePreference = [[ServicePreference alloc] init];
 // Ups, something went wrong
 }];
 ```
+]]]
 
 ### Crea un botón de pago
 
 A modo de ejemplo proponemos que inicies el flujo de MercadoPago desde un botón.
 
+[[[
 ```xml
 ===
 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
@@ -247,13 +250,14 @@ forControlEvents:UIControlEventTouchUpInside];
 }
 @end
 ```
-----------
+]]]
 
 ### 2. ¡Inicia nuestro Checkout!
 
 Una vez creada la Preferencia de Pago estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
-```java
+[[[
+```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
 new MercadoPagoCheckout.Builder()
 .setActivity(activity)
@@ -283,6 +287,9 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 [self.mpCheckout start];
 }
 ```
+]]]
+
+
 ### 3. Obtén la respuesta
 
 El SDK devolverá siempre un resultado del pago.
@@ -302,7 +309,8 @@ Estos son los atributos más importantes del pago:
 
 Podrás obtener la respuesta con el siguiente código:
 
-```java
+[[[
+```android
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 if (requestCode == MercadoPagoCheckout.CHECKOUT_REQUEST_CODE) {
@@ -338,12 +346,14 @@ self.payment = payment
 // Resolved cancel checkout
 }];
 ```
+]]]
 
 ### Configura tu color
 
 Puedes cambiar los colores de la interfaz gráfica del flujo de pago, como así también hacer más oscura la fuente utilizando la clase DecorationPreference. Esto lo puedes lograr con el siguiente código:
 
-```java
+[[[
+```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
 DecorationPreference decorationPreference = new DecorationPreference.Builder()
 .setBaseColor(ContextCompat.getColor(context, R.color.your_color))
@@ -383,6 +393,8 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 [self.mpCheckout start];
 }
 ```
+]]]
+
 El SDK permite setear el color en el formato hexadecimal,es decir por ejemplo **setBaseColor("#13123");**.
 
 ### Prueba la integración
