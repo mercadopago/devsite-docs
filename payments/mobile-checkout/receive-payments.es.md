@@ -1,8 +1,6 @@
 # Recibiendo Pagos
 
-> WARNING
->
-> Pre-requisitos
+> Pre-requisitos:
 >
 > * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
 
@@ -36,16 +34,15 @@ Luego, deberás agregar los atributos de tu preferencia de pago:
     $preference_data = array(
     	"items" => array(
     		array(
-    			"title" => "Multicolor kite",
+    			"title" => "[FAKER][COMMERCE][PRODUCT_NAME]",
     			"quantity" => 1,
     			"currency_id" => "ARS",
-    			"unit_price" => 10.00,
-    			"description" => "",
-    			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
+    			"unit_price" => [FAKER][COMMERCE][PRICE],
+    			"description" => ""
     		)
     	),
     	"payer" => array(
-    		"email" => "usuario@mail.com"
+    		"email" => "[FAKER][INTERNET][FREE_EMAIL]"
     	)
     );
 
@@ -65,22 +62,22 @@ Es requerido el envío del `email` de tu comprador. Si nos envías datos como ti
 {
    ...,
 	"payer": {
-		"name": "user-name",
-		"surname": "user-surname",
-		"email": "user@email.com",
+		"name": "[FAKER][NAME][FIRST_NAME]",
+		"surname": "[FAKER][NAME][LAST_NAME]",
+		"email": "[FAKER][INTERNET][FREE_EMAIL]",
 		"date_created": "2015-06-02T12:58:41.425-04:00",
 		"phone": {
-			"area_code": "11",
-			"number": "4444-4444"
+			"area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
+			"number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
 		},
 		"identification": {
 			"type": "DNI", // Available ID types at https://api.mercadopago.com/v1/identification_types
-			"number": "12345678"
+			"number": "123456789"
 		},
 		"address": {
-			"street_name": "Street",
-			"street_number": 123,
-			"zip_code": "5700"
+			"street_name": "[FAKER][ADDRESS][STREET_NAME]",
+			"street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
+			"zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
 		} 
 	},
 	...
