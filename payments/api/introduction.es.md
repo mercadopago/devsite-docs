@@ -2,15 +2,19 @@
   description: Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees, manteniendo la experiencia de compra.
 ---
 
-# API
+# Introducción a nuestra API de Pagos
 
-Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees, manteniendo la experiencia de compra.
+Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees.
 
-### !!! SUMAR BENEFICIOS !!!
+Con nuestras APIs:
+
+* Podrás crear tu propio checkout sin que tus compradores salgan de tu sitio.
+* Los datos de tarjeta nunca pasarán por tus servidores, manteniendo la seguridad.
+* Podrás recordar los datos de tarjeta de tus clientes para futuras compras.
 
 ## Credenciales
 
-Cuentas con dos pares de claves para conectarte con la API, uno para un entorno de pruebas y otro productivo. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com/mla/account/credentials).
+Cuentas con dos pares de claves para conectarte con la API, uno para un entorno de pruebas y otro productivo. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com.ar/account/credentials).
 
 La **credencial pública**, o *public key*, es la utilizada para acceder a todos los recursos que necesitará tu frontend para recolectar los datos de tarjeta de crédito, y tokenizar.
 
@@ -24,7 +28,7 @@ Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](#) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](). 
+Una vez que hayas [probado tu aplicación](testing.es.md), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de sandbox por las productivas en tu código.
 

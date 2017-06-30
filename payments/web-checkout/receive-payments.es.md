@@ -118,7 +118,7 @@ Las notificaciones son la forma automática de enterarte de tus nuevos pagos y l
 
 Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](#) para conocer más sobre esto.
+Visita la sección [Notificaciones](../../notifications/ipn.es.md) para conocer más sobre esto.
 
 ## 4. Cancelar un pago
 
@@ -131,7 +131,7 @@ El vencimiento de estos **no es automático**, por lo cuál es necesario que eje
 
 Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba.
+Para ello debes usar usuarios y tarjetas de prueba.
 
 Visita la sección [Probando](./testing.es.md) para más información.
 

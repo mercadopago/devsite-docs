@@ -8,9 +8,20 @@ Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu 
 
 Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones. 
 
-## Añade la dependencia a tu proyecto
+![prototipo](https://user-images.githubusercontent.com/8038535/27752683-aae6ee44-5db8-11e7-9c18-cfd56c853c0a.png)
 
-```
+
+#### Integrar el checkout es muy fácil:
+
+1. Incluye el SDK en tu proyecto.
+1. Coloca tus credenciales y crea la preferencia de pagos.
+1. Inicia el proceso de pago desde un botón en tu aplicación.
+1. Enterate del pago escuchando las notificaciones que te enviamos.
+
+
+## Añade la dependencia a tu proyecto
+[[[
+```Android
 ===
 En el archivo **build.gradle** añade el siguiente código: 
 ===
@@ -19,9 +30,7 @@ En el archivo **build.gradle** añade el siguiente código:
     }
 ```
 Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
-
-
-```
+```ios
 ===
 Si en tu proyecto utilizas **CocoaPods**, puedes añadir la dependencia en el **Podfile** del módulo donde nos integres con el siguiente código:
 ===
@@ -31,4 +40,6 @@ Si en tu proyecto utilizas **CocoaPods**, puedes añadir la dependencia en el **
     platform :ios, '8.2'
     pod 'MercadoPagoSDK', '3.0.0'
 ```
+]]]
+
 Sino puedes [descargar el SDK](https://github.com/mercadopago/px-ios/releases) y añadirlo a tu proyecto.

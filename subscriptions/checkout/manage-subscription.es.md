@@ -1,17 +1,17 @@
-# Gestionando una suscripción
+# Gestionando una subscripción
 
 Índice de contenido:
 
-1. [Actualizar el monto de una suscripción](#actualizar-el-monto-de-una-suscripción)
-2. [Pausar y reactivar una suscripción](#pausar-y-reactivar-una-suscripción)
-3. [Cancelar una suscripción](#cancelar-una-suscripción)
+1. [Actualizar el monto de una subscripción](#actualizar-el-monto-de-una-subscripción)
+2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripción)
+3. [Cancelar una subscripción](#cancelar-una-subscripción)
 
 
-## Actualizar el monto de una suscripción
+## Actualizar el monto de una subscripción
 
-Puedes cambiar el monto de las suscripciones en cualquier momento. A partir del momento en que realices la actualización, se cobrará el nuevo monto a los próximos débitos de tus customers.
+Puedes cambiar el monto de las subscripciones en cualquier momento. A partir del momento en que realices la actualización, se cobrará el nuevo monto a los próximos débitos de tus customers.
 
-Para cambiar el monto de una suscripción debes hacerlo de la siguiente manera:
+Para cambiar el monto de una subscripción debes hacerlo de la siguiente manera:
 
 ```curl
 curl -X PUT \
@@ -42,15 +42,15 @@ HTTP status code: 200 OK
 }
 ```
 
-Además, puedes hacerlo directamente desde el sitio de Mercado Pago. Accede a la sección Suscripciones, selecciona los usuarios necesarios y confirma la acción.
+Además, puedes hacerlo directamente desde el sitio de Mercado Pago. Accede a la sección subscripciones, selecciona los usuarios necesarios y confirma la acción.
 
-## Pausar y reactivar una suscripción
+## Pausar y reactivar una subscripción
 
-Puedes pausar las suscripciones en cualquier momento. De este modo, no se les cobrará a tus usuarios hasta que las reactives.
+Puedes pausar las subscripciones en cualquier momento. De este modo, no se les cobrará a tus usuarios hasta que las reactives.
 
-> Tus suscriptores recibirán un e-mail informándoles de la pausa o reactivación de la suscripción.
+> Tus subscriptores recibirán un e-mail informándoles de la pausa o reactivación de la subscripción.
 
-Para pausar una suscripción debes hacerlo de la siguiente manera:
+Para pausar una subscripción debes hacerlo de la siguiente manera:
 
 ```curl
 curl -X PUT \
@@ -75,7 +75,7 @@ HTTP status code: 200 OK
 }
 ```
 
-Para reactivar una suscripción debes hacerlo de la siguiente manera:
+Para reactivar una subscripción debes hacerlo de la siguiente manera:
 
 ```curl
 curl -X PUT \
@@ -104,13 +104,13 @@ HTTP status code: 200 OK
 >
 > Importante
 >
-> los períodos que transcurran durante la pausa de la suscripción no serán cobrados, aunque la suscripción seguirá ejecutando su agenda. 
+> los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda. 
 
-## Cancelar una suscripción
+## Cancelar una subscripción
 
-Puedes cancelar las suscripciones en cualquier momento. De este modo, se dejará de cobrar a tus clientes.
+Puedes cancelar las subscripciones en cualquier momento. De este modo, se dejará de cobrar a tus clientes.
 
-Para cancelar una suscripción debes hacerlo de la siguiente manera:
+Para cancelar una subscripción debes hacerlo de la siguiente manera:
 
 ```curl
 curl -X PUT \
