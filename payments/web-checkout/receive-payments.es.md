@@ -117,7 +117,7 @@ Las notificaciones son la forma automática de enterarte de tus nuevos pagos y l
 
 Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](#) para conocer más sobre esto.
+Visita la sección [Notificaciones](../../notifications/ipn.es.md) para conocer más sobre esto.
 
 ## 4. Cancelar un pago
 

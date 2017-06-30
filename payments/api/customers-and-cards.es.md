@@ -2,7 +2,7 @@
 
 > WARNING
 >
-> Pre-requisitos:
+> Pre-requisitos
 > 
 > * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
@@ -21,7 +21,7 @@ Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo
 
 require_once ('mercadopago.php');
 
-$mp = new MP ("ACCESS_TOKEN");
+$mp = new MP ("ENV_ACCESS_TOKEN");
 
 $customer = $mp->post(
 	"/v1/customers", 

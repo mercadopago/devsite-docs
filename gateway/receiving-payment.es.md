@@ -1,6 +1,8 @@
 # Recibiendo un pago en modo Gateway
 
-> Pre-requisitos:
+> WARNING
+>
+> Pre-requisitos
 >
 > * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
@@ -23,7 +25,11 @@ El default es `aggregator` e indica que procesaremos los pagos con los números 
 
 Si quieres procesar con tus números de establecimiento y los tienes configurados, debes enviar `gateway`.
 
-> _**Nota**_: Para solicitar el alta del modo Gateway y configuración de tus números de establecimientos debes hablar con tu ejecutivo de cuenta.
+> NOTE
+>
+> Nota
+>
+> Para solicitar el alta del modo Gateway y configuración de tus números de establecimientos debes hablar con tu ejecutivo de cuenta.
 
 #### merchant\_account\_id
 
@@ -135,8 +141,11 @@ La respuesta cuenta con la información de las cuotas disponibles indicando el v
 
 En el caso de que vayas a ofrecer cuotas con interés, debes adicionar el costo de estos al `transaction_amount`.
 
-
-> _**Nota**_: Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
+> NOTE
+>
+> Nota
+>
+> Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
 
 Para crear el pago es importante enviar la cantidad de `installments` y el `processing_mode`:
 

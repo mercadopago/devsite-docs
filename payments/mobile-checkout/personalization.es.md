@@ -1,6 +1,8 @@
 # **Personalización**
 
-> Pre-requisitos:
+> WARNING
+> 
+> Pre-requisitos
 >
 > *  Esta guía asume que ya has seguido los pasos de la sección introducción y recibiendo pagos de la documentación para la instalación del SDK y la integración por defecto, junto con la creación de la preferencia de pago.
 
@@ -12,8 +14,8 @@ Si necesitas hacer alguna validación en tu servidor al momento de realizar el p
 
 La preferencia de pago local contiene la información sobre el producto o servicio a pagar, ésta debe tener como mínimo un ítem y el país desde el cual se quiere realizar el pago.  A su vez, el Item debe recibir una descripción y el monto, o una descripción, cantidad y precio unitario.
 
-
-```java
+[[[
+```android
 CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
 .addItem(new Item("Item", new BigDecimal("1000")))
 .setSite(Sites.ARGENTINA)
@@ -38,13 +40,16 @@ build();
     self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
 	[self.pref setSiteId:@“MLA”];
 ```
+]]]
+
 En la clase ServicePreference puedes configurar la URL y la URI de tu servicio junto con un Map para que puedas enviar la información que desees.
 
 Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
 
 Una vez creada la ServicePreference, debes iniciar el flujo de pago de Mercado Pago, tal como se muestra en el siguiente código:
 
-```java
+[[[
+```android
         public void submit(View view) {
         CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
                 .setSite(Sites.ARGENTINA)
@@ -106,6 +111,7 @@ Una vez creada la ServicePreference, debes iniciar el flujo de pago de Mercado P
     [self.mpCheckout start];
 	}
 ```
+]]]
 
 ### Personaliza tu preferencia de pago local
 
@@ -117,8 +123,8 @@ Puedes especificar los tipos de medio de pago que no quieras soportar (Efectivo,
 
 *Excluir un tipo de medio de pago específico:*
 
-[Android]
-```java
+[[[
+```android
 CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
 .addItem(new Item("Item", new BigDecimal("1000")))
 .setSite(Sites.ARGENTINA)
@@ -126,8 +132,6 @@ CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
 .addExcludedPaymentType(PaymentTypes.TICKET)
 .build(); 
 ```
-
-[iOS - Swift]
 ```swift
 let item = Item(_id: "Item_Id", title: "Remeras", quantity: 1, unitPrice: 50, description: nil, currencyId: "ARS")
 	let payer = Payer(_id: "Payer_Id", email: "sarasa@gmail.com", type: nil, identification: nil, entityType: nil)
@@ -138,8 +142,6 @@ let item = Item(_id: "Item_Id", title: "Remeras", quantity: 1, unitPrice: 50, de
 	checkoutPreference.setId("MLA")
 	checkoutPreference.setExcludedPaymentTypes(["ticket"])
 ```
-
-[iOS - Objective-C]
 ```Objective-c
 	  Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title" quantity:2 unitPrice:2 description:@"item description" currencyId:@"ARS"];
     
@@ -154,11 +156,12 @@ PaymentPreference *paymentExclusions = [[PaymentPreference alloc] init];
 
 	[self.pref setSiteId:@“MLA”];
 ```
+]]]
 
 *Excluir más de un tipo de medio de pago:*
 
-[Android]
-```java
+[[[
+```android
 List<String> excludedPaymentTypes = new ArrayList<>();
 excludedPaymentTypes.add(PaymentTypes.TICKET);
 excludedPaymentTypes.add(PaymentTypes.BANK_TRANSFER);
@@ -194,12 +197,14 @@ PaymentPreference *paymentExclusions = [[PaymentPreference alloc] init];
 
 	[self.pref setSiteId:@“MLA”];
 ```
+]]]
 
 O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, etc) quieres excluir del checkout:
 
 *Excluir un medio de pago específico:*
 
-```java
+[[[
+```android
 CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
 .addItem(new Item("Item", new BigDecimal("1000")))
 .setSite(Sites.ARGENTINA)
@@ -231,10 +236,12 @@ PaymentPreference *paymentExclusions = [[PaymentPreference alloc] init];
 
 	[self.pref setSiteId:@“MLA”];
 ```
+]]]
 
 *Excluir más de un medio de pago:*
 
-```java
+[[[
+```android
 List<String> excludedPaymentMethods = new ArrayList<>();
 excludedPaymentMethods.add(PaymentMethods.ARGENTINA.VISA);
 excludedPaymentMethods.add(PaymentMethods.ARGENTINA.MASTER);
@@ -270,12 +277,14 @@ PaymentPreference *paymentExclusions = [[PaymentPreference alloc] init];
 
 	[self.pref setSiteId:@“MLA”];
 ```
+]]]
 
 #### Personalizar Cuotas
 
 Puedes precisar la cantidad máxima de cuotas que quieres soportar para tus medios de pago:
 
-```java
+[[[
+```android
 CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
 .addItem(new Item("Item", new BigDecimal("1000")))
 .setSite(Sites.ARGENTINA)
@@ -307,10 +316,12 @@ PaymentPreference *paymentExclusions = [[PaymentPreference alloc] init];
 
 	[self.pref setSiteId:@“MLA”];
 ```
+]]]
 
 O también establecer una cantidad de coutas por default que se seleccionará automáticamente, si es que existe para el medio de pago seleccionado por el usuario. De lo contrario, se le mostrará la pantalla de coutas para que él elija:
 
-```java
+[[[
+```android
 CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
 .addItem(new Item("Item", new BigDecimal("1000")))
 .setSite(Sites.ARGENTINA)
@@ -342,8 +353,7 @@ PaymentPreference *paymentExclusions = [[PaymentPreference alloc] init];
 
 	[self.pref setSiteId:@“MLA”];
 ```
-
-----------
+]]] 
 
 ## Preferencia de Flujo
 
@@ -353,7 +363,8 @@ En la clase FlowPreference podrás configurar, tanto si deseas mostrar una panta
 
 Para incorporar en el Checkout las opciones configuradas en la clase FlowPreference deberás agregar una instancia de la misma en el inicio del Checkout, como se muestra en el siguiente código:
 
-```java
+[[[
+```android
 	FlowPreference flowPreference = new FlowPreference.Builder()
                 .disableReviewAndConfirmScreen()
                 .disableDiscount()
@@ -391,4 +402,6 @@ Para incorporar en el Checkout las opciones configuradas en la clase FlowPrefere
     [self.mpCheckout start];
 	}
 ```
+]]]
+
 Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.

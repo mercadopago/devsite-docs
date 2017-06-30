@@ -1,6 +1,8 @@
 # Cómo integrar Marketplace en el Checkout Web
 
-> Pre-requisitos:
+> WARNING
+> 
+> Pre-requisitos
 > 
 > * Tener implementado [Checkout](../../payments/web-checkout/introduction.es.md).
 
@@ -31,7 +33,11 @@ Recibirás el código de autorización en la url que especificaste:
    
 Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene un tiempo de validez de 10 minutos.
 
-> _**Consejo**_: puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su e-mail, el ID de usuario en tu sistema o cualquier otra referencia útil.
+> WARNING
+> 
+> Consejo
+>
+> Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su e-mail, el ID de usuario en tu sistema o cualquier otra referencia útil.
 
 
 ### Crea las credenciales de tus vendedores
@@ -74,7 +80,11 @@ Response:
 
 En la respuesta, además del Access Token del vendedor que se ha vinculado, obtienes el Refresh Token que debes utilizar para renovar periódicamente sus credenciales.
 
-> _**Nota**_: Las credenciales tienen un **tiempo de validez de 6 meses**.
+> NOTE
+>
+> Nota
+>
+> Las credenciales tienen un **tiempo de validez de 6 meses**.
 
 
 ### Renueva las credenciales de tus vendedores
@@ -155,4 +165,3 @@ Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
 Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](../../account/refunds-and-cancellations.es.md).
-

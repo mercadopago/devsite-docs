@@ -1,21 +1,31 @@
-# Webhooks
+# Notificaciones Webhooks
 
-Un **webhook** es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` al ocurrir un determinado evento.
+> WARNING
+>
+> Pre-requisitos
+>
+> * Tener implementado [API](../payments/api/introduction.es.md).
 
-Mercado Pago usa **webhooks** para comunicarte los eventos que ocurren en relación a tu aplicación. Por el momento notificamos eventos referidos a tus cobros o los de los usuarios que posees conectados; autorización o desautorización de tus usuarios a tu aplicación, y eventos referidos a suscripciones.
+Un **webhook** es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
-## ¿Cómo funciona?
+Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com/mla/account/webhooks).
 
-1. Recibe una notificación POST con la información del evento, y responde con un HTTP Status 200 ó 201.
-2. Solicita la información del recurso notificado y recibe los datos.
-
-Para recibir las notificaciones de los eventos en tu plataforma, debes configurar previamente una URL a la cual Mercado Pago tenga acceso.
-
-[Configura la URL para recibir las notificaciones](https://www.mercadopago.com/mla/account/webhooks)
 
 ## Eventos
 
-Siempre que suceda un evento relacionado a alguno de los recursos mencionados, te enviaremos una notificación en formato `json` usando `HTTP POST` a la URL que especificaste.
+Siempre que suceda un evento, te enviaremos una notificación en formato `json` usando `HTTP POST` a la URL que especificaste.
+
+Notificaremos los siguientes eventos:
+
+| Tipo de notificación |           Acción           |         Descripción          |
+| :------------------- | :------------------------- | :--------------------------- |
+| `payment`            | `payment.created`          | Creación de un pago          |
+| `payment`            | `payment.updated`          | Actualización de un pago     |
+| `mp-connect`         | `application.deauthorized` | Desvinculación de una cuenta |
+| `mp-connect`         | `application.authorized`   | Vinculación de una cuenta    |
+| `plan`               | `application.authorized`   | Vinculación de una cuenta    |
+| `subscription`       | `application.authorized`   | Vinculación de una cuenta    |
+| `invoice`            | `application.authorized`   | Vinculación de una cuenta    |
 
 Si la aplicación no está disponible o demora en responder, Mercado Pago reintentará la notificación mediante el siguiente esquema:
 
@@ -33,7 +43,9 @@ La notificación enviada tiene el siguiente formato:
     "live_mode": true,
     "type": "payment",
     "date_created": "2015-03-25T10:04:58.396-04:00",
+    "application_id": 123123123,
     "user_id": 44444,
+    "version": 1,
     "api_version": "v1",
     "action": "payment.created",
     "data": {
@@ -42,9 +54,8 @@ La notificación enviada tiene el siguiente formato:
 }
 ```
 
-Esto indica que se creó el pago **999999999** para el usuario **44444** en modo productivo con la versión V1 de la API. Dicho evento ocurrió en **2015-03-25T10:04:58.396-04:00**.
+Esto indica que se creó el pago **999999999** para el usuario **44444** en **modo productivo** con la versión V1 de la API. Dicho evento ocurrió en la fecha **2016-03-25T10:04:58.396-04:00**.
 
-Cuando uses [Marketplace](), el atributo `user_id` identifica al usuario en el nombre del cual se realizó el evento y por lo tanto la notificación. Esto te permitirá identificar qué `access_token` utilizar para recuperar el resto de los datos consultando la API correspondiente.
 
 ## ¿Qué debo hacer al recibir una notificación?
 
@@ -56,19 +67,17 @@ Luego de esto, puedes obtener la información completa del recurso notificado ac
 
 Tipo         | URL                                                | Documentación
 ------------ | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access_token=[ACCESS_TOKEN]      | [ver documentación]()
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación]()
 marketplace  | /oauth/token?...                                   | [ver documentación]()
-plan         | /v1/plans/[ID]?access_token=[ACCESS_TOKEN]         | [ver documentación]()
-subscription | /v1/subscriptions/[ID]?access_token=[ACCESS_TOKEN] | [ver documentación]()
-invoice      | /v1/invoices/[ID]?access_token=[ACCESS_TOKEN]      | [ver documentación]()
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentación]()
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación]()
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación]()
 
-Para obtener tu access_token, revisa la documentación de [Autenticación]().
+Para obtener tu access\_token, revisa la documentación de [Autenticación]().
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.
 
-Ejemplo de recepción de notificaciones
-
-Utiliza las credenciales de tu aplicación: 
+### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
 
 ```php
  <?php

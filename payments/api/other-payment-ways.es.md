@@ -105,7 +105,11 @@ Recibirás una respuesta con un `status` **pending** hasta que el comprador real
 
 En el campo `external_resource_url` tienes una url que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el link para acceda.
 
-> _**Nota**_: Tu comprador tiene entre **3** a **5** días para pagar dependiendo del medio de pago. Luego de estas fechas **debes** cancelarlo.
+> NOTE
+>
+> Nota
+>
+> Tu comprador tiene entre **3** a **5** días para pagar dependiendo del medio de pago. Luego de estas fechas **debes** cancelarlo.
 
 ## Cancelar un pago
 
@@ -135,7 +139,12 @@ Para más información puedes ver el artículo sobre [devoluciones](#).
 
 Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes el **RUT**, **tipo de persona**, **dirección IP** del comprador, y la **institución financiera** que procesará el pago. 
 
-> _**Nota**_: Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
+> NOTE
+>
+> Nota
+>
+> Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
+
 > 
 > ```json
 > {
@@ -185,7 +194,11 @@ $payment = $mp->post("/v1/payments", $payment_data);
 ?>
 ```
 
-> _**Nota**_: Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas).
+> NOTE
+>
+> Nota
+>
+> Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas).
 
 La respuesta que recibirás:
 
