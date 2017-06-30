@@ -1,22 +1,22 @@
-# Creando una suscripción
+# Creando una subscripción
 
-Suscribe usuarios en cuestión de segundos de manera simple y segura utilizando el Checkout de Mercado Pago.
+Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
 
-## Crea una preferencia de suscripción
+## 1. Crea una preferencia de subscripción
 
-Una preferencia de suscripción contiene todo el detalle de información del producto o servicio que se va a pagar de forma recurrente. Por ejempo: 
+Una preferencia de subscripción contiene todo el detalle del producto o servicio que se va a pagar de forma recurrente. Por ejemplo: 
 
 1. Datos y monto de lo que se va a pagar.
-2. Frecuencia de la suscripción.
+2. Frecuencia de la subscripción.
 3. ID de referencia de tu sistema.
 
-Para crear una preferencia de suscripción debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar el objeto **MP** con tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+Para crear una preferencia de subscripción debes [instalar el SDK de Mercado Pago](/plugins) y configurar el objeto **MP** con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
 
 ```php
 <?php
-  require_once ('mercadopago.php');
-  $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+  require_once('mercadopago.php');
+  $mp = new MP("ENV_ACCESS_TOKEN");
 ?>
 ```
 
@@ -40,9 +40,12 @@ Luego, deberás agregar los atributos de tu preferencia:
   $preapproval = $mp->create_preapproval_payment($preapproval_data);
 ?>
 ```
-> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu suscripción](#añade-características-especiales-a-tu-suscripción).
+> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu subscripción](#añade-características-especiales-a-tu-subscripción).
 
-Por último, debes agregar un botón para abrir el Checkout. Utiliza la URL que encontrarás en el atributo `init_point` en la respuesta de la creación de tu preferencia.
+
+## 2. Lleva a tu comprador al checkout
+
+Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
 
 ```html
 <!DOCTYPE html>
@@ -56,13 +59,38 @@ Por último, debes agregar un botón para abrir el Checkout. Utiliza la URL que 
 </html>
 ```
 
-## Añade características especiales a tu suscripción
+## 3. Recibe información de los pagos de tus subscripciones
 
-Revisa el [API Doc de Preapproval]() para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear una suscripcin. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Recibirás notificaciones en forma automática para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+
+Mercado Pago realizará su mayor esfuerzo para lograr que tus subscripciones resulten pagas, sin requerir acción alguna de tu parte. 
+
+En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago. Frente a este estado puedes pausar o cancelar la subscripción.
+
+Si la subscripción se encuentra activa se intentará cobrar en el próximo periodo.
+
+Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+
+Visita la sección [Notificaciones](../../notifications/ipn.es.md) para más información.
+
+
+## 4. Prueba tu integración
+
+Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
+
+Para ello debes usar usuarios y tarjetas de prueba.
+
+Visita la sección [Probando](./testing.es.md) para más información.
+
+## Añade características especiales a tu subscripción
+
+Revisa el [API Doc de Preapproval](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. 
+
+A continuación te mostramos las características más relevantes que puedes especificar al momento de crear una subscripción. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
 ### Ofrece un período gratuito de prueba
 
-¿Quieres ofrecer un mes gratis de tu producto, antes de comenzar a cobrarle a tu usuario? Agrega lo siguiente:
+Puedes ofrecer un periodo de prueba a tus clientes por una frecuencia determinada agregando la fecha de comienzo:
 
 ```json
 {
@@ -76,9 +104,9 @@ Revisa el [API Doc de Preapproval]() para conocer todas las configuraciones que 
 }
 ```
 
-### Limita la cantidad de cuotas de la suscripción
+### Limita la cantidad de cuotas de la subscripción
 
-Puedes indicar que las suscripciones sólo durarán un período determinado de tiempo:
+Puedes indicar que las subscripciones sólo durarán un período determinado de tiempo:
 
 ```json
 {
@@ -91,19 +119,3 @@ Puedes indicar que las suscripciones sólo durarán un período determinado de t
   ...
 }
 ```
-
-## Consideraciones y sugerencias
-
-Mercado Pago realizará su mejor esfuerzo posible para lograr que tus suscripciones resulten pagas, sin requerir acción alguna de tu parte. En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago y se prosiga a agendar el próximo.
-
-Cada pago rechazado te será notificado mediante [Notificaciones](). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
-
-## Próximos pasos
-
-### Activa notificaciones de pagos
-
-Puedes recibir notificaciones cada vez que se cree un nuevo pago o se modifique uno ya existente. Esto te permitirá conocer el estado del pago, administrar tu stock y mantener tu sistema sincronizado. Visita la sección [Notificaciones](#).
-
-### Prueba tu integración
-
-Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello te ofrecemos usuario y tarjetas de prueba. Visita la sección [Probando](#).

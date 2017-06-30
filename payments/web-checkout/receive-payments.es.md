@@ -130,7 +130,7 @@ El vencimiento de estos **no es automático**, por lo cuál es necesario que eje
 
 Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba.
+Para ello debes usar usuarios y tarjetas de prueba.
 
 Visita la sección [Probando](./testing.es.md) para más información.
 
