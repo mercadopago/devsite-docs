@@ -1,4 +1,4 @@
-# Recibir un pago
+# Recibiendo Pagos
 
 Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
 
@@ -7,10 +7,10 @@ Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
 
 Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
 
-1. Descripción y monto.
-2. Información de tu comprador (Email, nombre, dirección, etc).
-3. Medios de pago que aceptas.
-4. ID de referencia de tu sistema.
+- Descripción y monto.
+- Información de tu comprador (Email, nombre, dirección, etc).
+- Medios de pago que aceptas.
+- ID de referencia de tu sistema.
 
 Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
@@ -23,25 +23,26 @@ Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https
 Luego, deberás agregar los atributos de tu preferencia de pago:
 
 ```php
-  <?php
-    $preference_data = array(
-    	"items" => array(
-    		array(
-    			"title" => "Multicolor kite",
-    			"quantity" => 1,
-    			"currency_id" => "ARS",
-    			"unit_price" => 10.00,
-    			"description" => "",
-    			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
-    		)
-    	),
-    	"payer" => array(
-    		"email" => "usuario@mail.com"
-    	)
-    );
 
-    $preference = $mp->create_preference($preference_data);
-  ?>
+<?php
+
+  $preference = new MercadoPago\Preference();
+
+  $item = new MercadoPago\Item();
+  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+  $item->quantity = 1;
+  $item->currency_id = "ARS";
+  $item->unit_price = [FAKER][COMMERCE][PRICE];
+
+  $payer = new MercadoPago\Payer();
+  $payer->email="[FAKER][INTERNET][FREE_EMAIL]";
+
+  $preference->items = array($item);
+  $preference->payer = $payer;
+  
+  $preference->save();
+
+?>
 ```
 
 ### Contenido de la preferencia

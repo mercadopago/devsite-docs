@@ -1,6 +1,6 @@
-# Recibir un pago
+# Recibiendo Pagos
 
-Desde tu cuenta de Mercado Pago, tienes la opción de generar un link que le puedes enviar a tu comprador para que pueda efectuar el pago. No necesitas saber de programación.   
+Desde tu cuenta de Mercado Pago, [tienes la opción de generar un link](https://www.mercadopago.com.ar/tools/create) que le puedes enviar a tu comprador para que pueda efectuar el pago. No necesitas saber de programación.  
 
 Te guiaremos para que puedas configurar:
 
@@ -17,6 +17,6 @@ Ingresando en este link, tus compradores serán redirigidos al checkout donde ve
 
 Además te brindaremos un **Script HTML** que puedes incluir en tu sitio web y un **Código QR**  para que compartas con tus clientes.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout](../payments/web-checkout/introduction.es.md)** o **[API](../payments/api/introduction.es.md)**.
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout](cd /guides/payments/web-checkout/introduction.es.md)** o **[API](/guides/payments/api/introduction.es.md)**.
 
 Puedes revisar tambien: [Crear herramienta de cobro](https://www.mercadopago.com.ar/tools/create)

@@ -18,16 +18,11 @@ Te damos todo resuelto: Recibe el pago del producto y del envío en la misma ope
 Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
 
 
-## Pre-requisitos
-?
-
-
 ## Cómo funciona
 
 La siguiente documentación te permitirá ofrecer en el checkout de Mercado Pago una opción de envío y que el cliente pague el costo del envío junto con 
 
 CARRIERS
-
 
 Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
 

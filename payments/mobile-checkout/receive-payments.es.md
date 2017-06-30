@@ -19,9 +19,9 @@ Esta entidad es la preferencia de pago y contiene:
 4. ID de referencia de tu sistema.
 
 ```php 
-===
-Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago/sdk-php) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
-===
+  ===
+  Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago/sdk-php) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+  ===
   <?php  
     MercadoPago\SDK::configure(['ACCESS_TOKEN' => ENV_ACCESS_TOKEN]); 
   ?>
