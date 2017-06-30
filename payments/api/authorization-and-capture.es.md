@@ -7,8 +7,10 @@
 
 # Autorización y captura
 
-> Pre-requisitos:
-> 
+> WARNING
+>
+> Pre-requisitos
+>
 > * Tener implementado el [procesamiento de pagos con tarjeta](receiving-payment-by-card.es.md).
 > 
 > Disponible solamente en:
@@ -64,7 +66,9 @@ La respuesta indica que el pago se encuentra **autorizado** y **pendiente de cap
 
 Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta que no sean capturados, por lo cuál recomendamos realizar la captura en el menor tiempo posible.
 
-> **Consideraciones**:   
+> WARNING
+> 
+> Consideraciones
 > 
 > * La reserva tendrá una validez de [AR:7][BR:5][PE:22] días. Si no la capturas hasta ese momento será cancelada.
 > * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
@@ -108,7 +112,11 @@ El request actualizará el status a `approved` con un `status_detail=accredited`
 
 Siempre que no especifiques un monto se capturará el monto total reservado.
 
-> _**Nota**_: Si la reserva había sido exitosa, la operación de captura siempre será exitosa también.
+> NOTE
+>
+> Nota
+>
+> Si la reserva había sido exitosa, la operación de captura siempre será exitosa también.
 
 ### Capturar un pago por un monto menor al reservado
 
@@ -147,7 +155,11 @@ Respuesta:
 }
 ```
 
-> _**Nota**_: No es posible capturar un monto mayor al reservado, para eso es necesario realizar cancelar la reserva y generar una nueva.
+> NOTE
+>
+> Nota
+>
+> No es posible capturar un monto mayor al reservado, para eso es necesario realizar cancelar la reserva y generar una nueva.
 
 
 ## Cancelar una reserva
@@ -182,5 +194,8 @@ Respuesta:
   ...
 }
 ```
-
-> _**Nota**_: Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](webhooks.es.md) del cambio de estado del pago.
+> NOTE
+>
+> Nota
+>
+> Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](webhooks.es.md) del cambio de estado del pago.

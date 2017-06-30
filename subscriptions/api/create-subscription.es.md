@@ -4,7 +4,7 @@ Subscribe a tus clientes para recibir de forma periódica y automatizada.
 
 > WARNING
 > 
-> Pre-requisitos:
+> Pre-requisitos
 > 
 > * Tener implementada la [captura de datos de tarjeta](../../payments/receiving-payment-by-card.es.md).
 > * Almacenar [clientes y tarjetas](../../payments/customers-and-cards.es.md).
