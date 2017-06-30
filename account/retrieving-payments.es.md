@@ -69,7 +69,7 @@ En este ejemplo estamos realizando una búsqueda por el campo `external_referenc
 * `operation_type`: El tipo de operación, puede ser `regular_payment`, `pos_payment`, `recurring_payment`, etc.
 * `processing_mode`: Si es un pago de tipo Gateway o Agregador (ejemplo: `gateway`).
 
-Los resultados devolverán la cantidad total de resultados encontrados que luego podrá ser usado para paginarlos:
+Se devolverá la cantidad total de resultados encontrados, que luego podrá ser utilizada para paginarlos:
 
 ```json
 {
@@ -91,7 +91,7 @@ En el caso en que tengas muchos resultados deberás paginar los pagos utilizando
 
 | Atributo |           Descripción           |         Ejemplo          |
 | :------------------- | :------------------------- | :--------------------------- |
-| `limit`            | Cantidad de registros que se requieren (valor máximo = 50). Si no se define, devuelve hasta 30 registros encontrados.          | `limit=50`          |
+| `limit`            | Cantidad de registros devueltos (valor máximo = 50). Si no se define, devuelve hasta 30 registros encontrados.          | `limit=50`          |
 | `offset`            | Posición a partir de la cual se desea que devuelvan los registros. Por defecto el valor es 0 (máximo permitido: 10000).          | `offset=100`     |
 | `sort`         | Establece un criterio a partir del cual se ordenan los resultados. | `sort=external_reference` |
 | `criteria`         | Orden de los datos. Puede ser asc (ascendente) o desc (descendente).   | `criteria=asc`   |
