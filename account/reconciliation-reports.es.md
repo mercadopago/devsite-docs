@@ -2,22 +2,28 @@
 
 Mercado Pago te brinda reportes para conciliar tus operaciones con tus sistemas internos. Tenemos dos reportes para distintas necesidades.
 
-
 **Reporte de dinero en cuenta (Settlement Report)**
 
-Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron tu balance dentro del período solicitado.
+Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron el balance de tu cuenta de Mercado Pago para un período específico.
 
 **Reporte de dinero disponible (Bank Report)**
 
-Contiene todos los pagos liberados dentro del período solicitado. Sirve para conciliar tu dinero disponible en el sitio. Este reporte también puede usarse, por ejemplo, para ver qué pagos forman parte de un retiro que realizaste a tu cuenta bancaria.
+Contiene el detalle de los pagos que fueron liberados y están listos para ser retirados a cuenta bancarias.
+Puede solicitarse para un período especifico o cada vez que se ejecuta un retiro.
 
-Ambos reportes pueden generarse en forma manual o automática.
+Este reporte generalmente se utiliza para conciliar un retiro a cuenta bancaria. De esta forma, por cada retiro realizado se generará un *Bank Report* con las transacciones que lo componen.
 
 ## ¿Cómo se usan?
 
-Ejemplo de generación manual para el reporte de dinero disponible.
+Ambos reportes pueden generarse en forma manual o automática.
 
-Realiza el POST a la API de la siguiente manera:
+### Generación manual
+
+Ambos reportes pueden generarse de forma manual (indicando un período especifico) o de forma programada.
+
+#### Reporte de dinero disponible
+
+Realiza el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 ```php
 <?php
