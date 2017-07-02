@@ -1,6 +1,6 @@
 # Creando una subscripción
 
-Subscribe a tus clientes para recibir de forma periódica y automatizada.
+Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
 > WARNING
 > 
@@ -61,13 +61,13 @@ Para poder crear una subscripción, debes tener un `Customer` con una tarjeta ad
 
 Revisa el artículo de [Clientes y Tarjetas](../../payments/api/customers-and-cards.es.md) para saber como hacerlo.
 
-Sólo suscribe `customers` con tarjetas verificadas
+Sólo subscribe `customers` con tarjetas verificadas
 
 Algunas opciones para realizarlo son:
 
 1. [Realizar una autorización](../../payments/api/authorization-and-capture.es.md) por un monto bajo a la tarjeta y cancelarla luego, para confirmar que la tarjeta es válida.
 
-2. Utilizar el atributo `setup_fee`, que realizará un cobro extra al intentar suscribir a tu usuario; y sólo si dicho cobro es exitoso, se procede con el alta de la subscripción.
+2. Utilizar el atributo `setup_fee`, que realizará un cobro extra al intentar subscribir a tu usuario; y sólo si dicho cobro es exitoso, se procede con el alta de la subscripción.
 
 
 ## 3. Subscribe un customer a un plan
@@ -119,7 +119,7 @@ HTTP status code: 201 Created
 }
 ```
 
-**Importante:** los cobros se realizan por adelantado. En este caso el primer cobro se realizará tan pronto suscribas a un customer, y no a mes vencido.
+**Importante:** los cobros se realizan por adelantado. En este caso el primer cobro se realizará tan pronto subscribas a un customer, y no a mes vencido.
 
 Llegada la fecha de cobro, se creará un objeto `invoice`, el cual contendra el estado del cobro de la subscripción para ese periodo. Podrás ver los intentos de cobro en el objeto `payments` y la próxima fecha a cobrar en `next_payment_attempt`.
 
@@ -127,7 +127,7 @@ Llegada la fecha de cobro, se creará un objeto `invoice`, el cual contendra el 
 
 Recibirás notificaciones ante creación o modificación de un plan, subscripción, invoice o pago.
 
-Mercado Pago realizará su mejor esfuerzo para lograr que tus `invoices` resulten pagos, sin requerir acción alguna de tu parte. 
+Mercado Pago realizará su mayor esfuerzo para lograr que tus `invoices` resulten pagos, sin requerir acción alguna de tu parte. 
 
 Solo deberías entregar tu producto o servicio, cuando el `invoice` para ese periodo tenga estado `paid`.
 
@@ -135,9 +135,9 @@ En caso de no conseguir una aprobación de pago para la fecha de cobro estipulad
 
 Independientemente del estado del invoice actual, si la subscripción se encuentra activa se creará un invoice para el próximo periodo.
 
-Cada pago rechazado te será notificado mediante [Webhooks](#). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, [actualice los datos de su tarjeta de crédito]() o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+Cada pago rechazado te será notificado mediante [Webhooks](../../notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, [actualice los datos de su tarjeta de crédito](#) o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
-Visita la sección [Webhooks](#) para más información.
+Visita la sección [Webhooks](../../notifications/webhooks.es.md) para más información.
 
 
 ## Añade características especiales a tu plan
@@ -197,9 +197,9 @@ Puedes ofrecer un periodo de prueba a tus clientes por una frecuencia determinad
 }
 ```
 
-### Cobra un cargo adicional al suscribir usuarios
+### Cobra un cargo adicional al subscribir usuarios
 
-En muchos casos es útil realizar un cobro extra al momento de suscribir a tu usuario, por ejemplo para el costo de instalación de un servicio.
+En muchos casos es útil realizar un cobro extra al momento de subscribir a tu usuario, por ejemplo para el costo de instalación de un servicio.
 
 Debes especificar el monto a cobrar al crear el plan:
 

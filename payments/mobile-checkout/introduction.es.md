@@ -8,7 +8,10 @@ Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu 
 
 Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones. 
 
-Integrar el checkout es muy fácil:
+![prototipo](https://user-images.githubusercontent.com/8038535/27752683-aae6ee44-5db8-11e7-9c18-cfd56c853c0a.png)
+
+
+#### Integrar el checkout es muy fácil:
 
 1. Incluye el SDK en tu proyecto.
 1. Coloca tus credenciales y crea la preferencia de pagos.
