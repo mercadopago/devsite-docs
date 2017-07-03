@@ -306,7 +306,7 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 
 El SDK devolverá siempre un resultado del pago.
 
-Si hubo algún error insalvable o el usuario abandonó el flujo, devolverá una excepción para que puedas entender qué pasó.
+Si hubo algún error insalvable o el usuario abandonó el flujo, devolverá un objeto que representa el error para que puedas entender qué pasó.
 
 Estos son los atributos más importantes del pago:
 
@@ -325,21 +325,23 @@ Podrás obtener la respuesta con el siguiente código:
 
 ```android
 @Override
-protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-if (requestCode == MercadoPagoCheckout.CHECKOUT_REQUEST_CODE) {
-if (resultCode == MercadoPagoCheckout.PAYMENT_RESULT_CODE) {
-Payment payment = JsonUtil.getInstance().fromJson(data.getStringExtra("payment"), Payment.class);
-((TextView) findViewById(R.id.mp_results)).setText("Resultado del pago: " + payment.getStatus());
-//Done!
-} else if (resultCode == RESULT_CANCELED) {
-if (data != null && data.getStringExtra("mercadoPagoError") != null) {
-//Resolve error in checkout
-} else {
-//Resolve canceled checkout
-}
-}
-}
-}
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == MercadoPagoCheckout.CHECKOUT_REQUEST_CODE) {
+            if (resultCode == MercadoPagoCheckout.PAYMENT_RESULT_CODE) {
+                Payment payment = JsonUtil.getInstance().fromJson(data.getStringExtra("payment"), Payment.class);
+                ((TextView) findViewById(R.id.mp_results)).setText("Resultado del pago: " + payment.getStatus());
+                //Done!
+            } else if (resultCode == RESULT_CANCELED) {
+                if (data != null && data.getStringExtra("mercadoPagoError") != null) {
+                    MercadoPagoError mercadoPagoError = JsonUtil.getInstance().fromJson(data.getStringExtra("mercadoPagoError"), MercadoPagoError.class);
+                    ((TextView) findViewById(R.id.mp_results)).setText("Error: " +  mercadoPagoError.getMessage());
+                    //Resolve error in checkout
+                } else {
+                    //Resolve canceled checkout
+                }
+            }
+        }
+    }
 ```      
 ```swift
 MercadoPagoCheckout.setPaymentCallback { (payment) in
