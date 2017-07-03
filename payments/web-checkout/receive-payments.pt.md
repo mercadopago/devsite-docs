@@ -18,11 +18,13 @@ Para criar uma preferência de pagamento deve [instalar o SDK do Mercado Pago](h
 <?php
 require_once ('mercadopago.php');
 $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+?>
 ```
 
 Logo, deverá adicionar os atributos de sua preferência ao pagamento:
 
 ```php
+<?php
 $preference_data = array(
 	"items" => array(
 		array(
@@ -53,7 +55,7 @@ Quanto mais informações nos enviar, melhor será a taxa de aprovação dos pag
 
 ```json
 {
-   ...,
+   ...
 	"payer": {
 		"name": "user-name",
 		"surname": "user-surname",
