@@ -8,6 +8,11 @@
 
 Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio pago del usuario y la comunicación del resultado de pago.
 
+#### La integración consta de dos etapas:
+- Integración en tu servidor: en esta etapa obtendras la información del pago.
+- Integración en tu aplicación: en esta etapa configurarás el componente visual.
+
+![imagen](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
 
 ## Configura tu servidor
 
@@ -34,18 +39,18 @@ Luego, deberás agregar los atributos de tu preferencia de pago:
 ```php
   <?php
     $preference_data = array(
-    	"items" => array(
-    		array(
-    			"title" => "[FAKER][COMMERCE][PRODUCT_NAME]",
-    			"quantity" => 1,
-    			"currency_id" => "ARS",
-    			"unit_price" => [FAKER][COMMERCE][PRICE],
-    			"description" => ""
-    		)
-    	),
-    	"payer" => array(
-    		"email" => "[FAKER][INTERNET][FREE_EMAIL]"
-    	)
+      "items" => array(
+        array(
+          "title" => "[FAKER][COMMERCE][PRODUCT_NAME]",
+          "quantity" => 1,
+          "currency_id" => "ARS",
+          "unit_price" => [FAKER][COMMERCE][PRICE],
+          "description" => ""
+        )
+      ),
+      "payer" => array(
+        "email" => "[FAKER][INTERNET][FREE_EMAIL]"
+      )
     );
 
     $preference = $mp->create_preference($preference_data);
@@ -63,26 +68,26 @@ Es requerido el envío del `email` de tu comprador. Si nos envías datos como ti
 ```json
 {
    ...,
-	"payer": {
-		"name": "[FAKER][NAME][FIRST_NAME]",
-		"surname": "[FAKER][NAME][LAST_NAME]",
-		"email": "[FAKER][INTERNET][FREE_EMAIL]",
-		"date_created": "2015-06-02T12:58:41.425-04:00",
-		"phone": {
-			"area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
-			"number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
-		},
-		"identification": {
-			"type": "DNI", // Available ID types at https://api.mercadopago.com/v1/identification_types
-			"number": "123456789"
-		},
-		"address": {
-			"street_name": "[FAKER][ADDRESS][STREET_NAME]",
-			"street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
-			"zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
-		} 
-	},
-	...
+  "payer": {
+    "name": "[FAKER][NAME][FIRST_NAME]",
+    "surname": "[FAKER][NAME][LAST_NAME]",
+    "email": "[FAKER][INTERNET][FREE_EMAIL]",
+    "date_created": "2015-06-02T12:58:41.425-04:00",
+    "phone": {
+      "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
+      "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
+    },
+    "identification": {
+      "type": "DNI", // Available ID types at https://api.mercadopago.com/v1/identification_types
+      "number": "123456789"
+    },
+    "address": {
+      "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+      "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
+      "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
+    } 
+  },
+  ...
 }
 ```
 
@@ -159,9 +164,9 @@ ServicePreference * servicePreference = [[ServicePreference alloc] init];
 
 ]]]
 
-### Crea un botón de pago
+### 2. Crea un botón de pago
 
-A modo de ejemplo proponemos que inicies el flujo de MercadoPago desde un botón.
+A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botón.
 
 [[[
 
@@ -257,9 +262,9 @@ forControlEvents:UIControlEventTouchUpInside];
 
 ]]]
 
-### 2. ¡Inicia nuestro Checkout!
+### 3. ¡Inicia nuestro Checkout!
 
-Una vez creada la Preferencia de Pago estás en condiciones de iniciar nuestro Checkout con el siguiente código:
+Una vez creada la preferencia de pago y definido un evento a partir del cual comenzar el flujo de pago, estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
 [[[
 
@@ -297,7 +302,7 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 ]]]
 
 
-### 3. Obtén la respuesta
+### 4. Obtén la respuesta
 
 El SDK devolverá siempre un resultado del pago.
 
@@ -408,7 +413,15 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 
 El SDK permite setear el color en el formato hexadecimal,es decir por ejemplo **setBaseColor("#13123");**.
 
-### Prueba la integración
+## Activa las notificaciones de pagos
+
+Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+
+Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
+
+Visita la sección [Notificaciones](../../notifications/ipn.es.md) para conocer más sobre esto.
+
+## Prueba la integración
 
 Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
