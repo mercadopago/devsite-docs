@@ -163,33 +163,42 @@ Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguien
 
 ### Uso programado
 
-### Configuración
+Otra forma de utilizar los reportes de conciliación es haciendo la generacin de forma automática.
 
-Genera una nueva configuración de reporte de dinero disponible:
+### Reporte de dinero disponible (Bank Report)
 
-	POST /v1/account/bank_report/config
-
-Actualiza una configuración de reporte de dinero existente:
-
-	PUT /v1/account/bank_report/config
-
-Devuelve la configuración del reporte de dinero existente:
-
-	GET /v1/account/bank_report/config
-
-### Programa la generación automática
+##### 1. Generación:
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `scheduled` en la configuración a `true`:
 
 	POST /v1/account/bank_report/schedule
-	
+
+
 Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
 
 	DELETE /v1/account/bank_report/schedule
 
-### Descarga
+### 2. Descarga
 
 Realiza la descarga del archivo especificado:
 
 	GET /v1/account/bank_report/:file_name
+
+### Reporte de dinero en cuenta (Settlement Report)
+
+##### 1. Generación:
+
+Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `scheduled` en la configuración a `true`:
+
+	POST /v1/account/settlement_report/schedule
+	
+Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
+
+	DELETE /v1/account/settlement_report/schedule
+
+### 2. Descarga
+
+Realiza la descarga del archivo especificado:
+
+	GET /v1/account/settlement_report/:file_name
 
