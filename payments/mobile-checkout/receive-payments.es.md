@@ -63,7 +63,7 @@ Mientras más información nos envíes, mejor será la aprobación de los pagos 
 
 #### Payer
 
-Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, no se le pedirá durante el proceso de pago.
+Es requerido el envío del `email` de tu comprador.
 
 ```json
 {
