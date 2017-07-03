@@ -61,7 +61,7 @@ Para poder crear una subscripción, debes tener un `Customer` con una tarjeta ad
 
 Revisa el artículo de [Clientes y Tarjetas](../../payments/api/customers-and-cards.es.md) para saber como hacerlo.
 
-Sólo subscribe `customers` con tarjetas verificadas
+Sólo subscribe `customers` con tarjetas verificadas.
 
 Algunas opciones para realizarlo son:
 

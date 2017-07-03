@@ -2,12 +2,6 @@
 
 Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura, manteniendo el control de la experiencia de compra que le brindas a tus usuarios.
 
-Esto se divide en tres pasos principales:
-
-* Captura de los datos de tarjeta
-* Obtención del tipo de tarjeta
-* Creación del pago
-
 
 ## Captura los datos de tarjeta
 
@@ -219,7 +213,7 @@ Puedes descargar el ejemplo completo desde [aquí](#).
 
 Debes obtener de los parametros enviados en el `POST` el id del `card_token` para realizar un pago único.
 
-Los `card_token` tienen una validez de *7 días* y son de único uso.
+Los `card_token` tienen **una validez de 7 días** y son de único uso.
 
 Para realizar el pago solamente debes realizar un API call:
 
@@ -245,13 +239,33 @@ Para realizar el pago solamente debes realizar un API call:
 
 > Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
 
-Eso es todo, la respuesta tendrá el estado del pago (approved, rejected o in_process). 
+Respuesta:
 
-> Puedes ver más información sobre el [manejo de respuestas](#manejo-de-respuestas). 
+```json
+{
+    "status": "approved",
+    "status_detail": "accredited",
+    "id": 3055677,
+    "date_approved": "2017-02-23T00:01:10.000-04:00",
+    "payer": {
+        ...
+    },
+    "payment_method_id": "master",
+    "payment_type_id": "credit_card",
+    "refunds": [],
+    ...
+}
+```
+
+Eso es todo, la respuesta tendrá el estado del pago (`approved`, `rejected` o `in_process`). 
+
+> NOTE
+> 
+> Puedes ver más información sobre el [manejo de respuestas](#manejo-de-respuestas).
 
 ## Recibir un pago en cuotas
 
-Para hacer uso de las [promociones](https://www.mercadopago.com/mla/credit_card_promos.htm) que ofrece Mercado Pago, es importante que se envíe el campo `issuer_id` e `installments` al momento de crear un pago.
+Para hacer uso de las [promociones](https://www.mercadopago.com.ar/promociones) que ofrece Mercado Pago, es importante que se envíe el campo `issuer_id` e `installments` al momento de crear un pago.
 
 El campo `installments` corresponde a la cantidad de cuotas que el comprador elije. El `issuer_id` es el banco emisor de la tarjeta.
 
@@ -296,7 +310,7 @@ La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recome
 >
 > Nota
 >
-> Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
+> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](../../localization/considerations-argentina.es.md).
 
 
 Para crear el pago es importante enviar los datos indicados anteriormente:
