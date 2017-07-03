@@ -1,4 +1,4 @@
-# Recibiendo Pagos
+# Recibir Pagos
 
 > WARNING
 > 
@@ -97,7 +97,7 @@ Es requerido el envío del `email` de tu comprador.
 
 En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (`preferenceMap`). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
 
-CustomServer se encargará de transformar la respuesta de tu servicio (la misma que los servicios de Mercado Pago) en un objeto **CheckoutPreference**, que cuyo ID es el punto de entrada a nuestro checkout.
+CustomServer se encargará de transformar la respuesta de tu servicio (que debe tener la misma estructura que la de Mercado Pago) en un objeto **CheckoutPreference**, cuyo ID es el punto de entrada a nuestro checkout.
 
 Crea la preferencia en tu servidor desde tu aplicación con el siguiente código:
 
@@ -238,7 +238,7 @@ for: .touchUpInside)
 1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
 2.  Inserta un botón en el .xib correspondiente.
 3. Agrega un campo de texto (en nuestro caso lo llamamos paymentResult) para mostrar el resultado del pago.
-4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
+4. Pega el siguiente código de ejemplo en tu clase **MainViewController.c**.
 5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
 ===
 
@@ -262,7 +262,7 @@ forControlEvents:UIControlEventTouchUpInside];
 
 ]]]
 
-### 3. ¡Inicia nuestro Checkout!
+### 3. ¡Inicia el Checkout!
 
 Una vez creada la preferencia de pago y definido un evento a partir del cual comenzar el flujo de pago, estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
@@ -278,7 +278,7 @@ new MercadoPagoCheckout.Builder()
 ```
 ```swift
 ===
-El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
+El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
@@ -291,7 +291,7 @@ checkout.start()
 ```
 ```Objective-c
 ===
-El flujo de nuestro checkout esta basado en **NavigationController**, para iniciar el mismo necesitamos hacerlo sobre un navigation controller. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear un nuevo NavigationController, iniciar el Checkout con él y luego presentarlo.
+El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
 self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
@@ -413,7 +413,7 @@ self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KE
 
 ]]]
 
-El SDK permite setear el color en el formato hexadecimal,es decir por ejemplo **setBaseColor("#13123");**.
+El SDK permite setear el color en el formato hexadecimal, es decir por ejemplo **setBaseColor("#060d72");**.
 
 ## Activa las notificaciones de pagos
 
@@ -425,7 +425,7 @@ Visita la sección [Notificaciones](../../notifications/ipn.es.md) para conocer 
 
 ## Prueba la integración
 
-Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
+Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
 Para ello debes usar usuario y tarjetas de prueba.
 
@@ -433,4 +433,4 @@ Visita la sección [Probando](./testing.es.md) para más información.
 
 ### Próximos pasos
 
-- Visita la sección Personalización para adecuar el flujo de pago a tus necesidades.
+- Visita la sección [Personalización](./personalization.es.md) para adecuar el flujo de pago a tus necesidades.
