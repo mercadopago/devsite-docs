@@ -1,14 +1,23 @@
-# Introducción
+# Checkout mobile
 
 Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
  
- - Pagos con tarjeta en una o más cuotas, efectivo o transferencia bancaria. 
- - Comunicación de descuentos y promociones.
+ - Pagos con tarjeta, efectivo o transferencia bancaria.
+ - **Financiación**: cuotas con la mejor financiación posible. 
+ - Descuentos y promociones.
  - Comunicación del resultado de los pagos.
 
-Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones. 
+Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones.
 
-Integrar el checkout es muy fácil:
+
+## Una experiencia, todas las plataformas 
+
+Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS. 
+
+![android ios](https://user-images.githubusercontent.com/8038535/27792540-927b6b36-5fd0-11e7-9958-e01f1783abe0.png)
+
+
+### Integrar el checkout es muy fácil:
 
 1. Incluye el SDK en tu proyecto.
 1. Coloca tus credenciales y crea la preferencia de pagos.
@@ -20,23 +29,24 @@ Integrar el checkout es muy fácil:
 [[[
 ```Android
 ===
-En el archivo **build.gradle** añade el siguiente código: 
+En el archivo **build.gradle** añade el siguiente código.
+Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto. 
 ===
     dependencies {
-       compile 'com.mercadopago:sdk:3.0.0'
+       compile 'com.mercadopago:sdk:3.1.0'
     }
 ```
-Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
 ```ios
 ===
-Si en tu proyecto utilizas **CocoaPods**, puedes añadir la dependencia en el **Podfile** del módulo donde nos integres con el siguiente código:
+Si en tu proyecto utilizas **CocoaPods**, puedes añadir la dependencia en el **Podfile** del módulo donde nos integres con el siguiente código.
+Sino puedes [descargar el SDK](https://github.com/mercadopago/px-ios/releases) y añadirlo a tu proyecto.
 ===
     source 'https://github.com/CocoaPods/Specs.git'
 	#Se necesita este parámetro por ser una SDK en swift
     use_frameworks!
     platform :ios, '8.2'
-    pod 'MercadoPagoSDK', '3.0.0'
+    pod 'MercadoPagoSDK', '3.1.0'
 ```
 ]]]
 
-Sino puedes [descargar el SDK](https://github.com/mercadopago/px-ios/releases) y añadirlo a tu proyecto.
+
