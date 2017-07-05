@@ -45,7 +45,7 @@ Sino puedes [descargar el SDK](https://github.com/mercadopago/px-ios/releases) y
 	#Se necesita este parámetro por ser una SDK en swift
     use_frameworks!
     platform :ios, '8.0'
-    pod 'MercadoPagoSDK', '3.1.0'
+    pod 'MercadoPagoSDK', '3.1.1'
 ```
 ]]]
 
