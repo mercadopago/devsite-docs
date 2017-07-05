@@ -323,5 +323,4 @@ Utiliza nuestras herramientas para hacer el seguimiento.
 Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
 
 Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante notificaciones que se envían desde los servidores de MercadoPago a los tuyos. Esto te permitirá administrar tu stock y conocer el estado de los pagos y envíos.
-
-> ver si hay ejemplo
+ 
