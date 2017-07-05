@@ -107,8 +107,8 @@ Una vez creada la ServicePreference, debes iniciar el flujo de pago de Mercado P
 	[MercadoPagoCheckout setServicePreference:servicePreference];
 
 	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-		    self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
-    [self.mpCheckout start];
+    		MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+		[checkout start];
 	}
 ```
 ]]]
@@ -398,8 +398,8 @@ Para incorporar en el Checkout las opciones configuradas en la clase FlowPrefere
     [MercadoPagoCheckout setFlowPreference:flowPreference];
 
 	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-		    self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
-    [self.mpCheckout start];
+    		MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+		[checkout start];
 	}
 ```
 ]]]
