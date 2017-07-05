@@ -14,36 +14,135 @@ Una preferencia de pago contiene toda la información del producto o servicio qu
 
 Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
+[[[
 ```php 
   <?php  
-    MercadoPago\SDK::configure(['ACCESS_TOKEN' => ENV_ACCESS_TOKEN]); 
+    require_once ('mercadopago.php');
+
+    $mp = new MP('ACCESS_TOKEN');
   ?>
 ```
+```java
+import com.mercadopago.MP;
+import org.codehaus.jettison.json.JSONObject;
+
+MP mp = new MP ("ACCESS_TOKEN");
+```
+```csharp
+using mercadopago;
+using System;xº
+using System.Collections;
+
+MP mp = new MP("ACCESS_TOKEN");
+```
+```javascript
+var MP = require ("mercadopago");
+var mp = new MP ("ACCESS_TOKEN");
+```
+```ruby
+require 'mercadopago.rb'
+$mp = MercadoPago.new('ACCESS_TOKEN')
+```
+```python
+import mercadopago
+mp = mercadopago.MP("ACCESS_TOKEN")
+```
+]]]
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
 
+[[[
 ```php
+$payment_data = array(
+	"transaction_amount" => 100,
+	"token" => "ff8080814c11e237014c1ff593b57b4d",
+	"description" => "Title of what you are paying for",
+	"installments" => 1,
+	"payment_method_id" => "visa",
+	"payer" => array (
+		"email" => "test_user_19653727@testuser.com"
+	)
+);
 
-<?php
-
-  $preference = new MercadoPago\Preference();
-
-  $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-  $item->quantity = 1;
-  $item->currency_id = "ARS";
-  $item->unit_price = [FAKER][COMMERCE][PRICE];
-
-  $payer = new MercadoPago\Payer();
-  $payer->email="[FAKER][INTERNET][FREE_EMAIL]";
-
-  $preference->items = array($item);
-  $preference->payer = $payer;
-  
-  $preference->save();
-
-?>
+$payment = $mp->post("/v1/payments", $payment_data);
 ```
+```java
+JSONObject payment = mp.post("/v1/payments", "{"+
+			"'transaction_amount': 100,"+
+			"'token': 'ff8080814c11e237014c1ff593b57b4d',"+
+			"'description': 'Title of what you are paying for',"+
+			"'installments': 1,"+
+			"'payment_method_id': 'visa',"+
+			"'payer': {"+
+				"'email': 'test_user_19653727@testuser.com'"+
+			"}"+
+		"}");
+```
+```csharp
+Hashtable payment = mp.post("/v1/payments", "{"+
+			"\"transaction_amount\": 100,"+
+			"\"token\": \"ff8080814c11e237014c1ff593b57b4d\","+
+			"\"description\": \"Title of what you are paying for\","+
+			"\"installments\": 1,"+
+			"\"payment_method_id\": \"visa\","+
+			"\"payer\": {"+
+				"\"email\": \"test_user_19653727@testuser.com\""+
+			"}"+
+		"}");
+```
+```javascript
+var doPayment = mp.post ("/v1/payments",
+	{
+		"transaction_amount": 100,
+		"token": "ff8080814c11e237014c1ff593b57b4d",
+		"description": "Title of what you are paying for",
+		"installments": 1,
+		"payment_method_id": "visa",
+		"payer": {
+			"email": "test_user_19653727@testuser.com"
+		}
+	});
+
+doPayment.then (
+	function (payment) {
+		console.log (payment);
+	},
+	function (error){
+		console.log (error);
+	});
+```
+```ruby
+paymentData = Hash[
+		"transaction_amount" => 100,
+		"token" => "ff8080814c11e237014c1ff593b57b4d",
+		"description" => "Title of what you are paying for",
+		"installments" => 1,
+		"payment_method_id" => "visa",
+		"payer" => Hash[
+			"email" => "test_user_19653727@testuser.com"
+		]
+	]
+
+payment = $mp.post("/v1/payments", paymentData);
+
+puts payment
+
+```
+```python
+payment = mp.post("/v1/payments", {
+        "transaction_amount": 100,
+        "token": "ff8080814c11e237014c1ff593b57b4d",
+        "description": "Title of what you are paying for",
+        "installments": 1,
+        "payment_method_id": "visa",
+        "payer": {
+            "email": "test_user_19653727@testuser.com"
+        }
+    });
+
+print(json.dumps(payment, indent=4))
+```
+]]]
 
 ### Contenido de la preferencia
 
