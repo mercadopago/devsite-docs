@@ -129,37 +129,28 @@ public void failure(ApiException apiException) {
 }
 ```
 ```swift
-let preferenceBody : [String : Any] = ["amount" : 10,
-"itemId" : 29334, "customerId": 207,
-"payer_email" : "customermail@test.com"]
+        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : 1]
 
-let servicePreference = ServicePreference()
-servicePreference.setCreateCheckoutPreference(baseURL: “https://api.tunombre.com“, URI: “/create_preference”, additionalInfo: preferenceBody as NSDictionary)
-MercadoPagoCheckout.setServicePreference(servicePreference)
-
-MerchantServer.createPreference(
-success: { (checkoutPreference) in
-startMercadoPagoCheckout(checkoutPreference)
-}, failure: { (error) in
-// Ups, something went wrong
-})
+        CustomServer.createCheckoutPreference(url: "https://your-base-URL.com/", uri: "your_create_preference_URI", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
+            startMercadoPagoCheckout(checkoutPreference)
+        }) { (error) in
+            // Handle error
+        }
 ```
 ```Objective-c
-NSDictionary *preferenceBody = @{
-@“amount” : @10,
-@“itemId” : @29334,
-@"customerId" : @207,
-@"payerEmail" : @"cusomermail@test.com" };
+    NSDictionary *preferenceBody = @{
+                                     @"amount" : @10,
+                                       @"itemId" : @29334,
+                                       @"customerId" : @207,
+                                       @"payerEmail" : @"cusomermail@test.com" };
 
-ServicePreference * servicePreference = [[ServicePreference alloc] init];
-[servicePreference setCreateCheckoutPreferenceWithBaseURL:@"" URI:@"" additionalInfo:preferenceBody];
-[MercadoPagoCheckout setServicePreference:servicePreference];
 
-[MerchantServer createPreferenceWithSuccess:^(CheckoutPreference * checkoutPreference) {
-[self startMercadoPagoCheckoutWithCheckoutPreference: checkoutPreference];
-} failure:^(NSError * _Nonnull) {
-// Ups, something went wrong
-}];
+    [CustomServer createCheckoutPreferenceWithUrl:@"“https://api.tunombre.com“" uri:@"/create_preference" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
+        [self startMercadoPagoCheckoutWithCheckoutPreference: checkoutPreference];
+
+    } failure:^(NSError * error) {
+        // Ups, something went wrong
+    }];
 ```
 
 ]]]
@@ -294,8 +285,8 @@ checkout.start()
 El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
-[self.mpCheckout start];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    [checkout start];
 }
 ```
 
@@ -348,8 +339,9 @@ MercadoPagoCheckout.setPaymentCallback { (payment) in
 self.payment = payment
 }
 
-MercadoPagoCheckout.setCallback { (Void) in
-// Resolved cancel checkout
+checkout.setCallbackCancel {
+   // Resolved cancel checkout
+   self.navigationController?.popToRootViewController(animated: true)
 }
 ```
 ```Objective-c
@@ -357,8 +349,9 @@ MercadoPagoCheckout.setCallback { (Void) in
 self.payment = payment
 }];
 
-[MercadoPagoCheckout setCallbackWithCallback:^{
-// Resolved cancel checkout
+[self.checkout setCallbackCancelWithCallback:^{
+	// Resolved cancel checkout
+  [self.navigationController popToRootViewControllerAnimated:YES];
 }];
 ```
 
@@ -406,8 +399,8 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 [MercadoPagoCheckout setDecorationPreference:decorationPreference];
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
-[self.mpCheckout start];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    [checkout start];
 }
 ```
 
