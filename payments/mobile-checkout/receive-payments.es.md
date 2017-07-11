@@ -161,7 +161,7 @@ A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botó
 
 [[[
 
-```xml
+```android-xml
 ===
 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
 2. Agrega un campo de texto para mostrar el resultado del pago. 
@@ -224,7 +224,7 @@ for: .touchUpInside)
 }
 }
 ```   
-```Objective-c
+```objective-c
 ===
 1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
 2.  Inserta un botón en el .xib correspondiente.
@@ -280,7 +280,7 @@ navigationController: self.navigationController!)
 checkout.start()
 }
 ```
-```Objective-c
+```objective-c
 ===
 El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
@@ -344,7 +344,7 @@ checkout.setCallbackCancel {
    self.navigationController?.popToRootViewController(animated: true)
 }
 ```
-```Objective-c
+```objective-c
 [MercadoPagoCheckout setPaymentCallbackWithPaymentCallback:^(Payment * payment) {
 self.payment = payment
 }];
@@ -393,7 +393,7 @@ navigationController: self.navigationController!)
 checkout.start()
 }
 ```
-```Objective-c
+```objective-c
 DecorationPreference *decorationPreference = [[DecorationPreference alloc] initWithBaseColor:[UIColor fromHex:@"#CA254D"]];
 [decorationPreference enableDarkFont];
 [MercadoPagoCheckout setDecorationPreference:decorationPreference];
