@@ -95,6 +95,7 @@ Consultar los valores disponibles en: XXXX (API ML)
 
 Un ejemplo de Checkout básico con MercadoEnvíos, aplicando todo lo anterior, quedaría de la siguiente manera:
 
+[[[
 ```php
 <?php
   require_once ('mercadopago.php');
@@ -127,6 +128,150 @@ Un ejemplo de Checkout básico con MercadoEnvíos, aplicando todo lo anterior, q
   $preference = $mp->create_preference($preference_data);
 ?>
 ```
+```java
+MP mp = new MP("CLIENT_ID", "CLIENT_SECRET");
+
+	String preferenceData = "{'items':"+
+		"[{"+
+			"'title':'Multicolor kite',"+
+			"'quantity':1,"+
+			"'currency_id':'MXN',"+ // Available currencies at: https://api.mercadopago.com/currencies
+			"'unit_price':10.0"+
+		"}],"+
+		"'shipments':{"+
+			"'mode':'me2',"+
+			"'dimensions':'30x30x30,500',"+
+			"'local_pickup':true,"+
+			"'free_methods':["+
+				"{'id':501245}"+
+			"],"+
+			"'default_shipping_method':501245,"+
+			"'zip_code':'22615'"+
+		"}"+
+	"}";
+
+	JSONObject preference = mp.createPreference(preferenceData);
+
+	String initPoint = preference.getJSONObject("response").getString("init_point");
+```
+```csharp
+<%@ Page Language="c#" %>
+<%@ Import Namespace="mercadopago" %>
+<%@ Import Namespace="System.Collections" %>
+
+<%
+	MP mp = new MP("CLIENT_ID", "CLIENT_SECRET");
+	
+	String preferenceData = "{\"items\":"+
+		"[{"+
+			"\"title\":\"Multicolor kite\","+
+			"\"quantity\":1,"+
+			"\"currency_id\":\"MXN\","+ <%-- Available currencies at: https://api.mercadopago.com/currencies --%>
+			"\"unit_price\":10.0"+
+		"}],"+
+		"\"shipments\":{"+
+			"\"mode\":\"me2\","+
+			"\"dimensions\":\"30x30x30,500\","+
+			"\"local_pickup\":true,"+
+			"\"free_methods\":["+
+				"{\"id\":501245}"+
+			"],"+
+			"\"default_shipping_method\":501245,"+
+			"\"zip_code\":\"22615\""+
+		"}"+
+	"}";
+
+	Hashtable preference = mp.createPreference(preferenceData);    
+%>
+```
+```javascript
+exports.run = function (req, res) {
+    var mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+
+    var preference = {
+        "items": [
+            {
+                "title": "Multicolor kite",
+                "quantity": 1,
+                "currency_id": "MXN", // Available currencies at: https://api.mercadopago.com/currencies
+                "unit_price": 10.0
+            }
+        ],
+        "shipments": {
+            "mode": "me2",
+            "dimensions": "30x30x30,500",
+            "local_pickup": true,
+            "free_methods": [
+                {"id": 501245}
+            ],
+            "default_shipping_method": 501245,
+            "zip_code": "22615"
+        }
+    };
+
+    mp.createPreference (preference, function (err, data){
+        if (err) {
+            res.send (err);
+        } else {
+            res.render ("button", {"preference": data});
+        }
+    });
+};
+```
+```ruby
+mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
+		preferenceData = {
+			"items" => [
+				[
+					"title"=>"Multicolor kite",
+					"quantity"=>1,
+					"unit_price"=>10.0,
+					"currency_id"=>"MXN" # Available currencies at: https://api.mercadopago.com/currencies
+				]
+			],
+			"shipments" => [
+				"mode" => "me2",
+				"dimensions"=>"30x30x30,500",
+				"local_pickup" => true,
+				"free_methods" => [
+					[
+						"id" => 501245
+					]
+				],
+				"default_shipping_method" => 501245,
+				"zip_code" => "22615"
+			]
+		}
+		preference = mp.create_preference(preferenceData)
+```
+```python
+preference = {
+		"items": [
+			{
+				"title": "Multicolor kite",
+				"quantity": 1,
+				"currency_id": "MXN", # Available currencies at: https://api.mercadopago.com/currencies
+				"unit_price": 10.0
+			}
+		],
+		"shipments": {
+			"mode": "me2",
+			"dimensions": "30x30x30,500",
+			"local_pickup": true,
+			"free_methods": [
+				{"id": 501245}
+			],
+			"default_shipping_method": 501245,
+			"zip_code": "22615"
+		}
+	}
+	mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
+
+	preferenceResult = mp.create_preference(preference)
+
+	url = preferenceResult["response"]["init_point"]
+```
+]]]
 
 ```html
 
@@ -178,5 +323,4 @@ Utiliza nuestras herramientas para hacer el seguimiento.
 Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
 
 Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante notificaciones que se envían desde los servidores de MercadoPago a los tuyos. Esto te permitirá administrar tu stock y conocer el estado de los pagos y envíos.
-
-> ver si hay ejemplo
+ 

@@ -217,25 +217,121 @@ Los `card_token` tienen **una validez de 7 días** y son de único uso.
 
 Para realizar el pago solamente debes realizar un API call:
 
-```php
-<?php
-  require_once ('mercadopago.php');
+[[[
+```php 
+  <?php  
+    require_once ('mercadopago.php');
 
-  // Setup your private key
-  $mp = new MP('SECRET_ACCESS_TOKEN');
-
-  $payment_data = array(
-      "transaction_amount" => 100,
-      "token" => "ff8080814c11e237014c1ff593b57b4d",
-      "payment_method_id" => "visa",
-      "payer" => array (
-          "email" => "test_user_19653727@testuser.com"
-      )
-  );
-
-  $payment = $mp->post("/v1/payments", $payment_data);
-?>
+    $mp = new MP('ACCESS_TOKEN');
+    
+    $payment_data = array(
+    	"transaction_amount" => 100,
+    	"token" => "ff8080814c11e237014c1ff593b57b4d",
+    	"description" => "Title of what you are paying for",
+    	"installments" => 1,
+    	"payment_method_id" => "visa",
+    	"payer" => array (
+    		"email" => "test_user_19653727@testuser.com"
+    	)
+    );
+  ?>
 ```
+```java
+import com.mercadopago.MP;
+import org.codehaus.jettison.json.JSONObject;
+
+MP mp = new MP ("ACCESS_TOKEN");
+
+JSONObject payment = mp.post("/v1/payments", "{"+
+			"'transaction_amount': 100,"+
+			"'token': 'ff8080814c11e237014c1ff593b57b4d',"+
+			"'description': 'Title of what you are paying for',"+
+			"'installments': 1,"+
+			"'payment_method_id': 'visa',"+
+			"'payer': {"+
+				"'email': 'test_user_19653727@testuser.com'"+
+			"}"+
+		"}");
+```
+```csharp
+using mercadopago;
+using System;xº
+using System.Collections;
+
+MP mp = new MP("ACCESS_TOKEN");
+
+Hashtable payment = mp.post("/v1/payments", "{"+
+			"\"transaction_amount\": 100,"+
+			"\"token\": \"ff8080814c11e237014c1ff593b57b4d\","+
+			"\"description\": \"Title of what you are paying for\","+
+			"\"installments\": 1,"+
+			"\"payment_method_id\": \"visa\","+
+			"\"payer\": {"+
+				"\"email\": \"test_user_19653727@testuser.com\""+
+			"}"+
+		"}");
+```
+```javascript
+var MP = require ("mercadopago");
+var mp = new MP ("ACCESS_TOKEN");
+
+var doPayment = mp.post ("/v1/payments",
+	{
+		"transaction_amount": 100,
+		"token": "ff8080814c11e237014c1ff593b57b4d",
+		"description": "Title of what you are paying for",
+		"installments": 1,
+		"payment_method_id": "visa",
+		"payer": {
+			"email": "test_user_19653727@testuser.com"
+		}
+	});
+
+doPayment.then (
+	function (payment) {
+		console.log (payment);
+	},
+	function (error){
+		console.log (error);
+	});
+```
+```ruby
+require 'mercadopago.rb'
+$mp = MercadoPago.new('ACCESS_TOKEN')
+
+paymentData = Hash[
+		"transaction_amount" => 100,
+		"token" => "ff8080814c11e237014c1ff593b57b4d",
+		"description" => "Title of what you are paying for",
+		"installments" => 1,
+		"payment_method_id" => "visa",
+		"payer" => Hash[
+			"email" => "test_user_19653727@testuser.com"
+		]
+	]
+
+payment = $mp.post("/v1/payments", paymentData);
+
+puts payment
+```
+```python
+import mercadopago
+mp = mercadopago.MP("ACCESS_TOKEN")
+
+payment = mp.post("/v1/payments", {
+        "transaction_amount": 100,
+        "token": "ff8080814c11e237014c1ff593b57b4d",
+        "description": "Title of what you are paying for",
+        "installments": 1,
+        "payment_method_id": "visa",
+        "payer": {
+            "email": "test_user_19653727@testuser.com"
+        }
+    });
+
+print(json.dumps(payment, indent=4))
+```
+]]]
 
 > Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
 
