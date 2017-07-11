@@ -233,4 +233,3 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 Para ello debes usar usuarios y tarjetas de prueba.
 
 Visita la sección [Probando](./testing.es.md) para más información.
-
