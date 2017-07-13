@@ -9,7 +9,8 @@ Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 Producto                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
 :---------------------- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |
 Botón de cobro          | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
-Checkout                | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+Web Checkout            | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+Mobile Checkout         | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |      | ✔    |
 API                     | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |      | ✔    |
 
 ### Suscripciones:
@@ -17,14 +18,14 @@ API                     | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | 
 Producto                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
 :---------------------- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |
 Botón de cobro          | ✔    | ✔    |      |      | ✔    |      |      |      |
-Checkout                | ✔    | ✔    |      |      | ✔    |      |      |      |
+Web Checkout            | ✔    | ✔    |      |      | ✔    |      |      |      |
 API                     | ✔    | ✔    |      |      | ✔    |      |      |      |
 
 ### Marketplace:
 
 Producto                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
 :---------------------- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |:---- |
-Checkout                | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
+Web Checkout            | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |
 API                     | ✔    | ✔    | ✔    | ✔    | ✔    | ✔    |      | ✔    |
 
 ## Medios de pago no disponibles
@@ -36,12 +37,13 @@ Puede suceder que determinados [medios de pago]() no estén disponibles en algun
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | N/A
+Pagos         | Web Checkout    | N/A
+Pagos         | Mobile Checkout | `account_money`
 Pagos         | API             | N/A
 Suscripciones | Botón de pago   | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
-Suscripciones | Checkout        | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
+Suscripciones | Web Checkout    | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
 Suscripciones | API             | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`
-Marketplace   | Checkout        | N/A
+Marketplace   | Web Checkout    | N/A
 Marketplace   | API             | N/A
 
 ### Brasil
@@ -49,12 +51,13 @@ Marketplace   | API             | N/A
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | N/A
+Pagos         | Web Checkout    | N/A
+Pagos         | Mobile Checkout | `account_money`,`bolbradesco`
 Pagos         | API             | N/A
 Suscripciones | Botón de pago   | `bolbradesco`, `giftcard`
 Suscripciones | Checkout        | `bolbradesco`, `giftcard`
 Suscripciones | API             | `bolbradesco`, `giftcard`
-Marketplace   | Checkout        | N/A
+Marketplace   | Web Checkout    | N/A
 Marketplace   | API             | N/A
 
 ### Chile
@@ -62,9 +65,10 @@ Marketplace   | API             | N/A
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | N/A
+Pagos         | Web Checkout    | N/A
+Pagos         | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay`
 Pagos         | API             | `khipu`
-Marketplace   | Checkout        | N/A
+Marketplace   | Web Checkout    | N/A
 Marketplace   | API             | `khipu`
 
 ### Colombia
@@ -72,9 +76,10 @@ Marketplace   | API             | `khipu`
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | `davivienda`
+Pagos         | Web Checkout    | `davivienda`
+Pagos         | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse`
 Pagos         | API             | `pse`
-Marketplace   | Checkout        | `davivienda`
+Marketplace   | Web Checkout    | `davivienda`
 Marketplace   | API             | `pse`
 
 ### México
@@ -82,12 +87,13 @@ Marketplace   | API             | `pse`
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | N/A
+Pagos         | Web Checkout    | N/A
+Pagos         | Mobile Checkout | `account_money`
 Pagos         | API             | N/A
 Suscripciones | Botón de pago   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
-Suscripciones | Checkout        | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
+Suscripciones | Web Checkout    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
 Suscripciones | API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin`
-Marketplace   | Checkout        | N/A
+Marketplace   | Web Checkout    | N/A
 Marketplace   | API             | N/A
 
 ### Perú
@@ -95,9 +101,10 @@ Marketplace   | API             | N/A
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | N/A
+Pagos         | Web Checkout    | N/A
+Pagos         | Mobile Checkout | `account_money`
 Pagos         | API             | N/A
-Marketplace   | Checkout        | N/A
+Marketplace   | Web Checkout    | N/A
 Marketplace   | API             | N/A
 
 ### Uruguay
@@ -105,15 +112,16 @@ Marketplace   | API             | N/A
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | N/A
-Marketplace   | Checkout        | N/A
+Pagos         | Web Checkout    | N/A
+Marketplace   | Web Checkout    | N/A
 
 ### Venezuela
 
 Producto      | Solución        | Medios de pago no disponibles
 :------------ |:--------------- |:------------------------------- |
 Pagos         | Botón de pago   | N/A
-Pagos         | Checkout        | N/A
-Pagos         | API             | N/A
-Marketplace   | Checkout        | N/A
+Pagos         | Web Checkout    | N/A
+Pagos         | Mobile Checkout | `account_money`,`banesco`,`mercantil`,`provincial`
+Pagos         | API             | N/A
+Marketplace   | Web Checkout    | N/A
 Marketplace   | API             | N/A
