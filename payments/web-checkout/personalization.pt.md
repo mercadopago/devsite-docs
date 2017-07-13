@@ -1,7 +1,7 @@
 # Personalização
 
 
-Apartir da preferência dos pagamentos você pode não somente enviar informações sobre os itens sendo comprados e o comprador, como também pode definir as formas de pagamento que não deseje aceitar, URL de retorno para seu site após o pagamento, métodos de envio e entre outros mais.
+A partir da preferência dos pagamentos você pode não somente enviar informações sobre os itens sendo comprados e o comprador, como também pode definir as formas de pagamento que não deseje aceitar, URL de retorno para seu site após o pagamento, métodos de envio e entre outros mais.
 
 
 ### Defina tipos e formas de pagamento
@@ -42,9 +42,9 @@ Ao finalizar o processo de pagamento, é muito importante que comunique ao seu c
 ```json
 
 "back_urls": {
-		"success": "https://www.tu-sitio/success",
-		"failure": "http://www.tu-sitio/failure",
-		"pending": "http://www.tu-sitio/pending"
+		"success": "https://www.seu-site/success",
+		"failure": "http://www.seu-site/failure",
+		"pending": "http://www.seu-site/pending"
 	},
 	"auto_return": "approved",
 
@@ -56,7 +56,7 @@ Ao finalizar o processo de pagamento, é muito importante que comunique ao seu c
 Para poder sincronizar com seu sistema de backend, pode-se enviar na preferência o campo `external_reference`, pelo qual vai poder consultar quando o pagamento for criado. 
 
 ```json
-"external_reference": "Order_1234",
+"external_reference": "Pedido_1234",
 ```
 
 Para saber o estado atual de seu pagamento, pode ser feita uma busca utilizando-se da referência fornecida:
@@ -85,4 +85,4 @@ Se não quiser permitir que um pagamento em específico possa ser efetuado, post
 ```
 
 
-Para saber mais sobre os atributos de preferência, [consulte a documentação da API](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/)
+Para saber mais sobre os atributos de preferência, [consulte a documentação da API](https://www.mercadopago.com.co/developers/pt/api-docs/basic-checkout/checkout-preferences/)
