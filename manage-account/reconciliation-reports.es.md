@@ -8,14 +8,16 @@ Contiene todos los eventos de pagos (acreditación, devolución, mediación y co
 
 **Reporte de dinero disponible (Bank Report)**
 
-Contiene el detalle de los pagos que fueron liberados y están listos para ser retirados a cuenta bancarias.
-Puede solicitarse para un período especifico o cada vez que se ejecuta un retiro.
+Contiene el detalle de los pagos que fueron liberados y están listos para ser retirados a cuenta bancaria.
+Puede solicitarse para un período específico o cada vez que se ejecuta un retiro.
 
 Este reporte generalmente se utiliza para conciliar un retiro a cuenta bancaria. De esta forma, por cada retiro realizado se generará un *Bank Report* con las transacciones que lo componen.
 
 ## ¿Cómo se usan?
 
 Ambos reportes pueden generarse en forma manual (indicando un período de fechas específicas) o de forma programada.
+
+Consulta el [glosario de los reportes](https://www.mercadopago.com.ar/ayuda/glosario-reporte-conciliacion_2118).
 
 ### Uso manual
 
@@ -47,7 +49,7 @@ $mp->post($request);
 Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica. 
 
 ##### 2. Búsqueda: 
-Para ver si se terminó de generar deberás consultar la API de esta manera:
+Para ver si se terminó de generar el reporte deberás consultar la API de esta manera:
 
 ```php
 <?php
@@ -65,7 +67,7 @@ $mp->get($request);
 ?>
 ```
 
-Recibirás como respuesta un listado similar a este:
+Recibirás como respuesta: 
 
 ```json
 [
@@ -136,7 +138,7 @@ $mp->get($request);
 ?>
 ```
 
-Recibirás como respuesta un listado similar a este:
+Recibirás como respuesta: 
 
 ```json
 [
@@ -163,7 +165,7 @@ Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguien
 
 ### Uso programado
 
-Otra forma de utilizar los reportes de conciliación es haciendo la generacin de forma automática.
+Otra forma de utilizar los reportes de conciliación es haciendo la generación de forma automática.
 
 ### Reporte de dinero disponible (Bank Report)
 
