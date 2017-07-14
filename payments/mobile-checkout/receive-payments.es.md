@@ -9,7 +9,7 @@
 Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
 
 #### La integración consta de dos etapas:
-- Integración en tu servidor: en esta etapa obtendras la información del pago.
+- Integración en tu servidor: en esta etapa obtendrás la información del pago.
 - Integración en tu aplicación: en esta etapa configurarás el componente visual.
 
 ![scheme](https://user-images.githubusercontent.com/8038535/28226783-bce9d6ce-68ad-11e7-99c5-032af709f5cc.png)
