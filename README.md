@@ -1,57 +1,13 @@
-# MercadoPago Markdown
+# Devsite-docs sources
 
-## Content 
+In this repository is hosted the content displayed in our devsite, to contribute:
 
-### Headers 
+1. Build your content according to the [syntax guide](https://github.com/mercadopago/devsite-docs/wiki/Syntax-guide).
+1. Create a _Pull request_ against the `master` branch. Provide your content translated in all languages supported.
+1. Tag revisors to check your content.
+1. When your pull request is merged, request a deploy to devsite team.
 
-`# H1`
-`## H2`
-`### H3`
+In case of any doubts please contact:
+joel.ibaceta@mercadolibre.com
 
-### Quotes 
-
-
-
-#### Information Quote 
-
-```markdown
-  >INFO
-  >
-  >I'm an information blockquote
-```
-
-#### Note Quote
-
-```markdown
-  >NOTE
-  >
-  >I'm an note blockquote
-```
-
-#### Warning Quote 
-
-```markdown
-  >WARNING
-  >
-  >I'm an warning blockquote
-```
-
-#### Alert Quote 
-
-```markdown
-  >ALERT
-  >
-  >I'm an alert blockquote
-```
-
-
-### Code Blocks
-
-### Single snippet 
-
-### Snippet with comment
-
-### Multiple Snippet
-
-### Multiple Snippet with comments
 
