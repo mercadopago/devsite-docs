@@ -234,6 +234,8 @@ Para realizar el pago solamente debes realizar un API call:
     		"email" => "test_user_19653727@testuser.com"
     	)
     );
+
+    $payment = $mp->post("/v1/payments", $payment_data);
   ?>
 ```
 ```java

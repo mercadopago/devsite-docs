@@ -44,7 +44,7 @@ Una vez que cuentas con el id del `card_token` puedes realizar el pago realizand
   require_once ('mercadopago.php');
 
   // Setup your private key
-  $mp = new MP('SECRET_ACCESS_TOKEN');
+  $mp = new MP('ENV_ACCESS_TOKEN');
 
   $payment_data = array(
       "transaction_amount" => 100,
@@ -129,9 +129,7 @@ La respuesta cuenta con la información de las cuotas disponibles indicando el v
     {
         "payment_method_id": "amex",
         "payment_type_id": "credit_card",
-        "pr
-        
-        ocessing_mode" : "gateway",
+        "processing_mode" : "gateway",
         "merchant_account_id" : "#hashMerchantAccountID-2",
         ...
   }
@@ -145,7 +143,7 @@ En el caso de que vayas a ofrecer cuotas con interés, debes adicionar el costo 
 >
 > Nota
 >
-> Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias adicionales.
+> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](../localization/considerations-argentina.es.md).
 
 Para crear el pago es importante enviar la cantidad de `installments` y el `processing_mode`:
 
@@ -174,10 +172,10 @@ Para crear el pago es importante enviar la cantidad de `installments` y el `proc
 
 Es **muy importante** comunicar correctamente los resultados recibidos al crear un pago. Esto ayudará a mejorar la conversión en los casos de rechazos, y evitar contracargos en los casos de transacciones aprobadas.
 
-Te recomendamos leer el artículo sobre el [manejo de respuestas](handling-responses.es.md) y utilizar la comunicación recomendada en cada uno de los casos.
+Te recomendamos leer el artículo sobre el [manejo de respuestas](../payments/api/handling-responses.es.md) y utilizar la comunicación recomendada en cada uno de los casos.
 
 ## Recibir una notificación del pago
 
 Es importante que te enteres de cualquier actualización del estado de tu pago. Para esto se deben utilizar _Webhooks_.
 
-Puedes leer todo para su implementación en el [artículo de Webhooks](#).
+Puedes leer todo para su implementación en el [artículo de Webhooks](../notifications/webhooks.es.md).
