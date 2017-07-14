@@ -206,7 +206,7 @@ X-Device-Session-Id: device_id
 
 Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior.
 
-### Implementación de device en aplicaciones mobile nativas
+### Implementación de device en aplicaciones móviles nativas
 
 Si cuentas con una aplicación nativa deberás enviar información sobre el device de tus compradores, esto lo puedes hacer enviando la siguiente información al momento de crear un `card_token`:
 
@@ -258,24 +258,15 @@ Nuestros SDKs cuentan con funciones que puedes utilizar para capturar esta infor
 [[[
 
 ```android
-Clase Fingerprint: https://github.com/mercadopago/px-android/blob/3.1.0/sdk/src/main/java/com/mercadopago/model/Fingerprint.java
-Clase Device: https://github.com/mercadopago/px-android/blob/3.1.0/sdk/src/main/java/com/mercadopago/model/Device.java
-```
-```swift
-Clase Fingerprint: https://github.com/mercadopago/px-ios/blob/3.1.0/MercadoPagoSDK/MercadoPagoSDK/Fingerprint.swift
-Clase Device: https://github.com/mercadopago/px-ios/blob/3.1.0/MercadoPagoSDK/MercadoPagoSDK/Device.swift
-```
-
-]]]
-
-Creación del device para ser enviado:
-
-[[[
-
-```android
+===
+La clase[Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) recolectará tanto la información del dispositivo como su fingerprint.
+===
 new Device(context);
 ```
 ```swift
+===
+La clase[Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) recolectará tanto la información del dispositivo como su fingerprint.
+===
 Device()
 ```
 
