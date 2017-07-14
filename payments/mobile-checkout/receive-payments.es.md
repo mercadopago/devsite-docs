@@ -12,7 +12,12 @@ Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago e
 - Integración en tu servidor: en esta etapa obtendras la información del pago.
 - Integración en tu aplicación: en esta etapa configurarás el componente visual.
 
-![imagen](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
+![scheme](https://user-images.githubusercontent.com/8038535/28225540-71c56220-68a9-11e7-961c-dcb49a693001.png)
+
+1. Crea la preferencia de pago desde tu servidor en los servidores de Mercado Pago.
+1. Inicia el Checkout en tu aplicación, utilizando el id de la preferencia.
+1. El Checkout realizará el pago en los servidores de Mercado Pago.
+1. Suscríbete a las notificaciones para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
 ## Configura tu servidor
 
