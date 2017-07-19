@@ -217,13 +217,13 @@ Las notificaciones son la forma automática de enterarte de tus nuevos pagos y l
 
 Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](../../notifications/ipn.es.md) para conocer más sobre esto.
+Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
 
 ## 4. Cancelar un pago
 
 Los medios de pago en efectivo deben ser pagados entre los 3 a 5 días dependiendo de cada uno.
 
-El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](../account/refunds-and-cancellations.es.md) luego del vencimiento.
+El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](/guides/account/refunds-and-cancellations.es.md) luego del vencimiento.
 
 
 ## 5. Prueba tu integración
@@ -232,4 +232,4 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 
 Para ello debes usar usuarios y tarjetas de prueba.
 
-Visita la sección [Probando](./testing.es.md) para más información.
+Visita la sección [Probando](/guides/payments/web-checkout/testing.es.md) para más información.

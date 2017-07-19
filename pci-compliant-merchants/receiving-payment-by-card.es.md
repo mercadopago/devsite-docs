@@ -6,7 +6,7 @@ Mercado Pago permite a vendedores que cumplen con las normativas PCI, tokenizar 
 >
 > Pre-requisitos
 >
-> * Implementar el [procesamiento de pagos por API](../payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
+> * Implementar el [procesamiento de pagos por API](/guides/payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
 > * Tener el documento AOC (Attestation of Compliance) firmado por un consultor QSA.
 
 Es necesario crear un `card_token`, el cual es la representación segura de la tarjeta:
