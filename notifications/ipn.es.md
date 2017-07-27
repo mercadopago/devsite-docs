@@ -55,42 +55,47 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 ### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
 
 ```php
- <?php
-
+<?php
 require_once "mercadopago.php";
 
 $mp = new MP("CLIENT_ID", "CLIENT_SECRET");
 
 if (!isset($_GET["id"], $_GET["topic"]) || !ctype_digit($_GET["id"])) {
-    http_response_code(400);
-    return;
+	http_response_code(400);
+	return;
 }
 
-$topic = $_GET["topic"];
-$merchant_order_info = null;
-
-switch ($topic) {
-    case 'payment':
-        $payment_info = $mp->get("/v1/payments/".$_GET["id"]);
-        $merchant_order_info = $mp->get("/merchant_orders/".$payment_info["response"]["collection"]["merchant_order_id"]);
-        break;
-    case 'merchant_order':
-        $merchant_order_info = $mp->get("/merchant_orders/".$_GET["id"]);
-        break;
-    default:
-        $merchant_order_info = null;
-}
-
-if($merchant_order_info == null) {
-    echo "Error obtaining the merchant_order";
-    die();
+// Get the payment and the corresponding merchant_order reported by the IPN.
+if($_GET["topic"] == 'payment'){
+	$payment_info = $mp->get("/collections/notifications/" . $_GET["id"]);
+	$merchant_order_info = $mp->get("/merchant_orders/" . $payment_info["response"]["collection"]["merchant_order_id"]);
+// Get the merchant_order reported by the IPN.
+} else if($_GET["topic"] == 'merchant_order'){
+	$merchant_order_info = $mp->get("/merchant_orders/" . $_GET["id"]);
 }
 
 if ($merchant_order_info["status"] == 200) {
-    print_r($merchant_order_info["response"]["payments"]);
-    print_r($merchant_order_info["response"]["shipments"]);
-}
+	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items 
+	$paid_amount = 0;
 
+	foreach ($merchant_order_info["response"]["payments"] as  $payment) {
+		if ($payment['status'] == 'approved'){
+			$paid_amount += $payment['transaction_amount'];
+		}	
+	}
+
+	if($paid_amount >= $merchant_order_info["response"]["total_amount"]){
+		if(count($merchant_order_info["response"]["shipments"]) > 0) { // The merchant_order has shipments
+			if($merchant_order_info["response"]["shipments"][0]["status"] == "ready_to_ship"){
+				print_r("Totally paid. Print the label and release your item.");
+			}
+		} else { // The merchant_order don't has any shipments
+			print_r("Totally paid. Release your item.");
+		}
+	} else {
+		print_r("Not paid yet. Do not release your item.");
+	}
+}
 ?>
 ```
 
