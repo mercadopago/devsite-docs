@@ -16,131 +16,118 @@ Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https
 
 [[[
 ```php 
-  <?php  
-    require_once ('mercadopago.php');
 
-    $mp = new MP('ACCESS_TOKEN');
-  ?>
+<?php  
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+?>
 ```
 ```java
-import com.mercadopago.MP;
-import org.codehaus.jettison.json.JSONObject;
 
-MP mp = new MP ("ACCESS_TOKEN");
-```
-```csharp
-using mercadopago;
-using System;xº
-using System.Collections;
-
-MP mp = new MP("ACCESS_TOKEN");
-```
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+``` 
 ```javascript
-var MP = require ("mercadopago");
-var mp = new MP ("ACCESS_TOKEN");
+
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
 ```
 ```ruby
-require 'mercadopago.rb'
-$mp = MercadoPago.new('ACCESS_TOKEN')
-```
-```python
-import mercadopago
-mp = mercadopago.MP("ACCESS_TOKEN")
-```
+
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+``` 
 ]]]
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
 
 [[[
 ```php
-$payment_data = array(
-	"transaction_amount" => 100,
-	"token" => "ff8080814c11e237014c1ff593b57b4d",
-	"description" => "Title of what you are paying for",
-	"installments" => 1,
-	"payment_method_id" => "visa",
-	"payer" => array (
-		"email" => "test_user_19653727@testuser.com"
-	)
-);
 
-$payment = $mp->post("/v1/payments", $payment_data);
+<?php
+
+$preference = new MercadoPago\Preference();
+
+$item = new MercadoPago\Item();
+$item->title = "Multicolor kite";
+$item->quantity = 1;
+$item->title = ARS;
+$item->title = 10.00;
+
+$payer = new MercadoPago\Payer();
+$payer->email = "test_user_19653727@testuser.com"; 
+
+$preference->items = array($item);
+$preference->payer = $payer;
+$preference->save();
+
+?>
+
 ```
 ```java
-JSONObject payment = mp.post("/v1/payments", "{"+
-			"'transaction_amount': 100,"+
-			"'token': 'ff8080814c11e237014c1ff593b57b4d',"+
-			"'description': 'Title of what you are paying for',"+
-			"'installments': 1,"+
-			"'payment_method_id': 'visa',"+
-			"'payer': {"+
-				"'email': 'test_user_19653727@testuser.com'"+
-			"}"+
-		"}");
-```
-```csharp
-Hashtable payment = mp.post("/v1/payments", "{"+
-			"\"transaction_amount\": 100,"+
-			"\"token\": \"ff8080814c11e237014c1ff593b57b4d\","+
-			"\"description\": \"Title of what you are paying for\","+
-			"\"installments\": 1,"+
-			"\"payment_method_id\": \"visa\","+
-			"\"payer\": {"+
-				"\"email\": \"test_user_19653727@testuser.com\""+
-			"}"+
-		"}");
-```
-```javascript
-var doPayment = mp.post ("/v1/payments",
-	{
-		"transaction_amount": 100,
-		"token": "ff8080814c11e237014c1ff593b57b4d",
-		"description": "Title of what you are paying for",
-		"installments": 1,
-		"payment_method_id": "visa",
-		"payer": {
-			"email": "test_user_19653727@testuser.com"
-		}
-	});
 
-doPayment.then (
-	function (payment) {
-		console.log (payment);
-	},
-	function (error){
-		console.log (error);
-	});
+Preference preference = new Preference();
+
+Item item = new Item();
+item.setId("1234")
+    .setTitle("Multicolor kite")
+    .setQuantity(2)
+    .setCategoryId("ARS")
+    .setUnitPrice((float) 14.5);
+
+Payer payer = new Payer();
+payer.setEmail("demo@mail.com");
+
+preference.setPayer(payer);
+preference.appendItem(item);
+preference.save();
+
+``` 
+```javascript
+ 
+	var preference = {}
+  
+  var item = {
+    title: 'Multicolor kite',
+    quantity: 1,
+    currency_id: 'ARS',
+    unit_price: 10.5
+  }
+  
+  var payer = {
+    email: "demo@mail.com"
+  }
+  
+  preference.items = [item]
+  preference.payer = payer
+  
+  mercadopago.preferences.create(preference).then(function (data) {
+     // Do Stuff...
+   }).catch(function (error) {
+     // Do Stuff... 
+   });
+  
 ```
 ```ruby
-paymentData = Hash[
-		"transaction_amount" => 100,
-		"token" => "ff8080814c11e237014c1ff593b57b4d",
-		"description" => "Title of what you are paying for",
-		"installments" => 1,
-		"payment_method_id" => "visa",
-		"payer" => Hash[
-			"email" => "test_user_19653727@testuser.com"
-		]
-	]
 
-payment = $mp.post("/v1/payments", paymentData);
+preference = MercadoPago::Preference.new()
 
-puts payment
+item = MercadoPago::Item.new()
+item.title="Multicolor kite"
+item.quantity= 1
+item.currency_id = 'ARS'
+item.unit_price = 10.5
 
-```
-```python
-payment = mp.post("/v1/payments", {
-        "transaction_amount": 100,
-        "token": "ff8080814c11e237014c1ff593b57b4d",
-        "description": "Title of what you are paying for",
-        "installments": 1,
-        "payment_method_id": "visa",
-        "payer": {
-            "email": "test_user_19653727@testuser.com"
-        }
-    });
+payer = MercadoPago::Payer.new() 
+payer.email="demo@mail.com"
 
-print(json.dumps(payment, indent=4))
+preference.items = [item]
+preference.payer = payer
+
+preference.save 
+
 ```
 ]]]
 
@@ -152,48 +139,125 @@ Mientras más información nos envíes, mejor será la aprobación de los pagos 
 
 Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, no se le pedirá durante el proceso de pago.
 
-```json
-{
-   ...,
-	"payer": {
-		"name": "user-name",
-		"surname": "user-surname",
-		"email": "user@email.com",
-		"date_created": "2015-06-02T12:58:41.425-04:00",
-		"phone": {
-			"area_code": "11",
-			"number": "4444-4444"
-		},
-		"identification": {
-			"type": "DNI", // Available ID types at https://api.mercadopago.com/v1/identification_types
-			"number": "12345678"
-		},
-		"address": {
-			"street_name": "Street",
-			"street_number": 123,
-			"zip_code": "5700"
-		} 
-	},
-	...
+[[[
+```php
+<?php
+  $payer = new MercadoPago\Payer();
+  $payer->name = "user-name";
+  $payer->surname = "user@email.com";
+  $payer->date_created = "2018-06-02T12:58:41.425-04:00";
+  $payer->phone = array(
+    "area_code" => "11",
+    "number" => "4444-4444"
+  );
+  $payer->identification = array(
+    "type" => "DNI",
+    "number" => "12345678"
+  );
+  $payer->address = array(
+    "street_name" => "Street",
+    "street_number" => 123,
+    "zip_code" => "5700"
+  );
+?>
+```
+```java
+Payer payer = new Payer();
+payer.setName("user-name")
+  .setSurname("user-surname")
+  .setEmail("user@email.com")
+  .setDateCreated("2018-06-02T12:58:41.425-04:00")
+  .setPhone((new Phone("11", "4444-4444")))
+  .setIdentification((new Identification("DNI", "12345678")))
+  .setAddress((new Address("Street", 123, "5700")))
+```
+```javascript
+var payer = {
+        "name": "user-name",
+        "surname": "user-surname",
+        "email": "user@email.com",
+        "date_created": "2015-06-02T12:58:41.425-04:00",
+        "phone": {
+            "area_code": "11",
+            "number": "4444-4444"
+        },
+        "identification": {
+            "type": "DNI",
+            "number": "12345678"
+        },
+        "address": {
+            "street_name": "Street",
+            "street_number": 123,
+            "zip_code": "5700"
+        } 
+      }
+```
+```ruby
+
+payer = MercadoPago::Payer.new
+payer.name = "user-name"
+payer.surname = "user-surname"
+payer.email = "user@email.com"
+payer.date_created = Time.now
+payer.phone = {
+  area_code: "11", 
+  number: "4444-4444"
 }
+payer.identification = {
+  type: "DNI",
+  number: "12345678"
+}
+payer.address = {
+  street_name: "Street",
+  street_number: 123,
+  zip_code: "5700"
+}
+  
 ```
 
+]]]
+  
 #### Shipments
 
-```json
-{
-	...,
-	"shipments": {
-		"receiver_address": {
-			"zip_code": "5700",
-			"street_number": 123,
-			"street_name": "Street",
-			"floor": 4,
-			"apartment": "C"
-		}
+[[[
+```php
+<?php
+  $shipments = new MercadoPago\Shipments();
+  $shipments->receiver_address=array(
+		"zip_code" => "5700",
+		"street_number" => 123,
+		"street_name" => "Street",
+		"floor" => 4,
+		"apartment" => "C"
+  );
+?>
+```
+```java
+Shipments shipments = new Shipments();
+shipments.setReceiverAddress(new AddressReceiver("5700", 123, "street", 4, "C"));
+```
+```javascript
+var shipments = {
+	"receiver_address": {
+		"zip_code": "5700",
+		"street_number": 123,
+		"street_name": "Street",
+		"floor": 4,
+		"apartment": "C"
 	}
+};
+```
+```ruby
+shipment = MercadoPago::Shipment.new
+shipment.receiver_address = {
+	zip_code: "5700",
+	street_number: 123,
+	street_name: "Street",
+	floor: 4,
+	apartment: "C"
 }
 ```
+]]]
 
 ## 2. Lleva a tu comprador al checkout
 
@@ -206,7 +270,7 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 		<title>Pagar</title>
 	</head>
 	<body>
-		<a href="<?php echo $preference['response']['init_point']; ?>">Pay</a>
+		<a href="<?php echo $preference->init_point; ?>">Pay</a>
 	</body>
 </html>
 ```
