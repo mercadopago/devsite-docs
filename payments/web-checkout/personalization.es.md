@@ -37,10 +37,14 @@ $preference->payment_methods = array(
 ```java
   Preference preference = new Preference();
   // ...
-  
+  PaymentMethods paymentMethods = new PaymentMethods();
+  paymentMethods.setExcludedPaymentMethods("master", "amex");
+  paymentMethods.setExcludedPaymentTypes("ticket");
+
+  preference.setPaymentMethods(paymentMethods);
   // ...
 ```
-```javascript
+```node
   var preference = {}
   preference = {
     // ...
@@ -76,17 +80,60 @@ preference.payment_methods = {
 
 Al finalizar el proceso de pago, es muy importante que comuniques a tu comprador cuáles son los siguientes pasos y de ésta manera darle confianza respecto del resultado de la operación. Para ello, utilizamos las `back_urls`. El atributo `auto_return` en `approved` redireccionará en forma automática al comprador a la success url cuando el resultado del pago sea aprobado. 
 
-```json
+[[[
+```php
 
-"back_urls": {
+<?php
+
+$preference = new MercadoPago\Preference();
+//...
+$preference->back_urls = array(
+	"success" => "https://www.tu-sitio/success",
+	"failure" => "http://www.tu-sitio/failure",
+	"pending" => "http://www.tu-sitio/pending"
+);
+$preference->auto_return = "approved";
+// ...
+
+?>
+```
+```java
+Preference preference = new Preference();
+// ...
+BackUrls backUrls = new BackUrls(
+                    "https://www.tu-sitio/success",
+                    "http://www.tu-sitio/pending",
+                    "http://www.tu-sitio/failure");
+                    
+preference.setBackUrls(backUrls);
+// ...
+```
+```node
+var preference = {}
+
+preference = {
+  // ...
+  "back_urls": {
 		"success": "https://www.tu-sitio/success",
 		"failure": "http://www.tu-sitio/failure",
 		"pending": "http://www.tu-sitio/pending"
 	},
 	"auto_return": "approved",
-
+  // ...
+}
 ```
-
+```ruby
+preference = MercadoPago::Preference.new
+# ...
+preference.back_urls = {
+  success: "https://www.tu-sitio/success",
+  failure: "http://www.tu-sitio/failure",
+  pending: "http://www.tu-sitio/pendings"
+}
+preference.auto_return = "approved"
+# ...
+```
+]]]
 
 ### Sincroniza con tu sistema
 
@@ -98,16 +145,51 @@ Para poder sincronizar con tus sistemas de backend, desde la preferencia podes e
 
 Para conocer el estado tus pagos, puedes hacer una búsqueda utilizando dicha referencia:
 
+[[[
 ```php
 <?php
 
-require_once ('mercadopago.php'); 
-$mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
-
-$mp->get('/v1/payments/search?external_reference=EXTERNAL');
-
+  $filters = array(
+    "external_reference" => "EXTERNAL"
+  );
+  
+  $payment = MercadoPago\Payment::search($filters);
+  
 ?>
 ```
+```java
+
+  Map<String, String> filters = new HashMap<>();
+  filters.put("external_reference", "EXTERNAL");
+  
+  Payment payment = Payment.search(filters);
+  
+```
+```node
+var mercadopago = require('mercadopago');
+
+var filters = {
+  external_reference: "EXTERNAL"
+};
+
+mercadopago.searchPayment({
+  qs: filters
+}).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+  
+```
+```ruby
+filters = { 
+  external_reference: "EXTERNAL" 
+}
+
+payment = MercadoPago::Payment.search(filters)
+```
+]]]
+
 
 
 ### Expira links de preferencia

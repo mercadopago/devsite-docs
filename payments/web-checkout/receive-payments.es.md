@@ -27,7 +27,7 @@ Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 ``` 
-```javascript
+```node
 
 var mercadopago = require('mercadopago');
 mercadopago.configure({
@@ -85,7 +85,7 @@ preference.appendItem(item);
 preference.save();
 
 ``` 
-```javascript
+```node
  
 	var preference = {}
   
@@ -171,7 +171,7 @@ payer.setName("user-name")
   .setIdentification((new Identification("DNI", "12345678")))
   .setAddress((new Address("Street", 123, "5700")));
 ```
-```javascript
+```node
 var payer = {
         "name": "user-name",
         "surname": "user-surname",
@@ -236,7 +236,7 @@ payer.address = {
 Shipments shipments = new Shipments();
 shipments.setReceiverAddress(new AddressReceiver("5700", 123, "street", 4, "C"));
 ```
-```javascript
+```node
 var shipments = {
 	"receiver_address": {
 		"zip_code": "5700",

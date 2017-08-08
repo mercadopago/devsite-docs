@@ -44,7 +44,7 @@ shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
     .setReceiverAddress(new AddressReceiver("5700", 123, "street", 4, "C"));
 ```
-```javascript
+```node
 var shipments = {
   "mode": "me2",
   "dimensions": "30x30x30,500",
@@ -97,7 +97,7 @@ Shipments shipments = new Shipments();
 shipments.setLocalPickup(true);
 // ...
 ```
-```javascript
+```node
 var shipments = {
   //..
   "local_pickup": true
@@ -129,13 +129,11 @@ Debes indicar el medio de envío que vas a ofrecer de manera gratuita. El monto 
 ```
 ```java
 Shipments shipments = new Shipments();
-// ...
-shipments.setFreeMethods(
-  
-);
+// ... 
+shipment.setFreeMethods(73328); // OCA Estándar 
 // ...
 ```
-```javascript
+```node
 var shipments = {
   //..
   "free_methods": [
@@ -232,7 +230,7 @@ preference.setShipments(shipments);
 preference.save();
 
 ``` 
-```javascript
+```node
 var preference = {}
 
 var item = {
