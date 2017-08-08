@@ -219,120 +219,84 @@ Para realizar el pago solamente debes realizar un API call:
 
 [[[
 ```php 
-  <?php  
-    require_once ('mercadopago.php');
+<?php  
 
-    $mp = new MP('ACCESS_TOKEN');
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+  
+  $payment = new MercadoPago\Payment();
+  
+  $payment->transaction_amount = 100;
+  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
+  $payment->description = "Title of what you are paying for";
+  $payment->installments = 1;
+  $payment->payment_method_id = "visa"
+  $payment->payer = array(
+    "email" => "test_user_19653727@testuser.com"
+  )
     
-    $payment_data = array(
-    	"transaction_amount" => 100,
-    	"token" => "ff8080814c11e237014c1ff593b57b4d",
-    	"description" => "Title of what you are paying for",
-    	"installments" => 1,
-    	"payment_method_id" => "visa",
-    	"payer" => array (
-    		"email" => "test_user_19653727@testuser.com"
-    	)
-    );
-
-    $payment = $mp->post("/v1/payments", $payment_data);
-  ?>
+  $payment->save();
+    
+?>
 ```
 ```java
-import com.mercadopago.MP;
-import org.codehaus.jettison.json.JSONObject;
 
-MP mp = new MP ("ACCESS_TOKEN");
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-JSONObject payment = mp.post("/v1/payments", "{"+
-			"'transaction_amount': 100,"+
-			"'token': 'ff8080814c11e237014c1ff593b57b4d',"+
-			"'description': 'Title of what you are paying for',"+
-			"'installments': 1,"+
-			"'payment_method_id': 'visa',"+
-			"'payer': {"+
-				"'email': 'test_user_19653727@testuser.com'"+
-			"}"+
-		"}");
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100)
+      .setToken('ff8080814c11e237014c1ff593b57b4d')
+      .setDescription('Title of what you are paying for')
+      .setInstallments(1)
+      .setPaymentMethodId("visa")
+      .setPayer(new Payer("test_user_19653727@testuser.com")); 
+
+payment.save();
+
 ```
-```csharp
-using mercadopago;
-using System;xº
-using System.Collections;
+```node
 
-MP mp = new MP("ACCESS_TOKEN");
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
 
-Hashtable payment = mp.post("/v1/payments", "{"+
-			"\"transaction_amount\": 100,"+
-			"\"token\": \"ff8080814c11e237014c1ff593b57b4d\","+
-			"\"description\": \"Title of what you are paying for\","+
-			"\"installments\": 1,"+
-			"\"payment_method_id\": \"visa\","+
-			"\"payer\": {"+
-				"\"email\": \"test_user_19653727@testuser.com\""+
-			"}"+
-		"}");
-```
-```javascript
-var MP = require ("mercadopago");
-var mp = new MP ("ACCESS_TOKEN");
+var payment = { 
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d'
+  description: 'Title of what you are paying for',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_3931694@testuser.com'
+  }
+};
+  
+mercadopago.payment.create(payment).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
 
-var doPayment = mp.post ("/v1/payments",
-	{
-		"transaction_amount": 100,
-		"token": "ff8080814c11e237014c1ff593b57b4d",
-		"description": "Title of what you are paying for",
-		"installments": 1,
-		"payment_method_id": "visa",
-		"payer": {
-			"email": "test_user_19653727@testuser.com"
-		}
-	});
-
-doPayment.then (
-	function (payment) {
-		console.log (payment);
-	},
-	function (error){
-		console.log (error);
-	});
 ```
 ```ruby
-require 'mercadopago.rb'
-$mp = MercadoPago.new('ACCESS_TOKEN')
 
-paymentData = Hash[
-		"transaction_amount" => 100,
-		"token" => "ff8080814c11e237014c1ff593b57b4d",
-		"description" => "Title of what you are paying for",
-		"installments" => 1,
-		"payment_method_id" => "visa",
-		"payer" => Hash[
-			"email" => "test_user_19653727@testuser.com"
-		]
-	]
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
-payment = $mp.post("/v1/payments", paymentData);
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.token = 'ff8080814c11e237014c1ff593b57b4d'
+payment.description = 'Title of what you are paying for'
+payment.installments = 1
+payment.payment_method_id = "visa"
+payment.payer = { 
+  email: "test_user_19653727@testuser.com"
+}
 
-puts payment
-```
-```python
-import mercadopago
-mp = mercadopago.MP("ACCESS_TOKEN")
+payment.save()
 
-payment = mp.post("/v1/payments", {
-        "transaction_amount": 100,
-        "token": "ff8080814c11e237014c1ff593b57b4d",
-        "description": "Title of what you are paying for",
-        "installments": 1,
-        "payment_method_id": "visa",
-        "payer": {
-            "email": "test_user_19653727@testuser.com"
-        }
-    });
-
-print(json.dumps(payment, indent=4))
-```
+``` 
 ]]]
 
 > Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
@@ -408,31 +372,97 @@ La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recome
 >
 > Nota
 >
-> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](../../localization/considerations-argentina.es.md).
+> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](/guides/localization/considerations-argentina.es.md).
 
 
 Para crear el pago es importante enviar los datos indicados anteriormente:
 
-```php
-<?php
-require_once ('mercadopago.php');
+[[[
+```php 
+<?php  
 
-$mp = new MP('SECRET_ACCESS_TOKEN');
-
-$payment_data = array(
-    "transaction_amount" => 100,
-    "token" => "ff8080814c11e237014c1ff593b57b4d",
-    "payer" => array (
-        "email" => "test_user_19653727@testuser.com"
-    ),
-    "installments" => 3,
-    "payment_method_id" => "amex",
-    "issuer_id" => 310
-);
-
-$payment = $mp->post("/v1/payments", $payment_data);
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+  
+  $payment = new MercadoPago\Payment();
+  
+  $payment->transaction_amount = 100;
+  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
+  $payment->description = "Title of what you are paying for";
+  $payment->installments = 3;
+  $payment->payment_method_id = "amex";
+  $payment->issuer_id = 310;
+  $payment->payer = array(
+    "email" => "test_user_19653727@testuser.com"
+  )
+    
+  $payment->save();
+    
 ?>
 ```
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100)
+      .setToken('ff8080814c11e237014c1ff593b57b4d')
+      .setDescription('Title of what you are paying for')
+      .setInstallments(3)
+      .setPaymentMethodId("amex")
+      .setIssuerId(310)
+      .setPayer(new Payer("test_user_19653727@testuser.com")); 
+
+payment.save();
+
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment = { 
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d'
+  description: 'Title of what you are paying for',
+  installments: 3,
+  payment_method_id: 'amex',
+  issuer_id: 310,
+  payer: {
+    email: 'test_user_3931694@testuser.com'
+  }
+};
+  
+mercadopago.payment.create(payment).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+```
+```ruby
+
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.token = 'ff8080814c11e237014c1ff593b57b4d'
+payment.description = 'Title of what you are paying for'
+payment.installments = 3
+payment.payment_method_id = 'amex'
+payment.issuer_id = 310
+payment.payer = { 
+  email: "test_user_19653727@testuser.com"
+}
+
+payment.save()
+
+``` 
+]]]
+
 
 ## Manejo de respuestas
 
