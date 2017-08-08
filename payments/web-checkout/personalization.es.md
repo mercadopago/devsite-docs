@@ -40,6 +40,7 @@ $preference->payment_methods = array(
   PaymentMethods paymentMethods = new PaymentMethods();
   paymentMethods.setExcludedPaymentMethods("master", "amex");
   paymentMethods.setExcludedPaymentTypes("ticket");
+  paymentMethods.setInstallments(12);
 
   preference.setPaymentMethods(paymentMethods);
   // ...

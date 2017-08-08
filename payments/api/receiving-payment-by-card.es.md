@@ -120,7 +120,7 @@ El `bin` corresponde a los primeros 6 dígitos de la tarjeta, y son los que iden
 
 El callback recibe un status y un response. La función deberá almacenar el id de la respuesta en el campo `paymentMethodId` (input hidden), por ejemplo:
 
-```
+```javascript
 function setPaymentMethodInfo(status, response) {
     if (status == 200) {
         paymentMethod.setAttribute('name', "paymentMethodId");

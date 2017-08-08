@@ -15,9 +15,9 @@ Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago e
 ![scheme](https://user-images.githubusercontent.com/8038535/28226783-bce9d6ce-68ad-11e7-99c5-032af709f5cc.png)
 
 1. Crea la preferencia de pago desde tu servidor en los servidores de Mercado Pago.
-1. Inicia el Checkout en tu aplicación, utilizando el id de la preferencia.
-1. El Checkout realizará el pago en los servidores de Mercado Pago.
-1. Suscríbete a las notificaciones para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+2. Inicia el Checkout en tu aplicación, utilizando el id de la preferencia.
+3. El Checkout realizará el pago en los servidores de Mercado Pago.
+4. Suscríbete a las notificaciones para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
 ## Configura tu servidor
 
@@ -32,131 +32,106 @@ Esta entidad es la preferencia de pago y contiene:
 
 [[[
 ```php 
-  <?php  
-    require_once ('mercadopago.php');
-
-    $mp = new MP('ACCESS_TOKEN');
-  ?>
+<?php  
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+?>
 ```
 ```java
-import com.mercadopago.MP;
-import org.codehaus.jettison.json.JSONObject;
-
-MP mp = new MP ("ACCESS_TOKEN");
-```
-```csharp
-using mercadopago;
-using System;xº
-using System.Collections;
-
-MP mp = new MP("ACCESS_TOKEN");
-```
-```javascript
-var MP = require ("mercadopago");
-var mp = new MP ("ACCESS_TOKEN");
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+``` 
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
 ```
 ```ruby
-require 'mercadopago.rb'
-$mp = MercadoPago.new('ACCESS_TOKEN')
-```
-```python
-import mercadopago
-mp = mercadopago.MP("ACCESS_TOKEN")
-```
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+``` 
 ]]]
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
 
 [[[
 ```php
-$payment_data = array(
-	"transaction_amount" => 100,
-	"token" => "ff8080814c11e237014c1ff593b57b4d",
-	"description" => "Title of what you are paying for",
-	"installments" => 1,
-	"payment_method_id" => "visa",
-	"payer" => array (
-		"email" => "test_user_19653727@testuser.com"
-	)
-);
+<?php
+  $preference = new MercadoPago\Preference();
 
-$payment = $mp->post("/v1/payments", $payment_data);
+  $item = new MercadoPago\Item();
+  $item->title = "Multicolor kite";
+  $item->quantity = 1;
+  $item->title = "ARS";
+  $item->unit_price = 10.00;
+
+  $payer = new MercadoPago\Payer();
+  $payer->email = "test_user_19653727@testuser.com"; 
+
+  $preference->items = array($item);
+  $preference->payer = $payer;
+  $preference->save(); 
+?>
 ```
 ```java
-JSONObject payment = mp.post("/v1/payments", "{"+
-			"'transaction_amount': 100,"+
-			"'token': 'ff8080814c11e237014c1ff593b57b4d',"+
-			"'description': 'Title of what you are paying for',"+
-			"'installments': 1,"+
-			"'payment_method_id': 'visa',"+
-			"'payer': {"+
-				"'email': 'test_user_19653727@testuser.com'"+
-			"}"+
-		"}");
-```
-```csharp
-Hashtable payment = mp.post("/v1/payments", "{"+
-			"\"transaction_amount\": 100,"+
-			"\"token\": \"ff8080814c11e237014c1ff593b57b4d\","+
-			"\"description\": \"Title of what you are paying for\","+
-			"\"installments\": 1,"+
-			"\"payment_method_id\": \"visa\","+
-			"\"payer\": {"+
-				"\"email\": \"test_user_19653727@testuser.com\""+
-			"}"+
-		"}");
+
+Preference preference = new Preference();
+
+Item item = new Item();
+item.setId("1234")
+    .setTitle("Multicolor kite")
+    .setQuantity(2)
+    .setCategoryId("ARS")
+    .setUnitPrice((float) 14.5);
+
+Payer payer = new Payer();
+payer.setEmail("demo@mail.com");
+
+preference.setPayer(payer);
+preference.appendItem(item);
+preference.save();
+
 ```
 ```javascript
-var doPayment = mp.post ("/v1/payments",
-	{
-		"transaction_amount": 100,
-		"token": "ff8080814c11e237014c1ff593b57b4d",
-		"description": "Title of what you are paying for",
-		"installments": 1,
-		"payment_method_id": "visa",
-		"payer": {
-			"email": "test_user_19653727@testuser.com"
-		}
-	});
+var preference = {}
 
-doPayment.then (
-	function (payment) {
-		console.log (payment);
-	},
-	function (error){
-		console.log (error);
-	});
+var item = {
+  title: 'Multicolor kite',
+  quantity: 1,
+  currency_id: 'ARS',
+  unit_price: 10.5
+}
+
+var payer = {
+  email: "demo@mail.com"
+}
+
+preference.items = [item]
+preference.payer = payer
+
+mercadopago.preferences.create(preference).then(function (data) {
+   // Do Stuff...
+ }).catch(function (error) {
+   // Do Stuff... 
+ });
 ```
 ```ruby
-paymentData = Hash[
-		"transaction_amount" => 100,
-		"token" => "ff8080814c11e237014c1ff593b57b4d",
-		"description" => "Title of what you are paying for",
-		"installments" => 1,
-		"payment_method_id" => "visa",
-		"payer" => Hash[
-			"email" => "test_user_19653727@testuser.com"
-		]
-	]
+preference = MercadoPago::Preference.new()
 
-payment = $mp.post("/v1/payments", paymentData);
+item = MercadoPago::Item.new()
+item.title="Multicolor kite"
+item.quantity= 1
+item.currency_id = 'ARS'
+item.unit_price = 10.5
 
-puts payment
+payer = MercadoPago::Payer.new() 
+payer.email="demo@mail.com"
 
-```
-```python
-payment = mp.post("/v1/payments", {
-        "transaction_amount": 100,
-        "token": "ff8080814c11e237014c1ff593b57b4d",
-        "description": "Title of what you are paying for",
-        "installments": 1,
-        "payment_method_id": "visa",
-        "payer": {
-            "email": "test_user_19653727@testuser.com"
-        }
-    });
+preference.items = [item]
+preference.payer = payer
 
-print(json.dumps(payment, indent=4))
+preference.save
 ```
 ]]]
 
@@ -181,7 +156,7 @@ Es requerido el envío del `email` de tu comprador.
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
     "identification": {
-      "type": "DNI", // Available ID types at https://api.mercadopago.com/v1/identification_types
+      "type": "DNI", 
       "number": "123456789"
     },
     "address": {
@@ -270,6 +245,7 @@ A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botó
 2. Agrega un campo de texto para mostrar el resultado del pago. 
 3. Pega el siguiente código de ejemplo en **res/layout/activity_main.xml**.
 ===
+
 <FrameLayout xmlns:android='http://schemas.android.com/apk/res/android'
 xmlns:tools='http://schemas.android.com/tools'
 android:layout_width='match_parent'
@@ -311,6 +287,7 @@ android:paddingTop='50dp'/>
 4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
 5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
 ===
+
 import UIKit
 import MercadoPagoSDK
 
@@ -374,6 +351,7 @@ new MercadoPagoCheckout.Builder()
 ===
 El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
+
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
 
@@ -387,6 +365,7 @@ checkout.start()
 ===
 El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
+
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
     MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     [checkout start];

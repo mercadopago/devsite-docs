@@ -20,32 +20,32 @@ Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS
 ### Integrar el checkout es muy fácil:
 
 1. Incluye el SDK en tu proyecto.
-1. Coloca tus credenciales y crea la preferencia de pagos.
-1. Inicia el proceso de pago desde un botón en tu aplicación.
-1. Enterate del pago escuchando las notificaciones que te enviamos.
+2. Coloca tus credenciales y crea la preferencia de pagos.
+3. Inicia el proceso de pago desde un botón en tu aplicación.
+4. Enterate del pago escuchando las notificaciones que te enviamos.
 
 
 ## Añade la dependencia a tu proyecto
 [[[
-```Android
+```android
 ===
 En el archivo **build.gradle** añade el siguiente código.
 Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto. 
 ===
-    dependencies {
-       compile 'com.mercadopago:sdk:3.2.0'
-    }
+dependencies {
+   compile 'com.mercadopago:sdk:3.2.0'
+}
 ```
 ```ios
 ===
 Si en tu proyecto utilizas **CocoaPods**, puedes añadir la dependencia en el **Podfile** del módulo donde nos integres con el siguiente código.
 Sino puedes [descargar el SDK](https://github.com/mercadopago/px-ios/releases) y añadirlo a tu proyecto.
 ===
-    source 'https://github.com/CocoaPods/Specs.git'
-	#Se necesita este parámetro por ser una SDK en swift
-    use_frameworks!
-    platform :ios, '8.0'
-    pod 'MercadoPagoSDK', '3.2.1'
+source 'https://github.com/CocoaPods/Specs.git'
+# Se necesita este parámetro por ser una SDK en swift
+use_frameworks!
+platform :ios, '8.0'
+pod 'MercadoPagoSDK', '3.2.1'
 ```
 ]]]
 
