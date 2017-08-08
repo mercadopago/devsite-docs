@@ -53,8 +53,8 @@ $preference = new MercadoPago\Preference();
 $item = new MercadoPago\Item();
 $item->title = "Multicolor kite";
 $item->quantity = 1;
-$item->title = ARS;
-$item->title = 10.00;
+$item->title = "ARS";
+$item->unit_price = 10.00;
 
 $payer = new MercadoPago\Payer();
 $payer->email = "test_user_19653727@testuser.com"; 
@@ -169,7 +169,7 @@ payer.setName("user-name")
   .setDateCreated("2018-06-02T12:58:41.425-04:00")
   .setPhone((new Phone("11", "4444-4444")))
   .setIdentification((new Identification("DNI", "12345678")))
-  .setAddress((new Address("Street", 123, "5700")))
+  .setAddress((new Address("Street", 123, "5700")));
 ```
 ```javascript
 var payer = {

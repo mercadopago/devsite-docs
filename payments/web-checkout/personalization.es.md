@@ -10,29 +10,67 @@ Por defecto ofrecemos todos los medios de pago disponibles para el país en el e
 Además puedes definir qué medio de pago o qué cantidad de cuotas deseas que se muestren por defecto, así como también la cantidad de cuotas máximas a ofrecer.
 
 
+[[[
+```php
 
-```json
+<?php
 
-"payment_methods": {
-		"excluded_payment_methods": [
-			{
-				"id": "master"
-			}
-		],
-		"excluded_payment_types": [
-			{
-				"id": "ticket"
-			}
-		],
-		
-		"default_payment_method_id": null,
-		"default_installments": null,
-		"installments": 12
-	},
+$preference = new MercadoPago\Preference();
+
+// ...
+
+$preference->payment_methods = array(
+  "excluded_payment_methods" => array(
+    "id" => "master"
+  ),
+  "excluded_payment_types" => array(
+    "id" => "ticket"
+  ),
+  "installments" => "12"
+);
+
+// ...
+
+?>
+
 ```
-
-
-
+```java
+  Preference preference = new Preference();
+  // ...
+  
+  // ...
+```
+```javascript
+  var preference = {}
+  preference = {
+    // ...
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": "master"
+            }
+        ],
+        "excluded_payment_types": [
+            {
+                "id": "ticket"
+            }
+        ], 
+        "installments": 12
+    }
+    // ...
+  }
+```
+```ruby
+preference = MercadoPago::Preference.new
+# ...
+preference.payment_methods = {
+  excluded_payment_methods: [id: "master"],
+  excluded_payment_types: [id: "ticket"],
+  installments: 12
+}
+# ...
+```
+]]]
 
 ### Indica URLs de Retorno
 

@@ -23,16 +23,54 @@ Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
 ### Paso 2: Agrega Mercado Envíos a tu checkout
 Agrega las dimensiones y peso de tus productos en la preferencia de pago.
 
+[[[
+```php
+<?php
+  $shipments = new MercadoPago\Shipments();
+  $shipments->mode = "me2";
+  $shipments->dimensions = "30x30x30,500";
+  $shipments->receiver_address=array(
+		"zip_code" => "5700",
+		"street_number" => 123,
+		"street_name" => "Street",
+		"floor" => 4,
+		"apartment" => "C"
+  );
+?>
 ```
-{
-    ...
-    "shipments": {
-        "mode": "me2",
-        "dimensions": "30x30x30,500"
-    }
-    ...
+```java
+Shipments shipments = new Shipments();
+shipments.setMode(Shipments.ShipmentMode.me2)
+    .setDimensions("30x30x30,500")
+    .setReceiverAddress(new AddressReceiver("5700", 123, "street", 4, "C"));
+```
+```javascript
+var shipments = {
+  "mode": "me2",
+  "dimensions": "30x30x30,500",
+	"receiver_address": {
+		"zip_code": "5700",
+		"street_number": 123,
+		"street_name": "Street",
+		"floor": 4,
+		"apartment": "C"
+	}
+};
+```
+```ruby
+shipment = MercadoPago::Shipment.new
+shipment.mode = me2
+shipment.dimensions = "30x30x30,500"
+shipment.receiver_address = {
+	zip_code: "5700",
+	street_number: 123,
+	street_name: "Street",
+	floor: 4,
+	apartment: "C"
 }
 ```
+]]]
+ 
 > NOTE
 >
 > Nota
@@ -44,37 +82,83 @@ Agrega las dimensiones y peso de tus productos en la preferencia de pago.
 #### Retiro por sucursal
 Puedes ofrecer la posibilidad de retirar el producto por tu local, indicandole al comprador dónde y cuándo debe retirarlo. Para esto, debes incluir:
 
+[[[
+```php
+<?php
+  $shipments = new MercadoPago\Shipments();
+  // ...
+  $shipments->local_pickup = true; 
+  // ...
+?>
 ```
-{
-    ...
-    "shipments": {
-        "mode": "me2",
-        "dimensions": "30x30x30,500",
-        "local_pickup": true
-    }
-    ...
+```java
+Shipments shipments = new Shipments();
+// ...
+shipments.setLocalPickup(true);
+// ...
+```
+```javascript
+var shipments = {
+  //..
+  "local_pickup": true
+  //..
 }
 ```
+```ruby
+shipment = MercadoPago::Shipment.new
+# ...
+shipment.local_pickup = true
+# ...
+```
+]]]
 
 #### Ofrece envíos gratis
 
 Debes indicar el medio de envío que vas a ofrecer de manera gratuita. El monto del mismo te será debitado de tu cuenta al momento de recibir un pago.
 
+[[[
+```php
+<?php
+  $shipments = new MercadoPago\Shipments();
+  // ...
+  $shipments->free_methods = array(
+    array("id"=>73328)
+  ); 
+  // ...
+?>
 ```
-{
-    ...
-    "shipments": {
-        "mode": "me2",
-        "dimensions": "30x30x30,500",
-        "free_methods": [
-            {
-                "id": 73328
-            }
-        ]
-    }
-    ...
+```java
+Shipments shipments = new Shipments();
+// ...
+shipments.setFreeMethods(
+  
+);
+// ...
+```
+```javascript
+var shipments = {
+  //..
+  "free_methods": [
+      {
+          "id": 73328
+      }
+    ],
+  //..
 }
 ```
+```ruby
+shipment = MercadoPago::Shipment.new
+# ...
+shipment.free_methods = [
+  {
+    id: 73328
+  }
+]
+# ...
+```
+]]]
+
+ 
 
 Consulta los id de [medio de envío](https://api.mercadolibre.com/sites/MLA/shipping_methods?marketplace=NONE) disponibles.
 
@@ -86,178 +170,145 @@ Un ejemplo de Checkout con MercadoEnvíos queda de la siguiente manera:
 [[[
 ```php
 <?php
-  require_once ('mercadopago.php');
 
-  $mp = new MP('CLIENT_ID', 'CLIENT_SECRET');
+  $preference = new MercadoPago\Preference();
+  
+  $item = new MercadoPago\Item();
+  $item->title = "Multicolor kite";
+  $item->quantity = 1;
+  $item->currency_id = "ARS";
+  $item->unit_price = 10.00;
 
-  $preference_data = array(
-  	"items" => array(
-  		array(
-  			"title" => "Multicolor kite",
-  			"quantity" => 1,
-  			"currency_id" => "ARS", // Available currencies at: https://api.mercadopago.com/currencies
-  			"unit_price" => 10.00
-  		)
-  	),
-  	"shipments" => array(
-  		"mode" => "me2",
-  		"dimensions" => "30x30x30,500",
-  		"local_pickup" => true,
-  		"free_methods" => array(
-  			array(
-  				"id" => 73328
-  			)
-  		),
-  		"default_shipping_method" => 73328,
-  		"zip_code" => "5700"
-  	)
+  $payer = new MercadoPago\Payer();
+  $payer->email = "test_user@testuser.com"; 
+  
+  $shipments = new MercadoPago\Shipments();
+  $shipments->mode = "me2";
+  $shipments->dimensions = "30x30x30,500";
+  $shipment->default_shipping_method = 73328;
+  $shipments->free_methods = array(
+    array("id"=>73328)
+  ); 
+  $shipments->receiver_address=array(
+		"zip_code" => "5700",
+		"street_number" => 123,
+		"street_name" => "Street",
+		"floor" => 4,
+		"apartment" => "C"
   );
+  
 
-  $preference = $mp->create_preference($preference_data);
+  $preference->items = array($item);
+  $preference->payer = $payer;
+  $preference->save();
+  $preference->shipments = $shipments;
+  
+  $preference->save();
+  
 ?>
 ```
 ```java
-MP mp = new MP("CLIENT_ID", "CLIENT_SECRET");
+Preference preference = new Preference();
 
-	String preferenceData = "{'items':"+
-		"[{"+
-			"'title':'Multicolor kite',"+
-			"'quantity':1,"+
-			"'currency_id':'MXN',"+ // Available currencies at: https://api.mercadopago.com/currencies
-			"'unit_price':10.0"+
-		"}],"+
-		"'shipments':{"+
-			"'mode':'me2',"+
-			"'dimensions':'30x30x30,500',"+
-			"'local_pickup':true,"+
-			"'free_methods':["+
-				"{'id':501245}"+
-			"],"+
-			"'default_shipping_method':501245,"+
-			"'zip_code':'22615'"+
-		"}"+
-	"}";
+Item item = new Item();
+item.setId("1234")
+    .setTitle("Multicolor kite")
+    .setQuantity(2)
+    .setCategoryId("ARS")
+    .setUnitPrice((float) 14.5);
 
-	JSONObject preference = mp.createPreference(preferenceData);
+Payer payer = new Payer();
+payer.setEmail("demo@mail.com");
 
-	String initPoint = preference.getJSONObject("response").getString("init_point");
-```
-```csharp
-<%@ Page Language="c#" %>
-<%@ Import Namespace="mercadopago" %>
-<%@ Import Namespace="System.Collections" %>
+Shipments shipments = new Shipments();
+shipments.setMode(Shipments.ShipmentMode.me2)
+    .setDimensions("30x30x30,500")
+    .setReceiverAddress(new AddressReceiver("5700", 123, "street", 4, "C"));
 
-<%
-	MP mp = new MP("CLIENT_ID", "CLIENT_SECRET");
-	
-	String preferenceData = "{\"items\":"+
-		"[{"+
-			"\"title\":\"Multicolor kite\","+
-			"\"quantity\":1,"+
-			"\"currency_id\":\"MXN\","+ <%-- Available currencies at: https://api.mercadopago.com/currencies --%>
-			"\"unit_price\":10.0"+
-		"}],"+
-		"\"shipments\":{"+
-			"\"mode\":\"me2\","+
-			"\"dimensions\":\"30x30x30,500\","+
-			"\"local_pickup\":true,"+
-			"\"free_methods\":["+
-				"{\"id\":501245}"+
-			"],"+
-			"\"default_shipping_method\":501245,"+
-			"\"zip_code\":\"22615\""+
-		"}"+
-	"}";
+preference.setPayer(payer);
+preference.appendItem(item);
+preference.setShipments(shipments);
 
-	Hashtable preference = mp.createPreference(preferenceData);    
-%>
-```
+preference.save();
+
+``` 
 ```javascript
-exports.run = function (req, res) {
-    var mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+var preference = {}
 
-    var preference = {
-        "items": [
-            {
-                "title": "Multicolor kite",
-                "quantity": 1,
-                "currency_id": "MXN", // Available currencies at: https://api.mercadopago.com/currencies
-                "unit_price": 10.0
-            }
-        ],
-        "shipments": {
-            "mode": "me2",
-            "dimensions": "30x30x30,500",
-            "local_pickup": true,
-            "free_methods": [
-                {"id": 501245}
-            ],
-            "default_shipping_method": 501245,
-            "zip_code": "22615"
-        }
-    };
+var item = {
+  "title": 'Multicolor kite',
+  "quantity": 1,
+  "currency_id": 'ARS',
+  "unit_price": 10.5
+}
 
-    mp.createPreference (preference, function (err, data){
-        if (err) {
-            res.send (err);
-        } else {
-            res.render ("button", {"preference": data});
-        }
-    });
+var payer = {
+  "email": "demo@mail.com"
+}
+
+var shipments = {
+  "mode": "me2",
+  "dimensions": "30x30x30,500",
+	"receiver_address": {
+		"zip_code": "5700",
+		"street_number": 123,
+		"street_name": "Street",
+		"floor": 4,
+		"apartment": "C" 
+	},
+  "free_methods": [
+    {
+      "id": 73328
+    }
+  ]
+  
 };
+
+preference.items = [item]
+preference.payer = payer
+preference.shipments = shipments
+
+mercadopago.preferences.create(preference).then(function (data) {
+   // Do Stuff...
+ }).catch(function (error) {
+   // Do Stuff... 
+ });
+
 ```
 ```ruby
-mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
-		preferenceData = {
-			"items" => [
-				[
-					"title"=>"Multicolor kite",
-					"quantity"=>1,
-					"unit_price"=>10.0,
-					"currency_id"=>"MXN" # Available currencies at: https://api.mercadopago.com/currencies
-				]
-			],
-			"shipments" => [
-				"mode" => "me2",
-				"dimensions"=>"30x30x30,500",
-				"local_pickup" => true,
-				"free_methods" => [
-					[
-						"id" => 501245
-					]
-				],
-				"default_shipping_method" => 501245,
-				"zip_code" => "22615"
-			]
-		}
-		preference = mp.create_preference(preferenceData)
-```
-```python
-preference = {
-		"items": [
-			{
-				"title": "Multicolor kite",
-				"quantity": 1,
-				"currency_id": "MXN", # Available currencies at: https://api.mercadopago.com/currencies
-				"unit_price": 10.0
-			}
-		],
-		"shipments": {
-			"mode": "me2",
-			"dimensions": "30x30x30,500",
-			"local_pickup": true,
-			"free_methods": [
-				{"id": 501245}
-			],
-			"default_shipping_method": 501245,
-			"zip_code": "22615"
-		}
-	}
-	mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
 
-	preferenceResult = mp.create_preference(preference)
+preference = new MercadoPago::Preference.new();
+item = MercadoPago::Item.new()
+item.title="Multicolor kite"
+item.quantity= 1
+item.currency_id = 'ARS'
+item.unit_price = 10.5
 
-	url = preferenceResult["response"]["init_point"]
+payer = MercadoPago::Payer.new() 
+payer.email="demo@mail.com"
+
+shipment = MercadoPago::Shipment.new
+shipment.mode = me2
+shipment.dimensions = "30x30x30,500"
+shipment.receiver_address = {
+	zip_code: "5700",
+	street_number: 123,
+	street_name: "Street",
+	floor: 4,
+	apartment: "C"
+}
+shipment.free_methods = [
+  {
+    id: 73328
+  }
+]
+
+preference.items = [item]
+preference.payer = payer
+preference.shipment = shipment
+
+preference.save
+ 
 ```
 ]]]
 
