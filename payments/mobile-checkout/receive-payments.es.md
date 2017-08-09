@@ -496,7 +496,7 @@ Las notificaciones son la forma automática de enterarte de tus nuevos pagos y l
 
 Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](../../notifications/ipn.es.md) para conocer más sobre esto.
+Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
 
 ## Prueba la integración
 
@@ -504,8 +504,8 @@ Prueba tu integración antes de salir a producción, a fin de verificar el funci
 
 Para ello debes usar usuario y tarjetas de prueba.
 
-Visita la sección [Probando](./testing.es.md) para más información.
+Visita la sección [Probando](/guides/notifications/testing.es.md) para más información.
 
 ### Próximos pasos
 
-- Visita la sección [Personalización](./personalization.es.md) para adecuar el flujo de pago a tus necesidades.
+- Visita la sección [Personalización](/guides/payments/mobile-checkout/personalization.es.md) para adecuar el flujo de pago a tus necesidades.

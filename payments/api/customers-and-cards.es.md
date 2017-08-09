@@ -20,26 +20,87 @@ El `token` es el que capturaste cuando estabas haciendo la [captura de datos de 
 
 > INFO
 >
-> recomendamos almacenar los datos de tarjeta luego de que hayas realizado un pago de forma exitosa, para asegurarte de que los mismos sean correctos.
+> Recomendamos almacenar los datos de tarjeta luego de que hayas realizado un pago de forma exitosa, para asegurarte de que los mismos sean correctos.
 
-```php
-<?php
+[[[
+```php 
 
-require_once ('mercadopago.php');
+<?php  
 
-$mp = new MP ("ENV_ACCESS_TOKEN");
-
-$customer = $mp->post(
-	"/v1/customers", 
-	array(
-		"email" => "test@test.com",
-		"token" => "9b2d63e00d66a8c721607214cedaecda"
-	)
-);
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  
+  $customer = new MercadoPago\Customer();
+  $customer->email = "test@test.com";
+  $customer->save();
+  
+  $card = new MercadoPago\Card();
+  $card->token = "9b2d63e00d66a8c721607214cedaecda";
+  $card->customerId = $customer->getId;
+  $card->save();
+  
 ?>
 ```
+```java
 
-Respuesta esperada:
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Customer customer = new Customer();
+customer.setEmail("test@test.com");
+customer.save();
+
+Card card = new Card();
+card.setToken("9b2d63e00d66a8c721607214cedaecda");
+card.setCustomerId(customer.getID());
+card.save();
+
+``` 
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
+
+customer_data = { "email": "test@test.com" }
+
+mercadopago.customers.create(customer_data).then(function (customer) {
+  
+  card_data = {
+    "token": "9b2d63e00d66a8c721607214cedaecda",
+    "customer": customer.id
+  }
+  
+  mercadopago.cards.create(card_data).then(function (card) {
+    
+  }).catch(function (error) {
+   // Do Stuff... 
+  });
+  
+}).catch(function (error) {
+ // Do Stuff... 
+});
+
+```
+```ruby
+
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+customer = MercadoPago::Customer.new()
+customer.email = "test@test.com"
+customer.save
+
+card = MercadoPago::Card.new()
+card.token = "9b2d63e00d66a8c721607214cedaecda"
+card.customer_id = customer.id
+card.save 
+
+``` 
+]]]
+
+Respuesta del Servidor:
 
 ```json
 {
@@ -71,13 +132,43 @@ Puedes listar las tarjetas almacenadas para que tu cliente elija con cuál quier
 
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 
+[[[
 ```php
 <?php
-	$cards = $mp->get("/v1/customers/".$customer_id."/cards");
+	$customer = MercadoPago\Customer::load($customer_id);
+  $cards = $customer->cards();
 ?>
 ```
+```java 
+  
+  Customer customer = Customer.load(customerId)
+  ArrayList<Cards> cards = customer.getCards();
+  
+```
+```node 
+  
+  var filters = {
+    id: customer_id
+  };
 
-Respuesta:
+  mercadopago.searchCustomer({
+    qs: filters
+  }).then(function (customer) {
+    // customer.cards ...
+  }).catch(function (error) {
+    // Do Stuff...
+  });
+  
+```
+```ruby
+ 
+	customer = MercadoPago::Customer.load(customer_id);
+  cards = customer.cards;
+
+```
+]]]
+
+Datos de una Tarjeta Guardada:
 
 ```json
 [{
@@ -90,7 +181,7 @@ Respuesta:
 }]
 ```
 
-Con esta respuesta recomendamos realizar un formulario:
+Con esta Informacion recomendamos construir un formulario:
 
 ```html
 <li>
@@ -113,7 +204,7 @@ Con esta respuesta recomendamos realizar un formulario:
 
 ### 2. Captura el código de seguridad
 
-El flujo de captura es casi el mismo que realizaste al [capturar los datos de la tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta). Debes crear un `card token` enviando el `$form` con el `cardId` y el `securityCode`:
+El flujo de captura es casi el mismo que realizaste al [capturar los datos de la tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta). Debes crear un `card token` enviando el `$form` con el `cardId` y el `securityCode`:
 
 ```javascript
 doSubmit = false;
@@ -145,24 +236,82 @@ Una vez obtenido el token del paso anterior, podrás generar el pago por el mont
 
 Al ser un pago con tarjeta guardada, deberás enviar el id de customer asociado junto al token.
 
-```php
-<?php
-	require_once ('mercadopago.php');
-	
-	$mp = new MP('ACCESS_TOKEN');
-	
-	$payment_data = array(
-		"transaction_amount" => 100,
-		"token" => "ff8080814c11e237014c1ff593b57b4d",
-		"payer" => array(
-			"type" => "customer",
-			"id" => "123456789-jxOV430go9fx2e"
-		)
+[[[
+```php 
+<?php  
+
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+  
+  $payment = new MercadoPago\Payment();
+  
+  $payment->transaction_amount = 100;
+  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
+  $payment->payer = array(
+		"type" => "customer",
+		"id" => "123456789-jxOV430go9fx2e"
 	);
-	
-	$payment = $mp->post("/v1/payments", $payment_data);
+  
+  $payment->save();
+    
 ?>
 ```
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.type = "customer";
+payer.id = "123456789-jxOV430go9fx2e";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(100);
+payment.setToken('ff8080814c11e237014c1ff593b57b4d');
+payment.setPayer(payer);
+
+payment.save();
+
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = { 
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d' 
+  payer: {
+    type: "customer"
+    id: "123456789-jxOV430go9fx2e"
+  }
+};
+  
+mercadopago.payment.create(payment_data).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+```
+```ruby
+
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.token = 'ff8080814c11e237014c1ff593b57b4d' 
+payment.payer = { 
+  type: "customer"
+  id: "123456789-jxOV430go9fx2e"
+}
+
+payment.save()
+
+``` 
+]]]
+
 
 Eso es todo, la respuesta tendrá el estado del pago (`approved`, `rejected` o `in_process`). 
 
@@ -173,22 +322,88 @@ Eso es todo, la respuesta tendrá el estado del pago (`approved`, `rejected` o `
 
 Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `token` y hacer un request `HTTP POST` al `Customer`.
 
-```php
-<?php
-	require_once ('mercadopago.php');
-	
-	$mp = new MP ("ACCESS_TOKEN");
-	
-	$customer_id = '247711297-jxOV430go9fx2e';
-	
-	$card = $mp->post(
-		"/v1/customers/".$customer_id."/cards",
-		array("token" => "ff8080814c11e237014c1ff593b57b4d")
-	);
-	
-	print_r ($card);
+
+[[[
+```php 
+
+<?php  
+
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  
+  $customer = MercadoPago\Customer::load("247711297-jxOV430go9fx2e");
+  
+  $card = new MercadoPago\Card();
+  $card->token = "9b2d63e00d66a8c721607214cedaecda";
+  $card->customerId = $customer->getId;
+  $card->save();
+  
+  print_r($card);
+  
 ?>
 ```
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Customer customer = Customer.load("247711297-jxOV430go9fx2e")
+
+Card card = new Card();
+card.setToken("9b2d63e00d66a8c721607214cedaecda");
+card.setCustomerId(customer.getID());
+card.save();
+
+System.out.print(card.toString());
+
+``` 
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
+
+var filters = {
+  id: "247711297-jxOV430go9fx2e"
+};
+
+mercadopago.searchCustomer({
+  qs: filters
+}).then(function (customer) {
+  card_data = {
+    "token": "9b2d63e00d66a8c721607214cedaecda",
+    "customer": customer.id
+  }
+  
+  mercadopago.cards.create(card_data).then(function (card) {
+    console.log(card);
+  }).catch(function (error) {
+   // Do Stuff... 
+  });
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+ 
+```
+```ruby
+
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+customer = MercadoPago::Customer.load("247711297-jxOV430go9fx2e") 
+
+card = MercadoPago::Card.new()
+card.token = "9b2d63e00d66a8c721607214cedaecda"
+card.customer_id = customer.id
+card.save 
+
+puts card
+
+``` 
+]]]
+ 
 
 Respuesta:
 
@@ -233,16 +448,48 @@ Respuesta:
 
 En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
 
+[[[
 ```php
 <?php
-  $customer = array (
-      "email" => "your.payer@email.com"
+  
+  $filters = array(
+    "id"=>"247711297-jxOV430go9fx2e"
   );
+  
+  $customers = MercadoPago\Customer::search($filters);
 
-  $saved_customer = $mp->get("/v1/customers/search", $customer);
-  $customer_id = $saved_customer["response"]["results"][0]["id"];
 ?>
 ```
+```java 
+
+  Map<String, String> filters = new HashMap<>();
+  filters.put("email", "test@test.com"); 
+  
+  ArrayList<Customer> customers = MercadoPago\Customer::search(filters).resources();
+  
+   
+```
+```node 
+
+  var filters = {
+    email: "test@test.com"
+  };
+
+  mercadopago.searchCustomer({
+    qs: filters
+  }).then(function (customer) {
+    // customer.cards ...
+  }).catch(function (error) {
+    // Do Stuff...
+  });
+   
+```
+```ruby 
+
+	customers = MercadoPago::Customer.search(email: "test@test.com");
+   
+```
+]]]
 
 Respuesta: 
 
@@ -296,12 +543,41 @@ Respuesta:
 
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 
+[[[
 ```php
 <?php
-  $cards = $mp->get("/v1/customers/".$customer_id."/cards");
-  print_r($cards);
+	$customer = MercadoPago\Customer::load($customer_id);
+  $cards = $customer->cards();
 ?>
 ```
+```java 
+  
+  Customer customer = Customer.load(customerId)
+  ArrayList<Cards> cards = customer.getCards();
+  
+```
+```node 
+  
+  var filters = {
+    id: customer_id
+  };
+
+  mercadopago.searchCustomer({
+    qs: filters
+  }).then(function (customer) {
+    // customer.cards ...
+  }).catch(function (error) {
+    // Do Stuff...
+  });
+  
+```
+```ruby
+ 
+	customer = MercadoPago::Customer.load(customer_id);
+  cards = customer.cards;
+
+```
+]]]
 
 Respuesta:
 

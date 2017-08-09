@@ -261,7 +261,7 @@ payment.save();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var payment = { 
+var payment_data = { 
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
   description: 'Title of what you are paying for',
@@ -272,7 +272,7 @@ var payment = {
   }
 };
   
-mercadopago.payment.create(payment).then(function (data) {
+mercadopago.payment.create(payment_data).then(function (data) {
   // Do Stuff...
 }).catch(function (error) {
   // Do Stuff...
@@ -468,7 +468,7 @@ payment.save()
 
 Es **muy importante** comunicar correctamente los resultados recibidos al crear un pago. Esto ayudará a mejorar la conversión en los casos de rechazos, y evitar contracargos en los casos de transacciones aprobadas.
 
-Te recomendamos leer el artículo sobre el [manejo de respuestas](handling-responses.es.md) y utilizar la comunicación sugerida en cada uno de los casos.
+Te recomendamos leer el artículo sobre el [manejo de respuestas](/guides/payments/api/handling-responses.es.md) y utilizar la comunicación sugerida en cada uno de los casos.
 
 ## Recibir una notificación del pago
 
@@ -476,7 +476,7 @@ Es importante que te enteres de cualquier actualización del estado de tu pago. 
 
 Un _Webhook_ es una notificación que se envía de un servidor a otro mediante un request `HTTP POST`.
 
-Puedes encontrar toda la información al respecto en el [artículo de webhooks](../../notifications/webhooks.es.md).
+Puedes encontrar toda la información al respecto en el [artículo de webhooks](/guides/notifications/webhooks.es.md).
 
 ## Próximos pasos
 
@@ -484,4 +484,4 @@ Puedes encontrar toda la información al respecto en el [artículo de webhooks](
 
 Puedes almacenar de forma segura las tarjetas de tus clientes y realizar pagos con una experiencia one-click-to-buy.
 
-[Más información](customers-and-cards.es.md)
+[Más información](/guides/payments/api/customers-and-cards.es.md)
