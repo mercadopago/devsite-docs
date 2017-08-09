@@ -19,4 +19,4 @@ Cuentas con un par de claves privadas para conectarte con la API. Estas claves l
 Las **credenciales privadas** (también llamada `access_token`), se utilizan para todas las llamadas a las APIs, como procesar un pago, realizar reembolsos, y más. Las claves privadas deben ser mantenidas **confidencialmente** en tus servidores de backend y nunca deben ser publicadas.
 
 
-#### Comenzar a crear [subscripciones](create-subscription.es.md)
+#### Comenzar a crear [subscripciones](/guides/subscriptions/web-checkout/create-subscription.es.md)

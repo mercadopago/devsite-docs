@@ -22,7 +22,7 @@ Además te brindaremos un **Código HTML** que puedes incluir en tu sitio web y 
 
 > En Argentina, el procesamiento con tarjeta VISA demora hasta 48hs, por lo que tus pagos quedarán pendientes durante ese plazo.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Suscripciones vía API](../API/introduction.es.md).
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Suscripciones vía API](/guides/subscriptions/api/introduction.es.md).
 
 
 ### [Crear botón de suscripción](https://www.mercadopago.com.ar/subscription-plans/create)

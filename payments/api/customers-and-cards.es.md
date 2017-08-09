@@ -36,7 +36,7 @@ El `token` es el que capturaste cuando estabas haciendo la [captura de datos de 
   
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
-  $card->customerId = $customer->getId;
+  $card->customerId = $customer->getId();
   $card->save();
   
 ?>
@@ -52,7 +52,7 @@ customer.save();
 
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
-card.setCustomerId(customer.getID());
+card.setCustomerId(customer.getId());
 card.save();
 
 ``` 

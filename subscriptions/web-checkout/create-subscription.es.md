@@ -11,35 +11,117 @@ Una preferencia de subscripción contiene todo el detalle del producto o servici
 2. Frecuencia de la subscripción.
 3. ID de referencia de tu sistema.
 
-Para crear una preferencia de subscripción debes [instalar el SDK de Mercado Pago](/plugins) y configurar el objeto **MP** con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
+Para crear una preferencia de subscripción debes [instalar el SDK de Mercado Pago](/plugins) con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
 
+[[[
 ```php
 <?php
-  require_once('mercadopago.php');
-  $mp = new MP("ENV_ACCESS_TOKEN");
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 ?>
 ```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+```
+]]]
 
 Luego, deberás agregar los atributos de tu preferencia:
 
+[[[
 ```php
 <?php
-  $preapproval_data = array(
-  	"payer_email" => "my_customer@my-site.com",
-  	"back_url" => "http://www.my-site.com",
-  	"reason" => "Monthly subscription to premium package",
-  	"external_reference" => "OP-1234",
-  	"auto_recurring" => array(
-  		"frequency" => 1,
-  		"frequency_type" => "months",
-  		"transaction_amount" => 60,
-  		"currency_id" => "ARS"
-  	)
-  );
 
-  $preapproval = $mp->create_preapproval_payment($preapproval_data);
+  $preapproval = new MercadoPago\Preapproval();
+  $preapproval->payer_email = "my_customer@my-site.com";
+  $preapproval->back_url = "http://www.my-site.com";
+  $preapproval->reason = "Monthly subscription to premium package";
+  $preapproval->external_reference = "OP-1234";
+  $preapproval->auto_recurring = array(
+		"frequency" => 1,
+		"frequency_type" => "months",
+		"transaction_amount" => 60,
+		"currency_id" => "ARS"
+  );
+  
+  $preapproval->save();
+  
 ?>
 ```
+```java
+
+AutoRecurring autoRecurring = new AutoRecurring();
+autoRecurring.setFrequency(1);
+autoRecurring.setFrequencyType("Months");
+autoRecurring.setTransactionAmount(60);
+autoRecurring.setCurrencyId("ARS");
+
+Preapproval preapproval = new Preapproval();
+preapproval.setPayerEmail("my_customer@my-site.com");
+preapproval.setBackUrl("http://www.my-site.com");
+preapproval.setReason("Monthly subscription to premium package");
+preapproval.setExternalReference("OP-1234");
+preapproval.setAutoRecurring(autoRecurring);
+preapproval.save();
+  
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
+
+preapproval_data = {
+  payer_email: "my_customer@my-site.com",
+  back_url: "http://www.my-site.com",
+  reason: "Monthly subscription to premium package",
+  external_reference: "OP-1234",
+  auto_recurring: {
+    frequency: 1,
+    frequency_type: "months",
+    transaction_amount: 60,
+    currency_id: "ARS"
+  }
+}
+
+mercadopago.preapproval.create(preapproval_data).then(function (card) {
+  // Do Stuff... 
+}).catch(function (error) {
+  // Do Stuff... 
+});
+
+```
+```ruby
+
+preapproval = MercadoPago::Preapproval.new()
+preapproval.payer_email = "my_customer@my-site.com"
+preapproval.back_url = "http://www.my-site.com"
+preapproval.reason = "Monthly subscription to premium package"
+preapproval.external_reference = "OP-1234"
+preapproval.auto_recurring = {
+  frequency: 1,
+  frequency_type: "months",
+  transaction_amount: 60,
+  currency_id: "ARS"
+}
+
+preapproval.save()
+
+```
+]]]
+
+  
 > Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu subscripción](#añade-características-especiales-a-tu-subscripción).
 
 
@@ -71,7 +153,7 @@ Si la subscripción se encuentra activa se intentará cobrar en el próximo peri
 
 Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
-Visita la sección [Notificaciones](../../notifications/ipn.es.md) para más información.
+Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para más información.
 
 
 ## 4. Prueba tu integración
@@ -80,7 +162,7 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 
 Para ello debes usar usuarios y tarjetas de prueba.
 
-Visita la sección [Probando](./testing.es.md) para más información.
+Visita la sección [Probando](/guides/payments/api/testing.es.md) para más información.
 
 ## Añade características especiales a tu subscripción
 
