@@ -13,6 +13,21 @@ Puedes cambiar el monto de los planes en cualquier momento. A partir del momento
 
 Para cambiar el monto de un plan debes hacerlo de la siguiente manera:
 
+[[[
+```php
+
+```
+```java
+
+```
+```node
+
+```
+```ruby
+
+```
+]]]
+
 ```php
 <?php
 require_once ('mercadopago.php');

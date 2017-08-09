@@ -13,16 +13,55 @@ Puedes cambiar el monto de las subscripciones en cualquier momento. A partir del
 
 Para cambiar el monto de una subscripción debes hacerlo de la siguiente manera:
 
+[[[
+```php
+<?php 
+
+  $preapproval = MercadoPago\Preapproval::load($preapproval_id);
+  $preapproval->auto_recurring["transaction_amount"] =  500;
+  $preapproval->update();
+  
+?>
+```
+```java
+Preapproval preapproval = Preapproval.load(preapprovalId);
+
+AutoRecurring autoRecurring = preapproval.getAutoRecurring();
+autoRecurring.setTransactionAmount(500);
+
+preapproval.setAutoRecurring(autoRecurring);
+preapproval.update();
+
+```
+```node
+
+mercadopago.preapproval.update({
+  id: preapprovalId,
+  auto_recurring: {
+    "transaction_amount": 500
+  }
+}).then().catch();
+
+```
+```ruby
+preapproval = MercadoPago::Preapproval.load(preapprovalId)
+preapproval.autoRecurring.transaction_amount = 500
+preapproval.update()
+```
 ```curl
 curl -X PUT \
         -H "Content-Type: application/json" \
         'https://api.mercadopago.com/preapproval/PREAPPROVAL_ID?access_token=ACCESS_TOKEN' \
         -d '{
               "auto_recurring": {
-                  "transaction_amount": NEW_AMOUNT
+                  "transaction_amount": 500
               }
         }'
 ```
+
+]]]
+
+
 
 **Respuesta:**
 
@@ -35,7 +74,7 @@ HTTP status code: 200 OK
   ...
   "auto_recurring": {
       ...
-      "transaction_amount": NEW_AMOUNT,
+      "transaction_amount": 500,
       ...
   }
   ...
@@ -52,6 +91,35 @@ Puedes pausar las subscripciones en cualquier momento. De este modo, no se les c
 
 Para pausar una subscripción debes hacerlo de la siguiente manera:
 
+[[[
+```php
+<?php 
+
+  $preapproval = MercadoPago\Preapproval::load($preapproval_id);
+  $preapproval->status = "paused";
+  $preapproval->update();
+  
+?>
+```
+```java
+Preapproval preapproval = Preapproval.load(preapprovalId);
+preapproval.setStatus("paused");
+preapproval.update();
+
+```
+```node
+
+mercadopago.preapproval.update({
+  id: preapprovalId,
+  status: "paused"
+}).then().catch();
+
+```
+```ruby
+preapproval = MercadoPago::Preapproval.load(preapprovalId)
+preapproval.status = "paused"
+preapproval.update()
+```
 ```curl
 curl -X PUT \
         -H 'accept: application/json' \
@@ -61,6 +129,8 @@ curl -X PUT \
                 "status": "paused"
         }'
 ```
+]]]
+
 
 **Respuesta:**
 
@@ -77,6 +147,36 @@ HTTP status code: 200 OK
 
 Para reactivar una subscripción debes hacerlo de la siguiente manera:
 
+
+[[[
+```php
+<?php 
+
+  $preapproval = MercadoPago\Preapproval::load($preapproval_id);
+  $preapproval->status = "authorized";
+  $preapproval->update();
+  
+?>
+```
+```java
+Preapproval preapproval = Preapproval.load(preapprovalId);
+preapproval.setStatus("authorized");
+preapproval.update();
+
+```
+```node
+
+mercadopago.preapproval.update({
+  id: preapprovalId,
+  status: "authorized"
+}).then().catch();
+
+```
+```ruby
+preapproval = MercadoPago::Preapproval.load(preapprovalId)
+preapproval.status = "authorized"
+preapproval.update()
+```
 ```curl
 curl -X PUT \
         -H 'accept: application/json' \
@@ -86,6 +186,9 @@ curl -X PUT \
                 "status": "authorized"
         }'
 ```
+]]]
+
+
 
 **Respuesta:**
 
@@ -112,6 +215,36 @@ Puedes cancelar las subscripciones en cualquier momento. De este modo, se dejar�
 
 Para cancelar una subscripción debes hacerlo de la siguiente manera:
 
+
+[[[
+```php
+<?php 
+
+  $preapproval = MercadoPago\Preapproval::load($preapproval_id);
+  $preapproval->status = "cancelled";
+  $preapproval->update();
+  
+?>
+```
+```java
+Preapproval preapproval = Preapproval.load(preapprovalId);
+preapproval.setStatus("cancelled");
+preapproval.update();
+
+```
+```node
+
+mercadopago.preapproval.update({
+  id: preapprovalId,
+  status: "cancelled"
+}).then().catch();
+
+```
+```ruby
+preapproval = MercadoPago::Preapproval.load(preapprovalId)
+preapproval.status = "cancelled"
+preapproval.update()
+```
 ```curl
 curl -X PUT \
         -H 'accept: application/json' \
@@ -121,6 +254,8 @@ curl -X PUT \
                 "status": "cancelled"
         }'
 ```
+]]]
+
 
 **Respuesta:** 
 

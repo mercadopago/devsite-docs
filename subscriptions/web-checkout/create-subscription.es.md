@@ -95,7 +95,7 @@ preapproval_data = {
   }
 }
 
-mercadopago.preapproval.create(preapproval_data).then(function (card) {
+mercadopago.preapproval.create(preapproval_data).then(function (data)) {
   // Do Stuff... 
 }).catch(function (error) {
   // Do Stuff... 

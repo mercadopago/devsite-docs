@@ -6,8 +6,8 @@ Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 > 
 > Pre-requisitos
 > 
-> * Tener implementada la [captura de datos de tarjeta](../../payments/receiving-payment-by-card.es.md).
-> * Almacenar [clientes y tarjetas](../../payments/customers-and-cards.es.md).
+> * Tener implementada la [captura de datos de tarjeta](/guides/payments/receiving-payment-by-card.es.md).
+> * Almacenar [clientes y tarjetas](/guides/payments/customers-and-cards.es.md).
 
 
 ## 1. Crea un plan de subscripción
@@ -16,6 +16,59 @@ El plan contiene la información de periodicidad de cobro y monto a cobrar.
 
 Para crearlo debes realizar un request POST:
 
+[[[
+```php
+<?php
+  $plan = new MercadoPago\Plan();
+  $plan->description = "Monthly premium package";
+  $plan->auto_recurring = array(
+    "frequency" => 1,
+    "frequency_type" => "months",
+    "transaction_amount" => 200
+  );
+  $plan->save();
+?>
+```
+```java
+AutoRecurring autoRecurring = new AutoRecurring();
+autoRecurring.setFrequency(1);
+autoRecurring.setFrequencyType("Months");
+autoRecurring.setTransactionAmount(200); 
+
+Plan plan = new Plan();
+plan.setDescription("Monthly premium package");
+plan.setAutoRecurring(autoRecurring);
+plan.save();
+```
+```node
+
+plan_data = {
+      "description": "Monthly premium package",
+      "auto_recurring": {
+              "frequency": 1,
+              "frequency_type": "months",
+              "transaction_amount": 200
+      }
+}
+
+mercadopago.plan.create(plan_data).then(function (data) {
+  // Do Stuff... 
+}).catch(function (error) {
+  // Do Stuff... 
+});
+```
+```ruby
+
+plan = MercadoPago::Plan.new();
+plan.description = "Monthly premium package";
+plan.auto_recurring = {
+  frequency: 1,
+  frequency_type: "months",
+  transaction_amount: 200
+}
+plan.save();
+
+```
 ```curl
 curl -X POST \
         -H 'accept: application/json' \
@@ -30,6 +83,9 @@ curl -X POST \
                 }
         }'
 ```
+]]]
+
+
 
 > Estos son los datos mínimos e indispensables para crear un plan, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](#añade-características-especiales-a-tu-plan).
 
@@ -59,13 +115,13 @@ HTTP status code: 201 Created
 
 Para poder crear una subscripción, debes tener un `Customer` con una tarjeta adherida.
 
-Revisa el artículo de [Clientes y Tarjetas](../../payments/api/customers-and-cards.es.md) para saber como hacerlo.
+Revisa el artículo de [Clientes y Tarjetas](/guides/payments/api/customers-and-cards.es.md) para saber como hacerlo.
 
 Sólo subscribe `customers` con tarjetas verificadas.
 
 Algunas opciones para realizarlo son:
 
-1. [Realizar una autorización](../../payments/api/authorization-and-capture.es.md) por un monto bajo a la tarjeta y cancelarla luego, para confirmar que la tarjeta es válida.
+1. [Realizar una autorización](/guides/payments/api/authorization-and-capture.es.md) por un monto bajo a la tarjeta y cancelarla luego, para confirmar que la tarjeta es válida.
 
 2. Utilizar el atributo `setup_fee`, que realizará un cobro extra al intentar subscribir a tu usuario; y sólo si dicho cobro es exitoso, se procede con el alta de la subscripción.
 
@@ -76,6 +132,50 @@ Una subscripción es un objeto que relaciona un `Plan` y un `Customer`.
 
 Realiza un POST especificando el identificador del plan y del customer a asociar:
 
+[[[
+```php
+<?php
+  $subscription = new MercadoPago\Subscription();
+  $subscription->plan_id = "PLAN_ID";
+  $subscription->payer = array(
+    "id"=>"CUSTOMER_ID"
+  );
+  $subscription->save();
+?>
+```
+```java
+payer = Payer.load("CUSTOMER_ID");
+
+Subscription subscription = new Subscription();
+subscription.setPlanId("PLAN_ID");
+subscription.setPayer(payer);
+
+subscription.save();
+```
+```node
+subscription_data = {
+    "plan_id": "PLAN_ID",
+    "payer": {
+            "id": "CUSTOMER_ID"
+    }
+}
+
+mercadopago.subscription.create(subscription_data).then(function (data)) {
+  // Do Stuff... 
+}).catch(function (error) {
+  // Do Stuff... 
+});
+```
+```ruby
+
+payer = MercadoPago::Payer.load("CUSTOMER_ID")
+
+subscription = MercadoPago::Subscription.new()
+subscription.plan_id = "PLAN_ID"
+subscription.payer = payer
+subscription.save()
+
+```
 ```curl
 curl -X POST \
         -H 'accept: application/json' \
@@ -88,6 +188,9 @@ curl -X POST \
                 }
         }'
 ```
+]]]
+
+
 
 > NOTE
 > 
@@ -135,9 +238,9 @@ En caso de no conseguir una aprobación de pago para la fecha de cobro estipulad
 
 Independientemente del estado del invoice actual, si la subscripción se encuentra activa se creará un invoice para el próximo periodo.
 
-Cada pago rechazado te será notificado mediante [Webhooks](../../notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, [actualice los datos de su tarjeta de crédito](#) o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+Cada pago rechazado te será notificado mediante [Webhooks](/guides/notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, [actualice los datos de su tarjeta de crédito](#) o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
-Visita la sección [Webhooks](../../notifications/webhooks.es.md) para más información.
+Visita la sección [Webhooks](/guides/notifications/webhooks.es.md) para más información.
 
 
 ## Añade características especiales a tu plan
@@ -232,8 +335,8 @@ Si implementas [Marketplace](#) y operas con las credenciales de tus usuarios co
 
 ### Gestiona tu subscripción
 
-En el artículo de [gestión de subscripciones](manage-subscription.es.md) encontrarás información sobre cómo pausar, reactivar o eliminar una subscripción, y también actualizar el monto de un plan.
+En el artículo de [gestión de subscripciones](/guides/subscriptions/api/manage-subscription.es.md) encontrarás información sobre cómo pausar, reactivar o eliminar una subscripción, y también actualizar el monto de un plan.
 
 ### Prueba tu integración
 
-Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello utiliza tus credenciales de Modo Sandbox y las tarjetas de prueba. Visita la sección [Probando](#).
+Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello utiliza tus credenciales de Modo Sandbox y las tarjetas de prueba. Visita la sección [Probando](/guides/subscriptions/api/testing.es.md).
