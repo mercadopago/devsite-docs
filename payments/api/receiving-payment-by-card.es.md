@@ -230,10 +230,10 @@ Para realizar el pago solamente debes realizar un API call:
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
   $payment->description = "Title of what you are paying for";
   $payment->installments = 1;
-  $payment->payment_method_id = "visa"
+  $payment->payment_method_id = "visa";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
-  )
+  );
     
   $payment->save();
     

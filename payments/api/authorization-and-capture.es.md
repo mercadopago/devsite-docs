@@ -11,7 +11,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementado el [procesamiento de pagos con tarjeta](receiving-payment-by-card.es.md).
+> * Tener implementado el [procesamiento de pagos con tarjeta](/guides/payments/api/receiving-payment-by-card.es.md).
 > 
 > Disponible solamente en:
 > 
@@ -27,26 +27,92 @@ La autorización es una reserva de fondos en la tarjeta de tu comprador. Esto si
 
 Realizar una autorización o reserva de los fondos es como realizar un pago, pero agregando el atributo `capture=false`:
 
-```php
-<?php
-require_once ('mercadopago.php');
+[[[
+```php 
+<?php  
 
-$mp = new MP('ACCESS_TOKEN');
-
-$payment_data = array(
-	"transaction_amount" => 100,
-	"token" => "ff8080814c11e237014c1ff593b57b4d",
-	"installments" => 1,
-	"payment_method_id" => "visa",
-	"payer" => array (
-		"email" => "test_user_19653727@testuser.com"
-	),
-	"capture" => false
-);
-
-$payment = $mp->post("/v1/payments", $payment_data);
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+  
+  $payment = new MercadoPago\Payment();
+  
+  $payment->transaction_amount = 100;
+  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
+  $payment->description = "Title of what you are paying for";
+  $payment->installments = 1;
+  $payment->payment_method_id = "visa"; 
+  $payment->payer = array(
+    "email" => "test_user_19653727@testuser.com"
+  );
+    
+  $payment->capture=false;
+    
+  $payment->save();
+    
 ?>
 ```
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100)
+      .setToken('ff8080814c11e237014c1ff593b57b4d')
+      .setDescription('Title of what you are paying for')
+      .setInstallments(1)
+      .setPaymentMethodId("visa")
+      .setPayer(new Payer("test_user_19653727@testuser.com"))
+      .setCapture(false); 
+
+payment.save();
+
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = { 
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d'
+  description: 'Title of what you are paying for',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_3931694@testuser.com'
+  },
+  capture: false
+};
+  
+mercadopago.payment.create(payment_data).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+```
+```ruby
+
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.token = 'ff8080814c11e237014c1ff593b57b4d'
+payment.description = 'Title of what you are paying for'
+payment.installments = 1
+payment.payment_method_id = "visa"
+payment.payer = { 
+  email: "test_user_19653727@testuser.com"
+}
+payment.capture = false
+payment.save()
+
+``` 
+]]]
+
 
 Respuesta:
 
@@ -83,19 +149,46 @@ Es posible realizar la captura por el monto total o de forma parcial.
 
 Para hacer la captura por el monto total solo debes enviar el atributo `capture` en **true** en un request `HTTP PUT`.
 
+[[[
 ```php
 <?php
-require_once ('mercadopago.php');
 
-$mp = new MP('ACCESS_TOKEN');
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
 
-$payment_data = array(
-	"capture" => true
-);
+  $payment = MercadoPago\Payment::load($payment_id);
+  $payment->capture = true;
+  $payment->update(); 
 
-$payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
 ?>
 ```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+
+Payment payment = Payment.load(paymentId);
+payment.capture = true;
+payment.update();
+
+
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.load(paymentId)
+payment.capture=true
+payment.update()
+
+```
+]]]
 
 El request actualizará el status a `approved` con un `status_detail=accredited`:
 
@@ -124,21 +217,51 @@ Siempre que no especifiques un monto se capturará el monto total reservado.
 
 Si decides capturar por un monto menor al reservado, es necesario que además de enviar el atributo `capture`, envies el atributo `transaction_amount` con el nuevo monto.
 
+
+[[[
 ```php
 <?php
+
   require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
 
-  $mp = new MP('ACCESS_TOKEN');
+  $payment = MercadoPago\Payment::load($payment_id);
+  $payment->transaction_amount = 75;
+  $payment->capture = true;
+  $payment->update(); 
 
-  $payment_data = array(
-  	"transaction_amount" => 75,
-  	"capture" => true
-  );
-
-  $payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
 ?>
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+
+Payment payment = Payment.load(paymentId);
+payment.transaction_amount = 75;
+payment.capture = true;
+payment.update();
+
 
 ```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.load(paymentId)
+payment.transaction_amount = 75
+payment.capture=true
+payment.update()
+
+```
+]]]
+ 
 
 Respuesta:
 
@@ -168,19 +291,47 @@ Si no harás uso del dinero reservado, es importante que canceles la reserva par
 
 Para hacer esto debes actualizar el atributo `status` del pago a un estado `cancelled`:
 
+
+[[[
 ```php
 <?php
+
   require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
 
-  $mp = new MP('ACCESS_TOKEN');
+  $payment = MercadoPago\Payment::load($payment_id);
+  $payment->status = "cancelled"; 
+  $payment->update(); 
 
-  $payment_data = array(
-  	"status" => "cancelled"
-  );
-
-  $payment = $mp->put("/v1/payments/PAYMENT_ID", $payment_data);
 ?>
 ```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+
+Payment payment = Payment.load(paymentId);
+payment.status = "canceled"; 
+payment.update();
+
+
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.load(paymentId)
+payment.status = "canceled"
+payment.update()
+
+```
+]]]
 
 Respuesta:
 
@@ -198,4 +349,4 @@ Respuesta:
 >
 > Nota
 >
-> Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](webhooks.es.md) del cambio de estado del pago.
+> Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](/guides/notifications/webhooks.es.md) del cambio de estado del pago.
