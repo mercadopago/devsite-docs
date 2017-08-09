@@ -15,34 +15,52 @@ Para cambiar el monto de un plan debes hacerlo de la siguiente manera:
 
 [[[
 ```php
+<?php 
 
+  $plan = MercadoPago\Plan::load($plan_id);
+  $plan->auto_recurring["transaction_amount"] =  500;
+  $plan->update();
+  
+?>
 ```
 ```java
+Plan plan = Plan.load(planId);
+
+AutoRecurring autoRecurring = preapproval.getAutoRecurring();
+autoRecurring.setTransactionAmount(500);
+
+plan.setAutoRecurring(autoRecurring);
+plan.update();
 
 ```
 ```node
 
+mercadopago.plan.update({
+  id: planId,
+  auto_recurring: {
+    "transaction_amount": 500
+  }
+}).then().catch();
+
 ```
 ```ruby
-
+plan = MercadoPago::Plan.load(planId)
+plan.autoRecurring.transaction_amount = 500
+plan.update()
 ```
+```curl
+curl -X PUT \
+        -H "Content-Type: application/json" \
+        'https://api.mercadopago.com/planS/PLAN_ID?access_token=ACCESS_TOKEN' \
+        -d '{
+              "auto_recurring": {
+                  "transaction_amount": 500
+              }
+        }'
+```
+
 ]]]
-
-```php
-<?php
-require_once ('mercadopago.php');
-
-$mp = new MP('SECRET_ACCESS_TOKEN');
-$NEW_AMOUNT = 500;
-
-$plan_data = array(
-    "auto_recurring" => array(
-    	"transaction_amount" => $NEW_AMOUNT
-    )
-);
-$plan  = $mp->put("/v1/plans/". $PLAN_ID, $plan_data);
-?>
-```
+ 
 
 **Respuesta:**
 
@@ -68,19 +86,47 @@ Puedes pausar las subscripciones en cualquier momento. De este modo, no se les c
 
 Para pausar una subscripción debes hacerlo de la siguiente manera:
 
+
+[[[
 ```php
-<?php
-require_once ('mercadopago.php');
+<?php 
 
-$mp = new MP('SECRET_ACCESS_TOKEN');
-
-$subscription_data = array(
-    "status" => "paused"
-);
-
-$subscription = $mp->put("/v1/subscriptions/". $SUBSCRIPTION_ID, $subscription_data);
+  $subscription = MercadoPago\Subscription::load($subscription_id);
+  $subscription->status = "paused";
+  $subscription->update();
+  
 ?>
 ```
+```java
+Subscription suscription = Subscription.load(suscriptionId);
+suscription.setStatus("paused");
+suscription.update();
+
+```
+```node
+
+mercadopago.suscription.update({
+  id: suscriptionId,
+  status: "paused"
+}).then().catch();
+
+```
+```ruby
+suscription = MercadoPago::Subscription.load(planId)
+suscription.status = "paused"
+suscription.update()
+```
+```curl
+curl -X PUT \
+        -H 'accept: application/json' \
+        -H 'content-type: application/json' \
+        'https://api.mercadopago.com/v1/suscriptions/PLAN_ID?access_token=ACCESS_TOKEN' \
+        -d '{
+                "status": "paused"
+        }'
+```
+]]]
+ 
 
 **Respuesta:**
 
@@ -97,19 +143,47 @@ HTTP status code: 200 OK
 
 Para reactivar una subscripción debes hacerlo de la siguiente manera:
 
+
+[[[
 ```php
-<?php
-require_once ('mercadopago.php');
+<?php 
 
-$mp = new MP('SECRET_ACCESS_TOKEN');
-
-$subscription_data = array(
-    "status" => "authorized"
-);
-
-$subscription = $mp->put("/v1/subscriptions/". $SUBSCRIPTION_ID, $subscription_data);
+  $subscription = MercadoPago\Subscription::load($subscription_id);
+  $subscription->status = "authorized";
+  $subscription->update();
+  
 ?>
 ```
+```java
+Subscription suscription = Subscription.load(suscriptionId);
+suscription.setStatus("authorized");
+suscription.update();
+
+```
+```node
+
+mercadopago.suscription.update({
+  id: suscriptionId,
+  status: "authorized"
+}).then().catch();
+
+```
+```ruby
+suscription = MercadoPago::Subscription.load(planId)
+suscription.status = "authorized"
+suscription.update()
+```
+```curl
+curl -X PUT \
+        -H 'accept: application/json' \
+        -H 'content-type: application/json' \
+        'https://api.mercadopago.com/v1/suscriptions/PLAN_ID?access_token=ACCESS_TOKEN' \
+        -d '{
+                "status": "authorized"
+        }'
+```
+]]]
+ 
 
 **Respuesta:**
 
@@ -136,19 +210,49 @@ Puedes cancelar los planes y subscripciones en cualquier momento. De este modo, 
 
 Para cancelar un plan debes hacerlo de la siguiente manera:
 
+
+[[[
 ```php
-<?php
-require_once ('mercadopago.php');
+<?php 
 
-$mp = new MP('SECRET_ACCESS_TOKEN');
-
-$plan_data = array(
-    "status" => "cancelled"
-);
-
-$plan = $mp->put("/v1/plans/". $PLAN_ID, $plan_data);
+  $plan = MercadoPago\Plan::load($plan_id);
+  $plan->status = "cancelled";
+  $plan->update();
+  
 ?>
 ```
+```java
+Plan plan = Plan.load(planId);
+plan.setStatus("cancelled");
+plan.update();
+
+```
+```node
+
+mercadopago.plan.update({
+  id: planId,
+  status: "cancelled"
+}).then().catch();
+
+```
+```ruby
+plan = MercadoPago::Plan.load(planId)
+plan.autoRecurring.transaction_amount = 500
+plan.update()
+```
+```curl
+curl -X PUT \
+        -H "Content-Type: application/json" \
+        'https://api.mercadopago.com/planS/PLAN_ID?access_token=ACCESS_TOKEN' \
+        -d '{
+              "status": "cancelled"
+        }'
+```
+
+]]]
+
+
+
 > NOTE
 >
 > Nota
@@ -170,19 +274,45 @@ HTTP status code: 200 OK
 
 Para cancelar una subscripción debes hacerlo de la siguiente manera:
 
+[[[
 ```php
-<?php
-require_once ('mercadopago.php');
+<?php 
 
-$mp = new MP('SECRET_ACCESS_TOKEN');
-
-$subscription_data = array(
-    "status" => "cancelled"
-);
-
-$subscription = $mp->put("/v1/subscriptions/". $SUBSCRIPTION_ID, $subscription_data);
+  $subscription = MercadoPago\Subscription::load($subscription_id);
+  $subscription->status = "cancelled";
+  $subscription->update();
+  
 ?>
 ```
+```java
+Subscription suscription = Subscription.load(suscriptionId);
+suscription.setStatus("cancelled");
+suscription.update();
+
+```
+```node
+
+mercadopago.suscription.update({
+  id: suscriptionId,
+  status: "cancelled"
+}).then().catch();
+
+```
+```ruby
+suscription = MercadoPago::Subscription.load(planId)
+suscription.status = "cancelled"
+suscription.update()
+```
+```curl
+curl -X PUT \
+        -H 'accept: application/json' \
+        -H 'content-type: application/json' \
+        'https://api.mercadopago.com/v1/suscriptions/PLAN_ID?access_token=ACCESS_TOKEN' \
+        -d '{
+                "status": "authorized"
+        }'
+```
+]]]
 
 **Respuesta:**
 
