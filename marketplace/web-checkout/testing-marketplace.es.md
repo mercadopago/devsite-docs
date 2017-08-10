@@ -61,8 +61,8 @@ curl -X POST \
 
 El proceso completo para probar el checkout es el siguiente:
 
-1. Inicia sesión de MercadoPago con la cuenta del **marketplace** y genera un APP\_ID con todas sus configuraciones y la URL para enviarle al **vendedor** para que vincule su cuenta.
-2. Inicia sesión de MercadoPago con el **vendedor** y vincula la cuenta al marketplace, ingresando en la url configurada.
+1. Inicia sesión de Mercado Pago con la cuenta del **marketplace** y genera un APP\_ID con todas sus configuraciones y la URL para enviarle al **vendedor** para que vincule su cuenta.
+2. Inicia sesión de Mercado Pago con el **vendedor** y vincula la cuenta al marketplace, ingresando en la url configurada.
 3. Verifica que has registrados las credenciales del vendedor en el marketplace.
 3. Efectúa un pago de prueba. Puedes enviar el mail del **comprador** en la preferencia de pago, o probar el flujo como *invitado*. El email del comprador va a ser requerido al finalizar la compra.
 4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 dígitos.

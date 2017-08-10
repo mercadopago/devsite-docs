@@ -6,7 +6,7 @@
 >
 > * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
 
-Esta guía te ayudará a integrar el componente visual de pago de MercadoPago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
+Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
 
 #### La integración consta de dos etapas:
 - Integración en tu servidor: en esta etapa obtendrás la información del pago.
@@ -169,7 +169,7 @@ Es requerido el envío del `email` de tu comprador.
 }
 ```
 
-## Integra el flujo de pago de MercadoPago en tu aplicación
+## Integra el flujo de pago de Mercado Pago en tu aplicación
 
 ### 1. Conecta tu aplicación con tu servidor
 
@@ -235,7 +235,7 @@ public void failure(ApiException apiException) {
 
 ### 2. Crea un botón de pago
 
-A modo de ejemplo proponemos que inicies el flujo de MercadoPago desde un botón.
+A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botón.
 
 [[[
 

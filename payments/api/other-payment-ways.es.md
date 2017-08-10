@@ -205,7 +205,7 @@ Recomendamos revisar los [tiempos de acreditación por medio de pago](#).
 
 ## Devoluciones
 
-Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Refunds*. Todas las devoluciones de medios de pago en efectivo son devueltas en la cuenta de MercadoPago de tu comprador.
+Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Refunds*. Todas las devoluciones de medios de pago en efectivo son devueltas en la cuenta de Mercado Pago de tu comprador.
 
 Si este no cuenta con una, recibirá un email en la dirección enviada en el pago con instrucciones de cómo retirar su dinero.
 

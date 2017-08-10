@@ -7,7 +7,7 @@ sites_supported:
 
 # Introducción a subscripciones con Web Checkout
 
-MercadoPago te permitirá recibir pagos recurrentes a través de subscripciones en sólo dos pasos:
+Mercado Pago te permitirá recibir pagos recurrentes a través de subscripciones en sólo dos pasos:
 
 1. **Definir una subscripción**, que establece cuánto debe ser facturado y en qué intervalo.
 2. **Abrir el Checkout** para capturar los datos de una tarjeta

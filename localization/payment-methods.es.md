@@ -1,6 +1,6 @@
 # Medios de pago
 
-Los medios de pago ofrecidos por MercadoPago varían según cada país.
+Los medios de pago ofrecidos por Mercado Pago varían según cada país.
 
 ## Obteniendo los medios de pago
 

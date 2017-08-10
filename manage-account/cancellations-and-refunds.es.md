@@ -39,7 +39,7 @@ Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto de
 
 Si tu comprador realizó el pago con tarjeta, la devolución será reintegrada en la misma.
 
-Si el pago fue realizado con otro medio, se reintegrará en la cuenta de MercadoPago del comprador. En caso que no tenga una cuenta, crearemos una utilizando su e-mail.
+Si el pago fue realizado con otro medio, se reintegrará en la cuenta de Mercado Pago del comprador. En caso que no tenga una cuenta, crearemos una utilizando su e-mail.
 
 
 ### Realiza la devolución total del pago

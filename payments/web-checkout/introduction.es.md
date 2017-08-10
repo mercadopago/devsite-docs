@@ -1,6 +1,6 @@
 # Checkout Web
 
-MercadoPago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
+Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
 
 Trabajamos para que tus usuarios tengan la mejor experiencia de pago ofreciendo:  
 

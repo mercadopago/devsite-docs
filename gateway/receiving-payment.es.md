@@ -6,7 +6,7 @@
 >
 > * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
-En MercadoPago es posible transaccionar utilizando tus números de establecimiento o los nuestros.
+En Mercado Pago es posible transaccionar utilizando tus números de establecimiento o los nuestros.
 
 ## Creación de un pago
 
@@ -33,7 +33,7 @@ Si quieres procesar con tus números de establecimiento y los tienes configurado
 
 #### merchant\_account\_id
 
-Puedes indicar por qué establecimiento quieres procesar tu pago utilizando `merchant_account_id` que es el ID de MercadoPago que lo representa.
+Puedes indicar por qué establecimiento quieres procesar tu pago utilizando `merchant_account_id` que es el ID de Mercado Pago que lo representa.
 
 ### Recibir un pago
 

@@ -11,7 +11,7 @@ Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras.
 
 ## Experiencia del comprador
 
-Antes de mostrar el checkout, MercadoPago se encargará de verificar si para ese comprador existe una campaña creada.
+Antes de mostrar el checkout, Mercado Pago se encargará de verificar si para ese comprador existe una campaña creada.
 
 Si la campaña es válida se le aplicará el descuento o se solicitará el cupón. Automáticamente se calculará el monto a descontar y se mostrará el precio promocional.
 

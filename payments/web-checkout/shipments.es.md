@@ -9,7 +9,7 @@ Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de qu
 
 ## Cómo funciona
 
-La siguiente documentación te permitirá ofrecer en el checkout de MercadoPago una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
+La siguiente documentación te permitirá ofrecer en el checkout de Mercado Pago una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
 
 Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
 
@@ -351,5 +351,5 @@ En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y desp�
 Utiliza nuestras herramientas para hacer el seguimiento.
 Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
 
-Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](../notification/ipn.es.md) que se envían desde los servidores de MercadoPago a los tuyos. Esto te permitirá administrar tu stock y conocer el estado de los pagos y envíos.
+Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](../notification/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu stock y conocer el estado de los pagos y envíos.
  

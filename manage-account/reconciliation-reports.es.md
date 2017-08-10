@@ -1,10 +1,10 @@
 # Reportes de conciliación
 
-MercadoPago te brinda reportes para conciliar tus operaciones con tus sistemas internos. Tenemos dos reportes para distintas necesidades.
+Mercado Pago te brinda reportes para conciliar tus operaciones con tus sistemas internos. Tenemos dos reportes para distintas necesidades.
 
 **Reporte de dinero en cuenta (Settlement Report)**
 
-Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron el balance de tu cuenta de MercadoPago para un período específico.
+Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron el balance de tu cuenta de Mercado Pago para un período específico.
 
 **Reporte de dinero disponible (Bank Report)**
 

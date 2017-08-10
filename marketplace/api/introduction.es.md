@@ -2,7 +2,7 @@
 
 Un **MarketPlace** es un sitio o aplicación que permite a vendedores y compradores relacionarse para efectuar una transacción comercial. El propietario del Marketplace proporciona espacio a los vendedores para mostrar sus bienes o servicios, y se encarga de gestionar todos los aspectos de la transacción. Por ejemplo, Mercado Libre es un Marketplace.
 
-MercadoPago te permite realizar cobros a nombre de los vendedores de tu plataforma y opcionalmente cobrar una comisión por la transacción.
+Mercado Pago te permite realizar cobros a nombre de los vendedores de tu plataforma y opcionalmente cobrar una comisión por la transacción.
 
 Cuando se genera un pago, el dinero es dividido en el instante entre la cuenta de tu vendedor y la tuya, en caso de cobres una comisión.
 
@@ -10,7 +10,7 @@ Cuando se genera un pago, el dinero es dividido en el instante entre la cuenta d
 >
 > Nota
 >
-> La comisión de MercadoPago será descontada de los fondos que reciba el vendedor.
+> La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor.
 
 Marketplace requiere de 3 pasos:
 
@@ -32,7 +32,7 @@ La **credencial privada**, o *access\_token*, se utiliza para todas las otras ll
 
 ## Modo Sandbox y Productivo
 
-Inicialmente tu aplicación sólo podrá interactuar con MercadoPago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración. 
+Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración. 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 

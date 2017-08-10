@@ -1,6 +1,6 @@
 # Recibir pagos siendo PCI Compliant
 
-MercadoPago permite a vendedores que cumplen con las normativas PCI, tokenizar las tarjetas por backend.
+Mercado Pago permite a vendedores que cumplen con las normativas PCI, tokenizar las tarjetas por backend.
 
 > WARNING
 >
@@ -178,7 +178,7 @@ Una vez hayas obtenido el Card Token de la tarjeta, puedes [crear el pago](../pa
 
 ## Mejora la aprobación enviando el Device Fingerprint
 
-MercadoPago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas.
+Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas.
 
 ### Implementación de device en Web
 

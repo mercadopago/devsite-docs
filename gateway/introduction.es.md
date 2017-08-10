@@ -1,3 +1,3 @@
 # Gateway
 
-MercadoPago te ofrece la posibilidad de operar con tus propios números de establecimiento.
+Mercado Pago te ofrece la posibilidad de operar con tus propios números de establecimiento.

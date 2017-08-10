@@ -16,7 +16,7 @@ Ofrece a tus clientes información clara y precisa ante posible errores en el in
 | rejected   | `cc_rejected_bad_filled_other`         | Revisa los datos.                                                                                                                   |
 | rejected   | `cc_rejected_bad_filled_security_code` | Revisa el código de seguridad.                                                                                                      |
 | rejected   | `cc_rejected_blacklist`                | No pudimos procesar tu pago.                                                                                                        |
-| rejected   | `cc_rejected_call_for_authorize`       | Debes autorizar ante `payment_method_id` el pago de amount a MercadoPago                                                            |
+| rejected   | `cc_rejected_call_for_authorize`       | Debes autorizar ante `payment_method_id` el pago de amount a Mercado Pago                                                            |
 | rejected   | `cc_rejected_card_disabled`            | Llama a `payment_method_id` para que active tu tarjeta. <br/><br/> El teléfono está al dorso de tu tarjeta.                              |
 | rejected   | `cc_rejected_card_error`               | No pudimos procesar tu pago.                                                                                                        |
 | rejected   | `cc_rejected_duplicated_payment`       | Ya hiciste un pago por ese valor. <br/><br/> Si necesitas volver a pagar usa otra tarjeta u otro medio de pago.                          |

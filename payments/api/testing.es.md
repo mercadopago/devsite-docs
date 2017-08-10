@@ -50,7 +50,7 @@ Para ello te informaremos con un HTTP Status 201 OK que el pago ha sido creado c
 
 ## Verifica haber recibido la notificación Webhook
 
-MercadoPago te enviará una notificación del evento ocurrido. Valida que la hayas recibido correctamente e impactado en forma correcta en tu sistema de gestión. 
+Mercado Pago te enviará una notificación del evento ocurrido. Valida que la hayas recibido correctamente e impactado en forma correcta en tu sistema de gestión. 
 
 ### Efectúa la anulación del pago
 

@@ -14,7 +14,7 @@ sites_supported:
 
 # Introducción
 
-MercadoPago te permitirá recibir pagos recurrentes a través de suscripciones. 
+Mercado Pago te permitirá recibir pagos recurrentes a través de suscripciones. 
 
 Solo tienes que adherir a tus clientes a los planes de suscripción y procesaremos los pagos de forma automática y recurrente.
 Enviaremos una notificación webhook para informarte el resultado de los pagos.
@@ -38,7 +38,7 @@ La **credencial privada**, o *access token*, se utiliza para todas las otras lla
 
 ## Modo Sandbox y Productivo
 
-Inicialmente tu aplicación sólo podrá interactuar con MercadoPago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración.
+Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración.
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 
