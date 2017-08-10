@@ -19,7 +19,7 @@
 > * Brasil
 > * Perú
 
-Mercado Pago ofrecé la posibilidad de realizar una autorización antes de generar una captura.
+MercadoPago ofrecé la posibilidad de realizar una autorización antes de generar una captura.
 
 La autorización es una reserva de fondos en la tarjeta de tu comprador. Esto significa que al realizarla todavía no se le generó un cobró a tu cliente en su tarjeta. Solo cuando se realice una captura el cliente verá el pago.
 

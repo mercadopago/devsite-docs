@@ -1,10 +1,10 @@
 ---
-  description: Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees, manteniendo la experiencia de compra.
+  description: MercadoPago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees, manteniendo la experiencia de compra.
 ---
 
 # Introducción a nuestra API de Pagos
 
-Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees.
+MercadoPago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees.
 
 Con nuestras APIs:
 
@@ -24,7 +24,7 @@ La **credencial privada**, o *access token*, se utiliza para todas las otras lla
 
 ## Modo Sandbox y Productivo
 
-Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración. 
+Inicialmente tu aplicación sólo podrá interactuar con MercadoPago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración. 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 

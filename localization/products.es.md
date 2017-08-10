@@ -1,6 +1,6 @@
 # Productos
 
-Las productos ofrecidos por Mercado Pago pueden variar según cada país.
+Las productos ofrecidos por MercadoPago pueden variar según cada país.
 
 ## Disponibilidad por país
 

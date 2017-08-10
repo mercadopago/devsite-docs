@@ -1,6 +1,6 @@
 # Mobile Checkout
 
-Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
+Las SDK de MercadoPago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
  
  - Pagos con tarjeta, efectivo o transferencia bancaria.
  - **Financiación**: cuotas con la mejor financiación posible. 

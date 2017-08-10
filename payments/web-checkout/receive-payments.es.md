@@ -1,6 +1,6 @@
 # Recibiendo Pagos
 
-Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
+Recibe pagos de manera simple y segura utilizando el Checkout de MercadoPago.
 
 
 ## 1. Crea una preferencia de pago
@@ -12,7 +12,7 @@ Una preferencia de pago contiene toda la información del producto o servicio qu
 - Medios de pago que aceptas.
 - ID de referencia de tu sistema.
 
-Para crear una preferencia de pago debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 [[[
 ```php 

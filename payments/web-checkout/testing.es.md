@@ -61,8 +61,8 @@ curl -X POST \
 
 El proceso completo para probar el checkout es el siguiente:
 
-1. Inicia sesión de Mercado Pago con el **vendedor** y toma las [credenciales](https://www.mercadopago.com/mla/account/credentials) para configurarlas en la creación preferencia de pago. 
-2. Cierra sesión de Mercado Pago.
+1. Inicia sesión de MercadoPago con el **vendedor** y toma las [credenciales](https://www.mercadopago.com/mla/account/credentials) para configurarlas en la creación preferencia de pago. 
+2. Cierra sesión de MercadoPago.
 3. Envía el mail del **comprador** en la preferencia de pago.
 4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 4 dígitos aleatorios para tarjetas Amex o 3 para cualquier otra.
 5. En el nombre del titular de la tarjeta puedes ingresar alguno de los siguientes prefijos para probar los distintos resultados (pagos aprobados, rechazados o pendientes):

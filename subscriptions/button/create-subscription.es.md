@@ -7,7 +7,7 @@ sites_supported:
 
 # Creando una suscripción
 
-Desde tu cuenta de Mercado Pago puedes crear un link de suscripción que te permitirá enviarselo a tus compradores y **recibir pagos de manera periódica**. Lo puedes usar para: cobrar cuotas del gimnasio, cobrar alquieres o recibir donaciones.
+Desde tu cuenta de MercadoPago puedes crear un link de suscripción que te permitirá enviarselo a tus compradores y **recibir pagos de manera periódica**. Lo puedes usar para: cobrar cuotas del gimnasio, cobrar alquieres o recibir donaciones.
 No necesitas saber de programación. 
 
 Te guiaremos para que puedas configurar:

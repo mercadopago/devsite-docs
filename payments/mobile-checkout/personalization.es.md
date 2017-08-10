@@ -210,9 +210,9 @@ Si necesitas hacer alguna validación en tu servidor al momento de realizar el p
 
 En la clase ServicePreference puedes configurar la URL y la URI de tu servicio junto con un Map para que puedas enviar la información que desees.
 
-Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
+Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de MercadoPago.
 
-Una vez creada la ServicePreference, debes iniciar el flujo de pago de Mercado Pago, tal como se muestra en el siguiente código:
+Una vez creada la ServicePreference, debes iniciar el flujo de pago de MercadoPago, tal como se muestra en el siguiente código:
 
 [[[
 

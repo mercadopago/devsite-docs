@@ -1,6 +1,6 @@
 # Receber um pagamento
 
-Receba pagamentos de maneira simples e segura utilizando o Checkout do Mercado Pago.
+Receba pagamentos de maneira simples e segura utilizando o Checkout do MercadoPago.
 
 
 ## 1. Crie uma preferência de pagamento
@@ -12,7 +12,7 @@ Uma preferência de pagamento contém todas as informações sobre o produto ou 
 3. Formas de pagamento aceitas.
 4. ID de referência de seu sistema.
 
-Para criar uma preferência de pagamento deve [instalar o SDK do Mercado Pago](https://github.com/mercadopago) e configurar o objeto `MP` com suas [credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
+Para criar uma preferência de pagamento deve [instalar o SDK do MercadoPago](https://github.com/mercadopago) e configurar o objeto `MP` com suas [credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
 
 ```php
 <?php

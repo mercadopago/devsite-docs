@@ -6,7 +6,7 @@
 >
 > * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
 
-Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
+Esta guía te ayudará a integrar el componente visual de pago de MercadoPago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
 
 #### La integración consta de dos etapas:
 - Integración en tu servidor: en esta etapa obtendrás la información del pago.
@@ -14,9 +14,9 @@ Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago e
 
 ![scheme](https://user-images.githubusercontent.com/8038535/28226783-bce9d6ce-68ad-11e7-99c5-032af709f5cc.png)
 
-1. Crea la preferencia de pago desde tu servidor en los servidores de Mercado Pago.
+1. Crea la preferencia de pago desde tu servidor en los servidores de MercadoPago.
 2. Inicia el Checkout en tu aplicación, utilizando el id de la preferencia.
-3. El Checkout realizará el pago en los servidores de Mercado Pago.
+3. El Checkout realizará el pago en los servidores de MercadoPago.
 4. Suscríbete a las notificaciones para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
 ## Configura tu servidor
@@ -169,13 +169,13 @@ Es requerido el envío del `email` de tu comprador.
 }
 ```
 
-## Integra el flujo de pago de Mercado Pago en tu aplicación
+## Integra el flujo de pago de MercadoPago en tu aplicación
 
 ### 1. Conecta tu aplicación con tu servidor
 
 En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (`preferenceMap`). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
 
-CustomServer se encargará de transformar la respuesta de tu servicio (que debe tener la misma estructura que la de Mercado Pago) en un objeto **CheckoutPreference**, cuyo ID es el punto de entrada a nuestro checkout.
+CustomServer se encargará de transformar la respuesta de tu servicio (que debe tener la misma estructura que la de MercadoPago) en un objeto **CheckoutPreference**, cuyo ID es el punto de entrada a nuestro checkout.
 
 Crea la preferencia en tu servidor desde tu aplicación con el siguiente código:
 
@@ -235,7 +235,7 @@ public void failure(ApiException apiException) {
 
 ### 2. Crea un botón de pago
 
-A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botón.
+A modo de ejemplo proponemos que inicies el flujo de MercadoPago desde un botón.
 
 [[[
 

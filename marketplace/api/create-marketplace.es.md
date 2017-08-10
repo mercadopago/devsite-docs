@@ -23,7 +23,7 @@ Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario 
 
 ## 2. Vinculación de cuentas
 
-Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id` el valor de `APP_ID` y la `redirect_uri` que obtuviste en el paso anterior:
+Para operar en MercadoPago en nombre de tu vendedor, debes primero solicitarle autorización. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id` el valor de `APP_ID` y la `redirect_uri` que obtuviste en el paso anterior:
 
 `https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com`
 
@@ -148,7 +148,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 ?>
 ```
 
-El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago, como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.
+El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de MercadoPago, como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.
 
 ### Notificaciones
 
@@ -160,7 +160,7 @@ En el artículo de [notificaciones](../../notifications/webhooks.es.md) podes ob
 
 ### Devoluciones y cancelaciones
 
-Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace como por el vendedor, via API o desde la cuenta de Mercado Pago.
+Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace como por el vendedor, via API o desde la cuenta de MercadoPago.
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 

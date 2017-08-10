@@ -8,7 +8,7 @@
 
 **IPN** (Instant Payment Notification) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
-Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual MercadoPago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 
 ## Eventos
@@ -19,7 +19,7 @@ La `merchant_orders` es una entidad que agrupa tanto pagos como envíos. Tendrá
 
 Siempre que suceda un evento relacionado a alguno de los recursos mencionados, te enviaremos una notificación usando `HTTP POST` a la URL que especificaste.
 
-Si la aplicación no está disponible o demora en responder, Mercado Pago reintentará la notificación mediante el siguiente esquema:
+Si la aplicación no está disponible o demora en responder, MercadoPago reintentará la notificación mediante el siguiente esquema:
 
 1. Reintento a los 5 minutos.
 2. Reintento a los 45 minutos.
@@ -39,9 +39,9 @@ Ejemplo: Si configuraste la URL: `https://www.yoursite.com/notifications`, recib
 
 ## ¿Qué debo hacer al recibir una notificación?
 
-Cuando recibas una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
+Cuando recibas una notificación en tu plataforma, MercadoPago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
 
-Recuerda que esta comunicación es exclusivamente entre los servidores de Mercado Pago y tu servidor, por lo cual no habrá un usuario físico viendo ningún tipo de resultado.
+Recuerda que esta comunicación es exclusivamente entre los servidores de MercadoPago y tu servidor, por lo cual no habrá un usuario físico viendo ningún tipo de resultado.
 
 Luego de esto, puedes obtener la información completa del recurso notificado accediendo a la API correspondiente en `https://api.mercadopago.com/`:
 

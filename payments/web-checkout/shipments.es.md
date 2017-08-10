@@ -9,7 +9,7 @@ Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de qu
 
 ## Cómo funciona
 
-La siguiente documentación te permitirá ofrecer en el checkout de Mercado Pago una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
+La siguiente documentación te permitirá ofrecer en el checkout de MercadoPago una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
 
 Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
 
@@ -343,7 +343,7 @@ Para poder realizar el cálculo debes enviar:
 ### Paso 4: Imprimí la etiqueta
 
 Cada vez que recibas un pago, te llegará un e-mail con un botón para imprimir la etiqueta. 
-También puedes ver los [pagos pendientes de impresión]() desde tu cuenta de Mercado Pago.
+También puedes ver los [pagos pendientes de impresión]() desde tu cuenta de MercadoPago.
 
 En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y despáchalo. No tendrás que pagarle nada al carrier porque las etiquetas de MercadoEnvíos estarán pagas con el dinero que pagó tu comprador para el envío.
 

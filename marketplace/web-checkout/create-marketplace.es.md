@@ -156,7 +156,7 @@ El vendedor va a recibir la diferencia entre el monto total y las comisiones, ta
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
 
-En el artículo de [notificaciones](../../notifications/ipn.es.md) podes obtener más información.
+En el artículo de [notificaciones](/guides/notifications/ipn.es.md) podes obtener más información.
 
 ### Devoluciones y cancelaciones
 
@@ -164,4 +164,4 @@ Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](../../account/refunds-and-cancellations.es.md).
+Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](/guides/manage-account/cancellations-and-refunds.es.md).
