@@ -28,9 +28,9 @@ Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas [probado tu aplicación](testing.es.md), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
+Una vez que hayas [probado tu aplicación](/guides/payments/api/testing.es.md), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de sandbox por las productivas en tu código.
 
 
-#### [Comenzar a integrar la API](/guides/payments/api/receive-payments-by-card.es.md)
+#### [Comenzar a integrar la API](/guides/payments/api/receiving-payments-by-card.es.md)

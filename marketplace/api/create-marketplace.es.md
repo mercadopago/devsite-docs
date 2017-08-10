@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 > 
-> * Tener implementado [API](../../payments/api/introduction.es.md).
+> * Tener implementado [API](/guides/payments/api/introduction.es.md).
 
 Para comenzar debes:
 
@@ -123,7 +123,7 @@ Respuesta esperada:
 
 ## 3. Integra la API para recibir pagos
 
-Para recibir pagos en nombre de tus vendedores debes integrar la [API](../../payments/api/introduction.es.md), utilizando el `access_token` de cada vendedor para tu aplicación.
+Para recibir pagos en nombre de tus vendedores debes integrar la [API](/guides/payments/api/introduction.es.md), utilizando el `access_token` de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario, sólo debes agregar dicho monto en el parámetro `application_fee` al crear el pago:
 
@@ -156,7 +156,7 @@ Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos 
 
 Puedes recibir notificaciones cuando tus clientes autoricen o desautoricen tu aplicación, [configurando la URL](https://www.mercadopago.com/mla/account/webhooks) en tu cuenta.
 
-En el artículo de [notificaciones](../../notifications/webhooks.es.md) podes obtener más información.
+En el artículo de [notificaciones](/guides/notifications/webhooks.es.md) podes obtener más información.
 
 ### Devoluciones y cancelaciones
 
@@ -164,4 +164,4 @@ Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](../../account/refunds-and-cancellations.es.md).
+Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](/guides/manage-account/refunds-and-cancellations.es.md).

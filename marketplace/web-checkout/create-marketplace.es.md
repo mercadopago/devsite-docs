@@ -4,7 +4,7 @@
 > 
 > Pre-requisitos
 > 
-> * Tener implementado [Checkout](../../payments/web-checkout/introduction.es.md).
+> * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
 
 Para comenzar debes:
 
@@ -45,6 +45,8 @@ Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene u
 Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.  
 
 Request:
+
+
 
 ```curl 
 curl -X POST \
@@ -160,7 +162,7 @@ En el artículo de [notificaciones](/guides/notifications/ipn.es.md) podes obten
 
 ### Devoluciones y cancelaciones
 
-Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace como por el vendedor, via API o desde la cuenta de Mercado Pago.
+Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace como por el vendedor, via API o desde la cuenta de MercadoPago.
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 

@@ -41,4 +41,4 @@ Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homol
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de sandbox por las productivas en tu código.
 
 
-#### [Comenzar a crear mi Marketplace](./create-marketplace.es.md)
+#### [Comenzar a crear mi Marketplace](/guides/marketplace/api/create-marketplace.es.md)
