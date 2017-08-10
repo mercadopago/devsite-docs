@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](../payments/web-checkout/introduction.es.md).
+> * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
 
 **IPN** (Instant Payment Notification) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 

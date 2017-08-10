@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementado [API](../payments/api/introduction.es.md).
+> * Tener implementado [API](/guides/payments/api/introduction.es.md).
 
 Un **webhook** es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
