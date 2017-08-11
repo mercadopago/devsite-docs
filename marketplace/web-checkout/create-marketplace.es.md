@@ -42,11 +42,9 @@ Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene u
 
 ### Crea las credenciales de tus vendedores
 
-Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.  
+Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de oAuth y así poder operar en su nombre.  
 
 Request:
-
-
 
 ```curl 
 curl -X POST \
@@ -121,36 +119,107 @@ Respuesta esperada:
 
 ## 3. Integra el checkout
 
-Para cobrar en nombre de tus vendedores debes integrar [Checkout](../../payments/web-checkout/introduction.es.md), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
+Para cobrar en nombre de tus vendedores debes integrar [Checkout](/guides/payments/web-checkout/introduction.es.md), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
 
+
+[[[
 ```php
+
 <?php
-require_once ('mercadopago.php');
-$mp = new MP ("MARKETPLACE_SELLER_TOKEN");
 
-$preference_data = array(
-   	"marketplace_fee" => 100,
-   	"notification_url" => "http://urlmarketplace.com/notification_ipn"
-	"items" => array(
-		array(
-			"title" => "Multicolor kite",
-			"quantity" => 1,
-			"currency_id" => "ARS",
-			"unit_price" => 500,
-			"description" => "",
-			"category_id" => "art" // Available categories at https://api.mercadopago.com/item_categories
-		)
-	),
-	"payer" => array(
-		"email" => "usuario@mail.com"
-	)
-);
+$preference = new MercadoPago\Preference();
 
-$preference = $mp->create_preference($preference_data);
+$item = new MercadoPago\Item();
+$item->title = "Multicolor kite";
+$item->quantity = 1;
+$item->title = "ARS";
+$item->unit_price = 10.00;
+
+$payer = new MercadoPago\Payer();
+$payer->email = "test_user_19653727@testuser.com"; 
+
+$preference->items = array($item);
+$preference->payer = $payer;
+$preference->marketplace_fee = 2.56
+$preference->notification_url = "http://urlmarketplace.com/notification_ipn"
+
+$preference->save();
 ?>
+
 ```
+```java
+
+Preference preference = new Preference();
+
+Item item = new Item();
+item.setId("1234")
+    .setTitle("Multicolor kite")
+    .setQuantity(2)
+    .setCategoryId("ARS")
+    .setUnitPrice((float) 14.5);
+
+Payer payer = new Payer();
+payer.setEmail("demo@mail.com");
+
+preference.setPayer(payer);
+preference.appendItem(item);
+preference.setMarketPlace(2.56);
+preference.setNotificationUrl("http://urlmarketplace.com/notification_ipn");
+preference.save();
+
+``` 
+```node
+ 
+	var preference = {}
+  
+  var item = {
+    title: 'Multicolor kite',
+    quantity: 1,
+    currency_id: 'ARS',
+    unit_price: 10.5
+  }
+  
+  var payer = {
+    email: "demo@mail.com"
+  }
+  
+  preference.items = [item]
+  preference.payer = payer
+  preference.marketplace_fee = 2.56
+  preference.notification_url = "http://urlmarketplace.com/notification_ipn";
+  
+  mercadopago.preferences.create(preference).then(function (data) {
+     // Do Stuff...
+   }).catch(function (error) {
+     // Do Stuff... 
+   });
+  
+```
+```ruby
+
+preference = MercadoPago::Preference.new()
+
+item = MercadoPago::Item.new()
+item.title="Multicolor kite"
+item.quantity= 1
+item.currency_id = 'ARS'
+item.unit_price = 10.5
+
+payer = MercadoPago::Payer.new() 
+payer.email="demo@mail.com"
+
+preference.items = [item]
+preference.payer = payer
+preference.marketplace_fee = 2.56
+preference.notification_url = "http://urlmarketplace.com/notification_ipn"
+
+preference.save 
+
+```
+]]]
+
 
 El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.
 
