@@ -29,7 +29,7 @@ Realiza el POST a la API especificando las fechas de inicio y fin de la siguient
 ```php
 <?php
 
-// SDK Version >= 0.5.0
+$request = 
 
 $mp = new MP("ACCESS_TOKEN");
 

@@ -22,13 +22,43 @@ Estos no vencen automáticamente, por lo que es necesario que ejecutes su cancel
 
 Para realizar la cancelación, realiza el siguiente request enviando el `status` en `cancelled`:
 
+[[[
+```php
+<?php 
+
+  $payment = MercadoPago\Preapproval::load($payment_id);
+  $payment->status = "cancelled";
+  $payment->update();
+  
+?>
+```
+```java
+Payment payment = Payment.load(paymentId);
+payment.setStatus("cancelled");
+payment.update();
+
+```
+```node
+
+mercadopago.payment.update({
+  id: paymentId,
+  status: "cancelled"
+}).then().catch();
+
+```
+```ruby
+preapproval = MercadoPago::Preapproval.load(paymentId)
+preapproval.status = "cancelled"
+preapproval.update()
+```
 ```curl
 curl -X PUT \
 -H "Content-Type: application/json" \
 -d '{"status":"cancelled"}' \
 'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
 ```
-
+]]]
+ 
 **Response status code: 200 OK**
 
 ## Devoluciones
@@ -85,32 +115,57 @@ Puedes realizar hasta 20 devoluciones parciales a un mismo pago. Una vez efectua
 
 Debes indicar el monto a devolver.
 
+[[[
+
 ```php
 <?php
-require_once ('mercadopago.php');
-
-$mp = new MP('SECRET_ACCESS_TOKEN');
-$refund_data = array(
-	"amount" => 10.5
-);
-
-$refund = $mp->post("/v1/payments/". $PAYMENT_ID ."/refunds", $refund_data);
+  $payment = MercadoPago\Payment::load(paymentId);
+  $payment->refund(10.5);
 ?>
 ```
+```java
+Payment payment = Payment.load(paymentId);
+payment.refund(10.5);
+```
+```node
+mercadopago.payment.refund(paymentId).then(function(data) {}
+  //Do Stuff ..
+});
+```
+```ruby
+payment = MercadoPago::Payment.load(paymnentId)
+payment.refund(10.5);
+```
+]]]
+
 
 ### Obtén las devoluciones realizadas
 
 Puedes ver los refunds realizados para un pago especifico con el siguiente request:
 
+[[[
 ```php
 <?php
-require_once ('mercadopago.php');
-
-$mp = new MP('SECRET_ACCESS_TOKEN');
-
-$refund = $mp->get("/v1/payments/". $PAYMENT_ID ."/refunds");
+  $payment = MercadoPago\Payment::load($payment_id);
+  $refunds = $payment->refunds();
 ?>
 ```
+```java
+Payment payment = Payment.load(paymentId);
+ArrayList<Refund> refunds = payment.refunds();
+```
+```node
+mercadopago.payment.refund(paymentId).then(function(data) {}
+  //Do Stuff ..
+});
+```
+```ruby
+payment = MercadoPago::Payment.load(payment_id)
+refunds = payment.refunds()
+```
+]]]
+
+
 
 Respuesta:
 
