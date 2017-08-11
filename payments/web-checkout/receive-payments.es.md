@@ -2,7 +2,6 @@
 
 Recibe pagos de manera simple y segura utilizando el Checkout de MercadoPago.
 
-
 ## 1. Crea una preferencia de pago
 
 Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
