@@ -5,14 +5,16 @@ sites_supported:
     - mlm
 ---
 
+
+# Introducción
+
 > WARNING
 >
 > Pre-requisitos
 >
-> * Tener implementada la [captura de datos de tarjeta](../../payments/api/receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
-> * Tener implementado [Clientes y Tarjetas Almacenadas](../../payments/api/customers-and-cards.es.md)
+> * Tener implementada la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
+> * Tener implementado [Clientes y Tarjetas Almacenadas](/guides/payments/api/customers-and-cards.es.md)
 
-# Introducción
 
 Mercado Pago te permitirá recibir pagos recurrentes a través de suscripciones. 
 
