@@ -1,11 +1,8 @@
-# Mercado Envíos
+# Agregando Envíos
 
-Implementa la logística de tu negocio con Mercado Envíos.
+Implementa la logística de tu negocio con **Mercado Envíos**.
 
-Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación. Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo.
-
-Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
-
+Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación. Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
 
 ## Cómo funciona
 
@@ -13,9 +10,7 @@ La siguiente documentación te permitirá ofrecer en el checkout de Mercado Pago
 
 Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
 
-
 ## Cómo implementarlo
-
 
 ### Paso 1: Activa tu cuenta para utilizar Mercado Envíos
 [Activa tu cuenta](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) cargando tu dirección. La misma debe ser la dirección de despacho y será utilizada para calcular el costo del envío.
