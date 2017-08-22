@@ -6,36 +6,37 @@
 >
 > * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
-En Mercado Pago es posible transaccionar utilizando tus números de establecimiento o los nuestros.
-
-## Creación de un pago
+## Atributos adicionales
 
 Luego de que hayas hecho el flujo de captura de datos de tarjeta y cuentes con el `card_token` puedes proceder a generar el pago.
 
-Para utilizar el modo _Gateway_ se agregan dos atributos al flujo de procesamiento de pagos:
+Para utilizar el modo _Gateway_ se disponibilizan dos atributos al flujo de procesamiento de pagos:
 
 1. `processing_mode`
-2. `merchant_account_id`
+2. `merchant_account_id` _(opcional)_
 
-#### processing\_mode
+### processing\_mode
 
-Es el modo que indica si procesaremos los pagos con tus números de establecimiento o los de MercadoPago.
+Es el modo que indica si procesaremos los pagos con tus propios números de comercio o los de Mercado Pago.
 
-El default es `aggregator` e indica que procesaremos los pagos con los números de establecimiento de MercadoPago.
+Si este parámetro no se envía en el *POST^, el comportamiento por defecto es que el valor sea `aggregator` e indica que el pago fue procesado utilizando los números de comercio de Mercado Pago.
 
-Si quieres procesar con tus números de establecimiento y los tienes configurados, debes enviar `gateway`.
+Si quieres procesar con tus números de comercio debes enviar `gateway`.
+Automáticamente según el medio de pago y los números de BIN, Mercado Pago utilizará el número de comercio correspondiente para esa transacción.
 
 > NOTE
 >
 > Nota
 >
-> Para solicitar el alta del modo Gateway y configuración de tus números de establecimientos debes hablar con tu ejecutivo de cuenta.
+> Para solicitar el alta del modo Gateway y configuración de tus números de comercio debes hablar con tu ejecutivo de cuenta.
 
-#### merchant\_account\_id
+### merchant\_account\_id
 
-Puedes indicar por qué establecimiento quieres procesar tu pago utilizando `merchant_account_id` que es el ID de Mercado Pago que lo representa.
+En casos de uso más complejos, es de utilidad poder definir en cada pago el número de comercio a utilizar.
 
-### Recibir un pago
+El atributo `merchant_account_id` permite controlar dicho comportamiento. Ese ID será el identificador interno de Mercado Pago que representa a un determinado número de comercio.
+
+## Creando un pago
 
 Una vez que cuentas con el id del `card_token` puedes realizar el pago realizando un API call:
 
@@ -54,7 +55,7 @@ Una vez que cuentas con el id del `card_token` puedes realizar el pago realizand
           "email" => "test_user_19653727@testuser.com"
       ),
       "processing_mode" => "gateway",
-      "merchant_account_id" => "#hashMerchantAccountID"
+      "merchant_account_id" => "ID"
   );
 
   $payment = $mp->post("/v1/payments", $payment_data);
@@ -76,13 +77,12 @@ La respuesta esperada será la siguiente:
 }
 ```
 
-Además de devolver los campos `processing_mode` y `merchant_account_id` se agregan dos más:
+Además de devolver los campos `processing_mode` y `merchant_account_id` se devuelven dos campos más:
 
 * `acquirer`: Nombre del adquiriente
-* `merchant_number`: Número de establecimiento utilizado para procesar el pago
+* `merchant_number`: Número de comercio utilizado para procesar el pago
 
-
-## Recibir un pago en cuotas
+## Creando un pago en cuotas
 
 Para hacer uso de tus promociones bancarias, es importante que se envíe el campo `installments` y `processing_mode` en `gateway` al momento de crear un pago.
 
@@ -95,11 +95,9 @@ Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount,
     "processing_mode": "gateway",
-    "merchant_account_id": "#hashMerchantAccountID"
+    "merchant_account_id": "ID"
 }, setInstallmentInfo);
 ```
-
-El campo `merchant_account_id` es opcional.
 
 La respuesta cuenta con la información de las cuotas disponibles indicando el valor a pagar:
 
@@ -109,7 +107,7 @@ La respuesta cuenta con la información de las cuotas disponibles indicando el v
         "payment_method_id": "amex",
         "payment_type_id": "credit_card",
         "processing_mode" : "gateway",
-        "merchant_account_id" : "#hashMerchantAccountID-1",
+        "merchant_account_id" : "ID",
         "issuer": {
             "id": "303",
             "is_default": null,
@@ -130,52 +128,8 @@ La respuesta cuenta con la información de las cuotas disponibles indicando el v
         "payment_method_id": "amex",
         "payment_type_id": "credit_card",
         "processing_mode" : "gateway",
-        "merchant_account_id" : "#hashMerchantAccountID-2",
+        "merchant_account_id" : "ID",
         ...
   }
 ]
-
 ```
-
-En el caso de que vayas a ofrecer cuotas con interés, debes adicionar el costo de estos al `transaction_amount`.
-
-> NOTE
->
-> Nota
->
-> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](../localization/considerations-argentina.es.md).
-
-Para crear el pago es importante enviar la cantidad de `installments` y el `processing_mode`:
-
-```php
-<?php
-  require_once ('mercadopago.php');
-
-  $mp = new MP('SECRET_ACCESS_TOKEN');
-
-  $payment_data = array(
-      "transaction_amount" => 100,
-      "token" => "ff8080814c11e237014c1ff593b57b4d",
-      "payer" => array (
-          "email" => "test_user_19653727@testuser.com"
-      ),
-      "installments" => 3,
-      "processing_mode" => "gateway",
-      "payment_method_id" => "amex"
-  );
-
-  $payment = $mp->post("/v1/payments", $payment_data);
-?>
-```
-
-## Manejo de respuestas
-
-Es **muy importante** comunicar correctamente los resultados recibidos al crear un pago. Esto ayudará a mejorar la conversión en los casos de rechazos, y evitar contracargos en los casos de transacciones aprobadas.
-
-Te recomendamos leer el artículo sobre el [manejo de respuestas](../payments/api/handling-responses.es.md) y utilizar la comunicación recomendada en cada uno de los casos.
-
-## Recibir una notificación del pago
-
-Es importante que te enteres de cualquier actualización del estado de tu pago. Para esto se deben utilizar _Webhooks_.
-
-Puedes leer todo para su implementación en el [artículo de Webhooks](../notifications/webhooks.es.md).
