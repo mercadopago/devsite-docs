@@ -1,4 +1,4 @@
-# Cómo integrar Marketplace en el Checkout Web
+# Cómo integrar marketplace en el Checkout Web
 
 > WARNING
 > 

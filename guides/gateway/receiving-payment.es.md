@@ -1,4 +1,4 @@
-# Recibiendo un pago en modo Gateway
+# Recibiendo un pago en modo gateway
 
 > WARNING
 >

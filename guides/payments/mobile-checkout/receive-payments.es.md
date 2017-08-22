@@ -1,4 +1,4 @@
-# Recibir Pagos
+# Recibir pagos
 
 > WARNING
 > 

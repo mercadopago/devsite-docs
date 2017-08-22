@@ -18,9 +18,14 @@ Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo
 
 El `token` es el que capturaste cuando estabas haciendo la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
-> INFO
+
+> NOTE
 >
+> Nota
+> 
 > Recomendamos almacenar los datos de tarjeta luego de que hayas realizado un pago de forma exitosa, para asegurarte de que los mismos sean correctos.
+
+
 
 [[[
 ```php 

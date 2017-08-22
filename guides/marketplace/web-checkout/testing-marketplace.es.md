@@ -1,4 +1,4 @@
-# Probando la Integración
+# Prueba tu integración
 
 Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
 Debes verificar que:

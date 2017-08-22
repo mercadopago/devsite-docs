@@ -1,4 +1,4 @@
-# Recibir Pagos
+# Recibir pagos
 
 Recibe pagos de manera simple y segura utilizando el Checkout de MercadoPago.
 
