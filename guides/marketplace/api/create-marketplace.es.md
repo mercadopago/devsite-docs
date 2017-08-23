@@ -1,4 +1,4 @@
-# Cómo integrar Marketplace con la API
+# Cómo integrar marketplace via API
 
 > WARNING
 >

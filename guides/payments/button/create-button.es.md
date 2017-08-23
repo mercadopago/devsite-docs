@@ -1,4 +1,4 @@
-# Recibir Pagos
+# Recibir pagos
 
 Desde tu cuenta de Mercado Pago, [tienes la opción de generar un botón o link](https://www.mercadopago.com.ar/tools/create) que le puedes enviar a tu comprador para que pueda efectuar el pago. No necesitas saber de programación.  
 

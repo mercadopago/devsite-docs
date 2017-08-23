@@ -1,4 +1,4 @@
-# Probando la Integración
+# Prueba tu integración
 
 Es muy importante que antes de salir a producción realices pruebas del flujo completo, verificando que la creación de pagos se realice en forma correcta y que los mensajes sean efectivos a la hora de comunicar al usuario.
 

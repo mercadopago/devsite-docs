@@ -1,4 +1,4 @@
-# Recebendo Pagamentos
+# Recebendo pagamentos
 
 A partir de sua conta MercadoPago, [você tem a opção de gerar um link](https://www.mercadopago.com.ar/tools/create) que pode enviar ao seu comprador para que este possa efetuar o pagamento. Sem a necessidade de saber promogração.  
 
