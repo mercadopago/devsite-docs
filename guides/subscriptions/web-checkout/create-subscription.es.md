@@ -5,7 +5,7 @@ Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
 ## 1. Crea una preferencia de subscripción
 
-Una preferencia de subscripción contiene todo el detalle del producto o servicio que se va a pagar de forma recurrente. Por ejemplo: 
+Una preferencia de subscripción contiene todo el detalle del producto o servicio que se va a pagar de forma recurrente. Por ejemplo:
 
 1. Datos y monto de lo que se va a pagar.
 2. Frecuencia de la subscripción.
@@ -53,9 +53,9 @@ Luego, deberás agregar los atributos de tu preferencia:
 		"transaction_amount" => 60,
 		"currency_id" => "ARS"
   );
-  
+
   $preapproval->save();
-  
+
 ?>
 ```
 ```java
@@ -73,7 +73,7 @@ preapproval.setReason("Monthly subscription to premium package");
 preapproval.setExternalReference("OP-1234");
 preapproval.setAutoRecurring(autoRecurring);
 preapproval.save();
-  
+
 ```
 ```node
 
@@ -96,9 +96,9 @@ preapproval_data = {
 }
 
 mercadopago.preapproval.create(preapproval_data).then(function (data)) {
-  // Do Stuff... 
+  // Do Stuff...
 }).catch(function (error) {
-  // Do Stuff... 
+  // Do Stuff...
 });
 
 ```
@@ -121,7 +121,7 @@ preapproval.save()
 ```
 ]]]
 
-  
+
 > Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu subscripción](#añade-características-especiales-a-tu-subscripción).
 
 
@@ -145,11 +145,11 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 
 Recibirás notificaciones en forma automática para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
-Mercado Pago realizará su mayor esfuerzo para lograr que tus subscripciones resulten pagas, sin requerir acción alguna de tu parte. 
+Mercado Pago realizará su mayor esfuerzo para lograr que tus subscripciones resulten pagas, sin requerir acción alguna de tu parte.
 
 En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago. Frente a este estado puedes pausar o cancelar la subscripción.
 
-Si la subscripción se encuentra activa se intentará cobrar en el próximo periodo.
+Si la subscripción se encuentra activa se intentará cobrar en el próximo período.
 
 Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
@@ -166,7 +166,7 @@ Visita la sección [Probando](/guides/payments/api/testing.es.md) para más info
 
 ## Añade características especiales a tu subscripción
 
-Revisa el [API Doc de Preapproval](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. 
+Revisa el [API Doc de Preapproval](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio.
 
 A continuación te mostramos las características más relevantes que puedes especificar al momento de crear una subscripción. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 

@@ -1,29 +1,30 @@
 # Probando la integración
 
-Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
+Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el _checkout_.
 Debes verificar que:
 
 + La información del bien o servicio a pagar es correcta.
-+ Se reconoce la cuenta del cliente, porque envías el email.
++ Se reconoce la cuenta del cliente, porque envías el _email_.
 + Ofreces la formas de pago que deseas.
 + La experiencia de pagos es la adecuada y se informa el resultado del pago.
 
 Para probar la integración sigue estos pasos:
 
-1. Configura la [public key de sandbox](https://www.mercadopago.com/mla/account/credentials?type=basic) en tu aplicación.
+1. Configura la [_public key_ de _sandbox_](https://www.mercadopago.com/mla/account/credentials?type=basic) en tu aplicación.
 2. Crea la preferencia en tu servidor con el access token.
 3. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 o 4 dígitos dependiendo de la tarjeta.
 4. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:
-        * **APRO**: Pago aprobado  
-        * **CONT**: Pago pendiente  
-        * **CALL**: Rechazo llamar para autorizar  
-        * **FUND**: Rechazo por monto insuficiente  
-        * **SECU**: Rechazo por código de seguridad  
-        * **EXPI**: Rechazo por fecha de expiración  
-        * **FORM**: Rechazo por error en formulario  
-        * **OTHE**: Rechazo general  
 
-### Tarjetas para probar nuestro checkout
+        * **APRO**: Pago aprobado.  
+        * **CONT**: Pago pendiente.  
+        * **CALL**: Rechazo llamar para autorizar.  
+        * **FUND**: Rechazo por monto insuficiente.  
+        * **SECU**: Rechazo por código de seguridad.  
+        * **EXPI**: Rechazo por fecha de expiración.  
+        * **FORM**: Rechazo por error en formulario.  
+        * **OTHE**: Rechazo general.  
+
+### Tarjetas para probar nuestro _checkout_
 
 Usa estas tarjetas de prueba para testear los diferentes resultados del pago.
 
@@ -37,5 +38,3 @@ Usa estas tarjetas de prueba para testear los diferentes resultados del pago.
 | Perú    	| 4009 1753 3280 6176|no disponible      |no disponible     |
 | Uruguay  	| 4014 6823 8753 2428|5808 8877 7464 1586|no disponible     |
 | Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|no disponible     |
-
-
