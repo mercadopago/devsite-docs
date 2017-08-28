@@ -2,7 +2,7 @@
 
 Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello, puedes utilizar tarjetas de prueba y simular las distintas respuestas de pagos, sin necesidad de utilizar una tarjeta real.
 
-Utiliza tus credenciales de Sandbox y alguna de las tarjetas que te facilitamos a continuación, dependiendo de tu país:
+Utiliza tus credenciales de _Sandbox_ y alguna de las tarjetas que te facilitamos a continuación, dependiendo de tu país:
 
 | País       | Visa                | Mastercard          | American Express  |
 | ---------- | ------------------- | ------------------- | ----------------- |

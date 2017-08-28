@@ -31,7 +31,7 @@ Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 
 ## Funcionalidades de API por país
 
-A continuación un listado de funcionalidades especificas de nuestra API por país:
+A continuación un listado de funcionalidades específicas de nuestra API por país:
 
 |      Funcionalidad      |                  ARG                   | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :---------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |

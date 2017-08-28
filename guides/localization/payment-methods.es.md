@@ -14,7 +14,7 @@ Los medios pueden ser obtenidos de la siguiente forma:
 		$payment_methods = $mp->get('/v1/payment_methods');
 		print_r ($payment_methods);
 	?>
-	
+
 **Respuesta**
 
 	[

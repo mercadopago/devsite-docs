@@ -1,18 +1,18 @@
 # **Personalización**
 
 > WARNING
-> 
+>
 > Pre-requisitos
 >
 > *  Esta guía asume que ya has seguido los pasos de la sección introducción y recibiendo pagos de la documentación para la instalación del SDK y la integración por defecto, junto con la creación de la preferencia de pago.
 
 ## Personaliza tu preferencia de pago
 
-De ser necesario, al momento de crear la preferencia de pago en tu servidor puedes especificar restricciones como exclusiones de medios o tipos de pago específicos y establecer la cantidad de cuotas máximas o por default.
+De ser necesario, al momento de crear la preferencia de pago en tu servidor puedes especificar restricciones como exclusiones de medios o tipos de pago específicos y establecer la cantidad de cuotas máximas o por _default_.
 
 #### Excluir Medios de Pago
 
-Puedes especificar los tipos de medio de pago que no quieras soportar (Efectivo, Tarjetas de Crédito o Débito) excluyéndolos en la creación de la Checkout Preference.
+Puedes especificar los tipos de medio de pago que no quieras soportar (Efectivo, Tarjetas de Crédito o Débito) excluyéndolos en la creación de la _Checkout Preference_.
 
 En el contenido de la preferencia de pago puedes agregar los medios de pago o tipos de medio que no quieras soportar.
 
@@ -25,7 +25,7 @@ En el contenido de la preferencia de pago puedes agregar los medios de pago o ti
     ...
   ],
   "payer": {
-    ... 
+    ...
   },
   "payment_methods": {
     "excluded_payment_types":[
@@ -45,7 +45,7 @@ En el contenido de la preferencia de pago puedes agregar los medios de pago o ti
     ...
   ],
   "payer": {
-    ... 
+    ...
   },
   "payment_methods": {
     "excluded_payment_types":[
@@ -58,7 +58,7 @@ En el contenido de la preferencia de pago puedes agregar los medios de pago o ti
 }
 ```
 
-O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, etc) quieres excluir del checkout:
+O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, etc) quieres excluir del _checkout_:
 
 *Excluir un medio de pago específico:*
 
@@ -69,7 +69,7 @@ O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, 
     ...
   ],
   "payer": {
-    ... 
+    ...
   },
   "payment_methods": {
     "excluded_payment_methods":[
@@ -89,7 +89,7 @@ O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, 
     ...
   ],
   "payer": {
-    ... 
+    ...
   },
   "payment_methods": {
     "excluded_payment_methods":[
@@ -112,7 +112,7 @@ Puedes precisar la cantidad máxima de cuotas que quieres soportar para tus medi
     ...
   ],
   "payer": {
-    ... 
+    ...
   },
   "payment_methods": {
   	 "excluded_payment_methods": [
@@ -127,7 +127,7 @@ Puedes precisar la cantidad máxima de cuotas que quieres soportar para tus medi
 }
 ```
 
-O también establecer una cantidad de coutas por default que se seleccionará automáticamente, si es que existe para el medio de pago seleccionado por el usuario. De lo contrario, se le mostrará la pantalla de coutas para que él elija:
+O también establecer una cantidad de coutas por _default_ que se seleccionará automáticamente, si es que existe para el medio de pago seleccionado por el usuario. De lo contrario, se le mostrará la pantalla de cuotas para que él elija:
 
 
 
@@ -138,7 +138,7 @@ O también establecer una cantidad de coutas por default que se seleccionará au
     ...
   ],
   "payer": {
-    ... 
+    ...
   },
   "payment_methods": {
   	 "excluded_payment_methods": [
@@ -155,11 +155,11 @@ O también establecer una cantidad de coutas por default que se seleccionará au
 
 ## Personaliza el flujo de pago
 
-La Preferencia de Flujo permite personalizar y configurar el flujo para que puedas lograr la mejor experiencia de pago. 
+La Preferencia de Flujo permite personalizar y configurar el flujo para que puedas lograr la mejor experiencia de pago.
 
-En la clase FlowPreference podrás configurar, tanto si deseas mostrar una pantalla con el resumen de lo que se va a pagar (Revisa y Confirma) como si deseas comunicar campañas de descuentos, entre otras opciones.
+En la clase _FlowPreference_ podrás configurar, tanto si deseas mostrar una pantalla con el resumen de lo que se va a pagar (Revisa y Confirma) como si deseas comunicar campañas de descuentos, entre otras opciones.
 
-Para incorporar en el Checkout las opciones configuradas en la clase FlowPreference deberás agregar una instancia de la misma en el inicio del Checkout, como se muestra en el siguiente código:
+Para incorporar en el _Checkout_ las opciones configuradas en la clase _FlowPreference_ deberás agregar una instancia de la misma en el inicio del _Checkout_, como se muestra en el siguiente código:
 
 [[[
 ```android
@@ -187,7 +187,7 @@ Para incorporar en el Checkout las opciones configuradas en la clase FlowPrefere
 	 let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
          navigationController: self.navigationController!)
 	   checkout.start()
-```	
+```
 ```Objective-c
 	FlowPreference *flowPreference = [[FlowPreference alloc]init];
     [flowPreference disableReviewAndConfirmScreen];
@@ -204,15 +204,15 @@ Para incorporar en el Checkout las opciones configuradas en la clase FlowPrefere
 
 Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.
 
-## Paga en tu Servidor 
+## Paga en tu Servidor
 
 Si necesitas hacer alguna validación en tu servidor al momento de realizar el pago, puedes configurar tu propio servicio de pagos.
 
-En la clase ServicePreference puedes configurar la URL y la URI de tu servicio junto con un Map para que puedas enviar la información que desees.
+En la clase _ServicePreference_ puedes configurar la URL y la URI de tu servicio junto con un _Map_ para que puedas enviar la información que desees.
 
-Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de MercadoPago.
+Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
 
-Una vez creada la ServicePreference, debes iniciar el flujo de pago de MercadoPago, tal como se muestra en el siguiente código:
+Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado Pago, tal como se muestra en el siguiente código:
 
 [[[
 
@@ -252,7 +252,7 @@ Una vez creada la ServicePreference, debes iniciar el flujo de pago de MercadoPa
     additionalInfo: ["item_id" : "id", "quantity" : 1])
 
 	MercadoPagoCheckout.setServicePreference(servicePreference)
-	
+
 	 let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
          navigationController: self.navigationController!)
 
@@ -261,9 +261,9 @@ Una vez creada la ServicePreference, debes iniciar el flujo de pago de MercadoPa
 ```Objective-c
 	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:2 unitPrice:2 description:@"item description" currencyId:@"ARS"];
     Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"payer@email.com" type:nil identification:nil entityType:nil];
-    
+
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
-        
+
     self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
 	[self.pref setSiteId:@“MLA”];
 
@@ -279,4 +279,3 @@ Una vez creada la ServicePreference, debes iniciar el flujo de pago de MercadoPa
 	}
 ```
 ]]]
-

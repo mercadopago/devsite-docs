@@ -6,7 +6,7 @@
 >
 > * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
 
-**IPN** (Instant Payment Notification) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
+**IPN** (_Instant Payment Notification_) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
 Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
@@ -29,7 +29,7 @@ Si la aplicación no está disponible o demora en responder, Mercado Pago reinte
 
 Mercado Pago informará a esta URL tanto en la creación como actualización de los estados de pagos u ordenes con dos parámetros:
 
-| Campo 		| Descripción 				 | 
+| Campo 		| Descripción 				 |
 | ---- 		| ---- 				 |
 | `topic` | Identifica de qué se trata. Puede ser `payment` o `merchant_order ` |
 | `id` | Es un identificador único del recurso notificado. |
@@ -75,13 +75,13 @@ if($_GET["topic"] == 'payment'){
 }
 
 if ($merchant_order_info["status"] == 200) {
-	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items 
+	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
 	$paid_amount = 0;
 
 	foreach ($merchant_order_info["response"]["payments"] as  $payment) {
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
-		}	
+		}
 	}
 
 	if($paid_amount >= $merchant_order_info["response"]["total_amount"]){

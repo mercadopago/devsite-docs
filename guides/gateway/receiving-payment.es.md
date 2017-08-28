@@ -12,8 +12,8 @@ Luego de que hayas hecho el flujo de captura de datos de tarjeta y cuentes con e
 
 Para utilizar el modo _Gateway_ se disponibilizan dos atributos al flujo de procesamiento de pagos:
 
-1. `processing_mode`
-2. `merchant_account_id` _(opcional)_
+1. `processing_mode`.
+2. `merchant_account_id` _(opcional)_.
 
 ### processing\_mode
 
@@ -28,17 +28,17 @@ Automáticamente según el medio de pago y los números de BIN, Mercado Pago uti
 >
 > Nota
 >
-> Para solicitar el alta del modo Gateway y configuración de tus números de comercio debes hablar con tu ejecutivo de cuenta.
+> Para solicitar el alta del modo _Gateway_ y configuración de tus números de comercio debes hablar con tu ejecutivo de cuenta.
 
 ### merchant\_account\_id
 
 En casos de uso más complejos, es de utilidad poder definir en cada pago el número de comercio a utilizar.
 
-El atributo `merchant_account_id` permite controlar dicho comportamiento. Ese ID será el identificador interno de Mercado Pago que representa a un determinado número de comercio.
+El atributo `merchant_account_id` permite controlar dicho comportamiento. Ese _ID_ será el identificador interno de Mercado Pago que representa a un determinado número de comercio.
 
 ## Creando un pago
 
-Una vez que cuentas con el id del `card_token` puedes realizar el pago realizando un API call:
+Una vez que cuentas con el _id_ del `card_token` puedes realizar el pago realizando un _API call_:
 
 ```php
 <?php

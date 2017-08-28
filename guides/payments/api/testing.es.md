@@ -2,9 +2,9 @@
 
 Es muy importante que antes de salir a producción realices pruebas del flujo completo, verificando que la creación de pagos se realice en forma correcta y que los mensajes sean efectivos a la hora de comunicar al usuario.
 
-Una buena experiencia de tus clientes en el checkout ayuda a garantizar la conversión.
+Una buena experiencia de tus clientes en el _checkout_ ayuda a mejorar la conversión.
 
-Cuentas con un par de [credenciales de sandbox](https://www.mercadopago.com.ar/account/credentials?type=custom), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
+Cuentas con un par de [credenciales de _sandbox_](https://www.mercadopago.com.ar/account/credentials?type=custom), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
 
 | País 		| Visa 				 | Mastercard        | American Express |
 | ---- 		| ---- 				 | ----------        | ---------------- |
@@ -21,7 +21,7 @@ Cuentas con un par de [credenciales de sandbox](https://www.mercadopago.com.ar/a
 
 ## Captura los datos de la tarjeta
 
-Con tu `public_key` podrás obtener de manera segura los datos de tarjeta de crédito ingresados en el formulario. Valida que se cargue correctamente el método de pago disponible para el número de tarjeta ingresado y la cantidad de cuotas con su correspondiente financiación. 
+Con tu `public_key` podrás obtener de manera segura los datos de tarjeta de crédito ingresados en el formulario. Valida que se cargue correctamente el método de pago disponible para el número de tarjeta ingresado y la cantidad de cuotas con su correspondiente financiación.
 
 Verifica que el `card_token` generado al enviar el formulario contiene información, por ejemplo verificando que el atributo `first_six_digits` contenga un valor.
 
@@ -36,28 +36,27 @@ Si al momento de la creación obtienes algún error vinculado al método de pago
 
 Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Para ello debes ingresar en el formulario en el campo `card_holder_name` alguno de los siguientes prefijos:
 
-* **APRO**: Pago aprobado  
-* **CONT**: Pago pendiente  
-* **CALL**: Rechazo llamar para autorizar  
-* **FUND**: Rechazo por monto insuficiente  
-* **SECU**: Rechazo por código de seguridad  
-* **EXPI**: Rechazo por fecha de expiración  
-* **FORM**: Rechazo por error en formulario  
-* **OTHE**: Rechazo general
-    
+* **APRO**: Pago aprobado.  
+* **CONT**: Pago pendiente.  
+* **CALL**: Rechazo llamar para autorizar.  
+* **FUND**: Rechazo por monto insuficiente.  
+* **SECU**: Rechazo por código de seguridad.  
+* **EXPI**: Rechazo por fecha de expiración.
+* **FORM**: Rechazo por error en formulario.  
+* **OTHE**: Rechazo general.
+
 En cada caso, debes comunicar a tu cliente el resultado del pago y qué debe hacer como próximo paso.
-Para ello te informaremos con un HTTP Status 201 OK que el pago ha sido creado correctamente y enviaremos un [código de resultado]() para que puedas redirigir al cliente a la página con el mensaje correcto. 
+Para ello te informaremos con un HTTP Status 201 OK que el pago ha sido creado correctamente y enviaremos un [código de resultado]() para que puedas redirigir al cliente a la página con el mensaje correcto.
 
 ## Verifica haber recibido la notificación Webhook
 
-Mercado Pago te enviará una notificación del evento ocurrido. Valida que la hayas recibido correctamente e impactado en forma correcta en tu sistema de gestión. 
+Mercado Pago te enviará una notificación del evento ocurrido. Valida que la hayas recibido correctamente e impactado en forma correcta en tu sistema de gestión.
 
 ### Efectúa la anulación del pago
 
-Realiza la devolución de un pago aprobado o la cancelación de un pago pendiente y verifica que te llegue la notificación con la novedad correspondiente al recurso. 
+Realiza la devolución de un pago aprobado o la cancelación de un pago pendiente y verifica que te llegue la notificación con la novedad correspondiente al recurso.
 
 
 ## Prueba la creación de un cliente
 
-Verifica que se haya creado el `customer` con la tarjeta asociada y que sus datos de tarjeta sean recuperados en forma correcta cuando cargues nuevamente el checkout.
-
+Verifica que se haya creado el `customer` con la tarjeta asociada y que sus datos de tarjeta sean recuperados en forma correcta cuando cargues nuevamente el _checkout_.

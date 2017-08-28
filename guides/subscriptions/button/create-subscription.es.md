@@ -1,14 +1,14 @@
 ---
 sites_supported:
     - mla
-    - mlb 
+    - mlb
     - mlm
 ---
 
 # Creando una suscripción
 
 Desde tu cuenta de Mercado Pago puedes crear un link de suscripción que te permitirá enviarselo a tus compradores y **recibir pagos de manera periódica**. Lo puedes usar para: cobrar cuotas del gimnasio, cobrar alquieres o recibir donaciones.
-No necesitas saber de programación. 
+No necesitas saber de programación.
 
 Te guiaremos para que puedas configurar:
 
@@ -16,7 +16,7 @@ Te guiaremos para que puedas configurar:
 * Frecuencia de pago: semanal, quincenal, mensual.
 * Duración de la suscripción: ilimitada o limitada a una cantidad de cobros.
 
-Obtendrás **un link** que puedes enviar por e-mail, publicar en redes sociales, o donde quieras.
+Obtendrás **un link** que puedes enviar por _e-mail_, publicar en redes sociales, o donde quieras.
 
 Además te brindaremos un **Código HTML** que puedes incluir en tu sitio web y un **Código QR** para que compartas con tus clientes.
 

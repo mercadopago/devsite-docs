@@ -11,7 +11,7 @@ Los tipos de medio de pago disponibles son:
 
 ## Obten los medios de pago disponibles
 
-Puedes obtener el listado de medios de pago disponibles realizando un request `HTTP GET`:
+Puedes obtener el listado de medios de pago disponibles realizando un _request_ `HTTP GET`:
 
 [[[
 ```php
@@ -19,9 +19,9 @@ Puedes obtener el listado de medios de pago disponibles realizando un request `H
 
   require_once ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
-  
-  $payment_methods = MercadoPago::get("/v1/payment_methods"); 
-  
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
 ?>
 ```
 ```java
@@ -81,23 +81,23 @@ El resultado será un _array_ con los medios de pago y sus propiedades:
 Para poder recibir pagos de medio en efectivo solamente debes recolectar el `email` del comprador. Luego es necesario hacer un request `HTTP POST` enviando el `transaction_amount`, `payment_method_id` y el `email` recolectado:
 
 [[[
-```php 
+```php
 <?php  
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
-  
-  $payment = new MercadoPago\Payment(); 
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
+  $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->description = "Title of what you are paying for"; 
+  $payment->description = "Title of what you are paying for";
   $payment->payment_method_id = "rapipago";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
-    
+
   $payment->save();
-    
+
 ?>
 ```
 ```java
@@ -109,9 +109,9 @@ Payment payment = new Payment();
 
 payment.setTransactionAmount(100)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
-      .setDescription('Title of what you are paying for') 
+      .setDescription('Title of what you are paying for')
       .setPaymentMethodId("rapipago")
-      .setPayer(new Payer("test_user_19653727@testuser.com")); 
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
 
@@ -121,16 +121,16 @@ payment.save();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var payment_data = { 
+var payment_data = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: 'Title of what you are paying for', 
+  description: 'Title of what you are paying for',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com'
   }
 };
-  
+
 mercadopago.payment.create(payment_data).then(function (data) {
   // Do Stuff...
 }).catch(function (error) {
@@ -146,15 +146,15 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.new()
 payment.transaction_amount = 100
 payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Title of what you are paying for' 
+payment.description = 'Title of what you are paying for'
 payment.payment_method_id = "rapipago"
-payment.payer = { 
+payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
 
 payment.save()
 
-``` 
+```
 ]]]
 
 Respuesta:
@@ -179,7 +179,7 @@ Respuesta:
 
 Recibirás una respuesta con un `status` **pending** hasta que el comprador realice el pago.
 
-En el campo `external_resource_url` tienes una url que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el link para acceda.
+En el campo `external_resource_url` tienes una url que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el _link_ para acceda.
 
 > NOTE
 >
@@ -213,7 +213,7 @@ Para más información puedes ver el artículo sobre [devoluciones](#).
 
 ## Integrar Webpay (Chile)
 
-Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes el **RUT**, **tipo de persona**, **dirección IP** del comprador, y la **institución financiera** que procesará el pago. 
+Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes el **RUT**, **tipo de persona**, **dirección IP** del comprador, y la **institución financiera** que procesará el pago.
 
 > NOTE
 >
@@ -243,7 +243,7 @@ Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **web
 <?php
 
 require_once ('mercadopago.php');
-MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;
@@ -262,10 +262,10 @@ $payment->transaction_details = array(
 $payment->additional_info = array(
 		"ip_address" => "127.0.0.1"
 	);
-$payment->callback_url = "http://www.your-site.com"; 
+$payment->callback_url = "http://www.your-site.com";
 $payment->payment_method_id = "webpay";
 
-$payment->save(); 
+$payment->save();
 
 ?>
 ```
@@ -285,8 +285,8 @@ AdditionalInfo additionalInfo = new AdditionalInfo();
 additionalInfo.ipAddress = "127.0.0.1";
 
 Payment payment = new Payment();
-payment.setTransactionAmount(10000) 
-      .setDescription('Title of what you are paying for') 
+payment.setTransactionAmount(10000)
+      .setDescription('Title of what you are paying for')
       .setPayer(payer)
       .setTransactionDetails(transactionDetails)
       .additionalInfo(additionalInfo)
