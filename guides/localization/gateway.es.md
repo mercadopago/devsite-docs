@@ -1,6 +1,6 @@
 # Gateway
 
-La disponibilidad del procesamiento en modalidad Gateway de Mercado Pago, varía según cada país.
+La disponibilidad del procesamiento en modalidad _Gateway_ de Mercado Pago, varía según cada país.
 
 ## Disponibilidad por solución
 
@@ -24,24 +24,24 @@ Revisión manual         | ✔    | ✔    |      | ✔    |      |      |      
 
 Producto      | Solución        | Disponible
 :------------ |:--------------- |:------------------- |
-Pagos         | Botón de pago   | 
-Pagos         | Web Checkout    | 
-Pagos         | Mobile Checkout | 
+Pagos         | Botón de pago   |
+Pagos         | Web Checkout    |
+Pagos         | Mobile Checkout |
 Pagos         | API             | ✔
-Suscripciones | Botón de pago   | 
-Marketplace   | Checkout        | 
-Marketplace   | API             | 
+Suscripciones | Botón de pago   |
+Marketplace   | Checkout        |
+Marketplace   | API             |
 
 ### Colombia
 
 Producto      | Solución        | Disponible
 :------------ |:--------------- |:------------------- |
-Pagos         | Botón de pago   | 
-Pagos         | Web Checkout    | 
-Pagos         | Mobile Checkout | 
+Pagos         | Botón de pago   |
+Pagos         | Web Checkout    |
+Pagos         | Mobile Checkout |
 Pagos         | API             | ✔
-Marketplace   | Web Checkout    | 
-Marketplace   | API             | 
+Marketplace   | Web Checkout    |
+Marketplace   | API             |
 
 ## Disponibilidad por adquirente
 

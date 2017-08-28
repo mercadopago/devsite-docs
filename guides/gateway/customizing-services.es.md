@@ -44,7 +44,7 @@ A continuación se puede ver un ejemplo
 
 ## Pago con servicios modificados
 
-Supongamos que para un pago no se quiere correr ni scoring ni revisión manual:
+Supongamos que para un pago no se quiere correr ni _scoring_ ni revisión manual:
 
 ### Request
 

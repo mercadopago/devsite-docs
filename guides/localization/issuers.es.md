@@ -20,7 +20,7 @@ Los emisores pueden ser obtenidos de la siguiente forma:
 		$card_issuers = $mp->get('/v1/payment_methods/card_issuers', 'visa', '424242');
 		print_r ($card_issuers);
 	?>
-	
+
 **Respuesta**
 
 	[
@@ -33,4 +33,4 @@ Los emisores pueden ser obtenidos de la siguiente forma:
 		...
 	]
 
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago y *los parámetros (querystring) que hayas utilizado*. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).
+Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago y *los parámetros (_querystring_) que hayas utilizado*. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).

@@ -2,9 +2,9 @@
 
 Puedes encontrar toda la información de los pagos generados utilizando nuestras APIs.
 
-## Obtener pagos creados a partir de su ID
+## Obtener pagos creados a partir de su _ID_
 
-Para obtener la información de un pago a partir de su ID debes hacer el siguiente request:
+Para obtener la información de un pago a partir de su _ID_ debes hacer el siguiente _request_:
 
 ```php
 <?php
@@ -60,18 +60,18 @@ Si quieres buscar pagos puedes utilizar la API de `Payment Search`:
 ?>
 ```
 
-En este ejemplo estás realizando una búsqueda por el campo `external_reference`, pero es posible utilizar muchos otros filtros.
+En este ejemplo se realiza una búsqueda por el campo `external_reference`, pero es posible utilizar muchos otros filtros.
 
 ### Filtros de búsqueda
 
 Cuando hagas una búsqueda para pagos puedes utilizar las siguientes variables:
 
-* `payer.id`: ID de tu pagador
+* `payer.id`: _ID_ de tu pagador
 * `installments`: Cantidad de cuotas en los pagos (ejemplo: `12`).
 * `payment_method_id`: Por medio de pago (ejemplo: `visa`).
 * `payment_type_id`: Por tipo de medio de pago (ejemplo: `credit_card`).
 * `operation_type`: El tipo de operación, puede ser `regular_payment`, `pos_payment`, `recurring_payment`, etc.
-* `processing_mode`: Si es un pago de tipo Gateway o Agregador (ejemplo: `gateway`).
+* `processing_mode`: Si es un pago de tipo _Gateway_ o Agregador (ejemplo: `gateway`).
 * `status`: El estado del pago.
 * `status_detail`: El detalle del estado del pago.
 

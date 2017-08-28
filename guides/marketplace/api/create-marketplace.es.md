@@ -3,21 +3,21 @@
 > WARNING
 >
 > Pre-requisitos
-> 
+>
 > * Tener implementado [API](/guides/payments/api/introduction.es.md).
 
 Para comenzar debes:
 
-1. Dar de alta una aplicación de tipo Marketplace
-2. Solicitar a tus vendedores que se vinculen
-3. Crear los pagos en nombre de tus vendedores
+1. Dar de alta una aplicación de tipo _Marketplace_.
+2. Solicitar a tus vendedores que se vinculen.
+3. Crear los pagos en nombre de tus vendedores.
 
 
 ## 1. Cómo crear tu aplicación
 
-Crea tu aplicación desde [este link](https://applications.mercadopago.com/), marcando la opción **MP Connect / Marketplace mode** y los **scopes** `read`, `write` y `offline_access`.
+[Crea tu aplicación](https://applications.mercadopago.com/), marcando la opción **MP Connect / Marketplace mode** y los **scopes** `read`, `write` y `offline_access`.
 
-También debes completar una **Redirect URI** donde serán redireccionado los vendedores para poder ser vinculados correctamente.
+También debes completar una **Redirect URI** donde serán redireccionados los vendedores para poder ser vinculados correctamente.
 
 Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario para el siguiente paso.
 
@@ -30,14 +30,14 @@ Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle 
 Recibirás el código de autorización en la url que especificaste:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
-   
+
 Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene un tiempo de validez de 10 minutos.
 
 > WARNING
 >
 > Consejo
 >
-> Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su e-mail, el ID de usuario en tu sistema o cualquier otra referencia útil.
+> Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su _e-mail_, el _ID_ de usuario en tu sistema o cualquier otra referencia útil.
 
 
 ### Crea las credenciales de tus vendedores
@@ -46,7 +46,7 @@ Usa el código de autorización, obtenido en el paso anterior, para obtener las 
 
 Request:
 
-```curl 
+```curl
 curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
@@ -66,7 +66,7 @@ Los parámetros que debes incluir son:
 * `redirect_uri`: Debe ser la misma Redirect URI que configuraste en tu aplicación.
 
 
-Response:
+_Response_:
 
 ```json
 {
@@ -94,7 +94,7 @@ En la respuesta, además del `access_token` y `public_key` del vendedor que se h
 
 Este proceso debes efectuarlo periódicamente para asegurar tener almacenado en tu sistema credeciales de vendedores que estén vigentes, dado que son válidas por 6 meses.
 
-Sugerimos que si en el flujo de pago obtienes algún error relacionado al Access Token que estás utilizando, refresques automáticamente y reintentes el pago, antes de mostrar un error al comprador.
+Sugerimos que si en el flujo de pago obtienes algún error relacionado al _Access Token_ que estás utilizando, refresques automáticamente y reintentes el pago, antes de mostrar un error al comprador.
 
 ```curl
 curl -X POST \
@@ -128,14 +128,14 @@ Para recibir pagos en nombre de tus vendedores debes integrar la [API](/guides/p
 Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario, sólo debes agregar dicho monto en el parámetro `application_fee` al crear el pago:
 
 [[[
-```php 
+```php
 <?php  
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
-  
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
   $payment = new MercadoPago\Payment();
-  
+
   $payment->transaction_amount = 100;
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
   $payment->description = "Title of what you are paying for";
@@ -145,9 +145,9 @@ Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nomb
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
-    
+
   $payment->save();
-    
+
 ?>
 ```
 ```java
@@ -163,7 +163,7 @@ payment.setTransactionAmount(100)
       .setInstallments(1)
       .setPaymentMethodId("visa")
       .setUserToken("ENV_USER_TOKEN")
-      .setPayer(new Payer("test_user_19653727@testuser.com")); 
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
 
@@ -173,7 +173,7 @@ payment.save();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var payment_data = { 
+var payment_data = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
   description: 'Title of what you are paying for',
@@ -184,7 +184,7 @@ var payment_data = {
     email: 'test_user_3931694@testuser.com'
   }
 };
-  
+
 mercadopago.payment.create(payment_data).then(function (data) {
   // Do Stuff...
 }).catch(function (error) {
@@ -204,17 +204,17 @@ payment.description = 'Title of what you are paying for'
 payment.installments = 1
 payment.payment_method_id = "visa"
 payment.user_token = "ENV_USER_TOKEN"
-payment.payer = { 
+payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
 
 payment.save()
 
-``` 
+```
 ]]]
 
 
-El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de MercadoPago, como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.
+El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago, como la del _Marketplace_, así como cualquier otro importe que se deba descontar de la venta.
 
 ### Notificaciones
 
@@ -222,12 +222,12 @@ Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos 
 
 Puedes recibir notificaciones cuando tus clientes autoricen o desautoricen tu aplicación, [configurando la URL](https://www.mercadopago.com/mla/account/webhooks) en tu cuenta.
 
-En el artículo de [notificaciones](/guides/notifications/webhooks.es.md) podes obtener más información.
+En el artículo de [notificaciones](/guides/notifications/webhooks.es.md) puedes obtener más información.
 
 ### Devoluciones y cancelaciones
 
-Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace como por el vendedor, via API o desde la cuenta de MercadoPago.
+Las devoluciones y cancelaciones podrán ser realizadas tanto por el _marketplace_ como por el vendedor, vía API o desde la cuenta de Mercado Pago.
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](/guides/manage-account/refunds-and-cancellations.es.md).
+Puedes encontrar más información en el artículo sobre [devoluciones y cancelaciones](/guides/manage-account/refunds-and-cancellations.es.md).
