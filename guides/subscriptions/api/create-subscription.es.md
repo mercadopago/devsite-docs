@@ -87,7 +87,7 @@ curl -X POST \
 
 
 
-> Estos son los datos mínimos e indispensables para crear un plan, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](#añade-características-especiales-a-tu-plan).
+> Estos son los datos mínimos e indispensables para crear un plan, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](/guides/subscriptions/api/manage-subscription.es.md).
 
 **Respuesta:**
 
@@ -238,14 +238,14 @@ En caso de no conseguir una aprobación de pago para la fecha de cobro estipulad
 
 Independientemente del estado del _invoice_ actual, si la subscripción se encuentra activa se creará un _invoice_ para el próximo período.
 
-Cada pago rechazado te será notificado mediante [Webhooks](/guides/notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, [actualice los datos de su tarjeta de crédito](#) o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+Cada pago rechazado te será notificado mediante [Webhooks](/guides/notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
 Visita la sección [Webhooks](/guides/notifications/webhooks.es.md) para más información.
 
 
 ## Añade características especiales a tu plan
 
-Revisa el [API Doc de plans](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Revisa el [API Doc de plans](/reference/plans) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
 ### Limita la cantidad de cuotas de la subscripción
 
@@ -320,7 +320,7 @@ En caso de que no podamos realizar este cobro, la subscripción no se creará.
 
 ### Cobra una comisión por transacción
 
-Si implementas [Marketplace](#) y operas con las credenciales de tus usuarios conectados puedes cobrar una comisión por cada pago que creas. Para esto sólo debes agregar dicho monto en el parámetro `application_fee` al crear el plan:
+Si implementas [Marketplace](/guides/marketplace/api/introduction.es.md) y operas con las credenciales de tus usuarios conectados puedes cobrar una comisión por cada pago que creas. Para esto sólo debes agregar dicho monto en el parámetro `application_fee` al crear el plan:
 
 ```curl
 {

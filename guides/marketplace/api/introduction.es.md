@@ -36,7 +36,7 @@ Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](#) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales]().
+Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](https://www.mercadopago.com/mla/account/credentials) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com/mla/account/credentials).
 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 

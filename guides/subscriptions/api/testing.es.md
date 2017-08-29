@@ -14,8 +14,6 @@ Utiliza tus credenciales de _Sandbox_ y alguna de las tarjetas que te facilitamo
 | Perú       | 4009 1753 3280 6176 | no disponible       | no disponible     |
 | Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | no disponible     |
 
-> Tenemos [más tarjetas de prueba]() disponibles para medios de pago locales de cada país.
-
 Para probar los posibles resultados de un pago, utiliza alguno de los siguientes prefijos en el campo `name` de */card_tokens* o en el campo `cardholderName`:
 
 | Prefijo | Descripción                     |
@@ -29,4 +27,4 @@ Para probar los posibles resultados de un pago, utiliza alguno de los siguientes
 | FORM    | Rechazo por error en formulario |
 | OTHE    | Rechazo general                 |
 
-Una vez finalices tus pruebas y estés listo para recibir pagos productivos, deberás reemplazar las [credenciales]() por las de producción y [activar el Modo Producción](#). **No necesitas cambiar otra cosa de tu código**.
+Una vez finalices tus pruebas y estés listo para recibir pagos productivos, deberás reemplazar las [credenciales](https://www.mercadopago.com/mla/account/credentials) por las de producción y [activar el Modo Producción](https://www.mercadopago.com/mla/account/credentials). **No necesitas cambiar otra cosa en tu código**.
