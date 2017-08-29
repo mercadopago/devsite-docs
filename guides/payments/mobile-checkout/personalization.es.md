@@ -127,7 +127,7 @@ Puedes precisar la cantidad máxima de cuotas que quieres soportar para tus medi
 }
 ```
 
-O también establecer una cantidad de coutas por _default_ que se seleccionará automáticamente, si es que existe para el medio de pago seleccionado por el usuario. De lo contrario, se le mostrará la pantalla de cuotas para que él elija:
+O también establecer una cantidad de cuotas por _default_ que se seleccionará automáticamente, si es que existe para el medio de pago seleccionado por el usuario. De lo contrario, se le mostrará la pantalla de cuotas para que él elija:
 
 
 
