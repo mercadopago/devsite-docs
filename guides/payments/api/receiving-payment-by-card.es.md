@@ -206,8 +206,7 @@ function sdkResponseHandler(status, response) {
     }
 };
 ```
-
-Puedes descargar el ejemplo completo desde [aquí](#).
+ 
 
 ## Recibir un pago con tarjeta
 
@@ -323,7 +322,7 @@ Eso es todo, la respuesta tendrá el estado del pago (`approved`, `rejected` o `
 
 > NOTE
 >
-> Puedes ver más información sobre el [manejo de respuestas](#manejo-de-respuestas).
+> Puedes ver más información sobre el [manejo de respuestas](/guides/payments/api/handling-responses.es.md).
 
 ## Recibir un pago en cuotas
 

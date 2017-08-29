@@ -46,7 +46,7 @@ A continuación un listado de funcionalidades específicas de nuestra API por pa
 
 ## Medios de pago no disponibles
 
-Puede suceder que determinados [medios de pago](payment-methods.es.md) no estén disponibles en algunos productos. A continuación se indica en detalle que medios de pago no están disponibles por producto, por país.
+Puede suceder que determinados [medios de pago](/guides/localization/payment-methods.es.md) no estén disponibles en algunos productos. A continuación se indica en detalle que medios de pago no están disponibles por producto, por país.
 
 ### Argentina
 

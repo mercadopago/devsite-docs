@@ -46,7 +46,7 @@ Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Pa
 * **OTHE**: Rechazo general.
 
 En cada caso, debes comunicar a tu cliente el resultado del pago y qué debe hacer como próximo paso.
-Para ello te informaremos con un HTTP Status 201 OK que el pago ha sido creado correctamente y enviaremos un [código de resultado]() para que puedas redirigir al cliente a la página con el mensaje correcto.
+Para ello te informaremos con un HTTP Status 201 OK que el pago ha sido creado correctamente y enviaremos un código de resultado para que puedas redirigir al cliente a la página con el mensaje correcto.
 
 ## Verifica haber recibido la notificación Webhook
 

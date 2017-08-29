@@ -39,7 +39,7 @@ Respuesta esperada:
 }
 ```
 
-Puedes obtener información sobre todos las variables devueltas en la [referencia de la API del recurso Payments](DEVSITE_PATH/reference/payments/).
+Puedes obtener información sobre todos las variables devueltas en la [referencia de la API del recurso Payments](/reference/payments).
 
 ## Buscar pagos
 

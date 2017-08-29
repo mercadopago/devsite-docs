@@ -211,6 +211,8 @@ Si este no cuenta con una, recibirá un email en la dirección enviada en el pag
 
 Para más información puedes ver el artículo sobre [devoluciones](#).
 
+----[mcl]----
+
 ## Integrar Webpay (Chile)
 
 Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes el **RUT**, **tipo de persona**, **dirección IP** del comprador, y la **institución financiera** que procesará el pago.
@@ -239,6 +241,7 @@ Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pa
 
 Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **webpay**, el `identification number` y el `financial_institution`:
 
+[[[
 ```php
 <?php
 
@@ -354,6 +357,7 @@ payment.payment_method_id = "webpay"
 
 payment.save();
 ```
+]]]
 
 > NOTE
 >
@@ -388,3 +392,5 @@ La respuesta que recibirás:
 ```
 
 Dirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](/guides/notifications/webhooks.es.md).
+
+------------
