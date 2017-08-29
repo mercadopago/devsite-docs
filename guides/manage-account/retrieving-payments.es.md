@@ -71,7 +71,7 @@ Cuando hagas una búsqueda para pagos puedes utilizar las siguientes variables:
 * `payment_method_id`: Por medio de pago (ejemplo: `visa`).
 * `payment_type_id`: Por tipo de medio de pago (ejemplo: `credit_card`).
 * `operation_type`: El tipo de operación, puede ser `regular_payment`, `pos_payment`, `recurring_payment`, etc.
-* `processing_mode`: Si es un pago de tipo _Gateway_ o Agregador (ejemplo: `gateway`).
+* `processing_mode`: Si es un pago de tipo Gateway o Agregador (ejemplo: `gateway`).
 * `status`: El estado del pago.
 * `status_detail`: El detalle del estado del pago.
 

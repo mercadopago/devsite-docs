@@ -1,6 +1,6 @@
 # Gateway
 
-La disponibilidad del procesamiento en modalidad _Gateway_ de Mercado Pago, varía según cada país.
+La disponibilidad del procesamiento en modalidad Gateway de Mercado Pago, varía según cada país.
 
 ## Disponibilidad por solución
 

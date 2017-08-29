@@ -10,7 +10,7 @@
 
 Luego de que hayas hecho el flujo de captura de datos de tarjeta y cuentes con el `card_token` puedes proceder a generar el pago.
 
-Para utilizar el modo _Gateway_ se disponibilizan dos atributos al flujo de procesamiento de pagos:
+Para utilizar el modo Gateway se disponibilizan dos atributos al flujo de procesamiento de pagos:
 
 1. `processing_mode`.
 2. `merchant_account_id` _(opcional)_.
@@ -28,7 +28,7 @@ Automáticamente según el medio de pago y los números de BIN, Mercado Pago uti
 >
 > Nota
 >
-> Para solicitar el alta del modo _Gateway_ y configuración de tus números de comercio debes hablar con tu ejecutivo de cuenta.
+> Para solicitar el alta del modo Gateway y configuración de tus números de comercio debes hablar con tu ejecutivo de cuenta.
 
 ### merchant\_account\_id
 

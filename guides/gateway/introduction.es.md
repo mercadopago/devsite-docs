@@ -1,6 +1,6 @@
 # Modelo gateway
 
-En Mercado Pago es posible transaccionar utilizando tus propios números de comercio. A este modo de procesamiento lo denominamos _Gateway_.
+En Mercado Pago es posible transaccionar utilizando tus propios números de comercio. A este modo de procesamiento lo denominamos Gateway.
 
 ## Consideraciones
 
