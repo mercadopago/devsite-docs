@@ -16,7 +16,6 @@ Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS
 
 ![androidiosfinal](/images/mobile-sdk-flow.png)
 
-
 ### Integrar el checkout es muy fácil:
 
 1. Incluye el SDK en tu proyecto.
