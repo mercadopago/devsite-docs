@@ -1,20 +1,20 @@
 # Mobile Checkout
 
 Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
- 
+
  - Pagos con tarjeta, efectivo o transferencia bancaria.
- - **Financiación**: cuotas con la mejor financiación posible. 
+ - **Financiación**: cuotas con la mejor financiación posible.
  - Descuentos y promociones.
  - Comunicación del resultado de los pagos.
 
 Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones.
 
 
-## Una experiencia, todas las plataformas 
+## Una experiencia, todas las plataformas
 
-Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS. 
+Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS.
 
-![androidiosfinal](https://user-images.githubusercontent.com/8038535/27835532-f47863c2-60a0-11e7-80d0-26f0b4d4c4d1.png)
+![androidiosfinal](/images/mobile-sdk-flow.png)
 
 
 ### Integrar el checkout es muy fácil:
@@ -30,7 +30,7 @@ Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS
 ```android
 ===
 En el archivo **build.gradle** añade el siguiente código.
-Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto. 
+Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
 ===
 dependencies {
    compile 'com.mercadopago:sdk:3.2.0'
@@ -48,5 +48,3 @@ platform :ios, '8.0'
 pod 'MercadoPagoSDK', '3.2.1'
 ```
 ]]]
-
-
