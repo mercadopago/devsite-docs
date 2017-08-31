@@ -1,15 +1,15 @@
-# Recibir pagos siendo PCI Compliant
+# Receba pagamentos sendo PCI Compliant
 
-Mercado Pago permite a vendedores que cumplen con las normativas PCI, tokenizar las tarjetas por backend.
+O Mercado Pago permite aos vendedores que cumprem com a regulamentação PCI que tokenizem cartões por backend.
 
 > WARNING
 >
-> Pre-requisitos
+> Pré-requisitos
 >
-> * Implementar el [procesamiento de pagos por API](/guides/payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
-> * Tener el documento AOC (Attestation of Compliance) firmado por un consultor QSA.
+> * Implementar o [processamento de pagamentos por API.](/guides/payments/api/receiving-payment-by-card.pt.md#recibir-un-pago-con-tarjeta).
+> * Possuir o documento AOC (Declaração de Compliance) assinado por um consultor QSA.
 
-Es necesario crear un `card_token`, el cual es la representación segura de la tarjeta:
+É necessário criar um `card_token`, que é a representação segura do cartão:
 
 [[[
 ```php
@@ -17,7 +17,7 @@ Es necesario crear un `card_token`, el cual es la representación segura de la t
     require_once ('mercadopago.php');
 
     $mp = new MP('ACCESS_TOKEN');
-    
+
     $card_token_data = array(
         "card_number" => "450995xxxxxx3704",
         "security_code" => "123",
@@ -31,7 +31,7 @@ Es necesario crear un `card_token`, el cual es la representación segura de la t
             )
         )
     );
-    
+
     $card_token = $mp->post("/v1/card_tokens", $card_token_data);
   ?>
 ```
@@ -144,7 +144,7 @@ print(json.dumps(card_token, indent=4))
 ```
 ]]]
 
-**Response**
+**Resposta**
 
 ```json
 {
@@ -174,21 +174,21 @@ print(json.dumps(card_token, indent=4))
 }
 ```
 
-Una vez hayas obtenido el Card Token de la tarjeta, puedes [crear el pago](../payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
+Após obter o card_token, você pode [criar o pagamento](../payments/api/receiving-payment-by-card.pt.md#recibir-un-pago-con-tarjeta).
 
-## Mejora la aprobación enviando el Device Fingerprint
+## Obtenha aprovação mais rápida enviando o Device Fingerprint
 
-Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas.
+O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o dispositivo do comprador; isso ajudará a evitar transações fraudulentas.
 
-### Implementación de device en Web
+### Implementação de dispositivo na Web
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu checkout:
+Para implementar a geração do dispositivo em seu site, adicione o seguinte código em seu checkout:
 
 ```html
 <script src="https://secure.mlstatic.com/org-img/checkout/custom/0.6/threat_metrix.js"></script>
 ```
 
-En tu formulario deberás agregar el siguiente `input`:
+Em seu formulário, adicione o seguinte `input`:
 
 ```html
 <form>
@@ -198,7 +198,7 @@ En tu formulario deberás agregar el siguiente `input`:
 </form>
 ```
 
-Es importante que envíes el campo `deviceId` a tu servidor y que al momento de crear el pago agregues el siguiente header al request:
+É importante que envie o campo `deviceId` ao seu servidor e, ao criar o pagamento, adicione o seguinte header à requisição:
 
 ```http
 X-Device-Session-Id: device_id
@@ -206,9 +206,10 @@ X-Device-Session-Id: device_id
 
 Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior.
 
-### Implementación de device en aplicaciones móviles nativas
+### Implementação de dispositivos em aplicativos móveis nativos
 
-Si cuentas con una aplicación nativa deberás enviar información sobre el device de tus compradores, esto lo puedes hacer enviando la siguiente información al momento de crear un `card_token`:
+Caso possua um aplicativo nativo, você deverá enviar informações sobre o dispositivo de seus compradores. É possível fazer isso enviando as seguintes informações ao criar um `card_token`:
+
 
 ```
 {
@@ -253,24 +254,21 @@ Si cuentas con una aplicación nativa deberás enviar información sobre el devi
 }
 ```
 
-Nuestros SDKs cuentan con funciones que puedes utilizar para capturar esta información:
+Nossos SDKs possuem funções que podem ser utilizadas para capturar essas informações:
 
 [[[
 
 ```android
 ===
-La clase[Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) recolectará tanto la información del dispositivo como su fingerprint.
+A classe [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) coletará tanto as informações do dispositivo quanto sua impressão digital (fingerprint).
 ===
 new Device(context);
 ```
 ```swift
 ===
-La clase[Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) recolectará tanto la información del dispositivo como su fingerprint.
+A classe [Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) coletará tanto as informações do dispositivo quanto sua impressão digital (fingerprint).
 ===
 Device()
 ```
 
 ]]]
-
-
-
