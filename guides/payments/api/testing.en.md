@@ -58,4 +58,4 @@ Make a refund for an approved payment or the cancellation of a pending payment a
 
 ## Test the creation of a customer
 
-Check if you have created the customer with the associated card and the card data is duly retrieved when you reload the checkout.
+Check if you have created the `customer` with the associated card and the card data is duly retrieved when you reload the checkout.

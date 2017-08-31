@@ -1,22 +1,24 @@
-# Agregando envíos
+# MercadoEnvíos
 
-Implementa la logística de tu negocio con **Mercado Envíos**.
+Implement the logistics of your business with **Mercado Envíos**.
 
-Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación. Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
+We solve everything for you: Receive the payment for the product and shipping costs in the same transaction. All you should do is print the label of Mercado Envíos and take the package to the postal service. We protect you against chargebacks or losses by the postal service, without requiring the submission of documentation.
 
-## Cómo funciona
+## How does it work?
 
-La siguiente documentación te permitirá ofrecer en el checkout de Mercado Pago una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
+The documentation below allows you to offer in the checkout of Mercado Pago a shipping option, and also that the customer pays the shipping cost along with the payment of the product.
 
-Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
+We recommend that you integrate the shipping cost calculator in your checkout.
 
-## Cómo implementarlo
+## How to implement it
 
-### Paso 1: Activa tu cuenta para utilizar Mercado Envíos
-[Activa tu cuenta](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) cargando tu dirección. La misma debe ser la dirección de despacho y será utilizada para calcular el costo del envío.
+### Step 1: Activate your account to use Mercado Envíos
 
-### Paso 2: Agrega Mercado Envíos a tu checkout
-Agrega las dimensiones y peso de tus productos en la preferencia de pago.
+[Activate your account](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) entering your address. It must be the shipping address and it will be used to calculate the shipping cost.
+
+### Step 2: Add Mercad oEnvíos to your checkout
+
+Enter the dimensions and weight of your products in the payment preference.
 
 [[[
 ```php
@@ -68,14 +70,15 @@ shipment.receiver_address = {
 
 > NOTE
 >
-> Nota
+> Note
 >
-> El formato de las dimensiones
-```alto x ancho x largo (centímetros), peso (gramos)```
-> Si indicas mal las dimensiones y no coinciden con el paquete físico, el carrier podría no admitir el envío. En caso de que te admitan el paquete, te descontaremos de tu cuenta la diferencia automáticamente.
+>The format of the dimensions are
+```height x width x length (centimeters), weight (grams).```
+>If the dimensions you specify do not match the actual package, the postal service may reject the shipping order. If they accept the package, we will automatically deduct the difference from your account.
 
-#### Retiro por sucursal
-Puedes ofrecer la posibilidad de retirar el producto por tu local, indicándole al comprador dónde y cuándo debe retirarlo. Para esto, debes incluir:
+
+#### Store pickup
+You can offer customers the possibility of picking up the product from your store, letting them know when and where to pick up the product. To do this, you must include:
 
 [[[
 ```php
@@ -107,9 +110,9 @@ shipment.local_pickup = true
 ```
 ]]]
 
-#### Ofrece envíos gratis
+#### Offer free shipping
 
-Debes indicar el medio de envío que vas a ofrecer de manera gratuita. El monto del mismo te será debitado de tu cuenta al momento de recibir un pago.
+You need to indicate the shipping method that you will offer for free. The shipping cost will be debited from your account every time you receive a payment.
 
 [[[
 ```php
@@ -152,13 +155,12 @@ shipment.free_methods = [
 ]]]
 
 
+Check out the [shipping method IDs](https://api.mercadolibre.com/sites/MLA/shipping_methods?marketplace=NONE) available.
 
-Consulta los id de [medio de envío](https://api.mercadolibre.com/sites/MLA/shipping_methods?marketplace=NONE) disponibles.
+#### Integrate in the Checkout
 
+See below an example of Checkout with MercadoEnvíos:
 
-#### Integralo en el Checkout
-
-Un ejemplo de Checkout con MercadoEnvíos queda de la siguiente manera:
 
 [[[
 ```php
@@ -320,30 +322,25 @@ preference.save
 
 
 
-### Paso 3: Mejora la experiencia con la calculadora de cuotas
+### Step 3: Improve the experience with the shipping cost calculator
 
-Te damos la posibilidad de pre-calcular el costo y los tiempos de envío para que tus compradores puedan verlo previo al checkout.
+We offer you the possibility to pre-calculate the shipping cost and delivery time to enable your buyers to see it in the checkout.
 
-Para poder realizar el cálculo debes enviar:
+You need to send us some information to perform the calculation:
 
-* `dimensions`: Es el tamaño del producto que quieres enviar, el formato es: alto x ancho x largo (centímetros), peso (gramos). Consulta los valores admitidos por OCA.
-
-* `zip_code`: Es el código postal de tu comprador.
-
-* `item_price`: Es el precio del producto que vas a enviar. Si son múltiples productos, indicá el precio total.
-
-* `free_method` (opcional): Puedes ofrecer envío gratis, esto te permite generar más ventas. Sólo debes indicarnos el medio de envío que vas a ofrecer como gratis. Luego, el monto del mismo te será debitado de tu cuenta al momento de recibir un pago.
+* `dimensions`: The size of the product you want to send; the format is: height x width x length (centimeters), weight (grams). Check the values allowed by the Postal Service.
+* `zip_code`: The buyer’s zip code.
+* `item_price`: The price of the product you are going to send. If there are multiple products, you should indicate the total price.
+* `free_method` (optional): You can offer free shipping, which could help you to increase your sales. You just let us know which shipping method you will offer for free. The shipping cost will be debited from your account every time you receive a payment.
 
 
-### Paso 4: Imprimí la etiqueta
+### Print the label
 
-Cada vez que recibas un pago, te llegará un e-mail con un botón para imprimir la etiqueta.
-También puedes ver los [pagos pendientes de impresión]() desde tu cuenta de MercadoPago.
+Whenever a payment is made, you will get an email with a button to print the label. You can also view [payments pending printing]() in your Mercado Pago account.
 
-En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y despáchalo. No tendrás que pagarle nada al carrier porque las etiquetas de MercadoEnvíos estarán pagas con el dinero que pagó tu comprador para el envío.
+In a box, include everything you have sold. Stick the label on the box and ship it. You do not have to pay for anything at the postal service because Mercado Envíos labels will be paid for by your buyer.
 
-### Paso 5: Seguimiento
-Utiliza nuestras herramientas para hacer el seguimiento.
-Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
+### Step 5: Tracking
+Use our tools to track shipments. In the list of payments, or in our APIs, you will be able to track your shipments.
 
-Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](../notification/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu stock y conocer el estado de los pagos y envíos.
+In addition, we can notify you when a shipment is ready to ship by sending you [notificacions](../notification/ipn.en.md) that are sent from Mercado Pago’s servers to yours. This will allow you to manage your inventories and know the status of payments and shipments.
