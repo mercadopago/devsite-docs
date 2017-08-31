@@ -9,7 +9,7 @@ Los tipos de medio de pago disponibles son:
 * bank_transfer
 * prepaid_card
 
-## Obten los medios de pago disponibles
+## Obtén los medios de pago disponibles
 
 Puedes obtener el listado de medios de pago disponibles realizando un _request_ `HTTP GET`:
 
