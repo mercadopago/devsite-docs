@@ -6,7 +6,7 @@ MercadoPago allows vendors who comply with PCI standards to tokenize cards via b
 >
 > Prerequisites
 >
-> * Implement the [payment processing via API](/guides/payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
+> * Implement the [payment processing via API](/guides/payments/api/receiving-payment-by-card.en.md#recibir-un-pago-con-tarjeta).
 > * Possess the document Attestation of Compliance (AOC) signed by a QSA Consultant.
 
 It is necessary to create a `card_token`, which is the secure representation of the card:

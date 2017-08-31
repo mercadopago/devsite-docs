@@ -1,10 +1,10 @@
-# Receive payments in Gateway mode
+# Recibiendo un pago en modo gateway
 
-> WARNING
+> WARNING		 
+>		 
+> Pre-requisitos
 >
-> Prerequisites
->
-> * Have the [card information capture](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta) implemented.
+> * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
 
 ## Atributos adicionales
 

@@ -44,4 +44,4 @@ As soon as you have [tested your application](/guides/subscriptions/api/testing.
 
 Your application will be automatically activated. All you have to do is replace the sandbox keys with the production ones in your code.
 
-#### [Start creating plans and subscribe customers](/guides/subscriptions/api/create-subscription.es.md)
+#### [Start creating plans and subscribe customers](/guides/subscriptions/api/create-subscription.en.md)

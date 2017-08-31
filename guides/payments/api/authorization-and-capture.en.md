@@ -11,7 +11,7 @@
 >
 > Prerequisites
 >
-> * Have the [card payment processing](/guides/payments/api/receiving-payment-by-card.es.md) implemented.
+> * Have the [card payment processing](/guides/payments/api/receiving-payment-by-card.en.md) implemented.
 >
 > Available only in:
 >

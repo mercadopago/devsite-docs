@@ -1,10 +1,10 @@
-# Identification types
+# Tipos de documento
 
-The types of documents accepted when making a payment through MercadoPago vary by country.
+Los tipos de documento aceptados a la hora de hacer un cobro a través de Mercado Pago varían según cada país.
 
-## Get the document types
+## Obteniendo los tipos de documento
 
-You can get the document types accepted as follows:
+Los tipos de documento aceptados pueden ser obtenidos de la siguiente forma:
 
 **GET /v1/identification_types**
 
@@ -14,8 +14,8 @@ You can get the document types accepted as follows:
 		$identification_types = $mp->get('/v1/identification_types');
 		print_r ($identification_types);
 	?>
-
-**Response**
+	
+**Respuesta**
 
 	[
 		{
@@ -27,50 +27,50 @@ You can get the document types accepted as follows:
   		},
   		...
   	]
+  	
+Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de MercadoPago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
 
-The results included in this response will coincide with the country associated with your MercadoPago account. For more information about this feature and its attributes, go to  [API reference](/reference).
+## Tipos de documento por país
 
-## Identification types by country
+A continuación se indican los tipos de documento aceptados para cada país.
 
-The document types accepted by country are listed below.
-
-Only Mexico does not require this information.
+Sólo México no requiere esta información.
 
 ### Argentina
 
-Identification type               | ID                       |
+Tipo de documento               | ID                       |
 :------------------------------ | :----------------------- |
 Documento Nacional de Identidad | `DNI`                    |
 Cédula de Identidad             | `CI`                     |
 Libreta Cívica                  | `LC`                     |
 Libreta de Enrolamiento         | `LE`                     |
-Others                           | `Otro`                   |
+Otro                            | `Otro`                   |
 
-### Brazil
+### Brasil
 
-Identification type           | ID                       |
+Tipo de documento           | ID                       |
 :-------------------------- | :----------------------- |
 Cadastro de Pessoas Físicas | `CPF`                    |
 
 ### Chile
 
-Identification type          | ID                       |
+Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Rol Único Tributario       | `RUT`                    |
-Others                      | `Otro`                   |
+Otro                       | `Otro`                   |
 
 ### Colombia
 
-Identification type                   | ID                       |
+Tipo de documento                   | ID                       |
 :---------------------------------- | :----------------------- |
 Cédula de Ciudadanía                | `CC`                     |
 Cédula de Extranjeria               | `CE`                     |
 Número de Identificación Tributaria | `NIT`                    |
-Others                               | `Otro`                   |
+Otro                                | `Otro`                   |
 
-### Peru
+### Perú
 
-Identification type                | ID                       |
+Tipo de documento                | ID                       |
 :------------------------------- | :----------------------- |
 Documento Nacional de Identidad  | `DNI`                    |
 Carné de Extranjería             | `CE`                     |
@@ -78,14 +78,14 @@ Registro Único de Contribuyentes | `RUC`                    |
 
 ### Uruguay
 
-Identification type          | ID                       |
+Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Cédula de Identidad        | `CI`                    |
-Others                      | `Otro`                   |
+Otro                       | `Otro`                   |
 
 ### Venezuela
 
-Identification type                | ID                       |
+Tipo de documento                | ID                       |
 :------------------------------- | :----------------------- |
 Cédula de Identidad V            | `CI-V`                   |
 Cédula de Identidad E            | `CI-E`                   |
@@ -94,4 +94,4 @@ Registro de Informacion Fiscal P | `RIF-P`                  |
 Registro de Informacion Fiscal V | `RIF-V`                  |
 Registro de Informacion Fiscal E | `RIF-E`                  |
 Registro de Informacion Fiscal G | `RIF-G`                  |
-Passport                         | `Pasaporte`              |
+Pasaporte                        | `Pasaporte`              |

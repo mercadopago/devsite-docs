@@ -224,7 +224,7 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
-For more information, go to the [notifications section](/guides/notifications/ipn.es.md).
+For more information, go to the [notifications section](/guides/notifications/ipn.en.md).
 
 ### Refunds and cancellations
 

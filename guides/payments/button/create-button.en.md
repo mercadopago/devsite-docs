@@ -4,7 +4,7 @@ Desde tu cuenta de Mercado Pago, [tienes la opción de generar un botón o link]
 
 El sistema te guiará para que puedas configurar:
 
-* Precio, descripción y foto de lo que vendes. 
+* Precio, descripción y foto de lo que vendes.
 * Si deseas utilizar envíos o no **(Mercado Envíos)**.
 * Medios de pago que aceptas: tarjetas de crédito o débito y pagos en efectivo.
 * Fecha entre las que deseas permitir el pago.
@@ -17,4 +17,4 @@ Ingresando en este link, tus compradores serán redirigidos a un formulario de p
 
 Además te brindaremos un **código HTML** que puedes incluir en tu sitio web y un **código QR**  para que tus clientes puedan escanearlo con su celular.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](/guides/payments/web-checkout/introduction.es.md)** o **[API](/guides/payments/api/introduction.es.md)**.
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](/guides/payments/web-checkout/introduction.en.md)** o **[API](/guides/payments/api/introduction.en.md)**.
