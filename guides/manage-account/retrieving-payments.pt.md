@@ -1,10 +1,10 @@
-# Gestión de pagos recibidos
+# Gestão de pagamentos recebidos
 
-Puedes encontrar toda la información de los pagos generados utilizando nuestras APIs.
+Encontre todas as informações sobre os pagamentos gerados através de nossas APIs.
 
-## Obtener pagos creados a partir de su ID
+## Obtenha pagamentos criados a partir de sua ID
 
-Para obtener la información de un pago a partir de su ID debes hacer el siguiente request:
+Para obter informações sobre um pagamento a partir de sua ID, deve-se fazer a seguinte requisição:
 
 ```php
 <?php
@@ -18,7 +18,7 @@ Para obtener la información de un pago a partir de su ID debes hacer el siguien
 ?>
 ```
 
-Respuesta esperada:
+Resposta esperada:
 
 ```json
 {
@@ -39,11 +39,11 @@ Respuesta esperada:
 }
 ```
 
-Puedes obtener información sobre todos las variables devueltas en la [referencia de la API del recurso Payments](DEVSITE_PATH/reference/payments/).
+As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](DEVSITE_PATH/reference/payments/).
 
-## Buscar pagos
+## Buscar pagamentos
 
-Si quieres buscar pagos puedes utilizar la API de `Payment Search`:
+Para buscar pagamentos, utilize a API `Payment Search`:
 
 ```php
 <?php
@@ -60,22 +60,22 @@ Si quieres buscar pagos puedes utilizar la API de `Payment Search`:
 ?>
 ```
 
-En este ejemplo estás realizando una búsqueda por el campo `external_reference`, pero es posible utilizar muchos otros filtros.
+Neste exemplo, a busca é realizada através do campo `external_reference`, mas também é possível utilizar muitos outros filtros.
 
-### Filtros de búsqueda
+### Filtros de busca
 
-Cuando hagas una búsqueda para pagos puedes utilizar las siguientes variables:
+Para buscar pagamentos, pode-se utilizar as seguintes variáveis:
 
-* `payer.id`: ID de tu pagador
-* `installments`: Cantidad de cuotas en los pagos (ejemplo: `12`).
-* `payment_method_id`: Por medio de pago (ejemplo: `visa`).
-* `payment_type_id`: Por tipo de medio de pago (ejemplo: `credit_card`).
-* `operation_type`: El tipo de operación, puede ser `regular_payment`, `pos_payment`, `recurring_payment`, etc.
-* `processing_mode`: Si es un pago de tipo Gateway o Agregador (ejemplo: `gateway`).
-* `status`: El estado del pago.
-* `status_detail`: El detalle del estado del pago.
+* `payer.id`: Identificação do comprador.
+* `installments`: Número de parcelas do pagamento (por exemplo: `12`).
+* `payment_method_id`: Meio de pagamento (por exemplo: `visa`).
+* `payment_type_id`: Tipo de meio de pagamento (por exemplo: `credit_card`).
+* `operation_type`: Tipo de operação, podendo ser `regular_payment`, `pos_payment`, `recurring_payment`, etc.
+* `processing_mode`: Se o pagamento for tipo Gateway ou Agregador (por exemplo:`gateway`).
+* `status`: Status do pagamento.
+* `status_detail`: Detalhe do status do pagamento.
 
-Se devolverá la cantidad total de resultados encontrados, que luego podrá ser utilizada para paginarlos:
+Será exibido o número total de resultados, que poderá então ser utilizado para paginação:
 
 ```json
 {
@@ -90,21 +90,21 @@ Se devolverá la cantidad total de resultados encontrados, que luego podrá ser 
 }
 ```
 
-### Filtros de búsquedas por fechas
+### Filtros de busca por datas
 
-También es posible realizar búsquedas por fechas especificas:
+Também é possível realizar a busca por datas específicas:
 
-* `begin_date`: Fecha de inicio de búsqueda (ISO 8601), ej. `2017-05-06T15:07:20.000-04:00`.
-* `end_date`: Fecha de fin de búsqueda (ISO 8601), ej. `2017-05-06T15:07:20.000-04:00`.
+* `begin_date`: Data de início da busca (ISO 8601), por exemplo: `2017-05-06T15:07:20.000-04:00`.
+* `end_date`: Data de término da busca (ISO 8601), por exemplo: `2017-05-06T15:07:20.000-04:00`.
 
-Los campos de fechas también soporta la variable `NOW` (fecha actual) combinada con las siguientes:
+Os campos de datas também aceitam a variável `NOW` (data atual), combinados com as seguintes variáveis:
 
 * `MINUTES`: Minutos (1 a 60).
 * `HOURS`: Horas (1 a 24).
 * `WEEKS`: Semanas (1 a 8).
-* `DAYS`: Días (1 a 365).
+* `DAYS`: Dias (1 a 365).
 
-Un ejemplo de esto sería `NOW-5MINUTES`:
+Um exemplo disso seria `NOW-5MINUTES`:
 
 ```php
 <?php
@@ -125,22 +125,22 @@ Un ejemplo de esto sería `NOW-5MINUTES`:
 ?>
 ```
 
-Con este ejemplo traes los **pagos actualizados** en las últimas 2 horas hasta la fecha actual de forma descendente.
+Este exemplo mostra os **pagamentos atualizados** nas últimas 2 horas até a data atual de forma decrescente.
 
-Puedes utilizar el campo `range` para buscar sobre un campo de fecha específico, por ej. `date_created` o `date_last_updated`.
+Pode-se utilizar o campo `range` para pesquisar um campo de data específico, por exemplo, `date_created` ou `date_last_updated`.
 
-### Paginar pagos
+### Paginação de pagamentos
 
-En el caso en que tengas muchos resultados deberás paginar los pagos utilizando los siguientes atributos:
+Caso obtenha muitos resultados, os pagamentos deverão ser paginados utilizando os seguintes atributos:
 
-| Atributo |           Descripción           |         Ejemplo          |
+| Atributo |           Descrição           |         Exemplo          |
 | :------------------- | :------------------------- | :--------------------------- |
-| `limit`            | Cantidad de registros devueltos (valor máximo = 50). Si no se define, devuelve hasta 30 registros encontrados.          | `limit=50`          |
-| `offset`            | Posición a partir de la cual se desea que devuelvan los registros. Por defecto el valor es 0 (máximo permitido: 10000).          | `offset=100`     |
-| `sort`         | Establece un criterio a partir del cual se ordenan los resultados. | `sort=external_reference` |
-| `criteria`         | Orden de los datos. Puede ser asc (ascendente) o desc (descendente).   | `criteria=asc`   |
+| `limit`            | Número de registros exibidos (valor máximo = 50). Se não for definido, serão exibidos até 30 registros encontrados         | `limit=50`          |
+| `offset`            | Posição a partir da qual você deseja que os registros sejam exibidos. O valor padrão é 0 (máximo permitido: 10000).          | `offset=100`     |
+| `sort`         | Estabelece um critério a partir do qual os resultados são classificados. | `sort=external_reference` |
+| `criteria`         | Ordem dos dados. Pode ser asc (crescente) ou desc (decrescente).   | `criteria=asc`   |
 
-Ejemplo de paginación:
+Exemplo de paginação:
 
 ```php
 <?php
@@ -161,4 +161,4 @@ Ejemplo de paginación:
 ?>
 ```
 
-Esto traería 50 resultados, filtrando los primeros 200, y los ordenaría por `id` de forma descendente.
+Isso exibiria 50 resultados, filtrando os primeiros 200, ordenados por `id` de forma decrescente.

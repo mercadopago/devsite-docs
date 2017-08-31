@@ -1,35 +1,34 @@
-# Cancelaciones y devoluciones
+# Cancelamentos e Devoluções
 
-Existen diferentes situaciones en las que puedes querer anular una venta:
+Existem diferentes situações que podem dar origem ao cancelamento de uma venda:
 
-* Si el status del pago es `pending`o `in_process` el dinero aún no se le ha cobrado al comprador, por lo que debes efectuar una cancelación.
+	•	Se o status do pagamento for `pending` ou `in_process`, o valor ainda não foi cobrado do comprador, então deve-se realizar um cancelamento.
 
-* Si el `status` del pago es `approved` entonces tu comprador pudo efectuarlo y deberás realizar una devolución.
+	•	Se o `status` do pagamento for `approved`, significa que o comprador efetuou o pagamento, e a devolução deverá ser realizada.
 
 
+## Cancelamentos
 
-## Cancelaciones
+- Os cancelamentos podem ser realizados somente com status pending e in process
+- É importante para meios de pagamento offline
+- Os meios de pagamento offline não expiram sozinhos, devem ser cancelados.
 
-- Las cancelaciones se pueden hacer solo con pending e in process
-- Es importante para medios off
-- Los medios off no se vencen solos, tenes que cancelarlos
+Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`. Assim que forem cancelados, não poderão mais ser aprovados e o estoque pendente de confirmação poderá ser liberado.
 
-Sólo puedes cancelar pagos que estén en estado `pending` o `in_process`. Cuando los canceles, ya no se aprobarán y podrás liberar el stock que tengas pendiente de confirmación.
+Os cancelamentos são utilizados principalmente com **meios de pagamento em dinheiro**.
 
-Las cancelaciones se utilizan principalmente con **medios en efectivo**.
+Eles não expiram automaticamente, portanto, é necessário que realize seu cancelamento.
 
-Estos no vencen automáticamente, por lo que es necesario que ejecutes su cancelación.
-
-Para realizar la cancelación, realiza el siguiente request enviando el `status` en `cancelled`:
+Para realizar o cancelamento, faça a seguinte requisição enviando o `status` `cancelled`:
 
 [[[
 ```php
-<?php 
+<?php
 
   $payment = MercadoPago\Preapproval::load($payment_id);
   $payment->status = "cancelled";
   $payment->update();
-  
+
 ?>
 ```
 ```java
@@ -58,23 +57,20 @@ curl -X PUT \
 'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
 ```
 ]]]
- 
+
 **Response status code: 200 OK**
 
-## Devoluciones
+## Devoluções
+É possível devolver um pagamento dentro de **90 dias** a partir de sua data de aprovação.
 
-Puedes devolver un pago dentro de los **90 días** desde su acreditación.
+Deve haver saldo suficiente disponível em sua conta para efetuar a devolução do valor do pagamento com sucesso. Caso contrário, obterá um erro `400 Bad Request`.
 
-Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto del pago satisfactoriamente. De lo contrario obtendrás un error `400 Bad Request`.
+Caso o comprador tenha efetuado o pagamento com cartão, o valor será devolvido no próprio cartão.
+Para pagamentos realizados a partir de outros meios, o valor a ser devolvido será depositado na conta MercadoPago do comprador. Caso não possua uma conta, criaremos uma utilizando seu e-mail.
 
-Si tu comprador realizó el pago con tarjeta, la devolución será reintegrada en la misma.
+### Efetue a devolução integral do pagamento
 
-Si el pago fue realizado con otro medio, se reintegrará en la cuenta de Mercado Pago del comprador. En caso que no tenga una cuenta, crearemos una utilizando su e-mail.
-
-
-### Realiza la devolución total del pago
-
-Para realizar la devolución total, realiza el siguiente request indicando el `payment_id`:
+Para realizar a devolução integral, faça a seguinte requisição indicando o `payment_id`:
 
 ```php
 <?php
@@ -86,10 +82,10 @@ $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 ?>
 ```
 > NOTE
-> 
+>
 > Nota
 >
-> El pago quedará con `status` en `refunded`.
+> O pagamento permanecerá com o `status` `refunded`.
 
 
 **Response status code: 201 Created**
@@ -109,11 +105,11 @@ $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 }
 ```
 
-### Realiza una devolución parcial
+### Efetue uma devolução parcial
 
-Puedes realizar hasta 20 devoluciones parciales a un mismo pago. Una vez efectuada, el `status` del pago será `approved` con un `status_detail` en `partially_refunded`.
+Pode-se realizar até 20 devoluções parciais de um mesmo pagamento. Assim que concluída, o `status` do pagamento será `approved` com um status_detail em `partially_refunded`.
 
-Debes indicar el monto a devolver.
+Deve-se indicar o valor a ser devolvido.
 
 [[[
 
@@ -139,9 +135,9 @@ payment.refund(10.5);
 ]]]
 
 
-### Obtén las devoluciones realizadas
+### Obtenha as devoluções realizadas
 
-Puedes ver los refunds realizados para un pago especifico con el siguiente request:
+É possível consultar as devoluções de um pagamento específico através da seguinte requisição:
 
 [[[
 ```php
@@ -167,7 +163,7 @@ refunds = payment.refunds()
 
 
 
-Respuesta:
+Resposta:
 
 ```json
 {
