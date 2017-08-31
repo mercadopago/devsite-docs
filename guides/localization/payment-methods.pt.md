@@ -1,10 +1,10 @@
-# Medios de pago
+# Meios de pagamento
 
-Los medios de pago ofrecidos por Mercado Pago varían según cada país.
+Os meios de pagamento oferecidos pelo MercadoPago variam de acordo com cada país.
 
-## Obteniendo los medios de pago
+## Obtenha os meios de pagamento
 
-Los medios pueden ser obtenidos de la siguiente forma:
+Os meios de pagamento podem ser obtidos da seguinte forma:
 
 **GET /v1/payment_methods**
 
@@ -14,8 +14,8 @@ Los medios pueden ser obtenidos de la siguiente forma:
 		$payment_methods = $mp->get('/v1/payment_methods');
 		print_r ($payment_methods);
 	?>
-	
-**Respuesta**
+
+**Resposta**
 
 	[
 		{
@@ -58,15 +58,15 @@ Los medios pueden ser obtenidos de la siguiente forma:
 		...
 	]
 
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de MercadoPago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta MercadoPago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](#).
 
-## Medios de pago por país
+## Meios de pagamento por país
 
-A continuación se indican los medios de pago disponibles para cada país.
+A seguir estão os meios de pagamento disponíveis para cada país.
 
 ### Argentina
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :-----------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
@@ -90,11 +90,11 @@ RapiPago			| `ticket`                 | `rapipago`
 Provincia Pagos			| `ticket`                 | `bapropagos`
 Carga Virtual			| `ticket`                 | `cargavirtual`
 Red Link		  	| `atm`		           | `redlink`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`
 
 ### Brasil
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :------------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
@@ -104,12 +104,12 @@ Diners Club International	| `credit_card`            | `diners`
 Elo				| `credit_card`            | `elo`
 Tarjeta Mercado Livre		| `credit_card`            | `melicard`
 Boleto Bancario			| `ticket`                 | `bolbradesco`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 
 ### Chile
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :------------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
@@ -121,11 +121,11 @@ Tarjeta Presto             	| `credit_card`            | `presto`
 Servipag      			| `ticket`                 | `servipag`
 Red Compras (Webpay)		| `bank_transfer`          | `webpay`
 Khipu      			| `bank_transfer`          | `khipu`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`
 
-### Colombia
+### Colômbia
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :------------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
@@ -135,11 +135,11 @@ Crédito Fácil Codensa    	| `credit_card`            | `codensa`
 Efecty        			| `ticket`                 | `efecty`
 Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`
 
 ### México
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :------------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
@@ -151,21 +151,21 @@ Oxxo            		| `ticket`                 | `oxxo`
 BBVA Bancomer    	    	| `atm`		           | `bancomer`
 Banamex    		       	| `atm`		           | `banamex`
 Santander    		       	| `atm`		           | `serfin`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`
 Bitcoin	                	| `digital_currency`       | `bitcoin`
 
-### Perú
+### Peru
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :-------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
 Visa Débito			| `dedit_card`             | `debvisa`
 BCP, BBVA Continental u otros  	| `atm`                    | `pagoefectivo_atm`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`
 
-### Uruguay
+### Uruguai
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :-------------------------	| :----------------------- |:--------------------
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
@@ -174,14 +174,14 @@ OCA				| `credit_card`            | `oca`
 Lider				| `credit_card`            | `lider`
 Abitab				| `ticket`                 | `abitab`
 Red Pagos			| `ticket`                 | `redpagos`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`
 
 ### Venezuela
 
-Medio de pago   		| Payment Type ID          | ID  
+Meio de pagamento		| ID do Tipo de Pagamento| ID  
 :-------------------------	| :----------------------- |:--------------------
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
 BBVA Provincial			| `ticket`                 | `provincial`
 Banco Mercantil			| `atm`                    | `mercantil`
-Dinero en cuenta	       	| `account_money`          | `account_money`
+Dinheiro em conta	       	| `account_money`          | `account_money`

@@ -1,10 +1,10 @@
-# Tipos de documento
+# Tipos de documentos
 
-Los tipos de documento aceptados a la hora de hacer un cobro a través de Mercado Pago varían según cada país.
+Os tipos de documentos aceitos ao efetuar uma cobrança através do Mercado Pago variam de acordo com o país.
 
-## Obteniendo los tipos de documento
+## Obtenha os tipos de documentos
 
-Los tipos de documento aceptados pueden ser obtenidos de la siguiente forma:
+Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
 
 **GET /v1/identification_types**
 
@@ -14,8 +14,8 @@ Los tipos de documento aceptados pueden ser obtenidos de la siguiente forma:
 		$identification_types = $mp->get('/v1/identification_types');
 		print_r ($identification_types);
 	?>
-	
-**Respuesta**
+
+**Resposta**
 
 	[
 		{
@@ -27,14 +27,14 @@ Los tipos de documento aceptados pueden ser obtenidos de la siguiente forma:
   		},
   		...
   	]
-  	
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de MercadoPago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
 
-## Tipos de documento por país
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta MercadoPago. Você poderá obter mais informações sobre este recurso e seus atributos em [Referência da API](/reference).
 
-A continuación se indican los tipos de documento aceptados para cada país.
+## Tipos de documentos por país
 
-Sólo México no requiere esta información.
+Os tipos de documentos aceitos de acordo com cada país estão indicados abaixo.
+
+Apenas o México não requer esta informação.
 
 ### Argentina
 
@@ -44,7 +44,7 @@ Documento Nacional de Identidad | `DNI`                    |
 Cédula de Identidad             | `CI`                     |
 Libreta Cívica                  | `LC`                     |
 Libreta de Enrolamiento         | `LE`                     |
-Otro                            | `Otro`                   |
+Outros                            | `Otro`                   |
 
 ### Brasil
 
@@ -57,18 +57,18 @@ Cadastro de Pessoas Físicas | `CPF`                    |
 Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Rol Único Tributario       | `RUT`                    |
-Otro                       | `Otro`                   |
+Outros                       | `Otro`                   |
 
-### Colombia
+### Colômbia
 
 Tipo de documento                   | ID                       |
 :---------------------------------- | :----------------------- |
 Cédula de Ciudadanía                | `CC`                     |
 Cédula de Extranjeria               | `CE`                     |
 Número de Identificación Tributaria | `NIT`                    |
-Otro                                | `Otro`                   |
+Outros                                | `Otro`                   |
 
-### Perú
+### Peru
 
 Tipo de documento                | ID                       |
 :------------------------------- | :----------------------- |
@@ -76,12 +76,12 @@ Documento Nacional de Identidad  | `DNI`                    |
 Carné de Extranjería             | `CE`                     |
 Registro Único de Contribuyentes | `RUC`                    |
 
-### Uruguay
+### Uruguai
 
 Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Cédula de Identidad        | `CI`                    |
-Otro                       | `Otro`                   |
+Outros                       | `Otro`                   |
 
 ### Venezuela
 
@@ -94,4 +94,4 @@ Registro de Informacion Fiscal P | `RIF-P`                  |
 Registro de Informacion Fiscal V | `RIF-V`                  |
 Registro de Informacion Fiscal E | `RIF-E`                  |
 Registro de Informacion Fiscal G | `RIF-G`                  |
-Pasaporte                        | `Pasaporte`              |
+Passaporte                       | `Pasaporte`              |

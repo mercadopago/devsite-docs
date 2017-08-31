@@ -1,21 +1,21 @@
-# Productos
+# Produtos
 
-Las productos ofrecidos por Mercado Pago pueden variar según cada país.
+Os produtos oferecidos pelo MercadoPago podem variar de acordo com cada país.
 
-## Disponibilidad por país
+## Disponibilidade por país
 
-### Pagos:
+### Pagamentos:
 
-|     Producto    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+|     Produto     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :-------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Botón de cobro  | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Web Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Mobile Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
 | API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
 
-### Suscripciones:
+### Assinaturas:
 
-|    Producto    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+|    Produto     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Botón de cobro | ✔   | ✔   |     |     | ✔   |     |     |     |
 | Web Checkout   | ✔   | ✔   |     |     | ✔   |     |     |     |
@@ -23,7 +23,7 @@ Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 
 ### Marketplace:
 
-|   Producto   | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+|   Produto    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Web Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
@@ -39,105 +39,105 @@ A continuación un listado de funcionalidades especificas de nuestra API por pa�
 | Captura por monto menor | ✔                                      | ✔   |     |     |     |     |     |     |
 | Reembolsos              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
 | Reembolsos parciales    | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
-| Pagos sin CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
+| Pagamentos sin CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
 | Soft descriptor         | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |
 
 
 
-## Medios de pago no disponibles
+## Meios de pagamento não disponíveis
 
-Puede suceder que determinados [medios de pago](payment-methods.es.md) no estén disponibles en algunos productos. A continuación se indica en detalle que medios de pago no están disponibles por producto, por país.
+Pode ser que alguns [meios de pagamento](payment-methods.pt.md) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
 
 ### Argentina
 
-|    Producto   |     Solución    |                                                                            Medios de pago no disponibles                                                                            |
+|    Produto    |     Solução     |                                                                            Meios de pagamento não disponíveis                                                                       |
 | :------------ | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pagos         | Botón de pago   | N/A                                                                                                                                                                                 |
-| Pagos         | Web Checkout    | N/A                                                                                                                                                                                 |
-| Pagos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
-| Pagos         | API             | N/A                                                                                                                                                                                 |
-| Suscripciones | Botón de pago   | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
-Suscripciones | Web Checkout    | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
-Suscripciones | API             | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+| Pagamentos         | Botão de pagamento   | N/A                                                                                                                                                                                 |
+| Pagamentos         | Web Checkout    | N/A                                                                                                                                                                                 |
+| Pagamentos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
+| Pagamentos         | API             | N/A                                                                                                                                                                                 |
+| Assinaturas | Botão de pagamento   | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
+Assinaturas | Web Checkout    | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+Assinaturas | API             | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
 | Marketplace | Web Checkout | N/A |
 | Marketplace | API          | N/A |
 
 ### Brasil
 
-|    Producto   |     Solución    | Medios de pago no disponibles |
+|    Produto    |     Solução     | Medios de pago no disponibles |
 | :------------ | :-------------- | :---------------------------- |
-| Pagos         | Botón de pago   | N/A                           |
-| Pagos         | Web Checkout    | N/A                           |
-| Pagos         | Mobile Checkout | `account_money`,`bolbradesco` |
-| Pagos         | API             | N/A                           |
-| Suscripciones | Botón de pago   | `bolbradesco`, `giftcard`     |
-| Suscripciones | Checkout        | `bolbradesco`, `giftcard`     |
-| Suscripciones | API             | `bolbradesco`, `giftcard`     |
+| Pagamentos         | Botão de pagamento   | N/A                           |
+| Pagamentos         | Web Checkout    | N/A                           |
+| Pagamentos         | Mobile Checkout | `account_money`,`bolbradesco` |
+| Pagamentos         | API             | N/A                           |
+| Assinaturas | Botão de pagamento   | `bolbradesco`, `giftcard`     |
+| Assinaturas | Checkout        | `bolbradesco`, `giftcard`     |
+| Assinaturas | API             | `bolbradesco`, `giftcard`     |
 | Marketplace   | Web Checkout    | N/A                           |
 | Marketplace   | API             | N/A                           |
 
 ### Chile
 
-|   Producto  |     Solución    |        Medios de pago no disponibles        |
+|   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
 | :---------- | :-------------- | :------------------------------------------ |
-| Pagos       | Botón de pago   | N/A                                         |
-| Pagos       | Web Checkout    | N/A                                         |
-| Pagos       | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
-| Pagos       | API             | `khipu`                                     |
+| Pagamentos       | Botão de pagamento   | N/A                                         |
+| Pagamentos       | Web Checkout    | N/A                                         |
+| Pagamentos       | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
+| Pagamentos       | API             | `khipu`                                     |
 | Marketplace | Web Checkout    | N/A                                         |
 | Marketplace | API             | `khipu`                                     |
 
-### Colombia
+### Colômbia
 
-|   Producto  |     Solución    |        Medios de pago no disponibles        |
+|   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
 | :---------- | :-------------- | :------------------------------------------ |
-| Pagos       | Botón de pago   | N/A                                         |
-| Pagos       | Web Checkout    | `davivienda`                                |
-| Pagos       | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
-| Pagos       | API             | `pse`                                       |
+| Pagamentos       | Botão de pagamento   | N/A                                         |
+| Pagamentos       | Web Checkout    | `davivienda`                                |
+| Pagamentos       | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
+| Pagamentos       | API             | `pse`                                       |
 | Marketplace | Web Checkout    | `davivienda`                                |
 | Marketplace | API             | `pse`                                       |
 
 ### México
 
-|    Producto   |     Solución    |                         Medios de pago no disponibles                         |
+|    Produto    |     Solução     |                         Meios de pagamento não disponíveis                    |
 | :------------ | :-------------- | :---------------------------------------------------------------------------- |
-| Pagos         | Botón de pago   | N/A                                                                           |
-| Pagos         | Web Checkout    | N/A                                                                           |
-| Pagos         | Mobile Checkout | `account_money`                                                               |
-| Pagos         | API             | N/A                                                                           |
-| Suscripciones | Botón de pago   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Suscripciones | Web Checkout    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Suscripciones | API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Pagamentos         | Botão de pagamento   | N/A                                                                           |
+| Pagamentos         | Web Checkout    | N/A                                                                           |
+| Pagamentos         | Mobile Checkout | `account_money`                                                               |
+| Pagamentos         | API             | N/A                                                                           |
+| Assinaturas | Botão de pagamento   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Assinaturas | Web Checkout    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Assinaturas | API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Marketplace   | Web Checkout    | N/A                                                                           |
 | Marketplace   | API             | N/A                                                                           |
 
-### Perú
+### Peru
 
-|   Producto  |     Solución    | Medios de pago no disponibles |
+|   Produto   |     Solução     | Medios de pago no disponibles |
 | :---------- | :-------------- | :---------------------------- |
-| Pagos       | Botón de pago   | N/A                           |
-| Pagos       | Web Checkout    | N/A                           |
-| Pagos       | Mobile Checkout | `account_money`               |
-| Pagos       | API             | N/A                           |
+| Pagamentos       | Botão de pagamento   | N/A                           |
+| Pagamentos       | Web Checkout    | N/A                           |
+| Pagamentos       | Mobile Checkout | `account_money`               |
+| Pagamentos       | API             | N/A                           |
 | Marketplace | Web Checkout    | N/A                           |
 | Marketplace | API             | N/A                           |
 
-### Uruguay
+### Uruguai
 
-|   Producto  |    Solución   | Medios de pago no disponibles |
+|   Produto   |    Solução    | Medios de pago no disponibles |
 | :---------- | :------------ | :---------------------------- |
-| Pagos       | Botón de pago | N/A                           |
-| Pagos       | Web Checkout  | N/A                           |
+| Pagamentos       | Botão de pagamento | N/A                           |
+| Pagamentos       | Web Checkout  | N/A                           |
 | Marketplace | Web Checkout  | N/A                           |
 
 ### Venezuela
 
-|   Producto  |     Solución    |           Medios de pago no disponibles            |
+|   Produto   |     Solução     |           Meios de pagamento não disponíveis       |
 | :---------- | :-------------- | :------------------------------------------------- |
-| Pagos       | Botón de pago   | N/A                                                |
-| Pagos       | Web Checkout    | N/A                                                |
-| Pagos       | Mobile Checkout | `account_money`,`banesco`,`mercantil`,`provincial` |
-| Pagos       | API             | N/A                                                |
+| Pagamentos       | Botão de pagamento   | N/A                                                |
+| Pagamentos       | Web Checkout    | N/A                                                |
+| Pagamentos       | Mobile Checkout | `account_money`,`banesco`,`mercantil`,`provincial` |
+| Pagamentos       | API             | N/A                                                |
 | Marketplace | Web Checkout    | N/A                                                |
 | Marketplace | API             | N/A                                                |

@@ -1,16 +1,16 @@
-# Emisores
+# Emissores
 
 > NOTE
 >
 > Nota
 >
-> Se denomina *emisor* a la entidad financiera que emite un plástico (tarjeta de débito, crédito o prepaga) a una determinada persona o empresa. Dichas entidades suelen ser bancos pero hay excepciones.
+> O *emissor* é a instituição financeira que emite um cartão (de débito, crédito ou pré-pago) à uma determinada pessoa ou empresa. Essas instituições são geralmente bancos, mas há exceções.
 
-Los emisores soportados por Mercado Pago varían según cada país. Este recurso permite identificar un emisor a partir de un [medio de pago](#) y un [número de BIN](#).
+Os emissores suportados pelo MercadoPago variam de acordo com cada país. Este recurso permite identificar um emissor com base no [meio de pagamento](#) e um [número BIN](#).
 
-## Obteniendo los emisores
+## Obtenha os emissores
 
-Los emisores pueden ser obtenidos de la siguiente forma:
+Os emissores podem ser obtidos da seguinte forma:
 
 **GET /v1/payment_methods/card_issuers**
 
@@ -20,8 +20,8 @@ Los emisores pueden ser obtenidos de la siguiente forma:
 		$card_issuers = $mp->get('/v1/payment_methods/card_issuers', 'visa', '424242');
 		print_r ($card_issuers);
 	?>
-	
-**Respuesta**
+
+**Resposta**
 
 	[
 		{
@@ -33,4 +33,5 @@ Los emisores pueden ser obtenidos de la siguiente forma:
 		...
 	]
 
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago y *los parámetros (querystring) que hayas utilizado*. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).
+
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago e *os parâmetros (querystring) que tiver utilizado*. Você poderá obter mais informações sobre este recurso e seus atributos em [Referência da API](#).

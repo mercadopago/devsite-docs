@@ -1,22 +1,22 @@
-# Consideraciones especiales para Argentina
+# Considerações especiais para Argentina
 
-## Resolución E 51/2017 para pagos en cuotas
+## Resolução E 51/2017 para pagamentos parcelados
 
-Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas exigencias a la hora de construir el formulario de compra con tarjeta de crédito en tu sitio:
+Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos requisitos ao criar o formulário de compra com cartão de crédito em seu site:
 
-1. Cuando el precio se exhiba financiado, deberá indicarse el precio de contado, el precio total financiado, la cantidad y monto de cada una de las cuotas, la tasa de interés efectiva anual aplicada y el costo financiero total.
+1. Ao exibir o preço financiado, deve-se indicar o preço à vista, o preço total financiado, o número e o valor de cada uma das parcelas, a taxa de juros efetiva anual aplicada e o custo financeiro total.
 
-2. En caso que comercialices productos y/o servicios bajo la modalidad de venta financiada en cuotas no podrás incluir la frase “sin interés” (o cualquier otra similar), cuando el costo de financiación sea trasladado al precio de venta al consumidor.
+2. Caso comercialize produtos e/ou serviços na modalidade de venda financiada em parcelas, não será possível incluir a frase “sem juros” (ou qualquer outra similar) quando o custo do financiamento é transferido ao preço de venda ao consumidor.
 
-3. La información del costo financiero total (CFT) de la operación deberá colocarse en una ubicación contigua al resto de las variables informadas en el punto anterior, en una tipografía en color destacado de idéntica fuente y tamaño al menos CINCO (5) veces mayor —conservando todas las proporciones de espesor de trazos, alto y ancho— al que se utilice para informar la tasa de interés efectiva anual (TEA) aplicada . Multiplicando el ancho de los lados x 2.25 es suficiente. Ejemplo:
+3. A informação sobre o custo financeiro total (CFT) da transação deverá ser posicionada próxima das outras variáveis informadas no ponto anterior, destacada em negrito em fonte idêntica e tamanho pelo menos 5 (CINCO) vezes maior – preservando todas as proporções de espessura do traço, altura e largura – à utilizada para informar a taxa de juros efetiva anual (TEA) aplicada. Multiplicar a largura dos lados x 2,25 é o suficiente. Exemplo:
 
 ![cft-tea](https://secure.mlstatic.com/developers/site/cloud/assets/misc/tea-cft.png)
 
-### Obteniendo la TEA y el CFT
+### Obtenha a TEA e o CFT
 
-La TEA y el CFT pueden ser obtenidos a través de nuestra API utilizando el recurso `installments`.
+A TEA e o CFT podem ser obtidos através da nossa API, utilizando o recurso installments.
 
-Para hacer el request, es necesario que envíes el `payment_method_id` y el `bin` (primeros 6 dígitos de la tarjeta). Ejemplo:
+Para fazer a requisição, é necessário que envie o payment_method_id e o bin (6 primeiros dígitos do cartão). Exemplo:
 
 ```
 curl -X GET \
@@ -24,7 +24,7 @@ curl -X GET \
 "https://api.mercadopago.com/v1/payment_methods/installments?[payment_method_id=:id]&[bin=:bin]&[amount=:amount]&[issuer.id=:issuer_id]&access_token=TEST-5252485006568871-060216-a48700bfc7c55fd627e1a107f7ece57e__LA_LB__-110261734"
 ```
 
-El resultado obtenido será una lista de cuotas que contendrán dicha información dentro del atributo `labels`:
+O resultado obtido será uma lista de parcelas contendo tais informações dentro do atributo `labels`:
 
 ```json
 {
@@ -60,11 +60,11 @@ El resultado obtenido será una lista de cuotas que contendrán dicha informaci�
 }
 ```
 
-Es importante mencionar que en los casos de 1 cuota o cuotas relacionadas a [promociones](https://www.mercadopago.com.ar/promociones) sin interés, tendrán los valores de TEA y CFT en 0. Aunque su valor sea 0, en escenarios donde el pagador elija más de una cuota, deberás mostrarlo en el formulario de compra de todas maneras.
+Vale ressaltar que nos casos de 1 parcela ou parcelas relacionadas à [promoções](https://www.mercadopago.com.ar/promociones) sem juros, os valores de TEA e CFT serão iguais a 0. Embora o valor seja 0, caso o cliente selecione mais de uma parcela, você deverá indicar o valor no formulário de compras de qualquer forma.
 
-### Ejemplo de código
+### Exemplo de código
 
-A continuación se encuentra un ejemplo de código para asistirte en esta implementación:
+Veja a seguir um exemplo de código para auxiliá-lo nesta implementação:
 
 ```html
 <form action="/pay" method="GET">
@@ -86,13 +86,13 @@ A continuación se encuentra un ejemplo de código para asistirte en esta implem
 ```
 
 
-Tu HTML ya debería contener el siguiente script:
+Seu HTML já deve conter o seguinte script:
 
 ```
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
-Utilizaremos la librería de Mercado Pago para consultar el recurso `installments`.
+Utilizaremos a biblioteca do MercadoPago para consultar o recurso `installments`.
 
 ```javascript
 <script type="text/javascript">
@@ -117,13 +117,13 @@ Utilizaremos la librería de Mercado Pago para consultar el recurso `installment
             payerCosts = response[0].payer_costs;
         fragment.appendChild(option);
         for (var i = 0; i < payerCosts.length; i++) {
-            option = new Option(payerCosts[i].recommended_message || payerCosts[i].installments, payerCosts[i].installments); 
+            option = new Option(payerCosts[i].recommended_message || payerCosts[i].installments, payerCosts[i].installments);
             var tax = payerCosts[i].labels;
             if(tax.length > 0){
               for (var l = 0; l < tax.length; l++) {
                 if (tax[l].indexOf('CFT_') !== -1){
-                  option.setAttribute('data-tax', tax[l]); 
-                } 
+                  option.setAttribute('data-tax', tax[l]);
+                }
               }
             }
             fragment.appendChild(option);
