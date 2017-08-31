@@ -1,41 +1,42 @@
-# Notificaciones Webhooks
+# Notificações Webhooks
 
 > WARNING
 >
-> Pre-requisitos
+> Pré-requisitos
 >
-> * Tener implementado [API](/guides/payments/api/introduction.es.md).
+> * Possuir a [API](/guides/payments/api/introduction.pt.md) implementada.
 
-Un **webhook** es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
+Um **webhook** é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
-Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com/mla/account/webhooks).
+Para receber as notificações dos eventos na sua plataforma, deve-se configurar previamente uma URL [acessível ao Mercado Pago](https://www.mercadopago.com/mla/account/webhooks).
 
 
 ## Eventos
 
-Siempre que suceda un evento, te enviaremos una notificación en formato `json` usando `HTTP POST` a la URL que especificaste.
+Sempre que ocorrer um evento, enviaremos uma notificação no formato `json` usando `HTTP POST` para a URL especificada.
 
-Notificaremos los siguientes eventos:
+Notificaremos os seguintes eventos:
 
-| Tipo de notificación |           Acción           |         Descripción          |
+
+| Tipo de notificação  |           Ação             |         Descrição            |
 | :------------------- | :------------------------- | :--------------------------- |
-| `payment`            | `payment.created`          | Creación de un pago          |
-| `payment`            | `payment.updated`          | Actualización de un pago     |
-| `mp-connect`         | `application.deauthorized` | Desvinculación de una cuenta |
-| `mp-connect`         | `application.authorized`   | Vinculación de una cuenta    |
-| `plan`               | `application.authorized`   | Vinculación de una cuenta    |
-| `subscription`       | `application.authorized`   | Vinculación de una cuenta    |
-| `invoice`            | `application.authorized`   | Vinculación de una cuenta    |
+| `payment`            | `payment.created`          | Criação de pagamento         |
+| `payment`            | `payment.updated`          | Atualização de pagamento     |
+| `mp-connect`         | `application.deauthorized` | Desvinculação de conta       |
+| `mp-connect`         | `application.authorized`   | Vinculação de conta          |
+| `plan`               | `application.authorized`   | Vinculação de conta          |
+| `subscription`       | `application.authorized`   | Vinculação de conta          |
+| `invoice`            | `application.authorized`   | Vinculação de conta          |
 
-Si la aplicación no está disponible o demora en responder, Mercado Pago reintentará la notificación mediante el siguiente esquema:
+Se a aplicação não estiver disponível ou demorar para responder, o Mercado Pago irá fazer tentativas de notificação nos seguintes intervalos:
 
-1. Reintento a los 5 minutos.
-2. Reintento a los 45 minutos.
-3. Reintento a las 6 horas.
-4. Reintento a los 2 días.
-5. Reintento a los 4 días.
+1. Tentativa após 5 minutos.
+2. Tentativa após 45 minutos.
+3. Tentativa após 6 horas.
+4. Tentativa após 2 dias.
+5. Tentativa após 4 dias.
 
-La notificación enviada tiene el siguiente formato:
+A notificação tem o seguinte formato:
 
 ```json
 {
@@ -54,30 +55,31 @@ La notificación enviada tiene el siguiente formato:
 }
 ```
 
-Esto indica que se creó el pago **999999999** para el usuario **44444** en **modo productivo** con la versión V1 de la API. Dicho evento ocurrió en la fecha **2016-03-25T10:04:58.396-04:00**.
+Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API. Este evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
 
 
-## ¿Qué debo hacer al recibir una notificación?
+## O que devo fazer ao receber uma notificação?
 
-Cuando recibas una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
+Quando receber uma notificação na sua plataforma, o MercadoPago espera uma resposta para validar que a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
 
-Recuerda que esta comunicación es exclusivamente entre los servidores de Mercado Pago y tu servidor, por lo cual no habrá un usuario físico viendo ningún tipo de resultado.
+Lembre-se que esta comunicação é feita exclusivamente entre os servidores do MercadoPago e o seu servidor, de modo que não haverá um usuário físico vendo nenhum tipo de resultado.
 
-Luego de esto, puedes obtener la información completa del recurso notificado accediendo a la API correspondiente en `https://api.mercadopago.com/`:
+Depois disso, você poderá obter a informação completa do recurso notificado acessando a API correspondente em `https://api.mercadopago.com/`:
 
-Tipo         | URL                                                | Documentación
------------- | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación]()
-marketplace  | /oauth/token?...                                   | [ver documentación]()
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentación]()
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación]()
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación]()
+Tipo         | URL                                                  | Documentação
+------------ | -----------------------------------------------------| --------------------
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação]()
+marketplace  | /oauth/token?...                                     | [ver documentação]()
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentação]()
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação]()
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação]()
 
-Para obtener tu access\_token, revisa la documentación de [Autenticación]().
+Para obter seu access_token, verifique a documentação de [Autenticação]().
 
-Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.
+Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado.
 
-### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
+
+### Implemente o receptor de notificações usando o seguinte código como exemplo:
 
 ```php
  <?php

@@ -1,58 +1,57 @@
-# Notificaciones IPN
+# Notificações IPN
 
 > WARNING
 >
-> Pre-requisitos
+> Pré-requisitos
 >
-> * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
+> * Possuir o [Checkout](/guides/payments/web-checkout/introduction.pt.md)implementado.
 
-**IPN** (Instant Payment Notification) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
+O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
-Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Para receber as notificações dos eventos na sua plataforma, deve-se [configurar previamente uma URL acessível ao Mercado Pago](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 
 ## Eventos
 
-Notificamos eventos referidos a tus órdenes (`merchant_orders`) o pagos recibidos (`payment`).
+Notificamos eventos relacionados aos seus pedidos (`merchant_orders`) ou pagamentos recebidos (`payment`).
 
-La `merchant_orders` es una entidad que agrupa tanto pagos como envíos. Tendrás que consultar los datos de las órdenes que te sean notificadas.
+A `merchant_order` é uma entidade que pode conter tanto pagamentos como envios. Você terá que consultar os dados dos pedidos notificados.
 
-Siempre que suceda un evento relacionado a alguno de los recursos mencionados, te enviaremos una notificación usando `HTTP POST` a la URL que especificaste.
+Sempre que ocorrer um evento relacionado a algum dos recursos mencionados, enviaremos uma notificação utilizando `HTTP POST` para a URL especificada.
 
-Si la aplicación no está disponible o demora en responder, Mercado Pago reintentará la notificación mediante el siguiente esquema:
+Se a aplicação não estiver disponível ou demorar para responder, o MercadoPago irá fazer tentativas de notificação nos seguintes intervalos:
 
-1. Reintento a los 5 minutos.
-2. Reintento a los 45 minutos.
-3. Reintento a las 6 horas.
-4. Reintento a los 2 días.
-5. Reintento a los 4 días.
+1. Tentativa após 5 minutos.
+2. Tentativa após 45 minutos.
+3. Tentativa após 6 horas.
+4. Tentativa após 2 dias.
+5. Tentativa após 4 dias.
 
-Mercado Pago informará a esta URL tanto en la creación como actualización de los estados de pagos u ordenes con dos parámetros:
+O Mercado Pago informará essa URL quando um recurso for criado ou quando houver atualização do status dos pagamentos ou pedidos, com dois parâmetros:
 
-| Campo 		| Descripción 				 | 
+| Campo 		| Descrição   				 |
 | ---- 		| ---- 				 |
-| `topic` | Identifica de qué se trata. Puede ser `payment` o `merchant_order ` |
-| `id` | Es un identificador único del recurso notificado. |
+| `topic` | Identifica do que se trata o recurso. Pode ser `payment` ou `merchant_order ` |
+| `id` | É um identificador único do recurso notificado. |
 
+Exemplo: Se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
-Ejemplo: Si configuraste la URL: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago de esta manera: `https://www.yoursite.com/notifications?topic=payment&id=123456789`
+## O que devo fazer ao receber uma notificação?
 
-## ¿Qué debo hacer al recibir una notificación?
+Quando receber uma notificação na sua plataforma, o Mercado Pago espera uma resposta para validar que a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
 
-Cuando recibas una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
+Lembre-se que esta comunicação é feita exclusivamente entre os servidores do MercadoPago e o seu servidor, de modo que não haverá um usuário físico vendo nenhum tipo de resultado.
 
-Recuerda que esta comunicación es exclusivamente entre los servidores de Mercado Pago y tu servidor, por lo cual no habrá un usuario físico viendo ningún tipo de resultado.
+Depois disso, você poderá obter a informação completa do recurso notificado acessando a API correspondente em `https://api.mercadopago.com/`:
 
-Luego de esto, puedes obtener la información completa del recurso notificado accediendo a la API correspondiente en `https://api.mercadopago.com/`:
-
-Tipo               | URL                                                         | Documentación
+Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación]()
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación]()
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação]()
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação]()
 
-> Para obtener tu access\_token, revisa la documentación de [Autenticación]()
+> Para obter seu access_token, verifique a documentação de [Autenticação]()
 
-### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
+### Implemente o receptor de notificações usando o seguinte código como exemplo:
 
 ```php
 <?php
@@ -75,13 +74,13 @@ if($_GET["topic"] == 'payment'){
 }
 
 if ($merchant_order_info["status"] == 200) {
-	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items 
+	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
 	$paid_amount = 0;
 
 	foreach ($merchant_order_info["response"]["payments"] as  $payment) {
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
-		}	
+		}
 	}
 
 	if($paid_amount >= $merchant_order_info["response"]["total_amount"]){
@@ -99,4 +98,4 @@ if ($merchant_order_info["status"] == 200) {
 ?>
 ```
 
-> Para obtener tu `CLIENT_ID` y `CLIENT_SECRET`, revisa la sección de [Credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic)
+> Para obter seu `CLIENT_ID` e `CLIENT_SECRET`, verifique a seção de [Credenciais](https://www.mercadopago.com.ar/account/credentials?type=basic)
