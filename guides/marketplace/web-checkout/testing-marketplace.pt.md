@@ -1,30 +1,31 @@
-# Prueba tu integración
+# Teste a Integração
 
-Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
-Debes verificar que:
+Antes de partir para a produção, é muito importante que realize testes de fluxo de pagamentos, verificando se as configurações feitas nas preferências estão no checkout.
+Você deve verificar se:
 
-+ La información del bien o servicio a pagar es correcta
-+ Se reconoce la cuenta del cliente, porque envías el email
-+ Ofreces la formas de pago que deseas
-+ Tu cliente es redireccionado correctamente luego de finalizado el pago
-+ Se realiza la división del pago correctamente entre tu cuenta marketplace  y la del vendedor
++ As informações do produto ou serviço a ser pago estão corretas
++ Se reconhece a conta do cliente para quem o e-mail é enviado
++ Oferece os métodos de pagamento que deseja
++	Seu cliente é redirecionado corretamente após a conclusão do pagamento
++ Se a divisão do pagamento é feita corretamente entre a sua conta do marketplace e a do vendedor
 
-## ¿Cómo realizar las pruebas?
 
-### Crea usuarios de prueba
+## Como realizar os testes?
 
-Para simular el proceso de pago de punta a punta debes crear 3 usuarios de prueba: **marketplace**, **vendedor** y **comprador**.
+### Crie usuários de teste
 
-Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios.
+Para simular o processo de pagamento do começo ao fim, é necessário criar 3 usuários de teste: **marketplace**, **vendedor** e **comprador**.
 
-Utiliza el dato *site_id* para indicar el país donde quieres realizar las pruebas. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguay: **MLU**, Perú: **MPE** y Colombia: **MCO**.
+Você deve fazer a seguinte requisição à API para criar cada um dos usuários.
+
+Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPEv e Colômbia: **MCO**.
 
 ##### Request
-```curl 
+```curl
 # Get access token
-AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token' 
--d 'grant_type=client_credentials' 
--d 'client_id=CLIENT_ID' 
+AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token'
+-d 'grant_type=client_credentials'
+-d 'client_id=CLIENT_ID'
 -d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
 
 curl -X POST \
@@ -43,43 +44,39 @@ curl -X POST \
 }
 ```
 
-### Tarjetas de prueba
+### Cartões de teste
 
 | País 		| Visa 				 | Mastercard        | American Express |
 | ---- 		| ---- 				 | ----------        | ---------------- |
 | Argentina  	| 4509 9535 6623 3704|5031 7557 3453 0604|3711 803032 57522 |
 | Brasil  	| 4235 6477 2802 5682|5031 4332 1540 6351|3753 651535 56885 |
 | Chile   	| 4168 8188 4444 7115|5416 7526 0258 2580|3757 781744 61804 |
-| Colombia  	| 4013 5406 8274 6260|5254 1336 7440 3564|3743 781877 55283 |
-| México  	| 4075 5957 1648 3764|5474 9254 3267 0366|no disponible     |
-| Perú    	| 4009 1753 3280 6176|no disponible      |no disponible     |
-| Uruguay  	| 4014 6823 8753 2428|5808 8877 7464 1586|no disponible     |
-| Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|no disponible     |
+| Colômbia  	| 4013 5406 8274 6260|5254 1336 7440 3564|3743 781877 55283 |
+| México  	| 4075 5957 1648 3764|5474 9254 3267 0366|indisponível     |
+| Peru    	| 4009 1753 3280 6176|indisponível       |indisponível     |
+| Uruguai 	| 4014 6823 8753 2428|5808 8877 7464 1586|indisponível      |
+| Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|indisponível     |
 
 
+### Faca os testes correspondentes
 
+O processo completo para testar o checkout é o seguinte:
 
-
-### Realiza las pruebas correspondientes
-
-El proceso completo para probar el checkout es el siguiente:
-
-1. Inicia sesión de Mercado Pago con la cuenta del **marketplace** y genera un APP\_ID con todas sus configuraciones y la URL para enviarle al **vendedor** para que vincule su cuenta.
-2. Inicia sesión de Mercado Pago con el **vendedor** y vincula la cuenta al marketplace, ingresando en la url configurada.
-3. Verifica que has registrados las credenciales del vendedor en el marketplace.
-3. Efectúa un pago de prueba. Puedes enviar el mail del **comprador** en la preferencia de pago, o probar el flujo como *invitado*. El email del comprador va a ser requerido al finalizar la compra.
-4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 dígitos.
-5. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:  
-    * **APRO**: Pago aprobado  
-    * **CONT**: Pago pendiente  
-    * **CALL**: Rechazo llamar para autorizar  
-    * **FUND**: Rechazo por monto insuficiente  
-    * **SECU**: Rechazo por código de seguridad  
-    * **EXPI**: Rechazo por fecha de expiración  
-    * **FORM**: Rechazo por error en formulario  
-    * **OTHE**: Rechazo general
-6. Valida, en caso de reintento, que se lleven a cabo correctamente.
-7. Verifica que la notificación te ha llegado correctamente
-8. Verifica que la división del pago entre las cuentas del **marketplace** y la del **vendedor** se ha realizado en forma correcta según lo especificado en el atributo `marketplace\_fee` de la preferencia de pagos
-8. Realiza la devolución de un pago acreditado
-
+1. Inicie a sessão no MercadoPago com a conta do **marketplace** e gere um APP_ID com todas as suas configurações e a URL a ser enviada ao **vendedor** para que vincule sua conta.
+2. Inicie a sessão no MercadoPago com o **vendedor** e vincule a conta ao marketplace, entrando na URL configurada.
+3. Verifique se as credenciais do vendedor foram registradas no marketplace.
+4. Efetue um pagamento de teste. Você pode enviar o e-mail do **comprador** na preferência de pagamento, ou testar o fluxo como *convidado*. O e-mail do comprador será solicitado ao finalizar a compra.
+5. Preencha os dados do formulário, inserindo os dígitos de um cartão de teste. Na data de vencimento, é necessário inserir qualquer data posterior à data atual e o código de segurança de 3 dígitos.
+6. No nome do titular do cartão, insira o prefixo correspondente ao que deseja testar:
+    * **APRO**: Pagamento aprovado.  
+    * **CONT**: Pagamento pendente.  
+    * **CALL**: Recusado, ligar para autorizar.  
+    * **FUND**: Recusado por saldo insuficiente.
+    * **SECU**: Recusado por código de segurança.  
+    * **EXPI**: Recusado por data de validade.
+    * **FORM**: Recusado por erro no formulário.  
+    * **OTHE**: Recusado geral.
+7. Valide, em caso de nova tentativa, para que sejam realizadas corretamente.
+8. Verifique se recebeu a notificação corretamente.
+9. Verifique se a divisão do pagamento entre as contas do marketplace e a do vendedor foi feita. corretamente, conforme especificado no atributo marketplace\_fee da preferência de pagamentos.
+10. Efetue a devolução de um pagamento aprovado.

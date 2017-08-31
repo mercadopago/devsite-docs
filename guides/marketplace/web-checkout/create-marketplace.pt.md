@@ -1,52 +1,54 @@
-# Cómo integrar marketplace en el Checkout Web
+# Como integrar o Marketplace no Web Checkout
 
 > WARNING
-> 
-> Pre-requisitos
-> 
-> * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
+>
+> Pré-requisitos
+>
+> * Possuir o [Checkout](/guides/payments/web-checkout/introduction.pt.md)implementado.
 
-Para comenzar debes:
+Para começar, você deve:
 
-1. Dar de alta una aplicación de tipo Marketplace
-2. Solicitar a tus vendedores que se vinculen
-3. Crear preferencias de pago en nombre de tus vendedores
+1. Registrar uma aplicação tipo Marketplace
+2. Solicitar aos seus vendedores que se vinculem a ela
+3. Criar preferências de pagamento em nome de seus vendedores
 
 
-## 1. Cómo crear tu aplicación
+## 1. Como criar sua aplicação
 
-Crea tu aplicación desde [este link](https://applications.mercadopago.com/), marcando la opción **MP Connect / Marketplace mode** y los **scopes** `read`, `write` y `offline_access`.
+Crie sua aplicação a partir deste [link](https://applications.mercadopago.com/), marcando a opção **MP Connect / Marketplace Mode** e os **scopes** `read`, `write` e `offline_access`.
 
-También debes completar una **Redirect URI** donde serán redireccionado los vendedores para poder ser vinculados correctamente.
+Você também deve preencher uma **Redirect URI** a partir da qual os vendedores serão redirecionados para serem vinculados corretamente.
 
-Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario para el siguiente paso.
+Assim que criar a aplicação, você obterá o `APP_ID` (identificador de aplicação) necessário para o próximo passo.
 
-## 2. Vinculación de cuentas
+## 2. Vinculação de contas
 
-Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id` el valor de `APP_ID` y la `redirect_uri` que obtuviste en el paso anterior:
+Para operar no MercadoPago em nome do seu vendedor, você deverá primeiro lhe solicitar uma autorização. Para isso, redirecione o usuário para a seguinte URL substituindo em `client_id` o valor de `APP_ID` e a `redirect_uri` que obteve no passo anterior:
 
 `https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com`
 
-Recibirás el código de autorización en la url que especificaste:
+Você receberá o código de autorização na URL que especificou:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
-   
-Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene un tiempo de validez de 10 minutos.
+
+Este `AUTHORIZATION_CODE` será utilizado para criar as credenciais, e é válido por 10 minutos.
 
 > WARNING
-> 
-> Consejo
 >
-> Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su e-mail, el ID de usuario en tu sistema o cualquier otra referencia útil.
+> Dica:
+>
+> Você pode incluir algum parâmetro na `redirect_uri` para identificar o vendedor correspondente ao código de autorização que recebeu, como o seu e-mail, a ID do usuário no seu sistema ou qualquer outra referência útil.
 
 
-### Crea las credenciales de tus vendedores
 
-Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de oAuth y así poder operar en su nombre.  
+### Crie as credenciais de seus vendedores
+
+Utilize o código de autorização obtido no passo anterior para obter as credenciais do usuário usando a API OAuth e assim poder operar em seu nome.
 
 Request:
 
-```curl 
+
+```curl
 curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
@@ -57,41 +59,40 @@ curl -X POST \
      -d 'code=AUTHORIZATION_CODE' \
      -d 'redirect_uri=REDIRECT_URI'
 ```
+Os parâmetros que você deve incluir são:
 
-Los parámetros que debes incluir son:
-
-* `client_id`: El valor de `APP_ID`.
-* `client_secret`: Tu `CLIENT_SECRET`.
-* `code`: El código de autorización que obtuviste al redirigir al usuario de vuelta a tu sitio.
-* `redirect_uri`: Debe ser la misma Redirect URI que configuraste en tu aplicación.
-
+* `client_id`: O valor de `APP_ID`.
+* `client_secret`: Seu `CLIENT_SECRET`.
+* `code`: O código de autorização obtido ao redirecionar o usuário de volta para o seu site.
+* `redirect_uri`: Deve ser a mesmo Redirect URI que você configurou na sua aplicação.
 
 Response:
 
+
 ```json
 {
-    "access_token": "MARKETPLACE_SELLER_TOKEN", 
-    "token_type": "bearer", 
-    "expires_in": 15552000, 
-    "scope": "offline_access read write", 
+    "access_token": "MARKETPLACE_SELLER_TOKEN",
+    "token_type": "bearer",
+    "expires_in": 15552000,
+    "scope": "offline_access read write",
     "refresh_token": "TG-XXXXXXXX"
 }
 ```
 
-En la respuesta, además del Access Token del vendedor que se ha vinculado, obtienes el Refresh Token que debes utilizar para renovar periódicamente sus credenciales.
+Na resposta, além do Access Token do vendedor que foi vinculado, você receberá o Refresh Token que deve ser utilizado para renovar suas credenciais periodicamente.
 
 > NOTE
 >
 > Nota
 >
-> Las credenciales tienen un **tiempo de validez de 6 meses**.
+> As credenciais **têm um prazo de validade de 6 meses**.
 
 
-### Renueva las credenciales de tus vendedores
+### Renove as credenciais de seus vendedores
 
-Este proceso debes efectuarlo periódicamente para asegurar tener almacenado en tu sistema credeciales de vendedores que estén vigentes, dado que son válidas por 6 meses.
+Este processo deve ser efetuado periodicamente para garantir que tenha armazenado em seu sistema as credenciais vigentes dos vendedores, já que são válidas por 6 meses.
 
-Sugerimos que si en el flujo de pago obtienes algún error relacionado al Access Token que estás utilizando, refresques automáticamente y reintentes el pago, antes de mostrar un error al comprador.
+Caso encontre qualquer erro no fluxo de pagamento relacionado ao Access Token que estiver utilizando, atualize automaticamente e tente efetuar o pagamento novamente, antes de exibir um erro ao comprador.
 
 ```curl
 curl -X POST \
@@ -104,24 +105,24 @@ curl -X POST \
      -d 'refresh_token=USER_RT'
 ```
 
-Respuesta esperada:
+Resposta esperada:
 
 ```json
 {
-    "access_token": "MARKETPLACE_SELLER_TOKEN", 
-    "token_type": "bearer", 
-    "expires_in": 15552000, 
-    "scope": "offline_access read write", 
+    "access_token": "MARKETPLACE_SELLER_TOKEN",
+    "token_type": "bearer",
+    "expires_in": 15552000,
+    "scope": "offline_access read write",
     "refresh_token": "TG-XXXXXXXX"
 }
 ```
 
 
-## 3. Integra el checkout
+## 3. Integre o checkout
 
-Para cobrar en nombre de tus vendedores debes integrar [Checkout](/guides/payments/web-checkout/introduction.es.md), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
+Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](/guides/payments/web-checkout/introduction.pt.md), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
 
-Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
+Se deseja cobrar uma comissão por cada pagamento processado pela sua aplicação em nome do seu vendedor, simplesmente adicione esse valor no parâmetro `marketplace_fee` ao criar a preferência:
 
 
 [[[
@@ -138,7 +139,7 @@ $item->title = "ARS";
 $item->unit_price = 10.00;
 
 $payer = new MercadoPago\Payer();
-$payer->email = "test_user_19653727@testuser.com"; 
+$payer->email = "test_user_19653727@testuser.com";
 
 $preference->items = array($item);
 $preference->payer = $payer;
@@ -169,33 +170,33 @@ preference.setMarketPlace(2.56);
 preference.setNotificationUrl("http://urlmarketplace.com/notification_ipn");
 preference.save();
 
-``` 
+```
 ```node
- 
+
 	var preference = {}
-  
+
   var item = {
     title: 'Multicolor kite',
     quantity: 1,
     currency_id: 'ARS',
     unit_price: 10.5
   }
-  
+
   var payer = {
     email: "demo@mail.com"
   }
-  
+
   preference.items = [item]
   preference.payer = payer
   preference.marketplace_fee = 2.56
   preference.notification_url = "http://urlmarketplace.com/notification_ipn";
-  
+
   mercadopago.preferences.create(preference).then(function (data) {
      // Do Stuff...
    }).catch(function (error) {
-     // Do Stuff... 
+     // Do Stuff...
    });
-  
+
 ```
 ```ruby
 
@@ -207,7 +208,7 @@ item.quantity= 1
 item.currency_id = 'ARS'
 item.unit_price = 10.5
 
-payer = MercadoPago::Payer.new() 
+payer = MercadoPago::Payer.new()
 payer.email="demo@mail.com"
 
 preference.items = [item]
@@ -215,24 +216,24 @@ preference.payer = payer
 preference.marketplace_fee = 2.56
 preference.notification_url = "http://urlmarketplace.com/notification_ipn"
 
-preference.save 
+preference.save
 
 ```
 ]]]
 
 
-El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago como la del Marketplace, así como cualquier otro importe que se deba descontar de la venta.
+O vendedor receberá a diferença entre o valor total e as comissões, tanto a do MercadoPago como a do Marketplace, assim como qualquer outro valor a ser deduzido da venda.
 
-### Notificaciones
+### Notificações
 
-Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
+É necessário que envie sua `notification_url` onde receberá um aviso de todos os novos pagamentos e atualizações de status gerados.
 
-En el artículo de [notificaciones](/guides/notifications/ipn.es.md) podes obtener más información.
+Para mais informações, consulte a seção de [notificações](/guides/notifications/ipn.pt.md).
 
-### Devoluciones y cancelaciones
+### Devoluções e cancelamentos
 
-Las devoluciones y cancelaciones podrán ser realizadas tanto por el marketplace como por el vendedor, via API o desde la cuenta de MercadoPago.
+As devoluções e cancelamentos poderão ser efetuados tanto pelo marketplace como pelo vendedor, através da API ou a partir da conta no Mercado Pago.
 
-En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
+Os cancelamentos somente poderão ser efetuados utilizando a API de cancelamentos.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](/guides/manage-account/cancellations-and-refunds.es.md).
+Para mais informações, consulte a seção de [devoluções e cancelamentos](/guides/manage-account/cancellations-and-refunds.es.md).

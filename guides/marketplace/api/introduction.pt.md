@@ -1,44 +1,44 @@
-# Introducción
+# Introdução à API do MarketPlace
 
-Un **MarketPlace** es un sitio o aplicación que permite a vendedores y compradores relacionarse para efectuar una transacción comercial. El propietario del Marketplace proporciona espacio a los vendedores para mostrar sus bienes o servicios, y se encarga de gestionar todos los aspectos de la transacción. Por ejemplo, Mercado Libre es un Marketplace.
+O **MarketPlace** é um site ou aplicação que permite uma interação entre compradores e vendedores para a conclusão de uma transação comercial. O proprietário do Marketplace fornece um espaço aos vendedores para que apresentem seus produtos ou serviços, e é responsável pela gestão de todos os aspectos da transação. Por exemplo, o Mercado Livre é um Marketplace.
 
-Mercado Pago te permite realizar cobros a nombre de los vendedores de tu plataforma y opcionalmente cobrar una comisión por la transacción.
+O Mercado Pago permite realizar cobranças em nome dos vendedores de sua plataforma e, opcionalmente, cobra uma taxa pela transação.
 
-Cuando se genera un pago, el dinero es dividido en el instante entre la cuenta de tu vendedor y la tuya, en caso de cobres una comisión.
+Quando um pagamento é gerado, o dinheiro é dividido imediatamente entre a conta do seu vendedor e a sua, em caso de taxa de comissão.
+
 
 > NOTE
 >
 > Nota
 >
-> La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor.
+> A comissão do MercadoPago será descontada do valor recebido pelo vendedor.
 
-Marketplace requiere de 3 pasos:
+O Marketplace requer 3 passos:
 
-1. **Crear una aplicación** Marketplace.
-2. **Conectar** las cuentas de tus vendedores.
-3. **Cobrar** en nombre de ellos.
+1. **Criar uma aplicação** Marketplace.
+2. **Conectar** as contas de seus vendedores.
+3. **Efetuar** a cobrança em nome dos vendedores.
 
-Después de crear la aplicación, sólo es necesario ejecutar el segundo y tercer paso para cada vendedor subsiguiente.
+Após criar a aplicação, você só precisa executar o segundo e o terceiro passos para cada fornecedor subsequente.
 
-## Credenciales
+## Credenciais
 
-Al igual que con la API de Pagos, cuentas con dos pares de claves para conectarte con la API. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com/mla/account/credentials).
+Assim como na API de Pagamentos, você conta com dois pares de chaves para conectar-se com a API. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadopago.com/mla/account/credentials).
 
-La **credencial pública**, o *public\_key*, es la utilizada para acceder a todos los recursos que necesitará tu frontend para recolectar los datos de tarjeta de crédito, y tokenizar.
+A **chave pública**, ou *public_key*, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e tokenizar.
 
-La **credencial privada**, o *access\_token*, se utiliza para todas las otras llamadas a las APIs, como procesar un pago, realizar reembolsos, almacenar tarjetas y más. Las claves privadas deben ser mantenidas **confidencialmente** en tus servidores de backend y nunca deben ser publicadas.
+A **chave privada**, ou *access_token*, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
 
-> Haciendo click en el botón "renovar credenciales" obtienes pares nuevos y los anteriores dejan de funcionar. Usa esto sólo cuando creas que tus credenciales privadas han sido vulneradas o por cuestiones de seguridad, similares al cambio de contraseña, cada cierto período de tiempo. Recuerda reemplazar las credenciales en tu aplicación para que siga funcionando.
+> Ao clicar no botão “renovar credenciais”, você obterá novos pares de chaves e as anteriores deixarão de funcionar. Faça isso apenas se desconfiar que suas chaves privadas foram violadas ou por questões de segurança, semelhante à alteração de senha, a cada período de tempo. Lembre-se de substituir as credenciais em sua aplicação para mantê-la funcionando.
 
-## Modo Sandbox y Productivo
+## Modo Sandbox e Modo de Produção
 
-Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración. 
+Inicialmente, sua aplicação poderá interagir com o MercadoPago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 
-Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
+Forneceremos cartões de teste para que possa simular transações como se fossem reais.
 
-Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](#) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](). 
+Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](#) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas credenciais.
 
-Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de sandbox por las productivas en tu código.
+Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do sandbox pelas de produção em seu código.
 
-
-#### [Comenzar a crear mi Marketplace](/guides/marketplace/api/create-marketplace.es.md)
+#### [Começar a criar meu Marketplace](/guides/marketplace/api/create-marketplace.pt.md).
