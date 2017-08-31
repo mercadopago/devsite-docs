@@ -1,15 +1,15 @@
-# Recibir pagos siendo PCI Compliant
+# Receive payments being a PCI Compliant
 
-Mercado Pago permite a vendedores que cumplen con las normativas PCI, tokenizar las tarjetas por backend.
+MercadoPago allows vendors who comply with PCI standards to tokenize cards via backend.
 
 > WARNING
 >
-> Pre-requisitos
+> Prerequisites
 >
-> * Implementar el [procesamiento de pagos por API](/guides/payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
-> * Tener el documento AOC (Attestation of Compliance) firmado por un consultor QSA.
+> * Implement the [payment processing via API](/guides/payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
+> * Possess the document Attestation of Compliance (AOC) signed by a QSA Consultant.
 
-Es necesario crear un `card_token`, el cual es la representación segura de la tarjeta:
+It is necessary to create a `card_token`, which is the secure representation of the card:
 
 [[[
 ```php
@@ -174,21 +174,21 @@ print(json.dumps(card_token, indent=4))
 }
 ```
 
-Una vez hayas obtenido el Card Token de la tarjeta, puedes [crear el pago](../payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
+Once you got the card_token, you can [create the payment](../payments/api/receiving-payment-by-card.en.md#receive-card-payments).
 
-## Mejora la aprobación enviando el Device Fingerprint
+## Get approval faster by submitting the Device Fingerprint
 
-Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas.
+MercadoPago has its own fraud prevention tools. Whenever possible, we recommend submitting information about the buyer's device. This will help prevent fraudulent transactions.
 
-### Implementación de device en Web
+### Device deployment on the Web
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu checkout:
+To deploy the generation of the device on your website, you must add the following code to your checkout:
 
 ```html
 <script src="https://secure.mlstatic.com/org-img/checkout/custom/0.6/threat_metrix.js"></script>
 ```
 
-En tu formulario deberás agregar el siguiente `input`:
+In your form, add the following `input`:
 
 ```html
 <form>
@@ -198,7 +198,7 @@ En tu formulario deberás agregar el siguiente `input`:
 </form>
 ```
 
-Es importante que envíes el campo `deviceId` a tu servidor y que al momento de crear el pago agregues el siguiente header al request:
+It is important that you submit the `deviceId` field to your server and add the following header to the request when creating the payment:
 
 ```http
 X-Device-Session-Id: device_id
@@ -206,9 +206,9 @@ X-Device-Session-Id: device_id
 
 Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior.
 
-### Implementación de device en aplicaciones móviles nativas
+### Device deployment in native mobile applications
 
-Si cuentas con una aplicación nativa deberás enviar información sobre el device de tus compradores, esto lo puedes hacer enviando la siguiente información al momento de crear un `card_token`:
+If you have a native application, you must submit information about your buyers’ device. You can do this by submitting the following information when creating a `card_token`:
 
 ```
 {
@@ -253,19 +253,19 @@ Si cuentas con una aplicación nativa deberás enviar información sobre el devi
 }
 ```
 
-Nuestros SDKs cuentan con funciones que puedes utilizar para capturar esta información:
+Our SDKs have features you can use to capture this information.
 
 [[[
 
 ```android
 ===
-La clase[Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) recolectará tanto la información del dispositivo como su fingerprint.
+The [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) class will collect both device and fingerprint information.
 ===
 new Device(context);
 ```
 ```swift
 ===
-La clase[Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) recolectará tanto la información del dispositivo como su fingerprint.
+The [Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) class will collect both device and fingerprint information.
 ===
 Device()
 ```
