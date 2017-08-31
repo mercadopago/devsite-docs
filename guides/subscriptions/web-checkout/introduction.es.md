@@ -1,7 +1,7 @@
 ---
 sites_supported:
     - mla
-    - mlb 
+    - mlb
     - mlm
 ---
 
