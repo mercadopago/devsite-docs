@@ -1,59 +1,58 @@
-# IPN Notifications
+# Notificaciones IPN
 
 > WARNING
 >
-> Prerequisites
+> Pre-requisitos
 >
-> * Have the [Checkout](/guides/payments/web-checkout/introduction.es.md)implemented.
+> * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
 
-**IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
+**IPN** (Instant Payment Notification) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
-In order to receive notifications about the events in your platform, you have to [previously configure an URL to which MercadoPago has access.
-](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 
-## Events
+## Eventos
 
-We notify events related to your orders (`merchant_orders`) or received `payments` (payment).
+Notificamos eventos referidos a tus órdenes (`merchant_orders`) o pagos recibidos (`payment`).
 
-A `merchant_order` is an entity that groups payments as well as shipments. You will have to check the data of the orders notified to you.
+La `merchant_orders` es una entidad que agrupa tanto pagos como envíos. Tendrás que consultar los datos de las órdenes que te sean notificadas.
 
-Whenever an event related to any of the mentioned resources takes place, we will send you a notification using `HTTP POST` to the URL that you specified.
+Siempre que suceda un evento relacionado a alguno de los recursos mencionados, te enviaremos una notificación usando `HTTP POST` a la URL que especificaste.
 
-If your application is not available or takes too long to respond, MercadoPago will retry sending the notification according to the following interval:
+Si la aplicación no está disponible o demora en responder, Mercado Pago reintentará la notificación mediante el siguiente esquema:
 
-1. Retry after 5 minutes.
-2. Retry after 45 minutes.
-3. Retry after 6 hours.
-4. Retry after 2 days.
-5. Retry after 4 days.
+1. Reintento a los 5 minutos.
+2. Reintento a los 45 minutos.
+3. Reintento a las 6 horas.
+4. Reintento a los 2 días.
+5. Reintento a los 4 días.
 
-MercadoPago will notify to this URL whenever a resource is created or when orders or payment status are updated, with two parameters:
+Mercado Pago informará a esta URL tanto en la creación como actualización de los estados de pagos u ordenes con dos parámetros:
 
-| Field 		| Description 				 |
+| Campo 		| Descripción 				 |
 | ---- 		| ---- 				 |
-| `topic` | Identifies the type of resource. It may be `payment` or `merchant_order` |
-| `id` | A unique identification of the notified resource. |
+| `topic` | Identifica de qué se trata. Puede ser `payment` o `merchant_order ` |
+| `id` | Es un identificador único del recurso notificado. |
 
 
-Example: If you have configured the URL:  `https://www.yoursite.com/notifications`, you will receive payment notifications as follows:  `https://www.yoursite.com/notifications?topic=payment&id=123456789`
+Ejemplo: Si configuraste la URL: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago de esta manera: `https://www.yoursite.com/notifications?topic=payment&id=123456789`
 
-## What should I do after receiving a notification?
+## ¿Qué debo hacer al recibir una notificación?
 
-When you receive a notification in your platform, MercadoPago awaits a response to validate that you received it correctly. To do this, you have to send a response with a `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
+Cuando recibas una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
 
-Note that this communication is made exclusively between MercadoPago’s servers and your server, so there will be no physical user viewing any kind of result.
+Recuerda que esta comunicación es exclusivamente entre los servidores de Mercado Pago y tu servidor, por lo cual no habrá un usuario físico viendo ningún tipo de resultado.
 
-After that, you will be able to get full information about the notified resource by accessing the corresponding API at https://api.mercadopago.com/:
+Luego de esto, puedes obtener la información completa del recurso notificado accediendo a la API correspondiente en `https://api.mercadopago.com/`:
 
-Type               | URL                                                         | Documentation
+Tipo               | URL                                                         | Documentación
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation]()
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation]()
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación]()
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación]()
 
-> To get your access_token, check the Authentication documentation
+> Para obtener tu access\_token, revisa la documentación de [Autenticación]()
 
-### Implement the notification receiver using the following code as example:
+### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
 
 ```php
 <?php
@@ -100,4 +99,4 @@ if ($merchant_order_info["status"] == 200) {
 ?>
 ```
 
-> To get your CLIENT_ID and CLIENT_SECRET, check the [Credentials](https://www.mercadopago.com.ar/account/credentials?type=basic) section.
+> Para obtener tu `CLIENT_ID` y `CLIENT_SECRET`, revisa la sección de [Credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic)
