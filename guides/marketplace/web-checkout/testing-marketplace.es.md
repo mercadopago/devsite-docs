@@ -1,13 +1,13 @@
 # Prueba tu integración
 
-Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
+Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout.
 Debes verificar que:
 
-+ La información del bien o servicio a pagar es correcta
-+ Se reconoce la cuenta del cliente, porque envías el email
-+ Ofreces la formas de pago que deseas
-+ Tu cliente es redireccionado correctamente luego de finalizado el pago
-+ Se realiza la división del pago correctamente entre tu cuenta marketplace  y la del vendedor
++ La información del bien o servicio a pagar es correcta.
++ Se reconoce la cuenta del cliente, porque envías el _email_.
++ Ofreces la formas de pago que deseas.
++ Tu cliente es redireccionado correctamente luego de finalizado el pago.
++ Se realiza la división del pago correctamente entre tu cuenta _marketplace_  y la del vendedor.
 
 ## ¿Cómo realizar las pruebas?
 
@@ -19,12 +19,12 @@ Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios
 
 Utiliza el dato *site_id* para indicar el país donde quieres realizar las pruebas. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguay: **MLU**, Perú: **MPE** y Colombia: **MCO**.
 
-##### Request
-```curl 
+##### _Request_
+```curl
 # Get access token
-AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token' 
--d 'grant_type=client_credentials' 
--d 'client_id=CLIENT_ID' 
+AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token'
+-d 'grant_type=client_credentials'
+-d 'client_id=CLIENT_ID'
 -d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
 
 curl -X POST \
@@ -32,7 +32,7 @@ curl -X POST \
 "https://api.mercadopago.com/users/test_user?access_token=$AT" \
 -d '{"site_id":"MLA"}'
 ```
-##### Response
+##### _Response_
 ```curl
 {
     "id": 123456,
@@ -65,21 +65,20 @@ curl -X POST \
 El proceso completo para probar el checkout es el siguiente:
 
 1. Inicia sesión de Mercado Pago con la cuenta del **marketplace** y genera un APP\_ID con todas sus configuraciones y la URL para enviarle al **vendedor** para que vincule su cuenta.
-2. Inicia sesión de Mercado Pago con el **vendedor** y vincula la cuenta al marketplace, ingresando en la url configurada.
-3. Verifica que has registrados las credenciales del vendedor en el marketplace.
-3. Efectúa un pago de prueba. Puedes enviar el mail del **comprador** en la preferencia de pago, o probar el flujo como *invitado*. El email del comprador va a ser requerido al finalizar la compra.
+2. Inicia sesión de Mercado Pago con el **vendedor** y vincula la cuenta al _marketplace_, ingresando en la url configurada.
+3. Verifica que has registrados las credenciales del vendedor en el _marketplace_.
+3. Efectúa un pago de prueba. Puedes enviar el _mail_ del **comprador** en la preferencia de pago, o probar el flujo como *invitado*. El _email_ del comprador va a ser requerido al finalizar la compra.
 4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 dígitos.
 5. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:  
-    * **APRO**: Pago aprobado  
-    * **CONT**: Pago pendiente  
-    * **CALL**: Rechazo llamar para autorizar  
-    * **FUND**: Rechazo por monto insuficiente  
-    * **SECU**: Rechazo por código de seguridad  
-    * **EXPI**: Rechazo por fecha de expiración  
-    * **FORM**: Rechazo por error en formulario  
-    * **OTHE**: Rechazo general
+    * **APRO**: Pago aprobado.  
+    * **CONT**: Pago pendiente.  
+    * **CALL**: Rechazo llamar para autorizar.  
+    * **FUND**: Rechazo por monto insuficiente.  
+    * **SECU**: Rechazo por código de seguridad.  
+    * **EXPI**: Rechazo por fecha de expiración.
+    * **FORM**: Rechazo por error en formulario.  
+    * **OTHE**: Rechazo general.
 6. Valida, en caso de reintento, que se lleven a cabo correctamente.
-7. Verifica que la notificación te ha llegado correctamente
-8. Verifica que la división del pago entre las cuentas del **marketplace** y la del **vendedor** se ha realizado en forma correcta según lo especificado en el atributo `marketplace\_fee` de la preferencia de pagos
-8. Realiza la devolución de un pago acreditado
-
+7. Verifica que la notificación te ha llegado correctamente.
+8. Verifica que la división del pago entre las cuentas del **marketplace** y la del **vendedor** se ha realizado en forma correcta según lo especificado en el atributo `marketplace\_fee` de la preferencia de pagos.
+8. Realiza la devolución de un pago acreditado.

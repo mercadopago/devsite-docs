@@ -2,9 +2,9 @@
 
 Índice de contenido:
 
-1. [Actualizar el monto de un plan](#actualizar-el-monto-de-un-plan)
-2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripcion)
-3. [Cancelar un plan o una subscripción](#cancelar-un-plan-o-una-subscripcion)
+1. [Actualizar el monto de un plan](#actualizar-el-monto-de-un-plan).
+2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripcion).
+3. [Cancelar un plan o una subscripción](#cancelar-un-plan-o-una-subscripcion).
 
 
 ## Actualizar el monto de un plan
@@ -15,12 +15,12 @@ Para cambiar el monto de un plan debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $plan = MercadoPago\Plan::load($plan_id);
   $plan->auto_recurring["transaction_amount"] =  500;
   $plan->update();
-  
+
 ?>
 ```
 ```java
@@ -60,7 +60,7 @@ curl -X PUT \
 ```
 
 ]]]
- 
+
 
 **Respuesta:**
 
@@ -89,12 +89,12 @@ Para pausar una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $subscription = MercadoPago\Subscription::load($subscription_id);
   $subscription->status = "paused";
   $subscription->update();
-  
+
 ?>
 ```
 ```java
@@ -126,7 +126,7 @@ curl -X PUT \
         }'
 ```
 ]]]
- 
+
 
 **Respuesta:**
 
@@ -146,12 +146,12 @@ Para reactivar una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $subscription = MercadoPago\Subscription::load($subscription_id);
   $subscription->status = "authorized";
   $subscription->update();
-  
+
 ?>
 ```
 ```java
@@ -183,7 +183,7 @@ curl -X PUT \
         }'
 ```
 ]]]
- 
+
 
 **Respuesta:**
 
@@ -213,12 +213,12 @@ Para cancelar un plan debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $plan = MercadoPago\Plan::load($plan_id);
   $plan->status = "cancelled";
   $plan->update();
-  
+
 ?>
 ```
 ```java
@@ -259,7 +259,7 @@ curl -X PUT \
 >
 > Cuando ejecutes esta acción, todas las subscripciones serán marcadas con un status `cancelled`
 
-**Respuesta:** 
+**Respuesta:**
 
 HTTP status code: 200 OK
 
@@ -276,12 +276,12 @@ Para cancelar una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $subscription = MercadoPago\Subscription::load($subscription_id);
   $subscription->status = "cancelled";
   $subscription->update();
-  
+
 ?>
 ```
 ```java

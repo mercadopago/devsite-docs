@@ -1,15 +1,15 @@
 ---
-  description: Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de MercadoPago
+  description: Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de Mercado Pago
 ---
 
 
 # Campañas de descuento
 
-Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de MercadoPago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).
+Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de Mercado Pago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).
 
 Puedes crear dos tipos de campañas:
 
-* Que apliquen a todos tus compradores, por ej por rebajas por temporada
+* Que apliquen a todos tus compradores. Por ejemplo: rebajas por temporada.
 * Con código de descuento para enviar a tus compradores.
 
 Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras.

@@ -24,24 +24,24 @@ Revisión manual         | ✔    | ✔    |      | ✔    |      |      |      
 
 Producto      | Solución        | Disponible
 :------------ |:--------------- |:------------------- |
-Pagos         | Botón de pago   | 
-Pagos         | Web Checkout    | 
-Pagos         | Mobile Checkout | 
+Pagos         | Botón de pago   |
+Pagos         | Web Checkout    |
+Pagos         | Mobile Checkout |
 Pagos         | API             | ✔
-Suscripciones | Botón de pago   | 
-Marketplace   | Checkout        | 
-Marketplace   | API             | 
+Suscripciones | Botón de pago   |
+Marketplace   | Checkout        |
+Marketplace   | API             |
 
 ### Colombia
 
 Producto      | Solución        | Disponible
 :------------ |:--------------- |:------------------- |
-Pagos         | Botón de pago   | 
-Pagos         | Web Checkout    | 
-Pagos         | Mobile Checkout | 
+Pagos         | Botón de pago   |
+Pagos         | Web Checkout    |
+Pagos         | Mobile Checkout |
 Pagos         | API             | ✔
-Marketplace   | Web Checkout    | 
-Marketplace   | API             | 
+Marketplace   | Web Checkout    |
+Marketplace   | API             |
 
 ## Disponibilidad por adquirente
 
