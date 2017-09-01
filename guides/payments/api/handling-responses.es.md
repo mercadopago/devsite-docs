@@ -1,6 +1,6 @@
 # Manejo de respuestas para la creación de pagos y card tokens
 
-Ofrece a tus clientes información clara y precisa ante posible errores en el ingreso de datos de la tarjeta y acerca del estado del pago realizado. Esto permitirá mejorar la conversión de tu checkout ya que el usuario sabrá si tiene que corregir algún dato o realizar alguna acción para finalizar de forma exitosa el proceso de pago.
+Ofrece a tus clientes información clara y precisa ante posible errores en el ingreso de datos de la tarjeta y acerca del estado del pago realizado. Esto permitirá mejorar la conversión de tu _checkout_ ya que el usuario sabrá si tiene que corregir algún dato o realizar alguna acción para finalizar de forma exitosa el proceso de pago.
 
 ## Al realizar un cobro
 
