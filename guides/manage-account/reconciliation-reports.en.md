@@ -1,35 +1,34 @@
-# Reportes de conciliación
+# Conciliation reports
 
-Mercado Pago te brinda reportes para conciliar tus operaciones con tus sistemas internos. Tenemos dos reportes para distintas necesidades.
+Mercado Pago provides reports to conciliate your operations with your internal systems. We have two reports for different needs.
 
-**Reporte de dinero en cuenta (Settlement Report)**
+**Account money report (Settlement Report)**
 
-Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron el balance de tu cuenta de Mercado Pago para un período específico.
+It contains all payment events (approved, refund, mediation and chargebacks) that have affected the balance of your Mercado Pago account for a specific period.
 
-**Reporte de dinero disponible (Bank Report)**
+**Available money report (Bank Report)**
 
-Contiene el detalle de los pagos que fueron liberados y están listos para ser retirados a cuenta bancaria.
-Puede solicitarse para un período específico o cada vez que se ejecuta un retiro.
+It contains all payments that were released and are ready to be withdrawn to the bank account. The report can be requested for a specific period or every time a withdrawal is made.
 
-Este reporte generalmente se utiliza para conciliar un retiro a cuenta bancaria. De esta forma, por cada retiro realizado se generará un *Bank Report* con las transacciones que lo componen.
+This report is usually used to conciliate a withdrawal to a bank account. Therefore, for each withdrawal, a Bank Report is generated specifying the corresponding transactions.
 
-## ¿Cómo se usan?
+## How to use them?
 
-Ambos reportes pueden generarse en forma manual (indicando un período de fechas específicas) o de forma programada.
+Both reports can be generated manually (indicating a specific date range) or they can be scheduled.
 
-Consulta el [glosario de los reportes](https://www.mercadopago.com.ar/ayuda/glosario-reporte-conciliacion_2118).
+Check out the [glossary of reports](https://www.mercadopago.com.ar/ayuda/glosario-reporte-conciliacion_2118).
 
-### Uso manual
+### Manual use
 
-#### Reporte de dinero disponible (Bank Report)
+#### Available money report (Bank Report)
 
-##### 1. Generación:
-Realiza el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
+##### 1. In order to generate a report:
+Make a POST to the API specifying the start and end dates as follows:
 
 ```php
 <?php
 
-$request = 
+$request =
 
 $mp = new MP("ACCESS_TOKEN");
 
@@ -46,10 +45,10 @@ $mp->post($request);
 ?>
 ```
 
-Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica. 
+You will receive a `HTTP STATUS 202 (Accepted)` as response, and the report will be generated asynchronously.
 
-##### 2. Búsqueda: 
-Para ver si se terminó de generar el reporte deberás consultar la API de esta manera:
+##### 2. Search:
+In order to check whether the reported has already been generated, you must check the API as follows:
 
 ```php
 <?php
@@ -67,7 +66,7 @@ $mp->get($request);
 ?>
 ```
 
-Recibirás como respuesta: 
+You will receive the following response:
 
 ```json
 [
@@ -86,16 +85,16 @@ Recibirás como respuesta:
 ]
 ```
 
-##### 3. Descarga
-Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
+##### 3. Download
+Using the `file_name` attribute, you can download the report from the following URL:
 
 	https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ACCESS_TOKEN
 
 
-#### Reporte de dinero en cuenta (Settlement Report)
+#### Account money report (Settlement Report)
 
-##### 1. Generación:
-Realiza el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
+##### 1. . In order to generate a report:
+Make a POST to the API specifying the start and end dates as follows:
 
 ```php
 <?php
@@ -117,10 +116,10 @@ $mp->post($request);
 ?>
 ```
 
-Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica. 
+You will receive a `HTTP STATUS 202 (Accepted)` as response, and the report will be generated asynchronously.
 
-##### 2. Búsqueda: 
-Para ver si se terminó de generar deberás consultar la API de esta manera:
+##### 2. Search:
+In order to check whether the report has already been generated, you must check the API as follows:
 
 ```php
 <?php
@@ -138,7 +137,7 @@ $mp->get($request);
 ?>
 ```
 
-Recibirás como respuesta: 
+You will receive the following response:
 
 ```json
 [
@@ -157,50 +156,49 @@ Recibirás como respuesta:
 ]
 ```
 
-##### 3. Descarga
-Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
+##### 3. Download
+
+Using the `file_name` attribute, you can download the report from the following URL:
 
 	https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ACCESS_TOKEN
 
 
-### Uso programado
+### Scheduled use
 
-Otra forma de utilizar los reportes de conciliación es haciendo la generación de forma automática.
+Conciliation reports can also be generated automatically.
 
-### Reporte de dinero disponible (Bank Report)
+### Available money  (Bank Report)
 
-##### 1. Generación:
+##### 1. In order to generate a report:
 
-Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `scheduled` en la configuración a `true`:
+Schedule the automatic generation of the report using the frequency in the configuration resource. Update the `scheduled` attribute in the configuration to `true`:
 
 	POST /v1/account/bank_report/schedule
 
-
-Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
+Interrupt the automatic generation of the report. Update the `scheduled` attribute in the configuration to `false`:
 
 	DELETE /v1/account/bank_report/schedule
 
-### 2. Descarga
+### 2. Download
 
-Realiza la descarga del archivo especificado:
+Download the specified file
 
 	GET /v1/account/bank_report/:file_name
 
-### Reporte de dinero en cuenta (Settlement Report)
+### Account money report (Settlement Report)
 
-##### 1. Generación:
+##### 1. In order to generate a report:
 
-Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `scheduled` en la configuración a `true`:
+Schedule the automatic generation of the report using the frequency in the configuration resource. Update the `scheduled` attribute in the configuration to `true`:
 
 	POST /v1/account/settlement_report/schedule
-	
-Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
+
+Interrupt the automatic generation of the report. Update the `scheduled` attribute in the configuration to `false`:
 
 	DELETE /v1/account/settlement_report/schedule
 
-### 2. Descarga
+### 2. Download
 
-Realiza la descarga del archivo especificado:
+Download the specified file: 
 
 	GET /v1/account/settlement_report/:file_name
-
