@@ -6,15 +6,13 @@ Existen diferentes situaciones en las que puedes querer anular una venta:
 
 * Si el `status` del pago es `approved` entonces tu comprador pudo efectuarlo y deberás realizar una devolución.
 
-
-
 ## Cancelaciones
 
-- Las cancelaciones se pueden hacer solo con pending e in process
-- Es importante para medios off
-- Los medios off no se vencen solos, tenes que cancelarlos
+- Las cancelaciones se pueden hacer solo con _pending_ e _in process_.
+- Es importante para medios _off_.
+- Los medios _off_ no se vencen solos, tenes que cancelarlos.
 
-Sólo puedes cancelar pagos que estén en estado `pending` o `in_process`. Cuando los canceles, ya no se aprobarán y podrás liberar el stock que tengas pendiente de confirmación.
+Sólo puedes cancelar pagos que estén en estado `pending` o `in_process`. Cuando los canceles, ya no se aprobarán y podrás liberar el _stock_ que tengas pendiente de confirmación.
 
 Las cancelaciones se utilizan principalmente con **medios en efectivo**.
 
@@ -24,12 +22,12 @@ Para realizar la cancelación, realiza el siguiente request enviando el `status`
 
 [[[
 ```php
-<?php 
+<?php
 
   $payment = MercadoPago\Preapproval::load($payment_id);
   $payment->status = "cancelled";
   $payment->update();
-  
+
 ?>
 ```
 ```java
@@ -58,7 +56,7 @@ curl -X PUT \
 'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
 ```
 ]]]
- 
+
 **Response status code: 200 OK**
 
 ## Devoluciones
@@ -74,7 +72,7 @@ Si el pago fue realizado con otro medio, se reintegrará en la cuenta de Mercado
 
 ### Realiza la devolución total del pago
 
-Para realizar la devolución total, realiza el siguiente request indicando el `payment_id`:
+Para realizar la devolución total, realiza el siguiente _request_ indicando el `payment_id`:
 
 ```php
 <?php
@@ -86,7 +84,7 @@ $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 ?>
 ```
 > NOTE
-> 
+>
 > Nota
 >
 > El pago quedará con `status` en `refunded`.
@@ -141,7 +139,7 @@ payment.refund(10.5);
 
 ### Obtén las devoluciones realizadas
 
-Puedes ver los refunds realizados para un pago especifico con el siguiente request:
+Puedes ver los _refunds_ realizados para un pago específico con el siguiente _request_:
 
 [[[
 ```php

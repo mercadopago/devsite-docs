@@ -1,20 +1,20 @@
 # Recibir pagos
 
-Recibe pagos de manera simple y segura utilizando el Checkout de MercadoPago.
+Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
 
 ## 1. Crea una preferencia de pago
 
 Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
 
 - Descripción y monto.
-- Información de tu comprador (Email, nombre, dirección, etc).
+- Información de tu comprador (_Email_, nombre, dirección, etc).
 - Medios de pago que aceptas.
-- ID de referencia de tu sistema.
+- _ID_ de referencia de tu sistema.
 
 Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 [[[
-```php 
+```php
 
 <?php  
   require_once ('mercadopago.php');
@@ -25,7 +25,7 @@ Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https:
 
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-``` 
+```
 ```node
 
 var mercadopago = require('mercadopago');
@@ -37,7 +37,7 @@ mercadopago.configure({
 
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-``` 
+```
 ]]]
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
@@ -56,7 +56,7 @@ $item->title = "ARS";
 $item->unit_price = 10.00;
 
 $payer = new MercadoPago\Payer();
-$payer->email = "test_user_19653727@testuser.com"; 
+$payer->email = "test_user_19653727@testuser.com";
 
 $preference->items = array($item);
 $preference->payer = $payer;
@@ -83,31 +83,31 @@ preference.setPayer(payer);
 preference.appendItem(item);
 preference.save();
 
-``` 
+```
 ```node
- 
+
 	var preference = {}
-  
+
   var item = {
     title: 'Multicolor kite',
     quantity: 1,
     currency_id: 'ARS',
     unit_price: 10.5
   }
-  
+
   var payer = {
     email: "demo@mail.com"
   }
-  
+
   preference.items = [item]
   preference.payer = payer
-  
+
   mercadopago.preferences.create(preference).then(function (data) {
      // Do Stuff...
    }).catch(function (error) {
-     // Do Stuff... 
+     // Do Stuff...
    });
-  
+
 ```
 ```ruby
 
@@ -119,13 +119,13 @@ item.quantity= 1
 item.currency_id = 'ARS'
 item.unit_price = 10.5
 
-payer = MercadoPago::Payer.new() 
+payer = MercadoPago::Payer.new()
 payer.email="demo@mail.com"
 
 preference.items = [item]
 preference.payer = payer
 
-preference.save 
+preference.save
 
 ```
 ]]]
@@ -188,7 +188,7 @@ var payer = {
             "street_name": "Street",
             "street_number": 123,
             "zip_code": "5700"
-        } 
+        }
       }
 ```
 ```ruby
@@ -199,7 +199,7 @@ payer.surname = "user-surname"
 payer.email = "user@email.com"
 payer.date_created = Time.now
 payer.phone = {
-  area_code: "11", 
+  area_code: "11",
   number: "4444-4444"
 }
 payer.identification = {
@@ -211,11 +211,11 @@ payer.address = {
   street_number: 123,
   zip_code: "5700"
 }
-  
+
 ```
 
 ]]]
-  
+
 #### Shipments
 
 [[[
@@ -278,7 +278,7 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
-Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
+Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
 Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
 

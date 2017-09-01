@@ -157,7 +157,7 @@ Mercado Pago realizará su mayor esfuerzo para lograr que tus subscripciones res
 
 En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago. Frente a este estado puedes pausar o cancelar la subscripción.
 
-Si la subscripción se encuentra activa se intentará cobrar en el próximo periodo.
+Si la subscripción se encuentra activa se intentará cobrar en el próximo período.
 
 Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 

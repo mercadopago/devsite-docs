@@ -10,14 +10,14 @@ sites_supported:
 
 Índice de contenido:
 
-1. [Actualizar el monto de una subscripción](#actualizar-el-monto-de-una-subscripción)
-2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripción)
-3. [Cancelar una subscripción](#cancelar-una-subscripción)
+1. [Actualizar el monto de una subscripción](#actualizar-el-monto-de-una-subscripción).
+2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripción).
+3. [Cancelar una subscripción](#cancelar-una-subscripción).
 
 
 ## Actualizar el monto de una subscripción
 
-Puedes cambiar el monto de las subscripciones en cualquier momento. A partir del momento en que realices la actualización, se cobrará el nuevo monto a los próximos débitos de tus customers.
+Puedes cambiar el monto de las subscripciones en cualquier momento. A partir del momento en que realices la actualización, se cobrará el nuevo monto a los próximos débitos de tus _customers_.
 
 Para cambiar el monto de una subscripción debes hacerlo de la siguiente manera:
 

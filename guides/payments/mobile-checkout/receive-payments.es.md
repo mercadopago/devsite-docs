@@ -1,7 +1,7 @@
 # Recibir pagos
 
 > WARNING
-> 
+>
 > Pre-requisitos
 >
 > * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
@@ -9,29 +9,30 @@
 Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
 
 #### La integración consta de dos etapas:
+
 - Integración en tu servidor: en esta etapa obtendrás la información del pago.
 - Integración en tu aplicación: en esta etapa configurarás el componente visual.
 
-![scheme](https://user-images.githubusercontent.com/8038535/28226783-bce9d6ce-68ad-11e7-99c5-032af709f5cc.png)
+![scheme](https://mla-s1-p.mlstatic.com/800613-MLA25923046018_082017-F.jpg)
 
-1. Crea la preferencia de pago desde tu servidor en los servidores de MercadoPago.
-2. Inicia el Checkout en tu aplicación, utilizando el id de la preferencia.
-3. El Checkout realizará el pago en los servidores de MercadoPago.
+1. Crea la preferencia de pago desde tu servidor en los servidores de Mercado Pago.
+2. Inicia el _Checkout_ en tu aplicación, utilizando el id de la preferencia.
+3. El _Checkout_ realizará el pago en los servidores de Mercado Pago.
 4. Suscríbete a las notificaciones para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
 ## Configura tu servidor
 
-Para poder iniciar el flujo de pago, necesitas obtener la información sobre el producto o servicio a pagar. 
+Para poder iniciar el flujo de pago, necesitas obtener la información sobre el producto o servicio a pagar.
 
-Esta entidad es la preferencia de pago y contiene: 
+Esta entidad es la preferencia de pago y contiene:
 
 1. Descripción y monto.
-2. Información de tu comprador (Email, nombre, dirección, etc).
+2. Información de tu comprador (_Email_, nombre, dirección, etc).
 3. Medios de pago que aceptas.
-4. ID de referencia de tu sistema.
+4. _ID_ de referencia de tu sistema.
 
 [[[
-```php 
+```php
 <?php  
   require_once ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
@@ -40,7 +41,7 @@ Esta entidad es la preferencia de pago y contiene:
 ```java
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-``` 
+```
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configure({
@@ -50,7 +51,7 @@ mercadopago.configure({
 ```ruby
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-``` 
+```
 ]]]
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
@@ -67,11 +68,11 @@ Luego, deberás agregar los atributos de tu preferencia de pago:
   $item->unit_price = 10.00;
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "test_user_19653727@testuser.com"; 
+  $payer->email = "test_user_19653727@testuser.com";
 
   $preference->items = array($item);
   $preference->payer = $payer;
-  $preference->save(); 
+  $preference->save();
 ?>
 ```
 ```java
@@ -113,7 +114,7 @@ preference.payer = payer
 mercadopago.preferences.create(preference).then(function (data) {
    // Do Stuff...
  }).catch(function (error) {
-   // Do Stuff... 
+   // Do Stuff...
  });
 ```
 ```ruby
@@ -125,7 +126,7 @@ item.quantity= 1
 item.currency_id = 'ARS'
 item.unit_price = 10.5
 
-payer = MercadoPago::Payer.new() 
+payer = MercadoPago::Payer.new()
 payer.email="demo@mail.com"
 
 preference.items = [item]
@@ -139,7 +140,7 @@ preference.save
 
 Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-#### Payer
+#### _Payer_
 
 Es requerido el envío del `email` de tu comprador.
 
@@ -156,14 +157,14 @@ Es requerido el envío del `email` de tu comprador.
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
     "identification": {
-      "type": "DNI", 
+      "type": "DNI",
       "number": "123456789"
     },
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
       "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
       "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
-    } 
+    }
   },
   ...
 }
@@ -173,9 +174,9 @@ Es requerido el envío del `email` de tu comprador.
 
 ### 1. Conecta tu aplicación con tu servidor
 
-En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (`preferenceMap`). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
+En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un _POST_ y envía como cuerpo del mensaje el mapa que hayas definido (`preferenceMap`). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
 
-CustomServer se encargará de transformar la respuesta de tu servicio (que debe tener la misma estructura que la de MercadoPago) en un objeto **CheckoutPreference**, cuyo ID es el punto de entrada a nuestro checkout.
+_CustomServer_ se encargará de transformar la respuesta de tu servicio (que debe tener la misma estructura que la de Mercado Pago) en un objeto **CheckoutPreference**, cuyo _ID_ es el punto de entrada a nuestro _checkout_.
 
 Crea la preferencia en tu servidor desde tu aplicación con el siguiente código:
 
@@ -242,7 +243,7 @@ A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botó
 ```android-xml
 ===
 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
-2. Agrega un campo de texto para mostrar el resultado del pago. 
+2. Agrega un campo de texto para mostrar el resultado del pago.
 3. Pega el siguiente código de ejemplo en **res/layout/activity_main.xml**.
 ===
 
@@ -441,7 +442,7 @@ self.payment = payment
 
 ### Configura tu color
 
-Puedes cambiar los colores de la interfaz gráfica del flujo de pago, como así también hacer más oscura la fuente utilizando la clase DecorationPreference. Esto lo puedes lograr con el siguiente código:
+Puedes cambiar los colores de la interfaz gráfica del flujo de pago, como así también hacer más oscura la fuente utilizando la clase _DecorationPreference_. Esto lo puedes lograr con el siguiente código:
 
 [[[
 
@@ -459,7 +460,7 @@ new MercadoPagoCheckout.Builder()
 .setCheckoutPreference(checkoutPreference)
 .startForPayment();
 }
-``` 
+```
 ```swift
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 let decorationPreference: DecorationPreference = DecorationPreference()
@@ -488,13 +489,11 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 
 ]]]
 
-El SDK permite setear el color en el formato hexadecimal, es decir por ejemplo **setBaseColor("#060d72");**.
+El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo **setBaseColor("#060d72");**.
 
 ## Activa las notificaciones de pagos
 
-Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados.
-
-Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
+Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
 Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
 
@@ -502,9 +501,7 @@ Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conoce
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba.
-
-Visita la sección [Probando](/guides/notifications/testing.es.md) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](/guides/notifications/testing.es.md) para más información.
 
 ### Próximos pasos
 

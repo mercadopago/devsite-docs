@@ -1,13 +1,13 @@
 # Probando la Integración
 
-Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
+Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el _checkout_.
 Debes verificar que:
 
-+ La información del bien o servicio a pagar es correcta
-+ Se reconoce la cuenta del cliente, porque envías el email
-+ Ofreces la formas de pago que deseas
-+ Tu cliente es redireccionado correctamente luego de finalizado el pago
-+ La experiencia de pagos es la adecuada y se informa el resultado del pago
++ La información del bien o servicio a pagar es correcta.
++ Se reconoce la cuenta del cliente, porque envías el _email_.
++ Ofreces la formas de pago que deseas.
++ Tu cliente es redireccionado correctamente luego de finalizado el pago.
++ La experiencia de pagos es la adecuada y se informa el resultado del pago.
 
 ## ¿Cómo realizar las pruebas?
 
@@ -19,8 +19,8 @@ Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios
 
 Utiliza el dato *site_id* para indicar el país donde quieres realizar las pruebas. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguay: **MLU**, Perú: **MPE** y Colombia: **MCO**.
 
-##### Request
-```curl 
+##### _Request_
+```curl
 # Get access token
 AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token' -d 'grant_type=client_credentials' -d 'client_id=CLIENT_ID' -d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
 
@@ -29,7 +29,7 @@ curl -X POST \
 "https://api.mercadopago.com/users/test_user?access_token=$AT" \
 -d '{"site_id":"MLA"}'
 ```
-##### Response
+##### _Response_
 ```curl
 {
     "id": 123456,
@@ -61,7 +61,7 @@ curl -X POST \
 
 El proceso completo para probar el checkout es el siguiente:
 
-1. Inicia sesión de Mercado Pago con el **vendedor** y toma las [credenciales](https://www.mercadopago.com/mla/account/credentials) para configurarlas en la creación preferencia de pago. 
+1. Inicia sesión de Mercado Pago con el **vendedor** y toma las [credenciales](https://www.mercadopago.com/mla/account/credentials) para configurarlas en la creación preferencia de pago.
 2. Cierra sesión de MercadoPago.
 3. Envía el mail del **comprador** en la preferencia de pago.
 4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 4 dígitos aleatorios para tarjetas Amex o 3 para cualquier otra.
@@ -77,4 +77,3 @@ El proceso completo para probar el checkout es el siguiente:
 6. En caso de pago rechazado, podrás efectuar el reintento del mismo y simular algún otro resultado tal como se indica en el punto anterior.
 7. Verifica que la notificación te haya llegado correctamente.
 8. Realiza la devolución de un pago acreditado y verifica que te haya llegado la notificación con la actualización del estado del pago.
-

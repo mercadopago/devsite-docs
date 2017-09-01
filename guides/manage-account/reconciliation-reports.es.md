@@ -2,11 +2,11 @@
 
 Mercado Pago te brinda reportes para conciliar tus operaciones con tus sistemas internos. Tenemos dos reportes para distintas necesidades.
 
-**Reporte de dinero en cuenta (Settlement Report)**
+**Reporte de dinero en cuenta (_Settlement Report_)**
 
 Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron el balance de tu cuenta de Mercado Pago para un período específico.
 
-**Reporte de dinero disponible (Bank Report)**
+**Reporte de dinero disponible (_Bank Report_)**
 
 Contiene el detalle de los pagos que fueron liberados y están listos para ser retirados a cuenta bancaria.
 Puede solicitarse para un período específico o cada vez que se ejecuta un retiro.
@@ -21,15 +21,15 @@ Consulta el [glosario de los reportes](https://www.mercadopago.com.ar/ayuda/glos
 
 ### Uso manual
 
-#### Reporte de dinero disponible (Bank Report)
+#### Reporte de dinero disponible (_Bank Report_)
 
 ##### 1. Generación:
-Realiza el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
+Realiza el _POST_ a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 ```php
 <?php
 
-$request = 
+$request =
 
 $mp = new MP("ACCESS_TOKEN");
 
@@ -46,9 +46,9 @@ $mp->post($request);
 ?>
 ```
 
-Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica. 
+Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica.
 
-##### 2. Búsqueda: 
+##### 2. Búsqueda:
 Para ver si se terminó de generar el reporte deberás consultar la API de esta manera:
 
 ```php
@@ -67,7 +67,7 @@ $mp->get($request);
 ?>
 ```
 
-Recibirás como respuesta: 
+Recibirás como respuesta:
 
 ```json
 [
@@ -92,10 +92,10 @@ Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguien
 	https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ACCESS_TOKEN
 
 
-#### Reporte de dinero en cuenta (Settlement Report)
+#### Reporte de dinero en cuenta (_Settlement Report_)
 
 ##### 1. Generación:
-Realiza el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
+Realiza el _POST_ a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 ```php
 <?php
@@ -117,9 +117,9 @@ $mp->post($request);
 ?>
 ```
 
-Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica. 
+Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica.
 
-##### 2. Búsqueda: 
+##### 2. Búsqueda:
 Para ver si se terminó de generar deberás consultar la API de esta manera:
 
 ```php
@@ -138,7 +138,7 @@ $mp->get($request);
 ?>
 ```
 
-Recibirás como respuesta: 
+Recibirás como respuesta:
 
 ```json
 [
@@ -167,7 +167,7 @@ Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguien
 
 Otra forma de utilizar los reportes de conciliación es haciendo la generación de forma automática.
 
-### Reporte de dinero disponible (Bank Report)
+### Reporte de dinero disponible (_Bank Report_)
 
 ##### 1. Generación:
 
@@ -186,14 +186,14 @@ Realiza la descarga del archivo especificado:
 
 	GET /v1/account/bank_report/:file_name
 
-### Reporte de dinero en cuenta (Settlement Report)
+### Reporte de dinero en cuenta (_Settlement Report_)
 
 ##### 1. Generación:
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `scheduled` en la configuración a `true`:
 
 	POST /v1/account/settlement_report/schedule
-	
+
 Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
 
 	DELETE /v1/account/settlement_report/schedule
@@ -203,4 +203,3 @@ Detiene la generación automática del reporte. Actualiza el atributo `scheduled
 Realiza la descarga del archivo especificado:
 
 	GET /v1/account/settlement_report/:file_name
-
