@@ -1,26 +1,26 @@
-# Gestionando una subscripción
+# Gerencie uma assinatura
 
-Índice de contenido:
+Índice:
 
-1. [Actualizar el monto de un plan](#actualizar-el-monto-de-un-plan)
-2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripcion)
-3. [Cancelar un plan o una subscripción](#cancelar-un-plan-o-una-subscripcion)
+1. [Atualizar o valor de um plano](#Atualizar-o-valor-de-um-plano).
+2. [Pausar e reativar uma assinatura](#Pausar-e-reativar-uma-assinatura).
+3. [Cancelar um plano ou uma assinatura](#Cancelar-um-plano-ou-uma-assinatura).
 
 
-## Actualizar el monto de un plan
+## Atualizar o valor de um plano
 
-Puedes cambiar el monto de los planes en cualquier momento. A partir del momento en que realices la actualización, se cobrará el nuevo monto a los próximos débitos de tus `customers`.
+Você poderá alterar o valor dos planos a qualquer momento. A partir do momento que fizer a atualização, o novo valor será cobrado para os próximos débitos de seus `customers`.
 
-Para cambiar el monto de un plan debes hacerlo de la siguiente manera:
+Para alterar o valor de um plano você deve fazer o seguinte:
 
 [[[
 ```php
-<?php 
+<?php
 
   $plan = MercadoPago\Plan::load($plan_id);
   $plan->auto_recurring["transaction_amount"] =  500;
   $plan->update();
-  
+
 ?>
 ```
 ```java
@@ -60,9 +60,9 @@ curl -X PUT \
 ```
 
 ]]]
- 
 
-**Respuesta:**
+
+**Resposta:**
 
 HTTP status code: 200 OK
 
@@ -80,21 +80,20 @@ HTTP status code: 200 OK
 ```
 
 
-## Pausar y reactivar una subscripción
+## Pausar e reativar uma assinatura
 
-Puedes pausar las subscripciones en cualquier momento. De este modo, no se les cobrará a tus usuarios hasta que las reactives.
+Você pode pausar as assinaturas a qualquer momento. Assim, seus usuários não são cobrados até que você reative as assinaturas.
 
-Para pausar una subscripción debes hacerlo de la siguiente manera:
-
+Para pausar uma assinatura, você deve fazer o seguinte:
 
 [[[
 ```php
-<?php 
+<?php
 
   $subscription = MercadoPago\Subscription::load($subscription_id);
   $subscription->status = "paused";
   $subscription->update();
-  
+
 ?>
 ```
 ```java
@@ -126,9 +125,9 @@ curl -X PUT \
         }'
 ```
 ]]]
- 
 
-**Respuesta:**
+
+**Resposta:**
 
 HTTP status code: 200 OK
 
@@ -146,12 +145,12 @@ Para reactivar una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $subscription = MercadoPago\Subscription::load($subscription_id);
   $subscription->status = "authorized";
   $subscription->update();
-  
+
 ?>
 ```
 ```java
@@ -183,9 +182,9 @@ curl -X PUT \
         }'
 ```
 ]]]
- 
 
-**Respuesta:**
+
+**Resposta:**
 
 HTTP status code: 200 OK
 
@@ -202,23 +201,22 @@ HTTP status code: 200 OK
 >
 > Importante
 >
-> Los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda. Esto significa que los `invoices` generados quedarán con un `status` en `unpaid` durante el tiempo de pausa, y no se cobrarán cuando se reactive la subscripción.
+> Os períodos transcorridos durante a pausa da assinatura não serão cobrados, mas a assinatura continuará executando a agenda. Isto significa que as `invoices` geradas permanecerão com `status` `unpaid` durante o período de pausa, e não serão cobradas quando a assinatura for reativada.
 
-## Cancelar un plan o una subscripción
+## Cancelar um plano ou uma assinatura
 
-Puedes cancelar los planes y subscripciones en cualquier momento. De este modo, se dejará de cobrar a tus customers.
+Você pode cancelar planos e assinaturas a qualquer momento. Assim, seus clientes não serão mais cobrados.
 
-Para cancelar un plan debes hacerlo de la siguiente manera:
-
+Para cancelar um plano você deve fazer o seguinte:
 
 [[[
 ```php
-<?php 
+<?php
 
   $plan = MercadoPago\Plan::load($plan_id);
   $plan->status = "cancelled";
   $plan->update();
-  
+
 ?>
 ```
 ```java
@@ -257,9 +255,9 @@ curl -X PUT \
 >
 > Nota
 >
-> Cuando ejecutes esta acción, todas las subscripciones serán marcadas con un status `cancelled`
+> Quando executar esta ação, todas as assinaturas serão marcados com o status `cancelled`
 
-**Respuesta:** 
+**Resposta:**
 
 HTTP status code: 200 OK
 
@@ -272,16 +270,16 @@ HTTP status code: 200 OK
 }
 ```
 
-Para cancelar una subscripción debes hacerlo de la siguiente manera:
+Para cancelar uma assinatura você deve fazer o seguinte:
 
 [[[
 ```php
-<?php 
+<?php
 
   $subscription = MercadoPago\Subscription::load($subscription_id);
   $subscription->status = "cancelled";
   $subscription->update();
-  
+
 ?>
 ```
 ```java
@@ -314,7 +312,7 @@ curl -X PUT \
 ```
 ]]]
 
-**Respuesta:**
+**Resposta:**
 
 HTTP status code: 200 OK
 

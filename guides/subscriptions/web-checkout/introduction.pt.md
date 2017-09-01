@@ -1,22 +1,21 @@
 ---
 sites_supported:
     - mla
-    - mlb 
+    - mlb
     - mlm
 ---
 
-# Introducción a subscripciones con Web Checkout
+# Introdução a assinaturas com Web Checkout
 
-Mercado Pago te permitirá recibir pagos recurrentes a través de subscripciones en sólo dos pasos:
+O MercadoPago permite receber pagamentos recorrentes por meio de assinaturas em apenas dois passos:
 
-1. **Definir una subscripción**, que establece cuánto debe ser facturado y en qué intervalo.
-2. **Abrir el Checkout** para capturar los datos de una tarjeta
+1. **Definir uma assinatura**, que estabelece quanto deve ser faturado e o intervalo de tempo.
+2. **Abrir o Checkout** para capturar os dados de um cartão.
 
-## Credenciales
+## Credenciais
 
-Cuentas con un par de claves privadas para conectarte con la API. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com.ar/account/credentials).
+Você conta com um par de chaves privadas para conectar-se à API. Essas chaves são encontradas na seção [credenciais da sua conta](https://www.mercadopago.com.ar/account/credentials).
 
-Las **credenciales privadas** (también llamada `access_token`), se utilizan para todas las llamadas a las APIs, como procesar un pago, realizar reembolsos, y más. Las claves privadas deben ser mantenidas **confidencialmente** en tus servidores de backend y nunca deben ser publicadas.
+As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, e muito mais. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
 
-
-#### Comenzar a crear [subscripciones](/guides/subscriptions/web-checkout/create-subscription.es.md)
+#### Começar a criar [assinaturas](/guides/subscriptions/web-checkout/create-subscription.pt.md).

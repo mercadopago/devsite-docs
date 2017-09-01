@@ -1,28 +1,27 @@
 ---
 sites_supported:
     - mla
-    - mlb 
+    - mlb
     - mlm
 ---
 
-# Creando una suscripción
+# Crie uma assinatura
 
-Desde tu cuenta de Mercado Pago puedes crear un link de suscripción que te permitirá enviarselo a tus compradores y **recibir pagos de manera periódica**. Lo puedes usar para: cobrar cuotas del gimnasio, cobrar alquieres o recibir donaciones.
-No necesitas saber de programación. 
+A partir da sua conta no Mercado Pago você poderá criar um link de assinatura que poderá ser enviado aos seus compradores e lhe permitirá **receber pagamentos periodicamente**. Você pode utilizá-lo para: cobrar mensalidades de academia, cobrar aluguéis ou receber doações.
+Você não precisa saber programação.
 
-Te guiaremos para que puedas configurar:
+Vamos orientá-lo para que você possa configurar:
 
-* Monto fijo o variable (a elección del comprador).
-* Frecuencia de pago: semanal, quincenal, mensual.
-* Duración de la suscripción: ilimitada o limitada a una cantidad de cobros.
+* O valor fixo ou variável (à escolha do comprador).
+* Frequência do pagamento: semanal, quinzenal, mensal.
+* Duração da assinatura: ilimitada ou limitada a um número de cobranças.
 
-Obtendrás **un link** que puedes enviar por e-mail, publicar en redes sociales, o donde quieras.
+Você obterá **um link** que poderá enviar por e-mail, postar nas redes sociais, ou onde quiser.
 
-Además te brindaremos un **Código HTML** que puedes incluir en tu sitio web y un **Código QR** para que compartas con tus clientes.
+Além disso, você receberá um **Código HTML** que poderá ser incluído em seu site e um **QR Code** para compartilhar com seus clientes.
 
-> En Argentina, el procesamiento con tarjeta VISA demora hasta 48hs, por lo que tus pagos quedarán pendientes durante ese plazo.
+>Na Argentina, o processamento com cartão VISA leva até 48 horas, portanto, seus pagamentos ficarão pendentes durante esse período.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Suscripciones vía API](/guides/subscriptions/api/introduction.es.md).
+>Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de [Assinaturas via API](/guides/subscriptions/api/introduction.es.md).
 
-
-### [Crear botón de suscripción](https://www.mercadopago.com.ar/subscription-plans/create)
+### [Criar botão de assinatura](https://www.mercadopago.com.ar/subscription-plans/create).

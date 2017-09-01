@@ -1,17 +1,16 @@
-# Creando una subscripción
+# Crie uma assinatura
 
-Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
+Inscreva seus clientes para receber pagamentos de forma periódica e automatizada.
 
+## 1. . Crie uma preferência de assinatura
 
-## 1. Crea una preferencia de subscripción
+Uma preferência de assinatura contém todos os detalhes do produto ou serviço a ser pago de forma recorrente. Por exemplo:
 
-Una preferencia de subscripción contiene todo el detalle del producto o servicio que se va a pagar de forma recurrente. Por ejemplo: 
+1. Dados e valor do que será pago.
+2. Frequência da assinatura.
+3. ID de referência do seu sistema.
 
-1. Datos y monto de lo que se va a pagar.
-2. Frecuencia de la subscripción.
-3. ID de referencia de tu sistema.
-
-Para crear una preferencia de subscripción debes [instalar el SDK de Mercado Pago](/plugins) con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
+Para criar uma preferência de assinatura, deve-se instalar o [SDK do MercadoPago](/plugins) e configurar o objeto MP com suas [credenciais](https://www.mercadopago.com.ar/account/credentials?type=basic).
 
 [[[
 ```php
@@ -36,7 +35,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
 ]]]
 
-Luego, deberás agregar los atributos de tu preferencia:
+Em seguida, adicione os atributos de sua preferência:
 
 [[[
 ```php
@@ -53,9 +52,9 @@ Luego, deberás agregar los atributos de tu preferencia:
 		"transaction_amount" => 60,
 		"currency_id" => "ARS"
   );
-  
+
   $preapproval->save();
-  
+
 ?>
 ```
 ```java
@@ -73,7 +72,7 @@ preapproval.setReason("Monthly subscription to premium package");
 preapproval.setExternalReference("OP-1234");
 preapproval.setAutoRecurring(autoRecurring);
 preapproval.save();
-  
+
 ```
 ```node
 
@@ -96,9 +95,9 @@ preapproval_data = {
 }
 
 mercadopago.preapproval.create(preapproval_data).then(function (data)) {
-  // Do Stuff... 
+  // Do Stuff...
 }).catch(function (error) {
-  // Do Stuff... 
+  // Do Stuff...
 });
 
 ```
@@ -121,13 +120,13 @@ preapproval.save()
 ```
 ]]]
 
-  
-> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu subscripción](#añade-características-especiales-a-tu-subscripción).
+
+> Estes são os dados mínimos e indispensáveis para criar uma preferência, mas existem outras opções que podem ser encontradas em [Adicione recursos especiais à sua assinatura.](#Adicione-recursos-especiais-à-sua-assinatura).
 
 
-## 2. Lleva a tu comprador al checkout
+## 2. Encaminhe o comprador ao checkout
 
-Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
+Assim que a preferência for criada, utilize a URL do atributo `init_point` da resposta para gerar um botão de pagamento:
 
 ```html
 <!DOCTYPE html>
@@ -141,38 +140,38 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 </html>
 ```
 
-## 3. Recibe información de los pagos de tus subscripciones
+## 3. Receba informações sobre os pagamentos de suas assinaturas
 
-Recibirás notificaciones en forma automática para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+Você receberá notificações automaticamente sobre seus novos pagamentos e atualizações de status correspondentes.
 
-Mercado Pago realizará su mayor esfuerzo para lograr que tus subscripciones resulten pagas, sin requerir acción alguna de tu parte. 
+O Mercado Pago usará seus melhores esforços para garantir que suas assinaturas sejam pagas, sem exigir qualquer ação de sua parte.
 
-En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago. Frente a este estado puedes pausar o cancelar la subscripción.
+Se não obtivermos a aprovação do pagamento até a data de cobrança estabelecida, faremos até quatro tentativas durante dez dias antes de sinalizar o pagamento como inadimplente. Nesse caso, você poderá pausar ou cancelar a assinatura.
 
-Si la subscripción se encuentra activa se intentará cobrar en el próximo periodo.
+Se a assinatura estiver ativa, haverá tentativa de cobrança no próximo período.
 
-Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+Você será notificado sobre cada pagamento recusado por meio de [Notificações](../../notifications/ipn.pt.md). Analise a causa da rejeição e comunique-se com o usuário para, por exemplo, atualizar os dados de seu cartão de crédito ou alterá-lo por outro, antes da próxima tentativa de cobrança.
 
-Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para más información.
+Para mais informações, consulte a seção de [Notificações](/guides/notifications/ipn.pt.md).
 
 
-## 4. Prueba tu integración
+## 4. Teste sua integração
 
-Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
+Você pode testar sua integração antes de partir para produção a fim de verificar o funcionamento e fazer os ajustes necessários.
 
-Para ello debes usar usuarios y tarjetas de prueba.
+Para isso, deve-se utilizar usuários e cartões de teste.
 
-Visita la sección [Probando](/guides/payments/api/testing.es.md) para más información.
+Para mais informações, consulte a seção de [Testes](/guides/payments/api/testing.pt.md).
 
-## Añade características especiales a tu subscripción
+## Adicione recursos especiais à sua assinatura
 
-Revisa el [API Doc de Preapproval](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. 
+Consulte a [API Doc de Preapproval](#) para saber todas as configurações que você pode fazer. Assim, você será capaz de adaptar a cobrança de assinatura ao seu modelo de negócios.
 
-A continuación te mostramos las características más relevantes que puedes especificar al momento de crear una subscripción. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Em seguida, mostraremos os recursos mais relevantes que poderá especificar ao criar uma assinatura. Tenha em mente que você poderá combiná-los como desejar para obter o máximo benefício.
 
-### Ofrece un período gratuito de prueba
+### Ofereça um período de teste gratuito
 
-Puedes ofrecer un periodo de prueba a tus clientes por una frecuencia determinada agregando la fecha de comienzo:
+Você pode oferecer um período de teste aos seus clientes durante um determinado período, adicionando a data de início:
 
 ```json
 {
@@ -186,9 +185,9 @@ Puedes ofrecer un periodo de prueba a tus clientes por una frecuencia determinad
 }
 ```
 
-### Limita la cantidad de cuotas de la subscripción
+### Limite o número de cobranças da assinatura
 
-Puedes indicar que las subscripciones sólo durarán un período determinado de tiempo:
+Você pode especificar que as assinaturas durarão um determinado período:
 
 ```json
 {
