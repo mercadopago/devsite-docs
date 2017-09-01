@@ -14,8 +14,7 @@ Todos nuestros pagos son analizados por nuestra herramienta de prevención de fr
 
 Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS.
 
-![androidiosfinal](https://mla-s2-p.mlstatic.com/813588-MLA25922990835_082017-F.jpg)
-
+![androidiosfinal](/images/mobile-sdk-flow.png)
 
 ### Integrar el checkout es muy fácil:
 
