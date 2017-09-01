@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+---
+
+
 # Gestionando una subscripción
 
 Índice de contenido:
@@ -15,12 +23,12 @@ Para cambiar el monto de una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $preapproval = MercadoPago\Preapproval::load($preapproval_id);
   $preapproval->auto_recurring["transaction_amount"] =  500;
   $preapproval->update();
-  
+
 ?>
 ```
 ```java
@@ -93,12 +101,12 @@ Para pausar una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $preapproval = MercadoPago\Preapproval::load($preapproval_id);
   $preapproval->status = "paused";
   $preapproval->update();
-  
+
 ?>
 ```
 ```java
@@ -150,12 +158,12 @@ Para reactivar una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $preapproval = MercadoPago\Preapproval::load($preapproval_id);
   $preapproval->status = "authorized";
   $preapproval->update();
-  
+
 ?>
 ```
 ```java
@@ -207,7 +215,7 @@ HTTP status code: 200 OK
 >
 > Importante
 >
-> los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda. 
+> los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda.
 
 ## Cancelar una subscripción
 
@@ -218,12 +226,12 @@ Para cancelar una subscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php
-<?php 
+<?php
 
   $preapproval = MercadoPago\Preapproval::load($preapproval_id);
   $preapproval->status = "cancelled";
   $preapproval->update();
-  
+
 ?>
 ```
 ```java
@@ -257,7 +265,7 @@ curl -X PUT \
 ]]]
 
 
-**Respuesta:** 
+**Respuesta:**
 
 HTTP status code: 200 OK
 
