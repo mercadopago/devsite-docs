@@ -3,9 +3,9 @@
 Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
 > WARNING
-> 
+>
 > Pre-requisitos
-> 
+>
 > * Tener implementada la [captura de datos de tarjeta](/guides/payments/receiving-payment-by-card.es.md).
 > * Almacenar [clientes y tarjetas](/guides/payments/customers-and-cards.es.md).
 
@@ -14,7 +14,7 @@ Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
 El plan contiene la información de periodicidad de cobro y monto a cobrar.
 
-Para crearlo debes realizar un request POST:
+Para crearlo debes realizar un request _POST_:
 
 [[[
 ```php
@@ -33,7 +33,7 @@ Para crearlo debes realizar un request POST:
 AutoRecurring autoRecurring = new AutoRecurring();
 autoRecurring.setFrequency(1);
 autoRecurring.setFrequencyType("Months");
-autoRecurring.setTransactionAmount(200); 
+autoRecurring.setTransactionAmount(200);
 
 Plan plan = new Plan();
 plan.setDescription("Monthly premium package");
@@ -52,9 +52,9 @@ plan_data = {
 }
 
 mercadopago.plan.create(plan_data).then(function (data) {
-  // Do Stuff... 
+  // Do Stuff...
 }).catch(function (error) {
-  // Do Stuff... 
+  // Do Stuff...
 });
 ```
 ```ruby
@@ -87,7 +87,7 @@ curl -X POST \
 
 
 
-> Estos son los datos mínimos e indispensables para crear un plan, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](#añade-características-especiales-a-tu-plan).
+> Estos son los datos mínimos e indispensables para crear un plan, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu plan](/guides/subscriptions/api/manage-subscription.es.md).
 
 **Respuesta:**
 
@@ -130,7 +130,7 @@ Algunas opciones para realizarlo son:
 
 Una subscripción es un objeto que relaciona un `Plan` y un `Customer`.
 
-Realiza un POST especificando el identificador del plan y del customer a asociar:
+Realiza un _POST_ especificando el identificador del plan y del customer a asociar:
 
 [[[
 ```php
@@ -161,9 +161,9 @@ subscription_data = {
 }
 
 mercadopago.subscription.create(subscription_data).then(function (data)) {
-  // Do Stuff... 
+  // Do Stuff...
 }).catch(function (error) {
-  // Do Stuff... 
+  // Do Stuff...
 });
 ```
 ```ruby
@@ -193,7 +193,7 @@ curl -X POST \
 
 
 > NOTE
-> 
+>
 > Nota
 >
 > El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de subscripciones.
@@ -230,26 +230,26 @@ Llegada la fecha de cobro, se creará un objeto `invoice`, el cual contendra el 
 
 Recibirás notificaciones ante creación o modificación de un plan, subscripción, invoice o pago.
 
-Mercado Pago realizará su mayor esfuerzo para lograr que tus `invoices` resulten pagos, sin requerir acción alguna de tu parte. 
+Mercado Pago realizará su mayor esfuerzo para lograr que tus `invoices` resulten pagos, sin requerir acción alguna de tu parte.
 
-Solo deberías entregar tu producto o servicio, cuando el `invoice` para ese periodo tenga estado `paid`.
+Solo deberías entregar tu producto o servicio, cuando el `invoice` para ese período tenga estado `paid`.
 
 En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces durante diez días, antes de que el `invoice` quede marcado como `unpaid`. Frente a este estado puedes pausar o cancelar la subscripción.
 
-Independientemente del estado del invoice actual, si la subscripción se encuentra activa se creará un invoice para el próximo periodo.
+Independientemente del estado del _invoice_ actual, si la subscripción se encuentra activa se creará un _invoice_ para el próximo período.
 
-Cada pago rechazado te será notificado mediante [Webhooks](/guides/notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, [actualice los datos de su tarjeta de crédito](#) o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+Cada pago rechazado te será notificado mediante [Webhooks](/guides/notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
 Visita la sección [Webhooks](/guides/notifications/webhooks.es.md) para más información.
 
 
 ## Añade características especiales a tu plan
 
-Revisa el [API Doc de plans](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Revisa el [API Doc de plans](/reference/plans) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
 ### Limita la cantidad de cuotas de la subscripción
 
-Puedes indicar que las subscripciones sólo durarán un período determinado de tiempo (por ejemplo que recibirán hasta 24 cobros):
+Puedes indicar que las subscripciones sólo durarán un período determinado de tiempo (por ejemplo, que recibirán hasta 24 cobros):
 
 ```json
 {
@@ -320,7 +320,7 @@ En caso de que no podamos realizar este cobro, la subscripción no se creará.
 
 ### Cobra una comisión por transacción
 
-Si implementas [Marketplace](#) y operas con las credenciales de tus usuarios conectados puedes cobrar una comisión por cada pago que creas. Para esto sólo debes agregar dicho monto en el parámetro `application_fee` al crear el plan:
+Si implementas [Marketplace](/guides/marketplace/api/introduction.es.md) y operas con las credenciales de tus usuarios conectados puedes cobrar una comisión por cada pago que creas. Para esto sólo debes agregar dicho monto en el parámetro `application_fee` al crear el plan:
 
 ```curl
 {
@@ -339,4 +339,4 @@ En el artículo de [gestión de subscripciones](/guides/subscriptions/api/manage
 
 ### Prueba tu integración
 
-Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello utiliza tus credenciales de Modo Sandbox y las tarjetas de prueba. Visita la sección [Probando](/guides/subscriptions/api/testing.es.md).
+Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello utiliza tus credenciales de Modo _Sandbox_ y las tarjetas de prueba. Visita la sección [Probando](/guides/subscriptions/api/testing.es.md).

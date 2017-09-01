@@ -1,6 +1,6 @@
 # Recibir pagos siendo PCI Compliant
 
-Mercado Pago permite a vendedores que cumplen con las normativas PCI, tokenizar las tarjetas por backend.
+Mercado Pago permite a vendedores que cumplen con las normativas PCI, _tokenizar_ las tarjetas por _backend_.
 
 > WARNING
 >
@@ -174,15 +174,15 @@ print(json.dumps(card_token, indent=4))
 }
 ```
 
-Una vez hayas obtenido el Card Token de la tarjeta, puedes [crear el pago](../payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
+Una vez hayas obtenido el _Card Token_ de la tarjeta, puedes [crear el pago](../payments/api/receiving-payment-by-card.es.md#recibir-un-pago-con-tarjeta).
 
-## Mejora la aprobación enviando el Device Fingerprint
+## Mejora la aprobación enviando el _Device Fingerprint_
 
 Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas.
 
-### Implementación de device en Web
+### Implementación de _device_ en Web
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu checkout:
+Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu _checkout_:
 
 ```html
 <script src="https://secure.mlstatic.com/org-img/checkout/custom/0.6/threat_metrix.js"></script>
@@ -198,17 +198,17 @@ En tu formulario deberás agregar el siguiente `input`:
 </form>
 ```
 
-Es importante que envíes el campo `deviceId` a tu servidor y que al momento de crear el pago agregues el siguiente header al request:
+Es importante que envíes el campo `deviceId` a tu servidor y que al momento de crear el pago agregues el siguiente _header_ al _request_:
 
 ```http
 X-Device-Session-Id: device_id
 ```
 
-Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior.
+Donde `device_id` sea reemplazado por el _ID_ obtenido en el paso anterior.
 
-### Implementación de device en aplicaciones móviles nativas
+### Implementación de _device_ en aplicaciones móviles nativas
 
-Si cuentas con una aplicación nativa deberás enviar información sobre el device de tus compradores, esto lo puedes hacer enviando la siguiente información al momento de crear un `card_token`:
+Si cuentas con una aplicación nativa deberás enviar información sobre el _device_ de tus compradores, esto lo puedes hacer enviando la siguiente información al momento de crear un `card_token`:
 
 ```
 {

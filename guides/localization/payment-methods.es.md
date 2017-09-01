@@ -14,7 +14,7 @@ Los medios pueden ser obtenidos de la siguiente forma:
 		$payment_methods = $mp->get('/v1/payment_methods');
 		print_r ($payment_methods);
 	?>
-	
+
 **Respuesta**
 
 	[
@@ -58,7 +58,7 @@ Los medios pueden ser obtenidos de la siguiente forma:
 		...
 	]
 
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de MercadoPago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](#).
+Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de MercadoPago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
 
 ## Medios de pago por país
 

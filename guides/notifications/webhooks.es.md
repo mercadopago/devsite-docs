@@ -67,13 +67,11 @@ Luego de esto, puedes obtener la información completa del recurso notificado ac
 
 Tipo         | URL                                                | Documentación
 ------------ | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación]()
-marketplace  | /oauth/token?...                                   | [ver documentación]()
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentación]()
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación]()
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación]()
-
-Para obtener tu access\_token, revisa la documentación de [Autenticación]().
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación](/reference/payments)
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentación](/reference/plans)
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación](/reference/subscriptions)
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación](/reference/invoices)
+ 
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.
 
