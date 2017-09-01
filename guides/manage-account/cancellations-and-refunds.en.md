@@ -1,35 +1,34 @@
-# Cancelaciones y devoluciones
+# Cancellations and Refunds
 
-Existen diferentes situaciones en las que puedes querer anular una venta:
+There are different situations in which you may want to cancel a sale:
 
-* Si el status del pago es `pending`o `in_process` el dinero aún no se le ha cobrado al comprador, por lo que debes efectuar una cancelación.
+* If the payment status is `pending` or `in_process`, it means that the buyer has not been charged yet, so you should make a cancellation.
 
-* Si el `status` del pago es `approved` entonces tu comprador pudo efectuarlo y deberás realizar una devolución.
+* If the payment `status` is `approved`, it means that the buyer was charged, so you should make a refund.
 
 
+## Cancellations
 
-## Cancelaciones
+- Cancellations can be made only with pending and in process transactions
+- It is important for offline payment methods
+- Offline payment methods do not expire independently, you have to cancel them
 
-- Las cancelaciones se pueden hacer solo con pending e in process
-- Es importante para medios off
-- Los medios off no se vencen solos, tenes que cancelarlos
+Only` pending` or `in_process` payments can be cancelled. As soon as you cancel them, they will no longer be approved and you will be able to release the stock pending confirmation.
 
-Sólo puedes cancelar pagos que estén en estado `pending` o `in_process`. Cuando los canceles, ya no se aprobarán y podrás liberar el stock que tengas pendiente de confirmación.
+Cancellations are mainly used with **cash payments**.
 
-Las cancelaciones se utilizan principalmente con **medios en efectivo**.
+These payments do not expire automatically, so you need to cancel them.
 
-Estos no vencen automáticamente, por lo que es necesario que ejecutes su cancelación.
-
-Para realizar la cancelación, realiza el siguiente request enviando el `status` en `cancelled`:
+To cancel, make the following request by submitting the `status` `cancelled`:
 
 [[[
 ```php
-<?php 
+<?php
 
   $payment = MercadoPago\Preapproval::load($payment_id);
   $payment->status = "cancelled";
   $payment->update();
-  
+
 ?>
 ```
 ```java
@@ -58,23 +57,21 @@ curl -X PUT \
 'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
 ```
 ]]]
- 
+
 **Response status code: 200 OK**
 
-## Devoluciones
+## Refunds
+You can refund a payment within **90 days** after it was approved.
 
-Puedes devolver un pago dentro de los **90 días** desde su acreditación.
+You must have sufficient funds in your account in order to successfully refund the payment amount. Otherwise, you will get a `400 Bad Request error`.
 
-Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto del pago satisfactoriamente. De lo contrario obtendrás un error `400 Bad Request`.
+If the buyer made the payment with card, the amount will be refunded directly to the card.
 
-Si tu comprador realizó el pago con tarjeta, la devolución será reintegrada en la misma.
+If the payment was made by other means, the amount will be deposited in the buyer’s MercadoPago account. If the buyer has no account, we will create one using the buyer’s e-mail address.
 
-Si el pago fue realizado con otro medio, se reintegrará en la cuenta de Mercado Pago del comprador. En caso que no tenga una cuenta, crearemos una utilizando su e-mail.
+### Issue a full refund
 
-
-### Realiza la devolución total del pago
-
-Para realizar la devolución total, realiza el siguiente request indicando el `payment_id`:
+To issue a full refund, make the following request indicating the `payment_id`:
 
 ```php
 <?php
@@ -86,7 +83,7 @@ $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 ?>
 ```
 > NOTE
-> 
+>
 > Nota
 >
 > El pago quedará con `status` en `refunded`.
@@ -109,11 +106,11 @@ $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 }
 ```
 
-### Realiza una devolución parcial
+### Issue a partial refund
 
-Puedes realizar hasta 20 devoluciones parciales a un mismo pago. Una vez efectuada, el `status` del pago será `approved` con un `status_detail` en `partially_refunded`.
+You can issue up to 20 partial refunds for one single payment. Upon completion, the payment `status` will be `approved` with a `status_detail` in `partially_refunded`.
 
-Debes indicar el monto a devolver.
+You must indicate the amount to be refunded.
 
 [[[
 
@@ -139,9 +136,9 @@ payment.refund(10.5);
 ]]]
 
 
-### Obtén las devoluciones realizadas
+### Get the refunds made
 
-Puedes ver los refunds realizados para un pago especifico con el siguiente request:
+You can view the refunds issued for a specific payment with the following request:
 
 [[[
 ```php
@@ -166,8 +163,7 @@ refunds = payment.refunds()
 ]]]
 
 
-
-Respuesta:
+Response:
 
 ```json
 {
