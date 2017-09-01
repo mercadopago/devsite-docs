@@ -1,22 +1,23 @@
-# Agregando envíos
+# Mercado Envios
 
-Implementa la logística de tu negocio con **Mercado Envíos**.
+Implemente a logística do seu negócio utilizando o **Mercado Envios**.
 
-Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación. Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. Te protegemos frente a chargebacks o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
+Entregamos tudo resolvido para você: Receba o pagamento do produto e do envio na mesma operação. Você só precisa imprimir a etiqueta do MercadoEnvios e enviar o pacote pelo correio!
+Oferecemos proteção em caso de estornos ou extravios no correio, sem exigir a apresentação de qualquer documentação.
 
-## Cómo funciona
+## Como funciona
 
-La siguiente documentación te permitirá ofrecer en el checkout de Mercado Pago una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
+A documentação a seguir lhe permitirá oferecer uma opção de envio no checkout do MercadoPago, além do cliente poder pagar o custo do envio juntamente com o pagamento do produto.
 
-Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
+Recomendamos integrar a calculadora de custos de frete em seu checkout.
 
-## Cómo implementarlo
+## Como implementar
 
-### Paso 1: Activa tu cuenta para utilizar Mercado Envíos
-[Activa tu cuenta](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) cargando tu dirección. La misma debe ser la dirección de despacho y será utilizada para calcular el costo del envío.
+### Passo 1: Ative sua conta para utilizar o Mercado Envios
+[Ative sua conta](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) carregando seu endereço. Este será o endereço de entrega e será utilizado para calcular o custo do frete.
 
-### Paso 2: Agrega Mercado Envíos a tu checkout
-Agrega las dimensiones y peso de tus productos en la preferencia de pago.
+### Passo 2: Adicione o Mercado Envios em seu checkout
+Indique as dimensões e o peso de seus produtos na preferência de pagamentos.
 
 [[[
 ```php
@@ -65,24 +66,24 @@ shipment.receiver_address = {
 }
 ```
 ]]]
- 
+
 > NOTE
 >
 > Nota
 >
-> El formato de las dimensiones
-```alto x ancho x largo (centímetros), peso (gramos)```
-> Si indicas mal las dimensiones y no coinciden con el paquete físico, el carrier podría no admitir el envío. En caso de que te admitan el paquete, te descontaremos de tu cuenta la diferencia automáticamente.
+> O formato das dimensões é:
+>```altura x largura x comprimento (centímetros), peso (gramas)```.
+>Caso indique as dimensões incorretamente e estas não coincidam com o pacote físico, o transportador poderá não aceitar o envio. Se o pacote for aceito, deduziremos automaticamente de sua conta a diferença.
 
-#### Retiro por sucursal
-Puedes ofrecer la posibilidad de retirar el producto por tu local, indicandole al comprador dónde y cuándo debe retirarlo. Para esto, debes incluir:
+#### Retirada em loja
+Você pode oferecer a possibilidade de retirada do produto em loja, indicando ao comprador onde e quando retirar o produto. Para isso, você deve incluir:
 
 [[[
 ```php
 <?php
   $shipments = new MercadoPago\Shipments();
   // ...
-  $shipments->local_pickup = true; 
+  $shipments->local_pickup = true;
   // ...
 ?>
 ```
@@ -107,9 +108,9 @@ shipment.local_pickup = true
 ```
 ]]]
 
-#### Ofrece envíos gratis
+#### Ofereça frete grátis
 
-Debes indicar el medio de envío que vas a ofrecer de manera gratuita. El monto del mismo te será debitado de tu cuenta al momento de recibir un pago.
+Indique o método de envio que irá oferecer gratuitamente. O valor do frete será debitado de sua conta ao receber o pagamento.
 
 [[[
 ```php
@@ -118,14 +119,14 @@ Debes indicar el medio de envío que vas a ofrecer de manera gratuita. El monto 
   // ...
   $shipments->free_methods = array(
     array("id"=>73328)
-  ); 
+  );
   // ...
 ?>
 ```
 ```java
 Shipments shipments = new Shipments();
-// ... 
-shipment.setFreeMethods(73328); // OCA Estándar 
+// ...
+shipment.setFreeMethods(73328); // OCA Estándar
 // ...
 ```
 ```node
@@ -151,21 +152,21 @@ shipment.free_methods = [
 ```
 ]]]
 
- 
-
-Consulta los id de [medio de envío](https://api.mercadolibre.com/sites/MLA/shipping_methods?marketplace=NONE) disponibles.
 
 
-#### Integralo en el Checkout
+Consulte a ID dos [métodos de envio](https://api.mercadolibre.com/sites/MLA/shipping_methods?marketplace=NONE) disponíveis.
 
-Un ejemplo de Checkout con MercadoEnvíos queda de la siguiente manera:
+
+#### Integre o MercadoEnvios no Checkout
+
+Veja abaixo um exemplo de Checkout com o MercadoEnvios:
 
 [[[
 ```php
 <?php
 
   $preference = new MercadoPago\Preference();
-  
+
   $item = new MercadoPago\Item();
   $item->title = "Multicolor kite";
   $item->quantity = 1;
@@ -173,15 +174,15 @@ Un ejemplo de Checkout con MercadoEnvíos queda de la siguiente manera:
   $item->unit_price = 10.00;
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "test_user@testuser.com"; 
-  
+  $payer->email = "test_user@testuser.com";
+
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
   $shipments->dimensions = "30x30x30,500";
   $shipment->default_shipping_method = 73328;
   $shipments->free_methods = array(
     array("id"=>73328)
-  ); 
+  );
   $shipments->receiver_address=array(
 		"zip_code" => "5700",
 		"street_number" => 123,
@@ -189,15 +190,15 @@ Un ejemplo de Checkout con MercadoEnvíos queda de la siguiente manera:
 		"floor" => 4,
 		"apartment" => "C"
   );
-  
+
 
   $preference->items = array($item);
   $preference->payer = $payer;
   $preference->save();
   $preference->shipments = $shipments;
-  
+
   $preference->save();
-  
+
 ?>
 ```
 ```java
@@ -224,7 +225,7 @@ preference.setShipments(shipments);
 
 preference.save();
 
-``` 
+```
 ```node
 var preference = {}
 
@@ -247,14 +248,14 @@ var shipments = {
 		"street_number": 123,
 		"street_name": "Street",
 		"floor": 4,
-		"apartment": "C" 
+		"apartment": "C"
 	},
   "free_methods": [
     {
       "id": 73328
     }
   ]
-  
+
 };
 
 preference.items = [item]
@@ -264,7 +265,7 @@ preference.shipments = shipments
 mercadopago.preferences.create(preference).then(function (data) {
    // Do Stuff...
  }).catch(function (error) {
-   // Do Stuff... 
+   // Do Stuff...
  });
 
 ```
@@ -277,7 +278,7 @@ item.quantity= 1
 item.currency_id = 'ARS'
 item.unit_price = 10.5
 
-payer = MercadoPago::Payer.new() 
+payer = MercadoPago::Payer.new()
 payer.email="demo@mail.com"
 
 shipment = MercadoPago::Shipment.new
@@ -301,7 +302,7 @@ preference.payer = payer
 preference.shipment = shipment
 
 preference.save
- 
+
 ```
 ]]]
 
@@ -320,31 +321,30 @@ preference.save
 
 
 
-### Paso 3: Mejora la experiencia con la calculadora de cuotas
+### Passo 3: Melhore a experiência com a calculadora de custos de envio
 
-Te damos la posibilidad de pre-calcular el costo y los tiempos de envío para que tus compradores puedan verlo previo al checkout.
+Oferecemos a possibilidade de realizar o cálculo prévio do custo e dos prazos de envio para que os compradores possam visualizá-los antes do checkout.
 
-Para poder realizar el cálculo debes enviar:
+Para fazer o cálculo, é necessário que envie:
 
-* `dimensions`: Es el tamaño del producto que quieres enviar, el formato es: alto x ancho x largo (centímetros), peso (gramos). Consulta los valores admitidos por OCA.
+* `dimensions`: O tamanho do produto que quer enviar. O formato é: altura x largura x comprimento (centímetros), peso (gramas). Consulte os valores admitidos pelo correio.
 
-* `zip_code`: Es el código postal de tu comprador.
+* `zip_code`: O CEP do seu comprador.
 
-* `item_price`: Es el precio del producto que vas a enviar. Si son múltiples productos, indicá el precio total.
+* `item_price`: O preço do produto que deseja enviar. Se houver vários produtos, você deve indicar o preço total deles.
 
-* `free_method` (opcional): Puedes ofrecer envío gratis, esto te permite generar más ventas. Sólo debes indicarnos el medio de envío que vas a ofrecer como gratis. Luego, el monto del mismo te será debitado de tu cuenta al momento de recibir un pago. 
+* `free_method` (opcional): Você pode oferecer frete grátis, o que pode ajudá-lo a gerar mais vendas. Você só precisa nos indicar o método de envio que irá oferecer gratuitamente. Em seguida, o valor do envio será debitado da sua conta ao receber o pagamento.
 
 
-### Paso 4: Imprimí la etiqueta
+### Passo 4: Imprima a etiqueta
 
-Cada vez que recibas un pago, te llegará un e-mail con un botón para imprimir la etiqueta. 
-También puedes ver los [pagos pendientes de impresión]() desde tu cuenta de MercadoPago.
+Toda vez que receber um pagamento, você receberá um e-mail com um botão para imprimir a etiqueta. Também é possível visualizar os [pagamentos pendentes de impressão]() na sua conta no Mercado Pago.
 
-En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y despáchalo. No tendrás que pagarle nada al carrier porque las etiquetas de MercadoEnvíos estarán pagas con el dinero que pagó tu comprador para el envío.
+Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-o. Você não terá que pagar nada no correio, pois as etiquetas do MercadoEnvios já estarão pagas com o valor do frete pago pelo comprador.
 
-### Paso 5: Seguimiento
-Utiliza nuestras herramientas para hacer el seguimiento.
-Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
+### Passo 5: Rastreamento
 
-Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](../notification/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu stock y conocer el estado de los pagos y envíos.
- 
+Utilize nossas ferramentas para fazer o rastreamento.
+Tanto na lista de cobranças, como através de nossas APIs, você será capaz de rastrear seus envios.
+
+Além disso, podemos notificá-lo quando um envio estiver pronto para expedição através das [notificações](../notification/ipn.pt.md) enviadas dos servidores do Mercado Pago aos seus servidores. Isto lhe permitirá gerenciar seu estoque e saber o status dos pagamentos e envios.

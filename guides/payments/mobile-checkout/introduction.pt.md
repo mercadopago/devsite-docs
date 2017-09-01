@@ -1,35 +1,33 @@
 # Mobile Checkout
 
-Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
+Os SDKs do MercadoPago facilitam a criação de uma experiência de pagamento na sua aplicação. Instantaneamente você oferece aos seus usuários:
 
- - Pagos con tarjeta, efectivo o transferencia bancaria.
- - **Financiación**: cuotas con la mejor financiación posible.
- - Descuentos y promociones.
- - Comunicación del resultado de los pagos.
+	•	Pagamentos com cartão, dinheiro ou transferência bancária.
+	•	**Financiamento**: parcelas com o melhor financiamento possível.
+	•	Descontos e promoções.
+	•	Comunicação do resultado dos pagamentos.
 
-Todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones.
+Todos os nossos pagamentos são analisados por nossa ferramenta de prevenção de fraudes para minimizar o risco em suas transações.
 
+## Uma experiência, todas as plataformas
 
-## Una experiencia, todas las plataformas
-
-Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS.
+Ofereça aos seus usuários a melhor experiência de pagamento, tanto no Android como no iOS.
 
 ![androidiosfinal](/images/mobile-sdk-flow.png)
 
-### Integrar el checkout es muy fácil:
+### Integrar o checkout é muito fácil:
 
-1. Incluye el SDK en tu proyecto.
-2. Coloca tus credenciales y crea la preferencia de pagos.
-3. Inicia el proceso de pago desde un botón en tu aplicación.
-4. Enterate del pago escuchando las notificaciones que te enviamos.
+1. Inclua o SDK em seu projeto.
+2. Insira suas credenciais e crie a preferência de pagamentos.
+3. Inicie o processo de pagamento a partir de um botão em sua aplicação.
+4. Receba as notificações de pagamento que lhe enviamos.
 
-
-## Añade la dependencia a tu proyecto
+## Adicione a dependência ao seu projeto
 [[[
 ```android
 ===
-En el archivo **build.gradle** añade el siguiente código.
-Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
+No arquivo **build.gradle** insira o código a seguir.
+Opcionalmente, você pode [baixar o SDK](https://github.com/mercadopago/px-android/releases) e adicioná-lo ao seu projeto.
 ===
 dependencies {
    compile 'com.mercadopago:sdk:3.2.0'
@@ -37,11 +35,11 @@ dependencies {
 ```
 ```ios
 ===
-Si en tu proyecto utilizas **CocoaPods**, puedes añadir la dependencia en el **Podfile** del módulo donde nos integres con el siguiente código.
-Sino puedes [descargar el SDK](https://github.com/mercadopago/px-ios/releases) y añadirlo a tu proyecto.
+Caso utilize **CocoaPods** em seu projeto, você pode adicionar a dependência no ** Podfile** do módulo que nos integra com o código a seguir.
+Opcionalmente, você pode [baixar o SDK](https://github.com/mercadopago/px-ios/releases) e adicioná-lo ao seu projeto.
 ===
 source 'https://github.com/CocoaPods/Specs.git'
-# Se necesita este parámetro por ser una SDK en swift
+# Este parâmetro é necessário por ser um SDK em Swift
 use_frameworks!
 platform :ios, '8.0'
 pod 'MercadoPagoSDK', '3.2.1'

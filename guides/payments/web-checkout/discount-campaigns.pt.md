@@ -1,18 +1,18 @@
-# Campañas de descuento
+# Campanhas de desconto
 
-Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de MercadoPago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).
+Crie campanhas de desconto para impulsionar suas vendas utilizando as ferramentas de marketing da sua conta no MercadoPago, entrando na seção Configurações para o seu Negócio: [Criar desconto](https://www.mercadopago.com.ar/campaigns/create).
 
-Puedes crear dos tipos de campañas:
+Você pode criar dois tipos de campanhas:
 
-* Que apliquen a todos tus compradores, por ej por rebajas por temporada
-* Con código de descuento para enviar a tus compradores.
+* Aplicada a todos os seus compradores, por exemplo, liquidações sazonais
+* Com código de desconto para enviar aos seus compradores.
 
-Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras.
+Basta escolher quanto quer investir e quando, sem custos adicionais.
 
-## Experiencia del comprador
+## Experiência do comprador
 
-Antes de mostrar el checkout, Mercado Pago se encargará de verificar si para ese comprador existe una campaña creada.
+Antes de exibir o checkout, o MercadoPago irá verificar se existe alguma campanha criada para esse comprador.
 
-Si la campaña es válida se le aplicará el descuento o se solicitará el cupón. Automáticamente se calculará el monto a descontar y se mostrará el precio promocional.
+Se a campanha for válida, será aplicado o desconto ou o cupom será solicitado. O valor a ser descontado será calculado automaticamente e o preço promocional será exibido.
 
-Para conocer si un pago tuvo algún descuento, debes consultar si el atributo `coupon_id` no es `null`. Consulta el monto descontado en el atributo `coupon_amount`.
+Para saber se um pagamento teve algum desconto, veja se o atributo `coupon_id` não é `null`. Verifique o valor descontado no atributo `coupon_amount`.

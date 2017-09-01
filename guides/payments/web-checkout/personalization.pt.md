@@ -1,82 +1,202 @@
 # Personalização
 
 
-A partir da preferência dos pagamentos você pode não somente enviar informações sobre os itens sendo comprados e o comprador, como também pode definir as formas de pagamento que não deseje aceitar, URL de retorno para seu site após o pagamento, métodos de envio e entre outros mais.
+Na preferência de pagamentos, é possível enviar as informações do item a ser pago, bem como do comprador, além de definir os meios de pagamento que não deseja aceitar, a URL de retorno ao seu site após o pagamento, os métodos de envio, etc.
 
 
-### Defina tipos e formas de pagamento
+### Defina os tipos e formas de pagamento
 
-Por padrão oferecemos todas as formas de pagamento disponíveis para o país onde se está realizando a integração. Se o seu modelo de negócio não suporta alguma destas [formas de pagamento](#localización), ou simplesmente não deseja aceitar algum [método em particular](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), pode exclui-lo na criação da preferência do pagamento.
+Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](#localización), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
 
-Pode-se também definir a forma de pagamento ou a quantidade de parcelas que serão expostas por padrão, assim como também a quantidade máxima de parcelas a serem oferecidas.
+Além disso, você pode definir quais meios de pagamento ou o número de parcelas que deseja exibir por padrão, bem como o número máximo de parcelas a oferecer.
 
+[[[
+```php
 
+<?php
 
-```json
+$preference = new MercadoPago\Preference();
 
-"payment_methods": {
-		"excluded_payment_methods": [
-			{
-				"id": "master"
-			}
-		],
-		"excluded_payment_types": [
-			{
-				"id": "ticket"
-			}
-		],
-		
-		"default_payment_method_id": null,
-		"default_installments": null,
-		"installments": 12
-	},
+// ...
+
+$preference->payment_methods = array(
+  "excluded_payment_methods" => array(
+    "id" => "master"
+  ),
+  "excluded_payment_types" => array(
+    "id" => "ticket"
+  ),
+  "installments" => "12"
+);
+
+// ...
+
+?>
+
 ```
+```java
+  Preference preference = new Preference();
+  // ...
+  PaymentMethods paymentMethods = new PaymentMethods();
+  paymentMethods.setExcludedPaymentMethods("master", "amex");
+  paymentMethods.setExcludedPaymentTypes("ticket");
+  paymentMethods.setInstallments(12);
+
+  preference.setPaymentMethods(paymentMethods);
+  // ...
+```
+```node
+  var preference = {}
+  preference = {
+    // ...
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": "master"
+            }
+        ],
+        "excluded_payment_types": [
+            {
+                "id": "ticket"
+            }
+        ],
+        "installments": 12
+    }
+    // ...
+  }
+```
+```ruby
+preference = MercadoPago::Preference.new
+# ...
+preference.payment_methods = {
+  excluded_payment_methods: [id: "master"],
+  excluded_payment_types: [id: "ticket"],
+  installments: 12
+}
+# ...
+```
+]]]
+
+### Indique as URLs de Retorno
+
+Ao finalizar o processo de pagamento, é muito importante informar ao comprador quais são os próximos passos e assim transmitir segurança sobre o resultado da operação. Para isso, utilizamos as `back_urls`. O atributo `auto_return` em ``approved` automaticamente redirecionará ao comprador a success url quando o resultado do pagamento for aprovado.
 
 
+[[[
+```php
 
+<?php
 
-### Defina URLs de Retorno
+$preference = new MercadoPago\Preference();
+//...
+$preference->back_urls = array(
+	"success" => "https://www.tu-sitio/success",
+	"failure" => "http://www.tu-sitio/failure",
+	"pending" => "http://www.tu-sitio/pending"
+);
+$preference->auto_return = "approved";
+// ...
 
-Ao finalizar o processo de pagamento, é muito importante que comunique ao seu comprador quais são os próximos passos e desta maneira lhe dar confiança a respeito do resultado da operação. Para ele, utilizamos as `back_urls`. O atributo `auto_return` para `approved` redirecionará de forma automática o comprador para a success url quando o resultado for o pagamento aprovado.
+?>
+```
+```java
+Preference preference = new Preference();
+// ...
+BackUrls backUrls = new BackUrls(
+                    "https://www.tu-sitio/success",
+                    "http://www.tu-sitio/pending",
+                    "http://www.tu-sitio/failure");
 
-```json
+preference.setBackUrls(backUrls);
+// ...
+```
+```node
+var preference = {}
 
-"back_urls": {
-		"success": "https://www.seu-site/success",
-		"failure": "http://www.seu-site/failure",
-		"pending": "http://www.seu-site/pending"
+preference = {
+  // ...
+  "back_urls": {
+		"success": "https://www.tu-sitio/success",
+		"failure": "http://www.tu-sitio/failure",
+		"pending": "http://www.tu-sitio/pending"
 	},
 	"auto_return": "approved",
-
+  // ...
+}
 ```
+```ruby
+preference = MercadoPago::Preference.new
+# ...
+preference.back_urls = {
+  success: "https://www.tu-sitio/success",
+  failure: "http://www.tu-sitio/failure",
+  pending: "http://www.tu-sitio/pendings"
+}
+preference.auto_return = "approved"
+# ...
+```
+]]]
 
+### Sincronize com o seu sistema
 
-### Sincronize com seu sistema
-
-Para poder sincronizar com seu sistema de backend, pode-se enviar na preferência o campo `external_reference`, pelo qual vai poder consultar quando o pagamento for criado. 
+Para sincronizar com seus sistemas de backend, na preferência de pagamentos, você pode nos enviar o campo `external_reference`, que poderá consultar ao criar o pagamento.
 
 ```json
-"external_reference": "Pedido_1234",
+"external_reference": "Order_1234",
 ```
 
-Para saber o estado atual de seu pagamento, pode ser feita uma busca utilizando-se da referência fornecida:
+Para saber o status de seus pagamentos, você pode fazer uma busca utilizando essa referência:
 
+[[[
 ```php
 <?php
 
-require_once ('mercadopago.php'); 
-$mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+  $filters = array(
+    "external_reference" => "EXTERNAL"
+  );
 
-$mp->get('/v1/payments/search?external_reference=EXTERNAL');
+  $payment = MercadoPago\Payment::search($filters);
 
->
+?>
 ```
+```java
+
+  Map<String, String> filters = new HashMap<>();
+  filters.put("external_reference", "EXTERNAL");
+
+  Payment payment = Payment.search(filters);
+
+```
+```node
+var mercadopago = require('mercadopago');
+
+var filters = {
+  external_reference: "EXTERNAL"
+};
+
+mercadopago.searchPayment({
+  qs: filters
+}).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+```
+```ruby
+filters = {
+  external_reference: "EXTERNAL"
+}
+
+payment = MercadoPago::Payment.search(filters)
+```
+]]]
 
 
-### Expire links de sua preferência
 
-Se não quiser permitir que um pagamento em específico possa ser efetuado, posteriormente a uma data determinada, pode-se utilizar os seguintes atributos:
+### Invalide links de preferência
 
+Caso não queira permitir que alguém acesse a preferência de pagamentos para efetuar um pagamento, após uma determinada data, utilize os seguintes atributos:
 
 ```json
 	"expires": true,
@@ -85,4 +205,4 @@ Se não quiser permitir que um pagamento em específico possa ser efetuado, post
 ```
 
 
-Para saber mais sobre os atributos de preferência, [consulte a documentação da API](https://www.mercadopago.com.co/developers/pt/api-docs/basic-checkout/checkout-preferences/)
+Para saber mais sobre os atributos da preferência, [consulte a documentação da API](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/)

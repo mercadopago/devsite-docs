@@ -1,22 +1,19 @@
-# Recebendo pagamentos
+# Receba Pagamentos
 
-A partir de sua conta MercadoPago, [você tem a opção de gerar um link](https://www.mercadopago.com.ar/tools/create) que pode enviar ao seu comprador para que este possa efetuar o pagamento. Sem a necessidade de saber promogração.  
+Na sua conta no Mercado Pago, você tem a opção para [gerar um link](https://www.mercadopago.com.ar/tools/create) que pode ser enviado ao seu comprador para que efetue o pagamento. Você não precisa saber programação.
 
-Vamos te guiar para que saiba como configurar:
+Vamos orientá-lo para que você possa configurar:
+	•	Preço, descrição e foto do que você vende.
+	•	Se quiser utilizar o **Mercado Envios**.
+	•	Meios de pagamentos aceitos: cartões de crédito ou débito e pagamentos em dinheiro.
+	•	Data a partir da qual pretende permitir o pagamento.
+	•	Código de referência para identificar a venda em seu backend.
+	•	URL de redirecionamento ao seu site.
 
-* Defina o preço, descrição e foto do que está vendendo. 
-* Se quiser utilize **Mercado Envios**.
-* Formas de pagamento aceitas: cartões de crédito, boleto ou dinheiro em conta do MercadoPago.
-* Data do período que permite a realização do pagamento.
-* Código de referência para que possa indentificar a venda em sua operação.
-* Url para redirecionar o comprador para seu site.
+Com esta configuração, você **receberá um link** que poderá enviar por e-mail, postar nas redes sociais ou onde quiser.
 
-Com estas configurações feitas você **receberá um link** que pode enviar por e-mail, publicar em redes sociais ou onde mais quiser. 
+Ao acessar este link, seus compradores serão redirecionados ao checkout, onde poderão ver os dados definidos por você e escolher como pagar. Eles podem fazer o pagamento sem a necessidade de se ter uma conta no Mercado Pago.
 
-Acessando este link, seus compradores serão redirecionados para o checkout aonde verão os dados que configurou e poderão escolher como pagar. O pagamento pode ser feito sem necessidade de possuir uma conta no MercadoPago.
+Além disso, você receberá um **Código HTML** que poderá ser incluído em seu site e um **QR Code** para compartilhar com seus clientes.
 
-Além disso vamos fornecer um **Script HTML** que pode incluir em seu site e um **Código QR** para que compartilhe com seus clientes.
-
-> Se quiser construir algo mais avançado e personalizado, consulte nossa documentação de **[Checkout](cd /guides/payments/web-checkout/introduction.pt.md)** ou **[API](/guides/payments/api/introduction.pt.md)**.
-
-Você também pode verificar: [Criação de ferramenta de cobrança](https://www.mercadopago.com.br/tools/create)
+>Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](/guides/payments/web-checkout/introduction.pt.md)** ou **[API](/guides/payments/api/introduction.pt.md)**.

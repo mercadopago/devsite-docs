@@ -1,37 +1,38 @@
-# Recibir pagos
+# Receba Pagamentos
 
 > WARNING
-> 
-> Pre-requisitos
 >
-> * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
+> Pré-requisitos
+>
+> * Esta guia presume que você já tenha seguido os passos da seção ‘introdução da documentação para instalação do SDK’.
 
-Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
+Esta guia irá ajudá-lo a integrar o componente visual de pagamento do MercadoPago em sua aplicação. Este componente gerencia a seleção do meio de pagamento, a coleta de dados do meio de pagamento do usuário e a comunicação do resultado do pagamento.
 
-#### La integración consta de dos etapas:
-- Integración en tu servidor: en esta etapa obtendrás la información del pago.
-- Integración en tu aplicación: en esta etapa configurarás el componente visual.
+#### A integração consiste em duas etapas:
+- Integração em seu servidor: nesta etapa, você receberá a informação sobre o pagamento.
+- Integração em sua aplicação: nesta etapa, você irá configurar o componente visual.
 
 ![scheme](https://user-images.githubusercontent.com/8038535/28226783-bce9d6ce-68ad-11e7-99c5-032af709f5cc.png)
 
-1. Crea la preferencia de pago desde tu servidor en los servidores de MercadoPago.
-2. Inicia el Checkout en tu aplicación, utilizando el id de la preferencia.
-3. El Checkout realizará el pago en los servidores de MercadoPago.
-4. Suscríbete a las notificaciones para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+1. Crie a preferência de pagamento a partir de seu servidor nos servidores do MercadoPago.
+2. Inicie o Checkout em sua aplicação utilizando a ID da preferência.
+3. O Checkout efetuará o pagamento nos servidores do MercadoPago.
+4. Inscreva-se nas notificações para obter informações sobre seus novos pagamentos e atualizações de status.
 
-## Configura tu servidor
 
-Para poder iniciar el flujo de pago, necesitas obtener la información sobre el producto o servicio a pagar. 
+## Configure seu servidor
 
-Esta entidad es la preferencia de pago y contiene: 
+Para poder iniciar o fluxo de pagamento, é necessário obter as informações sobre o produto ou serviço a ser pago.
 
-1. Descripción y monto.
-2. Información de tu comprador (Email, nombre, dirección, etc).
-3. Medios de pago que aceptas.
-4. ID de referencia de tu sistema.
+Esta entidade é a preferência de pagamento e contém:
+
+1. Descrição e preço.
+2. Informações do seu comprador (e-mail, nome, endereço, etc.).
+3. Meios de pagamentos aceitos.
+4. ID de referência do seu sistema.
 
 [[[
-```php 
+```php
 <?php  
   require_once ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
@@ -40,7 +41,7 @@ Esta entidad es la preferencia de pago y contiene:
 ```java
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-``` 
+```
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configure({
@@ -50,7 +51,7 @@ mercadopago.configure({
 ```ruby
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-``` 
+```
 ]]]
 
 Luego, deberás agregar los atributos de tu preferencia de pago:
@@ -67,11 +68,11 @@ Luego, deberás agregar los atributos de tu preferencia de pago:
   $item->unit_price = 10.00;
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "test_user_19653727@testuser.com"; 
+  $payer->email = "test_user_19653727@testuser.com";
 
   $preference->items = array($item);
   $preference->payer = $payer;
-  $preference->save(); 
+  $preference->save();
 ?>
 ```
 ```java
@@ -113,7 +114,7 @@ preference.payer = payer
 mercadopago.preferences.create(preference).then(function (data) {
    // Do Stuff...
  }).catch(function (error) {
-   // Do Stuff... 
+   // Do Stuff...
  });
 ```
 ```ruby
@@ -125,7 +126,7 @@ item.quantity= 1
 item.currency_id = 'ARS'
 item.unit_price = 10.5
 
-payer = MercadoPago::Payer.new() 
+payer = MercadoPago::Payer.new()
 payer.email="demo@mail.com"
 
 preference.items = [item]
@@ -135,13 +136,13 @@ preference.save
 ```
 ]]]
 
-### Contenido de la preferencia
+### Conteúdo da preferência
 
-Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
+Quanto mais informações você nos enviar, melhor será a aprovação dos pagamentos e a experiência de seus usuários.
 
 #### Payer
 
-Es requerido el envío del `email` de tu comprador.
+É necessário o envio do `e-mail` de seu comprador.
 
 ```json
 {
@@ -156,28 +157,28 @@ Es requerido el envío del `email` de tu comprador.
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
     "identification": {
-      "type": "DNI", 
+      "type": "DNI",
       "number": "123456789"
     },
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
       "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
       "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
-    } 
+    }
   },
   ...
 }
 ```
 
-## Integra el flujo de pago de Mercado Pago en tu aplicación
+## Integre o fluxo de pagamentos do MercadoPago em sua aplicação
 
-### 1. Conecta tu aplicación con tu servidor
+### 1. Conecte sua aplicação com seu servidor
 
-En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (`preferenceMap`). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia.
+No SDK, nós oferecemos uma classe chamada **CustomServer** para que a conexão com seu servidor seja mais fácil. O método createPreference faz um POST e envia como corpo da mensagem o mapa que tiver definido (`preferenceMap`). Indique sua URL base (https://api.tunombre.com) e a URI (/create_preference) onde espera os dados para criar a preferência.
 
-CustomServer se encargará de transformar la respuesta de tu servicio (que debe tener la misma estructura que la de MercadoPago) en un objeto **CheckoutPreference**, cuyo ID es el punto de entrada a nuestro checkout.
+O CustomServer irá transformar a resposta do seu serviço (que deve ter a mesma estrutura que a do MercadoPago) em um objeto **CheckoutPreference**, cuja ID é o ponto de entrada para o nosso checkout.
 
-Crea la preferencia en tu servidor desde tu aplicación con el siguiente código:
+Crie a preferência em seu servidor a partir de sua aplicação com o seguinte código:
 
 [[[
 
@@ -233,17 +234,17 @@ public void failure(ApiException apiException) {
 
 ]]]
 
-### 2. Crea un botón de pago
+### 2. 2. Crie um botão de pagamento
 
-A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botón.
+Como exemplo, sugerimos que inicie o fluxo do MercadoPago a partir de um botão.
 
 [[[
 
 ```android-xml
 ===
-1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
-2. Agrega un campo de texto para mostrar el resultado del pago. 
-3. Pega el siguiente código de ejemplo en **res/layout/activity_main.xml**.
+1. Crie uma Atividade para inserir o botão (**MainActivity**, por exemplo).  
+2. Adicione um campo de texto para mostrar o resultado do pagamento.
+3. Cole o seguinte código de exemplo em **res/layout/activity_main.xml**.
 ===
 
 <FrameLayout xmlns:android='http://schemas.android.com/apk/res/android'
@@ -281,11 +282,11 @@ android:paddingTop='50dp'/>
 ```
 ```swift
 ===
-1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
-2. Inserta un botón en el **.xib** correspondiente.
-3. Agrega un campo de texto para mostrar el resultado del pago.
-4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
-5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
+1. Crie um ViewController para inserir o botão (**MainViewController**, por exemplo).
+2. Insira um botão no **.xib** correspondente.
+3. Adicione um campo de texto para mostrar o resultado do pagamento.
+4. Cole o seguinte código de exemplo em sua classe **MainViewController.swift**.
+5. No próximo passo, você trabalhará no evento associado ao clique do botão (startCheckout).
 ===
 
 import UIKit
@@ -306,11 +307,11 @@ for: .touchUpInside)
 ```   
 ```objective-c
 ===
-1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
-2.  Inserta un botón en el .xib correspondiente.
-3. Agrega un campo de texto (en nuestro caso lo llamamos paymentResult) para mostrar el resultado del pago.
-4. Pega el siguiente código de ejemplo en tu clase **MainViewController.c**.
-5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
+1. Crie um ViewController para inserir o botão (**MainViewController**, por exemplo).
+2. Insira um botão no **.xib** correspondente.
+3. Adicione um campo de texto (em nosso exemplo, nós o chamamos de paymentResult) para mostrar o resultado do pagamento.
+4. Cole o seguinte código de exemplo em sua classe **MainViewController.c**.
+5. No próximo passo, você trabalhará no evento associado ao clique do botão (startCheckout).
 ===
 
 @import MercadoPagoSDK;
@@ -333,9 +334,9 @@ forControlEvents:UIControlEventTouchUpInside];
 
 ]]]
 
-### 3. ¡Inicia el Checkout!
+### 3. Inicie o Checkout!
 
-Una vez creada la preferencia de pago y definido un evento a partir del cual comenzar el flujo de pago, estás en condiciones de iniciar nuestro Checkout con el siguiente código:
+Após ter criado a preferência de pagamento e definido um evento a partir do qual deseja iniciar o fluxo de pagamento, você poderá iniciar o nosso Checkout com o seguinte código:
 
 [[[
 
@@ -349,7 +350,7 @@ new MercadoPagoCheckout.Builder()
 ```
 ```swift
 ===
-El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
+O fluxo do nosso checkout está baseado em **NavigationController**. Caso sua aplicação também esteja baseada em NavigationControllers, você pode iniciar o fluxo do Checkout utilizando o NavigationController da sua aplicação, ou você pode criar um, iniciar o Checkout sobre ele e, em seguida, apresentá-lo.
 ===
 
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
@@ -363,7 +364,7 @@ checkout.start()
 ```
 ```objective-c
 ===
-El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
+O fluxo do nosso checkout está baseado em **NavigationController**. Caso sua aplicação também esteja baseada em NavigationControllers, você pode iniciar o fluxo do Checkout utilizando o NavigationController da sua aplicação, ou você pode criar um, iniciar o Checkout sobre ele e, em seguida, apresentá-lo.
 ===
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
@@ -375,24 +376,23 @@ El flujo de nuestro checkout esta basado en **NavigationController**. Si tu apli
 ]]]
 
 
-### 4. Obtén la respuesta
+### 4. Obtenha a resposta
 
-El SDK devolverá siempre un resultado del pago.
+O SDK sempre retornará o resultado do pagamento.
 
-Si hubo algún error insalvable o el usuario abandonó el flujo, devolverá un objeto que representa el error para que puedas entender qué pasó.
+Se houve qualquer erro que não pôde ser evitado ou o usuário abandonou o fluxo, ele retornará um objeto que representa o erro para que você possa entender o que aconteceu.
 
-Estos son los atributos más importantes del pago:
+Estes são os atributos mais importantes de pagamento:
 
-- id: Identificador del pago.
-- status: [Estados del pago.](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/)
-- payment\_method\_id: Identificador del medio de pago que eligió tu usuario.
-- payment\_type\_id: Tipo de medio elegido.
-- card: Objeto que identifica la tarjeta de tu usuario.
-- issuer_id: Identificador del banco de la tarjeta que eligió tu usuario.
-- installments: Cantidad de cuotas elegidas.
+- id: Identificação do pagamento.
+- status: [Status do pagamento](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/).
+- payment_method_id: Identificador do meio de pagamento selecionado pelo usuário.
+- payment_type_id: Tipo de meio de pagamento selecionado.
+- card: Objeto que identifica o cartão do usuário.
+- issuer_id: Identificação do banco do cartão selecionado pelo usuário.
+- installments: Número de parcelas selecionado.
 
-
-Podrás obtener la respuesta con el siguiente código:
+Você poderá obter a resposta com o seguinte código:
 
 [[[
 
@@ -439,9 +439,9 @@ self.payment = payment
 
 ]]]
 
-### Configura tu color
+### Configuração de cor
 
-Puedes cambiar los colores de la interfaz gráfica del flujo de pago, como así también hacer más oscura la fuente utilizando la clase DecorationPreference. Esto lo puedes lograr con el siguiente código:
+É possível alterar as cores da interface gráfica do fluxo de pagamento, bem como escurecer a fonte utilizando a classe DecorationPreference. Você pode fazer isso utilizando o seguinte código:
 
 [[[
 
@@ -459,7 +459,7 @@ new MercadoPagoCheckout.Builder()
 .setCheckoutPreference(checkoutPreference)
 .startForPayment();
 }
-``` 
+```
 ```swift
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 let decorationPreference: DecorationPreference = DecorationPreference()
@@ -488,24 +488,25 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 
 ]]]
 
-El SDK permite setear el color en el formato hexadecimal, es decir por ejemplo **setBaseColor("#060d72");**.
+O SDK permite configurar a cor no formato hexadecimal, ou seja, por exemplo: **setBaseColor("#060d72")**.
 
-## Activa las notificaciones de pagos
+## Ative as notificações de pagamento
 
-Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+As notificações informam automaticamente sobre seus novos pagamentos e atualizações de status.
 
-Esto te permitirá administrar tu stock y mantener tu sistema sincronizado.
+Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
+Para mais informações, consulte a seção de [Notificações](/guides/notifications/ipn.pt.md).
 
-## Prueba la integración
+## Teste a integração
 
-Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
+Você pode testar sua integração antes de partir para a produção, a fim de verificar o funcionamento e fazer os ajustes necessários.
 
-Para ello debes usar usuario y tarjetas de prueba.
+Para isso, deve-se utilizar usuários e cartões de teste.
 
-Visita la sección [Probando](/guides/notifications/testing.es.md) para más información.
+Para mais informações, consulte a seção de [Testes](/guides/notifications/testing.pt.md).
 
-### Próximos pasos
 
-- Visita la sección [Personalización](/guides/payments/mobile-checkout/personalization.es.md) para adecuar el flujo de pago a tus necesidades.
+### Próximos passos
+
+- Visite a seção [Personalização](/guides/payments/mobile-checkout/personalization.pt.md) para adequar o fluxo de pagamento às suas necessidades.

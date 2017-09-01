@@ -1,41 +1,41 @@
-# Probando la integración
+# Teste a Integração
 
-Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
-Debes verificar que:
+Antes de partir para a produção, é muito importante que realize testes de fluxo de pagamentos, verificando se as configurações feitas nas preferências realmente estão no checkout.
 
-+ La información del bien o servicio a pagar es correcta.
-+ Se reconoce la cuenta del cliente, porque envías el email.
-+ Ofreces la formas de pago que deseas.
-+ La experiencia de pagos es la adecuada y se informa el resultado del pago.
+Você deve verificar se:
+
++ As informações do produto ou serviço a ser pago estão corretas.
++ Reconhece a conta do cliente para quem o e-mail é enviado.
++ Oferece os métodos de pagamento que deseja.
++ A experiência de pagamento é apropriada e se informa o resultado do pagamento.
 
 Para probar la integración sigue estos pasos:
 
-1. Configura la [public key de sandbox](https://www.mercadopago.com/mla/account/credentials?type=basic) en tu aplicación.
-2. Crea la preferencia en tu servidor con el access token.
-3. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 o 4 dígitos dependiendo de la tarjeta.
-4. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:
-        * **APRO**: Pago aprobado  
-        * **CONT**: Pago pendiente  
-        * **CALL**: Rechazo llamar para autorizar  
-        * **FUND**: Rechazo por monto insuficiente  
-        * **SECU**: Rechazo por código de seguridad  
-        * **EXPI**: Rechazo por fecha de expiración  
-        * **FORM**: Rechazo por error en formulario  
-        * **OTHE**: Rechazo general  
+Para testar a integração siga estes passos:
 
-### Tarjetas para probar nuestro checkout
+1. Configure a public key do sandbox na sua aplicação.
+2. Crie a preferência no seu servidor com o access token.
+3. Preencha os dados do formulário, inserindo os dígitos de um cartão de teste. Na data de vencimento, é necessário inserir qualquer data posterior à data atual e o código de segurança de 3 ou 4 dígitos dependendo do cartão.
+4. No nome do titular do cartão, insira o prefixo correspondente ao que deseja testar:
+        * **APRO**: Pagamento aprovado.  
+        * **CONT**: Pagamento pendente.
+        * **CALL**: Recusado, ligar para autorizar.  
+        * **FUND**: Recusado por saldo insuficiente.  
+        * **SECU**: ecusado por código de segurança.  
+        * **EXPI**: Recusado por data de validade.
+        * **FORM**: Recusado por erro no formulário  
+        * **OTHE**: Recusado geral.  
 
-Usa estas tarjetas de prueba para testear los diferentes resultados del pago.
+### Cartões para testar nosso Checkout
 
-| País 		| Visa 				 | Mastercard        | American Express |
-| ---- 		| ---- 				 | ----------        | ---------------- |
-| Argentina  	| 4509 9535 6623 3704|5031 7557 3453 0604|3711 803032 57522 |
-| Brasil  	| 4235 6477 2802 5682|5031 4332 1540 6351|3753 651535 56885 |
-| Chile   	| 4168 8188 4444 7115|5416 7526 0258 2580|3757 781744 61804 |
-| Colombia  	| 4013 5406 8274 6260|5254 1336 7440 3564|3743 781877 55283 |
-| México  	| 4075 5957 1648 3764|5474 9254 3267 0366|no disponible     |
-| Perú    	| 4009 1753 3280 6176|no disponible      |no disponible     |
-| Uruguay  	| 4014 6823 8753 2428|5808 8877 7464 1586|no disponible     |
-| Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|no disponible     |
+Utilize estes cartões de teste para testar os diferentes resultados do pagamento.
 
-
+| País       | Visa                | Mastercard          | American Express  |
+| ---------- | ------------------- | ------------------- | ----------------- |
+| Argentina  | 4509 9535 6623 3704 | 5031 7557 3453 0604 | 3711 803032 57522 |
+| Brasil     | 4235 6477 2802 5682 | 5031 4332 1540 6351 | 3753 651535 56885 |
+| Chile      | 4168 8188 4444 7115 | 5416 7526 0258 2580 | 3757 781744 61804 |
+| Colômbia   | 4013 5406 8274 6260 | 5254 1336 7440 3564 | 3743 781877 55283 |
+| México     | 4075 5957 1648 3764 | 5474 9254 3267 0366 | indisponível      |
+| Peru       | 4009 1753 3280 6176 | indisponível        | indisponível      |
+| Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | indisponível      |

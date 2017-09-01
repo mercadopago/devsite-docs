@@ -1,104 +1,266 @@
-# Receber um pagamento
+# Receba Pagamentos
 
-Receba pagamentos de maneira simples e segura utilizando o Checkout do MercadoPago.
+Receba pagamentos de forma simples e segura utilizando o Checkout do Mercado Pago.
 
+## 1. Crie uma preferência de pagamentos
 
-## 1. Crie uma preferência de pagamento
+A preferência de pagamentos contém todas as informações sobre o produto ou serviço a ser pago. Por exemplo:
 
-Uma preferência de pagamento contém todas as informações sobre o produto ou serviço pelo qual se vai pagar. Por exemplo:
+- Descrição e preço.
+- Informações do seu comprador (e-mail, nome, endereço, etc.).
+- Meios de pagamentos aceitos.
+- ID de referência do seu sistema.
 
-1. Descrição e montante.
-2. Informações sobre seu comprador (Email, nome, endereço, etc).
-3. Formas de pagamento aceitas.
-4. ID de referência de seu sistema.
+Para criar uma preferência de pagamento, você deve [instalar o SDK do MercadoPago](https://github.com/mercadopago) e configurar suas [credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
-Para criar uma preferência de pagamento deve [instalar o SDK do MercadoPago](https://github.com/mercadopago) e configurar o objeto `MP` com suas [credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
-
+[[[
 ```php
-<?php
-require_once ('mercadopago.php');
-$mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
+
+<?php  
+  require_once ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 ?>
 ```
+```java
 
-Logo, deverá adicionar os atributos de sua preferência ao pagamento:
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+```
+```node
 
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
+```
+```ruby
+
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+```
+]]]
+
+Luego, deberás agregar los atributos de tu preferencia de pago:
+
+[[[
+```php
+
+<?php
+
+$preference = new MercadoPago\Preference();
+
+$item = new MercadoPago\Item();
+$item->title = "Multicolor kite";
+$item->quantity = 1;
+$item->title = "ARS";
+$item->unit_price = 10.00;
+
+$payer = new MercadoPago\Payer();
+$payer->email = "test_user_19653727@testuser.com";
+
+$preference->items = array($item);
+$preference->payer = $payer;
+$preference->save();
+
+?>
+
+```
+```java
+
+Preference preference = new Preference();
+
+Item item = new Item();
+item.setId("1234")
+    .setTitle("Multicolor kite")
+    .setQuantity(2)
+    .setCategoryId("ARS")
+    .setUnitPrice((float) 14.5);
+
+Payer payer = new Payer();
+payer.setEmail("demo@mail.com");
+
+preference.setPayer(payer);
+preference.appendItem(item);
+preference.save();
+
+```
+```node
+
+	var preference = {}
+
+  var item = {
+    title: 'Multicolor kite',
+    quantity: 1,
+    currency_id: 'ARS',
+    unit_price: 10.5
+  }
+
+  var payer = {
+    email: "demo@mail.com"
+  }
+
+  preference.items = [item]
+  preference.payer = payer
+
+  mercadopago.preferences.create(preference).then(function (data) {
+     // Do Stuff...
+   }).catch(function (error) {
+     // Do Stuff...
+   });
+
+```
+```ruby
+
+preference = MercadoPago::Preference.new()
+
+item = MercadoPago::Item.new()
+item.title="Multicolor kite"
+item.quantity= 1
+item.currency_id = 'ARS'
+item.unit_price = 10.5
+
+payer = MercadoPago::Payer.new()
+payer.email="demo@mail.com"
+
+preference.items = [item]
+preference.payer = payer
+
+preference.save
+
+```
+]]]
+
+### Contenido de la preferencia
+
+Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
+
+#### Payer
+
+Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, no se le pedirá durante el proceso de pago.
+
+[[[
 ```php
 <?php
-$preference_data = array(
-	"items" => array(
-		array(
-			"title" => "Multicolor kite",
-			"quantity" => 1,
-			"currency_id" => "ARS",
-			"unit_price" => 10.00,
-			"description" => "",
-			"category_id" => "art" // Categorias disponíveis em https://api.mercadopago.com/item_categories
-		)
-	),
-	"payer" => array(
-		"email" => "usuario@mail.com"
-	)
-);
-
-$preference = $mp->create_preference($preference_data);
+  $payer = new MercadoPago\Payer();
+  $payer->name = "user-name";
+  $payer->surname = "user@email.com";
+  $payer->date_created = "2018-06-02T12:58:41.425-04:00";
+  $payer->phone = array(
+    "area_code" => "11",
+    "number" => "4444-4444"
+  );
+  $payer->identification = array(
+    "type" => "DNI",
+    "number" => "12345678"
+  );
+  $payer->address = array(
+    "street_name" => "Street",
+    "street_number" => 123,
+    "zip_code" => "5700"
+  );
 ?>
 ```
+```java
+Payer payer = new Payer();
+payer.setName("user-name")
+  .setSurname("user-surname")
+  .setEmail("user@email.com")
+  .setDateCreated("2018-06-02T12:58:41.425-04:00")
+  .setPhone((new Phone("11", "4444-4444")))
+  .setIdentification((new Identification("DNI", "12345678")))
+  .setAddress((new Address("Street", 123, "5700")));
+```
+```node
+var payer = {
+        "name": "user-name",
+        "surname": "user-surname",
+        "email": "user@email.com",
+        "date_created": "2015-06-02T12:58:41.425-04:00",
+        "phone": {
+            "area_code": "11",
+            "number": "4444-4444"
+        },
+        "identification": {
+            "type": "DNI",
+            "number": "12345678"
+        },
+        "address": {
+            "street_name": "Street",
+            "street_number": 123,
+            "zip_code": "5700"
+        }
+      }
+```
+```ruby
 
-### Conteúdo da preferência
-
-Quanto mais informações nos enviar, melhor será a taxa de aprovação dos pagamentos e a experiência de seus usuários.
-
-#### Comprador
-
-É obrigatório o envio do `email` de seu comprador. Se nos enviar dados como tipo e número do documento de identificação, os mesmos não são serão solicitados durante o processo de pagamento.
-
-```json
-{
-   ...
-	"payer": {
-		"name": "user-name",
-		"surname": "user-surname",
-		"email": "user@email.com",
-		"date_created": "2015-06-02T12:58:41.425-04:00",
-		"phone": {
-			"area_code": "11",
-			"number": "4444-4444"
-		},
-		"identification": {
-			"type": "DNI", // IDs dos tipos disponíveis em https://api.mercadopago.com/v1/identification_types
-			"number": "12345678"
-		},
-		"address": {
-			"street_name": "Street",
-			"street_number": 123,
-			"zip_code": "5700"
-		} 
-	},
-	...
+payer = MercadoPago::Payer.new
+payer.name = "user-name"
+payer.surname = "user-surname"
+payer.email = "user@email.com"
+payer.date_created = Time.now
+payer.phone = {
+  area_code: "11",
+  number: "4444-4444"
 }
+payer.identification = {
+  type: "DNI",
+  number: "12345678"
+}
+payer.address = {
+  street_name: "Street",
+  street_number: 123,
+  zip_code: "5700"
+}
+
 ```
 
-#### Dados de entrega
+]]]
 
-```json
-{
-	...,
-	"shipments": {
-		"receiver_address": {
-			"zip_code": "5700",
-			"street_number": 123,
-			"street_name": "Street",
-			"floor": 4,
-			"apartment": "C"
-		}
+#### Shipments
+
+[[[
+```php
+<?php
+  $shipments = new MercadoPago\Shipments();
+  $shipments->receiver_address=array(
+		"zip_code" => "5700",
+		"street_number" => 123,
+		"street_name" => "Street",
+		"floor" => 4,
+		"apartment" => "C"
+  );
+?>
+```
+```java
+Shipments shipments = new Shipments();
+shipments.setReceiverAddress(new AddressReceiver("5700", 123, "street", 4, "C"));
+```
+```node
+var shipments = {
+	"receiver_address": {
+		"zip_code": "5700",
+		"street_number": 123,
+		"street_name": "Street",
+		"floor": 4,
+		"apartment": "C"
 	}
+};
+```
+```ruby
+shipment = MercadoPago::Shipment.new
+shipment.receiver_address = {
+	zip_code: "5700",
+	street_number: 123,
+	street_name: "Street",
+	floor: 4,
+	apartment: "C"
 }
 ```
+]]]
 
-## 2. Leve seu comprador para o Checkout
+## 2. Lleva a tu comprador al checkout
 
-Uma vez criada a preferência utilize a URL localizada no atributo `init_point` da resposta para gerar um botão de pagamento:
+Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
 
 ```html
 <!DOCTYPE html>
@@ -107,30 +269,28 @@ Uma vez criada a preferência utilize a URL localizada no atributo `init_point` 
 		<title>Pagar</title>
 	</head>
 	<body>
-		<a href="<?php echo $preference['response']['init_point']; ?>">Pay</a>
+		<a href="<?php echo $preference->init_point; ?>">Pay</a>
 	</body>
 </html>
 ```
 
-## 3. Ative as notificações de pagamentos
+## 3. Ative as notificações de pagamento
 
-As notificações são uma forma automática de inteirar-se sobre seus novos pagamentos e as atualizações de seus estados.
+As notificações informam automaticamente sobre seus novos pagamentos e atualizações de status.
 
-Isto lhe permitirá administrar seu estoque e manter seu sistema sincronizado.
+Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Visite a seção de [Notificações](#) para saber mais sobre o assunto.
+Para mais informações, consulte a seção de [Notificaçõess](/guides/notifications/ipn.pt.md).
 
-## 4. Cancelar um pagamento
+## 4.Cancele um pagamento
+As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.
 
-As formas de pagamentos em dinheiro devem ser efetivadas entre 3 a 5 dias dependendo de cada uma.
-
-O vencimento destes pagamentos **não é automático**, nesse caso é necessário que se execute o [cancelamento do pagamento](../account/refunds-and-cancellations.pt.md) após o vencimento.
-
+O vencimento **não é automático**, então é necessário que efetue o [cancelamento do pagamento](/guides/account/refunds-and-cancellations.pt.md) logo após o vencimento.
 
 ## 5. Teste sua integração
 
-Você pode testar sua integração antes de entrar em produção, a fim de verificar o funcionamento e efetuar os ajustes necessários.
+Você pode testar sua integração antes de partir para produção, a fim de verificar o funcionamento e fazer os ajustes necessários.
 
-Para tal deve se utilizar usuários e cartões de teste.
+Para isso, deve-se utilizar usuários e cartões de teste.
 
-Visite a seção de [Testando](./testing.pt.md) para maiores informações.
+Para mais informações, consulte a [seção de Testes](/guides/payments/web-checkout/testing.pt.md).
