@@ -1,69 +1,77 @@
-# Manejo de respuestas para la creación de pagos y card tokens
+# Manipulação de respostas para a criação de pagamentos e card tokens
 
-Ofrece a tus clientes información clara y precisa ante posible errores en el ingreso de datos de la tarjeta y acerca del estado del pago realizado. Esto permitirá mejorar la conversión de tu checkout ya que el usuario sabrá si tiene que corregir algún dato o realizar alguna acción para finalizar de forma exitosa el proceso de pago.
+Ofereça aos seus clientes informações claras e precisas diante de possíveis erros na inclusão dos dados do cartão e sobre o status do pagamento realizado. Isso permitirá melhorar a conversão do seu checkout, pois o usuário estará ciente de que precisa corrigir alguma informação ou fazer algo para concluir o processo de pagamento com sucesso.
 
-## Al realizar un cobro
+## Realização de cobranças
 
-### Resultados de la creación de un cobro: `HTTP Status 201 OK`
+### Resultados da criação de uma cobrança: `HTTP Status 201 OK`
 
-|   status   |            status_detail             |                                                        Comunicación sugerida                                                        |
+|   status   |            status_detail             |                                                        Mensagem sugerida                                                        |
 | :--------- | :----------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| approved   | `accredited`                         | Listo, se acreditó tu pago! En tu resumen verás el cargo de amount como statement_descriptor.                                       |
-| in_process | `pending_contingency`                | Estamos procesando el pago. <br/><br/> En menos de una hora te enviaremos por e-mail el resultado.                                       |
-| in_process | `pending_review_manual`              | Estamos procesando el pago. <br/><br/> En menos de 2 días hábiles te diremos por e-mail si se acreditó o si necesitamos más información. |
-| rejected   | `cc_rejected_bad_filled_card_number`   | Revisa el número de tarjeta.                                                                                                        |
-| rejected   | `cc_rejected_bad_filled_date`          | Revisa la fecha de vencimiento.                                                                                                     |
-| rejected   | `cc_rejected_bad_filled_other`         | Revisa los datos.                                                                                                                   |
-| rejected   | `cc_rejected_bad_filled_security_code` | Revisa el código de seguridad.                                                                                                      |
-| rejected   | `cc_rejected_blacklist`                | No pudimos procesar tu pago.                                                                                                        |
-| rejected   | `cc_rejected_call_for_authorize`       | Debes autorizar ante `payment_method_id` el pago de amount a Mercado Pago                                                            |
-| rejected   | `cc_rejected_card_disabled`            | Llama a `payment_method_id` para que active tu tarjeta. <br/><br/> El teléfono está al dorso de tu tarjeta.                              |
-| rejected   | `cc_rejected_card_error`               | No pudimos procesar tu pago.                                                                                                        |
-| rejected   | `cc_rejected_duplicated_payment`       | Ya hiciste un pago por ese valor. <br/><br/> Si necesitas volver a pagar usa otra tarjeta u otro medio de pago.                          |
-| rejected   | `cc_rejected_high_risk`                | Tu pago fue rechazado. <br/><br/>Elige otro de los medios de pago, te recomendamos con medios en efectivo.                               |
-| rejected   | `cc_rejected_insufficient_amount`      | Tu `payment_method_id` no tiene fondos suficientes.                                                                                 |
-| rejected   | `cc_rejected_invalid_installments`     | `payment_method_id` no procesa pagos en installments cuotas.                                                                        |
-| rejected   | `cc_rejected_max_attempts`             | Llegaste al límite de intentos permitidos. <br/><br/>Elige otra tarjeta u otro medio de pago.                                            |
-| rejected   | `cc_rejected_other_reason`             | `payment_method_id` no procesó el pago.                                                                                             |
+| approved   | `accredited`                         | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como statement_descriptor.                                       |
+| in_process | `pending_contingency`                | Estamos processando o pagamento.
+ <br/><br/> Enviaremos o resultado por e-mail em até uma hora.                                       |
+| in_process | `pending_review_manual`              | Estamos processando o pagamento.  <br/><br/>
+Em até 2 dias úteis, informaremos por e-mail se foi aprovado ou se precisamos de mais informações. |
+| rejected   | `cc_rejected_bad_filled_card_number`   | Confira o número do cartão.
+                                                  |
+| rejected   | `cc_rejected_bad_filled_date`          | Confira a data de validade.                                                     |
+| rejected   | `cc_rejected_bad_filled_other`         |Confira os dados.                                                            |
+| rejected   | `cc_rejected_bad_filled_security_code` | Confira o código de segurança                                                      |
+| rejected   | `cc_rejected_blacklist`                | Não conseguimos processar seu pagamento.                                                                                         |
+| rejected   | `cc_rejected_call_for_authorize`       | Você deve autorizar ao `payment_method_id` o pagamento do valor ao Mercado Pago                                                            |
+| rejected   | `cc_rejected_card_disabled`            | Ligue para o `payment_method_id` para ativar seu cartão. <br/><br/> O telefone está no verso do seu cartão.                             |
+| rejected   | `cc_rejected_card_error`               | Não conseguimos processar seu pagamento.                                                                                            |
+| rejected   | `cc_rejected_duplicated_payment`       | Você já efetuou um pagamento com esse valor. <br/><br/>
+Caso precise pagar novamente, utilize outro cartão ou outra forma de pagamento.                          |
+| rejected   | `cc_rejected_high_risk`                | Seu pagamento foi recusado. <br/><br/>
+Escolha outra forma de pagamento. Recomendamos meios de pagamento em dinheiro.                               |
+| rejected   | `cc_rejected_insufficient_amount`      | O `payment_method_id` possui saldo insuficiente.                                                                                 |
+| rejected   | `cc_rejected_invalid_installments`     | O `payment_method_id` não processa pagamentos parcelados.                                                                        |
+| rejected   | `cc_rejected_max_attempts`             | Você atingiu o limite de tentativas permitido. <br/><br/>
+Escolha outro cartão ou outra forma de pagamento.                                    |
+| rejected   | `cc_rejected_other_reason`             | O `payment_method_id` não processou seu pagamento.                                                                                             |
 
 
-### Errores de ingreso de datos: HTTP Status 400 Bad Request
+### Erro de inserção de dados: HTTP Status 400 Bad Request
 
-|  Código |                            Descripción                             |              Comunicación sugerida               |
+|  Código |                            Descrição                               |              Mensagem sugerida                   |
 | :------ | :----------------------------------------------------------------- | :----------------------------------------------- |
-| 205     | parameter cardNumber can not be null/empty                         | Ingresa el número de tu tarjeta.                 |
-| 208     | parameter cardExpirationMonth can not be null/empty                | Elige un mes.                                    |
-| 209     | parameter cardExpirationYear can not be null/empty                 | Elige un año.                                    |
-| 212     | parameter docType can not be null/empty                            | Ingresa tu documento.                            |
-| 213     | The parameter cardholder.document.subtype can not be null or empty | Ingresa tu documento.                            |
-| 214     | parameter docNumber can not be null/empty                          | Ingresa tu documento.                            |
-| 220     | parameter cardIssuerId can not be null/empty                       | Ingresa tu banco emisor.                         |
-| 221     | parameter cardholderName can not be null/empty                     | Ingresa el nombre y apellido.                    |
-| 224     | parameter securityCode can not be null/empty                       | Ingresa el código de seguridad.                  |
-| E301    | invalid parameter cardNumber                                       | Hay algo mal en ese número. Vuelve a ingresarlo. |
-| E302    | invalid parameter securityCode                                     | Revisa el código de seguridad.                   |
-| 316     | invalid parameter cardholderName                                   | Ingresa un nombre válido.                        |
-| 322     | invalid parameter docType                                          | Revisa tu documento.                             |
-| 323     | invalid parameter cardholder.document.subtype                      | Revisa tu documento.                             |
-| 324     | invalid parameter docNumber                                        | Revisa tu documento.                             |
-| 325     | invalid parameter cardExpirationMonth                              | Revisa la fecha.                                 |
-| 326     | invalid parameter cardExpirationYear                               | Revisa la fecha.                                 |
-| default | (cualquier otro código de error)                                   | Revisa los datos.                                |
+| 205     | parameter cardNumber can not be null/empty                         | Digite o número do seu cartão.                   |
+| 208     | parameter cardExpirationMonth can not be null/empty                | Escolha um mês.                                  |
+| 209     | parameter cardExpirationYear can not be null/empty                 | Escolha um ano.                                  |
+| 212     | parameter docType can not be null/empty                            | Informe seu documento.                           |
+| 213     | The parameter cardholder.document.subtype can not be null or empty | Informe seu documento.                           |
+| 214     | parameter docNumber can not be null/empty                          | Informe seu documento.                           |
+| 220     | parameter cardIssuerId can not be null/empty                       | Informe seu banco emissor.                       |
+| 221     | parameter cardholderName can not be null/empty                     | Digite o nome e sobrenome.                       |
+| 224     | parameter securityCode can not be null/empty                       | Digite o código de segurança.                    |
+| E301    | invalid parameter cardNumber                                       | Há algo de errado com esse número. Digite novamente.|
+| E302    | invalid parameter securityCode                                     | Confira o código de segurança.                   |
+| 316     | invalid parameter cardholderName                                   | Por favor, digite um nome válido.                |
+| 322     | invalid parameter docType                                          | Confira seu documento.                           |
+| 323     | invalid parameter cardholder.document.subtype                      | Confira seu documento.                           |
+| 324     | invalid parameter docNumber                                        | Confira seu documento.                           |
+| 325     | invalid parameter cardExpirationMonth                              | Confira a data.                                  |
+| 326     | invalid parameter cardExpirationYear                               | Confira a data.                                  |
+| default | (qualquer outro código de erro )                                   | Confira os dados.                                |
 
-## Errores en la creación del token de tarjeta
+## Erros na criação do token do cartão
 
-De haber algún error en los datos de tarjeta, te lo informaremos con los siguientes códigos, de manera que puedas comunicar a tus usarios cuál es la situación y cómo corregirla.
+Se houver algum erro nos dados do cartão, iremos informá-lo com os seguintes códigos, para que possa informar aos seus usuários o status e como corrigi-lo.
 
-|  status |                          status_detail                          |                                              Comunicación sugerida                                               |
+|  status |                          status_detail                          |                                              Mensagem sugerida
+                                               |
 | :------ | :-------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
-| 106     | Cannot operate between users from different countries           | No puedes realizar pagos a usuarios de otros países.                                                             |
-| 109     | Invalid number of shares for this payment\_method\_id           | payment\_method\_id no procesa pagos en installments cuotas. <br/><br/> Elige otra tarjeta u otro medio de pago. |
-| 126     | The action requested is not valid for the current payment state | No pudimos procesar tu pago.                                                                                     |
-| 129     | Cannot pay this amount with this paymentMethod                  | payment\_method\_id no procesa pagos del monto seleccionado. <br/><br/> Elige otra tarjeta u otro medio de pago. |
-| 145     | Invalid users involved                                          | No pudimos procesar tu pago.                                                                                     |
-| 150     | The payer\_id cannot do payments currently                      | No puedes realizar pagos.                                                                                        |
-| 151     | The payer\_id cannot do payments with this payment\_method\_id  | No puedes realizar pagos.                                                                                        |
-| 160     | Collector not allowed to operate                                | No pudimos procesar tu pago.                                                                                     |
-| 204     | Unavailable payment\_method                                     | payment\_method\_id no está disponible en este momento. <br/><br/> Elige otra tarjeta u otro medio de pago.      |
-| 801     | Already posted the same request in the last minute              | Realizaste un pago similar hace instantes. <br/><br/> Intenta nuevamente en unos minutos.                        |
-| default | (cualquier otro código de error)                                | No pudimos procesar tu pago.                                                                                     |
+| 106     | Cannot operate between users from different countries           | Não pode efetuar pagamentos a usuários de outros países. países.                                                             |
+| 109     | Invalid number of shares for this payment\_method\_id           | O payment\_method\_id não processa pagamentos parcelados. <br/><br/> Escolha outro cartão ou outra forma de pagamento. |
+| 126     | The action requested is not valid for the current payment state | Não conseguimos processar seu pagamento.                                                                                     |
+| 129     | Cannot pay this amount with this paymentMethod                  | payment\_method\_id não processa pagamentos para o valor selecionado.<br/><br/> Escolha outro cartão ou outra forma de pagamento. |
+| 145     | Invalid users involved                                          | Não conseguimos processar seu pagamento.          |
+| 150     | The payer\_id cannot do payments currently                      | Você não pode efetuar pagamentos.                                                                              |
+| 151     | The payer\_id cannot do payments with this payment\_method\_id  | Você não pode efetuar pagamentos.                   |
+| 160     | Collector not allowed to operate                                | Não conseguimos processar seu pagamento.                                                              |
+| 204     | Unavailable payment\_method                                     | O payment\_method\_id não está disponível neste momento.  <br/><br/> Escolha outro cartão ou outra forma de pagamento.      |
+| 801     | Already posted the same request in the last minute              |Você efetuou um pagamento no mesmo valor alguns minutos atrás. <br/><br/>
+Tente novamente em alguns minutos.                     |
+| default | (qualquer outro código de erro)                                | Não conseguimos processar seu pagamento.                                                                                |

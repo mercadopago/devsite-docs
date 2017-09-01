@@ -1,17 +1,17 @@
-# Recibir un pago con tarjeta
+# Receba um pagamento com cartão
 
-Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura, manteniendo el control de la experiencia de compra que le brindas a tus usuarios.
+Com o MercadoPago é possível capturar os dados do cartão de forma segura, ao mesmo tempo que mantém o controle sobre a experiência de compra oferecida aos seus usuários.
 
 
-## Captura los datos de tarjeta
+## Capture os dados do cartão
 
-La captura de datos de tarjeta es realizada desde el navegador de tu comprador. Es **muy importante que los datos nunca lleguen a tus servidores por cuestiones de seguridad**.
+A captura de dados do cartão é realizada a partir do navegador do seu comprador. Por questões de segurança, é **muito importante que os dados nunca cheguem aos seus servidores**.
 
-Mercado Pago cuenta con una librería Javascript para ayudarte a realizar esto de forma simple y segura.
+O Mercado Pago conta com uma biblioteca Javascript para ajudá-lo a fazer isso de forma simples e segura.
 
 ### 1. Incluir MercadoPago.js
 
-Para hacer uso de esta librería debes comenzar insertando el siguiente código en nuestro checkout:
+Para utilizar esta biblioteca, primeiramente insira o seguinte código em nosso checkout:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
@@ -21,11 +21,11 @@ Para hacer uso de esta librería debes comenzar insertando el siguiente código 
 >
 > Nota
 >
-> Es importante que la librería **siempre** se importe desde _https://secure.mlstatic.com_.
+> A biblioteca deve ser **sempre** importada a partir de _https://secure.mlstatic.com_.
 
-### 2. Configura tu public key
+### 2. Configure sua public key
 
-Tu clave pública es la que es la que te identifica para poder capturar los datos de tarjeta de forma segura. La public key debe ser cargada después de incluir _MercadoPago.js_ y antes de realizar un request.
+Sua chave pública é sua identificação para poder capturar os dados do cartão de forma segura. O upload da chave pública deve ser feito após incluir MercadoPago.js e antes de efetuar uma solicitação.
 
 ```javascript
 Mercadopago.setPublishableKey("TEST-b3d5b663-664a-4e8f-b759-de5d7c12ef8f");
@@ -35,14 +35,14 @@ Mercadopago.setPublishableKey("TEST-b3d5b663-664a-4e8f-b759-de5d7c12ef8f");
 >
 > Nota
 >
-> Esta es una clave pública del entorno de pruebas. Para capturar tarjetas reales deberás reemplazarla por tu [clave pública productiva](https://www.mercadopago.com/mla/account/credentials).
+> Esta é uma chave pública do ambiente de testes. Para capturar cartões reais, você deve substituí-la pela sua [chave pública de produção](https://www.mercadopago.com/mla/account/credentials).
 
 
-### 3. Capturar datos de tarjeta
+### 3. Capturar dados do cartão
 
-#### Formulario
+#### Formulário
 
-El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer esto es importante contar con un formulario que utilice los siguientes atributos `data-checkout`:
+O próximo passo é capturar os dados do cartão. Para isso, é importante possuir um formulário que utilize os seguintes atributos data-checkout:
 
 ```html
 <form action="" method="post" id="pay" name="pay" >
@@ -90,25 +90,26 @@ El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer est
 > WARNING
 >
 > Importante
-> 
-> Los campos que tienen datos sensibles no cuentan con el atributo `name`, de esta forma nunca llegarán a tus servidores.
+>
+> Os campos que possuem dados confidenciais não contam com o atributo `name` e, portanto, nunca chegarão aos seus servidores.
 
 
-#### Obtener el tipo de documento
+#### Obtenha o tipo de documento
 
-Entre los campos requeridos se encuentra el tipo y número de documento.
+Entre os campos obrigatórios estão o tipo e o número do documento.
 
-Poder obtener el listado de documentos disponibles:
+É possível obter a lista de documentos disponíveis:
 
 ```javascript
 Mercadopago.getIdentificationTypes();
 ```
 
-#### Obtener el medio de pago de la tarjeta
+####  Obtenha o meio de pagamento do cartão
 
-Es importante que obtengamos el medio de pago de la tarjeta para poder realizar el pago.
+É importante obter o meio de pagamento do cartão para poder efetuar o pagamento.
 
-Para obtener el medio de pago, utiliza el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este acepta dos parámetros: un objeto y una función de callback.
+Para obter o meio de pagamento, utilize o método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este método admite dois parâmetros: um objeto e uma função de callback.
+
 
 ```javascript
 Mercadopago.getPaymentMethod({
@@ -116,9 +117,9 @@ Mercadopago.getPaymentMethod({
 }, setPaymentMethodInfo);
 ```
 
-El `bin` corresponde a los primeros 6 dígitos de la tarjeta, y son los que identifican el medio de pago y banco emisor de esta.
+O `bin` corresponde aos 6 primeiros dígitos do cartão, que identificam o meio de pagamento e o banco emissor do cartão.
 
-El callback recibe un status y un response. La función deberá almacenar el id de la respuesta en el campo `paymentMethodId` (input hidden), por ejemplo:
+O callback recebe um status e uma resposta. A função deverá armazenar a id da resposta no campo `paymentMethodId` (input hidden), por exemplo:
 
 ```javascript
 function setPaymentMethodInfo(status, response) {
@@ -135,9 +136,9 @@ function setPaymentMethodInfo(status, response) {
 };
 ```
 
-#### Capturar los datos
+#### Capture os dados
 
-Antes de enviar el formulario, debes capturar el evento `submit` y utilizar el método `Mercadopago.createToken(form, sdkRespondeHandler);`.
+Antes de enviar o formulário, deve-se capturar o evento `submit` e utilizar o método `Mercadopago.createToken(form, sdkRespondeHandler)``.
 
 ```javascript
 doSubmit = false;
@@ -146,7 +147,7 @@ function doPay(event){
     event.preventDefault();
     if(!doSubmit){
         var $form = document.querySelector('#pay');
-        
+
         Mercadopago.createToken($form, sdkResponseHandler); // The function "sdkResponseHandler" is defined below
 
         return false;
@@ -154,9 +155,9 @@ function doPay(event){
 };
 ```
 
-Enviando el `form`, y utilizando los atributos `data-checkout` se realiza la captura de todos los campos.
+Ao enviar o `form`, e utilizar os atributos `data-checkout`, a captura de todos os campos é realizada.
 
-El método `createToken` devolverá un card_token, lo cual es la representación segura de la tarjeta:
+O método `createToken` retornará um card_token, que é a representação segura do cartão:
 
 ```json
 {
@@ -186,9 +187,10 @@ El método `createToken` devolverá un card_token, lo cual es la representación
 }
 ```
 
-El segundo campo del método `createToken` es `sdkResponseHandler`, la cual es una función de callback que será ejecutada al crear el `card_token`.
+O segundo campo do método `createToken` é o `sdkResponseHandler`, que é uma função de callback que será executada ao criar o `card_token`.
 
-Utilizaremos esta para crear un campo oculto (input hidden), y almacenaremos el valor de `id`, para luego enviar el formulario a tus servidores.
+Nós a utilizaremos para criar um campo oculto (input hidden) e armazenaremos o valor de `id` para então enviar o formulário aos seus servidores.
+
 
 ```javascript
 function sdkResponseHandler(status, response) {
@@ -207,25 +209,25 @@ function sdkResponseHandler(status, response) {
 };
 ```
 
-Puedes descargar el ejemplo completo desde [aquí](#).
+É possível fazer o download do exemplo completo [aqui](#).
 
-## Recibir un pago con tarjeta
+## Receba um pagamento com cartão
 
-Debes obtener de los parametros enviados en el `POST` el id del `card_token` para realizar un pago único.
+Para efetuar um pagamento único, deve-se obter o id do card_token a partir dos parâmetros enviados no POST.
 
-Los `card_token` tienen **una validez de 7 días** y son de único uso.
+Os `card_token` são **válidos por 7 dias** e podem ser utilizados apenas uma vez.
 
-Para realizar el pago solamente debes realizar un API call:
+Para efetuar o pagamento, basta realizar um API call:
 
 [[[
-```php 
+```php
 <?php  
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
-  
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
   $payment = new MercadoPago\Payment();
-  
+
   $payment->transaction_amount = 100;
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
   $payment->description = "Title of what you are paying for";
@@ -234,9 +236,9 @@ Para realizar el pago solamente debes realizar un API call:
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
-    
+
   $payment->save();
-    
+
 ?>
 ```
 ```java
@@ -251,7 +253,7 @@ payment.setTransactionAmount(100)
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
       .setPaymentMethodId("visa")
-      .setPayer(new Payer("test_user_19653727@testuser.com")); 
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
 
@@ -261,7 +263,7 @@ payment.save();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var payment_data = { 
+var payment_data = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
   description: 'Title of what you are paying for',
@@ -271,7 +273,7 @@ var payment_data = {
     email: 'test_user_3931694@testuser.com'
   }
 };
-  
+
 mercadopago.payment.create(payment_data).then(function (data) {
   // Do Stuff...
 }).catch(function (error) {
@@ -290,18 +292,18 @@ payment.token = 'ff8080814c11e237014c1ff593b57b4d'
 payment.description = 'Title of what you are paying for'
 payment.installments = 1
 payment.payment_method_id = "visa"
-payment.payer = { 
+payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
 
 payment.save()
 
-``` 
+```
 ]]]
 
-> Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
+> Os campos obrigatórios para enviar são  `token`, `transaction_amount`, `payment_method_id` e o `payer.email`.
 
-Respuesta:
+Resposta:
 
 ```json
 {
@@ -319,19 +321,19 @@ Respuesta:
 }
 ```
 
-Eso es todo, la respuesta tendrá el estado del pago (`approved`, `rejected` o `in_process`). 
+Isso é tudo. A resposta indicará o status do (`approved`, `rejected` ou `in_process`).
 
 > NOTE
-> 
-> Puedes ver más información sobre el [manejo de respuestas](#manejo-de-respuestas).
+>
+> Você pode consultar mais informações sobre [manipulação de respostas](#manipulação-de-respostas).
 
-## Recibir un pago en cuotas
+## Receba um pagamento em parcelas
 
-Para hacer uso de las [promociones](https://www.mercadopago.com.ar/promociones) que ofrece Mercado Pago, es importante que se envíe el campo `issuer_id` e `installments` al momento de crear un pago.
+Para utilizar as [promoções](https://www.mercadopago.com.ar/promociones) que o Mercado Pago oferece, é importante enviar o campo `issuer_id` e `installments` ao criar um campo de pagamento.
 
-El campo `installments` corresponde a la cantidad de cuotas que el comprador elije. El `issuer_id` es el banco emisor de la tarjeta.
+O campo installments corresponde ao número de parcelas selecionado pelo comprador. O `issuer_id` corresponde ao banco emissor do cartão.
 
-Para obtener las cuotas disponibles 
+Para obter as parcelas disponíveis:
 
 ```javascript
 Mercadopago.getInstallments({
@@ -340,7 +342,7 @@ Mercadopago.getInstallments({
 }, setInstallmentInfo);
 ```
 
-La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recomendado para mostrar en cada una de las cuotas disponibles indicando el valor a pagar:
+A resposta inclui o `issuer_id` que deve ser enviado e a mensagem recomendada para exibição em cada uma das parcelas disponíveis indicando o valor a ser pago:
 
 ```json
 [
@@ -372,20 +374,19 @@ La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recome
 >
 > Nota
 >
-> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](/guides/localization/considerations-argentina.es.md).
+> Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos [requisitos adicionais](/guides/localization/considerations-argentina.es.md).
 
-
-Para crear el pago es importante enviar los datos indicados anteriormente:
+Para criar o pagamento, é importante enviar os dados indicados acima:
 
 [[[
-```php 
+```php
 <?php  
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
-  
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
   $payment = new MercadoPago\Payment();
-  
+
   $payment->transaction_amount = 100;
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
   $payment->description = "Title of what you are paying for";
@@ -395,9 +396,9 @@ Para crear el pago es importante enviar los datos indicados anteriormente:
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   )
-    
+
   $payment->save();
-    
+
 ?>
 ```
 ```java
@@ -413,7 +414,7 @@ payment.setTransactionAmount(100)
       .setInstallments(3)
       .setPaymentMethodId("amex")
       .setIssuerId(310)
-      .setPayer(new Payer("test_user_19653727@testuser.com")); 
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
 
@@ -423,7 +424,7 @@ payment.save();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var payment = { 
+var payment = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
   description: 'Title of what you are paying for',
@@ -434,7 +435,7 @@ var payment = {
     email: 'test_user_3931694@testuser.com'
   }
 };
-  
+
 mercadopago.payment.create(payment).then(function (data) {
   // Do Stuff...
 }).catch(function (error) {
@@ -454,34 +455,34 @@ payment.description = 'Title of what you are paying for'
 payment.installments = 3
 payment.payment_method_id = 'amex'
 payment.issuer_id = 310
-payment.payer = { 
+payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
 
 payment.save()
 
-``` 
+```
 ]]]
 
 
-## Manejo de respuestas
+## Manipulação de respostas
+
+É **muito importante** comunicar corretamente os resultados recebidos ao criar um pagamento. Isso ajudará a melhorar a conversão em casos de rejeições, e evitará estornos em casos de transações aprovadas.
 
-Es **muy importante** comunicar correctamente los resultados recibidos al crear un pago. Esto ayudará a mejorar la conversión en los casos de rechazos, y evitar contracargos en los casos de transacciones aprobadas.
+Recomendamos que leia o artigo sobre [manipulação de respostas](/guides/payments/api/handling-responses.pt.md) e utilize a comunicação sugerida em cada um dos casos.
 
-Te recomendamos leer el artículo sobre el [manejo de respuestas](/guides/payments/api/handling-responses.es.md) y utilizar la comunicación sugerida en cada uno de los casos.
+## Receba uma notificação de pagamento
 
-## Recibir una notificación del pago
+É importante estar ciente sobre quaisquer atualizações do status do seu pagamento. Para isso, deve-se utilizar _Webhooks_.
 
-Es importante que te enteres de cualquier actualización del estado de tu pago. Para esto se debe utilizar _Webhooks_.
+Um _Webhook_ é uma notificação enviada de um servidor para outro mediante uma requisição `HTTP POST`.
 
-Un _Webhook_ es una notificación que se envía de un servidor a otro mediante un request `HTTP POST`.
+Todas as informações relacionadas a esse assunto podem ser encontradas no [artigo sobre Webhooks](/guides/notifications/webhooks.pt.md).
 
-Puedes encontrar toda la información al respecto en el [artículo de webhooks](/guides/notifications/webhooks.es.md).
+## Próximos passos
 
-## Próximos pasos
+### Receba pagamentos com cartões armazenados
 
-### Recibe pagos con tarjetas guardadas
+Armazene os cartões de seus clientes com segurança e efetue pagamentos com uma experiência one-click-to-buy (ou compra com um clique).
 
-Puedes almacenar de forma segura las tarjetas de tus clientes y realizar pagos con una experiencia one-click-to-buy.
-
-[Más información](/guides/payments/api/customers-and-cards.es.md)
+[Mais informações](/guides/payments/api/customers-and-cards.pt.md)

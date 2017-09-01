@@ -1,7 +1,7 @@
 ---
   sites_supported:
       - mla
-      - mlb 
+      - mlb
       - mpe
 ---
 
@@ -9,46 +9,46 @@
 
 > WARNING
 >
-> Pre-requisitos
+> Pré-requisitos
 >
-> * Tener implementado el [procesamiento de pagos con tarjeta](/guides/payments/api/receiving-payment-by-card.es.md).
-> 
-> Disponible solamente en:
-> 
+> * Possuir o [processamento de pagamentos com cartão](/guides/payments/api/receiving-payment-by-card.pt.md) implementado.
+>
+> Disponível apenas nos seguintes países:
+>
 > * Argentina (Visa, Mastercard, American Express, Naranja, Cencosud, Cabal, Diners, Argencard y Tarjeta Shopping)
 > * Brasil
-> * Perú
+> * Peru
 
-Mercado Pago ofrecé la posibilidad de realizar una autorización antes de generar una captura.
+O MercadoPago oferece a possibilidade de realizar uma autorização antes de gerar uma captura.
 
-La autorización es una reserva de fondos en la tarjeta de tu comprador. Esto significa que al realizarla todavía no se le generó un cobró a tu cliente en su tarjeta. Solo cuando se realice una captura el cliente verá el pago.
+A autorização é uma reserva de valores no cartão do seu comprador. Isto significa que, ao realizá-la, ainda não foi gerada uma cobrança no cartão do seu cliente. Somente quando a captura for realizada, o cliente visualizará o pagamento.
 
-## Realizar una reserva de fondos
+## Faça uma reserva de valores
 
-Realizar una autorización o reserva de los fondos es como realizar un pago, pero agregando el atributo `capture=false`:
+Fazer uma autorização ou reserva de valores é como fazer um pagamento, porém acrescentando o atributo `capture=false`:
 
 [[[
-```php 
+```php
 <?php  
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
-  
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
   $payment = new MercadoPago\Payment();
-  
+
   $payment->transaction_amount = 100;
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
   $payment->description = "Title of what you are paying for";
   $payment->installments = 1;
-  $payment->payment_method_id = "visa"; 
+  $payment->payment_method_id = "visa";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
-    
+
   $payment->capture=false;
-    
+
   $payment->save();
-    
+
 ?>
 ```
 ```java
@@ -64,7 +64,7 @@ payment.setTransactionAmount(100)
       .setInstallments(1)
       .setPaymentMethodId("visa")
       .setPayer(new Payer("test_user_19653727@testuser.com"))
-      .setCapture(false); 
+      .setCapture(false);
 
 payment.save();
 
@@ -74,7 +74,7 @@ payment.save();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var payment_data = { 
+var payment_data = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
   description: 'Title of what you are paying for',
@@ -85,7 +85,7 @@ var payment_data = {
   },
   capture: false
 };
-  
+
 mercadopago.payment.create(payment_data).then(function (data) {
   // Do Stuff...
 }).catch(function (error) {
@@ -104,17 +104,17 @@ payment.token = 'ff8080814c11e237014c1ff593b57b4d'
 payment.description = 'Title of what you are paying for'
 payment.installments = 1
 payment.payment_method_id = "visa"
-payment.payer = { 
+payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
 payment.capture = false
 payment.save()
 
-``` 
+```
 ]]]
 
 
-Respuesta:
+Resposta:
 
 ```json
 {
@@ -128,37 +128,38 @@ Respuesta:
 }
 ```
 
-La respuesta indica que el pago se encuentra **autorizado** y **pendiente de captura**.
+A resposta indica que o pagamento foi **autorizado** e está **aguardando a captura**.
 
-Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta que no sean capturados, por lo cuál recomendamos realizar la captura en el menor tiempo posible.
+Tenha em mente que este valor não poderá ser utilizado pelo comprador enquanto não for capturado, por isso recomendamos realizar a captura o mais rápido possível.
+
 
 > WARNING
-> 
-> Consideraciones
-> 
-> * La reserva tendrá una validez de [AR:7][BR:5][PE:22] días. Si no la capturas hasta ese momento será cancelada.
-> * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
+>
+> Considerações
+>
+> * A reserva será válida por [AR:7][BR:5][PE:22] dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
+> * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
 
-## Capturar un pago
+## Capture um pagamento
 
-Para poder cobrarle a tu cliente es necesario capturar los fondos que reservaste.
+Para realizar a cobrança ao seu cliente, é necessário capturar os valores reservados.
 
-Es posible realizar la captura por el monto total o de forma parcial.
+É possível realizar a captura do valor total ou parcial.
 
-### Capturar el monto total de una reserva
+### Capture o valor total de uma reserva
 
-Para hacer la captura por el monto total solo debes enviar el atributo `capture` en **true** en un request `HTTP PUT`.
+Para capturar o valor total, você deve apenas enviar o atributo `capture` em **true** em uma requisição `HTTP PUT`.
 
 [[[
 ```php
 <?php
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);
   $payment->capture = true;
-  $payment->update(); 
+  $payment->update();
 
 ?>
 ```
@@ -190,7 +191,7 @@ payment.update()
 ```
 ]]]
 
-El request actualizará el status a `approved` con un `status_detail=accredited`:
+A requisição atualizará o status `approved` com `status_detail=accredited`:
 
 ```json
 {
@@ -203,19 +204,19 @@ El request actualizará el status a `approved` con un `status_detail=accredited`
 }
 ```
 
-Siempre que no especifiques un monto se capturará el monto total reservado.
+Quando não especificar um valor, será realizada a captura do valor total reservado.
 
 > NOTE
 >
 > Nota
 >
-> Si la reserva había sido exitosa, la operación de captura siempre será exitosa también.
+> Se a reserva for realizada com sucesso, a captura também será efetuada com sucesso.
 
-### Capturar un pago por un monto menor al reservado
+### Capture um pagamento por um valor inferior ao da reserva
 
-> En Argentina solo disponible para Visa y American Express
+> Disponível apenas para Visa e American Express na Argentina.
 
-Si decides capturar por un monto menor al reservado, es necesario que además de enviar el atributo `capture`, envies el atributo `transaction_amount` con el nuevo monto.
+Caso decida capturar um valor inferior ao reservado, é necessário que, além de enviar o atributo `capture`, envie o atributo `transaction_amount` com o novo valor.
 
 
 [[[
@@ -223,12 +224,12 @@ Si decides capturar por un monto menor al reservado, es necesario que además de
 <?php
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);
   $payment->transaction_amount = 75;
   $payment->capture = true;
-  $payment->update(); 
+  $payment->update();
 
 ?>
 ```
@@ -261,9 +262,9 @@ payment.update()
 
 ```
 ]]]
- 
 
-Respuesta:
+
+Resposta:
 
 ```json
 {
@@ -282,26 +283,25 @@ Respuesta:
 >
 > Nota
 >
-> No es posible capturar un monto mayor al reservado, para eso es necesario realizar cancelar la reserva y generar una nueva.
+> O valor da captura não pode ser maior que o valor reservado, para isso é necessário cancelar a reserva e gerar uma nova.
 
 
-## Cancelar una reserva
+## Cancele uma reserva
 
-Si no harás uso del dinero reservado, es importante que canceles la reserva para liberar el dinero de la tarjeta.
+Se não for utilizar a quantia reservada, é importante cancelar a reserva para liberar o saldo no cartão.
 
-Para hacer esto debes actualizar el atributo `status` del pago a un estado `cancelled`:
-
+Para isso, atualize o atributo `status` do pagamento para um status `cancelled`:
 
 [[[
 ```php
 <?php
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);
-  $payment->status = "cancelled"; 
-  $payment->update(); 
+  $payment->status = "cancelled";
+  $payment->update();
 
 ?>
 ```
@@ -311,7 +311,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 
 Payment payment = Payment.load(paymentId);
-payment.status = "canceled"; 
+payment.status = "canceled";
 payment.update();
 
 
@@ -333,7 +333,7 @@ payment.update()
 ```
 ]]]
 
-Respuesta:
+Resposta:
 
 ```json
 {
@@ -349,4 +349,4 @@ Respuesta:
 >
 > Nota
 >
-> Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](/guides/notifications/webhooks.es.md) del cambio de estado del pago.
+> As reservas que não forem capturadas dentro do prazo mencionado serão automaticamente canceladas. Será feita uma notificação via [Webhooks](/guides/notifications/webhooks.pt.md) da mudança de status do pagamento.

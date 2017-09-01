@@ -3,35 +3,34 @@
 ---
 
 
-# Campañas de descuento
+# Campanhas de desconto
 
-Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de MercadoPago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).
+Crie campanhas de desconto para impulsionar suas vendas utilizando as ferramentas de marketing da sua conta no MercadoPago, entrando na seção Configurações para o seu Negócio: [Criar desconto](https://www.mercadopago.com.ar/campaigns/create).
 
-Puedes crear dos tipos de campañas:
+Você pode criar dois tipos de campanhas:
 
-* Que apliquen a todos tus compradores, por ej por rebajas por temporada
-* Con código de descuento para enviar a tus compradores.
+* Aplicada a todos os seus compradores, por exemplo, liquidações sazonais.
+* Com código de desconto para enviar aos seus compradores.
 
-Sólo debes elegir cuánto dinero quieres invertir y cuándo, sin costos extras.
+Basta escolher quanto quer investir e quando, sem custos adicionais.
 
+## Verifique o desconto a ser incluído no pagamento
 
-## Consulta el descuento para incluirlo en el pago
+Antes de criar o pagamento, verifique se seu comprador se adequa a alguma de suas campanhas de descontos.
 
-Antes de crear el pago, consulta si tu comprador es alcanzado por alguna de tus campañas de descuentos.
+### Campanhas para todos os compradores
 
-### Campañas para todos los compradores
-
-Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
+Para verificar, utilize as [credenciais de sua aplicação](https://www.mercadopago.com/mla/account/credentials):
 
 ```curl
 curl -H "Accept: application/json" \
 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_85556797@testuser.com&access_token=ACCESS_TOKEN' \
 ```
 
-- El `transaction_amount` es el importe total del pago.
-- El `payer_email` es el email del comprador en tu plataforma.
+- O `transaction_amount` é o valor total do pagamento.
+- O `payer_email` é o e-mail do comprador em sua plataforma.
 
-**Respuesta**
+**Resposta**
 
 ```json
 {
@@ -44,14 +43,14 @@ curl -H "Accept: application/json" \
 }
 ```
 
-- El `id` identifica la campaña. Lo usarás al procesar el pago.
-- El `percent_off` es la tasa de descuento que se aplicará, en caso de que hayas creado una campaña con porcentaje de descuento.
-- El `amount_off` es el monto fijo que definiste en tu campaña de descuento.
-- El `coupon_amount` es el importe del descuento que se aplicará. Lo usarás al procesar el pago.
+- A `id` identifica a campanha. Ela será utilizada para processar o pagamento.
+- O `percent_off` é a taxa de desconto que será aplicada caso tenha criado uma campanha com porcentagem de desconto.
+- O `amount_off` é o valor fixo definido por você para sua campanha de desconto.
+- O `coupon_amount` é o valor do desconto que será aplicado. Ele será utilizado para processar o pagamento.
 
-#### Procesar el pago
+#### Processe o pagamento
 
-Para recibir un pago con una campaña que aplique a todos tus compradores, debes adicionar los campos `campaign_id` y `coupon_amount`:
+Para receber um pagamento com uma campanha que se aplique a todos os seus compradores, você deve adicionar os  `campaign_id` e `coupon_amount`:
 
 ```curl
 curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
@@ -68,7 +67,7 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 }'
 ```
 
-**Respuesta**
+**Resposta**
 
 ```json
 {
@@ -90,28 +89,28 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 }
 ```
 
-- El `transaction_amount` es el importe original de los items a pagar.
-- El `total_paid_amount` es el importe total pagado por el comprador.
-- El `coupon_amount` es el importe del descuento aplicado.
+- O `transaction_amount` é o valor original dos itens a pagar.
+- O `total_paid_amount` é o valor total pago pelo comprador.
+- O `coupon_amount` é o valor do desconto aplicado.
 
 
-### Cupón con código de descuento
+### Cupom com código de desconto
 
-Agrega un campo adicional en el formulario de pago para poder capturar el código de cupón que tu comprador ingrese.
+Adicione um campo adicional no formulário de pagamento para capturar o código do cupom inserido pelo comprador.
 
-#### Verifica si el comprador tiene un descuento disponible:
+#### Verifique se o comprador possui desconto disponível:
 
-Para verificar, utiliza las [credenciales de tu aplicación](https://www.mercadopago.com/mla/account/credentials):
+Para verificar, utilize as [credenciais da sua aplicação](https://www.mercadopago.com/mla/account/credentials):
 
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'
 ```
 
-- El `coupon_code` es el código insertado por el comprador. Este lo utilizarás cuando proceses el pago en caso de que el comprador tenga el descuento.
-- El `transaction_amount` es el importe total de la compra.
-- El `payer_email` es el email del comprador en tu plataforma.
+- O `coupon_code` é o código inserido pelo comprador. Ele será utilizado ao processar o pagamento, caso o comprador tenha o desconto.
+- O `transaction_amount` é o valor total da compra.
+- O `payer_email` é e-mail do comprador em sua plataforma.
 
-Si el comprador tiene el descuento disponible, la API devolverá:
+Se o comprador tiver o desconto disponível, a API retornará:
 
 ```json
 {
@@ -124,13 +123,13 @@ Si el comprador tiene el descuento disponible, la API devolverá:
 }
 ```
 
-- El `id` identifica la campaña.
-- El `percent_off` es la tasa de descuento que se aplicará, en caso de que hayas creado una campaña con porcentaje de descuento.
-- El `amount_off` es el monto fijo que definiste en tu campaña de descuento.
-- El `coupon_amount` es el importe del descuento que se aplicará. Guárdalo, también lo usarás al procesar el pago.
+- A `id` identifica a campanha.
+- O `percent_off` é a taxa de desconto que será aplicada caso tenha criado uma campanha com porcentagem de desconto.
+- O `amount_off` é o valor fixo definido por você para sua campanha de desconto.
+- O `coupon_amount` é o valor do desconto que será aplicado. Guarde-o, pois ele também será utilizado ao processar o pagamento.
 
 
-Si el comprador ya utilizó el descuento, la API devolverá:
+Se o comprador já tiver utilizado o desconto, a API retornará:
 
 ```json
 {
@@ -141,11 +140,11 @@ Si el comprador ya utilizó el descuento, la API devolverá:
 }
 ```
 
-En este momento puedes mostrar que el cupón no es válido o ya no está disponible.
+Nesse momento, você pode indicar que o cupom é inválido ou não está mais disponível.
 
-#### Procesar el pago
+#### Processe o pagamento
 
-Para recibir un pago con un cupón de descuento debes adicionar el `coupon_code`:
+Para receber um pagamento com cupom de desconto, você deve adicionar o  `coupon_code`:
 
 ```curl
 curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
@@ -163,7 +162,7 @@ https://api.mercadolibre.com/v1/payments?access_token=ACCESS_TOKEN \
 }'
 ```
 
-**Respuesta:**
+**Resposta:**
 
 ```json
 {
@@ -185,9 +184,9 @@ https://api.mercadolibre.com/v1/payments?access_token=ACCESS_TOKEN \
 }
 ```
 
-### Descuento no disponible
+### Desconto não disponível
 
-Si el comprador no tiene el descuento disponible, la API devolverá:
+Caso o comprador não tenha o desconto disponível, a API retornará:
 
 ```json
 {

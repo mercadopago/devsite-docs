@@ -1,17 +1,18 @@
-# Otros medios de pago
+# Outros meios de pagamento
 
-Existen otros medios de pago en cada país además de tarjetas de crédito o débito, con los que puedes recibir pagos. En su mayoría son lo que llamamos medios de pago "offline" o "en efectivo".
+Existem outros meios de pagamento em cada país, além de cartões de crédito ou débito, com os quais você pode receber pagamentos. A maioria deles são o que chamamos de meios de pagamento “off-line” ou “em dinheiro”.
 
-Los tipos de medio de pago disponibles son:
+Os tipos de meio de pagamento disponíveis são:
 
-* ticket
-* atm
-* bank_transfer
-* prepaid_card
+	•	ticket.
+	•	atm.
+	•	bank_transfer.
+	•	prepaid_card.
 
-## Obten los medios de pago disponibles
 
-Puedes obtener el listado de medios de pago disponibles realizando un request `HTTP GET`:
+## Obtenha os meios de pagamento disponíveis
+
+Obtenha uma lista dos meios de pagamento disponíveis fazendo uma requisição `HTTP GET`:
 
 [[[
 ```php
@@ -19,9 +20,9 @@ Puedes obtener el listado de medios de pago disponibles realizando un request `H
 
   require_once ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
-  
-  $payment_methods = MercadoPago::get("/v1/payment_methods"); 
-  
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
 ?>
 ```
 ```java
@@ -44,7 +45,7 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 ```
 ]]]
 
-El resultado será un _array_ con los medios de pago y sus propiedades:
+O resultado será uma _array_ com os meios de pagamento e suas propriedades:
 
 ```json
 [
@@ -76,28 +77,28 @@ El resultado será un _array_ con los medios de pago y sus propiedades:
 ]
 ```
 
-## Recibí un pago con un medio de pago en efectivo
+## Receba pagamentos com meios de pagamento em dinheiro
 
-Para poder recibir pagos de medio en efectivo solamente debes recolectar el `email` del comprador. Luego es necesario hacer un request `HTTP POST` enviando el `transaction_amount`, `payment_method_id` y el `email` recolectado:
+Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprador. Em seguida, você precisa fazer uma requisição `HTTP POST` enviando o `transaction_amount`, `payment_method_id` e o `email` obtidos:
 
 [[[
-```php 
+```php
 <?php  
 
   require_once ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
-  
-  $payment = new MercadoPago\Payment(); 
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
+  $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->description = "Title of what you are paying for"; 
+  $payment->description = "Title of what you are paying for";
   $payment->payment_method_id = "rapipago";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
-    
+
   $payment->save();
-    
+
 ?>
 ```
 ```java
@@ -109,9 +110,9 @@ Payment payment = new Payment();
 
 payment.setTransactionAmount(100)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
-      .setDescription('Title of what you are paying for') 
+      .setDescription('Title of what you are paying for')
       .setPaymentMethodId("rapipago")
-      .setPayer(new Payer("test_user_19653727@testuser.com")); 
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
 
@@ -121,16 +122,16 @@ payment.save();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var payment_data = { 
+var payment_data = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: 'Title of what you are paying for', 
+  description: 'Title of what you are paying for',
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com'
   }
 };
-  
+
 mercadopago.payment.create(payment_data).then(function (data) {
   // Do Stuff...
 }).catch(function (error) {
@@ -146,18 +147,18 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.new()
 payment.transaction_amount = 100
 payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Title of what you are paying for' 
+payment.description = 'Title of what you are paying for'
 payment.payment_method_id = "rapipago"
-payment.payer = { 
+payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
 
 payment.save()
 
-``` 
+```
 ]]]
 
-Respuesta:
+Resposta:
 
 ```json
 {
@@ -176,51 +177,49 @@ Respuesta:
     }
 }
 ```
+Você receberá uma resposta com o `status` **pending** até que o comprador efetue o pagamento.
 
-Recibirás una respuesta con un `status` **pending** hasta que el comprador realice el pago.
-
-En el campo `external_resource_url` tienes una url que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el link para acceda.
-
-> NOTE
->
-> Nota
->
-> Tu comprador tiene entre **3** a **5** días para pagar dependiendo del medio de pago. Luego de estas fechas **debes** cancelarlo.
-
-## Cancelar un pago
-
-Únicamente puedes cancelar pagos que se encuentren en un estado `pending` o `in_process`.
-
-Los pagos de medios en efectivo deben ser pagados entre los 3 a 7 días dependiendo del vencimiento de cada uno.
-
-El vencimiento de estos no es automático, por lo cuál es necesario que ejecutes la [cancelación del pago](#) luego del vencimiento.
-
-Puedes ver el [listado de vencimientos completo](#).
-
-## Tiempos de acreditación del pago
-
-Cada medio de pago tiene su propia fecha de acreditación, en algunos casos esta es inmediata y en otros la demora es de hasta 3 días hábiles.
-
-Recomendamos revisar los [tiempos de acreditación por medio de pago](#).
-
-## Devoluciones
-
-Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Refunds*. Todas las devoluciones de medios de pago en efectivo son devueltas en la cuenta de Mercado Pago de tu comprador.
-
-Si este no cuenta con una, recibirá un email en la dirección enviada en el pago con instrucciones de cómo retirar su dinero.
-
-Para más información puedes ver el artículo sobre [devoluciones](#).
-
-## Integrar Webpay (Chile)
-
-Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes el **RUT**, **tipo de persona**, **dirección IP** del comprador, y la **institución financiera** que procesará el pago. 
+O campo `external_resource_url` possui uma URL que contém as instruções para que o comprador possa pagar. Você pode redirecioná-lo ou enviar o link para acesso.
 
 > NOTE
 >
 > Nota
 >
-> Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
+> O comprador tem de **3** a **5** dias para pagar, dependendo do meio de pagamento. Após essas datas, **você deve** cancelá-lo.
 
+## Cancele um pagamento
+
+Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`.
+
+As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 7 dias dependendo de cada caso.
+
+O vencimento não é automático, então é necessário que efetue o [cancelamento do pagamento](#) logo após o vencimento.
+
+Veja a [lista completa de vencimentos](#).
+
+## Prazo de aprovação dos pagamentos
+
+Cada meio de pagamento tem a sua própria data de aprovação, em alguns casos é imediata e, em outros a espera é de até 3 dias úteis.
+
+Recomendamos que verifique os [prazos de aprovação por meio de pagamento](#).
+
+## Devoluções
+
+Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas as devoluções dos meios de pagamento em dinheiro são feitas na conta do MercadoPago do seu comprador.
+
+Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
+
+Para mais informações, consulte a seção sobre [devoluções](#).
+
+## Integrar o Webpay (Chile)
+
+O Webpay é um dos meios de pagamento disponíveis no Chile. Para processar os pagamentos com Webpay, é necessário enviar o **RUT**, o **tipo de pessoa**, o **endereço de IP** do comprador e a **instituição financeira** que processará o pagamento.
+
+> NOTE
+>
+> Nota
+>
+> Veja todas as instituições financeiras (_financial\_institutions_) disponíveis por meio do recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
 
 ```json
 {
@@ -237,13 +236,13 @@ Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pa
 }
 ```
 
-Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **webpay**, el `identification number` y el `financial_institution`:
+Para gerar o pagamento utilizando Webpay envie o `payment_method_id` **webpay**, o `identification number` e a `financial_institution`:
 
 ```php
 <?php
 
 require_once ('mercadopago.php');
-MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']); 
+MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;
@@ -262,10 +261,10 @@ $payment->transaction_details = array(
 $payment->additional_info = array(
 		"ip_address" => "127.0.0.1"
 	);
-$payment->callback_url = "http://www.your-site.com"; 
+$payment->callback_url = "http://www.your-site.com";
 $payment->payment_method_id = "webpay";
 
-$payment->save(); 
+$payment->save();
 
 ?>
 ```
@@ -285,8 +284,8 @@ AdditionalInfo additionalInfo = new AdditionalInfo();
 additionalInfo.ipAddress = "127.0.0.1";
 
 Payment payment = new Payment();
-payment.setTransactionAmount(10000) 
-      .setDescription('Title of what you are paying for') 
+payment.setTransactionAmount(10000)
+      .setDescription('Title of what you are paying for')
       .setPayer(payer)
       .setTransactionDetails(transactionDetails)
       .additionalInfo(additionalInfo)
@@ -359,9 +358,9 @@ payment.save();
 >
 > Nota
 >
-> Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas).
+> Os `entity_type` esperados são `individual` (Pessoa Física) ou `association` (Pessoa Jurídica).
 
-La respuesta que recibirás:
+A resposta que receberá:
 
 ```json
 {
@@ -387,4 +386,4 @@ La respuesta que recibirás:
 }
 ```
 
-Dirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](/guides/notifications/webhooks.es.md).
+Direcione seu cliente para a URL que encontrará no atributo `external_resource_url` dentro do `transaction_details` da resposta. Ao finalizar o pagamento, você será redirecionado a `callback_url` que indicar, e obterá o resultado do pagamento via [Webhooks](/guides/notifications/webhooks.pt.md).
