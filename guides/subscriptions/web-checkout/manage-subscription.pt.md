@@ -1,25 +1,16 @@
----
-sites_supported:
-    - mla
-    - mlb
-    - mlm
----
+# Gerencie uma assinatura
 
+Índice:
 
-# Gestionando una subscripción
+1. [Atualizar o preço de uma assinatura](#Atualizar-o-preço-de-uma-assinatura).
+2. [Pausar e reativar uma assinatura](#Pausar-e-reativar-uma-assinatura).
+3. [Cancelar uma assinatura](#Cancelar-uma-assinatura).
 
-Índice de contenido:
+## Atualizar o preço de uma assinatura
 
-1. [Actualizar el monto de una subscripción](#actualizar-el-monto-de-una-subscripción).
-2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripción).
-3. [Cancelar una subscripción](#cancelar-una-subscripción).
+Você poderá alterar o preço das assinaturas a qualquer momento. A partir do momento que fizer a atualização, o novo preço será cobrado nos próximos débitos de seus clientes.
 
-
-## Actualizar el monto de una subscripción
-
-Puedes cambiar el monto de las subscripciones en cualquier momento. A partir del momento en que realices la actualización, se cobrará el nuevo monto a los próximos débitos de tus _customers_.
-
-Para cambiar el monto de una subscripción debes hacerlo de la siguiente manera:
+Para alterar o valor de uma assinatura você deve fazer o seguinte:
 
 [[[
 ```php
@@ -71,7 +62,7 @@ curl -X PUT \
 
 
 
-**Respuesta:**
+**Resposta:**
 
 
 HTTP status code: 200 OK
@@ -89,15 +80,15 @@ HTTP status code: 200 OK
 }
 ```
 
-Además, puedes hacerlo directamente desde el sitio de Mercado Pago. Accede a la sección subscripciones, selecciona los usuarios necesarios y confirma la acción.
+Além disso, você pode fazer isso diretamente no site do MercadoPago. Acesse a seção de assinaturas, selecione os usuários e confirme a ação.
 
-## Pausar y reactivar una subscripción
+## Pausar e reativar uma assinatura
 
-Puedes pausar las subscripciones en cualquier momento. De este modo, no se les cobrará a tus usuarios hasta que las reactives.
+Você pode pausar as assinaturas a qualquer momento. Assim, seus usuários não são cobrados até que você reative as assinaturas.
 
-> Tus subscriptores recibirán un e-mail informándoles de la pausa o reactivación de la subscripción.
+> Seus assinantes receberão um e-mail informando-os sobre a pausa ou reativação da assinatura.
 
-Para pausar una subscripción debes hacerlo de la siguiente manera:
+Para pausar uma assinatura você deve fazer o seguinte:
 
 [[[
 ```php
@@ -140,7 +131,7 @@ curl -X PUT \
 ]]]
 
 
-**Respuesta:**
+**Resposta:**
 
 HTTP status code: 200 OK
 
@@ -153,7 +144,7 @@ HTTP status code: 200 OK
 }
 ```
 
-Para reactivar una subscripción debes hacerlo de la siguiente manera:
+Para reativar uma assinatura você deve fazer o seguinte:
 
 
 [[[
@@ -198,7 +189,7 @@ curl -X PUT \
 
 
 
-**Respuesta:**
+**Resposta:**
 
 HTTP status code: 200 OK
 
@@ -215,14 +206,13 @@ HTTP status code: 200 OK
 >
 > Importante
 >
-> los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda.
+> Os períodos transcorridos durante a pausa da assinatura não serão cobrados, mas a assinatura continuará executando a agenda.
 
-## Cancelar una subscripción
+## Cancelar uma assinatura
 
-Puedes cancelar las subscripciones en cualquier momento. De este modo, se dejará de cobrar a tus clientes.
+Você pode cancelar assinaturas a qualquer momento. Assim, seus clientes não serão mais cobrados.
 
-Para cancelar una subscripción debes hacerlo de la siguiente manera:
-
+Para cancelar uma assinatura você deve fazer o seguinte:
 
 [[[
 ```php
@@ -265,7 +255,7 @@ curl -X PUT \
 ]]]
 
 
-**Respuesta:**
+**Resposta:**
 
 HTTP status code: 200 OK
 

@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+---
+
+
 # Creando una subscripción
 
 Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
