@@ -88,7 +88,7 @@ HTTP status code: 200 OK
 }
 ```
 
-In addition, you can do it directly from MercadoPago website. Go to the subscriptions section, select the users and confirm the action.
+In addition, you can do it directly from Mercado Pago website. Go to the subscriptions section, select the users and confirm the action.
 
 ## Pause and reactivate subscriptions
 

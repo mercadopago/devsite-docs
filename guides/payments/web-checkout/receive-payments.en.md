@@ -11,7 +11,7 @@ A payment preference contains all the information about the product or service t
 - Payment methods accepted.
 - Reference ID of your system.
 
-To create a payment preference you must install [MercadoPago SDK](https://github.com/mercadopago) and set up your [credentials](https://www.mercadopago.com/mla/account/credentials?type=basic).
+To create a payment preference you must install [Mercado Pago SDK](https://github.com/mercadopago) and set up your [credentials](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 [[[
 ```php
@@ -40,7 +40,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
 ]]]
 
-Luego, deberás agregar los atributos de tu preferencia de pago:
+Then you must add the attributes of your payment preference:
 
 [[[
 ```php
@@ -286,7 +286,7 @@ To learn more about it, go to [Notificacions](/guides/notifications/ipn.en.md).
 
 The payment methods available for payments in cash must be paid from 3 to 5 days depending on each one.
 
-They **do not expire automatically**, so you’re required to [cancel the paymeny](/guides/account/refunds-and-cancellations.en.md) luego del vencimiento.
+They **do not expire automatically**, so you’re required to [cancel the payment](/guides/account/refunds-and-cancellations.en.md) after expiration.
 
 
 ## 5. Test the integration
@@ -295,4 +295,4 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Tests](/guides/payments/web-checkout/testing.en.md)section.
+For more information, go to the [Tests](/guides/payments/web-checkout/testing.en.md) section.

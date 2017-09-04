@@ -2,7 +2,6 @@
 
 In payment preferences, you can not only send information about the item to be paid, and the buyer’s, but also set the payment methods you do not want to accept, the return URL to your website after the payment, shipping options, etc.  
 
-
 ### Set payment types and methods
 
 By default, we offer all payment methods available for the country where you are running the integration. If your business model does not support any of these [payment types](#localización), or you [do not want to accept any particular method](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), you can exclude it when creating the payment preference.
@@ -203,4 +202,4 @@ If you want to prevent access to the payment preference for making a payment aft
 ```
 
 
-To learn more about the preference attributes, [check the API docs](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/)
+To learn more about the preference attributes, [check the API docs](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/).

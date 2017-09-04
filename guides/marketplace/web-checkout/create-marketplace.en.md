@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the [Checkout](/guides/payments/web-checkout/introduction.en.md)implemented.
+> * Have the [Checkout](/guides/payments/web-checkout/introduction.en.md) implemented.
 
 To begin, you need to:
 

@@ -16,14 +16,15 @@ We are [PCI DSS](https://www.pcisecuritystandards.org/) certified, which guarant
 ## How does it work?
 
 ![imagen](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
-v
+
 It is very easy to integrate the checkout:
+
 1.	Include the SDK in your project.
 2.	Enter your credentials and create the payment preference.
 3.	Start the payment process with a button on your website.
 4.	Get to know when a payment is made through the notifications we send you.
 
-## Use MercadoEnvíos
+## Use Mercado Envíos
 
 We solve everything for you! Receive the payment for the product and shipping costs in the same transaction.
 

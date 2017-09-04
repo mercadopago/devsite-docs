@@ -15,7 +15,7 @@ Subscribe your customers to receive payments in a periodic and automated way.
 > Prerequisites
 >
 > * Have the [card information capture](/guides/payments/receiving-payment-by-card.en.md) implemented.
-> * Store[customers and cards](/guides/payments/customers-and-cards.en.md).
+> * Store [customers and cards](/guides/payments/customers-and-cards.en.md).
 
 
 ## 1. Create a subscription plan
