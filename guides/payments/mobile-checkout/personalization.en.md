@@ -154,7 +154,7 @@ Also you can set a default amount of installments, which will automatically be s
 
 Flow preference allows you to set and customize the payment flow to offer your users the best payment experience.
 
-In the `FlowPreference`class you can set if you want to display or not a step which shows a resume of what is going to be paid (review and confirm step), or the discount communications et.
+In the `FlowPreference`class you can set if you want to display or not a step which shows a summary of what is going to be paid (review and confirm step), or the discount communications et.
 
 To add to checkout the configurations done in `FlowPreference`class, you should create an instance of this class and add it to the checkout initialization as shown below:
 
