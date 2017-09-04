@@ -195,15 +195,15 @@ You can only cancel payments whose status `pending` or `in_process`.
 
 The payment methods available for payments in cash should be paid from 3 to 7 days depending on each one.
 
-They do not expire automatically, so you’re required to [cancel the payment](#) after expiration.
+They do not expire automatically, so you’re required to [cancel the payment](/guides/manage-account/cancellations-and-refunds.es.md) after expiration.
 
-You can view the [complete list of expiration periods](#).
+You can view the [complete list of expiration periods](https://www.mercadopago.com.ar/activities).
 
 ## Payment confirmation period
 
 Each payment method has their own confirmation period, in some cases it is done immediately, but it may also take up to 3 business days.
 
-We recommend you check the [confirmation period by payment method](#).
+We recommend you check the [confirmation period by payment method](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221).
 
 ## Refunds
 
@@ -211,7 +211,7 @@ If you need to make a refund to your buyer, you can do it with the Refunds API. 
 
 If your buyer doesn’t have one, you will receive an email at the address sent with the payment with instructions on how to withdraw the refund.
 
-For more information, go to [Refunds](#).
+For more information, go to [Refunds](/guides/manage-account/cancellations-and-refunds.es.md).
 
 ## Integrate Webpay (Chile)
 
