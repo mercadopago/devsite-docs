@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - global
+---
+
 # Crie uma assinatura
 
 Inscreva seus clientes para receber pagamentos de forma periódica e automatizada.

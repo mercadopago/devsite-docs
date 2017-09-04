@@ -1,3 +1,12 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - global
+---
+
+
 # Gestionando una subscripción
 
 Índice de contenido:

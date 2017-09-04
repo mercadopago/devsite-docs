@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - global
+---
+
 # Create subscriptions
 
 Subscribe your customers to receive payments in a periodic and automated way.

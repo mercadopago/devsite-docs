@@ -1,3 +1,12 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - global
+---
+
+
 # Teste sua integração
 
 Você pode testar sua integração antes de partir para produção, a fim de realizar os ajustes necessários. Para isso, você pode utilizar cartões de teste e simular as diferentes respostas de pagamentos, sem ter que utilizar um cartão verdadeiro.

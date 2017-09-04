@@ -1,3 +1,12 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - global
+---
+
+
 # Test your integration
 
 You can test your integration before going into production, in order to check the operation and make all the adjustments you need. For this, you can use test cards and simulate different payment responses, without having to use a real card.
