@@ -11,6 +11,18 @@ En este repositorio esta alojado el contenido mostrado en nuestro sitio para des
 > - Venezuela: https://beta.mercadopago.com.ve/developers
 > - Colombia: https://beta.mercadopago.com.co/developers
 
+## Nomenclatura y Estructura de Carpetas ##
+
+```
+
+    /guides             /payments/api/             introduction     .es     .md 
+
+    ^^^^^^^             ^^^^^^^^^^^^^^            ^^^^^^^^^^^^^     ^^^^    ^^^^
+Pagina Principal          Jerarquia               Identificador     Idioma  Formato
+                         en el Sidebar            de la Pagina
+
+```
+
 ## Para contribuir: ##
 
 1. Hacer un fork de este repositorio.
@@ -25,7 +37,7 @@ En este repositorio esta alojado el contenido mostrado en nuestro sitio para des
 - **Traducciones**, Los issues pendientes de traduccion seran marcados con el Tag (Missing Translation) para su facil identificacion.
 - **Correccion de estilo**, Si identificas algun error gramatical o el contenido se muestra poco claro y crees que puede ser mejorado, tu ayuda sera bien recibida.
 - **Correccion de Snippets**, Si identificas algun snippet de codigo que no esta funcionando adecuadamente o no retorna los resultados que se indican en la documentacion los ajustes o correcciones son bienvenidos.
-- **Reporte de Bugs y contenido deprecado**, Si el contenido que mostramos en el sitio deja de ser valido o muestra informacion no valida, los reportes seran atendidos con prontitud, usar el Tag (Bug) para que sean faciles de identificar.
+- **Reporte de Bugs y contenido deprecado**, Si el contenido que mostramos en el sitio deja de estar actualizado o muestra informacion no valida, los reportes seran atendidos con prontitud, usar el Tag (Bug) para que sean faciles de identificar.
 
 ## Tengo una idea o sugerencia ##
 
