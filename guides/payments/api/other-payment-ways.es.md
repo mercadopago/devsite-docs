@@ -76,7 +76,7 @@ El resultado será un _array_ con los medios de pago y sus propiedades:
 ]
 ```
 
-## Recibí un pago con un medio de pago en efectivo
+## Recibir pagos con un medio de pago en efectivo
 
 Para poder recibir pagos de medio en efectivo solamente debes recolectar el `email` del comprador. Luego es necesario hacer un request `HTTP POST` enviando el `transaction_amount`, `payment_method_id` y el `email` recolectado:
 
@@ -193,15 +193,15 @@ En el campo `external_resource_url` tienes una url que contiene las instruccione
 
 Los pagos de medios en efectivo deben ser pagados entre los 3 a 7 días dependiendo del vencimiento de cada uno.
 
-El vencimiento de estos no es automático, por lo cuál es necesario que ejecutes la [cancelación del pago](#) luego del vencimiento.
+El vencimiento de estos no es automático, por lo cuál es necesario que ejecutes la [cancelación del pago](/guides/manage-account/cancellations-and-refunds.es.md) luego del vencimiento.
 
-Puedes ver el [listado de vencimientos completo](#).
+Puedes ver el [listado de vencimientos completo](https://www.mercadopago.com.ar/activities).
 
 ## Tiempos de acreditación del pago
 
 Cada medio de pago tiene su propia fecha de acreditación, en algunos casos esta es inmediata y en otros la demora es de hasta 3 días hábiles.
 
-Recomendamos revisar los [tiempos de acreditación por medio de pago](#).
+Recomendamos revisar los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221).
 
 ## Devoluciones
 
@@ -209,9 +209,9 @@ Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Re
 
 Si este no cuenta con una, recibirá un email en la dirección enviada en el pago con instrucciones de cómo retirar su dinero.
 
-Para más información puedes ver el artículo sobre [devoluciones](#).
+Para más información puedes ver el artículo sobre [devoluciones](/guides/manage-account/cancellations-and-refunds.es.md).
 
-----[mcl]----
+----[mcl, global]----
 
 ## Integrar Webpay (Chile)
 

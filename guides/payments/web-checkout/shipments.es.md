@@ -338,7 +338,7 @@ Para poder realizar el cálculo debes enviar:
 ### Paso 4: Imprimí la etiqueta
 
 Cada vez que recibas un pago, te llegará un _e-mail_ con un botón para imprimir la etiqueta.
-También puedes ver los [pagos pendientes de impresión]() desde tu cuenta de Mercado Pago.
+También puedes ver los [pagos pendientes de impresión](https://www.mercadopago.com.ar/account) desde tu cuenta de Mercado Pago.
 
 
 En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y despáchalo. No tendrás que pagarle nada al carrier porque las etiquetas de Mercado Envíos estarán pagas con el dinero que pagó tu comprador para el envío.
@@ -347,5 +347,4 @@ En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y desp�
 Utiliza nuestras herramientas para hacer el seguimiento.
 Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
 
-Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](../notification/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.
-
+Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](/guides/notification/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.

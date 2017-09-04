@@ -1,3 +1,12 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - global
+---
+
+
 # Prueba tu integración
 
 Puedes probar tu integración antes de salir a producción, a fin de realizar los ajustes que necesites. Para ello, puedes utilizar tarjetas de prueba y simular las distintas respuestas de pagos, sin necesidad de utilizar una tarjeta real.

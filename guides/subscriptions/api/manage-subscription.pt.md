@@ -1,3 +1,12 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - global
+---
+
+
 # Gerencie uma assinatura
 
 Índice:

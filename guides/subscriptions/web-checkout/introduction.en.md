@@ -3,6 +3,7 @@ sites_supported:
     - mla
     - mlb
     - mlm
+    - global
 ---
 
 # Introduction to subscriptions with Web Checkout

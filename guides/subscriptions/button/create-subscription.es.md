@@ -3,6 +3,7 @@ sites_supported:
     - mla
     - mlb
     - mlm
+    - global
 ---
 
 # Creando una suscripción

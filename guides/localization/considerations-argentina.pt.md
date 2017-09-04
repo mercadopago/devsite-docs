@@ -1,3 +1,9 @@
+---
+  sites_supported:
+      - mla
+      - global
+---
+
 # Considerações especiais para Argentina
 
 ## Resolução E 51/2017 para pagamentos parcelados

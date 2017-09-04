@@ -1,21 +1,32 @@
-# Devsite-docs sources
+# Contenido del sitio para desarrolladores de MercadoPago
 
-In this repository is hosted the content displayed in our devsite, to contribute:
+En este repositorio esta alojado el contenido mostrado en nuestro sitio para desarrolladores, las contribuciones son bienvenidas.
 
-1. Build your content according to the [syntax guide](https://github.com/mercadopago/devsite-docs/wiki/Syntax-guide).
-1. Create a _Pull request_ against the `master` branch. Provide your content translated in all languages supported.
-1. Tag revisors to check your content.
-1. When your pull request is merged, request a deploy to devsite team.
+> - Argentina: https://beta.mercadopago.com.ar/developers
+> - Brasil: https://beta.mercadopago.com.br/developers
+> - México: https://beta.mercadopago.com.mx/developers
+> - Uruguay: https://beta.mercadopago.com.uy/developers
+> - Perú: https://beta.mercadopago.com.pe/developers
+> - Chile: https://beta.mercadopago.cl/developers
+> - Venezuela: https://beta.mercadopago.com.ve/developers
+> - Colombia: https://beta.mercadopago.com.co/developers
 
-# Image Uploader
+## Para contribuir: ##
 
-If you need to add image to the docs, you **MUST** upload them to the Devsite Image Uploader. This tool is uploading all the images to the MercadoLibre API.
+1. Hacer un fork de este repositorio.
+2. Crear un issue con una descripcion breve sobre la contribucion.
+3. Seguir la guia (https://github.com/mercadopago/devsite-docs/wiki/Syntax-guide) para la redaccion del contenido.
+4. Crear un **Pull Request** al branch *master*, de preferencia proveer contenido traducido en los lenguajes soportados esto permitira que tu contribucion pueda verse reflejada en el sitio en menor tiempo.
+5. El contenido sera revisado y comentado por nuestro equipo, puede que te solicitemos algunas correcciones antes de aprobar la contribucion.
 
-- [http://mp-devsite-uploader.ml.com/](http://mp-devsite-uploader.ml.com/)
 
-Just upload it and copy the link you want. Don't forget to remove it if you take it out of the Application
 
-# Support
-In case of any doubts please contact:
-joel.ibaceta@mercadolibre.com
+## ¿En que puedo contribuir? ##
+- **Traducciones**, Los issues pendientes de traduccion seran marcados con el Tag (Missing Translation) para su facil identificacion.
+- **Correccion de estilo**, Si identificas algun error gramatical o el contenido se muestra poco claro y crees que puede ser mejorado, tu ayuda sera bien recibida.
+- **Correccion de Snippets**, Si identificas algun snippet de codigo que no esta funcionando adecuadamente o no retorna los resultados que se indican en la documentacion los ajustes o correcciones son bienvenidos.
+- **Reporte de Bugs y contenido deprecado**, Si el contenido que mostramos en el sitio deja de ser valido o muestra informacion no valida, los reportes seran atendidos con prontitud, usar el Tag (Bug) para que sean faciles de identificar.
 
+## Tengo una idea o sugerencia ##
+
+Crea un issue y usa el Tag (idea) para que pueda ser asignado y atendido.

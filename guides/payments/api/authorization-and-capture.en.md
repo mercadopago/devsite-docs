@@ -3,6 +3,7 @@
       - mla
       - mlb
       - mpe
+      - global
 ---
 
 # Authorization and capture

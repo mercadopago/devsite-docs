@@ -193,15 +193,15 @@ Somente é possível cancelar pagamentos que se encontrem com status `pending` o
 
 As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 7 dias dependendo de cada caso.
 
-O vencimento não é automático, então é necessário que efetue o [cancelamento do pagamento](#) logo após o vencimento.
+O vencimento não é automático, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.es.md) logo após o vencimento.
 
-Veja a [lista completa de vencimentos](#).
+Veja a [lista completa de vencimentos](https://www.mercadopago.com.ar/activities).
 
 ## Prazo de aprovação dos pagamentos
 
 Cada meio de pagamento tem a sua própria data de aprovação, em alguns casos é imediata e, em outros a espera é de até 3 dias úteis.
 
-Recomendamos que verifique os [prazos de aprovação por meio de pagamento](#).
+Recomendamos que verifique os [prazos de aprovação por meio de pagamento](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221).
 
 ## Devoluções
 
@@ -209,7 +209,10 @@ Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas a
 
 Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
 
-Para mais informações, consulte a seção sobre [devoluções](#).
+Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.es.md).
+
+
+----[mcl, global]----
 
 ## Integrar o Webpay (Chile)
 
@@ -387,3 +390,5 @@ A resposta que receberá:
 ```
 
 Direcione seu cliente para a URL que encontrará no atributo `external_resource_url` dentro do `transaction_details` da resposta. Ao finalizar o pagamento, você será redirecionado a `callback_url` que indicar, e obterá o resultado do pagamento via [Webhooks](/guides/notifications/webhooks.pt.md).
+
+------------
