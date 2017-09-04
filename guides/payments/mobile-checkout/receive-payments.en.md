@@ -173,9 +173,9 @@ You must submit your buyer’s email.
 
 ### 1. Connect your application to your server
 
-In the SDK, we offer you a class called CustomServer to make the connection to your server easier. The createPreference method makes a POST and sends the map that you have configured (preferenceMap) as the message body. Send us your base URL (https://api.yourname.com) and the URI (/create_preference) where you receive the data to create the preference.
+In the SDK, we offer you a class called CustomServer to make the connection to your server easier. The `createPreference` method makes a _POST_ and sends the map that you have configured (`preferenceMap`) as the message body. Send us your base URL (https://api.yourname.com) and the URI (/create_preference) where you receive the data to create the preference.
 
-The CustomServer will be responsible for converting your service response (which must have the same structure as that of MercadoPago) into a CheckoutPreference object, whose ID is the entry point to our checkout.
+The _CustomServer_ will be responsible for converting your service response (which must have the same structure as that of MercadoPago) into a **CheckoutPreference** object, whose ID is the entry point to our checkout.
 
 Create the preference on your server from your application with the following code:
 

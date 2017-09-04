@@ -23,6 +23,6 @@ In addition **we will provide you** with an **HTML Code** that you can include i
 
 >In Argentina, VISA cards take up to 48 hours to be processed, so your payments will remain outstanding during that period.
 
->If you want to build something more advanced and personalized, check our documentation of [Subscriptions via API.](/guides/subscriptions/api/introduction.es.md).
+>If you want to build something more advanced and personalized, check our documentation of [Subscriptions via API](/guides/subscriptions/api/introduction.es.md).
 
 ### [Create subscription button](https://www.mercadopago.com.ar/subscription-plans/create)

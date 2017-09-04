@@ -79,5 +79,6 @@ The complete process for testing the checkout is as follows:
     * **OTHE**: General decline.
 
 7. In case of retry, make sure they are carried out correctly.
-8. Check whether the notification has arrived correctly`marketplace\_fee` attribute of the payment preference.
-10. Make a refund of an approved payment
+8. Check whether the notification has arrived correctly.
+9. Check whether the payment division between the **marketplace** and the **seller’s** accounts has been done- correctly as specified in the `marketplace\_fee` attribute of the payment preference.
+10. Make a refund of an approved payment.

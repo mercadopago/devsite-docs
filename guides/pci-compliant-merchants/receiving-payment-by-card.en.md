@@ -1,6 +1,6 @@
 # Receive payments being a PCI Compliant
 
-MercadoPago allows vendors who comply with PCI standards to tokenize cards via backend.
+Mercado Pago allows vendors who comply with PCI standards to tokenize cards via backend.
 
 > WARNING
 >

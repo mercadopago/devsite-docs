@@ -11,8 +11,8 @@ sites_supported:
 >
 > Prerequisites
 >
-> * Have the [card information capture](/guides/payments/api/receiving-payment-by-card.en.md#collect-card-information)implemented.
-> * Have the [Stored Customers and Cards](/guides/payments/api/customers-and-cards.en.md)implemented.
+> * Have the [card information capture](/guides/payments/api/receiving-payment-by-card.en.md#collect-card-information) implemented.
+> * Have the [Stored Customers and Cards](/guides/payments/api/customers-and-cards.en.md) implemented.
 
 MercadoPago allows you to receive recurring payments through subscriptions.
 

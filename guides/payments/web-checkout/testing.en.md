@@ -1,26 +1,26 @@
-# Probando la Integración
+# Test the Integration
 
-Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el checkout. 
-Debes verificar que:
+Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected in the checkout.
+You should check if:
 
-+ La información del bien o servicio a pagar es correcta
-+ Se reconoce la cuenta del cliente, porque envías el email
-+ Ofreces la formas de pago que deseas
-+ Tu cliente es redireccionado correctamente luego de finalizado el pago
-+ La experiencia de pagos es la adecuada y se informa el resultado del pago
++ The information about the product or service to be paid is correct.
++ If you recognize the customer’s account to send the email.
++ It offers the payment methods you wish.
++ Your customer is correctly redirected after the payment is completed.
++ The payment experience is adequate and the payment result is reported.
 
-## ¿Cómo realizar las pruebas?
+##How to run tests?
 
-### Crea usuarios de prueba
+### Create a test user
 
-Para simular el proceso de pago de punta a punta debes crear 2 usuarios de prueba: **vendedor** y **comprador**.
+To simulate the whole payment process, you must create 2 test users: **seller** and **buyer**.
 
-Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios.
+You must make the following API request to create each of the users.
 
-Utiliza el dato *site_id* para indicar el país donde quieres realizar las pruebas. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguay: **MLU**, Perú: **MPE** y Colombia: **MCO**.
+Use the site_id to indicate the country where you want to run the test. Argentina: **MLA**, Brazil: **MLB**, Mexico: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguay: **MLU**, Peru: **MPE** y Colombia: **MCO**.
 
 ##### Request
-```curl 
+```curl
 # Get access token
 AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token' -d 'grant_type=client_credentials' -d 'client_id=CLIENT_ID' -d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
 
@@ -40,41 +40,37 @@ curl -X POST \
 }
 ```
 
-### Tarjetas de prueba
 
-| País 		| Visa 				 | Mastercard        | American Express |
+## Test cards
+
+| Country 		| Visa 				 | Mastercard        | American Express |
 | ---- 		| ---- 				 | ----------        | ---------------- |
 | Argentina  	| 4509 9535 6623 3704|5031 7557 3453 0604|3711 803032 57522 |
-| Brasil  	| 4235 6477 2802 5682|5031 4332 1540 6351|3753 651535 56885 |
+| Brazil  	| 4235 6477 2802 5682|5031 4332 1540 6351|3753 651535 56885 |
 | Chile   	| 4168 8188 4444 7115|5416 7526 0258 2580|3757 781744 61804 |
 | Colombia  	| 4013 5406 8274 6260|5254 1336 7440 3564|3743 781877 55283 |
-| México  	| 4075 5957 1648 3764|5474 9254 3267 0366|no disponible     |
-| Perú    	| 4009 1753 3280 6176|no disponible      |no disponible     |
-| Uruguay  	| 4014 6823 8753 2428|5808 8877 7464 1586|no disponible     |
-| Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|no disponible     |
+| Mexico  	| 4075 5957 1648 3764|5474 9254 3267 0366|unavailable     |
+| Peru    	| 4009 1753 3280 6176|unavailable      |unavailable     |
+| Uruguay  	| 4014 6823 8753 2428|5808 8877 7464 1586|unavailable     |
+| Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|unavailable     |
 
+### Perform the corresponding tests
 
+The complete process for testing the checkout is as follows:
 
-
-
-### Realiza las pruebas correspondientes
-
-El proceso completo para probar el checkout es el siguiente:
-
-1. Inicia sesión de Mercado Pago con el **vendedor** y toma las [credenciales](https://www.mercadopago.com/mla/account/credentials) para configurarlas en la creación preferencia de pago. 
-2. Cierra sesión de MercadoPago.
-3. Envía el mail del **comprador** en la preferencia de pago.
-4. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 4 dígitos aleatorios para tarjetas Amex o 3 para cualquier otra.
-5. En el nombre del titular de la tarjeta puedes ingresar alguno de los siguientes prefijos para probar los distintos resultados (pagos aprobados, rechazados o pendientes):
-    * **APRO**: Pago aprobado  
-    * **CONT**: Pago pendiente  
-    * **CALL**: Rechazo llamar para autorizar  
-    * **FUND**: Rechazo por monto insuficiente  
-    * **SECU**: Rechazo por código de seguridad  
-    * **EXPI**: Rechazo por fecha de expiración  
-    * **FORM**: Rechazo por error en formulario  
-    * **OTHE**: Rechazo general
-6. En caso de pago rechazado, podrás efectuar el reintento del mismo y simular algún otro resultado tal como se indica en el punto anterior.
-7. Verifica que la notificación te haya llegado correctamente.
-8. Realiza la devolución de un pago acreditado y verifica que te haya llegado la notificación con la actualización del estado del pago.
-
+1. Log in to MercadoPago with the **seller** and get the [credentials](https://www.mercadopago.com/mla/account/credentials) to configure them in the creation of the payment preference.
+2. Log out from MercadoPago.
+3. Send the **buyer's** mail in the payment preference.
+4. Complete the form, entering the digits of a test card. On the expiration date you must enter any date after the current date, as well as a 4-digit security code for Amex cards or a 3-digit security code for any other card.
+5. To test the different payment results (approved, declined or pending), enter one of the following prefixes in the cardholder name field:
+  * **APRO**: Payment approved.  
+  * **CONT**: Pending payment.  
+  * **CALL**: Payment declined, call to authorize.  
+  * **FUND**: Payment declined due to insufficient funds.  
+  * **SECU**: Payment declined by security code.  
+  * **EXPI**: Payment declined by expiration date.  
+  * **FORM**: Payment declined due to error in form.  
+  * **OTHE**: General decline.  
+6. In case of payment declined, you can retry it and simulate any other result as indicated in the previous item.
+7. Check whether the notification has arrived correctly
+8. Make a refund of an approved payment and check if you received the notification with the payment status updated.

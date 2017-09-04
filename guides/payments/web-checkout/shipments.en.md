@@ -16,7 +16,7 @@ We recommend that you integrate the shipping cost calculator in your checkout.
 
 [Activate your account](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) entering your address. It must be the shipping address and it will be used to calculate the shipping cost.
 
-### Step 2: Add Mercad oEnvíos to your checkout
+### Step 2: Add Mercado Envíos to your checkout
 
 Enter the dimensions and weight of your products in the payment preference.
 
@@ -159,7 +159,7 @@ Check out the [shipping method IDs](https://api.mercadolibre.com/sites/MLA/shipp
 
 #### Integrate in the Checkout
 
-See below an example of Checkout with MercadoEnvíos:
+See below an example of Checkout with Mercado Envíos:
 
 
 [[[

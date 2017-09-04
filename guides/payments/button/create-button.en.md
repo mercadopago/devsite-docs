@@ -1,20 +1,22 @@
-# Recibir pagos
+# Receive Payments
 
-Desde tu cuenta de Mercado Pago, [tienes la opción de generar un botón o link](https://www.mercadopago.com.ar/tools/create) que le puedes enviar a tu comprador para que pueda efectuar el pago. No necesitas saber de programación.  
+On your Mercado Pago account, [you have the option to create a link](https://www.mercadopago.com.ar/tools/create) to be sent to your buyer for making the payment.
 
-El sistema te guiará para que puedas configurar:
+You do not need to know programming.
 
-* Precio, descripción y foto de lo que vendes.
-* Si deseas utilizar envíos o no **(Mercado Envíos)**.
-* Medios de pago que aceptas: tarjetas de crédito o débito y pagos en efectivo.
-* Fecha entre las que deseas permitir el pago.
-* Código de referencia para identificar la venta en tu backend.
-* Url de redireccion hacia tu sitio web.
+We will guide you so that you can set the:
 
-Con ésta configuración **obtendrás un link** que puedes enviar por e-mail, publicar en redes sociales, o donde quieras.
+* Price, description and photo of what you sell.
+* If you want to use **(Mercado Envíos)**.
+* Payment methods accepted: credit or debit cards and payments in cash.
+* Date in which payments are allowed.
+* Reference code to identify the sale on your backend.
+* URL redirecting to your website.
 
-Ingresando en este link, tus compradores serán redirigidos a un formulario de pago donde verán los datos que configuraste y podrán elegir cómo pagar. Pueden realizar el pago como invitados, sin necesidad de tener una cuenta de Mercado Pago.
+With this configuration, **you will get a link** that you can send by e-mail, post on social networks, or wherever you want.
 
-Además te brindaremos un **código HTML** que puedes incluir en tu sitio web y un **código QR**  para que tus clientes puedan escanearlo con su celular.
+By clicking on this link, your buyers will be redirected to the checkout where they will see the information that you have configured and will be able to choose how to pay. They can make the payment without the need for a MercadoPago account.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](/guides/payments/web-checkout/introduction.en.md)** o **[API](/guides/payments/api/introduction.en.md)**.
+In addition, we will provide you with an **HTML Code** you can include in your website and a **QR Code** you can share with your customers.
+
+If you want to build something more advanced and personalized, check our **[Web Checkout](/guides/payments/web-checkout/introduction.en.md)** or **[API](/guides/payments/api/introduction.en.md)** documentation.
