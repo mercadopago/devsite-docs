@@ -35,7 +35,7 @@ Oferce un checkout completamente personalizado para tu negocio mediante nuestro 
 
 - Control completo de la experiencia de pagos
 - Almacenar tarjetas par aun pago rapido.
-- Acepta pagos en efectivo, transferencias bancarias y dinero en cuenta ademas de las tarjetas de debito y credito. 
+- Acepta pagos en efectivo y dinero en cuenta ademas de las tarjetas de debito y credito. 
 - Acepta cupones de descuento de mercadopago. 
 * Aceptar pagos con 2 medios <sup>*</sup> 
 
