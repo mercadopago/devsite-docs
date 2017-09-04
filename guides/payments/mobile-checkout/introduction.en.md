@@ -32,7 +32,7 @@ Add the following code in the file **build.gradle**.
 Alternatively, you can [download the SDK](https://github.com/mercadopago/px-android/releases) and add it to your project.
 ===
 dependencies {
-   compile 'com.mercadopago:sdk:3.2.0'
+   compile 'com.mercadopago:sdk:3.4.0'
 }
 ```
 ```ios
@@ -44,6 +44,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 # Se necesita este parámetro por ser una SDK en swift
 use_frameworks!
 platform :ios, '8.0'
-pod 'MercadoPagoSDK', '3.2.1'
+pod 'MercadoPagoSDK', '3.4.0'
 ```
 ]]]
