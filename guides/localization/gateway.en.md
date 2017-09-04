@@ -1,52 +1,52 @@
 # Gateway
 
-La disponibilidad del procesamiento en modalidad Gateway de Mercado Pago, varía según cada país.
+Gateway mode Availability may vary by country.
 
-## Disponibilidad por solución
+## Availability by solution
 
-Solución                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
+Solution                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
 :---------------------- |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
-Botón de pago           |      |      |      |      |      |      |      |      |
+Payment button          |      |      |      |      |      |      |      |      |
 Checkout                |      |      |      |      |      |      |      |      |
 API                     | ✔    | ✔    |      | ✔    |      |      |      |      |
 
-## Disponibilidad por servicio
+## Availability by service
 
-Servicio                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
+Service                 | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
 :---------------------- |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
-Procesamiento           | ✔    | ✔    |      | ✔    |      |      |      |      |
-Scoring Automático      | ✔    | ✔    |      | ✔    |      |      |      |      |
-Revisión manual         | ✔    | ✔    |      | ✔    |      |      |      |      |
+Processing              | ✔    | ✔    |      | ✔    |      |      |      |      |
+Automatic scoring       | ✔    | ✔    |      | ✔    |      |      |      |      |
+Manual review           | ✔    | ✔    |      | ✔    |      |      |      |      |
 
-## Disponibilidad por producto
+## Availability by product
 
 ### Argentina
 
-Producto      | Solución        | Disponible
+Product       | Solution        | Available
 :------------ |:--------------- |:------------------- |
-Pagos         | Botón de pago   | 
-Pagos         | Web Checkout    | 
-Pagos         | Mobile Checkout | 
-Pagos         | API             | ✔
-Suscripciones | Botón de pago   | 
-Marketplace   | Checkout        | 
-Marketplace   | API             | 
+Payments      | Payment button  |
+Payments      | Web Checkout    |
+Payments      | Mobile Checkout |
+Payments      | API             | ✔
+Subscriptions | Payment button  |
+Marketplace   | Checkout        |
+Marketplace   | API             |
 
 ### Colombia
 
-Producto      | Solución        | Disponible
+Product       | Solution        | Available
 :------------ |:--------------- |:------------------- |
-Pagos         | Botón de pago   | 
-Pagos         | Web Checkout    | 
-Pagos         | Mobile Checkout | 
-Pagos         | API             | ✔
-Marketplace   | Web Checkout    | 
-Marketplace   | API             | 
+Payments      | Payment button  |
+Payments      | Web Checkout    |
+Payments      | Mobile Checkout |
+Payments      | API             | ✔
+Marketplace   | Web Checkout    |
+Marketplace   | API             |
 
-## Disponibilidad por adquirente
+## Availability by acquirer
 
-| País          | Adquirente                                          |
+| Country       | Acquirer                                          |
 | :------------ | :-------------------------------------------------- |
 | ARG           | Visa, First Data, American Express, Cabal, Naranja, Shopping, Nevada
 | BRA           | Cielo
-| COL           | Cualquier banco
+| COL           | Any bank

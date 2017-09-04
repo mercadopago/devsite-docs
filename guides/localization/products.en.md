@@ -1,6 +1,6 @@
 # Products
 
-The products offered by MercadoPago may vary by country.
+The products offered by Mercado Pago may vary by country.
 
 ## Availability by country
 
@@ -29,17 +29,17 @@ The products offered by MercadoPago may vary by country.
 | API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
 
 
-## Funcionalidades de API por país
+## API features by country
 
-A continuación un listado de funcionalidades especificas de nuestra API por país:
+API features for each country are shown below:
 
-|      Funcionalidad      |                  ARG                   | BRA | CHL | COL | MEX | PER | URY | VEN |
+|      Feature      |                  ARG                   | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :---------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Autorización y captura  | ✔                                      | ✔   |     |     |     | ✔   |     |     |
-| Captura por monto menor | ✔                                      | ✔   |     |     |     |     |     |     |
-| Reembolsos              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
-| Reembolsos parciales    | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
-| Pagos sin CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
+| Authorization and capture  | ✔                                      | ✔   |     |     |     | ✔   |     |     |
+| Capture by smaller amount | ✔                                      | ✔   |     |     |     |     |     |     |
+| Refunds              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
+| Partial refunds    | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
+| Payments without CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
 | Soft descriptor         | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |
 
 
