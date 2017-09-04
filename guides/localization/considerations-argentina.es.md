@@ -1,3 +1,9 @@
+---
+  sites_supported:
+      - mla
+      - global
+---
+
 # Consideraciones especiales para Argentina
 
 ## Resolución E 51/2017 para pagos en cuotas
@@ -117,13 +123,13 @@ Utilizaremos la librería de Mercado Pago para consultar el recurso `installment
             payerCosts = response[0].payer_costs;
         fragment.appendChild(option);
         for (var i = 0; i < payerCosts.length; i++) {
-            option = new Option(payerCosts[i].recommended_message || payerCosts[i].installments, payerCosts[i].installments); 
+            option = new Option(payerCosts[i].recommended_message || payerCosts[i].installments, payerCosts[i].installments);
             var tax = payerCosts[i].labels;
             if(tax.length > 0){
               for (var l = 0; l < tax.length; l++) {
                 if (tax[l].indexOf('CFT_') !== -1){
-                  option.setAttribute('data-tax', tax[l]); 
-                } 
+                  option.setAttribute('data-tax', tax[l]);
+                }
               }
             }
             fragment.appendChild(option);

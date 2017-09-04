@@ -76,7 +76,7 @@ El resultado será un _array_ con los medios de pago y sus propiedades:
 ]
 ```
 
-## Recibí un pago con un medio de pago en efectivo
+## Recibir pagos con un medio de pago en efectivo
 
 Para poder recibir pagos de medio en efectivo solamente debes recolectar el `email` del comprador. Luego es necesario hacer un request `HTTP POST` enviando el `transaction_amount`, `payment_method_id` y el `email` recolectado:
 
@@ -211,7 +211,7 @@ Si este no cuenta con una, recibirá un email en la dirección enviada en el pag
 
 Para más información puedes ver el artículo sobre [devoluciones](/guides/manage-account/cancellations-and-refunds.es.md).
 
-----[mcl]----
+----[mcl, global]----
 
 ## Integrar Webpay (Chile)
 

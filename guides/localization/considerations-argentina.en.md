@@ -1,3 +1,9 @@
+---
+  sites_supported:
+      - mla
+      - global
+---
+
 # Special considerations for Argentina
 
 ## Resolution E 51/2017 for payments in installments

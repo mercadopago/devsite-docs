@@ -211,6 +211,9 @@ Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado n
 
 Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.es.md).
 
+
+----[mcl, global]----
+
 ## Integrar o Webpay (Chile)
 
 O Webpay é um dos meios de pagamento disponíveis no Chile. Para processar os pagamentos com Webpay, é necessário enviar o **RUT**, o **tipo de pessoa**, o **endereço de IP** do comprador e a **instituição financeira** que processará o pagamento.
@@ -387,3 +390,5 @@ A resposta que receberá:
 ```
 
 Direcione seu cliente para a URL que encontrará no atributo `external_resource_url` dentro do `transaction_details` da resposta. Ao finalizar o pagamento, você será redirecionado a `callback_url` que indicar, e obterá o resultado do pagamento via [Webhooks](/guides/notifications/webhooks.pt.md).
+
+------------
