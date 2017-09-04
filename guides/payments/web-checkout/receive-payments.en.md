@@ -130,13 +130,13 @@ preference.save
 ```
 ]]]
 
-### Contenido de la preferencia
+### Content of the preference
 
-Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
+The more information you send us, the faster is the payment approval and the better is the experience for your users.
 
 #### Payer
 
-Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, no se le pedirá durante el proceso de pago.
+You must submit your buyer’s `email`. If you include information such as identification type or identification number, it will not be asked during the checkout.
 
 [[[
 ```php
@@ -258,9 +258,9 @@ shipment.receiver_address = {
 ```
 ]]]
 
-## 2. Lleva a tu comprador al checkout
+## 2. Take the buyer to checkout
 
-Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
+Once the preference has been created, use the URL found in the attribute `init_point` of the response to create a payment button:
 
 ```html
 <!DOCTYPE html>

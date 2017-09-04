@@ -221,7 +221,7 @@ Webpay is one of the payment methods available in Chile. In order to process pay
 >
 > Note
 >
-> Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
+> Check all available financial institutions (_financial\_institutions_) through [payment_methods](#get-the-payment-methods-available) resource:
 
 
 ```json

@@ -8,9 +8,9 @@
 
 To begin, you need to:
 
-1. Register a Marketplace application
-2. Request your sellers to connect
-3. Create payment preferences on behalf of your sellers
+1. Register a Marketplace application.
+2. Request your sellers to connect.
+3. Create payment preferences on behalf of your sellers.
 
 ## 1. How to create your application
 
@@ -218,7 +218,7 @@ preference.save
 ]]]
 
 
-The seller will receive the difference between the total amount and the fees, both the fee of MercadoPago and the Marketplace, as well as any other amount that should be deducted from the sale.
+The seller will receive the difference between the total amount and the fees, both the fee of Mercado Pago and the Marketplace, as well as any other amount that should be deducted from the sale.
 
 ### Notifications
 
