@@ -172,7 +172,7 @@ Obtenha a lista completa de `Cards` de um cliente efetuando uma requisição `HT
 ```
 ]]]
 
-Datos de una Tarjeta Guardada:
+Dados de um cartão salvo:
 
 ```json
 [{

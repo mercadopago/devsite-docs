@@ -204,7 +204,7 @@ Em seu formulário, adicione o seguinte `input`:
 X-Device-Session-Id: device_id
 ```
 
-Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior.
+Onde `device_id` foi substituído pelo ID obtido no passo anterior.
 
 ### Implementação de dispositivos em aplicativos móveis nativos
 
