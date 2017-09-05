@@ -40,7 +40,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
 ]]]
 
-Luego, deberás agregar los atributos de tu preferencia de pago:
+Em seguida, você deve adicionar os atributos da sua preferência de pagamento:
 
 [[[
 ```php
@@ -130,13 +130,13 @@ preference.save
 ```
 ]]]
 
-### Contenido de la preferencia
+### Conteúdo da preferência
 
-Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
+Quanto mais informações você nos enviar, melhor será a aprovação dos pagamentos e a experiência de seus usuários.
 
 #### Payer
 
-Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, no se le pedirá durante el proceso de pago.
+É necessário enviar o `email` do seu comprador. Se você nos enviar dados como tipo e número de identificação, ele não será solicitado durante o processo de pagamento.
 
 [[[
 ```php
