@@ -65,13 +65,10 @@ After that, you will be able to get full information about the notified resource
 
 Type         | URL                                                | Documentation
 ------------ | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation]()
-marketplace  | /oauth/token?...                                   | [see documentation]()
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [see documentation]()
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation]()
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation]()
-
-To get your access_token, check the [Authentication]() documentation;
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/payments)
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [see documentation](/reference/plans)
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/subscriptions)
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/invoices)
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
 

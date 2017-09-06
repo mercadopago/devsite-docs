@@ -68,13 +68,10 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo         | URL                                                  | Documentação
 ------------ | -----------------------------------------------------| --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação]()
-marketplace  | /oauth/token?...                                     | [ver documentação]()
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentação]()
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação]()
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação]()
-
-Para obter seu access_token, verifique a documentação de [Autenticação]().
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](/reference/payments)
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentação](/reference/plans)
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](/reference/subscriptions)
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](/reference/invoices)
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado.
 

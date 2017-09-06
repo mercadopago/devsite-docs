@@ -43,7 +43,7 @@ Testar todos os cenários possíveis de pagamento aprovado, pendente ou recusado
     * **FORM**: Recusado por erro no formulário  
     * **OTHE**: Recusado geral.
 
-Em cada caso, deverá informar ao seu cliente o resultado do pagamento e qual o próximo passo a seguir. Para isso, você receberá um HTTP Status 201 OK informando que o pagamento foi criado corretamente e um [código de resultado]() para que possa redirecionar o cliente para a página com a mensagem correta.
+Em cada caso, deverá informar ao seu cliente o resultado do pagamento e qual o próximo passo a seguir. Para isso, você receberá um HTTP Status 201 OK informando que o pagamento foi criado corretamente e um código de resultado para que possa redirecionar o cliente para a página com a mensagem correta.
 
 ## Verifica haber recibido la notificación Webhook
 
