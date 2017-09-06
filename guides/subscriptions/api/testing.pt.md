@@ -23,8 +23,6 @@ Utilize suas credenciais de Sandbox e alguns dos cartões fornecidos abaixo, de 
 | Peru       | 4009 1753 3280 6176 | indisponível        | indisponível      |
 | Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | indisponível      |
 
-> Temos mais [cartões de teste]() disponíveis para meios de pagamentos locais de cada país.
-
 Para testar os possíveis resultados de um pagamento, utilize um dos seguintes prefixos no campo `name` do */card_tokens* ou no campo `cardholderName`:
 
 | Prefixo | Descrição                     |
@@ -38,4 +36,4 @@ Para testar os possíveis resultados de um pagamento, utilize um dos seguintes p
 | FORM    | Recusado por erro no formulário |
 | OTHE    | Recusado geral                  |
 
-Assim que finalizar seus testes e estiver pronto para receber os pagamentos de produção, você deverá substituir as [credenciais]() pelas de produção e [ativar o Modo Produção](#). **Você não precisa alterar nada mais em seu código**.
+Assim que finalizar seus testes e estiver pronto para receber os pagamentos de produção, você deverá substituir as [credenciais]((https://www.mercadopago.com/mla/account/credentials) pelas de produção e [ativar o Modo Produção](https://www.mercadopago.com/mla/account/credentials). **Você não precisa alterar nada mais em seu código**.

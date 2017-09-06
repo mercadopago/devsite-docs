@@ -24,8 +24,6 @@ Use your Sandbox credentials and any of the cards that we provide below, accordi
 | Peru       | 4009 1753 3280 6176 | not available       | not available     |
 | Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | not available     |
 
-> We have [more test cards]() available for local means of payment of each country.
-
 To test the possible results of a payment, use any of the following prefixes in the `name` field of */card_tokens* or in the `cardholderName` field:
 
 | Prefix  |                Description                  |
@@ -39,4 +37,4 @@ To test the possible results of a payment, use any of the following prefixes in 
 | FORM    | Payment declined due to error in form       |
 | OTHE    | General decline                             |
 
-As soon as you complete your tests and you are ready to receive production payments, you will have to replace the [credentials]() with the production ones and [activate the Production Mode](#). **You don’t have to change anything else in your code**.
+As soon as you complete your tests and you are ready to receive production payments, you will have to replace the [credentials]((https://www.mercadopago.com/mla/account/credentials) with the production ones and [activate the Production Mode]((https://www.mercadopago.com/mla/account/credentials). **You don’t have to change anything else in your code**.

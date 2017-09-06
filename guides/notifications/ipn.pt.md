@@ -46,10 +46,9 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação]()
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação]()
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](/reference/payments)
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](/reference/merchant_orders)
 
-> Para obter seu access_token, verifique a documentação de [Autenticação]()
 
 ### Implemente o receptor de notificações usando o seguinte código como exemplo:
 
