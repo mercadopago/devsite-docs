@@ -385,12 +385,16 @@ Si hubo algún error insalvable o el usuario abandonó el flujo, devolverá un o
 Estos son los atributos más importantes del pago:
 
 - id: Identificador del pago.
-- status: [Estados del pago.](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/)
+- status: Estados del pago.
 - payment\_method\_id: Identificador del medio de pago que eligió tu usuario.
 - payment\_type\_id: Tipo de medio elegido.
 - card: Objeto que identifica la tarjeta de tu usuario.
 - issuer_id: Identificador del banco de la tarjeta que eligió tu usuario.
 - installments: Cantidad de cuotas elegidas.
+
+Los posibles estados de un pago son:
+
+![payment-status](/images/payments-status-transitions-diagram.png)
 
 
 Podrás obtener la respuesta con el siguiente código:

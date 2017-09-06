@@ -385,12 +385,16 @@ In the event of a hard error, or if the user left the flow, it will return an ob
 These are the most important payment attributes:
 
 - id: Payment identifier.
-- status: [Payment status.](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/)
+- status: Payment status.
 - payment\_method\_id: Identifier of the payment method selected by your user.
 - payment\_type\_id: Payment type selected.
 - card: Object that identifies your user’s card.
 - issuer_id: : Identifier of the card bank selected by your user.
 - installments: Number of installments selected.
+
+The posible payment status are:
+
+![payment-status](/images/payments-status-transitions-diagram.png)
 
 You can get the response with the following code:
 

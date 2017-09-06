@@ -385,12 +385,16 @@ Se houve qualquer erro que não pôde ser evitado ou o usuário abandonou o flux
 Estes são os atributos mais importantes de pagamento:
 
 - id: Identificação do pagamento.
-- status: [Status do pagamento](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/).
+- status: Status do pagamento.
 - payment_method_id: Identificador do meio de pagamento selecionado pelo usuário.
 - payment_type_id: Tipo de meio de pagamento selecionado.
 - card: Objeto que identifica o cartão do usuário.
 - issuer_id: Identificação do banco do cartão selecionado pelo usuário.
 - installments: Número de parcelas selecionado.
+
+Os possíveis estados de um pagamento são:
+
+![payment-status](/images/payments-status-transitions-diagram.png)
 
 Você poderá obter a resposta com o seguinte código:
 
