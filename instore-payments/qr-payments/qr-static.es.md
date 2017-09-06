@@ -9,7 +9,7 @@ Te guiaremos para que puedas configurar:
 * Precio, descripción y foto de lo que vendes. 
 * Medios de pago que aceptas: tarjetas de crédito o débito.
 * Fecha entre las que deseas permitir el pago.
-* Código de referencia para identificar la venta en tu backend.
+* Código de referencia para identificar la venta en tu *backend*.
 
 Ésta alternativa es recomendada en caso de que tus ventas sean de a un producto por vez (no soporta modalidad carrito), y el precio de la venta es fijo. 
 
@@ -26,11 +26,11 @@ De ésta manera cuando tu cliente escanea se le solicitará que ingrese manualme
 
 ## Entérate de tus pagos
 
-Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones]() en tu sistema de gestión.
+Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](/guides/notifications/ipn.es.md) en tu sistema de gestión.
 
 
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado]()
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado](/guides/instore-payments/qr-payments/qr-integrated.es.md)
 
 
 
