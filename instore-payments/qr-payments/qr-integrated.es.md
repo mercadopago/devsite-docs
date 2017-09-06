@@ -124,7 +124,7 @@ Antes de salir a producción verifica los siguientes escenarios.
 
 
 | Caso 		| Escenario 				 | Respuesta de la Wallet        | 
-| ---- 		| ---- 				 | ----------        | ---------------- |
+| ---- 		| ---- 				 | ----------        |
 | 1  	| El usuario escanea un código válido antes de finalizar el pedido.|Primero debes cargar. Podrás pagar una vez que termines el pedido.|
 | 2  	| El usuario escanea un código válido durante un pedido.|Ahora estás cargando. Podrás pagar una vez que termines el pedido.|
 | 3   	| El usuario escanea un código con parámetros inválidos. (Hace referencia a un punto de venta inexistente)|Algo no salió bien. Por favor, intenta nuevamente.|
