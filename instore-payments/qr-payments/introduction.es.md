@@ -2,7 +2,15 @@
 
 
 Puedes potenciar tus ventas en el mundo físico cobrando a través de códigos QR.  
-Tus clientes utilizando la Wallet escanean el código QR y pagan utilizando sus tarjetas almacenadas o su dinero en cuenta disponible.  
+
+La applicación móvil de Mercado Pago permite a sus usuarios alamacenar en forma segura sus tarjetas de crédito, tarjetas de débito y utilizar el dinero en cuenta disponible. Sus principales funcionalidades son:
+
+* Efectuar pago de servicios.
+* Hacer recarga de celular.
+* Enviar y recibir dinero entre cuentas de Mercado Pago.
+* Pagar en tiendas en forma presencial.
+
+Tus clientes utilizando su aplicación móvil de Mercado Pago escanean el código QR y pagan utilizando sus tarjetas almacenadas o su dinero en cuenta. 
 Así puedes ofrecer en tus tiendas físicas cuotas sin interés y los beneficios que ofrece Mercado Pago.
 
 Para poder pagar, tus clientes deben descargar la App desde el store de su teléfono móvil:
