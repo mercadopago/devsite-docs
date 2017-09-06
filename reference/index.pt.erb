@@ -1,0 +1,44 @@
+<h1>API do MercadoPago </h1>
+
+<p>Oferecemos uma API robusta e flexível para que você possa se integrar Mercado Pago da maneira que melhor se adequa ao seu negócio.</p>
+
+<h2> O que é? </h2>
+
+<p>É uma interface de programação que permite trocar informações com nossa plataforma.</p>
+
+<h2>Como funciona?</h2>
+
+<p>Você pode solicitar informações, por exemplo, sobre um pagamento ou o saldo da sua conta, usando HTTP (semelhante a um navegador).
+
+Por exemplo: "Quero saber o saldo da minha conta".
+
+Para isso, você deve ir para:
+
+</p>
+
+<p><code> https://api.mercadopago.com/users/TU_ID_DE_USUARIO/mercadopago_account/balance?access_token=TU_TOKEN_DE_ACCESO </code></p>
+
+<p>E você receberá uma resposta como esta:</p>
+
+
+<div class='code-container' data-slideout-ignore>
+  <div id='editor_child' class="code_editor" language='javascript'>
+    <pre class="line-numbers"><code class='language-javascript'>
+      {
+          "user_id": TU_ID_DE_USUARIO,
+          "total_amount": 1000,
+          "available_balance": 1000,
+          .
+          .
+          .
+      }
+    </code></pre>
+  </div>
+</div>
+
+<h2> Como posso usá-lo na minha aplicação? </h2>
+
+<p> Ele envia um pedido como o anterior do idioma e da plataforma que você usa, e você receberá a resposta com os dados.
+Temos um conjunto de ferramentas para ajudá-lo com sua integração, incluindo SDKs, módulos de carrinho e aplicativos de teste.
+Se você quiser saber mais sobre a arquitetura da nossa API, não se esqueça de revisar as considerações do projeto.
+</p>

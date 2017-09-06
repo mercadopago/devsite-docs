@@ -1,0 +1,68 @@
+
+<% endpoint = APIReferenceGenerator.endpoints[locals[:endpoint]] %>
+
+<h1> <%= endpoint["name"] %> </h1>
+
+<p> <%= endpoint["description"] %> </p>
+
+
+
+<table>
+  <tbody>
+    <% endpoint["actions"].each do |action| %>
+      <tr>
+        <td> <%= action["method"] %> </td>
+        <td> <%= action["uri"] %> </td>
+        <td> <%= action["description"] %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2> Parameters </h2>
+
+<table>
+  <thead>
+    <tr>
+      <td> Attribute </td>
+      <td> Type </td>
+      <td> Descriptions </td>
+    </tr>
+  </thead>
+  <tbody>
+    <% endpoint["attributes"].each do |attribute, info| %>
+      <tr>
+        <td> <%= attribute %> </td>
+        <td> <%= info["data_type"] %> </td>
+        <td> <%= info["description"] %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2> Error Codes </h2>
+
+<table>
+  <thead>
+    <tr>
+      <td> Error </td>
+      <td> Code </td>
+      <td> Description </td>
+    </tr>
+  </thead>
+  <tbody>
+    <% endpoint["errors"].each do |error, infos| %>
+      <tr>
+        <td rowspan="<%=infos.count %>"> <%= error %> </td>
+        <td> <%= infos[0]["code"] %></td>
+        <td> <%= infos[0]["description"] %></td>
+      </tr>
+      <% (infos.count - 2).times do |t| %>
+        <tr>
+          <td> <%= infos[t+1]["code"] %></td>
+          <td> <%= infos[t+1]["description"] %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
