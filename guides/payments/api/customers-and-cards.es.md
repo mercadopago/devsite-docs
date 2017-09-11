@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
+> * Tener implementada la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#capturar-datos-de-tarjeta).
 
 Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **manera segura** para mejorar la experiencia de compra.
 
@@ -16,7 +16,7 @@ Los *customers* representan a tus clientes. Las tarjetas que almacenes serán pa
 
 Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
 
-El `token` es el que capturaste cuando estabas haciendo la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
+El `token` es el que capturaste cuando estabas haciendo la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#capturar-datos-de-tarjeta).
 
 
 > NOTE

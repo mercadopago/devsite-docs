@@ -32,4 +32,4 @@ Assim que tiver [testado sua aplicação](/guides/payments/api/testing.pt.md), v
 
 Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do sandbox pelas de produção em seu código.
 
-#### [Começar a integrar a API](/guides/payments/api/receiving-payments-by-card.es.md).
+#### [Começar a integrar a API](/guides/payments/api/receiving-payment-by-card.es.md).

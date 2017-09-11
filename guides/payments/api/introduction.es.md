@@ -33,4 +33,4 @@ Una vez que hayas [probado tu aplicación](/guides/payments/api/testing.es.md), 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 
 
-#### [Comenzar a integrar la API](/guides/payments/api/receiving-payments-by-card.es.md)
+#### [Comenzar a integrar la API](/guides/payments/api/receiving-payment-by-card.es.md)

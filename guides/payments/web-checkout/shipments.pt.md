@@ -338,7 +338,7 @@ Para fazer o cálculo, é necessário que envie:
 
 ### Passo 4: Imprima a etiqueta
 
-Toda vez que receber um pagamento, você receberá um e-mail com um botão para imprimir a etiqueta. Também é possível visualizar os [pagamentos pendentes de impressão](https://www.mercadopago.com.ar/account) na sua conta no Mercado Pago.
+Toda vez que receber um pagamento, você receberá um e-mail com um botão para imprimir a etiqueta. Também é possível visualizar os [pagamentos pendentes de impressão](https://www.mercadopago.com.ar/activities?type=collection&status=approved&shipping_or_archived=with_ME&tagME=ready_to_print) na sua conta no Mercado Pago.
 
 Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-o. Você não terá que pagar nada no correio, pois as etiquetas do MercadoEnvios já estarão pagas com o valor do frete pago pelo comprador.
 
