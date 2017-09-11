@@ -205,4 +205,4 @@ Caso não queira permitir que alguém acesse a preferência de pagamentos para e
 ```
 
 
-Para saber mais sobre os atributos da preferência, [consulte a documentação da API](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/)
+Para saber mais sobre os atributos da preferência, [consulte a documentação da API](/reference/preferences/)

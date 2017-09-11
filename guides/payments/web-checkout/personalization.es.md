@@ -205,4 +205,4 @@ Si no quieres permitir que se ingrese a la preferencia de pago para efectuar el 
 ```
 
 
-Para conocer más sobre los atributos de la preferencia, [consultá la documentación de la API](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/)
+Para conocer más sobre los atributos de la preferencia, [consultá la documentación de la API](/reference/preferences)

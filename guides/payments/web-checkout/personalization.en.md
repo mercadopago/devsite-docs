@@ -202,4 +202,4 @@ If you want to prevent access to the payment preference for making a payment aft
 ```
 
 
-To learn more about the preference attributes, [check the API docs](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/).
+To learn more about the preference attributes, [check the API docs](/reference/preferences).
