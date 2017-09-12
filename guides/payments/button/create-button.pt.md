@@ -3,12 +3,12 @@
 Na sua conta no Mercado Pago, você tem a opção para [gerar um link](https://www.mercadopago.com.ar/tools/create) que pode ser enviado ao seu comprador para que efetue o pagamento. Você não precisa saber programação.
 
 Vamos orientá-lo para que você possa configurar:
-	•	Preço, descrição e foto do que você vende.
-	•	Se quiser utilizar o **Mercado Envios**.
-	•	Meios de pagamentos aceitos: cartões de crédito ou débito e pagamentos em dinheiro.
-	•	Data a partir da qual pretende permitir o pagamento.
-	•	Código de referência para identificar a venda em seu backend.
-	•	URL de redirecionamento ao seu site.
+-	Preço, descrição e foto do que você vende.
+-	Se quiser utilizar o **Mercado Envios**.
+-	Meios de pagamentos aceitos: cartões de crédito ou débito e pagamentos em dinheiro.
+-	Data a partir da qual pretende permitir o pagamento.
+-	Código de referência para identificar a venda em seu backend.
+-	URL de redirecionamento ao seu site.
 
 Com esta configuração, você **receberá um link** que poderá enviar por e-mail, postar nas redes sociais ou onde quiser.
 
