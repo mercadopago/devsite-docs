@@ -1,9 +1,20 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mco
+      - mcl
+      - global
+---
+
 # Mercado Envios
 
 Implemente a logística do seu negócio utilizando o **Mercado Envios**.
 
-Entregamos tudo resolvido para você: Receba o pagamento do produto e do envio na mesma operação. Você só precisa imprimir a etiqueta do MercadoEnvios e enviar o pacote pelo correio!
-Oferecemos proteção em caso de estornos ou extravios no correio, sem exigir a apresentação de qualquer documentação.
+* Entregamos tudo resolvido para você: Receba o pagamento do produto e do envio na mesma operação.
+* Você só precisa imprimir a etiqueta do MercadoEnvios e enviar o pacote pelo correio!
+* Oferecemos proteção em caso de estornos ou extravios no correio, sem exigir a apresentação de qualquer documentação.
 
 ## Como funciona
 

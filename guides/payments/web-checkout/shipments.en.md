@@ -1,8 +1,20 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mco
+      - mcl
+      - global
+---
+
 # MercadoEnvíos
 
 Implement the logistics of your business with **Mercado Envíos**.
 
-We solve everything for you: Receive the payment for the product and shipping costs in the same transaction. All you should do is print the label of Mercado Envíos and take the package to the postal service. We protect you against chargebacks or losses by the postal service, without requiring the submission of documentation.
+* We solve everything for you: Receive the payment for the product and shipping costs in the same transaction.
+* All you should do is print the label of Mercado Envíos and take the package to the postal service.
+* We protect you against chargebacks or losses by the postal service, without requiring the submission of documentation.
 
 ## How does it work?
 

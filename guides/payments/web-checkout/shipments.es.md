@@ -1,8 +1,20 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mco
+      - mcl
+      - global
+---
+
 # Agregando envíos
 
 Implementa la logística de tu negocio con **Mercado Envíos**.
 
-Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación. Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. Te protegemos frente a _chargebacks_ o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
+* Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación.
+* Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. 
+* Te protegemos frente a _chargebacks_ o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
 
 ## Cómo funciona
 
