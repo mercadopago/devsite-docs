@@ -258,9 +258,9 @@ shipment.receiver_address = {
 ```
 ]]]
 
-## 2. Lleva a tu comprador al checkout
+## 2. Leve seu comprador para check-out
 
-Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
+Uma vez que a preferência é criada, use o URL que você encontra no attribute `init point` da resposta para gerar um botão de pagamento:
 
 ```html
 <!DOCTYPE html>
