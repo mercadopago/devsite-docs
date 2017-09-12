@@ -56,9 +56,9 @@ Pode ser que alguns [meios de pagamento](payment-methods.pt.md) não estejam dis
 | Pagamentos         | Web Checkout    | N/A                                                                                                                                                                                 |
 | Pagamentos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
 | Pagamentos         | API             | N/A                                                                                                                                                                                 |
-| Assinaturas | Botão de pagamento   | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
-Assinaturas | Web Checkout    | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
-Assinaturas | API             | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+| Assinaturas | Botão de pagamento   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
+Assinaturas | Web Checkout    |`naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
 | Marketplace | Web Checkout | N/A |
 | Marketplace | API          | N/A |
 

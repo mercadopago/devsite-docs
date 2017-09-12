@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the tool to [collect card information](receiving-payment-by-card.en.md#captura-los-datos-de-tarjeta) implemented.
+> * Have the tool to [collect card information](/guides/payments/api/receiving-payment-by-card.es.md#Collect-card-information) implemented.
 
 *Customers and cards* allow you to  **securely** store your customers’ card information to enhance their shopping experience.
 
@@ -16,7 +16,7 @@ This allows your customers to complete their purchases much faster, since they w
 
 To create a `Customer` and a `Card` simultaneously it is necessary to submit, at least, the email and token fields.
 
-The `token` is captured during the [collection of card information](receiving-payment-by-card.en.md#captura-los-datos-de-tarjeta).
+The `token` is captured during the [collection of card information](/guides/payments/api/receiving-payment-by-card.es.md#Collect-card-information).
 
 
 > NOTE

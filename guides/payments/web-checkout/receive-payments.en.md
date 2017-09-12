@@ -291,7 +291,7 @@ To learn more about it, go to [Notificacions](/guides/notifications/ipn.en.md).
 
 The payment methods available for payments in cash must be paid from 3 to 5 days depending on each one.
 
-They **do not expire automatically**, so you’re required to [cancel the payment](/guides/account/refunds-and-cancellations.en.md) after expiration.
+They **do not expire automatically**, so you’re required to [cancel the payment](/guides/manage-account/cancellations-and-refunds.en.md) after expiration.
 
 
 ## 5. Test the integration

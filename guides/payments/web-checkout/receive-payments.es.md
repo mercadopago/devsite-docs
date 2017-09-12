@@ -290,7 +290,7 @@ Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conoce
 
 Los medios de pago en efectivo deben ser pagados entre los 3 a 5 días dependiendo de cada uno.
 
-El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](/guides/account/refunds-and-cancellations.es.md) luego del vencimiento.
+El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](/guides/manage-account/cancellations-and-refunds.es.md) luego del vencimiento.
 
 
 ## 5. Prueba tu integración

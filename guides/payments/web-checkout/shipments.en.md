@@ -348,7 +348,7 @@ You need to send us some information to perform the calculation:
 
 ### Print the label
 
-Whenever a payment is made, you will get an email with a button to print the label. You can also view [payments pending printing](https://www.mercadopago.com.ar/account) in your Mercado Pago account.
+Whenever a payment is made, you will get an email with a button to print the label. You can also view [payments pending printing](https://www.mercadopago.com.ar/activities?type=collection&status=approved&shipping_or_archived=with_ME&tagME=ready_to_print) in your Mercado Pago account.
 
 In a box, include everything you have sold. Stick the label on the box and ship it. You do not have to pay for anything at the postal service because Mercado Envíos labels will be paid for by your buyer.
 

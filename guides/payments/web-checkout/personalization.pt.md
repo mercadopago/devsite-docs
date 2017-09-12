@@ -6,7 +6,7 @@ Na preferência de pagamentos, é possível enviar as informações do item a se
 
 ### Defina os tipos e formas de pagamento
 
-Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](#localización), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
+Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](/guides/localization/payment-methods.pt.md), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
 
 Além disso, você pode definir quais meios de pagamento ou o número de parcelas que deseja exibir por padrão, bem como o número máximo de parcelas a oferecer.
 
@@ -205,4 +205,4 @@ Caso não queira permitir que alguém acesse a preferência de pagamentos para e
 ```
 
 
-Para saber mais sobre os atributos da preferência, [consulte a documentação da API](https://www.mercadopago.com.co/developers/es/api-docs/basic-checkout/checkout-preferences/)
+Para saber mais sobre os atributos da preferência, [consulte a documentação da API](/reference/preferences/)
