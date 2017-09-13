@@ -13,7 +13,7 @@
 Implementa la logística de tu negocio con **Mercado Envíos**.
 
 * Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación.
-* Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo. 
+* Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo.
 * Te protegemos frente a _chargebacks_ o pérdidas en el correo, sin necesidad de que tengas que presentar documentación.
 
 ## Cómo funciona
@@ -359,4 +359,4 @@ En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y desp�
 Utiliza nuestras herramientas para hacer el seguimiento.
 Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
 
-Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](/guides/notification/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.
+Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](/guides/notifications/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.
