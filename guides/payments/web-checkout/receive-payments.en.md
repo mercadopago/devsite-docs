@@ -53,8 +53,8 @@ $preference = new MercadoPago\Preference();
 $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = "FAKER][COMMERCE][PRODUCT_NAME]";
-$item->quantity = 1;
-$item->currency_id = "ARS";
+$item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+$item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
 $item->unit_price = [FAKER][COMMERCE][PRICE];
 
 $payer = new MercadoPago\Payer();
@@ -74,8 +74,8 @@ Preference preference = new Preference();
 Item item = new Item();
 item.setId("1234")
     .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity(2)
-    .setCurrencyId("ARS")
+    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
@@ -93,8 +93,8 @@ preference.save();
   var item = {
     id: '1234',
     title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-    quantity: 1,
-    currency_id: 'ARS',
+    quantity: [FAKER][NUMBER][BETWEEN][1,10],
+    currency_id: '[FAKER][CURRENCY][ACRONYM]',
     unit_price: [FAKER][COMMERCE][PRICE]
   }
 
@@ -120,7 +120,7 @@ item = MercadoPago::Item.new()
 item.id = "1234"
 item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
 item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
-item.currency_id = 'ARS'
+item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
