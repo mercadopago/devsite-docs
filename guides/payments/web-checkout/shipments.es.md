@@ -359,4 +359,4 @@ En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y desp�
 Utiliza nuestras herramientas para hacer el seguimiento.
 Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
 
-Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](/guides/notification/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.
+Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](/guides/notifications/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.

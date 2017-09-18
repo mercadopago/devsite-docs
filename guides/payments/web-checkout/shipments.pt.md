@@ -358,4 +358,4 @@ Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-
 Utilize nossas ferramentas para fazer o rastreamento.
 Tanto na lista de cobranças, como através de nossas APIs, você será capaz de rastrear seus envios.
 
-Além disso, podemos notificá-lo quando um envio estiver pronto para expedição através das [notificações](/guides/notification/ipn.pt.md) enviadas dos servidores do Mercado Pago aos seus servidores. Isto lhe permitirá gerenciar seu estoque e saber o status dos pagamentos e envios.
+Além disso, podemos notificá-lo quando um envio estiver pronto para expedição através das [notificações](/guides/notifications/ipn.pt.md) enviadas dos servidores do Mercado Pago aos seus servidores. Isto lhe permitirá gerenciar seu estoque e saber o status dos pagamentos e envios.
