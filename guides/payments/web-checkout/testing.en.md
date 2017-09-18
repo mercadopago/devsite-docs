@@ -17,16 +17,24 @@ To simulate the whole payment process, you must create 2 test users: **seller** 
 
 You must make the following API request to create each of the users.
 
-Use the site_id to indicate the country where you want to run the test. Argentina: **MLA**, Brazil: **MLB**, Mexico: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguay: **MLU**, Peru: **MPE** y Colombia: **MCO**.
+Use the site_id to indicate the country where you want to run the test.
+
+| Pais  | Site_id |
+| ---- 	| ----- |
+| Argentina   | **MLA** |
+| Brazil  |  **MLB** |
+| Mexico  |  **MLM** |
+| Venezuela |  **MLV** |
+| Chile |  **MLC** |
+| Uruguay |  **MLU** |
+| Peru  |  **MPE** |
+| Colombia  |  **MCO** |
 
 ##### Request
 ```curl
-# Get access token
-AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token' -d 'grant_type=client_credentials' -d 'client_id=CLIENT_ID' -d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
-
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=$AT" \
+"https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
 -d '{"site_id":"MLA"}'
 ```
 ##### Response

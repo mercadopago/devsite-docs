@@ -17,7 +17,6 @@ Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https:
 ```php
 
 <?php  
-  require_once ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 ?>
 ```
