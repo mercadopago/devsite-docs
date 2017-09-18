@@ -33,7 +33,7 @@ Expected response:
   "payment_type_id": "credit_card",
   "status": "approved",
   "status_detail": "accredited",
-  "currency_id": "ARS",
+  "currency_id": "[FAKER][CURRENCY][ACRONYM]",
   "description": "Telefono Celular iPhone 7",
   ...,
 }

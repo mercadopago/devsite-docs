@@ -239,7 +239,7 @@ Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado
     }
 ```
 ```swift
-	let item = Item(_id: "Item_Id", title: "Remeras", quantity: 1, unitPrice: 50, description: nil, currencyId: "ARS")
+	let item = Item(_id: "Item_Id", title: "Remeras", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: 50, description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
 	let payer = Payer(_id: "Payer_Id", email: "sarasa@gmail.com", type: nil, identification: nil, entityType: nil)
 
 	let checkoutPreference = CheckoutPreference()
@@ -249,7 +249,7 @@ Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado
 
 	let servicePreference = ServicePreference()
 	servicePreference.setCreatePayment(baseURL: "https://your-base-URL.com/", URI: "your_create_preference_URI",
-    additionalInfo: ["item_id" : "id", "quantity" : 1])
+    additionalInfo: ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]])
 
 	MercadoPagoCheckout.setServicePreference(servicePreference)
 
@@ -259,7 +259,7 @@ Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado
 	   checkout.start()
 ```
 ```Objective-c
-	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:2 unitPrice:2 description:@"item description" currencyId:@"ARS"];
+	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
     Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"payer@email.com" type:nil identification:nil entityType:nil];
 
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
