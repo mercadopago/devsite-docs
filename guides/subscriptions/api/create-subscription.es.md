@@ -6,7 +6,7 @@ sites_supported:
     - global
 ---
 
-# Creando una subscripción
+# Creando una suscripción
 
 Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
@@ -18,7 +18,7 @@ Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 > * Almacenar [clientes y tarjetas](/guides/payments/customers-and-cards.es.md).
 
 
-## 1. Crea un plan de subscripción
+## 1. Crea un plan de suscripción
 
 El plan contiene la información de periodicidad de cobro y monto a cobrar.
 
@@ -121,7 +121,7 @@ HTTP status code: 201 Created
 
 ## 2. Crea un cliente y adhierele una tarjeta
 
-Para poder crear una subscripción, debes tener un `Customer` con una tarjeta adherida.
+Para poder crear una suscripción, debes tener un `Customer` con una tarjeta adherida.
 
 Revisa el artículo de [Clientes y Tarjetas](/guides/payments/api/customers-and-cards.es.md) para saber como hacerlo.
 
@@ -131,12 +131,12 @@ Algunas opciones para realizarlo son:
 
 1. [Realizar una autorización](/guides/payments/api/authorization-and-capture.es.md) por un monto bajo a la tarjeta y cancelarla luego, para confirmar que la tarjeta es válida.
 
-2. Utilizar el atributo `setup_fee`, que realizará un cobro extra al intentar subscribir a tu usuario; y sólo si dicho cobro es exitoso, se procede con el alta de la subscripción.
+2. Utilizar el atributo `setup_fee`, que realizará un cobro extra al intentar subscribir a tu usuario; y sólo si dicho cobro es exitoso, se procede con el alta de la suscripción.
 
 
 ## 3. Subscribe un customer a un plan
 
-Una subscripción es un objeto que relaciona un `Plan` y un `Customer`.
+Una suscripción es un objeto que relaciona un `Plan` y un `Customer`.
 
 Realiza un _POST_ especificando el identificador del plan y del customer a asociar:
 
@@ -204,7 +204,7 @@ curl -X POST \
 >
 > Nota
 >
-> El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de subscripciones.
+> El customer debe tener cargada una `default_card` a la cual se le cobrará, apta para pagos de suscripciones.
 
 
 **Respuesta:**
@@ -232,19 +232,19 @@ HTTP status code: 201 Created
 
 **Importante:** los cobros se realizan por adelantado. En este caso el primer cobro se realizará tan pronto subscribas a un customer, y no a mes vencido.
 
-Llegada la fecha de cobro, se creará un objeto `invoice`, el cual contendra el estado del cobro de la subscripción para ese periodo. Podrás ver los intentos de cobro en el objeto `payments` y la próxima fecha a cobrar en `next_payment_attempt`.
+Llegada la fecha de cobro, se creará un objeto `invoice`, el cual contendra el estado del cobro de la suscripción para ese periodo. Podrás ver los intentos de cobro en el objeto `payments` y la próxima fecha a cobrar en `next_payment_attempt`.
 
-## 4. Recibe información de los pagos de tus subscripciones
+## 4. Recibe información de los pagos de tus suscripciones
 
-Recibirás notificaciones ante creación o modificación de un plan, subscripción, invoice o pago.
+Recibirás notificaciones ante creación o modificación de un plan, suscripción, invoice o pago.
 
 Mercado Pago realizará su mayor esfuerzo para lograr que tus `invoices` resulten pagos, sin requerir acción alguna de tu parte.
 
 Solo deberías entregar tu producto o servicio, cuando el `invoice` para ese período tenga estado `paid`.
 
-En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces durante diez días, antes de que el `invoice` quede marcado como `unpaid`. Frente a este estado puedes pausar o cancelar la subscripción.
+En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces durante diez días, antes de que el `invoice` quede marcado como `unpaid`. Frente a este estado puedes pausar o cancelar la suscripción.
 
-Independientemente del estado del _invoice_ actual, si la subscripción se encuentra activa se creará un _invoice_ para el próximo período.
+Independientemente del estado del _invoice_ actual, si la suscripción se encuentra activa se creará un _invoice_ para el próximo período.
 
 Cada pago rechazado te será notificado mediante [Webhooks](/guides/notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
@@ -253,11 +253,11 @@ Visita la sección [Webhooks](/guides/notifications/webhooks.es.md) para más in
 
 ## Añade características especiales a tu plan
 
-Revisa el [API Doc de plans](/reference/plans) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Revisa el [API Doc de plans](/reference/plans) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
-### Limita la cantidad de cuotas de la subscripción
+### Limita la cantidad de cuotas de la suscripción
 
-Puedes indicar que las subscripciones sólo durarán un período determinado de tiempo (por ejemplo, que recibirán hasta 24 cobros):
+Puedes indicar que las suscripciones sólo durarán un período determinado de tiempo (por ejemplo, que recibirán hasta 24 cobros):
 
 ```json
 {
@@ -273,7 +273,7 @@ Puedes indicar que las subscripciones sólo durarán un período determinado de 
 
 ### Agenda los cobros para un día determinado del mes
 
-Si tu plan de subscripción es en base a meses, puedes especificar exactamente qué día del mes quieres que se realicen los cobros:
+Si tu plan de suscripción es en base a meses, puedes especificar exactamente qué día del mes quieres que se realicen los cobros:
 
 ```json
 {
@@ -287,7 +287,7 @@ Si tu plan de subscripción es en base a meses, puedes especificar exactamente q
 }
 ```
 
-Si no especificas este atributo, los cobros se agendarán para el mismo día en que realizaste el alta de la subscripción.
+Si no especificas este atributo, los cobros se agendarán para el mismo día en que realizaste el alta de la suscripción.
 
 ### Ofrece un período gratuito de prueba
 
@@ -322,9 +322,9 @@ Debes especificar el monto a cobrar al crear el plan:
 }
 ```
 
-Este pago no cancela ni forma parte del primer invoice de la subscripción.
+Este pago no cancela ni forma parte del primer invoice de la suscripción.
 
-En caso de que no podamos realizar este cobro, la subscripción no se creará.
+En caso de que no podamos realizar este cobro, la suscripción no se creará.
 
 ### Cobra una comisión por transacción
 
@@ -341,9 +341,9 @@ Si implementas [Marketplace](/guides/marketplace/api/introduction.es.md) y opera
 
 ## Próximos pasos
 
-### Gestiona tu subscripción
+### Gestiona tu suscripción
 
-En el artículo de [gestión de subscripciones](/guides/subscriptions/api/manage-subscription.es.md) encontrarás información sobre cómo pausar, reactivar o eliminar una subscripción, y también actualizar el monto de un plan.
+En el artículo de [gestión de suscripciones](/guides/subscriptions/api/manage-subscription.es.md) encontrarás información sobre cómo pausar, reactivar o eliminar una suscripción, y también actualizar el monto de un plan.
 
 ### Prueba tu integración
 

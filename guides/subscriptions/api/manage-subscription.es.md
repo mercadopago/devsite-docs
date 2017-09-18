@@ -7,13 +7,13 @@ sites_supported:
 ---
 
 
-# Gestionando una subscripción
+# Gestionando una suscripción
 
 Índice de contenido:
 
 1. [Actualizar el monto de un plan](#actualizar-el-monto-de-un-plan).
-2. [Pausar y reactivar una subscripción](#pausar-y-reactivar-una-subscripcion).
-3. [Cancelar un plan o una subscripción](#cancelar-un-plan-o-una-subscripcion).
+2. [Pausar y reactivar una suscripción](#pausar-y-reactivar-una-suscripcion).
+3. [Cancelar un plan o una suscripción](#cancelar-un-plan-o-una-suscripcion).
 
 
 ## Actualizar el monto de un plan
@@ -89,11 +89,11 @@ HTTP status code: 200 OK
 ```
 
 
-## Pausar y reactivar una subscripción
+## Pausar y reactivar una suscripción
 
-Puedes pausar las subscripciones en cualquier momento. De este modo, no se les cobrará a tus usuarios hasta que las reactives.
+Puedes pausar las suscripciones en cualquier momento. De este modo, no se les cobrará a tus usuarios hasta que las reactives.
 
-Para pausar una subscripción debes hacerlo de la siguiente manera:
+Para pausar una suscripción debes hacerlo de la siguiente manera:
 
 
 [[[
@@ -150,7 +150,7 @@ HTTP status code: 200 OK
 }
 ```
 
-Para reactivar una subscripción debes hacerlo de la siguiente manera:
+Para reactivar una suscripción debes hacerlo de la siguiente manera:
 
 
 [[[
@@ -211,11 +211,11 @@ HTTP status code: 200 OK
 >
 > Importante
 >
-> Los períodos que transcurran durante la pausa de la subscripción no serán cobrados, aunque la subscripción seguirá ejecutando su agenda. Esto significa que los `invoices` generados quedarán con un `status` en `unpaid` durante el tiempo de pausa, y no se cobrarán cuando se reactive la subscripción.
+> Los períodos que transcurran durante la pausa de la suscripción no serán cobrados, aunque la suscripción seguirá ejecutando su agenda. Esto significa que los `invoices` generados quedarán con un `status` en `unpaid` durante el tiempo de pausa, y no se cobrarán cuando se reactive la suscripción.
 
-## Cancelar un plan o una subscripción
+## Cancelar un plan o una suscripción
 
-Puedes cancelar los planes y subscripciones en cualquier momento. De este modo, se dejará de cobrar a tus customers.
+Puedes cancelar los planes y suscripciones en cualquier momento. De este modo, se dejará de cobrar a tus customers.
 
 Para cancelar un plan debes hacerlo de la siguiente manera:
 
@@ -266,7 +266,7 @@ curl -X PUT \
 >
 > Nota
 >
-> Cuando ejecutes esta acción, todas las subscripciones serán marcadas con un status `cancelled`
+> Cuando ejecutes esta acción, todas las suscripciones serán marcadas con un status `cancelled`
 
 **Respuesta:**
 
@@ -281,7 +281,7 @@ HTTP status code: 200 OK
 }
 ```
 
-Para cancelar una subscripción debes hacerlo de la siguiente manera:
+Para cancelar una suscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php

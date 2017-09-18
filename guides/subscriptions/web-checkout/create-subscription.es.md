@@ -7,20 +7,20 @@ sites_supported:
 ---
 
 
-# Creando una subscripción
+# Creando una suscripción
 
 Subscribe a tus clientes para recibir pagos de forma periódica y automatizada.
 
 
-## 1. Crea una preferencia de subscripción
+## 1. Crea una preferencia de suscripción
 
-Una preferencia de subscripción contiene todo el detalle del producto o servicio que se va a pagar de forma recurrente. Por ejemplo:
+Una preferencia de suscripción contiene todo el detalle del producto o servicio que se va a pagar de forma recurrente. Por ejemplo:
 
 1. Datos y monto de lo que se va a pagar.
-2. Frecuencia de la subscripción.
+2. Frecuencia de la suscripción.
 3. ID de referencia de tu sistema.
 
-Para crear una preferencia de subscripción debes [instalar el SDK de Mercado Pago](/plugins) con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
+Para crear una preferencia de suscripción debes [instalar el SDK de Mercado Pago](/plugins) con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
 
 [[[
 ```php
@@ -131,7 +131,7 @@ preapproval.save()
 ]]]
 
 
-> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu subscripción](#añade-características-especiales-a-tu-subscripción).
+> Estos son los datos mínimos e indispensables para crear una preferencia, pero tienes más opciones que puedes encontrar en [Añade características especiales a tu suscripción](#añade-características-especiales-a-tu-suscripción).
 
 
 ## 2. Lleva a tu comprador al checkout
@@ -150,15 +150,15 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 </html>
 ```
 
-## 3. Recibe información de los pagos de tus subscripciones
+## 3. Recibe información de los pagos de tus suscripciones
 
 Recibirás notificaciones en forma automática para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
-Mercado Pago realizará su mayor esfuerzo para lograr que tus subscripciones resulten pagas, sin requerir acción alguna de tu parte.
+Mercado Pago realizará su mayor esfuerzo para lograr que tus suscripciones resulten pagas, sin requerir acción alguna de tu parte.
 
-En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago. Frente a este estado puedes pausar o cancelar la subscripción.
+En caso de no conseguir una aprobación de pago para la fecha de cobro estipulada, reintentaremos hasta cuatro veces más durante diez días, antes de que el pago quede marcado como impago. Frente a este estado puedes pausar o cancelar la suscripción.
 
-Si la subscripción se encuentra activa se intentará cobrar en el próximo período.
+Si la suscripción se encuentra activa se intentará cobrar en el próximo período.
 
 Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
@@ -173,11 +173,11 @@ Para ello debes usar usuarios y tarjetas de prueba.
 
 Visita la sección [Probando](/guides/payments/api/testing.es.md) para más información.
 
-## Añade características especiales a tu subscripción
+## Añade características especiales a tu suscripción
 
-Revisa el [API Doc de Preapproval](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de subscripción a tu modelo de negocio.
+Revisa el [API Doc de Preapproval](#) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio.
 
-A continuación te mostramos las características más relevantes que puedes especificar al momento de crear una subscripción. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+A continuación te mostramos las características más relevantes que puedes especificar al momento de crear una suscripción. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
 ### Ofrece un período gratuito de prueba
 
@@ -195,9 +195,9 @@ Puedes ofrecer un periodo de prueba a tus clientes por una frecuencia determinad
 }
 ```
 
-### Limita la cantidad de cuotas de la subscripción
+### Limita la cantidad de cuotas de la suscripción
 
-Puedes indicar que las subscripciones sólo durarán un período determinado de tiempo:
+Puedes indicar que las suscripciones sólo durarán un período determinado de tiempo:
 
 ```json
 {
