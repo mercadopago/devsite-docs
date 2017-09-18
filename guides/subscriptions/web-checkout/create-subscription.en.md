@@ -129,7 +129,7 @@ preapproval.save()
 ]]]
 
 
-> These are the minimum and indispensable data to create a plan, but there are many other options in the section [Add special features to your subscription](#añade-características-especiales-a-tu-subscripción).
+> These are the minimum and indispensable data to create a plan, but there are many other options in the section [Add special features to your subscription](#añade-características-especiales-a-tu-suscripción).
 
 
 ## 2. Take the buyer to checkout
