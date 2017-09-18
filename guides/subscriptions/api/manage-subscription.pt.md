@@ -149,7 +149,7 @@ HTTP status code: 200 OK
 }
 ```
 
-Para reactivar una subscripción debes hacerlo de la siguiente manera:
+Para reactivar una suscripción debes hacerlo de la siguiente manera:
 
 
 [[[
