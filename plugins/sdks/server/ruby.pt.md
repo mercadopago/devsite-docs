@@ -49,7 +49,7 @@ preference_data = {
 					"title": "testCreate", 
 					"quantity": 1, 
 					"unit_price": 10.2, 
-					"currency_id": "ARS"
+					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
 				}
 			]
 		}

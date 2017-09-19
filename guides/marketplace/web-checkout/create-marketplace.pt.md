@@ -133,10 +133,10 @@ Se deseja cobrar uma comissão por cada pagamento processado pela sua aplicaçã
 $preference = new MercadoPago\Preference();
 
 $item = new MercadoPago\Item();
-$item->title = "Multicolor kite";
-$item->quantity = 1;
-$item->title = "ARS";
-$item->unit_price = 10.00;
+$item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+$item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+$item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
+$item->unit_price = [FAKER][COMMERCE][PRICE];
 
 $payer = new MercadoPago\Payer();
 $payer->email = "test_user_19653727@testuser.com";
@@ -156,13 +156,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("Multicolor kite")
-    .setQuantity(2)
-    .setCategoryId("ARS")
-    .setUnitPrice((float) 14.5);
+    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
+    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
+    .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("demo@mail.com");
+payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -176,10 +176,10 @@ preference.save();
 	var preference = {}
 
   var item = {
-    title: 'Multicolor kite',
-    quantity: 1,
-    currency_id: 'ARS',
-    unit_price: 10.5
+    title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+    quantity: [FAKER][NUMBER][BETWEEN][1,10],
+    currency_id: '[FAKER][CURRENCY][ACRONYM]',
+    unit_price: [FAKER][COMMERCE][PRICE]
   }
 
   var payer = {
@@ -203,13 +203,13 @@ preference.save();
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="Multicolor kite"
-item.quantity= 1
-item.currency_id = 'ARS'
-item.unit_price = 10.5
+item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
+item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
+item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="demo@mail.com"
+payer.email="[FAKER][INTERNET][FREE_EMAIL]"
 
 preference.items = [item]
 preference.payer = payer
