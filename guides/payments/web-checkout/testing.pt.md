@@ -18,16 +18,24 @@ Para simular o processo de pagamento do começo ao fim é necessário criar 2 us
 
 Você deve fazer a seguinte requisição à API para criar cada um dos usuários.
 
-Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPE** e Colômbia: **MCO**.
+Utilize o *site_id* para indicar o país de onde quer realizar os testes.
+
+| Pais  | Site_id |
+| ---- 	| ----- |
+| Argentina | **MLA** |
+| Brasil  | **MLB** |
+| México  | **MLM** |
+| Venezuela | **MLV** |
+| Chile | **MLC** |
+| Uruguai | **MLU** |
+| Peru  | **MPE** |
+| Colômbia  | **MCO**|
 
 ##### Request
 ```curl
-# Get access token
-AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token' -d 'grant_type=client_credentials' -d 'client_id=CLIENT_ID' -d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
-
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=$AT" \
+"https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
 -d '{"site_id":"MLA"}'
 ```
 ##### Response

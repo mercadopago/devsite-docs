@@ -19,4 +19,4 @@ By clicking on this link, your buyers will be redirected to the checkout where t
 
 In addition, we will provide you with an **HTML Code** you can include in your website and a **QR Code** you can share with your customers.
 
-If you want to build something more advanced and personalized, check our **[Web Checkout](/guides/payments/web-checkout/introduction.en.md)** or **[API](/guides/payments/api/introduction.en.md)** documentation.
+> If you want to build something more advanced and personalized, check our **[Web Checkout](/guides/payments/web-checkout/introduction.en.md)**, **[Mobile Checkout](/guides/payments/mobile-checkout/introduction.en.md)** or **[API](/guides/payments/api/introduction.en.md)** documentation.

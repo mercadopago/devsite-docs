@@ -33,4 +33,4 @@ As soon as you have [tested your application](/guides/payments/api/testing.en.md
 
 Your application will be automatically activated. All you should do is replace the sandbox keys with the production ones in your code.
 
-#### [Start integrating the API](/guides/payments/api/receiving-payments-by-card.en.md)
+#### [Start integrating the API](/guides/payments/api/receiving-payment-by-card.es.md)

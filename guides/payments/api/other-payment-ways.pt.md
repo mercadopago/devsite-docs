@@ -191,7 +191,7 @@ O campo `external_resource_url` possui uma URL que contém as instruções para 
 
 Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`.
 
-As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 7 dias dependendo de cada caso.
+As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.
 
 O vencimento não é automático, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.es.md) logo após o vencimento.
 

@@ -276,7 +276,7 @@ HTTP status code: 200 OK
 }
 ```
 
-Para cancelar una subscripción debes hacerlo de la siguiente manera:
+Para cancelar una suscripción debes hacerlo de la siguiente manera:
 
 [[[
 ```php

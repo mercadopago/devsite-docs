@@ -1,9 +1,20 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mco
+      - mcl
+      - global
+---
+
 # Mercado Envios
 
 Implemente a logística do seu negócio utilizando o **Mercado Envios**.
 
-Entregamos tudo resolvido para você: Receba o pagamento do produto e do envio na mesma operação. Você só precisa imprimir a etiqueta do MercadoEnvios e enviar o pacote pelo correio!
-Oferecemos proteção em caso de estornos ou extravios no correio, sem exigir a apresentação de qualquer documentação.
+* Entregamos tudo resolvido para você: Receba o pagamento do produto e do envio na mesma operação.
+* Você só precisa imprimir a etiqueta do MercadoEnvios e enviar o pacote pelo correio!
+* Oferecemos proteção em caso de estornos ou extravios no correio, sem exigir a apresentação de qualquer documentação.
 
 ## Como funciona
 
@@ -338,7 +349,7 @@ Para fazer o cálculo, é necessário que envie:
 
 ### Passo 4: Imprima a etiqueta
 
-Toda vez que receber um pagamento, você receberá um e-mail com um botão para imprimir a etiqueta. Também é possível visualizar os [pagamentos pendentes de impressão](https://www.mercadopago.com.ar/account) na sua conta no Mercado Pago.
+Toda vez que receber um pagamento, você receberá um e-mail com um botão para imprimir a etiqueta. Também é possível visualizar os [pagamentos pendentes de impressão](https://www.mercadopago.com.ar/activities?type=collection&status=approved&shipping_or_archived=with_ME&tagME=ready_to_print) na sua conta no Mercado Pago.
 
 Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-o. Você não terá que pagar nada no correio, pois as etiquetas do MercadoEnvios já estarão pagas com o valor do frete pago pelo comprador.
 
@@ -347,4 +358,4 @@ Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-
 Utilize nossas ferramentas para fazer o rastreamento.
 Tanto na lista de cobranças, como através de nossas APIs, você será capaz de rastrear seus envios.
 
-Além disso, podemos notificá-lo quando um envio estiver pronto para expedição através das [notificações](/guides/notification/ipn.pt.md) enviadas dos servidores do Mercado Pago aos seus servidores. Isto lhe permitirá gerenciar seu estoque e saber o status dos pagamentos e envios.
+Além disso, podemos notificá-lo quando um envio estiver pronto para expedição através das [notificações](/guides/notifications/ipn.pt.md) enviadas dos servidores do Mercado Pago aos seus servidores. Isto lhe permitirá gerenciar seu estoque e saber o status dos pagamentos e envios.

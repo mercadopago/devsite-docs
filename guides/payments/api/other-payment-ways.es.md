@@ -191,7 +191,7 @@ En el campo `external_resource_url` tienes una url que contiene las instruccione
 
 Únicamente puedes cancelar pagos que se encuentren en un estado `pending` o `in_process`.
 
-Los pagos de medios en efectivo deben ser pagados entre los 3 a 7 días dependiendo del vencimiento de cada uno.
+Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días dependiendo del vencimiento de cada uno.
 
 El vencimiento de estos no es automático, por lo cuál es necesario que ejecutes la [cancelación del pago](/guides/manage-account/cancellations-and-refunds.es.md) luego del vencimiento.
 

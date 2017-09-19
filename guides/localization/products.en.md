@@ -56,9 +56,9 @@ Certain [payment methods](payment-methods.en.md) may not be available for certai
 | Payments      | Web Checkout    | N/A                                                                                                                                                                                 |
 | Payments      | Mobile Checkout | `account_money`                                                                                                                                                                     |
 | Payments      | API             | N/A                                                                                                                                                                                 |
-| Subscriptions | Pay button      | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
-Subscriptions | Web Checkout    | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
-Subscriptions | API             | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+| Subscriptions | Pay button      | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
+Subscriptions | Web Checkout    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
 | Marketplace | Web Checkout | N/A |
 | Marketplace | API          | N/A |
 

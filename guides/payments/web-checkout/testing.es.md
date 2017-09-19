@@ -17,20 +17,43 @@ Para simular el proceso de pago de punta a punta debes crear 2 usuarios de prueb
 
 Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios.
 
-Utiliza el dato *site_id* para indicar el país donde quieres realizar las pruebas. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguay: **MLU**, Perú: **MPE** y Colombia: **MCO**.
+Utiliza el dato *site_id* para indicar el país donde quieres realizar las pruebas.
+
+| Pais  | Site_id |
+| ---- 	| ----- |
+| Argentina   | **MLA** |
+| Brasil  | **MLB** |
+| México  | **MLM** |
+| Venezuela | **MLV** |
+| Chile | **MLC** |
+| Uruguay | **MLU** |
+| Perú  | **MPE** |
+| Colombia  | **MCO** |
 
 ##### _Request_
-```curl
-# Get access token
-AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token' -d 'grant_type=client_credentials' -d 'client_id=CLIENT_ID' -d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
+[[[
+```php
+<?php
+  $body = array(
+    "json_data" => array(
+      "site_id" => "MLA"
+    )
+  );
 
+  $result = MercadoPago\SDK::post('/users/test_user', $body);
+
+  var_dump($result);
+?>
+```
+```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=$AT" \
+"https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
 -d '{"site_id":"MLA"}'
 ```
+]]]
 ##### _Response_
-```curl
+```json
 {
     "id": 123456,
     "nickname": "TT123456",
@@ -52,9 +75,6 @@ curl -X POST \
 | Perú    	| 4009 1753 3280 6176|no disponible      |no disponible     |
 | Uruguay  	| 4014 6823 8753 2428|5808 8877 7464 1586|no disponible     |
 | Venezuela  	| 4966 3823 3110 9310|5177 0761 6430 0010|no disponible     |
-
-
-
 
 
 ### Realiza las pruebas correspondientes

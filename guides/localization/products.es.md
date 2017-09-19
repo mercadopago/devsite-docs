@@ -56,9 +56,9 @@ Puede suceder que determinados [medios de pago](/guides/localization/payment-met
 | Pagos         | Web Checkout    | N/A                                                                                                                                                                                 |
 | Pagos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
 | Pagos         | API             | N/A                                                                                                                                                                                 |
-| Suscripciones | Botón de pago   | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
-Suscripciones | Web Checkout    | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
-Suscripciones | API             | `diners`, `naranja`, `nativa`, `shopping`, `cencosud`, `argencard`, `debvisa`, `debmaster`, `maestro`, `debcabal`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+| Suscripciones | Botón de pago   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
+Suscripciones | Web Checkout    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+Suscripciones | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
 | Marketplace | Web Checkout | N/A |
 | Marketplace | API          | N/A |
 

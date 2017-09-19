@@ -60,10 +60,9 @@ Escolha outro cartão ou outra forma de pagamento.                              
 
 Se houver algum erro nos dados do cartão, iremos informá-lo com os seguintes códigos, para que possa informar aos seus usuários o status e como corrigi-lo.
 
-|  status |                          status_detail                          |                                              Mensagem sugerida
-                                               |
-| :------ | :-------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
-| 106     | Cannot operate between users from different countries           | Não pode efetuar pagamentos a usuários de outros países. países.                                                             |
+|  status |                      status_detail                          |    Mensagem sugerida                               |
+| :------ | :-----------------------------------------------------------| :------------------------------------------------- |
+| 106     | Cannot operate between users from different countries           | Não pode efetuar pagamentos a usuários de outros países.                                                             |
 | 109     | Invalid number of shares for this payment\_method\_id           | O payment\_method\_id não processa pagamentos parcelados. <br/><br/> Escolha outro cartão ou outra forma de pagamento. |
 | 126     | The action requested is not valid for the current payment state | Não conseguimos processar seu pagamento.                                                                                     |
 | 129     | Cannot pay this amount with this paymentMethod                  | payment\_method\_id não processa pagamentos para o valor selecionado.<br/><br/> Escolha outro cartão ou outra forma de pagamento. |

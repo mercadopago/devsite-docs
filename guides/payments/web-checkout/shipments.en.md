@@ -1,8 +1,20 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mco
+      - mcl
+      - global
+---
+
 # MercadoEnvíos
 
 Implement the logistics of your business with **Mercado Envíos**.
 
-We solve everything for you: Receive the payment for the product and shipping costs in the same transaction. All you should do is print the label of Mercado Envíos and take the package to the postal service. We protect you against chargebacks or losses by the postal service, without requiring the submission of documentation.
+* We solve everything for you: Receive the payment for the product and shipping costs in the same transaction.
+* All you should do is print the label of Mercado Envíos and take the package to the postal service.
+* We protect you against chargebacks or losses by the postal service, without requiring the submission of documentation.
 
 ## How does it work?
 
@@ -336,11 +348,11 @@ You need to send us some information to perform the calculation:
 
 ### Print the label
 
-Whenever a payment is made, you will get an email with a button to print the label. You can also view [payments pending printing](https://www.mercadopago.com.ar/account) in your Mercado Pago account.
+Whenever a payment is made, you will get an email with a button to print the label. You can also view [payments pending printing](https://www.mercadopago.com.ar/activities?type=collection&status=approved&shipping_or_archived=with_ME&tagME=ready_to_print) in your Mercado Pago account.
 
 In a box, include everything you have sold. Stick the label on the box and ship it. You do not have to pay for anything at the postal service because Mercado Envíos labels will be paid for by your buyer.
 
 ### Step 5: Tracking
 Use our tools to track shipments. In the list of payments, or in our APIs, you will be able to track your shipments.
 
-In addition, we can notify you when a shipment is ready to ship by sending you [notificacions](/guides/notification/ipn.en.md) that are sent from Mercado Pago’s servers to yours. This will allow you to manage your inventories and know the status of payments and shipments.
+In addition, we can notify you when a shipment is ready to ship by sending you [notificacions](/guides/notifications/ipn.en.md) that are sent from Mercado Pago’s servers to yours. This will allow you to manage your inventories and know the status of payments and shipments.
