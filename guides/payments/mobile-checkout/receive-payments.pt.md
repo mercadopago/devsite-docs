@@ -64,7 +64,7 @@ Luego, deberás agregar los atributos de tu preferencia de pago:
   $item = new MercadoPago\Item();
   $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
   $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
-  $item->title = "ARS";
+  $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
   $payer = new MercadoPago\Payer();
@@ -83,7 +83,7 @@ Item item = new Item();
 item.setId("1234")
     .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
     .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
-    .setCategoryId("ARS")
+    .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float)[FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();

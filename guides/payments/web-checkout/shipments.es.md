@@ -219,7 +219,7 @@ Item item = new Item();
 item.setId("1234")
     .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
     .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
-    .setCategoryId("ARS")
+    .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
