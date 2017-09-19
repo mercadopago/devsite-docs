@@ -40,7 +40,7 @@ curl -H "Accept: application/json" \
     "percent_off": 10,
     "amount_off": 0,
     "coupon_amount": 30,
-    "currency_id": "ARS"
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
 }
 ```
 
@@ -80,7 +80,7 @@ https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
 		...
 	},
 	"transaction_amount": 299.99,
-	"currency_id": "ARS",
+	"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 	"coupon_amount": 30,
 	"transaction_details": {
 		"total_paid_amount": 269.99,
@@ -120,7 +120,7 @@ Si el comprador tiene el descuento disponible, la API devolverá:
     "percent_off": 10,
     "amount_off": 0,
     "coupon_amount": 100,
-    "currency_id": "ARS"
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
 }
 ```
 
@@ -175,7 +175,7 @@ https://api.mercadolibre.com/v1/payments?access_token=ACCESS_TOKEN \
 		...
 	},
 	"transaction_amount": 299.99,
-	"currency_id": "ARS",
+	"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 	"coupon_amount": 29.99,
 	"transaction_details": {
 		"total_paid_amount": 269.98,

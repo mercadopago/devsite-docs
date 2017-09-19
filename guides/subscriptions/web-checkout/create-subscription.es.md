@@ -60,7 +60,7 @@ Luego, deberás agregar los atributos de tu preferencia:
 		"frequency" => 1,
 		"frequency_type" => "months",
 		"transaction_amount" => 60,
-		"currency_id" => "ARS"
+		"currency_id" => "[FAKER][CURRENCY][ACRONYM]"
   );
 
   $preapproval->save();
@@ -73,7 +73,7 @@ AutoRecurring autoRecurring = new AutoRecurring();
 autoRecurring.setFrequency(1);
 autoRecurring.setFrequencyType("Months");
 autoRecurring.setTransactionAmount(60);
-autoRecurring.setCurrencyId("ARS");
+autoRecurring.setCurrencyId("[FAKER][CURRENCY][ACRONYM]");
 
 Preapproval preapproval = new Preapproval();
 preapproval.setPayerEmail("my_customer@my-site.com");
@@ -100,7 +100,7 @@ preapproval_data = {
     frequency: 1,
     frequency_type: "months",
     transaction_amount: 60,
-    currency_id: "ARS"
+    currency_id: "[FAKER][CURRENCY][ACRONYM]"
   }
 }
 
@@ -122,7 +122,7 @@ preapproval.auto_recurring = {
   frequency: 1,
   frequency_type: "months",
   transaction_amount: 60,
-  currency_id: "ARS"
+  currency_id: "[FAKER][CURRENCY][ACRONYM]"
 }
 
 preapproval.save()

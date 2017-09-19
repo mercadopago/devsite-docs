@@ -47,7 +47,6 @@ Luego, deberás agregar los atributos de tu preferencia de pago y crear una pref
 <?php
 
 $preference = new MercadoPago\Preference();
-
 $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";

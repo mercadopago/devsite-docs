@@ -112,7 +112,7 @@ HTTP status code: 201 Created
     "frequency": 1,
     "frequency_type": "months",
     "transaction_amount": 200,
-    "currency_id": "ARS",
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
     ...
   },
   ...
