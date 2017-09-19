@@ -15,14 +15,15 @@ To test the integration, follow the steps below:
 2. Create the preference on your server with the access token.
 3. Complete the form, entering the digits of a test card. On the expiration date you must enter any date after the current date and a 3-or 4-digit security code, depending on the card.
 4. In the cardholder field you must enter the prefix corresponding to what you want to test:
-        * **APRO**: Payment approved.  
-        * **CONT**: Pending payment.  
-        * **CALL**: Payment declined, call to authorize.  
-        * **FUND**: Payment declined due to insufficient funds.  
-        * **SECU**: Payment declined by security code.  
-        * **EXPI**: Payment declined by expiration date.  
-        * **FORM**: Payment declined due to error in form.  
-        * **OTHE**: General decline.  
+
+* **APRO**: Payment approved.  
+* **CONT**: Pending payment.  
+* **CALL**: Payment declined, call to authorize.  
+* **FUND**: Payment declined due to insufficient funds.  
+* **SECU**: Payment declined by security code.  
+* **EXPI**: Payment declined by expiration date.  
+* **FORM**: Payment declined due to error in form.  
+* **OTHE**: General decline.  
 
 ### Test cards to test our checkout
 

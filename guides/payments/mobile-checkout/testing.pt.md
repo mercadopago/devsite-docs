@@ -17,14 +17,15 @@ Para testar a integração siga estes passos:
 2. Crie a preferência no seu servidor com o access token.
 3. Preencha os dados do formulário, inserindo os dígitos de um cartão de teste. Na data de vencimento, é necessário inserir qualquer data posterior à data atual e o código de segurança de 3 ou 4 dígitos dependendo do cartão.
 4. No nome do titular do cartão, insira o prefixo correspondente ao que deseja testar:
-        * **APRO**: Pagamento aprovado.  
-        * **CONT**: Pagamento pendente.
-        * **CALL**: Recusado, ligar para autorizar.  
-        * **FUND**: Recusado por saldo insuficiente.  
-        * **SECU**: ecusado por código de segurança.  
-        * **EXPI**: Recusado por data de validade.
-        * **FORM**: Recusado por erro no formulário  
-        * **OTHE**: Recusado geral.  
+
+* **APRO**: Pagamento aprovado.  
+* **CONT**: Pagamento pendente.
+* **CALL**: Recusado, ligar para autorizar.  
+* **FUND**: Recusado por saldo insuficiente.  
+* **SECU**: ecusado por código de segurança.  
+* **EXPI**: Recusado por data de validade.
+* **FORM**: Recusado por erro no formulário  
+* **OTHE**: Recusado geral.  
 
 ### Cartões para testar nosso Checkout
 

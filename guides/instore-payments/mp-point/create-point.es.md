@@ -11,7 +11,7 @@ Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de a
 > WARNING
 >
 > Pre-requisitos
-> 
+>
 > * Contar con la aplicación de Mercado Pago Point
 > * Contar con un dispositivo Point asociado a la cuenta de Mercado
 > Pago
@@ -31,15 +31,13 @@ Una de las formas de integrarse con Mercado Pago Point es mediante un deep link.
 
 ### Creación del Deep Linking
 
-La URL a ser interceptadas es la siguiente.
+La URL a ser interceptadas es la siguiente. `https://secure.mlstatic.com/org-img/point/app/index.html`
 
-
-```https://secure.mlstatic.com/org-img/point/app/index.html```
 
 Los parámetros que se pueden incluir son:
 
-* `amount`: El monto que se le va a cobrar al cliente (*).
-* `description`: Una descripción de la operación (Máx.: 20 carácteres) (*).
+* `amount`: El monto que se le va a cobrar al cliente (\*).
+* `description`: Una descripción de la operación (Máx.: 20 carácteres) (\*).
 * `external_reference`: El código de referencia de tu sistema, el mismo es el que permitirá conciliar tu orden de compra con el pago.
 * `notification_url`: Es la URL donde vas a recibir la notificación de ese pago.
 * `payer_email`: Es el email del pagador.
@@ -48,7 +46,7 @@ Los parámetros que se pueden incluir son:
 
 > WARNING
 >
-> * Los campos marcados con (*) son campos obligatorios.
+> * Los campos marcados con (\*) son campos obligatorios.
 > * Los campos external reference, notification url y payer email sólo se encuentran disponibles para la integración con la aplicación de Mercado Pago Point en Android.
 
 En el artículo de [GitHub](https://github.com/sebad78/android-integration#deep-linking) podes obtener más información y el ejemplo correspondiente.

@@ -15,14 +15,14 @@ Para probar la integración sigue estos pasos:
 3. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 o 4 dígitos dependiendo de la tarjeta.
 4. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:
 
-        * **APRO**: Pago aprobado.  
-        * **CONT**: Pago pendiente.  
-        * **CALL**: Rechazo llamar para autorizar.  
-        * **FUND**: Rechazo por monto insuficiente.  
-        * **SECU**: Rechazo por código de seguridad.  
-        * **EXPI**: Rechazo por fecha de expiración.  
-        * **FORM**: Rechazo por error en formulario.  
-        * **OTHE**: Rechazo general.  
+* **APRO**: Pago aprobado.  
+* **CONT**: Pago pendiente.  
+* **CALL**: Rechazo llamar para autorizar.  
+* **FUND**: Rechazo por monto insuficiente.  
+* **SECU**: Rechazo por código de seguridad.  
+* **EXPI**: Rechazo por fecha de expiración.  
+* **FORM**: Rechazo por error en formulario.  
+* **OTHE**: Rechazo general.  
 
 ### Tarjetas para probar nuestro _checkout_
 
