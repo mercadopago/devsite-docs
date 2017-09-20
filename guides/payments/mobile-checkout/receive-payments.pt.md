@@ -45,7 +45,7 @@ Esta entidade é a preferência de pagamento e contém:
 [[[
 ```php
 <?php  
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 ?>
 ```

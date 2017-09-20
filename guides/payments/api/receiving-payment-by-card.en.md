@@ -222,7 +222,7 @@ To make the payment, simply make an API call:
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();
@@ -382,7 +382,7 @@ To create the payment, it is important to send the data indicated above:
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();

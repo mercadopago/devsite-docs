@@ -74,7 +74,7 @@ Para realizar a devolução integral, faça a seguinte requisição indicando o 
 
 ```php
 <?php
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 
 $mp = new MP('SECRET_ACCESS_TOKEN');
 

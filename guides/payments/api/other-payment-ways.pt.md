@@ -18,7 +18,7 @@ Obtenha uma lista dos meios de pagamento disponíveis fazendo uma requisição `
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment_methods = MercadoPago::get("/v1/payment_methods");
@@ -85,7 +85,7 @@ Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprad
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();
@@ -244,7 +244,7 @@ Para gerar o pagamento utilizando Webpay envie o `payment_method_id` **webpay**,
 ```php
 <?php
 
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
 $payment = new MercadoPago\Payment();

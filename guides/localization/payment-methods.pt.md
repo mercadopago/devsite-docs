@@ -9,7 +9,7 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 **GET /v1/payment_methods**
 
 	<?php
-		require_once ('mercadopago.php');
+		require ('mercadopago.php');
 		$mp = new MP ('ACCESS_TOKEN');
 		$payment_methods = $mp->get('/v1/payment_methods');
 		print_r ($payment_methods);

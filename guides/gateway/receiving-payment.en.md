@@ -42,7 +42,7 @@ Una vez que cuentas con el id del `card_token` puedes realizar el pago realizand
 
 ```php
 <?php
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
 
   // Setup your private key
   $mp = new MP('ENV_ACCESS_TOKEN');

@@ -12,7 +12,7 @@ A continuación se puede ver un ejemplo
 
 ```php
 <?php
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
 
   $mp = new MP('SECRET_ACCESS_TOKEN');
 
@@ -50,7 +50,7 @@ Supongamos que para un pago no se quiere correr ni scoring ni revisión manual:
 
 ```php
 <?php
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
 
   $mp = new MP('SECRET_ACCESS_TOKEN');
 

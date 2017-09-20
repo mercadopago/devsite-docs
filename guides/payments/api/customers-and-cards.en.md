@@ -31,7 +31,7 @@ The `token` is captured during the [collection of card information](/guides/paym
 
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $customer = new MercadoPago\Customer();
@@ -244,7 +244,7 @@ Since it is a payment with a stored card, you must send the customer id together
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();
@@ -332,7 +332,7 @@ It is possible to add new cards to a `Customer`. To do this, you must create a `
 
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $customer = MercadoPago\Customer::load("247711297-jxOV430go9fx2e");
