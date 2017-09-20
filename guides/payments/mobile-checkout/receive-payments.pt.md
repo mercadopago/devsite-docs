@@ -1,3 +1,14 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mco
+    - mcl
+    - mpe
+    - mlv
+    - global
+---
 # Receba Pagamentos
 
 > WARNING
