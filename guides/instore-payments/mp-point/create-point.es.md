@@ -13,22 +13,15 @@ Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de a
 >
 > Pre-requisitos
 >
-<<<<<<< HEAD
-> * Contar con la aplicación de Mercado Pago Point
-> * Contar con un dispositivo Point asociado a la cuenta de Mercado
-> Pago
-=======
+
 > * Contar con la aplicación de Mercado Pago Point.
 > * Contar con un dispositivo Point asociado a la cuenta de Mercado Pago.
-
->>>>>>> 1ba183b57f3449ae23de4e1392f3b4d8e2cb20d6
 > * El vendedor debe estar logueado con su cuenta de Mercado Pago en la aplicación de Mercado Pago Point.
 > * Disponible para Android versión 2.8.0 o superior, iOS versión 1.7.0 o superior y solo cuando corren en iOS 9 o superior.
 
 ## Diagrama de Flujo
-Diagrama
 
-
+![instore diagram](/images/point_diagram.png)
 
 ## 1. Integración vía Deep Linking
 
