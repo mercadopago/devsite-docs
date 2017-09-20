@@ -11,7 +11,7 @@ Os produtos oferecidos pelo MercadoPago podem variar de acordo com cada país.
 | Botón de cobro  | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Web Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Mobile Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
-| API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 ### Assinaturas:
 
@@ -26,7 +26,7 @@ Os produtos oferecidos pelo MercadoPago podem variar de acordo com cada país.
 |   Produto    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Web Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 
 ## Funcionalidades de API por país
@@ -37,9 +37,9 @@ A continuación un listado de funcionalidades especificas de nuestra API por pa�
 | :---------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Autorización y captura  | ✔                                      | ✔   |     |     |     | ✔   |     |     |
 | Captura por monto menor | ✔                                      | ✔   |     |     |     |     |     |     |
-| Reembolsos              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
+| Reembolsos              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
 | Reembolsos parciales    | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
-| Pagamentos sin CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
+| Pagamentos sin CVV      | ✔                                      | ✔   |     |     | ✔   |     |     |     |
 | Soft descriptor         | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |
 
 

@@ -1,3 +1,14 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mco
+    - mcl
+    - mpe
+    - mlv
+    - global
+---
 # Mobile Checkout
 
 Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
