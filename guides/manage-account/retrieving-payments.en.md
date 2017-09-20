@@ -8,7 +8,7 @@ To get information about a payment using your ID, you need to make the following
 
 ```php
 <?php
-	require_once ('mercadopago.php');
+	require ('mercadopago.php');
 
 	$mp = new MP ("ENV_ACCESS_TOKEN");
 
@@ -47,7 +47,7 @@ If you want to search payments, you can use the `Payment Search API`:
 
 ```php
 <?php
-	require_once ('mercadopago.php');
+	require ('mercadopago.php');
 
 	$mp = new MP ("ENV_ACCESS_TOKEN");
 
@@ -108,7 +108,7 @@ For example `NOW-5MINUTES`:
 
 ```php
 <?php
-	require_once ('mercadopago.php');
+	require ('mercadopago.php');
 
 	$mp = new MP ("ENV_ACCESS_TOKEN");
 
@@ -144,7 +144,7 @@ Example of pagination:
 
 ```php
 <?php
-	require_once ('mercadopago.php');
+	require ('mercadopago.php');
 
 	$mp = new MP ("ENV_ACCESS_TOKEN");
 

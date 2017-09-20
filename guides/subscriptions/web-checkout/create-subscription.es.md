@@ -25,7 +25,7 @@ Para crear una preferencia de suscripción debes [instalar el SDK de Mercado Pag
 [[[
 ```php
 <?php
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 ?>
 ```

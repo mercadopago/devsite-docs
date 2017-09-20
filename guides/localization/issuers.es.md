@@ -15,7 +15,7 @@ Los emisores pueden ser obtenidos de la siguiente forma:
 **GET /v1/payment_methods/card_issuers**
 
 	<?php
-		require_once ('mercadopago.php');
+		require ('mercadopago.php');
 		$mp = new MP ('ACCESS_TOKEN');
 		$card_issuers = $mp->get('/v1/payment_methods/card_issuers', 'visa', '424242');
 		print_r ($card_issuers);

@@ -32,7 +32,7 @@ El `token` es el que capturaste cuando estabas haciendo la [captura de datos de 
 
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $customer = new MercadoPago\Customer();
@@ -245,7 +245,7 @@ Al ser un pago con tarjeta guardada, deberás enviar el _id_ de _customer_ asoci
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();
@@ -333,7 +333,7 @@ Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `to
 
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $customer = MercadoPago\Customer::load("247711297-jxOV430go9fx2e");

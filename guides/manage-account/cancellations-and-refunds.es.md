@@ -76,7 +76,7 @@ Para realizar la devolución total, realiza el siguiente _request_ indicando el 
 
 ```php
 <?php
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 
 $mp = new MP('SECRET_ACCESS_TOKEN');
 

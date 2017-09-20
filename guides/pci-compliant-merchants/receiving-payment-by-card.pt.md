@@ -14,7 +14,7 @@ O Mercado Pago permite aos vendedores que cumprem com a regulamentação PCI que
 [[[
 ```php
 <?php  
-    require_once ('mercadopago.php');
+    require ('mercadopago.php');
 
     $mp = new MP('ACCESS_TOKEN');
 

@@ -18,7 +18,7 @@ You can get the list of payment methods available by making an `HTTP GET` reques
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment_methods = MercadoPago::get("/v1/payment_methods");
@@ -85,7 +85,7 @@ To receive payments in cash, you just need to get the `email`. Then, you need to
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();
@@ -246,7 +246,7 @@ To generate the payment using Webpay you must send the ´payment_method_id´ **w
 ```php
 <?php
 
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
 $payment = new MercadoPago\Payment();

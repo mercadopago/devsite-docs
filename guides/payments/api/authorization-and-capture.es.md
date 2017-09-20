@@ -32,7 +32,7 @@ Realizar una autorización o reserva de los fondos es como realizar un pago, per
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();
@@ -154,7 +154,7 @@ Para hacer la captura por el monto total solo debes enviar el atributo `capture`
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);
@@ -223,7 +223,7 @@ Si decides capturar por un monto menor al reservado, es necesario que además de
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);
@@ -297,7 +297,7 @@ Para hacer esto debes actualizar el atributo `status` del pago a un estado `canc
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);

@@ -9,7 +9,7 @@ Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
 **GET /v1/identification_types**
 
 	<?php
-		require_once ('mercadopago.php');
+		require ('mercadopago.php');
 		$mp = new MP ('ACCESS_TOKEN');
 		$identification_types = $mp->get('/v1/identification_types');
 		print_r ($identification_types);

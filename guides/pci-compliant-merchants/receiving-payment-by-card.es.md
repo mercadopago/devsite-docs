@@ -14,7 +14,7 @@ Es necesario crear un `card_token`, el cual es la representación segura de la t
 [[[
 ```php
 <?php  
-    require_once ('mercadopago.php');
+    require ('mercadopago.php');
 
     $mp = new MP('ACCESS_TOKEN');
 

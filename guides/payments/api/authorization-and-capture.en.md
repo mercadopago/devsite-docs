@@ -32,7 +32,7 @@ Performing an authorization hold is like making a payment, but adding the `captu
 ```php
 <?php  
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = new MercadoPago\Payment();
@@ -154,7 +154,7 @@ To capture the total amount, all you should do is send the `capture` attribute i
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);
@@ -222,7 +222,7 @@ If you decide to capture an amount lower than what was held, in addition to send
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);
@@ -295,7 +295,7 @@ To do this, you must update the attribute `status` of the payment to a `cancelle
 ```php
 <?php
 
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 
   $payment = MercadoPago\Payment::load($payment_id);

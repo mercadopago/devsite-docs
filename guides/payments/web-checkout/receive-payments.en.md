@@ -18,7 +18,7 @@ To create a payment preference you must install [Mercado Pago SDK](https://githu
 ```php
 
 <?php  
-  require_once ('mercadopago.php');
+  require ('mercadopago.php');
   MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
 ?>
 ```

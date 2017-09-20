@@ -75,7 +75,7 @@ To issue a full refund, make the following request indicating the `payment_id`:
 
 ```php
 <?php
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 
 $mp = new MP('SECRET_ACCESS_TOKEN');
 

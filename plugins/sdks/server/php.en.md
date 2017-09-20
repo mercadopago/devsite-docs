@@ -46,7 +46,7 @@ As a dependency in your project's composer.json
     * Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
 
 ```php
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 
 $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
 ```
@@ -118,7 +118,7 @@ print_r ($searchResult);
 #### Get payment data
 
 ```php
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 
 $mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
 $paymentInfo = $mp->get_payment ("PAYMENT_ID");
@@ -155,7 +155,7 @@ print_r ($result);
     * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
 
 ```php
-require_once ('mercadopago.php');
+require ('mercadopago.php');
 
 $mp = new MP ("ACCESS_TOKEN");
 ```
