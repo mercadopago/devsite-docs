@@ -13,7 +13,6 @@ Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de a
 >
 > Pre-requisitos
 >
-
 > * Contar con la aplicación de Mercado Pago Point.
 > * Contar con un dispositivo Point asociado a la cuenta de Mercado Pago.
 > * El vendedor debe estar logueado con su cuenta de Mercado Pago en la aplicación de Mercado Pago Point.
