@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mpv
+  - mco
+  - mlm
+  - global
+---
+
 
 # Cómo integrar Mercado Pago Point
 

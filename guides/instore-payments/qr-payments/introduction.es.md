@@ -1,3 +1,14 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mpv
+  - mco
+  - mlm
+  - global
+---
+
+
 # Pagos Presenciales con QR
 
 

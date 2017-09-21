@@ -1,12 +1,23 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mpv
+  - mco
+  - mlm
+  - global
+---
+
+
 # Pagos con QR integrados
 
 
-Mercado Pago te permite recibir pagos de tus clientes a través de un único código QR que identifica el punto de venta. 
+Mercado Pago te permite recibir pagos de tus clientes a través de un único código QR que identifica el punto de venta.
 
 Cuando tu cliente escanea el código QR se realiza una petición a tu servidor consultando por el monto que debe cobrarse, Tu servidor responde con la [preferencia de pagos](/reference/preferences) y en el celular de tu cliente se levantará el checkout con la información de lo que tiene que pagar. Finalmente el cliente realiza el pago y recibirás una notificación *Webhook* en tu servidor en forma inmediata para impactar el resultado.
 
 
-## Detalle de integración 
+## Detalle de integración
 
 Posterior a que se efectúe la orden de venta en tu sistema de gestión:
 
@@ -16,14 +27,14 @@ Posterior a que se efectúe la orden de venta en tu sistema de gestión:
 
 1. El usuario escanea el código QR desde su aplicación de Mercado Pago, al que está asociada la url con la información del puesto donde se realizó la venta. El QR representa unívocamente una puesto en una sucursal.
 
-2. Con la información de dónde el usuario ha escaneado, el MP Server consulta al Server de la empresa por la última orden de venta pendiente de pago para ese puesto en esa sucursal. 
+2. Con la información de dónde el usuario ha escaneado, el MP Server consulta al Server de la empresa por la última orden de venta pendiente de pago para ese puesto en esa sucursal.
 
     2.1. El Server crea la preferencia de pago (Objeto que contiene toda la información de lo que se está por pagar- Ver anexo)  
     2.2. Mercado Pago devuelve la prefencia de pago creada
 
 3. El Server devuelve la preferencia al MP Server y con dicha información se puede dibujar el *checkout* en el celular del usuario para pagar.
 
-4. El usuario completa los datos requeridos en el *checkout* (generalmente sólo debe ingresar el código de seguridad) y confirma el pago. 
+4. El usuario completa los datos requeridos en el *checkout* (generalmente sólo debe ingresar el código de seguridad) y confirma el pago.
 
 5. Inmediatamente luego de procesado el pago, el MP Server  envía al Server de la empresa una notificación *Webhook* informando que hay una novedad,  especificando el identificador del recurso pago.
 
@@ -36,7 +47,7 @@ Posterior a que se efectúe la orden de venta en tu sistema de gestión:
 
 El código QR generado debe idenficar en forma única al punto de venta desde donde se quiere pagar.
 Por ejemplo, puede generar una url como la siguiente:
- 
+
 `` https://www.miempresa.com/pay-mp?locationId=01&positionId=01 ``
 
 Donde `locationId`representa la sucursal y `positionId`la caja desde donde se efectuo la venta. Este QR pertenece a la sucursal 01, caja 01.  
@@ -52,7 +63,7 @@ Cuando el comprador escanee el QR, recibirás una petición de Mercado Pago con 
 
 Este *request* se realiza enviando en el *header* `User-Agent` uno de los siguientes valores:    
 
-*  `MercadoPago-Android/${version}` 
+*  `MercadoPago-Android/${version}`
 *  `MercadoPago-iOS/${version}`
 
  > ${version} es la versión de la aplicación instalada en el dispositivo   
@@ -71,7 +82,7 @@ La respuesta esperada en caso de que haya una venta pendiente y se haya generado
 {
 	"preference_id": "XXXX"
 }
- 
+
 ```
 
 Si para el punto de venta no hay una orden pendiente de pago, se debe devolver un estado HTTP 400 (*Bad Request*) y en el cuerpo del JSON el siguiente formato:   
@@ -128,7 +139,7 @@ Antes de salir a producción verifica los siguientes escenarios.
 
 
 
-| Caso 		| Escenario 				 | Respuesta de la App        | 
+| Caso 		| Escenario 				 | Respuesta de la App        |
 | ---- 		| ---- 				 | ----------        |
 | 1  	| El usuario escanea un código válido antes de finalizar el pedido.|Primero debes cargar. Podrás pagar una vez que termines el pedido.|
 | 2  	| El usuario escanea un código válido durante un pedido.|Ahora estás cargando. Podrás pagar una vez que termines el pedido.|
