@@ -11,7 +11,7 @@ Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 | Botón de cobro  | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Web Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Mobile Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
-| API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 ### Suscripciones:
 
@@ -26,7 +26,7 @@ Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 |   Producto   | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Web Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 
 ## Funcionalidades de API por país
@@ -37,7 +37,7 @@ A continuación un listado de funcionalidades específicas de nuestra API por pa
 | :---------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Autorización y captura  | ✔                                      | ✔   |     |     |     | ✔   |     |     |
 | Captura por monto menor | ✔                                      | ✔   |     |     |     |     |     |     |
-| Reembolsos              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
+| Reembolsos              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
 | Reembolsos parciales    | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
 | Pagos sin CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
 | Soft descriptor         | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |

@@ -11,7 +11,7 @@ The products offered by Mercado Pago may vary by country.
 | Pay button      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Web Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Mobile Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
-| API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 ### Subscriptions:
 
@@ -26,21 +26,21 @@ The products offered by Mercado Pago may vary by country.
 |   Product    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Web Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 
 ## API features by country
 
 API features for each country are shown below:
 
-|      Feature      |                  ARG                   | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :---------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|      Feature               |                  ARG                   | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :------------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Authorization and capture  | ✔                                      | ✔   |     |     |     | ✔   |     |     |
-| Capture by smaller amount | ✔                                      | ✔   |     |     |     |     |     |     |
-| Refunds              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
-| Partial refunds    | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
-| Payments without CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
-| Soft descriptor         | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |
+| Capture by smaller amount  | ✔                                      | ✔   |     |     |     |     |     |     |
+| Refunds                    | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
+| Partial refunds            | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
+| Payments without CVV       | ✔                                      | ✔   |     |     | ✔   |     |     |     |
+| Soft descriptor            | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |
 
 
 

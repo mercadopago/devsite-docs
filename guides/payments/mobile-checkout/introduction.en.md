@@ -1,3 +1,14 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mco
+    - mcl
+    - mpe
+    - mlv
+    - global
+---
 # Mobile Checkout
 
 MercadoPago SDK makes it easy to create a payment experience in your application. You will instantly offer your users:
