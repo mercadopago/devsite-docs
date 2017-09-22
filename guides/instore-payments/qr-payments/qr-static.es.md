@@ -11,7 +11,7 @@ sites_supported:
 
 # Pagos con QR sin integración
 
-> En este artículo crearas **QR de monto fijo ** Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado](/guides/instore-payments/qr-payments/qr-integrated.es.md)
+> En este artículo crearas **QR de monto fijo** Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado](/guides/instore-payments/qr-payments/qr-integrated.es.md)
 
 Desde tu cuenta de Mercado Pago, tienes la opción de [crear una herramienta de cobro](https://www.mercadopago.com.ar/tools/create) que te permitirá recibir pagos en tus tiendas físicas mediante códigos QR.    
 No necesitas saber de programación.  
