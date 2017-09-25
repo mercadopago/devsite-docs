@@ -1,0 +1,60 @@
+title: Payments API Types
+mediaType: application/json
+types:
+  PaymentFull:
+    type: object
+    properties:
+      id:
+        type: integer
+        description:
+          en: Payment Identifier
+          es: Identificador del Pago
+          pt: Identificador de pagamento
+      date_created:
+        type: date
+        description:
+          es: Fecha de la creacion del Pago en formato ISO 8601
+          en: Payment's creation date in ISO 8601
+          pt: Data da criação do pagamento no formato ISO 8601
+      date_approved:
+        type: date
+        description:
+          es: Fecha de aprobación del Pago en formato ISO 8601
+          en: Payment's approval date in ISO 8601
+          pt: Data da aprovação do pagamento no formato ISO 8601
+      date_last_updated:
+        type: date
+        description:
+          es: Fecha de ultima actualización del Pago en formato ISO 8601
+          en: Payment's last update date in ISO 8601
+          pt: Data da última atualização de pagamento no formato ISO 8601
+      money_release_date:
+        type: date
+        description:
+          es: Fecha de liberación del dinero en formato ISO 8601
+          en: Money's release date in ISO 8601
+          pt: Data da liberação do dinheiro no formato ISO 8601
+      collector_id:
+        type: integer
+        description:
+          es: Identificador del vendedor
+          en: Identifies the seller
+          pt: Identifica o vendedor
+      operation_type:
+        type: string
+        enum:
+          regular_payment:
+            description:
+              es: Typificación por defecto de una compra pagada usando MercadoPago
+              en: Typification by default of a purchase being paid using MercadoPago
+              pt: Tipificação por defeito de uma compra a ser paga usando o MercadoPago
+          money_transfer:
+            description:
+              es: Transferencia de dinero entre dos usuarios
+              en: Funds transfer between two users
+              pt: Transferência de dinheiro entre dois usuários
+          recurring_payment:
+            description:
+              es: Pagos recurrentes debido a una suscripción activa de un usuario.
+              en: Automatic recurring payment due to an active user subscription.
+              pt: Pagamentos recorrentes devido a uma assinatura de usuário ativa.
