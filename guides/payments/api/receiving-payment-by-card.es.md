@@ -106,7 +106,31 @@ Mercadopago.getIdentificationTypes();
 
 #### Obtener el medio de pago de la tarjeta
 
-Es importante que obtengamos el medio de pago de la tarjeta para poder realizar el pago.
+Es importante que obtengas el medio de pago de la tarjeta para poder realizar el pago.
+
+Cuando tu cliente ingresa el BIN de la tarjeta de crédito, es decir los 6 primeros dígitos, el sdk implementa `getBin()` y luego consulta a la API por el método de pago que se corresponde a ese BIN:
+
+```javascript
+function guessingPaymentMethod(event) {
+    var bin = getBin();
+
+    if (event.type == "keyup") {
+        if (bin.length >= 6) {
+            Mercadopago.getPaymentMethod({
+                "bin": bin
+            }, setPaymentMethodInfo);
+        }
+    } else {
+        setTimeout(function() {
+            if (bin.length >= 6) {
+                Mercadopago.getPaymentMethod({
+                    "bin": bin
+                }, setPaymentMethodInfo);
+            }
+        }, 100);
+    }
+};
+```
 
 Para obtener el medio de pago, utiliza el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este acepta dos parámetros: un objeto y una función de _callback_.
 
