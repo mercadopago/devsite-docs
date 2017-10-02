@@ -78,7 +78,7 @@ Pretend that you do not want to run scoring or manual review for a payment:
 	{
 		"merchant_services": {
 			"fraud_scoring": true,
-			"fraud_manual_review": true
+			"fraud_manual_review": false
 		}
 	}
 ```
