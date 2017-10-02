@@ -1,12 +1,12 @@
-# Modificando los servicios
+# Modify the services
 
-Cada número de comercio configurado en la plataforma (`merchant_account_id`) tendrá asociado sus correspondientes servicios (`merchant_services`).
+Each merchant number configured on the platform (`merchant_account_id`) will be associated with its services (`merchant_services`).
 
-Los servicios utilizados pueden verse en la respuesta de cada pago. Dichos servicios [varían según el país](/guides/localization/gateway.es.md) y adicionalmente pueden ser modificados en cada pago.
+The services used can be viewed in the response of each payment. These services [vary according to the country](/guides/localization/gateway.es.md) and they can also be modified in each payment.
 
-A continuación se puede ver un ejemplo
+See below an example
 
-## Pago por defecto
+## Payment by default
 
 ### Request
 
@@ -42,9 +42,9 @@ A continuación se puede ver un ejemplo
 	}
 ```
 
-## Pago con servicios modificados
+## Payment with modified services
 
-Supongamos que para un pago no se quiere correr ni scoring ni revisión manual:
+Pretend that you do not want to run scoring or manual review for a payment:
 
 ### Request
 
