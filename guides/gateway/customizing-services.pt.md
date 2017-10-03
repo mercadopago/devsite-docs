@@ -1,12 +1,12 @@
-# Modificando los servicios
+# Altere os serviços
 
-Cada número de comercio configurado en la plataforma (`merchant_account_id`) tendrá asociado sus correspondientes servicios (`merchant_services`).
+Cada número de estabelecimento comercial configurado na plataforma (`merchant_account_id`) será associado aos seus serviços correspondentes (`merchant_services`).
 
-Los servicios utilizados pueden verse en la respuesta de cada pago. Dichos servicios [varían según el país](/guides/localization/gateway.es.md) y adicionalmente pueden ser modificados en cada pago.
+Os serviços utilizados podem ser visualizados na resposta de cada pagamento. Esses serviços [variam de acordo com o país](/guides/localization/gateway.es.md) e ainda podem ser alterados em cada pagamento.
 
-A continuación se puede ver un ejemplo
+Veja o exemplo a seguir.
 
-## Pago por defecto
+## Pagamento padrão
 
 ### Request
 
@@ -42,9 +42,9 @@ A continuación se puede ver un ejemplo
 	}
 ```
 
-## Pago con servicios modificados
+## Pagamento com serviços alterados
 
-Supongamos que para un pago no se quiere correr ni scoring ni revisión manual:
+Suponha que não deseja executar o scoring ou a revisão manual para um pagamento:
 
 ### Request
 
