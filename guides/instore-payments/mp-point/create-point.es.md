@@ -7,88 +7,97 @@ sites_supported:
 ---
 
 
-# How to integrate MercadoPago Point
+# Cómo integrar Mercado Pago Point
 
-In order to get paid in an integrated manner with our Point device, you need to download the Mercado Pago Point app available in the iOS and Android marketplaces.
+Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago Point disponible en los marketplaces de iOS y Android.
 
-Currently, it is possible to perform an integration from any type of external application that can be accessed from the same device where the seller has the Point app installed:
+Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de aplicación externa que pueda ser accedida desde el mismo dispositivo donde el vendedor tiene instalada la aplicación de Point:
 
-- Native mobile app for Android or iOS.
-- Hybrid mobile app.
-- Web app.
-
+- Aplicación Mobile para Android o iOS nativa.
+- Aplicación Mobile Híbirida.
+- Aplicación Web.
 
 > WARNING
 >
-> Prerequisites
+> Pre-requisitos
 >
-> * Have the Mercado Pago Point app.
-> * Have a Point device linked to the Mercado Pago account.
-> * The seller must be logged in with its MercadoPago account in the Mercado Pago Point app.
-> * Available for Android version 2.8.0 or above, iOS version 1.7.0 or above and only when running on iOS 9 or above.
+> * Contar con la aplicación de Mercado Pago Point.
+> * Contar con un dispositivo Point asociado a la cuenta de Mercado Pago.
+> * El vendedor debe estar logueado con su cuenta de Mercado Pago en la aplicación de Mercado Pago Point.
+> * Disponible para Android versión 2.8.0 o superior, iOS versión 1.7.0 o superior y solo cuando corren en iOS 9 o superior.
 
-## Flowchart
+## Diagrama de Flujo
 
 ![instore diagram](/images/point_diagram.png)
 
-## 1. Integration via Deep Linking
+## 1. Integración vía Deep Linking
 
 
-One of the alternatives to integrate with MercadoPago Point is through a deep link. When this _link_ is accessed, it will be intercepted as a  _Point-handled address_.
+Una de las formas de integrarse con Mercado Pago Point es mediante un deep link. Cuando se accede a dicho _link_, el mismo va a ser interceptado como un _Point-handled address_.
 
-In the request to this _link_, different parameters can be sent, which will be verified by the Point app and impacted in the payment. Once the request to this link is made, the seller will be redirected to the MercadoPago Point app to enter the customer’s card and thus charge the customer.
+En la llamada a este _link_ se pueden enviar diferentes parámetros que serán levantados por la aplicación de Point e impactados en el pago. Una vez que se hace el llamado a este link, el vendedor será redireccionado a la pantalla de la aplicación de Mercado Pago Point para pasar la tarjeta del cliente y así realizar el cobro.
 
-Once the payment is processed, the user will be redirected to the `success_url` or `fail_url`, depending on the payment status. This must be intercepted in order to return the user to the application flow.
+Una vez que el pago es procesado, el usuario será redireccionado a la `success_url` o `fail_url`, dependiendo del estado del pago. Esto deberá ser interceptado para retornar al usuario al flujo de la aplicación.
 
 
-### Creating Deep Linking
 
-The URL to be intercepted is `https://secure.mlstatic.com/org-img/point/app/index.html`
+### Creación del Deep Linking
 
-The parameters you need to include are:
 
-* `amount`: The amount that will be charged to the customer (\*).
-* `description`: A description of the transaction (Max.: 20 characters)  (\*).
-* `external_reference`: The reference code of your system, the same one that will allow you to conciliate your purchase order with the payment.
-* `notification_url`: The URL where you will receive the notification of that payment.
-* `payer_email`: The payer’s email.
-* `success_url`: The URL to which the user will be redirected after an approved payment.
-* `fail_url`: The URL to which the user will be redirected after a declined payment.
+La URL a ser interceptadas es la siguiente. `https://secure.mlstatic.com/org-img/point/app/index.html`
+
+
+
+Los parámetros que se pueden incluir son:
+
+* `amount`: El monto que se le va a cobrar al cliente (\*).
+* `description`: Una descripción de la operación (Máx.: 20 carácteres) (\*).
+* `external_reference`: El código de referencia de tu sistema, el mismo es el que permitirá conciliar tu orden de compra con el pago.
+* `notification_url`: Es la URL donde vas a recibir la notificación de ese pago.
+* `payer_email`: Es el email del pagador.
+* `success_url`: Es la URL donde será redireccionado el usuario luego de un pago aprobado.
+* `fail_url`: Es la URL donde será redireccionado el usuario luego de un pago rechazado.
 
 > WARNING
 >
-> * Required fields marked with an asterisk (\*).
-> * The external reference, notification url and payer email fields are only available for integration with Mercado Pago Point app on Android.
+> * Los campos marcados con (\*) son campos obligatorios.
+> * Los campos external reference, notification url y payer email sólo se encuentran disponibles para la integración con la aplicación de Mercado Pago Point en Android.
 
-In the [GitHub](https://github.com/sebad78/android-integration#deep-linking) section, you can find more information and the corresponding example.
+En el artículo de [GitHub](https://github.com/sebad78/android-integration#deep-linking) podes obtener más información y el ejemplo correspondiente.
 
-## 2. Integration via Intent-Based
+## 2. Integración vía Intent-Based
 > WARNING
 >
-> * This integration is only available for Android version 2.8.0 or above.
+> * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
 
 
-The other way to integrate with the Mercado Pago Point app is using a native Android code, based on the _Intent-Based_ concept.
+La otra forma de integrarse con la aplicación de Mercado Pago Point es mediante código nativo de Android, mediante el concepto de _Intent-Based_.
 
-You must use the “startActivityForResult” method to directly start the payment process. The payment result will return as “activityResult”.
+Debes utilizar el método “startActivityForResult” para iniciar directamente el proceso de pago. El resultado del pago va a retornar como “activityResult”.
 
-It is very important that the code considers the possibility that the user does not have the Mercado Pago Point app installed on the device. In this case, we recommend redirecting the user to the Play Store to download it.
-
-As a reference, you can use the sample code and documentation that has the format that allows sending the payment information and handling the return object.
-
-In the [GitHub](https://github.com/sebad78/android-integration#intent) section, you can find more information and the corresponding example.
+Es muy importante que el código maneje la posibilidad de que el usuario no tenga instalada la aplicación de Mercado Pago Point en su dispositivo, en este caso, recomendamos redireccionar al usuario al Play Store para descargar la misma.
 
 
-## 3. Payment Notifications
 
-You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
-For more information, go to the [notifications](/guides/notifications/ipn.es.md) section.
+Como referencia puedes utilizar el código de ejemplo y documentación que tiene el formato para poder enviar la información del pago y manejar el objeto de retorno.
 
-## 4. Identifying Point Payments
+En el artículo de [GitHub](https://github.com/sebad78/android-integration#intent) podes obtener más información y el ejemplo correspondiente.
 
-Point payments are identified as follows when searching in the Payments API:
 
-- operation_type = pos_payment
-- created_from = `2707436798674401`(Android) or `7353443692214630`(iOS)
+## 3. Notificaciones de Pago
 
-In the [API](/guides/notifications/ipn.es.md) section, you can find more information about the Payments API.
+Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
+
+
+En el artículo de [notificaciones](/guides/notifications/ipn.es.md) podes obtener más información.
+
+## 4. Identificación de Pagos de Point
+
+Los pagos de Point se identifican de la siguiente manera cuando se busca el mismo en la API de Payments:
+
+
+- operation_type = pos\_payment
+- created_from = `2707436798674401`(Android) ó `7353443692214630`(iOS)
+
+
+En el artículo de [API's](/guides/notifications/ipn.es.md) podes obtener más información sobre la API de Payments.
