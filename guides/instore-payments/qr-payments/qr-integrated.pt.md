@@ -9,74 +9,67 @@ sites_supported:
 ---
 
 
-# Pagos con QR integrados
+# Pagamentos com QR codes integrados
+
+O MercadoPago permite receber os pagamentos de seus clientes através de um QR code exclusivo que identifica o ponto de venda.
+
+Quando o cliente escaneia o QR code, é feita uma requisição ao seu servidor, consultando o valor a ser cobrado. O servidor responde com a [preferência de pagamentos](/reference/preferences) e no celular do seu cliente o checkout é exibido com as informações do pagamento a ser efetuado. Por fim, o cliente efetua o pagamento e você receberá imediatamente uma notificação *Webhook* em seu servidor para impactar o resultado.
 
 
-Mercado Pago te permite recibir pagos de tus clientes a través de un único código QR que identifica el punto de venta.
+## Detalhes da integração
 
-Cuando tu cliente escanea el código QR se realiza una petición a tu servidor consultando por el monto que debe cobrarse, Tu servidor responde con la [preferencia de pagos](/reference/preferences) y en el celular de tu cliente se levantará el checkout con la información de lo que tiene que pagar. Finalmente el cliente realiza el pago y recibirás una notificación *Webhook* en tu servidor en forma inmediata para impactar el resultado.
-
-
-## Detalle de integración
-
-Posterior a que se efectúe la orden de venta en tu sistema de gestión:
-
+Após a conclusão da ordem de venda em seu sistema de gestão:
 
 ![instore diagram](/images/wallet-instore.png)
 
+1. O usuário escaneia o QR code a partir do aplicativo do MercadoPago, ao qual está associada a url com as informações do local onde a venda ocorreu. O QR code representa univocamente uma posição em uma filial.
 
-1. El usuario escanea el código QR desde su aplicación de Mercado Pago, al que está asociada la url con la información del puesto donde se realizó la venta. El QR representa unívocamente una puesto en una sucursal.
+2. Com as informações do local onde o usuário fez o escaneamento, o MP Server consulta o servidor da empresa buscando a última ordem de venda pendente de pagamento para essa posição nessa filial.
 
-2. Con la información de dónde el usuario ha escaneado, el MP Server consulta al Server de la empresa por la última orden de venta pendiente de pago para ese puesto en esa sucursal.
+  2.1. O servidor cria a preferência de pagamento (Objeto que contém todas as informações do valor a pagar – Vide anexo).
+  2.2. O MercadoPago retorna a preferência de pagamento criada.
 
-    2.1. El Server crea la preferencia de pago (Objeto que contiene toda la información de lo que se está por pagar- Ver anexo)  
-    2.2. Mercado Pago devuelve la prefencia de pago creada
+3. O servidor retorna a preferência ao MP Server e com esta informação você pode exibir o *checkout* no celular do usuário para que efetue o pagamento.
 
-3. El Server devuelve la preferencia al MP Server y con dicha información se puede dibujar el *checkout* en el celular del usuario para pagar.
+4. O usuário preenche os dados necessários no *checkout* (geralmente basta inserir o código de segurança) e confirma o pagamento.
 
-4. El usuario completa los datos requeridos en el *checkout* (generalmente sólo debe ingresar el código de seguridad) y confirma el pago.
+5. Assim que o pagamento é processado, o MP Server envia ao servidor da empresa uma notificação *Webhook* informando que há um novo pagamento, especificando a identificação do pagamento.
 
-5. Inmediatamente luego de procesado el pago, el MP Server  envía al Server de la empresa una notificación *Webhook* informando que hay una novedad,  especificando el identificador del recurso pago.
+6. Com a identificação do pagamento, o servidor da empresa pode consultar se o status do pagamento é `approved` ou `rejected`. Se o pagamento foi aprovado, você pode liberar a ordem e dar baixa no pagamento. Se o pagamento tiver sido recusado, o app do MercadoPago fará uma nova tentativa de cobrança.
 
-6. Con el identificador del pago, el Server de la empresa puede consultar si el estado del mismo es `approved` o `rejected`. Si el pago ha sido aprobado se puede liberar la orden y asentar el pago. Si el pago ha sido rechazado, la App de MP reintentará el efectuar el cobro.
-
-7. Se informa al cliente que el pago se procesó correctamente.
-
-
-### Detalle del QR
-
-El código QR generado debe idenficar en forma única al punto de venta desde donde se quiere pagar.
-Por ejemplo, puede generar una url como la siguiente:
-
-`` https://www.miempresa.com/pay-mp?locationId=01&positionId=01 ``
-
-Donde `locationId`representa la sucursal y `positionId`la caja desde donde se efectuo la venta. Este QR pertenece a la sucursal 01, caja 01.  
-Define los parámetros necesarios según tu modelo de negocio.
+7. O cliente é informado que o pagamento foi processado corretamente.
 
 
+## Detalhes do QR code
 
-### Obtención de la preferencia de pago
+O QR code gerado deve identificar de forma exclusiva o ponto de venda a partir do qual se deseja efetuar o pagamento. Por exemplo, você pode gerar uma URL como esta:
+``https://www.miempresa.com/pay-mp?locationId=01&positionId=01``
 
-Debes generar la preferencia de pago incluyendo el monto de la compra, para que tu cliente pueda ver el detalle de lo que va a pagar en su aplicación de Mercado Pago en su celular.  
+Onde `locationId` representa a filial e `positionId` o caixa onde a venda foi realizada. Este QR code pertence à filial 01, caixa 01.
 
-Cuando el comprador escanee el QR, recibirás una petición de Mercado Pago con los parámetros necesarios para que puedas identificar el punto de venta.  
+Defina os parâmetros necessários de acordo com o seu modelo de negócios.
 
-Este *request* se realiza enviando en el *header* `User-Agent` uno de los siguientes valores:    
+### Obtenha a preferência de pagamento
+
+Você deve gerar a preferência de pagamento, incluindo o valor da compra, para permitir que seu cliente visualize os detalhes do valor a pagar no aplicativo do
+MercadoPago no celular.  
+
+Assim que o cliente escaneia o QR code, você recebe uma requisição do MercadoPago com os parâmetros necessários para que possa identificar o ponto de venda.
+
+Esta requisição é feita ao enviar no header `User-Agent` um dos seguintes valores:
 
 *  `MercadoPago-Android/${version}`
 *  `MercadoPago-iOS/${version}`
 
- > ${version} es la versión de la aplicación instalada en el dispositivo   
+ > ${version} é a versão do aplicativo instalado no dispositivo
 
+Com base no ponto de venda a partir do qual é feita a requisição, deve-se criar a preferência de pagamento indicando o valor da venda e os detalhes do produto ou serviço.
 
-En base al punto de venta desde donde se realiza la petición, se debe [crear la preferencia de pago](/reference/preferences) indicando el monto de la venta y el detalle del producto o servicio.
+Para criar esse objeto, solicita-se um serviço do Mercado Pago.
 
-Para crear este objeto se llama a un servicio de Mercado Pago.
+Recomenda-se utilizar o campo `external_reference` (conteúdo livre, até 256 caracteres) para poder associar a preferência criada com o pedido de compra e seu possível pagamento.
 
-Se recomienda usar el campo `external_reference` (contenido libre, hasta 256 caracteres) para poder asociar la preferencia creada con la orden de compra y con su posible pago.
-
-
-La respuesta esperada en caso de que haya una venta pendiente y se haya generado la preferencia, será un estado HTTP 200 (OK), y en el cuerpo de la respuesta un JSON del siguiente formato:   
+A resposta esperada se houver uma venda pendente e uma preferência gerada será um status HTTP 200 (OK), e o corpo da resposta será JSON no seguinte formato:
 
 ```
 {
@@ -85,7 +78,7 @@ La respuesta esperada en caso de que haya una venta pendiente y se haya generado
 
 ```
 
-Si para el punto de venta no hay una orden pendiente de pago, se debe devolver un estado HTTP 400 (*Bad Request*) y en el cuerpo del JSON el siguiente formato:   
+Se não houver nenhum pedido pendente de pagamento para o ponto de venda, deve-se retornar um status HTTP 400 (Bad Request) e no corpo do JSON o seguinte formato:
 
 ```
 {
@@ -94,29 +87,26 @@ Si para el punto de venta no hay una orden pendiente de pago, se debe devolver u
 		"message": "YYYY"
 	}
 }
-
 ```
-Donde `message`es un campo opcional y `type`puede tomar uno de los siguientes valores:
 
-* in_process : Hay un pedido en proceso, aún no se puede determinar el monto a cobrar.
-* unavailable: No hay pedido en proceso ni pendiente de pago.
-* invalid: Los parámetros adicionales (id de sucursal, caja, etc.) hacen referencia a una ubicación desconocida.
-* timeout: El servidor del integrador no ha podido comunicarse con alguno de los otros sistemas (surtidor, POS, API de Mercado Pago) y ha abortado.
+Onde `message` é um campo opcional e `type` pode possuir um dos seguintes valores:
 
+* in_process: há um pedido em andamento, ainda não é possível determinar o valor a receber.
+* unavailable: não há pedidos em andamento ou pendente de pagamento.
+* invalid: os parâmetros adicionais (id da filial, caixa, etc.) referem-se a um local desconhecido.
+* timeout: o servidor do integrador foi incapaz de se comunicar com qualquer um dos outros sistemas (fornecedor, POS, API do MercadoPago) e cancelou a operação.
 
-> Es importante que en cualquier caso la respuesta lleve el header `Content-Type: application/json`.
-
-
-
-### Notificaciones
-
-Revisa la sección de [Webhooks](/guides/notifications/webhooks.es.md) para integrar las notificaciones de pago en tu sistema de gestión e impactar el resultado de mismo en forma inmediata, imprimiendo la factura corresponiente.
+> É importante que em qualquer caso a resposta contenha o header `Content-Type: application/json`.
 
 
-## Casos de prueba
+### Notificações
 
-Crea dos usuarios de prueba. Con uno simulas ser el vendedor y configuras las credenciales en la preferencia de pago. Con el segundo simulas ser el comprador, iniciando sesión en la aplicación móvil de Mercado Pago y utilizas las [tarjetas de prueba](/guides/payments/api/testing.es.md) para realizar pagos.
+Consulte a seção sobre [Webhooks](/guides/notifications/webhooks.es.md) para integrar as notificações de pagamento ao seu sistema de gestão e impactar o resultado imediatamente, imprimindo a nota fiscal correspondente.
 
+
+### Casos de teste
+
+Crie dois usuários de teste. Com um você age como vendedor e configura as credenciais na preferência de pagamento. Com o outro você age como cliente, iniciando a sessão no aplicativo mobile do MercadoPago e utiliza os [cartões de teste](/guides/payments/api/testing.es.md) para efetuar pagamentos.
 
 ```
 # Get access_token
@@ -135,23 +125,22 @@ curl -X POST \
 
 ```
 
-Antes de salir a producción verifica los siguientes escenarios.
+
+Antes de partir para a produção, verifique os seguintes cenários.
 
 
-
-| Caso 		| Escenario 				 | Respuesta de la App        |
-| ---- 		| ---- 				 | ----------        |
-| 1  	| El usuario escanea un código válido antes de finalizar el pedido.|Primero debes cargar. Podrás pagar una vez que termines el pedido.|
-| 2  	| El usuario escanea un código válido durante un pedido.|Ahora estás cargando. Podrás pagar una vez que termines el pedido.|
-| 3   	| El usuario escanea un código con parámetros inválidos. (Hace referencia a un punto de venta inexistente)|Algo no salió bien. Por favor, intenta nuevamente.|
-| 4  	| El usuario escanea  un código válido, una vez finalizado el pedido.|Se continúa con el flujo normal de pago.|
-| 5  	| El usuario escanea múltiples veces un código válido con pedido terminado.|Se continúa con el flujo normal de pago.|
-| 6    	| El usuario escanea un código válido con pedido terminado y paga|Se continúa con el flujo normal de pago.|
-| 7  	| El usuario escanea un código válido con pedido terminado y paga. Vuelve a escanear el QR una vez finalizado el pago (habiendo impactado la notificación *webhook*)|Se continúa con el flujo normal de pago. Cuando vuelve a escanear obtiene el mensaje: Primero debes realizar un pedido. Podrás pagar al finalizar.|
-| 8  	| El usuario escanea un código válido con pedido terminado y aborta el flujo. Paga con otro medio de pago y vuelve a escanear.|Primero debes cargar. Podrás pagar al finalizar el pedido.|
-| 9 	| El usuario escanea un código válido con pedido terminado y paga con tarjeta mock para *call4auth*. (Card holder name = CALL) Luego ingresa otro medio de pago y completar el flujo ok.|Mensaje de pago rechazado, solicitando que el usuario llame a la tarjeta. Luego se continúa con el flujo normal de pago.|
-| 10	| En caso de que lo permita, ingresar dos pedidos pendientes de pago|Se continúa con el flujo normal de pago (correspondiente al usuario que escaneó)|
-
+| Caso| Cenário 				                                                                        | Resposta do App                                                        |
+| ----| --------------------------------------------------------------------------     	   		  | ---------------------------------------------------------------        |
+| 1  	| O usuário escaneia um QR code válido antes de concluir o pedido.                        |Primeiro, insira o QR code. Você poderá efetuar o pagamento assim que concluir o pedido.|
+| 2  	| O usuário escaneia um QR code válido durante um pedido.                                 |Inserindo QR code. Você poderá efetuar o pagamento assim que concluir o pedido.|
+| 3   | O usuário escaneia um QR code com parâmetros inválidos. (Faz referência a um ponto de venda inexistente)|Algo deu errado. Por favor, tente novamente.            |
+| 4  	| O usuário escaneia um QR code válido após ter concluído o pedido.                       |Segue o fluxo normal de pagamento.                                      |
+| 5  	| O usuário escaneia várias vezes um QR code válido com pedido concluído.                 |Segue o fluxo normal de pagamento.                                      |
+| 6   | O usuário escaneia um QR code válido com pedido concluído e efetua o pagamento.         |Segue o fluxo normal de pagamento.                                      |
+| 7  	| O usuário escaneia um QR code válido com pedido concluído e efetua o pagamento. Escaneia o QR code novamente após ter concluído o pagamento (impactando a notificação webhook)|Segue o fluxo normal de pagamento. Ao repetir o escaneamento, obtém a mensagem: Primeiro você deve fazer um pedido. Você poderá efetuar o pagamento ao concluir o pedido.|
+| 8  	| O usuário escaneia um QR code válido com pedido concluído e cancela o fluxo. O usuário efetua o pagamento com outro meio de pagamento e escaneia o QR code novamente.|Primeiro, insira o QR code. Você poderá efetuar o pagamento ao concluir o pedido.|
+| 9 	| O usuário escaneia um QR code válido com pedido concluído e efetua o pagamento com cartão teste para call4auth. (Cardholder name = CALL) Em seguida, outro meio de pagamento é inserido e o fluxo é concluído.|Mensagem de pagamento recusado solicitando que o usuário ligue para a operadora do cartão. Em seguida, continua o fluxo normal de pagamento.|
+| 10	| Se permitido, insira dois pedidos com pagamentos pendentes.|Segue o fluxo normal de pagamento (correspondente ao usuário que efetuou o escaneamento)|
 
 
-> Cualquier consulta sobre tu integración puedes enviar un correo a instore@mercadopago.com
+> Em caso de dúvidas sobre sua integração, envie um e-mail para instore@mercadopago.com

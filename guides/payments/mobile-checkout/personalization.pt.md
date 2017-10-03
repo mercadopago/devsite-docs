@@ -9,25 +9,25 @@ sites_supported:
     - mlv
     - global
 ---
-# **Personalización**
+# **Personalização**
 
 > WARNING
 >
-> Pre-requisitos
+> PRÉ-REQUISITOS
 >
-> *  Esta guía asume que ya has seguido los pasos de la sección introducción y recibiendo pagos de la documentación para la instalación del SDK y la integración por defecto, junto con la creación de la preferencia de pago.
+> *  Esta guia presume que você já tenha seguido os passos da seção sobre introdução e recebimento de pagamentos da documentação para instalação do SDK e integração padrão, juntamente com a criação da preferência de pagamentos.
 
-## Personaliza tu preferencia de pago
+## Personalize sua preferência de pagamentos
 
-De ser necesario, al momento de crear la preferencia de pago en tu servidor puedes especificar restricciones como exclusiones de medios o tipos de pago específicos y establecer la cantidad de cuotas máximas o por default.
+Se necessário, ao criar a preferência de pagamentos em seu servidor, você poderá especificar restrições e exclusões de meios ou tipos de pagamentos específicos e definir o número máximo de parcelas ou deixar o valor padrão.
 
-#### Excluir Medios de Pago
+#### Exclua Meios de Pagamento
 
-Puedes especificar los tipos de medio de pago que no quieras soportar (Efectivo, Tarjetas de Crédito o Débito) excluyéndolos en la creación de la Checkout Preference.
+Você pode especificar os tipos de meio de pagamento que não quiser aceitar (Dinheiro, Cartões de Crédito ou Débito), excluindo-os ao criar a Checkout Preference.
 
 En el contenido de la preferencia de pago puedes agregar los medios de pago o tipos de medio que no quieras soportar.
 
-*Excluir un tipo de medio de pago específico:*
+*Excluir um tipo de meio de pagamento específico:*
 
 
 ```json
@@ -47,7 +47,7 @@ En el contenido de la preferencia de pago puedes agregar los medios de pago o ti
 }
 ```
 
-*Excluir más de un tipo de medio de pago:*
+*Excluir mais de um tipo de meio de pagamento:*
 
 
 ```json
@@ -69,9 +69,9 @@ En el contenido de la preferencia de pago puedes agregar los medios de pago o ti
 }
 ```
 
-O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, etc) quieres excluir del checkout:
+Você pode até mesmo determinar quais meios de pagamento específicos (Visa, Mastercard, etc.) deseja excluir do checkout:
 
-*Excluir un medio de pago específico:*
+*Excluir um meio de pagamento específico:*
 
 
 ```json
@@ -91,7 +91,7 @@ O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, 
 }
 ```
 
-*Excluir más de un medio de pago:*
+*Excluir mais de um meio de pagamento:*
 
 
 ```json
@@ -112,10 +112,9 @@ O incluso puedes determinar qué medios de pago específicos (Visa, Mastercard, 
 }
 ```
 
-#### Personalizar Cuotas
+#### Personalize o número de parcelas
 
-Puedes precisar la cantidad máxima de cuotas que quieres soportar para tus medios de pago:
-
+Você pode especificar o número máximo de parcelas que deseja permitir para seus meios de pagamento.
 
 ```json
 {
@@ -138,8 +137,7 @@ Puedes precisar la cantidad máxima de cuotas que quieres soportar para tus medi
 }
 ```
 
-O también establecer una cantidad de coutas por default que se seleccionará automáticamente, si es que existe para el medio de pago seleccionado por el usuario. De lo contrario, se le mostrará la pantalla de coutas para que él elija:
-
+Você também poderá definir um número de parcelas padrão a ser selecionado automaticamente, caso esteja disponível para o meio de pagamento selecionado pelo usuário. Caso contrário, a tela de parcelas será exibida para que o cliente selecione.
 
 
 
@@ -164,13 +162,13 @@ O también establecer una cantidad de coutas por default que se seleccionará au
 }
 ```
 
-## Personaliza el flujo de pago
+## Personalize o fluxo de pagamento
 
-La Preferencia de Flujo permite personalizar y configurar el flujo para que puedas lograr la mejor experiencia de pago.
+A Preferência do Fluxo permite personalizar e configurar o fluxo para que obtenha a melhor experiência de pagamento.
 
-En la clase FlowPreference podrás configurar, tanto si deseas mostrar una pantalla con el resumen de lo que se va a pagar (Revisa y Confirma) como si deseas comunicar campañas de descuentos, entre otras opciones.
+Na classe FlowPreference, você poderá definir se deseja exibir uma tela com o resumo do pagamento (Revisão e Confirmação) ou se deseja anunciar campanhas de descontos, entre outras opções.
 
-Para incorporar en el Checkout las opciones configuradas en la clase FlowPreference deberás agregar una instancia de la misma en el inicio del Checkout, como se muestra en el siguiente código:
+Para incorporar ao Checkout as opções definidas na classe FlowPreference, você deve adicionar uma requisição no início do Checkout, conforme exibido no código a seguir:
 
 [[[
 ```android
@@ -213,17 +211,17 @@ Para incorporar en el Checkout las opciones configuradas en la clase FlowPrefere
 ```
 ]]]
 
-Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.
+Como visto no exemplo, você pode ocultar o botão de Promoções com o método disableBankDeals para casos de pagamentos em uma única parcela.
 
-## Paga en tu Servidor
+## Pagamentos em seu Servidor
 
-Si necesitas hacer alguna validación en tu servidor al momento de realizar el pago, puedes configurar tu propio servicio de pagos.
+Se precisar fazer alguma validação em seu servidor no momento do pagamento, você pode configurar o seu próprio serviço de pagamentos.
 
-En la clase ServicePreference puedes configurar la URL y la URI de tu servicio junto con un Map para que puedas enviar la información que desees.
+Na classe ServicePreference, você pode configurar a URL e a URI do seu serviço juntamente com um Map para que possa enviar as informações que deseja.
 
-Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de MercadoPago.
+No momento de postar o pagamento, o SDK o fará em seu lugar, [o qual deverá criar o pagamento](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/)e efetuar as validações inerentes ao seu negócio. O SDK irá esperar receber um pagamento, da mesma forma que o serviço do Mercado Pago responde.
 
-Una vez creada la ServicePreference, debes iniciar el flujo de pago de MercadoPago, tal como se muestra en el siguiente código:
+Assim que a ServicePreference é criada, você deve iniciar o fluxo de pagamento do Mercado Pago, conforme indicado no código abaixo:
 
 [[[
 
