@@ -68,7 +68,7 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 | :------------ | :-------------- | :---------------------------- |
 | Pagamentos         | Botão de pagamento   | N/A                           |
 | Pagamentos         | Web Checkout    | N/A                           |
-| Pagamentos         | Mobile Checkout | `account_money`,`bolbradesco` |
+| Pagamentos         | Mobile Checkout | `account_money`               |
 | Pagamentos         | API             | N/A                           |
 | Assinaturas | Botão de pagamento   | `bolbradesco`, `giftcard`     |
 | Assinaturas | Checkout        | `bolbradesco`, `giftcard`     |

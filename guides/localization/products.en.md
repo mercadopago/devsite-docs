@@ -68,7 +68,7 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 | :------------ | :-------------- | :---------------------------- |
 | Payments      | Pay button      | N/A                           |
 | Payments      | Web Checkout    | N/A                           |
-| Payments      | Mobile Checkout | `account_money`,`bolbradesco` |
+| Payments      | Mobile Checkout | `account_money`               |
 | Payments      | API             | N/A                           |
 | Subscriptions | Pay button      | `bolbradesco`, `giftcard`     |
 | Subscriptions | Checkout        | `bolbradesco`, `giftcard`     |
