@@ -13,13 +13,13 @@ sites_supported:
 
 MercadoPago SDK makes it easy to create a payment experience in your application. You will instantly offer your users:
 
-----[mla, mpe, mlm, global]----
+----[mla, mpe, mlb, mlm, global]----
     - Card payments, payments in cash or bank transfer.
  	- **Financing**: payments in installments with the best possible financing fee.
  	- Discounts and promotions.
  	- Communication of payment results.
 ------------
-----[mlb, mlc, mlv, mco]----
+----[mlc, mlv, mco]----
 	- Card payments.
  	- **Financing**: payments in installments with the best possible financing fee.
  	- Discounts and promotions.
