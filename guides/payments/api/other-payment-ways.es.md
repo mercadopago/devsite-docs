@@ -406,6 +406,7 @@ Dirige a tu cliente a la URL que encontrarás en el atributo `external_resource_
 >
 > Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
 
+Para generar el pago utilizando PSE debes enviar el `payment_method_id` **pse** y el `financial_institution`:
 
 ```json
 {
@@ -421,8 +422,6 @@ Dirige a tu cliente a la URL que encontrarás en el atributo `external_resource_
   ]
 }
 ```
-
-Para generar el pago utilizando PSE debes enviar el `payment_method_id` **pse** y el `financial_institution`:
 
 [[[
 ```php
