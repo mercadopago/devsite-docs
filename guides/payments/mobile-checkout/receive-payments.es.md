@@ -355,7 +355,7 @@ Una vez creada la preferencia de pago y definido un evento a partir del cual com
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
 new MercadoPagoCheckout.Builder()
 .setActivity(activity)
-.setPublicKey("M_PUBLIC_KEY").setCheckoutPreference(checkoutPreference)
+.setPublicKey("ENV_PUBLIC_KEY").setCheckoutPreference(checkoutPreference)
 .startForPayment();
 }
 ```
@@ -366,7 +366,7 @@ El flujo de nuestro checkout esta basado en **NavigationController**. Si tu apli
 
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 
-  let checkout = MercadoPagoCheckout(publicKey: "M_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+  let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
   navigationController: self.navigationController!)
 
   checkout.start()
@@ -378,7 +378,7 @@ El flujo de nuestro checkout esta basado en **NavigationController**. Si tu apli
 ===
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "M_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     [checkout start];
 }
 ```
@@ -470,7 +470,7 @@ DecorationPreference decorationPreference = new DecorationPreference.Builder()
 new MercadoPagoCheckout.Builder()
 .setActivity(activity)
 .setDecorationPreference(decorationPreference)
-.setPublicKey("M_PUBLIC_KEY")
+.setPublicKey("ENV_PUBLIC_KEY")
 .setCheckoutPreference(checkoutPreference)
 .startForPayment();
 }
@@ -482,7 +482,7 @@ public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
     decorationPreference.enableDarkFont()
     MercadoPagoCheckout.setDecorationPreference(decorationPreference)
 
-    let checkout = MercadoPagoCheckout(publicKey: "M_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+    let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
     navigationController: self.navigationController!)
 
     checkout.start()
@@ -494,7 +494,7 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 [MercadoPagoCheckout setDecorationPreference:decorationPreference];
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "M_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     [checkout start];
 }
 ```

@@ -184,7 +184,7 @@ FlowPreference flowPreference = new FlowPreference.Builder()
 
 new MercadoPagoCheckout.Builder()
   .setActivity(this)
-  .setPublicKey("M_PUBLIC_KEY")
+  .setPublicKey("ENV_PUBLIC_KEY")
   .setCheckoutPreference(checkoutPreference)
   .setFlowPreference(flowPreference)
   .startForPayment();
@@ -205,7 +205,7 @@ let checkoutPreference = CheckoutPreference()
             checkoutPreference.payer = payer
             checkoutPreference.setId("MLA")
 
-let checkout = MercadoPagoCheckout(publicKey: "M_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
 navigationController: self.navigationController!)
 checkout.start()
 ```
@@ -224,7 +224,7 @@ NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 CheckoutPreference *checkoutPreference = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
 [checkoutPreference setSiteId:@"MLA"];
 
-MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "M_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
 [checkout start];
 ```
 ]]]
@@ -261,7 +261,7 @@ public void submit(View view) {
   new MercadoPagoCheckout.Builder()
           .setActivity(this)
           .setServicePreference(servicePreference)
-          .setPublicKey("M_PUBLIC_KEY")
+          .setPublicKey("ENV_PUBLIC_KEY")
           .setCheckoutPreference(checkoutPreference)
           .startForPayment();
 }
@@ -281,7 +281,7 @@ additionalInfo: ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]])
 
 MercadoPagoCheckout.setServicePreference(servicePreference)
 
- let checkout = MercadoPagoCheckout(publicKey: "M_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference, navigationController: self.navigationController!)
+ let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference, navigationController: self.navigationController!)
 
 checkout.start()
 ```
@@ -300,7 +300,7 @@ NSDictionary *extraParams = @{@"merchant_access_token" : @"mla-cards-data" };
 [servicePreference setCreatePaymentWithBaseURL:@"https://your-base-url.com" URI:@"/your-create-payment-uri" additionalInfo:extraParams];
 [MercadoPagoCheckout setServicePreference:servicePreference];
     
-MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "M_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     
 [checkout start];
 ```
