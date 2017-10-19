@@ -89,7 +89,6 @@ Para poder recibir pagos de medio en efectivo solamente debes recolectar el `ema
 
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
-  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
   $payment->description = "Title of what you are paying for";
   $payment->payment_method_id = "rapipago";
   $payment->payer = array(
@@ -108,7 +107,6 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100)
-      .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setPaymentMethodId("rapipago")
       .setPayer(new Payer("test_user_19653727@testuser.com"));
@@ -123,7 +121,6 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  token: 'ff8080814c11e237014c1ff593b57b4d'
   description: 'Title of what you are paying for',
   payment_method_id: 'rapipago',
   payer: {
@@ -145,7 +142,6 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment = MercadoPago::Payment.new()
 payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
 payment.description = 'Title of what you are paying for'
 payment.payment_method_id = "rapipago"
 payment.payer = {
