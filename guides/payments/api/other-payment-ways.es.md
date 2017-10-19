@@ -423,14 +423,14 @@ Para generar el pago utilizando PSE debes enviar el `payment_method_id` **pse** 
 }
 ```
 
-- Redirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago en PSE, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](/guides/notifications/webhooks.es.md).
+Redirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago en PSE, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](/guides/notifications/webhooks.es.md).
 
 
 > NOTE
 >
 > Nota
 >
-> Las preferencias de pago con PSE vencen a los 20 minutos si es que no se finalizó el flujo de pago, si ocurrió esto se informara con una notificación webhook como un pago rechazado.
+> Las preferencias de pago en PSE vencen a los 20 minutos si es que no se finalizó el flujo de pago, si ocurre se informara mediante una notificación webhook.
 
 
 [[[
