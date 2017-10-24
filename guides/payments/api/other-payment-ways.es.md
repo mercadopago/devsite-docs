@@ -426,7 +426,7 @@ Redirige a tu cliente a la URL que encontrarás en el atributo `external_resourc
 >
 > Nota
 >
-> Las preferencias de pago en PSE vencen a los 20 minutos si es que no se finalizó el flujo de pago, si ocurre esto, se informara mediante una notificación webhook.
+> Las preferencias de pago en PSE vencen a los 20 minutos si es que no se finalizó el flujo de pago, si ocurre esto, se informará mediante una notificación webhook.
 
 
 [[[
