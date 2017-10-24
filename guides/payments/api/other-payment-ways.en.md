@@ -396,7 +396,7 @@ Direct your customer to the URL that you will find in the `external_resource_url
 
 > NOTE
 >
-> Nota
+> Note
 >
 > Check all available financial institutions (_financial\_institutions_) through [payment_methods](#get-the-payment-methods-available) resource:
 
@@ -422,7 +422,7 @@ Redirect your customer to the URL that you will find in the `external_resource_u
 
 > NOTE
 >
-> Nota
+> Note
 >
 > The payment preferences on PSE expire at 20 minutes if the payment flow hasn't finished. If this ocurrs you will be notified through a webhook notification.
 
@@ -546,7 +546,7 @@ payment.save();
 
 > NOTE
 >
-> Nota
+> Note
 >
 > The `entity_type` expected are `individual` (People) or `association` (Companies). 
 
