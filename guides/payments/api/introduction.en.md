@@ -33,4 +33,20 @@ As soon as you have [tested your application](/guides/payments/api/testing.en.md
 
 Your application will be automatically activated. All you should do is replace the sandbox keys with the production ones in your code.
 
+## Go live requisites 
+
+Once you have tested you application in _Sandbox_ mode, you must complete  Una vez que hayas probado tu aplicación en Modo _Sandbox_, you have to complete the homologation process consisting of:
+
+* Using the _SDK_ mercadopago.js to consult the payment methods, post payments ensure a good user experience and avoid fraudulent transactions.
+* Use the `data_checkout` attribute in the` input` tags to handle data securely and prevent it from reaching your server. Make sure you do NOT include the `name` attribute in these tags.
+* Have an SSL certificate to ensure safe browsing and that the payment form is sent via HTTPS.
+* Communicate correctly the result of the payment to the user to try the recovery of the payment in case of rejection. To do this, use the [recommended response codes] (http://beta.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
+* Communicate the [promotions and financing possibilities] (https://www.mercadopago.com.ar/promociones) offered by Mercado Pago. You can include our institutional [banners] (https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales).
+
+
+> When you have fulfilled the requirements, you must complete the form **I want to go live** that you can find in your account [credentials] (https://www.mercadopago.com/mla/account/credentials)
+
+The failure of fulfillmente of these rules may involve: not processing payments and legal actions in accordance with the [terms and conditions] (https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299) .
+You must have a policy of terms and conditions, in which you specify that you are responsible for all the data that is entered into your site.
+
 #### [Start integrating the API](/guides/payments/api/receiving-payment-by-card.es.md)
