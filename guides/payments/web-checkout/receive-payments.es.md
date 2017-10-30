@@ -120,11 +120,11 @@ item = MercadoPago::Item.new({
   currency_id:  "[FAKER][CURRENCY][ACRONYM]",
   unit_price:   [FAKER][COMMERCE][PRICE]
 })
-# Create an payer object
+# Create a payer object
 payer = MercadoPago::Payer.new({
   email: "[FAKER][INTERNET][FREE_EMAIL]"
 }) 
-# Create an preference object
+# Create a preference object
 preference = MercadoPago::Preference.new({
   items: [item],
   payer: payer
