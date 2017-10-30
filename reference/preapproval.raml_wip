@@ -1,0 +1,10 @@
+title: Preapprovals API
+version: 1.0
+baseUri: https://api.mercadopago.com 
+/preapproval:
+  post:
+/preapproval/{id}:
+  get:
+  put:
+/preapproval/search:
+  get:

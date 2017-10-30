@@ -1,0 +1,8 @@
+title: Subscriptions API
+version: 1.0
+baseUri: https://api.mercadopago.com 
+/subscriptions:
+  post:
+/subscriptions/{id}:
+  get:
+  put:

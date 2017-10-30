@@ -1,4 +1,4 @@
-# How to Integrate the Marketplace by API
+# How to Integrate the Marketplace via API
 
 > WARNING
 >
@@ -10,7 +10,7 @@ To begin, you need to:
 
 1. Register a Marketplace application.
 2. Request your sellers to connect.
-3. Create payment preferences on behalf of your sellers.
+3. Create payments on behalf of your sellers.
 
 ## 1. How to create your application
 
@@ -91,7 +91,7 @@ In the response, in addition to the `access_token` and `public_key` of the selle
 
 This process must be performed periodically to ensure that the user’s credentials are stored in your system and valid, since they are valid for 6 months.
 
-If you face, in the payment flow, an error related to the Access Token that you are using, we suggest you to automatically refresh and retry the payment, before showing an error to the buyer.
+If you face, in the payment flow, an error related to the Access Token that you are using, we suggest you to automatically refresh and retry the payment, before showing an error to the customer.
 
 ```curl
 curl -X POST \

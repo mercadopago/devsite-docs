@@ -1,68 +1,122 @@
+<%
+  locals       = (current_page.metadata[:locals])
+  lang         = locals[:lang]
+  api          = locals[:endpoint]
+  slug         = locals[:slug]
+  method_name  = locals[:method_name]
+  builder      = UIBuilder::TreeTableBuilder.new(locals) 
+  api.set_lang(lang)
+%>
 
-<% endpoint = APIReferenceGenerator.endpoints[locals[:endpoint]] %>
+<% pattern = /[\{]([a-zA-z]+)[\}]/m %>
+<h1><%= "/#{api.version}#{slug.gsub(pattern, '<span class=\'slug\'>:\0</span>').gsub(/[\{\}]/, '')}" %></h1>
+<p><%= api.method_description(slug, method_name) %></p>
 
-<h1> <%= endpoint["name"] %> </h1>
+<h2> HTTP REQUEST </h2>
 
-<p> <%= endpoint["description"] %> </p>
+<blockquote> 
+  <%= method_name.upcase %> <%= api.uri_request(slug) %> 
+</blockquote>
 
+<% example = api.method_example(slug, method_name) %>
 
+<% if example %>
+  <h4> Ejemplo </h4>
+  <div class="code-container" data-slideout-ignore>
+    <div id="editor_child_1" class="code_editor" language="bash">
+      <pre class="line-numbers"><code class="language-bash"><%= example %></code></pre>
+    </div>
+  </div>
+<% end %>
 
-<table>
-  <tbody>
-    <% endpoint["actions"].each do |action| %>
-      <tr>
-        <td> <%= action["method"] %> </td>
-        <td> <%= action["uri"] %> </td>
-        <td> <%= action["description"] %> </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<h3> Headers </h3>
 
-<h2> Parameters </h2>
+<div class = "tree-table">
+  <div class = "tree-table-header">
+    <span>Parametro</span><span>Tipo</span><span>Descripcion</span>
+  </div>
+  <div class = "tree-table-row">
+    <span> accept </span>
+    <span> string </span>
+    <span> application/json </span>
+  </div>
+  <div class = "tree-table-row">
+    <span> content-type </span>
+    <span> string </span>
+    <span> application/json </span>
+  </div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <td> Attribute </td>
-      <td> Type </td>
-      <td> Descriptions </td>
-    </tr>
-  </thead>
-  <tbody>
-    <% endpoint["attributes"].each do |attribute, info| %>
-      <tr>
-        <td> <%= attribute %> </td>
-        <td> <%= info["data_type"] %> </td>
-        <td> <%= info["description"] %> </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% queryParameters = api.query_parameters(slug, method_name) %>
+<% urlParameters = api.urlParameters(slug, method_name) %>
 
-<h2> Error Codes </h2>
+<% if (urlParameters) %>
+  <h3> Parametros de url </h3>
+  <div class = "tree-table">
+    <div class = "tree-table-header">
+      <span>Campo</span><span>Tipo</span><span>Descripción</span>
+    </div> 
+    <%= builder.build_rows(urlParameters) %>
+  </div>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <td> Error </td>
-      <td> Code </td>
-      <td> Description </td>
-    </tr>
-  </thead>
-  <tbody>
-    <% endpoint["errors"].each do |error, infos| %>
-      <tr>
-        <td rowspan="<%=infos.count %>"> <%= error %> </td>
-        <td> <%= infos[0]["code"] %></td>
-        <td> <%= infos[0]["description"] %></td>
-      </tr>
-      <% (infos.count - 2).times do |t| %>
-        <tr>
-          <td> <%= infos[t+1]["code"] %></td>
-          <td> <%= infos[t+1]["description"] %></td>
-        </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
+<% if (queryParameters) %>
+  <h3> Parametros GET </h3>
+  <div class = "tree-table">
+    <div class = "tree-table-header">
+      <span>Campo</span><span>Tipo</span><span>Descripción</span>
+    </div> 
+    <%= builder.build_rows(queryParameters) %>
+  </div>
+<% end %>
+ 
+
+<% body = api.body(slug, method_name) %>
+
+<% if body %> 
+  <h3> Parametros de Body </h3> 
+  <% body.each do |type, message| %> 
+    <% properties = api.get_properties(message) %> 
+    <% if properties %> 
+      <div class = "tree-table">
+        <div class = "tree-table-header">
+          <span>Parametro</span>
+          <span>Tipo</span>
+          <span>Descripcion</span>
+        </div>
+        <%= builder.build_rows(properties) %>
+      </div>
+    <% end %> 
+  <% end %>
+<% end %>
+
+<h2> HTTP RESPONSE </h2>
+
+<div class = "tree-table">
+  <div class = "tree-table-row">
+      <span> 200 SUCCESS</span>
+      <span>  </span>
+      <span> La solicitud ha sido procesada con exito</span>
+  </div>
+  <div class = "tree-table-row">
+      <span> 400 BAD_REQUEST</span>
+      <span class="tag-success"> </span>
+      <span> La peticion ha sido realizada erroneamente o con datos no validos</span>
+  </div>
+  <div class = "tree-table-row">
+      <span> 401 UNAUTHORIZED</span>
+      <span class="tag-success"> </span>
+      <span> La peticion realizada no ha sido autorizada.</span>
+  </div>
+  <div class = "tree-table-row">
+      <span> 403 FORBIDDEN</span>
+      <span > </span> 
+      <span> El usuario que esta realizando la peticion no esta autorizado.</span>
+  </div>
+  <div class = "tree-table-row">
+      <span> 404 NOT_FOUND</span>
+      <span > </span>
+      <span> El recurso buscado no existe o ha sido deprecado</span>
+  </div>
+</div>
+ 

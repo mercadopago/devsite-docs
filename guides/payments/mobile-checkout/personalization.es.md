@@ -272,10 +272,12 @@ public void submit(View view) {
 let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
 let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
 
-let checkoutPreference = CheckoutPreference()
-checkoutPreference.items = [item]
-checkoutPreference.payer = payer
-checkoutPreference.setId("MLA")
+
+	let checkoutPreference = CheckoutPreference()
+	checkoutPreference.items = [item]
+	checkoutPreference.payer = payer
+	checkoutPreference.setId("[FAKER][GLOBALIZE][UPPER_SITE_ID]")
+
 
 let servicePreference = ServicePreference()
 servicePreference.setCreatePayment(baseURL: "https://your-base-url.com/", URI: "/your-create-payment-uri",
@@ -288,22 +290,24 @@ MercadoPagoCheckout.setServicePreference(servicePreference)
 checkout.start()
 ```
 ```Objective-c
-Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+ 
+	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+    Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"payer@email.com" type:nil identification:nil entityType:nil];
 
-Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
-    
-NSArray *items = [NSArray arrayWithObjects:item, item, nil];
-    
-CheckoutPreference *checkoutPreference = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
-[checkoutPreference setSiteId:@"MLA"];
-    
-ServicePreference * servicePreference = [[ServicePreference alloc] init];
-NSDictionary *extraParams = @{@"merchant_access_token" : @"mla-cards-data" };
-[servicePreference setCreatePaymentWithBaseURL:@"https://your-base-url.com" URI:@"/your-create-payment-uri" additionalInfo:extraParams];
-[MercadoPagoCheckout setServicePreference:servicePreference];
-    
-MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
-    
-[checkout start];
+    NSArray *items = [NSArray arrayWithObjects:item, item, nil];
+
+    self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
+	[self.pref setSiteId:@"[FAKER][GLOBALIZE][UPPER_SITE_ID]"];
+
+	ServicePreference * servicePreference = [[ServicePreference alloc] init];
+	 NSDictionary *extraParams = @{
+                                  @"merchant_access_token" : @"mla-cards-data" };
+	[servicePreference setCreatePaymentWithBaseURL:@"https://private-0d59c-mercadopagoexamples.apiary-mock.com" URI:@"/create_payment" additionalInfo:extraParams];
+	[MercadoPagoCheckout setServicePreference:servicePreference];
+
+	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
+		    self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
+    [self.mpCheckout start];
+	} 
 ```
 ]]]

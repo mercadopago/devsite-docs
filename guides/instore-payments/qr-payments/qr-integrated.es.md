@@ -57,7 +57,7 @@ Define los parámetros necesarios según tu modelo de negocio.
 
 ### Obtención de la preferencia de pago
 
-Debes generar la preferencia de pago incluyendo el monto de la compra, para que tu cliente pueda ver el detalle de lo que va a pagar en su aplicación de Mercado Pago en su celular.  
+Debes generar la preferencia de pago incluyendo el monto de la compra, para que tu cliente pueda ver el detalle de lo que va a pagar en su aplicación de Mercado Pago en su celular.  
 
 Cuando el comprador escanee el QR, recibirás una petición de Mercado Pago con los parámetros necesarios para que puedas identificar el punto de venta.  
 
@@ -131,7 +131,7 @@ AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https:
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=$AT" \
--d '{"site_id":"MLA"}'
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 
 ```
 

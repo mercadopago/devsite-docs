@@ -1,0 +1,5 @@
+title: Invoices API
+version: 1.0
+baseUri: https://api.mercadopago.com 
+/invoices/{id}:
+  get:

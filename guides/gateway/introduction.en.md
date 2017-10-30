@@ -1,10 +1,10 @@
-# Gateway
+# Gateway Mode
 
-En Mercado Pago es posible transaccionar utilizando tus propios números de comercio. A este modo de procesamiento lo denominamos _Gateway_.
+MercadoPago offers you the possibility of operating with your own merchant numbers. This processing mode is called Gateway.
 
-## Consideraciones
+##Considerations
 
-* Para poder utilizar este modo de procesamiento en producción:
-	* Debes estar dado de alta en los respectivos adquirentes de tu país
-	* Es necesario ponerte en contacto con tu ejecutivo de cuentas
-* No obstante lo mencionado anteriormente, puedes utilizar libremente el modo Sandbox para probar el funcionamiento del producto y adelantar tu integración.
+* To be able to use this processing mode in the production mode:
+	* You must be registered with the respective acquirers of your country.
+	* You need to contact your account manager.
+* Nevertheless, you will be able to freely use the Sandbox mode to test the product operation and advance your integration.
