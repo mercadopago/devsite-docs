@@ -256,7 +256,7 @@ Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado
 	let checkoutPreference = CheckoutPreference()
 	checkoutPreference.items = [item]
 	checkoutPreference.payer = payer
-	checkoutPreference.setId("MLA")
+	checkoutPreference.setId("[FAKER][GLOBALIZE][UPPER_SITE_ID]")
 
 	let servicePreference = ServicePreference()
 	servicePreference.setCreatePayment(baseURL: "https://your-base-URL.com/", URI: "your_create_preference_URI",
