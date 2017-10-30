@@ -1,0 +1,5 @@
+title: Identification Types API
+version: 1.0
+baseUri: https://api.mercadopago.com 
+/identification_types:
+  get:

@@ -1,0 +1,9 @@
+title: PaymentMethods API
+version: 1.0
+baseUri: https://api.mercadopago.com 
+/payment_methods:
+  get:
+/payment_methods/installments:
+  get:
+/payment_methods/card_issuers:
+  get:

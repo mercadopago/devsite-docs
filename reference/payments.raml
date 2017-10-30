@@ -1,21 +1,114 @@
 title: Payments API
-version: 1.0
-baseUri: https://api.mercadopago.com
+version: v1
+baseUri: https://api.mercadopago.com/
 documentation:
-  - title: Pagos # es
-    body: API de Pagos
-  - title: Payments # en
+  es:
+    title: Pagos
+    body: Este servicio permite crear, modificar o leer pagos.
+  en:
+    title: Payments
     body: Payments API
-  - title: Pagamentos # pt
+  pt:
+    title: Pagamentos
     body: API do Pagamentos
 uses:
-  Payments: descriptors/payment.raml
+  PostPayment: descriptors/post_payment.raml
+  Payment: descriptors/payment.raml
+  GetPayment: descriptors/get_payment.raml
+  PutPayment: descriptors/put_payment.raml
 /payments:
   post:
-  put:
-  /{id}:
-    get:
-      responses:
-        200:
+    example: post_payment
+    description:
+      es: "Esta llamada POST es usada para crear un nuevo pago."
+      en: "A POST method which creates a new payment."
+    queryParameters:
+      access_token:
+        description:
+          es: "El access_token del comercio."
+        required: true
+        type: String
+    body:
+      application/json:
+        type: PostPayment
+    responses:
+      200:
+        body:
           application/json:
-            type: Payment
+            example: payment_response
+      400:
+        body:
+          application/json:
+            example: 400_response
+      401:
+        body:
+          application/json:
+            example: 401_response 
+      403:
+        body:
+          application/json:
+            example: 403_response
+      404:
+        body:
+          application/json:
+            example: 404_response
+/payments/{id}:
+  get:
+    example: get_payment
+    description:
+      es: Esta llamada GET devuelve la información de un pago cuyo ID corresponde al paraemtro con el mismo nombre especificado en la URL.
+    queryParameters:
+      access_token:
+        description:
+          es: "El access_token del comercio."
+        required: true
+        type: String
+    urlParameters:
+      id:
+        description: 
+          es: Id del pago a consultar
+        required: true
+        type: String 
+  put:
+    example: put_payment
+    description: 
+      es: Permite actualizar infomración sobre un pago creado.
+    queryParameters:
+      access_token:
+        description:
+          es: "El access_token del comercio."
+        required: true
+        type: String
+    urlParameters:
+      id:
+        description: 
+          es: Id del pago a actualizar
+        required: true
+        type: String
+    body:
+      application/json:
+        type: PutPayment
+/payments/search:
+  get:
+    example: search_payment
+    description: 
+      es: Permite obtener informacion de un pago a partir de un conjunto de filtros.
+    queryParameters:
+      access_token:
+        description:
+          es: "El access_token del comercio."
+        required: true
+        type: String
+      payer_id:
+        description:
+          es: "Identificador del Pagador"
+        type: String
+      status:
+        description:
+          es: "Identificador del Pagador"
+        type: String
+      external_reference:
+        description:
+          es: "Identificador personalizado por el comercio"
+        type: String
+      

@@ -1,0 +1,12 @@
+{
+    "message": "Invalid card_token_id",
+    "error": "bad_request",
+    "status": 400,
+    "cause": [
+        {
+            "code": 3003,
+            "description": "Invalid card_token_id",
+            "data": null
+        }
+    ]
+}
