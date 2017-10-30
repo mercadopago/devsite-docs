@@ -272,7 +272,7 @@ As soon as the `ServicePreference` has been created, you must start the payment 
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
     self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
-	[self.pref setSiteId:@“MLA”];
+	[self.pref setSiteId:@"[FAKER][GLOBALIZE][UPPER_SITE_ID]"];
 
 	ServicePreference * servicePreference = [[ServicePreference alloc] init];
 	 NSDictionary *extraParams = @{

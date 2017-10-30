@@ -363,6 +363,7 @@ In order to get the installments available:
 
 
 ```javascript
+
 Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount

@@ -244,7 +244,7 @@ Para realizar el pago solamente debes realizar un _API call_:
 ```php
 <?php  
     ===
-    El valor de la propiedad `status` indicara el estado de un pago (`approved`, `rejected` or `in_process`).
+    El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected or **in_process**).
     ===
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -268,7 +268,7 @@ Para realizar el pago solamente debes realizar un _API call_:
 ```
 ```java
 ===
-El valor de `getStatus()` indicara el estado del pago (`approved`, `rejected` or `in_process`).
+El valor de **getStatus()** indicara el estado de un pago (**approved**, **rejected or **in_process**). 
 ===
 
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
@@ -290,7 +290,7 @@ System.out.println(payment.getStatus());
 ```
 ```node
 ===
-El valor de la propiedad `status` indicara el estado de un pago (`approved`, `rejected` or `in_process`).
+El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected or **in_process**).
 ===
 
 var mercadopago = require('mercadopago');
@@ -319,7 +319,7 @@ mercadopago.payment.save(payment).then(function (data) {
 ```
 ```ruby
 ===
-El valor de la propiedad `status` indicara el estado de un pago (`approved`, `rejected` or `in_process`).
+El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected or **in_process**).
 ===
 
 require 'mercadopago'
@@ -340,7 +340,7 @@ payment.save()
 ``` 
 ```csharp
 ===
-El valor de la propiedad `status` indicara el estado de un pago (`approved`, `rejected` or `in_process`).
+El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected or **in_process**).
 ===
 
 using MercadoPago;
@@ -402,6 +402,7 @@ El campo `installments` corresponde a la cantidad de cuotas que el comprador eli
 Para obtener las cuotas disponibles
 
 ```javascript
+
 Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount

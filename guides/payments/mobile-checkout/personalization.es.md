@@ -276,7 +276,7 @@ Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
     self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
-	[self.pref setSiteId:@“MLA”];
+	[self.pref setSiteId:@"[FAKER][GLOBALIZE][UPPER_SITE_ID]"];
 
 	ServicePreference * servicePreference = [[ServicePreference alloc] init];
 	 NSDictionary *extraParams = @{

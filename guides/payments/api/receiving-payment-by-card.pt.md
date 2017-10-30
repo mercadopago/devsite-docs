@@ -112,6 +112,7 @@ Para obter o meio de pagamento, utilize o método `MercadoPago.getPaymentMethod(
 
 
 ```javascript
+
 Mercadopago.getPaymentMethod({
     "bin": bin
 }, setPaymentMethodInfo);
@@ -363,6 +364,7 @@ O campo installments corresponde ao número de parcelas selecionado pelo comprad
 Para obter as parcelas disponíveis:
 
 ```javascript
+
 Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount
