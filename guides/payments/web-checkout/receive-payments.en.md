@@ -16,121 +16,148 @@ To create a payment preference you must install [Mercado Pago SDK](https://githu
 
 [[[
 ```php
-
 <?php  
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK.setClientId("ENV_CLIENT_ID");
+  MercadoPago\SDK.setClientSecret("ENV_CLIENT_SECRET");;
 ?>
 ```
 ```java
-
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPago.SDK.setClientId("ENV_CLIENT_ID");
+MercadoPago.SDK.setClientSecret("ENV_CLIENT_SECRET");
 ```
 ```node
-
-var mercadopago = require('mercadopago');
 mercadopago.configure({
-    access_token: 'ENV_ACCESS_TOKEN'
+  client_id: 'ENV_CLIENT_ID',
+  client_secret: 'ENV_CLIENT_SECRET'
 });
 ```
 ```ruby
-
-require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+MercadoPago::SDK.client_id = "ENV_CLIENT_ID"
+MercadoPago::SDK.client_secret = "ENV_CLIENT_SECRET"
+```
+```csharp
+using MercadoPago;
+// ...
+MercadoPago.SDK.ClientId = "ENV_CLIENT_ID";
+MercadoPago.SDK.ClientSecret = "ENV_CLIENT_SECRET";
+// ...
 ```
 ]]]
 
-Then you must add the attributes of your payment preference and create a preference:
+Then, you must add the attributes of your payment preference and create a preference:
+
 
 [[[
 ```php
 
 <?php
-
-$preference = new MercadoPago\Preference();
-
-$item = new MercadoPago\Item();
-$item->id = "1234";
-$item->title = "FAKER][COMMERCE][PRODUCT_NAME]";
-$item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
-$item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
-$item->unit_price = [FAKER][COMMERCE][PRICE];
-
-$payer = new MercadoPago\Payer();
-$payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
-
-$preference->items = array($item);
-$preference->payer = $payer;
-$preference->save();
-
+  # Create a preference object
+  $preference = new MercadoPago\Preference();
+  # Create an item object
+  $item = new MercadoPago\Item();
+  $item->id = "1234";
+  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+  $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+  $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
+  $item->unit_price = [FAKER][COMMERCE][PRICE];
+  # Create a payer object
+  $payer = new MercadoPago\Payer();
+  $payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
+  # Setting preference properties
+  $preference->items = array($item);
+  $preference->payer = $payer;
+  # Save and posting preference
+  $preference->save();
 ?>
-
 ```
 ```java
-
+// Create a preference object
 Preference preference = new Preference();
-
+// Create an item object
 Item item = new Item();
 item.setId("1234")
     .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
     .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
     .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
-
+// Create a payer object
 Payer payer = new Payer();
 payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
-
+// Setting preference properties
 preference.setPayer(payer);
 preference.appendItem(item);
+// Save and posting preference
 preference.save();
-
 ```
 ```node
-
-	var preference = {}
-
-  var item = {
-    id: '1234',
-    title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-    quantity: [FAKER][NUMBER][BETWEEN][1,10],
-    currency_id: '[FAKER][CURRENCY][ACRONYM]',
-    unit_price: [FAKER][COMMERCE][PRICE]
-  }
-
-  var payer = {
-    email: "[FAKER][INTERNET][FREE_EMAIL]"
-  }
-
-  preference.items = [item]
-  preference.payer = payer
-
-  mercadopago.preferences.create(preference).then(function (data) {
-     // Do Stuff...
-   }).catch(function (error) {
-     // Do Stuff...
-   });
-
+  // Create a preference structure
+	var preference = {
+    items: [
+      item = {
+        id: '1234',
+        title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+        quantity: [FAKER][NUMBER][BETWEEN][1,10],
+        currency_id: '[FAKER][CURRENCY][ACRONYM]',
+        unit_price: [FAKER][COMMERCE][PRICE]
+      }
+    ],
+    payer = {
+      email: '[FAKER][INTERNET][FREE_EMAIL]'
+    }
+  };
+ 
+  mercadopago.preferences.create(preference)
+    .then(function (preference) {
+      // Do something if preference has been created successfully
+    }).catch(function (error) {
+      // If an error has occurred
+    });
 ```
-```ruby
-
-preference = MercadoPago::Preference.new()
-
-item = MercadoPago::Item.new()
-item.id = "1234"
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
-
-payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
-
-preference.items = [item]
-preference.payer = payer
-
-preference.save
-
+```ruby 
+# Create an item object
+item = MercadoPago::Item.new({
+  id:           "1234",
+  title:        "[FAKER][COMMERCE][PRODUCT_NAME]",
+  quantity:     [FAKER][NUMBER][BETWEEN][1,10],
+  currency_id:  "[FAKER][CURRENCY][ACRONYM]",
+  unit_price:   [FAKER][COMMERCE][PRICE]
+})
+# Create a payer object
+payer = MercadoPago::Payer.new({
+  email: "[FAKER][INTERNET][FREE_EMAIL]"
+}) 
+# Create a preference object
+preference = MercadoPago::Preference.new({
+  items: [item],
+  payer: payer
+})
+# Save and posting preference
+preference.save()
+```
+```csharp
+using MercadoPago;
+using MercadoPago.Resources;
+using MercadoPago.DataStructures.Preference;
+// ...
+// Create a preference object
+Preference preference = new Preference(); 
+# Adding an item object
+preference.Items.Add(
+  new Item()
+  {
+    Id = "1234",
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Quantity = [FAKER][NUMBER][BETWEEN][1,10],
+    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+    UnitPrice = (float)[FAKER][COMMERCE][PRICE]
+  }
+);
+// Setting a payer object as value for Payer property
+preference.Payer = new Payer(){
+  Email = "[FAKER][INTERNET][FREE_EMAIL]"
+}
+// Save and posting preference
+preference.Save();
 ```
 ]]]
 
@@ -145,6 +172,7 @@ You must submit your buyer’s `email`. If you include information such as ident
 [[[
 ```php
 <?php
+  // ...
   $payer = new MercadoPago\Payer();
   $payer->name = "Charles";
   $payer->surname = "[FAKER][NAME][LAST_NAME]";
@@ -163,62 +191,103 @@ You must submit your buyer’s `email`. If you include information such as ident
     "street_number" => [FAKER][ADDRESS][BUILDING_NUMBER],
     "zip_code" => "[FAKER][ADDRESS][ZIP]"
   );
+  // ...
 ?>
 ```
 ```java
+// ...
 Payer payer = new Payer();
 payer.setName("Charles")
-  .setSurname("[FAKER][NAME][LAST_NAME]")
-  .setEmail("[FAKER][INTERNET][FREE_EMAIL_FROM_NAME]['Charles']")
-  .setDateCreated("2018-06-02T12:58:41.425-04:00")
-  .setPhone((new Phone("[FAKER][PHONE_NUMBER][AREA_CODE]", "[FAKER][PHONE_NUMBER][PHONE_NUMBER]")))
-  .setIdentification((new Identification("DNI", "12345678")))
-  .setAddress((new Address("[FAKER][ADDRESS][STREET_NAME]", [FAKER][ADDRESS][BUILDING_NUMBER], "[FAKER][ADDRESS][ZIP]")));
+     .setSurname("[FAKER][NAME][LAST_NAME]")
+     .setEmail("[FAKER][INTERNET][FREE_EMAIL_FROM_NAME]['Charles']")
+     .setDateCreated("2018-06-02T12:58:41.425-04:00")
+     .setPhone(new Phone()
+        .setAreaCode("[FAKER][PHONE_NUMBER][AREA_CODE]")
+        .setPhoneNumber("[FAKER][PHONE_NUMBER][PHONE_NUMBER]"))
+     .setIdentification(new Identification()
+        .setType("DNI")
+        .setNumber("12345678"))
+     .setAddress(new Address()
+        .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
+        .setBuildingNumber("[FAKER][ADDRESS][BUILDING_NUMBER]")
+        .setZipCode("[FAKER][ADDRESS][ZIP]"));
+// ...
 ```
 ```node
+// ...
 var payer = {
-        "name": "Charles",
-        "surname": "[FAKER][NAME][LAST_NAME]",
-        "email": "[FAKER][INTERNET][FREE_EMAIL_FROM_NAME]['Charles']",
-        "date_created": "2015-06-02T12:58:41.425-04:00",
-        "phone": {
-            "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
-            "number": "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
-        },
-        "identification": {
-            "type": "DNI",
-            "number": "12345678"
-        },
-        "address": {
-            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
-            "zip_code": "[FAKER][ADDRESS][ZIP]"
-        }
-      }
+  name: "Charles",
+  surname: "[FAKER][NAME][LAST_NAME]",
+  email: "[FAKER][INTERNET][FREE_EMAIL_FROM_NAME]['Charles']",
+  date_created: "2015-06-02T12:58:41.425-04:00",
+  phone: {
+    area_code: "[FAKER][PHONE_NUMBER][AREA_CODE]",
+    number: "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
+  },
+  identification: {
+    type: "DNI",
+    number: "12345678"
+  },
+  address: {
+    street_name: "[FAKER][ADDRESS][STREET_NAME]",
+    street_number: "[FAKER][ADDRESS][BUILDING_NUMBER]",
+    zip_code: "[FAKER][ADDRESS][ZIP]"
+  }
+}
+// ...
 ```
 ```ruby
-
-payer = MercadoPago::Payer.new
-payer.name = "Charles"
-payer.surname = "[FAKER][NAME][LAST_NAME]"
-payer.email = "[FAKER][INTERNET][FREE_EMAIL_FROM_NAME]['Charles']"
-payer.date_created = Time.now
-payer.phone = {
-  area_code: "[FAKER][PHONE_NUMBER][AREA_CODE]",
-  number: "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
-}
-payer.identification = {
-  type: "DNI",
-  number: "12345678"
-}
-payer.address = {
-  street_name: "[FAKER][ADDRESS][STREET_NAME]",
-  street_number: [FAKER][ADDRESS][BUILDING_NUMBER],
-  zip_code: "[FAKER][ADDRESS][ZIP]"
-}
-
+# ...
+payer = MercadoPago::Payer.new({
+  name: "Charles"
+  surname: "[FAKER][NAME][LAST_NAME]"
+  email: "[FAKER][INTERNET][FREE_EMAIL_FROM_NAME]['Charles']"
+  date_created: Time.now
+  phone: MercadoPago::Phone.new({
+    area_code: "[FAKER][PHONE_NUMBER][AREA_CODE]",
+    number: "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
+  })
+  identification: MercadoPago::Identification.new({
+    type: "DNI",
+    number: "12345678"
+  })
+  address: MercadoPago::Address.new ({
+    street_name: "[FAKER][ADDRESS][STREET_NAME]",
+    street_number: "[FAKER][ADDRESS][BUILDING_NUMBER]",
+    zip_code: "[FAKER][ADDRESS][ZIP]"
+  })
+})
+# ...
 ```
-
+```csharp
+using MercadoPago;
+using MercadoPago.Resources;
+using MercadoPago.DataStructures.Preference;
+// ...
+Payer payer = new Payer()
+{
+    Name = "Charles",
+    Surname = "[FAKER][NAME][LAST_NAME]",
+    Email = "[FAKER][INTERNET][FREE_EMAIL_FROM_NAME]['Charles']",
+    Phone = new Phone()
+    {
+        AreaCode = "[FAKER][PHONE_NUMBER][AREA_CODE]",
+        Number = "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
+    },
+    Identification = new Identification() 
+    {
+        Type = "DNI",
+        Number = "12345678"
+    },
+    Address = new Address()
+    {
+        StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+        StreetNumber = int.Parse("[FAKER][ADDRESS][BUILDING_NUMBER]"),
+        ZipCode = "[FAKER][ADDRESS][ZIP]"
+    }
+};
+// ...
+```
 ]]]
 
 #### Shipments
@@ -226,40 +295,72 @@ payer.address = {
 [[[
 ```php
 <?php
+  // ...
   $shipments = new MercadoPago\Shipments();
-  $shipments->receiver_address=array(
+  $shipments->receiver_address = array(
 		"zip_code" => "[FAKER][ADDRESS][ZIP]",
 		"street_number" => [FAKER][ADDRESS][BUILDING_NUMBER],
 		"street_name" => "[FAKER][ADDRESS][STREET_NAME]",
 		"floor" => [FAKER][NUMBER][BETWEEN][1,20],
 		"apartment" => "C"
   );
+  // ...
 ?>
 ```
 ```java
+// ...
 Shipments shipments = new Shipments();
-shipments.setReceiverAddress(new AddressReceiver("5700", 123, "street", 4, "C"));
+shipments.setReceiverAddress(new ReceiverAddress()
+  .setZipCode("[FAKER][ADDRESS][ZIP]")
+  .setBuildingNumber("[FAKER][ADDRESS][BUILDING_NUMBER]")
+  .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
+  .setFloor("[FAKER][NUMBER][BETWEEN][1,20]")
+  .setApartment("C"));
+// ...
 ```
 ```node
+// ...
 var shipments = {
-	"receiver_address": {
-		"zip_code": "[FAKER][ADDRESS][ZIP]",
-		"street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
-		"street_name": "[FAKER][ADDRESS][STREET_NAME]",
-		"floor": [FAKER][NUMBER][BETWEEN][1,20],
-		"apartment": "C"
+	receiver_address: {
+		zip_code: [FAKER][ADDRESS][ZIP]",
+		street_number: [FAKER][ADDRESS][BUILDING_NUMBER],
+		street_name: "[FAKER][ADDRESS][STREET_NAME]",
+		floor: [FAKER][NUMBER][BETWEEN][1,20],
+		apartment: "C"
 	}
 };
+// ...
 ```
 ```ruby
-shipment = MercadoPago::Shipment.new
-shipment.receiver_address = {
-	zip_code: "[FAKER][ADDRESS][ZIP]",
-	street_number: [FAKER][ADDRESS][BUILDING_NUMBER],
-	street_name: "[FAKER][ADDRESS][STREET_NAME]",
-	floor: [FAKER][NUMBER][BETWEEN][1,20],
-	apartment: "C"
-}
+# ...
+shipment = MercadoPago::Shipment.new(
+  receiver_address: new MercadoPago::ReceiverAddress.new({
+    zip_code: "[FAKER][ADDRESS][ZIP]",
+    street_number: [FAKER][ADDRESS][BUILDING_NUMBER],
+    street_name: "[FAKER][ADDRESS][STREET_NAME]",
+    floor: [FAKER][NUMBER][BETWEEN][1,20],
+    apartment: "C"
+  })
+})
+# ... 
+```
+```csharp
+using MercadoPago;
+using MercadoPago.Resources;
+using MercadoPago.DataStructures.Preference;
+// ...
+Shipment shipment = new Shipment()
+{
+    ReceiverAddress = new ReceiverAddress()
+    {
+        ZipCode = "[FAKER][ADDRESS][ZIP]",
+        StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+        StreetNumber = int.Parse("[FAKER][ADDRESS][BUILDING_NUMBER]"),
+        Floor = "[FAKER][NUMBER][BETWEEN][1, 20]",
+        Apartment = "C"
+    }
+};
+// ...
 ```
 ]]]
 
