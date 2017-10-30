@@ -59,7 +59,7 @@ Os parâmetros que podem ser incluídos são:
 > * Os campos marcados com (\*) são campos obrigatórios.
 > * Os campos external reference, notification url e payer email estão disponíveis para integração com o aplicativo do MercadoPago Point somente no Android.
 
-No artigo sobre [GitHub](https://github.com/sebad78/android-integration#deep-linking) você encontrará mais informações e o exemplo correspondente.
+No artigo sobre [GitHub](https://github.com/mercadopago/point-android_integration#deep-linking) você encontrará mais informações e o exemplo correspondente.
 
 ## 2. Integração via Intent-Based
 
@@ -72,7 +72,7 @@ Você deve utilizar o método “startActivityForResult” para iniciar diretame
 
 Como referência, você pode utilizar o código de exemplo e a documentação que possui o formato para enviar as informações do pagamento e gerenciar o objeto de retorno.
 
-No artigo sobre [GitHub](https://github.com/sebad78/android-integration#intent) você encontrará mais informações e o exemplo correspondente.
+No artigo sobre [GitHub](https://github.com/mercadopago/point-android_integration#intent) você encontrará mais informações e o exemplo correspondente.
 
 ## 3. Notificações de Pagamento
 

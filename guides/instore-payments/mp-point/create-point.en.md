@@ -60,7 +60,7 @@ The parameters you need to include are:
 > * Required fields marked with an asterisk (\*).
 > * The external reference, notification url and payer email fields are only available for integration with Mercado Pago Point app on Android.
 
-In the [GitHub](https://github.com/sebad78/android-integration#deep-linking) section, you can find more information and the corresponding example.
+In the [GitHub](https://github.com/mercadopago/point-android_integration#deep-linking) section, you can find more information and the corresponding example.
 
 ## 2. Integration via Intent-Based
 > WARNING
@@ -76,7 +76,7 @@ It is very important that the code considers the possibility that the user does 
 
 As a reference, you can use the sample code and documentation that has the format that allows sending the payment information and handling the return object.
 
-In the [GitHub](https://github.com/sebad78/android-integration#intent) section, you can find more information and the corresponding example.
+In the [GitHub](https://github.com/mercadopago/point-android_integration#intent) section, you can find more information and the corresponding example.
 
 
 ## 3. Payment Notifications
