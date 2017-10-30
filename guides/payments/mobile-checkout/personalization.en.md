@@ -252,7 +252,7 @@ As soon as the `ServicePreference` has been created, you must start the payment 
 	let checkoutPreference = CheckoutPreference()
 	checkoutPreference.items = [item]
 	checkoutPreference.payer = payer
-	checkoutPreference.setId("MLA")
+	checkoutPreference.setId("[FAKER][GLOBALIZE][UPPER_SITE_ID]")
 
 	let servicePreference = ServicePreference()
 	servicePreference.setCreatePayment(baseURL: "https://your-base-URL.com/", URI: "your_create_preference_URI",

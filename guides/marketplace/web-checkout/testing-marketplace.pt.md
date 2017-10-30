@@ -31,7 +31,7 @@ AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https:
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=$AT" \
--d '{"site_id":"MLA"}'
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 ##### Response
 ```curl
