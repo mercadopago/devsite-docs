@@ -1,6 +1,6 @@
 # Gateway Mode
 
-MercadoPago offers you the possibility of operating with your own merchant numbers. This processing mode is called Gateway.
+Mercado Pago offers you the possibility of operating with your own merchant numbers. This processing mode is called Gateway.
 
 ##Considerations
 

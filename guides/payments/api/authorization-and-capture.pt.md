@@ -20,7 +20,7 @@
 > * Brasil
 > * Peru
 
-O MercadoPago oferece a possibilidade de realizar uma autorização antes de gerar uma captura.
+O Mercado Pago oferece a possibilidade de realizar uma autorização antes de gerar uma captura.
 
 A autorização é uma reserva de valores no cartão do seu comprador. Isto significa que, ao realizá-la, ainda não foi gerada uma cobrança no cartão do seu cliente. Somente quando a captura for realizada, o cliente visualizará o pagamento.
 

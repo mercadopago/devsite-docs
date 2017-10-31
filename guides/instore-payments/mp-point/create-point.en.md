@@ -7,7 +7,7 @@ sites_supported:
 ---
 
 
-# How to integrate MercadoPago Point
+# How to integrate Mercado Pago Point
 
 In order to get paid in an integrated manner with our Point device, you need to download the Mercado Pago Point app available in the iOS and Android marketplaces.
 
@@ -24,7 +24,7 @@ Currently, it is possible to perform an integration from any type of external ap
 >
 > * Have the Mercado Pago Point app.
 > * Have a Point device linked to the Mercado Pago account.
-> * The seller must be logged in with its MercadoPago account in the Mercado Pago Point app.
+> * The seller must be logged in with its Mercado Pago account in the Mercado Pago Point app.
 > * Available for Android version 2.8.0 or above, iOS version 1.7.0 or above and only when running on iOS 9 or above.
 
 ## Flowchart
@@ -34,9 +34,9 @@ Currently, it is possible to perform an integration from any type of external ap
 ## 1. Integration via Deep Linking
 
 
-One of the alternatives to integrate with MercadoPago Point is through a deep link. When this _link_ is accessed, it will be intercepted as a  _Point-handled address_.
+One of the alternatives to integrate with Mercado Pago Point is through a deep link. When this _link_ is accessed, it will be intercepted as a  _Point-handled address_.
 
-In the request to this _link_, different parameters can be sent, which will be verified by the Point app and impacted in the payment. Once the request to this link is made, the seller will be redirected to the MercadoPago Point app to enter the customer’s card and thus charge the customer.
+In the request to this _link_, different parameters can be sent, which will be verified by the Point app and impacted in the payment. Once the request to this link is made, the seller will be redirected to the Mercado Pago Point app to enter the customer’s card and thus charge the customer.
 
 Once the payment is processed, the user will be redirected to the `success_url` or `fail_url`, depending on the payment status. This must be intercepted in order to return the user to the application flow.
 

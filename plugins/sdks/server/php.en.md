@@ -1,4 +1,4 @@
-# MercadoPago SDK module for Payments integration
+# Mercado Pago SDK module for Payments integration
 
 * [Install](#install)
 * [Basic checkout](#basic-checkout)
@@ -204,7 +204,7 @@ $mp->get (
 <a name="generic-methods"></a>
 ## Generic methods
 
-You can access any resource from the [MercadoPago API](https://api.mercadopago.com) using the generic methods.
+You can access any resource from the [Mercado Pago API](https://api.mercadopago.com) using the generic methods.
 The basic structure is:
 
 `$mp->[method]($request)`

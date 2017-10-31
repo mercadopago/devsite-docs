@@ -25,7 +25,7 @@ Se necessário, ao criar a preferência de pagamentos em seu servidor, você pod
 
 Você pode especificar os tipos de meio de pagamento que não quiser aceitar (Dinheiro, Cartões de Crédito ou Débito), excluindo-os ao criar a Checkout Preference.
 
-En el contenido de la preferencia de pago puedes agregar los medios de pago o tipos de medio que no quieras soportar.
+No conteúdo de sua preferência de pagamentos você pode adicionar os meios de pagamentos que aceita ou os que não aceita.
 
 *Excluir um tipo de meio de pagamento específico:*
 
@@ -219,7 +219,7 @@ FlowPreference *flowPreference = [[FlowPreference alloc]init];
 
 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
 Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
-    
+
 NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
 CheckoutPreference *checkoutPreference = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
@@ -267,7 +267,7 @@ public void submit(View view) {
 }
 ```
 ```swift
-	
+
 let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
 let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
 
@@ -307,6 +307,6 @@ checkout.start()
 	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
 		    self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
     [self.mpCheckout start];
-	} 
+	}
 ```
 ]]]

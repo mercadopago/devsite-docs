@@ -13,7 +13,7 @@
 > - Obtén las cuotas y costos de financiación.
 
 
-El SDK Javascript de MercadoPago te facilita obtener los datos de las tarjetas de tus clientes de forma segura.
+El SDK Javascript de Mercado Pago te facilita obtener los datos de las tarjetas de tus clientes de forma segura.
 
 Al usar el SDK, y seguir los pasos que te indicamos, la información sensible de la tarjeta nunca viajará a tus servidores, asegurando el nivel adecuado de cumplimiento de la norma PCI DSS.
 
@@ -144,7 +144,7 @@ Ejemplo de respuesta:
 
 El tipo y número de documento de identidad es un dato obligatorio en la mayoría de los países para poder pagar con tarjetas.
 
-El SDK de MercadoPago provee una función que te facilita obtener los tipos de documento.
+El SDK de Mercado Pago provee una función que te facilita obtener los tipos de documento.
 ```javascript
 Mercadopago.getIdentificationTypes(identificationHandler);
 ```
@@ -230,7 +230,7 @@ Ejemplo de respuesta con paymentMethodId = master:
 
 ##Obtén las cuotas y costos de financiación
 
-Para cobrar en cuotas y poder mostrar a tus clientes los costos de financiación, el SDK de MercadoPago te brinda una función que retorna las cuotas disponibles para la tarjeta de tu cliente.
+Para cobrar en cuotas y poder mostrar a tus clientes los costos de financiación, el SDK de Mercado Pago te brinda una función que retorna las cuotas disponibles para la tarjeta de tu cliente.
 
 ```javascript
 Mercadopago.getInstallments({"bin": bin,"amount": amount}, installmentHandler);

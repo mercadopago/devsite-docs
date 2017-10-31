@@ -1,10 +1,10 @@
 # Relatórios de conciliação
 
-O MercadoPago fornece relatórios para conciliar suas transações com os seus sistemas internos. Temos dois relatórios para necessidades distintas.
+O Mercado Pago fornece relatórios para conciliar suas transações com os seus sistemas internos. Temos dois relatórios para necessidades distintas.
 
 **Relatório de dinheiro em conta (Settlement Report)**
 
-Contém todos os eventos de pagamento (aprovados, devolvidos, em mediação e estornos) que afetam o saldo de sua conta no MercadoPago no período solicitado.
+Contém todos os eventos de pagamento (aprovados, devolvidos, em mediação e estornos) que afetam o saldo de sua conta no Mercado Pago no período solicitado.
 
 **Relatório de dinheiro disponível (Bank Report)**
 

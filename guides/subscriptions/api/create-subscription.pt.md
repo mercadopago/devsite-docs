@@ -237,7 +237,7 @@ Assim que chegar a data da cobrança, um objeto `invoice` será criado, contendo
 
 Você receberá notificações quando houver a criação ou modificação de um plano, assinatura, fatura ou pagamento.
 
-O MercadoPago usará seus melhores esforços para garantir que suas `invoices` sejam pagas, sem exigir qualquer ação de sua parte.
+O Mercado Pago usará seus melhores esforços para garantir que suas `invoices` sejam pagas, sem exigir qualquer ação de sua parte.
 
 Você somente deverá entregar seu produto ou serviço quando a `invoice` para esse período tiver o status `paid`.
 

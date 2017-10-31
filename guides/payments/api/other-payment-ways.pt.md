@@ -205,7 +205,7 @@ Recomendamos que verifique os [prazos de aprovação por meio de pagamento](http
 
 ## Devoluções
 
-Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas as devoluções dos meios de pagamento em dinheiro são feitas na conta do MercadoPago do seu comprador.
+Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas as devoluções dos meios de pagamento em dinheiro são feitas na conta do Mercado Pago do seu comprador.
 
 Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
 

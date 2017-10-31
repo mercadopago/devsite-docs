@@ -11,7 +11,7 @@ sites_supported:
 
 # Pagamentos com QR codes integrados
 
-O MercadoPago permite receber os pagamentos de seus clientes através de um QR code exclusivo que identifica o ponto de venda.
+O Mercado Pago permite receber os pagamentos de seus clientes através de um QR code exclusivo que identifica o ponto de venda.
 
 Quando o cliente escaneia o QR code, é feita uma requisição ao seu servidor, consultando o valor a ser cobrado. O servidor responde com a [preferência de pagamentos](/reference/preferences) e no celular do seu cliente o checkout é exibido com as informações do pagamento a ser efetuado. Por fim, o cliente efetua o pagamento e você receberá imediatamente uma notificação *Webhook* em seu servidor para impactar o resultado.
 
@@ -22,12 +22,12 @@ Após a conclusão da ordem de venda em seu sistema de gestão:
 
 ![instore diagram](/images/wallet-instore.png)
 
-1. O usuário escaneia o QR code a partir do aplicativo do MercadoPago, ao qual está associada a url com as informações do local onde a venda ocorreu. O QR code representa univocamente uma posição em uma filial.
+1. O usuário escaneia o QR code a partir do aplicativo do Mercado Pago, ao qual está associada a url com as informações do local onde a venda ocorreu. O QR code representa univocamente uma posição em uma filial.
 
 2. Com as informações do local onde o usuário fez o escaneamento, o MP Server consulta o servidor da empresa buscando a última ordem de venda pendente de pagamento para essa posição nessa filial.
 
   2.1. O servidor cria a preferência de pagamento (Objeto que contém todas as informações do valor a pagar – Vide anexo).
-  2.2. O MercadoPago retorna a preferência de pagamento criada.
+  2.2. O Mercado Pago retorna a preferência de pagamento criada.
 
 3. O servidor retorna a preferência ao MP Server e com esta informação você pode exibir o *checkout* no celular do usuário para que efetue o pagamento.
 
@@ -35,7 +35,7 @@ Após a conclusão da ordem de venda em seu sistema de gestão:
 
 5. Assim que o pagamento é processado, o MP Server envia ao servidor da empresa uma notificação *Webhook* informando que há um novo pagamento, especificando a identificação do pagamento.
 
-6. Com a identificação do pagamento, o servidor da empresa pode consultar se o status do pagamento é `approved` ou `rejected`. Se o pagamento foi aprovado, você pode liberar a ordem e dar baixa no pagamento. Se o pagamento tiver sido recusado, o app do MercadoPago fará uma nova tentativa de cobrança.
+6. Com a identificação do pagamento, o servidor da empresa pode consultar se o status do pagamento é `approved` ou `rejected`. Se o pagamento foi aprovado, você pode liberar a ordem e dar baixa no pagamento. Se o pagamento tiver sido recusado, o app do Mercado Pago fará uma nova tentativa de cobrança.
 
 7. O cliente é informado que o pagamento foi processado corretamente.
 
@@ -52,9 +52,9 @@ Defina os parâmetros necessários de acordo com o seu modelo de negócios.
 ### Obtenha a preferência de pagamento
 
 Você deve gerar a preferência de pagamento, incluindo o valor da compra, para permitir que seu cliente visualize os detalhes do valor a pagar no aplicativo do
-MercadoPago no celular.  
+Mercado Pago no celular.  
 
-Assim que o cliente escaneia o QR code, você recebe uma requisição do MercadoPago com os parâmetros necessários para que possa identificar o ponto de venda.
+Assim que o cliente escaneia o QR code, você recebe uma requisição do Mercado Pago com os parâmetros necessários para que possa identificar o ponto de venda.
 
 Esta requisição é feita ao enviar no header `User-Agent` um dos seguintes valores:
 
@@ -94,7 +94,7 @@ Onde `message` é um campo opcional e `type` pode possuir um dos seguintes valor
 * in_process: há um pedido em andamento, ainda não é possível determinar o valor a receber.
 * unavailable: não há pedidos em andamento ou pendente de pagamento.
 * invalid: os parâmetros adicionais (id da filial, caixa, etc.) referem-se a um local desconhecido.
-* timeout: o servidor do integrador foi incapaz de se comunicar com qualquer um dos outros sistemas (fornecedor, POS, API do MercadoPago) e cancelou a operação.
+* timeout: o servidor do integrador foi incapaz de se comunicar com qualquer um dos outros sistemas (fornecedor, POS, API do Mercado Pago) e cancelou a operação.
 
 > É importante que em qualquer caso a resposta contenha o header `Content-Type: application/json`.
 
@@ -106,7 +106,7 @@ Consulte a seção sobre [Webhooks](/guides/notifications/webhooks.es.md) para i
 
 ### Casos de teste
 
-Crie dois usuários de teste. Com um você age como vendedor e configura as credenciais na preferência de pagamento. Com o outro você age como cliente, iniciando a sessão no aplicativo mobile do MercadoPago e utiliza os [cartões de teste](/guides/payments/api/testing.es.md) para efetuar pagamentos.
+Crie dois usuários de teste. Com um você age como vendedor e configura as credenciais na preferência de pagamento. Com o outro você age como cliente, iniciando a sessão no aplicativo mobile do Mercado Pago e utiliza os [cartões de teste](/guides/payments/api/testing.es.md) para efetuar pagamentos.
 
 ```
 # Get access_token

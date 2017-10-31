@@ -98,7 +98,7 @@ Your HTML should already contain the following script:
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
-We will use the MercadoPago library to check the `installments` feature.
+We will use the Mercado Pago library to check the `installments` feature.
 
 ```javascript
 <script type="text/javascript">

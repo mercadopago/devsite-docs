@@ -17,7 +17,7 @@ sites_supported:
 >
 > * Esta guia presume que você já tenha seguido os passos da seção ‘introdução da documentação para instalação do SDK’.
 
-Esta guia irá ajudá-lo a integrar o componente visual de pagamento do MercadoPago em sua aplicação. Este componente gerencia a seleção do meio de pagamento, a coleta de dados do meio de pagamento do usuário e a comunicação do resultado do pagamento.
+Esta guia irá ajudá-lo a integrar o componente visual de pagamento do Mercado Pago em sua aplicação. Este componente gerencia a seleção do meio de pagamento, a coleta de dados do meio de pagamento do usuário e a comunicação do resultado do pagamento.
 
 #### A integração consiste em duas etapas:
 - Integração em seu servidor: nesta etapa, você receberá a informação sobre o pagamento.
@@ -65,7 +65,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
 ]]]
 
-Luego, deberás agregar los atributos de tu preferencia de pago:
+Depois você deverá adicionar os atributos das suas preferências de pagamento:
 
 [[[
 ```php
@@ -181,7 +181,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
 }
 ```
 
-## Integre o fluxo de pagamentos do MercadoPago em sua aplicação
+## Integre o fluxo de pagamentos do Mercado Pago em sua aplicação
 
 ### 1. Conecte sua aplicação com seu servidor
 
@@ -247,7 +247,7 @@ NSDictionary *preferenceBody = @{
 
 ### 2. 2. Crie um botão de pagamento
 
-Como exemplo, sugerimos que inicie o fluxo do MercadoPago a partir de um botão.
+Como exemplo, sugerimos que inicie o fluxo do Mercado Pago a partir de um botão.
 
 [[[
 

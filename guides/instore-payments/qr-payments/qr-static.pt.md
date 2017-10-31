@@ -12,7 +12,7 @@ sites_supported:
 # Pagamentos com QR code sem integração
 
 
-A partir de sua conta no MercadoPago, você tem a opção de criar uma [ferramenta de cobrança](https://www.mercadopago.com.ar/tools/create) que lhe permitirá receber pagamentos em suas lojas físicas utilizando QR codes.
+A partir de sua conta no Mercado Pago, você tem a opção de criar uma [ferramenta de cobrança](https://www.mercadopago.com.ar/tools/create) que lhe permitirá receber pagamentos em suas lojas físicas utilizando QR codes.
 Você não precisa saber programação.
 
 Vamos orientá-lo para que você possa configurar:
@@ -28,7 +28,7 @@ Você pode publicar este QR code estático ao lado do anúncio do produto ou ser
 
 ### QR code sem valor associado
 
-Uma opção para que possa receber pagamentos presenciais sem a necessidade de programação, é gerar um QR code vinculado à sua conta no MercadoPago.
+Uma opção para que possa receber pagamentos presenciais sem a necessidade de programação, é gerar um QR code vinculado à sua conta no Mercado Pago.
 Dessa forma, quando seu cliente escaneia o QR code, será solicitado que insira manualmente o valor a pagar.
 Esta transferência de saldo não possui uma ordem de venda associada. Ela apenas permite que o cliente insira uma descrição opcional do que está pagando.
 
