@@ -92,11 +92,11 @@ Suscripciones | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 |   Producto  |     Solución    |        Medios de pago no disponibles        |
 | :---------- | :-------------- | :------------------------------------------ |
 | Pagos       | Botón de pago   | N/A                                         |
-| Pagos       | Web Checkout    | `davivienda`                                |
+| Pagos       | Web Checkout    | N/A                                         |
 | Pagos       | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
-| Pagos       | API             | `pse`                                       |
-| Marketplace | Web Checkout    | `davivienda`                                |
-| Marketplace | API             | `pse`                                       |
+| Pagos       | API             | `account_money`                             |
+| Marketplace | Web Checkout    | N/A                                         |
+| Marketplace | API             | `account_money`                             |
 
 ### México
 
