@@ -392,3 +392,179 @@ A resposta que receberá:
 Direcione seu cliente para a URL que encontrará no atributo `external_resource_url` dentro do `transaction_details` da resposta. Ao finalizar o pagamento, você será redirecionado a `callback_url` que indicar, e obterá o resultado do pagamento via [Webhooks](/guides/notifications/webhooks.pt.md).
 
 ------------
+----[mco, global]----
+## Integrar PSE (Colombia)
+
+> NOTE
+>
+> Nota
+>
+> Consulta todas as instituições financeiras (_financial\_institutions_) que têm disponível através do recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
+
+Para gerar o pagamento utilizando PSE envie o `payment_method_id` **pse** e o `financial_institution`:
+
+```json
+{
+  "id": "pse",
+  "name": "PSE",
+  "payment_type_id": "bank_transfer",
+  ...
+  "financial_institutions": [
+    {
+      "id": "1234",
+      "description": "financial_institution"
+    }
+  ]
+}
+```
+
+[[[
+```php
+<?php
+
+require ('mercadopago.php');
+MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 10000;
+$payment->description = "Title of what you are paying for";
+$payment->payer = array (
+		"email" => "test_user_19653727@testuser.com",
+		"identification" => array(
+			"type" => "CC",
+			"number" => "76262349"
+		),
+		"entity_type" => "individual"
+	);
+$payment->transaction_details = array(
+		"financial_institution" => 1234
+	);
+$payment->additional_info = array(
+		"ip_address" => "127.0.0.1"
+	);
+$payment->callback_url = "http://www.your-site.com";
+$payment->payment_method_id = "pse";
+
+$payment->save();
+
+?>
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.setEmail("test_user_19653727@testuser.com");
+payer.setIdentification(new Identification("CC", 76262349));
+payer.setEntityType("individual");
+
+TransactionDetails transactionDetails = new TransactionDetails();
+transactionDetails.financialInstitution = 1234;
+
+AdditionalInfo additionalInfo = new AdditionalInfo();
+additionalInfo.ipAddress = "127.0.0.1";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(10000)
+      .setDescription('Title of what you are paying for')
+      .setPayer(payer)
+      .setTransactionDetails(transactionDetails)
+      .additionalInfo(additionalInfo)
+      .callbackUrl("http://www.your-site.com")
+      .setPaymentMethodId("pse");
+
+payment.save();
+
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+
+var payment_data = {
+  transaction_amount: 10000,
+  description: 'Title of what you are paying for',
+  payer: {
+    email: 'test_user_3931694@testuser.com',
+    identification: {
+      type: "CC",
+      number: "76262349"
+    },
+    entity_type: "individual"
+  },
+  transaction_details: {
+    financial_institution: 1234
+  },
+  additional_info: {
+    ip_address: "127.0.0.1"
+  },
+  callback_url: "http://www.your-site.com",
+  payment_method_id: "pse"
+}
+
+mercadopago.payment.create(payment_data).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 10000
+payment.description = 'Title of what you are paying for'
+payment.payer = {
+  email: 'test_user_3931694@testuser.com',
+  identification: {
+    type: "CC",
+    number: "76262349"
+  },
+  entity_type: "individual"
+}
+payment.transaction_details = {
+  financial_institution: 1234
+}
+payment.additional_info = {
+  ip_address: "127.0.0.1"
+}
+payment.callback_url = "http://www.your-site.com"
+payment.payment_method_id = "pse"
+
+payment.save();
+```
+]]]
+
+> NOTE
+>
+> Nota
+>
+> Os `entity_type` esperados são `individual` (Pessoas)  e `association` (Empresas).
+
+A resposta que receberá:
+
+```json
+{
+	"id": 3692089,
+	"date_created": "2017-04-27T16:53:03.000-04:00",
+	"date_approved": null,
+	"date_last_updated": "2017-04-27T16:53:03.000-04:00",
+	"money_release_date": null,
+	"operation_type": "regular_payment",
+	"issuer_id": null,
+	"payment_method_id": "pse",
+	"payment_type_id": "bank_transfer",
+	"status": "pending",
+	"status_detail": "pending_waiting_transfer",
+	...
+	"transaction_details": {
+		...
+		"external_resource_url": "https://www.mercadopago.com/mco/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=251027719",
+		"installment_amount": 0,
+		"financial_institution": "1234",
+		"payment_method_reference_id": null
+	}
+}
+Redirecione o seu cliente para a URL que está no atributo `external_resource_url` dentro de `transaction_details` da resposta. Ao finalizar o pagamento, ele será redirecionado a `callback_url` que foi indicado na requisição, também chegará o resultado do pagamento via [Webhooks](/guides/notifications/webhooks.es.md).
+------------
