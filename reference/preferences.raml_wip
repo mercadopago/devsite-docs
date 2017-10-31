@@ -1,8 +1,0 @@
-title: Preferences API
-version: 1.0
-baseUri: https://api.mercadopago.com 
-/preferences:
-  post:
-/preference/{id}:
-  get:
-  put:
