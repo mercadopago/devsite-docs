@@ -48,7 +48,9 @@
 </div>
 
 <% queryParameters = api.query_parameters(slug, method_name) %>
-<% urlParameters = api.urlParameters(slug, method_name) %>
+<% urlParameters = api.url_parameters(slug, method_name) %>
+<% errorCodes = api.error_codes(slug, method_name) %>
+<% responseExample = api.response_example(slug, method_name) %>
 
 <% if (urlParameters) %>
   <h3> Parametros de url </h3>
@@ -92,31 +94,22 @@
 
 <h2> HTTP RESPONSE </h2>
 
-<div class = "tree-table">
-  <div class = "tree-table-row">
-      <span> 200 SUCCESS</span>
-      <span>  </span>
-      <span> La solicitud ha sido procesada con exito</span>
+<% if responseExample %>
+  <h4> Ejemplo </h4>
+  <div class="code-container" data-slideout-ignore>
+    <div id="editor_child_2" class="code_editor" language="bash">
+      <pre class="line-numbers"><code class="language-bash"><%= responseExample %></code></pre>
+    </div>
   </div>
-  <div class = "tree-table-row">
-      <span> 400 BAD_REQUEST</span>
-      <span class="tag-success"> </span>
-      <span> La peticion ha sido realizada erroneamente o con datos no validos</span>
+<% end %>
+
+<% if (errorCodes) %>
+  <h3> Referencia de mensajes de error </h3>
+  <div class = "two-table">
+    <div class = "two-table-header">
+      <span>Codigo de Estado / Codigo de Error</span><span>Descripción</span>
+    </div> 
+    <%= builder.build_two_cols(errorCodes) %>
   </div>
-  <div class = "tree-table-row">
-      <span> 401 UNAUTHORIZED</span>
-      <span class="tag-success"> </span>
-      <span> La peticion realizada no ha sido autorizada.</span>
-  </div>
-  <div class = "tree-table-row">
-      <span> 403 FORBIDDEN</span>
-      <span > </span> 
-      <span> El usuario que esta realizando la peticion no esta autorizado.</span>
-  </div>
-  <div class = "tree-table-row">
-      <span> 404 NOT_FOUND</span>
-      <span > </span>
-      <span> El recurso buscado no existe o ha sido deprecado</span>
-  </div>
-</div>
+<% end %>
  
