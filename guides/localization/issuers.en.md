@@ -6,7 +6,7 @@
 >
 > An *issuer* is the financial entity that issues a card (debit, credit or prepaid cards) to a particular person or company. These entities are usually banks, but there may be exceptions
 
-The issuers supported by MercadoPago vary by country. This feature allows the identification of an issuer based on the [payment method](#) and a [BIN number](#).
+The issuers supported by Mercado Pago vary by country. This feature allows the identification of an issuer based on the [payment method](#) and a [BIN number](#).
 
 ## Get the card issuers
 

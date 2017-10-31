@@ -10,7 +10,7 @@ When a payment is generated, the amount is immediately divided between the selle
 >
 > Note
 >
-> MercadoPago’s fee will be deducted from the funds received by the seller.
+> Mercado Pago’s fee will be deducted from the funds received by the seller.
 
 The Marketplace requires 3 steps:
 
@@ -33,7 +33,7 @@ The **credencial privada**, or *access\_token*, are used for all requests to the
 
 ## Sandbox and Production Mode
 
-Initially, your application will only be able to interact with MercadoPago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
+Initially, your application will only be able to interact with Mercado Pago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
 
 We will provide you with test cards, so that you can simulate transactions as if they were real.
 

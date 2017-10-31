@@ -16,7 +16,7 @@ Para utilizar o modo Gateway, dois atributos são disponibilizados no fluxo de p
 
 ### processing_mode
 
-É o modo que indica se processaremos os pagamentos com seus próprios números de estabelecimento comercial ou com os do MercadoPago.
+É o modo que indica se processaremos os pagamentos com seus próprios números de estabelecimento comercial ou com os do Mercado Pago.
 
 Se este parâmetro não for enviado no *POST^, o comportamento padrão será o valor `aggregator`, indicando que o pagamento foi processado utilizando os números de estabelecimento comercial do Mercado Pago.
 
@@ -32,7 +32,7 @@ Se deseja processar com seus números de estabelecimento comercial, você deve e
 
 Em casos mais complexos de uso, é útil poder definir em cada pagamento o número de estabelecimento comercial a ser utilizado.
 
-O atributo merchant_account_id permite controlar esse comportamento. Esta ID será a identificação interna do MercadoPago representando um determinado número de estabelecimento comercial.
+O atributo merchant_account_id permite controlar esse comportamento. Esta ID será a identificação interna do Mercado Pago representando um determinado número de estabelecimento comercial.
 
 ##Crie um pagamento
 

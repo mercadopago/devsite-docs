@@ -12,20 +12,20 @@
 
 Implemente a logística do seu negócio utilizando o **Mercado Envios**.
 
-* Entregamos tudo resolvido para você: Receba o pagamento do produto e do envio na mesma operação.
-* Você só precisa imprimir a etiqueta do MercadoEnvios e enviar o pacote pelo correio!
-* Oferecemos proteção em caso de estornos ou extravios no correio, sem exigir a apresentação de qualquer documentação.
+* Entregamos tudo pronto para você: Receba o pagamento do produto e do envio na mesma operação.
+* Você só precisa imprimir a etiqueta do Mercado Envios e enviar o pacote pelos correios!
+* Oferecemos proteção em caso de estornos ou extravios nos correios, sem exigir a apresentação de qualquer documentação.
 
 ## Como funciona
 
-A documentação a seguir lhe permitirá oferecer uma opção de envio no checkout do MercadoPago, além do cliente poder pagar o custo do envio juntamente com o pagamento do produto.
+A documentação a seguir lhe permitirá oferecer uma opção de envio no checkout do Mercado Pago, além do cliente poder pagar o custo do envio junto com o pagamento do produto.
 
 Recomendamos integrar a calculadora de custos de frete em seu checkout.
 
 ## Como implementar
 
 ### Passo 1: Ative sua conta para utilizar o Mercado Envios
-[Ative sua conta](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) carregando seu endereço. Este será o endereço de entrega e será utilizado para calcular o custo do frete.
+[Ative sua conta](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) adicionando seu endereço. Este será o endereço de entrega e será utilizado para calcular o custo do frete.
 
 ### Passo 2: Adicione o Mercado Envios em seu checkout
 Indique as dimensões e o peso de seus produtos na preferência de pagamentos.
@@ -168,9 +168,9 @@ shipment.free_methods = [
 Consulte a ID dos [métodos de envio](https://api.mercadolibre.com/sites/MLA/shipping_methods?marketplace=NONE) disponíveis.
 
 
-#### Integre o MercadoEnvios no Checkout
+#### Integre o Mercado Envios no Checkout
 
-Veja abaixo um exemplo de Checkout com o MercadoEnvios:
+Veja abaixo um exemplo de Checkout com o Mercado Envios:
 
 [[[
 ```php
@@ -351,7 +351,7 @@ Para fazer o cálculo, é necessário que envie:
 
 Toda vez que receber um pagamento, você receberá um e-mail com um botão para imprimir a etiqueta. Também é possível visualizar os [pagamentos pendentes de impressão](https://www.mercadopago.com.ar/activities?type=collection&status=approved&shipping_or_archived=with_ME&tagME=ready_to_print) na sua conta no Mercado Pago.
 
-Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-o. Você não terá que pagar nada no correio, pois as etiquetas do MercadoEnvios já estarão pagas com o valor do frete pago pelo comprador.
+Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-o. Você não terá que pagar nada no correio, pois as etiquetas do Mercado Envios já estarão pagas com o valor do frete pago pelo comprador.
 
 ### Passo 5: Rastreamento
 

@@ -4,7 +4,7 @@
 
 # Introduction to our Payments API
 
-MercadoPago has APIs that allow you to securely receive payments on your website, mobile application, or anywhere you want.
+Mercado Pago has APIs that allow you to securely receive payments on your website, mobile application, or anywhere you want.
 
 With our APIs:
 *	You can create your own checkout, so your buyers do not have to leave your website.
@@ -25,7 +25,7 @@ The **private keys**, or *access_token*, are used for all requests to the APIs, 
 
 ## Sandbox and Production Mode
 
-Initially, your application will only be able to interact with MercadoPago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
+Initially, your application will only be able to interact with Mercado Pago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
 
 We will provide you with test cards, so that you can simulate transactions as if they were real.
 

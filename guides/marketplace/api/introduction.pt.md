@@ -11,7 +11,7 @@ Quando um pagamento é gerado, o dinheiro é dividido imediatamente entre a cont
 >
 > Nota
 >
-> A comissão do MercadoPago será descontada do valor recebido pelo vendedor.
+> A comissão do Mercado Pago será descontada do valor recebido pelo vendedor.
 
 O Marketplace requer 3 passos:
 
@@ -33,7 +33,7 @@ A **chave privada**, ou *access_token*, é utilizada para todas as requisições
 
 ## Modo Sandbox e Modo de Produção
 
-Inicialmente, sua aplicação poderá interagir com o MercadoPago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
+Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 
 Forneceremos cartões de teste para que possa simular transações como se fossem reais.
 

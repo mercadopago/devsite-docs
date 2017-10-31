@@ -8,7 +8,7 @@ sites_supported:
 
 # Create a subscription
 
-Through your MercadoPago account you can create a subscription link that can be sent to your buyers and allow you to receive payments on a regular basis. You can use it to: collect gym fees, collect rents or receive donations.
+Through your Mercado Pago account you can create a subscription link that can be sent to your buyers and allow you to receive payments on a regular basis. You can use it to: collect gym fees, collect rents or receive donations.
 
 You do not need to know programming.
 

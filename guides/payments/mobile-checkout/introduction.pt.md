@@ -11,7 +11,7 @@ sites_supported:
 ---
 # Mobile Checkout
 
-Os SDKs do MercadoPago facilitam a criação de uma experiência de pagamento na sua aplicação. Instantaneamente você oferece aos seus usuários:
+Os SDKs do Mercado Pago facilitam a criação de uma experiência de pagamento na sua aplicação. Instantaneamente você oferece aos seus usuários:
 
 ----[mla, mpe, mlb, mlm, global]----
     -   Pagamentos com cartão, dinheiro ou transferência bancária.

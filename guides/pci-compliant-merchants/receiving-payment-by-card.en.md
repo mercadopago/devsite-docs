@@ -178,7 +178,7 @@ Once you got the card_token, you can [create the payment](../payments/api/receiv
 
 ## Get approval faster by submitting the Device Fingerprint
 
-MercadoPago has its own fraud prevention tools. Whenever possible, we recommend submitting information about the buyer's device. This will help prevent fraudulent transactions.
+Mercado Pago has its own fraud prevention tools. Whenever possible, we recommend submitting information about the buyer's device. This will help prevent fraudulent transactions.
 
 ### Device deployment on the Web
 
