@@ -32,4 +32,18 @@ Assim que tiver [testado sua aplicação](/guides/payments/api/testing.pt.md), v
 
 Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do sandbox pelas de produção em seu código.
 
+## Requisitos para ir a produção
+
+Depois de testar a sua aplicação no modo _Sandbox_, você deve completar o processo de homologação que consistindo em:
+
+* Usar o _SDK_ do mercadopago.js para verificar os métodos de pagamento, efetuar pagamentos, garantir uma boa experiência do usuário e evitar transações fraudulentas.
+* Usar o atributo `data_checkout` nas tags do `input` para manusear os dados de forma segura e evitar que eles sejam enviado para o seu servidor. Certifique-se de NÃO incluir o atributo de `name` nessas tags.
+* Tenha um certificado SSL para garantir uma navegação segura e que o formulário de pagamento seja enviado via HTTPS.
+* Comunique corretamente o resultado do pagamento ao usuário para tentar recuperar o pagamento em caso de rejeição. Para isso, [utilize os códigos de resposta] (http://beta.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
+* Comunique as [promoções e possibilidades de parcelamento] (https://www.mercadopago.com.ar/promociones) oferecidas pelo Mercado Pago. Você pode incluir nossos [banners institucionais] (https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales).
+
+> Quando cumprir os requisitos, você deve preencher o formulário Eu quero ir para produção que está na seção das suas [credenciais](https://www.mercadopago.com/mla/account/credentials)
+
+O não cumprimento destas regras pode envolver desde o não processamento do pagamento, a ações legais de acordo com os [termos e condições] (https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299). Você deve ter uma política de termos e condições, na qual você especifica que é responsável por todos os dados que foram inseridos em seu site.
+
 #### [Começar a integrar a API](/guides/payments/api/receiving-payment-by-card.es.md).

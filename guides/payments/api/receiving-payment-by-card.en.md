@@ -109,6 +109,31 @@ Mercadopago.getIdentificationTypes();
 
 It is important to get the card’s payment method so that payment can be made.
 
+When your client enters The BIN of the credit card, in other words, the first 6 digits of the card, the SDK implements the `getBin()` and then consults the payment method API to see which one corresponds to that BIN:
+
+
+```javascript
+function guessingPaymentMethod(event) {
+    var bin = getBin();
+
+    if (event.type == "keyup") {
+        if (bin.length >= 6) {
+            Mercadopago.getPaymentMethod({
+                "bin": bin
+            }, setPaymentMethodInfo);
+        }
+    } else {
+        setTimeout(function() {
+            if (bin.length >= 6) {
+                Mercadopago.getPaymentMethod({
+                    "bin": bin
+                }, setPaymentMethodInfo);
+            }
+        }, 100);
+    }
+};
+```
+
 In order to get the payment method, use `MercadoPago.getPaymentMethod(jsonParam,callback)`. This method accepts two parameters: an object and a callback function.
 
 ```javascript
