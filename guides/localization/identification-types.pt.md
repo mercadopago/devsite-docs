@@ -28,7 +28,7 @@ Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
   		...
   	]
 
-Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta MercadoPago. Você poderá obter mais informações sobre este recurso e seus atributos em [Referência da API](/reference).
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos em [Referência da API](/reference).
 
 ## Tipos de documentos por país
 

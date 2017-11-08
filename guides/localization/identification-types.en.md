@@ -1,6 +1,6 @@
 # Identification types
 
-The types of documents accepted when making a payment through MercadoPago vary by country.
+The types of documents accepted when making a payment through Mercado Pago vary by country.
 
 ## Get the document types
 
@@ -28,7 +28,7 @@ You can get the document types accepted as follows:
   		...
   	]
 
-The results included in this response will coincide with the country associated with your MercadoPago account. For more information about this feature and its attributes, go to  [API reference](/reference).
+The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference](/reference).
 
 ## Identification types by country
 

@@ -4,7 +4,7 @@
 
 # Introdução à nossa API de Pagamentos
 
-O MercadoPago conta com APIs para receber pagamentos de forma segura em seu site, aplicativo móvel ou onde desejar.
+O Mercado Pago conta com APIs para receber pagamentos de forma segura em seu site, aplicativo móvel ou onde desejar.
 
 Com nossas APIs:
 
@@ -24,7 +24,7 @@ A **chave privada**, ou *access token*, é utilizada para todas as requisições
 
 ## Modo Sandbox e Modo de Produção
 
-Inicialmente, sua aplicação poderá interagir com o MercadoPago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
+Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 
 Forneceremos cartões de teste para que possa simular transações como se fossem reais.
 

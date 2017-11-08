@@ -220,7 +220,7 @@ For more information, go to the [notifications section](/guides/notifications/we
 
 ### Refunds and cancellations
 
-The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the MercadoPago account.
+The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the Mercado Pago account.
 
 Cancellations can only be made using the cancellation API.
 

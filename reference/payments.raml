@@ -31,27 +31,165 @@ uses:
     body:
       application/json:
         type: PostPayment
-    responses:
-      200:
-        body:
-          application/json:
-            example: payment_response
-      400:
-        body:
-          application/json:
-            example: 400_response
-      401:
-        body:
-          application/json:
-            example: 401_response 
-      403:
-        body:
-          application/json:
-            example: 403_response
-      404:
-        body:
-          application/json:
-            example: 404_response
+    errorCodes:
+      200 SUCCESS: 
+        description:
+          es: La solicitud ha sido procesada con exito.
+      400 BAD_REQUEST: 
+        description:
+          es: La peticion ha sido realizada erroneamente o con datos no validos
+        properties:
+          1:
+            description:
+              es: Se ha encontrado un error en los parametros enviados.
+          5: 
+            description:
+              es: Es necesario proveer un access token valido para proceder con la operacion solicitada.
+          1001:
+            description:
+              es: El formato de fechas debe ser yyyy-MM-dd'T'HH:mm:ss.SSSZ
+          2001:
+            description:
+              es: Se ha recibido el mismo request en el ultimo minuto.
+          2004:
+            description:
+              es: Request POST al gateway de transacciones ha fallado.
+          2005:
+            description:
+              es: El Cliente no ha sido encontrado.
+          2006:
+            description:
+              es: El CardToken ha expirado o no ha sido escrito correctamente.
+          2007:
+            description:
+              es: Fallo la conexion al API de CardTokens.
+          2009:
+            description:
+              es: El emisor de tarjeta es un parametro obligatorio.
+          2010:
+            description:
+              es: La tarjeta con la cual se quiere realizar la transacción no ha sido encontrada. 
+          2014:
+            description:
+              es: El valor enviado en el parametro reference_id no es valido. 
+          2020:
+            description:
+              es: Cliente no autorizado para operar.
+          2021:
+            description:
+              es: Comercio no autorizado para operar.
+          2034:
+            description:
+              es: Usuarios invalidos involucrados en la operación.
+          2038:
+            description:
+              es: El valor enviado en el parametro campaign_id no es valido. 
+          2039:
+            description:
+              es: El codigo del cupon enviado no es valido.
+          2040:
+            description:
+              es: No existe un usuario con esta direccion de correo.
+          2060:
+            description:
+              es: El cliente no puede ser igual que el comercio.
+          3000:
+            description:
+              es: Debes proveer el nombre del propietario de la tarjeta con la informacion de la tarjeta al crear el Card Token.
+          3001:
+            description:
+              es: Debes proveer el nombre del emisor de la tarjeta con la informacion de la tarjeta al crear el Card Token.
+          3003:
+            description:
+              es: El valor enviado en el parametro card_token_id no es valido.
+          3008:
+             description:
+              es: El CardToken no ha sido encontrado.
+          3010:
+            description:
+              es: La tarjeta no ha sido encontrada en la Lista Blanca.
+          3011:
+            description:
+              es: No se ha encontrado el metodo de pago seleccionado.
+          3012:
+            description:
+              es: El valor enviado en el parametro security_code_length no es valido.
+          3013:
+            description:
+              es: El parametro security_code es un parametro requerido y no puede ser nulo.
+          3015:
+            description:
+              es: El valor enviado en el parametro security_code no es valido.
+          3016:
+            description:
+              es: El valor enviado en el parametro card_number_length no es valido.
+          3017:
+            description:
+              es: El parametro card_number_id es un parametro requerido y no puede ser nulo.
+          3018:
+            description:
+              es: El parametro expiration_month es un parametro requerido y no puede ser nulo.
+          3019:
+            description:
+              es: El parametro expiration_year es un parametro requerido y no puede ser nulo.
+          3020:
+            description:
+              es: El parametro cardholder.name es un parametro requerido y no puede ser nulo.
+          3021:
+            description:
+              es: El parametro cardholder.document.number es un parametro requerido y no puede ser nulo.
+          3022:
+            description:
+              es: El parametro cardholder.document.type es un parametro requerido y no puede ser nulo.
+          3023:
+            description:
+              es: El parametro cardholder.document.subtype es un parametro requerido y no puede ser nulo.
+          3026:
+            description:
+              es: El parametro card_id no tiene un valor valido para el metodo de pago seleccionado.
+          3027:
+            description:
+              es: El valor enviado en el parametro payment_type_id no es valido.
+          3028:
+            description:
+              es: El valor enviado en el parametro expiration_month no es valido.
+          3029:
+            description:
+              es: El valor enviado en el parametro expiration_month no es valido.
+          3030:
+            description:
+              es: El valor enviado en el parametro expiration_year no es valido.
+          4000:
+            description:
+              es: El parametro card es un parametro requerido y no puede ser nulo.
+          4001:
+            description:
+              es: El parametro payment_method_id es un parametro requerido y no puede ser nulo.
+          4002:
+            description:
+              es: El parametro transaction_amount es un parametro requerido y no puede ser nulo.
+          4003:
+            description:
+              es: El parametro transaction_amount debe ser numerico.
+          4004:
+            description:
+              es: El valor enviado en el parametro installments no es valido.
+      401 UNAUTHORIZED:
+        description:
+          es: La peticion realizada no ha sido autorizada.
+      403 FORBIDDEN: 
+        description:
+          es: El usuario que esta realizando la peticion no esta autorizado.
+        properties:
+          4:
+            description:
+              es: El usuario que esta tratando de realizar esta operación no esta autorizado para consultar por este recurso.
+          2041:
+            description:
+              es: El tipo de operacion que se trata de realizar solo esta permitido para usuarios de tipo adminsitrador.
+          3002: 
+            description:
+              es: El usuario que esta tratando de realizar esta operación no esta autorizado para realizar esta acción.
 /payments/{id}:
   get:
     example: get_payment
@@ -101,14 +239,13 @@ uses:
         type: String
       payer_id:
         description:
-          es: "Identificador del Pagador"
+          es: "Filtrar por identificador del pagador"
         type: String
       status:
         description:
-          es: "Identificador del Pagador"
+          es: "Filtrar por estado del pago"
         type: String
       external_reference:
         description:
-          es: "Identificador personalizado por el comercio"
+          es: "Filtrar por referencia personalizada del comercio"
         type: String
-      

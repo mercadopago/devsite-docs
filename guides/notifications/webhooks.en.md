@@ -8,7 +8,7 @@
 
 A **webhook** is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
-In order to receive notifications about the events in your platform, you have to [previously configure an URL to which MercadoPago has access.](https://www.mercadopago.com/mla/account/webhooks).
+In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access.](https://www.mercadopago.com/mla/account/webhooks).
 
 ## Events
 
@@ -26,7 +26,7 @@ We will notify the following events:
 | `subscription`       | `application.authorized`   | Account authorized           |
 | `invoice`            | `application.authorized`   | Account authorized           |
 
-If your application is not available or takes too long to respond, MercadoPago will retry sending the notification according to the following interval:
+If your application is not available or takes too long to respond, Mercado Pago will retry sending the notification according to the following interval:
 
 1.	Retry after 5 minutes.
 2. Retry after 45 minutes.
@@ -57,7 +57,7 @@ This indicates that payment **999999999** was created for the user **44444** in 
 
 ## What should I do after receiving a notification?
 
-When you receive a notification in your platform, MercadoPago awaits a response to validate that you received it correctly. To do this, you have to send a response with a `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
+When you receive a notification in your platform, Mercado Pago awaits a response to validate that you received it correctly. To do this, you have to send a response with a `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
 
 Note that this communication is made exclusively between Mercado Pago’s servers and your server, so there will be no physical user viewing any kind of result.
 

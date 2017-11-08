@@ -98,7 +98,7 @@ Seu HTML já deve conter o seguinte script:
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
-Utilizaremos a biblioteca do MercadoPago para consultar o recurso `installments`.
+Utilizaremos a biblioteca do Mercado Pago para consultar o recurso `installments`.
 
 ```javascript
 <script type="text/javascript">

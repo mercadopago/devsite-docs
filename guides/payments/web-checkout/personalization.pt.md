@@ -195,7 +195,7 @@ payment = MercadoPago::Payment.search(filters)
 
 ### Invalide links de preferência
 
-Caso não queira permitir que alguém acesse a preferência de pagamentos para efetuar um pagamento, após uma determinada data, utilize os seguintes atributos:
+Caso não queira permitir que alguém acesse a preferência de pagamentos para efetuar um pagamento após uma determinada data, utilize os seguintes atributos:
 
 ```json
 	"expires": true,

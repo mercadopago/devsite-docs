@@ -20,7 +20,7 @@
 > * Brazil
 > * Peru
 
-MercadoPago offers the possibility of performing an authorization hold before generating a capture.
+Mercado Pago offers the possibility of performing an authorization hold before generating a capture.
 
 The authorization hold freezes the money on your buyer’s card. This means that when you perform it you have not charged your customer’s card yet. The customer will see the payment only when a capture is made.
 

@@ -1,0 +1,66 @@
+title: Preferences API
+version: checkout
+baseUri: https://api.mercadopago.com 
+documentation:
+  es:
+    title: Preferencias
+    body: Esta API permite configurar un conjunto de preferencias para el pago, informacion sobre los productos y los medios de pago aceptados.
+uses:
+  PostPreference: descriptors/post_preference.raml
+  GetPreference: descriptors/get_preference.raml
+/preferences:
+  post: 
+    example: post_preference
+    description:
+      es: Crear una preferencia
+      en: A POST method which creates a new preference.
+    queryParameters:
+      access_token:
+        description:
+          es: "El access_token del comercio."
+        required: true
+        type: String
+    body:
+      application/json:
+        type: PostPreference
+    response:
+      example: preference_response
+/preference/{id}:
+  get:
+    example: get_preference
+    description: 
+      es: Permite actualizar infomración sobre un pago creado.
+    queryParameters:
+      access_token:
+        description:
+          es: El access_token del comercio.
+        required: true
+        type: String
+    urlParameters:
+      id:
+        description:
+          es: Id de la preferencia a consultar
+        required: true
+        type: String
+    response:
+      application/json:
+        type: GetPreference
+  put:
+    example: put_preference
+    description: 
+      es: Permite actualizar infomración sobre una preferencia creada.
+    queryParameters:
+      access_token:
+        description:
+          es: "El access_token del comercio."
+        required: true
+        type: String
+    urlParameters:
+      id:
+        description: 
+          es: Id de la preferencia a actualizar
+        required: true
+        type: String
+    body:
+      application/json:
+        type: PostPreference

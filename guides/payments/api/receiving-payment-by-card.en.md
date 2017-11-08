@@ -1,6 +1,6 @@
 # Receive card payments
 
-With MercadoPago you can collect card information in a secure way, while keeping control over the shopping experience offered to your users.
+With Mercado Pago you can collect card information in a secure way, while keeping control over the shopping experience offered to your users.
 
 ## Collect card information
 

@@ -152,7 +152,7 @@ Once the preference has been created, use the URL found in the attribute `init_p
 
 You will automatically receive notifications to be aware of your new payments and status updates.
 
-MercadoPago will use its best efforts to ensure that your subscriptions are paid, without requiring any action from you.
+Mercado Pago will use its best efforts to ensure that your subscriptions are paid, without requiring any action from you.
 
 If we do not get a payment approval for the agreed billing date, we will retry up to four times during ten days, before the invoice is flagged as unpaid. In this case, you can pause or cancel the subscription.
 

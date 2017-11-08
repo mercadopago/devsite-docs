@@ -8,7 +8,7 @@ sites_supported:
 
 # Introdução a assinaturas com Web Checkout
 
-O MercadoPago permite receber pagamentos recorrentes por meio de assinaturas em apenas dois passos:
+O Mercado Pago permite receber pagamentos recorrentes por meio de assinaturas em apenas dois passos:
 
 1. **Definir uma assinatura**, que estabelece quanto deve ser faturado e o intervalo de tempo.
 2. **Abrir o Checkout** para capturar os dados de um cartão.

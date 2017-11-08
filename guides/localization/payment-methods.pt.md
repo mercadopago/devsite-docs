@@ -1,6 +1,6 @@
 # Meios de pagamento
 
-Os meios de pagamento oferecidos pelo MercadoPago variam de acordo com cada país.
+Os meios de pagamento oferecidos pelo Mercado Pago variam de acordo com cada país.
 
 ## Obtenha os meios de pagamento
 
@@ -58,7 +58,7 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 		...
 	]
 
-Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta MercadoPago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](#).
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](#).
 
 ## Meios de pagamento por país
 
@@ -146,7 +146,7 @@ Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
 Visa Débito       		| `debit_card`             | `debvisa`
 Mastercard Débito		| `debit_card`             | `debmaster`
-Tarjeta MercadoPago		| `prepaid_card`           | `mercadopagocard`
+Tarjeta Mercado Pago		| `prepaid_card`           | `mercadopagocard`
 Oxxo            		| `ticket`                 | `oxxo`
 BBVA Bancomer    	    	| `atm`		           | `bancomer`
 Banamex    		       	| `atm`		           | `banamex`

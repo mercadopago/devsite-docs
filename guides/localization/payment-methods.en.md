@@ -1,6 +1,6 @@
 # Payment methods
 
-The payment methods offered by MercadoPago vary by country.
+The payment methods offered by Mercado Pago vary by country.
 
 ## Get the payment methods
 
@@ -58,7 +58,7 @@ You can get the payment methods as follows:
 		...
 	]
 
-The results included in this response will coincide with the country associated with your MercadoPago account. For more information about this feature and its attributes, go to  [API reference](#).
+The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference](#).
 
 ## Payment methods by country
 
@@ -146,7 +146,7 @@ Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
 Visa Débito       		| `debit_card`             | `debvisa`
 Mastercard Débito		| `debit_card`             | `debmaster`
-Tarjeta MercadoPago		| `prepaid_card`           | `mercadopagocard`
+Tarjeta Mercado Pago		| `prepaid_card`           | `mercadopagocard`
 Oxxo            		| `ticket`                 | `oxxo`
 BBVA Bancomer    	    	| `atm`		           | `bancomer`
 Banamex    		       	| `atm`		           | `banamex`

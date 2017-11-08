@@ -128,7 +128,7 @@ Expected response:
 
 ## Receive a payment from a Customer
 
-In order to receive a payment using a stored card, it is necessary to re-capture the **security code** because for security reasons, MercadoPago cannot store this information.
+In order to receive a payment using a stored card, it is necessary to re-capture the **security code** because for security reasons, Mercado Pago cannot store this information.
 
 ### 1. Show stored cards
 
