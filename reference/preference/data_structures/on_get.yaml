@@ -1,0 +1,24 @@
+resource: payment.raml
+use:
+  - additional_info
+  - auto_return
+  - back_urls
+  - client_id
+  - collector_id
+  - date_created
+  - expiration_date_from
+  - expiration_date_to
+  - expires
+  - external_reference
+  - id
+  - init_point
+  - items
+  - marketplace
+  - marketplace_fee
+  - notification_url
+  - operation_type
+  - payer
+  - payment_methods
+  - sandbox_init_point
+  - shipments
+  - total_amount

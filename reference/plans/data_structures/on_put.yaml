@@ -1,0 +1,127 @@
+---
+resource: plans.raml
+use:
+- application_fee
+- status
+- description
+- external_reference
+- auto_recurring
+- frequency
+- frequency_type
+- transaction_amount
+- repetitions
+- debit_date
+- frequency
+- frequency_type
+- setup_fee
+- metadata
+errors:
+- 404 NOT_FOUND:
+  - '2003':
+      description:
+        en: Plan not found
+        es: El Plan no se encuentra
+        pt: O plano não encontrado
+- 401 UNAUTHORIZED:
+  - '4':
+      description:
+        en: The caller is not authorized to access this resource
+        es: La persona que llama no está autorizado para acceder a este recurso
+        pt: O autor da chamada não está autorizado a acessar este recurso
+  - '4000':
+      description:
+        en: Must provide your access_token to proceed
+        es: Debe proporcionar su access_token para proceder
+        pt: Tem de fornecer o seu access_token para prosseguir
+  - '4004':
+      description:
+        en: Must provide your access_token to proceed
+        es: Debe proporcionar su access_token para proceder
+        pt: Tem de fornecer o seu access_token para prosseguir
+- 400 BAD_REQUEST:
+  - '8':
+      description:
+        en: 'The name of the following parameters is wrong: '
+        es: 'El nombre de los parámetros siguientes es incorrecta: '
+        pt: 'O nome dos parâmetros a seguir está errado: '
+  - '11':
+      description:
+        en: Error updating plan, it is already cancelled
+        es: Error al actualizar el plan, que ya está cancelado
+        pt: Erro de atualização do plano, já é cancelada
+  - '2001':
+      description:
+        en: Invalid JSON
+        es: No válido JSON
+        pt: Inválido JSON
+  - '2005':
+      description:
+        en: Invalid JSON
+        es: No válido JSON
+        pt: Inválido JSON
+  - '2006':
+      description:
+        en: Unsupported country
+        es: No compatible país
+        pt: Não suportado país
+  - '4007':
+      description:
+        en: Parameter attribute can't be null
+        es: Parámetro atributo no puede ser null
+        pt: O parâmetro de atributo não pode ser nulo
+  - '4008':
+      description:
+        en: Parameter attribute must be numeric
+        es: Parámetro del atributo debe ser numérico
+        pt: O parâmetro de atributo tem de ser numérico
+  - '4012':
+      description:
+        en: Parameter attribute must be valid JSON
+        es: Parámetro del atributo debe ser válido JSON
+        pt: O parâmetro de atributo tem de ser válido JSON
+  - '4013':
+      description:
+        en: Parameter attribute must be numeric positive
+        es: Parámetro atributo debe ser un valor numérico positivo
+        pt: O parâmetro de atributo tem de ser numérico positivo
+  - '4014':
+      description:
+        en: Parameter attribute must be valid percenteje
+        es: Parámetro del atributo debe ser válido percenteje
+        pt: O parâmetro de atributo tem de ser válido percenteje
+  - '4015':
+      description:
+        en: Invalid status, must be active/inactive
+        es: Estado no válido, debe ser activo/inactivo
+        pt: Status inválido, deve ser ativo/inativo
+  - '4016':
+      description:
+        en: Invalid frequency_type, must be days/months
+        es: No válido frequency_type, debe ser de días/meses
+        pt: Inválido frequency_type, devem ser dias/meses
+  - '4017':
+      description:
+        en: Invalid debit_date, must be from 1 to 31
+        es: No válido debit_date, debe ser de 1 a 31 de
+        pt: Inválido debit_date, deve ser de 1 a 31 de
+  - '4018':
+      description:
+        en: Invalid status, must be active/inactive/cancelled
+        es: Estado no válido, debe ser activo/inactivo/cancelado
+        pt: Status inválido, deve ser ativo/inativo/cancelado
+  - '4019':
+      description:
+        en: auto_recurring.free_trial.frequency_type is null and auto_recurring.free_trial.frequency
+          is not null
+        es: auto_recurring.free_trial.frequency_type es nulo y auto_recurring.free_trial.la
+          frecuencia no es null
+        pt: auto_recurring.free_trial.frequency_type é nulo e auto_recurring.free_trial.a
+          frequência não é nulo
+  - '4020':
+      description:
+        en: auto_recurring.free_trial.frequency is null and auto_recurring.free_trial.frequency_type
+          is not null
+        es: auto_recurring.free_trial.la frecuencia es nula y auto_recurring.free_trial.frequency_type
+          no es null
+        pt: auto_recurring.free_trial.a freqüência é nulo e auto_recurring.free_trial.frequency_type
+          não é nulo

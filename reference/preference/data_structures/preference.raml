@@ -1,15 +1,10 @@
 type: object
 properties:
-    id:
-        type: string
-        description:
-            es: Indentificador unico de la preferencia (UUID)
-            en: Preference ID (UUID)
     items:
         type: object
         description:
             en: Items information
-            es: Informacion sobre los Items 
+            es: Informacion sobre los Items
         properties:
             id:
                 description:
@@ -279,33 +274,11 @@ properties:
             en: URL where you'd like to receive a payment notification.
             es: URL en la cual se recibira la notificacion de pago.
         type: string
-    init_point:
+    additional_info:
         description:
-            en: Checkout access URL
-            es: URL para iniciar el proceso de pago.
+            en: Additional information
+            es: Informacion adicional
         type: string
-    sandbox_init_point:
-        description:
-            en: Sandbox checkout access URL
-            es: URL para iniciar el proceso de pago en modo sandbox.
-        type: string
-    date_created:
-        description:
-            en: Preference's creation date
-            es: Fecha de creacion de la preferencia
-        type: date
-    operation_type:
-        description:
-            en: Operation data_type
-            es: Tipo de operacion
-        type: date
-        enum:
-            regular_payment:
-                es: Pago normal
-                en: Normal payment
-            money_transfer:
-                es: Solicitud de dinero
-                en: Money request
     auto_return:
         description:
             en: If specified, your buyers will be redirected back to your site immediately after completing the purchase
@@ -338,16 +311,6 @@ properties:
             en: Date when the preference will be expired
             es: Fecha para la expiracion de la preferencia.
         type: date
-    collector_id:
-        description:
-            en: Your MercadoPago seller ID
-            es: Tu codigo de vendedor de Mercado Pago
-        type: integer
-    client_id:
-        description:
-            en: Application owner ID that use MercadoLibre API
-            es: Identificador del propietario de la aplicacion que usa el API de MercadoLibre
-        type: integer
     marketplace:
         description:
             en: "Origin of the payment. Default value: NONE"

@@ -1,0 +1,525 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Customer ID
+      es: ID de cliente
+      pt: IDENTIFICAÇÃO do cliente
+- email:
+    type: String
+    description:
+      en: Customer's email
+      es: Cliente de correo electrónico
+      pt: Cliente de e-mail
+- first_name:
+    type: String
+    description:
+      en: Customer's name
+      es: Nombre del cliente
+      pt: Nome do cliente
+- last_name:
+    type: String
+    description:
+      en: Customer's last name
+      es: Del cliente apellido
+      pt: O cliente do último nome
+- phone:
+    type: Object
+    description:
+      en: Customer phone's information
+      es: Teléfono de atención al cliente de la información de la
+      pt: Telefone do cliente informações
+    properties:
+    - area_code:
+        type: String
+        description:
+          en: Phone's area code
+          es: Teléfono código de área
+          pt: Telefone com código de área
+    - number:
+        type: String
+        description:
+          en: Phone's number
+          es: Teléfono número
+          pt: Número do telefone
+- identification:
+    type: Object
+    description:
+      en: Customer identification's information
+      es: La identificación del cliente de la información de la
+      pt: A identificação do cliente informações
+    properties:
+    - type:
+        type: String
+        description:
+          en: Identification's type
+          es: Identificación del tipo de
+          pt: Identificação do tipo de
+    - number:
+        type: String
+        description:
+          en: Identification's number
+          es: Identificación del número de
+          pt: Identificação do número
+- default_address:
+    type: String
+    description:
+      en: Customer's default address
+      es: Del cliente de la dirección por defecto
+      pt: Do cliente endereço padrão
+- address:
+    type: Object
+    description:
+      en: Default address's information
+      es: Dirección predeterminada de la información
+      pt: Por padrão, o endereço de informação
+    properties:
+    - id:
+        type: String
+        description:
+          en: Address ID
+          es: ID de dirección
+          pt: IDENTIFICAÇÃO do endereço
+    - zip_code:
+        type: String
+        description:
+          en: Zip code
+          es: El código postal de
+          pt: Código postal
+    - street_name:
+        type: String
+        description:
+          en: Street name
+          es: Nombre de la calle
+          pt: Nome da rua
+    - street_number:
+        type: String
+        description:
+          en: Street number
+          es: Número de la calle
+          pt: O número da rua
+- date_registered:
+    type: Date(ISO_8601)
+    description:
+      en: Customer's registration date
+      es: Del cliente fecha de registro
+      pt: Do cliente data de registo
+- description:
+    type: String
+    description:
+      en: Customer's description
+      es: Del cliente descripción
+      pt: Cliente descrição
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Customer's date created
+      es: Del cliente, la fecha de creación
+      pt: Do cliente data de criação
+- date_last_updated:
+    type: Date(ISO_8601)
+    description:
+      en: Last modified date
+      es: Fecha de última modificación
+      pt: Data da última modificação
+- metadata:
+    type: Object
+    description:
+      en: Customer's metadata
+      es: Del cliente de metadatos
+      pt: Cliente de metadados
+- default_card:
+    type: String
+    description:
+      en: Customer's default card
+      es: El cliente predeterminado de la tarjeta de
+      pt: Cliente padrão de cartão
+- cards:
+    type: Object
+    description:
+      en: Customer's cards
+      es: De los clientes de tarjetas de
+      pt: Cliente cartões
+    properties:
+    - id:
+        type: String
+        description:
+          en: Card ID
+          es: Tarjeta de IDENTIFICACIÓN
+          pt: Cartão de IDENTIFICAÇÃO
+    - customer_id:
+        type: String
+        description:
+          en: Customer ID
+          es: ID de cliente
+          pt: IDENTIFICAÇÃO do cliente
+    - expiration_month:
+        type: Integer
+        description:
+          en: Card's expiration month
+          es: Caducidad de la tarjeta de mes
+          pt: Cartão do mês de vencimento
+    - expiration_year:
+        type: Integer
+        description:
+          en: Card's expiration year
+          es: Caducidad de la tarjeta de año
+          pt: Cartão de expiração do ano
+    - first_six_digits:
+        type: String
+        description:
+          en: Card's first six digits
+          es: La tarjeta de los primeros seis dígitos
+          pt: Cartão de primeiros seis dígitos
+    - last_four_digits:
+        type: String
+        description:
+          en: Card's last four digits
+          es: La tarjeta últimos cuatro dígitos
+          pt: Cartão de quatro dígitos
+    - payment_method:
+        type: Object
+        description:
+          en: Payment method information
+          es: Información de método de pago
+          pt: Informações de pagamento
+        properties:
+        - id:
+            type: String
+            description:
+              en: Payment method ID
+              es: Método de pago ID
+              pt: Método de pagamento ID
+        - name:
+            type: String
+            description:
+              en: Payment method name
+              es: Método de pago nombre
+              pt: Método de pagamento nome
+        - payment_type_id:
+            type: String
+            description:
+              en: Payment method type
+              es: Método de pago tipo de
+              pt: Método de pagamento tipo de
+        - thumbnail:
+            type: String
+            description:
+              en: Payment method thumbnail
+              es: Método de pago en miniatura
+              pt: Método de pagamento miniatura
+        - secure_thumbnail:
+            type: String
+            description:
+              en: Payment method secure thumbnail
+              es: Método de pago seguro en miniatura
+              pt: Método de pagamento seguro miniatura
+    - security_code:
+        type: Object
+        description:
+          en: Security code information
+          es: El código de seguridad de la información
+          pt: Código de segurança de informações
+        properties:
+        - length:
+            type: Integer
+            description:
+              en: Security code's length
+              es: Código de seguridad de la longitud de la
+              pt: Código de segurança do comprimento
+        - card_location:
+            type: String
+            description:
+              en: Security code's card location
+              es: Código de seguridad de la tarjeta de ubicación
+              pt: Código de segurança do cartão de localização
+    - issuer:
+        type: Object
+        description:
+          en: Issuer information
+          es: El emisor de la información
+          pt: Emissor de informação
+        properties:
+        - id:
+            type: Integer
+            description:
+              en: Issuer Id
+              es: Emisor Id
+              pt: Id Do Emitente
+        - name:
+            type: String
+            description:
+              en: Issuer name
+              es: Nombre de emisor
+              pt: Nome do emissor
+    - cardholder:
+        type: Object
+        description:
+          en: Card holder information
+          es: Titular de la tarjeta de información
+          pt: Titular do cartão de informação
+        properties:
+        - name:
+            type: Integer
+            description:
+              en: Card holder name
+              es: De la tarjeta nombre del titular de la
+              pt: Nome do proprietário do cartão
+        - identification:
+            type: Integer
+            description:
+              en: Identification information
+              es: La información de identificación
+              pt: Informação de identificação
+            properties:
+            - number:
+                type: Integer
+                description:
+                  en: Identification number
+                  es: Número de identificación
+                  pt: Número de identificação
+            - subtype:
+                type: String
+                description:
+                  en: Identification subtype
+                  es: Identificación del subtipo
+                  pt: Identificação do subtipo
+            - type:
+                type: String
+                description:
+                  en: Identification type
+                  es: Identificación del tipo de
+                  pt: Tipo de identificação
+    - date_created:
+        type: Date(ISO_8601)
+        description:
+          en: Card's date created
+          es: De la tarjeta fecha de creación
+          pt: Do cartão, data de criação
+    - date_last_updated:
+        type: Date(ISO_8601)
+        description:
+          en: Card's last modified date
+          es: La tarjeta de fecha de última modificación
+          pt: Cartão de data da última modificação
+- addresses:
+    type: Object List
+    description:
+      en: Customer's addresses
+      es: De los clientes la dirección de
+      pt: Do cliente endereços
+    properties:
+    - id:
+        type: String
+        description:
+          en: Address ID
+          es: ID de dirección
+          pt: IDENTIFICAÇÃO do endereço
+    - phone:
+        type: String
+        description:
+          en: Address ID
+          es: ID de dirección
+          pt: IDENTIFICAÇÃO do endereço
+    - name:
+        type: String
+        description:
+          en: Address name
+          es: Nombre de la dirección de
+          pt: Nome do endereço
+    - floor:
+        type: String
+        description:
+          en: Floor
+          es: Piso
+          pt: Andar
+    - apartment:
+        type: String
+        description:
+          en: Apartment
+          es: Apartamento
+          pt: Apartamento
+    - street_name:
+        type: String
+        description:
+          en: Street name
+          es: Nombre de la calle
+          pt: Nome da rua
+    - street_number:
+        type: Number
+        description:
+          en: Street number
+          es: Número de la calle
+          pt: O número da rua
+    - zip_code:
+        type: String
+        description:
+          en: Postal code of an Address
+          es: El código Postal de una Dirección
+          pt: Código Postal de um Endereço
+    - city:
+        type: Object
+        description:
+          en: City information
+          es: Información de la ciudad
+          pt: Informações da cidade
+        properties:
+        - id:
+            type: String
+            description:
+              en: City ID
+              es: Ciudad ID
+              pt: Cidade IDENTIFICAÇÃO
+        - name:
+            type: String
+            description:
+              en: City name
+              es: Nombre de la ciudad
+              pt: Nome da cidade
+    - state:
+        type: Object
+        description:
+          en: State information
+          es: La información de estado de
+          pt: Informações de estado
+        properties:
+        - id:
+            type: String
+            description:
+              en: State ID
+              es: IDENTIFICACIÓN del estado
+              pt: A IDENTIFICAÇÃO de estado
+        - name:
+            type: String
+            description:
+              en: State name
+              es: El nombre del estado
+              pt: Nome do estado
+    - country:
+        type: Object
+        description:
+          en: Country information
+          es: Información sobre el país
+          pt: Informações sobre os países
+        properties:
+        - id:
+            type: String
+            description:
+              en: Country ID
+              es: ID del país
+              pt: ID do país
+        - name:
+            type: String
+            description:
+              en: Country name
+              es: Nombre del país
+              pt: Nome do país
+    - neighborhood:
+        type: Object
+        description:
+          en: Neighborhood information
+          es: Barrio de la información
+          pt: Bairro de informações
+        properties:
+        - id:
+            type: String
+            description:
+              en: Neighborhood ID
+              es: Barrio ID
+              pt: ID do bairro
+        - name:
+            type: String
+            description:
+              en: Neighborhood name
+              es: Nombre del entorno de
+              pt: Nome do bairro
+    - municipality:
+        type: Object
+        description:
+          en: Municipality information
+          es: Municipio de la información
+          pt: Município de informações
+        properties:
+        - id:
+            type: String
+            description:
+              en: Municipality ID
+              es: Municipio de IDENTIFICACIÓN
+              pt: ID do município
+        - name:
+            type: String
+            description:
+              en: Municipality name
+              es: Municipio nombre
+              pt: Município nome
+    - comments:
+        type: String
+        description:
+          en: Additional information
+          es: Información adicional
+          pt: Informações adicionais
+    - date_created:
+        type: String
+        description:
+          en: Address date created
+          es: Dirección fecha de creación
+          pt: Endereço data de criação
+    - verifications:
+        type: Object
+        description:
+          en: The result of addresses validations
+          es: El resultado de las direcciones de las validaciones
+          pt: O resultado de endereços de validações
+        properties:
+        - shipment:
+            type: Object
+            description:
+              en: Specifies whether the address is valid for shipments
+              es: Especifica si la dirección es válida para envíos
+              pt: Especifica se o endereço é válido para embarques
+            properties:
+            - success:
+                type: Boolean
+                description:
+                  en: The result of the verification
+                  es: El resultado de la verificación
+                  pt: O resultado da verificação
+            - errors:
+                type: List<Object>
+                description:
+                  en: List errors
+                  es: Lista de errores
+                  pt: Lista de erros
+                properties:
+                - code:
+                    type: String
+                    description:
+                      en: Code error
+                      es: Código de error
+                      pt: Código de erro
+                - description:
+                    type: String
+                    description:
+                      en: Description error
+                      es: Descripción de error
+                      pt: Descrição do erro
+                - field:
+                    type: String
+                    description:
+                      en: Attribute name that does not pass validation
+                      es: El nombre de atributo que no pasan la validación
+                      pt: Nome do atributo que não passar na validação
+        - name:
+            type: String
+            description:
+              en: Municipality name
+              es: Municipio nombre
+              pt: Município nome
+- live_mode:
+    type: Boolean
+    description:
+      en: Whether the customers will be in sandbox or in production mode
+      es: Si los clientes va a estar en el espacio o en el modo de producción
+      pt: Se os clientes vão estar na caixa de areia ou em modo de produção

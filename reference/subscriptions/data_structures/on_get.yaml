@@ -1,0 +1,220 @@
+---
+resource: subscriptions.raml
+use:
+- id
+- application_fee
+- status
+- description
+- external_reference
+- date_created
+- last_modified
+- auto_recurring
+- frequency
+- frequency_type
+- transaction_amount
+- currency_id
+- repetitions
+- debit_date
+- frequency
+- frequency_type
+- live_mode
+- setup_fee
+- metadata
+- id
+- plan_id
+- payer
+- id
+- type
+- email
+- identification
+- type
+- number
+- application_fee
+- status
+- description
+- external_reference
+- date_created
+- last_modified
+- live_mode
+- start_date
+- end_date
+- metadata
+- charges_detail
+- invoices
+- period
+- id
+- last_charged_date
+- last_charged_amount
+- pending_charge_amount
+- pending_charge_periods
+- charged_amount
+- charged_periods
+- debt_amount
+- debt_periods
+- next_payment_date
+- setup_fee
+errors:
+- 404 NOT_FOUND:
+  - '3003':
+      description:
+        en: Subscription not found
+        es: La suscripción no se encuentra
+        pt: Assinatura não encontrada
+- 401 UNAUTHORIZED:
+  - '4000':
+      description:
+        en: Must provide your access_token to proceed
+        es: Debe proporcionar su access_token para proceder
+        pt: Tem de fornecer o seu access_token para prosseguir
+  - '4004':
+      description:
+        en: Must provide your access_token to proceed
+        es: Debe proporcionar su access_token para proceder
+        pt: Tem de fornecer o seu access_token para prosseguir
+- 400 BAD_REQUEST:
+  - '8':
+      description:
+        en: 'The name of the following parameters is wrong: '
+        es: 'El nombre de los parámetros siguientes es incorrecta: '
+        pt: 'O nome dos parâmetros a seguir está errado: '
+  - '12':
+      description:
+        en: Error creating subscription - The plan was cancelled earlier
+        es: Error al crear la suscripción - El plan fue cancelado antes
+        pt: Erro de criação de assinatura, O plano foi cancelado anteriores
+  - '13':
+      description:
+        en: Error updating subscription - The subscription was cancelled earlier
+        es: Error de actualización de la suscripción La suscripción fue cancelado
+          antes
+        pt: Erro ao atualizar a inscrição - A inscrição foi cancelada anteriores
+  - '14':
+      description:
+        en: Error creating subscription - The plan was inactivated earlier
+        es: Error al crear la suscripción - El plan fue desactivado antes
+        pt: Erro de criação de assinatura, O plano foi inativada anteriores
+  - '15':
+      description:
+        en: Error updating subscription - The subscription was finished earlier
+        es: Error de actualización de la suscripción La suscripción se ha terminado
+          antes
+        pt: Erro ao atualizar a inscrição - A inscrição foi concluído anteriormente
+  - '4007':
+      description:
+        en: Parameter attribute can't be null
+        es: Parámetro atributo no puede ser null
+        pt: O parâmetro de atributo não pode ser nulo
+  - '4008':
+      description:
+        en: Parameter attribute must be numeric
+        es: Parámetro del atributo debe ser numérico
+        pt: O parâmetro de atributo tem de ser numérico
+  - '4013':
+      description:
+        en: Parameter attribute must be numeric positive
+        es: Parámetro atributo debe ser un valor numérico positivo
+        pt: O parâmetro de atributo tem de ser numérico positivo
+  - '4014':
+      description:
+        en: Parameter attribute must be valid percenteje
+        es: Parámetro del atributo debe ser válido percenteje
+        pt: O parâmetro de atributo tem de ser válido percenteje
+  - '2007':
+      description:
+        en: Customer not found
+        es: El cliente no se encuentra
+        pt: O cliente não encontrado
+  - '2009':
+      description:
+        en: The customer doesn't have a default card
+        es: El cliente no tiene un valor predeterminado de la tarjeta de
+        pt: O cliente não tem um padrão de cartão
+  - '2010':
+      description:
+        en: Security code mandatory - This payment method doesn't allow recurring
+          payments
+        es: 'Código de seguridad obligatorias: - Este método de pago no permite pagos
+          recurrentes'
+        pt: Código de segurança obrigatório - Este método de pagamento não permite
+          pagamentos recorrentes
+  - '2012':
+      description:
+        en: Error creating subscription - Plan transaction_amount is under minimum
+          allowed of card
+        es: Error al crear la suscripción del Plan de transaction_amount está bajo
+          mínimos permitidos de la tarjeta de
+        pt: Erro de criação de assinatura de Plano transaction_amount está sob o mínimo
+          permitido de cartão
+  - '2013':
+      description:
+        en: Error creating subscription - Plan transaction_amount is over maximum
+          allowed of card
+        es: Error al crear la suscripción del Plan de transaction_amount es más del
+          máximo permitido de la tarjeta de
+        pt: Erro de criação de assinatura de Plano transaction_amount é mais de máximo
+          permitido de cartão
+  - '2014':
+      description:
+        en: Error creating subscription, Plan setup_fee is under minimum allowed of
+          card
+        es: Error al crear su suscripción, Plan de setup_fee está bajo mínimos permitidos
+          de la tarjeta de
+        pt: Erro de criação de assinatura, o Plano de setup_fee está sob o mínimo
+          permitido de cartão
+  - '2015':
+      description:
+        en: Error creating subscription, Plan setup_fee is over maximum allowed of
+          card
+        es: Error al crear su suscripción, Plan de setup_fee es más del máximo permitido
+          de la tarjeta de
+        pt: Erro de criação de assinatura, o Plano de setup_fee é mais de máximo permitido
+          de cartão
+  - '3001':
+      description:
+        en: Invalid JSON
+        es: No válido JSON
+        pt: Inválido JSON
+  - '3005':
+      description:
+        en: Invalid JSON
+        es: No válido JSON
+        pt: Inválido JSON
+  - '4021':
+      description:
+        en: 'Invalid status change - Status must be paused/cancelled '
+        es: 'No válido cambio de estado - el Estado debe ser detenido o cancelado '
+        pt: 'Inválido mudança de status - o Status deve ser pausado/cancelado '
+  - '4022':
+      description:
+        en: 'Invalid status change - Status must be authorized/cancelled '
+        es: 'No válido cambio de estado - el Estado debe ser autorizado/cancelado '
+        pt: 'Inválido mudança de status - o Status deve ser autorizada/cancelada '
+  - '4023':
+      description:
+        en: Invalid status change - The subscription is cancelled, no further changes
+          are allowed
+        es: No válido estado de cambio de La suscripción se cancela, no se admiten
+          cambios
+        pt: Inválido mudança de status - A inscrição é cancelada, sem mais alterações
+          são permitidas
+  - '6013':
+      description:
+        en: Error in payment - Cannot proceed with the subscription, due to a rejection
+          in the setup_fee payment
+        es: Error en el pago - No puede continuar con la suscripción, debido a un
+          rechazo en el setup_fee de pago
+        pt: Erro no pagamento - não é Possível continuar com a subscrição, devido
+          a uma rejeição no setup_fee de pagamento
+  - '9002':
+      description:
+        en: Default card not found - Card is already expired
+        es: Por defecto no se encuentra la tarjeta - Tarjeta ya está caducado
+        pt: Padrão de cartão não encontrado - Cartão já expirou
+  - '9003':
+      description:
+        en: Card will expire soon - Card will expire before the first invoice debit
+          date
+        es: La tarjeta está a punto de caducar la Tarjeta caducará antes de la primera
+          factura de débito fecha
+        pt: O cartão irá expirar em breve - Cartão expirar antes de a primeira fatura
+          de débito data

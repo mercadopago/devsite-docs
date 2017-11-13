@@ -1,0 +1,177 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Invoice identifier
+      es: Identificador de la factura
+      pt: Nota fiscal identificador
+- subscription_id:
+    type: String
+    description:
+      en: Subscription to which the invoice belongs
+      es: Suscripción de la factura pertenece
+      pt: Inscrição para que a fatura pertence
+- plan_id:
+    type: String
+    description:
+      en: Plan to which the subscription belongs
+      es: El Plan al que pertenece la suscripción
+      pt: Plano para que a assinatura pertence
+- payer:
+    type: Object
+    description:
+      en: Identifies the buyer
+      es: Identifica el comprador
+      pt: Identifica o comprador
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Identification of the associated payer
+          es: Identificación de los asociados pagador
+          pt: Identificação do associado pagante
+    - type:
+        type: String
+        description:
+          en: Identification type of the associated payer
+          es: Identificación del tipo de los asociados pagador
+          pt: Tipo de identificação do associado pagante
+        enum:
+        - customer:
+            en: Payer is a Customer and belongs to the collector
+        - registered:
+            en: The account corresponds to a MercadoPago registered user
+    - email:
+        type: String
+        description:
+          en: Customer's email
+          es: Cliente de correo electrónico
+          pt: Cliente de e-mail
+    - identification:
+        type: Object
+        description:
+          en: Personal identification
+          es: De identificación Personal
+          pt: Identificação pessoal
+        properties:
+        - type:
+            type: String
+            description:
+              en: Identification type
+              es: Identificación del tipo de
+              pt: Tipo de identificação
+        - number:
+            type: String
+            description:
+              en: Identification number
+              es: Número de identificación
+              pt: Número de identificação
+- application_fee:
+    type: Float
+    description:
+      en: Fee collected by a marketplace or MercadoPago Application
+      es: Cobrada por un mercado o MercadoPago Aplicación
+      pt: Cobrança de taxa por um mercado ou Aplicação de MercadoPago
+- status:
+    type: String
+    description:
+      en: Charging status of this individual invoice
+      es: El estado de carga de este individuo factura
+      pt: O estado de carregamento de este indivíduo fatura
+    enum:
+    - pending:
+        en: This invoice is scheduled to be charged in the near future
+    - dunning:
+        en: Previous charging attempts failed, MercadoPago is retrying the charge
+          to get an approval.
+    - paid:
+        en: This invoice was successfully charged
+    - unpaid:
+        en: After all charging attempts, we were unable to get an approval. No more
+          retries will be done on this individual invoice.
+    - cancelled:
+        en: This invoice was cancelled prior to get it paid
+- description:
+    type: String
+    description:
+      en: Subscription plan reason or service title
+      es: El plan de suscripción de la razón o título
+      pt: Plano de subscrição razão ou de serviço, título de
+- external_reference:
+    type: String
+    description:
+      en: ID given by the merchant in their system
+      es: IDENTIFICADOR dado por el comerciante en su sistema
+      pt: IDENTIFICAÇÃO fornecida pelo anunciante em seu sistema
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Invoice creation date
+      es: Fecha de creación de factura
+      pt: Factura data de criação
+- last_modified:
+    type: Date(ISO_8601)
+    description:
+      en: Last modified date
+      es: Fecha de última modificación
+      pt: Data da última modificação
+- live_mode:
+    type: Boolean
+    description:
+      en: Whether the invoice will be processed in sandbox or in production mode
+      es: Si la factura va a ser procesados en el espacio o en el modo de producción
+      pt: Se a nota fiscal será processada na caixa de areia ou em modo de produção
+- metadata:
+    type: Object
+    description:
+      en: Valid JSON that can be attached to the subscription to record additional
+        attributes of the merchant
+      es: Válido JSON que puede ser conectado a la suscripción de registro de atributos
+        adicionales del comerciante
+      pt: Válido JSON que pode ser anexado à inscrição para registro atributos adicionais
+        do estabelecimento
+- payments:
+    type: List(Object)
+    description:
+      en: All payment attempts done to get this invoice paid
+      es: Todos los pagos de los intentos de hacer para conseguir esta factura pagada
+      pt: Pagamento todas as tentativas feitas para obter esta fatura paga
+    properties:
+    - attempt_date:
+        type: Date(ISO_8601)
+        description:
+          en: Date of payment attempt
+          es: Fecha de pago intento
+          pt: Data da tentativa de pagamento
+    - id:
+        type: Integer
+        description:
+          en: Payment identifier
+          es: Pago identificador
+          pt: Identificador de pagamento
+    - status:
+        type: String
+        description:
+          en: Payment status
+          es: Estado de pago
+          pt: Status de pagamento
+    - status_detail:
+        type: String
+        description:
+          en: Gives more detailed information on the payment status or rejection cause
+          es: Da información más detallada sobre el estado de pago o rechazo de la causa
+          pt: Dá informações mais detalhadas sobre o status de pagamento ou rejeição causa
+- debit_date:
+    type: Date(ISO_8601)
+    description:
+      en: Date on which this invoice should be originally charged
+      es: Fecha en la que esta factura debe ser originalmente cargada
+      pt: Data em que esta nota fiscal deverá ser originalmente cobrado
+- next_payment_date:
+    type: Date(ISO_8601)
+    description:
+      en: Date of next payment attempt to get this invoice paid
+      es: La fecha de pago siguiente intento de conseguir esta factura pagada
+      pt: Data da próxima tentativa de pagamento para obter esta fatura paga
