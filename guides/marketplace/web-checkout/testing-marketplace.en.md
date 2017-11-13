@@ -62,8 +62,8 @@ curl -X POST \
 
 The complete process for testing the checkout is as follows:
 
-1. Log in to MercadoPago with the marketplace account and generate an APP_ID with all your settings and the URL to send to the seller to connect the seller’s account.
-2. Log in to MercadoPago with the seller and connect the account to the marketplace, entering the configured URL.
+1. Log in to Mercado Pago with the marketplace account and generate an APP_ID with all your settings and the URL to send to the seller to connect the seller’s account.
+2. Log in to Mercado Pago with the seller and connect the account to the marketplace, entering the configured URL.
 3. Check whether you have the seller's credentials registered in the marketplace.
 4. Make a test payment. You can send the buyer’s email in the payment preference, or test the flow as a guest. The buyer’s email will be requested at the end of the purchase.
 5. Complete the form, entering the digits of a test card. On the expiration date you must enter any date after the current date and the 3-digit security code.

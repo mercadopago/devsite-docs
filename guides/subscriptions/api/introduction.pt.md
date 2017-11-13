@@ -17,7 +17,7 @@ sites_supported:
 > * Possuir [Clientes e Cartões Armazenados](/guides/payments/api/customers-and-cards.pt.md) implementado.
 
 
-O MercadoPago permite receber pagamentos recorrentes por meio de assinaturas.
+O Mercado Pago permite receber pagamentos recorrentes por meio de assinaturas.
 
 Você só precisa inscrever seus clientes nos planos de assinatura e processaremos os pagamentos de forma automática e recorrente. Enviaremos uma notificação webhook para lhe informar o resultado dos pagamentos.
 
@@ -41,7 +41,7 @@ A **chave privada** ou *access_token* é utilizada para todas as requisições r
 
 ## Modo Sandbox e Modo de Produção
 
-Inicialmente, sua aplicação poderá interagir com o MercadoPago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
+Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 
 Fornecermos cartões de teste para que possa simular transações como se fossem reais.
 

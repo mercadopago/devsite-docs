@@ -10,7 +10,7 @@ Quando um pagamento é gerado, o dinheiro é dividido imediatamente entre a cont
 >
 > Nota
 >
->A comissão do MercadoPago será descontada do valor recebido pelo vendedor.
+>A comissão do Mercado Pago será descontada do valor recebido pelo vendedor.
 
 O Marketplace requer 3 passos:
 

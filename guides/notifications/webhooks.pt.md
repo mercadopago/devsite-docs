@@ -60,9 +60,9 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 
 ## O que devo fazer ao receber uma notificação?
 
-Quando receber uma notificação na sua plataforma, o MercadoPago espera uma resposta para validar que a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
+Quando receber uma notificação na sua plataforma, o Mercado Pago espera uma resposta para validar que a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
 
-Lembre-se que esta comunicação é feita exclusivamente entre os servidores do MercadoPago e o seu servidor, de modo que não haverá um usuário físico vendo nenhum tipo de resultado.
+Lembre-se que esta comunicação é feita exclusivamente entre os servidores do Mercado Pago e o seu servidor, de modo que não haverá um usuário físico vendo nenhum tipo de resultado.
 
 Depois disso, você poderá obter a informação completa do recurso notificado acessando a API correspondente em `https://api.mercadopago.com/`:
 

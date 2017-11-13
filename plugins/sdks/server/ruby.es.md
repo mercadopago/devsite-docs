@@ -1,4 +1,4 @@
-# MercadoPago SDK module for Payments integration
+# Mercado Pago SDK module for Payments integration
 
 * [Install](#install)
 * [Basic checkout](#basic-checkout)
@@ -151,7 +151,7 @@ $mp.get ("/v1/customers/CUSTOMER_ID");
 
 <a name="generic-methods"></a>
 ## Generic methods
-You can access any other resource from the MercadoPago API using the generic methods:
+You can access any other resource from the Mercado Pago API using the generic methods:
 
 ```ruby
 // Get a resource, with optional URL params. Also you can disable authentication for public APIs

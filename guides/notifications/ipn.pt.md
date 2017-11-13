@@ -19,7 +19,7 @@ A `merchant_order` é uma entidade que pode conter tanto pagamentos como envios.
 
 Sempre que ocorrer um evento relacionado a algum dos recursos mencionados, enviaremos uma notificação utilizando `HTTP POST` para a URL especificada.
 
-Se a aplicação não estiver disponível ou demorar para responder, o MercadoPago irá fazer tentativas de notificação nos seguintes intervalos:
+Se a aplicação não estiver disponível ou demorar para responder, o Mercado Pago irá fazer tentativas de notificação nos seguintes intervalos:
 
 1. Tentativa após 5 minutos.
 2. Tentativa após 45 minutos.
@@ -40,7 +40,7 @@ Exemplo: Se configurar a URL: `https://www.yoursite.com/notifications`, você re
 
 Quando receber uma notificação na sua plataforma, o Mercado Pago espera uma resposta para validar que a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
 
-Lembre-se que esta comunicação é feita exclusivamente entre os servidores do MercadoPago e o seu servidor, de modo que não haverá um usuário físico vendo nenhum tipo de resultado.
+Lembre-se que esta comunicação é feita exclusivamente entre os servidores do Mercado Pago e o seu servidor, de modo que não haverá um usuário físico vendo nenhum tipo de resultado.
 
 Depois disso, você poderá obter a informação completa do recurso notificado acessando a API correspondente em `https://api.mercadopago.com/`:
 

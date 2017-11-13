@@ -58,7 +58,7 @@ Los medios pueden ser obtenidos de la siguiente forma:
 		...
 	]
 
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de MercadoPago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
+Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
 
 ## Medios de pago por país
 
@@ -146,7 +146,7 @@ Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
 Visa Débito       		| `debit_card`             | `debvisa`
 Mastercard Débito		| `debit_card`             | `debmaster`
-Tarjeta MercadoPago		| `prepaid_card`           | `mercadopagocard`
+Tarjeta Mercado Pago		| `prepaid_card`           | `mercadopagocard`
 Oxxo            		| `ticket`                 | `oxxo`
 BBVA Bancomer    	    	| `atm`		           | `bancomer`
 Banamex    		       	| `atm`		           | `banamex`

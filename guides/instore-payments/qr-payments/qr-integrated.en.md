@@ -11,7 +11,7 @@ sites_supported:
 
 # Payments with integrated QR codes
 
-MercadoPago allows you to receive payments from your customers using a single QR code that identifies the point of sale.
+Mercado Pago allows you to receive payments from your customers using a single QR code that identifies the point of sale.
 
 When your customer scans the QR code, a request is made to your server, verifying the amount to be charged. Your server responds with the [payment preference](/reference/preferences) and your customer’s mobile phone shows the checkout with the payment details. Finally, the customer makes the payment and you immediately receive a Webhook notification on your server to impact the result.
 
@@ -20,12 +20,12 @@ When your customer scans the QR code, a request is made to your server, verifyin
 After the sales order is placed in your management system:
 ![instore diagram](/images/wallet-instore.png)
 
-1. The user scans the QR code from the MercadoPago app, to which the URL is linked with the information of the location where the sale took place. The QR code univocally represents a position in a store.
+1. The user scans the QR code from the Mercado Pago app, to which the URL is linked with the information of the location where the sale took place. The QR code univocally represents a position in a store.
 
 2. With the information from the location where the user scanned the QR code, the MP Server queries the company’s Server for the last sales order pending payment for that position in that store.
 
   2.1. The Server creates the payment preference (Object that contains all the information of the amount to be paid - see annex).
-  2.2. MercadoPago returns the payment preference created.
+  2.2. Mercado Pago returns the payment preference created.
 
 3. The Server returns the preference to the MP Server, and with this information, it is possible to display the checkout on the user’s mobile phone with the amount to be paid.
 
@@ -48,9 +48,9 @@ Define the necessary parameters according to your business model.
 
 ### Get the payment preference
 
-You must generate the payment preference including the purchase amount, so that your customer is able to view the details of the amount to be paid on the mobile app of MercadoPago on their phone.
+You must generate the payment preference including the purchase amount, so that your customer is able to view the details of the amount to be paid on the mobile app of Mercado Pago on their phone.
 
-As soon as the customer scans the QR code, you will receive a request from MercadoPago with the parameters required to allow you to identify the point of sale.
+As soon as the customer scans the QR code, you will receive a request from Mercado Pago with the parameters required to allow you to identify the point of sale.
 
 This request is made by sending one of the following values in the header `User-Agent`:
 
@@ -100,7 +100,7 @@ Check out the [Webhooks](/guides/notifications/webhooks.es.md) section to integr
 
 ## Test cases
 
-Create two test users. With one of them you pretend to be the seller and set up the credentials in the payment preference. With the other you pretend to be the customer, logging into the mobile app of MercadoPago and using the [test cards](/guides/payments/api/testing.es.md) to make payments.
+Create two test users. With one of them you pretend to be the seller and set up the credentials in the payment preference. With the other you pretend to be the customer, logging into the mobile app of Mercado Pago and using the [test cards](/guides/payments/api/testing.es.md) to make payments.
 
 ```
 # Get access_token

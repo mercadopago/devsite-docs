@@ -17,7 +17,7 @@ processing_mode.
 
 ### processing\_mode
 
-It is the mode that indicates if we will process the payments with your merchant numbers or those of MercadoPago.
+It is the mode that indicates if we will process the payments with your merchant numbers or those of Mercado Pago.
 
 If this parameter is not sent in the *POST^, the default value is `aggregator`, indicating that the payment was processed using the merchant numbers of Mercado Pago.
 
@@ -33,7 +33,7 @@ If you want to process it with your merchant numbers, you must send the `gateway
 
 In more complex cases, it is useful to be able to determine the merchant number to be used for each payment.
 
-The `merchant_account_id` attribute allows you to control this behavior. This ID will be the internal identifier of MercadoPago that represents a particular merchant number.
+The `merchant_account_id` attribute allows you to control this behavior. This ID will be the internal identifier of Mercado Pago that represents a particular merchant number.
 
 ## Create a payment
 

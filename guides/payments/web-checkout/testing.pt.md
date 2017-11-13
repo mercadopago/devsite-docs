@@ -14,7 +14,7 @@ Você deve verificar se:
 
 ### Crie usuários de teste
 
-Para simular o processo de pagamento do começo ao fim é necessário criar 2 usuários de teste:**vendedor** e **comprador**.
+Para simular o processo de pagamento do começo ao fim é necessário criar 2 usuários de teste: **vendedor** e **comprador**.
 
 Você deve fazer a seguinte requisição à API para criar cada um dos usuários.
 

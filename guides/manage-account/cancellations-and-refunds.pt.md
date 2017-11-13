@@ -66,7 +66,7 @@ curl -X PUT \
 Deve haver saldo suficiente disponível em sua conta para efetuar a devolução do valor do pagamento com sucesso. Caso contrário, obterá um erro `400 Bad Request`.
 
 Caso o comprador tenha efetuado o pagamento com cartão, o valor será devolvido no próprio cartão.
-Para pagamentos realizados a partir de outros meios, o valor a ser devolvido será depositado na conta MercadoPago do comprador. Caso não possua uma conta, criaremos uma utilizando seu e-mail.
+Para pagamentos realizados a partir de outros meios, o valor a ser devolvido será depositado na conta Mercado Pago do comprador. Caso não possua uma conta, criaremos uma utilizando seu e-mail.
 
 ### Efetue a devolução integral do pagamento
 

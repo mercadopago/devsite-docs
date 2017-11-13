@@ -27,7 +27,7 @@ This static QR code can be displayed next to the product or service to be sold. 
 
 ### QR code without associated amount
 
-An alternative to receive in-store payments without the need for coding is by generating a QR code linked to your MercadoPago account.
+An alternative to receive in-store payments without the need for coding is by generating a QR code linked to your Mercado Pago account.
 
 In this way, by scanning the code, the customer will be asked to manually enter the amount to be paid.
 
@@ -35,6 +35,6 @@ This transfer of cash is not associated to a sales order. It only allows custome
 
 ## Check your payments
 
-You can check your sales transactions in the list of activities of your MercadoPago account, or integrate the [notifications](/guides/notifications/webhooks.es.md) in your management system.
+You can check your sales transactions in the list of activities of your Mercado Pago account, or integrate the [notifications](/guides/notifications/webhooks.es.md) in your management system.
 
 > If you want to build something more advanced and personalized, check our [integrated QR documentation](/guides/instore-payments/qr-payments/qr-integrated.es.md).
