@@ -1,0 +1,470 @@
+---
+type: object
+properties:
+- items:
+    type: Array(Object)
+    description:
+      en: Items information
+      es: Items information
+      pt: Items information
+    properties:
+    - id:
+        type: String(256)
+        description:
+          en: Item ID
+          es: Item ID
+          pt: Item ID
+    - title:
+        type: String(256)
+        description:
+          en: Item title. It will be displayed in the payment process.
+          es: Item title. It will be displayed in the payment process.
+          pt: Item title. It will be displayed in the payment process.
+    - description:
+        type: String(256)
+        description:
+          en: Item description
+          es: Item description
+          pt: Item description
+    - picture_url:
+        type: String(600)
+        description:
+          en: Item image URL
+          es: Item image URL
+          pt: Item image URL
+    - category_id:
+        type: String(256)
+        description:
+          en: Item category ID
+          es: Item category ID
+          pt: Item category ID
+    - quantity:
+        type: Integer
+        description:
+          en: Item quantity
+          es: Item quantity
+          pt: Item quantity
+    - currency_id:
+        type: String(3)
+        description:
+          en: Currency ID. ISO_4217 code
+          es: Currency ID. ISO_4217 code
+          pt: Currency ID. ISO_4217 code
+    - unit_price:
+        type: Float
+        description:
+          en: Unit price
+          es: Unit price
+          pt: Unit price
+- payer:
+    type: Object
+    description:
+      en: Buyer Information
+      es: Buyer Information
+      pt: Buyer Information
+    properties:
+    - name:
+        type: String(256)
+        description:
+          en: Buyer name
+          es: Buyer name
+          pt: Buyer name
+    - surname:
+        type: String(256)
+        description:
+          en: Buyer last name
+          es: Buyer last name
+          pt: Buyer last name
+    - email:
+        type: String(256)
+        description:
+          en: Buyer e-mail address
+          es: Buyer e-mail address
+          pt: Buyer e-mail address
+    - phone:
+        type: Object
+        description:
+          en: Buyer phone
+          es: Buyer phone
+          pt: Buyer phone
+        properties:
+        - area_code:
+            type: String(256)
+            description:
+              en: Area code
+              es: Area code
+              pt: Area code
+        - number:
+            type: String(256)
+            description:
+              en: Number
+              es: Number
+              pt: Number
+    - identification:
+        type: Object
+        description:
+          en: Personal identification
+          es: Personal identification
+          pt: Personal identification
+        properties:
+        - type:
+            type: String(256)
+            description:
+              en: Identification Type
+              es: Identification Type
+              pt: Identification Type
+        - number:
+            type: String(256)
+            description:
+              en: Number
+              es: Number
+              pt: Number
+    - address:
+        type: Object
+        description:
+          en: Buyer address
+          es: Buyer address
+          pt: Buyer address
+        properties:
+        - zip_code:
+            type: String(256)
+            description:
+              en: Zip code
+              es: Zip code
+              pt: Zip code
+        - street_name:
+            type: String(256)
+            description:
+              en: Street name
+              es: Street name
+              pt: Street name
+        - street_number:
+            type: Integer
+            description:
+              en: Street number
+              es: Street number
+              pt: Street number
+    - date_created:
+        type: Date(ISO_8601)
+        description:
+          en: Registration date
+          es: Registration date
+          pt: Registration date
+- payment_methods:
+    type: Object
+    description:
+      en: Set up payment methods to be excluded from the payment process
+      es: Set up payment methods to be excluded from the payment process
+      pt: Set up payment methods to be excluded from the payment process
+    properties:
+    - excluded_payment_methods:
+        type: Array(Object)
+        description:
+          en: Payment methods not allowed in payment process (except account_money)
+          es: Payment methods not allowed in payment process (except account_money)
+          pt: Payment methods not allowed in payment process (except account_money)
+        properties:
+        - id:
+            type: String(256)
+            description:
+              en: Payment method ID
+              es: Payment method ID
+              pt: Payment method ID
+    - excluded_payment_types:
+        type: Array(Object)
+        description:
+          en: Payment types not allowed in payment process
+          es: Payment types not allowed in payment process
+          pt: Payment types not allowed in payment process
+        properties:
+        - id:
+            type: String(256)
+            description:
+              en: Payment method data_type ID
+              es: Payment method data_type ID
+              pt: Payment method data_type ID
+    - default_payment_method_id:
+        type: String(256)
+        description:
+          en: Payment method to be preferred on the payments methods list
+          es: Payment method to be preferred on the payments methods list
+          pt: Payment method to be preferred on the payments methods list
+    - installments:
+        type: Integer
+        description:
+          en: Maximum number of credit card installments to be accepted
+          es: Maximum number of credit card installments to be accepted
+          pt: Maximum number of credit card installments to be accepted
+    - default_installments:
+        type: Integer
+        description:
+          en: Prefered number of credit card installments
+          es: Prefered number of credit card installments
+          pt: Prefered number of credit card installments
+- shipments:
+    type: Object
+    description:
+      en: Shipments information
+      es: Shipments information
+      pt: Shipments information
+    properties:
+    - mode:
+        type: String
+        description:
+          en: Shipment mode
+          es: Shipment mode
+          pt: Shipment mode
+        enum:
+        - custom:
+            en: Custom shipping
+            es: Custom shipping
+            pt: Custom shipping
+        - me2:
+            en: MercadoEnvíos
+            es: MercadoEnvíos
+            pt: MercadoEnvíos
+        - not_specified:
+            en: Shipping mode not specified
+            es: Shipping mode not specified
+            pt: Shipping mode not specified
+    - local_pickup:
+        type: Boolean
+        description:
+          en: The payer have the option to pick up the shipment in your store (mode:me2
+            only)
+          es: The payer have the option to pick up the shipment in your store (mode:me2
+            only)
+          pt: The payer have the option to pick up the shipment in your store (mode:me2
+            only)
+    - dimensions:
+        type: String
+        description:
+          en: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
+          es: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
+          pt: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
+    - default_shipping_method:
+        type: Integer
+        description:
+          en: Select default shipping method in checkout (mode:me2 only)
+          es: Select default shipping method in checkout (mode:me2 only)
+          pt: Select default shipping method in checkout (mode:me2 only)
+    - free_methods:
+        type: Array(Object)
+        description:
+          en: Offer a shipping method as free shipping (mode:me2 only)
+          es: Offer a shipping method as free shipping (mode:me2 only)
+          pt: Offer a shipping method as free shipping (mode:me2 only)
+        properties:
+        - id:
+            type: Integer
+            description:
+              en: Shipping method ID
+              es: Shipping method ID
+              pt: Shipping method ID
+    - cost:
+        type: Float
+        description:
+          en: Shipment cost (mode:custom only)
+          es: Shipment cost (mode:custom only)
+          pt: Shipment cost (mode:custom only)
+    - free_shipping:
+        type: Boolean
+        description:
+          en: Free shipping for mode:custom
+          es: Free shipping for mode:custom
+          pt: Free shipping for mode:custom
+    - receiver_address:
+        type: Object
+        description:
+          en: Shipping address
+          es: Shipping address
+          pt: Shipping address
+        properties:
+        - zip_code:
+            type: String(256)
+            description:
+              en: Zip code
+              es: Zip code
+              pt: Zip code
+        - street_name:
+            type: String(256)
+            description:
+              en: Street name
+              es: Street name
+              pt: Street name
+        - street_number:
+            type: Integer
+            description:
+              en: Street number
+              es: Street number
+              pt: Street number
+        - floor:
+            type: String(256)
+            description:
+              en: Floor
+              es: Floor
+              pt: Floor
+        - apartment:
+            type: String(256)
+            description:
+              en: Apartment
+              es: Apartment
+              pt: Apartment
+- back_urls:
+    type: Object
+    description:
+      en: URLs to return to the sellers website
+      es: URLs to return to the sellers website
+      pt: URLs to return to the sellers website
+    properties:
+    - success:
+        type: String(600)
+        description:
+          en: Approved payment URL
+          es: Approved payment URL
+          pt: Approved payment URL
+    - pending:
+        type: String(600)
+        description:
+          en: Pending payment URL
+          es: Pending payment URL
+          pt: Pending payment URL
+    - failure:
+        type: String(600)
+        description:
+          en: Canceled payment URL
+          es: Canceled payment URL
+          pt: Canceled payment URL
+- notification_url:
+    type: String(500)
+    description:
+      en: URL where you'd like to receive a payment notification
+      es: URL where you'd like to receive a payment notification
+      pt: URL where you'd like to receive a payment notification
+- id:
+    type: String(UUID)
+    description:
+      en: Preference ID
+      es: Preference ID
+      pt: Preference ID
+- init_point:
+    type: String
+    description:
+      en: Checkout access URL
+      es: Checkout access URL
+      pt: Checkout access URL
+- sandbox_init_point:
+    type: String
+    description:
+      en: Sandbox checkout access URL
+      es: Sandbox checkout access URL
+      pt: Sandbox checkout access URL
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Preference's creation date
+      es: Preference's creation date
+      pt: Preference's creation date
+- operation_type:
+    type: String
+    description:
+      en: Operation data_type
+      es: Operation data_type
+      pt: Operation data_type
+    enum:
+    - regular_payment:
+        en: Normal payment
+        es: Normal payment
+        pt: Normal payment
+    - money_transfer:
+        en: Money request
+        es: Money request
+        pt: Money request
+- additional_info:
+    type: String(600)
+    description:
+      en: Additional information
+      es: Additional information
+      pt: Additional information
+- auto_return:
+    type: String
+    description:
+      en: If specified, your buyers will be redirected back to your site immediately
+        after completing the purchase
+      es: If specified, your buyers will be redirected back to your site immediately
+        after completing the purchase
+      pt: If specified, your buyers will be redirected back to your site immediately
+        after completing the purchase
+    enum:
+    - approved:
+        en: The redirection takes place only for approved payments
+        es: The redirection takes place only for approved payments
+        pt: The redirection takes place only for approved payments
+    - all:
+        en: The redirection takes place only for approved payments, forward compatibility
+          only if we change the default behavior
+        es: The redirection takes place only for approved payments, forward compatibility
+          only if we change the default behavior
+        pt: The redirection takes place only for approved payments, forward compatibility
+          only if we change the default behavior
+- external_reference:
+    type: String(256)
+    description:
+      en: Reference you can synchronize with your payment system
+      es: Reference you can synchronize with your payment system
+      pt: Reference you can synchronize with your payment system
+- expires:
+    type: Boolean
+    description:
+      en: Boolean value that determines if a preference expire
+      es: Boolean value that determines if a preference expire
+      pt: Boolean value that determines if a preference expire
+- expiration_date_from:
+    type: Date(ISO_8601)
+    description:
+      en: Date since the preference will be active
+      es: Date since the preference will be active
+      pt: Date since the preference will be active
+- expiration_date_to:
+    type: Date(ISO_8601)
+    description:
+      en: Date when the preference will be expired
+      es: Date when the preference will be expired
+      pt: Date when the preference will be expired
+- collector_id:
+    type: Integer
+    description:
+      en: Your MercadoPago seller ID
+      es: Your MercadoPago seller ID
+      pt: Your MercadoPago seller ID
+- client_id:
+    type: Integer
+    description:
+      en: Application owner ID that use MercadoLibre API
+      es: Application owner ID that use MercadoLibre API
+      pt: Application owner ID that use MercadoLibre API
+- marketplace:
+    type: String(256)
+    description:
+      en: 'Origin of the payment. Default value: NONE'
+      es: 'Origin of the payment. Default value: NONE'
+      pt: 'Origin of the payment. Default value: NONE'
+- marketplace_fee:
+    type: Float
+    description:
+      en: 'Marketplace''s fee charged by application owner. Default value: 0%'
+      es: 'Marketplace''s fee charged by application owner. Default value: 0%'
+      pt: 'Marketplace''s fee charged by application owner. Default value: 0%'
+- differential_pricing:
+    type: Object
+    description:
+      en: Differential pricing configuration for this preference
+      es: Differential pricing configuration for this preference
+      pt: Differential pricing configuration for this preference
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Differential pricing ID
+          es: Differential pricing ID
+          pt: Differential pricing ID
