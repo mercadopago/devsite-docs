@@ -1,391 +1,521 @@
-resource: payment.raml
+---
+resource: payments.raml
 use:
-  
-erros:
-  200 SUCCESS: 
-    description:
-      es: La solicitud ha sido procesada con exito.
-      en: The request has been processed successfully.
-      pt: O pedido foi processado com sucesso.
-  400 BAD_REQUEST: 
-    description:
-      es: La petición ha sido realizada erróneamente o con datos no válidos
-      en: The request has been made erroneously or with invalid params.
-      pt: O pedido foi feito erroneamente ou com dados inválidos
-    properties:
-      1:
-        description:
-          es: Se ha encontrado un error en los parámetros enviados.
-          en: Params Error
-          pt: Ocorreu um erro nos parâmetros enviados.
-      5: 
-        description:
-          es: Es necesario proveer un access token válido para proceder con la operación solicitada.
-          en: Token must be for test
-          pt: É necessário enviar um token de acesso válido para prosseguir com a operação solicitada.
-      1001:
-        description:
-          es: El formato de fechas debe ser yyyy-MM-dd'T'HH:mm:ss.SSSZ
-          en: The date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ
-          pt: O formato das datas deve ser yyyy-MM-dd'T'HH:mm:ss.SSSZ
-      2001:
-        description:
-          es: Se ha recibido el mismo request en el último minuto.
-          en: Already posted the same request in the last minute
-          pt: O mesmo pedido foi recebido no último minuto.
-      2004:
-        description:
-          es: Request POST al gateway de transacciones ha fallado.
-          en: POST to Gateway Transactions API fail
-          pt: O pedido POST para o gateway de transação falhou.
-      2005:
-        description:
-          es: El Cliente no ha sido encontrado.
-          en: Customer not found
-          pt: O Cliente não foi encontrado.
-      2006:
-        description:
-          es: El CardToken ha expirado o no ha sido escrito correctamente.
-          en: Card Token not found
-          pt: O CardToken expirou ou não foi escrito corretamente.
-      2007:
-        description:
-          es: Fallo la conexión al API de CardTokens.
-          en: Connection to Card Token API fail
-          pt: 
-      2009:
-        description:
-          es: El emisor de tarjeta es un parámetro obligatorio.
-          en: Card token isssuer can't be null
-          pt: A conexão com a API CardTokens falhou.
-      2010:
-        description:
-          es: La tarjeta con la cual se quiere realizar la transacción no ha sido encontrada. 
-          en: Card not found 
-          pt: O cartão com o qual deseja realizar a transação não foi encontrado.
-      2014:
-        description:
-          es: El valor enviado en el parámetro reference_id no es valido. 
-          en: Invalid reference_id
-          pt: O valor enviado no parâmetro reference_id não é válido.
-      2020:
-        description:
-          es: Cliente no autorizado para operar.
-          en: Customer not allowed to operate
-          pt: 
-      2021:
-        description:
-          es: Comercio no autorizado para operar.
-          en: Collector not allowed to operate
-          pt: Cliente não autorizado a operar.
-      2034:
-        description:
-          es: Usuarios inválidos involucrados en la operación.
-          en: Invalid users involved
-          pt: Usuários inválidos envolvidos na operação.
-      2038:
-        description:
-          es: El valor enviado en el parámetro campaign_id no es valido. 
-          en: Invalid campaign_id
-          pt: 
-      2039:
-        description:
-          es: El código del cupón enviado no es valido.
-          en: Invalid coupon_code
-          pt: O código do cupom enviado não é válido.
-      2040:
-        description:
-          es: No existe un usuario con esta dirección de correo.
-          en: User email doesn't exist
-          pt: Não há usuário com este endereço de e-mail.
-      2060:
-        description:
-          es: El cliente no puede ser igual que el comercio.
-          en: The customer can't be equal to the collector
-          pt: O cliente não pode ser o mesmo que o comércio.
-      3000:
-        description:
-          es: Debes proveer el nombre del propietario de la tarjeta con la información de la tarjeta al crear el Card Token.
-          en: You must provide your cardholder_name with your card data
-          pt: Você deve fornecer o nome do proprietário do cartão com as informações do cartão ao criar o token do cartão.
-      3001:
-        description:
-          es: Debes proveer el nombre del emisor de la tarjeta con la información de la tarjeta al crear el Card Token.
-          en: You must provide your cardissuer_id with your card data
-          pt: Você deve fornecer o nome do emissor do cartão com as informações do cartão ao criar o token do cartão.
-      3003:
-        description:
-          es: El valor enviado en el parámetro card_token_id no es valido.
-          en: Invalid card_token_id
-          pt: O valor enviado no parâmetro card_token_id não é válido.
-      3008:
-        description:
-          es: El CardToken no ha sido encontrado.
-          en: Not found Cardtoken
-          pt: O CardToken não foi encontrado.
-      3010:
-        description:
-          es: La tarjeta no ha sido encontrada en la Lista Blanca.
-          en: Not found card on whitelist
-          pt: O cartão não foi encontrado na Lista Branca.
-      3011:
-        description:
-          es: No se ha encontrado el método de pago seleccionado.
-          en: Not found payment_method
-          pt: O método de pagamento selecionado não foi encontrado.
-      3012:
-        description:
-          es: El valor enviado en el parámetro security_code_length no es valido.
-          en: Invalid parameter security_code_length
-          pt: O valor enviado no parâmetro security_code_length não é válido.
-      3013:
-        description:
-          es: El parámetro security_code es un parámetro requerido y no puede ser nulo.
-          en: The parameter security_code is a required field can not be null or empty
-          pt: O parâmetro security_code é um parâmetro obrigatório e não pode ser nulo.
-      3014:
-        description:
-          es: El valor enviado en el parámetro payment_method no es valido.
-          en: Invalid parameter payment_method
-          pt: O valor enviado no parâmetro payment_method não é válido.
-      3015:
-        description:
-          es: El valor enviado en el parámetro card_number_length no es valido.
-          en: Invalid parameter card_number_length
-          pt: O valor enviado no parâmetro card_number_length não é válido.
-      3016:
-        description:
-          es: El valor enviado en el parámetro card_number no es valido.
-          en: Invalid parameter card_number
-          pt: O valor enviado no parâmetro card_number não é válido.
-      3017:
-        description:
-          es: El parámetro card_number_id es un parámetro requerido y no puede ser nulo.
-          en: The parameter card_number_id can not be null or empty
-          pt: O parâmetro card_number_id é um parâmetro obrigatório e não pode ser nulo.
-      3018:
-        description:
-          es: El parámetro expiration_month es un parámetro requerido y no puede ser nulo.
-          en: The parameter expiration_month can not be null or empty
-          pt: O parâmetro expiration_month é um parâmetro obrigatório e não pode ser nulo.
-      3019:
-        description:
-          es: El parámetro expiration_year es un parámetro requerido y no puede ser nulo.
-          en: The parameter expiration_year can not be null or empty
-          pt: O parâmetro expiration_year é um parâmetro requerido e não pode ser nulo.
-      3020:
-        description:
-          es: El parámetro cardholder.name es un parámetro requerido y no puede ser nulo.
-          en: The parameter cardholder.name can not be null or empty
-          pt: O parâmetro do titular do cartão.name é um parâmetro obrigatório e não pode ser nulo.
-      3021:
-        description:
-          es: El parámetro cardholder.document.number es un parámetro requerido y no puede ser nulo.
-          en: The parameter cardholder.document.number can not be null or empty
-          pt: O parâmetro cardholder.document.number é um parâmetro obrigatório e não pode ser nulo.
-      3022:
-        description:
-          es: El parámetro cardholder.document.type es un parámetro requerido y no puede ser nulo.
-          en: The parameter cardholder.document.type can not be null or empty
-          pt: O parâmetro cardholder.document.type é um parâmetro obrigatório e não pode ser nulo.
-      3023:
-        description:
-          es: El parámetro cardholder.document.subtype es un parámetro requerido y no puede ser nulo.
-          en: The parameter cardholder.document.subtype can not be null or empty
-          pt: O parâmetro cardholder.document.subtype é um parâmetro obrigatório e não pode ser nulo.
-      3026:
-        description:
-          es: El parámetro card_id no tiene un valor valido para el método de pago seleccionado.
-          en: Invalid card_id for this payment_method_id
-          pt: O parâmetro card_id não possui um valor válido para o método de pagamento selecionado.
-      3027:
-        description:
-          es: El valor enviado en el parámetro payment_type_id no es valido.
-          en: Invalid payment_type_id
-          pt: O valor enviado no parâmetro payment_type_id não é válido.
-      3028:
-        descripción:
-          es: El valor enviado en el parámetro payment_method_id no es valido.
-          en: Invalid payment_method_id
-          pt: O valor enviado no parâmetro payment_method_id não é válido.
-      3029:
-        description:
-          es: El valor enviado en el parámetro expiration_month no es valido.
-          en: Invalid card expiration month
-          pt: O valor enviado no parâmetro expiration_month não é válido.
-      3030:
-        description:
-          es: El valor enviado en el parámetro expiration_year no es valido.
-          en: Invalid card expiration year
-          pt: O valor enviado no parâmetro expiration_year não é válido.
-      4000:
-        description:
-          es: El parámetro card es un parámetro requerido y no puede ser nulo.
-          en: Card atributte can't be null
-          pt: O parâmetro do cartão é um parâmetro obrigatório e não pode ser nulo.
-      4001:
-        description:
-          es: El parámetro payment_method_id es un parámetro requerido y no puede ser nulo.
-          en: payment_method_id atributte can't be null
-          pt: O parâmetro payment_method_id é um parâmetro obrigatório e não pode ser nulo.
-      4002:
-        description:
-          es: El parámetro transaction_amount es un parámetro requerido y no puede ser nulo.
-          en: transaction_amount atributte can't be null
-          pt: O parâmetro transaction_amount é um parâmetro obrigatório e não pode ser nulo.
-      4003:
-        description:
-          es: El parámetro transaction_amount debe ser numérico.
-          en: transaction_amount atributte must be numeric
-          pt: O parâmetro transaction_amount deve ser numérico.
-      4004:
-        description:
-          es: El parámetro installments es un parámetro requerido y no puede ser nulo.
-          en: Installments atributte can't be null
-          pt: O parâmetro installments é um parâmetro obrigatório e não pode ser nulo.
-      4005:
-        description:
-          es: El valor enviado en el parámetro installments debe ser numérico
-          en: Installments atributte must be numeric
-          pt: O valor enviado no parâmetro de installments deve ser numérico
-      4006:
-        description:
-          es: La informacion sobre el comprador no tiene un formato correcto.
-          en: Payer atributte is malformed
-          pt: A informação sobre o comprador não possui um formato correto.
-      4007:
-        description:
-          es: El parámetro site_id es un parámetro requerido y no puede ser nulo.
-          en: site_id atributte can't be null
-          pt: O parâmetro site_id é um parâmetro obrigatório e não pode ser nulo.
-      4012:
-        description:
-          es: El parámetro payer.id es un parámetro requerido y no puede ser nulo.
-          en: payer.id atributte can't be null
-          pt: 
-      4013:
-        description:
-          es: El parámetro payer.type es un parámetro requerido y no puede ser nulo.
-          en: payer.type atributte can't be null
-          pt: O parâmetro pay.id é um parâmetro obrigatório e não pode ser nulo.
-      4015:
-        description:
-          es: El parámetro payment_method_reference_id es un parámetro requerido y no puede ser nulo.
-          en: payment_method_reference_id atributte can't be null
-          pt: 
-      4016:
-        description:
-          es: El parámetro payment_method_reference_id debe ser numérico.
-          en: payment_method_reference_id atributte must be numeric
-          pt: O parâmetro payment_method_reference_id é um parâmetro obrigatório e não pode ser nulo.
-      4017:
-        description:
-          es: El parámetro status es un parámetro requerido y no puede ser nulo.
-          en: status atributte can't be null
-          pt: O parâmetro de status é um parâmetro requerido e não pode ser nulo.
-      4018:
-        description:
-          es: El parámetro payment_id es un parámetro requerido y no puede ser nulo.
-          en: payment_id atributte can't be null
-          pt: 
-      4019:
-        description:
-          es: El parámetro payment_id debe ser numérico.
-          en: payment_id atributte must be numeric
-          pt: O parâmetro payment_id é um parâmetro obrigatório e não pode ser nulo.
-      4020:
-        description:
-          es: El parámetro notificaction_url debe ser una url valida.
-          en: notificaction_url atributte must be url valid
-          pt: O parâmetro notificaction_url deve ser um URL válido.
-      4021:
-        description:
-          es: El parámetro notificaction_url debe tener una longitud menor a 500 caracteres.
-          en: notificaction_url atributte must be shorter than 500 character
-          pt: O parâmetro notificaction_url deve ter menos de 500 caracteres.
-      4022:
-        description:
-          es: El parámetro metadata debe ser un JSON valido.
-          en: metadata atributte must be a valid JSON
-          pt: 
-      4023:
-        description:
-          es: El parámetro transaction_amount un parámetro requerido y no puede ser nulo.
-          en: transaction_amount atributte can't be null
-          pt: O parâmetro de metadados deve ser um JSON válido.
-      4024:
-        description:
-          es: El parámetro transaction_amount debe ser numérico. 
-          en: transaction_amount atributte must be numeric
-          pt: O parâmetro transaction_amount deve ser numérico.
-      4026:
-        description:
-          es: Monto de cupón de descuento no valido.
-          en: Invalid coupon_amount
-          pt: Valor do cupom de desconto não válido.
-      4027:
-        description:
-          es: El parámetro campaign_id debe ser numérico.
-          en: campaign_id atributte must be numeric
-          pt: O parâmetro campaign_id deve ser numérico.
-      4028:
-        description:
-          es: El parámetro coupon_amount debe ser numérico. 
-          en: coupon_amount atributte must be numeric
-          pt: O parâmetro coupon_amount deve ser numérico.
-      4029:
-        description:
-          es: Tipo de pagador invalido.
-          en: Invalid payer type
-          pt: Tipo de pagador inválido.
-      4037:
-        description:
-          es: Monto de la transaccion no valido.
-          en: Invalid transaction_amount
-          pt: Quantidade da transação não válida.
-      4038:
-        description:
-          es: El valor de application_fee no puede ser mayor que transaction_amount.
-          en: application_fee cannot be bigger than transaction_amount
-          pt: O valor de application_fee não pode ser maior que transaction_amount.
-      4039:
-        description:
-          es: El valor del parámetro application_fee no puede ser negativo.
-          en: application_fee cannot be a negative value
-          pt: 
-      4050:
-        description:
-          es: El valor del parámetro payer.email debe ser un email valido.
-          en: payer.email must be a valid email
-          pt: O valor do parâmetro application_fee não pode ser negativo.
-      4051:
-        description:
-          es: El valor del parámetro payer.email debe tener una longitud mayor que 254 caracteres.
-          en: payer.email must be shorter than 254 characters
-          pt: O valor do parâmetro payer.email deve ter mais de 254 caracteres.
-  401 UNAUTHORIZED:
-    description:
-      es: La peticion realizada no ha sido autorizada.
-      en: The request has not been authorized.
-      pt: O pedido feito não foi autorizado.
-  403 FORBIDDEN: 
-    description:
-      es: El usuario que está realizando la petición no está autorizado.
-      en: The user who made the request is not authorized.
-      pt: O usuário que está fazendo o pedido não está autorizado.
-    properties:
-      4:
-        description:
-          es: El usuario que esta tratando de realizar esta operación no esta autorizado para consultar por este recurso.
-          en: The caller is not authorized to access this resource
-          pt: O usuário que está tentando executar esta operação não está autorizado a consultar este recurso.
-      2041:
-        description:
-          es: El tipo de operacion que se trata de realizar solo esta permitido para usuarios de tipo adminsitrador.
-          en: Only admin users can perform the requested action
-          pt: O tipo de operação a ser executada só é permitido para usuários de tipo administrador.
-      3002: 
-        description:
-          es: El usuario que esta tratando de realizar esta operación no esta autorizado para realizar esta acción.
-          en: The caller is not authorized to perform this action
-          pt: O usuário que está tentando executar esta operação não está autorizado a executar esta ação.
+- payer
+- binary_mode
+- order
+- external_reference
+- description
+- metadata
+- transaction_amount
+- coupon_amount
+- campaign_id
+- coupon_code
+- differential_pricing_id
+- application_fee
+- capture
+- payment_method_id
+- issuer_id
+- token
+- statement_descriptor
+- installments
+- notification_url
+- callback_url
+- additional_info
+errors:
+- 404 NOT_FOUND:
+  - '2000':
+      description:
+        en: Payment not found
+        es: Payment not found
+        pt: Payment not found
+- 403 FORBIDDEN:
+  - '4':
+      description:
+        en: The caller is not authorized to access this resource
+        es: The caller is not authorized to access this resource
+        pt: The caller is not authorized to access this resource
+  - '2041':
+      description:
+        en: Only admin users can perform the requested action
+        es: Only admin users can perform the requested action
+        pt: Only admin users can perform the requested action
+  - '3002':
+      description:
+        en: The caller is not authorized to perform this action
+        es: The caller is not authorized to perform this action
+        pt: The caller is not authorized to perform this action
+- 400 BAD_REQUEST:
+  - '1':
+      description:
+        en: Params Error
+        es: Params Error
+        pt: Params Error
+  - '3':
+      description:
+        en: Token must be for test
+        es: Token must be for test
+        pt: Token must be for test
+  - '5':
+      description:
+        en: Must provide your access_token to proceed
+        es: Must provide your access_token to proceed
+        pt: Must provide your access_token to proceed
+  - '1000':
+      description:
+        en: Number of rows exceeded the limits
+        es: Number of rows exceeded the limits
+        pt: Number of rows exceeded the limits
+  - '1001':
+      description:
+        en: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ
+        es: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ
+        pt: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ
+  - '2001':
+      description:
+        en: Already posted the same request in the last minute
+        es: Already posted the same request in the last minute
+        pt: Already posted the same request in the last minute
+  - '2004':
+      description:
+        en: POST to Gateway Transactions API fail
+        es: POST to Gateway Transactions API fail
+        pt: POST to Gateway Transactions API fail
+  - '2002':
+      description:
+        en: Customer not found
+        es: Customer not found
+        pt: Customer not found
+  - '2006':
+      description:
+        en: Card Token not found
+        es: Card Token not found
+        pt: Card Token not found
+  - '2007':
+      description:
+        en: Connection to Card Token API fail
+        es: Connection to Card Token API fail
+        pt: Connection to Card Token API fail
+  - '2009':
+      description:
+        en: Card token isssuer can't be null
+        es: Card token isssuer can't be null
+        pt: Card token isssuer can't be null
+  - '2010':
+      description:
+        en: Card not found
+        es: Card not found
+        pt: Card not found
+  - '2013':
+      description:
+        en: Invalid profileId
+        es: Invalid profileId
+        pt: Invalid profileId
+  - '2014':
+      description:
+        en: Invalid reference_id
+        es: Invalid reference_id
+        pt: Invalid reference_id
+  - '2015':
+      description:
+        en: Invalid scope
+        es: Invalid scope
+        pt: Invalid scope
+  - '2016':
+      description:
+        en: Invalid status for update
+        es: Invalid status for update
+        pt: Invalid status for update
+  - '2017':
+      description:
+        en: Invalid transaction_amount for update
+        es: Invalid transaction_amount for update
+        pt: Invalid transaction_amount for update
+  - '2018':
+      description:
+        en: The action requested is not valid for the current payment state
+        es: The action requested is not valid for the current payment state
+        pt: The action requested is not valid for the current payment state
+  - '2020':
+      description:
+        en: Customer not allowed to operate
+        es: Customer not allowed to operate
+        pt: Customer not allowed to operate
+  - '2021':
+      description:
+        en: Collector not allowed to operate
+        es: Collector not allowed to operate
+        pt: Collector not allowed to operate
+  - '2022':
+      description:
+        en: You have exceeded the max number of refunds for this payment
+        es: You have exceeded the max number of refunds for this payment
+        pt: You have exceeded the max number of refunds for this payment
+  - '2024':
+      description:
+        en: Payment too old to be refunded
+        es: Payment too old to be refunded
+        pt: Payment too old to be refunded
+  - '2025':
+      description:
+        en: Operation type not allowed to be refunded
+        es: Operation type not allowed to be refunded
+        pt: Operation type not allowed to be refunded
+  - '2027':
+      description:
+        en: The action requested is not valid for the current payment method type
+        es: The action requested is not valid for the current payment method type
+        pt: The action requested is not valid for the current payment method type
+  - '2029':
+      description:
+        en: Payment without movements
+        es: Payment without movements
+        pt: Payment without movements
+  - '2030':
+      description:
+        en: Collector hasn't enough money
+        es: Collector hasn't enough money
+        pt: Collector hasn't enough money
+  - '2031':
+      description:
+        en: Collector hasn't enough available money
+        es: Collector hasn't enough available money
+        pt: Collector hasn't enough available money
+  - '2034':
+      description:
+        en: Invalid users involved
+        es: Invalid users involved
+        pt: Invalid users involved
+  - '2035':
+      description:
+        en: Invalid params for preference Api
+        es: Invalid params for preference Api
+        pt: Invalid params for preference Api
+  - '2036':
+      description:
+        en: Invalid context
+        es: Invalid context
+        pt: Invalid context
+  - '2038':
+      description:
+        en: Invalid campaign_id
+        es: Invalid campaign_id
+        pt: Invalid campaign_id
+  - '2039':
+      description:
+        en: Invalid coupon_code
+        es: Invalid coupon_code
+        pt: Invalid coupon_code
+  - '2040':
+      description:
+        en: User email doesn't exist
+        es: User email doesn't exist
+        pt: User email doesn't exist
+  - '2060':
+      description:
+        en: The customer can't be equal to the collector
+        es: The customer can't be equal to the collector
+        pt: The customer can't be equal to the collector
+  - '3000':
+      description:
+        en: You must provide your cardholder_name with your card data
+        es: You must provide your cardholder_name with your card data
+        pt: You must provide your cardholder_name with your card data
+  - '3001':
+      description:
+        en: You must provide your cardissuer_id with your card data
+        es: You must provide your cardissuer_id with your card data
+        pt: You must provide your cardissuer_id with your card data
+  - '3003':
+      description:
+        en: Invalid card_token_id
+        es: Invalid card_token_id
+        pt: Invalid card_token_id
+  - '3004':
+      description:
+        en: Invalid parameter site_id
+        es: Invalid parameter site_id
+        pt: Invalid parameter site_id
+  - '3005':
+      description:
+        en: Not valid action, the resource is in a state that does not allow this
+          operation. For more information see the state that has the resource.
+        es: Not valid action, the resource is in a state that does not allow this
+          operation. For more information see the state that has the resource.
+        pt: Not valid action, the resource is in a state that does not allow this
+          operation. For more information see the state that has the resource.
+  - '3006':
+      description:
+        en: Invalid parameter cardtoken_id
+        es: Invalid parameter cardtoken_id
+        pt: Invalid parameter cardtoken_id
+  - '3007':
+      description:
+        en: The parameter client_id can not be null or empty
+        es: The parameter client_id can not be null or empty
+        pt: The parameter client_id can not be null or empty
+  - '3008':
+      description:
+        en: Not found Cardtoken
+        es: Not found Cardtoken
+        pt: Not found Cardtoken
+  - '3009':
+      description:
+        en: unauthorized client_id
+        es: unauthorized client_id
+        pt: unauthorized client_id
+  - '3010':
+      description:
+        en: Not found card on whitelist
+        es: Not found card on whitelist
+        pt: Not found card on whitelist
+  - '3011':
+      description:
+        en: Not found payment_method
+        es: Not found payment_method
+        pt: Not found payment_method
+  - '3012':
+      description:
+        en: Invalid parameter security_code_length
+        es: Invalid parameter security_code_length
+        pt: Invalid parameter security_code_length
+  - '3013':
+      description:
+        en: The parameter security_code is a required field can not be null or empty
+        es: The parameter security_code is a required field can not be null or empty
+        pt: The parameter security_code is a required field can not be null or empty
+  - '3014':
+      description:
+        en: Invalid parameter payment_method
+        es: Invalid parameter payment_method
+        pt: Invalid parameter payment_method
+  - '3015':
+      description:
+        en: Invalid parameter card_number_length
+        es: Invalid parameter card_number_length
+        pt: Invalid parameter card_number_length
+  - '3016':
+      description:
+        en: Invalid parameter card_number
+        es: Invalid parameter card_number
+        pt: Invalid parameter card_number
+  - '3017':
+      description:
+        en: The parameter card_number_id can not be null or empty
+        es: The parameter card_number_id can not be null or empty
+        pt: The parameter card_number_id can not be null or empty
+  - '3018':
+      description:
+        en: The parameter expiration_month can not be null or empty
+        es: The parameter expiration_month can not be null or empty
+        pt: The parameter expiration_month can not be null or empty
+  - '3019':
+      description:
+        en: The parameter expiration_year can not be null or empty
+        es: The parameter expiration_year can not be null or empty
+        pt: The parameter expiration_year can not be null or empty
+  - '3020':
+      description:
+        en: The parameter cardholder.name can not be null or empty
+        es: The parameter cardholder.name can not be null or empty
+        pt: The parameter cardholder.name can not be null or empty
+  - '3021':
+      description:
+        en: The parameter cardholder.document.number can not be null or empty
+        es: The parameter cardholder.document.number can not be null or empty
+        pt: The parameter cardholder.document.number can not be null or empty
+  - '3022':
+      description:
+        en: The parameter cardholder.document.type can not be null or empty
+        es: The parameter cardholder.document.type can not be null or empty
+        pt: The parameter cardholder.document.type can not be null or empty
+  - '3023':
+      description:
+        en: The parameter cardholder.document.subtype can not be null or empty
+        es: The parameter cardholder.document.subtype can not be null or empty
+        pt: The parameter cardholder.document.subtype can not be null or empty
+  - '3024':
+      description:
+        en: Not valid action - partial refund unsupported for this transaction
+        es: Not valid action - partial refund unsupported for this transaction
+        pt: Not valid action - partial refund unsupported for this transaction
+  - '3025':
+      description:
+        en: Invalid Auth Code
+        es: Invalid Auth Code
+        pt: Invalid Auth Code
+  - '3026':
+      description:
+        en: Invalid card_id for this payment_method_id
+        es: Invalid card_id for this payment_method_id
+        pt: Invalid card_id for this payment_method_id
+  - '3027':
+      description:
+        en: Invalid payment_type_id
+        es: Invalid payment_type_id
+        pt: Invalid payment_type_id
+  - '3028':
+      description:
+        en: Invalid payment_method_id
+        es: Invalid payment_method_id
+        pt: Invalid payment_method_id
+  - '3029':
+      description:
+        en: Invalid card expiration month
+        es: Invalid card expiration month
+        pt: Invalid card expiration month
+  - '3030':
+      description:
+        en: Invalid card expiration year
+        es: Invalid card expiration year
+        pt: Invalid card expiration year
+  - '4000':
+      description:
+        en: card atributte can't be null
+        es: card atributte can't be null
+        pt: card atributte can't be null
+  - '4001':
+      description:
+        en: payment_method_id atributte can't be null
+        es: payment_method_id atributte can't be null
+        pt: payment_method_id atributte can't be null
+  - '4002':
+      description:
+        en: transaction_amount atributte can't be null
+        es: transaction_amount atributte can't be null
+        pt: transaction_amount atributte can't be null
+  - '4003':
+      description:
+        en: transaction_amount atributte must be numeric
+        es: transaction_amount atributte must be numeric
+        pt: transaction_amount atributte must be numeric
+  - '4004':
+      description:
+        en: installments atributte can't be null
+        es: installments atributte can't be null
+        pt: installments atributte can't be null
+  - '4005':
+      description:
+        en: installments atributte must be numeric
+        es: installments atributte must be numeric
+        pt: installments atributte must be numeric
+  - '4006':
+      description:
+        en: payer atributte is malformed
+        es: payer atributte is malformed
+        pt: payer atributte is malformed
+  - '4007':
+      description:
+        en: site_id atributte can't be null
+        es: site_id atributte can't be null
+        pt: site_id atributte can't be null
+  - '4012':
+      description:
+        en: payer.id atributte can't be null
+        es: payer.id atributte can't be null
+        pt: payer.id atributte can't be null
+  - '4013':
+      description:
+        en: payer.type atributte can't be null
+        es: payer.type atributte can't be null
+        pt: payer.type atributte can't be null
+  - '4015':
+      description:
+        en: payment_method_reference_id atributte can't be null
+        es: payment_method_reference_id atributte can't be null
+        pt: payment_method_reference_id atributte can't be null
+  - '4016':
+      description:
+        en: payment_method_reference_id atributte must be numeric
+        es: payment_method_reference_id atributte must be numeric
+        pt: payment_method_reference_id atributte must be numeric
+  - '4017':
+      description:
+        en: status atributte can't be null
+        es: status atributte can't be null
+        pt: status atributte can't be null
+  - '4018':
+      description:
+        en: payment_id atributte can't be null
+        es: payment_id atributte can't be null
+        pt: payment_id atributte can't be null
+  - '4019':
+      description:
+        en: payment_id atributte must be numeric
+        es: payment_id atributte must be numeric
+        pt: payment_id atributte must be numeric
+  - '4020':
+      description:
+        en: notificaction_url atributte must be url valid
+        es: notificaction_url atributte must be url valid
+        pt: notificaction_url atributte must be url valid
+  - '4021':
+      description:
+        en: notificaction_url atributte must be shorter than 500 character
+        es: notificaction_url atributte must be shorter than 500 character
+        pt: notificaction_url atributte must be shorter than 500 character
+  - '4022':
+      description:
+        en: metadata atributte must be a valid JSON
+        es: metadata atributte must be a valid JSON
+        pt: metadata atributte must be a valid JSON
+  - '4023':
+      description:
+        en: transaction_amount atributte can't be null
+        es: transaction_amount atributte can't be null
+        pt: transaction_amount atributte can't be null
+  - '4024':
+      description:
+        en: transaction_amount atributte must be numeric
+        es: transaction_amount atributte must be numeric
+        pt: transaction_amount atributte must be numeric
+  - '4025':
+      description:
+        en: refund_id can't be null
+        es: refund_id can't be null
+        pt: refund_id can't be null
+  - '4026':
+      description:
+        en: Invalid coupon_amount
+        es: Invalid coupon_amount
+        pt: Invalid coupon_amount
+  - '4027':
+      description:
+        en: campaign_id atributte must be numeric
+        es: campaign_id atributte must be numeric
+        pt: campaign_id atributte must be numeric
+  - '4028':
+      description:
+        en: coupon_amount atributte must be numeric
+        es: coupon_amount atributte must be numeric
+        pt: coupon_amount atributte must be numeric
+  - '4029':
+      description:
+        en: Invalid payer type
+        es: Invalid payer type
+        pt: Invalid payer type
+  - '4037':
+      description:
+        en: Invalid transaction_amount
+        es: Invalid transaction_amount
+        pt: Invalid transaction_amount
+  - '4038':
+      description:
+        en: application_fee cannot be bigger than transaction_amount
+        es: application_fee cannot be bigger than transaction_amount
+        pt: application_fee cannot be bigger than transaction_amount
+  - '4039':
+      description:
+        en: application_fee cannot be a negative value
+        es: application_fee cannot be a negative value
+        pt: application_fee cannot be a negative value
+  - '4050':
+      description:
+        en: payer.email must be a valid email
+        es: payer.email must be a valid email
+        pt: payer.email must be a valid email
+  - '4051':
+      description:
+        en: payer.email must be shorter than 254 characters
+        es: payer.email must be shorter than 254 characters
+        pt: payer.email must be shorter than 254 characters

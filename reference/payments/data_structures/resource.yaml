@@ -1,0 +1,986 @@
+---
+type: object
+properties:
+- id:
+    type: Integer
+    description:
+      en: Payment identifier
+      es: Payment identifier
+      pt: Payment identifier
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Payment’s creation date
+      es: Payment’s creation date
+      pt: Payment’s creation date
+- date_approved:
+    type: Date(ISO_8601)
+    description:
+      en: Payment’s approval date
+      es: Payment’s approval date
+      pt: Payment’s approval date
+- date_last_updated:
+    type: Date(ISO_8601)
+    description:
+      en: Last modified date
+      es: Last modified date
+      pt: Last modified date
+- money_release_date:
+    type: Date(ISO_8601)
+    description:
+      en: Release date of payment
+      es: Release date of payment
+      pt: Release date of payment
+- collector_id:
+    type: Integer
+    description:
+      en: Identifies the seller
+      es: Identifies the seller
+      pt: Identifies the seller
+- operation_type:
+    type: String
+    description:
+      en: Payment type
+      es: Payment type
+      pt: Payment type
+    enum:
+    - regular_payment:
+        en: Typification by default of a purchase being paid using MercadoPago
+        es: Typification by default of a purchase being paid using MercadoPago
+        pt: Typification by default of a purchase being paid using MercadoPago
+    - money_transfer:
+        en: Funds transfer between two users
+        es: Funds transfer between two users
+        pt: Funds transfer between two users
+    - recurring_payment:
+        en: Automatic recurring payment due to an active user subscription
+        es: Automatic recurring payment due to an active user subscription
+        pt: Automatic recurring payment due to an active user subscription
+    - account_fund:
+        en: Money income in the user's account
+        es: Money income in the user's account
+        pt: Money income in the user's account
+    - payment_addition:
+        en: Addition of money to an existing payment, done in MercadoPago's site
+        es: Addition of money to an existing payment, done in MercadoPago's site
+        pt: Addition of money to an existing payment, done in MercadoPago's site
+    - cellphone_recharge:
+        en: Recharge of a user's cellphone account
+        es: Recharge of a user's cellphone account
+        pt: Recharge of a user's cellphone account
+    - pos_payment:
+        en: Payment done through a Point Of Sale
+        es: Payment done through a Point Of Sale
+        pt: Payment done through a Point Of Sale
+- payer:
+    type: Object
+    description:
+      en: Identifies the buyer
+      es: Identifies the buyer
+      pt: Identifies the buyer
+    properties:
+    - entity_type:
+        type: String
+        description:
+          en: Entity type of the payer (only for bank transfers)
+          es: Entity type of the payer (only for bank transfers)
+          pt: Entity type of the payer (only for bank transfers)
+        enum:
+        - individual:
+            en: Payer is individual
+            es: Payer is individual
+            pt: Payer is individual
+        - association:
+            en: Payer is an association
+            es: Payer is an association
+            pt: Payer is an association
+    - type:
+        type: String
+        description:
+          en: Identification type of the associated payer (mandatory if the Payer
+            is a Customer)
+          es: Identification type of the associated payer (mandatory if the Payer
+            is a Customer)
+          pt: Identification type of the associated payer (mandatory if the Payer
+            is a Customer)
+        enum:
+        - customer:
+            en: Payer is a Customer and belongs to the collector
+            es: Payer is a Customer and belongs to the collector
+            pt: Payer is a Customer and belongs to the collector
+        - registered:
+            en: The account corresponds to a MercadoPago registered user
+            es: The account corresponds to a MercadoPago registered user
+            pt: The account corresponds to a MercadoPago registered user
+        - guest:
+            en: The payer doesn't have an account
+            es: The payer doesn't have an account
+            pt: The payer doesn't have an account
+    - id:
+        type: String
+        description:
+          en: Identification of the associated payer
+          es: Identification of the associated payer
+          pt: Identification of the associated payer
+    - email:
+        type: String
+        description:
+          en: Email
+          es: Email
+          pt: Email
+    - identification:
+        type: Object
+        description:
+          en: Personal identification
+          es: Personal identification
+          pt: Personal identification
+        properties:
+        - type:
+            type: String
+            description:
+              en: Identification type
+              es: Identification type
+              pt: Identification type
+        - number:
+            type: String
+            description:
+              en: Identification number
+              es: Identification number
+              pt: Identification number
+    - phone:
+        type: Object
+        description:
+          en: Phone of the associated payer
+          es: Phone of the associated payer
+          pt: Phone of the associated payer
+        properties:
+        - area_code:
+            type: String
+            description:
+              en: Phone area code
+              es: Phone area code
+              pt: Phone area code
+        - number:
+            type: String
+            description:
+              en: Phone number
+              es: Phone number
+              pt: Phone number
+        - extension:
+            type: String
+            description:
+              en: Phone number's extension
+              es: Phone number's extension
+              pt: Phone number's extension
+    - first_name:
+        type: String
+        description:
+          en: First name of the associated payer
+          es: First name of the associated payer
+          pt: First name of the associated payer
+    - last_name:
+        type: String
+        description:
+          en: Last name of the associated payer
+          es: Last name of the associated payer
+          pt: Last name of the associated payer
+- binary_mode:
+    type: Boolean
+    description:
+      en: When set to true, the payment can only be approved or rejected. Otherwise
+        in_process status is added
+      es: When set to true, the payment can only be approved or rejected. Otherwise
+        in_process status is added
+      pt: When set to true, the payment can only be approved or rejected. Otherwise
+        in_process status is added
+- live_mode:
+    type: Boolean
+    description:
+      en: Whether the payment will be processed in sandbox or in production mode
+      es: Whether the payment will be processed in sandbox or in production mode
+      pt: Whether the payment will be processed in sandbox or in production mode
+- order:
+    type: Object
+    description:
+      en: Order identifier
+      es: Order identifier
+      pt: Order identifier
+    properties:
+    - type:
+        type: String
+        description:
+          en: Type of order
+          es: Type of order
+          pt: Type of order
+        enum:
+        - mercadolibre:
+            en: The order is from MercadoLibre
+            es: The order is from MercadoLibre
+            pt: The order is from MercadoLibre
+        - mercadopago:
+            en: It is a MercadoPago merchant_order
+            es: It is a MercadoPago merchant_order
+            pt: It is a MercadoPago merchant_order
+    - id:
+        type: Long
+        description:
+          en: Id of the associated purchase order
+          es: Id of the associated purchase order
+          pt: Id of the associated purchase order
+- external_reference:
+    type: String
+    description:
+      en: ID given by the merchant in their system
+      es: ID given by the merchant in their system
+      pt: ID given by the merchant in their system
+- description:
+    type: String
+    description:
+      en: Payment reason or item title
+      es: Payment reason or item title
+      pt: Payment reason or item title
+- metadata:
+    type: Object
+    description:
+      en: Valid JSON that can be attached to the payment to record additional attributes
+        of the merchant
+      es: Valid JSON that can be attached to the payment to record additional attributes
+        of the merchant
+      pt: Valid JSON that can be attached to the payment to record additional attributes
+        of the merchant
+- currency_id:
+    type: String(3)
+    description:
+      en: ID of the currency used in the payment
+      es: ID of the currency used in the payment
+      pt: ID of the currency used in the payment
+    enum:
+    - ARS:
+        en: Argentine peso
+        es: Argentine peso
+        pt: Argentine peso
+    - BRL:
+        en: Brazilian real
+        es: Brazilian real
+        pt: Brazilian real
+    - VEF:
+        en: Venezuelan strong bolivar
+        es: Venezuelan strong bolivar
+        pt: Venezuelan strong bolivar
+    - CLP:
+        en: Chilean peso
+        es: Chilean peso
+        pt: Chilean peso
+    - MXN:
+        en: Mexican peso
+        es: Mexican peso
+        pt: Mexican peso
+    - COP:
+        en: Colombian peso
+        es: Colombian peso
+        pt: Colombian peso
+    - PEN:
+        en: Peruvian sol
+        es: Peruvian sol
+        pt: Peruvian sol
+    - UYU:
+        en: Uruguayan peso
+        es: Uruguayan peso
+        pt: Uruguayan peso
+- transaction_amount:
+    type: Float
+    description:
+      en: Product cost
+      es: Product cost
+      pt: Product cost
+- transaction_amount_refunded:
+    type: Float
+    description:
+      en: Total refunded amount in this payment
+      es: Total refunded amount in this payment
+      pt: Total refunded amount in this payment
+- coupon_amount:
+    type: Float
+    description:
+      en: Amount of the coupon discount
+      es: Amount of the coupon discount
+      pt: Amount of the coupon discount
+- campaign_id:
+    type: Integer
+    description:
+      en: Discount campaign ID
+      es: Discount campaign ID
+      pt: Discount campaign ID
+- coupon_code:
+    type: String
+    description:
+      en: Discount campaign with a specific code
+      es: Discount campaign with a specific code
+      pt: Discount campaign with a specific code
+- transaction_details:
+    type: Object
+    description:
+      en: Groups the details of the transaction
+      es: Groups the details of the transaction
+      pt: Groups the details of the transaction
+    properties:
+    - financial_institution:
+        type: String
+        description:
+          en: 'External financial institution identifier (e.g.: company id for atm)'
+          es: 'External financial institution identifier (e.g.: company id for atm)'
+          pt: 'External financial institution identifier (e.g.: company id for atm)'
+    - net_received_amount:
+        type: Float
+        description:
+          en: Amount received by the seller
+          es: Amount received by the seller
+          pt: Amount received by the seller
+    - total_paid_amount:
+        type: Float
+        description:
+          en: Total amount paid by the buyer (includes fees)
+          es: Total amount paid by the buyer (includes fees)
+          pt: Total amount paid by the buyer (includes fees)
+    - installment_amount:
+        type: Float
+        description:
+          en: Total installments amount
+          es: Total installments amount
+          pt: Total installments amount
+    - overpaid_amount:
+        type: Float
+        description:
+          en: Amount overpaid (only for tickets)
+          es: Amount overpaid (only for tickets)
+          pt: Amount overpaid (only for tickets)
+    - external_resource_url:
+        type: String
+        description:
+          en: Identifies the resource in the payment processor
+          es: Identifies the resource in the payment processor
+          pt: Identifies the resource in the payment processor
+    - payment_method_reference_id:
+        type: String
+        description:
+          en: For credit card payments is the USN. For offline payment methods, is
+            the reference to give to the cashier or to input into the ATM.
+          es: For credit card payments is the USN. For offline payment methods, is
+            the reference to give to the cashier or to input into the ATM.
+          pt: For credit card payments is the USN. For offline payment methods, is
+            the reference to give to the cashier or to input into the ATM.
+- fee_details:
+    type: Array(Object)
+    description:
+      en: List of fees
+      es: List of fees
+      pt: List of fees
+    properties:
+    - type:
+        type: String
+        description:
+          en: Fee detail
+          es: Fee detail
+          pt: Fee detail
+        enum:
+        - mercadopago_fee:
+            en: Cost for using MercadoPago
+            es: Cost for using MercadoPago
+            pt: Cost for using MercadoPago
+        - coupon_fee:
+            en: Discount given by a coupon
+            es: Discount given by a coupon
+            pt: Discount given by a coupon
+        - financing_fee:
+            en: Cost of financing
+            es: Cost of financing
+            pt: Cost of financing
+        - shipping_fee:
+            en: Shipping cost
+            es: Shipping cost
+            pt: Shipping cost
+        - application_fee:
+            en: Marketplace comision for the service
+            es: Marketplace comision for the service
+            pt: Marketplace comision for the service
+        - discount_fee:
+            en: Discount given by the seller through cost absorption
+            es: Discount given by the seller through cost absorption
+            pt: Discount given by the seller through cost absorption
+    - fee_payer:
+        type: String
+        description:
+          en: Who absorbs the cost
+          es: Who absorbs the cost
+          pt: Who absorbs the cost
+        enum:
+        - collector:
+            en: The seller absorbs the cost
+            es: The seller absorbs the cost
+            pt: The seller absorbs the cost
+        - payer:
+            en: The buyer absorbs the cost
+            es: The buyer absorbs the cost
+            pt: The buyer absorbs the cost
+    - amount:
+        type: Float
+        description:
+          en: Fee amount
+          es: Fee amount
+          pt: Fee amount
+- differential_pricing_id:
+    type: Integer
+    description:
+      en: Id of the scheme for the absorption of financing fee
+      es: Id of the scheme for the absorption of financing fee
+      pt: Id of the scheme for the absorption of financing fee
+- application_fee:
+    type: Float
+    description:
+      en: Fee collected by a marketplace or MercadoPago Application
+      es: Fee collected by a marketplace or MercadoPago Application
+      pt: Fee collected by a marketplace or MercadoPago Application
+- status:
+    type: String
+    description:
+      en: Payment status
+      es: Payment status
+      pt: Payment status
+    enum:
+    - pending:
+        en: The user has not yet completed the payment process
+        es: The user has not yet completed the payment process
+        pt: The user has not yet completed the payment process
+    - approved:
+        en: The payment has been approved and accredited
+        es: The payment has been approved and accredited
+        pt: The payment has been approved and accredited
+    - authorized:
+        en: The payment has been authorized but not captured yet
+        es: The payment has been authorized but not captured yet
+        pt: The payment has been authorized but not captured yet
+    - in_process:
+        en: Payment is being reviewed
+        es: Payment is being reviewed
+        pt: Payment is being reviewed
+    - in_mediation:
+        en: Users have initiated a dispute
+        es: Users have initiated a dispute
+        pt: Users have initiated a dispute
+    - rejected:
+        en: Payment was rejected. The user may retry payment.
+        es: Payment was rejected. The user may retry payment.
+        pt: Payment was rejected. The user may retry payment.
+    - cancelled:
+        en: Payment was cancelled by one of the parties or because time for payment
+          has expired
+        es: Payment was cancelled by one of the parties or because time for payment
+          has expired
+        pt: Payment was cancelled by one of the parties or because time for payment
+          has expired
+    - refunded:
+        en: Payment was refunded to the user
+        es: Payment was refunded to the user
+        pt: Payment was refunded to the user
+    - charged_back:
+        en: Was made a chargeback in the buyer’s credit card
+        es: Was made a chargeback in the buyer’s credit card
+        pt: Was made a chargeback in the buyer’s credit card
+- status_detail:
+    type: String
+    description:
+      en: Gives more detailed information on the current state or rejection cause
+      es: Gives more detailed information on the current state or rejection cause
+      pt: Gives more detailed information on the current state or rejection cause
+- capture:
+    type: Boolean
+    description:
+      en: Determines if the payment should be captured (true, default value) or just
+        reserved (false)
+      es: Determines if the payment should be captured (true, default value) or just
+        reserved (false)
+      pt: Determines if the payment should be captured (true, default value) or just
+        reserved (false)
+- captured:
+    type: Boolean
+    description:
+      en: Determines if the capture operation was performed (just for credit cards)
+      es: Determines if the capture operation was performed (just for credit cards)
+      pt: Determines if the capture operation was performed (just for credit cards)
+- call_for_authorize_id:
+    type: String
+    description:
+      en: Identifier that must be provided to the issuing bank to authorize the payment
+      es: Identifier that must be provided to the issuing bank to authorize the payment
+      pt: Identifier that must be provided to the issuing bank to authorize the payment
+- payment_method_id:
+    type: String
+    description:
+      en: Payment method chosen to do the payment
+      es: Payment method chosen to do the payment
+      pt: Payment method chosen to do the payment
+- issuer_id:
+    type: String
+    description:
+      en: Payment method issuer
+      es: Payment method issuer
+      pt: Payment method issuer
+- payment_type_id:
+    type: String
+    description:
+      en: Type of payment method chosen
+      es: Type of payment method chosen
+      pt: Type of payment method chosen
+    enum:
+    - account_money:
+        en: Money in the MercadoPago account
+        es: Money in the MercadoPago account
+        pt: Money in the MercadoPago account
+    - ticket:
+        en: Printed ticket
+        es: Printed ticket
+        pt: Printed ticket
+    - bank_transfer:
+        en: Wire transfer
+        es: Wire transfer
+        pt: Wire transfer
+    - atm:
+        en: Payment by ATM
+        es: Payment by ATM
+        pt: Payment by ATM
+    - credit_card:
+        en: Payment by credit card
+        es: Payment by credit card
+        pt: Payment by credit card
+    - debit_card:
+        en: Payment by debit card
+        es: Payment by debit card
+        pt: Payment by debit card
+    - prepaid_card:
+        en: Payment by prepaid card
+        es: Payment by prepaid card
+        pt: Payment by prepaid card
+- token:
+    type: String
+    description:
+      en: Card token ID
+      es: Card token ID
+      pt: Card token ID
+- card:
+    type: Object
+    description:
+      en: Details of the card used
+      es: Details of the card used
+      pt: Details of the card used
+    properties:
+    - id:
+        type: Number
+        description:
+          en: Id of the card
+          es: Id of the card
+          pt: Id of the card
+    - last_four_digits:
+        type: String
+        description:
+          en: Last four digits of card number
+          es: Last four digits of card number
+          pt: Last four digits of card number
+    - first_six_digits:
+        type: String
+        description:
+          en: First six digit of card number
+          es: First six digit of card number
+          pt: First six digit of card number
+    - expiration_year:
+        type: Integer
+        description:
+          en: Card expiration year
+          es: Card expiration year
+          pt: Card expiration year
+    - expiration_month:
+        type: Integer
+        description:
+          en: Card expiration month
+          es: Card expiration month
+          pt: Card expiration month
+    - date_created:
+        type: Date(ISO_8601)
+        description:
+          en: Creation date of card
+          es: Creation date of card
+          pt: Creation date of card
+    - date_last_updated:
+        type: Date(ISO_8601)
+        description:
+          en: Last update of data from the card
+          es: Last update of data from the card
+          pt: Last update of data from the card
+    - cardholder:
+        type: Object
+        description:
+          en: Card's owner data
+          es: Card's owner data
+          pt: Card's owner data
+        properties:
+        - name:
+            type: String
+            description:
+              en: Cardholder Name
+              es: Cardholder Name
+              pt: Cardholder Name
+        - identification:
+            type: Object
+            description:
+              en: ID of the cardholder
+              es: ID of the cardholder
+              pt: ID of the cardholder
+            properties:
+            - number:
+                type: String
+                description:
+                  en: Document number
+                  es: Document number
+                  pt: Document number
+            - type:
+                type: String
+                description:
+                  en: Document type
+                  es: Document type
+                  pt: Document type
+- statement_descriptor:
+    type: String
+    description:
+      en: 'How will look the payment in the card bill (e.g.: MERCADOPAGO)'
+      es: 'How will look the payment in the card bill (e.g.: MERCADOPAGO)'
+      pt: 'How will look the payment in the card bill (e.g.: MERCADOPAGO)'
+- installments:
+    type: Integer
+    description:
+      en: Selected quantity of installments
+      es: Selected quantity of installments
+      pt: Selected quantity of installments
+- notification_url:
+    type: String
+    description:
+      en: URL where mercadopago will send notifications associated to changes in this
+        payment
+      es: URL where mercadopago will send notifications associated to changes in this
+        payment
+      pt: URL where mercadopago will send notifications associated to changes in this
+        payment
+- callback_url:
+    type: String
+    description:
+      en: URL where mercadopago does the final redirect (only for bank transfers)
+      es: URL where mercadopago does the final redirect (only for bank transfers)
+      pt: URL where mercadopago does the final redirect (only for bank transfers)
+- refunds:
+    type: Array(Object)
+    description:
+      en: List of refunds that were made to this payment
+      es: List of refunds that were made to this payment
+      pt: List of refunds that were made to this payment
+    properties:
+    - id:
+        type: Number
+        description:
+          en: Refund identifier
+          es: Refund identifier
+          pt: Refund identifier
+    - payment_id:
+        type: Number
+        description:
+          en: Payment on which the return was made
+          es: Payment on which the return was made
+          pt: Payment on which the return was made
+    - amount:
+        type: Float
+        description:
+          en: Amount refunded
+          es: Amount refunded
+          pt: Amount refunded
+    - metadata:
+        type: Object
+        description:
+          en: Valid JSON that can be attached to the payment to record additional
+            attributes of the merchant
+          es: Valid JSON that can be attached to the payment to record additional
+            attributes of the merchant
+          pt: Valid JSON that can be attached to the payment to record additional
+            attributes of the merchant
+    - source:
+        type: Object
+        description:
+          en: Who made the refund
+          es: Who made the refund
+          pt: Who made the refund
+        properties:
+        - id:
+            type: String
+            description:
+              en: User ID who issued the refund
+              es: User ID who issued the refund
+              pt: User ID who issued the refund
+        - name:
+            type: String
+            description:
+              en: User who issued the refund
+              es: User who issued the refund
+              pt: User who issued the refund
+        - type:
+            type: String
+            description:
+              en: Type of user who issued the refund
+              es: Type of user who issued the refund
+              pt: Type of user who issued the refund
+            enum:
+            - collector:
+                en: The collector issued the refund
+                es: The collector issued the refund
+                pt: The collector issued the refund
+            - operator:
+                en: The refund was made by an account's operator
+                es: The refund was made by an account's operator
+                pt: The refund was made by an account's operator
+            - admin:
+                en: The refund was made by a MercadoPago administrator
+                es: The refund was made by a MercadoPago administrator
+                pt: The refund was made by a MercadoPago administrator
+            - bpp:
+                en: The refund was made by the MercadoPago's Buyer Protection Program
+                es: The refund was made by the MercadoPago's Buyer Protection Program
+                pt: The refund was made by the MercadoPago's Buyer Protection Program
+    - date_created:
+        type: Date(ISO_8601)
+        description:
+          en: Date of refund
+          es: Date of refund
+          pt: Date of refund
+    - unique_sequence_number:
+        type: String
+        description:
+          en: Refund identifier given by the card processor
+          es: Refund identifier given by the card processor
+          pt: Refund identifier given by the card processor
+- additional_info:
+    type: Object
+    description:
+      en: Data that could improve fraud analysis and conversion rates. Try to send
+        as much information as possible.
+      es: Data that could improve fraud analysis and conversion rates. Try to send
+        as much information as possible.
+      pt: Data that could improve fraud analysis and conversion rates. Try to send
+        as much information as possible.
+    properties:
+    - ip_address:
+        type: String
+        description:
+          en: IP from where the request comes from (only for bank transfers)
+          es: IP from where the request comes from (only for bank transfers)
+          pt: IP from where the request comes from (only for bank transfers)
+    - items:
+        type: Array(Object)
+        description:
+          en: List of items to be paid
+          es: List of items to be paid
+          pt: List of items to be paid
+        properties:
+        - id:
+            type: String
+            description:
+              en: Item code
+              es: Item code
+              pt: Item code
+        - title:
+            type: String
+            description:
+              en: Item name
+              es: Item name
+              pt: Item name
+        - description:
+            type: String
+            description:
+              en: Long item description
+              es: Long item description
+              pt: Long item description
+        - picture_url:
+            type: String
+            description:
+              en: Image URL
+              es: Image URL
+              pt: Image URL
+        - category_id:
+            type: String
+            description:
+              en: Category of the item
+              es: Category of the item
+              pt: Category of the item
+        - quantity:
+            type: Integer
+            description:
+              en: Item's quantity
+              es: Item's quantity
+              pt: Item's quantity
+        - unit_price:
+            type: Float
+            description:
+              en: Unit price
+              es: Unit price
+              pt: Unit price
+    - payer:
+        type: Object
+        description:
+          en: Buyer's information
+          es: Buyer's information
+          pt: Buyer's information
+        properties:
+        - first_name:
+            type: String
+            description:
+              en: Buyer's name
+              es: Buyer's name
+              pt: Buyer's name
+        - last_name:
+            type: String
+            description:
+              en: Buyer's last name
+              es: Buyer's last name
+              pt: Buyer's last name
+        - phone:
+            type: Object
+            description:
+              en: Buyer's phone
+              es: Buyer's phone
+              pt: Buyer's phone
+            properties:
+            - area_code:
+                type: String
+                description:
+                  en: Area code
+                  es: Area code
+                  pt: Area code
+            - number:
+                type: String
+                description:
+                  en: Phone number
+                  es: Phone number
+                  pt: Phone number
+        - address:
+            type: Object
+            description:
+              en: Address
+              es: Address
+              pt: Address
+            properties:
+            - zip_code:
+                type: String
+                description:
+                  en: Zip code
+                  es: Zip code
+                  pt: Zip code
+            - street_name:
+                type: String
+                description:
+                  en: Street name
+                  es: Street name
+                  pt: Street name
+            - street_number:
+                type: Integer
+                description:
+                  en: Number
+                  es: Number
+                  pt: Number
+        - registration_date:
+            type: Date
+            description:
+              en: Date of registration of the buyer on your site
+              es: Date of registration of the buyer on your site
+              pt: Date of registration of the buyer on your site
+    - shipments:
+        type: Object
+        description:
+          en: Shipping information
+          es: Shipping information
+          pt: Shipping information
+        properties:
+        - receiver_address:
+            type: Object
+            description:
+              en: Buyer's address
+              es: Buyer's address
+              pt: Buyer's address
+            properties:
+            - zip_code:
+                type: String
+                description:
+                  en: Zip code
+                  es: Zip code
+                  pt: Zip code
+            - street_name:
+                type: String
+                description:
+                  en: Street name
+                  es: Street name
+                  pt: Street name
+            - street_number:
+                type: Integer
+                description:
+                  en: Number
+                  es: Number
+                  pt: Number
+            - floor:
+                type: String
+                description:
+                  en: Floor
+                  es: Floor
+                  pt: Floor
+            - apartment:
+                type: String
+                description:
+                  en: Department
+                  es: Department
+                  pt: Department
+    - barcode:
+        type: Object
+        description:
+          en: Barcode information
+          es: Barcode information
+          pt: Barcode information
+        properties:
+        - type:
+            type: String
+            description:
+              en: Encoding type
+              es: Encoding type
+              pt: Encoding type
+            enum:
+            - UCC/EAN 128:
+                en: Encodes data using the Code 128 symbology
+                es: Encodes data using the Code 128 symbology
+                pt: Encodes data using the Code 128 symbology
+            - Code128C:
+                en: High-density alphanumeric code
+                es: High-density alphanumeric code
+                pt: High-density alphanumeric code
+            - Code39:
+                en: Media density code
+                es: Media density code
+                pt: Media density code
+        - content:
+            type: String
+            description:
+              en: Barcode generated
+              es: Barcode generated
+              pt: Barcode generated
+        - width:
+            type: Integer
+            description:
+              en: Width of barcode
+              es: Width of barcode
+              pt: Width of barcode
+        - height:
+            type: Integer
+            description:
+              en: Height of barcode
+              es: Height of barcode
+              pt: Height of barcode
