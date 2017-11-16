@@ -1,115 +1,26 @@
-<%
-  locals       = (current_page.metadata[:locals])
-  lang         = locals[:lang]
-  api          = locals[:endpoint]
-  slug         = locals[:slug]
-  method_name  = locals[:method_name]
-  builder      = UIBuilder::TreeTableBuilder.new(locals) 
-  api.set_lang(lang)
-%>
+<% builder = UIBuilder::TreeTableBuilder.new(locals)  %>
 
-<% pattern = /[\{]([a-zA-z]+)[\}]/m %>
-<h1><%= "/#{api.version}#{slug.gsub(pattern, '<span class=\'slug\'>:\0</span>').gsub(/[\{\}]/, '')}" %></h1>
-<p><%= api.method_description(slug, method_name) %></p>
+<h1><%= "/#{resource.version}#{endpoint.title}" %></h1>
 
-<h2> HTTP REQUEST </h2>
-
-<blockquote> 
-  <%= method_name.upcase %> <%= api.uri_request(slug) %> 
+<blockquote>
+  <strong> <%= method.method_name.upcase %> </strong>
+  <%= "#{resource.base_uri}#{resource.version}#{endpoint.title}" %>
 </blockquote>
 
-<% example = api.method_example(slug, method_name) %>
-
-<% if example %>
-  <h4> Ejemplo </h4>
-  <div class="code-container" data-slideout-ignore>
-    <div id="editor_child_1" class="code_editor" language="bash">
-      <pre class="line-numbers"><code class="language-bash"><%= example %></code></pre>
-    </div>
-  </div>
-<% end %>
-
-<h3> Headers </h3>
+<h3> Request Params </h3>
 
 <div class = "tree-table">
   <div class = "tree-table-header">
-    <span>Parametro</span><span>Tipo</span><span>Descripcion</span>
-  </div>
-  <div class = "tree-table-row">
-    <span> accept </span>
-    <span> string </span>
-    <span> application/json </span>
-  </div>
-  <div class = "tree-table-row">
-    <span> content-type </span>
-    <span> string </span>
-    <span> application/json </span>
-  </div>
+    <span>Parameter</span><span>Type</span><span>Description</span> 
+  </div> 
+  <%= builder.build_rows(method.request_parameters) %>
 </div>
 
-<% queryParameters = api.query_parameters(slug, method_name) %>
-<% urlParameters = api.url_parameters(slug, method_name) %>
-<% errorCodes = api.error_codes(slug, method_name) %>
-<% responseExample = api.response_example(slug, method_name) %>
+<h3> Errors </h3>
 
-<% if (urlParameters) %>
-  <h3> Parametros de url </h3>
-  <div class = "tree-table">
-    <div class = "tree-table-header">
-      <span>Campo</span><span>Tipo</span><span>Descripción</span>
-    </div> 
-    <%= builder.build_rows(urlParameters) %>
-  </div>
-<% end %>
-
-<% if (queryParameters) %>
-  <h3> Parametros GET </h3>
-  <div class = "tree-table">
-    <div class = "tree-table-header">
-      <span>Campo</span><span>Tipo</span><span>Descripción</span>
-    </div> 
-    <%= builder.build_rows(queryParameters) %>
-  </div>
-<% end %>
- 
-
-<% body = api.body(slug, method_name) %>
-
-<% if body %> 
-  <h3> Parametros de Body </h3> 
-  <% body.each do |type, message| %> 
-    <% properties = api.get_properties(message) %> 
-    <% if properties %> 
-      <div class = "tree-table">
-        <div class = "tree-table-header">
-          <span>Parametro</span>
-          <span>Tipo</span>
-          <span>Descripcion</span>
-        </div>
-        <%= builder.build_rows(properties) %>
-      </div>
-    <% end %> 
-  <% end %>
-<% end %>
-
-<h2> HTTP RESPONSE </h2>
-
-<% if responseExample %>
-  <h4> Ejemplo </h4>
-  <div class="code-container" data-slideout-ignore>
-    <div id="editor_child_2" class="code_editor" language="bash">
-      <pre class="line-numbers"><code class="language-bash"><%= responseExample %></code></pre>
-    </div>
-  </div>
-<% end %>
-
-<% if (errorCodes) %>
-  <h3> Referencia de mensajes de error </h3>
-  <div class = "two-table">
-    <div class = "two-table-header">
-      <span>Codigo de Estado / Codigo de Error</span><span>Descripción</span>
-    </div> 
-    <%= builder.build_two_cols(errorCodes) %>
-  </div>
-<% end %>
- 
+<div class = "two-table">
+  <div class = "two-table-header">
+    <span>Code</span><span>Description</span>
+  </div>  
+  <%= builder.build_two_cols(method.errors) %>
+</div>

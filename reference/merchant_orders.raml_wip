@@ -1,8 +1,0 @@
-title: Merchant Orders API
-version: 1.0
-baseUri: https://api.mercadopago.com 
-/merchant_orders:
-  post:
-/merchant_orders/{id}:
-  get:
-  put:

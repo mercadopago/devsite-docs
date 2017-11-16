@@ -1,8 +1,0 @@
-title: Planes API
-version: 1.0
-baseUri: https://api.mercadopago.com 
-/plans:
-  post:
-/plans/{id}:
-  get:
-  put:

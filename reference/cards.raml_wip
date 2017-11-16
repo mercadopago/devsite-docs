@@ -1,9 +1,0 @@
-title: Cards API
-version: 1.0
-baseUri: https://api.mercadopago.com 
-/customers/{customer_id}/cards:
-  post:
-/customers/{customer_id}/cards/{id}:
-  get:
-  put:
-  delete:

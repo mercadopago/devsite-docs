@@ -10,12 +10,15 @@ module Extractor
 
   # APIs to explore 
   APIS = { 
-    invoices: '/v1/invoices/'
+    customers: 'v1/customers/',
+    plans: 'v1/plans/',
+    subscriptions: 'v1/subscriptions/',
+    invoices: 'v1/invoices/'
   }
 
   @@get_attributes    = Array.new
   @@post_attributes   = Array.new
-  @@put_attributes    = Array.new 
+  @@put_attributes    = Array.new
 
   @@progressbar = nil
 
@@ -55,12 +58,18 @@ module Extractor
       result[k]["type"] = v["data_type"]
       result[k]["description"] = { 
         "en" => v["description"],
-        "es" => self.yandex_translate(CGI.escape(v["description"]), "en-es"),
-        "pt" => self.yandex_translate(CGI.escape(v["description"]), "en-pt")
+        "es" => v["description"],#self.yandex_translate(CGI.escape(v["description"]), "en-es"),
+        "pt" => v["description"]#self.yandex_translate(CGI.escape(v["description"]), "en-pt")
       } 
       result[k]["properties"] = self.parse_recursive(v["attributes"], false) if v["attributes"]
       result[k]["enum"] = v["values"].map{
-        |x| { "#{x.first[0]}" => {"en" => "#{x.first[1]}"} }
+        |x| { "#{x.first[0]}" => 
+          { 
+            "en" => "#{x.first[1]}",
+            "es" => "#{x.first[1]}",
+            "pt" => "#{x.first[1]}"
+          }
+        }
       } if v["values"]
       result
     end
@@ -77,8 +86,8 @@ module Extractor
       "#{code}" => {
         "description" => {
           "en" => description,
-          "es" => self.yandex_translate(CGI.escape(description), "en-es"),
-          "pt" => self.yandex_translate(CGI.escape(description), "en-pt")
+          "es" => description,#self.yandex_translate(CGI.escape(description), "en-es"),
+          "pt" => description#self.yandex_translate(CGI.escape(description), "en-pt")
         }
       }
     }
@@ -115,6 +124,7 @@ module Extractor
       end
       json = JSON.parse(response.body)
 
+
       @@progressbar = ProgressBar.create(
         total: json["attributes"].count, 
         :format => "%a %b\u{15E7}%i %p%% %t",
@@ -127,10 +137,10 @@ module Extractor
       }
  
 
-      resource_file = File.open("#{name}/data_structures/#{name}.raml", 'w')
-      on_get_file = File.open("#{name}/data_structures/on_get.yaml", 'w')
-      on_post_file = File.open("#{name}/data_structures/on_post.yaml", 'w')
-      on_put_file = File.open("#{name}/data_structures/on_put.yaml", 'w')
+      resource_file = File.open("#{name}/data_structures/resource.yaml", 'w')
+      on_get_file = File.open("#{name}/data_structures/get.yaml", 'w')
+      on_post_file = File.open("#{name}/data_structures/post.yaml", 'w')
+      on_put_file = File.open("#{name}/data_structures/put.yaml", 'w')
       resource_file.write(YAML.dump(chunk))
 
       on_get_file.write(YAML.dump({
