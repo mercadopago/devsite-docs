@@ -1,0 +1,249 @@
+---
+resource: card_tokens.raml
+use:
+- expirationYear
+- expirationMonth
+- cardholder
+- identification
+- number
+- type
+- name
+errors:
+- 400 BAD_REQUEST:
+  - '310':
+      description:
+        en: Invalid parameter 'internal_client_id'
+        es: Invalid parameter 'internal_client_id'
+        pt: Invalid parameter 'internal_client_id'
+  - '200':
+      description:
+        en: The parameter 'public_key' can not be null or empty
+        es: The parameter 'public_key' can not be null or empty
+        pt: The parameter 'public_key' can not be null or empty
+  - '302':
+      description:
+        en: Invalid parameter 'public_key'
+        es: Invalid parameter 'public_key'
+        pt: Invalid parameter 'public_key'
+  - '219':
+      description:
+        en: The parameter 'client_id' can not be null or empty
+        es: The parameter 'client_id' can not be null or empty
+        pt: The parameter 'client_id' can not be null or empty
+  - '315':
+      description:
+        en: Invalid parameter 'site_id'
+        es: Invalid parameter 'site_id'
+        pt: Invalid parameter 'site_id'
+  - '222':
+      description:
+        en: The parameter 'site_id' is a required field (not null or empty)
+        es: The parameter 'site_id' is a required field (not null or empty)
+        pt: The parameter 'site_id' is a required field (not null or empty)
+  - '318':
+      description:
+        en: Invalid parameter 'card_number_id'
+        es: Invalid parameter 'card_number_id'
+        pt: Invalid parameter 'card_number_id'
+  - '304':
+      description:
+        en: Invalid parameter 'card_number_length'
+        es: Invalid parameter 'card_number_length'
+        pt: Invalid parameter 'card_number_length'
+  - '703':
+      description:
+        en: Invalid length for field 'card_number_length'
+        es: Invalid length for field 'card_number_length'
+        pt: Invalid length for field 'card_number_length'
+  - '319':
+      description:
+        en: Invalid parameter 'trunc_card_number'
+        es: Invalid parameter 'trunc_card_number'
+        pt: Invalid parameter 'trunc_card_number'
+  - '701':
+      description:
+        en: invalid length for field 'trunc_card_number'
+        es: invalid length for field 'trunc_card_number'
+        pt: invalid length for field 'trunc_card_number'
+  - '321':
+      description:
+        en: Invalid parameter 'security_code_id'
+        es: Invalid parameter 'security_code_id'
+        pt: Invalid parameter 'security_code_id'
+  - '700':
+      description:
+        en: invalid length for field 'security_code_id'
+        es: invalid length for field 'security_code_id'
+        pt: invalid length for field 'security_code_id'
+  - '307':
+      description:
+        en: Invalid parameter 'security_code_length'
+        es: Invalid parameter 'security_code_length'
+        pt: Invalid parameter 'security_code_length'
+  - '704':
+      description:
+        en: invalid length for field 'security_code_length'
+        es: invalid length for field 'security_code_length'
+        pt: invalid length for field 'security_code_length'
+  - '305':
+      description:
+        en: Invalid cardholder structure
+        es: Invalid cardholder structure
+        pt: Invalid cardholder structure
+  - '210':
+      description:
+        en: The structure 'cardholder' can not be null
+        es: The structure 'cardholder' can not be null
+        pt: The structure 'cardholder' can not be null
+  - '316':
+      description:
+        en: Invalid parameter 'cardholder.name'
+        es: Invalid parameter 'cardholder.name'
+        pt: Invalid parameter 'cardholder.name'
+  - '211':
+      description:
+        en: The structure 'cardholder.identification' can not be null
+        es: The structure 'cardholder.identification' can not be null
+        pt: The structure 'cardholder.identification' can not be null
+  - '322':
+      description:
+        en: Invalid parameter 'cardholder.identification.type'
+        es: Invalid parameter 'cardholder.identification.type'
+        pt: Invalid parameter 'cardholder.identification.type'
+  - '323':
+      description:
+        en: Invalid parameter 'cardholder.identification.subtype'
+        es: Invalid parameter 'cardholder.identification.subtype'
+        pt: Invalid parameter 'cardholder.identification.subtype'
+  - '213':
+      description:
+        en: The parameter 'cardholder.identification.subtype' can not be null or empty
+        es: The parameter 'cardholder.identification.subtype' can not be null or empty
+        pt: The parameter 'cardholder.identification.subtype' can not be null or empty
+  - '324':
+      description:
+        en: Invalid parameter 'cardholder.identification.number'
+        es: Invalid parameter 'cardholder.identification.number'
+        pt: Invalid parameter 'cardholder.identification.number'
+  - '325':
+      description:
+        en: Invalid parameter 'expiration_month'
+        es: Invalid parameter 'expiration_month'
+        pt: Invalid parameter 'expiration_month'
+  - '326':
+      description:
+        en: Invalid parameter 'cardExpirationYear'
+        es: Invalid parameter 'cardExpirationYear'
+        pt: Invalid parameter 'cardExpirationYear'
+  - '702':
+      description:
+        en: Invalid parameter 'expiration_year'
+        es: Invalid parameter 'expiration_year'
+        pt: Invalid parameter 'expiration_year'
+  - '301':
+      description:
+        en: Invalid expiration date
+        es: Invalid expiration date
+        pt: Invalid expiration date
+  - '317':
+      description:
+        en: Invalid parameter 'card_id'
+        es: Invalid parameter 'card_id'
+        pt: Invalid parameter 'card_id'
+  - '320':
+      description:
+        en: Invalid parameter 'luhn_validation'
+        es: Invalid parameter 'luhn_validation'
+        pt: Invalid parameter 'luhn_validation'
+  - E111:
+      description:
+        en: invalid json
+        es: invalid json
+        pt: invalid json
+  - E114:
+      description:
+        en: parameter cardholderName can not be null/empty
+        es: parameter cardholderName can not be null/empty
+        pt: parameter cardholderName can not be null/empty
+  - E115:
+      description:
+        en: parameter public_key can not be null/empty
+        es: parameter public_key can not be null/empty
+        pt: parameter public_key can not be null/empty
+  - E202:
+      description:
+        en: invalid parameter cardNumber
+        es: invalid parameter cardNumber
+        pt: invalid parameter cardNumber
+  - E203:
+      description:
+        en: invalid parameter securityCode
+        es: invalid parameter securityCode
+        pt: invalid parameter securityCode
+  - E213:
+      description:
+        en: invalid parameter card_present
+        es: invalid parameter card_present
+        pt: invalid parameter card_present
+  - E301:
+      description:
+        en: invalid length parameter cardNumber
+        es: invalid length parameter cardNumber
+        pt: invalid length parameter cardNumber
+  - E302:
+      description:
+        en: invalid length parameter securityCode
+        es: invalid length parameter securityCode
+        pt: invalid length parameter securityCode
+  - E305:
+      description:
+        en: invalid length parameter docType
+        es: invalid length parameter docType
+        pt: invalid length parameter docType
+  - E501:
+      description:
+        en: not found public_key
+        es: not found public_key
+        pt: not found public_key
+- 500 Internal Error:
+  - E601:
+      description:
+        en: An error ocurred doing POST cardtoken
+        es: An error ocurred doing POST cardtoken
+        pt: An error ocurred doing POST cardtoken
+  - E602:
+      description:
+        en: An error ocurred doing POST cardtoken
+        es: An error ocurred doing POST cardtoken
+        pt: An error ocurred doing POST cardtoken
+  - E603:
+      description:
+        en: An error ocurred doing POST cardtoken
+        es: An error ocurred doing POST cardtoken
+        pt: An error ocurred doing POST cardtoken
+  - E604:
+      description:
+        en: An error ocurred doing POST cardtoken
+        es: An error ocurred doing POST cardtoken
+        pt: An error ocurred doing POST cardtoken
+  - E701:
+      description:
+        en: An error ocurred doing PUT cardtoken
+        es: An error ocurred doing PUT cardtoken
+        pt: An error ocurred doing PUT cardtoken
+  - E801:
+      description:
+        en: An error ocurred trying to GET public_key data
+        es: An error ocurred trying to GET public_key data
+        pt: An error ocurred trying to GET public_key data
+- 404 Not Found:
+  - E502:
+      description:
+        en: not found cardtoken
+        es: not found cardtoken
+        pt: not found cardtoken
+  - E503:
+      description:
+        en: not found user
+        es: not found user
+        pt: not found user

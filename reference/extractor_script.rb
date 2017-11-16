@@ -10,7 +10,7 @@ module Extractor
 
   # APIs to explore 
   APIS = { 
-    identification_types: 'v1/identification_types/'
+    card_tokens: 'v1/card_tokens/'
   }
 
   @@get_attributes    = Array.new
