@@ -10,10 +10,7 @@ module Extractor
 
   # APIs to explore 
   APIS = { 
-    customers: 'v1/customers/',
-    plans: 'v1/plans/',
-    subscriptions: 'v1/subscriptions/',
-    invoices: 'v1/invoices/'
+    identification_types: 'v1/identification_types/'
   }
 
   @@get_attributes    = Array.new

@@ -1,0 +1,147 @@
+---
+resource: merchant_orders.raml
+use:
+- preference_id
+- application_id
+- site_id
+- payer
+- collector
+- sponsor_id
+- cancelled
+- shipments
+- notification_url
+- additional_info
+- external_reference
+- marketplace
+errors:
+- 400 BAD_REQUEST:
+  - invalid_collector_id:
+      description:
+        en: collector_id must be a number
+        es: collector_id must be a number
+        pt: collector_id must be a number
+  - invalid_collector_id:
+      description:
+        en: collector_id invalid
+        es: collector_id invalid
+        pt: collector_id invalid
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id not found
+        es: sponsor_id not found
+        pt: sponsor_id not found
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id must be a number
+        es: sponsor_id must be a number
+        pt: sponsor_id must be a number
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id should be different than collector_id
+        es: sponsor_id should be different than collector_id
+        pt: sponsor_id should be different than collector_id
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id site must be the same as collector_id
+        es: sponsor_id site must be the same as collector_id
+        pt: sponsor_id site must be the same as collector_id
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id didn't accept MercadoPago's Terms and Conditions
+        es: sponsor_id didn't accept MercadoPago's Terms and Conditions
+        pt: sponsor_id didn't accept MercadoPago's Terms and Conditions
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id is not an active user
+        es: sponsor_id is not an active user
+        pt: sponsor_id is not an active user
+  - invalid_collector_email:
+      description:
+        en: collector is not collector_email(secure) owner
+        es: collector is not collector_email(secure) owner
+        pt: collector is not collector_email(secure) owner
+  - invalid_collector_email:
+      description:
+        en: collector is not collector_email owner
+        es: collector is not collector_email owner
+        pt: collector is not collector_email owner
+  - invalid_items:
+      description:
+        en: amount cannot be paid with MercadoPago
+        es: amount cannot be paid with MercadoPago
+        pt: amount cannot be paid with MercadoPago
+  - invalid_items:
+      description:
+        en: items needed
+        es: items needed
+        pt: items needed
+  - invalid_items:
+      description:
+        en: items invalid. Wrong format
+        es: items invalid. Wrong format
+        pt: items invalid. Wrong format
+  - invalid_items:
+      description:
+        en: currency_id needed
+        es: currency_id needed
+        pt: currency_id needed
+  - invalid_items:
+      description:
+        en: currency_id invalid
+        es: currency_id invalid
+        pt: currency_id invalid
+  - invalid_items:
+      description:
+        en: quantity needed
+        es: quantity needed
+        pt: quantity needed
+  - invalid_items:
+      description:
+        en: quantity must be a number
+        es: quantity must be a number
+        pt: quantity must be a number
+  - invalid_items:
+      description:
+        en: unit_price needed
+        es: unit_price needed
+        pt: unit_price needed
+  - invalid_items:
+      description:
+        en: unit_price must be a number
+        es: unit_price must be a number
+        pt: unit_price must be a number
+  - invalid_items:
+      description:
+        en: unit_price invalid
+        es: unit_price invalid
+        pt: unit_price invalid
+  - invalid_payer:
+      description:
+        en: payer invalid. Wrong format
+        es: payer invalid. Wrong format
+        pt: payer invalid. Wrong format
+  - invalid_payer:
+      description:
+        en: payer name invalid. Max length 100
+        es: payer name invalid. Max length 100
+        pt: payer name invalid. Max length 100
+  - invalid_payer:
+      description:
+        en: payer surname invalid. Max length 100
+        es: payer surname invalid. Max length 100
+        pt: payer surname invalid. Max length 100
+  - invalid_payer:
+      description:
+        en: payer email invalid. Max length 150
+        es: payer email invalid. Max length 150
+        pt: payer email invalid. Max length 150
+  - invalid_id:
+      description:
+        en: preference_id not found
+        es: preference_id not found
+        pt: preference_id not found
+  - invalid_access_token:
+      description:
+        en: access denied
+        es: access denied
+        pt: access denied

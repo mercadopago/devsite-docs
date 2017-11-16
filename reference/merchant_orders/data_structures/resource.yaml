@@ -1,0 +1,462 @@
+---
+type: object
+properties:
+- id:
+    type: Integer
+    description:
+      en: Order identifier
+      es: Order identifier
+      pt: Order identifier
+- preference_id:
+    type: String(UUID)
+    description:
+      en: Payment preference identifier associated to the merchant order
+      es: Payment preference identifier associated to the merchant order
+      pt: Payment preference identifier associated to the merchant order
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Order's creation date
+      es: Order's creation date
+      pt: Order's creation date
+- last_update:
+    type: Date(ISO_8601)
+    description:
+      en: Order's last update date
+      es: Order's last update date
+      pt: Order's last update date
+- application_id:
+    type: String
+    description:
+      en: application identifier
+      es: application identifier
+      pt: application identifier
+- status:
+    type: String
+    description:
+      en: Show the current merchant order state
+      es: Show the current merchant order state
+      pt: Show the current merchant order state
+    enum:
+    - open:
+        en: Order without payments
+        es: Order without payments
+        pt: Order without payments
+    - closed:
+        en: Order with payments covering total amount
+        es: Order with payments covering total amount
+        pt: Order with payments covering total amount
+    - expired:
+        en: Order expired
+        es: Order expired
+        pt: Order expired
+- site_id:
+    type: String
+    description:
+      en: Country identifier that merchant order belongs to
+      es: Country identifier that merchant order belongs to
+      pt: Country identifier that merchant order belongs to
+- payer:
+    type: Object
+    description:
+      en: Buyer Information
+      es: Buyer Information
+      pt: Buyer Information
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Buyer id
+          es: Buyer id
+          pt: Buyer id
+    - email:
+        type: String(256)
+        description:
+          en: Buyer e-mail address
+          es: Buyer e-mail address
+          pt: Buyer e-mail address
+    - nickname:
+        type: String(256)
+        description:
+          en: Buyer nickname
+          es: Buyer nickname
+          pt: Buyer nickname
+- collector:
+    type: Object
+    description:
+      en: MercadoPago seller ID
+      es: MercadoPago seller ID
+      pt: MercadoPago seller ID
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Collector id
+          es: Collector id
+          pt: Collector id
+    - email:
+        type: String(256)
+        description:
+          en: Collector e-mail address
+          es: Collector e-mail address
+          pt: Collector e-mail address
+    - nickname:
+        type: String(256)
+        description:
+          en: Collector nickname
+          es: Collector nickname
+          pt: Collector nickname
+- sponsor_id:
+    type: Integer
+    description:
+      en: Your MercadoPago seller ID
+      es: Your MercadoPago seller ID
+      pt: Your MercadoPago seller ID
+- payments:
+    type: Array(Object)
+    description:
+      en: Payments information
+      es: Payments information
+      pt: Payments information
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Payment id
+          es: Payment id
+          pt: Payment id
+    - transaction_amount:
+        type: Float
+        description:
+          en: Product Cost
+          es: Product Cost
+          pt: Product Cost
+    - total_paid_amount:
+        type: Float
+        description:
+          en: Total amount paid by the buyer
+          es: Total amount paid by the buyer
+          pt: Total amount paid by the buyer
+    - shipping_cost:
+        type: Float
+        description:
+          en: Shipping fee
+          es: Shipping fee
+          pt: Shipping fee
+    - currency_id:
+        type: String(3)
+        description:
+          en: ID of the currency used in the payment
+          es: ID of the currency used in the payment
+          pt: ID of the currency used in the payment
+        enum:
+        - ARS:
+            en: Argentine peso
+            es: Argentine peso
+            pt: Argentine peso
+        - BRL:
+            en: Brasil real
+            es: Brasil real
+            pt: Brasil real
+        - VEF:
+            en: Venezuelan strong bolivar
+            es: Venezuelan strong bolivar
+            pt: Venezuelan strong bolivar
+        - CLP:
+            en: Chilean peso
+            es: Chilean peso
+            pt: Chilean peso
+        - MXN:
+            en: Mexican peso
+            es: Mexican peso
+            pt: Mexican peso
+        - COP:
+            en: Colombian peso
+            es: Colombian peso
+            pt: Colombian peso
+        - UYU:
+            en: Uruguayan peso
+            es: Uruguayan peso
+            pt: Uruguayan peso
+    - status:
+        type: String
+        description:
+          en: Payment status
+          es: Payment status
+          pt: Payment status
+    - status_detail:
+        type: String
+        description:
+          en: Gives more detailed information on the current state or rejection cause
+          es: Gives more detailed information on the current state or rejection cause
+          pt: Gives more detailed information on the current state or rejection cause
+    - operation_type:
+        type: String
+        description:
+          en: Operation data_type
+          es: Operation data_type
+          pt: Operation data_type
+        enum:
+        - regular_payment:
+            en: Typification by default of a purchase being paid using MercadoPago
+            es: Typification by default of a purchase being paid using MercadoPago
+            pt: Typification by default of a purchase being paid using MercadoPago
+        - payment_addition:
+            en: Addition of money to an existing payment, done in MercadoPago's site
+            es: Addition of money to an existing payment, done in MercadoPago's site
+            pt: Addition of money to an existing payment, done in MercadoPago's site
+    - date_approved:
+        type: Date(ISO_8601)
+        description:
+          en: Payment's approvation date
+          es: Payment's approvation date
+          pt: Payment's approvation date
+    - date_created:
+        type: Date(ISO_8601)
+        description:
+          en: Payment's creation date
+          es: Payment's creation date
+          pt: Payment's creation date
+    - last_modified:
+        type: Date(ISO_8601)
+        description:
+          en: Payment's last modification date
+          es: Payment's last modification date
+          pt: Payment's last modification date
+    - amount_refunded:
+        type: Float
+        description:
+          en: Amount refunded in this payment
+          es: Amount refunded in this payment
+          pt: Amount refunded in this payment
+- paid_amount:
+    type: Float
+    description:
+      en: Amount paid in this Order
+      es: Amount paid in this Order
+      pt: Amount paid in this Order
+- refunded_amount:
+    type: Float
+    description:
+      en: Amount refunded in this Order
+      es: Amount refunded in this Order
+      pt: Amount refunded in this Order
+- shipping_cost:
+    type: Float
+    description:
+      en: Shipping fee
+      es: Shipping fee
+      pt: Shipping fee
+- cancelled:
+    type: Boolean
+    description:
+      en: If the Order is expired or not
+      es: If the Order is expired or not
+      pt: If the Order is expired or not
+- items:
+    type: Array(Object)
+    description:
+      en: items information
+      es: items information
+      pt: items information
+    properties:
+    - id:
+        type: String
+        description:
+          en: Item id
+          es: Item id
+          pt: Item id
+    - category_id:
+        type: String
+        description:
+          en: Item category
+          es: Item category
+          pt: Item category
+    - currency_id:
+        type: String(3)
+        description:
+          en: ID of the currency used in the item price
+          es: ID of the currency used in the item price
+          pt: ID of the currency used in the item price
+    - description:
+        type: String
+        description:
+          en: Item description
+          es: Item description
+          pt: Item description
+    - picture_url:
+        type: String
+        description:
+          en: Item picture URL
+          es: Item picture URL
+          pt: Item picture URL
+    - quantity:
+        type: Integer
+        description:
+          en: Total amount paid by the buyer
+          es: Total amount paid by the buyer
+          pt: Total amount paid by the buyer
+    - unit_price:
+        type: Float
+        description:
+          en: Item unit price
+          es: Item unit price
+          pt: Item unit price
+    - title:
+        type: String
+        description:
+          en: Item title
+          es: Item title
+          pt: Item title
+- shipments:
+    type: Object
+    description:
+      en: Shipments information
+      es: Shipments information
+      pt: Shipments information
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Shipping identifier
+          es: Shipping identifier
+          pt: Shipping identifier
+    - shipment_type:
+        type: String
+        description:
+          en: Shipping type
+          es: Shipping type
+          pt: Shipping type
+    - shipping_mode:
+        type: String
+        description:
+          en: Shipping mode
+          es: Shipping mode
+          pt: Shipping mode
+    - picking_type:
+        type: String
+        description:
+          en: Shipping picking type
+          es: Shipping picking type
+          pt: Shipping picking type
+    - status:
+        type: String
+        description:
+          en: Shipping picking type
+          es: Shipping picking type
+          pt: Shipping picking type
+    - substatus:
+        type: String
+        description:
+          en: Shipping picking type
+          es: Shipping picking type
+          pt: Shipping picking type
+    - items:
+        type: Object
+        description:
+          en: Shipping items
+          es: Shipping items
+          pt: Shipping items
+    - date_created:
+        type: Date(ISO_8601)
+        description:
+          en: Shipping's creation date
+          es: Shipping's creation date
+          pt: Shipping's creation date
+    - last_modified:
+        type: Date(ISO_8601)
+        description:
+          en: Shipping's last modification date
+          es: Shipping's last modification date
+          pt: Shipping's last modification date
+    - date_first_printed:
+        type: Date(ISO_8601)
+        description:
+          en: Shipping's first printed date
+          es: Shipping's first printed date
+          pt: Shipping's first printed date
+    - service_id:
+        type: String
+        description:
+          en: Shipping service identifier
+          es: Shipping service identifier
+          pt: Shipping service identifier
+    - sender_id:
+        type: Integer
+        description:
+          en: Sender identifier
+          es: Sender identifier
+          pt: Sender identifier
+    - receiver_id:
+        type: Integer
+        description:
+          en: Receiver identifier
+          es: Receiver identifier
+          pt: Receiver identifier
+    - receiver_address:
+        type: Object
+        description:
+          en: Shipping address
+          es: Shipping address
+          pt: Shipping address
+        properties:
+        - zip_code:
+            type: String(256)
+            description:
+              en: Zip code
+              es: Zip code
+              pt: Zip code
+        - street_name:
+            type: String(256)
+            description:
+              en: Street name
+              es: Street name
+              pt: Street name
+        - street_number:
+            type: Integer
+            description:
+              en: Street number
+              es: Street number
+              pt: Street number
+        - floor:
+            type: String(256)
+            description:
+              en: Floor
+              es: Floor
+              pt: Floor
+        - apartment:
+            type: String(256)
+            description:
+              en: Apartment
+              es: Apartment
+              pt: Apartment
+- notification_url:
+    type: String(500)
+    description:
+      en: URL where you'd like to receive a payment notification
+      es: URL where you'd like to receive a payment notification
+      pt: URL where you'd like to receive a payment notification
+- additional_info:
+    type: String(600)
+    description:
+      en: Additional information
+      es: Additional information
+      pt: Additional information
+- external_reference:
+    type: String(256)
+    description:
+      en: Reference you can synchronize with your payment system
+      es: Reference you can synchronize with your payment system
+      pt: Reference you can synchronize with your payment system
+- marketplace:
+    type: String(256)
+    description:
+      en: 'Origin of the payment. Default value: NONE'
+      es: 'Origin of the payment. Default value: NONE'
+      pt: 'Origin of the payment. Default value: NONE'
+- total_amount:
+    type: Float
+    description:
+      en: Product cost
+      es: Product cost
+      pt: Product cost

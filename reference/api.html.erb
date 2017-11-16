@@ -1,6 +1,6 @@
 <% builder = UIBuilder::TreeTableBuilder.new(locals)  %>
 
-<h1><%= "/#{resource.version}#{endpoint.title}" %></h1>
+<h1><%= "/#{resource.version}#{endpoint.title}".gsub('//', '/') %></h1>
 
 <blockquote>
   <strong> <%= method.method_name.upcase %> </strong>
