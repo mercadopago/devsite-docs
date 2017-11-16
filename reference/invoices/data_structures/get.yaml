@@ -1,5 +1,5 @@
 ---
-resource: invoices.raml
+resource: resource.yaml
 use:
 - id
 - email
