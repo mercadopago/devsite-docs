@@ -11,8 +11,8 @@ To be able to charge in an integrated manner with the Point device, it is necess
 
 Currently, we allow to carry out an integration from any type of external application that can be accessed from the same device where the seller has installed the Mercado Pago Point application:
 
-- Mobile application for Android or native iOS.
-- Mobile Híbirida application.
+- Native Android or iOS Mobile application.
+- Hybrid Mobile application.
 - Web Application.
 
 > WARNING
@@ -24,7 +24,7 @@ Currently, we allow to carry out an integration from any type of external applic
 > * The seller must be logged in with your Mercado Pago account in the Mercado Pago Point application.
 > * Available for Android version 2.8.0 or higher, iOS version 1.7.0 or higher and only when running on iOS 9 or higher.
 
-## Diagrama de Flujo
+## Flowchart
 
 ![instore diagram](/images/point_diagram.png)
 
