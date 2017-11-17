@@ -24,7 +24,7 @@ Existen distintas alternativas para que puedas cobrar a través de Mercado Pago 
 
 * Integrando tu aplicación la modalidad de cobros vía Point. Tu aplicación genera una orden de pago con el monto y una descripción y llama a la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se retorna a tu aplicación.
 
-* Integrando a tu sistema de gestión la modalidad de cobros vía Point. Desde tu sistema se genera una orden de cobro con el monto, una descripción y el dispositivo que queres que reciba dicha orden. Automáticamente se levantará la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se cerrará la orden.
+* Integrando a tu sistema de gestión la modalidad de cobros vía Point. Desde tu sistema se genera una orden de cobro con el monto, una descripción y el dispositivo que quieras que reciba dicha orden. Automáticamente se levantará la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se cerrará la orden.
  
 
 En base a tu modelo de negocio, puede escoger alguna de las opciones o combinarlas para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
