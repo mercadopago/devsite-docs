@@ -1,4 +1,4 @@
-# Collections with Point without integration
+# Receiving payments with Point without integration
 
 From the Mercado Pago application, you have the option to charge in your physical stores through the Point device.
 You don't need to know about programming.
