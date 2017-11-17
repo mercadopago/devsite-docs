@@ -5,7 +5,7 @@ La aplicación móvil de Mercado Pago junto al Point permite cobrar de forma seg
 
 - Cobrar utilizando una referencia del cobro para que puedas conciliar el mismo.
 
-- Mantener un catalogo de productos para agilizar la venta.
+- Mantener un catálogo de productos para agilizar la venta.
 
 Tus vendedores utilizando la aplicación móvil de Mercado Pago pasan la tarjeta del cliente a través del Point y cobran. Así puedes ofrecer en tus tiendas físicas cuotas sin interés y los beneficios que ofrece Mercado Pago.
 
@@ -13,7 +13,7 @@ Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Poi
 
 > [Comprar Point]  (https://www.mercadopago.com.ar/lector-tarjetas-credito-point)  
 
-Tambien, deberas descargar la App desde el store de su teléfono móvil:
+También, deberás descargar la App desde el *store* de su teléfono móvil:
 
 > [Android Play Store]  (https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)  
 > [iOS App Store](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
