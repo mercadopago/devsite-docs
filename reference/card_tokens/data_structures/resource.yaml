@@ -1,0 +1,144 @@
+---
+type: object
+properties:
+- publicKey:
+    type: 
+    description:
+      en: Seller's public_key
+      es: Seller's public_key
+      pt: Seller's public_key
+- cardId:
+    type: 
+    description:
+      en: ID of the card
+      es: ID of the card
+      pt: ID of the card
+- firstSixDigits:
+    type: 
+    description:
+      en: Card number, showing only first six digits
+      es: Card number, showing only first six digits
+      pt: Card number, showing only first six digits
+- luhnValidation:
+    type: 
+    description:
+      en: If the card number meets the Luhn validation
+      es: If the card number meets the Luhn validation
+      pt: If the card number meets the Luhn validation
+- dateUsed:
+    type: 
+    description:
+      en: Date in which this token was used for a payment
+      es: Date in which this token was used for a payment
+      pt: Date in which this token was used for a payment
+- status:
+    type: 
+    description:
+      en: Current token status
+      es: Current token status
+      pt: Current token status
+    enum:
+    - active:
+        en: The token may be used for a payment
+        es: The token may be used for a payment
+        pt: The token may be used for a payment
+    - used:
+        en: The token has already been used for a payment
+        es: The token has already been used for a payment
+        pt: The token has already been used for a payment
+    - expired:
+        en: The token expired and cannot be used anymore
+        es: The token expired and cannot be used anymore
+        pt: The token expired and cannot be used anymore
+- dateDue:
+    type: 
+    description:
+      en: Date in which this token will expire and will be no longer valid for use
+      es: Date in which this token will expire and will be no longer valid for use
+      pt: Date in which this token will expire and will be no longer valid for use
+- liveMode:
+    type: 
+    description:
+      en: Whether the payment will be processed in sandbox or in production mode
+      es: Whether the payment will be processed in sandbox or in production mode
+      pt: Whether the payment will be processed in sandbox or in production mode
+- cardNumberLength:
+    type: 
+    description:
+      en: Length of the card number
+      es: Length of the card number
+      pt: Length of the card number
+- id:
+    type: 
+    description:
+      en: Card token ID
+      es: Card token ID
+      pt: Card token ID
+- securityCodeLength:
+    type: 
+    description:
+      en: Length of the card security code
+      es: Length of the card security code
+      pt: Length of the card security code
+- expirationYear:
+    type: 
+    description:
+      en: Card expiration year
+      es: Card expiration year
+      pt: Card expiration year
+- expirationMonth:
+    type: 
+    description:
+      en: Card expiration month
+      es: Card expiration month
+      pt: Card expiration month
+- dateLastUpdated:
+    type: 
+    description:
+      en: Last modified date
+      es: Last modified date
+      pt: Last modified date
+- lastFourDigits:
+    type: 
+    description:
+      en: Card number, showing only last four digits
+      es: Card number, showing only last four digits
+      pt: Card number, showing only last four digits
+- cardholder:
+    type: 
+    description:
+      en: Cardholder information
+      es: Cardholder information
+      pt: Cardholder information
+    properties:
+    - identification:
+        type: 
+        description:
+          en: Cardholder identification data
+          es: Cardholder identification data
+          pt: Cardholder identification data
+        properties:
+        - number:
+            type: 
+            description:
+              en: Cardholder Identification number
+              es: Cardholder Identification number
+              pt: Cardholder Identification number
+        - type:
+            type: 
+            description:
+              en: Cardholder Identification type
+              es: Cardholder Identification type
+              pt: Cardholder Identification type
+    - name:
+        type: 
+        description:
+          en: Cardholder name
+          es: Cardholder name
+          pt: Cardholder name
+- dateCreated:
+    type: 
+    description:
+      en: Creation date of this token
+      es: Creation date of this token
+      pt: Creation date of this token

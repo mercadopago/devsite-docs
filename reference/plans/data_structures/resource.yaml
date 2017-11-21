@@ -1,0 +1,207 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Plan identifier
+      es: Plan identifier
+      pt: Plan identifier
+- application_fee:
+    type: Float
+    description:
+      en: Fee collected by a marketplace or MercadoPago Application
+      es: Fee collected by a marketplace or MercadoPago Application
+      pt: Fee collected by a marketplace or MercadoPago Application
+- status:
+    type: String
+    description:
+      en: Plan status
+      es: Plan status
+      pt: Plan status
+    enum:
+    - active:
+        en: Customers may be suscribed to this plan
+        es: Customers may be suscribed to this plan
+        pt: Customers may be suscribed to this plan
+    - inactive:
+        en: Customers may no longer be suscribed to this plan
+        es: Customers may no longer be suscribed to this plan
+        pt: Customers may no longer be suscribed to this plan
+    - cancelled:
+        en: Customers may no longer be suscribed to this plan. Also, the subscriptions
+          were cancelled.
+        es: Customers may no longer be suscribed to this plan. Also, the subscriptions
+          were cancelled.
+        pt: Customers may no longer be suscribed to this plan. Also, the subscriptions
+          were cancelled.
+- description:
+    type: String
+    description:
+      en: Subscription plan reason or service title
+      es: Subscription plan reason or service title
+      pt: Subscription plan reason or service title
+- external_reference:
+    type: String
+    description:
+      en: ID given by the merchant in their system
+      es: ID given by the merchant in their system
+      pt: ID given by the merchant in their system
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Plan’s creation date
+      es: Plan’s creation date
+      pt: Plan’s creation date
+- last_modified:
+    type: Date(ISO_8601)
+    description:
+      en: Last modified date
+      es: Last modified date
+      pt: Last modified date
+- auto_recurring:
+    type: Object
+    description:
+      en: Automatic charges configuration
+      es: Automatic charges configuration
+      pt: Automatic charges configuration
+    properties:
+    - frequency:
+        type: Integer
+        description:
+          en: Amount of time (in days or months) for the execution of the next payment
+          es: Amount of time (in days or months) for the execution of the next payment
+          pt: Amount of time (in days or months) for the execution of the next payment
+    - frequency_type:
+        type: String
+        description:
+          en: 'Indicates the period of time. Might be: ''days'' or ''months'''
+          es: 'Indicates the period of time. Might be: ''days'' or ''months'''
+          pt: 'Indicates the period of time. Might be: ''days'' or ''months'''
+        enum:
+        - days:
+            en: Collect every X days (X given by the frequency)
+            es: Collect every X days (X given by the frequency)
+            pt: Collect every X days (X given by the frequency)
+        - months:
+            en: Collect every X months (X given by the frequency)
+            es: Collect every X months (X given by the frequency)
+            pt: Collect every X months (X given by the frequency)
+    - transaction_amount:
+        type: Float
+        description:
+          en: The amount to charge the customer on each period
+          es: The amount to charge the customer on each period
+          pt: The amount to charge the customer on each period
+    - currency_id:
+        type: String(3)
+        description:
+          en: ID of the currency used in every payment, in ISO 4217
+          es: ID of the currency used in every payment, in ISO 4217
+          pt: ID of the currency used in every payment, in ISO 4217
+        enum:
+        - ARS:
+            en: Argentine peso
+            es: Argentine peso
+            pt: Argentine peso
+        - BRL:
+            en: Brazilian real
+            es: Brazilian real
+            pt: Brazilian real
+        - VEF:
+            en: Venezuelan strong bolivar
+            es: Venezuelan strong bolivar
+            pt: Venezuelan strong bolivar
+        - CLP:
+            en: Chilean peso
+            es: Chilean peso
+            pt: Chilean peso
+        - MXN:
+            en: Mexican peso
+            es: Mexican peso
+            pt: Mexican peso
+        - COP:
+            en: Colombian peso
+            es: Colombian peso
+            pt: Colombian peso
+        - PEN:
+            en: Peruvian sol
+            es: Peruvian sol
+            pt: Peruvian sol
+        - UYU:
+            en: Uruguayan peso
+            es: Uruguayan peso
+            pt: Uruguayan peso
+    - repetitions:
+        type: Integer
+        description:
+          en: Quantity of payments to be done during the subscription validity (number
+            of installments)
+          es: Quantity of payments to be done during the subscription validity (number
+            of installments)
+          pt: Quantity of payments to be done during the subscription validity (number
+            of installments)
+    - debit_date:
+        type: Integer(1..31)
+        description:
+          en: Date of month when the payment should be issued (only for monthly based
+            plans)
+          es: Date of month when the payment should be issued (only for monthly based
+            plans)
+          pt: Date of month when the payment should be issued (only for monthly based
+            plans)
+    - free_trial:
+        type: Object
+        description:
+          en: Period to give the service for free (bonus period)
+          es: Period to give the service for free (bonus period)
+          pt: Period to give the service for free (bonus period)
+        properties:
+        - frequency:
+            type: Integer
+            description:
+              en: Amount of time (in days or months) for the free trial period
+              es: Amount of time (in days or months) for the free trial period
+              pt: Amount of time (in days or months) for the free trial period
+        - frequency_type:
+            type: String
+            description:
+              en: 'Indicates the period of time. Might be: ''days'' or ''months'''
+              es: 'Indicates the period of time. Might be: ''days'' or ''months'''
+              pt: 'Indicates the period of time. Might be: ''days'' or ''months'''
+            enum:
+            - days:
+                en: Free trial for X days (X given by the frequency)
+                es: Free trial for X days (X given by the frequency)
+                pt: Free trial for X days (X given by the frequency)
+            - months:
+                en: Free trial for X months (X given by the frequency)
+                es: Free trial for X months (X given by the frequency)
+                pt: Free trial for X months (X given by the frequency)
+- live_mode:
+    type: Boolean
+    description:
+      en: Whether the plan and the later subscriptions will be processed in sandbox
+        or in production mode
+      es: Whether the plan and the later subscriptions will be processed in sandbox
+        or in production mode
+      pt: Whether the plan and the later subscriptions will be processed in sandbox
+        or in production mode
+- setup_fee:
+    type: Float
+    description:
+      en: Amount to be charged once, during de subscription process. Useful to charge
+        an installation cost or a sign up price.
+      es: Amount to be charged once, during de subscription process. Useful to charge
+        an installation cost or a sign up price.
+      pt: Amount to be charged once, during de subscription process. Useful to charge
+        an installation cost or a sign up price.
+- metadata:
+    type: Object
+    description:
+      en: Valid JSON that can be attached to the plan to record additional attributes
+        of the merchant
+      es: Valid JSON that can be attached to the plan to record additional attributes
+        of the merchant
+      pt: Valid JSON that can be attached to the plan to record additional attributes
+        of the merchant

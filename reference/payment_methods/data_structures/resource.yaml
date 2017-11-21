@@ -1,0 +1,264 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Payment method identifier
+      es: Payment method identifier
+      pt: Payment method identifier
+- name:
+    type: String
+    description:
+      en: Name of the payment method
+      es: Name of the payment method
+      pt: Name of the payment method
+- payment_type_id:
+    type: String
+    description:
+      en: Types of payment methods
+      es: Types of payment methods
+      pt: Types of payment methods
+    enum:
+    - ticket:
+        en: Printed ticket
+        es: Printed ticket
+        pt: Printed ticket
+    - atm:
+        en: Payment by ATM
+        es: Payment by ATM
+        pt: Payment by ATM
+    - credit_card:
+        en: Payment by credit card
+        es: Payment by credit card
+        pt: Payment by credit card
+    - debit_card:
+        en: Payment by debit card
+        es: Payment by debit card
+        pt: Payment by debit card
+    - prepaid_card:
+        en: Payment by prepaid card
+        es: Payment by prepaid card
+        pt: Payment by prepaid card
+- status:
+    type: String
+    description:
+      en: Payment methods status
+      es: Payment methods status
+      pt: Payment methods status
+    enum:
+    - active:
+        en: Available for use
+        es: Available for use
+        pt: Available for use
+    - deactive:
+        en: Decommissioned, we don't support it anymore
+        es: Decommissioned, we don't support it anymore
+        pt: Decommissioned, we don't support it anymore
+    - temporally_deactive:
+        en: Unavailable for use, possible interruption of the service
+        es: Unavailable for use, possible interruption of the service
+        pt: Unavailable for use, possible interruption of the service
+- secure_thumbnail:
+    type: String
+    description:
+      en: Logo to display on secure sites
+      es: Logo to display on secure sites
+      pt: Logo to display on secure sites
+- thumbnail:
+    type: String
+    description:
+      en: Logo to show
+      es: Logo to show
+      pt: Logo to show
+- deferred_capture:
+    type: String
+    description:
+      en: Whether the capture can be delayed or not
+      es: Whether the capture can be delayed or not
+      pt: Whether the capture can be delayed or not
+    enum:
+    - supported:
+        en: This payment method supports authorization and capture operations
+        es: This payment method supports authorization and capture operations
+        pt: This payment method supports authorization and capture operations
+    - unsupported:
+        en: Deferred capture is not available for this payment method
+        es: Deferred capture is not available for this payment method
+        pt: Deferred capture is not available for this payment method
+    - does_not_apply:
+        en: Cash payment methods don't allow deferred capture
+        es: Cash payment methods don't allow deferred capture
+        pt: Cash payment methods don't allow deferred capture
+- settings:
+    type: Object
+    description:
+      en: Payment method settings
+      es: Payment method settings
+      pt: Payment method settings
+    properties:
+    - bin:
+        type: Object
+        description:
+          en: ''
+          es: ''
+          pt: ''
+        properties:
+        - pattern:
+            type: String
+            description:
+              en: Regular expression representing the accepted bins
+              es: Regular expression representing the accepted bins
+              pt: Regular expression representing the accepted bins
+        - exclusion_pattern:
+            type: String
+            description:
+              en: Regular expression representing the excluded bins
+              es: Regular expression representing the excluded bins
+              pt: Regular expression representing the excluded bins
+        - installments_pattern:
+            type: String
+            description:
+              en: Regular expression representing bins allowed to pay with more than
+                one installment
+              es: Regular expression representing bins allowed to pay with more than
+                one installment
+              pt: Regular expression representing bins allowed to pay with more than
+                one installment
+    - card_number:
+        type: Object
+        description:
+          en: ''
+          es: ''
+          pt: ''
+        properties:
+        - length:
+            type: String
+            description:
+              en: Card number length
+              es: Card number length
+              pt: Card number length
+        - validation:
+            type: String
+            description:
+              en: Whether the card number can be validated using a checksum algorithm
+                (usually Luhn)
+              es: Whether the card number can be validated using a checksum algorithm
+                (usually Luhn)
+              pt: Whether the card number can be validated using a checksum algorithm
+                (usually Luhn)
+            enum:
+            - standard:
+                en: The card number should validate Luhn's algorithm
+                es: The card number should validate Luhn's algorithm
+                pt: The card number should validate Luhn's algorithm
+            - none:
+                en: There is no algorithm to validate the checksum
+                es: There is no algorithm to validate the checksum
+                pt: There is no algorithm to validate the checksum
+    - security_code:
+        type: Object
+        description:
+          en: ''
+          es: ''
+          pt: ''
+        properties:
+        - mode:
+            type: String
+            description:
+              en: Whether the security code is mandatory or not
+              es: Whether the security code is mandatory or not
+              pt: Whether the security code is mandatory or not
+            enum:
+            - mandatory:
+                en: The security code should be given to process the payment
+                es: The security code should be given to process the payment
+                pt: The security code should be given to process the payment
+            - optional:
+                en: A payment could be issued without the security code
+                es: A payment could be issued without the security code
+                pt: A payment could be issued without the security code
+        - length:
+            type: Number
+            description:
+              en: Security code length
+              es: Security code length
+              pt: Security code length
+        - card_location:
+            type: String
+            description:
+              en: Whether the security code is located in the back or in the front
+                of the card
+              es: Whether the security code is located in the back or in the front
+                of the card
+              pt: Whether the security code is located in the back or in the front
+                of the card
+            enum:
+            - back:
+                en: The security code is located in the back of the card
+                es: The security code is located in the back of the card
+                pt: The security code is located in the back of the card
+            - front:
+                en: The security code is located in the front of the card
+                es: The security code is located in the front of the card
+                pt: The security code is located in the front of the card
+- additional_info_needed:
+    type: List(String)
+    description:
+      en: List of additional information that must be supplied by the payer
+      es: List of additional information that must be supplied by the payer
+      pt: List of additional information that must be supplied by the payer
+    enum:
+    - cardholder_identification_number:
+        en: Identification number of the card owner
+        es: Identification number of the card owner
+        pt: Identification number of the card owner
+    - cardholder_identification_type:
+        en: Identification type of the card owner
+        es: Identification type of the card owner
+        pt: Identification type of the card owner
+    - cardholder_name:
+        en: Name as seen in the card of the card owner
+        es: Name as seen in the card of the card owner
+        pt: Name as seen in the card of the card owner
+    - issuer_id:
+        en: Id of the card issuing entity
+        es: Id of the card issuing entity
+        pt: Id of the card issuing entity
+- min_allowed_amount:
+    type: Number
+    description:
+      en: Minimum amount that can be processed with this payment method
+      es: Minimum amount that can be processed with this payment method
+      pt: Minimum amount that can be processed with this payment method
+- max_allowed_amount:
+    type: Number
+    description:
+      en: Maximum amount that can be processed with this payment method
+      es: Maximum amount that can be processed with this payment method
+      pt: Maximum amount that can be processed with this payment method
+- accreditation_time:
+    type: Number
+    description:
+      en: How many time in minutes could happen until processing of the payment
+      es: How many time in minutes could happen until processing of the payment
+      pt: How many time in minutes could happen until processing of the payment
+- financial_institutions:
+    type: Object
+    description:
+      en: Finantial institution processing this payment method
+      es: Finantial institution processing this payment method
+      pt: Finantial institution processing this payment method
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: 'External financial institution identifier (e.g.: company id for atm)'
+          es: 'External financial institution identifier (e.g.: company id for atm)'
+          pt: 'External financial institution identifier (e.g.: company id for atm)'
+    - description:
+        type: String
+        description:
+          en: Descriptive finantial institution name
+          es: Descriptive finantial institution name
+          pt: Descriptive finantial institution name

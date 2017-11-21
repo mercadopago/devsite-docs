@@ -1,0 +1,23 @@
+title: Customers API
+key: customers
+version: v1
+baseUri: https://api.mercadopago.com/
+/customers:
+  methods:
+    - post
+/customers/{id}:
+  methods:
+    - get
+    - put
+/customers/search:
+  methods:
+    - get
+/customers/{customer_id}/cards:
+  methods:
+    - get
+    - post
+/customers/{customer_id}/cards/{id}:
+  methods:
+    - get
+    - put
+    - delete

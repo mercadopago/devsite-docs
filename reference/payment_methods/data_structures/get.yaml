@@ -1,0 +1,53 @@
+---
+resource: payment_methods.raml
+use:
+- id
+- name
+- payment_type_id
+- status
+- secure_thumbnail
+- thumbnail
+- deferred_capture
+- settings
+- bin
+- pattern
+- exclusion_pattern
+- installments_pattern
+- card_number
+- length
+- validation
+- security_code
+- mode
+- length
+- card_location
+- additional_info_needed
+- min_allowed_amount
+- max_allowed_amount
+- accreditation_time
+- financial_institutions
+- id
+- description
+errors:
+- 400 BAD_REQUEST:
+  - '1000':
+      description:
+        en: the credentials are required
+        es: the credentials are required
+        pt: the credentials are required
+  - '1001':
+      description:
+        en: public_key not found
+        es: public_key not found
+        pt: public_key not found
+- 401 UNAUTHORIZED:
+  - unauthorized:
+      description:
+        en: unauthorized
+        es: unauthorized
+        pt: unauthorized
+- 404 NOT_FOUND:
+  - not_found:
+      description:
+        en: not_found
+        es: not_found
+        pt: not_found

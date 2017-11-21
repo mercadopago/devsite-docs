@@ -1,0 +1,195 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Invoice identifier
+      es: Invoice identifier
+      pt: Invoice identifier
+- subscription_id:
+    type: String
+    description:
+      en: Subscription to which the invoice belongs
+      es: Subscription to which the invoice belongs
+      pt: Subscription to which the invoice belongs
+- plan_id:
+    type: String
+    description:
+      en: Plan to which the subscription belongs
+      es: Plan to which the subscription belongs
+      pt: Plan to which the subscription belongs
+- payer:
+    type: Object
+    description:
+      en: Identifies the buyer
+      es: Identifies the buyer
+      pt: Identifies the buyer
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Identification of the associated payer
+          es: Identification of the associated payer
+          pt: Identification of the associated payer
+    - type:
+        type: String
+        description:
+          en: Identification type of the associated payer
+          es: Identification type of the associated payer
+          pt: Identification type of the associated payer
+        enum:
+        - customer:
+            en: Payer is a Customer and belongs to the collector
+            es: Payer is a Customer and belongs to the collector
+            pt: Payer is a Customer and belongs to the collector
+        - registered:
+            en: The account corresponds to a MercadoPago registered user
+            es: The account corresponds to a MercadoPago registered user
+            pt: The account corresponds to a MercadoPago registered user
+    - email:
+        type: String
+        description:
+          en: Customer's email
+          es: Customer's email
+          pt: Customer's email
+    - identification:
+        type: Object
+        description:
+          en: Personal identification
+          es: Personal identification
+          pt: Personal identification
+        properties:
+        - type:
+            type: String
+            description:
+              en: Identification type
+              es: Identification type
+              pt: Identification type
+        - number:
+            type: String
+            description:
+              en: Identification number
+              es: Identification number
+              pt: Identification number
+- application_fee:
+    type: Float
+    description:
+      en: Fee collected by a marketplace or MercadoPago Application
+      es: Fee collected by a marketplace or MercadoPago Application
+      pt: Fee collected by a marketplace or MercadoPago Application
+- status:
+    type: String
+    description:
+      en: Charging status of this individual invoice
+      es: Charging status of this individual invoice
+      pt: Charging status of this individual invoice
+    enum:
+    - pending:
+        en: This invoice is scheduled to be charged in the near future
+        es: This invoice is scheduled to be charged in the near future
+        pt: This invoice is scheduled to be charged in the near future
+    - dunning:
+        en: Previous charging attempts failed, MercadoPago is retrying the charge
+          to get an approval.
+        es: Previous charging attempts failed, MercadoPago is retrying the charge
+          to get an approval.
+        pt: Previous charging attempts failed, MercadoPago is retrying the charge
+          to get an approval.
+    - paid:
+        en: This invoice was successfully charged
+        es: This invoice was successfully charged
+        pt: This invoice was successfully charged
+    - unpaid:
+        en: After all charging attempts, we were unable to get an approval. No more
+          retries will be done on this individual invoice.
+        es: After all charging attempts, we were unable to get an approval. No more
+          retries will be done on this individual invoice.
+        pt: After all charging attempts, we were unable to get an approval. No more
+          retries will be done on this individual invoice.
+    - cancelled:
+        en: This invoice was cancelled prior to get it paid
+        es: This invoice was cancelled prior to get it paid
+        pt: This invoice was cancelled prior to get it paid
+- description:
+    type: String
+    description:
+      en: Subscription plan reason or service title
+      es: Subscription plan reason or service title
+      pt: Subscription plan reason or service title
+- external_reference:
+    type: String
+    description:
+      en: ID given by the merchant in their system
+      es: ID given by the merchant in their system
+      pt: ID given by the merchant in their system
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Invoice creation date
+      es: Invoice creation date
+      pt: Invoice creation date
+- last_modified:
+    type: Date(ISO_8601)
+    description:
+      en: Last modified date
+      es: Last modified date
+      pt: Last modified date
+- live_mode:
+    type: Boolean
+    description:
+      en: Whether the invoice will be processed in sandbox or in production mode
+      es: Whether the invoice will be processed in sandbox or in production mode
+      pt: Whether the invoice will be processed in sandbox or in production mode
+- metadata:
+    type: Object
+    description:
+      en: Valid JSON that can be attached to the subscription to record additional
+        attributes of the merchant
+      es: Valid JSON that can be attached to the subscription to record additional
+        attributes of the merchant
+      pt: Valid JSON that can be attached to the subscription to record additional
+        attributes of the merchant
+- payments:
+    type: List(Object)
+    description:
+      en: All payment attempts done to get this invoice paid
+      es: All payment attempts done to get this invoice paid
+      pt: All payment attempts done to get this invoice paid
+    properties:
+    - attempt_date:
+        type: Date(ISO_8601)
+        description:
+          en: Date of payment attempt
+          es: Date of payment attempt
+          pt: Date of payment attempt
+    - id:
+        type: Integer
+        description:
+          en: Payment identifier
+          es: Payment identifier
+          pt: Payment identifier
+    - status:
+        type: String
+        description:
+          en: Payment status
+          es: Payment status
+          pt: Payment status
+    - status_detail:
+        type: String
+        description:
+          en: Gives more detailed information on the payment status or rejection cause
+          es: Gives more detailed information on the payment status or rejection cause
+          pt: Gives more detailed information on the payment status or rejection cause
+- debit_date:
+    type: Date(ISO_8601)
+    description:
+      en: Date on which this invoice should be originally charged
+      es: Date on which this invoice should be originally charged
+      pt: Date on which this invoice should be originally charged
+- next_payment_date:
+    type: Date(ISO_8601)
+    description:
+      en: Date of next payment attempt to get this invoice paid
+      es: Date of next payment attempt to get this invoice paid
+      pt: Date of next payment attempt to get this invoice paid

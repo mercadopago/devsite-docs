@@ -1,0 +1,309 @@
+---
+resource: customers.raml
+use:
+- id
+- email
+- first_name
+- last_name
+- phone
+- area_code
+- number
+- identification
+- type
+- number
+- default_address
+- address
+- id
+- zip_code
+- street_name
+- street_number
+- date_registered
+- description
+- date_created
+- date_last_updated
+- metadata
+- default_card
+- cards
+- id
+- customer_id
+- expiration_month
+- expiration_year
+- first_six_digits
+- last_four_digits
+- payment_method
+- id
+- name
+- payment_type_id
+- thumbnail
+- secure_thumbnail
+- security_code
+- length
+- card_location
+- issuer
+- id
+- name
+- cardholder
+- name
+- identification
+- number
+- subtype
+- type
+- date_created
+- date_last_updated
+- addresses
+- id
+- phone
+- name
+- floor
+- apartment
+- street_name
+- street_number
+- zip_code
+- city
+- id
+- name
+- state
+- id
+- name
+- country
+- id
+- name
+- neighborhood
+- id
+- name
+- municipality
+- id
+- name
+- comments
+- date_created
+- verifications
+- shipment
+- success
+- errors
+- code
+- description
+- field
+- name
+- live_mode
+errors:
+- 400 BAD_REQUEST:
+  - '100':
+      description:
+        en: the credentials are required
+        es: the credentials are required
+        pt: the credentials are required
+  - '101':
+      description:
+        en: the customer already exist
+        es: the customer already exist
+        pt: the customer already exist
+  - '102':
+      description:
+        en: missing customer id
+        es: missing customer id
+        pt: missing customer id
+  - '103':
+      description:
+        en: 'parameter must be an object '
+        es: 'parameter must be an object '
+        pt: 'parameter must be an object '
+  - '104':
+      description:
+        en: parameter length is too large
+        es: parameter length is too large
+        pt: parameter length is too large
+  - '105':
+      description:
+        en: the customer id is invalid
+        es: the customer id is invalid
+        pt: the customer id is invalid
+  - '106':
+      description:
+        en: the email format is invalid
+        es: the email format is invalid
+        pt: the email format is invalid
+  - '107':
+      description:
+        en: the first_name is invalid
+        es: the first_name is invalid
+        pt: the first_name is invalid
+  - '108':
+      description:
+        en: the last_name is invalid
+        es: the last_name is invalid
+        pt: the last_name is invalid
+  - '109':
+      description:
+        en: the phone.area_code is invalid
+        es: the phone.area_code is invalid
+        pt: the phone.area_code is invalid
+  - '110':
+      description:
+        en: the phone.number is invalid
+        es: the phone.number is invalid
+        pt: the phone.number is invalid
+  - '111':
+      description:
+        en: the identification.type is invalid
+        es: the identification.type is invalid
+        pt: the identification.type is invalid
+  - '112':
+      description:
+        en: the identification.number is invalid
+        es: the identification.number is invalid
+        pt: the identification.number is invalid
+  - '113':
+      description:
+        en: the address.zip_code is invalid
+        es: the address.zip_code is invalid
+        pt: the address.zip_code is invalid
+  - '114':
+      description:
+        en: the address.street_name is invalid
+        es: the address.street_name is invalid
+        pt: the address.street_name is invalid
+  - '115':
+      description:
+        en: the date_registered format is invalid
+        es: the date_registered format is invalid
+        pt: the date_registered format is invalid
+  - '116':
+      description:
+        en: the description is invalid
+        es: the description is invalid
+        pt: the description is invalid
+  - '117':
+      description:
+        en: the metadata is invalid
+        es: the metadata is invalid
+        pt: the metadata is invalid
+  - '118':
+      description:
+        en: the body must be a Json Object
+        es: the body must be a Json Object
+        pt: the body must be a Json Object
+  - '119':
+      description:
+        en: the card is required
+        es: the card is required
+        pt: the card is required
+  - '120':
+      description:
+        en: card not found
+        es: card not found
+        pt: card not found
+  - '121':
+      description:
+        en: the card is invalid
+        es: the card is invalid
+        pt: the card is invalid
+  - '122':
+      description:
+        en: the card data is invalid
+        es: the card data is invalid
+        pt: the card data is invalid
+  - '123':
+      description:
+        en: the payment_method_id is required
+        es: the payment_method_id is required
+        pt: the payment_method_id is required
+  - '124':
+      description:
+        en: the issuer_id is required
+        es: the issuer_id is required
+        pt: the issuer_id is required
+  - '125':
+      description:
+        en: invalid parameters
+        es: invalid parameters
+        pt: invalid parameters
+  - '126':
+      description:
+        en: invalid parameter. You cannot update the email
+        es: invalid parameter. You cannot update the email
+        pt: invalid parameter. You cannot update the email
+  - '127':
+      description:
+        en: invalid parameter. Cannot resolve the payment method of card, check the
+          payment_method_id and issuer_id
+        es: invalid parameter. Cannot resolve the payment method of card, check the
+          payment_method_id and issuer_id
+        pt: invalid parameter. Cannot resolve the payment method of card, check the
+          payment_method_id and issuer_id
+  - '128':
+      description:
+        en: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'
+        es: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'
+        pt: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'
+  - '129':
+      description:
+        en: the customer has reached the maximum allowed number of cards
+        es: the customer has reached the maximum allowed number of cards
+        pt: the customer has reached the maximum allowed number of cards
+  - '140':
+      description:
+        en: invalid card owner
+        es: invalid card owner
+        pt: invalid card owner
+  - '150':
+      description:
+        en: invalid users involved
+        es: invalid users involved
+        pt: invalid users involved
+  - '200':
+      description:
+        en: invalid range format (range=:date_parameter:after::date_from,before::date_to)
+        es: invalid range format (range=:date_parameter:after::date_from,before::date_to)
+        pt: invalid range format (range=:date_parameter:after::date_from,before::date_to)
+  - '201':
+      description:
+        en: range attribute must belong to date entity
+        es: range attribute must belong to date entity
+        pt: range attribute must belong to date entity
+  - '202':
+      description:
+        en: invalid 'after' parameter. It should be date[iso_8601]
+        es: invalid 'after' parameter. It should be date[iso_8601]
+        pt: invalid 'after' parameter. It should be date[iso_8601]
+  - '203':
+      description:
+        en: invalid 'before' parameter. It should be date[iso_8601]
+        es: invalid 'before' parameter. It should be date[iso_8601]
+        pt: invalid 'before' parameter. It should be date[iso_8601]
+  - '204':
+      description:
+        en: invalid filters format
+        es: invalid filters format
+        pt: invalid filters format
+  - '205':
+      description:
+        en: invalid query format
+        es: invalid query format
+        pt: invalid query format
+  - '206':
+      description:
+        en: attributes to sort must belong to 'customer' entity
+        es: attributes to sort must belong to 'customer' entity
+        pt: attributes to sort must belong to 'customer' entity
+  - '207':
+      description:
+        en: order filter must be 'asc' or 'desc'
+        es: order filter must be 'asc' or 'desc'
+        pt: order filter must be 'asc' or 'desc'
+  - '208':
+      description:
+        en: invalid 'sort' parameter format
+        es: invalid 'sort' parameter format
+        pt: invalid 'sort' parameter format
+- 401 UNAUTHORIZED:
+  - unauthorized:
+      description:
+        en: unauthorized
+        es: unauthorized
+        pt: unauthorized
+- 404 NOT_FOUND:
+  - not_found:
+      description:
+        en: not_found
+        es: not_found
+        pt: not_found

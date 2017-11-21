@@ -1,8 +1,0 @@
-title: Card Tokens API
-version: 1.0
-baseUri: https://api.mercadopago.com 
-/card_tokens:
-  post:
-/card_tokens/{id}:
-  get:
-  put:

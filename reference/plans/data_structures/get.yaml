@@ -1,0 +1,216 @@
+---
+resource: plans.raml
+use:
+- id
+- email
+- first_name
+- last_name
+- phone
+- area_code
+- number
+- identification
+- type
+- number
+- default_address
+- address
+- id
+- zip_code
+- street_name
+- street_number
+- date_registered
+- description
+- date_created
+- date_last_updated
+- metadata
+- default_card
+- cards
+- id
+- customer_id
+- expiration_month
+- expiration_year
+- first_six_digits
+- last_four_digits
+- payment_method
+- id
+- name
+- payment_type_id
+- thumbnail
+- secure_thumbnail
+- security_code
+- length
+- card_location
+- issuer
+- id
+- name
+- cardholder
+- name
+- identification
+- number
+- subtype
+- type
+- date_created
+- date_last_updated
+- addresses
+- id
+- phone
+- name
+- floor
+- apartment
+- street_name
+- street_number
+- zip_code
+- city
+- id
+- name
+- state
+- id
+- name
+- country
+- id
+- name
+- neighborhood
+- id
+- name
+- municipality
+- id
+- name
+- comments
+- date_created
+- verifications
+- shipment
+- success
+- errors
+- code
+- description
+- field
+- name
+- live_mode
+- id
+- application_fee
+- status
+- description
+- external_reference
+- date_created
+- last_modified
+- auto_recurring
+- frequency
+- frequency_type
+- transaction_amount
+- currency_id
+- repetitions
+- debit_date
+- frequency
+- frequency_type
+- live_mode
+- setup_fee
+- metadata
+errors:
+- 404 NOT_FOUND:
+  - '2003':
+      description:
+        en: Plan not found
+        es: Plan not found
+        pt: Plan not found
+- 401 UNAUTHORIZED:
+  - '4':
+      description:
+        en: The caller is not authorized to access this resource
+        es: The caller is not authorized to access this resource
+        pt: The caller is not authorized to access this resource
+  - '4000':
+      description:
+        en: Must provide your access_token to proceed
+        es: Must provide your access_token to proceed
+        pt: Must provide your access_token to proceed
+  - '4004':
+      description:
+        en: Must provide your access_token to proceed
+        es: Must provide your access_token to proceed
+        pt: Must provide your access_token to proceed
+- 400 BAD_REQUEST:
+  - '8':
+      description:
+        en: 'The name of the following parameters is wrong: '
+        es: 'The name of the following parameters is wrong: '
+        pt: 'The name of the following parameters is wrong: '
+  - '11':
+      description:
+        en: Error updating plan, it is already cancelled
+        es: Error updating plan, it is already cancelled
+        pt: Error updating plan, it is already cancelled
+  - '2001':
+      description:
+        en: Invalid JSON
+        es: Invalid JSON
+        pt: Invalid JSON
+  - '2005':
+      description:
+        en: Invalid JSON
+        es: Invalid JSON
+        pt: Invalid JSON
+  - '2006':
+      description:
+        en: Unsupported country
+        es: Unsupported country
+        pt: Unsupported country
+  - '4007':
+      description:
+        en: Parameter attribute can't be null
+        es: Parameter attribute can't be null
+        pt: Parameter attribute can't be null
+  - '4008':
+      description:
+        en: Parameter attribute must be numeric
+        es: Parameter attribute must be numeric
+        pt: Parameter attribute must be numeric
+  - '4012':
+      description:
+        en: Parameter attribute must be valid JSON
+        es: Parameter attribute must be valid JSON
+        pt: Parameter attribute must be valid JSON
+  - '4013':
+      description:
+        en: Parameter attribute must be numeric positive
+        es: Parameter attribute must be numeric positive
+        pt: Parameter attribute must be numeric positive
+  - '4014':
+      description:
+        en: Parameter attribute must be valid percenteje
+        es: Parameter attribute must be valid percenteje
+        pt: Parameter attribute must be valid percenteje
+  - '4015':
+      description:
+        en: Invalid status, must be active/inactive
+        es: Invalid status, must be active/inactive
+        pt: Invalid status, must be active/inactive
+  - '4016':
+      description:
+        en: Invalid frequency_type, must be days/months
+        es: Invalid frequency_type, must be days/months
+        pt: Invalid frequency_type, must be days/months
+  - '4017':
+      description:
+        en: Invalid debit_date, must be from 1 to 31
+        es: Invalid debit_date, must be from 1 to 31
+        pt: Invalid debit_date, must be from 1 to 31
+  - '4018':
+      description:
+        en: Invalid status, must be active/inactive/cancelled
+        es: Invalid status, must be active/inactive/cancelled
+        pt: Invalid status, must be active/inactive/cancelled
+  - '4019':
+      description:
+        en: auto_recurring.free_trial.frequency_type is null and auto_recurring.free_trial.frequency
+          is not null
+        es: auto_recurring.free_trial.frequency_type is null and auto_recurring.free_trial.frequency
+          is not null
+        pt: auto_recurring.free_trial.frequency_type is null and auto_recurring.free_trial.frequency
+          is not null
+  - '4020':
+      description:
+        en: auto_recurring.free_trial.frequency is null and auto_recurring.free_trial.frequency_type
+          is not null
+        es: auto_recurring.free_trial.frequency is null and auto_recurring.free_trial.frequency_type
+          is not null
+        pt: auto_recurring.free_trial.frequency is null and auto_recurring.free_trial.frequency_type
+          is not null
