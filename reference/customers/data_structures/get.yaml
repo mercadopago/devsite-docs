@@ -89,221 +89,221 @@ errors:
 - 400 BAD_REQUEST:
   - '100':
       description:
-        en: the credentials are required
-        es: the credentials are required
-        pt: the credentials are required
+        en: the credentials are required.
+        es: Las credenciales son requeridas.
+        pt: the credentials are required.
   - '101':
       description:
-        en: the customer already exist
-        es: the customer already exist
-        pt: the customer already exist
+        en: the customer already exist.
+        es: El cliente ya existe.
+        pt: the customer already exist.
   - '102':
       description:
-        en: missing customer id
-        es: missing customer id
-        pt: missing customer id
+        en: missing customer id.
+        es: missing customer id.
+        pt: missing customer id.
   - '103':
       description:
-        en: 'parameter must be an object '
-        es: 'parameter must be an object '
-        pt: 'parameter must be an object '
+        en: 'parameter must be an object '.
+        es: 'El parámetro debe ser un objeto '.
+        pt: 'parameter must be an object '.
   - '104':
       description:
-        en: parameter length is too large
-        es: parameter length is too large
-        pt: parameter length is too large
+        en: parameter length is too large.
+        es: La longitud del parámetro es muy grande.
+        pt: parameter length is too large.
   - '105':
       description:
-        en: the customer id is invalid
-        es: the customer id is invalid
-        pt: the customer id is invalid
+        en: the customer id is invalid.
+        es: El identificador de cliente es inválido.
+        pt: the customer id is invalid.
   - '106':
       description:
-        en: the email format is invalid
-        es: the email format is invalid
-        pt: the email format is invalid
+        en: the email format is invalid.
+        es: El formato de email es inválido.
+        pt: the email format is invalid.
   - '107':
       description:
-        en: the first_name is invalid
-        es: the first_name is invalid
-        pt: the first_name is invalid
+        en: the first_name is invalid.
+        es: first_name inválido.
+        pt: the first_name is invalid.
   - '108':
       description:
-        en: the last_name is invalid
-        es: the last_name is invalid
-        pt: the last_name is invalid
+        en: the last_name is invalid.
+        es: last_name inválido.
+        pt: the last_name is invalid.
   - '109':
       description:
-        en: the phone.area_code is invalid
-        es: the phone.area_code is invalid
-        pt: the phone.area_code is invalid
+        en: the phone.area_code is invalid.
+        es: phone.area_code inválido.
+        pt: the phone.area_code is invalid.
   - '110':
       description:
-        en: the phone.number is invalid
-        es: the phone.number is invalid
-        pt: the phone.number is invalid
+        en: the phone.number is invalid.
+        es: phone.number inválido.
+        pt: the phone.number is invalid.
   - '111':
       description:
-        en: the identification.type is invalid
-        es: the identification.type is invalid
-        pt: the identification.type is invalid
+        en: the identification.type is invalid.
+        es: identification.type inválido.
+        pt: the identification.type is invalid.
   - '112':
       description:
-        en: the identification.number is invalid
-        es: the identification.number is invalid
-        pt: the identification.number is invalid
+        en: the identification.number is invalid.
+        es: identification.number inválido.
+        pt: the identification.number is invalid.
   - '113':
       description:
-        en: the address.zip_code is invalid
-        es: the address.zip_code is invalid
-        pt: the address.zip_code is invalid
+        en: the address.zip_code is invalid.
+        es: address.zip_code inválido.
+        pt: the address.zip_code is invalid.
   - '114':
       description:
-        en: the address.street_name is invalid
-        es: the address.street_name is invalid
-        pt: the address.street_name is invalid
+        en: the address.street_name is invalid.
+        es: address.street_name inválido.
+        pt: the address.street_name is invalid.
   - '115':
       description:
-        en: the date_registered format is invalid
-        es: the date_registered format is invalid
-        pt: the date_registered format is invalid
+        en: the date_registered format is invalid.
+        es: date_registered format inválido.
+        pt: the date_registered format is invalid.
   - '116':
       description:
-        en: the description is invalid
-        es: the description is invalid
-        pt: the description is invalid
+        en: the description is invalid.
+        es: description inválido.
+        pt: the description is invalid.
   - '117':
       description:
-        en: the metadata is invalid
-        es: the metadata is invalid
-        pt: the metadata is invalid
+        en: the metadata is invalid.
+        es: metadata inválido.
+        pt: the metadata is invalid.
   - '118':
       description:
-        en: the body must be a Json Object
-        es: the body must be a Json Object
-        pt: the body must be a Json Object
+        en: the body must be a Json Object.
+        es: El body debe ser un objeto JSON.
+        pt: the body must be a Json Object.
   - '119':
       description:
-        en: the card is required
-        es: the card is required
-        pt: the card is required
+        en: the card is required.
+        es: La tarjeta es requerida.
+        pt: the card is required.
   - '120':
       description:
-        en: card not found
-        es: card not found
-        pt: card not found
+        en: card not found.
+        es: Tarjeta no encontrada.
+        pt: card not found.
   - '121':
       description:
-        en: the card is invalid
-        es: the card is invalid
-        pt: the card is invalid
+        en: the card is invalid.
+        es: La tarjeta es inválida.
+        pt: the card is invalid.
   - '122':
       description:
-        en: the card data is invalid
-        es: the card data is invalid
-        pt: the card data is invalid
+        en: the card data is invalid.
+        es: card data inválida.
+        pt: the card data is invalid.
   - '123':
       description:
-        en: the payment_method_id is required
-        es: the payment_method_id is required
-        pt: the payment_method_id is required
+        en: the payment_method_id is required.
+        es: payment_method_id es requerido.
+        pt: the payment_method_id is required.
   - '124':
       description:
-        en: the issuer_id is required
-        es: the issuer_id is required
-        pt: the issuer_id is required
+        en: the issuer_id is required.
+        es: issuer_id es requerido.
+        pt: the issuer_id is required.
   - '125':
       description:
-        en: invalid parameters
-        es: invalid parameters
-        pt: invalid parameters
+        en: invalid parameters.
+        es: Parámetros inválidos.
+        pt: invalid parameters.
   - '126':
       description:
-        en: invalid parameter. You cannot update the email
-        es: invalid parameter. You cannot update the email
-        pt: invalid parameter. You cannot update the email
+        en: invalid parameter. You cannot update the email.
+        es: Parámetro inválido. No se puede actualizar el email.
+        pt: invalid parameter. You cannot update the email.
   - '127':
       description:
         en: invalid parameter. Cannot resolve the payment method of card, check the
-          payment_method_id and issuer_id
-        es: invalid parameter. Cannot resolve the payment method of card, check the
-          payment_method_id and issuer_id
+          payment_method_id and issuer_id.
+        es: Parámetro inválido. No se puede resolver el medio de pago de la tarjeta, revisa
+          payment_method_id y issuer_id.
         pt: invalid parameter. Cannot resolve the payment method of card, check the
-          payment_method_id and issuer_id
+          payment_method_id and issuer_id.
   - '128':
       description:
-        en: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'
-        es: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'
-        pt: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'
+        en: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
+        es: El formato de email es inválido. Usa 'test_payer_[0-9]{1,10}@testuser.com'.
+        pt: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
   - '129':
       description:
-        en: the customer has reached the maximum allowed number of cards
-        es: the customer has reached the maximum allowed number of cards
-        pt: the customer has reached the maximum allowed number of cards
+        en: the customer has reached the maximum allowed number of cards.
+        es: El cliente llego al máximo permitido de tarjetas.
+        pt: the customer has reached the maximum allowed number of cards.
   - '140':
       description:
-        en: invalid card owner
-        es: invalid card owner
-        pt: invalid card owner
+        en: invalid card owner.
+        es: Dueño de tarjeta inválido.
+        pt: invalid card owner.
   - '150':
       description:
-        en: invalid users involved
-        es: invalid users involved
-        pt: invalid users involved
+        en: invalid users involved.
+        es: Usuarios inválidos involucrados.
+        pt: invalid users involved.
   - '200':
       description:
-        en: invalid range format (range=:date_parameter:after::date_from,before::date_to)
-        es: invalid range format (range=:date_parameter:after::date_from,before::date_to)
-        pt: invalid range format (range=:date_parameter:after::date_from,before::date_to)
+        en: invalid range format (range=:date_parameter:after::date_from,before::date_to).
+        es: Formato de rango inválido (range=:date_parameter:after::date_from,before::date_to).
+        pt: invalid range format (range=:date_parameter:after::date_from,before::date_to).
   - '201':
       description:
-        en: range attribute must belong to date entity
-        es: range attribute must belong to date entity
-        pt: range attribute must belong to date entity
+        en: range attribute must belong to date entity.
+        es: El atributo del rango debe pertenecer a la entidad date.
+        pt: range attribute must belong to date entity.
   - '202':
       description:
-        en: invalid 'after' parameter. It should be date[iso_8601]
-        es: invalid 'after' parameter. It should be date[iso_8601]
-        pt: invalid 'after' parameter. It should be date[iso_8601]
+        en: invalid 'after' parameter. It should be date[iso_8601].
+        es: Parámetro 'after' inválido. Debería ser date[iso_8601].
+        pt: invalid 'after' parameter. It should be date[iso_8601].
   - '203':
       description:
-        en: invalid 'before' parameter. It should be date[iso_8601]
-        es: invalid 'before' parameter. It should be date[iso_8601]
-        pt: invalid 'before' parameter. It should be date[iso_8601]
+        en: invalid 'before' parameter. It should be date[iso_8601].
+        es: Parámetro 'before' inválido. Debería ser date[iso_8601].
+        pt: invalid 'before' parameter. It should be date[iso_8601].
   - '204':
       description:
-        en: invalid filters format
-        es: invalid filters format
-        pt: invalid filters format
+        en: invalid filters format.
+        es: Formato inválido de filtros.
+        pt: invalid filters format.
   - '205':
       description:
-        en: invalid query format
-        es: invalid query format
-        pt: invalid query format
+        en: invalid query format.
+        es: Formato de consulta inválido.
+        pt: invalid query format.
   - '206':
       description:
-        en: attributes to sort must belong to 'customer' entity
-        es: attributes to sort must belong to 'customer' entity
-        pt: attributes to sort must belong to 'customer' entity
+        en: attributes to sort must belong to 'customer' entity.
+        es: Los atributos a ordenar deben perstenecer a la entidad 'customer'.
+        pt: attributes to sort must belong to 'customer' entity.
   - '207':
       description:
-        en: order filter must be 'asc' or 'desc'
-        es: order filter must be 'asc' or 'desc'
-        pt: order filter must be 'asc' or 'desc'
+        en: order filter must be 'asc' or 'desc'.
+        es: El orden del filtro debe ser 'asc' o 'desc'.
+        pt: order filter must be 'asc' or 'desc'.
   - '208':
       description:
-        en: invalid 'sort' parameter format
-        es: invalid 'sort' parameter format
-        pt: invalid 'sort' parameter format
+        en: invalid 'sort' parameter format.
+        es: Formato inválido del parámetro 'sort'.
+        pt: invalid 'sort' parameter format.
 - 401 UNAUTHORIZED:
   - unauthorized:
       description:
-        en: unauthorized
-        es: unauthorized
-        pt: unauthorized
+        en: unauthorized.
+        es: No autorizado.
+        pt: unauthorized.
 - 404 NOT_FOUND:
   - not_found:
       description:
-        en: not_found
-        es: not_found
-        pt: not_found
+        en: not_found.
+        es: not_found.
+        pt: not_found.
