@@ -4,98 +4,98 @@ properties:
 - id:
     type: String
     description:
-      en: Payment method identifier
-      es: Payment method identifier
-      pt: Payment method identifier
+      en: Payment method identifier.
+      es: Identificador del medio de pago.
+      pt: Payment method identifier.
 - name:
     type: String
     description:
-      en: Name of the payment method
-      es: Name of the payment method
-      pt: Name of the payment method
+      en: Name of the payment method.
+      es: Nombre del medio de pago.
+      pt: Name of the payment method.
 - payment_type_id:
     type: String
     description:
-      en: Types of payment methods
-      es: Types of payment methods
-      pt: Types of payment methods
+      en: Types of payment methods.
+      es: Tipo de medio de pago.
+      pt: Types of payment methods.
     enum:
     - ticket:
-        en: Printed ticket
-        es: Printed ticket
-        pt: Printed ticket
+        en: Printed ticket.
+        es: Ticket impreso
+        pt: Printed ticket.
     - atm:
-        en: Payment by ATM
-        es: Payment by ATM
-        pt: Payment by ATM
+        en: Payment by ATM.
+        es: Pago en ATM.
+        pt: Payment by ATM.
     - credit_card:
-        en: Payment by credit card
-        es: Payment by credit card
-        pt: Payment by credit card
+        en: Payment by credit card.
+        es: Pago con tarjeta de crédito.
+        pt: Payment by credit card.
     - debit_card:
-        en: Payment by debit card
-        es: Payment by debit card
-        pt: Payment by debit card
+        en: Payment by debit card.
+        es: Pago con tarjeta de débito.
+        pt: Payment by debit card.
     - prepaid_card:
-        en: Payment by prepaid card
-        es: Payment by prepaid card
-        pt: Payment by prepaid card
+        en: Payment by prepaid card.
+        es: Pago con tarjeta prepaga.
+        pt: Payment by prepaid card.
 - status:
     type: String
     description:
-      en: Payment methods status
-      es: Payment methods status
-      pt: Payment methods status
+      en: Payment methods status.
+      es: Estado del medio de pago.
+      pt: Payment methods status.
     enum:
     - active:
-        en: Available for use
-        es: Available for use
-        pt: Available for use
+        en: Available for use.
+        es: Disponible para su uso.
+        pt: Available for use.
     - deactive:
-        en: Decommissioned, we don't support it anymore
-        es: Decommissioned, we don't support it anymore
-        pt: Decommissioned, we don't support it anymore
+        en: Decommissioned, we don't support it anymore.
+        es: Inactivo, no soportado.
+        pt: Decommissioned, we don't support it anymore.
     - temporally_deactive:
-        en: Unavailable for use, possible interruption of the service
-        es: Unavailable for use, possible interruption of the service
-        pt: Unavailable for use, possible interruption of the service
+        en: Unavailable for use, possible interruption of the service.
+        es: No disponible para su uso, posible interrupción de servicio.
+        pt: Unavailable for use, possible interruption of the service.
 - secure_thumbnail:
     type: String
     description:
-      en: Logo to display on secure sites
-      es: Logo to display on secure sites
-      pt: Logo to display on secure sites
+      en: Logo to display on secure sites.
+      es: Logo a mostrar en sitios seguros.
+      pt: Logo to display on secure sites.
 - thumbnail:
     type: String
     description:
-      en: Logo to show
-      es: Logo to show
-      pt: Logo to show
+      en: Logo to show.
+      es: Logo a mostrar.
+      pt: Logo to show.
 - deferred_capture:
     type: String
     description:
-      en: Whether the capture can be delayed or not
-      es: Whether the capture can be delayed or not
-      pt: Whether the capture can be delayed or not
+      en: Whether the capture can be delayed or not.
+      es: Indica si la captura puede ser diferida o no.
+      pt: Whether the capture can be delayed or not.
     enum:
     - supported:
-        en: This payment method supports authorization and capture operations
-        es: This payment method supports authorization and capture operations
-        pt: This payment method supports authorization and capture operations
+        en: This payment method supports authorization and capture operations.
+        es: El medio de pago soporta operaciones de autorización y captura.
+        pt: This payment method supports authorization and capture operations.
     - unsupported:
-        en: Deferred capture is not available for this payment method
-        es: Deferred capture is not available for this payment method
-        pt: Deferred capture is not available for this payment method
+        en: Deferred capture is not available for this payment method.
+        es: Captura diferida no esta disponible para este medio de pago.
+        pt: Deferred capture is not available for this payment method.
     - does_not_apply:
-        en: Cash payment methods don't allow deferred capture
-        es: Cash payment methods don't allow deferred capture
-        pt: Cash payment methods don't allow deferred capture
+        en: Cash payment methods don't allow deferred capture.
+        es: Los medios de pago en efectivo no admiten captura diferida.
+        pt: Cash payment methods don't allow deferred capture.
 - settings:
     type: Object
     description:
-      en: Payment method settings
-      es: Payment method settings
-      pt: Payment method settings
+      en: Payment method settings.
+      es: Configuración de métodos de pago.
+      pt: Payment method settings.
     properties:
     - bin:
         type: Object
@@ -107,24 +107,24 @@ properties:
         - pattern:
             type: String
             description:
-              en: Regular expression representing the accepted bins
-              es: Regular expression representing the accepted bins
-              pt: Regular expression representing the accepted bins
+              en: Regular expression representing the accepted bins.
+              es: Expresión regular representando los bines aceptados.
+              pt: Regular expression representing the accepted bins.
         - exclusion_pattern:
             type: String
             description:
-              en: Regular expression representing the excluded bins
-              es: Regular expression representing the excluded bins
-              pt: Regular expression representing the excluded bins
+              en: Regular expression representing the excluded bins.
+              es: Expresión regular representando los bines excluídos.
+              pt: Regular expression representing the excluded bins.
         - installments_pattern:
             type: String
             description:
               en: Regular expression representing bins allowed to pay with more than
-                one installment
-              es: Regular expression representing bins allowed to pay with more than
-                one installment
+                one installment.
+              es: Expresión regular representando los bines aceptados para pagar con más
+                de una cuota.
               pt: Regular expression representing bins allowed to pay with more than
-                one installment
+                one installment.
     - card_number:
         type: Object
         description:
@@ -135,27 +135,27 @@ properties:
         - length:
             type: String
             description:
-              en: Card number length
-              es: Card number length
-              pt: Card number length
+              en: Card number length.
+              es: Longitud del número de la tarjeta de crédito.
+              pt: Card number length.
         - validation:
             type: String
             description:
               en: Whether the card number can be validated using a checksum algorithm
                 (usually Luhn)
-              es: Whether the card number can be validated using a checksum algorithm
-                (usually Luhn)
+              es: En tanto y en cuanto el número de tarjeta pueda ser validado con un algoritmo
+                cheksum (usualmenet Luhn)
               pt: Whether the card number can be validated using a checksum algorithm
                 (usually Luhn)
             enum:
             - standard:
-                en: The card number should validate Luhn's algorithm
-                es: The card number should validate Luhn's algorithm
-                pt: The card number should validate Luhn's algorithm
+                en: The card number should validate Luhn's algorithm.
+                es: El número de tarjta debe validar el algorimo Luhn's.
+                pt: The card number should validate Luhn's algorithm.
             - none:
-                en: There is no algorithm to validate the checksum
-                es: There is no algorithm to validate the checksum
-                pt: There is no algorithm to validate the checksum
+                en: There is no algorithm to validate the checksum.
+                es: No hay algoritmo para validad la checksum.
+                pt: There is no algorithm to validate the checksum.
     - security_code:
         type: Object
         description:
@@ -166,99 +166,98 @@ properties:
         - mode:
             type: String
             description:
-              en: Whether the security code is mandatory or not
-              es: Whether the security code is mandatory or not
-              pt: Whether the security code is mandatory or not
+              en: Whether the security code is mandatory or not.
+              es: Indica si el código de seguridad es mandatorio o no.
+              pt: Whether the security code is mandatory or not.
             enum:
             - mandatory:
-                en: The security code should be given to process the payment
-                es: The security code should be given to process the payment
-                pt: The security code should be given to process the payment
+                en: The security code should be given to process the payment.
+                es: El código de seguridad es requerido para procesar el pago.
+                pt: The security code should be given to process the payment.
             - optional:
-                en: A payment could be issued without the security code
-                es: A payment could be issued without the security code
-                pt: A payment could be issued without the security code
+                en: A payment could be issued without the security code.
+                es: Un pago que puede ser procesado sin el código de seguridad.
+                pt: A payment could be issued without the security code.
         - length:
             type: Number
             description:
-              en: Security code length
-              es: Security code length
-              pt: Security code length
+              en: Security code length.
+              es: Longitud del código de seguridad.
+              pt: Security code length.
         - card_location:
             type: String
             description:
               en: Whether the security code is located in the back or in the front
-                of the card
-              es: Whether the security code is located in the back or in the front
-                of the card
+                of the card.
+              es: Ubicación del código de seguridad de la tarjeta en la tarjeta.
               pt: Whether the security code is located in the back or in the front
-                of the card
+                of the card.
             enum:
             - back:
-                en: The security code is located in the back of the card
-                es: The security code is located in the back of the card
-                pt: The security code is located in the back of the card
+                en: The security code is located in the back of the card.
+                es: El código de seguridad se encuentra en la parte trasera de la tarjeta.
+                pt: The security code is located in the back of the card.
             - front:
-                en: The security code is located in the front of the card
-                es: The security code is located in the front of the card
-                pt: The security code is located in the front of the card
+                en: The security code is located in the front of the card.
+                es: El código de seguridad se encuentra en el frente de la tarjeta.
+                pt: The security code is located in the front of the card.
 - additional_info_needed:
     type: List(String)
     description:
-      en: List of additional information that must be supplied by the payer
-      es: List of additional information that must be supplied by the payer
-      pt: List of additional information that must be supplied by the payer
+      en: List of additional information that must be supplied by the payer.
+      es: Lista de información adicional que debe ser provista por el pagador.
+      pt: List of additional information that must be supplied by the payer.
     enum:
     - cardholder_identification_number:
-        en: Identification number of the card owner
-        es: Identification number of the card owner
-        pt: Identification number of the card owner
+        en: Identification number of the card owner.
+        es: Número de indentificación del dueño de la tarjeta.
+        pt: Identification number of the card owner.
     - cardholder_identification_type:
-        en: Identification type of the card owner
-        es: Identification type of the card owner
-        pt: Identification type of the card owner
+        en: Identification type of the card owner.
+        es: Tipo de identificación del dueño de la tarjeta.
+        pt: Identification type of the card owner.
     - cardholder_name:
-        en: Name as seen in the card of the card owner
-        es: Name as seen in the card of the card owner
-        pt: Name as seen in the card of the card owner
+        en: Name as seen in the card of the card owner.
+        es: Nombre del dueño de la tarjeta, como aparece en la tarjeta.
+        pt: Name as seen in the card of the card owner.
     - issuer_id:
-        en: Id of the card issuing entity
-        es: Id of the card issuing entity
-        pt: Id of the card issuing entity
+        en: Id of the card issuing entity.
+        es: Identificador de la entidad emisora de la tarjeta.
+        pt: Id of the card issuing entity.
 - min_allowed_amount:
     type: Number
     description:
-      en: Minimum amount that can be processed with this payment method
-      es: Minimum amount that can be processed with this payment method
-      pt: Minimum amount that can be processed with this payment method
+      en: Minimum amount that can be processed with this payment method.
+      es: Mínimo monto que se puede procesar con este medio de pago.
+      pt: Minimum amount that can be processed with this payment method.
 - max_allowed_amount:
     type: Number
     description:
-      en: Maximum amount that can be processed with this payment method
-      es: Maximum amount that can be processed with this payment method
-      pt: Maximum amount that can be processed with this payment method
+      en: Maximum amount that can be processed with this payment method.
+      es: Máximo monto que se puede procesar con este medio de pago.
+      pt: Maximum amount that can be processed with this payment method.
 - accreditation_time:
     type: Number
     description:
-      en: How many time in minutes could happen until processing of the payment
-      es: How many time in minutes could happen until processing of the payment
-      pt: How many time in minutes could happen until processing of the payment
+      en: How many time in minutes could happen until processing of the payment.
+      es: Tiempo de procesamiento del pago.
+      pt: How many time in minutes could happen until processing of the payment.
 - financial_institutions:
     type: Object
     description:
-      en: Finantial institution processing this payment method
-      es: Finantial institution processing this payment method
-      pt: Finantial institution processing this payment method
+      en: Finantial institution processing this payment method.
+      es: Institución financiera procesando el medio de pago.
+      pt: Finantial institution processing this payment method.
     properties:
     - id:
         type: Integer
         description:
-          en: 'External financial institution identifier (e.g.: company id for atm)'
-          es: 'External financial institution identifier (e.g.: company id for atm)'
-          pt: 'External financial institution identifier (e.g.: company id for atm)'
+          en: 'External financial institution identifier (e.g.: company id for atm)'.
+          es: 'Identificador de institución financiera externa'.
+          pt: 'External financial institution identifier (e.g.: company id for atm)'.
     - description:
         type: String
         description:
-          en: Descriptive finantial institution name
-          es: Descriptive finantial institution name
-          pt: Descriptive finantial institution name
+          en: Descriptive finantial institution name.
+          es: Nombre descriptivo de la institución financiera.
+          pt: Descriptive finantial institution name.
