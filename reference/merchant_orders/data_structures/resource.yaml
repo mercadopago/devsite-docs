@@ -6,37 +6,37 @@ properties:
     description:
       en: Order identifier.
       es: Identificador de orden.
-      pt: Order identifier.
+      pt: Identificador de ordem.
 - preference_id:
     type: String(UUID)
     description:
       en: Payment preference identifier associated to the merchant order.
       es: Identificador de la preferencia de pago asociado a la orden.
-      pt: Payment preference identifier associated to the merchant order.
+      pt: Identificação da preferência de pagamento associados à ordem.
 - date_created:
     type: Date(ISO_8601)
     description:
       en: Order's creation date.
       es: Fecha de creación de la orden.
-      pt: Order's creation date.
+      pt: Data de criação da ordem.
 - last_update:
     type: Date(ISO_8601)
     description:
       en: Order's last update date.
       es: Fecha de última actulización de la orden.
-      pt: Order's last update date.
+      pt: Data da última actualização da ordem.
 - application_id:
     type: String
     description:
       en: application identifier.
       es: Identificador de aplicación.
-      pt: application identifier.
+      pt: Id do aplicativo.
 - status:
     type: String
     description:
       en: Show the current merchant order state.
       es: Muestra el estado actual de la orden.
-      pt: Show the current merchant order state.
+      pt: Exibe o estado atual da ordem.
     enum:
     - open:
         en: Order without payments.
@@ -55,13 +55,13 @@ properties:
     description:
       en: Country identifier that merchant order belongs to.
       es: Identificador de país al que pertenece la orden.
-      pt: Country identifier that merchant order belongs to.
+      pt: Identificador do país a que pertence a ordem.
 - payer:
     type: Object
     description:
       en: Buyer Information.
       es: Información del comprador.
-      pt: Buyer Information.
+      pt: Informação do comprador.
     properties:
     - id:
         type: Integer
@@ -86,7 +86,7 @@ properties:
     description:
       en: Mercado Pago seller ID.
       es: Identificador del vendedor en Mercado Pago.
-      pt: Mercado Pago seller ID.
+      pt: Id do vendedor no Mercado Pago.
     properties:
     - id:
         type: Integer
@@ -111,13 +111,13 @@ properties:
     description:
       en: Your Mercado Pago seller ID.
       es: Tu identificador como vendedor en Mercado Pago.
-      pt: Your Mercado Pago seller ID.
+      pt: Sua identificação como um vendedor no Mercado Pago.
 - payments:
     type: Array(Object)
     description:
       en: Payments information.
       es: Información del pago.
-      pt: Payments information.
+      pt: Informações do pagamento.
     properties:
     - id:
         type: Integer
@@ -234,31 +234,31 @@ properties:
     description:
       en: Amount paid in this Order.
       es: Monto pagado en la orden.
-      pt: Amount paid in this Order.
+      pt: Valor pago na ordem.
 - refunded_amount:
     type: Float
     description:
       en: Amount refunded in this Order.
       es: Monto reembolsado en la orden.
-      pt: Amount refunded in this Order.
+      pt: Montante reembolsado no caso de na ordem.
 - shipping_cost:
     type: Float
     description:
       en: Shipping fee.
       es: Costo de envío.
-      pt: Shipping fee.
+      pt: Custo de transporte.
 - cancelled:
     type: Boolean
     description:
       en: If the Order is expired or not.
       es: Indica si la orden está expirada o no.
-      pt: If the Order is expired or not.
+      pt: Indica se a ordem está expirada ou não.
 - items:
     type: Array(Object)
     description:
       en: items information.
       es: Información del ítem.
-      pt: items information.
+      pt: Informação do item.
     properties:
     - id:
         type: String
@@ -313,7 +313,7 @@ properties:
     description:
       en: Shipments information.
       es: Información del envío.
-      pt: Shipments information.
+      pt: Informação do frete.
     properties:
     - id:
         type: Integer
@@ -435,28 +435,28 @@ properties:
     description:
       en: URL where you'd like to receive a payment notification.
       es: URL en la que te gustaría recibir una notificación del estado del pago.
-      pt: URL where you'd like to receive a payment notification.
+      pt: URL em que você gostaria de receber uma notificação de status de pagamento.
 - additional_info:
     type: String(600)
     description:
       en: Additional information.
       es: Información adicional del pago.
-      pt: Additional information.
+      pt: Informações adicionais do pagamento.
 - external_reference:
     type: String(256)
     description:
       en: Reference you can synchronize with your payment system.
       es: Referencia que puedes sincronizar con tu sistema de pagos.
-      pt: Reference you can synchronize with your payment system.
+      pt: Referência que pode sincronizar com seu sistema de pagamentos.
 - marketplace:
     type: String(256)
     description:
-      en: 'Origin of the payment. Default value: NONE'.
-      es: 'Origen del pago. Valor predeterminado: NONE'.
-      pt: 'Origin of the payment. Default value: NONE'.
+      en: 'Origin of the payment. Default value: NONE'
+      es: 'Origen del pago. Valor predeterminado: NONE'
+      pt: 'Origem do pagamento. Valor padrão: NONE'
 - total_amount:
     type: Float
     description:
       en: Product cost.
       es: Costo del producto.
-      pt: Product cost.
+      pt: Custo do produto.

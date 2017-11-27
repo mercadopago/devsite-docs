@@ -6,43 +6,43 @@ properties:
     description:
       en: Payment identifier.
       es: Identificador de pago.
-      pt: Payment identifier.
+      pt: Identificador de pagamento.
 - date_created:
     type: Date(ISO_8601)
     description:
       en: Payment’s creation date.
       es: Fecha de creación del pago.
-      pt: Payment’s creation date.
+      pt: Data de criação do pagamento.
 - date_approved:
     type: Date(ISO_8601)
     description:
       en: Payment’s approval date.
       es: Fecha de aprobación del pago.
-      pt: Payment’s approval date.
+      pt: Data de aprovação do pagamento.
 - date_last_updated:
     type: Date(ISO_8601)
     description:
       en: Last modified date.
       es: Fecha de la última modificación.
-      pt: Last modified date.
+      pt: Data da última modificação.
 - money_release_date:
     type: Date(ISO_8601)
     description:
       en: Release date of payment.
       es: Fecha de liberación del pago.
-      pt: Release date of payment.
+      pt: Data de liberação do pagamento.
 - collector_id:
     type: Integer
     description:
       en: Identifies the seller.
       es: Identificador de vendedor.
-      pt: Identifies the seller.
+      pt: Identificação do vendedor.
 - operation_type:
     type: String
     description:
       en: Payment type.
       es: Tipo de pago.
-      pt: Payment type.
+      pt: Tipo de pagamento.
     enum:
     - regular_payment:
         en: Typification by default of a purchase being paid using Mercado Pago.
@@ -62,7 +62,8 @@ properties:
         pt: Money income in the user's account.
     - payment_addition:
         en: Addition of money to an existing payment, done in Mercado Pago's site.
-        es: Agregado de dinero a un pago existente realizado en el sitio de Mercado Pago.
+        es: Agregado de dinero a un pago existente realizado en el sitio de Mercado
+          Pago.
         pt: Addition of money to an existing payment, done in Mercado Pago's site.
     - cellphone_recharge:
         en: Recharge of a user's cellphone account.
@@ -77,7 +78,7 @@ properties:
     description:
       en: Identifies the buyer.
       es: Identificador del pagador.
-      pt: Identifies the buyer.
+      pt: Id do pagador.
     properties:
     - entity_type:
         type: String
@@ -99,7 +100,8 @@ properties:
         description:
           en: Identification type of the associated payer (mandatory if the Payer
             is a Customer).
-          es: Tipo de identificación del pagador asociado (requerido si el pagador es un cliente).
+          es: Tipo de identificación del pagador asociado (requerido si el pagador
+            es un cliente).
           pt: Identification type of the associated payer (mandatory if the Payer
             is a Customer).
         enum:
@@ -188,21 +190,23 @@ properties:
     description:
       en: When set to true, the payment can only be approved or rejected. Otherwise
         in_process status is added.
-      es: Cuando está activado el pago solo puede resultar aprobado o rechazado. De no estar activado, además de este estado el pago puede resultar pendiente (in_process).
-      pt: When set to true, the payment can only be approved or rejected. Otherwise
-        in_process status is added.
+      es: Cuando está activado el pago solo puede resultar aprobado o rechazado. De
+        no estar activado, además de este estado el pago puede resultar pendiente
+        (in_process).
+      pt: Quando estiver ativado, o pagamento só pode ser aprovado ou rejeitado. De
+        não estar ativado, para além deste estado, o pagamento pode ser pendente (in_process).
 - live_mode:
     type: Boolean
     description:
       en: Whether the payment will be processed in sandbox or in production mode.
       es: Indica si el pago se procesará en entorno de sandbox o producción.
-      pt: Whether the payment will be processed in sandbox or in production mode.
+      pt: Indica se o pagamento é processado em ambiente de sandbox ou produção.
 - order:
     type: Object
     description:
       en: Order identifier.
       es: Identificador de orden.
-      pt: Order identifier.
+      pt: Identificador de ordem.
     properties:
     - type:
         type: String
@@ -230,27 +234,28 @@ properties:
     description:
       en: ID given by the merchant in their system.
       es: Identificador provisto por el vendedor en su sistema.
-      pt: ID given by the merchant in their system.
+      pt: Identificação fornecida pelo vendedor em seu sistema.
 - description:
     type: String
     description:
       en: Payment reason or item title.
       es: Razón de pago o título de ítem.
-      pt: Payment reason or item title.
+      pt: Razão de pagamento ou título do item.
 - metadata:
     type: Object
     description:
       en: Valid JSON that can be attached to the payment to record additional attributes
         of the merchant.
-      es: JSON válido que puede agregarse al pago para guardar atributos adicionales del comprador.
-      pt: Valid JSON that can be attached to the payment to record additional attributes
-        of the merchant.
+      es: JSON válido que puede agregarse al pago para guardar atributos adicionales
+        del comprador.
+      pt: JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais
+        do comprador.
 - currency_id:
     type: String(3)
     description:
       en: ID of the currency used in the payment.
       es: Identificador de la moneda utilizada en el pago.
-      pt: ID of the currency used in the payment.
+      pt: Identificador da moeda utilizada no pagamento.
     enum:
     - ARS:
         en: Argentine peso.
@@ -289,43 +294,44 @@ properties:
     description:
       en: Product cost.
       es: Costo del producto.
-      pt: Product cost.
+      pt: Custo do produto.
 - transaction_amount_refunded:
     type: Float
     description:
       en: Total refunded amount in this payment.
       es: Monto total reembolsado en este pago.
-      pt: Total refunded amount in this payment.
+      pt: Valor total reembolsado este pagamento.
 - coupon_amount:
     type: Float
     description:
       en: Amount of the coupon discount.
       es: Monto del cupón de descuento.
-      pt: Amount of the coupon discount.
+      pt: Valor do cupom de desconto.
 - campaign_id:
     type: Integer
     description:
       en: Discount campaign ID.
       es: Identificador de la campaña de descuento.
-      pt: Discount campaign ID.
+      pt: Identificador da campanha de desconto.
 - coupon_code:
     type: String
     description:
       en: Discount campaign with a specific code.
       es: Campaña de descuento con un código específico.
-      pt: Discount campaign with a specific code.
+      pt: Campanha de desconto com um código específico.
 - transaction_details:
     type: Object
     description:
       en: Groups the details of the transaction.
       es: Agrupa los detalles de la transacción.
-      pt: Groups the details of the transaction.
+      pt: Agrupa os detalhes da transação.
     properties:
     - financial_institution:
         type: String
         description:
           en: 'External financial institution identifier (e.g.: company id for atm)'
-          es: 'Identificador de la institución financiera externa (ej.: company id para atm)'
+          es: 'Identificador de la institución financiera externa (ej.: company id
+            para atm)'
           pt: 'External financial institution identifier (e.g.: company id for atm)'
     - net_received_amount:
         type: Float
@@ -362,8 +368,8 @@ properties:
         description:
           en: For credit card payments is the USN. For offline payment methods, is
             the reference to give to the cashier or to input into the ATM.
-          es: Para pagos con tarjeta de crédito es USN. Para medios de pago offline es la referencia
-            para darle al cajero o ingresarla en el ATM.
+          es: Para pagos con tarjeta de crédito es USN. Para medios de pago offline
+            es la referencia para darle al cajero o ingresarla en el ATM.
           pt: For credit card payments is the USN. For offline payment methods, is
             the reference to give to the cashier or to input into the ATM.
 - fee_details:
@@ -371,7 +377,7 @@ properties:
     description:
       en: List of fees.
       es: Lista de comisiones.
-      pt: List of fees.
+      pt: Lista de comissões.
     properties:
     - type:
         type: String
@@ -430,19 +436,19 @@ properties:
     description:
       en: Id of the scheme for the absorption of financing fee.
       es: Identificador del esquema de absorción del costo financiero.
-      pt: Id of the scheme for the absorption of financing fee.
+      pt: Id do esquema de absorção do custo financeiro.
 - application_fee:
     type: Float
     description:
       en: Fee collected by a marketplace or Mercado Pago Application.
       es: Comisión recolectada por el marketplace o por Mercado Pago.
-      pt: Fee collected by a marketplace or Mercado Pago Application.
+      pt: Comissão coletadas pelo mercado ou pelo Mercado Pago.
 - status:
     type: String
     description:
       en: Payment status.
       es: Estado del pago.
-      pt: Payment status.
+      pt: Estado do pagamento.
     enum:
     - pending:
         en: The user has not yet completed the payment process.
@@ -487,45 +493,47 @@ properties:
     description:
       en: Gives more detailed information on the current state or rejection cause.
       es: Brinda información detallada del estado actual o el motivo de rechazo.
-      pt: Gives more detailed information on the current state or rejection cause.
+      pt: Fornece informação detalhada do estado atual, ou o motivo de rejeição.
 - capture:
     type: Boolean
     description:
       en: Determines if the payment should be captured (true, default value) or just
         reserved (false).
       es: Determina si el pago debe ser capturado(true, default value) o solo reservado(false).
-      pt: Determines if the payment should be captured (true, default value) or just
-        reserved (false).
+      pt: Determina se o pagamento deve ser capturado(true, default value), ou apenas
+        reservado(false).
 - captured:
     type: Boolean
     description:
       en: Determines if the capture operation was performed (just for credit cards).
-      es: Determina si la captura de la operación fue realizada (sólo para tarjetas de crédito).
-      pt: Determines if the capture operation was performed (just for credit cards).
+      es: Determina si la captura de la operación fue realizada (sólo para tarjetas
+        de crédito).
+      pt: Determina se a captura de a operação foi realizada (somente para cartões
+        de crédito).
 - call_for_authorize_id:
     type: String
     description:
       en: Identifier that must be provided to the issuing bank to authorize the payment.
       es: Identificador que debe ser provisto al banco emisor para autorizar el pago.
-      pt: Identifier that must be provided to the issuing bank to authorize the payment.
+      pt: Identificador que deve ser fornecida ao banco emissor para autorizar o pagamento.
 - payment_method_id:
     type: String
     description:
       en: Payment method chosen to do the payment.
       es: Medio de pago elegido para hacer el pago.
-      pt: Payment method chosen to do the payment.
+      pt: Meio de pagamento escolhido para fazer o pagamento.
 - issuer_id:
     type: String
     description:
       en: Payment method issuer.
       es: Identificador del emisor del medio de pago.
-      pt: Payment method issuer.
+      pt: Id do emitente do meio de pagamento.
 - payment_type_id:
     type: String
     description:
       en: Type of payment method chosen.
       es: Tipo del medio de pago elegido.
-      pt: Type of payment method chosen.
+      pt: Tipo do meio de pagamento escolhido.
     enum:
     - account_money:
         en: Money in the MercadoPago account.
@@ -560,13 +568,13 @@ properties:
     description:
       en: Card token ID.
       es: Identificador de card token.
-      pt: Card token ID.
+      pt: Identificador de token card.
 - card:
     type: Object
     description:
       en: Details of the card used.
       es: Detalles de la tarjeta utilizada.
-      pt: Details of the card used.
+      pt: Os detalhes do cartão utilizado.
     properties:
     - id:
         type: Number
@@ -645,35 +653,38 @@ properties:
 - statement_descriptor:
     type: String
     description:
-      en: 'How will look the payment in the card bill (e.g.: MERCADOPAGO)'.
-      es: 'Cómo aparecerá el pago en el resumen de tarjeta (ej.: MERCADOPAGO)'.
-      pt: 'How will look the payment in the card bill (e.g.: MERCADOPAGO)'.
+      en: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
+      es: 'Cómo aparecerá el pago en el resumen de tarjeta (ej.: MERCADOPAGO).'
+      pt: 'Como aparecerá o pagamento no extrato do cartão (exemplo: o MERCADOPAGO).'
 - installments:
     type: Integer
     description:
       en: Selected quantity of installments.
       es: Cantidad seleccionada de cuotas.
-      pt: Selected quantity of installments.
+      pt: Quantidade selecionada de cotas.
 - notification_url:
     type: String
     description:
-      en: URL where Mercado Pago will send notifications associated to changes in this
-        payment
-      es: URL a la cual Mercado Pago enviará notificaciones asociadas a cambios en el estado del pago.
-      pt: URL where Mercado Pago will send notifications associated to changes in this
-        payment.
+      en: URL where Mercado Pago will send notifications associated to changes in
+        this payment
+      es: URL a la cual Mercado Pago enviará notificaciones asociadas a cambios en
+        el estado del pago.
+      pt: URL para qual Mercado Pago enviará notificações associadas a mudanças no
+        status do pagamento.
 - callback_url:
     type: String
     description:
       en: URL where mercadopago does the final redirect (only for bank transfers).
-      es: URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria).
-      pt: URL where mercadopago does the final redirect (only for bank transfers).
+      es: URL a la cual Mercado Pago hace la redirección final (sólo para transferencia
+        bancaria).
+      pt: URL para a qual o Mercado Pago faz o redirecionamento final (apenas para
+        transferência bancária).
 - refunds:
     type: Array(Object)
     description:
       en: List of refunds that were made to this payment.
       es: Lista de reembolsos que fueron realizados a este pago.
-      pt: List of refunds that were made to this payment.
+      pt: Lista de reembolsos que foram feitas a este pagamento.
     properties:
     - id:
         type: Number
@@ -698,7 +709,8 @@ properties:
         description:
           en: Valid JSON that can be attached to the payment to record additional
             attributes of the merchant.
-          es: JSON válido que puede agregarse al pago para guardar atributos adicionales del comprador.
+          es: JSON válido que puede agregarse al pago para guardar atributos adicionales
+            del comprador.
           pt: Valid JSON that can be attached to the payment to record additional
             attributes of the merchant.
     - source:
@@ -741,7 +753,8 @@ properties:
                 pt: The refund was made by a Mercado Pago administrator.
             - bpp:
                 en: The refund was made by the Mercado Pago's Buyer Protection Program
-                es: El reembolso fue realizado por el programa de protección al comprador de Mercado Pago.
+                es: El reembolso fue realizado por el programa de protección al comprador
+                  de Mercado Pago.
                 pt: The refund was made by the Mercado Pago's Buyer Protection Program
     - date_created:
         type: Date(ISO_8601)
@@ -760,9 +773,10 @@ properties:
     description:
       en: Data that could improve fraud analysis and conversion rates. Try to send
         as much information as possible.
-      es: Información que puede mejorar el análisis de prevención de fraude y la tasa de conversión. Trata de enviarnos toda la infomación posible.
-      pt: Data that could improve fraud analysis and conversion rates. Try to send
-        as much information as possible.
+      es: Información que puede mejorar el análisis de prevención de fraude y la tasa
+        de conversión. Trata de enviarnos toda la infomación posible.
+      pt: Informações que podem melhorar a análise de prevenção de fraude e a taxa
+        de conversão. Trata de enviar-nos toda a informação possível.
     properties:
     - ip_address:
         type: String

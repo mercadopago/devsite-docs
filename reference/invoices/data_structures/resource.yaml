@@ -18,7 +18,7 @@ properties:
     description:
       en: Plan to which the subscription belongs
       es: Plan to which the subscription belongs
-      pt: Plan to which the subscription belongs
+      pt: Plano to which the subscription belongs
 - payer:
     type: Object
     description:
@@ -77,7 +77,7 @@ properties:
     description:
       en: Fee collected by a marketplace or MercadoPago Application
       es: Fee collected by a marketplace or MercadoPago Application
-      pt: Fee collected by a marketplace or MercadoPago Application
+      pt: Fee collected by a marketplace or Application MercadoPago
 - status:
     type: String
     description:
@@ -116,7 +116,7 @@ properties:
     description:
       en: Subscription plan reason or service title
       es: Subscription plan reason or service title
-      pt: Subscription plan reason or service title
+      pt: Subscription plano reason or service title
 - external_reference:
     type: String
     description:
@@ -155,7 +155,7 @@ properties:
     description:
       en: All payment attempts done to get this invoice paid
       es: All payment attempts done to get this invoice paid
-      pt: All payment attempts done to get this invoice paid
+      pt: All payment attempts done to get this paid invoice
     properties:
     - attempt_date:
         type: Date(ISO_8601)
@@ -192,4 +192,4 @@ properties:
     description:
       en: Date of next payment attempt to get this invoice paid
       es: Date of next payment attempt to get this invoice paid
-      pt: Date of next payment attempt to get this invoice paid
+      pt: Date of next payment attempt to get this paid invoice

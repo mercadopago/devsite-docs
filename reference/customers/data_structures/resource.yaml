@@ -6,31 +6,31 @@ properties:
     description:
       en: Customer ID.
       es: Identificador de cliente.
-      pt: Customer ID.
+      pt: Identificador de cliente.
 - email:
     type: String
     description:
       en: Customer's email.
       es: Email del cliente.
-      pt: Customer's email.
+      pt: E-mail do cliente.
 - first_name:
     type: String
     description:
       en: Customer's name.
       es: Nombre del cliente.
-      pt: Customer's name.
+      pt: Nome do cliente.
 - last_name:
     type: String
     description:
       en: Customer's last name.
       es: Apellido del cliente.
-      pt: Customer's last name.
+      pt: Sobrenome do cliente.
 - phone:
     type: Object
     description:
       en: Customer phone's information.
       es: Teléfono del cliente.
-      pt: Customer phone's information.
+      pt: Telefone do cliente.
     properties:
     - area_code:
         type: String
@@ -49,7 +49,7 @@ properties:
     description:
       en: Customer identification's information.
       es: Información sobre la identificación del cliente.
-      pt: Customer identification's information.
+      pt: Informações sobre a identificação do cliente.
     properties:
     - type:
         type: String
@@ -68,13 +68,13 @@ properties:
     description:
       en: Customer's default address.
       es: Dirección por defecto del cliente.
-      pt: Customer's default address.
+      pt: Endereço por defeito do cliente.
 - address:
     type: Object
     description:
       en: Default address's information.
       es: Información sobre la dirección por defecto del cliente.
-      pt: Default address's information.
+      pt: Informação sobre o endereço padrão do cliente.
     properties:
     - id:
         type: String
@@ -105,43 +105,43 @@ properties:
     description:
       en: Customer's registration date.
       es: Fecha de registro del cliente.
-      pt: Customer's registration date.
+      pt: Data de registo do cliente.
 - description:
     type: String
     description:
       en: Customer's description.
       es: Descripción del cliente.
-      pt: Customer's description.
+      pt: Descrição do cliente.
 - date_created:
     type: Date(ISO_8601)
     description:
       en: Customer's date created.
       es: Fecha de creación del cliente.
-      pt: Customer's date created.
+      pt: Data de criação do cliente.
 - date_last_updated:
     type: Date(ISO_8601)
     description:
       en: Last modified date.
       es: Última fecha de actualización.
-      pt: Last modified date.
+      pt: Última data de atualização.
 - metadata:
     type: Object
     description:
       en: Customer's metadata.
       es: Metadata del cliente.
-      pt: Customer's metadata.
+      pt: Metadata do cliente.
 - default_card:
     type: String
     description:
       en: Customer's default card.
       es: Tarjeta por defecto del cliente.
-      pt: Customer's default card.
+      pt: Cartão padrão do cliente.
 - cards:
     type: Object
     description:
       en: Customer's cards.
       es: Tarjetas del cliente.
-      pt: Customer's cards.
+      pt: Cartões do cliente.
     properties:
     - id:
         type: String
@@ -309,7 +309,7 @@ properties:
     description:
       en: Customer's addresses.
       es: Dirección del cliente.
-      pt: Customer's addresses.
+      pt: Endereço do cliente.
     properties:
     - id:
         type: String
@@ -522,4 +522,4 @@ properties:
     description:
       en: Whether the customers will be in sandbox or in production mode.
       es: Indica si los clientes se crean en el entorno de sandbox o producción.
-      pt: Whether the customers will be in sandbox or in production mode.
+      pt: Indica se os comentários são criados no ambiente de sandbox ou produção.

@@ -101,7 +101,7 @@ module Extractor
     key = 'trnsl.1.1.20160713T211117Z.250bd295ce2d1043.e4530217cbbab3ee462d241ecb1ae5887ac505fd' 
     response = Net::HTTP.get(URI("#{service_uri}&key=#{key}&lang=#{lang}&text=#{text}")) 
     translation = JSON.parse(response)
-    @@progressbar.log "tramslated #{translation["text"]}"
+    @@progressbar.log "translated #{translation["text"]}"
     return translation["text"].join 
   end
 

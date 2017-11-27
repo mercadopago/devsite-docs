@@ -12,7 +12,7 @@ properties:
     description:
       en: Plan to which the subscription belongs
       es: Plan to which the subscription belongs
-      pt: Plan to which the subscription belongs
+      pt: Plano to which the subscription belongs
 - payer:
     type: Object
     description:
@@ -71,7 +71,7 @@ properties:
     description:
       en: Fee collected by a marketplace or MercadoPago Application
       es: Fee collected by a marketplace or MercadoPago Application
-      pt: Fee collected by a marketplace or MercadoPago Application
+      pt: Fee collected by a marketplace or Application MercadoPago
 - status:
     type: String
     description:
@@ -100,7 +100,7 @@ properties:
     description:
       en: Subscription plan reason or service title
       es: Subscription plan reason or service title
-      pt: Subscription plan reason or service title
+      pt: Subscription plano reason or service title
 - external_reference:
     type: String
     description:
@@ -130,13 +130,13 @@ properties:
     description:
       en: When billing process begins to happen
       es: When billing process begins to happen
-      pt: When billing process begins to happen
+      pt: When process billing begins to happen
 - end_date:
     type: Date(ISO_8601)
     description:
       en: When billing process stops (the subscription finishes)
       es: When billing process stops (the subscription finishes)
-      pt: When billing process stops (the subscription finishes)
+      pt: When process billing stops (the subscription finishes)
 - metadata:
     type: Object
     description:
@@ -233,5 +233,5 @@ properties:
         an installation cost or a sign up price.
       es: Amount to be charged once, during de subscription process. Useful to charge
         an installation cost or a sign up price.
-      pt: Amount to be charged once, during de subscription process. Useful to charge
-        an installation cost or a sign up price.
+      pt: Amount to be charged onze, durante o período de inscrição process. Useful
+        to charge an installation cost or sign up price.

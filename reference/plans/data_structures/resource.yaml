@@ -6,19 +6,19 @@ properties:
     description:
       en: Plan identifier
       es: Plan identifier
-      pt: Plan identifier
+      pt: Plano identifier
 - application_fee:
     type: Float
     description:
       en: Fee collected by a marketplace or MercadoPago Application
       es: Fee collected by a marketplace or MercadoPago Application
-      pt: Fee collected by a marketplace or MercadoPago Application
+      pt: Fee collected by a marketplace or Application MercadoPago
 - status:
     type: String
     description:
       en: Plan status
       es: Plan status
-      pt: Plan status
+      pt: Plano de status
     enum:
     - active:
         en: Customers may be suscribed to this plan
@@ -40,7 +40,7 @@ properties:
     description:
       en: Subscription plan reason or service title
       es: Subscription plan reason or service title
-      pt: Subscription plan reason or service title
+      pt: Subscription plano reason or service title
 - external_reference:
     type: String
     description:
@@ -52,7 +52,7 @@ properties:
     description:
       en: Plan’s creation date
       es: Plan’s creation date
-      pt: Plan’s creation date
+      pt: Plan's creation date
 - last_modified:
     type: Date(ISO_8601)
     description:
@@ -194,8 +194,8 @@ properties:
         an installation cost or a sign up price.
       es: Amount to be charged once, during de subscription process. Useful to charge
         an installation cost or a sign up price.
-      pt: Amount to be charged once, during de subscription process. Useful to charge
-        an installation cost or a sign up price.
+      pt: Amount to be charged onze, durante o período de inscrição process. Useful
+        to charge an installation cost or sign up price.
 - metadata:
     type: Object
     description:

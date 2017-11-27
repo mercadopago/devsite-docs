@@ -6,19 +6,19 @@ properties:
     description:
       en: Payment method identifier.
       es: Identificador del medio de pago.
-      pt: Payment method identifier.
+      pt: Id do meio de pagamento.
 - name:
     type: String
     description:
       en: Name of the payment method.
       es: Nombre del medio de pago.
-      pt: Name of the payment method.
+      pt: Nome do meio de pagamento.
 - payment_type_id:
     type: String
     description:
       en: Types of payment methods.
       es: Tipo de medio de pago.
-      pt: Types of payment methods.
+      pt: Tipo de meio de pagamento.
     enum:
     - ticket:
         en: Printed ticket.
@@ -45,7 +45,7 @@ properties:
     description:
       en: Payment methods status.
       es: Estado del medio de pago.
-      pt: Payment methods status.
+      pt: Estado do meio de pagamento.
     enum:
     - active:
         en: Available for use.
@@ -64,19 +64,19 @@ properties:
     description:
       en: Logo to display on secure sites.
       es: Logo a mostrar en sitios seguros.
-      pt: Logo to display on secure sites.
+      pt: Logo a mostrar em sites seguros.
 - thumbnail:
     type: String
     description:
       en: Logo to show.
       es: Logo a mostrar.
-      pt: Logo to show.
+      pt: Logo a mostrar.
 - deferred_capture:
     type: String
     description:
       en: Whether the capture can be delayed or not.
       es: Indica si la captura puede ser diferida o no.
-      pt: Whether the capture can be delayed or not.
+      pt: Indica se a captura pode ser lenta ou não.
     enum:
     - supported:
         en: This payment method supports authorization and capture operations.
@@ -95,7 +95,7 @@ properties:
     description:
       en: Payment method settings.
       es: Configuración de métodos de pago.
-      pt: Payment method settings.
+      pt: Configuração de métodos de pagamento.
     properties:
     - bin:
         type: Object
@@ -121,8 +121,8 @@ properties:
             description:
               en: Regular expression representing bins allowed to pay with more than
                 one installment.
-              es: Expresión regular representando los bines aceptados para pagar con más
-                de una cuota.
+              es: Expresión regular representando los bines aceptados para pagar con
+                más de una cuota.
               pt: Regular expression representing bins allowed to pay with more than
                 one installment.
     - card_number:
@@ -143,8 +143,8 @@ properties:
             description:
               en: Whether the card number can be validated using a checksum algorithm
                 (usually Luhn)
-              es: En tanto y en cuanto el número de tarjeta pueda ser validado con un algoritmo
-                cheksum (usualmenet Luhn)
+              es: En tanto y en cuanto el número de tarjeta pueda ser validado con
+                un algoritmo cheksum (usualmenet Luhn)
               pt: Whether the card number can be validated using a checksum algorithm
                 (usually Luhn)
             enum:
@@ -195,7 +195,8 @@ properties:
             enum:
             - back:
                 en: The security code is located in the back of the card.
-                es: El código de seguridad se encuentra en la parte trasera de la tarjeta.
+                es: El código de seguridad se encuentra en la parte trasera de la
+                  tarjeta.
                 pt: The security code is located in the back of the card.
             - front:
                 en: The security code is located in the front of the card.
@@ -206,7 +207,7 @@ properties:
     description:
       en: List of additional information that must be supplied by the payer.
       es: Lista de información adicional que debe ser provista por el pagador.
-      pt: List of additional information that must be supplied by the payer.
+      pt: Lista de informações que devem ser fornecidas pelo pagador.
     enum:
     - cardholder_identification_number:
         en: Identification number of the card owner.
@@ -229,32 +230,32 @@ properties:
     description:
       en: Minimum amount that can be processed with this payment method.
       es: Mínimo monto que se puede procesar con este medio de pago.
-      pt: Minimum amount that can be processed with this payment method.
+      pt: Mínimo valor que pode ser processado com este meio de pagamento.
 - max_allowed_amount:
     type: Number
     description:
       en: Maximum amount that can be processed with this payment method.
       es: Máximo monto que se puede procesar con este medio de pago.
-      pt: Maximum amount that can be processed with this payment method.
+      pt: Máximo valor que pode ser processado com este meio de pagamento.
 - accreditation_time:
     type: Number
     description:
       en: How many time in minutes could happen until processing of the payment.
       es: Tiempo de procesamiento del pago.
-      pt: How many time in minutes could happen until processing of the payment.
+      pt: Tempo de processamento do pagamento.
 - financial_institutions:
     type: Object
     description:
       en: Finantial institution processing this payment method.
       es: Institución financiera procesando el medio de pago.
-      pt: Finantial institution processing this payment method.
+      pt: Instituição financeira processando o meio de pagamento.
     properties:
     - id:
         type: Integer
         description:
-          en: 'External financial institution identifier (e.g.: company id for atm)'.
-          es: 'Identificador de institución financiera externa'.
-          pt: 'External financial institution identifier (e.g.: company id for atm)'.
+          en: 'External financial institution identifier (e.g.: company id for atm)'
+          es: Identificador de institución financiera externa
+          pt: 'External financial institution identifier (e.g.: company id for atm)'
     - description:
         type: String
         description:

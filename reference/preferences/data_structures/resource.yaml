@@ -6,7 +6,7 @@ properties:
     description:
       en: Items information.
       es: Información sobre el ítem.
-      pt: Items information.
+      pt: Informações sobre o item.
     properties:
     - id:
         type: String(256)
@@ -61,7 +61,7 @@ properties:
     description:
       en: Buyer Information.
       es: Información sobre el comprador.
-      pt: Buyer Information.
+      pt: Informações sobre o comprador.
     properties:
     - name:
         type: String(256)
@@ -155,7 +155,7 @@ properties:
     description:
       en: Set up payment methods to be excluded from the payment process.
       es: Métodos de pago a ser excluídos del flujo de pago.
-      pt: Set up payment methods to be excluded from the payment process.
+      pt: Métodos de pagamento a ser excluídos do fluxo de pagamento.
     properties:
     - excluded_payment_methods:
         type: Array(Object)
@@ -206,7 +206,7 @@ properties:
     description:
       en: Shipments information.
       es: Información de envío.
-      pt: Shipments information.
+      pt: Informações de envio.
     properties:
     - mode:
         type: String
@@ -314,7 +314,7 @@ properties:
     description:
       en: URLs to return to the sellers website.
       es: URLs de retorno al sitio del vendedor.
-      pt: URLs to return to the sellers website.
+      pt: Url de retorno ao site do vendedor.
     properties:
     - success:
         type: String(600)
@@ -339,37 +339,37 @@ properties:
     description:
       en: URL where you'd like to receive a payment notification.
       es: URL a la cual te gustaría recibir notificaciones de pagos.
-      pt: URL where you'd like to receive a payment notification.
+      pt: URL para a qual você gostaria de receber notificações de pagamentos.
 - id:
     type: String(UUID)
     description:
       en: Preference ID.
       es: Identificador de preferencia.
-      pt: Preference ID.
+      pt: Identificação de preferência.
 - init_point:
     type: String
     description:
       en: Checkout access URL.
       es: URL de acceso al checkout.
-      pt: Checkout access URL.
+      pt: URL de acesso ao checkout.
 - sandbox_init_point:
     type: String
     description:
       en: Sandbox checkout access URL.
       es: URL de acceso al sandbox checkout.
-      pt: Sandbox checkout access URL.
+      pt: URL de acesso ao sandbox checkout.
 - date_created:
     type: Date(ISO_8601)
     description:
       en: Preference's creation date.
       es: Fecha de creación de la preferencia.
-      pt: Preference's creation date.
+      pt: Data de criação de sua preferência.
 - operation_type:
     type: String
     description:
       en: Operation data_type.
       es: data_type de la operación.
-      pt: Operation data_type.
+      pt: data_type da operação.
     enum:
     - regular_payment:
         en: Normal payment.
@@ -384,15 +384,16 @@ properties:
     description:
       en: Additional information.
       es: Información adicional.
-      pt: Additional information.
+      pt: Informações adicionais.
 - auto_return:
     type: String
     description:
       en: If specified, your buyers will be redirected back to your site immediately
         after completing the purchase.
-      es: En el caso de estar especificado tu comprador sera redirigido a tu sitio inmediatamente después de la compra.
-      pt: If specified, your buyers will be redirected back to your site immediately
-        after completing the purchase.
+      es: En el caso de estar especificado tu comprador sera redirigido a tu sitio
+        inmediatamente después de la compra.
+      pt: No caso de estar especificado o comprador será redirecionado para o seu
+        site imediatamente após a compra.
     enum:
     - approved:
         en: The redirection takes place only for approved payments.
@@ -401,7 +402,8 @@ properties:
     - all:
         en: The redirection takes place only for approved payments, forward compatibility
           only if we change the default behavior
-        es: La redirección solo se realiza si el pago fue aprobado, brindando compatibilidad solamente si se cambia el comportamiento por defecto.
+        es: La redirección solo se realiza si el pago fue aprobado, brindando compatibilidad
+          solamente si se cambia el comportamiento por defecto.
         pt: The redirection takes place only for approved payments, forward compatibility
           only if we change the default behavior
 - external_reference:
@@ -409,55 +411,57 @@ properties:
     description:
       en: Reference you can synchronize with your payment system.
       es: Referencia que puedes sincronizar con tu sistema de pagos.
-      pt: Reference you can synchronize with your payment system.
+      pt: Referência que pode sincronizar com seu sistema de pagamentos.
 - expires:
     type: Boolean
     description:
       en: Boolean value that determines if a preference expire.
       es: Preferencia que determina si una preferencia expira.
-      pt: Boolean value that determines if a preference expire.
+      pt: Preferência que determina se uma preferência expira.
 - expiration_date_from:
     type: Date(ISO_8601)
     description:
       en: Date since the preference will be active.
       es: Fecha a partir de la cual la preferencia estará activa.
-      pt: Date since the preference will be active.
+      pt: Data a partir da qual a preferência estará ativa.
 - expiration_date_to:
     type: Date(ISO_8601)
     description:
       en: Date when the preference will be expired.
       es: Fecha en la que la preferencia expirará.
-      pt: Date when the preference will be expired.
+      pt: Data em que a preferência expira.
 - collector_id:
     type: Integer
     description:
       en: Your Mercado Pago seller ID.
       es: Tu identificador como vendedor en Mercado Pago.
-      pt: Your Mercado Pago seller ID.
+      pt: Sua identificação como um vendedor no Mercado Pago.
 - client_id:
     type: Integer
     description:
       en: Application owner ID that use Mercado Libre API.
       es: Identificador del dueño de la aplicación que utiliza la API de Mercado Libre.
-      pt: Application owner ID that use Mercado Libre API.
+      pt: Id do dono do aplicativo que usa a API do Mercado Livre.
 - marketplace:
     type: String(256)
     description:
       en: 'Origin of the payment. Default value: NONE'
       es: 'Origen del pago. Valor por defecto: NONE'
-      pt: 'Origin of the payment. Default value: NONE'
+      pt: 'Origem do pagamento. Valor por defeito: NENHUM'
 - marketplace_fee:
     type: Float
     description:
-      en: 'Marketplace's fee charged by application owner. Default value: 0%'
-      es: 'Comisión de Marketplace cobrada por el dueño de la aplicación. Valor por defecto: 0%'
-      pt: 'Marketplace's fee charged by application owner. Default value: 0%'
+      en: 'Marketplace''s fee charged by application owner. Default value: 0%'
+      es: 'Comisión de Marketplace cobrada por el dueño de la aplicación. Valor por
+        defecto: 0%'
+      pt: 'Comissão de Mercado cobrada pelo proprietário do aplicativo. Valor por
+        defeito: 0%'
 - differential_pricing:
     type: Object
     description:
       en: Differential pricing configuration for this preference.
       es: Configuración de precio diferencial para esta preferencia.
-      pt: Differential pricing configuration for this preference.
+      pt: Configuração de preço diferencial para esta preferência.
     properties:
     - id:
         type: Integer
