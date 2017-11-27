@@ -5,23 +5,23 @@ errors:
 - 400 BAD_REQUEST:
   - '1000':
       description:
-        en: the credentials are required
-        es: the credentials are required
-        pt: the credentials are required
+        en: the credentials are required.
+        es: Las credenciales son requeridas.
+        pt: the credentials are required.
   - '1001':
       description:
-        en: public_key not found
-        es: public_key not found
-        pt: public_key not found
+        en: public_key not found.
+        es: No se ha encontrado una public_key.
+        pt: public_key not found.
 - 401 UNAUTHORIZED:
   - unauthorized:
       description:
-        en: unauthorized
-        es: unauthorized
-        pt: unauthorized
+        en: unauthorized.
+        es: No autorizado.
+        pt: unauthorized.
 - 404 NOT_FOUND:
   - not_found:
       description:
-        en: not_found
-        es: not_found
-        pt: not_found
+        en: not_found.
+        es: El recurso no se ha encontrado.
+        pt: not_found.

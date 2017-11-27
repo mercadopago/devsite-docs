@@ -4,459 +4,459 @@ properties:
 - id:
     type: Integer
     description:
-      en: Order identifier
-      es: Order identifier
-      pt: Order identifier
+      en: Order identifier.
+      es: Identificador de orden.
+      pt: Order identifier.
 - preference_id:
     type: String(UUID)
     description:
-      en: Payment preference identifier associated to the merchant order
-      es: Payment preference identifier associated to the merchant order
-      pt: Payment preference identifier associated to the merchant order
+      en: Payment preference identifier associated to the merchant order.
+      es: Identificador de la preferencia de pago asociado a la orden.
+      pt: Payment preference identifier associated to the merchant order.
 - date_created:
     type: Date(ISO_8601)
     description:
-      en: Order's creation date
-      es: Order's creation date
-      pt: Order's creation date
+      en: Order's creation date.
+      es: Fecha de creación de la orden.
+      pt: Order's creation date.
 - last_update:
     type: Date(ISO_8601)
     description:
-      en: Order's last update date
-      es: Order's last update date
-      pt: Order's last update date
+      en: Order's last update date.
+      es: Fecha de última actulización de la orden.
+      pt: Order's last update date.
 - application_id:
     type: String
     description:
-      en: application identifier
-      es: application identifier
-      pt: application identifier
+      en: application identifier.
+      es: Identificador de aplicación.
+      pt: application identifier.
 - status:
     type: String
     description:
-      en: Show the current merchant order state
-      es: Show the current merchant order state
-      pt: Show the current merchant order state
+      en: Show the current merchant order state.
+      es: Muestra el estado actual de la orden.
+      pt: Show the current merchant order state.
     enum:
     - open:
-        en: Order without payments
-        es: Order without payments
-        pt: Order without payments
+        en: Order without payments.
+        es: Orden sin pagos.
+        pt: Order without payments.
     - closed:
-        en: Order with payments covering total amount
-        es: Order with payments covering total amount
-        pt: Order with payments covering total amount
+        en: Order with payments covering total amount.
+        es: Orden con pagos que cubren el monto total.
+        pt: Order with payments covering total amount.
     - expired:
-        en: Order expired
-        es: Order expired
-        pt: Order expired
+        en: Order expired.
+        es: Orden expirada.
+        pt: Order expired.
 - site_id:
     type: String
     description:
-      en: Country identifier that merchant order belongs to
-      es: Country identifier that merchant order belongs to
-      pt: Country identifier that merchant order belongs to
+      en: Country identifier that merchant order belongs to.
+      es: Identificador de país al que pertenece la orden.
+      pt: Country identifier that merchant order belongs to.
 - payer:
     type: Object
     description:
-      en: Buyer Information
-      es: Buyer Information
-      pt: Buyer Information
+      en: Buyer Information.
+      es: Información del comprador.
+      pt: Buyer Information.
     properties:
     - id:
         type: Integer
         description:
-          en: Buyer id
-          es: Buyer id
-          pt: Buyer id
+          en: Buyer id.
+          es: Identificador del comprador.
+          pt: Buyer id.
     - email:
         type: String(256)
         description:
-          en: Buyer e-mail address
-          es: Buyer e-mail address
-          pt: Buyer e-mail address
+          en: Buyer e-mail address.
+          es: E-mail del comprador.
+          pt: Buyer e-mail address.
     - nickname:
         type: String(256)
         description:
-          en: Buyer nickname
-          es: Buyer nickname
-          pt: Buyer nickname
+          en: Buyer nickname.
+          es: Nickname del comprador.
+          pt: Buyer nickname.
 - collector:
     type: Object
     description:
-      en: MercadoPago seller ID
-      es: MercadoPago seller ID
-      pt: MercadoPago seller ID
+      en: Mercado Pago seller ID.
+      es: Identificador del vendedor en Mercado Pago.
+      pt: Mercado Pago seller ID.
     properties:
     - id:
         type: Integer
         description:
-          en: Collector id
-          es: Collector id
-          pt: Collector id
+          en: Collector id.
+          es: Identificador del collector.
+          pt: Collector id.
     - email:
         type: String(256)
         description:
-          en: Collector e-mail address
-          es: Collector e-mail address
-          pt: Collector e-mail address
+          en: Collector e-mail address.
+          es: E-mail del collector.
+          pt: Collector e-mail address.
     - nickname:
         type: String(256)
         description:
-          en: Collector nickname
-          es: Collector nickname
-          pt: Collector nickname
+          en: Collector nickname.
+          es: Nickname del collector.
+          pt: Collector nickname.
 - sponsor_id:
     type: Integer
     description:
-      en: Your MercadoPago seller ID
-      es: Your MercadoPago seller ID
-      pt: Your MercadoPago seller ID
+      en: Your Mercado Pago seller ID.
+      es: Tu identificador como vendedor en Mercado Pago.
+      pt: Your Mercado Pago seller ID.
 - payments:
     type: Array(Object)
     description:
-      en: Payments information
-      es: Payments information
-      pt: Payments information
+      en: Payments information.
+      es: Información del pago.
+      pt: Payments information.
     properties:
     - id:
         type: Integer
         description:
-          en: Payment id
-          es: Payment id
-          pt: Payment id
+          en: Payment id.
+          es: Identificador del pago.
+          pt: Payment id.
     - transaction_amount:
         type: Float
         description:
-          en: Product Cost
-          es: Product Cost
-          pt: Product Cost
+          en: Product Cost.
+          es: Costo del producto.
+          pt: Product Cost.
     - total_paid_amount:
         type: Float
         description:
-          en: Total amount paid by the buyer
-          es: Total amount paid by the buyer
-          pt: Total amount paid by the buyer
+          en: Total amount paid by the buyer.
+          es: Monto total pagado por el comprador.
+          pt: Total amount paid by the buyer.
     - shipping_cost:
         type: Float
         description:
-          en: Shipping fee
-          es: Shipping fee
-          pt: Shipping fee
+          en: Shipping fee.
+          es: Costo de envío.
+          pt: Shipping fee.
     - currency_id:
         type: String(3)
         description:
-          en: ID of the currency used in the payment
-          es: ID of the currency used in the payment
-          pt: ID of the currency used in the payment
+          en: ID of the currency used in the payment.
+          es: Identificador de la moneda utilizada en el pago.
+          pt: ID of the currency used in the payment.
         enum:
         - ARS:
-            en: Argentine peso
-            es: Argentine peso
-            pt: Argentine peso
+            en: Argentine peso.
+            es: Peso argentino.
+            pt: Argentine peso.
         - BRL:
-            en: Brasil real
-            es: Brasil real
-            pt: Brasil real
+            en: Brasil real.
+            es: Real brasilero.
+            pt: Brasil real.
         - VEF:
-            en: Venezuelan strong bolivar
-            es: Venezuelan strong bolivar
-            pt: Venezuelan strong bolivar
+            en: Venezuelan strong bolivar.
+            es: Bolivar fuerte venezolano.
+            pt: Venezuelan strong bolivar.
         - CLP:
-            en: Chilean peso
-            es: Chilean peso
-            pt: Chilean peso
+            en: Chilean peso.
+            es: Peso chileno.
+            pt: Chilean peso.
         - MXN:
-            en: Mexican peso
-            es: Mexican peso
-            pt: Mexican peso
+            en: Mexican peso.
+            es: Peso mexicano.
+            pt: Mexican peso.
         - COP:
-            en: Colombian peso
-            es: Colombian peso
-            pt: Colombian peso
+            en: Colombian peso.
+            es: Peso colombiano.
+            pt: Colombian peso.
         - UYU:
-            en: Uruguayan peso
-            es: Uruguayan peso
-            pt: Uruguayan peso
+            en: Uruguayan peso.
+            es: Peso uruguayo.
+            pt: Uruguayan peso.
     - status:
         type: String
         description:
-          en: Payment status
-          es: Payment status
-          pt: Payment status
+          en: Payment status.
+          es: Estado del pago.
+          pt: Payment status.
     - status_detail:
         type: String
         description:
-          en: Gives more detailed information on the current state or rejection cause
-          es: Gives more detailed information on the current state or rejection cause
-          pt: Gives more detailed information on the current state or rejection cause
+          en: Gives more detailed information on the current state or rejection cause.
+          es: Brinda más información del estado del pago o de la causa de rechazo.
+          pt: Gives more detailed information on the current state or rejection cause.
     - operation_type:
         type: String
         description:
-          en: Operation data_type
-          es: Operation data_type
-          pt: Operation data_type
+          en: Operation data_type.
+          es: data_type de la operación.
+          pt: Operation data_type.
         enum:
         - regular_payment:
-            en: Typification by default of a purchase being paid using MercadoPago
-            es: Typification by default of a purchase being paid using MercadoPago
-            pt: Typification by default of a purchase being paid using MercadoPago
+            en: Typification by default of a purchase being paid using Mercado Pago.
+            es: Tipificación por defecto de una compra pagada por Mercado Pago.
+            pt: Typification by default of a purchase being paid using Mercado Pago.
         - payment_addition:
-            en: Addition of money to an existing payment, done in MercadoPago's site
-            es: Addition of money to an existing payment, done in MercadoPago's site
-            pt: Addition of money to an existing payment, done in MercadoPago's site
+            en: Addition of money to an existing payment, done in Mercado Pago's site.
+            es: Agregado de dinero a un pago ya realizado en Mercado Pago.
+            pt: Addition of money to an existing payment, done in Mercado Pago's site.
     - date_approved:
         type: Date(ISO_8601)
         description:
-          en: Payment's approvation date
-          es: Payment's approvation date
-          pt: Payment's approvation date
+          en: Payment's approvation date.
+          es: Fecha de aprobación del pago
+          pt: Payment's approvation date.
     - date_created:
         type: Date(ISO_8601)
         description:
-          en: Payment's creation date
-          es: Payment's creation date
-          pt: Payment's creation date
+          en: Payment's creation date.
+          es: Fecha de creación del pago.
+          pt: Payment's creation date.
     - last_modified:
         type: Date(ISO_8601)
         description:
-          en: Payment's last modification date
-          es: Payment's last modification date
-          pt: Payment's last modification date
+          en: Payment's last modification date.
+          es: Fecha de última actualización del pago.
+          pt: Payment's last modification date.
     - amount_refunded:
         type: Float
         description:
-          en: Amount refunded in this payment
-          es: Amount refunded in this payment
-          pt: Amount refunded in this payment
+          en: Amount refunded in this payment.
+          es: Monto reembolsado en este pago.
+          pt: Amount refunded in this payment.
 - paid_amount:
     type: Float
     description:
-      en: Amount paid in this Order
-      es: Amount paid in this Order
-      pt: Amount paid in this Order
+      en: Amount paid in this Order.
+      es: Monto pagado en la orden.
+      pt: Amount paid in this Order.
 - refunded_amount:
     type: Float
     description:
-      en: Amount refunded in this Order
-      es: Amount refunded in this Order
-      pt: Amount refunded in this Order
+      en: Amount refunded in this Order.
+      es: Monto reembolsado en la orden.
+      pt: Amount refunded in this Order.
 - shipping_cost:
     type: Float
     description:
-      en: Shipping fee
-      es: Shipping fee
-      pt: Shipping fee
+      en: Shipping fee.
+      es: Costo de envío.
+      pt: Shipping fee.
 - cancelled:
     type: Boolean
     description:
-      en: If the Order is expired or not
-      es: If the Order is expired or not
-      pt: If the Order is expired or not
+      en: If the Order is expired or not.
+      es: Indica si la orden está expirada o no.
+      pt: If the Order is expired or not.
 - items:
     type: Array(Object)
     description:
-      en: items information
-      es: items information
-      pt: items information
+      en: items information.
+      es: Información del ítem.
+      pt: items information.
     properties:
     - id:
         type: String
         description:
-          en: Item id
-          es: Item id
-          pt: Item id
+          en: Item id.
+          es: Identificador del ítem.
+          pt: Item id.
     - category_id:
         type: String
         description:
-          en: Item category
-          es: Item category
-          pt: Item category
+          en: Item category.
+          es: Category del ítem.
+          pt: Item category.
     - currency_id:
         type: String(3)
         description:
-          en: ID of the currency used in the item price
-          es: ID of the currency used in the item price
-          pt: ID of the currency used in the item price
+          en: ID of the currency used in the item price.
+          es: Identificador de la moneda utilizada en el precio del ítem.
+          pt: ID of the currency used in the item price.
     - description:
         type: String
         description:
-          en: Item description
-          es: Item description
-          pt: Item description
+          en: Item description.
+          es: Descripción del ítem.
+          pt: Item description.
     - picture_url:
         type: String
         description:
-          en: Item picture URL
-          es: Item picture URL
-          pt: Item picture URL
+          en: Item picture URL.
+          es: URL de imagen del ítem.
+          pt: Item picture URL.
     - quantity:
         type: Integer
         description:
-          en: Total amount paid by the buyer
-          es: Total amount paid by the buyer
-          pt: Total amount paid by the buyer
+          en: Total amount paid by the buyer.
+          es: Monto total pagado por el comprador.
+          pt: Total amount paid by the buyer.
     - unit_price:
         type: Float
         description:
-          en: Item unit price
-          es: Item unit price
-          pt: Item unit price
+          en: Item unit price.
+          es: Precio unitario del ítem.
+          pt: Item unit price.
     - title:
         type: String
         description:
-          en: Item title
-          es: Item title
-          pt: Item title
+          en: Item title.
+          es: Título del ítem.
+          pt: Item title.
 - shipments:
     type: Object
     description:
-      en: Shipments information
-      es: Shipments information
-      pt: Shipments information
+      en: Shipments information.
+      es: Información del envío.
+      pt: Shipments information.
     properties:
     - id:
         type: Integer
         description:
-          en: Shipping identifier
-          es: Shipping identifier
-          pt: Shipping identifier
+          en: Shipping identifier.
+          es: Identificador del envío.
+          pt: Shipping identifier.
     - shipment_type:
         type: String
         description:
-          en: Shipping type
-          es: Shipping type
-          pt: Shipping type
+          en: Shipping type.
+          es: Tipo de envío.
+          pt: Shipping type.
     - shipping_mode:
         type: String
         description:
-          en: Shipping mode
-          es: Shipping mode
-          pt: Shipping mode
+          en: Shipping mode.
+          es: Modo de envío.
+          pt: Shipping mode.
     - picking_type:
         type: String
         description:
-          en: Shipping picking type
-          es: Shipping picking type
-          pt: Shipping picking type
+          en: Shipping picking type.
+          es: Tipo de retiro de envío.
+          pt: Shipping picking type.
     - status:
         type: String
         description:
-          en: Shipping picking type
-          es: Shipping picking type
-          pt: Shipping picking type
+          en: Shipping picking type.
+          es: Tipo de retiro de envío.
+          pt: Shipping picking type.
     - substatus:
         type: String
         description:
-          en: Shipping picking type
-          es: Shipping picking type
-          pt: Shipping picking type
+          en: Shipping picking type.
+          es: Tipo de retiro de envío.
+          pt: Shipping picking type.
     - items:
         type: Object
         description:
-          en: Shipping items
-          es: Shipping items
-          pt: Shipping items
+          en: Shipping items.
+          es: Ítems a enviar.
+          pt: Shipping items.
     - date_created:
         type: Date(ISO_8601)
         description:
-          en: Shipping's creation date
-          es: Shipping's creation date
-          pt: Shipping's creation date
+          en: Shipping's creation date.
+          es: Fecha de creación del envío.
+          pt: Shipping's creation date.
     - last_modified:
         type: Date(ISO_8601)
         description:
-          en: Shipping's last modification date
-          es: Shipping's last modification date
-          pt: Shipping's last modification date
+          en: Shipping's last modification date.
+          es: Fecha de última actualización del envío.
+          pt: Shipping's last modification date.
     - date_first_printed:
         type: Date(ISO_8601)
         description:
-          en: Shipping's first printed date
-          es: Shipping's first printed date
-          pt: Shipping's first printed date
+          en: Shipping's first printed date.
+          es: Primera fecha de impresión del envío.
+          pt: Shipping's first printed date.
     - service_id:
         type: String
         description:
-          en: Shipping service identifier
-          es: Shipping service identifier
-          pt: Shipping service identifier
+          en: Shipping service identifier.
+          es: Identificador de servicio del envío.
+          pt: Shipping service identifier.
     - sender_id:
         type: Integer
         description:
-          en: Sender identifier
-          es: Sender identifier
-          pt: Sender identifier
+          en: Sender identifier.
+          es: Identificador del emisor.
+          pt: Sender identifier.
     - receiver_id:
         type: Integer
         description:
-          en: Receiver identifier
-          es: Receiver identifier
-          pt: Receiver identifier
+          en: Receiver identifier.
+          es: Identificador del receptor.
+          pt: Receiver identifier.
     - receiver_address:
         type: Object
         description:
-          en: Shipping address
-          es: Shipping address
-          pt: Shipping address
+          en: Shipping address.
+          es: Dirección de envío.
+          pt: Shipping address.
         properties:
         - zip_code:
             type: String(256)
             description:
-              en: Zip code
-              es: Zip code
-              pt: Zip code
+              en: Zip code.
+              es: Código postal.
+              pt: Zip code.
         - street_name:
             type: String(256)
             description:
-              en: Street name
-              es: Street name
-              pt: Street name
+              en: Street name.
+              es: Calle.
+              pt: Street name.
         - street_number:
             type: Integer
             description:
-              en: Street number
-              es: Street number
-              pt: Street number
+              en: Street number.
+              es: Número.
+              pt: Street number.
         - floor:
             type: String(256)
             description:
-              en: Floor
-              es: Floor
-              pt: Floor
+              en: Floor.
+              es: Piso.
+              pt: Floor.
         - apartment:
             type: String(256)
             description:
-              en: Apartment
-              es: Apartment
-              pt: Apartment
+              en: Apartment.
+              es: Apartmento.
+              pt: Apartment.
 - notification_url:
     type: String(500)
     description:
-      en: URL where you'd like to receive a payment notification
-      es: URL where you'd like to receive a payment notification
-      pt: URL where you'd like to receive a payment notification
+      en: URL where you'd like to receive a payment notification.
+      es: URL en la que te gustaría recibir una notificación del estado del pago.
+      pt: URL where you'd like to receive a payment notification.
 - additional_info:
     type: String(600)
     description:
-      en: Additional information
-      es: Additional information
-      pt: Additional information
+      en: Additional information.
+      es: Información adicional del pago.
+      pt: Additional information.
 - external_reference:
     type: String(256)
     description:
-      en: Reference you can synchronize with your payment system
-      es: Reference you can synchronize with your payment system
-      pt: Reference you can synchronize with your payment system
+      en: Reference you can synchronize with your payment system.
+      es: Referencia que puedes sincronizar con tu sistema de pagos.
+      pt: Reference you can synchronize with your payment system.
 - marketplace:
     type: String(256)
     description:
-      en: 'Origin of the payment. Default value: NONE'
-      es: 'Origin of the payment. Default value: NONE'
-      pt: 'Origin of the payment. Default value: NONE'
+      en: 'Origin of the payment. Default value: NONE'.
+      es: 'Origen del pago. Valor predeterminado: NONE'.
+      pt: 'Origin of the payment. Default value: NONE'.
 - total_amount:
     type: Float
     description:
-      en: Product cost
-      es: Product cost
-      pt: Product cost
+      en: Product cost.
+      es: Costo del producto.
+      pt: Product cost.

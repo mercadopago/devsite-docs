@@ -2,143 +2,143 @@
 type: object
 properties:
 - publicKey:
-    type: 
+    type:
     description:
-      en: Seller's public_key
-      es: Seller's public_key
-      pt: Seller's public_key
+      en: Seller's public_key.
+      es: public_key del vendedor.
+      pt: Seller's public_key.
 - cardId:
-    type: 
+    type:
     description:
-      en: ID of the card
-      es: ID of the card
-      pt: ID of the card
+      en: ID of the card.
+      es: Identificador de la tarjeta.
+      pt: ID of the card.
 - firstSixDigits:
-    type: 
+    type:
     description:
-      en: Card number, showing only first six digits
-      es: Card number, showing only first six digits
-      pt: Card number, showing only first six digits
+      en: Card number, showing only first six digits.
+      es: Número de la tarjeta, mostrando solo los primeros seis dígito.
+      pt: Card number, showing only first six digits.
 - luhnValidation:
-    type: 
+    type:
     description:
-      en: If the card number meets the Luhn validation
-      es: If the card number meets the Luhn validation
-      pt: If the card number meets the Luhn validation
+      en: If the card number meets the Luhn validation.
+      es: Indica si el número de la tarjeta pasa la validación de Luhn.
+      pt: If the card number meets the Luhn validation.
 - dateUsed:
-    type: 
+    type:
     description:
-      en: Date in which this token was used for a payment
-      es: Date in which this token was used for a payment
-      pt: Date in which this token was used for a payment
+      en: Date in which this token was used for a payment.
+      es: Fecha en la que este token fue utilizado en un pago.
+      pt: Date in which this token was used for a payment.
 - status:
-    type: 
+    type:
     description:
-      en: Current token status
-      es: Current token status
-      pt: Current token status
+      en: Current token status.
+      es: Estado actual del token.
+      pt: Current token status.
     enum:
     - active:
-        en: The token may be used for a payment
-        es: The token may be used for a payment
-        pt: The token may be used for a payment
+        en: The token may be used for a payment.
+        es: El token puede ser usado para realizar un pago.
+        pt: The token may be used for a payment.
     - used:
-        en: The token has already been used for a payment
-        es: The token has already been used for a payment
-        pt: The token has already been used for a payment
+        en: The token has already been used for a payment.
+        es: El token ya fue utilizado para realizar un pago.
+        pt: The token has already been used for a payment.
     - expired:
-        en: The token expired and cannot be used anymore
-        es: The token expired and cannot be used anymore
-        pt: The token expired and cannot be used anymore
+        en: The token expired and cannot be used anymore.
+        es: El token expiró y ya no se puede usar.
+        pt: The token expired and cannot be used anymore.
 - dateDue:
-    type: 
+    type:
     description:
-      en: Date in which this token will expire and will be no longer valid for use
-      es: Date in which this token will expire and will be no longer valid for use
-      pt: Date in which this token will expire and will be no longer valid for use
+      en: Date in which this token will expire and will be no longer valid for use.
+      es: Fecha en la cual el token expirará y no será válido para el uso.
+      pt: Date in which this token will expire and will be no longer valid for use.
 - liveMode:
-    type: 
+    type:
     description:
-      en: Whether the payment will be processed in sandbox or in production mode
-      es: Whether the payment will be processed in sandbox or in production mode
-      pt: Whether the payment will be processed in sandbox or in production mode
+      en: Whether the payment will be processed in sandbox or in production mode.
+      es: Indica si el pago será procesado en el entorno de sandbox o en producción.
+      pt: Whether the payment will be processed in sandbox or in production mode.
 - cardNumberLength:
-    type: 
+    type:
     description:
-      en: Length of the card number
-      es: Length of the card number
-      pt: Length of the card number
+      en: Length of the card number.
+      es: Longitud del número de la tarjeta.
+      pt: Length of the card number.
 - id:
-    type: 
+    type:
     description:
-      en: Card token ID
-      es: Card token ID
-      pt: Card token ID
+      en: Card token ID.
+      es: Identificador del token de tarjeta.
+      pt: Card token ID.
 - securityCodeLength:
-    type: 
+    type:
     description:
-      en: Length of the card security code
-      es: Length of the card security code
-      pt: Length of the card security code
+      en: Length of the card security code.
+      es: Longitud del código de seguridad de la tarjeta.
+      pt: Length of the card security code.
 - expirationYear:
-    type: 
+    type:
     description:
-      en: Card expiration year
-      es: Card expiration year
-      pt: Card expiration year
+      en: Card expiration year.
+      es: Año de expiración de la tarjeta.
+      pt: Card expiration year.
 - expirationMonth:
-    type: 
+    type:
     description:
-      en: Card expiration month
-      es: Card expiration month
-      pt: Card expiration month
+      en: Card expiration month.
+      es: Mes de expiración de la tarjeta.
+      pt: Card expiration month.
 - dateLastUpdated:
-    type: 
+    type:
     description:
-      en: Last modified date
-      es: Last modified date
-      pt: Last modified date
+      en: Last modified date.
+      es: Última fecha de actualización.
+      pt: Last modified date.
 - lastFourDigits:
-    type: 
+    type:
     description:
-      en: Card number, showing only last four digits
-      es: Card number, showing only last four digits
-      pt: Card number, showing only last four digits
+      en: Card number, showing only last four digits.
+      es: Número de la tarjeta, mostrando solamente los últimos 4 dígitos.
+      pt: Card number, showing only last four digits.
 - cardholder:
-    type: 
+    type:
     description:
-      en: Cardholder information
-      es: Cardholder information
-      pt: Cardholder information
+      en: Cardholder information.
+      es: Información del dueño de la tarjeta.
+      pt: Cardholder information.
     properties:
     - identification:
-        type: 
+        type:
         description:
-          en: Cardholder identification data
-          es: Cardholder identification data
-          pt: Cardholder identification data
+          en: Cardholder identification data.
+          es: Identificación del dueño de la tarjeta.
+          pt: Cardholder identification data.
         properties:
         - number:
-            type: 
+            type:
             description:
-              en: Cardholder Identification number
-              es: Cardholder Identification number
-              pt: Cardholder Identification number
+              en: Cardholder Identification number.
+              es: Número de identificación del dueño de la tarjeta.
+              pt: Cardholder Identification number.
         - type:
-            type: 
+            type:
             description:
-              en: Cardholder Identification type
-              es: Cardholder Identification type
-              pt: Cardholder Identification type
+              en: Cardholder Identification type.
+              es: Tipo de identificación del dueño de la tarjeta.
+              pt: Cardholder Identification type.
     - name:
-        type: 
+        type:
         description:
-          en: Cardholder name
-          es: Cardholder name
-          pt: Cardholder name
+          en: Cardholder name.
+          es: Nombre del dueño de la tarjeta.
+          pt: Cardholder name.
 - dateCreated:
-    type: 
+    type:
     description:
-      en: Creation date of this token
-      es: Creation date of this token
-      pt: Creation date of this token
+      en: Creation date of this token.
+      es: Fecha de creación de este token.
+      pt: Creation date of this token.

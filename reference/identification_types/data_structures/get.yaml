@@ -10,18 +10,18 @@ errors:
 - 400 BAD_REQUEST:
   - '1001':
       description:
-        en: Public_key not found
-        es: Public_key not found
-        pt: Public_key not found
+        en: Public_key not found.
+        es: No se ha encontrado una Public_key.
+        pt: Public_key not found.
 - 401 UNAUTHORIZED:
   - '1000':
       description:
-        en: The credentials are required
-        es: The credentials are required
-        pt: The credentials are required
+        en: The credentials are required.
+        es: Las credenciales son requeridas.
+        pt: The credentials are required.
 - 404 NOT_FOUND:
   - '1004':
       description:
-        en: Identification types not found
-        es: Identification types not found
-        pt: Identification types not found
+        en: Identification types not found.
+        es: No se ha encontrado el tipo de identificación.
+        pt: Identification types not found.

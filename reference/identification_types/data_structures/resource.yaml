@@ -4,30 +4,30 @@ properties:
 - id:
     type: String
     description:
-      en: Identification type id
-      es: Identification type id
-      pt: Identification type id
+      en: Identification type id.
+      es: Identificador de tipo de identificación.
+      pt: Identification type id.
 - name:
     type: String
     description:
-      en: Identification type name
-      es: Identification type name
-      pt: Identification type name
+      en: Identification type name.
+      es: Nombre de tipo de identificación.
+      pt: Identification type name.
 - type:
     type: String
     description:
-      en: Identification number data type
-      es: Identification number data type
-      pt: Identification number data type
+      en: Identification number data type.
+      es: Tipo de dato del número de identificación.
+      pt: Identification number data type.
 - min_length:
     type: number
     description:
-      en: Identification number min length
-      es: Identification number min length
-      pt: Identification number min length
+      en: Identification number min length.
+      es: Mínima longitud del número de identificación.
+      pt: Identification number min length.
 - max_length:
     type: number
     description:
       en: Identification number max length
-      es: Identification number max length
+      es: Máxima longitud del número de identificación.
       pt: Identification number max length
