@@ -68,19 +68,19 @@ properties:
         description:
           en: Buyer id.
           es: Identificador del comprador.
-          pt: Buyer id.
+          pt: Id do comprador.
     - email:
         type: String(256)
         description:
           en: Buyer e-mail address.
           es: E-mail del comprador.
-          pt: Buyer e-mail address.
+          pt: E-mail do comprador.
     - nickname:
         type: String(256)
         description:
           en: Buyer nickname.
           es: Nickname del comprador.
-          pt: Buyer nickname.
+          pt: Nick do comprador.
 - collector:
     type: Object
     description:
@@ -93,19 +93,19 @@ properties:
         description:
           en: Collector id.
           es: Identificador del collector.
-          pt: Collector id.
+          pt: Id do collector.
     - email:
         type: String(256)
         description:
           en: Collector e-mail address.
           es: E-mail del collector.
-          pt: Collector e-mail address.
+          pt: E-mail do collector.
     - nickname:
         type: String(256)
         description:
           en: Collector nickname.
           es: Nickname del collector.
-          pt: Collector nickname.
+          pt: Nick do collector.
 - sponsor_id:
     type: Integer
     description:
@@ -124,31 +124,31 @@ properties:
         description:
           en: Payment id.
           es: Identificador del pago.
-          pt: Payment id.
+          pt: Id do pagamento.
     - transaction_amount:
         type: Float
         description:
           en: Product Cost.
           es: Costo del producto.
-          pt: Product Cost.
+          pt: Custo do produto.
     - total_paid_amount:
         type: Float
         description:
           en: Total amount paid by the buyer.
           es: Monto total pagado por el comprador.
-          pt: Total amount paid by the buyer.
+          pt: Montante total pago pelo comprador.
     - shipping_cost:
         type: Float
         description:
           en: Shipping fee.
           es: Costo de envío.
-          pt: Shipping fee.
+          pt: Custo de transporte.
     - currency_id:
         type: String(3)
         description:
           en: ID of the currency used in the payment.
           es: Identificador de la moneda utilizada en el pago.
-          pt: ID of the currency used in the payment.
+          pt: Identificador da moeda utilizada no pagamento.
         enum:
         - ARS:
             en: Argentine peso.
@@ -183,19 +183,19 @@ properties:
         description:
           en: Payment status.
           es: Estado del pago.
-          pt: Payment status.
+          pt: Estado do pagamento.
     - status_detail:
         type: String
         description:
           en: Gives more detailed information on the current state or rejection cause.
           es: Brinda más información del estado del pago o de la causa de rechazo.
-          pt: Gives more detailed information on the current state or rejection cause.
+          pt: Fornece mais informações do status do pagamento ou da causa de rejeição.
     - operation_type:
         type: String
         description:
           en: Operation data_type.
           es: data_type de la operación.
-          pt: Operation data_type.
+          pt: data_type da operação.
         enum:
         - regular_payment:
             en: Typification by default of a purchase being paid using Mercado Pago.
@@ -210,25 +210,25 @@ properties:
         description:
           en: Payment's approvation date.
           es: Fecha de aprobación del pago
-          pt: Payment's approvation date.
+          pt: Data de aprovação do pagamento
     - date_created:
         type: Date(ISO_8601)
         description:
           en: Payment's creation date.
           es: Fecha de creación del pago.
-          pt: Payment's creation date.
+          pt: Data de criação do pagamento.
     - last_modified:
         type: Date(ISO_8601)
         description:
           en: Payment's last modification date.
           es: Fecha de última actualización del pago.
-          pt: Payment's last modification date.
+          pt: Data da última atualização do pagamento.
     - amount_refunded:
         type: Float
         description:
           en: Amount refunded in this payment.
           es: Monto reembolsado en este pago.
-          pt: Amount refunded in this payment.
+          pt: Valor reembolsado a esse pagamento.
 - paid_amount:
     type: Float
     description:
@@ -265,49 +265,49 @@ properties:
         description:
           en: Item id.
           es: Identificador del ítem.
-          pt: Item id.
+          pt: Id do anúncio.
     - category_id:
         type: String
         description:
           en: Item category.
           es: Category del ítem.
-          pt: Item category.
+          pt: Categoria do item.
     - currency_id:
         type: String(3)
         description:
           en: ID of the currency used in the item price.
           es: Identificador de la moneda utilizada en el precio del ítem.
-          pt: ID of the currency used in the item price.
+          pt: Identificador da moeda utilizada no preço do item.
     - description:
         type: String
         description:
           en: Item description.
           es: Descripción del ítem.
-          pt: Item description.
+          pt: Descrição do anúncio.
     - picture_url:
         type: String
         description:
           en: Item picture URL.
           es: URL de imagen del ítem.
-          pt: Item picture URL.
+          pt: URL da imagem do anúncio.
     - quantity:
         type: Integer
         description:
           en: Total amount paid by the buyer.
           es: Monto total pagado por el comprador.
-          pt: Total amount paid by the buyer.
+          pt: Montante total pago pelo comprador.
     - unit_price:
         type: Float
         description:
           en: Item unit price.
           es: Precio unitario del ítem.
-          pt: Item unit price.
+          pt: Preço unitário do item.
     - title:
         type: String
         description:
           en: Item title.
           es: Título del ítem.
-          pt: Item title.
+          pt: Título do item.
 - shipments:
     type: Object
     description:
@@ -320,116 +320,116 @@ properties:
         description:
           en: Shipping identifier.
           es: Identificador del envío.
-          pt: Shipping identifier.
+          pt: Id do frete.
     - shipment_type:
         type: String
         description:
           en: Shipping type.
           es: Tipo de envío.
-          pt: Shipping type.
+          pt: Tipo de transporte.
     - shipping_mode:
         type: String
         description:
           en: Shipping mode.
           es: Modo de envío.
-          pt: Shipping mode.
+          pt: Modo de envio.
     - picking_type:
         type: String
         description:
           en: Shipping picking type.
           es: Tipo de retiro de envío.
-          pt: Shipping picking type.
+          pt: Taxa de remoção de envio.
     - status:
         type: String
         description:
           en: Shipping picking type.
           es: Tipo de retiro de envío.
-          pt: Shipping picking type.
+          pt: Taxa de remoção de envio.
     - substatus:
         type: String
         description:
           en: Shipping picking type.
           es: Tipo de retiro de envío.
-          pt: Shipping picking type.
+          pt: Taxa de remoção de envio.
     - items:
         type: Object
         description:
           en: Shipping items.
           es: Ítems a enviar.
-          pt: Shipping items.
+          pt: Itens a enviar.
     - date_created:
         type: Date(ISO_8601)
         description:
           en: Shipping's creation date.
           es: Fecha de creación del envío.
-          pt: Shipping's creation date.
+          pt: Data de criação do frete.
     - last_modified:
         type: Date(ISO_8601)
         description:
           en: Shipping's last modification date.
           es: Fecha de última actualización del envío.
-          pt: Shipping's last modification date.
+          pt: Data da última atualização do frete.
     - date_first_printed:
         type: Date(ISO_8601)
         description:
           en: Shipping's first printed date.
           es: Primera fecha de impresión del envío.
-          pt: Shipping's first printed date.
+          pt: Primeira data de impressão do frete.
     - service_id:
         type: String
         description:
           en: Shipping service identifier.
           es: Identificador de servicio del envío.
-          pt: Shipping service identifier.
+          pt: Identificador de serviço do transporte.
     - sender_id:
         type: Integer
         description:
           en: Sender identifier.
           es: Identificador del emisor.
-          pt: Sender identifier.
+          pt: Id do remetente.
     - receiver_id:
         type: Integer
         description:
           en: Receiver identifier.
           es: Identificador del receptor.
-          pt: Receiver identifier.
+          pt: Id do receptor.
     - receiver_address:
         type: Object
         description:
           en: Shipping address.
           es: Dirección de envío.
-          pt: Shipping address.
+          pt: Endereço de envio.
         properties:
         - zip_code:
             type: String(256)
             description:
               en: Zip code.
               es: Código postal.
-              pt: Zip code.
+              pt: Código postal.
         - street_name:
             type: String(256)
             description:
               en: Street name.
               es: Calle.
-              pt: Street name.
+              pt: Rua.
         - street_number:
             type: Integer
             description:
               en: Street number.
               es: Número.
-              pt: Street number.
+              pt: O Número.
         - floor:
             type: String(256)
             description:
               en: Floor.
               es: Piso.
-              pt: Floor.
+              pt: Apartamento.
         - apartment:
             type: String(256)
             description:
               en: Apartment.
               es: Apartmento.
-              pt: Apartment.
+              pt: Apartamento.
 - notification_url:
     type: String(500)
     description:

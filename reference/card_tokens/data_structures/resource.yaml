@@ -116,26 +116,26 @@ properties:
         description:
           en: Cardholder identification data.
           es: Identificación del dueño de la tarjeta.
-          pt: Cardholder identification data.
+          pt: Identificação do titular do cartão.
         properties:
         - number:
             type: 
             description:
               en: Cardholder Identification number.
               es: Número de identificación del dueño de la tarjeta.
-              pt: Cardholder Identification number.
+              pt: Número de identificação do titular do cartão.
         - type:
             type: 
             description:
               en: Cardholder Identification type.
               es: Tipo de identificación del dueño de la tarjeta.
-              pt: Cardholder Identification type.
+              pt: Tipo de identificação do titular do cartão.
     - name:
         type: 
         description:
           en: Cardholder name.
           es: Nombre del dueño de la tarjeta.
-          pt: Cardholder name.
+          pt: Nome do proprietário do cartão.
 - dateCreated:
     type: 
     description:

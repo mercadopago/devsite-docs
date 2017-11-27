@@ -31,13 +31,13 @@ properties:
         description:
           en: Identification of the associated payer
           es: Identification of the associated payer
-          pt: Identification of the associated payer
+          pt: Identification of the associated ferreira
     - type:
         type: String
         description:
           en: Identification type of the associated payer
           es: Identification type of the associated payer
-          pt: Identification type of the associated payer
+          pt: Identification type of the associated ferreira
         enum:
         - customer:
             en: Payer is a Customer and belongs to the collector
@@ -52,7 +52,7 @@ properties:
         description:
           en: Customer's email
           es: Customer's email
-          pt: Customer's email
+          pt: Customer's e-mail
     - identification:
         type: Object
         description:
@@ -65,7 +65,7 @@ properties:
             description:
               en: Identification type
               es: Identification type
-              pt: Identification type
+              pt: Type Identification
         - number:
             type: String
             description:

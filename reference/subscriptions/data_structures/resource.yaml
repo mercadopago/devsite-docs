@@ -25,13 +25,13 @@ properties:
         description:
           en: Identification of the associated payer
           es: Identification of the associated payer
-          pt: Identification of the associated payer
+          pt: Identification of the associated ferreira
     - type:
         type: String
         description:
           en: Identification type of the associated payer
           es: Identification type of the associated payer
-          pt: Identification type of the associated payer
+          pt: Identification type of the associated ferreira
         enum:
         - customer:
             en: Payer is a Customer and belongs to the collector
@@ -46,7 +46,7 @@ properties:
         description:
           en: Customer's email
           es: Customer's email
-          pt: Customer's email
+          pt: Customer's e-mail
     - identification:
         type: Object
         description:
@@ -59,7 +59,7 @@ properties:
             description:
               en: Identification type
               es: Identification type
-              pt: Identification type
+              pt: Type Identification
         - number:
             type: String
             description:
@@ -158,7 +158,7 @@ properties:
         description:
           en: All generated invoices
           es: All generated invoices
-          pt: All generated invoices
+          pt: All generated pode estar
         properties:
         - period:
             type: Date(ISO_8601)
@@ -195,7 +195,7 @@ properties:
         description:
           en: Quantity of invoices to be charged during the rest of the subscription
           es: Quantity of invoices to be charged during the rest of the subscription
-          pt: Quantity of invoices to be charged during the rest of the subscription
+          pt: Quantity of pode estar to be charged during the rest of the subscription
     - charged_amount:
         type: Float
         description:
@@ -207,7 +207,7 @@ properties:
         description:
           en: Quantity of invoices already charged by this subscription
           es: Quantity of invoices already charged by this subscription
-          pt: Quantity of invoices already charged by this subscription
+          pt: Quantity of pode estar already charged by this subscription
     - debt_amount:
         type: Float
         description:
@@ -219,7 +219,7 @@ properties:
         description:
           en: Quantity of invoices that this subscription was unable to collect
           es: Quantity of invoices that this subscription was unable to collect
-          pt: Quantity of invoices that this subscription was unable to collect
+          pt: Quantity of pode estar that this subscription was unable to collect
     - next_payment_date:
         type: Date(ISO_8601)
         description:

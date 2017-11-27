@@ -109,13 +109,13 @@ properties:
             description:
               en: Regular expression representing the accepted bins.
               es: Expresión regular representando los bines aceptados.
-              pt: Regular expression representing the accepted bins.
+              pt: A expressão regular, representando bines aceitos.
         - exclusion_pattern:
             type: String
             description:
               en: Regular expression representing the excluded bins.
               es: Expresión regular representando los bines excluídos.
-              pt: Regular expression representing the excluded bins.
+              pt: A expressão regular, representando bines excluídos.
         - installments_pattern:
             type: String
             description:
@@ -123,8 +123,8 @@ properties:
                 one installment.
               es: Expresión regular representando los bines aceptados para pagar con
                 más de una cuota.
-              pt: Regular expression representing bins allowed to pay with more than
-                one installment.
+              pt: A expressão regular, representando bines aceitos para pagar com
+                mais de uma cota.
     - card_number:
         type: Object
         description:
@@ -137,7 +137,7 @@ properties:
             description:
               en: Card number length.
               es: Longitud del número de la tarjeta de crédito.
-              pt: Card number length.
+              pt: Comprimento do número do cartão de crédito.
         - validation:
             type: String
             description:
@@ -145,8 +145,8 @@ properties:
                 (usually Luhn)
               es: En tanto y en cuanto el número de tarjeta pueda ser validado con
                 un algoritmo cheksum (usualmenet Luhn)
-              pt: Whether the card number can be validated using a checksum algorithm
-                (usually Luhn)
+              pt: Em tanto e quanto, o número do cartão possa ser validado com um
+                algoritmo cheksum (usualmenet Luhn)
             enum:
             - standard:
                 en: The card number should validate Luhn's algorithm.
@@ -168,7 +168,7 @@ properties:
             description:
               en: Whether the security code is mandatory or not.
               es: Indica si el código de seguridad es mandatorio o no.
-              pt: Whether the security code is mandatory or not.
+              pt: Indica se o código de segurança é obrigatório ou não.
             enum:
             - mandatory:
                 en: The security code should be given to process the payment.
@@ -183,15 +183,14 @@ properties:
             description:
               en: Security code length.
               es: Longitud del código de seguridad.
-              pt: Security code length.
+              pt: Comprimento do código de segurança.
         - card_location:
             type: String
             description:
               en: Whether the security code is located in the back or in the front
                 of the card.
               es: Ubicación del código de seguridad de la tarjeta en la tarjeta.
-              pt: Whether the security code is located in the back or in the front
-                of the card.
+              pt: Localização do código de segurança do cartão do cartão.
             enum:
             - back:
                 en: The security code is located in the back of the card.
@@ -255,10 +254,10 @@ properties:
         description:
           en: 'External financial institution identifier (e.g.: company id for atm)'
           es: Identificador de institución financiera externa
-          pt: 'External financial institution identifier (e.g.: company id for atm)'
+          pt: Identificador de instituição financeira externa
     - description:
         type: String
         description:
           en: Descriptive finantial institution name.
           es: Nombre descriptivo de la institución financiera.
-          pt: Descriptive finantial institution name.
+          pt: Nome descritivo para a instituição financeira.

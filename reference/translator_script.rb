@@ -6,27 +6,59 @@ require 'ruby-progressbar'
 module Translator
   
   def self.get_yaml_files
-    Dir.glob("./**/resource.yaml") 
+    Dir.glob("./**/resource.yaml")
+  end
+
+  def self.method_files
   end
 
   def self.do_translation
     self.get_yaml_files.each do |file|
       resource = YAML.load_file(file)
       @@progressbar.increment
-      resource["properties"].each_with_index do |property, index|
-        property.each do |key, values|
-          spanish = values["description"]["es"]
-          portuguese = self.yandex_translate(spanish, "es-pt")
-          resource["properties"][index][key]["description"]["pt"] = portuguese
-        end
-      end
+      resource = self.translate(resource) 
       YAML.dump(resource, File.open(file, 'w+'))
     end
   end
 
-  def self.t(spanish)
-    return spanish
+  def self.translate(resource)
+    resource.each do |property, values| 
+      if property == 'description'
+        es = values['es'] 
+        pt = self.yandex_translate(es, "es-pt")
+        resource[property]['pt'] = pt
+      end 
+      if property == 'properties'
+        values.each_with_index do |chunk, index|
+          chunk.each do |k, v|
+            resource['properties'][index][k] = self.translate(v)
+          end
+        end
+      end
+    end
+    return resource
   end
+
+  # if resource["properties"]
+  #   processed_resource["properties"] = Array.new 
+  #   resource["properties"].each do |property| 
+  #     property.each do |name, attributes|
+  #       spanish = attributes["description"]["es"]
+  #       portuguese = self.yandex_translate(spanish, "es-pt")
+  #       property[name]["description"]["pt"] = portuguese
+
+  #     end 
+  #   end
+
+  # end
+
+  # resource["properties"].each do |property, index|
+  #   property.each do |key, values|
+  #     spanish = values["description"]["es"]
+  #     portuguese = self.yandex_translate(spanish, "es-pt")
+  #     processed_resource["properties"][index][key]["description"]["pt"] = portuguese
+  #   end
+  # end
 
   def self.yandex_translate(text, lang) 
     service_uri = 'https://translate.yandex.net/api/v1.5/tr.json/translate?'
@@ -34,8 +66,8 @@ module Translator
     uri = URI.escape("#{service_uri}&key=#{key}&lang=#{lang}&text=#{text}") 
     response = Net::HTTP.get(URI.parse(uri))
     translation = JSON.parse(response)
-    
-    return translation["text"].join 
+    @@progressbar.log("#{text} => #{translation['text']}")
+    return translation["text"].join rescue ''
   end
 
   def self.run

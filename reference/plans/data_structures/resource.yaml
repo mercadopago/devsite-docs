@@ -71,7 +71,7 @@ properties:
         description:
           en: Amount of time (in days or months) for the execution of the next payment
           es: Amount of time (in days or months) for the execution of the next payment
-          pt: Amount of time (in days or months) for the execution of the next payment
+          pt: Amount of time (days in or months) for the execution of the next payment
     - frequency_type:
         type: String
         description:
@@ -155,14 +155,14 @@ properties:
         description:
           en: Period to give the service for free (bonus period)
           es: Period to give the service for free (bonus period)
-          pt: Period to give the service for free (bonus period)
+          pt: Period to give the service for free (bônus period)
         properties:
         - frequency:
             type: Integer
             description:
               en: Amount of time (in days or months) for the free trial period
               es: Amount of time (in days or months) for the free trial period
-              pt: Amount of time (in days or months) for the free trial period
+              pt: Amount of time (days in or months) for the free trial period
         - frequency_type:
             type: String
             description:

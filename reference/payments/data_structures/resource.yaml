@@ -85,7 +85,7 @@ properties:
         description:
           en: Entity type of the payer (only for bank transfers).
           es: Tipo de entidad del pagador (sólo para transferencias bancarias).
-          pt: Entity type of the payer (only for bank transfers).
+          pt: Tipo de entidade do pagador (apenas para transferências bancárias).
         enum:
         - individual:
             en: Payer is individual.
@@ -102,8 +102,8 @@ properties:
             is a Customer).
           es: Tipo de identificación del pagador asociado (requerido si el pagador
             es un cliente).
-          pt: Identification type of the associated payer (mandatory if the Payer
-            is a Customer).
+          pt: Tipo de identificação do pagador associado (se necessário o pagador
+            é um cliente).
         enum:
         - customer:
             en: Payer is a Customer and belongs to the collector.
@@ -122,69 +122,69 @@ properties:
         description:
           en: Identification of the associated payer.
           es: Identificación del pagador asociado.
-          pt: Identification of the associated payer.
+          pt: Identificação do pagador associado.
     - email:
         type: String
         description:
           en: Email.
           es: Email.
-          pt: Email.
+          pt: E-mail.
     - identification:
         type: Object
         description:
           en: Personal identification.
           es: Identificación personal.
-          pt: Personal identification.
+          pt: Identificação pessoal.
         properties:
         - type:
             type: String
             description:
               en: Identification type.
               es: Tipo de identificación.
-              pt: Identification type.
+              pt: Tipo de identificação.
         - number:
             type: String
             description:
               en: Identification number.
               es: Número de identificación.
-              pt: Identification number.
+              pt: Número de identificação.
     - phone:
         type: Object
         description:
           en: Phone of the associated payer.
           es: Teléfono del pagador asociado.
-          pt: Phone of the associated payer.
+          pt: Telefone do pagador associado.
         properties:
         - area_code:
             type: String
             description:
               en: Phone area code.
               es: Código de área.
-              pt: Phone area code.
+              pt: Código de área.
         - number:
             type: String
             description:
               en: Phone number.
               es: Número de teléfono.
-              pt: Phone number.
+              pt: Número de telefone.
         - extension:
             type: String
             description:
               en: Phone number's extension.
               es: Extensión del número de teléfono.
-              pt: Phone number's extension.
+              pt: Extensão do número de telefone.
     - first_name:
         type: String
         description:
           en: First name of the associated payer.
           es: Nombre del pagador asociado.
-          pt: First name of the associated payer.
+          pt: Nome do pagador associado.
     - last_name:
         type: String
         description:
           en: Last name of the associated payer.
           es: Apellido del pagador asociado.
-          pt: Last name of the associated payer.
+          pt: Nome do pagador associado.
 - binary_mode:
     type: Boolean
     description:
@@ -213,7 +213,7 @@ properties:
         description:
           en: Type of order.
           es: Tipo de orden.
-          pt: Type of order.
+          pt: Tipo de ordem.
         enum:
         - mercadolibre:
             en: The order is from Mercado Libre.
@@ -228,7 +228,7 @@ properties:
         description:
           en: Id of the associated purchase order.
           es: Identificador de la orden de compra asociada.
-          pt: Id of the associated purchase order.
+          pt: Identificação da ordem de compra associada.
 - external_reference:
     type: String
     description:
@@ -332,37 +332,38 @@ properties:
           en: 'External financial institution identifier (e.g.: company id for atm)'
           es: 'Identificador de la institución financiera externa (ej.: company id
             para atm)'
-          pt: 'External financial institution identifier (e.g.: company id for atm)'
+          pt: 'Identificação da instituição financeira externa (por exemplo: company
+            id para atm)'
     - net_received_amount:
         type: Float
         description:
           en: Amount received by the seller.
           es: Monto recibido por el vendedor.
-          pt: Amount received by the seller.
+          pt: Valor recebido pelo vendedor.
     - total_paid_amount:
         type: Float
         description:
           en: Total amount paid by the buyer (includes fees).
           es: Monto pagado por el comprador (incluye comisiones).
-          pt: Total amount paid by the buyer (includes fees).
+          pt: Valor pago pelo comprador (inclui comissões).
     - installment_amount:
         type: Float
         description:
           en: Total installments amount.
           es: Monto total de cuota.
-          pt: Total installments amount.
+          pt: Valor total da quota.
     - overpaid_amount:
         type: Float
         description:
           en: Amount overpaid (only for tickets).
           es: Monto pagado por demás (sólo para tickets).
-          pt: Amount overpaid (only for tickets).
+          pt: Valor pago por outras pessoas (apenas para tickets).
     - external_resource_url:
         type: String
         description:
           en: Identifies the resource in the payment processor.
           es: Identifica el recurso en el procesador de pago.
-          pt: Identifies the resource in the payment processor.
+          pt: Identifica o recurso no processador de pagamento.
     - payment_method_reference_id:
         type: String
         description:
@@ -370,8 +371,8 @@ properties:
             the reference to give to the cashier or to input into the ATM.
           es: Para pagos con tarjeta de crédito es USN. Para medios de pago offline
             es la referencia para darle al cajero o ingresarla en el ATM.
-          pt: For credit card payments is the USN. For offline payment methods, is
-            the reference to give to the cashier or to input into the ATM.
+          pt: Para pagamentos com cartão de crédito é USN. Para meios de pagamento
+            offline é a referência para lhe dar o caixa ou introduzir no ATM.
 - fee_details:
     type: Array(Object)
     description:
@@ -384,7 +385,7 @@ properties:
         description:
           en: Fee detail.
           es: Detalle de comisión.
-          pt: Fee detail.
+          pt: Detalhe de comissão.
         enum:
         - mercadopago_fee:
             en: Cost for using Mercado Pago.
@@ -415,7 +416,7 @@ properties:
         description:
           en: Who absorbs the cost.
           es: Indica quién absorve el costo de la comisión.
-          pt: Who absorbs the cost.
+          pt: Quem absorve o custo da comissão.
         enum:
         - collector:
             en: The seller absorbs the cost.
@@ -430,7 +431,7 @@ properties:
         description:
           en: Fee amount.
           es: Monto de la comisión.
-          pt: Fee amount.
+          pt: Valor da comissão.
 - differential_pricing_id:
     type: Integer
     description:
@@ -581,75 +582,75 @@ properties:
         description:
           en: Id of the card.
           es: Identificador de la tarjeta.
-          pt: Id of the card.
+          pt: Identificação da placa.
     - last_four_digits:
         type: String
         description:
           en: Last four digits of card number.
           es: Últimos cuatro dígitos del número de la tarjeta.
-          pt: Last four digits of card number.
+          pt: Últimos quatro dígitos do número do cartão.
     - first_six_digits:
         type: String
         description:
           en: First six digit of card number.
           es: Primeros seis dígitos del número de la tarjeta.
-          pt: First six digit of card number.
+          pt: Os primeiros seis dígitos do número do cartão.
     - expiration_year:
         type: Integer
         description:
           en: Card expiration year.
           es: Año de expiración de la tarjeta.
-          pt: Card expiration year.
+          pt: Ano de validade do cartão.
     - expiration_month:
         type: Integer
         description:
           en: Card expiration month.
           es: Mes de expiración de la tarjeta.
-          pt: Card expiration month.
+          pt: Mês de validade do cartão.
     - date_created:
         type: Date(ISO_8601)
         description:
           en: Creation date of card.
           es: Fecha de creación de la tarjeta.
-          pt: Creation date of card.
+          pt: Data de criação do cartão.
     - date_last_updated:
         type: Date(ISO_8601)
         description:
           en: Last update of data from the card.
           es: Fecha de última actualización de la información de la tarjeta.
-          pt: Last update of data from the card.
+          pt: Data de última atualização de informações de cartão.
     - cardholder:
         type: Object
         description:
           en: Card's owner data.
           es: Información sobre el dueño de la tarjeta.
-          pt: Card's owner data.
+          pt: Informações sobre o dono do cartão.
         properties:
         - name:
             type: String
             description:
               en: Cardholder Name.
               es: Nombre del propietario de la tarjata.
-              pt: Cardholder Name.
+              pt: Nome do proprietário tarjata.
         - identification:
             type: Object
             description:
               en: ID of the cardholder.
               es: Identificación del propietario de la tarjeta.
-              pt: ID of the cardholder.
+              pt: Identificação do proprietário do cartão.
             properties:
             - number:
                 type: String
                 description:
                   en: Document number.
                   es: Número de documento.
-                  pt: Document number.
+                  pt: Número do documento.
             - type:
                 type: String
                 description:
                   en: Document type.
                   es: Tipo de documento.
-                  pt: Document type.
+                  pt: Tipo de documento.
 - statement_descriptor:
     type: String
     description:
@@ -691,19 +692,19 @@ properties:
         description:
           en: Refund identifier.
           es: Identificador de reembolso.
-          pt: Refund identifier.
+          pt: Identificador de reembolso.
     - payment_id:
         type: Number
         description:
           en: Payment on which the return was made.
           es: Identificador del pago al cual se le hizo un reembolso.
-          pt: Payment on which the return was made.
+          pt: Id do pagamento, o qual lhe fez um reembolso.
     - amount:
         type: Float
         description:
           en: Amount refunded.
           es: Monto reembolsado.
-          pt: Amount refunded.
+          pt: Valor reembolsado.
     - metadata:
         type: Object
         description:
@@ -711,33 +712,33 @@ properties:
             attributes of the merchant.
           es: JSON válido que puede agregarse al pago para guardar atributos adicionales
             del comprador.
-          pt: Valid JSON that can be attached to the payment to record additional
-            attributes of the merchant.
+          pt: JSON válido que pode ser adicionado ao pagamento para salvar atributos
+            adicionais do comprador.
     - source:
         type: Object
         description:
           en: Who made the refund.
           es: Indica quién hizo el reembolso.
-          pt: Who made the refund.
+          pt: Quem fez o reembolso.
         properties:
         - id:
             type: String
             description:
               en: User ID who issued the refund.
               es: Identificador del usuario que hizo el reembolso.
-              pt: User ID who issued the refund.
+              pt: Id do usuário que fez o reembolso.
         - name:
             type: String
             description:
               en: User who issued the refund.
               es: Nombre del usuario que hizo el reembolso.
-              pt: User who issued the refund.
+              pt: Nome do usuário que fez o reembolso.
         - type:
             type: String
             description:
               en: Type of user who issued the refund.
               es: Tipo de usuario que hizo el reembolso.
-              pt: Type of user who issued the refund.
+              pt: Tipo de usuário que fez o reembolso.
             enum:
             - collector:
                 en: The collector issued the refund.
@@ -761,13 +762,13 @@ properties:
         description:
           en: Date of refund.
           es: Fecha del reembolso.
-          pt: Date of refund.
+          pt: Data do reembolso.
     - unique_sequence_number:
         type: String
         description:
           en: Refund identifier given by the card processor.
           es: Identificador de reembolso otorgado por el procesador de tarjeta.
-          pt: Refund identifier given by the card processor.
+          pt: Identificador de reembolso concedido pelo processador de cartão.
 - additional_info:
     type: Object
     description:
@@ -783,138 +784,138 @@ properties:
         description:
           en: IP from where the request comes from (only for bank transfers).
           es: IP del cual proviene el request (sólo para transferencia bancaria).
-          pt: IP from where the request comes from (only for bank transfers).
+          pt: IP do qual provém o request (apenas para transferência bancária).
     - items:
         type: Array(Object)
         description:
           en: List of items to be paid.
           es: Lista de ítems a pagar.
-          pt: List of items to be paid.
+          pt: Lista de itens a pagar.
         properties:
         - id:
             type: String
             description:
               en: Item code.
               es: Código de ítem.
-              pt: Item code.
+              pt: Código de anúncio.
         - title:
             type: String
             description:
               en: Item name.
               es: Nombre de ítem.
-              pt: Item name.
+              pt: Nome do item.
         - description:
             type: String
             description:
               en: Long item description.
               es: Descripción de item.
-              pt: Long item description.
+              pt: Descrição do artigo.
         - picture_url:
             type: String
             description:
               en: Image URL.
               es: URL de imagen.
-              pt: Image URL.
+              pt: URL da imagem.
         - category_id:
             type: String
             description:
               en: Category of the item.
               es: Categoría del ítem.
-              pt: Category of the item.
+              pt: Categoria do item.
         - quantity:
             type: Integer
             description:
               en: Item's quantity.
               es: Cantidad de ítems.
-              pt: Item's quantity.
+              pt: Quantidade de itens.
         - unit_price:
             type: Float
             description:
               en: Unit price.
               es: Precio unitario.
-              pt: Unit price.
+              pt: Preço unitário.
     - payer:
         type: Object
         description:
           en: Buyer's information.
           es: Información del comprador.
-          pt: Buyer's information.
+          pt: Informação do comprador.
         properties:
         - first_name:
             type: String
             description:
               en: Buyer's name.
               es: Nombre del comprador.
-              pt: Buyer's name.
+              pt: Nome do comprador.
         - last_name:
             type: String
             description:
               en: Buyer's last name.
               es: Apellido del comprador.
-              pt: Buyer's last name.
+              pt: Apelido do comprador.
         - phone:
             type: Object
             description:
               en: Buyer's phone.
               es: Teléfono del comprador.
-              pt: Buyer's phone.
+              pt: Telefone do comprador.
             properties:
             - area_code:
                 type: String
                 description:
                   en: Area code.
                   es: Código de área.
-                  pt: Area code.
+                  pt: Código de área.
             - number:
                 type: String
                 description:
                   en: Phone number.
                   es: Número telefónico.
-                  pt: Phone number.
+                  pt: Número de telefone.
         - address:
             type: Object
             description:
               en: Address.
               es: Dirección.
-              pt: Address.
+              pt: Endereço.
             properties:
             - zip_code:
                 type: String
                 description:
                   en: Zip code.
                   es: Código postal.
-                  pt: Zip code.
+                  pt: Código postal.
             - street_name:
                 type: String
                 description:
                   en: Street name.
                   es: Calle.
-                  pt: Street name.
+                  pt: Rua.
             - street_number:
                 type: Integer
                 description:
                   en: Number.
                   es: Número.
-                  pt: Number.
+                  pt: O Número.
         - registration_date:
             type: Date
             description:
               en: Date of registration of the buyer on your site.
               es: Fecha de registración del comprador en tu sitio.
-              pt: Date of registration of the buyer on your site.
+              pt: Data de cadastro do comprador em seu site.
     - shipments:
         type: Object
         description:
           en: Shipping information.
           es: Información de envío.
-          pt: Shipping information.
+          pt: Informações de envio.
         properties:
         - receiver_address:
             type: Object
             description:
               en: Buyer's address.
               es: Dirección del comprador.
-              pt: Buyer's address.
+              pt: Endereço do comprador.
             properties:
             - zip_code:
                 type: String
@@ -927,38 +928,38 @@ properties:
                 description:
                   en: Street name.
                   es: Calle.
-                  pt: Street name.
+                  pt: Rua.
             - street_number:
                 type: Integer
                 description:
                   en: Number
                   es: Número.
-                  pt: Number
+                  pt: O Número.
             - floor:
                 type: String
                 description:
                   en: Floor.
                   es: Piso.
-                  pt: Floor.
+                  pt: Apartamento.
             - apartment:
                 type: String
                 description:
                   en: Department.
                   es: Departmento.
-                  pt: Department.
+                  pt: Departamento.
     - barcode:
         type: Object
         description:
           en: Barcode information.
           es: Información de código de barra.
-          pt: Barcode information.
+          pt: Informação de código de barra.
         properties:
         - type:
             type: String
             description:
               en: Encoding type.
               es: Tipo de encoding.
-              pt: Encoding type.
+              pt: Tipo de encoding.
             enum:
             - UCC/EAN 128:
                 en: Encodes data using the Code 128 symbology.
@@ -977,16 +978,16 @@ properties:
             description:
               en: Barcode generated.
               es: Código de barras generado.
-              pt: Barcode generated.
+              pt: Código de barras gerado.
         - width:
             type: Integer
             description:
               en: Width of barcode.
               es: Ancho del código de barras.
-              pt: Width of barcode.
+              pt: Largura do código de barras.
         - height:
             type: Integer
             description:
               en: Height of barcode.
               es: Altura del código de barras.
-              pt: Height of barcode.
+              pt: Altura do código de barras.

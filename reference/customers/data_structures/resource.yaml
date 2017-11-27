@@ -37,13 +37,13 @@ properties:
         description:
           en: Phone's area code.
           es: Código de área.
-          pt: Phone's area code.
+          pt: Código de área.
     - number:
         type: String
         description:
           en: Phone's number.
           es: Número de teléfono.
-          pt: Phone's number.
+          pt: Número de telefone.
 - identification:
     type: Object
     description:
@@ -56,13 +56,13 @@ properties:
         description:
           en: Identification's type.
           es: Tipo de identificación.
-          pt: Identification's type.
+          pt: Tipo de identificação.
     - number:
         type: String
         description:
           en: Identification's number.
           es: Número de identificación.
-          pt: Identification's number.
+          pt: Número de identificação.
 - default_address:
     type: String
     description:
@@ -81,25 +81,25 @@ properties:
         description:
           en: Address ID.
           es: Identificador de la dirección del cliente.
-          pt: Address ID.
+          pt: Identificador do endereço do cliente.
     - zip_code:
         type: String
         description:
           en: Zip code.
           es: Código postal.
-          pt: Zip code.
+          pt: Código postal.
     - street_name:
         type: String
         description:
           en: Street name.
           es: Calle.
-          pt: Street name.
+          pt: Rua.
     - street_number:
         type: String
         description:
           en: Street number.
           es: Número.
-          pt: Street number.
+          pt: O Número.
 - date_registered:
     type: Date(ISO_8601)
     description:
@@ -148,162 +148,162 @@ properties:
         description:
           en: Card ID.
           es: Identificador de tarjeta.
-          pt: Card ID.
+          pt: Identificador de cartão.
     - customer_id:
         type: String
         description:
           en: Customer ID.
           es: Identificador de cliente.
-          pt: Customer ID.
+          pt: Identificador de cliente.
     - expiration_month:
         type: Integer
         description:
           en: Card's expiration month.
           es: Mes de expiración de la tarjeta.
-          pt: Card's expiration month.
+          pt: Mês de validade do cartão.
     - expiration_year:
         type: Integer
         description:
           en: Card's expiration year.
           es: Año de expiración de la tarjeta.
-          pt: Card's expiration year.
+          pt: Ano de validade do cartão.
     - first_six_digits:
         type: String
         description:
           en: Card's first six digits.
           es: Primeros seis dígitos de la tarjeta.
-          pt: Card's first six digits.
+          pt: Os primeiros seis dígitos do cartão.
     - last_four_digits:
         type: String
         description:
           en: Card's last four digits.
           es: Últimos cuatro dígitos de la tarjeta.
-          pt: Card's last four digits.
+          pt: Últimos quatro dígitos do cartão.
     - payment_method:
         type: Object
         description:
           en: Payment method information.
           es: Información de los medios de pago.
-          pt: Payment method information.
+          pt: Informação dos meios de pagamento.
         properties:
         - id:
             type: String
             description:
               en: Payment method ID.
               es: Identificador del medio de pago.
-              pt: Payment method ID.
+              pt: Id do meio de pagamento.
         - name:
             type: String
             description:
               en: Payment method name.
               es: Nombre del medio de pago.
-              pt: Payment method name.
+              pt: Nome do meio de pagamento.
         - payment_type_id:
             type: String
             description:
               en: Payment method type.
               es: Tipo del medio de pago.
-              pt: Payment method type.
+              pt: Tipo do meio de pagamento.
         - thumbnail:
             type: String
             description:
               en: Payment method thumbnail.
               es: Thumbnail del medio de pago.
-              pt: Payment method thumbnail.
+              pt: Thumbnail do meio de pagamento.
         - secure_thumbnail:
             type: String
             description:
               en: Payment method secure thumbnail.
               es: Secure thumbnail del medio de pago.
-              pt: Payment method secure thumbnail.
+              pt: Secure thumbnail do meio de pagamento.
     - security_code:
         type: Object
         description:
           en: Security code information.
           es: Información del código de seguridad.
-          pt: Security code information.
+          pt: Informação do código de segurança.
         properties:
         - length:
             type: Integer
             description:
               en: Security code's length.
               es: Longitud del código de seguridad.
-              pt: Security code's length.
+              pt: Comprimento do código de segurança.
         - card_location:
             type: String
             description:
               en: Security code's card location.
               es: Ubicación del código de seguridad en la tarjeta.
-              pt: Security code's card location.
+              pt: Localização do código de segurança no cartão.
     - issuer:
         type: Object
         description:
           en: Issuer information.
           es: Información del emisor.
-          pt: Issuer information.
+          pt: Informações do emitente.
         properties:
         - id:
             type: Integer
             description:
               en: Issuer Id.
               es: Identificador del emisor.
-              pt: Issuer Id.
+              pt: Id do remetente.
         - name:
             type: String
             description:
               en: Issuer name.
               es: Nombre del emisor.
-              pt: Issuer name.
+              pt: Nome do emitente.
     - cardholder:
         type: Object
         description:
           en: Card holder information.
           es: Información del dueño de la tarjeta.
-          pt: Card holder information.
+          pt: Informações do dono do cartão.
         properties:
         - name:
             type: Integer
             description:
               en: Card holder name.
               es: Nombre.
-              pt: Card holder name.
+              pt: O nome.
         - identification:
             type: Integer
             description:
               en: Identification information.
               es: Información de la identificación.
-              pt: Identification information.
+              pt: Informação de identificação.
             properties:
             - number:
                 type: Integer
                 description:
                   en: Identification number.
                   es: Número de indentificación.
-                  pt: Identification number.
+                  pt: Número de identificação.
             - subtype:
                 type: String
                 description:
                   en: Identification subtype.
                   es: Subtipo de identificación.
-                  pt: Identification subtype.
+                  pt: Subtipo de identificação.
             - type:
                 type: String
                 description:
                   en: Identification type.
                   es: Tipo de identificación.
-                  pt: Identification type.
+                  pt: Tipo de identificação.
     - date_created:
         type: Date(ISO_8601)
         description:
           en: Card's date created.
           es: Fecha de creación de la tarjeta.
-          pt: Card's date created.
+          pt: Data de criação do cartão.
     - date_last_updated:
         type: Date(ISO_8601)
         description:
           en: Card's last modified date.
           es: Última fecha de actualización de la tarjeta.
-          pt: Card's last modified date.
+          pt: Última data de atualização do cartão.
 - addresses:
     type: Object List
     description:
@@ -316,207 +316,207 @@ properties:
         description:
           en: Address ID.
           es: Identificador de la dirección.
-          pt: Address ID.
+          pt: Identificador de endereço.
     - phone:
         type: String
         description:
           en: Phone number.
           es: Número de teléfono.
-          pt: Phone number.
+          pt: Número de telefone.
     - name:
         type: String
         description:
           en: Address name.
           es: Nombre.
-          pt: Address name.
+          pt: O nome.
     - floor:
         type: String
         description:
           en: Floor.
           es: Piso.
-          pt: Floor.
+          pt: Apartamento.
     - apartment:
         type: String
         description:
           en: Apartment.
           es: Apartmento.
-          pt: Apartment.
+          pt: Apartamento.
     - street_name:
         type: String
         description:
           en: Street name.
           es: Calle.
-          pt: Street name.
+          pt: Rua.
     - street_number:
         type: Number
         description:
           en: Street number.
           es: Número.
-          pt: Street number.
+          pt: O Número.
     - zip_code:
         type: String
         description:
           en: Postal code of an Address.
           es: Código postal.
-          pt: Postal code of an Address.
+          pt: Código postal.
     - city:
         type: Object
         description:
           en: City information.
           es: Información de la ciudad.
-          pt: City information.
+          pt: Informações da cidade.
         properties:
         - id:
             type: String
             description:
               en: City ID.
               es: Identificador de la ciudad.
-              pt: City ID.
+              pt: Identificador da cidade.
         - name:
             type: String
             description:
               en: City name.
               es: Nombre de la ciudad.
-              pt: City name.
+              pt: Nome da cidade.
     - state:
         type: Object
         description:
           en: State information.
           es: Información de la provincia.
-          pt: State information.
+          pt: Informação da província.
         properties:
         - id:
             type: String
             description:
               en: State ID.
               es: Identificador de la provincia.
-              pt: State ID.
+              pt: Identificador da província.
         - name:
             type: String
             description:
               en: State name.
               es: Nombre de la provincia.
-              pt: State name.
+              pt: Nome da província.
     - country:
         type: Object
         description:
           en: Country information.
           es: Información del país.
-          pt: Country information.
+          pt: Informação do país.
         properties:
         - id:
             type: String
             description:
               en: Country ID.
               es: Identificador del país.
-              pt: Country ID.
+              pt: Identificador do país.
         - name:
             type: String
             description:
               en: Country name.
               es: Nombre del país.
-              pt: Country name.
+              pt: Nome do país.
     - neighborhood:
         type: Object
         description:
           en: Neighborhood information.
           es: Información del barrio.
-          pt: Neighborhood information.
+          pt: Informação do bairro.
         properties:
         - id:
             type: String
             description:
               en: Neighborhood ID.
               es: Identificador del barrio.
-              pt: Neighborhood ID.
+              pt: Id do bairro.
         - name:
             type: String
             description:
               en: Neighborhood name.
               es: Nombre del barrio.
-              pt: Neighborhood name.
+              pt: Nome do bairro.
     - municipality:
         type: Object
         description:
           en: Municipality information.
           es: Información de la municipalidad.
-          pt: Municipality information.
+          pt: Informação da prefeitura.
         properties:
         - id:
             type: String
             description:
               en: Municipality ID.
               es: Identificador de la municipalidad.
-              pt: Municipality ID.
+              pt: Id do município.
         - name:
             type: String
             description:
               en: Municipality name.
               es: Nombre de la municipalidad.
-              pt: Municipality name.
+              pt: Nome do município.
     - comments:
         type: String
         description:
           en: Additional information.
           es: Información adicional.
-          pt: Additional information.
+          pt: Informações adicionais.
     - date_created:
         type: String
         description:
           en: Address date created.
           es: Fecha de creación de la dirección.
-          pt: Address date created.
+          pt: Data de criação da diretoria.
     - verifications:
         type: Object
         description:
           en: The result of addresses validations.
           es: Resultado de la validación de direcciones.
-          pt: The result of addresses validations.
+          pt: Resultado da validação de endereços.
         properties:
         - shipment:
             type: Object
             description:
               en: Specifies whether the address is valid for shipments.
               es: Especifica si la dirección es válida para envíos.
-              pt: Specifies whether the address is valid for shipments.
+              pt: Especifica se o endereço é válido para embarques.
             properties:
             - success:
                 type: Boolean
                 description:
                   en: The result of the verification.
                   es: Resultado de la verificación.
-                  pt: The result of the verification.
+                  pt: Resultado da seleção.
             - errors:
                 type: List<Object>
                 description:
                   en: List errors.
                   es: Lista de errores.
-                  pt: List errors.
+                  pt: Lista de erros.
                 properties:
                 - code:
                     type: String
                     description:
                       en: Code error.
                       es: Código de error.
-                      pt: Code error.
+                      pt: Código de erro.
                 - description:
                     type: String
                     description:
                       en: Description error.
                       es: Descripción del error.
-                      pt: Description error.
+                      pt: Descrição do erro.
                 - field:
                     type: String
                     description:
                       en: Attribute name that does not pass validation.
                       es: El nombre del atributo no pasó la validación.
-                      pt: Attribute name that does not pass validation.
+                      pt: O nome do atributo não passou na validação.
         - name:
             type: String
             description:
               en: Municipality name.
               es: Nombre de la municipalidad.
-              pt: Municipality name.
+              pt: Nome do município.
 - live_mode:
     type: Boolean
     description:
