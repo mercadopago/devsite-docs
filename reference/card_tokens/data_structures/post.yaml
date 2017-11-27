@@ -12,134 +12,134 @@ errors:
 - 400 BAD_REQUEST:
   - '310':
       description:
-        en: Invalid parameter 'internal_client_id'
-        es: 'internal_client_id' inválido.
-        pt: Invalid parameter 'internal_client_id'
+        en: "Invalid parameter 'internal_client_id'"
+        es: "'internal_client_id' inválido."
+        pt: "Invalid parameter 'internal_client_id'"
   - '200':
       description:
-        en: The parameter 'public_key' can not be null or empty.
-        es: El parámetro 'public_key' no puede ser nulo ni vacío.
-        pt: The parameter 'public_key' can not be null or empty.
+        en: "The parameter 'public_key' can not be null or empty."
+        es: "El parámetro 'public_key' no puede ser nulo ni vacío."
+        pt: "The parameter 'public_key' can not be null or empty."
   - '302':
       description:
-        en: Invalid parameter 'public_key'.
-        es: 'public_key' inválido.
-        pt: Invalid parameter 'public_key'.
+        en: "Invalid parameter 'public_key'."
+        es: "'public_key' inválido."
+        pt: "Invalid parameter 'public_key'."
   - '219':
       description:
-        en: The parameter 'client_id' can not be null or empty.
-        es: El parámetro 'client_id' no puede ser nulo ni vacío.
-        pt: The parameter 'client_id' can not be null or empty.
+        en: "The parameter 'client_id' can not be null or empty."
+        es: "El parámetro 'client_id' no puede ser nulo ni vacío."
+        pt: "The parameter 'client_id' can not be null or empty."
   - '315':
       description:
-        en: Invalid parameter 'site_id'.
-        es: 'site_id' inválido.
-        pt: Invalid parameter 'site_id'.
+        en: "Invalid parameter 'site_id'."
+        es: "'site_id' inválido."
+        pt: "Invalid parameter 'site_id'."
   - '222':
       description:
-        en: The parameter 'site_id' is a required field (not null or empty).
-        es: El parámetro 'site_id' es requerido y no puede ser nulo ni vacío.
-        pt: The parameter 'site_id' is a required field (not null or empty).
+        en: "The parameter 'site_id' is a required field (not null or empty)."
+        es: "El parámetro 'site_id' es requerido y no puede ser nulo ni vacío."
+        pt: "The parameter 'site_id' is a required field (not null or empty)."
   - '318':
       description:
-        en: Invalid parameter 'card_number_id'.
-        es: 'card_number_id' inválido.
-        pt: Invalid parameter 'card_number_id'.
+        en: "Invalid parameter 'card_number_id'."
+        es: "'card_number_id' inválido."
+        pt: "Invalid parameter 'card_number_id'."
   - '304':
       description:
-        en: Invalid parameter 'card_number_length'.
-        es: 'card_number_length' inválido.
-        pt: Invalid parameter 'card_number_length'.
+        en: "Invalid parameter 'card_number_length'."
+        es: "'card_number_length' inválido."
+        pt: "Invalid parameter 'card_number_length'."
   - '703':
       description:
-        en: Invalid length for field 'card_number_length'.
-        es: Longitud inválida para el parámentro 'card_number_length'.
-        pt: Invalid length for field 'card_number_length'.
+        en: "Invalid length for field 'card_number_length'."
+        es: "Longitud inválida para el parámentro 'card_number_length'."
+        pt: "Invalid length for field 'card_number_length'."
   - '319':
       description:
-        en: Invalid parameter 'trunc_card_number'.
-        es: 'trunc_card_number' inválido.
-        pt: Invalid parameter 'trunc_card_number'.
+        en: "Invalid parameter 'trunc_card_number'."
+        es: "'trunc_card_number' inválido."
+        pt: "Invalid parameter 'trunc_card_number'."
   - '701':
       description:
-        en: invalid length for field 'trunc_card_number'.
-        es: Longitud inválida para el parámentro 'trunc_card_number'.
-        pt: invalid length for field 'trunc_card_number'.
+        en: "invalid length for field 'trunc_card_number'."
+        es: "Longitud inválida para el parámentro 'trunc_card_number'."
+        pt: "invalid length for field 'trunc_card_number'."
   - '321':
       description:
-        en: Invalid parameter 'security_code_id'.
-        es: 'security_code_id' inválido.
-        pt: Invalid parameter 'security_code_id'.
+        en: "Invalid parameter 'security_code_id'."
+        es: "'security_code_id' inválido."
+        pt: "Invalid parameter 'security_code_id'."
   - '700':
       description:
-        en: invalid length for field 'security_code_id'.
-        es: Longitud inválida para el parámentro 'security_code_id'.
-        pt: invalid length for field 'security_code_id'.
+        en: "invalid length for field 'security_code_id'."
+        es: "Longitud inválida para el parámentro 'security_code_id'."
+        pt: "invalid length for field 'security_code_id'."
   - '307':
       description:
-        en: Invalid parameter 'security_code_length'.
-        es: 'security_code_length' inválido.
-        pt: Invalid parameter 'security_code_length'.
+        en: "Invalid parameter 'security_code_length'."
+        es: "'security_code_length' inválido."
+        pt: "Invalid parameter 'security_code_length'."
   - '704':
       description:
-        en: invalid length for field 'security_code_length'.
-        es: Longitud inválida para el parámentro 'security_code_length'.
-        pt: invalid length for field 'security_code_length'.
+        en: "invalid length for field 'security_code_length'."
+        es: "Longitud inválida para el parámentro 'security_code_length'."
+        pt: "invalid length for field 'security_code_length'."
   - '305':
       description:
-        en: Invalid cardholder structure.
-        es: cardholder inválido.
-        pt: Invalid cardholder structure.
+        en: "Invalid cardholder structure."
+        es: "cardholder inválido."
+        pt: "Invalid cardholder structure."
   - '210':
       description:
-        en: The structure 'cardholder' can not be null.
-        es: La estructura 'cardholder' no puede ser nula.
-        pt: The structure 'cardholder' can not be null.
+        en: "The structure 'cardholder' can not be null."
+        es: "La estructura 'cardholder' no puede ser nula."
+        pt: "The structure 'cardholder' can not be null."
   - '316':
       description:
-        en: Invalid parameter 'cardholder.name'
-        es: 'cardholder.name' inválido.
-        pt: Invalid parameter 'cardholder.name'
+        en: "Invalid parameter 'cardholder.name'"
+        es: "'cardholder.name' inválido."
+        pt: "Invalid parameter 'cardholder.name'"
   - '211':
       description:
-        en: The structure 'cardholder.identification' can not be null.
-        es: La estructura 'cardholder.identification' no puede ser nula.
-        pt: The structure 'cardholder.identification' can not be null.
+        en: "The structure 'cardholder.identification' can not be null."
+        es: "La estructura 'cardholder.identification' no puede ser nula."
+        pt: "The structure 'cardholder.identification' can not be null."
   - '322':
       description:
-        en: Invalid parameter 'cardholder.identification.type'.
-        es: 'cardholder.identification.type' inválido.
-        pt: Invalid parameter 'cardholder.identification.type'.
+        en: "Invalid parameter 'cardholder.identification.type'."
+        es: "'cardholder.identification.type' inválido."
+        pt: "Invalid parameter 'cardholder.identification.type'."
   - '323':
       description:
-        en: Invalid parameter 'cardholder.identification.subtype'.
-        es: 'cardholder.identification.subtype' inválido.
-        pt: Invalid parameter 'cardholder.identification.subtype'.
+        en: "Invalid parameter 'cardholder.identification.subtype'."
+        es: "'cardholder.identification.subtype' inválido."
+        pt: "Invalid parameter 'cardholder.identification.subtype'."
   - '213':
       description:
-        en: The parameter 'cardholder.identification.subtype' can not be null or empty
-        es: El parámetro 'cardholder.identification.subtype' no puede ser nulo ni vacío.
-        pt: The parameter 'cardholder.identification.subtype' can not be null or empty
+        en: "The parameter 'cardholder.identification.subtype' can not be null or empty"
+        es: "El parámetro 'cardholder.identification.subtype' no puede ser nulo ni vacío."
+        pt: "The parameter 'cardholder.identification.subtype' can not be null or empty"
   - '324':
       description:
-        en: Invalid parameter 'cardholder.identification.number'.
-        es: 'cardholder.identification.number' inválido.
-        pt: Invalid parameter 'cardholder.identification.number'.
+        en: "Invalid parameter 'cardholder.identification.number'."
+        es: "'cardholder.identification.number' inválido."
+        pt: "Invalid parameter 'cardholder.identification.number'."
   - '325':
       description:
-        en: Invalid parameter 'expiration_month'.
-        es: 'expiration_month' inválido.
-        pt: Invalid parameter 'expiration_month'.
+        en: "Invalid parameter 'expiration_month'."
+        es: "'expiration_month' inválido."
+        pt: "Invalid parameter 'expiration_month'."
   - '326':
       description:
-        en: Invalid parameter 'cardExpirationYear'.
-        es: 'cardExpirationYear' inválido.
-        pt: Invalid parameter 'cardExpirationYear'.
+        en: "Invalid parameter 'cardExpirationYear'."
+        es: "'cardExpirationYear' inválido."
+        pt: "Invalid parameter 'cardExpirationYear'."
   - '702':
       description:
-        en: Invalid parameter 'expiration_year'.
-        es: 'expiration_year' inválido.
-        pt: Invalid parameter 'expiration_year'.
+        en: "Invalid parameter 'expiration_year'."
+        es: "'expiration_year' inválido."
+        pt: "Invalid parameter 'expiration_year'."
   - '301':
       description:
         en: Invalid expiration date.
@@ -147,14 +147,14 @@ errors:
         pt: Invalid expiration date.
   - '317':
       description:
-        en: Invalid parameter 'card_id'.
-        es: 'card_id' inválido.
-        pt: Invalid parameter 'card_id'.
+        en: "Invalid parameter 'card_id'."
+        es: "'card_id' inválido."
+        pt: "Invalid parameter 'card_id'."
   - '320':
       description:
-        en: Invalid parameter 'luhn_validation'.
-        es: 'luhn_validation' inválido.
-        pt: Invalid parameter 'luhn_validation'.
+        en: "Invalid parameter 'luhn_validation'."
+        es: "'luhn_validation' inválido."
+        pt: "Invalid parameter 'luhn_validation'."
   - E111:
       description:
         en: invalid json.

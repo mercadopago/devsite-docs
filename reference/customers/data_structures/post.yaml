@@ -38,9 +38,9 @@ errors:
         pt: missing customer id.
   - '103':
       description:
-        en: 'parameter must be an object '.
-        es: 'El parámetro debe ser un objeto '.
-        pt: 'parameter must be an object '.
+        en: 'parameter must be an object '
+        es: 'El parámetro debe ser un objeto '
+        pt: 'parameter must be an object '
   - '104':
       description:
         en: parameter length is too large.
