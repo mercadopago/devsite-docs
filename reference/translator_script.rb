@@ -37,28 +37,7 @@ module Translator
       end
     end
     return resource
-  end
-
-  # if resource["properties"]
-  #   processed_resource["properties"] = Array.new 
-  #   resource["properties"].each do |property| 
-  #     property.each do |name, attributes|
-  #       spanish = attributes["description"]["es"]
-  #       portuguese = self.yandex_translate(spanish, "es-pt")
-  #       property[name]["description"]["pt"] = portuguese
-
-  #     end 
-  #   end
-
-  # end
-
-  # resource["properties"].each do |property, index|
-  #   property.each do |key, values|
-  #     spanish = values["description"]["es"]
-  #     portuguese = self.yandex_translate(spanish, "es-pt")
-  #     processed_resource["properties"][index][key]["description"]["pt"] = portuguese
-  #   end
-  # end
+  end 
 
   def self.yandex_translate(text, lang) 
     service_uri = 'https://translate.yandex.net/api/v1.5/tr.json/translate?'
@@ -81,8 +60,6 @@ module Translator
     self.do_translation
   end
 
-
-  #origin_files.map { |f| YAML.load_file(f) }
 end
 
 Translator.run
