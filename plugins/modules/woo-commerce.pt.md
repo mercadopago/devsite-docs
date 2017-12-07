@@ -62,7 +62,7 @@ O módulo do Mercado Pago para WooCommerce é integrado com as seguintes funcion
 * Log e ferramentas de debug
 
 # Instalação
-Se você já tiver este módulo instalado, por favor, siga as <a href="https://github.com/mercadopago/cart-woocommerce/wiki/Atualização">Instruções de Atualização</a> antes.
+Se você já tiver este módulo instalado, por favor, siga as [Instruções de Atualização](#atualização) antes.
 
 Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fazendo o download manual e copiando o diretório do módulo.
 
