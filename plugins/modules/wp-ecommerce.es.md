@@ -8,7 +8,7 @@
   * [Configurando la Tarjeta de Crédito](#configurando-la-tarjeta-de-crédito)
   * [Configurando los Tickets](#configurando-los-tickets)
 * Checkout Básico
-  * [Configurando el Checkout por Redirect, Iframe o LightBox](#configurando-el-checkout-por-redirect,-iframe-o-lightbox)
+  * [Configurando el Checkout por Redirect, Iframe o LightBox](#configurando-el-checkout-por-redirect-iframe-o-lightbox)
 * [Configuraciones de las Notificaciones Instantáneas de Pago](#configuraciones-de-las-notificaciones-instantáneas-de-pago)
 * [Actualización](#actualización)
 * [FAQ](#faq)
