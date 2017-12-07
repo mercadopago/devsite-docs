@@ -123,7 +123,7 @@ Esta página explicará como configurar o módulo para aceitar pagamentos com o 
 
 ![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_checkout_config.png)
 
-Se você configurou adequadamente suas credenciais em [Instruções de Atualização](#Configurações-Gerais-do-Mercado-Pago), então você pode agora customizar seu checkout por cartão de crédito:
+Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por cartão de crédito:
 
 ### Interface do Checkout
 Como o checkout é mostrado.
@@ -141,7 +141,7 @@ Esta página explicará como configurar o módulo para aceitar pagamentos com o 
 
 ![Ticket Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/ticket_checkout_config.png)
 
-Se você configurou adequadamente suas credenciais em [Instruções de Atualização](#Configurações-Gerais-do-Mercado-Pago), então você pode agora customizar seu checkout por boleto:
+Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por boleto:
 
 ### Interface do Checkout
 Como o checkout é mostrado.
@@ -159,7 +159,7 @@ Esta página explicará como configurar o módulo para aceitar os pagamentos com
 
 ![Installation Instructions](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_config.png)
 
-Se você configurou adequadamente suas credenciais em [Instruções de Atualização](#Configurações-Gerais-do-Mercado-Pago), então você pode agora customizar seu checkout por cartão de crédito:
+Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por cartão de crédito:
 
 ### Interface do Checkout
 Como o checkout é mostrado.
@@ -183,7 +183,29 @@ Como a opção de pagamento se comporta.
   * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem boletos como método de pagamento;
   * *Modo Dois Cartões*: Habilite para permitir que seus clientes paguem com dois cartões diferentes.
 
+# Configurando o Mercado Envios
+Esta página irá explicar como configurar o módulo para aceitar o Mercado Envios.
 
+### Habilite Seu Mercado Envios
+Para usar o Mercado Envios, você precisa habilitá-lo em sua conta do Mercado Pago. Você pode fazê-lo, de acordo com seu país, nos seguintes links:
+  * *Argentina*: http://shipping.mercadopago.com.ar/optin/doOptin
+  * *Brazil*: http://shipping.mercadopago.com.br/optin/doOptin
+  * *Mexico*: http://shipping.mercadopago.com.mx/optin/doOptin
+
+### Crie a Zona de Envio e os Métodos de Envío
+Para usar o Mercado Envios, você precisa que ele seja configurado como método de envio do WooCommerce. Basta seguir as seguintes etapas:
+
+1. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Entrega*. Em *Zona de Envio*, clique em *Adicionar zona de envio*. Digite o nome da zona, selecione as regiões dentro desta zona e clique em *Salvar Alterações*.<br>![Mercado Envios 0](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_0.png)
+2. Clique em *ver* da zona criada.<br>![Mercado Envios 1](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_1.png)
+3. Clique em *Adicionar método de envio* e selecione *Mercado Envios - Normal* ou *Mercado Envios - Express*. Este processo deve ser repetido duas vezes, até que as opções "normal" e "express" estejam selecionadas.<br>![Mercado Envios 2](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_2.png)
+4. Você pode configurar também as opções *Envio Gratuito* e/ou mostrar o *Tempo de Entrega* estimado no cálculo de envio.<br>![Mercado Envios 3](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_3.png)
+5. O Mercado Envios está pronto para uso, mas não se esqueça de habilitar o *Checkout Básico* para a correta operação do *Mercado Envios* e de informar as medidas do seu produto.<br>![Mercado Envios 4](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_4.png)
+
+> IMPORTANTE 1: Sua conta do Mercado Pago precisa ser uma *Seller Account*;
+
+> IMPORTANTE 2: No momento, o Mercado Envios está disponível apenas para Argentina, Brasil, e México, e pode ser utilizado apenas com o Checkout Básico;
+
+> IMPORTANTE 3: O produto enviado deve ter suas dimensões (largura, altura, comprimento e peso) adequadamente configurados e dentro das [regras e limites suportados](https://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso) pelo país especificado.
 
 
 
