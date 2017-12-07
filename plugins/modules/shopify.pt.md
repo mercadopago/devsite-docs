@@ -1,35 +1,35 @@
 # Shopify - Mercado Pago Module
 ---
 
-* Features
-* Installation and Configuration
-* Feedback
+* [Funcionalidades](#Funcionalidades)
+* [Instalação e Configuração](#Instalação-e-Configuração)
+* [Suporte](#Suporte)
 
-## Features:
+<a name="Funcionalidades"></a>
+### Funcionalidades:
 
-### Standard Checkout
+**Checkout básico**
 
-Great for merchants who want to get going quickly and easily.
+Ótimo para os vendedores que querem começar a vender rápido e facil.
 
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
+* Fácil integração do site - nenhuma linha de código necessária.
+* Controle limitado da experiência de compra.
+* Pagamento com um click.
+* Aceite pagamentos com boleto, dinheiro em conta do Mercado Pago e cartão de crédito.
 
-_Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela_
+_Disponível para Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay e Venezuela_
 
-
-### Installation and Configuration:
+<a name="Instalação-e-Configuração"></a>
+### Instalação e Configuração:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
 
-1. In your Shopify admin panel, go to the menu **Settings > Payments**.
-2. In Accept credit cards, select **MercadoPago**.
-3. Fill the **CLIENT ID** and **CLIENT SECRET**. To get them, go to:
+1. No seu painel de administração do Shopify, va até o menu **Settings > Payments**.
+2. Em **Accept credit cards**, selecione **Mercado Pago**.
+3. Preencha o **CLIENT ID** e **CLIENT SECRET**. Para você obter as credenciais, acesse:
 
   * Argentina: https://www.mercadopago.com/mla/account/credentials?type=basic
-  * Brazil: https://www.mercadopago.com/mlb/account/credentials?type=basic
+  * Brasil: https://www.mercadopago.com/mlb/account/credentials?type=basic
   * Chile: https://www.mercadopago.com/mlc/account/credentials?type=basic
   * Colombia: https://www.mercadopago.com/mco/account/credentials?type=basic
   * Mexico: https://www.mercadopago.com/mlm/account/credentials?type=basic
@@ -37,14 +37,19 @@ _Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Ven
   * Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=basic
   * Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=basic
 
-4. Click the button "**Activate**".
+4. Click no botão "**Activate**" para salvar.
 
-Congrats! **MercadoPago** was installed and configured!
+5. Parabéns! o **Mercado Pago** foi instalado e configurado.
 
 
-## Feedback
+<a name="Suporte"></a>
+## Suporte: ##
 
-We want to know your opinion, please answer the following form.
+Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento. 
+Envie um email para modulos@mercadopago.com com as seguintes informações:
 
-* [Portuguese](http://goo.gl/forms/2n5jWHaQbfEtdy0E2)
-* [Spanish](http://goo.gl/forms/A9bm8WuqTIZ89MI22)
+* Email da sua conta Mercado Pago.
+* Detalhes sobre a sua duvida, problema ou erro.
+* Arquivos que possa ajudar no entendimento (Print-Screen, Video, Arquivos de Log, etc).
+
+Não se preocupe... Iremos ajuda-lo o mais rápido possível.

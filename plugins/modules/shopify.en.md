@@ -1,11 +1,12 @@
 # Shopify - Mercado Pago Module
 ---
 
-* Features
-* Installation and Configuration
-* Feedback
+* [Features](#Features)
+* [Installation and Configuration](#Install-and-Configuration)
+* [Support](#Support)
 
-## Features:
+<a name="Features"></a>
+## Features: ##
 
 ### Standard Checkout
 
@@ -19,8 +20,8 @@ Great for merchants who want to get going quickly and easily.
 
 _Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela_
 
-
-### Installation and Configuration:
+<a name="Install-and-Configuration"></a>
+## Installation and Configuration: ##
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
 
@@ -39,12 +40,18 @@ _Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Ven
 
 4. Click the button "**Activate**".
 
-Congrats! **MercadoPago** was installed and configured!
+5. Congrats! **MercadoPago** was installed and configured!
 
 
-## Feedback
+<a name="Support"></a>
+## Support: ##
 
-We want to know your opinion, please answer the following form.
+## Support: ##
 
-* [Portuguese](http://goo.gl/forms/2n5jWHaQbfEtdy0E2)
-* [Spanish](http://goo.gl/forms/A9bm8WuqTIZ89MI22)
+If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
+
+* Email of your account Mercado Pago.
+* Details about your question, problem or error.
+* Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
+
+Don't worry... We will help you as soon as possible.
