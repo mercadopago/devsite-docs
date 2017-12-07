@@ -13,7 +13,7 @@
   * [Configuring Mercado Envios](#configuring-mercado-envios)
   * [Configuring Subscriptions](#configuring-subscriptions)
 * [Instant Payment Notification Settings](#instant-payment-notification-settings)
-* [Upgrade](#Upgrade)
+* [Upgrade](#upgrade)
 * [FAQ](#faq)
 * [Technical Support](#technical-support)
 * [How to Contribute](#how-to-contribute)
@@ -77,7 +77,7 @@ The module of Mercado Pago for WooCommerce is integrated with the following feat
 * Discounts by payment method or Mercado Pago coupon
 * Log and debug tools
 
-# installation
+# Installation
 If you have already the module installed, please follow the [Upgrade Instructions](#Upgrade) first.
 
 You have two options to install this module: from your WordPress Store, or by downloading and manually copying the module directory.
