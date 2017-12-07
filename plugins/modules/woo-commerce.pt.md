@@ -251,7 +251,6 @@ Como a opção de pagamento se comporta.
 
 ### Criando um Produto Assinável
 Uma assinatura precisa de um tipo especial de produto, que deve ser vendido periodicamente. Você pode configurar um produto para ser assinável seguindo as seguintes etapas:
-
 1. Vá para *Produtos* no menu lateral e clique no botão *Adicionar Produto*. A página aberta deve conter os detalhes e os campos do produto na janela *Dados do Produto*;<br>![Subscription Checkout Product](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/subscription_checkout_product.png)
 2. Complete as informações do seu produto (nome, preço, imagens, etc.) e, em seguida, marque a caixa *Produto Recorrente*;
 3. Preencha os campos de informação para a assinatura: *Frequência* (frequência com que as cobranças serão feitas ao seu cliente), *Tipo de Frequência* (o tipo da frequência pode estar em [Dias] ou [Meses]) e *Data Final* (data em que a assinatura deve terminar).
