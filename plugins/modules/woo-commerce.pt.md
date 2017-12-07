@@ -4,16 +4,19 @@
 * [Requisitos de Sistema](#requisitos-de-sistema)
 * [Funcionalidades](#funcionalidades)
 * [Instalação](#instala%C3%A7%C3%A3o)
-* [Atualização](#atualização)
-* Checkout Custom (Transparente)
-  * [Configurando Cartão de Crédito e Boleto](#configurando-o-cartão-de-crédito)
+* [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago)
+* Checkout Transparente
+  * [Configurando o Cartão de Crédito](#configurando-o-cartão-de-crédito)
+  * [Configurando os Boletos](#configurando-os-boletos)
 * Checkout Básico
-  * [Configurando o Checkout Redirect, Iframe e LightBox](https://github.com/marcelohama/cart-woocommerce/wiki/Configurando-o-Checkout-Cl%C3%A1ssico-(Redirect,-Iframe-e-LightBox))
-  * [Configurando o Mercado Envios](https://github.com/marcelohama/cart-woocommerce/wiki/Configurando-o-Mercado-Envios)
-  * [Configurando o Pagamento Recorrente](https://github.com/marcelohama/cart-woocommerce/wiki/Configurando-o-Pagamento-Recorrente)
-* [Configurações de status de Notificações de Pagamento](https://github.com/marcelohama/cart-woocommerce/wiki/Configurações-de-status-de-Notificações-de-Pagamento)
-* [FAQ](https://github.com/marcelohama/cart-woocommerce/wiki/FAQ-Portugues)
-* [Suporte](https://github.com/marcelohama/cart-woocommerce/wiki/Suporte)
+  * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#Configurando-o-Checkout-por-Redirect,-Iframe,-ou-LightBox)
+  * [Configurando o Mercado Envios](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Mercado-Envios)
+  * [Configurando as Assinaturas](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-as-Assinaturas)
+* [Configurações das Notificações Instantâneas de Pagamento](https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-das-Notificações-Instantâneas-de-Pagamento)
+* [Atualização](https://github.com/mercadopago/cart-woocommerce/wiki/Atualização)
+* [FAQ](https://github.com/mercadopago/cart-woocommerce/wiki/FAQ-Portuguese)
+* [Suporte Técnico](https://github.com/mercadopago/cart-woocommerce/wiki/Suporte-Técnico)
+* [Como Contribuir](https://github.com/mercadopago/cart-woocommerce/wiki/Como-Contribuir)
 
 # Requisitos de Sistema
 ### Versões de Plataforma
