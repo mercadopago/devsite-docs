@@ -207,11 +207,60 @@ Para usar o Mercado Envios, você precisa que ele seja configurado como método 
 
 > IMPORTANTE 3: O produto enviado deve ter suas dimensões (largura, altura, comprimento e peso) adequadamente configurados e dentro das [regras e limites suportados](https://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso) pelo país especificado.
 
+# Configurando as Assinaturas
+Esta página explicará como configurar o módulo para aceitar pagamentos recorrentes de assinaturas. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Assinaturas*. Você deve obter a seguinte página:
 
+![Subscription Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/subscription_checkout_config.png)
 
-  * [Configurando o Mercado Envios](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Mercado-Envios)
-  * [Configurando as Assinaturas](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-as-Assinaturas)
-* [Configurações das Notificações Instantâneas de Pagamento](https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-das-Notificações-Instantâneas-de-Pagamento)
+Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por cartão de crédito:
+
+### Interface do Checkout
+Como o checkout é mostrado.
+  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
+  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes;
+  * *Método de Integração*: Como seus clientes irão interagir com o Mercado Pago para pagar os pedidos;
+  * *Largura do iFrame*: A largura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
+  * *Altura do iFrame*: A altura, em pixels, do iFrame (usado apenas com o método de integração por iFrame).
+
+### Navegação do Checkout
+Como a navegação do checkout irá se comportar.
+  * *URL de Notificação Instantânea de Pagamento (IPN)*: Nesta parte, você pode verificar sua URL de IPN, onde você receberá as notificações das atualizações de pagamento. Para esta solução, você precisa configurar uma URL de IPN em sua conta do Mercado Pago. Anote sua URL, clique no link do seu país e coloque o URL no campo solicitado. Então salve-o;
+  * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
+  * *URL de Falha*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for recusado. Deixe em branco para redirecionar para a loja;
+  * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja.
+
+### Opções de Pagamento
+Como a opção de pagamento se comporta.
+  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles façam uma assinatura;
+
+# Criando um Produto Assinável
+Uma assinatura precisa de um tipo especial de produto, que deve ser vendido periodicamente. Você pode configurar um produto para ser assinável seguindo as seguintes etapas:
+
+1. Vá para *Produtos* no menu lateral e clique no botão *Adicionar Produto*. A página aberta deve conter os detalhes e os campos do produto na janela *Dados do Produto*;<br>![Subscription Checkout Product](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/subscription_checkout_product.png)
+2. Complete as informações do seu produto (nome, preço, imagens, etc.) e, em seguida, marque a caixa *Produto Recorrente*;
+3. Preencha os campos de informação para a assinatura: *Frequência* (frequência com que as cobranças serão feitas ao seu cliente), *Tipo de Frequência* (o tipo da frequência pode estar em [Dias] ou [Meses]) e *Data Final* (data em que a assinatura deve terminar).
+
+> IMPORTANTE: Uma assinatura deve ser exclusiva no carrinho do cliente. Os clientes só podem assinar um produto de cada vez e este não pode ser misturado com outros produtos não assináveis.
+
+# Configurações das Notificações Instantâneas de Pagamento
+Notificação Instantânea de Pagamento (IPN) é um mecanismo que permite que sua loja receba mensagens do servidor do Mercado Pago informando o estado de um determinado pagamento. Neste plugin, você não precisa se preocupar com a configuração da IPN pois ela já está implementada e configurada.
+
+### Configurando a IPN para Assinaturas
+Assinaturas é o único gateway que você deve configurar a IPN para receber corretamente as notificações em seu servidor. Para configurá-lo, faça o seguinte:
+
+1. Na administração da sua loja, acesse *WooCommerce > Configurações > Checkout* e depois, nas opções de gateway listadas, selecione *Mercado Pago - Assinaturas*;
+
+2. Anote a URL informada no campo *URL de Notificação Instantânea de Pagamento (IPN)* e acesse o ambiente da IPN/Webhook para seu país: [Argentina](https://www.mercadopago.com.ar/ipn-notifications), [Brasil](https://www.mercadopago.com.br/ipn-notifications), ou [México](https://www.mercadopago.com.mx/ipn-notifications);
+
+3. Insira a URL no campo e clique no botão *salvar*. Você receberá uma mensagem informando se o Mercado Pago acessou seu servidor corretamente e recebeu uma resposta válida. Se tudo estiver OK, você deve receber uma mensagem de confirmação.
+
+> DICA 1: Ao configurar ou testar sua IPN/Webhooks e comunicações de servidor, certifique-se de que seu servidor possa acessar o servidor Mercado Pago.
+
+> DICA 2: Tenha certeza de que seu firewall tenha o conjunto dos [IPs do Mercado Pago](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) dentro de sua white-list.
+
+> DICA 3: Observe que o Mercado Pago usa o protocolo TSL versão 1.0, logo seu servidor precisa suportar/aceitar conexões com esta versão do protocolo.
+
+> DICA 4: Tenha certeza de que nenhum outro plugin do WordPress esteja bloqueando o Mercado Pago.
 
 # Atualização
 Se você já instalou uma versão anterior do WooCommerce MercadoPago, siga as instruções. Da mesma forma como foi a instalação, novamente você tem duas opções: da sua loja do WordPress ou baixando e copiando manualmente o diretório do módulo.
