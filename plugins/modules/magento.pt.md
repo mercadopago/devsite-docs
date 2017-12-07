@@ -131,6 +131,39 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 4. Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
 
+<a name="Atualização"></a>
+## Atualização: ##
+
+Caso você ja possua o módulo do Mercado Pago e deseja instalar uma versão mais atual do módulo, aconselhamos remover todos os arquivos relacionados aos módulo anterior.
+
+A lista de arquivos e pasta a ser removida:
+
+* app/code/community/MercadoPago
+* app/design/adminhtml/default/default/layout/mercadopago.xml
+* app/design/frontend/base/default/layout/mercadopago.xml
+* app/design/adminhtml/default/default/template/mercadopago
+* app/design/frontend/base/default/template/mercadopago
+* js/mercadopago
+* skin/adminhtml/default/default/mercadopago
+* skin/frontend/base/default/mercadopago
+* lib/MercadoPago
+* app/etc/modules/MercadoPago_Core.xml
+* app/etc/modules/MercadoPago_MercadoEnvios.xml
+* app/etc/modules/MercadoPago_OneStepCheckout.xml
+* app/locale/en_US/MercadoPago_Core.csv
+* app/locale/es_AR/MercadoPago_Core.csv
+* app/locale/es_CL/MercadoPago_Core.csv
+* app/locale/es_CO/MercadoPago_Core.csv
+* app/locale/es_ES/MercadoPago_Core.csv
+* app/locale/es_MX/MercadoPago_Core.csv
+* app/locale/es_VE/MercadoPago_Core.csv
+* app/locale/pt_BR/MercadoPago_Core.csv
+
+Depois de feito esse processo, execute o processo de **Instalação**.
+
+> Lembre-se sempre de realizar um backup da sua loja antes de fazer qualquer alteração.
+
+
 <a name="Config-Checkout-Custom-Cartão-Crédito-e-Boleto"></a>
 ## Configurando Cartão de Crédito e Boleto: ##
 
