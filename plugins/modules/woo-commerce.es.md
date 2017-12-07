@@ -63,10 +63,10 @@ El módulo de Mercado Pago para WooCommerce está integrado con las siguientes c
 * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
 
 ### Checkout Personalizado
-* [Pago con Tarjeta de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>[[/images/wiki3/custom_checkout_form.png|Checkout Personalizado]]
-* [Pago con Un Clic (Tarjeta del Cliente)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>[[/images/wiki3/oneclick_form.png|Pago con Un Clic]]
+* [Pago con Tarjeta de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Checkout Personalizado](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_checkout_form.png)
+* [Pago con Un Clic (Tarjeta del Cliente)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![Pago con Un Clic](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/oneclick_form.png)
 * [Reembolsos/Cancelaciones de Pagos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-* [Otros Medios de Pago, Como los Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>[[/images/wiki3/ticket.png|Tickets]]
+* [Otros Medios de Pago, Como los Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/ticket.png)
 
 ### Otras Funcionalidades
 * Verificaciones de credenciales y estado de la plataforma
