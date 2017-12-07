@@ -40,7 +40,7 @@ Módulo de integração do Mercado Pago para WooCommerce
 O módulo do Mercado Pago para WooCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
 ### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces pré-construídas do Mercado Pago<br>[[/images/wiki3/basic_checkout_payment.png|Basic Checkout]]
+* Interfaces pré-construídas do Mercado Pago<br>![Mercado Pago](https://raw.githubusercontent.com/mercadopago/cart-woocommerce/master/assets/images/wiki3/basic_checkout_payment.png)
 * [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 * Divisão de Pagamento (Dois Cartões)
 * [Assinaturas](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
