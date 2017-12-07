@@ -1,18 +1,18 @@
 # Magento - Mercado Pago Module (v1.8.x to 1.9.x)
 
-* [Requirements](Requirements)
-* [Features](Features)
-* [Installation](Installation)
-* [Upgrade](Upgrade)
+* [Requirements](#Requirements)
+* [Features](#Features)
+* [Installation](#Installation)
+* [Upgrade](#Upgrade)
 * Checkout Custom
-  * [Configure Credit Card and Ticket](Configure-Credit-Card-and-Ticket)
+  * [Configure Credit Card and Ticket](#Configure-Credit-Card-and-Ticket)
 * Basic Checkout
-  * [Configure Checkout Redirect, Iframe, and LightBox](Configure-Checkout-Redirect,-Iframe-and-LightBox)
-  * [Configure Mercado Envios](Configure-Mercado-Envios)
-  * [Configure Subscriptions](Configure-Subscriptions)
-* [Payment Notification status Settings](Payment-Notification-status-settings)
-* [FAQ](FAQ-English)
-* [Support](Support)
+  * [Configure Checkout Redirect, Iframe, and LightBox](#Configure-Checkout-Redirect,-Iframe-and-LightBox)
+  * [Configure Mercado Envios](#Configure-Mercado-Envios)
+  * [Configure Subscriptions](#Configure-Subscriptions)
+* [Payment Notification status Settings](#Payment-Notification-status-settings)
+* [FAQ](#FAQ)
+* [Support](#Support)
 
 
 <a name="Requirements"></a>
