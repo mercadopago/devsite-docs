@@ -292,6 +292,67 @@ Para confirmar que seu módulo está realmente atualizado, você pode ver no ite
 
 > DICA: Lembre-se sempre de fazer um backup dos seus dados e de seu sistema antes de fazer qualquer alteração.
 
-* [FAQ](https://github.com/mercadopago/cart-woocommerce/wiki/FAQ-Portuguese)
-* [Suporte Técnico](https://github.com/mercadopago/cart-woocommerce/wiki/Suporte-Técnico)
-* [Como Contribuir](https://github.com/mercadopago/cart-woocommerce/wiki/Como-Contribuir)
+# FAQ
+Em construção...
+
+# Suporte Técnico
+Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um email para modulos@mercadopago.com com as seguintes informações:
+
+* Email da sua conta Mercado Pago;
+* Detalhes sobre sua pergunta, problema ou erro;
+* Arquivos que podem ajudar na compreensão (Print-Screen, Video, Arquivos de Log, etc.);
+* Versão do WooCommerce;
+* Versão do módulo, se você estiver usando.
+
+> DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
+>
+> ![Developer](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/plugins_menu.png)
+
+Não se preocupe ... Nós o ajudaremos o mais rápido possível.
+
+# Como Contribuir
+Aqui estão algumas dicas para ajudar no desenvolvimento e manutenção desse projeto.
+
+## Clonando para desenvolvimento:
+
+Vá para `wp-content/plugins` na sua instalação de desenvolvimento do WordPress e clone este repositório usando o seguinte comando:
+
+```bash
+git clone git@github.com:mercadopago/cart-woocommerce.git woocommerce-mercadopago
+```
+
+## Atualizando a Wiki
+
+### Clonando
+
+```bash
+git clone git@github.com:mercadopago/cart-woocommerce.wiki.git
+```
+
+### Árvore de diretórios e arquivos
+
+```
+├── English
+├── _Footer.md
+├── Home.md
+├── images
+├── Portugues
+└── Espanol
+
+```
+
+Os diretórios `English`, `Portugues`, e `Espanol` contém documentações específicas para cada linguagem.
+
+É possível gerar novos arquivos em cada diretório da seguinte maneira:
+
+```
+touch Portugues/Nova-Pagina-Wiki.md
+```
+
+Isto irá criar uma nova página wiki com o nome `Nova Pagina Wiki`.
+
+Para as imagens, devemos usar o diretório `images` e usar a seguinte sintaxe para ligar cada imagem ao conteúdo:
+
+```
+[[/images/image-name.png|Alt text]]
+```
