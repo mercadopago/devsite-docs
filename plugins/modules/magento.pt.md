@@ -1,10 +1,5 @@
 # Magento - Mercado Pago Module (v1.8.x to 1.9.x)
 
-* [Requisitos](#features)
-* [Requerimientos](#requirements)
-* [Versiones soportadas](#available_versions)
-* [Feedback](#feedback)
-
 * [Requisitos](#Requisitos)
 * [Funcionalidades](#Funcionalidades)
 * [Instalação](#Instalação)
