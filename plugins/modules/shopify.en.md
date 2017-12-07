@@ -46,8 +46,6 @@ _Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Ven
 <a name="Support"></a>
 ## Support: ##
 
-## Support: ##
-
 If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
 
 * Email of your account Mercado Pago.
