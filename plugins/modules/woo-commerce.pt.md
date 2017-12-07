@@ -37,6 +37,31 @@ Módulo de integração do Mercado Pago para WooCommerce
 * Certificação SSL é um pré-requisito para cartões de crédito e boletos (Checkout Transparente).
 
 # Funcionalidades
+O módulo do Mercado Pago para WooCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
+
+### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+* Interfaces pré-construídas do Mercado Pago<br>[[/images/wiki3/basic_checkout_payment.png|Basic Checkout]]
+* [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
+* Divisão de Pagamento (Dois Cartões)
+* [Assinaturas](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
+* [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+
+### Checkout Transparente
+* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>[[/images/wiki3/custom_checkout_form.png|Custom Checkout]]
+* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>[[/images/wiki3/oneclick_form.png|One Click Payment]]
+* [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
+* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>[[/images/wiki3/ticket.png|Tickets]]
+
+### Outras Funcionalidades
+* Checagens de credenciais e status de plataforma
+* Página de sucesso customizável
+* Calculadora de parcelas
+* Conversão de moedas
+* Notificação instantânea de pagamentos e webhooks
+* Descontos por meio de pagamento ou cupom do Mercado Pago
+* Log e ferramentas de debug
+
+# Instalação
 Se você já tiver este módulo instalado, por favor, siga as <a href="https://github.com/mercadopago/cart-woocommerce/wiki/Atualização">Instruções de Atualização</a> antes.
 
 Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fazendo o download manual e copiando o diretório do módulo.
@@ -59,26 +84,9 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 
 > DICA: Para confirmar que seu módulo está realmente instalado, você pode clicar no item *Plugins* no menu lateral da página administrativa da sua loja, e checar seu módulo recém-instalado. Apenas clique em *ativar* para ativá-lo e você deverá receber a mensagem "Plugin ativado." como uma notificação em seu WordPress.
 
-# Configurações Gerais do Mercado Pago
-## Checkout Transparente
-## Configurando o Cartão de Crédito
-Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
-
-[[/images/wiki3/custom_checkout_config.png|Custom Checkout Config]]
-
-Se você configurou adequadamente suas credenciais em <a href="https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-Gerais-do-Mercado-Pago">Configurações Gerais do Mercado Pago</a>, então você pode agora customizar seu checkout por cartão de crédito:
-
-### Interface do Checkout
-Como o checkout é mostrado.
-  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
-  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes.
-
-### Opções de Pagamento
-Como a opção de pagamento se comporta.
-  * *Cupons*: Permitir cupom de campanhas para descontos
-  * *Modo Binário*: Ao cobrar um cartão de crédito, apenas o status [aprovado] ou [rejeitado] será tomado;
-  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem cartões de crédito como método de pagamento.
- 
+* [Configurações Gerais do Mercado Pago](https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-Gerais-do-Mercado-Pago)
+* Checkout Transparente
+  * [Configurando o Cartão de Crédito](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Cartão-de-Crédito)
   * [Configurando os Boletos](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-os-Boletos)
 * Checkout Básico
   * [Configurando o Checkout por Redirect, Iframe, ou LightBox](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Checkout-por-Redirect,-Iframe,-ou-LightBox)
