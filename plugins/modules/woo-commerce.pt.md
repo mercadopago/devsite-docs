@@ -85,7 +85,6 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 > DICA: Para confirmar que seu módulo está realmente instalado, você pode clicar no item *Plugins* no menu lateral da página administrativa da sua loja, e checar seu módulo recém-instalado. Apenas clique em *ativar* para ativá-lo e você deverá receber a mensagem "Plugin ativado." como uma notificação em seu WordPress.
 
 # Configurações Gerais do Mercado Pago
-
 Esta página explicará como fazer as Configurações Gerais do Mercado Pago para este módulo. Antes de tudo, certifique-se de que o plugin WooCommerce MercadoPago esteja habilitado, clicando no item *Plugins* na barra lateral do WordPress, conforme mostrado abaixo:
 
 ![Plugin Menu](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/plugins_menu.png)
@@ -119,7 +118,7 @@ Esses campos são campos gerais da sua loja.
 ### Opções de Debug e Teste
 Oferece ferramentas de registro para que você possa analisar possíveis problemas que possam estar ocorrendo. Mantenha isso desabilitado se estiver trabalhando em produção com um sistema estável
 
-# Checkout Transparente
+# Configurando o Cartão de Crédito
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
 
 ![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_checkout_config.png)
@@ -137,14 +136,60 @@ Como a opção de pagamento se comporta.
   * *Modo Binário*: Ao cobrar um cartão de crédito, apenas o status [aprovado] ou [rejeitado] será tomado;
   * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem cartões de crédito como método de pagamento.
 
-  * [Configurando o Cartão de Crédito](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Cartão-de-Crédito)
-  * [Configurando os Boletos](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-os-Boletos)
-* Checkout Básico
-  * [Configurando o Checkout por Redirect, Iframe, ou LightBox](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Checkout-por-Redirect,-Iframe,-ou-LightBox)
+# Configurando os Boletos
+Esta página explicará como configurar o módulo para aceitar pagamentos com o Boleto do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Boleto*. Você deve obter a seguinte página:
+
+![Ticket Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/ticket_checkout_config.png)
+
+Se você configurou adequadamente suas credenciais em [Instruções de Atualização](#Configurações-Gerais-do-Mercado-Pago), então você pode agora customizar seu checkout por boleto:
+
+### Interface do Checkout
+Como o checkout é mostrado.
+  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
+  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes.
+
+### Opções de Pagamento
+Como a opção de pagamento se comporta.
+  * *Cupons*: Permitir cupom de campanhas para descontos
+  * *Redução de Estoque*: Reduza o estoque quando o pedido é criado em vez de quando o pagamento é feito;
+  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem boletos como método de pagamento.
+
+# Configurando o Checkout por Redirect, Iframe, ou LightBox
+Esta página explicará como configurar o módulo para aceitar os pagamentos com o Checkout Básico em Redirecionamento, Iframe ou Lightbox. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Básico*. Você deve obter a seguinte página:
+
+![Installation Instructions](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_config.png)
+
+Se você configurou adequadamente suas credenciais em [Instruções de Atualização](#Configurações-Gerais-do-Mercado-Pago), então você pode agora customizar seu checkout por cartão de crédito:
+
+### Interface do Checkout
+Como o checkout é mostrado.
+  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
+  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes;
+  * *Método de Integração*: Como seus clientes irão interagir com o Mercado Pago para pagar os pedidos;
+  * *Largura do iFrame*: A largura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
+  * *Altura do iFrame*: A altura, em pixels, do iFrame (usado apenas com o método de integração por iFrame).
+
+### Navegação do Checkout
+Como a navegação do checkout irá se comportar.
+  * *Auto Retorno*: If set, the platform will return to your store when the payment is approved;
+  * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
+  * *URL de Falha*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for recusado. Deixe em branco para redirecionar para a loja;
+  * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja;
+
+### Opções de Pagamento
+Como a opção de pagamento se comporta.
+  * *Parcelamento Máximo*: O número máximo de parcelas permitidas para seus clientes;
+  * *Excluir Meios de Pagamento*: Selecione os métodos de pagamento que você não deseja oferecer com Mercado Pago;
+  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem boletos como método de pagamento;
+  * *Modo Dois Cartões*: Habilite para permitir que seus clientes paguem com dois cartões diferentes.
+
+
+
+
+
   * [Configurando o Mercado Envios](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Mercado-Envios)
   * [Configurando as Assinaturas](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-as-Assinaturas)
 * [Configurações das Notificações Instantâneas de Pagamento](https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-das-Notificações-Instantâneas-de-Pagamento)
-* [Atualização](https://github.com/mercadopago/cart-woocommerce/wiki/Atualização)
 
 # Atualização
 Se você já instalou uma versão anterior do WooCommerce MercadoPago, siga as instruções. Da mesma forma como foi a instalação, novamente você tem duas opções: da sua loja do WordPress ou baixando e copiando manualmente o diretório do módulo.
