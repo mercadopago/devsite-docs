@@ -1,6 +1,19 @@
 ![Mercado Pago](https://raw.githubusercontent.com/mercadopago/cart-woocommerce/master/assets/images/mplogo.png)
 
-Módulo de integração do Mercado Pago para WooCommerce
+# Módulo de integração do Mercado Pago para WooCommerce
+* [Requisitos de Sistema](#requisitos-de-sistema)
+* [Funcionalidades](#funcionalidades)
+* [Instalação](#instala%C3%A7%C3%A3o)
+* [Atualização](#atualização)
+* Checkout Custom (Transparente)
+  * [Configurando Cartão de Crédito e Boleto](#configurando-o-cartão-de-crédito)
+* Checkout Básico
+  * [Configurando o Checkout Redirect, Iframe e LightBox](https://github.com/marcelohama/cart-woocommerce/wiki/Configurando-o-Checkout-Cl%C3%A1ssico-(Redirect,-Iframe-e-LightBox))
+  * [Configurando o Mercado Envios](https://github.com/marcelohama/cart-woocommerce/wiki/Configurando-o-Mercado-Envios)
+  * [Configurando o Pagamento Recorrente](https://github.com/marcelohama/cart-woocommerce/wiki/Configurando-o-Pagamento-Recorrente)
+* [Configurações de status de Notificações de Pagamento](https://github.com/marcelohama/cart-woocommerce/wiki/Configurações-de-status-de-Notificações-de-Pagamento)
+* [FAQ](https://github.com/marcelohama/cart-woocommerce/wiki/FAQ-Portugues)
+* [Suporte](https://github.com/marcelohama/cart-woocommerce/wiki/Suporte)
 
 # Requisitos de Sistema
 ### Versões de Plataforma
@@ -233,7 +246,7 @@ Como a navegação do checkout irá se comportar.
 Como a opção de pagamento se comporta.
   * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles façam uma assinatura;
 
-# Criando um Produto Assinável
+### Criando um Produto Assinável
 Uma assinatura precisa de um tipo especial de produto, que deve ser vendido periodicamente. Você pode configurar um produto para ser assinável seguindo as seguintes etapas:
 
 1. Vá para *Produtos* no menu lateral e clique no botão *Adicionar Produto*. A página aberta deve conter os detalhes e os campos do produto na janela *Dados do Produto*;<br>![Subscription Checkout Product](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/subscription_checkout_product.png)
