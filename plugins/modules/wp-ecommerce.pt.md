@@ -53,12 +53,12 @@
 O módulo do Mercado Pago para WP eCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
 ### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_payment.png)
+* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/basic_checkout_payment.png)
 
 ### Checkout Transparente
-* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/order_custom.png)
-* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/order_cust_card.png)
-* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/order_ticket.png)
+* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/order_custom.png)
+* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/order_cust_card.png)
+* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/order_ticket.png)
 
 ### Outras Funcionalidades
 * Checagens de credenciais e status de plataforma
@@ -94,7 +94,7 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 # Configurando o Cartão de Crédito
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
 
-![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_config_screenshot.png)
+![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/custom_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar suas chaves *Public Key* e *Access Token*, que são as credenciais que o identificam de maneira única no Mercado Pago.
@@ -120,7 +120,7 @@ Oferece ferramentas de registro para que você possa analisar possíveis problem
 # Configurando os Boletos
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Boleto do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Boleto*. Você deve obter a seguinte página:
 
-![Ticket Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/ticket_config_screenshot.png)
+![Ticket Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/ticket_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar sua chave *Access Token*, a credencial que o identifica de maneira única no Mercado Pago.
@@ -143,7 +143,7 @@ Oferece ferramentas de registro para que você possa analisar possíveis problem
 # Configurando o Checkout por Redirect, Iframe, ou LightBox
 Esta página explicará como configurar o módulo para aceitar os pagamentos com o Checkout Básico em Redirecionamento, Iframe ou Lightbox. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Checkout Básico*. Você deve obter a seguinte página:
 
-![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_config_screenshot.png)
+![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/basic_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar suas chaves *Client Id* e *Client Secret*, que são as credenciais que o identificam de maneira única no Mercado Pago.
@@ -209,12 +209,12 @@ Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um
 * Email da sua conta Mercado Pago;
 * Detalhes sobre sua pergunta, problema ou erro;
 * Arquivos que podem ajudar na compreensão (Print-Screen, Video, Arquivos de Log, etc.);
-* Versão do WP eCommerce;
+* Versão do WPeCommerce;
 * Versão do módulo, se você estiver usando.
 
 > DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
 >
-> ![Developer](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/plugin_adm.png)
+> ![Developer](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/plugin_adm.png)
 
 Não se preocupe ... Nós o ajudaremos o mais rápido possível.
 

@@ -53,12 +53,12 @@
 The module of Mercado Pago for WP eCommerce is integrated with the following features and payment solutions:
 
 ### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_payment.png)
+* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/basic_checkout_payment.png)
 
 ### Custom Checkout
-* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/order_custom.png)
-* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/order_cust_card.png)
-* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/order_ticket.png)
+* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/order_custom.png)
+* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/order_cust_card.png)
+* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/order_ticket.png)
 
 ### Other Features
 * Credentials and platform status checkings
@@ -94,7 +94,7 @@ You have two options to install this module: from your WordPress Store, or by do
 # Configuring Credit Card
 This page will explain how to configure the module to accept payments with Credit Card of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Custom Checkout*. You should get the following page:
 
-![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_config_screenshot.png)
+![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/custom_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Public Key* and *Access Token* keys, the credentials that uniquely identifies you in Mercado Pago.
@@ -120,7 +120,7 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 # Configuring Tickets
 This page will explain how to configure the module to accept payments with Tickets of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Ticket*. You should get the following page:
 
-![Ticket Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/ticket_config_screenshot.png)
+![Ticket Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/ticket_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Access Token* key, the credential that uniquely identifies you in Mercado Pago.
@@ -143,7 +143,7 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 # Configuring Checkout by Redirect, Iframe, or LightBox
 This page will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Basic Checkout*. You should get the following page:
 
-![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_config_screenshot.png)
+![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/basic_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Client Id* and *Client Secret* keys, the credentials that uniquely identifies you in Mercado Pago.
@@ -209,12 +209,12 @@ If you have any questions, problems or errors we have a support channel. Send an
 * Email of your account Mercado Pago;
 * Details about your question, problem or error;
 * Files that can help in understanding (Print-Screen, Video, Log Files, etc.);
-* Version of WooCommerce;
+* Version of WPeCommerce;
 * Module version, if you are using.
 
 > HINT: You can get the module version in the plugin list of your WordPress administration page:
 >
-> ![Developer](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/plugin_adm.png)
+> ![Developer](https://raw.githubusercontent.com/wiki/mercadopago/cart-wp-commerce/images/plugin_adm.png)
 
 Don't worry... We will help you as soon as possible.
 
