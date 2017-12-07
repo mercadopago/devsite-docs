@@ -40,7 +40,7 @@ Módulo de integração do Mercado Pago para WooCommerce
 O módulo do Mercado Pago para WooCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
 ### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](https://raw.githubusercontent.com/wiki/marcelohama/cart-woocommerce/images/wiki3/basic_checkout_payment.png)
+* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_payment.png)
 * [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 * Divisão de Pagamento (Dois Cartões)
 * [Assinaturas](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
@@ -84,8 +84,25 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 
 > DICA: Para confirmar que seu módulo está realmente instalado, você pode clicar no item *Plugins* no menu lateral da página administrativa da sua loja, e checar seu módulo recém-instalado. Apenas clique em *ativar* para ativá-lo e você deverá receber a mensagem "Plugin ativado." como uma notificação em seu WordPress.
 
-* [Configurações Gerais do Mercado Pago](https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-Gerais-do-Mercado-Pago)
-* Checkout Transparente
+# Configurações Gerais do Mercado Pago
+## Checkout Transparente
+Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
+
+![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_checkout_config.png)
+
+Se você configurou adequadamente suas credenciais em <a href="https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-Gerais-do-Mercado-Pago">Configurações Gerais do Mercado Pago</a>, então você pode agora customizar seu checkout por cartão de crédito:
+
+### Interface do Checkout
+Como o checkout é mostrado.
+  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
+  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes.
+
+### Opções de Pagamento
+Como a opção de pagamento se comporta.
+  * *Cupons*: Permitir cupom de campanhas para descontos
+  * *Modo Binário*: Ao cobrar um cartão de crédito, apenas o status [aprovado] ou [rejeitado] será tomado;
+  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem cartões de crédito como método de pagamento.
+
   * [Configurando o Cartão de Crédito](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Cartão-de-Crédito)
   * [Configurando os Boletos](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-os-Boletos)
 * Checkout Básico
