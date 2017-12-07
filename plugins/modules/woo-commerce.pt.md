@@ -10,13 +10,13 @@
   * [Configurando os Boletos](#configurando-os-boletos)
 * Checkout Básico
   * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#configurando-o-checkout-por-redirect-iframe-ou-lightbox)
-  * [Configurando o Mercado Envios](#Configurando-o-Mercado-Envios)
-  * [Configurando as Assinaturas](#Configurando-as-Assinaturas)
-* [Configurações das Notificações Instantâneas de Pagamento](#Configurações-das-Notificações-Instantâneas-de-Pagamento)
-* [Atualização](https://github.com/mercadopago/cart-woocommerce/wiki/Atualização)
-* [FAQ](https://github.com/mercadopago/cart-woocommerce/wiki/FAQ-Portuguese)
-* [Suporte Técnico](https://github.com/mercadopago/cart-woocommerce/wiki/Suporte-Técnico)
-* [Como Contribuir](https://github.com/mercadopago/cart-woocommerce/wiki/Como-Contribuir)
+  * [Configurando o Mercado Envios](#configurando-o-mercado-envios)
+  * [Configurando as Assinaturas](#configurando-as-assinaturas)
+* [Configurações das Notificações Instantâneas de Pagamento](#configurações-das-notificações-instantâneas-de-pagamento)
+* [Atualização](#atualização)
+* [FAQ](#faq)
+* [Suporte Técnico](#suporte-técnico)
+* [Como Contribuir](#como-contribuir)
 
 # Requisitos de Sistema
 ### Versões de Plataforma
