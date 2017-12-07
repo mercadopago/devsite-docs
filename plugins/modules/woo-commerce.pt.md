@@ -173,7 +173,7 @@ Como a opção de pagamento se comporta.
 # Configurando o Checkout por Redirect, Iframe, ou LightBox
 Esta página explicará como configurar o módulo para aceitar os pagamentos com o Checkout Básico em Redirecionamento, Iframe ou Lightbox. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Básico*. Você deve obter a seguinte página:
 
-![Installation Instructions](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_config.png)
+![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_config.png)
 
 Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por cartão de crédito:
 

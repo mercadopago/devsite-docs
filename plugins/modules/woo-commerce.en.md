@@ -173,7 +173,7 @@ How the payment option behaves.
 # Configuring Checkout by Redirect, Iframe, or LightBox
 This page will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Basic Checkout*. You should get the following page:
 
-![Installation Instructions](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_config.png)
+![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your ticket checkout:
 
