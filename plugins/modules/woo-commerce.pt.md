@@ -2,7 +2,7 @@
 
 Módulo de integração do Mercado Pago para WooCommerce
 
-#### Requisitos de Sistema
+# Requisitos de Sistema
 ### Versões de Plataforma
 * <a href="https://wordpress.org/download/">WordPress</a> 3.1.x - 4.7.x
 * <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a> 2.6.x - 3.1.x
