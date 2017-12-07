@@ -9,7 +9,7 @@
   * [Configurando o Cartão de Crédito](#configurando-o-cartão-de-crédito)
   * [Configurando os Boletos](#configurando-os-boletos)
 * Checkout Básico
-  * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#Configurando-o-Checkout-por-Redirect,-Iframe,-ou-LightBox)
+  * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#configurando-o-checkout-por-redirect,-iframe,-ou-lightBox)
   * [Configurando o Mercado Envios](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-o-Mercado-Envios)
   * [Configurando as Assinaturas](https://github.com/mercadopago/cart-woocommerce/wiki/Configurando-as-Assinaturas)
 * [Configurações das Notificações Instantâneas de Pagamento](https://github.com/mercadopago/cart-woocommerce/wiki/Configurações-das-Notificações-Instantâneas-de-Pagamento)
