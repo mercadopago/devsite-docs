@@ -9,7 +9,7 @@
   * [Configurando la Tarjeta de Crédito](#configurando-la-tarjeta-de-crédito)
   * [Configurando los Tickets](#configurando-los-tickets)
 * Checkout Básico
-  * [Configurando el Checkout por Redirect, Iframe o LightBox](#configurando-el-checkout-por-redirect-iframe-o-lightBox)
+  * [Configurando el Checkout por Redirect, Iframe o LightBox](#configurando-el-checkout-por-redirect-iframe-o-lightbox)
   * [Configurando el Mercado Envios](#configurando-el-mercado-envios)
   * [Configurando las Suscripciones](#configurando-las-suscripciones)
 * [Configuraciones de las Notificaciones Instantáneas de Pago](#configuraciones-de-las-notificaciones-instantáneas-de-pago)
@@ -249,7 +249,7 @@ Cómo se comportarán las navegaciones de pago.
 Cómo se comporta la opción de pago.
   * *Descuento por Gateway*: Ofrece un descuento porcentual para sus clientes si utilizan Suscripciones como medio de pago.
 
-# Creación de un Producto Asignable
+### Creación de un Producto Asignable
 Una suscripción necesita un tipo especial de producto, que será vendido periódicamente. Puede configurar un producto para que se pueda asignar siguiendo los siguientes pasos:
 1. Vaya a *Productos* en el menú lateral y haga clic en el botón *Agregar Producto*. La página abierta debe contener los detalles del producto y los campos en la ventana *Datos del Producto*;<br>![Subscription Checkout Product](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/subscription_checkout_product.png)
 2. Completa la información de su producto (nombre, precio, imágenes, etc) y entonces marque el checkbox *Producto Recurrente*;
