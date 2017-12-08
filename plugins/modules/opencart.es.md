@@ -1,178 +1,164 @@
-# OpenCart - Mercado Pago Module (v1.4.9, 1.5.x, 2.x - 2.2, 2.3)
+# OpenCart - Modulo Mercado Pago (v1.4.9, 1.5.x, 2.x - 2.2, 2.3)
 
-* [Features](#features)
-* [Available Versions](#versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Upgrade](#upgrade)
-* [Feedback](#feedback)
+* [Funciones](#features)
+* [Versiones disponibles](#versions)
+* [Instalación](#installation)
+* [Configuración de Custom](#configuration_custom)
+* [Configuración de Standard](#configuration_standard)
+* [Configuración de Ticket](#configuration_ticket)
+* [Suporte](#feedback)
 
 <a name="features"></a>
-## Features:
+## Funciones:
 
-Checkout options right for your business:
-We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
+Opciones de pago para su negocio:
+Ofrecemos dos métodos de pago que facilitan la aceptación segura de pagos de cualquier persona, en cualquier lugar.
 
-**Custom Checkout**
+* [Checkout básico (Redireccionado, Iframe o Lightbox)](https://www.mercadopago.com.br/developers/es/solutions/payments/basic-checkout/receive-payments/)
+    * Pago con dos tarjetas
+    * [Mercado de envíos](https://www.mercadopago.com.br/developers/es/solutions/payments/basic-checkout/receive-payments/)
+    * [Devolución de Pagos](https://www.mercadopago.com.br/developers/es/solutions/payments/basic-checkout/refund-cancel#refund)
+    * [Firma (Recurrencia)](https://www.mercadopago.com.br/developers/es/solutions/payments/basic-checkout/subscriptions/)
 
-Offer a checkout fully customized to your brand experience with our simple-to-use payments API.
-
-* Seamless integration— no coding required, unless you want to.
-* Full control of buying experience.
-* Store buyer’s card for fast checkout.
-* Accept tickets in addition to cards.
-* Improve conversion rate.
-
-*Available for Argentina, Brazil, Colombia, Mexico, Peru and Venezuela*
-
-**Standard Checkout**
-
-Great for merchants who want to get going quickly and easily.
-
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
-
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
-
-<a name="requirements"></a>
-## Requirements:
-
-**Operating System**
-
-* Linux x86-64
-
-**Web Server**
-
-* Apache 2.x
-* Nginx 1.7.x
-
-**Database**
-
-* MySQL 5.6 (Oracle or Percona)
-
-**PHP**
-
-* PHP 5.4.x / 5.5.x
-* Required extensions: PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl
-
-**SSL certificate**
-
-It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
-During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
-
+* Checkout transparente
+    * [Pago con tarjeta de crédito](https://www.mercadopago.com.br/developers/es/solutions/payments/basic-checkout/receive-payments/)
+    * [Pago con un clic (Clientes y Tarjetas)](https://www.mercadopago.com.br/developers/es/solutions/payments/custom-checkout/one-click-charges/javascript/)
+    * [Pago con otros medios (Boleto)](https://www.mercadopago.com.br/developers/es/solutions/payments/custom-checkout/charge-with-other-methods/)
+    * Pago con dos tarjetas
+    * [Devolución de Pagos](https://www.mercadopago.com.br/developers/es/solutions/payments/custom-checkout/refund-cancel#refund)
 
 <a name="versions"></a>
-## Available Versions:
+## Versiones disponibles:
 <table>
   <thead>
     <tr>
-      <th>Plugin Version</th>
+      <th>Versión de plugin</th>
       <th>Status</th>
-      <th>Compatible Versions</th>
+      <th>Versiones compatibles</th>
     </tr>
   <thead>
   <tbody>
     <tr>
       <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9">v1.4.9</a></td>
-      <td>Deprecated (Old Version)</td>
+      <td>Obsoleto (Versión antigua)</td>
       <td>OpenCart v1.4.9</td>
     </tr>
     <tr>
       <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x">v1.5.x</a></td>
-      <td>Deprecated (Old Version)</td>
+      <td>Obsoleto (Versión antigua)</td>
       <td>OpenCart v1.5.x</td>
     </tr>
     <tr>
       <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2">v2.x - v2.2</a></td>
-      <td>Stable (Current Version)</td>
+      <td>Estable (Versión actual)</td>
       <td>OpenCart v2.x - v2.2</td>
     </tr>
     <tr>
       <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v2.3">v2.3</a></td>
-      <td>Stable (Current Version)</td>
+      <td>Estable (Versión actual)</td>
       <td>OpenCart v2.3</td>
     </tr>
   </tbody>
 </table>
 
-<a name="installation"></a>
-## Installation:
+## Requisitos:
 
-1. Download Mercado Pago module:
+**Sistema operativo**
+
+* Linux x86-64
+
+**Servidor web**
+
+* Apache 2.x
+* Nginx 1.7.x
+
+**Base de datos**
+
+* MySQL 5.6 (Oracle o Percona)
+
+**PHP**
+
+* PHP 5.4.x / 5.5.x
+* Extensiones requeridas: PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl
+
+**Certificado SSL**
+
+Es un requisito que usted tiene un certificado SSL, y el formulario de pago que se proporcionará en una página HTTPS.
+Durante las pruebas del modo de prueba de seguridad, puede operar a través de HTTP, pero para la homologación necesitará adquirir el certificado en caso de que no lo tenga.
+
+<a name="installation"></a>
+## Instalación:
+
+1. Descargar el módulo de Mercado Pago:
     * OpenCart 1.4.9
     * OpenCart 1.5.x
     * OpenCart 2.x - 2.2
     * OpenCart 2.3
 
-2. Copy the folders **admin**, **catalog** and **image** to your OpenCart ROOT installation. Make sure to keep the OpenCart folders structure intact.
+2. Copie las carpetas **admin**, **catalog** y **image** a su instalación de raíz de OpenCart. Asegúrese de mantener intacta la estructura de carpetas de OpenCart.
+  
+**Importante**: 
+  Si está utilizando OpenCart 2.x, encontrará 3 tipos diferentes de comprobación dentro de la carpeta OpenCart 2.x: Standard, Custom y Ticket. Puede utilizarlos todos juntos o individualmente, sin ningún problema o dependencia entre ellos. Cada una de estas carpetas tiene sus propias carpetas Admin, Catalog y Image y el proceso de instalación es el mismo descrito anteriormente.
 
-**Important**: If you're using OpenCart 2.0, you'll find 3 different types of checkout inside the OpenCart 2.x folder: Standard, Custom and Ticket. You can use them all together or individually, without any problems or dependencies between them. Each one of these folders have its own Admin, Catalog and Image folders and the installation process is the same described above.
+<a name="configuration_custom"></a>
+## Configuración de Custom
 
-<a name="setup"></a>
-## Setup MercadoPago
+1. En la administración de su tienda, ir en **extensions > payments > Mercado Pago Custom** y haga clic en **Edit**.
 
-1. On your store administration, go to **extensions > payments > MercadoPago** and click **Install**.
+  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/1.gif?raw=true)
 
-2. Again in **extensions > payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
+2. Establezca **PUBLIC_KEY** y **ACCESS_TOKEN** y haga las otras configuraciones de su tienda:
 
-	![Mercado Pago Account](https://raw.github.com/mercadopago/cart-opencart/master/README.img/MPAccount.png)
+ ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/2.gif?raw=true)
 
-<a name="configuration"></a>
-## Configuration
+3.  Configure el estado de las nofitas que desea para su tienda. Por último, haga clic en el botón Guardar. Listo! La configuración del Mercado Pago Custom para tu tienda está hecha!
+  
+![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/3.gif?raw=true)
 
-1. Again in **Extensions > Payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
 
- ![Mercado Pago Account](https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
+<a name="configuration_standard"></a>
+## Configuración de Standard
 
-2.  Set your **CLIENT_ID** and **CLIENT_SECRET**, or **PUBLIC_KEY** and **ACCESS_TOKEN** (depending on which module you're using).  
-  In order to get them check the following links according to the country you are opperating in:
+1. En la administración de su tienda, ir en **extensions > payments > Mercado Pago Standard** y haga clic en **Edit**.
 
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
-  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
-4. If you're using **Custom Checkout** or **Standard Checkout**, select the country related to your **MercadoPago** account. If you're using **Ticket Checkout**, there is no need to configure the country.
+  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/1.gif?raw=true)
 
-5. Other general configurations:
+2. Establezca **CLIENT_ID** and **CLIENT_SECRET** y haga las otras configuraciones de su tienda:
 
-  * **Category of your store**: Sets up the category of the store.
-  * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-  * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-  * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-  * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-  * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
-  * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
-  * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
-  * **Logs**: Enables/disables system logs.
-  * **Debug Mode**: If enabled, displays the raw response from the API instead of a friendly message.
-  *  **Enabled**: Enables/disables this payment solution.
-  * **Type Checkout (you're using Standard Checkout)**: Sets the type of checkout, the options are:
-    *  *Iframe*: Opens an OpenCart URL with a iframe as the content.
-    *  *Redirect*: Redirects to Mercado Pago URL.
-    *  *Lightbox*: Similar to Iframe option but opens a lightbox instead of an iframe.
+ ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/2.gif?raw=true)
 
+3.  Configure el estado de las nofitas que desea para su tienda. Por último, haga clic en el botón Guardar. Listo! La configuración del Mercado Pago Custom para tu tienda está hecha!
+  
+![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/3.gif?raw=true)
+
+
+<a name="configuration_ticket"></a>
+## Configuración de Ticket
+
+1. En la administración de su tienda, ir en **extensions > payments > Mercado Pago Ticket** y haga clic en **Edit**.
+
+  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/1.gif?raw=true)
+
+2. Establezca **ACCESS_TOKEN** y haga las otras configuraciones de su tienda:
+
+ ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/2.gif?raw=true)
+
+3.  Configure el estado de las nofitas que desea para su tienda. Por último, haga clic en el botón Guardar. Listo! La configuración del Mercado Pago Custom para tu tienda está hecha!
+
+  
+![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/3.gif?raw=true)
 <a name="notifications"></a>
-## Notifications
+## Notificaciones
 
-Your store will automatically sync with MercadoPago. The notification URL will be sent in each payment.
-
-<a name="upgrade"></a>
-## Upgrade Mercado Pago Plugin ##
-
-Follow the same steps that you did to install the module.
+Su tienda se sincronizará automáticamente con MercadoPago. La URL de notificación se enviará en cada pago.
 
 <a name="Feedback"></a>
-## Feedback ##
+## Suporte ##
 
-We want to know your opinion, please answer the following form.
+Si tiene alguna duda, problema o error tenemos un canal de atención. Envíe un correo electrónico a modulos@mercadopago.com con la siguiente información:
 
-* [Portuguese](http://goo.gl/forms/2n5jWHaQbfEtdy0E2)
-* [Spanish](http://goo.gl/forms/A9bm8WuqTIZ89MI22)
+ * Email da su conta Mercado Pago.
+ * Detalles sobre su duda, problema o error.
+ * Los archivos que pueden ayudar en el entendimiento (Print-Screen, Video, Archivos de registro, etc).
+ * Versión de Opencart.
+ * Versión de Modulo, si se utiliza.
