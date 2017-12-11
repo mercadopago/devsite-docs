@@ -1,4 +1,4 @@
-![Mercado Pago](https://raw.githubusercontent.com/mercadopago/cart-woocommerce/master/assets/images/mplogo.png)
+![Mercado Pago](/images/plugins/modules/woo-commerce/mplogo.png)
 
 # Mercado Pago integration module for WooCommerce
 * [System Requirements](#system-requirements)
