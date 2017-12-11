@@ -101,10 +101,10 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 **Instalação via Marketplace**
 
 1. Vá até o **[Magento Marketplace](https://marketplace.magento.com/)**, pesquise por **Mercado Pago Payment**, selecione o módulo para versão **M1**, adicione o módulo no carrinho e finalize o processo de compra (você não terá custo nenhum):
-![Install](https://github.com/mercadopago/cart-magento/blob/master/README.img/wiki/marketplace_1.gif)
+![Install](/images/plugins/modules/magentomarketplace_1.gif)
 
 2. Ao finalizar o processo de "compra", clique em **Install** e copie o link que será disponibilizado na tela:
-![Install](https://github.com/mercadopago/cart-magento/blob/master/README.img/wiki/marketplace_2.gif)
+![Install](/images/plugins/modules/magentomarketplace_2.gif)
 > O link copiado deve ser igual a esse: 
 > https://connect20.magentocommerce.com/e848b7a0bc8735cd525582c/mercadopago+MercadoPago-2.9.0
 
@@ -112,7 +112,7 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 
 4. Cole o link obtido no **Magento Marketplace** na opção **Install New Extensions** e click em **Install**.
 
-![Install](https://github.com/mercadopago/cart-magento/blob/master/README.img/wiki/marketplace_3.gif)
+![Install](/images/plugins/modules/magentomarketplace_3.gif)
 
 5. Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
@@ -120,13 +120,13 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 **Instalação via Package**
 
 1. Vá até o **[Github do Módulo Magento do Mercado Pago](https://github.com/mercadopago/cart-magento)**, faça o download do arquivo que possui a extensão **.tgz** (Exemplo: MercadoPago-2.10.0.tgz):
-![Install](https://github.com/mercadopago/cart-magento/blob/master/README.img/wiki/download_github.gif)
+![Install](/images/plugins/modules/magentodownload_github.gif)
 
 2. Para efetuar a instalação iremos utilizar a ferramenta **Magento Connect Manager**, acesse o admin do Magento e vá até o menu  **System > Magento Connect > Magento Connect Manager**.
 
 3. Faça o upload do arquivo na opção **Direct package file upload** e click em **Upload**:
 
-![Install](https://github.com/mercadopago/cart-magento/blob/master/README.img/wiki/install_tgz.gif)
+![Install](/images/plugins/modules/magentoinstall_tgz.gif)
 
 4. Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
@@ -171,7 +171,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 1. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Payment Methods**:
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-01.gif)
+![Configuration](/images/plugins/modules/magento/config-01.gif)
 
 2. Para configurar as credenciais acesse a opção **Mercado Pago - Custom Checkout**, irá aparecer o campo da **Public Key** e o campo do **Access Token**. Você pode obter as credenciais no link:
 
@@ -185,7 +185,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
 
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-02.gif)
+![Configuration](/images/plugins/modules/magento/config-02.gif)
 
 > Existem dois tipos de credenciais:
 > * Modo Sandbox: As credenciais desse modo são utilizadas para realizar testes.
@@ -193,11 +193,11 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 3. Com as credenciais preenchidas, é necessário habilitar os métodos de pagamento. Clique no botão **Configure** e marque a opção **Enable** como **Yes**. Faça esse processo para o **Checkout Custom - Credit Card** e para o **Checkout Custom - Ticket** e logo seguida clique em **Save Config**.
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-03.gif)
+![Configuration](/images/plugins/modules/magento/config-03.gif)
 
 4.  Pronto! o Checkout Custom com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
  
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/save.png)
+![Configuration](/images/plugins/modules/magento/save.png)
 
 
 <a name="Configurando-o-Checkout-Classico"></a>
@@ -207,7 +207,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 1. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Payment Methods**:
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-01.gif)
+![Configuration](/images/plugins/modules/magento/config-01.gif)
 
 2. Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. Você pode obter as credenciais no link:
 
@@ -220,16 +220,16 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-04.gif)
+![Configuration](/images/plugins/modules/magento/config-04.gif)
 
 3. Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**. 
 Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usuário deve retornar a sua loja ao finalizar o checkout (**Auto Redirect**).
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-05.gif)
+![Configuration](/images/plugins/modules/magento/config-05.gif)
 
 4.  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso! 
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/save.png)
+![Configuration](/images/plugins/modules/magento/save.png)
 
 
 <a name="Configurando-o-Mercado-Envios"></a>
@@ -249,19 +249,19 @@ Esse processo irá explicar como configurar o módulo para aceitar Mercado Envio
 
 2. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Shipping Methods**:
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-me-01.gif)
+![Configuration](/images/plugins/modules/magento/config-me-01.gif)
 
 3. Para habilitar o Mercado Envios acesse a opção **MercadoEnvios**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Enable** marque esse campo com a opção **Yes**:
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-me-02.gif)
+![Configuration](/images/plugins/modules/magento/config-me-02.gif)
 
 4. Vá até a opção **Product attributes mapping** e selecione de acordo com os atributos que você possui configurado em sua loja. Aproveite e configure os métodos de envio disponível, na opção **Available shipping methods**. Clique na opção **Save Config** para salvar as configurações realizadas:
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-me-03.gif)
+![Configuration](/images/plugins/modules/magento/config-me-03.gif)
 
 5. Pronto! O Mercado Envios foi habilitado e configurado com sucesso!
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/me_save.png)
+![Configuration](/images/plugins/modules/magento/me_save.png)
 
 
 <a name="Configurando-o-Pagamento-Recorrente"></a>
@@ -271,7 +271,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos re
 
 1. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Payment Methods**:
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-01.gif)
+![Configuration](/images/plugins/modules/magento/config-01.gif)
 
 2. Para configurar as credenciais acesse a opção **Mercado Pago - Recurring Payments**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. Você pode obter as credenciais no link:
 
@@ -284,14 +284,14 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos re
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-re-01.gif)
+![Configuration](/images/plugins/modules/magento/config-re-01.gif)
 
 3. Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**. 
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-re-02.gif)
+![Configuration](/images/plugins/modules/magento/config-re-02.gif)
 
 4.  Pronto! o Pagamento Recorrente foi configurado com sucesso!
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/save.png)
+![Configuration](/images/plugins/modules/magento/save.png)
 
 
 <a name="Configurações-de-status-de-Notificações-de-Pagamento"></a>
@@ -301,18 +301,18 @@ Esse processo irá explicar como configurar os status de pedido para as notifica
 
 1. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Payment Methods**:
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-01.gif)
+![Configuration](/images/plugins/modules/magento/config-01.gif)
 
 2. Para configurar os status acesse a opção **Mercado Pago - Global Configuration**, vá até a opção **Order Status Options**. 
 Para cada status de pagamento você poderá escolher um status de pedido, assim que a sua loja receber a notificação de pagamento o módulo atualizará automaticamente o pedido para o status escolhido. Para salvar as configurações clique no botão **Save Config**.
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/config-06.gif)
+![Configuration](/images/plugins/modules/magento/config-06.gif)
 
 > O módulo está preparado para receber as notificações de pagamento de forma automática, ou seja, sem a necessidade de configurar a sua conta Mercado Pago ou o módulo. 
 
 3. Pronto! os status de notificação foram configurados com sucesso
 
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/save.png)
+![Configuration](/images/plugins/modules/magento/save.png)
 
 
 <a name="FAQ"></a>
@@ -334,6 +334,6 @@ Envie um email para modulos@mercadopago.com com as seguintes informações:
 * Versão do Modulo, caso esteja utilizando.
 > Você pode obter a versão do modulo nas configurações do modulo. Para acessar as configurações do módulo vá até **System > Configuration**, clique na opção **Payment Methods**, vá até a opção **Mercado Pago - Global Configuration** na sessão **Developer Options** você encontrará a opção **Version Module**, conforme a imagem:
 >
-> ![Developer](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/developer_option.png)
+> ![Developer](/images/plugins/modules/magento/developer_option.png)
 
 Não se preocupe... Iremos ajuda-lo o mais rápido possível.
