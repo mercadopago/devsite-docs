@@ -26,7 +26,8 @@ _Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Ven
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
 
 1. In your Shopify admin panel, go to the menu **Settings > Payments**.
-![Config](/images/plugins/modules/shopify/config-1.gif)
+
+  ![Config](/images/plugins/modules/shopify/config-1.gif)
 
 2. In Accept credit cards, select **MercadoPago**.
 3. Fill the **CLIENT ID** and **CLIENT SECRET**. To get them, go to:
@@ -43,6 +44,8 @@ _Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Ven
   ![Config](/images/plugins/modules/shopify/config-2.gif)
 
 4. Click the button "**Activate**".
+  
+  ![Config](/images/plugins/modules/shopify/config-3.gif)
 
 5. Congrats! **MercadoPago** was installed and configured!
 
