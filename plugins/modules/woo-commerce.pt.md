@@ -1,4 +1,4 @@
-![Mercado Pago](https://raw.githubusercontent.com/mercadopago/cart-woocommerce/master/assets/images/mplogo.png)
+![Mercado Pago](/images/plugins/modules/woo-commerce/mplogo.png)
 
 # Módulo de integração do Mercado Pago para WooCommerce
 * [Requisitos de Sistema](#requisitos-de-sistema)
@@ -56,17 +56,17 @@
 O módulo do Mercado Pago para WooCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
 ### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_payment.png)
+* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](/images/plugins/modules/woo-commerce/wiki3/basic_checkout_payment.png)
 * [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 * Divisão de Pagamento (Dois Cartões)
 * [Assinaturas](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
 * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
 
 ### Checkout Transparente
-* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_checkout_form.png)
-* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/oneclick_form.png)
+* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/plugins/modules/woo-commerce/wiki3/custom_checkout_form.png)
+* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/plugins/modules/woo-commerce/wiki3/oneclick_form.png)
 * [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/ticket.png)
+* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/plugins/modules/woo-commerce/wiki3/ticket.png)
 
 ### Outras Funcionalidades
 * Checagens de credenciais e status de plataforma
@@ -103,11 +103,11 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 # Configurações Gerais do Mercado Pago
 Esta página explicará como fazer as Configurações Gerais do Mercado Pago para este módulo. Antes de tudo, certifique-se de que o plugin WooCommerce MercadoPago esteja habilitado, clicando no item *Plugins* na barra lateral do WordPress, conforme mostrado abaixo:
 
-![Plugin Menu](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/plugins_menu.png)
+![Plugin Menu](/images/plugins/modules/woo-commerce/wiki3/plugins_menu.png)
 
 Agora, na barra lateral do WordPress, clique na opção *Configurações > Mercado Pago*. Você deve obter a seguinte página:
 
-![Mercado Pago Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/mercadopago_config.png)
+![Mercado Pago Config](/images/plugins/modules/woo-commerce/wiki3/mercadopago_config.png)
 
 Esta janela mostra as principais configurações do plugin WooCommerce MercadoPago, onde você pode verificar e configurar o seguinte:
 
@@ -137,7 +137,7 @@ Oferece ferramentas de registro para que você possa analisar possíveis problem
 # Configurando o Cartão de Crédito
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
 
-![Custom Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/custom_checkout_config.png)
+![Custom Checkout Config](/images/plugins/modules/woo-commerce/wiki3/custom_checkout_config.png)
 
 Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por cartão de crédito:
 
@@ -155,7 +155,7 @@ Como a opção de pagamento se comporta.
 # Configurando os Boletos
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Boleto do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Boleto*. Você deve obter a seguinte página:
 
-![Ticket Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/ticket_checkout_config.png)
+![Ticket Checkout Config](/images/plugins/modules/woo-commerce/wiki3/ticket_checkout_config.png)
 
 Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por boleto:
 
@@ -173,7 +173,7 @@ Como a opção de pagamento se comporta.
 # Configurando o Checkout por Redirect, Iframe, ou LightBox
 Esta página explicará como configurar o módulo para aceitar os pagamentos com o Checkout Básico em Redirecionamento, Iframe ou Lightbox. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Básico*. Você deve obter a seguinte página:
 
-![Basic Checkout](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/basic_checkout_config.png)
+![Basic Checkout](/images/plugins/modules/woo-commerce/wiki3/basic_checkout_config.png)
 
 Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por cartão de crédito:
 
@@ -211,11 +211,11 @@ Para usar o Mercado Envios, você precisa habilitá-lo em sua conta do Mercado P
 ### Crie a Zona de Envio e os Métodos de Envío
 Para usar o Mercado Envios, você precisa que ele seja configurado como método de envio do WooCommerce. Basta seguir as seguintes etapas:
 
-1. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Entrega*. Em *Zona de Envio*, clique em *Adicionar zona de envio*. Digite o nome da zona, selecione as regiões dentro desta zona e clique em *Salvar Alterações*.<br>![Mercado Envios 0](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_0.png)
-2. Clique em *ver* da zona criada.<br>![Mercado Envios 1](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_1.png)
-3. Clique em *Adicionar método de envio* e selecione *Mercado Envios - Normal* ou *Mercado Envios - Express*. Este processo deve ser repetido duas vezes, até que as opções "normal" e "express" estejam selecionadas.<br>![Mercado Envios 2](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_2.png)
-4. Você pode configurar também as opções *Envio Gratuito* e/ou mostrar o *Tempo de Entrega* estimado no cálculo de envio.<br>![Mercado Envios 3](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_3.png)
-5. O Mercado Envios está pronto para uso, mas não se esqueça de habilitar o *Checkout Básico* para a correta operação do *Mercado Envios* e de informar as medidas do seu produto.<br>![Mercado Envios 4](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/me_4.png)
+1. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Entrega*. Em *Zona de Envio*, clique em *Adicionar zona de envio*. Digite o nome da zona, selecione as regiões dentro desta zona e clique em *Salvar Alterações*.<br>![Mercado Envios 0](/images/plugins/modules/woo-commerce/wiki3/me_0.png)
+2. Clique em *ver* da zona criada.<br>![Mercado Envios 1](/images/plugins/modules/woo-commerce/wiki3/me_1.png)
+3. Clique em *Adicionar método de envio* e selecione *Mercado Envios - Normal* ou *Mercado Envios - Express*. Este processo deve ser repetido duas vezes, até que as opções "normal" e "express" estejam selecionadas.<br>![Mercado Envios 2](/images/plugins/modules/woo-commerce/wiki3/me_2.png)
+4. Você pode configurar também as opções *Envio Gratuito* e/ou mostrar o *Tempo de Entrega* estimado no cálculo de envio.<br>![Mercado Envios 3](/images/plugins/modules/woo-commerce/wiki3/me_3.png)
+5. O Mercado Envios está pronto para uso, mas não se esqueça de habilitar o *Checkout Básico* para a correta operação do *Mercado Envios* e de informar as medidas do seu produto.<br>![Mercado Envios 4](/images/plugins/modules/woo-commerce/wiki3/me_4.png)
 
 > IMPORTANTE 1: Sua conta do Mercado Pago precisa ser uma *Seller Account*;
 
@@ -226,7 +226,7 @@ Para usar o Mercado Envios, você precisa que ele seja configurado como método 
 # Configurando as Assinaturas
 Esta página explicará como configurar o módulo para aceitar pagamentos recorrentes de assinaturas. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Assinaturas*. Você deve obter a seguinte página:
 
-![Subscription Checkout Config](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/subscription_checkout_config.png)
+![Subscription Checkout Config](/images/plugins/modules/woo-commerce/wiki3/subscription_checkout_config.png)
 
 Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago), então você pode agora customizar seu checkout por cartão de crédito:
 
@@ -251,7 +251,7 @@ Como a opção de pagamento se comporta.
 
 ### Criando um Produto Assinável
 Uma assinatura precisa de um tipo especial de produto, que deve ser vendido periodicamente. Você pode configurar um produto para ser assinável seguindo as seguintes etapas:
-1. Vá para *Produtos* no menu lateral e clique no botão *Adicionar Produto*. A página aberta deve conter os detalhes e os campos do produto na janela *Dados do Produto*;<br>![Subscription Checkout Product](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/subscription_checkout_product.png)
+1. Vá para *Produtos* no menu lateral e clique no botão *Adicionar Produto*. A página aberta deve conter os detalhes e os campos do produto na janela *Dados do Produto*;<br>![Subscription Checkout Product](/images/plugins/modules/woo-commerce/wiki3/subscription_checkout_product.png)
 2. Complete as informações do seu produto (nome, preço, imagens, etc.) e, em seguida, marque a caixa *Produto Recorrente*;
 3. Preencha os campos de informação para a assinatura: *Frequência* (frequência com que as cobranças serão feitas ao seu cliente), *Tipo de Frequência* (o tipo da frequência pode estar em [Dias] ou [Meses]) e *Data Final* (data em que a assinatura deve terminar).
 
@@ -321,7 +321,7 @@ Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um
 
 > DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
 >
-> ![Developer](https://raw.githubusercontent.com/wiki/mercadopago/cart-woocommerce/images/wiki3/plugins_menu.png)
+> ![Developer](/images/plugins/modules/woo-commerce/wiki3/plugins_menu.png)
 
 Não se preocupe ... Nós o ajudaremos o mais rápido possível.
 
