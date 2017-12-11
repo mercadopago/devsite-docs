@@ -25,6 +25,8 @@ _Disponível para Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay y Ve
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
 
 1. En su panel de administración de Shopify, vaya al menú **Settings > Payments**.
+![Config](/images/plugins/modules/shopify/config-1.gif)
+
 2. En **Accept credit cards**, seleccione **Mercado Pago**.
 3. Llene el **CLIENT ID** e **CLIENT SECRET**. Para obtener las credenciales, acceda a:
 
@@ -36,6 +38,8 @@ _Disponível para Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay y Ve
   * Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
   * Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=basic
   * Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=basic
+
+![Config](/images/plugins/modules/shopify/config-2.gif)
 
 4.Haga clic en el botón "**Activate**" para guardar.
 
