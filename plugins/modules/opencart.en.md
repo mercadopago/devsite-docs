@@ -104,45 +104,45 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 1. In the management of your store, in **extensions > payments > Mercado Pago Custom** click on **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/custom/1.gif)
 
 2. Insert your **PUBLIC_KEY** and **ACCESS_TOKEN** and make other settings in your store:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/custom/2.gif)
 
 3. Set notifications for your store. Finally, click the Save button. Ready! The configuration for your store is done!
   
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/custom/3.gif)
 
 <a name="configuration_standard"></a>
 ## Standard Configuration
 
 1. In the management of your store, in **extensions > payments > Mercado Pago Standard** click on **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/standard/1.gif)
 
 2. Insert your **CLIENT_ID** and **CLIENT SECRET** and make other settings in your store:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/standard/2.gif)
 
 3. Set notifications for your store. Finally, click the Save button. Ready! The configuration for your store is done!
   
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/standard/3.gif)
 
 <a name="configuration_ticket"></a>
 ## Ticket Configuration
 
 1. In the management of your store, in **extensions > payments > Mercado Pago Standard** click on **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/ticket/1.gif)
 
 2. Insert your **ACCESS_TOKEN** and make other settings in your store:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/ticket/2.gif)
 
 3. Set notifications for your store. Finally, click the Save button. Ready! The configuration for your store is done!
 
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/ticket/3.gif)
 
 <a name="Feedback"></a>
 ## Feedback ##

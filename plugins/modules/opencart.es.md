@@ -105,15 +105,15 @@ Durante las pruebas del modo de prueba de seguridad, puede operar a través de H
 
 1. En la administración de su tienda, ir en **extensions > payments > Mercado Pago Custom** y haga clic en **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/custom/1.gif)
 
 2. Establezca **PUBLIC_KEY** y **ACCESS_TOKEN** y haga las otras configuraciones de su tienda:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/custom/2.gif)
 
 3.  Configure el estado de las nofitas que desea para su tienda. Por último, haga clic en el botón Guardar. Listo! La configuración del Mercado Pago Custom para tu tienda está hecha!
   
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/custom/3.gif)
 
 
 <a name="configuration_standard"></a>
@@ -121,15 +121,15 @@ Durante las pruebas del modo de prueba de seguridad, puede operar a través de H
 
 1. En la administración de su tienda, ir en **extensions > payments > Mercado Pago Standard** y haga clic en **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/standard/1.gif)
 
 2. Establezca **CLIENT_ID** and **CLIENT_SECRET** y haga las otras configuraciones de su tienda:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/standard/2.gif)
 
 3.  Configure el estado de las nofitas que desea para su tienda. Por último, haga clic en el botón Guardar. Listo! La configuración del Mercado Pago Custom para tu tienda está hecha!
   
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/standard/3.gif)
 
 
 <a name="configuration_ticket"></a>
@@ -137,16 +137,16 @@ Durante las pruebas del modo de prueba de seguridad, puede operar a través de H
 
 1. En la administración de su tienda, ir en **extensions > payments > Mercado Pago Ticket** y haga clic en **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/ticket/1.gif)
 
 2. Establezca **ACCESS_TOKEN** y haga las otras configuraciones de su tienda:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/ticket/2.gif)
 
 3.  Configure el estado de las nofitas que desea para su tienda. Por último, haga clic en el botón Guardar. Listo! La configuración del Mercado Pago Custom para tu tienda está hecha!
 
   
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/ticket/3.gif)
 <a name="notifications"></a>
 ## Notificaciones
 

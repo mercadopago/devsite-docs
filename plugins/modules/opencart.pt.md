@@ -104,45 +104,45 @@ Durante os testes em modo sandbox, você pode operar em HTTP, mas para homologa�
 
 1. Na tela de administração de sua loja, em **extensions > payments > Mercado Pago Custom** click em **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/custom/1.gif)
 
 2. Insira seu **PUBLIC_KEY** e **ACCESS_TOKEN** e faça as outras configurações de acordo com a necessidade de sua loja:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/custom/2.gif)
 
 3. Configure as nofiticações de sua loja. E após todas as configurações, click no botão 'Save'. Pronto! A configuração de sua loja está completa.
   
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/custom/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/custom/3.gif)
 
 <a name="configuration_standard"></a>
 ## Configuração Standard
 
 1. Na tela de administração de sua loja, em **extensions > payments > Mercado Pago Standard** click em **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/standard/1.gif)
 
 2. Insira seu **CLIENT_ID** e **SECRET** e faça as outras configurações de acordo com a necessidade de sua loja:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/standard/2.gif)
 
 3. Configure as nofiticações de sua loja. E após todas as configurações, click no botão 'Save'. Pronto! A configuração de sua loja está completa.
   
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/standard/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/standard/3.gif)
 
 <a name="configuration_ticket"></a>
 ## Configuração Ticket
 
 1. Na tela de administração de sua loja, em **extensions > payments > Mercado Pago Ticket** click em **Edit**.
 
-  ![Cuenta de Mercado Pago](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/1.gif?raw=true)
+  ![Cuenta de Mercado Pago](/images/plugins/modules/opencart/ticket/1.gif)
 
 2. Insira seu **ACCESS_TOKEN** e faça as outras configurações de acordo com a necessidade de sua loja:
 
- ![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/2.gif?raw=true)
+ ![Mercado Pago Account](/images/plugins/modules/opencart/ticket/2.gif)
 
 3. Configure as nofiticações de sua loja. E após todas as configurações, click no botão 'Save'. Pronto! A configuração de sua loja está completa.
 
-![Mercado Pago Account](https://github.com/flaviofat/devsite-mp-frontend/blob/master/plugins/modules/README.img/opencart/ticket/3.gif?raw=true)
+![Mercado Pago Account](/images/plugins/modules/opencart/ticket/3.gif)
 
 <a name="Feedback"></a>
 ## Feedback ##
