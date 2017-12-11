@@ -39,7 +39,7 @@ _Disponível para Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay y Ve
   * Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=basic
   * Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=basic
 
-![Config](/images/plugins/modules/shopify/config-2.gif)
+  ![Config](/images/plugins/modules/shopify/config-2.gif)
 
 4.Haga clic en el botón "**Activate**" para guardar.
 
