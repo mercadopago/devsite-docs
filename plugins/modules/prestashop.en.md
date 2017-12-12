@@ -4,11 +4,8 @@
 * [Features](#Features)
 * [Installation](#Installation)
 * [Upgrade](#Upgrade)
-* Checkout Custom
-  * [Configure Credit Card and Ticket](#Configure-Credit-Card-and-Ticket)
-* Basic Checkout
-  * [Configure Checkout Redirect](#Configure-Checkout-Redirect)
-  * [Configure Mercado Envios](#Configure-Mercado-Envios)
+* [Configure Custom payment and standard](#Configure-Credit-Card-and-Ticket-Standard)
+* [Configure Mercado Envios](#Configure-Mercado-Envios)
 * [Payment Notification status Settings](#Payment-Notification-status-settings)
 * [Support](#Support)
 
@@ -151,9 +148,7 @@ This process will explain how to configure the module to accept Mercado Envios:
 2. To enable the Mercado Envios, go to the page of module and Enable the **Mercado Envios** option and click in **Save**.
 ![Enable Mercado Envios](../../images/plugins/modules/prestashop/mercadoenvios_settings.gif)
 
-5. Very good! The Mercado Envios has been configured and enable successfully!
-
-![Configuration](https://raw.githubusercontent.com/mercadopago/cart-magento/master/README.img/wiki/me_save.png)
+3. Very good! The Mercado Envios has been configured and enable successfully!
 
 > 	Youtube:
 https://youtu.be/rtXNkdaqUJ8 
