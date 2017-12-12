@@ -3,10 +3,8 @@
 * [Requirements](#Requirements)
 * [Features](#Features)
 * [Installation](#Installation)
-* [Upgrade](#Upgrade)
 * [Configure Custom payment and standard](#Configure-Credit-Card-and-Ticket-Standard)
 * [Configure Mercado Envios](#Configure-Mercado-Envios)
-* [Payment Notification status Settings](#Payment-Notification-status-settings)
 * [Support](#Support)
 
 <a name="Requirements"></a>
@@ -88,7 +86,7 @@ This process will explain the installation of the Mercado Pago module via Packag
 **Installation via Marketplace**
 
 1. Go to **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** and click in Register to Download:
-2. Before your register, you can download the module.open
+2. Before your register, you can download the module.
 ![Download](../../images/plugins/modules/prestashop/download.gif)
 
 3. Now access you admin and go to Modules and Services.
@@ -125,7 +123,7 @@ This process will explain how to configure the module to accept payments with Ch
 4. Enable custom, fill the **access token** and **public key** and select the options for accept in your custom payment:
 ![Credentials Custom](../../images/plugins/modules/prestashop/credentials_2.gif)
 
-5. Enable standard:
+5. Enable standard, you need to enable the option **Settings - MercadoPago Standard**:
 ![Enable Standard](../../images/plugins/modules/prestashop/standard.gif)
  
 6. Very good! The Checkout Custom with Credit Card, Ticket and standard has been configured and enabled successfully!
@@ -145,7 +143,7 @@ This process will explain how to configure the module to accept Mercado Envios:
 
 > 	IMPORTANT: Your Mercado Pago account must be of type **Seller** and the products needs to have the correct dimensions.
 
-2. To enable the Mercado Envios, go to the page of module and Enable the **Mercado Envios** option and click in **Save**.
+2. To enable the Mercado Envios, Enable the **Mercado Envios** option and click in **Save**:
 ![Enable Mercado Envios](../../images/plugins/modules/prestashop/mercadoenvios_settings.gif)
 
 3. Very good! The Mercado Envios has been configured and enable successfully!
@@ -167,7 +165,7 @@ If you have any questions, problems or errors we have a support channel. Send an
 * Email of your account Mercado Pago.
 * Details about your question, problem or error.
 * Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
-* Version of Magento.
+* Version of Prestashop.
 * Module version, if you are using.
 
 Don't worry... We will help you as soon as possible.
