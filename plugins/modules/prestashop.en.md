@@ -98,7 +98,7 @@ This process will explain the installation of the Mercado Pago module via Packag
 ![Configuration](../../images/plugins/modules/prestashop/installation_success.png)
 
 <a name="Configure-Credit-Card-and-Ticket-Standard"></a>
-## Configure Credit Card and Ticket: ##
+## Configure Credit Card, Ticket and Redirect: ##
 
 This process will explain how to configure the module to accept payments with Checkout Custom with Credit Card, Tickets and Standard:
 
