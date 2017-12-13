@@ -74,9 +74,9 @@ The module of Mercado Pago to Prestahop is integrated with the features and paym
     * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
 
 * Other features
-    * Order update via Cron
     * Customizable success page
-    * Installments calculator
+    * Installments product calculator
+    * Installments shipment calculator 
 
 <a name="Installation"></a>
 ## Installation: ##

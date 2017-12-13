@@ -1,180 +1,177 @@
-# Prestashop - Mercado Pago Module (v1.3.6 - 1.4.7.3x, 1.5.x, 1.6.x, 1.7.x)
----
+# Prestashop - Mercado Pago Modulo (v1.6.x to 1.7.x)
 
-* [Features](#features)
-* [Requirements](#requirements)
-* [Available versions](#available_versions)
-* [Installation](#installation)
-* [Setup](#setup)
-* [Notifications](#notifications)
-* [Example features](#pictures_features)
-* [Social](#social)
+* [Requisitos](#Requirements)
+* [Funcionalidades](#Features)
+* [Instalação](#Installation)
+* [Configurar pagamento transparente e redirect](#Configure-Credit-Card-and-Ticket-Standard)
+* [Configurar Mercado Envios](#Configure-Mercado-Envios)
+* [Suporte](#Support)
 
-<a name="features"></a>
-##Features##
+<a name="Requirements"></a>
+## Requisitos: ##
 
-Checkout options right for your business:
-We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
+**Prestashop Versão**
+* Prestashop 1.6.x - 1.7.x
 
-**Custom Checkout**
+**Ambiente**
+* LAMP (Linux, Apache, MySQL, and PHP)
+* LNMP stack
 
-Offer a checkout fully customized to your brand experience with our simple-to-use payments API.
+**Sistema Operacional**
+* Linux x 86
+* x86-64
 
-* Seamless integration— no coding required, unless you want to.
-* Full control of buying experience.
-* Store buyer’s card for fast checkout.
-* Accept tickets in addition to cards.
-* Accept MercadoPago's discount coupons.
-* Improve conversion rate.
+**Web Server**
+* Apache 2.x
+* Nginx 1.7.x
 
-*Available for Argentina, Brazil, Colombia, Mexico, Peru and Venezuela*
+**Hospedagem**
+* Can execute crontab with PHP 5
+* Can override the .htaccess file
 
-**Basic Checkout**
+**Versão PHP**
+* PHP 5.6
+* PHP 5.5
+* PHP 5.4
 
-Great for merchants who want to get going quickly and easily.
+**Versão MySQL**
+* MySQL 5.6 (Oracle or Percona)
 
-* Easy website integration— no coding required.
-* Limited control of buying experience — display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
+**Dependências**
+* PDO_MySQL
+* simplexml
+* mcrypt
+* hash
+* GD
+* DOM
+* iconv
+* curl
+* SOAP (for Webservices API)
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
+**Configurações adicionais**
+* safe_mode off
+* memory_limit maior que 256MB (512MB é o recomendado)
 
-<a name="requirements"></a>
-##Requirements##
-Basically, the requirements of this plugin are same as you need to run WooCommerce. Your machine should have:
-
-**Platforms**
-
-* <a href="https://www.prestashop.com/en/download">Prestashop</a> 1.6 or greater;
-
-**Web Server Host**
-
-* <a href="http://php.net/">PHP</a> 5.6 or greater with CURL support;
-* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.0 or greater;
-* <a href="https://httpd.apache.org/">Apache 2.x</a>.
-
-**SSL certificate**
-
-If you're using Custom Checkout, it is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
-During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
+**SSL**
+* Isso é obrigatório para ir para produção e utilizar nosso checkout transparente.
+* Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.
 
 
-<a name="available_versions"></a>
-##Available versions##
-<table>
-  <thead>
-    <tr>
-      <th>Plugin Version</th>
-      <th>Status</th>
-      <th>Compatible Versions</th>
-    </tr>
-  <thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-prestashop/tree/master/v1.3.6%20-%201.4.7.3x">v1.3.6 - 1.4.7.3x</a></td>
-      <td>Deprecated (Old Version)</td>
-      <td>Prestashop v1.3.6 - 1.4.7.3x</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-prestashop/tree/master/v1.5.x/mercadopago">v1.5.x</a></td>
-      <td>Deprecated (Old Version)</td>
-      <td>Prestashop v1.5.x</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-prestashop/tree/master/v1.6.x">v1.6.x</a></td>
-      <td>Stable (Current Version)</td>
-      <td>Prestashop v1.6.x</td>
-     </tr>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-prestashop/tree/master/v1.7.x">v1.7.x</a></td>
-      <td>Stable (Current Version)</td>
-      <td>Prestashop v1.7.x</td>
-     </tr>
-  </tbody>
-</table>
+<a name="Features"></a>
+## Funcionalidades: ##
 
-<a name="installation"></a>
-##Installation##
+O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades a seguir:
 
-1. Download Prestashop: https://www.prestashop.com/es/versiones-para-programadores#previous-version
-    * Prestashop v1.3.6 - 1.4.7.3x
-    * Prestashop v1.5.x
-    * Prestashop v1.6.x
-    * Prestashop v1.7.x
+* [Checkout Básico(Redirect)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+    * Split pagamentos (2 cartões)
+    * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+    * [Devolução de pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 
-<a name="setup"></a>
-##Setup##
+* Pagamento transparente
+    * [Pagamento com cartão de crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+    * [One Click Pay](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
+    * [Outros meios de pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
+    * [Devolução de pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
 
-1. Copy **mercadopago** folder to **modules** folder.
+* Outras funcionalidades
+    * Página de sucesso customizável
+    * Calculadora de parcelas
+    * Calculadora de mercado envios
 
-2. On your store administration, go to **Modules > Modules**.
+<a name="Installation"></a>
+## Instalação: ##
 
-3. Search by **MercadoPago** and click install. <br />
-You will receive the following message: " Module(s) installed successfully."
-  ![Installation](https://raw.github.com/mercadopago/cart-prestashop/master/README.img/Installation.JPG)<br />
+Esse processo mostra como realizar a instalação via Marketplace:
 
-4. Set your **CLIENT_ID** and **CLIENT_SECRET**, or **PUBLIC_KEY** and **ACCESS_TOKEN** (depending on which module you're using). 
+**Instalação via Marketplace**
 
-  Get your credentials in the following address:
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mlp/account/credentials](https://www.mercadopago.com/mlp/account/credentials)
-  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+1. Ir em **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** e clique no botão registrar para Download:
+2. Depois do seu registro você pode fazer o download.
+![Download](../../images/plugins/modules/prestashop/download.gif)
 
-***IMPORTANT:*** *This module will only work with the following currencies:*
+3. Agora acesse seu admin e se direcione a Modulos e Serviços.
+![Instalação](../../images/plugins/modules/prestashop/installation.gif)
 
-* Argentina:
-  * **ARS** (Argentinian Peso)
-* Brazil:
-  * **BRL** (Brazilian Real)
-* Chile:
-  * **CLP** (Chilean Peso)
-* Colombia:
-  * **COP** (Colombian Peso)
-* Mexico:
-  * **MXN** (Mexican Peso)
-* Peru:
-  * **PEN** (Peruvian Sol)
-* Uruguay:
-  * **UYU** (Peso Uruguayo)
-* Venezuela:
-  * **VEF** (Venezuelan Bolivar)
+4. Muito bem! O módulo do Mercado Pago foi instalado com sucesso.
+![Configuração](../../images/plugins/modules/prestashop/installation_success.png)
+
+<a name="Configure-Credit-Card-and-Ticket-Standard"></a>
+## Configurar cartão de crédito, boleto e redirect: ##
+
+Esse processo deve de auxiliar a configuração do módulo para pagamentos com checkout transparente e redirecionado:
+
+1. Após a instalação do módulo, se direcione para  **Mercado Pago > Configurar**, agora você precisa obeter suas credenciais.
+
+2. Para obter suas credenciais você deve ir **Mercado Pago - Custom Checkout**, você deverá visualizar os campos **Public Key** e **Access Token**. Acesse acesse o link do seu país:
+
+* Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
+* Brasil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
+* Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
+* Colômbia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
+* Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
+* Uruguai: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+* Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
+* Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
+
+> Existem dois tipos de credenciais:
+> * Modo Sandbox: Essa credencial é utilizada para testes.
+> * Modo Produção: Essa credencial é utilizada para compras em produção, para isso user a opção de "Eu quero ir para produção".
+
+3. Agora você pode preencher o **client id** e **client secret**, clique no botão **Login**:
+![Login](../../images/plugins/modules/prestashop/credentials_1.gif)
+
+4. Habilite o módulo customizado, preencha o **access token** e **public key**, selecione as opçãos de pagamentos transparentes:
+![Pagamento transparente](../../images/plugins/modules/prestashop/credentials_2.gif)
+
+5. Para o Checkout Standard,você precisa apenas habilitar a opção **Configurações - Mercado Pago Standard**:
+![Enable Standard](../../images/plugins/modules/prestashop/standard.gif)
+ 
+6. Muito bem! Você habilitou pagamentos transparentes e redirect!
+ 
+<a name="Configure-Mercado-Envios"></a>
+## Configurar Mercado Envios: ##
+
+Os passos a seguir vai mostrar como habilitar o Mercado Envios.
+> 	IMPORTANTE: O Mercado Envios funciona com o Mercado Pago Redirect e os outros meios de pagamentos serão desabilitados.
+
+1. Primeiro, você precisa habilitar o Mercado Envios na sua conta.
+
+	Você pode acessar o link a seguir de acordo com o seu país:
+
+	* Argentina: http://shipping.mercadopago.com.ar/optin/doOptin
+	* Brasil: http://shipping.mercadopago.com.br/optin/doOptin
+	* Mexico: http://shipping.mercadopago.com.mx/optin/doOptin
+
+> 	IMPORTANTE: Sua conta do Mercado Pago precisa ser do tipo **Vendedor** e os produtos precisam ter as dimensões corretas.
+
+2. Para habilitar no módulo, você precisa apenas ativar ele na opção **Mercado Envios** e clicar em **Salvar**:
+![Habilitar Mercado Envios](../../images/plugins/modules/prestashop/mercadoenvios_settings.gif)
+
+3. Muio bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
+
+> 	Youtube:
+https://youtu.be/rtXNkdaqUJ8 
+
+> 	Facebook:
+https://www.facebook.com/groups/modulos.mercadopago/
+
+<a name="FAQ"></a>
+## FAQ: ##
+
+Em construção...
 
 
-<a name="notifications"></a>
-## Notifications
-Your store will automatically sync with MercadoPago. The notification URL will be sent in each payment.
+<a name="Support"></a>
+## Suporte: ##
 
-<a name="pictures_features"></a>
-## Example features
+> IMPORTANTE: Mantenha a o seu módulo atualizado, e sempre utilize a instalação via Admin ao invés de copiar e colar as pastas.
 
-**Credit Card Customized Checkout**
-<br/>
-![pictures_features](https://raw.github.com/mercadopago/cart-prestashop/master/README.img/Checkout.jpg)
+Se você tiver alguma dúvida ou problemas de instalação. Envie um email para modulos@mercadopago.com com as seguintes informações:
 
-**Print Ticket**
-<br/>
-![pictures_features](https://raw.github.com/mercadopago/cart-prestashop/master/README.img/Ticket.jpg)
+* Email da sua conta do Mercado Pago.
+* Detalhes do seu erros, envie em anexo o arquivo de log que fica dentro da pasta prestashop/modulos/mercadopago/logs/mercadopago.log.
+* Evidências pode ajudar( Tela do erro, passo a passo, vídeo, etc.).
+* Versão do Prestashop.
+* Versão do módulo que esta utilizando.
 
-**Customer Card** <strong>Prestashop v1.6.x</strong>
-<br/>
-![pictures_features](https://raw.github.com/mercadopago/cart-prestashop/master/README.img/CustomerCard.jpg)
-
-**Discount Coupon** <strong>Prestashop v1.6.x</strong>
-<br/>
-![pictures_features](https://raw.github.com/mercadopago/cart-prestashop/master/README.img/Coupon.jpg)
-
-<a name="social"></a>
-##Social##
-
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>
+E não se preocupe que vamos responder o mais rápido possível.
