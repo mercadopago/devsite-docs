@@ -14,7 +14,7 @@
 * Prestashop 1.6.x - 1.7.x
 
 **Ambiente**
-* LAMP (Linux, Apache, MySQL, and PHP)
+* LAMP (Linux, Apache, MySQL, e PHP)
 * LNMP stack
 
 **Sistema Operacional**
@@ -25,17 +25,13 @@
 * Apache 2.x
 * Nginx 1.7.x
 
-**Hospedagem**
-* Can execute crontab with PHP 5
-* Can override the .htaccess file
-
 **Versão PHP**
 * PHP 5.6
 * PHP 5.5
 * PHP 5.4
 
 **Versão MySQL**
-* MySQL 5.6 (Oracle or Percona)
+* MySQL 5.6 (Oracle ou Percona)
 
 **Dependências**
 * PDO_MySQL
@@ -120,7 +116,7 @@ Esse processo deve de auxiliar a configuração do módulo para pagamentos com c
 3. Agora você pode preencher o **client id** e **client secret**, clique no botão **Login**:
 ![Login](../../images/plugins/modules/prestashop/credentials_1.gif)
 
-4. Habilite o módulo customizado, preencha o **access token** e **public key**, selecione as opçãos de pagamentos transparentes:
+4. Habilite o módulo customizado, preencha o **access token**, **public key** e selecione as opçãos de pagamentos:
 ![Pagamento transparente](../../images/plugins/modules/prestashop/credentials_2.gif)
 
 5. Para o Checkout Standard,você precisa apenas habilitar a opção **Configurações - Mercado Pago Standard**:
