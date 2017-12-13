@@ -10,7 +10,7 @@
 <a name="Requirements"></a>
 ## Requisitos: ##
 
-**Prestashop Versão**
+**Prestashop Version**
 * Prestashop 1.6.x - 1.7.x
 
 **Ambiente**
