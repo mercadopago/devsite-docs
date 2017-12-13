@@ -143,7 +143,7 @@ Os passos a seguir vai mostrar como habilitar o Mercado Envios.
 2. Para habilitar no módulo, você precisa apenas ativar ele na opção **Mercado Envios** e clicar em **Salvar**:
 ![Habilitar Mercado Envios](../../images/plugins/modules/prestashop/mercadoenvios_settings.gif)
 
-3. Muio bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
+3. Muito bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
 
 > 	Youtube:
 https://youtu.be/rtXNkdaqUJ8 
