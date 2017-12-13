@@ -4,8 +4,8 @@
 * [Funcionalidades](#Features)
 * [Instalación](#Installation)
 * [Configurar el pago transparente y redirect](#Configure-Credit-Card-and-Ticket-Standard)
-* [Configurar Mercado de Envios] (#Configure-Mercado-Envios)
-* [Soporte] (#Support)
+* [Configurar Mercado de Envios](#Configure-Mercado-Envios)
+* [Soporte](#Support)
 
 <a name="Requirements"></a>
 ## Requisitos: ##
