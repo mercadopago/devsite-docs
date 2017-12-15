@@ -67,7 +67,7 @@ You must have sufficient funds in your account in order to successfully refund t
 
 If the buyer made the payment with card, the amount will be refunded directly to the card.
 
-If the payment was made by other means, the amount will be deposited in the buyer’s MercadoPago account. If the buyer has no account, we will create one using the buyer’s e-mail address.
+If the payment was made by other means, the amount will be deposited in the buyer’s Mercado Pago account. If the buyer has no account, we will create one using the buyer’s e-mail address.
 
 ### Issue a full refund
 

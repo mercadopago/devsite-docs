@@ -1,0 +1,263 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Payment method identifier.
+      es: Identificador del medio de pago.
+      pt: Id do meio de pagamento.
+- name:
+    type: String
+    description:
+      en: Name of the payment method.
+      es: Nombre del medio de pago.
+      pt: Nome do meio de pagamento.
+- payment_type_id:
+    type: String
+    description:
+      en: Types of payment methods.
+      es: Tipo de medio de pago.
+      pt: Tipo de meio de pagamento.
+    enum:
+    - ticket:
+        en: Printed ticket.
+        es: Ticket impreso
+        pt: Printed ticket.
+    - atm:
+        en: Payment by ATM.
+        es: Pago en ATM.
+        pt: Payment by ATM.
+    - credit_card:
+        en: Payment by credit card.
+        es: Pago con tarjeta de crédito.
+        pt: Payment by credit card.
+    - debit_card:
+        en: Payment by debit card.
+        es: Pago con tarjeta de débito.
+        pt: Payment by debit card.
+    - prepaid_card:
+        en: Payment by prepaid card.
+        es: Pago con tarjeta prepaga.
+        pt: Payment by prepaid card.
+- status:
+    type: String
+    description:
+      en: Payment methods status.
+      es: Estado del medio de pago.
+      pt: Estado do meio de pagamento.
+    enum:
+    - active:
+        en: Available for use.
+        es: Disponible para su uso.
+        pt: Available for use.
+    - deactive:
+        en: Decommissioned, we don't support it anymore.
+        es: Inactivo, no soportado.
+        pt: Decommissioned, we don't support it anymore.
+    - temporally_deactive:
+        en: Unavailable for use, possible interruption of the service.
+        es: No disponible para su uso, posible interrupción de servicio.
+        pt: Unavailable for use, possible interruption of the service.
+- secure_thumbnail:
+    type: String
+    description:
+      en: Logo to display on secure sites.
+      es: Logo a mostrar en sitios seguros.
+      pt: Logo a mostrar em sites seguros.
+- thumbnail:
+    type: String
+    description:
+      en: Logo to show.
+      es: Logo a mostrar.
+      pt: Logo a mostrar.
+- deferred_capture:
+    type: String
+    description:
+      en: Whether the capture can be delayed or not.
+      es: Indica si la captura puede ser diferida o no.
+      pt: Indica se a captura pode ser lenta ou não.
+    enum:
+    - supported:
+        en: This payment method supports authorization and capture operations.
+        es: El medio de pago soporta operaciones de autorización y captura.
+        pt: This payment method supports authorization and capture operations.
+    - unsupported:
+        en: Deferred capture is not available for this payment method.
+        es: Captura diferida no esta disponible para este medio de pago.
+        pt: Deferred capture is not available for this payment method.
+    - does_not_apply:
+        en: Cash payment methods don't allow deferred capture.
+        es: Los medios de pago en efectivo no admiten captura diferida.
+        pt: Cash payment methods don't allow deferred capture.
+- settings:
+    type: Object
+    description:
+      en: Payment method settings.
+      es: Configuración de métodos de pago.
+      pt: Configuração de métodos de pagamento.
+    properties:
+    - bin:
+        type: Object
+        description:
+          en: ''
+          es: ''
+          pt: ''
+        properties:
+        - pattern:
+            type: String
+            description:
+              en: Regular expression representing the accepted bins.
+              es: Expresión regular representando los bines aceptados.
+              pt: A expressão regular, representando bines aceitos.
+        - exclusion_pattern:
+            type: String
+            description:
+              en: Regular expression representing the excluded bins.
+              es: Expresión regular representando los bines excluídos.
+              pt: A expressão regular, representando bines excluídos.
+        - installments_pattern:
+            type: String
+            description:
+              en: Regular expression representing bins allowed to pay with more than
+                one installment.
+              es: Expresión regular representando los bines aceptados para pagar con
+                más de una cuota.
+              pt: A expressão regular, representando bines aceitos para pagar com
+                mais de uma cota.
+    - card_number:
+        type: Object
+        description:
+          en: ''
+          es: ''
+          pt: ''
+        properties:
+        - length:
+            type: String
+            description:
+              en: Card number length.
+              es: Longitud del número de la tarjeta de crédito.
+              pt: Comprimento do número do cartão de crédito.
+        - validation:
+            type: String
+            description:
+              en: Whether the card number can be validated using a checksum algorithm
+                (usually Luhn)
+              es: En tanto y en cuanto el número de tarjeta pueda ser validado con
+                un algoritmo cheksum (usualmenet Luhn)
+              pt: Em tanto e quanto, o número do cartão possa ser validado com um
+                algoritmo cheksum (usualmenet Luhn)
+            enum:
+            - standard:
+                en: The card number should validate Luhn's algorithm.
+                es: El número de tarjta debe validar el algorimo Luhn's.
+                pt: The card number should validate Luhn's algorithm.
+            - none:
+                en: There is no algorithm to validate the checksum.
+                es: No hay algoritmo para validad la checksum.
+                pt: There is no algorithm to validate the checksum.
+    - security_code:
+        type: Object
+        description:
+          en: ''
+          es: ''
+          pt: ''
+        properties:
+        - mode:
+            type: String
+            description:
+              en: Whether the security code is mandatory or not.
+              es: Indica si el código de seguridad es mandatorio o no.
+              pt: Indica se o código de segurança é obrigatório ou não.
+            enum:
+            - mandatory:
+                en: The security code should be given to process the payment.
+                es: El código de seguridad es requerido para procesar el pago.
+                pt: The security code should be given to process the payment.
+            - optional:
+                en: A payment could be issued without the security code.
+                es: Un pago que puede ser procesado sin el código de seguridad.
+                pt: A payment could be issued without the security code.
+        - length:
+            type: Number
+            description:
+              en: Security code length.
+              es: Longitud del código de seguridad.
+              pt: Comprimento do código de segurança.
+        - card_location:
+            type: String
+            description:
+              en: Whether the security code is located in the back or in the front
+                of the card.
+              es: Ubicación del código de seguridad de la tarjeta en la tarjeta.
+              pt: Localização do código de segurança do cartão do cartão.
+            enum:
+            - back:
+                en: The security code is located in the back of the card.
+                es: El código de seguridad se encuentra en la parte trasera de la
+                  tarjeta.
+                pt: The security code is located in the back of the card.
+            - front:
+                en: The security code is located in the front of the card.
+                es: El código de seguridad se encuentra en el frente de la tarjeta.
+                pt: The security code is located in the front of the card.
+- additional_info_needed:
+    type: List(String)
+    description:
+      en: List of additional information that must be supplied by the payer.
+      es: Lista de información adicional que debe ser provista por el pagador.
+      pt: Lista de informações que devem ser fornecidas pelo pagador.
+    enum:
+    - cardholder_identification_number:
+        en: Identification number of the card owner.
+        es: Número de indentificación del dueño de la tarjeta.
+        pt: Identification number of the card owner.
+    - cardholder_identification_type:
+        en: Identification type of the card owner.
+        es: Tipo de identificación del dueño de la tarjeta.
+        pt: Identification type of the card owner.
+    - cardholder_name:
+        en: Name as seen in the card of the card owner.
+        es: Nombre del dueño de la tarjeta, como aparece en la tarjeta.
+        pt: Name as seen in the card of the card owner.
+    - issuer_id:
+        en: Id of the card issuing entity.
+        es: Identificador de la entidad emisora de la tarjeta.
+        pt: Id of the card issuing entity.
+- min_allowed_amount:
+    type: Number
+    description:
+      en: Minimum amount that can be processed with this payment method.
+      es: Mínimo monto que se puede procesar con este medio de pago.
+      pt: Mínimo valor que pode ser processado com este meio de pagamento.
+- max_allowed_amount:
+    type: Number
+    description:
+      en: Maximum amount that can be processed with this payment method.
+      es: Máximo monto que se puede procesar con este medio de pago.
+      pt: Máximo valor que pode ser processado com este meio de pagamento.
+- accreditation_time:
+    type: Number
+    description:
+      en: How many time in minutes could happen until processing of the payment.
+      es: Tiempo de procesamiento del pago.
+      pt: Tempo de processamento do pagamento.
+- financial_institutions:
+    type: Object
+    description:
+      en: Finantial institution processing this payment method.
+      es: Institución financiera procesando el medio de pago.
+      pt: Instituição financeira processando o meio de pagamento.
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: 'External financial institution identifier (e.g.: company id for atm)'
+          es: Identificador de institución financiera externa
+          pt: Identificador de instituição financeira externa
+    - description:
+        type: String
+        description:
+          en: Descriptive finantial institution name.
+          es: Nombre descriptivo de la institución financiera.
+          pt: Nome descritivo para a instituição financeira.

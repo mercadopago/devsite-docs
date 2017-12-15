@@ -36,7 +36,7 @@ Utiliza el dato *site_id* para indicar el país donde quieres realizar las prueb
 <?php
   $body = array(
     "json_data" => array(
-      "site_id" => "MLA"
+      "site_id" => "[FAKER][GLOBALIZE][UPPER_SITE_ID]"
     )
   );
 
@@ -49,7 +49,7 @@ Utiliza el dato *site_id* para indicar el país donde quieres realizar las prueb
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
--d '{"site_id":"MLA"}'
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 ]]]
 ##### _Response_

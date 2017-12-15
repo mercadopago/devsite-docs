@@ -1,0 +1,33 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Identification type id.
+      es: Identificador de tipo de identificación.
+      pt: Identificador de tipo de identificação.
+- name:
+    type: String
+    description:
+      en: Identification type name.
+      es: Nombre de tipo de identificación.
+      pt: Nome de tipo de identificação.
+- type:
+    type: String
+    description:
+      en: Identification number data type.
+      es: Tipo de dato del número de identificación.
+      pt: Tipo de dados do número de identificação.
+- min_length:
+    type: number
+    description:
+      en: Identification number min length.
+      es: Mínima longitud del número de identificación.
+      pt: Mínima comprimento do número de identificação.
+- max_length:
+    type: number
+    description:
+      en: Identification number max length
+      es: Máxima longitud del número de identificación.
+      pt: O comprimento máximo do número de identificação.

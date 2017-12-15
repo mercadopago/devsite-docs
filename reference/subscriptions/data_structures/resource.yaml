@@ -1,0 +1,237 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: Subscription identifier
+      es: Subscription identifier
+      pt: Subscription identifier
+- plan_id:
+    type: String
+    description:
+      en: Plan to which the subscription belongs
+      es: Plan to which the subscription belongs
+      pt: Plano to which the subscription belongs
+- payer:
+    type: Object
+    description:
+      en: Identifies the buyer
+      es: Identifies the buyer
+      pt: Identifies the buyer
+    properties:
+    - id:
+        type: Integer
+        description:
+          en: Identification of the associated payer
+          es: Identification of the associated payer
+          pt: Identification of the associated ferreira
+    - type:
+        type: String
+        description:
+          en: Identification type of the associated payer
+          es: Identification type of the associated payer
+          pt: Identification type of the associated ferreira
+        enum:
+        - customer:
+            en: Payer is a Customer and belongs to the collector
+            es: Payer is a Customer and belongs to the collector
+            pt: Payer is a Customer and belongs to the collector
+        - registered:
+            en: The account corresponds to a MercadoPago registered user
+            es: The account corresponds to a MercadoPago registered user
+            pt: The account corresponds to a MercadoPago registered user
+    - email:
+        type: String
+        description:
+          en: Customer's email
+          es: Customer's email
+          pt: Customer's e-mail
+    - identification:
+        type: Object
+        description:
+          en: Personal identification
+          es: Personal identification
+          pt: Personal identification
+        properties:
+        - type:
+            type: String
+            description:
+              en: Identification type
+              es: Identification type
+              pt: Type Identification
+        - number:
+            type: String
+            description:
+              en: Identification number
+              es: Identification number
+              pt: Identification number
+- application_fee:
+    type: Float
+    description:
+      en: Fee collected by a marketplace or MercadoPago Application
+      es: Fee collected by a marketplace or MercadoPago Application
+      pt: Fee collected by a marketplace or Application MercadoPago
+- status:
+    type: String
+    description:
+      en: Subscription status
+      es: Subscription status
+      pt: Subscription status
+    enum:
+    - authorized:
+        en: The subscription is running
+        es: The subscription is running
+        pt: The subscription is running
+    - paused:
+        en: No charges will be made during this state (stop debit)
+        es: No charges will be made during this state (stop debit)
+        pt: No charges will be made during this state (stop debit)
+    - finished:
+        en: The subscription ended at the proper date, and it processed all its invoices
+        es: The subscription ended at the proper date, and it processed all its invoices
+        pt: The subscription ended at the proper date, and it processed all its invoices
+    - cancelled:
+        en: The subscription was cancelled prior to its end date
+        es: The subscription was cancelled prior to its end date
+        pt: The subscription was cancelled prior to its end date
+- description:
+    type: String
+    description:
+      en: Subscription plan reason or service title
+      es: Subscription plan reason or service title
+      pt: Subscription plano reason or service title
+- external_reference:
+    type: String
+    description:
+      en: ID given by the merchant in their system
+      es: ID given by the merchant in their system
+      pt: ID given by the merchant in their system
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en: Subscription creation date
+      es: Subscription creation date
+      pt: Subscription creation date
+- last_modified:
+    type: Date(ISO_8601)
+    description:
+      en: Last modified date
+      es: Last modified date
+      pt: Last modified date
+- live_mode:
+    type: Boolean
+    description:
+      en: Whether the subscription will be processed in sandbox or in production mode
+      es: Whether the subscription will be processed in sandbox or in production mode
+      pt: Whether the subscription will be processed in sandbox or in production mode
+- start_date:
+    type: Date(ISO_8601)
+    description:
+      en: When billing process begins to happen
+      es: When billing process begins to happen
+      pt: When process billing begins to happen
+- end_date:
+    type: Date(ISO_8601)
+    description:
+      en: When billing process stops (the subscription finishes)
+      es: When billing process stops (the subscription finishes)
+      pt: When process billing stops (the subscription finishes)
+- metadata:
+    type: Object
+    description:
+      en: Valid JSON that can be attached to the subscription to record additional
+        attributes of the merchant
+      es: Valid JSON that can be attached to the subscription to record additional
+        attributes of the merchant
+      pt: Valid JSON that can be attached to the subscription to record additional
+        attributes of the merchant
+- charges_detail:
+    type: Object
+    description:
+      en: Summarizes the subscription status at the given time
+      es: Summarizes the subscription status at the given time
+      pt: Summarizes the subscription status at the given time
+    properties:
+    - invoices:
+        type: List(Object)
+        description:
+          en: All generated invoices
+          es: All generated invoices
+          pt: All generated pode estar
+        properties:
+        - period:
+            type: Date(ISO_8601)
+            description:
+              en: Date of time period charged or to be charged
+              es: Date of time period charged or to be charged
+              pt: Date of time period charged or to be charged
+        - id:
+            type: String
+            description:
+              en: Invoice identifier
+              es: Invoice identifier
+              pt: Invoice identifier
+    - last_charged_date:
+        type: Date(ISO_8601)
+        description:
+          en: Date of last processed invoice
+          es: Date of last processed invoice
+          pt: Date of last processed invoice
+    - last_charged_amount:
+        type: Float
+        description:
+          en: Amount of last processed invoice
+          es: Amount of last processed invoice
+          pt: Amount of last processed invoice
+    - pending_charge_amount:
+        type: Float
+        description:
+          en: Amount to be charged during the rest of the subscription
+          es: Amount to be charged during the rest of the subscription
+          pt: Amount to be charged during the rest of the subscription
+    - pending_charge_periods:
+        type: Integer
+        description:
+          en: Quantity of invoices to be charged during the rest of the subscription
+          es: Quantity of invoices to be charged during the rest of the subscription
+          pt: Quantity of pode estar to be charged during the rest of the subscription
+    - charged_amount:
+        type: Float
+        description:
+          en: Amount already charged by this subscription
+          es: Amount already charged by this subscription
+          pt: Amount already charged by this subscription
+    - charged_periods:
+        type: Integer
+        description:
+          en: Quantity of invoices already charged by this subscription
+          es: Quantity of invoices already charged by this subscription
+          pt: Quantity of pode estar already charged by this subscription
+    - debt_amount:
+        type: Float
+        description:
+          en: Amount that this subscription was unable to collect
+          es: Amount that this subscription was unable to collect
+          pt: Amount that this subscription was unable to collect
+    - debt_periods:
+        type: Integer
+        description:
+          en: Quantity of invoices that this subscription was unable to collect
+          es: Quantity of invoices that this subscription was unable to collect
+          pt: Quantity of pode estar that this subscription was unable to collect
+    - next_payment_date:
+        type: Date(ISO_8601)
+        description:
+          en: Date of next charge or charging retry on the current invoice
+          es: Date of next charge or charging retry on the current invoice
+          pt: Date of next charge or charging retry on the current invoice
+- setup_fee:
+    type: Float
+    description:
+      en: Amount to be charged once, during de subscription process. Useful to charge
+        an installation cost or a sign up price.
+      es: Amount to be charged once, during de subscription process. Useful to charge
+        an installation cost or a sign up price.
+      pt: Amount to be charged onze, durante o período de inscrição process. Useful
+        to charge an installation cost or sign up price.

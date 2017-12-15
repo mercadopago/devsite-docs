@@ -15,20 +15,19 @@ sites_supported:
 >
 > Prerequisites
 >
-> *  This guide assumes that you have followed the Introduction and Receive Payments sections of the documentation for the installation, default integration of the SDK and the creation of a payment preference.
+> *  This guide presumes that you have already followed the steps in the introduction section of the documentation for installing the SDK and the default integration, along with the creation of the payment preference.
 
 ## Customize the payment preference
 
-When creating the payment preference in your server you can specify restrictions such as payment method exclusions, specific payment types supported or set default or maximum amounts of installments.
+If necessary, when creating the payment preference on your server, you can specify restrictions such as specific exclusions of payment methods or types and set the maximum or the default number of installments.
 
-#### Excluir Medios de Pago
+#### Exclude Payment Methods
 
-By default, we offer all payment methods available for the country where you are running the integration. If your business model does not support any of these [payment types](#localización), or you [do not want to accept any particular method](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), you can exclude it when creating the payment preference.
+You can specify the types of payment method you do not want to accept (Cash, Credit or Debit Cards) by excluding them when creating the Checkout Preference.
 
-In addition, you can set the payment method or the number of installments that should be displayed by default, as well as the maximum number of installments to offer.
+In the content of the payment preference, you can add the payment methods or types of payment methods that you do not want to accept.
 
 *Exclude a specific payment type*
-
 
 ```json
 {
@@ -69,7 +68,7 @@ In addition, you can set the payment method or the number of installments that s
 }
 ```
 
-Or you can even set which specific payment methods (Visa, Mastercard, et) you want to exclude from checkout:
+You can even determine which specific payment methods (Visa, Mastercard, etc.) you want to exclude from the checkout:
 
 *Exclude a specific payment method:*
 
@@ -112,9 +111,9 @@ Or you can even set which specific payment methods (Visa, Mastercard, et) you wa
 }
 ```
 
-#### Customize installments
+#### Customize the Installments
 
-You can set the maximum number of installments you want to offer for your payment methods:
+You can specify the maximum number of installments you want to accept for your payment methods.
 
 ```json
 {
@@ -137,7 +136,7 @@ You can set the maximum number of installments you want to offer for your paymen
 }
 ```
 
-Also you can set a default amount of installments, which will automatically be selected if it exists for the payment method selected by the user. If not, an installment selection step will be shown to the user to choose the amount:
+You can also set the number of installments by default, which will be selected automatically, if available for the payment method selected by the user. Otherwise, the installment options will be displayed for the user to select one:
 
 
 ```json
@@ -163,26 +162,31 @@ Also you can set a default amount of installments, which will automatically be s
 
 ## Customize the payment flow
 
-Flow preference allows you to set and customize the payment flow to offer your users the best payment experience.
+The Flow Preference allows you to customize and set up the flow so that you can get the best payment experience.
 
-In the `FlowPreference`class you can set if you want to display or not a step which shows a summary of what is going to be paid (review and confirm step), or the discount communications et.
+In the `FlowPreference` class you can set up whether you want to display a screen with the summary of the payment details (Check and Confirm) or if you want to display discount campaigns, among other options.
 
-To add to checkout the configurations done in `FlowPreference`class, you should create an instance of this class and add it to the checkout initialization as shown below:
+In order to incorporate into the Checkout the options set up in the `FlowPreference` class, you must add a request for that in the beginning of the Checkout, as shown in the following code:
 
 [[[
 ```android
-	FlowPreference flowPreference = new FlowPreference.Builder()
-                .disableReviewAndConfirmScreen()
-                .disableDiscount()
-                .disableBankDeals()
-                .build();
+CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
+  .setSite(Sites.ARGENTINA)
+  .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+  .build();
 
-        new MercadoPagoCheckout.Builder()
-                .setActivity(this)
-                .setPublicKey(mPublicKey)
-                .setCheckoutPreference(mCheckoutPreference())
-                .setFlowPreference(flowPreference)
-                .startForPayment();
+FlowPreference flowPreference = new FlowPreference.Builder()
+  .disableReviewAndConfirmScreen()
+  .disableDiscount()
+  .disableBankDeals()
+  .build();
+
+new MercadoPagoCheckout.Builder()
+  .setActivity(this)
+  .setPublicKey("ENV_PUBLIC_KEY")
+  .setCheckoutPreference(checkoutPreference)
+  .setFlowPreference(flowPreference)
+  .startForPayment();
 ```
 ```swift
 	let flowPrefernece = FlowPreference()
@@ -192,88 +196,104 @@ To add to checkout the configurations done in `FlowPreference`class, you should 
 
             MercadoPagoCheckout.setFlowPreference(flowPrefernece)
 
-	 let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
-         navigationController: self.navigationController!)
-	   checkout.start()
+let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
+
+let checkoutPreference = CheckoutPreference()
+            checkoutPreference.items = [item]
+            checkoutPreference.payer = payer
+            checkoutPreference.setId("MLA")
+
+let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+navigationController: self.navigationController!)
+checkout.start()
 ```
 ```Objective-c
-	FlowPreference *flowPreference = [[FlowPreference alloc]init];
-    [flowPreference disableReviewAndConfirmScreen];
-    [flowPreference disableDiscount];
-    [flowPreference disableBankDeals];
-    [MercadoPagoCheckout setFlowPreference:flowPreference];
+FlowPreference *flowPreference = [[FlowPreference alloc]init];
+[flowPreference disableReviewAndConfirmScreen];
+[flowPreference disableDiscount];
+[flowPreference disableBankDeals];
+[MercadoPagoCheckout setFlowPreference:flowPreference];
 
-	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    		MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
-		[checkout start];
-	}
+Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
+    
+NSArray *items = [NSArray arrayWithObjects:item, item, nil];
+
+CheckoutPreference *checkoutPreference = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
+[checkoutPreference setSiteId:@"MLA"];
+
+MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+[checkout start];
 ```
 ]]]
 
-As observed in the example, you can hide "deals" button with `disableBankDeals` method for those cases in which you will only accept payments without installments.
+As you can see in the example, it is possible to hide the Promotions button using the `disableBankDeals` method for single-installment payments.
 
-## Pay in your server
+## Pay on your Server
 
-If you need to make any validation in your server before making the payment, you can set your own payment service.
+If you need to perform any validation on your server at the time of making the payment, you can set up your own payment service.
 
-In the `ServicePreference` class you can set the URL and the URI of your service together with a map in which you can set the information you want.
+In the `ServicePreference` class you can set up the URL and URI of your service together with a Map so that you can send the information you want.
 
-When posting the payment, the SDK will post it to your service, [it must create the paymet](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) and make your own business validation. The SDK waits for a payment response, just like Mercado Pago payment service.
+At the moment of posting the payment, the SDK will do it at your service, [creating the payment](/reference/payments). and performing the validations inherent to your business. The SDK will expect to receive a payment, according to the response of Mercado Pago service.
 
-Once created the `ServicePreference` you must start the checkout with it as shown below:
+As soon as the `ServicePreference` has been created, you must start the payment flow of MercadoPago, as shown in the following code:
 
 [[[
 
 ```android
-        public void submit(View view) {
-        CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
-                .setSite(Sites.ARGENTINA)
-                .addItem(new Item("Test Item", new BigDecimal("100")))
-                .build();
+        
+public void submit(View view) {
+  CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
+          .setSite(Sites.ARGENTINA)
+          .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+          .build();
 
-        HashMap<String, Object> extraData = new HashMap<>();
-        map.put("item_id", "id");
+  HashMap<String, Object> extraData = new HashMap<>();
+  map.put("item_id", "id");
 
-        ServicePreference servicePreference = new ServicePreference.Builder()
-                .setCreatePaymentURL("https://www.tunombre.com", "/createPayment", extraData)
-                .build();
+  ServicePreference servicePreference = new ServicePreference.Builder()
+          .setCreatePaymentURL("https://your-base-url.com", "/your-create-payment-uri", extraData)
+          .build();
 
-        new MercadoPagoCheckout.Builder()
-                .setActivity(this)
-                .setServicePreference(servicePreference)
-                .setPublicKey("TEST-0b74577e-863f-4a0e-9932-b87761cda03e")
-                .setCheckoutPreference(checkoutPreference)
-                .startForPayment();
-    }
+  new MercadoPagoCheckout.Builder()
+          .setActivity(this)
+          .setServicePreference(servicePreference)
+          .setPublicKey("ENV_PUBLIC_KEY")
+          .setCheckoutPreference(checkoutPreference)
+          .startForPayment();
+}
 ```
 ```swift
-	let item = Item(_id: "Item_Id", title: "Remeras", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: 50, description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
-	let payer = Payer(_id: "Payer_Id", email: "sarasa@gmail.com", type: nil, identification: nil, entityType: nil)
+let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
 
 	let checkoutPreference = CheckoutPreference()
 	checkoutPreference.items = [item]
 	checkoutPreference.payer = payer
-	checkoutPreference.setId("MLA")
+	checkoutPreference.setId("[FAKER][GLOBALIZE][UPPER_SITE_ID]")
 
-	let servicePreference = ServicePreference()
-	servicePreference.setCreatePayment(baseURL: "https://your-base-URL.com/", URI: "your_create_preference_URI",
-    additionalInfo: ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]])
 
-	MercadoPagoCheckout.setServicePreference(servicePreference)
+let servicePreference = ServicePreference()
+servicePreference.setCreatePayment(baseURL: "https://your-base-url.com/", URI: "/your-create-payment-uri",
+additionalInfo: ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]])
 
-	 let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
-         navigationController: self.navigationController!)
+MercadoPagoCheckout.setServicePreference(servicePreference)
 
-	   checkout.start()
+ let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference, navigationController: self.navigationController!)
+
+checkout.start()
 ```
 ```Objective-c
+
 	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
     Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"payer@email.com" type:nil identification:nil entityType:nil];
 
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
     self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
-	[self.pref setSiteId:@“MLA”];
+	[self.pref setSiteId:@"[FAKER][GLOBALIZE][UPPER_SITE_ID]"];
 
 	ServicePreference * servicePreference = [[ServicePreference alloc] init];
 	 NSDictionary *extraParams = @{
@@ -284,6 +304,6 @@ Once created the `ServicePreference` you must start the checkout with it as show
 	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
 		    self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
     [self.mpCheckout start];
-	}
+	} 
 ```
 ]]]

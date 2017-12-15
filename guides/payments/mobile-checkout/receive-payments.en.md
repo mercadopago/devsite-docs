@@ -184,7 +184,7 @@ You must submit your buyer’s email.
 
 ### 1. Connect your application to your server
 
-In the SDK, we offer you a class called CustomServer to make the connection to your server easier. The `createPreference` method makes a _POST_ and sends the map that you have configured (`preferenceMap`) as the message body. Send us your base URL (https://api.yourname.com) and the URI (/create_preference) where you receive the data to create the preference.
+In the SDK, we offer you a class called CustomServer to make the connection to your server easier. The `createPreference` method makes a _POST_ and sends a map that you can configure to receive extra info (`preferenceMap`) as the message body. Send us your base URL (https://your-base-url.com) and the URI (/your-create-preference-uri) where you receive the data to create the preference.
 
 The _CustomServer_ will be responsible for converting your service response (which must have the same structure as that of MercadoPago) into a **CheckoutPreference** object, whose ID is the entry point to our checkout.
 
@@ -195,16 +195,16 @@ Create the preference on your server from your application with the following co
 
 ```android
 public void submit(View view) {
-// Crea un mapa con los datos de la compra y el mail de tu cliente.
+// Create a map with payment’s details.
 Map<String, Object> preferenceMap = new HashMap<>();
 preferenceMap.put("item_id", "1");
 preferenceMap.put("amount", new BigDecimal(10));
 preferenceMap.put("currency_id", "[FAKER][CURRENCY][ACRONYM]");
-preferenceMap.put("payer_email", "customermail@test.com");
+preferenceMap.put("payer_email", "[FAKER][INTERNET][FREE_EMAIL]");
 
 final Activity activity = this;
 LayoutUtil.showProgressLayout(activity);
-CustomServer.createCheckoutPreference(activity, "https://api.tunombre.com", "/create_preference", preferenceMap, new Callback<CheckoutPreference>() {
+CustomServer.createCheckoutPreference(activity, "https://your-base-url.com", "/your-create-preference-uri", preferenceMap, new Callback<CheckoutPreference>() {
 @Override
 public void success(CheckoutPreference checkoutPreference) {
 startMercadoPagoCheckout(checkoutPreference);
@@ -221,7 +221,7 @@ public void failure(ApiException apiException) {
 ```swift
         let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]]
 
-        CustomServer.createCheckoutPreference(url: "https://your-base-URL.com/", uri: "your_create_preference_URI", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
+        CustomServer.createCheckoutPreference(url: "https://your-base-url.com/", uri: "your-create-preference-uri", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
             startMercadoPagoCheckout(checkoutPreference)
         }) { (error) in
             // Handle error
@@ -230,12 +230,12 @@ public void failure(ApiException apiException) {
 ```Objective-c
     NSDictionary *preferenceBody = @{
                                      @"amount" : @10,
-                                       @"itemId" : @29334,
-                                       @"customerId" : @207,
-                                       @"payerEmail" : @"cusomermail@test.com" };
+                                     @"itemId" : @29334,
+                                     @"customerId" : @207,
+                                     @"payerEmail" : @"[FAKER][INTERNET][FREE_EMAIL]" };
 
 
-    [CustomServer createCheckoutPreferenceWithUrl:@"“https://api.tunombre.com“" uri:@"/create_preference" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
+    [CustomServer createCheckoutPreferenceWithUrl:@"https://your-base-url.com" uri:@"/your-create-preference-uri" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
         [self startMercadoPagoCheckoutWithCheckoutPreference: checkoutPreference];
 
     } failure:^(NSError * error) {
@@ -353,10 +353,10 @@ After creating the payment preference and defining an event from which to start 
 
 ```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-new MercadoPagoCheckout.Builder()
-.setActivity(activity)
-.setPublicKey(publicKey).setCheckoutPreference(checkoutPreference)
-.startForPayment();
+  new MercadoPagoCheckout.Builder()
+    .setActivity(activity)
+    .setPublicKey("ENV_PUBLIC_KEY").setCheckoutPreference(checkoutPreference)
+    .startForPayment();
 }
 ```
 ```swift
@@ -365,9 +365,8 @@ The flow of our checkout is based on **NavigationController**. If your applicati
 ===
 
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
 
-let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
+let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
 navigationController: self.navigationController!)
 
 checkout.start()
@@ -379,7 +378,7 @@ The flow of our checkout is based on **NavigationController**. If your applicati
 ===
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     [checkout start];
 }
 ```
@@ -462,32 +461,30 @@ You can change the colors of the graphical interface of the payment flow, as wel
 
 ```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-DecorationPreference decorationPreference = new DecorationPreference.Builder()
-.setBaseColor(ContextCompat.getColor(context, R.color.your_color))
-.enableDarkFont() //Optional
-.build();
+  DecorationPreference decorationPreference = new DecorationPreference.Builder()
+    .setBaseColor(ContextCompat.getColor(context, R.color.your_color))
+    .enableDarkFont() //Optional
+    .build();
 
-new MercadoPagoCheckout.Builder()
-.setActivity(activity)
-.setDecorationPreference(decorationPreference)
-.setPublicKey(publicKey)
-.setCheckoutPreference(checkoutPreference)
-.startForPayment();
+  new MercadoPagoCheckout.Builder()
+    .setActivity(activity)
+    .setDecorationPreference(decorationPreference)
+    .setPublicKey("ENV_PUBLIC_KEY")
+    .setCheckoutPreference(checkoutPreference)
+    .startForPayment();
 }
 ```
 ```swift
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-let decorationPreference: DecorationPreference = DecorationPreference()
-decorationPreference.setBaseColor(color: UIColor.purple)
-decorationPreference.enableDarkFont()
-MercadoPagoCheckout.setDecorationPreference(decorationPreference)
+    let decorationPreference: DecorationPreference = DecorationPreference()
+    decorationPreference.setBaseColor(color: UIColor.purple)
+    decorationPreference.enableDarkFont()
+    MercadoPagoCheckout.setDecorationPreference(decorationPreference)
 
-let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
+    let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+    navigationController: self.navigationController!)
 
-let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
-navigationController: self.navigationController!)
-
-checkout.start()
+    checkout.start()
 }
 ```
 ```objective-c
@@ -496,7 +493,7 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 [MercadoPagoCheckout setDecorationPreference:decorationPreference];
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     [checkout start];
 }
 ```

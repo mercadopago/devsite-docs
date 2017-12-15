@@ -128,7 +128,7 @@ Resposta esperada:
 
 ## Receba o pagamento de um Customer
 
-Para receber um pagamento utilizando um cartão armazenado, é necessário obter o **código de segurança** novamente, já que por motivos de segurança, o MercadoPago não pode armazenar essa informação.
+Para receber um pagamento utilizando um cartão armazenado, é necessário obter o **código de segurança** novamente, já que por motivos de segurança, o Mercado Pago não pode armazenar essa informação.
 
 ### 1. Exibir os cartões armazenados
 

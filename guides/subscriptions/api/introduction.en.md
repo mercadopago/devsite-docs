@@ -15,7 +15,7 @@ sites_supported:
 > * Have the [card information capture](/guides/payments/api/receiving-payment-by-card.en.md#collect-card-information) implemented.
 > * Have the [Stored Customers and Cards](/guides/payments/api/customers-and-cards.en.md) implemented.
 
-MercadoPago allows you to receive recurring payments through subscriptions.
+Mercado Pago allows you to receive recurring payments through subscriptions.
 
 You only have to subscribe your customers to the subscription plans and we will process the payments on an automatic and recurring manner. We will send you a webhook notification to inform you of the payments results.
 
@@ -37,7 +37,7 @@ The **private keys**, or *access_token*, are used for all requests to the APIs, 
 
 ## Sandbox and Production Mode
 
-Initially, your application will only be able to interact with MercadoPago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
+Initially, your application will only be able to interact with Mercado Pago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
 
 We will provide you test cards, so that you can simulate transactions as if they were real.
 

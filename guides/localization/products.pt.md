@@ -1,6 +1,6 @@
 # Produtos
 
-Os produtos oferecidos pelo MercadoPago podem variar de acordo com cada país.
+Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 
 ## Disponibilidade por país
 
@@ -68,7 +68,7 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 | :------------ | :-------------- | :---------------------------- |
 | Pagamentos         | Botão de pagamento   | N/A                           |
 | Pagamentos         | Web Checkout    | N/A                           |
-| Pagamentos         | Mobile Checkout | `account_money`,`bolbradesco` |
+| Pagamentos         | Mobile Checkout | `account_money`               |
 | Pagamentos         | API             | N/A                           |
 | Assinaturas | Botão de pagamento   | `bolbradesco`, `giftcard`     |
 | Assinaturas | Checkout        | `bolbradesco`, `giftcard`     |
@@ -92,11 +92,11 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 |   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
 | :---------- | :-------------- | :------------------------------------------ |
 | Pagamentos       | Botão de pagamento   | N/A                                         |
-| Pagamentos       | Web Checkout    | `davivienda`                                |
+| Pagamentos       | Web Checkout    | N/A                                |
 | Pagamentos       | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
-| Pagamentos       | API             | `pse`                                       |
-| Marketplace | Web Checkout    | `davivienda`                                |
-| Marketplace | API             | `pse`                                       |
+| Pagamentos       | API             | `account_money`                                       |
+| Marketplace | Web Checkout    | N/A                                |
+| Marketplace | API             | `account_money`                                       |
 
 ### México
 

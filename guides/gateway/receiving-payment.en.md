@@ -6,39 +6,38 @@
 >
 > * Have the [card information capture](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta) implemented.
 
-## Atributos adicionales
+## Additional attributes
 
-Luego de que hayas hecho el flujo de captura de datos de tarjeta y cuentes con el `card_token` puedes proceder a generar el pago.
+Once you have completed the card information capture flow and have the card_token, you will be able to generate the payment.
 
-Para utilizar el modo _Gateway_ se disponibilizan dos atributos al flujo de procesamiento de pagos:
-
-1. `processing_mode`
-2. `merchant_account_id` _(opcional)_
+To use the Gateway mode, two attributes are added to the payment processing flow:
+processing_mode.
+1. `merchant_account_id` _(optional)_
+2. `processing_mode`
 
 ### processing\_mode
 
-Es el modo que indica si procesaremos los pagos con tus propios números de comercio o los de Mercado Pago.
+It is the mode that indicates if we will process the payments with your merchant numbers or those of Mercado Pago.
 
-Si este parámetro no se envía en el *POST^, el comportamiento por defecto es que el valor sea `aggregator` e indica que el pago fue procesado utilizando los números de comercio de Mercado Pago.
+If this parameter is not sent in the *POST^, the default value is `aggregator`, indicating that the payment was processed using the merchant numbers of Mercado Pago.
 
-Si quieres procesar con tus números de comercio debes enviar `gateway`.
-Automáticamente según el medio de pago y los números de BIN, Mercado Pago utilizará el número de comercio correspondiente para esa transacción.
-
+If you want to process it with your merchant numbers, you must send the `gateway`. Automatically, according to the payment method and the BIN numbers, Mercado Pago will use the corresponding merchant number for that transaction.
+
 > NOTE
 >
-> Nota
+> Note
 >
-> Para solicitar el alta del modo Gateway y configuración de tus números de comercio debes hablar con tu ejecutivo de cuenta.
+> To request the registration of the Gateway mode and the configuration of your merchant numbers, contact your account manager.
 
-### merchant\_account\_id
+### merchant_account_id
 
-En casos de uso más complejos, es de utilidad poder definir en cada pago el número de comercio a utilizar.
+In more complex cases, it is useful to be able to determine the merchant number to be used for each payment.
 
-El atributo `merchant_account_id` permite controlar dicho comportamiento. Ese ID será el identificador interno de Mercado Pago que representa a un determinado número de comercio.
+The `merchant_account_id` attribute allows you to control this behavior. This ID will be the internal identifier of Mercado Pago that represents a particular merchant number.
 
-## Creando un pago
+## Create a payment
 
-Una vez que cuentas con el id del `card_token` puedes realizar el pago realizando un API call:
+Once you have the id of the `card_token` you can make the payment by making an API call:
 
 ```php
 <?php
@@ -62,7 +61,7 @@ Una vez que cuentas con el id del `card_token` puedes realizar el pago realizand
 ?>
 ```
 
-La respuesta esperada será la siguiente:
+The expected response will be as follows:
 
 ```json
 {
@@ -77,18 +76,18 @@ La respuesta esperada será la siguiente:
 }
 ```
 
-Además de devolver los campos `processing_mode` y `merchant_account_id` se devuelven dos campos más:
+In addition to returning the `processing_mode` and `merchant_account_id` fields, two more fields are added:
 
-* `acquirer`: Nombre del adquiriente
-* `merchant_number`: Número de comercio utilizado para procesar el pago
+* `acquirer`: Name of the acquirer
+* `merchant_number`: Merchant number used to process the payment
 
-## Creando un pago en cuotas
+## Create a payment in installments
 
-Para hacer uso de tus promociones bancarias, es importante que se envíe el campo `installments` y `processing_mode` en `gateway` al momento de crear un pago.
+To make use of your bank promotions, it is important to send the `installments` field and `processing_mode` in `gateway` when creating a payment.
 
-El campo `installments` corresponde a la cantidad de cuotas que el comprador elije.
+The `installments` field corresponds to the number of installments selected by the customer.
 
-Para obtener las promociones y cuotas disponibles:
+In order to get the promotions and installments available:
 
 ```javascript
 Mercadopago.getInstallments({
@@ -99,7 +98,7 @@ Mercadopago.getInstallments({
 }, setInstallmentInfo);
 ```
 
-La respuesta cuenta con la información de las cuotas disponibles indicando el valor a pagar:
+The response contains the information about the installments available indicating the amount payable:
 
 ```json
 [

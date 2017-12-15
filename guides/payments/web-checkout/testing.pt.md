@@ -14,7 +14,7 @@ Você deve verificar se:
 
 ### Crie usuários de teste
 
-Para simular o processo de pagamento do começo ao fim é necessário criar 2 usuários de teste:**vendedor** e **comprador**.
+Para simular o processo de pagamento do começo ao fim é necessário criar 2 usuários de teste: **vendedor** e **comprador**.
 
 Você deve fazer a seguinte requisição à API para criar cada um dos usuários.
 
@@ -36,7 +36,7 @@ Utilize o *site_id* para indicar o país de onde quer realizar os testes.
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
--d '{"site_id":"MLA"}'
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 ##### Response
 ```curl

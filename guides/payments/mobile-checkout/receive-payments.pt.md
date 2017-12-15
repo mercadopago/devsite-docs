@@ -17,7 +17,7 @@ sites_supported:
 >
 > * Esta guia presume que você já tenha seguido os passos da seção ‘introdução da documentação para instalação do SDK’.
 
-Esta guia irá ajudá-lo a integrar o componente visual de pagamento do MercadoPago em sua aplicação. Este componente gerencia a seleção do meio de pagamento, a coleta de dados do meio de pagamento do usuário e a comunicação do resultado do pagamento.
+Esta guia irá ajudá-lo a integrar o componente visual de pagamento do Mercado Pago em sua aplicação. Este componente gerencia a seleção do meio de pagamento, a coleta de dados do meio de pagamento do usuário e a comunicação do resultado do pagamento.
 
 #### A integração consiste em duas etapas:
 - Integração em seu servidor: nesta etapa, você receberá a informação sobre o pagamento.
@@ -65,7 +65,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
 ]]]
 
-Luego, deberás agregar los atributos de tu preferencia de pago:
+Depois você deverá adicionar os atributos das suas preferências de pagamento:
 
 [[[
 ```php
@@ -181,11 +181,11 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
 }
 ```
 
-## Integre o fluxo de pagamentos do MercadoPago em sua aplicação
+## Integre o fluxo de pagamentos do Mercado Pago em sua aplicação
 
 ### 1. Conecte sua aplicação com seu servidor
 
-No SDK, nós oferecemos uma classe chamada **CustomServer** para que a conexão com seu servidor seja mais fácil. O método createPreference faz um POST e envia como corpo da mensagem o mapa que tiver definido (`preferenceMap`). Indique sua URL base (https://api.tunombre.com) e a URI (/create_preference) onde espera os dados para criar a preferência.
+No SDK, nós oferecemos uma classe chamada **CustomServer** para que a conexão com seu servidor seja mais fácil. O método createPreference faz um POST e envia como corpo da mensagem o mapa que tiver definido (`preferenceMap`). Indique sua URL base (https://your-base-url.com) e a URI (/your-create-preference-uri) onde espera os dados para criar a preferência.
 
 O CustomServer irá transformar a resposta do seu serviço (que deve ter a mesma estrutura que a do MercadoPago) em um objeto **CheckoutPreference**, cuja ID é o ponto de entrada para o nosso checkout.
 
@@ -195,16 +195,16 @@ Crie a preferência em seu servidor a partir de sua aplicação com o seguinte c
 
 ```android
 public void submit(View view) {
-// Crea un mapa con los datos de la compra y el mail de tu cliente.
+// Create a map with payment’s details.
 Map<String, Object> preferenceMap = new HashMap<>();
 preferenceMap.put("item_id", "1");
 preferenceMap.put("amount", new BigDecimal(10));
 preferenceMap.put("currency_id", "[FAKER][CURRENCY][ACRONYM]");
-preferenceMap.put("payer_email", "customermail@test.com");
+preferenceMap.put("payer_email", "[FAKER][INTERNET][FREE_EMAIL]");
 
 final Activity activity = this;
 LayoutUtil.showProgressLayout(activity);
-CustomServer.createCheckoutPreference(activity, "https://api.tunombre.com", "/create_preference", preferenceMap, new Callback<CheckoutPreference>() {
+CustomServer.createCheckoutPreference(activity, "https://your-base-url.com", "/your-create-preference-uri", preferenceMap, new Callback<CheckoutPreference>() {
 @Override
 public void success(CheckoutPreference checkoutPreference) {
 startMercadoPagoCheckout(checkoutPreference);
@@ -219,35 +219,35 @@ public void failure(ApiException apiException) {
 }
 ```
 ```swift
-        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]]
+let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : 3]
 
-        CustomServer.createCheckoutPreference(url: "https://your-base-URL.com/", uri: "your_create_preference_URI", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
-            startMercadoPagoCheckout(checkoutPreference)
-        }) { (error) in
-            // Handle error
-        }
+CustomServer.createCheckoutPreference(url: "https://your-base-url.com/", uri: "your-create-preference-uri", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
+    startMercadoPagoCheckout(checkoutPreference)
+}) { (error) in
+    // Handle error
+}
 ```
 ```Objective-c
-    NSDictionary *preferenceBody = @{
-                                     @"amount" : @10,
-                                       @"itemId" : @29334,
-                                       @"customerId" : @207,
-                                       @"payerEmail" : @"cusomermail@test.com" };
+NSDictionary *preferenceBody = @{
+                                 @"amount" : @10,
+                                 @"itemId" : @29334,
+                                 @"customerId" : @207,
+                                 @"payerEmail" : @"[FAKER][INTERNET][FREE_EMAIL]" };
 
 
-    [CustomServer createCheckoutPreferenceWithUrl:@"“https://api.tunombre.com“" uri:@"/create_preference" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
-        [self startMercadoPagoCheckoutWithCheckoutPreference: checkoutPreference];
+[CustomServer createCheckoutPreferenceWithUrl:@"https://your-base-url.com" uri:@"/your-create-preference-uri" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
+    [self startMercadoPagoCheckoutWithCheckoutPreference: checkoutPreference];
 
-    } failure:^(NSError * error) {
-        // Ups, something went wrong
-    }];
+} failure:^(NSError * error) {
+    // Ups, something went wrong
+}];
 ```
 
 ]]]
 
 ### 2. 2. Crie um botão de pagamento
 
-Como exemplo, sugerimos que inicie o fluxo do MercadoPago a partir de um botão.
+Como exemplo, sugerimos que inicie o fluxo do Mercado Pago a partir de um botão.
 
 [[[
 
@@ -353,10 +353,10 @@ Após ter criado a preferência de pagamento e definido um evento a partir do qu
 
 ```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-new MercadoPagoCheckout.Builder()
-.setActivity(activity)
-.setPublicKey(publicKey).setCheckoutPreference(checkoutPreference)
-.startForPayment();
+  new MercadoPagoCheckout.Builder()
+    .setActivity(activity)
+    .setPublicKey("ENV_PUBLIC_KEY").setCheckoutPreference(checkoutPreference)
+    .startForPayment();
 }
 ```
 ```swift
@@ -365,12 +365,11 @@ O fluxo do nosso checkout está baseado em **NavigationController**. Caso sua ap
 ===
 
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
 
-let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
-navigationController: self.navigationController!)
+  let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+  navigationController: self.navigationController!)
 
-checkout.start()
+  checkout.start()
 }
 ```
 ```objective-c
@@ -379,7 +378,7 @@ O fluxo do nosso checkout está baseado em **NavigationController**. Caso sua ap
 ===
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     [checkout start];
 }
 ```
@@ -462,32 +461,30 @@ self.payment = payment
 
 ```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-DecorationPreference decorationPreference = new DecorationPreference.Builder()
-.setBaseColor(ContextCompat.getColor(context, R.color.your_color))
-.enableDarkFont() //Optional
-.build();
+  DecorationPreference decorationPreference = new DecorationPreference.Builder()
+    .setBaseColor(ContextCompat.getColor(context, R.color.your_color))
+    .enableDarkFont() //Optional
+    .build();
 
-new MercadoPagoCheckout.Builder()
-.setActivity(activity)
-.setDecorationPreference(decorationPreference)
-.setPublicKey(publicKey)
-.setCheckoutPreference(checkoutPreference)
-.startForPayment();
+  new MercadoPagoCheckout.Builder()
+    .setActivity(activity)
+    .setDecorationPreference(decorationPreference)
+    .setPublicKey("ENV_PUBLIC_KEY")
+    .setCheckoutPreference(checkoutPreference)
+    .startForPayment();
 }
 ```
 ```swift
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-let decorationPreference: DecorationPreference = DecorationPreference()
-decorationPreference.setBaseColor(color: UIColor.purple)
-decorationPreference.enableDarkFont()
-MercadoPagoCheckout.setDecorationPreference(decorationPreference)
+    let decorationPreference: DecorationPreference = DecorationPreference()
+    decorationPreference.setBaseColor(color: UIColor.purple)
+    decorationPreference.enableDarkFont()
+    MercadoPagoCheckout.setDecorationPreference(decorationPreference)
 
-let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
+    let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+    navigationController: self.navigationController!)
 
-let checkout = MercadoPagoCheckout(publicKey: publicKey, accessToken: nil, checkoutPreference: checkoutPreference,
-navigationController: self.navigationController!)
-
-checkout.start()
+    checkout.start()
 }
 ```
 ```objective-c
@@ -496,7 +493,7 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 [MercadoPagoCheckout setDecorationPreference:decorationPreference];
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
     [checkout start];
 }
 ```

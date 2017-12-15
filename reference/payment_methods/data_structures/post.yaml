@@ -1,0 +1,27 @@
+---
+resource: payment_methods.raml
+use: []
+errors:
+- 400 BAD_REQUEST:
+  - '1000':
+      description:
+        en: the credentials are required.
+        es: Las credenciales son requeridas.
+        pt: the credentials are required.
+  - '1001':
+      description:
+        en: public_key not found.
+        es: No se ha encontrado una public_key.
+        pt: public_key not found.
+- 401 UNAUTHORIZED:
+  - unauthorized:
+      description:
+        en: unauthorized.
+        es: No autorizado.
+        pt: unauthorized.
+- 404 NOT_FOUND:
+  - not_found:
+      description:
+        en: not_found.
+        es: El recurso no se ha encontrado.
+        pt: not_found.

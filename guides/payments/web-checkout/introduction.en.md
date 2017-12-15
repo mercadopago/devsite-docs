@@ -6,7 +6,7 @@ We work to ensure that your users have the best payment experience by offering:
 
 * **One-click buy**: We save your users’ payment details, so that they can make the payment by just re-entering the security code of their credit card.
 * **Responsive Checkout**: The best shopping experience from any mobile or desktop device.
-* **Payment as a guest**: Users are not required to create a MercadoPago account.
+* **Payment as a guest**: Users are not required to create a Mercado Pago account.
 ----[mla, mlb, mlm, mco, mcl, global]----
 * Split payment: Possibility to **pay with 2 cards**.
 ------------

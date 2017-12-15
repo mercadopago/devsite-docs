@@ -1,68 +1,26 @@
+<% builder = UIBuilder::TreeTableBuilder.new(locals)  %>
 
-<% endpoint = APIReferenceGenerator.endpoints[locals[:endpoint]] %>
+<h1><%= "/#{resource.version}#{endpoint.title}".gsub('//', '/') %></h1>
 
-<h1> <%= endpoint["name"] %> </h1>
+<blockquote>
+  <strong> <%= method.method_name.upcase %> </strong>
+  <%= "#{resource.base_uri}#{resource.version}#{endpoint.title}" %>
+</blockquote>
 
-<p> <%= endpoint["description"] %> </p>
+<h3> Request Params </h3>
 
+<div class = "tree-table">
+  <div class = "tree-table-header">
+    <span>Parameter</span><span>Type</span><span>Description</span> 
+  </div> 
+  <%= builder.build_rows(method.request_parameters) %>
+</div>
 
+<h3> Errors </h3>
 
-<table>
-  <tbody>
-    <% endpoint["actions"].each do |action| %>
-      <tr>
-        <td> <%= action["method"] %> </td>
-        <td> <%= action["uri"] %> </td>
-        <td> <%= action["description"] %> </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<h2> Parameters </h2>
-
-<table>
-  <thead>
-    <tr>
-      <td> Attribute </td>
-      <td> Type </td>
-      <td> Descriptions </td>
-    </tr>
-  </thead>
-  <tbody>
-    <% endpoint["attributes"].each do |attribute, info| %>
-      <tr>
-        <td> <%= attribute %> </td>
-        <td> <%= info["data_type"] %> </td>
-        <td> <%= info["description"] %> </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<h2> Error Codes </h2>
-
-<table>
-  <thead>
-    <tr>
-      <td> Error </td>
-      <td> Code </td>
-      <td> Description </td>
-    </tr>
-  </thead>
-  <tbody>
-    <% endpoint["errors"].each do |error, infos| %>
-      <tr>
-        <td rowspan="<%=infos.count %>"> <%= error %> </td>
-        <td> <%= infos[0]["code"] %></td>
-        <td> <%= infos[0]["description"] %></td>
-      </tr>
-      <% (infos.count - 2).times do |t| %>
-        <tr>
-          <td> <%= infos[t+1]["code"] %></td>
-          <td> <%= infos[t+1]["description"] %></td>
-        </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
+<div class = "two-table">
+  <div class = "two-table-header">
+    <span>Code</span><span>Description</span>
+  </div>  
+  <%= builder.build_two_cols(method.errors) %>
+</div>

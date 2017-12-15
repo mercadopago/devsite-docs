@@ -3,7 +3,6 @@
 
 Na preferência de pagamentos, é possível enviar as informações do item a ser pago, bem como do comprador, além de definir os meios de pagamento que não deseja aceitar, a URL de retorno ao seu site após o pagamento, os métodos de envio, etc.
 
-
 ### Defina os tipos e formas de pagamento
 
 Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](/guides/localization/payment-methods.pt.md), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
@@ -196,7 +195,7 @@ payment = MercadoPago::Payment.search(filters)
 
 ### Invalide links de preferência
 
-Caso não queira permitir que alguém acesse a preferência de pagamentos para efetuar um pagamento, após uma determinada data, utilize os seguintes atributos:
+Caso não queira permitir que alguém acesse a preferência de pagamentos para efetuar um pagamento após uma determinada data, utilize os seguintes atributos:
 
 ```json
 	"expires": true,
