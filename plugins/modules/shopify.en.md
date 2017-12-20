@@ -1,11 +1,7 @@
-# Shopify - Mercado Pago Module
----
+# Shopify  
 
-* Features
-* Installation and Configuration
-* Feedback
-
-## Features:
+<a name="Features"></a>
+## Features: ##
 
 ### Standard Checkout
 
@@ -17,34 +13,26 @@ Great for merchants who want to get going quickly and easily.
 * Accept tickets, bank transfer and account money in addition to cards.
 * Accept MercadoPago's discount coupons.
 
-_Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela_
+<a name="Install-and-Configuration"></a>
+## Installation and Configuration
 
-
-### Installation and Configuration:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
+</center>
 
 1. In your Shopify admin panel, go to the menu **Settings > Payments**.
+<center>
+  ![Config](/images/plugins/modules/shopify/config-1.gif)
+</center>
 2. In Accept credit cards, select **MercadoPago**.
-3. Fill the **CLIENT ID** and **CLIENT SECRET**. To get them, go to:
+3. Fill the **CLIENT ID** and **CLIENT SECRET**. Get yout credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-  * Argentina: https://www.mercadopago.com/mla/account/credentials?type=basic
-  * Brazil: https://www.mercadopago.com/mlb/account/credentials?type=basic
-  * Chile: https://www.mercadopago.com/mlc/account/credentials?type=basic
-  * Colombia: https://www.mercadopago.com/mco/account/credentials?type=basic
-  * Mexico: https://www.mercadopago.com/mlm/account/credentials?type=basic
-  * Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
-  * Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=basic
-  * Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=basic
+<center>
+  ![Config](/images/plugins/modules/shopify/config-2.gif)
+</center>
 
 4. Click the button "**Activate**".
-
-Congrats! **MercadoPago** was installed and configured!
-
-
-## Feedback
-
-We want to know your opinion, please answer the following form.
-
-* [Portuguese](http://goo.gl/forms/2n5jWHaQbfEtdy0E2)
-* [Spanish](http://goo.gl/forms/A9bm8WuqTIZ89MI22)
+<center>
+  ![Config](/images/plugins/modules/shopify/config-3.gif)
+</center>
+5. Congrats! **MercadoPago** was installed and configured!
