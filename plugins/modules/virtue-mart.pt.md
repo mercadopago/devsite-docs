@@ -14,17 +14,17 @@
 
 Basicamente, os requisitos deste plugin são os mesmos que você precisa executar Virtuemart e Joomla. Sua máquina deve ter:
 
-** Plataformas **
+**Plataformas**
 * <a href="https://www.joomla.org/download.html"> Joomla </a> 2.5 ou superior;
 * <a href="https://virtuemart.net/downloads/"> VirtueMart </a> 3.0.x ou superior;
 
-** Servidor Web Host **
+**Servidor Web Host**
 
 * <a href="http://php.net/"> PHP </a> 5.3 ou superior com suporte CURL;
 * <a href="http://www.mysql.com/"> MySQL </a> versão 5.5;
 * <a href="https://httpd.apache.org/"> Apache 2.x </a>.
 
-** certificado SSL **
+**Certificado SSL**
 
 Se você estiver usando Custom Checkout, é um requisito que você tenha um certificado SSL e o formulário de pagamento a ser fornecido em uma página HTTPS.
 
