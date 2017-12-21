@@ -36,18 +36,18 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 <table>
   <thead>
-    <tr>
-      <th>Plugin Version</th>
-      <th>Status</th>
-      <th>VirtueMart Compatible Versions</th>
-    </tr>
+  <tr>
+  <th>Plugin Version</th>
+  <th>Status</th>
+  <th>VirtueMart Compatible Versions</th>
+  </tr>
   <thead>
   <tbody>
-    <tr>
-      <td>v2.0.3</td>
-      <td>Stable (Current version)</td>
-      <td>VirtueMart v3.0.x</td>
-    </tr>
+  <tr>
+  <td>v2.0.3</td>
+  <td>Stable (Current version)</td>
+  <td>VirtueMart v3.0.x</td>
+  </tr>
   </tbody>
 </table>
 
@@ -57,13 +57,13 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 The module of Mercado Pago to VirtueMart is integrated with the features and payment solutions:
 
 * [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * Split payments (Two cards)
+  * Split payments (Two cards)
 
 
 * Custom Checkout
-    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
+  * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+  * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
+  * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
 
 <a name="installation"></a>
 ## Installation: ##
@@ -140,10 +140,10 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   1. Go to **VirtueMart > Payment Methods** and click **New**
 
   2. Complete the fields:
-    - **Payment Name** set **Credit Card - Mercado Pago**
-    - **Sef Alias** set **mercadopago**
-    - **Payment Method** select **Mercado Pago**
-    - **Published** set to **true**
+  - **Payment Name** set **Credit Card - Mercado Pago**
+  - **Sef Alias** set **mercadopago**
+  - **Payment Method** select **Mercado Pago**
+  - **Published** set to **true**
 
   3. Click in **Save**
 
@@ -153,36 +153,36 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   6. Now configure your credentials. To make it, fill your **access_token** in Credentials Configuration section.
 
-    ![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom.png) <br />
+  ![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom.png) <br />
 
-    You can obtain your **Public Key** and **Access Token**, accordingly to your country, in the following links:
+  You can obtain your **Public Key** and **Access Token**, accordingly to your country, in the following links:
 
-    * Argentina: https://www.mercadopago.com/mla/account/credentials
-    * Brazil: https://www.mercadopago.com/mlb/account/credentials
-    * Colombia: https://www.mercadopago.com/mco/account/credentials
-    * Mexico: https://www.mercadopago.com/mlm/account/credentials
-    * Venezuela: https://www.mercadopago.com/mlv/account/credentials
-    * Uruguay: https://www.mercadopago.com/mlu/account/credentials
+  * Argentina: https://www.mercadopago.com/mla/account/credentials
+  * Brazil: https://www.mercadopago.com/mlb/account/credentials
+  * Colombia: https://www.mercadopago.com/mco/account/credentials
+  * Mexico: https://www.mercadopago.com/mlm/account/credentials
+  * Venezuela: https://www.mercadopago.com/mlv/account/credentials
+  * Uruguay: https://www.mercadopago.com/mlu/account/credentials
 
   7. Checkout settings. <br/>
 
-    ![Installation Instructions](/images/plugins/modules/virtuemart/checkout_settings_custom.png) <br />
+  ![Installation Instructions](/images/plugins/modules/virtuemart/checkout_settings_custom.png) <br />
 
-    **Statement Descriptor**: Sets the label as the customer will see the charge for amount in his/her bill;<br />
-    **Binary**: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.<br />
+  **Statement Descriptor**: Sets the label as the customer will see the charge for amount in his/her bill;<br />
+  **Binary**: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.<br />
 
   8. IPN settings. <br/>
 
-    ![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+  ![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
 
-    * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-    * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-    * **Choose the status when payment is process**: Sets up the order status when payments are in process.
-    * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-    * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-    * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
-    * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
-    * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
+  * **Choose the status of approved orders**: Sets up the order status when payments are approved.
+  * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
+  * **Choose the status when payment is process**: Sets up the order status when payments are in process.
+  * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
+  * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
+  * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
+  * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
+  * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
 
 <a name="configuration_custom_ticket"></a>
 ## Ticket - Custom Checkout Configuration: ##
@@ -190,10 +190,10 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   1. Go to **VirtueMart > Payment Methods** and click **New**
 
   2. Complete the fields:
-    - **Payment Name** set **Ticket - Mercado Pago**
-    - **Sef Alias** set **mercadopago**
-    - **Payment Method** select **Mercado Pago**
-    - **Published** set to **true**
+  - **Payment Name** set **Ticket - Mercado Pago**
+  - **Sef Alias** set **mercadopago**
+  - **Payment Method** select **Mercado Pago**
+  - **Published** set to **true**
 
   3. Click in **Save**
 
@@ -212,7 +212,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * Colombia: https://www.mercadopago.com/mco/account/credentials
   * Mexico: https://www.mercadopago.com/mlm/account/credentials
   * Venezuela: https://www.mercadopago.com/mlv/account/credentials
-  * Uruguay: https://www.mercadopago.com/mlu/account/credentials    
+  * Uruguay: https://www.mercadopago.com/mlu/account/credentials  
 
   7. IPN settings. <br/>
 
