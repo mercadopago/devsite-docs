@@ -1,40 +1,33 @@
 # ZenCart - Mercado Pago Module (v1.5.x)
 ---
 
-* [Features](#features)
-* [Available versions](#available_versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Setup](#setup)
-* [Social](#social)
+* [Funcionalidades](#features)
+* [Versões disponíveis](#available_versions)
+* [Requisitos](#requirements)
+* [Instalação](#installation)
+* [Configuração](#setup)
+* [Suporte](#Support)
 
 
 <a name="features"></a>
-##Features##
+## Funcionalidades: ##
 
-**Standard Checkout**
+O módulo do Mercado Pago para o ZenCart esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-Great for merchants who want to get going quickly and easily.
-
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
-
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru and Venezuela*
+* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+    * Pagamento com dois cartões
 
 
 <a name="available_versions"></a>
-##Available versions##
+## Versões disponíveis: ##
 
-Plugin Version | Status | Compatible Versions
+Versão do Plugin | Status | Versões compativéis
 -------------- | ------ | -------------------
 v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 
 <a name="requirements"></a>
-## Requirements:
+## Requisitos: ##
 
 **PHP**
 
@@ -45,72 +38,76 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 * MySQL v5+
 
-
 <a name="installation"></a>
-## Installation:
+## Instalação: ##
 
-1. Download Mercado Pago module.
+1. Faça o download do modulo do Mercado Pago.
 
-2. Copy the module folder to your ZenCart ROOT installation.
-
+2. Copie a pasta do modulo na Raiz da sua loja ZenCart.
 
 <a name="setup"></a>
-## Setup MercadoPago
+## Configuração: ##
 
-1. On your store administration, go to **Modules > Payment**.
+1. Na pagina de administração da sua loja, va até a opção **Modules > Payment**.
 
-2. In Payment Modules click on **MercadoPago**.
+2. Em Payment Modules selecione **MercadoPago**.
 
-3. In **MercadoPago** click on the **Install** button.
+3. Em **MercadoPago** clique no botão **Install**.
 
-4. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
+4. Agora, é muito importante você configurar o seu **CLIENT_ID** e **CLIENT_SECRET**.
 
-  ![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/credentials.png) <br />
+  ![Installation Instructions](/images/plugins/modules/zencart/credentials.png) <br />
 
-	Get your CLIENT_ID and CLIENT_SECRET in the following address:
-	* Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-	* Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
-	* Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
-	* Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
-	* Mexico: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
-	* Peru: [https://www.mercadopago.com/mpe/herramientas/aplicaciones](https://www.mercadopago.com/mpe/herramientas/aplicaciones)
-	* Venezuela: [https://www.mercadopago.com/mlv/herramientas/aplicaciones](https://www.mercadopago.com/mlv/herramientas/aplicaciones)
+	Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
+  * Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
+  * Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
+  * Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
+  * Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
+  * Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
+  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
+  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
+  * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-5. Set the status for IPN (Instant Payment Notification):
+5. Configure os status para IPN (Instant Payment Notification):
 
-  ![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/notification.png) <br />
+  ![Installation Instructions](/images/plugins/modules/zencart/notification.png) <br />
 
-  * **Choose the default status for a new order**: Sets up the order status when payments are approved.
-  * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-  * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-  * **Choose the status when payment is process**: Sets up the order status when payments are in process.
-  * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
-  * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-  * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-  * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
+  * **Choose the default status for a new order**: Define o status do pedido quando o pagamento é aprovado.
+  * **Choose the status of approved orders**: Define o status do pedido quando o pagamento é aprovado.
+  * **Choose the status when payment is pending**: Define o status do pedido quando o pagamento é pendente.
+  * **Choose the status when payment is process**: Define o status do pedido quando o pagamento esta em processamento.
+  * **Choose the status when payment was reject**: Define o status do pedido quando o pagamento é rejeitado.
+  * **Choose the status of refunded orders**: Define o status do pedido quando o pagamento é devolvido.
+  * **Choose the status when client open a mediation**: Define o status do pedido quando o pagamento esta em mediação.
+  * **Choose the status when payment was canceled**: Define o status do pedido quando o pagamento é cancelado.
 
-6. Other settings. <br/>
+6. Outras configuraões: <br/>
 
-![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/other_config_1.png) <br />
+![Installation Instructions](/images/plugins/modules/zencart/other_config_1.png) <br />
 
-![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/other_config_2.png) <br />
+![Installation Instructions](/images/plugins/modules/zencart/other_config_2.png) <br />
 
-![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/other_config_3.png) <br />
+![Installation Instructions](/images/plugins/modules/zencart/other_config_3.png) <br />
 
-  * **Store Category**: Sets up the category of the store;
-  * **Redirect URL**: The Redirect url were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
-  * **Enable Auto Return?**: If set, the platform will return to your store when the payment is approved.
-  * **Type Checkout**: How your customers will interact with Mercado Pago to pay their orders;
-  * **Limit installments**: The maximum installments allowed for your customers;
-  * **Exclude Methods**: Complete the payment methods that you do not accept with MercadoPago.
-  * **Live or Sandbox**: Test your payments in Mercado Pago sandbox environment;
-  * **Sort order of display**: Complete the display order of MercadoPago
+  * **Store Category**: Selecione a categoria da Loja;
+  * **Redirect URL**: A URL de redirecionamento é gerado automaticamente, se você estiver testando em um localhost não funcionará corretamente. Você pode alterar o endereço para qualquer url da sua escolha, contanto que não seja localhost;
+  * **Enable Auto Return?**: Quando essa opção esta ativada, ao finalizar a compra o usuário é redirecionado automaticamente para a sua loja;
+  * **Type Checkout**: Selecione o tipo de checkout que será mostrado ao comprador;
+  * **Limit installments**: Selecione o numero de parcelas máximas que estará disponível para o comprador;
+  * **Exclude Methods**: Selecione os métodos de pagamento que você deseja **não aceitar**;
+  * **Live or Sandbox**: Habilite o modo sandbox para realizar pagamentos de test;
+  * **Sort order of display**: Ordem de exibição do Mercado Pago;
 
-<a name="social"></a>
-##Social##
+<a name="Suporte"></a>
+## Suporte: ##
 
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>
+Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento. 
+Envie um email para modulos@mercadopago.com com as seguintes informações:
+
+* Email da sua conta Mercado Pago.
+* Detalhes sobre a sua duvida, problema ou erro.
+* Arquivos que possa ajudar no entendimento (Print-Screen, Video, Arquivos de Log, etc).
+* Versão do ZenCart.
+* Versão do Modulo, caso esteja utilizando.
+
+Não se preocupe... Iremos ajuda-lo o mais rápido possível.

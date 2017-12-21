@@ -53,7 +53,7 @@ Durante los testeos en modo Sandbox, puedes operar sobre HTTP, pero para la homo
 <a name="Funcionalidad"></a>
 ## Funcionalidad: ##
 
-El módulo del Mercado Pago para Magento esta integrado con las siguientes funcionalidad y soluciones de pago:
+El módulo del Mercado Pago para VirtueMart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
 * [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
     * Pagos con dos tarjetas
@@ -89,14 +89,14 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
 
   Puedes obtener tu **Client_id** y **Client_secret**, dependiendo e tu país en los siguientes links:
 
-  * Argentina: https://www.mercadopago.com/mla/herramientas/aplicaciones
-  * Brazil: https://www.mercadopago.com/mlb/ferramentas/aplicacoes
-  * Chile: https://www.mercadopago.com/mlc/herramientas/aplicaciones
-  * Colombia: https://www.mercadopago.com/mco/herramientas/aplicaciones
-  * Mexico: https://www.mercadopago.com/mlm/herramientas/aplicaciones
-  * Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
-  * Venezuela: https://www.mercadopago.com/mlv/herramientas/aplicaciones
-  * Uruguay: https://www.mercadopago.com/mlu/herramientas/aplicaciones
+  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
+  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
+  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
+  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
+  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
+  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
+  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
 
 5. Configuraciones del Checkout. <br/>
 
@@ -154,12 +154,14 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
-* Argentina: https://www.mercadopago.com/mla/account/credentials
-* Brazil: https://www.mercadopago.com/mlb/account/credentials
-* Colombia: https://www.mercadopago.com/mco/account/credentials
-* Mexico: https://www.mercadopago.com/mlm/account/credentials
-* Venezuela: https://www.mercadopago.com/mlv/account/credentials
-* Uruguay: https://www.mercadopago.com/mlu/account/credentials
+  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
+  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
+  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
+  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
+  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
+  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
+  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
 
 7. Configuración del checkout. <br/>
 
@@ -204,12 +206,14 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
-* Argentina: https://www.mercadopago.com/mla/account/credentials
-* Brazil: https://www.mercadopago.com/mlb/account/credentials
-* Colombia: https://www.mercadopago.com/mco/account/credentials
-* Mexico: https://www.mercadopago.com/mlm/account/credentials
-* Venezuela: https://www.mercadopago.com/mlv/account/credentials
-* Uruguay: https://www.mercadopago.com/mlu/account/credentials
+  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
+  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
+  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
+  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
+  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
+  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
+  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
     
 7. Configuración IPN. <br/>
 

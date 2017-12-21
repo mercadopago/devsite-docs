@@ -52,7 +52,7 @@ Durante os testes em modo sandbox, você pode operar por HTTP, mas para homologa
 <a name="Funcionalidades"></a>
 ## Funcionalidades: ##
 
-O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
+O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
 * [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
     * Pagamento com dois cartões
@@ -88,12 +88,14 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país, nos seguintes links:
 
-* Argentina: [https://www.mercadopago.com/mla/account/credentials]
-* Brazil: [https://www.mercadopago.com/mlb/account/credentials]
-* Colombia: https://www.mercadopago.com/mco/account/credentials
-* Mexico: https://www.mercadopago.com/mlm/account/credentials
-* Venezuela: https://www.mercadopago.com/mlv/account/credentials
-* Uruguay: https://www.mercadopago.com/mlu/account/credentials
+* Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
+* Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
+* Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
+* Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
+* Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
+* Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
+* Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
+* Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
 5. Configurações do checkout básico. <br />
 
