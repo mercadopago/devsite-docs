@@ -58,7 +58,8 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
   ![Installation Instructions](/images/plugins/modules/zencart/credentials.png) <br />
 
-	Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
+Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
+
   * Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
   * Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
   * Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
