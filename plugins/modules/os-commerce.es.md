@@ -1,33 +1,31 @@
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
 
-* [Features](#features)
-* [Available versions](#available_versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Setup](#setup)
-* [Support](#Support)
-
+* [Funcionalidad](#features)
+* [Versión Disponibles](#available_versions)
+* [Requisitos](#requirements)
+* [Instalación](#installation)
+* [Configuración](#setup)
+* [Soporte técnico](#Soporte-técnico)
 
 <a name="features"></a>
-## Features: ##
+## Funcionalidad: ##
 
-The module of Mercado Pago to OsCommerce is integrated with the feature and payment solutions:
+El módulo del Mercado Pago para ZenCart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
-* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * Split payments (Two cards)
+* [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
+    * Pagos con dos tarjetas
 
 
 <a name="available_versions"></a>
-## Available versions: ##
+## Versión Disponibles: ##
 
-
-Plugin Version | Status | Compatible Versions
+Versión del Plugin | Status | Versiones compatibles
 -------------- | ------ | -------------------
 v2.2 | Deprecated (Old version) | osCommerce 2.2
 v2.3 | Stable (Current version) | osCommerce 2.3
 
 <a name="requirements"></a>
-## Requirements: ##
+## Requisitos: ##
 
 **PHP**
 
@@ -40,68 +38,71 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 
 <a name="installation"></a>
-## Installation: ##
+## Instalación: ##
 
-1. Download Mercado Pago module:
+1. Descargue el modulo del Mercado Pago:
     * osCommerce 2.2
     * osCommerce 2.3
 
-2. Copy the module folder to your osCommerce ROOT installation.
+2. Copia la carpeta del módulo en la raíz de tu tienda OsCommerce.
 
 
 <a name="setup"></a>
-## Setup MercadoPago: ##
+## Configuración: ##
 
-1. On your store administration, go to **Modules > Payment**.
+1. En la página de administración de tu tienda, vaya hasta la opción **Modules > Payment**.
 
-2. Click **Install Module**.
+2. Haz clic en **Install Module**.
 
-3. Click on **MercadoPago** then in **+Install Module**.
+3. En **Mercado Pago** haga clic en el botón **Install Module**.
 
-4. Choose your country:
+4. Seleccione el país:
 
 	![Country Selecion](/images/plugins/modules/oscommerce/CountrySelection.png)
 
-5. Choose the payment methods that you don´t want to accept in your Store:
+5. Seleccione los métodos de pago que **no quiere aceptar** en su tienda:
 
 	![Payment Methods Selection](/images/plugins/modules/oscommerce/PaymentMethodsSelection.png)
 
-6. Choose the category on the list that more describe your shop activities.
+6. Selecciona la categoría de la tienda:
 
 	![Category Selection](/images/plugins/modules/oscommerce/CategorySelection.png)
 
-7. In the next screen, you will see **MercadoPago** listed as a payment method. Now, click on **Edit** on the right bar.
+7. En la siguiente pantalla, verá que el **MercadoPago** está listado en los métodos de pago. Ahora, haga clic en **Edit** situado en la derecha.
 
 	![Payment Method List](/images/plugins/modules/oscommerce/PaymentMethodList.png)
 
-8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
+8. Ahora, es muy importante configurar las credenciales **CLIENT_ID** y **CLIENT_SECRET**.
 
-	Get your CLIENT_ID and CLIENT_SECRET in the following address:
-	* Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-	* Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
-	* Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
-	* Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
-	* Mexico: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
-	* Peru: [https://www.mercadopago.com/mpe/herramientas/aplicaciones](https://www.mercadopago.com/mpe/herramientas/aplicaciones)
-	* Venezuela: [https://www.mercadopago.com/mlv/herramientas/aplicaciones](https://www.mercadopago.com/mlv/herramientas/aplicaciones)
+	Obtenga su CLIENT_ID e CLIENT_SECRET de acuerdo con su país:
 
-	Other options have been added and you can choose any time after installation:
+  * Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
+  * Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
+  * Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
+  * Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
+  * Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
+  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
+  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
+  * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-	- **Sandbox:** By default, sandbox have been selected. We belive, you need a environment to test your first payment.
 
-	- **Kind of Checkout:** Now you can choose what kind of checkout has adapted better with your front-end design, we recommend checkout transparent.
+	Después de realizar la instalación y configuración básica, otras opciones están disponibles para ser configuradas:
 
-	- **Instant Payment Notification (IPN) URL:** In this part, you can check your IPN URL, where you will get notified about payment updates.
+	- **Sandbox:** Por defecto está configurado el modo sandbox. 
 
-9. **DO NOT TOUCH** the fields *Country*, *Exclude Methods*, *Cod Status (fields…)*. They were generated for you with the correct values, if you need to change them, is highly recommended that you reinstall the module.
+	- **Kind of Checkout:** Puede elegir qué tipo de checkout se adapta mejor con su layout de front-end, recomendamos el checkout iframe.
+
+	- **Instant Payment Notification (IPN) URL:** Su URL de IPN, donde recibirá notificaciones de actualizaciones de pago.
+
+9. **NO ACTUALIZE** los campos *Country*, *Exclude Methods*, *Cod Status (fields…)*. Si desea cambiar estos campos, desinstale el módulo y vuelva a instalar el módulo.
 
 	![Do Not Touch](/images/plugins/modules/oscommerce/DoNotTouch.png)
 
-10. The fields **Sucess Url** and **Pending url** were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
+10. Los campos **Sucess Url** y **Pending url** se generan automáticamente, si está realizando pruebas en un entorno sandbox, los pagos no funcionará correctamente. Puede cambiar estas URL a una de su elección.
 
-11. Save your configuration and it's done!!
+11. Para finalizar, **Guarde** la configuración.
 
-***IMPORTANT:*** This module will only work with the following currencies:*
+***NOTA:*** Este módulo funcionará exclusivamente con las monedas:
 
 * Argentina:
 	* **ARS** (Argentine Peso)

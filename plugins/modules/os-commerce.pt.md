@@ -88,7 +88,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 	Depois de efetuar a instalação e configuração básica, outras opções estão disponíveis para serem configuradas:
 
-	- **Sandbox:** Por padrão o Sandbox vem configurado. Nós acreditos que você irá realizar um pagamento de teste.
+	- **Sandbox:** Por padrão o Sandbox vem configurado.
 
 	- **Kind of Checkout:** Agora você pode escolher qual tipo de checkout se adaptou melhor com o seu design de front-end, recomendamos o checkout iframe.
 

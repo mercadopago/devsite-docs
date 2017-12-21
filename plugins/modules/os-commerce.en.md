@@ -87,7 +87,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 	Other options have been added and you can choose any time after installation:
 
-	- **Sandbox:** By default, sandbox have been selected. We belive, you need a environment to test your first payment.
+	- **Sandbox:** By default, sandbox have been selected.
 
 	- **Kind of Checkout:** Now you can choose what kind of checkout has adapted better with your front-end design, we recommend checkout transparent.
 
