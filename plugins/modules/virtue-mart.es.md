@@ -85,7 +85,7 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
 4. Ir a **Configuration** <br/>
   Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, complete tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
 
-  ![Instrucciones de instalación](/images/plugins/modules/virtuemart/credentials.png) <br />
+![Instrucciones de instalación](/images/plugins/modules/virtuemart/credentials.png) <br />
 
   Puedes obtener tu **Client_id** y **Client_secret**, dependiendo e tu país en los siguientes links:
 
@@ -125,14 +125,14 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
 
 7. Otras configuraciones. <br/>
 
-  ![Instruciones para la instalación](/images/plugins/modules/virtuemart/other_settings.png) <br />
+![Instruciones para la instalación](/images/plugins/modules/virtuemart/other_settings.png) <br />
 
   **Categoría de la tienda**: Define la categoría de la tienda. ;<br />
   **Log**: Habilitar/Deshabilitar logs.<br />
   **Logo**: Seleccionar el logo. Debes agregar el archivo en la carpeta /images/stories/virtuemart/payment <br />
 
 <a name="configuración_custom"></a>
-##Tarjeta de crédito – Configuración de checkout personalizado: ##
+## Tarjeta de crédito – Configuración de checkout personalizado: ##
 
 1. Ir a **VirtueMart > Payment Methods** y hacer click en **New**
 
@@ -150,7 +150,7 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
 
 6. Configura tus credenciales. Para hacerlo, complete tu **access_token** en la sección de configuración de las credenciales. 
 
-![Instrucciones para la instalación(https://raw.github.com/mercadopago/cartvirtuemart/master/README.img/credentials_custom.png) <br />
+![Instrucciones para la instalación](https://raw.github.com/mercadopago/cartvirtuemart/master/README.img/credentials_custom.png) <br />
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
