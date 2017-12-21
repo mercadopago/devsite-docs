@@ -11,7 +11,7 @@
 <a name="features"></a>
 ## Features: ##
 
-The module of Mercado Pago to Zencart is integrated with the feature and payment solutions:
+The module of Mercado Pago to OsCommerce is integrated with the feature and payment solutions:
 
 * [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
     * Split payments (Two cards)

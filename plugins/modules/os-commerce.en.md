@@ -11,7 +11,7 @@
 <a name="features"></a>
 ## Features: ##
 
-The module of Mercado Pago to Zencart is integrated with the feature and payment solutions:
+The module of Mercado Pago to OsCommerce is integrated with the feature and payment solutions:
 
 * [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
     * Split payments (Two cards)
@@ -56,7 +56,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 2. Click **Install Module**.
 
-3. Click on **MercadoPago** then in **+Install Module**.
+3. Click on **Mercado Pago** then in **+Install Module**.
 
 4. Choose your country:
 
@@ -70,7 +70,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 	![Category Selection](/images/plugins/modules/oscommerce/CategorySelection.png)
 
-7. In the next screen, you will see **MercadoPago** listed as a payment method. Now, click on **Edit** on the right bar.
+7. In the next screen, you will see **Mercado Pago** listed as a payment method. Now, click on **Edit** on the right bar.
 
 	![Payment Method List](/images/plugins/modules/oscommerce/PaymentMethodList.png)
 

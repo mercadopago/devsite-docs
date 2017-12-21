@@ -10,7 +10,7 @@
 <a name="features"></a>
 ## Funcionalidades: ##
 
-O módulo do Mercado Pago para o ZenCart esta integrado com as seguintes funcionalidades e soluções de pagamento:
+O módulo do Mercado Pago para o OsCommerce esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
 * [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
     * Pagamento com dois cartões
@@ -94,13 +94,13 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 	- **Instant Payment Notification (IPN) URL:** Você pode verificar sua URL de IPN, onde você receberá notificações de atualizações de pagamento.
 
-9. **NÃO ATUALIZE** os campos *Country*, *Exclude Methods*, *Cod Status (fields…)*. Caso queira alterar esses campos faça desinstale e instale novamente o módulo.
+9. **NÃO ATUALIZE** os campos *Country*, *Exclude Methods*, *Cod Status (fields…)*. Caso queira alterar esses campos, desinstale o módulo e instale novamente o módulo.
 
 	![Do Not Touch](/images/plugins/modules/oscommerce/DoNotTouch.png)
 
-10. Os campos **Sucess Url** e **Pending url** são gerados automaticamente, caso você esteja realizando testes em um ambiente sandbox, não ira funcionar corretamente. Você pode alterar essas URLs para uma de sua escolha.
+10. Os campos **Sucess Url** e **Pending url** são gerados automaticamente, caso esteja realizando testes em um ambiente sandbox, não ira funcionar corretamente. Você pode alterar essas URLs para uma de sua escolha.
 
-11. Para finalizar, salve as configurações.
+11. Para finalizar, **salve** as configurações.
 
 ***IMPORTANT:*** Esse módulo ira funcionar exclusivamente com as moedas:
 
