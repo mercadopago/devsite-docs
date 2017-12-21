@@ -50,9 +50,9 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 1. Na pagina de administração da sua loja, va até a opção **Modules > Payment**.
 
-2. Em **Payment Modules** selecione **MercadoPago**.
+2. Em **Payment Modules** selecione **Mercado Pago**.
 
-3. Em **MercadoPago** clique no botão **Install**.
+3. Em **Mercado Pago** clique no botão **Install**.
 
 4. Agora, é muito importante você configurar o seu **CLIENT_ID** e **CLIENT_SECRET**.
 
