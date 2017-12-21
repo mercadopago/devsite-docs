@@ -10,7 +10,7 @@
 <a name="features"></a>
 ## Funcionalidad: ##
 
-El módulo del Mercado Pago para ZenCart esta integrado con las siguientes funcionalidad y soluciones de pago:
+El módulo del Mercado Pago para OsCommerce esta integrado con las siguientes funcionalidad y soluciones de pago:
 
 * [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
     * Pagos con dos tarjetas
