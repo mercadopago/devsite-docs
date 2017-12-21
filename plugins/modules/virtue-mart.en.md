@@ -54,7 +54,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 <a name="features"></a>
 ## Features: ##
 
-The module of Mercado Pago to Magento is integrated with the features and payment solutions:
+The module of Mercado Pago to VirtueMart is integrated with the features and payment solutions:
 
 * [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
     * Split payments (Two cards)
