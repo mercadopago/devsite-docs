@@ -203,29 +203,29 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   6. Now configure your credentials. To make it, fill your **public_key** and **access_token** in Credentials Configuration section.
 
-    ![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
+  ![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
 
-    You can obtain your **Access Token**, accordingly to your country, in the following links:
+  You can obtain your **Access Token**, accordingly to your country, in the following links:
 
-    * Argentina: https://www.mercadopago.com/mla/account/credentials
-    * Brazil: https://www.mercadopago.com/mlb/account/credentials
-    * Colombia: https://www.mercadopago.com/mco/account/credentials
-    * Mexico: https://www.mercadopago.com/mlm/account/credentials
-    * Venezuela: https://www.mercadopago.com/mlv/account/credentials
-    * Uruguay: https://www.mercadopago.com/mlu/account/credentials    
+  * Argentina: https://www.mercadopago.com/mla/account/credentials
+  * Brazil: https://www.mercadopago.com/mlb/account/credentials
+  * Colombia: https://www.mercadopago.com/mco/account/credentials
+  * Mexico: https://www.mercadopago.com/mlm/account/credentials
+  * Venezuela: https://www.mercadopago.com/mlv/account/credentials
+  * Uruguay: https://www.mercadopago.com/mlu/account/credentials    
 
   7. IPN settings. <br/>
 
-    ![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+  ![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
 
-    * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-    * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-    * **Choose the status when payment is process**: Sets up the order status when payments are in process.
-    * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-    * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-    * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
-    * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
-    * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
+  * **Choose the status of approved orders**: Sets up the order status when payments are approved.
+  * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
+  * **Choose the status when payment is process**: Sets up the order status when payments are in process.
+  * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
+  * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
+  * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
+  * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
+  * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
 
 <a name="Support"></a>
 ## Support: ##
