@@ -1,5 +1,4 @@
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
----
 
 * [Features](#features)
 * [Available versions](#available_versions)
@@ -16,7 +15,6 @@ The module of Mercado Pago to Zencart is integrated with the feature and payment
 
 * [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
     * Split payments (Two cards)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 
 
 <a name="available_versions"></a>
@@ -129,7 +127,7 @@ If you have any questions, problems or errors we have a support channel. Send an
 * Email of your account Mercado Pago.
 * Details about your question, problem or error.
 * Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
-* Version of Zencart.
+* Version of OsCommerce.
 * Module version, if you are using.
 
 Don't worry... We will help you as soon as possible.

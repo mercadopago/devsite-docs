@@ -1,41 +1,33 @@
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
----
 
 * [Features](#features)
 * [Available versions](#available_versions)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Setup](#setup)
-* [Social](#social)
+* [Support](#Support)
 
 
 <a name="features"></a>
-##Features##
+## Features: ##
 
-**Standard Checkout**
+The module of Mercado Pago to Zencart is integrated with the feature and payment solutions:
 
-Great for merchants who want to get going quickly and easily.
-
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
-
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru and Venezuela*
+* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+    * Split payments (Two cards)
 
 
 <a name="available_versions"></a>
-##Available versions##
+## Available versions: ##
+
 
 Plugin Version | Status | Compatible Versions
 -------------- | ------ | -------------------
 v2.2 | Deprecated (Old version) | osCommerce 2.2
 v2.3 | Stable (Current version) | osCommerce 2.3
 
-
 <a name="requirements"></a>
-## Requirements:
+## Requirements: ##
 
 **PHP**
 
@@ -48,7 +40,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 
 <a name="installation"></a>
-## Installation:
+## Installation: ##
 
 1. Download Mercado Pago module:
     * osCommerce 2.2
@@ -58,7 +50,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 
 <a name="setup"></a>
-## Setup MercadoPago
+## Setup MercadoPago: ##
 
 1. On your store administration, go to **Modules > Payment**.
 
@@ -68,19 +60,19 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 4. Choose your country:
 
-	![Country Selecion](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/CountrySelection.png)
+	![Country Selecion](/images/plugins/modules/oscommerce/CountrySelection.png)
 
 5. Choose the payment methods that you don´t want to accept in your Store:
 
-	![Payment Methods Selection](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/PaymentMethodsSelection.png)
+	![Payment Methods Selection](/images/plugins/modules/oscommerce/PaymentMethodsSelection.png)
 
 6. Choose the category on the list that more describe your shop activities.
 
-	![Category Selection](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/CategorySelection.png)
+	![Category Selection](/images/plugins/modules/oscommerce/CategorySelection.png)
 
 7. In the next screen, you will see **MercadoPago** listed as a payment method. Now, click on **Edit** on the right bar.
 
-	![Payment Method List](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/PaymentMethodList.png)
+	![Payment Method List](/images/plugins/modules/oscommerce/PaymentMethodList.png)
 
 8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
@@ -103,7 +95,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 9. **DO NOT TOUCH** the fields *Country*, *Exclude Methods*, *Cod Status (fields…)*. They were generated for you with the correct values, if you need to change them, is highly recommended that you reinstall the module.
 
-	![Do Not Touch](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/DoNotTouch.png)
+	![Do Not Touch](/images/plugins/modules/oscommerce/DoNotTouch.png)
 
 10. The fields **Sucess Url** and **Pending url** were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
 
@@ -126,12 +118,16 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 * Venezuela:
 	* **VEF** (Venezuelan Bolivar)
 
+<a name="Soporte-técnico"></a>
+## Soporte técnico: ##
 
-<a name="social"></a>
-##Social##
+Caso tenga alguna duda, problema o error tenemos un canal de contacto.
+Envié un email a modulos@mercadopago.com con la seguinte información:
 
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>
+* Email de su cuenta de Mercado Pago.
+* Detalles sobre su duda, problema o error.
+* Archivos que puedan ayudar en el entendimiento (Print-Screen, Video, Archivos de logs, etc).
+* Versión del OsCommerce.
+* Versión del módulo, si está utilizando.
+
+No te preocupes... Vamos a ayudarle lo más rápidamente posible.
