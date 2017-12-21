@@ -150,7 +150,7 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
 
 6. Configura tus credenciales. Para hacerlo, complete tu **access_token** en la sección de configuración de las credenciales. 
 
-![Instrucciones para la instalación](https://raw.github.com/mercadopago/cartvirtuemart/master/README.img/credentials_custom.png) <br />
+![Instrucciones para la instalación](/images/plugins/modules/virtuemart/credentials_custom.png) <br />
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
@@ -163,7 +163,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 7. Configuración del checkout. <br/>
 
-![Instruciones para la instalación](https://raw.github.com/mercadopago/cartvirtuemart/master/README.img/checkout_settings_custom.png) <br />
+![Instruciones para la instalación](/images/plugins/modules/virtuemart/checkout_settings_custom.png) <br />
 
 **Statement Descriptor**: Setea la etiqueta que el cliente verá en su facture.;<br />
 **Binary**: Cuando se define como true, el pago solo puede ser aprobado o rechazado. Sino el status de in_process es agregado.<br />
@@ -200,7 +200,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 6. Ahora configure tus credenciales. Para hacerlo, complete **public_key** y **access_token** en la sección de configuración de credenciales.
 
-![Instrucciones para la instalación(https://raw.github.com/mercadopago/cartvirtuemart/master/README.img/credentials_custom_ticket.png) <br />
+![Instrucciones para la instalación(/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
