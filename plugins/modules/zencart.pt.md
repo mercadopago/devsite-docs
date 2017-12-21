@@ -50,7 +50,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 1. Na pagina de administração da sua loja, va até a opção **Modules > Payment**.
 
-2. Em Payment Modules selecione **MercadoPago**.
+2. Em **Payment Modules** selecione **MercadoPago**.
 
 3. Em **MercadoPago** clique no botão **Install**.
 
@@ -81,7 +81,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
   * **Choose the status when client open a mediation**: Define o status do pedido quando o pagamento esta em mediação.
   * **Choose the status when payment was canceled**: Define o status do pedido quando o pagamento é cancelado.
 
-6. Outras configuraões: <br/>
+6. Outras configurações: <br/>
 
 ![Installation Instructions](/images/plugins/modules/zencart/other_config_1.png) <br />
 
