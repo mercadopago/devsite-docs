@@ -1,248 +1,203 @@
 # VirtueMart - Mercado Pago Module (v3.0.x)
 
-* [Features](#features)
-* [Requirements](#requirements)
-* [Available versions](#available_versions)
-* [Installation](#installation)
-* [Standard Checkout Configuration](#configuration_std)
-* [Credit Card - Custom Checkout Configurationn](#configuration_custom)
-* [Ticket - Custom Checkout Configuration](#configuration_custom_ticket)
-* [Social](#social)
+* [Requisitos](#requirements)
+* [Versões disponíveis](#available_versions)
+* [Funcionalidades](#features)
+* [Instalação](#installation)
+* [Configuração de Checkout Padrão](#configuration_std)
+* [Cartão de crédito - Checkout Transparente](#configuration_custom)
+* [Boleto - Checkout Transparente](#configuration_custom_ticket)
+* [Suporte](#Suporte)
 
-<a name="features"></a>
-##Features##
+<a name="requirements"> </a>
+## Requisitos: ##
 
-Checkout options right for your business:
-We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
+Basicamente, os requisitos deste plugin são os mesmos que você precisa executar Virtuemart e Joomla. Sua máquina deve ter:
 
-**Custom Checkout**
+** Plataformas **
+* <a href="https://www.joomla.org/download.html"> Joomla </a> 2.5 ou superior;
+* <a href="https://virtuemart.net/downloads/"> VirtueMart </a> 3.0.x ou superior;
 
-Offer a checkout fully customized to your brand experience with our simple-to-use payments API.
+** Servidor Web Host **
 
-* Seamless integration— no coding required, unless you want to.
-* Full control of buying experience.
-* Store buyer’s card for fast checkout.
-* Accept tickets in addition to cards.
-* Improve conversion rate.
+* <a href="http://php.net/"> PHP </a> 5.3 ou superior com suporte CURL;
+* <a href="http://www.mysql.com/"> MySQL </a> versão 5.5;
+* <a href="https://httpd.apache.org/"> Apache 2.x </a>.
 
-*Available for Argentina, Brazil, Colombia, Mexico, Peru and Venezuela*
+** certificado SSL **
 
-**Basic Checkout**
+Se você estiver usando Custom Checkout, é um requisito que você tenha um certificado SSL e o formulário de pagamento a ser fornecido em uma página HTTPS.
 
-Great for merchants who want to get going quickly and easily.
+Durante os testes em modo sandbox, você pode operar por HTTP, mas para homologação, você precisará adquirir o certificado caso não o tenha.
 
-* Easy website integration— no coding required.
-* Limited control of buying experience — display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
-
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
-
-<a name="requirements"></a>
-##Requirements##
-
-Basically, the requirements of this plugin are same as you need to run Virtuemart and Joomla. Your machine should have:
-
-**Platforms**
-
-* <a href="https://www.joomla.org/download.html">Joomla</a> 2.5 or greater;
-* <a href="https://virtuemart.net/downloads/">VirtueMart</a> 3.0.x or greater;
-
-**Web Server Host**
-
-* <a href="http://php.net/">PHP</a> 5.3 or greater with CURL support;
-* <a href="http://www.mysql.com/">MySQL</a> version 5.5;
-* <a href="https://httpd.apache.org/">Apache 2.x</a>.
-
-**SSL certificate**
-
-If you're using Custom Checkout, it is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
-During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
-
-
-<a name="available_versions"></a>
-##Available versions##
+<a name="available_versions"> </a>
+## Versões disponíveis: ##
 <table>
   <thead>
     <tr>
-      <th>Plugin Version</th>
-      <th>Status</th>
-      <th>VirtueMart Compatible Versions</th>
+      <th> Versão do Plugin </ th>
+      <th> Status </ th>
+      <th> VirtueMart Versões compatíveis </ th>
     </tr>
   <thead>
   <tbody>
     <tr>
-      <td>v2.0.3</td>
-      <td>Stable (Current version)</td>
-      <td>VirtueMart v3.0.x</td>
+      <td> v2.0.3 </ td>
+      <td> Estável (versão atual) </ td>
+      <td> VirtueMart v3.0.x </ td>
     </tr>
   </tbody>
 </table>
 
-<a name="installation"></a>
-##Installation##
+<a name="Funcionalidades"></a>
+## Funcionalidades: ##
 
-1. Download the zip module
-2. Go to **Extensions > Extension Manager**
-3. In **Upload Package File > Package File** select the **cart-virtuemart.zip** and click **Upload & Installation**
+O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-<a name="configuration_std"></a>
-##Standard Checkout Configuration##
+* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+    * Pagamento com dois cartões
 
-1. Go to **VirtueMart > Payment Methods** and click **New**
+* Checkout Transparente
+    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript/)
+    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods/)
 
-2. Complete the fields:
-  - **Payment Name** set **MercadoPago**
+<a name="installation"> </a>
+## Instalação: ##
+
+1. Baixe o módulo zip
+2. Vá para **Extensões> Gerenciador de extensão **
+3. Em **Carregar arquivo de pacote> Arquivo de pacote** selecione o **cart-virtuemart.zip** e clique em **Carregar e instalar **
+
+<a name="configuration_std"> </a>
+## Configuração do checkout básico: ##
+
+1. Vá para **VirtueMart> Métodos de pagamento** e clique em **Novo**
+
+2. Complete os campos:
+  - **Nome do pagamento** set **Mercado Pago**
   - **Sef Alias** set **mercadopago**
-  - **Payment Method** select **MercadoPago**
+  - **Método de pagamento** selecione **Mercado Pago**
   - **Published** set to **true**
-3. Click in **Save**
+3. Clique em **Salvar**
 
-4. Go to **Configuration** tab <br/>
-  First of all, you need to configure your client credentials. To make it, fill your **Client_id** and **Client_secret** in Credentials Configuration section.
+4. Vá para **Configuração** guia <br/>
+  Em primeiro lugar, você precisa configurar as credenciais do seu cliente. Para fazê-lo, preencha o **Client_id** e **Client_secret** na seção Configuração de Credenciais.
 
-  ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/credentials.png) <br />
+![Installation Instructions](/images/plugins/modules/virtuemart/credentials.png) <br />
 
-  You can obtain your **Client_id** and **Client_secret**, accordingly to your country, in the following links:
+Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país, nos seguintes links:
 
-  * Argentina: https://www.mercadopago.com/mla/herramientas/aplicaciones
-  * Brazil: https://www.mercadopago.com/mlb/ferramentas/aplicacoes
-  * Chile: https://www.mercadopago.com/mlc/herramientas/aplicaciones
-  * Colombia: https://www.mercadopago.com/mco/herramientas/aplicaciones
-  * Mexico: https://www.mercadopago.com/mlm/herramientas/aplicaciones
-  * Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
-  * Venezuela: https://www.mercadopago.com/mlv/herramientas/aplicaciones
+* Argentina: [https://www.mercadopago.com/mla/account/credentials]
+* Brazil: [https://www.mercadopago.com/mlb/account/credentials]
+* Colombia: https://www.mercadopago.com/mco/account/credentials
+* Mexico: https://www.mercadopago.com/mlm/account/credentials
+* Venezuela: https://www.mercadopago.com/mlv/account/credentials
+* Uruguay: https://www.mercadopago.com/mlu/account/credentials
 
-5. Checkout settings. <br/>
+5. Configurações do checkout básico. <br />
 
-  ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/checkout_settings.png) <br />
+![Installation Instructions](/images/plugins/modules/virtuemart/checkout_settings.png) <br />
 
-  **Type Checkout**: How your customers will interact with Mercado Pago to pay their orders;<br />
-  **Auto Redirect**: If set, the platform will return to your store when the payment is approved.<br />
-  **Maximum Number of Installments**: The maximum installments allowed for your customers;<br />
-  **Exclude Payment Methods**: Select the payment methods that you want to not work with MercadoPago.<br />
-  **iFrame Width**: The width, in pixels, of the iFrame (used only with iFrame Integration Method);<br />
-  **iFrame Height**: The height, in pixels, of the iFrame (used only with iFrame Integration Method);<br />
-  **Mercado Pago Sandbox**: Test your payments in Mercado Pago sandbox environment;<br/>
+  **Tipo Checkout**: Como seus clientes irão interagir com o Mercado Pago para pagar suas ordens; <br />
+  **Redirecionamento automático**: se configurado, a plataforma retornará à sua loja quando o pagamento for aprovado. <br />
+  **Número máximo de parcelas**: as parcelas máximas permitidas para seus clientes; <br/>
+  **Excluir métodos de pagamento**: Selecione os métodos de pagamento que você deseja não trabalhar com o Mercado Pago. <br />
+  **iFrame Width**: A largura, em pixels, do iFrame (usado apenas com o Método de Integração iFrame); <br />
+  **iFrame Height**: A altura, em pixels, do iFrame (usado apenas com iFrame Integration
+  
+  6. Confiuraça de notificaço de pagamento - IPN. <br />
 
-6. IPN settings. <br/>
+![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
 
-  ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/ipn_settings.png) <br />
+  * **Escolha o status para pagamento aprovado**: Define o status do pedido quando o pagamento é aprovado.
+  * **Escolha o status para pagamento pendente**: Define o status do pedido quando o pagamento é pendente.
+  * **Escolha o status para pagamento em processamento**: Define o status do pedido quando o pagamento esta em processamento.
+  * **Escolha o status para pagamento mediação**: Define o status do pedido quando o pagamento esta em mediação.
+  * **Escolha o status para pagamento devolvido**: Define o status do pedido quando o pagamento é devolvido.
+  * **Escolha o status para pagamento em chargeback**: Define o status do pedido quando o pagamento não reconhecido pelo usuário - chargeback.
+  * **Escolha o status para pagamento cancelado**: Define o status do pedido quando o pagamento é cancelado.
+  * **Escolha o status para pagamento rejeitado**: Define o status do pedido quando o pagamento é rejeitado.
 
-  * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-  * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-  * **Choose the status when payment is process**: Sets up the order status when payments are in process.
-  * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-  * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-  * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
-  * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
-  * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
+7. Outras configurações. <br/>
 
-7. Other settings. <br/>
+![Instruçes de instalação](/images/plugins/modules/virtuemart/other_settings.png) <br />
 
-  ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/other_settings.png) <br />
-
-  **Store Category**: Sets up the category of the store;<br />
-  **Log**: Enables/disables logs.<br />
-  **Logo**: Select the logo. You must add the file in the folder /images/stories/virtuemart/payment <br />
+  **Categoria da loja**: Defina a categoria da loja;<br />
+  **Log**: Habilite/Desabilite logs.<br />
+  **Logo**: Selecione o logo. Você precisa adicionar na pasta /images/stories/virtuemart/payment <br />
+  
 
 <a name="configuration_custom"></a>
-##Credit Card - Custom Checkout Configuration##
+## Configuração do Checkout Transparente - Cartão de crédito: ##
 
-  1. Go to **VirtueMart > Payment Methods** and click **New**
+  1. Ir até **VirtueMart > Métodos de pagamento** e clique **Novo**
 
   2. Complete the fields:
-    - **Payment Name** set **Credit Card - MercadoPago**
+    - **Nome do pagamento** set **Cartão de crédito- Mercado Pago**
     - **Sef Alias** set **mercadopago**
-    - **Payment Method** select **MercadoPago**
-    - **Published** set to **true**
+    - **Método de pagamento** select **Mercado Pago**
+    - **Publicado** set to **true**
 
-  3. Click in **Save**
+  3. Clique **Salvar**
 
-  4. Go to **Configuration** tab
+  4. Clique na tab **Configurações**
 
-  5. On **Mercado Pago Product** select **Credit Card - Checkout Custom**
+  5. Em **Produto Mercado Pago** selecione **Carto de crédito - Checkout Transparente**
 
-  6. Now configure your credentials. To make it, fill your **access_token** in Credentials Configuration section.
+  6. Agora configure com as suas credenciais. Para fazer isso, informe seu **access_token** na sessão de credenciais.
 
-    ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/credentials_custom.png) <br />
+  ![Instruções de configuração](/images/plugins/modules/virtuemart/credentials_custom.png) <br />
 
-    You can obtain your **Public Key** and **Access Token**, accordingly to your country, in the following links:
+  Para obter suas credenciais **Public Key** e **Access Token**, acesse os links a seguir de acordo com o seu país:
 
-    * Argentina: https://www.mercadopago.com/mla/account/credentials
-    * Brazil: https://www.mercadopago.com/mlb/account/credentials
-    * Colombia: https://www.mercadopago.com/mco/account/credentials
-    * Mexico: https://www.mercadopago.com/mlm/account/credentials
-    * Venezuela: https://www.mercadopago.com/mlv/account/credentials
-
-  7. Checkout settings. <br/>
-
-    ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/checkout_settings_custom.png) <br />
-
-    **Statement Descriptor**: Sets the label as the customer will see the charge for amount in his/her bill;<br />
-    **Binary**: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.<br />
-
-  8. IPN settings. <br/>
-
-    ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/ipn_settings.png) <br />
-
-    * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-    * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-    * **Choose the status when payment is process**: Sets up the order status when payments are in process.
-    * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-    * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-    * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
-    * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
-    * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
+  * Argentina: https://www.mercadopago.com/mla/account/credentials
+  * Brasil: https://www.mercadopago.com/mlb/account/credentials
+  * Colombia: https://www.mercadopago.com/mco/account/credentials
+  * Mexico: https://www.mercadopago.com/mlm/account/credentials
+  * Venezuela: https://www.mercadopago.com/mlv/account/credentials
+  * Uruguai: https://www.mercadopago.com/mlu/account/credentials
 
 <a name="configuration_custom_ticket"></a>
-##Ticket - Custom Checkout Configuration##
+## Configuração do Checkout Transparente - Boleto: ##
 
-  1. Go to **VirtueMart > Payment Methods** and click **New**
+1. Ir em **VirtueMart > Payment Methods** e clique **New**
 
-  2. Complete the fields:
-    - **Payment Name** set **Ticket - MercadoPago**
-    - **Sef Alias** set **mercadopago**
-    - **Payment Method** select **MercadoPago**
-    - **Published** set to **true**
+2. Complete os campos:
+  - **Nome o pagamento** informe **Ticket - Mercado Pago**
+  - **Sef Alias** set **mercadopago**
+  - **Método de pagamento** selecione **Mercado Pago**
+  - **Publicado** informe **true**
 
-  3. Click in **Save**
+3. Clique **Salvar**
 
-  4. Go to **Configuration** tab
+4. Ir na tab de **Configurações**
 
-  5. On **Mercado Pago Product** select **Ticket - Checkout Custom**
+5. Em **Mercado Pago Product** selecione **Ticket - Checkout Custom**
 
-  6. Now configure your credentials. To make it, fill your **public_key** and **access_token** in Credentials Configuration section.
+6. Agora configure suas credenciais. Para fazer isso, preencha sua **public_key** e **access_token** na sessão de Credenciais.
 
-    ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/credentials_custom_ticket.png) <br />
+![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
 
-    You can obtain your **Access Token**, accordingly to your country, in the following links:
+Para obter seu **Access Token**, acesse o link abaixo de acordo com o seu país:
 
-    * Argentina: https://www.mercadopago.com/mla/account/credentials
-    * Brazil: https://www.mercadopago.com/mlb/account/credentials
-    * Colombia: https://www.mercadopago.com/mco/account/credentials
-    * Mexico: https://www.mercadopago.com/mlm/account/credentials
-    * Venezuela: https://www.mercadopago.com/mlv/account/credentials
+* Argentina: https://www.mercadopago.com/mla/account/credentials
+* Brazil: https://www.mercadopago.com/mlb/account/credentials
+* Colombia: https://www.mercadopago.com/mco/account/credentials
+* Mexico: https://www.mercadopago.com/mlm/account/credentials
+* Venezuela: https://www.mercadopago.com/mlv/account/credentials
+* Uruguai: https://www.mercadopago.com/mlu/account/credentials  
+    
+<a name="Suporte"></a>
+## Suporte: ##
 
-  7. IPN settings. <br/>
+Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento. 
+Envie um email para modulos@mercadopago.com com as seguintes informações:
 
-    ![Installation Instructions](https://raw.github.com/mercadopago/cart-virtuemart/master/README.img/ipn_settings.png) <br />
+* Email da sua conta Mercado Pago.
+* Detalhes sobre a sua duvida, problema ou erro.
+* Arquivos que possa ajudar no entendimento (Print-Screen, Video, Arquivos de Log, etc).
+* Versão do VirtueMart e do Joomla.
+* Versão do Modulo, caso esteja utilizando.
 
-    * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-    * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-    * **Choose the status when payment is process**: Sets up the order status when payments are in process.
-    * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-    * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-    * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
-    * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
-    * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
-
-<a name="social"></a>
-##Social##
-
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>
+Não se preocupe... Iremos ajuda-lo o mais rápido possível.
