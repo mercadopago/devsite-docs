@@ -6,27 +6,21 @@
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Setup](#setup)
-* [Social](#social)
+* [Support](#Support)
 
 
 <a name="features"></a>
-##Features##
+## Features: ##
 
-**Standard Checkout**
+The module of Mercado Pago to Zencart is integrated with the feature and payment solutions:
 
-Great for merchants who want to get going quickly and easily.
-
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
-
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru and Venezuela*
+* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+    * Split payments (Two cards)
+    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 
 
 <a name="available_versions"></a>
-##Available versions##
+## Available versions: ##
 
 Plugin Version | Status | Compatible Versions
 -------------- | ------ | -------------------
@@ -34,7 +28,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 
 <a name="requirements"></a>
-## Requirements:
+## Requirements: ##
 
 **PHP**
 
@@ -45,17 +39,15 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 * MySQL v5+
 
-
 <a name="installation"></a>
-## Installation:
+## Installation: ##
 
 1. Download Mercado Pago module.
 
 2. Copy the module folder to your ZenCart ROOT installation.
 
-
 <a name="setup"></a>
-## Setup MercadoPago
+## Setup MercadoPago: ##
 
 1. On your store administration, go to **Modules > Payment**.
 
@@ -106,11 +98,15 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
   * **Live or Sandbox**: Test your payments in Mercado Pago sandbox environment;
   * **Sort order of display**: Complete the display order of MercadoPago
 
-<a name="social"></a>
-##Social##
+<a name="Support"></a>
+## Support: ##
 
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>
+If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
+
+* Email of your account Mercado Pago.
+* Details about your question, problem or error.
+* Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
+* Version of Zencart.
+* Module version, if you are using.
+
+Don't worry... We will help you as soon as possible.
