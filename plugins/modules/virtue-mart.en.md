@@ -66,14 +66,15 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
     * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
 
 <a name="installation"></a>
-##Installation##
+## Installation: ##
 
 1. Download the zip module
 2. Go to **Extensions > Extension Manager**
 3. In **Upload Package File > Package File** select the **cart-virtuemart.zip** and click **Upload & Installation**
 
+
 <a name="configuration_std"></a>
-##Standard Checkout Configuration##
+## Standard Checkout Configuration: ##
 
 1. Go to **VirtueMart > Payment Methods** and click **New**
 
@@ -134,7 +135,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   **Logo**: Select the logo. You must add the file in the folder /images/stories/virtuemart/payment <br />
 
 <a name="configuration_custom"></a>
-##Credit Card - Custom Checkout Configuration##
+## Credit Card - Custom Checkout Configuration: ##
 
   1. Go to **VirtueMart > Payment Methods** and click **New**
 
@@ -184,7 +185,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
     * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
 
 <a name="configuration_custom_ticket"></a>
-##Ticket - Custom Checkout Configuration##
+## Ticket - Custom Checkout Configuration: ##
 
   1. Go to **VirtueMart > Payment Methods** and click **New**
 
