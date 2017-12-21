@@ -4,9 +4,9 @@
 * [Versiones disponibles](#Versiones_disponibles)
 * [Funcionalidad](#Funcionalidad)
 * [Instalación](#Instalación)
-* [Configuración de checkout básico](#configuración_basico)
-* [Tarjeta de crédito – Checkout personalizado](#configuración_custom)
-* [Ticket – Checkout personalizado](#configuración_custom_ticket)
+* [Configuración del Checkout básico](#configuración_basico)
+* [Configuración del Checkout personalizado - Tarjeta de crédito](#configuración_custom)
+* [Configuración del Checkout personalizado - Ticket](#configuración_custom_ticket)
 * [Soporte técnico](#Soporte-técnico)
 
 <a name="Requerimientos"></a>
@@ -71,7 +71,7 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
 3. En **Upload Package File > Package File** seleccionar **cart-virtuemart.zip** y clickear en **Upload & Installation**
 
 <a name="configuración_basico"></a>
-## Configuración de checkout básico: ##
+## Configuración del Checkout básico: ##
 
 1. Ir a **VirtueMart > Payment Methods** and click **New**
 
@@ -132,7 +132,7 @@ El módulo del Mercado Pago para Magento esta integrado con las siguientes funci
   **Logo**: Seleccionar el logo. Debes agregar el archivo en la carpeta /images/stories/virtuemart/payment <br />
 
 <a name="configuración_custom"></a>
-## Tarjeta de crédito – Configuración de checkout personalizado: ##
+## Configuración del Checkout personalizado - Tarjeta de crédito: ##
 
 1. Ir a **VirtueMart > Payment Methods** y hacer click en **New**
 
@@ -182,7 +182,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
   * **Elige el status para ordenes rechazadas**: Setea el status de la orden cuando los pagos son rechazados.
 
 <a name="configuración_custom_ticket"></a>
-## Ticket – Checkout personalizado: ##
+## Configuración del Checkout personalizado - Ticket: ##
 
 1. Ir a **VirtueMart > Payment Methods** y hacer click en **New**
 
@@ -200,7 +200,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 6. Ahora configure tus credenciales. Para hacerlo, complete **public_key** y **access_token** en la sección de configuración de credenciales.
 
-![Instrucciones para la instalación(/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
+![Instrucciones para la instalación](/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
