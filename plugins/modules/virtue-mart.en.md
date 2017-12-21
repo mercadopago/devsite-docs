@@ -235,7 +235,7 @@ If you have any questions, problems or errors we have a support channel. Send an
 * Email of your account Mercado Pago.
 * Details about your question, problem or error.
 * Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
-* Version of VirtueMart.
+* Version of VirtueMart and Joomla.
 * Module version, if you are using.
 
 Don't worry... We will help you as soon as possible.
