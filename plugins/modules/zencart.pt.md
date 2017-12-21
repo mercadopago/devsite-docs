@@ -1,5 +1,4 @@
 # ZenCart - Mercado Pago Module (v1.5.x)
----
 
 * [Funcionalidades](#features)
 * [Versões disponíveis](#available_versions)
