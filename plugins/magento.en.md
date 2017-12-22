@@ -1,4 +1,4 @@
-# Magento - Mercado Pago Module (v1.8.x to 1.9.x)
+# Magento v1.8.x to 1.9.x
 
 * [Requirements](#Requirements)
 * [Features](#Features)
@@ -16,7 +16,7 @@
 
 
 <a name="Requirements"></a>
-## Requirements: ##
+## Requirements: 
 
 **Magento Version**
 * Community Edition 1.8.x - 1.9.x
@@ -234,13 +234,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 This process will explain how to configure the module to accept Mercado Envios:
 
-1. First, You need to enable Mercado Envios in your Mercado Pago account.
-
-	You can do this by accessing, according to your country, the link:
-
-	* Argentina: http://shipping.mercadopago.com.ar/optin/doOptin
-	* Brasil: http://shipping.mercadopago.com.br/optin/doOptin
-	* Mexico: http://shipping.mercadopago.com.mx/optin/doOptin
+1. First, You need to [enable Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) in your Mercado Pago account.
 
 > 	IMPORTANT: Your Mercado Pago account must be of type **Seller**.
 

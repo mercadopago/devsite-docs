@@ -1,4 +1,4 @@
-# Magento - Mercado Pago Module (v1.8.x to 1.9.x)
+# Magento v1.8.x to 1.9.x
 
 * [Requisitos](#Requisitos)
 * [Funcionalidades](#Funcionalidades)
@@ -17,7 +17,7 @@
 * [Suporte](#Suporte)
 
 <a name="Requisitos"></a>
-## Requisitos: ##
+## Requisitos: 
 
 **Versão do Magento**
 * Community Edition 1.8.x - 1.9.x
@@ -237,13 +237,7 @@ Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usu�
 
 Esse processo irá explicar como configurar o módulo para aceitar Mercado Envios:
 
-1. Primeiro, Você precisa habilitar o Mercado Envios na sua conta Mercado Pago.
-
-	Você consegue fazer isso acessando, de acordo com o seu país, o link abaixo:
-
-	* Argentina: http://shipping.mercadopago.com.ar/optin/doOptin
-	* Brasil: http://shipping.mercadopago.com.br/optin/doOptin
-	* Mexico: http://shipping.mercadopago.com.mx/optin/doOptin
+1. Primeiro, Você precisa [habilitar o Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) na sua conta Mercado Pago.
 
 > 	IMPORTANTE: A sua conta Mercado Pago tem que ser do tipo **Vendedor**.
 
