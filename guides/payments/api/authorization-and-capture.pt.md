@@ -32,8 +32,7 @@ Fazer uma autorização ou reserva de valores é como fazer um pagamento, porém
 ```php
 <?php  
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $payment = new MercadoPago\Payment();
 
@@ -155,10 +154,9 @@ Para capturar o valor total, você deve apenas enviar o atributo `capture` em **
 ```php
 <?php
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = MercadoPago\Payment::load($payment_id);
+  $payment = MercadoPago\Payment::find_by_id($payment_id);
   $payment->capture = true;
   $payment->update();
 
@@ -224,10 +222,9 @@ Caso decida capturar um valor inferior ao reservado, é necessário que, além d
 ```php
 <?php
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = MercadoPago\Payment::load($payment_id);
+  $payment = MercadoPago\Payment::find_by_id($payment_id);
   $payment->transaction_amount = 75;
   $payment->capture = true;
   $payment->update();
@@ -297,10 +294,9 @@ Para isso, atualize o atributo `status` do pagamento para um status `cancelled`:
 ```php
 <?php
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = MercadoPago\Payment::load($payment_id);
+  $payment = MercadoPago\Payment::find_by_id($payment_id);
   $payment->status = "cancelled";
   $payment->update();
 

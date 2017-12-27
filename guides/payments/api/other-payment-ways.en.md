@@ -18,8 +18,7 @@ You can get the list of payment methods available by making an `HTTP GET` reques
 ```php
 <?php
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $payment_methods = MercadoPago::get("/v1/payment_methods");
 
@@ -85,8 +84,7 @@ To receive payments in cash, you just need to get the `email`. Then, you need to
 ```php
 <?php  
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = 100;
@@ -242,8 +240,7 @@ To generate the payment using Webpay you must send the ´payment_method_id´ **w
 ```php
 <?php
 
-require ('mercadopago.php');
-MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;
@@ -430,8 +427,7 @@ Redirect your customer to the URL that you will find in the `external_resource_u
 ```php
 <?php
 
-require ('mercadopago.php');
-MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;
