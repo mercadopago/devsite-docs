@@ -17,8 +17,8 @@ To create a payment preference you must install [Mercado Pago SDK](https://githu
 [[[
 ```php
 <?php  
-  MercadoPago\SDK.setClientId("ENV_CLIENT_ID");
-  MercadoPago\SDK.setClientSecret("ENV_CLIENT_SECRET");;
+  MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
+  MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
 ?>
 ```
 ```java

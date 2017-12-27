@@ -16,8 +16,8 @@ Para criar uma preferência de pagamento, você deve [instalar o SDK do MercadoP
 [[[
 ```php
 <?php  
-  MercadoPago\SDK.setClientId("ENV_CLIENT_ID");
-  MercadoPago\SDK.setClientSecret("ENV_CLIENT_SECRET");;
+  MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
+  MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
 ?>
 ```
 ```java
