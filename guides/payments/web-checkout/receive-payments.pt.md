@@ -186,7 +186,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
   );
   $payer->address = array(
     "street_name" => "[FAKER][ADDRESS][STREET_NAME]",
-    "street_number" => [FAKER][ADDRESS][BUILDING_NUMBER],
+    "street_number" => [FAKER][NUMBER][BETWEEN][1000,2000],
     "zip_code" => "[FAKER][ADDRESS][ZIP]"
   );
   // ...
@@ -207,7 +207,7 @@ payer.setName("Charles")
         .setNumber("12345678"))
      .setAddress(new Address()
         .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
-        .setBuildingNumber("[FAKER][ADDRESS][BUILDING_NUMBER]")
+        .setBuildingNumber("[FAKER][NUMBER][BETWEEN][1000,2000]")
         .setZipCode("[FAKER][ADDRESS][ZIP]"));
 // ...
 ```
@@ -228,7 +228,7 @@ var payer = {
   },
   address: {
     street_name: "[FAKER][ADDRESS][STREET_NAME]",
-    street_number: "[FAKER][ADDRESS][BUILDING_NUMBER]",
+    street_number: "[FAKER][NUMBER][BETWEEN][1000,2000]",
     zip_code: "[FAKER][ADDRESS][ZIP]"
   }
 }
@@ -251,7 +251,7 @@ payer = MercadoPago::Payer.new({
   })
   address: MercadoPago::Address.new ({
     street_name: "[FAKER][ADDRESS][STREET_NAME]",
-    street_number: "[FAKER][ADDRESS][BUILDING_NUMBER]",
+    street_number: "[FAKER][NUMBER][BETWEEN][1000,2000]",
     zip_code: "[FAKER][ADDRESS][ZIP]"
   })
 })
@@ -280,7 +280,7 @@ Payer payer = new Payer()
     Address = new Address()
     {
         StreetName = "[FAKER][ADDRESS][STREET_NAME]",
-        StreetNumber = int.Parse("[FAKER][ADDRESS][BUILDING_NUMBER]"),
+        StreetNumber = int.Parse("[FAKER][NUMBER][BETWEEN][1000,2000]"),
         ZipCode = "[FAKER][ADDRESS][ZIP]"
     }
 };
@@ -297,7 +297,7 @@ Payer payer = new Payer()
   $shipments = new MercadoPago\Shipments();
   $shipments->receiver_address = array(
 		"zip_code" => "[FAKER][ADDRESS][ZIP]",
-		"street_number" => [FAKER][ADDRESS][BUILDING_NUMBER],
+		"street_number" => [FAKER][NUMBER][BETWEEN][1000,2000],
 		"street_name" => "[FAKER][ADDRESS][STREET_NAME]",
 		"floor" => [FAKER][NUMBER][BETWEEN][1,20],
 		"apartment" => "C"
@@ -310,7 +310,7 @@ Payer payer = new Payer()
 Shipments shipments = new Shipments();
 shipments.setReceiverAddress(new ReceiverAddress()
   .setZipCode("[FAKER][ADDRESS][ZIP]")
-  .setBuildingNumber("[FAKER][ADDRESS][BUILDING_NUMBER]")
+  .setBuildingNumber("[FAKER][NUMBER][BETWEEN][1000,2000]")
   .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
   .setFloor("[FAKER][NUMBER][BETWEEN][1,20]")
   .setApartment("C"));
@@ -321,7 +321,7 @@ shipments.setReceiverAddress(new ReceiverAddress()
 var shipments = {
 	receiver_address: {
 		zip_code: [FAKER][ADDRESS][ZIP]",
-		street_number: [FAKER][ADDRESS][BUILDING_NUMBER],
+		street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
 		street_name: "[FAKER][ADDRESS][STREET_NAME]",
 		floor: [FAKER][NUMBER][BETWEEN][1,20],
 		apartment: "C"
@@ -334,7 +334,7 @@ var shipments = {
 shipment = MercadoPago::Shipment.new(
   receiver_address: new MercadoPago::ReceiverAddress.new({
     zip_code: "[FAKER][ADDRESS][ZIP]",
-    street_number: [FAKER][ADDRESS][BUILDING_NUMBER],
+    street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
     street_name: "[FAKER][ADDRESS][STREET_NAME]",
     floor: [FAKER][NUMBER][BETWEEN][1,20],
     apartment: "C"
@@ -353,7 +353,7 @@ Shipment shipment = new Shipment()
     {
         ZipCode = "[FAKER][ADDRESS][ZIP]",
         StreetName = "[FAKER][ADDRESS][STREET_NAME]",
-        StreetNumber = int.Parse("[FAKER][ADDRESS][BUILDING_NUMBER]"),
+        StreetNumber = int.Parse("[FAKER][NUMBER][BETWEEN][1000,2000]"),
         Floor = "[FAKER][NUMBER][BETWEEN][1, 20]",
         Apartment = "C"
     }
