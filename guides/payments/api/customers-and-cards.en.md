@@ -30,9 +30,8 @@ The `token` is captured during the [collection of card information](/guides/paym
 ```php
 
 <?php  
-
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+ 
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $customer = new MercadoPago\Customer();
   $customer->email = "test@test.com";
@@ -40,7 +39,7 @@ The `token` is captured during the [collection of card information](/guides/paym
 
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
-  $card->customerId = $customer->getId();
+  $card->customer_id = $customer->id();
   $card->save();
 
 ?>
@@ -138,8 +137,9 @@ You can get the complete list of `Cards` of a customer by making an `HTTP GET` r
 
 [[[
 ```php
+
 <?php
-	$customer = MercadoPago\Customer::load($customer_id);
+  $customer = MercadoPago\Customer::find_by_id($customer_id);
   $cards = $customer->cards();
 ?>
 ```
@@ -332,8 +332,7 @@ It is possible to add new cards to a `Customer`. To do this, you must create a `
 
 <?php  
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $customer = MercadoPago\Customer::load("247711297-jxOV430go9fx2e");
 
@@ -550,7 +549,7 @@ You can get the complete list of `Cards` of a customer by making an `HTTP GET` r
 [[[
 ```php
 <?php
-	$customer = MercadoPago\Customer::load($customer_id);
+	$customer = MercadoPago\Customer::find_by_id($customer_id);
   $cards = $customer->cards();
 ?>
 ```

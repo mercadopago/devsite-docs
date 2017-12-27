@@ -30,9 +30,8 @@ O `token` é o que capturou ao fazer a [captura de dados do cartão](/guides/pay
 ```php
 
 <?php  
-
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+ 
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $customer = new MercadoPago\Customer();
   $customer->email = "test@test.com";
@@ -40,7 +39,7 @@ O `token` é o que capturou ao fazer a [captura de dados do cartão](/guides/pay
 
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
-  $card->customerId = $customer->getId();
+  $card->customer_id = $customer->id();
   $card->save();
 
 ?>
@@ -139,7 +138,7 @@ Obtenha a lista completa de `Cards` de um cliente efetuando uma requisição `HT
 [[[
 ```php
 <?php
-	$customer = MercadoPago\Customer::load($customer_id);
+	$customer = MercadoPago\Customer::find_by_id($customer_id);
   $cards = $customer->cards();
 ?>
 ```
@@ -244,8 +243,7 @@ Por se tratar de um pagamento com cartão armazenado, você deverá enviar a ID 
 ```php
 <?php  
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $payment = new MercadoPago\Payment();
 
@@ -331,10 +329,9 @@ Isso é tudo. A resposta indicará o status do pagamento  (`approved`, `rejected
 
 <?php  
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $customer = MercadoPago\Customer::load("247711297-jxOV430go9fx2e");
+  $customer = MercadoPago\Customer::find_by_id("247711297-jxOV430go9fx2e");
 
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
@@ -549,7 +546,7 @@ Obtenha a lista completa de `Cards` de um cliente efetuando uma requisição `HT
 [[[
 ```php
 <?php
-	$customer = MercadoPago\Customer::load($customer_id);
+	$customer = MercadoPago\Customer::find_by_id($customer_id);
   $cards = $customer->cards();
 ?>
 ```

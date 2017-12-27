@@ -30,10 +30,9 @@ El `token` es el que capturaste cuando estabas haciendo la [captura de datos de 
 [[[
 ```php
 
-<?php  
+<?php   
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $customer = new MercadoPago\Customer();
   $customer->email = "test@test.com";
@@ -41,7 +40,7 @@ El `token` es el que capturaste cuando estabas haciendo la [captura de datos de 
 
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
-  $card->customerId = $customer->getId();
+  $card->customer_id = $customer->id();
   $card->save();
 
 ?>
@@ -140,7 +139,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 [[[
 ```php
 <?php
-	$customer = MercadoPago\Customer::load($customer_id);
+	$customer = MercadoPago\Customer::find_by_id($id);
   $cards = $customer->cards();
 ?>
 ```
@@ -245,8 +244,7 @@ Al ser un pago con tarjeta guardada, deberás enviar el _id_ de _customer_ asoci
 ```php
 <?php  
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $payment = new MercadoPago\Payment();
 
@@ -333,14 +331,13 @@ Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `to
 
 <?php  
 
-  require ('mercadopago.php');
-  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $customer = MercadoPago\Customer::load("247711297-jxOV430go9fx2e");
+  $customer = MercadoPago\Customer::find_by_id("247711297-jxOV430go9fx2e");
 
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
-  $card->customerId = $customer->getId;
+  $card->customer_id = $customer->id;
   $card->save();
 
   print_r($card);
@@ -551,7 +548,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 [[[
 ```php
 <?php
-	$customer = MercadoPago\Customer::load($customer_id);
+	$customer = MercadoPago\Customer::find_by_id($customer_id);
   $cards = $customer->cards();
 ?>
 ```
