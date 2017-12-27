@@ -74,7 +74,7 @@ Para hacer uso de este botón debes comenzar insertando el siguiente código en 
 <form action="/procesar-pago.php" method="POST">
   <script
   src="https://beta.mercadopago.com.ar/integrations/v1/checkout.js"
-  data-public-key="TEST-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  data-public-key="ENV_PUBLIC_KEY"
   data-transaction-amount="123.45">
   </script>
 </form>
@@ -99,7 +99,7 @@ Es la URL de la página donde procesarás el pago. Por ejemplo:
 Tu [clave pública](https://www.mercadopago.com.ar/account/credentials) es la que te identifica para poder iniciar el checkout de forma segura. Por ejemplo:
 
 ```html
-data-public-key="TEST-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+data-public-key="ENV_PUBLIC_KEY"
 ```
 
 > NOTA: Esta es una clave pública del entorno de pruebas. Para capturar tarjetas reales deberás reemplazarla por tu [clave pública productiva](https://www.mercadopago.com.ar/account/credentials).
@@ -254,7 +254,7 @@ Para crear un token puedes hacer un POST a la siguiente URL. Para pruebas, usa l
 POST:
 
 ```
-https://api.mercadopago.com/v1/card_tokens?public_key=TEST-xxxxxxxx-xxxx-xxx
+https://api.mercadopago.com/v1/card_tokens?public_key=ENV_PUBLIC_KEY
 ```
 
 Con body:
@@ -284,7 +284,7 @@ Para salir a producción deberás enviar tu access_token productivo, pero para q
 POST:
 
 ```
-https://api.mercadopago.com/v1/payments?access_token=TEST-xxxxxxxx-xxxx-xxx
+https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN
 ```
 
 Con body:
