@@ -30,15 +30,33 @@ Use the site_id to indicate the country where you want to run the test.
 | Peru  |  **MPE** |
 | Colombia  |  **MCO** |
 
-##### Request
+##### _Request_
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $body = array(
+    "json_data" => array(
+      "site_id" => "[FAKER][GLOBALIZE][UPPER_SITE_ID]"
+    )
+  );
+
+  $result = MercadoPago\SDK::post('/users/test_user', $body);
+
+  var_dump($result);
+?>
+```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-##### Response
-```curl
+]]]
+##### _Response_
+```json
 {
     "id": 123456,
     "nickname": "TT123456",

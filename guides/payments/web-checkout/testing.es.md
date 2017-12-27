@@ -34,6 +34,9 @@ Utiliza el dato *site_id* para indicar el país donde quieres realizar las prueb
 [[[
 ```php
 <?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
   $body = array(
     "json_data" => array(
       "site_id" => "[FAKER][GLOBALIZE][UPPER_SITE_ID]"
