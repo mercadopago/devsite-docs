@@ -185,7 +185,7 @@ Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre qu
 Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu _checkout_:
 
 ```html
-<script src="https://secure.mlstatic.com/org-img/checkout/custom/0.6/threat_metrix.js"></script>
+<script src="https://resources.mlstatic.com/device/meli-metrix.min.js"></script>
 ```
 
 En tu formulario deberás agregar el siguiente `input`:
