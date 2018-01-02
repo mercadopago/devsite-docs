@@ -1,270 +1,266 @@
-# WP eCommerce - Mercado Pago Module (3.11.x or greater)
+![Mercado Pago](/images/plugins/modules/wp-ecommerce/mplogo.png)
 
+# Mercado Pago integration module for WP-eCommerce
+* [System Requirements](#system-requirements)
 * [Features](#features)
-* [Available versions](#available_versions)
-* [Requirements](#requirements)
 * [Installation](#installation)
-* [Basic Checkout Configuration](#std_configuration)
-* [Custom Checkout Configuration](#cst_configuration)
-* [Ticket Configuration](#ticket_configuration)
+* Custom Checkout
+  * [Configuring Credit Card](#configuring-credit-card)
+  * [Configuring Tickets](#configuring-tickets)
+* Basic Checkout
+  * [Configuring Checkout by Redirect, Iframe, or LightBox](#configuring-checkout-by-redirect-iframe-or-lightbox)
+* [Instant Payment Notification Settings](#instant-payment-notification-settings)
 * [Upgrade](#upgrade)
-* [Feedback](#feedback)
+* [FAQ](#faq)
+* [Technical Support](#technical-support)
+* [How to Contribute](#how-to-contribute)
 
-<a name="features"></a>
-##Features##
+# System Requirements
+### Platform Version
+* <a href="https://wordpress.org/download/">WordPress</a> 4.1 or greater
+* <a href="https://wordpress.org/plugins/wp-e-commerce/">WP eCommerce</a> 3.11 or greater
 
-Checkout options right for your business:
-We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
+### Environment
+* LAMP (Linux, Apache, MySQL, and PHP)
 
-**Custom Checkout**
+### Operational System
+* Linux x86
+* x86-64
 
-Offer a checkout fully customized to your brand experience with our simple-to-use payments API.
+### Web Server
+* <a href="https://httpd.apache.org/">Apache 2.x</a>
 
-* Seamless integration— no coding required, unless you want to.
-* Full control of buying experience.
-* Store buyer’s card for fast checkout.
-* Accept tickets in addition to cards.
-* Accept MercadoPago's discount coupons.
-* Improve conversion rate.
+### Hosting
+* Can override the .htaccess file
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
+### PHP Versions
+* <a href="http://php.net/">PHP</a> 5.6 or greater, with CURL support
 
-**Basic Checkout**
+### MySQL Version
+* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.0 or greater
 
-Great for merchants who want to get going quickly and easily.
+### Extension Dependencies
+* WP eCommerce
 
-* Easy website integration— no coding required.
-* Limited control of buying experience — display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
+### Additional Settings
+* safe_mode off
+* memory_limit greater than 256MB (512MB is the recommended)
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
+### SSL
+* For Credit Cards and Tickets, it is a requirement that you have a SSL certificate.
 
-<a name="requirements"></a>
-##Requirements##
+# Features
+The module of Mercado Pago for WP eCommerce is integrated with the following features and payment solutions:
 
-Basically, the requirements of this plugin are same as you need to run WPeCommerce. Your machine should have:
+### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_checkout_payment.png)
 
-**Platforms**
+### Custom Checkout
+* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/plugins/modules/wp-ecommerce/order_custom.png)
+* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/plugins/modules/wp-ecommerce/order_cust_card.png)
+* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/plugins/modules/wp-ecommerce/order_ticket.png)
 
-* <a href="https://wordpress.org/download/">WordPress</a> 4.1 or greater;
-* <a href="https://wordpress.org/plugins/wp-e-commerce/">WP eCommerce</a> 3.11 or greater;
+### Other Features
+* Credentials and platform status checkings
+* Customizable success page
+* Installments calculator
+* Currency conversion
+* Instant payment notification and webhooks
+* Log and debug tools
 
-**Web Server Host**
+# Installation
+If you have already the module installed, please follow the [Upgrade Instructions](#upgrade) first.
 
-* <a href="http://php.net/">PHP</a> 5.6 or greater with CURL support;
-* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.0 or greater;
-* <a href="https://httpd.apache.org/">Apache 2.x</a>.
+You have two options to install this module: from your WordPress Store, or by downloading and manually copying the module directory.
 
-**SSL certificate**
-
-If you're using Custom Checkout, it is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
-During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
-
-<a name="available_versions"></a>
-##Available versions##
-
-<table>
-  <thead>
-    <tr>
-      <th>Plugin Version</th>
-      <th>Status</th>
-      <th>WPeCommerce Compatible Versions</th>
-    </tr>
-  <thead>
-  <tbody>
-    <tr>
-      <td>v4.2.5</td>
-      <td>Stable (Current version)</td>
-      <td>WPeCommerce 3.11.x or greater</td>
-    </tr>
-  </tbody>
-</table>
-
-<a name="installation"></a>
-##Installation##
-
-If you have already the module installed, please follow the [Upgrade instructions](#upgrade) first.
-
-You have two ways to install this module: from your WordPress Store, or by downloading and manually copying the module directory.
-
-**Install from WordPress**
+### Install from WordPress
 
 1. On your store administration, go to *Plugins* option in sidebar;
 
 2. Click in *Add New* button and type "WPeComm Mercado Pago Module" in the *Search Plugins* text field. Press Enter;
 
-3. You should find the module read to be installed. Click install.
+3. You should find the module ready to be installed. Click install. Its done!
 
-**Manual Download**
+### Manual Download
 
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://downloads.wordpress.org/plugin/wpecomm-mercado-pago-module.4.2.5.zip">WordPress Plugin Directory</a>);
+1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
 
 2. Unzip the folder and find "wpecomm-mercado-pago-module" directory;
 
-3. Copy "wpecomm-mercado-pago-module" directory to *[WordPressRootDirectory]/wp-content/plugins/* directory.
+3. Copy "wpecomm-mercado-pago-module" directory to *[WordPressRootDirectory]/wp-content/plugins/* directory. Its done!
 
-To confirm that your module is really installed, you can click in *Plugins* item in the store administration menu, and check your just installed module. Just click *enable* to activate it and you should receive the message "Plugin enabled." as a notice in your WordPress.
+> HINT: To confirm that your module is really installed, you can click in *Plugins* item in the store administration menu, and check your just installed module. Just click *enable* to activate it and you should receive the message "Plugin enabled." as a notice in your WordPress.
 
-![Features](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/plugin_adm.png)
+# Configuring Credit Card
+This page will explain how to configure the module to accept payments with Credit Card of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Custom Checkout*. You should get the following page:
 
-<a name="std_configuration"></a>
-##Basic Checkout Configuration##
+![Custom Checkout Config](/images/plugins/modules/wp-ecommerce/custom_config_screenshot.png)
 
-On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Basic Checkout* settings. You should get the following page:
+### Mercado Pago Credentials
+  * Here you should place your *Public Key* and *Access Token* keys, the credentials that uniquely identifies you in Mercado Pago.
 
-![Installation Instructions](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/basic_checkout.png)
+### Checkout Options
+How checkout is shown.
+  * *Statement Descriptor*: The description that will be shown in your customer's invoice;
+  * *Binary Mode*: When charging a credit card, only [approved] or [reject] status will be taken;
+  * *Store Category*: Sets up the category of the store;
+  * *Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;
+  * *URL Approved Payment*: Customize a URL to be redirected when a payment is approved. Let blank to redirect to the store;
+  * *URL Pending Payment*: Customize a URL to be redirected when a payment has failed. Let blank to redirect to the store.
 
-1. **Solution Header**: This part is the header, where you can enable/disable the solution;
+### Payment Options
+How the payment option behaves.
+  * *Currency conversion*: Enable currency conversion mode for sells with Basic Checkout. Currency conversion is a feature that enables you to set an unsupported currency in WP eCommerce while maintaining Mercado Pago as payment method. It will convert the unsupported currency for the currency used in your country. Pay attention that this service converts values on-the-fly in real-time and can bring some additional delay to your server.
 
-	*Display Name*: This is the title of the payment option that will be shown to your customers.
+### Test and Debug Options
+Offers logging tools so you can analyze problems that may be occurring. Maintain this disabled if working in production with a stable system.
+  * *Enable Sandbox*: Enable this to activate sandbox testing mode;
+  * *Debug mode*: Enable this to log messages in browser console.
 
-2. **Mercado Pago Credentials**: In this part, you should configure your credentials *Client_id* and *Client_secret*;
+# Configuring Tickets
+This page will explain how to configure the module to accept payments with Tickets of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Ticket*. You should get the following page:
 
-	Remember that you can obtain your *Client_id* and *Client_secret*, accordingly to your country, in the following links:
+![Ticket Checkout Config](/images/plugins/modules/wp-ecommerce/ticket_config_screenshot.png)
 
-	* Argentina: https://www.mercadopago.com/mla/account/credentials?type=basic
-	* Brazil: https://www.mercadopago.com/mlb/account/credentials?type=basic
-	* Chile: https://www.mercadopago.com/mlc/account/credentials?type=basic
-	* Colombia: https://www.mercadopago.com/mco/account/credentials?type=basic
-	* Mexico: https://www.mercadopago.com/mlm/account/credentials?type=basic
-	* Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
-	* Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=basic
-	* Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=basic
+### Mercado Pago Credentials
+  * Here you should place your *Access Token* key, the credential that uniquely identifies you in Mercado Pago.
 
-3. **Checkout Options**: This part allows you to customize your general checkout fields;
+### Checkout Options
+How checkout is shown.
+  * *Store Category*: Sets up the category of the store;
+  * *Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;
+  * *URL Approved Payment*: Customize a URL to be redirected when a payment is approved. Let blank to redirect to the store;
+  * *URL Pending Payment*: Customize a URL to be redirected when a payment has failed. Let blank to redirect to the store.
 
-	*Description*: This is the description of the payment option that will be shown to your customers;<br />
-	*Store Category*: Sets up the category of the store;<br />
-	*Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;<br />
-	*Integration Method*: How your customers will interact with Mercado Pago to pay their orders;<br />
-	*iFrame Width*: The width, in pixels, of the iFrame (used only with iFrame Integration Method);<br />
-	*iFrame Height*: The height, in pixels, of the iFrame (used only with iFrame Integration Method);<br />
-	*Auto Return*: If set, the platform will return to your store when the payment is approved;<br />
-	*URL Approved Payment*: This is the URL where the customer is redirected if his payment is approved;<br />
-	*URL Pending Payment*: This is the URL where the customer is redirected if his payment is in process.
+### Payment Options
+How the payment option behaves.
+  * *Currency conversion*: Enable currency conversion mode for sells with Basic Checkout. Currency conversion is a feature that enables you to set an unsupported currency in WP eCommerce while maintaining Mercado Pago as payment method. It will convert the unsupported currency for the currency used in your country. Pay attention that this service converts values on-the-fly in real-time and can bring some additional delay to your server.
 
-4. **Payment Options**: This part allows you to customize how the payment should be made;
+### Test and Debug Options
+Offers logging tools so you can analyze problems that may be occurring. Maintain this disabled if working in production with a stable system.
+  * *Debug mode*: Enable this to log messages in browser console.
 
-	*Max Installments*: The maximum installments allowed for your customers;<br />
-	*Currency Conversion*: Let merchants try to convert unsupported currency into Mercado Pago supported currency;<br />
-	*Exclude Payment Methods*: Select the payment methods that you want to not work with MercadoPago.
+# Configuring Checkout by Redirect, Iframe, or LightBox
+This page will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Basic Checkout*. You should get the following page:
 
-5. **Test and Debug Options**: This part allows you to configure debug and test features.
+![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_config_screenshot.png)
 
-	*Mercado Pago Sandbox*: Test your payments in Mercado Pago sandbox environment;<br />
-	*Debug and Log*: Enables/disables system logs.
+### Mercado Pago Credentials
+  * Here you should place your *Client Id* and *Client Secret* keys, the credentials that uniquely identifies you in Mercado Pago.
 
-<a name="cst_configuration"></a>
-##Custom Checkout Configuration##
+### Checkout Options
+How checkout is shown.
+  * *Description*: This is the description of the payment option that will be shown to your customers;
+  * *Store Category*: Sets up the category of the store;
+  * *Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;
+  * *Integration Method*: How your customers will interact with Mercado Pago to pay their orders;
+  * *iFrame Width*: The width, in pixels, of the iFrame (used only with iFrame Integration Method);
+  * *iFrame Height*: The height, in pixels, of the iFrame (used only with iFrame Integration Method);
+  * *Auto Return*: If set, the platform will return to your store when the payment is approved;
+  * *URL Approved*: Customize a URL to be redirected when a payment is approved. Let blank to redirect to the store;
+  * *URL Pending*: Customize a URL to be redirected when a payment has failed. Let blank to redirect to the store.
 
-On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Custom Checkout* settings. You should get the following page:
+### Payment Options
+How the payment option behaves.
+  * *Max Installments*: The maximum installments allowed for your customers;
+  * *Currency conversion*: Enable currency conversion mode for sells with Basic Checkout. Currency conversion is a feature that enables you to set an unsupported currency in WP eCommerce while maintaining Mercado Pago as payment method. It will convert the unsupported currency for the currency used in your country. Pay attention that this service converts values on-the-fly in real-time and can bring some additional delay to your server;
+  * *Exclude Payment Methods*: Select the payment methods that you want to not work with Mercado Pago.
 
-![Installation Instructions](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/custom_checkout.png)
+### Test and Debug Options
+Offers logging tools so you can analyze problems that may be occurring. Maintain this disabled if working in production with a stable system.
+  * *Enable Sandbox*: Enable this to activate sandbox testing mode;
+  * *Debug mode*: Enable this to log messages in browser console.
 
-1. **Solution Header**: This part is the header, where you can enable/disable the solution;
+# Instant Payment Notification Settings
+Instant Payment Notifications (IPN) is a mechanism that enables your store to receive messages from Mercado Pago server about the status of a given payment. In this plugin, you don't need to worry about IPN configuration as it is already implemented and configured for you.
 
-	*Display Name*: This is the title of the payment option that will be shown to your customers.
+> HINT 1: When configuring or testing your IPN/Webhooks and server communications be sure that your server can access Mercado Pago server.
 
-2. **Mercado Pago Credentials**: In this part, you should configure your credentials *Public Key* and *Access Token*;
+> HINT 2: Make sure that your firewall haves [Mercado Pago IP Ranges](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) within its white-list.
 
-	Remember that you can obtain your *Public Key* and *Access Token*, accordingly to your country, in the following links:
+> HINT 3: Pay attention that Mercado Pago uses TSL protocol version 1.0, so your server needs to support/accept connections with this protocol version.
 
-	* Argentina: https://www.mercadopago.com/mla/account/credentials?type=custom
-	* Brazil: https://www.mercadopago.com/mlb/account/credentials?type=custom
-	* Chile: https://www.mercadopago.com/mlc/account/credentials?type=custom
-	* Colombia: https://www.mercadopago.com/mco/account/credentials?type=custom
-	* Mexico: https://www.mercadopago.com/mlm/account/credentials?type=custom
-	* Peru: https://www.mercadopago.com/mpe/account/credentials?type=custom
-	* Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=custom
-	* Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=custom
+> HINT 4: Make sure that any other WordPress plugin can block Mercado Pago.
 
-3. **Checkout Options**: This part allows you to customize your general checkout fields;
-
-	*Statement Descriptor*: The description that will be shown in your customer's invoice;<br />
-	*Binary Mode*: When charging a credit card, only [approved] or [reject] status will be taken;<br />
-	*Store Category*: Sets up the category of the store;<br />
-	*Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;<br />
-	*URL Approved Payment*: This is the URL where the customer is redirected if his payment is approved;<br />
-	*URL Pending Payment*: This is the URL where the customer is redirected if his payment is in process.
-
-4. **Payment Options**: This part allows you to configure how payment is made.
-
-	*Currency Conversion*: Let merchants try to convert unsupported currency into Mercado Pago supported currency.
-
-5. **Test and Debug Options**: This part allows you to configure debug and test features.
-
-	*Mercado Pago Sandbox*: Test your payments in Mercado Pago sandbox environment;<br />
-	*Debug and Log*: Enables/disables system logs.
-
-<a name="ticket_configuration"></a>
-##Ticket Configuration##
-
-On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Ticket* settings. You should get the following page:
-
-![Installation Instructions](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/ticket.png)
-
-1. **Solution Header**: This part is the header, where you can enable/disable the solution;
-
-	*Display Name*: This is the title of the payment option that will be shown to your customers.
-
-2. **Mercado Pago Credentials**: In this part, you should configure your credential *Access Token*;
-
-	Remember that you can obtain your *Access Token*, accordingly to your country, in the following links:
-
-	* Argentina: https://www.mercadopago.com/mla/account/credentials?type=custom
-	* Brazil: https://www.mercadopago.com/mlb/account/credentials?type=custom
-	* Chile: https://www.mercadopago.com/mlc/account/credentials?type=custom
-	* Colombia: https://www.mercadopago.com/mco/account/credentials?type=custom
-	* Mexico: https://www.mercadopago.com/mlm/account/credentials?type=custom
-	* Peru: https://www.mercadopago.com/mpe/account/credentials?type=custom
-	* Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=custom
-	* Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=custom
-
-3. **Ticket Options**: This part allows you to customize your general ticket fields;
-
-	*Store Category*: Sets up the category of the store;<br />
-	*Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;<br />
-	*URL Approved Payment*: This is the URL where the customer is redirected if his payment is approved;<br />
-	*URL Pending Payment*: This is the URL where the customer is redirected if his payment is in process.
-
-4. **Payment Options**: This part allows you to configure how payment is made.
-
-	*Currency Conversion*: Let merchants try to convert unsupported currency into Mercado Pago supported currency.
-
-5. **Test and Debug Options**: This part allows you to configure debug and test features.
-
-	*Debug and Log*: Enables/disables system logs.
-
-<a name="upgrade"></a>
-##Upgrade Mercado Pago Plugin##
-
+# Upgrade
 If you already had installed a previous version of WPeComm Mercado Pago Module, please follow the instructions. In same way of the installation, again you have two options: from your WordPress Store, or by downloading and manually copying the module directory.
 
-**Upgrade from WordPress**
-
+### Upgrade from WordPress
 1. On your store administration, go to *Plugins* option in sidebar;
-
 2. Click in *update now* button in your plugin dashboard window;
-
 3. In a few seconds it should be installed with *Updated!* message shown.
 
-**Upgrade with Manual Download**
-
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://downloads.wordpress.org/plugin/wpecomm-mercado-pago-module.4.2.5.zip">WordPress Plugin Directory</a>);
-
+### Upgrade with Manual Download
+1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
 2. Unzip the folder and find "wpecomm-mercado-pago-module" directory;
-
 3. Go to *[WordPressRootDirectory]/wp-content/plugins/* directory and delete the existing directory "wpecomm-mercado-pago-module";
-
 4. Copy "wpecomm-mercado-pago-module" directory to *[WordPressRootDirectory]/wp-content/plugins/* directory.
 
 To confirm that your module is really updated, you can see in *Plugins* item in the store administration menu, and check your just updated module. The version should match the just-updated plugin.
 
-<a name="Feedback"></a>
-##Feedback##
+> HINT: Always remember to make a backup of your system and data before making any changes.
 
-We want to know your opinion, feel free to access our pages:
+# FAQ
+Under construction...
 
-* [Facebook](https://www.facebook.com/groups/modulos.mercadopago/)
+# Technical Support
+If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
+
+* Email of your account Mercado Pago;
+* Details about your question, problem or error;
+* Files that can help in understanding (Print-Screen, Video, Log Files, etc.);
+* Version of WPeCommerce;
+* Module version, if you are using.
+
+> HINT: You can get the module version in the plugin list of your WordPress administration page:
+>
+> ![Developer](/images/plugins/modules/wp-ecommerce/plugin_adm.png)
+
+Don't worry... We will help you as soon as possible.
+
+# How to Contribute
+Here are some tips to help with the development and maintenance of this project.
+
+## Cloning for development:
+
+Go to `wp-content/plugins` under your development WordPress installation and clone this repository using the follow command:
+
+```bash
+git clone git@github.com:mercadopago/cart-wp-commerce.git wpecomm-mercado-pago-module
+```
+
+## Updating the Wiki
+
+### Cloning
+
+```bash
+git clone git@github.com:mercadopago/cart-wp-commerce.wiki.git
+```
+
+### Directory tree and files
+
+```
+├── English
+├── _Footer.md
+├── Home.md
+├── images
+├── Portugues
+└── Espanol
+
+```
+
+The directories `English`, `Portugues`, and `Espanol` contains specific documentation for each language.
+
+It's possible generate new files into each directory in the follow way:
+
+```
+touch English/New-Wiki-Page.md
+```
+
+This will generate a wiki page with the name of `New Wiki Page`.
+
+For images we should use the `images` directory and use the follow syntax to link each image into the content:
+
+```
+[[/images/image-name.png|Alt text]]
+```
