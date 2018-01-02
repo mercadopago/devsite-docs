@@ -185,7 +185,7 @@ Mercado Pago has its own fraud prevention tools. Whenever possible, we recommend
 To deploy the generation of the device on your website, you must add the following code to your checkout:
 
 ```html
-<script src="https://secure.mlstatic.com/org-img/checkout/custom/0.6/threat_metrix.js"></script>
+<script src="https://resources.mlstatic.com/device/meli-metrix.min.js"></script>
 ```
 
 In your form, add the following `input`:
