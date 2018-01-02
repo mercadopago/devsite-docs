@@ -1,270 +1,266 @@
-# WP eCommerce - Mercado Pago Module (3.11.x or greater)
+![Mercado Pago](/images/plugins/modules/wp-ecommerce/mplogo.png)
 
-* [Features](#features)
-* [Available versions](#available_versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Basic Checkout Configuration](#std_configuration)
-* [Custom Checkout Configuration](#cst_configuration)
-* [Ticket Configuration](#ticket_configuration)
-* [Upgrade](#upgrade)
-* [Feedback](#feedback)
+# Módulo de integração do Mercado Pago para WP-eCommerce
+* [Requisitos de Sistema](#requisitos-de-sistema)
+* [Funcionalidades](#funcionalidades)
+* [Instalação](#instalação)
+* Checkout Transparente
+  * [Configurando o Cartão de Crédito](#configurando-o-cartão-de-crédito)
+  * [Configurando os Boletos](#configurando-os-boletos)
+* Checkout Básico
+  * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#configurando-o-checkout-por-redirect-iframe-ou-lightbox)
+* [Configurações das Notificações Instantâneas de Pagamento](#configurações-das-notificações-instantâneas-de-pagamento)
+* [Atualização](#atualização)
+* [FAQ](#faq)
+* [Suporte Técnico](#suporte-técnico)
+* [Como Contribuir](#como-contribuir)
 
-<a name="features"></a>
-##Features##
+# Requisitos de Sistema
+### Versões de Plataforma
+* <a href="https://wordpress.org/download/">WordPress</a> 3.1.x - 4.7.x
+* <a href="https://wordpress.org/plugins/wp-e-commerce/">WP eCommerce</a> 2.6.x - 3.1.x
 
-Checkout options right for your business:
-We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
+### Ambiente
+* LAMP (Linux, Apache, MySQL, e PHP)
 
-**Custom Checkout**
+### Sistema Operacional
+* Linux x86
+* x86-64
 
-Offer a checkout fully customized to your brand experience with our simple-to-use payments API.
+### Servidor Web
+* <a href="https://httpd.apache.org/">Apache 2.x</a>
 
-* Seamless integration— no coding required, unless you want to.
-* Full control of buying experience.
-* Store buyer’s card for fast checkout.
-* Accept tickets in addition to cards.
-* Accept MercadoPago's discount coupons.
-* Improve conversion rate.
+### Hospedagem
+* Deve poder sobrescrever o arquivo .htaccess
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
+### Versões PHP
+* <a href="http://php.net/">PHP</a> 5.6 ou maior, com suporte a cURL
 
-**Basic Checkout**
+### Versões MySQL
+* <a href="http://www.mysql.com/">MySQL</a> versão 5.6 ou maior OU <a href="https://mariadb.org/">MariaDB</a> versão 10.0 ou maior
 
-Great for merchants who want to get going quickly and easily.
+### Dependência de Extensões
+* WP eCommerce
 
-* Easy website integration— no coding required.
-* Limited control of buying experience — display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
+### Configurações Adicionais
+* safe_mode off
+* memory_limit maior que 256MB (512MB é o recomendado)
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
+### SSL
+* Certificação SSL é um pré-requisito para cartões de crédito e boletos (Checkout Transparente).
 
-<a name="requirements"></a>
-##Requirements##
+# Funcionalidades
+O módulo do Mercado Pago para WP eCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
-Basically, the requirements of this plugin are same as you need to run WPeCommerce. Your machine should have:
+### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_checkout_payment.png)
 
-**Platforms**
+### Checkout Transparente
+* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/plugins/modules/wp-ecommerce/order_custom.png)
+* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/plugins/modules/wp-ecommerce/order_cust_card.png)
+* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/plugins/modules/wp-ecommerce/order_ticket.png)
 
-* <a href="https://wordpress.org/download/">WordPress</a> 4.1 or greater;
-* <a href="https://wordpress.org/plugins/wp-e-commerce/">WP eCommerce</a> 3.11 or greater;
+### Outras Funcionalidades
+* Checagens de credenciais e status de plataforma
+* Página de sucesso customizável
+* Calculadora de parcelas
+* Conversão de moedas
+* Notificação instantânea de pagamentos e webhooks
+* Log e ferramentas de debug
 
-**Web Server Host**
+# Instalação
+Se você já tiver este módulo instalado, por favor, siga as [Instruções de Atualização](#atualização) antes.
 
-* <a href="http://php.net/">PHP</a> 5.6 or greater with CURL support;
-* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.0 or greater;
-* <a href="https://httpd.apache.org/">Apache 2.x</a>.
+Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fazendo o download manual e copiando o diretório do módulo.
 
-**SSL certificate**
+### Instalar a Partir do WordPress
 
-If you're using Custom Checkout, it is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
-During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
+1. Na administração da sua loja, vá para a opção *Plugins* na barra lateral;
 
-<a name="available_versions"></a>
-##Available versions##
+2. Clique no botão *Adicionar Novo* e digite "WP-eCommerce MercadoPago" no campo de texto *Procurar Plugins*. Pressione Enter;
 
-<table>
-  <thead>
-    <tr>
-      <th>Plugin Version</th>
-      <th>Status</th>
-      <th>WPeCommerce Compatible Versions</th>
-    </tr>
-  <thead>
-  <tbody>
-    <tr>
-      <td>v4.2.5</td>
-      <td>Stable (Current version)</td>
-      <td>WPeCommerce 3.11.x or greater</td>
-    </tr>
-  </tbody>
-</table>
+3. Você deverá encontrar o módulo pronto para ser instalado. Clique em "instalar". Está feito!
 
-<a name="installation"></a>
-##Installation##
+### Download Manual
 
-If you have already the module installed, please follow the [Upgrade instructions](#upgrade) first.
+1. Obtenha o código fonte do módulo de um repositório (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> ou <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
 
-You have two ways to install this module: from your WordPress Store, or by downloading and manually copying the module directory.
+2. Descompacte a pasta e renomeie-a para "wpecomm-mercado-pago-module";
 
-**Install from WordPress**
+3. Copie o diretório "wpecomm-mercado-pago-module" para dentro do diretório *[WordPressRootDirectory]/wp-content/plugins/*. Está feito!
 
-1. On your store administration, go to *Plugins* option in sidebar;
+> DICA: Para confirmar que seu módulo está realmente instalado, você pode clicar no item *Plugins* no menu lateral da página administrativa da sua loja, e checar seu módulo recém-instalado. Apenas clique em *ativar* para ativá-lo e você deverá receber a mensagem "Plugin ativado." como uma notificação em seu WordPress.
 
-2. Click in *Add New* button and type "WPeComm Mercado Pago Module" in the *Search Plugins* text field. Press Enter;
+# Configurando o Cartão de Crédito
+Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
 
-3. You should find the module read to be installed. Click install.
+![Custom Checkout Config](/images/plugins/modules/wp-ecommerce/custom_config_screenshot.png)
 
-**Manual Download**
+### Credenciais do Mercado Pago
+  * Aqui você deve colocar suas chaves *Public Key* e *Access Token*, que são as credenciais que o identificam de maneira única no Mercado Pago.
 
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://downloads.wordpress.org/plugin/wpecomm-mercado-pago-module.4.2.5.zip">WordPress Plugin Directory</a>);
+### Opções de Checkout
+Como o checkout é mostrado.
+  * *Descritor da Declaração*: A descrição que será mostrada na fatura do seu cliente;
+  * *Modo Binário*: Ao cobrar um cartão de crédito, apenas o status [aprovado] ou [rejeitado] será tomado;
+  * *Categoria da Loja*: Define a categoria da loja;
+  * *Identificador da Loja*: Um prefixo para identificar sua loja, quando você possui várias lojas para uma única conta do Mercado Pago;
+  * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
+  * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja.
 
-2. Unzip the folder and find "wpecomm-mercado-pago-module" directory;
+### Opções de Pagamento
+Como a opção de pagamento se comporta.
+  * *Conversão de moeda*: Habilita o modo de conversão de moeda para as vendas com Checkout Básico. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WP eCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor.
+
+### Opções de Debug e Teste
+Oferece ferramentas de registro para que você possa analisar possíveis problemas que possam estar ocorrendo. Mantenha isso desabilitado se estiver trabalhando em produção com um sistema estável.
+  * *Habilitar Sandbox*: Habilita o modo de testes em sandbox;
+  * *Modo debug*: Habilita log de mensagens no console do browser.
 
-3. Copy "wpecomm-mercado-pago-module" directory to *[WordPressRootDirectory]/wp-content/plugins/* directory.
+# Configurando os Boletos
+Esta página explicará como configurar o módulo para aceitar pagamentos com o Boleto do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Boleto*. Você deve obter a seguinte página:
 
-To confirm that your module is really installed, you can click in *Plugins* item in the store administration menu, and check your just installed module. Just click *enable* to activate it and you should receive the message "Plugin enabled." as a notice in your WordPress.
+![Ticket Checkout Config](/images/plugins/modules/wp-ecommerce/ticket_config_screenshot.png)
 
-![Features](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/plugin_adm.png)
+### Credenciais do Mercado Pago
+  * Aqui você deve colocar sua chave *Access Token*, a credencial que o identifica de maneira única no Mercado Pago.
 
-<a name="std_configuration"></a>
-##Basic Checkout Configuration##
+### Opções de Checkout
+Como o checkout é mostrado.
+  * *Categoria da Loja*: Define a categoria da loja;
+  * *Identificador da Loja*: Um prefixo para identificar sua loja, quando você possui várias lojas para uma única conta do Mercado Pago;
+  * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
+  * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja.
 
-On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Basic Checkout* settings. You should get the following page:
+### Opções de Pagamento
+Como a opção de pagamento se comporta.
+  * *Conversão de moeda*: Habilita o modo de conversão de moeda para as vendas com Checkout Básico. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WP eCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor.
 
-![Installation Instructions](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/basic_checkout.png)
+### Opções de Debug e Teste
+Oferece ferramentas de registro para que você possa analisar possíveis problemas que possam estar ocorrendo. Mantenha isso desabilitado se estiver trabalhando em produção com um sistema estável.
+  * *Modo debug*: Habilita log de mensagens no console do browser.
 
-1. **Solution Header**: This part is the header, where you can enable/disable the solution;
+# Configurando o Checkout por Redirect, Iframe, ou LightBox
+Esta página explicará como configurar o módulo para aceitar os pagamentos com o Checkout Básico em Redirecionamento, Iframe ou Lightbox. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Checkout Básico*. Você deve obter a seguinte página:
 
-	*Display Name*: This is the title of the payment option that will be shown to your customers.
+![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_config_screenshot.png)
 
-2. **Mercado Pago Credentials**: In this part, you should configure your credentials *Client_id* and *Client_secret*;
+### Credenciais do Mercado Pago
+  * Aqui você deve colocar suas chaves *Client Id* e *Client Secret*, que são as credenciais que o identificam de maneira única no Mercado Pago.
 
-	Remember that you can obtain your *Client_id* and *Client_secret*, accordingly to your country, in the following links:
+### Opções de Checkout
+Como o checkout é mostrado.
+  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes;
+  * *Categoria da Loja*: Define a categoria da loja;
+  * *Identificador da Loja*: Um prefixo para identificar sua loja, quando você possui várias lojas para uma única conta do Mercado Pago;
+  * *Método de Integração*: Como seus clientes irão interagir com o Mercado Pago para pagar os pedidos;
+  * *Largura do iFrame*: A largura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
+  * *Altura do iFrame*: A altura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
+  * *Auto Retorno*: If set, the platform will return to your store when the payment is approved;
+  * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
+  * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja.
 
-	* Argentina: https://www.mercadopago.com/mla/account/credentials?type=basic
-	* Brazil: https://www.mercadopago.com/mlb/account/credentials?type=basic
-	* Chile: https://www.mercadopago.com/mlc/account/credentials?type=basic
-	* Colombia: https://www.mercadopago.com/mco/account/credentials?type=basic
-	* Mexico: https://www.mercadopago.com/mlm/account/credentials?type=basic
-	* Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
-	* Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=basic
-	* Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=basic
+### Opções de Pagamento
+Como a opção de pagamento se comporta.
+  * *Parcelamento Máximo*: O número máximo de parcelas permitidas para seus clientes;
+  * *Conversão de moeda*: Habilita o modo de conversão de moeda para as vendas com Checkout Básico. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WP eCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor;
+  * *Excluir Meios de Pagamento*: Selecione os métodos de pagamento que você não deseja oferecer com Mercado Pago.
 
-3. **Checkout Options**: This part allows you to customize your general checkout fields;
+### Opções de Debug e Teste
+Oferece ferramentas de registro para que você possa analisar possíveis problemas que possam estar ocorrendo. Mantenha isso desabilitado se estiver trabalhando em produção com um sistema estável.
+  * *Habilitar Sandbox*: Habilita o modo de testes em sandbox;
+  * *Modo debug*: Habilita log de mensagens no console do browser.
 
-	*Description*: This is the description of the payment option that will be shown to your customers;<br />
-	*Store Category*: Sets up the category of the store;<br />
-	*Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;<br />
-	*Integration Method*: How your customers will interact with Mercado Pago to pay their orders;<br />
-	*iFrame Width*: The width, in pixels, of the iFrame (used only with iFrame Integration Method);<br />
-	*iFrame Height*: The height, in pixels, of the iFrame (used only with iFrame Integration Method);<br />
-	*Auto Return*: If set, the platform will return to your store when the payment is approved;<br />
-	*URL Approved Payment*: This is the URL where the customer is redirected if his payment is approved;<br />
-	*URL Pending Payment*: This is the URL where the customer is redirected if his payment is in process.
+# Configurações das Notificações Instantâneas de Pagamento
+Notificação Instantânea de Pagamento (IPN) é um mecanismo que permite que sua loja receba mensagens do servidor do Mercado Pago informando o estado de um determinado pagamento. Neste plugin, você não precisa se preocupar com a configuração da IPN pois ela já está implementada e configurada.
 
-4. **Payment Options**: This part allows you to customize how the payment should be made;
+> DICA 1: Ao configurar ou testar sua IPN/Webhooks e comunicações de servidor, certifique-se de que seu servidor possa acessar o servidor Mercado Pago.
 
-	*Max Installments*: The maximum installments allowed for your customers;<br />
-	*Currency Conversion*: Let merchants try to convert unsupported currency into Mercado Pago supported currency;<br />
-	*Exclude Payment Methods*: Select the payment methods that you want to not work with MercadoPago.
+> DICA 2: Tenha certeza de que seu firewall tenha o conjunto dos [IPs do Mercado Pago](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) dentro de sua white-list.
 
-5. **Test and Debug Options**: This part allows you to configure debug and test features.
+> DICA 3: Observe que o Mercado Pago usa o protocolo TSL versão 1.0, logo seu servidor precisa suportar/aceitar conexões com esta versão do protocolo.
 
-	*Mercado Pago Sandbox*: Test your payments in Mercado Pago sandbox environment;<br />
-	*Debug and Log*: Enables/disables system logs.
+> DICA 4: Tenha certeza de que nenhum outro plugin do WordPress esteja bloqueando o Mercado Pago.
 
-<a name="cst_configuration"></a>
-##Custom Checkout Configuration##
+# Atualização
+Se você já instalou uma versão anterior do WP-eCommerce MercadoPago, siga as instruções. Da mesma forma como foi a instalação, novamente você tem duas opções: da sua loja do WordPress ou baixando e copiando manualmente o diretório do módulo.
 
-On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Custom Checkout* settings. You should get the following page:
+### Upgrade a partir do WordPress
+1. Na administração da sua loja, vá para a opção *Plugins* na barra lateral;
+2. Clique no botão *atualizar agora* na janela do painel do plugin;
+3. Em alguns segundos, deverá ser mostrado a mensagem *Atualizado!*.
 
-![Installation Instructions](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/custom_checkout.png)
+### Atualizar com Download Manual
+1. Obtenha o código fonte do módulo de um repositório (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> ou <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
+2. Descompacte a pasta e renomeie-a para "wpecomm-mercado-pago-module;
+3. Vá para o diretório *[WordPressRootDirectory]/wp-content/plugins/* e exclua o diretório existente "wpecomm-mercado-pago-module";
+4. Copie o diretório "wpecomm-mercado-pago-module" para *[WordPressRootDirectory]/wp-content/plugins/* directory.
 
-1. **Solution Header**: This part is the header, where you can enable/disable the solution;
+Para confirmar que seu módulo está realmente atualizado, você pode ver no item *Plugins* no menu de administração da loja e verificar a atualização do seu módulo. A versão deve corresponder ao plugin atualizado recentemente.
 
-	*Display Name*: This is the title of the payment option that will be shown to your customers.
+> DICA: Lembre-se sempre de fazer um backup dos seus dados e de seu sistema antes de fazer qualquer alteração.
 
-2. **Mercado Pago Credentials**: In this part, you should configure your credentials *Public Key* and *Access Token*;
+# FAQ
+Em construção...
 
-	Remember that you can obtain your *Public Key* and *Access Token*, accordingly to your country, in the following links:
+# Suporte Técnico
+Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um email para modulos@mercadopago.com com as seguintes informações:
 
-	* Argentina: https://www.mercadopago.com/mla/account/credentials?type=custom
-	* Brazil: https://www.mercadopago.com/mlb/account/credentials?type=custom
-	* Chile: https://www.mercadopago.com/mlc/account/credentials?type=custom
-	* Colombia: https://www.mercadopago.com/mco/account/credentials?type=custom
-	* Mexico: https://www.mercadopago.com/mlm/account/credentials?type=custom
-	* Peru: https://www.mercadopago.com/mpe/account/credentials?type=custom
-	* Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=custom
-	* Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=custom
+* Email da sua conta Mercado Pago;
+* Detalhes sobre sua pergunta, problema ou erro;
+* Arquivos que podem ajudar na compreensão (Print-Screen, Video, Arquivos de Log, etc.);
+* Versão do WPeCommerce;
+* Versão do módulo, se você estiver usando.
 
-3. **Checkout Options**: This part allows you to customize your general checkout fields;
+> DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
+>
+> ![Developer](/images/plugins/modules/wp-ecommerce/plugin_adm.png)
 
-	*Statement Descriptor*: The description that will be shown in your customer's invoice;<br />
-	*Binary Mode*: When charging a credit card, only [approved] or [reject] status will be taken;<br />
-	*Store Category*: Sets up the category of the store;<br />
-	*Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;<br />
-	*URL Approved Payment*: This is the URL where the customer is redirected if his payment is approved;<br />
-	*URL Pending Payment*: This is the URL where the customer is redirected if his payment is in process.
+Não se preocupe ... Nós o ajudaremos o mais rápido possível.
 
-4. **Payment Options**: This part allows you to configure how payment is made.
+# Como Contribuir
+Aqui estão algumas dicas para ajudar no desenvolvimento e manutenção desse projeto.
 
-	*Currency Conversion*: Let merchants try to convert unsupported currency into Mercado Pago supported currency.
+## Clonando para desenvolvimento:
 
-5. **Test and Debug Options**: This part allows you to configure debug and test features.
+Vá para `wp-content/plugins` na sua instalação de desenvolvimento do WordPress e clone este repositório usando o seguinte comando:
 
-	*Mercado Pago Sandbox*: Test your payments in Mercado Pago sandbox environment;<br />
-	*Debug and Log*: Enables/disables system logs.
+```bash
+git clone git@github.com:mercadopago/cart-wp-commerce.git wpecomm-mercado-pago-module
+```
 
-<a name="ticket_configuration"></a>
-##Ticket Configuration##
+## Atualizando a Wiki
 
-On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Ticket* settings. You should get the following page:
+### Clonando
 
-![Installation Instructions](https://raw.github.com/mercadopago/cart-wp-commerce/master/README.img/ticket.png)
+```bash
+git clone git@github.com:mercadopago/cart-wp-commerce.wiki.git
+```
 
-1. **Solution Header**: This part is the header, where you can enable/disable the solution;
+### Árvore de diretórios e arquivos
 
-	*Display Name*: This is the title of the payment option that will be shown to your customers.
+```
+├── English
+├── _Footer.md
+├── Home.md
+├── images
+├── Portugues
+└── Espanol
 
-2. **Mercado Pago Credentials**: In this part, you should configure your credential *Access Token*;
+```
 
-	Remember that you can obtain your *Access Token*, accordingly to your country, in the following links:
+Os diretórios `English`, `Portugues`, e `Espanol` contém documentações específicas para cada linguagem.
 
-	* Argentina: https://www.mercadopago.com/mla/account/credentials?type=custom
-	* Brazil: https://www.mercadopago.com/mlb/account/credentials?type=custom
-	* Chile: https://www.mercadopago.com/mlc/account/credentials?type=custom
-	* Colombia: https://www.mercadopago.com/mco/account/credentials?type=custom
-	* Mexico: https://www.mercadopago.com/mlm/account/credentials?type=custom
-	* Peru: https://www.mercadopago.com/mpe/account/credentials?type=custom
-	* Uruguay: https://www.mercadopago.com/mlu/account/credentials?type=custom
-	* Venezuela: https://www.mercadopago.com/mlv/account/credentials?type=custom
+É possível gerar novos arquivos em cada diretório da seguinte maneira:
 
-3. **Ticket Options**: This part allows you to customize your general ticket fields;
+```
+touch Portugues/Nova-Pagina-Wiki.md
+```
 
-	*Store Category*: Sets up the category of the store;<br />
-	*Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account;<br />
-	*URL Approved Payment*: This is the URL where the customer is redirected if his payment is approved;<br />
-	*URL Pending Payment*: This is the URL where the customer is redirected if his payment is in process.
+Isto irá criar uma nova página wiki com o nome `Nova Pagina Wiki`.
 
-4. **Payment Options**: This part allows you to configure how payment is made.
+Para as imagens, devemos usar o diretório `images` e usar a seguinte sintaxe para ligar cada imagem ao conteúdo:
 
-	*Currency Conversion*: Let merchants try to convert unsupported currency into Mercado Pago supported currency.
-
-5. **Test and Debug Options**: This part allows you to configure debug and test features.
-
-	*Debug and Log*: Enables/disables system logs.
-
-<a name="upgrade"></a>
-##Upgrade Mercado Pago Plugin##
-
-If you already had installed a previous version of WPeComm Mercado Pago Module, please follow the instructions. In same way of the installation, again you have two options: from your WordPress Store, or by downloading and manually copying the module directory.
-
-**Upgrade from WordPress**
-
-1. On your store administration, go to *Plugins* option in sidebar;
-
-2. Click in *update now* button in your plugin dashboard window;
-
-3. In a few seconds it should be installed with *Updated!* message shown.
-
-**Upgrade with Manual Download**
-
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://downloads.wordpress.org/plugin/wpecomm-mercado-pago-module.4.2.5.zip">WordPress Plugin Directory</a>);
-
-2. Unzip the folder and find "wpecomm-mercado-pago-module" directory;
-
-3. Go to *[WordPressRootDirectory]/wp-content/plugins/* directory and delete the existing directory "wpecomm-mercado-pago-module";
-
-4. Copy "wpecomm-mercado-pago-module" directory to *[WordPressRootDirectory]/wp-content/plugins/* directory.
-
-To confirm that your module is really updated, you can see in *Plugins* item in the store administration menu, and check your just updated module. The version should match the just-updated plugin.
-
-<a name="Feedback"></a>
-##Feedback##
-
-We want to know your opinion, feel free to access our pages:
-
-* [Facebook](https://www.facebook.com/groups/modulos.mercadopago/)
+```
+[[/images/image-name.png|Alt text]]
+```
