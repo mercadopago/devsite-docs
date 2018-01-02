@@ -17,7 +17,7 @@ Mercado Pago te permite recibir pagos de tus clientes a través de un único có
 Identificamos dos atributos importantes en la integración:
 
 * `collector_id`: Identificador de la cuenta vendedor de Mercado Pago. Valor numérico.
-* `pos_id`: Identificador del punto de venta. No puede haber valores repetidos para un mismo vendedor. Valor alfanumérico (no se aceptan caracteres especiales)
+* `pos_id`: Identificador del punto de venta. No puede haber valores repetidos para un mismo vendedor. Valor alfanumérico (no se aceptan caracteres especiales).
 
 
 ## Detalle de integración
