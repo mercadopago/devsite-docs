@@ -6,7 +6,6 @@
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Setup](#setup)
-* [Social](#social)
 
 
 <a name="features"></a>
@@ -68,7 +67,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 4. Choose your country:
 
-	![Country Selecion](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/CountrySelection.png)
+	![Country Selection](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/CountrySelection.png)
 
 5. Choose the payment methods that you don´t want to accept in your Store:
 
@@ -95,7 +94,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 	Other options have been added and you can choose any time after installation:
 
-	- **Sandbox:** By default, sandbox have been selected. We belive, you need a environment to test your first payment.
+	- **Sandbox:** By default, sandbox have been selected. We believe, you need a environment to test your first payment.
 
 	- **Kind of Checkout:** Now you can choose what kind of checkout has adapted better with your front-end design, we recommend checkout transparent.
 
@@ -105,7 +104,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 	![Do Not Touch](https://raw.github.com/mercadopago/cart-oscommerce/master/README.img/DoNotTouch.png)
 
-10. The fields **Sucess Url** and **Pending url** were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
+10. The fields **Success Url** and **Pending url** were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
 
 11. Save your configuration and it's done!!
 
