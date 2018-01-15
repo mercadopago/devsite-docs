@@ -1,4 +1,4 @@
-![Mercado Pago](/images/plugins/modules/wp-ecommerce/mplogo.png)
+![Mercado Pago](/images/wp-ecommerce-mplogo.png)
 
 # Mercado Pago integration module for WP-eCommerce
 * [System Requirements](#system-requirements)
@@ -52,12 +52,12 @@
 The module of Mercado Pago for WP eCommerce is integrated with the following features and payment solutions:
 
 ### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_checkout_payment.png)
+* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](/images/wp-ecommerce-basic_checkout_payment.png)
 
 ### Custom Checkout
-* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/plugins/modules/wp-ecommerce/order_custom.png)
-* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/plugins/modules/wp-ecommerce/order_cust_card.png)
-* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/plugins/modules/wp-ecommerce/order_ticket.png)
+* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
+* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
+* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/wp-ecommerce-order_ticket.png)
 
 ### Other Features
 * Credentials and platform status checkings
@@ -93,7 +93,7 @@ You have two options to install this module: from your WordPress Store, or by do
 # Configuring Credit Card
 This page will explain how to configure the module to accept payments with Credit Card of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Custom Checkout*. You should get the following page:
 
-![Custom Checkout Config](/images/plugins/modules/wp-ecommerce/custom_config_screenshot.png)
+![Custom Checkout Config](/images/wp-ecommerce-custom_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Public Key* and *Access Token* keys, the credentials that uniquely identifies you in Mercado Pago.
@@ -119,7 +119,7 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 # Configuring Tickets
 This page will explain how to configure the module to accept payments with Tickets of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Ticket*. You should get the following page:
 
-![Ticket Checkout Config](/images/plugins/modules/wp-ecommerce/ticket_config_screenshot.png)
+![Ticket Checkout Config](/images/wp-ecommerce-ticket_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Access Token* key, the credential that uniquely identifies you in Mercado Pago.
@@ -142,7 +142,7 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 # Configuring Checkout by Redirect, Iframe, or LightBox
 This page will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Basic Checkout*. You should get the following page:
 
-![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_config_screenshot.png)
+![Basic Checkout](/images/wp-ecommerce-basic_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Client Id* and *Client Secret* keys, the credentials that uniquely identifies you in Mercado Pago.
@@ -211,7 +211,7 @@ If you have any questions, problems or errors we have a support channel. Send an
 
 > HINT: You can get the module version in the plugin list of your WordPress administration page:
 >
-> ![Developer](/images/plugins/modules/wp-ecommerce/plugin_adm.png)
+> ![Developer](/images/wp-ecommerce-plugin_adm.png)
 
 
 # How to Contribute

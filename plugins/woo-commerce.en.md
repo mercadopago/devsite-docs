@@ -1,4 +1,4 @@
-![Mercado Pago](/images/plugins/modules/woo-commerce/mplogo.png)
+![Mercado Pago](/images/woocommerce-mplogo.png)
 
 # Mercado Pago integration module for WooCommerce
 * [System Requirements](#system-requirements)
@@ -55,17 +55,17 @@
 The module of Mercado Pago for WooCommerce is integrated with the following features and payment solutions:
 
 ### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](/images/plugins/modules/woo-commerce/wiki3/basic_checkout_payment.png)
+* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](/images/woocommerce-wiki3/basic_checkout_payment.png)
 * [Refunds/Cancel of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 * Split Payments (Two Cards)
 * [Subscriptions](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
 * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
 
 ### Custom Checkout
-* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/plugins/modules/woo-commerce/wiki3/custom_checkout_form.png)
-* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/plugins/modules/woo-commerce/wiki3/oneclick_form.png)
+* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/woocommerce-wiki3/custom_checkout_form.png)
+* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/woocommerce-wiki3/oneclick_form.png)
 * [Refunds/Cancel of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/plugins/modules/woo-commerce/wiki3/ticket.png)
+* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/woocommerce-wiki3/ticket.png)
 
 ### Other Features
 * Credentials and platform status checkings
@@ -102,11 +102,11 @@ You have two options to install this module: from your WordPress Store, or by do
 # General Mercado Pago Settings
 This page will explain how to configure general Mercado Pago settings for this module. First of all, make sure that WooCommerce MercadoPago plugin is enabled, by clicking in *Plugins* item on the WordPress sidebar, as shown bellow:
 
-![Plugin Menu](/images/plugins/modules/woo-commerce/wiki3/plugins_menu.png)
+![Plugin Menu](/images/woocommerce-wiki3/plugins_menu.png)
 
 Now, in the sidebar of WordPress, click in *Settings > Mercado Pago* option. You should get the following page:
 
-![Mercado Pago Config](/images/plugins/modules/woo-commerce/wiki3/mercadopago_config.png)
+![Mercado Pago Config](/images/woocommerce-wiki3/mercadopago_config.png)
 
 This window shows the main settings of WooCommerce MercadoPago plugin, where you can check and configure the following:
 
@@ -136,7 +136,7 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 # Configuring Credit Card
 This page will explain how to configure the module to accept payments with Credit Card of Custom Checkout. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Custom Checkout*. You should get the following page:
 
-![Custom Checkout Config](/images/plugins/modules/woo-commerce/wiki3/custom_checkout_config.png)
+![Custom Checkout Config](/images/woocommerce-wiki3/custom_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your credit card checkout:
 
@@ -154,7 +154,7 @@ How the payment option behaves.
 # Configuring Tickets
 This page will explain how to configure the module to accept payments with Tickets of Custom Checkout. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Ticket*. You should get the following page:
 
-![Ticket Checkout Config](/images/plugins/modules/woo-commerce/wiki3/ticket_checkout_config.png)
+![Ticket Checkout Config](/images/woocommerce-wiki3/ticket_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your ticket checkout:
 
@@ -172,7 +172,7 @@ How the payment option behaves.
 # Configuring Checkout by Redirect, Iframe, or LightBox
 This page will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Basic Checkout*. You should get the following page:
 
-![Basic Checkout](/images/plugins/modules/woo-commerce/wiki3/basic_checkout_config.png)
+![Basic Checkout](/images/woocommerce-wiki3/basic_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your ticket checkout:
 
@@ -210,11 +210,11 @@ To use Mercado Envios, you need to enable it in your Mercado Pago account. You c
 ### Create the Shipping Zone and Shipping Methods
 To use Mercado Envios, you need it to be configured as a shipping method in WooCommerce. Just follow bellow steps:
 
-1. On your store administration, go to *WooCommerce > Settings > Shipping* tab. In *Shipping Zone*, click in *Add shipping zone*. Enter the zone name, select the regions within this zone and click in *Save Changes*.<br>![Mercado Envios 0](/images/plugins/modules/woo-commerce/wiki3/me_0.png)
-2. Click in *view* of the zone created.<br>![Mercado Envios 1](/images/plugins/modules/woo-commerce/wiki3/me_1.png)
-3. Click in *Add shipping method* and selected *Mercado Envios - Normal* or *Mercado Envios - Express*. This process has to be repeated twice, until normal and express are set.<br>![Mercado Envios 2](/images/plugins/modules/woo-commerce/wiki3/me_2.png)
-4. Now you can also set the *Free Shipping* option and/or show the estimated *Delivery Time* in the shipping calculation.<br>![Mercado Envios 3](/images/plugins/modules/woo-commerce/wiki3/me_3.png)
-5. Mercado Envios is ready for use, but do not forget to enable *Basic Checkout* for the correct operation of *Mercado Envios* and to inform the dimensions of your products.<br>![Mercado Envios 4](/images/plugins/modules/woo-commerce/wiki3/me_4.png)
+1. On your store administration, go to *WooCommerce > Settings > Shipping* tab. In *Shipping Zone*, click in *Add shipping zone*. Enter the zone name, select the regions within this zone and click in *Save Changes*.<br>![Mercado Envios 0](/images/woocommerce-wiki3/me_0.png)
+2. Click in *view* of the zone created.<br>![Mercado Envios 1](/images/woocommerce-wiki3/me_1.png)
+3. Click in *Add shipping method* and selected *Mercado Envios - Normal* or *Mercado Envios - Express*. This process has to be repeated twice, until normal and express are set.<br>![Mercado Envios 2](/images/woocommerce-wiki3/me_2.png)
+4. Now you can also set the *Free Shipping* option and/or show the estimated *Delivery Time* in the shipping calculation.<br>![Mercado Envios 3](/images/woocommerce-wiki3/me_3.png)
+5. Mercado Envios is ready for use, but do not forget to enable *Basic Checkout* for the correct operation of *Mercado Envios* and to inform the dimensions of your products.<br>![Mercado Envios 4](/images/woocommerce-wiki3/me_4.png)
 
 > IMPORTANT 1: Your Mercado Pago account must be a *Seller Account*;
 
@@ -225,7 +225,7 @@ To use Mercado Envios, you need it to be configured as a shipping method in WooC
 # Configuring Subscriptions
 This page will explain how to configure the module to accept subscriptions paid with recurrent payments. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Subscription*. You should get the following page:
 
-![Subscription Checkout Config](/images/plugins/modules/woo-commerce/wiki3/subscription_checkout_config.png)
+![Subscription Checkout Config](/images/woocommerce-wiki3/subscription_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your credit card checkout:
 
@@ -250,7 +250,7 @@ How the payment option behaves.
 
 ### Creating an Assignable Product
 A subscription needs a special kind of product, that will be sold periodically. You can configure a product to be assignable following bellow steps:
-1. Go to *Products* in the side menu and click in *Add Product* button. The opened page should contain the product details and fields in *Product Data* window;<br>![Subscription Checkout Product](/images/plugins/modules/woo-commerce/wiki3/subscription_checkout_product.png)
+1. Go to *Products* in the side menu and click in *Add Product* button. The opened page should contain the product details and fields in *Product Data* window;<br>![Subscription Checkout Product](/images/woocommerce-wiki3/subscription_checkout_product.png)
 2. Complete your product informations (name, price, images, etc), and then check *Recurrent Product* checkbox;
 3. Fill the information fields for the subscription: *Frequency* (frequency of which the charges will be made to your customer), *Frequency Type* (frequency type can be in [Days] or [Months]), and *End Date* (date that the signature should end).
 
@@ -317,7 +317,7 @@ If you have any questions, problems or errors we have a support channel. Send an
 
 > HINT: You can get the module version in the plugin list of your WordPress administration page:
 >
-> ![Developer](/images/plugins/modules/woo-commerce/wiki3/plugins_menu.png)
+> ![Developer](/images/woocommerce-wiki3/plugins_menu.png)
 
 # How to Contribute
 Here are some tips to help with the development and maintenance of this project.

@@ -84,7 +84,7 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 4. Vá para **Configuração** guia <br/>
   Em primeiro lugar, você precisa configurar as credenciais do seu cliente. Para fazê-lo, preencha o **Client_id** e **Client_secret** na seção Configuração de Credenciais.
 
-![Installation Instructions](/images/plugins/modules/virtuemart/credentials.png) <br />
+![Installation Instructions](/images/virtuemart-credentials.png) <br />
 
 Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país, nos seguintes links:
 
@@ -99,7 +99,7 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 
 5. Configurações do checkout básico. <br />
 
-![Installation Instructions](/images/plugins/modules/virtuemart/checkout_settings.png) <br />
+![Installation Instructions](/images/virtuemart-checkout_settings.png) <br />
 
   **Tipo Checkout**: Como seus clientes irão interagir com o Mercado Pago para pagar suas ordens; <br />
   **Redirecionamento automático**: se configurado, a plataforma retornará à sua loja quando o pagamento for aprovado. <br />
@@ -110,7 +110,7 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 
   6. Confiuraça de notificaço de pagamento - IPN. <br />
 
-![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+![Installation Instructions](/images/virtuemart-ipn_settings.png) <br />
 
   * **Escolha o status para pagamento aprovado**: Define o status do pedido quando o pagamento é aprovado.
   * **Escolha o status para pagamento pendente**: Define o status do pedido quando o pagamento é pendente.
@@ -123,7 +123,7 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 
 7. Outras configurações. <br/>
 
-![Instruçes de instalação](/images/plugins/modules/virtuemart/other_settings.png) <br />
+![Instruçes de instalação](/images/virtuemart-other_settings.png) <br />
 
   **Categoria da loja**: Defina a categoria da loja;<br />
   **Log**: Habilite/Desabilite logs.<br />
@@ -149,7 +149,7 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 
   6. Agora configure com as suas credenciais. Para fazer isso, informe seu **access_token** na sessão de credenciais.
 
-  ![Instruções de configuração](/images/plugins/modules/virtuemart/credentials_custom.png) <br />
+  ![Instruções de configuração](/images/virtuemart-credentials_custom.png) <br />
 
   Para obter suas credenciais **Public Key** e **Access Token**, acesse os links a seguir de acordo com o seu país:
 
@@ -179,7 +179,7 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 
 6. Agora configure suas credenciais. Para fazer isso, preencha sua **public_key** e **access_token** na sessão de Credenciais.
 
-![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
+![Installation Instructions](/images/virtuemart-credentials_custom_ticket.png) <br />
 
 Para obter seu **Access Token**, acesse o link abaixo de acordo com o seu país:
 

@@ -60,19 +60,19 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 4. Choose your country:
 
-	![Country Selecion](/images/plugins/modules/oscommerce/CountrySelection.png)
+	![Country Selecion](/images/oscommerce-CountrySelection.png)
 
 5. Choose the payment methods that you don´t want to accept in your Store:
 
-	![Payment Methods Selection](/images/plugins/modules/oscommerce/PaymentMethodsSelection.png)
+	![Payment Methods Selection](/images/oscommerce-PaymentMethodsSelection.png)
 
 6. Choose the category on the list that more describe your shop activities.
 
-	![Category Selection](/images/plugins/modules/oscommerce/CategorySelection.png)
+	![Category Selection](/images/oscommerce-CategorySelection.png)
 
 7. In the next screen, you will see **Mercado Pago** listed as a payment method. Now, click on **Edit** on the right bar.
 
-	![Payment Method List](/images/plugins/modules/oscommerce/PaymentMethodList.png)
+	![Payment Method List](/images/oscommerce-PaymentMethodList.png)
 
 8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
@@ -95,7 +95,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 9. **DO NOT TOUCH** the fields *Country*, *Exclude Methods*, *Cod Status (fields…)*. They were generated for you with the correct values, if you need to change them, is highly recommended that you reinstall the module.
 
-	![Do Not Touch](/images/plugins/modules/oscommerce/DoNotTouch.png)
+	![Do Not Touch](/images/oscommerce-DoNotTouch.png)
 
 10. The fields **Sucess Url** and **Pending url** were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
 

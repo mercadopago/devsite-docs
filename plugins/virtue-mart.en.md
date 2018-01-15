@@ -88,7 +88,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 4. Go to **Configuration** tab <br/>
   First of all, you need to configure your client credentials. To make it, fill your **Client_id** and **Client_secret** in Credentials Configuration section.
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/credentials.png) <br />
+  ![Installation Instructions](/images/virtuemart-credentials.png) <br />
 
   You can obtain your **Client_id** and **Client_secret**, accordingly to your country, in the following links:
 
@@ -103,7 +103,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
 5. Checkout settings. <br/>
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/checkout_settings.png) <br />
+  ![Installation Instructions](/images/virtuemart-checkout_settings.png) <br />
 
   **Type Checkout**: How your customers will interact with Mercado Pago to pay their orders;<br />
   **Auto Redirect**: If set, the platform will return to your store when the payment is approved.<br />
@@ -115,7 +115,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
 6. IPN settings. <br/>
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+  ![Installation Instructions](/images/virtuemart-ipn_settings.png) <br />
 
   * **Choose the status of approved orders**: Sets up the order status when payments are approved.
   * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
@@ -128,7 +128,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
 7. Other settings. <br/>
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/other_settings.png) <br />
+  ![Installation Instructions](/images/virtuemart-other_settings.png) <br />
 
   **Store Category**: Sets up the category of the store;<br />
   **Log**: Enables/disables logs.<br />
@@ -153,7 +153,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   6. Now configure your credentials. To make it, fill your **access_token** in Credentials Configuration section.
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom.png) <br />
+  ![Installation Instructions](/images/virtuemart-credentials_custom.png) <br />
 
   You can obtain your **Public Key** and **Access Token**, accordingly to your country, in the following links:
 
@@ -166,14 +166,14 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   7. Checkout settings. <br/>
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/checkout_settings_custom.png) <br />
+  ![Installation Instructions](/images/virtuemart-checkout_settings_custom.png) <br />
 
   **Statement Descriptor**: Sets the label as the customer will see the charge for amount in his/her bill;<br />
   **Binary**: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.<br />
 
   8. IPN settings. <br/>
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+  ![Installation Instructions](/images/virtuemart-ipn_settings.png) <br />
 
   * **Choose the status of approved orders**: Sets up the order status when payments are approved.
   * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
@@ -203,7 +203,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   6. Now configure your credentials. To make it, fill your **public_key** and **access_token** in Credentials Configuration section.
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
+  ![Installation Instructions](/images/virtuemart-credentials_custom_ticket.png) <br />
 
   You can obtain your **Access Token**, accordingly to your country, in the following links:
 
@@ -216,7 +216,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   7. IPN settings. <br/>
 
-  ![Installation Instructions](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+  ![Installation Instructions](/images/virtuemart-ipn_settings.png) <br />
 
   * **Choose the status of approved orders**: Sets up the order status when payments are approved.
   * **Choose the status when payment is pending**: Sets up the order status when payments are pending.

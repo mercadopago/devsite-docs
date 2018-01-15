@@ -99,10 +99,10 @@ This process will explain the installation of the Mercado Pago module via Packag
 **Installation via Marketplace**
 
 1. Go to **[Magento Marketplace](https://marketplace.magento.com/)**, search for **Mercado Pago**, select the module version **M1**, add the module to the cart and complete the purchase process (you will have no cost):
-![Install](/images/plugins/modules/magento/marketplace_1.gif)
+![Install](/images/magento-marketplace_1.gif)
 
 2. When finalizing the process of "purchase", click in **Install** and copy the link:
-![Install](/images/plugins/modules/magento/marketplace_2.gif)
+![Install](/images/magento-marketplace_2.gif)
 > The copied link should look like this:
 > https://connect20.magentocommerce.com/e848b7a0bc8735cd525582c/mercadopago+MercadoPago-2.9.0
 
@@ -110,20 +110,20 @@ This process will explain the installation of the Mercado Pago module via Packag
 
 4. Copy the link obtained in the **Magento Marketplace** in the option **Install New Extensions** and click in **Install**.
 
-![Install](/images/plugins/modules/magento/marketplace_3.gif)
+![Install](/images/magento-marketplace_3.gif)
 
 5. Very Good! The module of Mercado Pago was successfully installed.
 
 **Installation via Package**
 
 1. Vá até o **[Github do Módulo Magento do Mercado Pago](https://github.com/mercadopago/cart-magento)**, faça o download do arquivo que possui a extensão **.tgz** (Exemplo: MercadoPago-2.10.0.tgz):
-![Install](/images/plugins/modules/magento/download_github.gif)
+![Install](/images/magento-download_github.gif)
 
 2. To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**.
 
 3. Upload the file in option **Direct package file upload** and click in **Upload**:
 
-![Install](/images/plugins/modules/magento/install_tgz.gif)
+![Install](/images/magento-install_tgz.gif)
 
 4. Very Good! The module of Mercado Pago was successfully installed.
 
@@ -168,7 +168,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 1. Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
 
-![Configuration](/images/plugins/modules/magento/config-01.gif)
+![Configuration](/images/magento-config-01.gif)
 
 2. To set up the credentials go to **Mercado Pago - Custom Checkout**, you will see the field **Public Key** and **Access Token**. You can get the credentials at the link:
 
@@ -182,7 +182,7 @@ This process will explain how to configure the module to accept payments with Ch
 * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
 
 
-![Configuration](/images/plugins/modules/magento/config-02.gif)
+![Configuration](/images/magento-config-02.gif)
 
 > There are two types of credentials:
 > * Modo Sandbox: The credentials in this way are used for testing.
@@ -190,11 +190,11 @@ This process will explain how to configure the module to accept payments with Ch
 
 3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Make this process for **Checkout Custom - Credit Card** and **Checkout Custom - Ticket** and then click on **Save Config**.
 
-![Configuration](/images/plugins/modules/magento/config-03.gif)
+![Configuration](/images/magento-config-03.gif)
 
 4. Very good! The Checkout Custom with Credit Card and Ticket has been configured and enabled successfully!
 
-![Configuration](/images/plugins/modules/magento/save.png)
+![Configuration](/images/magento-save.png)
 
 
 <a name="Configure-Checkout-Redirect,-Iframe-and-LightBox"></a>
@@ -204,7 +204,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 1. Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
 
-![Configuration](/images/plugins/modules/magento/config-01.gif)
+![Configuration](/images/magento-config-01.gif)
 
 2. To set up the credentials go to **Mercado Pago - Classic Checkout**, click in **Configure**. you will see the field **Client id** and **Client Secret**. You can get the credentials at the link:
 
@@ -217,15 +217,15 @@ This process will explain how to configure the module to accept payments with Ba
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Configuration](/images/plugins/modules/magento/config-04.gif)
+![Configuration](/images/magento-config-04.gif)
 
 3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
 
-![Configuration](/images/plugins/modules/magento/config-05.gif)
+![Configuration](/images/magento-config-05.gif)
 
 4.  Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 
-![Configuration](/images/plugins/modules/magento/save.png)
+![Configuration](/images/magento-save.png)
 
 
 <a name="Configure-Mercado-Envios"></a>

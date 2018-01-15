@@ -22,15 +22,15 @@
 
 1. No seu painel de administração do Shopify, va até o menu **Settings > Payments**.
 <center>
-  ![Config](/images/plugins/modules/shopify/config-1.gif)
+  ![Config](/images/shopify-config-1.gif)
 </center>
 2. Em **Accept credit cards**, selecione **Mercado Pago**.
 3. Preencha o **CLIENT ID** e **CLIENT SECRET**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)
 <center>
-  ![Config](/images/plugins/modules/shopify/config-2.gif)
+  ![Config](/images/shopify-config-2.gif)
 </center>
 4. Click no botão "**Activate**" para salvar.
 <center>
-  ![Config](/images/plugins/modules/shopify/config-3.gif)
+  ![Config](/images/shopify-config-3.gif)
 </center>
 5. Parabéns! o **Mercado Pago** foi instalado e configurado.

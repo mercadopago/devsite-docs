@@ -1,4 +1,4 @@
-![Mercado Pago](/images/plugins/modules/wp-ecommerce/mplogo.png)
+![Mercado Pago](/images/wp-ecommerce-mplogo.png)
 
 # Módulo de integração do Mercado Pago para WP-eCommerce
 * [Requisitos de Sistema](#requisitos-de-sistema)
@@ -52,12 +52,12 @@
 O módulo do Mercado Pago para WP eCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
 ### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_checkout_payment.png)
+* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](/images/wp-ecommerce-basic_checkout_payment.png)
 
 ### Checkout Transparente
-* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/plugins/modules/wp-ecommerce/order_custom.png)
-* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/plugins/modules/wp-ecommerce/order_cust_card.png)
-* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/plugins/modules/wp-ecommerce/order_ticket.png)
+* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
+* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
+* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/wp-ecommerce-order_ticket.png)
 
 ### Outras Funcionalidades
 * Checagens de credenciais e status de plataforma
@@ -93,7 +93,7 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 # Configurando o Cartão de Crédito
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
 
-![Custom Checkout Config](/images/plugins/modules/wp-ecommerce/custom_config_screenshot.png)
+![Custom Checkout Config](/images/wp-ecommerce-custom_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar suas chaves *Public Key* e *Access Token*, que são as credenciais que o identificam de maneira única no Mercado Pago.
@@ -119,7 +119,7 @@ Oferece ferramentas de registro para que você possa analisar possíveis problem
 # Configurando os Boletos
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Boleto do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Boleto*. Você deve obter a seguinte página:
 
-![Ticket Checkout Config](/images/plugins/modules/wp-ecommerce/ticket_config_screenshot.png)
+![Ticket Checkout Config](/images/wp-ecommerce-ticket_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar sua chave *Access Token*, a credencial que o identifica de maneira única no Mercado Pago.
@@ -142,7 +142,7 @@ Oferece ferramentas de registro para que você possa analisar possíveis problem
 # Configurando o Checkout por Redirect, Iframe, ou LightBox
 Esta página explicará como configurar o módulo para aceitar os pagamentos com o Checkout Básico em Redirecionamento, Iframe ou Lightbox. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Checkout Básico*. Você deve obter a seguinte página:
 
-![Basic Checkout](/images/plugins/modules/wp-ecommerce/basic_config_screenshot.png)
+![Basic Checkout](/images/wp-ecommerce-basic_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar suas chaves *Client Id* e *Client Secret*, que são as credenciais que o identificam de maneira única no Mercado Pago.
@@ -211,7 +211,7 @@ Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um
 
 > DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
 >
-> ![Developer](/images/plugins/modules/wp-ecommerce/plugin_adm.png)
+> ![Developer](/images/wp-ecommerce-plugin_adm.png)
 
 # Como Contribuir
 Aqui estão algumas dicas para ajudar no desenvolvimento e manutenção desse projeto.
