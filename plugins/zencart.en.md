@@ -1,32 +1,25 @@
 # ZenCart - Mercado Pago Module (v1.5.x)
----
 
 * [Features](#features)
 * [Available versions](#available_versions)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Setup](#setup)
-* [Social](#social)
+* [Support](#Support)
 
 
 <a name="features"></a>
-##Features##
+## Features: ##
 
-**Standard Checkout**
+The module of Mercado Pago to Zencart is integrated with the feature and payment solutions:
 
-Great for merchants who want to get going quickly and easily.
-
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
-
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru and Venezuela*
+* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+    * Split payments (Two cards)
+    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 
 
 <a name="available_versions"></a>
-##Available versions##
+## Available versions: ##
 
 Plugin Version | Status | Compatible Versions
 -------------- | ------ | -------------------
@@ -34,7 +27,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 
 <a name="requirements"></a>
-## Requirements:
+## Requirements: ##
 
 **PHP**
 
@@ -45,17 +38,15 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 * MySQL v5+
 
-
 <a name="installation"></a>
-## Installation:
+## Installation: ##
 
 1. Download Mercado Pago module.
 
 2. Copy the module folder to your ZenCart ROOT installation.
 
-
 <a name="setup"></a>
-## Setup MercadoPago
+## Setup MercadoPago: ##
 
 1. On your store administration, go to **Modules > Payment**.
 
@@ -65,20 +56,21 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 4. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
-  ![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/credentials.png) <br />
+  ![Installation Instructions](/images/plugins/modules/zencart/credentials.png) <br />
 
 	Get your CLIENT_ID and CLIENT_SECRET in the following address:
-	* Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-	* Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
-	* Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
-	* Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
-	* Mexico: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
-	* Peru: [https://www.mercadopago.com/mpe/herramientas/aplicaciones](https://www.mercadopago.com/mpe/herramientas/aplicaciones)
-	* Venezuela: [https://www.mercadopago.com/mlv/herramientas/aplicaciones](https://www.mercadopago.com/mlv/herramientas/aplicaciones)
+  * Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
+  * Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
+  * Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
+  * Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
+  * Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
+  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
+  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
+  * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
 5. Set the status for IPN (Instant Payment Notification):
 
-  ![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/notification.png) <br />
+  ![Installation Instructions](/images/plugins/modules/zencart/notification.png) <br />
 
   * **Choose the default status for a new order**: Sets up the order status when payments are approved.
   * **Choose the status of approved orders**: Sets up the order status when payments are approved.
@@ -91,11 +83,11 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 6. Other settings. <br/>
 
-![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/other_config_1.png) <br />
+![Installation Instructions](/images/plugins/modules/zencart/other_config_1.png) <br />
 
-![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/other_config_2.png) <br />
+![Installation Instructions](/images/plugins/modules/zencart/other_config_2.png) <br />
 
-![Installation Instructions](https://raw.github.com/gmatsuoka/cart-zencart/master/README.img/other_config_3.png) <br />
+![Installation Instructions](/images/plugins/modules/zencart/other_config_3.png) <br />
 
   * **Store Category**: Sets up the category of the store;
   * **Redirect URL**: The Redirect url were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
@@ -106,11 +98,15 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
   * **Live or Sandbox**: Test your payments in Mercado Pago sandbox environment;
   * **Sort order of display**: Complete the display order of MercadoPago
 
-<a name="social"></a>
-##Social##
+<a name="Support"></a>
+## Support: ##
 
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>
+If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
+
+* Email of your account Mercado Pago.
+* Details about your question, problem or error.
+* Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
+* Version of Zencart.
+* Module version, if you are using.
+
+Don't worry... We will help you as soon as possible.
