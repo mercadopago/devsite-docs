@@ -11,7 +11,6 @@
   * [Configuring Checkout by Redirect, Iframe, or LightBox](#configuring-checkout-by-redirect-iframe-or-lightbox)
 * [Instant Payment Notification Settings](#instant-payment-notification-settings)
 * [Upgrade](#upgrade)
-* [FAQ](#faq)
 * [Technical Support](#technical-support)
 * [How to Contribute](#how-to-contribute)
 
@@ -200,8 +199,6 @@ To confirm that your module is really updated, you can see in *Plugins* item in 
 
 > HINT: Always remember to make a backup of your system and data before making any changes.
 
-# FAQ
-Under construction...
 
 # Technical Support
 If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
@@ -216,7 +213,6 @@ If you have any questions, problems or errors we have a support channel. Send an
 >
 > ![Developer](/images/plugins/modules/wp-ecommerce/plugin_adm.png)
 
-Don't worry... We will help you as soon as possible.
 
 # How to Contribute
 Here are some tips to help with the development and maintenance of this project.

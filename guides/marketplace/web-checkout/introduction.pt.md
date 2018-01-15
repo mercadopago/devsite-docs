@@ -27,4 +27,4 @@ Assim como no Checkout de Pagamentos, você conta com um par de chaves privadas 
 
 As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, etc. As chaves privadas devem ser mantidas c**onfidencialmente** em seus servidores de backend e nunca devem ser publicadas.
 
-#### [Começar a criar meu Marketplace](/guides/markeplace/web-checkout/create-marketplace.pt.md)
+#### [Começar a criar meu Marketplace](/guides/marketplace/web-checkout/create-marketplace.pt.md)

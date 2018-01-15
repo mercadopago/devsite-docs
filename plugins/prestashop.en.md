@@ -76,7 +76,7 @@ The module of Mercado Pago to Prestahop is integrated with the features and paym
 * Other features
     * Customizable success page
     * Installments product calculator
-    * Installments shipment calculator 
+    * Installments shipment calculator
 
 <a name="Installation"></a>
 ## Installation: ##
@@ -125,9 +125,9 @@ This process will explain how to configure the module to accept payments with Ch
 
 5. Enable standard, you need to enable the option **Settings - MercadoPago Standard**:
 ![Enable Standard](../../images/plugins/modules/prestashop/standard.gif)
- 
+
 6. Very good! The Checkout Custom with Credit Card, Ticket and standard has been configured and enabled successfully!
- 
+
 <a name="Configure-Mercado-Envios"></a>
 ## Configure Mercado Envios: ##
 
@@ -149,12 +149,7 @@ This process will explain how to configure the module to accept Mercado Envios:
 3. Very good! The Mercado Envios has been configured and enable successfully!
 
 > 	Youtube:
-https://youtu.be/rtXNkdaqUJ8 
-
-<a name="FAQ"></a>
-## FAQ: ##
-
-Under construction...
+https://youtu.be/rtXNkdaqUJ8
 
 
 <a name="Support"></a>
@@ -167,5 +162,3 @@ If you have any questions, problems or errors we have a support channel. Send an
 * Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
 * Version of Prestashop.
 * Module version, if you are using.
-
-Don't worry... We will help you as soon as possible.

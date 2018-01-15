@@ -11,12 +11,11 @@
   * [Configure Mercado Envios](#Configure-Mercado-Envios)
   * [Configure Subscriptions](#Configure-Subscriptions)
 * [Payment Notification status Settings](#Payment-Notification-status-settings)
-* [FAQ](#FAQ)
 * [Support](#Support)
 
 
 <a name="Requirements"></a>
-## Requirements: 
+## Requirements:
 
 **Magento Version**
 * Community Edition 1.8.x - 1.9.x
@@ -107,7 +106,7 @@ This process will explain the installation of the Mercado Pago module via Packag
 > The copied link should look like this:
 > https://connect20.magentocommerce.com/e848b7a0bc8735cd525582c/mercadopago+MercadoPago-2.9.0
 
-3. To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**. 
+3. To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**.
 
 4. Copy the link obtained in the **Magento Marketplace** in the option **Install New Extensions** and click in **Install**.
 
@@ -120,7 +119,7 @@ This process will explain the installation of the Mercado Pago module via Packag
 1. Vá até o **[Github do Módulo Magento do Mercado Pago](https://github.com/mercadopago/cart-magento)**, faça o download do arquivo que possui a extensão **.tgz** (Exemplo: MercadoPago-2.10.0.tgz):
 ![Install](/images/plugins/modules/magento/download_github.gif)
 
-2. To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**. 
+2. To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**.
 
 3. Upload the file in option **Direct package file upload** and click in **Upload**:
 
@@ -194,7 +193,7 @@ This process will explain how to configure the module to accept payments with Ch
 ![Configuration](/images/plugins/modules/magento/config-03.gif)
 
 4. Very good! The Checkout Custom with Credit Card and Ticket has been configured and enabled successfully!
- 
+
 ![Configuration](/images/plugins/modules/magento/save.png)
 
 
@@ -276,7 +275,7 @@ This process will explain how to configure the module to accept recurring paymen
 
 ![Configuration](/images/plugins/modules/magento/config-re-01.gif)
 
-3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. 
+3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**.
 
 ![Configuration](/images/plugins/modules/magento/config-re-02.gif)
 
@@ -294,7 +293,7 @@ This process will explain how to set up order statuses for payment notifications
 
 ![Configuration](/images/plugins/modules/magento/config-01.gif)
 
-2. To configure the statuses go to **Mercado Pago - Global Configuration**, go to the option **Order Status Options**. 
+2. To configure the statuses go to **Mercado Pago - Global Configuration**, go to the option **Order Status Options**.
 For each payment status you can choose an order status, as soon as your store receives the payment notification the module will automatically update the order to the chosen status. To save the settings click the **Save Config** button.
 
 ![Configuration](/images/plugins/modules/magento/config-06.gif)
@@ -305,12 +304,6 @@ For each payment status you can choose an order status, as soon as your store re
 
 ![Configuration](/images/plugins/modules/magento/save.png)
 
-
-
-<a name="FAQ"></a>
-## FAQ: ##
-
-Under construction...
 
 
 <a name="Support"></a>
@@ -326,5 +319,3 @@ If you have any questions, problems or errors we have a support channel. Send an
 > You can get the module version in the module settings. To access the module settings go to **System > Configuration**, click on the **Payment Methods**, go to the **Mercado Pago - Global Configuration** in the session **Developer Options** you will find the **Version Module**, according to the image:
 >
 > ![Developer](/images/plugins/modules/magento/developer_option.png)
-
-Don't worry... We will help you as soon as possible.

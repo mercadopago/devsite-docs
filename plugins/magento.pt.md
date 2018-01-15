@@ -13,11 +13,10 @@
   * [Configurando o Mercado Envios](#Configurando-o-Mercado-Envios)
   * [Configurando o Pagamento Recorrente](#Configurando-o-Pagamento-Recorrente)
 * [Configurações de status de Notificações de Pagamento](#Configurações-de-status-de-Notificações-de-Pagamento)
-* [FAQ](#FAQ)
 * [Suporte](#Suporte)
 
 <a name="Requisitos"></a>
-## Requisitos: 
+## Requisitos:
 
 **Versão do Magento**
 * Community Edition 1.8.x - 1.9.x
@@ -64,7 +63,7 @@
 
 **SSL**
 * É um requisito que você tenha um certificado SSL.
-* Durante os testes em modo de Sandbox você poderá executar os testes em HTTP. 
+* Durante os testes em modo de Sandbox você poderá executar os testes em HTTP.
 
 <a name="Funcionalidades"></a>
 ## Funcionalidades: ##
@@ -105,7 +104,7 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 
 2. Ao finalizar o processo de "compra", clique em **Install** e copie o link que será disponibilizado na tela:
 ![Install](/images/plugins/modules/magentomarketplace_2.gif)
-> O link copiado deve ser igual a esse: 
+> O link copiado deve ser igual a esse:
 > https://connect20.magentocommerce.com/e848b7a0bc8735cd525582c/mercadopago+MercadoPago-2.9.0
 
 3. Para efetuar a instalação iremos utilizar a ferramenta **Magento Connect Manager**, acesse o admin do Magento e vá até o menu  **System > Magento Connect > Magento Connect Manager**.
@@ -196,7 +195,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 ![Configuration](/images/plugins/modules/magento/config-03.gif)
 
 4.  Pronto! o Checkout Custom com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
- 
+
 ![Configuration](/images/plugins/modules/magento/save.png)
 
 
@@ -222,12 +221,12 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 ![Configuration](/images/plugins/modules/magento/config-04.gif)
 
-3. Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**. 
+3. Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**.
 Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usuário deve retornar a sua loja ao finalizar o checkout (**Auto Redirect**).
 
 ![Configuration](/images/plugins/modules/magento/config-05.gif)
 
-4.  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso! 
+4.  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
 ![Configuration](/images/plugins/modules/magento/save.png)
 
@@ -280,7 +279,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos re
 
 ![Configuration](/images/plugins/modules/magento/config-re-01.gif)
 
-3. Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**. 
+3. Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**.
 
 ![Configuration](/images/plugins/modules/magento/config-re-02.gif)
 
@@ -297,28 +296,22 @@ Esse processo irá explicar como configurar os status de pedido para as notifica
 
 ![Configuration](/images/plugins/modules/magento/config-01.gif)
 
-2. Para configurar os status acesse a opção **Mercado Pago - Global Configuration**, vá até a opção **Order Status Options**. 
+2. Para configurar os status acesse a opção **Mercado Pago - Global Configuration**, vá até a opção **Order Status Options**.
 Para cada status de pagamento você poderá escolher um status de pedido, assim que a sua loja receber a notificação de pagamento o módulo atualizará automaticamente o pedido para o status escolhido. Para salvar as configurações clique no botão **Save Config**.
 
 ![Configuration](/images/plugins/modules/magento/config-06.gif)
 
-> O módulo está preparado para receber as notificações de pagamento de forma automática, ou seja, sem a necessidade de configurar a sua conta Mercado Pago ou o módulo. 
+> O módulo está preparado para receber as notificações de pagamento de forma automática, ou seja, sem a necessidade de configurar a sua conta Mercado Pago ou o módulo.
 
 3. Pronto! os status de notificação foram configurados com sucesso
 
 ![Configuration](/images/plugins/modules/magento/save.png)
 
 
-<a name="FAQ"></a>
-## FAQ: ##
-
-Em construção...
-
-
 <a name="Suporte"></a>
 ## Suporte: ##
 
-Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento. 
+Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento.
 Envie um email para modulos@mercadopago.com com as seguintes informações:
 
 * Email da sua conta Mercado Pago.
@@ -329,5 +322,3 @@ Envie um email para modulos@mercadopago.com com as seguintes informações:
 > Você pode obter a versão do modulo nas configurações do modulo. Para acessar as configurações do módulo vá até **System > Configuration**, clique na opção **Payment Methods**, vá até a opção **Mercado Pago - Global Configuration** na sessão **Developer Options** você encontrará a opção **Version Module**, conforme a imagem:
 >
 > ![Developer](/images/plugins/modules/magento/developer_option.png)
-
-Não se preocupe... Iremos ajuda-lo o mais rápido possível.
