@@ -167,4 +167,4 @@ Your store will automatically sync with MercadoPago. The notification URL will b
 <a name="upgrade"></a>
 ## Upgrade Mercado Pago Plugin ##
 
-Follow the same steps that you did to install the module. 
+Follow the same steps that you did to install the module.

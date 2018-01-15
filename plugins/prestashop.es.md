@@ -83,13 +83,13 @@ Este proceso muestra cómo realizar la instalación vía Marketplace:
 
 1. Ir em **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** y haga clic en el botón de registro para descargar:
 2. Después de su registro usted puede descargar.
-![Download](../../images/plugins/modules/prestashop/download.gif)
+![Download](../../images/prestashop-download.gif)
 
 3. Ahora acceda a su administrador y se dirige a Modulos y Servicios.
-![Instalación](../../images/plugins/modules/prestashop/installation.gif)
+![Instalación](../../images/prestashop-installation.gif)
 
 4. ¡Muy bien! El módulo de Mercado Pago fue instalado con éxito.
-![Configuración](../../images/plugins/modules/prestashop/installation_success.png)
+![Configuración](../../images/prestashop-installation_success.png)
 
 <a name="Configure-Credit-Card-and-Ticket-Standard"></a>
 ## Configurar tarjeta de crédito, ticket y redirect: ##
@@ -114,13 +114,13 @@ Este proceso debe ayudar a configurar el módulo para pagos con checkout transpa
 > * Modo Producción: Esta credencial se utiliza para compras en producción, para ello user la opción de "Quiero ir a la producción".
 
 3. Ahora usted puede llenar el **client id** y **client secret**, haga clic en el botón **Login**:
-![Login](../../images/plugins/modules/prestashop/credentials_1.gif)
+![Login](../../images/prestashop-credentials_1.gif)
 
 4. Habilite el módulo personalizado, rellene el **access token**, **public key** y seleccione las opciones de pago:
-![Pagos transparente](../../images/plugins/modules/prestashop/credentials_2.gif)
+![Pagos transparente](../../images/prestashop-credentials_2.gif)
 
 5. Para el Checkout Standard, sólo tiene que habilitar la opción **Configuración - Mercado Pago Standard**:
-![Habilitar Standard](../../images/plugins/modules/prestashop/standard.gif)
+![Habilitar Standard](../../images/prestashop-standard.gif)
 
 6. ¡Muy bien! Usted ha habilitado los pagos transparentes y redirect!
 
@@ -141,7 +141,7 @@ Los pasos siguientes mostrará cómo habilitar el Mercado de envíos.
 > IMPORTANTE: Su cuenta del Mercado Pago necesita ser del tipo **Vendedor** y los productos necesitan tener las dimensiones correctas.
 
 2. Para habilitar en el módulo, sólo tiene que activarlo en la opción **Mercado de envíos** y hacer clic en **Guardar**:
-![Habilitar Mercado Envios](../../images/plugins/modules/prestashop/mercadoenvios_settings.gif)
+![Habilitar Mercado Envios](../../images/prestashop-mercadoenvios_settings.gif)
 
 3. Muy bien! Ahora usted puede ofrecer el Mercado Envíos como medio de transporte para sus clientes!
 

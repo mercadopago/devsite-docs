@@ -85,7 +85,7 @@ El módulo del Mercado Pago para VirtueMart esta integrado con las siguientes fu
 4. Ir a **Configuration** <br/>
   Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, complete tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
 
-![Instrucciones de instalación](/images/plugins/modules/virtuemart/credentials.png) <br />
+![Instrucciones de instalación](/images/virtuemart-credentials.png) <br />
 
   Puedes obtener tu **Client_id** y **Client_secret**, dependiendo e tu país en los siguientes links:
 
@@ -100,7 +100,7 @@ El módulo del Mercado Pago para VirtueMart esta integrado con las siguientes fu
 
 5. Configuraciones del Checkout. <br/>
 
-![Instrucciones de instalación](/images/plugins/modules/virtuemart/checkout_settings.png) <br />
+![Instrucciones de instalación](/images/virtuemart-checkout_settings.png) <br />
 
   **Typo de Checkout**: Como tus clients van a interactuar con MercadoPaog para pagar sus ordenes.;<br />
   **Auto Redirect**: Si está seteado, la plataforma volverá a tu tienda cuando el pago sea aprobado.<br />
@@ -112,7 +112,7 @@ El módulo del Mercado Pago para VirtueMart esta integrado con las siguientes fu
 
 6. Configuraciones de IPN. <br/>
 
-![Instrucciones para la instalación](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+![Instrucciones para la instalación](/images/virtuemart-ipn_settings.png) <br />
 
   * **Elige el status para ordenes aprobadas**: Setea el status de la orden cuando los pagos son aprobados.
   * **Elige el status para ordenes pendientes**: Setea el status de la orden cuando los pagos son pendientes.
@@ -125,7 +125,7 @@ El módulo del Mercado Pago para VirtueMart esta integrado con las siguientes fu
 
 7. Otras configuraciones. <br/>
 
-![Instruciones para la instalación](/images/plugins/modules/virtuemart/other_settings.png) <br />
+![Instruciones para la instalación](/images/virtuemart-other_settings.png) <br />
 
   **Categoría de la tienda**: Define la categoría de la tienda. ;<br />
   **Log**: Habilitar/Deshabilitar logs.<br />
@@ -150,7 +150,7 @@ El módulo del Mercado Pago para VirtueMart esta integrado con las siguientes fu
 
 6. Configura tus credenciales. Para hacerlo, complete tu **access_token** en la sección de configuración de las credenciales.
 
-![Instrucciones para la instalación](/images/plugins/modules/virtuemart/credentials_custom.png) <br />
+![Instrucciones para la instalación](/images/virtuemart-credentials_custom.png) <br />
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
@@ -165,14 +165,14 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 7. Configuración del checkout. <br/>
 
-![Instruciones para la instalación](/images/plugins/modules/virtuemart/checkout_settings_custom.png) <br />
+![Instruciones para la instalación](/images/virtuemart-checkout_settings_custom.png) <br />
 
 **Statement Descriptor**: Setea la etiqueta que el cliente verá en su facture.;<br />
 **Binary**: Cuando se define como true, el pago solo puede ser aprobado o rechazado. Sino el status de in_process es agregado.<br />
 
 8. Configuración IPN. <br/>
 
-![Instrucciones para la instalación](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+![Instrucciones para la instalación](/images/virtuemart-ipn_settings.png) <br />
 
   * **Elige el status para ordenes aprobadas**: Setea el status de la orden cuando los pagos son aprobados.
   * **Elige el status para ordenes pendientes**: Setea el status de la orden cuando los pagos son pendientes.
@@ -202,7 +202,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 6. Ahora configure tus credenciales. Para hacerlo, complete **public_key** y **access_token** en la sección de configuración de credenciales.
 
-![Instrucciones para la instalación](/images/plugins/modules/virtuemart/credentials_custom_ticket.png) <br />
+![Instrucciones para la instalación](/images/virtuemart-credentials_custom_ticket.png) <br />
 
 Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
 
@@ -217,7 +217,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 7. Configuración IPN. <br/>
 
-![Instrucciones para la instalación](/images/plugins/modules/virtuemart/ipn_settings.png) <br />
+![Instrucciones para la instalación](/images/virtuemart-ipn_settings.png) <br />
 
   * **Elige el status para ordenes aprobadas**: Setea el status de la orden cuando los pagos son aprobados.
   * **Elige el status para ordenes pendientes**: Setea el status de la orden cuando los pagos son pendientes.
