@@ -121,9 +121,9 @@ Esse processo deve de auxiliar a configuração do módulo para pagamentos com c
 
 5. Para o Checkout Standard,você precisa apenas habilitar a opção **Configurações - Mercado Pago Standard**:
 ![Enable Standard](../../images/plugins/modules/prestashop/standard.gif)
- 
+
 6. Muito bem! Você habilitou pagamentos transparentes e redirect!
- 
+
 <a name="Configure-Mercado-Envios"></a>
 ## Configurar Mercado Envios: ##
 
@@ -146,16 +146,7 @@ Os passos a seguir vai mostrar como habilitar o Mercado Envios.
 3. Muito bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
 
 > 	Youtube:
-https://youtu.be/rtXNkdaqUJ8 
-
-> 	Facebook:
-https://www.facebook.com/groups/modulos.mercadopago/
-
-<a name="FAQ"></a>
-## FAQ: ##
-
-Em construção...
-
+https://youtu.be/rtXNkdaqUJ8
 
 <a name="Support"></a>
 ## Suporte: ##

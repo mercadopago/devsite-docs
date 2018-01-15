@@ -14,7 +14,6 @@
   * [Configurando las Suscripciones](#configurando-las-suscripciones)
 * [Configuraciones de las Notificaciones Instantáneas de Pago](#configuraciones-de-las-notificaciones-instantáneas-de-pago)
 * [Actualización](#actualización)
-* [FAQ](#faq)
 * [Soporte Técnico](#soporte-técnico)
 * [Cómo Contribuir](#cómo-contribuir)
 
@@ -26,7 +25,7 @@
 ### Ambiente
 * LAMP (Linux, Apache, MySQL, y PHP)
 
-### Sistema Operacional
+### Sistema Operativo
 * Linux x86
 * x86-64
 
@@ -40,7 +39,7 @@
 * <a href="http://php.net/">PHP</a> 5.6 o mayor, con soporte para cURL
 
 ### MySQL Versiones
-* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or greater OR <a href="https://mariadb.org/">MariaDB</a> versión 10.0 o superior
+* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or superior OR <a href="https://mariadb.org/">MariaDB</a> versión 10.0 o superior
 
 ### Dependencias de Extensión
 * WooCommerce
@@ -56,7 +55,7 @@
 El módulo de Mercado Pago para WooCommerce está integrado con las siguientes características y soluciones de pago:
 
 ### [Checkout Básico (Redirección, Iframe o Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces Preconstruidas de Mercado Pago<br>![Checkout Básico](/images/plugins/modules/woo-commerce/wiki3/basic_checkout_payment.png)
+* Interfaces Preconstruídas de Mercado Pago<br>![Checkout Básico](/images/plugins/modules/woo-commerce/wiki3/basic_checkout_payment.png)
 * [Reembolsos/Cancelaciones de Pagos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 * Pagos Divididos (Dos Tarjetas)
 * [Suscripciones](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
@@ -69,13 +68,13 @@ El módulo de Mercado Pago para WooCommerce está integrado con las siguientes c
 * [Otros Medios de Pago, Como los Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/plugins/modules/woo-commerce/wiki3/ticket.png)
 
 ### Otras Funcionalidades
-* Verificaciones de credenciales y estado de la plataforma
-* Página de éxito personalizable
-* Calculadora de cuotas
-* Conversión de moneda
-* Notificación instantánea de pago y webhooks
-* Descuentos por método de pago o cupón de Mercado Pago
-* Herramientas de registro y depuración
+* Verificaciones de credenciales y estado de la plataforma.
+* Página de éxito personalizable.
+* Calculadora de cuotas.
+* Conversión de moneda.
+* Notificación instantánea de pago y webhooks.
+* Descuentos por método de pago o cupón de Mercado Pago.
+* Herramientas de registro y depuración.
 
 # Instalación
 Si ya tiene el módulo instalado, siga las [Instrucciones de Actualización](#actualización) primero.
@@ -94,7 +93,7 @@ Usted tiene dos opciones para instalar este módulo: desde su tienda de WordPres
 
 1. Obtenga las fuentes del módulo desde un repositorio (<a href="https://github.com/mercadopago/cart-woocommerce/archive/master.zip">Github</a> o <a href="https://br.wordpress.org/plugins/woocommerce-mercadopago/">WordPress Plugin Directory</a>);
 
-2. Descomprimir la carpeta y cambie su nombre para "woocommerce-mercadopago";
+2. Descomprimir la carpeta y cambie su nombre a "woocommerce-mercadopago";
 
 3. Copie el directorio "woocommerce-mercadopago" en el directorio *[WordPressRootDirectory]/wp-content/plugins/*. ¡Está hecho!
 
@@ -307,8 +306,6 @@ Para confirmar que su módulo está realmente actualizado, usted puede verlo en 
 
 > CONSEJO: Recuerde siempre de hacer una copia de seguridad (backup) de su sistema y datos antes de realizar cualquier cambio.
 
-# FAQ
-En construcción...
 
 # Soporte Técnico
 Si tiene alguna pregunta, problema o error, tenemos un canal de soporte. Envíe un correo electrónico a modulos@mercadopago.com con la siguiente información:
@@ -323,7 +320,6 @@ Si tiene alguna pregunta, problema o error, tenemos un canal de soporte. Envíe 
 >
 > ![Developer](/images/plugins/modules/woo-commerce/wiki3/plugins_menu.png)
 
-No se preocupe ... Le ayudaremos lo antes posible.
 
 # Cómo Contribuir
 Estos son algunos consejos para ayudar con el desarrollo y mantenimiento de este proyecto.

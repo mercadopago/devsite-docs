@@ -11,7 +11,6 @@
   * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#configurando-o-checkout-por-redirect-iframe-ou-lightbox)
 * [Configurações das Notificações Instantâneas de Pagamento](#configurações-das-notificações-instantâneas-de-pagamento)
 * [Atualização](#atualização)
-* [FAQ](#faq)
 * [Suporte Técnico](#suporte-técnico)
 * [Como Contribuir](#como-contribuir)
 
@@ -200,8 +199,6 @@ Para confirmar que seu módulo está realmente atualizado, você pode ver no ite
 
 > DICA: Lembre-se sempre de fazer um backup dos seus dados e de seu sistema antes de fazer qualquer alteração.
 
-# FAQ
-Em construção...
 
 # Suporte Técnico
 Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um email para modulos@mercadopago.com com as seguintes informações:
@@ -215,8 +212,6 @@ Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um
 > DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
 >
 > ![Developer](/images/plugins/modules/wp-ecommerce/plugin_adm.png)
-
-Não se preocupe ... Nós o ajudaremos o mais rápido possível.
 
 # Como Contribuir
 Aqui estão algumas dicas para ajudar no desenvolvimento e manutenção desse projeto.

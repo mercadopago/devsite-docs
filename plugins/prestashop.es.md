@@ -121,9 +121,9 @@ Este proceso debe ayudar a configurar el módulo para pagos con checkout transpa
 
 5. Para el Checkout Standard, sólo tiene que habilitar la opción **Configuración - Mercado Pago Standard**:
 ![Habilitar Standard](../../images/plugins/modules/prestashop/standard.gif)
- 
+
 6. ¡Muy bien! Usted ha habilitado los pagos transparentes y redirect!
- 
+
 <a name="Configure-Mercado-Envios"></a>
 ## Configurar Mercado Envíos: ##
 
@@ -146,16 +146,7 @@ Los pasos siguientes mostrará cómo habilitar el Mercado de envíos.
 3. Muy bien! Ahora usted puede ofrecer el Mercado Envíos como medio de transporte para sus clientes!
 
 > 	Youtube:
-https://youtu.be/rtXNkdaqUJ8 
-
-> 	Facebook:
-https://www.facebook.com/groups/modulos.mercadopago/
-
-<a name="FAQ"></a>
-## FAQ: ##
-
-En construcción...
-
+https://youtu.be/rtXNkdaqUJ8
 
 <a name="Support"></a>
 ## Soporte: ##
@@ -169,5 +160,3 @@ Si tiene alguna duda o problemas de instalación. Envíe un correo electrónico 
 * Evidencias puede ayudar (pantalla de error, paso a paso, vídeo, etc.).
 * Versión de Prestashop.
 * Versión del módulo que utiliza.
-
-Y no se preocupe que vamos a responder lo más rápido posible.

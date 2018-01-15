@@ -1,6 +1,6 @@
 # Magento v1.8.x a 1.9.x
 
-* [Requisitos](#Requisitos) 
+* [Requisitos](#Requisitos)
 * [Instalación](#Instalación)
 * [Actualización](#Actualización)
 * Checkout Personalizado
@@ -9,14 +9,14 @@
   * [Configurar el Checkout Redirect, Iframe y LightBox](#Configurar-el-Checkout-Redirect,-Iframe-y-LightBox)
   * [Configurar el Mercado Envios](#Configurar-Mercado-Envios)
   * [Configurar Suscripciones](#Configurar-Suscripciones)
-* [Configuración de estado de las notificaciones de Pago](#Configuración-de-estado-de-las-notificaciones-de-Pago) 
+* [Configuración de estado de las notificaciones de Pago](#Configuración-de-estado-de-las-notificaciones-de-Pago)
 
 El módulo del Mercado Pago para Magento ofrece las siguientes soluciones:
 
 <div class="grid grid--33">
     <div class="card card-highlight grid__item">
         <h3> Checkout básico (Redirect, Iframe o Modal) </h3>
-        <nav class="card-actions"> 
+        <nav class="card-actions">
             <a class="arrow-link"> Pagos con dos tarjetas </a>
             <a class="arrow-link"> Mercado Envios </a>
             <a class="arrow-link"> Devolución de Pagos </a>
@@ -25,7 +25,7 @@ El módulo del Mercado Pago para Magento ofrece las siguientes soluciones:
     </div>
     <div class="card card-highlight grid__item">
         <h3> Checkout Personalizado </h3>
-        <nav class="card-actions"> 
+        <nav class="card-actions">
             <a class="arrow-link"> Pagos con Tarjetas </a>
             <a class="arrow-link"> Tarjetas Guardadas</a>
             <a class="arrow-link"> Pagos con otros medios </a>
@@ -35,7 +35,7 @@ El módulo del Mercado Pago para Magento ofrece las siguientes soluciones:
     </div>  
     <div class="card card-highlight grid__item">
         <h3> Otras Funcionalidades </h3>
-        <nav class="card-actions"> 
+        <nav class="card-actions">
             <a class="arrow-link"> Atualización del pedido a través de Cron </a>
             <a class="arrow-link"> Pagina de éxito personalizable </a>
             <a class="arrow-link"> Calculadora de Cuotas </a>
@@ -45,7 +45,7 @@ El módulo del Mercado Pago para Magento ofrece las siguientes soluciones:
 
 
 <a name="Requisitos"></a>
-## Requisitos: 
+## Requisitos:
 
 |                            | Detalle                                                                                        |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -74,7 +74,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 
 2. Al finalizar el proceso de "compra", haga un clic en **Install** y copie la url que estará disponible en la pantalla:
 
-    ![Install](/images/plugins/modules/magento/marketplace_2.gif) 
+    ![Install](/images/plugins/modules/magento/marketplace_2.gif)
 
 
 3. Para realizar la instalación vamos a utilizar la herramienta **Magento Connect Manager**, acceda al administrador de Magento y vaya al menu  **System > Magento Connect > Magento Connect Manager**
@@ -165,7 +165,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 
 
 <a name="Configurar-el-Checkout-Redirect,-Iframe-y-LightBox"></a>
-## Configurar el Checkout Redirect, Iframe y LightBox: 
+## Configurar el Checkout Redirect, Iframe y LightBox:
 
 Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
 
@@ -188,9 +188,9 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 
 <a name="Configurar-Mercado-Envios"></a>
-## Configurar el Mercado Envios: ##
+## Configurar el Mercado Envíos: ##
 
-Este proceso explicará cómo configurar el módulo para aceptar Mercado Envios:
+Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos:
 
 1. Es necesario [habilitar Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) en su cuenta Mercado Pago.
 
@@ -199,8 +199,8 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envios:
 2. Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Shipping Methods**:
 
     ![Configuration](/images/plugins/modules/magento/config-me-01.gif)
- 
-3. Para habilitar el Mercado Envios **MercadoEnvios**, haga un clic en el botón  **Configure**. Vaya a la opción **Enable** y marque como **Yes**.
+
+3. Para habilitar Mercado Envíos **MercadoEnvios**, haga un clic en el botón  **Configure**. Vaya a la opción **Enable** y marque como **Yes**.
 
     ![Configuration](/images/plugins/modules/magento/config-me-02.gif)
 
@@ -209,7 +209,7 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envios:
 
     ![Configuration](/images/plugins/modules/magento/config-me-03.gif)
 
-5. ¡Listo! El Mercado Envios ha sido configurado y habilitado con éxito!
+5. ¡Listo! El Mercado Envíos ha sido configurado y habilitado con éxito!
     ![Configuration](/images/plugins/modules/magento/me_save.png)
 
 
@@ -239,7 +239,7 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
 1. Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
     ![Configuration](/images/plugins/modules/magento/config-01.gif)
 
-2. Para configurar los status acceda a la opción **Mercado Pago - Global Configuration**, vaya a la opción **Order Status Options**. Para cada estado de pago usted puede elegir un estado de pedido, cuando su tienda recibe un notificación de pago el módulo actualizará automáticamente el pedido con el estado configurado. Para guardar la configuración haga un clic en el botón **Save Config**.
+2. Para configurar los status acceda a la opción **Mercado Pago - Global Configuration**, vaya a la opción **Order Status Options**. Para cada estado de pago usted puede elegir un estado de pedido, cuando su tienda recibe una notificación de pago el módulo actualizará automáticamente el pedido con el estado configurado. Para guardar la configuración haga un clic en el botón **Save Config**.
     ![Configuration](/images/plugins/modules/magento/config-06.gif)
 
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar su cuenta de Mercado Pago o el módulo.
@@ -252,8 +252,8 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
 <!-- <a name="Soporte-técnico"></a>
 ## Soporte técnico: ##
 
-Caso tenga alguna duda, problema o error tenemos un canal de contacto.
-Envié un email a modulos@mercadopago.com con la seguinte información:
+En el caso de que tenga alguna duda, problema o error tenemos un canal de contacto.
+Envié un email a modulos@mercadopago.com con la siguiente información:
 
 * Email de su cuenta de Mercado Pago.
 * Detalles sobre su duda, problema o error.
@@ -263,6 +263,3 @@ Envié un email a modulos@mercadopago.com con la seguinte información:
 > Puede obtener la versión del módulo en la configuración del módulo. Para acceder a la configuración del módulo vaya a **System > Configuration**, haga clic en la opción **Payment Methods**, vaya a la opción **Mercado Pago - Global Configuration** en la sesión **Developer Options** usted encontrará la opción **Version Module**, conforme la imagen:
 >
 > ![Developer](/images/plugins/modules/magento/developer_option.png)
-
-No te preocupes... Vamos a ayudarle lo más rápidamente posible. -->
-

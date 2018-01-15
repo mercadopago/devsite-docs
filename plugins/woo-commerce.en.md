@@ -14,7 +14,6 @@
   * [Configuring Subscriptions](#configuring-subscriptions)
 * [Instant Payment Notification Settings](#instant-payment-notification-settings)
 * [Upgrade](#upgrade)
-* [FAQ](#faq)
 * [Technical Support](#technical-support)
 * [How to Contribute](#how-to-contribute)
 
@@ -115,11 +114,11 @@ This window shows the main settings of WooCommerce MercadoPago plugin, where you
 Is the upper part of the window. Shows platform statuses and system consistency to use this plugin. Also, there are buttons that serves as shortcuts for the payment gateways that are offered. It is a good idea to have all the field with a green-checked icon.
 
 ### Basic Checkout & Subscriptions
-  * Here you should place your *Client Id* and *Client Secret* keys, the credentials that uniquely identifies you in Mercado Pago. *Client Id* and *Client Secret* are used for Basic Checkout and Subscriptions payment methods; 
+  * Here you should place your *Client Id* and *Client Secret* keys, the credentials that uniquely identifies you in Mercado Pago. *Client Id* and *Client Secret* are used for Basic Checkout and Subscriptions payment methods;
   * Also, just bellow, you can enable currency conversion mode for sells with Basic Checkout and Subscriptions. Currency conversion is a feature that enables you to set an unsupported currency in WooCommerce while maintaining Mercado Pago as payment method. It will convert the unsupported currency for the currency used in your country. Pay attention that this service converts values on-the-fly in real-time and can bring some additional delay to your server.
 
 ### Custom Checkout & Tickets
-  * Here you should place your *Public Key* and *Access Token* keys, the credentials that uniquely identifies you in Mercado Pago. *Public Key* and *Access Token* are used for Custom Checkout and Tickets payment methods; 
+  * Here you should place your *Public Key* and *Access Token* keys, the credentials that uniquely identifies you in Mercado Pago. *Public Key* and *Access Token* are used for Custom Checkout and Tickets payment methods;
   * Also, just bellow, you can enable currency conversion mode for sells with Custom Checkout and Tickets. Currency conversion is a feature that enables you to set an unsupported currency in WooCommerce while maintaining Mercado Pago as payment method. It will convert the unsupported currency for the currency used in your country. Pay attention that this service converts values on-the-fly in real-time and can bring some additional delay to your server.
 
 ### Status Mapping of Payment x Order
@@ -307,9 +306,6 @@ To confirm that your module is really updated, you can see in *Plugins* item in 
 
 > HINT: Always remember to make a backup of your system and data before making any changes.
 
-# FAQ
-Under construction...
-
 # Technical Support
 If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
 
@@ -322,8 +318,6 @@ If you have any questions, problems or errors we have a support channel. Send an
 > HINT: You can get the module version in the plugin list of your WordPress administration page:
 >
 > ![Developer](/images/plugins/modules/woo-commerce/wiki3/plugins_menu.png)
-
-Don't worry... We will help you as soon as possible.
 
 # How to Contribute
 Here are some tips to help with the development and maintenance of this project.

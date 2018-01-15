@@ -6,7 +6,6 @@
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Setup](#setup)
-* [Social](#social)
 
 
 <a name="features"></a>
@@ -125,13 +124,3 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 	* **PEN** (Peruvian Sol)
 * Venezuela:
 	* **VEF** (Venezuelan Bolivar)
-
-
-<a name="social"></a>
-##Social##
-
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>

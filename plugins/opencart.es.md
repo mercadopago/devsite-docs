@@ -168,11 +168,3 @@ Your store will automatically sync with MercadoPago. The notification URL will b
 ## Upgrade Mercado Pago Plugin ##
 
 Follow the same steps that you did to install the module.
-
-<a name="Feedback"></a>
-## Feedback ##
-
-We want to know your opinion, please answer the following form.
-
-* [Portuguese](http://goo.gl/forms/2n5jWHaQbfEtdy0E2)
-* [Spanish](http://goo.gl/forms/A9bm8WuqTIZ89MI22)

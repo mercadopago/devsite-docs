@@ -11,7 +11,7 @@
 <a name="features"></a>
 ## Features:
 
-Checkout options right for your business: 
+Checkout options right for your business:
 We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
 
 **Custom Checkout**
@@ -130,7 +130,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 2.  Set your **CLIENT_ID** and **CLIENT_SECRET**, or **PUBLIC_KEY** and **ACCESS_TOKEN** (depending on which module you're using).  
   In order to get them check the following links according to the country you are opperating in:
-  
+
   * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
   * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
   * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
@@ -157,7 +157,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
   * **Type Checkout (you're using Standard Checkout)**: Sets the type of checkout, the options are:
     *  *Iframe*: Opens an OpenCart URL with a iframe as the content.
     *  *Redirect*: Redirects to Mercado Pago URL.
-    *  *Lightbox*: Similar to Iframe option but opens a lightbox instead of an iframe. 
+    *  *Lightbox*: Similar to Iframe option but opens a lightbox instead of an iframe.
 
 <a name="notifications"></a>
 ## Notifications
@@ -168,11 +168,3 @@ Your store will automatically sync with MercadoPago. The notification URL will b
 ## Upgrade Mercado Pago Plugin ##
 
 Follow the same steps that you did to install the module. 
-
-<a name="Feedback"></a>
-## Feedback ##
-
-We want to know your opinion, please answer the following form.
-
-* [Portuguese](http://goo.gl/forms/2n5jWHaQbfEtdy0E2)
-* [Spanish](http://goo.gl/forms/A9bm8WuqTIZ89MI22)

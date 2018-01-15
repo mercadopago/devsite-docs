@@ -237,12 +237,3 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
     * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
     * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
     * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
-
-<a name="social"></a>
-##Social##
-
-Follow our facebook group and watch our videos
-<ul>
-  <li><a href="https://www.facebook.com/groups/modulos.mercadopago/?ref=ts&fref=ts" target="_blank">FACEBOOK</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLl8LGzRu2_sXxChIJm1e0xY6dU3Dj_tNi" target="_blank">YOUTUBE</a></li>
-</ul>
