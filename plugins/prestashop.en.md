@@ -87,13 +87,13 @@ This process will explain the installation of the Mercado Pago module via Packag
 
 1. Go to **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** and click in Register to Download:
 2. Before your register, you can download the module.
-![Download](../../images/prestashop-download.gif)
+![Download](/images/prestashop-download.gif)
 
 3. Now access you admin and go to Modules and Services.
-![Installation](../../images/prestashop-installation.gif)
+![Installation](/images/prestashop-installation.gif)
 
 4. Very Good! The module of Mercado Pago was successfully installed.
-![Configuration](../../images/prestashop-installation_success.png)
+![Configuration](/images/prestashop-installation_success.png)
 
 <a name="Configure-Credit-Card-and-Ticket-Standard"></a>
 ## Configure Credit Card, Ticket and Redirect: ##
@@ -118,13 +118,13 @@ This process will explain how to configure the module to accept payments with Ch
 > * Modo Produção: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
 
 3. Now you can fill the **client id** and **client secret** and click in **Login** Button:
-![Login](../../images/prestashop-credentials_1.gif)
+![Login](/images/prestashop-credentials_1.gif)
 
 4. Enable custom, fill the **access token** and **public key** and select the options for accept in your custom payment:
-![Credentials Custom](../../images/prestashop-credentials_2.gif)
+![Credentials Custom](/images/prestashop-credentials_2.gif)
 
 5. Enable standard, you need to enable the option **Settings - MercadoPago Standard**:
-![Enable Standard](../../images/prestashop-standard.gif)
+![Enable Standard](/images/prestashop-standard.gif)
 
 6. Very good! The Checkout Custom with Credit Card, Ticket and standard has been configured and enabled successfully!
 
@@ -144,7 +144,7 @@ This process will explain how to configure the module to accept Mercado Envios:
 > 	IMPORTANT: Your Mercado Pago account must be of type **Seller** and the products needs to have the correct dimensions.
 
 2. To enable the Mercado Envios, Enable the **Mercado Envios** option and click in **Save**:
-![Enable Mercado Envios](../../images/prestashop-mercadoenvios_settings.gif)
+![Enable Mercado Envios](/images/prestashop-mercadoenvios_settings.gif)
 
 3. Very good! The Mercado Envios has been configured and enable successfully!
 

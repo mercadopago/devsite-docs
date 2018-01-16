@@ -1,4 +1,4 @@
-/magento-# Magento v1.8.x a 1.9.x
+# Magento v1.8.x a 1.9.x
 
 * [Requisitos](#Requisitos)
 * [Instalación](#Instalación)
