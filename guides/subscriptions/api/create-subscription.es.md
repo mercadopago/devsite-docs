@@ -236,7 +236,7 @@ Llegada la fecha de cobro, se creará un objeto `invoice`, el cual contendra el 
 
 ## 4. Recibe información de los pagos de tus suscripciones
 
-Recibirás notificaciones ante creación o modificación de un plan, suscripción, invoice o pago.
+Recibirás notificaciones del tipo [Webhooks](/guides/notifications/webhooks.es.md) ante la generación de un pago.
 
 Mercado Pago realizará su mayor esfuerzo para lograr que tus `invoices` resulten pagos, sin requerir acción alguna de tu parte.
 
@@ -248,7 +248,21 @@ Independientemente del estado del _invoice_ actual, si la suscripción se encuen
 
 Cada pago rechazado te será notificado mediante [Webhooks](/guides/notifications/webhooks.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
-Visita la sección [Webhooks](/guides/notifications/webhooks.es.md) para más información.
+Dentro de la información del pago, en el array de `metadata`, encontrarás el `plan_id`, `subscription_id` e `invoice_id`:
+
+```json
+{
+  ...
+  "metadata": {
+    "subscription_id": "SUBSCRIPTION_ID",
+    "invoice_id": "INVOICE_ID",
+    "plan_id": "PLAN_ID"
+  },
+  ...
+}
+```
+
+Con el ID del [invoice](/es/reference/invoices/_invoices_id/get/) podrás obtener más información respecto al mismo.
 
 
 ## Añade características especiales a tu plan
