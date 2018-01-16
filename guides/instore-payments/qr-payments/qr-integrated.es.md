@@ -8,9 +8,7 @@ sites_supported:
   - global
 ---
 
-
 # Pagos con QR integrados
-
 
 Mercado Pago te permite recibir pagos de tus clientes a través de un único código QR que identifica el punto de venta.   Cuando creas una orden de venta en tu sistema de gestión, debes enviar a Mercado Pago el detalle de lo que quieres cobrar para que tu cliente pueda escanear el código QR y pagar lo que ha comprado.
 
@@ -18,7 +16,6 @@ Identificamos dos atributos importantes en la integración:
 
 * `collector_id`: Identificador de la cuenta vendedor de Mercado Pago. Valor numérico.
 * `pos_id`: Identificador del punto de venta. No puede haber valores repetidos para un mismo vendedor. Valor alfanumérico (no se aceptan caracteres especiales).
-
 
 ## Detalle de integración
 
