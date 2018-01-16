@@ -55,7 +55,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 4. Agora, é muito importante você configurar o seu **CLIENT_ID** e **CLIENT_SECRET**.
 
-  ![Installation Instructions](/images/plugins/modules/zencart/credentials.png) <br />
+  ![Installation Instructions](/images/zencart-credentials.png) <br />
 
 Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
 
@@ -70,7 +70,7 @@ Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
 
 5. Configure os status para IPN (Instant Payment Notification):
 
-  ![Installation Instructions](/images/plugins/modules/zencart/notification.png) <br />
+  ![Installation Instructions](/images/zencart-notification.png) <br />
 
   * **Choose the default status for a new order**: Define o status do pedido quando o pagamento é aprovado.
   * **Choose the status of approved orders**: Define o status do pedido quando o pagamento é aprovado.
@@ -83,11 +83,11 @@ Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
 
 6. Outras configurações: <br/>
 
-![Installation Instructions](/images/plugins/modules/zencart/other_config_1.png) <br />
+![Installation Instructions](/images/zencart-other_config_1.png) <br />
 
-![Installation Instructions](/images/plugins/modules/zencart/other_config_2.png) <br />
+![Installation Instructions](/images/zencart-other_config_2.png) <br />
 
-![Installation Instructions](/images/plugins/modules/zencart/other_config_3.png) <br />
+![Installation Instructions](/images/zencart-other_config_3.png) <br />
 
   * **Store Category**: Selecione a categoria da Loja;
   * **Redirect URL**: A URL de redirecionamento é gerado automaticamente, se você estiver testando em um localhost não funcionará corretamente. Você pode alterar o endereço para qualquer url da sua escolha, contanto que não seja localhost;
