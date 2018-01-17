@@ -1,4 +1,4 @@
-# Prestashop - Mercado Pago Module (v1.6.x to 1.7.x)
+# Prestashop 
 
 * [Requirements](#Requirements)
 * [Features](#Features)
@@ -7,77 +7,37 @@
 * [Configure Mercado Envios](#Configure-Mercado-Envios)
 * [Support](#Support)
 
+The module of Mercado Pago to Prestahop is integrated with the features and payment solutions:
+
+|                                     	| Basic Checkout 	| Custom Checkout 	|
+|-------------------------------------	|----------------	|-----------------	|
+| Payment with Credit Card            	| ✔              	| ✔               	|
+| Paid with other payment methods     	|                	| ✔               	|
+| Split payments (Two cards)          	| ✔              	| ✔               	|
+| One Click Pay (Customers and Cards) 	|                	| ✔               	|
+| Subscriptions                       	| ✔              	|                 	|
+| MercadoEnvios                       	| ✔              	|                 	|
+| Refunds of Payments                 	| ✔              	| ✔               	|
+| Order update via Cron               	|                	| ✔               	|
+| Customizable success page           	|                	| ✔               	|
+| Installments calculator             	| ✔              	| ✔               	|
+| Installments shipment calculator    	| ✔              	| ✔               	|
+
 <a name="Requirements"></a>
 ## Requirements: ##
 
-**Prestashop Version**
-* Prestashop 1.6.x - 1.7.x
-
-**Environment**
-* LAMP (Linux, Apache, MySQL, and PHP)
-* LNMP stack
-
-**Operational System**
-* Linux x 86
-* x86-64
-
-**Web Server**
-* Apache 2.x
-* Nginx 1.7.x
-
-**Hosting**
-* Can execute crontab with PHP 5
-* Can override the .htaccess file
-
-**PHP Versions**
-* PHP 5.6
-* PHP 5.5
-* PHP 5.4
-
-**MySQL Version**
-* MySQL 5.6 (Oracle or Percona)
-
-**Extension Dependencies**
-* PDO_MySQL
-* simplexml
-* mcrypt
-* hash
-* GD
-* DOM
-* iconv
-* curl
-* SOAP (for Webservices API)
-
-**Additional Settings**
-* safe_mode off
-* memory_limit maior que 256MB (512MB é o recomendado)
-
-**SSL**
-* It is a requirement that you have an SSL certificate.
-* During testing in Sandbox you will be able to run at http.
-
-
-<a name="Features"></a>
-## Features: ##
-
-The module of Mercado Pago to Prestahop is integrated with the features and payment solutions:
-
-* [Basic Checkout (Redirect)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * Split payments (Two cards)
-    * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
-
-* Custom Checkout
-    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-
-* Other features
-    * Customizable success page
-    * Installments product calculator
-    * Installments shipment calculator
-
+|                            | Detail                                                                                         |
+|----------------------------|------------------------------------------------------------------------------------------------|
+| Versions Supported         | Prestashop 1.6.x - 1.7.x                                                                       |
+| Environment                | LAMP (Linux, Apache, MySQL, and PHP) ó LNMP stack                                              |
+| Operating System           | Linux x86, Windows x86-64                                                                      |
+| Web Server                 | Apache 2.x,  Nginx 1.7.x                                                                       |
+| PHP Versions               | PHP 5.6, 5.5 y 5.4                                                                             |
+| DataBase                   | MySQL 5.6 (Oracle or Percona)                                                                  |
+| Extension Dependencies     | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
+| Additional Settings        | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
+| SSL                        | It is a requirement that you have an SSL certificate, During testing in Sandbox you will be able to run at http.|
+ 
 <a name="Installation"></a>
 ## Installation: ##
 

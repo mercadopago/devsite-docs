@@ -1,4 +1,4 @@
-# Prestashop - Mercado Pago Modulo (v1.6.x to 1.7.x)
+# Prestashop
 
 * [Requisitos](#Requirements)
 * [Funcionalidades](#Features)
@@ -7,72 +7,37 @@
 * [Configurar Mercado Envios](#Configure-Mercado-Envios)
 * [Suporte](#Support)
 
+O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades a seguir:
+
+|                                             	| Checkout Basico 	| Checkout Transparente 	|
+|---------------------------------------------	|-----------------	|-----------------------	|
+| Pagamento com Cartão de Crédito             	| ✔               	| ✔                     	|
+| Pagamento com outros meios (Boleto)         	|                 	| ✔                     	|
+| Split payments (Two cards)                  	| ✔               	| ✔                     	|
+| Pagamento com um click (Clientes e Cartões) 	|                 	| ✔                     	|
+| Assinatura (Recorrência)                    	| ✔               	|                       	|
+| MercadoEnvios                               	| ✔               	|                       	|
+| Devolução de Pagamentos                     	| ✔               	| ✔                     	|
+| Atualização do pedido através de Cron       	|                 	| ✔                     	|
+| Pagina de sucesso personalizável            	|                 	| ✔                     	|
+| Calculadora de Parcelas                     	| ✔               	| ✔                     	|
+| Calculadora de mercado envios               	| ✔               	| ✔                     	|
+
 <a name="Requirements"></a>
 ## Requisitos: ##
 
-**Prestashop Versão**
-* Prestashop 1.6.x - 1.7.x
-
-**Ambiente**
-* LAMP (Linux, Apache, MySQL, e PHP)
-* LNMP stack
-
-**Sistema Operacional**
-* Linux x 86
-* x86-64
-
-**Web Server**
-* Apache 2.x
-* Nginx 1.7.x
-
-**Versão PHP**
-* PHP 5.6
-* PHP 5.5
-* PHP 5.4
-
-**Versão MySQL**
-* MySQL 5.6 (Oracle ou Percona)
-
-**Dependências**
-* PDO_MySQL
-* simplexml
-* mcrypt
-* hash
-* GD
-* DOM
-* iconv
-* curl
-* SOAP (for Webservices API)
-
-**Configurações adicionais**
-* safe_mode off
-* memory_limit maior que 256MB (512MB é o recomendado)
-
-**SSL**
-* Isso é obrigatório para ir para produção e utilizar nosso checkout transparente.
-* Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.
-
-
-<a name="Features"></a>
-## Funcionalidades: ##
-
-O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades a seguir:
-
-* [Checkout Básico(Redirect)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * Split pagamentos (2 cartões)
-    * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [Devolução de pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
-
-* Pagamento transparente
-    * [Pagamento com cartão de crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [One Click Pay](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Outros meios de pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
-    * [Devolução de pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-
-* Outras funcionalidades
-    * Página de sucesso customizável
-    * Calculadora de parcelas
-    * Calculadora de mercado envios
+|                            | Detalle                                                                                        |
+|----------------------------|------------------------------------------------------------------------------------------------|
+| Versões Suportadas         | Prestashop 1.6.x - 1.7.x                                                                       |
+| Ambiente                   | LAMP (Linux, Apache, MySQL y PHP) ó LNMP stack                                                 |
+| Sitema Operacional         | Linux x86, Windows x86-64                                                                      |
+| Servidor Web               | Apache 2.x,  Nginx 1.7.x                                                                       |
+| Versão PHP                 | PHP 5.6, 5.5 y 5.4                                                                             |
+| Versão MySQL               | MySQL 5.6 (Oracle o Percona)                                                                   |
+| Dependências               | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
+| Configurações adicionais   | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
+| SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente, Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
+  
 
 <a name="Installation"></a>
 ## Instalação: ##

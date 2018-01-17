@@ -1,94 +1,42 @@
-# Magento v1.8.x to 1.9.x
+# Magento
 
 * [Requirements](#Requirements)
 * [Features](#Features)
 * [Installation](#Installation)
 * [Upgrade](#Upgrade)
-* Checkout Custom
-  * [Configure Credit Card and Ticket](#Configure-Credit-Card-and-Ticket)
-* Basic Checkout
-  * [Configure Checkout Redirect, Iframe, and LightBox](#Configure-Checkout-Redirect,-Iframe-and-LightBox)
-  * [Configure Mercado Envios](#Configure-Mercado-Envios)
-  * [Configure Subscriptions](#Configure-Subscriptions)
-* [Payment Notification status Settings](#Payment-Notification-status-settings)
-* [Support](#Support)
+* Checkout Custom 
+* Basic Checkout 
+* [Payment Notification status Settings](#Payment-Notification-status-settings) 
 
+The module of Mercado Pago to Magento is integrated with the features and payment solutions:
+
+|                                     	| Basic Checkout 	| Custom Checkout 	|
+|-------------------------------------	|----------------	|-----------------	|
+| Payment with Credit Card            	| ✔              	| ✔               	|
+| Paid with other payment methods     	|                	| ✔               	|
+| Split payments (Two cards)          	| ✔              	| ✔               	|
+| One Click Pay (Customers and Cards) 	|                	| ✔               	|
+| Subscriptions                       	| ✔              	|                 	|
+| MercadoEnvios                       	| ✔              	|                 	|
+| Refunds of Payments                 	| ✔              	| ✔               	|
+| Order update via Cron               	|                	| ✔               	|
+| Customizable success page           	|                	| ✔               	|
+| Installments calculator             	| ✔              	| ✔               	|
 
 <a name="Requirements"></a>
 ## Requirements:
 
-**Magento Version**
-* Community Edition 1.8.x - 1.9.x
-* Enterprise Edition 1.11.x - 1.14.x
-
-**Environment**
-* LAMP (Linux, Apache, MySQL, and PHP)
-* LNMP stack
-
-**Operational System**
-* Linux x 86
-* x86-64
-
-**Web Server**
-* Apache 2.x
-* Nginx 1.7.x
-
-**Hosting**
-* Can execute crontab with PHP 5
-* Can override the .htaccess file
-
-**PHP Versions**
-* PHP 5.6
-* PHP 5.5
-* PHP 5.4
-
-**MySQL Version**
-* MySQL 5.6 (Oracle or Percona)
-
-**Extension Dependencies**
-* PDO_MySQL
-* simplexml
-* mcrypt
-* hash
-* GD
-* DOM
-* iconv
-* curl
-* SOAP (for Webservices API)
-
-**Additional Settings**
-* safe_mode off
-* memory_limit maior que 256MB (512MB é o recomendado)
-
-**SSL**
-* It is a requirement that you have an SSL certificate.
-* During testing in Sandbox you will be able to run at http.
-
-
-<a name="Features"></a>
-## Features: ##
-
-The module of Mercado Pago to Magento is integrated with the features and payment solutions:
-
-* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * Split payments (Two cards)
-    * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
-    * [Subscriptions](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
-
-
-* Custom Checkout
-    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
-    * Split payments (Two cards)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-
-
-* Other features
-    * Order update via Cron
-    * Customizable success page
-    * Installments calculator
+|                            | Detail                                                                                         |
+|----------------------------|------------------------------------------------------------------------------------------------|
+| Versions Supported         | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x                            |
+| Environment                | LAMP (Linux, Apache, MySQL, and PHP) ó LNMP stack                                              |
+| Operating System           | Linux x86, Windows x86-64                                                                      |
+| Web Server                 | Apache 2.x,  Nginx 1.7.x                                                                       |
+| PHP Versions               | PHP 5.6, 5.5 y 5.4                                                                             |
+| DataBase                   | MySQL 5.6 (Oracle or Percona)                                                                  |
+| Extension Dependencies     | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
+| Additional Settings        | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
+| SSL                        | It is a requirement that you have an SSL certificate, During testing in Sandbox you will be able to run at http.|
 
 
 <a name="Installation"></a>
@@ -99,7 +47,7 @@ This process will explain the installation of the Mercado Pago module via Packag
 **Installation via Marketplace**
 
 1. Go to **[Magento Marketplace](https://marketplace.magento.com/)**, search for **Mercado Pago**, select the module version **M1**, add the module to the cart and complete the purchase process (you will have no cost):
-![Install](/images/magento-marketplace_1.gif)
+![Install](/images/magento-marketplace_1)
 
 2. When finalizing the process of "purchase", click in **Install** and copy the link:
 ![Install](/images/magento-marketplace_2.gif)

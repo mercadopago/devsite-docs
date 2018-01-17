@@ -1,96 +1,45 @@
-# Magento v1.8.x to 1.9.x
+# Magento
 
 * [Requisitos](#Requisitos)
 * [Funcionalidades](#Funcionalidades)
-* [Instalação](#Instalação)
-  * [Via Marketplace](#Via-Marketplace)
-  * [Via Package](#Via-Package)
+* [Instalação](#Instalação) 
 * [Atualização](#Atualização)
 * Checkout Custom (Transparente)
-  * [Configurando Cartão de Crédito e Boleto](#Config-Checkout-Custom-Cartão-Crédito-e-Boleto))
-* Checkout Básico
-  * [Configurando o Checkout Redirect, Iframe e LightBox](#Configurando-o-Checkout-Classico)
-  * [Configurando o Mercado Envios](#Configurando-o-Mercado-Envios)
-  * [Configurando o Pagamento Recorrente](#Configurando-o-Pagamento-Recorrente)
+* Checkout Básico 
 * [Configurações de status de Notificações de Pagamento](#Configurações-de-status-de-Notificações-de-Pagamento)
 * [Suporte](#Suporte)
+
+O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
+
+|                                             	| Checkout básico 	| Checkout Transparente 	|
+|---------------------------------------------	|-----------------	|-----------------------	|
+| Pagamento com Cartão de Crédito             	| ✔               	| ✔                     	|
+| Pagamento com outros meios (Boleto)         	|                 	| ✔                     	|
+| Split payments (Two cards)                  	| ✔               	| ✔                     	|
+| Pagamento com um click (Clientes e Cartões) 	|                 	| ✔                     	|
+| Assinatura (Recorrência)                    	| ✔               	|                       	|
+| MercadoEnvios                               	| ✔               	|                       	|
+| Devolução de Pagamentos                     	| ✔               	| ✔                     	|
+| Atualização do pedido através de Cron       	|                 	| ✔                     	|
+| Pagina de sucesso personalizável            	|                 	| ✔                     	|
+| Calculadora de Parcelas                     	| ✔               	| ✔                     	|
 
 <a name="Requisitos"></a>
 ## Requisitos:
 
-**Versão do Magento**
-* Community Edition 1.8.x - 1.9.x
-* Enterprise Edition 1.11.x - 1.14.x
-
-**Ambiente**
-* LAMP (Linux, Apache, MySQL, and PHP)
-* LNMP stack
-
-**Sistema Operacional**
-* Linux x 86
-* x86-64
-
-**Web Server**
-* Apache 2.x
-* Nginx 1.7.x
-
-**Hospedagem**
-* Possa executar crontab com PHP 5
-* Possa sobrescrever o arquivo .htaccess
-
-**Versões do PHP**
-* PHP 5.6
-* PHP 5.5
-* PHP 5.4
-
-**Versões do MySQL**
-* MySQL 5.6 (Oracle or Percona)
-
-**Dependências de extensões**
-* PDO_MySQL
-* simplexml
-* mcrypt
-* hash
-* GD
-* DOM
-* iconv
-* curl
-* SOAP (for Webservices API)
-
-**Configurações adicionais**
-* safe_mode off
-* memory_limit maior que 256MB (512MB é o recomendado)
-
-**SSL**
-* É um requisito que você tenha um certificado SSL.
-* Durante os testes em modo de Sandbox você poderá executar os testes em HTTP.
-
-<a name="Funcionalidades"></a>
-## Funcionalidades: ##
-
-O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
-
-* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * Pagamento com dois cartões
-    * [Mercado Envios](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/refund-cancel#refund)
-    * [Assinatura (Recorrência)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/subscriptions/)
-
-
-* Checkout Transparente
-    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods/)
-    * Pagamento com dois cartões
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/refund-cancel#refund)
-
-
-* Outras funcionalidades
-    * Atualização do pedido através de Cron
-    * Pagina de sucesso personalizável
-    * Calculadora de Parcelas
-
-
+|                            | Detalle                                                                                        |
+|----------------------------|------------------------------------------------------------------------------------------------|
+| Versões Suportadas         | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x                            |
+| Ambiente                   | LAMP (Linux, Apache, MySQL y PHP) ó LNMP stack                                                 |
+| Sitema Operacional         | Linux x86, Windows x86-64                                                                      |
+| Servidor Web               | Apache 2.x,  Nginx 1.7.x                                                                       |
+| Versão PHP                 | PHP 5.6, 5.5 y 5.4                                                                             |
+| Versão MySQL               | MySQL 5.6 (Oracle o Percona)                                                                   |
+| Dependências               | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
+| Configurações adicionais   | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
+| SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente, Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
+  
+  
 <a name="Instalação"></a>
 ## Instalação: ##
 

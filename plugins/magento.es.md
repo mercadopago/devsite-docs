@@ -1,47 +1,26 @@
-# Magento v1.8.x a 1.9.x
+# Magento
 
 * [Requisitos](#Requisitos)
 * [Instalación](#Instalación)
 * [Actualización](#Actualización)
-* Checkout Personalizado
-  * [Configuración de la Tarjeta de crédito y Tickets](#Configuración-de-la-tarjeta-de-crédito-y-tickets)
-* Checkout Básico
-  * [Configurar el Checkout Redirect, Iframe y LightBox](#Configurar-el-Checkout-Redirect,-Iframe-y-LightBox)
-  * [Configurar el Mercado Envios](#Configurar-Mercado-Envios)
-  * [Configurar Suscripciones](#Configurar-Suscripciones)
+* Checkout Personalizado 
+* Checkout Básico 
 * [Configuración de estado de las notificaciones de Pago](#Configuración-de-estado-de-las-notificaciones-de-Pago)
 
-El módulo del Mercado Pago para Magento ofrece las siguientes soluciones:
+El módulo del Mercado Pago para Magento ofrece las siguientes funcionalidades:
 
-<div class="grid grid--33">
-    <div class="card card-highlight grid__item">
-        <h3> Checkout básico (Redirect, Iframe o Modal) </h3>
-        <nav class="card-actions">
-            <a class="arrow-link"> Pagos con dos tarjetas </a>
-            <a class="arrow-link"> Mercado Envios </a>
-            <a class="arrow-link"> Devolución de Pagos </a>
-            <a class="arrow-link"> Suscripciones </a>
-        </nav>
-    </div>
-    <div class="card card-highlight grid__item">
-        <h3> Checkout Personalizado </h3>
-        <nav class="card-actions">
-            <a class="arrow-link"> Pagos con Tarjetas </a>
-            <a class="arrow-link"> Tarjetas Guardadas</a>
-            <a class="arrow-link"> Pagos con otros medios </a>
-            <a class="arrow-link"> Pagos con dos tarjetas </a>
-            <a class="arrow-link"> Devolución de Pagos </a>
-        </nav>
-    </div>  
-    <div class="card card-highlight grid__item">
-        <h3> Otras Funcionalidades </h3>
-        <nav class="card-actions">
-            <a class="arrow-link"> Atualización del pedido a través de Cron </a>
-            <a class="arrow-link"> Pagina de éxito personalizable </a>
-            <a class="arrow-link"> Calculadora de Cuotas </a>
-        </nav>
-    </div>
-</div>
+|                                	| Checkout Básico 	| Checkout Personalizado 	|
+|--------------------------------	|-----------------	|------------------------	|
+| Pagos con tarjeta              	| ✔               	| ✔                      	|
+| Pagos con otros medios         	|                 	| ✔                      	|
+| Pagos con dos tarjetas         	| ✔               	| ✔                      	|
+| Tarjetas guardadas             	|                 	| ✔                      	|
+| Suscripciones                  	| ✔               	|                        	|
+| MercadoEnvios                  	| ✔               	|                        	|
+| Devolución de Pagos            	| ✔               	| ✔                      	|
+| CRON (Actualización de Pedido) 	|                 	| ✔                      	|
+| Pagina de éxito personalizable 	|                 	| ✔                      	|
+| Calculadora de Cuotas          	| ✔               	| ✔                      	|
 
 
 <a name="Requisitos"></a>
@@ -58,7 +37,6 @@ El módulo del Mercado Pago para Magento ofrece las siguientes soluciones:
 | Dependencia de extensiones | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
 | Configuración adicionales  | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | Es un requisito que tenga un certificado SSL, Durante las pruebas en modo de Sandbox podras usar HTTP.|
-
 
 <a name="Instalación"></a>
 ## Instalación: ##
@@ -248,18 +226,3 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
     ![Configuration](/images/magento-save.png)
 
 
-
-<!-- <a name="Soporte-técnico"></a>
-## Soporte técnico: ##
-
-En el caso de que tenga alguna duda, problema o error tenemos un canal de contacto.
-Envié un email a modulos@mercadopago.com con la siguiente información:
-
-* Email de su cuenta de Mercado Pago.
-* Detalles sobre su duda, problema o error.
-* Archivos que puedan ayudar en el entendimiento (Print-Screen, Video, Archivos de logs, etc).
-* Versión del Magento.
-* Versión del módulo, si está utilizando.
-> Puede obtener la versión del módulo en la configuración del módulo. Para acceder a la configuración del módulo vaya a **System > Configuration**, haga clic en la opción **Payment Methods**, vaya a la opción **Mercado Pago - Global Configuration** en la sesión **Developer Options** usted encontrará la opción **Version Module**, conforme la imagen:
->
-> ![Developer](/images/magento-developer_option.png)
