@@ -145,16 +145,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 ![Configuration](/images/magento-config-01.gif)
 
-2. To set up the credentials go to **Mercado Pago - Classic Checkout**, click in **Configure**. you will see the field **Client id** and **Client Secret**. You can get the credentials at the link:
-
-* Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
-* Brazil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
-* Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
-* Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
+2. To set up the credentials go to **Mercado Pago - Classic Checkout**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
 
 ![Configuration](/images/magento-config-04.gif)
 
@@ -201,16 +192,7 @@ This process will explain how to configure the module to accept recurring paymen
 
 ![Configuration](/images/plugins/modules/magento/config-01.gif)
 
-2. To set up the credentials go to **Mercado Pago - Recurring Payments**, click in **Configure**. you will see the field **Client id** and **Client Secret**. You can get the credentials at the link:
-
-* Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
-* Brazil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
-* Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
-* Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
+2. To set up the credentials go to **Mercado Pago - Recurring Payments**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
 
 ![Configuration](/images/plugins/modules/magento/config-re-01.gif)
 
@@ -243,18 +225,4 @@ For each payment status you can choose an order status, as soon as your store re
 
 ![Configuration](/images/plugins/modules/magento/save.png)
 
-
-
-<a name="Support"></a>
-## Support: ##
-
-If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
-
-* Email of your account Mercado Pago.
-* Details about your question, problem or error.
-* Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
-* Version of Magento.
-* Module version, if you are using.
-> You can get the module version in the module settings. To access the module settings go to **System > Configuration**, click on the **Payment Methods**, go to the **Mercado Pago - Global Configuration** in the session **Developer Options** you will find the **Version Module**, according to the image:
->
-> ![Developer](/images/plugins/modules/magento/developer_option.png)
+ 

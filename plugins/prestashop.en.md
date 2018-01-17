@@ -84,13 +84,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 This process will explain how to configure the module to accept Mercado Envios:
 
-1. First, You need to enable Mercado Envios in your Mercado Pago account.
-
-	You can do this by accessing, according to your country, the link:
-
-	* Argentina: http://shipping.mercadopago.com.ar/optin/doOptin
-	* Brasil: http://shipping.mercadopago.com.br/optin/doOptin
-	* Mexico: http://shipping.mercadopago.com.mx/optin/doOptin
+1. First, You need to [enable Mercado Envios for your Mercado Pago account](http://shipping.mercadopago.com.ar/optin/doOptin).
 
 > 	IMPORTANT: Your Mercado Pago account must be of type **Seller** and the products needs to have the correct dimensions.
 
@@ -99,17 +93,3 @@ This process will explain how to configure the module to accept Mercado Envios:
 
 3. Very good! The Mercado Envios has been configured and enable successfully!
 
-> 	Youtube:
-https://youtu.be/rtXNkdaqUJ8
-
-
-<a name="Support"></a>
-## Support: ##
-
-If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
-
-* Email of your account Mercado Pago.
-* Details about your question, problem or error.
-* Files that can help in understanding (Print-Screen, Video, Log Files, etc.).
-* Version of Prestashop.
-* Module version, if you are using.

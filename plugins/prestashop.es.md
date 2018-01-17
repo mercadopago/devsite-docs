@@ -88,13 +88,7 @@ Este proceso debe ayudar a configurar el módulo para pagos con checkout transpa
 Los pasos siguientes mostrará cómo habilitar el Mercado de envíos.
 > IMPORTANTE: El Mercado de los Envios funciona con el Mercado Pago Redirect y los otros medios de pago serán deshabilitados.
 
-1. Primeiro, você precisa habilitar o Mercado Envios na sua conta.
-
-	En primer lugar, usted necesita habilitar el Mercado de envíos en su cuenta.
-
-	* Argentina: http://shipping.mercadopago.com.ar/optin/doOptin
-	* Brasil: http://shipping.mercadopago.com.br/optin/doOptin
-	* Mexico: http://shipping.mercadopago.com.mx/optin/doOptin
+1. En primer lugar, usted necesita [habilitar el Mercado de envíos en su cuenta](http://shipping.mercadopago.com.ar/optin/doOptin).
 
 > IMPORTANTE: Su cuenta del Mercado Pago necesita ser del tipo **Vendedor** y los productos necesitan tener las dimensiones correctas.
 
@@ -102,19 +96,9 @@ Los pasos siguientes mostrará cómo habilitar el Mercado de envíos.
 ![Habilitar Mercado Envios](/images/prestashop-mercadoenvios_settings.gif)
 
 3. Muy bien! Ahora usted puede ofrecer el Mercado Envíos como medio de transporte para sus clientes!
-
-> 	Youtube:
-https://youtu.be/rtXNkdaqUJ8
-
+ 
 <a name="Support"></a>
 ## Soporte: ##
 
 > IMPORTANTE: Mantenga su módulo actualizado, y siempre utilice la instalación vía Admin en lugar de copiar y pegar las carpetas.
-
-Si tiene alguna duda o problemas de instalación. Envíe un correo electrónico a modulos@mercadopago.com con la siguiente información:
-
-* Email de su cuenta de Mercado Pago.
-* Detalles de sus errores, envíe adjunto el archivo de registro que queda dentro de la carpeta prestashop / modulos / mercadopago / logs / mercadopago.log.
-* Evidencias puede ayudar (pantalla de error, paso a paso, vídeo, etc.).
-* Versión de Prestashop.
-* Versión del módulo que utiliza.
+ 

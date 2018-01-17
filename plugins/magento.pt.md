@@ -148,16 +148,8 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 ![Configuration](/images/magento-config-01.gif)
 
-2. Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. Você pode obter as credenciais no link:
+2. Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)  
 
-* Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
-* Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
-* Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
-* Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
 ![Configuration](/images/magento-config-04.gif)
 
@@ -181,19 +173,15 @@ Esse processo irá explicar como configurar o módulo para aceitar Mercado Envio
 > 	IMPORTANTE: A sua conta Mercado Pago tem que ser do tipo **Vendedor**.
 
 2. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Shipping Methods**:
-
 ![Configuration](/images/magento-config-me-01.gif)
 
 3. Para habilitar o Mercado Envios acesse a opção **MercadoEnvios**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Enable** marque esse campo com a opção **Yes**:
-
 ![Configuration](/images/magento-config-me-02.gif)
 
 4. Vá até a opção **Product attributes mapping** e selecione de acordo com os atributos que você possui configurado em sua loja. Aproveite e configure os métodos de envio disponível, na opção **Available shipping methods**. Clique na opção **Save Config** para salvar as configurações realizadas:
-
 ![Configuration](/images/magento-config-me-03.gif)
 
 5. Pronto! O Mercado Envios foi habilitado e configurado com sucesso!
-
 ![Configuration](/images/magento-me_save.png)
 
 
@@ -203,24 +191,12 @@ Esse processo irá explicar como configurar o módulo para aceitar Mercado Envio
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos recorrentes:
 
 1. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Payment Methods**:
-
 ![Configuration](/images/magento-config-01.gif)
 
-2. Para configurar as credenciais acesse a opção **Mercado Pago - Recurring Payments**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. Você pode obter as credenciais no link:
-
-* Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
-* Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
-* Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
-* Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
-
+2. Para configurar as credenciais acesse a opção **Mercado Pago - Recurring Payments**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)  
 ![Configuration](/images/magento-config-re-01.gif)
 
 3. Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**.
-
 ![Configuration](/images/magento-config-re-02.gif)
 
 4.  Pronto! o Pagamento Recorrente foi configurado com sucesso!
@@ -233,32 +209,15 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos re
 Esse processo irá explicar como configurar os status de pedido para as notificações de pagamento:
 
 1. Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Payment Methods**:
-
 ![Configuration](/images/magento-config-01.gif)
 
 2. Para configurar os status acesse a opção **Mercado Pago - Global Configuration**, vá até a opção **Order Status Options**.
 Para cada status de pagamento você poderá escolher um status de pedido, assim que a sua loja receber a notificação de pagamento o módulo atualizará automaticamente o pedido para o status escolhido. Para salvar as configurações clique no botão **Save Config**.
-
 ![Configuration](/images/magento-config-06.gif)
 
 > O módulo está preparado para receber as notificações de pagamento de forma automática, ou seja, sem a necessidade de configurar a sua conta Mercado Pago ou o módulo.
 
 3. Pronto! os status de notificação foram configurados com sucesso
-
 ![Configuration](/images/magento-save.png)
 
-
-<a name="Suporte"></a>
-## Suporte: ##
-
-Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento.
-Envie um email para modulos@mercadopago.com com as seguintes informações:
-
-* Email da sua conta Mercado Pago.
-* Detalhes sobre a sua duvida, problema ou erro.
-* Arquivos que possa ajudar no entendimento (Print-Screen, Video, Arquivos de Log, etc).
-* Versão do Magento.
-* Versão do Modulo, caso esteja utilizando.
-> Você pode obter a versão do modulo nas configurações do modulo. Para acessar as configurações do módulo vá até **System > Configuration**, clique na opção **Payment Methods**, vá até a opção **Mercado Pago - Global Configuration** na sessão **Developer Options** você encontrará a opção **Version Module**, conforme a imagem:
->
-> ![Developer](/images/magento-developer_option.png)
+ 
