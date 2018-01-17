@@ -65,16 +65,7 @@ Este proceso debe ayudar a configurar el módulo para pagos con checkout transpa
 
 1. Después de la instalación del módulo, se dirige hacia  **Mercado Pago > Configurar**, ahora usted necesita obeter sus credenciales.
 
-2. Para obtener sus credenciales usted debe ir **Mercado Pago - Custom Checkout**, debe ver los campos **Public Key** e **Access Token**. Acceda al enlace de su país:
-
-* Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-* Brasil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-* Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
-* Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
+2. Para obtener sus credenciales usted debe ir **Mercado Pago - Custom Checkout**, debe ver los campos **Public Key** e **Access Token**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
 > Hay dos tipos de credenciales:
 > * Modo Sandbox: Esta credencial se utiliza para pruebas.
