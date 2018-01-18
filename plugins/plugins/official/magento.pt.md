@@ -219,5 +219,3 @@ Para cada status de pagamento você poderá escolher um status de pedido, assim 
 
 3. Pronto! os status de notificação foram configurados com sucesso
 ![Configuration](/images/magento-save.png)
-
- 
