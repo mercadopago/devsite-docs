@@ -1,18 +1,10 @@
-![Mercado Pago](/images/wp-ecommerce-mplogo.png)
+# WP-eCommerce
 
-# Mercado Pago integration module for WP-eCommerce
 * [System Requirements](#system-requirements)
 * [Features](#features)
-* [Installation](#installation)
-* Custom Checkout
-  * [Configuring Credit Card](#configuring-credit-card)
-  * [Configuring Tickets](#configuring-tickets)
-* Basic Checkout
-  * [Configuring Checkout by Redirect, Iframe, or LightBox](#configuring-checkout-by-redirect-iframe-or-lightbox)
+* [Installation](#installation) 
 * [Instant Payment Notification Settings](#instant-payment-notification-settings)
-* [Upgrade](#upgrade)
-* [Technical Support](#technical-support)
-* [How to Contribute](#how-to-contribute)
+* [Upgrade](#upgrade) 
 
 # System Requirements
 ### Platform Version

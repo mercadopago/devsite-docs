@@ -1,80 +1,45 @@
-![Mercado Pago](/images/woocommerce-mplogo.png)
+# WooCommerce
 
-# Mercado Pago integration module for WooCommerce
 * [System Requirements](#system-requirements)
 * [Features](#features)
 * [Installation](#installation)
 * [General Mercado Pago Settings](#general-mercado-pago-settings)
-* Custom Checkout
-  * [Configuring Credit Card](#configuring-credit-card)
-  * [Configuring Tickets](#configuring-tickets)
-* Basic Checkout
-  * [Configuring Checkout by Redirect, Iframe, or LightBox](#configuring-checkout-by-redirect-iframe-or-lightbox)
-  * [Configuring Mercado Envios](#configuring-mercado-envios)
-  * [Configuring Subscriptions](#configuring-subscriptions)
 * [Instant Payment Notification Settings](#instant-payment-notification-settings)
-* [Upgrade](#upgrade)
-* [Technical Support](#technical-support)
-* [How to Contribute](#how-to-contribute)
+* [Upgrade](#upgrade) 
 
-# System Requirements
-### Platform Version
-* <a href="https://wordpress.org/download/">WordPress</a> 3.1.x - 4.7.x
-* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a> 2.6.x - 3.1.x
 
-### Environment
-* LAMP (Linux, Apache, MySQL, and PHP)
 
-### Operational System
-* Linux x86
-* x86-64
-
-### Web Server
-* <a href="https://httpd.apache.org/">Apache 2.x</a>
-
-### Hosting
-* Can override the .htaccess file
-
-### PHP Versions
-* <a href="http://php.net/">PHP</a> 5.6 or greater, with CURL support
-
-### MySQL Version
-* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.0 or greater
-
-### Extension Dependencies
-* WooCommerce
-
-### Additional Settings
-* safe_mode off
-* memory_limit greater than 256MB (512MB is the recommended)
-
-### SSL
-* For Credit Cards and Tickets, it is a requirement that you have a SSL certificate.
-
-# Features
+## Features
 The module of Mercado Pago for WooCommerce is integrated with the following features and payment solutions:
 
-### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout](/images/woocommerce-basic_checkout_payment.png)
-* [Refunds/Cancel of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
-* Split Payments (Two Cards)
-* [Subscriptions](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
-* [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+|                                                    	| Checkout Basico 	| Checkout Transparente 	|
+|----------------------------------------------------	|-----------------	|-----------------------	|
+| Payment with Credit Card                           	| ✔               	| ✔                     	|
+| Mercado Pago Pre-Builded Interfaces                	| ✔               	|                       	|
+| Refunds/Cancel of Payments                         	|                 	|                       	|
+| Split Payments (Two Cards)                         	| ✔               	| ✔                     	|
+| One Click Pay (Customer Cards)                     	|                 	| ✔                     	|
+| MercadoEnvios                                      	| ✔               	|                       	|
+| Other Payment Methods, Such as Tickets             	|                 	| ✔                     	|
+| Credentials and platform status checkings          	| ✔               	| ✔                     	|
+| Customizable success page                          	|                 	| ✔                     	|
+| Installments calculator                            	| ✔               	| ✔                     	|
+| Currency conversion                                	|                 	| ✔                     	|
+| Instant payment notification and webhooks          	| ✔               	| ✔                     	|
+| Discounts by payment method or Mercado Pago coupon 	| ✔               	|                       	|
+| Log and debug tools                                	| ✔               	| ✔                     	|
 
-### Custom Checkout
-* [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/woocommerce-custom_checkout_form.png)
-* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/woocommerce-oneclick_form.png)
-* [Refunds/Cancel of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/woocommerce-ticket.png)
+## System Requirements
 
-### Other Features
-* Credentials and platform status checkings
-* Customizable success page
-* Installments calculator
-* Currency conversion
-* Instant payment notification and webhooks
-* Discounts by payment method or Mercado Pago coupon
-* Log and debug tools
+|                            | Detail                                             |
+| -------------------------- | -------------------------------------------------- |
+| Platform version supported | WordPress 3.1.x - 4.7.x, WooCommerce 2.6.x - 3.1.x |
+| Environment                | LAMP (Linux, Apache, MySQL, e PHP                  |
+| Web Server                 | Linux x86, x86-64                                  |
+| PHP Version                | 5.6 or major with Curl support                     |
+| DataBase                   | MySql 5.6 o superior, MariaDB 10.0 o superior      |
+| Additional Configuration   | safe_mode off, memory_limit mayor que 256 MB       |
+| SSL                        | SSL is required to use credit card                 |
 
 # Installation
 If you have already the module installed, please follow the [Upgrade Instructions](#Upgrade) first.
@@ -202,10 +167,7 @@ How the payment option behaves.
 This page will explain how to configure the module to accept Mercado Envios.
 
 ### Enable Your Mercado Envios
-To use Mercado Envios, you need to enable it in your Mercado Pago account. You can do it, accordingly to your country, in the following links:
-  * *Argentina*: http://shipping.mercadopago.com.ar/optin/doOptin
-  * *Brazil*: http://shipping.mercadopago.com.br/optin/doOptin
-  * *Mexico*: http://shipping.mercadopago.com.mx/optin/doOptin
+To use Mercado Envios, [you need to enable it in your Mercado Pago account.](http://shipping.mercadopago.com.ar/optin/doOptin).
 
 ### Create the Shipping Zone and Shipping Methods
 To use Mercado Envios, you need it to be configured as a shipping method in WooCommerce. Just follow bellow steps:
@@ -306,62 +268,3 @@ To confirm that your module is really updated, you can see in *Plugins* item in 
 
 > HINT: Always remember to make a backup of your system and data before making any changes.
 
-# Technical Support
-If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
-
-* Email of your account Mercado Pago;
-* Details about your question, problem or error;
-* Files that can help in understanding (Print-Screen, Video, Log Files, etc.);
-* Version of WooCommerce;
-* Module version, if you are using.
-
-> HINT: You can get the module version in the plugin list of your WordPress administration page:
->
-> ![Developer](/images/woocommerce-plugins_menu.png)
-
-# How to Contribute
-Here are some tips to help with the development and maintenance of this project.
-
-## Cloning for development:
-
-Go to `wp-content/plugins` under your development WordPress installation and clone this repository using the follow command:
-
-```bash
-git clone git@github.com:mercadopago/cart-woocommerce.git woocommerce-mercadopago
-```
-
-## Updating the Wiki
-
-### Cloning
-
-```bash
-git clone git@github.com:mercadopago/cart-woocommerce.wiki.git
-```
-
-### Directory tree and files
-
-```
-├── English
-├── _Footer.md
-├── Home.md
-├── images
-├── Portugues
-└── Espanol
-
-```
-
-The directories `English`, `Portugues`, and `Espanol` contains specific documentation for each language.
-
-It's possible generate new files into each directory in the follow way:
-
-```
-touch English/New-Wiki-Page.md
-```
-
-This will generate a wiki page with the name of `New Wiki Page`.
-
-For images we should use the `images` directory and use the follow syntax to link each image into the content:
-
-```
-[[/images/image-name.png|Alt text]]
-```

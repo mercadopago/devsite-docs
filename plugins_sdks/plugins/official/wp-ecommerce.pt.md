@@ -1,18 +1,10 @@
-![Mercado Pago](/images/wp-ecommerce-mplogo.png)
+# WP-eCommerce
 
-# Módulo de integração do Mercado Pago para WP-eCommerce
 * [Requisitos de Sistema](#requisitos-de-sistema)
 * [Funcionalidades](#funcionalidades)
-* [Instalação](#instalação)
-* Checkout Transparente
-  * [Configurando o Cartão de Crédito](#configurando-o-cartão-de-crédito)
-  * [Configurando os Boletos](#configurando-os-boletos)
-* Checkout Básico
-  * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#configurando-o-checkout-por-redirect-iframe-ou-lightbox)
+* [Instalação](#instalação) 
 * [Configurações das Notificações Instantâneas de Pagamento](#configurações-das-notificações-instantâneas-de-pagamento)
-* [Atualização](#atualização)
-* [Suporte Técnico](#suporte-técnico)
-* [Como Contribuir](#como-contribuir)
+* [Atualização](#atualização) 
 
 # Requisitos de Sistema
 ### Versões de Plataforma

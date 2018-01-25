@@ -1,80 +1,45 @@
-![Mercado Pago](/images/woocommerce-mplogo.png)
+# WooCommerce
 
-# Módulo de integração do Mercado Pago para WooCommerce
 * [Requisitos de Sistema](#requisitos-de-sistema)
 * [Funcionalidades](#funcionalidades)
 * [Instalação](#instala%C3%A7%C3%A3o)
 * [Configurações Gerais do Mercado Pago](#configurações-gerais-do-mercado-pago)
-* Checkout Transparente
-  * [Configurando o Cartão de Crédito](#configurando-o-cartão-de-crédito)
-  * [Configurando os Boletos](#configurando-os-boletos)
-* Checkout Básico
-  * [Configurando o Checkout por Redirect, Iframe, ou LightBox](#configurando-o-checkout-por-redirect-iframe-ou-lightbox)
-  * [Configurando o Mercado Envios](#configurando-o-mercado-envios)
-  * [Configurando as Assinaturas](#configurando-as-assinaturas)
 * [Configurações das Notificações Instantâneas de Pagamento](#configurações-das-notificações-instantâneas-de-pagamento)
-* [Atualização](#atualização)
-* [Suporte Técnico](#suporte-técnico)
-* [Como Contribuir](#como-contribuir)
+* [Atualização](#atualização) 
 
-# Requisitos de Sistema
-### Versões de Plataforma
-* <a href="https://wordpress.org/download/">WordPress</a> 3.1.x - 4.7.x
-* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a> 2.6.x - 3.1.x
 
-### Ambiente
-* LAMP (Linux, Apache, MySQL, e PHP)
-
-### Sistema Operacional
-* Linux x86
-* x86-64
-
-### Servidor Web
-* <a href="https://httpd.apache.org/">Apache 2.x</a>
-
-### Hospedagem
-* Deve poder sobrescrever o arquivo .htaccess
-
-### Versões PHP
-* <a href="http://php.net/">PHP</a> 5.6 ou maior, com suporte a cURL
-
-### Versões MySQL
-* <a href="http://www.mysql.com/">MySQL</a> versão 5.6 ou maior OU <a href="https://mariadb.org/">MariaDB</a> versão 10.0 ou maior
-
-### Dependência de Extensões
-* WooCommerce
-
-### Configurações Adicionais
-* safe_mode off
-* memory_limit maior que 256MB (512MB é o recomendado)
-
-### SSL
-* Certificação SSL é um pré-requisito para cartões de crédito e boletos (Checkout Transparente).
-
-# Funcionalidades
+## Funcionalidades
 O módulo do Mercado Pago para WooCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
-### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](/images/woocommerce-basic_checkout_payment.png)
-* [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
-* Divisão de Pagamento (Dois Cartões)
-* [Assinaturas](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/subscriptions/)
-* [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+|                                                          	| Checkout Basico 	| Checkout Transparente 	|
+|----------------------------------------------------------	|-----------------	|-----------------------	|
+| Pagamento com Cartão de Crédito                          	| ✔               	| ✔                     	|
+| Interfaces pré-construídas do Mercado Pago               	| ✔               	|                       	|
+| Devolução/Cancelamento de Pagamentos                     	|                 	|                       	|
+| Divisão de Pagamento (Dois Cartões)                      	| ✔               	| ✔                     	|
+| Pagamento com um click (Clientes e Cartões)              	|                 	| ✔                     	|
+| MercadoEnvios                                            	| ✔               	|                       	|
+| Outros Meios de Pagamento, como os Boletos               	|                 	| ✔                     	|
+| Checagens de credenciais e status de plataforma          	| ✔               	| ✔                     	|
+| Pagina de sucesso personalizável                         	|                 	| ✔                     	|
+| Calculadora de Parcelas                                  	| ✔               	| ✔                     	|
+| Conversão de moedas                                      	|                 	| ✔                     	|
+| Notificação instantânea de pagamentos e webhooks         	| ✔               	| ✔                     	|
+| Descontos por meio de pagamento ou cupom do Mercado Pago 	| ✔               	|                       	|
+| Log e ferramentas de debug                               	| ✔               	| ✔                     	|
 
-### Checkout Transparente
-* [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/woocommerce-custom_checkout_form.png)
-* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/woocommerce-oneclick_form.png)
-* [Devolução/Cancelamento de Pagamentos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
-* [Outros Meios de Pagamento, como os Boletos](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/woocommerce-ticket.png)
 
-### Outras Funcionalidades
-* Checagens de credenciais e status de plataforma
-* Página de sucesso customizável
-* Calculadora de parcelas
-* Conversão de moedas
-* Notificação instantânea de pagamentos e webhooks
-* Descontos por meio de pagamento ou cupom do Mercado Pago
-* Log e ferramentas de debug
+## Requisitos de Sistema
+
+|                          | Detalhe                                                               |
+| ------------------------ | --------------------------------------------------------------------- |
+| Versões de Plataforma    | WordPress 3.1.x - 4.7.x, WooCommerce 2.6.x - 3.1.x                    |
+| Ambiente                 | LAMP (Linux, Apache, MySQL, e PHP                                     |
+| OS                       | Linux x86, x86-64                                                     |
+| Versões PHP              | 5.6 or major com suporte a cURL                                       |
+| Versões MySQL            | 5.6 ou maior, MariaDB 10.0 ou maior                                   |
+| Configurações Adicionais | safe_mode off, memory_limit maior que 256MB (512MB é o recomendado)   |
+| SSL                      | SSL is required to use credit card                                    |
 
 # Instalação
 Se você já tiver este módulo instalado, por favor, siga as [Instruções de Atualização](#atualização) antes.
@@ -202,10 +167,7 @@ Como a opção de pagamento se comporta.
 Esta página irá explicar como configurar o módulo para aceitar o Mercado Envios.
 
 ### Habilite Seu Mercado Envios
-Para usar o Mercado Envios, você precisa habilitá-lo em sua conta do Mercado Pago. Você pode fazê-lo, de acordo com seu país, nos seguintes links:
-  * *Argentina*: http://shipping.mercadopago.com.ar/optin/doOptin
-  * *Brazil*: http://shipping.mercadopago.com.br/optin/doOptin
-  * *Mexico*: http://shipping.mercadopago.com.mx/optin/doOptin
+Para usar o Mercado Envios, [você precisa habilitá-lo em sua conta do Mercado Pago.](http://shipping.mercadopago.com.ar/optin/doOptin)
 
 ### Crie a Zona de Envio e os Métodos de Envío
 Para usar o Mercado Envios, você precisa que ele seja configurado como método de envio do WooCommerce. Basta seguir as seguintes etapas:
@@ -306,63 +268,3 @@ Para confirmar que seu módulo está realmente atualizado, você pode ver no ite
 
 > DICA: Lembre-se sempre de fazer um backup dos seus dados e de seu sistema antes de fazer qualquer alteração.
 
-
-# Suporte Técnico
-Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um email para modulos@mercadopago.com com as seguintes informações:
-
-* Email da sua conta Mercado Pago;
-* Detalhes sobre sua pergunta, problema ou erro;
-* Arquivos que podem ajudar na compreensão (Print-Screen, Video, Arquivos de Log, etc.);
-* Versão do WooCommerce;
-* Versão do módulo, se você estiver usando.
-
-> DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
->
-> ![Developer](/images/woocommerce-plugins_menu.png)
-
-# Como Contribuir
-Aqui estão algumas dicas para ajudar no desenvolvimento e manutenção desse projeto.
-
-## Clonando para desenvolvimento:
-
-Vá para `wp-content/plugins` na sua instalação de desenvolvimento do WordPress e clone este repositório usando o seguinte comando:
-
-```bash
-git clone git@github.com:mercadopago/cart-woocommerce.git woocommerce-mercadopago
-```
-
-## Atualizando a Wiki
-
-### Clonando
-
-```bash
-git clone git@github.com:mercadopago/cart-woocommerce.wiki.git
-```
-
-### Árvore de diretórios e arquivos
-
-```
-├── English
-├── _Footer.md
-├── Home.md
-├── images
-├── Portugues
-└── Espanol
-
-```
-
-Os diretórios `English`, `Portugues`, e `Espanol` contém documentações específicas para cada linguagem.
-
-É possível gerar novos arquivos em cada diretório da seguinte maneira:
-
-```
-touch Portugues/Nova-Pagina-Wiki.md
-```
-
-Isto irá criar uma nova página wiki com o nome `Nova Pagina Wiki`.
-
-Para as imagens, devemos usar o diretório `images` e usar a seguinte sintaxe para ligar cada imagem ao conteúdo:
-
-```
-[[/images/image-name.png|Alt text]]
-```
