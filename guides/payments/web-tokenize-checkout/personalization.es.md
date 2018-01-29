@@ -14,11 +14,13 @@
 
 ### Texto
 
-Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del botón agregando el atributo `"data-button-label"` al snippet de código del punto 1. Por ejemplo:
+Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del botón agregando el atributo `"data-button-label"` al fragmento de código javascript. Por ejemplo:
 
 ```html
 data-button-label="Comprar"
 ```
+
+![Payment button - Modified label](/images/paybutton-modified-label.png)
 
 ### Estilo
 

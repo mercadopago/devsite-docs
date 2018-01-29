@@ -20,17 +20,9 @@ Los datos sensibles de las tarjetas de crédito y débito son cifrados y almacen
 
 ---
 
-## Consideraciones importantes
-
-Para garantizar la mejor experiencia y seguridad para tus compradores te recomendamos tomar en cuenta:
-
-## Navegación
-
-Evita el uso del hash `#` en la URL de tu sitio web que contiene el *Web Tokenize Checkout* ya que **Mercado Pago** utiliza una técnica para permitir una navegación transparente entre el checkout y tu sitio y esto puede llegar a interferir en la experiencia.
-
 ## Soporte de Navegadores
 
-Para garantizar una navegación segura y cumplir con las normativas PCI, el *Web Tokenize Checkout* no brinda una experiencia de pago en los navegadores que no soporten el protocolo TLS 1.0 o mayor.
+Para garantizar una navegación segura y cumplir con las normativas PCI, el *Web Tokenize Checkout* no brinda una experiencia de pago en los navegadores que no soporten el protocolo TLS 1.1 o mayor.
 
 En el caso de que el comprador tenga un navegador no soportado, se le indicará que no podrá realizar la compra hasta que lo actualice.
 
@@ -40,7 +32,7 @@ Navegador | Soporte
 --------- | --------
 **Chrome** | Completo
 **Firefox** | Completo
-**Internet Explorer** | 7,8,9,11
+**Internet Explorer** | 11
 **Edge** | Completo
 **Safari** | Completo
 **Opera** | Completo
@@ -66,9 +58,9 @@ Establece el viewport agregando el siguiente código dentro de la etiqueta `<hea
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 ```
 
-### Paso 2: Incluír el snippet
+### Paso 2: Incorporar el código javascript
 
-Este *snippet* insertará un botón de pago. Cuando el comprador presione el botón se levantará el checkout. Incluye el siguiente código en el lugar donde va a estar ubicado el botón dentro de tu sitio web:
+Este _fragmento de código javascript_ insertará un botón de pago. Cuando el comprador presione el botón se mostrará el checkout. Incluye el siguiente código en el lugar donde va a estar ubicado el botón dentro de tu sitio web:
 
 ```html
 <form action="/procesar-pago" method="POST">
@@ -88,7 +80,7 @@ Este *snippet* insertará un botón de pago. Cuando el comprador presione el bot
 
 ### Paso 3: Obtener los datos
 
-El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del snippet (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
+El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del fragmento de código javascript (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
 
 #### Los datos son:
 
