@@ -24,7 +24,7 @@ Los datos sensibles de las tarjetas de crédito y débito son cifrados y almacen
 
 Para garantizar la mejor experiencia y seguridad para tus compradores te recomendamos tomar en cuenta:
 
-### Navegación
+## Navegación
 
 Evita el uso del hash `#` en la URL de tu sitio web que contiene el *Web Tokenize Checkout* ya que **Mercado Pago** utiliza una técnica para permitir una navegación transparente entre el checkout y tu sitio y esto puede llegar a interferir en la experiencia (ver punto 4.3).
 
@@ -45,7 +45,7 @@ Navegador | Soporte
 **Safari** | Completo
 **Opera** | Completo
 
-## Mobile web
+### Mobile web
 
 **Chrome** | Completo
 **Firefox** | Completo
