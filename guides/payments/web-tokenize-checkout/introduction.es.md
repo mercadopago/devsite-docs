@@ -73,7 +73,7 @@ Este *snippet* insertará un botón de pago. Cuando el comprador presione el bot
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-  src="https://beta.mercadopago.com.ar/integrations/v1/checkout.js"
+  src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
   data-public-key="ENV_PUBLIC_KEY"
   data-transaction-amount="100.00">
   </script>
