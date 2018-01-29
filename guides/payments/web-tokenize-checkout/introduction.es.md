@@ -26,7 +26,7 @@ Para garantizar la mejor experiencia y seguridad para tus compradores te recomen
 
 ## Navegación
 
-Evita el uso del hash `#` en la URL de tu sitio web que contiene el *Web Tokenize Checkout* ya que **Mercado Pago** utiliza una técnica para permitir una navegación transparente entre el checkout y tu sitio y esto puede llegar a interferir en la experiencia (ver punto 4.3).
+Evita el uso del hash `#` en la URL de tu sitio web que contiene el *Web Tokenize Checkout* ya que **Mercado Pago** utiliza una técnica para permitir una navegación transparente entre el checkout y tu sitio y esto puede llegar a interferir en la experiencia.
 
 ## Soporte de Navegadores
 
@@ -47,6 +47,8 @@ Navegador | Soporte
 
 ### Mobile web
 
+Navegador | Soporte
+--------- | --------
 **Chrome** | Completo
 **Firefox** | Completo
 **Windows Phone (Internet Explorer Mobile)** | _No_
