@@ -60,7 +60,7 @@ Navegador | Soporte
 
 ### Paso 1: Incorporar el viewport
 
-Establece el viewport agregando el siguiente código dentro de la etiqueta `&lt;head&gt;` de tu sitio web:
+Establece el viewport agregando el siguiente código dentro de la etiqueta `<head>` de tu sitio web:
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
