@@ -10,7 +10,7 @@
 >
 > ¿Qué es tokenizar?
 >
-> La tokenización es el proceso seguro por el cual se cifra de forma un número de tarjeta de crédito
+> La tokenización es el proceso por el cual se cifra de forma segura un número de tarjeta de crédito
 
 Con el *Web Tokenize Checkout* de **Mercado Pago** olvídate de la complejidad del armado de tu formulario para la selección de los medios de pago y la tokenización. Esta integración simple te proporciona un formulario con el diseño y el front-end listo.
 
