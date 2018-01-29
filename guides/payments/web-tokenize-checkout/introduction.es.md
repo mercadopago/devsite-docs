@@ -1,13 +1,14 @@
 ---
   sites_supported:
       - mla
+      - mco
 ---
 
 # Web Tokenize Checkout
 
-> NOTE
+> INFO
 >
-> Nota
+> ¿Qué es tokenizar?
 >
 > La tokenización es el proceso seguro por el cual se cifra de forma un número de tarjeta de crédito
 
@@ -33,8 +34,25 @@ Para garantizar una navegación segura y cumplir con las normativas PCI, el *Web
 
 En el caso de que el comprador tenga un navegador no soportado, se le indicará que no podrá realizar la compra hasta que lo actualice.
 
-* **Soporte Desktop:** Chrome, Firefox, Internet Explorer (7/8/9/11), Edge, Safari y Opera. 
-* **Soporte Web Mobile:** Chrome, Firefox, Safari Mobile, Opera Mini
+### Desktop web
+
+Navegador | Soporte
+--------- | --------
+**Chrome** | Completo
+**Firefox** | Completo
+**Internet Explorer** | 7,8,9,11
+**Edge** | Completo
+**Safari** | Completo
+**Opera** | Completo
+
+## Mobile web
+
+**Chrome** | Completo
+**Firefox** | Completo
+**Windows Phone (Internet Explorer Mobile)** | _No_
+**Safari Mobile** | Completo
+**Opera Mini** | _Básico_
+**Android Browser** | _No_
 
 ## Integración
 
@@ -79,11 +97,7 @@ Dato | Descripción
 **installments** | Cantidad de cuotas elegidas por el comprador
 **issuer_id** | ID del emisor de la tarjeta del comprador
 
-> NOTE
->
-> Nota
->
-> No recibirás ni el **transaction_amount** ni el **payer.email** por cuestiones de seguridad.
+_No recibirás ni el **transaction_amount** ni el **payer.email** por cuestiones de seguridad._
 
 [[[
 ```php
@@ -260,55 +274,8 @@ Respuesta:
 }
 ```
 
-## Personalización (opcional)
-
-### Estado por defecto
-
-![Payment button](/images/paybutton.png)
-
-### Texto
-
-Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del botón agregando el atributo `"data-button-label"` al snippet de código del punto 1. Por ejemplo:
-
-```html
-data-button-label="Comprar"
-```
-
-### Estilo
-
-Para utilizar tu propio estilo incluye el siguiente código CSS:
-
-```css
-button.mercadopago-button {
-  /* Tus atributos CSS */
-}
-```
-
-*Por ejemplo:*
-
-```css
-button.mercadopago-button {
-  background-color: #fff;
-  color: #111;
-  border: 1px solid #111;
-  border-radius: 0;
-}
-```
-
-![Payment button - Modified CSS](/images/paybutton-modified-css.png)
-
 ## Recomendaciones adicionales
 
 ### Promociones
 
 Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners).
-
-### Recuperos
-
-En el caso de que un pago fuese rechazado puedes ofrecerle al comprador la opción de volver a hacer el pago. Para eso existe una forma de redirigir al usuario e invocar al *Web Tokenize Checkout* con el formulario ya abierto.
-
-Para hacer esto incluye un link con la URL de tu página de checkout, incluyendo "#checkout" al final.
-
-### Por ejemplo:
-
-Si `https://tusitio.com/carrito` es donde has incluido el checkout de **Mercado Pago**, entonces `https://tusitio.com/carrito#checkout` será la misma página con el modal de pago abierto por defecto.

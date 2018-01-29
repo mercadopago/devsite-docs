@@ -1,0 +1,44 @@
+---
+  sites_supported:
+      - mla
+      - mco
+---
+
+# Web Tokenize Checkout - Personalización
+
+## Estado por defecto
+
+![Payment button](/images/paybutton.png)
+
+## Personalización
+
+### Texto
+
+Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del botón agregando el atributo `"data-button-label"` al snippet de código del punto 1. Por ejemplo:
+
+```html
+data-button-label="Comprar"
+```
+
+### Estilo
+
+Para utilizar tu propio estilo incluye el siguiente código CSS:
+
+```css
+button.mercadopago-button {
+  /* Tus atributos CSS */
+}
+```
+
+*Por ejemplo:*
+
+```css
+button.mercadopago-button {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #111;
+  border-radius: 0;
+}
+```
+
+![Payment button - Modified CSS](/images/paybutton-modified-css.png)
