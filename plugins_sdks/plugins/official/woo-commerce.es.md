@@ -5,7 +5,7 @@
 * [Instalación](#instalación)
 * [Configuraciones Generales de Mercado Pago](#configuraciones-generales-de-mercado-pago)
 * [Configuraciones de las Notificaciones Instantáneas de Pago](#configuraciones-de-las-notificaciones-instantáneas-de-pago)
-* [Actualización](#actualización) 
+* [Actualización](#actualización)
 
 
 
@@ -19,7 +19,7 @@ El módulo de Mercado Pago para WooCommerce está integrado con las siguientes c
 | Reembolsos/Cancelaciones de Pagos                         	|                 	|                       	|
 | Pagos Divididos (Dos Tarjetas)                            	| ✔               	| ✔                     	|
 |  Pago con Un Clic (Clientes y Tarjetas)                   	|                 	| ✔                     	|
-| MercadoEnvios                                             	| ✔               	|                       	|
+| Mercado Envíos                                             	| ✔               	|                       	|
 | Otros Medios de Pago                                      	|                 	| ✔                     	|
 | Verificaciones de credenciales y estado de la plataforma. 	| ✔               	| ✔                     	|
 | Página de éxito personalizable.                           	|                 	| ✔                     	|
@@ -30,7 +30,7 @@ El módulo de Mercado Pago para WooCommerce está integrado con las siguientes c
 | Herramientas de registro y depuración.                    	| ✔               	| ✔                     	|
 
 ## Requisitos del Sistema
- 
+
 
 |                             	| Detalle                                                                  	|
 |-----------------------------	|--------------------------------------------------------------------------	|
@@ -166,24 +166,24 @@ Cómo se comporta la opción de pago.
   * *Descuento por Gateway*: Ofrece un descuento porcentual para sus clientes si utilizan Checkout Básico como medio de pago;
   * *Modo de Dos Tarjetas*: Permite que sus clientes paguen con dos tarjetas diferentes.
 
-# Configurando el Mercado Envios
-En esta página se explica cómo configurar el módulo para aceptar Mercado Envios.
+# Configurando Mercado Envíos
+En esta página se explica cómo configurar el módulo para aceptar Mercado Envíos.
 
-### Habilite su Mercado Envios
-Para utilizar Mercado Envios, [debe habilitarlo en su cuenta de Mercado Pago.](http://shipping.mercadopago.com.ar/optin/doOptin).
+### Habilite Mercado Envíos
+Para utilizar Mercado Envíos, [debe habilitarlo en su cuenta de Mercado Pago.](http://shipping.mercadopago.com.ar/optin/doOptin).
 
-### Cree la Zona de Envío y los Medios de Envío
-Para usar Mercado Envios, necesita que lo configure como un medio de envío en WooCommerce. Sólo tienes que seguir los siguientes pasos:
+### Cree la zona y los medios de envío
+Para usar Mercado Envíos, necesita que lo configure como un medio de envío en WooCommerce. Sólo tienes que seguir los siguientes pasos:
 
 1. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Envío*. En *Zona de Envío*, haga clic en *Agregar zona de envío*. Introduzca el nombre de la zona, seleccione las regiones dentro de esta zona y haga clic en *Guardar cambios*.<br>![Mercado Envios 0](/images/woocommerce-me_0.png)
 2. Haga clic en *ver* de la zona creada.<br>![Mercado Envios 1](/images/woocommerce-me_1.png)
-3. Haga clic en *Agregar medio de envío* y seleccione *Mercado Envios - Normal* o *Mercado Envios - Express*. Este proceso tiene que ser repetido dos veces, hasta que normal y expreso sean configurados.<br>![Mercado Envios 2](/images/woocommerce-me_2.png)
+3. Haga clic en *Agregar medio de envío* y seleccione *Mercado Envíos - Normal* o *Mercado Envíos - Express*. Este proceso tiene que ser repetido dos veces, hasta que normal y expreso sean configurados.<br>![Mercado Envios 2](/images/woocommerce-me_2.png)
 4. Ahora usted puede también fijar la opción *Envío Gratis* y/o mostrar el *Tiempo de Entrega* estimado en el cálculo del envío.<br>![Mercado Envios 3](/images/woocommerce-me_3.png)
-5. Mercado Envios está listo para su uso, pero no olvide habilitar *Checkout Básico* para el correcto funcionamiento de *Mercado Envios* e informar las dimensiones de sus productos.<br>![Mercado Envios 4](/images/woocommerce-me_4.png)
+5. Mercado Envíos está listo para su uso, pero no olvide habilitar *Checkout Básico* para el correcto funcionamiento de *Mercado Envíos* e informar las dimensiones de sus productos.<br>![Mercado Envios 4](/images/woocommerce-me_4.png)
 
 > IMPORTANTE 1: Su cuenta de Mercado Pago debe ser una *Cuenta de Vendedor*;
 
-> IMPORTANTE 2: Por el momento, Mercado Envios está disponible sólo para Argentina, Brasil y México, y solo se puede usar en Checkout Básico;
+> IMPORTANTE 2: Por el momento, Mercado Envíos está disponible sólo para Argentina, Brasil y México, y solo se puede usar en Checkout Básico;
 
 > IMPORTANTE 3: El producto que se envía debe tener sus dimensiones (anchura, altura, longitud y peso) debidamente configurados y dentro de los límites soportados del país en cuestión.
 
@@ -198,8 +198,8 @@ Si ha configurado correctamente sus credenciales en [Configuraciones Generales d
 Cómo se muestra el pago.
   * *Título*: Este es el título de la opción de pago que se mostrará a sus clientes;
   * *Descripción*: Esta es la descripción de la opción de pago que se mostrará a sus clientes.
-  * *Medio de Integración*: Cómo sus clientes interactúan con Mercado Pago para pagar sus pedidos;
-  * *Ancho del iFrame*: El ancho, en píxeles, del iFrame (utilizado sólo con el Medio de Integración de iFrame);
+  * *Medio de Integración*: Cómo sus clientes interactúan con Mercado Pago para pagar sus pedidos.
+  * *Ancho del iFrame*: El ancho, en píxeles, del iFrame (utilizado sólo con el Medio de Integración de iFrame).
   * *Altura del iFrame*: La altura, en píxeles, del iFrame (utilizado sólo con el Medio de Integración de iFrame).
 
 ### Navegación del Checkout
