@@ -53,7 +53,7 @@ Durante los testeos en modo Sandbox, puedes operar sobre HTTP, pero para la homo
 <a name="Funcionalidad"></a>
 ## Funcionalidad: ##
 
-El módulo del Mercado Pago para VirtueMart esta integrado con las siguientes funcionalidad y soluciones de pago:
+El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
 * [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
     * Pagos con dos tarjetas

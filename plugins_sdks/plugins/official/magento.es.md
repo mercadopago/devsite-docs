@@ -3,11 +3,11 @@
 * [Requisitos](#Requisitos)
 * [Instalación](#Instalación)
 * [Actualización](#Actualización)
-* Checkout Personalizado 
-* Checkout Básico 
+* Checkout Personalizado
+* Checkout Básico
 * [Configuración de estado de las notificaciones de Pago](#Configuración-de-estado-de-las-notificaciones-de-Pago)
 
-El módulo del Mercado Pago para Magento ofrece las siguientes funcionalidades:
+El módulo de Mercado Pago para Magento ofrece las siguientes funcionalidades:
 
 |                                	| Checkout Básico 	| Checkout Personalizado 	|
 |--------------------------------	|-----------------	|------------------------	|
@@ -16,7 +16,7 @@ El módulo del Mercado Pago para Magento ofrece las siguientes funcionalidades:
 | Pagos con dos tarjetas         	| ✔               	| ✔                      	|
 | Tarjetas guardadas             	|                 	| ✔                      	|
 | Suscripciones                  	| ✔               	|                        	|
-| MercadoEnvios                  	| ✔               	|                        	|
+| Mercado Envíos                  	| ✔               	|                        	|
 | Devolución de Pagos            	| ✔               	| ✔                      	|
 | CRON (Actualización de Pedido) 	|                 	| ✔                      	|
 | Pagina de éxito personalizable 	|                 	| ✔                      	|
@@ -48,7 +48,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 1. Acceda a **[Magento Marketplace](https://marketplace.magento.com/)**, busque por **Mercado Pago**, seleccione el módulo para la versión **Magento 1**, agregue el módulo en el carrito y finalize el proceso de compra (**no tendrá ningún costo**):
     ![Install](/images/magento-marketplace_1.gif)
 
-2. Al finalizar el proceso de "compra", haga un clic en **Install** y copie la url que estará disponible en la pantalla: 
+2. Al finalizar el proceso de "compra", haga un clic en **Install** y copie la url que estará disponible en la pantalla:
     ![Install](/images/magento-marketplace_2.gif)
 
 
@@ -56,7 +56,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 4. Pegue la url obtenida en **Magento Marketplace** en la opción **Install New Extensions** y haga un click en **Install**.
     ![Install](/images/magento-marketplace_3.gif)
 
-5. ¡Listo! El módulo del Mercado Pago fue instalado con éxito.
+5. ¡Listo! El módulo de Mercado Pago fue instalado con éxito.
 
 ### Instalación via Package
 
@@ -67,7 +67,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 3. Cargar el módulo en la opción **Direct package file upload** y haga un click en **Upload**.
     ![Install](/images/magento-install_tgz.gif)
 
-4. ¡Listo! El módulo del Mercado Pago fue instalado con éxito.
+4. ¡Listo! El módulo de Mercado Pago fue instalado con éxito.
 
 <a name="Actualización"></a>
 ## Actualización:
@@ -145,11 +145,11 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 
 <a name="Configurar-Mercado-Envios"></a>
-## Configurar el Mercado Envíos: ##
+## Configurar Mercado Envíos: ##
 
 Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos:
 
-1. Es necesario [habilitar Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) en su cuenta Mercado Pago.
+1. Es necesario [habilitar Mercado Envíos](http://shipping.mercadopago.com.ar/optin/doOptin) en su cuenta Mercado Pago.
 
 > 	IMPORTANTE: Su cuenta de Mercado Pago tiene que ser del tipo **Vendedor**.
 
@@ -163,7 +163,7 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos
 4. Vaya a la opción **Product attributes mapping** y seleccione de acuerdo con los atributos que tiene configurado en su tienda. Aproveche y configure los métodos de envío disponibles, en la opción **Available shipping methods**. Haga un click en **Save Config** para guardar las configuraciones realizadas:
     ![Configuration](/images/magento-config-me-03.gif)
 
-5. ¡Listo! El Mercado Envíos ha sido configurado y habilitado con éxito!
+5. ¡Listo! Mercado Envíos ha sido configurado y habilitado con éxito!
     ![Configuration](/images/magento-me_save.png)
 
 
@@ -200,5 +200,3 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
 
 3. ¡Listo! El estado de notificación se ha configurado correctamente.
     ![Configuration](/images/magento-save.png)
-
-
