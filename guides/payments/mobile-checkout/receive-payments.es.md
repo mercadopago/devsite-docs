@@ -513,7 +513,7 @@ Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conoce
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](/guides/notifications/testing.es.md) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](/guides/payments/mobile-checkout/testing.es.md) para más información.
 
 ### Próximos pasos
 
