@@ -1,10 +1,10 @@
-# Como integrar o Marketplace no Web Checkout
+# Como integrar o Marketplace no Web Payment Checkout
 
 > WARNING
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout](/guides/payments/web-checkout/introduction.pt.md)implementado.
+> * Possuir o [Checkout](/guides/payments/web-payment-checkout/introduction.pt.md)implementado.
 
 Para começar, você deve:
 
@@ -120,7 +120,7 @@ Resposta esperada:
 
 ## 3. Integre o checkout
 
-Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](/guides/payments/web-checkout/introduction.pt.md), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
+Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](/guides/payments/web-payment-checkout/introduction.pt.md), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
 
 Se deseja cobrar uma comissão por cada pagamento processado pela sua aplicação em nome do seu vendedor, simplesmente adicione esse valor no parâmetro `marketplace_fee` ao criar a preferência:
 

@@ -399,4 +399,4 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 
 Para ello debes usar usuarios y tarjetas de prueba.
 
-Visita la sección [Probando](/guides/payments/web-checkout/testing.es.md) para más información.
+Visita la sección [Probando](/guides/payments/web-payment-checkout/testing.es.md) para más información.

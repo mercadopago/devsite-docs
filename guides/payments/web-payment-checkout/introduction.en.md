@@ -1,4 +1,4 @@
-# Web Checkout
+# Web Payment Checkout
 
 Mercado Pago provides you with the necessary tools so that you can receive payments using our web form in a simple, fast and safe way.
 

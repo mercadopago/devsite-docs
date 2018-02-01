@@ -28,4 +28,4 @@ Al igual que con el Checkout de Pagos, cuentas con un par de claves privadas par
 Las **credenciales privadas** (también llamada `access_token`), se utilizan para todas las llamadas a las APIs, como procesar un pago, realizar reembolsos, y más. Las claves privadas deben ser mantenidas **confidencialmente** en tus servidores de _backend_ y nunca deben ser publicadas.
 
 
-#### [Comenzar a crear mi Marketplace](/guides/marketplace/web-checkout/create-marketplace.es.md)
+#### [Comenzar a crear mi Marketplace](/guides/marketplace/web-payment-checkout/create-marketplace.es.md)

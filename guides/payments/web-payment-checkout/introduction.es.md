@@ -1,4 +1,4 @@
-# Web Checkout
+# Web Payment Checkout
 
 Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
 

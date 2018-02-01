@@ -28,4 +28,4 @@ Similar to the Checkout of Payments, you have a pair of private keys to connect 
 
 The **private keys** (also known as `access_token`) are used for all the requests to the APIs, such as processing payments, refunds, etc. The private keys must be kept **confidentially** in your backend servers and should never be published.
 
-#### [Start creating my Marketplace](/guides/marketplace/web-checkout/create-marketplace.en.md)
+#### [Start creating my Marketplace](/guides/marketplace/web-payment-checkout/create-marketplace.en.md)

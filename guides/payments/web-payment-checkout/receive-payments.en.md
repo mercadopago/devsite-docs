@@ -327,4 +327,4 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Tests](/guides/payments/web-checkout/testing.en.md) section.
+For more information, go to the [Tests](/guides/payments/web-payment-checkout/testing.en.md) section.
