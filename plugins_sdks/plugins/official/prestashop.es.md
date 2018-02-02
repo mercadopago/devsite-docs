@@ -1,13 +1,13 @@
-# Prestashop 
+# Prestashop
 
 * [Requisitos](#Requirements)
 * [Funcionalidades](#Features)
 * [Instalación](#Installation)
 * [Configurar el pago transparente y redirect](#Configure-Credit-Card-and-Ticket-Standard)
-* [Configurar Mercado de Envios](#Configure-Mercado-Envios)
+* [Configurar Mercado Envíos](#Configure-Mercado-Envíos)
 * [Soporte](#Support)
 
-El módulo del Mercado Pago para Prestashop esta integrado con las siguientes funcionalidades:
+El módulo de Mercado Pago para Prestashop esta integrado con las siguientes funcionalidades:
 
 
 |                                	| Checkout Básico 	| Checkout Personalizado 	|
@@ -17,12 +17,12 @@ El módulo del Mercado Pago para Prestashop esta integrado con las siguientes fu
 | Pagos con dos tarjetas         	| ✔               	| ✔                      	|
 | Tarjetas guardadas             	|                 	| ✔                      	|
 | Suscripciones                  	| ✔               	|                        	|
-| MercadoEnvios                  	| ✔               	|                        	|
+| Mercado Envíos                  	| ✔               	|                        	|
 | Devolución de Pagos            	| ✔               	| ✔                      	|
 | CRON (Actualización de Pedido) 	|                 	| ✔                      	|
 | Pagina de éxito personalizable 	|                 	| ✔                      	|
 | Calculadora de Cuotas          	| ✔               	| ✔                      	|
-| Calculadora de Mercado Envios     | ✔               	| ✔                      	|
+| Calculadora de Mercado Envíos     | ✔               	| ✔                      	|
 
 
 <a name="Requirements"></a>
@@ -39,7 +39,7 @@ El módulo del Mercado Pago para Prestashop esta integrado con las siguientes fu
 | Dependencia de extensiones | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
 | Configuración adicionales  | safe_mode off * memory_limite mayor que 256MB (512MB recomendado)                              |
 | SSL                        | Es un requisito que tenga un certificado SSL, Durante las pruebas en modo de Sandbox podras usar HTTP.|
- 
+
 
 <a name="Installation"></a>
 ## Instalação: ##
@@ -82,23 +82,22 @@ Este proceso debe ayudar a configurar el módulo para pagos con checkout transpa
 
 6. ¡Muy bien! Usted ha habilitado los pagos transparentes y redirect!
 
-<a name="Configure-Mercado-Envios"></a>
+<a name="Configure-Mercado-Envíos"></a>
 ## Configurar Mercado Envíos: ##
 
-Los pasos siguientes mostrará cómo habilitar el Mercado de envíos.
-> IMPORTANTE: El Mercado de los Envios funciona con el Mercado Pago Redirect y los otros medios de pago serán deshabilitados.
+Los pasos siguientes mostrará cómo habilitar Mercado Envíos.
+> IMPORTANTE: Mercado Envíos funciona con Mercado Pago Redirect y los otros medios de pago serán deshabilitados.
 
-1. En primer lugar, usted necesita [habilitar el Mercado de envíos en su cuenta](http://shipping.mercadopago.com.ar/optin/doOptin).
+1. En primer lugar, usted necesita [habilitar Mercado Envíos en su cuenta](http://shipping.mercadopago.com.ar/optin/doOptin).
 
-> IMPORTANTE: Su cuenta del Mercado Pago necesita ser del tipo **Vendedor** y los productos necesitan tener las dimensiones correctas.
+> IMPORTANTE: Su cuenta de Mercado Pago necesita ser del tipo **Vendedor** y los productos necesitan tener las dimensiones correctas.
 
-2. Para habilitar en el módulo, sólo tiene que activarlo en la opción **Mercado de envíos** y hacer clic en **Guardar**:
-![Habilitar Mercado Envios](/images/prestashop-mercadoenvios_settings.gif)
+2. Para habilitar en el módulo, sólo tiene que activarlo en la opción **Mercado Envíos** y hacer clic en **Guardar**:
+![Habilitar Mercado Envíos](/images/prestashop-mercadoenvios_settings.gif)
 
-3. Muy bien! Ahora usted puede ofrecer el Mercado Envíos como medio de transporte para sus clientes!
- 
+3. Muy bien! Ahora usted puede ofrecer Mercado Envíos como medio de transporte para sus clientes!
+
 <a name="Support"></a>
 ## Soporte: ##
 
 > IMPORTANTE: Mantenga su módulo actualizado, y siempre utilice la instalación vía Admin en lugar de copiar y pegar las carpetas.
- 
