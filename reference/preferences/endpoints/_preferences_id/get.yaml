@@ -1,35 +1,10 @@
 ---
 resource: preferences.raml
+samples:
+- curl.sh
+- curl_response.json
 use:
-- items
-- payer
-- payment_methods
-- shipments
-- mode
-- local_pickup
-- dimensions
-- default_shipping_method
-- free_methods
-- cost
-- free_shipping
-- back_urls
-- notification_url
 - id
-- init_point
-- sandbox_init_point
-- date_created
-- operation_type
-- additional_info
-- auto_return
-- external_reference
-- expires
-- expiration_date_from
-- expiration_date_to
-- collector_id
-- client_id
-- marketplace
-- marketplace_fee
-- differential_pricing
 errors:
 - 400 bad_request:
   - invalid_collector_id:
