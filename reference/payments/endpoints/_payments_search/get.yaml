@@ -1,34 +1,18 @@
 ---
 resource: payments.raml
+metadata:
+samples:
+- curl.sh
+- curl_response.json
 use:
-- payer
-- binary_mode
-- order
-- external_reference
-- description
-- metadata
-- transaction_amount
-- coupon_amount
-- campaign_id
-- coupon_code
-- differential_pricing_id
-- application_fee
-- capture
-- payment_method_id
-- issuer_id
-- token
-- statement_descriptor
-- installments
-- notification_url
-- callback_url
-- additional_info
+- id
 errors:
 - 404 NOT_FOUND:
   - '2000':
       description:
-        en: Payment not found
+        en: Payment not found.
         es: No se ha encontrado el pago.
-        pt: Payment not found
+        pt: Payment not found.
 - 403 FORBIDDEN:
   - '4':
       description:

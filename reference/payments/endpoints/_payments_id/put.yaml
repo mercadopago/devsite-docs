@@ -1,21 +1,7 @@
 ---
 resource: payments.raml
 use:
-- payer
-- binary_mode
-- order
-- external_reference
-- description
-- metadata
-- transaction_amount
-- coupon_amount
-- differential_pricing_id
-- payment_method_id
-- issuer_id
-- statement_descriptor
-- installments
-- notification_url
-- callback_url
+- status
 errors:
 - 404 NOT_FOUND:
   - '2000':
