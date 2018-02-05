@@ -466,57 +466,6 @@ properties:
           en: Address date created.
           es: Fecha de creación de la dirección.
           pt: Data de criação da diretoria.
-    - verifications:
-        type: Object
-        description:
-          en: The result of addresses validations.
-          es: Resultado de la validación de direcciones.
-          pt: Resultado da validação de endereços.
-        properties:
-        - shipment:
-            type: Object
-            description:
-              en: Specifies whether the address is valid for shipments.
-              es: Especifica si la dirección es válida para envíos.
-              pt: Especifica se o endereço é válido para embarques.
-            properties:
-            - success:
-                type: Boolean
-                description:
-                  en: The result of the verification.
-                  es: Resultado de la verificación.
-                  pt: Resultado da seleção.
-            - errors:
-                type: List<Object>
-                description:
-                  en: List errors.
-                  es: Lista de errores.
-                  pt: Lista de erros.
-                properties:
-                - code:
-                    type: String
-                    description:
-                      en: Code error.
-                      es: Código de error.
-                      pt: Código de erro.
-                - description:
-                    type: String
-                    description:
-                      en: Description error.
-                      es: Descripción del error.
-                      pt: Descrição do erro.
-                - field:
-                    type: String
-                    description:
-                      en: Attribute name that does not pass validation.
-                      es: El nombre del atributo no pasó la validación.
-                      pt: O nome do atributo não passou na validação.
-        - name:
-            type: String
-            description:
-              en: Municipality name.
-              es: Nombre de la municipalidad.
-              pt: Nome do município.
 - live_mode:
     type: Boolean
     description:
