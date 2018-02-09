@@ -6,6 +6,36 @@ samples:
 - curl_response.json
 use:
 - id
+- date_created
+- date_approved
+- date_last_updated
+- money_release_date
+- collector
+- operation_type
+- payer
+- binary_mode
+- live_mode
+- order
+- external_reference
+- description
+- metadata
+- currency_id
+- transaction_amount
+- transaction_amount_refunded
+- transaction_details
+- fee_details
+- status
+- status_detail
+- captured
+- call_for_authorize_id
+- payment_method_id
+- issuer_id
+- payment_type_id
+- card
+- statement_descriptor
+- installments
+- notification_url
+- refunds 
 errors:
 - 404 NOT_FOUND:
   - '2000':

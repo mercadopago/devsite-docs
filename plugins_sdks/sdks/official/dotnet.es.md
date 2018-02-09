@@ -32,7 +32,7 @@ using MercadoPago;
 -**For Web-checkout:**
 
 ```csharp
-MercadoPago.SDK.ClientId = "YOUR_CLIENT_ID";
+MercadoPago.SDK.ClientId     = "YOUR_CLIENT_ID";
 MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
 ```
 -**For API or custom checkout:**
