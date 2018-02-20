@@ -1,0 +1,30 @@
+{
+    "id": "000000001-sT93QZFAsfxU9P5",
+    "email": "bruno@gmail.com",
+    "first_name": "Bruce",
+    "last_name": "Wayne",
+    "phone": {
+        "area_code": "023",
+        "number": "12345678"
+    },
+    "identification": {
+        "type": "DNI",
+        "number": "12345678"
+    },
+    "address": {
+        "id": null,
+        "zip_code": "SG1 2AX",
+        "street_name": "Old Knebworth Ln",
+        "street_number": null
+    },
+    "date_registered": null,
+    "description": "Lorem Ipsum",
+    "date_created": "2018-02-20T00:00:00.000-04:00",
+    "date_last_updated": null,
+    "metadata": {},
+    "default_card": null,
+    "default_address": null,
+    "cards": [],
+    "addresses": [],
+    "live_mode": false
+}
