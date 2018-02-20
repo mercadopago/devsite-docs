@@ -51,7 +51,7 @@ Add the following code in the file **build.gradle**.
 Alternatively, you can [download the SDK](https://github.com/mercadopago/px-android/releases) and add it to your project.
 ===
 dependencies {
-   compile 'com.mercadopago:sdk:3.7.2'
+   compile 'com.mercadopago:sdk:3.8.1'
 }
 ```
 ```ios
