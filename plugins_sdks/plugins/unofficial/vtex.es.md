@@ -54,7 +54,7 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 7. Completar la información requerida en la afiliación.
 
-![VTEX afiliation](/images/vtex-afiliation-4.png)
+    ![VTEX afiliation](/images/vtex-afiliation-4.png)
 
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
@@ -85,17 +85,17 @@ Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integr
 1. Desplegar el menú de módulos
 2. Ingresar en PCI Gateway
 
-    ![Native plan](images/vtex-native-plan-1.png)
+    ![Native plan](/images/vtex-native-plan-1.png)
 
 3. Ajustes.
 4. Planes de pago.
 5. Nuevo plan de pago.
 
-    ![Native plan](images/vtex-native-plan-2.png)
+    ![Native plan](/images/vtex-native-plan-2.png)
 
 6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
 
-    ![Native plan](images/vtex-native-plan-3.png)
+    ![Native plan](/images/vtex-native-plan-3.png)
 
 7. Colocar una descripción (puede ser blancos).
 8. Seleccionar la afiliación.
@@ -103,11 +103,11 @@ Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integr
 10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
 11. Salvar la configuración.
 
-    ![Native plan](images/vtex-native-plan-4.png)
+    ![Native plan](/images/vtex-native-plan-4.png)
 
 12. Verificar que se agregó el plan de nativo.
 
-    ![Native plan](images/vtex-native-plan-5.png)
+    ![Native plan](/images/vtex-native-plan-5.png)
 
 ### Configurar Plan de Pago Off-Line
 
@@ -128,24 +128,24 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 1. Desplegar el menú de módulos.
 2. Ingresar en PCI Gateway.
 
-    ![Offline](images/vtex-offline-plan-1.png)
+    ![Offline](/images/vtex-offline-plan-1.png)
 
 3. Ajustes.
 4. Planes de pago.
 5. Nuevo plan de pago.
 
-    ![Offline](images/vtex-offline-plan-2.png)
+    ![Offline](/images/vtex-offline-plan-2.png)
 
 6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
 
-    ![Offline](images/vtex-offline-plan-3.png)
+    ![Offline](/images/vtex-offline-plan-3.png)
 
 7. Colocar una descripción (puede ser blancos).
 8. Seleccionar la afiliación.
 9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
 10. Salvar la configuración.
 
-    ![Offline](images/vtex-offline-plan-4.png)
+    ![Offline](/images/vtex-offline-plan-4.png)
 
 ### Configurar plan de pago personalizado
 
@@ -161,19 +161,19 @@ Uruguay: Oca.
 1. Desplegar el menú de módulos.
 2. Ingresar en PCI Gateway.
 
-    ![Custom plan](images/vtex-custom-1.png)
+    ![Custom plan](/images/vtex-custom-1.png)
 
 3. Ajustes.
 4. Pagos personalizados.
 5. Seleccionar una Cobrand para configurar.
 
-    ![Custom plan](images/vtex-custom-2.png)
+    ![Custom plan](/images/vtex-custom-2.png)
 
 6. Completar los campos para configurar la Tarjeta de crédito deseada
     Se deben copiar y pegar los valores del instructivo para evitar errores.
 7. Salvar la configuración.
 
-    ![Custom plan](images/vtex-custom-3.png)
+    ![Custom plan](/images/vtex-custom-3.png)
 
 7. Colocar una descripción (puede ser blancos).
 8. Seleccionar la afiliación.
@@ -181,7 +181,7 @@ Uruguay: Oca.
 10. Seleccionar automático.
 11. Salvar la configuración.
 
-![Custom plan](images/vtex-custom-4.png)
+![Custom plan](/images/vtex-custom-4.png)
 
 ### Configurar Plan de Pago Personalizado - Tarjetas de Argentina
 
@@ -220,11 +220,11 @@ Uruguay: Oca.
 1. Desplegar el menú de módulos.
 2. Ingresar en Portal.
 
-    ![Custom plan](images/vtex-device-settings-1.png)
+    ![Custom plan](/images/vtex-device-settings-1.png)
 
 3. Seleccionar el ícono de ajustes.
 
-    ![Custom plan](images/vtex-device-settings-2.png)
+    ![Custom plan](/images/vtex-device-settings-2.png)
 
 4. Ingresar en código.
 5. Seleccionar checkout5-custom.js.
@@ -245,7 +245,7 @@ window.onload = startTimer;
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Custom plan](images/vtex-device-settings-3.png)
+    ![Custom plan](/images/vtex-device-settings-3.png)
 
 ## Credenciales
 
