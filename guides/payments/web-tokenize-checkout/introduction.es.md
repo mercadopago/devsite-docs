@@ -50,24 +50,24 @@ Navegador | Soporte
 
 ## Integración
 
-### Paso 1: Incorporar el viewport
+### Paso 1: Incorporar datos del viewport
 
-Establece el viewport agregando el siguiente código dentro de la etiqueta `<head>` de tu sitio web:
+Establece el viewport agregando el siguiente código dentro de la etiqueta `<head>` de tu sitio Web:
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 ```
 
-### Paso 2: Incorporar el código javascript
+### Paso 2: Incorporar el código HTML
 
-Este _fragmento de código javascript_ insertará un botón de pago. Cuando el comprador presione el botón se mostrará el checkout. Incluye el siguiente código en el lugar donde va a estar ubicado el botón dentro de tu sitio web:
+Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprador presione el botón se mostrará el checkout. Incluye el siguiente código en el lugar donde va a estar ubicado el botón dentro de tu sitio Web:
 
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-  src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
-  data-public-key="ENV_PUBLIC_KEY"
-  data-transaction-amount="100.00">
+    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    data-public-key="ENV_PUBLIC_KEY"
+    data-transaction-amount="100.00">
   </script>
 </form>
 ```
@@ -80,7 +80,7 @@ Este _fragmento de código javascript_ insertará un botón de pago. Cuando el c
 
 ### Paso 3: Obtener los datos
 
-El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del fragmento de código javascript (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
+El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del fragmento de código HTML (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
 
 #### Los datos son:
 
@@ -219,7 +219,7 @@ payment.payer = {
 # Guarda y postea el pago
 payment.save()
 
-``` 
+```
 ```csharp
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
