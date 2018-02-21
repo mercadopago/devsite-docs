@@ -217,7 +217,7 @@ FlowPreference *flowPreference = [[FlowPreference alloc]init];
 
 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
 Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
-    
+
 NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
 CheckoutPreference *checkoutPreference = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
@@ -236,14 +236,14 @@ If you need to perform any validation on your server at the time of making the p
 
 In the `ServicePreference` class you can set up the URL and URI of your service together with a Map so that you can send the information you want.
 
-At the moment of posting the payment, the SDK will do it at your service, [creating the payment](/reference/payments). and performing the validations inherent to your business. The SDK will expect to receive a payment, according to the response of Mercado Pago service.
+At the moment of posting the payment, the SDK will do it at your service, [creating the payment](/reference/payments/resource/). and performing the validations inherent to your business. The SDK will expect to receive a payment, according to the response of Mercado Pago service.
 
 As soon as the `ServicePreference` has been created, you must start the payment flow of MercadoPago, as shown in the following code:
 
 [[[
 
 ```android
-        
+
 public void submit(View view) {
   CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
           .setSite(Sites.ARGENTINA)
@@ -304,6 +304,6 @@ checkout.start()
 	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
 		    self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
     [self.mpCheckout start];
-	} 
+	}
 ```
 ]]]

@@ -87,4 +87,4 @@ Os pagamentos do Point são identificados da seguinte forma ao realizar a busca 
 - operation_type = pos_payment
 - created_from = `2707436798674401`(Android) ou `7353443692214630`(iOS)
 
-No artigo sobre [APIs](/reference/payments) você encontrará mais informações sobre a API de Pagamentos.
+No artigo sobre [APIs](/reference/payments/resource) você encontrará mais informações sobre a API de Pagamentos.
