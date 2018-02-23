@@ -1,23 +1,23 @@
 # Cobranças com Point sem integração
-Do aplicativo Mercado Pago, você tem a opção de cobrar nas suas lojas físicas através do dispositivo Point.
+A partir do aplicativo do Mercado Pago, você tem a opção de cobrar nas suas lojas físicas através do dispositivo Point.
 Você não precisa saber sobre programação.
 
-Nós o guiaremos para que você possa cobrar:
+Vamos te guiar para que você possa cobrar:
 
-- Insira o aplicativo Mercado Pago, na seção de cobrança com ponto e conecte seu dispositivo Point.
-- Insira o valor e uma descrição do que você vende. A descrição permitirá que você identifique a venda no seu backend.
-- Deslize o cartão de crédito ou débito do pagador através do dispositivo Point.
-- Insira o CVV do cartão, o DNI do pagador e assiná-lo.
-- Pronto! Já cobrado, agora você pode enviar a prova da operação por e-mail ou sms.
+- Acesse o aplicativo do Mercado Pago, na seção de cobrança com Point e conecte seu dispositivo Point.
+- Insira o valor e uma descrição do que está vendendo. A descrição permitirá que você identifique a venda no seu backend.
+- Insira o cartão de crédito ou débito do comprador no dispositivo Point.
+- Informe o CVV do cartão, o CPF do comprador e assine.
+- Pronto! A cobrança está feita, agora você pode enviar o comprovante da operação por e-mail ou sms.
 
 
 ### Catálogo de Produtos no Point
 
-Uma alternativa para que você possa receber pagamentos presenciais sem a necessidade de programação, é que você carrega na seção Carregar com aponte seu catálogo de produtos.
+Uma alternativa para que você possa receber pagamentos presenciais sem a necessidade de programação, é que você carregue na seção de Cobrança com Point seu catálogo de produtos.
 
-Desta forma, quando é hora de cobrar, o vendedor só deve selecionar os produtos e a quantidade deles e calcular automaticamente a venda total.
+Desta forma quando for realizar a cobrança, o vendedor só deverá selecionar os produtos e a quantidade deles e automaticamente será calculado o valor total da venda.
 
-Para cada produto, você pode inserir uma imagem, o preço e o nome dele.
+Você pode inserir uma imagem para cada produto, o preço e o nome do mesmo.
 
 
 ## Intere-se sobre seus pagamentos
