@@ -1,5 +1,8 @@
 ---
 resource: customers.raml
+samples:
+- curl.sh
+- curl_response.json
 use:
 - id
 - email
