@@ -61,6 +61,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 # Este parâmetro é necessário por ser um SDK em Swift
 use_frameworks!
 platform :ios, '8.0'
-pod 'MercadoPagoSDK', '3.7.0'
+pod 'MercadoPagoSDK', '3.7.2'
 ```
 ]]]
