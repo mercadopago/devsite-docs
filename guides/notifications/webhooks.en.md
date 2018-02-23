@@ -65,10 +65,10 @@ After that, you will be able to get full information about the notified resource
 
 Type         | URL                                                | Documentation
 ------------ | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/payments)
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [see documentation](/reference/plans)
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/subscriptions)
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/invoices)
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/payments/resource/)
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [see documentation](/reference/plans/resource/)
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/subscriptions/resource/)
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/invoices/resource/)
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
 

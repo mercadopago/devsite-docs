@@ -267,7 +267,7 @@ Con el ID del [invoice](/es/reference/invoices/_invoices_id/get/) podrás obtene
 
 ## Añade características especiales a tu plan
 
-Revisa el [API Doc de plans](/reference/plans) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
+Revisa el [API Doc de plans](/reference/plans/resource/) para conocer todas las configuraciones que puedes realizar. Así podrás adecuar el cobro de suscripción a tu modelo de negocio. A continuación te mostramos las características más relevantes que puedes especificar al momento de crear un plan. Ten presente que son combinables entre sí para poder sacar el máximo provecho.
 
 ### Limita la cantidad de cuotas de la suscripción
 

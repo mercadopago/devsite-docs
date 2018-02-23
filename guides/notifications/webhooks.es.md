@@ -67,11 +67,11 @@ Luego de esto, puedes obtener la información completa del recurso notificado ac
 
 Tipo         | URL                                                | Documentación
 ------------ | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación](/reference/payments)
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentación](/reference/plans)
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación](/reference/subscriptions)
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación](/reference/invoices)
- 
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación](/reference/payments/resource/)
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [ver documentación](/reference/plans/resource/)
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación](/reference/subscriptions/resource/)
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentación](/reference/invoices/resource/)
+
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.
 
