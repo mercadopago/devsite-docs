@@ -22,7 +22,7 @@ Los datos sensibles de las tarjetas de crédito y débito son cifrados y almacen
 
 ## Soporte de Navegadores
 
-Para garantizar una navegación segura y cumplir con las normativas PCI, el *Web Tokenize Checkout* no brinda una experiencia de pago en los navegadores que no soporten el protocolo TLS 1.1 o mayor.
+Para garantizar una navegación segura y cumplir con las normativas PCI, el *Web Tokenize Checkout* brinda una experiencia de pago solo en los navegadores que soporten el protocolo TLS 1.1 o mayor
 
 En el caso de que el comprador tenga un navegador no soportado, se le indicará que no podrá realizar la compra hasta que lo actualice.
 
