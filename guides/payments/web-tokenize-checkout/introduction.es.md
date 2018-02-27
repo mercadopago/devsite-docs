@@ -2,6 +2,7 @@
   sites_supported:
       - mla
       - mco
+      - mlu
 ---
 
 # Web Tokenize Checkout
