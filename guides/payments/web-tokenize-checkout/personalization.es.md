@@ -112,7 +112,7 @@ Usando el atributo `data-summary-charge`, puedes especificar el monto de cargos 
 data-summary-charges="123"
 ```
 
-Aparecerá en el detalle bajo el concepto de "Cargos".
+Aparecerá en el detalle bajo el concepto de *"Cargos"*.
 
 #### Impuestos
 
@@ -122,7 +122,7 @@ Usando el atributo `data-summary-taxes`, puedes especificar el monto de impuesto
 data-summary-taxes="123"
 ```
 
-Aparecerá en el detalle bajo el concepto de "Impuestos".
+Aparecerá en el detalle bajo el concepto de *"Impuestos"*.
 
 #### Mora
 
@@ -132,4 +132,4 @@ Usando el atributo `data-summary-arrears`, puedes especificar el monto de mora e
 data-summary-arrears="123"
 ```
 
-Aparecerá en el detalle bajo el concepto de "Mora".
+Aparecerá en el detalle bajo el concepto de *"Mora"*.
