@@ -147,6 +147,31 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 
     ![Offline](/images/vtex-offline-plan-4.png)
 
+### Configurar plan de pago Webpay
+
+1. Desplegar el menú de módulos.
+2. Ingresar en PCI Gateway.
+
+    ![Offline](/images/vtex-webpay-1.png)
+
+3. Ajustes.
+4. Planes de pago.
+5. Nuevo plan de pago.
+
+    ![Offline](/images/vtex-webpay-2.png)
+
+6. Buscar y seleccionar Webpay.
+
+    ![Offline](/images/vtex-webpay-3.png)
+
+7. Colocar una descripción (puede ser blancos).
+8. Seleccionar la afiliación.
+9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
+10. Salvar la configuración.
+
+    ![Offline](/images/vtex-webpay-14.png)
+
+
 ### Configurar plan de pago personalizado
 
 Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
