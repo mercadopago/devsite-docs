@@ -58,8 +58,8 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](#credenciales).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](#credenciales).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
