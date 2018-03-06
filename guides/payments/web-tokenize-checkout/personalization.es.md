@@ -58,7 +58,25 @@ data-transaction-amount="654"
 
 ![Summary Default](/images/summary-default.png)
 
-### Personalización
+### Personalización de texto
+
+#### "Productos"
+
+Usando el atributo `data-summary-product-label`, puedes especificar el texto que aparece como *"Productos"* en el detalle. Por ejemplo, puedes agregar el detalle de lo que se está pagando:
+
+```
+data-summary-product-label="4 Productos"
+```
+
+#### "Descuento"
+
+Usando el atributo `data-summary-product-label`, puedes especificar el texto que aparece como *"Descuento"* en el detalle. Por ejemplo, puedes agregar el porcentaje de descuento:
+
+```
+data-summary-discount-label="Descuento 10%"
+```
+
+### Personalización numérica
 
 Puedes agregar información en el Summary usando los atributos `data-summary-*` en el fragmento de código HTML.
 
@@ -78,7 +96,7 @@ data-summary-shipping="0"
 
 ![Summary Shipping](/images/summary-shipping.png)
 
-#### Producto
+#### Productos
 
 Si agregas el monto de envío u otro detalle en el Summary, deberás modificar el detalle del monto del pago.
 
