@@ -1,11 +1,11 @@
-# MercadoPago SDK for Java
+# MercadoPago SDK para Java
 
-This library provides developers with a simple set of bindings to the Mercado Pago API.
+Esta libreria provee una set de clases y metodos para interactuar con el API de Mercado Pago.
 
-## Installation 
+## Instalación 
 
-### Using Maven
-1. Append MercadoPago dependencies to pom.xml
+### Usando Maven
+1. Agregar la dependencia al archivo pom.xml
 
   ```xml
     ...
@@ -18,26 +18,27 @@ This library provides developers with a simple set of bindings to the Mercado Pa
     </dependencies>
     ...
   ```
-2. Run `mvn install` and thats all, you have Mercado Pago SDK installed.
 
-## Quick Start
+2. Ejecutar `mvn install` y es todo, ahora tienes el SDK de Mercado Pago instalado.
 
-1. Import Mercado Pago basic clases. `import import com.mercadopago.*;`
-2. Setup your credentials.
-  - **For Web-checkout:**
+## Inicio Rápido
+
+1. Importar las clases basicas del SDK `import import com.mercadopago.*;`
+2. Configura tus credenciales.
+  - **Para Web-checkout:**
     ```java
       MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
       MercadoPago.SDK.setClientId("CLIENT_ID_OK");
     ```
-  - **For API or Custom-checkout:**
+  - **Para el uso via API o Checkout Personalizado:**
     ```java
       MercadoPago.SDK.setAccessToken("ACCESS_TOKEN"); 
     ```
-3. Using Resource objects.
+3. Usando las clases del SDK.
 
 ![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 
-**Sample**
+**Ejemplo**
 
 ```java
   import com.mercadopago.*;

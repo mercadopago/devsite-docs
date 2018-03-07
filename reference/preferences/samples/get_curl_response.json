@@ -1,0 +1,78 @@
+{
+    "additional_info": "",
+    "auto_return": "",
+    "back_urls": {
+        "failure": "",
+        "pending": "",
+        "success": ""
+    },
+    "client_id": "6295877106812064",
+    "collector_id": 202809963,
+    "date_created": "2018-02-02T15:18:51.150-04:00",
+    "expiration_date_from": null,
+    "expiration_date_to": null,
+    "expires": false,
+    "external_reference": "",
+    "id": "202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
+    "init_point": "https://www.mercadopago.com/mla/checkout/start?pref_id=202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
+    "items": [
+        {
+            "id": "item-ID-1234",
+            "currency_id": "ARS",
+            "title": "Practical Granite Shirt",
+            "picture_url": "http://placehold.it/350x150",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies est sed elit interdum, quis consectetur libero mollis. Phasellus posuere sed eros vel volutpat.",
+            "category_id": "",
+            "quantity": 2,
+            "unit_price": 14.5
+        }
+    ],
+    "marketplace": "MP-MKT-6295877106812064",
+    "marketplace_fee": 0,
+    "notification_url": null,
+    "operation_type": "regular_payment",
+    "payer": {
+        "phone": {
+            "area_code": "",
+            "number": "631.586.0213"
+        },
+        "address": {
+            "zip_code": "76336",
+            "street_name": "Marjory Stream",
+            "street_number": "941"
+        },
+        "email": "",
+        "identification": {
+            "number": "12345678",
+            "type": "DNI"
+        },
+        "name": "",
+        "surname": "",
+        "date_created": ""
+    },
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": ""
+            }
+        ],
+        "default_installments": null,
+        "default_payment_method_id": null,
+        "excluded_payment_types": [
+            {
+                "id": ""
+            }
+        ],
+        "installments": null
+    },
+    "sandbox_init_point": "https://sandbox.mercadopago.com/mla/checkout/pay?pref_id=202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
+    "shipments": {
+        "receiver_address": {
+            "floor": "",
+            "zip_code": "",
+            "street_name": "",
+            "apartment": "",
+            "street_number": null
+        }
+    }
+}

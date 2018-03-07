@@ -2,7 +2,7 @@
 sites_supported:
   - mla
   - mlb
-  - mpv
+  - mlv
   - mco
   - mlm
   - global

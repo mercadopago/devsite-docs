@@ -1,54 +1,54 @@
-# Mercado Pago SDK for PHP
+# Mercado Pago SDK para PHP
 
-This library provides developers with a simple set of bindings to the Mercado Pago API.
+Esta libreria provee una set de clases y metodos para interactuar con el API de Mercado Pago.
 
-### PHP Versions Supported:
+### Versiones de PHP Soportadas:
 
-The SDK supports PHP 5 or major
+El SDK soporta PHP 5 o mayor
 
-### Installation 
+### Instalación 
 
-#### Using Composer
+#### Usando Composer
 
-1. Download [Composer](https://getcomposer.org/download/) if not already installed
-2. Go to your project directory and run `composer require "mercadopago/dx-php:dev-master"` on the command line.
-3. This how your directory structure would look like.
+1. Descargar [Composer](https://getcomposer.org/download/) (Si este no se encuentra instalado previamente)
+2. Dirigirse al directorio del proyecto y ejecutar `composer require "mercadopago/dx-php:dev-master"` en la linea de comandos.
+3. Ahora el directorio deberia verse asi.
 
 ![screen shot 2017-12-27 at 7 07 47 pm](https://user-images.githubusercontent.com/864790/34394635-44f7745a-eb39-11e7-981d-77cf759cf05f.png)
 
-4. Thats all, you have Mercado Pago SDK installed.
+4. Esto es todo, ya tienes el SDK de Mercado Pago instalado.
 
-### Quick Start 
+### Inicio Rápido
 
-1. You have to require the library from your Composer vendor folder.
+1. Cargar el archivo autoload.php para cargar las librerias instaladas en tu proyecto.
 
   ```php
   require __DIR__  . '/vendor/autoload.php';
   ```
 
-2. Setup your credentials
+2. Configura tus credenciales
+  
+  Existen 2 tipos de credenciales:
 
-  You have two types of credentials:
-
-  * **For Web-checkout:**
+  * **Para el Checkout Web:**
     ```php
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");      // On Production
     MercadoPago\SDK::setAccessToken("ENV_TEST_ACCESS_TOKEN"); // On Sandbox
     ```
 
-  * **For API or custom checkout:**
+  * **Para el uso mediante API o checkout personalizado:**
     ```php
     MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
     MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
     ```
 
-3. Using resource objects.
+3. Usando los objetos del SDK.
 
-  You can interact with all the resources available in the public API, to this each resource is represented by classes according to the following diagram:
+  Puedes interactuar con todos los recursos disponibles en el API Publico, para este fin cada recurso esta representado por clases segun el siguiente diagrama.
   
   ![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
   
-  **Sample**
+  **Ejemplo**
   
 ```php
   <?php

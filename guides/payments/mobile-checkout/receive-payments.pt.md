@@ -516,7 +516,7 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](/guides/notifications/testing.pt.md).
+Para mais informações, consulte a seção de [Testes](/guides/payments/mobile-checkout/testing.pt.md).
 
 
 ### Próximos passos

@@ -11,7 +11,7 @@
 <a name="features"></a>
 ## Funcionalidad: ##
 
-El módulo del Mercado Pago para ZenCart esta integrado con las siguientes funcionalidad y soluciones de pago:
+El módulo de Mercado Pago para ZenCart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
 * [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
     * Pagos con dos tarjetas
@@ -40,7 +40,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 <a name="installation"></a>
 ## Instalación: ##
 
-1. Descargue el modulo del Mercado Pago.
+1. Descargue el modulo de Mercado Pago.
 
 2. Copia la carpeta del módulo en la raíz de tu tienda ZenCart.
 
@@ -96,7 +96,7 @@ Obtenga su CLIENT_ID e CLIENT_SECRET de acuerdo con su país:
   * **Limit installments**: Seleccione el número de parcelas máximas que estará disponible para el comprador;
   * **Exclude Methods**: Seleccione los métodos de pago que desea **no aceptar**;
   * **Live or Sandbox**: Habilite el modo sandbox para realizar pagos de prueba;
-  * **Sort order of display**: Orden de visualización del Mercado Pago;
+  * **Sort order of display**: Orden de visualización de Mercado Pago;
 
 <a name="Soporte-técnico"></a>
 ## Soporte técnico: ##

@@ -48,8 +48,8 @@ After that, you will be able to get full information about the notified resource
 
 Type               | URL                                                         | Documentation
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/payments)
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](/reference/merchant_orders)
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/payments/resource/)
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](/reference/merchant_orders/resource/)
 
 
 ### Implement the notification receiver using the following code as example:
@@ -67,8 +67,8 @@ if (!isset($_GET["id"], $_GET["topic"]) || !ctype_digit($_GET["id"])) {
 
 // Get the payment and the corresponding merchant_order reported by the IPN.
 if($_GET["topic"] == 'payment'){
-	$payment_info = $mp->get("/collections/notifications/" . $_GET["id"]);
-	$merchant_order_info = $mp->get("/merchant_orders/" . $payment_info["response"]["collection"]["merchant_order_id"]);
+	$payment_info = $mp->get("/v1/payments/" . $_GET["id"]);
+	$merchant_order_info = $mp->get("/merchant_orders/" . $payment_info["response"]["order"]["id"]);
 // Get the merchant_order reported by the IPN.
 } else if($_GET["topic"] == 'merchant_order'){
 	$merchant_order_info = $mp->get("/merchant_orders/" . $_GET["id"]);

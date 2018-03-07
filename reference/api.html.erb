@@ -1,22 +1,52 @@
 <% builder = UIBuilder::TreeTableBuilder.new(locals)  %>
 
-<h1><%= "/#{resource.version}#{endpoint.title}".gsub('//', '/') %></h1>
+<h1><%= "/#{resource.version}#{endpoint.title.tr('{', ':').tr('}', '')}".gsub('//', '/') %></h1>
 
 <blockquote>
-  <strong> <%= method.method_name.upcase %> </strong>
+  <strong> BASE URI </strong>
   <%= "#{resource.base_uri}#{resource.version}#{endpoint.title}" %>
 </blockquote>
+
+<% if (method.samples['curl']) %>
+  <H2> HTTP Request </h2>
+
+  <div class='code-container' data-slideout-ignore> 
+    <div class='code-container__header u-clearfix'>
+      <p class='code_tab_selector'>
+        curl
+      </p>
+    </div>
+    <div id='editor_child_curl' class="code_editor" language='bash'>  
+      <pre class="line-numbers"><code class='language-bash'> <%= method.samples['curl'] %> </code></pre> 
+    </div>
+  </div>
+<% end %>
 
 <h3> Request Params </h3>
 
 <div class = "tree-table">
   <div class = "tree-table-header">
     <span>Parameter</span><span>Type</span><span>Description</span> 
-  </div> 
+  </div>
   <%= builder.build_rows(method.request_parameters) %>
 </div>
 
-<h3> Errors </h3>
+<% if (method.samples['curl_response']) %>
+  <H2> HTTP Response </h2>
+
+  <div class='code-container' data-slideout-ignore> 
+    <div class='code-container__header u-clearfix'>
+      <p class='code_tab_selector'>
+        json
+      </p>
+    </div>
+    <div id='editor_child_curl' class="code_editor" language='json'>  
+      <pre class="line-numbers"><code class='language-bash'> <%= method.samples['curl_response'] %> </code></pre> 
+    </div>
+  </div>
+<% end %>
+
+<h3> Error Codes </h3>
 
 <div class = "two-table">
   <div class = "two-table-header">

@@ -1,0 +1,11 @@
+<% builder = UIBuilder::TreeTableBuilder.new(locals)  %>
+
+<h1><%=resource.title.singularize%></h1> 
+
+<h2> Attributes </h2>
+<div class = "tree-table">
+  <div class = "tree-table-header">
+    <span>Attribute</span><span>Type</span><span>Description</span> 
+  </div>
+  <%= builder.build_rows(resource.resource_parameters) %>
+</div>

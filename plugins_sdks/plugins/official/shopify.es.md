@@ -10,7 +10,7 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 * Fácil integración - ninguna línea de código necesaria.
 * Control limitado de la experiencia de compra.
 * Pago con un click.
-* Acepta pagos con ticket, dinero en cuenta del Mercado Pago, tarjeta de crédito y débito.
+* Acepta pagos con ticket, dinero en cuenta de Mercado Pago, tarjeta de crédito y débito.
 * Acepta cupones de descuento
 
 <a name="Instalación-y-Configuración"></a>

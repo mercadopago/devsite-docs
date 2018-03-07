@@ -1,60 +1,49 @@
+<% basic_path           = "#{locals[:settings]['deploy_path']}/#{locals[:lang]}" %>
+<% offcial_sdk_path     = "#{basic_path}/plugins_sdks/sdks/official" %>
+<% offcial_plugin_path  = "#{basic_path}/plugins_sdks/plugins/official" %>
 
 <h2> SDKs </h2>
+<p>Everything is easier with a great SDK</p>
 
-<p>Todo es más fácil con un buen SDK</p>
-
-<div id="icons_grid">
-  <a class="pl-icon-javascript" href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/sdks/client/javascript/"%>"> 
-  </a>
+<div class="iconsgrid">
+  <a href="<%="#{offcial_sdk_path}/js/"%>" title="Javascript SDK"><%=icon_tag("Javascript")%></a>
+  <a href="<%="#{offcial_sdk_path}/php/"%>" title="PHP SDK"><%=icon_tag("Php")%></a>
+  <a href="<%="#{offcial_sdk_path}/java/"%>" title="Java SDK"><%=icon_tag("Java")%></a>
+  <a href="<%="#{offcial_sdk_path}/dotnet/"%>" title=".Net SDK"><%=icon_tag("DotNet")%></a>
+  <a href="<%="#{offcial_sdk_path}/nodejs/"%>" title="NodeJS SDK"><%=icon_tag("NodeJS")%></a>
+  <a href="<%="#{offcial_sdk_path}/ruby/"%>" title="Ruby SDK"><%=icon_tag("Ruby")%></a>
+  <a href="<%="#{offcial_sdk_path}/python/"%>" title="Python SDK"><%=icon_tag("Python")%></a>
 </div>
 
-<hr />
-
-<div id="icons_grid">
-  <a class="pl-icon-php" href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/sdks/server/php/"%>"> 
-  </a>
-  <a class="pl-icon-java" href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/sdks/server/java/"%>"> 
-  </a>
-  <a class="pl-icon-dotnet" href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/sdks/server/dotnet/"%>"> 
-  </a>
-  <a class="pl-icon-nodejs" href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/sdks/server/nodejs/"%>"> 
-  </a>
-  <a class="pl-icon-ruby" href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/sdks/server/ruby/"%>"> 
-  </a>
-  <a class="pl-icon-python" href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/sdks/server/python/"%>"> 
-  </a>
-</div>
-
-<h2> Módulos </h2>
-
-<p> Integra Mercado Pago a las plataformas de e-commerce más usadas. </p>
+<h2> Modules / Extensions / Plugins </h2>
+<p> User Mercado Pago in the most used e-commerce platforms. </p>
 
 <ul class="modules-brands u-clearfix">
   <li class="modules-brands__item magento">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/magento/"%>" title="Magento"><span class="u-accessibility-hidden">Magento</span></a>
+    <a href="<%="#{offcial_plugin_path}/magento/"%>" title="Magento"><span class="u-accessibility-hidden">Magento</span></a>
   </li>
   <li class="modules-brands__item presta">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/prestashop/"%>" title="Presta Shop"><span class="u-accessibility-hidden">Presta Shop</span></a>
+    <a href="<%="#{offcial_plugin_path}/prestashop/"%>" title="Prestashop"><span class="u-accessibility-hidden">Prestashop</span></a>
   </li>
   <li class="modules-brands__item woo">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/woo-commerce/"%>" title="Woo Commerce"><span class="u-accessibility-hidden">Woo Commerce</span></a>
+    <a href="<%="#{offcial_plugin_path}/woo-commerce/"%>" title="Woo Commerce"><span class="u-accessibility-hidden">Woo Commerce</span></a>
   </li>
   <li class="modules-brands__item wp">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/wp-ecommerce/"%>" title="WP eCommerce"><span class="u-accessibility-hidden">WP eCommerce</span></a>
+    <a href="<%="#{offcial_plugin_path}/wp-ecommerce/"%>" title="WP eCommerce"><span class="u-accessibility-hidden">WP eCommerce</span></a>
   </li>
   <li class="modules-brands__item shopify">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/shopify/"%>" title="Shopify"><span class="u-accessibility-hidden">Shopify</span></a>
+    <a href="<%="#{offcial_plugin_path}/shopify/"%>" title="Shopify"><span class="u-accessibility-hidden">Shopify</span></a>
   </li>
   <li class="modules-brands__item open-cart">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/opencart/"%>" title="Open Cart"><span class="u-accessibility-hidden">Open Cart</span></a>
+    <a href="<%="#{offcial_plugin_path}/opencart/"%>" title="Open Cart"><span class="u-accessibility-hidden">Open Cart</span></a>
   </li>
   <li class="modules-brands__item oscommerce">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/os-commerce/"%>" title="osCommerce"><span class="u-accessibility-hidden">osCommerce</span></a>
+    <a href="<%="#{offcial_plugin_path}/os-commerce/"%>" title="osCommerce"><span class="u-accessibility-hidden">osCommerce</span></a>
   </li>
   <li class="modules-brands__item zen">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/zencart/"%>" title="Zen Cart"><span class="u-accessibility-hidden">Zen Cart</span></a>
+    <a href="<%="#{offcial_plugin_path}/zencart/"%>" title="Zen Cart"><span class="u-accessibility-hidden">Zen Cart</span></a>
   </li>
   <li class="modules-brands__item virtue-mart">
-    <a href="<%="#{locals[:settings]['deploy_path']}/#{locals[:lang]}/plugins/modules/virtue-mart/"%>" title="VirtueMart"><span class="u-accessibility-hidden">VirtueMart</span></a>
+    <a href="<%="#{offcial_plugin_path}/virtue-mart/"%>" title="VirtueMart"><span class="u-accessibility-hidden">VirtueMart</span></a>
   </li>
 </ul>

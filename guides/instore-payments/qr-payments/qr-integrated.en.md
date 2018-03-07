@@ -2,7 +2,7 @@
 sites_supported:
   - mla
   - mlb
-  - mpv
+  - mlv
   - mco
   - mlm
   - global
@@ -13,7 +13,7 @@ sites_supported:
 
 Mercado Pago allows you to receive payments from your customers using a single QR code that identifies the point of sale.
 
-When your customer scans the QR code, a request is made to your server, verifying the amount to be charged. Your server responds with the [payment preference](/reference/preferences) and your customer’s mobile phone shows the checkout with the payment details. Finally, the customer makes the payment and you immediately receive a Webhook notification on your server to impact the result.
+When your customer scans the QR code, a request is made to your server, verifying the amount to be charged. Your server responds with the [payment preference](/reference/preferences/resource/) and your customer’s mobile phone shows the checkout with the payment details. Finally, the customer makes the payment and you immediately receive a Webhook notification on your server to impact the result.
 
 ## Integration details
 
@@ -59,7 +59,7 @@ This request is made by sending one of the following values in the header `User-
 
  > ${version} is the version of the app installed on the mobile device.
 
-Based on the point of sale from where the request was made, the [payment preference](/reference/preferences) must be created indicating the amount and details of the product or service.
+Based on the point of sale from where the request was made, the [payment preference](/reference/preferences/resource/) must be created indicating the amount and details of the product or service.
 
 To create this object, a Mercado Pago service is requested.
 
