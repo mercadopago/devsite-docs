@@ -25,7 +25,7 @@ Manual review           | ✔    | ✔    |      | ✔    |      |      |      |
 Product       | Solution        | Available
 :------------ |:--------------- |:------------------- |
 Payments      | Payment button  |
-Payments      | Web Checkout    |
+Payments      | Web Payment Checkout    |
 Payments      | Mobile Checkout |
 Payments      | API             | ✔
 Subscriptions | Payment button  |
@@ -37,10 +37,10 @@ Marketplace   | API             |
 Product       | Solution        | Available
 :------------ |:--------------- |:------------------- |
 Payments      | Payment button  |
-Payments      | Web Checkout    |
+Payments      | Web Payment Checkout    |
 Payments      | Mobile Checkout |
 Payments      | API             | ✔
-Marketplace   | Web Checkout    |
+Marketplace   | Web Payment Checkout    |
 Marketplace   | API             |
 
 ## Availability by acquirer

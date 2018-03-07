@@ -1,17 +1,18 @@
-# Receba Pagamentos
+# Receive Payments
 
-Receba pagamentos de forma simples e segura utilizando o Checkout do Mercado Pago.
+Receive payments simply and securely using the Mercado Pago’s Checkout.
 
-## 1. Crie uma preferência de pagamentos
 
-A preferência de pagamentos contém todas as informações sobre o produto ou serviço a ser pago. Por exemplo:
+## 1. Create a payment preference
 
-* Descrição e preço.
-* Informações do seu comprador (e-mail, nome, endereço, etc.).
-* Meios de pagamentos aceitos.
-* ID de referência do seu sistema.
+A payment preference contains all the information about the product or service to be paid. For example:
 
-Para criar uma preferência de pagamento, você deve [instalar o SDK do MercadoPago](https://github.com/mercadopago) e configurar suas [credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic).
+* Description and amount.
+* Your buyer’s info (email, name, address, etc.).
+* Payment methods accepted.
+* Reference ID of your system.
+
+To create a payment preference you must install [Mercado Pago SDK](https://github.com/mercadopago) and set up your [credentials](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 [[[
 ```php
@@ -43,7 +44,8 @@ MercadoPago.SDK.ClientSecret = "ENV_CLIENT_SECRET";
 ```
 ]]]
 
-Em seguida, você deve adicionar os atributos da sua preferência de pagamento e crie uma preferência:
+Then, you must add the attributes of your payment preference and create a preference:
+
 
 [[[
 ```php
@@ -159,13 +161,13 @@ preference.Save();
 ```
 ]]]
 
-### Conteúdo da preferência
+### Content of the preference
 
-Quanto mais informações você nos enviar, melhor será a aprovação dos pagamentos e a experiência de seus usuários.
+The more information you send us, the faster is the payment approval and the better is the experience for your users.
 
 #### Payer
 
-É necessário enviar o `email` do seu comprador. Se você nos enviar dados como tipo e número de identificação, ele não será solicitado durante o processo de pagamento.
+You must submit your buyer’s `email`. If you include information such as identification type or identification number, it will not be asked during the checkout.
 
 [[[
 ```php
@@ -288,83 +290,9 @@ Payer payer = new Payer()
 ```
 ]]]
 
-#### Shipments
+## 2. Take the buyer to checkout
 
-[[[
-```php
-<?php
-  // ...
-  $shipments = new MercadoPago\Shipments();
-  $shipments->receiver_address = array(
-		"zip_code" => "[FAKER][ADDRESS][ZIP]",
-		"street_number" => [FAKER][NUMBER][BETWEEN][1000,2000],
-		"street_name" => "[FAKER][ADDRESS][STREET_NAME]",
-		"floor" => [FAKER][NUMBER][BETWEEN][1,20],
-		"apartment" => "C"
-  );
-  // ...
-?>
-```
-```java
-// ...
-Shipments shipments = new Shipments();
-shipments.setReceiverAddress(new ReceiverAddress()
-  .setZipCode("[FAKER][ADDRESS][ZIP]")
-  .setBuildingNumber("[FAKER][NUMBER][BETWEEN][1000,2000]")
-  .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
-  .setFloor("[FAKER][NUMBER][BETWEEN][1,20]")
-  .setApartment("C"));
-// ...
-```
-```node
-// ...
-var shipments = {
-	receiver_address: {
-		zip_code: [FAKER][ADDRESS][ZIP]",
-		street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
-		street_name: "[FAKER][ADDRESS][STREET_NAME]",
-		floor: [FAKER][NUMBER][BETWEEN][1,20],
-		apartment: "C"
-	}
-};
-// ...
-```
-```ruby
-# ...
-shipment = MercadoPago::Shipment.new(
-  receiver_address: new MercadoPago::ReceiverAddress.new({
-    zip_code: "[FAKER][ADDRESS][ZIP]",
-    street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
-    street_name: "[FAKER][ADDRESS][STREET_NAME]",
-    floor: [FAKER][NUMBER][BETWEEN][1,20],
-    apartment: "C"
-  })
-})
-# ... 
-```
-```csharp
-using MercadoPago;
-using MercadoPago.Resources;
-using MercadoPago.DataStructures.Preference;
-// ...
-Shipment shipment = new Shipment()
-{
-    ReceiverAddress = new ReceiverAddress()
-    {
-        ZipCode = "[FAKER][ADDRESS][ZIP]",
-        StreetName = "[FAKER][ADDRESS][STREET_NAME]",
-        StreetNumber = int.Parse("[FAKER][NUMBER][BETWEEN][1000,2000]"),
-        Floor = "[FAKER][NUMBER][BETWEEN][1, 20]",
-        Apartment = "C"
-    }
-};
-// ...
-```
-]]]
-
-## 2. Leve seu comprador para check-out
-
-Uma vez que a preferência é criada, use o URL que você encontra no attribute `init point` da resposta para gerar um botão de pagamento:
+Once the preference has been created, use the URL found in the attribute `init_point` of the response to create a payment button:
 
 ```html
 <!DOCTYPE html>
@@ -378,23 +306,25 @@ Uma vez que a preferência é criada, use o URL que você encontra no attribute 
 </html>
 ```
 
-## 3. Ative as notificações de pagamento
+## 3. Enable payment notifications
 
-As notificações informam automaticamente sobre seus novos pagamentos e atualizações de status.
+Notifications are automatically sent to inform you of any new payments and status updates.
 
-Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
+This will allow you to manage your inventories and keep your system synced.
 
-Para mais informações, consulte a seção de [Notificaçõess](/guides/notifications/ipn.pt.md).
+To learn more about it, go to [Notificacions](/guides/notifications/ipn.en.md).
 
-## 4.Cancele um pagamento
-As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.
+## 4. Cancel a payment
 
-O vencimento **não é automático**, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.pt.md) logo após o vencimento.
+The payment methods available for payments in cash must be paid from 3 to 5 days depending on each one.
 
-## 5. Teste sua integração
+They **do not expire automatically**, so you’re required to [cancel the payment](/guides/manage-account/cancellations-and-refunds.en.md) after expiration.
 
-Você pode testar sua integração antes de partir para produção, a fim de verificar o funcionamento e fazer os ajustes necessários.
 
-Para isso, deve-se utilizar usuários e cartões de teste.
+## 5. Test the integration
 
-Para mais informações, consulte a [seção de Testes](/guides/payments/web-checkout/testing.pt.md).
+You can test the integration before going into production, in order to check the operation and make all the adjustments you need.
+
+For that, you must use test users and cards.
+
+For more information, go to the [Tests](/guides/payments/web-payment-checkout/testing.en.md) section.

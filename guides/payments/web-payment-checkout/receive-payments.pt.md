@@ -1,17 +1,17 @@
-# Recibir pagos
+# Receba Pagamentos
 
-Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
+Receba pagamentos de forma simples e segura utilizando o Checkout do Mercado Pago.
 
-## 1. Crea una preferencia de pago
+## 1. Crie uma preferência de pagamentos
 
-Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
+A preferência de pagamentos contém todas as informações sobre o produto ou serviço a ser pago. Por exemplo:
 
-* Descripción y monto.
-* Información de tu comprador (_Email_, nombre, dirección, etc).
-* Medios de pago que aceptas.
-* _ID_ de referencia de tu sistema.
+* Descrição e preço.
+* Informações do seu comprador (e-mail, nome, endereço, etc.).
+* Meios de pagamentos aceitos.
+* ID de referência do seu sistema.
 
-Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+Para criar uma preferência de pagamento, você deve [instalar o SDK do MercadoPago](https://github.com/mercadopago) e configurar suas [credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 [[[
 ```php
@@ -43,7 +43,7 @@ MercadoPago.SDK.ClientSecret = "ENV_CLIENT_SECRET";
 ```
 ]]]
 
-Luego, deberás agregar los atributos de tu preferencia de pago y crear una preferencia:
+Em seguida, você deve adicionar os atributos da sua preferência de pagamento e crie uma preferência:
 
 [[[
 ```php
@@ -159,13 +159,13 @@ preference.Save();
 ```
 ]]]
 
-### Contenido de la preferencia
+### Conteúdo da preferência
 
-Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
+Quanto mais informações você nos enviar, melhor será a aprovação dos pagamentos e a experiência de seus usuários.
 
 #### Payer
 
-Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, estos no se le pedirán durante el proceso de pago.
+É necessário enviar o `email` do seu comprador. Se você nos enviar dados como tipo e número de identificação, ele não será solicitado durante o processo de pagamento.
 
 [[[
 ```php
@@ -362,9 +362,9 @@ Shipment shipment = new Shipment()
 ```
 ]]]
 
-## 2. Lleva a tu comprador al checkout
+## 2. Leve seu comprador para check-out
 
-Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
+Uma vez que a preferência é criada, use o URL que você encontra no attribute `init point` da resposta para gerar um botão de pagamento:
 
 ```html
 <!DOCTYPE html>
@@ -378,25 +378,23 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 </html>
 ```
 
-## 3. Activa las notificaciones de pagos
+## 3. Ative as notificações de pagamento
 
-Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+As notificações informam automaticamente sobre seus novos pagamentos e atualizações de status.
 
-Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
+Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
+Para mais informações, consulte a seção de [Notificaçõess](/guides/notifications/ipn.pt.md).
 
-## 4. Cancelar un pago
+## 4.Cancele um pagamento
+As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.
 
-Los medios de pago en efectivo deben ser pagados entre los 3 a 5 días dependiendo de cada uno.
+O vencimento **não é automático**, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.pt.md) logo após o vencimento.
 
-El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](/guides/manage-account/cancellations-and-refunds.es.md) luego del vencimiento.
+## 5. Teste sua integração
 
+Você pode testar sua integração antes de partir para produção, a fim de verificar o funcionamento e fazer os ajustes necessários.
 
-## 5. Prueba tu integración
+Para isso, deve-se utilizar usuários e cartões de teste.
 
-Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
-
-Para ello debes usar usuarios y tarjetas de prueba.
-
-Visita la sección [Probando](/guides/payments/web-checkout/testing.es.md) para más información.
+Para mais informações, consulte a [seção de Testes](/guides/payments/web-payment-checkout/testing.pt.md).
