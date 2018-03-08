@@ -137,12 +137,23 @@ Respuesta del Servidor:
 
 Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código HTML el ID del customer y los IDs de las tarjetas del usuario a través de los atributos `data-customer-id` y `data-card-ids`. Por ejemplo:
 
-```
-data-customer-id="209277402-FqRqgEc3XItrxs"
-data-card-ids="1518023392627,1518023332143"
+```html
+<form action="/procesar-pago" method="POST">
+  <script
+    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    data-public-key="ENV_PUBLIC_KEY"
+    data-transaction-amount="100.00"
+    data-customer-id="209277402-FqRqgEc3XItrxs"
+    data-card-ids="1518023392627,1518023332143">
+  </script>
+</form>
 ```
 
-Los IDs de tarjetas deberán separarse por coma.
+> NOTE
+>
+> Nota
+>
+> Los IDs de tarjetas deberán separarse por coma.
 
 ### 1. Obtener los IDs de las tarjetas almacenadas
 
@@ -201,7 +212,9 @@ Datos de una tarjeta guardada:
 
 ### 2. Usar los IDs de las tarjetas en el checkout
 
-Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*:
+Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*.
+
+Por ejemplo:
 
 ```html
 <form action="/procesar-pago" method="POST">
@@ -218,92 +231,6 @@ Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*:
   </script>
 </form>
 ```
-
-### 3. Crear un pago
-
-Una vez obtenido el _token_ del paso anterior en por ejemplo `/procesar-pago`, podrás generar el pago por el monto correspondiente.
-
-Al ser un pago con tarjeta guardada, deberás enviar el _id_ de _customer_ asociado junto al _token_.
-
-[[[
-```php
-<?php  
-
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-  $payment = new MercadoPago\Payment();
-
-  $payment->transaction_amount = 100;
-  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->payer = array(
-		"type" => "customer",
-		"id" => "123456789-jxOV430go9fx2e"
-	);
-
-  $payment->save();
-
-?>
-```
-```java
-
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-
-Payer payer = new Payer();
-payer.type = "customer";
-payer.id = "123456789-jxOV430go9fx2e";
-
-Payment payment = new Payment();
-payment.setTransactionAmount(100);
-payment.setToken('ff8080814c11e237014c1ff593b57b4d');
-payment.setPayer(payer);
-
-payment.save();
-
-```
-```node
-
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var payment_data = {
-  transaction_amount: 100,
-  token: 'ff8080814c11e237014c1ff593b57b4d'
-  payer: {
-    type: "customer"
-    id: "123456789-jxOV430go9fx2e"
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
-}).catch(function (error) {
-  // Do Stuff...
-});
-
-```
-```ruby
-
-require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.payer = {
-  type: "customer"
-  id: "123456789-jxOV430go9fx2e"
-}
-
-payment.save()
-
-```
-]]]
-
-
-Eso es todo, la respuesta tendrá el estado del pago (`approved`, o `rejected`).
-
-> Puedes ver más información sobre el [manejo de respuestas](#manejo-de-respuestas).
 
 
 ## Agregar nuevas tarjetas a un Customer
