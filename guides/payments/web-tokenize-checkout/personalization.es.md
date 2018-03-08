@@ -7,7 +7,7 @@
 
 # Web Tokenize Checkout - Personalización
 
-## Botón
+## Botón
 
 ### Estado por defecto
 
@@ -27,7 +27,7 @@ data-button-label="Comprar"
 
 #### Estilo
 
-Para utilizar tu propio estilo incluye el siguiente código CSS:
+Para utilizar tu propio estilo, incluye el siguiente código CSS:
 
 ```css
 button.mercadopago-button {
@@ -48,7 +48,7 @@ button.mercadopago-button {
 
 ![Payment button - Modified CSS](/images/paybutton-modified-css.png)
 
-## Detalle
+## Detalle de la compra
 
 ### Estado por defecto
 
@@ -61,122 +61,93 @@ data-transaction-amount="654"
 
 ### Personalización
 
-#### "Producto"
+Todos los atributos que pueden agregarse son los siguientes.
 
-##### Monto
+**Montos numéricos:**
 
-Si agregas el monto de envío u otro detalle en el Detalle, deberás modificar el monto del pago.
+- Productos: `data-summary-product`
+- Descuento: `data-summary-discount`
+- Envío: `data-summary-shipping`
+- Recargos: `data-summary-charges`
+- Impuestos: `data-summary-taxes`
+- Saldo pendiente: `data-summary-arrears`
 
-Por ejemplo si el **total** es `664` y el **envío** es `10`, deberás especificar el detalle del **producto** a través de los atributos `data-summary-*`. En este ejemplo, `data-summary-product` podría mostrarse como `654`:
+**Textos:**
 
-```html
-data-transaction-amount="664" <!-- Total -->
-data-summary-shipping="10" <!-- Envío -->
-data-summary-product="654" <!-- Producto -->
-```
+- Para modificar el título "Productos": `data-summary-product-label`
+- Para modificar el título "Descuento": `data-summary-discount-label`
 
-![Summary Product](/images/summary-shipping.png)
 
-##### Texto
+#### Productos
 
-Usando el atributo `data-summary-product-label`, puedes especificar el texto que aparece como *"Productos"* en el detalle. Por ejemplo, puedes agregar el detalle de lo que se está pagando:
+Usando el atributo `data-summary-product-label`, puedes especificar el texto que aparece como *"Productos"* en el detalle de la compra. Por ejemplo, puedes agregar el detalle de lo que se está pagando:
 
 ```html
 data-summary-product-label="4 productos"
 ```
 
-![Summary Product](/images/summary-product.png)
-
-
-#### "Descuento"
-
-##### Monto
-
-Usando el atributo `data-summary-discount`, puedes especificar el monto de descuento en el detalle. Por ejemplo:
+Mediante el atributo `data-summary-product`, puedes especificar el monto en el detalle de la compra. Por ejemplo:
 
 ```html
-data-transaction-amount="588.6" <!-- Total -->
-data-summary-discount="65.4" <!-- Descuento -->
-data-summary-product="654" <!-- Producto -->
+data-summary-product="654"
 ```
 
-Verás el monto como un *número negativo*:
 
-![Summary Discount](/images/summary-discount.png)
+#### Descuento
 
-##### Texto
-
-Usando el atributo `data-summary-product-label`, puedes especificar el texto que aparece como *"Descuento"* en el detalle. Por ejemplo, puedes agregar el porcentaje de descuento:
+Usando el atributo `data-summary-discount-label`, puedes especificar el texto que aparece como *"Descuento"* en el detalle de la compra. Por ejemplo, puedes agregar el porcentaje de descuento:
 
 ```html
 data-summary-discount-label="Descuento 10%"
 ```
 
-![Summary Discount](/images/summary-discount.png)
+Mediante el atributo `data-summary-discount`, puedes especificar el monto de descuento en el detalle de la compra. Por ejemplo:
 
-Puedes agregar información en el Summary usando los atributos `data-summary-*` en el fragmento de código HTML.
+```html
+data-summary-discount="65.4"
+```
+
+Verás el monto como un *número negativo*.
 
 
 #### Envío
 
-Usando el atributo `data-summary-shipping`, puedes especificar el monto de envío en el detalle. Por ejemplo:
+Usando el atributo `data-summary-shipping`, puedes especificar el monto de envío en el detalle de la compra. Por ejemplo:
 
 ```html
-data-transaction-amount="664" <!-- Total -->
-data-summary-shipping="10" <!-- Envío -->
-data-summary-product="654" <!-- Producto -->
+data-summary-shipping="10"
 ```
 
-![Summary Shipping](/images/summary-shipping.png)
-
-En caso de que el envío que especifiques sea `0` (cero), se mostrará automáticamente el texto "Envío gratis". Por ejemplo:
-
-```html
-data-transaction-amount="654" <!-- Total -->
-data-summary-shipping="0" <!-- Envío -->
-```
-
-![Summary Free Shipping](/images/summary-free-shipping.png)
+En caso de que el envío que especifiques sea *"0"* (cero), se mostrará automáticamente el texto "Gratis".
 
 
 #### Recargos
 
-Usando el atributo `data-summary-charges`, puedes especificar el monto de recargos en el detalle. Por ejemplo:
+Usando el atributo `data-summary-charges`, puedes especificar el monto de recargos en el detalle de la compra. Por ejemplo:
 
 ```html
-data-transaction-amount="664" <!-- Total -->
-data-summary-charges="10" <!-- Recargos -->
-data-summary-product="654" <!-- Producto -->
+data-summary-charges="10"
 ```
 
-Aparecerá en el detalle bajo el concepto de *"Recargos"*.
+Aparecerá en el detalle de la compra bajo el concepto de *"Recargos"*.
 
-![Summary Charges](/images/summary-charges.png)
 
 #### Impuestos
 
-Usando el atributo `data-summary-taxes`, puedes especificar el monto de impuestos en el detalle. Por ejemplo:
+Usando el atributo `data-summary-taxes`, puedes especificar el monto de impuestos en el detalle de la compra. Por ejemplo:
 
 ```html
-data-transaction-amount="664" <!-- Total -->
-data-summary-taxes="10" <!-- Impuestos -->
-data-summary-product="654" <!-- Producto -->
+data-summary-taxes="10"
 ```
 
-Aparecerá en el detalle bajo el concepto de *"Impuestos"*.
-
-![Summary Taxes](/images/summary-taxes.png)
+Aparecerá en el detalle de la compra bajo el concepto de *"Impuestos"*.
 
 #### Saldo pendiente
 
-Usando el atributo `data-summary-arrears`, puedes especificar el monto de saldo pendiente en el detalle. Por ejemplo:
+Usando el atributo `data-summary-arrears`, puedes especificar el monto de saldo pendiente en el detalle de la compra. Por ejemplo:
 
 ```html
-data-transaction-amount="664" <!-- Total -->
-data-summary-arrears="10" <!-- Saldo pendiente -->
-data-summary-product="654" <!-- Producto -->
+data-summary-arrears="10"
 ```
 
-Aparecerá en el detalle bajo el concepto de *"Saldo pendiente"*.
-
-![Summary Arrears](/images/summary-arrears.png)
+Aparecerá en el detalle de la compra bajo el concepto de *"Saldo pendiente"*.
