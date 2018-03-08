@@ -52,16 +52,12 @@ button.mercadopago-button {
 
 ### Estado por defecto
 
-```
-data-transaction-amount="654"
-```
-
 ![Summary Default](/images/summary-default.png)
 
 
 ### Personalización
 
-Todos los atributos que pueden agregarse son los siguientes.
+Los atributos que pueden agregarse y modificarse son los siguientes.
 
 **Montos numéricos:**
 
@@ -107,7 +103,11 @@ Mediante el atributo `data-summary-discount`, puedes especificar el monto de des
 data-summary-discount="65.4"
 ```
 
-Verás el monto como un *número negativo*.
+> NOTE
+>
+> Nota
+>
+> Verás el monto como un *número negativo*.
 
 
 #### Envío
@@ -118,7 +118,11 @@ Usando el atributo `data-summary-shipping`, puedes especificar el monto de enví
 data-summary-shipping="10"
 ```
 
-En caso de que el envío que especifiques sea *"0"* (cero), se mostrará automáticamente el texto "Gratis".
+> NOTE
+>
+> Nota
+>
+> En caso de que el envío especificado sea *"0"* (cero), se mostrará automáticamente el texto *"Gratis"*.
 
 
 #### Recargos
