@@ -9,9 +9,9 @@ sites_supported:
 
 # Cómo integrar Mercado Pago Point
 
-Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago Point disponible en los marketplaces de iOS y Android.
+Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago disponible en los marketplaces de iOS y Android.
 
-Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de aplicación externa que pueda ser accedida desde el mismo dispositivo donde el vendedor tiene instalada la aplicación de Point:
+Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de aplicación externa que pueda ser accedida desde el mismo dispositivo donde el vendedor tiene instalada la aplicación de Mercado Pago:
 
 - Aplicación Mobile para Android o iOS nativa.
 - Aplicación Mobile Híbirida.
@@ -21,9 +21,9 @@ Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de a
 >
 > Pre-requisitos
 >
-> * Contar con la aplicación de Mercado Pago Point.
+> * Contar con la aplicación de Mercado Pago (Desde la versión 2.34 para Android y 2.32 para iOS).
 > * Contar con un dispositivo Point asociado a la cuenta de Mercado Pago.
-> * El vendedor debe estar logueado con su cuenta de Mercado Pago en la aplicación de Mercado Pago Point.
+> * El vendedor debe estar logueado con su cuenta de Mercado Pago en la aplicación de Mercado Pago.
 > * Disponible para Android versión 2.8.0 o superior, iOS versión 1.7.0 o superior y solo cuando corren en iOS 9 o superior.
 
 ## Diagrama de Flujo
@@ -35,18 +35,14 @@ Actualmente, permitimos llevar a cabo una integración desde cualquier tipo de a
 
 Una de las formas de integrarse con Mercado Pago Point es mediante un deep link. Cuando se accede a dicho _link_, el mismo va a ser interceptado como un _Point-handled address_.
 
-En la llamada a este _link_ se pueden enviar diferentes parámetros que serán levantados por la aplicación de Point e impactados en el pago. Una vez que se hace el llamado a este link, el vendedor será redireccionado a la pantalla de la aplicación de Mercado Pago Point para pasar la tarjeta del cliente y así realizar el cobro.
+En la llamada a este _link_ se pueden enviar diferentes parámetros que serán levantados por la aplicación de Mercado Pago e impactados en el pago. Una vez que se hace el llamado a este link, el vendedor será redireccionado a la pantalla de la aplicación de Mercado Pago Point para pasar la tarjeta del cliente y así realizar el cobro.
 
 Una vez que el pago es procesado, el usuario será redireccionado a la `success_url` o `fail_url`, dependiendo del estado del pago. Esto deberá ser interceptado para retornar al usuario al flujo de la aplicación.
 
 
-
 ### Creación del Deep Linking
 
-
-La URL a ser interceptadas es la siguiente. `https://secure.mlstatic.com/org-img/point/app/index.html`
-
-
+La URL a ser interceptada es la siguiente. `https://www.mercadopago.com/point/integrations`
 
 Los parámetros que se pueden incluir son:
 
@@ -61,23 +57,23 @@ Los parámetros que se pueden incluir son:
 > WARNING
 >
 > * Los campos marcados con (\*) son campos obligatorios.
-> * Los campos external reference, notification url y payer email sólo se encuentran disponibles para la integración con la aplicación de Mercado Pago Point en Android.
 
 
 En el artículo de [GitHub](https://github.com/mercadopago/point-android_integration#deep-linking) podes obtener más información y el ejemplo correspondiente.
  
+ 
 ## 2. Integración vía Intent-Based
+
 > WARNING
 >
 > * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
 
 
-La otra forma de integrarse con la aplicación de Mercado Pago Point es mediante código nativo de Android, mediante el concepto de _Intent-Based_.
+La otra forma de integrarse con la aplicación de Mercado Pago es mediante código nativo de Android, mediante el concepto de _Intent-Based_.
 
 Debes utilizar el método “startActivityForResult” para iniciar directamente el proceso de pago. El resultado del pago va a retornar como “activityResult”.
 
-Es muy importante que el código maneje la posibilidad de que el usuario no tenga instalada la aplicación de Mercado Pago Point en su dispositivo, en este caso, recomendamos redireccionar al usuario al Play Store para descargar la misma.
-
+Es muy importante que el código maneje la posibilidad de que el usuario no tenga instalada la aplicación de Mercado Pago en su dispositivo, en este caso, recomendamos redireccionar al usuario al Play Store para descargar la misma.
 
 
 Como referencia puedes utilizar el código de ejemplo y documentación que tiene el formato para poder enviar la información del pago y manejar el objeto de retorno.
@@ -89,16 +85,25 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
 
-
-En el artículo de [notificaciones](/guides/notifications/ipn.es.md) podes obtener más información.
-
-## 4. Identificación de Pagos de Point
-
-Los pagos de Point se identifican de la siguiente manera cuando se busca el mismo en la API de Payments:
+En el artículo de [notificaciones](/guides/notifications/webhooks.es.md) podes obtener más información.
 
 
-- operation_type = pos\_payment
-- created_from = `2707436798674401`(Android) ó `7353443692214630`(iOS)
+## 4. Pagos de Point
+Los pagos de Point se pueden buscar en la API de Payments. Podes encontrar más información en el artículo de [API's](/reference/payments/_payments_id/get/)
 
+A su vez, existe una API exclusiva de Point que cuenta con alguna información adicional del pago: `https://api.mercadolibre.com/point/services/payment/<payment_id>?access_token=<access_token>`
 
-En el artículo de [API's](/guides/notifications/ipn.es.md) podes obtener más información sobre la API de Payments.
+La respuesta tendra el siguiente formato:
+
+```json
+{
+  "payment_id": 12345,
+  "caller_id": 44444,
+  "poi": "BBPOS-123123123",
+  "poi_type": "BBPOS",
+  "operator_id": 555555,
+  "buyer_info": {
+    "email": "email@email.com"
+  }
+}
+```
