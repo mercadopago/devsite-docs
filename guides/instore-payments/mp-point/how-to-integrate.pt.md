@@ -9,7 +9,7 @@ sites_supported:
 
 # Como integrar o Mercado Pago Point
 
-Para realizar cobranças de forma integrada com o nosso dispositivo Point é necessário fazer o download do aplicativo do Mercado Pago Point disponível nos marketplaces do iOS e Android.
+Para realizar cobranças de forma integrada com o nosso dispositivo Point é necessário fazer o download do aplicativo do Mercado Pago disponível nos marketplaces do iOS e Android.
 
 Atualmente, é possível realizar a integração a partir de qualquer aplicativo externo que possa ser acessado a partir do mesmo dispositivo em que o vendedor possuir o aplicativo do
 
