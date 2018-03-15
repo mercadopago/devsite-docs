@@ -42,7 +42,7 @@ Una vez que el pago es procesado, el usuario será redireccionado a la `success_
 
 ### Creación del Deep Linking
 
-La URL a ser interceptada es la siguiente. `https://www.mercadopago.com/point/integrations`
+La URL a ser interceptada es la siguiente: `https://www.mercadopago.com/point/integrations`
 
 Los parámetros que se pueden incluir son:
 
@@ -60,8 +60,8 @@ Los parámetros que se pueden incluir son:
 
 
 En el artículo de [GitHub](https://github.com/mercadopago/point-android_integration#deep-linking) podes obtener más información y el ejemplo correspondiente.
- 
- 
+
+
 ## 2. Integración vía Intent-Based
 
 > WARNING
@@ -79,7 +79,7 @@ Es muy importante que el código maneje la posibilidad de que el usuario no teng
 Como referencia puedes utilizar el código de ejemplo y documentación que tiene el formato para poder enviar la información del pago y manejar el objeto de retorno.
 
 En el artículo de [GitHub](https://github.com/mercadopago/point-android_integration#intent) podes obtener más información y el ejemplo correspondiente.
- 
+
 
 ## 3. Notificaciones de Pago
 
