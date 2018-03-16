@@ -25,7 +25,7 @@ Revisión manual         | ✔    | ✔    |      | ✔    |      |      |      
 Producto      | Solución        | Disponible
 :------------ |:--------------- |:------------------- |
 Pagos         | Botón de pago   |
-Pagos         | Web Checkout    |
+Pagos         | Web Payment Checkout    |
 Pagos         | Mobile Checkout |
 Pagos         | API             | ✔
 Suscripciones | Botón de pago   |
@@ -37,10 +37,10 @@ Marketplace   | API             |
 Producto      | Solución        | Disponible
 :------------ |:--------------- |:------------------- |
 Pagos         | Botón de pago   |
-Pagos         | Web Checkout    |
+Pagos         | Web Payment Checkout    |
 Pagos         | Mobile Checkout |
 Pagos         | API             | ✔
-Marketplace   | Web Checkout    |
+Marketplace   | Web Payment Checkout    |
 Marketplace   | API             |
 
 ## Disponibilidad por adquirente
