@@ -60,6 +60,6 @@ Ruby 1.9.3 y versiones anteriores | El símbolo :TLSv1_2 no existe en la versió
 
 En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer este cambio en tiempo y forma**, ya que de lo contrario es muy probable que tus conexiones con Mercado Pago comiencen a fallar.
 
-Si tienes alguna duda o necesitas asistencia para completar exitosamente este cambio, puedes contactarnos a través del siguiente correo electrónico developers@mercadopago.com
+Si tienes alguna duda o necesitas asistencia para completar exitosamente este cambio, puedes contactarnos a través del siguiente correo electrónico: developers@mercadopago.com.
 
-Equipo de Mercado Pago
+El equipo de Mercado Pago.
