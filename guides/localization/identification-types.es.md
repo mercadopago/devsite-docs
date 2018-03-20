@@ -26,6 +26,8 @@ curl -X GET \
 
 **Respuesta**
 
+[[[
+```json
 	[
 		{
 		    "id": "DNI",
@@ -36,6 +38,8 @@ curl -X GET \
   		},
   		...
   	]
+```
+]]]
 
 Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
 
