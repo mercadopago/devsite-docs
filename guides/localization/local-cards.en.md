@@ -4,7 +4,7 @@ You can use test credit cards from local payment methods in each country, and si
 
 To do this, use any of the cards we provide below, according to your country:
 
-|Argentina|Brasil|México|Chile|Colombia|Perú|Uruguay
+|Argentina|Brazil|Mexico|Chile|Colombia|Peru|Uruguay
 |----|-----|-----|-----|-----|-----|-----|
 | Diners 3023 803018 0020 | Diners 3612 673574 0137 | Visa Débito 4189 1412 2126 7633 | Diners 3661 366334 0014 | Diners 3057 874205 0528 | Visa Débito 4941 3371 3002 9283 | OCA 5429 9173 0821 2254 |
 | Nativa Mastercard 5465 5326 8384 0176 | Hipercard 6062 8267 8627 6634 |Mastercard Débito 5579 0785 2102 5680 | Magna 5680 0887 8727 1080 | Codensa 5907 1272 7385 5324 |Mastercard Débito 5160 0330 0471 4834 | Lider 5058 6652 3318 5628                |
