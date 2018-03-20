@@ -89,6 +89,7 @@ Pago Fácil			| `ticket`                 | `pagofacil`
 RapiPago			| `ticket`                 | `rapipago`
 Provincia Pagos			| `ticket`                 | `bapropagos`
 Carga Virtual			| `ticket`                 | `cargavirtual`
+Cobro Express			| `ticket`                 | `cobroexpress`
 Red Link		  	| `atm`		           | `redlink`
 Dinheiro em conta	       	| `account_money`          | `account_money`
 

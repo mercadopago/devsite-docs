@@ -33,14 +33,14 @@ The products offered by Mercado Pago may vary by country.
 
 API features for each country are shown below:
 
-|      Feature               |                  ARG                   | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :------------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Authorization and capture  | ✔                                      | ✔   |     |     |     | ✔   |     |     |
-| Capture by smaller amount  | ✔                                      | ✔   |     |     |     |     |     |     |
-| Refunds                    | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
-| Partial refunds            | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
-| Payments without CVV       | ✔                                      | ✔   |     |     | ✔   |     |     |     |
-| Soft descriptor            | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |
+|      Feature               | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| Authorization and capture  | ✔   | ✔   |     |     |     | ✔   |     |     |
+| Capture by smaller amount  | ✔   | ✔   |     |     |     |     |     |     |
+| Refunds                    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
+| Partial refunds            | ✔   | ✔   | ✔   |     | ✔   |     |     |     |
+| Payments without CVV       | ✔   | ✔   |     | ✔   | ✔   | ✔   | ✔   |     |
+| Soft descriptor            | ✔  |  ✔   |     |     |     |     |     | ✔   |
 
 
 
@@ -56,9 +56,9 @@ Certain [payment methods](payment-methods.en.md) may not be available for certai
 | Payments      | Web Checkout    | N/A                                                                                                                                                                                 |
 | Payments      | Mobile Checkout | `account_money`                                                                                                                                                                     |
 | Payments      | API             | N/A                                                                                                                                                                                 |
-| Subscriptions | Pay button      | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
-Subscriptions | Web Checkout    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
-Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+| Subscriptions | Pay button      | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
+Subscriptions | Web Checkout    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Web Checkout | N/A |
 | Marketplace | API          | N/A |
 

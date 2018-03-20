@@ -8,15 +8,29 @@ Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
 
 **GET /v1/identification_types**
 
+
+[[[
+```php
 	<?php
 		require ('mercadopago.php');
 		$mp = new MP ('ACCESS_TOKEN');
 		$identification_types = $mp->get('/v1/identification_types');
 		print_r ($identification_types);
 	?>
+```
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+'https://api.mercadopago.com/v1/identification_types?public_key=PUBLIC_KEY'
+```
+]]]
+
 
 **Resposta**
 
+
+[[[
+```json
 	[
 		{
 		    "id": "DNI",
@@ -27,6 +41,9 @@ Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
   		},
   		...
   	]
+```
+]]]
+
 
 Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos em [Referência da API](/reference).
 

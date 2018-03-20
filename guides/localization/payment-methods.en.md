@@ -89,8 +89,9 @@ Pago Fácil			| `ticket`                 | `pagofacil`
 RapiPago			| `ticket`                 | `rapipago`
 Provincia Pagos			| `ticket`                 | `bapropagos`
 Carga Virtual			| `ticket`                 | `cargavirtual`
+Cobro Express			| `ticket`                 | `cobroexpress`
 Red Link		  	| `atm`		           | `redlink`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
 
 ### Brasil
 
@@ -102,9 +103,9 @@ American Express		| `credit_card`            | `amex`
 Hipercard			| `credit_card`            | `hipercard`
 Diners Club International	| `credit_card`            | `diners`
 Elo				| `credit_card`            | `elo`
-Mercado Livre	Card	| `credit_card`            | `melicard`
+Mercado Livre	Card		| `credit_card`            | `melicard`
 Boleto Bancario			| `ticket`                 | `bolbradesco`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 
 ### Chile
@@ -121,7 +122,7 @@ Tarjeta Presto             	| `credit_card`            | `presto`
 Servipag      			| `ticket`                 | `servipag`
 Red Compras (Webpay)		| `bank_transfer`          | `webpay`
 Khipu      			| `bank_transfer`          | `khipu`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
 
 ### Colombia
 
@@ -135,7 +136,7 @@ Crédito Fácil Codensa    	| `credit_card`            | `codensa`
 Efecty        			| `ticket`                 | `efecty`
 Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
 
 ### Mexico
 
@@ -151,7 +152,7 @@ Oxxo            		| `ticket`                 | `oxxo`
 BBVA Bancomer    	    	| `atm`		           | `bancomer`
 Banamex    		       	| `atm`		           | `banamex`
 Santander    		       	| `atm`		           | `serfin`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
 Bitcoin	                	| `digital_currency`       | `bitcoin`
 
 ### Peru
@@ -161,7 +162,7 @@ Payment Method    		| Payment Type ID          | ID
 Visa				| `credit_card`            | `visa`
 Visa Débito			| `dedit_card`             | `debvisa`
 BCP, BBVA Continental or others  	| `atm`                    | `pagoefectivo_atm`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
 
 ### Uruguay
 
@@ -174,7 +175,7 @@ OCA				| `credit_card`            | `oca`
 Lider				| `credit_card`            | `lider`
 Abitab				| `ticket`                 | `abitab`
 Red Pagos			| `ticket`                 | `redpagos`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
 
 ### Venezuela
 
@@ -184,4 +185,4 @@ Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
 BBVA Provincial			| `ticket`                 | `provincial`
 Banco Mercantil			| `atm`                    | `mercantil`
-Account money	       	| `account_money`          | `account_money`
+Account money	       		| `account_money`          | `account_money`
