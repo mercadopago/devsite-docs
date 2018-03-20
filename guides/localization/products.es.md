@@ -33,14 +33,14 @@ Las productos ofrecidos por Mercado Pago pueden variar según cada país.
 
 A continuación un listado de funcionalidades específicas de nuestra API por país:
 
-|      Funcionalidad      |                  ARG                   | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :---------------------- | :------------------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Autorización y captura  | ✔                                      | ✔   |     |     |     | ✔   |     |     |
-| Captura por monto menor | ✔                                      | ✔   |     |     |     |     |     |     |
-| Reembolsos              | ✔                                      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
-| Reembolsos parciales    | ✔                                      | ✔   | ✔   |     | ✔   |     |     |     |
-| Pagos sin CVV           | ✔                                      | ✔   |     |     | ✔   |     |     |     |
-| Soft descriptor         | ✔ (Solo MasterCard y American Express) | ✔   |     |     |     |     |     | ✔   |
+|      Funcionalidad      | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :---------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| Autorización y captura  | ✔   | ✔   |     |     |     | ✔   |     |     |
+| Captura por monto menor | ✔   | ✔   |     |     |     |     |     |     |
+| Reembolsos              | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
+| Reembolsos parciales    | ✔   | ✔   | ✔   |     | ✔   |     |     |     |
+| Pagos sin CVV           | ✔   | ✔   |     | ✔   | ✔   | ✔   | ✔   |     |
+| Soft descriptor         | ✔   | ✔   |     |     |     |     |     | ✔   |
 
 
 
@@ -56,9 +56,9 @@ Puede suceder que determinados [medios de pago](/guides/localization/payment-met
 | Pagos         | Web Checkout    | N/A                                                                                                                                                                                 |
 | Pagos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
 | Pagos         | API             | N/A                                                                                                                                                                                 |
-| Suscripciones | Botón de pago   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink` |
-Suscripciones | Web Checkout    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
-Suscripciones | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`|
+| Suscripciones | Botón de pago   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
+Suscripciones | Web Checkout    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Suscripciones | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Web Checkout | N/A |
 | Marketplace | API          | N/A |
 
