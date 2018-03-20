@@ -2,7 +2,7 @@
 
 ## What is VTEX?
 
-[VTEX](https://www.vtex.com/es/) is a robust PCI compliance e-commerce platform based in Brazil with operations all around Latin America that provides the capability to process payments through Mercado Pago.
+[VTEX](https://www.vtex.com/en/) is a robust PCI compliance e-commerce platform based in Brazil with operations all around Latin America that provides the capability to process payments through Mercado Pago.
 
 For further information about VTEX features please check it's [support site](help.vtex.com).
 
@@ -167,7 +167,7 @@ Offline payment plan are the payment methods which payments are made in two step
 9. Set status active to activate the payment method in checkout - could be set up and activated later.
 10. Save.
 
-    ![Offline](/images/vtex-webpay-14.png)
+    ![Offline](/images/vtex-webpay-4.png)
 
 
 ### Set up custom payment plan
@@ -197,10 +197,10 @@ Uruguay: Oca.
 
     ![Custom plan](/images/vtex-custom-3.png)
 
-7. Set a description (optional).
-8. Select the affiliation.
-9. Set status active to activate the payment method in checkout - could be set up and activated later.
-10. Select automatic.
+8. Set a description (optional).
+9. Select the affiliation.
+10. Set status active to activate the payment method in checkout - could be set up and activated later.
+11. Select automatic.
 11. Save
 
 ![Custom plan](/images/vtex-custom-4.png)

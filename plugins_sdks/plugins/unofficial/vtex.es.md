@@ -4,7 +4,7 @@
 
 [VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com).
+Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com/es).
 
 ## ¿Cómo puedo operar con Mercado Pago en VTEX?
 
@@ -169,7 +169,7 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
 10. Salvar la configuración.
 
-    ![Offline](/images/vtex-webpay-14.png)
+    ![Offline](/images/vtex-webpay-4.png)
 
 
 ### Configurar plan de pago personalizado
@@ -194,17 +194,16 @@ Uruguay: Oca.
 
     ![Custom plan](/images/vtex-custom-2.png)
 
-6. Completar los campos para configurar la Tarjeta de crédito deseada
-    Se deben copiar y pegar los valores del instructivo para evitar errores.
+6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
 7. Salvar la configuración.
 
     ![Custom plan](/images/vtex-custom-3.png)
 
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Seleccionar automático.
-11. Salvar la configuración.
+8. Colocar una descripción (puede ser blancos).
+9. Seleccionar la afiliación.
+10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
+11. Seleccionar automático.
+12. Salvar la configuración.
 
 ![Custom plan](/images/vtex-custom-4.png)
 
