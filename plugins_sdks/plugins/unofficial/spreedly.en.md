@@ -33,13 +33,13 @@ Lastly, to process payments with Mercado Pago you need to send payer's identific
 
 To start transacting you will need to:
 
-1) Create [a free account](https://spreedly.com/trial-qualification) and obtain the [credentials](https://docs.spreedly.com/basics/credentials).
+1. Create [a free account](https://spreedly.com/trial-qualification) and obtain the [credentials](https://docs.spreedly.com/basics/credentials).
 
-2) [Add Mercado Pago](https://docs.spreedly.com/basics/gateway/) as payment gateway.
+2. [Add Mercado Pago](https://docs.spreedly.com/basics/gateway/) as payment gateway.
 
-3) Obtain [information about the payment methods](https://docs.spreedly.com/basics/payment-method) of your users.
+3. Obtain [information about the payment methods](https://docs.spreedly.com/basics/payment-method) of your users.
 
-4) [Create an order](https://docs.spreedly.com/basics/purchase) with Spreedly through Mercado Pago with your users payment information.
+4. [Create an order](https://docs.spreedly.com/basics/purchase) with Spreedly through Mercado Pago with your users payment information.
 
 ## Add Mercado Pago as gateway
 
@@ -383,7 +383,7 @@ In your form you should add the following  `input`:
 
 ```html
 <form>
-	...
+	  ...
     <input type='hidden' id='deviceId' name='deviceId' />
     ...
 </form>

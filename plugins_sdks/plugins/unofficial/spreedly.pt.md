@@ -1,7 +1,7 @@
-# Integrate con Spreedly
-Recibe pagos de manera simple y segura de Mercado Pago a través de Spreedly.
+# Integrar com Spreedly
 
-Los metodos disponibles de Spreedly con Mercado Pago son:
+Receba pagamentos de maneira simples e segura de Mercado Pago através do Spreedly.
+Os métodos disponíveis de Spreedly com Mercado Pago são:
 
 - Purchase
 - Authorize
@@ -10,9 +10,9 @@ Los metodos disponibles de Spreedly con Mercado Pago son:
 - Void
 - Verify
 
-Para la integración con Spreedly es necesario obtener y configurar las credenciales de Mercado Pago que podes obtener desde el siguiente [link](https://www.mercadopago.com/mla/account/credentials)
+Para integração com Spreedly é necessário obter e configurar as credenciais de Mercado Pago que pode obter à partir do seguinte link [credentials section of your account](https://www.mercadopago.com.ar/account/credentials).
 
-A su vez, también es necesario ingresar el código de país:
+Por sua vez, também é necessário inserir o código do país:
 
 - AR - Argentina
 - BR - Brazil
@@ -22,33 +22,29 @@ A su vez, también es necesario ingresar el código de país:
 - PE - Peru
 - UY - Uruguay
 
-Finalmente, para operar con Mercado pago es necesario que nos envies los datos de indentificación del dueño de la tarjeta (a excepción de México). Debes enviar como datos espéficicos del gateway:
+Finalmente, para operar com Mercado Pago é necessário que nos envie os dados de identificação do dono do cartão (à exceção do México). Você deve enviar como dados específicos do gateway:
 
 - cardholder_identification_type.
 - cardholder_identification_number.
 
+## Começando com Spreedly
 
-## Empezando con Spreedly
-Para empezar a ejecutar transacciones y obtener pagos de tus usuarios vas a necesitar:
+Para começar a executar transações e obter pagamentos de seus usuarios necessitará:
+1. Criar uma [cuenta gratutita](https://spreedly.com/trial-qualification) e obter as credenciais.
+2. [Adicionar Mercado Pago](https://docs.spreedly.com/basics/gateway/) como gateway de pagamento.
+3. Começar a obter [informação do meio de pagamento](https://docs.spreedly.com/basics/payment-method) de seus usuários.
+4. [Gerar uma compra](https://docs.spreedly.com/basics/purchase)  com Spreedly através de Mercado Pago com a informação de pagamento de seus usuários.
 
-1. Crear una [cuenta gratutita](https://spreedly.com/trial-qualification) y obtener las [credenciales](https://docs.spreedly.com/basics/credentials).
+## Adicionar Mercado Pago como gateway
 
-2. [Agregar Mercado Pago](https://docs.spreedly.com/basics/gateway/) como gateway de pago.
+Antes de iniciar a geração das transações através de Spreedly, tem que adicionar Mercado Pago como gareway. Nesta etapa, você atribui as credenciais do Mercado Pago e outras propriedades específicas.
 
-3. Empezar a [obtener información del medio de pago](https://docs.spreedly.com/basics/payment-method) de tus usuarios.
-
-4. [Generar una compra](https://docs.spreedly.com/basics/purchase) con Spreedly a través de Mercado Pago con la información de pago de tus usuarios.
-
-## Agregar Mercado Pago como gateway
-Antes de empezar a generar transacciones a través de Spreedly, tenes que agregar a Mercado Pago como gateway. En este paso, es donde asignas las credenciales de Mercado Pago y otras propiedades específicas.
-
-La API involucrada en este proceso es:
-
+A API envolvida neste processo é:
 ```
 https://core.spreedly.com/v1/gateways.json
 ```
 
-Un ejemplo de la vinculación de Mercado Pago como gateway sería:
+Um exemplo da vinculação de Mercado Pago como gateway seria:
 
 ```curl
 $ curl https://core.spreedly.com/v1/gateways.json \
@@ -61,7 +57,7 @@ $ curl https://core.spreedly.com/v1/gateways.json \
       }'
 ```
 
-La respuesta que vas a obtener es similar a la siguiente:
+A resposta que obterá é similar à seguinte:
 
 ```
 {
@@ -111,37 +107,39 @@ La respuesta que vas a obtener es similar a la siguiente:
 }
 ```
 
-## Generar un medio de pago
-Para que Spreedly puede transaccionar a través de Mercado Pago es necesario obtener la información de la tarjeta de tu usuario ("Spreedly payment method"). Debido a que se trata de información sensible la misma no debe ir a tu servidor. Para esto es necesario implementar el [checkout de Spreedly](https://docs.spreedly.com/basics/payment-method/).
+## Gerar um meio de pagamento
 
-La API involucrada en este proceso es:
+Para que Spreedly possa transacionar através de Mercado Pago é necessário obter a informação do cartão do seu usuário (Spreedly payment method). Por ser informação confidencial, não deve ir ao seu servidor. Para isto é necessário implementar o [checkout de Spreedly](https://docs.spreedly.com/basics/payment-method/).
+
+A API envolvida neste processo é:
 
 ```
 https://core.spreedly.com/v1/payment_methods.json
 ```
 
-Un ejemplo de la generación de un metodo de pago sería:
+Um exemplo da geração de um método de pagamento seria:
 
 ```curl
 $ curl https://core.spreedly.com/v1/payment_methods.json \
 -u 'C7cRfNJGODKh4Iu5Ox3PToKjniY:4UIuWybmdythfNGPqAqyQnYha6s451ri0fYAo4p3drZUi7q2Jf4b7HKg8etDtoKJ' \
   -H 'Content-Type: application/json' \
   -d '{
-	  "payment_method": {
-	    "credit_card": {
-	      "first_name": "TEST",
-	      "last_name": "TEST",
-	      "number": "CARD NUMBER",
-	      "verification_value": CVV,
-	      "month": "CARD EXPIRATION MONTH",
-	      "year": "CARD EXPIRATION YEAR"
-	    },
-	    "email": "[FAKER][INTERNET][FREE_EMAIL]"
-	  }
-	}
+      "payment_method": {
+        "credit_card": {
+          "first_name": "TEST",
+          "last_name": "TEST",
+          "number": "CARD NUMBER",
+          "verification_value": CVV,
+          "month": "CARD EXPIRATION MONTH",
+          "year": "CARD EXPIRATION YEAR"
+        },
+        "email": "luther_klocko@hotmail.com"
+      }
+    }
 '
 ```
-La respuesta que vas a obtener es similar a la siguiente:
+
+A resposta que obterá é similar à seguinte:
 
 ```
 {
@@ -197,16 +195,16 @@ La respuesta que vas a obtener es similar a la siguiente:
 }
 ```
 
-## Generar un pago
-Una vez que ya hayas configurado Mercado Pago como gateway y tengas información del medio de pago de tu usuario en Spreedly, podes empezar a generar pagos y otro tipo de transacciones.
+## Gerar um pagamento
 
-Para generar el pago es necesario que tengas el token que representa al medio de pago de tu usuario ("Spreedly payment method") y el token que representa a Mercado Pago como gateway. Con esto podrás generar el POSTing al endpoint API de Spreedly:
+Depois de configurar o Mercado Pago como gateway e ter informações sobre o seu método de pagamento no Spreedly, você pode começar a gerar pagamentos e outros tipos de transações.
+Para gerar o pagamento, é necessário que você tenha o token que representa seu método de pagamento (Método de pagamento Spreedly) e o token que representa o Mercado Pago como um gateway. Com isso, você poderá gerar o _POST_ para a API Spreedly:
 
 ```
 https://core.spreedly.com/v1/gateways/<gateway_token>/purchase.<format>
 ```
 
-Un ejemplo de la generación de un pago sería:
+Um exemplo da geração de um pagamento seria:
 
 ```curl
 $ curl https://core.spreedly.com/v1/gateways/6DqX57I6fHgIuUkVN2HGszjDSu1/purchase.json \
@@ -221,12 +219,9 @@ $ curl https://core.spreedly.com/v1/gateways/6DqX57I6fHgIuUkVN2HGszjDSu1/purchas
         }
       }'
 ```
+> O campo amount sempre é um inteiro em centena. Por tanto, se quer cobrar $84,58, deverá enviar o valor 8458.
 
-
-> El campo amount siempre es un entero en centena. Por lo tanto, si queres cobrar $84,58, tienes que enviar el valor 8458.
-
-
-La respuesta que vas a obtener es similar a la siguiente:
+A resposta que obterá é similar à seguinte:
 
 ```
 {
@@ -334,9 +329,9 @@ La respuesta que vas a obtener es similar a la siguiente:
 }
 ```
 
-El campo "succeeded" indica que la transacción fue exitosa. Una vez que obtengas que la transacción fue aprobada, podras mostrarle la pantalla de felicitaciones a tu cliente.
+O campo succeeded indica que a transação obteve êxito. Uma vez que a transação tenha sido aprovada, poderá mostrar a janela de sucesso ao seu cliente.
 
-También puedes ejecutar otro tipo de transacciones a través de Mercado Pago utilizando el medio de pago obtenido:
+Também pode executar outro tipo de transação através de Mercado Pago utilizando o meio de pagamento obtido:
 
 - Authorize
 - Capture
@@ -344,45 +339,51 @@ También puedes ejecutar otro tipo de transacciones a través de Mercado Pago ut
 - Void
 - Verify
 
-## Campos propios de Mercado Pago
-Para procesar con Mercado Pago y para obtener mayores niveles de aprobación en tus pagos recomendamos que en la integración con Spreedly envies la mayor cantidad de información posible al generar un pago. Esta información se envía dentro del array: `"gateway_specific_fields"` `"mercado_pago"`.
+## Campos próprios de Mercado Pago
+
+Para processar com Mercado Pago e para obter maiores níveis de aprovação em seus pagamentos recomendamos que na integração com Spreedly envie a maior quantidade de informações possíveis ao gerar um pagamento. Esta información se envia dentro do array: `"gateway_specific_fields"` `"mercado_pago"`.
 
 ### Payer Identification
-Para procesar con Mercado Pago es necesario enviar la identificación del pagador en cada pago. Esta información es OBLIGATORIA para todos los sitios de Mercado Pago a excepción de México. Para mayor detalles, ingresa en el siguiente [link]("/reference/identification_types/_identification_types/get/")
 
-### Cuotas
-Podes especificar el número de cuotas para una transacción enviando el campo `installments`. Si este campo no es enviado, Spreedly va a enviarlo con valor igual a 1.
+Para processar com Mercado Pago é necessário enviar a identificação do pagador em cada pagamento. Esta informação é OBRIGATÓRIA para todos os sítios de Mercado Pago a exceção de México. Para mais detalhes, [acesse o seguinte link](/reference/identification_types/_identification_types/get/).
 
-### Statement Descriptor
-Este es un string que podes enviar para que tu cliente pueda identificar el cargo en el resumen de la tarjeta. Podes especificar el valor enviandolo en el campo `statement_descriptor`. Esto se encuentra sólo disponible para Brasil.
+### Parcelas
 
-### Información Adicional
-Para obtener una mejora en la aprobación de los pagos podes enviar información adicional del pago en formato JSON en el campo `additional_info`. Para mayor información ingresa en el siguiente [link]("/reference/payments/resource/").
+Você pode especificar o número de parcelas para uma transação enviando o campo `installments`. Se este campo não for enviado, Spreedly enviará com valor igual a 1.
 
-### Mercado Pago Device Fingerprint
-Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas y mejorará la aprobación de tus pagos.
+### Statement Descriptor
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu checkout:
+Esta é uma string que pode enviar para que seu cliente possa identificar a cobrança no extrato do cartão. Pode especificar o valor enviando-o no campo `statement_descriptor`. Isto se encontra disponível somente para o Brasil.
 
+### Informação Adicional
+
+Para obter uma melhora na aprovação dos pagamentos pode enviar as informacoes adicionais do pagamento em formato JSON no campo `additional_info`. Para maiores informações acesse o [seguinte link]("/reference/payments/resource/").
+
+### Mercado Pago Device Fingerprint
+
+Mercado Pago tem suas próprias ferramentas de prevenção de fraude. Sempre que seja possível recomendamos enviar informação sobre o dispositivo do comprador, isto ajudará a evitar transações fraudulentas e melhorará a aprovação de seus pagamentos.
+
+Para implementar em seu site a geração do device deve adicionar o seguinte código ao teu checkout:
 
 ```html
 <script src="https://resources.mlstatic.com/device/meli-metrix.min.js"></script>
 ```
 
-En tu formulario deberás agregar el siguiente `input`:
+Em seu formulário deverá adicionar o seguinte `input`:
 
 ```html
 <form>
-	...
+	  ...
     <input type='hidden' id='deviceId' name='deviceId' />
     ...
 </form>
 ```
 
-Finalmente, deberás enviar el valor obtenido en el campo `device_id`.
+Finalmente, deverá enviar o valor obtido no campo `device_id`.
 
-### Ejemplo de un pago completo
-A continuación pueden ver un ejemplo de un pago enviando toda la información disponible:
+### Exemplo de um pagamento completo
+
+Here's an example of a payment sending all the available information:
 
 ``` curl
 $ curl https://core.spreedly.com/v1/gateways/6DqX57I6fHgIuUkVN2HGszjDSu1/purchase.json \
