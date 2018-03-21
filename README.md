@@ -4,12 +4,12 @@ En este repositorio esta alojado el contenido mostrado en nuestro sitio para des
 
 > - Argentina: https://beta.mercadopago.com.ar/developers
 > - Brasil: https://beta.mercadopago.com.br/developers
-> - México: https://beta.mercadopago.com.mx/developers
+> - México: https://www.mercadopago.com.mx/developers
 > - Uruguay: https://beta.mercadopago.com.uy/developers
 > - Perú: https://www.mercadopago.com.pe/developers
 > - Chile: https://beta.mercadopago.cl/developers
-> - Venezuela: https://beta.mercadopago.com.ve/developers
-> - Colombia: https://beta.mercadopago.com.co/developers
+> - Venezuela: https://www.mercadopago.com.ve/developers
+> - Colombia: https://www.mercadopago.com.co/developers
 
 ## Nomenclatura y Estructura de Carpetas ##
 
