@@ -39,22 +39,22 @@ Testar todos os cenários possíveis de pagamento aprovado, pendente ou recusado
     * **CONT**: Pagamento pendente.
     * **CALL**: Recusado, ligar para autorizar.  
     * **FUND**: Recusado por saldo insuficiente.  
-    * **SECU**: ecusado por código de segurança.  
+    * **SECU**: Recusado por código de segurança.  
     * **EXPI**: Recusado por data de validade.
-    * **FORM**: Recusado por erro no formulário  
+    * **FORM**: Recusado por erro no formulário.
     * **OTHE**: Recusado geral.
 
 Em cada caso, deverá informar ao seu cliente o resultado do pagamento e qual o próximo passo a seguir. Para isso, você receberá um HTTP Status 201 OK informando que o pagamento foi criado corretamente e um código de resultado para que possa redirecionar o cliente para a página com a mensagem correta.
 
-## Verifica haber recibido la notificación Webhook
+## Verifica ter recebido a notificação Webhook
 
-Mercado Pago te enviará una notificación del evento ocurrido. Valida que la hayas recibido correctamente e impactado en forma correcta en tu sistema de gestión.
+Mercado Pago te enviará uma notificação do evento ocorrido. Valida que a tenha recebido corretamente e tratado corretamente no seu sistema de gestão.
 
-### Efectúa la anulación del pago
+### Cancele um pagamento
 
-Realiza la devolución de un pago aprobado o la cancelación de un pago pendiente y verifica que te llegue la notificación con la novedad correspondiente al recurso.
+Realize a devolução de um pagamento aprovado ou o cancelamento de um pagamento pendente e verifique que recebeu a notificação com atualização correspondente ao recurso.
 
 
-## Prueba la creación de un cliente
+## Teste a criação de um cliente
 
-Verifica que se haya creado el `customer` con la tarjeta asociada y que sus datos de tarjeta sean recuperados en forma correcta cuando cargues nuevamente el checkout.
+Verifica que se crie o `customer` com o cartão associado e que seus dados de cartão sejam recuperados de modo correto quando carregar novamente o checkout.

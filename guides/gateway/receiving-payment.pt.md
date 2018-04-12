@@ -18,7 +18,7 @@ Para utilizar o modo Gateway, dois atributos são disponibilizados no fluxo de p
 
 É o modo que indica se processaremos os pagamentos com seus próprios números de estabelecimento comercial ou com os do Mercado Pago.
 
-Se este parâmetro não for enviado no *POST^, o comportamento padrão será o valor `aggregator`, indicando que o pagamento foi processado utilizando os números de estabelecimento comercial do Mercado Pago.
+Se este parâmetro não for enviado no *POST*, o comportamento padrão será o valor `aggregator`, indicando que o pagamento foi processado utilizando os números de estabelecimento comercial do Mercado Pago.
 
 Se deseja processar com seus números de estabelecimento comercial, você deve enviar gateway. Automaticamente, de acordo com o método de pagamento e os números BIN, o Mercado Pago utilizará o número de estabelecimento comercial correspondente para essa transação.
 
@@ -89,39 +89,40 @@ A resposta possui informações sobre as parcelas disponíveis indicando o valor
 
 
 
-## Atributos adicionales
+## Atributos adicionais
 
-Luego de que hayas hecho el flujo de captura de datos de tarjeta y cuentes con el `card_token` puedes proceder a generar el pago.
+Depois de ter feito o fluxo de captura de dados do cartão e contar com o `card_token` você pode continuar a gerar o pagamento.
 
-Para utilizar el modo _Gateway_ se disponibilizan dos atributos al flujo de procesamiento de pagos:
+Para utilizar o modo _Gateway_ se disponibilizam dois atributos para o fluxo de processamento de pagamento:
 
 1. `processing_mode`
 2. `merchant_account_id` _(opcional)_
 
 ### processing\_mode
 
-Es el modo que indica si procesaremos los pagos con tus propios números de comercio o los de Mercado Pago.
+É o modo que indica se processaremos os pagamentos com seus próprios números de comércio ou os do Mercado Pago.
 
-Si este parámetro no se envía en el *POST^, el comportamiento por defecto es que el valor sea `aggregator` e indica que el pago fue procesado utilizando los números de comercio de Mercado Pago.
 
-Si quieres procesar con tus números de comercio debes enviar `gateway`.
-Automáticamente según el medio de pago y los números de BIN, Mercado Pago utilizará el número de comercio correspondiente para esa transacción.
+Se este parâmetro não for enviado em *POST*, o comportamento padrão é que o valor seja `aggregator` e indique que o pagamento foi processado usando os números de comércio do Mercado Pago.
+
+Se quiser processar com seus números de comércio deve enviar `gateway`.
+Automaticamente segundo o meio de pagamento e os números de BIN, Mercado Pago utilizará o número de comércio correspondente para essa transação.
 
 > NOTE
 >
 > Nota
 >
-> Para solicitar el alta del modo Gateway y configuración de tus números de comercio debes hablar con tu ejecutivo de cuenta.
+> Para solicitar o registro do modo Gateway e a configuração de seus números comerciais, você deve falar com o executivo da conta.
 
 ### merchant\_account\_id
 
-En casos de uso más complejos, es de utilidad poder definir en cada pago el número de comercio a utilizar.
+Em casos de uso mais complexos, é de utilidade poder definir em cada pagamento o número de comércio a utilizar.
 
-El atributo `merchant_account_id` permite controlar dicho comportamiento. Ese ID será el identificador interno de Mercado Pago que representa a un determinado número de comercio.
+O atributo `merchant_account_id` permite controlar esse comportamento. Esse ID será o identificador interno do Mercado Pago que representa um certo número de comércio.
 
-## Creando un pago
+## Criando um pagamento
 
-Una vez que cuentas con el id del `card_token` puedes realizar el pago realizando un API call:
+Uma vez que conte com o id do `card_token` pode realizar o pagamento realizando uma chamada a API:
 
 ```php
 <?php
@@ -145,7 +146,7 @@ Una vez que cuentas con el id del `card_token` puedes realizar el pago realizand
 ?>
 ```
 
-La respuesta esperada será la siguiente:
+A resposta esperada será a seguinte:
 
 ```json
 {
@@ -160,18 +161,18 @@ La respuesta esperada será la siguiente:
 }
 ```
 
-Además de devolver los campos `processing_mode` y `merchant_account_id` se devuelven dos campos más:
+Além de retornar os campos `processing_mode` e `merchant_account_id` mais dois campos são retornados:
 
-* `acquirer`: Nombre del adquiriente
-* `merchant_number`: Número de comercio utilizado para procesar el pago
+* `acquirer`: Nome do adquirente
+* `merchant_number`: Número de comércio utilizado para processar o pagamento
 
-## Creando un pago en cuotas
+## Criando um pagamento parcelado
 
-Para hacer uso de tus promociones bancarias, es importante que se envíe el campo `installments` y `processing_mode` en `gateway` al momento de crear un pago.
+Para fazer uso de suas promoções bancárias, é importante que envie o campo `installments` e `processing_mode` no `gateway` no momento de criar um pagamento.
 
-El campo `installments` corresponde a la cantidad de cuotas que el comprador elije.
+O campo `installments` corresponde a quantidade de parcelas que o comprador escolhe.
 
-Para obtener las promociones y cuotas disponibles:
+Para obter as promoções e cotas disponíveis:
 
 ```javascript
 Mercadopago.getInstallments({
@@ -182,7 +183,7 @@ Mercadopago.getInstallments({
 }, setInstallmentInfo);
 ```
 
-La respuesta cuenta con la información de las cuotas disponibles indicando el valor a pagar:
+A resposta conta com a informação das cotas disponíveis indicando o valor a pagar:
 
 ```json
 [

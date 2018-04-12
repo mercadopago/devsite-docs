@@ -53,7 +53,7 @@ O módulo do Mercado Pago para WP eCommerce é integrado com as seguintes funcio
 
 ### Outras Funcionalidades
 * Checagens de credenciais e status de plataforma
-* Página de sucesso customizável
+* Página de sucesso customizvel
 * Calculadora de parcelas
 * Conversão de moedas
 * Notificação instantânea de pagamentos e webhooks
@@ -76,7 +76,7 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 
 1. Obtenha o código fonte do módulo de um repositório (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> ou <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
 
-2. Descompacte a pasta e renomeie-a para "wpecomm-mercado-pago-module";
+2. Descompacte a pasta e a renomeie para "wpecomm-mercado-pago-module";
 
 3. Copie o diretório "wpecomm-mercado-pago-module" para dentro do diretório *[WordPressRootDirectory]/wp-content/plugins/*. Está feito!
 
@@ -147,7 +147,7 @@ Como o checkout é mostrado.
   * *Método de Integração*: Como seus clientes irão interagir com o Mercado Pago para pagar os pedidos;
   * *Largura do iFrame*: A largura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
   * *Altura do iFrame*: A altura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
-  * *Auto Retorno*: If set, the platform will return to your store when the payment is approved;
+  * *Auto Retorno*: Se definido, a plataforma retornará à sua loja quando o pagamento for aprovado;
   * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
   * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja.
 
@@ -183,7 +183,7 @@ Se você já instalou uma versão anterior do WP-eCommerce MercadoPago, siga as 
 
 ### Atualizar com Download Manual
 1. Obtenha o código fonte do módulo de um repositório (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> ou <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
-2. Descompacte a pasta e renomeie-a para "wpecomm-mercado-pago-module;
+2. Descompacte a pasta e a renomeie para "wpecomm-mercado-pago-module;
 3. Vá para o diretório *[WordPressRootDirectory]/wp-content/plugins/* e exclua o diretório existente "wpecomm-mercado-pago-module";
 4. Copie o diretório "wpecomm-mercado-pago-module" para *[WordPressRootDirectory]/wp-content/plugins/* directory.
 
@@ -193,9 +193,9 @@ Para confirmar que seu módulo está realmente atualizado, você pode ver no ite
 
 
 # Suporte Técnico
-Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um email para modulos@mercadopago.com com as seguintes informações:
+Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Envie um e-mail para modulos@mercadopago.com com as seguintes informações:
 
-* Email da sua conta Mercado Pago;
+* E-mail da sua conta Mercado Pago;
 * Detalhes sobre sua pergunta, problema ou erro;
 * Arquivos que podem ajudar na compreensão (Print-Screen, Video, Arquivos de Log, etc.);
 * Versão do WPeCommerce;

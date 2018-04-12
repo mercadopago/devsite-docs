@@ -2,50 +2,51 @@
 
 > WARNING
 >
-> Índice de contenidos
+> Índice de conteúdo
 >
-> - Incluye el SDK de MercadoPago.
-> - Configura tu clave pública.
-> - Obtén un token de uso único para la tarjeta.
-> - Obtén información del medio de pago.
-> - Obtén los tipos de documento.
-> - Obtén los emisores de la tarjeta.
-> - Obtén las cuotas y costos de financiación.
+> - Inclua o SKD de MercadoPago.
+> - Configure sua chave pública.
+> - Obtenha um token de uso único para o cartão.
+> - Obtenha informação sobre o meio de pagamento.
+> - Obtenha os tipos de documento.
+> - Obtenha os emissores de cartão.
+> - Obtenha as taxas e custos de financiamento.
 
 
-El SDK Javascript de Mercado Pago te facilita obtener los datos de las tarjetas de tus clientes de forma segura.
+O SDK Javascript de Mercado Pago facilita a obtenção dos dados de cartões de seus clientes de forma segura.
 
-Al usar el SDK, y seguir los pasos que te indicamos, la información sensible de la tarjeta nunca viajará a tus servidores, asegurando el nivel adecuado de cumplimiento de la norma PCI DSS.
+Ao usar o SDK e seguir os passos que recomendamos, a informação sensível dos cartões não passará pelos seus servidores, assegurando o nível adequado de cumprimento das normas PCI DSS.
 
-##Incluye el SDK de MercadoPago
+##Inclua o SDK de MercadoPago
 
-Como primer paso, tienes que incluir el SDK en el HTML de tu aplicación:
+Como primeiro passo, deve-se incluir o SDK no HTML da sua aplicação:
 
 ```javascript
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
-##Configura tu clave pública
+##Configure a sua chave pública
 
-Para comenzar a utilizar el SDK Javascript, debes proveer tú public key para que podamos identificarte al conectarte con MercadoPago.
+Para começar a utilizar o SDK Javascript, deve-se prover a sua public key para que possamos identificá-lo ao se conectar com o MercadoPago.
 
 ```javascript
 Mercadopago.setPublishableKey("TEST-98638d24-eb00-4dd5-82d8-4e573fac6a80");
 ```
 
-##Obtén un token de uso único para la tarjeta
+##Obtenha o token de uso único para o cartão
 
-Para cobrar a tus clientes de forma segura, sin tener que almacenar información sensible de las tarjetas de tu lado, tienes que convertir dichos datos en un token de uso único que puedas pasar a tus servidores.
+Para cobrar os seus clientes de forma segura, sem ter que armazenar as informações sensíveis dos cartões do seu lado, deve-se converter os dados em um token de uso único que poderá passar pelos seus servidores.
 
 ```javascript
 Mercadopago.createToken(form, tokenHandler);
 ```
 
-La función recibe como argumento un formulario HTML con los datos de la tarjeta de tu cliente y una función de callback. Los datos necesarios son extraídos de los campos marcados con data-checkout en el formulario.
+A função recebe como argumento o formulário HTML com os dados do cartão do seu cliente e uma função de callback. Os dados necessários são extraídos dos campos marcados com data-checkout no formulário.
 
-Si todo anduvo bien, tienes que agregar el token devuelto en el callback al formulario del pago y enviarlo a tu servidor. En caso de obtener algún error, debes comunicárselo a tu cliente para que intente nuevamente.
+Se tudo correr bem, deve-se adicionar o token que foi retornado no callback ao formulário do pagamento e enviar ao seu servidor. Caso tenha algum erro, deve-se comunicá-lo ao seu cliente para que corrija-o e tente novamente.
 
-En la función de callback recibirás un objeto con las siguientes propiedades:
+A função callback receberá um objeto com as seguintes propriedades:
+
 
 ```javascript
 {
@@ -75,35 +76,37 @@ En la función de callback recibirás un objeto con las siguientes propiedades:
 }
 ```
  
-##Obtén información del medio de pago
+##Obtenha informação dos meios de pagamento
 
-Puedes obtener información de la tarjeta ingresada o del medio de pago seleccionado utilizando:
+Pode-se obter informação do cartão inserido como meio de pagamento selecionado, usando:
 
 ```javascript
 Mercadopago.getPaymentMethod(object, paymentMethodHandler);
 ```
 
-La función recibe como argumento un objeto y una función de callback.
+A função recebe com argumento um objeto e uma função de callback.
 
-Ejemplos:
+Exemplos:
 
-Obtener el medio de pago en base a los primeros 6 dígitos (bin) de la tarjeta:
+Obter o meio de pagamento baseando-se nos 6 primeiros dígitos (bin) do cartão:
+
 
 ```javascript
 object = { “bin” : bin }
 ```
 
-Obtener el medio de pago mediante su identificador:
+Obter o meio de pagamento mediante ao seu identificador:
 
 ```javascript
 object = {“payment_method_id”: “visa”}
 ```
 
-Con la información del medio de pago podrás determinar si necesitas pedir a tu cliente datos adicionales para realizar el cobro.
+Com a informação do meio de pagamento você poderá determinar se é necessário pedir ao seu cliente dados adicionais para realizar a cobrança.
 
-Por ejemplo, si el campo `additional_info_needed` contiene el valor issuer_id, deberás solicitar a tu cliente el emisor de su tarjeta.
+Por exemplo, se o campo `additional_info_needed` contém o valor `issuer_id`, você deverá solicitar ao seu cliente o emissor do cartão.
 
-Ejemplo de respuesta:
+Exemplo de resposta:
+
 
 ```javascript
 [ {
@@ -140,23 +143,24 @@ Ejemplo de respuesta:
   }]
 ```
 
-##Obtén los tipos de documento
+##Obtenha os tipos de documento
 
-El tipo y número de documento de identidad es un dato obligatorio en la mayoría de los países para poder pagar con tarjetas.
+O tipo e o número de documento de identidade é um dado obrigatório na maioria dos países para realizar pagamentos com cartões.
 
-El SDK de Mercado Pago provee una función que te facilita obtener los tipos de documento.
+O SDK do MercadoPago provê uma função que facilita a obtenção do tipo de documento.
 ```javascript
 Mercadopago.getIdentificationTypes(identificationHandler);
 ```
 
-El argumento es una función de `callback` que se ejecutará luego de obtener los tipos de documento. Este argumento es opcional.
+O argumento é uma função de `callback` que será executada assim que obter os tipos de documentos. Esse argumento é opcional.
 
-Si la función `getIdentificationTypes()` es llamada sin parámetros, luego de obtener los tipos de documento se intentará armar un combo con las opciones sobre el elemento `docType`.
+Se a função `getIdentificationTypes()` é chamada sem parâmetros, logo que obter os tipos de documento terá que criar um combo-box com as opções sobre o elemento `docType`.
+
 ```html
 <select  id="docType" data-checkout="docType"></select>
 ```
 
-Ejemplo de respuesta:
+Exemplo de resposta:
 
 ```javascript
 [
@@ -186,16 +190,16 @@ Ejemplo de respuesta:
 
 ```
 
-##Obtén los emisores de la tarjeta
+##Obtenha os emissores dos cartões
 
-Algunas tarjetas requieren que envíes información adicional del emisor. Para esto, el SDK de MecadoPago provee una función que te permite obtener los emisores de una tarjeta.
+Alguns cartões requerem que seja enviado uma informação adicional do emissor. Para isso, o SDK do MercadoPago provê uma função que permite obter os emissores de um cartão.
 ```javascript
 Mercadopago.getIssuers(paymentMethodId, issuersHandler);
 ```
 
-La función recibe como argumentos el identificador del medio de pago y una función de callback.
+A função recebe como argumentos o identificador do meio de pagamento e uma função de `callback`.
 
-Ejemplo de respuesta con paymentMethodId = master:
+Exemplo de resposta com `paymentMethodId = master`:
 
 ```javascript
 [
@@ -228,17 +232,17 @@ Ejemplo de respuesta con paymentMethodId = master:
 
 ```
 
-##Obtén las cuotas y costos de financiación
+##Obtenha as parcelas e custos de financiamento
 
-Para cobrar en cuotas y poder mostrar a tus clientes los costos de financiación, el SDK de Mercado Pago te brinda una función que retorna las cuotas disponibles para la tarjeta de tu cliente.
+Para cobrar em parcelas e poder mostrar aos seus clientes o custo de financiamento, o SDK do MercadoPago oferece uma função que retorna as parcelas disponíveis para o cartão do seu cliente.
 
 ```javascript
 Mercadopago.getInstallments({"bin": bin,"amount": amount}, installmentHandler);
 ```
 
-La función recibe como argumentos un objeto que está formado por el bin (primeros 6 dígitos de la tarjeta) y el valor de lo que queres cobrar, y una función de callback.
+A função recebe como argumento um objeto que é formado pelo bin (primeiros 6 dígitos do cartão), o valor que será cobrado e uma função de `callback`.
 
-En los casos en que es necesario que el cliente indique el emisor de la tarjeta, el objeto pasado como argumento tendrá la siguiente forma:
+Nos casos em que são necessários que o cliente indique o emissor do cartão, o objeto passado como argumento terá a seguinte forma:
 
 ```javascript
 {
@@ -249,9 +253,9 @@ En los casos en que es necesario que el cliente indique el emisor de la tarjeta,
 
 ```
 
-La función devuelve una lista con el detalle de las cuotas. Además, por cada cuota te recomendamos un mensaje para que muestres a tus clientes.
+A função retorna uma lista com o detalhe dos parcelamentos. Além disso, cada uma das parcelas recomendamos uma mensagem para que mostre aos seus clientes.
 
-Ejemplo con {"bin": "530575", "amount": 10}:
+Exemplo com {"bin": "530575", "amount": 10}:
 
 ```javascript
 [
@@ -323,10 +327,10 @@ Ejemplo con {"bin": "530575", "amount": 10}:
 >
 > Nota
 >
-> Las funciones de callback son llamadas con 2 argumentos:
+> As funções de callback são chamadas com 2 argumentos:
 
-| status | response |
+|  status  |   response   |
 | :--------|:-------------|
 | HTTP Status del request | Array(Object) |
 
-Para la función de callback de Mercadopago.createToken(), response es un Object.
+Para a função de callback do Mercadopago.createToken(), response é um Object.

@@ -6,20 +6,20 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 
 ### Pagamentos:
 
-|     Produto     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :-------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Botón de cobro  | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Web Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Mobile Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
-| API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+|     Produto        | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :----------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| Botão de pagamento | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Web Checkout       | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Mobile Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| API                | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 ### Assinaturas:
 
-|    Produto     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Botón de cobro | ✔   | ✔   |     |     | ✔   |     |     |     |
-| Web Checkout   | ✔   | ✔   |     |     | ✔   |     |     |     |
-| API            | ✔   | ✔   |     |     | ✔   |     |     |     |
+|    Produto         | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :----------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| Botão de pagamento | ✔   | ✔   |     |     | ✔   |     |     |     |
+| Web Checkout       | ✔   | ✔   |     |     | ✔   |     |     |     |
+| API                | ✔   | ✔   |     |     | ✔   |     |     |     |
 
 ### Marketplace:
 
@@ -31,15 +31,15 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 
 ## Funcionalidades de API por país
 
-A continuación un listado de funcionalidades especificas de nuestra API por país:
+A seguir uma lista de funcionalidades específicas de nossa API por país:
 
-|      Funcionalidad      | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+|     Funcionalidade      | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :---------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Autorización y captura  | ✔   | ✔   |     |     |     | ✔   |     |     |
-| Captura por monto menor | ✔   | ✔   |     |     |     |     |     |     |
+| Autorização y captura   | ✔   | ✔   |     |     |     | ✔   |     |     |
+| Captura parcial         | ✔   | ✔   |     |     |     |     |     |     |
 | Reembolsos              | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
-| Reembolsos parciales    | ✔   | ✔   | ✔   |     | ✔   |     |     |     |
-| Pagamentos sin CVV      | ✔   | ✔   |     | ✔   | ✔   | ✔   | ✔   |     |
+| Reembolsos parciais     | ✔   | ✔   | ✔   |     | ✔   |     |     |     |
+| Pagamentos sem CVV      | ✔   | ✔   |     | ✔   | ✔   | ✔   | ✔   |     |
 | Soft descriptor         | ✔   | ✔   |     |     |     |     |     | ✔   |
 
 
@@ -64,7 +64,7 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 
 ### Brasil
 
-|    Produto    |     Solução     | Medios de pago no disponibles |
+|    Produto    |     Solução     | Meios de pagamento não disponíveis |
 | :------------ | :-------------- | :---------------------------- |
 | Pagamentos         | Botão de pagamento   | N/A                           |
 | Pagamentos         | Web Checkout    | N/A                           |
@@ -114,7 +114,7 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 
 ### Peru
 
-|   Produto   |     Solução     | Medios de pago no disponibles |
+|   Produto   |     Solução     | Meios de pagamento não disponíveis |
 | :---------- | :-------------- | :---------------------------- |
 | Pagamentos       | Botão de pagamento   | N/A                           |
 | Pagamentos       | Web Checkout    | N/A                           |
@@ -125,7 +125,7 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 
 ### Uruguai
 
-|   Produto   |    Solução    | Medios de pago no disponibles |
+|   Produto   |    Solução    | Meios de pagamento não disponíveis |
 | :---------- | :------------ | :---------------------------- |
 | Pagamentos       | Botão de pagamento | N/A                           |
 | Pagamentos       | Web Checkout  | N/A                           |

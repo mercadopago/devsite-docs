@@ -20,8 +20,6 @@ Você deve verificar se:
 + Oferece os métodos de pagamento que deseja.
 + A experiência de pagamento é apropriada e se informa o resultado do pagamento.
 
-Para probar la integración sigue estos pasos:
-
 Para testar a integração siga estes passos:
 
 1. Configure a public key do sandbox na sua aplicação.
@@ -33,10 +31,10 @@ Para testar a integração siga estes passos:
 * **CONT**: Pagamento pendente.
 * **CALL**: Recusado, ligar para autorizar.  
 * **FUND**: Recusado por saldo insuficiente.  
-* **SECU**: ecusado por código de segurança.  
+* **SECU**: Recusado por código de segurança.  
 * **EXPI**: Recusado por data de validade.
-* **FORM**: Recusado por erro no formulário  
-* **OTHE**: Recusado geral.  
+* **FORM**: Recusado por erro no formulário.
+* **OTHE**: Recusado geral.
 
 ### Cartões para testar nosso Checkout
 
