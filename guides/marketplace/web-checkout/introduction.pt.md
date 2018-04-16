@@ -20,11 +20,10 @@ O Marketplace requer 3 passos:
 
 Após criar a aplicação, você só precisa executar o segundo e o terceiro passos para cada fornecedor subsequente.
 
-
 ## Credenciais
 
 Assim como no Checkout de Pagamentos, você conta com um par de chaves privadas para conectar-se com a API. Essas chaves são encontradas na sessão de [credenciais da sua conta](https://www.mercadopago.com.ar/account/credentials).
 
-As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, etc. As chaves privadas devem ser mantidas c**onfidencialmente** em seus servidores de backend e nunca devem ser publicadas.
+As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, etc. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
 
 #### [Começar a criar meu Marketplace](/guides/marketplace/web-checkout/create-marketplace.pt.md)

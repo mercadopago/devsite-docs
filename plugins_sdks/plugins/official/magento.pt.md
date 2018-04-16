@@ -21,7 +21,7 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | MercadoEnvios                               	| ✔               	|                       	|
 | Devolução de Pagamentos                     	| ✔               	| ✔                     	|
 | Atualização do pedido através de Cron       	|                 	| ✔                     	|
-| Pagina de sucesso personalizável            	|                 	| ✔                     	|
+| Página de sucesso personalizável            	|                 	| ✔                     	|
 | Calculadora de Parcelas                     	| ✔               	| ✔                     	|
 
 <a name="Requisitos"></a>
@@ -37,7 +37,7 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | Versão MySQL               | MySQL 5.6 (Oracle o Percona)                                                                   |
 | Dependências               | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
 | Configurações adicionais   | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
-| SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente, Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
+| SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente. Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
   
   
 <a name="Instalação"></a>

@@ -46,7 +46,7 @@ $mp->post($request);
 ?>
 ```
 
-Você receberá um `HTTP STATUS 202 (Accepted)`` como resposta, e o relatório será gerado de forma assíncrona.
+Você receberá um `HTTP STATUS 202 (Accepted)` como resposta, e o relatório será gerado de forma assíncrona.
 
 ##### 2. Busca:
 Para verificar se o relatório foi gerado, você terá que fazer uma consulta à API da seguinte forma:
@@ -180,7 +180,7 @@ Programe para gerar um relatório automaticamente utilizando a frequência no re
 	POST /v1/account/bank_report/schedule
 
 
-Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
+Interrompe a geração automática do relatório. Atualize o atributo `scheduled` na configuração para `false`:
 
 	DELETE /v1/account/bank_report/schedule
 

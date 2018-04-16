@@ -59,7 +59,7 @@ curl -X POST \
 
 Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](/guides/localization/local-cards.pt.md).
 
-### Faca os testes correspondentes
+### Faça os testes correspondentes
 
 O processo completo para testar o checkout é o seguinte:
 
@@ -79,5 +79,5 @@ O processo completo para testar o checkout é o seguinte:
     * **OTHE**: Recusado geral.
 7. Valide, em caso de nova tentativa, para que sejam realizadas corretamente.
 8. Verifique se recebeu a notificação corretamente.
-9. Verifique se a divisão do pagamento entre as contas do marketplace e a do vendedor foi feita. corretamente, conforme especificado no atributo marketplace\_fee da preferência de pagamentos.
+9. Verifique se a divisão do pagamento entre as contas do marketplace e a do vendedor foi feita corretamente, conforme especificado no atributo marketplace\_fee da preferência de pagamentos.
 10. Efetue a devolução de um pagamento aprovado.

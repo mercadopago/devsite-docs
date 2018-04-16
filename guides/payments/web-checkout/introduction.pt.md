@@ -11,7 +11,7 @@ Trabalhamos para que seus usuários tenham a melhor experiência de pagamento of
 * Divisão do pagamento: Possibilidade de **pagamento com 2 cartões**.
 ------------
 * Os principais **meios de pagamento** em todos os países.
-* **Parcelamiento**: Ofereça pagamentos em parcelas com as melhores condições possíveis.
+* **Parcelamento**: Ofereça pagamentos em parcelas com as melhores condições possíveis.
 
 Possuímos a certificação [PCI DSS](https://www.pcisecuritystandards.org/), que garante que o armazenamento, processamento e a troca de informações de cartão de crédito sejam realizadas com segurança. Todos os nossos pagamentos são analisados por nossa ferramenta de prevenção de fraudes para minimizar os riscos em suas transações.
 

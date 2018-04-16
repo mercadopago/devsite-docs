@@ -1,21 +1,21 @@
-# Mercado Pago SDK module for Payments integration
+# Mercado Pago SDK para Ruby
 
-* [Install](#install)
-* [Basic checkout](#basic-checkout)
-* [Customized checkout](#custom-checkout)
-* [Generic methods](#generic-methods)
+* [Instalação](#install)
+* [Checkout básico](#basic-checkout)
+* [Checkout customizado](#custom-checkout)
+* [Métodos genéricos](#generic-methods)
 
 <a name="install"></a>
-## Install
+## Instalação
 
 ```gem install mercadopago-sdk```
 
 <a name="basic-checkout"></a>
-## Basic checkout
+## Checkout básico
 
-### Configure your credentials
+### Configure suas credenciais
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** in the following address:
+* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** no seguinte endereço:
     * Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
     * Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
     * México: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
@@ -29,9 +29,9 @@ require 'mercadopago.rb'
 $mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
 ```
 
-### Preferences
+### Preferências
 
-#### Get an existent Checkout preference
+#### Obtenha uma preferência de Checkout existente
 
 ```ruby
 preference = $mp.get_preference('PREFERENCE_ID')
@@ -39,7 +39,7 @@ preference = $mp.get_preference('PREFERENCE_ID')
 puts $preferenceResult
 ```
 
-#### Create a Checkout preference
+#### Crie uma preferência de Checkout
 
 ```ruby
 
@@ -58,7 +58,7 @@ preference = $mp.create_preference(preference_data)
 puts preference
 ```
 
-#### Update an existent Checkout preference
+#### Atualize uma preferência de Checkout existente
 
 ```ruby
 preferenceDataToUpdate = Hash["items" => Array(Array["title"=>"testUpdated", "quantity"=>1, "unit_price"=>2])]
@@ -70,7 +70,7 @@ puts preferenceUpdate
 
 ### Payments/Collections
 
-#### Search for payments
+#### Buscar pagamentos
 
 ```ruby    
 filters = Array["id"=>null, "site_id"=>null, "external_reference"=>null]
@@ -80,7 +80,7 @@ searchResult = $mp.search_payment(filters)
 puts searchResult
 ```
 
-#### Get payment data
+#### Obter dados de pagamentos
 
 ```ruby
 paymentInfo = $mp.get_payment("ID")
@@ -88,7 +88,7 @@ paymentInfo = $mp.get_payment("ID")
 puts paymentInfo
 ```
 
-### Cancel (only for pending payments)
+### Cancelar (apenas para pagamentos pendentes)
 
 ```ruby
 result = $mp.cancel_payment("ID");
@@ -97,21 +97,21 @@ result = $mp.cancel_payment("ID");
 puts result
 ```
 
-### Refund (only for accredited payments)
+### Restituir (apenas para pagamentos creditados)
 
 ```ruby
 result = $mp.refund_payment("ID");
 
-// Show result
+// Mostrar resultado
 puts result
 ```
 
 <a name="custom-checkout"></a>
-## Customized checkout
+## Checkout customizado
 
 ### Configure your credentials
 
-* Get your **ACCESS_TOKEN** in the following address:
+* Obtenha seu **ACCESS_TOKEN** no seguinte endereço:
     * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
     * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
     * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
@@ -124,25 +124,25 @@ require 'mercadopago.rb'
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
-### Create payment
+### Criar pagamentos
 
 ```ruby
 $mp.post ("/v1/payments", payment_data);
 ```
 
-### Create customer
+### Criar clientes
 
 ```ruby
 $mp.post ("/v1/customers", Hash["email" => "email@test.com"]);
 ```
 
-### Get customer
+### Obter clientes
 
 ```ruby
 $mp.get ("/v1/customers/CUSTOMER_ID");
 ```
 
-* View more Custom checkout related APIs in Developers Site
+* Veja mais APIs relacionadas a Checkout Custom em Developers Site
     * Argentina: [https://www.mercadopago.com.ar/developers](https://www.mercadopago.com.ar/developers)
     * Brazil: [https://www.mercadopago.com.br/developers](https://www.mercadopago.com.br/developers)
     * Mexico: [https://www.mercadopago.com.mx/developers](https://www.mercadopago.com.mx/developers)
@@ -150,24 +150,24 @@ $mp.get ("/v1/customers/CUSTOMER_ID");
     * Colombia: [https://www.mercadopago.com.co/developers](https://www.mercadopago.com.co/developers)
 
 <a name="generic-methods"></a>
-## Generic methods
-You can access any other resource from the Mercado Pago API using the generic methods:
+## Métodos genéricos
+Você pode acessar qualquer recurso da API do Mercado Pago usando métodos genéricos:
 
 ```ruby
-// Get a resource, with optional URL params. Also you can disable authentication for public APIs
+// Obtenha um recurso com parâmetros de URL opcionais. Além disso, você pode desativar a autenticação de APIs públicas
 $mp.get ("/resource/uri", [params], [authenticate=true])
 
-// Create a resource with "data" and optional URL params.
+// Crie um recurso com "data" e parâmetros opcionais de URL.
 $mp.post ("/resource/uri", data, [params])
 
-// Update a resource with "data" and optional URL params.
+// Atualize um recurso com "data" e parâmetros opcionais de URL.
 $mp.put ("/resource/uri", data, [params])
 
-// Delete a resource with optional URL params.
+// Delete um recurso com parâmetros opcionais de URL.
 $mp.delete ("/resource/uri", [params])
 ```
 
- For example, if you want to get the Sites list (no params and no authentication):
+ Por exemplo, se você deseja obter a lista de sites (sem parâmetros e sem autenticação):
 
 ```ruby
 $sites = $mp.get ("/sites", null, false)

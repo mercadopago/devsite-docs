@@ -1,78 +1,77 @@
 # OpenCart - Mercado Pago Module (v1.4.9, 1.5.x, 2.x - 2.2, 2.3)
 
-* [Features](#features)
-* [Available Versions](#versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Upgrade](#upgrade)
+* [Recursos](#features)
+* [Versões disponíveis](#versions)
+* [Requisitos](#requirements)
+* [Instalação](#installation)
+* [Configuração](#configuration)
+* [Atualização](#upgrade)
 * [Feedback](#feedback)
 
 <a name="features"></a>
-## Features:
+## Recursos:
 
-Checkout options right for your business:
-We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
+Opção de Checkout correta para seu negócio:
+Nós oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagamentos de qualquer pessoa em qualquer lugar.
 
-**Custom Checkout**
+**Checkout Customizável**
 
-Offer a checkout fully customized to your brand experience with our simple-to-use payments API.
+Ofereça um checkout totalmente customizado à sua experiência de marca com nossa API de pagamentos simples de usar.
 
-* Seamless integration— no coding required, unless you want to.
-* Full control of buying experience.
-* Store buyer’s card for fast checkout.
-* Accept tickets in addition to cards.
-* Improve conversion rate.
+* Integração perfeita - não é necessário codificação, a menos que você queira.
+* Controle total da experiência de compra.
+* Armazene o cartão do comprador para finalizar a compra.
+* Aceite boletos, além de cartões.
+* Melhore a taxa de conversão.
 
-*Available for Argentina, Brazil, Colombia, Mexico, Peru and Venezuela*
+*Disponível para Argentina, Brasil, Colômbia, México, Peru e Venezuela*
 
-**Standard Checkout**
+**Checkout Padrão**
 
-Great for merchants who want to get going quickly and easily.
+Ótimo para vendedores que querem rapidez e agilidade.
 
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
+* Fácil integração ao site - não é necessário codificação.
+* Controle limitado da experiência de compra - apresenta a janela de Checkout como redirecionamento, modal ou iframe.
+* Armazene o cartão do comprador para finalizar a compra.
+* Aceita boletos, além de cartões.
+* Aceite os cupons de desconto do MercadoPago.
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
+*Disponível para Argentina, Brasil, Chile, Colômbia, México, Peru, Uruguai e Venezuela*
 
 <a name="requirements"></a>
 ## Requirements:
 
-**Operating System**
+**Sistema Operacional**
 
 * Linux x86-64
 
-**Web Server**
+**Servidor Web**
 
 * Apache 2.x
 * Nginx 1.7.x
 
-**Database**
+**Banco de Dados**
 
 * MySQL 5.6 (Oracle or Percona)
 
 **PHP**
 
 * PHP 5.4.x / 5.5.x
-* Required extensions: PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl
+* Requer extenções: PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl
 
-**SSL certificate**
+**Certificado SSL**
 
-It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
-During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
-
+É um requisito que você tenha um certificado SSL e o formulário de pagamento a ser fornecido em uma página HTTPS.
+Durante os testes do modo sandbox você pode operar via HTTP, mas para homologação você precisará adquirir o certificado caso não o tenha.
 
 <a name="versions"></a>
-## Available Versions:
+## Versões Disponíveis:
 <table>
   <thead>
     <tr>
       <th>Plugin Version</th>
       <th>Status</th>
-      <th>Compatible Versions</th>
+      <th>Versões Compatíveis</th>
     </tr>
   <thead>
   <tbody>
@@ -100,36 +99,36 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 </table>
 
 <a name="installation"></a>
-## Installation:
+## Instalação:
 
-1. Download Mercado Pago module:
+1. Baixe do módulo do Mercado Pago:
     * OpenCart 1.4.9
     * OpenCart 1.5.x
     * OpenCart 2.x - 2.2
     * OpenCart 2.3
 
-2. Copy the folders **admin**, **catalog** and **image** to your OpenCart ROOT installation. Make sure to keep the OpenCart folders structure intact.
+2. Copie as pastas **admin**, **catalog** e **image** para a raiz da sua instalação do OpenCart. Se assegure de manter a estrutura de pastas do OpenCart intactas.
 
-**Important**: If you're using OpenCart 2.0, you'll find 3 different types of checkout inside the OpenCart 2.x folder: Standard, Custom and Ticket. You can use them all together or individually, without any problems or dependencies between them. Each one of these folders have its own Admin, Catalog and Image folders and the installation process is the same described above.
+**Importante**: Se você está usando OpenCart 2.0, você encontrará 3 tipos diferentes de checkout dentro da pasta OpenCart 2.x: Standard, Custom e Ticket. Você pode utiliza-las juntas ou individualmente, sem nenhum problema ou dependência entre elas. Cada uma dessas pastas tem suas próprias pastas Admin, Catalog e Image e o processo de instalação é o mesmo descrito acima.
 
 <a name="setup"></a>
-## Setup MercadoPago
+## Configure MercadoPago
 
-1. On your store administration, go to **extensions > payments > MercadoPago** and click **Install**.
+1. No painel administrativo da sua loja, vá para **extensions > payments > MercadoPago** e clique em **Install**.
 
-2. Again in **extensions > payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
+2. Novamente em **extensions > payments > MercadoPago**, clique em **Edit** para configurar sua conta do Mercado Pago:
 
 	![Mercado Pago Account](https://raw.github.com/mercadopago/cart-opencart/master/README.img/MPAccount.png)
 
 <a name="configuration"></a>
-## Configuration
+## Configuração
 
-1. Again in **Extensions > Payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
+1. Novamente em **Extensions > Payments > MercadoPago**, clique em **Edit** para configurar sua conta do Mercado Pago:
 
  ![Mercado Pago Account](https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
 
-2.  Set your **CLIENT_ID** and **CLIENT_SECRET**, or **PUBLIC_KEY** and **ACCESS_TOKEN** (depending on which module you're using).  
-  In order to get them check the following links according to the country you are opperating in:
+2.  Configure seu **CLIENT_ID** e **CLIENT_SECRET**, ou **PUBLIC_KEY** e **ACCESS_TOKEN** (dependendo de qual módulo você está utilizando).  
+  Para obtê-los, verifique os links a seguir de acordo com o país em que você está operando:
 
   * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
   * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
@@ -139,32 +138,32 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
   * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
   * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
   * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
-4. If you're using **Custom Checkout** or **Standard Checkout**, select the country related to your **MercadoPago** account. If you're using **Ticket Checkout**, there is no need to configure the country.
+4. Se você está utilizando **Checkout Customizável** ou **Checkout Padrão**, selecione o pais relacionado a sua conta do **MercadoPago**. Se você está utilizando **Ticket Checkout**, não é preciso configurar o país.
 
-5. Other general configurations:
+5. Outras configurações gerais:
 
-  * **Category of your store**: Sets up the category of the store.
-  * **Choose the status of approved orders**: Sets up the order status when payments are approved.
-  * **Choose the status of refunded orders**: Sets up the order status when payments are refunded.
-  * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
-  * **Choose the status when client open a mediation**: Sets up the order status when client opens a mediation.
-  * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
-  * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
-  * **Choose the status when payment was chargeback**: Sets up the order status when payments are chargeback.
-  * **Logs**: Enables/disables system logs.
-  * **Debug Mode**: If enabled, displays the raw response from the API instead of a friendly message.
-  *  **Enabled**: Enables/disables this payment solution.
-  * **Type Checkout (you're using Standard Checkout)**: Sets the type of checkout, the options are:
-    *  *Iframe*: Opens an OpenCart URL with a iframe as the content.
-    *  *Redirect*: Redirects to Mercado Pago URL.
-    *  *Lightbox*: Similar to Iframe option but opens a lightbox instead of an iframe.
+  * **Category of your store**: Configura a categoria da loja.
+  * **Choose the status of approved orders**: Define o status do pedido quando os pagamentos são aprovados.
+  * **Choose the status of refunded orders**:  Define o status do pedido quando os pagamentos são reembolsados.
+  * **Choose the status when payment is pending**: Define o status do pedido quando os pagamentos estão pendentes.
+  * **Choose the status when client open a mediation**: Define o status do pedido quando o cliente abre uma mediação.
+  * **Choose the status when payment was reject**: Define o status do pedido quando os pagamentos são rejeitados.
+  * **Choose the status when payment was canceled**: Define o status do pedido quando os pagamentos são cancelados.
+  * **Choose the status when payment was chargeback**: Define o status do pedido quando os pagamentos sofrem chargeback.
+  * **Logs**: Habilita/desabilita o sistema de logs.
+  * **Debug Mode**: Se habilitado, exibe a resposta bruta da API em vez de uma mensagem amigável.
+  *  **Enabled**: Habilita/desabilita essa solução de pagamento.
+  * **Type Checkout (you're using Standard Checkout)**: Define os tipos de checkout, as opções são:
+    *  *Iframe*: Abre uma URL OpenCart com a iframe como conteúdo.
+    *  *Redirect*: Redireciona a URL do Mercado Pago.
+    *  *Lightbox*: Similar a opção de Iframe mas abre uma lightbox em vez de um iframe.
 
 <a name="notifications"></a>
-## Notifications
+## Notificações
 
-Your store will automatically sync with MercadoPago. The notification URL will be sent in each payment.
+Sua loja irá sincronizar automaticamente com o MercadoPago. A URL de notificação será enviado em cada pagamento.
 
 <a name="upgrade"></a>
-## Upgrade Mercado Pago Plugin ##
+## Atualizar Plugin Mercado Pago ##
 
-Follow the same steps that you did to install the module.
+Siga os mesmos passos que você fez para instalar o módulo.

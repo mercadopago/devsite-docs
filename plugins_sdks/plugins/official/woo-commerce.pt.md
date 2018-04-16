@@ -36,10 +36,10 @@ O módulo do Mercado Pago para WooCommerce é integrado com as seguintes funcion
 | Versões de Plataforma    | WordPress 3.1.x - 4.7.x, WooCommerce 2.6.x - 3.1.x                    |
 | Ambiente                 | LAMP (Linux, Apache, MySQL, e PHP                                     |
 | OS                       | Linux x86, x86-64                                                     |
-| Versões PHP              | 5.6 or major com suporte a cURL                                       |
+| Versões PHP              | 5.6 ou maior com suporte a cURL                                       |
 | Versões MySQL            | 5.6 ou maior, MariaDB 10.0 ou maior                                   |
 | Configurações Adicionais | safe_mode off, memory_limit maior que 256MB (512MB é o recomendado)   |
-| SSL                      | SSL is required to use credit card                                    |
+| SSL                      | SSL é necessário para uso de cartão de crédito                        |
 
 # Instalação
 Se você já tiver este módulo instalado, por favor, siga as [Instruções de Atualização](#atualização) antes.
@@ -58,7 +58,7 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 
 1. Obtenha o código fonte do módulo de um repositório (<a href="https://github.com/mercadopago/cart-woocommerce/archive/master.zip">Github</a> ou <a href="https://br.wordpress.org/plugins/woocommerce-mercadopago/">WordPress Plugin Directory</a>);
 
-2. Descompacte a pasta e renomeie-a para "woocommerce-mercadopago";
+2. Descompacte a pasta e a renomeie para "woocommerce-mercadopago";
 
 3. Copie o diretório "woocommerce-mercadopago" para dentro do diretório *[WordPressRootDirectory]/wp-content/plugins/*. Está feito!
 
@@ -76,15 +76,15 @@ Agora, na barra lateral do WordPress, clique na opção *Configurações > Merca
 Esta janela mostra as principais configurações do plugin WooCommerce MercadoPago, onde você pode verificar e configurar o seguinte:
 
 ### Status do Plugin e Opções de Pagamento
-É a parte superior da janela. Mostra os status da plataforma e a consistência do sistema para usar este plugin. Além disso, existem botões que servem como atalhos para os gateways de pagamento que são oferecidos. É uma boa idéia ter todos os campos do status marcados com um ícone verde de checado.
+É a parte superior da janela. Mostra os status da plataforma e a consistência do sistema para usar este plugin. Além disso, existem botões que servem como atalhos para os gateways de pagamento que são oferecidos. É uma boa ideia ter todos os campos do status marcados com um ícone verde de checado.
 
 ### Checkout Básico & Inscrições
-  * Aqui você deve colocar suas chaves *Client Id* e *Client Secret*, que são as credenciais que o identificam de maneira única no Mercado Pago. O *Client Id* e *Client Secret* são usados ​​para os meios de pagamentos Checkout Básico e Assinaturas;
+  * Aqui você deve colocar suas chaves *Client Id* e *Client Secret*, que são as credenciais que o identificam de maneira única no Mercado Pago. O *Client Id* e *Client Secret* são usados para os meios de pagamentos Checkout Básico e Assinaturas;
   * Além disso, logo abaixo, você pode ativar o modo de conversão de moeda para as vendas com Checkout Básico e Assinaturas. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WooCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor.
 
 ### Checkout Transparente & Boletos
-  * Aqui você deve colocar suas chaves *Public Key* e *Access Token*, que são as credenciais que o identificam de maneira única no Mercado Pago. O *Public Key* e *Access Token* são usados ​​para os meios de pagamentos Checkout Transparente e Boletos;
-  * Além disso, logo abaixo, você pode ativar o modo de conversão de moeda para as vendas com Checkout Transparente e Boletos. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WooCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor.
+  * Aqui você deve colocar suas chaves *Public Key* e *Access Token*, que são as credenciais que o identificam de maneira única no Mercado Pago. O *Public Key* e *Access Token* são usados para os meios de pagamentos Checkout Transparente e Boletos;
+  * Além disso, logo abaixo, você pode ativar o modo de conversão de moeda para as vendas com Checkout Transparente e Boletos. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WooCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento, pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor.
 
 ### Mapeamento de Estados de Pagamento x Pedido
 Aqui você pode mapear cada estado de pagamento para um determinado estado de pedido. Somente faça mudanças aqui se você estiver plenamente consciente do que está fazendo.
@@ -169,7 +169,7 @@ Esta página irá explicar como configurar o módulo para aceitar o Mercado Envi
 ### Habilite Seu Mercado Envios
 Para usar o Mercado Envios, [você precisa habilitá-lo em sua conta do Mercado Pago.](http://shipping.mercadopago.com.ar/optin/doOptin)
 
-### Crie a Zona de Envio e os Métodos de Envío
+### Crie a Zona de Envio e os Métodos de Envio
 Para usar o Mercado Envios, você precisa que ele seja configurado como método de envio do WooCommerce. Basta seguir as seguintes etapas:
 
 1. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Entrega*. Em *Zona de Envio*, clique em *Adicionar zona de envio*. Digite o nome da zona, selecione as regiões dentro desta zona e clique em *Salvar Alterações*.<br>![Mercado Envios 0](/images/woocommerce-me_0.png)
@@ -248,7 +248,7 @@ Se você já instalou uma versão anterior do WooCommerce MercadoPago, siga as i
 
 ### Atualizar com Download Manual
 1. Obtenha o código fonte do módulo de um repositório (<a href="https://github.com/mercadopago/cart-woocommerce/archive/master.zip">Github</a> ou <a href="https://br.wordpress.org/plugins/woocommerce-mercadopago/">WordPress Plugin Directory</a>);
-2. Descompacte a pasta e renomeie-a para "woocommerce-mercadopago;
+2. Descompacte a pasta e a renomeie para "woocommerce-mercadopago;
 3. Vá para o diretório *[WordPressRootDirectory]/wp-content/plugins/* e exclua o diretório existente "woocommerce-mercadopago";
 4. Copie o diretório "woocommerce-mercadopago" para *[WordPressRootDirectory]/wp-content/plugins/* directory.
 
@@ -267,4 +267,3 @@ Antes de atualizar, por favor, considere o seguinte:
 Para confirmar que seu módulo está realmente atualizado, você pode ver no item *Plugins* no menu de administração da loja e verificar a atualização do seu módulo. A versão deve corresponder ao plugin atualizado recentemente.
 
 > DICA: Lembre-se sempre de fazer um backup dos seus dados e de seu sistema antes de fazer qualquer alteração.
-

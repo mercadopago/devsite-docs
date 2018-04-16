@@ -19,7 +19,7 @@ Receba pagamentos diretamente nos códigos comerciais do vendedor usando todas a
 
 #### Modo All In
 
-Combine a operação Gateway e Aggregador oferecendo ao comprador a melhor opção de pagamento.
+Combine a operação Gateway e Agregador oferecendo ao comprador a melhor opção de pagamento.
 
 ### Configurar VTEX para operar em modo Agregador
 
@@ -46,7 +46,7 @@ Para operar em modo Agregador sé é necessário configurar uma afiliação.
 
     ![VTEX afiliation](/images/vtex-afiliation-2.png)
 
-6. Buscar e selecionar MercadoPagoV1.
+6. Buscar e selecionar MercadoPagoV1.
 
     ![VTEX afiliation](/images/vtex-afiliation-3.png)
 
@@ -56,12 +56,12 @@ Para operar em modo Agregador sé é necessário configurar uma afiliação.
 
 - Nome da afiliação: Nome que identificará a afiliação.
 - OAuth login: Não se utiliza.
-- PublicKey PublicKey: PublicKey do Mercado Pago, ver credenciales.
-- AccessToken Access: AccessToken do Mercado Pago, ver credenciales.
-- RefreshToken RefreshToken: Não se utiliza – deixar em branco.
+- PublicKey: PublicKey do Mercado Pago, ver credenciais.
+- AccessToken: AccessToken do Mercado Pago, ver credenciais.
+- RefreshToken: Não se utiliza – deixar em branco.
 - ExpiredTokenIn: Não se utiliza – deixar em branco.
 - Merchant Account Id: Não se utiliza – deixar em branco.
-- Processing Mode: Selecionar aggregador.
+- Processing Mode: Selecionar agregador.
 - CountryName: Selecionar o país.
 - SoftDescriptor: Texto para o resumo da descrição do pagamento no cartão de crédito (somente para o Brasil).
 - Description: Descrição da operação (pode ser branco).
@@ -133,7 +133,7 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 
     ![Offline](/images/vtex-offline-plan-2.png)
 
-6. Buscar e selecionar Boleto Bancario – Este plano de pagamento inclui todos os meios Off-Line do país.
+6. Buscar e selecionar Boleto Bancário – Este plano de pagamento inclui todos os meios Off-Line do país.
 
     ![Offline](/images/vtex-offline-plan-3.png)
 
@@ -169,7 +169,7 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 
     ![Offline](/images/vtex-webpay-4.png)
 
-### Configurar plano de pagamento personalizado
+### Configurar plano de pagamento personalizado
 
 Plano de pagamento personalizado permite adicionar à VTEX cartões de crédito locais que VTEX não integra como um meio de pagamento nativo e podem ser utilizados com Mercado Pago.
 Meios de pagamento personalizados por país:
@@ -213,7 +213,7 @@ Uruguay: Oca.
 | Cordobesa                | Cordobesa                | Mastercard    | 542702-542702,544764-544764,550073-550073,528824-528824 | cordobesa                                |
 | Mercado Pago - Patagonia | Mercado Pago - Patagonia | Mastercard    | 515073-515073,515070-515070,532383-532383,532384-532384 | mercadopago_cc                           |
 
-### Configurar Plano de Paggamento Personalizado – Cartões do Chile
+### Configurar Plano de Pagamento Personalizado – Cartões do Chile
 
 | Nome | Descrição | Meio de pagamento |                                   Bins {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pagamento no adquiriente (opcional) |
 |--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
@@ -221,15 +221,15 @@ Uruguay: Oca.
 | Magna  | Magna       | Mastercard    | 568000-568099                                                                                                   | magna                                    |
 | CMR    | CMR         | Mastercard    | 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984 | cmr                                      |
 
-### Configurar Plano de Pagamento Personalizado – Cartões da Colombia
+### Configurar Plano de Pagamento Personalizado – Cartões da Colombia
 
-| Nome  | Descrição | Meio de pagamento | Bins {min}-{max},{min}-{max},{bin1},{bin2} | Código de pagamento no adquiriente (opcional) |
+| Nome  | Descrição | Meio de pagamento | Bins {min}-{max},{min}-{max},{bin1},{bin2} | Código de pagamento no adquirente (opcional) |
 |---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
 | Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
 
 ### Configurar Plano de Pagamento Personalizado – Cartões do Uruguay
 
-| Nome | Descrição | Meio de pagamento |                     Bins {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pagamento no adquiriente (opcional) |
+| Nome | Descrição | Meio de pagamento |                     Bins {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pagamento no adquirente (opcional) |
 |--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
 | OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
 
@@ -255,7 +255,7 @@ function startTimer () {
     setTimeout(stopTimer,2000);
 }
 function stopTimer () {
-  	window.vtex.deviceFingerprint = document.getElementById('deviceId').value;
+    window.vtex.deviceFingerprint = document.getElementById('deviceId').value;
   console.log("MP-deviceId : " + document.getElementById('deviceId').value)
 }
 window.onload = startTimer;
@@ -277,7 +277,7 @@ Para obter as credenciais deve seguir os seguintes passos:
 ## Interpretar log da VTEX
 Os logs permitem revisar a informação que retorna MercadoPago e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação.
 
-Também em caso de modificação ou ativação de novos meios de pagamento, Os logs nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto.
+Também em caso de modificação ou ativação de novos meios de pagamento, os logs nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto.
 
 Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
 
@@ -286,7 +286,7 @@ Então buscar o LOG que contenha o status response e clicar em _ver mais_.
 
 Os dados mais significativos são os seguintes:
 
-- `"Id":10302316` Número da transação de Mercado Pago.
+- `"Id":10302316` Número da transação de Mercado Pago.
 - `"Payment_method_id":"visa"`: Meio de pagamento.
 - `"Payment_type_id":"credit_card"`: Meio de pagamento.
 - `"Status":"authorized"`: Estado do pagamento.
@@ -294,9 +294,9 @@ Os dados mais significativos são os seguintes:
 - `"External_reference":"503451"`: Identificador da VTEX enviado a Mercado Pago.
 - `"First_six_digits":"450995"`: Bin do cartão de crédito.
 - `"Processing_mode":"gateway"`: Modo de processamento do pagamento (Agregador / Gateway).
-- `"Merchant_account_id"`:"83bb673420b8201f80aff598b3743864": Codigo de comércio (solo para Gateway).
+- `"Merchant_account_id"`:"83bb673420b8201f80aff598b3743864": Código de comércio (somente para Gateway).
 
-Quando confrontado com uma rejeição, é muito importante rever o `Status_detail` que especifica o motivo do mesmo.
+Quando confrontado com uma rejeição, é muito importante rever o `Status_detail` que especifica o motivo do mesmo.
 
 - `"Status":"rejected"`: Pagamento rejeitado.
 - `"Status_detail":"cc_rejected_other_reason"`: Rejeição do cartão de crédito, sem informação do motivo.

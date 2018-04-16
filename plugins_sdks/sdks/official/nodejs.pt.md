@@ -1,20 +1,20 @@
-# Mercado Pago SDK module for Payments integration
+# Mercado Pago SDK para Node JS
 
-* [Install](#install)
-* [Basic checkout](#basic-checkout)
-* [Customized checkout](#custom-checkout)
-* [Generic methods](#generic-methods)
+* [Instalação](#install)
+* [Checkout Básico](#basic-checkout)
+* [Checkout Customizado](#custom-checkout)
+* [Métodos Genéricos](#generic-methods)
 
 <a name="install"></a>
-## Install
+## Instalação
 
 ```
 $ npm install mercadopago
 ```
 
-### Promises and Callbacks support
+### Promises e Callbacks suportados
 
-Every method supports either promises and callbacks. For example:
+Todo método suporta `promises` e `callbacks`. Por exemplo:
 
 ```javascript
 var at = mp.getAccessToken ();
@@ -27,7 +27,8 @@ at.then (
         console.log (error);
     });
 ```
-is the same as:
+
+é o mesmo que:
 
 ```javascript
 mp.getAccessToken(function (err, accessToken){
@@ -39,14 +40,14 @@ mp.getAccessToken(function (err, accessToken){
 });
 ```
 
-In order to use callbacks, simply pass a function as the last parameter.
+Para usar callbacks, simplesmente passe uma função como último parâmetro.
 
 <a name="basic-checkout"></a>
-## Basic checkout
+## Checkout Básico
 
-### Configure your credentials
+### Configure suas credenciais
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** in the following address:
+* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** no seguinte endereço:
     * Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
     * Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
     * México: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
@@ -61,15 +62,15 @@ var MP = require ("mercadopago");
 var mp = new MP ("CLIENT_ID", "CLIENT_SECRET");
 ```
 
-### Preferences
+### Preferências
 
-#### Get an existent Checkout preference
+#### Receba uma preferência de Checkout existente
 
 ```javascript
 mp.getPreference ("PREFERENCE_ID");
 ```
 
-#### Create a Checkout preference
+#### Crie uma preferência de Checkout
 
 ```javascript
 var preference = {
@@ -86,7 +87,7 @@ var preference = {
 mp.createPreference (preference);
 ```
 
-#### Update an existent Checkout preference:
+#### Atualize uma preferência de Checkout existente:
 
 ```javascript
 var preference = {
@@ -105,7 +106,7 @@ mp.updatePreference ("PREFERENCE_ID", preference);
 
 ### Payments/Collections
 
-#### Search for payments
+#### Busque pagamentos
 
 ```javascript
 var filters = {
@@ -125,7 +126,7 @@ mp.searchPayment (filters)
     });
 ```
 
-#### Get payment data
+#### Obtenha dados de pagamentos
 
 ```javascript
 mp.getPayment (qs["id"])
@@ -139,24 +140,24 @@ mp.getPayment (qs["id"])
     });
 ```
 
-#### Cancel (only for pending payments)
+#### Cancelar (apenas para pagamentos pendentes)
 
 ```javascript
 mp.cancelPayment ("ID");
 ```
 
-#### Refund (only for accredited payments)
+#### Restituir (apenas para pagamentos créditos)
 
 ```javascript
 mp.refundPayment ("ID");
 ```
 
 <a name="custom-checkout"></a>
-## Customized checkout
+## Checkout customizado
 
-### Configure your credentials
+### Configure suas credenciais
 
-* Get your **ACCESS_TOKEN** in the following address:
+* Obtenha seu **ACCESS_TOKEN** no seguinte endereço:
     * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
     * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
     * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
@@ -170,7 +171,7 @@ var MP = require ("mercadopago");
 var mp = new MP ("ACCESS_TOKEN");
 ```
 
-### Create payment
+### Criar pagamento
 
 ```javascript
 mp.post ({
@@ -179,7 +180,7 @@ mp.post ({
 }).then (...);
 ```
 
-### Create customer
+### Criar cliente
 
 ```javascript
 mp.post ({
@@ -190,7 +191,7 @@ mp.post ({
 }).then (...);
 ```
 
-### Get customer
+### Obter cliente
 
 ```javascript
 mp.get ({
@@ -198,7 +199,7 @@ mp.get ({
 }).then (...);
 ```
 
-* View more Custom checkout related APIs in Developers Site
+* Veja mais APIs relacionadas a Checkout Custom em Developers Site
     * Argentina: [https://www.mercadopago.com.ar/developers](https://www.mercadopago.com.ar/developers)
     * Brazil: [https://www.mercadopago.com.br/developers](https://www.mercadopago.com.br/developers)
     * Mexico: [https://www.mercadopago.com.mx/developers](https://www.mercadopago.com.mx/developers)
@@ -207,57 +208,57 @@ mp.get ({
     * Uruguay: [https://www.mercadopago.com.uy/developers](https://www.mercadopago.com.uy/developers)
 
 <a name="generic-methods"></a>
-## Generic methods
+## Métodos genéricos
 
-You can access any resource from the [Mercado Pago API](https://api.mercadopago.com) using the generic methods.
-The basic structure is:
+Você pode acessar qualquer recurso da API do [Mercado Pago API](https://api.mercadopago.com) usando métodos genéricos.
+A estrutura básica é:
 
 `mp.method(request).then(...)`
 
-where `request` can be:
+onde `request` pode ser:
 
 ```javascript
 {
-    "uri": "The resource URI, relative to https://api.mercadopago.com",
-    "params": "Optional. Key:Value object with parameters to be appended to the URL",
-    "data": "Optional. Object or String to be sent in POST and PUT requests",
-    "headers": "Optional. Key:Value object with custom headers, like content-type: application/x-www-form-urlencoded",
-    "authenticate": "Optional. Boolean to specify if the GET method has to authenticate with credentials before request. Set it to false when accessing public APIs"
+    "uri": "O recurso URI, relativo a https://api.mercadopago.com",
+    "params": "Opcional. Key:Valor do objeto com parâmetros a serem anexados a URL",
+    "data": "Opcional. Objeto ou String a ser enviado no POST e PUT requests",
+    "headers": "Opcional. Key:Valor do objeto com custom headers, como content-type: application/x-www-form-urlencoded",
+    "authenticate": "Opcional. Boolean para especificar se o método GET deve autenticar com as credenciais antes da requisição. Configure como false quando acessando uma API pública."
 }
 ```
 
-Examples:
+Exemplos:
 
 ```javascript
-// Get a resource, with optional URL params. Also you can disable authentication for public APIs
+// Obtenha um recurso com parâmetros de URL opcionais. Além disso, você pode desativar a autenticação de APIs públicas
 mp.get ({
     "uri": "/resource/uri",
     "params": {params},
     "authenticate": true
 });
 
-// Create a resource with "data" and optional URL params.
+// Crie um recurso com "data" e parâmetros opcionais de URL.
 mp.post ({
     "uri": "/resource/uri",
     "data": data,
     "params": {params}
 });
 
-// Update a resource with "data" and optional URL params.
+// Atualize um recurso com "data" e parâmetros opcionais de URL.
 mp.put ({
     "uri": "/resource/uri",
     "data": data,
     "params": {params}
 });
 
-// Delete a resource with optional URL params.
+// Delete um recurso com parâmetros opcionais de URL.
 mp.delete ({
     "uri": "/resource/uri",
     "params": {params}
 });
 ```
 
- For example, if you want to get the Sites list (no params and no authentication):
+Por exemplo, se você deseja obter a lista de sites (sem parâmetros e sem autenticação):
 
 ```javascript
 mp.get ({
