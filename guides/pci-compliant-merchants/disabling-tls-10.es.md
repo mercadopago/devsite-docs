@@ -28,6 +28,13 @@ En Mercado Pago nos tomamos muy en serio la seguridad y ayudamos a nuestros clie
 
 A partir del 15 de Junio de 2018, Mercado Pago empezará a desactivar el protocolo de cifrado TLS 1.0.
 
+#### Puntos a tener en cuenta:
+
+Plataformas que **no están impactadas**: Mercado Libre, botones de pago de Mercado Pago y Mercado Shops.
+Si tenés **tu propio e-commerce consulta a tu soporte técnico**.
+Si operas con alguna **plataforma de e-commerce** por ejemplo: Magento, Shopify, Vtex, marketplaces, etc... **consulta al soporte técnico**.
+
+
 ## Acción requerida para integraciones de API
 
 Si tus integraciones que utilizan conexiones entrantes con Mercado Pago no tienen los protocolos TLS 1.1 y/o TLS 1.2 activados tras realizar este cambio, empezarán a fallar
