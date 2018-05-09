@@ -6,6 +6,17 @@ No momento, estamos trabalhando no desligamento do protocolo de criptografia TLS
 Consequentemente, o Mercado Pago exigirá que suas conexões com os domínios https://api.mercadopago.com e https://pagamento.mercadopago.com sejam realizados utilizando o protocolo TLS 1.1 ou superior a partir de 15 de junho de 2018.
 
 Depois desse prazo, o protocolo TLS 1.0 estará desativado e qualquer tentativa de conexão utilizando o TLS 1.0, falhará.
+
+### Pontos para serem levados em conta
+
+* A alteração terá impacto ** a partir de 15 de junho de 2018. **
+* Se você usa apenas Mercado Libre, essa alteração não afetará você.
+* Se você usa apenas os botões de pagamento de Mercado Pago, essa alteração não afetará você.
+* Se você usa apenas Mercado Shops, essa alteração não afetará você.
+* Caso tenha seu **próprio e-commerce, consulte sua equipe de TI**.
+* Caso **opere com alguma plataforma de e-commerce**, como por exemplo: Magento, Shopify, Vtex ou otros **Consulte seu respectivo suporte técnico**.
+
+
 ## Introdução
 
 ### O que é o TLS?
@@ -25,12 +36,6 @@ No Mercado Pago levamos a segurança muito a sério e ajudamos nossos clientes a
 ### Como e quando o Mercado Pago implementará essa mudança?
 
 A partir de 15 de junho de 2018, o Mercado Pago começará a desativar o protocolo de criptografia TLS 1.0.
-
-#### Pontos para serem levados em conta
-
-Plataformas **não impactadas**: Mercado Livre, Botões de pagamento do Mercado Pago e Mercado Shops.
-Caso tenha seu **próprio e-commerce, consulte sua equipe de TI**.
-Caso **opere com alguma plataforma de e-commerce**, como por exemplo: Magento, Shopify, Vtex, marketplaces, etc... **Consulte seu respectivo suporte técnico**.
 
 ## Ação necessária para a integrações da API
 
