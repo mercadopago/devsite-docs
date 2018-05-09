@@ -8,6 +8,15 @@ En consecuencia, Mercado Pago requerirá que sus conexiones a los dominios https
 
 Una vez que desactivemos TLS 1.0, cualquier conexión que establezcas utilizando TLS 1.0 fallará.
 
+### Puntos a tener en cuenta:
+
+* El cambio tendrá impacto **a partir del 15 de Junio del 2018.**
+* Si operás sólo en Mercado Libre este cambio no te afectará.
+* Si operás sólo con botones de pago de Mercado Pago este cambio no te afectará.
+* Si operás sólo en Mercado Shops este cambio no te afectará.
+* Si tenés **tu propio e-commerce consulta a tu soporte técnico**.
+* Si operas con alguna **plataforma de e-commerce** por ejemplo: Magento, Shopify, Vtex u otros **consulta a su soporte técnico**.
+
 ## Introducción
 
 ### ¿Qué es TLS?
@@ -27,12 +36,6 @@ En Mercado Pago nos tomamos muy en serio la seguridad y ayudamos a nuestros clie
 ### ¿Cómo y cuándo implementará Mercado Pago el cambio?
 
 A partir del 15 de Junio de 2018, Mercado Pago empezará a desactivar el protocolo de cifrado TLS 1.0.
-
-#### Puntos a tener en cuenta:
-
-Plataformas que **no están impactadas**: Mercado Libre, botones de pago de Mercado Pago y Mercado Shops.
-Si tenés **tu propio e-commerce consulta a tu soporte técnico**.
-Si operas con alguna **plataforma de e-commerce** por ejemplo: Magento, Shopify, Vtex, marketplaces, etc... **consulta al soporte técnico**.
 
 
 ## Acción requerida para integraciones de API
