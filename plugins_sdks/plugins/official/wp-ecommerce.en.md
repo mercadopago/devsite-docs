@@ -2,9 +2,9 @@
 
 * [System Requirements](#system-requirements)
 * [Features](#features)
-* [Installation](#installation) 
+* [Installation](#installation)
 * [Instant Payment Notification Settings](#instant-payment-notification-settings)
-* [Upgrade](#upgrade) 
+* [Upgrade](#upgrade)
 
 # System Requirements
 ### Platform Version
@@ -193,7 +193,7 @@ To confirm that your module is really updated, you can see in *Plugins* item in 
 
 
 # Technical Support
-If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
+If you have any questions, problems or errors we have a support channel. Write us at our [support form](/support) with the following information:
 
 * Email of your account Mercado Pago;
 * Details about your question, problem or error;
