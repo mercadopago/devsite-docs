@@ -134,7 +134,7 @@ The Basic Checkout is the standard solution of Mercado Pago. The solution consis
 >
 > * Does not allow modifying the checkout design.
 > * Does not allow to modify the payment experience.
-> * The user is redigid outside the application to make the payment.
+> * The user is redirected outside the application to make the payment.
 
 
 To carry out the integration, you must follow the documentation that you can find by entering the following [link] ("../guides/payments/web-checkout/introduction/")
