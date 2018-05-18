@@ -8,7 +8,7 @@ En consecuencia, Mercado Pago requerirá que sus conexiones a los dominios https
 
 Una vez que desactivemos TLS 1.0, cualquier conexión que establezcas utilizando TLS 1.0 fallará.
 
-### Puntos a tener en cuenta:
+### Puntos a tener en cuenta:
 
 * El cambio tendrá impacto **a partir del 15 de Junio del 2018.**
 * Si operás sólo en Mercado Libre este cambio no te afectará.
