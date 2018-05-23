@@ -101,8 +101,8 @@ Obtenga su CLIENT_ID e CLIENT_SECRET de acuerdo con su país:
 <a name="Soporte-técnico"></a>
 ## Soporte técnico: ##
 
-Caso tenga alguna duda, problema o error tenemos un canal de contacto.
-Envié un email a modulos@mercadopago.com con la seguinte información:
+En el caso de que tenga alguna duda, problema o error tenemos un canal de contacto.
+Contáctanos a nuestro canal de [soporte](/support) con la siguiente información:
 
 * Email de su cuenta de Mercado Pago.
 * Detalles sobre su duda, problema o error.

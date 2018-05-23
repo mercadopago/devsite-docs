@@ -102,7 +102,7 @@ Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
 ## Suporte: ##
 
 Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento.
-Envie um email para modulos@mercadopago.com com as seguintes informações:
+Escreva para o nosso [formulário de apoio](/support) com as seguintes informações:
 
 * Email da sua conta Mercado Pago.
 * Detalhes sobre a sua duvida, problema ou erro.

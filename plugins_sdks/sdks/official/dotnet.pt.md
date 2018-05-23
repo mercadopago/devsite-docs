@@ -56,7 +56,7 @@ Você pode interagir com todos os recursos disponíveis na API pública para que
  using MercadoPago.Resources;
  using MercadoPago.DataStructures.Payment;
  using MercadoPago.Common;
- 
+
  MercadoPago.SDK.ClientSecret = "YOUR_ACCESS_TOKEN";
 
  Payment payment = new Payment
@@ -64,18 +64,18 @@ Você pode interagir com todos os recursos disponíveis na API pública para que
      TransactionAmount = (float)100.0,
      Token = "YOUR_CARD_TOKEN"
      Description = "Ergonomic Silk Shirt",
-     PaymentMethodId = "visa", 
+     PaymentMethodId = "visa",
      Installments = 1,
      Payer = new Payer {
          Email = "larue.nienow@hotmail.com"
      }
  };
- 
+
  payment.Save();
- 
+
  Console.Out.WriteLine(payment.Status);
 ```
 
 ### Suporte
 
-Escreva para developers@mercadopago.com
+Escreva-nos:[Formulário de suporte](/support)

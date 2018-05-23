@@ -101,7 +101,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 <a name="Support"></a>
 ## Support: ##
 
-If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
+If you have any questions, problems or errors we have a support channel. Write us at our [support form](/support) with the following information:
 
 * Email of your account Mercado Pago.
 * Details about your question, problem or error.

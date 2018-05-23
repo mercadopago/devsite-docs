@@ -232,8 +232,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 <a name="Soporte-técnico"></a>
 ## Soporte técnico: ##
 
-Caso tenga alguna duda, problema o error tenemos un canal de contacto.
-Envié un email a modulos@mercadopago.com con la seguinte información:
+Contáctanos a nuestro canal de [soporte](/support) con la siguiente información:
 
 * Email de su cuenta de Mercado Pago.
 * Detalles sobre su duda, problema o error.

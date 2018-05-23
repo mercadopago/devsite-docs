@@ -214,9 +214,8 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * Venezuela: https://www.mercadopago.com/mlv/account/credentials
   * Uruguay: https://www.mercadopago.com/mlu/account/credentials  
 
-  7. IPN settings. <br/>
-
-  ![Installation Instructions](/images/virtuemart-ipn_settings.png) <br />
+  7. IPN settings.
+  <br/>![Installation Instructions](/images/virtuemart-ipn_settings.png) <br />
 
   * **Choose the status of approved orders**: Sets up the order status when payments are approved.
   * **Choose the status when payment is pending**: Sets up the order status when payments are pending.
@@ -230,7 +229,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 <a name="Support"></a>
 ## Support: ##
 
-If you have any questions, problems or errors we have a support channel. Send an email to modulos@mercadopago.com with the following information:
+If you have any questions, problems or errors we have a support channel. Write us at our [support form](/support) with the following information:
 
 * Email of your account Mercado Pago.
 * Details about your question, problem or error.
