@@ -1,13 +1,4 @@
----
-  sites_supported:
-      - mla
-      - mco
-      - mlu
-      - mlm
-      - mpe
-      - mlv
-      - mlc
----
+
 
 # Web Tokenize Checkout - Personalización
 

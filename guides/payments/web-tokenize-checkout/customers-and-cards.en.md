@@ -1,13 +1,4 @@
----
-  sites_supported:
-      - mla
-      - mco
-      - mlu
-      - mlm
-      - mpe
-      - mlv
-      - mlc
----
+
 
 # Clientes y tarjetas almacenadas
 
