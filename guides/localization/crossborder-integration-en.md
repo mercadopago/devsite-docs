@@ -20,7 +20,7 @@ At the moment, the currencies in which the funds are allowed to be received are:
 The payer will make the payment in the local currency, in this way, he will be able to take advantage of the financing offered by Mercado Pago.
 
 
-## ACCOUNT CREATION
+## Account Creation
 
 The Mercado Pago account must be created by Mercado Pago in order to use the Cross Border solution. For the creation of the account it is necessary that you send us the following information:
 
@@ -30,13 +30,12 @@ The Mercado Pago account must be created by Mercado Pago in order to use the Cro
 - Contact Last Name.
 - Email. 
 - Country.
-- Currency.
 - State.
 - City. 
 - Address.
 - Zip.
 - Phone.
-- W9 (or equivalent).
+- Business License (W9 or equivalent).
 - Logo (298x118px, max weight 6KB and .png or .jpg)
 
 
@@ -49,7 +48,7 @@ Also, we need this data to configure the bank transfer:
 
 
 
-## GENERAL CONSIDERATIONS
+## General Considerations
 
 Whatever integration you carry out (Basic Checkout, Checkout Tokenizer or Custom Checkout) you must add the following lines of code to the creation of the payment or payment preference to be able to charge with your Cross Border account:
 
@@ -94,7 +93,7 @@ Finally, in the payment you will see the value in USD and the rate at which the 
 
 
 
-## API EXCHANGE RATE
+## API Exchange Rate
 
 For the integration of Cross Border, the use of the Exchange Rate API will be essential, since as mentioned above, the amount of the transaction must be made in local currency.
 
@@ -120,7 +119,7 @@ The answer you will get is similar to the following:
 > The rate field is expressed in the currency corresponding to the 'to' of the API call. In this example, it is in MXN.
 
 
-## CHECKOUT BASIC INTEGRATION
+## Checkoot Basic Integration
 
 The Basic Checkout is the standard solution of Mercado Pago. The solution consists in the generation of a payment preference, which returns an `init_point` that upon opening it redirects the user to a checkout where all the experience is handled by Mercado Pago.
 
@@ -137,7 +136,7 @@ The Basic Checkout is the standard solution of Mercado Pago. The solution consis
 > * The user is redigid outside the application to make the payment.
 
 
-To carry out the integration, you must follow the documentation that you can find by entering the following [link] ("../guides/payments/web-checkout/introduction/")
+To carry out the integration, you must follow the documentation that you can find by entering the following [link] (/guides/payments/web-checkout/introduction/)
 
 
 This is an example of the creation of the payment preference: 
@@ -451,7 +450,7 @@ This is an example of the payment response:
 
 
 
-## CHECKOUT TOKENIZER INTEGRATION
+## Checkout Tokenizer Integration
 
 The Tokenizer is the Mercado Pago solution that quickly allows you to obtain a card token from your customer's card. This solution consists in the generation of a payment order using Javascript that opens a checkout for the payer to load the data of the card. Then, you will receive the card token in your backend so that you can make a POST of the payment.
 
@@ -468,7 +467,7 @@ The Tokenizer is the Mercado Pago solution that quickly allows you to obtain a c
 > * Does not include all means of payment.
 
 
-To carry out the integration, you must follow the documentation you can find by entering the following [link] ("../guides/payments/tokenize-checkout/introduction/")
+To carry out the integration, you must follow the documentation you can find by entering the following [link] (/guides/payments/tokenize-checkout/introduction/)
 
 
 This would be an example of the creation of the checkout:
@@ -694,7 +693,7 @@ This is an example of the payment response:
 
 
 
-## CUSTOM CHECKOUT INTEGRATION (API)
+## Custom Checkout Integration (API)
 
 The Custom Checkout is the most customizable solution of Mercado Pago. This solution consists of the use of the Javascript SDK and the Mercado Pago APIs to carry out the tokenization of the payer's card and then the corresponding posting of the payment. All the experience is handled by the integrator.
 
@@ -711,7 +710,7 @@ The Custom Checkout is the most customizable solution of Mercado Pago. This solu
 > * You must integrate each means of payment separately.
 
 
-In order to carry out the integration you will have to follow the documentation that you can find entering in the following [link]("../guides/payments/api/introduction/")
+In order to carry out the integration you will have to follow the documentation that you can find entering in the following [link](/guides/payments/api/introduction/)
 
 You must generate a card form as indicated in the documentation that allows you to obtain a card-token from the payer card and then take it to your server and thus make the payment POST:
 
@@ -962,9 +961,9 @@ This is an example of the payment response:
 
 
 
-## PAYMENT REFUND
+## Payments Refund
 The refund of a payment is made in the local currency of the operation (for example, MXN) under the same conversion of the original payment.
 
 For this, it will be necessary for you to search for the payment by means of the `payment_id` and obtain the` currency_conversion`.
 
-You can get more information about the returns API in the following [link]("../guides/manage-account/cancellations-and-refunds).
+You can get more information about the returns API in the following [link](/guides/manage-account/cancellations-and-refunds).
