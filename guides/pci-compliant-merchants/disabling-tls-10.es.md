@@ -14,8 +14,9 @@ Una vez que desactivemos TLS 1.0, cualquier conexión que establezcas utilizando
 * Si operás sólo en Mercado Libre este cambio no te afectará.
 * Si operás sólo con botones de pago de Mercado Pago este cambio no te afectará.
 * Si operás sólo en Mercado Shops este cambio no te afectará.
+* Si operás sólo en VTEX este cambio no te afectará.
 * Si tenés **tu propio e-commerce consulta a tu soporte técnico**.
-* Si operas con alguna **plataforma de e-commerce** por ejemplo: Magento, Shopify, Vtex u otros **consulta a su soporte técnico**.
+* Si operas con alguna **plataforma de e-commerce** por ejemplo: Magento, Shopify u otros **consulta a su soporte técnico**.
 
 ## Introducción
 
