@@ -13,7 +13,7 @@ sites_supported:
 
 O Mercado Pago permite receber os pagamentos de seus clientes através de um QR code exclusivo que identifica o ponto de venda.
 
-Quando o cliente escaneia o QR code, é feita uma requisição ao seu servidor, consultando o valor a ser cobrado. O servidor responde com a [preferência de pagamentos](/reference/preferences/resource/) e no celular do seu cliente o checkout é exibido com as informações do pagamento a ser efetuado. Por fim, o cliente efetua o pagamento e você receberá imediatamente uma notificação *Webhook* em seu servidor para impactar o resultado.
+Quando o cliente escaneia o QR code, é feita uma requisição ao seu servidor, consultando o valor a ser cobrado. O servidor responde com a [preferência de pagamentos](/reference/reference/preferences/_preferences/post/) e no celular do seu cliente o checkout é exibido com as informações do pagamento a ser efetuado. Por fim, o cliente efetua o pagamento e você receberá imediatamente uma notificação *Webhook* em seu servidor para impactar o resultado.
 
 
 ## Detalhes da integração

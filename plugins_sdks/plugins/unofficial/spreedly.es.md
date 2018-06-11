@@ -357,7 +357,7 @@ Podes especificar el número de cuotas para una transacción enviando el campo `
 Este es un string que podes enviar para que tu cliente pueda identificar el cargo en el resumen de la tarjeta. Podes especificar el valor enviandolo en el campo `statement_descriptor`. Esto se encuentra sólo disponible para Brasil.
 
 ### Información Adicional
-Para obtener una mejora en la aprobación de los pagos podes enviar información adicional del pago en formato JSON en el campo `additional_info`. Para mayor información ingresa en el siguiente [link]("/reference/payments/resource/").
+Para obtener una mejora en la aprobación de los pagos podes enviar información adicional del pago en formato JSON en el campo `additional_info`. Para mayor información ingresa en el siguiente [link]("/reference/payments/_payments_id/get/").
 
 ### Mercado Pago Device Fingerprint
 Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas y mejorará la aprobación de tus pagos.
