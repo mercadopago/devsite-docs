@@ -357,7 +357,7 @@ Esta é uma string que pode enviar para que seu cliente possa identificar a cobr
 
 ### Informação Adicional
 
-Para obter uma melhora na aprovação dos pagamentos pode enviar as informacoes adicionais do pagamento em formato JSON no campo `additional_info`. Para maiores informações acesse o [seguinte link]("/reference/payments/resource/").
+Para obter uma melhora na aprovação dos pagamentos pode enviar as informacoes adicionais do pagamento em formato JSON no campo `additional_info`. Para maiores informações acesse o [seguinte link]("/reference/payments/_payments_id/get/").
 
 ### Mercado Pago Device Fingerprint
 
