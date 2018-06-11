@@ -5,7 +5,6 @@ sites_supported:
 ---
 
 
-
 # CrossBorder
 
 La solución CrossBorder de Mercado Pago te permite cobrar de manera local pero retirar los fondos en una cuenta bancaria en otro país diferente a donde estas vendiendo.
