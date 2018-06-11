@@ -6,21 +6,21 @@ This library provides developers with a simple set of bindings to the Mercado Pa
 ### .Net versions supported:
 3.5 .Net Framework or Major
 
-## Installation 
+## Installation
 
 ### Using our nuget package
 
 **Using Package Manager**
 
-`PM> Install-Package mercadopago-sdk -Version 1.0.24`
+`PM> Install-Package mercadopago-sdk -Version 1.0.25`
 
 **Using .Net CLI**
 
-`> dotnet add package mercadopago-sdk --version 1.0.24`
+`> dotnet add package mercadopago-sdk --version 1.0.25`
 
 **Using Packet CLI**
 
-`> paket add mercadopago-sdk --version 1.0.24`
+`> paket add mercadopago-sdk --version 1.0.25`
 
 ## Quick Start
 
@@ -50,7 +50,7 @@ You can interact with all the resources available in the public API, to this eac
  using MercadoPago.Resources;
  using MercadoPago.DataStructures.Payment;
  using MercadoPago.Common;
- 
+
  MercadoPago.SDK.ClientSecret = "YOUR_ACCESS_TOKEN";
 
  Payment payment = new Payment
@@ -58,18 +58,18 @@ You can interact with all the resources available in the public API, to this eac
      TransactionAmount = (float)100.0,
      Token = "YOUR_CARD_TOKEN"
      Description = "Ergonomic Silk Shirt",
-     PaymentMethodId = "visa", 
+     PaymentMethodId = "visa",
      Installments = 1,
      Payer = new Payer {
          Email = "larue.nienow@hotmail.com"
      }
  };
- 
+
  payment.Save();
- 
+
  Console.Out.WriteLine(payment.Status);
 ```
 
-### Support 
+### Support
 
-Write us at developers@mercadopago.com
+Write us at our [support form](/support).

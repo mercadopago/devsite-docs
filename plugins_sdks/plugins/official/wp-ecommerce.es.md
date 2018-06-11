@@ -2,9 +2,9 @@
 
 * [Requisitos del Sistema](#requisitos-del-sistema)
 * [Funcionalidad](#funcionalidad)
-* [Instalación](#instalación) 
+* [Instalación](#instalación)
 * [Configuraciones de las Notificaciones Instantáneas de Pago](#configuraciones-de-las-notificaciones-instantáneas-de-pago)
-* [Actualización](#actualización) 
+* [Actualización](#actualización)
 
 # Requisitos del Sistema
 ### Versiones de la plataforma
@@ -193,7 +193,7 @@ Para confirmar que tu modulo está realmente actualizado, puedes ver en el item 
 
 
 # Soporte Técnico
-Si tienes alguna pregunta, problema o error tenemos un canal de soporte. Envíanos un email a modulos@mercadopago.com con la siguiente información:
+Si tienes alguna pregunta, problema o error tenemos un canal de soporte. Contáctanos a nuestro canal de [soporte](/support) con la siguiente información:
 
 * Email de tu cuenta de Mercado Pago;
 * Detalles sobre tu consulta, problema o error;

@@ -8,57 +8,55 @@ sites_supported:
 
 # Cross Border
 
-The Cross Border solution of Mercado Pago allows you to charge locally but withdraw the funds in a bank account in another country different from where you are selling.
+La solución Cross Border de Mercado Pago te permite cobrar de manera local pero retirar los fondos en una cuenta bancaria en otro país diferente a donde estas vendiendo.
 
-In order to use the Cross Border solution, the Mercado Pago account must be created by our team, since some special configurations need to be made.
-Therefore, you must contact the Mercado Pago commercial team by writing to: `crm_regionales@mercadopago.com`
+Para poder utilizar la solución de Cross Border la cuenta de Mercado Pago debe ser creada por nuestro equipo, ya que se necesitan hacer algunas configuraciones especiales.
+Por lo tanto, debes contactarte con el equipo comercial de Mercado Pago escribiendo a: `crm_regionales@mercadopago.com`
 
-At the moment, the currencies in which the funds are allowed to be received are:
+Por el momento, las monedas en las que se permite recibir los fondos son:
 
 - USD
 
-The payer will make the payment in the local currency, in this way, he will be able to take advantage of the financing offered by Mercado Pago.
-
-
-## Account Creation
-
-The Mercado Pago account must be created by Mercado Pago in order to use the Cross Border solution. For the creation of the account it is necessary that you send us the following information:
-
-- Company Name.
-- Display Name.
-- Contact First Name.
-- Contact Last Name.
-- Email. 
-- Country.
-- State.
-- City. 
-- Address.
-- Zip.
-- Phone.
-- Business License (W9 or equivalent).
-- Logo (298x118px, max weight 6KB and .png or .jpg)
-
-
-Also, we need this data to configure the bank transfer:
-
-- swiftCode o routingCode.
-- bankAccountNumber.
-- accountName.
-- bankName.
+Tene en cuenta que el pagador va a realizar el pago en la moneda local, de esta manera, el mismo podrá aprovechar la financiación ofrecida por Mercado Pago.
 
 
 
-## General Considerations
+## Creación de la cuenta
+Como se mencionó anteriormente la cuenta de Mercado Pago deberá ser creada por Mercado Pago para poder utilizar la solución de CrossBorder. Para la creación de la cuenta es necesario que nos envien la siguiente información:
 
-Whatever integration you carry out (Basic Checkout, Checkout Tokenizer or Custom Checkout) you must add the following lines of code to the creation of the payment or payment preference to be able to charge with your Cross Border account:
+- Nombre de la compañia.
+- Nombre a mostrar.
+- Nombre del contacto.
+- Apellido del contacto.
+- Email.
+- País.
+- Estado.
+- Ciudad.
+- Dirección.
+- Código Postal.
+- Teléfono.
+- Licencia de Negocio (W9 o equivalente).
+- Logo (298x118px, peso máximo 6KB y .png o .jpg).
+
+A su vez, necesitamos los datos para configurar la trasferencia bancaria:
+
+- Código swift o código routing.
+- Número de la cuenta bancaria.
+- Propietario de la cuenta bancaria.
+- Nombre del banco.
+
+
+## Consideraciones generales
+
+Sea cual sea la integración que lleves a cabo (Checkout básico, Checkout Tokenizador o Checkout Personalizado) deberás sumar las siguientes líneas de código a la creación de la preferencia de pago o del pago para poder cobrar con tu cuenta Cross Border:
 
 ```
 "counter_currency": {
 	"currency_id": "USD"
 }
-``` 
+```
 
-Please note that if you do not send this portion of code, you will receive an error message like:
+Tene en cuenta que si no envías esta porción de código, recibirás un mensaje de error como el siguiente:
 
 ```json
 {
@@ -69,7 +67,7 @@ Please note that if you do not send this portion of code, you will receive an er
 }
 ```
 
-In turn, if your Mercado Pago account was not created to operate Cross Border, you will receive an error message like:
+A su vez, si tu cuenta de Mercado Pago no fue creada para operar con Cross Border, recibirás un mensaje de error como el siguiente:
 
 ```json
 {
@@ -80,7 +78,7 @@ In turn, if your Mercado Pago account was not created to operate Cross Border, y
 }
 ```
 
-Finally, in the payment you will see the value in USD and the rate at which the amount was converted to USD. In movements of the account, a movement in USD is generated.This is an example:
+Finalmente, en el pago vas a ver el valor en USD y el rate con que fue convertido el amount a USD. En los movimientos de la cuenta, se genera un moviemiento en USD.
 
 ```json
 "counter_currency": {
@@ -95,15 +93,15 @@ Finally, in the payment you will see the value in USD and the rate at which the 
 
 ## API Exchange Rate
 
-For the integration of Cross Border, the use of the Exchange Rate API will be essential, since as mentioned above, the amount of the transaction must be made in local currency.
+Para la integración de Cross Border será fundamental la utilización de la API de Exchange Rate, ya que como se mencionó anteriormente, el monto de la operación debe ser realizado en moneda local.
 
-The Exchange Rate API is:
+La API de Exchange Rate es:
 
 ```
 https://api.mercadopago.com/v1/exchange_rates?from=USD&to=MXN&public_key=<PUBLIC_KEY>
 ```
 
-The answer you will get is similar to the following:
+La respuesta que vas a obtener es similar a la siguiente:
 
 ```
 {
@@ -116,31 +114,32 @@ The answer you will get is similar to the following:
 }
 ```
 
-> The rate field is expressed in the currency corresponding to the 'to' of the API call. In this example, it is in MXN.
+> El campo rate esta expresado en la moneda correspondiente al 'to' de la call de la API. En este ejemplo, es en MXN.
 
 
-## Checkoot Basic Integration
 
-The Basic Checkout is the standard solution of Mercado Pago. The solution consists in the generation of a payment preference, which returns an `init_point` that upon opening it redirects the user to a checkout where all the experience is handled by Mercado Pago.
+## Integración con Checkout Básico
 
-> ADVANTAGES
+El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución consiste en la generación de una preferencia de pago, la cual retorna un `init_point` que al abrirlo redirecciona al usuario a un checkout donde toda la experiencia es manejada por Mercado Pago.
+
+> VENTAJAS
 >
-> * Integration speed.
-> * Scalability in many countries.
-> * Includes all means of payment available.
+> * Velocidad de integración.
+> * Escalabilidad en muchos paises.
+> * Incluye todos los medios de pagos disponibles.
 >
-> DISADVANTAGES
+> DESVENTAJAS
 >
-> * Does not allow modifying the checkout design.
-> * Does not allow to modify the payment experience.
-> * The user is redigid outside the application to make the payment.
+> * No permite modificar el diseño del checkout.
+> * No permite modificar la experiencia de pago.
+> * El usuario es redigido fuera de la aplicación para realizar el pago.
 
 
-To carry out the integration, you must follow the documentation that you can find by entering the following [link] (/guides/payments/web-checkout/introduction/)
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](/guides/payments/web-checkout/introduction)
 
 
-This is an example of the creation of the payment preference: 
-  
+Este sería un ejemplo de la creación de la preferencia de pago:
+
 ``` curl
 $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOKEN> \
   -H 'Content-Type: application/json' \
@@ -153,7 +152,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"currency_id": "ARS",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
-			"category_id": "others", 
+			"category_id": "others",
 			"quantity": 1,
 			"unit_price": 100
 		}
@@ -174,7 +173,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"street_name": "Street",
 			"street_number": 123,
 			"zip_code": "5700"
-		} 
+		}
 	},
 	"back_urls": {
 		"success": "https://www.success.com",
@@ -212,7 +211,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 
 ```
 
-This is an example of the response to the creation of the payment preference:
+Este sería un ejemplo de la  respuesta de la creación de la preferencia de pago:
 
 ```json
 {
@@ -298,7 +297,7 @@ This is an example of the response to the creation of the payment preference:
 }
 ```
 
-This is an example of the payment response:
+Este es un ejemplo de la respuesta del pago:
 
 ``` json
 {
@@ -450,28 +449,27 @@ This is an example of the payment response:
 
 
 
-## Checkout Tokenizer Integration
+## Integración con el Tokenizador
+El Tokenizador es la solución de Mercado Pago que rápidamente te permite obtener un card token de la tarjeta de tu cliente. Dicha solución consiste en la generación de una orden de pago utilizando Javascript que abre un checkout para que el pagador cargue los datos de la tarjeta. Luego, recibirás en tu backend el card token para que hagas un POST del pago.
 
-The Tokenizer is the Mercado Pago solution that quickly allows you to obtain a card token from your customer's card. This solution consists in the generation of a payment order using Javascript that opens a checkout for the payer to load the data of the card. Then, you will receive the card token in your backend so that you can make a POST of the payment.
-
-> ADVANTAGES
+> VENTAJAS
 >
-> * Integration speed.
-> * Scalability in many countries.
-> * The user stays within the site.
+> * Velocidad de integración.
+> * Escalabilidad en muchos paises.
+> * El usuario se mantiene dentro del sitio.
 >
-> DISADVANTAGES
+> DESVENTAJAS
 >
-> * Does not allow modifying the checkout design.
-> * Does not allow to modify the payment experience.
-> * Does not include all means of payment.
+> * No permite modificar el diseño del checkout.
+> * No permite modificar la experiencia de pago.
+> * No incluye todos los medios de pago.
 
 
-To carry out the integration, you must follow the documentation you can find by entering the following [link] (/guides/payments/tokenize-checkout/introduction/)
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](/guides/payments/tokenize-checkout/introduction)
 
 
-This would be an example of the creation of the checkout:
-   
+Este sería un ejemplo de la creación del checkout:
+
 ``` html
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -487,7 +485,7 @@ This would be an example of the creation of the checkout:
 
 ```
 
-This is an example of the creation of the payment:
+Este sería un ejemplo de la creación del pago:
 
 ``` json
 $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
@@ -515,7 +513,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"title": "Title of what you are paying for",
 				"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 				"description": "Item description",
-				"category_id": "others", 
+				"category_id": "others",
 				"quantity": 1,
 				"unit_price": 100
 			}
@@ -531,7 +529,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"street_name": "Street",
 				"street_number": 123,
 				"zip_code": "5700"
-			} 
+			}
 		},
 		"shipments": {
 			"receiver_address": {
@@ -550,7 +548,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 ```
 
 
-This is an example of the payment response:
+Este es un ejemplo de la respuesta del pago:
 
 ``` json
 {
@@ -693,26 +691,26 @@ This is an example of the payment response:
 
 
 
-## Custom Checkout Integration (API)
+## Integración con Checkout Personalizado (API)
 
-The Custom Checkout is the most customizable solution of Mercado Pago. This solution consists of the use of the Javascript SDK and the Mercado Pago APIs to carry out the tokenization of the payer's card and then the corresponding posting of the payment. All the experience is handled by the integrator.
+El Checkout Personalizado es la solución más customizable de Mercado Pago. Dicha solución consiste en la utilización del SDK Javascript y las API's de Mercado Pago para llevar a cabo la tokenización de la tarjeta del pagador y luego el correspondiente posteo del pago. Toda la experiencia es manejada por el integrador.
 
-> ADVANTAGES
+> VENTAJAS
 >
-> * Allows you to create a unique design for the checkout.
-> * Allows you to modify the payment experience.
-> * The user stays within the site.
+> * Permite crear un diseño único para el checkout.
+> * Permite modificar la experiencia de pago.
+> * El usuario se mantiene dentro del sitio.
 >
-> DISADVANTAGES
+> DESVENTAJAS
 >
-> * Integration speed.
-> * Handling error messages and payment statements.
-> * You must integrate each means of payment separately.
+> * Velocidad de integración.
+> * Manejo de los mensajes de error y estados de pago.
+> * Debes integrar cada medio de pagos por separado.
 
 
-In order to carry out the integration you will have to follow the documentation that you can find entering in the following [link](/guides/payments/api/introduction/)
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente  [link](/guides/payments/api/introduction)
 
-You must generate a card form as indicated in the documentation that allows you to obtain a card-token from the payer card and then take it to your server and thus make the payment POST:
+Deberás generar un formulario de tarjeta como se indica en la documentación que te permita obtener un card-token de la tarjeta del pagador para luego llevar a tu servidor y así hacer el POST del pago:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
@@ -751,11 +749,11 @@ You must generate a card form as indicated in the documentation that allows you 
 </form>
 ...
 
-```	
+```
 
 
-This is an example of the creation of the payment:
-   
+Este sería un ejemplo de la creación del pago:
+
 ``` json
 $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
   -H 'Content-Type: application/json' \
@@ -782,7 +780,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"title": "Title of what you are paying for",
 				"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 				"description": "Item description",
-				"category_id": "others", 
+				"category_id": "others",
 				"quantity": 1,
 				"unit_price": 100
 			}
@@ -798,7 +796,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"street_name": "Street",
 				"street_number": 123,
 				"zip_code": "5700"
-			} 
+			}
 		},
 		"shipments": {
 			"receiver_address": {
@@ -818,7 +816,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 ```
 
 
-This is an example of the payment response:
+Este es un ejemplo de la respuesta del pago:
 
 ``` json
 {
@@ -961,9 +959,9 @@ This is an example of the payment response:
 
 
 
-## Payments Refund
-The refund of a payment is made in the local currency of the operation (for example, MXN) under the same conversion of the original payment.
+## Devoluciones de pagos
+La devolución de los pagos se hacen por valor de la moneda local de la operación (por ejemplo, MXN) bajo la misma conversión del pago original.
 
-For this, it will be necessary for you to search for the payment by means of the `payment_id` and obtain the` currency_conversion`.
+Para esto, será necesario que hagas la busqueda del pago mediante el `payment_id` y obtener el `currency_conversion`.
 
-You can get more information about the returns API in the following [link](/guides/manage-account/cancellations-and-refunds).
+Podes obtener más información de la API de devoluciones en el siguiente [link](/guides/manage-account/cancellations-and-refunds).

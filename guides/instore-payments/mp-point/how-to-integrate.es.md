@@ -86,9 +86,9 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 
 > WARNING
 >
-> * Esta integración sólo esta disponible para Android versión 2.8.0 o superior. 
+> * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
 > * No esta disponible para iOS.
-> * Para poder utilizar esta integración es necesario que te comuniques con [developers@mercadopago.com](mailto:developers@mercadopago.com) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
+> * Para poder utilizar esta integración es necesario que te comuniques con [integracioneshispanos@mercadopago.com](mailto:integracioneshispanos@mercadopago.com) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
 
 La otra forma de integrarse con la aplicación de Mercado Pago para cobrar con nuestro Point es mediante nuestras API.
 
@@ -134,7 +134,7 @@ La respuesta tendra el siguiente formato:
 }
 ```
 
-**Response status code: 200 OK** 
+**Response status code: 200 OK**
 
 ### Obtener la orden de pago
 
@@ -146,7 +146,7 @@ curl -X GET \
 'https://mobile.mercadopago.com/point/services/integrations/v1/:ID?access_token=ACCESS_TOKEN'
 ```
 
-Si el status de la orden es `OPEN` quiere decir que la misma todavía no se pago. Si el status es `CLOSED` quiere decir que la orden ya se pago y por lo tanto obtendrás el `payment_id` con el resto de la información. La respuesta tendra el siguiente formato. 
+Si el status de la orden es `OPEN` quiere decir que la misma todavía no se pago. Si el status es `CLOSED` quiere decir que la orden ya se pago y por lo tanto obtendrás el `payment_id` con el resto de la información. La respuesta tendra el siguiente formato.
 
 ```json
 {
@@ -159,7 +159,7 @@ Si el status de la orden es `OPEN` quiere decir que la misma todavía no se pago
 }
 ```
 
-**Response status code: 200 OK** 
+**Response status code: 200 OK**
 
 ### Eliminar la orden de pago
 
@@ -173,7 +173,7 @@ curl -X DELETE \
 'https://mobile.mercadopago.com/point/services/integrations/v1/attempt/device/:DEVICE_NAME?access_token=ACCESS_TOKEN'
 ```
 
-La respuesta tendra el siguiente formato. 
+La respuesta tendra el siguiente formato.
 
 ```json
 {
@@ -193,7 +193,7 @@ curl -X DELETE \
 
 **Response status code: 204 OK**
 
- 
+
 ### Obtener todos los devices de una cuenta
 
 El GET en esta API es la que posibilita obtener todos los devices configurados y sincronizados para tu cuenta de Mercado Pago
@@ -204,7 +204,7 @@ curl -X DELETE \
 'https://mobile.mercadopago.com/point/services/integrations/v1/devices?access_token=ACCESS_TOKEN'
 ```
 
-Si el status del device es `FREE` quiere decir que el dispositivo puede recibir una orden nueva. Si el status es `BUSY` quiere decir que el dispostivo ya tiene asignado una orden. La respuesta tendra el siguiente formato. 
+Si el status del device es `FREE` quiere decir que el dispositivo puede recibir una orden nueva. Si el status es `BUSY` quiere decir que el dispostivo ya tiene asignado una orden. La respuesta tendra el siguiente formato.
 
 ```json
 {
@@ -234,7 +234,7 @@ curl -X DELETE \
 'https://mobile.mercadopago.com/point/services/integrations/v1/devices/:DEVICE_NAME?access_token=ACCESS_TOKEN'
 ```
 
-La respuesta tendra el siguiente formato. 
+La respuesta tendra el siguiente formato.
 
 ```json
 {
