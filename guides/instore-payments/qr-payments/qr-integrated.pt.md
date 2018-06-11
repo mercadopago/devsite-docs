@@ -103,8 +103,3 @@ Antes de entrar em produção verifique os seguintes cenários.
 | 3  	| O usuário escaneia um código válido, uma vez finalizado o pedido.|Se prossegue com o fluxo normal de pagamento.|
 | 4  	| O usuário escaneia múltiplas vezes um código válido com pedido finalizado.|Se prossegue com o fluxo normal de pagamento.|
 | 5    	| O usuário escaneia um código válido com pedido finalizado e paga|Se prossegue com o fluxo normal de pagamento.|
-
-
-
-
-

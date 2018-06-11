@@ -2,11 +2,11 @@
 
 En este repositorio esta alojado el contenido mostrado en nuestro sitio para desarrolladores, las contribuciones son bienvenidas.
 
-> - Argentina: https://beta.mercadopago.com.ar/developers
-> - Brasil: https://beta.mercadopago.com.br/developers
-> - México: https://www.mercadopago.com.mx/developers
+> - Argentina: https://mercadopago.com.ar/developers
+> - Brasil: https://mercadopago.com.br/developers
+> - México: https://mercadopago.com.mx/developers
 > - Uruguay: https://beta.mercadopago.com.uy/developers
-> - Perú: https://www.mercadopago.com.pe/developers
+> - Perú: https://mercadopago.com.pe/developers
 > - Chile: https://beta.mercadopago.cl/developers
 > - Venezuela: https://www.mercadopago.com.ve/developers
 > - Colombia: https://www.mercadopago.com.co/developers

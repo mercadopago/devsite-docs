@@ -42,13 +42,13 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 
 
 <a name="Installation"></a>
-## Instalação: ##
+## Instalación: ##
 
 Este proceso muestra cómo realizar la instalación vía Marketplace:
 
-**Instalação via Marketplace**
+**Instalación vía Marketplace**
 
-1. Ir em **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** y haga clic en el botón de registro para descargar:
+1. Ir a **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** y haga clic en el botón de registro para descargar:
 2. Después de su registro usted puede descargar.
 ![Download](/images/prestashop-download.gif)
 
