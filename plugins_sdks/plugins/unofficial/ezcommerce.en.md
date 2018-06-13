@@ -19,8 +19,8 @@ To trade with ticket, follow this steps:
 1. Expand the "Configurações" menu.
 2. Access "Formas de Pagamento".
 3. Select the "Boleto bancário" tab.
-4. Click the "Boleto Bancário" option that contains "mercadopago_transparente" in the "Adquirente / Gateway" column. 
-5. Fill in the data for the "Específico" group. For Client ID and Client Secret, see the [Credentials section](#Credentials).
+4. Click the "Boleto Bancário" option that contains "mercadopago_transparente" in the "Adquirente / Gateway" column.
+5. Fill in the data for the "Específico" group. For Client ID and Client Secret, see the [Credentials section](#bookmark_credentials).
 6. Click "salvar".
 
     ![EZ ticket](/images/ezcommerce-ticket-1.gif)
@@ -34,8 +34,8 @@ To trade with credit cards, follow this steps:
 2. Access "Formas de Pagamento".
 3. Select the "Cartão de Crédito" tab.
 4. Find the credit card brands that contains "mercadopago_transparente" in the "Adquirente / Gateway" column.
-5. Fill in the data for the "Específico" group. For Client ID and Client Secret, see the [Credentials section](#Credentials).
-6. Choose one of the options for the "Tipo de parcelamento" field: 
+5. Fill in the data for the "Específico" group. For Client ID and Client Secret, see the [Credentials section](#bookmark_credentials).
+6. Choose one of the options for the "Tipo de parcelamento" field:
 - Dinâmico: The plataform will use the interests configured in Mercado Pago account.
 - Customizado: The interests must be configures in the plataform.
 7. Click "salvar".
