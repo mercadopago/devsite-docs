@@ -32,19 +32,19 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 1. Acessar o administrador se sua loja na plataforma.
 2. No menu Ferramentas, selecionar a opção **MÓDULOS DE PAGAMENTO**
 
-    ![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config01.png)
+    ![XTECH Configuracao](/images/xtech_config01.png)
 
 3. Clique no botão **INSTALAR** no quadro do Mercado Pago
 
-    ![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config02.png)
+    ![XTECH Configuracao](/images/xtech_config02.png)
 
 4. Será redirecionado para uma página do Mercado Pago para poder realizar permitir a conexão entre a XTECH Plataforma e sua conta Mercado Pago, realizando todas as configurações necessárias.
 
-    ![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config03.png)
+    ![XTECH Configuracao](/images/xtech_config03.png)
 
 5. Após clicar em **PERMITIR** você será redirecionado de volta para a seção administrativa da plataforma, na tela de configurações do módulo Mercado Pago.
 
-    ![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config04.png)
+    ![XTECH Configuracao](/images/xtech_config04.png)
 
 O Mercado pago está instalado porém **desativado**, siga os passos abaixo para realizar as configurações do módulo.
 
@@ -56,21 +56,21 @@ Após seguir os passos anteriores, o módulo do Mercado Pago na plataforma já e
 
 Para ativar o meio de pagamento, é necessário selecionar a opção **ATIVADO** do campo **STATUS**.
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config06.png)
+![XTECH Configuracao](/images/xtech_config06.png)
 
 #### Escolhendo o tipo de checkout
 
 Para escolher o checkout transparente, é necessário selecionar a opção **ATIVADO** do campo **Checkout transparente**.
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config07.png)
+![XTECH Configuracao](/images/xtech_config07.png)
 
 Para escolher o checkout redirect, é necessários elecionar a opção **DESATIVADO** do campo **Checkout transparente**.
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config08.png)
+![XTECH Configuracao](/images/xtech_config08.png)
 
 #### Entendendo o formulário de configuração da XTECH
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config05.png)
+![XTECH Configuracao](/images/xtech_config05.png)
 
 Segue abaixo a descrição de cada campo do formulário de configuração no painel administrativo da plataforma:
 
@@ -94,16 +94,16 @@ Utilizamos uma loja virtual de demonstração da XTECH para mostrar o resultado 
 
 **_Cartao de Crédito_**
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config12.png)
+![XTECH Configuracao](/images/xtech_config12.png)
 
 **_Boleto Bancário_**
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config11.png)
+![XTECH Configuracao](/images/xtech_config11.png)
 
 ### Checkout Redirect
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_config10.png)
+![XTECH Configuracao](/images/xtech_config10.png)
 
 Após clicar em **FINALIZAR COMPRA** o cliente será redirecionado para uma página do Mercado Pago para finalizar sua compra:
 
-![XTECH Configuracao](/images/plugins/unofficial/xtech/xtech_gif01.png)
+![XTECH Configuracao](/images/xtech_gif01.png)
