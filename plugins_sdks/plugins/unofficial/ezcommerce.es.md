@@ -20,7 +20,7 @@ Para operar con boleto, siga estos pasos:
 2. Visita "Formas de Pagamento".
 3. Seleccione la pestaña "Boleto bancário".
 4. Haga clic en la opción "Boleto Bancário" que tenga en la columna "Adquirente / Gateway" la información "mercadopago_transparente".
-5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#Credenciales).
+5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#bookmark_credenciales).
 6. Haga clic en "salvar".
 
     ![EZ ticket](/images/ezcommerce-ticket-1.gif)
@@ -33,7 +33,7 @@ Para operar con tarjetas de crédito siga estos pasos:
 2. Visita "Formas de Pagamento".
 3. Seleccione la pestaña "Cartão de Crédito".
 4. Busque las banderas que tienen en la columna "Adquirente / Gateway" la información "mercadopago_transparente".
-5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#Credenciales).
+5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#bookmark_credenciales).
 6. Seleccione el tipo de configuración de cuotas que desee en el campo "Tipo de parcelamento":
 - Dinâmico: La plataforma utilizará las configuraciones de interés de la cuenta de Mercado Pago.
 - Customizado: Deberá configurar las cuotas en la plataforma (total de cuotas, cuotas sin interés, porcentaje de interés y cuota mínima)
