@@ -1,3 +1,8 @@
+---
+  sites_supported:
+      - mlb
+---
+
 # XTECH
 
 ## O que é XTECH?
