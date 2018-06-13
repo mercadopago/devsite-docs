@@ -1,5 +1,5 @@
 ---
-resource: customers.raml
+resource: cards.raml
 use:
 - first_name
 - last_name
