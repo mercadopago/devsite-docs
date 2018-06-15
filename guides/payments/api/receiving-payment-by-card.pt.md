@@ -224,7 +224,7 @@ Para efetuar o pagamento, basta realizar um _API call_:
 ```php
 <?php  
     ===
-    O calor da propriedade **status** indicara o estado de um pagamento (**approved**, **rejected or **in_process**).
+    O valor da propriedade **status** indicara o estado de um pagamento (**approved**, **rejected or **in_process**).
     ===
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
