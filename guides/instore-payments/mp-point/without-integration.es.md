@@ -6,7 +6,7 @@ Te guiaremos para que puedas cobrar:
 
 - Ingresa en la aplicación de Mercado Pago, en la sección Cobrar con Point, y conecta tu dispositivo Point.
 - Ingresa el monto y una descripción de lo que vendes. La descripción te permitirá identificar la venta en tu backend.
-- Desliza la tarjeta de crédito o débito del pagador por el dispositivo Point. 
+- Desliza la tarjeta de crédito o débito del pagador por el dispositivo Point.
 - Ingresa el CVV de la tarjeta, el DNI del pagador y hazlo firmar.
 - ¡Listo! Ya cobraste, ahora puedes enviarle el comprobante de la operación por email o sms.
 
@@ -24,4 +24,4 @@ Para cada producto puedes insertar una imagen, el precio y nombre del mismo.
 
 Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](/guides/notifications/ipn.es.md) en tu sistema de gestión.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](/guides/instore-payments/mp-point/create-point.es.md)
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](/guides/instore-payments/mp-point/introduction.es.md)
