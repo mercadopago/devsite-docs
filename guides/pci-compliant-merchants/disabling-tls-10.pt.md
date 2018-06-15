@@ -10,12 +10,12 @@ Depois desse prazo, o protocolo TLS 1.0 estará desativado e qualquer tentativa 
 ### Pontos para serem levados em conta
 
 * A alteração terá impacto **a partir de 30 de junho de 2018.**
-* Se você usa apenas Mercado Libre, essa alteração não afetará você.
+* Se você usa apenas Mercado Livre, essa alteração não afetará você.
 * Se você usa apenas os botões de pagamento de Mercado Pago, essa alteração não afetará você.
 * Se você usa apenas Mercado Shops, essa alteração não afetará você.
 * Se você usa apenas VTEX, essa alteração não afetará você.
 * Caso tenha seu **próprio e-commerce, consulte sua equipe de TI**.
-* Caso **opere com alguma plataforma de e-commerce**, como por exemplo: Magento, Shopify ou otros **Consulte seu respectivo suporte técnico**.
+* Caso **opere com alguma plataforma de e-commerce**, como por exemplo: Magento, Shopify ou outros **Consulte seu respectivo suporte técnico**.
 
 
 ## Introdução

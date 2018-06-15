@@ -78,18 +78,19 @@ No artigo sobre [GitHub](https://github.com/mercadopago/point-android_integratio
 
 É necessário que envie sua `notification_url`, onde receberá um aviso de todos os novos pagamentos e atualizações de status gerados.
 
-Para mais informações, consulte a seção de [notificações](/guides/notifications/webhooks.es.md).
+Para mais informações, consulte a seção de [notificações](/guides/notifications/webhooks.pt.md).
 
 ## 4. Identificação de Pagamentos do Point
 
-Os pagamentos por Point podem ser encontrados na API do Payments. Você pode encontrar mais informações no artigo de [API's](/reference/payments/_payments_id /get/)
+Os pagamentos por Point podem ser encontrados na API do Payments. Você pode encontrar mais informações no artigo de [API's](/reference/payments/_payments/get/)
 
 Por sua vez, existe uma API de Point exclusiva que possui algumas informações de pagamento adicionais:
  `https://api.mercadolibre.com/point/services/payment/<payment_id>?access_token=<access_token>`
 
 A resposta terá o seguinte formato:
 
- `{
+```json
+{
   "payment_id": 12345,
   "caller_id": 44444,
   "poi": "BBPOS-123123123",
@@ -98,4 +99,7 @@ A resposta terá o seguinte formato:
   "buyer_info": {
     "email": "email@email.com"
   }
-}`
+}
+```
+
+> O campo "poi" é o identificador físico do dispositivo Point.

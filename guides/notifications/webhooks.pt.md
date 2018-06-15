@@ -8,7 +8,7 @@
 
 Um **webhook** é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
-Para receber as notificações dos eventos na sua plataforma, deve-se configurar previamente uma URL [acessível ao Mercado Pago](https://www.mercadopago.com/mla/account/webhooks).
+Para receber as notificações dos eventos na sua plataforma, deve-se configurar previamente uma [URL acessível ao Mercado Pago](https://www.mercadopago.com/mla/account/webhooks).
 
 
 ## Eventos
@@ -68,10 +68,11 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo         | URL                                                  | Documentação
 ------------ | -----------------------------------------------------| --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](/reference/payments/_payments_id/get/)
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](/reference/payments/_payments/post/)
 plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
 subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](/reference/invoices/_invoices_id/get/)
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](/reference/invoices/_invoices/get/)
+
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado.
 

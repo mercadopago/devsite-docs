@@ -218,13 +218,13 @@ Para efetuar um pagamento único, deve-se obter o id do card_token a partir dos 
 
 Os `card_token` são **válidos por 7 dias** e podem ser utilizados apenas uma vez.
 
-Para efetuar o pagamento, basta realizar um API call:
+Para efetuar o pagamento, basta realizar um _API call_:
 
 [[[
 ```php
 <?php  
     ===
-    O valor da propriedade `status` indicará o status do pagamento (`approved`, `rejected` ou `in_process`).
+    O valor da propriedade **status** indicara o estado de um pagamento (**approved**, **rejected or **in_process**).
     ===
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -248,7 +248,7 @@ Para efetuar o pagamento, basta realizar um API call:
 ```
 ```java
 ===
-O valor da `getStatus()` indicará o status do pagamento (`approved`, `rejected` or `in_process`).
+O valor de **getStatus()** indicara o estado de um pagamento (**approved**, **rejected or **in_process**). 
 ===
 
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
@@ -270,7 +270,7 @@ System.out.println(payment.getStatus());
 ```
 ```node
 ===
-O valor da propriedade `status` indicará o status do pagamento (`approved`, `rejected` ou `in_process`).
+O valor da propriedade **status** indicara o estado de um pagamento (**approved**, **rejected or **in_process**).
 ===
 
 var mercadopago = require('mercadopago');
@@ -299,7 +299,7 @@ mercadopago.payment.save(payment).then(function (data) {
 ```
 ```ruby
 ===
-O valor da propriedade `status` indicará o status do pagamento (`approved`, `rejected` ou `in_process`).
+O valor da propriedade **status** indicara el estado de um pagamento (**approved**, **rejected or **in_process**).
 ===
 
 require 'mercadopago'
@@ -320,7 +320,7 @@ payment.save()
 ``` 
 ```csharp
 ===
-O valor da propriedade `status` indicará o status do pagamento (`approved`, `rejected` ou `in_process`).
+O valor da propriedade **status** indicara el estado de um pagamento (**approved**, **rejected or **in_process**).
 ===
 
 using MercadoPago;
@@ -357,7 +357,7 @@ Console.log(payment.Status);
 
 ## Receba um pagamento em parcelas
 
-Para utilizar as [promoções](https://www.mercadopago.com.ar/promociones) que o Mercado Pago oferece, é importante enviar o campo `issuer_id` e `installments` ao criar um campo de pagamento.
+Para utilizar as [promoções](https://www.mercadopago.com.br/promocoes/) que o Mercado Pago oferece, é importante enviar o campo `issuer_id` e `installments` ao criar um campo de pagamento.
 
 O campo installments corresponde ao número de parcelas selecionado pelo comprador. O `issuer_id` corresponde ao banco emissor do cartão.
 
@@ -399,11 +399,15 @@ A resposta inclui o `issuer_id` que deve ser enviado e a mensagem recomendada p
 ]
 ```
 
+----[mla]----
+
 > NOTE
 >
 > Nota
 >
 > Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos [requisitos adicionais](/guides/localization/considerations-argentina.es.md).
+
+------------
 
 Para criar o pagamento, é importante enviar os dados indicados acima:
 
