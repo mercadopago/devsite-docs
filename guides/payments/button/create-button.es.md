@@ -1,6 +1,6 @@
 # Recibir pagos
 
-----[mla,mlb,mcl,mlm,mpe,mco,global]----
+----[mla,mlb,mlc,mlm,mpe,mco,global]----
 > En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](/guides/payments/web-checkout/introduction.es.md)**, **[Mobile Checkout](/guides/payments/mobile-checkout/introduction.es.md)** o **[API](/guides/payments/api/introduction.es.md)**.
 ------------
 
