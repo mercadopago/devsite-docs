@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout](/guides/payments/web-checkout/introduction.pt.md)implementado.
+> * Possuir o [Checkout](/guides/payments/web-checkout/introduction.pt.md) implementado.
 
 Para começar, você deve:
 
@@ -228,7 +228,7 @@ O vendedor receberá a diferença entre o valor total e as comissões, tanto a d
 
 É necessário que envie sua `notification_url` onde receberá um aviso de todos os novos pagamentos e atualizações de status gerados.
 
-Para mais informações, consulte a seção de [notificações](/guides/notifications/ipn.pt.md).
+Para mais informações, consulte a seção de [notificações](/guides/notifications/webhooks.pt.md).
 
 ### Devoluções e cancelamentos
 
@@ -236,4 +236,4 @@ As devoluções e cancelamentos poderão ser efetuados tanto pelo marketplace co
 
 Os cancelamentos somente poderão ser efetuados utilizando a API de cancelamentos.
 
-Para mais informações, consulte a seção de [devoluções e cancelamentos](/guides/manage-account/cancellations-and-refunds.es.md).
+Para mais informações, consulte a seção de [devoluções e cancelamentos](/guides/manage-account/cancellations-and-refunds.pt.md).

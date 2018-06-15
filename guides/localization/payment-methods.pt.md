@@ -8,15 +8,18 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 
 **GET /v1/payment_methods**
 
+```php
 	<?php
 		require ('mercadopago.php');
 		$mp = new MP ('ACCESS_TOKEN');
 		$payment_methods = $mp->get('/v1/payment_methods');
 		print_r ($payment_methods);
 	?>
+```
 
 **Resposta**
 
+```json
 	[
 		{
 			"id": "visa",
@@ -57,8 +60,9 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 		},
 		...
 	]
+```
 
-Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](#).
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](/reference/payment_methods/_payment_methods/get/).
 
 ## Meios de pagamento por país
 
@@ -95,18 +99,19 @@ Dinheiro em conta	       	| `account_money`          | `account_money`
 
 ### Brasil
 
-Meio de pagamento		| ID do Tipo de Pagamento| ID  
-:------------------------------	| :----------------------- | :--------------------
-Visa				| `credit_card`            | `visa`
-Mastercard			| `credit_card`            | `master`
-American Express		| `credit_card`            | `amex`
-Hipercard			| `credit_card`            | `hipercard`
+Meio de pagamento			| ID do Tipo de pagamento. | ID  
+:--------------------------	| :----------------------- | :--------------------
+Visa						| `credit_card`            | `visa`
+Mastercard					| `credit_card`            | `master`
+American Express			| `credit_card`            | `amex`
+Hipercard					| `credit_card`            | `hipercard`
 Diners Club International	| `credit_card`            | `diners`
-Elo				| `credit_card`            | `elo`
-Tarjeta Mercado Livre		| `credit_card`            | `melicard`
-Boleto Bancario			| `ticket`                 | `bolbradesco`
+Elo							| `credit_card`            | `elo`
+Cartão Mercado Livre		| `credit_card`            | `melicard`
+Boleto Bancario				| `ticket`                 | `bolbradesco`
 Dinheiro em conta	       	| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
+Pagamento na Lotérica      	| `ticket`			       | `pec`
 
 ### Chile
 

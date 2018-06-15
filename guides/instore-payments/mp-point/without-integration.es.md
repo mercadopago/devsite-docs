@@ -24,4 +24,4 @@ Para cada producto puedes insertar una imagen, el precio y nombre del mismo.
 
 Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](/guides/notifications/ipn.es.md) en tu sistema de gestión.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](/guides/instore-payments/mp-point/create-point/create-point.es.md)
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](/guides/instore-payments/mp-point/create-point.es.md)

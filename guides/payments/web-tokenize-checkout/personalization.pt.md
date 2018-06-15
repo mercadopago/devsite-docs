@@ -115,7 +115,7 @@ data-summary-shipping="10"
 >
 > Nota
 >
-> No caso em que o envio especificado seja *"0"* (cero), mostrará automáticamente o texto *"Gratis"*.
+> No caso em que o envio especificado seja *"0"* (zero), mostrará automáticamente o texto *"Gratis"*.
 
 
 #### Recarga

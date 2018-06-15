@@ -128,7 +128,7 @@ Retorno do Servidor:
 
 ## Receber pagamento de um Customer
 
-Para que possa receber um pagamento utilizando um cartão armazenado, é necessário incluir no códugo HTML o ID do customer e os IDs dos cartões do usuário através dos atributos `data-customer-id` e `data-card-ids`. Por exemplo:
+Para que possa receber um pagamento utilizando um cartão armazenado, é necessário incluir no código HTML o ID do customer e os IDs dos cartões do usuário através dos atributos `data-customer-id` e `data-card-ids`. Por exemplo:
 
 ```html
 <form action="/processar-pagamento" method="POST">

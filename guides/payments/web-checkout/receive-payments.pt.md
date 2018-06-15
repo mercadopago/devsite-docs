@@ -384,7 +384,7 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificaçõess](/guides/notifications/ipn.pt.md).
+Para mais informações, consulte a seção de [Notificaçõess](/guides/notifications/webhooks.pt.md).
 
 ## 4.Cancele um pagamento
 As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.

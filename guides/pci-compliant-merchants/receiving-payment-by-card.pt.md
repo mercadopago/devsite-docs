@@ -6,7 +6,7 @@ O Mercado Pago permite aos vendedores que cumprem com a regulamentação PCI que
 >
 > Pré-requisitos
 >
-> * Implementar o [processamento de pagamentos por API.](/guides/payments/api/receiving-payment-by-card.pt.md#recibir-un-pago-con-tarjeta).
+> * Implementar o [processamento de pagamentos por API](/guides/payments/api/receiving-payment-by-card.pt.md).
 > * Possuir o documento AOC (Declaração de Compliance) assinado por um consultor QSA.
 
 É necessário criar um `card_token`, que é a representação segura do cartão:
@@ -174,11 +174,11 @@ print(json.dumps(card_token, indent=4))
 }
 ```
 
-Após obter o card_token, você pode [criar o pagamento](../payments/api/receiving-payment-by-card.pt.md#recibir-un-pago-con-tarjeta).
+Após obter o card_token, você pode [criar o pagamento](/guides/payments/api/receiving-payment-by-card.pt.md).
 
 ## Obtenha aprovação mais rápida enviando o Device Fingerprint
 
-O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o dispositivo do comprador; isso ajudará a evitar transações fraudulentas.
+O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o dispositivo do comprador, isso ajudará a evitar transações fraudulentas.
 
 ### Implementação de dispositivo na Web
 
