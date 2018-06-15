@@ -1,50 +1,51 @@
 
-# Mercado Pago SDK for .Net
+# Mercado Pago SDK para .Net
 
-This library provides developers with a simple set of bindings to the Mercado Pago API.
+Esta librería provee a los desarrolladores un simple set de bindings con la API de Mercado Pago.
 
-### .Net versions supported:
-3.5 .Net Framework or Major
+### Vesiones soportadas de .Net :
+3.5 .Net Framework o posterior
 
-## Installation
+## Instalación
 
-### Using our nuget package
+### Utilizando nuestro package nuget
 
-**Using Package Manager**
+**Utilizando package manager**
 
 `PM> Install-Package mercadopago-sdk -Version 1.0.25`
 
-**Using .Net CLI**
+**Utilizando .Net CLI**
 
 `> dotnet add package mercadopago-sdk --version 1.0.25`
 
-**Using Packet CLI**
+**Utilizando Packet CLI**
 
 `> paket add mercadopago-sdk --version 1.0.25`
 
-## Quick Start
+## Guía de inicio rápido
 
-1. You have to import the Mercado Pago SDK.
+1. Importa la SDK de Mercado Pago.
 ```csharp
 using MercadoPago;
 ```
-2. Setup your credentials
--**For Web-checkout:**
+2. Configura tus credenciales
+
+-**Para Web-checkout:**
 
 ```csharp
 MercadoPago.SDK.ClientId     = "YOUR_CLIENT_ID";
 MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
 ```
--**For API or custom checkout:**
+-**Para API o custom checkout:**
 
 ```csharp
 MercadoPago.SDK.ClientSecret = "YOUR_ACCESS_TOKEN";
 ```
-3. Using resource objects
-You can interact with all the resources available in the public API, to this each resource is represented by classes according to the following diagram:
+3. Utiliza los recursos
+Puedes interactuar con todos los recursos disponibles en la API pública, cada recurso está representado por las clases en este diagrama:
 ![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 
-**Sample**
+**Ejemplo**
 ```csharp
  using MercadoPago;
  using MercadoPago.Resources;
@@ -70,6 +71,6 @@ You can interact with all the resources available in the public API, to this eac
  Console.Out.WriteLine(payment.Status);
 ```
 
-### Support
+### Soporte
 
-Write us at our [support form](/support).
+Escríbenos a nuestro [formulario de soporte](/support).
