@@ -205,4 +205,4 @@ Si no quieres permitir que se ingrese a la preferencia de pago para efectuar el 
 ```
 
 
-Para conocer más sobre los atributos de la preferencia, [consultá la documentación de la API](/reference/preferences/resource/)
+Para conocer más sobre los atributos de la preferencia, [consultá la documentación de la API](/reference/reference/preferences/_preferences/post/)

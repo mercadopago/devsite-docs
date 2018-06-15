@@ -202,4 +202,4 @@ If you want to prevent access to the payment preference for making a payment aft
 ```
 
 
-To learn more about the preference attributes, [check the API docs](/reference/preferences/resource/).
+To learn more about the preference attributes, [check the API docs](/reference/reference/preferences/_preferences/post/).

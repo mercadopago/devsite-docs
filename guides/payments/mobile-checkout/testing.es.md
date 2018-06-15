@@ -4,7 +4,7 @@ sites_supported:
     - mlb
     - mlm
     - mco
-    - mcl
+    - mlc
     - mpe
     - mlv
     - global

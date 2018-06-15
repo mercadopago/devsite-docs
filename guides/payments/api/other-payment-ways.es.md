@@ -205,7 +205,7 @@ Si este no cuenta con una, recibirá un email en la dirección enviada en el pag
 
 Para más información puedes ver el artículo sobre [devoluciones](/guides/manage-account/cancellations-and-refunds.es.md).
 
-----[mcl, global]----
+----[mlc, global]----
 
 ## Integrar Webpay (Chile)
 
