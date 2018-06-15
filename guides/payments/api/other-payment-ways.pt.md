@@ -210,7 +210,7 @@ Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado n
 Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.es.md).
 
 
-----[mcl, global]----
+----[mlc, global]----
 
 ## Integrar o Webpay (Chile)
 
