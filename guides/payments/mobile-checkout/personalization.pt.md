@@ -23,7 +23,7 @@ Se necessário, ao criar a preferência de pagamentos em seu servidor, você pod
 
 #### Exclua Meios de Pagamento
 
-Você pode especificar os tipos de meio de pagamento que não quiser aceitar (Dinheiro, Cartões de Crédito ou Débito), excluindo-os ao criar a Checkout Preference.
+Você pode especificar os tipos de meio de pagamento que não quiser aceitar (Boleto ou Cartões de Crédito), excluindo-os ao criar a Checkout Preference.
 
 No conteúdo de sua preferência de pagamentos você pode adicionar os meios de pagamentos que aceita ou os que não aceita.
 
@@ -238,8 +238,8 @@ Se precisar fazer alguma validação em seu servidor no momento do pagamento, vo
 
 Na classe ServicePreference, você pode configurar a URL e a URI do seu serviço juntamente com um Map para que possa enviar as informações que deseja.
 
-No momento de postar o pagamento, o SDK o fará em seu lugar, [o qual deverá criar o pagamento](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/)e efetuar as validações inerentes ao seu negócio. O SDK irá esperar receber um pagamento, da mesma forma que o serviço do Mercado Pago responde.
-
+No momento de postar o pagamento, o SDK o fará em seu lugar, [o qual deverá criar o pagamento](/reference/payments/_payments/post/)e efetuar as validações inerentes ao seu negócio. O SDK irá esperar receber um pagamento, da mesma forma que o serviço do Mercado Pago responde.
+/guides/notifications/webhooks.pt.md
 Assim que a ServicePreference é criada, você deve iniciar o fluxo de pagamento do Mercado Pago, conforme indicado no código abaixo:
 
 [[[

@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir a [captura de dados do cartão](/guides/payments/api/receiving-payment-by-card.es.md#captura-de-dados-do-cartão).
+> * Possuir a [captura de dados do cartão](/guides/payments/api/receiving-payment-by-card.pt.md#captura-de-dados-do-cartão).
 
 Clientes e cartões (*customers & cards*) são o modo de armazenar os dados de cartão de seus clientes de **forma segura** para melhorar a experiência de compra.
 
@@ -16,7 +16,7 @@ Os *customers* representam, como o próprio nome indica, seu cliente. Os cartõe
 
 Para criar o `Customer` e o `Card` ao mesmo tempo, é necessário enviar pelo menos os campos email e token.
 
-O `token` é o que capturou ao fazer a [captura de dados do cartão](/guides/payments/api/receiving-payment-by-card.es.md#captura-de-dados-do-cartão)).
+O `token` é o que capturou ao fazer a [captura de dados do cartão](/guides/payments/api/receiving-payment-by-card.pt.md#captura-de-dados-do-cartão)).
 
 
 > NOTE
@@ -317,7 +317,7 @@ payment.save()
 
 Isso é tudo. A resposta indicará o status do pagamento  (`approved`, `rejected` ou `in_process`).
 
-> Você pode consultar mais informações sobre [manipulação de respostas](#manipulação-de-respostas).
+> Você pode consultar mais informações sobre [manipulação de respostas](/guides/payments/api/handling-responses.pt.md).
 
 
 ## Adicione novos cartões a um cliente
@@ -491,7 +491,7 @@ Caso não saiba qual é a `id` do seu `Customer`, você pode utilizar a API de `
 ```
 ]]]
 
-Respuesta:
+Resposta:
 
 ```json
 {

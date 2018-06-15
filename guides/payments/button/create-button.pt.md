@@ -16,7 +16,7 @@ Vamos orientá-lo para que você possa configurar:
 ----[mla, mlb, mlm, global]----
 *	Se quiser utilizar o **Mercado Envios**.
 ------------
-*	Meios de pagamentos aceitos: cartões de crédito ou débito e pagamentos em dinheiro.
+*	Meios de pagamentos aceitos: cartões de crédito e pagamentos em boleto.
 *	Data a partir da qual pretende permitir o pagamento.
 *	Código de referência para identificar a venda em seu backend.
 *	URL de redirecionamento ao seu site.

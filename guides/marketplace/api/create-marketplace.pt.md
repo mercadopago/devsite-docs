@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir a [API](/guides/payments/api/introduction.es.md) implementada.
+> * Possuir a [API](/guides/payments/api/introduction.pt.md) implementada.
 
 Para começar, você deve:
 
@@ -87,7 +87,7 @@ Na resposta, além do `access_token` e da `public_key`do vendedor que foi vincul
 >
 > Nota
 >
-> As credenciais têm um **prazo de validade de 6 meses.**.
+> As credenciais têm um **prazo de validade de 6 meses**.
 
 
 ### Renove as credenciais de seus vendedores
@@ -124,7 +124,7 @@ Resposta esperada:
 
 ## 3. Integre a API para receber pagamentos
 
-Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](/guides/payments/api/introduction.es.md), utilizando o`access_token` e cada fornecedor para a sua aplicação.
+Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](/guides/payments/api/introduction.pt.md), utilizando o`access_token` e cada fornecedor para a sua aplicação.
 
 Se deseja cobrar uma taxa de comissão por cada pagamento processado pela sua aplicação em nome do seu usuário, simplesmente adicione esse valor no parâmetro  `application_fee` ao criar pagamento:
 
@@ -221,9 +221,9 @@ O vendedor receberá a diferença entre o valor total e as comissões, tanto a d
 
 É necessário que envie sua `notification_url`, onde receberá um aviso de todos os novos pagamentos e atualizações de status gerados.
 
-Você pode receber notificações quando seus clientes autorizarem ou desautorizarem sua aplicação,[configurando a URL](https://www.mercadopago.com/mla/account/webhooks) em sua conta.
+Você pode receber notificações quando seus clientes autorizarem ou desautorizarem sua aplicação, [configurando a URL](https://www.mercadopago.com/mla/account/webhooks) em sua conta.
 
-Para mais informações, consulte a seção de [notificações.](/guides/notifications/webhooks.es.md).
+Para mais informações, consulte a seção de [notificações](/guides/notifications/webhooks.pt.md).
 
 ### Devoluções e cancelamentos
 
@@ -231,4 +231,4 @@ As devoluções e cancelamentos poderão ser efetuados tanto pelo marketplace co
 
 Os cancelamentos somente poderão ser efetuados utilizando a API de cancelamentos.
 
-Para mais informações, consulte a seção de [devoluções e cancelamentos](/guides/manage-account/refunds-and-cancellations.es.md).
+Para mais informações, consulte a seção de [devoluções e cancelamentos](/guides/manage-account/refunds-and-cancellations.pt.md).

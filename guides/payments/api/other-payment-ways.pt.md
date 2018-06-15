@@ -4,11 +4,10 @@ Existem outros meios de pagamento em cada país, além de cartões de crédito o
 
 Os tipos de meio de pagamento disponíveis são:
 
-	•	ticket.
-	•	atm.
-	•	bank_transfer.
-	•	prepaid_card.
-
+* ticket
+* atm
+* bank_transfer
+* prepaid_card
 
 ## Obtenha os meios de pagamento disponíveis
 
@@ -191,15 +190,15 @@ Somente é possível cancelar pagamentos que se encontrem com status `pending` o
 
 As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.
 
-O vencimento não é automático, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.es.md) logo após o vencimento.
+O vencimento não é automático, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.pt.md) logo após o vencimento.
 
-Veja a [lista completa de vencimentos](https://www.mercadopago.com.ar/activities).
+Veja a [lista completa de vencimentos](https://www.mercadopago.com.br/activities).
 
 ## Prazo de aprovação dos pagamentos
 
 Cada meio de pagamento tem a sua própria data de aprovação, em alguns casos é imediata e, em outros a espera é de até 3 dias úteis.
 
-Recomendamos que verifique os [prazos de aprovação por meio de pagamento](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221).
+Recomendamos que verifique os [prazos de aprovação por meio de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265).
 
 ## Devoluções
 
@@ -207,7 +206,7 @@ Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas a
 
 Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
 
-Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.es.md).
+Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.pt.md).
 
 
 ----[mcl, global]----
