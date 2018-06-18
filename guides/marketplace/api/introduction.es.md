@@ -5,12 +5,14 @@ Un **MarketPlace** es un sitio o aplicación que permite a vendedores y comprado
 Mercado Pago te permite realizar cobros a nombre de los vendedores de tu plataforma y opcionalmente cobrar una comisión por la transacción.
 
 Cuando se genera un pago, el dinero es dividido en el instante entre la cuenta de tu vendedor y la tuya, en caso de cobres una comisión.
+_Aclaración: El split del pago sólo se podrá realizar entre dos cuentas (el Marketplace y la cuenta vendedora), no más._
 
 > NOTE
 >
 > Nota
 >
 > La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor.
+> Primero se descuenta la comisión de Mercado Pago, y sobre el restante se descuenta la comisión del Marketplace. 
 
 _Marketplace_ requiere de 3 pasos:
 
@@ -34,9 +36,12 @@ La **credencial privada**, o *access\_token*, se utiliza para todas las otras ll
 
 Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración.
 
-Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
+Te brindaremos [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/testing-marketplace/), para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](https://www.mercadopago.com/mla/account/credentials) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com/mla/account/credentials).
+Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/goto-production/) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com/mla/account/credentials).
+
+**Antes de utilizar las credenciales de producción se deberá completar el formulario de "Quiero ir a producción" para activarlas.** 
+Caso contrario se recibirá el error de "Invalid use of live credentials". 
 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 
