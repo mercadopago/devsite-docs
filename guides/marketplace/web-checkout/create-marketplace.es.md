@@ -38,6 +38,11 @@ Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene u
 > Consejo
 >
 > Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su _e-mail_, el _ID_ de usuario en tu sistema o cualquier otra referencia útil.
+>Ejemplo Práctico:
+>-Redirect_uri seteado en la aplicación: https://www.mercadopago.com/mp.php
+>-Redirect uri para pasar en el link de Oauth: https://www.mercadopago.com/mp.php?user_id=001
+>-Redirect_uri a la hora de asociar al vendedor habiendo obtenido el código de seguridad con el Oauth: https://www.mercadopago.com/mp.php?user_id=001
+
 
 
 ### Crea las credenciales de tus vendedores
@@ -80,11 +85,13 @@ _Response_:
 
 En la respuesta, además del _Access Token_ del vendedor que se ha vinculado, obtienes el _Refresh Token_ que debes utilizar para renovar periódicamente sus credenciales.
 
-> NOTE
+> WARNING
 >
-> Nota
+> Consejo
 >
-> Las credenciales tienen un **tiempo de validez de 6 meses**.
+> Las credenciales tienen un **tiempo de validez de 6 meses**. 
+> Si no se renuevan las credenciales de los vendedores antes de los 6 meses, **las mismas perderán vigencia y se deberá volver a autorizar al vendedor**. 
+> Recomendación: Renovar las credenciales a los 5 meses de obtenerlas. 
 
 
 ### Renueva las credenciales de tus vendedores
@@ -125,6 +132,29 @@ Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombr
 
 
 [[[
+```curl
+
+curl -X POST \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+'https://api.mercadolibre.com/checkout/preferences?access_token=SELLER_AT' \
+-d '{
+    "items": [
+        {
+            "title": "Item title",
+            "description": "Description",
+            "quantity": 1,
+            "unit_price": 50,
+            "currency_id": "ARS",
+            "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif"
+        }
+    ],
+    "marketplace_fee": 2.29
+}'
+
+```
+
+
 ```php
 
 <?php
@@ -223,15 +253,23 @@ preference.save
 
 El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago como la del _Marketplace_, así como cualquier otro importe que se deba descontar de la venta.
 
+> WARNING
+>
+> Consejo
+>
+> Mientras más información se envíe en la generación de la preferencia, mejor funcionará nuestra equipo de fraude con respecto a la aprobación de los pagos. 
+> Crea una preferencia de pagos tan completa como puedas. 
+
 ### Notificaciones
 
-Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
+Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen, así como también alta y baja de usuarios en tu Marketplace. 
 
 En el artículo de [notificaciones](/guides/notifications/ipn.es.md) puedes obtener más información.
 
 ### Devoluciones y cancelaciones
 
 Las devoluciones y cancelaciones podrán ser realizadas tanto por el _Marketplace_ como por el vendedor, vía API o desde la cuenta de Mercado Pago.
+En caso de que la devolución la realice el Marketplace, se deberán utilizar las credenciales obtenidas para cobrar en nombre del vendedor. 
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
