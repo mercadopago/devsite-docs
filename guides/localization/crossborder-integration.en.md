@@ -1,7 +1,7 @@
 ---
-sites_supported:
-- mlm
-- global
+  sites_supported:
+      - mlm
+      - global
 ---
 
 
