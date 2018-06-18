@@ -38,6 +38,10 @@ Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene u
 > Consejo
 >
 > Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su _e-mail_, el _ID_ de usuario en tu sistema o cualquier otra referencia útil.
+>Ejemplo Práctico:
+>-Redirect_uri seteado en la aplicación: https://www.mercadopago.com/mp.php
+>-Redirect uri para pasar en el link de Oauth: https://www.mercadopago.com/mp.php?user_id=001
+>-Redirect_uri a la hora de asociar al vendedor habiendo obtenido el código de seguridad con el Oauth: https://www.mercadopago.com/mp.php?user_id=001
 
 
 ### Crea las credenciales de tus vendedores
@@ -88,7 +92,8 @@ En la respuesta, además del `access_token` y `public_key` del vendedor que se h
 > Nota
 >
 > Las credenciales tienen un **tiempo de validez de 6 meses**.
-
+> Si no se renuevan las credenciales de los vendedores antes de los 6 meses, **las mismas perderán vigencia y se deberá volver a autorizar al vendedor**. 
+> Recomendación: Renovar las credenciales a los 5 meses de obtenerlas. 
 
 ### Renueva las credenciales de tus vendedores
 
@@ -128,6 +133,25 @@ Para recibir pagos en nombre de tus vendedores debes integrar la [API](/guides/p
 Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario, sólo debes agregar dicho monto en el parámetro `application_fee` al crear el pago:
 
 [[[
+```curl
+curl -X POST \
+        -H 'accept: application/json' \
+        -H 'content-type: application/json' \
+        https://api.mercadopago.com/v1/payments?access_token=USER_AT \
+        -d '{
+                "transaction_amount": 100,
+                "token": "ff8080814c11e237014c1ff593b57b4d",
+                "description": "Title of what you are paying for",
+                "installments": 1,
+                "payer": {
+                        "id": "12345678"
+                },
+                "payment_method_id": "visa",
+                "application_fee": 2.56
+        }'
+```
+
+
 ```php
 <?php  
 
@@ -227,7 +251,14 @@ En el artículo de [notificaciones](/guides/notifications/webhooks.es.md) puedes
 ### Devoluciones y cancelaciones
 
 Las devoluciones y cancelaciones podrán ser realizadas tanto por el _marketplace_ como por el vendedor, vía API o desde la cuenta de Mercado Pago.
+En caso de que las cancelaciones las haga el Marketplace, se deben utilizar las obtenidas para el vendedor. 
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
 Puedes encontrar más información en el artículo sobre [devoluciones y cancelaciones](/guides/manage-account/refunds-and-cancellations.es.md).
+
+### Probá tu Marketplace
+
+Puedes probar tu Marketplace utilizando las credenciales de Sandbox de tu cuenta tanto para asociar a los vendedores como para realizar los cobros/cancelaciones y demás. 
+Se podrá utilizar las tarjetas de test proporcionadas por Mercado Pago, y los distintos prefijos para manejar los mensajes de respuesta. 
+[Probá tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/) 
