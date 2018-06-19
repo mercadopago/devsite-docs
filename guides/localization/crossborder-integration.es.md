@@ -1,8 +1,7 @@
-
 ---
-sites_supported:
-- mlm
-- global
+  sites_supported:
+      - mlm
+      - global
 ---
 
 
@@ -965,4 +964,4 @@ La devolución de los pagos se hacen por valor de la moneda local de la operaci�
 
 Para esto, será necesario que hagas la busqueda del pago mediante el `payment_id` y obtener el `currency_conversion`.
 
-Podes obtener más información de la API de devoluciones en el siguiente [link](/guides/manage-account/cancellations-and-refunds). 
+Podes obtener más información de la API de devoluciones en el siguiente [link](/guides/manage-account/cancellations-and-refunds).
