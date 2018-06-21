@@ -76,17 +76,19 @@ Para poder validar si tu integración mantiene una conexión usando un protocolo
 
 [[[
 ```php
-$request = new HttpRequest();
-$request->setUrl('https://tls-v1-0.badssl.com:1010');
-$request->setMethod(HTTP_METH_GET);
+<?php
+  $request = new HttpRequest();
+  $request->setUrl('https://tls-v1-0.badssl.com:1010');
+  $request->setMethod(HTTP_METH_GET);
 
-try {
-  $response = $request->send();
+  try {
+    $response = $request->send();
 
-  echo $response->getBody();
-} catch (Exception $ex) {
-  // I am not using TLSv1 :D
-}
+    echo $response->getBody();
+  } catch (Exception $ex) {
+    // I am not using TLSv1 :D
+  }
+?>
 ```
 ```java
 try {
