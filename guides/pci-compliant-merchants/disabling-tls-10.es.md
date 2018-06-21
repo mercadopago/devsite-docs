@@ -75,21 +75,6 @@ En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer es
 Para poder validar si tu integración mantiene una conexión usando un protocolo distinto a TLS 1.0, puedes usar el siguiente snippet dentro de tu aplicación el cual enviara una solicitud HTTP usando el protocolo por defecto que usa tu aplicación a un servidor que solo soporta conexiones con TLSv1.0.
 
 [[[
-```php
-<?php
-  $request = new HttpRequest();
-  $request->setUrl('https://tls-v1-0.badssl.com:1010');
-  $request->setMethod(HTTP_METH_GET);
-
-  try {
-    $response = $request->send();
-
-    echo $response->getBody();
-  } catch (Exception $ex) {
-    // I am not using TLSv1 :D
-  }
-?>
-```
 ```java
 try {
   url = new URL("https://tls-v1-0.badssl.com:1010 ");
