@@ -72,21 +72,30 @@ En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer es
 
 ## ¿Como puedo probar mi integración?
 
-Para poder validar si tu integración mantiene una conexión usando un protocolo distinto a TLS 1.0, puedes usar el siguiente snippet dentro de tu aplicación el cual enviara una solicitud HTTP usando el protocolo por defecto que usa tu aplicación a un servidor que solo soporta conexiones con TLSv1.0.
+Para poder validar si tu integración mantiene una conexión usando un protocolo distinto a TLS 1.0, puedes usar el siguiente snippet dentro de tu aplicación para verificar que protocolo se esta usando por defecto para las conexiones.
 
 [[[
-```java
-try {
-  url = new URL("https://tls-v1-0.badssl.com:1010 ");
-  HttpURLConnection con = (HttpURLConnection) url.openConnection();
-  con.setRequestMethod("GET"); 
-} catch (SSLHandshakeException e) {
-  // I am not using TLSv1 :D
-}
+```php
+<?php
+  $curl_info = curl_version();
+  echo "protocol: " . $curl_info['ssl_version'];
+?>
+```
+```java 
+  SSLSocket ss = (SSLSocket) SSLSocketFactory.getDefault().createSocket("api.mercadopago.com", 443);
+  System.out.println("protocol: " + ss.getSession().getProtocol());
+```
+```csharp
+string strWebsiteName = "api.mercadopago.com";
+TcpClient _myClient = new TcpClient();
+SslStream _myStream;
+_myClient.Connect(strWebsiteName, 443);
+_myStream = new SslStream(_myClient.GetStream());
+_myStream.AuthenticateAsClient(strWebsiteName);
+
+Console.WriteLine("protocol : " + _myStream.SslProtocol);
 ```
 ]]]
-
-Al ejecutar este snippet deberias obtener un mensaje de error, en caso obtengas una respuesta HTML esto indicaria que aun tu aplicacion soporta conexiones usando TLSv1.0.
 
 
 
