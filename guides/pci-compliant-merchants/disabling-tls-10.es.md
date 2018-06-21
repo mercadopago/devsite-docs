@@ -68,8 +68,25 @@ Ruby | Es compatible con la versión más reciente y estable cuando se vincula c
 Ruby 2.0.0 | TLS 1.2 se activa de forma predeterminada cuando se utiliza con OpenSSL 1.0.1 o versiones posteriores. El uso de los símbolos :TLSv1_2 (se prefiere) o :TLSv1_1 con ssl_version de SSLContext ayuda a garantizar que se desactiva TLS 1.0 o versiones anteriores.
 Ruby 1.9.3 y versiones anteriores | El símbolo :TLSv1_2 no existe en la versión 1.9.3 y anteriores, pero es posible parchear Ruby para agregar ese símbolo y compilar Ruby con OpenSSL 1.0.1 o versiones posteriores.
 
-
 En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer este cambio en tiempo y forma, ya que de lo contrario es muy probable que tus conexiones con Mercado Pago comiencen a fallar.**
+
+## ¿Como puedo probar mi integración?
+
+Para poder validar si tu integración mantiene una conexión usando un protocolo distinto a TLS 1.0, puedes usar el siguiente snippet dentro de tu aplicación el cual enviara una solicitud HTTP usando el protocolo por defecto que usa tu aplicación a un servidor que solo soporta conexiones con TLSv1.0.
+
+```java
+try {
+  url = new URL("https://tls-v1-0.badssl.com:1010 ");
+  HttpURLConnection con = (HttpURLConnection) url.openConnection();
+  con.setRequestMethod("GET"); 
+} catch (SSLHandshakeException e) {
+  // I am not using TLSv1 :D
+}
+```
+
+Al ejecutar este snippet deberias obtener un mensaje de error, en caso obtengas una respuesta HTML esto indicaria que aun tu aplicacion soporta conexiones usando TLSv1.0.
+
+
 
 Si tienes alguna duda o necesitas asistencia para completar exitosamente este cambio, puedes contactarnos a través del siguiente correo electrónico: soportemigraciones@mercadopago.com.
 
