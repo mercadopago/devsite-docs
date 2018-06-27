@@ -1,32 +1,32 @@
 # SDK Mercado Pago para Python
 
 
-* [Instalación](#bookmark_instalación)
+* [Instalação](#bookmark_instalação)
 * [Web Checkout](#bookmark_web_checkout)
 * [Customized checkout](#bookmark_checkout_custom)
 * [Generic methods](#bookmark_métodos_genéricos)
 
-## Instalación
+## Instalação
 
 
-En Python 2.x:
+Em Python 2.x:
 
 ``pip install mercadopago``
 
-En Python 3.x:
+Em Python 3.x:
 
 ``pip3 install mercadopago``
 
 ## Web Checkout
 
 
-### Configura tus credenciales
+### Configure suas credenciais
 
 
-Obtén tu **CLIENT_ID** y **CLIENT_SECRET** en los siguientes links:
+Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** nos seguintes links:
 
 * Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-* Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
+* Brasil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
 * México: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
 * Venezuela: [https://www.mercadopago.com/mlv/herramientas/aplicaciones](https://www.mercadopago.com/mlv/herramientas/aplicaciones)
 * Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
@@ -42,10 +42,10 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** en los siguientes links:
     mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
 ```
 
-### Preferencias
+### Preferências
 
 
-Obtén una preferencia de pago existente
+Obtenha uma preferência de pagamento existente
 
 
 ``` python
@@ -55,7 +55,7 @@ Obtén una preferencia de pago existente
         return json.dumps(preferenceResult, indent=4)
 ```
 
-Crea una preferencia de pago
+Crie uma preferência de pagamento
 
 ``` python
     def index(req, **kwargs):
@@ -74,7 +74,7 @@ Crea una preferencia de pago
 
         return json.dumps(preferenceResult, indent=4)
 ```
-Actualizar una preferencia de pago existente:
+Atualize uma preferência de pagamento existente:
 
 
 ``` python
@@ -97,7 +97,7 @@ Actualizar una preferencia de pago existente:
 ### Payments/Collections
 
 
-Buscar pagos:
+Busque pagamentos:
 
 ``` python
     def index(req, **kwargs):
@@ -111,7 +111,7 @@ Buscar pagos:
         return json.dumps(searchResult, indent=4)
 ```
 
-Obtener la información de un pago:
+Obtenha a informação de um pagamento:
 
 ``` python
     import mercadopago
@@ -127,7 +127,7 @@ Obtener la información de un pago:
             return None
 ```
 
-Cancelar (Sólo para pagos pendientes)
+Cancelamento (Somente para pagamentos pendentes)
 
 ``` python
     def index(req, **kwargs):
@@ -137,7 +137,7 @@ Cancelar (Sólo para pagos pendientes)
         return json.dumps(result, indent=4)
 ```
 
-Refund (sólo para pagos acreditados)
+Devolução (Somente para pagamentos creditados)
 
 ``` python
     def index(req, **kwargs):
@@ -149,9 +149,9 @@ Refund (sólo para pagos acreditados)
 
 ## Checkout custom
 
-### Configura tus credenciales
+### Configure suas credenciais
 
-Obtén tu **ACCESS_TOKEN** en los siguientes links:
+Obtenha seu **ACCESS_TOKEN** nos seguintes links:
 
 * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
 * Brasil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
@@ -171,49 +171,49 @@ Obtén tu **ACCESS_TOKEN** en los siguientes links:
 ```
 
 
-### Crear un pago
+### Crie um pagamento
 
 ``` python
     mp.post ("/v1/payments", payment_data)
 ```
 
-### Crear un customer
+### Crie um customer
 
 ```python
     mp.post ("/v1/customers", {"email": "email@test.com"})
 ```
 
-### Obtener un customer
+### Obtenha um customer
 
 ```python
     mp.get ("/v1/customers/CUSTOMER_ID")
 ```
 
-> Para más información visita la sección [API reference](/reference).
+> Para mais informações visite a sessão [API reference](/reference).
 
 ## Métodos genéricos
 
-Puedes acceder a cualquier otro recurso de la API de Mercado Pago utilizando métodos genéricos:
+É possível acessar qualquer outro recurso da API Mercado Pago utilizando métodos genéricos:
 
 ```python
-    // Obtener un recurso con URL params opcionales. También puedes deshabilitar la autenticación para APIs públicas.
+    // Obter um recurso com parâmetros opcionais de URL. Também é possível desabilitar a autenticação para APIs públicas.
         mp.get ("/resource/uri", [params], [authenticate=true]);
 ```
 
 ```python
-    // Crear un recurso con "data"y URL params opcionales.
+    // Criar um recurso com "data" e parâmetros opcionais de URL.
     mp.post ("/resource/uri", data, [params]);
 ```
 ```python
-    // Actualizar un recurso con "data"y URL params opcionales.
+    // Atualizar um recurso com "data" e parâmetros opcionais de URL.
     mp.put ("/resource/uri", data, [params]);
 ```
 ```python
-    // Eliminar un recurso con "data" y URL params opcionales.
+    // Eliminar um recurso com "data" e parâmetros opcionais de URL.
     mp.delete ("/resource/uri", [params]);
 ```
 
-Por ejemplo, si quieres obtener la lista de sitios disponibles (sin parámetros ni autenticación):
+Por exemplo, se quiser obter a lista de sites disponíveis (sem parâmetros na autenticação):
 
 ```python
     result = mp.get ("/sites", null, false);
@@ -221,13 +221,13 @@ Por ejemplo, si quieres obtener la lista de sitios disponibles (sin parámetros 
     print (json.dumps(result, indent=4))
 ```
 
-### Correr tests
+### Executar testes
 
 
-En Python 2.x correr:
+Em Python 2.x executar:
 
 ``python setup.py test``
 
-En Python 3.x correr:
+Em Python 3.x executar:
 
 ``python3 setup.py test``
