@@ -4,7 +4,7 @@ En Mercado Pago siempre buscamos optimizar nuestra plataforma ofreciendo la mayo
 
 En esta ocasión, estamos trabajando en el apagado de TLS 1.0 para los dominios https://api.mercadopago.com y https://pagamento.mercadopago.com con el objetivo de mantener los más altos estándares de calidad y promover la seguridad de los datos de nuestros clientes.
 
-En consecuencia, Mercado Pago requerirá que sus conexiones a los dominios https://api.mercadopago.com y https://pagamento.mercadopago.com sean a través del protocolo de cifrado TLS 1.1 o superior **a partir del 30 de Junio del 2018.**
+En consecuencia, Mercado Pago requerirá que sus conexiones a los dominios https://api.mercadopago.com y https://pagamento.mercadopago.com sean a través del protocolo de cifrado TLS 1.2 o superior **a partir del 30 de Junio del 2018.**
 
 Una vez que desactivemos TLS 1.0, cualquier conexión que establezcas utilizando TLS 1.0 fallará.
 
@@ -43,7 +43,7 @@ A partir del 30 de Junio de 2018, Mercado Pago empezará a desactivar el protoco
 
 Si tus integraciones que utilizan conexiones entrantes con Mercado Pago no tienen los protocolos TLS 1.1 y/o TLS 1.2 activados tras realizar este cambio, empezarán a fallar
 
-Te recomendamos que empieces a planificar la inclusión de los protocolos TLS 1.1 y TLS 1.2 tan pronto como sea posible.
+Te recomendamos que empieces a planificar la inclusión del protocolo TLS 1.2 tan pronto como sea posible.
 
 Consulte las directrices de compatibilidad a continuación:
 
