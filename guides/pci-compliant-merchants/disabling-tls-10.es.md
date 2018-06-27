@@ -68,8 +68,36 @@ Ruby | Es compatible con la versión más reciente y estable cuando se vincula c
 Ruby 2.0.0 | TLS 1.2 se activa de forma predeterminada cuando se utiliza con OpenSSL 1.0.1 o versiones posteriores. El uso de los símbolos :TLSv1_2 (se prefiere) o :TLSv1_1 con ssl_version de SSLContext ayuda a garantizar que se desactiva TLS 1.0 o versiones anteriores.
 Ruby 1.9.3 y versiones anteriores | El símbolo :TLSv1_2 no existe en la versión 1.9.3 y anteriores, pero es posible parchear Ruby para agregar ese símbolo y compilar Ruby con OpenSSL 1.0.1 o versiones posteriores.
 
-
 En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer este cambio en tiempo y forma, ya que de lo contrario es muy probable que tus conexiones con Mercado Pago comiencen a fallar.**
+
+## ¿Como puedo probar mi integración?
+
+Para poder validar si tu integración mantiene una conexión usando un protocolo distinto a TLS 1.0, puedes usar el siguiente snippet dentro de tu aplicación para verificar que protocolo se esta usando por defecto para las conexiones.
+
+[[[
+```php
+<?php
+  $curl_info = curl_version();
+  echo "protocol: " . $curl_info['ssl_version'];
+?>
+```
+```java 
+  SSLSocket ss = (SSLSocket) SSLSocketFactory.getDefault().createSocket("api.mercadopago.com", 443);
+  System.out.println("protocol: " + ss.getSession().getProtocol());
+```
+```csharp
+string strWebsiteName = "api.mercadopago.com";
+TcpClient _myClient = new TcpClient();
+SslStream _myStream;
+_myClient.Connect(strWebsiteName, 443);
+_myStream = new SslStream(_myClient.GetStream());
+_myStream.AuthenticateAsClient(strWebsiteName);
+
+Console.WriteLine("protocol : " + _myStream.SslProtocol);
+```
+]]]
+
+
 
 Si tienes alguna duda o necesitas asistencia para completar exitosamente este cambio, puedes contactarnos a través del siguiente correo electrónico: soportemigraciones@mercadopago.com.
 
