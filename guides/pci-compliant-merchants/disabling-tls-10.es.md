@@ -65,6 +65,8 @@ Python 2.7.8 y versiones anteriores | No son compatibles con el cifrado TLS 1.2 
 Ruby | Es compatible con la versión más reciente y estable cuando se vincula con OpenSSL 1.0.1 o versiones posteriores.
 Ruby 2.0.0 | TLS 1.2 se activa de forma predeterminada cuando se utiliza con OpenSSL 1.0.1 o versiones posteriores. El uso de los símbolos :TLSv1_2 con ssl_version de SSLContext ayuda a garantizar que se desactiva TLS 1.0 o versiones anteriores.
 Ruby 1.9.3 y versiones anteriores | El símbolo :TLSv1_2 no existe en la versión 1.9.3 y anteriores, pero es posible parchear Ruby para agregar ese símbolo y compilar Ruby con OpenSSL 1.0.1 o versiones posteriores.
+Android 4.x | Es necesario forzar el uso de TLS 1.2 para ello usar [este snippet de codigo](https://gist.github.com/zehemz/fdf777a64a173a58beb6f9132eb7655c).
+Android 5.x | TLS 1.2 Es soportado de forma predeterminada.
 
 En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer este cambio en tiempo y forma, ya que de lo contrario es muy probable que tus conexiones con Mercado Pago comiencen a fallar.**
 
