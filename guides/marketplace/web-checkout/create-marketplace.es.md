@@ -257,7 +257,7 @@ El vendedor va a recibir la diferencia entre el monto total y las comisiones, ta
 >
 > Consejo
 >
-> Mientras más información se envíe en la generación de la preferencia, mejor funcionará nuestra equipo de fraude con respecto a la aprobación de los pagos. 
+> Mientras más información se envíe en la generación de la preferencia, mejor funcionará nuestro sistema de prevención de fraude con respecto a la aprobación de los pagos. 
 > Crea una preferencia de pagos tan completa como puedas. 
 
 ### Notificaciones
