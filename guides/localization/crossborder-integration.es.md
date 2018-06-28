@@ -475,7 +475,7 @@ Este sería un ejemplo de la creación del checkout:
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <form action="https://www.your-site.com/process-payment" method="POST">
       <script
-	      src="https://mercadopago.com.ar/integrations/v1/checkout.js"
+	      src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
 	      data-public-key="<PUBLIC_KEY>"
 	      data-transaction-amount="100"
 	      data-button-label="Confirmar">
