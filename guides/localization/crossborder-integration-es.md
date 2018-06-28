@@ -10,14 +10,14 @@ sites_supported:
 
 La solución CrossBorder de Mercado Pago te permite cobrar de manera local pero retirar los fondos en una cuenta bancaria en otro país diferente a donde estas vendiendo.
 
-Para poder utilizar la solución de CrossBorder la cuenta de Mercado Pago debe ser creada por nuestro equipo, ya que se necesitan hacer algunas configuraciones especiales. 
+Para poder utilizar la solución de CrossBorder la cuenta de Mercado Pago debe ser creada por nuestro equipo, ya que se necesitan hacer algunas configuraciones especiales.
 Por lo tanto, debes contactarte con el equipo comercial de Mercado Pago escribiendo a: `crm_regionales@mercadopago.com`
 
 Por el momento, las monedas en las que se permite recibir los fondos son:
 
 - USD
 
-Tene en cuenta que el pagador va a realizar el pago en la moneda local, de esta manera, el mismo podrá aprovechar la financiación ofrecida por Mercado Pago. 
+Tene en cuenta que el pagador va a realizar el pago en la moneda local, de esta manera, el mismo podrá aprovechar la financiación ofrecida por Mercado Pago.
 
 
 
@@ -28,11 +28,11 @@ Como se mencionó anteriormente la cuenta de Mercado Pago deberá ser creada por
 - Display Name.
 - Contact First Name.
 - Contact Last Name.
-- Email. 
+- Email.
 - Country.
 - Currency.
 - State.
-- City. 
+- City.
 - Address.
 - Zip.
 - Phone.
@@ -56,7 +56,7 @@ Sea cual sea la integración que lleves a cabo (Checkout básico, Checkout Token
 "counter_currency": {
 	"currency_id": "USD"
 }
-``` 
+```
 
 Tene en cuenta que si no envías esta porción de código, recibirás un mensaje de error como el siguiente:
 
@@ -125,14 +125,14 @@ La respuesta que vas a obtener es similar a la siguiente:
 El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución consiste en la generación de una preferencia de pago, la cual retorna un `init_point` que al abrirlo redirecciona al usuario a un checkout donde toda la experiencia es manejada por Mercado Pago.
 
 > VENTAJAS
-> 
+>
 > * Velocidad de integración.
-> * Escalabilidad en muchos paises. 
+> * Escalabilidad en muchos paises.
 > * Incluye todos los medios de pagos disponibles.
-> 
+>
 > DESVENTAJAS
-> 
-> * No permite modificar el diseño del checkout. 
+>
+> * No permite modificar el diseño del checkout.
 > * No permite modificar la experiencia de pago.
 > * El usuario es redigido fuera de la aplicación para realizar el pago.
 
@@ -141,7 +141,7 @@ Para llevar a cabo la integración deberás seguir la documentación que podrás
 
 
 Este sería un ejemplo de la creación de la preferencia de pago:
-   
+
 ``` curl
 $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOKEN> \
   -H 'Content-Type: application/json' \
@@ -154,7 +154,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"currency_id": "ARS",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
-			"category_id": "others", 
+			"category_id": "others",
 			"quantity": 1,
 			"unit_price": 100
 		}
@@ -175,7 +175,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"street_name": "Street",
 			"street_number": 123,
 			"zip_code": "5700"
-		} 
+		}
 	},
 	"back_urls": {
 		"success": "https://www.success.com",
@@ -455,29 +455,29 @@ Este es un ejemplo de la respuesta del pago:
 El Tokenizador es la solución de Mercado Pago que rápidamente te permite obtener un card token de la tarjeta de tu cliente. Dicha solución consiste en la generación de una orden de pago utilizando Javascript que abre un checkout para que el pagador cargue los datos de la tarjeta. Luego, recibirás en tu backend el card token para que hagas un POST del pago.
 
 > VENTAJAS
-> 
+>
 > * Velocidad de integración.
-> * Escalabilidad en muchos paises. 
+> * Escalabilidad en muchos paises.
 > * El usuario se mantiene dentro del sitio.
-> 
+>
 > DESVENTAJAS
-> 
-> * No permite modificar el diseño del checkout. 
+>
+> * No permite modificar el diseño del checkout.
 > * No permite modificar la experiencia de pago.
-> * No incluye todos los medios de pago. 
+> * No incluye todos los medios de pago.
 
 
 Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link]("../guides/payments/tokenize-checkout/introduction/")
 
 
 Este sería un ejemplo de la creación del checkout:
-   
+
 ``` html
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <form action="https://www.your-site.com/process-payment" method="POST">
       <script
-	      src="https://mercadopago.com.ar/integrations/v1/checkout.js"
+	      src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
 	      data-public-key="<PUBLIC_KEY>"
 	      data-transaction-amount="100"
 	      data-button-label="Confirmar">
@@ -515,7 +515,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"title": "Title of what you are paying for",
 				"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 				"description": "Item description",
-				"category_id": "others", 
+				"category_id": "others",
 				"quantity": 1,
 				"unit_price": 100
 			}
@@ -531,7 +531,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"street_name": "Street",
 				"street_number": 123,
 				"zip_code": "5700"
-			} 
+			}
 		},
 		"shipments": {
 			"receiver_address": {
@@ -698,15 +698,15 @@ Este es un ejemplo de la respuesta del pago:
 El Checkout Personalizado es la solución más customizable de Mercado Pago. Dicha solución consiste en la utilización del SDK Javascript y las API's de Mercado Pago para llevar a cabo la tokenización de la tarjeta del pagador y luego el correspondiente posteo del pago. Toda la experiencia es manejada por el integrador.
 
 > VENTAJAS
-> 
+>
 > * Permite crear un diseño único para el checkout.
 > * Permite modificar la experiencia de pago.
 > * El usuario se mantiene dentro del sitio.
-> 
+>
 > DESVENTAJAS
-> 
+>
 > * Velocidad de integración.
-> * Manejo de los mensajes de error y estados de pago. 
+> * Manejo de los mensajes de error y estados de pago.
 > * Debes integrar cada medio de pagos por separado.
 
 
@@ -751,11 +751,11 @@ Deberás generar un formulario de tarjeta como se indica en la documentación qu
 </form>
 ...
 
-```	
+```
 
 
 Este sería un ejemplo de la creación del pago:
-   
+
 ``` json
 $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
   -H 'Content-Type: application/json' \
@@ -782,7 +782,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"title": "Title of what you are paying for",
 				"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 				"description": "Item description",
-				"category_id": "others", 
+				"category_id": "others",
 				"quantity": 1,
 				"unit_price": 100
 			}
@@ -798,7 +798,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"street_name": "Street",
 				"street_number": 123,
 				"zip_code": "5700"
-			} 
+			}
 		},
 		"shipments": {
 			"receiver_address": {
