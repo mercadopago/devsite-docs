@@ -1,6 +1,6 @@
 # Outros meios de pagamento
 
-Existem outros meios de pagamento em cada país, além de cartões de crédito ou débito, com os quais você pode receber pagamentos. A maioria deles são o que chamamos de meios de pagamento “off-line” ou “em dinheiro”.
+Existem outros meios de pagamento em cada país, além de cartões de crédito, com os quais você pode receber pagamentos. A maioria deles são o que chamamos de meios de pagamento “off-line” ou “em dinheiro”.
 
 Os tipos de meio de pagamento disponíveis são:
 
@@ -48,26 +48,28 @@ O resultado será uma _array_ com os meios de pagamento e suas propriedades:
 ```json
 [
     {
-        "id": "rapipago",
-        "name": "Rapipago",
+        "id": "bolbradesco",
+        "name": "Boleto",
         "payment_type_id": "ticket",
         "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/2002.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2002.gif",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/2006.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2006.gif",
         "deferred_capture": "does_not_apply",
         "settings": [],
-        "additional_info_needed": []
+        "additional_info_needed": [],
+        "...": "..."
     },
     {
-        "id": "redlink",
-        "name": "RedLink",
-        "payment_type_id": "atm",
+        "id": "pec",
+        "name": "Pagamento na Lotérica",
+        "payment_type_id": "ticket",
         "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/2003.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2003.gif",
-        "deferred_capture": "does_not_apply",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/12363.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/12363.gif",
+        "deferred_capture": "supported",
         "settings": [],
-        "additional_info_needed": []
+        "additional_info_needed": [],
+        "...": "..."
     },
     {
         "...": "..."
@@ -80,78 +82,131 @@ O resultado será uma _array_ com os meios de pagamento e suas propriedades:
 Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprador. Em seguida, você precisa fazer uma requisição `HTTP POST` enviando o `transaction_amount`, `payment_method_id` e o `email` obtidos:
 
 [[[
+```curl
+  curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+      "date_of_expiration": "2018-06-30T21:52:49.000-04:00",
+      "transaction_amount": 100,
+      "description": "Title of what you are paying for",
+      "payment_method_id": "bolbradesco",
+      "payer": {
+        "email": "test_user_19653727@testuser.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "19119119100"
+        },
+        "address": {
+            "zip_code": "06233200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
+        }
+      }
+    }'
+```
 ```php
 <?php  
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+ require_once 'vendor/autoload.php';
 
-  $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 100;
-  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->description = "Title of what you are paying for";
-  $payment->payment_method_id = "rapipago";
-  $payment->payer = array(
-    "email" => "test_user_19653727@testuser.com"
-  );
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment->save();
+ $payment = new MercadoPago\Payment();
+ $payment->date_of_expiration = "2018-06-30T21:52:49.000-04:00";
+ $payment->transaction_amount = 100;
+ $payment->description = "Title of what you are paying for";
+ $payment->payment_method_id = "bolbradesco";
+ $payment->payer = array(
+     "email" => "test_user_19653727@testuser.com",
+     "first_name" => "Test",
+     "last_name" => "User",
+     "identification" => array( 
+         "type" => "CPF",
+         "number" => "19119119100"
+      ),
+     "address"=>  array(
+         "zip_code" => "06233200",
+         "street_name" => "Av. das Nações Unidas",
+         "street_number" => "3003",
+         "neighborhood" => "Bonfim",
+         "city" => "Osasco",
+         "federal_unit" => "SP"
+      )
+   );
+
+ $payment->save();
 
 ?>
 ```
 ```java
 
 import com.mercadopago.*;
+
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
-      .setToken('ff8080814c11e237014c1ff593b57b4d')
-      .setDescription('Title of what you are paying for')
-      .setPaymentMethodId("rapipago")
-      .setPayer(new Payer("test_user_19653727@testuser.com"));
+payment.setDateOfExpiration("2018-01-01T21:52:49.000-04:00")
+       .setTransactionAmount(100f)
+       .setDescription('Title of what you are paying for')
+       .setPaymentMethodId("bolbradesco")
+       .setPayer(new Payer()
+           .setEmail("test_user_19653727@testuser.com")
+           .setFirstName("Test")
+           .setLastName("User")
+           .setIdentification(new Identification()
+               .setType("CPF")
+               .setNumber("19119119100"))
+           .setAddress(new Address()
+               .setZipCode("06233200")
+               .setStreetName("Av. das Nações Unidas")
+               .setStreetNumber(3003)
+               .setNeighborhood("Bonfim")
+               .setCity("Osasco")
+               .setFederalUnit("SP")) 
+);
 
 payment.save();
-
-```
-```node
-
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var payment_data = {
-  transaction_amount: 100,
-  token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: 'Title of what you are paying for',
-  payment_method_id: 'rapipago',
-  payer: {
-    email: 'test_user_3931694@testuser.com'
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
-}).catch(function (error) {
-  // Do Stuff...
-});
-
 ```
 ```ruby
+require 'mercadopago.rb'
 
-require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+mp = MercadoPago.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Title of what you are paying for'
-payment.payment_method_id = "rapipago"
-payment.payer = {
-  email: "test_user_19653727@testuser.com"
+payment_data = {
+  date_of_expiration: "2018-06-30T21:52:49.000-04:00",
+  transaction_amount: 100,
+  description: "Title of what you are paying for",
+  payment_method_id: "bolbradesco",
+  payer: {
+    email: "test_user_8878491@testuser.com",
+    first_name: "Test",
+    last_name: "User",
+    identification: {
+        type: "CPF",
+        number: "191191191-00"
+    },
+    address: {
+        zip_code: "06233-200",
+        street_name: "Av. das Nações Unidas",
+        street_number: "3003",
+        neighborhood: "Bonfim",
+        city: "Osasco",
+        federal_unit: "SP"
+    }
+  }
 }
 
-payment.save()
+payment = mp.post('/v1/payments', payment_data)
 
+puts payment
 ```
 ]]]
 
@@ -174,9 +229,11 @@ Resposta:
     }
 }
 ```
+
 Você receberá uma resposta com o `status` **pending** até que o comprador efetue o pagamento.
 
 O campo `external_resource_url` possui uma URL que contém as instruções para que o comprador possa pagar. Você pode redirecioná-lo ou enviar o link para acesso.
+
 
 > NOTE
 >
@@ -184,7 +241,9 @@ O campo `external_resource_url` possui uma URL que contém as instruções para 
 >
 > O comprador tem de **3** a **5** dias para pagar, dependendo do meio de pagamento. Após essas datas, **você deve** cancelá-lo.
 
+
 ## Cancele um pagamento
+
 
 Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`.
 
@@ -194,372 +253,20 @@ O vencimento não é automático, então é necessário que efetue o [cancelamen
 
 Veja a [lista completa de vencimentos](https://www.mercadopago.com.br/activities).
 
+
 ## Prazo de aprovação dos pagamentos
+
 
 Cada meio de pagamento tem a sua própria data de aprovação, em alguns casos é imediata e, em outros a espera é de até 3 dias úteis.
 
 Recomendamos que verifique os [prazos de aprovação por meio de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265).
 
+
 ## Devoluções
+
 
 Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas as devoluções dos meios de pagamento em dinheiro são feitas na conta do Mercado Pago do seu comprador.
 
 Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
 
 Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.pt.md).
-
-
-----[mlc, global]----
-
-## Integrar o Webpay (Chile)
-
-O Webpay é um dos meios de pagamento disponíveis no Chile. Para processar os pagamentos com Webpay, é necessário enviar o **RUT**, o **tipo de pessoa**, o **endereço de IP** do comprador e a **instituição financeira** que processará o pagamento.
-
-> NOTE
->
-> Nota
->
-> Veja todas as instituições financeiras (_financial\_institutions_) disponíveis por meio do recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
-
-```json
-{
-  "id": "webpay",
-  "name": "RedCompra (Webpay)",
-  "payment_type_id": "bank_transfer",
-  ...
-  "financial_institutions": [
-    {
-      "id": "1234",
-      "description": "Transbank"
-    }
-  ]
-}
-```
-
-Para gerar o pagamento utilizando Webpay envie o `payment_method_id` **webpay**, o `identification number` e a `financial_institution`:
-
-```php
-<?php
-
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 10000;
-$payment->description = "Title of what you are paying for";
-$payment->payer = array (
-		"email" => "test_user_19653727@testuser.com",
-		"identification" => array(
-			"type" => "RUT",
-			"number" => "76262349"
-		),
-		"entity_type" => "individual"
-	);
-$payment->transaction_details = array(
-		"financial_institution" => 1234
-	);
-$payment->additional_info = array(
-		"ip_address" => "127.0.0.1"
-	);
-$payment->callback_url = "http://www.your-site.com";
-$payment->payment_method_id = "webpay";
-
-$payment->save();
-
-?>
-```
-```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-
-Payer payer = new Payer();
-payer.setEmail("test_user_19653727@testuser.com");
-payer.setIdentification(new Identification("RUT", 76262349));
-payer.setEntityType("individual");
-
-TransactionDetails transactionDetails = new TransactionDetails();
-transactionDetails.financialInstitution = 1234;
-
-AdditionalInfo additionalInfo = new AdditionalInfo();
-additionalInfo.ipAddress = "127.0.0.1";
-
-Payment payment = new Payment();
-payment.setTransactionAmount(10000)
-      .setDescription('Title of what you are paying for')
-      .setPayer(payer)
-      .setTransactionDetails(transactionDetails)
-      .additionalInfo(additionalInfo)
-      .callbackUrl("http://www.your-site.com")
-      .setPaymentMethodId("webpay");
-
-payment.save();
-
-```
-```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
-
-var payment_data = {
-  ransaction_amount: 10000,
-  description: 'Title of what you are paying for',
-  payer: {
-    email: 'test_user_3931694@testuser.com',
-    identification: {
-      type: "URL",
-      number: "76262349"
-    },
-    entity_type: "individual"
-  },
-  transaction_details: {
-    financial_institution: 1234
-  },
-  additional_info: {
-    ip_address: "127.0.0.1"
-  },
-  callback_url: "http://www.your-site.com",
-  payment_method_id: "webpay"
-}
-
-mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
-}).catch(function (error) {
-  // Do Stuff...
-});
-
-```
-```ruby
-require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 10000
-payment.description = 'Title of what you are paying for'
-payment.payer = {
-  email: 'test_user_3931694@testuser.com',
-  identification: {
-    type: "URL",
-    number: "76262349"
-  },
-  entity_type: "individual"
-}
-payment.transaction_details = {
-  financial_institution: 1234
-}
-payment.additional_info = {
-  ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.your-site.com"
-payment.payment_method_id = "webpay"
-
-payment.save();
-```
-
-> NOTE
->
-> Nota
->
-> Os `entity_type` esperados são `individual` (Pessoa Física) ou `association` (Pessoa Jurídica).
-
-A resposta que receberá:
-
-```json
-{
-	"id": 3692089,
-	"date_created": "2017-04-27T16:53:03.000-04:00",
-	"date_approved": null,
-	"date_last_updated": "2017-04-27T16:53:03.000-04:00",
-	"money_release_date": null,
-	"operation_type": "regular_payment",
-	"issuer_id": null,
-	"payment_method_id": "webpay",
-	"payment_type_id": "bank_transfer",
-	"status": "pending",
-	"status_detail": "pending_waiting_transfer",
-	...
-	"transaction_details": {
-		...
-		"external_resource_url": "https://www.mercadopago.com/mlc/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=251027719",
-		"installment_amount": 0,
-		"financial_institution": "1234",
-		"payment_method_reference_id": null
-	}
-}
-```
-
-Direcione seu cliente para a URL que encontrará no atributo `external_resource_url` dentro do `transaction_details` da resposta. Ao finalizar o pagamento, você será redirecionado a `callback_url` que indicar, e obterá o resultado do pagamento via [Webhooks](/guides/notifications/webhooks.pt.md).
-
-------------
-----[mco, global]----
-## Integrar PSE (Colombia)
-
-> NOTE
->
-> Nota
->
-> Consulta todas as instituições financeiras (_financial\_institutions_) que têm disponível através do recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
-
-Para gerar o pagamento utilizando PSE envie o `payment_method_id` **pse** e o `financial_institution`:
-
-```json
-{
-  "id": "pse",
-  "name": "PSE",
-  "payment_type_id": "bank_transfer",
-  ...
-  "financial_institutions": [
-    {
-      "id": "1234",
-      "description": "financial_institution"
-    }
-  ]
-}
-```
-
-[[[
-```php
-<?php
-
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 10000;
-$payment->description = "Title of what you are paying for";
-$payment->payer = array (
-		"email" => "test_user_19653727@testuser.com",
-		"identification" => array(
-			"type" => "CC",
-			"number" => "76262349"
-		),
-		"entity_type" => "individual"
-	);
-$payment->transaction_details = array(
-		"financial_institution" => 1234
-	);
-$payment->additional_info = array(
-		"ip_address" => "127.0.0.1"
-	);
-$payment->callback_url = "http://www.your-site.com";
-$payment->payment_method_id = "pse";
-
-$payment->save();
-
-?>
-```
-```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-
-Payer payer = new Payer();
-payer.setEmail("test_user_19653727@testuser.com");
-payer.setIdentification(new Identification("CC", 76262349));
-payer.setEntityType("individual");
-
-TransactionDetails transactionDetails = new TransactionDetails();
-transactionDetails.financialInstitution = 1234;
-
-AdditionalInfo additionalInfo = new AdditionalInfo();
-additionalInfo.ipAddress = "127.0.0.1";
-
-Payment payment = new Payment();
-payment.setTransactionAmount(10000)
-      .setDescription('Title of what you are paying for')
-      .setPayer(payer)
-      .setTransactionDetails(transactionDetails)
-      .additionalInfo(additionalInfo)
-      .callbackUrl("http://www.your-site.com")
-      .setPaymentMethodId("pse");
-
-payment.save();
-
-```
-```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
-
-var payment_data = {
-  transaction_amount: 10000,
-  description: 'Title of what you are paying for',
-  payer: {
-    email: 'test_user_3931694@testuser.com',
-    identification: {
-      type: "CC",
-      number: "76262349"
-    },
-    entity_type: "individual"
-  },
-  transaction_details: {
-    financial_institution: 1234
-  },
-  additional_info: {
-    ip_address: "127.0.0.1"
-  },
-  callback_url: "http://www.your-site.com",
-  payment_method_id: "pse"
-}
-
-mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
-}).catch(function (error) {
-  // Do Stuff...
-});
-
-```
-```ruby
-require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 10000
-payment.description = 'Title of what you are paying for'
-payment.payer = {
-  email: 'test_user_3931694@testuser.com',
-  identification: {
-    type: "CC",
-    number: "76262349"
-  },
-  entity_type: "individual"
-}
-payment.transaction_details = {
-  financial_institution: 1234
-}
-payment.additional_info = {
-  ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.your-site.com"
-payment.payment_method_id = "pse"
-
-payment.save();
-```
-]]]
-
-> NOTE
->
-> Nota
->
-> Os `entity_type` esperados são `individual` (Pessoas)  e `association` (Empresas).
-
-A resposta que receberá:
-
-```json
-{
-	"id": 3692089,
-	"date_created": "2017-04-27T16:53:03.000-04:00",
-	"date_approved": null,
-	"date_last_updated": "2017-04-27T16:53:03.000-04:00",
-	"money_release_date": null,
-	"operation_type": "regular_payment",
-	"issuer_id": null,
-	"payment_method_id": "pse",
-	"payment_type_id": "bank_transfer",
-	"status": "pending",
-	"status_detail": "pending_waiting_transfer",
-	...
-	"transaction_details": {
-		...
-		"external_resource_url": "https://www.mercadopago.com/mco/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=251027719",
-		"installment_amount": 0,
-		"financial_institution": "1234",
-		"payment_method_reference_id": null
-	}
-}
-Redirecione o seu cliente para a URL que está no atributo `external_resource_url` dentro de `transaction_details` da resposta. Ao finalizar o pagamento, ele será redirecionado a `callback_url` que foi indicado na requisição, também chegará o resultado do pagamento via [Webhooks](/guides/notifications/webhooks.es.md).
-------------
