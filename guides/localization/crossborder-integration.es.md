@@ -964,8 +964,4 @@ La devolución de los pagos se hacen por valor de la moneda local de la operaci�
 
 Para esto, será necesario que hagas la busqueda del pago mediante el `payment_id` y obtener el `currency_conversion`.
 
-<<<<<<< HEAD:guides/localization/crossborder-integration-es.md
-Podes obtener más información de la API de devoluciones en el siguiente [link]("../guides/manage-account/cancellations-and-refunds).
-=======
 Podes obtener más información de la API de devoluciones en el siguiente [link](/guides/manage-account/cancellations-and-refunds).
->>>>>>> a04ab7a0d318756190af2538f2eb58a770cd831c:guides/localization/crossborder-integration.es.md
