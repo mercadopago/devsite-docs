@@ -366,7 +366,7 @@ This field is a string you can send to identify the charge in your customer's cr
 
 ### Additional information
 
-In order get the best approval rates as possible you can send additional information of the payment in the field `additional_info` JSON formatted. For further details,[please read this article]("/reference/payments/resource/").
+In order get the best approval rates as possible you can send additional information of the payment in the field `additional_info` JSON formatted. For further details,[please read this article]("/reference/payments/_payments_id/get/").
 
 ### Mercado Pago Device Fingerprint
 

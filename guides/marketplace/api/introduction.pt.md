@@ -23,7 +23,7 @@ Após criar a aplicação, você só precisa executar o segundo e o terceiro pas
 
 ## Credenciais
 
-Assim como na API de Pagamentos, você conta com dois pares de chaves para conectar-se com a API. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadopago.com/mla/account/credentials).
+Assim como na API de Pagamentos, você conta com dois pares de chaves para conectar-se com a API. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadopago.com/mlb/account/credentials).
 
 A **chave pública**, ou *public_key*, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e tokenizar.
 
@@ -37,7 +37,7 @@ Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **M
 
 Forneceremos cartões de teste para que possa simular transações como se fossem reais.
 
-Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](#) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas credenciais.
+Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](/guides/marketplace/api/goto-production.pt.md) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas credenciais.
 
 Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do sandbox pelas de produção em seu código.
 

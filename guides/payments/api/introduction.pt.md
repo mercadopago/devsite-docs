@@ -14,7 +14,7 @@ Com nossas APIs:
 
 ## Credenciais
 
-Você conta com dois pares de chaves para conectar-se com a API, uma para um ambiente de testes e a outra para o ambiente de produção. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadopago.com.ar/account/credentials).
+Você conta com dois pares de chaves para conectar-se com a API, uma para um ambiente de testes e a outra para o ambiente de produção. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadopago.com/mlb/account/credentials).
 
 A **chave pública**, ou *public key*, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e tokenizar.
 
@@ -28,7 +28,7 @@ Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **M
 
 Forneceremos cartões de teste para que possa simular transações como se fossem reais.
 
-Assim que tiver [testado sua aplicação](/guides/payments/api/testing.pt.md), você deverá preencher o formulário “Quero ir para produção” que encontrará em suas [credenciais](https://www.mercadopago.com.ar/account/credentials).
+Assim que tiver [testado sua aplicação](/guides/payments/api/testing.pt.md), você deverá preencher o formulário “Quero ir para produção” que encontrará em suas [credenciais](https://www.mercadopago.com/mlb/account/credentials).
 
 Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do sandbox pelas de produção em seu código.
 
@@ -39,11 +39,11 @@ Depois de testar a sua aplicação no modo _Sandbox_, você deve completar o pro
 * Usar o _SDK_ do mercadopago.js para verificar os métodos de pagamento, efetuar pagamentos, garantir uma boa experiência do usuário e evitar transações fraudulentas.
 * Usar o atributo `data_checkout` nas tags do `input` para manusear os dados de forma segura e evitar que eles sejam enviado para o seu servidor. Certifique-se de NÃO incluir o atributo de `name` nessas tags.
 * Tenha um certificado SSL para garantir uma navegação segura e que o formulário de pagamento seja enviado via HTTPS.
-* Comunique corretamente o resultado do pagamento ao usuário para tentar recuperar o pagamento em caso de rejeição. Para isso, [utilize os códigos de resposta] (http://beta.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
-* Comunique as [promoções e possibilidades de parcelamento] (https://www.mercadopago.com.ar/promociones) oferecidas pelo Mercado Pago. Você pode incluir nossos [banners institucionais] (https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales).
+* Comunique corretamente o resultado do pagamento ao usuário para tentar recuperar o pagamento em caso de rejeição. Para isso, [utilize os códigos de resposta](/guides/payments/api/handling-responses.pt.md).
+* Comunique as [promoções e possibilidades de parcelamento](https://www.mercadopago.com.br/promocoes/) oferecidas pelo Mercado Pago. Você pode incluir nossos [banners institucionais](https://www.mercadopago.com/mlb/com.mercadopago.web.landing.LandingController?id=banners).
 
-> Quando cumprir os requisitos, você deve preencher o formulário Eu quero ir para produção que está na seção das suas [credenciais](https://www.mercadopago.com/mla/account/credentials)
+> Quando cumprir os requisitos, você deve preencher o formulário Eu quero ir para produção que está na seção das suas [credenciais](https://www.mercadopago.com/mlb/account/credentials)
 
-O não cumprimento destas regras pode envolver desde o não processamento do pagamento, a ações legais de acordo com os [termos e condições] (https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299). Você deve ter uma política de termos e condições, na qual você especifica que é responsável por todos os dados que foram inseridos em seu site.
+O não cumprimento destas regras pode envolver desde o não processamento do pagamento, a ações legais de acordo com os [termos e condições](https://www.mercadopago.com.br/ajuda/termos-e-condicoes_300). Você deve ter uma política de termos e condições, na qual você especifica que é responsável por todos os dados que foram inseridos em seu site.
 
-#### [Começar a integrar a API](/guides/payments/api/receiving-payment-by-card.es.md).
+#### [Começar a integrar a API](/guides/payments/api/receiving-payment-by-card.pt.md).

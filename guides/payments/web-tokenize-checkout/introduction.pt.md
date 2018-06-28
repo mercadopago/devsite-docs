@@ -268,6 +268,6 @@ Retorno:
 
 Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](/guides/payments/api/testing.pt.md).
 
-### Promociones
+### Promoções
 
 Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago.com/mlb/com.mercadopago.web.landing.LandingController?id=banners).

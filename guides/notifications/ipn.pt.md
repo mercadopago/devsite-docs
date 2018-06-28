@@ -4,11 +4,11 @@
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout](/guides/payments/web-checkout/introduction.pt.md)implementado.
+> * Possuir o [Checkout](/guides/payments/web-checkout/introduction.pt.md) implementado.
 
 O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
-Para receber as notificações dos eventos na sua plataforma, deve-se [configurar previamente uma URL acessível ao Mercado Pago](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Para receber as notificações dos eventos na sua plataforma, deve-se configurar previamente uma [URL acessível ao Mercado Pago](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 
 ## Eventos
@@ -46,8 +46,8 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](/reference/payments/resource/)
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](/reference/merchant_orders/resource/)
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](/reference/payments/_payments_id/get/)
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](/reference/merchant_orders/_merchant_orders_id/get/)
 
 
 ### Implemente o receptor de notificações usando o seguinte código como exemplo:

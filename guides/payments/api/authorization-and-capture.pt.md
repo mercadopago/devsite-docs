@@ -137,7 +137,15 @@ Tenha em mente que este valor não poderá ser utilizado pelo comprador enquanto
 >
 > Considerações
 >
-> * A reserva será válida por [AR:7][BR:5][PE:22] dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
+----[mlb]----
+> * A reserva será válida por 5 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
+------------
+----[mla]----
+> * A reserva será válida por 7 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
+------------
+----[mpe]----
+> * A reserva será válida por 22 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
+------------
 > * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
 
 ## Capture um pagamento
@@ -213,7 +221,10 @@ Quando não especificar um valor, será realizada a captura do valor total reser
 
 ### Capture um pagamento por um valor inferior ao da reserva
 
+
+----[mla]----
 > Disponível apenas para Visa e American Express na Argentina.
+------------
 
 Caso decida capturar um valor inferior ao reservado, é necessário que, além de enviar o atributo `capture`, envie o atributo `transaction_amount` com o novo valor.
 

@@ -48,8 +48,8 @@ After that, you will be able to get full information about the notified resource
 
 Type               | URL                                                         | Documentation
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/payments/resource/)
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](/reference/merchant_orders/resource/)
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/payments/_payments_id/get/)
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](/reference/merchant_orders/_merchant_orders_id/get/)
 
 
 ### Implement the notification receiver using the following code as example:

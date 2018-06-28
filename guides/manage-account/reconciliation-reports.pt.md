@@ -16,7 +16,7 @@ Este relatório é geralmente utilizado para conciliar uma retirada para a conta
 
 Ambos os relatórios podem ser gerados manualmente (indicando um intervalo específico de datas) ou de forma programada.
 
-Consulte o [glossário dos relatórios](https://www.mercadopago.com.ar/ayuda/glosario-reporte-conciliacion_2118).
+Consulte o [glossário dos relatórios](https://www.mercadopago.com.br/ajuda/glosario-reporte-conciliacion_2140).
 
 ### Uso manual
 

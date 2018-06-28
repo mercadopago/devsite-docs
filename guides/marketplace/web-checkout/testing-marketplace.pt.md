@@ -18,7 +18,7 @@ Para simular o processo de pagamento do começo ao fim, é necessário criar 3 u
 
 Você deve fazer a seguinte requisição à API para criar cada um dos usuários.
 
-Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPEv e Colômbia: **MCO**.
+Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPE** e Colômbia: **MCO**.
 
 ##### Request
 ```curl

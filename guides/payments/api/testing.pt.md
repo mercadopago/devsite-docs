@@ -4,7 +4,7 @@ Antes de partir para a produção, é muito importante que realize testes do flu
 
 Proporcionar uma boa experiência aos seus clientes no checkout ajuda a garantir a conversão.
 
-Você conta com um par de [credenciais do sandbox](https://www.mercadopago.com.ar/account/credentials?type=custom), que permitem testar toda a integração em uma réplica exata do Modo de Produção, podendo simular transações utilizando cartões de teste:
+Você conta com um par de [credenciais do sandbox](https://www.mercadopago.com.br/account/credentials?type=custom), que permitem testar toda a integração em uma réplica exata do Modo de Produção, podendo simular transações utilizando cartões de teste:
 
 | País       | Visa                | Mastercard          | American Express  |
 | ---------- | ------------------- | ------------------- | ----------------- |
@@ -35,14 +35,14 @@ Se, ao criar o pagamento, obtiver algum erro relacionado ao método de pagamento
 
 Testar todos os cenários possíveis de pagamento aprovado, pendente ou recusado. Para isso, no campo `card_holder_name` do formulário insira qualquer um dos prefixos a seguir:
 
-    * **APRO**: Pagamento aprovado.  
-    * **CONT**: Pagamento pendente.
-    * **CALL**: Recusado, ligar para autorizar.  
-    * **FUND**: Recusado por saldo insuficiente.  
-    * **SECU**: Recusado por código de segurança.  
-    * **EXPI**: Recusado por data de validade.
-    * **FORM**: Recusado por erro no formulário.
-    * **OTHE**: Recusado geral.
+* **APRO**: Pagamento aprovado.  
+* **CONT**: Pagamento pendente.
+* **CALL**: Recusado, ligar para autorizar.  
+* **FUND**: Recusado por saldo insuficiente.  
+* **SECU**: Recusado por código de segurança.  
+* **EXPI**: Recusado por data de validade.
+* **FORM**: Recusado por erro no formulário.
+* **OTHE**: Recusado geral.
 
 Em cada caso, deverá informar ao seu cliente o resultado do pagamento e qual o próximo passo a seguir. Para isso, você receberá um HTTP Status 201 OK informando que o pagamento foi criado corretamente e um código de resultado para que possa redirecionar o cliente para a página com a mensagem correta.
 
@@ -50,7 +50,7 @@ Em cada caso, deverá informar ao seu cliente o resultado do pagamento e qual o 
 
 Mercado Pago te enviará uma notificação do evento ocorrido. Valida que a tenha recebido corretamente e tratado corretamente no seu sistema de gestão.
 
-### Cancele um pagamento
+## Cancele um pagamento
 
 Realize a devolução de um pagamento aprovado ou o cancelamento de um pagamento pendente e verifique que recebeu a notificação com atualização correspondente ao recurso.
 

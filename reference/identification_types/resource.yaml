@@ -24,7 +24,7 @@ properties:
     description:
       en: Identification number min length.
       es: Mínima longitud del número de identificación.
-      pt: Mínima comprimento do número de identificação.
+      pt: O comprimento mínimo do número de identificação.
 - max_length:
     type: number
     description:
