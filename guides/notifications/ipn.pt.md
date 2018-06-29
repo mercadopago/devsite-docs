@@ -54,37 +54,30 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 
 ```php
 <?php
-require_once "mercadopago.php";
+	MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$mp = new MP("CLIENT_ID", "CLIENT_SECRET");
+	$merchant_order = null;
 
-if (!isset($_GET["id"], $_GET["topic"]) || !ctype_digit($_GET["id"])) {
-	http_response_code(400);
-	return;
-}
+	switch($_GET["topic"]) {
+		case "payment":
+			$payment = MercadoPago\Payment.find_by_id($_GET["id"]);
+			// Get the payment and the corresponding merchant_order reported by the IPN.
+			$merchant_order = MercadoPago\MerchantOrder.find_by_id($payment->order_id;
+		case "merchant_order":
+			$merchant_order = MercadoPago\MerchantOrder.find_by_id($_GET["id"]);
+	}
 
-// Get the payment and the corresponding merchant_order reported by the IPN.
-if($_GET["topic"] == 'payment'){
-	$payment_info = $mp->get("/v1/payments/" . $_GET["id"]);
-	$merchant_order_info = $mp->get("/merchant_orders/" . $payment_info["response"]["order"]["id"]);
-// Get the merchant_order reported by the IPN.
-} else if($_GET["topic"] == 'merchant_order'){
-	$merchant_order_info = $mp->get("/merchant_orders/" . $_GET["id"]);
-}
-
-if ($merchant_order_info["status"] == 200) {
-	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
-	$paid_amount = 0;
-
-	foreach ($merchant_order_info["response"]["payments"] as  $payment) {
+	foreach ($merchant_order->payments as $payment) {
+		$paid_amount = 0;
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
 		}
 	}
-
-	if($paid_amount >= $merchant_order_info["response"]["total_amount"]){
-		if(count($merchant_order_info["response"]["shipments"]) > 0) { // The merchant_order has shipments
-			if($merchant_order_info["response"]["shipments"][0]["status"] == "ready_to_ship"){
+	
+	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
+	if($paid_amount >= $merchant_order->total_amount){
+		if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
+			if($merchant_order->shipments[0]->status == "ready_to_ship") {
 				print_r("Totally paid. Print the label and release your item.");
 			}
 		} else { // The merchant_order don't has any shipments
@@ -93,8 +86,8 @@ if ($merchant_order_info["status"] == 200) {
 	} else {
 		print_r("Not paid yet. Do not release your item.");
 	}
-}
+	
 ?>
 ```
 
-> Para obter seu `CLIENT_ID` e `CLIENT_SECRET`, verifique a seção de [Credenciais](https://www.mercadopago.com.ar/account/credentials?type=basic)
+> Para obter seu `ACCESS_TOKEN`, verifique a seção de [Credenciais](https://www.mercadopago.com.ar/account/credentials?type=basic)
