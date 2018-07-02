@@ -5,7 +5,7 @@
 
 # XTECH
 
-## O que é XTECH?
+## O que é XTECH
 
 [XTECH](https://www.xtechcommerce.com/) é uma plataforma de ecommerce que disponibiliza a integração com Mercado Pago como meio de pagamento.
 
@@ -13,11 +13,11 @@
 
 XTECH permite operar Mercado Pago nas seguintes modalidades:
 
-#### Checkout Transparente
+### Checkout Transparente
 
 Receba pagamentos em sua loja através de Cartão de Crédito e/ou Boleto Bancário no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma XTECH.
 
-#### Checkout Redirect
+### Checkout Redirect
 
 Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
 
@@ -88,9 +88,9 @@ Item | Valores | Descrição
 
 ## Exemplos
 
-Utilizamos uma loja virtual de demonstração da XTECH para mostrar o resultado os tipos de checkouts para os clientes.
+Utilizamos uma loja virtual de demonstração da XTECH para mostrar o resultado dos tipos de checkouts para os clientes.
 
-### Checkout Transparente
+### Visual do Checkout Transparente
 
 **_Cartao de Crédito_**
 
@@ -100,7 +100,7 @@ Utilizamos uma loja virtual de demonstração da XTECH para mostrar o resultado 
 
 ![XTECH Configuracao](/images/xtech_config11.png)
 
-### Checkout Redirect
+### Visual do Checkout Redirect
 
 ![XTECH Configuracao](/images/xtech_config10.png)
 
