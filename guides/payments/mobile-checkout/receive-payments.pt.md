@@ -4,7 +4,7 @@ sites_supported:
     - mlb
     - mlm
     - mco
-    - mcl
+    - mlc
     - mpe
     - mlv
     - global
@@ -508,7 +508,7 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificações](/guides/notifications/ipn.pt.md).
+Para mais informações, consulte a seção de [Notificações](/guides/notifications/webhooks.pt.md).
 
 ## Teste a integração
 

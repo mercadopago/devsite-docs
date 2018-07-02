@@ -2,9 +2,9 @@
 
 Existem diferentes situações que podem dar origem ao cancelamento de uma venda:
 
-	•	Se o status do pagamento for `pending` ou `in_process`, o valor ainda não foi cobrado do comprador, então deve-se realizar um cancelamento.
+* Se o status do pagamento for `pending` ou `in_process`, o valor ainda não foi cobrado do comprador, então deve-se realizar um cancelamento.
 
-	•	Se o `status` do pagamento for `approved`, significa que o comprador efetuou o pagamento, e a devolução deverá ser realizada.
+* Se o `status` do pagamento for `approved`, significa que o comprador efetuou o pagamento, e a devolução deverá ser realizada.
 
 
 ## Cancelamentos

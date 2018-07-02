@@ -1,7 +1,7 @@
 ---
-sites_supported:
-- mlm
-- global
+  sites_supported:
+      - mlm
+      - global
 ---
 
 
@@ -20,7 +20,7 @@ At the moment, the currencies in which the funds are allowed to be received are:
 The payer will make the payment in the local currency, in this way, he will be able to take advantage of the financing offered by Mercado Pago.
 
 
-## ACCOUNT CREATION
+## Account Creation
 
 The Mercado Pago account must be created by Mercado Pago in order to use the Cross Border solution. For the creation of the account it is necessary that you send us the following information:
 
@@ -28,15 +28,14 @@ The Mercado Pago account must be created by Mercado Pago in order to use the Cro
 - Display Name.
 - Contact First Name.
 - Contact Last Name.
-- Email. 
+- Email.
 - Country.
-- Currency.
 - State.
-- City. 
+- City.
 - Address.
 - Zip.
 - Phone.
-- W9 (or equivalent).
+- Business License (W9 or equivalent).
 - Logo (298x118px, max weight 6KB and .png or .jpg)
 
 
@@ -49,7 +48,7 @@ Also, we need this data to configure the bank transfer:
 
 
 
-## GENERAL CONSIDERATIONS
+## General Considerations
 
 Whatever integration you carry out (Basic Checkout, Checkout Tokenizer or Custom Checkout) you must add the following lines of code to the creation of the payment or payment preference to be able to charge with your Cross Border account:
 
@@ -57,7 +56,7 @@ Whatever integration you carry out (Basic Checkout, Checkout Tokenizer or Custom
 "counter_currency": {
 	"currency_id": "USD"
 }
-``` 
+```
 
 Please note that if you do not send this portion of code, you will receive an error message like:
 
@@ -94,7 +93,7 @@ Finally, in the payment you will see the value in USD and the rate at which the 
 
 
 
-## API EXCHANGE RATE
+## API Exchange Rate
 
 For the integration of Cross Border, the use of the Exchange Rate API will be essential, since as mentioned above, the amount of the transaction must be made in local currency.
 
@@ -120,7 +119,7 @@ The answer you will get is similar to the following:
 > The rate field is expressed in the currency corresponding to the 'to' of the API call. In this example, it is in MXN.
 
 
-## CHECKOUT BASIC INTEGRATION
+## Basic Checkout Integration
 
 The Basic Checkout is the standard solution of Mercado Pago. The solution consists in the generation of a payment preference, which returns an `init_point` that upon opening it redirects the user to a checkout where all the experience is handled by Mercado Pago.
 
@@ -140,8 +139,8 @@ The Basic Checkout is the standard solution of Mercado Pago. The solution consis
 To carry out the integration, you must follow the documentation that you can find by entering the following [link] ("../guides/payments/web-checkout/introduction/")
 
 
-This is an example of the creation of the payment preference: 
-  
+This is an example of the creation of the payment preference:
+
 ``` curl
 $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOKEN> \
   -H 'Content-Type: application/json' \
@@ -154,7 +153,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"currency_id": "ARS",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
-			"category_id": "others", 
+			"category_id": "others",
 			"quantity": 1,
 			"unit_price": 100
 		}
@@ -175,7 +174,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"street_name": "Street",
 			"street_number": 123,
 			"zip_code": "5700"
-		} 
+		}
 	},
 	"back_urls": {
 		"success": "https://www.success.com",
@@ -468,17 +467,17 @@ The Tokenizer is the Mercado Pago solution that quickly allows you to obtain a c
 > * Does not include all means of payment.
 
 
-To carry out the integration, you must follow the documentation you can find by entering the following [link] ("../guides/payments/tokenize-checkout/introduction/")
+To carry out the integration, you must follow the documentation you can find by entering the following [link] (/guides/payments/tokenize-checkout/introduction/)
 
 
 This would be an example of the creation of the checkout:
-   
+
 ``` html
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <form action="https://www.your-site.com/process-payment" method="POST">
       <script
-	      src="https://mercadopago.com.ar/integrations/v1/checkout.js"
+	      src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
 	      data-public-key="<PUBLIC_KEY>"
 	      data-transaction-amount="100"
 	      data-button-label="Confirmar">
@@ -516,7 +515,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"title": "Title of what you are paying for",
 				"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 				"description": "Item description",
-				"category_id": "others", 
+				"category_id": "others",
 				"quantity": 1,
 				"unit_price": 100
 			}
@@ -532,7 +531,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"street_name": "Street",
 				"street_number": 123,
 				"zip_code": "5700"
-			} 
+			}
 		},
 		"shipments": {
 			"receiver_address": {
@@ -694,7 +693,7 @@ This is an example of the payment response:
 
 
 
-## CUSTOM CHECKOUT INTEGRATION (API)
+## Custom Checkout Integration (API)
 
 The Custom Checkout is the most customizable solution of Mercado Pago. This solution consists of the use of the Javascript SDK and the Mercado Pago APIs to carry out the tokenization of the payer's card and then the corresponding posting of the payment. All the experience is handled by the integrator.
 
@@ -711,7 +710,7 @@ The Custom Checkout is the most customizable solution of Mercado Pago. This solu
 > * You must integrate each means of payment separately.
 
 
-In order to carry out the integration you will have to follow the documentation that you can find entering in the following [link]("../guides/payments/api/introduction/")
+In order to carry out the integration you will have to follow the documentation that you can find entering in the following [link](/guides/payments/api/introduction/)
 
 You must generate a card form as indicated in the documentation that allows you to obtain a card-token from the payer card and then take it to your server and thus make the payment POST:
 
@@ -752,11 +751,11 @@ You must generate a card form as indicated in the documentation that allows you 
 </form>
 ...
 
-```	
+```
 
 
 This is an example of the creation of the payment:
-   
+
 ``` json
 $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
   -H 'Content-Type: application/json' \
@@ -783,7 +782,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"title": "Title of what you are paying for",
 				"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 				"description": "Item description",
-				"category_id": "others", 
+				"category_id": "others",
 				"quantity": 1,
 				"unit_price": 100
 			}
@@ -799,7 +798,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 				"street_name": "Street",
 				"street_number": 123,
 				"zip_code": "5700"
-			} 
+			}
 		},
 		"shipments": {
 			"receiver_address": {
@@ -962,9 +961,9 @@ This is an example of the payment response:
 
 
 
-## PAYMENT REFUND
+## Payments Refund
 The refund of a payment is made in the local currency of the operation (for example, MXN) under the same conversion of the original payment.
 
 For this, it will be necessary for you to search for the payment by means of the `payment_id` and obtain the` currency_conversion`.
 
-You can get more information about the returns API in the following [link]("../guides/manage-account/cancellations-and-refunds).
+You can get more information about the returns API in the following [link](/guides/manage-account/cancellations-and-refunds).

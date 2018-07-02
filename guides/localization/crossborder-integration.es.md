@@ -1,16 +1,16 @@
 ---
-sites_supported:
-- mlm
-- global
+  sites_supported:
+      - mlm
+      - global
 ---
 
 
 
-# CrossBorder
+# Cross Border
 
-La solución CrossBorder de Mercado Pago te permite cobrar de manera local pero retirar los fondos en una cuenta bancaria en otro país diferente a donde estas vendiendo.
+La solución Cross Border de Mercado Pago te permite cobrar de manera local pero retirar los fondos en una cuenta bancaria en otro país diferente a donde estas vendiendo.
 
-Para poder utilizar la solución de CrossBorder la cuenta de Mercado Pago debe ser creada por nuestro equipo, ya que se necesitan hacer algunas configuraciones especiales.
+Para poder utilizar la solución de Cross Border la cuenta de Mercado Pago debe ser creada por nuestro equipo, ya que se necesitan hacer algunas configuraciones especiales.
 Por lo tanto, debes contactarte con el equipo comercial de Mercado Pago escribiendo a: `crm_regionales@mercadopago.com`
 
 Por el momento, las monedas en las que se permite recibir los fondos son:
@@ -21,36 +21,34 @@ Tene en cuenta que el pagador va a realizar el pago en la moneda local, de esta 
 
 
 
-## CREACIÓN DE LA CUENTA
+## Creación de la cuenta
 Como se mencionó anteriormente la cuenta de Mercado Pago deberá ser creada por Mercado Pago para poder utilizar la solución de CrossBorder. Para la creación de la cuenta es necesario que nos envien la siguiente información:
 
-- Company Name.
-- Display Name.
-- Contact First Name.
-- Contact Last Name.
+- Nombre de la compañia.
+- Nombre a mostrar.
+- Nombre del contacto.
+- Apellido del contacto.
 - Email.
-- Country.
-- Currency.
-- State.
-- City.
-- Address.
-- Zip.
-- Phone.
-- W9 (or equivalent).
-- Logo (298x118px, max weight 6KB and .png or .jpg)
+- País.
+- Estado.
+- Ciudad.
+- Dirección.
+- Código Postal.
+- Teléfono.
+- Licencia de Negocio (W9 o equivalente).
+- Logo (298x118px, peso máximo 6KB y .png o .jpg).
 
 A su vez, necesitamos los datos para configurar la trasferencia bancaria:
 
-- swiftCode o routingCode.
-- bankAccountNumber.
-- accountName.
-- bankName.
+- Código swift o código routing.
+- Número de la cuenta bancaria.
+- Propietario de la cuenta bancaria.
+- Nombre del banco.
 
 
+## Consideraciones generales
 
-## CONSIDERACIONES GENERALES
-
-Sea cual sea la integración que lleves a cabo (Checkout básico, Checkout Tokenizador o Checkout Personalizado) deberás sumar las siguientes líneas de código a la creación de la preferencia de pago o del pago para poder cobrar con tu cuenta CrossBorder:
+Sea cual sea la integración que lleves a cabo (Checkout básico, Checkout Tokenizador o Checkout Personalizado) deberás sumar las siguientes líneas de código a la creación de la preferencia de pago o del pago para poder cobrar con tu cuenta Cross Border:
 
 ```
 "counter_currency": {
@@ -69,7 +67,7 @@ Tene en cuenta que si no envías esta porción de código, recibirás un mensaje
 }
 ```
 
-A su vez, si tu cuenta de Mercado Pago no fue creada para operar con CrossBorder, recibirás un mensaje de error como el siguiente:
+A su vez, si tu cuenta de Mercado Pago no fue creada para operar con Cross Border, recibirás un mensaje de error como el siguiente:
 
 ```json
 {
@@ -93,9 +91,9 @@ Finalmente, en el pago vas a ver el valor en USD y el rate con que fue convertid
 
 
 
-## API EXCHANGE RATE
+## API Exchange Rate
 
-Para la integración de CrossBorder será fundamental la utilización de la API de Exchange Rate, ya que como se mencionó anteriormente, el monto de la operación debe ser realizado en moneda local.
+Para la integración de Cross Border será fundamental la utilización de la API de Exchange Rate, ya que como se mencionó anteriormente, el monto de la operación debe ser realizado en moneda local.
 
 La API de Exchange Rate es:
 
@@ -120,7 +118,7 @@ La respuesta que vas a obtener es similar a la siguiente:
 
 
 
-## INTEGRACIÓN CON CHECKOUT BÁSICO
+## Integración con Checkout Básico
 
 El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución consiste en la generación de una preferencia de pago, la cual retorna un `init_point` que al abrirlo redirecciona al usuario a un checkout donde toda la experiencia es manejada por Mercado Pago.
 
@@ -137,7 +135,7 @@ El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución co
 > * El usuario es redigido fuera de la aplicación para realizar el pago.
 
 
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link]("../guides/payments/web-checkout/introduction/")
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](/guides/payments/web-checkout/introduction)
 
 
 Este sería un ejemplo de la creación de la preferencia de pago:
@@ -451,7 +449,7 @@ Este es un ejemplo de la respuesta del pago:
 
 
 
-## INTEGRACIÓN CON EL TOKENIZADOR
+## Integración con el Tokenizador
 El Tokenizador es la solución de Mercado Pago que rápidamente te permite obtener un card token de la tarjeta de tu cliente. Dicha solución consiste en la generación de una orden de pago utilizando Javascript que abre un checkout para que el pagador cargue los datos de la tarjeta. Luego, recibirás en tu backend el card token para que hagas un POST del pago.
 
 > VENTAJAS
@@ -467,7 +465,7 @@ El Tokenizador es la solución de Mercado Pago que rápidamente te permite obten
 > * No incluye todos los medios de pago.
 
 
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link]("../guides/payments/tokenize-checkout/introduction/")
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](/guides/payments/tokenize-checkout/introduction)
 
 
 Este sería un ejemplo de la creación del checkout:
@@ -477,7 +475,7 @@ Este sería un ejemplo de la creación del checkout:
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <form action="https://www.your-site.com/process-payment" method="POST">
       <script
-	      src="https://mercadopago.com.ar/integrations/v1/checkout.js"
+	      src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
 	      data-public-key="<PUBLIC_KEY>"
 	      data-transaction-amount="100"
 	      data-button-label="Confirmar">
@@ -693,7 +691,7 @@ Este es un ejemplo de la respuesta del pago:
 
 
 
-## INTEGRACIÓN CON CHECKOUT PERSONALIZADO (API)
+## Integración con Checkout Personalizado (API)
 
 El Checkout Personalizado es la solución más customizable de Mercado Pago. Dicha solución consiste en la utilización del SDK Javascript y las API's de Mercado Pago para llevar a cabo la tokenización de la tarjeta del pagador y luego el correspondiente posteo del pago. Toda la experiencia es manejada por el integrador.
 
@@ -710,7 +708,7 @@ El Checkout Personalizado es la solución más customizable de Mercado Pago. Dic
 > * Debes integrar cada medio de pagos por separado.
 
 
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente  [link]("../guides/payments/api/introduction/")
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente  [link](/guides/payments/api/introduction)
 
 Deberás generar un formulario de tarjeta como se indica en la documentación que te permita obtener un card-token de la tarjeta del pagador para luego llevar a tu servidor y así hacer el POST del pago:
 
@@ -961,9 +959,9 @@ Este es un ejemplo de la respuesta del pago:
 
 
 
-## DEVOLUCIÓN DE PAGOS
+## Devoluciones de pagos
 La devolución de los pagos se hacen por valor de la moneda local de la operación (por ejemplo, MXN) bajo la misma conversión del pago original.
 
 Para esto, será necesario que hagas la busqueda del pago mediante el `payment_id` y obtener el `currency_conversion`.
 
-Podes obtener más información de la API de devoluciones en el siguiente [link]("../guides/manage-account/cancellations-and-refunds).
+Podes obtener más información de la API de devoluciones en el siguiente [link](/guides/manage-account/cancellations-and-refunds).

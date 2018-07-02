@@ -207,7 +207,7 @@ If your buyer doesn’t have one, you will receive an email at the address sent 
 
 For more information, go to [Refunds](/guides/manage-account/cancellations-and-refunds.es.md).
 
-----[mcl, global]----
+----[mlc, global]----
 
 ## Integrate Webpay (Chile)
 

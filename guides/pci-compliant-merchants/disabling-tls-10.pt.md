@@ -3,19 +3,19 @@
 No Mercado Pago procuramos sempre otimizar nossa plataforma oferecendo a mais alta eficiência e segurança no processamento de pagamentos.
 
 No momento, estamos trabalhando no desligamento do protocolo de criptografia TLS 1.0 para os domínios https://api.mercadopago.com e https://pagamento.mercadopago.com com o objetivo de manter os mais altos padrões de qualidade e promover a segurança de dados de nossos clientes.
-Consequentemente, o Mercado Pago exigirá que suas conexões com os domínios https://api.mercadopago.com e https://pagamento.mercadopago.com sejam realizados utilizando o protocolo TLS 1.1 ou superior a partir de 30 de junho de 2018.
+Consequentemente, o Mercado Pago exigirá que suas conexões com os domínios https://api.mercadopago.com e https://pagamento.mercadopago.com sejam realizados utilizando o protocolo TLS 1.2 ou superior a partir de 30 de junho de 2018.
 
 Depois desse prazo, o protocolo TLS 1.0 estará desativado e qualquer tentativa de conexão utilizando o TLS 1.0, falhará.
 
 ### Pontos para serem levados em conta
 
 * A alteração terá impacto **a partir de 30 de junho de 2018.**
-* Se você usa apenas Mercado Libre, essa alteração não afetará você.
+* Se você usa apenas Mercado Livre, essa alteração não afetará você.
 * Se você usa apenas os botões de pagamento de Mercado Pago, essa alteração não afetará você.
 * Se você usa apenas Mercado Shops, essa alteração não afetará você.
 * Se você usa apenas VTEX, essa alteração não afetará você.
 * Caso tenha seu **próprio e-commerce, consulte sua equipe de TI**.
-* Caso **opere com alguma plataforma de e-commerce**, como por exemplo: Magento, Shopify ou otros **Consulte seu respectivo suporte técnico**.
+* Caso **opere com alguma plataforma de e-commerce**, como por exemplo: Magento, Shopify ou outros **Consulte seu respectivo suporte técnico**.
 
 
 ## Introdução
@@ -42,7 +42,7 @@ A partir de 30 de junho de 2018, o Mercado Pago começará a desativar o protoco
 
 Se suas integrações que usam conexões de entrada com o Mercado Pago, não tiverem os protocolos TLS 1.1 e/ou TLS 1.2 ativados após essa alteração, elas começarão a falhar
 
-Recomendamos que você comece a planejar a inclusão dos protocolos TLS 1.1 e TLS 1.2 o mais rápido possível.
+Recomendamos que você comece a planejar a inclusão do protocolo TLS 1.2 o mais rápido possível.
 
 Veja as diretrizes de compatibilidade abaixo:
 
