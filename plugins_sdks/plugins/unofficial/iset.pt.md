@@ -130,7 +130,7 @@ Utilizamos uma loja virtual de demonstração da ISET para mostrar o resultado d
 
 ### Visual do Checkout Transparente
 
-**_Cartao de Crédito_**
+**_Cartão de Crédito_**
 
 ![ISET Configuracao](/images/iset-checkout-cartao.png)
 
