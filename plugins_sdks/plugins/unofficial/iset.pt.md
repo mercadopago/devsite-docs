@@ -29,7 +29,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 ## Como configurar o Mercado Pago na plataforma
 
-1. Acessar o administrador se sua loja na plataforma.
+1. Acessar o administrador de sua loja na plataforma.
 
     ![ISET Configuracao](/images/iset-img1.png)
 
@@ -75,8 +75,6 @@ Na ISET, você tem a flexibilidade de selecionar quais formas de pagamento desej
 ### Escolhendo o tipo de checkout
 
 Para escolher o checkout transparente, selecione a opção através do item **Modelo de Checkout**.
-
-Para escolher o checkout redirect, é necessários elecionar a opção **DESATIVADO** do campo **Checkout transparente**:
 
     * Padrão: _checkout redirect_
     * Transparente: _checkout transparente_
