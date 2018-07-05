@@ -63,11 +63,14 @@ Selecione a opção de ativo que melhor se encaixe no seu negócio, recomendamos
 
 ![ISET Configuracao](/images/iset-img5.png)
 
-### Configurando as credenciais do Mercado Pago
+### Selecionando os meios de pagamentos
 
-Para ter acesso as credenciais, basta acessar o [link](https://www.mercadopago.com/mlb/account/credentials), para obter os dados de client_secret e access_token utilize a aba *checkout transparente* e para obter o client_id utilize a aba *checkout básico*:
+Na ISET, você tem a flexibilidade de selecionar quais formas de pagamento deseja habilitar em teu checkout:
 
-![ISET Configuracao](/images/iset-img14.png)
+    * Boleto bancário
+    * Cartão de crédito: VISA, MASTER, AMERICAN EXPRESS, DINNERS, ELO, HIPERCARD e Mercado Livre
+
+![ISET Configuracao](/images/iset-img6.png)
 
 ### Escolhendo o tipo de checkout
 
@@ -81,14 +84,11 @@ Para escolher o checkout redirect, é necessários elecionar a opção **DESATIV
 
 ![ISET Configuracao](/images/iset-img7.png)
 
-### Selecionando os meios de pagamentos
+### Configurando as credenciais do Mercado Pago
 
-Na ISET, você tem a flexibilidade de selecionar quais formas de pagamento deseja habilitar em teu checkout:
+Para ter acesso as credenciais, basta acessar o [link](https://www.mercadopago.com/mlb/account/credentials), para obter os dados de public_key (chave pública) utilize a aba *checkout transparente* e para obter o client_id e client_secret utilize a aba *checkout básico*:
 
-    * Boleto bancário
-    * Cartão de crédito: VISA, MASTER, AMERICAN EXPRESS, DINNERS, ELO, HIPERCARD e Mercado Livre
-
-![ISET Configuracao](/images/iset-img6.png)
+![ISET Configuracao](/images/iset-img14.png)
 
 ### Configurações Avançadas
 
@@ -114,28 +114,40 @@ A plataforma possibilita a edição de duas mensagens de textos no que serão ex
 
 ### Habilitando Cupom de Desconto
 
-A funcionalidade de cupom de desconto é exclusiva no checkout para o Mercado Pago como meio de pagamento, através desta configuração é possível utilizar os cupons de descontos promovidos pelo Mercado Pago ou os cupons que você pode criar através de sua conta Mercado Pago, acesse o [link](https://www.mercadopago.com.br/settings/my-business) na seção *ofereça desconto*.
+A funcionalidade de cupom de desconto é exclusiva no checkout para o Mercado Pago como meio de pagamento, através desta configuração é possível utilizar os cupons de descontos promovidos pelo Mercado Pago ou os cupons que você pode criar através de sua conta Mercado Pago, acesse o [link](https://www.mercadopago.com.br/settings/my-business) na seção **ofereça desconto**.
 
 ![ISET Configuracao](/images/iset-img9.png)
+
+**Após finalizar as configurações, pode clicar no botão FECHAR e posteriormente no botão "SALVAR ALTERAÇÕES"**.
+
+Será exibido uma mensagem de sucesso no rodapé da página:
+
+![ISET Configuracao](/images/iset-img15.png)
 
 ## Exemplos
 
 Utilizamos uma loja virtual de demonstração da ISET para mostrar o resultado dos tipos de checkouts para os clientes.
 
+![ISET Configuracao](/images/iset-checkout.png)
+
 ### Visual do Checkout Transparente
 
 **_Cartao de Crédito_**
 
-![ISET Configuracao](/images/ISET_config12.png)
+![ISET Configuracao](/images/iset-checkout-cartao.png)
 
 **_Boleto Bancário_**
 
-![ISET Configuracao](/images/ISET_config11.png)
+![ISET Configuracao](/images/iset-checkout-boleto.png)
 
 ### Visual do Checkout Redirect
 
-![ISET Configuracao](/images/ISET_config10.png)
+![ISET Configuracao](/images/iset-checkout-redirect.png)
 
-Após clicar em **FINALIZAR COMPRA** o cliente será redirecionado para uma página do Mercado Pago para finalizar sua compra:
+Após clicar em **FINALIZAR COMPRA** o cliente será redirecionado para uma página de confirmação da loja:
 
-![ISET Configuracao](/images/ISET_gif01.png)
+![ISET Configuracao](/images/iset-checkout-redirect2.png)
+
+Para efetuar o pagamento é necessário clicar no botão **Efetuar Pagamento**, então o usuário será redirecionado para uma página do Mercado Pago:
+
+![ISET Configuracao](/images/iset_gif01.png)
