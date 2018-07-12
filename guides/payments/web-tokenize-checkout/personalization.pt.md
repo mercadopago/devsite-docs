@@ -41,6 +41,49 @@ button.mercadopago-button {
 
 ![Payment button - Modified CSS](/images/paybutton-modified-css.png)
 
+
+## Colores en la interfaz
+
+### Elementos
+
+Los elementos que pueden personalizarse incluye *botones, campos de ingreso de datos, elementos de transiciones y bordes.*
+
+#### Estado por defecto
+
+![Standard elements](/images/cow-ui-elements__pt.png)
+
+#### Personalización
+
+Puedes modificar el color de algunos elementos de la interfaz, agregando el atributo `data-elements-color` al fragmento de código HTML.
+
+El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+
+```html
+data-elements-color="#c0392b"
+```
+
+![Custom elements](/images/cow-ui-elements--custom__pt.png)
+
+
+### Encabezado
+
+#### Estado por defecto
+
+![Standard header](/images/cow-ui-header__pt.png)
+
+#### Personalización
+
+Puedes modificar el color del encabezado agregando el atributo `data-header-color` al fragmento de código HTML.
+
+El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+
+```html
+data-header-color="#c0392b"
+```
+
+![Custom header](/images/cow-ui-header--custom__pt.png)
+
+
 ## Detalhe da compra
 
 ### Status padrão
