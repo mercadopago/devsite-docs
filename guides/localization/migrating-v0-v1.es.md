@@ -1,11 +1,11 @@
-# Migración de la versión v0 a v1 de la API de Mercado Pago
+# Migración de la versión V0 a V1 de la API de Mercado Pago
 
 En Mercado Pago buscamos siempre optimizar nuestra plataforma ofreciendo la más alta eficiencia y seguridad en el procesamiento de pagos.
 
-En el momento, estamos trabajando en la migración de nuestra API v0 a la v1 con el objetivo de mantener los más altos estándares de calidad.
+En el momento, estamos trabajando en la migración de nuestra API V0 a la V1 con el objetivo de mantener los más altos estándares de calidad.
 En consecuencia, el Mercado Pago requerirá la utilización de la nueva versión de la API que se utilice a partir del 30 de julio de 2018.
 
-Después de ese plazo, la versión v0 se desactivará y cualquier intento de conexión que se utiliza con la función fallará.
+Después de ese plazo, la versión V0 se desactivará y cualquier intento de conexión que se utiliza con la función fallará.
 
 ### Puntos para ser tenidos en cuenta
 

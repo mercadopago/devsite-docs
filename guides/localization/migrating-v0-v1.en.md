@@ -1,8 +1,8 @@
-# Migration from Version v0 to v1 of the Mercado Pago API
+# Migration from Version V0 to V1 of the Mercado Pago API
 
 At Mercado Pago we always try to optimize our platform offering the highest efficiency and security in payment processing.
 
-We are currently working on migrating our API v0 to v1 in order to maintain the highest quality standards.
+We are currently working on migrating our API V0 to V1 in order to maintain the highest quality standards.
 Consequently, the Mercado Pago will require the use of the new version of the API to be used as of July 30, 2018.
 
 After this deadline, v0 will be disabled and any attempt to connect using it will fail.
