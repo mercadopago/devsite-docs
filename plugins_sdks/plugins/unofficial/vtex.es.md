@@ -30,6 +30,7 @@ Los pasos a seguir para configurar modo Agregador son:
 1. Configurar Afiliación.
 1. Configurar Planes de Pago Nativo.
 1. Configurar Planes de Pago Off-Line.
+1. Configurar Plan de Pago Webpay.
 1. Configurar Planes de Pago Personalizados.
 1. Configurar DeviceID.
 
@@ -37,22 +38,28 @@ Los pasos a seguir para configurar modo Agregador son:
 
 Para operar en modo Agregador solo es necesario configurar una afiliación.
 
-1. Desplegar el menú de módulos.
+
+1. Desplegar el menú de Catalog.
 2. Ingresar en PCI Gateway.
 
     ![VTEX afiliation](/images/vtex-afiliation-1.png)
 
-3. Ajustes.
-4. Afiliaciones.
-5. Nueva Afiliación.
+3. Seleccione en el menú lateral la opción "Pago".
+4. Configuraciones. 
 
-    ![VTEX afiliation](/images/vtex-afiliation-2.png)
+    ![VTEX afiliation](/images/vtex-config.png)
+    
+5. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
+6. Añadir nueva afiliación con el botón (+)
 
-6. Buscar y seleccionar "MercadoPagoV1".
+    ![VTEX afiliation](/images/vtex-afiliation.png)
+    
+7. Buscar y seleccionar "MercadoPagoV1".
 
-    ![VTEX afiliation](/images/vtex-afiliation-3.png)
-
-7. Completar la información requerida en la afiliación.
+    ![VTEX afiliation](/images/vtex-afiliation-3.png)    
+    
+    
+8. Completar la información requerida en la afiliación.
 
     ![VTEX afiliation](/images/vtex-afiliation-4.png)
 
@@ -82,16 +89,13 @@ Argentina y Brasil).
 
 Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
 
-1. Desplegar el menú de módulos
-2. Ingresar en PCI Gateway
+1. El menu superior.
+2. Clic en condiciones de pago.
+3. En el lado derecho, haga clic en Agregar nueva condición.
+4. Cerca del campo de búsqueda.
+5. En el botón (+)
 
-    ![Native plan](/images/vtex-native-plan-1.png)
-
-3. Ajustes.
-4. Planes de pago.
-5. Nuevo plan de pago.
-
-    ![Native plan](/images/vtex-native-plan-2.png)
+    ![VTEX afiliation](/images/vtex-afiliation-2.png)
 
 6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
 
@@ -124,17 +128,15 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 - Perú: PagoEfectivo.
 - Uruguay: Abitab, Redpagos.
 - Venezuela: Banesco, Mercantil, Provincial.
+- Brasil: Boleto Bancario
 
-1. Desplegar el menú de módulos.
-2. Ingresar en PCI Gateway.
+1. El menu superior.
+2. Clic en condiciones de pago.
+3. En el lado derecho, haga clic en Agregar nueva condición.
+4. Cerca del campo de búsqueda.
+5. En el botón (+)
 
-    ![Offline](/images/vtex-offline-plan-1.png)
-
-3. Ajustes.
-4. Planes de pago.
-5. Nuevo plan de pago.
-
-    ![Offline](/images/vtex-offline-plan-2.png)
+    ![VTEX afiliation](/images/vtex-afiliation-2.png)
 
 6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
 
@@ -149,7 +151,7 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 
 ### Configurar plan de pago Webpay
 
-1. Desplegar el menú de módulos.
+1. Desplegar el menú de Catalog .
 2. Ingresar en PCI Gateway.
 
     ![Offline](/images/vtex-webpay-1.png)
@@ -183,7 +185,7 @@ Chile: CMR, Magna, Presto.
 Colombia: Codensa.
 Uruguay: Oca.
 
-1. Desplegar el menú de módulos.
+1. Desplegar el menú de Catalog.
 2. Ingresar en PCI Gateway.
 
     ![Custom plan](/images/vtex-custom-1.png)
@@ -241,7 +243,7 @@ Uruguay: Oca.
 
 ## Configurar DeviceID
 
-1. Desplegar el menú de módulos.
+1. Desplegar el menú de Catalog.
 2. Ingresar en Portal.
 
     ![Custom plan](/images/vtex-device-settings-1.png)
