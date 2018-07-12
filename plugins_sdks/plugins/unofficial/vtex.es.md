@@ -30,7 +30,7 @@ Los pasos a seguir para configurar modo Agregador son:
 1. Configurar Afiliación.
 1. Configurar Planes de Pago Nativo.
 1. Configurar Planes de Pago Off-Line.
-1. Configurar Planne de Pago Webpay
+1. Configurar Plan de Pago Webpay.
 1. Configurar Planes de Pago Personalizados.
 1. Configurar DeviceID.
 
@@ -40,17 +40,17 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 
 1. Desplegar el menú de Catalog.
-2. Ingresar PCI Gateway.
+2. Ingresar en PCI Gateway.
 
     ![VTEX afiliation](/images/vtex-afiliation-1.png)
 
-3. Aceso el menu lateral: Pago.
+3. Seleccione en el menú lateral la opción "Pago".
 4. Configuraciones. 
 
     ![VTEX afiliation](/images/vtex-config.png)
     
-5. Aceso el menu superior: Afiliaçiones de Gateway.
-6. Añadir Nueva Afiliaçion em el boton (+).
+5. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
+6. Añadir nueva afiliación con el botón (+)
 
     ![VTEX afiliation](/images/vtex-afiliation.png)
     
