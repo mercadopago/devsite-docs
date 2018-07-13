@@ -34,25 +34,25 @@ The table below shows a list of migrated resources.
 ### Examples
 
 #### Total refund
-'''json
+```json
 curl -X POST \
         -H "content-type: application/json" \
         "https://api.mercadopago.com/v1/payments/:id/refunds?access_token=ENV_ACCESS_TOKEN"
-'''
+```
 
 #### Partial refund
 
-'''curl
+```curl
 curl -X POST \
         -H 'content-type: application/json' \
         'https://api.mercadopago.com/v1/payments/12861583/refunds?access_token=ENV_ACCESS_TOKEN' \
         -d '{
                 "amount": 5.0
         }'
-'''
+```
 
 If you need to make adaptations, **it is important that you remember to make this change in a timely manner, otherwise it is very likely that your connections to the Mercado Pago will begin to fail.**
 
-If you have any questions or need help to successfully complete this change, please contact us at the following email: developers@mercadopago.com.br.
+If you have any questions or need help to successfully complete this change, please contact us at the following [form] (https://www.mercadopago.com.br/developers/en/support).
 
 Mercado Pago team.
