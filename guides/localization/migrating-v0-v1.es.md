@@ -34,25 +34,25 @@ La tabla siguiente trae una relación de los recursos migrados.
 ### Ejemplos
 
 #### Devolución total
-'''json
+```json
 curl -X POST \
         -H "content-type: application/json" \
         "https://api.mercadopago.com/v1/payments/:id/refunds?access_token=ENV_ACCESS_TOKEN"
-'''
+```
 
 #### Devolución parcial
 
-'''curl
+```curl
 curl -X POST \
         -H 'content-type: application/json' \
         'https://api.mercadopago.com/v1/payments/12861583/refunds?access_token=ENV_ACCESS_TOKEN' \
         -d '{
                 "amount": 5.0
         }'
-'''
+```
 
 Si usted necesita hacer adaptaciones, **es importante que usted recuerde hacer este cambio en tiempo hábil, porque de lo contrario, es muy probable que sus conexiones con el Mercado Pago empiecen a fallar.**
 
-Si tiene alguna duda o necesita ayuda para completar con éxito este cambio, por favor, póngase en contacto con nosotros a través del siguiente correo electrónico: developers@mercadopago.com.br.
+Si tiene alguna duda o necesita ayuda para completar con éxito este cambio, por favor, póngase en contacto con nosotros a través del siguiente [formulario](https://www.mercadopago.com.br/developers/es/support).
 
 Equipo de Mercado Pago.
