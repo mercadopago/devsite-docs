@@ -53,6 +53,6 @@ curl -X POST \
 
 If you need to make adaptations, **it is important that you remember to make this change in a timely manner, otherwise it is very likely that your connections to the Mercado Pago will begin to fail.**
 
-If you have any questions or need help to successfully complete this change, please contact us at the following [form] (https://www.mercadopago.com.br/developers/en/support).
+If you have any questions or need help to successfully complete this change, please contact us at the following [form](https://www.mercadopago.com.br/developers/en/support).
 
 Mercado Pago team.
