@@ -45,7 +45,7 @@ button.mercadopago-button {
 
 ### Status padrão
 
-![Summary Default](/images/summary-default.png)
+![Summary Default](/images/cow-summary__pt.png)
 
 
 ### Personalização
