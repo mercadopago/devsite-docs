@@ -47,7 +47,7 @@ button.mercadopago-button {
 
 ### Estado por defecto
 
-![Summary Default](/images/summary-default.png)
+![Summary Default](/images/cow-summary.png)
 
 
 ### Personalización
