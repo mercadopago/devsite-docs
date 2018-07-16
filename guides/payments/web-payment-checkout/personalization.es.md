@@ -1,6 +1,6 @@
 
 
-# Web Tokenize Checkout - Personalización
+# Web Payment Checkout - Personalización
 
 ## Botón
 
