@@ -22,7 +22,7 @@ Por exemplo:
 </form>
 ```
 
-![Recovery](/images/webtokenize-recovery.png)
+![Recovery](/images/cow-recovery-page__pt.png)
 
 ## Checkout aberto por padrão
 
