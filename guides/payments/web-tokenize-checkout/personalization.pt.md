@@ -98,7 +98,7 @@ Por ejemplo, para un color de elemento *claro*, el color del texto sera *negro* 
 
 Para un color de elementos *oscuro*, el color del texto sera *blanco* o `#fff`:
 
-![Font color in light element](/images/cow-ui-fontcolor__dark.png)
+![Font color in dark element](/images/cow-ui-fontcolor__dark.png)
 
 
 ## Detalhe da compra
