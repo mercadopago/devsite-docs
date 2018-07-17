@@ -46,15 +46,20 @@ button.mercadopago-button {
 
 ### Elementos
 
-Os elementos que podem ser personalizados incluem *botões, campos de ingresso de dados, elementos de transições e bordas.*
-
 #### Status padrão
 
 ![Standard elements](/images/cow-ui-elements__pt.png)
 
 #### Personalização
 
-É possível modificar a cor de alguns elementos da interface, adicionando o atributo `data-elements-color` ao fragmento de código HTML.
+Os elementos que podem ser personalizados incluem:
+
+- Botões
+- Campos de ingresso de dados: inputs
+- Elementos de transições: spinners
+- Bordas
+
+É possível modificar a cor adicionando o atributo `data-elements-color` ao fragmento de código HTML.
 
 O valor do atributo deverá ser em formato hexadecimal. Por exemplo:
 
@@ -82,6 +87,18 @@ data-header-color="#c0392b"
 ```
 
 ![Custom header](/images/cow-ui-header--custom__pt.png)
+
+### Color de Texto
+
+El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste del color](https://24ways.org/2010/calculating-color-contrast).
+
+Por ejemplo, para un color de elemento *claro*, el color del texto sera *negro* o `#000`:
+
+![Font color in light element](/images/cow-ui-fontcolor__light.png)
+
+Para un color de elementos *oscuro*, el color del texto sera *blanco* o `#fff`:
+
+![Font color in light element](/images/cow-ui-fontcolor__dark.png)
 
 
 ## Detalhe da compra
