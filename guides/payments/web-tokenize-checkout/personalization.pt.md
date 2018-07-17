@@ -10,7 +10,7 @@
 
 #### Texto
 
-Por padrão o botão contém o texto *"Pagar"*. Você pode modificar o texto do botão agregando o atributo `"data-button-label"` ao fragmento de código javascript. Por exemplo:
+Por padrão o botão contém o texto *"Pagar"*. Você pode modificar o texto do botão adicionando o atributo `"data-button-label"` ao fragmento de código javascript. Por exemplo:
 
 ```html
 data-button-label="Comprar"
@@ -42,21 +42,21 @@ button.mercadopago-button {
 ![Payment button - Modified CSS](/images/paybutton-modified-css.png)
 
 
-## Colores en la interfaz
+## Cores na interface
 
 ### Elementos
 
-Los elementos que pueden personalizarse incluye *botones, campos de ingreso de datos, elementos de transiciones y bordes.*
+Os elementos que podem ser personalizados incluem *botões, campos de ingresso de dados, elementos de transições e bordas.*
 
-#### Estado por defecto
+#### Status padrão
 
 ![Standard elements](/images/cow-ui-elements__pt.png)
 
-#### Personalización
+#### Personalização
 
-Puedes modificar el color de algunos elementos de la interfaz, agregando el atributo `data-elements-color` al fragmento de código HTML.
+É possível modificar a cor de alguns elementos da interface, adicionando o atributo `data-elements-color` ao fragmento de código HTML.
 
-El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+O valor do atributo deverá ser em formato hexadecimal. Por exemplo:
 
 ```html
 data-elements-color="#c0392b"
@@ -65,17 +65,17 @@ data-elements-color="#c0392b"
 ![Custom elements](/images/cow-ui-elements--custom__pt.png)
 
 
-### Encabezado
+### Cabeçalho
 
-#### Estado por defecto
+#### Status padrão
 
 ![Standard header](/images/cow-ui-header__pt.png)
 
-#### Personalización
+#### Personalização
 
-Puedes modificar el color del encabezado agregando el atributo `data-header-color` al fragmento de código HTML.
+É possível modificar a cor do cabeçalho adicionando o atributo `data-header-color` ao fragmento de código HTML.
 
-El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+O valor do atributo deverá ser em formato hexadecimal. Por exemplo:
 
 ```html
 data-header-color="#c0392b"
@@ -158,7 +158,7 @@ data-summary-shipping="10"
 >
 > Nota
 >
-> No caso em que o envio especificado seja *"0"* (zero), mostrará automáticamente o texto *"Gratis"*.
+> No caso em que o envio especificado seja *"0"* (zero), mostrará automaticamente o texto *"Grátis"*.
 
 
 #### Recarga
