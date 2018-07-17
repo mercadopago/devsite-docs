@@ -90,7 +90,7 @@ data-header-color="#c0392b"
 
 ### Color de texto
 
-El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste del color](https://24ways.org/2010/calculating-color-contrast).
+El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
 
 Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
 
