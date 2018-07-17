@@ -48,15 +48,20 @@ button.mercadopago-button {
 
 ### Elementos
 
-Los elementos que pueden personalizarse incluye *botones, campos de ingreso de datos, elementos de transiciones y bordes.*
-
 #### Estado por defecto
 
 ![Standard elements](/images/cow-ui-elements.png)
 
 #### Personalización
 
-Puedes modificar el color de algunos elementos de la interfaz, agregando el atributo `data-elements-color` al fragmento de código HTML.
+Los elementos que pueden personalizarse son:
+
+- Botones
+- Campos de ingreso de datos: inputs
+- Elementos de transiciones: spinners y barras de progreso
+- Bordes
+
+Puedes modificar el color de esos elementos agregando el atributo `data-elements-color` al fragmento de código HTML.
 
 El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 
