@@ -91,15 +91,23 @@ data-header-color="#c0392b"
 ![Custom header](/images/cow-ui-header--custom.png)
 
 
-### Color de Texto
+### Color de texto
 
 El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste del color](https://24ways.org/2010/calculating-color-contrast).
 
-Por ejemplo, para un color de elemento *claro*, el color del texto sera *negro* o `#000`:
+Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
+
+```html
+data-elements-color="#81ecec" <!-- Color claro -->
+```
 
 ![Font color in light element](/images/cow-ui-fontcolor__light.png)
 
-Para un color de elementos *oscuro*, el color del texto sera *blanco* o `#fff`:
+Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
+
+```html
+data-elements-color="#8e44ad" <!-- Color oscuro -->
+```
 
 ![Font color in dark element](/images/cow-ui-fontcolor__dark.png)
 
