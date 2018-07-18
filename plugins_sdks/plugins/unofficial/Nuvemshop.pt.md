@@ -13,7 +13,7 @@
 
 Nuvem Shop permite operar Mercado Pago na seguinte modalidade:
 
-### Checkout Redirect
+### Web Checkout
 
 Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
 
@@ -25,7 +25,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 ## Como habilitar o Mercado Pago
 
-1. Acessar o administrador se sua loja na plataforma.
+1. Acessar o administrador de sua loja na plataforma.
 2. No menu configurações, selecionar a opção **MEIOS DE PAGAMENTO**
 
     ![NuvemShop Configuracao](/images/NuvemShopmeiodepagamento1.png)
@@ -39,7 +39,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
     ![NuvemShop Configuracao](/images/NuvemShopativarMP2.png)
 
-5. Será redirecionado para uma página do Mercado Pago para poder realizar permitir a conexão entre a Nuvem Shop Plataforma e sua conta Mercado Pago, realizando todas as configurações necessárias.
+5. Será redirecionado para uma página do Mercado Pago para poder permitir a conexão entre a Nuvem Shop Plataforma e sua conta Mercado Pago, realizando todas as configurações necessárias.
 
     ![NuvemShop Configuracao](/images/NuvemShoppermitirMP.png)
 
@@ -47,4 +47,3 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 
 Com isso o Mercado pago está instalado e **ativado**.
-
