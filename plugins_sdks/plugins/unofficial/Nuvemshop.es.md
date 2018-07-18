@@ -1,12 +1,12 @@
-# Nube Shop
+# Tienda nube
 
-## Qué es la nube de compras
+## ¿Qué es Tienda Nube?
 
-[Nube Shop] (www.nuvemshop.com.br/) es una plataforma de ecommerce que ofrece la integración con Mercado Pago como medio de pago.
+[Tienda Nube] (www.nuvemshop.com.br/) es una plataforma de ecommerce que ofrece la integración con Mercado Pago como medio de pago.
 
-## ¿Cómo puedo operar con Mercado Pago en la Nube Shop
+## ¿Cómo puedo operar con Mercado Pago en la Tienda Nube
 
-Nube Shop permite operar Mercado Pago en la siguiente modalidad:
+Tienda Nube permite operar Mercado Pago en la siguiente modalidad:
 
 ### Web Checkout
 
@@ -14,29 +14,29 @@ Recibir pagos en su tienda utilizando el checkout del propio Mercado Pago, en es
 
 ## Cuenta Mercado Pago
 
-Antes de comenzar la configuración, es necesario que tenga una cuenta válida en el ** Mercado Pago **, si no lo tiene, puede realizar el registro accediendo al [formulario de registro] (https://www.mercadopago.com.br/ registro-mp? mode = mp).
+Antes de comenzar la configuración, es necesario que tenga una cuenta válida en el ** Mercado Pago **, si no lo tiene, puede realizar el registro accediendo al [formulario de registro] (https://www.mercadopago.com.ar/registration-mp?mode=mp).
 
-Si desea saber más sobre el ** Mercado Pago ** acceda a nuestra página principal (https://www.mercadopago.com.br/).
+Si desea saber más sobre el ** Mercado Pago ** acceda a nuestra página principal (https://www.mercadopago.com.ar/).
 
 ## Cómo habilitar el Mercado Pago
 
 1. Acceder al administrador de tu tienda en la plataforma.
 2. En el menú configuración, seleccione la opción ** MEDIOS DE PAGO **
 
-    ![NubeShop Configuracion](/images/NuvemShopmeiodepagamento1.png)
+    ![Tienda Nube Configuracion](/images/NuvemShopmeiodepagamento1.png)
    
 
 3. Haga clic en el botón ** ACTIVAR ** en el marco del Mercado Pago.
 
-    ![NubeShop Configuracion](/images/NuvemShopativarMP.png)
+    ![Tienda Nube Configuracion](/images/NuvemShopativarMP.png)
 
 4. Elija las formas de pago: Tarjeta de Crédito y Boleto
 
-    ![NubeShop Configuracion](/images/NuvemShopativarMP2.png)
+    ![Tienda Nube Configuracion](/images/NuvemShopativarMP2.png)
 
-5. Se redirirá a una página de Mercado Pago para poder permitir la conexión entre la Nube Shop Plataforma y su cuenta Mercado Pago, realizando todas las configuraciones necesarias.
+5. Se redirirá a una página de Mercado Pago para poder permitir la conexión entre la tienda Nube Plataforma y su cuenta Mercado Pago, realizando todas las configuraciones necesarias.
 
-    ![NubeShop Configuracion](/images/NuvemShoppermitirMP.png)
+    ![Tienda Nube Configuracion](/images/NuvemShoppermitirMP.png)
 
 6. Después de hacer clic en ** PERMITIR ** usted será redirigido de vuelta a la sección administrativa de la plataforma, en la pantalla de ajustes del módulo Mercado Pago.
 

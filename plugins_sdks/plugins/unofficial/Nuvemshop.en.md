@@ -1,18 +1,18 @@
-## How can I operate with Paid Market in the Cloud Shop
+## How can I operate with Paid Market in the Tienda Nube
 
-Cloud Shop allows to operate Mercado Pago in the following modality:
+Tienda Nube allows to operate Mercado Pago in the following modality:
 
 ### Web Checkout
 
-Receive payments in your store using the checkout of Mercado Pago itself, in this model the user (client) will be redirected to a page of Mercado Pago to finalize their purchase.
+Receive payments in your store using the Mercado Pago's checkout, in this model the user (client) will be redirected to a Mercado Pago site to finalize their purchase.
 
 ## Payment Market Account
 
-Before starting the configuration, it is necessary that you have a valid account in the ** Payment Market **, if you do not have it, you can make the registration by accessing the [registration form] (https://www.mercadopago.com.br/registration-mp?mode=mp).
+Before starting the configuration, it is necessary that you have a valid account in the ** Mercado Pago **, if you do not have it, you can make the registration by accessing the [registration form] (https://www.mercadopago.com.ar/registration-mp?mode=mp).
 
-If you want to know more about ** Mercado Pago ** visit our [home page] (https://www.mercadopago.com.br/).
+If you want to know more about ** Mercado Pago ** visit our [home page] (https://www.mercadopago.com.ar/).
 
-## How to enable the Paid Market
+## How to enable the Mercado Pago
 
 1. Access the administrator of your store on the platform.
 2. In the settings menu, select the option ** MEANS OF PAYMENT **
@@ -20,7 +20,7 @@ If you want to know more about ** Mercado Pago ** visit our [home page] (https:/
     ![CloudShop Configuration](/images/NuvemShopmeiodepagamento1.png)
 
 
-3. Click the ** ACTIVATE ** button on the Payment Market table.
+3. Click the ** ACTIVATE ** button on the Mercado Pago table.
 
     ![CloudShop Configuration](/images/NuvemShopativarMP.png)
 
@@ -29,7 +29,7 @@ If you want to know more about ** Mercado Pago ** visit our [home page] (https:/
     ![CloudShop Configuration](/images/NuvemShopativarMP2.png)
 
 
-5. You will be redirected to a Paid Market page in order to allow the connection between the Cloud Shop Platform and your Mercado Pago account, making all necessary settings
+5. You will be redirected to a Mercado Pago page in order to allow the connection between the Cloud Shop Platform and your Mercado Pago account, making all necessary settings
 
 ![CloudShop Configuration](/images/NuvemShoppermitirMP.png)
 
@@ -38,4 +38,4 @@ If you want to know more about ** Mercado Pago ** visit our [home page] (https:/
 6. After clicking ** PERMIT ** you will be redirected back to the platform's administrative section in the Mercado Pago module settings screen.
 
 
-With this the Paid Marketplace is installed and ** enabled **.
+With this the Mercado Pago is installed and ** enabled **.
