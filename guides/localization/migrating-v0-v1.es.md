@@ -1,23 +1,23 @@
-# Migración de la versión V0 a V1 de la API de Mercado Pago
+# Migración de la versión versión 0 a versión 1 de la API de Mercado Pago
 
 En Mercado Pago buscamos siempre optimizar nuestra plataforma ofreciendo la más alta eficiencia y seguridad en el procesamiento de pagos.
 
-En el momento, estamos trabajando en la migración de nuestra API V0 a la V1 con el objetivo de mantener los más altos estándares de calidad.
-En consecuencia, el Mercado Pago requerirá la utilización de la nueva versión de la API que se utilice a partir del 30 de julio de 2018.
+En esta ocasión, estamos trabajando en la migración de nuestra API versión 0 a la versión 1 con el objetivo de mantener los más altos estándares de calidad.
+En consecuencia, Mercado Pago requerirá la utilización de la nueva versión de la API a partir del 30 de julio de 2018.
 
-Después de ese plazo, la versión V0 se desactivará y cualquier intento de conexión que se utiliza con la función fallará.
+Después de ese plazo, la versión 0 se desactivará y cualquier intento de conexión con los recursos de esta versión fallarán.
 
-### Puntos para ser tenidos en cuenta
+### A tener en cuenta:
 
 * La modificación tendrá efecto **a partir del 30 de julio de 2018.**
-* Si utiliza sólo los botones de pago de Mercado Pago, este cambio no afectará a usted.
-* Si utiliza sólo el Mercado Shops, este cambio no le afectará.
+* Si utiliza sólo los botones de pago de Mercado Pago, este cambio no lo afectará.
+* Si utiliza sólo Mercado Shops, este cambio no lo afectará.
 * Si tiene su **propio e-commerce, consulte a su equipo de TI**.
 * Si **se trabaja con alguna plataforma de comercio electrónico**, por ejemplo: Magento, Shopify u otros **Consulte su soporte técnico**.
 
 ## Recursos migrados
 
-La tabla siguiente trae una relación de los recursos migrados.
+La siguiente tabla contiene a los recursos migrados y sus equivalentes.
 
 | Uso                     | Método | URI del recurso deprecado              | URI del recurso equivalente      | Referencia                                                      |
 |-------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
@@ -51,8 +51,8 @@ curl -X POST \
         }'
 ```
 
-Si usted necesita hacer adaptaciones, **es importante que usted recuerde hacer este cambio en tiempo hábil, porque de lo contrario, es muy probable que sus conexiones con el Mercado Pago empiecen a fallar.**
+Si usted necesita hacer adaptaciones, **es importante que usted recuerde hacer este cambio antes de la fecha límite, porque de lo contrario, es muy probable que sus conexiones con Mercado Pago empiecen a fallar.**
 
-Si tiene alguna duda o necesita ayuda para completar con éxito este cambio, por favor, póngase en contacto con nosotros a través del siguiente [formulario](https://www.mercadopago.com.br/developers/es/support).
+Si tiene alguna duda o necesita ayuda para completar con éxito este cambio, por favor, póngase en contacto con nosotros a través del siguiente [formulario](/support).
 
 Equipo de Mercado Pago.
