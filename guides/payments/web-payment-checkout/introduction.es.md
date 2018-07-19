@@ -42,7 +42,7 @@ Navegador | Soporte
 
 Integrar el *Web Payment Checkout* es muy fácil:
 
-1. Crea una preferencia de pago.
+1. [Crea una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md) y [obtén tu public key](https://www.mercadopago.com.ar/account/credentials).
 2. Lleva a tu comprador al checkout.
 3. Entérate del pago escuchando las notificaciones que te enviamos.
 
