@@ -9,14 +9,14 @@ Si no tienes una cuenta, haz clic en **"Inscríbete"**. Rellene el formulario de
 
 ![painelMercadoPago](/images/painelMercadoPago.gif)
 
-##Accdet Credenciales
+## Accdet Credenciales
 
 Una vez Autenticado en su cuenta de Mercado Pago, acceda a lo siguiente link: [https://www.mercadopago.com/mla/account/credentials/](https://www.mercadopago.com/mla/account/credentials/).
 Usted accede a la página de credenciales de su cuenta.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)
 
-En esta página usted tendrá acceso a las claves de configuración de su cuenta Mercado Pago para instalar el Checkout Transparente o Checkout Básico (Redirect, LightBox o Iframe) en su Tienda Virtual.
+En esta página usted tendrá acceso a las claves de configuración de su cuenta Mercado Pago para instalar la integración por API o Web Checkout (Redirect, LightBox o Iframe) en su Tienda Virtual.
 
 > NOTE
 >
@@ -41,4 +41,4 @@ Haga clic en "Quiero ir a la producción" para acceder al formulario.
 * Marque los **"checks"** de las 3 afirmaciones;
 * Haga clic en **"Enviar"**.
 
-Listo! Usted será redirigido a la página inicial de las credenciales, y su Checkout Transparente configurado en su tienda virtual estará en condiciones de transacción.
+Listo! Usted será redirigido a la página inicial de las credenciales, y su integración por API configurada en su tienda virtual estará en condiciones de transacción.
