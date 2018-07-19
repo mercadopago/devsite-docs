@@ -2,9 +2,9 @@
 
 ## ¿Qué es Tienda Nube?
 
-[Tienda Nube] (www.nuvemshop.com.br/) es una plataforma de ecommerce que ofrece la integración con Mercado Pago como medio de pago.
+[Tienda Nube] (https://www.tiendanube.com/) es una plataforma de ecommerce que ofrece la integración con Mercado Pago como medio de pago.
 
-## ¿Cómo puedo operar con Mercado Pago en la Tienda Nube
+## ¿Cómo puedo operar con Mercado Pago en Tienda Nube?
 
 Tienda Nube permite operar Mercado Pago en la siguiente modalidad:
 
@@ -14,9 +14,9 @@ Recibir pagos en su tienda utilizando el checkout de Mercado Pago, en este model
 
 ## Cuenta Mercado Pago
 
-Antes de comenzar la configuración, es necesario que tenga una cuenta válida en ** Mercado Pago **, si no lo tiene, puede realizar el registro accediendo al [formulario de registro] (https://www.mercadopago.com.ar/registration-mp?mode=mp).
+Antes de comenzar la configuración, es necesario que tenga una cuenta válida en ** Mercado Pago **, si no lo tiene, puede realizar el registro accediendo al [formulario de registro] (https://www.mercadopago.com)
 
-Si desea saber más sobre  ** Mercado Pago ** acceda a nuestra página principal (https://www.mercadopago.com.ar/).
+Si desea saber más sobre  ** Mercado Pago ** acceda a nuestra página principal (https://www.mercadopago.com/).
 
 ## Cómo habilitar Mercado Pago en Tienda Nube
 
