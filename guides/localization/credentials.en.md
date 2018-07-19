@@ -1,17 +1,17 @@
-#Credentials
+# Credentials
 
-The Mercado Pago has two types of credential pairs, **_CLIENT_ID_** | **_CLIENT_SECRET_** e **_PUBLIC_KEY_** | **_ACCESS_TOKEN_**. These credentials serve as a kind of personal key to create your payment method and integrate the Mercado Pago with your online store.
+The Mercado Pago has two types of credential pairs, **_CLIENT_ID_** | **_CLIENT_SECRET_** and **_PUBLIC_KEY_** | **_ACCESS_TOKEN_**. These credentials serve as a kind of personal key to create your payment method and integrate the Mercado Pago with your online store.
 
-##Getting your Credentials
+## Getting your Credentials
 
-##Access Mercado Pago account
+## Access Mercado Pago account
 
-To obtain your credentials, first access your Mercado Pago account at the link [https://www.mercadopago.com.br/](https://www.mercadopago.com.br/).
+To obtain your credentials, first access your Mercado Pago account at the link [https://www.mercadopago.com/](https://www.mercadopago.com.br/).
 If you do not have an account, create one by clicking **"Register"**. Fill out the form according to the type of account you want. Remember that this account will be linked to your virtual store.
 
 ![painelMercadoPago](/images/painelMercadoPago.gif)
 
-##Access Credentials
+## Access Credentials
 
 Once Authenticated in your Mercado Pago account, access the following link [https://www.mercadopago.com/mlb/account/credentials/](https://www.mercadopago.com/mlb/account/credentials/).
 You'll be taken to the credentials page of your account.
@@ -24,10 +24,10 @@ On this page you will have access to the configuration keys of your Mercado Pago
 >
 > Note
 >
-> To set up Transparent Checkout you will need to enter the credentials **_PUBLIC_KEY_** e **_ACCESS_TOKEN_**.
-> To configure the Basic Checkout (Redirect, LightBox or Iframe) you will need to enter the credentials **_CLIENT_ID_** e **_CLIENT_SECRET_**.
+> To set up Transparent Checkout you will need to enter the credentials **_PUBLIC_KEY_** and **_ACCESS_TOKEN_**.
+> To configure the Basic Checkout (Redirect, LightBox or Iframe) you will need to enter the credentials **_CLIENT_ID_** and **_CLIENT_SECRET_**.
 
-##Form I want to go to Production
+## Form I want to go to Production
 
 By choosing the Transparent Checkout option, you will need to fill out the "I want to go to production" form, otherwise your Checkout will be disabled to receive payments.
 Click "I want to go to production" to access the form.
