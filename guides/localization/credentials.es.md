@@ -1,11 +1,11 @@
-#Credenciales
+# Credenciales
 
-El Mercado Pago tiene dos tipos de pares de credenciales, **CLIENT_ID** | **CLIENT_SECRET** e **PUBLIC_KEY** | **ACCESS_TOKEN**. Estas credenciales sirven como un tipo de clave personal para que usted cree su método de pago e integre el Mercado Pago con su tienda virtual. El siguiente es el procedimiento para obtener las credenciales.
+Mercado Pago tiene dos tipos de pares de credenciales, **CLIENT_ID** | **CLIENT_SECRET** y **PUBLIC_KEY** | **ACCESS_TOKEN**. Estas credenciales sirven como un tipo de clave personal para que usted cree su método de pago e integre el Mercado Pago con su tienda virtual. El siguiente es el procedimiento para obtener las credenciales.
 
-##Acceder a la cuenta de Mercado Pago
+## Acceder a la cuenta de Mercado Pago
 
-Para obtener sus credenciales, primero acceda a su cuenta de Mercado Pago en el link [https://www.mercadopago.com.ar/](https://www.mercadopago.com.ar/).
-Si no tienes una cuenta, clic en **"Inscríbete"**. Rellene el formulario de acuerdo con el tipo de cuenta que desee. Recuerde que esta cuenta estará vinculada a su tienda virtual.
+Para obtener sus credenciales, primero acceda a su cuenta de Mercado Pago en el link [https://www.mercadopago.com/](https://www.mercadopago.com.ar/).
+Si no tienes una cuenta, haz clic en **"Inscríbete"**. Rellene el formulario de acuerdo con el tipo de cuenta que desee. Recuerde que esta cuenta estará vinculada a su tienda virtual.
 
 ![painelMercadoPago](/images/painelMercadoPago.gif)
 
@@ -22,12 +22,12 @@ En esta página usted tendrá acceso a las claves de configuración de su cuenta
 >
 > Nota
 >
-> Para configurar el Checkout Transparente será necesario informar las credenciales **PUBLIC_KEY** e **ACCESS_TOKEN**.
-> Para configurar el Checkout Básico (Redirect, LightBox o Iframe) será necesario informar las credenciales **CLIENT_ID** e **CLIENT_SECRET**.
+> Para configurar la integración por API será necesario informar las credenciales **PUBLIC_KEY** y **ACCESS_TOKEN**.
+> Para configurar el Web Checkout (Redirect, LightBox o Iframe) será necesario informar las credenciales **CLIENT_ID** y **CLIENT_SECRET**.
 
-##Formulario Quiero ir a Producción
+## Formulario Quiero ir a Producción
 
-Al elegir la opción de Checkout Transparente, será necesario rellenar el formulario "Quiero ir a producción", de lo contrario su Checkout quedará inhabilitado para recibir pagos.
+Al elegir la opción de integración por API, será necesario rellenar el formulario "Quiero ir a producción", de lo contrario su integración quedará inhabilitado para recibir pagos.
 Haga clic en "Quiero ir a la producción" para acceder al formulario.
 
 ![queroIrParaProducao](/images/queroIrParaProducao.gif)
