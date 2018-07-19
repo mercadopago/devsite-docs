@@ -1,4 +1,4 @@
-#Credenciais
+# Credenciais
 
 O Mercado Pago possui dois tipos de pares de credenciais, **CLIENT_ID** | **CLIENT_SECRET** e **PUBLIC_KEY** | **ACCESS_TOKEN**. Essas credenciais servem como um tipo de chave pessoal para que você crie seu método de pagamento e integre o Mercado Pago com sua loja virtual. Segue abaixo procedimento para obtenção das Credenciais.
 
@@ -9,25 +9,25 @@ Caso não possua uma conta crie uma clicando em **"Cadastre-se"**. Preencha o fo
 
 ![painelMercadoPago](/images/painelMercadoPago.gif)
 
-##Acessar Credenciais
+## Acessar Credenciais
 
 Uma vez Autenticado em sua conta Mercado Pago, acesse o seguinte link: [https://www.mercadopago.com/mlb/account/credentials/](https://www.mercadopago.com/mlb/account/credentials/).
 Você acessará a página de credenciais da sua conta.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)
 
-Nesta página você terá acesso as chaves de configuração da sua conta Mercado Pago para instalar o Checkout Transparente ou Checkout Básico (Redirect, LightBox ou Iframe) na sua Loja Virtual.
+Nesta página você terá acesso as chaves de configuração da sua conta Mercado Pago para instalar a integração por API ou Web Checkout (Redirect, LightBox ou Iframe) na sua Loja Virtual.
 
 > NOTE
 >
 > Nota
 >
-> Para configurar o Checkout Transparente será necessário informar as credencias **PUBLIC_KEY** e **ACCESS_TOKEN**.
-> Para configurar o Checkout Básico (Redirect, LightBox ou Iframe) será necessário informar as credencias **CLIENT_ID** e **CLIENT_SECRET**.
+> Para configurar a integração por API será necessário informar as credencias **PUBLIC_KEY** e **ACCESS_TOKEN**.
+> Para configurar o Web Checkout (Redirect, LightBox ou Iframe) será necessário informar as credencias **CLIENT_ID** e **CLIENT_SECRET**.
 
-##Formulário Quero ir para Produção
+## Formulário Quero ir para Produção
 
-Ao escolher a opção de Checkout Transparente, será necessário preencher o formulário “Eu quero ir para produção”, caso contrario seu Checkout ficará inabilitado para receber pagamentos.
+Ao escolher a opção de integração por API, será necessário preencher o formulário “Eu quero ir para produção”, caso contrario sua integração ficará inabilitado para receber pagamentos.
 Clique em “Eu quero ir para produção” para acessar o formulário.
 
 ![queroIrParaProducao](/images/queroIrParaProducao.gif)
@@ -41,4 +41,4 @@ Clique em “Eu quero ir para produção” para acessar o formulário.
 * Marque os **“checks”** das 3 afirmações;
 * Clicar em **“Enviar”**.
 
-Pronto! Você será redirecionado para a página inicial das credenciais, e seu Checkout Transparente configurado na sua loja virtual estará apto a transacionar.
+Pronto! Você será redirecionado para a página inicial das credenciais, e sua integração configurada na sua loja virtual estará apta a transacionar.
