@@ -4,19 +4,19 @@
       - global
 ---
 
-# Consideraciones IVA Colombia
+# Considerações IVA Colômbia
 
 > NOTE
 >
 > Nota
 >
-> Sólo para Colombia.
+> Somente para Colômbia.
 
-El IVA (Impuesto al Valor Agregado) es una carga fiscal que recae sobre la venta de productos o la prestación de servicios dentro del territorio colombiano. Algunos productos así como algunos servicios están excluidos del IVA y otros tienen tarifas reducidas. En la actualidad, la tarifa general de este impuesto es del 19%.
+O IVA (Imposto ao Valor Agregado) é uma carga fiscal que recai sobre a venda de produtos ou a prestação de serviços dentro do território colombiano. Alguns produtos assim como alguns serviços estão excluídos do IVA e outros possuem tarifas reduzidas. Na atualidade, a tarifa geral deste imposto é de 19%.
 
-A efectos de poder procesar tu IVA correctamente, te permitimos enviar el monto total (transaction_amount), neto (net_amount) e IVA (taxes) al momento de Realizar el cobro a través de la API.
+Para processar corretamente o IVA, permitimos o envio do valor total (transaction_amount), valor líquido (net_amount) e IVA (taxes) no momento de realizar a cobrança através da API.
 
-En este ejemplo te mostramos cómo enviar los datos:
+Neste exemplo te mostramos como enviar os dados:
 
 ```curl
 curl -X POST \
@@ -40,4 +40,4 @@ curl -X POST \
         }'
 ```
 
-El IVA debe ser un monto determinado, no envíes un porcentaje. En caso que no envíes los atributos net_amount y taxes, se aplicará el IVA general (19%).
+O IVA deve ser um valor determinado, não envie uma porcentagem. Caso não envie os atributos _net_amount_ e _taxes_, se aplicará o IVA geral (19%).
