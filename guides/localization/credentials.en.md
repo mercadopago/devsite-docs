@@ -18,18 +18,18 @@ You'll be taken to the credentials page of your account.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)
 
-On this page you will have access to the configuration keys of your Mercado Pago account to install the Transparent Checkout or Basic Checkout (Redirect, LightBox or Iframe) in your Virtual Store.
+On this page you will have access to the configuration keys of your Mercado Pago account to install the API integration or Web Checkout (Redirect, LightBox or Iframe) in your Virtual Store.
 
 > NOTE
 >
 > Note
 >
-> To set up Transparent Checkout you will need to enter the credentials **_PUBLIC_KEY_** and **_ACCESS_TOKEN_**.
-> To configure the Basic Checkout (Redirect, LightBox or Iframe) you will need to enter the credentials **_CLIENT_ID_** and **_CLIENT_SECRET_**.
+> To set up API integration you will need to enter the credentials **_PUBLIC_KEY_** and **_ACCESS_TOKEN_**.
+> To configure the Web Checkout (Redirect, LightBox or Iframe) you will need to enter the credentials **_CLIENT_ID_** and **_CLIENT_SECRET_**.
 
 ## Form I want to go to Production
 
-By choosing the Transparent Checkout option, you will need to fill out the "I want to go to production" form, otherwise your Checkout will be disabled to receive payments.
+By choosing the API integration option, you will need to fill out the "I want to go to production" form, otherwise your integration will be disabled to receive payments.
 Click "I want to go to production" to access the form.
 
 ![queroIrParaProducao](/images/queroIrParaProducao.gif)
@@ -43,4 +43,4 @@ Click "I want to go to production" to access the form.
 * Check the **checks** of the 3 statements;
 * Click "Submit".
 
-Ready! You will be redirected to the credentials home page, and your Transparent Checkout set up in your online store will be able to transact.
+Ready! You will be redirected to the credentials home page, and your API integration set up in your online store will be able to transact.
