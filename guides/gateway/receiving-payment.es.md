@@ -104,12 +104,10 @@ Para obtener las promociones y cuotas disponibles:
 Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount,
-    "processing_mode": "gateway",
-    "merchant_account_id": "ID"
 }, setInstallmentInfo);
 ```
 
-La respuesta de la API en caso de tener prendido tanto gateway como agregador van a ser items de cada modelo (gateway y agregador) que cuentan con la información de las cuotas disponibles con el interés calculado indicando el valor a pagar. 
+La respuesta de la API en caso de tener prendido tanto gateway como agregador van a ser items de cada modelo que cuentan con la información de las cuotas disponibles con el interés calculado indicando el valor a pagar. 
 
 Se va a tener que seleccionar por cual de los 2 modos se desea ir pasandolo como atributo en el pago:
 
