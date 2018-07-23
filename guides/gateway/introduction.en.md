@@ -2,7 +2,7 @@
 
 Mercado Pago offers you the possibility of operating with your own merchant numbers. This processing mode is called Gateway.
 
-##Considerations
+## Considerations
 
 * To be able to use this processing mode in the production mode:
 	* You must be registered with the respective acquirers of your country.
