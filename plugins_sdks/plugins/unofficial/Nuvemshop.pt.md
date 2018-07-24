@@ -1,8 +1,3 @@
----
-  sites_supported:
-      - mlb
----
-
 # Nuvem Shop
 
 ## O que é Nuvem Shop
