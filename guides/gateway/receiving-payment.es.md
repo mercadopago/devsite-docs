@@ -73,7 +73,8 @@ La respuesta esperada será la siguiente:
   "processing_mode": "gateway",
   "merchant_account_id": "#hashMerchantAccountID",
   "acquirer": "visa",
-  "merchant_number": "1234567"
+  "merchant_number": "1234567",
+  "acquirer_reconciliation":{...}
 }
 ```
 
