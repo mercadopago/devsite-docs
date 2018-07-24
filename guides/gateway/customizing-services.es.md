@@ -4,6 +4,12 @@ Cada número de comercio configurado en la plataforma (`merchant_account_id`) te
 
 Los servicios utilizados pueden verse en la respuesta de cada pago. Dichos servicios [varían según el país](/guides/localization/gateway.es.md) y adicionalmente pueden ser modificados en cada pago.
 
+> NOTE
+>
+> Nota
+>
+> Prender los servicios tiene un costo adicional asociado. Por cualquier duda consultar al asesor de la cuenta.
+
 A continuación se puede ver un ejemplo
 
 ## Pago por defecto
