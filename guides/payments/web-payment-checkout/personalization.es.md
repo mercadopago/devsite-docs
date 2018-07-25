@@ -68,6 +68,11 @@ Los atributos que pueden agregarse y modificarse son los siguientes.
 - Para modificar el título "Productos": `data-summary-product-label`
 - Para modificar el título "Descuento": `data-summary-discount-label`
 
+> NOTE
+>
+> Nota
+>
+> Si bien todos estos atributos numéricos pueden ser modificados, el checkout no realiza sumas o restas de los números. Es decir, que es responsabilidad de quien integra el checkout que el total de la suma de los valores modificados sea igual al total definido en `data-transaction-amount`.
 
 #### Productos
 
