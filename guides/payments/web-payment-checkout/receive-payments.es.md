@@ -30,6 +30,8 @@ Incluye el siguiente código en el lugar donde va a estar ubicado el botón dent
 
 El *Web Payment Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del fragmento de código HTML (En el ejemplo: **/procesar-pago**) con el estado del pago.
 
+Puedes usar estos datos para redirigir el flujo a una pantalla propia dependiendo del estado de pago.
+
 #### Los datos son:
 
 Dato | Descripción
