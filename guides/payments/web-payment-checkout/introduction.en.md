@@ -54,7 +54,3 @@ Para más información visita la sección [Recibir pagos](/guides/payments/web-p
 ### Tarjetas de prueba
 
 Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](/guides/payments/api/testing.es.md).
-
-### Promociones
-
-Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com/mla/ayuda/banners).
