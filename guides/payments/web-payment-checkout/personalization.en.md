@@ -1,6 +1,6 @@
 
 
-# Web Tokenize Checkout - Personalización
+# Web Payment Checkout - Personalización
 
 ## Botón
 
@@ -47,7 +47,7 @@ button.mercadopago-button {
 
 ### Estado por defecto
 
-![Summary Default](/images/summary-default.png)
+![Summary Default](/images/cow-summary.png)
 
 
 ### Personalización
