@@ -14,29 +14,22 @@ Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https:
 [[[
 ```php
 <?php  
-  MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
-  MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 ?>
 ```
 ```java
-MercadoPago.SDK.setClientId("ENV_CLIENT_ID");
-MercadoPago.SDK.setClientSecret("ENV_CLIENT_SECRET");
+MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 ```
 ```node
-mercadopago.configure({
-  client_id: 'ENV_CLIENT_ID',
-  client_secret: 'ENV_CLIENT_SECRET'
-});
+mercadopago.configurations.setAccessToken(config.access_token);
 ```
 ```ruby
-MercadoPago::SDK.client_id = "ENV_CLIENT_ID"
-MercadoPago::SDK.client_secret = "ENV_CLIENT_SECRET"
+MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
 ```
 ```csharp
 using MercadoPago;
 // ...
-MercadoPago.SDK.ClientId = "ENV_CLIENT_ID";
-MercadoPago.SDK.ClientSecret = "ENV_CLIENT_SECRET";
+MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
 // ...
 ```
 ]]]
