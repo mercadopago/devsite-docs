@@ -1,23 +1,25 @@
-# Cancelamentos e Devoluções
+# Devoluções e cancelamentos
 
 Existem diferentes situações que podem dar origem ao cancelamento de uma venda:
 
-	•	Se o status do pagamento for `pending` ou `in_process`, o valor ainda não foi cobrado do comprador, então deve-se realizar um cancelamento.
+	•	Se o status do pagamento for `pending` ou `in_process`, o valor ainda não foi cobrado do comprador, então pode-se realizar um cancelamento.
 
-	•	Se o `status` do pagamento for `approved`, significa que o comprador efetuou o pagamento, e a devolução deverá ser realizada.
+	•	Se o `status` do pagamento for `approved`, significa que o comprador efetuou o pagamento, e a devolução poderá ser realizada caso necessário.
 
 
 ## Cancelamentos
 
 - Os cancelamentos podem ser realizados somente com status pending e in process
 - É importante para meios de pagamento offline
-- Os meios de pagamento offline não expiram sozinhos, devem ser cancelados.
+- Os meios de pagamento offline **não expiram sozinhos**, devem ser cancelados.
 
 Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`. Assim que forem cancelados, não poderão mais ser aprovados e o estoque pendente de confirmação poderá ser liberado.
 
 Os cancelamentos são utilizados principalmente com **meios de pagamento em dinheiro**.
 
-Eles não expiram automaticamente, portanto, é necessário que realize seu cancelamento.
+Embora os `tickets` dos meios de pagamento offline expirem após 5 dias, o usuário pode gerá-los novamente inserindo a transação em sua conta do Mercado Pago.
+
+Para cancelá-los efetivamente e não gera-los novamente por mais 5 dias, evitando problemas de retenção de estoque por exemplo, é necessário que você execute o cancelamento.
 
 Para realizar o cancelamento, faça a seguinte requisição enviando o `status` `cancelled`:
 
@@ -66,7 +68,8 @@ curl -X PUT \
 Deve haver saldo suficiente disponível em sua conta para efetuar a devolução do valor do pagamento com sucesso. Caso contrário, obterá um erro `400 Bad Request`.
 
 Caso o comprador tenha efetuado o pagamento com cartão, o valor será devolvido no próprio cartão.
-Para pagamentos realizados a partir de outros meios, o valor a ser devolvido será depositado na conta Mercado Pago do comprador. Caso não possua uma conta, criaremos uma utilizando seu e-mail.
+
+Para pagamentos realizados a partir de outros meios, o valor a ser devolvido será depositado na conta Mercado Pago do comprador. Caso não possua uma conta, criaremos uma utilizando o e-mail que foi utilizado para realizar o pagamento.
 
 ### Efetue a devolução integral do pagamento
 
@@ -81,6 +84,12 @@ $mp = new MP('SECRET_ACCESS_TOKEN');
 $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 ?>
 ```
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
+```
+
 > NOTE
 >
 > Nota
@@ -131,6 +140,12 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 ```ruby
 payment = MercadoPago::Payment.load(paymnentId)
 payment.refund(10.5);
+```
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN' \
+-d '{"amount":10.5}'
 ```
 ]]]
 
