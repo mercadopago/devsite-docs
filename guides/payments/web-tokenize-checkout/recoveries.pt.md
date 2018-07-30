@@ -4,7 +4,7 @@ No caso de um pagamento ser rejeitado, você pode oferecer ao comprador a opçã
 
 Neste momento receberá como resposta o estado do pagamento *rejeitado* (`rejected`) e é recomendado informar ao usuário tal estado.
 
-Junto com a comunicação você pode oferecer também a possibilidade de voltar a inserir os datos do cartão, **usando novamente o _Web Tokenize Checkout_**. Também tem a possibilidade de [trocar o texto do botão](/guides/payments/web-tokenize-checkout/personalization.pt.md) mediante o atributo `data-button-label` para complementar a comunicação.
+Junto com a comunicação você pode oferecer também a possibilidade de voltar a inserir os dados do cartão, **usando novamente o _Web Tokenize Checkout_**. Também tem a possibilidade de [trocar o texto do botão](/guides/payments/web-tokenize-checkout/personalization.pt.md) mediante o atributo `data-button-label` para complementar a comunicação.
 
 Por exemplo:
 
@@ -14,7 +14,7 @@ Por exemplo:
 
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-button-label="Reintentar"> <!-- Texto do botão -->
@@ -22,7 +22,7 @@ Por exemplo:
 </form>
 ```
 
-![Recovery](/images/webtokenize-recovery.png)
+![Recovery](/images/cow-recovery-page__pt.png)
 
 ## Checkout aberto por padrão
 
@@ -35,7 +35,7 @@ Por exemplo:
 ```html
 <form action="/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-open="true"> <!-- Aberto por padrão -->

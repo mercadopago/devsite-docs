@@ -29,6 +29,7 @@ To set up aggregator mode you must follow this steps:
 1. Set up affiliation.
 1. Set up native payment plans.
 1. Set up offline payment plans.
+1. Set up offline payment Webpay.
 1. Set up custom payment plans.
 1. Set up DeviceID.
 
@@ -36,16 +37,19 @@ To set up aggregator mode you must follow this steps:
 
 To operate in aggregator mode you just need to set an affiliation.
 
-1. Select modules menu.
+1. Select Catalog menu.
 2. Select PCI Gateway.
 
     ![VTEX afiliation](/images/vtex-afiliation-1.png)
 
-3. Settings.
-4. Affiliation.
-5. New affiliation.
+3. Access side menu: Payment/Settings.
 
-    ![VTEX afiliation](/images/vtex-afiliation-2.png)
+    ![VTEX afiliation](/images/vtex-config.png)
+    
+4. Go top menu: Gateways Affiliations.
+5. Add New Affiliation (+ Sign).
+
+    ![VTEX afiliation](/images/vtex-afiliation.png)
 
 6. Search y select "MercadoPagoV1".
 
@@ -80,16 +84,13 @@ To operate in aggregator mode you just need to set an affiliation.
 
 Native payment plan are the credit/debit cards that Vtex has integrated
 
-1. Select modules menu.
-2. Select PCI Gateway.
+1. In the top menu.
+2. Click on payment conditions.
+3. On the right side click add new condition.
+4. Next to the search field.
+5. On the (+ sign)
 
-    ![Native plan](/images/vtex-native-plan-1.png)
-
-3. Settings.
-4. Payment plans
-5. New payment plan.
-
-    ![Native plan](/images/vtex-native-plan-2.png)
+    ![VTEX afiliation](/images/vtex-afiliation-2.png)
 
 6. Search and select the payment method to add, in this example American Express.
 
@@ -122,17 +123,16 @@ Offline payment plan are the payment methods which payments are made in two step
 - Peru: PagoEfectivo.
 - Uruguay: Abitab, Redpagos.
 - Venezuela: Banesco, Mercantil, Provincial.
+- Brazil: Ticket Bank
 
-1. Select modules menu.
-2. Select PCI Gateway.
+1. In the top menu.
+2. Click on payment conditions.
+3. On the right side click add new condition.
+4. Next to the search field.
+5. On the (+ sign)
 
-    ![Offline](/images/vtex-offline-plan-1.png)
+    ![VTEX afiliation](/images/vtex-afiliation-2.png)
 
-3. Settings.
-4. Payment plans.
-5. New payment plan.
-
-    ![Offline](/images/vtex-offline-plan-2.png)
 
 6. Search and select Boleto Bancario - This payment plan includes all offline methods of the country.
 
@@ -147,7 +147,7 @@ Offline payment plan are the payment methods which payments are made in two step
 
 ### Set up Webpay payment plan
 
-1. Select modules menu.
+1. Select Catalog menu.
 2. Select PCI Gateway.
 
     ![Offline](/images/vtex-webpay-1.png)
@@ -239,7 +239,7 @@ Uruguay: Oca.
 
 ## Set up DeviceID
 
-1. Select modules menu.
+1. Select Catalog menu.
 2. Select portal.
 
     ![Custom plan](/images/vtex-device-settings-1.png)

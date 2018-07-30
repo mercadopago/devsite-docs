@@ -37,6 +37,10 @@ This `AUTHORIZATION_CODE` will be used to create the credentials and is valid fo
 > Advice:
 >
 > You can include a parameter in the `redirect_uri` to identify the seller corresponding to the authorization code you received, such as your email address, the user ID in your system or any other useful reference.
+>Example:
+>-Redirect_uri set in the application: https://www.mercadopago.com/mp.php
+>-Redirect uri to use in the Oauth link: https://www.mercadopago.com/mp.php?user_id=001
+>-Redirect_uri for the authorization with the security code from the Oauth process: https://www.mercadopago.com/mp.php?user_id=001
 
 
 ### Create your user’s credentials
@@ -83,6 +87,8 @@ In the response, in addition to the Access Token of the seller, you will get the
 > Note
 >
 > The credentials are **valid for 6 months.**
+> If you don´t renew your sellers credentials before the expiration period, **those credentials will lose validity, and you´ll have to do the Oauth proccess all over again**. 
+> Tip: Renew the credentials 5 months after you got them. 
 
 
 ### Refresh your user’s credentials
@@ -219,6 +225,13 @@ preference.save
 
 
 The seller will receive the difference between the total amount and the fees, both the fee of Mercado Pago and the Marketplace, as well as any other amount that should be deducted from the sale.
+
+> WARNING
+>
+> Tip
+>
+> The more information you send us in the preference, the better our fraude prevention system will perform when it comes to payment approval.  
+> Create a checkout preference as complete as you can.
 
 ### Notifications
 

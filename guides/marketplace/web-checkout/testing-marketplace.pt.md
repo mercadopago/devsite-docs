@@ -16,9 +16,17 @@ Você deve verificar se:
 
 Para simular o processo de pagamento do começo ao fim, é necessário criar 3 usuários de teste: **marketplace**, **vendedor** e **comprador**.
 
+
+> NOTE
+>
+> Nota
+>
+> Para poder testar o Web Checkout todos os envolvido no fluxo devem ser test_users, caso contrário ele retornará o erro "Invalid users involved".
+
+
 Você deve fazer a seguinte requisição à API para criar cada um dos usuários.
 
-Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPEv e Colômbia: **MCO**.
+Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPE** e Colômbia: **MCO**.
 
 ##### Request
 ```curl
@@ -79,5 +87,5 @@ O processo completo para testar o checkout é o seguinte:
     * **OTHE**: Recusado geral.
 7. Valide, em caso de nova tentativa, para que sejam realizadas corretamente.
 8. Verifique se recebeu a notificação corretamente.
-9. Verifique se a divisão do pagamento entre as contas do marketplace e a do vendedor foi feita corretamente, conforme especificado no atributo marketplace\_fee da preferência de pagamentos.
+9. Verifique se a divisão do pagamento entre as contas do marketplace e a do vendedor foi feita corretamente, conforme especificado no atributo marketplace_fee da preferência de pagamentos.
 10. Efetue a devolução de um pagamento aprovado.

@@ -128,12 +128,12 @@ Retorno do Servidor:
 
 ## Receber pagamento de um Customer
 
-Para que possa receber um pagamento utilizando um cartão armazenado, é necessário incluir no códugo HTML o ID do customer e os IDs dos cartões do usuário através dos atributos `data-customer-id` e `data-card-ids`. Por exemplo:
+Para que possa receber um pagamento utilizando um cartão armazenado, é necessário incluir no código HTML o ID do customer e os IDs dos cartões do usuário através dos atributos `data-customer-id` e `data-card-ids`. Por exemplo:
 
 ```html
 <form action="/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"
@@ -212,7 +212,7 @@ Por exemplo:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"

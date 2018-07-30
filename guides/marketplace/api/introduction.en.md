@@ -5,12 +5,14 @@ A **MarketPlace** is a website or application that allows sellers and buyers to 
 Mercado Pago allows you to collect payments on behalf of the sellers of your platform and optionally charge a commission for the transaction.
 
 When a payment is generated, the amount is immediately divided between the seller’s account and your account, in case you charge a fee.
+_Clarification: The payment split can only be done between two Mercado Pago accounts (Marketplace and the seller associated to it), no more._
 
 > NOTE
 >
 > Note
 >
 > Mercado Pago’s fee will be deducted from the funds received by the seller.
+> First the Mercado Pago fee is discounted, and after that the Marketplace fee. 
 
 The Marketplace requires 3 steps:
 
@@ -35,9 +37,12 @@ The **credencial privada**, or *access\_token*, are used for all requests to the
 
 Initially, your application will only be able to interact with Mercado Pago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
 
-We will provide you with test cards, so that you can simulate transactions as if they were real.
+We will provide you with [test cards](/guides/marketplace/web-checkout/testing-marketplace.en.md/), so that you can simulate transactions as if they were real.
 
-Once you have tested your application, you must complete the [homologation process](#) and complete the “I want to go to production” form that you will find in your credentials.
+Once you have tested your application, you must complete the [homologation process](/guides/marketplace/api/goto-production.es.md/) and complete the “I want to go to production” form that you will find in your credentials.
+
+**Before you can start using your production credentials you must complete the "I want to go to production" form in order to activate them.** 
+If not, you´ll get the "Invalid use of live credentials" error.  
 
 Your application will be automatically activated. All you have to do is replace the sandbox keys with the production ones in your code.
 

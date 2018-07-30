@@ -13,7 +13,7 @@ Para poder cobrar, é necessário que adquira o dispositivo Mercado Pago Point:
 
 > [Comprar Point](https://www.mercadopago.com/mp-brasil/point#products)  
 
-Além disso, você deverá baixar o aplicativo no * store * do seu dispositivo móvel:
+Além disso, você deverá baixar o aplicativo no **store** do seu dispositivo móvel:
 
 > [Android Play Store](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=pt_419)  
 > [iOS App Store](https://itunes.apple.com/br/app/mercado-pago/id925436649?mt=8)

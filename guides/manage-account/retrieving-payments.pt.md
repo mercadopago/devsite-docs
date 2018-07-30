@@ -47,7 +47,7 @@ Resposta esperada:
 }
 ```
 
-As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](DEVSITE_PATH/reference/payments/).
+As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](/reference/payments/_payments/get/).
 
 ## Buscar pagamentos
 

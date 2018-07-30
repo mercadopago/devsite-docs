@@ -35,7 +35,7 @@ A seguir uma lista de funcionalidades específicas de nossa API por país:
 
 |     Funcionalidade      | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :---------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Autorização y captura   | ✔   | ✔   |     |     |     | ✔   |     |     |
+| Autorização e captura   | ✔   | ✔   |     |     |     | ✔   |     |     |
 | Captura parcial         | ✔   | ✔   |     |     |     |     |     |     |
 | Reembolsos              | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
 | Reembolsos parciais     | ✔   | ✔   | ✔   |     | ✔   |     |     |     |
@@ -46,7 +46,7 @@ A seguir uma lista de funcionalidades específicas de nossa API por país:
 
 ## Meios de pagamento não disponíveis
 
-Pode ser que alguns [meios de pagamento](payment-methods.pt.md) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
+Pode ser que alguns [meios de pagamento](/guides/localization/payment-methods.pt.md) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
 
 ### Argentina
 

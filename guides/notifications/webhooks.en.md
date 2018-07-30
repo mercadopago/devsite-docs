@@ -65,10 +65,10 @@ After that, you will be able to get full information about the notified resource
 
 Type         | URL                                                | Documentation
 ------------ | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/payments/resource/)
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | [see documentation](/reference/plans/resource/)
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/subscriptions/resource/)
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/invoices/resource/)
+payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/payments/_payments_id/get/)
+plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
+subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](/reference/invoices/_invoices_id/get/)
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
 
@@ -76,24 +76,23 @@ With this information you can make the necessary updates on your platform, such 
 
 ```php
  <?php
-require_once "mercadopago.php";
 
-$mp = new MP("ACCESS_TOKEN");
+    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$json_event = file_get_contents('php://input', true);
-$event = json_decode($json_event);
-
-if (!isset($event->type, $event->data) || !ctype_digit($event->data->id)) {
-	http_response_code(400);
-	return;
-}
-
-if ($event->type == 'payment'){
-    $payment_info = $mp->get('/v1/payments/'.$event->data->id);
-
-    if ($payment_info["status"] == 200) {
-        print_r($payment_info["response"]);
+    switch($_POST["type"]) {
+        case "payment":
+            $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
+            break;
+        case "plan":
+            $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
+            break;
+        case "subscription":
+            $plan = MercadoPago\Subscription.find_by_id($_POST["id"]);
+            break;
+        case "invoice":
+            $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
+            break;
     }
-}
+    
 ?>
 ```

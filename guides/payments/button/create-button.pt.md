@@ -1,7 +1,7 @@
 # Receba Pagamentos
 
 
-----[mla,mlb,mcl,mlm,mpe,mco,global]----
+----[mla,mlb,mlc,mlm,mpe,mco,global]----
 > Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](/guides/payments/web-checkout/introduction.es.md)**, **[Mobile Checkout](/guides/payments/mobile-checkout/introduction.es.md)** ou **[API](/guides/payments/api/introduction.es.md)**.
 ------------
 
@@ -16,7 +16,7 @@ Vamos orientá-lo para que você possa configurar:
 ----[mla, mlb, mlm, global]----
 *	Se quiser utilizar o **Mercado Envios**.
 ------------
-*	Meios de pagamentos aceitos: cartões de crédito ou débito e pagamentos em dinheiro.
+*	Meios de pagamentos aceitos: cartões de crédito e pagamentos em boleto.
 *	Data a partir da qual pretende permitir o pagamento.
 *	Código de referência para identificar a venda em seu backend.
 *	URL de redirecionamento ao seu site.
