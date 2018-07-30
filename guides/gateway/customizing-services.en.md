@@ -6,7 +6,7 @@ The services used can be viewed in the response of each payment. These services 
 
 > NOTE
 >
-> Nota
+> Note
 >
 > Using the services has an additional cost. For any doubts please contact the account manager.
 
