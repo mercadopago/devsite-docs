@@ -5,7 +5,14 @@ Puedes encontrar toda la información de los pagos generados utilizando nuestras
 ## Obtener pagos creados a partir de su _ID_
 
 Para obtener la información de un pago a partir de su _ID_ debes hacer el siguiente _request_:
-
+``curl -G -X GET \
+-H "accept: application/json" \
+"https://api.mercadopago.com/v1/payments/<payment_id>" \
+-d "access_token=ACCESS_TOKEN" \
+-d "status=approved" \
+-d "offset=0" \
+-d "limit=10"`
+```
 ```php
 <?php
 	require ('mercadopago.php');
@@ -44,7 +51,15 @@ Puedes obtener información sobre todos las variables devueltas en la [referenci
 ## Buscar pagos
 
 Si quieres buscar pagos puedes utilizar la API de `Payment Search`:
-
+```curl
+curl -G -X GET \
+-H "accept: application/json" \
+"https://api.mercadopago.com/v1/payments/search" \
+-d "access_token=ACCESS_TOKEN" \
+-d "status=approved" \
+-d "offset=0" \
+-d "limit=10"
+```
 ```php
 <?php
 	require ('mercadopago.php');

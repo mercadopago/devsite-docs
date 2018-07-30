@@ -1,17 +1,17 @@
-# Cancellations and Refunds
+# Refunds and cancellations
 
 There are different situations in which you may want to cancel a sale:
 
-* If the payment status is `pending` or `in_process`, it means that the buyer has not been charged yet, so you should make a cancellation.
+* If the payment status is `pending` or `in_process`, it means that the buyer has not been charged yet, so you can make a cancellation.
 
-* If the payment `status` is `approved`, it means that the buyer was charged, so you should make a refund.
+* If the payment `status` is `approved`, it means that the buyer was charged, so you can make a refund.
 
 
 ## Cancellations
 
 - Cancellations can be made only with pending and in process transactions
 - It is important for offline payment methods
-- Offline payment methods do not expire independently, you have to cancel them
+- Offline payment methods **do not expire independently, you have to cancel them.**
 
 Only` pending` or `in_process` payments can be cancelled. As soon as you cancel them, they will no longer be approved and you will be able to release the stock pending confirmation.
 
@@ -82,6 +82,12 @@ $mp = new MP('SECRET_ACCESS_TOKEN');
 $refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 ?>
 ```
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
+```
+
 > NOTE
 >
 > Nota
@@ -132,6 +138,12 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 ```ruby
 payment = MercadoPago::Payment.load(paymnentId)
 payment.refund(10.5);
+```
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN' \
+-d '{"amount":10.5}'
 ```
 ]]]
 
