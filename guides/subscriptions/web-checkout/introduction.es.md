@@ -10,8 +10,8 @@ sites_supported:
 
 Mercado Pago te permitirá recibir pagos recurrentes a través de suscripciones en sólo dos pasos:
 
-1. **Definir una suscripción**, que establece cuánto debe ser facturado y en qué intervalo.
-2. **Abrir el Checkout** para capturar los datos de una tarjeta.
+1. **Definir un plan**, que establece cuánto debe ser facturado y en qué intervalo.
+2. **Adherir a tu cliente**, incializando el web checkout para capturar los datos de la tarjeta de crédito.
 
 ## Credenciales
 
