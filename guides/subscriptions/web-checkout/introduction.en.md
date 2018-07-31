@@ -10,8 +10,8 @@ sites_supported:
 
 Mercado Pago allows you to receive recurring payments through subscriptions in just two steps:
 
-1. **Define a subscription**, which establishes the amount to be billed and the billing frequency.
-2. **Open the Checkout** to capture the card data
+1. **Define a plan**, which establishes the amount to be billed and the billing frequency.
+2. **Add your client**, opening the checkout in order to capture the credit card data
 
 ## Credentials
 
