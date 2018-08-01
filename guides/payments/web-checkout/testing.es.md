@@ -100,3 +100,13 @@ El proceso completo para probar el checkout es el siguiente:
 6. En caso de pago rechazado, podrás efectuar el reintento del mismo y simular algún otro resultado tal como se indica en el punto anterior.
 7. Verifica que la notificación te haya llegado correctamente.
 8. Realiza la devolución de un pago acreditado y verifica que te haya llegado la notificación con la actualización del estado del pago.
+
+### Condiciones de uso
+
++ Los usuarios de prueba caducan luego de 60 días sin actividad en MercadoPago.
++ Puedes tener hasta 10 cuentas en simultáneo.
++ Para hacer pagos de prueba usa montos bajos:
+    * Puedes pagar una con tarjeta de crédito real, luego cancelar los pagos y recibir el reintegro.
+    * Puedes hacer pagos con cupón pero no debes concretarlos.
++ Las simulaciones solo pueden realizarse entre usuarios de prueba.
++ No es posible retirar a cuentas bancarias el dinero recibido en las pruebas.

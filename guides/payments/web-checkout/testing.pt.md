@@ -102,3 +102,13 @@ O processo completo para testar o checkout é o seguinte:
 6. Em caso de pagamento recusado, você poderá fazer uma nova tentativa e simular algum outro resultado, assim como indicado no item anterior.
 7. Verifique se recebeu a notificação corretamente
 8. Efetue a devolução de um pagamento aprovado e verifique se recebeu a notificação com a atualização de status do pagamento.
+
+### Condições de uso
+
++ Os usuários de teste expiram depois de 60 dias sem atividades no MercadoPago.
++ É possível ter até 10 usuários de teste simultâneos.
++ Para fazer pagamentos de testes use valores baixos:
+	* Pode pagar com um cartão de crédito real e, em seguida, cancelar os pagamentos e receber todo o estorno.
+	* Pode fazer pagamentos com boletos, mas não deve concretizá-los.
++ As simulações só podem ser efetuadas por usuários de teste.
++ Não é possível fazer retiradas para contas bancárias com o dinheiro recebido nos testes de integração.
