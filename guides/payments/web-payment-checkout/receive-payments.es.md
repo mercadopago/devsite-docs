@@ -1,3 +1,16 @@
+---
+sites_supported:
+  - mla
+  - mlu
+  - mlv
+  - mlc
+  - mpe
+  - mlm
+  - mco
+  - global
+---
+
+
 # Recibir pagos
 
 Recibe pagos de manera simple y segura utilizando el *Web Payment Checkout* de **Mercado Pago**.

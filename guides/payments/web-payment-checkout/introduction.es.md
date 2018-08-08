@@ -1,3 +1,14 @@
+---
+sites_supported:
+  - mla
+  - mlu
+  - mlv
+  - mlc
+  - mpe
+  - mlm
+  - mco
+  - global
+---
 
 
 # Web Payment Checkout

@@ -1,3 +1,16 @@
+---
+sites_supported:
+  - mla
+  - mlu
+  - mlv
+  - mlc
+  - mpe
+  - mlm
+  - mco
+  - global
+---
+
+
 # Test the Integration
 
 Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected in the *Web Payment Checkout*.

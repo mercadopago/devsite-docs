@@ -1,3 +1,16 @@
+---
+sites_supported:
+  - mla
+  - mlu
+  - mlv
+  - mlc
+  - mpe
+  - mlm
+  - mco
+  - global
+---
+
+
 # Web Tokenize Checkout - Preferencia de pago
 
 Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
