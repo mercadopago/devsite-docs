@@ -10,7 +10,7 @@
 
 #### Texto
 
-Por padrão o botão contém o texto *"Pagar"*. Você pode modificar o texto do botão agregando o atributo `"data-button-label"` ao fragmento de código javascript. Por exemplo:
+Por padrão o botão contém o texto *"Pagar"*. Você pode modificar o texto do botão adicionando o atributo `"data-button-label"` ao fragmento de código javascript. Por exemplo:
 
 ```html
 data-button-label="Comprar"
@@ -40,6 +40,74 @@ button.mercadopago-button {
 ```
 
 ![Payment button - Modified CSS](/images/paybutton-modified-css.png)
+
+
+## Cores na interface
+
+### Elementos
+
+#### Status padrão
+
+![Standard elements](/images/cow-ui-elements__pt.png)
+
+#### Personalização
+
+Os elementos que podem ser personalizados incluem:
+
+- Botões
+- Campos de ingresso de dados: inputs
+- Elementos de transições: spinners
+- Bordas
+
+É possível modificar a cor adicionando o atributo `data-elements-color` ao fragmento de código HTML.
+
+O valor do atributo deverá ser em formato hexadecimal. Por exemplo:
+
+```html
+data-elements-color="#c0392b"
+```
+
+![Custom elements](/images/cow-ui-elements--custom__pt.png)
+
+
+### Cabeçalho
+
+#### Status padrão
+
+![Standard header](/images/cow-ui-header__pt.png)
+
+#### Personalização
+
+É possível modificar a cor do cabeçalho adicionando o atributo `data-header-color` ao fragmento de código HTML.
+
+O valor do atributo deverá ser em formato hexadecimal. Por exemplo:
+
+```html
+data-header-color="#c0392b"
+```
+
+![Custom header](/images/cow-ui-header--custom__pt.png)
+
+### Color de texto
+
+El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
+
+Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
+
+```html
+data-elements-color="#81ecec" <!-- Color claro -->
+```
+
+![Font color in light element](/images/cow-ui-fontcolor__light.png)
+
+Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
+
+```html
+data-elements-color="#8e44ad" <!-- Color oscuro -->
+```
+
+![Font color in dark element](/images/cow-ui-fontcolor__dark.png)
+
 
 ## Detalhe da compra
 
@@ -115,7 +183,7 @@ data-summary-shipping="10"
 >
 > Nota
 >
-> No caso em que o envio especificado seja *"0"* (zero), mostrará automáticamente o texto *"Gratis"*.
+> No caso em que o envio especificado seja *"0"* (zero), mostrará automaticamente o texto *"Grátis"*.
 
 
 #### Recarga

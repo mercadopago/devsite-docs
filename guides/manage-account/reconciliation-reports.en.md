@@ -44,6 +44,16 @@ $mp->post($request);
 
 ?>
 ```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/bank_report?access_token=ACCESS_TOKEN' \
+    -d '{
+            "begin_date": "2015-05-01T00:00:00Z",
+            "end_date": "2015-06-01T00:00:00Z"
+    }'
+ ```
 
 You will receive a `HTTP STATUS 202 (Accepted)` as response, and the report will be generated asynchronously.
 
@@ -64,6 +74,12 @@ $request = array(
 $mp->get($request);
 
 ?>
+```
+```curl
+curl -G \
+    -H 'accept: application/json' \
+    -d 'access_token=ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/bank_report/list'
 ```
 
 You will receive the following response:
