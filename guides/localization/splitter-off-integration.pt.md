@@ -1,29 +1,29 @@
-# Documentación API Split de Pagos
+# Documentação da API Split de Pagos
 
-## Introducción
-El propósito de este documento es proporcionar información de los endpoints que permitirán ofrecer la funcionalidad de división de Pagos a clientes del OFF.
+## Introdução
+O objetivo deste documento é fornecer informações sobre os endpoints que permitirão oferecer a funcionalidade de divisão de pagamentos (Split de pagos) para clientes Mercado Pago.
 
-Los tipos de cliente a los que está destinado son: 
-- Marketplaces con carrito de compras donde hay un Payer y múltiples Collectors. 
-- Aplicaciones para Marketplaces donde existe un Payer y un Collector, por ejemplo tipo Uber con un conductor.
+Os tipos de clientes aos quais se destina são:
+- Marketplaces com carrinho de compras onde há um pagador e vários coletores.
+- Aplicações para marketplaces onde existe um pagador e um coletor, por exemplo tipo Uber com um driver.
 
-En ambos casos, el marketplace retiene una parte del monto de la venta en concepto de comisión.
+Em ambos os casos, o marketplace retém uma parte do valor da venda como comissão.
 
-El modo agregador implica que cada Merchant del Marketplace tiene su propia cuenta de Mercado Pago.
+O modo de agregador significa que cada comerciante no marketplace tem sua própria conta de Mercado de Pago.
 
 ## Mapa de Estados
-Un Marketplace puede informarse de los cambios de estados de un Splitter si se suscribe al tópico de “Split de Pagos” en [Webhooks](https://www.mercadopago.com/mla/account/webhooks).
+Um Marketplace pode ser informado sobre as alterações no status de um Split se ele se inscrever no tópico "Split de pagos" em [Webhooks](https://www.mercadopago.com/mla/account/webhooks).
 
 ![Status map](/images/split-de-pagos-status-map.png)
 
 ## Idempotencia
-En ocasiones se pueden presentar problemas de conexión, caídas de servicios, etc. que podrían interrumpir la comunicación al enviar o recibir los datos para crear un Splitter.
+Às vezes, problemas de conexão, quedas de serviço, etc. que poderiam interromper a comunicação ao enviar ou receber dados para criar um Split podem ocorrer.
 
-Para asegurar la creación del mismo, se puede reintentar el envío de los mismos datos, pero es posible que el Splitter ya se haya creado y debido a la interrupción no se recibió la respuesta correcta, ocasionando que, al realizar el reintento, se genere un nuevo Splitter.
+Para garantir a criação do mesmo, você pode repetir o envio dos mesmos dados, mas é possível que o Split já tenha sido criado e, devido à interrupção, a resposta correta não tenha sido recebida, fazendo com que, ao realizar a nova tentativa, se crie um novo Split.
 
-Para evitar el duplicado, se puede enviar de una clave única en el header X-Idempotency-Key que identifique la creación de un único Splitter no importa cuantas veces se envíen los mismos datos.
+Para evitar duplicação, você pode enviar uma chave X-Idempotency-Key exclusiva no cabeçalho que identifica a criação de um único Split, não importa quantas vezes os mesmos dados sejam enviados.
 
-De esta manera, cuando se haga el reintento, se puede enviar la misma clave para indicar que es el mismo proceso. Si el Splitter ya fué creado, se devuelve la información del mismo sin crear uno nuevo.
+Dessa forma, quando a nova tentativa é concluída, a mesma chave pode ser enviada para indicar que é o mesmo processo. Se o Split já foi criado, as informações são retornadas sem criar um novo.
 
 ```curl
 curl -X POST \
@@ -34,17 +34,17 @@ curl -X POST \
      -d '{...}'
 ```
 
-## Obtención de permisos y datos del Merchant
-El Marketplace que desee integrarse, debe solicitar permisos a sus Merchants para poder operar y realizar pagos en su nombre. Para ello, debe seguir los pasos de [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/mercadopago-connect/).
+## Como obter permissões e dados do Merchant
+O Marketplace que deseja integrar, deve solicitar permissões de seus Merchants para operar e fazer pagamentos em seu nome. Para fazer isso, você deve seguir os passos de [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/mercadopago-connect/).
 
-Al seguir estos pasos, el Marketplace podrá obtener el “access_token” con el que puede obtener el “email” en la [API de “Users”](https://developers.mercadolibre.com/en_us/usuarios-y-aplicaciones) de Mercado Libre y el “user_id” que lo debe utilizar como “collector_id” en cada “disbursement” que desee crear en el Splitter. Es importante guardar el user_id y el email del merchant para poder identificar el propietario de la cuenta de Mercado Pago en caso que haga falta. 
+Seguindo essas etapas, o marketplace pode obter o "access_token" com o qual você pode obter o "email" na [API de "Users"](https://developers.mercadolibre.com/en_us/usuarios-y-aplicaciones) do Mercado Livre e o "user_id" que deve ser usado como "collector_id" em cada "disbursement" que você deseja criar no Split. É importante salvar o user_id e o e-mail do merchant para identificar o proprietário da conta Mercado Pago, caso seja necessário.
 
-## Creación de un Splitter
-Los Splitters son entidades que tienen 1 pago de entrada y varios de salida. El PAYER puede hacer el pago de entrada con varios métodos de pago (tarjeta de crédito, boletos, etc.). Cada método de pago tiene sus campos requeridos, por ejemplo, para pagar con tarjetas de crédito hay que generar un token de tarjeta como se indica en la [documentación](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card/) de Mercado Pago.
+## Criando um Split
+Os Splits são entidades que têm 1 pagamentos de entrada e vários de saída. O payer pode fazer o pagamento com diversos métodos de pagamento (cartão de crédito, boletos, etc.). Cada método tem seus campos obrigatórios, por exemplo, para pagar com cartões de crédito deve gerar um card token como indicado na [documentação](https://www.mercadopago.com.ar/developers/es/guias/pagamentos/api/recebimento de pagamento-por-card/) Mercado Pago.
 
-Hay que tener en cuenta que todos los Merchants especificados en cada “disbursement”, debe estar asociado al Marketplace mediante [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/mercadopago-connect/) (cada Merchant debe dar permiso explícitamente al Marketplace). De lo contrario, no se podrá crear el Splitter.
+Deve-se ter em mente que todos os merchants especificados em cada "disbursement" devem ser associados com o marketplace pelo [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/MercadoPago-connect/) (cada Merchant deve dar permissão explícita para o marketplace). Caso contrário, você não pode criar o Split.
 
-El parámetro “access_token” de la URL debe ser el Access Token del Marketplace que se obtiene como indica la [documentación](https://developers.mercadolibre.com/es_ar/autenticacion-y-autorizacion) pública.
+O parâmetro "access_token" da URL deve ser o access token obtido pelo marketplace, como indicado pela [documentação](https://developers.mercadolibre.com/es_ar/autenticacion-y-autorizacion) pública.
 
 ### Request
 ```curl
@@ -304,10 +304,10 @@ curl -X POST \
 }
 ```
 
-## Obtener un Splitter de pagos
-Devuelve el Splitter en su estado actual guardado en la base de datos. Hay que tener en cuenta que se ejecutan procesos asincrónicos que pueden cambiar el estado de un Splitter.
+## Obter um Split de pagamento
+Retorna o Split em seu estado atual salvo no banco de dados. Tenha em mente que processos assíncronos que podem alterar o estado de um Split são executados.
 
-Un Marketplace solo puede obtener sus propios Splitters creados. Los Merchants pueden ver sus pagos o “disbursements” mediante el [SEARCH](https://api.mercadopago.com/v1/payments/search) de Payments.
+Um Marketplace só pode obter seus próprios Splits criados. Os merchants podem visualizar seus pagamentos ou "disbursements" por meio do [SEARCH](https://api.mercadopago.com/v1/payments/search) de pagamentos.~~~~
 
 ### Request
 ```curl
@@ -446,10 +446,10 @@ curl -X GET \
 }
 ```
 
-## Reembolso de un Splitter completo
-Se puede hacer el reembolso del Splitter completo o de algún pago de salida individual. Si se reembolsa el Splitter completo, este quedará con el estado “refunded”. En caso de realizar un reembolso parcial, el Splitter quedará en estado “partially_refunded”.
+## Reembolso total do Split
+O Split pode ser reembolsado de forma total ou algum pagamento de saída individual pode ser reembolsado. Se todo o Split for reembolsado, ele estará no estado "refunded". No caso de um reembolso parcial, o Splitt permanecerá no estado "partially_refunded".
 
-Tener en cuenta que este proceso no es inmediato. Cuando se realiza el reembolso con este endpoint, se dispara un proceso asincrónico para reembolsar todos los pagos generados. El cambio de estado del Splitter se informará mediante Webhooks.
+Tenha em mente que esse processo não é imediato. Quando o reembolso é solicitado, um processo assíncrono é acionado para reembolsar todos os pagamentos gerados. A mudança de status do Split será relatada por meio de Webhooks.
 
 ### Request
 
@@ -590,8 +590,8 @@ curl -X POST \
   "application_id": 4422991580014613
 }
 ```
-## Reembolso parcial de un Splitter
-El reembolso parcial del Splitter se puede hacer especificando el ID del pago de salida en la URL.
+## Reembolso parcial de um Split
+O reembolso parcial do Split pode ser feito especificando o ID de pagamento de saída na URL.
 
 ### Request
 ```curl
@@ -732,8 +732,8 @@ curl -X POST \
 }
 ```
 
-## Cancelar un splitter
-Se podrá cancelar un Splitter que haya quedado en estado “pending”. Estos casos se pueden dar para los pagos de entrada con Ticket o algún pago con tarjeta de crédito que haya entrado en el flujo de revisión manual.
+## Cancelar um Split
+Você pode cancelar um Split que esteja no estado "pending". Esses casos podem ser dados para pagamentos de entrada com ticket ou qualquer pagamento por cartão de crédito que tenha entrado no fluxo de revisão manual (status_detail = pending_manual_review).
 
 ### Request
 
@@ -845,8 +845,8 @@ curl -X PUT \
 }
 ```
 
-## Capturar un splitter
-La API de Splitter permite realizar pagos del tipo “reserva/autorización”. Para estos casos se debe crear un Splitter con el campo “capture” en FALSE, el cual reservará el monto hasta que se capture con el siguiente endpoint.
+## Capturar um Split
+A API Split de pagos permite pagamentos do tipo "reserva/autorização". Para esses casos, você deve criar um Split com o campo "capture" em FALSE, que reservará o valor até que seja capturado com o próximo endpoint.
 
 ### Request
 
@@ -991,8 +991,8 @@ curl -X PUT \
 }
 ```
 
-## Cambiar fecha de liberación de todos los pagos de salida
-Podemos cambiar la fecha de liberación de todos los pagos de salida pasando la nueva fecha en el campo “money_release_date”. Esta fecha debe estar dentro del rango de liberaciones definido por el Marketplace.
+## Alterar a data de liberação de todos os pagamentos de saída
+Podemos alterar a data de liberação de todos os pagamentos de saída, inserindo a nova data no campo "money_release_date". Essa data deve estar dentro do intervalo de releases definidos pelo marketplace.
 
 ### Request
 
@@ -1135,8 +1135,9 @@ curl -X POST \
 }
 ```
 
-## Cambiar fecha de liberación un pago de salida particular
-Podemos cambiar la fecha de liberación de un pago de salida pasando en el campo “disbursement_id”, el ID del pago y la nueva fecha en el campo “money_release_date”. Esta fecha debe estar dentro del rango de liberaciones definido por el Marketplace.
+## Alterar a data de liberação de um determinado pagamento de saída
+Podemos alterar a data de liberação de um pagamento de saída, passando o campo "disbursement_id", o código de pagamento e a nova data no campo "money_release_date". Essa data deve estar dentro do intervalo de releases definidos pelo marketplace.
+
 ### Request
 
 ```curl
@@ -1278,73 +1279,74 @@ curl -X POST \
 }
 ```
 #### Definición de campos
-Nombre                            |Descripción                                                                                                                       |tipo
-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------
-id                                |ID del Splitter.                                                                                                                  |Long   |
-status                            |Estado del Splitter ("pending", "approved", "rejected", "cancelled", "refunded", "partially_refunded")                            |String |
-marketplace                       |Nombre del Marketplace.                                                                                                           |String |
-payments                          |Lista de pagos de entrada realizados por el Payer.                                                                                |Array  |
-payments.id                       |ID del pago del Payer.                                                                                                            |Long   |
-payments.payment_type_id          |Medio de pago.                                                                                                                    |String |
-payments.payment_method_id        |Método de pago ("ticket", "credit_card").                                                                                         |String |
-payments.token                    |ID del Token de la tarjeta.                                                                                                       |String |
-payments.date_of_expiration       |Fecha de expiración para el caso de método de pago “ticket” (la misma tiene que ser menor a los 29 días).                         |String |
-payments.transaction_amount       |Monto de la compra.                                                                                                               |Float  |
-payments.installments             |Cuotas                                                                                                                            |Int    |
-payments.processing_mode          |Modo de procesar los pagos (puede ser aggregator o gateway). Actualmente sólo se soporta aggregator.                              |String |
-payments.description              |Descripción del pago.                                                                                                             |String |
-payments.capture                  |Flag que indica si se trata de un pago de autorización y captura.                                                                 |Boolean|
-payments.external_reference       |Referencia del cliente.                                                                                                           |String |
-payments.statement_descriptor     |Descripción de la transacción que aparecerá en el resumen de cuenta para el caso de “gateway”.                                    |String |
-disbursements                     |Lista de pagos de salida. Debe ser un pago para cada Merchant asociado en la transacción.                                         |Array  |
-disbursements.id                  |ID del pago del Merchant.                                                                                                         |Long   |
-disbursements.amount              |Monto del pago para el Merchant.                                                                                                  |Float  |
-disbursements.external_reference  |Referencia del cliente.                                                                                                           |String |
-disbursements.collector_id        |ID de la cuenta de MP del Merchant.                                                                                               |Long   |
-disbursements.application_fee     |Monto de comisión del Marketplace.                                                                                                |Float  |
-disbursements.money_release_days  |Cantidad de días (a partir de la fecha de aprobación del pago) en que se va a liberar el pago del Merchant.                       |String |
-disbursements.additional_info     |Información adicional de los ítems, envíos, etc. de la transacción.                                                               |Object |
-additional_info.items             |Lista de ítems comprados.                                                                                                         |Array  |
-items.id                          |ID del ítem.                                                                                                                      |String |
-items.title                       |Título del ítem                                                                                                                   |String |
-items.picture_url                 |URL de la imagen del ítem                                                                                                         |String |
-items.description                 |Descripción del ítem                                                                                                              |String |
-items.category_id                 |Categoría a la que pertenece el ítem según la [API de Categorías](https://api.mercadopago.com/item_categories) de Mercado Libre.  |String |
-items.quantity                    |Cantidad de productos comprados del ítem.                                                                                         |Int    |
-items.unit_price                  |Precio de la unidad.                                                                                                              |Float  |
-additional_info.shipments         |Datos del envío de los ítems.                                                                                                     |Object |
-shipments.receiver_address        |Datos de la dirección de recepción de los ítems.                                                                                  |Object |
+Nome                              |Descrição                                                                                                                         |Tipo   |
+----------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------|
+id                                |ID do Splitter.                                                                                                                   |Long   |
+status                            |Estado do Splitter ("pending", "approved", "rejected", "cancelled", "refunded", "partially_refunded").                            |String |
+marketplace                       |Nome do Marketplace.                                                                                                              |String |
+payments                          |Lista de pagamentos de entrada realizados pelo Payer.                                                                             |Array  |
+payments.id                       |ID do pagamento do Payer.                                                                                                         |Long   |
+payments.payment_type_id          |Meio de pagamento.                                                                                                                |String |
+payments.payment_method_id        |Método de pagamento ("ticket", "credit_card").                                                                                    |String |
+payments.token                    |ID do token do cartão de crédito.                                                                                                 |String |
+payments.date_of_expiration       |Data de vencimento para o caso de método de pagamento “ticket” (a data deve ser menor que 29 dias).                               |String |
+payments.transaction_amount       |Total da compra.                                                                                                                  |Float  |
+payments.installments             |Parcelas.                                                                                                                         |Int    |
+payments.processing_mode          |Modo de procesar os pagamentos (pode ser aggregator ou gateway). Atualmente só se suporta aggregator.                             |String |
+payments.description              |Descrição do pagamento.                                                                                                           |String |
+payments.capture                  |Flag que indica se se trata de um pagamento de autorização e captura.                                                             |Boolean|
+payments.external_reference       |Referência do cliente.                                                                                                            |String |
+payments.statement_descriptor     |Descrição da transação que aparecerá na fatura do cartão para o caso de “gateway”.                                                |String |
+disbursements                     |Lista de pagamentos de saída. Deve ser um pagamento para cada Merchant associado na transação.                                    |Array  |
+disbursements.id                  |ID do pagamento do Merchant.                                                                                                      |Long   |
+disbursements.amount              |Valor do pagamento para o Merchant.                                                                                               |Float  |
+disbursements.external_reference  |Referência do cliente.                                                                                                            |String |
+disbursements.collector_id        |ID da conta de MP do Merchant.                                                                                                    |Long   |
+disbursements.application_fee     |Total de comissão do Marketplace.                                                                                                 |Float  |
+disbursements.money_release_days  |Quantidade de dias (à partir da data de aprovação do pagamento) em que se vai liberar o pagamento do Merchant.                    |String |
+disbursements.additional_info     |Informação adicional dos itens, envios, etc. da transação.                                                                        |Object |
+additional_info.items             |Lista de itens comprados.                                                                                                         |Array  |
+items.id                          |ID do item.                                                                                                                       |String |
+items.title                       |Título do item                                                                                                                    |String |
+items.picture_url                 |URL da imagem do item.                                                                                                            |String |
+items.description                 |Descrição do item.                                                                                                                |String |
+items.category_id                 |Categoria à qual pertence o item segundo a [API de Categorias](https://api.mercadopago.com/item_categories) do Mercado Livre.     |String |
+items.quantity                    |Quantidade de produtos comprados do item.                                                                                         |Int    |
+items.unit_price                  |Preço da unidade.                                                                                                                 |Float  |
+additional_info.shipments         |Data de envio dos itens.                                                                                                          |Object |
+shipments.receiver_address        |Dados do endereço de entrega dos itens.                                                                                           |Object |
 receiver_address.zip_code         |Código postal.                                                                                                                    |String |
-receiver_address.street_name      |Nombre de la calle de la dirección de envío.                                                                                      |String |
-receiver_address.street_number    |Número de la calle de la dirección de envío.                                                                                      |Int    |
-receiver_address.floor            |Número del piso del departamento.                                                                                                 |Int    |
-receiver_address.apartment        |Departamento                                                                                                                      |String |
-payer                             |Datos del Payer.                                                                                                                  |Object |
-payer.id                          |ID de la cuenta de MP del payer (Requerido solo para el payment_method_id = account_money).                                       |Long   |
-payer.email                       |Email del Payer.                                                                                                                  |String |
-payer.first_name                  |Nombre del Payer                                                                                                                  |String |
-payer.last_name                   |Apellido del Payer                                                                                                                |String |
-payer.address                     |Datos de la dirección del Payer.                                                                                                  |Object |
+receiver_address.street_name      |Nome da rua do endereço de envio.                                                                                                 |String |
+receiver_address.street_number    |Número da rua do endereço de envio.                                                                                               |Int    |
+receiver_address.floor            |Número do andar do apartamento.                                                                                                   |Int    |
+receiver_address.apartment        |Apartamento.                                                                                                                      |String |
+payer                             |Dados do pagador.                                                                                                                 |Object |
+payer.id                          |ID da conta do MP do payer (requerido apenas para o payment_method_id = account_money).                                           |Long   |
+payer.email                       |Email do Payer.                                                                                                                   |String |
+payer.first_name                  |Nome do Payer.                                                                                                                    |String |
+payer.last_name                   |Sobrenome do Payer.                                                                                                               |String |
+payer.address                     |Dados do endereço do Payer.                                                                                                       |Object |
 address.zip_code                  |Código postal.                                                                                                                    |String |
-address.street_name               |Nombre de la calle.                                                                                                               |String |
-address.street_number             |Número de la calle.                                                                                                               |String |
-payer.identification              |Datos de identificación del Payer.                                                                                                |Object |
-identification.type               |Tipo de identificación del Payer.                                                                                                 |String |
-identification.number             |Número de identificación del Payer.                                                                                               |String |
-external_reference                |Referencia del cliente.                                                                                                           |String |
-description                       |Descripción del pago                                                                                                              |String |
-binary_mode                       |Flag que indica el modo de procesamiento del Splitter. Por ahora, solo se soporta false.                                          |Boolean|
-date_created                      |Fecha de creación del Splitter                                                                                                    |String |
-date_last_updated                 |Fecha de última modificación del Splitter                                                                                         |String |
+address.street_name               |Nome da rua.                                                                                                                      |String |
+address.street_number             |Número da rua.                                                                                                                    |String |
+payer.identification              |Dados de identificação do Payer.                                                                                                  |Object |
+identification.type               |Tipo de identificação do Payer.                                                                                                   |String |
+identification.number             |Número de identificação do Payer.                                                                                                 |String |
+external_reference                |Referência do cliente.                                                                                                            |String |
+description                       |Descrição do pagamento.                                                                                                           |String |
+binary_mode                       |Flag que indica o modo de processamento do Split. Por enquanto, somente se suporta false.                                         |Boolean|
+date_created                      |Data de criação do Split.                                                                                                         |String |
+date_last_updated                 |Data da última modificação do Split.                                                                                              |String |
 metadata                          |                                                                                                                                  |object |
-application_id                    |ID del Marketplace                                                                                                                |Long   |
+application_id                    |ID do Marketplace.                                                                                                                |Long   |
 
-## Búsqueda de Splitter
-Se pueden realizar búsquedas de Splitters por varios filtros además de poder definir un “limit” y “offset” para manejar la paginación.
+## Procurar por um Split
+Você pode procurar por Splits por vários filtros, além de poder definir um "limit" e "offset" para manipular a paginação.
 
-Un Marketplace solo podrá realizar búsquedas de sus propios Splitters.
+Um marketplace só pode procurar seus próprios Splits.
 
-Los Merchants pueden ver sus pagos en la API pública de búsqueda de Payments con el ID del pago de salida.
+Os merchants podem ver seus pagamentos na API de pesquisa pública do Payments com o código de pagamento de saída.
+
 ### Request
 
 ```curl
@@ -1492,31 +1494,31 @@ curl -X GET \
 }
 ```
 
-#### Definición de campos
-Nombre       |Descripción                                                  |Tipo  |
+#### Definição dos campos
+Nome         |Descrição                                                    |Tipo  |
 -------------|-------------------------------------------------------------|------|
-paging       |Datos de la paginación                                       |Object|
-paging.total |Total de resultados                                          |Int   |
-paging.limit |Tamaño de página                                             |Int   |
-paging.offset|Número de página                                             |Int   |
-results      |Lista de Splitters que concuerdan con los filtros de búsqueda|Array |
+paging       |Dados da paginação.                                          |Object|
+paging.total |Total de resultados.                                         |Int   |
+paging.limit |Tamanho da página.                                           |Int   |
+paging.offset|Número da página.                                            |Int   |
+results      |Lista de Splitts que concordam com os filtros de busca.      |Array |
 
-### Filtros de búsqueda
-Atributo                   |Descripción                                                                                                                                    |Ejemplo de búsqueda|
+### Filtros de busca 
+Atributo                   |Descrição                                                                                                                                      |Exemplo de busca   |
 ---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-date_created               |Fecha de creación del splitter. Devuelve todos los splitters creados en el rango especificado                                                  |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&range=date&begin_date=2018-02-01&end_date=2018-12-02
-status                     |Estado del splitter.                                                                                                                           |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&status=pending
-payment.id                 |ID del pago de entrada.                                                                                                                        |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.id=123456
-payment.payment_method_id  |Método de pago.                                                                                                                                |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.payment_method_id=visa
-payment.external_reference |ID generado para este pago de entrada en particular.                                                                                           |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.external_reference=EXT_REF
-payment.transaction_amount |Monto del pago de entrada. Aún no disponible ya que se debe definir cómo serán las búsquedas con operadores.                                   |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.transaction_amount=30
-payer.id                   |User ID del pagador (en caso de que sea con account_money). Devuelve todos los splitters en el cual el payer realizó una compra al marketplace.|/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payer.id=111111
-payer.email                |Email del Payer.                                                                                                                               |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payer.email=test@testing.com
-disbursement.collector_id  |User ID del Merchant. Devuelve todos los splitters en el cual el Merchant realizó alguna venta a través del Marketplace.                       |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&collector_id=222222
-external_reference         |ID generado por el marketplace, ID de orden u otro identificador que el marketplace conoce para identificar una venta.                         |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&external_reference=EXT_REF
+date_created               |Data de criação do splitter. Devolve todos os splitters criados no intervalo especificado.                                                     |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&range=date&begin_date=2018-02-01&end_date=2018-12-02
+status                     |Estado do splitter.                                                                                                                            |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&status=pending
+payment.id                 |ID do pagamento de entrada.                                                                                                                    |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.id=123456
+payment.payment_method_id  |Método de pagamento.                                                                                                                           |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.payment_method_id=visa
+payment.external_reference |ID gerado para este pagamento de entrada em particular.                                                                                        |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.external_reference=EXT_REF
+payment.transaction_amount |Total do pagamento de entrada. Ainda não disponível já que se deve definir como serão as buscas com operadores.                                |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.transaction_amount=30
+payer.id                   |User ID do pagador (em caso de que seja com account_money). Devolve todos os splitters no qual o payer realizou uma compra no marketplace.     |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payer.id=111111
+payer.email                |Email do Payer.                                                                                                                                |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payer.email=test@testing.com
+disbursement.collector_id  |User ID do Merchant. Devolve todos os splitters nos quais o Merchant realizo alguma venda através do Marketplace.                              |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&collector_id=222222
+external_reference         |ID gerado pelo marketplace, ID de orden ou outro identificador que o marketplace conhece para identificar uma venda.                           |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&external_reference=EXT_REF
 
 ## Filtros de atributos
-Los filtros de atributos sirven para simplificar la respuesta de búsqueda. En el campo “attributes” se especifican los nombres de los campos que queremos que se muestren en el resultado final.
+Os filtros de atributos servem para simplificar a resposta da pesquisa. No campo "attributes" são especificados os nomes dos campos que queremos mostrar no resultado final.
 
 ### Request
 
@@ -1552,8 +1554,8 @@ curl -X GET \
 }
 ```
 
-### Respuestas de Error
-Las respuestas de error se presentan de la siguiente manera:
+### Respostas de erro
+As respostas de erro se apresentam da seguinte maneira:
 
 ```json
 {
@@ -1570,20 +1572,20 @@ Las respuestas de error se presentan de la siguiente manera:
 }
 ```
 
-### Definición de campos
-Nombre           |Descripción                                       |Tipo  |
+### Definição dos campos
+Nome             |Descrição                                         |Tipo  |
 -----------------|--------------------------------------------------|------|
-error            |ID del error HTTP.                                |String|
-message          |Mensaje general del error.                        |String|
-status           |Código HTTP del error.                            |Int   |
-cause            |Lista de causas del error.                        |Array |
-cause.code       |Código específico de la aplicación.               |Long  |
-cause.description|Descripción específica del error de la aplicación.|String|
-cause.data       |Datos extras del error.                           |String|
+error            |ID do erro HTTP.                                  |String|
+message          |Mensagem geral do erro.                           |String|
+status           |Código HTTP do erro.                              |Int   |
+cause            |Lista de causas do erro.                          |Array |
+cause.code       |Código específico da aplicação.                   |Long  |
+cause.description|Descrição específica do erro da aplicação.        |String|
+cause.data       |Dados extra do erro.                              |String|
 
-### Códigos de error
+### Códigos de erro
 
-Código|Descripción|
+Código|Descrição                                                       |
 ------|----------------------------------------------------------------|
 40004 |application_id not valid for this get.
 40005 |application_id is required.
