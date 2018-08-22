@@ -33,6 +33,16 @@ The SITE_ID depends on the country you are going to work in. The corresponding c
 * **MPE**: Perú.  
 * **MLM**: México.  
 
+
+Also, you can get the payment methods supported for recurring payments/payments without CVV:
+[[[
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+```
+]]]
+
 **Response**
 
 	[
