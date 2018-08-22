@@ -4,6 +4,12 @@ Each merchant number configured on the platform (`merchant_account_id`) will be 
 
 The services used can be viewed in the response of each payment. These services [vary according to the country](/guides/localization/gateway.es.md) and they can also be modified in each payment.
 
+> NOTE
+>
+> Note
+>
+> Using the services has an additional cost. For any doubts please contact the account manager.
+
 See below an example
 
 ## Payment by default

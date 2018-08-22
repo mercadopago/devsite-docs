@@ -4,6 +4,12 @@ Cada número de estabelecimento comercial configurado na plataforma (`merchant_a
 
 Os serviços utilizados podem ser visualizados na resposta de cada pagamento. Esses serviços [variam de acordo com o país](/guides/localization/gateway.pt.md) e ainda podem ser alterados em cada pagamento.
 
+> NOTE
+>
+> Nota
+>
+> Usando os serviços terá um custo adicional. Caso tenha dúvidas, entre em contato com o seu gerente de contas.
+
 Veja o exemplo a seguir.
 
 ## Pagamento padrão
