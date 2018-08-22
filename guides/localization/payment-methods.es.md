@@ -33,6 +33,16 @@ El SITE_ID dependerá del país en el que quieras operar. Los códigos correspon
 * **MPE**: Perú.  
 * **MLM**: México.  
 
+A su vez, también se pueden consultar los medios de pago soportados para operaciones recurrentes/pagos sin CVV:
+[[[
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+```
+]]]
+
+
 **Respuesta**
 
 	[
