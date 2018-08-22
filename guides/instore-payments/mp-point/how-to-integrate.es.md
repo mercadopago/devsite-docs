@@ -199,7 +199,7 @@ curl -X DELETE \
 El GET en esta API es la que posibilita obtener todos los devices configurados y sincronizados para tu cuenta de Mercado Pago
 
 ```curl
-curl -X DELETE \
+curl -X GET \
 -H "Content-Type: application/json" \
 'https://mobile.mercadopago.com/point/services/integrations/v1/devices?access_token=ACCESS_TOKEN'
 ```
