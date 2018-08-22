@@ -35,10 +35,10 @@ A continuación un listado de funcionalidades específicas de nuestra API por pa
 
 |      Funcionalidad      | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :---------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Autorización y captura  | ✔   | ✔   |     |     |     | ✔   |     |     |
+| Autorización y captura  | ✔   | ✔   |     |     | ✔   | ✔   |     |     |
 | Captura por monto menor | ✔   | ✔   |     |     |     |     |     |     |
-| Reembolsos              | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
-| Reembolsos parciales    | ✔   | ✔   | ✔   |     | ✔   |     |     |     |
+| Reembolsos              | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Reembolsos parciales    | ✔   | ✔   | ✔   |     | ✔   |     |     | ✔   |
 | Pagos sin CVV           | ✔   | ✔   |     | ✔   | ✔   | ✔   | ✔   |     |
 | Soft descriptor         | ✔   | ✔   |     |     |     |     |     | ✔   |
 
