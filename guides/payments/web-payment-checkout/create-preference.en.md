@@ -11,7 +11,7 @@ sites_supported:
 ---
 
 
-# Web Tokenize Checkout - Preferencia de pago
+# Web Payment Checkout - Preferencia de pago
 
 Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
 
