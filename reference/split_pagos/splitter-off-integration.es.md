@@ -54,7 +54,7 @@ curl -X POST \
      'https://api.mercadopago.com/v1/split_payments?access_token=M_ACCESS_TOKEN'
     -d '
         {
-            "marketplace": "MktSplitterMLB-TEST",
+            "application_id": "4422991580014613",
             "payments": [
                 {
                 "payment_method_id": "visa",
@@ -179,7 +179,6 @@ curl -X POST \
 {
   "id": 20458724,
   "status": "approved",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870106238,
@@ -322,7 +321,6 @@ curl -X GET \
 {
   "id": 20458724,
   "status": "approved",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870106238,
@@ -465,7 +463,6 @@ curl -X POST \
 {
   "id": 20458724,
   "status": "approved",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870106238,
@@ -606,7 +603,6 @@ curl -X POST \
 {
   "id": 20458724,
   "status": "approved",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870106238,
@@ -752,7 +748,6 @@ curl -X PUT \
 {
   "id": 20457853,
   "status": "approved",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870083738,
@@ -865,7 +860,6 @@ curl -X PUT \
 {
   "id": 20458724,
   "status": "pending",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870106238,
@@ -1011,7 +1005,6 @@ curl -X POST \
 {
   "id": 20458724,
   "status": "approved",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870106238,
@@ -1154,7 +1147,6 @@ curl -X POST \
 {
   "id": 20458724,
   "status": "approved",
-  "marketplace": "MktSplitterMLB-TEST",
   "payments": [
     {
       "id": 3870106238,
@@ -1282,7 +1274,6 @@ Nombre                            |Descripción                                 
 ----------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------
 id                                |ID del Splitter.                                                                                                                  |Long   |
 status                            |Estado del Splitter ("pending", "approved", "rejected", "cancelled", "refunded", "partially_refunded")                            |String |
-marketplace                       |Nombre del Marketplace.                                                                                                           |String |
 payments                          |Lista de pagos de entrada realizados por el Payer.                                                                                |Array  |
 payments.id                       |ID del pago del Payer.                                                                                                            |Long   |
 payments.payment_type_id          |Medio de pago.                                                                                                                    |String |
@@ -1366,7 +1357,6 @@ curl -X GET \
     {
       "id": 20458724,
       "status": "approved",
-      "marketplace": "MktSplitterMLB-TEST",
       "payments": [
         {
           "id": 3870106238,
