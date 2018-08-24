@@ -41,7 +41,7 @@ curl -X GET \
 ```
 ]]]
 
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
+Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference/identification_types/endpoints/_identification_types/get.yaml).
 
 ## Tipos de documento por país
 
