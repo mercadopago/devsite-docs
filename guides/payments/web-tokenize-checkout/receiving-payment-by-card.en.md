@@ -2,17 +2,17 @@
 
 With Mercado Pago you can collect card information in a secure way through our Tokenizer.
 
-### Paso 1: Incorporar datos del viewport
+### Step 1: Add viewport data
 
-Establece el viewport agregando el siguiente código dentro de la etiqueta `<head>` de tu sitio Web:
+Set the viewport by adding the following code inside the `<head>` tag of your website:
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 ```
 
-### Paso 2: Incorporar el código HTML
+### Step 2: Add HTML code
 
-Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprador presione el botón se mostrará el checkout. Incluye el siguiente código en el lugar donde va a estar ubicado el botón dentro de tu sitio Web:
+This _fragment of HTML code_ will insert a payment button. When the buyer presses the button, the checkout will be displayed. Include the following code in the place where the button will be located within your website:
 
 ```html
 <form action="/procesar-pago" method="POST">
@@ -26,24 +26,24 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Puedes encontrar tu public key en la página de [credenciales](https://www.mercadopago.com.ar/account/credentials)
+> You can find the public key in the [credentials](https://www.mercadopago.com.ar/account/credentials) page.
 
-### Paso 3: Obtener los datos
+### Step 3: Get the data
 
-El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del fragmento de código HTML (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
+*Web Tokenize Checkout* will do a `POST` to the URL that you have defined in the `action` attribute of the HTML code snippet (In the example: **/process-payment**) with certain data. You must use this information to make the payment.
 
-#### Los datos son:
+#### Data:
 
-Dato | Descripción
+Data | Description
 ---- | ------------
-**token** | Identificador único de la tarjeta tokenizada
-**payment_method_id** | Medio de pago elegido por el comprador
-**installments** | Cantidad de cuotas elegidas por el comprador
-**issuer_id** | ID del emisor de la tarjeta del comprador
+**token** | Unique identifier of the tokenized card
+**payment_method_id** | Payment method chosen by the buyer
+**installments** | Amount of installments chosen by the buyer
+**issuer_id** | ID of the issuer of the buyer's card
 
-_No recibirás ni el **transaction_amount** ni el **payer.email** por cuestiones de seguridad._
+_You will not receive the **transaction_amount** neither the **payer.email** for security reasons._
 
 [[[
 ```php
@@ -80,11 +80,11 @@ issuer_id = Request["issuer_id"]
 ```
 ]]]
 
-### Paso 4: Realizar el pago
+### Step 4: Creating the payment
 
-Para realizar el pago, debes realizar un API call usando el [SDK de Mercado Pago](http://beta.mercadopago.com/developers/es/plugins) que corresponda con el lenguaje de programación que estés utilizando en tu sitio.
+To make the payment, you must perform an API call using the [SDK de Mercado Pago](http://beta.mercadopago.com/developers/es/plugins) that corresponds with the programming language that you are using on your site.
 
-Solamente debes realizar un *API call* incluyendo los datos que recibiste del checkout:
+You should only make an *API call* including the data you received from the checkout:
 
 [[[
 ```php
@@ -121,10 +121,10 @@ payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
        .setIssuerId(issuer_id)
        .setPayer(new Payer()
          .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
-// Guarda y postea el pago
+// Save and create the payment
 payment.save();
 //...
-// Imprime el estado del pago
+// Shows payment stauts
 System.out.println(payment.getStatus());
 //...
 ```
@@ -144,10 +144,10 @@ var payment_data = {
   }
 };
 
-// Guarda y postea el pago
+// Save and do the payment POST
 mercadopago.payment.save(payment).then(function (data) {
   // ...    
-  // Imprime el estado del pago
+  // Shows payment stauts
   Console.log(payment.status);
 }).catch(function (error) {
   // ...
@@ -168,7 +168,7 @@ payment.issuer_id = issuer_id
 payment.payer = {
   email: "[FAKER][INTERNET][FREE_EMAIL]"
 }
-# Guarda y postea el pago
+# Save and create the payment
 payment.save()
 
 ```
@@ -191,18 +191,18 @@ Payment payment = new Payment()
         Email = "[FAKER][INTERNET][FREE_EMAIL]"
     }
 };
-// Guarda y postea el pago
+// Save and create the payment
 payment.Save();
 //...
-// Imprime el estado del pago
+// Shows payment stauts
 Console.log(payment.Status);
 //...
 ```
 ]]]
 
-> Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
+> The fields required to send are `token`, `transaction_amount`, `payment_method_id` and the `payer.email`.
 
-Respuesta:
+Response:
 
 ```json
 {
@@ -220,12 +220,12 @@ Respuesta:
 }
 ```
 
-## Recomendaciones adicionales
+## Additional recommendations
 
-### Tarjetas de prueba
+### Test cards
 
-Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](/guides/payments/api/testing.es.md).
+To make testing payments (with your TEST credentials), you need to use [test cards](/guides/payments/api/testing.es.md).
 
-### Promociones
+### Installments offer
 
-Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com/mla/ayuda/banners).
+We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com/mla/ayuda/banners).
