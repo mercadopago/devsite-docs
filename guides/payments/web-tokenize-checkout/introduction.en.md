@@ -3,42 +3,42 @@
 
 > INFO
 >
-> ¿Qué es tokenizar?
+> What is tokenize?
 >
-> La tokenización es el proceso por el cual se cifra de forma segura un número de tarjeta de crédito
+> Tokenization is the process by which a card number is encrypted securely.
 
-Con el *Web Tokenize Checkout* de **Mercado Pago** olvídate de la complejidad del armado de tu formulario para la selección de los medios de pago y la tokenización. Esta integración simple te proporciona un formulario con el diseño y el front-end listo.
+With **Mercado Pago** *Web Tokenize Checkout* forget about the complexity of setting up your form for the selection of payment methods and tokenization. This simple integration provides you with a form with the design and the front-end ready.
 
-Integra el *Web Tokenize Checkout* en tu sitio para brindarle a tus compradores una estilizada experiencia que **Mercado Pago**  mantiene en constante mejora.
+Integrate * Web Tokenize Checkout * on your site to give your buyers a stylized experience that ** Mercado Pago ** keeps in constant improvement.
 
-Los datos sensibles de las tarjetas de crédito y débito son cifrados y almacenados por **Mercado Pago** (con su correspondiente cumplimiento PCI), sin que sean transmitidos a tus servidores.
+The sensitive data of the credit and debit cards are encrypted and stored by **Mercado Pago** (with its corresponding PCI compliance), without being transmitted to your servers.
 
 ---
 
-## Soporte de Navegadores
+## Browsers Support
 
-Para garantizar una navegación segura y cumplir con las normativas PCI, el *Web Tokenize Checkout* brinda una experiencia de pago solo en los navegadores que soporten el protocolo TLS 1.1 o mayor
+To ensure safe navigation and to comply with PCI regulations, the *Web Tokenize Checkout* provides a payment experience only in browsers that support the TLS 1.1 protocol or higher.
 
-En el caso de que el comprador tenga un navegador no soportado, se le indicará que no podrá realizar la compra hasta que lo actualice.
+In the case that the buyer has an unsupported browser, they will be informed that they will not be able to make the purchase until they update it.
 
 ### Desktop web
 
-Navegador | Soporte
+Browser | Support
 --------- | --------
-**Chrome** | Completo
-**Firefox** | Completo
+**Chrome** | Complete
+**Firefox** | Complete
 **Internet Explorer** | 11
-**Edge** | Completo
-**Safari** | Completo
-**Opera** | Completo
+**Edge** | Complete
+**Safari** | Complete
+**Opera** | Complete
 
 ### Mobile web
 
-Navegador | Soporte
+Browser | Support
 --------- | --------
-**Chrome** | Completo
-**Firefox** | Completo
+**Chrome** | Complete
+**Firefox** | Complete
 **Windows Phone (Internet Explorer Mobile)** | _No_
-**Safari Mobile** | Completo
-**Opera Mini** | _Básico_
+**Safari Mobile** | Complete
+**Opera Mini** | _Basic_
 **Android Browser** | _No_
