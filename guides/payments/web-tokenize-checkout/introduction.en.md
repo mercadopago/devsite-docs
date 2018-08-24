@@ -9,7 +9,7 @@
 
 With **Mercado Pago** *Web Tokenize Checkout* forget about the complexity of setting up your form for the selection of payment methods and tokenization. This simple integration provides you with a form with the design and the front-end ready.
 
-Integrate * Web Tokenize Checkout * on your site to give your buyers a stylized experience that ** Mercado Pago ** keeps in constant improvement.
+Integrate *Web Tokenize Checkout* on your site to give your buyers a stylized experience that ** Mercado Pago ** keeps in constant improvement.
 
 The sensitive data of the credit and debit cards are encrypted and stored by **Mercado Pago** (with its corresponding PCI compliance), without being transmitted to your servers.
 
