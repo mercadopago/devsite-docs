@@ -28,41 +28,70 @@ Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor o
 Los pasos a seguir para configurar modo Agregador son:
 
 1. Configurar Afiliación.
-1. Configurar Planes de Pago Nativo.
-1. Configurar Planes de Pago Off-Line.
-1. Configurar Plan de Pago Webpay.
-1. Configurar Planes de Pago Personalizados.
+2. Configurar Planes de Pago Nativos.
+3. Configurar Planes de Pago Off-Line.
+4. Configurar Plan de Pago Webpay.
+5. Configurar Planes de Pago Personalizados.
+
+## Configurar VTEX para operar en modo Gateway
+1. Configurar Afiliación
+2. Configurar Planes de pago Nativos.
+3. Configurar Plan de pago 'por defecto'.
+
+## Configurar Device en VTEX
 1. Configurar DeviceID.
 
-### Configurar afiliación
+## Realizar customizaciones en el checkout de VTEX
+1. Customizaciones de checkout
+
+### Configurar afiliación en modo agregador
 
 Para operar en modo Agregador solo es necesario configurar una afiliación.
 
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en PCI Gateway.
-
-    ![VTEX afiliation](/images/vtex-afiliation-1.png)
-
-3. Seleccione en el menú lateral la opción "Pago".
-4. Configuraciones. 
+1. Seleccione en el menú lateral la opción "Pago".
+2. Configuraciones. 
 
     ![VTEX afiliation](/images/vtex-config.png)
     
-5. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
-6. Añadir nueva afiliación con el botón (+)
+3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
+4. Añadir nueva afiliación con el botón (+)
 
     ![VTEX afiliation](/images/vtex-afiliation.png)
     
-7. Buscar y seleccionar "MercadoPagoV1".
+5. Buscar y seleccionar "MercadoPagoV1".
 
     ![VTEX afiliation](/images/vtex-afiliation-3.png)    
     
     
-8. Completar la información requerida en la afiliación.
+6. Completar la información requerida en la afiliación.
 
     ![VTEX afiliation](/images/vtex-afiliation-4.png)
 
+----[mlc, global]----
+- Nombre de la afiliación: Nombre que identificará la afiliación.
+- OAuth login: No se utiliza.
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
+- ExpiredTokenIn: No se utiliza - dejar en blanco.
+- Merchant Account Id: No se utiliza - dejar en blanco.
+- Processing Mode: Seleccionar aggregator.
+- CountryName: Seleccionar país.
+- SoftDescriptor: No se utiliza - dejar en blanco.
+- Description: Descripción de la operación (puede ser blanco).
+- CategoryId: Categoría del producto - Seleccionar de la lista.
+- Financial Institution: Sólo para Chile - ingresar 1234.
+- Use External Installments: Yes.
+- Antifraud: Yes.
+- Time Zone: Región que define la hora local.
+- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
+- maxInstallments: Cantidad máxima de cuotas.
+- Categoria Principal: Categoría del producto - Seleccionar de la lista.
+- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+
+------------
+
+----[mlb, global]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
 - PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
@@ -75,17 +104,138 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 - SoftDescriptor: Texto para el resumen de la descripción del pago en la tarjeta de crédito (solo para Brasil).
 - Description: Descripción de la operación (puede ser blanco).
 - CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: Sólo para Chile - ingresar 1234.
+- Financial Institution: No se utiliza - dejar en blanco.
 - Use External Installments: Yes.
 - Antifraud: Yes.
 - Time Zone: Región que define la hora local.
 - orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
 - maxInstallments: Cantidad máxima de cuotas.
 - Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: Cantidad de horas para realizar la captura automatica (sólo para
-Argentina y Brasil).
+- Captura de segurança antecipada: Cantidad de horas para realizar la captura automatica.
 
-### Configurar plan de pago Nativo
+------------
+
+----[mla, global]----
+- Nombre de la afiliación: Nombre que identificará la afiliación.
+- OAuth login: No se utiliza.
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
+- ExpiredTokenIn: No se utiliza - dejar en blanco.
+- Merchant Account Id: No se utiliza - dejar en blanco.
+- Processing Mode: Seleccionar aggregator.
+- CountryName: Seleccionar país.
+- SoftDescriptor: No se utiliza - dejar en blanco.
+- Description: Descripción de la operación (puede ser blanco).
+- CategoryId: Categoría del producto - Seleccionar de la lista.
+- Financial Institution: No se utiliza - dejar en blanco.
+- Use External Installments: Yes.
+- Antifraud: Yes.
+- Time Zone: Región que define la hora local.
+- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
+- maxInstallments: Cantidad máxima de cuotas.
+- Categoria Principal: Categoría del producto - Seleccionar de la lista.
+- Captura de segurança antecipada: Cantidad de horas para realizar la captura automatica.
+
+------------
+
+----[mpe, global]----
+- Nombre de la afiliación: Nombre que identificará la afiliación.
+- OAuth login: No se utiliza.
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
+- ExpiredTokenIn: No se utiliza - dejar en blanco.
+- Merchant Account Id: No se utiliza - dejar en blanco.
+- Processing Mode: Seleccionar aggregator.
+- CountryName: Seleccionar país.
+- SoftDescriptor: No se utiliza - dejar en blanco.
+- Description: Descripción de la operación (puede ser blanco).
+- CategoryId: Categoría del producto - Seleccionar de la lista.
+- Financial Institution: No se utiliza - dejar en blanco.
+- Use External Installments: Yes.
+- Antifraud: Yes.
+- Time Zone: Región que define la hora local.
+- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
+- maxInstallments: Cantidad máxima de cuotas.
+- Categoria Principal: Categoría del producto - Seleccionar de la lista.
+- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+
+------------
+
+----[mco, global]----
+- Nombre de la afiliación: Nombre que identificará la afiliación.
+- OAuth login: No se utiliza.
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
+- ExpiredTokenIn: No se utiliza - dejar en blanco.
+- Merchant Account Id: No se utiliza - dejar en blanco.
+- Processing Mode: Seleccionar aggregator.
+- CountryName: Seleccionar país.
+- SoftDescriptor: No se utiliza - dejar en blanco.
+- Description: Descripción de la operación (puede ser blanco).
+- CategoryId: Categoría del producto - Seleccionar de la lista.
+- Financial Institution: No se utiliza - dejar en blanco.
+- Use External Installments: Yes.
+- Antifraud: Yes.
+- Time Zone: Región que define la hora local.
+- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
+- maxInstallments: Cantidad máxima de cuotas.
+- Categoria Principal: Categoría del producto - Seleccionar de la lista.
+- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+
+------------
+
+----[mlv, global]----
+- Nombre de la afiliación: Nombre que identificará la afiliación.
+- OAuth login: No se utiliza.
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
+- ExpiredTokenIn: No se utiliza - dejar en blanco.
+- Merchant Account Id: No se utiliza - dejar en blanco.
+- Processing Mode: Seleccionar aggregator.
+- CountryName: Seleccionar país.
+- SoftDescriptor: No se utiliza - dejar en blanco.
+- Description: Descripción de la operación (puede ser blanco).
+- CategoryId: Categoría del producto - Seleccionar de la lista.
+- Financial Institution: No se utiliza - dejar en blanco.
+- Use External Installments: Yes.
+- Antifraud: Yes.
+- Time Zone: Región que define la hora local.
+- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
+- maxInstallments: Cantidad máxima de cuotas.
+- Categoria Principal: Categoría del producto - Seleccionar de la lista.
+- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+
+------------
+
+----[mlu, global]----
+- Nombre de la afiliación: Nombre que identificará la afiliación.
+- OAuth login: No se utiliza.
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
+- ExpiredTokenIn: No se utiliza - dejar en blanco.
+- Merchant Account Id: No se utiliza - dejar en blanco.
+- Processing Mode: Seleccionar aggregator.
+- CountryName: Seleccionar país.
+- SoftDescriptor: No se utiliza - dejar en blanco.
+- Description: Descripción de la operación (puede ser blanco).
+- CategoryId: Categoría del producto - Seleccionar de la lista.
+- Financial Institution: No se utiliza - dejar en blanco.
+- Use External Installments: Yes.
+- Antifraud: Yes.
+- Time Zone: Región que define la hora local.
+- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
+- maxInstallments: Cantidad máxima de cuotas.
+- Categoria Principal: Categoría del producto - Seleccionar de la lista.
+- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+
+------------
+
+### Configurar plan de pago Nativo en modo agregador
 
 Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
 
@@ -103,7 +253,7 @@ Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integr
 
 7. Colocar una descripción (puede ser blancos).
 8. Seleccionar la afiliación.
-9. Seleccionar cuotas automático.
+9. Seleccionar cuotas `automático`.
 10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
 11. Salvar la configuración.
 
@@ -113,17 +263,17 @@ Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integr
 
     ![Native plan](/images/vtex-native-plan-5.png)
 
-### Configurar Plan de Pago Off-Line
+### Configurar Plan de Pago Off-Line en modo agregador
 
 Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
 - Primero se genera de un ticket con las instrucciones para el pago.
 - Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
 
-#### Medios Off-Line por país
+#### Medios Off-Line por país en modo agregador
 
 - Argentina: PagoFacil, Rapipago, RedLink.
 - Chile: Servipag.
-- Colombia: Efecty, Davivienda.
+- Colombia: Efecty, Davivienda, Baloto.
 - México: Banamex, Bancomer, Oxxo.
 - Perú: PagoEfectivo.
 - Uruguay: Abitab, Redpagos.
@@ -149,7 +299,9 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 
     ![Offline](/images/vtex-offline-plan-4.png)
 
-### Configurar plan de pago Webpay
+
+----[mco, global]----
+### Configurar plan de pago Webpay en modo agregador
 
 1. Desplegar el menú de Catalog .
 2. Ingresar en PCI Gateway.
@@ -172,7 +324,8 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 10. Salvar la configuración.
 
     ![Offline](/images/vtex-webpay-4.png)
-
+    
+------------
 
 ### Configurar plan de pago personalizado
 
@@ -209,7 +362,10 @@ Uruguay: Oca.
 
 ![Custom plan](/images/vtex-custom-4.png)
 
-### Configurar Plan de Pago Personalizado - Tarjetas de Argentina
+
+----[mla, global]----
+
+### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Argentina 
 
 | Nombre                   | Descripción              | Medio de pago |       Bines {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pago en adquiriente (opcional) |
 |--------------------------|--------------------------|---------------|:-------------------------------------------------------:|------------------------------------------|
@@ -220,8 +376,11 @@ Uruguay: Oca.
 | Cordobesa                | Cordobesa                | Mastercard    | 542702-542702,544764-544764,550073-550073,528824-528824 | cordobesa                                |
 | Mercado Pago - Patagonia | Mercado Pago - Patagonia | Mastercard    | 515073-515073,515070-515070,532383-532383,532384-532384 | mercadopago_cc                           |
 
+------------
 
-### Configurar Plan de Pago Personalizado - Tarjetas de Chile
+----[mlc, global]----
+
+### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Chile
 
 | Nombre | Descripción | Medio de pago |                                   Bines {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pago en adquiriente (opcional) |
 |--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
@@ -229,17 +388,25 @@ Uruguay: Oca.
 | Magna  | Magna       | Mastercard    | 568000-568099                                                                                                   | magna                                    |
 | CMR    | CMR         | Mastercard    | 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984 | cmr                                      |
 
-### Configurar Plan de Pago Personalizado - Tarjetas de Colombia
+------------
+
+----[mco, global]----
+### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Colombia
 
 | Nombre  | Descripción | Medio de pago | Bines {min}-{max},{min}-{max},{bin1},{bin2} | Código de pago en adquiriente (opcional) |
 |---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
 | Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
 
-### Configurar Plan de Pago Personalizado - Tarjetas de Uruguay
+------------
+
+----[mlu, global]----
+### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Uruguay
 
 | Nombre | Descripción | Medio de pago |                     Bines {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pago en adquiriente (opcional) |
 |--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
 | OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
+
+------------
 
 ## Configurar DeviceID
 
@@ -273,17 +440,6 @@ window.onload = startTimer;
 
     ![Custom plan](/images/vtex-device-settings-3.png)
 
-## Credenciales
-
-Para obtener las credenciales debes seguir los siguientes pasos:
-
-1. Loguearse en la cuenta de Mercado Pago.
-2. Ingresar en la [URL](https://www.mercadopago.com/mla/account/credentials).
-3. Seleccionar la solapa Checkout personalizado.
-4. Copiar y pegar la Public key y Access token (Modo Produccion para procesar pagos reales / Modo     Sandbox para realizar pruebas).
-5. Antes de pasar a Producción asegurarse de haber llenado el formulario ‘Quiero ir a producción’ (si ya se realizo este paso el link no aparece).
-
-
 ### Interpretar log de VTEX
 
 Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
@@ -311,8 +467,9 @@ Los datos más significativos son los siguientes:
 Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
 
 - `"Status":"rejected"`: Pago rechazado.
+- `"Status":"approved"`: Pago aprobado.
+- `"Status":"authorized"`: Pago autorizado esperando que se capture.
+- `"Status":"pending"`: Pago pendiente.
+- `"Status":"cancelled"`: Pago cancelado.
 
-- `"Status_detail":"cc_rejected_other_reason"`: Rechazo de la tarjeta de crédito, no hay información del motivo.
-- `"Status_detail":"cc_rejected_call_for_authorize"`: Rechazo de la tarjeta de crédito, el cliente debe llamar para autorizar el pago.
-- `"Status_detail":"cc_rejected_insufficient_amount"`: Rechazo de la tarjeta de crédito, el cliente no tiene saldo disponible suficiente.
-- `"Status_detail":"cc_rejected_high_risk"`: Rechazo de Mercado Pago, riesgo de fraude.
+Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](/guides/payments/api/handling-responses.es.md).
