@@ -73,6 +73,7 @@ A resposta esperada será a seguinte:
   "merchant_account_id": "#hashMerchantAccountID",
   "acquirer": "visa",
   "merchant_number": "1234567"
+  "acquirer_reconciliation": {...}
 }
 ```
 
@@ -80,6 +81,16 @@ Além de retornar os campos processing_mode e merchant_account_id, outros dois s
 
 * `acquirer`: Nome do adquirente
 * `merchant_number`: Número de estabelecimento comercial utilizado para processar o pagamento
+* `adquirer_reconciliation`: Campos utilizados para conciliar com as informações do cartão
+  * `authorization_code`: Código de Autorização
+  * `batch_closing_date`: Data de fechamento do lote
+  * `batch_number`: Número do lote
+  * `date_created`: Data de criação
+  * `date_last_updated`: Última data de atualização
+  * `operação`: Tipo de operação (Autorização - Captura - Compra online)
+  * `refund_id`: Id de reembolso no caso de ter existido um
+  * `terminal_number`: Número do terminal
+  * `transaction_number`: Número da transação
 
 ## Criando um pagamento parcelado
 
@@ -93,42 +104,89 @@ Para obter as promoções e cotas disponíveis:
 Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount,
-    "processing_mode": "gateway",
-    "merchant_account_id": "ID"
 }, setInstallmentInfo);
 ```
 
-A resposta conta com a informação das cotas disponíveis indicando o valor a pagar:
+Caso você tenha o Gateway e o Aggregador ativo em sua conta, a API irá responder os itens para cada modelo, onde irá conter informações sobre as parcelas disponíveis, taxas e o valor total a pagar.
+
+Você terá que escolher por qual dos 2 modos deseja processar o pagamento, enviando o atributo na criação do pagamento:
 
 ```json
-[
-    {
-        "payment_method_id": "amex",
-        "payment_type_id": "credit_card",
-        "processing_mode" : "gateway",
-        "merchant_account_id" : "ID",
-        "issuer": {
-            "id": "303",
-            "is_default": null,
-            "name": "Banco Patagonia",
-            "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/303.gif",
-            "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/303.gif"
+    [
+        {
+            "payment_method_id": "amex",
+            "payment_type_id": "credit_card",
+            "processing_mode" : "gateway",
+            "merchant_account_id" : "ID",
+            "issuer": {
+                "id": "303",
+                "is_default": null,
+                "name": "Banco Patagonia",
+                "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/303.gif",
+                "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/303.gif"
+            },
+            "payer_costs": [
+                {
+                    "installments": 1,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                },
+                {
+                    "installments": 3,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                },          
+                {
+                    "installments": 6,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                },            
+                {
+                    "installments": 9,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                },
+                {
+                    "installments": 12,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                }
+            ]
         },
-        "payer_costs": [
             {
-                "installments": 1,
-                "installment_rate": 0,
-                "discount_rate": 0
-            }
-        ]
-        ...
-    },
-    {
-        "payment_method_id": "amex",
-        "payment_type_id": "credit_card",
-        "processing_mode" : "gateway",
-        "merchant_account_id" : "ID",
-        ...
-  }
-]
+            "payment_method_id": "amex",
+            "payment_type_id": "credit_card",
+            "processing_mode" : "aggregator",
+            "merchant_account_id" : "null",
+            "issuer": {
+                "id": "303",
+                "is_default": null,
+                "name": "Banco Patagonia",
+                "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/303.gif",
+                "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/303.gif"
+            },
+            "payer_costs": [
+                {
+                    "installments": 1,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                },
+                {
+                    "installments": 2,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                },
+                {
+                    "installments": 3,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                },
+                {
+                    "installments": 6,
+                    "installment_rate": 0,
+                    "discount_rate": 0
+                }
+            ]
+        }
+    ]
 ```
