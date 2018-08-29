@@ -35,14 +35,14 @@ curl -X POST \
 ```
 
 ## Como obter permissões e dados do Merchant
-O Marketplace que deseja integrar, deve solicitar permissões de seus Merchants para operar e fazer pagamentos em seu nome. Para fazer isso, você deve seguir os passos de [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/mercadopago-connect/).
+O Marketplace que deseja integrar, deve solicitar permissões de seus Merchants para operar e fazer pagamentos em seu nome. Para fazer isso, você deve seguir os passos de [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.pt.md).
 
 Seguindo essas etapas, o marketplace pode obter o "access_token" com o qual você pode obter o "email" na [API de "Users"](https://developers.mercadolibre.com/en_us/usuarios-y-aplicaciones) do Mercado Livre e o "user_id" que deve ser usado como "collector_id" em cada "disbursement" que você deseja criar no Split. É importante salvar o user_id e o e-mail do merchant para identificar o proprietário da conta Mercado Pago, caso seja necessário.
 
 ## Criando um Split
-Os Splits são entidades que têm 1 pagamentos de entrada e vários de saída. O payer pode fazer o pagamento com diversos métodos de pagamento (cartão de crédito, boletos, etc.). Cada método tem seus campos obrigatórios, por exemplo, para pagar com cartões de crédito deve gerar um card token como indicado na [documentação](https://www.mercadopago.com.ar/developers/es/guias/pagamentos/api/recebimento de pagamento-por-card/) Mercado Pago.
+Os Splits são entidades que têm 1 pagamentos de entrada e vários de saída. O payer pode fazer o pagamento com diversos métodos de pagamento (cartão de crédito, boletos, etc.). Cada método tem seus campos obrigatórios, por exemplo, para pagar com cartões de crédito deve [gerar um card token](/guides /payments/api/receiving-payment-by-card.pt.md).
 
-Deve-se ter em mente que todos os merchants especificados em cada "disbursement" devem ser associados com o marketplace pelo [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/MercadoPago-connect/) (cada Merchant deve dar permissão explícita para o marketplace). Caso contrário, você não pode criar o Split.
+Deve-se ter em mente que todos os merchants especificados em cada "disbursement" devem ser associados com o marketplace pelo [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.pt.md) (cada Merchant deve dar permissão explícita para o marketplace). Caso contrário, você não pode criar o Split.
 
 O parâmetro "access_token" da URL deve ser o access token obtido pelo marketplace, como indicado pela [documentação](https://developers.mercadolibre.com/es_ar/autenticacion-y-autorizacion) pública.
 

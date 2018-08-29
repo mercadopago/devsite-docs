@@ -35,14 +35,14 @@ curl -X POST \
 ```
 
 ## Obtaining Merchant permissions and data
-The Marketplace that wishes to integrate, must request permits from its Merchants in order to operate and make payments on its behalf. To do this, you must follow the steps of [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/mercadopago-connect/).
+The Marketplace that wishes to integrate, must request permits from its Merchants in order to operate and make payments on its behalf. To do this, you must follow the steps of [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.en.md).
 
 By following these steps, the Marketplace may obtain the "access_token" with which you can obtain the "email" in the [API of "Users"](https://developers.mercadolibre.com/en_us/usuarios-y-aplicaciones) of Mercado Livre and the "user_id" that should be used as "collector_id" in each "disbursement" that you want to create in the Splitter. It is important to save the user_id and the merchant's email in order to identify the owner of the Mercado Pago account in case it is necessary.
 
 ## Creating a Splitter
-Splitters are entities that have 1 entry payment and several exit payments. The PAYER can make the entrance payment with several payment methods (credit card, tickets, etc.). Each payment method has its required fields, for example, to pay with credit cards you have to generate a card token as indicated in the [documentation](https://www.mercadopago.com.ar/developers/es/guides /payments/api/receiving-payment-by-card/) of Mercado Pago.
+Splitters are entities that have 1 entry payment and several exit payments. The PAYER can make the entrance payment with several payment methods (credit card, tickets, etc.). Each payment method has its required fields, for example, to pay with credit cards you have to [generate a card token](/guides/payments/api/receiving-payment-by-card.en.md).
 
-Keep in mind that all merchants specified in each "disbursement" must be associated to the Marketplace through [MercadoPago Connect](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/mercadopago-connect/) (each Merchant must explicitly give permission to the Marketplace). Otherwise, the Splitter can not be created.
+Keep in mind that all merchants specified in each "disbursement" must be associated to the Marketplace through [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.en.md) (each Merchant must explicitly give permission to the Marketplace). Otherwise, the Splitter can not be created.
 
 The "access_token" parameter of the URL must be the Access Token of the Marketplace that is obtained as indicated by the [documentation] (https://developers.mercadolibre.com/es_ar/autenticacion-y-autorizacion) public.
 
