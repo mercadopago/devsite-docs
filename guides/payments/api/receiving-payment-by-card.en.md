@@ -245,130 +245,130 @@ To make the payment, simply make an API call:
 
 [[[
 ```php
-<?php  
+    <?php  
+        ===
+        The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+        ===
+
+        MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+        //...
+        $payment = new MercadoPago\Payment();
+        $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
+        $payment->token = "ff8080814c11e237014c1ff593b57b4d";
+        $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
+        $payment->installments = 1;
+        $payment->payment_method_id = "visa";
+        $payment->payer = array(
+        "email" => "[FAKER][INTERNET][FREE_EMAIL]"
+        );
+        // Save and posting the payment
+        $payment->save();
+        //...
+        // Print the payment status
+        echo $payment->status;
+        //...
+    ?>
+```
+```java
+    ===
+    The `getStatus()` value will indicate the payment status (`approved`, `rejected` or `in_process`).
+    ===
+
+    MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
+    //...
+    Payment payment = new Payment();
+    payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+        .setToken("ff8080814c11e237014c1ff593b57b4d")
+        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
+        .setInstallments(1)
+        .setPaymentMethodId("visa")
+        .setPayer(new Payer()
+            .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
+    // Save and posting the payment
+    payment.save();
+    //...
+    // Print the payment status
+    System.out.println(payment.getStatus());
+    //...åå
+```
+```node
     ===
     The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
     ===
 
-    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-    //...
-    $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
-    $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-    $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
-    $payment->installments = 1;
-    $payment->payment_method_id = "visa";
-    $payment->payer = array(
-    "email" => "[FAKER][INTERNET][FREE_EMAIL]"
-    );
+    var mercadopago = require('mercadopago');
+    mercadopago.configurations.setAccessToken(config.access_token);
+
+    var payment_data = {
+    transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
+    token: 'ff8080814c11e237014c1ff593b57b4d'
+    description: '[FAKER][COMMERCE][PRODUCT_NAME]',
+    installments: 1,
+    payment_method_id: 'visa',
+    payer: {
+        email: '[FAKER][INTERNET][FREE_EMAIL]'
+    }
+    };
+
     // Save and posting the payment
-    $payment->save();
-    //...
+    mercadopago.payment.save(payment).then(function (data) {
+    // ...    
     // Print the payment status
-    echo $payment->status;
-    //...
-?>
-```
-```java
-===
-The `getStatus()` value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
-
-MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
-//...
-Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
-       .setToken("ff8080814c11e237014c1ff593b57b4d")
-       .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
-       .setInstallments(1)
-       .setPaymentMethodId("visa")
-       .setPayer(new Payer()
-         .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
-// Save and posting the payment
-payment.save();
-//...
-// Print the payment status
-System.out.println(payment.getStatus());
-//...
-```
-```node
-===
-The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
-
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var payment_data = {
-  transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
-  token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  installments: 1,
-  payment_method_id: 'visa',
-  payer: {
-    email: '[FAKER][INTERNET][FREE_EMAIL]'
-  }
-};
-
-// Save and posting the payment
-mercadopago.payment.save(payment).then(function (data) {
-  // ...    
-  // Print the payment status
-  Console.log(payment.status);
-}).catch(function (error) {
-  // ...
-});
+    Console.log(payment.status);
+    }).catch(function (error) {
+    // ...
+    });
 
 ```
 ```ruby
-===
-The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
+    ===
+    The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+    ===
 
-require 'mercadopago'
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
+    require 'mercadopago'
+    MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
-payment.installments = 1
-payment.payment_method_id = "visa"
-payment.payer = {
-  email: "[FAKER][INTERNET][FREE_EMAIL]"
-}
-# Save and posting the payment
-payment.save()
+    payment = MercadoPago::Payment.new()
+    payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
+    payment.token = 'ff8080814c11e237014c1ff593b57b4d'
+    payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
+    payment.installments = 1
+    payment.payment_method_id = "visa"
+    payment.payer = {
+    email: "[FAKER][INTERNET][FREE_EMAIL]"
+    }
+    # Save and posting the payment
+    payment.save()
 
 ``` 
 ```csharp
-===
-The `Status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
+    ===
+    The `Status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+    ===
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
-// ...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
-//...
-Payment payment = new Payment()
-{
-    TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
-    Token = "ff8080814c11e237014c1ff593b57b4d",
-    Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
-    Installments = 1,
-    PaymentMethodId = "visa",
-    Payer = new Payer(){
-        Email = "[FAKER][INTERNET][FREE_EMAIL]"
-    }
-};
-// Save and posting the payment
-payment.Save();
-//...
-// Print the payment status
-Console.log(payment.Status);
-//...
+    using MercadoPago;
+    using MercadoPago.DataStructures.Payment;
+    using MercadoPago.Resources;
+    // ...
+    MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
+    //...
+    Payment payment = new Payment()
+    {
+        TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
+        Token = "ff8080814c11e237014c1ff593b57b4d",
+        Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
+        Installments = 1,
+        PaymentMethodId = "visa",
+        Payer = new Payer(){
+            Email = "[FAKER][INTERNET][FREE_EMAIL]"
+        }
+    };
+    // Save and posting the payment
+    payment.Save();
+    //...
+    // Print the payment status
+    Console.log(payment.Status);
+    //...
 ```
 ]]]
 
