@@ -378,7 +378,7 @@ Console.log(payment.Status);
 >
 > See more information about [response handling](#manejo-de-respuestas).
 
-## Recibir un pago en cuotas
+## Receive a payment with installments
 
 In order to benefit from the [promotions](https://www.mercadopago.com.ar/promociones) offered by MercadoPago, it is important to submit the `issuer_id` and `installments` field when creating a payment.
 
@@ -427,7 +427,7 @@ The response includes the `issuer_id` to be sent, and the recommended message to
 >
 > Note
 >
-> Due to [Resolution E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) of the Argentine Secretary of Commerce, on transparent prices, it is necessary that you comply with certain [additional requirements](/guides/localization/considerations-argentina.es.md).
+> Due to [Resolution E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) of the Argentine Secretary of Commerce, on transparent prices, it is necessary that you comply with certain [additional requirements](/guides/localization/considerations-argentina.en.md).
 
 To create the payment, it is important to send the data indicated above:
 
@@ -543,7 +543,7 @@ payment.Save();
 
 It is **very important** to correctly report the results received when creating a payment. This will help improve conversion in cases of rejections, and avoid chargebacks in cases of approved transactions.
 
-We recommend that you read the article [response handling](/guides/payments/api/handling-responses.es.md) and use the suggested communication in each case.
+We recommend that you read the article [response handling](/guides/payments/api/handling-responses.en.md) and use the suggested communication in each case.
 
 ## Receive a payment notification
 
@@ -551,7 +551,7 @@ It is important to be aware of any updates on your payment status. For this, you
 
 A Webhook is a notification that is sent from one server to another through an `HTTP POST` request.
 
-You can find all the information about it in the [Webhooks](/guides/notifications/webhooks.es.md)section.
+You can find all the information about it in the [Webhooks](/guides/notifications/webhooks.en.md)section.
 
 ## Next steps
 
@@ -559,4 +559,4 @@ You can find all the information about it in the [Webhooks](/guides/notification
 
 You can securely store your customers’ cards and make payments with a one-click-to-buy experience.
 
-[More info.](/guides/payments/api/customers-and-cards.es.md)
+[More info.](/guides/payments/api/customers-and-cards.en.md)
