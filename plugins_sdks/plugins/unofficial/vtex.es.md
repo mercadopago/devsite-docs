@@ -22,7 +22,6 @@ Recibir pagos directamente en los códigos de comercio del vendedor utilizando t
 
 Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
 
-
 ## Configurar VTEX para operar en modo Agregador
 
 Los pasos a seguir para usar y configurar el checkout personalizado modo Agregador son:
@@ -30,7 +29,7 @@ Los pasos a seguir para usar y configurar el checkout personalizado modo Agregad
 1. [Configurar Afiliación](##Configurar_afiliación_en_modo_agregador).
 2. [Configurar Planes de Pago Nativos](##Configurar_plan_de_pago_Nativo_en_modo_agregador).
 3. [Configurar Planes de Pago Off-Line](##Medios_Off-Line_por_país_en_modo_agregador).
-4. [Configurar Planes de Pago Personalizados](##Configurar plan de pago personalizado).
+4. [Configurar Planes de Pago Personalizados](##Configurar_plan_de_pago_personalizado).
 
 Para usar el checkout redireccionado en modo agregador se debe realizar lo que se describe a continuación:
 1. [Configurar Afiliación](##Configurar_afiliación_checkout_redireccionado).
@@ -423,11 +422,7 @@ El checkout redirect puede convivir con el checkout transparente.
 
  ![VTEX afiliation](/images/vtex-afiliation.png)
     
-6. Buscar y seleccionar "MercadoPago".
-
-    ![VTEX afiliation](/images/vtex-afiliation-3.png)    
-    
-    
+6. Buscar y seleccionar "MercadoPago". 
 7. Completar la siguiente información requerida en la afiliación.
 - Nombre de la afiliación -> Nombre que identificara la Afiliación
 - Client_id PublicKey de Mercado Pago -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
@@ -452,9 +447,6 @@ Luego de configurar la afiliación es necesario agregar el plan de pago
     
 4. Planes de pago
 5. Nuevo plan de pago
-
-    ![Native plan](/images/vtex-native-plan-3.png).
-    
 6. Buscar en la grupo OTRO - Mercado Pago
 7. Colocar una descripción (puede ser blancos)
 8. Seleccionar la afiliación creada para redirect
