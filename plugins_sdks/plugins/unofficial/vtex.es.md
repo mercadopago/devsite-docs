@@ -25,26 +25,28 @@ Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor o
 
 ## Configurar VTEX para operar en modo Agregador
 
-Los pasos a seguir para configurar modo Agregador son:
+Los pasos a seguir para usar y configurar el checkout personalizado modo Agregador son:
 
-1. Configurar Afiliación.
-2. Configurar Planes de Pago Nativos.
-3. Configurar Planes de Pago Off-Line.
-4. Configurar Plan de Pago Webpay.
-5. Configurar Planes de Pago Personalizados.
+1. [Configurar Afiliación](##Configurar_afiliación_en_modo_agregador).
+2. [Configurar Planes de Pago Nativos](##Configurar_plan_de_pago_Nativo_en_modo_agregador).
+3. [Configurar Planes de Pago Off-Line](##Medios_Off-Line_por_país_en_modo_agregador).
+4. [Configurar Planes de Pago Personalizados](##Configurar plan de pago personalizado).
+
+Para usar el checkout redireccionado en modo agregador se debe realizar lo que se describe a continuación:
+1. [Configurar Afiliación](##Configurar_afiliación_checkout_redireccionado).
+2. [Configurar plan de pago checkout redirect](##Configurar_plan_de_pago_checkout_redireccionado).
 
 ## Configurar VTEX para operar en modo Gateway
-1. Configurar Afiliación
-2. Configurar Planes de pago Nativos.
-3. Configurar Plan de pago 'por defecto'.
+1. [Configurar Afiliación](##Configurar_afiliación_para_operar_en_modo_Gateway).
+2. [Configurar Planes de pago Nativos](##Configurar_plan_de_pago_para_operar_en_modo_Gateway).
 
 ## Configurar Device en VTEX
-1. Configurar DeviceID.
+1. [Configurar DeviceID](##Configurar_DeviceID).
 
-## Realizar customizaciones en el checkout de VTEX
-1. Customizaciones de checkout
+## Interpretar logs de VTEX
+1. [Realizar las interpretaciones de la respuesta del pago en vtex](##Interpretar_log_de_VTEX).
 
-### Configurar afiliación en modo agregador
+## Configurar afiliación en modo agregador
 
 Para operar en modo Agregador solo es necesario configurar una afiliación.
 
@@ -235,7 +237,7 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 ------------
 
-### Configurar plan de pago Nativo en modo agregador
+## Configurar plan de pago Nativo en modo agregador
 
 Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
 
@@ -263,13 +265,13 @@ Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integr
 
     ![Native plan](/images/vtex-native-plan-5.png)
 
-### Configurar Plan de Pago Off-Line en modo agregador
+## Configurar Plan de Pago Off-Line en modo agregador
 
 Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
 - Primero se genera de un ticket con las instrucciones para el pago.
 - Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
 
-#### Medios Off-Line por país en modo agregador
+## Medios Off-Line por país en modo agregador
 
 - Argentina: PagoFacil, Rapipago, RedLink.
 - Chile: Servipag.
@@ -299,35 +301,7 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 
     ![Offline](/images/vtex-offline-plan-4.png)
 
-
-----[mco, global]----
-### Configurar plan de pago Webpay en modo agregador
-
-1. Desplegar el menú de Catalog .
-2. Ingresar en PCI Gateway.
-
-    ![Offline](/images/vtex-webpay-1.png)
-
-3. Ajustes.
-4. Planes de pago.
-5. Nuevo plan de pago.
-
-    ![Offline](/images/vtex-webpay-2.png)
-
-6. Buscar y seleccionar Webpay.
-
-    ![Offline](/images/vtex-webpay-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
-
-    ![Offline](/images/vtex-webpay-4.png)
-    
-------------
-
-### Configurar plan de pago personalizado
+## Configurar plan de pago personalizado
 
 Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
 
@@ -362,10 +336,37 @@ Uruguay: Oca.
 
 ![Custom plan](/images/vtex-custom-4.png)
 
+----[mlc, global]----
+### Configurar plan de pago Webpay en modo agregador
+
+1. Desplegar el menú de Catalog .
+2. Ingresar en PCI Gateway.
+
+    ![Offline](/images/vtex-webpay-1.png)
+
+3. Ajustes.
+4. Planes de pago.
+5. Nuevo plan de pago.
+
+    ![Offline](/images/vtex-webpay-2.png)
+
+6. Buscar y seleccionar Webpay.
+
+    ![Offline](/images/vtex-webpay-3.png)
+
+7. Colocar una descripción (puede ser blancos).
+8. Seleccionar la afiliación.
+9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
+10. Salvar la configuración.
+
+    ![Offline](/images/vtex-webpay-4.png)
+    
+------------
+
 
 ----[mla, global]----
 
-### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Argentina 
+## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Argentina 
 
 | Nombre                   | Descripción              | Medio de pago |       Bines {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pago en adquiriente (opcional) |
 |--------------------------|--------------------------|---------------|:-------------------------------------------------------:|------------------------------------------|
@@ -380,7 +381,7 @@ Uruguay: Oca.
 
 ----[mlc, global]----
 
-### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Chile
+## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Chile
 
 | Nombre | Descripción | Medio de pago |                                   Bines {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pago en adquiriente (opcional) |
 |--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
@@ -391,7 +392,7 @@ Uruguay: Oca.
 ------------
 
 ----[mco, global]----
-### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Colombia
+## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Colombia
 
 | Nombre  | Descripción | Medio de pago | Bines {min}-{max},{min}-{max},{bin1},{bin2} | Código de pago en adquiriente (opcional) |
 |---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
@@ -400,11 +401,127 @@ Uruguay: Oca.
 ------------
 
 ----[mlu, global]----
-### Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Uruguay
+## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Uruguay
 
 | Nombre | Descripción | Medio de pago |                     Bines {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pago en adquiriente (opcional) |
 |--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
 | OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
+
+------------
+
+## Configurar afiliación checkout redireccionado
+Para utilizar el checkout redirect es necesario configurar una afiliación específica
+El checkout redirect puede convivir con el checkout transparente.
+1. Desplegar el menú lateral
+2. Desplegar el menú de Pagos
+3. Ingresar en Configuración
+
+    ![VTEX afiliation](/images/vtex-config.png)
+
+4. Afiliaciones
+5. Nueva Afiliación
+
+ ![VTEX afiliation](/images/vtex-afiliation.png)
+    
+6. Buscar y seleccionar "MercadoPago".
+
+    ![VTEX afiliation](/images/vtex-afiliation-3.png)    
+    
+    
+7. Completar la siguiente información requerida en la afiliación.
+- Nombre de la afiliación -> Nombre que identificara la Afiliación
+- Client_id PublicKey de Mercado Pago -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+- Client_secret -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+- AccessToken de Mercado Pago -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials).
+- Pais -> Seleccionar País
+- Time Zone -> Región que define la hora local
+- orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
+- maxInstallments -> Cantidad máxima de cuotas 
+- Categoria Principal -> Categoría del producto
+- Tipo de Estorno
+    - Automatico sempre que possivel - Genera la devolución del pago en MP
+    - Notificaçao por E-mail - NO genera la devolución del pago en MP
+
+## Configurar plan de pago checkout redireccionado
+Luego de configurar la afiliación es necesario agregar el plan de pago
+1. Desplegar el menú lateral
+2. Desplegar el menú de Pagos
+3. Ingresar en Configuración
+
+    ![VTEX afiliation](/images/vtex-config.png).
+    
+4. Planes de pago
+5. Nuevo plan de pago
+
+    ![Native plan](/images/vtex-native-plan-3.png).
+    
+6. Buscar en la grupo OTRO - Mercado Pago
+7. Colocar una descripción (puede ser blancos)
+8. Seleccionar la afiliación creada para redirect
+9. Seleccionar cuotas A vista
+10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
+11. Salvar la configuración
+
+----[mla, mco, global]----
+## Configurar afiliación para operar en modo Gateway
+Cuando tu asesor comercial te haya informado que ya están cargados los números de comercio y te haya pasado los `merchant_account_id` de cada número de comercio realizar los siguientes pasos para cada una de las tarjetas que tengas número de comercio:
+1. Desplegar el menú lateral
+2. Desplegar el menú de Pagos
+3. Ingresar en Configuración
+
+    ![VTEX afiliation](/images/vtex-config.png).
+    
+4. Afiliaciones
+5. Nueva Afiliación
+
+ ![VTEX afiliation](/images/vtex-afiliation.png)
+    
+6. Buscar y seleccionar "MercadoPagoV1".
+
+    ![VTEX afiliation](/images/vtex-afiliation-3.png)    
+    
+7. Completar los campos que se describen a continuación:
+- Nombre de la afiliación: Nombre que identificará la afiliación.
+- OAuth login: No se utiliza.
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
+- ExpiredTokenIn: No se utiliza - dejar en blanco.
+- Merchant Account Id: Completar con el id que fueron compartidos por su asesor comercial correspondientes a cada tarjeta.
+- Processing Mode: Seleccionar gateway.
+- CountryName: Seleccionar país.
+- SoftDescriptor: No se utiliza - dejar en blanco.
+- Description: Descripción de la operación (puede ser blanco).
+- CategoryId: Categoría del producto - Seleccionar de la lista.
+- Financial Institution: No se utiliza - dejar en blanco.
+- Use External Installments: No.
+- Antifraud: Yes.
+- Time Zone: Región que define la hora local.
+- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
+- maxInstallments: Cantidad máxima de cuotas.
+- Categoria Principal: Categoría del producto - Seleccionar de la lista.
+- Captura de segurança antecipada: Por defecto inmediato - cambiar si se quiere realizar captura diferida del pago.
+
+## Configurar plan de pago para operar en modo Gateway
+Luego de configurar la afiliación es necesario agregar el plan de pago:
+1. Desplegar el menú lateral
+2. Desplegar el menú de Pagos
+3. Ingresar en Configuración
+
+    ![VTEX afiliation](/images/vtex-config.png).
+    
+4. Planes de pago
+5. Nuevo plan de pago
+
+    ![Native plan](/images/vtex-native-plan-3.png).
+    
+6. Seleccionar el medio de pago (crédito o débito) a cargar
+7. Colocar una descripción.
+8. Seleccionar la afiliación creada para este medio de pago
+9. Seleccionar cuotas En cuotas
+10. Cargar las cuotas y el interés correspondiente del medio de pago.
+11. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
+12. Salvar la configuración
 
 ------------
 
@@ -440,7 +557,8 @@ window.onload = startTimer;
 
     ![Custom plan](/images/vtex-device-settings-3.png)
 
-### Interpretar log de VTEX
+
+## Interpretar log de VTEX
 
 Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
 
