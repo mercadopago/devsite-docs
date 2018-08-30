@@ -290,6 +290,80 @@ Payer payer = new Payer()
 ```
 ]]]
 
+#### Shipments
+
+[[[
+```php
+<?php
+  // ...
+  $shipments = new MercadoPago\Shipments();
+  $shipments->receiver_address = array(
+		"zip_code" => "[FAKER][ADDRESS][ZIP]",
+		"street_number" => [FAKER][NUMBER][BETWEEN][1000,2000],
+		"street_name" => "[FAKER][ADDRESS][STREET_NAME]",
+		"floor" => [FAKER][NUMBER][BETWEEN][1,20],
+		"apartment" => "C"
+  );
+  // ...
+?>
+```
+```java
+// ...
+Shipments shipments = new Shipments();
+shipments.setReceiverAddress(new ReceiverAddress()
+  .setZipCode("[FAKER][ADDRESS][ZIP]")
+  .setBuildingNumber("[FAKER][NUMBER][BETWEEN][1000,2000]")
+  .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
+  .setFloor("[FAKER][NUMBER][BETWEEN][1,20]")
+  .setApartment("C"));
+// ...
+```
+```node
+// ...
+var shipments = {
+	receiver_address: {
+		zip_code: [FAKER][ADDRESS][ZIP]",
+		street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
+		street_name: "[FAKER][ADDRESS][STREET_NAME]",
+		floor: [FAKER][NUMBER][BETWEEN][1,20],
+		apartment: "C"
+	}
+};
+// ...
+```
+```ruby
+# ...
+shipment = MercadoPago::Shipment.new(
+  receiver_address: new MercadoPago::ReceiverAddress.new({
+    zip_code: "[FAKER][ADDRESS][ZIP]",
+    street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
+    street_name: "[FAKER][ADDRESS][STREET_NAME]",
+    floor: [FAKER][NUMBER][BETWEEN][1,20],
+    apartment: "C"
+  })
+})
+# ... 
+```
+```csharp
+using MercadoPago;
+using MercadoPago.Resources;
+using MercadoPago.DataStructures.Preference;
+// ...
+Shipment shipment = new Shipment()
+{
+    ReceiverAddress = new ReceiverAddress()
+    {
+        ZipCode = "[FAKER][ADDRESS][ZIP]",
+        StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+        StreetNumber = int.Parse("[FAKER][NUMBER][BETWEEN][1000,2000]"),
+        Floor = "[FAKER][NUMBER][BETWEEN][1, 20]",
+        Apartment = "C"
+    }
+};
+// ...
+```
+]]]
+
 ## 2. Take the buyer to checkout
 
 Once the preference has been created, use the URL found in the attribute `init_point` of the response to create a payment button:
@@ -312,7 +386,7 @@ Notifications are automatically sent to inform you of any new payments and statu
 
 This will allow you to manage your inventories and keep your system synced.
 
-To learn more about it, go to [Notificacions](/guides/notifications/ipn.en.md).
+To learn more about it, go to [Notifications](/guides/notifications/ipn.en.md).
 
 ## 4. Cancel a payment
 
