@@ -18,7 +18,6 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 | Calculadora de Parcelas                                  	| ✔               	|
 | Notificação instantânea de pagamentos e webhooks         	| ✔               	|
 | Descontos por meio de pagamento ou cupom do Mercado Pago 	| ✔               	|
-| MercadoEnvios                                            	| ✔               	|
 
 ### Checkout básico
 
