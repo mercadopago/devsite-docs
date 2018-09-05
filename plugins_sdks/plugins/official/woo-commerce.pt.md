@@ -3,13 +3,13 @@
 
 ## Mercado Pago Module (WooCommerce 3.x)
 
-* [Funcionalidades](#funcionalidades)
-* [Requisitos](#requisitos)
-* [Versões](#versões)
-* [Instalação](#instalação)
-* [Configuração](#configuração)
-* [Notificações](#notificações)
-* [Atualização](#atualização) 
+* [Funcionalidades](#bookmark_Funcionalidades)
+* [Requisitos](#bookmark_Requisitos)
+* [Versões](#bookmark_Versões)
+* [Instalação](#bookmark_Instalação)
+* [Configuração](#bookmark_Configuração)
+* [Notificações](#bookmark_Notificações)
+* [Atualização](#bookmark_Atualização) 
 
 
 ## Funcionalidades
