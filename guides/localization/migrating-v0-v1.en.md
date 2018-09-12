@@ -3,13 +3,14 @@
 At Mercado Pago we always try to optimize our platform offering the highest efficiency and security in payment processing.
 
 We are currently working on migrating our API version 0 to version 1 in order to maintain the highest quality standards.
-Consequently, the Mercado Pago will require the use of the new version of the API to be used as of July 30, 2018.
+
+Consequently, the Mercado Pago will require the use of the new version of the API to be used as of December 10, 2018.
 
 After this deadline, version 0 will be disabled and any attempt to connect using it will fail.
 
 ### Points to consider
 
-* The change will impact **from July 30, 2018**
+* The change will impact **from December 10, 2018**
 * If you use only the payment buttons from mercado Pago, this change will not affect you.
 * If you only use Mercado Shops, this change will not affect you.
 * If you have your **own e-commerce, consult your IT staff**.
@@ -53,6 +54,6 @@ curl -X POST \
 
 If you need to make adaptations, **it is important that you remember to make this change in a timely manner, otherwise it is very likely that your connections to the Mercado Pago will begin to fail.**
 
-If you have any questions or need help to successfully complete this change, please contact us at the following [form](/support).
+If you have any questions or need help to successfully complete this change, please contact us at the following [form](https://www.mercadopago.com.ar/developers/en/support).
 
 Mercado Pago team.
