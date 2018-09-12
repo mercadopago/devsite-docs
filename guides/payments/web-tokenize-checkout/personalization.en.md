@@ -43,11 +43,79 @@ button.mercadopago-button {
 
 ![Payment button - Modified CSS](/images/paybutton-modified-css.png)
 
+
+## Colores en la interfaz
+
+### Elementos
+
+#### Estado por defecto
+
+![Standard elements](/images/cow-ui-elements.png)
+
+#### Personalización
+
+Los elementos que pueden personalizarse son:
+
+- Botones
+- Campos de ingreso de datos: inputs
+- Elementos de transiciones: spinners y barras de progreso
+- Bordes
+
+Puedes modificar el color de esos elementos agregando el atributo `data-elements-color` al fragmento de código HTML.
+
+El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+
+```html
+data-elements-color="#c0392b"
+```
+
+![Custom elements](/images/cow-ui-elements--custom.png)
+
+
+### Encabezado
+
+#### Estado por defecto
+
+![Standard header](/images/cow-ui-header.png)
+
+#### Personalización
+
+Puedes modificar el color del encabezado agregando el atributo `data-header-color` al fragmento de código HTML.
+
+El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+
+```html
+data-header-color="#c0392b"
+```
+
+![Custom header](/images/cow-ui-header--custom.png)
+
+
+### Color de texto
+
+El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
+
+Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
+
+```html
+data-elements-color="#81ecec" <!-- Color claro -->
+```
+
+![Font color in light element](/images/cow-ui-fontcolor__light.png)
+
+Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
+
+```html
+data-elements-color="#8e44ad" <!-- Color oscuro -->
+```
+
+![Font color in dark element](/images/cow-ui-fontcolor__dark.png)
+
 ## Detalle de la compra
 
 ### Estado por defecto
 
-![Summary Default](/images/summary-default.png)
+![Summary Default](/images/cow-summary.png)
 
 
 ### Personalización

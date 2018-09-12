@@ -23,9 +23,19 @@ Consulte o [glossário dos relatórios](https://www.mercadopago.com.br/ajuda/glo
 #### Relatório de dinheiro disponível (Bank Report)
 
 ##### 1. Para gerar um relatório:
-Faça o POST para a API especificando as datas de início e término da seguinte forma:
+Faça o _POST_ para a API especificando as datas de início e término da seguinte forma:
 
-
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/bank_report?access_token=ACCESS_TOKEN' \
+    -d '{
+            "begin_date": "2015-05-01T00:00:00Z",
+            "end_date": "2015-06-01T00:00:00Z"
+    }'
+ ```
+ 
 ```php
 <?php
 
@@ -51,6 +61,12 @@ Você receberá um `HTTP STATUS 202 (Accepted)` como resposta, e o relatório se
 ##### 2. Busca:
 Para verificar se o relatório foi gerado, você terá que fazer uma consulta à API da seguinte forma:
 
+```curl
+curl -G \
+    -H 'accept: application/json' \
+    -d 'access_token=ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/bank_report/list'
+```
 
 ```php
 <?php

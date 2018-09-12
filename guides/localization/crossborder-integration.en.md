@@ -450,11 +450,7 @@ This is an example of the payment response:
 
 
 
-<<<<<<< HEAD:guides/localization/crossborder-integration-en.md
-## Checkout Tokenizer Integration
-=======
 ## CHECKOUT TOKENIZER INTEGRATION
->>>>>>> d0959eb416b306256b2d99afb14829f7775e07da:guides/localization/crossborder-integration.en.md
 
 The Tokenizer is the Mercado Pago solution that quickly allows you to obtain a card token from your customer's card. This solution consists in the generation of a payment order using Javascript that opens a checkout for the payer to load the data of the card. Then, you will receive the card token in your backend so that you can make a POST of the payment.
 
@@ -481,7 +477,7 @@ This would be an example of the creation of the checkout:
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <form action="https://www.your-site.com/process-payment" method="POST">
       <script
-	      src="https://mercadopago.com.ar/integrations/v1/checkout.js"
+	      src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
 	      data-public-key="<PUBLIC_KEY>"
 	      data-transaction-amount="100"
 	      data-button-label="Confirmar">

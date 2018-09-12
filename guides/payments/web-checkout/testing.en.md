@@ -102,3 +102,13 @@ The complete process for testing the checkout is as follows:
 6. In case of payment declined, you can retry it and simulate any other result as indicated in the previous item.
 7. Check whether the notification has arrived correctly
 8. Make a refund of an approved payment and check if you received the notification with the payment status updated.
+
+### Terms of use
+
++ Test users expire after being inactive in MercadoPago for 60 days.
++ You may have up to 10 simultaneous accounts.
++ Use small amounts for test payments:
+  * You may pay by real credit card, then cancel payments and get the refund.
+  * You may make coupon payments but you should not complete them.
++ Simulations can only be made between test users.
++ You cannot withdraw test payments from bank accounts.

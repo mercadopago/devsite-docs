@@ -25,6 +25,17 @@ Consulta el [glosario de los reportes](https://www.mercadopago.com.ar/ayuda/glos
 
 ##### 1. Generación:
 Realiza el _POST_ a la API especificando las fechas de inicio y fin de la siguiente manera:
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/bank_report?access_token=ACCESS_TOKEN' \
+    -d '{
+            "begin_date": "2015-05-01T00:00:00Z",
+            "end_date": "2015-06-01T00:00:00Z"
+    }'
+
+```
 
 ```php
 <?php
@@ -50,6 +61,12 @@ Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se gener
 
 ##### 2. Búsqueda:
 Para ver si se terminó de generar el reporte deberás consultar la API de esta manera:
+```curl
+curl -G \
+    -H 'accept: application/json' \
+    -d 'access_token=ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/bank_report/list'
+```
 
 ```php
 <?php

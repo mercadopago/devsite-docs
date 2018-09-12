@@ -518,6 +518,63 @@ payment.Save();
 ```
 ]]]
 
+### Aqui está um exemplo de pagamento integral
+
+```json
+ {
+    "transaction_amount": 100,
+    "token": "ff8080814c11e237014c1ff593b57b4d",
+    "description": "Title of what you are paying for",
+    "installments": 12,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    },
+    "external_reference": "Reference_1234",
+    "metadata": {
+        "key1": "value1",
+        "key2": "value2"
+    },
+    "statement_descriptor": "MY E-STORE",
+    "notification_url": "https://www.your-site.com/webhooks",
+    "additional_info": {
+        "items": [
+            {
+                "id": "item-ID-1234",
+                "title": "Title of what you are paying for",
+                "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
+                "description": "Item description",
+                "category_id": "art", // Available categories at https://api.mercadopago.com/item_categories
+                "quantity": 1,
+                "unit_price": 100
+            }
+        ],
+        "payer": {
+            "first_name": "user-name",
+            "last_name": "user-surname",
+            "registration_date": "2015-06-02T12:58:41.425-04:00",
+            "phone": {
+                "area_code": "11",
+                "number": "4444-4444"
+            },
+            "address": {
+                "street_name": "Street",
+                "street_number": 123,
+                "zip_code": "5700"
+            } 
+        },
+        "shipments": {
+            "receiver_address": {
+                "zip_code": "5700",
+                "street_name": "Street",
+                "street_number": 123,
+                "floor": 4,
+                "apartment": "C"
+            }
+        }
+    }
+}
+```
 
 ## Manipulação de respostas
 

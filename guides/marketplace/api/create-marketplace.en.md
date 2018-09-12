@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the [API](/guides/payments/api/introduction.es.md) implemented.
+> * Have the [API](/guides/payments/api/introduction.en.md) implemented.
 
 To begin, you need to:
 
@@ -37,6 +37,10 @@ This `AUTHORIZATION_CODE` will be used to create the credentials and is valid fo
 > Advice
 >
 > You can include a parameter in the `redirect_uri` to identify the seller corresponding to the authorization code you received, such as your email address, the user ID in your system or any other useful reference.
+>Example:
+>-Redirect_uri set in the application: https://www.mercadopago.com/mp.php
+>-Redirect uri to use in the Oauth link: https://www.mercadopago.com/mp.php?user_id=001
+>-Redirect_uri to associate the seller with the security code from the Oauth process: https://www.mercadopago.com/mp.php?user_id=001
 
 
 ### Create your user’s credentials
@@ -86,6 +90,8 @@ In the response, in addition to the `access_token` and `public_key` of the selle
 > Note
 >
 > The credentials are **valid for 6 months.**
+> If you don´t renew your sellers credentials before the expiration period, **those credentials will lose valifity and you´ll have to do the authorization process all over again.**
+> Tip: Renew the credentials 5 months after you got them.
 
 ### Refresh your user’s credentials
 
@@ -216,12 +222,20 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
+In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago.com/mla/account/webhooks) in your account. 
+
 For more information, go to the [notifications section](/guides/notifications/webhooks.en.md).
 
 ### Refunds and cancellations
 
 The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the Mercado Pago account.
+In case the Marketplace is the one that does the refund/cancellation, you´ll have to use the credentials obtained for that user in the Oauth process. 
 
 Cancellations can only be made using the cancellation API.
 
 For more information, go to [refunds and cancellations.](/guides/manage-account/cancellations-and-refunds.en.md)
+
+### Test your integration
+
+You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
+[Test your integration](/guides/payments/api/testing.en.md/) 

@@ -3,13 +3,12 @@
 No Mercado Pago procuramos sempre otimizar nossa plataforma oferecendo a mais alta eficiência e segurança no processamento de pagamentos.
 
 No momento, estamos trabalhando no desligamento do protocolo de criptografia TLS 1.0 para os domínios https://api.mercadopago.com e https://pagamento.mercadopago.com com o objetivo de manter os mais altos padrões de qualidade e promover a segurança de dados de nossos clientes.
-Consequentemente, o Mercado Pago exigirá que suas conexões com os domínios https://api.mercadopago.com e https://pagamento.mercadopago.com sejam realizados utilizando o protocolo TLS 1.2 ou superior a partir de 30 de junho de 2018.
+Consequentemente, o Mercado Pago exigirá que suas conexões com os domínios https://api.mercadopago.com e https://pagamento.mercadopago.com sejam realizados utilizando o protocolo TLS 1.2 ou superior.
 
 Depois desse prazo, o protocolo TLS 1.0 estará desativado e qualquer tentativa de conexão utilizando o TLS 1.0, falhará.
 
 ### Pontos para serem levados em conta
 
-* A alteração terá impacto **a partir de 30 de junho de 2018.**
 * Se você usa apenas Mercado Livre, essa alteração não afetará você.
 * Se você usa apenas os botões de pagamento de Mercado Pago, essa alteração não afetará você.
 * Se você usa apenas Mercado Shops, essa alteração não afetará você.
@@ -34,9 +33,6 @@ HTTPS (web) e STARTTLS SMTP (email), também usam o TLS como um componente de se
 
 No Mercado Pago levamos a segurança muito a sério e ajudamos nossos clientes a melhorá-la usando os protocolos de segurança mais recentes.
 
-### Como e quando o Mercado Pago implementará essa mudança?
-
-A partir de 30 de junho de 2018, o Mercado Pago começará a desativar o protocolo de criptografia TLS 1.0.
 
 ## Ação necessária para a integrações da API
 
@@ -66,6 +62,8 @@ Python 2.7.8 e versões anteriores | Não são compatíveis com criptografia TLS
 Ruby | Compatível com a versão mais recente e estável quando está vinculado ao OpenSSL 1.0.1 ou versões posteriores.
 Ruby 2.0.0 | O TLS 1.2 é ativado por padrão quando usado com o OpenSSL 1.0.1 ou posterior. O uso dos símbolos: TLSv1_2 (preferencial) ou TLSv1_1 com ssl_version do SSLContext, ajuda a garantir que o TLS 1.0 ou versões anteriores sejam desativadas.
 Ruby 1.9.3 e versões anteriores | O símbolo: TLSv1_2 não existe na versão 1.9.3 nem anteriores, mas é possível corrigir o Ruby para adicionar esse símbolo e compilar o Ruby com o OpenSSL 1.0.1 ou posterior.
+Android 4.x | Necessário forçar o uso do TLS 1.2, veja o exemplo [neste snippet de codigo](https://gist.github.com/zehemz/fdf777a64a173a58beb6f9132eb7655c).
+Android 5.x | TLS 1.2 é suportado por padrão.
 
 Caso você precise fazer adaptações, **é importante que você se lembre de fazer essa alteração em tempo hábil, porque caso contrário, é muito provável que suas conexões com o Mercado Pago comecem a falhar.**
 

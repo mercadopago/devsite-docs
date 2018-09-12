@@ -16,7 +16,7 @@ Por ejemplo:
 
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-button-label="Reintentar"> <!-- Texto del botón -->
@@ -24,7 +24,7 @@ Por ejemplo:
 </form>
 ```
 
-![Recovery](/images/webtokenize-recovery.png)
+![Recovery](/images/cow-recovery-page.png)
 
 ## Checkout abierto por defecto
 
@@ -37,7 +37,7 @@ Por ejemplo:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/checkout.js"
+    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-open="true"> <!-- Abierto por defecto -->

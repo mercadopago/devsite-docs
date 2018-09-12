@@ -10,8 +10,8 @@ sites_supported:
 
 O Mercado Pago permite receber pagamentos recorrentes por meio de assinaturas em apenas dois passos:
 
-1. **Definir uma assinatura**, que estabelece quanto deve ser faturado e o intervalo de tempo.
-2. **Abrir o Checkout** para capturar os dados de um cartão.
+1. **Definir um plano**, que estabelece quanto deve ser faturado e o intervalo de tempo.
+2. **Aderir seu cliente**, inicializando o web checkout para capturar os dados do cartão de crédito.
 
 ## Credenciais
 

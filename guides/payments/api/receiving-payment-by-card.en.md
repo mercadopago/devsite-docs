@@ -245,130 +245,130 @@ To make the payment, simply make an API call:
 
 [[[
 ```php
-<?php  
+    <?php  
+        ===
+        The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+        ===
+
+        MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+        //...
+        $payment = new MercadoPago\Payment();
+        $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
+        $payment->token = "ff8080814c11e237014c1ff593b57b4d";
+        $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
+        $payment->installments = 1;
+        $payment->payment_method_id = "visa";
+        $payment->payer = array(
+        "email" => "[FAKER][INTERNET][FREE_EMAIL]"
+        );
+        // Save and posting the payment
+        $payment->save();
+        //...
+        // Print the payment status
+        echo $payment->status;
+        //...
+    ?>
+```
+```java
+    ===
+    The `getStatus()` value will indicate the payment status (`approved`, `rejected` or `in_process`).
+    ===
+
+    MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
+    //...
+    Payment payment = new Payment();
+    payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+        .setToken("ff8080814c11e237014c1ff593b57b4d")
+        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
+        .setInstallments(1)
+        .setPaymentMethodId("visa")
+        .setPayer(new Payer()
+            .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
+    // Save and posting the payment
+    payment.save();
+    //...
+    // Print the payment status
+    System.out.println(payment.getStatus());
+    //...åå
+```
+```node
     ===
     The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
     ===
 
-    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-    //...
-    $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
-    $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-    $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
-    $payment->installments = 1;
-    $payment->payment_method_id = "visa";
-    $payment->payer = array(
-    "email" => "[FAKER][INTERNET][FREE_EMAIL]"
-    );
+    var mercadopago = require('mercadopago');
+    mercadopago.configurations.setAccessToken(config.access_token);
+
+    var payment_data = {
+    transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
+    token: 'ff8080814c11e237014c1ff593b57b4d'
+    description: '[FAKER][COMMERCE][PRODUCT_NAME]',
+    installments: 1,
+    payment_method_id: 'visa',
+    payer: {
+        email: '[FAKER][INTERNET][FREE_EMAIL]'
+    }
+    };
+
     // Save and posting the payment
-    $payment->save();
-    //...
+    mercadopago.payment.save(payment).then(function (data) {
+    // ...    
     // Print the payment status
-    echo $payment->status;
-    //...
-?>
-```
-```java
-===
-The `getStatus()` value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
-
-MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
-//...
-Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
-       .setToken("ff8080814c11e237014c1ff593b57b4d")
-       .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
-       .setInstallments(1)
-       .setPaymentMethodId("visa")
-       .setPayer(new Payer()
-         .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
-// Save and posting the payment
-payment.save();
-//...
-// Print the payment status
-System.out.println(payment.getStatus());
-//...
-```
-```node
-===
-The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
-
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var payment_data = {
-  transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
-  token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  installments: 1,
-  payment_method_id: 'visa',
-  payer: {
-    email: '[FAKER][INTERNET][FREE_EMAIL]'
-  }
-};
-
-// Save and posting the payment
-mercadopago.payment.save(payment).then(function (data) {
-  // ...    
-  // Print the payment status
-  Console.log(payment.status);
-}).catch(function (error) {
-  // ...
-});
+    Console.log(payment.status);
+    }).catch(function (error) {
+    // ...
+    });
 
 ```
 ```ruby
-===
-The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
+    ===
+    The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+    ===
 
-require 'mercadopago'
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
+    require 'mercadopago'
+    MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
-payment.installments = 1
-payment.payment_method_id = "visa"
-payment.payer = {
-  email: "[FAKER][INTERNET][FREE_EMAIL]"
-}
-# Save and posting the payment
-payment.save()
+    payment = MercadoPago::Payment.new()
+    payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
+    payment.token = 'ff8080814c11e237014c1ff593b57b4d'
+    payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
+    payment.installments = 1
+    payment.payment_method_id = "visa"
+    payment.payer = {
+    email: "[FAKER][INTERNET][FREE_EMAIL]"
+    }
+    # Save and posting the payment
+    payment.save()
 
 ``` 
 ```csharp
-===
-The `Status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
-===
+    ===
+    The `Status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+    ===
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
-// ...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
-//...
-Payment payment = new Payment()
-{
-    TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
-    Token = "ff8080814c11e237014c1ff593b57b4d",
-    Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
-    Installments = 1,
-    PaymentMethodId = "visa",
-    Payer = new Payer(){
-        Email = "[FAKER][INTERNET][FREE_EMAIL]"
-    }
-};
-// Save and posting the payment
-payment.Save();
-//...
-// Print the payment status
-Console.log(payment.Status);
-//...
+    using MercadoPago;
+    using MercadoPago.DataStructures.Payment;
+    using MercadoPago.Resources;
+    // ...
+    MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
+    //...
+    Payment payment = new Payment()
+    {
+        TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
+        Token = "ff8080814c11e237014c1ff593b57b4d",
+        Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
+        Installments = 1,
+        PaymentMethodId = "visa",
+        Payer = new Payer(){
+            Email = "[FAKER][INTERNET][FREE_EMAIL]"
+        }
+    };
+    // Save and posting the payment
+    payment.Save();
+    //...
+    // Print the payment status
+    Console.log(payment.Status);
+    //...
 ```
 ]]]
 
@@ -378,7 +378,7 @@ Console.log(payment.Status);
 >
 > See more information about [response handling](#manejo-de-respuestas).
 
-## Recibir un pago en cuotas
+## Receive a payment with installments
 
 In order to benefit from the [promotions](https://www.mercadopago.com.ar/promociones) offered by MercadoPago, it is important to submit the `issuer_id` and `installments` field when creating a payment.
 
@@ -427,7 +427,7 @@ The response includes the `issuer_id` to be sent, and the recommended message to
 >
 > Note
 >
-> Due to [Resolution E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) of the Argentine Secretary of Commerce, on transparent prices, it is necessary that you comply with certain [additional requirements](/guides/localization/considerations-argentina.es.md).
+> Due to [Resolution E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) of the Argentine Secretary of Commerce, on transparent prices, it is necessary that you comply with certain [additional requirements](/guides/localization/considerations-argentina.en.md).
 
 To create the payment, it is important to send the data indicated above:
 
@@ -538,12 +538,69 @@ payment.Save();
 ```
 ]]]
 
+### Here is an example of a payment with all the data
+
+```json
+ {
+    "transaction_amount": 100,
+    "token": "ff8080814c11e237014c1ff593b57b4d",
+    "description": "Title of what you are paying for",
+    "installments": 12,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    },
+    "external_reference": "Reference_1234",
+    "metadata": {
+        "key1": "value1",
+        "key2": "value2"
+    },
+    "statement_descriptor": "MY E-STORE",
+    "notification_url": "https://www.your-site.com/webhooks",
+    "additional_info": {
+        "items": [
+            {
+                "id": "item-ID-1234",
+                "title": "Title of what you are paying for",
+                "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
+                "description": "Item description",
+                "category_id": "art", // Available categories at https://api.mercadopago.com/item_categories
+                "quantity": 1,
+                "unit_price": 100
+            }
+        ],
+        "payer": {
+            "first_name": "user-name",
+            "last_name": "user-surname",
+            "registration_date": "2015-06-02T12:58:41.425-04:00",
+            "phone": {
+                "area_code": "11",
+                "number": "4444-4444"
+            },
+            "address": {
+                "street_name": "Street",
+                "street_number": 123,
+                "zip_code": "5700"
+            } 
+        },
+        "shipments": {
+            "receiver_address": {
+                "zip_code": "5700",
+                "street_name": "Street",
+                "street_number": 123,
+                "floor": 4,
+                "apartment": "C"
+            }
+        }
+    }
+}
+```
 
 ## Response handling
 
 It is **very important** to correctly report the results received when creating a payment. This will help improve conversion in cases of rejections, and avoid chargebacks in cases of approved transactions.
 
-We recommend that you read the article [response handling](/guides/payments/api/handling-responses.es.md) and use the suggested communication in each case.
+We recommend that you read the article [response handling](/guides/payments/api/handling-responses.en.md) and use the suggested communication in each case.
 
 ## Receive a payment notification
 
@@ -551,7 +608,7 @@ It is important to be aware of any updates on your payment status. For this, you
 
 A Webhook is a notification that is sent from one server to another through an `HTTP POST` request.
 
-You can find all the information about it in the [Webhooks](/guides/notifications/webhooks.es.md)section.
+You can find all the information about it in the [Webhooks](/guides/notifications/webhooks.en.md)section.
 
 ## Next steps
 
@@ -559,4 +616,4 @@ You can find all the information about it in the [Webhooks](/guides/notification
 
 You can securely store your customers’ cards and make payments with a one-click-to-buy experience.
 
-[More info.](/guides/payments/api/customers-and-cards.es.md)
+[More info.](/guides/payments/api/customers-and-cards.en.md)
