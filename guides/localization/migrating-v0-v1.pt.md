@@ -4,13 +4,13 @@ No Mercado Pago procuramos sempre otimizar nossa plataforma oferecendo a mais al
 
 No momento, estamos trabalhando na migração da nossa API  versão 0 para a versão 1 com o objetivo de manter os mais altos padrões de qualidade.
 
-Consequentemente, o Mercado Pago exigirá que a nova versão da API seja utilizada a partir de 30 de julho de 2018.
+Consequentemente, o Mercado Pago exigirá que a nova versão da API seja utilizada a partir de 10 de dezembro de 2018.
 
 Depois desse prazo, a versão versão 0 será desativada e qualquer tentativa de conexão utilizando-a falhará.
 
 ### Pontos para serem levados em conta
 
-* A alteração terá impacto **a partir de 30 de julho de 2018.**
+* A alteração terá impacto **a partir de 10 de dezembro de 2018.**
 * Se você usa apenas os botões de pagamento de Mercado Pago, essa alteração não afetará você.
 * Se você usa apenas Mercado Shops, essa alteração não afetará você.
 * Caso tenha seu **próprio e-commerce, consulte sua equipe de TI**.
@@ -54,6 +54,6 @@ curl -X POST \
 
 Caso você precise fazer adaptações, **é importante que você se lembre de fazer essa alteração em tempo hábil, porque caso contrário, é muito provável que suas conexões com o Mercado Pago comecem a falhar.**
 
-Se você tiver alguma dúvida ou precisar de ajuda para concluir com êxito essa mudança, entre em contato conosco através do seguinte [formulário de contato](/support).
+Se você tiver alguma dúvida ou precisar de ajuda para concluir com êxito essa mudança, entre em contato conosco através do seguinte [formulário de contato](https://www.mercadopago.com.br/developers/pt/support).
 
 Equipe do Mercado Pago.
