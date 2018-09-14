@@ -17,10 +17,9 @@ Recibe pagos de manera simple y segura utilizando el *Web Payment Checkout* de *
 
 ## Paso 1: Obtener datos iniciales
 
-Para iniciar el checkout necesitarás sólo 2 datos:
+Para iniciar el checkout necesitarás una preferencia:
 
-1. Preference ID: [Cómo crear una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md).
-2. Public key: [Cómo obtener tu public key](https://www.mercadopago.com.ar/account/credentials).
+- Preference ID: [Cómo crear una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md).
 
 ## Paso 2: Lleva a tu comprador al checkout
 
