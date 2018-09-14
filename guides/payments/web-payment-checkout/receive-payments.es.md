@@ -19,7 +19,7 @@ Recibe pagos de manera simple y segura utilizando el *Web Payment Checkout* de *
 
 Para iniciar el checkout necesitarás una preferencia:
 
-1. Preference ID: [Cómo crear una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md).
+- Preference ID: [Cómo crear una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md).
 
 ## Paso 2: Lleva a tu comprador al checkout
 
