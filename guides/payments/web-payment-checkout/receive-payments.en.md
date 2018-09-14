@@ -32,8 +32,7 @@ Incluye el siguiente código en el lugar donde va a estar ubicado el botón dent
 <form action="/procesar-pago" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
-    data-preference-id="<?php echo $preference->id; ?>"
-    data-public-key="ENV_PUBLIC_KEY">
+    data-preference-id="<?php echo $preference->id; ?>">
   </script>
 </form>
 ```
