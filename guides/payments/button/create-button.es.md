@@ -13,7 +13,7 @@ Desde tu cuenta de Mercado Pago, [tienes la opción de generar un botón o link]
 Te guiaremos para que puedas configurar:
 
 * Precio, descripción y foto de lo que vendes.
-----[mla, mlb, mlm, global]----
+----[mla, mlm, global]----
 * Si deseas utilizar envíos o no **(Mercado Envíos)**.
 ------------
 * Medios de pago que aceptas: tarjetas de crédito o débito y pagos en efectivo.

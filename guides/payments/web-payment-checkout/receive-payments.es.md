@@ -17,10 +17,9 @@ Recibe pagos de manera simple y segura utilizando el *Web Payment Checkout* de *
 
 ## Paso 1: Obtener datos iniciales
 
-Para iniciar el checkout necesitarás sólo 2 datos:
+Para iniciar el checkout necesitarás una preferencia:
 
-1. Preference ID: [Cómo crear una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md).
-2. Public key: [Cómo obtener tu public key](https://www.mercadopago.com.ar/account/credentials).
+- Preference ID: [Cómo crear una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md).
 
 ## Paso 2: Lleva a tu comprador al checkout
 
@@ -33,8 +32,7 @@ Incluye el siguiente código en el lugar donde va a estar ubicado el botón dent
 <form action="/procesar-pago" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
-    data-preference-id="<?php echo $preference->id; ?>"
-    data-public-key="ENV_PUBLIC_KEY">
+    data-preference-id="<?php echo $preference->id; ?>">
   </script>
 </form>
 ```

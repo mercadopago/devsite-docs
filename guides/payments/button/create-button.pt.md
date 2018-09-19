@@ -13,7 +13,7 @@ Na sua conta no Mercado Pago, você tem a opção para [gerar um link](https://w
 
 Vamos orientá-lo para que você possa configurar:
 *	Preço, descrição e foto do que você vende.
-----[mla, mlb, mlm, global]----
+----[mla, mlm, global]----
 *	Se quiser utilizar o **Mercado Envios**.
 ------------
 *	Meios de pagamentos aceitos: cartões de crédito e pagamentos em boleto.
