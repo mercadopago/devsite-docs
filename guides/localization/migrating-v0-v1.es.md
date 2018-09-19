@@ -23,14 +23,14 @@ La siguiente tabla contiene a los recursos migrados y sus equivalentes.
 | Uso                     | Método | URI del recurso deprecado              | URI del recurso equivalente      | Referencia                                                      |
 |-------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
 | Devoluciones            | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds |-                                                                |
-| Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |-                                                                |
-| Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](/reference/payments/endpoints/_payments_id/put.yaml)    |
-| Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](/reference/payments/endpoints/_payments_id/put.yaml)    |
-| Pagos                   | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](/reference/payments/endpoints/_payments_id/get.yaml)    |
-| Pagos                   | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](/reference/payments/endpoints/_payments_id/get.yaml)    |
-| Notificación de pagos   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[visita](/reference/payments/endpoints/_payments_id/get.yaml)    |
-| Búsqueda de pagos       | `GET`  | /payments/search                       | /v1/payments/search              |[visita](/reference/payments/endpoints/_payments_search/get.yaml)|
-| Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](/reference/payments/endpoints/_payments_search/get.yaml)|
+| Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/put)    |
+| Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/put)    |
+| Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/put)    |
+| Pagos                   | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/get)    |
+| Pagos                   | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/get)    |
+| Notificación de pagos   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/get)    |
+| Búsqueda de pagos       | `GET`  | /payments/search                       | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_search/get)|
+| Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_search/get)|
 
 ### Ejemplos
 
