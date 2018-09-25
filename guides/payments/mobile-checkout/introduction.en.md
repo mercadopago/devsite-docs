@@ -66,3 +66,5 @@ platform :ios, '8.0'
 pod 'MercadoPagoSDKV4', '~> 4.0'
 ```
 ]]]
+
+The complete documentation can be found in the following links: [Android docs](http://mercadopago.github.io/px-android/) - [iOS docs](http://mercadopago.github.io/px-ios/v4/)
