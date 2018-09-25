@@ -166,31 +166,18 @@ O también establecer una cantidad de cuotas por _default_ que se seleccionará 
 
 ## Personaliza el flujo de pago
 
-La Preferencia de Flujo permite personalizar y configurar el flujo para que puedas lograr la mejor experiencia de pago.
+La Configuración Avanzada permite personalizar y configurar el flujo para que puedas lograr la mejor experiencia de pago.
 
-En la clase _FlowPreference_ podrás configurar, tanto si deseas mostrar una pantalla con el resumen de lo que se va a pagar (Revisa y Confirma) como si deseas comunicar campañas de descuentos, entre otras opciones.
-
-Para incorporar en el _Checkout_ las opciones configuradas en la clase _FlowPreference_ deberás agregar una instancia de la misma en el inicio del _Checkout_, como se muestra en el siguiente código:
+Para incorporar en el _Checkout_ las opciones configuradas en la clase `AdvancedConfiguration` deberás agregar una instancia de la misma en el inicio del _Checkout_, como se muestra en el siguiente código:
 
 [[[
 ```android
-	CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
-                .setSite(Sites.ARGENTINA)
-                .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
-                .build();
-
-FlowPreference flowPreference = new FlowPreference.Builder()
-                .disableReviewAndConfirmScreen()
-                .disableDiscount()
-                .disableBankDeals()
-                .build();
-
-new MercadoPagoCheckout.Builder()
-                .setActivity(this)
-                .setPublicKey("ENV_PUBLIC_KEY")
-                .setCheckoutPreference(checkoutPreference)
-                .setFlowPreference(flowPreference)
-                .startForPayment();
+final AdvancedConfiguration advancedConfiguration =
+    new AdvancedConfiguration.Builder().setBankDealsEnabled(false).build();
+new MercadoPagoCheckout
+    .Builder("ENV_PUBLIC_KEY", checkoutPreferenceId)
+    .setAdvancedConfiguration(advancedConfiguration).build()
+    .startPayment(CheckoutExampleActivity.this, REQUEST_CODE);
 ```
 ```swift
 let flowPrefernece = FlowPreference()
@@ -221,7 +208,7 @@ FlowPreference *flowPreference = [[FlowPreference alloc]init];
 
 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
 Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
-    
+
 NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
 CheckoutPreference *checkoutPreference = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
@@ -234,80 +221,66 @@ MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey:
 
 Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.
 
-## Paga en tu Servidor
 
-Si necesitas hacer alguna validación en tu servidor al momento de realizar el pago, puedes configurar tu propio servicio de pagos.
+### Configura tu color
 
-En la clase _ServicePreference_ puedes configurar la URL y la URI de tu servicio junto con un _Map_ para que puedas enviar la información que desees.
-
-Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
-
-Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado Pago, tal como se muestra en el siguiente código:
+Puedes cambiar los colores de la interfaz gráfica del flujo de pago con el siguiente código:
 
 [[[
 
 ```android
-public void submit(View view) {
-  CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
-          .setSite(Sites.ARGENTINA)
-          .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
-          .build();
+===
+En tu archivo `colors.xml` deberás hacer referencia a los colores que quieras cambiar del checkout y setearlos con tus propios colores.
+===
 
-  HashMap<String, Object> extraData = new HashMap<>();
-  map.put("item_id", "id");
+<!-- Color principal -->
+<color name="ui_components_android_color_primary">@color/your_color</color>
 
-  ServicePreference servicePreference = new ServicePreference.Builder()
-          .setCreatePaymentURL("https://your-base-url.com", "/your-create-payment-uri", extraData)
-          .build();
+<!-- Color de la Toolbar -->
+<color name="px_toolbar_text">@color/your_color</color>
 
-  new MercadoPagoCheckout.Builder()
-          .setActivity(this)
-          .setServicePreference(servicePreference)
-          .setPublicKey("ENV_PUBLIC_KEY")
-          .setCheckoutPreference(checkoutPreference)
-          .startForPayment();
-}
+<!-- Color de la Status Bar -->
+<color name="ui_components_android_color_primary_dark">@color/your_color</color>
+
+<!-- Color primario del Spinner-->
+<color name="ui_components_spinner_primary_color">@color/your_color</color>
+
+<!-- Color secundario del Spinner -->
+<color name="ui_components_spinner_secondary_color">@color/your_color</color>
+
+<!-- Color de fondo del Spinner -->
+<color name="px_background_loading">@color/your_color</color>
+
+<!-- Color de los iconos de los medios de pago -->
+<color name="px_paymentMethodTint">@color/your_color</color>
+
+<!-- Color de los inputs -->
+<color name="px_input">@color/your_color</color>
 ```
 ```swift
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
-let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
+public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
+    let decorationPreference: DecorationPreference = DecorationPreference()
+    decorationPreference.setBaseColor(color: UIColor.purple)
+    decorationPreference.enableDarkFont()
+    MercadoPagoCheckout.setDecorationPreference(decorationPreference)
 
+    let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+    navigationController: self.navigationController!)
 
-	let checkoutPreference = CheckoutPreference()
-	checkoutPreference.items = [item]
-	checkoutPreference.payer = payer
-	checkoutPreference.setId("[FAKER][GLOBALIZE][UPPER_SITE_ID]")
-
-
-let servicePreference = ServicePreference()
-servicePreference.setCreatePayment(baseURL: "https://your-base-url.com/", URI: "/your-create-payment-uri",
-additionalInfo: ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]])
-
-MercadoPagoCheckout.setServicePreference(servicePreference)
-
- let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference, navigationController: self.navigationController!)
-
-checkout.start()
+    checkout.start()
+}
 ```
-```Objective-c
- 
-	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
-    Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"payer@email.com" type:nil identification:nil entityType:nil];
+```objective-c
+DecorationPreference *decorationPreference = [[DecorationPreference alloc] initWithBaseColor:[UIColor fromHex:@"#CA254D"]];
+[decorationPreference enableDarkFont];
+[MercadoPagoCheckout setDecorationPreference:decorationPreference];
 
-    NSArray *items = [NSArray arrayWithObjects:item, item, nil];
-
-    self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
-	[self.pref setSiteId:@"[FAKER][GLOBALIZE][UPPER_SITE_ID]"];
-
-	ServicePreference * servicePreference = [[ServicePreference alloc] init];
-	 NSDictionary *extraParams = @{
-                                  @"merchant_access_token" : @"mla-cards-data" };
-	[servicePreference setCreatePaymentWithBaseURL:@"https://private-0d59c-mercadopagoexamples.apiary-mock.com" URI:@"/create_payment" additionalInfo:extraParams];
-	[MercadoPagoCheckout setServicePreference:servicePreference];
-
-	-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-		    self.mpCheckout = [[MercadoPagoCheckout alloc] initWithPublicKey: TEST_PUBLIC_KEY accessToken: nil checkoutPreference:checkoutPreference paymentData:nil discount:nil navigationController:self.navigationController paymentResult: nil];
-    [self.mpCheckout start];
-	} 
+-(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
+    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
+    [checkout start];
+}
 ```
+
 ]]]
+
+El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo **setBaseColor("#060d72");**.
