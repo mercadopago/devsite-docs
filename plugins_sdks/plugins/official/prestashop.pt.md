@@ -16,7 +16,7 @@
 
 O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades a seguir:
 
-| Funcionalidade                               	| Checkout Básico 	| Checkout Transparente |
+| Funcionalidade                               	| Web Checkout    	| API                   |
 |-----------------------------------------------|-------------------|-----------------------|
 | Pagamento com Cartão de Crédito             	| ✔               	| ✔                     |
 | Outros Meios de Pagamento, como os Boletos    | ✔               	| ✔                     |
