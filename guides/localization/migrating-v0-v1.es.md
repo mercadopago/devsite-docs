@@ -23,14 +23,14 @@ La siguiente tabla contiene a los recursos migrados y sus equivalentes.
 | Uso                     | Método | URI del recurso deprecado              | URI del recurso equivalente      | Referencia                                                      |
 |-------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
 | Devoluciones            | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds |-                                                                |
-| Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/put)    |
-| Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/put)    |
-| Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/put)    |
-| Pagos                   | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/get)    |
-| Pagos                   | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/get)    |
-| Notificación de pagos   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_id/get)    |
-| Búsqueda de pagos       | `GET`  | /payments/search                       | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_search/get)|
-| Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/endpoints/_payments_search/get)|
+| Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
+| Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
+| Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
+| Pagos                   | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get)    |
+| Pagos                   | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get)    |
+| Notificación de pagos   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get)    |
+| Búsqueda de pagos       | `GET`  | /payments/search                       | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
+| Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
 
 ### Ejemplos
 

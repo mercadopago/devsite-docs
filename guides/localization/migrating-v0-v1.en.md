@@ -23,14 +23,14 @@ The table below shows a list of migrated resources.
 | Use                     | Method | URI of the deprecated resource         | Resource URI equivalent          | Reference                                                       |
 |-------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
 | Refunds                 | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds |-                                                                |
-| Refunds                 | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_id/put)-                                                                |
-| Payment update          | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_id/put)    |
-| Payment update          | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_id/put)    |
-| Payments                | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_id/get)    |
-| Payments                | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_id/get)    |
-| Payment notifications   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_id/get)    |
-| Payments search         | `GET`  | /payments/search                       | /v1/payments/search              |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_search/get)|
-| Payments search         | `GET`  | /collections/search                    | /v1/payments/search              |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/endpoints/_payments_search/get)|
+| Refunds                 | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/put/)-                                                                |
+| Payment update          | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/put/)    |
+| Payment update          | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/put/)    |
+| Payments                | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get)    |
+| Payments                | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get)    |
+| Payment notifications   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get)    |
+| Payments search         | `GET`  | /payments/search                       | /v1/payments/search              |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get)|
+| Payments search         | `GET`  | /collections/search                    | /v1/payments/search              |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get)|
 
 ### Examples
 
