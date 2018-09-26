@@ -32,6 +32,7 @@ The table below shows a list of migrated resources.
 | Payments search         | `GET`  | /payments/search                       | /v1/payments/search              |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get)|
 | Payments search         | `GET`  | /collections/search                    | /v1/payments/search              |[access](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get)|
 
+
 ### Examples
 
 #### Total refund
