@@ -14,7 +14,7 @@
 
 O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a seguir:
 
-| Funcionalidade                                            | Checkout Básico   | Checkout Transparente   |
+| Funcionalidade                                            | Web Checkout      | API                     |
 |---------------------------------------------------------- |-------------------|-------------------------|
 | Pagamento com Cartão de Crédito                           | ✔                 | ✔                       |
 | Outros Meios de Pagamento, como os Boletos                | ✔                 | ✔                       |
@@ -31,7 +31,7 @@ O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a 
 
 Oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagamentos de qualquer pessoa em qualquer lugar.
 
-**Checkout Básico**
+**Web Checkout**
 
 Ótimo para vendedores que querem rapidez e agilidade.
 
@@ -43,7 +43,7 @@ Oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagam
 
 *Disponível para Argentina, Brasil, Chile, Colômbia, México, Peru, Uruguai e Venezuela*
 
-**Checkout Transparente**
+**API*
 
 Ofereça um checkout totalmente customizado à sua experiência de marca com nossa API de pagamentos simples de usar.
 
@@ -102,7 +102,7 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 
 1. Novamente em **Extensions > Payments > MercadoPago**, clique em **Edit** para configurar sua conta do Mercado Pago:
 
- ![Mercado Pago Account](https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
+ ![Mercado Pago Account](/images/opencart_mpaccount.png)
 
 2.  Configure seu **CLIENT_ID** e **CLIENT_SECRET**, ou **PUBLIC_KEY** e **ACCESS_TOKEN** (dependendo de qual módulo você está utilizando). [Obtenha suas credenciais](https://www.mercadopago.com/mlb/account/credentials).
   
@@ -134,4 +134,4 @@ Sua loja irá sincronizar automaticamente com o MercadoPago. A URL de notificaç
 
 ## Atualização
 
-Siga os mesmos passos que você fez para [instalar](#instalação) o módulo.
+Siga os mesmos passos que você fez para [instalar](#bookmark_Instalação) o módulo.
