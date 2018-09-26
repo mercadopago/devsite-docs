@@ -1,18 +1,43 @@
-# OpenCart - Mercado Pago Module (v1.4.9, 1.5.x, 2.x - 2.2, 2.3)
+# OpenCart
 
-* [Features](#features)
-* [Available Versions](#versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Upgrade](#upgrade)
-* [Feedback](#feedback)
+## Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
 
-<a name="features"></a>
+* [Features](#bookmark_Features)
+* [Available Versions](#bookmark_Available_Versions)
+* [Requirements](#bookmark_Requirements)
+* [Installation](#bookmark_Installation)
+* [Configuration](#bookmark_Configuration)
+* [Upgrade](#bookmark_Upgrade)
+* [Feedback](#bookmark_Feedback)
+
 ## Features:
 
 Checkout options right for your business:
 We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
+
+| Feature                                                   | Basic  Checkout   | Customized Checkout     |
+|---------------------------------------------------------- |-------------------|-------------------------|
+| Credit card Payments                                      | ✔                 | ✔                       |
+| Other payment methods                                     | ✔                 | ✔                       |
+| Mercado Pago's interface                                  | ✔                 |                         |
+| Installments calculator                                   | ✔                 | ✔                       |
+| IPN and webhooks                                          | ✔                 | ✔                       |
+| Mercado Pago coupon discounts                             | ✔                 |                         |
+| Log and debugging tools                                   | ✔                 | ✔                       |
+| Currency conversion                                       |                   | ✔                       |
+| Platform and credential Status                            | ✔                 | ✔                       |
+
+**Basic Checkout**
+
+Great for merchants who want to get going quickly and easily.
+
+* Easy website integration— no coding required.
+* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
+* Store buyer’s card for fast checkout.
+* Accept tickets, bank transfer and account money in addition to cards.
+* Accept MercadoPago's discount coupons.
+
+*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
 
 **Custom Checkout**
 
@@ -26,93 +51,43 @@ Offer a checkout fully customized to your brand experience with our simple-to-us
 
 *Available for Argentina, Brazil, Colombia, Mexico, Peru and Venezuela*
 
-**Standard Checkout**
 
-Great for merchants who want to get going quickly and easily.
-
-* Easy website integration— no coding required.
-* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
-* Store buyer’s card for fast checkout.
-* Accept tickets, bank transfer and account money in addition to cards.
-* Accept MercadoPago's discount coupons.
-
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
-
-<a name="requirements"></a>
 ## Requirements:
 
-**Operating System**
+| Requirement               | Detail                                                    |
+|---------------------------|-----------------------------------------------------------|
+| OS                        | Linux x86-64                                              |
+| Web Server                | Apache 2.x, Nginx 1.7.x                                   |
+| Data base                 | MySQL 5.6 (Oracle or Percona)                             |
+| PHP version               | PHP 5.4.x / 5.5.x                                         |
+| Extensions                | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl  |
+| SSL                       | SSL required to process card Payments                     |
 
-* Linux x86-64
-
-**Web Server**
-
-* Apache 2.x
-* Nginx 1.7.x
-
-**Database**
-
-* MySQL 5.6 (Oracle or Percona)
-
-**PHP**
-
-* PHP 5.4.x / 5.5.x
-* Required extensions: PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl
-
-**SSL certificate**
-
-It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
+>It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
 During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
 
 
-<a name="versions"></a>
 ## Available Versions:
-<table>
-  <thead>
-    <tr>
-      <th>Plugin Version</th>
-      <th>Status</th>
-      <th>Compatible Versions</th>
-    </tr>
-  <thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9">v1.4.9</a></td>
-      <td>Deprecated (Old Version)</td>
-      <td>OpenCart v1.4.9</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x">v1.5.x</a></td>
-      <td>Deprecated (Old Version)</td>
-      <td>OpenCart v1.5.x</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2">v2.x - v2.2</a></td>
-      <td>Stable (Current Version)</td>
-      <td>OpenCart v2.x - v2.2</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/mercadopago/cart-opencart/tree/master/v2.3">v2.3</a></td>
-      <td>Stable (Current Version)</td>
-      <td>OpenCart v2.3</td>
-    </tr>
-  </tbody>
-</table>
 
-<a name="installation"></a>
+| Plugin Version                                                                          | Status                    | Compatible versions   |
+|-----------------------------------------------------------------------------------------|---------------------------|-----------------------|
+| [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)               | Deprecated (Old Versión)  | OpenCart v1.4.9       |
+| [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)               | Deprecated (Old Versión)  | OpenCart v1.5.x       |
+| [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)  | Deprecated (Old Versión)  | OpenCart v2.x - v2.2  |
+| [v2.3](https://github.com/mercadopago/cart-opencart/tree/master/v2.3)                   | Stable (Current Versión)  | OpenCart v2.3         |
+| [v3.x](https://github.com/mercadopago/cart-opencart/tree/master/v3.x)                   | Stable (Current Versión)  | OpenCart v3.x         |
+
 ## Installation:
 
 1. Download Mercado Pago module:
-    * OpenCart 1.4.9
-    * OpenCart 1.5.x
-    * OpenCart 2.x - 2.2
-    * OpenCart 2.3
+
+  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart/tree/master/v2.3)
+  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart/tree/master/v3.x)
 
 2. Copy the folders **admin**, **catalog** and **image** to your OpenCart ROOT installation. Make sure to keep the OpenCart folders structure intact.
 
 **Important**: If you're using OpenCart 2.0, you'll find 3 different types of checkout inside the OpenCart 2.x folder: Standard, Custom and Ticket. You can use them all together or individually, without any problems or dependencies between them. Each one of these folders have its own Admin, Catalog and Image folders and the installation process is the same described above.
 
-<a name="setup"></a>
 ## Setup MercadoPago
 
 1. On your store administration, go to **extensions > payments > MercadoPago** and click **Install**.
@@ -121,7 +96,6 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 	![Mercado Pago Account](https://raw.github.com/mercadopago/cart-opencart/master/README.img/MPAccount.png)
 
-<a name="configuration"></a>
 ## Configuration
 
 1. Again in **Extensions > Payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
@@ -139,6 +113,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
   * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
   * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
   * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
+
 4. If you're using **Custom Checkout** or **Standard Checkout**, select the country related to your **MercadoPago** account. If you're using **Ticket Checkout**, there is no need to configure the country.
 
 5. Other general configurations:
@@ -159,12 +134,10 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
     *  *Redirect*: Redirects to Mercado Pago URL.
     *  *Lightbox*: Similar to Iframe option but opens a lightbox instead of an iframe.
 
-<a name="notifications"></a>
 ## Notifications
 
 Your store will automatically sync with MercadoPago. The notification URL will be sent in each payment.
 
-<a name="upgrade"></a>
-## Upgrade Mercado Pago Plugin ##
+## Upgrade Mercado Pago Plugin
 
-Follow the same steps that you did to install the module.
+Follow the same steps that you did to [install the module](#bookmark_Installation).

@@ -1,11 +1,17 @@
 # Prestashop 
 
-* [Requirements](#Requirements)
-* [Features](#Features)
-* [Installation](#Installation)
-* [Configure Custom payment and standard](#Configure-Credit-Card-and-Ticket-Standard)
-* [Configure Mercado Envios](#Configure-Mercado-Envios)
-* [Support](#Support)
+
+### Mercado Pago Module (Prestashop 1.6.x - 1.7.x)
+
+* [Features](#bookmark_Features)
+* [Requirements](#bookmark_Requirements)
+* [Versions](#bookmark_Versions)
+* [Installation](#bookmark_Installation)
+* [Configuration](#bookmark_Configuration)
+* [Notifications](#bookmark_Notifications)
+* [Upgrade](#bookmark_Upgrade)
+
+## Features
 
 The module of Mercado Pago to Prestahop is integrated with the features and payment solutions:
 
@@ -23,8 +29,8 @@ The module of Mercado Pago to Prestahop is integrated with the features and paym
 | Installments calculator             	| ✔              	| ✔               	|
 | Installments shipment calculator    	| ✔              	| ✔               	|
 
-<a name="Requirements"></a>
-## Requirements: ##
+
+## Requirements
 
 |                            | Detail                                                                                         |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -38,58 +44,84 @@ The module of Mercado Pago to Prestahop is integrated with the features and paym
 | Additional Settings        | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | It is a requirement that you have an SSL certificate, During testing in Sandbox you will be able to run at http.|
  
-<a name="Installation"></a>
-## Installation: ##
+>It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
+During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
 
-This process will explain the installation of the Mercado Pago module via Package and Marketplace:
 
-**Installation via Marketplace**
+## Versions
 
-1. Go to **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** and click in Register to Download:
-2. Before your register, you can download the module.
-![Download](/images/prestashop-download.gif)
+| Plugin Version                                             | Status                   |Available Versions |
+|------------------------------------------------------------|--------------------------|-------------------|
+| [v1.6.x](https://github.com/mercadopago/cart-prestashop-6/)| Stable (Current Version) | Prestashop v1.6.x   |
+| [v1.7.x](https://github.com/mercadopago/cart-prestashop-7/)| Stable (Current Version) | Prestashop v1.7.x   |
 
-3. Now access you admin and go to Modules and Services.
-![Installation](/images/prestashop-installation.gif)
 
-4. Very Good! The module of Mercado Pago was successfully installed.
-![Configuration](/images/prestashop-installation_success.png)
+## Installation
 
-<a name="Configure-Credit-Card-and-Ticket-Standard"></a>
-## Configure Credit Card, Ticket and Redirect: ##
+1. Download the file **mercadopago.zip** in our Github repository according to the version of Prestashop you use.
 
-This process will explain how to configure the module to accept payments with Checkout Custom with Credit Card, Tickets and Standard:
+> NOTE
+>
+> DOWNLOAD
+>
+> Mercado Pago Module for Prestashop [1.6](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip).
+> Mercado Pago Module for Prestashop [1.7](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip).
 
-1. After install the module, Go to **Mercado Pago > Configure**, now you need to get your credencials
+2. Access the Prestashop administrative panel in **IMPROVEMENTS** -> **Modules** -> **Modules and Services**, click on the button **"Send a Module"** and select the file **mercadopago.zip** downloaded previously.
 
-2. To set up the credentials go to **Mercado Pago - Custom Checkout**, you will see the field **Public Key** and **Access Token**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
+3. Very good! Mercado Pago module was installed successfully.
+
+![Settings](/images/prestashop_select_mp_file.gif)
+
+
+## Configuration
+
+1. After the module installation, go to **IMPROVEMENTS** -> **Modules** -> **Modules and Services** and click **Configure** in the Mercado Pago Plugin.
+
+2. On the screen **BASIC SETTINGS** you will be asked for the  **Client ID** and **Client Secret**. These are the credentials of your Mercado Pago account and can be obtained through the following link: [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic).
+
+![Settings](/images/prestashop_credentials_configuration.gif)
 
 > There are two types of credentials:
-> * Modo Sandbox: The credentials in this way are used for testing.
-> * Modo Produção: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
+* **Sandbox mode**: These credentials are used for the tests.
+> * **Production mode**: These credentials are used for purchases in production.
 
-3. Now you can fill the **client id** and **client secret** and click in **Login** Button:
-![Login](/images/prestashop-credentials_1.gif)
+3. Now on the screen **PAYMENT SETTINGS** keep Checkout Standard as active to use the Redirected Checkout of Mercado Pago.
 
-4. Enable custom, fill the **access token** and **public key** and select the options for accept in your custom payment:
-![Credentials Custom](/images/prestashop-credentials_2.gif)
+![Checkout Standard](/images/prestashop_checkout_standard.png)
 
-5. Enable standard, you need to enable the option **Settings - MercadoPago Standard**:
-![Enable Standard](/images/prestashop-standard.gif)
+4. In PAYMENT METHOD you can enable the payment methods with which you will work:
 
-6. Very good! The Checkout Custom with Credit Card, Ticket and standard has been configured and enabled successfully!
+![Payment Method](/images/prestashop_payment_method.png)
 
-<a name="Configure-Mercado-Envios"></a>
-## Configure Mercado Envios: ##
+5. Well done! You have enabled payments via Checkout Standard (redirected)!
 
-This process will explain how to configure the module to accept Mercado Envios:
+### Mercado Envíos Configuration
 
-1. First, You need to [enable Mercado Envios for your Mercado Pago account](http://shipping.mercadopago.com.ar/optin/doOptin).
+> IMPORTANT: Mercado Envíos works with the Standard Checkout (redirected). When using it the other means of payment will be disabled.
 
-> 	IMPORTANT: Your Mercado Pago account must be of type **Seller** and the products needs to have the correct dimensions.
+1. First, you need [enable Mercado Envíos in your account](http://shipping.mercadopago.com.ar/optin/doOptin).
 
-2. To enable the Mercado Envios, Enable the **Mercado Envios** option and click in **Save**:
-![Enable Mercado Envios](/images/prestashop-mercadoenvios_settings.gif)
+> NOTE
+>
+> IMPORTANT
+> * Your Mercado Pago account needs to be of the **Seller** type.
+>The submitted product must have its dimensions (width, height, length and weight) properly configured and within the rules and limits supported by the specified country.
 
-3. Very good! The Mercado Envios has been configured and enable successfully!
+2. To enable the module, simply activate it by accessing the Prestashopp administrative panel in **IMPROVEMENTS -> Modules -> Modules and Services** and clicking **Configure** in the Mercado Pago module:
 
+3. In **Mercado Envíos** it is possible to configure a text to be displayed in the delivery through the field **Custom text to use with delivery**. To activate, mark the field **Enable Mercado Envíos** as **YES**.
+
+![Enable Mercado Envíos](/images/prestashop_mercado_envios.png)
+
+4. Very good! Now you can offer Mercado Envíos as a means of transportation for your customers!
+
+
+## Notifications
+
+Your store will automatically synchronize with Mercado Pago. The notification URL will be sent in each payment.
+
+
+## Upgrade
+
+Follow the same steps you did to [install the module](#bookmark_Installation).

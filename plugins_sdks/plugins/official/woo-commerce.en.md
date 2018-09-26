@@ -1,15 +1,19 @@
 # WooCommerce
 
-* [System Requirements](#system-requirements)
-* [Features](#features)
-* [Installation](#installation)
-* [General Mercado Pago Settings](#general-mercado-pago-settings)
-* [Instant Payment Notification Settings](#instant-payment-notification-settings)
-* [Upgrade](#upgrade) 
 
+## Mercado Pago Module (WooCommerce 3.x)
+
+* [Features](#bookmark_Features)
+* [Requirements](#bookmark_Requirements)
+* [Versions](#bookmark_Versions)
+* [Installation](#bookmark_Installation)
+* [Configuration](#bookmark_Configuration)
+* [Notifications](#bookmark_Notifications)
+* [Upgrade](#bookmark_Upgrade) 
 
 
 ## Features
+
 The module of Mercado Pago for WooCommerce is integrated with the following features and payment solutions:
 
 |                                                    	| Checkout Basico 	| Checkout Transparente 	|
@@ -29,11 +33,11 @@ The module of Mercado Pago for WooCommerce is integrated with the following feat
 | Discounts by payment method or Mercado Pago coupon 	| ✔               	|                       	|
 | Log and debug tools                                	| ✔               	| ✔                     	|
 
-## System Requirements
+## Requirements
 
-|                            | Detail                                             |
+| Requirement                | Detail                                             |
 | -------------------------- | -------------------------------------------------- |
-| Platform version supported | WordPress 3.1.x - 4.7.x, WooCommerce 2.6.x - 3.1.x |
+| Platform version supported | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x |
 | Environment                | LAMP (Linux, Apache, MySQL, e PHP                  |
 | Web Server                 | Linux x86, x86-64                                  |
 | PHP Version                | 5.6 or major with Curl support                     |
@@ -41,8 +45,22 @@ The module of Mercado Pago for WooCommerce is integrated with the following feat
 | Additional Configuration   | safe_mode off, memory_limit mayor que 256 MB       |
 | SSL                        | SSL is required to use credit card                 |
 
+>It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
+During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
+
+## Versions
+
+| Plugin Version                                                                          | Status                    | Module compatibility  |
+|-----------------------------------------------------------------------------------------|---------------------------|-----------------------|
+| [v3.x](https://github.com/mercadopago/cart-woocommerce/archive/master.zip)              | Stable (Current Version)  | WooCommerce 3.x       |
+
 # Installation
-If you have already the module installed, please follow the [Upgrade Instructions](#Upgrade) first.
+
+> NOTE
+>
+> Note
+>
+>If you have already the module installed, please follow the [Upgrade Instructions](#bookmark_Upgrade) first.
 
 You have two options to install this module: from your WordPress Store, or by downloading and manually copying the module directory.
 
@@ -54,9 +72,11 @@ You have two options to install this module: from your WordPress Store, or by do
 
 3. You should find the module ready to be installed. Click install. Its done!
 
+![Plugin Installation](/images/woocommerce_install_plugin.gif)
+
 ### Manual Download
 
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-woocommerce/archive/master.zip">Github</a> or <a href="https://br.wordpress.org/plugins/woocommerce-mercadopago/">WordPress Plugin Directory</a>);
+1. Obtain the module source code from our [Github] repository (https://github.com/mercadopago/cart-woocommerce/archive/master.zip) or [WordPress Plugin Directory](https://br.wordpress.org/plugins/woocommerce-mercadopago/);
 
 2. Unzip the folder and change its name to "woocommerce-mercadopago";
 
@@ -64,38 +84,55 @@ You have two options to install this module: from your WordPress Store, or by do
 
 > HINT: To confirm that your module is really installed, you can click in *Plugins* item in the store administration menu, and check your just installed module. Just click *enable* to activate it and you should receive the message "Plugin enabled." as a notice in your WordPress.
 
-# General Mercado Pago Settings
+![Plugin Activation](/images/woocommerce_activate_plugin.gif)
+
+# Configuration
+
 This page will explain how to configure general Mercado Pago settings for this module. First of all, make sure that WooCommerce MercadoPago plugin is enabled, by clicking in *Plugins* item on the WordPress sidebar, as shown bellow:
 
 ![Plugin Menu](/images/woocommerce-plugins_menu.png)
 
-Now, in the sidebar of WordPress, click in *Settings > Mercado Pago* option. You should get the following page:
+Now, in the sidebar of WordPress, click in *Mercado Pago Settings* option. You should get the following page:
 
 ![Mercado Pago Config](/images/woocommerce-mercadopago_config.png)
 
 This window shows the main settings of WooCommerce MercadoPago plugin, where you can check and configure the following:
 
 ### Plugin Status and Payment Options
+
 Is the upper part of the window. Shows platform statuses and system consistency to use this plugin. Also, there are buttons that serves as shortcuts for the payment gateways that are offered. It is a good idea to have all the field with a green-checked icon.
 
+> NOTE
+>
+> Note
+>
+> To make payments with credit cards in Custom Checkout (transparent checkout) requires that the application server has SSL and that it is enabled in the Wordpress panel.
+
 ### Basic Checkout & Subscriptions
-  * Here you should place your *Client Id* and *Client Secret* keys, the credentials that uniquely identifies you in Mercado Pago. *Client Id* and *Client Secret* are used for Basic Checkout and Subscriptions payment methods;
+
+  * Here you must put your *Client Id* and *Secret Client* keys, which are the credentials that uniquely identify you in the Paid Market. *Client Id* and *Client Secret* are used for Basic Checkout payments and Signatures. Click the following link to [get your credentials](https://www.mercadopago.com/mlb/account/credentials?type=basic);
   * Also, just bellow, you can enable currency conversion mode for sells with Basic Checkout and Subscriptions. Currency conversion is a feature that enables you to set an unsupported currency in WooCommerce while maintaining Mercado Pago as payment method. It will convert the unsupported currency for the currency used in your country. Pay attention that this service converts values on-the-fly in real-time and can bring some additional delay to your server.
 
 ### Custom Checkout & Tickets
+
   * Here you should place your *Public Key* and *Access Token* keys, the credentials that uniquely identifies you in Mercado Pago. *Public Key* and *Access Token* are used for Custom Checkout and Tickets payment methods;
   * Also, just bellow, you can enable currency conversion mode for sells with Custom Checkout and Tickets. Currency conversion is a feature that enables you to set an unsupported currency in WooCommerce while maintaining Mercado Pago as payment method. It will convert the unsupported currency for the currency used in your country. Pay attention that this service converts values on-the-fly in real-time and can bring some additional delay to your server.
 
 ### Status Mapping of Payment x Order
+
 Here you can map each payment state to a given order status. Only make changes over here if you're fully aware of what you're doing.
 
 ### Store Settings
+
 These fields are general fields of your store.
   * *Statement Descriptor*: The description that will be shown in your customer's invoice;
   * *Store Category*: Sets up the category of the store;
   * *Store Identificator*: A prefix to identify your store, when you have multiple stores for only one Mercado Pago account.
+  * *Custom banner for checkout*: A URL for the image of a banner to be displayed at checkout. When leaving it blank, the standard banner of Mercado Pago will be used.
+  * *Custom URL for IPN*: A custom URL for receiving IPN notifications. The default format is: https://yourdomain.com/yoursubdomain.
 
 ### Test and Debug Options
+
 Offers logging tools so you can analyze problems that may be occurring. Maintain this disabled if working in production with a stable system.
 
 # Configuring Credit Card
@@ -103,7 +140,7 @@ This page will explain how to configure the module to accept payments with Credi
 
 ![Custom Checkout Config](/images/woocommerce-custom_checkout_config.png)
 
-If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your credit card checkout:
+If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your credit card checkout:
 
 ### Checkout Interface
 How checkout is shown.
@@ -121,7 +158,7 @@ This page will explain how to configure the module to accept payments with Ticke
 
 ![Ticket Checkout Config](/images/woocommerce-ticket_checkout_config.png)
 
-If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your ticket checkout:
+If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your ticket checkout:
 
 ### Checkout Interface
 How checkout is shown.
@@ -139,7 +176,7 @@ This page will explain how to configure the module to accept payments with Basic
 
 ![Basic Checkout](/images/woocommerce-basic_checkout_config.png)
 
-If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your ticket checkout:
+If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your ticket checkout:
 
 ### Checkout Interface
 How checkout is shown.
@@ -167,9 +204,11 @@ How the payment option behaves.
 This page will explain how to configure the module to accept Mercado Envios.
 
 ### Enable Your Mercado Envios
+
 To use Mercado Envios, [you need to enable it in your Mercado Pago account.](http://shipping.mercadopago.com.ar/optin/doOptin).
 
 ### Create the Shipping Zone and Shipping Methods
+
 To use Mercado Envios, you need it to be configured as a shipping method in WooCommerce. Just follow bellow steps:
 
 1. On your store administration, go to *WooCommerce > Settings > Shipping* tab. In *Shipping Zone*, click in *Add shipping zone*. Enter the zone name, select the regions within this zone and click in *Save Changes*.<br>![Mercado Envios 0](/images/woocommerce-me_0.png)
@@ -189,7 +228,7 @@ This page will explain how to configure the module to accept subscriptions paid 
 
 ![Subscription Checkout Config](/images/woocommerce-subscription_checkout_config.png)
 
-If you have properly configured your credentials in [General Mercado Pago Settings](#general-mercado-pago-settings), then you can now customize your credit card checkout:
+If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your credit card checkout:
 
 ### Checkout Interface
 How checkout is shown.
@@ -218,7 +257,7 @@ A subscription needs a special kind of product, that will be sold periodically. 
 
 > IMPORTANT: A subscription should be unique in the customer cart. Customers can only sign a product each time, and it can't be mixed with other non-assignable products.
 
-# Instant Payment Notification Settings
+# Notifications
 Instant Payment Notifications (IPN) is a mechanism that enables your store to receive messages from Mercado Pago server about the status of a given payment. In this plugin, you don't need to worry about IPN configuration as it is already implemented and configured for you.
 
 ### Configuring IPN for Subscriptions
@@ -232,11 +271,9 @@ Subscriptions is the only gateway that you must configure IPN to properly receiv
 
 > HINT 1: When configuring or testing your IPN/Webhooks and server communications be sure that your server can access Mercado Pago server.
 
-> HINT 2: Make sure that your firewall haves [Mercado Pago IP Ranges](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) within its white-list.
+> HINT 2: Pay attention that Mercado Pago uses TSL protocol version 1.2, so your server needs to support/accept connections with this protocol version.
 
-> HINT 3: Pay attention that Mercado Pago uses TSL protocol version 1.0, so your server needs to support/accept connections with this protocol version.
-
-> HINT 4: Make sure that any other WordPress plugin can block Mercado Pago.
+> HINT 3: Make sure that any other WordPress plugin can block Mercado Pago.
 
 # Upgrade
 If you already had installed a previous version of WooCommerce MercadoPago, please follow the instructions. In same way of the installation, again you have two options: from your WordPress Store, or by downloading and manually copying the module directory.
@@ -247,7 +284,7 @@ If you already had installed a previous version of WooCommerce MercadoPago, plea
 3. In a few seconds it should be installed with *Updated!* message shown.
 
 ### Upgrade with Manual Download
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-woocommerce/archive/master.zip">Github</a> or <a href="https://br.wordpress.org/plugins/woocommerce-mercadopago/">WordPress Plugin Directory</a>);
+1. Obtain the module source code from our [Github] repository (https://github.com/mercadopago/cart-woocommerce/archive/master.zip) or [WordPress Plugin Directory](https://br.wordpress.org/plugins/woocommerce-mercadopago/);
 2. Unzip the folder and change its name to "woocommerce-mercadopago";
 3. Go to *[WordPressRootDirectory]/wp-content/plugins/* directory and delete the existing directory "woocommerce-mercadopago";
 4. Copy "woocommerce-mercadopago" directory to *[WordPressRootDirectory]/wp-content/plugins/* directory.
