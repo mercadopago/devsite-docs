@@ -172,6 +172,9 @@ Para incorporar en el _Checkout_ las opciones configuradas en la clase `Advanced
 
 [[[
 ```android
+===
+Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.
+===
 final AdvancedConfiguration advancedConfiguration =
     new AdvancedConfiguration.Builder().setBankDealsEnabled(false).build();
 new MercadoPagoCheckout
@@ -180,43 +183,17 @@ new MercadoPagoCheckout
     .startPayment(CheckoutExampleActivity.this, REQUEST_CODE);
 ```
 ```swift
-let flowPrefernece = FlowPreference()
-            flowPrefernece.disableReviewAndConfirmScreen()
-            flowPrefernece.disableDiscount()
-            flowPrefernece.disableBankDeals()
-
-MercadoPagoCheckout.setFlowPreference(flowPrefernece)
-
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
-let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
-
-let checkoutPreference = CheckoutPreference()
-            checkoutPreference.items = [item]
-            checkoutPreference.payer = payer
-            checkoutPreference.setId("MLA")
-
-let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
-navigationController: self.navigationController!)
-checkout.start()
+===
+Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" configurando `bankDealsEnabled = false` para aquellos casos en lo que solo solicites pagos en una cuota.
+===
+let builder = MercadoPagoCheckoutBuilder.init(publicKey: "ENV_PUBLIC_KEY", preferenceId: checkoutPreferenceId)
+let config = PXAdvancedConfiguration()
+config.bankDealsEnabled = false
+builder.setAdvancedConfiguration(config: config)
+let checkout = MercadoPagoCheckout.init(builder: builder)
+checkout.start(navigationController: self.navigationController!)
 ```
-```Objective-c
-FlowPreference *flowPreference = [[FlowPreference alloc]init];
-[flowPreference disableReviewAndConfirmScreen];
-[flowPreference disableDiscount];
-[flowPreference disableBankDeals];
-[MercadoPagoCheckout setFlowPreference:flowPreference];
 
-Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
-Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
-
-NSArray *items = [NSArray arrayWithObjects:item, item, nil];
-
-CheckoutPreference *checkoutPreference = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
-[checkoutPreference setSiteId:@"MLA"];
-
-MercadoPagoCheckout * checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
-[checkout start];
-```
 ]]]
 
 Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.
@@ -258,29 +235,14 @@ En tu archivo `colors.xml` deberás hacer referencia a los colores que quieras c
 <color name="px_input">@color/your_color</color>
 ```
 ```swift
-public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-    let decorationPreference: DecorationPreference = DecorationPreference()
-    decorationPreference.setBaseColor(color: UIColor.purple)
-    decorationPreference.enableDarkFont()
-    MercadoPagoCheckout.setDecorationPreference(decorationPreference)
-
-    let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
-    navigationController: self.navigationController!)
-
-    checkout.start()
-}
-```
-```objective-c
-DecorationPreference *decorationPreference = [[DecorationPreference alloc] initWithBaseColor:[UIColor fromHex:@"#CA254D"]];
-[decorationPreference enableDarkFont];
-[MercadoPagoCheckout setDecorationPreference:decorationPreference];
-
--(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
-    [checkout start];
+@IBAction func startMercadoPagoCheckout(_ sender: Any) {
+    let builder = MercadoPagoCheckoutBuilder.init(publicKey: "ENV_PUBLIC_KEY", preferenceId: checkoutPreferenceId)
+    let config = PXAdvancedConfiguration()
+    builder.setAdvancedConfiguration(config: config)
+    builder.setColor(checkoutColor: .green)
+    let checkout = MercadoPagoCheckout.init(builder: builder)
+    checkout.start(navigationController: self.navigationController!)
 }
 ```
 
 ]]]
-
-El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo **setBaseColor("#060d72");**.

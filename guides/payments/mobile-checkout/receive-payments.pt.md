@@ -220,7 +220,7 @@ Como exemplo, sugerimos que inicie o fluxo do Mercado Pago a partir de um botão
       android:layout_marginTop='25dp'
       android:gravity='center'
       android:text='Pagar $10'
-      android:onClick='submit'/>
+      android:onClick='startMercadoPagoCheckout'/>
 
     <TextView
       android:layout_width='match_parent'
@@ -236,7 +236,7 @@ Como exemplo, sugerimos que inicie o fluxo do Mercado Pago a partir de um botão
 2. Insira um botão no **.xib** correspondente.
 3. Adicione um campo de texto para mostrar o resultado do pagamento.
 4. Cole o seguinte código de exemplo em sua classe **MainViewController.swift**.
-5. No próximo passo, você trabalhará no evento associado ao clique do botão (startCheckout).
+5. No próximo passo, você trabalhará no evento associado ao clique do botão (startMercadoPagoCheckout).
 ===
 
 import UIKit
@@ -247,12 +247,12 @@ class MainViewController: UIViewController {
 @IBOutlet weak var paymentResult: UITextField!
 
 override func viewDidLoad() {
-super.viewDidLoad()
+  super.viewDidLoad()
 
-self.payButton.addTarget(self,
-action: #selector(MainViewController.startCheckout),
-for: .touchUpInside)
-}
+  self.payButton.addTarget(self,
+    action: #selector(MainViewController.startMercadoPagoCheckout),
+    for: .touchUpInside)
+  }
 }
 ```   
 ```objective-c
@@ -261,7 +261,7 @@ for: .touchUpInside)
 2. Insira um botão no **.xib** correspondente.
 3. Adicione um campo de texto (em nosso exemplo, nós o chamamos de paymentResult) para mostrar o resultado do pagamento.
 4. Cole o seguinte código de exemplo em sua classe **MainViewController.c**.
-5. No próximo passo, você trabalhará no evento associado ao clique do botão (startCheckout).
+5. No próximo passo, você trabalhará no evento associado ao clique do botão (startMercadoPagoCheckout).
 ===
 
 @import MercadoPagoSDK;
@@ -276,7 +276,7 @@ for: .touchUpInside)
 - (void)viewDidLoad {
 [super viewDidLoad];
 
-[_button addTarget:self action:@selector(startCheckout:)
+[_button addTarget:self action:@selector(startMercadoPagoCheckout:)
 forControlEvents:UIControlEventTouchUpInside];
 }
 @end
@@ -303,26 +303,9 @@ private void startMercadoPagoCheckout(final String checkoutPreferenceId) {
 }
 ```
 ```swift
-===
-O fluxo do nosso checkout está baseado em **NavigationController**. Caso sua aplicação também esteja baseada em NavigationControllers, você pode iniciar o fluxo do Checkout utilizando o NavigationController da sua aplicação, ou você pode criar um, iniciar o Checkout sobre ele e, em seguida, apresentá-lo.
-===
-
-public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
-
-  let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
-  navigationController: self.navigationController!)
-
-  checkout.start()
-}
-```
-```objective-c
-===
-O fluxo do nosso checkout está baseado em **NavigationController**. Caso sua aplicação também esteja baseada em NavigationControllers, você pode iniciar o fluxo do Checkout utilizando o NavigationController da sua aplicação, ou você pode criar um, iniciar o Checkout sobre ele e, em seguida, apresentá-lo.
-===
-
--(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
-    MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithPublicKey: "ENV_PUBLIC_KEY" checkoutPreference:checkoutPreference discount:nil navigationController:self.navigationController];
-    [checkout start];
+@IBAction func startMercadoPagoCheckout(_ sender: Any) {
+    MercadoPagoCheckout.init(builder: MercadoPagoCheckoutBuilder.init(publicKey: "ENV_PUBLIC_KEY", preferenceId: checkoutPreferenceId))
+    .start(navigationController: self.navigationController!)
 }
 ```
 
@@ -379,24 +362,26 @@ protected void onActivityResult(final int requestCode, final int resultCode, fin
 }
 ```      
 ```swift
-MercadoPagoCheckout.setPaymentCallback { (payment) in
-self.payment = payment
+===
+Para obtener una respuesta de pago se deberá implementar el protocolo **PXLifeCycleProtocol** y pasarlo como argumento al momento de inicializar el checkout. Los métodos que se deben implementar del protocolo son **finishCheckout** y **cancelCheckout** como se muestra en el siguiente ejemplo. Al implementar este protocolo el integrador es responsable de finalizar el flujo de checkout, en este ejemplo de implementación al finalizar se ejecuta un **popToRootViewController**.
+===
+@IBAction func startMercadoPagoCheckout(_ sender: Any) {
+    MercadoPagoCheckout.init(builder: MercadoPagoCheckoutBuilder.init(publicKey: "ENV_PUBLIC_KEY", preferenceId: checkoutPreferenceId))
+    .start(navigationController: self.navigationController!, lifeCycleProtocol: self)
 }
 
-checkout.setCallbackCancel {
-   // Resolved cancel checkout
-   self.navigationController?.popToRootViewController(animated: true)
+func finishCheckout() -> ((_ payment: PXResult?) -> Void)? {
+    return  ({ (_ payment: PXResult?) in
+        print(payment)
+        self.navigationController?.popToRootViewController(animated: false)
+    })
 }
-```
-```objective-c
-[MercadoPagoCheckout setPaymentCallbackWithPaymentCallback:^(Payment * payment) {
-self.payment = payment
-}];
 
-[self.checkout setCallbackCancelWithCallback:^{
-	// Resolved cancel checkout
-  [self.navigationController popToRootViewControllerAnimated:YES];
-}];
+func cancelCheckout() -> (() -> Void)? {
+    return {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+}
 ```
 
 ]]]
