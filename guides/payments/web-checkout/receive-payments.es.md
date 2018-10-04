@@ -91,7 +91,7 @@ preference.save();
 // Create a preference structure
 var preference = {
   items: [
-    item = {
+    {
       id: '1234',
       title: '[FAKER][COMMERCE][PRODUCT_NAME]',
       quantity: [FAKER][NUMBER][BETWEEN][1,10],
