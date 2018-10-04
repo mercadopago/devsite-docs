@@ -88,28 +88,28 @@ preference.appendItem(item);
 preference.save();
 ```
 ```node
-  // Create a preference structure
-	var preference = {
-    items: [
-      item = {
-        id: '1234',
-        title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-        quantity: [FAKER][NUMBER][BETWEEN][1,10],
-        currency_id: '[FAKER][CURRENCY][ACRONYM]',
-        unit_price: [FAKER][COMMERCE][PRICE]
-      }
-    ],
-    payer = {
-      email: '[FAKER][INTERNET][FREE_EMAIL]'
+// Create a preference structure
+var preference = {
+  items: [
+    item = {
+      id: '1234',
+      title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+      quantity: [FAKER][NUMBER][BETWEEN][1,10],
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
     }
-  };
- 
-  mercadopago.preferences.create(preference)
-    .then(function (preference) {
-      // Do something if preference has been created successfully
-    }).catch(function (error) {
-      // If an error has occurred
-    });
+  ],
+  payer: {
+    email: '[FAKER][INTERNET][FREE_EMAIL]'
+  }
+};
+
+mercadopago.preferences.create(preference)
+.then(function (preference) {
+  // Do something if preference has been created successfully
+}).catch(function (error) {
+  // If an error has occurred
+});
 ```
 ```ruby 
 # Create an item object
