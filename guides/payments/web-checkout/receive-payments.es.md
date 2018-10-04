@@ -105,11 +105,11 @@ var preference = {
 };
 
 mercadopago.preferences.create(preference)
-.then(function (preference) {
-  // Do something if preference has been created successfully
-}).catch(function (error) {
-  // If an error has occurred
-});
+  .then(function (preference) {
+    // Do something if preference has been created successfully
+  }).catch(function (error) {
+    // If an error has occurred
+  });
 ```
 ```ruby 
 # Create an item object
