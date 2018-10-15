@@ -13,7 +13,7 @@
 
 Bis2Bis permite operar Mercado Pago nas seguintes modalidades:
 
-### Checkout Transparente
+### API
 
 Receba pagamentos em sua loja através de Cartão de Crédito e/ou boleto bancario no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma Bis2Bis.
 
