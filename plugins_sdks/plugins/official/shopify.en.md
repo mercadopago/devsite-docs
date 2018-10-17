@@ -7,7 +7,7 @@
 
 Mercado Pago's plugin for shopify has available the next features:
 
-| Feature                                                   | Standard Checkout |
+| Feature                                                   | Web Checkout 		|
 |---------------------------------------------------------- |-------------------|
 | Credit card Payments                                      | ✔                 |
 | Other payment methods                                     | ✔                 |
@@ -18,7 +18,7 @@ Mercado Pago's plugin for shopify has available the next features:
 | Mercado Pago coupon discounts                             | ✔                 |
 
 
-### Standard Checkout
+### Web Checkout
 
 Great for merchants who want to get going quickly and easily.
 
@@ -48,3 +48,15 @@ Great for merchants who want to get going quickly and easily.
   ![Config](/images/shopify-config-3.gif)
 
 5. Congrats! **Mercado Pago** was installed and configured!
+
+### Mapping of payment status
+
+The following scheme represents the correlation between the payment status in Mercado Pago and the status of the order in Shopify.
+
+| Mercado Pago status | Shopify order status |
+|---------------------|----------------------|
+| Approved            | Completed            |
+| Pending             | Pending              |
+| In process          | Pending              |
+| Rejected            | Pending              |
+| Cancelled           | Failed               |
