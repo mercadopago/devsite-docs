@@ -1,7 +1,22 @@
 # Shopify  
 
-<a name="Funcionalidades"></a>
-## Funcionalidades: ##
+* [Funcionalidades](#bookmark_Funcionalidades)
+* [Configuración](#bookmark_Configuración)
+
+## Funcionalidades
+
+O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
+
+| Funcionalidades                                           | Checkout Básico   | 
+|---------------------------------------------------------- |-------------------|
+| Pago con tarjeta de crédito                               | ✔                 |
+| Otros medios de pago                                      | ✔                 |
+| Pago con dos medios de Pago 		                      	| ✔               	|
+| Interfaz provista por Mercado Pago                        | ✔                 |
+| Calculadora de cuotas                                     | ✔                 |
+| IPN y webhooks                                            | ✔                 |
+| Descuentos con cupones de Mercado Pago                    | ✔                 |
+
 
 ### Checkout básico
 
@@ -13,8 +28,8 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 * Acepta pagos con ticket, dinero en cuenta de Mercado Pago, tarjeta de crédito y débito.
 * Acepta cupones de descuento
 
-<a name="Instalación-y-Configuración"></a>
-## Instalación y Configuración
+
+## Configuración
 
 <center>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
@@ -22,21 +37,15 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 1. En su panel de administración de Shopify, vaya al menú **Settings > Payments**.
 
-<center>
   ![Config](/images/shopify-config-1.gif)
-</center>
 
 2. En **Accept credit cards**, seleccione **Mercado Pago**.
 3. Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-<center>
   ![Config](/images/shopify-config-2.gif)
-</center>
 
 4. Haga clic en el botón **Activate** para guardar.
 
-<center>
   ![Config](/images/shopify-config-3.gif)
-</center>
+
 5. ¡Listo! el **Mercado Pago** fue instalado y configurado.
-git

@@ -1,11 +1,17 @@
 # Prestashop
 
-* [Requisitos](#Requirements)
-* [Funcionalidades](#Features)
-* [Instalación](#Installation)
-* [Configurar el pago transparente y redirect](#Configure-Credit-Card-and-Ticket-Standard)
-* [Configurar Mercado Envíos](#Configure-Mercado-Envíos)
-* [Soporte](#Support)
+
+### Mercado Pago Module (Prestashop 1.6.x - 1.7.x)
+
+* [Funcionalidades](#bookmark_Funcionalidades)
+* [Requisitos](#bookmark_Requisitos)
+* [Versión](#bookmark_Versión)
+* [Installación](#bookmark_Instalación)
+* [Configuración](#bookmark_Configuración)
+* [Notificaciones](#bookmark_Notificaciones)
+* [Actualizaciones](#bookmark_Actualizaciones)
+
+## Funcionalidades
 
 El módulo de Mercado Pago para Prestashop esta integrado con las siguientes funcionalidades:
 
@@ -24,9 +30,13 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 | Calculadora de Cuotas          	| ✔               	| ✔                      	|
 | Calculadora de Mercado Envíos     | ✔               	| ✔                      	|
 
+> NOTE
+>
+> IMPORTANTE
+>
+> El checkout personalizado está disponible sólo en Prestashop 1.6.
 
-<a name="Requirements"></a>
-## Requisitos: ##
+## Requisitos
 
 |                            | Detalle                                                                                        |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -38,66 +48,86 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 | Base de datos              | MySQL 5.6 (Oracle o Percona)                                                                  |
 | Dependencia de extensiones | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
 | Configuración adicionales  | safe_mode off * memory_limite mayor que 256MB (512MB recomendado)                              |
-| SSL                        | Es un requisito que tenga un certificado SSL, Durante las pruebas en modo de Sandbox podras usar HTTP.|
+| SSL                        | Es un requisito que tenga un certificado SSL, Durante las pruebas en modo de Sandbox podrás usar HTTP.|
+
+>Es un requisito que cuentes con un certificado SSL y que el formulario de pago que sea servido bajo HTTPS. Durante las pruebas en modo sandbox usted puede operar vía HTTP, pero para la homologación usted necesitará adquirir el certificado si no lo tiene.
+
+## Versión
+
+| Versión plugin                                               | Estatus                   | Versiones disponibles |
+|-------------------------------------------------------------|--------------------------|---------------------|
+| [v1.6.x](https://github.com/mercadopago/cart-prestashop-6/) | Stable (Current Version) | Prestashop v1.6.x   |
+| [v1.7.x](https://github.com/mercadopago/cart-prestashop-7/) | Stable (Current Version) | Prestashop v1.7.x   |
+
+## Instalación
+
+1. Descargue el archivo **mercadopago.zip** en nuestro Github de acuerdo con la versión de Prestashop con la que trabaja.
+
+> NOTE
+>
+> DESCARGAR
+>
+> Módulo Mercado Pago para Prestashop [1.6](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip).
+> Módulo Mercado Pago para Prestashop [1.7](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip).
+
+2. Acceda al panel administrativo del Prestashop en **MEJORAS** -> **Módulos** -> **Módulos y Servicios**, haga clic en el botón **"Enviar un Módulo"** y seleccione el archivo **mercadopago.zip** descargado anteriormente.
+
+3. Muy bien! El módulo de Mercado Pago fue instalado con éxito.
+
+![Configuración](/images/prestashop_select_mp_file.gif)
 
 
-<a name="Installation"></a>
-## Instalación: ##
+## Configuración
 
-Este proceso muestra cómo realizar la instalación vía Marketplace:
+1. Después de la instalación del módulo, diríjase a **MEJORAS** -> **Módulos** -> **Módulos y Servicios** y haga clic en ** Configurar ** en el Plugin del Mercado Pago.
 
-**Instalación vía Marketplace**
+2. En la pantalla **BASIC SETTINGS** se le solicitarán los datos **Client ID** y **Client Secret**. Estos datos son las credenciales de su cuenta de Mercado Pago y se pueden obtener a través del siguiente enlace: [Obtener sus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
-1. Ir a **[Prestashop Marketplace](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html/)** y haga clic en el botón de registro para descargar:
-2. Después de su registro usted puede descargar.
-![Download](/images/prestashop-download.gif)
-
-3. Ahora acceda a su administrador y se dirige a Modulos y Servicios.
-![Instalación](/images/prestashop-installation.gif)
-
-4. ¡Muy bien! El módulo de Mercado Pago fue instalado con éxito.
-![Configuración](/images/prestashop-installation_success.png)
-
-<a name="Configure-Credit-Card-and-Ticket-Standard"></a>
-## Configurar tarjeta de crédito, ticket y redirect: ##
-
-Este proceso debe ayudar a configurar el módulo para pagos con checkout transparente y redirect:
-
-1. Después de la instalación del módulo, se dirige hacia  **Mercado Pago > Configurar**, ahora usted necesita obeter sus credenciales.
-
-2. Para obtener sus credenciales usted debe ir **Mercado Pago - Custom Checkout**, debe ver los campos **Public Key** e **Access Token**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
+![Configuración](/images/prestashop_credentials_configuration.gif)
 
 > Hay dos tipos de credenciales:
-> * Modo Sandbox: Esta credencial se utiliza para pruebas.
-> * Modo Producción: Esta credencial se utiliza para compras en producción, para ello user la opción de "Quiero ir a la producción".
+* **Modo Sandbox**: Estas credenciales se utilizan para las pruebas.
+> * **Modo de producción**: Estas credenciales se utilizan para compras en producción.
 
-3. Ahora usted puede llenar el **client id** y **client secret**, haga clic en el botón **Login**:
-![Login](/images/prestashop-credentials_1.gif)
+3. Ahora en la pantalla ** PAYMENT SETTINGS ** mantenga Checkout Standard como activo para utilizar el Checkout Redireccionado de Mercado Pago.
 
-4. Habilite el módulo personalizado, rellene el **access token**, **public key** y seleccione las opciones de pago:
-![Pagos transparente](/images/prestashop-credentials_2.gif)
+![Checkout Standard](/images/prestashop_checkout_standard.png)
 
-5. Para el Checkout Standard, sólo tiene que habilitar la opción **Configuración - Mercado Pago Standard**:
-![Habilitar Standard](/images/prestashop-standard.gif)
+4. En PAYMENT METHOD usted puede habilitar las formas de pago con las que trabajará:
 
-6. ¡Muy bien! Usted ha habilitado los pagos transparentes y redirect!
+![Payment Method](/images/prestashop_payment_method.png)
 
-<a name="Configure-Mercado-Envíos"></a>
-## Configurar Mercado Envíos: ##
+5. Muy bien! Usted ha habilitado los pagos vía Checkout Standard (redireccionado)!
 
-Los pasos siguientes mostrará cómo habilitar Mercado Envíos.
-> IMPORTANTE: Mercado Envíos funciona con Mercado Pago Redirect y los otros medios de pago serán deshabilitados.
+### Configuración de Mercado Envíos
 
-1. En primer lugar, usted necesita [habilitar Mercado Envíos en su cuenta](http://shipping.mercadopago.com.ar/optin/doOptin).
+> IMPORTANTE: Mercado Envíos funciona con el Checkout Standard (redireccionado). Al utilizarlo los demás medios de pago serán deshabilitados.
 
-> IMPORTANTE: Su cuenta de Mercado Pago necesita ser del tipo **Vendedor** y los productos necesitan tener las dimensiones correctas.
+1. Primero, usted necesita [habilitar Mercado Envíos en su cuenta](http://shipping.mercadopago.com.ar/optin/doOptin).
 
-2. Para habilitar en el módulo, sólo tiene que activarlo en la opción **Mercado Envíos** y hacer clic en **Guardar**:
-![Habilitar Mercado Envíos](/images/prestashop-mercadoenvios_settings.gif)
+> NOTE
+>
+> IMPORTANTE
+>
 
-3. Muy bien! Ahora usted puede ofrecer Mercado Envíos como medio de transporte para sus clientes!
+* * Su cuenta de Mercado Pago necesita ser del tipo **Vendedor**.
+El producto enviado debe tener sus dimensiones (ancho, altura, longitud y peso) adecuadamente configurados y dentro de las reglas y límites soportados por el país especificado.
 
-<a name="Support"></a>
-## Soporte: ##
+2. Para habilitar en el módulo, sólo tiene que activarlo accediendo al panel administrativo de Prestashopp en **MEJORAS -> Módulos -> Módulos y Servicios** y haciendo clic en **Configurar** en el módulo del Mercado Pagado:
 
-> IMPORTANTE: Mantenga su módulo actualizado, y siempre utilice la instalación vía Admin en lugar de copiar y pegar las carpetas.
+3. En **MERCADO Envíos** es posible configurar un texto para ser exhibido en la entrega a través del campo **Custom text para usar con entrega**. Para realizar la activación marque el campo ** Enable Mercado Envíos** como **YES**.
+
+![Habilitar Mercado Envíos](/images/prestashop_mercado_envios.png)
+
+4. Muy bien! Ahora usted puede ofrecer Mercado Envíos como medio de transporte para sus clientes!
+
+
+## Notificaciones
+
+Su tienda se sincronizará automáticamente con MercadoPago. La URL de notificación se enviará en cada pago.
+
+
+## Actualización
+
+Siga los mismos pasos que hizo para [instalar el módulo](#bookmark_Instalación).
+
