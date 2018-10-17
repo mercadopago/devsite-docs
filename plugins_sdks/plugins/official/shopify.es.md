@@ -7,7 +7,7 @@
 
 O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
 
-| Funcionalidades                                           | Checkout Básico   | 
+| Funcionalidades                                           | Web Checkout	    | 
 |---------------------------------------------------------- |-------------------|
 | Pago con tarjeta de crédito                               | ✔                 |
 | Otros medios de pago                                      | ✔                 |
@@ -18,7 +18,7 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 | Descuentos con cupones de Mercado Pago                    | ✔                 |
 
 
-### Checkout básico
+### Web Checkout
 
 Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
@@ -48,4 +48,16 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
   ![Config](/images/shopify-config-3.gif)
 
-5. ¡Listo! el **Mercado Pago** fue instalado y configurado.
+5. ¡Listo! **Mercado Pago** fue instalado y configurado.
+
+### Mapeo de estados de pago
+
+El siguiente esquema representa la correlación entre los estados de un pago en Mercado Pago y el estado de la orden en Shopify.
+
+| Mercado Pago status | Shopify order status |
+|---------------------|----------------------|
+| Approved            | Completed            |
+| Pending             | Pending              |
+| In process          | Pending              |
+| Rejected            | Pending              |
+| Cancelled           | Failed               |
