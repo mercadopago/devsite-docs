@@ -212,7 +212,7 @@ Whenever you do not specify an amount, the total amount will be captured.
 
 ### Capture an amount lower than what was held
 
-> In Argentina, it is only available for Visa and American Express
+> In Argentina, it is only available for Visa, Cabal, Master and American Express
 
 If you decide to capture an amount lower than what was held, in addition to sending the `capture` attribute, you will also need to send the `transaction_amount` attribute with the new amount.
 
