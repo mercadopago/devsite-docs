@@ -223,7 +223,7 @@ Quando não especificar um valor, será realizada a captura do valor total reser
 
 
 ----[mla]----
-> Disponível apenas para Visa e American Express na Argentina.
+> Disponível apenas para Visa, Cabal, Master e American Express na Argentina.
 ------------
 
 Caso decida capturar um valor inferior ao reservado, é necessário que, além de enviar o atributo `capture`, envie o atributo `transaction_amount` com o novo valor.
