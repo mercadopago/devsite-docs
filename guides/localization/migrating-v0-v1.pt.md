@@ -34,6 +34,24 @@ A tabela abaixo traz uma relação dos recursos migrados.
 
 ### Exemplos
 
+#### Pesquisar por pagamentos
+
+Para a busca de pagamentos o recurso /v1/payments/search deve ser utilizado levando em conta que o resultado desta pesquisa retornará os pagamentos como pagador e coletor do invocador.
+
+Para manter a consistência semântica com os resultados do recurso /payments/search, você deve adicionar o parâmetro payer.id com seu ID de usuário.
+
+```json
+curl -X GET \
+ "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&payer.id=PAYER_ID" 
+```
+
+Para manter a consistência semântica com os resultados do recurso /collections/search, você deve incluir o parâmetro collector.id com seu ID do usuário.
+
+```json
+curl -X GET \
+ "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&collector.id=COLLECTOR_ID" 
+```
+
 #### Devolução Total
 ```json
 curl -X POST \
