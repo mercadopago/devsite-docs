@@ -15,6 +15,7 @@ Después de ese plazo, la versión 0 se desactivará y cualquier intento de cone
 * Si utiliza sólo Mercado Shops, este cambio no lo afectará.
 * Si tiene su **propio e-commerce, consulte a su equipo de TI**.
 * Si **se trabaja con alguna plataforma de comercio electrónico**, por ejemplo: Magento, Shopify u otros **Consulte su soporte técnico**.
+* Se você usar o recurso de pesquisa de pagamento, deverá consumir o novo recurso e incluir um novo parâmetro para obter o mesmo resultado. Veja a seção de exemplos.
 
 ## Recursos migrados
 
@@ -33,6 +34,23 @@ La siguiente tabla contiene a los recursos migrados y sus equivalentes.
 | Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
 
 ### Ejemplos
+
+#### Búsqueda de un pago
+
+Para la búsqueda de pagos deberá usarse el endpoint /v1/payments/search teniendo en cuenta que el resultado de esta búsqueda retornará los pagos como payer y collector del invocador. 
+
+Para mantener la consistencia semántica con los resultados del endpoint /payments/search deberás agregar el parámetro payer.id con tu identificador de usuario.
+
+```json
+curl -X GET \
+ "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&payer.id=PAYER_ID" 
+```
+Para mantener la consistencia semántica con los resultados del endpoint /collections/search deberás agregar el parámetro collector.id con tu identificador de usuario.
+
+```json
+curl -X GET \
+ "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&collector.id=COLLECTOR_ID" 
+```
 
 #### Devolución total
 ```json
