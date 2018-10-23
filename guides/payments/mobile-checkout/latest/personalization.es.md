@@ -193,6 +193,21 @@ builder.setAdvancedConfiguration(config: config)
 let checkout = MercadoPagoCheckout.init(builder: builder)
 checkout.start(navigationController: self.navigationController!)
 ```
+```objective-c
+===
+Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" configurando `bankDealsEnabled = NO` para aquellos casos en lo que solo solicites pagos en una cuota.
+===
+MercadoPagoCheckoutBuilder *builder = [[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"];
+
+PXAdvancedConfiguration *config =  [[PXAdvancedConfiguration alloc] init];
+[config setBankDealsEnabled:NO];
+
+[builder setAdvancedConfigurationWithConfig:config];
+
+MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:builder];
+
+[checkout startWithNavigationController:self.navigationController lifeCycleProtocol:nil];
+```
 
 ]]]
 
@@ -243,6 +258,15 @@ En tu archivo `colors.xml` deberás hacer referencia a los colores que quieras c
     let checkout = MercadoPagoCheckout.init(builder: builder)
     checkout.start(navigationController: self.navigationController!)
 }
+```
+```objective-c
+MercadoPagoCheckoutBuilder *builder = [[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"];
+
+[builder setColorWithCheckoutColor:[UIColor greenColor]];
+
+MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:builder];
+
+[checkout startWithNavigationController:self.navigationController lifeCycleProtocol:nil];
 ```
 
 ]]]

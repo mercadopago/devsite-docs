@@ -189,6 +189,21 @@ builder.setAdvancedConfiguration(config: config)
 let checkout = MercadoPagoCheckout.init(builder: builder)
 checkout.start(navigationController: self.navigationController!)
 ```
+```objective-c
+===
+As you can see in the example, it is possible to hide the Promotions button configuring `bankDealsEnabled = NO` for single-installment payments.
+===
+MercadoPagoCheckoutBuilder *builder = [[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"];
+
+PXAdvancedConfiguration *config =  [[PXAdvancedConfiguration alloc] init];
+[config setBankDealsEnabled:NO];
+
+[builder setAdvancedConfigurationWithConfig:config];
+
+MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:builder];
+
+[checkout startWithNavigationController:self.navigationController lifeCycleProtocol:nil];
+```
 ]]]
 
 
@@ -236,6 +251,15 @@ In the `colors.xml` file you must reference the colors you want to change by set
     let checkout = MercadoPagoCheckout.init(builder: builder)
     checkout.start(navigationController: self.navigationController!)
 }
+```
+```objective-c
+MercadoPagoCheckoutBuilder *builder = [[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"];
+
+[builder setColorWithCheckoutColor:[UIColor greenColor]];
+
+MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:builder];
+
+[checkout startWithNavigationController:self.navigationController lifeCycleProtocol:nil];
 ```
 
 ]]]

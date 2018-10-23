@@ -306,6 +306,12 @@ private void startMercadoPagoCheckout(final String checkoutPreferenceId) {
     .start(navigationController: self.navigationController!)
 }
 ```
+```objective-c
+- (IBAction)startMercadoPagoCheckout:(id)sender {
+  MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:[[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"]];
+  [checkout startWithNavigationController:self.navigationController lifeCycleProtocol:nil];
+}
+```
 
 ]]]
 
@@ -379,6 +385,25 @@ func cancelCheckout() -> (() -> Void)? {
     return {
         self.navigationController?.popToRootViewController(animated: true)
     }
+}
+```
+```objective-c
+===
+Implement **PXLifeCycleProtocol** protocol to be able to obtain the checkout result, and pass it as an argument on the checkout initialization. The methods that must be implemented are **finishCheckout** and **cancelCheckout** as it is shown in the next example. When you implement this protocol you are responsible for finishing the checkout flow, in this example we execute **popToRootViewController** to close the checkout.
+===
+- (IBAction)startMercadoPagoCheckout:(id)sender {
+  MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:[[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"]];
+  [checkout startWithNavigationController:self.navigationController lifeCycleProtocol:self];
+}
+
+-(void (^ _Nullable)(void))cancelCheckout {
+    return ^ {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    };
+}
+
+- (void (^)(id<PXResult> _Nullable))finishCheckout {
+    return nil;
 }
 ```
 

@@ -308,6 +308,12 @@ private void startMercadoPagoCheckout(final String checkoutPreferenceId) {
     .start(navigationController: self.navigationController!)
 }
 ```
+```objective-c
+- (IBAction)startMercadoPagoCheckout:(id)sender {
+  MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:[[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"]];
+  [checkout startWithNavigationController:self.navigationController lifeCycleProtocol:nil];
+}
+```
 
 ]]]
 
@@ -382,6 +388,25 @@ func cancelCheckout() -> (() -> Void)? {
     return {
         self.navigationController?.popToRootViewController(animated: true)
     }
+}
+```
+```objective-c
+===
+Para obtener una respuesta de pago se deberá implementar el protocolo **PXLifeCycleProtocol** y pasarlo como argumento al momento de inicializar el checkout. Los métodos que se deben implementar del protocolo son **finishCheckout** y **cancelCheckout** como se muestra en el siguiente ejemplo. Al implementar este protocolo el integrador es responsable de finalizar el flujo de checkout, en este ejemplo de implementación al finalizar se ejecuta un **popToRootViewController**.
+===
+- (IBAction)startMercadoPagoCheckout:(id)sender {
+  MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:[[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"]];
+  [checkout startWithNavigationController:self.navigationController lifeCycleProtocol:self];
+}
+
+-(void (^ _Nullable)(void))cancelCheckout {
+    return ^ {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    };
+}
+
+- (void (^)(id<PXResult> _Nullable))finishCheckout {
+    return nil;
 }
 ```
 
