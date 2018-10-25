@@ -1,7 +1,7 @@
-# Payment Split API Documentation
+# Advanced Payments API Documentation
 
 ## Introduction
-The purpose of this document is to provide information of the endpoints that will allow offering the functionality of division of Payments to Mercado Pago clients.
+The purpose of this document is to provide information about the API calls that allow to the Mercado Pago clients to create more flexible and advanced payments.
 
 The types of client to which it is intended are:
 - Marketplaces with shopping cart where there is one Payer and multiple Collectors.
@@ -12,37 +12,39 @@ In both cases, the marketplace retains a part of the sale amount as commission.
 Aggregator mode means that each Merchant on the Marketplace has its own Pay Market account.
 
 ## Status map
-A Marketplace can be informed of the changes of status of a Splitter if it subscribes to the topic of "Split of Payments" in [Webhooks](https://www.mercadopago.com/mla/account/webhooks).
+A Marketplace can be informed of the changes of status of an Advanced Payment if it subscribes to the topic of "Split of Payments" in [Webhooks](https://www.mercadopago.com/mla/account/webhooks).
 
 ![Status map](/images/split-de-pagos-status-map.png)
 
+Note: the dashed lines mark the internals changes of status.
+
 ## Idempotency
-Sometimes, connection problems, service drops, etc. that could interrupt communication when sending or receiving data to create a Splitter may occur.
+Sometimes, connection problems, service drops, etc. that could interrupt communication when sending or receiving data to create a Advanced Payment may occur.
 
-To ensure the creation of the same, you can retry sending the same data, but it is possible that the Splitter has already been created and due to the interruption the correct answer was not received, causing that, when performing the retry, a new Splitter.
+To ensure the creation of the same, you can retry sending the same data, but it is possible that the Advanced Payment has already been created and due to the interruption the correct answer was not received, causing that, when performing the retry, a new Advanced Payment.
 
-To avoid duplication, you can send a unique key in the X-Idempotency-Key header that identifies the creation of a single Splitter no matter how many times the same data is sent.
+To avoid duplication, you can send a unique key in the X-Idempotency-Key header that identifies the creation of a single Advanced Payment no matter how many times the same data is sent.
 
-In this way, when the retry is done, the same key can be sent to indicate that it is the same process. If the Splitter was already created, the information is returned without creating a new one.
+In this way, when the retry is done, the same key can be sent to indicate that it is the same process. If the Advanced Payment was already created, the information is returned without creating a new one.
 
 ```curl
 curl -X POST \
      -H 'X-Idempotency-Key: faDF8323asd298' \
      -H 'accept: application/json' \
      -H 'content-type: application/json' \
-     'https://api.mercadopago.com/v1/split_payments?access_token=ACCESS_TOKEN' \
+     'https://api.mercadopago.com/v1/advanced_payments?access_token=ACCESS_TOKEN' \
      -d '{...}'
 ```
 
 ## Obtaining Merchant permissions and data
 The Marketplace that wishes to integrate, must request permits from its Merchants in order to operate and make payments on its behalf. To do this, you must follow the steps of [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.en.md).
 
-By following these steps, the Marketplace may obtain the "access_token" with which you can obtain the "email" in the [API of "Users"](https://developers.mercadolibre.com/en_us/usuarios-y-aplicaciones) of Mercado Livre and the "user_id" that should be used as "collector_id" in each "disbursement" that you want to create in the Splitter. It is important to save the user_id and the merchant's email in order to identify the owner of the Mercado Pago account in case it is necessary.
+By following these steps, the Marketplace may obtain the "access_token" with which you can obtain the "email" in the [API of "Users"](https://developers.mercadolibre.com/en_us/usuarios-y-aplicaciones) of Mercado Livre and the "user_id" that should be used as "collector_id" in each "disbursement" that you want to create in the Advanced Payment. It is important to save the user_id and the merchant's email in order to identify the owner of the Mercado Pago account in case it is necessary.
 
-## Creating a Splitter
-Splitters are entities that have 1 entry payment and several exit payments. The PAYER can make the entrance payment with several payment methods (credit card, tickets, etc.). Each payment method has its required fields, for example, to pay with credit cards you have to [generate a card token](/guides/payments/api/receiving-payment-by-card.en.md).
+## Creating a Advanced Payment
+These special payments are entities that have 1 entry payment and several exit payments. The PAYER can make the entrance payment with several payment methods (credit card, tickets, etc.). Each payment method has its required fields, for example, to pay with credit cards you have to [generate a card token](/guides/payments/api/receiving-payment-by-card.en.md).
 
-Keep in mind that all merchants specified in each "disbursement" must be associated to the Marketplace through [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.en.md) (each Merchant must explicitly give permission to the Marketplace). Otherwise, the Splitter can not be created.
+Keep in mind that all merchants specified in each "disbursement" must be associated to the Marketplace through [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.en.md) (each Merchant must explicitly give permission to the Marketplace). Otherwise, the payment can not be created.
 
 The "access_token" parameter of the URL must be the Access Token of the Marketplace that is obtained as indicated by the [documentation] (https://developers.mercadolibre.com/es_ar/autenticacion-y-autorizacion) public.
 
@@ -51,7 +53,7 @@ The "access_token" parameter of the URL must be the Access Token of the Marketpl
 curl -X POST \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments?access_token=M_ACCESS_TOKEN'
     -d '
         {
             "application_id": "4422991580014613",
@@ -67,7 +69,7 @@ curl -X POST \
                 "description": "Service charge",
                 "capture": true,
                 "external_reference": "externalRef123",
-                "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+                "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
                 }
             ],
             "disbursements": [
@@ -145,7 +147,7 @@ curl -X POST \
                 "number": "33672209"
                 }
             },
-            "external_reference": "externalSplitter",
+            "external_reference": "externalRootRef",
             "description": "",
             "binary_mode": false,
             "metadata": {},
@@ -191,14 +193,14 @@ curl -X POST \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
     }
   ],
   "disbursements": [
     {
       "id": 3870106325,
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -228,7 +230,7 @@ curl -X POST \
     {
       "id": 3870106343,
       "amount": 300,
-      "external_reference": "",
+      "external_reference": "externalDisb2Ref",
       "collector_id": 328310458,
       "application_fee": 30,
       "money_release_days": 3,
@@ -271,7 +273,7 @@ curl -X POST \
       "number": "33672209"
     }
   },
-  "external_reference": "externalSplitter",
+  "external_reference": "externalRootRef",
   "description": "",
   "binary_mode": false,
   "date_created": "2018-06-27T09:34:20.518-04:00",
@@ -303,17 +305,17 @@ curl -X POST \
 }
 ```
 
-## Get a payment splitter
-Returns the Splitter in its current state saved in the database. Keep in mind that asynchronous processes that can change the state of a Splitter are executed.
+## Get an Advanced Payment
+Returns the Advanced Payment in its current state saved in the database. Keep in mind that asynchronous processes that can change the state of a Advanced Payment are executed.
 
-A Marketplace can only obtain its own created Splitters. Merchants can view their payments or disbursements through the [SEARCH](https://api.mercadopago.com/v1/payments/search) of Payments.
+A Marketplace can only obtain its own created Advanced Payments. Merchants can view their payments or disbursements through the [SEARCH](https://api.mercadopago.com/v1/payments/search) of Payments.
 
 ### Request
 ```curl
 curl -X GET \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/:SPLITTER_ID?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments/:ID?access_token=M_ACCESS_TOKEN'
 ```
 
 ### Response
@@ -333,14 +335,14 @@ curl -X GET \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
     }
   ],
   "disbursements": [
     {
       "id": 3870106325,
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -370,7 +372,7 @@ curl -X GET \
     {
       "id": 3870106343,
       "amount": 300,
-      "external_reference": "",
+      "external_reference": "externalDisb2Ref",
       "collector_id": 328310458,
       "application_fee": 30,
       "money_release_days": 3,
@@ -412,7 +414,7 @@ curl -X GET \
       "number": "33672209"
     }
   },
-  "external_reference": "externalSplitter",
+  "external_reference": "externalRootRef",
   "description": "",
   "binary_mode": false,
   "date_created": "2018-06-27T09:34:20.518-04:00",
@@ -444,10 +446,10 @@ curl -X GET \
 }
 ```
 
-## Full Splitter Reimbursement
-The Splliter can be full reimbursed or a single exit payment from the Splitter can be reimbursed. If the entire Splitter is reimbursed, it will be in the "refunded" state. In case of a partial refund, the Splitter will remain in the "partially_refunded" state.
+## Full Advanced Payment Reimbursement
+The Advanced Payment can be full reimbursed or a single exit payment from the Advanced Payment can be reimbursed. If the entire Advanced Payment is reimbursed, it will be in the "refunded" state. In case of a partial refund, the Advanced Payment will remain in the "partially_refunded" state.
 
-Keep in mind that this process is not immediate. When the reimbursement is made with this endpoint, an asynchronous process is triggered to reimburse all the generated payments. The Splitter status change will be reported through Webhooks.
+Keep in mind that this process is not immediate. When the reimbursement is made with this endpoint, an asynchronous process is triggered to reimburse all the generated payments. The Advanced Payment status changes will be reported through Webhooks.
 
 ### Request
 
@@ -455,7 +457,7 @@ Keep in mind that this process is not immediate. When the reimbursement is made 
 curl -X POST \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/:SPLITTER_ID/refunds?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments/:ID/refunds?access_token=M_ACCESS_TOKEN'
 ```
 
 ### Response
@@ -475,14 +477,14 @@ curl -X POST \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
     }
   ],
   "disbursements": [
     {
       "id": 3870106325,
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -512,7 +514,7 @@ curl -X POST \
     {
       "id": 3870106343,
       "amount": 300,
-      "external_reference": "",
+      "external_reference": "externalDisb2Ref",
       "collector_id": 328310458,
       "application_fee": 30,
       "money_release_days": 3,
@@ -554,7 +556,7 @@ curl -X POST \
       "number": "33672209"
     }
   },
-  "external_reference": "externalSplitter",
+  "external_reference": "externalRootRef",
   "description": "",
   "binary_mode": false,
   "notification_url": "",
@@ -587,15 +589,15 @@ curl -X POST \
   "application_id": 4422991580014613
 }
 ```
-## Partial refund of a Splitter
-The partial refund of the Splitter can be done by specifying the exit payment ID in the URL.
+## Partial refund of a Advanced Payment
+The partial refund of the Advanced Payment can be done by specifying the exit payment ID in the URL.
 
 ### Request
 ```curl
 curl -X POST \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/:SPLITTER_ID/disbursements/:DISBURSEMENT_ID/refunds?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments/:ID/disbursements/:DISBURSEMENT_ID/refunds?access_token=M_ACCESS_TOKEN'
 ```
 
 ### Response
@@ -615,14 +617,14 @@ curl -X POST \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
     }
   ],
   "disbursements": [
     {
       "id": 3870106325,
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -652,7 +654,7 @@ curl -X POST \
     {
       "id": 3870106343,
       "amount": 300,
-      "external_reference": "",
+      "external_reference": "externalDisb2Ref",
       "collector_id": 328310458,
       "application_fee": 30,
       "money_release_days": 3,
@@ -694,7 +696,7 @@ curl -X POST \
       "number": "33672209"
     }
   },
-  "external_reference": "externalSplitter",
+  "external_reference": "externalRootRef",
   "description": "",
   "binary_mode": false,
   "notification_url": "",
@@ -728,8 +730,8 @@ curl -X POST \
 }
 ```
 
-## Cancel a splitter
-You can cancel a Splitter that has been in the "pending" state. These cases can be given for entry payments with ticket or any payment by credit card that has entered the manual review flow.
+## Cancel a Advanced Payment
+You can cancel a Advanced Payment that has been in the "pending" state. These cases can be given for entry payments with ticket or any payment by credit card that has entered the manual review flow.
 
 ### Request
 
@@ -737,7 +739,7 @@ You can cancel a Splitter that has been in the "pending" state. These cases can 
 curl -X PUT \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/:SPLITTER_ID?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments/:ID?access_token=M_ACCESS_TOKEN'
     -d '{
           "status": "cancelled"
         }'
@@ -759,14 +761,14 @@ curl -X PUT \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR",
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR",
       "date_of_expiration": "2018-06-22T21:52:49.000-04:00"
     }
   ],
   "disbursements": [
     {
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -840,8 +842,8 @@ curl -X PUT \
 }
 ```
 
-## Capture a splitter
-The Splitter API allows payments of the type "reservation/authorization". For these cases you must create a Splitter with the "capture" field in FALSE, which will reserve the amount until it is captured with the next endpoint.
+## Capture a Advanced Payment
+The Advanced Payment API allows payments of the type "reservation/authorization". For these cases you must create a Advanced Payment with the "capture" field in FALSE, which will reserve the amount until it is captured with the next endpoint.
 
 ### Request
 
@@ -849,7 +851,7 @@ The Splitter API allows payments of the type "reservation/authorization". For th
 curl -X PUT \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/:SPLITTER_ID?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments/:ID?access_token=M_ACCESS_TOKEN'
     -d '{
           "capture": true
         }'
@@ -872,14 +874,14 @@ curl -X PUT \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
     }
   ],
   "disbursements": [
     {
       "id": 3870106325,
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -909,7 +911,7 @@ curl -X PUT \
     {
       "id": 3870106343,
       "amount": 300,
-      "external_reference": "",
+      "external_reference": "externalDisb2Ref",
       "collector_id": 328310458,
       "application_fee": 30,
       "money_release_days": 3,
@@ -951,7 +953,7 @@ curl -X PUT \
       "number": "33672209"
     }
   },
-  "external_reference": "externalSplitter",
+  "external_reference": "externalRootRef",
   "description": "",
   "binary_mode": false,
   "date_created": "2018-06-27T09:34:20.518-04:00",
@@ -994,7 +996,7 @@ We can change the release date of all outgoing payments by entering the new date
 curl -X POST \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/:SPLITTER_ID/disburses?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments/:ID/disburses?access_token=M_ACCESS_TOKEN'
     -d '{
           "money_release_date": "2018-07-10T10:23:18.000-04:00"
         }'
@@ -1017,14 +1019,14 @@ curl -X POST \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
     }
   ],
   "disbursements": [
     {
       "id": 3870106325,
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -1054,7 +1056,7 @@ curl -X POST \
     {
       "id": 3870106343,
       "amount": 300,
-      "external_reference": "",
+      "external_reference": "externalDisb2Ref",
       "collector_id": 328310458,
       "application_fee": 30,
       "money_release_days": 3,
@@ -1096,7 +1098,7 @@ curl -X POST \
       "number": "33672209"
     }
   },
-  "external_reference": "externalSplitter",
+  "external_reference": "externalRootRef",
   "description": "",
   "binary_mode": false,
   "date_created": "2018-06-27T09:34:20.518-04:00",
@@ -1137,7 +1139,7 @@ We can change the release date of an exit payment by going to the "disbursement_
 curl -X POST \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/:SPLITTER_ID/disbursements/:DISBURSEMENT_ID/disburses?access_token=M_ACCESS_TOKEN'
+     'https://api.mercadopago.com/v1/advanced_payments/:ID/disbursements/:DISBURSEMENT_ID/disburses?access_token=M_ACCESS_TOKEN'
     -d '{
           "money_release_date": "2018-07-10T10:23:18.000-04:00"
         }'
@@ -1160,14 +1162,14 @@ curl -X POST \
       "description": "Service charge",
       "capture": true,
       "external_reference": "externalRef123",
-      "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+      "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
     }
   ],
   "disbursements": [
     {
       "id": 3870106325,
       "amount": 200.12,
-      "external_reference": "",
+      "external_reference": "externalDisb1Ref",
       "collector_id": 328310637,
       "application_fee": 20,
       "money_release_days": 3,
@@ -1197,7 +1199,7 @@ curl -X POST \
     {
       "id": 3870106343,
       "amount": 300,
-      "external_reference": "",
+      "external_reference": "externalDisb2Ref",
       "collector_id": 328310458,
       "application_fee": 30,
       "money_release_days": 3,
@@ -1239,7 +1241,7 @@ curl -X POST \
       "number": "33672209"
     }
   },
-  "external_reference": "externalSplitter",
+  "external_reference": "externalRootRef",
   "description": "",
   "binary_mode": false,
   "date_created": "2018-06-27T09:34:20.518-04:00",
@@ -1273,8 +1275,8 @@ curl -X POST \
 #### Definition of fields
 Name                              |Description                                                                                                                              |Type   |
 ----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------|
-id                                |Splitter ID.                                                                                                                             |Long   |
-status                            |Splitter status ("pending", "approved", "rejected", "cancelled", "refunded", "partially_refunded").                                      |String |
+id                                |Advanced Payment ID.                                                                                                                     |Long   |
+status                            |Advanced Payment status ("pending", "approved", "rejected", "cancelled", "refunded", "partially_refunded").                              |String |
 payments                          |List of entrance payments made by the Payer.                                                                                             |Array  |
 payments.id                       |Payer payment ID.                                                                                                                        |Long   |
 payments.payment_type_id          |Payment method.                                                                                                                          |String |
@@ -1325,16 +1327,16 @@ identification.type               |Type of Payer identification.                
 identification.number             |Payer identification number.                                                                                                             |String |
 external_reference                |Customer reference                                                                                                                       |String |
 description                       |Description of payment                                                                                                                   |String |
-binary_mode                       |Flag indicating the Splitter processing mode. For now, only false is supported.                                                          |Boolean|
-date_created                      |Date of creation of the Splitter                                                                                                         |String |
-date_last_updated                 |Date of last modification of Splitter                                                                                                    |String |
+binary_mode                       |Flag indicating the Advanced Payment processing mode. For now, only false is supported.                                                  |Boolean|
+date_created                      |Date of creation of the Advanced Payment                                                                                                 |String |
+date_last_updated                 |Date of last modification of Advanced Payment                                                                                            |String |
 metadata                          |                                                                                                                                         |Object |
 application_id                    |Marketplace ID                                                                                                                           |Long   |
 
-## Search for Splitter
-You can search for Splitters by several filters in addition to being able to define a "limit" and "offset" to handle paging.
+## Search for Advanced Payment
+You can search for Advanced Payment by several filters in addition to being able to define a "limit" and "offset" to handle paging.
 
-A Marketplace can only search for its own Splitters.
+A Marketplace can only search for its own Advanced Payment.
 
 Merchants can see their payments in the Payments public search API with the outgoing payment ID.
 
@@ -1344,7 +1346,7 @@ Merchants can see their payments in the Payments public search API with the outg
 curl -X GET \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/search?access_token=M_ACCESS_TOKEN&limit=10&offset=0'
+     'https://api.mercadopago.com/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&limit=10&offset=0'
 ```
 
 ### Response
@@ -1371,7 +1373,7 @@ curl -X GET \
           "description": "Service charge",
           "capture": true,
           "external_reference": "externalRef123",
-          "statement_descriptor": "WWW.MktSplitterMLBTEST.COM.BR"
+          "statement_descriptor": "WWW.MktAdvancedPaymentMLBTEST.COM.BR"
         }
       ],
       "disbursements": [
@@ -1450,7 +1452,7 @@ curl -X GET \
           "number": "33672209"
         }
       },
-      "external_reference": "externalSplitter",
+      "external_reference": "externalRootRef",
       "description": "",
       "binary_mode": false,
       "date_created": "2018-06-27T09:34:20.518-04:00",
@@ -1491,21 +1493,21 @@ paging       |Data of the page                                             |Obje
 paging.total |Total results                                                |Int   |
 paging.limit |Page size                                                    |Int   |
 paging.offset|Page number                                                  |Int   |
-results      |List of Splitters that match the search filters              |Array |
+results      |List of Advanced Payment that match the search filters       |Array |
 
 ### Filtros de búsqueda
 Atribute                   |Description                                                                                                                                    |Search example     |
 ---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-date_created               |Date of creation of the splitter. Returns all splitters created in the specified range                                                         |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&range=date&begin_date=2018-02-01&end_date=2018-12-02
-status                     |State of the splitter.                                                                                                                         |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&status=pending
-payment.id                 |ID of the entrance payment.                                                                                                                    |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.id=123456
-payment.payment_method_id  |Payment method.                                                                                                                                |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.payment_method_id=visa
-payment.external_reference |ID generated for this particular entry payment.                                                                                                |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.external_reference=EXT_REF
-payment.transaction_amount |Amount of the entrance payment. Not yet available since it is necessary to define how the searches with operators will be.                     |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payment.transaction_amount=30
-payer.id                   |User ID of the payer (if it is with account_money). Returns all the splitters in which the payer made a purchase to the marketplace.           |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payer.id=111111
-payer.email                |Email from Payer.                                                                                                                              |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&payer.email=test@testing.com
-disbursement.collector_id  |Merchant User ID. Returns all the splitters in which the Merchant made a sale through the Marketplace.                                         |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&collector_id=222222
-external_reference         |ID generated by the marketplace, order ID or other identifier that the marketplace knows to identify a sale.                                   |/v1/split_payments/search?access_token=M_ACCESS_TOKEN&external_reference=EXT_REF
+date_created               |Date of creation of the Advanced Payment. Returns all Advanced Payments created in the specified range                                         |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&range=date&begin_date=2018-02-01&end_date=2018-12-02
+status                     |State of the Advanced Payment.                                                                                                                 |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&status=pending
+payment.id                 |ID of the entrance payment.                                                                                                                    |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&payment.id=123456
+payment.payment_method_id  |Payment method.                                                                                                                                |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&payment.payment_method_id=visa
+payment.external_reference |ID generated for this particular entry payment.                                                                                                |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&payment.external_reference=EXT_REF
+payment.transaction_amount |Amount of the entrance payment. Not yet available since it is necessary to define how the searches with operators will be.                     |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&payment.transaction_amount=30
+payer.id                   |User ID of the payer (if it is with account_money). Returns all the splitters in which the payer made a purchase to the marketplace.           |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&payer.id=111111
+payer.email                |Email from Payer.                                                                                                                              |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&payer.email=test@testing.com
+disbursement.collector_id  |Merchant User ID. Returns all the Advanced Payment in which the Merchant made a sale through the Marketplace.                                  |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&collector_id=222222
+external_reference         |ID generated by the marketplace, order ID or other identifier that the marketplace knows to identify a sale.                                   |/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&external_reference=EXT_REF
 
 ## Attribute filters
 Attribute filters serve to simplify the search response. In the field "attributes" the names of the fields that we want to show in the final result are specified.
@@ -1516,7 +1518,7 @@ Attribute filters serve to simplify the search response. In the field "attribute
 curl -X GET \
      -H “Accept”:”application/json” \
      -H “Content-Type”:”application/json” \
-     'https://api.mercadopago.com/v1/split_payments/search?access_token=M_ACCESS_TOKEN&attributes=id,status,collector_id'
+     'https://api.mercadopago.com/v1/advanced_payments/search?access_token=M_ACCESS_TOKEN&attributes=id,status,collector_id'
 ```
 
 ### Response
@@ -1577,14 +1579,12 @@ cause.data       |Extra data of the error.                          |String|
 
 Codes |Description                                                     |
 ------|----------------------------------------------------------------|
-40004 |application_id not valid for this get.
 40005 |application_id is required.
 40006 |Invalid min merchant release range.
 40007 |Invalid max merchant release range.
 40008 |Invalid min_release_day.
 40009 |Invalid max_release_day.
 40010 |Difference max and min release day must be between 0 and 91.
-40011 |marketplace is required.
 40012 |external_reference is required.
 40013 |payer.email is required.
 40014 |Invalid number of payments.
@@ -1611,7 +1611,7 @@ Codes |Description                                                     |
 40035 |money_release_date invalid.
 40036 |arketplace does not have permissions on the payer.
 40037 |collector_id not found in the merchant list.
-40038 |Unknown payment_type_id.
+40038 |Invalid query params duplicated.
 40039 |Invalid request.
 40040 |Invalid splitter status.
 40041 |Invalid begin date.
@@ -1622,8 +1622,7 @@ Codes |Description                                                     |
 40046 |Invalid external reference.
 40047 |Some parameters are invalid for search.
 40048 |Invalid splitter id.
-40049 |invalid marketplace.
-40050 |Invalid disbursement id.
+40049 |invalid date last updated.
 40051 |money_release_date is required.
 40052 |processing_mode is required.
 40053 |invalid content in request.
