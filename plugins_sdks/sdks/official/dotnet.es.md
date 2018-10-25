@@ -12,15 +12,15 @@ Esta librería provee a los desarrolladores un simple set de bindings con la API
 
 **Utilizando package manager**
 
-`PM> Install-Package mercadopago-sdk -Version 1.0.25`
+`PM> Install-Package mercadopago-sdk -Version [VERSION-dx-dotnet]`
 
 **Utilizando .Net CLI**
 
-`> dotnet add package mercadopago-sdk --version 1.0.25`
+`> dotnet add package mercadopago-sdk --version [VERSION-dx-dotnet]`
 
 **Utilizando Packet CLI**
 
-`> paket add mercadopago-sdk --version 1.0.25`
+`> paket add mercadopago-sdk --version [VERSION-dx-dotnet]`
 
 ## Guía de inicio rápido
 
