@@ -83,7 +83,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 ```
 ]]]
 ## Listen for notifications of payments
- Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications] (https://www.mercadopago.com.co/developers/es/guides/notifications/webhooks/)
+ Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications] (/guides/notifications/webhooks.en.md)
  ## Retries
  If the payment without cvv is rejected, we recommend that you follow a retry logic according to the rejection status. For example, if the payment was rejected by expired card it does not make sense for a retry to be made. The client must be asked to inform another card to pay the following charges. In case the rejection is for insufficient funds, it makes sense that a logic of retries be made.
  You can see all the rejections [here] (/guides/payments/api/handling-responses.en.md)
