@@ -101,7 +101,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 | Perú    	 | 4009 1753 3280 6176 | no disponible     | no disponible    |
 | Uruguay  	 | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible    |
 | Venezuela  | 4966 3823 3110 9310 |5177 0761 6430 0010| no disponibl     |
- Also [you can use test cards of local payment methods in each country] (/ guides / localization / local-cards.es.md).
+ Also [you can use test cards of local payment methods in each country] (/ guides/localization/local-cards.en.md).
   Test all possible scenarios of approved, pending or rejected payment. To do this you must enter in the form in the field `card_holder_name` any of the following prefixes:
  * **APRO**: Pago aprobado.  
 * **CONT**: Pago pendiente.  
