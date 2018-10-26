@@ -31,7 +31,7 @@ Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válid
 
 ## Cobrá de forma recurrente a tus clientes
 
-### Obtené el customer guardado
+### Obtén el customer guardado
 
 Para conocer los datos de tu cliente, podrás obtenerlo de la siguiente forma:
 
