@@ -64,7 +64,7 @@ print_r ($cards["response"]);
 ```
 ]]]
 
-### Tokenizá la tarjeta con el card_id
+### Tokeniza la tarjeta con el card_id
 
 [[[
 ```php
