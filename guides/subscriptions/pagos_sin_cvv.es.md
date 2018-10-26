@@ -82,7 +82,7 @@ print_r ($card_token);
 
 ### Realizá el cobro:
 
-Cómo estás usando un token creado con el card_id, deberás realizar el posteo del pago indicando el id del customer asociado a la tarejta:
+Al estar usando un token creado con el card_id, deberás realizar el posteo del pago indicando el id del customer asociado a la tarjeta:
 
 [[[
 ```php
