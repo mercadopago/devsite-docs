@@ -29,7 +29,7 @@ Para la primer transacción siempre se tendrán que solicitar los datos de la ta
 
 Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](/guides/payments/api/customers-and-cards.es.md)
 
-## Cobrá de forma recurrente a tus clientes
+## Cobra de forma recurrente a tus clientes
 
 ### Obtén el customer guardado
 
