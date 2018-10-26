@@ -112,7 +112,7 @@ Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago
 
 Si el pago sin cvv es rechazado, te recomendamos que sigas una lógica de reintentos según el estado del rechazo. Por ejemplo, si el pago fue rechazado por tarjeta vencida no tiene sentido que se haga un reintento. Se le deberá solicitar al cliente que informa otra tarjeta para cursar los cobros siguientes. En caso que el rechazo sea por fondos insuficientes, tiene sentido que se haga una lógica de reintentos. 
 
-Podrás ver todos los rechazos [aquí](https://www.mercadopago.com.co/developers/es/guides/payments/api/handling-responses/)
+Podrás ver todos los rechazos [aquí](/guides/payments/api/handling-responses.es.md)
 
 ## Prueba tu integración
 
