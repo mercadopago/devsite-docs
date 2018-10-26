@@ -27,7 +27,7 @@ Para la primer transacción siempre se tendrán que solicitar los datos de la ta
 
 ## Crea un customer y asociale la tarjeta utilizada
 
-Una vez cursado el primer pago, y habiendote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asociale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](https://www.mercadopago.com.co/developers/es/guides/payments/api/customers-and-cards/)
+Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](/guides/payments/api/customers-and-cards.es.md)
 
 ## Cobrá de forma recurrente a tus clientes
 
