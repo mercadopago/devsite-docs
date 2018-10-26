@@ -106,7 +106,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 
 ## Escuha notificaciones de los pagos
 
-Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](https://www.mercadopago.com.co/developers/es/guides/notifications/webhooks/)
+Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](/guides/notifications/webhooks.es.md)
 
 ## Reintentos
 
