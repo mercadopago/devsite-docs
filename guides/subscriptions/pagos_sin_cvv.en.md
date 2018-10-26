@@ -19,7 +19,7 @@
  ## Charge the first payment
  For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API] (https://www.mercadopago.com.co/developers/es/guides/payments/api/receiving-payment-by-card/).
  ## Create a customer and associate the used card
- Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards] (https://www.mercadopago.com.co/developers/es/guides/payments/api/customers-and-cards/)
+ Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards] (/guides/payments/api/customers-and-cards.en.md)
  ## Recurring your customers
  ### Get the customer saved
  To know the data of your client, you can obtain it in the following way:
