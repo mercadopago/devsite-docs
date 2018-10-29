@@ -1,13 +1,13 @@
-# Contenido del sitio para desarrolladores de MercadoPago
+# Contenido del sitio para desarrolladores de Mercado Pago
 
 En este repositorio esta alojado el contenido mostrado en nuestro sitio para desarrolladores, las contribuciones son bienvenidas.
 
 > - Argentina: https://mercadopago.com.ar/developers
 > - Brasil: https://mercadopago.com.br/developers
 > - México: https://mercadopago.com.mx/developers
-> - Uruguay: https://beta.mercadopago.com.uy/developers
+> - Uruguay: https://mercadopago.com.uy/developers
 > - Perú: https://mercadopago.com.pe/developers
-> - Chile: https://beta.mercadopago.cl/developers
+> - Chile: https://mercadopago.cl/developers
 > - Venezuela: https://www.mercadopago.com.ve/developers
 > - Colombia: https://www.mercadopago.com.co/developers
 
@@ -18,7 +18,7 @@ En este repositorio esta alojado el contenido mostrado en nuestro sitio para des
     /guides             /payments/api/             introduction     .es     .md 
 
     ^^^^^^^             ^^^^^^^^^^^^^^            ^^^^^^^^^^^^^     ^^^^    ^^^^
-Pagina Principal          Jerarquia               Identificador     Idioma  Formato
+Pagina Principal          Jerarquía               Identificador     Idioma  Formato
                          en el Sidebar            de la Pagina
 
 ```
@@ -26,18 +26,18 @@ Pagina Principal          Jerarquia               Identificador     Idioma  Form
 ## Para contribuir: ##
 
 1. Hacer un fork de este repositorio.
-2. Crear un issue con una descripcion breve sobre la contribucion.
-3. Seguir la guia (https://github.com/mercadopago/devsite-docs/wiki/Syntax-guide) para la redaccion del contenido.
-4. Crear un **Pull Request** al branch *master*, de preferencia proveer contenido traducido en los lenguajes soportados esto permitira que tu contribucion pueda verse reflejada en el sitio en menor tiempo.
-5. El contenido sera revisado y comentado por nuestro equipo, puede que te solicitemos algunas correcciones antes de aprobar la contribucion.
+2. Crear un issue con una descripción breve sobre la contribución.
+3. Seguir la guia (https://github.com/mercadopago/devsite-docs/wiki/Syntax-guide) para la redacción del contenido.
+4. Crear un **Pull Request** al branch *master*, de preferencia proveer contenido traducido en los lenguajes soportados esto permitirá que tu contribución pueda verse reflejada en el sitio en menor tiempo.
+5. El contenido será revisado y comentado por nuestro equipo, puede que te solicitemos algunas correcciones antes de aprobar la contribución.
 
 
 
-## ¿En que puedo contribuir? ##
-- **Traducciones**, Los issues pendientes de traduccion seran marcados con el Tag (Missing Translation) para su facil identificacion.
-- **Correccion de estilo**, Si identificas algun error gramatical o el contenido se muestra poco claro y crees que puede ser mejorado, tu ayuda sera bien recibida.
-- **Correccion de Snippets**, Si identificas algun snippet de codigo que no esta funcionando adecuadamente o no retorna los resultados que se indican en la documentacion los ajustes o correcciones son bienvenidos.
-- **Reporte de Bugs y contenido deprecado**, Si el contenido que mostramos en el sitio deja de estar actualizado o muestra informacion no valida, los reportes seran atendidos con prontitud, usar el Tag (Bug) para que sean faciles de identificar.
+## ¿En qué puedo contribuir? ##
+- **Traducciones**, Los issues pendientes de traduccion serán marcados con el Tag (Missing Translation) para su fácil identificacion.
+- **Corrección de estilo**, Si identificas algun error gramatical o el contenido se muestra poco claro y crees que puede ser mejorado, tu ayuda será bien recibida.
+- **Corrección de Snippets**, Si identificas algun snippet de código que no está funcionando adecuadamente o no retorna los resultados que se indican en la documentación los ajustes o correcciones son bienvenidos.
+- **Reporte de Bugs y contenido deprecado**, Si el contenido que mostramos en el sitio deja de estar actualizado o muestra información no valida, los reportes serán atendidos con prontitud, usar el Tag (Bug) para que sean fáciles de identificar.
 
 ## Tengo una idea o sugerencia ##
 
