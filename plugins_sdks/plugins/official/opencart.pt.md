@@ -41,7 +41,7 @@ Oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagam
 * Aceita boletos, além de cartões.
 * Aceite os cupons de desconto do MercadoPago.
 
-*Disponível para Argentina, Brasil, Chile, Colômbia, México, Peru, Uruguai e Venezuela*
+*Disponível para Argentina, Brasil, Chile, Colômbia, México, Peru e Uruguai*
 
 **API*
 
@@ -53,7 +53,7 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 * Aceite boletos, além de cartões.
 * Melhore a taxa de conversão.
 
-*Disponível para Argentina, Brasil, Colômbia, México, Peru e Venezuela*
+*Disponível para Argentina, Brasil, Colômbia, México e Peru*
 
 
 ## Requisitos

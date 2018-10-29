@@ -37,7 +37,7 @@ Great for merchants who want to get going quickly and easily.
 * Accept tickets, bank transfer and account money in addition to cards.
 * Accept MercadoPago's discount coupons.
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay and Venezuela*
+*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru andUruguay *
 
 **Custom Checkout**
 
@@ -49,7 +49,7 @@ Offer a checkout fully customized to your brand experience with our simple-to-us
 * Accept tickets in addition to cards.
 * Improve conversion rate.
 
-*Available for Argentina, Brazil, Colombia, Mexico, Peru and Venezuela*
+*Available for Argentina, Brazil, Colombia, Mexico and Peru*
 
 
 ## Requirements:
@@ -112,7 +112,6 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
   * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
   * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
   * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
-  * Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
 
 4. If you're using **Custom Checkout** or **Standard Checkout**, select the country related to your **MercadoPago** account. If you're using **Ticket Checkout**, there is no need to configure the country.
 

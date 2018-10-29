@@ -27,7 +27,6 @@ Configure your credentials
     - Argentina: `https://www.mercadopago.com/mla/herramientas/aplicaciones <https://www.mercadopago.com/mla/herramientas/aplicaciones>`_
     - Brazil: `https://www.mercadopago.com/mlb/ferramentas/aplicacoes <https://www.mercadopago.com/mlb/ferramentas/aplicacoes>`_
     - Mexico: `https://www.mercadopago.com/mlm/herramientas/aplicaciones <https://www.mercadopago.com/mlm/herramientas/aplicaciones>`_
-    - Venezuela: `https://www.mercadopago.com/mlv/herramientas/aplicaciones <https://www.mercadopago.com/mlv/herramientas/aplicaciones>`_
     - Colombia: `https://www.mercadopago.com/mco/herramientas/aplicaciones <https://www.mercadopago.com/mco/herramientas/aplicaciones>`_
     - Chile: `https://www.mercadopago.com/mlc/herramientas/aplicaciones <https://www.mercadopago.com/mlc/herramientas/aplicaciones>`_
 
@@ -153,7 +152,6 @@ Configure your credentials
     * Argentina: `https://www.mercadopago.com/mla/account/credentials <https://www.mercadopago.com/mla/account/credentials>`_
     * Brazil: `https://www.mercadopago.com/mlb/account/credentials <https://www.mercadopago.com/mlb/account/credentials>`_
     * Mexico: `https://www.mercadopago.com/mlm/account/credentials <https://www.mercadopago.com/mlm/account/credentials>`_
-    * Venezuela: `https://www.mercadopago.com/mlv/account/credentials <https://www.mercadopago.com/mlv/account/credentials>`_
     * Colombia: `https://www.mercadopago.com/mco/account/credentials <https://www.mercadopago.com/mco/account/credentials>`_
 
 
@@ -183,7 +181,6 @@ Get customer
     * Argentina: `https://www.mercadopago.com.ar/developers <https://www.mercadopago.com.ar/developers>`_
     * Brazil: `https://www.mercadopago.com.br/developers <https://www.mercadopago.com.br/developers>`_
     * Mexico: `https://www.mercadopago.com.mx/developers <https://www.mercadopago.com.mx/developers>`_
-    * Venezuela: `https://www.mercadopago.com.ve/developers <https://www.mercadopago.com.ve/developers>`_
     * Colombia: `https://www.mercadopago.com.co/developers <https://www.mercadopago.com.co/developers>`_
 
 ## Generic methods

@@ -97,16 +97,3 @@ Identification type          | ID                       |
 :------------------------- | :----------------------- |
 Cédula de Identidad        | `CI`                    |
 Others                      | `Otro`                   |
-
-### Venezuela
-
-Identification type                | ID                       |
-:------------------------------- | :----------------------- |
-Cédula de Identidad V            | `CI-V`                   |
-Cédula de Identidad E            | `CI-E`                   |
-Registro de Informacion Fiscal J | `RIF-J`                  |
-Registro de Informacion Fiscal P | `RIF-P`                  |
-Registro de Informacion Fiscal V | `RIF-V`                  |
-Registro de Informacion Fiscal E | `RIF-E`                  |
-Registro de Informacion Fiscal G | `RIF-G`                  |
-Passport                         | `Pasaporte`              |

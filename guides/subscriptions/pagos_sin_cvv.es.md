@@ -131,7 +131,6 @@ Cuentas con un par de [credenciales de _sandbox_](https://www.mercadopago.com.ar
 | México  	 | 4075 5957 1648 3764 |5474 9254 3267 0366| no disponible    |
 | Perú    	 | 4009 1753 3280 6176 | no disponible     | no disponible    |
 | Uruguay  	 | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible    |
-| Venezuela  | 4966 3823 3110 9310 |5177 0761 6430 0010| no disponibl     |
 
 También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](/guides/localization/local-cards.es.md).
 

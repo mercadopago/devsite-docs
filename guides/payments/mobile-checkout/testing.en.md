@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - mlv
     - global
 ---
 # Test the integration
@@ -49,6 +48,5 @@ Use these test cards to test the different payment results.
 | Mexico  	 | 4075 5957 1648 3764 |5474 9254 3267 0366| unavailable      |
 | Peru    	 | 4009 1753 3280 6176 | unavailable       | unavailable      |
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| unavailable      |
-| Venezuela  | 4966 3823 3110 9310 |5177 0761 6430 0010| unavailable      |
 
 You can also [use test credit cards from local payment methods in each country](/guides/localization/local-cards.en.md).

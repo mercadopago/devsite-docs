@@ -176,13 +176,3 @@ Lider				| `credit_card`            | `lider`
 Abitab				| `ticket`                 | `abitab`
 Red Pagos			| `ticket`                 | `redpagos`
 Account money	       		| `account_money`          | `account_money`
-
-### Venezuela
-
-Payment Method    		| Payment Type ID          | ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa				| `credit_card`            | `visa`
-Mastercard			| `credit_card`            | `master`
-BBVA Provincial			| `ticket`                 | `provincial`
-Banco Mercantil			| `atm`                    | `mercantil`
-Account money	       		| `account_money`          | `account_money`

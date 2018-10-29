@@ -94,7 +94,6 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 * Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
 * Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
 * Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
 5. Configurações do checkout básico. <br />
@@ -157,7 +156,6 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
   * Brasil: https://www.mercadopago.com/mlb/account/credentials
   * Colombia: https://www.mercadopago.com/mco/account/credentials
   * Mexico: https://www.mercadopago.com/mlm/account/credentials
-  * Venezuela: https://www.mercadopago.com/mlv/account/credentials
   * Uruguai: https://www.mercadopago.com/mlu/account/credentials
 
 <a name="configuration_custom_ticket"></a>
@@ -187,7 +185,6 @@ Para obter seu **Access Token**, acesse o link abaixo de acordo com o seu país:
 * Brazil: https://www.mercadopago.com/mlb/account/credentials
 * Colombia: https://www.mercadopago.com/mco/account/credentials
 * Mexico: https://www.mercadopago.com/mlm/account/credentials
-* Venezuela: https://www.mercadopago.com/mlv/account/credentials
 * Uruguai: https://www.mercadopago.com/mlu/account/credentials  
 
 <a name="Suporte"></a>

@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - mlv
     - global
 ---
 # Mobile Checkout
@@ -20,7 +19,7 @@ Os SDKs do Mercado Pago facilitam a criação de uma experiência de pagamento n
 - Descontos e promoções.
 - Comunicação do resultado dos pagamentos.
 ------------
-----[mlc, mlv, mco]----
+----[mlc, mco]----
 - Pagamentos com cartão.
 - **Financiamento**: parcelas com o melhor financiamento possível.
 - Descontos e promoções.

@@ -122,7 +122,6 @@ Offline payment plan are the payment methods which payments are made in two step
 - Mexico: Banamex, Bancomer, Oxxo.
 - Peru: PagoEfectivo.
 - Uruguay: Abitab, Redpagos.
-- Venezuela: Banesco, Mercantil, Provincial.
 - Brazil: Ticket Bank
 
 1. In the top menu.
