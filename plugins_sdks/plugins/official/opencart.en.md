@@ -37,7 +37,7 @@ Great for merchants who want to get going quickly and easily.
 * Accept tickets, bank transfer and account money in addition to cards.
 * Accept MercadoPago's discount coupons.
 
-*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru andUruguay *
+*Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru and Uruguay *
 
 **Custom Checkout**
 
