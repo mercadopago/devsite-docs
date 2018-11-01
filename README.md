@@ -8,11 +8,15 @@ En este repositorio esta alojado el contenido mostrado en nuestro sitio para des
 > - Uruguay: https://mercadopago.com.uy/developers
 > - Perú: https://mercadopago.com.pe/developers
 <<<<<<< HEAD
+<<<<<<< HEAD
 > - Chile: https://beta.mercadopago.cl/developers
 =======
 > - Chile: https://mercadopago.cl/developers
 > - Venezuela: https://www.mercadopago.com.ve/developers
 >>>>>>> 84bf0511101b6a4e4657f10b4d4a9c34ffd24412
+=======
+> - Chile: https://beta.mercadopago.cl/developers
+>>>>>>> 7db95aa1ba27d3c9bb6f7168b7c9fb41fd5706af
 > - Colombia: https://www.mercadopago.com.co/developers
 
 ## Nomenclatura y Estructura de Carpetas ##
