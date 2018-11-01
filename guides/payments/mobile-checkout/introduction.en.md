@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - mlv
     - global
 ---
 # Mobile Checkout
@@ -19,7 +18,7 @@ Mercado Pago SDK makes it easy to create a payment experience in your applicatio
  	- Discounts and promotions.
  	- Communication of payment results.
 ------------
-----[mlc, mlv, mco]----
+----[mlc, mco]----
 	- Card payments.
  	- **Financing**: payments in installments with the best possible financing fee.
  	- Discounts and promotions.

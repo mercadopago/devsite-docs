@@ -22,7 +22,6 @@ Use your Sandbox credentials and any of the cards that we provide below, accordi
 | Colombia   | 4013 5406 8274 6260 | 5254 1336 7440 3564 | 3743 781877 55283 |
 | Mexico     | 4075 5957 1648 3764 | 5474 9254 3267 0366 | not available     |
 | Peru       | 4009 1753 3280 6176 | not available       | not available     |
-| Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | not available     |
 
 To test the possible results of a payment, use any of the following prefixes in the `name` field of */card_tokens* or in the `cardholderName` field:
 

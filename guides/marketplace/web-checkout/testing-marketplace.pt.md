@@ -26,7 +26,7 @@ Para simular o processo de pagamento do começo ao fim, é necessário criar 3 u
 
 Você deve fazer a seguinte requisição à API para criar cada um dos usuários.
 
-Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Venezuela: **MLV**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPE** e Colômbia: **MCO**.
+Utilize o *site_id* para indicar o país de onde quer realizar os testes. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Chile: **MLC**, Uruguai: **MLU**, Peru: **MPE** e Colômbia: **MCO**.
 
 ##### Request
 ```curl
@@ -63,7 +63,6 @@ curl -X POST \
 | México     | 4075 5957 1648 3764 | 5474 9254 3267 0366 | indisponível      |
 | Peru       | 4009 1753 3280 6176 | indisponível        | indisponível      |
 | Uruguai  	 | 4157 2362 1173 6486 |5161 4413 1585 2061  | indisponível      |
-| Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | indisponível      |
 
 Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](/guides/localization/local-cards.pt.md).
 

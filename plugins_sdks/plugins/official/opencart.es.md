@@ -41,7 +41,7 @@ Ideal para vendedores que buscan rapidez y agilidad en la integración. Sus prin
 * Acepta otros medios de pago como boletos, además de tarjetas.
 * Acepta los cupones de descuento de Mercado Pago.
 
-*Disponible para Argentina, Brasil, Chile, Colômbia, México, Peru, Uruguai e Venezuela*
+*Disponible para Argentina, Brasil, Chile, Colômbia, México, Peru e Uruguai*
 
 **Checkout Transparente**
 
@@ -53,7 +53,7 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 * Acepta otros medios de pago como boletos, además de tarjetas.
 * Mejore la tasa de conversión.
 
-* Disponible para Argentina, Brasil, Colombia, México, Perú y Venezuela *
+* Disponible para Argentina, Brasil, Colombia, México e Perú *
 
 
 ## Requisitos
