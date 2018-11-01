@@ -37,7 +37,7 @@ Para usar el checkout redireccionado en modo agregador se debe realizar lo que s
 
 ## Configurar VTEX para operar en modo Gateway
 1. [Configurar Afiliación](#bookmark_Configurar_afiliación_para_operar_en_modo_Gateway).
-2. [Configurar Planes de pago Nativos](##Configurar_plan_de_pago_para_operar_en_modo_Gateway).
+2. [Configurar Planes de pago Nativos](#bookmark_Configurar_plan_de_pago_para_operar_en_modo_Gateway).
 
 ## Configurar Device en VTEX
 1. [Configurar DeviceID](##Configurar_DeviceID).
