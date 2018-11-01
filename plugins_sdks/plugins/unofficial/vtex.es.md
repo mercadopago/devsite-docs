@@ -27,7 +27,7 @@ Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor o
 Los pasos a seguir para usar y configurar el checkout personalizado modo Agregador son:
 
 1. [Configurar Afiliación](##Configurar_afiliación_en_modo_agregador).
-2. [Configurar Planes de Pago Nativos](##Configurar_plan_de_pago_Nativo_en_modo_agregador).
+2. [Configurar Planes de Pago Nativos](#bookmark_Configurar_plan_de_pago_Nativo_en_modo_agregador).
 3. [Configurar Planes de Pago Off-Line](##Medios_Off-Line_por_país_en_modo_agregador).
 4. [Configurar Planes de Pago Personalizados](##Configurar_plan_de_pago_personalizado).
 
