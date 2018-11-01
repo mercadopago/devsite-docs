@@ -40,7 +40,7 @@ Para usar el checkout redireccionado en modo agregador se debe realizar lo que s
 2. [Configurar Planes de pago Nativos](#bookmark_Configurar_plan_de_pago_para_operar_en_modo_Gateway).
 
 ## Configurar Device en VTEX
-1. [Configurar DeviceID](##Configurar_DeviceID).
+1. [Configurar DeviceID](#bookmark_Configurar_DeviceID).
 
 ## Interpretar logs de VTEX
 1. [Realizar las interpretaciones de la respuesta del pago en vtex](##Interpretar_log_de_VTEX).
