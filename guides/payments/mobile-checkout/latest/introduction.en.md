@@ -60,7 +60,7 @@ If you use **CocoaPods** in your project, you can add the dependency in the **Po
 Alternatively, you can  [download the SDK](https://github.com/mercadopago/px-ios/releases) and add it to your project.
 ===
 source 'https://github.com/CocoaPods/Specs.git'
-# Se necesita este parámetro por ser una SDK en swift
+# This parameter is needed because this is a Swift library
 use_frameworks!
 platform :ios, '8.0'
 pod 'MercadoPagoSDK', '~> 4.0'
