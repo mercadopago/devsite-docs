@@ -235,7 +235,7 @@ No arquivo `colors.xml` você deve fazer referência às cores que deseja altera
 <!-- Cor secundario do Spinner -->
 <color name="ui_components_spinner_secondary_color">@color/your_color</color>
 
-<!-- Color de fondo del Spinner -->
+<!-- Cor de fundo do Spinner -->
 <color name="px_background_loading">@color/your_color</color>
 
 <!-- Color de los iconos de los medios de pago -->
