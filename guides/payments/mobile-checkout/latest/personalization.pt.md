@@ -226,7 +226,7 @@ No arquivo `colors.xml` você deve fazer referência às cores que deseja altera
 <!-- Cor da Toolbar -->
 <color name="px_toolbar_text">@color/your_color</color>
 
-<!-- Color de la Status Bar -->
+<!-- Cor da Status Bar -->
 <color name="ui_components_android_color_primary_dark">@color/your_color</color>
 
 <!-- Color primario del Spinner-->
