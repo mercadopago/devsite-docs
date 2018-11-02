@@ -292,7 +292,7 @@ Após ter criado a preferência de pagamento e definido um evento a partir do qu
 
 ```android
 ===
-Para iniciar el checkout debes usar el método **startPayment** pasando como parámetros el contexto de Android y un RequestCode que es el número con el que identificarás la respuesta del checkout en el método **onActivityResult**.
+Para iniciar o checkout você deve usar o método **startPayment** passando como parâmetros o contexto do Android e um RequestCode que é o número com o qual você irá identificar a resposta do checkout no método **onActivityResult**.
 ===
 
 private static final int REQUEST_CODE = 1;
@@ -344,7 +344,7 @@ Você poderá obter a resposta com o seguinte código:
 
 ```android
 ===
-Utiliza el RequestCode que enviaste en **startPayment** para obtener el resultado del checkout en **onActivityResult**.
+Use o RequestCode enviado em **startPayment** para obter o resultado do checkout em **onActivityResult**.
 ===
 @Override
 protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
@@ -369,7 +369,7 @@ protected void onActivityResult(final int requestCode, final int resultCode, fin
 ```      
 ```swift
 ===
-Para obtener una respuesta de pago se deberá implementar el protocolo **PXLifeCycleProtocol** y pasarlo como argumento al momento de inicializar el checkout. Los métodos que se deben implementar del protocolo son **finishCheckout** y **cancelCheckout** como se muestra en el siguiente ejemplo. Al implementar este protocolo el integrador es responsable de finalizar el flujo de checkout, en este ejemplo de implementación al finalizar se ejecuta un **popToRootViewController**.
+Para obter uma resposta de pagamento, você deve implementar o protocolo **PXLifeCycleProtocol** e passá-lo como um argumento ao inicializar o checkout. Os métodos que devem ser implementados no protocolo são **finishCheckout** e **cancelCheckout**, conforme mostrado no exemplo a seguir. Ao implementar este protocolo, o integrador é responsável por concluir o fluxo de checkout, neste exemplo de implementação no final um **popToRootViewController** é executado.
 ===
 @IBAction func startMercadoPagoCheckout(_ sender: Any) {
     MercadoPagoCheckout.init(builder: MercadoPagoCheckoutBuilder.init(publicKey: "ENV_PUBLIC_KEY", preferenceId: checkoutPreferenceId))
