@@ -229,7 +229,7 @@ No arquivo `colors.xml` você deve fazer referência às cores que deseja altera
 <!-- Cor da Status Bar -->
 <color name="ui_components_android_color_primary_dark">@color/your_color</color>
 
-<!-- Color primario del Spinner-->
+<!-- Cor primaria do Spinner-->
 <color name="ui_components_spinner_primary_color">@color/your_color</color>
 
 <!-- Color secundario del Spinner -->
