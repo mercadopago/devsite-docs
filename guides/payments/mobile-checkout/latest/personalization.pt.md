@@ -238,7 +238,7 @@ No arquivo `colors.xml` você deve fazer referência às cores que deseja altera
 <!-- Cor de fundo do Spinner -->
 <color name="px_background_loading">@color/your_color</color>
 
-<!-- Color de los iconos de los medios de pago -->
+<!-- Cor dos icones dos meios de pagamento -->
 <color name="px_paymentMethodTint">@color/your_color</color>
 
 <!-- Color de los inputs -->
