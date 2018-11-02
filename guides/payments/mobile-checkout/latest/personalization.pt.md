@@ -223,7 +223,7 @@ No arquivo `colors.xml` você deve fazer referência às cores que deseja altera
 <!-- Cor principal -->
 <color name="ui_components_android_color_primary">@color/your_color</color>
 
-<!-- Color de la Toolbar -->
+<!-- Cor da Toolbar -->
 <color name="px_toolbar_text">@color/your_color</color>
 
 <!-- Color de la Status Bar -->
