@@ -67,7 +67,7 @@ pod 'MercadoPagoSDK', '~> 4.0'
 ```
 ]]]
 
-> Nota
+> Note
 >
 > If you have version 3.x of the Mobile Checkout integrated you can visit the [integration docs of version 3](/guides/payments/mobile-checkout/v3/introduction.es.md).
 > Remember that active support is only provided to the latest major version and passive support to the previous one, so we recommend a migration to the new version.
