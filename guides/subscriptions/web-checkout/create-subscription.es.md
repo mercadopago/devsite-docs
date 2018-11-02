@@ -20,7 +20,7 @@ Una preferencia de suscripción contiene todo el detalle del producto o servicio
 2. Frecuencia de la suscripción.
 3. ID de referencia de tu sistema.
 
-Para crear una preferencia de suscripción debes [instalar el SDK de Mercado Pago](/plugins) con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
+Para crear una preferencia de suscripción debes [instalar el SDK de Mercado Pago](https://github.com/mercadopago/) con tus [credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic).
 
 [[[
 ```php

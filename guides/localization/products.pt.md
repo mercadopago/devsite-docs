@@ -130,14 +130,3 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 | Pagamentos       | Botão de pagamento | N/A                           |
 | Pagamentos       | Web Checkout  | N/A                           |
 | Marketplace | Web Checkout  | N/A                           |
-
-### Venezuela
-
-|   Produto   |     Solução     |           Meios de pagamento não disponíveis       |
-| :---------- | :-------------- | :------------------------------------------------- |
-| Pagamentos       | Botão de pagamento   | N/A                                                |
-| Pagamentos       | Web Checkout    | N/A                                                |
-| Pagamentos       | Mobile Checkout | `account_money`,`banesco`,`mercantil`,`provincial` |
-| Pagamentos       | API             | N/A                                                |
-| Marketplace | Web Checkout    | N/A                                                |
-| Marketplace | API             | N/A                                                |

@@ -1,9 +1,24 @@
 # Shopify  
 
-<a name="Funcionalidades"></a>
-## Funcionalidades: ##
+* [Funcionalidades](#bookmark_Funcionalidades)
+* [Configuración](#bookmark_Configuración)
 
-### Checkout básico
+## Funcionalidades
+
+O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
+
+| Funcionalidades                                           | Web Checkout	    | 
+|---------------------------------------------------------- |-------------------|
+| Pago con tarjeta de crédito                               | ✔                 |
+| Otros medios de pago                                      | ✔                 |
+| Pago con dos medios de Pago 		                      	| ✔               	|
+| Interfaz provista por Mercado Pago                        | ✔                 |
+| Calculadora de cuotas                                     | ✔                 |
+| IPN y webhooks                                            | ✔                 |
+| Descuentos con cupones de Mercado Pago                    | ✔                 |
+
+
+### Web Checkout
 
 Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
@@ -13,8 +28,8 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 * Acepta pagos con ticket, dinero en cuenta de Mercado Pago, tarjeta de crédito y débito.
 * Acepta cupones de descuento
 
-<a name="Instalación-y-Configuración"></a>
-## Instalación y Configuración
+
+## Configuración
 
 <center>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
@@ -22,21 +37,27 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 1. En su panel de administración de Shopify, vaya al menú **Settings > Payments**.
 
-<center>
   ![Config](/images/shopify-config-1.gif)
-</center>
 
 2. En **Accept credit cards**, seleccione **Mercado Pago**.
 3. Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-<center>
   ![Config](/images/shopify-config-2.gif)
-</center>
 
 4. Haga clic en el botón **Activate** para guardar.
 
-<center>
   ![Config](/images/shopify-config-3.gif)
-</center>
-5. ¡Listo! el **Mercado Pago** fue instalado y configurado.
-git
+
+5. ¡Listo! **Mercado Pago** fue instalado y configurado.
+
+### Mapeo de estados de pago
+
+El siguiente esquema representa la correlación entre los estados de un pago en Mercado Pago y el estado de la orden en Shopify.
+
+| Mercado Pago status | Shopify order status |
+|---------------------|----------------------|
+| Approved            | Completed            |
+| Pending             | Pending              |
+| In process          | Pending              |
+| Rejected            | Pending              |
+| Cancelled           | Failed               |

@@ -12,15 +12,15 @@ This library provides developers with a simple set of bindings to the Mercado Pa
 
 **Using Package Manager**
 
-`PM> Install-Package mercadopago-sdk -Version 1.0.25`
+`PM> Install-Package mercadopago-sdk -Version [VERSION-dx-dotnet]`
 
 **Using .Net CLI**
 
-`> dotnet add package mercadopago-sdk --version 1.0.25`
+`> dotnet add package mercadopago-sdk --version [VERSION-dx-dotnet]`
 
 **Using Packet CLI**
 
-`> paket add mercadopago-sdk --version 1.0.25`
+`> paket add mercadopago-sdk --version [VERSION-dx-dotnet]`
 
 ## Quick Start
 

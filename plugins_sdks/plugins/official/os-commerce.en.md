@@ -83,7 +83,6 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 	* Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
 	* Mexico: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
 	* Peru: [https://www.mercadopago.com/mpe/herramientas/aplicaciones](https://www.mercadopago.com/mpe/herramientas/aplicaciones)
-	* Venezuela: [https://www.mercadopago.com/mlv/herramientas/aplicaciones](https://www.mercadopago.com/mlv/herramientas/aplicaciones)
 
 	Other options have been added and you can choose any time after installation:
 
@@ -115,8 +114,6 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 	* **MXN** (Mexican Peso)
 * Peru:
 	* **PEN** (Peruvian Sol)
-* Venezuela:
-	* **VEF** (Venezuelan Bolivar)
 
 
 <a name="Support"></a>

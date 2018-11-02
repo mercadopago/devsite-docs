@@ -13,7 +13,7 @@ Esta biblioteca fornece um conjunto de classes e métodos para interagir com a A
         <dependency>
             <groupId> com.mercadopago </groupId>
             <artifactId> dx-java </artifactId>
-            <version> 1.0.6 </version>
+            <version> [VERSION-dx-java] </version>
         </dependency>
     </dependencies>
     ...
