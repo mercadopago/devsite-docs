@@ -217,31 +217,31 @@ MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:bui
 
 ```android
 ===
-En tu archivo `colors.xml` deberás hacer referencia a los colores que quieras cambiar del checkout y setearlos con tus propios colores.
+No arquivo `colors.xml` você deve fazer referência às cores que deseja alterar no checkout e defini-las com suas próprias cores.
 ===
 
-<!-- Color principal -->
+<!-- Cor principal -->
 <color name="ui_components_android_color_primary">@color/your_color</color>
 
-<!-- Color de la Toolbar -->
+<!-- Cor da Toolbar -->
 <color name="px_toolbar_text">@color/your_color</color>
 
-<!-- Color de la Status Bar -->
+<!-- Cor da Status Bar -->
 <color name="ui_components_android_color_primary_dark">@color/your_color</color>
 
-<!-- Color primario del Spinner-->
+<!-- Cor primaria do Spinner-->
 <color name="ui_components_spinner_primary_color">@color/your_color</color>
 
-<!-- Color secundario del Spinner -->
+<!-- Cor secundario do Spinner -->
 <color name="ui_components_spinner_secondary_color">@color/your_color</color>
 
-<!-- Color de fondo del Spinner -->
+<!-- Cor de fundo do Spinner -->
 <color name="px_background_loading">@color/your_color</color>
 
-<!-- Color de los iconos de los medios de pago -->
+<!-- Cor dos icones dos meios de pagamento -->
 <color name="px_paymentMethodTint">@color/your_color</color>
 
-<!-- Color de los inputs -->
+<!-- Cor dos inputs -->
 <color name="px_input">@color/your_color</color>
 ```
 ```swift
