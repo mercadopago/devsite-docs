@@ -241,7 +241,7 @@ No arquivo `colors.xml` você deve fazer referência às cores que deseja altera
 <!-- Cor dos icones dos meios de pagamento -->
 <color name="px_paymentMethodTint">@color/your_color</color>
 
-<!-- Color de los inputs -->
+<!-- Cor dos inputs -->
 <color name="px_input">@color/your_color</color>
 ```
 ```swift
