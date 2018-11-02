@@ -220,7 +220,7 @@ MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:bui
 No arquivo `colors.xml` você deve fazer referência às cores que deseja alterar no checkout e defini-las com suas próprias cores.
 ===
 
-<!-- Color principal -->
+<!-- Cor principal -->
 <color name="ui_components_android_color_primary">@color/your_color</color>
 
 <!-- Color de la Toolbar -->
