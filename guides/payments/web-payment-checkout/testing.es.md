@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mlu
-  - mlv
   - mlc
   - mpe
   - mlm
@@ -38,7 +37,6 @@ Utiliza el dato *site_id* para indicar el país donde quieres realizar las prueb
 | Argentina   | **MLA** |
 | Brasil  | **MLB** |
 | México  | **MLM** |
-| Venezuela | **MLV** |
 | Chile | **MLC** |
 | Uruguay | **MLU** |
 | Perú  | **MPE** |
@@ -91,7 +89,6 @@ curl -X POST \
 | México  	 | 4075 5957 1648 3764 |5474 9254 3267 0366| no disponible    |
 | Perú    	 | 4009 1753 3280 6176 |no disponible      | no disponible    |
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| no disponible    |
-| Venezuela  | 4966 3823 3110 9310 |5177 0761 6430 0010| no disponible    |
 
 
 ### Realiza las pruebas correspondientes

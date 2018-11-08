@@ -158,10 +158,6 @@ properties:
             en: Brasil real.
             es: Real brasilero.
             pt: Brasil real.
-        - VEF:
-            en: Venezuelan strong bolivar.
-            es: Bolivar fuerte venezolano.
-            pt: Venezuelan strong bolivar.
         - CLP:
             en: Chilean peso.
             es: Peso chileno.

@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - mlv
     - global
 ---
 # **Personalización**
@@ -311,3 +310,5 @@ checkout.start()
 	} 
 ```
 ]]]
+
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](/guides/payments/mobile-checkout/v3/testing.es.md).

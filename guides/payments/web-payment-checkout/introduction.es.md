@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mlu
-  - mlv
   - mlc
   - mpe
   - mlm

@@ -6,39 +6,40 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - mlv
     - global
 ---
-# Receive Payments
+# Recibir pagos
 
 > WARNING
 >
-> Prerequisites
+> Pre-requisitos
 >
-> * This guide presumes that you have already followed the steps in the introduction section of the documentation for installing the SDK.
+> * Esta guía asume que ya has seguido los pasos de la sección introducción de la documentación para la instalación del SDK.
 
-This guide will help you integrate MercadoPago’s visual payment component in your application. This component addresses the selection of the payment method, the collection of data from the payment method of the user and the communication of the payment result.
+Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago en tu aplicación. Este componente maneja la selección del medio de pago, la recolección de datos del medio de pago del usuario y la comunicación del resultado de pago.
 
-#### The integration consists of two steps:
-- Integration in your server: in this step, you will get the payment information.
-- Integration in your application: in this step, you will configure the visual component.
+#### La integración consta de dos etapas:
+
+- Integración en tu servidor: en esta etapa obtendrás la información del pago.
+- Integración en tu aplicación: en esta etapa configurarás el componente visual.
 
 ![scheme](/images/mobile-sdk-schema.png)
 
-1. Create the payment preference from your server on MercadoPago’s servers.
-2. Start the checkout in your application, using the preference id.
-3. The Checkout will make the payment on MercadoPago’s servers.
-4. Sign up to receive notifications to find out about new payments and status updates.
+1. Crea la preferencia de pago desde tu servidor en los servidores de Mercado Pago.
+2. Inicia el _Checkout_ en tu aplicación, utilizando el id de la preferencia.
+3. El _Checkout_ realizará el pago en los servidores de Mercado Pago.
+4. Suscríbete a las notificaciones para enterarte de tus nuevos pagos y las actualizaciones de sus estados.
 
-## Set up your server
+## Configura tu servidor
 
-In order to start the payment flow, you need to get information about the product or service to be paid.
-This entity is the payment preference and contains:
+Para poder iniciar el flujo de pago, necesitas obtener la información sobre el producto o servicio a pagar.
 
-1. Description and amount.
-2. Your buyer’s information (email, name, address, etc.).
-3. Payment methods accepted.
-4. Reference ID of your system.
+Esta entidad es la preferencia de pago y contiene:
+
+1. Descripción y monto.
+2. Información de tu comprador (_Email_, nombre, dirección, etc).
+3. Medios de pago que aceptas.
+4. _ID_ de referencia de tu sistema.
 
 [[[
 ```php
@@ -63,7 +64,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
 ]]]
 
-Then, you must add the attributes of your payment preference:
+Luego, deberás agregar los atributos de tu preferencia de pago:
 
 [[[
 ```php
@@ -108,8 +109,8 @@ var preference = {}
 
 var item = {
   title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  quantity: 1,
-  currency_id: 'ARS',
+  quantity: [FAKER][NUMBER][BETWEEN][1,10],
+  currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
 }
 
@@ -145,13 +146,13 @@ preference.save
 ```
 ]]]
 
-### Content of the preference
+### Contenido de la preferencia
 
-The more information you send us, the faster is the payment approval and the better is the experience for your users.
+Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-#### Payer
+#### _Payer_
 
-You must submit your buyer’s email.
+Es requerido el envío del `email` de tu comprador.
 
 ```json
 {
@@ -179,17 +180,15 @@ You must submit your buyer’s email.
 }
 ```
 
-## Integrate MercadoPago’s payment flow in your application
+## Integra el flujo de pago de Mercado Pago en tu aplicación
 
+### 1. Conecta tu aplicación con tu servidor
 
-### 1. Connect your application to your server
+En el SDK te ofrecemos una clase llamada **CustomServer** para que la conexión con tu servidor sea más sencilla. El método `createPreference` hace un _POST_ y envía como cuerpo del mensaje un mapa que puedes definir para recibir información extra (`preferenceMap`). Indícanos tu URL base (https://your-base-url.com) y la URI (/your-create-preference-uri) donde esperas los datos para crear la preferencia.
 
-In the SDK, we offer you a class called CustomServer to make the connection to your server easier. The `createPreference` method makes a _POST_ and sends a map that you can configure to receive extra info (`preferenceMap`) as the message body. Send us your base URL (https://your-base-url.com) and the URI (/your-create-preference-uri) where you receive the data to create the preference.
+_CustomServer_ se encargará de transformar la respuesta de tu servicio (que debe tener la misma estructura que la de Mercado Pago) en un objeto **CheckoutPreference**, cuyo _ID_ es el punto de entrada a nuestro _checkout_.
 
-The _CustomServer_ will be responsible for converting your service response (which must have the same structure as that of MercadoPago) into a **CheckoutPreference** object, whose ID is the entry point to our checkout.
-
-Create the preference on your server from your application with the following code:
-
+Crea la preferencia en tu servidor desde tu aplicación con el siguiente código:
 
 [[[
 
@@ -219,7 +218,7 @@ public void failure(ApiException apiException) {
 }
 ```
 ```swift
-        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]]
+        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : 3]
 
         CustomServer.createCheckoutPreference(url: "https://your-base-url.com/", uri: "your-create-preference-uri", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
             startMercadoPagoCheckout(checkoutPreference)
@@ -245,17 +244,17 @@ public void failure(ApiException apiException) {
 
 ]]]
 
-### 2. Create a pay button
+### 2. Crea un botón de pago
 
-As an example, we propose that you initiate the MercadoPago’s flow from a button.
+A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botón.
 
 [[[
 
 ```android-xml
 ===
-1.  Create an Activity to insert the button (** MainActivity**, for example).  
-2. Add a text field to show the payment result.
-3. Paste the following sample code in **res/layout/activity_main.xml**.
+1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
+2. Agrega un campo de texto para mostrar el resultado del pago.
+3. Pega el siguiente código de ejemplo en **res/layout/activity_main.xml**.
 ===
 
 <FrameLayout xmlns:android='http://schemas.android.com/apk/res/android'
@@ -293,11 +292,11 @@ android:paddingTop='50dp'/>
 ```
 ```swift
 ===
-1. Create a ViewController to insert the button (**MainViewController**, for example).
-2. Insert a button on the corresponding **.xib**.
-3. Add a text field to show the payment result.
-4. Paste the following example code on your class **MainViewController.swift**.
-5. In the next step, you will be working on the event associated with the button click (startCheckout).
+1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
+2. Inserta un botón en el **.xib** correspondiente.
+3. Agrega un campo de texto para mostrar el resultado del pago.
+4. Pega el siguiente código de ejemplo en tu clase **MainViewController.swift**.
+5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
 ===
 
 import UIKit
@@ -318,11 +317,11 @@ for: .touchUpInside)
 ```   
 ```objective-c
 ===
-1. Create a ViewController to insert the button (**MainViewController**, for example).
-2. Insert a button on the corresponding .xib.
-3. Add a text field (in our case we call it paymentResult) to show the payment result.
-4. Paste the following example code on your class **MainViewController.c**.
-5. In the next step, you will be working on the event associated with the button click (startCheckout).
+1. Crea un ViewController para insertar el botón (**MainViewController**, por ejemplo).
+2.  Inserta un botón en el .xib correspondiente.
+3. Agrega un campo de texto (en nuestro caso lo llamamos paymentResult) para mostrar el resultado del pago.
+4. Pega el siguiente código de ejemplo en tu clase **MainViewController.c**.
+5. En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout).
 ===
 
 @import MercadoPagoSDK;
@@ -345,36 +344,36 @@ forControlEvents:UIControlEventTouchUpInside];
 
 ]]]
 
-### 3. Start the Checkout
+### 3. ¡Inicia el Checkout!
 
-After creating the payment preference and defining an event from which to start the payment flow, you can start our Checkout with the following code:
+Una vez creada la preferencia de pago y definido un evento a partir del cual comenzar el flujo de pago, estás en condiciones de iniciar nuestro Checkout con el siguiente código:
 
 [[[
 
 ```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-  new MercadoPagoCheckout.Builder()
-    .setActivity(activity)
-    .setPublicKey("ENV_PUBLIC_KEY").setCheckoutPreference(checkoutPreference)
-    .startForPayment();
+new MercadoPagoCheckout.Builder()
+.setActivity(activity)
+.setPublicKey("ENV_PUBLIC_KEY").setCheckoutPreference(checkoutPreference)
+.startForPayment();
 }
 ```
 ```swift
 ===
-The flow of our checkout is based on **NavigationController**. If your application is also based on NavigationControllers you can start the Checkout flow using the NavigationController of your application, or you can create one, start the Checkout on it, and then present it.
+El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
 
 public func startMercadoPagoCheckout(_ checkoutPreference CheckoutPreference) {
 
-let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
-navigationController: self.navigationController!)
+  let checkout = MercadoPagoCheckout(publicKey: "ENV_PUBLIC_KEY", accessToken: nil, checkoutPreference: checkoutPreference,
+  navigationController: self.navigationController!)
 
-checkout.start()
+  checkout.start()
 }
 ```
 ```objective-c
 ===
-The flow of our checkout is based on **NavigationController**. If your application is also based on NavigationControllers you can start the Checkout flow using the NavigationController of your application, or you can create one, start the Checkout on it, and then present it.
+El flujo de nuestro checkout esta basado en **NavigationController**. Si tu aplicación esta basada también en NavigationControllers podes iniciar el flujo de Checkout utilizando el NavigationController de tu aplicación, sino puedes crear uno, iniciar el Checkout sobre él y luego presentarlo.
 ===
 
 -(void)startMercadoPagoCheckout:(CheckoutPreference *)checkoutPreference {
@@ -386,27 +385,28 @@ The flow of our checkout is based on **NavigationController**. If your applicati
 ]]]
 
 
-### 4. Get the response
+### 4. Obtén la respuesta
 
-The SDK will always return a payment result.
+El SDK devolverá siempre un resultado del pago.
 
-In the event of a hard error, or if the user left the flow, it will return an object representing the error so you can understand what happened.
+Si hubo algún error insalvable o el usuario abandonó el flujo, devolverá un objeto que representa el error para que puedas entender qué pasó.
 
-These are the most important payment attributes:
+Estos son los atributos más importantes del pago:
 
-- id: Payment identifier.
-- status: Payment status.
-- payment\_method\_id: Identifier of the payment method selected by your user.
-- payment\_type\_id: Payment type selected.
-- card: Object that identifies your user’s card.
-- issuer_id: : Identifier of the card bank selected by your user.
-- installments: Number of installments selected.
+- id: Identificador del pago.
+- status: Estados del pago.
+- payment\_method\_id: Identificador del medio de pago que eligió tu usuario.
+- payment\_type\_id: Tipo de medio elegido.
+- card: Objeto que identifica la tarjeta de tu usuario.
+- issuer_id: Identificador del banco de la tarjeta que eligió tu usuario.
+- installments: Cantidad de cuotas elegidas.
 
-The posible payment status are:
+Los posibles estados de un pago son:
 
 ![payment-status](/images/payments-status-transitions-diagram.png)
 
-You can get the response with the following code:
+
+Podrás obtener la respuesta con el siguiente código:
 
 [[[
 
@@ -453,25 +453,25 @@ self.payment = payment
 
 ]]]
 
-### Color settings
+### Configura tu color
 
-You can change the colors of the graphical interface of the payment flow, as well as make the font darker, by using the DecorationPreference class. You can do this using the following code:
+Puedes cambiar los colores de la interfaz gráfica del flujo de pago, como así también hacer más oscura la fuente utilizando la clase _DecorationPreference_. Esto lo puedes lograr con el siguiente código:
 
 [[[
 
 ```android
 private void startMercadoPagoCheckout(CheckoutPreference checkoutPreference) {
-  DecorationPreference decorationPreference = new DecorationPreference.Builder()
-    .setBaseColor(ContextCompat.getColor(context, R.color.your_color))
-    .enableDarkFont() //Optional
-    .build();
+DecorationPreference decorationPreference = new DecorationPreference.Builder()
+.setBaseColor(ContextCompat.getColor(context, R.color.your_color))
+.enableDarkFont() //Optional
+.build();
 
-  new MercadoPagoCheckout.Builder()
-    .setActivity(activity)
-    .setDecorationPreference(decorationPreference)
-    .setPublicKey("ENV_PUBLIC_KEY")
-    .setCheckoutPreference(checkoutPreference)
-    .startForPayment();
+new MercadoPagoCheckout.Builder()
+.setActivity(activity)
+.setDecorationPreference(decorationPreference)
+.setPublicKey("ENV_PUBLIC_KEY")
+.setCheckoutPreference(checkoutPreference)
+.startForPayment();
 }
 ```
 ```swift
@@ -500,24 +500,22 @@ DecorationPreference *decorationPreference = [[DecorationPreference alloc] initW
 
 ]]]
 
-The SDK allows you to set the color in the hexadecimal format, i.e. **setBaseColor("#060d72");**.
+El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo **setBaseColor("#060d72");**.
 
-## Enable payment notifications
+## Activa las notificaciones de pagos
 
-Notifications are automatically sent to inform you of any new payments and status updates.
+Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
-This will allow you to manage your inventories and keep your system in sync.
+Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
 
-To learn more about it, go to [Notifications.](/guides/notifications/ipn.en.md)
+## Prueba la integración
 
-## Test the integration
+Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-You can test the integration before going into production, in order to check the operation and make all the adjustments you need.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](/guides/payments/mobile-checkout/testing.es.md) para más información.
 
-For that, you must use test users and cards.
+### Próximos pasos
 
-For more information, go to the [Test](/guides/payments/mobile-checkout/testing.en.md) section.
+- Visita la sección [Personalización](/guides/payments/mobile-checkout/v3/personalization.es.md) para adecuar el flujo de pago a tus necesidades.
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](/guides/payments/mobile-checkout/v3/testing.es.md).
 
-### Next steps
-
-- To adapt the payment flow to your needs, go to the [Customization](/guides/payments/mobile-checkout/personalization.en.md) section.

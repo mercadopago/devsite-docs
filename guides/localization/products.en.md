@@ -130,14 +130,3 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 | Payments    | Pay button    | N/A                           |
 | Payments    | Web Checkout  | N/A                           |
 | Marketplace | Web Checkout  | N/A                           |
-
-### Venezuela
-
-|   Product   |     Solution    |           Unavailable payment methods              |
-| :---------- | :-------------- | :------------------------------------------------- |
-| Payments    | Pay button      | N/A                                                |
-| Payments    | Web Checkout    | N/A                                                |
-| Payments    | Mobile Checkout | `account_money`,`banesco`,`mercantil`,`provincial` |
-| Payments    | API             | N/A                                                |
-| Marketplace | Web Checkout    | N/A                                                |
-| Marketplace | API             | N/A                                                |

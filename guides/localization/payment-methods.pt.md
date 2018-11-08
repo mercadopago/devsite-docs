@@ -181,13 +181,3 @@ Lider				| `credit_card`            | `lider`
 Abitab				| `ticket`                 | `abitab`
 Red Pagos			| `ticket`                 | `redpagos`
 Dinheiro em conta	       	| `account_money`          | `account_money`
-
-### Venezuela
-
-Meio de pagamento		| ID do Tipo de Pagamento| ID  
-:-------------------------	| :----------------------- |:--------------------
-Visa				| `credit_card`            | `visa`
-Mastercard			| `credit_card`            | `master`
-BBVA Provincial			| `ticket`                 | `provincial`
-Banco Mercantil			| `atm`                    | `mercantil`
-Dinheiro em conta	       	| `account_money`          | `account_money`

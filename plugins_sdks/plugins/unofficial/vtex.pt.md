@@ -122,7 +122,6 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 - México: Banamex, Bancomer, Oxxo.
 - Perú: PagoEfectivo.
 - Uruguay: Abitab, Redpagos.
-- Venezuela: Banesco, Mercantil, Provincial.
 - Brasil: Boleto Bancario
 
 1. No menu superior

@@ -98,7 +98,6 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * Colombia: https://www.mercadopago.com/mco/herramientas/aplicaciones
   * Mexico: https://www.mercadopago.com/mlm/herramientas/aplicaciones
   * Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
-  * Venezuela: https://www.mercadopago.com/mlv/herramientas/aplicaciones
   * Uruguay: https://www.mercadopago.com/mlu/herramientas/aplicaciones
 
 5. Checkout settings. <br/>
@@ -161,7 +160,6 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * Brazil: https://www.mercadopago.com/mlb/account/credentials
   * Colombia: https://www.mercadopago.com/mco/account/credentials
   * Mexico: https://www.mercadopago.com/mlm/account/credentials
-  * Venezuela: https://www.mercadopago.com/mlv/account/credentials
   * Uruguay: https://www.mercadopago.com/mlu/account/credentials
 
   7. Checkout settings. <br/>
@@ -211,7 +209,6 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * Brazil: https://www.mercadopago.com/mlb/account/credentials
   * Colombia: https://www.mercadopago.com/mco/account/credentials
   * Mexico: https://www.mercadopago.com/mlm/account/credentials
-  * Venezuela: https://www.mercadopago.com/mlv/account/credentials
   * Uruguay: https://www.mercadopago.com/mlu/account/credentials  
 
   7. IPN settings.
