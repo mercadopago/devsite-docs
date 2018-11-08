@@ -169,7 +169,7 @@ In order to incorporate into the _Checkout_ the options set up in the `AdvancedC
 [[[
 ```android
 ===
-As you can see in the example, it is possible to hide the Promotions button using the `disableBankDeals` method for single-installment payments.
+As you can see in the example, it is possible to hide the Promotions button using the **disableBankDeals** method for single-installment payments.
 ===
 final AdvancedConfiguration advancedConfiguration =
     new AdvancedConfiguration.Builder().setBankDealsEnabled(false).build();
@@ -180,7 +180,7 @@ new MercadoPagoCheckout
 ```
 ```swift
 ===
-As you can see in the example, it is possible to hide the Promotions button configuring `bankDealsEnabled = false` for single-installment payments.
+As you can see in the example, it is possible to hide the Promotions button configuring **bankDealsEnabled = false** for single-installment payments.
 ===
 let builder = MercadoPagoCheckoutBuilder.init(publicKey: "ENV_PUBLIC_KEY", preferenceId: checkoutPreferenceId)
 let config = PXAdvancedConfiguration()
@@ -191,7 +191,7 @@ checkout.start(navigationController: self.navigationController!)
 ```
 ```objective-c
 ===
-As you can see in the example, it is possible to hide the Promotions button configuring `bankDealsEnabled = NO` for single-installment payments.
+As you can see in the example, it is possible to hide the Promotions button configuring **bankDealsEnabled = NO** for single-installment payments.
 ===
 MercadoPagoCheckoutBuilder *builder = [[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"];
 
@@ -204,6 +204,7 @@ MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:bui
 
 [checkout startWithNavigationController:self.navigationController lifeCycleProtocol:nil];
 ```
+
 ]]]
 
 
@@ -212,12 +213,10 @@ MercadoPagoCheckout *checkout = [[MercadoPagoCheckout alloc] initWithBuilder:bui
 You can change the colors of the graphical interface of the payment flow by using the following code:
 
 [[[
-
 ```android
 ===
-In the `colors.xml` file you must reference the colors you want to change by setting your own colors.
+In the **colors.xml** file you must reference the colors you want to change by setting your own colors.
 ===
-
 <!-- Main color -->
 <color name="ui_components_android_color_primary">@color/your_color</color>
 

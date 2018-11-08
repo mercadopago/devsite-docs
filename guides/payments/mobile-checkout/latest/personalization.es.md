@@ -171,9 +171,10 @@ La Configuración Avanzada permite personalizar y configurar el flujo para que p
 Para incorporar en el _Checkout_ las opciones configuradas en la clase `AdvancedConfiguration` deberás agregar una instancia de la misma en el inicio del _Checkout_, como se muestra en el siguiente código:
 
 [[[
+
 ```android
 ===
-Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método disableBankDeals para aquellos casos en lo que solo solicites pagos en una cuota.
+Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el método **disableBankDeals** para aquellos casos en lo que solo solicites pagos en una cuota.
 ===
 final AdvancedConfiguration advancedConfiguration =
     new AdvancedConfiguration.Builder().setBankDealsEnabled(false).build();
@@ -184,7 +185,7 @@ new MercadoPagoCheckout
 ```
 ```swift
 ===
-Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" configurando `bankDealsEnabled = false` para aquellos casos en lo que solo solicites pagos en una cuota.
+Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" configurando **bankDealsEnabled = false** para aquellos casos en lo que solo solicites pagos en una cuota.
 ===
 let builder = MercadoPagoCheckoutBuilder.init(publicKey: "ENV_PUBLIC_KEY", preferenceId: checkoutPreferenceId)
 let config = PXAdvancedConfiguration()
@@ -195,7 +196,7 @@ checkout.start(navigationController: self.navigationController!)
 ```
 ```objective-c
 ===
-Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" configurando `bankDealsEnabled = NO` para aquellos casos en lo que solo solicites pagos en una cuota.
+Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" configurando **bankDealsEnabled = NO** para aquellos casos en lo que solo solicites pagos en una cuota.
 ===
 MercadoPagoCheckoutBuilder *builder = [[MercadoPagoCheckoutBuilder alloc] initWithPublicKey:@"ENV_PUBLIC_KEY" preferenceId:@"PREFERENCE_ID"];
 
@@ -219,12 +220,10 @@ Como se observa en el ejemplo, puedes ocultar el botón de "Promociones" con el 
 Puedes cambiar los colores de la interfaz gráfica del flujo de pago con el siguiente código:
 
 [[[
-
 ```android
 ===
-En tu archivo `colors.xml` deberás hacer referencia a los colores que quieras cambiar del checkout y setearlos con tus propios colores.
+En tu archivo **colors.xml** deberás hacer referencia a los colores que quieras cambiar del checkout y setearlos con tus propios colores.
 ===
-
 <!-- Color principal -->
 <color name="ui_components_android_color_primary">@color/your_color</color>
 
