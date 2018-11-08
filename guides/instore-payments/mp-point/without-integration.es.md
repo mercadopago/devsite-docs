@@ -1,3 +1,11 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mlm
+  - global
+---
+
 # Cobros con Point sin integración
 Desde la aplicación de Mercado Pago, tienes la opción de cobrar en tus tiendas físicas mediante el dispositivo Point.
 No necesitas saber de programación.

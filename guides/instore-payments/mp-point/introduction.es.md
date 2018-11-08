@@ -1,3 +1,11 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mlm
+  - global
+---
+
 # Cobros Presenciales con Point
 Puedes potenciar tus ventas en el mundo físico cobrando a través del dispositivo Mercado Pago Point.
 

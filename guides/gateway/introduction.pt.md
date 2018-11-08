@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mco
+  - global
+---
+
 # Modo Gateway
 
 No Mercado Pago é possível realizar transações utilizando seus próprios números de estabelecimento comercial. Este modo de processamento é denominado _Gateway_.
