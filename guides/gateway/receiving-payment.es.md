@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mco
+  - global
+---
+
 # Recibiendo un pago en modo gateway
 
 > WARNING		 

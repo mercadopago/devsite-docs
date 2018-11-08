@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mco
+  - global
+---
+
 # Gateway Mode
 
 Mercado Pago offers you the possibility of operating with your own merchant numbers. This processing mode is called Gateway.

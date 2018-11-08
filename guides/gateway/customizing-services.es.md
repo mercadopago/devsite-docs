@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mco
+  - global
+---
+
 # Modificando los servicios
 
 Cada número de comercio configurado en la plataforma (`merchant_account_id`) tendrá asociado sus correspondientes servicios (`merchant_services`).
