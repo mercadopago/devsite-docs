@@ -520,4 +520,5 @@ Para mais informações, consulte a seção de [Testes](/guides/payments/mobile-
 
 ### Próximos passos
 
-- Visite a seção [Personalização](/guides/payments/mobile-checkout/personalization.pt.md) para adequar o fluxo de pagamento às suas necessidades.
+- Visite a seção [Personalização](/guides/payments/mobile-checkout/v3/personalization.pt.md) para adequar o fluxo de pagamento às suas necessidades.
+- Para informações sobre como testar, vá para a seção [testando a integração](/guides/payments/mobile-checkout/v3/testing.pt.md).
