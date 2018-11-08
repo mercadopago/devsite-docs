@@ -1,3 +1,11 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mlm
+  - global
+---
+
 # Cobranças presenciais com Point
 Você pode aumentar suas vendas no mundo físico cobrando com o dispositivo Mercado Pago Point.
 
