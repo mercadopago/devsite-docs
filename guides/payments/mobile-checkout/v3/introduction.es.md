@@ -65,3 +65,5 @@ platform :ios, '8.0'
 pod 'MercadoPagoSDK', '3.7.2'
 ```
 ]]]
+
+En [este artículo](/guides/payments/mobile-checkout/v3/receive-payments.es.md) verás el detalle de cómo hacer un pago.

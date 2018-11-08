@@ -308,3 +308,5 @@ checkout.start()
 	}
 ```
 ]]]
+
+- Para informações sobre como testar, vá para a seção [testando a integração](/guides/payments/mobile-checkout/v3/testing.pt.md).

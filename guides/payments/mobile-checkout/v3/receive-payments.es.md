@@ -516,4 +516,6 @@ Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando]
 
 ### Próximos pasos
 
-- Visita la sección [Personalización](/guides/payments/mobile-checkout/personalization.es.md) para adecuar el flujo de pago a tus necesidades.
+- Visita la sección [Personalización](/guides/payments/mobile-checkout/v3/personalization.es.md) para adecuar el flujo de pago a tus necesidades.
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](/guides/payments/mobile-checkout/v3/testing.es.md).
+
