@@ -51,7 +51,7 @@ No arquivo **build.gradle** insira o código a seguir.
 Opcionalmente, você pode [baixar o SDK](https://github.com/mercadopago/px-android/releases) e adicioná-lo ao seu projeto.
 ===
 dependencies {
-   implementation 'com.mercadopago.android:px:checkout:4.0.+'
+   implementation 'com.mercadopago.android:px:checkout:4.+'
 }
 ```
 ```ios
@@ -72,5 +72,5 @@ pod 'MercadoPagoSDK', '~> 4.0'
 > Se você tiver a versão 3.x do Mobile Checkout integrada, pode visitar a [documentação de integração da versão 3] (/guides/payments/mobile-checkout/v3/introduction.pt.md).
 > Lembre-se de que o suporte ativo é fornecido apenas para a versão principal mais recente e suporte passivo para o anterior, por isso recomendamos uma migração para a nova versão.
 
-Pode-se encontrar a referência dos métodos nos seguintes links: [Documentação 
+Pode-se encontrar a referência dos métodos nos seguintes links: [Documentação
  Android](http://mercadopago.github.io/px-android/) - [Documentação iOS](http://mercadopago.github.io/px-ios/v4/)
