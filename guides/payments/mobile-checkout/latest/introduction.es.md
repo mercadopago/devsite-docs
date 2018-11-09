@@ -51,7 +51,7 @@ En el archivo **build.gradle** añade el siguiente código.
 Sino puedes [descargar el SDK](https://github.com/mercadopago/px-android/releases) y añadirlo a tu proyecto.
 ===
 dependencies {
-   implementation 'com.mercadopago.android:px:checkout:4.0.+'
+   implementation 'com.mercadopago.android:px:checkout:4.+'
 }
 ```
 ```ios
@@ -63,7 +63,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 # Se necesita este parámetro por ser una SDK en swift
 use_frameworks!
 platform :ios, '8.0'
-pod 'MercadoPagoSDK', '~> 4.0'
+pod 'MercadoPagoSDK'
 ```
 ]]]
 
