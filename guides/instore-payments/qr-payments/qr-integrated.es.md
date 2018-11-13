@@ -23,13 +23,28 @@ Genera el código QR asociado al punto de venta e integra la creación de la ord
 
 ### Generación del código QR
 
-Configura la URL para cada caja, reemplazando collector_id y pos_id según la cuenta y el punto de venta que corresponda:
+Configura la URL para cada caja, reemplazando collector_id, pos_id y access token según la cuenta y el punto de venta que corresponda:
+
+https://api.mercadopago.com/mpmobile/instore/merchant/qr/${collector_id}/${pos_id}?access_token=ACCESS_TOKEN
+
+Donde te devolverá como respuesta una serie de opciones para que puedas imprimir el código QR:
+
+```json
+
+{
+ "qr": "https://www.mercadopago.com/instore/merchant/qr/$collector_id/13/5...d9.png", // QR Simple
+ "qr_template": {
+   "document": "https://www.mercadopago.com/instore/merchant/qr/$collector_id/13/template_5...d9.pdf", // PDF con QR y logo de Mercado Libre
+   "image": "https://www.mercadopago.com/instore/merchant/qr/$collector_id/13/template_5...d9.png" // Imagen con QR logo de Mercado Libre
+ },
+ "pos_id": "13" // Identificador del punto de venta.
+}
+
+```
+
+Si deseas generar tu QR de forma manual puedes utilizar cualquier generador online para convertir la siguiente URL en un código QR reemplazando collector_id, pos_id según la cuenta y el punto de venta que corresponda
 
 https://mercadopago.com/s/qr/${collector_id}/${pos_id}
-
-Con la url obtenida, genera el código QR asociado a ella e imprímelo para que tus clientes puedan escanearlo desde la aplicación de Mercado Pago y pagar.
-
-> Puedes crear códigos QR desde cualquier generador online
 
 ### Creación de la orden de venta
 
