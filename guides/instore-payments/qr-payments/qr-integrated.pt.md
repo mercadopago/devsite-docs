@@ -23,13 +23,28 @@ Gera o QR code associado ao ponto de venda e integra a criação do pedido pende
 
 ### Geração do QR code
 
-Configure a URL para cada caixa, substituindo o collector_id e pos_id de acordo com a conta e o ponto de venda correspondente:
+Configure a URL para cada caixa, substituindo o collector_id, pos_id e o access token de acordo com a sua conta e o ponto de venda correspondente:
+
+https://api.mercadopago.com/mpmobile/instore/merchant/qr/${collector_id}/${pos_id}?access_token=ACCESS_TOKEN
+
+Como resultado a API irá retornar uma lista de opções para impressão do código QR:
+
+```json
+
+{
+ "qr": "https://www.mercadopago.com/instore/merchant/qr/$collector_id/13/5...d9.png", // QR Simples
+ "qr_template": {
+   "document": "https://www.mercadopago.com/instore/merchant/qr/$collector_id/13/template_5...d9.pdf", // PDF com QR e o logo do Mercado Livre
+   "image": "https://www.mercadopago.com/instore/merchant/qr/$collector_id/13/template_5...d9.png" // Imagen com QR e o logo do Mercado Livre
+ },
+ "pos_id": "13" // Identificador do ponto de venda.
+}
+
+```
+
+Caso tenha interesse em gerar o seu QR de forma manual, pode utilizar qualquer gerador online que converta a URL en un código QR substituindo o collector_id, pos_id de acordo com a sua conta e o ponto de venda correspondente.
 
 https://mercadopago.com/s/qr/${collector_id}/${pos_id}
-
-Com a URL obtida, gere o QR code associado a ela e imprima-o para que seus clientes possam escanea-lo pela aplicação do Mercado Pago e pagar.
-
-> Pode criar o QR code a partir de qualquer gerador online
 
 ### Criação do pedido de venda
 
