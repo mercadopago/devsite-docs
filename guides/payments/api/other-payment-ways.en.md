@@ -187,11 +187,11 @@ In the `external_resource_url` there is a URL which contains the instructions fo
 
 You can only cancel payments whose status `pending` or `in_process`.
 
-The payment methods available for payments in cash should be paid from 3 to 5 days depending on each one.
+The payment methods available for payments in cash should be paid from 3 to 5 days depending on each one. You can view the [complete list of expiration periods](https://www.mercadopago.com.ar/activities).
 
-They do not expire automatically, so you’re required to [cancel the payment](/guides/manage-account/cancellations-and-refunds.es.md) after expiration.
+To cancel a payment please follow the [cancellations and returns of payments](/guides/manage-account/cancellations-and-refunds.en.md) guide.
 
-You can view the [complete list of expiration periods](https://www.mercadopago.com.ar/activities).
+The expiration of a payment occurs after 30 days and the cancellation is automatic, is this case the final status of the payment is cancelled/expired.
 
 ## Payment confirmation period
 

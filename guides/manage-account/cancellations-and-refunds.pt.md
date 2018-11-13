@@ -10,7 +10,7 @@ Existem diferentes situações que podem dar origem ao cancelamento de uma venda
 
 - Os cancelamentos podem ser realizados somente com status pending e in process
 - É importante para meios de pagamento offline
-- Os meios de pagamento offline **não expiram sozinhos**, devem ser cancelados.
+- A expiração de um pagamento ocorre após 30 dias e o cancelamento é automático, o status final deles será cancelled/expired.
 
 Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`. Assim que forem cancelados, não poderão mais ser aprovados e o estoque pendente de confirmação poderá ser liberado.
 

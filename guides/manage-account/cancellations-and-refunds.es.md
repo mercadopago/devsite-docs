@@ -10,7 +10,7 @@ Existen diferentes situaciones en las que puedes querer anular una venta:
 
 - Las cancelaciones se pueden hacer solo con _pending_ e _in process_.
 - Es importante para medios _off_.
-- Los medios _off_ **no se vencen solos**, tenes que cancelarlos.
+- La expiración de un pago se produce a los 30 días y la cancelación es automática, el status final del  mismo será cancelled/expired. 
 
 Sólo puedes cancelar pagos que estén en estado `pending` o `in_process`. Cuando los canceles, ya no se aprobarán y podrás liberar el _stock_ que tengas pendiente de confirmación.
 
