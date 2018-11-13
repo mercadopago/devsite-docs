@@ -11,7 +11,7 @@ There are different situations in which you may want to cancel a sale:
 
 - Cancellations can be made only with pending and in process transactions
 - It is important for offline payment methods
-- Offline payment methods **do not expire independently, you have to cancel them.**
+- The expiration of a payment occurs after 30 days and the cancellation is automatic, is this case the final status of the payment is cancelled/expired
 
 Only` pending` or `in_process` payments can be cancelled. As soon as you cancel them, they will no longer be approved and you will be able to release the stock pending confirmation.
 

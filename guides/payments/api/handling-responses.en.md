@@ -10,7 +10,7 @@ Provide clear and accurate information to your customers in the event of possibl
 | :--------- | :----------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | approved   | `accredited`                         |Done, your payment was approved! You will see the amount charged in your bill as statement_descriptor.                                      |
 | in_process | `pending_contingency`                | We are processing the payment. <br/><br/>
-In less than an hour we will e-mail you the results.                                 |
+In less than 2 business days we will e-mail you the results.                                 |
 | in_process | `pending_review_manual`              | We are processing the payment. <br/><br/>
 In less than 2 business days we will tell you by e-mail whether it was approved or if we need more information. |
 | rejected   | `cc_rejected_bad_filled_card_number`   | Check the card number.
@@ -38,6 +38,12 @@ Choose another payment method. We recommend cash.                               
                                                                         |
 | rejected   | `cc_rejected_max_attempts`             | You have reached the limit of allowed attempts. <br/><br/> Choose another card or another payment method.                                            |
 | rejected   | `cc_rejected_other_reason`             | `payment_method_id` did not process the payment.                    |
+
+> NOTE
+>
+> Note
+>
+> The expiration of a payment in `pending` or `in_process` state occurs after 30 days and the cancellation is automatic, is this case the final status of the payment is `cancelled/expired`.
 
 
 ### Errors in data entry: HTTP Status 400 Bad Request

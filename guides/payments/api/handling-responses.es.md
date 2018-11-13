@@ -9,7 +9,7 @@ Ofrece a tus clientes información clara y precisa ante posible errores en el in
 |   status   |            status_detail             |                                                        Comunicación sugerida                                                        |
 | :--------- | :----------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | approved   | `accredited`                         | Listo, se acreditó tu pago! En tu resumen verás el cargo de amount como statement_descriptor.                                       |
-| in_process | `pending_contingency`                | Estamos procesando el pago. <br/><br/> En menos de una hora te enviaremos por e-mail el resultado.                                       |
+| in_process | `pending_contingency`                | Estamos procesando el pago. <br/><br/> En menos de 2 días hábiles te enviaremos por e-mail el resultado.                                       |
 | in_process | `pending_review_manual`              | Estamos procesando el pago. <br/><br/> En menos de 2 días hábiles te diremos por e-mail si se acreditó o si necesitamos más información. |
 | rejected   | `cc_rejected_bad_filled_card_number`   | Revisa el número de tarjeta.                                                                                                        |
 | rejected   | `cc_rejected_bad_filled_date`          | Revisa la fecha de vencimiento.                                                                                                     |
@@ -25,6 +25,12 @@ Ofrece a tus clientes información clara y precisa ante posible errores en el in
 | rejected   | `cc_rejected_invalid_installments`     | `payment_method_id` no procesa pagos en installments cuotas.                                                                        |
 | rejected   | `cc_rejected_max_attempts`             | Llegaste al límite de intentos permitidos. <br/><br/>Elige otra tarjeta u otro medio de pago.                                            |
 | rejected   | `cc_rejected_other_reason`             | `payment_method_id` no procesó el pago.                                                                                             |
+
+> NOTE
+>
+> Nota
+>
+> La expiración de un pago en estado `pending` o `in_process` se produce a los 30 días y la cancelación es automática, el status final del  mismo será `cancelled/expired.
 
 
 ### Errores de ingreso de datos: HTTP Status 400 Bad Request

@@ -247,12 +247,11 @@ O campo `external_resource_url` possui uma URL que contém as instruções para 
 
 Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`.
 
-As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.
+As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso. Veja a [lista completa de vencimentos](https://www.mercadopago.com.br/activities).
 
-O vencimento não é automático, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.pt.md) logo após o vencimento.
+Se você quiser cancelar um pagamento, pode fazê-lo seguindo o guia [cancelamentos e devoluções de pagamentos](/guides/manage-account/cancellations-and-refunds.pt.md).
 
-Veja a [lista completa de vencimentos](https://www.mercadopago.com.br/activities).
-
+A expiração de um pagamento ocorre após 30 dias e o cancelamento é automático, o status final deles será cancelled/expired. 
 
 ## Prazo de aprovação dos pagamentos
 

@@ -9,7 +9,7 @@ Ofereça aos seus clientes informações claras e precisas diante de possíveis 
 |   status   |            status_detail               |                                                        Mensagem sugerida                                                            |
 | :--------- | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | approved   | `accredited`                           | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como `statement_descriptor`                            |
-| in_process | `pending_contingency`                  | Estamos processando o pagamento. Enviaremos o resultado por e-mail em até uma hora.                                                 |
+| in_process | `pending_contingency`                  | Estamos processando o pagamento. Em até 2 dias úteis informaremos por e-mail o resultado.                                                 |
 | in_process | `pending_review_manual`                | Estamos processando o pagamento. Em até 2 dias úteis informaremos por e-mail se foi aprovado ou se precisamos de mais informações.  |
 | rejected   | `cc_rejected_bad_filled_card_number`   | Confira o número do cartão.                                                                                                         |
 | rejected   | `cc_rejected_bad_filled_date`          | Confira a data de validade.                                                                                                         |
@@ -26,6 +26,11 @@ Ofereça aos seus clientes informações claras e precisas diante de possíveis 
 | rejected   | `cc_rejected_max_attempts`             | Você atingiu o limite de tentativas permitido. Escolha outro cartão ou outra forma de pagamento.                                    |
 | rejected   | `cc_rejected_other_reason`             | O `payment_method_id` não processou seu pagamento.                                                                                  |
 
+> NOTE
+>
+> Nota
+>
+> A expiração de um pagamento no estado `pending` ou `in_process` ocorre após 30 dias e o cancelamento é automático, o status final deles será `cancelled/expired`. 
 
 ### Erro de inserção de dados: HTTP Status 400 Bad Request
 
