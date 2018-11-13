@@ -519,4 +519,5 @@ For more information, go to the [Test](/guides/payments/mobile-checkout/testing.
 
 ### Next steps
 
-- To adapt the payment flow to your needs, go to the [Customization](/guides/payments/mobile-checkout/personalization.en.md) section.
+- To adapt the payment flow to your needs, go to the [Customization](/guides/payments/mobile-checkout/v3/personalization.en.md) section.
+- For information on how to test, go to the [testing integration](/guides/payments/mobile-checkout/v3/testing.en.pt) section.

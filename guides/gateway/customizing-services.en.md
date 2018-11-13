@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mco
+  - global
+---
+
 # Modify the services
 
 Each merchant number configured on the platform (`merchant_account_id`) will be associated with its services (`merchant_services`).

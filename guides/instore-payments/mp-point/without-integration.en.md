@@ -1,3 +1,11 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mlm
+  - global
+---
+
 # Receiving payments with Point without integration
 
 From the Mercado Pago application, you have the option to charge in your physical stores through the Point device.

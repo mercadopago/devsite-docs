@@ -1,3 +1,11 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mlm
+  - global
+---
+
 # Face to Face Sales with Point
 You can boost your sales in the physical world by charging through the Mercado Pago Point device.
 

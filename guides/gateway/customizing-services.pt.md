@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mco
+  - global
+---
+
 # Altere os serviços
 
 Cada número de estabelecimento comercial configurado na plataforma (`merchant_account_id`) será associado aos seus serviços correspondentes (`merchant_services`).

@@ -25,14 +25,14 @@ To cancel, make the following request by submitting the `status` `cancelled`:
 ```php
 <?php
 
-  $payment = MercadoPago\Preapproval::load($payment_id);
+  $payment = MercadoPago\Payment::find_by_id($payment_id);
   $payment->status = "cancelled";
   $payment->update();
 
 ?>
 ```
 ```java
-Payment payment = Payment.load(paymentId);
+Payment payment = Payment.findById(paymentId);
 payment.setStatus("cancelled");
 payment.update();
 
@@ -46,7 +46,7 @@ mercadopago.payment.update({
 
 ```
 ```ruby
-preapproval = MercadoPago::Preapproval.load(paymentId)
+preapproval = MercadoPago::Payment.find_by_id(paymentId)
 preapproval.status = "cancelled"
 preapproval.update()
 ```
@@ -75,11 +75,10 @@ To issue a full refund, make the following request indicating the `payment_id`:
 
 ```php
 <?php
-require ('mercadopago.php');
 
-$mp = new MP('SECRET_ACCESS_TOKEN');
+$payment = MercadoPago\Payment::find_by_id($payment_id);
+$payment->refund();
 
-$refund = $mp->post("/v1/payments/". $PAYMENT_ID."/refunds");
 ?>
 ```
 ```curl
@@ -122,12 +121,12 @@ You must indicate the amount to be refunded.
 
 ```php
 <?php
-  $payment = MercadoPago\Payment::load(paymentId);
+  $payment = MercadoPago\Payment::find_by_id(paymentId);
   $payment->refund(10.5);
 ?>
 ```
 ```java
-Payment payment = Payment.load(paymentId);
+Payment payment = Payment.findById(paymentId);
 payment.refund(10.5);
 ```
 ```node
@@ -136,7 +135,7 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 });
 ```
 ```ruby
-payment = MercadoPago::Payment.load(paymnentId)
+payment = MercadoPago::Payment.find_by_id(paymnentId)
 payment.refund(10.5);
 ```
 ```curl
@@ -155,13 +154,13 @@ You can view the refunds issued for a specific payment with the following reques
 [[[
 ```php
 <?php
-  $payment = MercadoPago\Payment::load($payment_id);
-  $refunds = $payment->refunds();
+  $payment = MercadoPago\Payment::find_by_id($payment_id);
+  $refunds = $payment->refund();
 ?>
 ```
 ```java
-Payment payment = Payment.load(paymentId);
-ArrayList<Refund> refunds = payment.refunds();
+Payment payment = Payment.findById(paymentId);
+ArrayList<Refund> refunds = payment.refund();
 ```
 ```node
 mercadopago.payment.refund(paymentId).then(function(data) {}
@@ -169,8 +168,8 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 });
 ```
 ```ruby
-payment = MercadoPago::Payment.load(payment_id)
-refunds = payment.refunds()
+payment = MercadoPago::Payment.find_by_id(payment_id)
+refunds = payment.refund()
 ```
 ]]]
 

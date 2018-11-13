@@ -14,16 +14,16 @@ sites_supported:
 Mercado Pago SDK makes it easy to create a payment experience in your application. You will instantly offer your users:
 
 ----[mla, mpe, mlb, mlm, global]----
-    - Card payments, payments in cash or bank transfer.
- 	- **Financing**: payments in installments with the best possible financing fee.
- 	- Discounts and promotions.
- 	- Communication of payment results.
+- Card payments, payments in cash or bank transfer.
+- **Financing**: payments in installments with the best possible financing fee.
+- Discounts and promotions.
+- Communication of payment results.
 ------------
 ----[mlc, mlv, mco]----
-	- Card payments.
- 	- **Financing**: payments in installments with the best possible financing fee.
- 	- Discounts and promotions.
- 	- Communication of payment results.
+- Card payments.
+- **Financing**: payments in installments with the best possible financing fee.
+- Discounts and promotions.
+- Communication of payment results.
 ------------
 
 All our payments are assessed by our fraud prevention tool to minimize the risks in your transactions.
@@ -63,13 +63,13 @@ source 'https://github.com/CocoaPods/Specs.git'
 # This parameter is needed because this is a Swift library
 use_frameworks!
 platform :ios, '8.0'
-pod 'MercadoPagoSDK', '~> 4.0'
+pod 'MercadoPagoSDK'
 ```
 ]]]
 
 > Note
 >
-> If you have version 3.x of the Mobile Checkout integrated you can visit the [integration docs of version 3](/guides/payments/mobile-checkout/v3/introduction.es.md).
+> If you have version 3.x of the Mobile Checkout integrated you can visit the [integration docs of version 3](/guides/payments/mobile-checkout/v3/introduction.en.md).
 > Remember that active support is only provided to the latest major version and passive support to the previous one, so we recommend a migration to the new version.
 
 You can find the reference to the interface in the following links: [Android docs](http://mercadopago.github.io/px-android/) - [iOS docs](http://mercadopago.github.io/px-ios/v4/)
