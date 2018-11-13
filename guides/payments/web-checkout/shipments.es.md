@@ -203,8 +203,7 @@ Un ejemplo de Checkout con Mercado Envíos queda de la siguiente manera:
 
 
   $preference->items = array($item);
-  $preference->payer = $payer;
-  $preference->save();
+  $preference->payer = $payer; 
   $preference->shipments = $shipments;
 
   $preference->save();
