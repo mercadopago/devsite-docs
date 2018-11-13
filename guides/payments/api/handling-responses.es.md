@@ -30,7 +30,7 @@ Ofrece a tus clientes información clara y precisa ante posible errores en el in
 >
 > Nota
 >
-> La expiración de un pago en estado `pending` o `in_process` se produce a los 30 días y la cancelación es automática, el status final del  mismo será `cancelled/expired.
+> La expiración de un pago en estado `pending` o `in_process` se produce a los 30 días y la cancelación es automática, el status final del  mismo será `cancelled/expired`.
 
 
 ### Errores de ingreso de datos: HTTP Status 400 Bad Request
