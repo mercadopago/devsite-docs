@@ -1,31 +1,29 @@
-
-
-# Clientes y tarjetas almacenadas
+# Customers and stored cards
 
 > WARNING
 >
-> Pre-requisitos
+> Pre-requisites
 >
-> * Tener implementada la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#capturar-datos-de-tarjeta).
+> * Have the [card data capture](/guides/payments/web-tokenize-checkout/receiving-payment-by-card.en.md)implemented.
 
-Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **manera segura** para mejorar la experiencia de compra.
+Customers and cards are the way to store card data of your customers **safely** to improve the shopping experience.
 
-Esto permitiría que tus clientes finalicen sus compras mucho más rápido y de forma más sencilla, ya que no deberán completar nuevamente sus datos de tarjeta.
+This will allow your customers to complete their purchases much faster and easily, since they will not have to complete their card data again.
 
-Los *customers* representan a tus clientes. Las tarjetas que almacenes serán para este cliente específico.
+The *customers* represent your customers. The cards that you store will be valid for this specific customer.
 
-## Creación de un customer y una card
+## Creation of a customer and a card
 
-Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
+To create a `Customer` and a `Card` at the same time it is necessary to send at least the `email` and `token` fields.
 
-El `token` es el que capturas cuando haces el [manejo de la respuesta](/guides/payments/web-tokenize-checkout/handling-responses.es.md) del *Web Tokenize Checkout*.
+The `token` is the one you capture when you [handle the answer](/guides/payments/web-tokenize-checkout/receiving-payment-by-card.en.md) of the *Web Tokenize Checkout*.
 
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Recomendamos almacenar los datos de tarjeta luego de que hayas realizado un pago de forma exitosa, para asegurarte de que los mismos sean correctos.
+> We recommend storing the card data after you have made a payment successfully, to make sure they are correct.
 
 
 
@@ -106,7 +104,7 @@ card.save
 ```
 ]]]
 
-Respuesta del Servidor:
+Server response:
 
 ```json
 {
@@ -128,9 +126,11 @@ Respuesta del Servidor:
 }
 ```
 
-## Recibir un pago de un Customer
+## Receive a payment from a Customer
 
-Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código HTML el ID del customer y los IDs de las tarjetas del usuario a través de los atributos `data-customer-id` y `data-card-ids`. Por ejemplo:
+In order to receive a payment from a stored card, it is necessary to include in the HTML code the customer ID and the IDs of the user cards through the attributes `data-customer-id` and `data-card-ids` . 
+
+For example:
 
 ```html
 <form action="/procesar-pago" method="POST">
@@ -146,15 +146,15 @@ Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario 
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Los IDs de tarjetas deberán separarse por coma.
+> Card IDs should be separated by commas.
 
-### 1. Obtener los IDs de las tarjetas almacenadas
+### 1. Get the IDs of the stored cards
 
-Puedes listar las tarjetas almacenadas en el *Web Tokenize Checkout* para que tu cliente elija con cuál quiere pagar.
+You can list the stored cards in the *Web Tokenize Checkout* so your customer can choose which one he wants to pay with.
 
-Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
+You can get the complete list of `Cards` from a customer by doing a `HTTP GET` request:
 
 [[[
 ```php
@@ -192,7 +192,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ]]]
 
-Datos de una tarjeta guardada:
+Stored card information:
 
 ```json
 [{
@@ -205,11 +205,11 @@ Datos de una tarjeta guardada:
 }]
 ```
 
-### 2. Usar los IDs de las tarjetas en el checkout
+### 2. Use the card ids in the checkout
 
-Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*.
+With this card information you can invoke the *Web Tokenize Checkout*.
 
-Por ejemplo:
+For example:
 
 ```html
 <form action="/procesar-pago" method="POST">
@@ -228,9 +228,9 @@ Por ejemplo:
 ```
 
 
-## Agregar nuevas tarjetas a un Customer
+## Adding new cards to a customer
 
-Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `token` y hacer un request `HTTP POST` al `Customer`.
+It is possible to add new cards to your `Customer`. For this you must create a `token` and make a `HTTP POST` request to `Customer`.
 
 
 [[[
@@ -314,7 +314,7 @@ puts card
 ]]]
 
 
-Respuesta:
+Response:
 
 ```json
 {
@@ -353,9 +353,9 @@ Respuesta:
 }
 ```
 
-## Buscar un _Customer_
+## Search a _Customer_
 
-En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
+In case you do not know what the `id` of your `Customer` is, you can use the `Customer Search` API by doing a `HTTP GET` request. The required parameter for this is `email`:
 
 [[[
 ```php
@@ -400,7 +400,7 @@ En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar
 ```
 ]]]
 
-Respuesta:
+Response:
 
 ```json
 {
@@ -448,9 +448,9 @@ Respuesta:
 }
 ```
 
-## Obtener las _Cards_ de un _Customer_
+## Get the _Cards_ of a _Customer_
 
-Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
+You can get the complete list of `Cards` of a client by making a `HTTP GET` request:
 
 [[[
 ```php
@@ -488,7 +488,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ]]]
 
-Respuesta:
+Response:
 
 ```json
 [{
