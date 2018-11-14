@@ -1,28 +1,28 @@
 
 
-# Web Tokenize Checkout - Personalización
+# Web Tokenize Checkout - Customization
 
-## Botón
+## Button
 
-### Estado por defecto
+### Default state
 
 ![Payment button](/images/paybutton.png)
 
-### Personalización
+### Customization
 
-#### Texto
+#### Text
 
-Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del botón agregando el atributo `data-button-label` al fragmento de código HTML. Por ejemplo:
+By default the button contains the text *"Pay"*. You can modify the text of the button by adding the `data-button-label` attribute to the fragment of HTML code. For example:
 
 ```html
-data-button-label="Comprar"
+data-button-label="Pay"
 ```
 
 ![Payment button - Modified label](/images/paybutton-modified-label.png)
 
-#### Estilo
+#### Style
 
-Para utilizar tu propio estilo, incluye el siguiente código CSS:
+To use your own style, include the following CSS code:
 
 ```css
 button.mercadopago-button {
@@ -30,7 +30,7 @@ button.mercadopago-button {
 }
 ```
 
-*Por ejemplo:*
+*For example:*
 
 ```css
 button.mercadopago-button {
@@ -44,26 +44,26 @@ button.mercadopago-button {
 ![Payment button - Modified CSS](/images/paybutton-modified-css.png)
 
 
-## Colores en la interfaz
+## Colors in the interface
 
-### Elementos
+### Elements
 
-#### Estado por defecto
+#### Default state
 
 ![Standard elements](/images/cow-ui-elements.png)
 
-#### Personalización
+#### Customization
 
-Los elementos que pueden personalizarse son:
+The elements that can be customized are:
 
-- Botones
-- Campos de ingreso de datos: inputs
-- Elementos de transiciones: spinners y barras de progreso
-- Bordes
+- Buttons
+- Data entry fields: inputs
+- Elements of transitions: spinners and progress bars
+- Edges
 
-Puedes modificar el color de esos elementos agregando el atributo `data-elements-color` al fragmento de código HTML.
+You can modify the color of those elements by adding the attribute `data-elements-color` to the fragment of HTML code.
 
-El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+The value of the attribute must be in hexadecimal format. For example:
 
 ```html
 data-elements-color="#c0392b"
@@ -72,17 +72,17 @@ data-elements-color="#c0392b"
 ![Custom elements](/images/cow-ui-elements--custom.png)
 
 
-### Encabezado
+### Header
 
-#### Estado por defecto
+#### Default state
 
 ![Standard header](/images/cow-ui-header.png)
 
-#### Personalización
+#### Customization
 
-Puedes modificar el color del encabezado agregando el atributo `data-header-color` al fragmento de código HTML.
+You can modify the header color by adding the attribute `data-header-color` to the fragment of HTML code.
 
-El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+The value of the attribute must be in hexadecimal format. For example:
 
 ```html
 data-header-color="#c0392b"
@@ -91,76 +91,75 @@ data-header-color="#c0392b"
 ![Custom header](/images/cow-ui-header--custom.png)
 
 
-### Color de texto
+### Text color
 
-El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
+The color of the text of the buttons and header, **will be automatically determined** depending on the [contrast](https://24ways.org/2010/calculating-color-contrast) of the defined color.
 
-Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
+For a *light* element color, the text color will be *black* or `# 000`. For example:
 
 ```html
-data-elements-color="#81ecec" <!-- Color claro -->
+data-elements-color="#81ecec" <!-- Light color -->
 ```
 
 ![Font color in light element](/images/cow-ui-fontcolor__light.png)
 
-Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
+For a *dark* element color, the text color will be *white* or `# fff`. For example:
 
 ```html
-data-elements-color="#8e44ad" <!-- Color oscuro -->
+data-elements-color="#8e44ad" <!-- Dark color -->
 ```
 
 ![Font color in dark element](/images/cow-ui-fontcolor__dark.png)
 
-## Detalle de la compra
+## Purchase detail
 
-### Estado por defecto
+### Default state
 
 ![Summary Default](/images/cow-summary.png)
 
 
-### Personalización
+### Customization
 
-Los atributos que pueden agregarse y modificarse son los siguientes.
+The attributes that can be added and modified are the following.
 
-**Montos numéricos:**
+**Numerical amounts:**
 
-- Productos: `data-summary-product`
-- Descuento: `data-summary-discount`
-- Envío: `data-summary-shipping`
-- Recargos: `data-summary-charges`
-- Impuestos: `data-summary-taxes`
-- Saldo pendiente: `data-summary-arrears`
+- Products: `data-summary-product`
+- Discount: `data-summary-discount`
+- Shipping: `data-summary-shipping`
+- Surcharges: `data-summary-charges`
+- Taxes: `data-summary-taxes`
+- Outstanding balance: `data-summary-arrears`
 
-**Textos:**
+**Texts:**
 
-- Para modificar el título "Productos": `data-summary-product-label`
-- Para modificar el título "Descuento": `data-summary-discount-label`
+- To modify the title "Products": `data-summary-product-label`
+- To modify the title "Discount": `data-summary-discount-label`
 
+#### Products
 
-#### Productos
-
-Usando el atributo `data-summary-product-label`, puedes especificar el texto que aparece como *"Productos"* en el detalle de la compra. Por ejemplo, puedes agregar el detalle de lo que se está pagando:
+Using the attribute `data-summary-product-label`, you can specify the text that appears as *"Products"* in the detail of the purchase. For example, you can add the detail of what is being paid:
 
 ```html
-data-summary-product-label="4 productos"
+data-summary-product-label="4 products"
 ```
 
-Mediante el atributo `data-summary-product`, puedes especificar el monto en el detalle de la compra. Por ejemplo:
+Using the attribute `data-summary-product`, you can specify the amount in the detail of the purchase. For example:
 
 ```html
 data-summary-product="654"
 ```
 
 
-#### Descuento
+#### Discount
 
-Usando el atributo `data-summary-discount-label`, puedes especificar el texto que aparece como *"Descuento"* en el detalle de la compra. Por ejemplo, puedes agregar el porcentaje de descuento:
+Using the attribute `data-summary-discount-label`, you can specify the text that appears as *"Discount"* in the detail of the purchase. For example, you can add the discount percentage:
 
 ```html
-data-summary-discount-label="Descuento 10%"
+data-summary-discount-label="10% off"
 ```
 
-Mediante el atributo `data-summary-discount`, puedes especificar el monto de descuento en el detalle de la compra. Por ejemplo:
+Using the `data-summary-discount` attribute, you can specify the discount amount in the detail of the purchase. For example:
 
 ```html
 data-summary-discount="65.4"
@@ -168,14 +167,14 @@ data-summary-discount="65.4"
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Verás el monto como un *número negativo*.
+> You will see the amount as a *negative number*.
 
 
-#### Envío
+#### Shipping
 
-Usando el atributo `data-summary-shipping`, puedes especificar el monto de envío en el detalle de la compra. Por ejemplo:
+Using the `data-summary-shipping` attribute, you can specify the shipping amount in the purchase detail. For example:
 
 ```html
 data-summary-shipping="10"
@@ -183,38 +182,38 @@ data-summary-shipping="10"
 
 > NOTE
 >
-> Nota
+> Note
 >
-> En caso de que el envío especificado sea *"0"* (cero), se mostrará automáticamente el texto *"Gratis"*.
+> In case the specified delivery is *"0"* (zero), the text *"Free"* will be automatically displayed.
 
 
-#### Recargos
+#### Surcharges
 
-Usando el atributo `data-summary-charges`, puedes especificar el monto de recargos en el detalle de la compra. Por ejemplo:
+Using the attribute `data-summary-charges`, you can specify the amount of surcharges in the detail of the purchase. For example:
 
 ```html
 data-summary-charges="10"
 ```
 
-Aparecerá en el detalle de la compra bajo el concepto de *"Recargos"*.
+It will appear in the detail of the purchase under the concept of *"Surcharges"*.
 
 
-#### Impuestos
+#### Taxes
 
-Usando el atributo `data-summary-taxes`, puedes especificar el monto de impuestos en el detalle de la compra. Por ejemplo:
+Using the attribute `data-summary-taxes`, you can specify the amount of taxes in the detail of the purchase. For example:
 
 ```html
 data-summary-taxes="10"
 ```
+ 
+It will appear in the detail of the purchase under the concept of *"Taxes"*.
 
-Aparecerá en el detalle de la compra bajo el concepto de *"Impuestos"*.
+#### Outstanding balance
 
-#### Saldo pendiente
-
-Usando el atributo `data-summary-arrears`, puedes especificar el monto de saldo pendiente en el detalle de la compra. Por ejemplo:
+Using the `data-summary-arrears` attribute, you can specify the outstanding balance amount in the purchase detail. For example:
 
 ```html
 data-summary-arrears="10"
 ```
 
-Aparecerá en el detalle de la compra bajo el concepto de *"Saldo pendiente"*.
+It will appear in the detail of the purchase under the concept of *"Outstanding balance"*.

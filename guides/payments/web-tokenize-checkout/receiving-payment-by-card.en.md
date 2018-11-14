@@ -82,7 +82,7 @@ issuer_id = Request["issuer_id"]
 
 ### Step 4: Creating the payment
 
-To make the payment, you must perform an API call using the [SDK de Mercado Pago](http://beta.mercadopago.com/developers/es/plugins) that corresponds with the programming language that you are using on your site.
+To make the payment, you must perform an API call using the [SDK de Mercado Pago](https://www.mercadopago.com.ar/developers/en/plugins_sdks) that corresponds with the programming language that you are using on your site.
 
 You should only make an *API call* including the data you received from the checkout:
 

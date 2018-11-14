@@ -1,38 +1,38 @@
 
 
-# Web Tokenize Checkout - Recuperos
+# Web Tokenize Checkout - Recoveries
 
-En el caso de que un pago fuese rechazado puedes ofrecerle al comprador la opción de reintentarlo y recuperar la venta.
+In the event that a payment is rejected you can offer the buyer the option to retry it and recover the sale.
 
-En ese momento recibirás como respuesta el estado del pago *rechazado* (`rejected`) y es recomendable informarle al usuario dicho estado.
+At that moment you will receive the response status *rejected* (`rejected`) and it is advisable to inform the user of said status.
 
-Junto con la comunicación puedes ofrecer además la posibilidad de volver a ingresar los datos de tarjeta, **usando nuevamente el _Web Tokenize Checkout_**. También tienes la posibilidad de [cambiar el texto del botón](/guides/payments/web-tokenize-checkout/personalization.es.md) mediante el atributo `data-button-label` para complementar la comunicación.
+Along with the communication you can also offer the possibility of re-entering the card data, **using the _Web Tokenize Checkout_ again**. You also have the opportunity to [change the button text](/guides/payments/web-tokenize-checkout/personalization.en.md) using the `data-button-label` attribute to complement the communication.
 
-Por ejemplo:
+For example:
 
 ```html
-<h1>¡Algo salió mal!</h1>
-<p>Ha ocurrido un error con el pago. Por favor vuelve a intentarlo:</p>
+<h1>Something went wrong!</h1>
+<p>An error occurred with the payment. Please try again:</p>
 
 <form action="/procesar-pago" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
-    data-button-label="Reintentar"> <!-- Texto del botón -->
+    data-button-label="Retry"> <!-- Button text -->
   </script>
 </form>
 ```
 
 ![Recovery](/images/cow-recovery-page.png)
 
-## Checkout abierto por defecto
+## Checkout open by default
 
-Otra posibilidad, en caso de que un pago fuese rechazado, es invocar al *Web Tokenize Checkout* con el formulario ya abierto en el contexto donde originalmente el usuario cargó los datos.
+Another possibility, in case a payment is rejected, is to invoke the *Web Tokenize Checkout* with the form already opened in the context where the user originally loaded the data.
 
-La opción de abrir el checkout por defecto es controlada desde el atributo `data-open` y sólo es cuestión de setear el atributo en `true`.
+The option to open the checkout by default is controlled from the `data-open` attribute and it is only a matter of setting the attribute to` true`.
 
-Por ejemplo:
+For example:
 
 ```html
 <form action="/procesar-pago" method="POST">
@@ -40,7 +40,7 @@ Por ejemplo:
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
-    data-open="true"> <!-- Abierto por defecto -->
+    data-open="true"> <!-- open by default -->
   </script>
 </form>
 ```
