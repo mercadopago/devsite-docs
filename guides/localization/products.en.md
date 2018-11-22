@@ -37,8 +37,8 @@ API features for each country are shown below:
 | :------------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Authorization and capture  | ✔   | ✔   |     |     |     | ✔   |     |     |
 | Capture by smaller amount  | ✔   | ✔   |     |     |     |     |     |     |
-| Refunds                    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
-| Partial refunds            | ✔   | ✔   | ✔   |     | ✔   |     |     |     |
+| Refunds                    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Partial refunds            | ✔   | ✔   | ✔   |     | ✔   |     |     | ✔   |
 | Payments without CVV       | ✔   | ✔   |     | ✔   | ✔   | ✔   | ✔   |     |
 | Soft descriptor            | ✔  |  ✔   |     |     |     |     |     | ✔   |
 

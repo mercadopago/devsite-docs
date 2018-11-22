@@ -212,7 +212,7 @@ Siempre que no especifiques un monto se capturará el monto total reservado.
 
 ### Capturar un pago por un monto menor al reservado
 
-> En Argentina solo disponible para Visa y American Express
+> En Argentina solo disponible para Visa, Cabal, Master y American Express
 
 Si decides capturar por un monto menor al reservado, es necesario que además de enviar el atributo `capture`, envies el atributo `transaction_amount` con el nuevo monto.
 

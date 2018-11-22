@@ -7,13 +7,41 @@ The payment methods offered by Mercado Pago vary by country.
 You can get the payment methods as follows:
 
 **GET /v1/payment_methods**
-
+[[[
+```php
 	<?php
 		require ('mercadopago.php');
 		$mp = new MP ('ACCESS_TOKEN');
 		$payment_methods = $mp->get('/v1/payment_methods');
 		print_r ($payment_methods);
 	?>
+```
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+```
+]]]
+
+The SITE_ID depends on the country you are going to work in. The corresponding codes are: 
+* **MLA**: Argentina.  
+* **MLB**: Brasil.  
+* **MLC**: Chile.  
+* **MLU**: Uruguay.  
+* **MCO**: Colombia.  
+* **MLV**: Venezuela.
+* **MPE**: Perú.  
+* **MLM**: México.  
+
+
+Also, you can get the payment methods supported for recurring payments/payments without CVV:
+[[[
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+```
+]]]
 
 **Response**
 

@@ -7,13 +7,41 @@ Los medios de pago ofrecidos por Mercado Pago varían según cada país.
 Los medios pueden ser obtenidos de la siguiente forma:
 
 **GET /v1/payment_methods**
-
+[[[
+```php
 	<?php
 		require ('mercadopago.php');
 		$mp = new MP ('ACCESS_TOKEN');
 		$payment_methods = $mp->get('/v1/payment_methods');
 		print_r ($payment_methods);
 	?>
+```
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+```
+]]]
+
+El SITE_ID dependerá del país en el que quieras operar. Los códigos correspondientes son: 
+* **MLA**: Argentina.  
+* **MLB**: Brasil.  
+* **MLC**: Chile.  
+* **MLU**: Uruguay.  
+* **MCO**: Colombia.  
+* **MLV**: Venezuela.
+* **MPE**: Perú.  
+* **MLM**: México.  
+
+A su vez, también se pueden consultar los medios de pago soportados para operaciones recurrentes/pagos sin CVV:
+[[[
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+```
+]]]
+
 
 **Respuesta**
 
