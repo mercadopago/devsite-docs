@@ -25,7 +25,7 @@ Genera el código QR asociado al punto de venta e integra la creación de la ord
 
 Configura la URL para cada caja, reemplazando collector_id, pos_id y access token según la cuenta y el punto de venta que corresponda:
 
-https://api.mercadopago.com/mpmobile/instore/merchant/qr/${collector_id}/${pos_id}?access_token=ACCESS_TOKEN
+https://api.mercadopago.com/mpmobile/instore/merchant/qr/collector_id/pos_id?access_token=ACCESS_TOKEN
 
 Donde te devolverá como respuesta una serie de opciones para que puedas imprimir el código QR:
 
@@ -44,7 +44,7 @@ Donde te devolverá como respuesta una serie de opciones para que puedas imprimi
 
 Si deseas generar tu QR de forma manual puedes utilizar cualquier generador online para convertir la siguiente URL en un código QR reemplazando collector_id, pos_id según la cuenta y el punto de venta que corresponda
 
-https://mercadopago.com/s/qr/${collector_id}/${pos_id}
+https://mercadopago.com/s/qr/collector_id/pos_id
 
 ### Creación de la orden de venta
 
