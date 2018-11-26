@@ -25,7 +25,7 @@ Gera o QR code associado ao ponto de venda e integra a criação do pedido pende
 
 Configure a URL para cada caixa, substituindo o collector_id, pos_id e o access token de acordo com a sua conta e o ponto de venda correspondente:
 
-https://api.mercadopago.com/mpmobile/instore/merchant/qr/${collector_id}/${pos_id}?access_token=ACCESS_TOKEN
+https://api.mercadopago.com/mpmobile/instore/merchant/qr/collector_id/pos_id?access_token=ACCESS_TOKEN
 
 Como resultado a API irá retornar uma lista de opções para impressão do código QR:
 
@@ -44,7 +44,7 @@ Como resultado a API irá retornar uma lista de opções para impressão do cód
 
 Caso tenha interesse em gerar o seu QR de forma manual, pode utilizar qualquer gerador online que converta a URL en un código QR substituindo o collector_id, pos_id de acordo com a sua conta e o ponto de venda correspondente.
 
-https://mercadopago.com/s/qr/${collector_id}/${pos_id}
+https://mercadopago.com/s/qr/collector_id/pos_id
 
 ### Criação do pedido de venda
 
