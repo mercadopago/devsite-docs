@@ -70,7 +70,7 @@ curl -X POST \
         }'
 ```
 
-Si usted necesita hacer adaptaciones, **es importante que usted recuerde hacer este cambio antes de la fecha límite, porque de lo contrario, es muy probable que sus conexiones con Mercado Pago empiecen a fallar.**
+Si usted necesita hacer adaptaciones, **es importante que usted recuerde hacer este cambio antes de la fecha límite.**
 
 Si tiene alguna duda o necesita ayuda para completar con éxito este cambio, por favor, póngase en contacto con nosotros a través del siguiente [formulario](https://www.mercadopago.com.ar/developers/es/support).
 
