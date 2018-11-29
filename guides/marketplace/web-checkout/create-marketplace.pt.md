@@ -65,7 +65,7 @@ curl -X POST \
 Os parâmetros que você deve incluir são:
 
 * `client_id`: O valor de `APP_ID`.
-* `client_secret`: Seu `CLIENT_SECRET`.
+* `client_secret`: Seu `SECRET_KEY`.
 * `code`: O código de autorização obtido ao redirecionar o usuário de volta para o seu site.
 * `redirect_uri`: Deve ser a mesmo Redirect URI que você configurou na sua aplicação.
 
