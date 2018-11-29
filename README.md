@@ -30,7 +30,7 @@ Pagina Principal          Jerarquía               Identificador     Idioma  For
 
 1. Hacer un fork de este repositorio.
 2. Crear un issue con una descripción breve sobre la contribución.
-3. Seguir la guia (https://github.com/mercadopago/devsite-docs/wiki/Syntax-guide) para la redacción del contenido.
+3. Seguir la [guia](https://github.com/mercadopago/devsite-docs/wiki/Syntax-guide) para la redacción del contenido.
 4. Crear un **Pull Request** al branch *master*, de preferencia proveer contenido traducido en los lenguajes soportados esto permitirá que tu contribución pueda verse reflejada en el sitio en menor tiempo.
 5. El contenido será revisado y comentado por nuestro equipo, puede que te solicitemos algunas correcciones antes de aprobar la contribución.
 
