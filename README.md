@@ -2,8 +2,6 @@
 
 En este repositorio esta alojado el contenido mostrado en nuestro sitio para desarrolladores, las contribuciones son bienvenidas.
 
-<center>
-
 [![argentina-flag](images/flags/argentina.svg)](https://www.mercadopago.com.ar/developers)
 [![brazil-flag](images/flags/brazil.svg)](https://www.mercadopago.com.br/developers)
 [![brazil-flag](images/flags/mexico.svg)](https://www.mercadopago.com.mx/developers)
@@ -11,8 +9,6 @@ En este repositorio esta alojado el contenido mostrado en nuestro sitio para des
 [![brazil-flag](images/flags/colombia.svg)](https://www.mercadopago.com.co/developers)
 [![brazil-flag](images/flags/chile.svg)](https://www.mercadopago.cl/developers)
 [![brazil-flag](images/flags/peru.svg)](https://www.mercadopago.com.pe/developers)
-
-</center>
 
 ## Nomenclatura y Estructura de Carpetas ##
 
