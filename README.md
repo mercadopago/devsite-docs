@@ -2,13 +2,17 @@
 
 En este repositorio esta alojado el contenido mostrado en nuestro sitio para desarrolladores, las contribuciones son bienvenidas.
 
-> - Argentina: https://www.mercadopago.com.ar/developers
-> - Brasil: https://www.mercadopago.com.br/developers
-> - México: https://www.mercadopago.com.mx/developers
-> - Uruguay: https://www.mercadopago.com.uy/developers
-> - Perú: https://www.mercadopago.com.pe/developers
-> - Chile: https://www.mercadopago.cl/developers
-> - Colombia: https://www.mercadopago.com.co/developers
+<center>
+
+[![argentina-flag](images/flags/argentina.svg)](https://www.mercadopago.com.ar/developers)
+[![brazil-flag](images/flags/brazil.svg)](https://www.mercadopago.com.br/developers)
+[![brazil-flag](images/flags/mexico.svg)](https://www.mercadopago.com.mx/developers)
+[![brazil-flag](images/flags/uruguay.svg)](https://www.mercadopago.com.uy/developers)
+[![brazil-flag](images/flags/colombia.svg)](https://www.mercadopago.com.co/developers)
+[![brazil-flag](images/flags/chile.svg)](https://www.mercadopago.cl/developers)
+[![brazil-flag](images/flags/peru.svg)](https://www.mercadopago.com.pe/developers)
+
+</center>
 
 ## Nomenclatura y Estructura de Carpetas ##
 
