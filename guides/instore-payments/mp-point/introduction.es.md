@@ -23,8 +23,7 @@ Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Poi
 
 También, deberás descargar la App desde el *store* de su teléfono móvil:
 
-> [Android Play Store]  (https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)  
-> [iOS App Store](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/images/mobile/GooglePlayBadge_es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/images/mobile/AppStoreBadge_es.svg" alt="iOS App Store" width="158"/>)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
 Existen distintas alternativas para que puedas cobrar a través de Mercado Pago Point:
 
@@ -33,6 +32,6 @@ Existen distintas alternativas para que puedas cobrar a través de Mercado Pago 
 * Integrando tu aplicación la modalidad de cobros vía Point. Tu aplicación genera una orden de pago con el monto y una descripción y llama a la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se retorna a tu aplicación.
 
 * Integrando a tu sistema de gestión la modalidad de cobros vía Point. Desde tu sistema se genera una orden de cobro con el monto, una descripción y el dispositivo que quieras que reciba dicha orden. Automáticamente se levantará la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se cerrará la orden.
- 
+
 
 En base a tu modelo de negocio, puede escoger alguna de las opciones o combinarlas para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
