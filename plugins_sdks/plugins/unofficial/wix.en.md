@@ -2,7 +2,7 @@
 
 ## What is Wix?
 
-[Wix](https://pt.wix.com/) is an online site creation and editing platform where you can create your online store and process payments through the Mercado Pago.
+[Wix](https://pt.wix.com/) is an online site creation and editing platform where you can create your online store and process payments through Mercado Pago.
 For more information on the possibilities that Wix offers, visit [your features page](https://pt.wix.com/ecommerce/loja-virtual).
 
 ## How can I trade with Mercado Pago on Wix?
