@@ -24,8 +24,7 @@ Os clientes que estiverem utilizando o aplicativo mobile do Mercado Pago fazem o
 
 Para efetuar pagamentos, seus clientes devem fazer o download do app no celular:
 
-> [![Android Google Play](/Users/denriquez/Documents/devsite-docs/images/mobile/GooglePlayBadge_pr.png)](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)  
-> [![iOS App Store](/Users/denriquez/Documents/devsite-docs/images/mobile/AppStoreBadge_pt.svg)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/images/mobile/GooglePlayBadge_pt.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/images/mobile/AppStoreBadge_pt.svg" alt="iOS App Store" width="158"/>)](
 
 Existem diversas alternativas que lhe permitem receber pagamentos por meio de QR codes:
 

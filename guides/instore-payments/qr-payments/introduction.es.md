@@ -26,9 +26,7 @@ Así puedes ofrecer en tus tiendas físicas cuotas sin interés y los beneficios
 
 Para poder pagar, tus clientes deben descargar la App desde el store de su teléfono móvil:
 
-> [![Android Play Store](/images/mobile/GooglePlayBadge_es.png)](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)  
->
-> [![iOS App Store](/images/mobile/AppStoreBadge_es.svg)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/images/mobile/GooglePlayBadge_es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/images/mobile/AppStoreBadge_es.svg" alt="iOS App Store" width="158"/>)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
 
 Existen distintas alternativas para que puedas cobrar a través de códigos QR:  
