@@ -21,7 +21,7 @@ The steps to start trading with Mercado Pago are as follows:
 
 ![wix_configuration1](/images/wix_configuration1.png)
 
-2. Select the Mercado Pago, and then click **Connect > Set Up Account**.
+2. Select Mercado Pago, and then click **Connect > Set Up Account**.
 
 ![wix_configuration2](/images/wix_configuration2.png)
 
