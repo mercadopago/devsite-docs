@@ -25,7 +25,7 @@ The steps to start trading with Mercado Pago are as follows:
 
 ![wix_configuration2](/images/wix_configuration2.png)
 
-3. If you do not already have an account in the Mercado Pago, click **Create an account** and proceed with the registration, otherwise click **Connect an existing account**.
+3. If you do not already have an account in Mercado Pago, click **Create an account** and proceed with the registration, otherwise click **Connect an existing account**.
 
 ![wix_configuration3](/images/wix_configuration3.png)
 
