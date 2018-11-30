@@ -21,7 +21,7 @@ Los pasos para empezar a operar con Mercado Pago son los siguientes:
 
 ![wix_configuration1](/images/wix_configuration1.png)
 
-2. Seleccione el Mercado Pago y luego haga clic en **Conectar > Configurar cuenta**.
+2. Seleccione Mercado Pago y luego haga clic en **Conectar > Configurar cuenta**.
 
 ![wix_configuration2](/images/wix_configuration2.png)
 
