@@ -1,4 +1,4 @@
-# Migración de la versión versión 0 a versión 1 de la API de Mercado Pago
+# Migración de la versión 0 a versión 1 de la API de Pagos de Mercado Pago
 
 En Mercado Pago buscamos siempre optimizar nuestra plataforma ofreciendo la más alta eficiencia y seguridad en el procesamiento de pagos.
 
@@ -6,7 +6,7 @@ En esta ocasión, estamos trabajando en la migración de nuestra API versión 0 
 
 En consecuencia, Mercado Pago requerirá la utilización de la nueva versión de la API a partir del 10 de diciembre de 2018.
 
-Después de ese plazo, la versión 0 se desactivará y cualquier intento de conexión con los recursos de esta versión fallarán.
+Después de ese plazo, la versión 0 dejara de tener soporte.
 
 ### A tener en cuenta:
 
@@ -15,7 +15,7 @@ Después de ese plazo, la versión 0 se desactivará y cualquier intento de cone
 * Si utiliza sólo Mercado Shops, este cambio no lo afectará.
 * Si tiene su **propio e-commerce, consulte a su equipo de TI**.
 * Si **se trabaja con alguna plataforma de comercio electrónico**, por ejemplo: Magento, Shopify u otros **Consulte su soporte técnico**.
-* Se você usar o recurso de pesquisa de pagamento, deverá consumir o novo recurso e incluir um novo parâmetro para obter o mesmo resultado. Veja a seção de exemplos.
+* Si **usa el recurso de search de payments**, debera consumir un nuevo recurso e incluir un nuevo parametro para obtener el mismo resultado. Vea la seccion de ejmplos.
 
 ## Recursos migrados
 
@@ -70,7 +70,7 @@ curl -X POST \
         }'
 ```
 
-Si usted necesita hacer adaptaciones, **es importante que usted recuerde hacer este cambio antes de la fecha límite, porque de lo contrario, es muy probable que sus conexiones con Mercado Pago empiecen a fallar.**
+Si usted necesita hacer adaptaciones, **es importante que usted recuerde hacer este cambio antes de la fecha límite.**
 
 Si tiene alguna duda o necesita ayuda para completar con éxito este cambio, por favor, póngase en contacto con nosotros a través del siguiente [formulario](https://www.mercadopago.com.ar/developers/es/support).
 

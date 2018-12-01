@@ -63,8 +63,8 @@ curl -X POST \
 
 Os parâmetros que você deve incluir são:
 
-* `client_id`: o valor de `APP_ID`.
-* `client_secret`: seu `CLIENT_SECRET`.
+* `client_id`: o valor de `APP_ID`. Pode obter apartir das configurações da sua [aplicação.](https://applications.mercadopago.com/)
+* `client_secret`: seu `SECRET_KEY`. Pode obter apartir das configurações da sua [aplicação.](https://applications.mercadopago.com/)
 * `code`: o código de autorização obtido ao redirecionar o usuário de volta para o seu site.
 * `redirect_uri`: deve ser a mesma Redirect URI que você configurou na sua aplicação.
 

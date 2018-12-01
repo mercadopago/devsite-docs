@@ -1,12 +1,11 @@
-# Migração da versão versão 0 para versão 1 da API de Mercado Pago
+# Migração da versão 0 para versão 1 da API de Pagamentos do Mercado Pago
 
 No Mercado Pago procuramos sempre otimizar nossa plataforma oferecendo a mais alta eficiência e segurança no processamento de pagamentos.
 
 No momento, estamos trabalhando na migração da nossa API  versão 0 para a versão 1 com o objetivo de manter os mais altos padrões de qualidade.
 
-Consequentemente, o Mercado Pago exigirá que a nova versão da API seja utilizada a partir de 10 de dezembro de 2018.
-
-Depois desse prazo, a versão versão 0 será desativada e qualquer tentativa de conexão utilizando-a falhará.
+Consequentemente a versã 0 vai parar de ter suporte a partir de 10 de dezembro de 2018.
+ 
 
 ### Pontos para serem levados em conta
 
@@ -70,7 +69,7 @@ curl -X POST \
         }'
 ```
 
-Caso você precise fazer adaptações, **é importante que você se lembre de fazer essa alteração em tempo hábil, porque caso contrário, é muito provável que suas conexões com o Mercado Pago comecem a falhar.**
+Caso você precise fazer adaptações, **é importante que você se lembre de fazer essa alteração em tempo hábil.**
 
 Se você tiver alguma dúvida ou precisar de ajuda para concluir com êxito essa mudança, entre em contato conosco através do seguinte [formulário de contato](https://www.mercadopago.com.br/developers/pt/support).
 
