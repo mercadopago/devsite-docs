@@ -19,7 +19,14 @@ Tus vendedores utilizando la aplicación móvil de Mercado Pago pasan la tarjeta
 
 Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Point:
 
-> [Comprar Point]  (https://www.mercadopago.com.ar/lector-tarjetas-credito-point)  
+> ```
+> ----[mla]----
+> [Comprar Point]  (https://www.mercadopago.com.ar/lector-tarjetas-credito-point)
+> ------------
+> ----[mlm]----
+> [Comprar Point]  (https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)
+> ------------  
+> ```
 
 También, deberás descargar la App desde el *store* de su teléfono móvil:
 
