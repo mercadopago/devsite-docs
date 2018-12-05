@@ -82,7 +82,7 @@ Si el contracargo sigue los criterios anteriormente mencionados, se puede enviar
 
 Para hacer esto, se debe hacer un **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` con la siguiente forma:
 ```
-curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/:chargeback_id/documentation?access_token=
+curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
 ```
 
 La api responderá con status `200 OK` si se ha subido la documentación exitosamente. La respuesta cambiará el estado del atributo `documentation_status` a **review_pending**.
