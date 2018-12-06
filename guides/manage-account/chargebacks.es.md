@@ -103,7 +103,7 @@ Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles:
 
 | Campo         | Valor           | Descripción
 | ----      | ----                |
-| `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor (no se le devuelve el dinero)
-| `coverage_applied` | **true**  |Indica que Mercado Pago falló _a favor_ del vendedor (se le devuelve el dinero)
+| `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor (se le devuelve el dinero al comprador)
+| `coverage_applied` | **true**  | Indica que Mercado Pago falló _a favor_ del vendedor (se le devuelve el dinero al vendedor)
 
 Cuando la resolución suceda, independientemente del resultado, se enviará una nueva notificación vía **IPN** para que se pueda verificar que sucedió.
