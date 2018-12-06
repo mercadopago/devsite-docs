@@ -72,7 +72,12 @@ Además se cuenta con el campo `documentation_required` que indica si se requier
 | `documentation_required` | **true**  |Indica que se requiere documentación para el contracargo
 
 
-En caso de que se requiere subir documentación, se cuenta con un plazo para subirla (en MLB 10 días y en el resto 7 días). En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
+----[mla,mlc,mlm,mpe,mco,global]----
+En caso de que se requiera proveer documentación, se cuenta con un plazo de 7 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
+------------
+----[mlb]----
+En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`
+------------
 
 Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
 
