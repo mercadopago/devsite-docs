@@ -1,33 +1,35 @@
-# Gestión de Contracargos
+# Chargeback management
 
 > NOTE
 >
-> Nota
+> Note
 >
-> **¿Qué es?** Cuando un comprador se comunica con la entidad que emitió su tarjeta (un banco, por ejemplo) y desconoce un pago realizado a través de ese medio, se genera un _contracargo_. [Más información &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249)
+> **What is it?** When a buyer communicates with the entity that issued his card (a bank, for example) and disclaim a payment made through this means, a _chargeback_ is generated. [More information &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249)
 
-El contracargo, en principio, signfica que Mercado Pago retendrá el dinero de la venta hasta que el problema sea solucionado.
+The chargeback implies that Mercado Pago will retain the money from the sale until the problem is solved.
 
-Los contracargos pueden ser gestionados vía API.
-Es importante en este proceso mencionar cuáles son las instancias clave:
+Chargebacks can be managed via API.
 
-1. Aparición del contracargo
-2. Consulta del contracargo
-3. Entendimiento de la cobertura
-4. Disputa del contracargo
-5. Revisión por parte de Mercado Pago
-6. Resolución
+It is important in this process to mention the key instances:
 
-Ahora entraremos en detalle en cada una de ellas
+1. Occurrence of the chargeback
+2. Consultation of the chargeback
+3. Understanding of coverage
+4. Dispute of the chargeback
+5. Review by Mercado Pago
+6. Resolution
 
-## Aparición del contracargo
+Now we will go into detail in each of them.
 
-Vía [IPN](/guides/notifications/ipn.es.md) te notificaremos instantáneamente cada vez que recibas un contracargo. Para que esto suceda, debes estar subscripto al tema `chargebacks` dentro de la [configuración](https://www.mercadopago.com.ar/herramientas/notificaciones).
+## Occurrence of the chargeback
 
-## Consulta del contracargo
+Through [IPN](/guides/notifications/ipn.es.md) we will notify you instantly whenever you receive a chargeback. For this to happen, you must be subscribed to the subject `chargebacks` within the [configuration](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
-La notificación IPN va a contener el `ID` del contracargo.
-Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar su información:
+## Consultation of the chargeback
+
+The IPN notification will contain the `ID` of the chargeback.
+
+With this `ID` you can make a ** GET** to` https://api.mercadopago.com/v1/chargebacks/ID` to check your information:
 
 ```json
 {
@@ -55,64 +57,64 @@ Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/charge
 }
 ```
 
-## Entendimiento de cobertura
+## Understanding of coverage
 
-Según la operatoria del vendedor, su acuerdo comercial - o ambos - puede variar la política de cobertura de cada contracargo por parte de Mercado Pago. El campo `coverage_elegible` define si el contracargo es posible de ser disputado o no.
+According to the vendor's operation, your commercial agreement - or both - may vary the coverage policy of each chargeback by Mercado Pago. The field `coverage_elegible` defines if the chargeback is possible to be disputed or not.
 
-| Campo         | Valor           | Descripción
+| Field         | Value           | Description
 | ----      | ----                |
-| `coverage_elegible` | **false** | Indica que el contracargo no puede ser disputado
-| `coverage_elegible` | **true**  |Indica que el contracargo sí puede ser disputado
+| `coverage_elegible` | **false** | Indicates that the chargeback can not be disputed
+| `coverage_elegible` | **true**  | Indicates that the chargeback can be disputed
 
-Además se cuenta con el campo `documentation_required` que indica si se requiere que se suba la documentación para ser cubierto. 
+In addition, there is a `documentation_required` field that indicates whether the documentation is required to be uploaded to be covered.
 
-| Campo         | Valor           | Descripción
+| Field         | Value           | Description
 | ----      | ----                |
-| `documentation_required` | **false** | Indica que no se requiere documentación para el contracargo
-| `documentation_required` | **true**  |Indica que se requiere documentación para el contracargo
+| `documentation_required` | **false** | Indicates that no documentation is required for the chargeback
+| `documentation_required` | **true**  | Indicates that documentation is required for the chargeback
 
 
 ----[mla,mlc,mlm,mpe,mco,global]----
-En caso de que se requiera proveer documentación, se cuenta con un plazo de 7 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
+In case you need to provide documentation, you have a period of 7 days from the creation of the chargeback to upload it. In the response of the chargeback query you can see when this term expires in the `date_documentation_deadline` field.
 ------------
 ----[mlb]----
-En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`
+In case you need to provide documentation, you have a period of 10 days from the creation of the chargeback to upload it. In the response of the chargeback query you can see when this term expires in the `date_documentation_deadline` field.
 ------------
 
 > WARNING		 
 > 
-> Requisitos
+> Requisites
 >
->Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
+>It is only possible to continue with the rest of the steps if the chargeback **can be disputed **, **it is required to upload documentation** and **the term has not expired.** 
 
-## Disputa del contracargo
+## Dispute of the chargeback
 
-Si el contracargo sigue los criterios anteriormente mencionados, se puede enviar via API la información respaldatoria que valida que la venta ocurrió. [Más información &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249) 
+If the chargeback follows the criteria mentioned above, you can send via API the supporting information that validates that the sale occurred. [More information &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249) 
 
-Para hacer esto, se debe hacer un **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` con la siguiente forma:
+To do this, you must make a ** POST ** to `https://api.mercadopago.com/v1/chargebacks/ID/documentation` with the following form:
 ```
 curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
 ```
 
-La api responderá con status `200 OK` si se ha subido la documentación exitosamente. La respuesta cambiará el estado del atributo `documentation_status` a **review_pending**.
+The api will respond with status `200 OK` if the documentation has been uploaded successfully. The response will change the state of the `documentation_status` attribute to **review_pending**.
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Los archivos podrán ser .jpg, .png, .pdf y en su conjunto no podrán exceder los 10mb.
+> The files may be .jpg, .png, .pdf and as a whole they may not exceed 10mb.
 
-## Revisión por parte de Mercado Pago
+## Review by Mercado Pago
 
-Una vez enviada la documentación, un representante de Mercado Pago la revisará.
+Once the documentation is sent, a Mercado Pago representative will review it.
 
-## Resolución
+## Resolution
 
-Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles:
+Eventually the chargeback may have two types of possible resolutions:
 
-| Campo         | Valor           | Descripción
+| Field         | Value           | Description
 | ----      | ----                |
-| `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor (se le devuelve el dinero al comprador)
-| `coverage_applied` | **true**  | Indica que Mercado Pago falló _a favor_ del vendedor (se le devuelve el dinero al vendedor)
+| `coverage_applied` | **false** | Indicates that Mercado Pago failed _ against_ the seller (the money is returned to the buyer)
+| `coverage_applied` | **true**  | Indicates that Mercado Pago failed _ against_ the seller (the money is returned to the seller)
 
-Cuando la resolución suceda, independientemente del resultado, se enviará una nueva notificación vía **IPN** para que se pueda verificar qué sucedió.
+When the resolution happens, regardless of the result, a new notification will be sent via **IPN** so that it can be verified what happened.

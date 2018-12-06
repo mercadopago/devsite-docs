@@ -76,7 +76,7 @@ Además se cuenta con el campo `documentation_required` que indica si se requier
 En caso de que se requiera proveer documentación, se cuenta con un plazo de 7 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
 ------------
 ----[mlb]----
-En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`
+En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
 ------------
 
 > WARNING		 
