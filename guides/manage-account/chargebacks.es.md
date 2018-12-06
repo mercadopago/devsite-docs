@@ -79,7 +79,11 @@ En caso de que se requiera proveer documentación, se cuenta con un plazo de 7 d
 En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`
 ------------
 
-Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
+> WARNING		 
+> 
+> Requisitos
+>
+>Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
 
 ## Disputa del contracargo
 
