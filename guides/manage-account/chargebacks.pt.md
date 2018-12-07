@@ -1,33 +1,33 @@
-# Gestión de Contracargos
+# Gestão de Estornos
 
 > NOTE
 >
 > Nota
 >
-> **¿Qué es?** Cuando un comprador se comunica con la entidad que emitió su tarjeta (un banco, por ejemplo) y desconoce un pago realizado a través de ese medio, se genera un _contracargo_. [Más información &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249)
+> **O que é?** Quando o comprador se comunica com a entidade que emitiu o cartão (um banco, por exemplo) e desconhece um pagamento realizado através desse meio, se gera um _estorno_. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589)
 
-El contracargo, en principio, signfica que Mercado Pago retendrá el dinero de la venta hasta que el problema sea solucionado.
+O estorno, a princípio, significa que o Mercado Pago irá reter o dinheiro da venda até que o problema seja solucionado.
 
-Los contracargos pueden ser gestionados vía API.
-Es importante en este proceso mencionar cuáles son las instancias clave:
+Os estornos podem ser geridos via API.
+É importante, nesse processo, mencionar quais são as instâncias chave:
 
-1. Aparición del contracargo
-2. Consulta del contracargo
-3. Entendimiento de la cobertura
-4. Disputa del contracargo
-5. Revisión por parte de Mercado Pago
-6. Resolución
+1. Aparição do estorno
+2. Consulta do estorno
+3. Entendimento da cobertura
+4. Disputa do estorno
+5. Revisão por parte do Mercado Pago
+6. Resolução
 
-Ahora entraremos en detalle en cada una de ellas
+Agora entraremos em detalhe em cada uma delas:
 
-## Aparición del contracargo
+## Aparição do estorno
 
-Vía [IPN](/guides/notifications/ipn.es.md) te notificaremos instantáneamente cada vez que recibas un contracargo. Para que esto suceda, debes estar subscripto al tema `chargebacks` dentro de la [configuración](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que um estorno for recebido. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
 
-## Consulta del contracargo
+## Consulta de estorno
 
-La notificación IPN va a contener el `ID` del contracargo.
-Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar su información:
+A notificação IPN vai conter o `ID` do estorno.
+Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar suas informaçõeso:
 
 ```json
 {
@@ -55,64 +55,64 @@ Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/charge
 }
 ```
 
-## Entendimiento de cobertura
+## Entendimento da cobertura
 
-Según la operatoria del vendedor, su acuerdo comercial - o ambos - puede variar la política de cobertura de cada contracargo por parte de Mercado Pago. El campo `coverage_elegible` define si el contracargo es posible de ser disputado o no.
+De acordo com a operação do vendedor, seu acordo comercial, ou ambos, pode-se variar a política de cobertura de cada estorno por parte do Mercado Pago. O campo `coverage_elegible` define se o estorno é passível de ser disputado ou não.
 
-| Campo         | Valor           | Descripción
-| ----      | ----                |
-| `coverage_elegible` | **false** | Indica que el contracargo no puede ser disputado
-| `coverage_elegible` | **true**  |Indica que el contracargo sí puede ser disputado
+| Campo               | Valor     | Descrição
+| ----                | ----      | ----
+| `coverage_elegible` | **false** | Indica que o estorno não pode ser disputado
+| `coverage_elegible` | **true**  | Indica que o estorno pode ser disputado
 
-Además se cuenta con el campo `documentation_required` que indica si se requiere que se suba la documentación para ser cubierto. 
+Além disso conta-se com o campo `documentation_required` que indica se é preciso que se envie a documentação para análise.
 
-| Campo         | Valor           | Descripción
-| ----      | ----                |
-| `documentation_required` | **false** | Indica que no se requiere documentación para el contracargo
-| `documentation_required` | **true**  |Indica que se requiere documentación para el contracargo
+| Campo                    | Valor     | Descrição
+| ----                     | ----      | ----
+| `documentation_required` | **false** | Indica que não se requer documentação para o estorno
+| `documentation_required` | **true**  | Indica que se requer documentação para o estorno
 
 
 ----[mla,mlc,mlm,mpe,mco,global]----
-En caso de que se requiera proveer documentación, se cuenta con un plazo de 7 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
+Caso seja requerida a documentação, conta-se com um prazo de 7 dias desde a criação do estorno para enviá-la. Na resposta da sua consulta do estorno pode-se ver quando se expira este prazo no campo `date_documentation_deadline`.
 ------------
 ----[mlb]----
-En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`
+Caso seja requerida a documentação, conta-se com um prazo de 10 dias desde a criação do estorno para enviá-la. Na resposta da sua consulta do estorno pode-se ver quando se expira esse prazo no campo `date_documentation_deadline`.
 ------------
 
 > WARNING		 
 > 
 > Requisitos
 >
->Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
+> Só é possível continuar com o resto dos passos se o estorno  **pode ser disputado**, **se requer que se envie documentação** e **se o prazo ainda não foi expirado.** 
 
-## Disputa del contracargo
+## Disputa do estorno
 
-Si el contracargo sigue los criterios anteriormente mencionados, se puede enviar via API la información respaldatoria que valida que la venta ocurrió. [Más información &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249) 
+Se o estorno segue os critérios anteriormente mencionados, é possível enviar via API a informação confirmatória que valida que a venda ocorreu. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589) 
 
-Para hacer esto, se debe hacer un **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` con la siguiente forma:
+Para realizar o envio, deve-se fazer um **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` da seguinte forma:
 ```
 curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
 ```
 
-La api responderá con status `200 OK` si se ha subido la documentación exitosamente. La respuesta cambiará el estado del atributo `documentation_status` a **review_pending**.
+A api responderá com status `200 OK` se a documentação foi enviada com sucesso. A resposta mudará o status do atributo `documentation_status` a **review_pending**.
 
 > NOTE
 >
 > Nota
 >
-> Los archivos podrán ser .jpg, .png, .pdf y en su conjunto no podrán exceder los 10mb.
+> Os arquivos poderão ser .jpg, .png, .pdf e em seu conjunto não podem ultrapassar 10mb.
 
-## Revisión por parte de Mercado Pago
+## Revisão por parte de Mercado Pago
 
-Una vez enviada la documentación, un representante de Mercado Pago la revisará.
+Uma vez enviada a documentação, um representante de Mercado Pago a revisará.
 
-## Resolución
+## Resolução
 
-Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles:
+Eventualmente o estorno poderá ter dois tipos de resolução possíveis:
 
-| Campo         | Valor           | Descripción
-| ----      | ----                |
-| `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor (se le devuelve el dinero al comprador)
-| `coverage_applied` | **true**  | Indica que Mercado Pago falló _a favor_ del vendedor (se le devuelve el dinero al vendedor)
+| Campo              | Valor     | Descrição
+| ----               | ----      | ----
+| `coverage_applied` | **false** | Indica que Mercado Pago falhou _contra_ o vendedor (o dinheiro é devolvido ao comprador)
+| `coverage_applied` | **true**  | Indica que Mercado Pago falhou _a favor_ do vendedor (se devolve o dinheiro ao vendedor)
 
-Cuando la resolución suceda, independientemente del resultado, se enviará una nueva notificación vía **IPN** para que se pueda verificar qué sucedió.
+Quando a resolução acontece, independentemente do resultado, se enviará uma nova notificação via **IPN** para que se possa verificar o que houve.
