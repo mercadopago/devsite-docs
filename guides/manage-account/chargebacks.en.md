@@ -62,14 +62,14 @@ With this `ID` you can make a ** GET** to` https://api.mercadopago.com/v1/charge
 According to the vendor's operation, your commercial agreement - or both - may vary the coverage policy of each chargeback by Mercado Pago. The field `coverage_elegible` defines if the chargeback is possible to be disputed or not.
 
 | Field         | Value           | Description
-| ----      | ----                |
+| ----          | ----            | ----
 | `coverage_elegible` | **false** | Indicates that the chargeback can not be disputed
 | `coverage_elegible` | **true**  | Indicates that the chargeback can be disputed
 
 In addition, there is a `documentation_required` field that indicates whether the documentation is required to be uploaded to be covered.
 
 | Field         | Value           | Description
-| ----      | ----                |
+| ----          | ----            | ----
 | `documentation_required` | **false** | Indicates that no documentation is required for the chargeback
 | `documentation_required` | **true**  | Indicates that documentation is required for the chargeback
 
@@ -113,7 +113,7 @@ Once the documentation is sent, a Mercado Pago representative will review it.
 Eventually the chargeback may have two types of possible resolutions:
 
 | Field         | Value           | Description
-| ----      | ----                |
+| ----          | ----            | ----
 | `coverage_applied` | **false** | Indicates that Mercado Pago failed _ against_ the seller (the money is returned to the buyer)
 | `coverage_applied` | **true**  | Indicates that Mercado Pago failed _ against_ the seller (the money is returned to the seller)
 
