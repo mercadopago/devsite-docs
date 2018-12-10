@@ -60,14 +60,14 @@ Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/charge
 Según la operatoria del vendedor, su acuerdo comercial - o ambos - puede variar la política de cobertura de cada contracargo por parte de Mercado Pago. El campo `coverage_elegible` define si el contracargo es posible de ser disputado o no.
 
 | Campo         | Valor           | Descripción
-| ----      | ----                |
+| ----          | ----            | ----
 | `coverage_elegible` | **false** | Indica que el contracargo no puede ser disputado
 | `coverage_elegible` | **true**  |Indica que el contracargo sí puede ser disputado
 
 Además se cuenta con el campo `documentation_required` que indica si se requiere que se suba la documentación para ser cubierto. 
 
 | Campo         | Valor           | Descripción
-| ----      | ----                |
+| ----          | ----            | ----
 | `documentation_required` | **false** | Indica que no se requiere documentación para el contracargo
 | `documentation_required` | **true**  |Indica que se requiere documentación para el contracargo
 
@@ -111,7 +111,7 @@ Una vez enviada la documentación, un representante de Mercado Pago la revisará
 Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles:
 
 | Campo         | Valor           | Descripción
-| ----      | ----                |
+| ----          | ----            | ----
 | `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor (se le devuelve el dinero al comprador)
 | `coverage_applied` | **true**  | Indica que Mercado Pago falló _a favor_ del vendedor (se le devuelve el dinero al vendedor)
 
