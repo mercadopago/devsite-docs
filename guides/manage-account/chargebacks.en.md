@@ -29,7 +29,7 @@ Through [IPN](/guides/notifications/ipn.es.md) we will notify you instantly when
 
 The IPN notification will contain the `ID` of the chargeback.
 
-With this `ID` you can make a ** GET** to` https://api.mercadopago.com/v1/chargebacks/ID` to check your information:
+With this `ID` you can make a **GET** to` https://api.mercadopago.com/v1/chargebacks/ID` to check your information:
 
 ```json
 {
@@ -85,13 +85,13 @@ In case you need to provide documentation, you have a period of 10 days from the
 > 
 > Requisites
 >
->It is only possible to continue with the rest of the steps if the chargeback **can be disputed **, **it is required to upload documentation** and **the term has not expired.** 
+>It is only possible to continue with the rest of the steps if the chargeback **can be disputed**, **it is required to upload documentation** and **the term has not expired.** 
 
 ## Dispute of the chargeback
 
 If the chargeback follows the criteria mentioned above, you can send via API the supporting information that validates that the sale occurred. [More information &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249) 
 
-To do this, you must make a ** POST ** to `https://api.mercadopago.com/v1/chargebacks/ID/documentation` with the following form:
+To do this, you must make a **POST** to `https://api.mercadopago.com/v1/chargebacks/ID/documentation` with the following form:
 ```
 curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
 ```
@@ -114,7 +114,7 @@ Eventually the chargeback may have two types of possible resolutions:
 
 | Field         | Value           | Description
 | ----          | ----            | ----
-| `coverage_applied` | **false** | Indicates that Mercado Pago failed _ against_ the seller (the money is returned to the buyer)
-| `coverage_applied` | **true**  | Indicates that Mercado Pago failed _ against_ the seller (the money is returned to the seller)
+| `coverage_applied` | **false** | Indicates that Mercado Pago failed _against_ the seller (the money is returned to the buyer)
+| `coverage_applied` | **true**  | Indicates that Mercado Pago failed _against_ the seller (the money is returned to the seller)
 
 When the resolution happens, regardless of the result, a new notification will be sent via **IPN** so that it can be verified what happened.
