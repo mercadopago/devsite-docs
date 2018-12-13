@@ -33,6 +33,33 @@ La siguiente tabla contiene a los recursos migrados y sus equivalentes.
 | Búsqueda de pagos       | `GET`  | /payments/search                       | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
 | Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
 
+### Versiones migradas de las herramientas de Mercado Pago
+
+A partir de las siguientes versiones de cada una de las herramientas de Mercado Pago se deja de dar soporte a la versión 0 del API:
+
+| Herramienta      | Versión |
+|------------------|---------|
+| Magento 1.x      | 2.11.4  |
+| Magento 2.x      | 2.2.0   |
+| Opencart 3.x     | 4.1     |
+| Opencart 2.3     | 3.2     |
+| WooCommerce      | 3.0.17  |
+| WPCommerce       | 4.2.6   |
+| OsCommerce       | none    |
+| VirtueMart       | 2.2.0   |
+| ZenCart          | 1.0.3   |
+| Prestashop 1.6.x | 3.1.0   |
+| Prestashop 1.7.x | 1.0.12  |
+| SDK PHP 0.x      | 0.5.3   |
+| SDK PHP 1.x      | 1.1.4   |
+| SDK Java 0.x     | 0.3.5   |
+| SDK Java 1.x     | 1.0.19  |
+| SDK .net 0.x     | 0.3.4   |
+| SDK .net 1.x     | 1.0.10  |
+| SDK ruby 0.x     | 0.3.6   |
+| SDK python 0.x   | 0.3.5   |
+| SDK NodeJS 1.x   | 1.0.16  |
+
 ### Ejemplos
 
 #### Búsqueda de un pago
