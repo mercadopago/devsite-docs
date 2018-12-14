@@ -362,7 +362,7 @@ En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar
 <?php
 
   $filters = array(
-    "id"=>"247711297-jxOV430go9fx2e"
+    "email"=>"test@test.com"
   );
 
   $customers = MercadoPago\Customer::search($filters);
