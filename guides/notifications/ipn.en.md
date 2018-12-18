@@ -14,7 +14,7 @@ In order to receive notifications about the events in your platform, you have to
 
 ## Events
 
-We notify events related to your orders (`merchant_orders`) or received `payments` (payment).
+We notify events related to your orders (`merchant_orders`), received chargebacks (`chargebacks`) or received payments (`payment`).
 
 A `merchant_order` is an entity that groups payments as well as shipments. You will have to check the data of the orders notified to you.
 
@@ -32,7 +32,7 @@ Mercado Pago will notify to this URL whenever a resource is created or when orde
 
 | Field 		| Description 				 |
 | ---- 		| ---- 				 |
-| `topic` | Identifies the type of resource. It may be `payment` or `merchant_order` |
+| `topic` | Identifies the type of resource. It may be `payment`, `chargebacks` or `merchant_order` |
 | `id` | A unique identification of the notified resource. |
 
 
@@ -49,6 +49,7 @@ After that, you will be able to get full information about the notified resource
 Type               | URL                                                         | Documentation
 ------------------ | ----------------------------------------------------------- | --------------------
 payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| [see documentation]()
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](/reference/merchant_orders/_merchant_orders_id/get/)
 
 

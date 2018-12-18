@@ -13,7 +13,7 @@ Para receber as notificações dos eventos na sua plataforma, deve-se configurar
 
 ## Eventos
 
-Notificamos eventos relacionados aos seus pedidos (`merchant_orders`) ou pagamentos recebidos (`payment`).
+Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
 
 A `merchant_order` é uma entidade que pode conter tanto pagamentos como envios. Você terá que consultar os dados dos pedidos notificados.
 
@@ -31,7 +31,7 @@ O Mercado Pago informará essa URL quando um recurso for criado ou quando houver
 
 | Campo 		| Descrição   				 |
 | ---- 		| ---- 				 |
-| `topic` | Identifica do que se trata o recurso. Pode ser `payment` ou `merchant_order ` |
+| `topic` | Identifica do que se trata o recurso. Pode ser `payment`, `chargebacks` ou `merchant_order ` |
 | `id` | É um identificador único do recurso notificado. |
 
 Exemplo: Se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
@@ -47,6 +47,7 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
 payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| [ver documentação]()
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](/reference/merchant_orders/_merchant_orders_id/get/)
 
 
