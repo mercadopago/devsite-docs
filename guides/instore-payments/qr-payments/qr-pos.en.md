@@ -115,7 +115,7 @@ Consult the [full documentation](https://www.mercadopago.com.mx/developers/en/re
 
 ## Payments
 
-### QR Creation
+### Create QR
 
 You must create a QR code for each POS with an `external_id` that identifies it.
 

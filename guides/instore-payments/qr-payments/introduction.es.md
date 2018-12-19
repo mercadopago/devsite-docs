@@ -44,8 +44,7 @@ Para poder pagar, tus clientes deben descargar la App desde el store de su telé
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- |
 | [QR sin integración](/guides/instore-payments/qr-payments/qr-static.es.md) | Generas el QR desde tu portal de Mercado Pago, así el comprador escanea tu código y puede enviarte dinero. Debe ingresar el monto en forma manual. | No                      |
 | [QR Punto de Venta](/guides/instore-payments/qr-payments/qr-pos.es.md) | Integrando a tu sistema de punto de venta la opción de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza la descripción de lo que compró y el monto que debe pagar. | Si                      |
-| [QR Petrolera](/guides/instore-payments/qr-payments/qr-gas-station.es.md) | Integrando a tu sistema de gestión la modalidad de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza el monto que debe pagar. | Si                      |
-| [QR Vending](/guides/instore-payments/qr-payments/qr-vending.es.md) | Integrando a el sistema de la vending machine. Tu cliente escanea el código, ingresa el código de la máquina y en su celular se disponibiliza la descripción de lo que compró y el monto que debe pagar. | Si                      |
+| [QR Petroleras](/guides/instore-payments/qr-payments/qr-gas-station.es.md) | Integrando a tu sistema de gestión la modalidad de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza el monto que debe pagar. | Si                      |
 
 En base a tu modelo de negocio, puede escoger alguna de las opciones o combinarlas para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 
