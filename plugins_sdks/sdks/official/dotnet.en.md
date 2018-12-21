@@ -36,7 +36,7 @@ This library provides developers with a simple set of bindings to the Mercado Pa
 ```
 -**For API or custom checkout:**
 ```csharp
- MercadoPago.SDK.ClientSecret = "YOUR_ACCESS_TOKEN";
+ MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
 ```
 3. Using resource objects
 You can interact with all the resources available in the public API, to this each resource is represented by classes according to the following diagram:
@@ -49,7 +49,7 @@ You can interact with all the resources available in the public API, to this eac
  using MercadoPago.DataStructures.Payment;
  using MercadoPago.Common;
 
- MercadoPago.SDK.ClientSecret = "YOUR_ACCESS_TOKEN";
+ MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
 
  Payment payment = new Payment
  {

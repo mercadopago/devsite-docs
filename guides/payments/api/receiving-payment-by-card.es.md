@@ -347,7 +347,7 @@ using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
 // ...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment()
 {
@@ -533,7 +533,7 @@ using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
 //...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment()
 {

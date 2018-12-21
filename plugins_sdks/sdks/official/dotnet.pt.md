@@ -42,7 +42,7 @@ Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações pa
 -**Para API ou custom checkout:**
 
 ```csharp
- MercadoPago.SDK.ClientSecret = "YOUR_ACCESS_TOKEN";
+ MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
 ```
 
 3. Usando resource objects
@@ -57,7 +57,7 @@ Você pode interagir com todos os recursos disponíveis na API pública para que
  using MercadoPago.DataStructures.Payment;
  using MercadoPago.Common;
 
- MercadoPago.SDK.ClientSecret = "YOUR_ACCESS_TOKEN";
+ MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
 
  Payment payment = new Payment
  {
