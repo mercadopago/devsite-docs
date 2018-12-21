@@ -5,19 +5,19 @@ properties:
     type: String
     description:
       en: Chargeback identifier
-      es: Contracargo identificador
+      es: Identificador de Contracargo
       pt: Estorno identificador
 - payments:
     type: Array(Integer)
     description:
       en: List of payments ids associated to the case
-      es: La lista de pagos identificadores asociados para el caso
+      es: Lista de pagos con identificadores asociados al caso
       pt: Lista de pagamentos ids associados para o caso
 - currency:
     type: String
     description:
       en: 'Amount''s currency '
-      es: 'Cantidad de moneda '
+      es: 'Monto de dinero '
       pt: 'Quantidade da moeda '
 - amount:
     type: Float
@@ -35,13 +35,13 @@ properties:
     type: Boolean
     description:
       en: Whether the chargeback complies with the conditions to be covered
-      es: Si la devolución cumple con las condiciones para ser cubiertos
+      es: Si la devolución cumple con las condiciones para ser cubierta
       pt: Se o estorno está em conformidade com as condições a serem cobertos
 - documentation_required:
     type: Boolean
     description:
       en: Whether the seller needs to send documentation for this chargeback
-      es: Si el vendedor debe enviar la documentación para este contracargo
+      es: Si el vendedor debe enviar la documentación para el contracargo
       pt: Se o vendedor precisa enviar a documentação para este estorno
 - documentation_status:
     type: String
@@ -52,40 +52,40 @@ properties:
     enum:
     - pending:
         en: No documentation has been received
-        es: No documentation has been received
+        es: No se ha recibdo documentacion
         pt: No documentation has been received
     - review_pending:
         en: Documentation received, waiting for decision to be taken
-        es: Documentation received, waiting for decision to be taken
+        es: Documentacion recibida, esperando por la toma de decision.
         pt: Documentation received, waiting for decision to be taken
     - valid:
         en: The documentation received is valid
-        es: The documentation received is valid
+        es: La documentacion recibida es valida.
         pt: The documentation received is valid
     - invalid:
         en: The documentation received is invalid
-        es: The documentation received is invalid
+        es: La documentacion recibida es invalida.
         pt: The documentation received is invalid
     - not_supplied:
         en: The documentation wasn't supplied on time
-        es: The documentation wasn't supplied on time
+        es: La documentación no fue entregada a tiempo.
         pt: The documentation wasn't supplied on time
     - not_applicable:
         en: Documentation wasn't needed for this chargeback
-        es: Documentation wasn't needed for this chargeback
+        es: La documentacion no es necesaria para este contracargo.
         pt: Documentation wasn't needed for this chargeback
 - documentation:
     type: Array(Object)
     description:
       en: List of documentation received from the seller
-      es: Lista de la documentación recibida del vendedor
+      es: Lista de  documentación recibida del vendedor
       pt: Lista da documentação recebida do vendedor
     properties:
     - type:
         type: String
         description:
           en: Documentation's file type
-          es: De la documentación de tipo de archivo
+          es: tipo de archivo de documentacion.
           pt: Documentação de arquivo do tipo
     - url:
         type: String
@@ -97,29 +97,29 @@ properties:
         type: String
         description:
           en: Documentation's description
-          es: La documentación de la descripción
+          es: Descripcion de la documentacion.
           pt: Documentação de descrição do
 - date_documentation_deadline:
     type: Date(ISO_8601)
     description:
       en: Chargeback's last day to send documentation
-      es: Cargo el último día para el envío de documentación
+      es: último día para el envío de documentación del contracargo
       pt: Chargeback é o último dia para enviar a documentação
 - date_created:
     type: Date(ISO_8601)
     description:
       en: Chargeback’s creation date
-      es: Cargo fecha de creación
+      es: Fecha de creación del contracargo
       pt: Estorno data de criação
 - date_last_updated:
     type: Date(ISO_8601)
     description:
       en: Chargeback's last modified date
-      es: Cargo fecha de última modificación
+      es: Fecha de última modificación del contracargo.
       pt: Estorno data da última modificação
 - live_mode:
     type: Boolean
     description:
       en: Whether the chargeback will be processed in sandbox or in production mode
-      es: Si la devolución será procesada en el espacio o en el modo de producción
+      es: Si la devolución será procesada en el "sandbox" o en el modo de producción
       pt: Se o estorno será processada na caixa de areia ou em modo de produção
