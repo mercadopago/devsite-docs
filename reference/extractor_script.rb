@@ -10,7 +10,7 @@ module Extractor
 
   # APIs to explore 
   APIS = { 
-    card_tokens: 'v1/card_tokens/'
+    chargebacks: 'v1/chargebacks/'
   }
 
   @@get_attributes    = Array.new
@@ -55,8 +55,8 @@ module Extractor
       result[k]["type"] = v["data_type"]
       result[k]["description"] = { 
         "en" => v["description"],
-        "es" => v["description"],#self.yandex_translate(CGI.escape(v["description"]), "en-es"),
-        "pt" => v["description"]#self.yandex_translate(CGI.escape(v["description"]), "en-pt")
+        "es" => self.yandex_translate(CGI.escape(v["description"]), "en-es"),
+        "pt" => self.yandex_translate(CGI.escape(v["description"]), "en-pt")
       } 
       result[k]["properties"] = self.parse_recursive(v["attributes"], false) if v["attributes"]
       result[k]["enum"] = v["values"].map{
@@ -142,20 +142,20 @@ module Extractor
 
       on_get_file.write(YAML.dump({
         "resource" => "#{name}.raml",
-        "use" => Extractor.get_attributes,
-        "errors" => self.parse_errors(json["errors"]) 
+        "use" => Extractor.get_attributes#,
+        #"errors" => self.parse_errors(json["errors"]) 
       }))
 
       on_post_file.write(YAML.dump({
         "resource" => "#{name}.raml",
-        "use" => Extractor.post_attributes,
-        "errors" => self.parse_errors(json["errors"]) 
+        "use" => Extractor.post_attributes #,
+        #"errors" => self.parse_errors(json["errors"]) 
       }))
 
       on_put_file.write(YAML.dump({
         "resource" => "#{name}.raml",
-        "use" => Extractor.put_attributes,
-        "errors" => self.parse_errors(json["errors"]) 
+        "use" => Extractor.put_attributes#,
+        #"errors" => self.parse_errors(json["errors"]) 
       }))
     end
  

@@ -52,5 +52,5 @@
   <div class = "two-table-header">
     <span>Code</span><span>Description</span>
   </div>  
-  <%= builder.build_two_cols(method.errors) %>
+  <%= builder.build_two_cols(method.errors) rescue "" %>
 </div>

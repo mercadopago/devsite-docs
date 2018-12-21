@@ -1,0 +1,20 @@
+---
+resource: chargebacks.raml
+use:
+- id
+- payments
+- currency
+- amount
+- coverage_applied
+- coverage_elegible
+- documentation_required
+- documentation_status
+- documentation
+- type
+- url
+- description
+- date_documentation_deadline
+- date_created
+- date_last_updated
+- live_mode
+errors:
