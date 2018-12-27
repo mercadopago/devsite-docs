@@ -11,7 +11,7 @@ sites_supported:
 >
 > Pré-requisitos
 >
-> * Possuir a [captura de dados do cartão implementada](/guides/payments/api/receiving-payment-by-card.pt.md).
+> * Possuir a [captura de dados do cartão implementada](/guides/payments/api/receiving-payment-by-card.pt.md#bookmark_capture_os_dados_do_cartão).
 
 ## Atributos adicionais
 
