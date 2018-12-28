@@ -13,4 +13,8 @@ How long should I wait to use the money?
 When you receive money from a sale or collect in your online business, you will have the money available 14 days after the payment is credited.
 
 
-Do you want to know when the money from one of your sales will be available? Find the transaction between your [accredited charges](http://www.mercadopago.com.ar/ayuda/payments) and in the detail we inform the exact date.
+> NOTE
+>
+> Note
+>
+> Do you want to know when the money from one of your sales will be available? Find the transaction between your [accredited charges](http://www.mercadopago.com.ar/ayuda/payments) and in the detail we inform the exact date.

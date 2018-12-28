@@ -1,13 +1,20 @@
 ## Cobros
 
-### Cómo puedo contactar a un representante comercial de Mercado Pago
+### > Cuánto cuesta recibir pagos
 
-Te pedimos que completes este [formulario](https://goo.gl/23YqyB) y nuestro equipo comercial te contactará para poder ayudarte.
+Para saber cuánto cuesta recibir dinero en Mercado Pago, consulta las [tasas según cada caso](https://www.mercadopago.com.ar/ayuda/comision-recibir-pagos_220).
 
-Recuerda que para consultas sobre tus pagos o cobros siempre podés consultar nuestro [portal de ayuda.](https://www.mercadopago.com.ar/ayuda)
+### > Si recibo el pago de una venta, ¿cuándo podré usar el dinero?
 
-### Soporte técnico
+Cuando recibes un pago a través de Mercado Pago, no podés usar el dinero inmediatamente, sino que tienes que esperar a que esté disponible.
 
-¿Tienes algún caso concreto con tu integración que no podés resolver?
+¿Cuánto tiempo debo esperar para usar el dinero?
 
-No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico](https://www.mercadopago.com.ar/developers/es/support).
+Cuando recibes dinero de una venta o cobras en tu negocio online tendrás el dinero disponible 14 días después de que se acredita el pago.
+
+
+> NOTE
+>
+> Nota
+>
+> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](http://www.mercadopago.com.ar/ayuda/payments), y en el detalle te diremos la fecha exacta.
