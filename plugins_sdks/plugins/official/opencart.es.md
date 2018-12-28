@@ -77,8 +77,8 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 | [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)               | Deprecada (Old Versión)  | OpenCart v1.4.9       |
 | [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)               | Deprecada (Old Versión)  | OpenCart v1.5.x       |
 | [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)  | Deprecada (Old Versión)  | OpenCart v2.x - v2.2  |
-| [v2.3](https://github.com/mercadopago/cart-opencart/tree/master/v2.3)                   | Estable (Current Versión)  | OpenCart v2.3         |
-| [v3.x](https://github.com/mercadopago/cart-opencart/tree/master/v3.x)                   | Estable (Current Versión)  | OpenCart v3.x         |
+| [v2.3](https://github.com/mercadopago/cart-opencart-2)                                  | Estable (Current Versión)  | OpenCart v2.3     |
+| [v3.x](https://github.com/mercadopago/cart-opencart-3)                                  | Estable (Current Versión)  | OpenCart v3.x     |
 
 
 ## Instalación
