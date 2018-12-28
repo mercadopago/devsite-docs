@@ -14,13 +14,13 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - Protegemos tu dinero, siempre. No tienes que preocuparte de nada. Si tuvieras algún problema, te respaldaremos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
-[Integrar Web Checkout.](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Web Checkout.](/guides/payments/web-checkout/introduction.es.md)
 
 #### Mobile Checkout
 
 A diferencia de Web Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida para que puedas ofrecer la mejor experiencia y los mejores medios de pago.
 
-[Integrar Mobile Checkout.](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Mobile Checkout.](/guides/payments/mobile-checkout/introduction.es.md)
 
 #### Web Tokenize
 
@@ -32,7 +32,7 @@ Es la versión simplificada del Web Checkout con una experiencia de usuario reno
 
 - Siempre vas a estar actualizado. Podés brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.br/developers/pt/guides/payments/web-tokenize-checkout/introduction/)
+[Integrar Web Tokenize](guides/payments/web-tokenize-checkout/introduction.es.md)
 
 #### API
 
@@ -42,7 +42,7 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 -   Tu equipo técnico tiene el control total. Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
-[Integrar por API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction/)
+[Integrar por API](/guides/payments/api/introduction.es.md)
 
 ### Cómo ofrecer descuentos
 
@@ -72,7 +72,7 @@ Tu cliente paga sin interés y vos absorbés el costo de financiación, por eso 
 
 ### Cómo gestionar las ventas de clientes en mi sitio
 
-Para poder gestionar vendedores y que puedan hacer transacciones comerciales en tu sitio tenés que [crear un Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/introduction/).
+Para poder gestionar vendedores y que puedan hacer transacciones comerciales en tu sitio tenés que [crear un Marketplace](/guides/marketplace/web-checkout/introduction.es.md).
 
 Un Marketplace es un sitio o aplicación que te permite hacer cobros a nombre de los vendedores y cobrar una comisión por cada uno si así lo quisieras. Cuando se genera un pago, el dinero es dividido al instante entre la cuenta de tus vendedores y la tuya.
 
