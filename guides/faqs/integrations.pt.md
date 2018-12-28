@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - global
+---
+
 ## Integrações
 
 ### Como me integrar ao Mercado Pago

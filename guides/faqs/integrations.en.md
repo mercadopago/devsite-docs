@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - global
+---
+
 ## Integrations
 
 ### How to integrate to Mercado Pago

@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - global
+---
+
 ## Cobros
 
 ### > Cuánto cuesta recibir pagos

@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - global
+---
+
 ## Contacto
 
 ### Cómo puedo contactar a un representante comercial de Mercado Pago

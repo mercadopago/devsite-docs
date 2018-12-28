@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - global
+---
+
 ## Mi cuenta
 
 ### Cuánto cuesta recibir pagos

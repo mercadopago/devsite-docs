@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - global
+---
+
 ## Credenciales
 
 ### Dónde puedo encontrar mis credenciales

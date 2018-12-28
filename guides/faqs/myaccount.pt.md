@@ -1,3 +1,10 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - global
+---
+
 ## Minha conta
 
 ### Quero alterar os dados da minha conta
