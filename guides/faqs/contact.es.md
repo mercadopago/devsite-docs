@@ -27,7 +27,7 @@ Con la cuenta vendedor vas a tener opciones exclusivas para tu negocio:
 
 - [Cobrar con QR](https://www.mercadopago.com.ar/como-cobrar/codigo-qr) que permite como opción recibir tu dinero al instante.
 
-- Utilizar tu [lector point](https://www.mercadopago.com.ar/lector-tarjetas-credito-point) y llevarlo a donde necesites sin costos extras de alquiler.
+- Utilizar tu [lector Point](https://www.mercadopago.com.ar/lector-tarjetas-credito-point) y llevarlo a donde necesites sin costos extras de alquiler.
 
 - Te pueden pagar en [cuotas sin interés y promociones](https://www.mercadopago.com.ar/promociones) con tarjetas de crédito de distintos bancos.
 
