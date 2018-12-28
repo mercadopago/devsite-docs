@@ -1,3 +1,5 @@
+## Mi cuenta
+
 ### Cuánto cuesta recibir pagos
 
 Para saber cuánto cuesta recibir dinero en Mercado Pago, consulta las [tasas según cada caso](https://www.mercadopago.com.ar/ayuda/comision-recibir-pagos_220).

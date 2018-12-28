@@ -15,6 +15,7 @@ Si quieres corregir tu nombre y/o tu DNI o cambiar la titularidad de tu cuenta, 
 ### No puedo usar mi cuenta
 
 Si crees que tu cuenta fue suspendida, podés confirmarlo [validando tu cuenta](https://www.mercadolibre.com.ar/ayuda/validateUser).
+## Contacto
 
 ### Beneficios de la cuenta vendedor
 

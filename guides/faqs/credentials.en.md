@@ -1,3 +1,5 @@
+## Credentials
+
 ### Where to find my credentials
 
 Your credentials are the keys that we provided you so that you could make your integrations. They are available in your Mercado Pago account, in the [Credentials section](https://www.mercadopago.com/mla/account/credentials).

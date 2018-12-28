@@ -1,3 +1,5 @@
+## Integraciones
+
 ### Cómo integrarme a Mercado Pago
 
 Te ofrecemos distintas opciones para que puedas construir la solución de pagos que más se adapte a tu negocio.

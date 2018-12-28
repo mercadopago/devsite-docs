@@ -1,3 +1,5 @@
+## Credenciales
+
 ### Dónde puedo encontrar mis credenciales
 
 Tus credenciales son las claves que te proporcionamos para que puedas realizar tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadopago.com/mla/account/credentials).

@@ -1,3 +1,5 @@
+## Contact
+
 ### Technical Support
 
 Do you have a specific case with your integration that you cannot solve?

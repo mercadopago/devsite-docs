@@ -1,3 +1,5 @@
+## Integrations
+
 ### How to integrate to Mercado Pago
 
 We offer different options so you can build the payment solution that best suits your business.

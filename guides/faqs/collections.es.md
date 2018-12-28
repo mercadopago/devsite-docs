@@ -1,3 +1,5 @@
+## Cobros
+
 ### Cómo puedo contactar a un representante comercial de Mercado Pago
 
 Te pedimos que completes este [formulario](https://goo.gl/23YqyB) y nuestro equipo comercial te contactará para poder ayudarte.

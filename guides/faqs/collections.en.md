@@ -1,3 +1,5 @@
+## Collections
+
 ### How much does it cost to receive payments
 
 To know how much it costs to receive money in Mercado Pago, check the [rates according to each case](https://www.mercadopago.com.ar/ayuda/comision-recibir-pagos_220).
