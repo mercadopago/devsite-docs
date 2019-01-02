@@ -7,11 +7,11 @@ sites_supported:
 
 # Recibiendo un pago en modo gateway
 
-> WARNING		 
+> WARNING
 > 
 > Pre-requisitos
 >
-> * Tener implementada la [captura de datos de tarjeta](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
+> * Tener implementada la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#bookmark_captura_los_datos_de_tarjeta).
 
 ## Atributos adicionales
 

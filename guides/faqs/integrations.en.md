@@ -33,13 +33,14 @@ Unlike Web Checkout, we facilitate the creation of a payment experience but from
 
 ### Web Tokenize
 
+
 It's the simplified version of the Web Checkout with a renewed user experience.
 
--   Don't worry about the design. We provide you with a form with design and front-end ready for you to use.
+- Don't worry about the design. We provide you with a form with design and front-end ready for you to use.
 
--   We take care of your security. We capture the sensitive data of the cards within the secure environment of Mercado Pago, so that you can be PCI Compliant and that you can customize the entire process free of the complexities of security protocols.
+- We take care of your security. We capture the sensitive data of the cards within the secure environment of Mercado Pago, so that you can be PCI Compliant and that you can customize the entire process free of the complexities of security protocols.
 
--   You will always be up to date. You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
+- You will always be up to date. You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
 
 [Integrar Web Tokenize](/guides/payments/web-tokenize-checkout/introduction.en.md)
 
@@ -47,9 +48,9 @@ It's the simplified version of the Web Checkout with a renewed user experience.
 
 This way of integrating allows you to connect directly with our APIs.
 
--   Become the owner of your experience. We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
+- Become the owner of your experience. We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
 
--   Your technical team has total control. They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
+- Your technical team has total control. They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
 [Integrar por API](guides/payments/api/introduction.en.md)
 

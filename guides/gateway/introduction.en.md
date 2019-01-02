@@ -19,4 +19,4 @@ Mercado Pago offers you the possibility of operating with your own merchant numb
 * Nevertheless, you will be able to freely use the [_Sandbox_](/guides/payments/api/testing.en.md) mode to test the product operation and advance your integration.
 
 
-+[_Next Steps_](guides/gateway/receiving-payment.en.md)
++[_Next Steps_](/guides/gateway/receiving-payment.en.md)

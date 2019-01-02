@@ -11,7 +11,7 @@ sites_supported:
 >
 > Prerequisites
 >
-> * Have the [card information capture](receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta) implemented.
+> * Have the [card information capture](/guides/payments/api/receiving-payment-by-card.en.md#bookmark_collect_card_information) implemented.
 
 ## Additional attributes
 
