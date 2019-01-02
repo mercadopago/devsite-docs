@@ -5,15 +5,15 @@ sites_supported:
   - global
 ---
 
-## Contato
+# Contato
 
-### Como posso falar com um representante comercial do Mercado Pago
+## Como posso falar com um representante comercial do Mercado Pago
 
 Preencha este [formulário](https://goo.gl/emptak) e nossa equipe comercial entrará em contato para ajudá-lo.
 
 Lembre-se que para consultas sobre seus pagamentos ou cobranças, você pode conferir o nosso [portal de ajuda.](https://www.mercadopago.com.br/ajuda)
 
-### Suporte técnico
+## Suporte técnico
 
 Você tem uma questão específica com sua integração que não consegue resolver?
 

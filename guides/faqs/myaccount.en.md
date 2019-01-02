@@ -5,9 +5,9 @@ sites_supported:
   - global
 ---
 
-## My account
+# My account
 
-### I want to change details in my account
+## I want to change details in my account
 
 Have the links at hand and change the details needed:
 
@@ -21,6 +21,6 @@ Have the links at hand and change the details needed:
 
 If you want to correct your name and/or your ID or change the ownership of your account, you can request this change from Mercado Libre > [My details](https://myaccount.mercadolibre.com.ar/profile) > Personal data > 'I need help'.
 
-### I cannot use my account
+## I cannot use my account
 
 If you believe your account has been suspended, you can confirm it [validating your account](https://www.mercadolibre.com.ar/ayuda/validateUser).

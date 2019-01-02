@@ -5,9 +5,9 @@ sites_supported:
   - global
 ---
 
-## Minha conta
+# Minha conta
 
-### Quero alterar os dados da minha conta
+## Quero alterar os dados da minha conta
 
 Tenha à mão os links e modifique os dados que precisar:
 
@@ -23,11 +23,11 @@ Tenha à mão os links e modifique os dados que precisar:
 
 - [Parar de receber avisos gerais](https://www.mercadopago.com/mlb/account/mydata/emails), não vamos mais enviar novidades, alterações em nossos Termos e condições, promoções etc.
 
-### Não posso usar a minha conta
+## Não posso usar a minha conta
 
 Se você acredita que sua conta tenha sido suspensa, pode [validá-la para confirmar](https://www.mercadolivre.com.br/ajuda/validateUser).
 
-### Benefícios da conta vendedor
+## Benefícios da conta vendedor
 
 Onde você acessa as nossas ferramentas exclusivas para vendedores:
 
@@ -41,6 +41,6 @@ Quer experimentar a sua conta de vendedor por 30 dias? [Experimente agora mesmo]
 
 Ao terminar o período de teste, sua conta pessoal será automaticamente convertida para uma conta de vendedor.
 
-Posso cancelar o teste?
+### Posso cancelar o teste?
 
 Sim, você pode cancelá-lo a qualquer momento. Mas fazendo isso, não terá acesso às ferramentas exclusivas para vendedores, as configurações que você fez serão excluídas e não será possível testar a conta de vendedor novamente.

@@ -5,13 +5,13 @@ sites_supported:
   - global
 ---
 
-## Credenciales
+# Credenciales
 
-### Dónde puedo encontrar mis credenciales
+## Dónde puedo encontrar mis credenciales
 
 Tus credenciales son las claves que te proporcionamos para que puedas realizar tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadopago.com/mla/account/credentials).
 
-### Mis credenciales expiraron, ¿cómo puedo renovarlas?
+## Mis credenciales expiraron, ¿cómo puedo renovarlas?
 
 Podés renovar tus credenciales desde la [sección Credenciales](https://www.mercadopago.com/mla/account/credentials).
 
@@ -19,7 +19,7 @@ Por motivos de seguridad las credenciales caducan pero no te preocupes, las pod�
 
 Tené en cuenta que tienes que reemplazar las credenciales que ya usabas por las nuevas.
 
-### Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
+## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
 Tenés que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales](https://www.mercadopago.com/mla/account/credentials).
 
