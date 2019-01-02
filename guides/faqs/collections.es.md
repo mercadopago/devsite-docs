@@ -5,13 +5,13 @@ sites_supported:
   - global
 ---
 
-## Cobros
+# Cobros
 
-### > Cuánto cuesta recibir pagos
+## Cuánto cuesta recibir pagos
 
 Para saber cuánto cuesta recibir dinero en Mercado Pago, consulta las [tasas según cada caso](https://www.mercadopago.com.ar/ayuda/comision-recibir-pagos_220).
 
-### > Si recibo el pago de una venta, ¿cuándo podré usar el dinero?
+## Si recibo el pago de una venta, ¿cuándo podré usar el dinero?
 
 Cuando recibes un pago a través de Mercado Pago, no podés usar el dinero inmediatamente, sino que tienes que esperar a que esté disponible.
 

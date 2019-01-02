@@ -5,15 +5,15 @@ sites_supported:
   - global
 ---
 
-## Integrações
+# Integrações
 
-### Como me integrar ao Mercado Pago
+## Como me integrar ao Mercado Pago
 
 Oferecemos diferentes opções para que você possa elaborar a solução de pagamentos que melhor se adapte ao seu negócio.
 
 Temos ferramentas prontas para uso como SDKs, botões de pagamento, módulos ou plugins e também uma API flexível e robusta para que você possa criar sua própria experiência de pagamento.
 
-#### Web Checkout
+### Web Checkout
 
 Esta opção permite cobrar através do nosso formulário web dentro do ambiente seguro do Mercado Pago de maneira simples, rápida e segura.
 
@@ -25,13 +25,13 @@ Esta opção permite cobrar através do nosso formulário web dentro do ambiente
 
 [Integrar Web Checkout.](/guides/payments/web-checkout/introduction.pt.md)
 
-#### Mobile Checkout
+### Mobile Checkout
 
 Diferente do Web Checkout, facilitamos a criação de uma experiência de pagamento pelo app através do nosso SDK. É uma integração simples e rápida, para que você possa oferecer a melhor experiência e os melhores meios de pagamento.
 
 [Integrar Mobile Checkout.](/guides/payments/mobile-checkout/introduction.pt.md)
 
-#### Web Tokenize
+### Web Tokenize
 
 É a versão simplificada do Web Checkout com uma experiência de usuário renovada.
 
@@ -43,7 +43,7 @@ Diferente do Web Checkout, facilitamos a criação de uma experiência de pagame
 
 [Integrar Web Tokenize](/guides/payments/web-tokenize-checkout/introduction.pt.md)
 
-#### API
+### API
 
 Esta forma de integração permite que você se conecte diretamente com as nossas APIs.
 
@@ -53,13 +53,13 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 
 [Integrar por API](/guides/payments/api/introduction.pt.md)
 
-### Como oferecer descontos
+## Como oferecer descontos
 
 É muito simples, você escolhe quanto e quando quer investir e pronto. Sem custos adicionais!
 
 Você pode [oferecer descontos e gerar cupons](https://www.mercadopago.com.br/settings/my-business) com descontos de valores fixos ou percentuais, conforme necessário, pelos seus botões ou links de pagamento. Você também pode habilitá-los para todos os seus compradores ou somente para alguns deles.
 
-### Posso oferecer pagamentos com cartão de débito?
+## Posso oferecer pagamentos com cartão de débito?
 
 Por enquanto, não oferecemos a opção de pagamento com cartão de débito.
 
@@ -67,7 +67,7 @@ Isso porque os bancos emissores de cartão no Brasil ainda não dispõem de uma 
 
 Mas, não se preocupe, há outros [meios de pagamento disponíveis](https://www.mercadopago.com.br/ajuda/meios-de-pagamentos-vendedores_474) para oferecer para os seus compradores.
 
-### Como oferecer assinaturas
+## Como oferecer assinaturas
 
 Você pode criar um botão de assinatura que permitirá que você receba pagamentos periodicamente. Você escolhe quanto quer cobrar e seus clientes podem cadastrar o débito automático com um cartão de crédito.
 
@@ -77,7 +77,7 @@ Você pode usá-lo para o que quiser, como cobrar mensalidades de academia, alug
 
 [[Criar botão de assinatura]](http://www.mercadopago.com.br/receive-payments/tools)
 
-### Como oferecer parcelamento sem juros
+## Como oferecer parcelamento sem juros
 
 Criamos uma ferramenta para que você possa oferecer promoções de parcelamento sem juros e tornar seu negócio mais atrativo.
 
@@ -87,16 +87,20 @@ Seu cliente paga sem juros, e você absorve o custo do financiamento, por isso, 
 
 [[Oferecer parcelamento sem juros](https://www.mercadopago.com/mlb/front/cost-absorption)]
 
-### Como oferecer o Mercado Envios
+## Como oferecer o Mercado Envios
 
 Por enquanto, não oferecemos a opção de habilitar o Mercado Envios aos novos negócios que se integrem, porque isso pode gerar erro. Esta opção está disponível somente para as vendas no Mercado Livre.
 
 Sentimos muito, mas, lembre-se de que você pode usar as nossas [ferramentas exclusivas para vendedores](/guides/faqs/myaccount.pt.md) quando quiser.
 
-### Como gerenciar as vendas de clientes no meu site
+## Como gerenciar as vendas de clientes no meu site
 
 Para gerenciar vendedores e que eles possam fazer transações comerciais no seu site, você deve [criar um Marketplace](/guides/marketplace/web-checkout/introduction.pt.md).
 
 Um Marketplace é um site ou aplicativo que permite que você faça cobranças em nome dos vendedores e cobre uma comissão por cada uma, se quiser. Quando um pagamento é gerado, o valor é dividido na mesma hora entre a conta dos seus vendedores e a sua.
 
-[Nota] A comissão do Mercado Pago será descontada dos fundos que o vendedor receber. Primeiro é descontada a comissão do Mercado Pago, e a comissão do Marketplace é descontada do restante.
+> NOTE
+>
+> Nota
+>
+> A comissão do Mercado Pago será descontada dos fundos que o vendedor receber. Primeiro é descontada a comissão do Mercado Pago, e a comissão do Marketplace é descontada do restante.

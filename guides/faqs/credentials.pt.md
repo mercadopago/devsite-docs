@@ -5,13 +5,13 @@ sites_supported:
   - global
 ---
 
-## Credenciais
+# Credenciais
 
-### Onde encontro minhas credenciais
+## Onde encontro minhas credenciais
 
 Suas credenciais são as Chaves que proporcionamos para que você possa fazer suas integrações. Elas estão disponíveis na sua conta no Mercado Pago, na [seção "Credenciais"](https://www.mercadopago.com/mlb/account/credentials).
 
-### Minhas credenciais expiraram, como posso renová-las?
+## Minhas credenciais expiraram, como posso renová-las?
 
 Você pode renovar suas credenciais pela [seção "Credenciais"](https://www.mercadopago.com/mlb/account/credentials).
 
@@ -19,7 +19,7 @@ Por motivos de segurança, as credenciais vencem, mas, não se preocupe, você p
 
 Lembre-se que você deve substituir as credenciais que já usava pelas novas.
 
-### Já estou integrado e fiz testes. Como implemento em produção?
+## Já estou integrado e fiz testes. Como implemento em produção?
 
 Para ir a produção, você deve preencher o formulário "Quero ir a produção" que se encontra na [seção "Credenciais"](https://www.mercadopago.com/mla/account/credentials).
 

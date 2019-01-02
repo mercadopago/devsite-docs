@@ -5,13 +5,13 @@ sites_supported:
   - global
 ---
 
-## Collections
+# Collections
 
-### How much does it cost to receive payments
+## How much does it cost to receive payments
 
 To know how much it costs to receive money in Mercado Pago, check the [rates according to each case](https://www.mercadopago.com.ar/ayuda/comision-recibir-pagos_220).
 
-### If I receive payment for a sale, when can I use the money?
+## If I receive payment for a sale, when can I use the money?
 
 When you receive a payment through Mercado Pago, you cannot use the money immediately, you must wait for it to be available.
 

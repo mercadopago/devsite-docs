@@ -5,9 +5,9 @@ sites_supported:
   - global
 ---
 
-## Contact
+# Contact
 
-### Technical Support
+## Technical Support
 
 Do you have a specific case with your integration that you cannot solve?
 
