@@ -10,19 +10,19 @@ Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plu
 
 ### Web Checkout
 
-Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple, rápida y segura.
+Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
-- **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo click y hasta con la posibilidad de pagar con 2 tarjetas.
+- **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo clic y  con la posibilidad de pagar con 2 tarjetas.
 
-- **Ofrece los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), sin que hagas nada y podés [ofrecer cuotas con sin interés](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) con la mejor financiación.
+- **Ofrecé los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), sin que hagas nada y podés [ofrecer cuotas con sin interés](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) con la mejor financiación.
 
-- **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tuvieras algún problema, te respaldaremos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
+- **Protegemos tu dinero, siempre.** No tenés que preocuparte de nada. Si tenés algún problema, te respaldamos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
 [Integrar Web Checkout](/guides/payments/web-checkout/introduction.es.md)
 
 ### Mobile Checkout
 
-A diferencia de Web Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida para que puedas ofrecer la mejor experiencia y los mejores medios de pago.
+A diferencia de Web Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago. 
 
 [Integrar Mobile Checkout](/guides/payments/mobile-checkout/introduction.es.md)
 
@@ -30,9 +30,9 @@ A diferencia de Web Checkout, te facilitamos la creación de una experiencia de 
 
 Es la versión simplificada del Web Checkout con una experiencia de usuario renovada.
 
-- **Despreocúpate del diseño.** Te proporcionamos un formulario con diseño y front-end listo para que puedas usar.
+- **Despreocupate del diseño.** Te damos un formulario con diseño y front-end listo para que puedas usar.
 
-- **Nos ocupamos de tu seguridad.** Capturamos los datos sensibles de las tarjetas dentro del ambiente seguro de Mercado Pago, para que puedas ser PCI Compliance y que puedas personalizar todo el proceso libre de las complejidades de los protocolos de seguridad.
+- **Nos ocupamos de tu seguridad.** Capturamos los datos sensibles de las tarjetas dentro del ambiente seguro de Mercado Pago, para que seas PCI Compliance y que puedas personalizar todo el proceso libre de las complejidades de los protocolos de seguridad.
 
 - **Siempre vas a estar actualizado.** Podés brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
@@ -50,15 +50,15 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 ## Cómo ofrecer descuentos
 
-Es muy simple, elige cuánto dinero quieres invertir y en qué momento, y listo. ¡Sin costos extras!
+Es muy simple, eligí cuánto dinero querés invertir y en qué momento, y listo. ¡Sin costos extras!
 
-Podés [ofrecer descuentos y generar cupones](https://www.mercadopago.com.ar/settings/my-business) con descuentos de valores fijos o porcentuales, según lo que necesites, desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
+Podés [ofrecer descuentos y generar cupones](https://www.mercadopago.com.ar/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
 
 ## Cómo ofrecer suscripciones
 
-Puedes crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuanto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
+Podés crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuánto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
 
-Lo puedes usar para lo que quieras, como cobrar cuotas del gimnasio, alquileres o recibir donaciones.
+Lo podés usar para lo que quieras, como cobrar cuotas del gimnasio, alquileres o recibir donaciones.
 
 Es muy simple ya que no requiere que necesites saber de programación y si tienes dudas de como configurarlo, podés acceder a la [guía de configuración](https://www.mercadopago.com.ar/ayuda/cobrar-debito-automatico-tarjeta_1141) en el portal de ayuda de Mercado Pago.
 
@@ -68,7 +68,7 @@ Es muy simple ya que no requiere que necesites saber de programación y si tiene
 
 Creamos una herramienta para que puedas ofrecer promociones de cuotas sin interés y hacer que tu negocio sea más atractivo.
 
-Desde tu cuenta de Mercado Pago, en la sección Ofrecer cuotas sin interés podés configurar la cantidad de cuotas que quieras y su costo de financiación.
+Desde tu cuenta de Mercado Pago, en la sección ofrecer cuotas sin interés podés configurar la cantidad de cuotas que quieras y su costo de financiación.
 
 Tu cliente paga sin interés y vos absorbés el costo de financiación, por eso tené en cuenta los [costos de financiación](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) de las cuotas que quieras.
 
