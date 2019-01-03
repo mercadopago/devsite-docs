@@ -66,11 +66,9 @@ Es muy simple ya que no requiere que necesites saber de programación y si tiene
 
 ## Cómo ofrecer cuotas sin interés
 
-Creamos una herramienta para que puedas ofrecer promociones de cuotas sin interés y hacer que tu negocio sea más atractivo.
+Creamos una herramienta para que puedas ofrecer cuotas sin interés y hacer que tu negocio sea más atractivo.
 
-Desde tu cuenta de Mercado Pago, en la sección ofrecer cuotas sin interés podés configurar la cantidad de cuotas que quieras y su costo de financiación.
-
-Tu cliente paga sin interés y vos absorbés el costo de financiación, por eso tené en cuenta los [costos de financiación](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) de las cuotas que quieras.
+Desde tu cuenta de Mercado Pago, en la sección ofrecer cuotas sin interés podés configurar la cantidad de cuotas que quieras para tu cliente y el [costos de financiación](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) que absorberás.
 
 [Ofrecer cuotas sin interés](https://www.mercadopago.com/mla/front/cost-absorption)
 
