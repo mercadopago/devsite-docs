@@ -15,13 +15,13 @@ Temos ferramentas prontas para uso como SDKs, botões de pagamento, módulos ou 
 
 ### Web Checkout
 
-Esta opção permite cobrar através do nosso formulário web dentro do ambiente seguro do Mercado Pago de maneira simples, rápida e segura.
+Esta opção permite cobrar através do nosso formulário web dentro do ambiente seguro do Mercado Pago de maneira simples e rápida.
 
--   A melhor experiência garantida. Oferecemos a melhor experiência de compra a partir de qualquer celular ou computador com um só clique e até mesmo com a possibilidade de pagar usando 2 cartões.
+-   **A melhor experiência garantida.** Oferecemos a melhor experiência de compra a partir de qualquer celular ou computador com um só clique e até mesmo com a possibilidade de pagar usando 2 cartões.
 
--   Ofereça os melhores meios de pagamento. Conectamos você com os [meios de pagamento mais conhecidos pelos seus compradores](https://www.mercadopago.com.br/ajuda/meios-de-pagamentos-vendedores_474), sem que você tenha que fazer nada, e você pode [oferecer parcelamento sem juros](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) com o melhor financiamento.
+-   **Ofereça os melhores meios de pagamento.** Conectamos você com os [meios de pagamento mais conhecidos pelos seus compradores](https://www.mercadopago.com.br/ajuda/meios-de-pagamentos-vendedores_474), sem que você tenha que fazer nada, e você pode [oferecer parcelamento sem juros](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) com o melhor financiamento.
 
--   Protegemos seu dinheiro, sempre. Você não precisa se preocupar com nada. Caso tenha algum problema, você conta com o nosso respaldo através do [nosso Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/como-protegemos-vendedores_500).
+-   **Protegemos seu dinheiro, sempre.** Você não precisa se preocupar com nada. Caso tenha algum problema, você conta com o nosso respaldo através do [nosso Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/como-protegemos-vendedores_500).
 
 [Integrar Web Checkout.](/guides/payments/web-checkout/introduction.pt.md)
 
@@ -35,11 +35,11 @@ Diferente do Web Checkout, facilitamos a criação de uma experiência de pagame
 
 É a versão simplificada do Web Checkout com uma experiência de usuário renovada.
 
-- Não se preocupe com o design. Proporcionamos um formulário com design e front-end prontos para uso.
+- **Não se preocupe com o design.** Proporcionamos um formulário com design e front-end prontos para uso.
 
-- Nós cuidamos da segurança. Capturamos os dados sensíveis dos cartões dentro do ambiente seguro do Mercado Pago para estar em conformidade com os padrões do PCI Compliance, e que você possa personalizar todo o processo sem a complexidade dos protocolos de segurança.
+- **Nós cuidamos da segurança.** Capturamos os dados sensíveis dos cartões dentro do ambiente seguro do Mercado Pago para estar em conformidade com os padrões do PCI Compliance, e que você possa personalizar todo o processo sem a complexidade dos protocolos de segurança.
 
-- Você estará sempre atualizado. Você pode oferecer para seus compradores uma experiência que o Mercado Pago mantém em constante aperfeiçoamento.
+- **Você estará sempre atualizado.** Você pode oferecer para seus compradores uma experiência que o Mercado Pago mantém em constante aperfeiçoamento.
 
 [Integrar Web Tokenize](/guides/payments/web-tokenize-checkout/introduction.pt.md)
 
@@ -47,9 +47,9 @@ Diferente do Web Checkout, facilitamos a criação de uma experiência de pagame
 
 Esta forma de integração permite que você se conecte diretamente com as nossas APIs.
 
-- Torne-se dono da sua experiência. Proporcionamos liberdade absoluta para você personalizar as experiências dos seus compradores e que nunca saiam do seu site.  
+- **Torne-se dono da sua experiência.** Proporcionamos liberdade absoluta para você personalizar as experiências dos seus compradores e que nunca saiam do seu site.  
 
-- Sua equipe técnica tem total controle. Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
+- **Sua equipe técnica tem total controle.** Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
 
 [Integrar por API](/guides/payments/api/introduction.pt.md)
 
@@ -57,7 +57,10 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 
 É muito simples, você escolhe quanto e quando quer investir e pronto. Sem custos adicionais!
 
-Você pode [oferecer descontos e gerar cupons](https://www.mercadopago.com.br/settings/my-business) com descontos de valores fixos ou percentuais, conforme necessário, pelos seus botões ou links de pagamento. Você também pode habilitá-los para todos os seus compradores ou somente para alguns deles.
+Você pode [oferecer descontos e gerar cupons](https://www.mercadopago.com.br/settings/my-business) com descontos de valores fixos ou por uma porcentagem dos produtos pelos seus botões ou links de pagamento. Você também pode habilitá-los para todos os seus compradores ou somente para alguns deles.
+
+Você pode usá-lo para oferecer 10% ou 20% de desconto nos seus produtos, por exemplo, ou um desconto de valor fixo por cada pagamento aos compradores que quiser.
+
 
 ## Posso oferecer pagamentos com cartão de débito?
 
@@ -79,13 +82,13 @@ Você pode usá-lo para o que quiser, como cobrar mensalidades de academia, alug
 
 ## Como oferecer parcelamento sem juros
 
-Criamos uma ferramenta para que você possa oferecer promoções de parcelamento sem juros e tornar seu negócio mais atrativo.
+Criamos uma ferramenta para que você possa oferecer parcelamento sem juros e tornar seu negócio mais atrativo.
 
 Pela sua conta no Mercado Pago, na seção "Oferecer parcelamento sem juros", você pode configurar a quantidade de parcelas que quer oferecer e seu custo de financiamento.
 
 Seu cliente paga sem juros, e você absorve o custo do financiamento, por isso, considere os [custos de financiamento](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) das parcelas que quiser oferecer.
 
-[[Oferecer parcelamento sem juros](https://www.mercadopago.com/mlb/front/cost-absorption)]
+[Oferecer parcelamento sem juros](https://www.mercadopago.com/mlb/front/cost-absorption)
 
 ## Como oferecer o Mercado Envios
 

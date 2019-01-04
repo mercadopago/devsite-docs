@@ -54,6 +54,9 @@ Es muy simple, eligí cuánto dinero querés invertir y en qué momento, y listo
 
 Podés [ofrecer descuentos y generar cupones](https://www.mercadopago.com.ar/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
 
+Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
+
+
 ## Cómo ofrecer suscripciones
 
 Podés crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuánto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
@@ -96,19 +99,19 @@ Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plu
 
 ###  Web Checkout
 
-Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple, rápida y segura.
+Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
-- **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo click y con la posibilidad de pagar con 2 tarjetas.
+- **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo clic y con la posibilidad de pagar con 2 tarjetas.
 
 - **Ofrece los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.mx/ayuda/medios-de-pago-vendedores_681), sin que tengas que hacer nada y puedes [ofrecer mensualidades sin intereses](https://www.mercadopago.com.mx/ayuda/costo-recibir-pagos_683) con la mejor financiación.
 
-- **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tuvieses algún problema, te respaldaremos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.mx/ayuda/dinero-seguridad-ventas_701).
+- **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldaremos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.mx/ayuda/dinero-seguridad-ventas_701).
 
 [Integrar Web Checkout](/guides/payments/web-checkout/introduction.es.md)
 
 ### Mobile Checkout
 
-A diferencia de Web Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida para que puedas ofrecer la mejor experiencia y los mejores medios de pago.
+A diferencia de Web Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
 
 [Integrar Mobile Checkout](/guides/payments/web-checkout/introduction.es.md)
 
@@ -128,7 +131,7 @@ Es la versión simplificada del Web Checkout con una experiencia de usuario reno
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te damos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -138,13 +141,13 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. ¡Sin costos extras!
 
-Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.mx/settings/my-business) con descuentos de valores fijos o por un porcentajes de los productos desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
+Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.mx/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
 
-Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
+Lo puedes usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
 
 ## Cómo ofrecer suscripciones
 
-Puedes crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuanto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
+Puedes crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuánto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
 
 Lo puedes usar para lo que quieras, como cobrar cuotas del gimnasio, alquileres o recibir donaciones.
 
@@ -156,11 +159,9 @@ Es muy simple ya que no requiere que necesites saber de programación y si tiene
 
 Creamos una herramienta para que puedas ofrecer mensualidades sin intereses y hacer que tu negocio sea más atractivo.
 
-Desde tu cuenta de Mercado Pago, en la sección Ofrecer mensualidades sin intereses puedes configurar la cantidad de mensualidades que quieras y su costo de financiación.
+Desde tu cuenta de Mercado Pago, en la sección Ofrecer mensualidades sin intereses puedes configurar la cantidad de mensualidades que quieras y sus [costos de financiación](https://www.mercadopago.com.mx/ayuda/mensualidades-sin-intereses_2255) con un descuento.
 
-Tu cliente pagará sin intereses y tu absorbés el costo de financiación con un descuento, por eso ten en cuenta los [costos de financiación](https://www.mercadopago.com.mx/ayuda/mensualidades-sin-intereses_2255) de los meses que quieras.
-
-[[Ofrecer mensualidades sin intereses](https://www.mercadopago.com/mlm/front/cost-absorption)]
+[Ofrecer mensualidades sin interes](https://www.mercadopago.com/mlm/front/cost-absorption)]
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 
@@ -305,7 +306,7 @@ Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. 
 
 Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.co/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
 
-Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
+Lo puedes usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 
@@ -372,7 +373,7 @@ Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. 
 
 Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.uy/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
 
-Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
+Lo puedes usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
 
 ## Cómo ofrecer cuotas sin interés
 

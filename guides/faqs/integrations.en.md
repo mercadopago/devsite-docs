@@ -17,9 +17,9 @@ We have tools that are ready to use, such as SDKs, payment buttons, modules or p
 
 This option allows you to collect through our web form within the safe environment of Mercado Pago in a simple, fast and secure way
 
-- The best experience guaranteed. We offer you the best purchase experience from any mobile phone or computer with only one click, and even with the possibility of paying with 2 different cards.
+- **The best experience guaranteed.** We offer you the best purchase experience from any mobile phone or computer with only one click, and even with the possibility of paying with 2 different cards.
 
-- Offer the best payment methods. We connect you with the [payment methods most known by your buyers](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), without you doing anything and you can [offer installments with no interest](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) with the best financing.
+- **Offer the best payment methods.** We connect you with the [payment methods most known by your buyers](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), without you doing anything and you can [offer installments with no interest](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) with the best financing.
 
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
@@ -36,11 +36,11 @@ Unlike Web Checkout, we facilitate the creation of a payment experience but from
 
 It's the simplified version of the Web Checkout with a renewed user experience.
 
-- Don't worry about the design. We provide you with a form with design and front-end ready for you to use.
+- **Don't worry about the design.** We provide you with a form with design and front-end ready for you to use.
 
-- We take care of your security. We capture the sensitive data of the cards within the secure environment of Mercado Pago, so that you can be PCI Compliant and that you can customize the entire process free of the complexities of security protocols.
+- **We take care of your security.** We capture the sensitive data of the cards within the secure environment of Mercado Pago, so that you can be PCI Compliant and that you can customize the entire process free of the complexities of security protocols.
 
-- You will always be up to date. You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
+- **You will always be up to date.** You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
 
 [Integrar Web Tokenize](/guides/payments/web-tokenize-checkout/introduction.en.md)
 
@@ -48,9 +48,9 @@ It's the simplified version of the Web Checkout with a renewed user experience.
 
 This way of integrating allows you to connect directly with our APIs.
 
-- Become the owner of your experience. We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
+- **Become the owner of your experience.** We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
 
-- Your technical team has total control. They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
+- **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
 [Integrar por API](guides/payments/api/introduction.en.md)
 
