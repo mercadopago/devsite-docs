@@ -1,4 +1,4 @@
-----[mla,mlb]----
+----[mla, mlb]----
 
 # Integraciones
 
@@ -55,6 +55,7 @@ Es muy simple, eligí cuánto dinero querés invertir y en qué momento, y listo
 Podés [ofrecer descuentos y generar cupones](https://www.mercadopago.com.ar/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
 
 Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
+
 
 ## Cómo ofrecer suscripciones
 

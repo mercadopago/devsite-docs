@@ -1,4 +1,4 @@
-----[mla,mlb]----
+----[mla, mlb]----
 # Cobros
 
 ## Cuánto cuesta recibir pagos
