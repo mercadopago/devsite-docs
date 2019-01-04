@@ -24,4 +24,4 @@ When you receive money from a sale or collect in your online business, you will 
 >
 > Note
 >
-> Do you want to know when the money from one of your sales will be available? Find the transaction between your [accredited charges](http://www.mercadopago.com.ar/ayuda/payments) and in the detail we inform the exact date.
+> Do you want to know when the money from one of your sales will be available? Find the transaction between your accredited charges and in the detail we inform the exact date.
