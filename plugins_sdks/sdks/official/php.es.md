@@ -18,6 +18,8 @@ El SDK soporta PHP 5 o mayor
 
 4. Esto es todo, ya tienes el SDK de Mercado Pago instalado.
 
+![installation-demo](images/sdk-php-installation-demo.svg)
+
 ### Inicio Rápido
 
 1. Cargar el archivo autoload.php para cargar las librerias instaladas en tu proyecto.
