@@ -469,3 +469,10 @@ properties:
           en: Differential pricing ID.
           es: Identificador de precio diferenciado.
           pt: Identificador de preço diferenciado.
+- binary_mode:
+    type: Boolean
+    description:
+          en: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.
+          es: Cuando se configura como true los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.
+          pt: Quando definido como true, o pagamento só pode ter os status approved ou rejected. Caso contrário, o status in_process é adicionado..
+

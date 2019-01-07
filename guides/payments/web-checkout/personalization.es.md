@@ -191,7 +191,21 @@ payment = MercadoPago::Payment.search(filters)
 ```
 ]]]
 
+### Modo binario
 
+Si la lógica de negocio de tu comercio requiere que la decisión sobre la aprobación del pago sea instantánea puedes activar el modo binario. De esta forma el pago solo puede resultar en los estados `approved` o `rejected`. 
+
+En el caso de no estar activado el pago puede resultar en el estado `in_process`.
+
+Para más información revisa los posibles estados de un pago:
+
+![payment-diagram](/images/payments-status-transitions-diagram.png)
+
+Para activarlo, basta configurar como _true_ el campo `binary_mode`:
+
+```json
+	"binary_mode": true
+```
 
 ### Expira links de preferencia
 

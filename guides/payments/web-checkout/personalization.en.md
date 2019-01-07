@@ -189,7 +189,21 @@ payment = MercadoPago::Payment.search(filters)
 ```
 ]]]
 
+### Binary mode
 
+If the business logic of your e-commerce requires the decision on approval of the payment to be instantaneous you can activate the binary mode. In this way the payment can only result in `approved` or`rejected` states.
+
+In the case of not being activated the payment may result in the state `in_process`.
+
+For more information check the possible states of a payment:
+
+![payment-diagram](/images/payments-status-transitions-diagram.png)
+
+To enable it, just configure as _true_ the field `binary_mode`:
+
+```json
+	"binary_mode": true
+```
 
 ### Invalidate preference links
 

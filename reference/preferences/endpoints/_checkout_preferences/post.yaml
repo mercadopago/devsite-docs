@@ -335,3 +335,8 @@ errors:
         en: Invalid total amount, with me2 it cannot be lesser than <limit>.
         es: Monto total inválido, con Mercado Envíos no puede ser menor a <limit>.
         pt: Invalid total amount, with me2 it cannot be lesser than <limit>.
+  - invalid_binary_mode:
+      description:
+        en: binary_mode must be boolean.
+        es: binary_mode debe ser booleano.
+        pt: binary_mode deve ser booleano.
