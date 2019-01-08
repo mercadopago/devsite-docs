@@ -32,7 +32,7 @@ Nuestra aplicación móvil tiene la funcionalidad de almacenar de forma segura s
 * Hacer envíos de dinero entre cuentas.
 * Pagar en tiendas en forma presencial.
 
-Tus clientes utilizando su aplicación móvil de Mercado Pago podrán escanear tu código QR y pagar utilizando sus tarjetas almacenadas o su dinero en cuenta de forma segura. Además, puedes ofrecer en tus tiendas físicas pagos en cuotas y el resto de los beneficios que ofrece Mercado Pago.
+Utilizando su aplicación móvil de Mercado Pago/Mercado Libre, tus clientes podrán escanear tu código QR y pagar utilizando sus tarjetas almacenadas o dinero en cuenta de forma segura. Además, puedes ofrecer en tus tiendas físicas pagos en cuotas y el resto de los beneficios que ofrece Mercado Pago.
 
 Para poder pagar, tus clientes deben descargar la App desde el store de su teléfono móvil:
 
