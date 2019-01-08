@@ -78,7 +78,7 @@ preference.payment_methods = {
 
 ### Indique as URLs de Retorno
 
-Ao finalizar o processo de pagamento, é muito importante informar ao comprador quais são os próximos passos e assim transmitir segurança sobre o resultado da operação. Para isso, utilizamos as `back_urls`. O atributo `auto_return` em ``approved` automaticamente redirecionará ao comprador a success url quando o resultado do pagamento for aprovado.
+Ao finalizar o processo de pagamento, é muito importante informar ao comprador quais são os próximos passos e assim transmitir segurança sobre o resultado da operação. Para isso, utilizamos as `back_urls`. O atributo `auto_return` em `approved` automaticamente redirecionará ao comprador a success url quando o resultado do pagamento for aprovado.
 
 
 [[[
@@ -191,7 +191,21 @@ payment = MercadoPago::Payment.search(filters)
 ```
 ]]]
 
+### Modo binário
 
+Se a lógica de negócio do seu comércio necessita que a decisão de aprovação do pagamento seja instantânea, é possível ativar o modo binário. Dessa forma o pagamento somente assumirá os status approved ou rejected. 
+
+Caso não esteja ativado o pagamento pode assumir o status in_process.
+
+Para mais informações consulte os possíveis status de um pagamento:
+
+![payment-diagram](images/payments-status-transitions-diagram.png)
+
+Para ativá-lo, basta configurar como true o campo binary_mode
+
+```json
+  "binary_mode": true
+```
 
 ### Invalide links de preferência
 
