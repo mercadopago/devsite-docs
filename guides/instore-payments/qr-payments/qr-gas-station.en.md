@@ -17,35 +17,35 @@ sites_supported:
 
 ![QR Petrolera Flow](/images/mobile/qr-gas-flow.en.svg)
 
-1. The user scans the QR code which is related to your URL that has the information of the position where the sale was made.```
+1. The user scans the QR code from the Mercado Pago or Mercado Libre app. The QR contains your POS_ID with the information of the position where the sale was made.
 
-2. Our server consults your server for the last pending sale for that position in that branch.
+1. Our server consults your server for the last pending sale for that position in that branch. 
 
-3. Your server searches for the last outstanding order and, if it exists, return the order body.
+1. Our server searches for the last outstanding order and, if it exists, return the order body.
 
-4. Your server returns the order to our server and we create the purchase order on the user's smartphone.
+1. Your server returns the order to our server and we create the purchase order on the user's smartphone.
 
-5. The user follows the purchase flow and confirms the payment.
+1. The user follows the purchase flow and confirms the payment.
 
-6. Immediately after the payment is processed, we send to your server a notification [webhook](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks/) informing that there is a novelty.
+1. Immediately after the payment is processed, we send to your server a notification [webhook](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks/) informing that there is a novelty.
 
-7. With the payment identifier, you can [search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) the payment and continue with your internal processes.
+1. With the payment identifier, you can [search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) the payment and continue with your internal processes.
 
+   >
    > If the status is `approved`, the payment must be accredited. On the other hand, if it is `rejected`, the app will retry the payment requesting another means of payment.
 
-8. That is all! Inform your customer that the payment was processed correctly.
-
+1. That is all! Inform your customer that the payment was processed correctly.
 ## Concepts
 
 First you must familiarize yourself with the following concepts since you will use them during the integration.
 
-| Attribute      | Description                                                  |
-| -------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN` | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account where the payments will be accredited. |
-| `COLLECTOR_ID` | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
-| EXTERNAL_ID    | It is the unique identifier of the supplier. It is an alphanumeric code defined by you, it can not contain spaces or special characters and the uppercase of the lowercase is not distinguished. |
-| SPONSOR_ID     | `COLLECTOR_ID` of a developer's Mercado Pago account. You must create an account by brand (YPF, Shell, Axion, etc). |
-| APIES          | Unique identifier of the service station.                    |
+| Attribute                    | Description                                                  |
+| ---------------------------- | ------------------------------------------------------------ |
+| `ACCESS_TOKEN`               | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account where the payments will be accredited. |
+| `COLLECTOR_ID`               | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
+| `EXTERNAL_ID`                | It is the unique identifier of the supplier. It is an alphanumeric code defined by you, it can not contain spaces or special characters and the uppercase of the lowercase is not distinguished. |
+| `SPONSOR_ID`                 | `COLLECTOR_ID` of a developer's Mercado Pago account. You must create an account by brand (YPF, Shell, Axion, etc). |
+| `APIES`, `STORE_ID`, `STORE` | Unique identifier of the service station.                    |
 
 ## Objects
 
@@ -68,7 +68,8 @@ Within to the previous concepts, you must also know the objects with which we go
 - `name`: A string of up to 45 characters.
 - `external_id`: It is the unique identifier of the Point of Sale. It is an alphanumeric code defined by you, it cannot contain spaces or special characters and uppercase letters are not case sensitive.
 - `category` : MCC code of the POS. The possible values are
-  - Gastronomy (ARG): 621102
+  - Gastronomy: 621102
+  - Gas Station: 473000
   - General: `null`
 - `store_id`: It is an identifier number of the branch where the POS belongs. The id of the Store.
 - `url`: Server URL of the management system that returns the pump data of a specific station.
@@ -221,7 +222,7 @@ Whether in the testing or production phase, you must inform the URL to [Mercado 
 
 ### QR Creation
 
-You must create a QR code for each POS with an `external_id` that identifies it.
+You must create a QR code for each POS with an `url`.
 
 **API QR**
 

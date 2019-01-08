@@ -21,7 +21,7 @@ Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Poi
 
 > ```
 > ----[mla]----
-> [Comprar Point]  (https://www.mercadopago.com.ar/lector-tarjetas-credito-point)
+> [Comprar Point]  (https://www.mercadopago.com.ar/lector-tarjetas-credito-point?ref=devsite)
 > ------------
 > ----[mlm]----
 > [Comprar Point]  (https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)

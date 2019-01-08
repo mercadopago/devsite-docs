@@ -16,7 +16,7 @@ sites_supported:
 
 ![QR Petrolera Flow](/images/mobile/qr-gas-flow.es.svg)
 
-1. El usuario escanea el código QR desde la app de Mercado Pago o Mercado Libre. El QR contiene la URL con la información del puesto donde se realizó la venta. 
+1. El usuario escanea el código QR desde la app de Mercado Pago o Mercado Libre. El QR contiene el `STORE_ID` con la información del puesto donde se realizó la venta. 
 
 2. Nuestro servidor consulta a tu servidor por la última venta pendiente de pago para ese puesto en esa sucursal. 
 
@@ -38,13 +38,13 @@ sites_supported:
 
 Primero debes familiarizarte con los siguiente conceptos ya que los usarás durante la integración.
 
-| Atributo       | Descripción                                                  |
-| -------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
-| `COLLECTOR_ID` | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
-| EXTERNAL_ID    | Es el identificador único del surtidor. Es un código alfanumérico definido por el integrador, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas. |
-| SPONSOR_ID     | `COLLECTOR_ID` de la cuenta de Mercado Pago del integrador. Se debe crear una cuenta por marca (YPF, Shell, Axion, etc). |
-| APIES          | Identificador único de la estación de servicio.              |
+| Atributo                    | Descripción                                                  |
+| --------------------------- | ------------------------------------------------------------ |
+| `ACCESS_TOKEN`              | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
+| `COLLECTOR_ID`              | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
+| `EXTERNAL_ID`               | Es el identificador único del surtidor. Es un código alfanumérico definido por el integrador, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas. |
+| `SPONSOR_ID`                | `COLLECTOR_ID` de la cuenta de Mercado Pago del integrador. Se debe crear una cuenta por marca (YPF, Shell, Axion, etc). |
+| `APIES`, `STORE`,`STORE_ID` | Identificador único de la estación de servicio.              |
 
 ## Objetos
 
@@ -67,7 +67,8 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 - `name`: Nombre descriptivo. Es un String de hasta 45 caracteres.
 - `external_id`: es el identificador único del punto de venta. Es un código alfanumérico definido por ti, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas.
 - `category` : Código MCC que indica el rubro del punto de venta. Los valores posibles son
-  - Gastronomía Argentina: 621102
+  - Gastronomía: 621102
+  - Petrolera o Gasolinera: 473000
   - General: `null`
 - `store_id`: Es un número identificador de la sucursal a la que pertenece el punto de venta. El el id del Store.
 - `url`: URL del servidor del sistema de gestión, que devuelve los datos de un surtidor o bomba de una determinada estación.
@@ -220,7 +221,7 @@ Ya sea en fase de pruebas o producción, se debe informar la URL a [Mercado Pago
 
 ### Crear QR
 
-Deberás crear un código QR para cada surtidos o bomba con un `external_id` que identifique la misma.
+Deberás crear un código QR para cada surtidor o bomba con un `url` configurado dentro del POS.
 
 **API de creación de QRs**
 

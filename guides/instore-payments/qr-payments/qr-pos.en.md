@@ -55,7 +55,7 @@ In addition to the previous concepts, you must also know the objects with which 
 
 ```json
 {
-    "external_reference": "internal id",
+    "external_reference": "internal reference id",
 	"notification_url": "www.yourserver.com/endpoint",
       "items" :[{
         "title" : "Tacos",
