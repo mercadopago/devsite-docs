@@ -26,7 +26,7 @@ sites_supported:
 
 5. El usuario sigue el flujo de compra y confirma el pago. 
 
-6. Inmediatamente luego de ser procesado el pago, enviamos a tu servidor una notificación [webhook](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks/) informando que hay una novedad.
+6. Inmediatamente luego de ser procesado el pago, enviamos a tu servidor una notificación [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/) informando que hay una novedad.
 
 7. Con el identificador del pago, puedes [buscar](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) el pago y continuar con tus procesos internos. 
 
@@ -240,7 +240,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 
 Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
 
-1. [Webhooks](http://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden. 
+1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`. 
 2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
 
 ## Devoluciones

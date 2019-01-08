@@ -159,7 +159,7 @@ Por ejemplo si deseas que esté disponible durante 5 minutos se debe enviar el h
 
 Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
 
-1. [Webhooks](http://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden. 
+1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`. 
 2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
 
 ### Eliminar orden

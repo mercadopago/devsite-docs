@@ -27,7 +27,7 @@ sites_supported:
 
 1. The user follows the purchase flow and confirms the payment.
 
-1. Immediately after the payment is processed, we send to your server a notification [webhook](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks/) informing that there is a novelty.
+1. Immediately after the payment is processed, we send to your server a notification [INP](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/) informing that there is a novelty.
 
 1. With the payment identifier, you can [search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) the payment and continue with your internal processes.
 
@@ -241,7 +241,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 
    After the user makes the payment you can obtain the data using any of the following ways:
 
-   1. [Webhooks](http://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order.
+   1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
    2. Do the [payment search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) using the `external_reference` as the search criteria.
 
 ## Refunds
