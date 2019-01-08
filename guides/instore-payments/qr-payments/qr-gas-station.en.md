@@ -17,7 +17,7 @@ sites_supported:
 
 ![QR Petrolera Flow](/images/mobile/qr-gas-flow.en.svg)
 
-1. The user scans the QR code from the Mercado Pago or Mercado Libre app. The QR contains your URL with the information of the position where the sale was made.
+1. The user scans the QR code which is related to your URL that has the information of the position where the sale was made.```
 
 2. Our server consults your server for the last pending sale for that position in that branch.
 
@@ -31,7 +31,7 @@ sites_supported:
 
 7. With the payment identifier, you can [search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) the payment and continue with your internal processes.
 
-   > If the status is `approved`, the payment must be credited. On the other hand, if it is `rejected`, the app will retry the payment requesting another means of payment.
+   > If the status is `approved`, the payment must be accredited. On the other hand, if it is `rejected`, the app will retry the payment requesting another means of payment.
 
 8. That is all! Inform your customer that the payment was processed correctly.
 
@@ -181,7 +181,7 @@ Consult the [full documentation](https://www.mercadopago.com.mx/developers/en/re
 
 ### URL Config
 
-It is necessary that you have a URL in your management software that returns the pump data of a certain station. Also, should contain the additional parameters that are desired in the query (APIES of the station, supplier or pump identifier, etc.). For example: `https://www.mycompany.com/pay-mp?locationId=6232&positionId=1`
+It is necessary that you have a URL in your management software that returns the pump data of a certain station. Also, should contain the additional parameters that are desired in the query (APIES of the station, supplier or pump identifier, etc.). For example: `https://www.mycompany.com/pay-mp?apies=6232&pos=1`
 
 This URL (or endpoint) should return the information with which the body order where we will create the QR.
 
@@ -215,7 +215,7 @@ The `message` is optional, corresponds to a plain text explanation of the cause 
 
 ### Notify URL
 
-Whether in the testing or production phase, you must inform the URL to [Mercado Pago](https://www.mercadopago.com.mx/developers/es/support) to set it up and start testing.
+Whether in the testing or production phase, you must inform the URL to [Mercado Pago](https://www.mercadopago.com.mx/developers/en/support) to set it up and start testing.
 
 ## Payments
 

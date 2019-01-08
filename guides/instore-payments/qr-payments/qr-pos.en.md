@@ -49,7 +49,7 @@ In addition to the previous concepts, you must also know the objects with which 
   - Gastronomy (Argentina): 621102
   - General: `null`
 - `store_id`: It is an identifier number of the branch to which the point of sale belongs. The id of the Store.
-- `fixed_amount`: Indicates if the user can enter any amount when reading the QR or will have to wait for an order to be available. It is a boleano.
+- `fixed_amount`: Indicates if the user can enter any amount when reading the QR or will have to wait for an order to be available. It is a boolean.
 
 ### Order Object
 

@@ -48,7 +48,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
   * Gastronomía Argentina: 621102
   * General: `null`
 * `store_id`: Es un número identificador de la sucursal a la que pertenece el punto de venta. El el id del Store.
-* `fixed_amount`: Indica si el usuario podrá ingresar algún monto al leer el QR o tendrá que esperar a que esté una orden disponible. Es un boleano. 
+* `fixed_amount`: Indica si el usuario podrá ingresar algún monto al leer el QR o tendrá que esperar a que esté una orden disponible. Es un booleano. 
 
 ### Objeto Order
 

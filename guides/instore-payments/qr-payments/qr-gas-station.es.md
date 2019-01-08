@@ -20,9 +20,9 @@ sites_supported:
 
 2. Nuestro servidor consulta a tu servidor por la última venta pendiente de pago para ese puesto en esa sucursal. 
 
-3. Tu servidor busca la última orden pendiente de pago y si existe, regresando el cuerpo de la orden con QR. 
+3. Tu servidor busca la última orden pendiente de pago, y si existe, devuelve el cuerpo de la orden con QR. 
 
-4. Tu servidor devuelve la orden a nuestro servidor y así crear la orden de compra en el celular del usuario.
+4. Tu servidor devuelve la orden a nuestro servidor y así se crea la orden de compra en el celular del usuario.
 
 5. El usuario sigue el flujo de compra y confirma el pago. 
 
@@ -70,7 +70,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
   - Gastronomía Argentina: 621102
   - General: `null`
 - `store_id`: Es un número identificador de la sucursal a la que pertenece el punto de venta. El el id del Store.
-- `url`: URL del servidor del sistema de gestión que devuelva los datos de un surtidor o bomba de una determinada estación.
+- `url`: URL del servidor del sistema de gestión, que devuelve los datos de un surtidor o bomba de una determinada estación.
 
 ### Objeto Order
 
@@ -180,7 +180,7 @@ Consultar la [documentación completa](https://www.mercadopago.com.mx/developers
 
 ### Configurar URL
 
-Es necesario que cuentes con una URL del tu software de gestión que devuelva los datos del surtidor o bomba de una determinada estación.  La misma contiene los parámetros adicionales que se deseen en la query (APIES de la estación, identificador del surtidor o bomba, etc.). Por ejemplo: `https://www.miempresa.com/pay-mp?locationId=6232&positionId=1`
+Es necesario que cuentes con una URL del tu software de gestión que devuelva los datos del surtidor o bomba de una determinada estación.  La misma contiene los parámetros adicionales que se deseen en la query (APIES de la estación, identificador del surtidor o bomba, etc.). Por ejemplo: `https://www.miempresa.com/pay-mp?apies=6232&pos=1`
 
 Esta URL o endpoint deberá devolver la información con la que se creará el cuerpo de la orden que añadiremos al QR.
 
