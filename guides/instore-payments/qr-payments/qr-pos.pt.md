@@ -10,30 +10,30 @@ sites_supported:
 
 ---
 
-# Pagos QR en Punto de Venta
+# Pagamentos com QR no Ponto de Venda
 
-## Flujo
+## Fluxo
 
 ![QR PDV Flow]()
 
-## Conceptos
+## Conceitos
 
-Primero debes familiarizarte con los siguiente conceptos ya que los usarás durante la integración.
+Primeiro você deve familiarizar-se com os seguintes conceitos que usará durante a integração.
 
-| Atributo       | Descripción                                                  |
+| Atributo       | Descrição                                                  |
 | -------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
-| `COLLECTOR_ID` | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
+| `ACCESS_TOKEN` | É o [token de acceso](https://www.mercadopago.com/mlb/account/credentials) da conta Mercado Pago a qual se creditarão suas cobranças. |
+| `COLLECTOR_ID` | É o número de usuário da conta Mercado Pago, são os últimos 9 dígitos de seu `access_token`, posterior ao hífen. |
 
 ## Objetos
 
-Además de los conceptos anteriores, también debes conocer los objetos con los que trabajaremos.
+Além dos conceitos anteriores, também deve conhecer os objetos com que trabalharemos.
 
 ### Objeto POS
 
 ```json
 {
-    "name":"Caja Principal", 
+    "name":"Caixa Principal", 
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -41,90 +41,91 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 }
 ```
 
-**Definiciones**
+**Definições**
 
-- `name`: Nombre descritptivo. Es un String de hasta 45 caracteres.
-- `external_id`: es el identificador único del punto de venta. Es un código alfanumérico definido por ti, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas.
-- `category` : Código MCC que indica el rubro del punto de venta. Los valores posibles son
-  - Gastronomía Argentina: 621102
-  - General: `null`
-- `store_id`: Es un número identificador de la sucursal a la que pertenece el punto de venta. El el id del Store.
-- `fixed_amount`: Indica si el usuario podrá ingresar algún monto al leer el QR o tendrá que esperar a que esté una orden disponible. Es un boleano. 
+- `name`: Nome descritivo. É uma String de até 45 caracteres.
+- `external_id`: é o identificador único do ponto de venda. É um código alfanumérico definido por você, não pode conter espaços nem caracteres especiais e não se distingue maiúscula de minúscula.
+- `category` : Código MCC que indica a categoria do ponto de venda. Os valores possíveis são:
+  - Gastronomia Brasil: 5611203L
+  - Postos de Gasolina Brasil: 4731300L,
+  - Geral: `null`
+- `store_id`: É o número identificador do ramo ao qual o ponto de venda pertence. O id da loja.
+- `fixed_amount`: Indica se o usuário pode inserir qualquer quantia ao ler o QR ou terá que esperar que um pedido esteja disponível. É um booleano.
 
 ### Objeto Order
 
 ```json
 {
-    "external_reference": "id de transacción interno",
-	"notification_url": "www.yourserver.com/endpoint",
+    "external_reference": "id de transação interno",
+	"notification_url": "www.seuservidor.com.br/endpoint",
       "items" :[{
-        "title" : "Tacos",
-        "currency_id" : "MXN",
+        "title" : "Coxinhas",
+        "currency_id" : "BRL",
         "unit_price" : 16.0,
         "quantity" : 4
       },{
-        "title" : "Refresco",
-        "currency_id" : "MXN",
+        "title" : "Refrigerante",
+        "currency_id" : "BRL",
         "unit_price" : 15.0,
         "quantity" : 1
       }]
 }
 ```
 
-**Definiciones**
+**Definições**
 
-- `external_reference`: String alfanumérico para uso externo, normalmente es el número de ticket o de pedido.
-- `notification_url`: URI donde se enviará vía POST la notificación de pago.
-- `items`: Arreglo de hashes de productos a comprar.
-  - `title`: Título del producto.
-  - `currency_id`: Identificador de moneda en formato ISO_4217.
-  - `unit_price`: Precio unitario (máximo 2 decimales).
-  - `quantity`: Cantidad del producto.
+- `external_reference`: String alfanumérico para uso externo, normalmente é o número de ticket ou de pedido.
+- `notification_url`: URL onde se enviará vía POST a notificação de pagamento.
+- `items`: Conjunto de hashes de produtos da compra.
+  - `title`: Título do produto.
+  - `currency_id`: Identificador de moeda em formato ISO_4217.
+  - `unit_price`: Preço unitário (máximo 2 decimais).
+  - `quantity`: Quantidade do produto.
 
 ### Objeto Payment
 
 ```json
 {
     "id": 420101010101,
-    "external_reference": "id de transacción interno",
+    "external_reference": "id de transação interno",
     "status": "approved",
     "status_detail": "accredited",
     ...
 }
 ```
 
-**Definiciones**
+**Definições**
 
-- `id`: Id único generado por Mercado Pago (lo necesitarás para realizar devoluciones).
+- `id`: Id único gerado pelo Mercado Pago (será necessário para fazer devoluções).
 
-- `external_reference`: Mismo string alfanumérico que añadiste al crear la orden.
+- `external_reference`: Mesma string alfanumérica que adicionou ao criar o pedido.
 
-- `status`: Estatus del pago.
+- `status`: Status do pagamento.
 
-  - `approved`: El pago fue aprobado y acreditado.
+  - `approved`: O pagamento foi aprovado e creditado.
 
-  - `rejected`: El pago fue rechazado. El usuario podría reintentar el pago.
+  - `rejected`: O pagamento foi rejeitado. O usuário deve tentar pagar novamente.
 
-  - `refunded`: El pago fue devuelto al usuario.
+  - `refunded`: O pagamento foi devolvido ao usuário.
 
-  - `charged_back`: Se ha realizado un contracargo en la tarjeta de crédito del comprador.
+  - `charged_back`: Um estorno foi feito no cartão de crédito do comprador.
 
-- `status_detail`: Información detallada del estado actual o el motivo de rechazo.
+- `status_detail`: Informação detalhada sobre o status atual ou motivo da rejeição.
 
-Consultar la [documentación completa](https://www.mercadopago.com.mx/developers/es/reference/payments/resource/) sobre este objeto en nuestra Referencia API.
+Consultar a [documentação completa](https://www.mercadopago.com.br/developers/pt/reference/payments/resource/) sobre este objeto na nossa referência da API.
 
-## Cobros
+## Cobranças
 
-### Crear QR
+### Crie um QR
 
-Deberás crear un código QR para cada caja con un `external_id` que identifique la misma.
+Deve-se criar um código QR para cada caixa com um `external_id`  que identifique-o.
 
-**API de creación de QRs**
+**API de criação de QRs**
 
 ```bash
 curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 '{
-    "name":"Caja Principal", 
+    "name":"Caixa Principal", 
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -132,80 +133,80 @@ curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 }'
 ```
 
-### Crear orden
+### Crie o pedido
 
-Para realizar un cobro a través de un código QR de Mercado Pago deberás crear una orden con el detalle del cobro pendiente.
+Para efetuar uma cobrança através de um código QR do Mercado Pago, deverá criar um pedido com os detalhes da cobrança pendente.
 
-**API de creación de órdenes**
+**API de criação de pedidos**
 
 ```bash
 curl -X POST https://api.mercadopago.com/instore/qr/COLLECTOR_ID/EXTERNAL_ID?access_token=ACCESS_TOKEN -d 
 '{
-    "external_reference": "id de transacción interno",
-	"notification_url": "www.yourserver.com/endpoint",
+    "external_reference": "id de transação interno",
+	"notification_url": "www.seuservidor.com.br/endpoint",
       "items" :[{
-        "title" : "Tacos",
-        "currency_id" : "MXN",
+        "title" : "Coxinhas",
+        "currency_id" : "BRL",
         "unit_price" : 16.0,
         "quantity" : 4
       }]
 }'
 ```
 
-La orden expira a los 10 minutos de ser creada y automáticamente al ser pagada. Si se desea un tiempo de expiración diferente, puedes enviar el header `X-Ttl-Store-Preference` con el tiempo deseado en segundos. 
+O pedido expira 10 minutos depois de ser criado e automaticamente quando pago. Se desejar um tempo de expiração diferente, pode enviar o header `X-Ttl-Store-Preference` com o tempo desejado em segundos. 
 
-Por ejemplo si deseas que esté disponible durante 5 minutos se debe enviar el header `'X-Ttl-Store-Preference: 300'`. Hay que tener presente que si una persona paga esa orden antes del tiempo configurado, expirará.
+Por exemplo se deseja que esteja disponível por 5 minutos se deve enviar o header `'X-Ttl-Store-Preference: 300'`. Tenha em mente que se uma pessoa pagar esse pedido antes do tempo definido, o mesmo expirará.
 
-### Recibir el pago
+### Receba o pagamento
 
-Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
+Depois que o usuário fizer o pagamento, você poderá obter os dados usando qualquer uma das seguintes maneiras:
 
-1. [Webhooks](http://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden. 
-2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
+1. [Webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/): Quando o pagamento é criado, enviamos uma notificação via webhook para a URL configurada no campo `notification_url` do pedido. 
+2. Fazer [busca do pagamento](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/) utilizando o `external_reference` como critério de busca.
 
-### Eliminar orden
+### Eliminar pedido
 
-Si quieres eliminar la orden asociada a un QR antes de que expire el tiempo (`X-Ttl-Store-Preference`) o sea pagada.
+Se quiser eliminar um pedido associado a um QR antes que expire o tempo (`X-Ttl-Store-Preference`) ou seja pago.
 
 ```bash
 curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID?access_token=ACCESS_TOKEN
 ```
 
-## Devoluciones
+## Devoluções
 
-Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) parcial o total de un pago.
+havendo ocasiões que necessite realizar uma [devolução](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/) parcial ou total de um pagamento.
 
-**Devolución total**
+**Devolução total**
 
 ```bash
 curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN
 ```
 
-**Devolución parcial**
+**Devolução parcial**
 
 ```bash
 curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN -d '{ "amount": 10.50 }'
 ```
 
-## Pruebas
+## Testes
 
-Se deben crear dos usuarios de prueba: uno comprador y otro cobrador. Con el usuario cobrador se debe crear el QR y con el otro ingresar en las apps de Mercado Pago o Mercado Libre.
+Dois usuários de teste devem ser criados: um comprador e outro coletor. Com o usuário coletor o QR deve ser criado e com o outro entrar no aplicativo do Mercado Pago ou Mercado Livre.
 
-Consultar los [datos de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/testing): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
+Consulta os [dados para testes](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/testing/): usuários de teste e cartões de teste que possam ser utilizados.
 
-| Casos a probar                                               | Resultado esperado                                           |
+| Casos de teste                                               | Resultado esperado                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| El usuario escanea un código QR válido antes de hacer el pedido. | La app no muestra una orden.                                 |
-| El usuario escanea un código QR con parámetros inválidos, es decir que hace referencia a una cuenta inexistente. | La app informa que ocurrió un error.                         |
-| El usuario escanea un código válido, una vez realizado el pedido y creada la orden de venta. | La app muestra la orden.                                     |
-| El usuario realiza un pago aprobado.                         | El sistema de PDV recibe la información de un pago aprobado. |
-| El usuario realiza un pago rechazado.                        | El sistema de PDV recibe la información de un pago rechazado. |
-| Se hace una devolución de un pago desde el PDV.              | En la cuenta del comprador se impacta la devolución.         |
+| O usuário escaneia um código QR válido antes de fazer o pedido. | O app não mostra um pedido.                                 |
+| O usuário escaneia um código QR com parâmetros inválidos, isto é, refere-se a uma conta inexistente. | O app informa que ocorreu um erro.                   |
+| O usuário escaneia um código válido, depois que o pedido foi feito e criado um pedido de venda. | O app mostra o pedido.                                     |
+| O usuário realiza um pagamento aprovado.                         | O sistema de PDV recebe a informação de um pagamento aprovado. |
+| O usuário realiza um pagamento recusado.                        | O sistema de PDV recebe a informação de um pagamento recusado. |
+| A devolução de um pagamento é feito a partir do PDV.              | Na conta do comprador consta a devolução.         |
 
-### Diccionario de errores
+### Dicionário de erros
 
-[Aquí](https://www.mercadopago.com.mx/developers/es/guides/payments/api/handling-responses/) podrás encontrar nuestro diccionario de errores.
+[Aqui](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) poderá encontrar nosso dicionário de erros.
 
-## Reportes
+## Relatórios
 
-Consultar la [documentación completa](https://www.mercadopago.com.ar/ayuda/herramienta-conciliacion_2116) sobre los reportes de Mercado Pago.
+Consulte a [documentação completa](https://www.mercadopago.com.br/ajuda/relatorios-conciliacao_2164) sobre os relatórios do Mercado Pago.
