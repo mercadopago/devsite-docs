@@ -232,7 +232,8 @@ curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
-    "external_id": "4lph4num3r1c"
+    "external_id": "4lph4num3r1c",
+    "url": "api.integration.com?apies=1&pos=1"   
 }'
 ```
 
