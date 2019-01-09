@@ -9,27 +9,41 @@ sites_supported:
 ---
 
 
-# Pagamentos Presenciais com QR Code
+# Pagamentos presenciais com QR
 
-Impulsione suas vendas no mundo físico recebendo pagamentos utilizando QR codes.
+----[mlb]----
 
-O aplicativo mobile do Mercado Pago permite que seus usuários armazenem seus cartões de crédito e débito e utilizem o saldo disponível em conta de forma segura. Suas principais funcionalidades são:
+> ![Pagos QR](/images/mobile/qr.pt.png)
+------------
+----[mla]----
+> ![Pagos QR](/images/mobile/qr_mla.es.png)
+------------
+----[mlm]----
+> ![Pagos QR](/images/mobile/qr_mlm.es.png)
+------------
 
-* Efetuar o pagamento de serviços.
-* Fazer recarga de celular.
-* Enviar e receber quantias entre contas do Mercado Pago.
-* Pagamento em lojas presencialmente.
 
-Os clientes que estiverem utilizando o aplicativo mobile do Mercado Pago fazem o escaneamento do QR code e efetuam o pagamento com os cartões que tiverem armazenados ou o saldo em conta. Assim, você pode oferecer em suas lojas físicas parcelas sem juros, além dos benefícios oferecidos pelo Mercado Pago.
+Potencialize suas vendas no mundo físico cobrando através de códigos QR.
 
-Para efetuar pagamentos, seus clientes devem fazer o download do app no celular:
+Nosso aplicativo móvel tem a funcionalidade de armazenar com segurança seus cartões de crédito, cartões de débito e usar o dinheiro em conta disponível. Suas principais funcionalidades são:
 
-> [<img src="/images/mobile/GooglePlayBadge.pt.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=pt_419) [<img src="/images/mobile/AppStoreBadge.pt.svg" alt="iOS App Store" width="158"/>](https://itunes.apple.com/br/app/mercado-pago/id925436649?mt=8)
+* Faça o pagamento por serviços.
+* Faça recarga de celular.
+* Faça transferências de dinheiro entre contas.
+* Pague em lojas pessoalmente.
 
-Existem diversas alternativas que lhe permitem receber pagamentos por meio de QR codes:
+Usando seu aplicativo móvel Mercado Pago / Mercado Livre, seus clientes podem escanear seu código QR e pagar usando seus cartões armazenados ou dinheiro em uma conta segura. Além disso, você pode oferecer em suas lojas físicas pagamentos parcelados e o restante dos benefícios oferecidos pelo Mercado Pago.
 
-* Gerando um QR code associado à sua conta do Mercado Pago. O cliente escaneia seu QR code e efetua a transferência do valor. O valor deve ser inserido manualmente.
-* Gerando um QR code com valor fixo para ser exibido em sua loja ao lado do produto oferecido para que seus clientes possam comprá-lo ao simplesmente fazer o escaneamento do código.
-* Integrando ao seu sistema de gestão a modalidade de pagamentos via QR code. Seu cliente escaneia o QR code e a descrição do que comprou e o valor a ser pago são exibidos no celular.
+Para poder pagar, seus clientes devem baixar o aplicativo da loja do celular:
 
-Com base no seu modelo de negócios, você pode escolher uma das opções ou combiná-las para oferecer aos seus clientes uma ótima experiência de compra em suas lojas físicas.
+> [<img src="/images/mobile/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/images/mobile/AppStoreBadge.es.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+
+## Formas de cobrar com QR  
+
+| Tipo                                                         | Descrição                                                  | Necessita de integração? |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- |
+| [QR sem integração](/guides/instore-payments/qr-payments/qr-static.pt.md) | Você gera o QR em seu portal Mercado Pago, para que o comprador verifique seu código e possa enviar seu dinheiro. Você deve inserir o valor manualmente. | Não                      |
+| [QR Ponto de venda](/guides/instore-payments/qr-payments/qr-pos.pt.md) | Integrando ao seu sistema de ponto de venda a opção de pagamentos via QR. Seu cliente escaneia o código e, em seu celular, a descrição do que ele comprou e o valor que ele deve pagar é disponibilizado. | Sim                      |
+| [QR postos de combustível](/guides/instore-payments/qr-payments/qr-gas-station.pt.md) | Integrando ao seu sistema de gestão o modo de pagamentos via QR. Seu cliente escaneia o código e, em seu celular, o valor que você deve pagar é disponibilizado. | Sim                      |
+
+Com base no seu modelo de negócios, você pode escolher uma das opções ou combiná-las para oferecer aos seus clientes uma boa experiência de compra em suas lojas físicas.
