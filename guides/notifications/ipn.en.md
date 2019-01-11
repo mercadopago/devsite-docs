@@ -61,13 +61,13 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 
 	$merchant_order = null;
 
-	switch($_GET["topic"]) {
+	switch($_POST["topic"]) {
 		case "payment":
-			$payment = MercadoPago\Payment.find_by_id($_GET["id"]);
+			$payment = MercadoPago\Payment.find_by_id($_POST["id"]);
 			// Get the payment and the corresponding merchant_order reported by the IPN.
 			$merchant_order = MercadoPago\MerchantOrder.find_by_id($payment->order_id);
 		case "merchant_order":
-			$merchant_order = MercadoPago\MerchantOrder.find_by_id($_GET["id"]);
+			$merchant_order = MercadoPago\MerchantOrder.find_by_id($_POST["id"]);
 	}
 
 	foreach ($merchant_order->payments as $payment) {
