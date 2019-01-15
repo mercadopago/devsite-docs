@@ -18,7 +18,7 @@ Los *customers* representan a tus clientes. Las tarjetas que almacenes serán pa
 
 Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
 
-El `token` es el que capturas cuando haces el [manejo de la respuesta](/guides/payments/web-tokenize-checkout/handling-responses.es.md) del *Web Tokenize Checkout*.
+El `token` es el que capturas cuando haces el [manejo de la respuesta](/guides/payments/api/handling-responses.es.md) del *Web Tokenize Checkout*.
 
 
 > NOTE

@@ -6,18 +6,35 @@ sites_supported:
   - mco
   - mlm
   - global
+
 ---
 
+# Pagos Presenciales con QR
 
-# In-Store Payments with QR Codes
+----[mlb]----
 
-You can boost in-store sales by using QR codes to get paid.
-The mobile app of Mercado Pago allows its users to securely store their credit cards, debit cards and use the available account balance. Its main features are:
+> ![Pagos QR](/images/mobile/qr.pt.png)
 
-* Make the payment of services.
-* Top up mobile phones.
-* Send and receive cash between Mercado Pago accounts.
-* In-store payments.
+------
+
+----[mla]----
+
+> ![Pagos QR](/images/mobile/qr_mla.es.png)
+
+------
+
+----[mlm]----
+
+> ![Pagos QR](/images/mobile/qr_mlm.es.png)
+
+------
+
+You can boost in-store sales by using QR codes to get paid. The mobile app of Mercado Pago allows its users to securely store their credit cards, debit cards and use the available account balance. Its main features are:
+
+- Make the payment of services.
+- Top up mobile phones.
+- Send and receive cash between Mercado Pago accounts.
+- In-store payments.
 
 Customers using the mobile app of Mercado Pago scan the QR code and make the payment using their stored cards or account balance.
 
@@ -25,15 +42,14 @@ This allows you to offer in your physical stores payments in installments withou
 
 To make the payment, your customers need to download the app on their mobile phone:
 
-> [Android Play Store]  (https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)  
-> [iOS App Store](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/images/mobile/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/images/mobile/AppStoreBadge.es.svg" alt="iOS App Store" width="158"/>)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
+## QR Payments types
 
-
-There are different alternatives to receive payments using QR codes:
-
-* By generating a QR code linked to your Mercado Pago account. The customer scans your QR code and can transfer the money.  The amount must be entered manually.
-* By generating a QR code with fixed amount, to be displayed in your store next to the product offered so that your customers can purchase it by simply scanning the code.
-* By integrating in your management system the payment method via QR code.  Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid.
+| Type                                                         | Description                                                  | Integration required? |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------- |
+| [Simple QR code](/guides/instore-payments/qr-payments/qr-static.en.md) | By generating a QR code from your Mercado Pago portal. The customer scans your QR code and can transfer the money. The amount must be entered manually. | No                    |
+| [Point of Sale QR](/guides/instore-payments/qr-payments/qr-pos.en.md) | By integrating in your point of sale system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
+| [Gas Station QR](/guides/instore-payments/qr-payments/qr-gas-station.en.md) | By integrating in your management system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
 
 Based on your business model, you can choose one of the options or combine them to offer your customers a great shopping experience in your physical stores.
