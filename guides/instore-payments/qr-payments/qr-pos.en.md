@@ -44,7 +44,7 @@ In addition to the previous concepts, you must also know the objects with which 
 **Definitions**
 
 - `name`: Descriptive name. It is a String of up to 45 characters.
-- `external_id`: It is the unique identifier of the point of sale. It is an alphanumeric code defined by you, it can not contain spaces or special characters and uppercase letters are not case sensitive.
+- `external_id`: It is the unique identifier of the point of sale. It is an alphanumeric code defined by you, it can not contain spaces or special characters and uppercase letters are not case sensitive. It is a String of up to 40 characters.
 - `category` : MCC code that indicates the point of sale item. The possible values are:
   - Gastronomy (Argentina): 621102
   - General: `null`

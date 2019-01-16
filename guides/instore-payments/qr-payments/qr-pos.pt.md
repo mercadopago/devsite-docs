@@ -44,7 +44,7 @@ Além dos conceitos anteriores, também deve conhecer os objetos com que trabalh
 **Definições**
 
 - `name`: Nome descritivo. É uma String de até 45 caracteres.
-- `external_id`: é o identificador único do ponto de venda. É um código alfanumérico definido por você, não pode conter espaços nem caracteres especiais e não se distingue maiúscula de minúscula.
+- `external_id`: é o identificador único do ponto de venda. É um código alfanumérico definido por você, não pode conter espaços nem caracteres especiais e não se distingue maiúscula de minúscula. É uma String de até 40 caracteres.
 - `category` : Código MCC que indica a categoria do ponto de venda. Os valores possíveis são:
   - Gastronomia Brasil: 5611203L
   - Postos de Gasolina Brasil: 4731300L,
