@@ -66,7 +66,7 @@ Within to the previous concepts, you must also know the objects with which we go
 **Definitions**
 
 - `name`: A string of up to 45 characters.
-- `external_id`: It is the unique identifier of the Point of Sale. It is an alphanumeric code defined by you, it cannot contain spaces or special characters and uppercase letters are not case sensitive.
+- `external_id`: It is the unique identifier of the Point of Sale. It is an alphanumeric code defined by you, it cannot contain spaces or special characters and uppercase letters are not case sensitive. A string of up to 40 characters.
 - `category` : MCC code of the POS. The possible values are
   - Gastronomy: 621102
   - Gas Station: 473000

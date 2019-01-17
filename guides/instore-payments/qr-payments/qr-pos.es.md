@@ -43,7 +43,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 **Definiciones**
 
 * `name`: Nombre descriptivo. Es un String de hasta 45 caracteres.
-* `external_id`: es el identificador único del punto de venta. Es un código alfanumérico definido por ti, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas.
+* `external_id`: es el identificador único del punto de venta. Es un código alfanumérico definido por ti, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas. Es un String de hasta 40 caracteres.
 * `category` : Código MCC que indica el rubro del punto de venta. Los valores posibles son
   * Gastronomía Argentina: 621102
   * General: `null`
