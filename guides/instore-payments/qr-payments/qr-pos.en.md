@@ -139,7 +139,7 @@ To create a payment through a QR code you must create an order with the detail o
 **API Orders**
 
 ```bash
-curl -X POST https://api.mercadopago.com/instore/qr/COLLECTOR_ID/EXTERNAL_ID?access_token=ACCESS_TOKEN -d 
+curl -X POST https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID?access_token=ACCESS_TOKEN -d
 '{
     "external_reference": "internal id",
 	"notification_url": "www.yourserver.com/endpoint",

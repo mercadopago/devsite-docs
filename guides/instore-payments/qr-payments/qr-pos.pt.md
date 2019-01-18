@@ -140,7 +140,7 @@ Para efetuar uma cobrança através de um código QR do Mercado Pago, deverá cr
 **API de criação de pedidos**
 
 ```bash
-curl -X POST https://api.mercadopago.com/instore/qr/COLLECTOR_ID/EXTERNAL_ID?access_token=ACCESS_TOKEN -d 
+curl -X POST https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID?access_token=ACCESS_TOKEN -d
 '{
     "external_reference": "id de transação interno",
 	"notification_url": "www.seuservidor.com.br/endpoint",
