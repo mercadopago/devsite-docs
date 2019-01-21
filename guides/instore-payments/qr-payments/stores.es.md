@@ -7,7 +7,7 @@ sites_supported:
 
 ---
 
-#Sucursales
+# Sucursales
 
 Antes de comenzar a cobrar usando QR en tu plataforma, deberás crear sucursales y cajas.
 Cada cuenta de Mercado Pago puede tener _"N"_ cantidad de sucursales y cada sucursal
@@ -23,7 +23,7 @@ Primero debes familiarizarte con los siguiente conceptos ya que los usarás dura
 | `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
 | `COLLECTOR_ID` | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
 
-##Crear una sucursal
+## Crear una sucursal
 
 El request para crear una sucursal en nuestra plataforma es el siguiente:
 
@@ -70,7 +70,7 @@ POST https://api.mercadolibre.com/users/COLLECTOR_ID/stores?access_token=ACCESS_
 }
 ```
 
-###Consultar sucursales existentes
+### Consultar sucursales existentes
 
 Si deseas consultar las sucursales existentes de un usuario podrás hacerlo haciendo la siguiente búsqueda:
 
@@ -78,7 +78,7 @@ Si deseas consultar las sucursales existentes de un usuario podrás hacerlo haci
 GET https://api.mercadolibre.com/users/COLLECTOR_ID/stores/search?limit=100&offset=0
 ```
 
-###Consultar sucursal
+### Consultar sucursal
 
 Podrás consultar una sucursal usando este request:
 
@@ -87,7 +87,7 @@ GET https://api.mercadolibre.com/users/COLLECTOR_ID/stores/$id?access_token=ACCE
 ```
 
 
-##Modificar una sucursal
+## Modificar una sucursal
 
 Habrá ocasiones donde necesitarás modificar una sucursal, utiliza el siguiente request:
 
@@ -106,7 +106,7 @@ PUT https://api.mercadolibre.com/users/COLLECTOR_ID/stores/STORE_ID?access_token
 ```
 
 
-##Errores
+## Errores
 
 Además de los errores que ya conoces en [nuestra guía](https://www.mercadopago.com.mx/developers/es/guides/payments/api/handling-responses/),
 te podrás encontrar con cualquiera de los siguientes
@@ -132,8 +132,8 @@ Este objeto aparece cuando el `STORE_ID` que deseas buscar **no fue encontrado**
 
 Este objeto aparece cuando nuestra API no recibe alguno de los atributos mínimos de búsqueda.
 
-##Portal Mercado Pago
+## Portal Mercado Pago
 ![GIF Sucursales]()
 
-##Siguientes pasos
+## Siguientes pasos
 Ya estás listo para crear puntos de venta, revisa la [guía para crear cajas](https://www.mercadopago.com.mx/developers/es/guides/instore-payments/qr-payments/qr-pos/).
