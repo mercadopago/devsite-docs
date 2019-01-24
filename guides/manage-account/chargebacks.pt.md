@@ -4,14 +4,14 @@
 >
 > Nota
 >
-> **O que é?** Quando o comprador se comunica com a entidade que emitiu o cartão (um banco, por exemplo) e desconhece um pagamento realizado através desse meio, se gera um _estorno_. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589)
+> **O que é?** Quando o comprador se comunica com a entidade que emitiu o cartão (um banco, por exemplo) e desconhece um pagamento realizado através desse meio, é gerada uma _contestação_. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589)
 
 A compra contestada, a princípio, significa que o Mercado Pago irá reter o dinheiro da venda até que o problema seja solucionado.
 
-Os estornos podem ser geridos via API.
+As contestações podem ser geridas via API.
 É importante, nesse processo, mencionar quais são as instâncias chave:
 
-1. Aparição da compra contestada
+1. Notificação da compra contestada
 2. Consulta da compra contestada
 3. Entendimento da cobertura
 4. Disputa da compra contestada
@@ -20,11 +20,11 @@ Os estornos podem ser geridos via API.
 
 Agora entraremos em detalhe em cada uma delas:
 
-## Aparição da compra contestada
+## Notificação da compra contestada
 
-Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que um estorno for recebido. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
+Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que uma contestação for recebida. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
 
-## Consulta de estorno
+## Consulta da contestação
 
 A notificação IPN vai conter o `ID` da compra contestada.
 Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar suas informaçõeso:
@@ -57,7 +57,7 @@ Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/char
 
 ## Entendimento da cobertura
 
-De acordo com a operação do vendedor, seu acordo comercial, ou ambos, pode-se variar a política de cobertura de cada estorno por parte do Mercado Pago. O campo `coverage_elegible` define se a compra contestada é passível de ser disputado ou não.
+De acordo com a operação do vendedor, seu acordo comercial, ou ambos, pode-se variar a política de cobertura de cada contestação por parte do Mercado Pago. O campo `coverage_elegible` define se a compra contestada é passível de ser disputado ou não.
 
 | Campo               | Valor     | Descrição
 | ----                | ----      | ----
@@ -87,7 +87,7 @@ Caso seja requerida a documentação, conta-se com um prazo de 10 dias desde a c
 
 ## Disputa da compra contestada
 
-Se a contestação segue os critérios anteriormente mencionados, é possível enviar via API a informação confirmatória que valida que a venda ocorreu. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589) 
+Se a contestação segue os critérios anteriormente mencionados, é possível enviar via API, os documentos e informações que comprovem que o produto foi entregue. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589) 
 
 Para realizar o envio, deve-se fazer um **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` da seguinte forma:
 ```
@@ -100,7 +100,7 @@ A api responderá com status `200 OK` se a documentação foi enviada com sucess
 >
 > Nota
 >
-> Os arquivos poderão ser .jpg, .png, .pdf e em seu conjunto não podem ultrapassar 10mb.
+> Os arquivos poderão ser .jpg, .png, .pdf e em seu conjunto não podem ultrapassar 10mb e 10 arquivos.
 
 ## Revisão por parte de Mercado Pago
 
@@ -112,7 +112,7 @@ Eventualmente a contestação poderá ter dois tipos de resolução possíveis:
 
 | Campo              | Valor     | Descrição
 | ----               | ----      | ----
-| `coverage_applied` | **false** | Indica que Mercado Pago falhou _contra_ o vendedor (o dinheiro é devolvido ao comprador)
-| `coverage_applied` | **true**  | Indica que Mercado Pago falhou _a favor_ do vendedor (se devolve o dinheiro ao vendedor)
+| `coverage_applied` | **false** | Indica que a documentação enviada não é válida e o dinheiro será devolvido ao comprador.
+| `coverage_applied` | **true**  | Indica que a documentação enviada é válida e o dinheiro será devolvido ao vendedor.
 
 Quando a resolução acontece, independentemente do resultado, se enviará uma nova notificação via **IPN** para que se possa verificar o que houve.
