@@ -70,8 +70,8 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 			$merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 	}
 
-	foreach ($merchant_order->payments as $payment) {
-		$paid_amount = 0;
+	$paid_amount = 0;
+	foreach ($merchant_order->payments as $payment) {	
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
 		}

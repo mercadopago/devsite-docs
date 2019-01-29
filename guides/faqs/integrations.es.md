@@ -36,7 +36,7 @@ Es la versión simplificada del Web Checkout con una experiencia de usuario reno
 
 - **Siempre vas a estar actualizado.** Podés brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](guides/payments/web-tokenize-checkout/introduction.es.md)
+[Integrar Web Tokenize](/guides/payments/web-tokenize-checkout/introduction.es.md)
 
 ### API
 
