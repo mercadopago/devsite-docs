@@ -1,9 +1,6 @@
 ---
   sites_supported:
       - mla
-      - mlm
-      - mco
-      - mlc
       - global
 ---
 
