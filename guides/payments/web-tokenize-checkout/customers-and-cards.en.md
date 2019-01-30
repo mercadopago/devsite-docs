@@ -16,7 +16,7 @@ The *customers* represent your customers. The cards that you store will be valid
 
 To create a `Customer` and a `Card` at the same time it is necessary to send at least the `email` and `token` fields.
 
-The `token` is the one you capture when you [handle the answer](/guides/payments/web-tokenize-checkout/receiving-payment-by-card.en.md) of the *Web Tokenize Checkout*.
+The `token` is the one you capture when you [handle the answer](/guides/payments/api/receiving-payment-by-card.en.md) of the *Web Tokenize Checkout*.
 
 
 > NOTE

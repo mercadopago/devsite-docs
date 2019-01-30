@@ -63,15 +63,15 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 
 	switch($_GET["topic"]) {
 		case "payment":
-			$payment = MercadoPago\Payment.find_by_id($_GET["id"]);
+			$payment = MercadoPago\Payment::find_by_id($_GET["id"]);
 			// Get the payment and the corresponding merchant_order reported by the IPN.
-			$merchant_order = MercadoPago\MerchantOrder.find_by_id($payment->order_id;
+			$merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order_id;
 		case "merchant_order":
-			$merchant_order = MercadoPago\MerchantOrder.find_by_id($_GET["id"]);
+			$merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 	}
 
-	foreach ($merchant_order->payments as $payment) {
-		$paid_amount = 0;
+	$paid_amount = 0;
+	foreach ($merchant_order->payments as $payment) {	
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
 		}
