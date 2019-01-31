@@ -341,7 +341,7 @@ properties:
       es: URL a la cual te gustaría recibir notificaciones de pagos.
       pt: URL para a qual você gostaria de receber notificações de pagamentos.
 - id:
-    type: String(UUID)
+    type: Integer
     description:
       en: Preference ID.
       es: Identificador de preferencia.
