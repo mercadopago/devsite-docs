@@ -30,7 +30,7 @@ Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Poi
 
 También, deberás descargar la App desde el *store* de su teléfono móvil:
 
-> [<img src="/images/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/images/AppStoreBadge.es.svg" alt="iOS App Store" width="158"/>)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/developers/bundles/images/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/developers/bundles/images/AppStoreBadge.es.svg" alt="iOS App Store" width="158"/>)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
 Existen distintas alternativas para que puedas cobrar a través de Mercado Pago Point:
 
