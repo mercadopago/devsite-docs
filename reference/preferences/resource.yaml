@@ -452,10 +452,8 @@ properties:
     type: Float
     description:
       en: 'Marketplace''s fee charged by application owner. Default value: 0 in local currency'
-      es: 'Comisión de Marketplace cobrada por el dueño de la aplicación. Valor por
-        defecto: 0 en moneda local'
-      pt: 'Comissão de Mercado cobrada pelo proprietário do aplicativo. Valor por
-        defeito: 0 em moeda local'
+      es: 'Comisión de Marketplace cobrada por el dueño de la aplicación. Valor por defecto: 0 en moneda local'
+      pt: 'Comissão de Mercado cobrada pelo proprietário do aplicativo. Valor por defeito: 0 em moeda local'
 - differential_pricing:
     type: Object
     description:
