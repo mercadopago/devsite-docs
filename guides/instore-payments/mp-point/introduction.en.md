@@ -21,10 +21,10 @@ To be able to charge, it is necessary that you acquire the Mercado Pago Point de
 
 > ```
 > ----[mla]----
-> [Buy Point]  (https://www.mercadopago.com.ar/lector-tarjetas-credito-point?ref=devsite)
+> [Buy Point](https://www.mercadopago.com.ar/lector-tarjetas-credito-point?ref=devsite)
 > ------------
 > ----[mlm]----
-> [Buy Point]  (https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)
+> [Buy Point](https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)
 > ------------  
 > ```
 
