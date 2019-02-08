@@ -1,0 +1,274 @@
+---
+resource: advanced_payments.raml
+use:
+- payer
+- payments
+- disbursements
+- binary_mode
+- metadata
+- application_id
+- additional_info
+errors:
+- 400 BAD_REQUEST:
+  - '40004':
+      description:
+        en:
+        es: Aplicación inválida.
+        pt:
+  - '40005':
+      description:
+        en:
+        es: La aplicación es requerida.
+        pt:
+  - '40006':
+      description:
+        en:
+        es: Fecha de liberación inválida para el Disbursement.
+        pt:
+  - '40007':
+      description:
+        en:
+        es: Fecha de liberación inválida para el Disbursement.
+        pt:
+  - '40013':
+      description:
+        en:
+        es: Email inválido.
+        pt:
+  - '40014':
+      description:
+        en:
+        es: Cantidad de pagos inválidos.
+        pt:
+  - '40015':
+      description:
+        en:
+        es: ID del Payer es requerido para pagos con dinero en cuenta.
+        pt:
+  - '40016':
+      description:
+        en:
+        es: Tipo de pago inválido.
+        pt:
+  - '40017':
+      description:
+        en:
+        es: El monto de la transacción es requerido.
+        pt:
+  - '40018':
+      description:
+        en:
+        es: Monto inválido.
+        pt:
+  - '40019':
+      description:
+        en:
+        es: El método de pago es requerido.
+        pt:
+  - '40020':
+      description:
+        en:
+        es: El tipo de pago es requerido.
+        pt:
+  - '40021':
+      description:
+        en:
+        es: El formato del monto es inválido.
+        pt:
+  - '40022':
+      description:
+        en:
+        es: Modo de procesamiento inválido.
+        pt:
+  - '40023':
+      description:
+        en:
+        es: El tipo del payer es requerido.
+        pt:
+  - '40024':
+      description:
+        en:
+        es: El nombre del payer es requerido.
+        pt:
+  - '40025':
+      description:
+        en:
+        es: El apellido del payer es requerido.
+        pt:
+  - '40026':
+      description:
+        en:
+        es: El tipo de identificación del payer es requerida.
+        pt:
+  - '40027':
+      description:
+        en:
+        es: El número de identificación del payer es requerido.
+        pt:
+  - '40028':
+      description:
+        en:
+        es: La fecha de expiración es requerida.
+        pt:
+  - '40029':
+      description:
+        en:
+        es: El token del pago es requerido.
+        pt:
+  - '40030':
+      description:
+        en:
+        es: Las cuotas son requeridas.
+        pt:
+  - '40031':
+      description:
+        en:
+        es: El monto de los desembolsos es requerido.
+        pt:
+  - '40032':
+      description:
+        en:
+        es: El ID del collector es requerido.
+        pt:
+  - '40033':
+      description:
+        en:
+        es: Comisión del marketplace inválida.
+        pt:
+  - '40034':
+      description:
+        en:
+        es: Monto del desembolso inválido.
+        pt:
+  - '40035':
+      description:
+        en:
+        es: El campo money_release_date inválido.
+        pt:
+  - '40036':
+      description:
+        en:
+        es: El Marketplace no tiene permisos sobre el payer.
+        pt:
+  - '40037':
+      description:
+        en:
+        es: No se encontró el collector.
+        pt:
+  - '40039':
+      description:
+        en:
+        es: Request inválido.
+        pt:
+  - '40040':
+      description:
+        en:
+        es: Estado inválido.
+        pt:
+  - '40041':
+      description:
+        en:
+        es: Fecha de inicio inválida.
+        pt:
+  - '40042':
+      description:
+        en:
+        es: Fecha de fin inválida.
+        pt:
+  - '40043':
+      description:
+        en:
+        es: Email inválido.
+        pt:
+  - '40044':
+      description:
+        en:
+        es: Id del payer inválido.
+        pt:
+  - '40045':
+      description:
+        en:
+        es: Id del collector inválido.
+        pt:
+  - '40046':
+      description:
+        en:
+        es: El campo external_reference es inválido.
+        pt:
+  - '40047':
+      description:
+        en:
+        es: Algunos parámetros de la búsqueda son inválidos.
+        pt:
+  - '40048':
+      description:
+        en:
+        es: Id inválido.
+        pt:
+  - '40049':
+      description:
+        en:
+        es: Fecha de última modificación inválida.
+        pt:
+  - '40051':
+      description:
+        en:
+        es: El campo money_release_date es requerido.
+        pt:
+  - '40052':
+      description:
+        en:
+        es: El campo processing_mode es requerido.
+        pt:
+  - '40053':
+      description:
+        en:
+        es: Contenido inválido.
+        pt:
+  - '40054':
+      description:
+        en:
+        es: El Marketplace no tiene permisos sobre el collector.
+        pt:
+  - '40055':
+      description:
+        en:
+        es: El campo external_reference es requerido.
+        pt:
+  - '40056':
+      description:
+        en:
+        es: El campo money_release_days es inválido.
+        pt:
+  - '40057':
+      description:
+        en:
+        es: El campo collector_id y external_reference están duplicados.
+        pt:
+  - '40058':
+      description:
+        en:
+        es: Clave de idempotencia inválida.
+        pt:
+- 404 NOT_FOUND:
+  - '40401':
+      description:
+        en:
+        es: No se encontró el Disbusement not found.
+        pt:
+  - '40402':
+      description:
+        en:
+        es: No se encontró el Advanced Payment not found.
+        pt:
+  - '40403':
+      description:
+        en:
+        es: No se encontró el Payer not found.
+        pt:
+- 406 NOT_ACCEPTABLE:
+  - '400601':
+      description:
+        en:
+        es: Error en api de payments.
+        pt:
