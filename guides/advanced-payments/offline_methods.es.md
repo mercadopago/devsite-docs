@@ -5,7 +5,7 @@ Se pueden realizar pagos con medios de pago offline o efectivo además de tarjet
 > NOTE
 >
 > Puedes consultar los [medios de pago offline](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-payment-ways) para más información.
-> También puedes ver los [medios de pago soportados](/guides/advanced-payments/supported-payment-methods.md) por la API de Advanced Payments.
+> También puedes ver los [medios de pago soportados](/guides/advanced-payments/supported-payment-methods.es.md) por la API de Advanced Payments.
 
 ###### Request
 En el `body` del request debes definir el tipo de pago como `ticket` y el método según el país.
