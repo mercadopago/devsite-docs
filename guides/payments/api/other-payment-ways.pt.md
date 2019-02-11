@@ -41,6 +41,12 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 ```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+```
 ]]]
 
 O resultado será uma _array_ com os meios de pagamento e suas propriedades:
@@ -207,6 +213,42 @@ payment_data = {
 payment = mp.post('/v1/payments', payment_data)
 
 puts payment
+```
+```csharp
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+//...
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+  DateOfExpiration = "2018-06-30T21:52:49.000-04:00",
+    TransactionAmount = float.Parse("105"),
+    Description = "Title of what you are paying for",
+    PaymentMethodId = "bolbradesco",
+    Payer = new Payer(){
+        Email = "test_user_19653727@testuser.com",
+        FirstName = "Test",
+        LastName = "User",
+        Identification = new Identification(){
+          Type = "CPF",
+          Number = "191191191-00"
+        },
+        Address = new Address(){
+          ZipCode = "06233-200",
+          StreetName = "Av. das Nações Unidas",
+          StreetNumber = "3003",
+          Neighborhood = "Bonfim",
+          City = "Osasco",
+          FederalUnit = "SP"
+
+      }
+  }
+};
+// Save and posting the payment
+payment.Save();
+//...
 ```
 ]]]
 

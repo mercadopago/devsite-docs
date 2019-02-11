@@ -72,6 +72,21 @@ shipment.receiver_address = {
 	apartment: "C"
 }
 ```
+```csharp
+Shipments shipments = new Shipments()
+ {
+     Mode = "me2",
+     Dimensions = "30x30x30,500",
+     Description = "Ergonomic Silk Shirt",
+     ReceiverAddress = new ReceiverAddress(){
+      Zip_code = "5700",
+      StreetNumber = 123,
+      StreetName = "Street",
+      Floor = 4,
+      Apartment = "C"
+     }
+ };
+```
 ]]]
 
 > NOTE

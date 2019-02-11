@@ -41,6 +41,12 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 ```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+```
 ]]]
 
 El resultado será un _array_ con los medios de pago y sus propiedades:
@@ -148,6 +154,26 @@ payment.payer = {
 
 payment.save()
 
+```
+```csharp
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+//...
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("105"),
+    Description = "Awesome Wooden Wallet",
+    PaymentMethodId = "rapipago",
+    Payer = new Payer(){
+        Email = "test_user_19653727@testuser.com"
+  }
+};
+// Save and posting the payment
+payment.Save();
+//...
 ```
 ]]]
 

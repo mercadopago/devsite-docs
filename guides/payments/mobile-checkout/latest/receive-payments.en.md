@@ -61,6 +61,10 @@ mercadopago.configure({
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+```
 ]]]
 
 Then, you must add the attributes of your payment preference:
@@ -142,6 +146,26 @@ preference.items = [item]
 preference.payer = payer
 
 preference.save
+```
+```csharp
+Preference preference = new Preference();
+
+ preference.Items.Add(
+  new Item()
+  {
+    Id = "1234",
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Quantity = [FAKER][NUMBER][BETWEEN][1,10],
+    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+    UnitPrice = (float)[FAKER][COMMERCE][PRICE]
+  }
+  preference.Payer = new Payer()
+  {
+    Email = "[FAKER][INTERNET][FREE_EMAIL]"
+  };
+
+  preference.Save();
+
 ```
 ]]]
 

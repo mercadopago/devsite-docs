@@ -145,6 +145,30 @@ preference.payer = payer
 
 preference.save
 ```
+```csharp
+Preference preference = new Preference();
+
+ preference.Items.Add(
+  new Item()
+  {
+    Id = "1234",
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Quantity = [FAKER][NUMBER][BETWEEN][1,10],
+    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+    UnitPrice = (float)[FAKER][COMMERCE][PRICE]
+  }
+  preference.Payer = new Payer()
+  {
+    Email = "[FAKER][INTERNET][FREE_EMAIL]"
+  };
+
+  preference.Save();
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+```
 ]]]
 
 ### Conteúdo da preferência
