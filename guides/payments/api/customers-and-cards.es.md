@@ -103,7 +103,7 @@ card.save
 
 ```
 ```csharp
-MercadoPago.SDK.setAccessToken = "ENV_ACCESS_TOKEN";
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
   Customer customer = new Customer()
     {
