@@ -105,7 +105,7 @@ card.save
 
 ```
 ```csharp
-MercadoPago.SDK.AccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
   Customer customer = new Customer()
     {
@@ -333,7 +333,7 @@ puts card
 
 ```
 ```csharp
-MercadoPago.SDK.AccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
   Customer customer = Customer.FindById("247711297-jxOV430go9fx2e");
 

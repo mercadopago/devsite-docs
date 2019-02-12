@@ -42,7 +42,7 @@ Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações pa
 -**Para API ou custom checkout:**
 
 ```csharp
- MercadoPago.SDK.AccessToken = "YOUR_ACCESS_TOKEN";
+ MercadoPago.SDK.setAccessToken = "ENV_ACCESS_TOKEN";
 ```
 
 3. Usando resource objects
