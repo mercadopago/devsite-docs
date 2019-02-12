@@ -7,9 +7,6 @@ node_js:
   
 sudo: required
 
-branches:
-  only:
-    - master
 
 before_install:
   - rm /bin/sh && ln -s /bin/bash /bin/sh
