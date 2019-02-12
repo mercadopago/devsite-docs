@@ -39,7 +39,7 @@ O SDK suporta PHP 5 ou maior
   * **Para API o custom checkout:**
     ```php
     MercadoPago\SDK::setAccessToken("ACCESS_TOKEN");      // On Production
-    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN"); // On Sandbox
+    MercadoPago\SDK::setAccessToken("TEST_ACCESS_TOKEN"); // On Sandbox
     ```
 
 3. Usando objetos de recursos.
