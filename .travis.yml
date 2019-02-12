@@ -1,7 +1,4 @@
-language: ruby
-
-rvm:
-  - 2.5.2
+language: bash
   
 sudo: required
 
