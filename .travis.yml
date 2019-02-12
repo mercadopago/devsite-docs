@@ -2,8 +2,6 @@ language: ruby
 
 rvm:
   - 2.5.2
-node_js:
-  - 7
   
 sudo: required
 
@@ -11,7 +9,7 @@ sudo: required
 before_install: 
   - sudo apt-get install -y tree
   - sudo apt-get install -y sed
-  - sudo apt-get install hub
+  - sudo apt-get install -y hub
   
 install:
   - git config --global user.name "devsitebot"
