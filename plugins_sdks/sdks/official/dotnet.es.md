@@ -41,7 +41,7 @@ MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
 -**Para API o custom checkout:**
 
 ```csharp
-MercadoPago.SDK.AccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 3. Utiliza los recursos
 Puedes interactuar con todos los recursos disponibles en la API pública, cada recurso está representado por las clases en este diagrama:
