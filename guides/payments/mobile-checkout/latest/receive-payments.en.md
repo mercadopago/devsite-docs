@@ -63,7 +63,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
 ```csharp
 using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```
 ]]]
 
