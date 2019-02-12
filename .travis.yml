@@ -12,7 +12,7 @@ before_install:
   - sudo apt-get install -y tree
   - sudo apt-get install -y sed
   - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-  - apt-get install -y nodejs
+  - sudo apt-get install -y nodejs
   
 install:
   - git clone -b installing-devsite https://$USER_TOKEN@github.com/mercadolibre/mercadopago-devsite.git  
