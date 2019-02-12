@@ -74,6 +74,29 @@ preference.payment_methods = {
 }
 # ...
 ```
+```csharp
+
+Preference preference = new Preference();
+
+PaymentMethods paymentmethods = new PaymentMethods(); 
+
+List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
+  excludedPaymentMethod.Add(new PaymentMethod()
+    {
+      Id = "master"
+    });
+        
+  paymentmethods.excludedPaymentType = excludedPaymentMethod;
+
+List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
+  excludedPaymentType.Add(new PaymentType()
+    {
+      Id = "ticket"
+    });
+
+  paymentmethods.ExcludedPaymentTypes = excludedPaymentType;
+  paymentmethods.Installments = 12;
+```
 ]]]
 
 ### Indique as URLs de Retorno
@@ -134,6 +157,18 @@ preference.back_urls = {
 preference.auto_return = "approved"
 # ...
 ```
+```csharp
+ Preference preference = new Preference();
+
+ preference.BackUrls = new BackUrls()
+  {
+    Success = "https://www.tu-sitio/success",
+    Failure = "http://www.tu-sitio/failure",
+    Pending = "http://www.tu-sitio/pendings"
+  };
+
+  preference.AutoReturn = AutoReturnType.approved;
+```
 ]]]
 
 ### Sincronize com o seu sistema
@@ -188,6 +223,12 @@ filters = {
 }
 
 payment = MercadoPago::Payment.search(filters)
+```
+```csharp
+Dictionary<string, string> filters = new Dictionary<string, string>;
+filters.Add("external_references", "EXTERNAL");
+      
+List<Payment> payments = Payment.Search(filters);
 ```
 ]]]
 

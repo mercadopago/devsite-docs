@@ -89,6 +89,8 @@ You should only make an *API call* including the data you received from the chec
 [[[
 ```php
 <?php  
+    require_once 'vendor/autoload.php';
+
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();

@@ -88,7 +88,9 @@ Somente deverá incluir uma *chamada à API* incluindo os dados que recebeu do c
 
 [[[
 ```php
-<?php  
+<?php
+    require_once 'vendor/autoload.php';
+
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();

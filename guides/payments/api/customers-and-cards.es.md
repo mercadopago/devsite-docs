@@ -102,6 +102,23 @@ card.customer_id = customer.id
 card.save
 
 ```
+```csharp
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+  Customer customer = new Customer()
+    {
+      Email = "test@test.com"
+    };
+    customer.Save();
+
+  Card card = new Card()
+    {
+      Token = "9b2d63e00d66a8c721607214cedaecda",
+      CustomerId = customer.Id
+    };
+
+      card.Save();
+```
 ]]]
 
 Respuesta del Servidor:
@@ -169,6 +186,10 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 	customer = MercadoPago::Customer.load(customer_id);
   cards = customer.cards;
 
+```
+```csharp
+customer = Customer.FindById("customer.Id");
+List<Card> cards = customer.Cards; 
 ```
 ]]]
 
