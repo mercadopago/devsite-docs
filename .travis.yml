@@ -23,11 +23,11 @@ before_install:
   - nvm install node
   
 install:
-  - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/mercadopago-devsite.git  
+  - git clone -b installing-devsite https://$USER_TOKEN@github.com/mercadolibre/mercadopago-devsite.git  
   - mkdir /home/travis/build/mercadolibre 
   - sudo mv mercadopago-devsite /home/travis/build/mercadolibre/mercadopago-devsite
   - rm -rf /home/travis/build/mercadolibre/mercadopago-devsite/src/source
-  - (cd /home/travis/build/mercadolibre/mercadopago-devsite && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
+  - (cd /home/travis/build/mercadolibre/mercadopago-devsite && git clone -b installing-devsite https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
   - cp -R /home/travis/build/mercadopago/devsite-docs/. /home/travis/build/mercadolibre/mercadopago-devsite/src/source/docs/
   - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/mercadopago-devsite/src/source && npm install")
   - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/mercadopago-devsite/src/source && npm install gulp") 
