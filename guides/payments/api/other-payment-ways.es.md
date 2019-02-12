@@ -43,7 +43,7 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 ```
 ```csharp
 using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
 ```
