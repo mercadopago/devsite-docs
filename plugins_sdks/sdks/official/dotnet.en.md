@@ -36,7 +36,7 @@ This library provides developers with a simple set of bindings to the Mercado Pa
 ```
 -**For API or custom checkout:**
 ```csharp
- MercadoPago.SDK.AccessToken = "YOUR_ACCESS_TOKEN";
+ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 3. Using resource objects
 You can interact with all the resources available in the public API, to this each resource is represented by classes according to the following diagram:
