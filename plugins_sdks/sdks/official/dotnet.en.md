@@ -49,7 +49,7 @@ You can interact with all the resources available in the public API, to this eac
  using MercadoPago.DataStructures.Payment;
  using MercadoPago.Common;
 
- MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
  Payment payment = new Payment
  {

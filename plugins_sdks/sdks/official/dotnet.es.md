@@ -54,7 +54,7 @@ Puedes interactuar con todos los recursos disponibles en la API pública, cada r
  using MercadoPago.DataStructures.Payment;
  using MercadoPago.Common;
 
- MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
  Payment payment = new Payment
  {
