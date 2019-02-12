@@ -90,7 +90,9 @@ Solamente debes realizar un *API call* incluyendo los datos que recibiste del ch
 
 [[[
 ```php
-<?php  
+<?php 
+    require_once 'vendor/autoload.php';
+
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();
