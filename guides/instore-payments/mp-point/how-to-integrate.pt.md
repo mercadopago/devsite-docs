@@ -88,7 +88,7 @@ No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#i
 >
 > * Esta integração somente está disponível para Android versão 2.8.0 ou superior.
 > * Não está disponível para iOS.
-> * Para poder utilizar esta integração é necessário que se comunique com [integracoes@mercadopago.com.br](mailto:integracoes@mercadopago.com.br) para que seja habilitada a opção de integração na aplicação de Mercado Pago.
+> * Para poder utilizar esta integração é necessário que se comunique com [nossa central de ajuda](https://www.mercadopago.com.br/ajuda/point_2583) para que seja habilitada a opção de integração na aplicação de Mercado Pago.
 
 A outra forma de se integrar com a aplicação de Mercado Pago para cobrar com Point é mediante nossas APIs.
 
