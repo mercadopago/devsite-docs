@@ -13,7 +13,7 @@ before_install:
 install:
   - git config --global user.name "devsitebot"
   - git config --global user.email "devsitebot@ml.com"
-  - git clone https://$USER_TOKEN@github.com/mercadolibre/fury_mercadopago-devsite.git
+  - git clone -b installing-devsite https://$USER_TOKEN@github.com/mercadolibre/fury_mercadopago-devsite.git
   - (cd fury_mercadopago-devsite/ && git submodule update --init --recursive)
   - (cd fury_mercadopago-devsite/ && git branch feature-$TRAVIS_BRANCH)
   - (cd fury_mercadopago-devsite/ && git checkout feature-$TRAVIS_BRANCH)
