@@ -13,6 +13,7 @@ before_install:
 install:
   - git config --global user.name "devsitebot"
   - git config --global user.email "devsitebot@ml.com" 
+  - travis sshkey --upload ~/.ssh/id_rsa -r mercadolibre/fury_mercadopago-devsite
   - git clone https://$USER_TOKEN@github.com/mercadolibre/fury_mercadopago-devsite.git
   - (cd fury_mercadopago-devsite/ && git submodule update --init --recursive)
   - (cd fury_mercadopago-devsite/ && git branch feature-$TRAVIS_BRANCH)
