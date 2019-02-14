@@ -14,7 +14,8 @@ install:
   - git config --global user.name "devsitebot"
   - git config --global user.email "devsitebot@ml.com" 
   - git clone https://$USER_TOKEN@github.com/mercadolibre/fury_mercadopago-devsite.git
-  - (cd fury_mercadopago-devsite/src/source/docs && git pull origin $TRAVIS_BRANCH)
+  - (cd fury_mercadopago-devsite/src/source/docs/ && git fetch --all)
+  - (cd fury_mercadopago-devsite/src/source/docs/ && git pull origin $TRAVIS_BRANCH)
   - (cd fury_mercadopago-devsite/src/source && git add . && git commit -m "updating docs reference" && git push origin master)
   - (cd fury_mercadopago-devsite/ && git branch feature-$TRAVIS_BRANCH)
   - (cd fury_mercadopago-devsite/ && git checkout feature-$TRAVIS_BRANCH)
