@@ -1,43 +1,30 @@
-language: ruby
-
-rvm:
-  - 2.3.3
-node_js:
-  - 7
+language: bash
   
 sudo: required
 
-branches:
-  only:
-    - master
 
-before_install:
-  - rm /bin/sh && ln -s /bin/bash /bin/sh
+before_install: 
+  - sudo add-apt-repository ppa:cpick/hub -y
+  - sudo apt-get update
   - sudo apt-get install -y tree
   - sudo apt-get install -y sed
-  - sudo add-apt-repository -y ppa:chris-lea/node.js 
-  - sudo apt-get update 
-  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-  - bash -c "source ~/.profile"
-  - echo "$(nvm --version)"
-  - nvm install node
+  - sudo apt-get install -y hub
   
 install:
-  - git clone -b develop https://$USER_TOKEN@github.com/mercadolibre/devsite-engine.git  
-  - mkdir /home/travis/build/mercadolibre 
-  - sudo mv devsite-engine /home/travis/build/mercadolibre/devsite-engine   
-  - rm -rf /home/travis/build/mercadolibre/devsite-engine/source
-  - (cd /home/travis/build/mercadolibre/devsite-engine && git clone -b develop https://$USER_TOKEN@github.com/mercadopago/devsite-frontend.git source)
-  - cp -R /home/travis/build/mercadopago/devsite-docs/. /home/travis/build/mercadolibre/devsite-engine/source/docs/
-  - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install")
-  - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && npm install gulp") 
-  - (cd /home/travis/build/mercadolibre/devsite-engine/ && bundle install)
-  - echo "$(tree -L 3 /home/travis/build/)"
-  - echo "$(tree -L 3 /home/travis/build/mercadolibre/devsite-engine)"
   - git config --global user.name "devsitebot"
-  - git config --global user.email "devsitebot@ml.com" 
-script:
-  - (bash -c "nvm use node && cd /home/travis/build/mercadolibre/devsite-engine/source && gulp svgo") 
-  - (bash -c "cd /home/travis/build/mercadolibre/devsite-engine && TARGET=test middleman deploy") 
+  - git config --global user.email "devsitebot@ml.com"
+  - git clone -b installing-devsite https://$USER_TOKEN@github.com/mercadolibre/fury_mercadopago-devsite.git
+  - (cd fury_mercadopago-devsite/ && git submodule update --init --recursive)
+  - (cd fury_mercadopago-devsite/ && git branch feature-$TRAVIS_BRANCH)
+  - (cd fury_mercadopago-devsite/ && git checkout feature-$TRAVIS_BRANCH)
+  - (cd fury_mercadopago-devsite/src/source/docs/ && git pull origin $TRAVIS_BRANCH)
+  - (cd fury_mercadopago-devsite/ && git remote set-url --push origin https://$USER_TOKEN@github.com/mercadopago/devsite-docs.git)
+  - (cd fury_mercadopago-devsite/src/source && git add . && git commit -m "updating docs reference" && git push origin master)
+  - (cd fury_mercadopago-devsite/ && git remote set-url --push origin https://$USER_TOKEN@github.com/mercadolibre/fury_mercadopago-devsite.git)
+  - (cd fury_mercadopago-devsite/ && git add . && git commit -m "updating source reference" && git push origin feature-$TRAVIS_BRANCH)
+  - (cd fury_mercadopago-devsite/ && hub pull-request -b feature-$TRAVIS_BRANCH -h master)
+  
+script: 
+  - (bash -c " echo no tests ") 
    
   
