@@ -175,7 +175,7 @@ print(json.dumps(card_token, indent=4))
 }
 ```
 
-Once you got the card_token, you can [create the payment](../payments/api/receiving-payment-by-card.en.md#receive-card-payments).
+Once you got the card_token, you can [create the payment](/guides/payments/api/receiving-payment-by-card.en.md#recibir-un-pago-con-tarjeta).
 
 ## Get approval faster by submitting the Device Fingerprint
 
