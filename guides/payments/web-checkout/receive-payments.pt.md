@@ -378,6 +378,8 @@ Uma vez que a preferência é criada, use o URL que você encontra no attribute 
 </html>
 ```
 
+Você também pode personalizar o check-out inserindo este [Link](/guides/payments/web-checkout/personalization.pt.md)
+
 ## 3. Ative as notificações de pagamento
 
 As notificações informam automaticamente sobre seus novos pagamentos e atualizações de status.

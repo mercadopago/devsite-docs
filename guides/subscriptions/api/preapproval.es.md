@@ -11,7 +11,7 @@
 >
 > B. En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
 >
-> C. Pre-Approval solo está disponible a través del checkout personalizado de Mercado Pago, es decir, vía la utilización de nuestras API’s.
+> C. Pre-Approval solo está disponible a través del checkout personalizado de Mercado Pago o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
 >
 >(*) NOTA: En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: “MERPAG*<brand_name>”. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como MERPAG*<brand_name>” donde <Brand_name> se configura desde la cuenta de Mercado Pago del vendedor: Menu -> Configuracion > Nombre de mi negocio.
 
@@ -47,7 +47,7 @@ print_r ($customer);
 ```
 ]]]
 
-### Otené la tarjeta asociada a tu cliente
+### Obtené la tarjeta asociada a tu cliente
 
 Una vez hayas obtenido el id de tu cliente, puedes buscar la tarjeta de la siguiente forma:
 
@@ -104,7 +104,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 ```
 ]]]
 
-## Escuha notificaciones de los pagos
+## Escucha notificaciones de los pagos
 
 Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks)
 
