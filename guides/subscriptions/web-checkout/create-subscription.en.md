@@ -168,7 +168,7 @@ You can test your integration before going into production, in order to check th
 
 For that, you must use test users and cards.
 
-For more information, go to the [Testing](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing.es.md) section.
+For more information, go to the [Testing](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing) section.
 
 ## Add special features to your subscription
 

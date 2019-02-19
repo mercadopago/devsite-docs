@@ -2,11 +2,11 @@
 
 
 ----[mla,mlb,mlc,mlm,mpe,mco,global]----
-> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction.es.md)**, **[Mobile Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction.es.md)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction.es.md)**.
+> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)**.
 ------------
 
 ----[mlu]----
-> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction.es.md)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction.es.md)**.
+> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)**.
 ------------
 
 Na sua conta no Mercado Pago, você tem a opção para [gerar um link](https://www.mercadopago.com.ar/tools/create) que pode ser enviado ao seu comprador para que efetue o pagamento. Você não precisa saber programação.

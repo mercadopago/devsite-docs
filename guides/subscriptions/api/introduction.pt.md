@@ -49,4 +49,4 @@ Assim que tiver [testado sua aplicação](https://www.mercadopago.com.br/develop
 
 Sua aplicação será ativada automaticamente. Tudo que deve fazer é substituir as chaves do sandbox pelas de produção em seu código.
 
-#### Começar a [criar planos e inscrever clientes](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/create-subscription.es.md).
+#### Começar a [criar planos e inscrever clientes](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/create-subscription).

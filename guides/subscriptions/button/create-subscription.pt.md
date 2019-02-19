@@ -23,6 +23,6 @@ Além disso, você receberá um **Código HTML** que poderá ser incluído em se
 
 >Na Argentina, o processamento com cartão VISA leva até 48 horas, portanto, seus pagamentos ficarão pendentes durante esse período.
 
->Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de [Assinaturas via API](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/introduction.es.md).
+>Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de [Assinaturas via API](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/introduction).
 
 ### [Criar botão de assinatura](https://www.mercadopago.com.ar/subscription-plans/create).

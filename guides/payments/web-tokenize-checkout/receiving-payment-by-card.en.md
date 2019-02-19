@@ -226,7 +226,7 @@ Response:
 
 ### Test cards
 
-To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing.es.md).
+To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing).
 
 ### Installments offer
 

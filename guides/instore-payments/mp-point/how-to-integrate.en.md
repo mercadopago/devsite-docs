@@ -247,7 +247,7 @@ The answer will have the following format.
 
 It is necessary that you send the `notification_url`, where you´ll get the notification about current and new payments.
 
-In the article [notificaciones](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks.es.md) you could find more information about it.
+In the article [notificaciones](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks) you could find more information about it.
 
 
 ## Point payments

@@ -231,7 +231,7 @@ If you need to make a refund to your buyer, you can do it with the Refunds API. 
 
 If your buyer doesn’t have one, you will receive an email at the address sent with the payment with instructions on how to withdraw the refund.
 
-For more information, go to [Refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds.es.md).
+For more information, go to [Refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds).
 
 ----[mlc, global]----
 

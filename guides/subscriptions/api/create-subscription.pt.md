@@ -341,7 +341,7 @@ Se você implementar o [Marketplace](#) e operar com as credenciais de seus usu�
 
 ### Gerencie sua assinatura
 
-Na seção [gerenciamento de assinaturas](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/manage-subscription.es.md) você encontrará informações sobre como pausar, reativar ou excluir uma assinatura, e como atualizar o preço de um plano.
+Na seção [gerenciamento de assinaturas](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/manage-subscription) você encontrará informações sobre como pausar, reativar ou excluir uma assinatura, e como atualizar o preço de um plano.
 
 ### Teste sua integração
 

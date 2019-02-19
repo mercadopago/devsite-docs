@@ -405,7 +405,7 @@ A resposta inclui o `issuer_id` que deve ser enviado e a mensagem recomendada p
 >
 > Nota
 >
-> Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos [requisitos adicionais](https://www.mercadopago.com.br/developers/pt/guides/localization/considerations-argentina.es.md).
+> Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos [requisitos adicionais](https://www.mercadopago.com.br/developers/pt/guides/localization/considerations-argentina).
 
 ------------
 

@@ -126,7 +126,7 @@ Expected response:
 
 ## 3. Integrate the API
 
-To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction.es.md), using the `access_token` of each seller for your application.
+To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction), using the `access_token` of each seller for your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the `application_fee` parameter when creating the preference:
 
