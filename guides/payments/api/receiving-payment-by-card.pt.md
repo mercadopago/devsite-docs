@@ -93,7 +93,7 @@ O próximo passo é capturar os dados do cartão. Para isso, é importante possu
 >
 > Os campos que possuem dados confidenciais não contam com o atributo `name` e, portanto, nunca chegarão aos seus servidores.
 
-
+----[mla,mlb,mlu,mco,mlc,mpe]----
 #### Obtenha o tipo de documento
 
 Entre os campos obrigatórios estão o tipo e o número do documento.
@@ -103,6 +103,7 @@ Entre os campos obrigatórios estão o tipo e o número do documento.
 ```javascript
 Mercadopago.getIdentificationTypes();
 ```
+------------
 
 ####  Obtenha o meio de pagamento do cartão
 

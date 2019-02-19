@@ -93,7 +93,7 @@ The next step is to collect the card information. To do this it is important to 
 >
 > Fields that contain sensitive data do not have the `name` attribute, so they will never reach your servers.
 
-
+----[mla,mlb,mlu,mco,mlc,mpe]----
 #### Get the document type
 
 The document type and number are among the required fields.
@@ -104,6 +104,7 @@ It is possible to get the list of available documents:
 ```javascript
 Mercadopago.getIdentificationTypes();
 ```
+------------
 
 #### Get the card’s payment method
 
