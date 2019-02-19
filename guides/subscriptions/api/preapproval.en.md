@@ -11,7 +11,7 @@
 >
 > B. In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
 >
-> C. Pre-Approval is only available through the personalized checkout of Mercado Pago, that is, via the use of our API's.
+> C. Pre-Approval is only available through the personalized checkout of Mercado Pago or web tokenize checkout, that is, via the use of our API's.
 >
 >(*) NOTE: In the case of Master and Amex credit cards, the credit card will appear as: "MERPAG * <brand_name>". So for these means that for this payments methods you can communicate: "In your summary you will see the charge as MERPAG * <brand_name>" where <Brand_name> is configured from the Market account Seller payment: Menu -> Settings> Name of my business.
 

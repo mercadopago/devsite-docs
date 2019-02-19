@@ -25,6 +25,6 @@ Com esta configuração, você **receberá um link** que poderá enviar por e-ma
 
 Ao acessar este link, seus compradores serão redirecionados ao checkout, onde poderão ver os dados definidos por você e escolher como pagar. Eles podem fazer o pagamento sem a necessidade de se ter uma conta no Mercado Pago.
 
-Além disso, você receberá um **Código HTML** que poderá ser incluído em seu site e um **QR Code** para compartilhar com seus clientes.
+Além disso, você receberá um **Código HTML** que poderá ser incluído em seu site.
 
 >Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](/guides/payments/web-checkout/introduction.pt.md)**, **[Mobile Checkout](/guides/payments/mobile-checkout/introduction.pt.md)** ou **[API](/guides/payments/api/introduction.pt.md)**.

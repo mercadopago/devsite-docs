@@ -380,6 +380,9 @@ Once the preference has been created, use the URL found in the attribute `init_p
 </html>
 ```
 
+
+You can also customize the checkout by entering this [Link](/guides/payments/web-checkout/personalization.en.md)
+
 ## 3. Enable payment notifications
 
 Notifications are automatically sent to inform you of any new payments and status updates.
