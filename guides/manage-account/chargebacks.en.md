@@ -23,7 +23,7 @@ Now we will go into detail in each of them.
 
 ## Occurrence of the chargeback
 
-Through [IPN](/guides/notifications/ipn.es.md) we will notify you instantly whenever you receive a chargeback. For this to happen, you must be subscribed to the subject `chargebacks` within the [configuration](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Through [IPN](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn.es.md) we will notify you instantly whenever you receive a chargeback. For this to happen, you must be subscribed to the subject `chargebacks` within the [configuration](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 ## Consultation of the chargeback
 

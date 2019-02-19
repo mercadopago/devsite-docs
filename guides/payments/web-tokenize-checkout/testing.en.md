@@ -17,7 +17,7 @@ You have a pair of [sandbox keys](https://www.mercadopago.com.ar/account/credent
 | Peru    	 | 4009 1753 3280 6176 | unavailable       | unavailable      |
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| unavailable      |
 
-You can also [use test credit cards from local payment methods in each country](/guides/localization/local-cards.en.md).
+You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards).
 
 ## Receive a payment
 

@@ -12,8 +12,8 @@ sites_supported:
 >
 > Prerequisites
 >
-> * Have the [card information capture](/guides/payments/api/receiving-payment-by-card.en.md#collect-card-information) implemented.
-> * Have the [Stored Customers and Cards](/guides/payments/api/customers-and-cards.en.md) implemented.
+> * Have the [card information capture](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card#collect-card-information) implemented.
+> * Have the [Stored Customers and Cards](https://www.mercadopago.com.ar/developers/en/guides/payments/api/customers-and-cards) implemented.
 
 Mercado Pago allows you to receive recurring payments through subscriptions.
 
@@ -41,8 +41,8 @@ Initially, your application will only be able to interact with Mercado Pago in *
 
 We will provide you test cards, so that you can simulate transactions as if they were real.
 
-As soon as you have [tested your application](/guides/subscriptions/api/testing.en.md), you must complete the “I want to go to production” form you will find in your [credentials](https://www.mercadopago.com.ar/account/credentials).
+As soon as you have [tested your application](https://www.mercadopago.com.ar/developers/en/guides/subscriptions/api/testing), you must complete the “I want to go to production” form you will find in your [credentials](https://www.mercadopago.com.ar/account/credentials).
 
 Your application will be automatically activated. All you have to do is replace the sandbox keys with the production ones in your code.
 
-#### [Start creating plans and subscribe customers](/guides/subscriptions/api/create-subscription.en.md)
+#### [Start creating plans and subscribe customers](https://www.mercadopago.com.ar/developers/en/guides/subscriptions/api/create-subscription)

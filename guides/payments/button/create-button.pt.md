@@ -2,11 +2,11 @@
 
 
 ----[mla,mlb,mlc,mlm,mpe,mco,global]----
-> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](/guides/payments/web-checkout/introduction.es.md)**, **[Mobile Checkout](/guides/payments/mobile-checkout/introduction.es.md)** ou **[API](/guides/payments/api/introduction.es.md)**.
+> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction.es.md)**, **[Mobile Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction.es.md)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction.es.md)**.
 ------------
 
 ----[mlu]----
-> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](/guides/payments/web-checkout/introduction.es.md)** ou **[API](/guides/payments/api/introduction.es.md)**.
+> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction.es.md)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction.es.md)**.
 ------------
 
 Na sua conta no Mercado Pago, você tem a opção para [gerar um link](https://www.mercadopago.com.ar/tools/create) que pode ser enviado ao seu comprador para que efetue o pagamento. Você não precisa saber programação.
@@ -27,4 +27,4 @@ Ao acessar este link, seus compradores serão redirecionados ao checkout, onde p
 
 Além disso, você receberá um **Código HTML** que poderá ser incluído em seu site e um **QR Code** para compartilhar com seus clientes.
 
->Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](/guides/payments/web-checkout/introduction.pt.md)**, **[Mobile Checkout](/guides/payments/mobile-checkout/introduction.pt.md)** ou **[API](/guides/payments/api/introduction.pt.md)**.
+>Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)**.

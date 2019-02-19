@@ -1,11 +1,11 @@
 # Recibir pagos
 
 ----[mla,mlb,mlc,mlm,mpe,mco,global]----
-> En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](/guides/payments/web-checkout/introduction.es.md)**, **[Mobile Checkout](/guides/payments/mobile-checkout/introduction.es.md)** o **[API](/guides/payments/api/introduction.es.md)**.
+> En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)** o **[API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)**.
 ------------
 
 ----[mlu]----
-> En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](/guides/payments/web-checkout/introduction.es.md)** o **[API](/guides/payments/api/introduction.es.md)**.
+> En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction)** o **[API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)**.
 ------------
 
 Desde tu cuenta de Mercado Pago, [tienes la opción de generar un botón o link](https://www.mercadopago.com.ar/tools/create) que le puedes enviar a tu comprador para que pueda efectuar el pago. No necesitas saber de programación.  

@@ -50,4 +50,4 @@ Usa estas tarjetas de prueba para testear los diferentes resultados del pago.
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| no disponible    |
 | Venezuela  | 4966 3823 3110 9310 |5177 0761 6430 0010| no disponible    |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](/guides/localization/local-cards.es.md).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards).

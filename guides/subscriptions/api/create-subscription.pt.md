@@ -14,8 +14,8 @@ Inscreva seus clientes para receber pagamentos de forma periódica e automatizad
 >
 > Pré-requisitos
 >
-> * Possuir a [captura de dados de cartão](/guides/payments/receiving-payment-by-card.pt.md)implementada.
-> * Armazenar [clientes e cartões](/guides/payments/customers-and-cards.pt.md).
+> * Possuir a [captura de dados de cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/receiving-payment-by-card)implementada.
+> * Armazenar [clientes e cartões](https://www.mercadopago.com.br/developers/pt/guides/payments/customers-and-cards).
 
 
 ## 1. Crie um plano de assinatura
@@ -123,13 +123,13 @@ HTTP status code: 201 Created
 
 Para criar uma assinatura, você precisa de um `Customer` com um cartão atribuído.
 
-Consulte a seção [Clientes e Cartões](/guides/payments/api/customers-and-cards.pt.md) para saber como proceder.
+Consulte a seção [Clientes e Cartões](https://www.mercadopago.com.br/developers/pt/guides/payments/api/customers-and-cards) para saber como proceder.
 
 Somente inscreva `customers` com cartões verificados.
 
 Veja abaixo algumas opções para fazer isso:
 
-1. [Emitir uma autorização](/guides/payments/api/authorization-and-capture.pt.md) para um valor baixo no cartão e cancelá-la em seguida, para conferir se o cartão é válido..
+1. [Emitir uma autorização](https://www.mercadopago.com.br/developers/pt/guides/payments/api/authorization-and-capture) para um valor baixo no cartão e cancelá-la em seguida, para conferir se o cartão é válido..
 
 2. Utilizar o atributo `setup_fee`, que realizará uma cobrança adicional ao tentar inscrever seu usuário; e somente se esta cobrança for bem-sucedida, prosseguiremos com o registro da assinatura.
 
@@ -245,9 +245,9 @@ Se não obtivermos a aprovação do pagamento até a data de cobrança estabelec
 
 Independentemente do status da fatura atual, se a assinatura estiver ativa, será criada uma fatura para o próximo período.
 
-Cada pagamento recusado será notificado por meio de [Webhooks](/guides/notifications/webhooks.pt.md). Analise a causa da rejeição e comunique-se com o usuário para, por exemplo, [atualizar os dados de seu cartão de crédito](#) ou alterá-lo por outro, antes da próxima tentativa de cobrança.
+Cada pagamento recusado será notificado por meio de [Webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks). Analise a causa da rejeição e comunique-se com o usuário para, por exemplo, [atualizar os dados de seu cartão de crédito](#) ou alterá-lo por outro, antes da próxima tentativa de cobrança.
 
-Para mais informações, consulte a seção [Webhooks](/guides/notifications/webhooks.pt.md).
+Para mais informações, consulte a seção [Webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
 
 ## Adicione recursos especiais ao seu plano
 
@@ -341,8 +341,8 @@ Se você implementar o [Marketplace](#) e operar com as credenciais de seus usu�
 
 ### Gerencie sua assinatura
 
-Na seção [gerenciamento de assinaturas](/guides/subscriptions/api/manage-subscription.es.md) você encontrará informações sobre como pausar, reativar ou excluir uma assinatura, e como atualizar o preço de um plano.
+Na seção [gerenciamento de assinaturas](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/manage-subscription.es.md) você encontrará informações sobre como pausar, reativar ou excluir uma assinatura, e como atualizar o preço de um plano.
 
 ### Teste sua integração
 
-Você pode testar sua integração antes de partir para produção, a fim de realizar os ajustes necessários. Para isso, utilize suas credenciais no Modo Sandbox e os cartões de teste. Consulte a seção de [Testes](/guides/subscriptions/api/testing.pt.md).
+Você pode testar sua integração antes de partir para produção, a fim de realizar os ajustes necessários. Para isso, utilize suas credenciais no Modo Sandbox e os cartões de teste. Consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/api/testing).

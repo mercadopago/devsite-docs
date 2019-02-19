@@ -19,4 +19,4 @@ Você conta com um par de chaves privadas para conectar-se à API. Essas chaves 
 
 As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, e muito mais. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
 
-#### Começar a criar [assinaturas](/guides/subscriptions/web-checkout/create-subscription.pt.md).
+#### Começar a criar [assinaturas](https://www.mercadopago.com.br/developers/pt/guides/subscriptions/web-checkout/create-subscription).

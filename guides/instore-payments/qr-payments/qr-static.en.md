@@ -35,6 +35,6 @@ This transfer of cash is not associated to a sales order. It only allows custome
 
 ## Check your payments
 
-You can check your sales transactions in the list of activities of your Mercado Pago account, or integrate the [notifications](/guides/notifications/webhooks.es.md) in your management system.
+You can check your sales transactions in the list of activities of your Mercado Pago account, or integrate the [notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks.es.md) in your management system.
 
-> If you want to build something more advanced and personalized, check our [integrated QR documentation](/guides/instore-payments/qr-payments/qr-integrated.es.md).
+> If you want to build something more advanced and personalized, check our [integrated QR documentation](https://www.mercadopago.com.ar/developers/en/guides/instore-payments/qr-payments/qr-integrated.es.md).

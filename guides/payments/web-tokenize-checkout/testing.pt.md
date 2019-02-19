@@ -16,7 +16,7 @@ Você conta com um par de [credenciais do sandbox](https://www.mercadopago.com.b
 | Peru       | 4009 1753 3280 6176 | indisponível        | indisponível      |
 | Uruguay  	 | 4157 2362 1173 6486 | 5161 4413 1585 2061 | indisponível      |
 
-Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](/guides/localization/local-cards.pt.md).
+Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards).
 
 ## Receba um pagamento
 

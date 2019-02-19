@@ -249,7 +249,7 @@ La respuesta tendra el siguiente formato.
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
 
-En el artículo de [notificaciones](/guides/notifications/webhooks.es.md) podes obtener más información.
+En el artículo de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks) podes obtener más información.
 
 
 ## Pagos de Point

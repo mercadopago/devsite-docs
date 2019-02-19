@@ -6,7 +6,7 @@ In the event that a payment is rejected you can offer the buyer the option to re
 
 At that moment you will receive the response status *rejected* (`rejected`) and it is advisable to inform the user of said status.
 
-Along with the communication you can also offer the possibility of re-entering the card data, **using the _Web Tokenize Checkout_ again**. You also have the opportunity to [change the button text](/guides/payments/web-tokenize-checkout/personalization.en.md) using the `data-button-label` attribute to complement the communication.
+Along with the communication you can also offer the possibility of re-entering the card data, **using the _Web Tokenize Checkout_ again**. You also have the opportunity to [change the button text](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/personalization) using the `data-button-label` attribute to complement the communication.
 
 For example:
 

@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the [API](/guides/payments/api/introduction.en.md) implemented.
+> * Have the [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction) implemented.
 
 A **webhook** is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 

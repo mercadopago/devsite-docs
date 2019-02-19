@@ -309,4 +309,4 @@ checkout.start()
 ```
 ]]]
 
-- Para informações sobre como testar, vá para a seção [testando a integração](/guides/payments/mobile-checkout/v3/testing.pt.md).
+- Para informações sobre como testar, vá para a seção [testando a integração](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/v3/testing).

@@ -29,7 +29,7 @@ Initially, your application will only be able to interact with Mercado Pago in *
 
 We will provide you with test cards, so that you can simulate transactions as if they were real.
 
-As soon as you have [tested your application](/guides/payments/api/testing.en.md), you must complete the “I want to go to production” form that you will find in your [credentials.](https://www.mercadopago.com.ar/account/credentials)
+As soon as you have [tested your application](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing), you must complete the “I want to go to production” form that you will find in your [credentials.](https://www.mercadopago.com.ar/account/credentials)
 
 Your application will be automatically activated. All you should do is replace the sandbox keys with the production ones in your code.
 
@@ -49,4 +49,4 @@ Once you have tested you application in _Sandbox_ mode, you have to complete the
 The failure of fulfillment of these rules may involve: not processing payments and legal actions in accordance with the [terms and conditions] (https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299) .
 You must have a policy of terms and conditions, in which you specify that you are responsible for all the data that is entered into your site.
 
-#### [Start integrating the API](/guides/payments/api/receiving-payment-by-card.es.md)
+#### [Start integrating the API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card.es.md)
