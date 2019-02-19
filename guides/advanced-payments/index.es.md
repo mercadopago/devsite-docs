@@ -1,0 +1,16 @@
+# Índice
+
+* [Introducción](/guides/advanced-payments/introduction.es.md)
+* [Inicio rápido split de pagos](/guides/advanced-payments/split-quick-start.es.md)
+* [Liberación flexible](/guides/advanced-payments/split-flexible_release.es.md)
+* [Obtención de permisos de vendedores](/guides/advanced-payments/sellers-permissions.es.md)
+* [Clientes y tarjetas](/guides/advanced-payments/customers-and-cards.es.md)
+* [Medios offline](/guides/advanced-payments/offline_methods.es.md)
+* [Reembolsos](/guides/advanced-payments/refund_advanced_payment.es.md)
+* [Autorización y captura](/guides/advanced-payments/capture_advanced_payment.es.md)
+* [Cancelación de pagos](/guides/advanced-payments/cancel_advanced_payment.es.md)
+* [Modo binario](/guides/advanced-payments/binary_mode.es.md)
+* [Búsquedas y conciliación](/guides/advanced-payments/search_and_conciliation.es.md)
+* [Mapa de estados y Webhooks](/guides/advanced-payments/status-map-and-webhooks.es.md)
+* [Idempotencia](/guides/advanced-payments/idempotency.es.md)
+* [Métodos de pago soportados](/guides/advanced-payments/supported-payment-methods.es.md)
