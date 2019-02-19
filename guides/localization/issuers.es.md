@@ -33,4 +33,4 @@ Los emisores pueden ser obtenidos de la siguiente forma:
 		...
 	]
 
-Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago y *los parámetros (_querystring_) que hayas utilizado*. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API](/reference).
+Los resultados incluídos en esta respuesta coincidirán con el país asociado a tu cuenta de Mercado Pago y *los parámetros (_querystring_) que hayas utilizado*. Puedes obtener más información sobre este recurso y sus atributos en la [Referencia de API]https://www.mercadopago.com.ar/developers/es/reference).

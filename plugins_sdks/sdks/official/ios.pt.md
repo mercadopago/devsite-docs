@@ -52,7 +52,7 @@ From now on, be sure to always open the generated Xcode workspace (`.xcworkspace
 
 ### Copy manually (iOS 7.0 or later)
 
-- Open the MercadoPagoSDK folder, and drag MercadoPagoSDK.xcodeproj into the file navigator of your app project.
+- Open the MercadoPagoSDK folder, and drag MercadoPagoSDK.xcodeproj into the ile navigator of your app project.
 - In Xcode, navigate to the target configuration window by clicking on the blue project icon, and selecting the application target under the "Targets" heading in the sidebar.
 - Ensure that the deployment target of MercadoPagoSDK.framework matches that of the application target.
 - In the tab bar at the top of that window, open the "Build Phases" panel.
