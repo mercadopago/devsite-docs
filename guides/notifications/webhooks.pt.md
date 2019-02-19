@@ -81,7 +81,7 @@ Tipo         | URL                                                  | Documenta�
 payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
 plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
 subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](https://www.mercadopago.com.ar/developers/es/reference/invoices/_invoices_id/get/)
+invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/invoices/_invoices_id/get/)
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado.
