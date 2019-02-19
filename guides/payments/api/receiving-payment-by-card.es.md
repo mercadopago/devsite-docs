@@ -94,6 +94,7 @@ El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer est
 > Los campos que tienen datos sensibles no cuentan con el atributo `name`, de esta forma nunca llegarán a tus servidores.
 
 
+----[mla,mlb,mlu,mco,mlc,mpe]----
 #### Obtener el tipo de documento
 
 Entre los campos requeridos se encuentra el tipo y número de documento.
@@ -103,6 +104,7 @@ Poder obtener el listado de documentos disponibles:
 ```javascript
 Mercadopago.getIdentificationTypes();
 ```
+------------
 
 #### Obtener el medio de pago de la tarjeta
 
