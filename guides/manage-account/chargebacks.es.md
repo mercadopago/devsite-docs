@@ -22,7 +22,7 @@ Ahora entraremos en detalle en cada una de ellas
 
 ## Aparición del contracargo
 
-Vía [IPN](/guides/notifications/ipn.es.md) te notificaremos instantáneamente cada vez que recibas un contracargo. Para que esto suceda, debes estar subscripto al tema `chargebacks` dentro de la [configuración](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Vía [IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) te notificaremos instantáneamente cada vez que recibas un contracargo. Para que esto suceda, debes estar subscripto al tema `chargebacks` dentro de la [configuración](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 ## Consulta del contracargo
 

@@ -42,8 +42,8 @@ Para poder pagar, seus clientes devem baixar o aplicativo da loja do celular:
 
 | Tipo                                                         | Descrição                                                  | Necessita de integração? |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- |
-| [QR sem integração](/guides/instore-payments/qr-payments/qr-static.pt.md) | Você gera o QR em seu portal Mercado Pago, para que o comprador verifique seu código e possa enviar seu dinheiro. Você deve inserir o valor manualmente. | Não                      |
-| [QR Ponto de venda](/guides/instore-payments/qr-payments/qr-pos.pt.md) | Integrando ao seu sistema de ponto de venda a opção de pagamentos via QR. Seu cliente escaneia o código e, em seu celular, a descrição do que ele comprou e o valor que ele deve pagar é disponibilizado. | Sim                      |
-| [QR postos de combustível](/guides/instore-payments/qr-payments/qr-gas-station.pt.md) | Integrando ao seu sistema de gestão o modo de pagamentos via QR. Seu cliente escaneia o código e, em seu celular, o valor que você deve pagar é disponibilizado. | Sim                      |
+| [QR sem integração](https://www.mercadopago.com.br/developers/pt/guides/instore-payments/qr-payments/qr-static) | Você gera o QR em seu portal Mercado Pago, para que o comprador verifique seu código e possa enviar seu dinheiro. Você deve inserir o valor manualmente. | Não                      |
+| [QR Ponto de venda](https://www.mercadopago.com.br/developers/pt/guides/instore-payments/qr-payments/qr-pos) | Integrando ao seu sistema de ponto de venda a opção de pagamentos via QR. Seu cliente escaneia o código e, em seu celular, a descrição do que ele comprou e o valor que ele deve pagar é disponibilizado. | Sim                      |
+| [QR postos de combustível](https://www.mercadopago.com.br/developers/pt/guides/instore-payments/qr-payments/qr-gas-station) | Integrando ao seu sistema de gestão o modo de pagamentos via QR. Seu cliente escaneia o código e, em seu celular, o valor que você deve pagar é disponibilizado. | Sim                      |
 
 Com base no seu modelo de negócios, você pode escolher uma das opções ou combiná-las para oferecer aos seus clientes uma boa experiência de compra em suas lojas físicas.

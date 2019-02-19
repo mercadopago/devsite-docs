@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the [Checkout](/guides/payments/web-checkout/introduction.en.md) implemented.
+> * Have the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
 
 **IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 

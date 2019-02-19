@@ -6,7 +6,7 @@ En el caso de que un pago fuese rechazado puedes ofrecerle al comprador la opci�
 
 En ese momento recibirás como respuesta el estado del pago *rechazado* (`rejected`) y es recomendable informarle al usuario dicho estado.
 
-Junto con la comunicación puedes ofrecer además la posibilidad de volver a ingresar los datos de tarjeta, **usando nuevamente el _Web Tokenize Checkout_**. También tienes la posibilidad de [cambiar el texto del botón](/guides/payments/web-tokenize-checkout/personalization.es.md) mediante el atributo `data-button-label` para complementar la comunicación.
+Junto con la comunicación puedes ofrecer además la posibilidad de volver a ingresar los datos de tarjeta, **usando nuevamente el _Web Tokenize Checkout_**. También tienes la posibilidad de [cambiar el texto del botón](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/personalization) mediante el atributo `data-button-label` para complementar la comunicación.
 
 Por ejemplo:
 

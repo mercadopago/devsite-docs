@@ -393,7 +393,7 @@ Respuesta:
 
 > NOTE
 >
-> Puedes ver más información sobre el [manejo de respuestas](/guides/payments/api/handling-responses.es.md).
+> Puedes ver más información sobre el [manejo de respuestas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
 
 ## Recibir un pago en cuotas
 
@@ -443,7 +443,7 @@ La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recome
 >
 > Nota
 >
-> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](/guides/localization/considerations-argentina.es.md).
+> Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con ciertas [exigencias adicionales](https://www.mercadopago.com.ar/developers/es/guides/localization/considerations-argentina).
 
 
 Para crear el pago es importante enviar los datos indicados anteriormente:
@@ -617,7 +617,7 @@ payment.Save();
 
 Es **muy importante** comunicar correctamente los resultados recibidos al crear un pago. Esto ayudará a mejorar la conversión en los casos de rechazos, y evitar contracargos en los casos de transacciones aprobadas.
 
-Te recomendamos leer el artículo sobre el [manejo de respuestas](/guides/payments/api/handling-responses.es.md) y utilizar la comunicación sugerida en cada uno de los casos.
+Te recomendamos leer el artículo sobre el [manejo de respuestas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses) y utilizar la comunicación sugerida en cada uno de los casos.
 
 ## Recibir una notificación del pago
 
@@ -625,7 +625,7 @@ Es importante que te enteres de cualquier actualización del estado de tu pago. 
 
 Un _Webhook_ es una notificación que se envía de un servidor a otro mediante un request `HTTP POST`.
 
-Puedes encontrar toda la información al respecto en el [artículo de webhooks](/guides/notifications/webhooks.es.md).
+Puedes encontrar toda la información al respecto en el [artículo de webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks).
 
 ## Próximos pasos
 
@@ -633,4 +633,4 @@ Puedes encontrar toda la información al respecto en el [artículo de webhooks](
 
 Puedes almacenar de forma segura las tarjetas de tus clientes y realizar pagos con una experiencia _one-click-to-buy_.
 
-[Más información](/guides/payments/api/customers-and-cards.es.md)
+[Más información](https://www.mercadopago.com.ar/developers/es/guides/payments/api/customers-and-cards)

@@ -187,7 +187,7 @@ Obtenha seu **ACCESS_TOKEN** nos seguintes links:
     mp.get ("/v1/customers/CUSTOMER_ID")
 ```
 
-> Para mais informações visite a sessão [API reference](/reference).
+> Para mais informações visite a sessão [API reference]https://www.mercadopago.com.br/developers/pt/reference).
 
 ## Métodos genéricos
 

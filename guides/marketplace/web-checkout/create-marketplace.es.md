@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
+> * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction).
 
 Para comenzar debes:
 
@@ -126,7 +126,7 @@ Respuesta esperada:
 
 ## 3. Integra el checkout
 
-Para cobrar en nombre de tus vendedores debes integrar [Checkout](/guides/payments/web-checkout/introduction.es.md), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
+Para cobrar en nombre de tus vendedores debes integrar [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
 
@@ -264,7 +264,7 @@ El vendedor va a recibir la diferencia entre el monto total y las comisiones, ta
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen, así como también alta y baja de usuarios en tu Marketplace. 
 
-En el artículo de [notificaciones](/guides/notifications/ipn.es.md) puedes obtener más información.
+En el artículo de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) puedes obtener más información.
 
 ### Devoluciones y cancelaciones
 
@@ -273,4 +273,4 @@ En caso de que la devolución la realice el Marketplace, se deberán utilizar la
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](/guides/manage-account/cancellations-and-refunds.es.md).
+Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).

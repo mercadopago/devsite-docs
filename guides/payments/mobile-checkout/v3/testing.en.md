@@ -51,4 +51,4 @@ Use these test cards to test the different payment results.
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| unavailable      |
 | Venezuela  | 4966 3823 3110 9310 |5177 0761 6430 0010| unavailable      |
 
-You can also [use test credit cards from local payment methods in each country](/guides/localization/local-cards.en.md).
+You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards).

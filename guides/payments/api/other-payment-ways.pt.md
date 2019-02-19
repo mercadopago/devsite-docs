@@ -291,7 +291,7 @@ Somente é possível cancelar pagamentos que se encontrem com status `pending` o
 
 As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso. Veja a [lista completa de vencimentos](https://www.mercadopago.com.br/activities).
 
-Se você quiser cancelar um pagamento, pode fazê-lo seguindo o guia [cancelamentos e devoluções de pagamentos](/guides/manage-account/cancellations-and-refunds.pt.md).
+Se você quiser cancelar um pagamento, pode fazê-lo seguindo o guia [cancelamentos e devoluções de pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).
 
 A expiração de um pagamento ocorre após 30 dias e o cancelamento é automático, o status final deles será cancelled/expired. 
 
@@ -310,4 +310,4 @@ Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas a
 
 Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
 
-Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.pt.md).
+Para mais informações, consulte a seção sobre [devoluções](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).

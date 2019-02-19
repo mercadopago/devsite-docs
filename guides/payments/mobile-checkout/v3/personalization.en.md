@@ -235,7 +235,7 @@ If you need to perform any validation on your server at the time of making the p
 
 In the `ServicePreference` class you can set up the URL and URI of your service together with a Map so that you can send the information you want.
 
-At the moment of posting the payment, the SDK will do it at your service, [creating the payment](/reference/payments/_payments_id/get/). and performing the validations inherent to your business. The SDK will expect to receive a payment, according to the response of Mercado Pago service.
+At the moment of posting the payment, the SDK will do it at your service, [creating the payment]https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/). and performing the validations inherent to your business. The SDK will expect to receive a payment, according to the response of Mercado Pago service.
 
 As soon as the `ServicePreference` has been created, you must start the payment flow of MercadoPago, as shown in the following code:
 
@@ -307,4 +307,4 @@ checkout.start()
 ```
 ]]]
 
-- For information on how to test, go to the [testing integration](/guides/payments/mobile-checkout/v3/testing.en.pt) section.
+- For information on how to test, go to the [testing integration](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/v3/testing.en.pt) section.

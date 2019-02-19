@@ -158,9 +158,9 @@ If we do not get a payment approval for the agreed billing date, we will retry u
 
 If the subscription is active, we will try to charge it in the next period.
 
-Each declined payment will be notified to you through [Notifications](../../notifications/ipn.en.md). Assess the cause of the decline, and communicate your user to, for example, update the credit card info or change it for another, prior to the next payment attempt.
+Each declined payment will be notified to you through [Notifications](../../notifications/ipn). Assess the cause of the decline, and communicate your user to, for example, update the credit card info or change it for another, prior to the next payment attempt.
 
-For more information, go to the [Notifications](/guides/notifications/ipn.en.md) section.
+For more information, go to the [Notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) section.
 
 ## 4. Test your integration
 
@@ -168,7 +168,7 @@ You can test your integration before going into production, in order to check th
 
 For that, you must use test users and cards.
 
-For more information, go to the [Testing](/guides/payments/api/testing.es.md) section.
+For more information, go to the [Testing](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing) section.
 
 ## Add special features to your subscription
 
