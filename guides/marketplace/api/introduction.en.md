@@ -37,9 +37,9 @@ The **credencial privada**, or *access\_token*, are used for all requests to the
 
 Initially, your application will only be able to interact with Mercado Pago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
 
-We will provide you with [test cards](/guides/marketplace/web-checkout/testing-marketplace.en.md/), so that you can simulate transactions as if they were real.
+We will provide you with [test cards](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/testing-marketplace/), so that you can simulate transactions as if they were real.
 
-Once you have tested your application, you must complete the [homologation process](/guides/marketplace/api/goto-production.es.md/) and complete the “I want to go to production” form that you will find in your credentials.
+Once you have tested your application, you must complete the [homologation process](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/goto-production/) and complete the “I want to go to production” form that you will find in your credentials.
 
 **Before you can start using your production credentials you must complete the "I want to go to production" form in order to activate them.** 
 If not, you´ll get the "Invalid use of live credentials" error.  
@@ -47,4 +47,4 @@ If not, you´ll get the "Invalid use of live credentials" error.
 Your application will be automatically activated. All you have to do is replace the sandbox keys with the production ones in your code.
 
 
-#### [Start creating my Marketplace](/guides/marketplace/api/create-marketplace.en.md)
+#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/create-marketplace)

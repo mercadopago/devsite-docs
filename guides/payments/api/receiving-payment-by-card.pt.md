@@ -93,7 +93,7 @@ O próximo passo é capturar os dados do cartão. Para isso, é importante possu
 >
 > Os campos que possuem dados confidenciais não contam com o atributo `name` e, portanto, nunca chegarão aos seus servidores.
 
-
+----[mla,mlb,mlu,mco,mlc,mpe]----
 #### Obtenha o tipo de documento
 
 Entre os campos obrigatórios estão o tipo e o número do documento.
@@ -103,6 +103,7 @@ Entre os campos obrigatórios estão o tipo e o número do documento.
 ```javascript
 Mercadopago.getIdentificationTypes();
 ```
+------------
 
 ####  Obtenha o meio de pagamento do cartão
 
@@ -405,7 +406,7 @@ A resposta inclui o `issuer_id` que deve ser enviado e a mensagem recomendada p
 >
 > Nota
 >
-> Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos [requisitos adicionais](/guides/localization/considerations-argentina.es.md).
+> Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos [requisitos adicionais](https://www.mercadopago.com.br/developers/pt/guides/localization/considerations-argentina).
 
 ------------
 
@@ -580,7 +581,7 @@ payment.Save();
 
 É **muito importante** comunicar corretamente os resultados recebidos ao criar um pagamento. Isso ajudará a melhorar a conversão em casos de rejeições, e evitará estornos em casos de transações aprovadas.
 
-Recomendamos que leia o artigo sobre [manipulação de respostas](/guides/payments/api/handling-responses.pt.md) e utilize a comunicação sugerida em cada um dos casos.
+Recomendamos que leia o artigo sobre [manipulação de respostas](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses) e utilize a comunicação sugerida em cada um dos casos.
 
 ## Receba uma notificação de pagamento
 
@@ -588,7 +589,7 @@ Recomendamos que leia o artigo sobre [manipulação de respostas](/guides/paymen
 
 Um _Webhook_ é uma notificação enviada de um servidor para outro mediante uma requisição `HTTP POST`.
 
-Todas as informações relacionadas a esse assunto podem ser encontradas no [artigo sobre Webhooks](/guides/notifications/webhooks.pt.md).
+Todas as informações relacionadas a esse assunto podem ser encontradas no [artigo sobre Webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
 
 ## Próximos passos
 
@@ -596,4 +597,4 @@ Todas as informações relacionadas a esse assunto podem ser encontradas no [art
 
 Armazene os cartões de seus clientes com segurança e efetue pagamentos com uma experiência one-click-to-buy (ou compra com um clique).
 
-[Mais informações](/guides/payments/api/customers-and-cards.pt.md)
+[Mais informações](https://www.mercadopago.com.br/developers/pt/guides/payments/api/customers-and-cards)

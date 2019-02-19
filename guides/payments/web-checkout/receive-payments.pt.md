@@ -386,12 +386,12 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificaçõess](/guides/notifications/webhooks.pt.md).
+Para mais informações, consulte a seção de [Notificaçõess](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
 
 ## 4.Cancele um pagamento
 As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso.
 
-O vencimento **não é automático**, então é necessário que efetue o [cancelamento do pagamento](/guides/manage-account/cancellations-and-refunds.pt.md) logo após o vencimento.
+O vencimento **não é automático**, então é necessário que efetue o [cancelamento do pagamento](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds) logo após o vencimento.
 
 ## 5. Teste sua integração
 
@@ -399,4 +399,4 @@ Você pode testar sua integração antes de partir para produção, a fim de ver
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a [seção de Testes](/guides/payments/web-checkout/testing.pt.md).
+Para mais informações, consulte a [seção de Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/testing).
