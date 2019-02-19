@@ -46,9 +46,9 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| [ver documentação]()
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](/reference/merchant_orders/_merchant_orders_id/get/)
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
 
 
 ### Implemente o receptor de notificações usando o seguinte código como exemplo:
