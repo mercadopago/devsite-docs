@@ -25,6 +25,6 @@ With this configuration, **you will get a link** that you can send by e-mail, po
 
 By clicking on this link, your buyers will be redirected to the checkout where they will see the information that you have configured and will be able to choose how to pay. They can make the payment without the need for a Mercado Pago account.
 
-In addition, we will provide you with an **HTML Code** you can include in your website and a **QR Code** you can share with your customers.
+In addition, we will provide you with an **HTML Code** you can include in your website.
 
 > If you want to build something more advanced and personalized, check our **[Web Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** documentation.

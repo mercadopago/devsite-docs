@@ -25,4 +25,4 @@ Al finalizar esta configuración **obtendrás un link** que puedes enviar por _e
 
 Ingresando a este _link_, tus compradores serán redirigidos a un formulario de pago donde verán los datos que configuraste y podrán elegir cómo pagar. Pueden realizar el pago como invitados, sin necesidad de tener una cuenta de Mercado Pago.
 
-Además te brindaremos un **código HTML** que puedes incluir en tu sitio web y un **código QR**  para que tus clientes puedan escanearlo con su celular.
+Además te brindaremos un **código HTML** que puedes incluir en tu sitio web.
