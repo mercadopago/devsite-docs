@@ -29,7 +29,13 @@ Through [IPN](/guides/notifications/ipn.es.md) we will notify you instantly when
 
 The IPN notification will contain the `ID` of the chargeback.
 
-With this `ID` you can make a **GET** to` https://api.mercadopago.com/v1/chargebacks/ID` to check your information:
+With this `ID` you can make a **GET** to` https://api.mercadopago.com/v1/chargebacks/ID?access_token=` 
+
+```
+curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+```
+
+to check your information:
 
 ```json
 {

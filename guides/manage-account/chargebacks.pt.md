@@ -27,7 +27,13 @@ Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação inst
 ## Consulta de estorno
 
 A notificação IPN vai conter o `ID` do estorno.
-Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar suas informaçõeso:
+Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID?access_token=` 
+
+```
+curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+```
+
+para consultar suas informaçõeso:
 
 ```json
 {
