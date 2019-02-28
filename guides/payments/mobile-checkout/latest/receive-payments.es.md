@@ -440,14 +440,14 @@ Para obtener una respuesta de pago se deberá implementar el protocolo **PXLifeC
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
+Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para conocer más sobre esto.
 
 ## Prueba la integración
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](/guides/payments/mobile-checkout/testing.es.md) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/testing) para más información.
 
 ### Próximos pasos
 
-- Visita la sección [Personalización](/guides/payments/mobile-checkout/personalization.es.md) para adecuar el flujo de pago a tus necesidades.
+- Visita la sección [Personalización](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/personalization) para adecuar el flujo de pago a tus necesidades.

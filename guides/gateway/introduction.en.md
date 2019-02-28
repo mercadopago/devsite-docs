@@ -16,7 +16,7 @@ Mercado Pago offers you the possibility of operating with your own merchant numb
 	* You need to contact your account manager.
 	* If you already have a FirstData merchant number you have to get its terminals and share them with your account executive.
 	
-* Nevertheless, you will be able to freely use the [_Sandbox_](/guides/payments/api/testing.en.md) mode to test the product operation and advance your integration.
+* Nevertheless, you will be able to freely use the [_Sandbox_](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing) mode to test the product operation and advance your integration.
 
 
-+[_Next Steps_](/guides/gateway/receiving-payment.en.md)
++[_Next Steps_](https://www.mercadopago.com.ar/developers/en/guides/gateway/receiving-payment)

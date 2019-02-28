@@ -19,15 +19,13 @@ Your sellers using the Mercado Pago mobile application pass the customer's card 
 
 To be able to charge, it is necessary that you acquire the Mercado Pago Point device:
 
-> ```
-> ----[mla]----
-> [Buy Point](https://www.mercadopago.com.ar/lector-tarjetas-credito-point?ref=devsite)
-> ------------
-> ----[mlm]----
-> [Buy Point](https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)
-> ------------  
-> ```
 
+----[mla]----
+> [Buy Point](https://www.mercadopago.com.ar/lector-tarjetas-credito-point?ref=devsite)
+------------
+----[mlm]----
+> [Buy Point](https://www.mercadopago.com.mx/lector-tarjetas-credito-point?ref=devsite)
+------------  
 
 
 Also, you must download the App from the store of your mobile phone:

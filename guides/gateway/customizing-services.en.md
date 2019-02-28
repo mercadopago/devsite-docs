@@ -9,7 +9,7 @@ sites_supported:
 
 Each merchant number configured on the platform (`merchant_account_id`) will be associated with its services (`merchant_services`).
 
-The services used can be viewed in the response of each payment. These services [vary according to the country](/guides/localization/gateway.es.md) and they can also be modified in each payment.
+The services used can be viewed in the response of each payment. These services [vary according to the country](https://www.mercadopago.com.ar/developers/en/guides/localization/gateway) and they can also be modified in each payment.
 
 > NOTE
 >

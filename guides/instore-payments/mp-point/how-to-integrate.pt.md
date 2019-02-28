@@ -248,12 +248,12 @@ A resposta terá o seguinte formato.
 
 É necessário que envie sua `notification_url`, onde receberá aviso de todos os novos pagamentos e atualizações de status que se gerem.
 
-No artigo de [notificações](/guides/notifications/webhooks.pt.md) é possível obter mais informações.
+No artigo de [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks) é possível obter mais informações.
 
 
 ## Pagamentos de Point
 
-Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar mais informações no artigo de [API's](/reference/payments/_payments_id/get/)
+Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar mais informações no artigo de [API's]https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/)
 
 Existe uma API exclusiva de Point que conta com informações adicionais do pagamento: `https://api.mercadolibre.com/point/services/payment/<payment_id>?access_token=<access_token>`
 

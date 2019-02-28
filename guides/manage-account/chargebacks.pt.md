@@ -22,7 +22,7 @@ Agora entraremos em detalhe em cada uma delas:
 
 ## Aparição do estorno
 
-Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que um estorno for recebido. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
+Vía [IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn) será enviada uma notificação instantâneamente cada vez que um estorno for recebido. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
 
 ## Consulta de estorno
 

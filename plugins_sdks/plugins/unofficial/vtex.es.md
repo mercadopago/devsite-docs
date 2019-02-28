@@ -581,4 +581,4 @@ Ante un rechazo es muy importante revisar el `Status_detail` que especifica el m
 - `"Status":"pending"`: Pago pendiente.
 - `"Status":"cancelled"`: Pago cancelado.
 
-Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](/guides/payments/api/handling-responses.es.md).
+Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).

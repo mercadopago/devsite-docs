@@ -247,11 +247,11 @@ The answer will have the following format.
 
 It is necessary that you send the `notification_url`, where you´ll get the notification about current and new payments.
 
-In the article [notificaciones](/guides/notifications/webhooks.es.md) you could find more information about it.
+In the article [notificaciones](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks) you could find more information about it.
 
 
 ## Point payments
-Point payments can be search in the Payments API. You can find more information in the following article: [API's](/reference/payments/_payments_id/get/)
+Point payments can be search in the Payments API. You can find more information in the following article: [API's]https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
 
 On the other hand, we have an exclusive Point API that has some additional information about the payments: `https://api.mercadolibre.com/point/services/payment/<payment_id>?access_token=<access_token>`
 

@@ -18,7 +18,7 @@ Recibe pagos de manera simple y segura utilizando el *Web Payment Checkout* de *
 
 Para iniciar el checkout necesitarás una preferencia:
 
-- Preference ID: [Cómo crear una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md).
+- Preference ID: [Cómo crear una preferencia de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/create-preference).
 
 ## Paso 2: Lleva a tu comprador al checkout
 
@@ -103,4 +103,4 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 
 Para ello debes usar usuarios y tarjetas de prueba.
 
-Visita la sección [Probando la Integración](/guides/payments/web-payment-checkout/testing.es.md) para más información.
+Visita la sección [Probando la Integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/testing) para más información.

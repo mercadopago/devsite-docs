@@ -37,14 +37,14 @@ curl -X POST \
 ```
 
 ## Como obter permissões e dados do Merchant
-O Marketplace que deseja integrar, deve solicitar permissões de seus Merchants para operar e fazer pagamentos em seu nome. Para fazer isso, você deve seguir os passos de [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.pt.md).
+O Marketplace que deseja integrar, deve solicitar permissões de seus Merchants para operar e fazer pagamentos em seu nome. Para fazer isso, você deve seguir os passos de [Mercado Pago Connect](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/create-marketplace).
 
 Seguindo essas etapas, o marketplace pode obter o "access_token" com o qual você pode obter o "email" na [API de "Users"](https://developers.mercadolibre.com/en_us/usuarios-y-aplicaciones) do Mercado Livre e o "user_id" que deve ser usado como "collector_id" em cada "disbursement" que você deseja criar no Advanced Payment. É importante salvar o user_id e o e-mail do merchant para identificar o proprietário da conta Mercado Pago, caso seja necessário.
 
 ## Criando um Advanced Payment
-Esses pagamentos especiais são entidades que têm 1 pagamentos de entrada e vários de saída. O payer pode fazer o pagamento com diversos métodos de pagamento (cartão de crédito, boletos, etc.). Cada método tem seus campos obrigatórios, por exemplo, para pagar com cartões de crédito deve [gerar um card token](/guides /payments/api/receiving-payment-by-card.pt.md).
+Esses pagamentos especiais são entidades que têm 1 pagamentos de entrada e vários de saída. O payer pode fazer o pagamento com diversos métodos de pagamento (cartão de crédito, boletos, etc.). Cada método tem seus campos obrigatórios, por exemplo, para pagar com cartões de crédito deve [gerar um card token](https://www.mercadopago.com.br/developers/pt/guides /payments/api/receiving-payment-by-card).
 
-Deve-se ter em mente que todos os merchants especificados em cada "disbursement" devem ser associados com o marketplace pelo [Mercado Pago Connect](/guides/marketplace/api/create-marketplace.pt.md) (cada Merchant deve dar permissão explícita para o marketplace). Caso contrário, você não pode criar o pagamento.
+Deve-se ter em mente que todos os merchants especificados em cada "disbursement" devem ser associados com o marketplace pelo [Mercado Pago Connect](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/create-marketplace) (cada Merchant deve dar permissão explícita para o marketplace). Caso contrário, você não pode criar o pagamento.
 
 O parâmetro "access_token" da URL deve ser o access token obtido pelo marketplace, como indicado pela [documentação](https://developers.mercadolibre.com/es_ar/autenticacion-y-autorizacion) pública.
 
