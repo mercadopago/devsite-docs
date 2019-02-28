@@ -149,7 +149,7 @@ $mp.post ("/v1/customers", Hash["email" => "email@test.com"]);
 $mp.get ("/v1/customers/CUSTOMER_ID");
 ```
 
-> Para más información visita la sección [API reference](/reference).
+> Para más información visita la sección [API reference]https://www.mercadopago.com.ar/developers/es/reference).
 
 ## Métodos genéricos
 

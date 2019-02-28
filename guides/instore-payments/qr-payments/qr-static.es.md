@@ -37,8 +37,8 @@ De ésta manera cuando tu cliente escanea se le solicitará que ingrese manualme
 
 ## Entérate de tus pagos
 
-Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](/guides/notifications/ipn.es.md) en tu sistema de gestión.
+Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) en tu sistema de gestión.
 
 
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado](/guides/instore-payments/qr-payments/qr-integrated.es.md)
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-integrated)

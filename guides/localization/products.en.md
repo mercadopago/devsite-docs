@@ -46,7 +46,7 @@ API features for each country are shown below:
 
 ## Unavailable payment methods
 
-Certain [payment methods](payment-methods.en.md) may not be available for certain products. Below are the payment methods not available by product, and by country.
+Certain [payment methods](payment-methods) may not be available for certain products. Below are the payment methods not available by product, and by country.
 
 ### Argentina
 

@@ -226,7 +226,7 @@ Retorno:
 
 ### Cartões de teste
 
-Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](/guides/payments/api/testing.pt.md).
+Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing).
 
 ### Promoções
 

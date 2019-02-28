@@ -39,7 +39,7 @@ Também deve informar os juros que serão pagos pelo seu usuário, direcionando 
 
 Deve oferecer a melhor comunicação possível ao usuário no que diz respeito aos estados que o seu pagamento está, assim como os possíveis erros na inserção de dados do cartão. Isso fará melhorar a conversão do seu checkout, uma vez que oferece a seus clientes informações claras e o informa bem o que falta ou o que deve corrigir para finalizar o processo de pagamento.
 
-Para isso, consulte os [possíveis códigos de erro da API](/guides/payments/api/handling-responses.pt.md), junto a comunicação que sugerimos que seja implementada em cada caso.
+Para isso, consulte os [possíveis códigos de erro da API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses), junto a comunicação que sugerimos que seja implementada em cada caso.
 
 Além disso, quando o pagamento com cartão de crédito é aprovado, deverá mostrar na tela, assim como um possível envio de email do pagamento aprovado, como o comprador verá o resultado daquela compra na sua fatura de cartão de crédito, simplesmente mostre o valor do atributo `statement_descriptor` da resposta do pagamento.
 

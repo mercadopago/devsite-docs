@@ -14,8 +14,8 @@ Subscribe your customers to receive payments in a periodic and automated way.
 >
 > Prerequisites
 >
-> * Have the [card information capture](/guides/payments/receiving-payment-by-card.en.md) implemented.
-> * Store [customers and cards](/guides/payments/customers-and-cards.en.md).
+> * Have the [card information capture](https://www.mercadopago.com.ar/developers/en/guides/payments/receiving-payment-by-card) implemented.
+> * Store [customers and cards](https://www.mercadopago.com.ar/developers/en/guides/payments/customers-and-cards).
 
 
 ## 1. Create a subscription plan
@@ -124,7 +124,7 @@ HTTP status code: 201 Created
 
 In order to create a subscription, you must have a `Customer` with a card attributed to it.
 
-For more information, go to the [Customers and Cards section](/guides/payments/api/customers-and-cards.en.md).
+For more information, go to the [Customers and Cards section](https://www.mercadopago.com.ar/developers/en/guides/payments/api/customers-and-cards).
 
 Only subscribe `customers` with verified cards.
 
@@ -245,9 +245,9 @@ If we do not get a payment approval for the agreed billing date, we will retry u
 
 Regardless of the status of the current invoice, if the subscription is active an invoice will be created for the next period.
 
-Each declined payment will be notified to you via [Webhooks](/guides/notifications/webhooks.en.md). Assess the cause of the decline, and communicate your user to, for example, [update the credit card info](#) or change it for another, prior to the next payment attempt.
+Each declined payment will be notified to you via [Webhooks](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks). Assess the cause of the decline, and communicate your user to, for example, [update the credit card info](#) or change it for another, prior to the next payment attempt.
 
-For more information, go to the [Webhooks section](/guides/notifications/webhooks.en.md).
+For more information, go to the [Webhooks section](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks).
 
 ## Add special features to your plan
 
@@ -341,8 +341,8 @@ If you implement the [Marketplace](#) and operate with the credentials of your c
 
 ### Manage your subscription
 
-In the [subscriptions management section](/guides/subscriptions/api/manage-subscription.en.md) you will find information on how to pause, reactivate or delete a subscription, and how to update the price of a plan.
+In the [subscriptions management section](https://www.mercadopago.com.ar/developers/en/guides/subscriptions/api/manage-subscription) you will find information on how to pause, reactivate or delete a subscription, and how to update the price of a plan.
 
 ### Test your integration
 
-You can test your integration before going into production, in order to check the operation and make all the adjustments you need. To do this, use your Sandbox Mode credentials and test cards. Go to the [Testing](/guides/subscriptions/api/testing.en.md) section.
+You can test your integration before going into production, in order to check the operation and make all the adjustments you need. To do this, use your Sandbox Mode credentials and test cards. Go to the [Testing](https://www.mercadopago.com.ar/developers/en/guides/subscriptions/api/testing) section.

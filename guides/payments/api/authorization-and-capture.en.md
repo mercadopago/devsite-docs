@@ -12,7 +12,7 @@
 >
 > Prerequisites
 >
-> * Have the [card payment processing](/guides/payments/api/receiving-payment-by-card.en.md) implemented.
+> * Have the [card payment processing](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card) implemented.
 >
 > Available only in:
 >
@@ -345,4 +345,4 @@ Respuesta:
 > Note
 >
 > Authorizations that have not been captured within the specified period will be automatically cancelled.
-You will be notified via [Webhooks](/guides/notifications/webhooks.en.md) of the payment status change.
+You will be notified via [Webhooks](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks) of the payment status change.

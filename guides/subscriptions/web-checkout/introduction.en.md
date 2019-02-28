@@ -19,4 +19,4 @@ You have a pair of private keys to connect to the API. You can find these keys i
 
 The **private keys** (also known as  `access_token `) are used for all requests to the APIs, such as processing payments, refunds, etc. The private keys must be kept **confidentially** in your backend servers and should never be published.
 
-#### [Start creating subscriptions](/guides/subscriptions/web-checkout/create-subscription.en.md)
+#### [Start creating subscriptions](https://www.mercadopago.com.ar/developers/en/guides/subscriptions/web-checkout/create-subscription)

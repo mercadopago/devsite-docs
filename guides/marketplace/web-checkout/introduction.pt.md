@@ -33,4 +33,4 @@ Antes de utilizar o Access Token é preciso preencher o formulário "Quero ir pa
 
 Ao utilizar o Web-Checkout, as credenciais que se deve utilizar para associação dos vendedores ao Marketplace (2º Passo) são o Client_id e Client_secret da sessão de Checkout Básico da página de credenciais.
 
-#### [Começar a criar meu Marketplace](/guides/marketplace/web-checkout/create-marketplace.pt.md)
+#### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/create-marketplace)

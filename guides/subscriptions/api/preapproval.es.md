@@ -11,7 +11,7 @@
 >
 > B. En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
 >
-> C. Pre-Approval solo está disponible a través del checkout personalizado de Mercado Pago, es decir, vía la utilización de nuestras API’s.
+> C. Pre-Approval solo está disponible a través del checkout personalizado de Mercado Pago o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
 >
 >(*) NOTA: En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: “MERPAG*<brand_name>”. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como MERPAG*<brand_name>” donde <Brand_name> se configura desde la cuenta de Mercado Pago del vendedor: Menu -> Configuracion > Nombre de mi negocio.
 
@@ -23,11 +23,11 @@ Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: 
 
 ## Cobrá el primer pago
 
-Para la primer transacción siempre se tendrán que solicitar los datos de la tarjeta, y cursar el pago con código de seguridad. Se podrá hacer siguiendo los pasos de nuestra integración por [API](/guides/payments/api/receiving-payment-by-card.es.md).
+Para la primer transacción siempre se tendrán que solicitar los datos de la tarjeta, y cursar el pago con código de seguridad. Se podrá hacer siguiendo los pasos de nuestra integración por [API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
 
 ## Crea un customer y asociale la tarjeta utilizada
 
-Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](/guides/payments/api/customers-and-cards.es.md)
+Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/customers-and-cards)
 
 ## Cobra de forma recurrente a tus clientes
 
@@ -47,7 +47,7 @@ print_r ($customer);
 ```
 ]]]
 
-### Otené la tarjeta asociada a tu cliente
+### Obtené la tarjeta asociada a tu cliente
 
 Una vez hayas obtenido el id de tu cliente, puedes buscar la tarjeta de la siguiente forma:
 
@@ -104,15 +104,15 @@ $payment = $mp->post("/v1/payments", $payment_data);
 ```
 ]]]
 
-## Escuha notificaciones de los pagos
+## Escucha notificaciones de los pagos
 
-Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](/guides/notifications/webhooks.es.md)
+Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago te enviará una notificación para que puedas actualizar tus sistemas. Podrás ver el paso a paso en nuestra sección de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks)
 
 ## Reintentos
 
 Si el pago sin cvv es rechazado, te recomendamos que sigas una lógica de reintentos según el estado del rechazo. Por ejemplo, si el pago fue rechazado por tarjeta vencida no tiene sentido que se haga un reintento. Se le deberá solicitar al cliente que informa otra tarjeta para cursar los cobros siguientes. En caso que el rechazo sea por fondos insuficientes, tiene sentido que se haga una lógica de reintentos. 
 
-Podrás ver todos los rechazos [aquí](/guides/payments/api/handling-responses.es.md)
+Podrás ver todos los rechazos [aquí](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses)
 
 ## Prueba tu integración
 
@@ -132,7 +132,7 @@ Cuentas con un par de [credenciales de _sandbox_](https://www.mercadopago.com.ar
 | Perú    	 | 4009 1753 3280 6176 | no disponible     | no disponible    |
 | Uruguay  	 | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible    |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](/guides/localization/local-cards.es.md).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards).
 
 Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Para ello debes ingresar en el formulario en el campo `card_holder_name` alguno de los siguientes prefijos:
 

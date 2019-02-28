@@ -52,7 +52,7 @@ From now on, be sure to always open the generated Xcode workspace (`.xcworkspace
 
 ### Copy manually (iOS 7.0 or later)
 
-- Open the MercadoPagoSDK folder, and drag MercadoPagoSDK.xcodeproj into the file navigator of your app project.
+- Open the MercadoPagoSDK folder, and drag MercadoPagoSDK.xcodeproj into the ile navigator of your app project.
 - In Xcode, navigate to the target configuration window by clicking on the blue project icon, and selecting the application target under the "Targets" heading in the sidebar.
 - Ensure that the deployment target of MercadoPagoSDK.framework matches that of the application target.
 - In the tab bar at the top of that window, open the "Build Phases" panel.
@@ -66,4 +66,4 @@ This project includes two Xcode Projects with examples using MercadoPagoSDK: Mer
 ## Documentation
 
 + [See the GitHub Project](https://github.com/mercadopago/px-ios).
-+ [Read the SDK quick integration guide](/guides/payments/mobile-checkout/introduction.pt.md).
++ [Read the SDK quick integration guide](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction).

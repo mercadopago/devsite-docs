@@ -380,19 +380,22 @@ Once the preference has been created, use the URL found in the attribute `init_p
 </html>
 ```
 
+
+You can also customize the checkout by entering this [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/personalization)
+
 ## 3. Enable payment notifications
 
 Notifications are automatically sent to inform you of any new payments and status updates.
 
 This will allow you to manage your inventories and keep your system synced.
 
-To learn more about it, go to [Notifications](/guides/notifications/ipn.en.md).
+To learn more about it, go to [Notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn).
 
 ## 4. Cancel a payment
 
 The payment methods available for payments in cash must be paid from 3 to 5 days depending on each one.
 
-They **do not expire automatically**, so you’re required to [cancel the payment](/guides/manage-account/cancellations-and-refunds.en.md) after expiration.
+They **do not expire automatically**, so you’re required to [cancel the payment](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds) after expiration.
 
 
 ## 5. Test the integration
@@ -401,4 +404,4 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Tests](/guides/payments/web-checkout/testing.en.md) section.
+For more information, go to the [Tests](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/testing) section.

@@ -13,8 +13,8 @@ sites_supported:
 >
 > Pre-requisitos
 >
-> * Tener implementada la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta).
-> * Tener implementado [Clientes y Tarjetas Almacenadas](/guides/payments/api/customers-and-cards.es.md)
+> * Tener implementada la [captura de datos de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#captura-los-datos-de-tarjeta).
+> * Tener implementado [Clientes y Tarjetas Almacenadas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/customers-and-cards)
 
 
 Mercado Pago te permitirá recibir pagos recurrentes a través de suscripciones.
@@ -45,9 +45,9 @@ Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas [probado tu aplicación](/guides/subscriptions/api/testing.es.md), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
+Una vez que hayas [probado tu aplicación](https://www.mercadopago.com.ar/developers/es/guides/subscriptions/api/testing), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 
 
-#### Comenzar a crear [planes y suscribir clientes](/guides/subscriptions/api/create-subscription.es.md)
+#### Comenzar a crear [planes y suscribir clientes](https://www.mercadopago.com.ar/developers/es/guides/subscriptions/api/create-subscription)
