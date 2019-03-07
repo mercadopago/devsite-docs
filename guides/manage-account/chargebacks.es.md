@@ -27,7 +27,13 @@ Vía [IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn
 ## Consulta del contracargo
 
 La notificación IPN va a contener el `ID` del contracargo.
-Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar su información:
+Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/chargebacks/ID?access_token=` 
+
+```
+curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+```
+
+para consultar su información:
 
 ```json
 {
