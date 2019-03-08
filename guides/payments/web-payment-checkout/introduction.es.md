@@ -52,15 +52,15 @@ Navegador | Soporte
 
 Integrar el *Web Payment Checkout* es muy fácil:
 
-1. [Crea una preferencia de pago](/guides/payments/web-payment-checkout/create-preference.es.md) y [obtén tu public key](https://www.mercadopago.com.ar/account/credentials).
+1. [Crea una preferencia de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/create-preference) y [obtén tu public key](https://www.mercadopago.com.ar/account/credentials).
 2. Lleva a tu comprador al checkout.
 3. Entérate del pago escuchando las notificaciones que te enviamos.
 
-Para más información visita la sección [Recibir pagos](/guides/payments/web-payment-checkout/receive-payments.es.md).
+Para más información visita la sección [Recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/receive-payments).
 
 
 ## Recomendaciones adicionales
 
 ### Tarjetas de prueba
 
-Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](/guides/payments/api/testing.es.md).
+Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing).

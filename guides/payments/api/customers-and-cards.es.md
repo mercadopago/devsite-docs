@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementada la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#capturar-datos-de-tarjeta).
+> * Tener implementada la [captura de datos de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#capturar-datos-de-tarjeta).
 
 Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **manera segura** para mejorar la experiencia de compra.
 
@@ -16,7 +16,7 @@ Los *customers* representan a tus clientes. Las tarjetas que almacenes serán pa
 
 Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
 
-El `token` es el que capturaste cuando estabas haciendo la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#capturar-datos-de-tarjeta).
+El `token` es el que capturaste cuando estabas haciendo la [captura de datos de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#capturar-datos-de-tarjeta).
 
 
 > NOTE
@@ -102,6 +102,23 @@ card.customer_id = customer.id
 card.save
 
 ```
+```csharp
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+  Customer customer = new Customer()
+    {
+      Email = "test@test.com"
+    };
+    customer.Save();
+
+  Card card = new Card()
+    {
+      Token = "9b2d63e00d66a8c721607214cedaecda",
+      CustomerId = customer.Id
+    };
+
+      card.Save();
+```
 ]]]
 
 Respuesta del Servidor:
@@ -170,6 +187,10 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
   cards = customer.cards;
 
 ```
+```csharp
+customer = Customer.FindById("customer.Id");
+List<Card> cards = customer.Cards; 
+```
 ]]]
 
 Datos de una tarjeta guardada:
@@ -208,7 +229,7 @@ Con esta información recomendamos construir un formulario:
 
 ### 2. Captura el código de seguridad
 
-El flujo de captura es casi el mismo que realizaste al [capturar los datos de la tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta). Debes crear un `card token` enviando el `$form` con el `cardId` y el `securityCode`:
+El flujo de captura es casi el mismo que realizaste al [capturar los datos de la tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#captura-los-datos-de-tarjeta). Debes crear un `card token` enviando el `$form` con el `cardId` y el `securityCode`:
 
 ```javascript
 doSubmit = false;

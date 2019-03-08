@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the [API](/guides/payments/api/introduction.en.md) implemented.
+> * Have the [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction) implemented.
 
 To begin, you need to:
 
@@ -126,7 +126,7 @@ Expected response:
 
 ## 3. Integrate the API
 
-To collect on behalf of your sellers you must integrate the [API](/guides/payments/api/introduction.es.md), using the `access_token` of each seller for your application.
+To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction), using the `access_token` of each seller for your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the `application_fee` parameter when creating the preference:
 
@@ -224,7 +224,7 @@ You need to send your `notification_url`, where you will receive a notification 
 
 In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago.com/mla/account/webhooks) in your account. 
 
-For more information, go to the [notifications section](/guides/notifications/webhooks.en.md).
+For more information, go to the [notifications section](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks).
 
 ### Refunds and cancellations
 
@@ -233,9 +233,9 @@ In case the Marketplace is the one that does the refund/cancellation, you´ll ha
 
 Cancellations can only be made using the cancellation API.
 
-For more information, go to [refunds and cancellations.](/guides/manage-account/cancellations-and-refunds.en.md)
+For more information, go to [refunds and cancellations.](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds)
 
 ### Test your integration
 
 You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
-[Test your integration](/guides/payments/api/testing.en.md/) 
+[Test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing/) 

@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](/guides/payments/web-checkout/introduction.es.md).
+> * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction).
 
 **IPN** (_Instant Payment Notification_) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
@@ -47,9 +47,9 @@ Luego de esto, puedes obtener la información completa del recurso notificado ac
 
 Tipo               | URL                                                         | Documentación
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación](/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| [ver documentación]()
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación](/reference/merchant_orders/_merchant_orders_id/get/)
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
 
 ### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
 
@@ -68,8 +68,8 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 			$merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 	}
 
-	foreach ($merchant_order->payments as $payment) {
-		$paid_amount = 0;
+	$paid_amount = 0;
+	foreach ($merchant_order->payments as $payment) {	
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
 		}

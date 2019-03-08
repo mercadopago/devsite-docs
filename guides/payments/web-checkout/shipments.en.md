@@ -1,9 +1,6 @@
 ---
   sites_supported:
       - mla
-      - mlm
-      - mco
-      - mlc
       - global
 ---
 
@@ -76,6 +73,21 @@ shipment.receiver_address = {
 	floor: 4,
 	apartment: "C"
 }
+```
+```csharp
+Shipments shipments = new Shipments()
+ {
+     Mode = "me2",
+     Dimensions = "30x30x30,500",
+     Description = "Ergonomic Silk Shirt",
+     ReceiverAddress = new ReceiverAddress(){
+      Zip_code = "5700",
+      StreetNumber = 123,
+      StreetName = "Street",
+      Floor = 4,
+      Apartment = "C"
+     }
+ };
 ```
 ]]]
 
@@ -354,4 +366,4 @@ In a box, include everything you have sold. Stick the label on the box and ship 
 ### Step 5: Tracking
 Use our tools to track shipments. In the list of payments, or in our APIs, you will be able to track your shipments.
 
-In addition, we can notify you when a shipment is ready to ship by sending you [notificacions](/guides/notifications/ipn.en.md) that are sent from Mercado Pago’s servers to yours. This will allow you to manage your inventories and know the status of payments and shipments.
+In addition, we can notify you when a shipment is ready to ship by sending you [notificacions](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) that are sent from Mercado Pago’s servers to yours. This will allow you to manage your inventories and know the status of payments and shipments.

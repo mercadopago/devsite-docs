@@ -1,9 +1,6 @@
 ---
   sites_supported:
       - mla
-      - mlm
-      - mco
-      - mlc
       - global
 ---
 
@@ -74,6 +71,21 @@ shipment.receiver_address = {
 	floor: 4,
 	apartment: "C"
 }
+```
+```csharp
+Shipments shipments = new Shipments()
+ {
+     Mode = "me2",
+     Dimensions = "30x30x30,500",
+     Description = "Ergonomic Silk Shirt",
+     ReceiverAddress = new ReceiverAddress(){
+      Zip_code = "5700",
+      StreetNumber = 123,
+      StreetName = "Street",
+      Floor = 4,
+      Apartment = "C"
+     }
+ };
 ```
 ]]]
 
@@ -357,4 +369,4 @@ En una caja incluye todo lo que vendiste. Pega la etiqueta en el paquete y desp�
 Utiliza nuestras herramientas para hacer el seguimiento.
 Tanto en el listado de cobros, como a través de nuestras APIs vas a poder realizar el seguimiento de tus envíos.
 
-Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](/guides/notifications/ipn.es.md) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.
+Adicionalmente te podemos avisar cuando un envío esté listo para despachar mediante [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) que se envían desde los servidores de Mercado Pago a los tuyos. Esto te permitirá administrar tu _stock_ y conocer el estado de los pagos y envíos.

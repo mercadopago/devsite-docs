@@ -5,7 +5,7 @@ Desde la preferencia de pagos no sólo puedes enviar información del item a pag
 
 ### Define tipos y métodos de pago
 
-Por defecto ofrecemos todos los medios de pago disponibles para el país en el estás que realizando la integración. Si tu modelo de negocio no soporta alguno de éstos [tipos de pago](/guides/localization/payment-methods.es.md), o bien no deseas aceptar algún [método en particular](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), puedes excluirlo cuando generas la preferencia de pagos.
+Por defecto ofrecemos todos los medios de pago disponibles para el país en el estás que realizando la integración. Si tu modelo de negocio no soporta alguno de éstos [tipos de pago](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods), o bien no deseas aceptar algún [método en particular](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), puedes excluirlo cuando generas la preferencia de pagos.
 
 Además puedes definir qué medio de pago o qué cantidad de cuotas deseas que se muestren por defecto, así como también la cantidad de cuotas máximas a ofrecer.
 
@@ -75,6 +75,29 @@ preference.payment_methods = {
 }
 # ...
 ```
+```csharp
+
+Preference preference = new Preference();
+
+PaymentMethods paymentmethods = new PaymentMethods(); 
+
+List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
+  excludedPaymentMethod.Add(new PaymentMethod()
+    {
+      Id = "master"
+    });
+        
+  paymentmethods.excludedPaymentType = excludedPaymentMethod;
+
+List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
+  excludedPaymentType.Add(new PaymentType()
+    {
+      Id = "ticket"
+    });
+
+  paymentmethods.ExcludedPaymentTypes = excludedPaymentType;
+  paymentmethods.Installments = 12;
+```
 ]]]
 
 ### Indica URLs de Retorno
@@ -134,6 +157,18 @@ preference.back_urls = {
 preference.auto_return = "approved"
 # ...
 ```
+```csharp
+ Preference preference = new Preference();
+
+ preference.BackUrls = new BackUrls()
+  {
+    Success = "https://www.tu-sitio/success",
+    Failure = "http://www.tu-sitio/failure",
+    Pending = "http://www.tu-sitio/pendings"
+  };
+
+  preference.AutoReturn = AutoReturnType.approved;
+```
 ]]]
 
 ### Sincroniza con tu sistema
@@ -188,6 +223,12 @@ filters = {
 }
 
 payment = MercadoPago::Payment.search(filters)
+```
+```csharp
+Dictionary<string, string> filters = new Dictionary<string, string>;
+filters.Add("external_references", "EXTERNAL");
+      
+List<Payment> payments = Payment.Search(filters);
 ```
 ]]]
 

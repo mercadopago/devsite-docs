@@ -1,0 +1,546 @@
+---
+type: object
+properties:
+- id:
+    type: Integer
+    description:
+      en: 
+      es: Identificador de Advanced Payment.
+      pt: 
+- status:
+    type: String
+    description:
+      en: 
+      es: Estado del Advanced Payment.
+      pt: 
+    enum:
+    - pending:
+        en: 
+        es: El usuario no completo el proceso de pago todavía.
+        pt: 
+    - approved:
+        en: 
+        es: El pago fue aprobado y acreditado.
+        pt:
+    - rejected:
+        en: 
+        es: El pago fue rechazado. El usuario podría reintentar el pago.
+        pt: 
+    - cancelled:
+        en:
+        es: El pago fue cancelado por una de las partes o el pago expiró.
+        pt:
+    - refunded:
+        en: 
+        es: El pago fue devuelto al usuario.
+        pt:
+    - partially_refunded:
+        en:
+        es: Fue devuelto parte del pago al usuario.
+        pt:
+    - charged_back:
+        en: 
+        es: Se ha realizado un contracargo en la tarjeta de crédito del comprador.
+        pt: 
+- marketplace:
+    type: String
+    description:
+      en:
+      es: Nombre del Marketplace que procesó el pago.
+      pt:
+- payer:
+    type: Object
+    description:
+      en:
+      es: Identificador del pagador.
+      pt:
+    properties:
+    - id:
+        type: String
+        description:
+          en:
+          es: Identificación del pagador asociado.
+          pt:
+    - email:
+        type: String
+        description:
+          en:
+          es: Email del pagador.
+          pt:
+    - type:
+        type: String
+        description:
+          en:
+            is a Customer).
+          es: Tipo de identificación del pagador asociado (requerido si el pagador
+            es un cliente).
+          pt:
+            é um cliente).
+        enum:
+        - customer:
+            en:
+            es: El pagador es un cliente y pertenece al collector.
+            pt:
+        - registered:
+            en:
+            es: La cuenta corresponde a un usuario registrado de Mercado Pago.
+            pt:
+    - identification:
+        type: Object
+        description:
+          en:
+          es: Identificación personal.
+          pt:
+        properties:
+        - type:
+            type: String
+            description:
+              en:
+              es: Tipo de identificación.
+              pt:
+        - number:
+            type: String
+            description:
+              en:
+              es: Número de identificación.
+              pt:
+    - address:
+        type: Object
+        description:
+          en:
+          es: Dirección.
+          pt:
+        properties:
+        - zip_code:
+            type: String
+            description:
+              en:
+              es: Código postal.
+              pt:
+        - street_name:
+            type: String
+            description:
+              en:
+              es: Calle.
+              pt:
+        - street_number:
+            type: Integer
+            description:
+              en:
+              es: Número.
+              pt:
+    - phone:
+        type: Object
+        description:
+          en:
+          es: Teléfono del pagador asociado.
+          pt:
+        properties:
+        - area_code:
+            type: String
+            description:
+              en:
+              es: Código de área.
+              pt:
+        - number:
+            type: String
+            description:
+              en:
+              es: Número de teléfono.
+              pt:
+        - extension:
+            type: String
+            description:
+              en:
+              es: Extensión del número de teléfono.
+              pt:
+    - first_name:
+        type: String
+        description:
+          en:
+          es: Nombre del pagador asociado.
+          pt:
+    - last_name:
+        type: String
+        description:
+          en:
+          es: Apellido del pagador asociado.
+          pt:
+- payments:
+    type: Array(Object)
+    description:
+      en:
+      es: Lista de pagos realizados por el comprador.
+      pt:
+    properties:
+    - id:
+        type: Number
+        description:
+          en:
+          es: Identificador del pago.
+          pt:
+    - payment_type_id:
+        type: String
+        description:
+          en:
+          es: Tipo del medio de pago elegido.
+          pt:
+    - payment_method_id:
+        type: String
+        description:
+          en:
+          es: Medio de pago elegido para hacer el pago.
+          pt:
+    - token:
+        type: String
+        description:
+          en:
+          es: Identificador de card token.
+          pt:
+    - transaction_amount:
+        type: Float
+        description:
+          en:
+          es: Costo del producto.
+          pt:
+    - installments:
+        type: Integer
+        description:
+          en:
+          es: Cantidad seleccionada de cuotas.
+          pt:
+    - processing_mode:
+        type: String
+        description:
+          en:
+          es: Modo de procesar los pagos (por defecto es aggregator).
+          pt:
+        enum:
+        - aggregator:
+          en:
+          es: Procesa el pago utilizando el número de comercio de Mercado Pago.
+          pt:
+        - gateway:
+          en:
+          es: Procesa el pago utilizando el número de comercio del Vendedor.
+          pt:
+    - issuer_id:
+        type: String
+        description:
+          en:
+          es: Identificador del emisor del medio de pago.
+          pt:
+    - description:
+        type: String
+        description:
+          en:
+          es: Razón de pago.
+          pt:
+    - capture:
+        type: Boolean
+        description:
+          en:
+          es: Determina si el pago debe ser capturado(true, default value) o solo reservado(false).
+          pt:
+    - external_reference:
+        type: String
+        description:
+          en:
+          es: Identificador provisto por el vendedor en su sistema.
+          pt:
+    - statement_descriptor:
+        type: String
+        description:
+          en:
+          es: Cómo aparecerá el pago en el resumen de tarjeta.
+          pt:
+    - date_of_expiration:
+        type: String
+        description:
+          en:
+          es: Fecha de expiración para el caso de método de pago "ticket".
+          pt:
+    - transaction_details:
+        type: Object
+        description:
+          en:
+          es: Agrupa los detalles de la transacción.
+          pt:
+        properties:
+        - external_resource_url:
+            type: String
+            description:
+              en:
+              es: Identifica el recurso en el procesador de pago.
+              pt:
+- disbursements:
+    type: Array(Object)
+    description:
+      en:
+      es: Lista de pagos que corresponden a cada Vendedor.
+      pt:
+    properties:
+    - id:
+        type: Number
+        description:
+          en:
+          es: Identificador del pago.
+          pt:
+    - amount:
+        type: Float
+        description:
+          en:
+          es: Monto del pago.
+          pt:
+    - external_reference:
+        type: String
+        description:
+          en:
+          es: Identificador provisto por el vendedor en su sistema.
+          pt:
+    - collector_id:
+        type: Integer
+        description:
+          en:
+          es: Identificador de vendedor.
+          pt:
+    - application_fee:
+        type: Float
+        description:
+          en:
+          es: Comisión recolectada por el Marketplace.
+          pt:
+    - money_release_days:
+        type: Float
+        description:
+          en:
+          es: Cantidad de días (a partir de la fecha de aprobación del pago) en que se va a liberar el pago del Vendedor.
+          pt:
+- binary_mode:
+    type: Boolean
+    description:
+      en:
+      es: Cuando está activado el pago solo puede resultar aprobado o rechazado. De lo contrario, el pago puede resultar pendiente.
+      pt:
+- date_created:
+    type: Date(ISO_8601)
+    description:
+      en:
+      es: Fecha de creación del pago.
+      pt:
+- date_last_updated:
+    type: Date(ISO_8601)
+    description:
+      en:
+      es: Fecha de la última modificación.
+      pt:
+- metadata:
+    type: Object
+    description:
+      en:
+      es: JSON válido que puede agregarse al pago para guardar atributos adicionales.
+      pt:
+- application_id:
+    type: Object
+    description:
+      en:
+      es: ID del Marketplace.
+      pt:
+- currency_id:
+    type: String(3)
+    description:
+      en:
+      es: Identificador de la moneda utilizada en el pago.
+      pt:
+    enum:
+    - ARS:
+        en:
+        es: Peso argentino.
+        pt:
+    - BRL:
+        en:
+        es: Real brasilero.
+        pt:
+    - CLP:
+        en:
+        es: Peso chileno.
+        pt:
+    - MXN:
+        en:
+        es: Peso mexicano.
+        pt:
+    - COP:
+        en:
+        es: Peso colombiano.
+        pt:
+    - PEN:
+        en:
+        es: Sol peruano.
+        pt:
+    - UYU:
+        en:
+        es: Peso uruguayo.
+        pt:
+    - site_id:
+        type: String
+        description:
+          en:
+          es: Identificador del país.
+          pt:
+    - owner_id:
+        type: String
+        description:
+          en:
+          es: Identificador del propietario del Marketplace.
+          pt:
+- additional_info:
+    type: Object
+    description:
+      en:
+      es: Información que puede mejorar el análisis de prevención de fraude y la tasa de conversión. Trata de enviarnos toda la infomación posible.
+      pt:
+    properties:
+    - ip_address:
+        type: String
+        description:
+          en: 
+          es: IP del cual proviene el request (sólo para transferencia bancaria).
+          pt: 
+    - items:
+        type: Array(Object)
+        description:
+          en: 
+          es: Lista de ítems a pagar.
+          pt: 
+        properties:
+        - id:
+            type: String
+            description:
+              en: 
+              es: Código de ítem.
+              pt: 
+        - title:
+            type: String
+            description:
+              en: 
+              es: Nombre de ítem.
+              pt: 
+        - description:
+            type: String
+            description:
+              en: 
+              es: Descripción de item.
+              pt: 
+        - picture_url:
+            type: String
+            description:
+              en: 
+              es: URL de imagen.
+              pt: 
+        - category_id:
+            type: String
+            description:
+              en: 
+              es: Categoría del ítem.
+              pt: 
+        - quantity:
+            type: Integer
+            description:
+              en: 
+              es: Cantidad de ítems.
+              pt: 
+        - unit_price:
+            type: Float
+            description:
+              en: 
+              es: Precio unitario.
+              pt: 
+    - payer:
+        type: Object
+        description:
+          en: 
+          es: Información del comprador.
+          pt: 
+        properties:
+        - first_name:
+            type: String
+            description:
+              en: 
+              es: Nombre del comprador.
+              pt: 
+        - last_name:
+            type: String
+            description:
+              en: 
+              es: Apellido del comprador.
+              pt: 
+        - phone:
+            type: Object
+            description:
+              en: 
+              es: Teléfono del comprador.
+              pt: 
+            properties:
+            - area_code:
+                type: String
+                description:
+                  en: 
+                  es: Código de área.
+                  pt: 
+            - number:
+                type: String
+                description:
+                  en: 
+                  es: Número telefónico.
+                  pt: 
+
+        - registration_date:
+            type: Date
+            description:
+              en: 
+              es: Fecha de registración del comprador en tu sitio.
+              pt: 
+    - shipments:
+        type: Object
+        description:
+          en: 
+          es: Información de envío.
+          pt: 
+        properties:
+        - receiver_address:
+            type: Object
+            description:
+              en: 
+              es: Dirección del comprador.
+              pt: 
+            properties:
+            - zip_code:
+                type: String
+                description:
+                  en: 
+                  es: Zip code.
+                  pt: 
+            - street_name:
+                type: String
+                description:
+                  en: 
+                  es: Calle.
+                  pt: 
+            - street_number:
+                type: Integer
+                description:
+                  en: 
+                  es: Número.
+                  pt: 
+            - floor:
+                type: String
+                description:
+                  en: 
+                  es: Piso.
+                  pt: 
+            - apartment:
+                type: String
+                description:
+                  en: 
+                  es: Departmento.
+                  pt:

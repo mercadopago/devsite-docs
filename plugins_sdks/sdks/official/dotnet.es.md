@@ -25,9 +25,11 @@ Esta librería provee a los desarrolladores un simple set de bindings con la API
 ## Guía de inicio rápido
 
 1. Importa la SDK de Mercado Pago.
+
 ```csharp
-using MercadoPago;
+ using MercadoPago;
 ```
+
 2. Configura tus credenciales
 
 -**Para Web-checkout:**
@@ -39,7 +41,7 @@ MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
 -**Para API o custom checkout:**
 
 ```csharp
-MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 3. Utiliza los recursos
 Puedes interactuar con todos los recursos disponibles en la API pública, cada recurso está representado por las clases en este diagrama:
@@ -52,7 +54,7 @@ Puedes interactuar con todos los recursos disponibles en la API pública, cada r
  using MercadoPago.DataStructures.Payment;
  using MercadoPago.Common;
 
- MercadoPago.SDK.SetAccessToken = "YOUR_ACCESS_TOKEN";
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
  Payment payment = new Payment
  {

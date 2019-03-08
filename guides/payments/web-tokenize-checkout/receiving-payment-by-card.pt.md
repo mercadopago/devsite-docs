@@ -88,7 +88,9 @@ Somente deverá incluir uma *chamada à API* incluindo os dados que recebeu do c
 
 [[[
 ```php
-<?php  
+<?php
+    require_once 'vendor/autoload.php';
+
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();
@@ -224,7 +226,7 @@ Retorno:
 
 ### Cartões de teste
 
-Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](/guides/payments/api/testing.pt.md).
+Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing).
 
 ### Promoções
 

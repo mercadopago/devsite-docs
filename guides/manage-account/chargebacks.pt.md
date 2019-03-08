@@ -24,10 +24,18 @@ Agora entraremos em detalhe em cada uma delas:
 
 Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que uma contestação for recebida. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
 
+
 ## Consulta da contestação
 
 A notificação IPN vai conter o `ID` da compra contestada.
-Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar suas informaçõeso:
+Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID?access_token=` para consultar suas informaçõeso:
+
+```
+curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+```
+
+para consultar suas informações:
+
 
 ```json
 {

@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Ter implementada a [captura de dados de cartão](/guides/payments/api/receiving-payment-by-card.pt.md#capturar-datos-de-tarjeta).
+> * Ter implementada a [captura de dados de cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card#capturar-datos-de-tarjeta).
 
 Os clientes e cartões (*customers & cards*) são uma forma de armazenar os dados do cartão **de maneira segura** para melhorar a experiência de compra.
 
@@ -16,7 +16,7 @@ Os *customers* representam seus clientes. Os cartões que armazenar serão deste
 
 Para criar um `Customer` e um `Card` ao mesmo tempo é necessário enviar pelo menos os campos `email` e `token`.
 
-O `token` é o que captura quando esta [tratando o retorno](/guides/payments/api/handling-responses.pt.md) do *Web Tokenize Checkout*.
+O `token` é o que captura quando esta [tratando o retorno](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses) do *Web Tokenize Checkout*.
 
 
 > NOTE
@@ -101,6 +101,23 @@ card.token = "9b2d63e00d66a8c721607214cedaecda"
 card.customer_id = customer.id
 card.save
 
+```
+```csharp
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+
+  Customer customer = new Customer()
+    {
+      Email = "test@test.com"
+    };
+    customer.Save();
+
+  Card card = new Card()
+    {
+      Token = "9b2d63e00d66a8c721607214cedaecda",
+      CustomerId = customer.Id
+    };
+
+      card.Save();
 ```
 ]]]
 
@@ -187,6 +204,10 @@ Podendo obter uma lista completa de `Cards` de um cliente realizando um request 
 	customer = MercadoPago::Customer.load(customer_id);
   cards = customer.cards;
 
+```
+```csharp
+customer = Customer.FindById("customer.Id");
+List<Card> cards = customer.Cards; 
 ```
 ]]]
 
@@ -309,6 +330,21 @@ card.save
 puts card
 
 ```
+```csharp
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+
+  Customer customer = Customer.FindById("247711297-jxOV430go9fx2e");
+
+  Card card = new Card()
+    {
+      Token = "9b2d63e00d66a8c721607214cedaecda",
+      CustomerId = customer.Id
+    };
+
+  card.Save();
+
+  Console.WriteLine(card.Id);
+```
 ]]]
 
 
@@ -395,6 +431,12 @@ No caso em que não saiba qual é o `id` de seu `Customer`, poderá utilizar a A
 
 	customers = MercadoPago::Customer.search(email: "test@test.com");
 
+```
+```csharp
+Dictionary<string, string> filters = new Dictionary<string, string>();
+filters.Add("email", "test@test.com");
+
+List<Customer> customers = Customer.Search(filters);
 ```
 ]]]
 
@@ -483,6 +525,10 @@ Poderá obter uma lista completa de `Cards` de um cliente realizando um request 
 	customer = MercadoPago::Customer.load(customer_id);
   cards = customer.cards;
 
+```
+```csharp
+Customer customer = Customer.FindById("customer.Id");
+List<Card> cards = customer.Cards;
 ```
 ]]]
 

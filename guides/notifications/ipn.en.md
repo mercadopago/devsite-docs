@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the [Checkout](/guides/payments/web-checkout/introduction.en.md) implemented.
+> * Have the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
 
 **IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
@@ -48,9 +48,9 @@ After that, you will be able to get full information about the notified resource
 
 Type               | URL                                                         | Documentation
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| [see documentation]()
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](/reference/merchant_orders/_merchant_orders_id/get/)
+payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
+merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/)
 
 
 ### Implement the notification receiver using the following code as example:
@@ -70,8 +70,8 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 			$merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 	}
 
-	foreach ($merchant_order->payments as $payment) {
-		$paid_amount = 0;
+	$paid_amount = 0;
+	foreach ($merchant_order->payments as $payment) {	
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
 		}

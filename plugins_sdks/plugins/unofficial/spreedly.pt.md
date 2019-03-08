@@ -345,7 +345,7 @@ Para processar com Mercado Pago e para obter maiores níveis de aprovação em s
 
 ### Payer Identification
 
-Para processar com Mercado Pago é necessário enviar a identificação do pagador em cada pagamento. Esta informação é OBRIGATÓRIA para todos os sítios de Mercado Pago a exceção de México. Para mais detalhes, [acesse o seguinte link](/reference/identification_types/_identification_types/get/).
+Para processar com Mercado Pago é necessário enviar a identificação do pagador em cada pagamento. Esta informação é OBRIGATÓRIA para todos os sítios de Mercado Pago a exceção de México. Para mais detalhes, [acesse o seguinte link]https://www.mercadopago.com.br/developers/pt/reference/identification_types/_identification_types/get/).
 
 ### Parcelas
 
