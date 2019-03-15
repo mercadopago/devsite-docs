@@ -1,19 +1,21 @@
-## Inicio rápido de pagos de Marketplace con split
+# Inicio rápido
+
+### Pagos de Marketplace con split
 
 > WARNING
 >
 > Pre-requisitos
 >
-> Contactate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
-> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/) y sabes como [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card).
+> Contáctate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
+> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card).
 > 
-> Tus vendedores deben contar con una cuenta de MP y deben [darte permisos para cobrar pagos en su nombre](https://www.mercadopago.com.ar/developers/es/guides/advanced-payments/sellers-permissions).
+> Tus vendedores deben contar con una cuenta de MP y deben [darte permisos para cobrar pagos en su nombre](/guides/advanced-payments/sellers-permissions.es.md).
 
 El modelo de negocio carrito de compras consta de un pago por el monto total de la operación, efectuado por el Comprador, el cuál se divide en los correspondientes pagos a cada Vendedor por la venta de su producto. A su vez, por cada pago realizado a los Vendedores, el Marketplace puede retener una parte del monto de la venta en concepto de comisión.
 
 A continuación vemos como crear un Advanced Payment donde el comprador paga con tarjeta de crédito y se realiza el split para dos vendedores:
 
-###### Request
+#### Request
 ```curl
 curl -X POST \
     -H 'Accept":"application/json' \
@@ -23,6 +25,8 @@ curl -X POST \
 ```
 
 > NOTE
+> 
+> Nota
 > 
 > El parámetro MKT_ACCESS_TOKEN es el access_token de tu aplicación.
 
@@ -97,3 +101,69 @@ La respuesta exitosa será un `HTTP Status 201 Created` y devolverá el advanced
 ```
 
 En tu cuenta de Mercado Pago verás acreditado el monto de tus comisiones y cada Vendedor verá en su cuenta el saldo actualizado con el monto correspondiente.
+
+### Pagos de Wallet
+
+La modalidad de Wallet Payments permite que un Vendedor procese pagos con el permiso del Pagador para acceder a su billetera y sin necesidad de solicitar datos de tarjeta o selección de medio de pago en cada transacción.
+
+> WARNING
+>
+> Pre-requisitos
+>
+> Para poder realizar pagos en la modalidad Wallet, debes configurar tu aplicación correctamente siguiendo la [guía de integración](/guides/advanced-payments/wallet-config-application.es.md).
+
+#### Request
+```curl
+curl -X POST \
+    -H 'Accept":"application/json' \
+    -H 'Content-Type: application/json' \
+    'https://api.mercadopago.com/v1/advanced_payments?access_token=SELLER_TOKEN' \
+    -d '{...}'
+```
+
+Dentro del `body` se define un objeto `wallet_payment` que contendrá los datos para el pago:
+* `transaction_amount`: Monto de la transacción.
+* `description`: Descripción de la transacción.
+* `external_reference`: Identificador de la transacción que define el Vendedor.
+* `access_token`: Credenciales del Pagador que se obtiene mediante la solicitud de permisos con MP Connect.
+
+#### Body
+```json
+{
+   "wallet_payment":{
+      "transaction_amount":700.50,
+      "description":"Payment Google",
+      "external_reference":"Pago_123",
+      "access_token":"PAYER_ACCESS_TOKEN"      
+   }
+}
+```
+
+La respuesta exitosa será un `HTTP Status 201 Created` y devolverá el advanced payment completo. De lo contrario devolverá el `HTTP Status` correspondiente al error y un mensaje aclaratorio.
+
+```json
+{
+   "id":90458724,
+   "status":"approved",
+   "wallet_payment":{
+      "transaction_amount":700.50,
+      "description":"Payment Google Pay"
+   },
+   "payments":[
+      {
+         "id":3870106238,
+         "status":"approved",
+         "status_detail":"accredited",
+         "payment_type_id":"account_money",
+         "payment_method_id":"account_money",
+         "transaction_amount":700.50,
+         "description":"Payment Google Pay",
+         "capture":true
+      }
+   ],
+   "payer":{
+      "id":786547
+   },
+   ... 
+}
+```
