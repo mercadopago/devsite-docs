@@ -1,11 +1,11 @@
-## Inicio rápido de pagos de Marketplace con split
+# Inicio rápido de pagos de Marketplace con split
 
 > WARNING
 >
 > Pre-requisitos
 >
-> Contactate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
-> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/) y sabes como [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card).
+> Contáctate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
+> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card).
 > 
 > Tus vendedores deben contar con una cuenta de MP y deben [darte permisos para cobrar pagos en su nombre](/guides/advanced-payments/sellers-permissions.es.md).
 
@@ -13,7 +13,7 @@ El modelo de negocio carrito de compras consta de un pago por el monto total de 
 
 A continuación vemos como crear un Advanced Payment donde el comprador paga con tarjeta de crédito y se realiza el split para dos vendedores:
 
-###### Request
+#### Request
 ```curl
 curl -X POST \
     -H 'Accept":"application/json' \
@@ -23,6 +23,8 @@ curl -X POST \
 ```
 
 > NOTE
+> 
+> Nota
 > 
 > El parámetro MKT_ACCESS_TOKEN es el access_token de tu aplicación.
 

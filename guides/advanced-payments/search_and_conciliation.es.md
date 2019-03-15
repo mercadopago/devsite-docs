@@ -1,10 +1,10 @@
-## Búsqueda y Conciliación
+# Búsqueda y Conciliación
 
 Una parte importante de la generación de pagos es la conciliación. La API permite realizar búsquedas de tus `advanced payments` para poder conciliar todas las operaciones que se hicieron a través de tu Marketplace.
 
-Se puede buscar a través de la API de Advanced Payments.
+Es posible buscar por medio de la API de Advanced Payments.
 
-###### Request
+#### Request
 ```curl
 curl -X POST \
     -H 'Accept":"application/json' \
@@ -12,8 +12,8 @@ curl -X POST \
     'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&limit=10&offset=0'
 ```
 
-###### Response
-Lo cual retorna los resultados en una estructura que muestra además la cantidad de resultados e información para la paginación de los mismos.
+#### Response
+Lo cual retorna los resultados en una estructura que muestra, además, la cantidad de resultados e información para la paginación de los mismos.
 ```json
 {
   "paging": {
@@ -41,7 +41,7 @@ Lo cual retorna los resultados en una estructura que muestra además la cantidad
 }
 ```
 
-##### Filtros de búsqueda
+#### Filtros de búsqueda
 
 Estado                      |Descripción                                                        |
 ----------------------------|-------------------------------------------------------------------|
@@ -54,7 +54,7 @@ payment.transaction_amount  |Monto del pago.                                    
 payer.id                    |ID del comprador.                                                  |
 payer.email                 |Email del comprador.                                               |
 disbursement.collector_id   |ID del vendedor.                                                   |
-external_reference          |ID generado por el marketplace que identifica el Advanced Payment. |
+external_reference          |ID generado por el marketplace que identifica al Advanced Payment. |
 
 ### Exportar Activities
 
