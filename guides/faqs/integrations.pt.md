@@ -23,13 +23,13 @@ Esta opção permite cobrar através do nosso formulário web dentro do ambiente
 
 -   **Protegemos seu dinheiro, sempre.** Você não precisa se preocupar com nada. Caso tenha algum problema, você conta com o nosso respaldo através do [nosso Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/como-protegemos-vendedores_500).
 
-[Integrar Web Checkout.](/guides/payments/web-checkout/introduction.pt.md)
+[Integrar Web Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)
 
 ### Mobile Checkout
 
 Diferente do Web Checkout, facilitamos a criação de uma experiência de pagamento pelo app através do nosso SDK. É uma integração simples e rápida, para que você possa oferecer a melhor experiência e os melhores meios de pagamento.
 
-[Integrar Mobile Checkout.](/guides/payments/mobile-checkout/introduction.pt.md)
+[Integrar Mobile Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
@@ -41,7 +41,7 @@ Diferente do Web Checkout, facilitamos a criação de uma experiência de pagame
 
 - **Você estará sempre atualizado.** Você pode oferecer para seus compradores uma experiência que o Mercado Pago mantém em constante aperfeiçoamento.
 
-[Integrar Web Tokenize](/guides/payments/web-tokenize-checkout/introduction.pt.md)
+[Integrar Web Tokenize](https://www.mercadopago.com.br/developers/pt/guides/payments/web-tokenize-checkout/introduction)
 
 ### API
 
@@ -51,7 +51,7 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 
 - **Sua equipe técnica tem total controle.** Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
 
-[Integrar por API](/guides/payments/api/introduction.pt.md)
+[Integrar por API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
 
 ## Como oferecer descontos
 
@@ -94,11 +94,11 @@ Seu cliente paga sem juros, e você absorve o custo do financiamento, por isso, 
 
 Por enquanto, não oferecemos a opção de habilitar o Mercado Envios aos novos negócios que se integrem, porque isso pode gerar erro. Esta opção está disponível somente para as vendas no Mercado Livre.
 
-Sentimos muito, mas, lembre-se de que você pode usar as nossas [ferramentas exclusivas para vendedores](/guides/faqs/myaccount.pt.md) quando quiser.
+Sentimos muito, mas, lembre-se de que você pode usar as nossas [ferramentas exclusivas para vendedores](https://www.mercadopago.com.br/developers/pt/guides/faqs/myaccount) quando quiser.
 
 ## Como gerenciar as vendas de clientes no meu site
 
-Para gerenciar vendedores e que eles possam fazer transações comerciais no seu site, você deve [criar um Marketplace](/guides/marketplace/web-checkout/introduction.pt.md).
+Para gerenciar vendedores e que eles possam fazer transações comerciais no seu site, você deve [criar um Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/introduction).
 
 Um Marketplace é um site ou aplicativo que permite que você faça cobranças em nome dos vendedores e cobre uma comissão por cada uma, se quiser. Quando um pagamento é gerado, o valor é dividido na mesma hora entre a conta dos seus vendedores e a sua.
 

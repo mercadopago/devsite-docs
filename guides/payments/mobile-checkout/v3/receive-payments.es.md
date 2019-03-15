@@ -506,16 +506,16 @@ El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo 
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para conocer más sobre esto.
+Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para conocer más sobre esto.
 
 ## Prueba la integración
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](/guides/payments/mobile-checkout/testing.es.md) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/testing) para más información.
 
 ### Próximos pasos
 
-- Visita la sección [Personalización](/guides/payments/mobile-checkout/v3/personalization.es.md) para adecuar el flujo de pago a tus necesidades.
-- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](/guides/payments/mobile-checkout/v3/testing.es.md).
+- Visita la sección [Personalización](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/v3/personalization) para adecuar el flujo de pago a tus necesidades.
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/v3/testing).
 

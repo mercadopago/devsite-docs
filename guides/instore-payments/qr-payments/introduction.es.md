@@ -13,13 +13,13 @@ sites_supported:
 
 ----[mlb]----
 
-> ![Pagos QR](/images/mobile/qr.pt.png)
+> ![Pagos QR](/images/qr.pt.png)
 ------------
 ----[mla]----
-> ![Pagos QR](/images/mobile/qr_mla.es.png)
+> ![Pagos QR](/images/qr_mla.es.png)
 ------------
 ----[mlm]----
-> ![Pagos QR](/images/mobile/qr_mlm.es.png)
+> ![Pagos QR](/images/qr_mlm.es.png)
 ------------
 
 
@@ -42,9 +42,9 @@ Para poder pagar, tus clientes deben descargar la App desde el store de su telé
 
 | Tipo                                                         | Descripción                                                  | ¿Requieres integración? |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- |
-| [QR sin integración](/guides/instore-payments/qr-payments/qr-static.es.md) | Generas el QR desde tu portal de Mercado Pago, así el comprador escanea tu código y puede enviarte dinero. Debe ingresar el monto en forma manual. | No                      |
-| [QR Punto de Venta](/guides/instore-payments/qr-payments/qr-pos.es.md) | Integrando a tu sistema de punto de venta la opción de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza la descripción de lo que compró y el monto que debe pagar. | Sí                      |
-| [QR Petroleras](/guides/instore-payments/qr-payments/qr-gas-station.es.md) | Integrando a tu sistema de gestión la modalidad de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza el monto que debe pagar. | Sí                      |
+| [QR sin integración](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-static) | Generas el QR desde tu portal de Mercado Pago, así el comprador escanea tu código y puede enviarte dinero. Debe ingresar el monto en forma manual. | No                      |
+| [QR Punto de Venta](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-pos) | Integrando a tu sistema de punto de venta la opción de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza la descripción de lo que compró y el monto que debe pagar. | Sí                      |
+| [QR Petroleras](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-gas-station) | Integrando a tu sistema de gestión la modalidad de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza el monto que debe pagar. | Sí                      |
 
 En base a tu modelo de negocio, puedes escoger alguna de las opciones o combinarlas para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 

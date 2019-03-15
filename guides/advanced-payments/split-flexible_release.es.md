@@ -1,13 +1,11 @@
-# Liberación flexible
+## Liberación flexible
 
 Al momento de la integración se configura un rango de días en el cual se podrá liberar el dinero de los Vendedores.
 
 Esta liberación se setea en cada pago con el campo `money_release_days` y puede modificarse posteriormente.
 
 > NOTE
-> 
-> Nota
-> 
+>
 > Si no se manda este campo, se setea por defecto el máximo número de días del rango de liberación configurado en el Marketplace.
 
 ```json
@@ -30,12 +28,10 @@ Esta liberación se setea en cada pago con el campo `money_release_days` y puede
 Una vez creado, se puede cambiar la fecha de liberación tanto del Advanced Payment completo o de un `disbursement` individual.
 
 > NOTE
-> 
-> Nota
-> 
+>
 > Esta fecha debe estar dentro del rango de liberaciones definida anteriormente.
 
-#### Request: Cambio de fecha para un Advanced Payment completo
+###### Cambio de fecha para un Advanced Payment completo
 
 ```curl
 curl -X POST \
@@ -45,7 +41,7 @@ curl -X POST \
     -d '{...}'
 ```
 
-#### Request: Cambio de fecha para un Disbursement individual
+###### Cambio de fecha para un Disbursement individual
 
 ```curl
 curl -X POST \

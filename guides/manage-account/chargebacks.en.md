@@ -23,13 +23,19 @@ Now we will go into detail in each of them.
 
 ## Occurrence of the chargeback
 
-Through [IPN](/guides/notifications/ipn.es.md) we will notify you instantly whenever you receive a chargeback. For this to happen, you must be subscribed to the subject `chargebacks` within the [configuration](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Through [IPN](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) we will notify you instantly whenever you receive a chargeback. For this to happen, you must be subscribed to the subject `chargebacks` within the [configuration](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 ## Consultation of the chargeback
 
 The IPN notification will contain the `ID` of the chargeback.
 
-With this `ID` you can make a **GET** to` https://api.mercadopago.com/v1/chargebacks/ID` to check your information:
+With this `ID` you can make a **GET** to` https://api.mercadopago.com/v1/chargebacks/ID?access_token=` 
+
+```
+curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+```
+
+to check your information:
 
 ```json
 {

@@ -1,10 +1,8 @@
-# Pagos con Clientes y Tarjetas guardadas
+## Pagos con Customers
 
-La API de Advanced Payments permite realizar pagos con Clientes y Tarjetas guardadas para integradores que trabajen con este modelo de negocio.
+La API de Advanced Payments permite realizar pagos con Clientes y tarjetas guardadas para integradores que trabajen con este modelo de negocio.
 
 > NOTE
-> 
-> Nota
 >
 > Ver referencia de [Customers & Cards](https://www.mercadopago.com.ar/developers/es/guides/payments/api/customers-and-cards) para mayor información.
 

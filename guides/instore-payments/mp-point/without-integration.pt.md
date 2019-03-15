@@ -30,6 +30,6 @@ Você pode inserir uma imagem para cada produto, o preço e o nome do mesmo.
 
 ## Intere-se sobre seus pagamentos
 
-Você pode verificar suas vendas na lista de atividades da conta do Mercado Pago ou integrar [notificações](/guides/notifications/webhooks.pt.md) no seu sistema de gestão.
+Você pode verificar suas vendas na lista de atividades da conta do Mercado Pago ou integrar [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks) no seu sistema de gestão.
 
-> Se você quiser construir algo mais avançado e personalizado, consulte nossa documentação de [Point integrado](/guides/instore-payments/mp-point/create-point.pt.md)
+> Se você quiser construir algo mais avançado e personalizado, consulte nossa documentação de [Point integrado](https://www.mercadopago.com.br/developers/pt/guides/instore-payments/mp-point/create-point)

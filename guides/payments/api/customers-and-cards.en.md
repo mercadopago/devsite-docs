@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the tool to [collect card information](/guides/payments/api/receiving-payment-by-card.es.md#Collect-card-information) implemented.
+> * Have the tool to [collect card information](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card#Collect-card-information) implemented.
 
 *Customers and cards* allow you to  **securely** store your customers’ card information to enhance their shopping experience.
 
@@ -16,7 +16,7 @@ This allows your customers to complete their purchases much faster, since they w
 
 To create a `Customer` and a `Card` simultaneously it is necessary to submit, at least, the email and token fields.
 
-The `token` is captured during the [collection of card information](/guides/payments/api/receiving-payment-by-card.es.md#Collect-card-information).
+The `token` is captured during the [collection of card information](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card#Collect-card-information).
 
 
 > NOTE
@@ -101,6 +101,23 @@ card.customer_id = customer.id
 card.save
 
 ```
+```csharp
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+  Customer customer = new Customer()
+    {
+      Email = "test@test.com"
+    };
+    customer.Save();
+
+  Card card = new Card()
+    {
+      Token = "9b2d63e00d66a8c721607214cedaecda",
+      CustomerId = customer.Id
+    };
+
+      card.Save();
+```
 ]]]
 
 Expected response:
@@ -170,6 +187,10 @@ You can get the complete list of `Cards` of a customer by making an `HTTP GET` r
   cards = customer.cards;
 
 ```
+```csharp
+customer = Customer.FindById("customer.Id");
+List<Card> cards = customer.Cards; 
+```
 ]]]
 
 Response:
@@ -208,7 +229,7 @@ With this response we recommend making a form:
 
 ### 2. Get the security code
 
-The process is similar to the [collection of card information](/guides/payments/api/receiving-payment-by-card.es.md#captura-los-datos-de-tarjeta). You must create a `card token` by sending the `$form` with the `cardId` and the `securityCode`:
+The process is similar to the [collection of card information](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card#captura-los-datos-de-tarjeta). You must create a `card token` by sending the `$form` with the `cardId` and the `securityCode`:
 
 ```javascript
 doSubmit = false;

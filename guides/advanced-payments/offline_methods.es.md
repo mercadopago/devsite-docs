@@ -1,15 +1,13 @@
-# Pagos con Medios offline
+## Pagos con Medios Offline
 
 Se pueden realizar pagos con medios de pago offline o efectivo además de tarjetas de crédito o débito.
 
 > NOTE
-> 
-> Nota
 >
 > Puedes consultar los [medios de pago offline](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-payment-ways) para más información.
-> También puedes ver los [medios de pago soportados](/guides/advanced-payments/supported-payment-methods.es.md) por la API de Advanced Payments.
+> También puedes ver los [medios de pago soportados](https://www.mercadopago.com.ar/developers/es/guides/advanced-payments/supported-payment-methods) por la API de Advanced Payments.
 
-#### Request
+###### Request
 En el `body` del request debes definir el tipo de pago como `ticket` y el método según el país.
 ```json
 {
@@ -24,8 +22,8 @@ En el `body` del request debes definir el tipo de pago como `ticket` y el métod
 }
 ```
 
-#### Response
-En la respuesta, encontrarás el campo `external_resource_url` con la url que contiene las instrucciones para que el Comprador pueda pagar.
+###### Response
+En la respuesta, encontrarás el campo "external_resource_url" con la url que contiene las instrucciones para que el Comprador pueda pagar.
 ```json
 {
   "payments": [

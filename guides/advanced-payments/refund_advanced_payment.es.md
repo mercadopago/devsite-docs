@@ -1,16 +1,14 @@
-# Reembolso de un Advanced Payment
+## Reembolso de un Advanced Payment
 
 Se puede hacer el reembolso del Advanced Payment completo o de un `disbursement` individual.
 
-Si se reembolsa el Advanced Payment completo, este quedará con el estado `refunded`. En caso de realizar un reembolso parcial, el Advanced Payment quedará en estado `partially_refunded`.
+Si se reembolsa el Advanced Payment completo, este quedará con el estado `refunded`. En caso de realizar un reembolso parcial, el Advanced Payment quedará en estado `partially_refunded.
 
 > WARNING
-> 
-> Importante
 >
 > Hay que tener en cuenta que este proceso no es inmediato. Cuando se realiza el reembolso, se dispara un proceso asincrónico para reembolsar todos los pagos generados. El cambio de estado del Advanced Payment se informará mediante Webhooks.
 
-#### Request: Reembolso de un Advanced Payment completo
+###### Reembolso de un Advanced Payment completo
 ```curl
 curl -X POST \
     -H 'Accept":"application/json' \
@@ -19,7 +17,7 @@ curl -X POST \
     -d '{...}'
 ```
 
-#### Request: Reembolso de un Disbursement individual
+###### Reembolso de un Disbursement individual
 ```curl
 curl -X POST \
     -H 'Accept":"application/json' \

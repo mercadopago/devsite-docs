@@ -11,7 +11,7 @@ sites_supported:
 > 
 > Pre-requisitos
 >
-> * Tener implementada la [captura de datos de tarjeta](/guides/payments/api/receiving-payment-by-card.es.md#bookmark_captura_los_datos_de_tarjeta).
+> * Tener implementada la [captura de datos de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#bookmark_captura_los_datos_de_tarjeta).
 
 ## Atributos adicionales
 

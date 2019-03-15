@@ -437,7 +437,7 @@ properties:
       es: Tu identificador como vendedor en Mercado Pago.
       pt: Sua identificação como um vendedor no Mercado Pago.
 - client_id:
-    type: Integer
+    type: String
     description:
       en: Application owner ID that use Mercado Libre API.
       es: Identificador del dueño de la aplicación que utiliza la API de Mercado Libre.

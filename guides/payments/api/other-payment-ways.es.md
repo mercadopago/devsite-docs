@@ -41,6 +41,12 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 ```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+```
 ]]]
 
 El resultado será un _array_ con los medios de pago y sus propiedades:
@@ -149,6 +155,26 @@ payment.payer = {
 payment.save()
 
 ```
+```csharp
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+//...
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("105"),
+    Description = "Awesome Wooden Wallet",
+    PaymentMethodId = "rapipago",
+    Payer = new Payer(){
+        Email = "test_user_19653727@testuser.com"
+  }
+};
+// Save and posting the payment
+payment.Save();
+//...
+```
 ]]]
 
 Respuesta:
@@ -187,7 +213,7 @@ En el campo `external_resource_url` tienes una url que contiene las instruccione
 
 Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días dependiendo del vencimiento de cada uno. Puedes ver el [listado de vencimientos completo](https://www.mercadopago.com.ar/activities).
 
-Si quieres cancelar un pago puedes hacerlo siguiendo la guía de [cancelaciones y devoluciones de pagos](/guides/manage-account/cancellations-and-refunds.es.md).
+Si quieres cancelar un pago puedes hacerlo siguiendo la guía de [cancelaciones y devoluciones de pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
 
 La expiración de un pago se produce a los 30 días y la cancelación es automática, el status final del  mismo será cancelled/expired. 
 
@@ -203,7 +229,7 @@ Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Re
 
 Si este no cuenta con una, recibirá un email en la dirección enviada en el pago con instrucciones de cómo retirar su dinero.
 
-Para más información puedes ver el artículo sobre [devoluciones](/guides/manage-account/cancellations-and-refunds.es.md).
+Para más información puedes ver el artículo sobre [devoluciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
 
 ----[mlc, global]----
 
@@ -384,7 +410,7 @@ La respuesta que recibirás:
 }
 ```
 
-Dirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](/guides/notifications/webhooks.es.md).
+Dirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks).
 
 ------------
 
@@ -416,7 +442,7 @@ Para generar el pago utilizando PSE debes enviar el `payment_method_id` **pse** 
 }
 ```
 
-Redirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago en PSE, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](/guides/notifications/webhooks.es.md).
+Redirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago en PSE, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks).
 
 
 > NOTE

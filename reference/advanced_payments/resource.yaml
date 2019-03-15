@@ -179,18 +179,6 @@ properties:
           en:
           es: Identificador del pago.
           pt:
-    - status:
-        type: String
-        description:
-          en:
-          es: Estado del pago.
-          pt:
-    - status_detail:
-        type: String
-        description:
-          en:
-          es: Detalle del estado del pago.
-          pt:
     - payment_type_id:
         type: String
         description:

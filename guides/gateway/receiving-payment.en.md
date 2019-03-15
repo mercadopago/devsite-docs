@@ -11,7 +11,7 @@ sites_supported:
 >
 > Prerequisites
 >
-> * Have the [card information capture](/guides/payments/api/receiving-payment-by-card.en.md#bookmark_collect_card_information) implemented.
+> * Have the [card information capture](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card#bookmark_collect_card_information) implemented.
 
 ## Additional attributes
 

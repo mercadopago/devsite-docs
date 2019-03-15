@@ -66,4 +66,4 @@ pod 'MercadoPagoSDK', '3.7.2'
 ```
 ]]]
 
-En [este artículo](/guides/payments/mobile-checkout/v3/receive-payments.es.md) verás el detalle de cómo hacer un pago.
+En [este artículo](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/v3/receive-payments) verás el detalle de cómo hacer un pago.

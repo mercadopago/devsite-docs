@@ -5,264 +5,264 @@ use:
 - money_release_date
 errors:
 - 400 BAD_REQUEST:
-  - '400004':
+  - '40004':
       description:
         en:
         es: Aplicación inválida.
         pt:
-  - '400005':
+  - '40005':
       description:
         en:
         es: La aplicación es requerida.
         pt:
-  - '400006':
+  - '40006':
       description:
         en:
         es: Fecha de liberación inválida para el Disbursement.
         pt:
-  - '400007':
+  - '40007':
       description:
         en:
         es: Fecha de liberación inválida para el Disbursement.
         pt:
-  - 400013':
+  - '40013':
       description:
         en:
         es: Email inválido.
         pt:
-  - 400014':
+  - '40014':
       description:
         en:
         es: Cantidad de pagos inválidos.
         pt:
-  - 400015':
+  - '40015':
       description:
         en:
         es: ID del Payer es requerido para pagos con dinero en cuenta.
         pt:
-  - 400016':
+  - '40016':
       description:
         en:
         es: Tipo de pago inválido.
         pt:
-  - 400017':
+  - '40017':
       description:
         en:
         es: El monto de la transacción es requerido.
         pt:
-  - 400018':
+  - '40018':
       description:
         en:
         es: Monto inválido.
         pt:
-  - 400019':
+  - '40019':
       description:
         en:
         es: El método de pago es requerido.
         pt:
-  - '400020':
+  - '40020':
       description:
         en:
         es: El tipo de pago es requerido.
         pt:
-  - '400021':
+  - '40021':
       description:
         en:
         es: El formato del monto es inválido.
         pt:
-  - '400022':
+  - '40022':
       description:
         en:
         es: Modo de procesamiento inválido.
         pt:
-  - '400023':
+  - '40023':
       description:
         en:
         es: El tipo del payer es requerido.
         pt:
-  - '400024':
+  - '40024':
       description:
         en:
         es: El nombre del payer es requerido.
         pt:
-  - '400025':
+  - '40025':
       description:
         en:
         es: El apellido del payer es requerido.
         pt:
-  - '400026':
+  - '40026':
       description:
         en:
         es: El tipo de identificación del payer es requerida.
         pt:
-  - '400027':
+  - '40027':
       description:
         en:
         es: El número de identificación del payer es requerido.
         pt:
-  - '400028':
+  - '40028':
       description:
         en:
         es: La fecha de expiración es requerida.
         pt:
-  - '400029':
+  - '40029':
       description:
         en:
         es: El token del pago es requerido.
         pt:
-  - '400030':
+  - '40030':
       description:
         en:
         es: Las cuotas son requeridas.
         pt:
-  - '400031':
+  - '40031':
       description:
         en:
         es: El monto de los desembolsos es requerido.
         pt:
-  - '400032':
+  - '40032':
       description:
         en:
         es: El ID del collector es requerido.
         pt:
-  - '400033':
+  - '40033':
       description:
         en:
         es: Comisión del marketplace inválida.
         pt:
-  - '400034':
+  - '40034':
       description:
         en:
         es: Monto del desembolso inválido.
         pt:
-  - '400035':
+  - '40035':
       description:
         en:
         es: El campo money_release_date inválido.
         pt:
-  - '400036':
+  - '40036':
       description:
         en:
         es: El Marketplace no tiene permisos sobre el payer.
         pt:
-  - '400037':
+  - '40037':
       description:
         en:
         es: No se encontró el collector.
         pt:
-  - '400039':
+  - '40039':
       description:
         en:
         es: Request inválido.
         pt:
-  - '400040':
+  - '40040':
       description:
         en:
         es: Estado inválido.
         pt:
-  - '400041':
+  - '40041':
       description:
         en:
         es: Fecha de inicio inválida.
         pt:
-  - '400042':
+  - '40042':
       description:
         en:
         es: Fecha de fin inválida.
         pt:
-  - '400043':
+  - '40043':
       description:
         en:
         es: Email inválido.
         pt:
-  - '400044':
+  - '40044':
       description:
         en:
         es: Id del payer inválido.
         pt:
-  - '400045':
+  - '40045':
       description:
         en:
         es: Id del collector inválido.
         pt:
-  - '400046':
+  - '40046':
       description:
         en:
         es: El campo external_reference es inválido.
         pt:
-  - '400047':
+  - '40047':
       description:
         en:
         es: Algunos parámetros de la búsqueda son inválidos.
         pt:
-  - '400048':
+  - '40048':
       description:
         en:
         es: Id inválido.
         pt:
-  - '400049':
+  - '40049':
       description:
         en:
         es: Fecha de última modificación inválida.
         pt:
-  - '400051':
+  - '40051':
       description:
         en:
         es: El campo money_release_date es requerido.
         pt:
-  - '400052':
+  - '40052':
       description:
         en:
         es: El campo processing_mode es requerido.
         pt:
-  - '400053':
+  - '40053':
       description:
         en:
         es: Contenido inválido.
         pt:
-  - '400054':
+  - '40054':
       description:
         en:
         es: El Marketplace no tiene permisos sobre el collector.
         pt:
-  - '400055':
+  - '40055':
       description:
         en:
         es: El campo external_reference es requerido.
         pt:
-  - '400056':
+  - '40056':
       description:
         en:
         es: El campo money_release_days es inválido.
         pt:
-  - '400057':
+  - '40057':
       description:
         en:
         es: El campo collector_id y external_reference están duplicados.
         pt:
-  - '400058':
+  - '40058':
       description:
         en:
         es: Clave de idempotencia inválida.
         pt:
 - 404 NOT_FOUND:
-  - '404001':
+  - '40401':
       description:
         en:
         es: No se encontró el Disbusement not found.
         pt:
-  - '404002':
+  - '40402':
       description:
         en:
         es: No se encontró el Advanced Payment not found.
         pt:
-  - '404003':
+  - '40403':
       description:
         en:
         es: No se encontró el Payer not found.
         pt:
 - 406 NOT_ACCEPTABLE:
-  - '406001':
+  - '400601':
       description:
         en:
         es: Error en api de payments.

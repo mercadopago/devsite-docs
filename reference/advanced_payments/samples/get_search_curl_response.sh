@@ -11,8 +11,6 @@
       "payments": [
         {
           "id": 222222222,
-          "status": "approved",
-          "status_detail": "accredited",
           "payment_type_id": "credit_card",
           "payment_method_id": "visa",
           "token": "98f6a9s7dfyihfasfdhasdjfhñasdfh",
