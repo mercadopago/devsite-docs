@@ -1,5 +1,11 @@
 # Advanced Payments
 
+> WARNING
+>
+> Importante
+>
+> Antes de utilizar esta API, es importante contactar a tu ejecutivo de cuenta de Mercado Pago. 
+
 ## Introducción
 
 Advanced Payments es una API que permite procesar pagos con funcionalidades adicionales a la [API de Payments](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction/) regular. Actualmente permite realizar pagos de Marketplace con split.
