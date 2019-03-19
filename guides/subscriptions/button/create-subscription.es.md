@@ -8,7 +8,7 @@ sites_supported:
 
 # Creando una suscripción
 
-> En este artículo crearás una suscripción manualmente. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Suscripciones vía API](/guides/subscriptions/api/introduction.es.md).
+> En este artículo crearás una suscripción manualmente. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Suscripciones vía API](https://www.mercadopago.com.ar/developers/es/guides/subscriptions/api/introduction).
 
 
 Desde tu cuenta de Mercado Pago puedes [crear un link o botón de suscripción] (https://www.mercadopago.com.ar/subscription-plans/create) que te permitirá enviarselo a tus compradores y **recibir pagos de manera periódica**. Lo puedes usar para: cobrar cuotas del gimnasio, cobrar alquieres o recibir donaciones.

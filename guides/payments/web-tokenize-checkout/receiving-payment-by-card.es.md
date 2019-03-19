@@ -90,7 +90,9 @@ Solamente debes realizar un *API call* incluyendo los datos que recibiste del ch
 
 [[[
 ```php
-<?php  
+<?php 
+    require_once 'vendor/autoload.php';
+
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();
@@ -226,7 +228,7 @@ Respuesta:
 
 ### Tarjetas de prueba
 
-Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](/guides/payments/api/testing.es.md).
+Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing).
 
 ### Promociones
 

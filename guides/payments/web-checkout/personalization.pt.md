@@ -5,7 +5,7 @@ Na preferência de pagamentos, é possível enviar as informações do item a se
 
 ### Defina os tipos e formas de pagamento
 
-Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](/guides/localization/payment-methods.pt.md), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLB&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
+Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLB&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
 
 Além disso, você pode definir quais meios de pagamento ou o número de parcelas que deseja exibir por padrão, bem como o número máximo de parcelas a oferecer.
 
@@ -74,6 +74,29 @@ preference.payment_methods = {
 }
 # ...
 ```
+```csharp
+
+Preference preference = new Preference();
+
+PaymentMethods paymentmethods = new PaymentMethods(); 
+
+List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
+  excludedPaymentMethod.Add(new PaymentMethod()
+    {
+      Id = "master"
+    });
+        
+  paymentmethods.excludedPaymentType = excludedPaymentMethod;
+
+List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
+  excludedPaymentType.Add(new PaymentType()
+    {
+      Id = "ticket"
+    });
+
+  paymentmethods.ExcludedPaymentTypes = excludedPaymentType;
+  paymentmethods.Installments = 12;
+```
 ]]]
 
 ### Indique as URLs de Retorno
@@ -134,6 +157,18 @@ preference.back_urls = {
 preference.auto_return = "approved"
 # ...
 ```
+```csharp
+ Preference preference = new Preference();
+
+ preference.BackUrls = new BackUrls()
+  {
+    Success = "https://www.tu-sitio/success",
+    Failure = "http://www.tu-sitio/failure",
+    Pending = "http://www.tu-sitio/pendings"
+  };
+
+  preference.AutoReturn = AutoReturnType.approved;
+```
 ]]]
 
 ### Sincronize com o seu sistema
@@ -189,6 +224,12 @@ filters = {
 
 payment = MercadoPago::Payment.search(filters)
 ```
+```csharp
+Dictionary<string, string> filters = new Dictionary<string, string>;
+filters.Add("external_references", "EXTERNAL");
+      
+List<Payment> payments = Payment.Search(filters);
+```
 ]]]
 
 ### Modo binário
@@ -218,7 +259,7 @@ Caso não queira permitir que alguém acesse a preferência de pagamentos para e
 ```
 
 
-Para saber mais sobre os atributos da preferência, [consulte a documentação da API](/reference/reference/preferences/_preferences/post/)
+Para saber mais sobre os atributos da preferência, [consulte a documentação da API]https://www.mercadopago.com.br/developers/pt/reference/reference/preferences/_preferences/post/)
 
 ### Aqui você tem uma preferência completa
 

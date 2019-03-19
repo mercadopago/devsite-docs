@@ -61,6 +61,10 @@ mercadopago.configure({
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+```
 ]]]
 
 Then, you must add the attributes of your payment preference:
@@ -142,6 +146,26 @@ preference.items = [item]
 preference.payer = payer
 
 preference.save
+```
+```csharp
+Preference preference = new Preference();
+
+ preference.Items.Add(
+  new Item()
+  {
+    Id = "1234",
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Quantity = [FAKER][NUMBER][BETWEEN][1,10],
+    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+    UnitPrice = (float)[FAKER][COMMERCE][PRICE]
+  }
+  preference.Payer = new Payer()
+  {
+    Email = "[FAKER][INTERNET][FREE_EMAIL]"
+  };
+
+  preference.Save();
+
 ```
 ]]]
 
@@ -415,7 +439,7 @@ Notifications are automatically sent to inform you of any new payments and statu
 
 This will allow you to manage your inventories and keep your system in sync.
 
-To learn more about it, go to [Notifications.](/guides/notifications/ipn.en.md)
+To learn more about it, go to [Notifications.](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
 
 ## Test the integration
 
@@ -423,8 +447,8 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Test](/guides/payments/mobile-checkout/testing.en.md) section.
+For more information, go to the [Test](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/testing) section.
 
 ### Next steps
 
-- To adapt the payment flow to your needs, go to the [Customization](/guides/payments/mobile-checkout/personalization.en.md) section.
+- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/personalization) section.

@@ -89,6 +89,8 @@ You should only make an *API call* including the data you received from the chec
 [[[
 ```php
 <?php  
+    require_once 'vendor/autoload.php';
+
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();
@@ -224,7 +226,7 @@ Response:
 
 ### Test cards
 
-To make testing payments (with your TEST credentials), you need to use [test cards](/guides/payments/api/testing.es.md).
+To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing).
 
 ### Installments offer
 

@@ -41,6 +41,12 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 ```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+```
 ]]]
 
 O resultado será uma _array_ com os meios de pagamento e suas propriedades:
@@ -208,6 +214,42 @@ payment = mp.post('/v1/payments', payment_data)
 
 puts payment
 ```
+```csharp
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+//...
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+  DateOfExpiration = "2018-06-30T21:52:49.000-04:00",
+    TransactionAmount = float.Parse("105"),
+    Description = "Title of what you are paying for",
+    PaymentMethodId = "bolbradesco",
+    Payer = new Payer(){
+        Email = "test_user_19653727@testuser.com",
+        FirstName = "Test",
+        LastName = "User",
+        Identification = new Identification(){
+          Type = "CPF",
+          Number = "191191191-00"
+        },
+        Address = new Address(){
+          ZipCode = "06233-200",
+          StreetName = "Av. das Nações Unidas",
+          StreetNumber = "3003",
+          Neighborhood = "Bonfim",
+          City = "Osasco",
+          FederalUnit = "SP"
+
+      }
+  }
+};
+// Save and posting the payment
+payment.Save();
+//...
+```
 ]]]
 
 Resposta:
@@ -249,7 +291,7 @@ Somente é possível cancelar pagamentos que se encontrem com status `pending` o
 
 As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso. Veja a [lista completa de vencimentos](https://www.mercadopago.com.br/activities).
 
-Se você quiser cancelar um pagamento, pode fazê-lo seguindo o guia [cancelamentos e devoluções de pagamentos](/guides/manage-account/cancellations-and-refunds.pt.md).
+Se você quiser cancelar um pagamento, pode fazê-lo seguindo o guia [cancelamentos e devoluções de pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).
 
 A expiração de um pagamento ocorre após 30 dias e o cancelamento é automático, o status final deles será cancelled/expired. 
 
@@ -268,4 +310,4 @@ Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas a
 
 Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
 
-Para mais informações, consulte a seção sobre [devoluções](/guides/manage-account/cancellations-and-refunds.pt.md).
+Para mais informações, consulte a seção sobre [devoluções](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).

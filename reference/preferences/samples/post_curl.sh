@@ -1,5 +1,6 @@
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences?access_token=ACCESS_TOKEN_ENV' \
+  -H 'content-type:application/json' \
   -d '{
         "items": [
             {
@@ -11,3 +12,10 @@ curl -X POST \
             }
         ]
     }'
+
+
+
+
+
+
+    

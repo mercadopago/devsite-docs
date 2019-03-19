@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir a [captura de dados do cartão](/guides/payments/api/receiving-payment-by-card.pt.md#captura-de-dados-do-cartão).
+> * Possuir a [captura de dados do cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card#captura-de-dados-do-cartão).
 
 Clientes e cartões (*customers & cards*) são o modo de armazenar os dados de cartão de seus clientes de **forma segura** para melhorar a experiência de compra.
 
@@ -16,7 +16,7 @@ Os *customers* representam, como o próprio nome indica, seu cliente. Os cartõe
 
 Para criar o `Customer` e o `Card` ao mesmo tempo, é necessário enviar pelo menos os campos email e token.
 
-O `token` é o que capturou ao fazer a [captura de dados do cartão](/guides/payments/api/receiving-payment-by-card.pt.md#captura-de-dados-do-cartão)).
+O `token` é o que capturou ao fazer a [captura de dados do cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card#captura-de-dados-do-cartão)).
 
 
 > NOTE
@@ -101,6 +101,23 @@ card.customer_id = customer.id
 card.save
 
 ```
+```csharp
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+  Customer customer = new Customer()
+    {
+      Email = "test@test.com"
+    };
+    customer.Save();
+
+  Card card = new Card()
+    {
+      Token = "9b2d63e00d66a8c721607214cedaecda",
+      CustomerId = customer.Id
+    };
+
+      card.Save();
+```
 ]]]
 
 Resposta esperada:
@@ -169,6 +186,10 @@ Obtenha a lista completa de `Cards` de um cliente efetuando uma requisição `HT
   cards = customer.cards;
 
 ```
+```csharp
+customer = Customer.FindById("customer.Id");
+List<Card> cards = customer.Cards; 
+```
 ]]]
 
 Dados de um cartão salvo:
@@ -207,7 +228,7 @@ Com esta resposta, recomendamos elaborar um formulário:
 
 ### 2. 2. Obtenha o código de segurança
 
-O fluxo de captura é quase o mesmo utilizado para a [captura de dados do cartão](/guides/payments/api/receiving-payment-by-card.pt.md#captura-de-dados-do-cartão). Você deve criar um `card token`, enviando o `$form` com o `cardId` e o `securityCode`:
+O fluxo de captura é quase o mesmo utilizado para a [captura de dados do cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card#captura-de-dados-do-cartão). Você deve criar um `card token`, enviando o `$form` com o `cardId` e o `securityCode`:
 
 ```javascript
 doSubmit = false;
@@ -317,7 +338,7 @@ payment.save()
 
 Isso é tudo. A resposta indicará o status do pagamento  (`approved`, `rejected` ou `in_process`).
 
-> Você pode consultar mais informações sobre [manipulação de respostas](/guides/payments/api/handling-responses.pt.md).
+> Você pode consultar mais informações sobre [manipulação de respostas](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses).
 
 
 ## Adicione novos cartões a um cliente

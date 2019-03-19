@@ -4,7 +4,7 @@ In payment preferences, you can not only send information about the item to be p
 
 ### Set payment types and methods
 
-By default, we offer all payment methods available for the country where you are running the integration. If your business model does not support any of these [payment types](/guides/localization/payment-methods.en.md), or you [do not want to accept any particular method](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), you can exclude it when creating the payment preference.
+By default, we offer all payment methods available for the country where you are running the integration. If your business model does not support any of these [payment types](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods), or you [do not want to accept any particular method](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), you can exclude it when creating the payment preference.
 
 In addition, you can set the payment method or the number of installments that should be displayed by default, as well as the maximum number of installments to offer.
 
@@ -73,6 +73,29 @@ preference.payment_methods = {
 }
 # ...
 ```
+```csharp
+
+Preference preference = new Preference();
+
+PaymentMethods paymentmethods = new PaymentMethods(); 
+
+List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
+  excludedPaymentMethod.Add(new PaymentMethod()
+    {
+      Id = "master"
+    });
+        
+  paymentmethods.excludedPaymentType = excludedPaymentMethod;
+
+List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
+  excludedPaymentType.Add(new PaymentType()
+    {
+      Id = "ticket"
+    });
+
+  paymentmethods.ExcludedPaymentTypes = excludedPaymentType;
+  paymentmethods.Installments = 12;
+```
 ]]]
 
 ### Indicate Return URLs
@@ -132,6 +155,18 @@ preference.back_urls = {
 preference.auto_return = "approved"
 # ...
 ```
+```csharp
+ Preference preference = new Preference();
+
+ preference.BackUrls = new BackUrls()
+  {
+    Success = "https://www.tu-sitio/success",
+    Failure = "http://www.tu-sitio/failure",
+    Pending = "http://www.tu-sitio/pendings"
+  };
+
+  preference.AutoReturn = AutoReturnType.approved;
+```
 ]]]
 
 ### Synchronize with your system
@@ -187,6 +222,12 @@ filters = {
 
 payment = MercadoPago::Payment.search(filters)
 ```
+```csharp
+Dictionary<string, string> filters = new Dictionary<string, string>;
+filters.Add("external_references", "EXTERNAL");
+      
+List<Payment> payments = Payment.Search(filters);
+```
 ]]]
 
 ### Binary mode
@@ -216,7 +257,7 @@ If you want to prevent access to the payment preference for making a payment aft
 ```
 
 
-To learn more about the preference attributes, [check the API docs](/reference/reference/preferences/_preferences/post/).
+To learn more about the preference attributes, [check the API docs]https://www.mercadopago.com.ar/developers/en/reference/reference/preferences/_preferences/post/).
 
 
 

@@ -158,9 +158,9 @@ Se não obtivermos a aprovação do pagamento até a data de cobrança estabelec
 
 Se a assinatura estiver ativa, haverá tentativa de cobrança no próximo período.
 
-Você será notificado sobre cada pagamento recusado por meio de [Notificações](../../notifications/ipn.pt.md). Analise a causa da rejeição e comunique-se com o usuário para, por exemplo, atualizar os dados de seu cartão de crédito ou alterá-lo por outro, antes da próxima tentativa de cobrança.
+Você será notificado sobre cada pagamento recusado por meio de [Notificações](../../notifications/ipn). Analise a causa da rejeição e comunique-se com o usuário para, por exemplo, atualizar os dados de seu cartão de crédito ou alterá-lo por outro, antes da próxima tentativa de cobrança.
 
-Para mais informações, consulte a seção de [Notificações](/guides/notifications/ipn.pt.md).
+Para mais informações, consulte a seção de [Notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn).
 
 
 ## 4. Teste sua integração
@@ -169,7 +169,7 @@ Você pode testar sua integração antes de partir para produção a fim de veri
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](/guides/payments/api/testing.pt.md).
+Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing).
 
 ## Adicione recursos especiais à sua assinatura
 
