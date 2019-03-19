@@ -32,7 +32,7 @@ A continuación vas a poder encontrar los recursos migrados y sus equivalentes.
 
 | Uso                     | Método | URI del recurso deprecado              | URI del recurso equivalente      | Referencia                                                      |
 |-------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
-| Devoluciones            | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds |-                                                                |
+| Devoluciones            | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds | -|
 | Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
 | Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
 | Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
@@ -236,23 +236,12 @@ curl -X POST \
 
 Si necesitas hacer adaptaciones, recuerda que es importante hacer este cambio antes de la fecha límite.
 
-
-------------
-----[mlm]----
-Si tenés alguna duda o necesita ayuda para hacer estos cambio, [contáctanos](https://www.mercadopago.com.mx/developers/es/support/).
-
-El equipo de Mercado Pago.
-----[mlc]----
-Si tenés alguna duda o necesita ayuda para hacer estos cambio, [contáctanos](https://www.mercadopago.cl/developers/es/support/).
-
-El equipo de Mercado Pago.
-----[mco]----
-Si tenés alguna duda o necesita ayuda para hacer estos cambio, [contáctanos](https://www.mercadopago.com.co/developers/es/support/).
+----[mlu, mla]----
+Si tenés alguna duda o necesita ayuda para hacer estos cambio, 
+------------------------------------
+----[mlm, mlc, mco, mpe]----
+Si tienes alguna duda o necesita ayuda para hacer estos cambio, 
+------------------------------------
+[contactanos](https://www.mercadopago.com.uy/developers/es/support/).
 
 El equipo de Mercado Pago.
-------------
-----[mpe]----
-Si tenés alguna duda o necesita ayuda para hacer estos cambio, [contáctanos](https://www.mercadopago.com.pe/developers/es/support/).
-
-El equipo de Mercado Pago.
-------------
