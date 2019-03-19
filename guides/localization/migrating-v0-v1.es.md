@@ -6,9 +6,10 @@ Protegemos tus pagos, siempre. Trabajamos en la nueva versión de nuestra API pa
 En esta guía vas a encontrar toda la información necesaria para poder actualizar tu API de pago a la versión nueva (v1).
 
 **Contenidos de la guía**
-[Recursos migrados](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
-[Versiones de herramientas para la nueva versión](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
-[Ejemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
+
+- [Recursos migrados](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
+- [Versiones de herramientas para la nueva versión](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
+- [Ejemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
 
 
 ### Tené en cuenta: 
