@@ -145,6 +145,7 @@ Si necesitás hacer adaptaciones, recordá que es importante hacer este cambio a
 Si tenés alguna duda o necesita ayuda para hacer estos cambio, [contáctanos](https://www.mercadopago.com.ar/developers/es/support/).
 
 El equipo de Mercado Pago.
+
 ------------
 
 ----[mlm, mlc, mco, mpe]----
@@ -195,3 +196,5 @@ Si tienes alguna duda o necesita ayuda para hacer estos cambio, [contactanos](ht
 
 
 El equipo de Mercado Pago.
+
+------------
