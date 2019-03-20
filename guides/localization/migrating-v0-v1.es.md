@@ -6,9 +6,9 @@ Protegemos tus pagos, siempre. Trabajamos en la nueva versión de nuestra API pa
 En esta guía vas a encontrar toda la información necesaria para poder actualizar tu API de pago a la versión nueva (v1).
 
 **Contenidos de la guía**
-[Recursos migrados](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
-[Versiones de herramientas para la nueva versión](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
-[Ejemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
+* [Recursos migrados](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
+* [Versiones de herramientas para la nueva versión](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
+* [Ejemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
 
 
 ### Tené en cuenta: 
@@ -142,7 +142,7 @@ curl -X POST \
 
 Si necesitás hacer adaptaciones, recordá que es importante hacer este cambio antes de la fecha límite.
 
-Si tenés alguna duda o necesita ayuda para hacer estos cambio, [contáctanos](https://www.mercadopago.com.ar/developers/es/support/).
+Si tenés alguna duda o necesita ayuda para hacer estos cambios, [contáctanos](https://www.mercadopago.com.ar/developers/es/support/).
 
 El equipo de Mercado Pago.
 
@@ -192,7 +192,7 @@ curl -X POST \
 
 Si necesitas hacer adaptaciones, recuerda que es importante hacer este cambio antes de la fecha límite.
  
-Si tienes alguna duda o necesita ayuda para hacer estos cambio, [contactanos](https://www.mercadopago.com.uy/developers/es/support/).
+Si tienes alguna duda o necesita ayuda para hacer estos cambios, [contactanos](https://www.mercadopago.com.uy/developers/es/support/).
 
 
 El equipo de Mercado Pago.
