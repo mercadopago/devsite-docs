@@ -1,23 +1,34 @@
-# Migração da versão 0 para versão 1 da API de Pagamentos do Mercado Pago
+# Manual de migração: nova versão da API de pagamentos
 
-No Mercado Pago procuramos sempre otimizar nossa plataforma oferecendo a mais alta eficiência e segurança no processamento de pagamentos.
+Protegemos seus pagamentos sempre. Trabalhamos na nova versão de nossa API para continuar atendendo os mais altos padrões de segurança.
 
-No momento, estamos trabalhando na migração da nossa API  versão 0 para a versão 1 com o objetivo de manter os mais altos padrões de qualidade.
+Neste manual, você encontrará todas as informações necessárias para poder atualizar sua API de pagamento para a nova versão (v1).
 
-Consequentemente a versã 0 vai parar de ter suporte a partir de 10 de dezembro de 2018.
- 
+**Conteúdo do manual**
 
-### Pontos para serem levados em conta
+* [Recursos migrados](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#recursos_migrados)  
+* [Versões de ferramentas para a nova versão](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#versões_de_ferramentas_para_a_nova_versão) 
+* [Exemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#exemplos) 
 
-* A alteração terá impacto **a partir de 10 de dezembro de 2018.**
-* Se você usa apenas os botões de pagamento de Mercado Pago, essa alteração não afetará você.
-* Se você usa apenas Mercado Shops, essa alteração não afetará você.
-* Caso tenha seu **próprio e-commerce, consulte sua equipe de TI**.
-* Caso **opere com alguma plataforma de e-commerce**, como por exemplo: Magento, Shopify ou outros **Consulte seu respectivo suporte técnico**.
+
+### Lembre-se: 
+
+* Desde o dia 10 de dezembro de 2018, **a versão antiga não conta mais com suporte**. 
+* Se você usa botões de pagamento ou Mercado Shops, a mudança não afeta você.
+* Se você tem o seu próprio e-commerce, por favor, consulte sua equipe de tecnologia. 
+* Ou, se você trabalha com alguma plataforma, como Magento, Shopify ou outra, por favor, entre em contato com seu suporte técnico.
+
+Se você usa o recurso de search de payments, você precisa de um novo recurso e incluir um novo parâmetro para obter o mesmo resultado. Para mais informações, consulte a [seção de exemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#exemplos).
+
+
+> NOTE
+>
+>  (i) Se continuar com a versão anterior (v0), a partir de 1 de abril, você só poderá acessar a busca de informações dos seus pagamentos dos últimos 90 dias. 
+
 
 ## Recursos migrados
 
-A tabela abaixo traz uma relação dos recursos migrados.
+A seguir, você encontrará os recursos migrados e seus equivalentes.
 
 | Uso                      | Método | URI do Recurso deprecado               | URI do Recurso equivalente       | Referência                                                      |
 |--------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
@@ -31,9 +42,9 @@ A tabela abaixo traz uma relação dos recursos migrados.
 | Busca de pagamentos      | `GET`  | /payments/search                       | /v1/payments/search              |[acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get)|
 | Busca de pagamentos      | `GET`  | /collections/search                    | /v1/payments/search              |[acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get)|
 
-### Versões migradas das ferramentas do Mercado Pago
+## Versões válidas das ferramentas para a nova versão 
 
-Nas seguintes versões de cada uma das ferramentas do Mercado Pago, a versão 0 da API não é mais suportada:
+Se você usa as nossas ferramentas, para a nova versão da API, é necessário que as versões instaladas sejam as que estão detalhadas na tabela acima. 
 
 | Ferramenta       | Versão  |
 |------------------|---------|
@@ -58,34 +69,37 @@ Nas seguintes versões de cada uma das ferramentas do Mercado Pago, a versão 0 
 | SDK python 0.x   | 0.3.5   |
 | SDK NodeJS 1.x   | 1.0.16  |
 
-### Exemplos
+## Exemplos 
 
-#### Pesquisar por pagamentos
+### Busca de um pagamento
 
-Para a busca de pagamentos o recurso /v1/payments/search deve ser utilizado levando em conta que o resultado desta pesquisa retornará os pagamentos como pagador e coletor do invocador.
+Para a busca de pagamentos, você deve usar o endpoint /v1/payments/search
+Lembre-se que o resultado desta busca traz os pagamentos como payer e collector de quem a realiza.
 
-Para manter a consistência semântica com os resultados do recurso /payments/search, você deve adicionar o parâmetro payer.id com seu ID de usuário.
+Para manter a consistência semântica com os resultados do endpoint /payments/search, você deve adicionar o parâmetro payer.id com o seu identificador de usuário.
 
 ```json
 curl -X GET \
  "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&payer.id=PAYER_ID" 
 ```
 
-Para manter a consistência semântica com os resultados do recurso /collections/search, você deve incluir o parâmetro collector.id com seu ID do usuário.
+Para manter a consistência semântica com os resultados do endpoint /payments/search, você deve adicionar o parâmetro payer.id com o seu identificador de usuário.
 
 ```json
 curl -X GET \
  "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&collector.id=COLLECTOR_ID" 
 ```
 
-#### Devolução Total
+### Devolução total
+
 ```json
 curl -X POST \
         -H "content-type: application/json" \
         "https://api.mercadopago.com/v1/payments/:id/refunds?access_token=ENV_ACCESS_TOKEN"
 ```
 
-#### Devolução Parcial
+
+### Devolução parcial
 
 ```curl
 curl -X POST \
@@ -96,8 +110,9 @@ curl -X POST \
         }'
 ```
 
-Caso você precise fazer adaptações, **é importante que você se lembre de fazer essa alteração em tempo hábil.**
+Se precisar fazer adaptações, lembre-se que é importante fazer essa mudança antes da data limite.
 
-Se você tiver alguma dúvida ou precisar de ajuda para concluir com êxito essa mudança, entre em contato conosco através do seguinte [formulário de contato](https://www.mercadopago.com.br/developers/pt/support).
 
-Equipe do Mercado Pago.
+Se você tiver alguma dúvida ou precisar de ajuda para fazer essas alterações, [entre em contato](https://www.mercadopago.com.br/developers/pt/support) conosco.
+
+Equipe Mercado Pago
