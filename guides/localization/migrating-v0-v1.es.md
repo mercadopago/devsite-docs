@@ -55,7 +55,7 @@ En esta guía vas a encontrar toda la información necesaria para poder actualiz
 
 ------------
 
-### Recursos migrados
+## Recursos migrados
 
 A continuación vas a poder encontrar los recursos migrados y sus equivalentes.
 
@@ -71,7 +71,7 @@ A continuación vas a poder encontrar los recursos migrados y sus equivalentes.
 | Búsqueda de pagos       | `GET`  | /payments/search                       | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
 | Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
 
-Versiones válidas de las herramientas para la nueva versión 
+##Versiones válidas de las herramientas para la nueva versión 
 
 Si usas nuestras herramientas, para la nueva versión de la API es necesario que la versiones instaladas sean las que se detalla en la tabla o superior.
 
@@ -100,7 +100,7 @@ Si usas nuestras herramientas, para la nueva versión de la API es necesario que
 
 ----[mla, mlu, mlb]----
 
-### Ejemplos 
+## Ejemplos 
 
 #### Búsqueda de un pago
 
