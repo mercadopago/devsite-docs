@@ -399,4 +399,4 @@ Você pode testar sua integração antes de partir para produção, a fim de ver
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a [seção de Testes](/guides/payments/web-checkout/testing.pt.md).
+Para mais informações, consulte a [seção de Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/testing).
