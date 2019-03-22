@@ -159,9 +159,12 @@ This process will explain how to configure the module to accept payments with Ba
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Configuration](https://github.com/mercadopago/cart-magento2/blob/master/README.img/mercadopago_global_configuration.png?raw=true)
+![Configuration]
+images/magento2/mercadopago_global_configuration.png
 
 3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
+
+images/magento2/mercadopago_custom_checkout_configuration.png
 
 4.  Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 
