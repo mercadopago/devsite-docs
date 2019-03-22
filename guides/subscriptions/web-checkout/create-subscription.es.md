@@ -160,9 +160,9 @@ En caso de no conseguir una aprobación de pago para la fecha de cobro estipulad
 
 Si la suscripción se encuentra activa se intentará cobrar en el próximo período.
 
-Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn.es.md). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
+Cada pago rechazado te será notificado mediante [Notificaciones](../../notifications/ipn). Analiza el motivo del rechazo, y comunícate con tu usuario para que, por ejemplo, actualice los datos de su tarjeta de crédito o la cambie por otra, antes de que se realice el próximo reintento de cobro.
 
-Visita la sección [Notificaciones](/guides/notifications/ipn.es.md) para más información.
+Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para más información.
 
 
 ## 4. Prueba tu integración
@@ -171,7 +171,7 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 
 Para ello debes usar usuarios y tarjetas de prueba.
 
-Visita la sección [Probando](/guides/payments/api/testing.es.md) para más información.
+Visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing) para más información.
 
 ## Añade características especiales a tu suscripción
 

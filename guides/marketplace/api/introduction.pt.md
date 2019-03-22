@@ -37,13 +37,13 @@ A **chave privada**, ou *access_token*, é utilizada para todas as requisições
 
 Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 
-Forneceremos [cartões de teste](/guides/marketplace/web-checkout/testing-marketplace.pt.md) para que possa simular transações como se fossem reais.
+Forneceremos [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/testing-marketplace) para que possa simular transações como se fossem reais.
 
-Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](/guides/marketplace/api/goto-production.pt.md) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas [credenciais](https://www.mercadopago.com/mlb/account/credentials).
+Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/goto-production) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas [credenciais](https://www.mercadopago.com/mlb/account/credentials).
 
 **Antes de utilizar as credenciais de produção é preciso completar o formulário de "Quero ir para produção" para ativa-las.** 
 Caso contrario se receberá o erro de "Invalid use of live credentials". 
 
 Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do _sandbox_ pelas de produção em seu código.
 
-#### [Começar a criar meu Marketplace](/guides/marketplace/api/create-marketplace.pt.md).
+#### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/create-marketplace).

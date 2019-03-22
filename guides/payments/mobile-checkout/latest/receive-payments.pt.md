@@ -441,7 +441,7 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificações](/guides/notifications/webhooks.pt.md).
+Para mais informações, consulte a seção de [Notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
 
 ## Teste a integração
 
@@ -449,9 +449,9 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](/guides/payments/mobile-checkout/testing.pt.md).
+Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/testing).
 
 
 ### Próximos passos
 
-- Visite a seção [Personalização](/guides/payments/mobile-checkout/personalization.pt.md) para adequar o fluxo de pagamento às suas necessidades.
+- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/personalization) para adequar o fluxo de pagamento às suas necessidades.

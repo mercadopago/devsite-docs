@@ -1,33 +1,41 @@
-# Gestão de Estornos
+# Gestão de compras contestadas
 
 > NOTE
 >
 > Nota
 >
-> **O que é?** Quando o comprador se comunica com a entidade que emitiu o cartão (um banco, por exemplo) e desconhece um pagamento realizado através desse meio, se gera um _estorno_. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589)
+> **O que é?** Quando o comprador se comunica com a entidade que emitiu o cartão (um banco, por exemplo) e desconhece um pagamento realizado através desse meio, é gerada uma _contestação_. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589)
 
-O estorno, a princípio, significa que o Mercado Pago irá reter o dinheiro da venda até que o problema seja solucionado.
+A compra contestada, a princípio, significa que o Mercado Pago irá reter o dinheiro da venda até que o problema seja solucionado.
 
-Os estornos podem ser geridos via API.
+As contestações podem ser geridas via API.
 É importante, nesse processo, mencionar quais são as instâncias chave:
 
-1. Aparição do estorno
-2. Consulta do estorno
+1. Notificação da compra contestada
+2. Consulta da compra contestada
 3. Entendimento da cobertura
-4. Disputa do estorno
+4. Disputa da compra contestada
 5. Revisão por parte do Mercado Pago
 6. Resolução
 
 Agora entraremos em detalhe em cada uma delas:
 
-## Aparição do estorno
+## Notificação da compra contestada
 
-Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que um estorno for recebido. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
+Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que uma contestação for recebida. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
 
-## Consulta de estorno
 
-A notificação IPN vai conter o `ID` do estorno.
-Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID` para consultar suas informaçõeso:
+## Consulta da contestação
+
+A notificação IPN vai conter o `ID` da compra contestada.
+Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID?access_token=` para consultar suas informaçõeso:
+
+```
+curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+```
+
+para consultar suas informações:
+
 
 ```json
 {
@@ -57,37 +65,37 @@ Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/char
 
 ## Entendimento da cobertura
 
-De acordo com a operação do vendedor, seu acordo comercial, ou ambos, pode-se variar a política de cobertura de cada estorno por parte do Mercado Pago. O campo `coverage_elegible` define se o estorno é passível de ser disputado ou não.
+De acordo com a operação do vendedor, seu acordo comercial, ou ambos, pode-se variar a política de cobertura de cada contestação por parte do Mercado Pago. O campo `coverage_elegible` define se a compra contestada é passível de ser disputado ou não.
 
 | Campo               | Valor     | Descrição
 | ----                | ----      | ----
-| `coverage_elegible` | **false** | Indica que o estorno não pode ser disputado
-| `coverage_elegible` | **true**  | Indica que o estorno pode ser disputado
+| `coverage_elegible` | **false** | Indica que a compra contestada não pode ser disputado
+| `coverage_elegible` | **true**  | Indica que a compra contestada pode ser disputado
 
 Além disso conta-se com o campo `documentation_required` que indica se é preciso que se envie a documentação para análise.
 
 | Campo                    | Valor     | Descrição
 | ----                     | ----      | ----
-| `documentation_required` | **false** | Indica que não se requer documentação para o estorno
-| `documentation_required` | **true**  | Indica que se requer documentação para o estorno
+| `documentation_required` | **false** | Indica que não se requer documentação para a compra contestada
+| `documentation_required` | **true**  | Indica que se requer documentação para a compra contestada
 
 
 ----[mla,mlc,mlm,mpe,mco,global]----
-Caso seja requerida a documentação, conta-se com um prazo de 7 dias desde a criação do estorno para enviá-la. Na resposta da sua consulta do estorno pode-se ver quando se expira este prazo no campo `date_documentation_deadline`.
+Caso seja requerida a documentação, conta-se com um prazo de 7 dias desde a criação da contestação para enviá-la. Na resposta da sua consulta da compra contestada pode-se ver quando se expira este prazo no campo `date_documentation_deadline`.
 ------------
 ----[mlb]----
-Caso seja requerida a documentação, conta-se com um prazo de 10 dias desde a criação do estorno para enviá-la. Na resposta da sua consulta do estorno pode-se ver quando se expira esse prazo no campo `date_documentation_deadline`.
+Caso seja requerida a documentação, conta-se com um prazo de 10 dias desde a criação da contestação para enviá-la. Na resposta da sua consulta da compra contestada pode-se ver quando se expira esse prazo no campo `date_documentation_deadline`.
 ------------
 
 > WARNING		 
 > 
 > Requisitos
 >
-> Só é possível continuar com o resto dos passos se o estorno  **pode ser disputado**, **se requer que se envie documentação** e **se o prazo ainda não foi expirado.** 
+> Só é possível continuar com o resto dos passos se a contestação **pode ser disputada**, **se requer que se envie documentação** e **se o prazo ainda não foi expirado.** 
 
-## Disputa do estorno
+## Disputa da compra contestada
 
-Se o estorno segue os critérios anteriormente mencionados, é possível enviar via API a informação confirmatória que valida que a venda ocorreu. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589) 
+Se a contestação segue os critérios anteriormente mencionados, é possível enviar via API, os documentos e informações que comprovem que o produto foi entregue. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589) 
 
 Para realizar o envio, deve-se fazer um **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` da seguinte forma:
 ```
@@ -100,7 +108,7 @@ A api responderá com status `200 OK` se a documentação foi enviada com sucess
 >
 > Nota
 >
-> Os arquivos poderão ser .jpg, .png, .pdf e em seu conjunto não podem ultrapassar 10mb.
+> Os arquivos poderão ser .jpg, .png, .pdf e em seu conjunto não podem ultrapassar 10mb e 10 arquivos.
 
 ## Revisão por parte de Mercado Pago
 
@@ -108,11 +116,11 @@ Uma vez enviada a documentação, um representante de Mercado Pago a revisará.
 
 ## Resolução
 
-Eventualmente o estorno poderá ter dois tipos de resolução possíveis:
+Eventualmente a contestação poderá ter dois tipos de resolução possíveis:
 
 | Campo              | Valor     | Descrição
 | ----               | ----      | ----
-| `coverage_applied` | **false** | Indica que Mercado Pago falhou _contra_ o vendedor (o dinheiro é devolvido ao comprador)
-| `coverage_applied` | **true**  | Indica que Mercado Pago falhou _a favor_ do vendedor (se devolve o dinheiro ao vendedor)
+| `coverage_applied` | **false** | Indica que a documentação enviada não é válida e o dinheiro será devolvido ao comprador.
+| `coverage_applied` | **true**  | Indica que a documentação enviada é válida e o dinheiro será devolvido ao vendedor.
 
 Quando a resolução acontece, independentemente do resultado, se enviará uma nova notificação via **IPN** para que se possa verificar o que houve.

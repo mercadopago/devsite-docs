@@ -12,7 +12,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementado el [procesamiento de pagos con tarjeta](/guides/payments/api/receiving-payment-by-card.es.md).
+> * Tener implementado el [procesamiento de pagos con tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
 >
 > Disponible solamente en:
 >
@@ -346,4 +346,4 @@ Respuesta:
 >
 > Nota
 >
-> Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](/guides/notifications/webhooks.es.md) del cambio de estado del pago.
+> Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks) del cambio de estado del pago.

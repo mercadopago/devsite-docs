@@ -13,19 +13,19 @@ sites_supported:
 
 ----[mlb]----
 
-> ![Pagos QR](/images/mobile/qr.pt.png)
+> ![Pagos QR](/images/qr.pt.png)
 
 ------
 
 ----[mla]----
 
-> ![Pagos QR](/images/mobile/qr_mla.es.png)
+> ![Pagos QR](/images/qr_mla.es.png)
 
 ------
 
 ----[mlm]----
 
-> ![Pagos QR](/images/mobile/qr_mlm.es.png)
+> ![Pagos QR](/images/qr_mlm.es.png)
 
 ------
 
@@ -48,8 +48,8 @@ To make the payment, your customers need to download the app on their mobile pho
 
 | Type                                                         | Description                                                  | Integration required? |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------- |
-| [Simple QR code](/guides/instore-payments/qr-payments/qr-static.en.md) | By generating a QR code from your Mercado Pago portal. The customer scans your QR code and can transfer the money. The amount must be entered manually. | No                    |
-| [Point of Sale QR](/guides/instore-payments/qr-payments/qr-pos.en.md) | By integrating in your point of sale system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
-| [Gas Station QR](/guides/instore-payments/qr-payments/qr-gas-station.en.md) | By integrating in your management system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
+| [Simple QR code](https://www.mercadopago.com.ar/developers/en/guides/instore-payments/qr-payments/qr-static) | By generating a QR code from your Mercado Pago portal. The customer scans your QR code and can transfer the money. The amount must be entered manually. | No                    |
+| [Point of Sale QR](https://www.mercadopago.com.ar/developers/en/guides/instore-payments/qr-payments/qr-pos) | By integrating in your point of sale system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
+| [Gas Station QR](https://www.mercadopago.com.ar/developers/en/guides/instore-payments/qr-payments/qr-gas-station) | By integrating in your management system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
 
 Based on your business model, you can choose one of the options or combine them to offer your customers a great shopping experience in your physical stores.

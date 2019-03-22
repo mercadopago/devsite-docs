@@ -215,7 +215,7 @@ You can only cancel payments whose status `pending` or `in_process`.
 
 The payment methods available for payments in cash should be paid from 3 to 5 days depending on each one. You can view the [complete list of expiration periods](https://www.mercadopago.com.ar/activities).
 
-To cancel a payment please follow the [cancellations and returns of payments](/guides/manage-account/cancellations-and-refunds.en.md) guide.
+To cancel a payment please follow the [cancellations and returns of payments](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds) guide.
 
 The expiration of a payment occurs after 30 days and the cancellation is automatic, is this case the final status of the payment is cancelled/expired.
 
@@ -231,7 +231,7 @@ If you need to make a refund to your buyer, you can do it with the Refunds API. 
 
 If your buyer doesn’t have one, you will receive an email at the address sent with the payment with instructions on how to withdraw the refund.
 
-For more information, go to [Refunds](/guides/manage-account/cancellations-and-refunds.es.md).
+For more information, go to [Refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds).
 
 ----[mlc, global]----
 
@@ -408,7 +408,7 @@ The response you will receive is:
 	}
 }
 ```
-Direct your customer to the URL that you will find in the `external_resource_url` attribute in the `transaction_details` of the response. Upon completion of the payment, you will be redirected to the `callback_url` that you indicate, and you will receive the payment result via [Webhooks](/guides/notifications/webhooks.en.md).
+Direct your customer to the URL that you will find in the `external_resource_url` attribute in the `transaction_details` of the response. Upon completion of the payment, you will be redirected to the `callback_url` that you indicate, and you will receive the payment result via [Webhooks](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks).
 
 ------------
 
@@ -440,7 +440,7 @@ To generate the payment using PSE you must send the `payment_method_id` **pse** 
 }
 ```
 
-Redirect your customer to the URL that you will find in the `external_resource_url` attribute in the `transaction_details` of the response. Upon completion of the payment, you will be redirected to the `callback_url` that you indicate, and you will receive the payment result via [Webhooks](/guides/notifications/webhooks.en.md).
+Redirect your customer to the URL that you will find in the `external_resource_url` attribute in the `transaction_details` of the response. Upon completion of the payment, you will be redirected to the `callback_url` that you indicate, and you will receive the payment result via [Webhooks](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks).
 
 
 > NOTE

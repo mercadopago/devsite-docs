@@ -1,5 +1,5 @@
 ---
-  description: Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees, manteniendo la experiencia de compra.
+  indexable: false
 ---
 
 # Introducción a nuestra API de pagos
@@ -28,7 +28,7 @@ Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas [probado tu aplicación](/guides/payments/api/testing.es.md), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
+Una vez que hayas [probado tu aplicación](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 
@@ -49,4 +49,4 @@ El incumplimiento de estas normas puede implicar desde el no procesamiento de pa
 Debes disponer de una política de términos y condiciones, en la cual especifiques que te responsabilizas por todos los datos que sean ingresados en tu sitio.
 
 
-#### [Comenzar a integrar la API](/guides/payments/api/receiving-payment-by-card.es.md)
+#### [Comenzar a integrar la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card)

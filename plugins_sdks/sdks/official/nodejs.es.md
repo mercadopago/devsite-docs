@@ -201,7 +201,7 @@ mp.get ({
 }).then (...);
 ```
 
-> Para más información visita la sección [API reference](/reference).
+> Para más información visita la sección [API reference]https://www.mercadopago.com.ar/developers/es/reference).
 
 ## Métodos genéricos
 
