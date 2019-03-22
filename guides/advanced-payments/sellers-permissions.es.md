@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Obtención de permisos y datos del Merchant
 
 El Marketplace que desee integrarse, debe solicitar permisos a sus Merchants para poder operar y realizar pagos en su nombre. Para ello, debe seguir los pasos de [Mercado Pago Connect](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/create-marketplace).

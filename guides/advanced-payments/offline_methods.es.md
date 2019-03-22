@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Pagos con Medios Offline
 
 Se pueden realizar pagos con medios de pago offline o efectivo además de tarjetas de crédito o débito.

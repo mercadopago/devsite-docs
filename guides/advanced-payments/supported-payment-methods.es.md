@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Medios de pago soportados
 
 Actualmente los medios de pagos soportados son los siguientes:
