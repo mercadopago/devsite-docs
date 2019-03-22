@@ -378,7 +378,7 @@ Uma vez que a preferência é criada, use o URL que você encontra no attribute 
 </html>
 ```
 
-Você também pode personalizar o check-out inserindo este [Link](/guides/payments/web-checkout/personalization.pt.md)
+Você também pode personalizar o check-out inserindo este [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/personalization)
 
 ## 3. Ative as notificações de pagamento
 
