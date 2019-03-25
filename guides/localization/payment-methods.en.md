@@ -109,10 +109,10 @@ Argencard      			| `credit_card`            | `argencard`
 Cordial      		    	| `credit_card`            | `cordial`
 Cordobesa      			| `credit_card`            | `cordobesa`
 Cabal				| `credit_card`            | `cabal`
-Visa Débito       		| `debit_card`             | `debvisa`
-Mastercard Débito		| `debit_card`             | `debmaster`
+Visa Debit       		| `debit_card`             | `debvisa`
+Mastercard Debit		| `debit_card`             | `debmaster`
 Maestro                         | `debit_card`             | `maestro`
-Cabal Débito                    | `debit_card`             | `debcabal`
+Cabal Debit                    | `debit_card`             | `debcabal`
 Pago Fácil			| `ticket`                 | `pagofacil`
 RapiPago			| `ticket`                 | `rapipago`
 Provincia Pagos			| `ticket`                 | `bapropagos`
@@ -173,8 +173,8 @@ Payment Method    		| Payment Type ID          | ID
 Visa				| `credit_card`            | `visa`
 Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
-Visa Débito       		| `debit_card`             | `debvisa`
-Mastercard Débito		| `debit_card`             | `debmaster`
+Visa Debit       		| `debit_card`             | `debvisa`
+Mastercard Debit		| `debit_card`             | `debmaster`
 Tarjeta Mercado Pago		| `prepaid_card`           | `mercadopagocard`
 Oxxo            		| `ticket`                 | `oxxo`
 BBVA Bancomer    	    	| `atm`		           | `bancomer`
@@ -188,9 +188,9 @@ Bitcoin	                	| `digital_currency`       | `bitcoin`
 Payment Method    		| Payment Type ID          | ID  
 :-------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
-Visa Débito			| `dedit_card`             | `debvisa`
+Visa Debit			| `dedit_card`             | `debvisa`
 Diners Club International	| `credit_card`            | `diners`
-Mastercard Débito		| `debit_card`             | `debmaster`
+Mastercard Debit		| `debit_card`             | `debmaster`
 BCP, BBVA Continental or others  	| `atm`                    | `pagoefectivo_atm`
 Account money	       		| `account_money`          | `account_money`
 
