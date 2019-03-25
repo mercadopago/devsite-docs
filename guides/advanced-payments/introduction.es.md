@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Advanced Payments
 
 ## Introducción

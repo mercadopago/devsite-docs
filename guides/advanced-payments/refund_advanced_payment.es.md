@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Reembolso de un Advanced Payment
 
 Se puede hacer el reembolso del Advanced Payment completo o de un `disbursement` individual.

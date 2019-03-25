@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Pagos con Customers
 
 La API de Advanced Payments permite realizar pagos con Clientes y tarjetas guardadas para integradores que trabajen con este modelo de negocio.

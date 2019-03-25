@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Idempotencia
 
 En ocasiones se pueden presentar problemas de conexión, caídas de servicios, etc. que podrían interrumpir la comunicación al enviar o recibir los datos para crear un Advanced Payment.

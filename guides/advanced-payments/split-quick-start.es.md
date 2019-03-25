@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Inicio rápido de pagos de Marketplace con split
 
 > WARNING

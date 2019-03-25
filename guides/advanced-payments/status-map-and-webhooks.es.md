@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Mapa de Estados
 
 Un Advanced Payment puede tomar distintos estados.

@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 ## Liberación flexible
 
 Al momento de la integración se configura un rango de días en el cual se podrá liberar el dinero de los Vendedores.
