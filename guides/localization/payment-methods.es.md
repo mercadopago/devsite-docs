@@ -189,6 +189,8 @@ Medio de pago   		| Payment Type ID          | ID
 :-------------------------	| :----------------------- | :--------------------
 Visa				| `credit_card`            | `visa`
 Visa Débito			| `dedit_card`             | `debvisa`
+Diners Club International	| `credit_card`            | `diners`
+Mastercard Débito		| `debit_card`             | `debmaster`
 BCP, BBVA Continental u otros  	| `atm`                    | `pagoefectivo_atm`
 Dinero en cuenta	       	| `account_money`          | `account_money`
 
