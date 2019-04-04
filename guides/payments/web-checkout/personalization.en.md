@@ -19,10 +19,11 @@ $preference = new MercadoPago\Preference();
 
 $preference->payment_methods = array(
   "excluded_payment_methods" => array(
-    array("id" => "master")
+    	(object)["id" => "master"],
   ),
   "excluded_payment_types" => array(
-    array("id" => "ticket")
+        (object) ["id" => "ticket"],
+        (object) ["id" => "atm"],
   ),
   "installments" => 12
 );
