@@ -1,21 +1,34 @@
-﻿# Payment Refunds
-
-The `id` of the Advanced Payment is used making a `PUT` as the example shows.
+# Pagamento binário
 
 #### Request
 ```curl
-curl -X PUT \
+curl -X POST \
     -H 'Accept":"application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID/refunds?access_token=SELLER_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments?access_token=SELLER_TOKEN' \
+    -d '{...}'
+```
+
+#### Body
+```json
+{
+   "wallet_payment":{
+      "transaction_amount":700.50,
+      "description":"Payment Google",
+      "external_reference":"Pago_123",
+      "access_token":"PAYER_ACCESS_TOKEN"      
+   },
+   "binary_mode": true
+}
+
 ```
 
 #### Response
-`HTTP Status 200 OK`
+`HTTP Status 201 Created`
 ```json
 {
    "id":10458724,
-   "status":"refunded",
+   "status":"approved",
    "wallet_payment":{
       "transaction_amount":700.50,
       "description":"Payment Google",
@@ -24,8 +37,8 @@ curl -X PUT \
    "payments":[
       {
          "id":3870106238,
-         "status":"refunded",
-         "status_detail":"refunded",
+         "status":"approved",
+         "status_detail":"accredited",
          "payment_type_id":"account_money",
          "payment_method_id":"account_money",
          "transaction_amount":700.50,

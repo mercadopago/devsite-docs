@@ -1,13 +1,27 @@
-﻿# Payment Refunds
+﻿# Cancelar um pagamento pendente
 
-The `id` of the Advanced Payment is used making a `PUT` as the example shows.
+Se um pagamento não for aprovado no no ato, ele poderá ser criado no estado `pendente`. Isso pode acontecer se o pagamento entrar em revisão manual.
+
+Após a aprovação ou recusa, essa alteração será informada via webhook.
+
+Se, após aguardar um determinado período de tempo, você quiser cancelar esse pagamento, poderá chamar o seguinte endpoint:
+
 
 #### Request
 ```curl
 curl -X PUT \
     -H 'Accept":"application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID/refunds?access_token=SELLER_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID?access_token=SELLER_TOKEN' \
+    -d '{...}'
+```
+
+#### Body
+`HTTP Status 200 OK`
+```json
+{
+   "status":"cancelled"
+}
 ```
 
 #### Response
@@ -15,7 +29,7 @@ curl -X PUT \
 ```json
 {
    "id":10458724,
-   "status":"refunded",
+   "status":"cancelled",
    "wallet_payment":{
       "transaction_amount":700.50,
       "description":"Payment Google",
@@ -24,8 +38,8 @@ curl -X PUT \
    "payments":[
       {
          "id":3870106238,
-         "status":"refunded",
-         "status_detail":"refunded",
+         "status":"cancelled",
+         "status_detail":"by_collector",
          "payment_type_id":"account_money",
          "payment_method_id":"account_money",
          "transaction_amount":700.50,

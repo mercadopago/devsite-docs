@@ -1,6 +1,6 @@
-﻿# Payment Refunds
+﻿# Devolução de pagamentos
 
-The `id` of the Advanced Payment is used making a `PUT` as the example shows.
+Se utiliza o `id` do Advanced Payment realizando um `PUT` como mostrado no exemplo.
 
 #### Request
 ```curl
