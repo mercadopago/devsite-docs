@@ -1,8 +1,3 @@
----
-  sites_supported:
-      - global
----
-
 # Money transfer
 
 From Mercado Pago, we provide the necessary services to be able to send money immediately and without cost from your Mercado Pago account to another Mercado Pago account.

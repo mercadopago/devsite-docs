@@ -1,8 +1,3 @@
----
-  sites_supported:
-      - global
----
-
 # Envío de Dinero
 
 Desde Mercado Pago, proveemos los servicios necesarios para poder realizar envíos de dinero de manera inmediata y sin costo desde tu cuenta de Mercado Pago a otra cuenta de Mercado Pago.
