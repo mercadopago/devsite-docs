@@ -1,8 +1,3 @@
----
-  sites_supported:
-      - global
----
-
 # Envío de Dinheiro
 
 No Mercado Pago, provemos os serviços necessários para poder realizar envios de dinheiro de maneira imediata e sem custo, a partir da sua conta do Mercado Pago a outra conta do Mercado Pago.
