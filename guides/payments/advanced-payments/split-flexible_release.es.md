@@ -1,6 +1,6 @@
 # Liberación flexible
 
-Al momento de la integración se configura un rango de días en el cual se podrá liberar el dinero de los Vendedores.
+Al momento de la integración se configura un rango de días en el cual se podrá liberar el dinero de los vendedores.
 
 Esta liberación se setea en cada pago con el campo `money_release_days` y puede modificarse posteriormente.
 
@@ -8,7 +8,7 @@ Esta liberación se setea en cada pago con el campo `money_release_days` y puede
 > 
 > Nota
 > 
-> Si no se manda este campo, se setea por defecto el máximo número de días del rango de liberación configurado en el Marketplace.
+> Por defecto se setea el máximo número de días del rango de liberación configurado en el Marketplace.
 
 ```json
 {

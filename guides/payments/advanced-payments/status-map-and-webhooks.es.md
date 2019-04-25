@@ -1,7 +1,7 @@
 # Mapa de Estados
 
 Un Advanced Payment puede tomar distintos estados.
-Un Marketplace puede informarse de los cambios de estados de un advanced payment si se suscribe al tópico de `Split de Pagos` en [Webhooks](https://www.mercadopago.com/mla/account/webhooks), para pagos de carrito del off.
+Un Marketplace puede informarse de los cambios de estados de un `advanced payment` si se suscribe al tópico de `Split de Pagos` en [Webhooks](https://www.mercadopago.com/mla/account/webhooks), para pagos de carrito de Mercado Pago.
 
 ![Status map](/images/advanced-payments/advanced-payments-status-map.png)
 
@@ -11,7 +11,7 @@ Estado              |Descripción                                               
 --------------------|-----------------------------------------------------------------------|
 authorized          |El pago se encuentra pendiente de captura.                             |
 in_process          |El pago se encuentra en proceso de análisis.                           |
-pending             |El usuario no completo el proceso de pago todavía.                     |
+pending             |El usuario no completó el proceso de pago todavía.                     |
 approved            |El pago fue aprobado y acreditado.                                     |
 rejected            |El pago fue rechazado. El usuario podría reintentar el pago.           |
 cancelled           |El pago fue cancelado por una de las partes o el pago expiró.          |
@@ -50,3 +50,15 @@ La estructura de la notificación es la siguiente:
 * `live_mode`: Indica si es una notificación productiva (true) o de sandbox (false).
 * `version`: Versión del Advanced Payment.
 * `data.id`: External Reference del pago.
+
+# Pagos binarios
+
+Se puede definir el pago para que la respuesta sea instantánea o no.
+
+En caso de que sea instantánea, la respuesta del pago será `approved` o `rejected` (sin estados intermedios). Por el contrario, el pago puede quedar en estado pendiente esperando, por ejemplo, la acreditación del pago en el caso de medios offline o pagos con tarjeta de crédito de montos elevados donde el comprador debe llamar a la entidad de la tarjeta para autorizar el pago.
+
+Esta lógica se puede manejar seteando, en la raíz del Advanced Payment, el campo `binary_mode` en `true` para que devuelva la respuesta inmediata y `false` para lo contrario.
+
+```json
+  "binary_mode": true
+```

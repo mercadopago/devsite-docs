@@ -1,6 +1,6 @@
 # Pagos con Medios offline
 
-Se pueden realizar pagos con medios de pago offline o efectivo además de tarjetas de crédito o débito.
+Se pueden realizar pagos con medios de pago offline o en efectivo además de tarjetas de crédito o débito. Por ejemplo, a través de transferencias o lugares de pago físicos.
 
 > NOTE
 > 
@@ -25,7 +25,8 @@ En el `body` del request debes definir el tipo de pago como `ticket` y el métod
 ```
 
 #### Response
-En la respuesta, encontrarás el campo `external_resource_url` con la url que contiene las instrucciones para que el Comprador pueda pagar.
+En la respuesta, encontrarás el campo `external_resource_url` con la url que contiene las instrucciones para que el comprador pueda pagar.
+
 ```json
 {
   "payments": [
