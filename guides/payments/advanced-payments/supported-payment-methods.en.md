@@ -4,8 +4,8 @@ The payments methods that are currently supported are the following:
 
 |Country  |Payment methods                         |Availability                     |
 |---------|----------------------------------------|---------------------------------|
-|Argentina|credit_card, debit_card,ticket          |Payment split, Wallet            |
-|Brazil   |credit_card, ticket                     |Payment split, Wallet            |
+|Argentina|credit_card, debit_card,ticket          |Payment split                    |
+|Brazil   |credit_card, ticket                     |Payment split                    |
 |Mexico   |credit_card                             |Payment split                    |
 |Chile    |credit_card                             |Payment split                    |
 |Colombia |credit_card                             |Payment split                    |

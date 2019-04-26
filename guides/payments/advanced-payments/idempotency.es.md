@@ -2,7 +2,7 @@
 
 En ocasiones se pueden presentar problemas de conexión, caídas de servicios, etc. que podrían interrumpir la comunicación al enviar o recibir los datos para crear un Advanced Payment.
 
-Para asegurar la creación del mismo, se puede reintentar el envío de los mismos datos, pero es posible que el Advanced Payment ya se haya creado y debido a la interrupción no se recibió la respuesta correcta, ocasionando que, al realizar el reintento, se genere un nuevo Advanced Payment.
+Para asegurar la creación del mismo, se puede reintentar el envío de los mismos datos. Es posible que el Advanced Payment ya se haya creado y debido a la interrupción no se recibió la respuesta correcta, ocasionando que, al realizar el reintento, se genere un nuevo Advanced Payment.
 
 Para evitar el duplicado, se puede enviar de una clave única en el header `X-Idempotency-Key` que identifique la creación de un único Advanced Payment no importa cuantas veces se envíen los mismos datos.
 

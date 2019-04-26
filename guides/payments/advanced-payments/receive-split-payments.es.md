@@ -6,8 +6,7 @@
 >
 > Pre-requisitos
 >
-> Contáctate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
-> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card).
+> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card). De no ser el caso, contactate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
 > 
 > Tus vendedores deben contar con una cuenta de Mercado Pago y tienen que [configurar los permisos necesarios para recibir los cobros](https://www.mercadopago.com.ar/developers/es/guides/advanced-payments/sellers-permissions).
 
@@ -102,68 +101,3 @@ La respuesta exitosa será un `HTTP Status 201 Created` y devolverá el advanced
 
 En tu cuenta de Mercado Pago verás acreditado el monto de tus comisiones y cada vendedor verá en su cuenta el saldo actualizado con el monto correspondiente.
 
-### Pagos de Wallet
-
-La modalidad de Wallet Payments permite que un Vendedor procese pagos con el permiso del Pagador para acceder a su billetera y sin necesidad de solicitar datos de tarjeta o selección de medio de pago en cada transacción.
-
-> WARNING
->
-> Pre-requisitos
->
-> Para poder realizar pagos en la modalidad Wallet, debes configurar tu aplicación correctamente siguiendo la [guía de integración](https://www.mercadopago.com.ar/developers/es/guides/advanced-payments/wallet-config-application).
-
-#### Request
-```curl
-curl -X POST \
-    -H 'Accept":"application/json' \
-    -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=SELLER_TOKEN' \
-    -d '{...}'
-```
-
-Dentro del `body` se define un objeto `wallet_payment` que contendrá los datos para el pago:
-* `transaction_amount`: Monto de la transacción.
-* `description`: Descripción de la transacción.
-* `external_reference`: Identificador de la transacción que define el Vendedor.
-* `access_token`: Credenciales del Pagador que se obtiene mediante la solicitud de permisos con MP Connect.
-
-#### Body
-```json
-{
-   "wallet_payment":{
-      "transaction_amount":700.50,
-      "description":"Payment Google",
-      "external_reference":"Pago_123",
-      "access_token":"PAYER_ACCESS_TOKEN"      
-   }
-}
-```
-
-La respuesta exitosa será un `HTTP Status 201 Created` y devolverá el advanced payment completo. De lo contrario devolverá el `HTTP Status` correspondiente al error y un mensaje aclaratorio.
-
-```json
-{
-   "id":90458724,
-   "status":"approved",
-   "wallet_payment":{
-      "transaction_amount":700.50,
-      "description":"Payment Google Pay"
-   },
-   "payments":[
-      {
-         "id":3870106238,
-         "status":"approved",
-         "status_detail":"accredited",
-         "payment_type_id":"account_money",
-         "payment_method_id":"account_money",
-         "transaction_amount":700.50,
-         "description":"Payment Google Pay",
-         "capture":true
-      }
-   ],
-   "payer":{
-      "id":786547
-   },
-   ... 
-}
-```

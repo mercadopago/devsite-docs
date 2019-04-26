@@ -1,6 +1,6 @@
-﻿# Pagamentos com Clientes e Cartões guardados
+﻿# Pagamentos com clientes e cartões guardados
 
-A API de Advanced Payments permite realizar pagamentos com Clientes e Cartões guardados para integradores que trabalhem com este modelo de negócio.
+A API de Advanced Payments permite realizar pagamentos com clientes e cartões guardados para integradores que trabalhem com este modelo de negócio.
 
 > NOTE
 > 
