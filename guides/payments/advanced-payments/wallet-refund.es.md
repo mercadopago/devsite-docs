@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Devolución de pagos
 
 Se utiliza el `id` del Advanced Payment realizando un `PUT` como muestra el ejemplo.

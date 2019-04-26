@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Solicitar permisos
 
 ### Solicitar permiso a sus usuarios para acceder a su billetera de Mercado Pago

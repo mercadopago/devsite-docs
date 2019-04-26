@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Capturando pagos
 
 Una vez que ya se cuenta con el access token del pagador, puede utilizarse para realizar los pagos, siguiendo los ejemplos definidos más abajo.

@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Deferred Capture
 
 * First, you must authorize the payment by sending the `capture` field as `false`.

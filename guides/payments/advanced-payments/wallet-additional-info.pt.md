@@ -1,4 +1,8 @@
-﻿# Informação adicional
+﻿---
+  indexable: false
+---
+
+# Informação adicional
 
 É possível enviar informações que podem melhorar a análise de prevenção à fraudes e a taxa de aprovação. Para isso, é necessário enviar o campo `additional_info` com as informações do pagador e do endereço de entrega. Quanto mais informações forem enviadas, melhor será a taxa de aprovação de pagamentos.
 

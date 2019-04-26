@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Binary Payment
 
 #### Request

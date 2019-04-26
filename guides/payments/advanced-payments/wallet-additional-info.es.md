@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Información adicional
 
 Es posible enviar información que puede mejorar el análisis de prevención de fraude y la tasa de conversión. Para ello es debido enviar el campo `additional_info` con información del pagador y la dirección de envío. Mientras más información se envíe, mejor será la tasa conversión de los pagos.

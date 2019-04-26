@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Cancelar un pago pendiente
 
 Si un pago no es aprobado en el momento, puede crearse en estado `pending`. Esto puede suceder si el pago entra en revisión manual. 

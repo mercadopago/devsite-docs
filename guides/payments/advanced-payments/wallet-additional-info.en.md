@@ -1,4 +1,8 @@
-﻿# Additional Information
+﻿---
+  indexable: false
+---
+
+# Additional Information
 
 It is possible to send information that can improve the fraud prevention analysis and the conversion rate. For this it is necessary to send the `additional_info` field with details of the payer and the shipping address. The more information is sent, the better the conversion rate of payments will be.
 

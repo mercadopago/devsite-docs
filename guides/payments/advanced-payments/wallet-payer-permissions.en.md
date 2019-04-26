@@ -1,4 +1,8 @@
-﻿# Requesting Permissions
+﻿---
+  indexable: false
+---
+
+# Requesting Permissions
 
 ### Request permission to your users to access their Mercado Pago Wallet
 

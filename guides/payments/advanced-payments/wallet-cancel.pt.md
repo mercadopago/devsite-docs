@@ -1,4 +1,8 @@
-﻿# Cancelar um pagamento pendente
+﻿---
+  indexable: false
+---
+
+# Cancelar um pagamento pendente
 
 Se um pagamento não for aprovado no no ato, ele poderá ser criado no estado `pendente`. Isso pode acontecer se o pagamento entrar em revisão manual.
 

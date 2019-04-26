@@ -1,4 +1,8 @@
-﻿# Devolução de pagamentos
+﻿---
+  indexable: false
+---
+
+# Devolução de pagamentos
 
 Se utiliza o `id` do Advanced Payment realizando um `PUT` como mostrado no exemplo.
 

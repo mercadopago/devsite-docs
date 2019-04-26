@@ -1,4 +1,8 @@
-﻿# Configurar Aplicação para processar pagamentos Wallet Payments
+﻿---
+  indexable: false
+---
+
+# Configurar Aplicação para processar pagamentos Wallet Payments
 
 Para processar pagamentos na modalidade Wallet Payments, os seguintes passos devem ser cumpridos.
 

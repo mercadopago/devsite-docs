@@ -1,4 +1,8 @@
-﻿# Set up an Application to Process Payments with Wallet Payments
+﻿---
+  indexable: false
+---
+
+# Set up an Application to Process Payments with Wallet Payments
 
 In order to process payments in Wallet Payments mode, the following steps must be taken.
 

@@ -1,4 +1,8 @@
-﻿# Solicitar permissão
+﻿---
+  indexable: false
+---
+
+# Solicitar permissão
 
 ### Solicitar permissões a seus usuários para acessar sua carteira do Mercado Pago
 

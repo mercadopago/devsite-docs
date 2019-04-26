@@ -1,4 +1,8 @@
-﻿# Capturing Payments
+﻿---
+  indexable: false
+---
+
+# Capturing Payments
 
 Once the payer's access token is available, it can be used to make payments, following the examples defined below.
 

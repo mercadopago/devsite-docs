@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Obtener un pago existente
 
 #### Request

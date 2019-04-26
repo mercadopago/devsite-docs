@@ -1,4 +1,8 @@
-﻿# Payment Refunds
+﻿---
+  indexable: false
+---
+
+# Payment Refunds
 
 The `id` of the Advanced Payment is used making a `PUT` as the example shows.
 

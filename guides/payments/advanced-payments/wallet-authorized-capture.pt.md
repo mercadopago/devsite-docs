@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Captura diferida
 
 * O pagamento deve primeiro ser autorizado enviando o campo `capture` para ` false`.

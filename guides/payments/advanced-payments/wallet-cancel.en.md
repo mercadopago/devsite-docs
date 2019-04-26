@@ -1,4 +1,8 @@
-﻿# Cancel a pending payment
+﻿---
+  indexable: false
+---
+
+# Cancel a pending payment
 
 If a payment is not instantly approved, it can be created in the `pending` state. This can happen if the payment goes into manual review.
 
