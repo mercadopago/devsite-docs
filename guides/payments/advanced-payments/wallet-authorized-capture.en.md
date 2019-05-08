@@ -5,7 +5,7 @@
 # Deferred Capture
 
 * First, you must authorize the payment by sending the `capture` field as `false`.
-* Then the obtained Advance Payment `id` is used to capture a `PUT`.
+* Then the obtained Advanced Payment `id` is used to capture a `PUT`.
 
 #### Request
 ```curl
