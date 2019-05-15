@@ -328,7 +328,7 @@ properties:
           en: 'External financial institution identifier (e.g.: company id for atm)'
           es: 'Identificador de la institución financiera externa (ej.: company id
             para atm)'
-          pt: 'Identificação da instituição financeira externa (por exemplo: company
+          pt: 'Identificação da instituição financeira externa (por ex: company
             id para atm)'
     - net_received_amount:
         type: Float
