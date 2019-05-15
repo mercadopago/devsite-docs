@@ -126,9 +126,9 @@ properties:
     - email:
         type: String
         description:
-          en: Email.
-          es: Email.
-          pt: E-mail.
+          en: Email. (Required)
+          es: Email. (Obligatorio)
+          pt: E-mail. (Obrigatório)
     - identification:
         type: Object
         description:
@@ -288,9 +288,9 @@ properties:
 - transaction_amount:
     type: Float
     description:
-      en: Product cost.
-      es: Costo del producto.
-      pt: Custo do produto.
+      en: Product cost. (Required)
+      es: Costo del producto. (Obligatorio)
+      pt: Custo do produto. (Obrigatório)
 - transaction_amount_refunded:
     type: Float
     description:
@@ -516,9 +516,9 @@ properties:
 - payment_method_id:
     type: String
     description:
-      en: Payment method chosen to do the payment.
-      es: Medio de pago elegido para hacer el pago.
-      pt: Meio de pagamento escolhido para fazer o pagamento.
+      en: Payment method chosen to do the payment. (Required)
+      es: Medio de pago elegido para hacer el pago. (Obligatorio)
+      pt: Meio de pagamento escolhido para fazer o pagamento. (Obrigatório)
 - issuer_id:
     type: String
     description:
@@ -563,9 +563,9 @@ properties:
 - token:
     type: String
     description:
-      en: Card token ID.
-      es: Identificador de card token.
-      pt: Identificador de token card.
+      en: Card token ID. (Required for credit card)
+      es: Identificador de card token. (Obligatorio para tarjeta de crédito)
+      pt: Identificador de token card. (Obrigatório para cartão de crédito)
 - card:
     type: Object
     description:
@@ -656,9 +656,9 @@ properties:
 - installments:
     type: Integer
     description:
-      en: Selected quantity of installments.
-      es: Cantidad seleccionada de cuotas.
-      pt: Quantidade selecionada de cotas.
+      en: Selected quantity of installments. (Required)
+      es: Cantidad seleccionada de cuotas. (Obligatorio)
+      pt: Quantidade selecionada de cotas. (Obrigatório)
 - notification_url:
     type: String
     description:
