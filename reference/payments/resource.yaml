@@ -652,7 +652,7 @@ properties:
     description:
       en: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
       es: 'Cómo aparecerá el pago en el resumen de tarjeta (ej.: MERCADOPAGO).'
-      pt: 'Como aparecerá o pagamento no extrato do cartão (exemplo: o MERCADOPAGO).'
+      pt: 'Como aparecerá o pagamento no extrato do cartão (ex: o MERCADOPAGO).'
 - installments:
     type: Integer
     description:
