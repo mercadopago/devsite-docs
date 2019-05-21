@@ -14,7 +14,7 @@ O modo de agregador significa que cada comerciante no marketplace tem sua própr
 ## Mapa de Estados
 Um Marketplace pode ser informado sobre as alterações no status de um Advanced Payment se ele se inscrever no tópico "Split de pagos" em [Webhooks](https://www.mercadopago.com/mlb/account/webhooks), para os pagamentos de carrinho do off.
 
-![Status map](/images/split-de-pagos-status-map.png)
+![Status map](/images/advanced-payments/advanced-payments-status-map.png)
 
 Nota: As linhas tracejadas marcam uma alteração de estado interno.
 
