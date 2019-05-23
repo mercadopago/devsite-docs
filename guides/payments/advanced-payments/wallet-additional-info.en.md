@@ -19,7 +19,7 @@ curl -X POST \
 {
    "wallet_payment":{
       "transaction_amount":700.50,
-      "description":"Payment Google",
+      "description":"Payment",
       "external_reference":"Pago_123",
       "access_token":"PAYER_ACCESS_TOKEN"      
    },

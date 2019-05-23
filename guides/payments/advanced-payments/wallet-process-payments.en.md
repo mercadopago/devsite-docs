@@ -22,7 +22,7 @@ curl -X POST \
 {
    "wallet_payment":{
       "transaction_amount":700.50,
-      "description":"Payment Google",
+      "description":"Payment",
       "external_reference":"Pago_123",
       "access_token":"PAYER_ACCESS_TOKEN"      
    }
@@ -37,7 +37,7 @@ curl -X POST \
    "status":"approved",
    "wallet_payment":{
       "transaction_amount":700.50,
-      "description":"Payment Google Pay"
+      "description":"Payment"
    },
    "payments":[
       {
@@ -47,7 +47,7 @@ curl -X POST \
          "payment_type_id":"account_money",
          "payment_method_id":"account_money",
          "transaction_amount":700.50,
-         "description":"Payment Google Pay",
+         "description":"Payment",
          "capture":true
       }
    ],
@@ -66,7 +66,7 @@ curl -X POST \
    "status":"rejected",
    "wallet_payment":{
       "transaction_amount":700.50,
-      "description":"Payment Google Pay"
+      "description":"Payment"
    },
    "payments":[
       {
@@ -76,7 +76,7 @@ curl -X POST \
          "payment_type_id":"account_money",
          "payment_method_id":"account_money",
          "transaction_amount":700.50,
-         "description":"Payment Google Pay",
+         "description":"Payment",
          "capture":true
       }
    ],

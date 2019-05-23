@@ -22,7 +22,7 @@ curl -X PUT \
    "status":"refunded",
    "wallet_payment":{
       "transaction_amount":700.50,
-      "description":"Payment Google",
+      "description":"Payment",
       "external_reference":"Pago_123"
    },
    "payments":[
@@ -34,7 +34,7 @@ curl -X PUT \
          "payment_method_id":"account_money",
          "transaction_amount":700.50,
          "installments":1,
-         "description":"Payment Google",
+         "description":"Payment",
          "capture":true,
          "external_reference":"Pago_123"
       }
