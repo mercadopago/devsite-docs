@@ -60,8 +60,8 @@ external_reference          |ID generado por el marketplace que identifica al Ad
 
 Además está la posibilidad de exportar las activities desde el listado de tu cuenta de Mercado Pago con el link `Exportar`.
 
-![export_activities](/images/advanced-payments/export_activities.png)
+![export_activities](/images/advanced-payments/export_activities_es.png)
 
 Puedes seleccionar los filtros que necesites y elegir el formato CSV o XLS para realizar la conciliación de forma manual.
 
-![export_activities_2](/images/advanced-payments/export_activities_2.png)
+![export_activities_2](/images/advanced-payments/export_activities_2_es.png)

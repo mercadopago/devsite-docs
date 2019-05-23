@@ -88,18 +88,18 @@ curl -X POST \
 ```
 
 #### Response Failed
-`HTTP Status 4xx/5xx`
+`HTTP Status 4xx|5xx`
 ```json
 {
-   "status": "4xx/5xx",
-   "error":  "error",
-   "message": "Invalid access token.",
-   "cause": [
+  "status": "4xx|5xx",
+  "error": "error",
+  "message": "Invalid access token.",
+  "cause": [
     {
-      "code":"4xx|YY or  5xx|YY",
-      "message": "Invalid access token",
+      "code": "4xx|5xx",
+      "message": "Invalid access token.",
       "data": "{}"
     }
-   ]
+  ]
 }
 ```
