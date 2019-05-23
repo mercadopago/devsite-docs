@@ -254,17 +254,17 @@ errors:
   - '404001':
       description:
         en:
-        es: No se encontró el Disbusement not found.
+        es: No se encontró el Disbusement.
         pt:
   - '404002':
       description:
         en:
-        es: No se encontró el Advanced Payment not found.
+        es: No se encontró el Advanced Payment.
         pt:
   - '404003':
       description:
         en:
-        es: No se encontró el Payer not found.
+        es: No se encontró el Payer.
         pt:
 - 406 NOT_ACCEPTABLE:
   - '406001':

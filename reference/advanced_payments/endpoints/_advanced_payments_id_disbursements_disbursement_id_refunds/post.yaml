@@ -26,37 +26,37 @@ errors:
         en:
         es: Fecha de liberación inválida para el Disbursement.
         pt:
-  - 400013':
+  - '400013':
       description:
         en:
         es: Email inválido.
         pt:
-  - 400014':
+  - '400014':
       description:
         en:
         es: Cantidad de pagos inválidos.
         pt:
-  - 400015':
+  - '400015':
       description:
         en:
         es: ID del Payer es requerido para pagos con dinero en cuenta.
         pt:
-  - 400016':
+  - '400016':
       description:
         en:
         es: Tipo de pago inválido.
         pt:
-  - 400017':
+  - '400017':
       description:
         en:
         es: El monto de la transacción es requerido.
         pt:
-  - 400018':
+  - '400018':
       description:
         en:
         es: Monto inválido.
         pt:
-  - 400019':
+  - '400019':
       description:
         en:
         es: El método de pago es requerido.
@@ -250,17 +250,17 @@ errors:
   - '404001':
       description:
         en:
-        es: No se encontró el Disbusement not found.
+        es: No se encontró el Disbusement.
         pt:
   - '404002':
       description:
         en:
-        es: No se encontró el Advanced Payment not found.
+        es: No se encontró el Advanced Payment.
         pt:
   - '404003':
       description:
         en:
-        es: No se encontró el Payer not found.
+        es: No se encontró el Payer.
         pt:
 - 406 NOT_ACCEPTABLE:
   - '406001':
