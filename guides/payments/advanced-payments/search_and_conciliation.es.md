@@ -6,7 +6,7 @@ Es posible buscar por medio de la API de Advanced Payments.
 
 #### Request
 ```curl
-curl -X POST \
+curl -X GET \
     -H 'Accept":"application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&limit=10&offset=0'
