@@ -285,6 +285,18 @@ properties:
               en: Zip code.
               es: Código postal.
               pt: Código postal.
+        - state_name:
+          type: String
+          description:
+              en: State.
+              es: Provincia.
+              pt: Província.
+        - city_name:
+            type: String
+            description:
+              en: City Name.
+              es: Ciudad.
+              pt: Cidade.
         - street_name:
             type: String(256)
             description:

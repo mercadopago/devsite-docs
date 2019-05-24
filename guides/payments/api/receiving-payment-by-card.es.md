@@ -601,6 +601,8 @@ payment.Save();
                 "number": "4444-4444"
             },
             "address": {
+                "state_name": "State",
+                "city_name": "City",
                 "street_name": "Street",
                 "street_number": 123,
                 "zip_code": "5700"

@@ -321,6 +321,8 @@ To summarize all of the above, the following JSON shows all the data that can be
 	"shipments": {
 		"receiver_address": {
 			"zip_code": "5700",
+			"state_name": "State",
+			"city_name": "City",
 			"street_number": 123,
 			"street_name": "Street",
 			"floor": 4,
