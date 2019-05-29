@@ -67,7 +67,7 @@ Puedes devolver un pago dentro de los **360 días** desde su acreditación.
 ----[mlb]----
 Puedes devolver un pago dentro de los **120 días** desde su acreditación.
 ------------
-----[mlm,mlc,mlu,mpe,mco]----
+----[mlm, mlc, mlu, mpe, mco]----
 Puedes devolver un pago dentro de los **180 días** desde su acreditación.
 ------------
 

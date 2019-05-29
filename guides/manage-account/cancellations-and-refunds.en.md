@@ -67,7 +67,7 @@ You can refund a payment within **360 days** after it was approved.
 ----[mlb]----
 You can refund a payment within **120 days** after it was approved.
 ------------
-----[mlm,mlc,mlu,mpe,mco]----
+----[mlm, mlc, mlu, mpe, mco]----
 You can refund a payment within **180 days** after it was approved.
 ------------
 
