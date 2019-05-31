@@ -1,7 +1,6 @@
 ---
   sites_supported:
       - mco
-      - global
 ---
 
 # Consideraciones IVA Colombia

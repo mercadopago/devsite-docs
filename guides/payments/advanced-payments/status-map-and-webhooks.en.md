@@ -1,4 +1,4 @@
-﻿# Status Map
+﻿# Status map
 
 An Advanced Payment can take different states.
 A Marketplace can be informed of the status changes of an Advanced Payment if you subscribe to the 'Payment Split' topic in [Webhooks](https://www.mercadopago.com/mla/account/webhooks), for off cart payments.
