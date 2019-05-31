@@ -1,4 +1,4 @@
-﻿# Search and Reconciliation
+﻿# Search and reconciliation
 
 An important part of the generation of payments is the reconciliation. The API allows you to search your `advanced payments` in order to reconcile all the transactions that were made through your Marketplace.
 

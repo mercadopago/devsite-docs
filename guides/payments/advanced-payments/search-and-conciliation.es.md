@@ -1,4 +1,4 @@
-# Búsqueda y Conciliación
+# Búsqueda y conciliación
 
 Una parte importante de la generación de pagos es la conciliación. La API permite realizar búsquedas de tus `advanced payments` para poder conciliar todas las operaciones que se hicieron a través de tu Marketplace.
 
