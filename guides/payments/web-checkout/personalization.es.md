@@ -324,8 +324,6 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
 	"shipments": {
 		"receiver_address": {
 			"zip_code": "5700",
-			"state_name": "State",
-			"city_name": "City",
 			"street_number": 123,
 			"street_name": "Street",
 			"floor": 4,
