@@ -593,6 +593,8 @@ payment.Save();
         "shipments": {
             "receiver_address": {
                 "zip_code": "5700",
+                "state_name": "State",
+                "city_name": "City",
                 "street_name": "Street",
                 "street_number": 123,
                 "floor": 4,

@@ -531,7 +531,19 @@ properties:
                 description:
                   en: 
                   es: Zip code.
-                  pt: 
+                  pt:
+            - state_name:
+                type: String
+                description:
+                  en:
+                  es: Provincia.
+                  pt:
+            - city_name:
+                type: String
+                description:
+                  en:
+                  es: Ciudad.
+                  pt:
             - street_name:
                 type: String
                 description:
