@@ -308,18 +308,16 @@ var payment_data = {
   transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
   token: 'ff8080814c11e237014c1ff593b57b4d'
   description: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  installments: 1,
-  payment_method_id: 'visa',
+  installments: 3,
+  payment_method_id: 'amex',
+  issuer_id: 310,
   payer: {
     email: '[FAKER][INTERNET][FREE_EMAIL]'
   }
 };
-
 // Save and posting the payment
-mercadopago.payment.save(payment).then(function (data) {
-  // ...    
-  // Print the payment status
-  Console.log(payment.status);
+mercadopago.payment.save(payment_data).then(function (payment) {
+  // ...
 }).catch(function (error) {
   // ...
 });
@@ -601,6 +599,8 @@ payment.Save();
                 "number": "4444-4444"
             },
             "address": {
+                "state_name": "State",
+                "city_name": "City",
                 "street_name": "Street",
                 "street_number": 123,
                 "zip_code": "5700"
