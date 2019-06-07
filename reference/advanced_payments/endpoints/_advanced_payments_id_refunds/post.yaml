@@ -248,7 +248,7 @@ errors:
   - '404001':
       description:
         en:
-        es: No se encontró el Disbusement.
+        es: No se encontró el Disbursement.
         pt:
   - '404002':
       description:
