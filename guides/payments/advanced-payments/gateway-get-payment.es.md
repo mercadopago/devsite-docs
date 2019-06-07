@@ -1,3 +1,9 @@
+---
+sites_supported:
+- mla
+- mco
+---
+
 # Obtener un pago existente
 
 #### Request

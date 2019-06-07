@@ -1,3 +1,9 @@
+---
+sites_supported:
+- mla
+- mco
+---
+
 # Procesando pagos en modo Gateway
 
 > WARNING

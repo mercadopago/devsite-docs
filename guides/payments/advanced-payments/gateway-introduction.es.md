@@ -1,3 +1,9 @@
+---
+sites_supported:
+- mla
+- mco
+---
+
 # Pagos en modo Gateway en Advanced Payments 
 
 ## Introducción
