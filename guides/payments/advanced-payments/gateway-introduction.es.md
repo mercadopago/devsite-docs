@@ -5,7 +5,9 @@
 La modalidad de `Gateway` en Advanced Payments permite realizar múltiples pagos con distintos números de comercio propios y un mismo card token. Esto implica que el comprador debe ingresar los datos de su tarjeta una única vez.
 
 Para poder realizar pagos en esta modalidad, debes cargar tus números de comercios, acuerdos y medios de pago asociados desde la configuración de tu cuenta de Mercado Pago. Los mismos serán utilizados en la integración con la API.
+----[mco]----
 En el caso de que tu cuenta de Mercado Pago sea de Colombia, contáctate con tu ejecutivo de cuentas para poder cargar tus números de comercios, acuerdos y medios de pago asociados.
+------------
 
 ## Configurar Aplicación para procesar pagos en modo Gateway
 
