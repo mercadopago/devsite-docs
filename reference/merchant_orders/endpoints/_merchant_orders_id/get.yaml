@@ -1,44 +1,44 @@
 ---
 resource: merchant_orders.raml
 use:
-  - id
-  - status
-  - external_reference
-  - preference_id
-  - payments
-  - shipments
-  - collector
-  - marketplace
-  - notification_url
-  - date_created
-  - last_updated
-  - sponsor_id
-  - shipping_cost
-  - total_amount
-  - site_id
-  - paid_amount
-  - refunded_amount
-  - product_id
-  - payer
-  - items
-  - cancelled
-  - additional_info
-  - application_id
+- id
+- status
+- external_reference
+- preference_id
+- payments
+- shipments
+- collector
+- marketplace
+- notification_url
+- date_created
+- last_updated
+- sponsor_id
+- shipping_cost
+- total_amount
+- site_id
+- paid_amount
+- refunded_amount
+- product_id
+- payer
+- items
+- cancelled
+- additional_info
+- application_id
 errors:
   - 400 BAD_REQUEST:
-  - invalid_format:
-      description:
-        en: invalid id.
-        es: invalid id.
-        pt: invalid id.
-  - invalid_format:
-      description:
-        en: invalid caller.id.
-        es: invalid caller.id.
-        pt: invalid caller.id.
+    - invalid_format:
+        description:
+          en: invalid id.
+          es: invalid id.
+          pt: invalid id.
+    - invalid_format:
+        description:
+          en: invalid caller.id.
+          es: invalid caller.id.
+          pt: invalid caller.id.
   - 401 UNAUTHORIZED:
-  - invalid_token:
-      description:
-        en: access denied.
-        es: access denied.
-        pt: access denied.
+    - invalid_token:
+        description:
+          en: access denied.
+          es: access denied.
+          pt: access denied.
