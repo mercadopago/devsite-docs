@@ -757,9 +757,3 @@ properties:
       en: Total amount of the order.
       es: Costo total de la orden.
       pt: Total amount of the order.
-- product_id:
-    type: String
-    description:
-      en: Product Identifier
-      es: Identificador del producto
-      pt: Identificação do produto.
