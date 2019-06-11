@@ -1,4 +1,12 @@
-﻿# Flexible release
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Flexible release
 
 At the time of the integration, a range of days is set in which the Sellers’ money can be released.
 

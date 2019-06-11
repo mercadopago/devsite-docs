@@ -1,4 +1,12 @@
-﻿# Mapa de estados
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Mapa de estados
 
 Um Advanced Payment pode ter diferentes estados.
 Um Marketplace pode ser informado sobre as mudanças de status de um advanced payment se você configurar o tópico `Split de Pagamentos` em [Webhooks](https://www.mercadopago.com/mlb/account/webhooks), para pagamentos off de carrinho.

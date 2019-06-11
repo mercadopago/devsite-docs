@@ -1,4 +1,12 @@
-﻿# Capture an Advanced Payment
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Capture an Advanced Payment
 
 The Advanced Payment API allows you to make payments of the [Authorization and Capture](https://www.mercadopago.com.br/developers/en/guides/payments/api/authorization-and-capture) type. For these cases, an Advanced Payment must be created with the `capture` field as `false`, which will reserve the amount until it is captured.
 

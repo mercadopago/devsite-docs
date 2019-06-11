@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
 # Pagos con clientes y tarjetas guardadas
 
 La API de Advanced Payments permite realizar pagos con clientes y tarjetas guardadas para integradores que trabajen con este modelo de negocio.

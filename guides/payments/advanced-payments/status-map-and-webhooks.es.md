@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
 # Mapa de estados
 
 Un Advanced Payment puede tomar distintos estados.

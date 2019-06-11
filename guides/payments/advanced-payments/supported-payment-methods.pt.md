@@ -1,4 +1,12 @@
-﻿# Meios de pagamento e Disponibilidade
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Meios de pagamento e Disponibilidade
  
 Atualmente os meios de pagamento aceitos são os seguintes:
 
