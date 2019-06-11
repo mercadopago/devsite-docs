@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
 # Advanced Payments
 
 > WARNING

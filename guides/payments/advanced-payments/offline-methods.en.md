@@ -1,4 +1,12 @@
-﻿# Payments with Offline Methods
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Payments with Offline Methods
 
 You can make payments with offline or cash payment methods in addition to credit and debit cards.
 

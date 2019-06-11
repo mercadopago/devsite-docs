@@ -1,4 +1,12 @@
-﻿# Quick Start
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Quick Start
 
 ### Marketplace payments with split
 

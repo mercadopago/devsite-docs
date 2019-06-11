@@ -1,4 +1,12 @@
-﻿# Liberação flexível
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Liberação flexível
 
 No momento da integração deve-se configurar um intervalo de dias no qual o dinheiro dos Vendedores poderá ser liberado.
 

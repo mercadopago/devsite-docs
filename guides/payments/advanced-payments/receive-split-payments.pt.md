@@ -1,4 +1,12 @@
-﻿# Início rápido
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Início rápido
 
 ### Pagamentos de Marketplace com split
 

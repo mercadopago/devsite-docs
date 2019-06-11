@@ -1,4 +1,12 @@
-﻿# Reembolso de um Advanced Payment
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Reembolso de um Advanced Payment
 
 É possível fazer o reembolso do Advanced Payment completo ou de um `disbursement` individual.
 

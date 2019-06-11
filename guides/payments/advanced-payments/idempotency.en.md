@@ -1,4 +1,12 @@
-﻿# Idempotency
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Idempotency
 
 Sometimes connection problems, service drops, etc. may occur, and this could interrupt the communication when sending or receiving data to create an Advanced Payment.
 

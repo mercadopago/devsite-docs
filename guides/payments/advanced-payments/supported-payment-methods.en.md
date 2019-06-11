@@ -1,4 +1,12 @@
-﻿# Payment Methods and Availability
+﻿---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
+# Payment Methods and Availability
 
 The payments methods that are currently supported are the following:
 
