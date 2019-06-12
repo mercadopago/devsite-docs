@@ -18,7 +18,6 @@ use:
 - site_id
 - paid_amount
 - refunded_amount
-- product_id
 - payer
 - items
 - cancelled
