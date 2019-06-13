@@ -331,7 +331,7 @@ properties:
     type: Boolean
     description:
       en: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
-      es: Cuando está activado el pago sólo puede resultar aprobado o rechazado. De lo contrario, el pago puede resultar pendiente.
+      es: Cuando está activado, el pago sólo puede resultar aprobado o rechazado. De lo contrario, el pago puede resultar pendiente.
       pt: Quando o pagamento está ativado, só pode ser aprovado ou rejeitado. Caso contrário, o pagamento pode ficar pendente.
 - date_created:
     type: Date(ISO_8601)
