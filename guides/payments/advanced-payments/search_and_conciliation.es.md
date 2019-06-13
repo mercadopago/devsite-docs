@@ -64,6 +64,8 @@ Estado                       |Ejemplo de Valores Esperados                      
 range                        |**date_created**: Fecha de creación de transacciones, **date_last_updated**: Fecha última actualización de la transacción |
 begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                                         |
 end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                                         |                                                                        
+
+
 Para filtrar una consulta por fecha es necesario utilizar la combinación de los tres estados, en el campo range se debe informar **una de las dos opciones posibles marcadas en negrita**, el campo end_date siempre debe ser más reciente temporalmente que el begin_date, el **la zona horaria** al final debe ser preservada, el resto es editable según la expresión: AÑO-MES-DÍA "T" HORA-MINUTO-SEGUNDO-MILÉSIMO.
 
 ### Exportar Activities

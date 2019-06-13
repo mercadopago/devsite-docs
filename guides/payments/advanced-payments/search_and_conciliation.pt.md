@@ -64,6 +64,8 @@ range                        |**date_created**: Data criação transação, **da
 begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                     |
 end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                     | 
                                                                      
+
+
 Para filtrar uma consulta por data é preciso utilizar a combinação dos três estados, no campo range deve se informar **uma das duas opções possíveis marcadas em negrito**, o campo **end_date** precisa sempre ser mais recente temporalmente que o **begin_date**, o **fuso horário** ao final deve ser preservado, o restante é editável conforme expressão: ANO-MÊS-DIA”T”HORA-MINUTO-SEGUNDO-MILÉSIMO.
 
 ### Exportar Activities
