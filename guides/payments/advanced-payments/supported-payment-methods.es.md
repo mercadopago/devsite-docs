@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Medios de pago y Disponibilidad
 
 Actualmente los medios de pagos soportados son los siguientes:

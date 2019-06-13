@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Obtenção de permissões e dados de vendedores
 
 O Marketplace que deseja se integrar, deve solicitar permissões a seus Vendedores para poder operar e realizar pagamentos em seu nome. Para isso, siga os passos de [Mercado Pago Connect](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/create-marketplace).

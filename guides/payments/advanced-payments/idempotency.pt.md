@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Idempotência
 
 Algumas ocasiões podem apresentar problemas de conexão, quedas de serviços, etc. que poderiam interromper a comunicação ao enviar ou receber os dados para criar um Advanced Payment.

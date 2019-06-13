@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Canceling an Advanced Payment
 
 An Advanced Payment that has been left in `pending` state may be canceled. These cases can be given for payments with offline methods or any payment by credit card that has entered the manual review flow. 

@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Mapa de estados
 
 Un Advanced Payment puede tomar distintos estados.
