@@ -1,3 +1,11 @@
+---
+sites_supported:
+    - mla
+    - mlb
+    - mlm
+    - mlc
+    - mpe
+---
 # Personalização
 
 Você pode configurar ações diferentes ao receber pagamentos:
