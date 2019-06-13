@@ -211,7 +211,6 @@ function sdkResponseHandler(status, response) {
 };
 ```
 
-É possível fazer o download do exemplo completo [aqui](#).
 
 ## Receba um pagamento com cartão
 
