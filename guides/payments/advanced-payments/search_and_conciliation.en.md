@@ -63,8 +63,7 @@ Status                       |Expected Values ​​Example
 -----------------------------|------------------------------------------------------------------------------------------------------
 range                        |**date_created**: Transaction creation date, **date_last_updated**: Transaction last update date      
 begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                     
-end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                      
-                                                                      
+end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                     
 
 To filter a query by date you must use the combination of the three states, in the range field one must inform **one of the two possible options in bold**, the end_date field must always be more recent than begin_date, **timezone ** at the end must be preserved, the remainder is editable as follows: YEAR-MONTH-DAY "T" HOUR-MINUTE-SECOND-MILLESIMAL.
 
