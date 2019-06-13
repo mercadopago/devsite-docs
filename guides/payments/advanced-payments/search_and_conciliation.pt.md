@@ -61,7 +61,7 @@ external_reference           |ID gerado pelo marketplace que identifica ao Advan
 Estado                       |Exemplo de Valores Esperados                                                                          
 -----------------------------|------------------------------------------------------------------------------------------------------
 range                        |**date_created**: Data criação transação 
-     ˆ                       | **date_last_updated**: Data última atualização da transação 
+                              **date_last_updated**: Data última atualização da transação 
 begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                     
 end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                     
 
