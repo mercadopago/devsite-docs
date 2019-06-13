@@ -4,7 +4,7 @@ Esta libreria provee una set de clases y metodos para interactuar con el API de 
 
 ### Versiones de PHP Soportadas:
 
-El SDK soporta PHP 5 o mayor
+El SDK soporta PHP 5.5.0 o mayor
 
 ### Instalación 
 
