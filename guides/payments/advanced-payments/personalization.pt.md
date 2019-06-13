@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Personalização
 
 Você pode configurar ações diferentes ao receber pagamentos:

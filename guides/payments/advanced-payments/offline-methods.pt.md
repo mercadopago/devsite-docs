@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Pagamentos com Meios offline
 
 É possível realizar pagamentos com meios de pagamento off-line, além de cartões de crédito.

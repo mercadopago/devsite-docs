@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Início rápido
 
 ### Pagamentos de Marketplace com split

@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Status map
 
 An Advanced Payment can take different states.

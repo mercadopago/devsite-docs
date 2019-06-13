@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Payments with saved customers and cards
 
 The Advanced Payments API allows you to make payments with Customers and Saved Cards for integrators that work with this business model.

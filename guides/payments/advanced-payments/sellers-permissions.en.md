@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Obtaining Permissions and Data from the Sellers
 
 The Marketplace that you wish to integrate, must request permits from its Sellers to be able to operate and make payments on their behalf. For this, you must follow the steps of [Mercado Pago Connect](https://www.mercadopago.com.br/developers/en/guides/marketplace/api/create-marketplace).

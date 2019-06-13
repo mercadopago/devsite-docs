@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Pagos con Medios offline
 
 Se pueden realizar pagos con medios de pago offline o en efectivo además de tarjetas de crédito o débito. Por ejemplo, a través de transferencias o lugares de pago físicos.

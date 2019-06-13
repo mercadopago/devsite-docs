@@ -6,6 +6,7 @@ sites_supported:
     - mlc
     - mpe
 ---
+
 # Payment Methods and Availability
 
 The payments methods that are currently supported are the following:
