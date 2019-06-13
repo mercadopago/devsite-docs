@@ -43,27 +43,27 @@ Lo cual retorna los resultados en una estructura que muestra, además, la cantid
 
 #### Filtros de búsqueda
 
-Estado                       |Descripción                                                        |
------------------------------|-------------------------------------------------------------------|
-date_created                 |Fecha de creación del Advanced Payment.                            |
-status                       |Estado del Advanced Payment.                                       |
-payments.id                  |ID del pago del comprador.                                         |
-payments.payment_method_id   |Método del pago.                                                   |
-payments.external_reference  |ID generado para este pago de entrada en particular.               |
-payments.transaction_amount  |Monto del pago.                                                    |
-payer.id                     |ID del comprador.                                                  |
-payer.email                  |Email del comprador.                                               |
-disbursements.collector_id   |ID del vendedor.                                                   |
-external_reference           |ID generado por el marketplace que identifica al Advanced Payment. |
+Estado                       |Descripción                                                        
+-----------------------------|-------------------------------------------------------------------
+date_created                 |Fecha de creación del Advanced Payment.                            
+status                       |Estado del Advanced Payment.                                       
+payments.id                  |ID del pago del comprador.                                         
+payments.payment_method_id   |Método del pago.                                                   
+payments.external_reference  |ID generado para este pago de entrada en particular.               
+payments.transaction_amount  |Monto del pago.                                                    
+payer.id                     |ID del comprador.                                                  
+payer.email                  |Email del comprador.                                               
+disbursements.collector_id   |ID del vendedor.                                                   
+external_reference           |ID generado por el marketplace que identifica al Advanced Payment. 
 
 
 ### Filtrar búsqueda por fecha
 
-Estado                       |Ejemplo de Valores Esperados                                                                                              |
------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-range                        |**date_created**: Fecha de creación de transacciones, **date_last_updated**: Fecha última actualización de la transacción |
-begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                                         |
-end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                                         |                                                                        
+Estado                       |Ejemplo de Valores Esperados                                                                                              
+-----------------------------|--------------------------------------------------------------------------------------------------------------------------
+range                        |**date_created**: Fecha de creación de transacciones, **date_last_updated**: Fecha última actualización de la transacción 
+begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                                         
+end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                                                                                                                 
 
 Para filtrar una consulta por fecha es necesario utilizar la combinación de los tres estados, en el campo range se debe informar **una de las dos opciones posibles marcadas en negrita**, el campo end_date siempre debe ser más reciente temporalmente que el begin_date, el **la zona horaria** al final debe ser preservada, el resto es editable según la expresión: AÑO-MES-DÍA "T" HORA-MINUTO-SEGUNDO-MILÉSIMO.
 
