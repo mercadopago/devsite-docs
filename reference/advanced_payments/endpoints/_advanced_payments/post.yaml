@@ -119,8 +119,8 @@ errors:
       description:
         en: The installments are required.
         es: Las cuotas son requeridas.
-        pt:
-  - '400031': As parcelas são obrigatórias.
+        pt: As parcelas são obrigatórias.
+  - '400031':
       description:
         en: The amount of disbursements is required.
         es: El monto de los desembolsos es requerido.
