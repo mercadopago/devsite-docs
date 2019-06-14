@@ -253,7 +253,7 @@ Uruguay: Oca.
 
 ```
 var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.6.min.js";
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
 dmlscript.onload = () => {
     new DMLSDK({
         publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
