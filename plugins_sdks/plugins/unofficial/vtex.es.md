@@ -529,7 +529,7 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 
 4. Ingresar en código.
 5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
+6. Copiar y pegar el siguiente código, reemplazando el campo publicKey según corresponda:
 
 ```
 var dmlscript = document.createElement("script");
