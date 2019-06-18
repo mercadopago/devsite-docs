@@ -38,13 +38,18 @@ Notificaremos os seguintes eventos:
 | `subscription`       | `application.authorized`   | Vinculação de conta          |
 | `invoice`            | `application.authorized`   | Vinculação de conta          |
 
-Se a aplicação não estiver disponível ou demorar para responder, o Mercado Pago irá fazer tentativas de notificação nos seguintes intervalos:
+O Mercado Pago enviará notificações com o seguinte cronograma de novas tentativas e prazos para sua confirmação. Você deve retornar um HTTP STATUS 200 (OK) ou 201 (CREATED) antes do final do prazo correspondente. Caso contrário, será entendido que você não o recebeu corretamente e você será notificado novamente.
 
-1. Tentativa após 5 minutos.
-2. Tentativa após 45 minutos.
-3. Tentativa após 6 horas.
-4. Tentativa após 2 dias.
-5. Tentativa após 4 dias.
+Se precisar de mais informações, confira a seção [“O que devo fazer quando receber uma notificação?”.](#bookmark_o_que_devo_fazer_ao_receber_uma_notificação?)
+
+| Evento             | Prazo após o primeiro envio | Tempo de espera de confirmação |
+|--------------------|-----------------------------|--------------------------------|
+| Envio              | -                           | 22 segundos                    |
+| Primeira tentativa | 5 minutos                   | 5 segundos                     |
+| Segunda tentativa  | 45 minutos                  | 5 segundos                     |
+| Terceira tentativa | 6 horas                     | 5 segundos                     |
+| Quarta tentativa   | 2 dias                      | 5 segundos                     |
+| Quinta tentativa   | 4 dias                      | 5 segundos                     |
 
 A notificação tem o seguinte formato:
 
@@ -70,21 +75,30 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 
 ## O que devo fazer ao receber uma notificação?
 
-Quando receber uma notificação na sua plataforma, o Mercado Pago espera uma resposta para validar que a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
+Quando você recebe uma notificação na sua plataforma, o Mercado Pago aguarda uma resposta para validar que você a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
 
-Lembre-se que esta comunicação é feita exclusivamente entre os servidores do Mercado Pago e o seu servidor, de modo que não haverá um usuário físico vendo nenhum tipo de resultado.
+É recomendável que você responda à notificação antes de executar a lógica de negócios ou antes de acessar recursos externos para não exceder os [prazos de resposta estimados](#bookmark_eventos).
 
-Depois disso, você poderá obter a informação completa do recurso notificado acessando a API correspondente em `https://api.mercadopago.com/`:
+Essa comunicação é exclusiva entre os servidores do Mercado Pago e o seu, portanto, não haverá usuário físico vendo nenhum tipo de resultado.
+
+Depois disso, você deve obter as informações completas do recurso notificado acessando o terminal correspondente da API:
+
 
 Tipo         | URL                                                  | Documentação
 ------------ | -----------------------------------------------------| --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/invoices/_invoices_id/get/)
+payment      | https://api.mercadopago.com/v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
+plan         | https://api.mercadopago.com/v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
+subscription | https://api.mercadopago.com/v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
+invoice      | https://api.mercadopago.com/v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/invoices/_invoices_id/get/)
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado.
+
+> WARNING
+>
+> Importante
+>
+> Lembre-se de que, se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
 
 
 ### Implemente o receptor de notificações usando o seguinte código como exemplo:
@@ -108,6 +122,6 @@ Com essas informações, você poderá realizar as atualizações necessárias n
             $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
             break;
     }
-    
+
 ?>
 ```
