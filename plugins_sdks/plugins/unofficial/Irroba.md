@@ -1,13 +1,13 @@
 ---
-  sites_supported:
-      - mlb
+sites_supported:
+  - mlb
 ---
 
 # Irroba
 
 ## O que é Irroba
 
-[Irroba](http://www.Irroba.com.br/) é uma plataforma de ecommerce que disponibiliza a integração com Mercado Pago como meio de pagamento. 
+[Irroba](http://www.Irroba.com.br/) é uma plataforma de ecommerce que disponibiliza a integração com Mercado Pago como meio de pagamento.
 
 ## Como posso operar com Mercado Pago na Irroba
 
@@ -31,8 +31,6 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 Irroba realiza todas as configurações necessárias para que você venda em sua loja online com o Mercado Pago em uma integração transparente e segura.
 
-## Canal de suporte 
+## Canal de suporte
 
 https://helpdesk.irroba.com.br/
-
-
