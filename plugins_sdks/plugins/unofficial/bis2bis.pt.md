@@ -1,13 +1,13 @@
 ---
-  sites_supported:
-      - mlb
+sites_supported:
+  - mlb
 ---
 
 # Bis2Bis
 
 ## O que é Bis2Bis
 
-[Bis2Bis](http://www.bis2bis.com.br/) é uma plataforma de ecommerce que disponibiliza a integração com o Mercado Pago como meio de pagamento, trabalhamos com a plataforma de e-commerce Magento. 
+[Bis2Bis](http://www.bis2bis.com.br/) é uma plataforma de ecommerce que disponibiliza a integração com o Mercado Pago como meio de pagamento, trabalhamos com a plataforma de e-commerce Magento.
 
 ## Como posso operar com Mercado Pago na Bis2Bis
 
@@ -37,10 +37,8 @@ Credenciais: https://www.mercadopago.com/mlb/account/credentials
 
 Public Key e Access Token
 
-## Canal de Atendimento: 
+## Canal de Atendimento:
 
-Email | Telefone 
+Email | Telefone
 --|--
 http://cliente.bis2bis.com.br |(43) 3326-1500
-
-
