@@ -1,147 +1,148 @@
 ---
 resource: merchant_orders.raml
 use:
-- preference_id
-- application_id
-- site_id
-- payer
-- collector
-- sponsor_id
-- cancelled
-- shipments
-- notification_url
-- additional_info
+- id
+- status
 - external_reference
+- preference_id
+- payments
+- shipments
+- collector
 - marketplace
+- notification_url
+- date_created
+- last_updated
+- sponsor_id
+- shipping_cost
+- total_amount
+- site_id
+- paid_amount
+- refunded_amount
+- payer
+- items
+- cancelled
+- additional_info
+- application_id
 errors:
-- 400 BAD_REQUEST:
-  - invalid_collector_id:
-      description:
-        en: collector_id must be a number.
-        es: collector_id debe ser numérico.
-        pt: collector_id must be a number.
-  - invalid_collector_id:
-      description:
-        en: collector_id invalid.
-        es: collector_id inválido.
-        pt: collector_id invalid.
-  - invalid_sponsor_id:
-      description:
-        en: sponsor_id not found.
-        es: sponsor_id no encontrado.
-        pt: sponsor_id not found.
-  - invalid_sponsor_id:
-      description:
-        en: sponsor_id must be a number.
-        es: sponsor_id debe ser numérico.
-        pt: sponsor_id must be a number.
-  - invalid_sponsor_id:
-      description:
-        en: sponsor_id should be different than collector_id.
-        es: El sponsor_id debe ser distinto al collector_id.
-        pt: sponsor_id should be different than collector_id.
-  - invalid_sponsor_id:
-      description:
-        en: sponsor_id site must be the same as collector_id.
-        es: El sitio de sponsor_id debe ser el mismo que el del collector_id.
-        pt: sponsor_id site must be the same as collector_id.
-  - invalid_sponsor_id:
-      description:
-        en: sponsor_id didn't accept Mercado Pago's Terms and Conditions.
-        es: El sponsor_id no acepto los términos y condiciones de Mercado Pago.
-        pt: sponsor_id didn't accept Mercado Pago's Terms and Conditions.
-  - invalid_sponsor_id:
-      description:
-        en: sponsor_id is not an active user.
-        es: El sponsor_id no es un usuario activo.
-        pt: sponsor_id is not an active user.
-  - invalid_collector_email:
-      description:
-        en: collector is not collector_email(secure) owner
-        es: collector is not collector_email(secure) owner
-        pt: collector is not collector_email(secure) owner
-  - invalid_collector_email:
-      description:
-        en: collector is not collector_email owner
-        es: collector is not collector_email owner
-        pt: collector is not collector_email owner
-  - invalid_items:
-      description:
-        en: amount cannot be paid with Mercado Pago.
-        es: El monto no se puede pagar con Mercado Pago.
-        pt: amount cannot be paid with Mercado Pago.
-  - invalid_items:
-      description:
-        en: items needed.
-        es: items requerido.
-        pt: items needed.
-  - invalid_items:
-      description:
-        en: items invalid. Wrong format.
-        es: Parámetro items inválido. Formato erróneo.
-        pt: items invalid. Wrong format.
-  - invalid_items:
-      description:
-        en: currency_id needed.
-        es: currency_id requerido.
-        pt: currency_id needed.
-  - invalid_items:
-      description:
-        en: currency_id invalid.
-        es: currency_id inválido.
-        pt: currency_id invalid.
-  - invalid_items:
-      description:
-        en: quantity needed.
-        es: quantity requerido.
-        pt: quantity needed.
-  - invalid_items:
-      description:
-        en: quantity must be a number.
-        es: quantity debe ser numérico.
-        pt: quantity must be a number.
-  - invalid_items:
-      description:
-        en: unit_price needed.
-        es: unit_price requerido.
-        pt: unit_price needed.
-  - invalid_items:
-      description:
-        en: unit_price must be a number.
-        es: unit_price debe ser numérico.
-        pt: unit_price must be a number.
-  - invalid_items:
-      description:
-        en: unit_price invalid.
-        es: unit_price inválido.
-        pt: unit_price invalid.
-  - invalid_payer:
-      description:
-        en: payer invalid. Wrong format.
-        es: payer inválido. Formato erróneo.
-        pt: payer invalid. Wrong format.
-  - invalid_payer:
-      description:
-        en: payer name invalid. Max length 100.
-        es: payer name inválido. Longitud máxima 100 caracteres.
-        pt: payer name invalid. Max length 100.
-  - invalid_payer:
-      description:
-        en: payer surname invalid. Max length 100
-        es: payer surname inválido. Longitud máxima 100 caracteres.
-        pt: payer surname invalid. Max length 100
-  - invalid_payer:
-      description:
-        en: payer email invalid. Max length 150.
-        es: payer email inválido. Longitud máxima 150 caracteres.
-        pt: payer email invalid. Max length 150.
-  - invalid_id:
-      description:
-        en: preference_id not found.
-        es: preference_id no encontrado.
-        pt: preference_id not found.
-  - invalid_access_token:
-      description:
-        en: Access denied.
-        es: Acceso denegado
-        pt: access denied.
+  - 400 BAD_REQUEST:
+    - invalid_user_id:
+        description:
+          en: invalid users involved.
+          es: invalid users involved.
+          pt: invalid users involved.
+    - invalid_order_state:
+        description:
+          en: the action requested is not valid for the current merchant order state.
+          es: the action requested is not valid for the current merchnat order state.
+          pt: the action requested is not valid for the current merchant order state.
+    - invalid_string:
+        description:
+          en: string too long.
+          es: string too long.
+          pt: string too long.
+    - invalid_application_id:
+        description:
+          en: internal server error.
+          es: internal server error.
+          pt: internal server error.
+    - invalid_items:
+        description:
+          en: should specify at least one item.
+          es: should specify at least one item.
+          pt: should specify at least one item.
+    - invalid_items:
+        description:
+          en: title cannot be null for the given item.
+          es: title cannot be null for the given item.
+          pt: title cannot be null for the given item.
+    - invalid_items:
+        description:
+          en: quantity cannot be null for the given item.
+          es: quantity cannot be null for the given item.
+          pt: quantity cannot be null for the given item.
+    - invalid_items:
+        description:
+          en: invalid item quantity.
+          es: invalid item quantity.
+          pt: invalid item quantity.
+    - invalid_items:
+        description:
+          en: unit_price cannot be null for the given item.
+          es: unit_price cannot be null for the given item.
+          pt: unit_price cannot be null for the given item.
+    - invalid_items:
+        description:
+          en: currency_id cannot be null for the given item.
+          es: currency_id cannot be null for the given item.
+          pt: currency_id cannot be null for the given item.
+    - invalid_items:
+        description:
+          en: cannot operate with this currency code.
+          es: cannot operate with this currency code.
+          pt: cannot operate with this currency code.
+    - invalid_items:
+        description:
+          en: invalid unit_price.
+          es: invalid unit_price.
+          pt: invalid unit_price.
+    - user_not_allowed:
+        description:
+          en: user not allowed to operate.
+          es: user not allowed to operate.
+          pt: user not allowed to operate.
+    - invalid_payment_id:
+        description:
+          en: invalid payment identifier.
+          es: invalid payment identifier.
+          pt: invalid payment identifier.
+    - invalid_operation_type:
+        description:
+          en: invalid operation type.
+          es: invalid operation type.
+          pt: invalid operation type.
+    - invalid_payer:
+        description:
+          en: invalid payer identifier.
+          es: invalid payer identifier.
+          pt: invalid payer identifier.
+    - invalid_id:
+        description:
+          en: invalid preference_id.
+          es: invalid preference_id.
+          pt: invalid preference_id.
+    - invalid_expired:
+        description:
+          en: the preference_id has expired.
+          es: the preference_id has expired.
+          pt: the preference_id has expired.
+    - invalid_shipment_id:
+        description:
+          en: invalid shipment identifier.
+          es: invalid shipment identifier.
+          pt: invalid shipment identifier.
+    - invalid_sponsor_id:
+        description:
+          en: invalid sponsor_id.
+          es: invalid sponsor_id.
+          pt: invalid sponsor_id.
+    - invalid_marketplace:
+        description:
+          en: invalid marketplace.
+          es: invalid marketplace.
+          pt: invalid marketplace.
+    - unmarshall_error:
+        description:
+          en: could not unmarshal request body into merchant order struct.
+          es: could not unmarshal request body into merchant order struct.
+          pt: could not unmarshal request body into merchant order struct.
+    - invalid_url:
+        description:
+          en: invalid URL. Isn't HTTP or HTTPS.
+          es: invalid URL. Isn't HTTP or HTTPS.
+          pt: invalid URL. Isn't HTTP or HTTPS.
+  - 401 UNAUTHORIZED:
+    - invalid_token:
+        description:
+          en: access denied.
+          es: access denied.
+          pt: access denied.

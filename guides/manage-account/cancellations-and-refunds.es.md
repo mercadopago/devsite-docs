@@ -61,8 +61,18 @@ curl -X PUT \
 **Response status code: 200 OK**
 
 ## Devoluciones
-
+----[mla]----
+Puedes devolver un pago dentro de los **360 días** desde su acreditación.
+------------
+----[mlb]----
+Puedes devolver un pago dentro de los **120 días** desde su acreditación.
+------------
+----[mlm]----
+Puedes devolver un pago dentro de los **180 días** desde su acreditación.
+------------
+----[mlc, mlu, mpe, mco]----
 Puedes devolver un pago dentro de los **90 días** desde su acreditación.
+------------
 
 Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto del pago satisfactoriamente. De lo contrario obtendrás un error `400 Bad Request`.
 

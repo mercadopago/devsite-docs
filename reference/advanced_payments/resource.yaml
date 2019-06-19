@@ -1084,9 +1084,27 @@ properties:
             - zip_code:
                 type: String
                 description:
+<<<<<<< HEAD
                   en: Zip Code.
                   es: Código postal.
                   pt: CEP.
+=======
+                  en: 
+                  es: Zip code.
+                  pt:
+            - state_name:
+                type: String
+                description:
+                  en:
+                  es: Provincia.
+                  pt:
+            - city_name:
+                type: String
+                description:
+                  en:
+                  es: Ciudad.
+                  pt:
+>>>>>>> 921ed6fe18eb33b4f05ef0a64af4691885d46aee
             - street_name:
                 type: String
                 description:

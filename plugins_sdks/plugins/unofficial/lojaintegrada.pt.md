@@ -1,3 +1,7 @@
+---
+sites_supported:
+  - mlb
+---
 
 # Loja Integrada
 
@@ -24,7 +28,7 @@ Para vincular sua conta do Mercado Pago à Loja Integrada siga estes passos:
 4. Clique em "Permitir".
 
     ![LojaIntegrada_account](/images/lojaintegrada-connect-1.gif)
-    
+
 Após vincular sua conta você tem a opção de ativar dois tipos de checkout:
 - Checkout transparente: o comprador fica no ambiente da sua loja durante todo o processo.
 - Mercado Pago Redirect: o comprador é direcionado ao Mercado Pago para fazer o pagamento e concluir a compra.

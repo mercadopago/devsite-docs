@@ -125,15 +125,21 @@ O callback recebe um status e uma resposta. A função deverá armazenar a id da
 
 ```javascript
 function setPaymentMethodInfo(status, response) {
-    if (status == 200) {
-        paymentMethod.setAttribute('name', "paymentMethodId");
-        paymentMethod.setAttribute('type', "hidden");
-        paymentMethod.setAttribute('value', response[0].id);
-
-        form.appendChild(paymentMethod);
+  if (status == 200) {
+        const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
+        
+        if (paymentMethodElement) {
+        paymentMethodElement.value = response[0].id;
         } else {
-            document.querySelector("input[name=paymentMethodId]").value = response[0].id;
+        const inputEl = document.createElement('input');
+        inputEl.setattribute('name', 'paymentMethodId');
+        inputEl.setAttribute('type', 'hidden');
+        inputEl.setAttribute('value', response[0].id);     
+        
+        form.appendChild(inputEl);
         }
+    } else {
+        alert(`payment method info error: ${response}`);  
     }
 };
 ```
@@ -566,6 +572,8 @@ payment.Save();
         "shipments": {
             "receiver_address": {
                 "zip_code": "5700",
+                "state_name": "State",
+                "city_name": "City",
                 "street_name": "Street",
                 "street_number": 123,
                 "floor": 4,
