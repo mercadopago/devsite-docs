@@ -249,19 +249,18 @@ Uruguay: Oca.
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy paste the following code:
+6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
 
 ```
-$('body').append('<form><input type="hidden" id="deviceId" name="deviceId" /></form>');
-$.getScript("https://resources.mlstatic.com/device/meli-metrix.min.js", function(){});
-function startTimer () {
-    setTimeout(stopTimer,2000);
+var dmlscript = document.createElement("script");
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
+dmlscript.onload = () => {
+    new DMLSDK({
+        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        out: "vtex.deviceFingerprint"
+    });
 }
-function stopTimer () {
-  	window.vtex.deviceFingerprint = document.getElementById('deviceId').value;
-  console.log("MP-deviceId : " + document.getElementById('deviceId').value)
-}
-window.onload = startTimer;
+document.body.appendChild(dmlscript);
 ```
 
 7. Select "save", the final result should look like the example:
