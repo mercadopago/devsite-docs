@@ -52,18 +52,28 @@ O qual retorna os resultados numa estrutura que mostra, também, a quantidade de
 
 #### Filtros de busca
 
-Estado                      |Descrição                                                          |
-----------------------------|-------------------------------------------------------------------|
-date_created                |Data de criação do Advanced Payment.                               |
-status                      |Estado do Advanced Payment.                                        |
-payment.id                  |ID do pagamento do comprador.                                      |
-payment.payment_method_id   |Método do pagamento.                                               |
-payment.external_reference  |ID gerado para este pagamento em específico.                       |
-payment.transaction_amount  |Valor do pagamento.                                                |
-payer.id                    |ID do comprador.                                                   |
-payer.email                 |Email do comprador.                                                |
-disbursement.collector_id   |ID do vendedor.                                                    |
-external_reference          |ID gerado pelo marketplace que identifica ao Advanced Payment.     |
+Estado                       |Descrição                                                          
+-----------------------------|-------------------------------------------------------------------
+date_created                 |Data de criação do Advanced Payment.                              
+status                       |Estado do Advanced Payment.                                       
+payments.id                  |ID do pagamento do comprador.                                      
+payments.payment_method_id   |Método do pagamento.                                               
+payments.external_reference  |ID gerado para este pagamento em específico.                       
+payments.transaction_amount  |Valor do pagamento.                                                
+payer.id                     |ID do comprador.                                                   
+payer.email                  |Email do comprador.                                                
+disbursements.collector_id   |ID do vendedor.                                                    
+external_reference           |ID gerado pelo marketplace que identifica ao Advanced Payment.     
+
+#### Filtrar busca por data
+
+Estado                       |Exemplo de Valores Esperados                                                                          
+-----------------------------|------------------------------------------------------------------------------------------------------
+range                        |**date_created**: Data criação transação, **date_last_updated**: Data última atualização da transação 
+begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                     
+end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                     
+
+Para filtrar uma consulta por data é preciso utilizar a combinação dos três estados, no campo range deve se informar **uma das duas opções possíveis marcadas em negrito**, o campo **end_date** precisa sempre ser mais recente temporalmente que o **begin_date**, o **fuso horário** ao final deve ser preservado, o restante é editável conforme expressão: ANO-MÊS-DIA”T”HORA-MINUTO-SEGUNDO-MILÉSIMO.
 
 ### Exportar Activities
 
