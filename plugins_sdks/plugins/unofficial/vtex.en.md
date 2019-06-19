@@ -249,7 +249,7 @@ Uruguay: Oca.
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy paste the following code:
+6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
 
 ```
 var dmlscript = document.createElement("script");
