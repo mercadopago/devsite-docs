@@ -48,4 +48,17 @@ Credenciales |ACCESS_TOKEN				|	Clave privada requerida para generar pagos. Es 	
 1. Al ingresar a Mercado Pago con la cuenta creada, se autocompletarán las credenciales necesarias dentro de cada snippet de código de las siguientes secciones.
 
 
+##Instala la SDK de Mercado Pago
+Te proveemos SDKs oficiales en los lenguajes más utilizados para simplificar tu interacción con las APIs. 
+
+[[[
+ \```PHP
+===
+Te recomendamos usar [Composer](https://getcomposer.org/doc/00-intro.md) para instalar la SDK, este gestor de dependencias te ayudará a mantener actualizadas las dependencias de tu proyecto. Para hacerlo, ejecutá el siguiente código en línea de comandos en la carpeta principal de tu proyecto:
+
+===
+composer require "mercadopago/dx-php:dev-master"
+\```
+]]]
+
 
