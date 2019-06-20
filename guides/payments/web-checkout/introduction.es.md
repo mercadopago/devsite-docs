@@ -5,12 +5,12 @@ Web Checkout de Mercado Pago es la herramienta que te permite cobrar a través d
 
 ####Web Checkout ofrece:
 
-1. Compras en un click. Al recordar los datos de los compradores, admite pagos ingresando solamente el código de seguridad de la tarjeta.
-1. Una experiencia de compra adaptada y accesible desde cualquier celular o computadora.  
-1. Pagos como invitado. No es requerida la creación de una cuenta de Mercado  Pago para poder hacer el pago.
-1. Pagar con una cuenta de Mercado Pago. Permite el acceso a dinero en cuenta y tarjetas guardadas. 
-1. Dividir el pago en 2 tarjetas.
-1. Pagar con los principales medios de pago del país.
+* Compras en un click. Al recordar los datos de los compradores, admite pagos ingresando solamente el código de seguridad de la tarjeta.
+* Una experiencia de compra adaptada y accesible desde cualquier celular o computadora.  
+* Pagos como invitado. No es requerida la creación de una cuenta de Mercado Pago para poder hacer el pago.
+* Pagar con una cuenta de Mercado Pago. Permite el acceso a dinero en cuenta y tarjetas guardadas. 
+* Dividir el pago en 2 tarjetas.
+* Pagar con los principales medios de pago del país.
 
 
 ####Diferencias de Web Checkout con otras herramientas de Mercado Pago 
