@@ -1,35 +1,51 @@
-# Web Checkout
+#¿Qué es Web Checkout? 
+Web Checkout de Mercado Pago es la herramienta que te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura. 
 
-Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
+![Introduction Web Checkout](/images/refactor-images/introduction-web-checkout.png)
 
-Trabajamos para que tus usuarios tengan la mejor experiencia de pago ofreciendo:  
+####Web Checkout ofrece:
 
-* Compra con **un click**: Recordamos los datos de tus usuarios, permitiendo pagar sólo ingresando el código de seguridad de la tarjeta.
-* Checkout **Responsive**: La mejor experiencia de compra desde cualquier dispositivo _mobile_ o desktop.
-* Pago como **invitado**: No es requerida la creación de una cuenta de Mercado Pago.
-----[mla, mlb, mlm, mco, mlc, global]----
-* Split de Pagos: Posibilidad de **pagar con 2 tarjetas**.
-------------
-* Los **medios de pago** principales en todos los países.
-* **Financiación**: Ofrece cuotas con la mejor financiación posible.
+1. Compras en un click. Al recordar los datos de los compradores, admite pagos ingresando solamente el código de seguridad de la tarjeta.
+1. Una experiencia de compra adaptada y accesible desde cualquier celular o computadora.  
+1. Pagos como invitado. No es requerida la creación de una cuenta de Mercado  Pago para poder hacer el pago.
+1. Pagar con una cuenta de Mercado Pago. Permite el acceso a dinero en cuenta y tarjetas guardadas. 
+1. Dividir el pago en 2 tarjetas.
+1. Pagar con los principales medios de pago del país.
 
-Contamos con la certificación [PCI DSS](https://www.pcisecuritystandards.org/), lo cual avala que guardamos, procesamos o intercambiamos información de tarjeta de crédito de forma segura. Adicionalmente, todos nuestros pagos son analizados por nuestra herramienta de prevención de fraude, para minimizar el riesgo en tus transacciones.
 
-## ¿Cómo funciona?
+####Diferencias de Web Checkout con otras herramientas de Mercado Pago 
 
-![imagen](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
+							            | Web Checkout|Web Tokenize Checkout| API
+---------------------------------	  | ----------- | ------------------- | ---
+Dificultad de integración 			  | Baja        | Media               |Alta
+Diseño UI/UX 							  | ✔           | ✔                   |
+Optimizado para la mejor conversión| ✔           | ✔                   |
+Pago automáticos 					  | ✔           |                     |
+Pago de usuarios invitados         | ✔           | ✔                   |✔
+Pago de usuarios registrados       | ✔           |                     |
+Prevención de fraude               | ✔           | ✔                   |✔
+Optimizado para mejorar la aprobación | ✔        |                     |
+Pago con 2 tarjetas                | ✔           |                     |
+Exclusión de medios de pago        | ✔           |                     |✔
 
-Integrar el checkout es muy fácil:
 
-1. Incluye el SDK en tu proyecto.
-2. Coloca tus credenciales y crea la preferencia de pagos.
-3. Inicia el proceso de pago desde un botón en tu sitio.
-4. Entérate del pago escuchando las notificaciones que te enviamos.
 
-----[mla, mlb, mlm, mco, mlc, global]----
-## Agregando Envíos
+#Requisitos Previos
+Es importante conocer y tener los requisitos previos antes de avanzar. Esto permite hacer el paso a paso más simple.
 
-A través de **Mercado Envíos** además del pago del producto también podrás resolver el envío en la misma operación. Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo.
+Término		| 							|	Descripción
+------------	| ----------- 			| 	-----------
+Preferencia	|							|	Es una intención de pago de la operación a 												efectuar. Entre los atributos más importantes de 												una preferencia, se definen la descripción, el 												monto y la cantidad del ítem. Al generarla se 												obtiene la URL para iniciar el flujo de pago.
+Init_point 	|							|	Es la URL que se obtiene al momento de generar la 												Preferencia y que da inicio al flujo de pago del 												Web Checkout.
+Item			|							|	Hace referencia al producto o servicio que se 												está ofreciendo. Puede ser un solo ítem o una 												lista.
+				|CLIENT_ID y SECRET_ID	|	Estas claves son requeridas para hacer uso de la 												sdk de Mercado Pago y poder crear una preferencia 												de pago
+Credenciales |ACCESS_TOKEN				|	Clave privada requerida para generar pagos. Es 												confidencial para el usuario
+				|PUBLIC_KEY				|	Clave que permite acceder a los recursos 												públicos, como consultar medios de pagos 												disponibles para un usuario
+				
 
-En tu preferencia de pagos, debes incluir el atributo que indica que vas a activar Mercado Envíos y listo, nosotros nos encargamos de todo.
-------------
+####Crea tu cuenta de Mercado Pago
+1. Para poder comenzar la integración es necesario tener una cuenta de Mercado Pago, caso contrario, hacer click [aquí](https://www.mercadopago.com.ar/) para registrarse. 
+1. Al ingresar a Mercado Pago con la cuenta creada, se autocompletarán las credenciales necesarias dentro de cada snippet de código de las siguientes secciones.
+
+
+
