@@ -1,11 +1,6 @@
 ---
 sites_supported:
-  - mlb
-  - mlm
-  - mlc
-  - mpe
-  - mco
-  - mlu
+  - mla
 ---
 
 # Recibir pagos

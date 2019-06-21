@@ -1,24 +1,17 @@
 ---
 sites_supported:
-  - mlb
-  - mlm
-  - mlc
-  - mpe
-  - mco
-  - mlu
+  - mla
 ---
 
-# Personalización
+# Customization
 
-Desde la preferencia de pagos no sólo puedes enviar información del item a pagar y del comprador, si no también puedes definir medios de pago que no deseas aceptar, URL de retorno a tu sitio después del pago, métodos de envío y demas.   
+In payment preferences, you can not only send information about the item to be paid, and the buyer’s, but also set the payment methods you do not want to accept, the return URL to your website after the payment, shipping options, etc.  
 
+### Set payment types and methods
 
-### Define tipos y métodos de pago
+By default, we offer all payment methods available for the country where you are running the integration. If your business model does not support any of these [payment types](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods), or you [do not want to accept any particular method](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), you can exclude it when creating the payment preference.
 
-Por defecto ofrecemos todos los medios de pago disponibles para el país en el estás que realizando la integración. Si tu modelo de negocio no soporta alguno de éstos [tipos de pago](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods), o bien no deseas aceptar algún [método en particular](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), puedes excluirlo cuando generas la preferencia de pagos.
-
-Además puedes definir qué medio de pago o qué cantidad de cuotas deseas que se muestren por defecto, así como también la cantidad de cuotas máximas a ofrecer.
-
+In addition, you can set the payment method or the number of installments that should be displayed by default, as well as the maximum number of installments to offer.
 
 [[[
 ```php
@@ -110,9 +103,9 @@ List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
 ```
 ]]]
 
-### Indica URLs de Retorno
+### Indicate Return URLs
 
-Al finalizar el proceso de pago, es muy importante que comuniques a tu comprador cuáles son los siguientes pasos y de ésta manera darle confianza respecto del resultado de la operación. Para ello, utilizamos las `back_urls`. El atributo `auto_return` en `approved` redireccionará en forma automática al comprador a la _success url_ cuando el resultado del pago sea aprobado.
+In the end of the payment process, it is very important that you show buyers what the next steps are and thus give them confidence in relation to the result of the transaction. To do this, we use the `back_urls`. The `auto_return` attribute in `approved` will automatically redirect the buyer to the success url when the payment result is approved.
 
 [[[
 ```php
@@ -181,15 +174,15 @@ preference.auto_return = "approved"
 ```
 ]]]
 
-### Sincroniza con tu sistema
+### Synchronize with your system
 
-Para poder sincronizar con tus sistemas de backend, desde la preferencia puedes enviarnos el campo `external_reference`, el cual vas a poder consultar cuando se cree el pago.
+In order to synchronize with your backend systems, from the preferences you can send us the `external_reference` field, which will enable you to check when the payment is created.
 
 ```json
 "external_reference": "Order_1234",
 ```
 
-Para conocer el estado tus pagos, puedes hacer una búsqueda utilizando dicha referencia:
+To check the status of your payments, you can do a search using that reference:
 
 [[[
 ```php
@@ -242,26 +235,25 @@ List<Payment> payments = Payment.Search(filters);
 ```
 ]]]
 
-### Modo binario
+### Binary mode
 
-Si la lógica de negocio de tu comercio requiere que la decisión sobre la aprobación del pago sea instantánea puedes activar el modo binario. De esta forma el pago solo puede resultar en los estados `approved` o `rejected`.
+If the business logic of your e-commerce requires the decision on approval of the payment to be instantaneous you can activate the binary mode. In this way the payment can only result in `approved` or`rejected` states.
 
-En el caso de no estar activado el pago puede resultar en el estado `in_process`.
+In the case of not being activated the payment may result in the state `in_process`.
 
-Para más información revisa los posibles estados de un pago:
+For more information check the possible states of a payment:
 
 ![payment-diagram](/images/payments-status-transitions-diagram.png)
 
-Para activarlo, basta configurar como _true_ el campo `binary_mode`:
+To enable it, just configure as _true_ the field `binary_mode`:
 
 ```json
 	"binary_mode": true
 ```
 
-### Expira links de preferencia
+### Invalidate preference links
 
-Si no quieres permitir que se ingrese a la preferencia de pago para efectuar el pago posterior a una determinada fecha puedes utilizar los siguientes atributos:
-
+If you want to prevent access to the payment preference for making a payment after a certain date, you can use the following attributes:
 
 ```json
 	"expires": true,
@@ -270,12 +262,12 @@ Si no quieres permitir que se ingrese a la preferencia de pago para efectuar el 
 ```
 
 
-Para conocer más sobre los atributos de la preferencia, [consultá la documentación de la API](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/)
+To learn more about the preference attributes, [check the API docs]https://www.mercadopago.com.ar/developers/en/reference/reference/preferences/_preferences/post/).
 
 
 
-### Aquí tienes una preferencia completa
-Para resumir todo lo anterior, a continuación se muestran todos los datos que se pueden configurar en una preferencia:
+### Here you have a complete preference
+To summarize all of the above, the following JSON shows all the data that can be configured in a preference:
 
 ```json
 {
