@@ -87,9 +87,9 @@ After this, you must obtain the complete information of the notified resource by
 Type         | URL                                                | Documentation
 ------------ | -------------------------------------------------- | --------------------
 payment      | https://api.mercadopago.com/v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
-plan         | https://api.mercadopago.com/v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
-subscription | https://api.mercadopago.com/v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/invoices/_invoices_id/get/)
+plan         | https://api.mercadopago.com/v1/plans/[ID]?access_token=[ACCESS_TOKEN]         | -
+subscription | https://api.mercadopago.com/v1/subscriptions/[ID]?access\_token=[ACCESS_TOKEN] | -
+invoice      | https://api.mercadopago.com/v1/invoices/[ID]?access_token=[ACCESS_TOKEN]      | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/invoices/_invoices_id/get/)
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
 
