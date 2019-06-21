@@ -83,10 +83,10 @@ Luego de esto, tienes que obtener la información completa del recurso notificad
 
 Tipo         | URL                                                | Documentación
 ------------ | -------------------------------------------------- | --------------------
-payment      | https://api.mercadopago.com/v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
-plan         | https://api.mercadopago.com/v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
-subscription | https://api.mercadopago.com/v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/invoices/_invoices_id/get/)
+payment      | https://api.mercadopago.com/v1/payments/[ID]?access_token=[ACCESS_TOKEN]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
+plan         | https://api.mercadopago.com/v1/plans/[ID]?access_token=[ACCESS_TOKEN]         | -
+subscription | https://api.mercadopago.com/v1/subscriptions/[ID]?access_token=[ACCESS_TOKEN] | -
+invoice      | https://api.mercadopago.com/v1/invoices/[ID]?access_token=[ACCESS_TOKEN]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/invoices/_invoices_id/get/)
 
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.
@@ -95,7 +95,7 @@ Con esta información puedes realizar las actualizaciones necesarias en tu plata
 >
 > Importante
 >
-> Ten en cuenta que si se exceden los tiempos de respuesta es posible recibir notificaciones duplicadas de un evento. 
+> Ten en cuenta que si se exceden los tiempos de respuesta es posible recibir notificaciones duplicadas de un evento.
 
 ### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
 
