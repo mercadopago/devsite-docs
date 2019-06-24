@@ -19,9 +19,9 @@ Antes de continuar con la integración es importante que conozcas estos nuevos c
 
 |Atributo|Tipo|Descripción|
 |---|---|---|
-|`processing_mode`| String | Indica el modo de procesamiento de un pago. Las opciones son: _aggregator_ o _gateway_. Por defecto si no se indica es **aggregator**|
+|`processing_mode`| String | Indica el modo de procesamiento de un pago. La única opción en el POST es **gateway**. Si no se indica, por defecto es **aggregator**|
 |`merchant_account_id`| String | Indica el número de comercio. Sólo es posible de usar cuando el `processing_mode` es gateway |
-|`payment_method_option_id`| String | Identifica unívocamente la sumatoria de un `payment_method` + `installment` + `merchant_account_id`| 
+|`payment_method_option_id`| String | Identifica unívocamente la sumatoria de un `payment_method` + `issuer` + `merchant_account_id`| 
 
 ## Integración
 
@@ -42,6 +42,7 @@ curl -X POST \
 -H "Content-Type: application/json"
 -d "{
   'transaction_amount': '100',
+  'installments': 1,
   'token': 'ff8080814c11e237014c1ff593b57b4d',
   'payment_method_id': 'visa',
   'payer': [{'email': 'john.doe@gmail.com'}],
@@ -141,7 +142,7 @@ curl -X POST \
 }"
 ```
 
-> Los [servicios](/localization/gateway.es.md) dependen del país
+> Los [servicios](/localization/gateway.es.md) dependen del país y deben ser contratados previamente.
 
 ## Próximos pasos
 

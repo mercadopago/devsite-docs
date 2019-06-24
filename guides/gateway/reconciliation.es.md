@@ -91,9 +91,10 @@ Los valores posibles de `operation` son:
 
 * **authorization:** autorización
 * **capture:** captura
-* **purchase:** compra directa
-* **refund:** devolución / reeembolso
-
+* **online_purchase:** compra directa
+* **refund_online_purchase:** devolución / reeembolso de una compra directa
+* **refund_capture:** devolución / reeembolso de una captura
+* **refund_authorization:** devolución / reeembolso de una autorización
 
 ### Estados de una operación
 
@@ -101,6 +102,7 @@ Los valores posibles de `operation_status` son:
 
 * **approved:** aprobada
 * **rejected:** rechazada
+* **in_process:** en proceso
 
 ### Conciliar vía Archivo
 
