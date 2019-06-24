@@ -32,6 +32,7 @@ Prevención de fraude               		| ✔           | ✔                   |�
 Pantalla de finalización de pago		 	| ✔           |                     |
 Pago con dos tarjetas                	| ✔           |                     |
 
->NOTA 
 
->Si tienes la versión 1 del Web Checkout integrado puedes visitar la [documentación de integración de la versión 1](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction/). Recuerda que solo se brinda soporte activo a la última versión y soporte pasivo a la anterior por lo que recomendamos integrarte siguiendo esta nueva documentación.
+>NOTE
+>
+> Si tienes la versión 1 del Web Checkout integrado puedes visitar la [documentación de integración de la versión 1](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction/). Recuerda que solo se brinda soporte activo a la última versión y soporte pasivo a la anterior por lo que recomendamos integrarte siguiendo esta nueva documentación.
