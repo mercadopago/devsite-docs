@@ -30,7 +30,7 @@ require __DIR__  ‘/vendor/autoload.php;
 import com.mercadopago.*;
 ```
 ```Node JS
-$ npm install mercadopago
+$ npm install mercadopago (// TODO)
 ```
 ```.Net
 using MercadoPago;
