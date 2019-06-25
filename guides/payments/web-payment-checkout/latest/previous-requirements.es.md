@@ -10,11 +10,11 @@ Es importante conocer los requisitos previos necesarios antes de continuar:
 
 Término		| 							|	Descripción
 ------------	| ----------- 			| 	-----------
-Preferencia (preference)	|							|	Es la información de la venta que se quiere ofrecer. Entre los Atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
+Preferencia (preference)	|							|	Es la información de la venta que se quiere ofrecer. Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
 Punto de inicio (init_point) 	|							|	Es la URL que se obtiene al momento de generar la preferencia y que da inicio al flujo de pago del Web Checkout.
 Item (item)			|							|	Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
 Aplicación (application)|            | Una cuenta de Mercado Pago puede tener múltiples aplicaciones. Cada aplicación está designada a identificar una integración en particular, y tiene sus credenciales correspondientes.
-Credenciales |ACCESS_TOKEN				|	Clave privada de la aplicación requerida para generar pagos. Debes usarla sólo en tu back-end.
+Credenciales (credentials) |ACCESS_TOKEN				|	Clave privada de la aplicación requerida para generar pagos. Debes usarla sólo para tus integraciones.
 				|PUBLIC_KEY				|	Clave pública de la aplicación para conocer los medios de pago y cifrar datos de tarjeta (entre otros usos). Debes usarla sólo en tu front-end
 
 ## Cuenta de Mercado Pago
