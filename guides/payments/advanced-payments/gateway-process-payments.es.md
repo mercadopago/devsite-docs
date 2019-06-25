@@ -25,7 +25,7 @@ A continuación vemos un ejemplo de pago en modalidad Gateway, utilizando la API
 #### Request
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments?access_token=APPLICATION_TOKEN' \
     -d '{...}'

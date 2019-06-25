@@ -39,7 +39,7 @@ Uma vez criado, pode-se alterar a data de liberação tanto do Advanced Payment 
 
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID/disburses?access_token=MKT_ACCESS_TOKEN' \
     -d '{...}'
@@ -49,7 +49,7 @@ curl -X POST \
 
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID/disbursements/DISBURSEMENT_ID/disburses?access_token=MKT_ACCESS_TOKEN' \
     -d '{...}'

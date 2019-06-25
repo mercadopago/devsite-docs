@@ -11,8 +11,8 @@ This way, when the retry is made, the same key can be sent to indicate that it i
 ```curl
 curl -X POST \
      -H 'X-Idempotency-Key: faDF8323asd298' \
-     -H 'accept: application/json' \
-     -H 'content-type: application/json' \
+     -H 'Accept: application/json' \
+     -H 'Content-Type: application/json' \
      'https://api.mercadopago.com/v1/advanced_payments?access_token=MKT_ACCESS_TOKEN' \
      -d '{...}'
 ```

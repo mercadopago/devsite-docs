@@ -1,4 +1,4 @@
-﻿# Busca e conciliação
+﻿# Busca e Conciliação
 
 Uma parte importante da geração de pagamentos é a conciliação. A API permite realizar buscas de seus `advanced payments` para poder conciliar todas as operações feitas através do seu Marketplace.
 
@@ -7,7 +7,7 @@ Uma parte importante da geração de pagamentos é a conciliação. A API permit
 #### Request
 ```curl
 curl -X GET \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&offset=0&limit=10'
 ```

@@ -11,7 +11,7 @@ Una vez que ya se cuenta con el access token del pagador, puede utilizarse para 
 #### Request
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments?access_token=SELLER_TOKEN' \
     -d '{...}'

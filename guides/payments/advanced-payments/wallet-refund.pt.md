@@ -9,7 +9,7 @@ Se utiliza o `id` do Advanced Payment realizando um `PUT` como mostrado no exemp
 #### Request
 ```curl
 curl -X PUT \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID/refunds?access_token=SELLER_TOKEN' \
 ```

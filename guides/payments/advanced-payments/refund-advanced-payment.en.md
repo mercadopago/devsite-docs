@@ -13,7 +13,7 @@ If the full Advanced Payment is refunded, it will be `refunded`. In case of a pa
 #### Request: Refund of a full Advanced Payment
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID/refunds?access_token=MKT_ACCESS_TOKEN' \
     -d '{...}'
@@ -22,7 +22,7 @@ curl -X POST \
 #### Request: Refund of an individual Disbursement
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID/disbursements/DISBURSEMENT_ID/refunds?access_token=MKT_ACCESS_TOKEN' \
     -d '{...}'

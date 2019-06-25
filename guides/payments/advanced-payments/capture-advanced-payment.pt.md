@@ -7,7 +7,7 @@ Para capturá-lo faça da seguinte forma:
 #### Request
 ```curl
 curl -X PUT \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID?access_token=MKT_ACCESS_TOKEN' \
     -d '{...}'

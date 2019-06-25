@@ -9,7 +9,7 @@ sites_supported:
 #### Request
 ```curl
 curl -X GET \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID?access_token=APPLICATION_TOKEN' \
 ```

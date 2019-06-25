@@ -13,7 +13,7 @@ Además se puede enviar el objeto `metadata` con información relevante a su neg
 #### Request
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments?access_token=APPLICATION_TOKEN' \
 ```

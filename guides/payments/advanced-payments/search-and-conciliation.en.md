@@ -1,4 +1,4 @@
-﻿# Search and reconciliation
+﻿# Search and Reconciliation
 
 An important part of the generation of payments is the reconciliation. The API allows you to search your `advanced payments` in order to reconcile all the transactions that were made through your Marketplace.
 
@@ -7,7 +7,7 @@ It is possible to search through the Advanced Payments API.
 #### Request
 ```curl
 curl -X GET \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&offset=0&limit=10'
 ```
