@@ -1,4 +1,4 @@
-# Mapa de Estados
+# Mapa de estados
 
 Un Advanced Payment puede tomar distintos estados.
 Un Marketplace puede informarse de los cambios de estados de un `advanced payment` si se suscribe al tópico de `Split de Pagos` en [Webhooks](https://www.mercadopago.com/mla/account/webhooks), para pagos de carrito de Mercado Pago.

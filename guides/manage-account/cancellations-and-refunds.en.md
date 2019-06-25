@@ -61,7 +61,15 @@ curl -X PUT \
 **Response status code: 200 OK**
 
 ## Refunds
-You can refund a payment within **90 days** after it was approved.
+----[mla]----
+You can refund a payment within **360 days** after it was approved.
+------------
+----[mlb]----
+You can refund a payment within **120 days** after it was approved.
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+You can refund a payment within **180 days** after it was approved.
+------------
 
 You must have sufficient funds in your account in order to successfully refund the payment amount. Otherwise, you will get a `400 Bad Request error`.
 
