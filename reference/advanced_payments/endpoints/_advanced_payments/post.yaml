@@ -264,7 +264,7 @@ errors:
   - '401003':
       description:
         en:
-        es: Device access token inválido.
+        es: Device token inválido.
         pt:
 - 404 NOT_FOUND:
   - '404001':
