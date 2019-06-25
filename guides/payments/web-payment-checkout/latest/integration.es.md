@@ -22,25 +22,20 @@ sites_supported:
 En tu proyecto importa el SDK de Mercado Pago:
 [[[
  ```PHP
-===
 <?php
 require __DIR__  ‘/vendor/autoload.php;
 ?>
 ```
 ```Java
-===
 import com.mercadopago.*;
 ```
 ```Node JS
-===
 $ npm install mercadopago
 ```
 ```.Net
-===
 using MercadoPago;
 ```
 ```Ruby
-===
 require 'mercadopago.rb'
 ```
 ]]]
@@ -49,7 +44,6 @@ require 'mercadopago.rb'
 Configura las credenciales necesarias que habilitan el uso de la SDK de Mercado Pago, para esto reemplaza las mismas, obtenidas desde siguiente [link](https://www.mercadopago.com/mla/account/credentials?type=basic).
 [[[
  ```PHP
-===
 <?php
 require __DIR__  ‘/vendor/autoload.php;
 MercadoPago\SDK::setClientId(“ENV_CLIENT_ID”);
@@ -57,24 +51,20 @@ MercadoPago\SDK:setClientSecret(“ENV_CLIENT_SECRET”);
 ?>
 ```
 ```Java
-===
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 ```
 ```Node JS
-===
 var mercadopago = require('mercadopago');
 mercadopago.configure({
     access_token: 'ENV_ACCESS_TOKEN'
 });
 ```
 ```.Net
-===
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```
 ```Ruby
-===
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
@@ -83,7 +73,6 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 #### 3) Creá una preferencia
 [[[
  ```PHP
-===
 <?php
   $preference = new MercadoPago\Preference();
   
@@ -102,7 +91,6 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ?>
 ```
 ```Java
-===
 Preference preference = new Preference();
 
 Item item = new Item();
@@ -120,7 +108,6 @@ preference.appendItem(item);
 preference.save();
 ```
 ```Javascript
-===
 var preference = {}
 
 var item = {
@@ -144,7 +131,6 @@ mercadopago.preferences.create(preference).then(function (data) {
  });
 ```
 ```.Net
-===
 Preference preference = new Preference();
 
  preference.Items.Add(
@@ -164,7 +150,6 @@ Preference preference = new Preference();
   preference.Save();
 ```
 ```Ruby
-===
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
@@ -182,7 +167,6 @@ preference.payer = payer
 preference.save
 ```
 ```curl
-===
 curl -X POST \
 'https://api.mercadolibre.com/checkout/preferences?access_token=ACCESS_TOKEN' \
 -H 'Content-Type: application/json' \
