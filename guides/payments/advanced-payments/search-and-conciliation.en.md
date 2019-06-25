@@ -9,7 +9,7 @@ It is possible to search through the Advanced Payments API.
 curl -X GET \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&offset=0&limit=10'
+    'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&limit=10&offset=0'
 ```
 
 #### Response
@@ -48,7 +48,7 @@ State                       |Description                                        
 status                      |Advanced Payment status.                                               |
 payments.id                 |Buyer’s payment ID.                                                    |
 payments.payment_method_id  |Payment method.                                                        |
-payments.payment_type_id    |Payment type.                                                        |
+payments.payment_type_id    |Payment type.                                                          |
 payer.id                    |Buyer ID.                                                              |
 payer.email                 |Buyer’s email address.                                                 |
 disbursement.collector_id   |Seller ID.                                                             |

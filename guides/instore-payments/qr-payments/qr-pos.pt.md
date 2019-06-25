@@ -14,7 +14,7 @@ sites_supported:
 
 ## Fluxo
 
-![QR PDV Flow](/images/mobile/qr-user-flow.es.svg)
+![QR PDV Flow]()
 
 ## Conceitos
 
