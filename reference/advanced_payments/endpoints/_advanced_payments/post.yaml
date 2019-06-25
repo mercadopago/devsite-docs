@@ -250,6 +250,22 @@ errors:
         en:
         es: Clave de idempotencia inválida.
         pt:
+- 401 UNAUTHORIZED:
+  - '401000':
+      description:
+        en:
+        es: Access token inválido.
+        pt:
+  - '401002':
+      description:
+        en:
+        es: Access token inválido.
+        pt:
+  - '401003':
+      description:
+        en:
+        es: Device access token inválido.
+        pt:
 - 404 NOT_FOUND:
   - '404001':
       description:
