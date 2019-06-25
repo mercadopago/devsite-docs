@@ -37,4 +37,4 @@ Pago con dos tarjetas					| ✔           |                     |
 >
 >Nota
 >
-> Si tienes la versión 1 del Web Checkout integrado puedes visitar la [documentación de integración de la versión 1](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction/). Recuerda que solo se brinda soporte activo y nuevas funcionalidades en la última versión.
+> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction/).
