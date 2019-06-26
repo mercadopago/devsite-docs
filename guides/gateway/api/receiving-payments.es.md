@@ -11,7 +11,7 @@ sites_supported:
 >
 > Pre-requisito
 >
-> Haber realizado [la integración](/guides/payments/api/introduction.es.md) de **API**
+> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction) de **API**
 
 ## Nuevos conceptos
 
