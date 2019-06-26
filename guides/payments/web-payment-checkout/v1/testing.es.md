@@ -5,7 +5,7 @@ sites_supported:
 
 # Probando la Integración
 
->NOTE
+> WARNING
 >
 >Nota
 >
