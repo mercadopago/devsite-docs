@@ -5,7 +5,7 @@ sites_supported:
 
 # Agregando envíos
 
->NOTE
+> WARNING
 >
 >Nota
 >
