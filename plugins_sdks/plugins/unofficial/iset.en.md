@@ -1,6 +1,6 @@
 ---
-  sites_supported:
-      - mlb
+sites_supported:
+  - mlb
 ---
 
 # ISET

@@ -6,7 +6,7 @@ Desde Mercado Pago, proveemos los servicios necesarios para poder realizar enví
 
 Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: [https://applications.mercadopago.com/](https://applications.mercadopago.com/). Para poder operar con la API de envío de dinero  la aplicación deberá ser habilitada para tal fin. Estos permisos son asignados desde Mercado Pago, por lo que deberás enviarle a tu asesor comercial el APP ID obtenido para poder realizar la configuración correspondiente.
 
->INFO 
+> WARNING 
 >
 > Consideraciones
 >
@@ -76,13 +76,13 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
   -d '
   {
 	"transaction_amount": 100,
-	**"operation_type": "money_transfer"**
+	"operation_type": "money_transfer",
 	"description": "Title of what you are paying for",
 	"installments": 1,
 	"marketplace": "NONE",
-	**"payment_method_id": "account_money",**
+	"payment_method_id": "account_money",
 	"collector": {
-		**"email": "test_user_50345633@testuser.com**
+		"email": "test_user_50345633@testuser.com"
 	},
 	"external_reference": "Reference_1234",
 	"notification_url": "https://www.your-site.com/webhooks",
@@ -99,13 +99,13 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
   -d '
   {
 	"transaction_amount": 100,
-	**"operation_type": "money_transfer"**
+	"operation_type": "money_transfer",
 	"description": "Title of what you are paying for",
 	"installments": 1,
 	"marketplace": "NONE",
-	**"payment_method_id": "account_money",**
+	"payment_method_id": "account_money",
 	"collector": {
-		**"id": "399606359"**
+		"id": "399606359"
 	},
 	"external_reference": "Reference_1234",
 	"notification_url": "https://www.your-site.com/webhooks",
@@ -212,7 +212,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
   {
 	"transaction_amount": 100,
 	"operation_type": "money_transfer",
-	**"concept_id": "supply",**
+	"concept_id": "supply",
 	"description": "Title of what you are paying for",
 	"installments": 1,
 	"marketplace": "NONE",
@@ -236,7 +236,7 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
   {
 	"transaction_amount": 100,
 	"operation_type": "money_transfer",
-	**"concept_id": "payroll",**
+	"concept_id": "payroll",
 	"description": "Title of what you are paying for",
 	"installments": 1,
 	"marketplace": "NONE",

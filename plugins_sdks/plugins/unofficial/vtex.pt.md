@@ -244,19 +244,18 @@ Uruguay: Oca.
 
 4. Acessar código.
 5. Selecionar checkout5-custom.js.
-6. Copiar e pegar o seguinte código:
+6. Copiar e colar o seguinte código, substituindo o campo `publicKey`:
 
 ```
-$('body').append('<form><input type="hidden" id="deviceId" name="deviceId" /></form>');
-$.getScript("https://resources.mlstatic.com/device/meli-metrix.min.js", function(){});
-function startTimer () {
-    setTimeout(stopTimer,2000);
+var dmlscript = document.createElement("script");
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
+dmlscript.onload = () => {
+    new DMLSDK({
+        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        out: "vtex.deviceFingerprint"
+    });
 }
-function stopTimer () {
-    window.vtex.deviceFingerprint = document.getElementById('deviceId').value;
-  console.log("MP-deviceId : " + document.getElementById('deviceId').value)
-}
-window.onload = startTimer;
+document.body.appendChild(dmlscript);
 ```
 
 ![Custom plan](/images/vtex-device-settings-3.png)
