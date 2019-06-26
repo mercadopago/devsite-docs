@@ -5,7 +5,7 @@ sites_supported:
 
 # Recibir pagos
 
->NOTE
+> WARNING
 >
 >Nota
 >
