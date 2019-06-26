@@ -20,7 +20,7 @@ use:
 - attributes
 errors:
 - 400 BAD_REQUEST:
-  -  '400004':
+  - '400004':
       description:
         en: Invalid application.
         es: Aplicación inválida.
@@ -260,6 +260,22 @@ errors:
         en: Invalid idempodency key.
         es: Clave de idempotencia inválida.
         pt: Chave de idempotência inválida.
+- 401 UNAUTHORIZED:
+  - '401000':
+      description:
+        en: Invalid access token.
+        es: Access token inválido.
+        pt: Access token inválido.
+  - '401002':
+      description:
+        en: Invalid access token.
+        es: Access token inválido.
+        pt: Access token inválido.
+  - '401003':
+      description:
+        en: Invalid device token.
+        es: Device token inválido.
+        pt: Device token inválido.
 - 404 NOT_FOUND:
   - '404001':
       description:

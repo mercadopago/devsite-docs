@@ -10,7 +10,7 @@ use:
 - additional_info
 errors:
 - 400 BAD_REQUEST:
-  -  '400004':
+  - '400004':
       description:
         en: Invalid application.
         es: Aplicación inválida.
