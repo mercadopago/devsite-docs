@@ -58,15 +58,15 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 4. Escolha o país:
 
-	![Country Selecion](/images/oscommerce-CountrySelection.png)
+	![Country Selecion in Os Commerce](/images/oscommerce-CountrySelection.png)
 
 5. Selecione os métodos de pagamento que você **não quer aceitar** na sua loja:
 
-	![Payment Methods Selection](/images/oscommerce-PaymentMethodsSelection.png)
+	![Payment Methods - Os Commerce](/images/oscommerce-PaymentMethodsSelection.png)
 
 6. Seleciona a categoria da loja:
 
-	![Category Selection](/images/oscommerce-CategorySelection.png)
+	![Store category selection](/images/oscommerce-CategorySelection.png)
 
 7. Na próxima tela, você verá que o **MercadoPago** está listando nos métodos de pagamento. Agora, clique em **Edit** localizado na barra direita.
 
@@ -95,7 +95,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 9. **NÃO ATUALIZE** os campos *Country*, *Exclude Methods*, *Cod Status (fields…)*. Caso queira alterar esses campos, desinstale o módulo e instale novamente o módulo.
 
-	![Do Not Touch](/images/oscommerce-DoNotTouch.png)
+	![Do not upgrade](/images/oscommerce-DoNotTouch.png)
 
 10. Os campos **Sucess Url** e **Pending url** são gerados automaticamente, caso esteja realizando testes em um ambiente sandbox, não ira funcionar corretamente. Você pode alterar essas URLs para uma de sua escolha.
 

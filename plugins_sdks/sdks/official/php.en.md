@@ -14,7 +14,7 @@ The SDK supports PHP 5.5.0 or major
 2. Go to your project directory and run `composer require "mercadopago/dx-php:dev-master"` on the command line.
 3. This how your directory structure would look like.
 
-![screen shot 2017-12-27 at 7 07 47 pm](https://user-images.githubusercontent.com/864790/34394635-44f7745a-eb39-11e7-981d-77cf759cf05f.png)
+![Structure of the Mercado Pago SDK for PHP](https://user-images.githubusercontent.com/864790/34394635-44f7745a-eb39-11e7-981d-77cf759cf05f.png)
 
 4. Thats all, you have Mercado Pago SDK installed.
 
@@ -46,7 +46,7 @@ The SDK supports PHP 5.5.0 or major
 
   You can interact with all the resources available in the public API, to this each resource is represented by classes according to the following diagram:
   
-  ![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
+  ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
   
   **Sample**
   

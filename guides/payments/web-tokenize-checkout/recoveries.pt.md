@@ -22,7 +22,7 @@ Por exemplo:
 </form>
 ```
 
-![Recovery](/images/cow-recovery-page__pt.png)
+![Retrieve the sale button Mercado Pago](/images/cow-recovery-page__pt.png)
 
 ## Checkout aberto por padrão
 

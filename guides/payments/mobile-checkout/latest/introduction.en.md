@@ -33,7 +33,7 @@ All our payments are assessed by our fraud prevention tool to minimize the risks
 
 Offer the best payment experience to your users, on Android or iOS.
 
-![androidiosfinal](/images/mobile-sdk-flow.png)
+![Mercado Pago sdk android](/images/mobile-sdk-flow.png)
 
 ### It is very easy to integrate the checkout:
 

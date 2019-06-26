@@ -38,7 +38,7 @@ Once the payment is proccesed, the user will be redirected to the `success_url` 
 
 ### Flow chart
 
-![instore diagram](/images/point_diagram.png)
+![Deep linking flow diagram Mercado Pago](/images/point_diagram.png)
 
 
 ### Deep Linking creation

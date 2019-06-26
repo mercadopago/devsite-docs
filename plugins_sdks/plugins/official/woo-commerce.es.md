@@ -78,7 +78,7 @@ Usted tiene dos opciones para instalar este módulo: desde su tienda de WordPres
 
 3. Deberás encontrar el módulo listo para ser instalado. Haga clic en instalar. ¡Está hecho!
 
-![Instalación Plugin](/images/woocommerce_install_plugin.gif)
+![Installing Mercado Pago with Wordpress](/images/woocommerce_install_plugin.gif)
 
 ### Descarga manual
 
@@ -90,17 +90,17 @@ Usted tiene dos opciones para instalar este módulo: desde su tienda de WordPres
 
 > CONSEJO: Para confirmar que su módulo está realmente instalado, puede hacer clic en el item *Plugins* en el menú lateral de administración de la tienda y verificar el módulo que acaba de instalar. Simplemente haga clic en *activar* para activarlo y deberás recibir la mensaje "Plugin activado." como un aviso en tu WordPress.
 
-![Activación Plugin](/images/woocommerce_activate_plugin.gif)
+![Installing Mercado Pago manually in Wordpress](/images/woocommerce_activate_plugin.gif)
 
 # Configuración
 
 En primer lugar, asegúrese de que el plugin WooCommerce MercadoPago está habilitado, haciendo clic en el item *Plugins* en la barra lateral de WordPress, como se muestra a continuación:
 
-![Plugin Menu](/images/woocommerce-plugins_menu.png)
+![Enabling Mercado Pago in Woocommerce plugins](/images/woocommerce-plugins_menu.png)
 
 Ahora, en la barra lateral de WordPress, haga clic en la opción *Configuración > Mercado Pago*. Usted debe obtener la siguiente página:
 
-![Mercado Pago Config](/images/woocommerce-mercadopago_config.png)
+![Mercado Pago configuration page in Woocommerce](/images/woocommerce-mercadopago_config.png)
 
 Esta ventana muestra la configuración principal del plugin WooCommerce MercadoPago, donde puede verificar y configurar lo siguiente:
 
@@ -136,7 +136,7 @@ Ofrece herramientas de registro para que pueda analizar problemas que puedan est
 # Configurando la Tarjeta de Crédito
 En esta página se explica cómo configurar el módulo para aceptar pagos con Tarjeta de Crédito de Checkout Customizado. En la administración de su tienda, vaya a ficha *WooCommerce > Configuración > Checkout*. En *Opciones de Checkout*, haga clic en *Mercado Pago - Checkout Personalizado*. Usted debe obtener la siguiente página:
 
-![Custom Checkout Config](/images/woocommerce-custom_checkout_config.png)
+![Setting up credit card in Woocommerce](/images/woocommerce-custom_checkout_config.png)
 
 Si ha configurado correctamente sus credenciales en configuraciones Generales de Mercado Pago, puede ahora personalizar su checkout por Tarjeta de Crédito:
 
@@ -156,7 +156,7 @@ Cómo se comporta la opción de pago.
 # Configurando los Tickets
 En esta página se explica cómo configurar el módulo para aceptar pagos con Tickets de Checkout Customizado. En la administración de su tienda, vaya a ficha *WooCommerce > Configuración > Checkout*. En *Opciones de Checkout*, haga clic en *Mercado Pago - Ticket*. Usted debe obtener la siguiente página:
 
-![Ticket Checkout Config](/images/woocommerce-ticket_checkout_config.png)
+![Setting tickets in Woocommerce](/images/woocommerce-ticket_checkout_config.png)
 
 Si ha configurado correctamente sus credenciales en configuraciones Generales de Mercado Pago, puede ahora personalizar su checkout por Ticket:
 
@@ -174,7 +174,7 @@ Cómo se comporta la opción de pago.
 # Configurando el Checkout por Redirect, Iframe o LightBox
 En esta página se explica cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redireccionamiento, Iframe o Lightbox. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Checkout*. En *Opciones de Checkout*, haga clic en *Mercado Pago - Checkout Básico*. Usted debe obtener la siguiente página:
 
-![Basic Checkout](/images/woocommerce-basic_checkout_config.png)
+![Setting tickets in Woocommerce](/images/woocommerce-basic_checkout_config.png)
 
 Si ha configurado correctamente sus credenciales en configuraciones Generales de Mercado Pago, puede ahora personalizar su checkout por Checkout Básico:
 
@@ -209,11 +209,11 @@ Para utilizar Mercado Envíos, [debe habilitarlo en su cuenta de Mercado Pago.](
 ### Cree la zona y los medios de envío
 Para usar Mercado Envíos, necesita que lo configure como un medio de envío en WooCommerce. Sólo tienes que seguir los siguientes pasos:
 
-1. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Envío*. En *Zona de Envío*, haga clic en *Agregar zona de envío*. Introduzca el nombre de la zona, seleccione las regiones dentro de esta zona y haga clic en *Guardar cambios*.<br>![Mercado Envios 0](/images/woocommerce-me_0.png)
-2. Haga clic en *ver* de la zona creada.<br>![Mercado Envios 1](/images/woocommerce-me_1.png)
-3. Haga clic en *Agregar medio de envío* y seleccione *Mercado Envíos - Normal* o *Mercado Envíos - Express*. Este proceso tiene que ser repetido dos veces, hasta que normal y expreso sean configurados.<br>![Mercado Envios 2](/images/woocommerce-me_2.png)
-4. Ahora usted puede también fijar la opción *Envío Gratis* y/o mostrar el *Tiempo de Entrega* estimado en el cálculo del envío.<br>![Mercado Envios 3](/images/woocommerce-me_3.png)
-5. Mercado Envíos está listo para su uso, pero no olvide habilitar *Checkout Básico* para el correcto funcionamiento de *Mercado Envíos* e informar las dimensiones de sus productos.<br>![Mercado Envios 4](/images/woocommerce-me_4.png)
+1. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Envío*. En *Zona de Envío*, haga clic en *Agregar zona de envío*. Introduzca el nombre de la zona, seleccione las regiones dentro de esta zona y haga clic en *Guardar cambios*.<br>![Creating the Shipping Zone of the Mercado envios in Woocommerce](/images/woocommerce-me_0.png)
+2. Haga clic en *ver* de la zona creada.<br>![Created zone settings in Woocommerce](/images/woocommerce-me_1.png)
+3. Haga clic en *Agregar medio de envío* y seleccione *Mercado Envíos - Normal* o *Mercado Envíos - Express*. Este proceso tiene que ser repetido dos veces, hasta que normal y expreso sean configurados.<br>![Adding Mercado Envios as Shipping Method in Woocommerce](/images/woocommerce-me_2.png)
+4. Ahora usted puede también fijar la opción *Envío Gratis* y/o mostrar el *Tiempo de Entrega* estimado en el cálculo del envío.<br>![Setting free shipping and delivery time](/images/woocommerce-me_3.png)
+5. Mercado Envíos está listo para su uso, pero no olvide habilitar *Checkout Básico* para el correcto funcionamiento de *Mercado Envíos* e informar las dimensiones de sus productos.<br>![Mercado Envios ready for use](/images/woocommerce-me_4.png)
 
 > IMPORTANTE 1: Su cuenta de Mercado Pago debe ser una *Cuenta de Vendedor*;
 
@@ -224,7 +224,7 @@ Para usar Mercado Envíos, necesita que lo configure como un medio de envío en 
 # Configurando las Suscripciones
 En esta página se explica cómo configurar el módulo para aceptar Suscripciones con pagos recurrentes. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Checkout*. En *Opciones de Checkout*, haga clic en *Mercado Pago - Suscripción*. Usted debe obtener la siguiente página:
 
-![Subscription Checkout Config](/images/woocommerce-subscription_checkout_config.png)
+![Setting Subscription in Woocommerce](/images/woocommerce-subscription_checkout_config.png)
 
 Si ha configurado correctamente sus credenciales en configuraciones Generales de Mercado Pago, puede ahora personalizar su checkout por Suscripciones:
 
@@ -249,7 +249,7 @@ Cómo se comporta la opción de pago.
 
 ### Creación de un Producto Asignable
 Una suscripción necesita un tipo especial de producto, que será vendido periódicamente. Puede configurar un producto para que se pueda asignar siguiendo los siguientes pasos:
-1. Vaya a *Productos* en el menú lateral y haga clic en el botón *Agregar Producto*. La página abierta debe contener los detalles del producto y los campos en la ventana *Datos del Producto*;<br>![Subscription Checkout Product](/images/woocommerce-subscription_checkout_product.png)
+1. Vaya a *Productos* en el menú lateral y haga clic en el botón *Agregar Producto*. La página abierta debe contener los detalles del producto y los campos en la ventana *Datos del Producto*;<br>![Setting subscription products pages](/images/woocommerce-subscription_checkout_product.png)
 2. Completa la información de su producto (nombre, precio, imágenes, etc) y entonces marque el checkbox *Producto Recurrente*;
 3. Llene los campos de información para la suscripción: *Frecuencia* (frecuencia que los cobros se harán a su cliente), *Tipo de Frecuencia* (el tipo de frecuencia puede estar en [Días] o [Meses]) y *Fecha de Finalización* (fecha en que debe finalizar la suscripción).
 
