@@ -5,7 +5,7 @@ sites_supported:
 
 # Personalización
 
->NOTE
+> WARNING
 >
 >Nota
 >
