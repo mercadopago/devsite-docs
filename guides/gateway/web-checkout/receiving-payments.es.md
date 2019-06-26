@@ -38,4 +38,4 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Web Che
 
 ## Próximos pasos
 
-* [Conciliá tus operaciones](/guides/gateway/reconciliation.es.md)
+* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/reconciliation)
