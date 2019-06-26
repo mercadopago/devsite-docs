@@ -11,7 +11,7 @@ sites_supported:
 >
 > Pre-requisites
 >
-> Have already integrated the [Payments's API](/guides/payments/api/introduction.en.md)
+> Have already integrated the [Payments's API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction.en.md)
 
 ## New concepts
 
@@ -136,8 +136,8 @@ curl -X POST \
 }"
 ```
 
-> The [services](/localization/gateway.en.md) vary according to country and must be previously acquired.
+> The [services](https://www.mercadopago.com.ar/developers/en/localization/gateway.en.md) vary according to country and must be previously acquired.
 
 ## Next steps
 
-* [Reconcile your operations](/guides/gateway/reconciliation.en.md)
+* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/reconciliation.en.md)

@@ -11,7 +11,7 @@ sites_supported:
 >
 > Pre-requisites
 >
-> Have already integrated the [Web Checkout](/guides/payments/web-checkout/introduction.en.md)
+> Have already integrated the [Web Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction.en.md)
 
 ## Integration
 
@@ -38,4 +38,4 @@ Done! Your **Web Checkout** is now working in the Gateway Model.
 
 ## Next steps
 
-* [Reconcile your operations](/guides/gateway/reconciliation.en.md)
+* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/reconciliation.en.md)

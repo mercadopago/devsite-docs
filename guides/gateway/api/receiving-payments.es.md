@@ -11,7 +11,7 @@ sites_supported:
 >
 > Pre-requisito
 >
-> Haber realizado [la integración](/guides/payments/api/introduction.es.md) de **API**
+> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction.es.md) de **API**
 
 ## Nuevos conceptos
 
@@ -137,8 +137,8 @@ curl -X POST \
 }"
 ```
 
-> Los [servicios](/localization/gateway.es.md) dependen del país y deben ser contratados previamente.
+> Los [servicios](https://www.mercadopago.com.ar/developers/es/localization/gateway.es.md) dependen del país y deben ser contratados previamente.
 
 ## Próximos pasos
 
-* [Conciliá tus operaciones](/guides/gateway/reconciliation.es.md)
+* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/reconciliation.es.md)
