@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Fingerprint
 
 #### Ejemplo completo de Fingerprint para enviar a la API de DeviceSessions
