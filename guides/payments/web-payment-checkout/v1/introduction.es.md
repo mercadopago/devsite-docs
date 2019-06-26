@@ -5,7 +5,7 @@ sites_supported:
 
 # Web Checkout
 
->NOTE
+> WARNING
 >
 >Nota
 >
