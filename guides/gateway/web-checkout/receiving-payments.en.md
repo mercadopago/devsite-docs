@@ -11,7 +11,7 @@ sites_supported:
 >
 > Pre-requisites
 >
-> Have already integrated the [Web Checkout](/guides/payments/web-checkout/introduction.en.md)
+> Have already integrated the [Web Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
 
 ## Integration
 
