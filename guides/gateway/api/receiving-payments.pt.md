@@ -5,3 +5,6 @@ sites_supported:
   - global
 ---
 
+> NOTE
+>
+> Sentimos muito. Mas esta página ainda não está disponível em Português.

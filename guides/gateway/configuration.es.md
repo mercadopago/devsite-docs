@@ -79,7 +79,7 @@ Aquí deberás seleccionar los números de comercio válidos para el medio de pa
 
 ¡Listo! Tu medio de pago ya estará creado
 
-> Por defecto cada medio de pago creado estará desactivado. Es necesario activarlo posteriormente cuando ya esté todo listo para utilizarlo.
+> Por defecto cada medio de pago creado estará disponible en el ambiente de pruebas (Sandbox). Es necesario activarlo posteriormente cuando ya esté todo listo para utilizarlo en producción.
 
 #### Editando un medio de pago
 

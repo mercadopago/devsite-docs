@@ -9,7 +9,7 @@ sites_supported:
 
 ## ¿Qué es? 
 
-*Mercado Pago Gateway* es un modelo de operación que te permite procesar pagos con tarjeta de débito y crédito con tus propios números de comercio. En este modelo, Mercado Pago te ofrece toda su tecnología y robustez para poder operar con tus propios acuerdos con los adquirentes y emisores.
+**Mercado Pago Gateway** es un modelo de operación que te permite procesar pagos con tarjeta de débito y crédito con tus propios números de comercio. En este modelo, Mercado Pago te ofrece toda su tecnología y robustez para poder operar con tus propios acuerdos con los adquirentes y emisores.
 
 ## ¿Cuáles son las diferencias con Mercado Pago "tradicional"?
 

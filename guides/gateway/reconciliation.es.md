@@ -17,6 +17,8 @@ La forma más fácil es trabajar con uno de nuestros partners:
 |---|---|
 |Argentina|[Increase](https://www.increasecard.com/mercadopago/)|
 
+> Estamos trabajando para ofrecerte más partners
+
 ## Utilizando tu sistema
 
 Si deseas realizar la conciliación a través de tu sistema de gestión o con un desarrollo propio, tienes dos opciones:

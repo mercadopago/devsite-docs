@@ -11,7 +11,7 @@ sites_supported:
 >
 > Pre-requisito
 >
-> Haber realizado [la integración]() de **Web Checkout**
+> Haber realizado [la integración](/guides/payments/web-checkout/introduction.es.md) de **Web Checkout**
 
 ## Integración
 
@@ -34,7 +34,7 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Web Che
 
 ¡Listo! Tu **Web Checkout** ahora estará funcionando en Modelo Gateway.
 
-> **Modelo mixto:** todavía no estamos soportando este modelo en Web Checkout. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
+> **Modelo híbrido:** todavía no estamos soportando este modelo en Web Checkout. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
 
 ## Próximos pasos
 
