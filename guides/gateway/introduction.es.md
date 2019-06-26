@@ -59,6 +59,6 @@ El costo dependerá según el volumen mensual operado del vendedor.
 
 ## Próximos pasos
 
-* [Configurá tus números de comercio y medios de pago](/guides/gateway/configuration.es.md) en el backoffice de Mercado Pago
+* [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/configuration) en el backoffice de Mercado Pago
 * [Integrá el Web Checkout](/guides/gateway/web-checkout/receiving-payments.es.md) en Modelo Gateway
 * [Integrá la API](/guides/gateway/api/receiving-payments.es.md) en Modelo Gateway
