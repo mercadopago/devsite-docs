@@ -5,7 +5,7 @@ sites_supported:
 
 # Campañas de descuento
 
->NOTE
+> WARNING
 >
 >Nota
 >
