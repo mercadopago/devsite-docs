@@ -5,6 +5,14 @@ sites_supported:
 
 # Agregando envíos
 
+>NOTE
+>
+>Nota
+>
+> Esta documentación es sobre la versión antigua de Checkout. 
+> 
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+
 Implementa la logística de tu negocio con **Mercado Envíos**.
 
 * Te damos todo resuelto: Recibe el pago del producto y del envío en la misma operación.

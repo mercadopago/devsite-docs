@@ -5,6 +5,14 @@ sites_supported:
 
 # Personalización
 
+>NOTE
+>
+>Nota
+>
+> Esta documentación es sobre la versión antigua de Checkout. 
+> 
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+
 Desde la preferencia de pagos no sólo puedes enviar información del item a pagar y del comprador, si no también puedes definir medios de pago que no deseas aceptar, URL de retorno a tu sitio después del pago, métodos de envío y demas.   
 
 
