@@ -137,7 +137,7 @@ curl -X POST \
 }"
 ```
 
-> Los [servicios](/localization/gateway.es.md) dependen del país y deben ser contratados previamente.
+> Los [servicios](https://www.mercadopago.com.ar/developers/es/localization/gateway) dependen del país y deben ser contratados previamente.
 
 ## Próximos pasos
 
