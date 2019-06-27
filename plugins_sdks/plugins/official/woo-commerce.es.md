@@ -224,7 +224,7 @@ Para usar Mercado Envíos, necesita que lo configure como un medio de envío en 
 # Configurando las Suscripciones
 En esta página se explica cómo configurar el módulo para aceptar Suscripciones con pagos recurrentes. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Checkout*. En *Opciones de Checkout*, haga clic en *Mercado Pago - Suscripción*. Usted debe obtener la siguiente página:
 
-![Setting Subscription in Woocommerce](/images/woocommerce-subscription_checkout_config.png)
+![Configurar suscripción Mercado Pago Woocommerce](/images/woocommerce-subscription_checkout_config.png)
 
 Si ha configurado correctamente sus credenciales en configuraciones Generales de Mercado Pago, puede ahora personalizar su checkout por Suscripciones:
 
