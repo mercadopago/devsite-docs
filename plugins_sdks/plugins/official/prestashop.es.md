@@ -95,7 +95,7 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 
 4. En PAYMENT METHOD usted puede habilitar las formas de pago con las que trabajará:
 
-![Enabling payment methods in prestashop](/images/prestashop_payment_method.png)
+![Activar medios de pago Mercado Pago Prestashop](/images/prestashop_payment_method.png)
 
 5. Muy bien! Usted ha habilitado los pagos vía Checkout Standard (redireccionado)!
 
