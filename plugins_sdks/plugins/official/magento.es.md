@@ -173,7 +173,7 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos
 Este proceso explicará cómo configurar el módulo para aceptar pagos con suscripciones:
 
 1. Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
-    ![Configuring recurring payments](/images/magento-config-01.gif)
+    ![Configurando pagos recurrentes Mercado Pago Magento](/images/magento-config-01.gif)
 
 2. Para configurar las credenciales acceda a la opción **Mercado Pago - Recurring Payments**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obten tus credenciales en la url](https://www.mercadopago.com/mla/account/credentials?type=basic)
     ![Configuring Credentials - Recurring Payments](/images/magento-config-re-01.gif)
