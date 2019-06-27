@@ -41,7 +41,7 @@ button.mercadopago-button {
 }
 ```
 
-![Payment button Mercado Pago modified CSS](/images/paybutton-modified-css.png)
+![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](/images/paybutton-modified-css.png)
 
 
 ## Colores en la interfaz
