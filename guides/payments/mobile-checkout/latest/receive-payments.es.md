@@ -24,7 +24,7 @@ Esta guía te ayudará a integrar el componente visual de pago de Mercado Pago e
 - Integración en tu servidor: en esta etapa obtendrás la información del pago.
 - Integración en tu aplicación: en esta etapa configurarás el componente visual.
 
-![Schema payment mobile Mercado Pago](/images/mobile-sdk-schema.png)
+![Esquema de creación de pagos en plataformas móviles Mercado Pago](/images/mobile-sdk-schema.png)
 
 1. Crea la preferencia de pago desde tu servidor en los servidores de Mercado Pago.
 2. Inicia el _Checkout_ en tu aplicación, utilizando el id de la preferencia.
