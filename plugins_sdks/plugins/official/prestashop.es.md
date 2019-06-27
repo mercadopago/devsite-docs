@@ -117,7 +117,7 @@ El producto enviado debe tener sus dimensiones (ancho, altura, longitud y peso) 
 
 3. En **MERCADO Envíos** es posible configurar un texto para ser exhibido en la entrega a través del campo **Custom text para usar con entrega**. Para realizar la activación marque el campo ** Enable Mercado Envíos** como **YES**.
 
-![Activating Mercado Envios in Prestashop](/images/prestashop_mercado_envios.png)
+![Activar Mercado Envíos Mercado Pago Prestashop](/images/prestashop_mercado_envios.png)
 
 4. Muy bien! Ahora usted puede ofrecer Mercado Envíos como medio de transporte para sus clientes!
 
