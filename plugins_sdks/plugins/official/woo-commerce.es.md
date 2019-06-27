@@ -100,7 +100,7 @@ En primer lugar, asegúrese de que el plugin WooCommerce MercadoPago está habil
 
 Ahora, en la barra lateral de WordPress, haga clic en la opción *Configuración > Mercado Pago*. Usted debe obtener la siguiente página:
 
-![Mercado Pago configuration page in Woocommerce](/images/woocommerce-mercadopago_config.png)
+![Página de configuración Mercado Pago Woocommerce](/images/woocommerce-mercadopago_config.png)
 
 Esta ventana muestra la configuración principal del plugin WooCommerce MercadoPago, donde puede verificar y configurar lo siguiente:
 
