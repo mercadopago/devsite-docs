@@ -74,7 +74,7 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 
 3. Muy bien! El módulo de Mercado Pago fue instalado con éxito.
 
-![Installing the Mercado Pago in Prestashop](/images/prestashop_select_mp_file.gif)
+![Instalar Mercado Pago Prestashop](/images/prestashop_select_mp_file.gif)
 
 
 ## Configuración
