@@ -69,7 +69,7 @@ El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 data-elements-color="#c0392b"
 ```
 
-![Customization elements](/images/cow-ui-elements--custom.png)
+![Interfaz personalizada Mercado Pago Web Tokenize Checkout](/images/cow-ui-elements--custom.png)
 
 
 ### Encabezado
