@@ -115,7 +115,7 @@ data-elements-color="#8e44ad" <!-- Color oscuro -->
 
 ### Estado por defecto
 
-![Purchase detail standard status](/images/cow-summary.png)
+![Detalle de compra Mercado Pago Web Tokenize Checkout](/images/cow-summary.png)
 
 
 ### Personalización
