@@ -50,7 +50,7 @@ button.mercadopago-button {
 
 #### Estado por defecto
 
-![Standard status elements](/images/cow-ui-elements.png)
+![Interfaz por defecto Mercado Pago Web Tokenize Checkout](/images/cow-ui-elements.png)
 
 #### Personalización
 
