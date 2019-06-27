@@ -61,7 +61,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 ### Instalación via Package
 
 1. Acceda al **[Github del Módulo para Magento de Mercado Pago](https://github.com/mercadopago/cart-magento)**, descargar el archivo que tiene la extensión **.tgz** (Ejemplo: MercadoPago-2.10.0.tgz):
-    ![Installing the Mercado Pago via package](/images/magento-download_github.gif)
+    ![Instalando Mercado Pago Magento via package](/images/magento-download_github.gif)
 
 2. Para realizar la instalación vamos a utilizar la herramienta **Magento Connect Manager**, acceda al administrador de Magento y vaya al menu  **System > Magento Connect > Magento Connect Manager**
 3. Cargar el módulo en la opción **Direct package file upload** y haga un click en **Upload**.
