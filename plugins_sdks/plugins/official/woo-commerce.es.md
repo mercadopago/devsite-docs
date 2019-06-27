@@ -90,7 +90,7 @@ Usted tiene dos opciones para instalar este módulo: desde su tienda de WordPres
 
 > CONSEJO: Para confirmar que su módulo está realmente instalado, puede hacer clic en el item *Plugins* en el menú lateral de administración de la tienda y verificar el módulo que acaba de instalar. Simplemente haga clic en *activar* para activarlo y deberás recibir la mensaje "Plugin activado." como un aviso en tu WordPress.
 
-![Installing Mercado Pago manually in Wordpress](/images/woocommerce_activate_plugin.gif)
+![Instalar Mercado Pago manualmente en Wordpress](/images/woocommerce_activate_plugin.gif)
 
 # Configuración
 
