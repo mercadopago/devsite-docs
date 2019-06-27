@@ -195,7 +195,7 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
     ![](/images/magento-config-01.gif)
 
 2. Para configurar los status acceda a la opción **Mercado Pago - Global Configuration**, vaya a la opción **Order Status Options**. Para cada estado de pago usted puede elegir un estado de pedido, cuando su tienda recibe una notificación de pago el módulo actualizará automáticamente el pedido con el estado configurado. Para guardar la configuración haga un clic en el botón **Save Config**.
-    ![Configure payment notification status](/images/magento-config-06.gif)
+    ![Configurar el estado de la notificación de pago Mercado Pago Magento](/images/magento-config-06.gif)
 
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar su cuenta de Mercado Pago o el módulo.
 
