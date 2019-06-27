@@ -83,7 +83,7 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 
 2. En la pantalla **BASIC SETTINGS** se le solicitarán los datos **Client ID** y **Client Secret**. Estos datos son las credenciales de su cuenta de Mercado Pago y se pueden obtener a través del siguiente enlace: [Obtener sus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
-![Configuring client id and client secret in Prestashop](/images/prestashop_credentials_configuration.gif)
+![Configurar client id client secret Mercado Pago Prestashop](/images/prestashop_credentials_configuration.gif)
 
 > Hay dos tipos de credenciales:
 * **Modo Sandbox**: Estas credenciales se utilizan para las pruebas.
