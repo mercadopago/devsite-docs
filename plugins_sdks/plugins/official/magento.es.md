@@ -122,7 +122,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
     ![Habilitar medios de pago Mercado Pago Magento](/images/magento-config-03.gif)
 
 4. ¡Listo! El Checkout Custom con Tarjeta de crédito y Ticket ha sido configurado y habilitado con éxito!
-    ![Successfully configured basic checkout](/images/magento-save.png)
+    ![Configuración de checkout exitosa Mercado Pago Magento](/images/magento-save.png)
 
 
 <a name="Configurar-el-Checkout-Redirect,-Iframe-y-LightBox"></a>
