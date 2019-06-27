@@ -18,7 +18,7 @@ Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del
 data-button-label="Comprar"
 ```
 
-![Payment button mercado pago - modified label](/images/paybutton-modified-label.png)
+![Botón de pago con personalización de texto Mercado Pago en Web Tokenize Checkout](/images/paybutton-modified-label.png)
 
 #### Estilo
 
