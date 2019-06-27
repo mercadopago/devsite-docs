@@ -37,7 +37,7 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 1. En su panel de administración de Shopify, vaya al menú **Settings > Payments**.
 
-  ![![Configuring Mercado Pago in shopify](/images/shopify-config-1.gif)
+  ![![Configurar Mercado Pago Shopify](/images/shopify-config-1.gif)
 
 2. En **Accept credit cards**, seleccione **Mercado Pago**.
 3. Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
