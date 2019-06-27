@@ -88,7 +88,7 @@ El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 data-header-color="#c0392b"
 ```
 
-![Header customization Mercado Pago](/images/cow-ui-header--custom.png)
+![Encabezado personalizado Mercado Pago Web Tokenize Checkout](/images/cow-ui-header--custom.png)
 
 
 ### Color de texto
