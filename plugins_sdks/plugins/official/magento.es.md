@@ -154,7 +154,7 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos
 > 	IMPORTANTE: Su cuenta de Mercado Pago tiene que ser del tipo **Vendedor**.
 
 2. Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Shipping Methods**:
-    ![Configuring the Mercado Envios in Magento](/images/magento-config-me-01.gif)
+    ![Configurando Mercado Envíos en Mercado Pago Magento](/images/magento-config-me-01.gif)
 
 3. Para habilitar Mercado Envíos **MercadoEnvios**, haga un clic en el botón  **Configure**. Vaya a la opción **Enable** y marque como **Yes**.
     ![Enabling Mercado Envios in Magento](/images/magento-config-me-02.gif)
