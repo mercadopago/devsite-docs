@@ -176,7 +176,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con suscr
     ![Configurando pagos recurrentes Mercado Pago Magento](/images/magento-config-01.gif)
 
 2. Para configurar las credenciales acceda a la opción **Mercado Pago - Recurring Payments**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obten tus credenciales en la url](https://www.mercadopago.com/mla/account/credentials?type=basic)
-    ![Configuring Credentials - Recurring Payments](/images/magento-config-re-01.gif)
+    ![Configurar credenciales - Recurring Payments Mercado Pago Magento](/images/magento-config-re-01.gif)
 
 3. Con las credenciales llenadas, ahora es necesario habilitar el método de pago. Vaya a la opción **Enable** y marque como **Yes**.
     ![Enabling payment method in Magento - Recurring Payments](/images/magento-config-re-02.gif)
