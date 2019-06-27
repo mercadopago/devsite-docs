@@ -131,7 +131,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
 
 1. Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
-    ![Configuring Checkout Redirect, Iframe and LightBox](/images/magento-config-01.gif)
+    ![Configurando Checkout Redirect, Iframe and LightBox Mercado Pago Magento](/images/magento-config-01.gif)
 
 
 2. Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
