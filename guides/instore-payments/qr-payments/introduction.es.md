@@ -19,7 +19,7 @@ sites_supported:
 > ![Pagos QR Mercado Pago](/images/qr_mla.es.png)
 ------------
 ----[mlm]----
-> ![QR payments Mercado Pago](/images/qr_mlm.es.png)
+> ![Pagos QR Mercado Pago](/images/qr_mlm.es.png)
 ------------
 
 
