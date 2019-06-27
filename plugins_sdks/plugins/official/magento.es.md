@@ -65,7 +65,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 
 2. Para realizar la instalación vamos a utilizar la herramienta **Magento Connect Manager**, acceda al administrador de Magento y vaya al menu  **System > Magento Connect > Magento Connect Manager**
 3. Cargar el módulo en la opción **Direct package file upload** y haga un click en **Upload**.
-    ![Uploading the Mercado Pago file on Magento](/images/magento-install_tgz.gif)
+    ![Cargar el archivo de Mercado Pago en Magento](/images/magento-install_tgz.gif)
 
 4. ¡Listo! El módulo de Mercado Pago fue instalado con éxito.
 
