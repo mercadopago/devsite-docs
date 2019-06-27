@@ -136,7 +136,7 @@ Ofrece herramientas de registro para que pueda analizar problemas que puedan est
 # Configurando la Tarjeta de Crédito
 En esta página se explica cómo configurar el módulo para aceptar pagos con Tarjeta de Crédito de Checkout Customizado. En la administración de su tienda, vaya a ficha *WooCommerce > Configuración > Checkout*. En *Opciones de Checkout*, haga clic en *Mercado Pago - Checkout Personalizado*. Usted debe obtener la siguiente página:
 
-![Setting up credit card in Woocommerce](/images/woocommerce-custom_checkout_config.png)
+![Configurar tarjeta de crédito en Mercado Pago Woocommerce](/images/woocommerce-custom_checkout_config.png)
 
 Si ha configurado correctamente sus credenciales en configuraciones Generales de Mercado Pago, puede ahora personalizar su checkout por Tarjeta de Crédito:
 
