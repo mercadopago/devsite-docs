@@ -109,7 +109,7 @@ Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`.
 data-elements-color="#8e44ad" <!-- Color oscuro -->
 ```
 
-![Font color in dark element Mercado Pago](/images/cow-ui-fontcolor__dark.png)
+![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](/images/cow-ui-fontcolor__dark.png)
 
 ## Detalle de la compra
 
