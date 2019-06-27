@@ -15,7 +15,7 @@ sites_supported:
 
 ## Flow
 
-![QR payment flow at gas stations](/images/mobile/qr-gas-flow.en.svg)
+![Mercado Pago QR payment flow at gas stations](/images/mobile/qr-gas-flow.en.svg)
 
 1. The user scans the QR code from the Mercado Pago or Mercado Libre app. The QR contains your POS_ID with the information of the position where the sale was made.
 
