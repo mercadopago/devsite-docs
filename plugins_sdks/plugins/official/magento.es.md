@@ -141,7 +141,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
     ![Enabling payment method in Magento - Checkout redirect](/images/magento-config-05.gif)
 
 4. ¡Listo! El Checkout Básico ha sido configurado y habilitado con éxito!
-    ![Successfully configured Checkout redirect](/images/magento-save.png)
+    ![Checkout redirect configurado existosamente Mercado Pago Magento](/images/magento-save.png)
 
 
 <a name="Configurar-Mercado-Envios"></a>
