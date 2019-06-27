@@ -156,7 +156,7 @@ Cómo se comporta la opción de pago.
 # Configurando los Tickets
 En esta página se explica cómo configurar el módulo para aceptar pagos con Tickets de Checkout Customizado. En la administración de su tienda, vaya a ficha *WooCommerce > Configuración > Checkout*. En *Opciones de Checkout*, haga clic en *Mercado Pago - Ticket*. Usted debe obtener la siguiente página:
 
-![Setting tickets in Woocommerce](/images/woocommerce-ticket_checkout_config.png)
+![Configurar tickets Mercado Pago Woocommerce](/images/woocommerce-ticket_checkout_config.png)
 
 Si ha configurado correctamente sus credenciales en configuraciones Generales de Mercado Pago, puede ahora personalizar su checkout por Ticket:
 
