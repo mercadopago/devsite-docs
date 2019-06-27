@@ -109,7 +109,7 @@ Una vez realizado este proceso, ejecute el proceso de **Instalación**.
 Este proceso explicará cómo configurar el módulo para aceptar pagos con Checkout Personalizado con tarjeta de crédito y tickets:
 
 1. Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
-    ![Configuring Credit Card and Ticket](/images/magento-config-01.gif)
+    ![Configurando tarjeta de crédito y otros medios de pago Mercado Pago Magento](/images/magento-config-01.gif)
 
 2. Para configurar las credenciales acceda a la opción **Mercado Pago - Custom Checkout**, aparecerá el campo **Public Key** y el campo **Access Token**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
     ![Setting up credentials in Magento](/images/magento-config-02.gif)
