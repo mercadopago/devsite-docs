@@ -179,7 +179,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con suscr
     ![Configurar credenciales - Recurring Payments Mercado Pago Magento](/images/magento-config-re-01.gif)
 
 3. Con las credenciales llenadas, ahora es necesario habilitar el método de pago. Vaya a la opción **Enable** y marque como **Yes**.
-    ![Enabling payment method in Magento - Recurring Payments](/images/magento-config-re-02.gif)
+    ![Activando un medio de pago en Magento Recurring Payments Mercado Pago Magento](/images/magento-config-re-02.gif)
 
 4. ¡Listo! El pago con suscripciones ha sido configurado y habilitado con éxito!
     ![Pagos recurrentes configurados exitosamente Mercado Pago Magento](/images/magento-save.png)
