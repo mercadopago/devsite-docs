@@ -78,7 +78,7 @@ Usted tiene dos opciones para instalar este módulo: desde su tienda de WordPres
 
 3. Deberás encontrar el módulo listo para ser instalado. Haga clic en instalar. ¡Está hecho!
 
-![Installing Mercado Pago with Wordpress](/images/woocommerce_install_plugin.gif)
+![Instalar Mercado Pago con Wordpress](/images/woocommerce_install_plugin.gif)
 
 ### Descarga manual
 
