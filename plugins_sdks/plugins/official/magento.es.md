@@ -200,4 +200,4 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar su cuenta de Mercado Pago o el módulo.
 
 3. ¡Listo! El estado de notificación se ha configurado correctamente.
-    ![Status of Payment Notifications configured successfully](/images/magento-save.png)
+    ![Estado de notificaciones de pago configurado exitosamente Mercado Pago Magento](/images/magento-save.png)
