@@ -101,7 +101,7 @@ Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Po
 data-elements-color="#81ecec" <!-- Color claro -->
 ```
 
-![Font color in light element Mercado Pago](/images/cow-ui-fontcolor__light.png)
+![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](/images/cow-ui-fontcolor__light.png)
 
 Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
