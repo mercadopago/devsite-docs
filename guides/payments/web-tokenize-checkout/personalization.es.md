@@ -76,7 +76,7 @@ data-elements-color="#c0392b"
 
 #### Estado por defecto
 
-![Standard status header Mercado Pago](/images/cow-ui-header.png)
+![Encabezado por defecto Mercado Pago Web Tokenize Checkout](/images/cow-ui-header.png)
 
 #### Personalización
 
