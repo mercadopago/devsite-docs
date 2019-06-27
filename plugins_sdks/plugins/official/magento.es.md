@@ -49,7 +49,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
     ![Instalar Mercado Pago marketplace en Magento](/images/magento-marketplace_1.gif)
 
 2. Al finalizar el proceso de "compra", haga un clic en **Install** y copie la url que estará disponible en la pantalla:
-    ![Installing and copying the access keys](/images/magento-marketplace_2.gif)
+    ![Instalar y copiar las access keys Mercado Pago Magento](/images/magento-marketplace_2.gif)
 
 
 3. Para realizar la instalación vamos a utilizar la herramienta **Magento Connect Manager**, acceda al administrador de Magento y vaya al menu  **System > Magento Connect > Magento Connect Manager**
