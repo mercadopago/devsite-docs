@@ -6,7 +6,7 @@
 
 ### Estado por defecto
 
-![Mercado Pago payment button](/images/paybutton.png)
+![Botón de pago por defecto de Mercado Pago en Web Tokenize Checkout](/images/paybutton.png)
 
 ### Personalización
 
