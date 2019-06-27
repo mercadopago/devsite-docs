@@ -135,7 +135,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 
 2. Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
-    ![Configuring credentials - Checkout redirect](/images/magento-config-04.gif)
+    ![Configurando credenciales - Checkout redirect Mercado Pago Magento](/images/magento-config-04.gif)
 
 3. Con las credenciales llenadas, ahora es necesario habilitar el método de pago. Vaya a la opción **Enable** y marque como **Yes**. Aproveche y configure el Tipo de Checkout (**Type Checkout**) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (**Auto Redirect**).
     ![Activar medio de pago en Magento - Checkout redirect Mercado Pago Magento](/images/magento-config-05.gif)
