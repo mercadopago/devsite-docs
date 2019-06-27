@@ -39,7 +39,7 @@ Para operar con tarjetas de crédito siga estos pasos:
 - Customizado: Deberá configurar las cuotas en la plataforma (total de cuotas, cuotas sin interés, porcentaje de interés y cuota mínima)
 7. Haga clic en salvar.
 
-    ![Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
+    ![Mercado Pago Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
 
 >Estos pasos se deben realizar para todas las banderas que desea activar.
 
