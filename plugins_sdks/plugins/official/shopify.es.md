@@ -46,7 +46,7 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 4. Haga clic en el botón **Activate** para guardar.
 
-  ![Saving All Settings](/images/shopify-config-3.gif)
+  ![Guardando toda la configuración Mercado Pago Shopify](/images/shopify-config-3.gif)
 
 5. ¡Listo! **Mercado Pago** fue instalado y configurado.
 
