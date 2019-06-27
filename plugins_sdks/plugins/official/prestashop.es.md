@@ -91,7 +91,7 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 
 3. Ahora en la pantalla ** PAYMENT SETTINGS ** mantenga Checkout Standard como activo para utilizar el Checkout Redireccionado de Mercado Pago.
 
-![Payments settings redirected checkout](/images/prestashop_checkout_standard.png)
+![Configuración de pagos checkout redirect Mercado Pago Prestashop](/images/prestashop_checkout_standard.png)
 
 4. En PAYMENT METHOD usted puede habilitar las formas de pago con las que trabajará:
 
