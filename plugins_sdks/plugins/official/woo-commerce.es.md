@@ -96,7 +96,7 @@ Usted tiene dos opciones para instalar este módulo: desde su tienda de WordPres
 
 En primer lugar, asegúrese de que el plugin WooCommerce MercadoPago está habilitado, haciendo clic en el item *Plugins* en la barra lateral de WordPress, como se muestra a continuación:
 
-![Enabling Mercado Pago in Woocommerce plugins](/images/woocommerce-plugins_menu.png)
+![Activar Mercado Pago en Woocommerce plugin](/images/woocommerce-plugins_menu.png)
 
 Ahora, en la barra lateral de WordPress, haga clic en la opción *Configuración > Mercado Pago*. Usted debe obtener la siguiente página:
 
