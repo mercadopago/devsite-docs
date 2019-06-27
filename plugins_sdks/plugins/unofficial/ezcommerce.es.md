@@ -23,7 +23,7 @@ Para operar con boleto, siga estos pasos:
 5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#bookmark_credenciales).
 6. Haga clic en "salvar".
 
-    ![Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
+    ![Mercado Pago Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
 
 ### Configurar tarjetas de crédito
 
