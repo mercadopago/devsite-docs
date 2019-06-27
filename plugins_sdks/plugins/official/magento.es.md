@@ -191,7 +191,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con suscr
 Este proceso explicará cómo configurar el estado de pedido para las notificaciones de pago:
 
 1. Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
-![Accessing the payment method to configure the status of Payment Notifications](/images/magento-config-01.gif)
+![Acceder al medio de pago para configurar el estado de una notificación de pago Mercado Pago Magento](/images/magento-config-01.gif)
     ![](/images/magento-config-01.gif)
 
 2. Para configurar los status acceda a la opción **Mercado Pago - Global Configuration**, vaya a la opción **Order Status Options**. Para cada estado de pago usted puede elegir un estado de pedido, cuando su tienda recibe una notificación de pago el módulo actualizará automáticamente el pedido con el estado configurado. Para guardar la configuración haga un clic en el botón **Save Config**.
