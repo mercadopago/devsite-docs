@@ -209,7 +209,7 @@ Para utilizar Mercado Envíos, [debe habilitarlo en su cuenta de Mercado Pago.](
 ### Cree la zona y los medios de envío
 Para usar Mercado Envíos, necesita que lo configure como un medio de envío en WooCommerce. Sólo tienes que seguir los siguientes pasos:
 
-1. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Envío*. En *Zona de Envío*, haga clic en *Agregar zona de envío*. Introduzca el nombre de la zona, seleccione las regiones dentro de esta zona y haga clic en *Guardar cambios*.<br>![Creating the Shipping Zone of the Mercado envios in Woocommerce](/images/woocommerce-me_0.png)
+1. En la administración de su tienda, vaya a la ficha *WooCommerce > Configuración > Envío*. En *Zona de Envío*, haga clic en *Agregar zona de envío*. Introduzca el nombre de la zona, seleccione las regiones dentro de esta zona y haga clic en *Guardar cambios*.<br>![Crear zona de envío de Mercado Envíos Mercado Pago Woocommerce](/images/woocommerce-me_0.png)
 2. Haga clic en *ver* de la zona creada.<br>![Created zone settings in Woocommerce](/images/woocommerce-me_1.png)
 3. Haga clic en *Agregar medio de envío* y seleccione *Mercado Envíos - Normal* o *Mercado Envíos - Express*. Este proceso tiene que ser repetido dos veces, hasta que normal y expreso sean configurados.<br>![Adding Mercado Envios as Shipping Method in Woocommerce](/images/woocommerce-me_2.png)
 4. Ahora usted puede también fijar la opción *Envío Gratis* y/o mostrar el *Tiempo de Entrega* estimado en el cálculo del envío.<br>![Setting free shipping and delivery time](/images/woocommerce-me_3.png)
