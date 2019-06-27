@@ -249,7 +249,7 @@ Cómo se comporta la opción de pago.
 
 ### Creación de un Producto Asignable
 Una suscripción necesita un tipo especial de producto, que será vendido periódicamente. Puede configurar un producto para que se pueda asignar siguiendo los siguientes pasos:
-1. Vaya a *Productos* en el menú lateral y haga clic en el botón *Agregar Producto*. La página abierta debe contener los detalles del producto y los campos en la ventana *Datos del Producto*;<br>![Setting subscription products pages](/images/woocommerce-subscription_checkout_product.png)
+1. Vaya a *Productos* en el menú lateral y haga clic en el botón *Agregar Producto*. La página abierta debe contener los detalles del producto y los campos en la ventana *Datos del Producto*;<br>![Página de configuración de suscripción Mercado Pago Woocommerce](/images/woocommerce-subscription_checkout_product.png)
 2. Completa la información de su producto (nombre, precio, imágenes, etc) y entonces marque el checkbox *Producto Recurrente*;
 3. Llene los campos de información para la suscripción: *Frecuencia* (frecuencia que los cobros se harán a su cliente), *Tipo de Frecuencia* (el tipo de frecuencia puede estar en [Días] o [Meses]) y *Fecha de Finalización* (fecha en que debe finalizar la suscripción).
 
