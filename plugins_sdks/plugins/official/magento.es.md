@@ -112,7 +112,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
     ![Configurando tarjeta de crédito y otros medios de pago Mercado Pago Magento](/images/magento-config-01.gif)
 
 2. Para configurar las credenciales acceda a la opción **Mercado Pago - Custom Checkout**, aparecerá el campo **Public Key** y el campo **Access Token**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
-    ![Setting up credentials in Magento](/images/magento-config-02.gif)
+    ![Configurar las credenciales Mercado Pago Magento](/images/magento-config-02.gif)
 
 > Existen dos tipos de credenciales:
 > * Modo Sandbox: Las credenciales de este modo se utilizan para realizar pruebas.
