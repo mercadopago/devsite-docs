@@ -182,7 +182,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con suscr
     ![Enabling payment method in Magento - Recurring Payments](/images/magento-config-re-02.gif)
 
 4. ¡Listo! El pago con suscripciones ha sido configurado y habilitado con éxito!
-    ![Recurring Payments configured successfully](/images/magento-save.png)
+    ![Pagos recurrentes configurados exitosamente Mercado Pago Magento](/images/magento-save.png)
 
 
 <a name="Configuración-de-estado-de-las-notificaciones-de-Pago"></a>
