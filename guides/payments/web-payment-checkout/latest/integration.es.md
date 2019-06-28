@@ -187,7 +187,7 @@ Redirige al init_point de la preferencia
         <title>Pagar</title>
     </head>
     <body>
-        <a href="$$init_point$$">Pagar con Mercado Pago</a>
+        <a href="$$init_point$$" target="_blank">Pagar</a>
     </body>
 </html>
 ```
@@ -215,7 +215,7 @@ Redirige al init_point de la preferencia
         <title>Pagar</title>
     </head>
     <body>
-        <a href="<%= @init_point %>">Pagar con Mercado Pago</a>
+        <a href="<%= @init_point %>" target="_blank">Pagar</a>
     </body>
 </html>
 ```
