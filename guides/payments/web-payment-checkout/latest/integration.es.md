@@ -156,9 +156,21 @@ reference.Items.Add(
 preference.Save()"
 ```
 ```curl
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="**ENV_ACCESS_TOKEN**"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}'
 ```
 ]]]
-
 
 #### 2) Suma el Checkout a tu sitio
 
