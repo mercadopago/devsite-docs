@@ -3,44 +3,43 @@ sites_supported:
   - mla
 ---
 
-# Prueba tu Integración
+# Prueba tu integración
 
 ## Usuarios de prueba
-Los usuarios de prueba permiten interactuar con el Web Checkout y generar flujos de pagos, en un escenario idéntico a lo que será tu integración en producción.sería en la vida real.
+Los usuarios de prueba te permiten interactuar con el Web Checkout y generar flujos de pagos en un espacio que es una copia exacta de tu integración.
 
 ## Tipos de Usuarios de Prueba
 
-Conceptualmente hay dos tipos de usuarios de prueba: comprador y vendedor.
+Hay dos tipos de usuarios de prueba: comprador y vendedor.
 
-* Vendedor: el que utilizarás para configurar la aplicación y credenciales para cobrar
-* Comprador: el que utilizarás para probar el flujo de pago para un usuario registrado
+* Vendedor: es la cuenta que usas para configurar la aplicación y credenciales para el cobro.
+* Comprador: es la cuenta que se usa para probar el proceso de compra.
 
-Puedes diferenciar los usuarios de prueba que creaste por rol, uno que actúe como vendedor y otro como comprador. El primero, es el que usarás para configurar las credenciales, y el segundo es el que realizará el flujo de Pago cuando se abra el Web Checkout. 
 Como usuario comprador, podrás interactuar con el Web Checkout de dos formas:
 
-1. Como usuario invitado:, solo necesitas ingresar ingresando una dirección de correo electrónico. que recibirá un email con la información del pago realizado.
-1. Como usuario registrado(n una cuenta de Mercado Pago):, ingresando usuario y contraseña. En caso de tener disponible dinero en cuenta y/o tarjetas guardadas, se verán  habilitados como medios de pago.
+1. Como usuario invitado: solo necesitas completar la dirección de correo electrónico.
+1. Como usuario registrado: accedes a la cuenta de Mercado Pago con el usuario y contraseña. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
 
-> Para realizar las pruebas es necesario que crees dos usuarios
+## Cómo crear usuarios
+Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
 
-## Crea usuarios
-Genera un usuario de prueba, ejecutando el siguiente curl
+Genera un usuario de prueba ejecutando el siguiente curl:
+
+**Solicitud**
+
 [[[
  ```curl
-===
-Request
-===
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
+"https://api.mercadopago.com/users/test_user?access_token=TEST-7802846747055705-061416-c0c9b443246bef3a3bab6a19f36c93c0-390383281" \
 -d '{"site_id":"MLA"}'
 ```
 ]]]
+
+**Respuesta**
+
 [[[
- ```json
-===
-Response
-===
+ ```curl
 {
     "id": 123456,
     "nickname": "TT123456",
@@ -55,42 +54,53 @@ Response
 >
 >Importante
 >
-> * Puedes tener hasta 10 cuentas de usuarios de prueba en simultáneo, por lo cual te recomendamos guardar el email y password de cada uno de los usuarios que generes.
+> * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
 * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
 * Para hacer pagos de prueba usa montos bajos.
 * Tanto el comprador como el vendedor deben ser usuarios de prueba.
-* No es posible retirar a cuentas bancarias el dinero recibido en las pruebas.
+* Usa medios de pago para pruebas, ya que no es posible retirar el dinero.
 
 ## Prueba el flujo de Pago
 ## Vendedor
 
-1. Inicia sesión en Mercado Pago con una cuenta de usuario de prueba
-1. Configura la aplicación
-1. Configura tus credenciales
+Configura la preferencia usando las [credenciales](https://www.mercadopago.com/mla/account/credentials) del usuario de prueba que quieras usar como vendedor.
 
 ## Comprador invitado
 
 #### Pruebas con tarjeta de crédito o débito
 
-1. Seleccioná el medio de pago “Tarjeta”
-1. Completa los datos con una [tarjeta de prueba](pending)
+* Seleccioná el medio de pago “Tarjeta”
+* Completa los datos con una tarjeta de prueba
+
+Tarjeta | Número
+------------ | -------------
+Mastercard | 5031 7557 3453 0604
+Visa | 4170 0688 1010 8020
+American Express | 3711 8030 3257 522
+
+* Completa el e-mail y ¡listo!
 
 ## Comprador registrado (cuenta de Mercado Pago)
 
-#### Pruebas con tarjeta de crédito o débito
+#### Pruebas con tarjeta de crédito
 
-1. Cierra sesión del usuario de prueba vendedor
-1. Inicia sesión en Mercado Pago con una cuenta de usuario de prueba comprador
-1. Seleccioná el medio de pago “Tarjeta”
-1. Completa los datos con una [tarjeta de prueba](pending)
+1. Cierra sesión del usuario de prueba vendedor.
+1. Inicia sesión en Mercado Pago con una cuenta de usuario de prueba comprador.
+1. Seleccioná el medio de pago _Tarjeta_
+1. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
 
-## Completa el formulario de alta
+## Comenzar a recibir pagos
 
-Sólo debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/), desde la  sección Credenciales.
+Para empezar a cobrar, debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/).
+
 Al completar los campos, ten en cuenta:
 
 * Documento: refiere al tipo de documento y el número sin puntos o barras, por ejemplo “DNI 12345678”.
 * Dirección postal: ingresa un e-mail de contacto del sitio.
+
+Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
+
+
 
 
 
