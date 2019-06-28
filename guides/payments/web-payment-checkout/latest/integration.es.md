@@ -215,7 +215,7 @@ Redirige al init_point de la preferencia
         <title>Pagar</title>
     </head>
     <body>
-        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+        <a href="<%= @init_point %>">Pagar con Mercado Pago</a>
     </body>
 </html>
 ```
