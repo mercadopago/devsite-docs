@@ -7,7 +7,7 @@ sites_supported:
   - mpe
 ---
 
-# Busca e conciliação
+# Busca e Conciliação
 
 Uma parte importante da geração de pagamentos é a conciliação. A API permite realizar buscas de seus `advanced payments` para poder conciliar todas as operações feitas através do seu Marketplace.
 
@@ -16,7 +16,7 @@ Uma parte importante da geração de pagamentos é a conciliação. A API permit
 #### Request
 ```curl
 curl -X GET \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&limit=10&offset=0'
 ```
@@ -52,28 +52,32 @@ O qual retorna os resultados numa estrutura que mostra, também, a quantidade de
 
 #### Filtros de busca
 
-Estado                       |Descrição                                                          
------------------------------|-------------------------------------------------------------------
-date_created                 |Data de criação do Advanced Payment.                              
-status                       |Estado do Advanced Payment.                                       
-payments.id                  |ID do pagamento do comprador.                                      
-payments.payment_method_id   |Método do pagamento.                                               
-payments.external_reference  |ID gerado para este pagamento em específico.                       
-payments.transaction_amount  |Valor do pagamento.                                                
-payer.id                     |ID do comprador.                                                   
-payer.email                  |Email do comprador.                                                
-disbursements.collector_id   |ID do vendedor.                                                    
-external_reference           |ID gerado pelo marketplace que identifica ao Advanced Payment.     
+Estado                      |Descrição                                                          |
+----------------------------|-------------------------------------------------------------------|
+status                      |Estado do Advanced Payment.                                        |
+payments.id                 |ID do pagamento do comprador.                                      |
+payments.payment_method_id  |Método do pagamento.                                               |
+payments.payment_type_id    |Tipo de meio de pagamento                                          |     
+payer.id                    |ID do comprador.                                                   |
+payer.email                 |Email do comprador.                                                |
+disbursement.collector_id   |ID do vendedor.                                                    |
+external_reference          |ID gerado pelo marketplace que identifica ao Advanced Payment.     |
 
-#### Filtrar busca por data
+#### Filtros de busca por intervalo de datas
 
-Estado                       |Exemplo de Valores Esperados                                                                          
------------------------------|------------------------------------------------------------------------------------------------------
-range                        |**date_created**: Data criação transação, **date_last_updated**: Data última atualização da transação 
-begin_date                   |2019-05-30T00:00:00.000**-04:00**                                                                     
-end_date                     |2019-05-30T23:59:59.000**-04:00**                                                                     
+Também é possível realizar a busca por datas específicas:
 
-Para filtrar uma consulta por data é preciso utilizar a combinação dos três estados, no campo range deve se informar **uma das duas opções possíveis marcadas em negrito**, o campo **end_date** precisa sempre ser mais recente temporalmente que o **begin_date**, o **fuso horário** ao final deve ser preservado, o restante é editável conforme expressão: ANO-MÊS-DIA”T”HORA-MINUTO-SEGUNDO-MILÉSIMO.
+* `range`: O atributo de busca, pode ser `date_created` or `date_last_updated`.
+* `begin_date`: Data de início da busca (ISO 8601), por exemplo `2017-05-06T00:00:00.000-04:00`.
+* `end_date`: Data de término da busca (ISO 8601), por exemplo `2017-05-06T23:59:59.999-04:00`.
+
+#### Request
+```curl
+curl -X GET \
+    -H 'Accept":"application/json' \
+    -H 'Content-Type: application/json' \
+    'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&range=date_created&begin_date=2017-05-06T00:00:00.000-04:00&end_date=2017-05-06T23:59:59.999-04:00'
+```
 
 ### Exportar Activities
 
