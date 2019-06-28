@@ -7,24 +7,23 @@ sites_supported:
 
 ## ¿Cómo me integro? 
 
-![Integration](/images/web-payment-checkout/integration-v2.png)
+![Integration](/images/web-payment-checkout/flow-integration-v2.png)
 
 Primero, descarga el SDK que necesites usar en la carpeta de tu proyecto.
 
 
 Luego, sigue estos pasos:
 
-1. Arma tu preferencia
 1. Genera tu preferencia
 1. Suma el Checkout a tu sitio
 
 ## Pasos para integrarte
 
-Instalar el Web Checkout consta de tres pasos: 
+Instalar el Web Checkout consta de dos pasos: 
 
-#### 1) Arma tu preferencia
+#### 1) Genera tu preferencia
 
-En un archivo del lenguaje que elijas dentro de tu proyecto, escribe el siguiente código que consta de tres partes:
+En el lenguaje que elijas dentro de tu proyecto, escribe el siguiente código que consta de tres partes:
 
 * Suma la SDK descargada de Mercado Pago en tu proyecto:
 
@@ -53,7 +52,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-* Agrega las credenciales para habilitar el uso de la SDK de Mercado Pago:
+* Agrega las [credenciales](https://www.mercadopago.com/mla/account/credentials) para habilitar el uso de la SDK de Mercado Pago:
 
 [[[
  ```php
@@ -80,7 +79,7 @@ MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
 ```
 ]]]
 
-* Configura la preferencia según tu producto o servicio usando la siguiente línea como estructura:
+* Configura la preferencia según tu producto o servicio:
 
 [[[
  ```php
@@ -156,55 +155,17 @@ reference.Items.Add(
 );
 preference.Save()"
 ```
+```curl
+```
 ]]]
 
-* Por último, obtiene la URL para tu sitio:
+
+#### 2) Suma el Checkout a tu sitio
 
 [[[
- ```php
- // TODO
- ```
-```node
-// TODO
-```
-```java
-// TODO
-```
-```ruby
-// TODO
-```
-```csharp
-// TODO
-```
-]]]
-
-
-#### 2) Genera tu preferencia
-[[[
- ```phph
+```php
 ===
-Guarda tu archivo y luego, ejecuta el siguiente código desde la terminal, reemplazando el nombre del archivo por el que armaste:
-===
-php {nombre-de-tu-archivo}.php
-```
-```node
-// TODO
-```
-```java
-// TODO
-```
-```ruby
-// TODO
-```
-```csharp
-// TODO
-```
-]]]
-
-#### 3) Suma el Checkout a tu sitio
-```html
-===
-Modifica la URL por la de tu Web Checkout
+Redirige al init_point de la preferencia
 ===
 <!DOCTYPE html>
 <html>
@@ -212,10 +173,67 @@ Modifica la URL por la de tu Web Checkout
         <title>Pagar</title>
     </head>
     <body>
-        <a href="URL_WEB_CHECKOUT">Pagar con Mercado Pago</a>
+        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
     </body>
 </html>
 ```
+```node
+===
+Redirige al init_point de la preferencia
+===
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagar</title>
+    </head>
+    <body>
+        <a href="$$init_point$$">Pagar con Mercado Pago</a>
+    </body>
+</html>
+```
+```java
+===
+Redirige al init_point de la preferencia
+===
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagar</title>
+    </head>
+    <body>
+        <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
+    </body>
+</html>
+```
+```ruby
+===
+Redirige al init_point de la preferencia
+===
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagar</title>
+    </head>
+    <body>
+        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+    </body>
+</html>
+```
+```csharp
+===
+Redirige al init_point de la preferencia
+===
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagar</title>
+    </head>
+    <body>
+        <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+    </body>
+</html>
+```
+]]]
 
 #### ¡Excelente! Terminaste tu integración.
 _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://docs.google.com/document/d/1ZexGiAgDG_zzasbjFOUrReB7wZF4FOHz9gQqaGSAr-0/edit?ts=5d13fe3a#bookmark=id.wa541l8g0ojd)._
