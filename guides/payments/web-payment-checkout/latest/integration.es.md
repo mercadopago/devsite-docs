@@ -56,24 +56,39 @@ require 'mercadopago.rb'
 
 [[[
  ```php
+ // SDK de Mercado Pago
+ require __DIR__ .  '/vendor/autoload.php';
+ 
  //Agrega credenciales
 MercadoPago\SDK::setAccessToken('TUS-CREDENCIALES-AQUI');
 ```
 ```node
+// SDK de Mercado Pago
+var mercadopago = require('mercadopago');
+
 //Agrega credenciales
 mercadopago.configure({
     access_token: 'TUS-CREDENCIALES-AQUI'
 });
 ```
 ```java
+// SDK de Mercado Pago
+import com.mercadopago.MercadoPago;
+
 //Agrega credenciales
-MercadoPago.SDK.setAccessToken(TUS-CREDENCIALES-AQUI);
+MercadoPago.SDK.setAccessToken("TUS-CREDENCIALES-AQUI");
 ```
 ```ruby
+// SDK de Mercado Pago
+require 'mercadopago.rb'
+
 //Agrega credenciales
 MercadoPago::SDK.access_token = "TUS-CREDENCIALES-AQUI"
 ```
 ```csharp
+// SDK de Mercado Pago
+using MercadoPago;
+
 //Agrega credenciales
 MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
 ```
@@ -83,6 +98,12 @@ MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
 
 [[[
  ```php
+ // SDK de Mercado Pago
+ require __DIR__ .  '/vendor/autoload.php';
+ 
+ //Agrega credenciales
+MercadoPago\SDK::setAccessToken('TUS-CREDENCIALES-AQUI');
+
 // Crea un objeto de preferencia
  $preference = new MercadoPago\Preference();
 
@@ -95,6 +116,14 @@ MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
   $preference->save();
 ```
 ```node
+// SDK de Mercado Pago
+var mercadopago = require('mercadopago');
+
+//Agrega credenciales
+mercadopago.configure({
+    access_token: 'TUS-CREDENCIALES-AQUI'
+});
+
 // Configura tu preferencia
 var preference = {
   items: [
@@ -114,6 +143,12 @@ mercadopago.preferences.create(preference)
   });
 ```
 ```java
+// SDK de Mercado Pago
+import com.mercadopago.MercadoPago;
+
+//Agrega credenciales
+MercadoPago.SDK.setAccessToken("TUS-CREDENCIALES-AQUI");
+
 //Crea un objeto de preferencia
 Preference preference = new Preference();
 
@@ -126,6 +161,12 @@ preference.appendItem(item);
 preference.save();
 ```
 ```ruby
+// SDK de Mercado Pago
+require 'mercadopago.rb'
+
+//Agrega credenciales
+MercadoPago::SDK.access_token = "TUS-CREDENCIALES-AQUI"
+
 //Crea un item en la preferencia
 item = MercadoPago::Item.new({
   title:        ""Mi producto"",
@@ -140,6 +181,12 @@ preference = MercadoPago::Preference.new({
 preference.save()
 ```
 ```csharp
+// SDK de Mercado Pago
+using MercadoPago;
+
+//Agrega credenciales
+MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
+
 //Crea un objeto de preferencia
 Preference preference = new Preference(); 
 
