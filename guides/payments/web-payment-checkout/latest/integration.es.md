@@ -128,7 +128,7 @@ mercadopago.configure({
 var preference = {
   items: [
     
-      title: 'Mi productoe',
+      title: 'Mi producto',
       quantity: 1,
       currency_id: 'ARS',
       unit_price: 75.56
@@ -154,7 +154,7 @@ Preference preference = new Preference();
 
 // Crea un ítem en la preferencia
 Item item = new Item();
-item.setTitle(""Mi producto"")
+item.setTitle("Mi producto")
     .setQuantity(1)
     .setUnitPrice((float) 75.56);
 preference.appendItem(item);
@@ -169,7 +169,7 @@ MercadoPago::SDK.access_token = "TUS-CREDENCIALES-AQUI"
 
 //Crea un item en la preferencia
 item = MercadoPago::Item.new({
-  title:        ""Mi producto"",
+  title:        "Mi producto",
   quantity:     1,
   unit_price:   75.56
 })
@@ -194,9 +194,9 @@ Preference preference = new Preference();
 reference.Items.Add(
   new Item()
   {
-    Title = ""Mi producto"", 
+    Title = "Mi producto", 
     Quantity = 1,
-    CurrencyId = ""ARS"",
+    CurrencyId = "ARS",
     UnitPrice = (float)75.56
   }
 );
