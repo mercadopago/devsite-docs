@@ -312,4 +312,26 @@ reference.Items.Add(
 );
 preference.Save()"
 ```
+```curl
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="ENV_ACCESS_TOKEN"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"items": [
+	{
+		"id_product":1,
+		"quantity":1,
+		"unit_price": 234.33,
+		"titulo":"Mi producto"
+	},
+	{
+		"id_product":2,
+		"quantity":2,
+		"unit_price": 255.33,
+		"titulo":"Mi producto 2"
+	}
+]
+}'
+```
 ]]]
