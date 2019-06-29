@@ -162,9 +162,6 @@ items: [
 ```
 ```java
 // ...
-// Create a preference object
-Preference preference = new Preference();
-// Create an item object
 Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
