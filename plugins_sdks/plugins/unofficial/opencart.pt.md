@@ -102,7 +102,7 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 
 1. Novamente em **Extensions > Payments > MercadoPago**, clique em **Edit** para configurar sua conta do Mercado Pago:
 
- ![Mercado Pago Account](/images/opencart_mpaccount.png)
+ ![Open cart configuration page](/images/opencart_mpaccount.png)
 
 2.  Configure seu **CLIENT_ID** e **CLIENT_SECRET**, ou **PUBLIC_KEY** e **ACCESS_TOKEN** (dependendo de qual módulo você está utilizando). [Obtenha suas credenciais](https://www.mercadopago.com/mlb/account/credentials).
   

@@ -13,7 +13,7 @@ sites_supported:
 
 ## Flujo
 
-![QR PDV Flow](/images/mobile/qr-user-flow.es.svg)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.svg)
 
 ## Conceptos
 

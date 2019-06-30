@@ -14,7 +14,7 @@ sites_supported:
 
 ## Flow
 
-![QR POS Flow](/images/mobile/qr-user-flow.en.svg)
+![Payment flow with QR at the point of sale Mercado Pago](/images/mobile/qr-user-flow.en.svg)
 
 ## Concepts
 

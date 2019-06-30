@@ -17,21 +17,21 @@ If you want to know more about ** Mercado Pago ** visit our [home page] (https:/
 1. Access the administrator of your store on the platform.
 2. In the settings menu, select the option ** MEANS OF PAYMENT **
 
-    ![CloudShop Configuration](/images/NuvemShopmeiodepagamento1.png)
+    ![Payments Modules - Nuvem Shop](/images/NuvemShopmeiodepagamento1.png)
 
 
 3. Click the ** ACTIVATE ** button on the Mercado Pago table.
 
-    ![CloudShop Configuration](/images/NuvemShopativarMP.png)
+    ![Enabling Mercado Pago in Nuvem Shop](/images/NuvemShopativarMP.png)
 
 4. Choose the payment methods: Credit Card and Ticket
 
-    ![CloudShop Configuration](/images/NuvemShopativarMP2.png)
+    ![Payments Method page - Nuvem shop](/images/NuvemShopativarMP2.png)
 
 
 5. You will be redirected to a Mercado Pago page in order to allow the connection between the Cloud Shop Platform and your Mercado Pago account, making all necessary settings
 
-![CloudShop Configuration](/images/NuvemShoppermitirMP.png)
+![Authorization message from the Nuvem Shop with the Mercado Pago](/images/NuvemShoppermitirMP.png)
 
 
 

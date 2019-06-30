@@ -35,7 +35,7 @@ This library provides developers with a simple set of bindings to the Mercado Pa
     ```
 3. Using Resource objects.
 
-![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
+![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 
 **Sample**
 

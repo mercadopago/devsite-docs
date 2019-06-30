@@ -34,7 +34,7 @@ Todos os nossos pagamentos são analisados por nossa ferramenta de prevenção d
 
 Ofereça aos seus usuários a melhor experiência de pagamento, tanto no Android como no iOS.
 
-![androidiosfinal](/images/mobile-sdk-flow.png)
+![Mercado Pago sdk android](/images/mobile-sdk-flow.png)
 
 ### Integrar o checkout é muito fácil:
 

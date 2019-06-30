@@ -23,7 +23,7 @@ To trade with ticket, follow this steps:
 5. Fill in the data for the "Específico" group. For Client ID and Client Secret, see the [Credentials section](#bookmark_credentials).
 6. Click "salvar".
 
-    ![EZ ticket](/images/ezcommerce-ticket-1.gif)
+    ![Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
 
 ### Set up Credit Cards
 
@@ -40,7 +40,7 @@ To trade with credit cards, follow this steps:
 - Customizado: The interests must be configures in the plataform.
 7. Click "salvar".
 
-    ![EZ credit_card](/images/ezcommerce-credit-card-1.gif)
+    ![Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
 
 >These steps should be performed for all credit card brands you want to enable.
 

@@ -13,13 +13,13 @@ sites_supported:
 
 ----[mlb]----
 
-> ![Pagos QR](/images/qr.pt.png)
+> ![Pagos QR Mercado Pago](/images/qr.pt.png)
 ------------
 ----[mla]----
-> ![Pagos QR](/images/qr_mla.es.png)
+> ![Pagos QR Mercado Pago](/images/qr_mla.es.png)
 ------------
 ----[mlm]----
-> ![Pagos QR](/images/qr_mlm.es.png)
+> ![Pagos QR Mercado Pago](/images/qr_mlm.es.png)
 ------------
 
 

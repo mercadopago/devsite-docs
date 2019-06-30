@@ -94,7 +94,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 2. Again in **extensions > payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
 
-	![Mercado Pago Account](https://raw.github.com/mercadopago/cart-opencart/master/README.img/MPAccount.png)
+	![Open cart configuration page](https://raw.github.com/mercadopago/cart-opencart/master/README.img/MPAccount.png)
 
 ## Configuration
 

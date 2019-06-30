@@ -31,23 +31,23 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 1. Acessar o administrador de sua loja na plataforma.
 
-    ![ISET Configuracao](/images/iset-img1.png)
+    ![Iset Login Page](/images/iset-img1.png)
 
 2. No menu lateral, no item **Módulos**, clicar na opção **Formas de Pagamento**
 
-    ![ISET Configuracao](/images/iset-img2.png)
+    ![Configuring Payment Modes - Iset](/images/iset-img2.png)
 
 3. Será carregado uma página com a lista de todos os módulos de pagamentos disponíveis
 
-    ![ISET Configuracao](/images/iset-img3.png)
+    ![Payment method page - Iset](/images/iset-img3.png)
 
 4. Clique sobre o ícone de ferramenta para abrir as opções de configurações
 
-    ![ISET Configuracao](/images/iset-img13.png)
+    ![Mercado Pago Tool Icon - Iset](/images/iset-img13.png)
 
 5. Será carregado sobre a página uma nova página de configurações exclusivas para o Mercado Pago
 
-    ![ISET Configuracao](/images/iset-img4.png)
+    ![Mercado Pago Payment Methods - Iset](/images/iset-img4.png)
 
 Abaixo iremos detalhar as configurações disponíveis na plataforma.
 
@@ -61,7 +61,7 @@ Para ativar o meio de pagamento, é necessário selecionar uma opção do campo 
 
 Selecione a opção de ativo que melhor se encaixe no seu negócio, recomendamos que seja ativado tanto para computador quanto para mobile, dessa forma o Mercado Pago como meio de pagamento estará disponível para os seus clientes que vierem pelo computador e pelo celular.
 
-![ISET Configuracao](/images/iset-img5.png)
+![Device integration configuration](/images/iset-img5.png)
 
 ### Selecionando os meios de pagamentos
 
@@ -70,7 +70,7 @@ Na ISET, você tem a flexibilidade de selecionar quais formas de pagamento desej
     * Boleto bancário
     * Cartão de crédito: VISA, MASTER, AMERICAN EXPRESS, DINNERS, ELO, HIPERCARD e Mercado Livre
 
-![ISET Configuracao](/images/iset-img6.png)
+![Ticket and credit card setup - Iset](/images/iset-img6.png)
 
 ### Escolhendo o tipo de checkout
 
@@ -80,13 +80,13 @@ Para escolher o checkout transparente, selecione a opção através do item **Mo
     * Transparente: _checkout transparente_
     * Ambos: _habilita os dois modelos de checkout, redirect e transparente_
 
-![ISET Configuracao](/images/iset-img7.png)
+![Checkout button template - Iset](/images/iset-img7.png)
 
 ### Configurando as credenciais do Mercado Pago
 
 Para ter acesso as credenciais, basta acessar o [link](https://www.mercadopago.com/mlb/account/credentials), para obter os dados de public_key (chave pública) utilize a aba *checkout transparente* e para obter o client_id e client_secret utilize a aba *checkout básico*:
 
-![ISET Configuracao](/images/iset-img14.png)
+![Configuring the client Id and client secret - Iset](/images/iset-img14.png)
 
 ### Configurações Avançadas
 
@@ -94,13 +94,13 @@ Para ter acesso as credenciais, basta acessar o [link](https://www.mercadopago.c
 
 Configuração que define estados personalizados para os pedidos a partir dos status de pagamento:
 
-![ISET Configuracao](/images/iset-img8.png)
+![Order Status Setup - Iset](/images/iset-img8.png)
 
 #### Personalização de parcelas
 
 Configuração que define a quantidade máxima de parcelas, valores minimos e aplicação de descontos sobre as parcelas.
 
-![ISET Configuracao](/images/iset-img10.png)
+![Setting the number of Installments - Iset](/images/iset-img10.png)
 
 Atenção: Está configuração irá sobrepor as configurações obtidas pela API do mercado pago, caso você tenha algum acordo comercial com o Mercado Pago que seja diferenciado, as configurações realizadas nesta parte deverão ser assessoradas pela equipe do Mercado Pago. Em caso de dúvidas entre em [contato conosco](https://www.mercadopago.com.br/developers/pt/support).
 
@@ -108,44 +108,44 @@ Atenção: Está configuração irá sobrepor as configurações obtidas pela AP
 
 A plataforma possibilita a edição de duas mensagens de textos no que serão exibidas antes e depois da finalização do pagamento.
 
-![ISET Configuracao](/images/iset-img11.png)
+![Setting up texts in Checkout - Iset](/images/iset-img11.png)
 
 ### Habilitando Cupom de Desconto
 
 A funcionalidade de cupom de desconto é exclusiva no checkout para o Mercado Pago como meio de pagamento, através desta configuração é possível utilizar os cupons de descontos promovidos pelo Mercado Pago ou os cupons que você pode criar através de sua conta Mercado Pago, acesse o [link](https://www.mercadopago.com.br/settings/my-business) na seção **ofereça desconto**.
 
-![ISET Configuracao](/images/iset-img9.png)
+![Enabling discount coupon - Iset](/images/iset-img9.png)
 
 **Após finalizar as configurações, pode clicar no botão FECHAR e posteriormente no botão "SALVAR ALTERAÇÕES"**.
 
 Será exibido uma mensagem de sucesso no rodapé da página:
 
-![ISET Configuracao](/images/iset-img15.png)
+![Settings successfully saved - Iset](/images/iset-img15.png)
 
 ## Exemplos
 
 Utilizamos uma loja virtual de demonstração da ISET para mostrar o resultado dos tipos de checkouts para os clientes.
 
-![ISET Configuracao](/images/iset-checkout.png)
+![Payment methods - Iset](/images/iset-checkout.png)
 
 ### Visual do Checkout Transparente
 
 **_Cartão de Crédito_**
 
-![ISET Configuracao](/images/iset-checkout-cartao.png)
+![Visual Transparent Checkout - Iset](/images/iset-checkout-cartao.png)
 
 **_Boleto Bancário_**
 
-![ISET Configuracao](/images/iset-checkout-boleto.png)
+![Ticket - Iset](/images/iset-checkout-boleto.png)
 
 ### Visual do Checkout Redirect
 
-![ISET Configuracao](/images/iset-checkout-redirect.png)
+![Checkout redirect Visual- Iset](/images/iset-checkout-redirect.png)
 
 Após clicar em **FINALIZAR COMPRA** o cliente será redirecionado para uma página de confirmação da loja:
 
-![ISET Configuracao](/images/iset-checkout-redirect2.png)
+![Successfully created order page - Iset](/images/iset-checkout-redirect2.png)
 
 Para efetuar o pagamento é necessário clicar no botão **Efetuar Pagamento**, então o usuário será redirecionado para uma página do Mercado Pago:
 
-![ISET Configuracao](/images/iset_gif01.png)
+![Finalize the order in Mercado Pago - Checkout Redirect- Iset](/images/iset_gif01.png)

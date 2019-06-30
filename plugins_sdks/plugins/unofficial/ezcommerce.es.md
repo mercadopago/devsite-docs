@@ -23,7 +23,7 @@ Para operar con boleto, siga estos pasos:
 5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#bookmark_credenciales).
 6. Haga clic en "salvar".
 
-    ![EZ ticket](/images/ezcommerce-ticket-1.gif)
+    ![Mercado Pago Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
 
 ### Configurar tarjetas de crédito
 
@@ -39,7 +39,7 @@ Para operar con tarjetas de crédito siga estos pasos:
 - Customizado: Deberá configurar las cuotas en la plataforma (total de cuotas, cuotas sin interés, porcentaje de interés y cuota mínima)
 7. Haga clic en salvar.
 
-    ![EZ credit_card](/images/ezcommerce-credit-card-1.gif)
+    ![Mercado Pago Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
 
 >Estos pasos se deben realizar para todas las banderas que desea activar.
 

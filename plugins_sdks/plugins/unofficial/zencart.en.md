@@ -56,7 +56,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 4. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
-  ![Installation Instructions](/images/zencart-credentials.png) <br />
+  ![Setting client id and client secret](/images/zencart-credentials.png) <br />
 
 	Get your CLIENT_ID and CLIENT_SECRET in the following address:
   * Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
@@ -69,7 +69,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 5. Set the status for IPN (Instant Payment Notification):
 
-  ![Installation Instructions](/images/zencart-notification.png) <br />
+  ![Setting notification](/images/zencart-notification.png) <br />
 
   * **Choose the default status for a new order**: Sets up the order status when payments are approved.
   * **Choose the status of approved orders**: Sets up the order status when payments are approved.
@@ -82,11 +82,11 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 6. Other settings. <br/>
 
-![Installation Instructions](/images/zencart-other_config_1.png) <br />
+![Store Category](/images/zencart-other_config_1.png) <br />
 
-![Installation Instructions](/images/zencart-other_config_2.png) <br />
+![Checkout type setting](/images/zencart-other_config_2.png) <br />
 
-![Installation Instructions](/images/zencart-other_config_3.png) <br />
+![Number of installments and other settings](/images/zencart-other_config_3.png) <br />
 
   * **Store Category**: Sets up the category of the store;
   * **Redirect URL**: The Redirect url were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
