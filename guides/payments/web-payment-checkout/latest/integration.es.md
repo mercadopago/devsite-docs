@@ -195,7 +195,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 Preference preference = new Preference(); 
 
 //Crea un item en la preferencia
-reference.Items.Add(
+preference.Items.Add(
   new Item()
   {
     Title = "Mi producto", 
@@ -316,6 +316,7 @@ _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](
 [Personalizar]()
 
 [Configuraciones]()
+
 
 
  
