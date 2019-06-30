@@ -3,7 +3,7 @@ sites_supported:
   - mla
 ---
 
-# Realiza una integración avanzada
+# Integración avanzada
 
 ## Información adicional para la preferencia
 
@@ -292,4 +292,7 @@ Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la 
 Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.
 
 [Gestionar contracargos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/) 
+
+[Ir a Personalizar]()
+
 
