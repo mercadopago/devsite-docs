@@ -5,7 +5,7 @@ sites_supported:
 
 # Integra el Web Checkout
 
-## ¿Cómo me integro? 
+## ¿Cómo me integro?
 
 ![Integration](/images/web-payment-checkout/flow-integration-v2.png)
 
@@ -19,7 +19,7 @@ Luego, sigue estos pasos:
 
 ## Pasos para integrarte
 
-Instalar el Web Checkout consta de dos pasos: 
+Instalar el Web Checkout consta de dos pasos:
 
 #### 1) Genera tu preferencia
 
@@ -58,7 +58,7 @@ require 'mercadopago.rb'
  ```php
  // SDK de Mercado Pago
  require __DIR__ .  '/vendor/autoload.php';
- 
+
  //Agrega credenciales
 MercadoPago\SDK::setAccessToken('TUS-CREDENCIALES-AQUI');
 ```
@@ -100,7 +100,7 @@ MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
  ```php
  // SDK de Mercado Pago
  require __DIR__ .  '/vendor/autoload.php';
- 
+
  //Agrega credenciales
 MercadoPago\SDK::setAccessToken('TUS-CREDENCIALES-AQUI');
 
@@ -127,7 +127,7 @@ mercadopago.configure({
 // Configura tu preferencia
 var preference = {
   items: [
-    
+
       title: 'Mi producto',
       quantity: 1,
       currency_id: 'ARS',
@@ -188,13 +188,13 @@ using MercadoPago;
 MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
 
 //Crea un objeto de preferencia
-Preference preference = new Preference(); 
+Preference preference = new Preference();
 
 //Crea un item en la preferencia
 reference.Items.Add(
   new Item()
   {
-    Title = "Mi producto", 
+    Title = "Mi producto",
     Quantity = 1,
     CurrencyId = "ARS",
     UnitPrice = (float)75.56
@@ -295,12 +295,10 @@ Redirige al init_point de la preferencia
 ]]]
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://docs.google.com/document/d/1ZexGiAgDG_zzasbjFOUrReB7wZF4FOHz9gQqaGSAr-0/edit?ts=5d13fe3a#bookmark=id.wa541l8g0ojd)._
- 
+_Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration-test/)._
+
 >WARNING
 >
 >Importante
 >
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo, ya que no puedes pagar con la misma cuenta que creaste el formulario de pago.
-
- 
