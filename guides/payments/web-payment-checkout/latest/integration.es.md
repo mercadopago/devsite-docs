@@ -303,4 +303,15 @@ _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](
 >
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.
 
+### Próximos pasos
+
+[Prueba tu integración]()
+
+[Integración avanzada]()
+
+[Personalizar]()
+
+[Configuraciones]()
+
+
  
