@@ -6,14 +6,15 @@ sites_supported:
 # Configuraciones
 
 ## Definición de medios de pago
-Por defecto, se ofrecen todos los medios de pago. Si el vendedor quiere excluir alguno puede hacerlo desde la preferencia de pago.
-También se puede definir un medio de pago para que aparezca por defecto o la cantidad de cuotas máximas a ofrecer.
+Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
+También se puede definir un medio de pago para que aparezca por defecto o definir la cantidad de cuotas máximas a ofrecer.
+
 
 Atributo | Descripción
 ------------ | -------------
 payment_methods | Clase que describe los atributos y métodos de medios de Pagos
 excluded_payment_methods | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
-excluded_payment_types | Método que exclusión por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
+excluded_payment_types | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
 installments | Método que define la cantidad de cuotas máximas a ofrecer.
 
 [[[
@@ -108,7 +109,7 @@ Para activar la opción de pago, ve a tus [opciones de negocio](https://www.merc
 ## Modo binario
 Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago sólo puede resultar aprobado o rechazado.
 
-En caso de no estar activado el modo binario, el pago puede terminar pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
+En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
 
 Para activarlo, solo debes configurar como true el atributo _binary_mode_ de la preferencia de pago:
 
@@ -119,7 +120,7 @@ Para activarlo, solo debes configurar como true el atributo _binary_mode_ de la 
 ]]]
 
 ## Vigencia de preferencias
-Si se quiere habilitar el pago de una preferencia con un plazo en particular, se puede activar un periodo de vigencia o concluir directamente con los siguientes atributos:
+Si se quiere habilitar el pago de una preferencia con un tiempo de duración determinado, se puede activar un periodo de vigencia o concluir directamente con los siguientes atributos:
 
 [[[
 ```json
