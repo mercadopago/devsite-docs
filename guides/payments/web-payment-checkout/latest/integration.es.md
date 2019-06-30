@@ -197,7 +197,7 @@ reference.Items.Add(
     Title = "Mi producto", 
     Quantity = 1,
     CurrencyId = "ARS",
-    UnitPrice = (float)75.56
+    UnitPrice = (decimal)75.56
   }
 );
 preference.Save()"
