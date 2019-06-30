@@ -118,7 +118,7 @@ Payer payer = new Payer()
         AreaCode = "",
         Number = "949 128 866"
     },
-    Identification = new Identification() 
+    Identification = new Identification()
     {
         Type = "DNI",
         Number = "12345678"
@@ -186,7 +186,7 @@ preference.Items.Add(
   new Item()
   {
     Id = "1234",
-    Title = "Lightweight Paper Table", 
+    Title = "Lightweight Paper Table",
     Quantity = 3,
     CurrencyId = "ARS",
     UnitPrice = (float)55.41
@@ -198,17 +198,17 @@ preference.Items.Add(
 
 ### Indica URLs de retorno
 
-Al finalizar el proceso de pago, tienes la opción de redireccionar al comprador a tu sitio. 
-Para esto, se utilizan las back_urls. Esta redirección puede ser automática a través del atributo auto_return o un link que permita volver al sitio del vendedor.
+Al finalizar el proceso de pago, tienes la opción de redireccionar al comprador a tu sitio.
+Para esto, se utilizan las `back_urls`. Esta redirección puede ser automática a través del atributo `auto_return` o un link que permita volver al sitio del vendedor.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn.png)
 
 Atributo |	|	Descripción
 ------------ | -------------	|	--------
-auto_return | | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. Los valores posibles son _approved_ y _all_.
+`auto_return` | | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. Los valores posibles son _approved_ y _all_.
  | _success_ | URL de retorno ante pago aprobado.
- back_url| _pending_ | URL de retorno ante pago pendiente.
-  | _failiure_ | URL de retorno ante pago cancelado.
+ `back_url`| _pending_ | URL de retorno ante pago pendiente.
+  | _failure_ | URL de retorno ante pago cancelado.
 
 
 [[[
@@ -281,7 +281,7 @@ Te permiten administrar tu stock y mantener tu sistema sincronizado.
 
 ### Cancelaciones y devoluciones
 
-Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. 
+Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
 Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 
 Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
@@ -291,8 +291,6 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago.
 Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.
 
-[Gestionar contracargos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/) 
+[Gestionar contracargos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/)
 
-[Ir a Personalizar]()
-
-
+[Ir a Personalizar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations)

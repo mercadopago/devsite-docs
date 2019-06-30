@@ -32,10 +32,10 @@ Prevención de fraude               	| ✔           | ✔                   |�
 Pantalla de finalización de pago		| ✔           |                     |
 Pago con dos tarjetas					| ✔           |                     |
 
-[Ir a Requisitos para integrar]() 
+[Ir a Requisitos para integrar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements)
 
 >NOTE
 >
 >Nota
 >
-> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
+> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)

@@ -28,8 +28,8 @@ Escribe el siguiente código que consta de tres partes:
 * Suma la SDK descargada de Mercado Pago en tu proyecto:
 
 [[[
- ```php
- <?php
+```php
+<?php
 // Ejecuta SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 ?>
@@ -301,9 +301,9 @@ Redirige al init_point de la preferencia
 #### ¡Excelente! Terminaste tu integración.
 _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration-test/)._
 
->WARNING
+> WARNING
 >
->Importante
+> Importante
 >
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.
 

@@ -6,16 +6,17 @@ sites_supported:
 # Configuraciones
 
 ## Definición de medios de pago
+
 Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
 También se puede definir un medio de pago para que aparezca por defecto o definir la cantidad de cuotas máximas a ofrecer.
 
 
 Atributo | Descripción
 ------------ | -------------
-payment_methods | Clase que describe los atributos y métodos de medios de Pagos
-excluded_payment_methods | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
-excluded_payment_types | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
-installments | Método que define la cantidad de cuotas máximas a ofrecer.
+_`payment_methods`_ | Clase que describe los atributos y métodos de medios de Pagos
+_`excluded_payment_methods`_ | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
+_`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 
 [[[
 ```php
@@ -78,7 +79,7 @@ preference.payment_methods = {
 ```csharp
 Preference preference = new Preference();
 
-PaymentMethods paymentmethods = new PaymentMethods(); 
+PaymentMethods paymentmethods = new PaymentMethods();
 
 List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
 excludedPaymentMethod.Add(new PaymentMethod()
@@ -101,50 +102,47 @@ paymentmethods.Installments = 12;
 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
 
-Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago. 
+Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
 Para activar la opción de pago, ve a tus [opciones de negocio](https://www.mercadopago.com.ar/settings/my-business) y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
 ## Modo binario
+
 Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago sólo puede resultar aprobado o rechazado.
 
 En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
 
-Para activarlo, solo debes configurar como true el atributo _binary_mode_ de la preferencia de pago:
+Para activarlo, solo debes configurar como true el atributo _`binary_mode`_ de la preferencia de pago:
 
-[[[
 ```json
 "binary_mode": true
 ```
-]]]
 
 ## Vigencia de preferencias
+
 Si se quiere habilitar el pago de una preferencia con un tiempo de duración determinado, se puede activar un periodo de vigencia o concluir directamente con los siguientes atributos:
 
-[[[
 ```json
 "expires": true,
 "expiration_date_from": "2017-02-01T12:00:00.000-04:00",
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
-]]]
 
 Puedes encontrar más información sobre los atributos disponibles para una preferencia de pago en la [documentación de API](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/).
 
 ## Sponsor ID (Partners)
+
 El atributo “sponsor_id” es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
 
-[[[
 ```json
 "sponsor_id": ######
 ```
-]]]
 
 ## Ejemplo de una preferencia completa
+
 Para resumir todo lo detallado en las últimas secciones, a continuación se muestran un ejemplo de todos los datos que se pueden configurar en una preferencia.
 
-[[[
 ```json
 {
     "items": [
@@ -154,7 +152,7 @@ Para resumir todo lo detallado en las últimas secciones, a continuación se mue
             "currency_id": "ARS",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
             "description": "Descripción del Item",
-            "category_id": "art", 
+            "category_id": "art",
             "quantity": 1,
             "unit_price": 75.76
         }
@@ -168,14 +166,14 @@ Para resumir todo lo detallado en las últimas secciones, a continuación se mue
             "number": "4444-4444"
         },
         "identification": {
-            "type": "DNI", 
+            "type": "DNI",
             "number": "12345678"
         },
         "address": {
             "street_name": "Street",
             "street_number": 123,
             "zip_code": "5700"
-        } 
+        }
     },
     "back_urls": {
         "success": "https://www.success.com",
@@ -203,11 +201,11 @@ Para resumir todo lo detallado en las últimas secciones, a continuación se mue
     "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
 }
 ```
-]]]
 
 ## Múltiples items
+
 Si se necesita crear una preferencia para más de un ítems, sólo debes agregarlos como una lista dentro de _items_.
-Ten en cuenta que el monto total de la preferencia será la suma de la cantidad por el precio unitario de cada ítem. 
+Ten en cuenta que el monto total de la preferencia será la suma de la cantidad por el precio unitario de cada ítem.
 
 [[[
 ```php
@@ -219,7 +217,7 @@ Ten en cuenta que el monto total de la preferencia será la suma de la cantidad 
   $item1->title = "Item de Prueba 1";
   $item1->quantity = 2;
   $item1->unit_price = 11.96;
- 
+
   $item2= new MercadoPago\Item
   $item2->title = "Item de Prueba 2";
   $item2->quantity = 1;
@@ -267,7 +265,7 @@ item2.setId("12")
     .setQuantity(1)
     .setCurrencyId("ARS")
     .setUnitPrice((float) 75.56);
-    
+
 preference.appendItem(item1, item2);
 // Save and posting preference
 preference.save();
@@ -292,20 +290,20 @@ preference.save()
 ```
 ```csharp
 //Crea un objeto de preferencia
-Preference preference = new Preference(); 
+Preference preference = new Preference();
 
 //Crea un item en la preferencia
 reference.Items.Add(
   new Item()
   {
-    Title = "Mi producto", 
+    Title = "Mi producto",
     Quantity = 1,
     CurrencyId = "ARS",
     UnitPrice = (float)75.56
   },
   new Item()
   {
-    Title = "Mi producto 2”, 
+    Title = "Mi producto 2”,
     Quantity = 2,
     CurrencyId = "ARS",
     UnitPrice = (float)96.56

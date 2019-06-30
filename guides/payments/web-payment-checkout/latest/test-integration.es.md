@@ -6,6 +6,7 @@ sites_supported:
 # Prueba tu integración
 
 ## Usuarios de prueba
+
 Los usuarios de prueba te permiten interactuar con el Web Checkout y generar flujos de pagos en una copia exacta de tu integración.
 
 ## Tipos de Usuarios de Prueba
@@ -27,19 +28,16 @@ Genera un usuario de prueba ejecutando el siguiente curl:
 
 **Solicitud**
 
-[[[
  ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=TEST-7802846747055705-061416-c0c9b443246bef3a3bab6a19f36c93c0-390383281" \
 -d '{"site_id":"MLA"}'
 ```
-]]]
 
 **Respuesta**
 
-[[[
- ```curl
+ ```json
 {
     "id": 123456,
     "nickname": "TT123456",
@@ -48,7 +46,6 @@ curl -X POST \
     "email": "test_user_123456@testuser.com"
 }
 ```
-]]]
 
 >WARNING
 >
@@ -56,9 +53,9 @@ curl -X POST \
 >
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
 > * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-> * Para hacer pagos de prueba usa montos bajos.
+> * Para hacer pagos de prueba te recomendamos usar montos bajos.
 > * Tanto el comprador como el vendedor deben ser usuarios de prueba.
-> * Usa medios de pago para pruebas, ya que no es posible retirar el dinero.
+> * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
 
 ## Prueba el flujo de Pago
 ## Vendedor
@@ -70,8 +67,8 @@ Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/
 #### Pruebas con tarjeta de crédito
 
 1. Selecciona Tarjeta como medio de pago.
-1. CIngresa los datos de una [tarjeta de prueba]().
-2. Completa el e-mail y ¡listo!
+1. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_Tarjetas_de_prueba).
+1. Completa el e-mail y ¡listo!
 
 ## Comprador registrado (cuenta de Mercado Pago)
 
@@ -82,7 +79,7 @@ Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/
 1. Selecciona Tarjeta como medio de pago.
 1. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
 
-### Tarjetas de prueba
+## Tarjetas de prueba
 
 Tarjeta | Número
 ------------ | -------------
@@ -102,5 +99,4 @@ Al completar los campos, ten en cuenta:
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
 
-[Ir a Integración avanzada]()
-
+[Ir a Integración avanzada](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)

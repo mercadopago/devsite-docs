@@ -16,7 +16,7 @@ Los esquemas disponibles actualmente son:
 
 ![Checkout-Modal](/images/web-payment-checkout/checkout-modal.png)
 
-Para integrar el esquema modal, reemplaza el botón de pago que realizaste en la integración 
+Para integrar el esquema modal, reemplaza el botón de pago que realizaste en la integración
 básica por el siguiente snippet:
 
 [[[
@@ -70,9 +70,9 @@ básica por el siguiente snippet:
 ### Colores
 
 > NOTE
-> 
+>
 > Nota
-> 
+>
 > Válido sólo para el esquema modal.
 
 #### Elementos
@@ -84,15 +84,13 @@ Los elementos que pueden personalizarse son:
 * Elementos de transiciones: spinners y barras de progreso
 * Bordes
 
-Puedes modificar el color de esos elementos agregando el atributo data-elements-color en el código HTML.
+Puedes modificar el color de esos elementos agregando el atributo `data-elements-color` en el código HTML.
 El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
 
 
-[[[
 ```html
-data-header-color="#c0392b"
+data-header-color="#8e44ad"
 ```
-]]]
 
 ![Custom-Component](/images/web-payment-checkout/custom_components.gif)
 
@@ -101,21 +99,17 @@ data-header-color="#c0392b"
 El color del texto de los botones será determinado automáticamente dependiendo del contraste del color definido.
 Para un color de elemento claro, el color del texto será negro o #000. Por ejemplo:
 
-[[[
 ```html
 data-elements-color="#81ecec" <!-- Color claro -->
 ```
-]]
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
 Para un color de elementos oscuro, el color del texto será blanco o #fff. Por ejemplo:
 
-[[[
 ```html
 data-elements-color="#8e44ad" <!-- Color oscuro -->
 ```
-]]
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
 
@@ -123,13 +117,11 @@ data-elements-color="#8e44ad" <!-- Color oscuro -->
 
 #### Texto
 
-Por defecto, el botón muestra el texto “Pagar”. Puedes modificar el texto del botón agregando el atributo data-button-label en el código HTML. Por ejemplo:
+Por defecto, el botón muestra el texto “Pagar”. Puedes modificar el texto del botón agregando el atributo `data-button-label` en el código HTML. Por ejemplo:
 
-[[[
 ```html
 data-button-label="Comprar"
 ```
-]]
 
 **Por defecto:**
 
@@ -139,4 +131,4 @@ data-button-label="Comprar"
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)
 
-[Ir a Configuraciones]()
+[Ir a Configuraciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations)
