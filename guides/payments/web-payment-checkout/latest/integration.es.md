@@ -23,14 +23,14 @@ Instalar el Web Checkout consta de dos pasos:
 
 #### 1) Genera tu preferencia
 
-En el lenguaje que elijas dentro de tu proyecto, escribe el siguiente código que consta de tres partes:
+Escribe el siguiente código que consta de tres partes:
 
 * Suma la SDK descargada de Mercado Pago en tu proyecto:
 
 [[[
  ```php
+ <?php
 // Ejecuta SDK de Mercado Pago
-<?php
 require __DIR__ .  '/vendor/autoload.php';
 ?>
 ```
@@ -56,11 +56,13 @@ require 'mercadopago.rb'
 
 [[[
  ```php
+ <?php
  // SDK de Mercado Pago
  require __DIR__ .  '/vendor/autoload.php';
 
  //Agrega credenciales
-MercadoPago\SDK::setAccessToken('TUS-CREDENCIALES-AQUI');
+MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
+?>
 ```
 ```node
 // SDK de Mercado Pago
@@ -68,7 +70,7 @@ var mercadopago = require('mercadopago');
 
 //Agrega credenciales
 mercadopago.configure({
-    access_token: 'TUS-CREDENCIALES-AQUI'
+    access_token: 'ENV_ACCESS_TOKEN'
 });
 ```
 ```java
@@ -76,21 +78,21 @@ mercadopago.configure({
 import com.mercadopago.MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.setAccessToken("TUS-CREDENCIALES-AQUI");
+MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 ```
 ```ruby
 // SDK de Mercado Pago
 require 'mercadopago.rb'
 
 //Agrega credenciales
-MercadoPago::SDK.access_token = "TUS-CREDENCIALES-AQUI"
+MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN"
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 ]]]
 
@@ -98,11 +100,12 @@ MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
 
 [[[
  ```php
+<?php
  // SDK de Mercado Pago
  require __DIR__ .  '/vendor/autoload.php';
 
  //Agrega credenciales
-MercadoPago\SDK::setAccessToken('TUS-CREDENCIALES-AQUI');
+MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
 
 // Crea un objeto de preferencia
  $preference = new MercadoPago\Preference();
@@ -111,9 +114,10 @@ MercadoPago\SDK::setAccessToken('TUS-CREDENCIALES-AQUI');
   $item = new MercadoPago\Item();
   $item->title = 'Mi producto';
   $item->quantity = 1;
-  $item->unit_price = 75,56;
+  $item->unit_price = 75.56;
   $preference->items = array($item);
   $preference->save();
+?>
 ```
 ```node
 // SDK de Mercado Pago
@@ -121,7 +125,7 @@ var mercadopago = require('mercadopago');
 
 //Agrega credenciales
 mercadopago.configure({
-    access_token: 'TUS-CREDENCIALES-AQUI'
+    access_token: 'ENV_ACCESS_TOKEN'
 });
 
 // Configura tu preferencia
@@ -147,7 +151,7 @@ mercadopago.preferences.create(preference)
 import com.mercadopago.MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.setAccessToken("TUS-CREDENCIALES-AQUI");
+MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 
 //Crea un objeto de preferencia
 Preference preference = new Preference();
@@ -165,7 +169,7 @@ preference.save();
 require 'mercadopago.rb'
 
 //Agrega credenciales
-MercadoPago::SDK.access_token = "TUS-CREDENCIALES-AQUI"
+MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN"
 
 //Crea un item en la preferencia
 item = MercadoPago::Item.new({
@@ -185,7 +189,7 @@ preference.save()
 using MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.AccessToken = "TUS-CREDENCIALES-AQUI";
+MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
 //Crea un objeto de preferencia
 Preference preference = new Preference();
@@ -197,7 +201,7 @@ reference.Items.Add(
     Title = "Mi producto",
     Quantity = 1,
     CurrencyId = "ARS",
-    UnitPrice = (float)75.56
+    UnitPrice = (decimal)75.56
   }
 );
 preference.Save()"
@@ -301,4 +305,14 @@ _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](
 >
 >Importante
 >
-> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo, ya que no puedes pagar con la misma cuenta que creaste el formulario de pago.
+> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.
+
+### Próximos pasos
+
+[Prueba tu integración](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
+
+[Integración avanzada](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+
+[Personalizar](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
+
+[Configuraciones](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
