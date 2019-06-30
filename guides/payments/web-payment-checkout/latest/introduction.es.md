@@ -3,10 +3,10 @@ sites_supported:
   - mla
 ---
 
-# ¿Qué es el Web Checkout? 
-Web Checkout de Mercado Pago es la integración que te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura. 
+# ¿Qué es el Web Checkout?
+Web Checkout de Mercado Pago es la integración que te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura.
 
-![Basic-Checkout](/images/web-payment-checkout/basic-checkout.png)
+![Basic-Checkout](/images/web-payment-checkout/chointroduction.png)
 
 
 ## Web Checkout ofrece:
