@@ -55,10 +55,10 @@ curl -X POST \
 >Importante
 >
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
-* Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-* Para hacer pagos de prueba te recomendamos usar montos bajos.
-* Tanto el comprador como el vendedor deben ser usuarios de prueba.
-* Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
+> * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
+> * Para hacer pagos de prueba usa montos bajos.
+> * Tanto el comprador como el vendedor deben ser usuarios de prueba.
+> * Usa medios de pago para pruebas, ya que no es posible retirar el dinero.
 
 ## Prueba el flujo de Pago
 ## Vendedor
@@ -102,7 +102,5 @@ Al completar los campos, ten en cuenta:
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
 
-
 [Ir a Integración avanzada]()
-
 
