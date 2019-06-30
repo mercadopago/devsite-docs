@@ -6,11 +6,11 @@ sites_supported:
 # Prueba tu integración
 
 ## Usuarios de prueba
-Los usuarios de prueba te permiten interactuar con el Web Checkout y generar flujos de pagos en un espacio que es una copia exacta de tu integración.
+Los usuarios de prueba te permiten interactuar con el Web Checkout y generar flujos de pagos en una copia exacta de tu integración.
 
 ## Tipos de Usuarios de Prueba
 
-Hay dos tipos de usuarios de prueba: comprador y vendedor.
+Hay dos tipos de usuarios de prueba: vendedor y comprador.
 
 * Vendedor: es la cuenta que usas para configurar la aplicación y credenciales para el cobro.
 * Comprador: es la cuenta que se usa para probar el proceso de compra.
@@ -63,22 +63,15 @@ curl -X POST \
 ## Prueba el flujo de Pago
 ## Vendedor
 
-Configura la preferencia usando las [credenciales](https://www.mercadopago.com/mla/account/credentials) del usuario de prueba que quieras usar como vendedor.
+Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/account/credentials) del usuario de prueba que quieras usar como vendedor.
 
 ## Comprador invitado
 
-#### Pruebas con tarjeta de crédito o débito
+#### Pruebas con tarjeta de crédito
 
-* Seleccioná el medio de pago “Tarjeta”
-* Completa los datos con una tarjeta de prueba
-
-Tarjeta | Número
------------- | -------------
-Mastercard | 5031 7557 3453 0604
-Visa | 4170 0688 1010 8020
-American Express | 3711 8030 3257 522
-
-* Completa el e-mail y ¡listo!
+1. Selecciona Tarjeta como medio de pago.
+1. CIngresa los datos de una [tarjeta de prueba]().
+2. Completa el e-mail y ¡listo!
 
 ## Comprador registrado (cuenta de Mercado Pago)
 
@@ -86,8 +79,17 @@ American Express | 3711 8030 3257 522
 
 1. Cierra sesión del usuario de prueba vendedor.
 1. Inicia sesión en Mercado Pago con una cuenta de usuario de prueba comprador.
-1. Seleccioná el medio de pago _Tarjeta_
+1. Selecciona Tarjeta como medio de pago.
 1. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
+
+### Tarjetas de prueba
+
+Tarjeta | Número
+------------ | -------------
+Mastercard | 5031 7557 3453 0604
+Visa | 4170 0688 1010 8020
+American Express | 3711 8030 3257 522
+
 
 ## Comenzar a recibir pagos
 
@@ -99,3 +101,6 @@ Al completar los campos, ten en cuenta:
 * Dirección postal: ingresa un e-mail de contacto del sitio.
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
+
+[Ir a Integración avanzada]()
+
