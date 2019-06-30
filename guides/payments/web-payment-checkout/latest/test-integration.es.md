@@ -58,11 +58,11 @@ curl -X POST \
 > * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
 
 ## Prueba el flujo de Pago
-## Vendedor
+### Vendedor
 
 Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/account/credentials) del usuario de prueba que quieras usar como vendedor.
 
-## Comprador invitado
+### Comprador invitado
 
 #### Pruebas con tarjeta de crédito
 
