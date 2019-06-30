@@ -10,10 +10,11 @@ Es importante conocer los requisitos previos necesarios antes de continuar:
 
 Término		| 							|	Descripción
 ------------	| ----------- 			| 	-----------
-Preferencia (preference)	|							|	Es la información del producto o servicio que se quiere ofrecer. Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
-Punto de inicio (init_point) 	|							|	Es la URL que se obtiene al momento de generar la preferencia y que da inicio al flujo de pago del Web Checkout.
-Item (item)			|							|	Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
-Aplicación (application)|            | Cada aplicación está designada a identificar una integración en particular, y tiene sus credenciales correspondientes. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.Credenciales (credentials) |ACCESS_TOKEN				|	Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones.
+Preferencia (_preference_)	|							|	Es la información del producto o servicio que se quiere ofrecer. Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
+Punto de inicio (_init_point_) 	|							|	Es la URL que se obtiene al momento de generar la preferencia y que da inicio al flujo de pago del Web Checkout.
+Item (_item_)			|							|	Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
+Aplicación (_application_)|            | Cada aplicación está designada a identificar una integración en particular, y tiene sus credenciales correspondientes. Una cuenta de Mercado Pago puede tener múltiples aplicaciones. 
+Credenciales (_credentials_) | ACCESS_TOKEN				|	Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones.
 				|PUBLIC_KEY				|	Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.
 
 ## Cuenta de Mercado Pago
