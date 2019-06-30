@@ -23,7 +23,7 @@ Instalar el Web Checkout consta de dos pasos:
 
 #### 1) Genera tu preferencia
 
-En el lenguaje que elijas dentro de tu proyecto, escribe el siguiente código que consta de tres partes:
+Escribe el siguiente código que consta de tres partes:
 
 * Suma la SDK descargada de Mercado Pago en tu proyecto:
 
@@ -301,6 +301,6 @@ _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](
 >
 >Importante
 >
-> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo, ya que no puedes pagar con la misma cuenta que creaste el formulario de pago.
+> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.
 
  
