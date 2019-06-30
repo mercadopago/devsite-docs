@@ -85,8 +85,7 @@ Los elementos que pueden personalizarse son:
 * Bordes
 
 Puedes modificar el color de esos elementos agregando el atributo data-elements-color en el código HTML.
-
-El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
 
 
 [[[
@@ -139,3 +138,5 @@ data-button-label="Comprar"
 **Personalizado:**
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)
+
+[Ir a Configuraciones]()
