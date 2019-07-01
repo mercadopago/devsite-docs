@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mco
-  - global
 ---
 
 # Mercado Pago Gateway: API
@@ -22,7 +21,7 @@ Antes de continuar con la integración es importante que conozcas estos nuevos c
 |---|---|---|
 |`processing_mode`| String | Indica el modo de procesamiento de un pago. Las opciones son **gateway** o **aggregator**|
 |`merchant_account_id`| String | Indica el número de comercio. Sólo es posible de usar cuando el `processing_mode` es gateway |
-|`payment_method_option_id`| String | Identifica unívocamente la sumatoria de un `payment_method` + `issuer` + `merchant_account_id`| 
+|`payment_method_option_id`| String | Identifica unívocamente la sumatoria de un `payment_method` + `issuer` + `merchant_account_id`|
 
 ## Integración
 
@@ -95,7 +94,7 @@ Obtener el valor del atributo `payment_method_option_id` para el número de come
           "end_date": "2019-07-01T02:59:00.000Z",
           "week_days": ["MON","TUE","WED","THU","FRI","SAT","SUN"],
           "start_date": "2019-05-01T03:00:00.000Z"
-        }, 
+        },
         "merchant_accounts": [
           {
             "branch_id": "venta_web",

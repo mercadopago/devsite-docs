@@ -1,10 +1,10 @@
 ---
 sites_supported:
-- mla
-- mco
+  - mla
+  - mco
 ---
 
-# Pagos en modo Gateway en Advanced Payments 
+# Pagos en modo Gateway en Advanced Payments
 
 ## Introducción
 
@@ -32,7 +32,7 @@ Debes crear una aplicación accediendo a la página de aplicaciones de Mercado P
 * Argentina: https://applications.mercadopago.com.ar
 * Colombia: https://applications.mercadopago.com.co
 
-Una vez creada la aplicación, obtendrás el valor de APP_ID, que será necesario para los siguientes pasos. 
+Una vez creada la aplicación, obtendrás el valor de APP_ID, que será necesario para los siguientes pasos.
 
 
 ### Habilitar la aplicación para recibir pagos en modalidad Gateway
@@ -48,4 +48,3 @@ En el caso de que tu cuenta de Mercado Pago sea de Colombia, contáctate con tu 
 ### Generar un token de tarjeta
 
 Debes generar el token de tarjeta del pagador para poder procesar pagos con la API. Esta guía asume que sabes [cómo generar un token de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
-

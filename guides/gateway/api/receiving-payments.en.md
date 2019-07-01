@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mco
-  - global
 ---
 
 # Mercado Pago Gateway: API
@@ -21,7 +20,8 @@ Before we begin with the integration changes, is important for you to know about
 |---|---|---|
 |`processing_mode`| String | Indicates the processing mode. The options are **gateway** or **aggregator**|
 |`merchant_account_id`| String | Indicates the merchant ID. Can only be used when `processing_mode` is equal to gateway |
-|`payment_method_option_id`| String | Identifies unequivocally the representation of a `payment_method` + `issuer` + `merchant_account_id`| 
+|`payment_method_option_id`| String | Identifies unequivocally the representation of a `payment_method` + `issuer` + `merchant_account_id`|
+
 ## Integration
 
 When the **POST** method is done to /payments, you need to add the following attributes:
@@ -93,7 +93,7 @@ You need to retrieve the value of the `payment_method_option_id` attribute for t
           "end_date": "2019-07-01T02:59:00.000Z",
           "week_days": ["MON","TUE","WED","THU","FRI","SAT","SUN"],
           "start_date": "2019-05-01T03:00:00.000Z"
-        }, 
+        },
         "merchant_accounts": [
           {
             "branch_id": "venta_web",
