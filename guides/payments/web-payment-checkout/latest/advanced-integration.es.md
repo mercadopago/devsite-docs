@@ -5,6 +5,13 @@ sites_supported:
 
 # Integración avanzada
 
+## Recibe notificaciones de pagos
+
+Las notificaciones IPN son la forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
+Te permiten administrar tu stock y mantener tu sistema sincronizado.
+
+[Recibir notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/)
+
 ## Información adicional para la preferencia
 
 Mejora la aprobación de los pagos y la experiencia de tus compradores sumando información en tu preferencia.
@@ -271,13 +278,6 @@ Preference preference = new Preference();
   preference.AutoReturn = AutoReturnType.approved;
 ```
 ]]]
-
-### Crea notificaciones de pagos
-
-Las notificaciones IPN son la forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
-Te permiten administrar tu stock y mantener tu sistema sincronizado.
-
-[Crear notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/)
 
 ### Cancelaciones y devoluciones
 

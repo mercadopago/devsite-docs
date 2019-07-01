@@ -136,7 +136,7 @@ Puedes encontrar más información sobre los atributos disponibles para una pref
 El atributo “sponsor_id” es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
 
 ```json
-"sponsor_id": ######
+"sponsor_id": 123456789
 ```
 
 ## Ejemplo de una preferencia completa
