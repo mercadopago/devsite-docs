@@ -202,7 +202,7 @@ preference.Items.Add(
   {
     Title = "Mi producto",
     Quantity = 1,
-    CurrencyId = "ARS",
+    CurrencyId = CurrencyId.ARS,
     UnitPrice = (decimal)75.56
   }
 );
