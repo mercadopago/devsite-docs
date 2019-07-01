@@ -297,4 +297,4 @@ errors:
       description:
         en: Error in the payments API.
         es: Error en api de payments.
-        pt:Erro na API de payments.
+        pt: Erro na API de payments.
