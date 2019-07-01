@@ -182,26 +182,23 @@ O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Semp
 
 ### Implementação de dispositivo na Web
 
-Para implementar a geração do dispositivo em seu site, adicione o seguinte código em seu checkout:
+Para implementar a geração do dispositivo em seu site, adicione o seguinte código em seu checkout, substituindo o campo `publicKey`:
 
-```html
-<script src="https://resources.mlstatic.com/device/meli-metrix.min.js"></script>
+```
+var dmlscript = document.createElement("script");
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
+dmlscript.onload = () => {
+    new DMLSDK({
+        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    });
+}
+document.body.appendChild(dmlscript);
 ```
 
-Em seu formulário, adicione o seguinte `input`:
-
-```html
-<form>
-	...
-    <input type='hidden' id='deviceId' name='deviceId' />
-    ...
-</form>
-```
-
-É importante que envie o campo `deviceId` ao seu servidor e, ao criar o pagamento, adicione o seguinte header à requisição:
+É importante que envie o campo `deviceId` ao seu servidor e, ao criar o pagamento, adicione o seguinte header à requisição: --COMPLETAR
 
 ```http
-X-Device-Session-Id: device_id
+X-meli-session-id: device_id
 ```
 
 Onde `device_id` foi substituído pelo ID obtido no passo anterior.

@@ -183,29 +183,27 @@ Mercado Pago has its own fraud prevention tools. Whenever possible, we recommend
 
 ### Device deployment on the Web
 
-To deploy the generation of the device on your website, you must add the following code to your checkout:
+To deploy the generation of the device on your website, you must add the following code to your checkout replacing field publicKey with your credentials:
 
-```html
-<script src="https://resources.mlstatic.com/device/meli-metrix.min.js"></script>
+```
+var dmlscript = document.createElement("script");
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
+dmlscript.onload = () => {
+    new DMLSDK({
+        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    });
+}
+document.body.appendChild(dmlscript);
 ```
 
-In your form, add the following `input`:
 
-```html
-<form>
-	...
-    <input type='hidden' id='deviceId' name='deviceId' />
-    ...
-</form>
-```
-
-It is important that you submit the `deviceId` field to your server and add the following header to the request when creating the payment:
+It is important that you submit the automatically created global variable `MP_DEVICE_SESSION_ID` to your server and add the following header to the request when creating the payment:
 
 ```http
-X-Device-Session-Id: device_id
+X-meli-session-id: device_id
 ```
 
-Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior.
+Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior. --CORREGIR
 
 ### Device deployment in native mobile applications
 
