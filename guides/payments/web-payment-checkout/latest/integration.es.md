@@ -96,6 +96,8 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 ]]]
 
+
+
 * Configura la preferencia según tu producto o servicio:
 
 [[[
@@ -223,10 +225,12 @@ curl -X POST \
 ```
 ]]]
 
+
+
 #### 2) Suma el Checkout a tu sitio
 
 [[[
-```php
+```html
 ===
 Redirige al init_point de la preferencia
 ===
@@ -240,7 +244,7 @@ Redirige al init_point de la preferencia
     </body>
 </html>
 ```
-```node
+```html
 ===
 Redirige al init_point de la preferencia
 ===
@@ -254,7 +258,7 @@ Redirige al init_point de la preferencia
     </body>
 </html>
 ```
-```java
+```html
 ===
 Redirige al init_point de la preferencia
 ===
@@ -268,7 +272,7 @@ Redirige al init_point de la preferencia
     </body>
 </html>
 ```
-```ruby
+```html
 ===
 Redirige al init_point de la preferencia
 ===
@@ -282,7 +286,7 @@ Redirige al init_point de la preferencia
     </body>
 </html>
 ```
-```csharp
+```html
 ===
 Redirige al init_point de la preferencia
 ===
@@ -297,6 +301,8 @@ Redirige al init_point de la preferencia
 </html>
 ```
 ]]]
+
+
 
 #### ¡Excelente! Terminaste tu integración.
 _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration-test/)._

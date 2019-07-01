@@ -99,4 +99,4 @@ Al completar los campos, ten en cuenta:
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
 
-[Ir a Integración avanzada](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+[Ir a _Integración avanzada_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)

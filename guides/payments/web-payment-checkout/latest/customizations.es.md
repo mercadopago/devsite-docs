@@ -131,4 +131,4 @@ data-button-label="Comprar"
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)
 
-[Ir a Configuraciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
+[Ir a _Configuraciones_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
