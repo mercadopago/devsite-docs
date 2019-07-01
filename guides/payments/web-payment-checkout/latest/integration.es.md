@@ -5,7 +5,7 @@ sites_supported:
 
 # Integra el Web Checkout
 
-## ¿Cómo me integro? 
+## ¿Cómo me integro?
 
 ![Integration](/images/web-payment-checkout/flow-integration-v2.png)
 
@@ -19,7 +19,7 @@ Luego, sigue estos pasos:
 
 ## Pasos para integrarte
 
-Instalar el Web Checkout consta de dos pasos: 
+Instalar el Web Checkout consta de dos pasos:
 
 #### 1) Genera tu preferencia
 
@@ -28,8 +28,8 @@ Escribe el siguiente código que consta de tres partes:
 * Suma la SDK descargada de Mercado Pago en tu proyecto:
 
 [[[
- ```php
- <?php
+```php
+<?php
 // Ejecuta SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 ?>
@@ -59,7 +59,7 @@ require 'mercadopago.rb'
  <?php
  // SDK de Mercado Pago
  require __DIR__ .  '/vendor/autoload.php';
- 
+
  //Agrega credenciales
 MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
 ?>
@@ -103,7 +103,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 <?php
  // SDK de Mercado Pago
  require __DIR__ .  '/vendor/autoload.php';
- 
+
  //Agrega credenciales
 MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
 
@@ -131,7 +131,7 @@ mercadopago.configure({
 // Configura tu preferencia
 var preference = {
   items: [
-    
+
       title: 'Mi producto',
       quantity: 1,
       currency_id: 'ARS',
@@ -192,13 +192,13 @@ using MercadoPago;
 MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
 //Crea un objeto de preferencia
-Preference preference = new Preference(); 
+Preference preference = new Preference();
 
 //Crea un item en la preferencia
 preference.Items.Add(
   new Item()
   {
-    Title = "Mi producto", 
+    Title = "Mi producto",
     Quantity = 1,
     CurrencyId = "ARS",
     UnitPrice = (decimal)75.56
@@ -299,24 +299,26 @@ Redirige al init_point de la preferencia
 ]]]
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://docs.google.com/document/d/1ZexGiAgDG_zzasbjFOUrReB7wZF4FOHz9gQqaGSAr-0/edit?ts=5d13fe3a#bookmark=id.wa541l8g0ojd)._
- 
->WARNING
+_Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration-test/)._
+
+> WARNING
 >
->Importante
+> Importante
 >
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.
 
 ### Próximos pasos
 
-[Prueba tu integración]()
+[Prueba tu integración](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
 
-[Integración avanzada]()
+[Integración avanzada](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
 
-[Personalizar]()
+[Personalizar](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
 
-[Configuraciones]()
+[Configuraciones](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
 
-
-
- 
+>NOTE
+>
+>Nota
+>
+> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
