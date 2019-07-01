@@ -67,7 +67,7 @@ Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/
 #### Pruebas con tarjeta de crédito
 
 1. Selecciona Tarjeta como medio de pago.
-1. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_Tarjetas_de_prueba).
+1. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_Tarjetas_de_prueba/).
 1. Completa el e-mail y ¡listo!
 
 ## Comprador registrado (cuenta de Mercado Pago)

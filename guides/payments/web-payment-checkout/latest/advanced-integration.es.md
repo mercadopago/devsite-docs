@@ -293,4 +293,4 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 
 [Gestionar contracargos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/)
 
-[Ir a Personalizar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations)
+[Ir a Personalizar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
