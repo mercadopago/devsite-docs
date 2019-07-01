@@ -195,7 +195,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 Preference preference = new Preference();
 
 //Crea un item en la preferencia
-reference.Items.Add(
+preference.Items.Add(
   new Item()
   {
     Title = "Mi producto",
@@ -316,3 +316,9 @@ _Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](
 [Personalizar](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
 
 [Configuraciones](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
+
+>NOTE
+>
+>Nota
+>
+> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
