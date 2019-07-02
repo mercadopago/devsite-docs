@@ -215,19 +215,19 @@ preference.Items.Add(
 ```
 ]]]
 
-### Indica URLs de retorno
+### URL de retorno
 
 Al finalizar el proceso de pago, tienes la opción de redireccionar al comprador a tu sitio.
 Para esto, se utilizan las `back_urls`. Esta redirección puede ser automática a través del atributo `auto_return` o un link que permita volver al sitio del vendedor.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn.png)
 
-Atributo |	|	Descripción
------------- | -------------	|	--------
-`auto_return` | | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. Los valores posibles son _approved_ y _all_.
- | _success_ | URL de retorno ante pago aprobado.
- `back_url`| _pending_ | URL de retorno ante pago pendiente.
-  | _failure_ | URL de retorno ante pago cancelado.
+Atributo |	Descripción
+------------ 	|	--------
+`auto_return` | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. Los valores posibles son _approved_ y _all_.
+ | **_success._** URL de retorno ante pago aprobado.
+ `back_url`| **_pending._** URL de retorno ante pago pendiente.
+  | **_failure._** URL de retorno ante pago cancelado.
 
 
 [[[
