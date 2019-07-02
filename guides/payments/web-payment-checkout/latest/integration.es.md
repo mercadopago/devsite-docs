@@ -3,11 +3,11 @@ sites_supported:
   - mla
 ---
 
-# Integrar Web Checkout
+# Integra Web Checkout
 
->NOTE
+> NOTE
 >
->En esta página
+> En esta página
 >
 > [¿Cómo me integro?](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
 > 
@@ -33,38 +33,38 @@ sites_supported:
 
 Instalar el Web Checkout consta de dos pasos:
 
-#### 1) Genera tu preferencia
+### 1. Genera tu preferencia
 
 Escribe el siguiente código que consta de tres partes:
 
-* Suma la <a href="https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK descargada de Mercado Pago</a> en tu proyecto:
+	1.1 Suma la <a href="https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK de Mercado Pago</a> en tu proyecto:
 
 [[[
 ```php
 <?php
-// Ejecuta SDK de Mercado Pago
+// SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 ?>
 ```
 ```node
-// Ejecuta SDK de Mercado Pago
+// SDK de Mercado Pago
 var mercadopago = require('mercadopago');
 ```
 ```java
-// Ejecuta SDK de Mercado Pago
+// SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 ```
 ```ruby
-// Ejecuta SDK de Mercado Pago
+// SDK de Mercado Pago
 require 'mercadopago.rb'
 ```
 ```csharp
-// Ejecuta SDK de Mercado Pago
+// SDK de Mercado Pago
  using MercadoPago;
 ```
 ]]]
 
-* Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:
+	1.2 Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:
 
 [[[
  ```php
@@ -110,7 +110,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
 
 
-* Configura la preferencia según tu producto o servicio:
+	1.3 Configura la preferencia según tu producto o servicio:
 
 [[[
  ```php
@@ -239,7 +239,7 @@ curl -X POST \
 
 
 
-#### 2) Suma el checkout a tu sitio
+### 2. Suma el checkout a tu sitio
 
 [[[
 ```php
