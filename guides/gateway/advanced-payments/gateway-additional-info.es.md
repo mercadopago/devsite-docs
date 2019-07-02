@@ -1,7 +1,7 @@
 ---
 sites_supported:
-- mla
-- mco
+  - mla
+  - mco
 ---
 
 # Información adicional

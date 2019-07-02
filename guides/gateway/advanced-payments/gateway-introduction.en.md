@@ -1,7 +1,7 @@
 ---
 sites_supported:
-- mla
-- mco
+  - mla
+  - mco
 ---
 
 # Payments in Gateway mode in Advanced Payments
@@ -49,5 +49,3 @@ In the event that your Mercado Pago account is from Colombia, please contact you
 ### Generate a card token
 
 You must generate the payer card token to process payments with the API. This guide assumes that you know [how to generate a card token](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
-
-

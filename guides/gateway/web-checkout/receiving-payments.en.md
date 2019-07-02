@@ -39,4 +39,4 @@ Done! Your **Web Checkout** is now working in the Gateway Model.
 
 ## Next steps
 
-* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/reconciliation)
+* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides//manage-account/reconciliation-reports/)

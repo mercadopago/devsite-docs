@@ -1,7 +1,7 @@
 ---
 sites_supported:
-- mla
-- mco
+  - mla
+  - mco
 ---
 
 # Obter um pagamento existente

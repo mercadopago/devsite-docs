@@ -1,7 +1,7 @@
 ---
 sites_supported:
-- mla
-- mco
+  - mla
+  - mco
 ---
 
 # Procesando pagamentos no modo Gateway

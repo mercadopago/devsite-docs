@@ -1,7 +1,7 @@
 ---
 sites_supported:
-- mla
-- mco
+  - mla
+  - mco
 ---
 
 # Processing payments in Gateway mode
@@ -10,7 +10,7 @@ sites_supported:
 >
 > Important
 >
-> 
+>
 Before you start, you should contact your account executive informing your application ID in order to request the activation of the Gateway mode.
 
 

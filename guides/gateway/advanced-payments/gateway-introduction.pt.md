@@ -1,10 +1,10 @@
 ---
 sites_supported:
-- mla
-- mco
+  - mla
+  - mco
 ---
 
-# Pagamentos em modo Gateway em Advanced Payments 
+# Pagamentos em modo Gateway em Advanced Payments
 
 ## Introdução
 
@@ -48,5 +48,3 @@ Caso sua conta do Mercado Pago seja da Colômbia, contate seu executivo de conta
 ### Gerar um token de cartão
 
 É preciso gerar o token de cartão do pagador para poder processar pagamentos com a API. Este guia assume que você já sabe [como gerar um token de cartão](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/receiving-payment-by-card).
-
-
