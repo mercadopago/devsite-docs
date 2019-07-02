@@ -5,6 +5,24 @@ sites_supported:
 
 # Configuraciones
 
+>NOTE
+>
+>Contenido
+>
+> [Medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Definicion_de_medios_de_pago/)
+> 
+> [Pago con 2 tarjetas](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Pago_con_dos_tarjetas_de_credito)
+> 
+> [Modo binario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Modo_binario)
+> 
+> [Vigencia de Preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Vigencia_de_preferencias)
+> 
+> [Sponsors ID](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Sponsor_ID_(Partners))
+> 
+> [Ejemplo preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Ejemplo_de_una_preferencia_completa)
+> 
+> [Multiples ítems](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Multiples_items)
+
 ## Definición de medios de pago
 
 Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.

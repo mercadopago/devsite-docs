@@ -5,6 +5,20 @@ sites_supported:
 
 # Personalizaciones
 
+>NOTE
+>
+>Contenido
+>
+> [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/#bookmark_Esquema_modal/)
+> 
+> [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/#bookmark_Colores)
+> 
+> [Elementos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/#bookmark_Elementos)
+> 
+> [Textos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/#bookmark_Textos)
+> 
+> [Botones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/#bookmark_Botones)
+
 ## Esquema modal
 
 El Web Checkout modal permite cambiar su esquema de apertura.

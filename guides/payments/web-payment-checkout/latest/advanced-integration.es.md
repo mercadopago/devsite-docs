@@ -5,6 +5,22 @@ sites_supported:
 
 # Integración avanzada
 
+>NOTE
+>
+>Contenido
+>
+> [Notificaciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Recibe_notificaciones_de_pago/)
+> 
+> [Información adicional](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Informacion_adicional_para_la_preferencia)
+> 
+> [Datos del Item](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Proximos_pasos)
+> 
+> [URL Retornos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Indica_URLs_de_retorno)
+> 
+> [Cancelaciones y Devoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Cancelaciones_y_Devoluciones)
+> 
+> [Gestion contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Gestiona_contracargos)
+
 ## Recibe notificaciones de pagos
 
 Las notificaciones IPN son la forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
