@@ -95,7 +95,7 @@ El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
 
 
 ```html
-data-header-color="#8e44ad"
+data-header-color="#c0392b"
 ```
 
 ![Custom-Component](/images/web-payment-checkout/custom_components.gif)
