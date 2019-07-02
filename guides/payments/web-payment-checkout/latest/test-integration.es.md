@@ -71,7 +71,7 @@ curl -X POST \
 
 ### 1. Configura el checkout con los datos de tu usuario vendedor
 
-Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/account/credentials) del usuario de prueba que quieras usar como vendedor.
+Configura la preferencia con las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> del usuario de prueba que quieras usar como vendedor.
 
 ### 2. Realiza un pago con tu usuario comprador
 
@@ -104,7 +104,7 @@ American Express | 3711 8030 3257 522
 
 ## Comenzar a recibir pagos
 
-Para empezar a cobrar, debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/).
+Para empezar a cobrar, debes completar el formulario <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Quiero ir a producción</a>
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
 

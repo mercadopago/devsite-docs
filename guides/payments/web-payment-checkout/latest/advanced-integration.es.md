@@ -24,7 +24,7 @@ sites_supported:
 Las notificaciones IPN (Instant Payment Notification) son la forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 Te permiten administrar tu stock y mantener tu sistema sincronizado.
 
-[Recibir notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/)
+<a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
 
 ## Información adicional para la preferencia
 
@@ -298,13 +298,13 @@ Preference preference = new Preference();
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
 Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
+Puedes encontrar toda la información en la <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds" target="_blank"> sección Devoluciones y cancelaciones</a>
 
 ## Gestiona contracargos
 
 Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago.
 Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.
 
-[Gestionar contracargos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/)
+<a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/" target="_blank"> Gestionar contracargos</a>
 
 [Ir a _Personalizar_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)

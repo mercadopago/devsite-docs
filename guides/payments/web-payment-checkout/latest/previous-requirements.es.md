@@ -28,12 +28,12 @@ Existen dos tipos:
 <br>
 **PUBLIC_KEY**. Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.
 <br>
-Para poder encontrarlas, ve a tus [credenciales](https://www.mercadopago.com/mla/account/credentials) y selecciona las productivas en la opción _Checkout personalizado_.
+Para poder encontrarlas, ve a tus <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales </a> y selecciona las productivas en la opción _Checkout personalizado_.
 <br>
 Si ingresaste con tu cuenta en esta página, se completarán automáticamente dentro de las líneas de códigos.
 _Punto de inicio (init_point)_ | Es la URL que se obtiene al momento de generar la preferencia y que da inicio al flujo de pago del Web Checkout.
 _Item (ítem)_ | Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
-_Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos del vendedor. Cada aplicación identifica a una integración en particular, ya que cada una tiene sus [credenciales](https://www.mercadopago.com/mla/account/credentials) propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.Puedes encontrar la información de cada una en credenciales. Al ingresar, se creará una automáticamente o puedes [crear una aplicación](https://applications.mercadopago.com/) cada vez que lo necesites.
+_Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos del vendedor. Cada aplicación identifica a una integración en particular, ya que cada una tiene sus <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales </a>propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.Puedes encontrar la información de cada una en credenciales. Al ingresar, se creará una automáticamente o puedes <a href="https://applications.mercadopago.com/" target="_blank"> crear una aplicación</a> cada vez que lo necesites.
 
 ## Requisitos previos
 
@@ -41,7 +41,7 @@ Para continuar, verifica los requisitos previos necesarios:
 
 #### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
 Para poder comenzar la integración es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
-Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mercadopago.com.ar/) cuando quieras.
+Si aún no tienes una, puedes <a href="https://www.mercadopago.com.ar/" target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
 
 #### 2. Instalación de SDK de Mercado Pago
 Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
@@ -49,7 +49,7 @@ Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
 [[[
 ```php
 ===
-[Instala Composer](https://getcomposer.org/download) para usar el SDK.
+<a href="https://getcomposer.org/download" target="_blank"> Instala Composer</a> para usar el SDK.
 
 Luego, **crea una carpeta en donde quieras para tu proyecto** y ejecuta dentro de ella, el siguiente código desde la terminal:
 ===
@@ -57,13 +57,13 @@ php composer.phar require "mercadopago/dx-php:dev-master"
 ```
 ```node
 ===
-Para instalar el SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [npm](https://www.npmjs.com/get-npm)
+Para instalar el SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando <a href="https://www.npmjs.com/get-npm" target="_blank">npm</a>
 ===
 npm install mercadopago
 ```
 ```java
 ===
-Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html) agrega la siguiente dependencia en tu archivo pom.xml y luego ejecuta 'maven install'
+Para instalar el SDK en tu proyecto <a href="http://maven.apache.org/install.html" target="_blank"> Maven </a> agrega la siguiente dependencia en tu archivo pom.xml y luego ejecuta 'maven install'
 ===
 <dependency>
 		    <groupId> com.mercadopago </groupId>
@@ -73,13 +73,13 @@ Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html
 ```
 ```ruby
 ===
-El SDK de Mercado Pago está disponible como [gema](https://rubygems.org/gems/mercadopago-sdk), para instalarla debes ejecutar el siguiente código en la línea de comandos:
+El SDK de Mercado Pago está disponible como <a href="https://rubygems.org/gems/mercadopago-sdk" target="_blank"> gema</a>, para instalarla debes ejecutar el siguiente código en la línea de comandos:
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
-Usa [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) para instalar el SDK .NET de Mercado Pago.
+Usa <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar el SDK .NET de Mercado Pago.
 Para hacerlo ejecuta el siguiente comando en la consola del NuGet Package Manager:
 ===
 PM> Install-Package mercadopago-sdk -Version 1.0.56

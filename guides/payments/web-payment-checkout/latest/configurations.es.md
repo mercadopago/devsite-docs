@@ -3,7 +3,7 @@ sites_supported:
   - mla
 ---
 
-# Configuraciones
+# Otras funcionalidades
 
 >NOTE
 >
@@ -11,21 +11,11 @@ sites_supported:
 >
 >[Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
 >
-> [Definiciones de medio de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_definicion_de_medios_de_pago)
-> 
-> [Pago con dos tarjetas de crédito](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pago_con_dos_tarjetas_de_crédito)
-> 
-> [Modo binario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_modo_binario)
-> 
-> [Vigencia de Preferencias](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_vigencia_de_preferencias)
-> 
-> [Sponsors ID (partners)](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_sponsor_id_(partners))
-> 
-> [Múltiples ítems](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_múltiples_items)
+> [Atributos para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
 
 ## Ejemplo de una preferencia completa
 
-Para resumir todo lo detallado en las últimas secciones, a continuación se muestran un ejemplo de todos los datos que se pueden configurar en una preferencia.
+Para resumir todo lo detallado en las últimas secciones, a continuación se muestran un ejemplo de todos los <a href="https://mercadopago.com.ar/developers/es/reference/preferences/resource/" target="_blank"> datos en una preferencia</a> que se pueden configurar.
 
 ```json
 {
@@ -86,12 +76,9 @@ Para resumir todo lo detallado en las últimas secciones, a continuación se mue
 }
 ```
 
-Puedes encontrar más información sobre los atributos disponibles para una preferencia de pago en la [documentación de API](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/).
+## Atributos para la preferencia
 
-**_Se detallan algunos atributos que se pueden configurar._** 
-
-
-## Definición de medios de pago
+### Definición de medios de pago
 
 Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
 También se puede definir un medio de pago para que aparezca por defecto o definir la cantidad de cuotas máximas a ofrecer.
@@ -206,8 +193,6 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-Puedes encontrar más información sobre los atributos disponibles para una preferencia de pago en la [documentación de API](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/).
-
 ## Sponsor ID (Partners)
 
 El atributo “sponsor_id” es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
@@ -221,7 +206,7 @@ El atributo “sponsor_id” es un identificador del desarrollador o compañía 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
 
 Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
-Para activar la opción de pago, ve a tus [opciones de negocio](https://www.mercadopago.com.ar/settings/my-business) y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
+Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank"> opciones de negocio</a> y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 

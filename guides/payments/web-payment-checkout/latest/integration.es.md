@@ -64,7 +64,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-* Agrega las [credenciales](https://www.mercadopago.com/mla/account/credentials) para habilitar el uso de la SDK de Mercado Pago:
+* Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:
 
 [[[
  ```php
