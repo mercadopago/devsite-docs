@@ -142,4 +142,4 @@ curl -X POST \
 
 ## Próximos pasos
 
-* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reconciliation-reports)
+* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/reconciliation)
