@@ -37,7 +37,7 @@ Instalar el Web Checkout consta de dos pasos:
 
 Escribe el siguiente código que consta de tres partes:
 
-* Suma la SDK descargada de Mercado Pago en tu proyecto:
+* Suma la <a href="https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK descargada de Mercado Pago</a> en tu proyecto:
 
 [[[
 ```php
