@@ -23,30 +23,25 @@ sites_supported:
 > 
 > [Recibir pagos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
 
-## Usuarios de prueba
 
-Los usuarios de prueba te permiten interactuar con el Web Checkout y generar flujos de pagos en una copia exacta de tu integración.
+## Cómo probar mi integración
 
-## Tipos de Usuarios de Prueba
+Los usuarios de prueba te permiten probar tu Web Checkout al generar flujos de pagos en una copia exacta de tu integración.
 
-Hay dos tipos de usuarios de prueba: vendedor y comprador.
+Tipos de usuarios de prueba | Descripción
+------------ | -------------
+Vendedor | Es la cuenta que usas para configurar la aplicación y credenciales para el cobro.
+Comprador | Es la cuenta que se usa para probar el procesa de compra. Existe dos formas de hacer el pago: **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico. **Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
 
-* Vendedor: es la cuenta que usas para configurar la aplicación y credenciales para el cobro.
-* Comprador: es la cuenta que se usa para probar el proceso de compra.
-
-Como usuario comprador, podrás interactuar con el Web Checkout de dos formas:
-
-1. Como usuario invitado: solo necesitas completar la dirección de correo electrónico.
-1. Como usuario registrado: accedes a la cuenta de Mercado Pago con el usuario y contraseña. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
 
 ## Cómo crear usuarios
 Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
 
-Genera un usuario de prueba ejecutando el siguiente curl:
+Ejecuta el siguiente curl para generar un usuario de prueba:
 
 **Solicitud**
 
- ```curl
+```curl
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=TEST-7802846747055705-061416-c0c9b443246bef3a3bab6a19f36c93c0-390383281" \
@@ -55,7 +50,7 @@ curl -X POST \
 
 **Respuesta**
 
- ```json
+```json
 {
     "id": 123456,
     "nickname": "TT123456",
@@ -75,27 +70,32 @@ curl -X POST \
 > * Tanto el comprador como el vendedor deben ser usuarios de prueba.
 > * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
 
+
 ## Prueba el flujo de Pago
-### Vendedor
+
+### 1. Configura el checkout con los datos de tu usuario vendedor
 
 Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/account/credentials) del usuario de prueba que quieras usar como vendedor.
 
-### Comprador invitado
+### 2. Realiza un pago con tu usuario comprador
 
-#### Pruebas con tarjeta de crédito
+#### Comprar como usuario invitado.
+
+Pruebas con tarjeta de crédito.
+
 
 1. Selecciona Tarjeta como medio de pago.
-1. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba).
-1. Completa el e-mail y ¡listo!
+2. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarejtas_de_prueba)
+3. Completa el e-mail y ¡listo!
 
-## Comprador registrado (cuenta de Mercado Pago)
-
-#### Pruebas con tarjeta de crédito
+#### Comprar como usuario registrado (con cuenta de Mercado Pago)
+Pruebas con tarjeta de crédito
 
 1. Cierra sesión del usuario de prueba vendedor.
-1. Inicia sesión en Mercado Pago con una cuenta de usuario de prueba comprador.
-1. Selecciona Tarjeta como medio de pago.
-1. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
+2. Inicia sesión en Mercado Pago con una cuenta de usuario de prueba comprador.
+3. Selecciona Tarjeta como medio de pago.
+4. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
+
 
 ## Tarjetas de prueba
 
@@ -117,4 +117,9 @@ Al completar los campos, ten en cuenta:
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
 
-[Ir a _Integración avanzada_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+### Próximos pasos
+[Integración avanzada](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+	
+[Personalizar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations)
+	
+[Configuraciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations)
