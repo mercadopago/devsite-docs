@@ -110,11 +110,6 @@ American Express | 3711 8030 3257 522
 
 Para empezar a cobrar, debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/).
 
-Al completar los campos, ten en cuenta:
-
-* Documento: refiere al tipo de documento y el número sin puntos o barras, por ejemplo “DNI 12345678”.
-* Dirección postal: ingresa un e-mail de contacto del sitio.
-
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
 
 ### Próximos pasos
