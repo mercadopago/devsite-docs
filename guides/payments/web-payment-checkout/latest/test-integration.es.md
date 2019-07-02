@@ -81,7 +81,7 @@ Pruebas con tarjeta de crédito.
 
 
 1. Selecciona Tarjeta como medio de pago.
-2. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarejtas_de_prueba)
+2. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba)
 3. Completa el e-mail y ¡listo!
 
 #### Comprar como usuario registrado (con cuenta de Mercado Pago)
