@@ -143,15 +143,15 @@ mercadopago.configure({
 // Configura tu preferencia
 var preference = {
   items: [
-
+	{
       title: 'Mi producto',
-      quantity: 1,
-      currency_id: 'ARS',
-      unit_price: 75.56
-    ]
+      unit_price: 100,
+      quantity: 1
+    }
+  ]
 };
 mercadopago.preferences.create(preference)
-  .then(function (preference) {
+  .then(function (response) {
     // Do something if preference has been created successfully
     console.log(preference)
   }).catch(function (error) {
