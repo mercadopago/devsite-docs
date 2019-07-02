@@ -3,7 +3,7 @@ sites_supported:
   - mla
 ---
 
-# Integra el Web Checkout
+# Integrar Web Checkout
 
 >NOTE
 >
@@ -11,19 +11,21 @@ sites_supported:
 >
 > [Cómo me integro](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
 > 
-> [Pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
+> [Pasos para integrarte](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
 
 ## ¿Cómo me integro?
 
-![Integration](/images/web-payment-checkout/flow-integration-v2.png)
-
-Primero, descarga el SDK que necesites usar en la carpeta de tu proyecto.
-
-
-Luego, sigue estos pasos:
+![Integration](/images/web-payment-checkout/flow-v2.png)
 
 1. Genera tu preferencia
-1. Suma el Checkout a tu sitio
+	
+	1.1 Suma la SDK descargada de Mercado Pago en tu proyecto.
+	
+	1.2 Agrega las credenciales para habilitar el uso de la SDK de Mercado Pago.
+	
+	1.3 Configura la preferencia según tu producto o servicio.
+	
+2. Suma el Checkout a tu sitio
 
 ## Pasos para integrarte
 
@@ -235,7 +237,7 @@ curl -X POST \
 
 
 
-#### 2) Suma el Checkout a tu sitio
+#### 2) Suma el checkout a tu sitio
 
 [[[
 ```html
@@ -311,9 +313,8 @@ Redirige al init_point de la preferencia
 ]]]
 
 
-
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba el flujo de tu  Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration-test/)._
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration-test/)._
 
 > WARNING
 >
