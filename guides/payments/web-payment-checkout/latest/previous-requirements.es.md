@@ -3,54 +3,37 @@ sites_supported:
   - mla
 ---
 
-# Requisitos Previos
+# Requisitos previos para comenzar
 
 >NOTE
 >
 >Contenido
 >
->[Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Glosario/)
+>[Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
 >
-> [Cuenta de Mercado Pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Cuenta_de_Mercado_Pago/)
-> 
-> [Aplicaciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Aplicaciones)
-> 
-> [Credenciales](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Credenciales)
-> 
-> [SDK Mercado Pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_SDK_Mercado_Pago)
+> [Requisitos previos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos/)
 
-Es importante conocer los requisitos previos necesarios antes de continuar:
+Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a mano.
 
 ## Glosario
 
-Término		| 							|	Descripción
-------------	| ----------- 			| 	-----------
-Preferencia (_preference_)	|							|	Es la información del producto o servicio que se quiere ofrecer. Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
-Punto de inicio (_init_point_) 	|							|	Es la URL que se obtiene al momento de generar la preferencia y que da inicio al flujo de pago del Web Checkout.
-Item (_item_)			|							|	Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
-Aplicación (_application_)|            | Cada aplicación está designada a identificar una integración en particular, y tiene sus credenciales correspondientes. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.
-Credenciales (_credentials_) | ACCESS_TOKEN				|	Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones.
-				|PUBLIC_KEY				|	Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.
+Término | Descripción
+------------ | -------------
+_Preferencia (preference)_ | Es la información del producto o servicio que se quiere ofrecer. Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
+_Credenciales (credentials)_ | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. Existen dos tipos: **ACCESS_TOKEN**. Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones. **PUBLIC_KEY**. Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.Para poder encontrarlas, ve a tus [credenciales](https://www.mercadopago.com/mla/account/credentials) y selecciona las productivas en la opción Checkout personalizado.Si ingresaste con tu cuenta en esta página, se completarán automáticamente dentro de las líneas de códigos.
+_Punto de inicio (init_point)_ | Es la URL que se obtiene al momento de generar la preferencia y que da inicio al flujo de pago del Web Checkout.
+_Item (ítem)_ | Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
+_Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos del vendedor. Cada aplicación identifica a una integración en particular, ya que cada una tiene sus [credenciales](https://www.mercadopago.com/mla/account/credentials) propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.Puedes encontrar la información de cada una en credenciales. Al ingresar, se creará una automáticamente o puedes [crear una aplicación](https://applications.mercadopago.com/) cada vez que lo necesites.
 
-## Cuenta de Mercado Pago
+## Requisitos previos
 
-Para poder comenzar la integración es necesario contar con una cuenta de Mercado Pago.
+Para continuar, verifica los requisitos previos necesarios:
+
+#### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
+Para poder comenzar la integración es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
 Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mercadopago.com.ar/) cuando quieras.
 
-## Aplicaciones
-
-Las aplicaciones sirven para procesar los pagos del vendedor.
-
-Puedes encontrar la información de cada una en [credenciales](https://www.mercadopago.com/mla/account/credentials). Al ingresar, se creará una automáticamente o puedes [crear una aplicación](https://applications.mercadopago.com/) cada vez que lo necesites.
-
-
-## Credenciales
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago en la [sección Credenciales](https://www.mercadopago.com/mla/account/credentials).
-
-Si ingresaste con tu cuenta en esta página, se completarán automáticamente dentro de los códigos.
-
-
-## SDK de Mercado Pago
+#### 2. Instalación de SDK de Mercado Pago
 Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
 
 [[[

@@ -9,11 +9,9 @@ sites_supported:
 >
 >Contenido
 >
-> [Cómo me integro](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/#bookmark_Como_me_integro/)
+> [Cómo me integro](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
 > 
-> [Pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/#bookmark_Pasos_para_integrarte)
-> 
-> [Próximos Pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/#bookmark_Proximos_pasos)
+> [Pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
 
 ## ¿Cómo me integro?
 

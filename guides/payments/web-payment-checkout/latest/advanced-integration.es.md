@@ -9,17 +9,13 @@ sites_supported:
 >
 >Contenido
 >
-> [Notificaciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Recibe_notificaciones_de_pago/)
+> [Notificaciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
 > 
-> [Información adicional](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Informacion_adicional_para_la_preferencia)
+> [Información adicional](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
 > 
-> [Datos del Item](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Proximos_pasos)
+> [Cancelaciones y Devoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
 > 
-> [URL Retornos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Indica_URLs_de_retorno)
-> 
-> [Cancelaciones y Devoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Cancelaciones_y_Devoluciones)
-> 
-> [Gestion contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_Gestiona_contracargos)
+> [Gestion contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
 
 ## Recibe notificaciones de pagos
 
@@ -295,14 +291,14 @@ Preference preference = new Preference();
 ```
 ]]]
 
-### Cancelaciones y devoluciones
+## Cancelaciones y devoluciones
 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
 Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 
 Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
 
-### Gestiona contracargos
+## Gestiona contracargos
 
 Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago.
 Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.

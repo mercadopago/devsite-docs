@@ -9,19 +9,19 @@ sites_supported:
 >
 >Contenido
 >
-> [Medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Definicion_de_medios_de_pago/)
+> [Medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_definicion_de_medios_de_pago)
 > 
-> [Pago con 2 tarjetas](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Pago_con_dos_tarjetas_de_credito)
+> [Pago con 2 tarjetas](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pago_con_dos_tarjetas_de_crédito)
 > 
-> [Modo binario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Modo_binario)
+> [Modo binario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_modo_binario)
 > 
-> [Vigencia de Preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Vigencia_de_preferencias)
+> [Vigencia de Preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_vigencia_de_preferencias)
 > 
-> [Sponsors ID](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Sponsor_ID_(Partners))
+> [Sponsors ID](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_sponsor_id_(partners))
 > 
-> [Ejemplo preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Ejemplo_de_una_preferencia_completa)
+> [Ejemplo preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
 > 
-> [Multiples ítems](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_Multiples_items)
+> [Multiples ítems](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_múltiples_items)
 
 ## Definición de medios de pago
 

@@ -5,6 +5,24 @@ sites_supported:
 
 # Prueba tu integración
 
+>NOTE
+>
+>Contenido
+>
+> [Usuarios de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_usuarios_de_prueba)
+> 
+> [Tipos de Usuarios de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tipos_deu_usuarios_de_prueba)
+> 
+> [Crear Usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
+> 
+> [Prueba el flujo de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
+> 
+> [Comprador registrado](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comprador_registrado_(cuenta_de_mercado_pago))
+> 
+> [Tarjetas de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
+> 
+> [Recibir pagos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
+
 ## Usuarios de prueba
 
 Los usuarios de prueba te permiten interactuar con el Web Checkout y generar flujos de pagos en una copia exacta de tu integración.
@@ -67,7 +85,7 @@ Configura la preferencia con las [credenciales](https://www.mercadopago.com/mla/
 #### Pruebas con tarjeta de crédito
 
 1. Selecciona Tarjeta como medio de pago.
-1. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_Tarjetas_de_prueba/).
+1. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba).
 1. Completa el e-mail y ¡listo!
 
 ## Comprador registrado (cuenta de Mercado Pago)
