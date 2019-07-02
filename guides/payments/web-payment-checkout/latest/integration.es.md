@@ -5,6 +5,16 @@ sites_supported:
 
 # Integra el Web Checkout
 
+>NOTE
+>
+>Contenido
+>
+> [Cómo me integro](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/#bookmark_Como_me_integro/)
+> 
+> [Pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/#bookmark_Pasos_para_integrarte)
+> 
+> [Próximos Pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/#bookmark_Proximos_pasos)
+
 ## ¿Cómo me integro?
 
 ![Integration](/images/web-payment-checkout/flow-integration-v2.png)

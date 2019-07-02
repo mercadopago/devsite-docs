@@ -4,6 +4,21 @@ sites_supported:
 ---
 
 # Requisitos Previos
+
+>NOTE
+>
+>Contenido
+>
+>[Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Glosario/)
+>
+> [Cuenta de Mercado Pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Cuenta_de_Mercado_Pago/)
+> 
+> [Aplicaciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Aplicaciones)
+> 
+> [Credenciales](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_Credenciales)
+> 
+> [SDK Mercado Pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/#bookmark_SDK_Mercado_Pago)
+
 Es importante conocer los requisitos previos necesarios antes de continuar:
 
 ## Glosario
