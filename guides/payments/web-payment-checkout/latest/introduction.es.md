@@ -10,7 +10,7 @@ sites_supported:
 >En esta página
 >
 > [Que ofrece](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction#bookmark_web_checkout_ofrece/)
-> 
+>
 > [Diferencias](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction#bookmark_diferencias_de_web_checkout_con_otras_herramientas_de_mercado_pago)
 
 Web Checkout de Mercado Pago es la integración que te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura.
@@ -42,6 +42,17 @@ Pantalla de finalización de pago		     |      ✔      |                     |
 Pago con dos tarjetas					           |      ✔      |                     |
 
 [Ir a _Requisitos para integrar_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/)
+
+<div>
+<blockquote class="next-step-card">
+<p class="card-note-title">Requisitos previos<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
+ <p>Cuando hayas cumplido con los requisitos, debes completar el formulario </p>
+</blockquote>
+<blockquote class="next-step-card">
+<p class="card-note-title">Integración<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
+ <p>Cuando hayas cumplido con los requisitos, debes completar el formulario </p>
+</blockquote>
+</div>
 
 >NOTE
 >
