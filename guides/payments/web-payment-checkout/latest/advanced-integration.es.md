@@ -7,7 +7,7 @@ sites_supported:
 
 >NOTE
 >
->Contenido
+>En esta página
 >
 > [Notificaciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
 > 

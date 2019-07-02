@@ -7,7 +7,7 @@ sites_supported:
 
 >NOTE
 >
->Contenido
+>En esta página
 >
 > [Cómo me integro](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
 > 

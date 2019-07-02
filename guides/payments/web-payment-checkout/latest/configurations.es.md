@@ -7,7 +7,7 @@ sites_supported:
 
 >NOTE
 >
->Contenido
+>En esta página
 >
 > [Medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_definicion_de_medios_de_pago)
 > 

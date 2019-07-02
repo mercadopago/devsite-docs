@@ -7,7 +7,7 @@ sites_supported:
 
 >NOTE
 >
->Contenido
+>En esta página
 >
 > [Que ofrece](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction#bookmark_web_checkout_ofrece/)
 > 

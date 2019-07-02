@@ -7,7 +7,7 @@ sites_supported:
 
 >NOTE
 >
->Contenido
+>En esta página
 >
 > [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
 
