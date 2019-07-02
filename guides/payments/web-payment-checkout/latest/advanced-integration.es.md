@@ -9,13 +9,15 @@ sites_supported:
 >
 >En esta página
 >
-> [Notificaciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
+> [Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
 > 
-> [Información adicional](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
+> [Información adicional para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
 > 
-> [Cancelaciones y Devoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+> [URL de retorno](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
 > 
-> [Gestion contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+> [Cancelaciones y evoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+> 
+> [Gestion de contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
 
 ## Recibe notificaciones de pagos
 
@@ -215,7 +217,7 @@ preference.Items.Add(
 ```
 ]]]
 
-### URL de retorno
+## URL de retorno
 
 Al finalizar el proceso de pago, tienes la opción de redireccionar al comprador a tu sitio.
 Para esto, se utilizan las `back_urls`. Esta redirección puede ser automática a través del atributo `auto_return` o un link que permita volver al sitio del vendedor.

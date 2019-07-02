@@ -9,19 +9,15 @@ sites_supported:
 >
 >En esta página
 >
-> [Usuarios de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_usuarios_de_prueba)
+> [Cómo probar tu integración](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
 > 
-> [Tipos de Usuarios de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tipos_deu_usuarios_de_prueba)
-> 
-> [Crear Usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
+> [Cómo crear usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
 > 
 > [Prueba el flujo de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
 > 
-> [Comprador registrado](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comprador_registrado_(cuenta_de_mercado_pago))
-> 
 > [Tarjetas de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
 > 
-> [Recibir pagos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
+> [Comenzar a recibir pagos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
 
 
 ## Cómo probar mi integración

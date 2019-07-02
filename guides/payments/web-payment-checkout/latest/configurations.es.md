@@ -9,19 +9,87 @@ sites_supported:
 >
 >En esta página
 >
-> [Medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_definicion_de_medios_de_pago)
+>[Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
+>
+> [Definiciones de medio de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_definicion_de_medios_de_pago)
 > 
-> [Pago con 2 tarjetas](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pago_con_dos_tarjetas_de_crédito)
+> [Pago con dos tarjetas de crédito](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pago_con_dos_tarjetas_de_crédito)
 > 
 > [Modo binario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_modo_binario)
 > 
-> [Vigencia de Preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_vigencia_de_preferencias)
+> [Vigencia de Preferencias](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_vigencia_de_preferencias)
 > 
-> [Sponsors ID](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_sponsor_id_(partners))
+> [Sponsors ID (partners)](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_sponsor_id_(partners))
 > 
-> [Ejemplo preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
-> 
-> [Multiples ítems](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_múltiples_items)
+> [Múltiples ítems](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_múltiples_items)
+
+## Ejemplo de una preferencia completa
+
+Para resumir todo lo detallado en las últimas secciones, a continuación se muestran un ejemplo de todos los datos que se pueden configurar en una preferencia.
+
+```json
+{
+    "items": [
+        {
+            "id": "item-ID-1234",
+            "title": "Mi producto",
+            "currency_id": "ARS",
+            "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
+            "description": "Descripción del Item",
+            "category_id": "art",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+    "payer": {
+        "name": "Juan",
+        "surname": "Lopez",
+        "email": "user@email.com",
+        "phone": {
+            "area_code": "11",
+            "number": "4444-4444"
+        },
+        "identification": {
+            "type": "DNI",
+            "number": "12345678"
+        },
+        "address": {
+            "street_name": "Street",
+            "street_number": 123,
+            "zip_code": "5700"
+        }
+    },
+    "back_urls": {
+        "success": "https://www.success.com",
+        "failure": "http://www.failure.com",
+        "pending": "http://www.pending.com"
+    },
+    "auto_return": "approved",
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": "master"
+            }
+        ],
+        "excluded_payment_types": [
+            {
+                "id": "ticket"
+            }
+        ],
+        "installments": 12
+    },
+    "notification_url": "https://www.your-site.com/ipn",
+    "external_reference": "Reference_1234",
+    "expires": true,
+    "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
+    "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
+}
+```
+
+Puedes encontrar más información sobre los atributos disponibles para una preferencia de pago en la [documentación de API](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/).
+
+**_Se detallan algunos atributos que se pueden configurar._** 
+
 
 ## Definición de medios de pago
 
@@ -116,15 +184,6 @@ paymentmethods.Installments = 12;
 ```
 ]]]
 
-## Pagos con dos tarjetas de crédito
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
-Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
-Para activar la opción de pago, ve a tus [opciones de negocio](https://www.mercadopago.com.ar/settings/my-business) y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
-
 ## Modo binario
 
 Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago sólo puede resultar aprobado o rechazado.
@@ -157,68 +216,15 @@ El atributo “sponsor_id” es un identificador del desarrollador o compañía 
 "sponsor_id": 123456789
 ```
 
-## Ejemplo de una preferencia completa
+## Pagos con dos tarjetas de crédito
 
-Para resumir todo lo detallado en las últimas secciones, a continuación se muestran un ejemplo de todos los datos que se pueden configurar en una preferencia.
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
 
-```json
-{
-    "items": [
-        {
-            "id": "item-ID-1234",
-            "title": "Mi producto",
-            "currency_id": "ARS",
-            "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
-            "description": "Descripción del Item",
-            "category_id": "art",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ],
-    "payer": {
-        "name": "Juan",
-        "surname": "Lopez",
-        "email": "user@email.com",
-        "phone": {
-            "area_code": "11",
-            "number": "4444-4444"
-        },
-        "identification": {
-            "type": "DNI",
-            "number": "12345678"
-        },
-        "address": {
-            "street_name": "Street",
-            "street_number": 123,
-            "zip_code": "5700"
-        }
-    },
-    "back_urls": {
-        "success": "https://www.success.com",
-        "failure": "http://www.failure.com",
-        "pending": "http://www.pending.com"
-    },
-    "auto_return": "approved",
-    "payment_methods": {
-        "excluded_payment_methods": [
-            {
-                "id": "master"
-            }
-        ],
-        "excluded_payment_types": [
-            {
-                "id": "ticket"
-            }
-        ],
-        "installments": 12
-    },
-    "notification_url": "https://www.your-site.com/ipn",
-    "external_reference": "Reference_1234",
-    "expires": true,
-    "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
-    "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
-}
-```
+Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
+Para activar la opción de pago, ve a tus [opciones de negocio](https://www.mercadopago.com.ar/settings/my-business) y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
 
 ## Múltiples items
 
@@ -316,8 +322,8 @@ reference.Items.Add(
   {
     Title = "Mi producto",
     Quantity = 1,
-    CurrencyId = "ARS",
-    UnitPrice = (float)75.56
+    CurrencyId = CurrencyId.ARS,
+    UnitPrice = (decimal)75.56
   },
   new Item()
   {

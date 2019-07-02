@@ -10,6 +10,10 @@ sites_supported:
 >En esta página
 >
 > [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+> 
+> [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
+> 
+> [Botones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
 ## Esquema modal
 
@@ -73,7 +77,7 @@ básica por el siguiente snippet:
 ```
 ]]]
 
-### Colores
+## Colores
 
 > NOTE
 >
@@ -81,7 +85,7 @@ básica por el siguiente snippet:
 >
 > Válido sólo para el esquema modal.
 
-#### Elementos
+### Elementos
 
 Los elementos que pueden personalizarse son:
 
@@ -119,9 +123,9 @@ data-elements-color="#8e44ad" <!-- Color oscuro -->
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
 
-### Botones
+## Botones
 
-#### Texto
+### Texto
 
 Por defecto, el botón muestra el texto “Pagar”. Puedes modificar el texto del botón agregando el atributo `data-button-label` en el código HTML. Por ejemplo:
 
