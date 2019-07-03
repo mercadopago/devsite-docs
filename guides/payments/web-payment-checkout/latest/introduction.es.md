@@ -15,7 +15,7 @@ sites_supported:
 
 Web Checkout de Mercado Pago es la integración que te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura.
 
-![Basic-Checkout](/images/web-payment-checkout/chointroduction.png)
+![Basic-Checkout](/images/web-payment-checkout/cho-introduction.png)
 
 
 ## Web Checkout ofrece:
