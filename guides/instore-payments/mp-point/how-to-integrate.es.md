@@ -13,7 +13,7 @@ Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario
 
 Existen dos grandes mundos a la hora de integrar Point:
 
-1) Cuando la aplicación se puede utilizar desde el mismo dispositivo (celular o tablet) donde esta instalada la aplicación de Mercado Pago. Esto se puede logar con una integración de deep linking o intent-based mediante
+1) Cuando la aplicación se puede utilizar desde el mismo dispositivo (celular o tablet) donde esta instalada la aplicación de Mercado Pago. Esto se puede lograr con una integración de deep linking o intent-based mediante
 
 2) Cuando la aplicación no se puede utilizar desde el mismo dispositivo (celular o tablet) donde esta instalada la aplicación de Mercado Pago. Esto se puede logar con una integración vía API.
 
