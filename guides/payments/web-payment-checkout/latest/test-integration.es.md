@@ -31,7 +31,7 @@ Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un 
 
 Ejecuta el siguiente curl para generar un usuario de prueba:
 
-**Solicitud**
+### Solicitud
 
 ```curl
 curl -X POST \
@@ -40,7 +40,8 @@ curl -X POST \
 -d '{"site_id":"MLA"}'
 ```
 
-**Respuesta**
+
+### Respuesta
 
 ```json
 {
