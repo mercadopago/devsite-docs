@@ -29,8 +29,8 @@ Web Checkout de Mercado Pago es la integración que te permite cobrar a través 
 
 ## Diferencias de Web Checkout con otras herramientas de Mercado Pago
 
-                                         | Web Checkout|Web Tokenize Checkout|      API
------------------------------------------| ----------- | ------------------- | ---------------
+                                   | Web Checkout|Web Tokenize Checkout|      API
+:---------------------------------  | :-----------: | :-------------------: | :---------:
 Dificultad de integración 			  	     |     Baja    |       Media         |     Alta
 Diseño UI/UX 							  	           |      ✔      |         ✔           |
 Optimizado para la mejor conversión	     |      ✔      |         ✔           |
