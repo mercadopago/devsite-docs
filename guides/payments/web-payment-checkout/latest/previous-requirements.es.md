@@ -29,12 +29,12 @@ _Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos de
 
 Para continuar, verifica los requisitos previos necesarios:
 
-#### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
-Para poder comenzar la integración es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
-Si aún no tienes una, puedes <a href="https://www.mercadopago.com.ar/" target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
+&nbsp;&nbsp;#### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
+&nbsp;&nbsp;Para poder comenzar la integración es necesario contar con una cuenta de &nbsp;&nbsp;Mercado Pago o Mercado Libre.
+&nbsp;&nbsp;Si aún no tienes una, puedes <a href="https://www.mercadopago.com.ar/" &nbsp;&nbsp;target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
 
-#### 2. Instalación de SDK de Mercado Pago
-Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
+&nbsp;&nbsp;#### 2. Instalación de SDK de Mercado Pago
+&nbsp;&nbsp;Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
 
 [[[
 ```php
