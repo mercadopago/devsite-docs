@@ -5,19 +5,15 @@ sites_supported:
 
 # Prueba tu integración
 
->NOTE
+> NOTE
 >
->En esta página
+> En esta página
 >
-> [Cómo probar tu integración](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
-> 
-> [Cómo crear usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
-> 
-> [Prueba el flujo de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
-> 
-> [Tarjetas de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
-> 
-> [Comenzar a recibir pagos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
+> * [Cómo probar tu integración](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
+> * [Cómo crear usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
+> * [Prueba el flujo de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
+> * [Tarjetas de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
+> * [Comenzar a recibir pagos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
 
 
 ## Cómo probar mi integración
@@ -27,7 +23,7 @@ Los usuarios de prueba te permiten probar tu Web Checkout al generar flujos de p
 Tipos de usuarios de prueba | Descripción
 ------------ | -------------
 Vendedor | Es la cuenta que usas para configurar la aplicación y credenciales para el cobro.
-Comprador | Es la cuenta que se usa para probar el procesa de compra. Existe dos formas de hacer el pago: **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico. **Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
+Comprador | Es la cuenta que se usa para probar el procesa de compra.<br/> Existe dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/><br/> **Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
 
 
 ## Cómo crear usuarios
@@ -109,8 +105,7 @@ Para empezar a cobrar, debes completar el formulario <a href="https://www.mercad
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
 
 ### Próximos pasos
-[Integración avanzada](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
-	
-[Personalizar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations)
-	
-[Configuraciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations)
+
+- [Integración avanzada](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+- [Personalizar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations)
+- [Configuraciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations)

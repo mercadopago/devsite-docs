@@ -5,9 +5,9 @@ sites_supported:
 
 # Otras funcionalidades
 
->NOTE
+> NOTE
 >
->En esta página
+> En esta página
 >
 >[Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
 >

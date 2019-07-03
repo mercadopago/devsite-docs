@@ -5,32 +5,23 @@ sites_supported:
 
 # Requisitos previos para comenzar
 
->NOTE
+> NOTE
 >
->En esta página
+> En esta página
 >
->[Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
+> [Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
 >
 > [Requisitos previos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos/)
 
-Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a mano.
-
 ## Glosario
+
+Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a mano.
 
 Término | Descripción
 ------------ | -------------
 _Preferencia (preference)_ | Es la información del producto o servicio que se quiere ofrecer. Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
-_Credenciales (credentials)_ | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. 
-<br>
-Existen dos tipos:
-<br>
-**ACCESS_TOKEN**. Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones. 
-<br>
-**PUBLIC_KEY**. Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.
-<br>
-Para poder encontrarlas, ve a tus <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales </a> y selecciona las productivas en la opción _Checkout personalizado_.
-<br>
-Si ingresaste con tu cuenta en esta página, se completarán automáticamente dentro de las líneas de códigos.
+_Credenciales (credentials)_ | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones.<br/>Existen dos tipos:<br/>**ACCESS_TOKEN**. Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones.<br/>**PUBLIC_KEY**. Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.<br/>Para poder encontrarlas, ve a tus <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales </a> y selecciona las productivas en la opción _Checkout personalizado_.
+<br/>Si ingresaste con tu cuenta en esta página, se completarán automáticamente dentro de las líneas de códigos.
 _Punto de inicio (init_point)_ | Es la URL que se obtiene al momento de generar la preferencia y que da inicio al flujo de pago del Web Checkout.
 _Item (ítem)_ | Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
 _Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos del vendedor. Cada aplicación identifica a una integración en particular, ya que cada una tiene sus <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales </a>propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.Puedes encontrar la información de cada una en credenciales. Al ingresar, se creará una automáticamente o puedes <a href="https://applications.mercadopago.com/" target="_blank"> crear una aplicación</a> cada vez que lo necesites.
@@ -51,7 +42,7 @@ Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
 ===
 <a href="https://getcomposer.org/download" target="_blank"> Instala Composer</a> para usar el SDK.
 
-Luego, **crea una carpeta en donde quieras para tu proyecto** y ejecuta dentro de ella, el siguiente código desde la terminal:
+Luego ejecuta el siguiente código en la línea de comandos:
 ===
 php composer.phar require "mercadopago/dx-php:dev-master"
 ```

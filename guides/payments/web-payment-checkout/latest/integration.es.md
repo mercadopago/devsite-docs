@@ -10,9 +10,9 @@ sites_supported:
 > En esta página
 >
 > [¿Cómo me integro?](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
-> 
+>
 > [Pasos para integrarte](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
-> 
+>
 > [Próximos pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_próximos_pasos)
 
 ## ¿Cómo me integro?
@@ -20,13 +20,13 @@ sites_supported:
 ![Integration](/images/web-payment-checkout/flow-v2.png)
 
 1. Genera tu preferencia
-	
+
 	1.1 Suma la SDK descargada de Mercado Pago en tu proyecto.
-	
+
 	1.2 Agrega las credenciales para habilitar el uso de la SDK de Mercado Pago.
-	
+
 	1.3 Configura la preferencia según tu producto o servicio.
-	
+
 2. Suma el Checkout a tu sitio
 
 ## Pasos para integrarte
@@ -326,16 +326,15 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Chec
 
 ### Próximos pasos
 
-[Prueba tu integración](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
+- [Prueba tu integración](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
+- [Integración avanzada](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
 
-[Integración avanzada](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+- [Personalizar](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
 
-[Personalizar](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
+- [Configuraciones](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
 
-[Configuraciones](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
-
->NOTE
+> NOTE
 >
->Nota
+> Nota
 >
 > Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)

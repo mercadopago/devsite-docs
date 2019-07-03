@@ -5,14 +5,14 @@ sites_supported:
 
 # Personalizaciones
 
->NOTE
+> NOTE
 >
->En esta página
+> En esta página
 >
 > [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
-> 
+>
 > [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
-> 
+>
 > [Botones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
 ## Esquema modal
@@ -115,7 +115,7 @@ data-elements-color="#81ecec" <!-- Color claro -->
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
-Para un color de elementos oscuro, el color del texto será blanco o #fff. Por ejemplo:
+<br/>Para un color de elementos oscuro, el color del texto será blanco o #fff. Por ejemplo:
 
 ```html
 data-elements-color="#8e44ad" <!-- Color oscuro -->
