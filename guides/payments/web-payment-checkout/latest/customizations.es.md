@@ -133,12 +133,12 @@ Por defecto, el botón muestra el texto “Pagar”. Puedes modificar el texto d
 data-button-label="Comprar"
 ```
 
-**Por defecto:**
+### Por defecto:
 
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)
+![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/><br/>
 
-**Personalizado:**
+## Personalizado:
 
-![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)
+![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
 [Ir a _Configuraciones_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)

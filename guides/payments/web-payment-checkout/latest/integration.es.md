@@ -64,7 +64,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-1.2 Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:
+<br/><br/>1.2 Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
 
 [[[
  ```php
@@ -109,8 +109,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ]]]
 
 
-
-1.3 Configura la preferencia según tu producto o servicio:
+<br/><br/>1.3 Configura la preferencia según tu producto o servicio:<br/>
 
 [[[
  ```php
@@ -238,7 +237,6 @@ curl -X POST \
 ]]]
 
 
-
 ### 2. Suma el checkout a tu sitio
 
 [[[
@@ -316,13 +314,13 @@ Redirige al init_point de la preferencia
 
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)._
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > WARNING
 >
 > Importante
 >
-> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.
+> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
 
 ### Próximos pasos
 

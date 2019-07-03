@@ -312,7 +312,7 @@ reference.Items.Add(
   },
   new Item()
   {
-    Title = "Mi producto 2”,
+    Title = "Mi producto2”,
     Quantity = 2,
     CurrencyId = CurrencyId.ARS,
     UnitPrice = (decimal)96.56
