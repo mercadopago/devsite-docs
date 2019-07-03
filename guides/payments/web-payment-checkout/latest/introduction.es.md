@@ -20,7 +20,7 @@ Web Checkout de Mercado Pago es la integración que te permite cobrar a través 
 
 ## Web Checkout ofrece:
 
-* Pagar con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) del país.
+* Pagar con los principales <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
 * Una experiencia de compra adaptada y accesible desde cualquier celular o computadora.  
 * Compras en un click. Al pagar con una cuenta de Mercado Pago, se recuerdan los datos y tarjetas de los compradores, por lo que permite pagos ingresando solo el código de seguridad o dinero en cuenta.
 * Compras de invitados. No es necesario crear una cuenta de Mercado Pago para poder hacer el pago.
@@ -29,8 +29,8 @@ Web Checkout de Mercado Pago es la integración que te permite cobrar a través 
 
 ## Diferencias de Web Checkout con otras herramientas de Mercado Pago
 
-                                         | Web Checkout|Web Tokenize Checkout|      API
------------------------------------------| ----------- | ------------------- | ---------------
+                                   | Web Checkout|Web Tokenize Checkout|      API
+:---------------------------------  | :-----------: | :-------------------: | :---------:
 Dificultad de integración 			  	     |     Baja    |       Media         |     Alta
 Diseño UI/UX 							  	           |      ✔      |         ✔           |
 Optimizado para la mejor conversión	     |      ✔      |         ✔           |
