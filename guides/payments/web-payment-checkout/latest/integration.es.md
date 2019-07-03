@@ -154,7 +154,7 @@ var preference = {
 mercadopago.preferences.create(preference)
   .then(function (response) {
     // Do something if preference has been created successfully
-    console.log(preference)
+    console.log(response)
   }).catch(function (error) {
     // If an error has occurred
   });
