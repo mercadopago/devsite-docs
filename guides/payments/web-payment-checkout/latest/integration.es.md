@@ -5,7 +5,7 @@ sites_supported:
 
 # Integra Web Checkout
 
-> NOTE
+> INFO
 >
 > En esta página
 >
@@ -37,7 +37,7 @@ Instalar el Web Checkout consta de dos pasos:
 
 Escribe el siguiente código que consta de tres partes:
 
-	1.1 Suma la <a href="https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK de Mercado Pago</a> en tu proyecto:
+1.1 Suma la <a href="https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK de Mercado Pago</a> en tu proyecto:
 
 [[[
 ```php
@@ -64,7 +64,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-	1.2 Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:
+1.2 Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:
 
 [[[
  ```php
@@ -110,7 +110,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
 
 
-	1.3 Configura la preferencia según tu producto o servicio:
+1.3 Configura la preferencia según tu producto o servicio:
 
 [[[
  ```php
