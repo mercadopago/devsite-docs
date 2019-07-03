@@ -76,10 +76,9 @@ Configura la preferencia con las <a href="https://www.mercadopago.com/mla/accoun
 
 Pruebas con tarjeta de crédito.
 
-
 1. Selecciona Tarjeta como medio de pago.
 2. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba)
-3. Completa el e-mail y ¡listo!
+3. Completa el e-mail y ¡listo!<br/><br/>
 
 #### Comprar como usuario registrado (con cuenta de Mercado Pago)
 Pruebas con tarjeta de crédito
@@ -103,7 +102,7 @@ American Express | 3711 8030 3257 522
 
 Para empezar a cobrar, debes completar el formulario <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Quiero ir a producción</a>
 
-Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.
+Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
 ### Próximos pasos
 
