@@ -72,7 +72,7 @@ You have two options to install this module: from your WordPress Store, or by do
 
 3. You should find the module ready to be installed. Click install. Its done!
 
-![Plugin Installation](/images/woocommerce_install_plugin.gif)
+![Installing Mercado Pago with Wordpress](/images/woocommerce_install_plugin.gif)
 
 ### Manual Download
 
@@ -84,17 +84,17 @@ You have two options to install this module: from your WordPress Store, or by do
 
 > HINT: To confirm that your module is really installed, you can click in *Plugins* item in the store administration menu, and check your just installed module. Just click *enable* to activate it and you should receive the message "Plugin enabled." as a notice in your WordPress.
 
-![Plugin Activation](/images/woocommerce_activate_plugin.gif)
+![Installing Mercado Pago manually in Wordpress](/images/woocommerce_activate_plugin.gif)
 
 # Configuration
 
 This page will explain how to configure general Mercado Pago settings for this module. First of all, make sure that WooCommerce MercadoPago plugin is enabled, by clicking in *Plugins* item on the WordPress sidebar, as shown bellow:
 
-![Plugin Menu](/images/woocommerce-plugins_menu.png)
+![Enabling Mercado Pago in Woocommerce plugins](/images/woocommerce-plugins_menu.png)
 
 Now, in the sidebar of WordPress, click in *Mercado Pago Settings* option. You should get the following page:
 
-![Mercado Pago Config](/images/woocommerce-mercadopago_config.png)
+![Mercado Pago configuration page in Woocommerce](/images/woocommerce-mercadopago_config.png)
 
 This window shows the main settings of WooCommerce MercadoPago plugin, where you can check and configure the following:
 
@@ -138,7 +138,7 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 # Configuring Credit Card
 This page will explain how to configure the module to accept payments with Credit Card of Custom Checkout. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Custom Checkout*. You should get the following page:
 
-![Custom Checkout Config](/images/woocommerce-custom_checkout_config.png)
+![Setting credit card in Woocommerce](/images/woocommerce-custom_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your credit card checkout:
 
@@ -156,7 +156,7 @@ How the payment option behaves.
 # Configuring Tickets
 This page will explain how to configure the module to accept payments with Tickets of Custom Checkout. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Ticket*. You should get the following page:
 
-![Ticket Checkout Config](/images/woocommerce-ticket_checkout_config.png)
+![Setting tickets in Woocommerce](/images/woocommerce-ticket_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your ticket checkout:
 
@@ -174,7 +174,7 @@ How the payment option behaves.
 # Configuring Checkout by Redirect, Iframe, or LightBox
 This page will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Basic Checkout*. You should get the following page:
 
-![Basic Checkout](/images/woocommerce-basic_checkout_config.png)
+![Setting tickets in Woocommerce](/images/woocommerce-basic_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your ticket checkout:
 
@@ -211,11 +211,11 @@ To use Mercado Envios, [you need to enable it in your Mercado Pago account.](htt
 
 To use Mercado Envios, you need it to be configured as a shipping method in WooCommerce. Just follow bellow steps:
 
-1. On your store administration, go to *WooCommerce > Settings > Shipping* tab. In *Shipping Zone*, click in *Add shipping zone*. Enter the zone name, select the regions within this zone and click in *Save Changes*.<br>![Mercado Envios 0](/images/woocommerce-me_0.png)
-2. Click in *view* of the zone created.<br>![Mercado Envios 1](/images/woocommerce-me_1.png)
-3. Click in *Add shipping method* and selected *Mercado Envios - Normal* or *Mercado Envios - Express*. This process has to be repeated twice, until normal and express are set.<br>![Mercado Envios 2](/images/woocommerce-me_2.png)
-4. Now you can also set the *Free Shipping* option and/or show the estimated *Delivery Time* in the shipping calculation.<br>![Mercado Envios 3](/images/woocommerce-me_3.png)
-5. Mercado Envios is ready for use, but do not forget to enable *Basic Checkout* for the correct operation of *Mercado Envios* and to inform the dimensions of your products.<br>![Mercado Envios 4](/images/woocommerce-me_4.png)
+1. On your store administration, go to *WooCommerce > Settings > Shipping* tab. In *Shipping Zone*, click in *Add shipping zone*. Enter the zone name, select the regions within this zone and click in *Save Changes*.<br>![Creating the Shipping Zone of the Mercado Envios in Woocommerce](/images/woocommerce-me_0.png)
+2. Click in *view* of the zone created.<br>![Created zone settings in Woocommerce](/images/woocommerce-me_1.png)
+3. Click in *Add shipping method* and selected *Mercado Envios - Normal* or *Mercado Envios - Express*. This process has to be repeated twice, until normal and express are set.<br>![Adding Mercado Envios as Shipping Method Woocommerce](/images/woocommerce-me_2.png)
+4. Now you can also set the *Free Shipping* option and/or show the estimated *Delivery Time* in the shipping calculation.<br>![Setting free shipping and delivery time](/images/woocommerce-me_3.png)
+5. Mercado Envios is ready for use, but do not forget to enable *Basic Checkout* for the correct operation of *Mercado Envios* and to inform the dimensions of your products.<br>![Mercado Envios ready for use](/images/woocommerce-me_4.png)
 
 > IMPORTANT 1: Your Mercado Pago account must be a *Seller Account*;
 
@@ -226,7 +226,7 @@ To use Mercado Envios, you need it to be configured as a shipping method in WooC
 # Configuring Subscriptions
 This page will explain how to configure the module to accept subscriptions paid with recurrent payments. On your store administration, go to *WooCommerce > Settings > Checkout* tab. In *Checkout Options*, click in *Mercado Pago - Subscription*. You should get the following page:
 
-![Subscription Checkout Config](/images/woocommerce-subscription_checkout_config.png)
+![Setting Subscription in Woocommerce](/images/woocommerce-subscription_checkout_config.png)
 
 If you have properly configured your credentials in [General Mercado Pago Settings](#Configuration), then you can now customize your credit card checkout:
 
@@ -251,7 +251,7 @@ How the payment option behaves.
 
 ### Creating an Assignable Product
 A subscription needs a special kind of product, that will be sold periodically. You can configure a product to be assignable following bellow steps:
-1. Go to *Products* in the side menu and click in *Add Product* button. The opened page should contain the product details and fields in *Product Data* window;<br>![Subscription Checkout Product](/images/woocommerce-subscription_checkout_product.png)
+1. Go to *Products* in the side menu and click in *Add Product* button. The opened page should contain the product details and fields in *Product Data* window;<br>![Setting subscription products pages](/images/woocommerce-subscription_checkout_product.png)
 2. Complete your product informations (name, price, images, etc), and then check *Recurrent Product* checkbox;
 3. Fill the information fields for the subscription: *Frequency* (frequency of which the charges will be made to your customer), *Frequency Type* (frequency type can be in [Days] or [Months]), and *End Date* (date that the signature should end).
 

@@ -6,7 +6,7 @@
 
 ### Estado por defecto
 
-![Payment button](/images/paybutton.png)
+![Botón de pago por defecto de Mercado Pago en Web Tokenize Checkout](/images/paybutton.png)
 
 ### Personalización
 
@@ -18,7 +18,7 @@ Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del
 data-button-label="Comprar"
 ```
 
-![Payment button - Modified label](/images/paybutton-modified-label.png)
+![Botón de pago con personalización de texto Mercado Pago en Web Tokenize Checkout](/images/paybutton-modified-label.png)
 
 #### Estilo
 
@@ -41,7 +41,7 @@ button.mercadopago-button {
 }
 ```
 
-![Payment button - Modified CSS](/images/paybutton-modified-css.png)
+![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](/images/paybutton-modified-css.png)
 
 
 ## Colores en la interfaz
@@ -50,7 +50,7 @@ button.mercadopago-button {
 
 #### Estado por defecto
 
-![Standard elements](/images/cow-ui-elements.png)
+![Interfaz por defecto Mercado Pago Web Tokenize Checkout](/images/cow-ui-elements.png)
 
 #### Personalización
 
@@ -69,14 +69,14 @@ El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 data-elements-color="#c0392b"
 ```
 
-![Custom elements](/images/cow-ui-elements--custom.png)
+![Interfaz personalizada Mercado Pago Web Tokenize Checkout](/images/cow-ui-elements--custom.png)
 
 
 ### Encabezado
 
 #### Estado por defecto
 
-![Standard header](/images/cow-ui-header.png)
+![Encabezado por defecto Mercado Pago Web Tokenize Checkout](/images/cow-ui-header.png)
 
 #### Personalización
 
@@ -88,7 +88,7 @@ El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 data-header-color="#c0392b"
 ```
 
-![Custom header](/images/cow-ui-header--custom.png)
+![Encabezado personalizado Mercado Pago Web Tokenize Checkout](/images/cow-ui-header--custom.png)
 
 
 ### Color de texto
@@ -101,7 +101,7 @@ Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Po
 data-elements-color="#81ecec" <!-- Color claro -->
 ```
 
-![Font color in light element](/images/cow-ui-fontcolor__light.png)
+![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](/images/cow-ui-fontcolor__light.png)
 
 Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
@@ -109,13 +109,13 @@ Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`.
 data-elements-color="#8e44ad" <!-- Color oscuro -->
 ```
 
-![Font color in dark element](/images/cow-ui-fontcolor__dark.png)
+![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](/images/cow-ui-fontcolor__dark.png)
 
 ## Detalle de la compra
 
 ### Estado por defecto
 
-![Summary Default](/images/cow-summary.png)
+![Detalle de compra Mercado Pago Web Tokenize Checkout](/images/cow-summary.png)
 
 
 ### Personalización

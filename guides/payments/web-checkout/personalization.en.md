@@ -238,7 +238,7 @@ In the case of not being activated the payment may result in the state `in_proce
 
 For more information check the possible states of a payment:
 
-![payment-diagram](/images/payments-status-transitions-diagram.png)
+![Payment status diagram Mercado Pago](/images/payments-status-transitions-diagram.png)
 
 To enable it, just configure as _true_ the field `binary_mode`:
 

@@ -4,7 +4,7 @@ Esta biblioteca fornece um conjunto de classes e métodos para interagir com a A
 
 ### Versões do PHP suportadas:
 
-O SDK suporta PHP 5 ou maior
+O SDK suporta PHP 5.5.0 ou maior
 
 ### Instalação 
 
@@ -14,7 +14,7 @@ O SDK suporta PHP 5 ou maior
 2. Vá para o diretório do seu projeto e execute `composer require "mercadopago/dx-php:dev-master"` na linha de comando.
 3. Isso é como a sua estrutura de diretório se parece.
 
-![screen shot 2017-12-27 at 7 07 47 pm](https://user-images.githubusercontent.com/864790/34394635-44f7745a-eb39-11e7-981d-77cf759cf05f.png)
+![Structure of the Mercado Pago SDK for PHP](https://user-images.githubusercontent.com/864790/34394635-44f7745a-eb39-11e7-981d-77cf759cf05f.png)
 
 4. Isso é tudo, você tem o SDK do Mercado Pago instalado.
 
@@ -46,7 +46,7 @@ O SDK suporta PHP 5 ou maior
 
   Você pode interagir com todos os recursos disponíveis na API pública, para isso cada recurso é representado por classes de acordo com o seguinte diagrama:
   
-  ![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
+  ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
   
   **Exemplo**
   

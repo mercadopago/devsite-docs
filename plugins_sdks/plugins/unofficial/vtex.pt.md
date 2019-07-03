@@ -39,25 +39,25 @@ Para operar em modo Agregador sé é necessário configurar uma afiliação.
 1. Expanda o menu Catalog.
 2. Acesse PCI Gateway.
 
-    ![VTEX afiliation](/images/vtex-afiliation-1.png)
+    ![Setting affiliation in VTEX](/images/vtex-afiliation-1.png)
 
 3. Acesse menu lateral: Pagamento.
 4. Configurações. 
 
-    ![VTEX afiliation](/images/vtex-config.png)
+    ![VTEX Configuration Page](/images/vtex-config.png)
     
 5. Acesse menu superior: Afiliações de Gateways.
 6. Adicionar Nova Afiliação (Sinal de +).
 
-    ![VTEX afiliation](/images/vtex-afiliation.png)
+    ![Affiliation search bar](/images/vtex-afiliation.png)
 
 7. Buscar e selecionar MercadoPagoV1.
 
-    ![VTEX afiliation](/images/vtex-afiliation-3.png)
+    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)
 
 8. Completar as informações exigidas na afiliação.
 
-    ![VTEX afiliation](/images/vtex-afiliation-4.png)
+    ![Complete affliation information](/images/vtex-afiliation-4.png)
 
 - Nome da afiliação: Nome que identificará a afiliação.
 - OAuth login: Não se utiliza.
@@ -90,11 +90,11 @@ Planos de pagamentos nativos são os cartões de crédito / débito que a Vtex t
 4. Proximo ao campo de busca.
 5. No botão (Sinal de +)
 
-    ![VTEX afiliation](/images/vtex-afiliation-2.png)
+    ![Payment terms bar](/images/vtex-afiliation-2.png)
 
 6. Buscar e selecionar o meio de pagamento que se quer adicionar, para o exemplo vamos usar American Express.
 
-    ![Native plan](/images/vtex-native-plan-3.png)
+    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
 
 7. Colocar uma descrição (pode ser em branco).
 8. Selecionar a afiliação.
@@ -102,11 +102,11 @@ Planos de pagamentos nativos são os cartões de crédito / débito que a Vtex t
 10. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
 11. Salvar a configuração.
 
-    ![Native plan](/images/vtex-native-plan-4.png)
+    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
 
 12. Verificar se o plano nativo foi adicionado.
 
-    ![Native plan](/images/vtex-native-plan-5.png)
+    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
 
 ###  Configurar Planos de Pagamento Offline
 
@@ -130,11 +130,11 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 4. Proximo ao campo de busca.
 5. No botão (Sinal de +)
 
-    ![VTEX afiliation](/images/vtex-afiliation-2.png)
+    ![Payment condition bar](/images/vtex-afiliation-2.png)
 
 6. Buscar e selecionar Boleto Bancário – Este plano de pagamento inclui todos os meios Off-Line do país.
 
-    ![Offline](/images/vtex-offline-plan-3.png)
+    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
 
 7. Colocar uma descrição (pode ser em branco).
 8. Selecionar a afiliação.
@@ -148,24 +148,24 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 1. Expanda o menu Catalog.
 2. Acessar PCI Gateway.
 
-    ![Offline](/images/vtex-webpay-1.png)
+    ![PCI gateway page](/images/vtex-webpay-1.png)
 
 3. Ajustes.
 4. Planos de pagamento.
 5. Novo plano de pagamento.
 
-    ![Offline](/images/vtex-webpay-2.png)
+    ![Payment plan bar in VTEX](/images/vtex-webpay-2.png)
 
 6. Buscar e selecionar Webpay.
 
-    ![Offline](/images/vtex-webpay-3.png)
+    ![Webpay page in VTEX](/images/vtex-webpay-3.png)
 
 7. Colocar uma descrição (pode ser em branco).
 8. Selecionar a afiliação.
 9. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
 10. Salvar a configuração.
 
-    ![Offline](/images/vtex-webpay-4.png)
+    ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
 
 ### Configurar plano de pagamento personalizado
 
@@ -179,18 +179,18 @@ Uruguay: Oca.
 1. Expanda o menu Catalog.
 2. Acessar PCI Gateway.
 
-    ![Custom plan](/images/vtex-custom-1.png)
+    ![PCI gateway page](/images/vtex-custom-1.png)
 
 3. Ajustes.
 4. Pagamentos personalizados.
 5. Selecionar uma Cobrand para configurar.
 
-    ![Custom plan](/images/vtex-custom-2.png)
+    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
 
 6. Completar s campos para configurar o cartão de crédito desejado. As instruções devem ser copiadas e coladas para evitar erros.
 7. Salvar a configuração.
 
-    ![Custom plan](/images/vtex-custom-3.png)
+    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
 
 8. Colocar uma descrição (pode ser em branco).
 9. Selecionar a afiliação.
@@ -198,7 +198,7 @@ Uruguay: Oca.
 11. Selecionar automático.
 12. Salvar a configuração.
 
-![Custom plan](/images/vtex-custom-4.png)
+![Payment Methods Configuration Page](/images/vtex-custom-4.png)
 
 ### Configurar Plano de Pagamento Personalizado - Cartões da Argentina
 
@@ -236,15 +236,15 @@ Uruguay: Oca.
 1. Expanda o menu Catalog.
 2. Acessar Portal.
 
-    ![Custom plan](/images/vtex-device-settings-1.png)
+    ![Setting deviceID](/images/vtex-device-settings-1.png)
 
 3. Selecionar o ícone de ajustes.
 
-    ![Custom plan](/images/vtex-device-settings-2.png)
+    ![Adjustment icon](/images/vtex-device-settings-2.png)
 
 4. Acessar código.
 5. Selecionar checkout5-custom.js.
-6. Copiar e pegar o seguinte código:
+6. Copiar e colar o seguinte código, substituindo o campo `publicKey`:
 
 ```
 var dmlscript = document.createElement("script");

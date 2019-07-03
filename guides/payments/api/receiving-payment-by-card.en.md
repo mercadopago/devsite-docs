@@ -240,7 +240,6 @@ function sdkResponseHandler(status, response) {
 };
 ```
 
-You can [download the complete example here](#).
 
 ## Receive card payments
 

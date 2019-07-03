@@ -40,24 +40,24 @@ To operate in aggregator mode you just need to set an affiliation.
 1. Select Catalog menu.
 2. Select PCI Gateway.
 
-    ![VTEX afiliation](/images/vtex-afiliation-1.png)
+    ![Setting affiliation in VTEX](/images/vtex-afiliation-1.png)
 
 3. Access side menu: Payment/Settings.
 
-    ![VTEX afiliation](/images/vtex-config.png)
+    ![VTEX Configuration Page](/images/vtex-config.png)
     
 4. Go top menu: Gateways Affiliations.
 5. Add New Affiliation (+ Sign).
 
-    ![VTEX afiliation](/images/vtex-afiliation.png)
+    ![Affiliation search bar](/images/vtex-afiliation.png)
 
 6. Search y select "MercadoPagoV1".
 
-    ![VTEX afiliation](/images/vtex-afiliation-3.png)
+    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)
 
 7. Fill the information required.
 
-    ![VTEX afiliation](/images/vtex-afiliation-4.png)
+    ![Complete affliation information](/images/vtex-afiliation-4.png)
 
 - Affiliation Name: Affiliation identifier name.
 - OAuth login: Not used.
@@ -90,11 +90,11 @@ Native payment plan are the credit/debit cards that Vtex has integrated
 4. Next to the search field.
 5. On the (+ sign)
 
-    ![VTEX afiliation](/images/vtex-afiliation-2.png)
+    ![Payment terms bar](/images/vtex-afiliation-2.png)
 
 6. Search and select the payment method to add, in this example American Express.
 
-    ![Native plan](/images/vtex-native-plan-3.png)
+    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
 
 7. Put a description (optional).
 8. Select the affiliation.
@@ -102,7 +102,7 @@ Native payment plan are the credit/debit cards that Vtex has integrated
 10. Set status active for the payment method in checkout - It could be set and customized afterwards.
 11. Save.
 
-    ![Native plan](/images/vtex-native-plan-4.png)
+    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
 
 12. Check that the native plan is added.
 
@@ -241,15 +241,15 @@ Uruguay: Oca.
 1. Select Catalog menu.
 2. Select portal.
 
-    ![Custom plan](/images/vtex-device-settings-1.png)
+    ![Setting deviceID](/images/vtex-device-settings-1.png)
 
 3. Select settings.
 
-    ![Custom plan](/images/vtex-device-settings-2.png)
+    ![Adjustment icon](/images/vtex-device-settings-2.png)
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy paste the following code:
+6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
 
 ```
 var dmlscript = document.createElement("script");

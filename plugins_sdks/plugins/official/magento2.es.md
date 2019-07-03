@@ -125,7 +125,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 
 3. Con las credenciales completadas, debe habilitar los métodos de pago. Acceda a la opción **Checkout Custom - Credit And Debit Card**, haga un clic en el botón **Configure** y marque la opción **Enable** como **Yes**. Siga este proceso para ** Checkout Custom - Credit And Debit Card** y para **Checkout Custom - Offline Payment Methods (Ticket)** haga un clic en **Save Config** para guardar la configuración.
 
-![MercadoPago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
+![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
 
 4. ¡Listo! El Checkout Custom con Tarjeta de crédito y Ticket ha sido configurado y habilitado con éxito!
@@ -149,7 +149,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Configuration](images/magento2/mercadopago_global_configuration.png)
+![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 
 3. Con las credenciales llenadas, ahora es necesario habilitar el método de pago. Vaya a la opción **Enable** y marque como **Yes**. Aproveche y configure el Tipo de Checkout (**Type Checkout**) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (**Auto Redirect**).

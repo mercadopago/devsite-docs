@@ -23,20 +23,20 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 1. Acessar o administrador de sua loja na plataforma.
 2. No menu configurações, selecionar a opção **MEIOS DE PAGAMENTO**
 
-    ![NuvemShop Configuracao](/images/NuvemShopmeiodepagamento1.png)
+    ![Payments Modules - Nuvem Shop](/images/NuvemShopmeiodepagamento1.png)
    
 
 3. Clique no botão **ATIVAR** no quadro do Mercado Pago.
 
-    ![NuvemShop Configuracao](/images/NuvemShopativarMP.png)
+    ![enabling Mercado Pago in Nuvem Shop](/images/NuvemShopativarMP.png)
 
 4. Escolha as formas de pagamentos: Cartão de Crédito e Boleto  
 
-    ![NuvemShop Configuracao](/images/NuvemShopativarMP2.png)
+    ![Payments Method page - Nuvem shop](/images/NuvemShopativarMP2.png)
 
 5. Será redirecionado para uma página do Mercado Pago para poder permitir a conexão entre a Nuvem Shop Plataforma e sua conta Mercado Pago, realizando todas as configurações necessárias.
 
-    ![NuvemShop Configuracao](/images/NuvemShoppermitirMP.png)
+    ![Authorization message from the Nuvem Shop with the Mercado Pago](/images/NuvemShoppermitirMP.png)
 
 6. Após clicar em **PERMITIR** você será redirecionado de volta para a seção administrativa da plataforma, na tela de configurações do módulo Mercado Pago.
 

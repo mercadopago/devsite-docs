@@ -8,263 +8,279 @@ errors:
 - 400 BAD_REQUEST:
   - '400004':
       description:
-        en:
+        en: Invalid application.
         es: Aplicación inválida.
-        pt:
+        pt: Aplicação inválida.
   - '400005':
       description:
-        en:
+        en: The application is required.
         es: La aplicación es requerida.
-        pt:
+        pt: A aplicação é obrigatória.
   - '400006':
       description:
-        en:
+        en: Invalid date of release for the Disbursement.
         es: Fecha de liberación inválida para el Disbursement.
-        pt:
+        pt: Data de liberação inválida para o Disbursement.
   - '400007':
       description:
-        en:
+        en: Invalid date of release for the Disbursement.
         es: Fecha de liberación inválida para el Disbursement.
-        pt:
-  - 400013':
+        pt: Data de liberação inválida para o Disbursement.
+  - '400013':
       description:
-        en:
+        en: Invalid email address.
         es: Email inválido.
-        pt:
-  - 400014':
+        pt: E-mail inválido.
+  - '400014':
       description:
-        en:
+        en: Invalid number of payments.
         es: Cantidad de pagos inválidos.
-        pt:
-  - 400015':
+        pt: Número de pagamentos inválidos.
+  - '400015':
       description:
-        en:
+        en: Payer ID is required for payments with money in the account.
         es: ID del Payer es requerido para pagos con dinero en cuenta.
-        pt:
-  - 400016':
+        pt: ID do Payer é obrigatória para pagamentos com dinheiro em conta.
+  - '400016':
       description:
-        en:
+        en: Invalid payment type.
         es: Tipo de pago inválido.
-        pt:
-  - 400017':
+        pt: Tipo de pagamento inválido.
+  - '400017':
       description:
-        en:
+        en: The transaction amount is required.
         es: El monto de la transacción es requerido.
-        pt:
-  - 400018':
+        pt: O valor da transação é obrigatório.
+  - '400018':
       description:
-        en:
+        en: Invalid amount.
         es: Monto inválido.
-        pt:
-  - 400019':
+        pt: Valor inválido.
+  - '400019':
       description:
-        en:
+        en: The payment method is required.
         es: El método de pago es requerido.
-        pt:
+        pt: A forma de pagamento é obrigatória.
   - '400020':
       description:
-        en:
+        en: The payment type is required.
         es: El tipo de pago es requerido.
-        pt:
+        pt: O tipo de pagamento é obrigatório.
   - '400021':
       description:
-        en:
+        en: The amount format is invalid.
         es: El formato del monto es inválido.
-        pt:
+        pt: O formato do valor é inválido.
   - '400022':
       description:
-        en:
+        en: Invalid processing method.
         es: Modo de procesamiento inválido.
-        pt:
+        pt: Modo de processamento inválido.
   - '400023':
       description:
-        en:
+        en: The payer type is required.
         es: El tipo del payer es requerido.
-        pt:
+        pt: O tipo de payer é obrigatório.
   - '400024':
       description:
-        en:
+        en: The payer’s name is required.
         es: El nombre del payer es requerido.
-        pt:
+        pt: O nome do payer é obrigatório.
   - '400025':
       description:
-        en:
+        en: The payer’s last name is required.
         es: El apellido del payer es requerido.
-        pt:
+        pt: O sobrenome do payer é obrigatório.
   - '400026':
       description:
-        en:
+        en: The payer’s identification type is required.
         es: El tipo de identificación del payer es requerida.
-        pt:
+        pt: O tipo de identificação do payer é obrigatório.
   - '400027':
       description:
-        en:
+        en: The payer’s identification number is required.
         es: El número de identificación del payer es requerido.
-        pt:
+        pt: O número de identificação do payer é obrigatório.
   - '400028':
       description:
-        en:
+        en: The expiration date is required.
         es: La fecha de expiración es requerida.
-        pt:
+        pt: A data de vencimento é obrigatória.
   - '400029':
       description:
-        en:
+        en: The payment token is required.
         es: El token del pago es requerido.
-        pt:
+        pt: O token do pagamento é obrigatório.
   - '400030':
       description:
-        en:
+        en: The installments are required.
         es: Las cuotas son requeridas.
-        pt:
+        pt: As parcelas são obrigatórias.
   - '400031':
       description:
-        en:
+        en: The amount of disbursements is required.
         es: El monto de los desembolsos es requerido.
-        pt:
+        pt: O valor dos desembolsos é obrigatório.
   - '400032':
       description:
-        en:
+        en: The collector ID is required.
         es: El ID del collector es requerido.
-        pt:
+        pt: O ID do collector é obrigatório.
   - '400033':
       description:
-        en:
+        en: Invalid Marketplace commission.
         es: Comisión del marketplace inválida.
-        pt:
+        pt: Tarifa recolhida pelo Marketplace.
   - '400034':
       description:
-        en:
+        en: Invalid disbursement amount.
         es: Monto del desembolso inválido.
-        pt:
+        pt: Valor do desembolso inválido.
   - '400035':
       description:
-        en:
+        en: The field money_release_date is invalid.
         es: El campo money_release_date inválido.
-        pt:
+        pt: O campo money_release_date é inválido.
   - '400036':
       description:
-        en:
+        en: The Marketplace does not have permissions on the payer.
         es: El Marketplace no tiene permisos sobre el payer.
-        pt:
+        pt: O Marketplace não tem permissões de acesso sobre o payer.
   - '400037':
       description:
-        en:
+        en: The collector was not found.
         es: No se encontró el collector.
-        pt:
+        pt: O collector não foi encontrado.
   - '400039':
       description:
-        en:
+        en: Invalid request.
         es: Request inválido.
-        pt:
+        pt: Request inválido.
   - '400040':
       description:
-        en:
+        en: Invalid status.
         es: Estado inválido.
-        pt:
+        pt: Status inválido.
   - '400041':
       description:
-        en:
+        en: Invalid start date.
         es: Fecha de inicio inválida.
-        pt:
+        pt: Data de início inválida.
   - '400042':
       description:
-        en:
+        en: Invalid end date.
         es: Fecha de fin inválida.
-        pt:
+        pt: Data de fim inválida.
   - '400043':
       description:
-        en:
+        en: Invalid email address.
         es: Email inválido.
-        pt:
+        pt: E-mail inválido.
   - '400044':
       description:
-        en:
+        en: Invalid payer ID.
         es: Id del payer inválido.
-        pt:
+        pt: ID do payer inválido.
   - '400045':
       description:
-        en:
+        en: Invalid collector ID.
         es: Id del collector inválido.
-        pt:
+        pt: ID do collector inválido.
   - '400046':
       description:
-        en:
+        en: The field external_reference is invalid.
         es: El campo external_reference es inválido.
-        pt:
+        pt: O campo external_reference é inválido.
   - '400047':
       description:
-        en:
+        en: Some parameters of the search are invalid.
         es: Algunos parámetros de la búsqueda son inválidos.
-        pt:
+        pt: Alguns parâmetros da busca são inválidos.
   - '400048':
       description:
-        en:
+        en: Invalid ID.
         es: Id inválido.
-        pt:
+        pt: ID inválido.
   - '400049':
       description:
-        en:
+        en: Invalid last modification date.
         es: Fecha de última modificación inválida.
-        pt:
+        pt: Data da última modificação inválida.
   - '400051':
       description:
-        en:
+        en: The field money_release_date is required.
         es: El campo money_release_date es requerido.
-        pt:
+        pt: O campo money_release_date é obrigatório.
   - '400052':
       description:
-        en:
+        en: The processing_mode is required.
         es: El campo processing_mode es requerido.
-        pt:
+        pt: O campo processing_mode é obrigatório.
   - '400053':
       description:
-        en:
+        en: Invalid content.
         es: Contenido inválido.
-        pt:
+        pt: Conteúdo inválido.
   - '400054':
       description:
-        en:
+        en: The Marketplace does not have permissions on the collector.
         es: El Marketplace no tiene permisos sobre el collector.
-        pt:
+        pt: O Marketplace não possui permissões de acesso sobre o collector.
   - '400055':
       description:
-        en:
+        en: The field external_reference is required.
         es: El campo external_reference es requerido.
-        pt:
+        pt: O campo external_reference é obrigatório.
   - '400056':
       description:
-        en:
+        en: The field money_release_days is invalid.
         es: El campo money_release_days es inválido.
-        pt:
+        pt: O campo money_release_days é inválido.
   - '400057':
       description:
-        en:
+        en: The fields collector_id and external_reference are duplicated.
         es: El campo collector_id y external_reference están duplicados.
-        pt:
+        pt: Os campos collector_id e external_reference estão duplicados.
   - '400058':
       description:
-        en:
+        en: Invalid idempodency key.
         es: Clave de idempotencia inválida.
-        pt:
+        pt: Chave de idempotência inválida.
+- 401 UNAUTHORIZED:
+  - '401000':
+      description:
+        en: Invalid access token.
+        es: Access token inválido.
+        pt: Access token inválido.
+  - '401002':
+      description:
+        en: Invalid access token.
+        es: Access token inválido.
+        pt: Access token inválido.
+  - '401003':
+      description:
+        en: Invalid device token.
+        es: Device token inválido.
+        pt: Device token inválido.
 - 404 NOT_FOUND:
   - '404001':
       description:
-        en:
-        es: No se encontró el Disbusement not found.
-        pt:
+        en: The Disbursement was not found.
+        es: No se encontró el Disbursement.
+        pt: O Disbursement não foi encontrado.
   - '404002':
       description:
-        en:
-        es: No se encontró el Advanced Payment not found.
-        pt:
+        en: The Advanced Payment was not found.
+        es: No se encontró el Advanced Payment.
+        pt: O Advanced Payment não foi encontrado.
   - '404003':
       description:
-        en:
-        es: No se encontró el Payer not found.
-        pt:
+        en: The Payer was not found.
+        es: No se encontró el Payer.
+        pt: O Payer não foi encontrado.
 - 406 NOT_ACCEPTABLE:
   - '406001':
       description:
-        en:
+        en: Error in the payments API.
         es: Error en api de payments.
-        pt:
+        pt: Erro na API de payments.

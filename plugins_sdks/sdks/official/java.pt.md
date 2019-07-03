@@ -35,7 +35,7 @@ Esta biblioteca fornece um conjunto de classes e métodos para interagir com a A
     ```
 3. Usando objetos de recursos.
 
-![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
+![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 
 **Examplo**
 

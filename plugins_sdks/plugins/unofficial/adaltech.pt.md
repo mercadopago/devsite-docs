@@ -1,6 +1,6 @@
 ---
-  sites_supported:
-      - mlb
+sites_supported:
+  - mlb
 ---
 
 # Adaltech
@@ -31,10 +31,8 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 Adaltech realiza todas as configurações necessárias para que você venda em sua loja online com o Mercado Pago em uma integração transparente e segura.
 
-## Canal de suporte 
+## Canal de suporte
 
-Email | Telefone 
+Email | Telefone
 --|--
 suporte@gticket.com.br |(11)43848727
-
-

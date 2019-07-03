@@ -14,7 +14,7 @@ sites_supported:
 
 ## Fluxo
 
-![QR Petrolera Flow](/images/mobile/qr-gas-flow.es.svg)
+![QR payment flow at gas stations](/images/mobile/qr-gas-flow.es.svg)
 
 1. O usuário escaneia o código QR no aplicativo Mercado Pago ou Mercado Livre. O QR contém o `STORE_ID` com a informação da posição onde a venda foi feita.
 

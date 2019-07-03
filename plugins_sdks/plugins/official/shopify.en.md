@@ -36,16 +36,16 @@ Great for merchants who want to get going quickly and easily.
 
 1. In your Shopify admin panel, go to the menu **Settings > Payments**.
 
-  ![Config](/images/shopify-config-1.gif)
+  ![Configuring Mercado Pago in shopify](/images/shopify-config-1.gif)
 
 2. In Accept credit cards, select **MercadoPago**.
 3. Fill the **CLIENT ID** and **CLIENT SECRET**. Get yout credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-  ![Config](/images/shopify-config-2.gif)
+  ![Configuring client id and client secret in shopify](/images/shopify-config-2.gif)
 
 4. Click the button "**Activate**".
 
-  ![Config](/images/shopify-config-3.gif)
+  ![Saving All Settings](/images/shopify-config-3.gif)
 
 5. Congrats! **Mercado Pago** was installed and configured!
 

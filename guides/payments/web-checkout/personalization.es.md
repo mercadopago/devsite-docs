@@ -240,7 +240,7 @@ En el caso de no estar activado el pago puede resultar en el estado `in_process`
 
 Para más información revisa los posibles estados de un pago:
 
-![payment-diagram](/images/payments-status-transitions-diagram.png)
+![Diagrama de estados de pago Mercado Pago](/images/payments-status-transitions-diagram.png)
 
 Para activarlo, basta configurar como _true_ el campo `binary_mode`:
 
