@@ -47,15 +47,15 @@ require __DIR__ .  '/vendor/autoload.php';
 ?>
 ```
 ```node
-// SDK de Mercado Pago
-var mercadopago = require('mercadopago');
+// 1: Cargá el SDK en tu proyecto
+const mercadopago = require ('mercadopago');
 ```
 ```java
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 ```
 ```ruby
-// SDK de Mercado Pago
+# 1: Cargá el SDK en tu proyecto
 require 'mercadopago.rb'
 ```
 ```csharp
@@ -77,14 +77,13 @@ MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
 ?>
 ```
 ```node
-// SDK de Mercado Pago
-var mercadopago = require('mercadopago');
+// 1: Cargá el SDK en tu proyecto
+const mercadopago = require ('mercadopago');
 
-//Agrega credenciales
+// 2: Configurá tus credenciales
 mercadopago.configure({
-    access_token: 'ENV_ACCESS_TOKEN'
-});
-```
+  access_token: 'ENV_ACCESS_TOKEN'
+});```
 ```java
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
@@ -93,11 +92,11 @@ import com.mercadopago.MercadoPago;
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 ```
 ```ruby
-// SDK de Mercado Pago
+# 1: Cargá el SDK en tu proyecto
 require 'mercadopago.rb'
 
-//Agrega credenciales
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN"
+# 2: Configurá tus credenciales
+$mp = MercadoPago.new('ENV_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -133,31 +132,33 @@ MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
 ?>
 ```
 ```node
-// SDK de Mercado Pago
-var mercadopago = require('mercadopago');
+// 1: Carga el SDK en tu proyecto
+const mercadopago = require ('mercadopago');
 
-//Agrega credenciales
+// 2: Configura tus credenciales
 mercadopago.configure({
-    access_token: 'ENV_ACCESS_TOKEN'
+  access_token: 'ENV_ACCESS_TOKEN'
 });
 
-// Configura tu preferencia
-var preference = {
+// 3: Crea una preferencia de cobro
+let preference = {
   items: [
-	{
+    {
       title: 'Mi producto',
       unit_price: 100,
-      quantity: 1
+      quantity: 1,
     }
   ]
 };
+
+// 4: Creá un botón de pago en tu sitio
 mercadopago.preferences.create(preference)
-  .then(function (response) {
-    // Do something if preference has been created successfully
-    console.log(response)
-  }).catch(function (error) {
-    // If an error has occurred
-  });
+.then(function(response){
+  // Este valor reemplazará el string "$$init_point$$" en tu HTML
+  global.init_point = response.body.init_point;
+}).catch(function(error){
+  console.log(error);
+});
 ```
 ```java
 // SDK de Mercado Pago
@@ -178,24 +179,41 @@ preference.appendItem(item);
 preference.save();
 ```
 ```ruby
-// SDK de Mercado Pago
+# 1: Cargá el SDK en tu proyecto
 require 'mercadopago.rb'
 
-//Agrega credenciales
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN"
+# 2: Configurá tus credenciales
+$mp = MercadoPago.new('ENV_ACCESS_TOKEN')
 
-//Crea un item en la preferencia
-item = MercadoPago::Item.new({
-  title:        "Mi producto",
-  quantity:     1,
-  unit_price:   75.56
-})
+# 3: Crea una preferencia de cobro
+preference_data = {
+  "items": [
+    {
+      "title": "Mi producto",  
+      "unit_price": 100,
+      "quantity": 1
+    }
+  ]
+}
+# 3: Crea una preferencia de cobro
+preference_data = {
+  "items": [
+    {
+      "title": "Mi producto",  
+      "unit_price": 100,
+      "quantity": 1
+    }
+  ]
+}
+preference = $mp.create_preference(preference_data)
 
-//Crea un objeto de preferencia
-preference = MercadoPago::Preference.new({
-  items: [item]
-})
-preference.save()
+# 4. Creá un botón de pago en tu sitio
+# Este valor reemplazará el string "<%= @init_point %>" en tu HTML
+@init_point = preference["response"]["init_point"]
+result = renderer.result()
+File.open(html_file, 'w') do |f|
+  f.write(result)
+end
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -258,14 +276,14 @@ Redirige al init_point de la preferencia
 ===
 Redirige al init_point de la preferencia
 ===
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Pagar</title>
-    </head>
-    <body>
-        <a href="$$init_point$$" target="_blank">Pagar</a>
-    </body>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="$$init_point$$" target="_blank">Pagar</a>
+  </body>
 </html>
 ```
 ```java
@@ -286,14 +304,14 @@ Redirige al init_point de la preferencia
 ===
 Redirige al init_point de la preferencia
 ===
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Pagar</title>
-    </head>
-    <body>
-        <a href="<%= @init_point %>" target="_blank">Pagar</a>
-    </body>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="<%= @init_point %>" target="_blank">Pagar</a>
+  </body>
 </html>
 ```
 ```csharp
