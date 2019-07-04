@@ -135,9 +135,9 @@ data-button-label="Comprar"
 
 ### Por defecto:
 
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/><br/>
+![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
 
-## Personalizado:
+### Personalizado:
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
