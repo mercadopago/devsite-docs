@@ -10,7 +10,7 @@ sites_supported:
 > En esta página
 >
 >
-> <br/><br/>
+> </p><br/><br/><p>
 > [¿Cómo me integro?](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
 >
 > [Pasos para integrarte](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)

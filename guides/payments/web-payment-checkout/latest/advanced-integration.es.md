@@ -10,8 +10,8 @@ sites_supported:
 > En esta página
 >
 >
-> <br/>
-> <br/>[Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
+> </p><br/><br/><p>
+> [Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
 >
 > [Información adicional para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
 >
