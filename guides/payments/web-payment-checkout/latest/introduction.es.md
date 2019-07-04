@@ -45,7 +45,7 @@ Pago con dos tarjetas					           |      ✔      |                     |
 
 <div>
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card">
+<blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
  <p>Para realizar la integración, tienes que cumplir con los requisitos necesarios.</p>
 </blockquote>

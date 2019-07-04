@@ -10,7 +10,7 @@ sites_supported:
 > En esta página
 >
 >
-> 
+>
 > [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
 >
 > [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
@@ -147,13 +147,13 @@ data-button-label="Comprar"
 
 <div>
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card">
+<blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Otras funcionalidades</p>
  <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
 </blockquote>
 </a>
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card">
+<blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
 </blockquote>

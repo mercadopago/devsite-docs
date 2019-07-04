@@ -316,14 +316,14 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
   <div>
   <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
     <blockquote class="next-step-card">
-      <p class="card-note-title">Otras funcionalidades</p>
+      <p class="card-note-title next-step-card-left">Otras funcionalidades</p>
       <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
     </blockquote>
   </a>
   </div>
   <div>   
   <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
-    <blockquote class="next-step-card">
+    <blockquote class="next-step-card next-step-card-right">
       <p class="card-note-title">Personalizaciones</p>
       <p>Adapta el estilo de tu marca en la experiencia de compra.</p>
     </blockquote>

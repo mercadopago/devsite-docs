@@ -350,13 +350,13 @@ curl -X POST \
 
 <div>
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card">
+<blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Integración avanzada</p>
  <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
 </blockquote>
 </a>   
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card">
+<blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Personalizaciones</p>
  <p>Adapta el estilo de tu marca en la experiencia de compra.</p>
 </blockquote>
