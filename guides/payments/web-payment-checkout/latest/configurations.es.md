@@ -9,9 +9,10 @@ sites_supported:
 >
 > En esta página
 >
->[Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
 >
-> [Atributos para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
+> <br/><br/>
+> * [Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
+> * [Atributos para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
 
 ## Ejemplo de una preferencia completa
 
@@ -343,3 +344,25 @@ curl -X POST \
 }'
 ```
 ]]]
+
+### Próximos pasos
+
+<div>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<blockquote class="next-step-card">
+<p class="card-note-title">Integración avanzada</p>
+ <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
+</blockquote>
+</a>   
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+<blockquote class="next-step-card">
+<p class="card-note-title">Personalizaciones</p>
+ <p>Adapta el estilo de tu marca en la experiencia de compra.</p>
+</blockquote>
+</a>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

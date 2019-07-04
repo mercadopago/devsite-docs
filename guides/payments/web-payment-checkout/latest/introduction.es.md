@@ -34,25 +34,31 @@ Prevención de fraude               	     |      ✔      |         ✔         
 Pantalla de finalización de pago		     |      ✔      |                     |
 Pago con dos tarjetas					           |      ✔      |                     |
 
+> NOTE
+>
+> Nota
+>
+> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
 
+
+## Próximos pasos
 
 <div>
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card">
 <p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Cuando hayas cumplido con los requisitos, debes completar el formulario </p>
+ <p>Para realizar la integración, tienes que cumplir con los requisitos necesarios.</p>
 </blockquote>
 </a>
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card">
-<p class="card-note-title">Integración<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Cuando hayas cumplido con los requisitos, debes completar el formulario </p>
+<p class="card-note-title">Integra Web Checkout<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
+ <p>Sigue el paso a paso para comenzar a recibir pagos en tu sitio.</p>
 </blockquote>
 </a>    
 </div>
-
->NOTE
->
->Nota
->
-> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

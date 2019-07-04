@@ -5,15 +5,15 @@ sites_supported:
 
 # Integra Web Checkout
 
-> INFO
+> NOTE
 >
 > En esta página
 >
-> [¿Cómo me integro?](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
 >
-> [Pasos para integrarte](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
->
-> [Próximos pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_próximos_pasos)
+> <br/><br/>
+> * [¿Cómo me integro?](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
+> * [Pasos para integrarte](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
+> * [Próximos pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_próximos_pasos)
 
 ## ¿Cómo me integro?
 
@@ -340,17 +340,31 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Chec
 >
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
 
-### Próximos pasos
-
-- [Prueba tu integración](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
-- [Integración avanzada](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
-
-- [Personalizar](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
-
-- [Configuraciones](http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
-
+<br/>
 > NOTE
 >
 > Nota
 >
 > Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
+
+### Próximos pasos
+
+<div>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+<blockquote class="next-step-card">
+<p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
+ <p>Revisa que esté todo bien en tu integración con los usuarios de prueba.</p>
+</blockquote>
+</a>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
+<blockquote class="next-step-card">
+<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
+ <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
+</blockquote>
+</a>   
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

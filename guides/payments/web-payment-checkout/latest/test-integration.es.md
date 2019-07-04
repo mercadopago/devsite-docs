@@ -9,6 +9,8 @@ sites_supported:
 >
 > En esta página
 >
+>
+> <br/>
 > * [Cómo probar tu integración](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
 > * [Cómo crear usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
 > * [Prueba el flujo de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
@@ -106,6 +108,22 @@ Al terminar el formulario, verifica que las credenciales en tu integración sean
 
 ### Próximos pasos
 
-- [Integración avanzada](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
-- [Personalizar](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations)
-- [Configuraciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations)
+<div>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+<blockquote class="next-step-card">
+<p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
+ <p>Revisa que esté todo bien en tu integración con los usuarios de prueba.</p>
+</blockquote>
+</a>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<blockquote class="next-step-card">
+<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
+ <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
+</blockquote>
+</a>   
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

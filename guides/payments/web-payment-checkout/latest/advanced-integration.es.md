@@ -7,17 +7,15 @@ sites_supported:
 
 >NOTE
 >
->En esta página
+> En esta página
 >
-> [Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
-> 
-> [Información adicional para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
-> 
-> [URL de retorno](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
-> 
-> [Cancelaciones y evoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
-> 
-> [Gestion de contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+>
+> <br/><br/>
+> * [Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
+> * [Información adicional para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
+> * [URL de retorno](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
+> * [Cancelaciones y evoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+> * [Gestion de contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
 
 ## Recibe notificaciones de pagos
 
@@ -307,4 +305,28 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 
 <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/" target="_blank"> Gestionar contracargos</a>
 
-[Ir a _Personalizar_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
+### Próximos pasos
+
+<div>
+  <div>
+  <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
+    <blockquote class="next-step-card">
+      <p class="card-note-title">Otras funcionalidades</p>
+      <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
+    </blockquote>
+  </a>
+  </div>
+  <div>   
+  <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+    <blockquote class="next-step-card">
+      <p class="card-note-title">Personalizaciones</p>
+      <p>Adapta el estilo de tu marca en la experiencia de compra.</p>
+    </blockquote>
+  </a>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

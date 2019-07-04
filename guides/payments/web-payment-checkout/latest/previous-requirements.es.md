@@ -9,9 +9,10 @@ sites_supported:
 >
 > En esta página
 >
-> [Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
 >
-> [Requisitos previos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos/)
+> <br/><br/>
+> * [Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
+> * [Requisitos previos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos/)
 
 ## Glosario
 
@@ -29,12 +30,12 @@ _Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos de
 
 Para continuar, verifica los requisitos previos necesarios:
 
-&nbsp;&nbsp;#### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
-&nbsp;&nbsp;Para poder comenzar la integración es necesario contar con una cuenta de &nbsp;&nbsp;Mercado Pago o Mercado Libre.
-&nbsp;&nbsp;Si aún no tienes una, puedes <a href="https://www.mercadopago.com.ar/" &nbsp;&nbsp;target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
+#### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
+Para poder comenzar la integración es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
+Si aún no tienes una, puedes <a href="https://www.mercadopago.com.ar/" target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
 
-&nbsp;&nbsp;#### 2. Instalación de SDK de Mercado Pago
-&nbsp;&nbsp;Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
+#### 2. Instalación de SDK de Mercado Pago
+Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
 
 [[[
 ```php
@@ -82,4 +83,19 @@ PM> Install-Package mercadopago-sdk -Version 1.0.56
 >
 > Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
 
-[Continuar a Integrar Web Checkout](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/)
+### Próximos pasos
+
+<div>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
+<blockquote class="next-step-card">
+<p class="card-note-title">Integra Web Checkout<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
+ <p>Sigue el paso a paso para comenzar a recibir pagos en tu sitio.</p>
+</blockquote>
+</a>    
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+<blockquote class="next-step-card">
+<p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
+ <p>Revisa que esté todo bien en tu integración con los usuarios de prueba.</p>
+</blockquote>
+</a>
+</div>

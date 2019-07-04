@@ -9,11 +9,11 @@ sites_supported:
 >
 > En esta página
 >
-> [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
 >
-> [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
->
-> [Botones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
+> <br/><br/>
+> * [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+> * [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
+> * [Botones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
 ## Esquema modal
 
@@ -141,4 +141,24 @@ data-button-label="Comprar"
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
-[Ir a _Configuraciones_](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
+### Próximos pasos
+
+<div>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
+<blockquote class="next-step-card">
+<p class="card-note-title">Otras funcionalidades</p>
+ <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
+</blockquote>
+</a>
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<blockquote class="next-step-card">
+<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
+ <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
+</blockquote>
+</a>   
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
