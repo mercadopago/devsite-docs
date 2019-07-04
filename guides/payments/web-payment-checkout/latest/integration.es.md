@@ -195,16 +195,6 @@ preference_data = {
     }
   ]
 }
-# 3: Crea una preferencia de cobro
-preference_data = {
-  "items": [
-    {
-      "title": "Mi producto",  
-      "unit_price": 100,
-      "quantity": 1
-    }
-  ]
-}
 preference = $mp.create_preference(preference_data)
 
 # 4. Creá un botón de pago en tu sitio

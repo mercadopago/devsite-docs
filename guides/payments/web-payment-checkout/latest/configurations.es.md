@@ -287,7 +287,7 @@ item = MercadoPago::Item.new({
   unit_price:   75.56
 })
 item2 = MercadoPago::Item.new({
-  title:        "Mi producto 2”,
+  title:        "Mi producto2”,
   quantity:     2,
   unit_price:   96.56
 })
