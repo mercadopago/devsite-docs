@@ -10,7 +10,7 @@ sites_supported:
 > En esta página
 >
 >
-> </p><br/><br/><p>
+> 
 > [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
 >
 > [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)

@@ -10,7 +10,7 @@ sites_supported:
 > En esta página
 >
 >
-> </p><br/><br/><p>
+>
 > [Cómo probar tu integración](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
 >
 > [Cómo crear usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)

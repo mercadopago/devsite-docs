@@ -10,7 +10,7 @@ sites_supported:
 > En esta página
 >
 >
-> </p><br/><br/><p>
+>
 > [Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
 >
 > [Requisitos previos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos/)
