@@ -36,7 +36,7 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=TEST-7802846747055705-061416-c0c9b443246bef3a3bab6a19f36c93c0-390383281" \
+"https://api.mercadopago.com/users/test_user?access_token=**PROD_ACCESS_TOKEN**" \
 -d '{"site_id":"MLA"}'
 ```
 
