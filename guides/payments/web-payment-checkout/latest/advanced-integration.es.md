@@ -17,7 +17,7 @@ sites_supported:
 > 
 > [Cancelaciones y evoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
 > 
-> [Gestion de contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+> [Gestiona contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
 
 ## Recibe notificaciones de pagos
 
