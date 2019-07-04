@@ -322,7 +322,7 @@ Redirige al init_point de la preferencia
 
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > WARNING
 >
