@@ -73,7 +73,7 @@ require 'mercadopago.rb'
  require __DIR__ .  '/vendor/autoload.php';
 
  //Agrega credenciales
-MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
 ```node
@@ -82,28 +82,28 @@ const mercadopago = require ('mercadopago');
 
 // 2: Configurá tus credenciales
 mercadopago.configure({
-  access_token: 'ENV_ACCESS_TOKEN'
+  access_token: 'PROD_ACCESS_TOKEN'
 });```
 ```java
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
 # 1: Cargá el SDK en tu proyecto
 require 'mercadopago.rb'
 
 # 2: Configurá tus credenciales
-$mp = MercadoPago.new('ENV_ACCESS_TOKEN')
+$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ]]]
 
@@ -117,7 +117,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
  require __DIR__ .  '/vendor/autoload.php';
 
  //Agrega credenciales
-MercadoPago\SDK::setAccessToken('ENV_ACCESS_TOKEN');
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
 // Crea un objeto de preferencia
  $preference = new MercadoPago\Preference();
@@ -137,7 +137,7 @@ const mercadopago = require ('mercadopago');
 
 // 2: Configura tus credenciales
 mercadopago.configure({
-  access_token: 'ENV_ACCESS_TOKEN'
+  access_token: 'PROD_ACCESS_TOKEN'
 });
 
 // 3: Crea una preferencia de cobro
@@ -165,7 +165,7 @@ mercadopago.preferences.create(preference)
 import com.mercadopago.MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 
 //Crea un objeto de preferencia
 Preference preference = new Preference();
@@ -183,7 +183,7 @@ preference.save();
 require 'mercadopago.rb'
 
 # 2: Configurá tus credenciales
-$mp = MercadoPago.new('ENV_ACCESS_TOKEN')
+$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 
 # 3: Crea una preferencia de cobro
 preference_data = {
@@ -220,7 +220,7 @@ end
 using MercadoPago;
 
 //Agrega credenciales
-MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
 //Crea un objeto de preferencia
 Preference preference = new Preference();
@@ -239,7 +239,7 @@ preference.Save()"
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences?access_token="**ENV_ACCESS_TOKEN**"' \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="**PROD_ACCESS_TOKEN**"' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
   -d '{
