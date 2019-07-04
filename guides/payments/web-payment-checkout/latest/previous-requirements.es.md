@@ -32,11 +32,11 @@ _Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos de
 Para continuar, verifica los requisitos previos necesarios:
 
 #### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
-Para poder comenzar la integración es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
+Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**.
 Si aún no tienes una, puedes <a href="https://www.mercadopago.com.ar/" target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
 
 #### 2. Instalación de SDK de Mercado Pago
-Instala el SDK oficial para simplificar tu interacción con nuestras APIs.
+**Instala el SDK oficial** para simplificar tu interacción con nuestras APIs.
 
 [[[
 ```php
@@ -74,13 +74,13 @@ gem install mercadopago-sdk
 Usa <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar el SDK .NET de Mercado Pago.
 Para hacerlo ejecuta el siguiente comando en la consola del NuGet Package Manager:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.56
+PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
 
->NOTE
+> NOTE
 >
->Nota
+> Nota
 >
 > Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
 
@@ -95,7 +95,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.56
 </a>    
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card">
-<p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
+<p class="card-note-title">Prueba tu integración<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Revisa que esté todo bien en tu integración con los usuarios de prueba.</p>
 </blockquote>
 </a>

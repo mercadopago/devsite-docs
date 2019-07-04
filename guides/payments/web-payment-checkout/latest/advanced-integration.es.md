@@ -301,7 +301,7 @@ Preference preference = new Preference();
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
 Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 
-Puedes encontrar toda la información en la <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds" target="_blank"> sección Devoluciones y cancelaciones</a>
+Puedes encontrar toda la información en la <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds" target="_blank"> sección Devoluciones y cancelaciones</a>.
 
 ## Gestiona contracargos
 
@@ -322,7 +322,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
   </a>
   </div>
   <div>   
-  <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+  <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
     <blockquote class="next-step-card">
       <p class="card-note-title">Personalizaciones</p>
       <p>Adapta el estilo de tu marca en la experiencia de compra.</p>

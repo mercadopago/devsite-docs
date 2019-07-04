@@ -88,7 +88,7 @@ También se puede definir un medio de pago para que aparezca por defecto o defin
 
 Atributo | Descripción
 ------------ | -------------
-_`payment_methods`_ | Clase que describe los atributos y métodos de medios de Pagos
+_`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
 _`excluded_payment_methods`_ | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
 _`excluded_payment_types`_ | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
@@ -195,9 +195,9 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-## Sponsor ID (Partners)
+## Sponsor ID
 
-El atributo “sponsor_id” es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
+El atributo 'sponsor_id' es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
 
 ```json
 "sponsor_id": 123456789
@@ -355,7 +355,7 @@ curl -X POST \
  <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
 </blockquote>
 </a>   
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card">
 <p class="card-note-title">Personalizaciones</p>
  <p>Adapta el estilo de tu marca en la experiencia de compra.</p>

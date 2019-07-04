@@ -38,7 +38,7 @@ Pago con dos tarjetas					           |      ✔      |                     |
 >
 > Nota
 >
-> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
+> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
 
 ### Próximos pasos
@@ -50,12 +50,6 @@ Pago con dos tarjetas					           |      ✔      |                     |
  <p>Para realizar la integración, tienes que cumplir con los requisitos necesarios.</p>
 </blockquote>
 </a>
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card">
-<p class="card-note-title">Integra Web Checkout<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Sigue el paso a paso para comenzar a recibir pagos en tu sitio.</p>
-</blockquote>
-</a>    
 </div>
 <br/>
 <br/>

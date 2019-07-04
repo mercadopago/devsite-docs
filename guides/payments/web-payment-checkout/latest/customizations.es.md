@@ -105,7 +105,7 @@ data-header-color="#c0392b"
 ```
 
 ![Custom-Component](/images/web-payment-checkout/custom_components.gif)
-
+<br/>
 #### Textos
 
 El color del texto de los botones será determinado automáticamente dependiendo del contraste del color definido.
