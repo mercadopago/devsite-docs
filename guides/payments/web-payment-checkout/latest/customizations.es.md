@@ -5,14 +5,16 @@ sites_supported:
 
 # Personalizaciones
 
-> NOTE
+> INDEX
 >
 > En esta página
 >
 >
-> <br/>
+> <br/><br/>
 > [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+>
 > [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
+>
 > [Botones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
 ## Esquema modal

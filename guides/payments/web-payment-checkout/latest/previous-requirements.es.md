@@ -5,14 +5,15 @@ sites_supported:
 
 # Requisitos previos para comenzar
 
-> NOTE
+> INDEX
 >
 > En esta página
 >
 >
-> <br/><br/>
-> * [Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
-> * [Requisitos previos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos/)
+> <br/>
+> [Glosario](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario/)
+>
+> [Requisitos previos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos/)
 
 ## Glosario
 

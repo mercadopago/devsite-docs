@@ -5,14 +5,16 @@ sites_supported:
 
 # Integra Web Checkout
 
-> NOTE
+> INDEX
 >
 > En esta página
 >
 >
-> <br/>
+> <br/><br/>
 > [¿Cómo me integro?](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
+>
 > [Pasos para integrarte](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
+>
 > [Próximos pasos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_próximos_pasos)
 
 ## ¿Cómo me integro?

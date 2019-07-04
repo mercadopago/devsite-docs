@@ -5,16 +5,20 @@ sites_supported:
 
 # Integración avanzada
 
->NOTE
+> INDEX
 >
 > En esta página
 >
 >
 > <br/>
-> [Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
+> <br/>[Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
+>
 > [Información adicional para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
+>
 > [URL de retorno](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
+>
 > [Cancelaciones y evoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+>
 > [Gestion de contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
 
 ## Recibe notificaciones de pagos

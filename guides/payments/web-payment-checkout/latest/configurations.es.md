@@ -5,14 +5,15 @@ sites_supported:
 
 # Otras funcionalidades
 
-> NOTE
+> INDEX
 >
 > En esta página
 >
 >
-> <br/>
-> * [Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
-> * [Atributos para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
+> <br/><br/>
+> [Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
+> 
+> [Atributos para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
 
 ## Ejemplo de una preferencia completa
 
