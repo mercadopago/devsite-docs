@@ -41,7 +41,7 @@ Pago con dos tarjetas					           |      ✔      |                     |
 > Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/)
 
 
-## Próximos pasos
+### Próximos pasos
 
 <div>
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/" style="text-decoration:none;color:inherit">
