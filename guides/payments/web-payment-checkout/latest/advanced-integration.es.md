@@ -19,11 +19,12 @@ sites_supported:
 >
 > [Cancelaciones y evoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
 >
-> [Gestion de contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+> [Gestiona contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+
 
 ## Recibe notificaciones de pagos
 
-Las notificaciones IPN (Instant Payment Notification) son la forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
+Las notificaciones IPN (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados.** Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 Te permiten administrar tu stock y mantener tu sistema sincronizado.
 
 <a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
@@ -221,7 +222,7 @@ preference.Items.Add(
 
 ## URL de retorno
 
-Al finalizar el proceso de pago, tienes la opción de redireccionar al comprador a tu sitio.
+Al finalizar el proceso de pago, tienes la opción de **redireccionar al comprador a tu sitio.**
 Para esto, se utilizan las `back_urls`. Esta redirección puede ser automática a través del atributo `auto_return` o un link que permita volver al sitio del vendedor.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)

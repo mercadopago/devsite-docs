@@ -49,7 +49,7 @@ require __DIR__ .  '/vendor/autoload.php';
 ?>
 ```
 ```node
-// 1: Cargá el SDK en tu proyecto
+// SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 ```
 ```java
@@ -57,7 +57,7 @@ const mercadopago = require ('mercadopago');
 import com.mercadopago.MercadoPago;
 ```
 ```ruby
-# 1: Cargá el SDK en tu proyecto
+// SDK de Mercado Pago
 require 'mercadopago.rb'
 ```
 ```csharp
@@ -69,7 +69,7 @@ require 'mercadopago.rb'
 <br/><br/>1.2 Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
 
 [[[
- ```php
+```php
  <?php
  // SDK de Mercado Pago
  require __DIR__ .  '/vendor/autoload.php';
@@ -79,13 +79,14 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
 ```node
-// 1: Cargá el SDK en tu proyecto
+// SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-// 2: Configurá tus credenciales
+// Agrega credenciales
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
-});```
+});
+```
 ```java
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
@@ -94,7 +95,7 @@ import com.mercadopago.MercadoPago;
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
-# 1: Cargá el SDK en tu proyecto
+// SDK de Mercado Pago
 require 'mercadopago.rb'
 
 # 2: Configurá tus credenciales
@@ -134,15 +135,15 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
 ```node
-// 1: Carga el SDK en tu proyecto
+# SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-// 2: Configura tus credenciales
+# Agrega credenciales
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
 
-// 3: Crea una preferencia de cobro
+# Crea un objeto de preferencia
 let preference = {
   items: [
     {
@@ -153,7 +154,6 @@ let preference = {
   ]
 };
 
-// 4: Creá un botón de pago en tu sitio
 mercadopago.preferences.create(preference)
 .then(function(response){
   // Este valor reemplazará el string "$$init_point$$" en tu HTML
@@ -169,7 +169,7 @@ import com.mercadopago.MercadoPago;
 //Agrega credenciales
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 
-//Crea un objeto de preferencia
+// Crea un objeto de preferencia
 Preference preference = new Preference();
 
 // Crea un ítem en la preferencia
@@ -181,23 +181,13 @@ preference.appendItem(item);
 preference.save();
 ```
 ```ruby
-# 1: Cargá el SDK en tu proyecto
+# SDK de Mercado Pago
 require 'mercadopago.rb'
 
 # 2: Configurá tus credenciales
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 
-# 3: Crea una preferencia de cobro
-preference_data = {
-  "items": [
-    {
-      "title": "Mi producto",  
-      "unit_price": 100,
-      "quantity": 1
-    }
-  ]
-}
-# 3: Crea una preferencia de cobro
+# Crea un objeto de preferencia
 preference_data = {
   "items": [
     {
@@ -209,13 +199,8 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# 4. Creá un botón de pago en tu sitio
 # Este valor reemplazará el string "<%= @init_point %>" en tu HTML
 @init_point = preference["response"]["init_point"]
-result = renderer.result()
-File.open(html_file, 'w') do |f|
-  f.write(result)
-end
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -334,7 +319,7 @@ Redirige al init_point de la preferencia
 
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > WARNING
 >

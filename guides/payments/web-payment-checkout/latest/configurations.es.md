@@ -289,7 +289,7 @@ item = MercadoPago::Item.new({
   unit_price:   75.56
 })
 item2 = MercadoPago::Item.new({
-  title:        "Mi producto 2”,
+  title:        "Mi producto2”,
   quantity:     2,
   unit_price:   96.56
 })
@@ -324,7 +324,7 @@ preference.Save()"
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences?access_token="ENV_ACCESS_TOKEN"' \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
   -d '{
