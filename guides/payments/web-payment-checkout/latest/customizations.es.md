@@ -105,8 +105,8 @@ data-header-color="#c0392b"
 ```
 
 ![Custom-Component](/images/web-payment-checkout/custom_components.gif)
-<br/>
-#### Textos
+
+<br/>#### Textos
 
 El color del texto de los botones será determinado automáticamente dependiendo del contraste del color definido.
 Para un color de elemento claro, el color del texto será negro o #000. Por ejemplo:
@@ -159,6 +159,8 @@ data-button-label="Comprar"
 </blockquote>
 </a>   
 </div>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>

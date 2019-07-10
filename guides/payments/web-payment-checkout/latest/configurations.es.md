@@ -17,11 +17,9 @@ sites_supported:
 
 Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://beta.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
 
-Si ofreces compras de montos altos, por ejemplo, puedes permitir [pagar con dos tarjetas de crédito](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito)  o también [excluir medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 
 ## Ejemplo de una preferencia completa
-
-Para resumir todo lo detallado en las últimas secciones, a continuación se muestran un ejemplo de todos los <a href="https://mercadopago.com.ar/developers/es/reference/preferences/resource/" target="_blank"> datos en una preferencia</a> que se pueden configurar.
 
 ```json
 {
@@ -183,7 +181,7 @@ Puedes activar el modo binario si el modelo de negocio requiere que la aprobaci�
 
 En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
 
-Para activarlo, solo debes configurar como true el atributo _`binary_mode`_ de la preferencia de pago:
+Para activarlo, solo debes configurar como `true` el atributo _`binary_mode`_ de la preferencia de pago:
 
 ```json
 "binary_mode": true
@@ -201,7 +199,7 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 
 ## Sponsor ID
 
-El atributo 'sponsor_id' es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
+El atributo `sponsor_id` es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
 
 ```json
 "sponsor_id": 123456789
@@ -366,6 +364,8 @@ curl -X POST \
 </blockquote>
 </a>
 </div>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>

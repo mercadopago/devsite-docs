@@ -197,11 +197,11 @@ item.setId("1234")
 ```ruby
 # ...
 item = MercadoPago::Item.new({
-  id:           "1234",
-  title:        "Lightweight Paper Table",
-  quantity:     3,
-  currency_id:  "ARS",
-  unit_price:   55.41
+  id: "1234",
+  title: "Lightweight Paper Table",
+  quantity: 3,
+  currency_id: "ARS",
+  unit_price: 55.41
 })# ...
 ```
 ```csharp
@@ -330,6 +330,8 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
   </a>
   </div>
 </div>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>

@@ -57,7 +57,7 @@ const mercadopago = require ('mercadopago');
 import com.mercadopago.MercadoPago;
 ```
 ```ruby
-// SDK de Mercado Pago
+# SDK de Mercado Pago
 require 'mercadopago.rb'
 ```
 ```csharp
@@ -70,11 +70,11 @@ require 'mercadopago.rb'
 
 [[[
 ```php
- <?php
- // SDK de Mercado Pago
- require __DIR__ .  '/vendor/autoload.php';
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
 
- //Agrega credenciales
+// Agrega credenciales
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
@@ -91,21 +91,21 @@ mercadopago.configure({
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
-//Agrega credenciales
+// Agrega credenciales
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
-// SDK de Mercado Pago
+# SDK de Mercado Pago
 require 'mercadopago.rb'
 
-# 2: Configurá tus credenciales
+# Agrega credenciales
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
-//Agrega credenciales
+// Agrega credenciales
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ]]]
@@ -116,34 +116,34 @@ MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 [[[
  ```php
 <?php
- // SDK de Mercado Pago
- require __DIR__ .  '/vendor/autoload.php';
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
 
- //Agrega credenciales
+// Agrega credenciales
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
 // Crea un objeto de preferencia
- $preference = new MercadoPago\Preference();
+$preference = new MercadoPago\Preference();
 
 // Crea un ítem en la preferencia
-  $item = new MercadoPago\Item();
-  $item->title = 'Mi producto';
-  $item->quantity = 1;
-  $item->unit_price = 75.56;
-  $preference->items = array($item);
-  $preference->save();
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
 ?>
 ```
 ```node
-# SDK de Mercado Pago
+// SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-# Agrega credenciales
+// Agrega credenciales
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
 
-# Crea un objeto de preferencia
+// Crea un objeto de preferencia
 let preference = {
   items: [
     {
@@ -156,7 +156,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-  // Este valor reemplazará el string "$$init_point$$" en tu HTML
+// Este valor reemplazará el string "$$init_point$$" en tu HTML
   global.init_point = response.body.init_point;
 }).catch(function(error){
   console.log(error);
@@ -166,7 +166,7 @@ mercadopago.preferences.create(preference)
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
-//Agrega credenciales
+// Agrega credenciales
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 
 // Crea un objeto de preferencia
@@ -184,7 +184,7 @@ preference.save();
 # SDK de Mercado Pago
 require 'mercadopago.rb'
 
-# 2: Configurá tus credenciales
+# Agrega credenciales
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 
 # Crea un objeto de preferencia
@@ -206,7 +206,7 @@ preference = $mp.create_preference(preference_data)
 // SDK de Mercado Pago
 using MercadoPago;
 
-//Agrega credenciales
+// Agrega credenciales
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
 //Crea un objeto de preferencia
@@ -249,14 +249,14 @@ curl -X POST \
 ===
 Redirige al 'init_point' de la preferencia
 ===
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Pagar</title>
-    </head>
-    <body>
-        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
-    </body>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+  </body>
 </html>
 ```
 ```node
@@ -277,14 +277,14 @@ Redirige al 'init_point' de la preferencia
 ===
 Redirige al 'init_point' de la preferencia
 ===
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Pagar</title>
-    </head>
-    <body>
-        <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
-    </body>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
+  </body>
 </html>
 ```
 ```ruby
@@ -305,14 +305,14 @@ Redirige al 'init_point' de la preferencia
 ===
 Redirige al 'init_point' de la preferencia
 ===
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Pagar</title>
-    </head>
-    <body>
-        <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
-    </body>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+  </body>
 </html>
 ```
 ]]]
@@ -344,10 +344,12 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Chec
 <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
+<p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
 </blockquote>
 </a>   
 </div>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
