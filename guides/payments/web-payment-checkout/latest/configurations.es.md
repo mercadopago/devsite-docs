@@ -15,6 +15,10 @@ sites_supported:
 >
 > [Atributos para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
 
+Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://beta.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
+
+Si ofreces compras de montos altos, por ejemplo, puedes permitir [pagar con dos tarjetas de crédito](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito)  o también [excluir medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+
 ## Ejemplo de una preferencia completa
 
 Para resumir todo lo detallado en las últimas secciones, a continuación se muestran un ejemplo de todos los <a href="https://mercadopago.com.ar/developers/es/reference/preferences/resource/" target="_blank"> datos en una preferencia</a> que se pueden configurar.
