@@ -7,7 +7,7 @@ sites_supported:
 
 > WARNING
 >
->Nota
+> Nota
 >
 > Esta documentación es sobre la versión antigua de Checkout.
 >
