@@ -1,18 +1,11 @@
 ---
 sites_supported:
   - mla
-  - mlu
-  - mlc
-  - mpe
-  - mlm
-  - mco
-  - global
 ---
-
 
 # Test the Integration
 
-Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected in the *Web Payment Checkout*.
+Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected in the checkout.
 You should check if:
 
 + The information about the product or service to be paid is correct.
@@ -21,7 +14,7 @@ You should check if:
 + Your customer is correctly redirected after the payment is completed.
 + The payment experience is adequate and the payment result is reported.
 
-##How to run tests?
+## How to run tests?
 
 ### Create a test user
 
@@ -86,7 +79,7 @@ curl -X POST \
 | Brazil  	 | 4235 6477 2802 5682 |5031 4332 1540 6351|3753 651535 56885 |
 | Chile   	 | 4168 8188 4444 7115 |5416 7526 0258 2580|3757 781744 61804 |
 | Colombia   | 4013 5406 8274 6260 |5254 1336 7440 3564|3743 781877 55283 |
-| Mexico  	 | 4075 5957 1648 3764 |5474 9254 3267 0366|3766 7520 5781 151|
+| Mexico  	 | 4075 5957 1648 3764 |5474 9254 3267 0366| unavailable      |
 | Peru    	 | 4009 1753 3280 6176 | unavailable       | unavailable      |
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| unavailable      |
 
@@ -112,3 +105,18 @@ The complete process for testing the checkout is as follows:
 6. In case of payment declined, you can retry it and simulate any other result as indicated in the previous item.
 7. Check whether the notification has arrived correctly
 8. Make a refund of an approved payment and check if you received the notification with the payment status updated.
+
+### Terms of use
+
++ Test users expire after being inactive in MercadoPago for 60 days.
++ You may have up to 10 simultaneous accounts.
++ Use small amounts for test payments:
+  * You may pay by real credit card, then cancel payments and get the refund.
+  * You may make coupon payments but you should not complete them.
++ Simulations can only be made between test users.
++ You cannot withdraw test payments from bank accounts.
+
+### Next steps
+
+* [Discount campaigns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/discount-campaigns/)
+* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/personalization/)

@@ -1,10 +1,20 @@
 # Notificaciones IPN
 
+----[mla]----
 > WARNING
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction).
+> * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction).
+------------
+
+----[mlb,mlc,mlm,mpe,mco,mlu]----
+> WARNING
+>
+> Pre-requisitos
+>
+> * Tener implementado [Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction).
+------------
 
 **IPN** (_Instant Payment Notification_) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
@@ -69,12 +79,12 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 	}
 
 	$paid_amount = 0;
-	foreach ($merchant_order->payments as $payment) {	
+	foreach ($merchant_order->payments as $payment) {
 		if ($payment['status'] == 'approved'){
 			$paid_amount += $payment['transaction_amount'];
 		}
 	}
-	
+
 	// If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
 	if($paid_amount >= $merchant_order->total_amount){
 		if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
@@ -87,7 +97,7 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 	} else {
 		print_r("Not paid yet. Do not release your item.");
 	}
-	
+
 ?>
 ```
 

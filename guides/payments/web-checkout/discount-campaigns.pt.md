@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Campanhas de desconto
 
 Crie campanhas de desconto para impulsionar suas vendas utilizando as ferramentas de marketing da sua conta no Mercado Pago, entrando na seção Configurações para o seu Negócio: [Criar desconto](https://www.mercadopago.com.ar/campaigns/create).

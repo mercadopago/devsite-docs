@@ -1,30 +1,31 @@
 ---
-  sites_supported:
-      - mla
-      - global
+sites_supported:
+  - mla
 ---
 
-# Mercado Envios
+# MercadoEnvíos
 
-Implemente a logística do seu negócio utilizando o **Mercado Envios**.
+Implement the logistics of your business with **Mercado Envíos**.
 
-* Entregamos tudo pronto para você: Receba o pagamento do produto e do envio na mesma operação.
-* Você só precisa imprimir a etiqueta do Mercado Envios e enviar o pacote pelos correios!
-* Oferecemos proteção em caso de estornos ou extravios nos correios, sem exigir a apresentação de qualquer documentação.
+* We solve everything for you: Receive the payment for the product and shipping costs in the same transaction.
+* All you should do is print the label of Mercado Envíos and take the package to the postal service.
+* We protect you against chargebacks or losses by the postal service, without requiring the submission of documentation.
 
-## Como funciona
+## How does it work?
 
-A documentação a seguir lhe permitirá oferecer uma opção de envio no checkout do Mercado Pago, além do cliente poder pagar o custo do envio junto com o pagamento do produto.
+The documentation below allows you to offer in the checkout of Mercado Pago a shipping option, and also that the customer pays the shipping cost along with the payment of the product.
 
-Recomendamos integrar a calculadora de custos de frete em seu checkout.
+We recommend that you integrate the shipping cost calculator in your checkout.
 
-## Como implementar
+## How to implement it
 
-### Passo 1: Ative sua conta para utilizar o Mercado Envios
-[Ative sua conta](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) adicionando seu endereço. Este será o endereço de entrega e será utilizado para calcular o custo do frete.
+### Step 1: Activate your account to use Mercado Envíos
 
-### Passo 2: Adicione o Mercado Envios em seu checkout
-Indique as dimensões e o peso de seus produtos na preferência de pagamentos.
+[Activate your account](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) entering your address. It must be the shipping address and it will be used to calculate the shipping cost.
+
+### Step 2: Add Mercado Envíos to your checkout
+
+Enter the dimensions and weight of your products in the payment preference.
 
 [[[
 ```php
@@ -91,14 +92,15 @@ Shipments shipments = new Shipments()
 
 > NOTE
 >
-> Nota
+> Note
 >
-> O formato das dimensões é:
->```altura x largura x comprimento (centímetros), peso (gramas)```.
->Caso indique as dimensões incorretamente e estas não coincidam com o pacote físico, o transportador poderá não aceitar o envio. Se o pacote for aceito, deduziremos automaticamente de sua conta a diferença.
+>The format of the dimensions are
+```height x width x length (centimeters), weight (grams).```
+>If the dimensions you specify do not match the actual package, the postal service may reject the shipping order. If they accept the package, we will automatically deduct the difference from your account.
 
-#### Retirada em loja
-Você pode oferecer a possibilidade de retirada do produto em loja, indicando ao comprador onde e quando retirar o produto. Para isso, você deve incluir:
+
+#### Store pickup
+You can offer customers the possibility of picking up the product from your store, letting them know when and where to pick up the product. To do this, you must include:
 
 [[[
 ```php
@@ -130,9 +132,9 @@ shipment.local_pickup = true
 ```
 ]]]
 
-#### Ofereça frete grátis
+#### Offer free shipping
 
-Indique o método de envio que irá oferecer gratuitamente. O valor do frete será debitado de sua conta ao receber o pagamento.
+You need to indicate the shipping method that you will offer for free. The shipping cost will be debited from your account every time you receive a payment.
 
 [[[
 ```php
@@ -175,13 +177,12 @@ shipment.free_methods = [
 ]]]
 
 
+Check out the [shipping method IDs](https://api.mercadolibre.com/sites/MLA/shipping_methods?marketplace=NONE) available.
 
-Consulte a ID dos [métodos de envio](https://api.mercadolibre.com/sites/MLB/shipping_methods?marketplace=NONE) disponíveis.
+#### Integrate in the Checkout
 
+See below an example of Checkout with Mercado Envíos:
 
-#### Integre o Mercado Envios no Checkout
-
-Veja abaixo um exemplo de Checkout com o Mercado Envios:
 
 [[[
 ```php
@@ -343,30 +344,25 @@ preference.save
 
 
 
-### Passo 3: Melhore a experiência com a calculadora de custos de envio
+### Step 3: Improve the experience with the shipping cost calculator
 
-Oferecemos a possibilidade de realizar o cálculo prévio do custo e dos prazos de envio para que os compradores possam visualizá-los antes do checkout.
+We offer you the possibility to pre-calculate the shipping cost and delivery time to enable your buyers to see it in the checkout.
 
-Para fazer o cálculo, é necessário que envie:
+You need to send us some information to perform the calculation:
 
-* `dimensions`: O tamanho do produto que quer enviar. O formato é: altura x largura x comprimento (centímetros), peso (gramas). Consulte os valores admitidos pelo correio.
-
-* `zip_code`: O CEP do seu comprador.
-
-* `item_price`: O preço do produto que deseja enviar. Se houver vários produtos, você deve indicar o preço total deles.
-
-* `free_method` (opcional): Você pode oferecer frete grátis, o que pode ajudá-lo a gerar mais vendas. Você só precisa nos indicar o método de envio que irá oferecer gratuitamente. Em seguida, o valor do envio será debitado da sua conta ao receber o pagamento.
+* `dimensions`: The size of the product you want to send; the format is: height x width x length (centimeters), weight (grams). Check the values allowed by the Postal Service.
+* `zip_code`: The buyer’s zip code.
+* `item_price`: The price of the product you are going to send. If there are multiple products, you should indicate the total price.
+* `free_method` (optional): You can offer free shipping, which could help you to increase your sales. You just let us know which shipping method you will offer for free. The shipping cost will be debited from your account every time you receive a payment.
 
 
-### Passo 4: Imprima a etiqueta
+### Print the label
 
-Toda vez que receber um pagamento, você receberá um e-mail com um botão para imprimir a etiqueta. Também é possível visualizar os [pagamentos pendentes de impressão](https://www.mercadopago.com.ar/activities?type=collection&status=approved&shipping_or_archived=with_ME&tagME=ready_to_print) na sua conta no Mercado Pago.
+Whenever a payment is made, you will get an email with a button to print the label. You can also view [payments pending printing](https://www.mercadopago.com.ar/activities?type=collection&status=approved&shipping_or_archived=with_ME&tagME=ready_to_print) in your Mercado Pago account.
 
-Em uma caixa, inclua tudo o que você vendeu. Cole a etiqueta no pacote e envie-o. Você não terá que pagar nada no correio, pois as etiquetas do Mercado Envios já estarão pagas com o valor do frete pago pelo comprador.
+In a box, include everything you have sold. Stick the label on the box and ship it. You do not have to pay for anything at the postal service because Mercado Envíos labels will be paid for by your buyer.
 
-### Passo 5: Rastreamento
+### Step 5: Tracking
+Use our tools to track shipments. In the list of payments, or in our APIs, you will be able to track your shipments.
 
-Utilize nossas ferramentas para fazer o rastreamento.
-Tanto na lista de cobranças, como através de nossas APIs, você será capaz de rastrear seus envios.
-
-Além disso, podemos notificá-lo quando um envio estiver pronto para expedição através das [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks) enviadas dos servidores do Mercado Pago aos seus servidores. Isto lhe permitirá gerenciar seu estoque e saber o status dos pagamentos e envios.
+In addition, we can notify you when a shipment is ready to ship by sending you [notificacions](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) that are sent from Mercado Pago’s servers to yours. This will allow you to manage your inventories and know the status of payments and shipments.

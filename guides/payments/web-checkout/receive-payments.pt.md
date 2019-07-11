@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Receba Pagamentos
 
 Receba pagamentos de forma simples e segura utilizando o Checkout do Mercado Pago.
@@ -103,7 +113,7 @@ preference.save();
       email: '[FAKER][INTERNET][FREE_EMAIL]'
     }
   };
- 
+
   mercadopago.preferences.create(preference)
     .then(function (preference) {
       // Do something if preference has been created successfully
@@ -111,7 +121,7 @@ preference.save();
       // If an error has occurred
     });
 ```
-```ruby 
+```ruby
 # Create an item object
 item = MercadoPago::Item.new({
   id:           "1234",
@@ -123,7 +133,7 @@ item = MercadoPago::Item.new({
 # Create a payer object
 payer = MercadoPago::Payer.new({
   email: "[FAKER][INTERNET][FREE_EMAIL]"
-}) 
+})
 # Create a preference object
 preference = MercadoPago::Preference.new({
   items: [item],
@@ -138,13 +148,13 @@ using MercadoPago.Resources;
 using MercadoPago.DataStructures.Preference;
 // ...
 // Create a preference object
-Preference preference = new Preference(); 
+Preference preference = new Preference();
 # Adding an item object
 preference.Items.Add(
   new Item()
   {
     Id = "1234",
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
     Quantity = [FAKER][NUMBER][BETWEEN][1,10],
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)[FAKER][COMMERCE][PRICE]
@@ -272,7 +282,7 @@ Payer payer = new Payer()
         AreaCode = "[FAKER][PHONE_NUMBER][AREA_CODE]",
         Number = "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
     },
-    Identification = new Identification() 
+    Identification = new Identification()
     {
         Type = "DNI",
         Number = "12345678"
@@ -340,7 +350,7 @@ shipment = MercadoPago::Shipment.new(
     apartment: "C"
   })
 })
-# ... 
+# ...
 ```
 ```csharp
 using MercadoPago;
@@ -378,7 +388,7 @@ Uma vez que a preferência é criada, use o URL que você encontra no attribute 
 </html>
 ```
 
-Você também pode personalizar o check-out inserindo este [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/personalization)
+Você também pode personalizar o check-out inserindo este [Link](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/personalization)
 
 ## 3. Ative as notificações de pagamento
 

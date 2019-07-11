@@ -1,47 +1,57 @@
 ---
 sites_supported:
   - mla
-  - mlu
-  - mlc
-  - mpe
-  - mlm
-  - mco
-  - global
 ---
 
+# Recibir pagos
 
-# Web Payment Checkout - Preferencia de pago
+> WARNING
+>
+>Nota
+>
+> Esta documentación es sobre la versión antigua de Checkout.
+>
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+
+Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
+
+## 1. Crea una preferencia de pago
 
 Una preferencia de pago contiene toda la información del producto o servicio que se va a pagar. Por ejemplo:
 
-- Descripción y monto.
-- Información de tu comprador (*Email*, nombre, dirección, etc).
-- Medios de pago que aceptas.
-- *ID* de referencia de tu sistema.
+* Descripción y monto.
+* Información de tu comprador (_Email_, nombre, dirección, etc).
+* Medios de pago que aceptas.
+* _ID_ de referencia de tu sistema.
 
-## Crea una preferencia de pago
-
-Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https://github.com/mercadopago) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https://www.mercadopago.com.ar/developers/es/plugins_sdks) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
 [[[
 ```php
 <?php  
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
+  MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
 ?>
 ```
 ```java
-MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago.SDK.setClientId("ENV_CLIENT_ID");
+MercadoPago.SDK.setClientSecret("ENV_CLIENT_SECRET");
 ```
 ```node
-mercadopago.configurations.setAccessToken(config.access_token);
+mercadopago.configure({
+  client_id: 'ENV_CLIENT_ID',
+  client_secret: 'ENV_CLIENT_SECRET'
+});
 ```
 ```ruby
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
+MercadoPago::SDK.client_id = "ENV_CLIENT_ID"
+MercadoPago::SDK.client_secret = "ENV_CLIENT_SECRET"
 ```
 ```csharp
 using MercadoPago;
 // ...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
+MercadoPago.SDK.ClientId = "ENV_CLIENT_ID";
+MercadoPago.SDK.ClientSecret = "ENV_CLIENT_SECRET";
 // ...
 ```
 ]]]
@@ -91,28 +101,28 @@ preference.appendItem(item);
 preference.save();
 ```
 ```node
-  // Create a preference structure
-	var preference = {
-    items: [
-      item = {
-        id: '1234',
-        title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-        quantity: [FAKER][NUMBER][BETWEEN][1,10],
-        currency_id: '[FAKER][CURRENCY][ACRONYM]',
-        unit_price: [FAKER][COMMERCE][PRICE]
-      }
-    ],
-    payer = {
-      email: '[FAKER][INTERNET][FREE_EMAIL]'
+// Create a preference structure
+var preference = {
+  items: [
+    {
+      id: '1234',
+      title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+      quantity: [FAKER][NUMBER][BETWEEN][1,10],
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
     }
-  };
+  ],
+  payer: {
+    email: '[FAKER][INTERNET][FREE_EMAIL]'
+  }
+};
 
-  mercadopago.preferences.create(preference)
-    .then(function (preference) {
-      // Do something if preference has been created successfully
-    }).catch(function (error) {
-      // If an error has occurred
-    });
+mercadopago.preferences.create(preference)
+  .then(function (preference) {
+    // Do something if preference has been created successfully
+  }).catch(function (error) {
+    // If an error has occurred
+  });
 ```
 ```ruby
 # Create an item object
@@ -162,13 +172,13 @@ preference.Save();
 ```
 ]]]
 
-## Contenido de la preferencia
+### Contenido de la preferencia
 
 Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-### Payer
+#### Payer
 
-Es requerido el envío del `email` de tu comprador.
+Es requerido el envío del `email` de tu comprador. Si nos envías datos como tipo y número de identificación, estos no se le pedirán durante el proceso de pago.
 
 [[[
 ```php
@@ -290,3 +300,122 @@ Payer payer = new Payer()
 // ...
 ```
 ]]]
+
+#### Shipments
+
+[[[
+```php
+<?php
+  // ...
+  $shipments = new MercadoPago\Shipments();
+  $shipments->receiver_address = array(
+		"zip_code" => "[FAKER][ADDRESS][ZIP]",
+		"street_number" => [FAKER][NUMBER][BETWEEN][1000,2000],
+		"street_name" => "[FAKER][ADDRESS][STREET_NAME]",
+		"floor" => [FAKER][NUMBER][BETWEEN][1,20],
+		"apartment" => "C"
+  );
+  // ...
+?>
+```
+```java
+// ...
+Shipments shipments = new Shipments();
+shipments.setReceiverAddress(new ReceiverAddress()
+  .setZipCode("[FAKER][ADDRESS][ZIP]")
+  .setBuildingNumber("[FAKER][NUMBER][BETWEEN][1000,2000]")
+  .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
+  .setFloor("[FAKER][NUMBER][BETWEEN][1,20]")
+  .setApartment("C"));
+// ...
+```
+```node
+// ...
+var shipments = {
+	receiver_address: {
+		zip_code: [FAKER][ADDRESS][ZIP]",
+		street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
+		street_name: "[FAKER][ADDRESS][STREET_NAME]",
+		floor: [FAKER][NUMBER][BETWEEN][1,20],
+		apartment: "C"
+	}
+};
+// ...
+```
+```ruby
+# ...
+shipment = MercadoPago::Shipment.new(
+  receiver_address: new MercadoPago::ReceiverAddress.new({
+    zip_code: "[FAKER][ADDRESS][ZIP]",
+    street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
+    street_name: "[FAKER][ADDRESS][STREET_NAME]",
+    floor: [FAKER][NUMBER][BETWEEN][1,20],
+    apartment: "C"
+  })
+})
+# ...
+```
+```csharp
+using MercadoPago;
+using MercadoPago.Resources;
+using MercadoPago.DataStructures.Preference;
+// ...
+Shipment shipment = new Shipment()
+{
+    ReceiverAddress = new ReceiverAddress()
+    {
+        ZipCode = "[FAKER][ADDRESS][ZIP]",
+        StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+        StreetNumber = int.Parse("[FAKER][NUMBER][BETWEEN][1000,2000]"),
+        Floor = "[FAKER][NUMBER][BETWEEN][1, 20]",
+        Apartment = "C"
+    }
+};
+// ...
+```
+]]]
+
+## 2. Lleva a tu comprador al checkout
+
+Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `init_point` de la respuesta para generar un botón de pago:
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pagar</title>
+	</head>
+	<body>
+		<a href="<?php echo $preference->init_point; ?>">Pay</a>
+	</body>
+</html>
+```
+Además, podés personalizar el checkout ingresando a este  [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization)
+
+## 3. Activa las notificaciones de pagos
+
+Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados.
+
+Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
+
+Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para conocer más sobre esto.
+
+## 4. Cancelar un pago
+
+Los medios de pago en efectivo deben ser pagados entre los 3 a 5 días dependiendo de cada uno.
+
+El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds) luego del vencimiento.
+
+
+## 5. Prueba tu integración
+
+Puedes probar tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
+
+Para ello debes usar usuarios y tarjetas de prueba.
+
+Visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/testing) para más información.
+
+### Próximos pasos
+
+* [Probando la Integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/testing/)
+* [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization/)

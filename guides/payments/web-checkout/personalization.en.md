@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Customization
 
 In payment preferences, you can not only send information about the item to be paid, and the buyer’s, but also set the payment methods you do not want to accept, the return URL to your website after the payment, shipping options, etc.  
@@ -77,14 +87,14 @@ preference.payment_methods = {
 
 Preference preference = new Preference();
 
-PaymentMethods paymentmethods = new PaymentMethods(); 
+PaymentMethods paymentmethods = new PaymentMethods();
 
 List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
   excludedPaymentMethod.Add(new PaymentMethod()
     {
       Id = "master"
     });
-        
+
   paymentmethods.excludedPaymentType = excludedPaymentMethod;
 
 List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
@@ -225,7 +235,7 @@ payment = MercadoPago::Payment.search(filters)
 ```csharp
 Dictionary<string, string> filters = new Dictionary<string, string>;
 filters.Add("external_references", "EXTERNAL");
-      
+
 List<Payment> payments = Payment.Search(filters);
 ```
 ]]]
@@ -295,7 +305,7 @@ To summarize all of the above, the following JSON shows all the data that can be
 			"street_name": "Street",
 			"street_number": 123,
 			"zip_code": "5700"
-		} 
+		}
 	},
 	"back_urls": {
 		"success": "https://www.success.com",

@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Discount campaigns
 
 Create discount campaigns to boost your sales using the marketing tools of your Mercado Pago account in the section Configuration for your Business: [Create discount](https://www.mercadopago.com.ar/campaigns/create).
