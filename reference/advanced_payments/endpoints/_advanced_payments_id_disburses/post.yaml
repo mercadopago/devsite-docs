@@ -5,7 +5,7 @@ use:
 - money_release_date
 errors:
 - 400 BAD_REQUEST:
-  -  '400004':
+  - '400004':
       description:
         en: Invalid application.
         es: Aplicación inválida.
@@ -245,21 +245,38 @@ errors:
         en: Invalid idempodency key.
         es: Clave de idempotencia inválida.
         pt: Chave de idempotência inválida.
+- 401 UNAUTHORIZED:
+  - '401000':
+      description:
+        en: Invalid access token.
+        es: Access token inválido.
+        pt: Access token inválido.
+  - '401002':
+      description:
+        en: Invalid access token.
+        es: Access token inválido.
+        pt: Access token inválido.
+  - '401003':
+      description:
+        en: Invalid device token.
+        es: Device token inválido.
+        pt: Device token inválido.
+- 404 NOT_FOUND:
   - '404001':
       description:
-        en: The Disbusement not found was not found.
-        es: No se encontró el Disbusement not found.
-        pt: O Disbusement not found não foi encontrado.
+        en: The Disbursement was not found.
+        es: No se encontró el Disbursement.
+        pt: O Disbursement não foi encontrado.
   - '404002':
       description:
-        en: The Advanced Payment not found was not found.
-        es: No se encontró el Advanced Payment not found.
-        pt: O Advanced Payment not found não foi encontrado.
+        en: The Advanced Payment was not found.
+        es: No se encontró el Advanced Payment.
+        pt: O Advanced Payment não foi encontrado.
   - '404003':
       description:
-        en: The Payer not found was not found.
-        es: No se encontró el Payer not found.
-        pt: O Payer not found não foi encontrado.
+        en: The Payer was not found.
+        es: No se encontró el Payer.
+        pt: O Payer não foi encontrado.
 - 406 NOT_ACCEPTABLE:
   - '406001':
       description:

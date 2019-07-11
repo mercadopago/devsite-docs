@@ -27,7 +27,7 @@ Possuímos a certificação [PCI DSS](https://www.pcisecuritystandards.org/), qu
 
 ## Como funciona?
 
-![imagen](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
+![Flow of integration Mercado Pago](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
 
 Integrar o checkout é muito fácil:
 

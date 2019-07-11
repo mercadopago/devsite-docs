@@ -27,13 +27,13 @@ Para vincular sua conta do Mercado Pago à Loja Integrada siga estes passos:
 3. Clique em "Instalar aplicativo do MercadoPago V1".
 4. Clique em "Permitir".
 
-    ![LojaIntegrada_account](/images/lojaintegrada-connect-1.gif)
+    ![Installing Mercado Pago - Loja integrada](/images/lojaintegrada-connect-1.gif)
 
 Após vincular sua conta você tem a opção de ativar dois tipos de checkout:
 - Checkout transparente: o comprador fica no ambiente da sua loja durante todo o processo.
 - Mercado Pago Redirect: o comprador é direcionado ao Mercado Pago para fazer o pagamento e concluir a compra.
 
-    ![LojaIntegrada_chot](/images/lojaintegrada-checkout-1.gif)
+    ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada-checkout-1.gif)
 
 ### Configurar boleto
 
@@ -46,7 +46,7 @@ Para operar com boleto, siga estes passos:
 5. Caso deseje que o pagamento com boleto tenha desconto marque a opção "Usar desconto no boleto?" e informe a porcentagem de desconto no campo "Desconto aplicado".
 6. Clique em "salvar alterações".
 
-    ![LojaIntegrada ticket](/images/lojaintegrada-ticket-1.gif)
+    ![Setting ticket - Loja Integrada](/images/lojaintegrada-ticket-1.gif)
 
 ### Configurar Cartões de Crédito
 
@@ -62,4 +62,4 @@ Para operar com cartões de crédito siga estes passos:
 - Parcelas sem juros: Número de parcelas sem juros para pagamentos no modo transparente. (Esse campo deve estar de acordo com a configuração da sua conta Mercado Pago).
 5. Clique em "Salvar alterações".
 
-    ![LojaIntegrada credit_card](/images/lojaintegrada-credit-card-1.gif)
+    ![Setting credit card - Loja Integrada](/images/lojaintegrada-credit-card-1.gif)

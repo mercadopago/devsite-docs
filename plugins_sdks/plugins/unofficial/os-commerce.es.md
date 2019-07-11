@@ -67,15 +67,15 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 4. Choose your country:
 
-	![Country Selection](/images/oscommerce-CountrySelection.png)
+	![Country Selecion in Os Commerce](/images/oscommerce-CountrySelection.png)
 
 5. Choose the payment methods that you don´t want to accept in your Store:
 
-	![Payment Methods Selection](/images/oscommerce-PaymentMethodsSelection.png)
+	![Payment Methods - Os Commerce](/images/oscommerce-PaymentMethodsSelection.png)
 
 6. Choose the category on the list that more describe your shop activities.
 
-	![Category Selection](/images/oscommerce-CategorySelection.png)
+	![Store category selection](/images/oscommerce-CategorySelection.png)
 
 7. In the next screen, you will see **MercadoPago** listed as a payment method. Now, click on **Edit** on the right bar.
 
@@ -101,7 +101,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 9. **DO NOT TOUCH** the fields *Country*, *Exclude Methods*, *Cod Status (fields…)*. They were generated for you with the correct values, if you need to change them, is highly recommended that you reinstall the module.
 
-	![Do Not Touch](/images/oscommerce-DoNotTouch.png)
+	![Do not upgrade](/images/oscommerce-DoNotTouch.png)
 
 10. The fields **Success Url** and **Pending url** were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
 

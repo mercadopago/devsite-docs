@@ -250,7 +250,7 @@ Caso não esteja ativado o pagamento pode assumir o status in_process.
 
 Para mais informações consulte os possíveis status de um pagamento:
 
-![payment-diagram](images/payments-status-transitions-diagram.png)
+![Payment diagram Mercado Pago](images/payments-status-transitions-diagram.png)
 
 Para ativá-lo, basta configurar como true o campo binary_mode
 

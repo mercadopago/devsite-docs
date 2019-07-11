@@ -85,7 +85,7 @@ Você tem duas opções para instalar este módulo: da sua loja WordPress, ou fa
 # Configurando o Cartão de Crédito
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Checkout Transparente*. Você deve obter a seguinte página:
 
-![Custom Checkout Config](/images/wp-ecommerce-custom_config_screenshot.png)
+![Custom Checkout Configuring](/images/wp-ecommerce-custom_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar suas chaves *Public Key* e *Access Token*, que são as credenciais que o identificam de maneira única no Mercado Pago.
@@ -111,7 +111,7 @@ Oferece ferramentas de registro para que você possa analisar possíveis problem
 # Configurando os Boletos
 Esta página explicará como configurar o módulo para aceitar pagamentos com o Boleto do Checkout transparente. Na administração da sua loja, vá para a guia *Settings > Store > Payments*. Clique em *Mercado Pago - Boleto*. Você deve obter a seguinte página:
 
-![Ticket Checkout Config](/images/wp-ecommerce-ticket_config_screenshot.png)
+![Ticket Checkout Configuring](/images/wp-ecommerce-ticket_config_screenshot.png)
 
 ### Credenciais do Mercado Pago
   * Aqui você deve colocar sua chave *Access Token*, a credencial que o identifica de maneira única no Mercado Pago.

@@ -22,7 +22,7 @@ Caso seja feito um reembolso completo do Advanced Payment, ele passará ao estad
 #### Request: Reembolso de um Advanced Payment completo
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID/refunds?access_token=MKT_ACCESS_TOKEN' \
     -d '{...}'
@@ -31,7 +31,7 @@ curl -X POST \
 #### Request: Reembolso de um Disbursement individual
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments/ID/disbursements/DISBURSEMENT_ID/refunds?access_token=MKT_ACCESS_TOKEN' \
     -d '{...}'

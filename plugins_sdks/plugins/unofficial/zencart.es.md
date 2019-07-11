@@ -55,7 +55,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 4. Ahora, es muy importante configurar las credenciales **CLIENT_ID** y **CLIENT_SECRET**.
 
-  ![Installation Instructions](/images/zencart-credentials.png) <br />
+  ![Setting client id and client secret](/images/zencart-credentials.png) <br />
 
 Obtenga su CLIENT_ID e CLIENT_SECRET de acuerdo con su país:
 
@@ -86,7 +86,7 @@ Obtenga su CLIENT_ID e CLIENT_SECRET de acuerdo con su país:
 
 ![Installation Instructions](/images/zencart-other_config_2.png) <br />
 
-![Installation Instructions](/images/zencart-other_config_3.png) <br />
+![Number of installments and other settings](/images/zencart-other_config_3.png) <br />
 
   * **Store Category**: Seleccione la categoría de la tienda;
   * **Redirect URL**: La  URL de redirección se genera automáticamente si está probando en un localhost no funcionará correctamente. Puedes cambiar la dirección a cualquier url de su preferencia;

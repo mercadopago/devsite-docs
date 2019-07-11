@@ -9,7 +9,7 @@ Es posible enviar información que puede mejorar el análisis de prevención de 
 #### Request
 ```curl
 curl -X POST \
-    -H 'Accept":"application/json' \
+    -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     'https://api.mercadopago.com/v1/advanced_payments?access_token=SELLER_TOKEN' \
 ```
@@ -19,7 +19,7 @@ curl -X POST \
 {
    "wallet_payment":{
       "transaction_amount":700.50,
-      "description":"Payment Google",
+      "description":"Payment",
       "external_reference":"Pago_123",
       "access_token":"PAYER_ACCESS_TOKEN"      
    },
