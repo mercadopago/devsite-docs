@@ -9,8 +9,8 @@ sites_supported:
 >
 >Nota
 >
-> Esta documentación es sobre la versión antigua de Checkout. 
-> 
+> Esta documentación es sobre la versión antigua de Checkout.
+>
 > Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el _checkout_.
@@ -123,3 +123,8 @@ El proceso completo para probar el checkout es el siguiente:
     * Puedes hacer pagos con cupón pero no debes concretarlos.
 + Las simulaciones solo pueden realizarse entre usuarios de prueba.
 + No es posible retirar a cuentas bancarias el dinero recibido en las pruebas.
+
+### Próximos pasos
+
+* [Campañas de descuento](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/discount-campaigns/)
+* [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization/)

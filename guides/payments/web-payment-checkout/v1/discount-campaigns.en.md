@@ -21,3 +21,8 @@ Before showing the checkout, Mercado Pago will check whether there is a campaign
 If the campaign is valid, the discount will be applied or a coupon will be requested. The discount will be automatically calculated and the promotional price will be displayed.
 
 To find out whether a payment had any discount, you should check if `coupon_id` attribute is not `null`. Check the amount of discount in the `coupon_amount` attribute.
+
+### Next steps
+
+* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/personalization/)
+* [Test the integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing/)

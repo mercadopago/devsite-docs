@@ -11,11 +11,11 @@ sites_supported:
 >
 >
 >
-> [Esquema modal](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+> [Esquema modal](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
 >
-> [Colores](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
+> [Colores](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
 >
-> [Botones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
+> [Botones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
 ## Esquema modal
 
@@ -85,7 +85,7 @@ básica por el siguiente snippet:
 >
 > Nota
 >
-> Válido sólo para el esquema modal.
+> Válido solo para el esquema modal.
 
 ### Elementos
 
@@ -105,8 +105,9 @@ data-header-color="#c0392b"
 ```
 
 ![Custom-Component](/images/web-payment-checkout/custom_components.gif)
+</p><br/>
 
-<br/>#### Textos
+#### Textos
 
 El color del texto de los botones será determinado automáticamente dependiendo del contraste del color definido.
 Para un color de elemento claro, el color del texto será negro o #000. Por ejemplo:
@@ -146,13 +147,13 @@ data-button-label="Comprar"
 ### Próximos pasos
 
 <div>
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
+<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Otras funcionalidades</p>
  <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
 </blockquote>
 </a>
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>

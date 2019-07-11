@@ -29,8 +29,7 @@ It is very easy to integrate the checkout:
 3.	Start the payment process with a button on your website.
 4.	Get to know when a payment is made through the notifications we send you.
 
-## Use Mercado Envíos
+### Next steps
 
-We solve everything for you! Receive the payment for the product and shipping costs in the same transaction.
-
-All you should do is to print the label of **Mercado Envíos** and take the package to the post office. In your payment preference, you must include the attribute indicating that you will activate Mercado Envíos and that’s all, we will take care of everything.
+* [Receive payments](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/receive-payments/)
+* [Test the integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing/)

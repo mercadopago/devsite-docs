@@ -11,15 +11,15 @@ sites_supported:
 >
 >
 >
-> [Recibe notificaciones de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
+> [Recibe notificaciones de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
 >
-> [Información adicional para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
+> [Información adicional para la preferencia](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
 >
-> [URL de retorno](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
+> [URL de retorno](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
 >
-> [Cancelaciones y evoluciones](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+> [Cancelaciones y evoluciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
 >
-> [Gestiona contracargos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+> [Gestiona contracargos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
 
 
 ## Recibe notificaciones de pagos
@@ -314,7 +314,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 
 <div>
   <div>
-  <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
+  <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
     <blockquote class="next-step-card">
       <p class="card-note-title next-step-card-left">Otras funcionalidades</p>
       <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
@@ -322,7 +322,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
   </a>
   </div>
   <div>   
-  <a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
+  <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
     <blockquote class="next-step-card next-step-card-right">
       <p class="card-note-title">Personalizaciones</p>
       <p>Adapta el estilo de tu marca en la experiencia de compra.</p>

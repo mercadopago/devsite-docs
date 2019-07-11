@@ -21,3 +21,8 @@ Antes de exibir o checkout, o Mercado Pago irá verificar se existe alguma campa
 Se a campanha for válida, será aplicado o desconto ou o cupom será solicitado. O valor a ser descontado será calculado automaticamente e o preço promocional será exibido.
 
 Para saber se um pagamento teve algum desconto, veja se o atributo `coupon_id` não é `null`. Verifique o valor descontado no atributo `coupon_amount`.
+
+Próximos passos
+
+* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/personalization/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)

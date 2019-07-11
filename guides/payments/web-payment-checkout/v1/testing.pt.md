@@ -116,3 +116,8 @@ O processo completo para testar o checkout é o seguinte:
 	* Pode fazer pagamentos com boletos, mas não deve concretizá-los.
 + As simulações só podem ser efetuadas por usuários de teste.
 + Não é possível fazer retiradas para contas bancárias com o dinheiro recebido nos testes de integração.
+
+Próximos passos
+
+* [Campanhas de desconto](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/discount-campaigns/)
+* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/personalization/)

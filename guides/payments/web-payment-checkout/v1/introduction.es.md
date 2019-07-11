@@ -9,8 +9,8 @@ sites_supported:
 >
 >Nota
 >
-> Esta documentación es sobre la versión antigua de Checkout. 
-> 
+> Esta documentación es sobre la versión antigua de Checkout.
+>
 > Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
@@ -37,8 +37,7 @@ Integrar el checkout es muy fácil:
 3. Inicia el proceso de pago desde un botón en tu sitio.
 4. Entérate del pago escuchando las notificaciones que te enviamos.
 
-## Agregando Envíos
+### Próximos pasos
 
-A través de **Mercado Envíos** además del pago del producto también podrás resolver el envío en la misma operación. Sólo tienes que imprimir la etiqueta de Mercado Envíos y despachar el paquete en el correo.
-
-En tu preferencia de pagos, debes incluir el atributo que indica que vas a activar Mercado Envíos y listo, nosotros nos encargamos de todo.
+* [Recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/receive-payments/)
+* [Probando la Integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/testing/)

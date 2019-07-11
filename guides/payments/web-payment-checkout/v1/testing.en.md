@@ -14,7 +14,7 @@ You should check if:
 + Your customer is correctly redirected after the payment is completed.
 + The payment experience is adequate and the payment result is reported.
 
-##How to run tests?
+## How to run tests?
 
 ### Create a test user
 
@@ -115,3 +115,8 @@ The complete process for testing the checkout is as follows:
   * You may make coupon payments but you should not complete them.
 + Simulations can only be made between test users.
 + You cannot withdraw test payments from bank accounts.
+
+### Next steps
+
+* [Discount campaigns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/discount-campaigns/)
+* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/personalization/)

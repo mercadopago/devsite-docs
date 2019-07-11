@@ -11,13 +11,13 @@ sites_supported:
 >
 >
 >
-> [Ejemplo de una preferencia completa](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
+> [Ejemplo de una preferencia completa](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
 >
-> [Atributos para la preferencia](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
+> [Atributos para la preferencia](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
 
-Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://beta.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
+Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
 
-Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://beta.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 
 ## Ejemplo de una preferencia completa
 
@@ -85,7 +85,7 @@ Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos t
 ### Definición de medios de pago
 
 Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
-También se puede definir un medio de pago para que aparezca por defecto o definir la cantidad de cuotas máximas a ofrecer.
+También se puede definir un medio de pago para que aparezca por defecto o la cantidad de cuotas máximas a ofrecer.
 
 
 Atributo | Descripción
@@ -177,7 +177,7 @@ paymentmethods.Installments = 12;
 
 ## Modo binario
 
-Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago sólo puede resultar aprobado o rechazado.
+Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago solo puede resultar aprobado o rechazado.
 
 En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
 
@@ -217,15 +217,15 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 
 ## Múltiples items
 
-Si se necesita crear una preferencia para más de un ítems, sólo debes agregarlos como una lista dentro de _items_.
+Si se necesita crear una preferencia para más de un ítems, solo debes agregarlos como una lista dentro de _items_.
 Ten en cuenta que el monto total de la preferencia será la suma de la cantidad por el precio unitario de cada ítem.
 
 [[[
 ```php
 <?php
-  # Create a preference object
+  # Crear un objeto preferencia
   $preference = new MercadoPago\Preference();
-  # Create an item object
+  # Crea ítems en la preferencia
   $item1 = new MercadoPago\Item
   $item1->title = "Item de Prueba 1";
   $item1->quantity = 2;
@@ -237,7 +237,7 @@ Ten en cuenta que el monto total de la preferencia será la suma de la cantidad 
   $item2->unit_price = 11.96;
 
   $preference->items = array($item1,$item2);
-  # Save and posting preference
+  # Guardar y postear la preferencia
   $preference->save();
 ?>
 ```
@@ -255,16 +255,19 @@ var preference = {
       unit_price: 96.56 }
     ]
 };
+// Crea un botón de pago en tu sitio
 mercadopago.preferences.create(preference)
-  .then(function (preference) {
-    // Do something if preference has been created successfully
-    console.log(preference)
-  }).catch(function (error) {
-    // If an error has occurred
-  });
+.then(function(preference){
+  // Este valor reemplazará el string "$$init_point$$" en tu HTML
+  global.init_point = preference.body.init_point;
+}).catch(function(error){
+  console.log(error);
+});
 ```
 ```java
+// Crea un objeto preferencia
 Preference preference = new Preference();
+// Crea ítems en la preferencia
 Item item1 = new Item();
 item1.setId("1234")
     .setTitle("Producto 1")
@@ -280,11 +283,11 @@ item2.setId("12")
     .setUnitPrice((float) 75.56);
 
 preference.appendItem(item1, item2);
-// Save and posting preference
+// Guardar y postear la preferencia
 preference.save();
 ```
 ```ruby
-//Crea ítems en la preferencia
+// Crea ítems en la preferencia
 item = MercadoPago::Item.new({
   title:        "Mi producto",
   quantity:     1,
@@ -295,17 +298,17 @@ item2 = MercadoPago::Item.new({
   quantity:     2,
   unit_price:   96.56
 })
-//Crea un objeto de preferencia
+// Crea un objeto preferencia
 preference = MercadoPago::Preference.new({
   items: [item, item2]
 })
 preference.save()
 ```
 ```csharp
-//Crea un objeto de preferencia
+// Crea un objeto preferencia
 Preference preference = new Preference();
 
-//Crea un item en la preferencia
+// Crea ítems en la preferencia
 reference.Items.Add(
   new Item()
   {
@@ -351,13 +354,13 @@ curl -X POST \
 ### Próximos pasos
 
 <div>
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integración avanzada</p>
+<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
 </blockquote>
 </a>   
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
+<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Personalizaciones</p>
  <p>Adapta el estilo de tu marca en la experiencia de compra.</p>

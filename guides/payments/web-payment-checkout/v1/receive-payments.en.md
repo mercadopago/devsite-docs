@@ -386,7 +386,7 @@ Once the preference has been created, use the URL found in the attribute `init_p
 ```
 
 
-You can also customize the checkout by entering this [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/personalization)
+You can also customize the checkout by entering this [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization)
 
 ## 3. Enable payment notifications
 
@@ -409,4 +409,9 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Tests](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/testing) section.
+For more information, go to the [Tests](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing) section.
+
+### Next steps
+
+* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/personalization/)
+* [Test the integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing/)  

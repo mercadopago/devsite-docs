@@ -29,8 +29,7 @@ Integrar o checkout é muito fácil:
 3. Inicie o processo de pagamento a partir de um botão em seu site.
 4. Receba as notificações de pagamento que lhe enviamos.
 
-## Inclua o Mercado Envios
+Próximos passos
 
-Entregamos tudo pronto para você! Receba o pagamento do produto e do envio na mesma operação.
-
-Você só precisa imprimir a etiqueta do Mercado Envios e enviar o pacote pelos Correios! Em sua preferência de pagamentos, inclua o atributo que indica que irá ativar o MercadoEnvios e pronto, nós cuidamos de tudo.
+* [Receba Pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/receive-payments/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)

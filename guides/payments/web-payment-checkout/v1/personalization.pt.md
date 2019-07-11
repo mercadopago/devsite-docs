@@ -340,3 +340,8 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
   "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
 }
 ```
+
+Próximos passos
+
+* [Campanhas de desconto](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/discount-campaigns/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)

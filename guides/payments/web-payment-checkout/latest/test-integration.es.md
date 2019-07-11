@@ -11,15 +11,15 @@ sites_supported:
 >
 >
 >
-> [Cómo probar tu integración](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
+> [Cómo probar tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
 >
-> [Cómo crear usuarios](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
+> [Cómo crear usuarios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
 >
-> [Prueba el flujo de pago](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
+> [Prueba el flujo de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
 >
-> [Tarjetas de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
+> [Tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
 >
-> [Comenzar a recibir pagos](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
+> [Comenzar a recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
 
 
 ## Cómo probar mi integración
@@ -29,7 +29,7 @@ sites_supported:
 Tipos de usuarios | Descripción
 ------------ | -------------
 Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro.**
-Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.**<br/> Existen dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/><br/> **Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
+Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.**<br/><br/>Existen dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/>**Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
 
 
 ## Cómo crear usuarios
@@ -78,12 +78,12 @@ Configura la preferencia con las <a href="https://www.mercadopago.com/mla/accoun
 
 ### 2. Realiza un pago con tu usuario comprador
 
-#### Comprar como usuario invitado.
+#### Comprar como usuario invitado
 
-Pruebas con tarjeta de crédito.
+Pruebas con tarjeta de crédito
 
 1. Selecciona _Tarjeta_ como medio de pago.
-2. Ingresa los datos de una [tarjeta de prueba](https://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba).
+2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba).
 3. Completa el e-mail y ¡listo!<br/><br/>
 
 #### Comprar como usuario registrado (con cuenta de Mercado Pago)
@@ -113,13 +113,13 @@ Al terminar el formulario, verifica que las credenciales en tu integración sean
 ### Próximos pasos
 
 <div>
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
 </blockquote>
 </a>   
-<a href="http://beta.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
+<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Personalizaciones</p>
  <p>Adapta el estilo de tu marca en la experiencia de compra.</p>

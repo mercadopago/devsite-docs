@@ -340,3 +340,7 @@ To summarize all of the above, the following JSON shows all the data that can be
 }
 
 ```
+### Next steps
+
+* [Discount campaigns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/discount-campaigns/)
+* [Testing the integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing/)
