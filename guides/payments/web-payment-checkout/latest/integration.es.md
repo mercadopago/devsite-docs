@@ -11,11 +11,10 @@ sites_supported:
 >
 >
 >
-> [¿Cómo me integro?](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿como_me_integro?)
+> [¿Cómo me integro?](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿cómo_me_integro?)
 >
 > [Pasos para integrarte](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
->
-> [Próximos pasos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_próximos_pasos)
+
 
 ## ¿Cómo me integro?
 

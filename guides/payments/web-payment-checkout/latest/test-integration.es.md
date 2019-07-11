@@ -11,7 +11,7 @@ sites_supported:
 >
 >
 >
-> [Cómo probar tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
+> [Cómo probar mi integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_mi_integración)
 >
 > [Cómo crear usuarios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
 >
@@ -29,7 +29,7 @@ sites_supported:
 Tipos de usuarios | Descripción
 ------------ | -------------
 Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro.**
-Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.**<br/><br/>Existen dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/>**Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
+Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.**<br/>Existen dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/>**Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
 
 
 ## Cómo crear usuarios
@@ -83,7 +83,7 @@ Configura la preferencia con las <a href="https://www.mercadopago.com/mla/accoun
 Pruebas con tarjeta de crédito
 
 1. Selecciona _Tarjeta_ como medio de pago.
-2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba).
+2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba).
 3. Completa el e-mail y ¡listo!<br/><br/>
 
 #### Comprar como usuario registrado (con cuenta de Mercado Pago)

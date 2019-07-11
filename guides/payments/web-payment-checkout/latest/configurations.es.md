@@ -17,7 +17,7 @@ sites_supported:
 
 Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
 
-Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 
 ## Ejemplo de una preferencia completa
 
@@ -215,7 +215,7 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
 
-## Múltiples items
+## Múltiples ítems
 
 Si se necesita crear una preferencia para más de un ítems, solo debes agregarlos como una lista dentro de _items_.
 Ten en cuenta que el monto total de la preferencia será la suma de la cantidad por el precio unitario de cada ítem.
