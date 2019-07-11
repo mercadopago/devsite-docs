@@ -29,7 +29,7 @@ sites_supported:
 Tipos de usuarios | Descripción
 ------------ | -------------
 Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro.**
-Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.**<br/><br/>Existen dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/>**Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
+Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.**<br/>Existen dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/>**Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago.
 
 
 ## Cómo crear usuarios
