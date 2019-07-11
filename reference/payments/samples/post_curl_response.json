@@ -1,0 +1,131 @@
+{
+    "id": 20359978,
+    "date_created": "2019-07-10T10:47:58.000-04:00",
+    "date_approved": "2019-07-10T10:47:58.000-04:00",
+    "date_last_updated": "2019-07-10T10:47:58.000-04:00",
+    "date_of_expiration": null,
+    "money_release_date": "2019-07-24T10:47:58.000-04:00",
+    "operation_type": "regular_payment",
+    "issuer_id": "25",
+    "payment_method_id": "visa",
+    "payment_type_id": "credit_card",
+    "status": "approved",
+    "status_detail": "accredited",
+    "currency_id": "BRL",
+    "description": "Point Mini a maquininha que dá o dinheiro de suas vendas na hora",
+    "live_mode": false,
+    "sponsor_id": null,
+    "authorization_code": null,
+    "money_release_schema": null,
+    "taxes_amount": 0,
+    "counter_currency": null,
+    "shipping_amount": 0,
+    "pos_id": null,
+    "store_id": null,
+    "collector_id": 448876418,
+    "payer": {
+        "first_name": "Test",
+        "last_name": "Test",
+        "email": "test_user_80507629@testuser.com",
+        "identification": {
+            "number": "32659430",
+            "type": "DNI"
+        },
+        "phone": {
+            "area_code": "01",
+            "number": "1111-1111",
+            "extension": ""
+        },
+        "type": "registered",
+        "entity_type": null,
+        "id": "448870796"
+    },
+    "metadata": {},
+    "additional_info": {
+        "items": [
+            {
+                "id": "PR0001",
+                "title": "Point Mini",
+                "description": null,
+                "picture_url": "https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
+                "category_id": null,
+                "quantity": "1",
+                "unit_price": "58.8"
+            }
+        ],
+        "payer": {
+            "phone": {
+                "area_code": "11",
+                "number": "987654321"
+            },
+            "address": {
+                "zip_code": "06233-200",
+                "street_name": "Av das Nacoes Unidas",
+                "street_number": "3003"
+            },
+            "first_name": "Nome",
+            "last_name": "Sobrenome",
+            "registration_date": "2019-01-01T12:01:01.000-03:00"
+        },
+        "shipments": {
+            "receiver_address": {
+                "zip_code": "06233200",
+                "street_name": "Av das Nacoes Unidas",
+                "street_number": "3003"
+            }
+        }
+    },
+    "order": {},
+    "external_reference": "MP0001",
+    "transaction_amount": 58.8,
+    "transaction_amount_refunded": 0,
+    "coupon_amount": 0,
+    "differential_pricing_id": null,
+    "deduction_schema": null,
+    "transaction_details": {
+        "payment_method_reference_id": null,
+        "net_received_amount": 56.16,
+        "total_paid_amount": 58.8,
+        "overpaid_amount": 0,
+        "external_resource_url": null,
+        "installment_amount": 58.8,
+        "financial_institution": null,
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+    },
+    "fee_details": [
+        {
+            "type": "mercadopago_fee",
+            "amount": 2.64,
+            "fee_payer": "collector"
+        }
+    ],
+    "captured": true,
+    "binary_mode": false,
+    "call_for_authorize_id": null,
+    "statement_descriptor": "MERCADOPAGO",
+    "installments": 1,
+    "card": {
+        "id": null,
+        "first_six_digits": "423564",
+        "last_four_digits": "5682",
+        "expiration_month": 6,
+        "expiration_year": 2023,
+        "date_created": "2019-07-10T10:47:58.000-04:00",
+        "date_last_updated": "2019-07-10T10:47:58.000-04:00",
+        "cardholder": {
+            "name": "APRO",
+            "identification": {
+                "number": "19119119100",
+                "type": "CPF"
+            }
+        }
+    },
+    "notification_url": "https://www.suaurl.com/notificacoes/",
+    "refunds": [],
+    "processing_mode": "aggregator",
+    "merchant_account_id": null,
+    "acquirer": null,
+    "merchant_number": null,
+    "acquirer_reconciliation": []
+}

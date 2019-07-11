@@ -1,9 +1,7 @@
 # Shopify
 
-
 * [Funcionalidades](#funcionalidades)
 * [Configuração](#configuração)
-
 
 ## Funcionalidades
 
@@ -29,22 +27,20 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 * Aceite pagamentos com boleto, dinheiro em conta do Mercado Pago e cartão de crédito.
 * Aceite cupons de desconto
 
-
 ## Configuração
 
 <center>
-  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=PG78aN18d_w" frameborder="0" allowfullscreen=""></iframe>
-  [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=X3mq4fbykOg" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
 1. No seu painel de administração do Shopify, va até o menu **Settings > Payments**.
 
-  ![![Configuring Mercado Pago in shopify](/images/shopify-config-1.gif)
+  ![Configuring Mercado Pago in shopify](/images/shopify-config-1.gif)
 
 2. Em **Accept credit cards**, selecione **Mercado Pago**.
 3. Preencha o **CLIENT ID** e **CLIENT SECRET**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-  ![![Configuring client id and client secret in shopify](/images/shopify-config-2.gif)
+  ![Configuring client id and client secret in shopify](/images/shopify-config-2.gif)
 
 4. Click no botão "**Activate**" para salvar.
 
