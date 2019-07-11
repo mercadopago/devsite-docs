@@ -11,13 +11,13 @@ sites_supported:
 >
 >
 >
-> [Recibe notificaciones de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pago)
+> [Recibe notificaciones de pagos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pagos)
 >
-> [Información adicional para la preferencia](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informacion_adicional_para_la_preferencia)
+> [Información adicional para la preferencia](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/#bookmark_información_adicional_para_la_preferencia)
 >
 > [URL de retorno](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
 >
-> [Cancelaciones y evoluciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+> [Cancelaciones y devoluciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
 >
 > [Gestiona contracargos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
 

@@ -11,7 +11,7 @@ sites_supported:
 >
 >
 >
-> [Cómo probar tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_tu_integración)
+> [Cómo probar mi integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_mi_integración)
 >
 > [Cómo crear usuarios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
 >
@@ -83,7 +83,7 @@ Configura la preferencia con las <a href="https://www.mercadopago.com/mla/accoun
 Pruebas con tarjeta de crédito
 
 1. Selecciona _Tarjeta_ como medio de pago.
-2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration#bookmark_tarjetas_de_prueba).
+2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba).
 3. Completa el e-mail y ¡listo!<br/><br/>
 
 #### Comprar como usuario registrado (con cuenta de Mercado Pago)
