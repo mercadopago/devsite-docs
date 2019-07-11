@@ -372,24 +372,22 @@ In order get the best approval rates as possible you can send additional informa
 
 Mercado Pago has it's own fraud prevention tools, that is why we recommend to send information about the customer's device. This will help to avoid fraudulent transactions and will improve your payment approval rates.
 
-To implement in your site the generation of the device, you have to add the following code to your checkout:
+To implement in your site the generation of the device, you have to add the following code to your checkout replacing field publicKey with your credentials:
 
 
-```html
-<script src="https://resources.mlstatic.com/device/meli-metrix.min.js"></script>
+```
+var dmlscript = document.createElement("script");
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
+dmlscript.onload = () => {
+    new DMLSDK({
+        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    });
+}
+document.body.appendChild(dmlscript);
 ```
 
-In your form you should add the following  `input`:
 
-```html
-<form>
-	  ...
-    <input type='hidden' id='deviceId' name='deviceId' />
-    ...
-</form>
-```
-
-Finally, you have to send the information obtained in the field `device_id`.
+Finally, you have to send the information obtained in global variable `MP_DEVICE_SESSION_ID` in the field `device_id`.
 
 ### Full payment example
 

@@ -363,23 +363,21 @@ Para obter uma melhora na aprovação dos pagamentos pode enviar as informacoes 
 
 Mercado Pago tem suas próprias ferramentas de prevenção de fraude. Sempre que seja possível recomendamos enviar informação sobre o dispositivo do comprador, isto ajudará a evitar transações fraudulentas e melhorará a aprovação de seus pagamentos.
 
-Para implementar em seu site a geração do device deve adicionar o seguinte código ao teu checkout:
+Para implementar em seu site a geração do device deve adicionar o seguinte código ao teu checkout, substituindo o campo `publicKey`:
 
-```html
-<script src="https://resources.mlstatic.com/device/meli-metrix.min.js"></script>
+```
+var dmlscript = document.createElement("script");
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
+dmlscript.onload = () => {
+    new DMLSDK({
+        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    });
+}
+document.body.appendChild(dmlscript);
 ```
 
-Em seu formulário deverá adicionar o seguinte `input`:
 
-```html
-<form>
-	  ...
-    <input type='hidden' id='deviceId' name='deviceId' />
-    ...
-</form>
-```
-
-Finalmente, deverá enviar o valor obtido no campo `device_id`.
+Finalmente, deverá enviar o valor obtido no campo `device_id`. -- COMPLETAR
 
 ### Exemplo de um pagamento completo
 
