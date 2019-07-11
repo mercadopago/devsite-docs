@@ -10,14 +10,14 @@ Por exemplo:
 
 ```html
 <h1>Algo não ocorreu conforme o esperado!</h1>
-<p>Ocorreu um erro com o pagamento. Por favor tente novamente:</p>
+<p>Ocorreu um erro com o pagamento. Por favor tente novamente mais tarde:</p>
 
 <form action="/procesar-pago" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
-    data-button-label="Reintentar"> <!-- Texto do botão -->
+    data-button-label="Tente Novamente"> <!-- Texto do botão -->
   </script>
 </form>
 ```
