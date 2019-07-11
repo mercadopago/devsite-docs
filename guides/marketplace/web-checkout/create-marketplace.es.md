@@ -1,10 +1,21 @@
 # Cómo integrar marketplace en el Checkout Web
 
+----[mla]----
 > WARNING
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction).
+> * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction).
+------------
+
+----[mlb,mlc,mlm,mpe,mco,mlu]----
+> WARNING
+>
+> Pre-requisitos
+>
+> * Tener implementado [Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction).
+------------
+
 
 Para comenzar debes:
 
@@ -89,9 +100,9 @@ En la respuesta, además del _Access Token_ del vendedor que se ha vinculado, ob
 >
 > Consejo
 >
-> Las credenciales tienen un **tiempo de validez de 6 meses**. 
-> Si no se renuevan las credenciales de los vendedores antes de los 6 meses, **las mismas perderán vigencia y se deberá volver a autorizar al vendedor**. 
-> Recomendación: Renovar las credenciales a los 5 meses de obtenerlas. 
+> Las credenciales tienen un **tiempo de validez de 6 meses**.
+> Si no se renuevan las credenciales de los vendedores antes de los 6 meses, **las mismas perderán vigencia y se deberá volver a autorizar al vendedor**.
+> Recomendación: Renovar las credenciales a los 5 meses de obtenerlas.
 
 
 ### Renueva las credenciales de tus vendedores
@@ -126,7 +137,7 @@ Respuesta esperada:
 
 ## 3. Integra el checkout
 
-Para cobrar en nombre de tus vendedores debes integrar [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
+Para cobrar en nombre de tus vendedores debes integrar [Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
 
@@ -257,19 +268,19 @@ El vendedor va a recibir la diferencia entre el monto total y las comisiones, ta
 >
 > Consejo
 >
-> Mientras más información se envíe en la generación de la preferencia, mejor funcionará nuestro sistema de prevención de fraude con respecto a la aprobación de los pagos. 
-> Crea una preferencia de pagos tan completa como puedas. 
+> Mientras más información se envíe en la generación de la preferencia, mejor funcionará nuestro sistema de prevención de fraude con respecto a la aprobación de los pagos.
+> Crea una preferencia de pagos tan completa como puedas.
 
 ### Notificaciones
 
-Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen, así como también alta y baja de usuarios en tu Marketplace. 
+Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen, así como también alta y baja de usuarios en tu Marketplace.
 
 En el artículo de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) puedes obtener más información.
 
 ### Devoluciones y cancelaciones
 
 Las devoluciones y cancelaciones podrán ser realizadas tanto por el _Marketplace_ como por el vendedor, vía API o desde la cuenta de Mercado Pago.
-En caso de que la devolución la realice el Marketplace, se deberán utilizar las credenciales obtenidas para cobrar en nombre del vendedor. 
+En caso de que la devolución la realice el Marketplace, se deberán utilizar las credenciales obtenidas para cobrar en nombre del vendedor.
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 

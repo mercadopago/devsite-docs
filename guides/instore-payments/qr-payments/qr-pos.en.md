@@ -33,7 +33,7 @@ In addition to the previous concepts, you must also know the objects with which 
 
 ```json
 {
-    "name":"Principal POS", 
+    "name":"Principal POS",
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -124,7 +124,7 @@ You must create a QR code for each POS with an `external_id` that identifies it.
 ```bash
 curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 '{
-    "name":"Principal POS", 
+    "name":"Principal POS",
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -191,7 +191,7 @@ curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_t
 
 Two test users must be created: one buyer and another collector. With the billing user, the QR must be created and with the other, enter the Mercado Pago or Mercado Libre apps.
 
-Consult the [test data](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/testing): test users and test cards that can be used.
+Consult the [test data](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/testing): test users and test cards that can be used.
 
 | Test cases                                                   | Expected response                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

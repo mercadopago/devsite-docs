@@ -391,7 +391,7 @@ Once the preference has been created, use the URL found in the attribute `init_p
 ```
 
 
-You can also customize the checkout by entering this [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/personalization)
+You can also customize the checkout by entering this [Link](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/personalization)
 
 ## 3. Enable payment notifications
 

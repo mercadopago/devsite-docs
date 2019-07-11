@@ -19,7 +19,7 @@ sites_supported:
 
 1. The user scans the QR code from the Mercado Pago or Mercado Libre app. The QR contains your POS_ID with the information of the position where the sale was made.
 
-1. Our server consults your server for the last pending sale for that position in that branch. 
+1. Our server consults your server for the last pending sale for that position in that branch.
 
 1. Our server searches for the last outstanding order and, if it exists, return the order body.
 
@@ -55,7 +55,7 @@ Within to the previous concepts, you must also know the objects with which we go
 
 ```json
 {
-    "name":"Pump 1", 
+    "name":"Pump 1",
     "external_id": "pos_1",
     "category": 473000,
     "store_id": "123456",
@@ -136,15 +136,15 @@ Within to the previous concepts, you must also know the objects with which we go
   - `store_id`: String. Unique identifier of the business (identifier of the service station or APIES).
   - `products`: Array. List of products purchased with the following attributes
     - `code`: String. Product code.
-    - `quantity`: Integer or decimal. 
-    - `unit_price`: Decimal. 
+    - `quantity`: Integer or decimal.
+    - `unit_price`: Decimal.
     - `unit`: String. Metric unit.
   - `cashier_identification`: Object. Employee data.
     - `type`: String. Document type.
     - `number`: String. ID number.
   - `period`: String. Period number.
-  - `shift`: String. Shift number. 
-  - `affinity_plan`: String. 
+  - `shift`: String. Shift number.
+  - `affinity_plan`: String.
 
 ### Payment Object
 
@@ -229,7 +229,7 @@ You must create a QR code for each POS with an `url`.
 ```bash
 curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 '{
-    "name":"Principal Pump", 
+    "name":"Principal Pump",
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -266,7 +266,7 @@ Two test users must be created: one buyer and another collector. With the billin
 
 > **NOTE**: If in the tests you will use a test account, all accounts must be tested. Otherwise, if you use a real account, all related accounts must be real. **If the `sponsor_id` is added in the testing phase, remember that you must be a test user.**
 
-Consult the [test data](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/testing): test users and test cards that can be used.
+Consult the [test data](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/testing): test users and test cards that can be used.
 
 | Test cases                                                   | Expected response                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

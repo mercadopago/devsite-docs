@@ -6,13 +6,23 @@ sites_supported:
 ---
 
 # Mercado Pago Gateway: Web Checkout
-
+----[mla]----
 > NOTE
 >
 > Pre-requisito
 >
 
-> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction) de **Web Checkout**
+> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Web Checkout**
+------------
+
+----[mlb,mlc,mlm,mpe,mco,mlu]----
+> NOTE
+>
+> Pre-requisito
+>
+
+> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Web Checkout**
+------------
 
 ## Integración
 
