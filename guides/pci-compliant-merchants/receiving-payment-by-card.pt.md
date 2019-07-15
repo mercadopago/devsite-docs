@@ -195,7 +195,8 @@ dmlscript.onload = () => {
 document.body.appendChild(dmlscript);
 ```
 
-É importante que envie o campo `deviceId` ao seu servidor e, ao criar o pagamento, adicione o seguinte header à requisição: --COMPLETAR
+ É importante que envie o campo `MP_DEVICE_SESSION_ID` (gerado automaticamente após a execução do código acima) para o seu servidor, que no momento da criação do pagamento você adiciona o seguinte header ao request:
+
 
 ```http
 X-meli-session-id: device_id
