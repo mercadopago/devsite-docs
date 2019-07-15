@@ -377,7 +377,7 @@ document.body.appendChild(dmlscript);
 ```
 
 
-FInalmente, deve enviar o valor que se encontra na variável global `MP_DEVICE_SESSION_ID` 
+Finalmente, deve enviar o valor que se encontra na variável global `MP_DEVICE_SESSION_ID` 
 
 ### Exemplo de um pagamento completo
 
