@@ -203,7 +203,7 @@ It is important that you submit the automatically created global variable `MP_DE
 X-meli-session-id: device_id
 ```
 
-Donde `device_id` sea reemplazado por el ID obtenido en el paso anterior. --CORREGIR
+Where `device_id` is replaced by the ID obtained in the previous step.
 
 ### Device deployment in native mobile applications
 
