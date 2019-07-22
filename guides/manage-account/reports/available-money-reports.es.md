@@ -108,7 +108,7 @@ request(options, callback);
 ]]]
 
 Recibirás como respuesta:
-```
+```json
 [
     {
         "id": 1234,
