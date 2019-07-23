@@ -27,8 +27,11 @@ Para hacer uso de esta librería debes comenzar insertando el siguiente código 
 
 Tu clave pública es la que es la que te identifica para poder capturar los datos de tarjeta de forma segura. La _public key_ debe ser cargada después de incluir _MercadoPago.js_ y antes de realizar un _request_.
 
-```javascript
-Mercadopago.setPublishableKey("TEST-b3d5b663-664a-4e8f-b759-de5d7c12ef8f");
+```html
+<script> 
+window.Mercadopago.setPublishableKey(ENV_PUBLIC_KEY);
+</script> 
+</body>
 ```
 
 > NOTE
@@ -112,6 +115,8 @@ Es importante que obtengas el medio de pago de la tarjeta para poder realizar el
 
 Cuando tu cliente ingresa el BIN de la tarjeta de crédito, es decir los 6 primeros dígitos, el sdk implementa `getBin()` y luego consulta a la API por el método de pago que se corresponde a ese BIN:
 
+El _callback_ recibe un _status_ y un _response_. La función deberá almacenar el id de la respuesta en el campo `paymentMethodId` (_input hidden_), por ejemplo:
+
 ```javascript
 function guessingPaymentMethod(event) {
     var bin = getBin();
@@ -131,23 +136,7 @@ function guessingPaymentMethod(event) {
             }
         }, 100);
     }
-};
-```
-
-Para obtener el medio de pago, utiliza el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este acepta dos parámetros: un objeto y una función de _callback_.
-
-```javascript
-Mercadopago.getPaymentMethod({
-    "bin": bin
-}, setPaymentMethodInfo);
-```
-
-El `bin` corresponde a los primeros 6 dígitos de la tarjeta, y son los que identifican el medio de pago y banco emisor de esta.
-
-El _callback_ recibe un _status_ y un _response_. La función deberá almacenar el id de la respuesta en el campo `paymentMethodId` (_input hidden_), por ejemplo:
-
-```javascript
-function setPaymentMethodInfo(status, response) {
+    function setPaymentMethodInfo(status, response) {
     if (status == 200) {
         const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
         
@@ -166,6 +155,19 @@ function setPaymentMethodInfo(status, response) {
     }
 };
 ```
+
+Para obtener el medio de pago, utiliza el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este acepta dos parámetros: un objeto y una función de _callback_.
+
+```html
+<script> 
+window.Mercadopago.getPaymentMethod({
+    "bin": bin
+}, setPaymentMethodInfo);
+</script> 
+</body>
+```
+
+
 
 #### Capturar los datos
 
@@ -407,12 +409,14 @@ El campo `installments` corresponde a la cantidad de cuotas que el comprador eli
 
 Para obtener las cuotas disponibles
 
-```javascript
-
-Mercadopago.getInstallments({
+```html
+<script> 
+Window.Mercadopago.getInstallments({
     "bin": bin,
     "amount": amount
 }, setInstallmentInfo);
+</script> 
+</body>
 ```
 
 La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recomendado para mostrar en cada una de las cuotas disponibles indicando el valor a pagar:
