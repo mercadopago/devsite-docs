@@ -1,3 +1,87 @@
+
+# Introducción
+
+El Reporte de Dinero Disponible es un *informe descargable* en formato .csv o .xlsx que te permite conocer la liquidez de tu negocio, es decir, cuánto dinero tienes para usar. Contiene el *detalle de los pagos liberados* que están listos para retirar a una cuenta bancaria o invertir en Mercado Pago. 
+
+Accede a tus reportes desde tu cuenta en Mercado Pago siguiendo estos pasos:
+1. Inicia sesión en Mercado Pago
+1. Ve a Informes y de ahí accede a tus Reportes
+1. En Reportes, elige Dinero Disponible, allí encontrarás un listado de los reportes generados.
+
+Ten en cuenta que la generación del reporte lleva un tiempo, es decir, que no siempre estará listo al instante y verás el estado “En preparación”. Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas: 
+* Desde un link de descarga que te enviaremos por mail
+* Desde tu cuenta de Mercado Pago, en Reportes de Dinero Disponible. 
+
+Es importante aclarar que no siempre coincide con el reporte de Dinero en Cuenta o los reportes de facturación. Dependiendo de los plazos y tasas que elijas, el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Para saber la fecha exacta en que estará disponible el dinero de una operación, revisa el detalle de tus cobros acreditados. 
+
+Esos plazos tienen que ver con los tiempos de los bancos o por los flujos de intermediación cuando las operaciones se realizan en Mercado Libre. Otras operaciones que pueden afectar la liberación de tu dinero son los Contracargos y Reclamos que puedas recibir por una venta. 
+
+
+# Casos de uso
+
+Por lo general, *este reporte se usa para conciliar los retiros de dinero* e incluye las transacciones que lo componen. 
+
+Generamos un Reporte de Dinero Disponible en estas tres situaciones: 
+1. Cada vez que lo generas manualmente. 
+1. De forma programada, según tus ajustes.
+1. Con cada retiro de dinero a una cuenta bancaria. 
+
+#### Usa el Reporte de Dinero Disponible cuando quieras: 
+* Tener un informe de liquidez de la cuenta,
+* Conciliar la composición de las operaciones que impactan en tu dinero disponible en un nivel transaccional,
+* Conciliar mensual o periódicamente con el detalle de los movimientos que generaron saldo disponible para retirar.
+* Conocer:
+    + El historial de dinero disponible entre dos fechas o dos retiros. 
+    +  El detalle de los eventos que componen un retiro automático o manual, total o parcial. 
+    + El detalle de disputas, reembolsos, shipping, contracargos, impuestos y otras operaciones que afecten el dinero disponible.
+    + El detalle de las cuotas liberadas y de las operaciones “En cuotas”
+
+# Cómo usar el reporte
+
+¿Vas a usar el archivo .csv? Revisa que los caracteres estén configurados en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
+
+![nombre](/images/manage-account/reports/excel.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo en Excel
+
+![nombre](/images/manage-account/reports/open-office.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo en Open Office
+
+
+El reporte contiene 4 secciones:
+1. Balance Inicial (Initial Available Balance)
+1. Detalle de Liberaciones de dinero (Releases)
+1. Bloqueos de dinero por disputas (Block)
+1. Desbloqueos por la resolución de la disputa (Unblock)
+
+Verás una sección de *subtotales* por cada bloque y, finalmente, el *resultado total*. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtotal release - Subtotal block + Subtotal unblock = resultado total
+
+Revisa el [Glosario completo](https://www.mercadopago.com.ar/ayuda/_2118)
+
+Reflejamos los conceptos contables universales del debe (dinero que tienes que pagar) y haber (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu haber lo verás en la columna NET_CREDIT\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu deber estará en la columna NET_DEBIT
+
+Verás el dinero disponible de las operaciones liberadas en las columnas NET_CREDIT (acreditado) y NET_DEBIT (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
+
+
+**¿Quieres agregar detalles a la vista de las operaciones?** Selecciona las columnas que quieras exportar en los Ajustes del reporte, según lo que quieras analizar y conciliar. Vienen definidas y puedes ver el total de ellas en 
+**Reporte de Dinero Disponible** > **Ajustes**
+
+
+¿Qué pasa si un retiro falla? 
+Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna NET_CREDIT. 
+
+Ejemplos
+
+Observa la forma en la que está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
+
+![nombre](/images/manage-account/reports/examples.png)
+
 # Cómo generar tus reportes
 
 ## Vía web
@@ -5,10 +89,10 @@
 Desde tu panel de Mercado Pago, solo podrás programar los reportes por retiro. Seguí estos pasos para hacerlo:
 
 1. Iniciá sesión en Mercado Pago
-2. Ve a Informes y de ahí accede a tus Reportes
-3. En Reportes, elige Dinero Disponible.
-4. Una vez dentro de Dinero Disponible, clickea en **‘Generar reporte’**
-5. Selecciona el **período de tiempo** que quieras incluir en el reporte
+1. Ve a Informes y de ahí accede a tus Reportes
+1. En Reportes, elige Dinero Disponible.
+1. Una vez dentro de Dinero Disponible, clickea en **‘Generar reporte’**
+1. Selecciona el **período de tiempo** que quieras incluir en el reporte
 
 ¡Y listo! Vas a ver que el reporte está **en preparación.** 
 
