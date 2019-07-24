@@ -1,40 +1,49 @@
+# ¿Qué es el Reporte de Dinero Disponible? (h1)
 
-# Introducción
+En esta página
 
-El Reporte de Dinero Disponible es un *informe descargable* en formato .csv o .xlsx que te permite conocer la liquidez de tu negocio, es decir, cuánto dinero tienes para usar. Contiene el *detalle de los pagos liberados* que están listos para retirar a una cuenta bancaria o invertir en Mercado Pago. 
+    Introducción 
+    Casos de uso
+    Cómo usar el reporte
+    Ejemplos
 
-Accede a tus reportes desde tu cuenta en Mercado Pago siguiendo estos pasos:
-1. Inicia sesión en Mercado Pago
-1. Ve a Informes y de ahí accede a tus Reportes
+
+## Introducción
+
+El Reporte de Dinero Disponible es un **informe descargable** en formato .csv o .xlsx que te permite conocer la liquidez de tu negocio, es decir, cuánto dinero tienes para usar. Contiene el **detalle de los pagos liberados** que están listos para retirar a una cuenta bancaria o invertir en Mercado Pago. 
+
+Accede a tus reportes desde la sección de Informes en tu cuenta en Mercado Pago siguiendo estos pasos:
+1. [Inicia sesión](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user) en Mercado Pago
+1. Ve a [Informes](https://www.mercadopago.com/mla/account/movements) y de ahí accede a tus [Reportes](https://www.mercadopago.com.ar/balance/reports)
 1. En Reportes, elige Dinero Disponible, allí encontrarás un listado de los reportes generados.
 
 Ten en cuenta que la generación del reporte lleva un tiempo, es decir, que no siempre estará listo al instante y verás el estado “En preparación”. Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas: 
 * Desde un link de descarga que te enviaremos por mail
-* Desde tu cuenta de Mercado Pago, en Reportes de Dinero Disponible. 
+* Desde tu cuenta de Mercado Pago, en <span style="color:blue">Reportes de Dinero Disponible.</span> 
 
-Es importante aclarar que no siempre coincide con el reporte de Dinero en Cuenta o los reportes de facturación. Dependiendo de los plazos y tasas que elijas, el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Para saber la fecha exacta en que estará disponible el dinero de una operación, revisa el detalle de tus cobros acreditados. 
-
+Es importante aclarar que el valor total del reporte no siempre coincide con los valores del reporte de Dinero en Cuenta o los reportes de facturación. Dependiendo de [los plazos y tasas que elijas](https://www.mercadopago.com.ar/settings/release-options), el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Para saber la fecha exacta en que estará disponible el dinero de una operación, revisa el detalle de tus [cobros acreditados](https://www.mercadopago.com.ar/activities/balance). 
+ 
 Esos plazos tienen que ver con los tiempos de los bancos o por los flujos de intermediación cuando las operaciones se realizan en Mercado Libre. Otras operaciones que pueden afectar la liberación de tu dinero son los Contracargos y Reclamos que puedas recibir por una venta. 
 
+## Casos de uso
 
-# Casos de uso
-
-Por lo general, *este reporte se usa para conciliar los retiros de dinero* e incluye las transacciones que lo componen. 
+Por lo general, **este reporte se usa para conciliar los retiros de dinero** e incluye las transacciones que lo componen. 
 
 Generamos un Reporte de Dinero Disponible en estas tres situaciones: 
 1. Cada vez que lo generas manualmente. 
 1. De forma programada, según tus ajustes.
 1. Con cada retiro de dinero a una cuenta bancaria. 
 
-#### Usa el Reporte de Dinero Disponible cuando quieras: 
-* Tener un informe de liquidez de la cuenta,
-* Conciliar la composición de las operaciones que impactan en tu dinero disponible en un nivel transaccional,
-* Conciliar mensual o periódicamente con el detalle de los movimientos que generaron saldo disponible para retirar.
-* Conocer:
+Usa el Reporte de Dinero Disponible en estos casos: 
+* Cuando quieras tener un informe de liquidez de la cuenta,
+* Para conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional,
+* Conciliación mensual o periódica con el detalle de los movimientos que generan saldo disponible para retirar.
+* Para conocer:
     + El historial de dinero disponible entre dos fechas o dos retiros. 
-    +  El detalle de los eventos que componen un retiro automático o manual, total o parcial. 
+    + El detalle de los eventos que componen un retiro automático o manual, total o parcial. 
     + El detalle de disputas, reembolsos, shipping, contracargos, impuestos y otras operaciones que afecten el dinero disponible.
     + El detalle de las cuotas liberadas y de las operaciones “En cuotas”
+
 
 # Cómo usar el reporte
 
