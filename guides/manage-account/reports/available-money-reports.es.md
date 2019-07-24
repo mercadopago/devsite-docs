@@ -68,8 +68,8 @@ Revisa el [Glosario completo](https://www.mercadopago.com.ar/ayuda/_2118)
 
 Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
-<p style="padding:0 0 0 50px;">Tu haber lo verás en la columna NET_CREDIT</p>
-<p style="padding:0 0 0 50px;">Tu deber estará en la columna NET_DEBIT</p>
+<p style="padding-left:50px;">Tu haber lo verás en la columna NET_CREDIT</p>
+<p style="padding-left:50px;">Tu deber estará en la columna NET_DEBIT</p>
 
 Verás el dinero disponible de las operaciones liberadas en las columnas NET_CREDIT (acreditado) y NET_DEBIT (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
@@ -138,9 +138,13 @@ También podrás programar la generación de estos reportes por cada retiro auto
 
 ## Generación vía API
 
+Ganá tiempo programando la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
+
 ### De forma manual
 
-1. Generación
+Genera tus reportes de forma manual configurando estas tres instancias: 
+
+1. **Generación**
 
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
@@ -192,7 +196,7 @@ request(options, callback);
 
 Recibirás como respuesta un HTTP STATUS 202 (Accepted), y el reporte se generará de manera asincrónica.
 
-2. Búsqueda
+2. **Búsqueda**
 
 Consulta la API de esta forma para ver si la generación de reportes quedó lista:
 
@@ -229,7 +233,8 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta:
+Recibirás como respuesta un HTTP STATUS 200 (OK):
+
 ```json
 [
     {
@@ -247,7 +252,7 @@ Recibirás como respuesta:
 ]
 ```
 
-3. Descarga
+3. **Descarga**
 
 Utilizando el atributo file_name, puedes descargar el reporte desde la siguiente URL:
 
@@ -255,7 +260,7 @@ Utilizando el atributo file_name, puedes descargar el reporte desde la siguiente
 curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ACCESS_TOKEN' 
 ```
 
-Recibirás como respuesta:
+Recibirás como respuesta un HTTP STATUS 200 (OK) :
 
 ```json
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -267,14 +272,11 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
-**Response status code: 200 OK**
-
-
 ### De forma programada
 
-1. Generación
+1. **Generación**
 
-Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo scheduled en la configuración a true ([Ver](#actualizar-configuración)):
+Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *scheduled* en la configuración a *true*: ([Ver](#actualizar-configuración)):
 
 ```curl
 curl -X POST \
@@ -286,7 +288,7 @@ curl -X POST \
     }'
 ``` 
 
-Recibirás como respuesta:
+Recibirás como respuesta un HTTP STATUS 200 (OK)
 
 ```json
 {
@@ -304,8 +306,6 @@ Recibirás como respuesta:
     "retries": 0
 }
 ```
-**Response status code: 200 OK**
-
 
 Detiene la generación automática del reporte. Actualiza el atributo scheduled en la configuración a false:
 
@@ -316,7 +316,8 @@ curl -X DELETE \
   'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ACCESS_TOKEN' \
   -d '{"user_id": USER-ID}'
 ```
-Recibirás como respuesta:
+
+Recibirás como respuesta un HTTP STATUS 200 (OK)
 
 ```json
 {
@@ -334,17 +335,17 @@ Recibirás como respuesta:
     "user_id": USER-ID
 }
 ```
-**Response status code: 200 OK**
 
 
-2. Descarga
+2. **Descarga**
 
 Descarga el archivo con este comando: 
 
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ACCESS_TOKEN' 
 ```
-Recibirás como respuesta:
+
+Recibirás como respuesta un HTTP STATUS 200 (OK):
 
 ```json
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -355,10 +356,9 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
-**Response status code: 200 OK**
 
 
-### También puedes ajustar la configuración del reporte vía API, usa los siguientes comandos para cada caso: 
+3. **Configuración**
 
 ### Consultar configuración 
 
