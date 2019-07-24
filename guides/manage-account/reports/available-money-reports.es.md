@@ -45,18 +45,15 @@ Usa el Reporte de Dinero Disponible en estos casos:
     + El detalle de las cuotas liberadas y de las operaciones “En cuotas”
 
 
-# Cómo usar el reporte
+## Cómo usar el reporte
 
-¿Vas a usar el archivo .csv? Revisa que los caracteres estén configurados en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
+Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
 
 ![excel](/images/manage-account/reports/excel.png)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo en Excel
+<p style="text-align:center;">Ejemplo en Excel</p>
 
 ![open-office](/images/manage-account/reports/open-office.png)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo en Open Office
-
+<p style="text-align:center;">Ejemplo en Open Office</p>
 
 El reporte contiene 4 secciones:
 1. Balance Inicial (Initial Available Balance)
@@ -64,16 +61,16 @@ El reporte contiene 4 secciones:
 1. Bloqueos de dinero por disputas (Block)
 1. Desbloqueos por la resolución de la disputa (Unblock)
 
-Verás una sección de *subtotales* por cada bloque y, finalmente, el *resultado total*. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
+Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtotal release - Subtotal block + Subtotal unblock = resultado total
+<p style="text-align:center;">Subtotal release - Subtotal block + Subtotal unblock = resultado total</p>
 
 Revisa el [Glosario completo](https://www.mercadopago.com.ar/ayuda/_2118)
 
-Reflejamos los conceptos contables universales del debe (dinero que tienes que pagar) y haber (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
+Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu haber lo verás en la columna NET_CREDIT\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu deber estará en la columna NET_DEBIT
+<p style="padding:0 0 0 50px;">Tu haber lo verás en la columna NET_CREDIT</p>
+<p style="padding:0 0 0 50px;">Tu deber estará en la columna NET_DEBIT</p>
 
 Verás el dinero disponible de las operaciones liberadas en las columnas NET_CREDIT (acreditado) y NET_DEBIT (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
@@ -82,8 +79,7 @@ Verás el dinero disponible de las operaciones liberadas en las columnas NET_CRE
   <tr style="border: 1px solid black;">
     <td style="border: 1px solid black;">
 
-**¿Quieres agregar detalles a la vista de las operaciones?** Selecciona las columnas que quieras exportar en los Ajustes del reporte, según lo que quieras analizar y conciliar. Vienen definidas y puedes ver el total de ellas en 
-**Reporte de Dinero Disponible** > **Ajustes**
+**¿Quieres agregar detalles a la vista de las operaciones?** Selecciona las columnas que quieras exportar e incluir en los Ajustes del reporte, según lo que quieras analizar y conciliar. 
      </td>
   </tr>
 </table>
@@ -91,33 +87,28 @@ Verás el dinero disponible de las operaciones liberadas en las columnas NET_CRE
 
 **¿Qué pasa si un retiro falla?**
 
-Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna NET_CREDIT. 
+Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna NET_CREDIT.
 
-Ejemplos
+### Ejemplos
 
-Observa la forma en la que está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
 
 ![examples](/images/manage-account/reports/examples.png =200x)
 
-La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes. 
+La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
 
+<table style="border: 1px solid black;">
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;">
 
 **Importante: diferencias entre retiro parcial y retiro total.**
 
 Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir. 
 
-Por ejemplo, imagina que tienes $ 3.000 disponibles que puedes retirar a una cuenta bancaria. Y quieres retirar $ 2.000. El retiro es parcial y el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles.
-
-**¿Qué pasa cuando el retiro es total?**
-
-Si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro. 
-
-<!--
-¿Puedo ajustar esto?
-
-Sí, puedes incluir, en los Ajustes del reporte, la última operación de retiro de dinero. De esta forma, la información del reporte tendrá en cuenta ese valor y hará que los montos coincidan.
--->
-
+Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro. 
+     </td>
+  </tr>
+</table>
 
 # Cómo generar tus reportes
 
