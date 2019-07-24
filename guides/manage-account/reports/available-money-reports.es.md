@@ -68,12 +68,14 @@ Reflejamos los conceptos contables universales del debe (dinero que tienes que p
 
 Verás el dinero disponible de las operaciones liberadas en las columnas NET_CREDIT (acreditado) y NET_DEBIT (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
+<!--
 
 **¿Quieres agregar detalles a la vista de las operaciones?** Selecciona las columnas que quieras exportar en los Ajustes del reporte, según lo que quieras analizar y conciliar. Vienen definidas y puedes ver el total de ellas en 
 **Reporte de Dinero Disponible** > **Ajustes**
+-->
 
+**¿Qué pasa si un retiro falla?**
 
-¿Qué pasa si un retiro falla? 
 Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna NET_CREDIT. 
 
 Ejemplos
@@ -81,6 +83,26 @@ Ejemplos
 Observa la forma en la que está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
 
 ![nombre](/images/manage-account/reports/examples.png)
+
+La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes. 
+
+
+**Importante: diferencias entre retiro parcial y retiro total.**
+
+Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir. 
+
+Por ejemplo, imagina que tienes $ 3.000 disponibles que puedes retirar a una cuenta bancaria. Y quieres retirar $ 2.000. El retiro es parcial y el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles.
+
+**¿Qué pasa cuando el retiro es total?**
+
+Si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro. 
+
+<!--
+¿Puedo ajustar esto?
+
+Sí, puedes incluir, en los Ajustes del reporte, la última operación de retiro de dinero. De esta forma, la información del reporte tendrá en cuenta ese valor y hará que los montos coincidan.
+-->
+
 
 # Cómo generar tus reportes
 
@@ -221,17 +243,17 @@ Utilizando el atributo file_name, puedes descargar el reporte desde la siguiente
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo scheduled en la configuración a true:
 
-> POST /v1/account/bank_report/schedule
+> POST https://api.mercadopago.com/v1/account/bank_report/schedule
 
 Detiene la generación automática del reporte. Actualiza el atributo scheduled en la configuración a false:
 
-> DELETE /v1/account/bank_report/schedule
+> DELETE https://api.mercadopago.com/v1/account/bank_report/schedule
 
 2. Descarga
 
 Descarga el archivo con este comando: 
 
-> GET /v1/account/bank_report/:file_name
+> GET https://api.mercadopago.com/v1/account/bank_report/:file_name
 
 ### También puedes ajustar la configuración del reporte vía API, usa los siguientes comandos para cada caso: 
 
@@ -552,3 +574,5 @@ request(options, callback);
 ```
 
 ]]]
+
+# Ficha técnica
