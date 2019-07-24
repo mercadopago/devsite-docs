@@ -40,11 +40,11 @@ Generamos un Reporte de Dinero Disponible en estas tres situaciones:
 
 ¿Vas a usar el archivo .csv? Revisa que los caracteres estén configurados en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
 
-![nombre](/images/manage-account/reports/excel.png)
+![excel](/images/manage-account/reports/excel.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo en Excel
 
-![nombre](/images/manage-account/reports/open-office.png)
+![open-office](/images/manage-account/reports/open-office.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo en Open Office
 
@@ -69,9 +69,15 @@ Reflejamos los conceptos contables universales del debe (dinero que tienes que p
 Verás el dinero disponible de las operaciones liberadas en las columnas NET_CREDIT (acreditado) y NET_DEBIT (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
 <!--
+<table style="border: 1px solid black;">
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;">
 
 **¿Quieres agregar detalles a la vista de las operaciones?** Selecciona las columnas que quieras exportar en los Ajustes del reporte, según lo que quieras analizar y conciliar. Vienen definidas y puedes ver el total de ellas en 
 **Reporte de Dinero Disponible** > **Ajustes**
+     </td>
+  </tr>
+</table>
 -->
 
 **¿Qué pasa si un retiro falla?**
@@ -82,7 +88,7 @@ Ejemplos
 
 Observa la forma en la que está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-![nombre](/images/manage-account/reports/examples.png)
+![examples](/images/manage-account/reports/examples.png =200x)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes. 
 
@@ -576,3 +582,21 @@ request(options, callback);
 ]]]
 
 # Ficha técnica
+
+
+|              |                |
+| ------------ |	--------    |
+| `Programacion`| -  Diaria.<br/> -  Semanal.<br/>-  Mensual.|
+| `Generación`  | -  Manual.<br/> -  Automática por retiro de dinero disponible, total o parcial <br/><br/> Las tres instancias de generación conviven. Es decir, aunque programes la generación de tus reportes automáticamente, cada vez que retires dinero se generará un reporte adicional. |
+| `Detalla de tablas` | El detalle de las tablas comprende información generada en día 1 como mínimo. Excepto en los reportes generados por retiro de dinero. |
+| `Formato del filename` | Cuando el reporte es programado o manual:<br/> “<prefijo-configurable>-<fecha-de-creación>.csv” <br/> Ejemplo:  mitienda-28-05-2019.csv <br/><br/> Cuando el reporte se genera por un retiro de dinero: “<prefijo-configurable>-<id-de-retiro>-<fecha-de-creación>.csv” Ejemplo: mitienda-ID23902138-28-05-2019.csv|
+| `Formatos de descarga` | .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo.|
+| `Configuración disponible vía API` | -  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> -  Separador decimal (coma o punto)<br/> -  Notificación por e-mail<br/> -  Retiro al final del reporte (opcional) |
+| `Orden de columnas` | Fijo |
+| `Archivo` | Los reportes generados quedan guardados en tu cuenta de Mercado Pago |
+| `Período máximo` | Reportes con datos de hasta 60 días |
+| `Moneda` | Local (basada en el país donde esté registrada la cuenta de Mercado Pago) |
+| `Zona horaria de las columnas con fechas:` | GMT-4 |
+| `Selección de fechas vía API` | Formato del timezone: UTC / GMT-0 |
+| `Selección de fechas vía web ` | <b>Debe basarse en el timezone de la cuenta del usuario.</b><br/>Por ejemplo, a la cuenta de usuario registrada en Brasil le corresponde el timezone de Sao Paulo.|
+
