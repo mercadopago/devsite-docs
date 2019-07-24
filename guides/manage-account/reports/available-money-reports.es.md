@@ -583,7 +583,6 @@ request(options, callback);
 
 # Ficha técnica
 
-
 |              |                |
 | ------------ |	--------    |
 | `Programacion`| -  Diaria.<br/> -  Semanal.<br/>-  Mensual.|
@@ -600,3 +599,22 @@ request(options, callback);
 | `Selección de fechas vía API` | Formato del timezone: UTC / GMT-0 |
 | `Selección de fechas vía web ` | <b>Debe basarse en el timezone de la cuenta del usuario.</b><br/>Por ejemplo, a la cuenta de usuario registrada en Brasil le corresponde el timezone de Sao Paulo.|
 
+
+# Glosario
+
+Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
+
+| `Nombre de la columna del reporte`  | `Qué significa` |
+| ----------------------------------- |	--------------- |
+| `DATE`| Fecha de liberación, bloqueo o desbloqueo, según corresponda.|
+| `SOURCE_ID` | ID de operación en Mercado Pago (por ejemplo, el pago de una venta).|
+| `EXTERNAL_REFERENCE` | ID que ayuda a identificar el origen de la operación. Por ejemplo, puede ser la venta a través del ID de la orden o el envío (si es una compra de carrito) o del ID propio provisto por el vendedor en caso de una integración externa.<br/><br/> Tené en cuenta que es posible que este campo esté vacío para algunos casos como el pago de facturas o un envío de dinero, entre otros.|
+| `RECORD_TYPE` | initial_available_balance: Dinero disponible del período anterior.<br/><br/> block → Dinero bloqueado por un reclamo o contracargo.<br/><br/> unblock → Dinero liberado porque se resolvió un reclamo o contracargo.<br/><br/> release → Dinero de un cobro que fue liberado.<br/><br/> fullblock → Dinero bloqueado por restricción<br/><br/> subtotal → Suma de los montos de cada record type.<br/><br/> total → Monto neto total. |
+| `DESCRIPTION` | <table style="border:none;" ><tr style="border:none;"><td style="border:none;"> Posibles valores que puede tomar el campo:<br/><ul><li> Para block o unblock: chargeback, dispute, shipping_return, credit_payment</li><li>Para release: payment, withdrawal, refund, tax_payment_ibcf, tax_payment_ibcf_cancel, tax_payment_ibex, tax_payment_iibb, tax_payment_iibb_cancel, shipping, shipping_cancel, tax_withdholding, tax_withdholding_cancel, mediation,mediation_cancel, chargeback, fee_release_in_advance, asset_management_gain, asset_management_loss</li><li>Para fullblock: restriction.</li><li>Para subtotal: block, unblock o release.</li></ul></td></tr><tr style="border:none;"><td style="border:none;">Definiciones a tener en cuenta:<br/> **chargeback**: aparece cuando se inicia o resuelve un contracargo asociado al pago al que hace referencia.<br/> **dispute**: aparece cuando se inicia o resuelve una mediación o reclamo sobre el pago al que hace referencia. Puede ocurrir antes o después de que el pago se haya liberado como dinero disponible e incluso retirado de la cuenta.<br/>**shipping_return**: aparece cuando se bloquea o desbloquea un pago realizado por devolución express.<br/>**payment**: pago que se libera en alguno de los canales en los que opera el cliente.<br/>**withdrawal**: retiro que se ejecuta sobre el dinero disponible.<br/>**refund**: devolución asociada al pago al que hace referencia.<br/>**tax_payment_ibcf**: percepción de ingresos brutos en Capital Federal, se calcula una vez por mes de acuerdo a las operaciones transaccionadas. Para conciliar por operación, ver el detalle en los Informes de Facturas en MyML.<br/>**tax_payment_ibcf_cancel**: cancelación del impuesto de percepción de ingresos brutos en Capital Federal.<br/> **tax_payment_ibex**: percepción de ingresos brutos por sujeto excedido de régimen simplificado, se calcula una vez por mes de acuerdo a las operaciones transaccionadas. Para conciliar por operación, ver el detalle en los Informes de Facturas en MyML. <br/> **tax_payment_iibb**: percepción de ingresos brutos en provincia de Buenos Aires, se calcula una vez por mes de acuerdo a las operaciones transaccionadas. Para conciliar por operación, ver el detalle en los Informes de Facturas en MyML.<br/> **tax_payment_iibb_cancel**: cancelación del impuesto de percepción de ingresos brutos.<br/> **tax_withdholding**: el cobro de retenciones que no se pudieron ejecutar transaccionales al pago asociado. En Argentina son únicamente retenciones de Ingresos Brutos (las percepciones se debitan como otra operación). En Uruguay son retenciones de IVA. En Colombia son retenciones de IVA, ICA y Fuente según aplique el caso.<br/> **tax_withdholding_cancel**: la cancelación de la retención tax_withdholding.</td></tr></table>|
+| `` | |
+| `` | |
+| `` | |
+| `` | |
+| `` | |
+
+| `` | |
