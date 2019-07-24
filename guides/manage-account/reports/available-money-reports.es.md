@@ -97,9 +97,9 @@ Observa cómo está compuesto el reporte de dinero disponible en este ejemplo pa
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
 
-<table style="border: 1px solid black;">
-  <tr style="border: 1px solid black;">
-    <td style="border: 1px solid black;">
+<table>
+  <tr>
+    <td style="border: 1px solid black;width:50%">
 
 **Importante: diferencias entre retiro parcial y retiro total.**
 
@@ -107,8 +107,11 @@ Cuando retires todo tu dinero disponible, el total del reporte va a coincidir co
 
 Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro. 
      </td>
+     <td ></td>
   </tr>
 </table>
+
+# >Próximos pasos Cards
 
 # Cómo generar tus reportes
 
