@@ -1,12 +1,11 @@
 # ¿Qué es el Reporte de Dinero Disponible? (h1)
 
-En esta página
+ **En esta página**
 
-    Introducción 
-    Casos de uso
-    Cómo usar el reporte
-    Ejemplos
-
+- [Introducción](#introducción) 
+- [Casos de uso](#casos-de-uso)
+- [Cómo usar el reporte](#cómo-usar-el-reporte)
+    + [Ejemplos](#ejemplos)
 
 ## Introducción
 
@@ -113,23 +112,31 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
 
 # >Próximos pasos Cards
 
-# Cómo generar tus reportes
 
-## Vía web
+# Genera tus reportes de Dinero Disponible
 
-Desde tu panel de Mercado Pago, solo podrás programar los reportes por retiro. Seguí estos pasos para hacerlo:
+**En esta página**
 
-1. Iniciá sesión en Mercado Pago
-1. Ve a Informes y de ahí accede a tus Reportes
-1. En Reportes, elige Dinero Disponible.
-1. Una vez dentro de Dinero Disponible, clickea en **‘Generar reporte’**
-1. Selecciona el **período de tiempo** que quieras incluir en el reporte
+- Generación por retiro
+- [Generación vía web](#generacion-via-web)
+- [Generación vía API](#generacion-via-api)
+    + de forma manual
+    + de forma programada
+- Ficha técnica
 
-¡Y listo! Vas a ver que el reporte está **en preparación.** 
+## Generación vía web
 
-Gana tiempo programando la **frecuencia de generación** de reportes. Guarda los ajustes para automatizar cada preparación, ya sea manual o de forma programada.
+Genera tus reportes de Dinero Disponible desde tu panel de Mercado Pago. Solo podrás programar los reportes por retiro. Sigue estos pasos para hacerlo:
 
-## Vía API
+1. <span style="color:blue;">Inicia sesión</span> en Mercado Pago y ve a los Reportes desde la sección de Informes
+1. Ingresa en la sección de Dinero Disponible y haz click en ‘Generar reporte’
+1. Busca los retiros por **período de tiempo** y selecciona el retiro quieras conciliar 
+
+<span style="margin-left:40px">¡Y listo! Vas a ver tu reporte **en preparación.** </span>
+
+También podrás programar la generación de estos reportes por cada retiro automático.
+
+## Generación vía API
 
 ### De forma manual
 
