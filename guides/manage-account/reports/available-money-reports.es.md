@@ -241,7 +241,24 @@ Recibirás como respuesta:
 
 Utilizando el atributo file_name, puedes descargar el reporte desde la siguiente URL:
 
-> GET https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ACCESS_TOKEN
+```curl
+curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ACCESS_TOKEN' 
+```
+
+Recibirás como respuesta:
+
+```json
+DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
+2018-04-17T15:07:53.000-04:00,,,initial_available_balance,,813439.19,0.00,813439.19,0.00,0.00,0.00,0.00,0.00,1,
+2018-04-17T15:07:53.000-04:00,,,release,withdrawal,0.00,813363.45,-813360.45,-3.00,0.00,0.00,0.00,0.00,1,
+2018-04-17T15:11:12.000-04:00,,,release,payment,225.96,0.00,269.00,-43.04,0.00,0.00,0.00,0.00,1,account_money
+2018-04-17T15:18:16.000-04:00,,,release,payment,124.32,0.00,148.00,-23.68,0.00,0.00,0.00,0.00,1,visa
+2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
+2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
+```
+
+**Response status code: 200 OK**
+
 
 ### De forma programada
 
@@ -249,17 +266,87 @@ Utilizando el atributo file_name, puedes descargar el reporte desde la siguiente
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo scheduled en la configuración a true:
 
-> POST https://api.mercadopago.com/v1/account/bank_report/schedule
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ACCESS_TOKEN' \
+    -d '{
+        "user_id": USER-ID
+    }'
+``` 
+
+Recibirás como respuesta:
+
+```json
+{
+    "id": 2541818,
+    "user_id": USER-ID,
+    "begin_date": "2019-07-01T06:00:00Z",
+    "end_date": "2019-08-01T06:00:00Z",
+    "created_from": "schedule",
+    "is_test": false,
+    "status": "pending",
+    "report_type": "bank",
+    "generation_date": "2019-08-01T06:00:00.000Z",
+    "report_id": null,
+    "last_modified": "2019-07-24T13:45:33.479-04:00",
+    "retries": 0
+}
+```
+**Response status code: 200 OK**
+
 
 Detiene la generación automática del reporte. Actualiza el atributo scheduled en la configuración a false:
 
-> DELETE https://api.mercadopago.com/v1/account/bank_report/schedule
+```curl
+curl -X DELETE \
+  -H 'accept: application/json' \
+  -H 'content-type: application/json' \
+  'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ACCESS_TOKEN' \
+  -d '{"user_id": USER-ID}'
+```
+Recibirás como respuesta:
+
+```json
+{
+    "id": 2538023,
+    "begin_date": "2019-07-24T06:00:00Z",
+    "created_from": "schedule",
+    "end_date": "2019-07-25T06:00:00Z",
+    "generation_date": "2019-07-25T02:00:00.000-04:00",
+    "is_test": false,
+    "last_modified": "2019-07-24T13:50:10.719-04:00",
+    "report_id": null,
+    "report_type": "bank",
+    "retries": 0,
+    "status": "deleted",
+    "user_id": USER-ID
+}
+```
+**Response status code: 200 OK**
+
 
 2. Descarga
 
 Descarga el archivo con este comando: 
 
-> GET https://api.mercadopago.com/v1/account/bank_report/:file_name
+```curl
+curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ACCESS_TOKEN' 
+```
+Recibirás como respuesta:
+
+```json
+DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
+2018-04-17T15:07:53.000-04:00,,,initial_available_balance,,813439.19,0.00,813439.19,0.00,0.00,0.00,0.00,0.00,1,
+2018-04-17T15:07:53.000-04:00,,,release,withdrawal,0.00,813363.45,-813360.45,-3.00,0.00,0.00,0.00,0.00,1,
+2018-04-17T15:11:12.000-04:00,,,release,payment,225.96,0.00,269.00,-43.04,0.00,0.00,0.00,0.00,1,account_money
+2018-04-17T15:18:16.000-04:00,,,release,payment,124.32,0.00,148.00,-23.68,0.00,0.00,0.00,0.00,1,visa
+2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
+2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
+```
+**Response status code: 200 OK**
+
 
 ### También puedes ajustar la configuración del reporte vía API, usa los siguientes comandos para cada caso: 
 
