@@ -13,6 +13,9 @@ use:
 - collector
 - operation_type
 - payer
+ - id
+ - identification
+  - number
 - binary_mode
 - live_mode
 - order
@@ -35,7 +38,7 @@ use:
 - statement_descriptor
 - installments
 - notification_url
-- refunds 
+- refunds
 errors:
 - 404 NOT_FOUND:
   - '2000':
