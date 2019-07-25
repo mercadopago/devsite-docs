@@ -85,8 +85,8 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 
 1. Descargue el módulo de Mercado Pago
 
-  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart/tree/master/v2.3)
-  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart/tree/master/v3.x)
+  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2)
+  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3)
 
 2. Copie las carpetas **admin**, **catalog** y **image** a la raíz de su instalación de OpenCart. Asegúrese de mantener la estructura de carpetas OpenCart intactas.
 
