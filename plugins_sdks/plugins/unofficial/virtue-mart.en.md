@@ -90,16 +90,8 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-  You can obtain your **Client_id** and **Client_secret**, accordingly to your country, in the following links:
-
-  * Argentina: https://www.mercadopago.com/mla/herramientas/aplicaciones
-  * Brazil: https://www.mercadopago.com/mlb/ferramentas/aplicacoes
-  * Chile: https://www.mercadopago.com/mlc/herramientas/aplicaciones
-  * Colombia: https://www.mercadopago.com/mco/herramientas/aplicaciones
-  * Mexico: https://www.mercadopago.com/mlm/herramientas/aplicaciones
-  * Peru: https://www.mercadopago.com/mpe/account/credentials?type=basic
-  * Uruguay: https://www.mercadopago.com/mlu/herramientas/aplicaciones
-
+  You can obtain your **Client_id** and **Client_secret**, accordingly to your country,[in the following link](https://www.mercadopago.com/mla/account/credentials).
+  
 5. Checkout settings. <br/>
 
   ![Settings checkout](/images/virtuemart-checkout_settings.png) <br />

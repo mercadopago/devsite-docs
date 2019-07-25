@@ -13,9 +13,6 @@ use:
 - collector
 - operation_type
 - payer
- - id
- - identification
-  - number
 - binary_mode
 - live_mode
 - order
