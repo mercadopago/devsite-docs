@@ -141,7 +141,7 @@ function guessingPaymentMethod(event) {
 function setPaymentMethodInfo(status, response) {
     if (status == 200) {
         const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
-        
+
         if (paymentMethodElement) {
             paymentMethodElement.value = response[0].id;
         } else {
@@ -161,14 +161,14 @@ function setPaymentMethodInfo(status, response) {
 Para obtener el medio de pago, utiliza el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este acepta dos parámetros: un objeto y una función de _callback_.
 
 ```javascript
-Mercadopago.getPaymentMethod({
+window.Mercadopago.getPaymentMethod({
     "bin": bin
 }, setPaymentMethodInfo);
 ```
 
 #### Capturar los datos
 
-Antes de enviar el formulario, debes capturar el evento `submit` y utilizar el método `Mercadopago.createToken(form, sdkRespondeHandler);`.
+Antes de enviar el formulario, debes capturar el evento `submit` y utilizar el método `window.Mercadopago.createToken(form, sdkRespondeHandler);`.
 
 ```javascript
 doSubmit = false;
@@ -273,7 +273,7 @@ Para realizar el pago solamente debes realizar un _API call_:
 ```
 ```java
 ===
-El valor de **getStatus()** indicara el estado de un pago (**approved**, **rejected or **in_process**). 
+El valor de **getStatus()** indicara el estado de un pago (**approved**, **rejected or **in_process**).
 ===
 
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
@@ -340,7 +340,7 @@ payment.payer = {
 # Save and posting the payment
 payment.save()
 
-``` 
+```
 ```csharp
 ===
 El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected or **in_process**).
@@ -601,7 +601,7 @@ payment.Save();
                 "street_name": "Street",
                 "street_number": 123,
                 "zip_code": "5700"
-            } 
+            }
         },
         "shipments": {
             "receiver_address": {
