@@ -110,7 +110,12 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
   </tr>
 </table>
 
-# >Próximos pasos Cards
+
+Próximos pasos
+Genera tus reportes                   [Requerido]
+Glosario                                [Recomendado]
+Sigue el paso a paso para crear tus reportes de forma manual o programada.
+Conoce qué significa cada término y cómo está compuesta cada columna del reporte. 
 
 
 # Genera tus reportes de Dinero Disponible
@@ -678,7 +683,7 @@ request(options, callback);
 
 ]]]
 
-# Ficha técnica
+## Ficha técnica
 
 |              |                |
 | ------------ |	--------    |
@@ -697,7 +702,19 @@ request(options, callback);
 | `Selección de fechas vía web ` | <b>Debe basarse en el timezone de la cuenta del usuario.</b><br/>Por ejemplo, a la cuenta de usuario registrada en Brasil le corresponde el timezone de Sao Paulo.|
 
 
-# Glosario
+Próximos pasos
+
+Reporte de Dinero Disponible            [Introducción]
+Glosario                           [Recomendado]
+Qué es y para qué sirve el reporte de Dinero Disponible. Descubre ejemplos y casos de uso.
+Conoce qué significa cada término y cómo está compuesta cada columna del reporte. 
+
+
+## Glosario
+
+ **En esta página**
+
+- Glosario
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
@@ -717,7 +734,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | `TAXES_AMOUNT` | Impuestos cobrados por retenciones de Ingresos Brutos. |
 | `COUPON_AMOUNT` | Monto del cupón de descuento. **Solo se descuenta del monto bruto (GROSS_AMOUNT) si está provisto por el vendedor**.|
 | `INSTALLMENTS` | Cantidad de cuotas en las que se realizó la operación. |
-| `PAYMENT METHOD` | Medio de pago. Puede ser: <br/>visamaster<br/> amex<br/> naranja<br/> nativa<br/> tarshop<br/> cencosud<br/> cabal<br/> argencard<br/> diners<br/> pagofacil<br/> rapipago<br/> redlink<br/> bapropago<br/> account_money (Pago con dinero en la cuenta de Mercado Pago).|
+| `PAYMENT METHOD` | Medio de pago. Puede ser: <br/>visa<br/>master<br/> amex<br/> naranja<br/> nativa<br/> tarshop<br/> cencosud<br/> cabal<br/> argencard<br/> diners<br/> pagofacil<br/> rapipago<br/> redlink<br/> bapropago<br/> account_money (Pago con dinero en la cuenta de Mercado Pago).|
 | `TAX_DETAIL` | Descripción del impuesto retenido por operación en el TAXES_AMOUNT. Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy<br/> |
 | `TAX_AMOUNT_TELCO` | Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto. |
 | `TRANSACTION_APPROVAL_DATE` | Fecha de aprobación de la operación. |
@@ -727,3 +744,10 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | `STORE_ID` | ID de sucursal si el pago se realiza a través de un comercio físico. |
 | `STORE_NAME` | Nombre de sucursal para el pago realizado a través de un comercio físico. |
 | `EXTERNAL_STORE_ID` | ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. |
+
+
+Próximos pasos
+Reporte de Dinero Disponible         [Introducción]
+Genera tus reportes                [Requerido]
+Qué es y para qué sirve el reporte de Dinero Disponible. Descubre ejemplos y casos de uso.
+Sigue el paso a paso para crear tus reportes de forma manual o programada.
