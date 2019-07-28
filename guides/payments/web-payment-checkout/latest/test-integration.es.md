@@ -118,18 +118,6 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 - EXPI: Rechazado por problema con la fecha de expiración.
 - FORM: Rechazado por error en formulario.
 
-Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
-
-- APRO: Pago aprobado.
-- CONT: Pago pendiente.
-- OTHE: Rechazado por error general.
-- CALL: Rechazado con validación para autorizar.
-- FUND: Rechazado por monto insuficiente.
-- SECU: Rechazado por código de seguridad inválido.
-- EXPI: Rechazado por problema con la fecha de expiración.
-- FORM: Rechazado por error en formulario.
-
-
 ## Comenzar a recibir pagos
 
 Para empezar a cobrar, debes completar el formulario <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Quiero ir a producción</a>.
