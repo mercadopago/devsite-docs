@@ -110,14 +110,6 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
   </tr>
 </table>
 
-
-Próximos pasos
-Genera tus reportes                   [Requerido]
-Glosario                                [Recomendado]
-Sigue el paso a paso para crear tus reportes de forma manual o programada.
-Conoce qué significa cada término y cómo está compuesta cada columna del reporte. 
-
-
 # Genera tus reportes de Dinero Disponible
 
 **En esta página**
@@ -703,14 +695,6 @@ request(options, callback);
 | Selección de fechas vía web  | <b>Debe basarse en el timezone de la cuenta del usuario.</b><br/>Por ejemplo, a la cuenta de usuario registrada en Brasil le corresponde el timezone de Sao Paulo.|
 
 
-Próximos pasos
-
-Reporte de Dinero Disponible            [Introducción]
-Glosario                           [Recomendado]
-Qué es y para qué sirve el reporte de Dinero Disponible. Descubre ejemplos y casos de uso.
-Conoce qué significa cada término y cómo está compuesta cada columna del reporte. 
-
-
 ## Glosario
 
  **En esta página**
@@ -745,10 +729,3 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | STORE_ID | ID de sucursal si el pago se realiza a través de un comercio físico. |
 | STORE_NAME | Nombre de sucursal para el pago realizado a través de un comercio físico. |
 | EXTERNAL_STORE_ID | ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. |
-
-
-Próximos pasos
-Reporte de Dinero Disponible         [Introducción]
-Genera tus reportes                [Requerido]
-Qué es y para qué sirve el reporte de Dinero Disponible. Descubre ejemplos y casos de uso.
-Sigue el paso a paso para crear tus reportes de forma manual o programada.
