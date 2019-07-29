@@ -45,7 +45,7 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-access-token= “PROD_ACCESS_TOKEN”
+   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="$$id$$">
   </script>
 </form>
@@ -54,7 +54,7 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-access-token= “PROD_ACCESS_TOKEN”
+   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="${preference.id}">
   </script>
 </form>
@@ -63,7 +63,7 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-access-token= “PROD_ACCESS_TOKEN”
+   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="%= @init_point %>">
   </script>
 </form>
@@ -72,7 +72,7 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-access-token= “PROD_ACCESS_TOKEN”
+   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="@Html.DisplayFor(model => model.id)">
   </script>
 </form>
