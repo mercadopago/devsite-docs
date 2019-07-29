@@ -36,7 +36,7 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-access-token= “PROD_ACCESS_TOKEN”
+   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="<?php echo $preference->id; ?>">
   </script>
 </form>
