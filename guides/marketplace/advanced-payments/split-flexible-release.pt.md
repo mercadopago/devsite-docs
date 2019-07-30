@@ -17,7 +17,7 @@ Essa liberação deve ser definida em cada pagamento com o campo `money_release_
 >
 > Nota
 >
-> Se esse campo não é enviado, se define por padrão o número máximo de dias do intervalo de libertação configurado no Marketplace.
+> Se esse campo não é enviado, se define por padrão o número máximo de dias do intervalo de liberação configurado no Marketplace.
 
 ```json
 {
