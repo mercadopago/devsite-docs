@@ -310,18 +310,11 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 
 ### Próximos pasos
 
-> BUTTON_LEFT
+> LEFT_BUTTON
 >
 > Otras funcionalidades
 >
 > Configura tus pago y adapta Web Checkout a tu negocio.
 >
 > [Configurations](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
-
-> BUTTON_RIGHT
 >
-> Personalizaciones
->
-> Adapta el estilo de tu marca en la experiencia de compra.
->
-> [customizations](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
