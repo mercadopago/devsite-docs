@@ -1,7 +1,7 @@
-# Prestashop
+# Prestashop 1.6
 
 
-### Mercado Pago Module (Prestashop 1.6.x - 1.7.x)
+### Mercado Pago Module (Prestashop 1.6.x)
 
 * [Funcionalidades](#bookmark_Funcionalidades)
 * [Requisitos](#bookmark_Requisitos)
@@ -60,54 +60,52 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 | Plugin Version                                              | Status                   | Versões Compatíveis |
 |-------------------------------------------------------------|--------------------------|---------------------|
 | [v1.6.x](https://github.com/mercadopago/cart-prestashop-6/) | Stable (Current Version) | Prestashop v1.6.x   |
-| [v1.7.x](https://github.com/mercadopago/cart-prestashop-7/) | Stable (Current Version) | Prestashop v1.7.x   |
 
   
 ## Instalação
 
-1. Baixe o arquivo **mercadopago.zip** em nosso Github de acordo com a versão do Prestashop com a qual trabalha.
+1) Baixe o arquivo **mercadopago.zip** em nosso Github de acordo com a versão do Prestashop com a qual trabalha.
 
 > NOTE
 >
 > DOWNLOAD
 >
 > Módulo Mercado Pago para Prestashop [1.6](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip).
-> Módulo Mercado Pago para Prestashop [1.7](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip).
 
-2. Acessar o painel administrativo do Prestashop em **MELHORIAS** -> **Módulos** -> **Módulos e Serviços**, clicar no botão **"Enviar um Módulo"** e selecionar o arquivo **mercadopago.zip** baixado anteriormente.
+2) Acessar o painel administrativo do Prestashop em **MELHORIAS** -> **Módulos** -> **Módulos e Serviços**, clicar no botão **"Enviar um Módulo"** e selecionar o arquivo **mercadopago.zip** baixado anteriormente.
 
-3. Muito bem! O módulo do Mercado Pago foi instalado com sucesso.
+3) Muito bem! O módulo do Mercado Pago foi instalado com sucesso.
 
-![installing the Mercado Pago in Prestashop](/images/prestashop_select_mp_file.gif)
+![Instalação](/images/prestashop_select_mp_file.gif)
 
 
 ## Configuração
 
-1. Após a instalação do módulo, se direcione para **MELHORIAS** -> **Módulos** -> **Módulos e Serviços** e clique em **Configurar** no Plugin do Mercado Pago.
+1) Após a instalação do módulo, se direcione para **MELHORIAS** -> **Módulos** -> **Módulos e Serviços** e clique em **Configurar** no Plugin do Mercado Pago.
 
-2. Na tela **BASIC SETTINGS** será solicitado os dados **Client ID** e **Client Secret**. Esses dados são as credenciais da sua conta do Mercado Pago e podem ser obtidos através do seguinte link: [Obtenha suas credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
+2) Na tela **BASIC SETTINGS** será solicitado os dados **Client ID** e **Client Secret**. Esses dados são as credenciais da sua conta do Mercado Pago e podem ser obtidos através do seguinte link: [Obtenha suas credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
 
-![Configuring client id and client secret in Prestashop](/images/prestashop_credentials_configuration.gif)
+![Configuração](/images/prestashop_credentials_configuration.gif)
 
 > Existem dois tipos de credenciais:
 > * **Modo Sandbox**: Essas credenciais são utilizadas para testes.
 > * **Modo Produção**: Essas credenciais são utilizadas para compras em produção.
 
-3. Agora na tela **PAYMENT SETTINGS** mantenha Checkout Standard como ativo para utilizar o Checkout Redirecionado do Mercado Pago.
+3) Agora na tela **PAYMENT SETTINGS** mantenha Checkout Standard como ativo para utilizar o Checkout Redirecionado do Mercado Pago.
 
-![Payments settings redirected checkout](/images/prestashop_checkout_standard.png)
+![Checkout Standard](/images/prestashop_checkout_standard.png)
 
-4. Em PAYMENT METHOD você pode habilitar as formas de pagamento com as quais irá trabalhar:
+4) Em PAYMENT METHOD você pode habilitar as formas de pagamento com as quais irá trabalhar:
 
-![Enabling payment methods in prestashop](/images/prestashop_payment_method.png)
+![Payment Method](/images/prestashop_payment_method.png)
 
-5. Muito bem! Você habilitou pagamentos via Checkout Standard (redirecionado)!
+5) Muito bem! Você habilitou pagamentos via Checkout Standard (redirecionado)!
 
 ### Configuração Mercado Envios
 
 > IMPORTANTE: O Mercado Envios funciona com o Checkout Standard (redirecionado). Ao utilizá-lo os demais meios de pagamentos serão desabilitados.
 
-1. Primeiro, você precisa [habilitar o Mercado Envios na sua conta](http://shipping.mercadopago.com.ar/optin/doOptin). 
+1) Primeiro, você precisa [habilitar o Mercado Envios na sua conta](http://shipping.mercadopago.com.ar/optin/doOptin). 
 
 > NOTE
 >
@@ -116,13 +114,13 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 > * Sua conta do Mercado Pago precisa ser do tipo **Vendedor**.
 > * O produto enviado deve ter suas dimensões (largura, altura, comprimento e peso) adequadamente configurados e dentro das [regras e limites suportados](https://www.correios.com.br/a-a-z/limites-de-dimensoes-e-peso) pelo país especificado.
 
-2. Para habilitar no módulo, você precisa apenas ativa-lo acessando o painel administrativo do Prestashopp em **MELHORIAS -> Módulos -> Módulos e Serviços** e clicando em **Configurar** no módulo do Mercado Pago:
+2) Para habilitar no módulo, você precisa apenas ativa-lo acessando o painel administrativo do Prestashopp em **MELHORIAS -> Módulos -> Módulos e Serviços** e clicando em **Configurar** no módulo do Mercado Pago:
 
-3. Em **MERCADO ENVIOS** é possível configurar um texto para ser exibido na entrega através do campo **Custom text to use with delivery**. Para realizar a ativação marque o campo **Enable Mercado envios** como **YES**.
+3) Em **MERCADO ENVIOS** é possível configurar um texto para ser exibido na entrega através do campo **Custom text to use with delivery**. Para realizar a ativação marque o campo **Enable Mercado envios** como **YES**.
 
-![Activating Mercado Envios in Prestashop](/images/prestashop_mercado_envios.png)
+![Habilitar Mercado Envios](/images/prestashop_mercado_envios.png)
 
-4. Muito bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
+4) Muito bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
 
 
 ## Notificações

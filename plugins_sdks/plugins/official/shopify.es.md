@@ -11,11 +11,12 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 |---------------------------------------------------------- |-------------------|
 | Pago con tarjeta de crédito                               | ✔                 |
 | Otros medios de pago                                      | ✔                 |
-| Pago con dos medios de Pago 		                        	| ✔               	|
+| Pago con dos medios de Pago 		                      	| ✔               	|
 | Interfaz provista por Mercado Pago                        | ✔                 |
 | Calculadora de cuotas                                     | ✔                 |
 | IPN y webhooks                                            | ✔                 |
 | Descuentos con cupones de Mercado Pago                    | ✔                 |
+
 
 ### Web Checkout
 
@@ -27,6 +28,7 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 * Acepta pagos con ticket, dinero en cuenta de Mercado Pago, tarjeta de crédito y débito.
 * Acepta cupones de descuento
 
+
 ## Configuración
 
 <center>
@@ -35,16 +37,16 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 1. En su panel de administración de Shopify, vaya al menú **Settings > Payments**.
 
-  ![Configurar Mercado Pago Shopify](/images/shopify-config-1.gif)
+  ![Config](/images/shopify-config-1.gif)
 
 2. En **Accept credit cards**, seleccione **Mercado Pago**.
 3. Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-  ![Configurar client id y client secret Mercado Pago Shopify](/images/shopify-config-2.gif)
+  ![Config](/images/shopify-config-2.gif)
 
 4. Haga clic en el botón **Activate** para guardar.
 
-  ![Guardando toda la configuración Mercado Pago Shopify](/images/shopify-config-3.gif)
+  ![Config](/images/shopify-config-3.gif)
 
 5. ¡Listo! **Mercado Pago** fue instalado y configurado.
 
