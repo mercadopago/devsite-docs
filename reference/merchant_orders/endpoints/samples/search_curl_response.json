@@ -1,0 +1,162 @@
+{
+  "elements": [
+    {
+      "id": 1111111111,
+      "status": "closed",
+      "external_reference": "4367-83b1-d32c827e8cc3",
+      "preference_id": "218b-4500-8f3a-2633957d6ef7",
+      "payments": [
+        {
+          "id": 11111111111,
+          "transaction_amount": 2,
+          "total_paid_amount": 2,
+          "shipping_cost": 0,
+          "currency_id": "ARS",
+          "status": "refunded",
+          "status_detail": "refunded",
+          "operation_type": "regular_payment",
+          "date_approved": "2019-07-08T17:36:13.000-04:00",
+          "date_created": "2019-07-08T17:36:11.000-04:00",
+          "last_modified": "2019-07-08T17:36:44.000-04:00",
+          "amount_refunded": 2
+        }
+      ],
+      "shipments": [],
+      "collector": {
+        "id": 448578326,
+        "email": "X@gmail.com",
+        "nickname": "XX"
+      },
+      "marketplace": "NONE",
+      "notification_url": null,
+      "date_created": "2019-07-08T21:36:04.877+00:00",
+      "last_updated": "2019-07-08T21:36:49.392+00:00",
+      "sponsor_id": null,
+      "shipping_cost": 0,
+      "total_amount": 2,
+      "site_id": "MLA",
+      "paid_amount": 2,
+      "refunded_amount": 2,
+      "payer": {
+        "id": 1,
+        "email": null
+      },
+      "items": [
+        {
+          "id": "",
+          "category_id": null,
+          "currency_id": "ARS",
+          "description": "",
+          "picture_url": "https://mla-s1-p.mlstatic.com/O.jpg",
+          "title": "Producto",
+          "quantity": 1,
+          "unit_price": 2
+        }
+      ],
+      "cancelled": false,
+      "additional_info": "",
+      "application_id": null
+    },
+    {
+      "id": 1111111129,
+      "status": "opened",
+      "external_reference": "08c6-43ee-9b09-2535cbbc91b7",
+      "preference_id": "fd18-4972-a62f-127de3979762",
+      "payments": [],
+      "shipments": [],
+      "collector": {
+        "id": 448578326,
+        "email": "X@gmail.com",
+        "nickname": "XX"
+      },
+      "marketplace": "NONE",
+      "notification_url": null,
+      "date_created": "2019-07-08T21:34:52.489+00:00",
+      "last_updated": "2019-07-08T21:34:52.489+00:00",
+      "sponsor_id": null,
+      "shipping_cost": 0,
+      "total_amount": 2,
+      "site_id": "MLA",
+      "paid_amount": 0,
+      "refunded_amount": 0,
+      "payer": {
+        "id": 123121212,
+        "email": null
+      },
+      "items": [
+        {
+          "id": "",
+          "category_id": null,
+          "currency_id": "ARS",
+          "description": "",
+          "picture_url": "https://mla-s1-p.mlstatic.com/O.jpg",
+          "title": "Producto",
+          "quantity": 1,
+          "unit_price": 2
+        }
+      ],
+      "cancelled": false,
+      "additional_info": "",
+      "application_id": null
+    },
+    {
+      "id": 112201120149,
+      "status": "closed",
+      "external_reference": "779f-4b10-a559-6a63333f6f9a",
+      "preference_id": "066c-4fc9-a107-eb3883cb7ebe",
+      "payments": [
+        {
+          "id": 45294412314218,
+          "transaction_amount": 2,
+          "total_paid_amount": 2,
+          "shipping_cost": 0,
+          "currency_id": "ARS",
+          "status": "refunded",
+          "status_detail": "refunded",
+          "operation_type": "regular_payment",
+          "date_approved": "2019-07-08T17:34:25.000-04:00",
+          "date_created": "2019-07-08T17:34:23.000-04:00",
+          "last_modified": "2019-07-08T17:35:47.000-04:00",
+          "amount_refunded": 2
+        }
+      ],
+      "shipments": [],
+      "collector": {
+        "id": 448578326,
+        "email": "X@gmail.com",
+        "nickname": "XX"
+      },
+      "marketplace": "NONE",
+      "notification_url": null,
+      "date_created": "2019-07-08T21:34:19.076+00:00",
+      "last_updated": "2019-07-08T21:35:51.731+00:00",
+      "sponsor_id": null,
+      "shipping_cost": 0,
+      "total_amount": 2,
+      "site_id": "MLA",
+      "paid_amount": 2,
+      "refunded_amount": 2,
+      "payer": {
+        "id": 35383315761,
+        "email": null
+      },
+      "items": [
+        {
+          "id": "",
+          "category_id": null,
+          "currency_id": "ARS",
+          "description": "",
+          "picture_url": "https://mla-s1-p.mlstatic.com/O.jpg",
+          "title": "Producto",
+          "quantity": 1,
+          "unit_price": 2
+        }
+      ],
+      "cancelled": false,
+      "additional_info": "",
+      "application_id": null
+    }
+  ],
+  "next_offset": 3,
+  "total": 3
+}
