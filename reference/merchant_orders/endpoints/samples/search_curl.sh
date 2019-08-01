@@ -1,2 +1,2 @@
 curl -X GET \
- 'https://api.mercadopago.com/merchant_orders?access_token=APP_USR-7274202462567942-X-X-448578326'
+ 'https://api.mercadopago.com/merchant_orders?access_token=APP_USR-7274202462567942-X-X-448578326&status=status_val&preference_id=preference_id_val&application_id=application_id_val&product_id=product_id_val&payer_id=payer_id_val&sponsor_id=sponsor_id_val&external_reference=external_reference_val&site_id=site_id_val&marketplace=marketplace_val&date_created_from=2019-03-05T09:30:00.000-01:00&date_created_to=2019-03-07T10:00:00.000-01:last_updated_from=2019-03-05T09:30:00.000-01:00&last_updated_to=2019-03-07T10:00:00.000-01:00&items=items_title_val&limit=50&offset=0'
