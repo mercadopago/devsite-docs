@@ -48,10 +48,10 @@ Usa el Reporte de Dinero Disponible en estos casos:
 
 Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
 
-[Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
+![Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
 <p style="text-align:center;">Ejemplo en Excel </p>
 
-[Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
+![Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
 <p style="text-align:center;">Ejemplo en Open Office </p>
 
 
@@ -93,7 +93,7 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 
 Observa cómo está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-[Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples.png)
+![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
 
@@ -101,13 +101,12 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
   <tr>
     <td style="border: 1px solid black;width:70%">
 
-**Importante: diferencias entre retiro parcial y retiro total.**
+Importante: diferencias entre retiro parcial y retiro total.**
 
 Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir. 
 
 Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro. 
      </td>
-     <td style="border: none;background:none;"></td>
   </tr>
 </table>
 
