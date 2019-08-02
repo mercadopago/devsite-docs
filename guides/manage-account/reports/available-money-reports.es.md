@@ -18,7 +18,7 @@ Accede a tus reportes desde la sección de Informes en tu cuenta en Mercado Pago
 
 Ten en cuenta que la generación del reporte lleva un tiempo, es decir, que no siempre estará listo al instante y verás el estado “En preparación”. Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas: 
 * Desde un link de descarga que te enviaremos por mail
-* Desde tu cuenta de Mercado Pago, en <span style="color:blue">Reportes de Dinero Disponible.</span> 
+* Desde tu cuenta de Mercado Pago, en Reportes de Dinero Disponible.
 
 Es importante aclarar que el valor total del reporte no siempre coincide con los valores del reporte de Dinero en Cuenta o los reportes de facturación. Dependiendo de [los plazos y tasas que elijas](https://www.mercadopago.com.ar/settings/release-options), el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Para saber la fecha exacta en que estará disponible el dinero de una operación, revisa el detalle de tus [cobros acreditados](https://www.mercadopago.com.ar/activities/balance). 
  

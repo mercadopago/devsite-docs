@@ -1,7 +1,17 @@
+# Reporte de dinero en cuenta (_Settlement Report_)
 
-#### Reporte de dinero en cuenta (_Settlement Report_)
+Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron el balance de tu cuenta de Mercado Pago para un período específico.
 
-##### 1. Generación:
+
+## ¿Cómo se usa?
+
+Puede generarse en forma manual (indicando un período de fechas específicas) o de forma programada.
+
+Consulta el [glosario de los reportes](https://www.mercadopago.com.ar/ayuda/glosario-reporte-conciliacion_2118).
+
+### Uso manual
+
+#### 1. Generación:
 Realiza el _POST_ a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 ```php
@@ -26,7 +36,7 @@ $mp->post($request);
 
 Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica.
 
-##### 2. Búsqueda:
+#### 2. Búsqueda:
 Para ver si se terminó de generar deberás consultar la API de esta manera:
 
 ```php
@@ -64,7 +74,7 @@ Recibirás como respuesta:
 ]
 ```
 
-##### 3. Descarga
+#### 3. Descarga
 Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
 	`https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ACCESS_TOKEN`
@@ -74,7 +84,7 @@ Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguien
 
 Otra forma de utilizar los reportes de conciliación es haciendo la generación de forma automática.
 
-##### 1. Generación:
+#### 1. Generación:
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `scheduled` en la configuración a `true`:
 
@@ -84,7 +94,7 @@ Detiene la generación automática del reporte. Actualiza el atributo `scheduled
 
 	`DELETE` /v1/account/settlement_report/schedule
 
-##### 2. Descarga
+#### 2. Descarga
 
 Realiza la descarga del archivo especificado:
 
