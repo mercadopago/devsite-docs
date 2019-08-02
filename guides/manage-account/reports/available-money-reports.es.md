@@ -4,7 +4,7 @@
 
 - [Introducción](#introducción) 
 - [Casos de uso](#casos-de-uso)
-- [Cómo usar el reporte](#cómo-usar-el-reporte)
+- [Cómo usar el reporte](#cómo-usar-el-reporte) 
     + [Ejemplos](#ejemplos)
 
 ## Introducción
@@ -48,11 +48,10 @@ Usa el Reporte de Dinero Disponible en estos casos:
 
 Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
 
-<p style="text-align:center;"><img src="../../../images/manage-account/reports/ms-excel-1.png" srcset="../../../images/manage-account/reports/ms-excel-2.png 2x" /></p>
-<p style="text-align:center;">Ejemplo en Excel</p>
+[Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
 
-<p style="text-align:center;"><img src="../../../images/manage-account/reports/open-office-1.png" srcset="../../../images/manage-account/reports/open-office-2.png 2x" /></p>
-<p style="text-align:center;">Ejemplo en Open Office</p>
+[Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
+ 
 
 El reporte contiene 4 secciones:
 1. Balance Inicial (Initial Available Balance)

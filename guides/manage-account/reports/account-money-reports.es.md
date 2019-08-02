@@ -67,7 +67,7 @@ Recibirás como respuesta:
 ##### 3. Descarga
 Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
-	https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ACCESS_TOKEN
+	`https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ACCESS_TOKEN`
 
 
 ### Uso programado
@@ -78,14 +78,14 @@ Otra forma de utilizar los reportes de conciliación es haciendo la generación 
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `scheduled` en la configuración a `true`:
 
-	POST /v1/account/settlement_report/schedule
+	`POST` /v1/account/settlement_report/schedule
 
 Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
 
-	DELETE /v1/account/settlement_report/schedule
+	`DELETE` /v1/account/settlement_report/schedule
 
-### 2. Descarga
+##### 2. Descarga
 
 Realiza la descarga del archivo especificado:
 
-	GET /v1/account/settlement_report/:file_name
+	`GET` /v1/account/settlement_report/:file_name
