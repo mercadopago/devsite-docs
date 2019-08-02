@@ -49,9 +49,11 @@ Usa el Reporte de Dinero Disponible en estos casos:
 Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
 
 [Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
+<p style="text-align:center;">Ejemplo en Excel </p>
 
 [Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
- 
+<p style="text-align:center;">Ejemplo en Open Office </p>
+
 
 El reporte contiene 4 secciones:
 1. Balance Inicial (Initial Available Balance)
