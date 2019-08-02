@@ -99,14 +99,16 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 
 <table>
   <tr>
-    <td style="border: 1px solid black;width:70%">
+    <td style="border: 1px solid black;width:70%;background:none;">
 
-Importante: diferencias entre retiro parcial y retiro total.**
+<span style="font-weight:bold">Importante: diferencias entre retiro parcial y retiro total.</span>
 
 Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir. 
 
 Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro. 
      </td>
+     <td style="border: none;background:none;width:30%"></td>
+
   </tr>
 </table>
 
