@@ -98,7 +98,7 @@ Observa cómo está compuesto el reporte de dinero disponible en este ejemplo pa
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
 
 <table>
-  <tr>
+  <tr style="background:none;">
     <td style="border: 1px solid black;width:70%;background:none;">
 
 <span style="font-weight:bold">Importante: diferencias entre retiro parcial y retiro total.</span>
