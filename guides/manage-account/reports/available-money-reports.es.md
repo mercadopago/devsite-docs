@@ -65,7 +65,7 @@ Verás una sección de **subtotales** por cada bloque y, finalmente, el **result
 
 <p style="text-align:center;">Subtotal release - Subtotal block + Subtotal unblock = resultado total</p>
 
-Revisa el [Glosario completo](https://www.mercadopago.com.ar/ayuda/_2118)
+Revisa el [Glosario completo](#glosario)
 
 Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
@@ -127,7 +127,7 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
 
 Genera tus reportes de Dinero Disponible desde tu panel de Mercado Pago. Solo podrás programar los reportes por retiro. Sigue estos pasos para hacerlo:
 
-1. <span style="color:blue;">Inicia sesión</span> en Mercado Pago y ve a los Reportes desde la sección de Informes
+1. [Inicia sesión](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user) en Mercado Pago y ve a los Reportes desde la sección de Informes
 1. Ingresa en la sección de Dinero Disponible y haz click en ‘Generar reporte’
 1. Busca los retiros por **período de tiempo** y selecciona el retiro quieras conciliar 
 
@@ -143,7 +143,7 @@ Ganá tiempo programando la **frecuencia de generación** del reporte de Dinero 
 
 Genera tus reportes de forma manual configurando estas tres instancias: 
 
-1. **Generación**
+#### 1. **Generación**
 
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
@@ -195,7 +195,7 @@ request(options, callback);
 
 Recibirás como respuesta un HTTP STATUS 202 (Accepted), y el reporte se generará de manera asincrónica.
 
-2. **Búsqueda**
+#### 2. **Búsqueda**
 
 Consulta la API de esta forma para ver si la generación de reportes quedó lista:
 
@@ -251,7 +251,7 @@ Recibirás como respuesta un HTTP STATUS 200 (OK):
 ]
 ```
 
-3. **Descarga**
+#### 3. **Descarga**
 
 Utilizando el atributo file_name, puedes descargar el reporte desde la siguiente URL:
 
@@ -273,7 +273,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 ### De forma programada
 
-1. **Generación**
+#### 1. **Generación**
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *scheduled* en la configuración a *true*: ([Ver](#actualizar-configuración)):
 
@@ -336,7 +336,7 @@ Recibirás como respuesta un HTTP STATUS 200 (OK)
 ```
 
 
-2. **Descarga**
+#### 2. **Descarga**
 
 Descarga el archivo con este comando: 
 
@@ -357,7 +357,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 ```
 
 
-3. **Configuración**
+#### 3. **Configuración**
 
 ### Consultar configuración 
 
