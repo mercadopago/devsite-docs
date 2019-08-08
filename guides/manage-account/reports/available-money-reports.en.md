@@ -43,3 +43,51 @@ Use the Available Balance Report in these cases:
     + The detail of the events that make up an automatic or manual withdrawal, total or partial.
     + The detail of disputes, refunds, shipping, chargebacks, taxes and other operations that affect the available balance.
     + The detail of the installments released and the “In installments” operations.
+
+
+## How to use the report
+
+To read the report we recommend using a .csv file and that you review the character settings. It must be in UTF-8 format. Check it in the settings of your spreadsheet (Excel, LibreOffice Calc, etc):
+
+
+Example in Excel
+
+Example in Open Office
+
+The report contains 4 sections:
+Initial Balance (Initial Available Balance)
+Money Release Details (Releases)
+Freezing of money due to disputes (Block)
+Unfreeze for dispute resolution (Unblock)
+
+You will see a section of subtotals for each block and, finally, the total result. We calculate this total on the net subtotals of each section, it is the net sum of:
+
+Subtotal Release - Subtotal Block + Subtotal Unblock = Total Result
+
+View the Complete glossary
+
+We reflect the universal accounting concepts of debit (money you have to pay) and credit (money you have to collect) writing the report in two columns, one for each concept:
+
+Your credit will be in the column NET_CREDIT
+Your debit will be in the column NET_DEBIT
+
+You will see the available balance from the operations released in the NET_CREDIT (credited) and NET_DEBIT (debited) columns, depending on whether the amount is positive or negative. There, you will also see the gross amount and the financing, taxes and shipping costs that we deduct to reach the net amount.
+
+Do you wish to add details to the operations view? Select the columns you want to export and include in the Report Settings, depending on what you want to analyze and reconcile.
+
+What happens if a withdrawal fails? 
+If this happens, the report is still valid. The money goes back to your account and the operation will appear in the report as a new line in the NET_CREDIT column.
+
+Examples (h3)
+
+Note how the available balance report is composed in this example to identify the sections and read your own reports:
+
+
+The default version will show an extended view of the columns. The final report will have as much detail as possible. If you want less details or there are columns that are not useful for reconciliation, you can change which ones to include and which not in Settings.
+
+Important: differences between partial and total withdrawal.
+
+When you withdraw all your available balance, the total in the report will match that amount. On the other hand, when you make a partial withdrawal, which does not include all of the released money in your account, the total available balance and the total of the report will not match.
+
+For example, imagine that you have $ 3,000 available to withdraw to a bank account but you withdraw only $ 2,000. The withdrawal is partial but the total of the report will continue to show you the amount of the initial balance that was at the time of withdrawal, that is, the $ 3,000 you had available. On the other hand, if you withdraw the $ 3,000, the total of the report will match the amount of that withdrawal.
+
