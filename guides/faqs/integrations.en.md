@@ -23,7 +23,7 @@ This option allows you to collect through our web form within the safe environme
 
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
-[Integrar Web Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
+[Integrar Web Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
 
 ### Mobile Checkout
 

@@ -1,5 +1,8 @@
 ---
 resource: payments.raml
+samples:
+- curl.sh
+- curl_response.json
 use:
 - additional_info
 - application_fee

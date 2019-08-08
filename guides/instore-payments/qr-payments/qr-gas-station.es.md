@@ -14,21 +14,21 @@ sites_supported:
 
 ## Flujo
 
-![QR Petrolera Flow](/images/mobile/qr-gas-flow.es.svg)
+![Flujo de pago QR en estaciones de servicio Mercado Pago](/images/mobile/qr-gas-flow.es.svg)
 
-1. El usuario escanea el código QR desde la app de Mercado Pago o Mercado Libre. El QR contiene el `STORE_ID` con la información del puesto donde se realizó la venta. 
+1. El usuario escanea el código QR desde la app de Mercado Pago o Mercado Libre. El QR contiene el `STORE_ID` con la información del puesto donde se realizó la venta.
 
-2. Nuestro servidor consulta a tu servidor por la última venta pendiente de pago para ese puesto en esa sucursal. 
+2. Nuestro servidor consulta a tu servidor por la última venta pendiente de pago para ese puesto en esa sucursal.
 
-3. Tu servidor busca la última orden pendiente de pago, y si existe, devuelve el cuerpo de la orden con QR. 
+3. Tu servidor busca la última orden pendiente de pago, y si existe, devuelve el cuerpo de la orden con QR.
 
 4. Tu servidor devuelve la orden a nuestro servidor y así se crea la orden de compra en el celular del usuario.
 
-5. El usuario sigue el flujo de compra y confirma el pago. 
+5. El usuario sigue el flujo de compra y confirma el pago.
 
 6. Inmediatamente luego de ser procesado el pago, enviamos a tu servidor una notificación [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/) informando que hay una novedad.
 
-7. Con el identificador del pago, puedes [buscar](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) el pago y continuar con tus procesos internos. 
+7. Con el identificador del pago, puedes [buscar](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) el pago y continuar con tus procesos internos.
 
    > Si el estatus es `approved` se debe acreditar el pago. En cambio si es `rejected`, la app reintentará el cobro solicitando otro medio de pago.
 
@@ -54,7 +54,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 
 ```json
 {
-    "name":"Surtidor 1", 
+    "name":"Surtidor 1",
     "external_id": "pos_1",
     "category": 473000,
     "store_id": "123456",
@@ -142,7 +142,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
     * `type`: String. Tipo de documento (DNI, INE, etc.)
     * `number`: String. Id de documento.
   * `period`: String. Número del período.
-  * `shift`: String. Número del turno. 
+  * `shift`: String. Número del turno.
   * `affinity_plan`: String. Plan de afinidad.
 
 ### Objeto Payment
@@ -228,7 +228,7 @@ Deberás crear un código QR para cada surtidor o bomba con un `url` configurado
 ```bash
 curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 '{
-    "name":"Caja Principal", 
+    "name":"Caja Principal",
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -241,7 +241,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 
 Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
 
-1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`. 
+1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`.
 2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
 
 ## Devoluciones
@@ -264,9 +264,9 @@ curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_t
 
 Para probar la integración, deberás crear dos usuarios de prueba: uno comprador, otro vendedor:
 
-Usarás el usuario vendedor para crear el QR y completar el dato `collector_id` ; así, con el usuario comprador ingresar en la app de Mercado Pago o Mercado Libre y compretar el flujo. 
+Usarás el usuario vendedor para crear el QR y completar el dato `collector_id` ; así, con el usuario comprador ingresar en la app de Mercado Pago o Mercado Libre y compretar el flujo.
 
-Consulta los [datos de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/testing): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
+Consulta los [datos de prueba](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/testing): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
 
 > **NOTA**: Si en las pruebas usarás una cuenta de prueba, todas las cuentas deben ser de prueba. De lo contrario, si usas una cuenta real, todas las cuentas relacionadas deben ser reales.  **Si en fase de pruebas se agrega el `sponsor_id`, recuerda que debe ser un usuario de prueba.**
 

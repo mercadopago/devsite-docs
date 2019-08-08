@@ -77,16 +77,16 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 | [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)               | Deprecada (Old Versión)  | OpenCart v1.4.9       |
 | [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)               | Deprecada (Old Versión)  | OpenCart v1.5.x       |
 | [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)  | Deprecada (Old Versión)  | OpenCart v2.x - v2.2  |
-| [v2.3](https://github.com/mercadopago/cart-opencart-2)                                  | Estable (Current Versión)  | OpenCart v2.3     |
-| [v3.x](https://github.com/mercadopago/cart-opencart-3)                                  | Estable (Current Versión)  | OpenCart v3.x     |
+| [v2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)                                  | Estable (Current Versión)  | OpenCart v2.3     |
+| [v3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip/archive/master.zip)                                  | Estable (Current Versión)  | OpenCart v3.x     |
 
 
 ## Instalación
 
 1. Descargue el módulo de Mercado Pago
 
-  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart/tree/master/v2.3)
-  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart/tree/master/v3.x)
+  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)
+  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip)
 
 2. Copie las carpetas **admin**, **catalog** y **image** a la raíz de su instalación de OpenCart. Asegúrese de mantener la estructura de carpetas OpenCart intactas.
 
@@ -99,7 +99,7 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 
 1. De nuevo en **Extensions> Payments> MercadoPago**, haga clic en **Edit** para configurar su cuenta de Mercado Pago:
 
- [Mercado Pago Account] (https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
+ [Open cart configuration page] (https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
 
 2. Configure su **CLIENT_ID** y **CLIENT_SECRET**, o **PUBLIC_KEY** y **ACCESS_TOKEN** (dependiendo de qué módulo está utilizando). [Obtenga sus credenciales] (https://www.mercadopago.com/mlb/account/credentials).
 

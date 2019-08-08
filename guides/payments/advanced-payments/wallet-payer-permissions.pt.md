@@ -30,8 +30,8 @@ Use o código de autorização, obtido no passo anterior, para obter as credenci
 #### Request
 ```curl
 curl -X POST \
-     -H 'accept: application/json' \
-     -H 'content-type: application/x-www-form-urlencoded' \
+     -H 'Accept: application/json' \
+     -H 'Content-Type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_id=<CLIENT_ID>' \
      -d 'client_secret=<CLIENT_SECRET>' \

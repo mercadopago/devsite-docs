@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Recibir pagos
 
 Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
@@ -111,7 +121,7 @@ mercadopago.preferences.create(preference)
     // If an error has occurred
   });
 ```
-```ruby 
+```ruby
 # Create an item object
 item = MercadoPago::Item.new({
   id:           "1234",
@@ -123,7 +133,7 @@ item = MercadoPago::Item.new({
 # Create a payer object
 payer = MercadoPago::Payer.new({
   email: "[FAKER][INTERNET][FREE_EMAIL]"
-}) 
+})
 # Create a preference object
 preference = MercadoPago::Preference.new({
   items: [item],
@@ -138,13 +148,13 @@ using MercadoPago.Resources;
 using MercadoPago.DataStructures.Preference;
 // ...
 // Create a preference object
-Preference preference = new Preference(); 
+Preference preference = new Preference();
 # Adding an item object
 preference.Items.Add(
   new Item()
   {
     Id = "1234",
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
     Quantity = [FAKER][NUMBER][BETWEEN][1,10],
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)[FAKER][COMMERCE][PRICE]
@@ -272,7 +282,7 @@ Payer payer = new Payer()
         AreaCode = "[FAKER][PHONE_NUMBER][AREA_CODE]",
         Number = "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
     },
-    Identification = new Identification() 
+    Identification = new Identification()
     {
         Type = "DNI",
         Number = "12345678"
@@ -340,7 +350,7 @@ shipment = MercadoPago::Shipment.new(
     apartment: "C"
   })
 })
-# ... 
+# ...
 ```
 ```csharp
 using MercadoPago;
@@ -377,7 +387,7 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 	</body>
 </html>
 ```
-Además, podés personalizar el checkout ingresando a este  [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/personalization)
+Además, podés personalizar el checkout ingresando a este  [Link](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/personalization)
 
 ## 3. Activa las notificaciones de pagos
 
@@ -400,4 +410,4 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 
 Para ello debes usar usuarios y tarjetas de prueba.
 
-Visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/testing) para más información.
+Visita la sección [Probando](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/testing) para más información.

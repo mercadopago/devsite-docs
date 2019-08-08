@@ -24,7 +24,7 @@ For example:
 </form>
 ```
 
-![Recovery](/images/cow-recovery-page.png)
+![Retrieve the sale button Mercado Pago](/images/cow-recovery-page.png)
 
 ## Checkout open by default
 

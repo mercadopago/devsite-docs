@@ -38,7 +38,7 @@ Uma vez que o pagamento é processado, o usuário será redirecionado a `success
 
 ### Diagrama do Fluxo
 
-![instore diagram](/images/point_diagram.png)
+![Deep linking flow diagram Mercado Pago Point](/images/point_diagram.png)
 
 
 ### Criação do Deep Linking

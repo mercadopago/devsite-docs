@@ -88,8 +88,8 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
   * [OpenCart 1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)
   * [OpenCart 1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)
   * [OpenCart 2.x - 2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)
-  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2)
-  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3)
+  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)
+  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip)
 
 2. Copie as pastas **admin**, **catalog** e **image** para a raiz da sua instalação do OpenCart. Se assegure de manter a estrutura de pastas do OpenCart intactas.
 
@@ -102,7 +102,7 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 
 1. Novamente em **Extensions > Payments > MercadoPago**, clique em **Edit** para configurar sua conta do Mercado Pago:
 
- ![Mercado Pago Account](/images/opencart_mpaccount.png)
+ ![Open cart configuration page](/images/opencart_mpaccount.png)
 
 2.  Configure seu **CLIENT_ID** e **CLIENT_SECRET**, ou **PUBLIC_KEY** e **ACCESS_TOKEN** (dependendo de qual módulo você está utilizando). [Obtenha suas credenciais](https://www.mercadopago.com/mlb/account/credentials).
   

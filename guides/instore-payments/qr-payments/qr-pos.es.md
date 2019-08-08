@@ -13,7 +13,7 @@ sites_supported:
 
 ## Flujo
 
-![QR PDV Flow](/images/mobile/qr-user-flow.es.svg)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.svg)
 
 ## Conceptos
 
@@ -32,7 +32,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 
 ```json
 {
-    "name":"Caja Principal", 
+    "name":"Caja Principal",
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -48,7 +48,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
   * Gastronomía Argentina: 621102
   * General: `null`
 * `store_id`: Es un número identificador de la sucursal a la que pertenece el punto de venta. El el id del Store.
-* `fixed_amount`: Indica si el usuario podrá ingresar algún monto al leer el QR o tendrá que esperar a que esté una orden disponible. Es un booleano. 
+* `fixed_amount`: Indica si el usuario podrá ingresar algún monto al leer el QR o tendrá que esperar a que esté una orden disponible. Es un booleano.
 
 ### Objeto Order
 
@@ -123,7 +123,7 @@ Deberás crear un código QR para cada caja con un `external_id` que identifique
 ```bash
 curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 '{
-    "name":"Caja Principal", 
+    "name":"Caja Principal",
     "fixed_amount": true,
     "category": 621102,
     "store_id": "123456",
@@ -151,7 +151,7 @@ curl -X POST https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERN
 }'
 ```
 
-La orden expira a los 10 minutos de ser creada y automáticamente al ser pagada. Si se desea un tiempo de expiración diferente, puedes enviar el header `X-Ttl-Store-Preference` con el tiempo deseado en segundos. 
+La orden expira a los 10 minutos de ser creada y automáticamente al ser pagada. Si se desea un tiempo de expiración diferente, puedes enviar el header `X-Ttl-Store-Preference` con el tiempo deseado en segundos.
 
 Por ejemplo si deseas que esté disponible durante 5 minutos se debe enviar el header `'X-Ttl-Store-Preference: 300'`. Hay que tener presente que si una persona paga esa orden antes del tiempo configurado, expirará.
 
@@ -159,7 +159,7 @@ Por ejemplo si deseas que esté disponible durante 5 minutos se debe enviar el h
 
 Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
 
-1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`. 
+1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`.
 2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
 
 ### Eliminar orden
@@ -190,7 +190,7 @@ curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_t
 
 Se deben crear dos usuarios de prueba: uno comprador y otro cobrador. Con el usuario cobrador se debe crear el QR y con el otro ingresar en las apps de Mercado Pago o Mercado Libre.
 
-Consultar los [datos de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/testing): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
+Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/testing): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
 
 | Casos a probar                                               | Resultado esperado                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

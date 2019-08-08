@@ -15,12 +15,7 @@
 
 ### Configure suas credenciais
 
-* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** no seguinte endereço:
-    * Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-    * Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
-    * México: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
-    * Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
-    * Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
+* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [no seguinte endereço](https://www.mercadopago.com/mlb/account/credentials).
 
 ```ruby
 require 'mercadopago.rb'
@@ -45,9 +40,9 @@ puts $preferenceResult
 preference_data = {
 			"items": [
 				{
-					"title": "testCreate", 
-					"quantity": 1, 
-					"unit_price": 10.2, 
+					"title": "testCreate",
+					"quantity": 1,
+					"unit_price": 10.2,
 					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
 				}
 			]

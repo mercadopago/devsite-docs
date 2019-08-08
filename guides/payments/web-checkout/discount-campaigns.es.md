@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Campañas de descuento
 
 Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de _marketing_ de tu cuenta de Mercado Pago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).

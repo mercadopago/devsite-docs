@@ -36,7 +36,7 @@ Esta libreria provee una set de clases y metodos para interactuar con el API de 
     ```
 3. Usando las clases del SDK.
 
-![sdk resource structure](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
+![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 
 **Ejemplo**
 

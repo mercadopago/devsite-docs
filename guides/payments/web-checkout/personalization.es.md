@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Personalización
 
 Desde la preferencia de pagos no sólo puedes enviar información del item a pagar y del comprador, si no también puedes definir medios de pago que no deseas aceptar, URL de retorno a tu sitio después del pago, métodos de envío y demas.   
@@ -79,14 +89,14 @@ preference.payment_methods = {
 
 Preference preference = new Preference();
 
-PaymentMethods paymentmethods = new PaymentMethods(); 
+PaymentMethods paymentmethods = new PaymentMethods();
 
 List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
   excludedPaymentMethod.Add(new PaymentMethod()
     {
       Id = "master"
     });
-        
+
   paymentmethods.excludedPaymentType = excludedPaymentMethod;
 
 List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
@@ -227,20 +237,20 @@ payment = MercadoPago::Payment.search(filters)
 ```csharp
 Dictionary<string, string> filters = new Dictionary<string, string>;
 filters.Add("external_references", "EXTERNAL");
-      
+
 List<Payment> payments = Payment.Search(filters);
 ```
 ]]]
 
 ### Modo binario
 
-Si la lógica de negocio de tu comercio requiere que la decisión sobre la aprobación del pago sea instantánea puedes activar el modo binario. De esta forma el pago solo puede resultar en los estados `approved` o `rejected`. 
+Si la lógica de negocio de tu comercio requiere que la decisión sobre la aprobación del pago sea instantánea puedes activar el modo binario. De esta forma el pago solo puede resultar en los estados `approved` o `rejected`.
 
 En el caso de no estar activado el pago puede resultar en el estado `in_process`.
 
 Para más información revisa los posibles estados de un pago:
 
-![payment-diagram](/images/payments-status-transitions-diagram.png)
+![Diagrama de estados de pago Mercado Pago](/images/payments-status-transitions-diagram.png)
 
 Para activarlo, basta configurar como _true_ el campo `binary_mode`:
 
@@ -298,7 +308,7 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
 			"street_name": "Street",
 			"street_number": 123,
 			"zip_code": "5700"
-		} 
+		}
 	},
 	"back_urls": {
 		"success": "https://www.success.com",

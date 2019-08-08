@@ -52,21 +52,21 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 1. Seleccione en el menú lateral la opción "Pago".
 2. Configuraciones. 
 
-    ![VTEX afiliation](/images/vtex-config.png)
+    ![VTEX Configuration Page](/images/vtex-config.png)
     
 3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
 4. Añadir nueva afiliación con el botón (+)
 
-    ![VTEX afiliation](/images/vtex-afiliation.png)
+    ![Affiliation search bar](/images/vtex-afiliation.png)
     
 5. Buscar y seleccionar "MercadoPagoV1".
 
-    ![VTEX afiliation](/images/vtex-afiliation-3.png)    
+    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
     
     
 6. Completar la información requerida en la afiliación.
 
-    ![VTEX afiliation](/images/vtex-afiliation-4.png)
+    ![Complete affliation information](/images/vtex-afiliation-4.png)
 
 ----[mlc, global]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
@@ -246,11 +246,11 @@ Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integr
 4. Cerca del campo de búsqueda.
 5. En el botón (+)
 
-    ![VTEX afiliation](/images/vtex-afiliation-2.png)
+    ![Payment terms bar](/images/vtex-afiliation-2.png)
 
 6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
 
-    ![Native plan](/images/vtex-native-plan-3.png)
+    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
 
 7. Colocar una descripción (puede ser blancos).
 8. Seleccionar la afiliación.
@@ -258,11 +258,11 @@ Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integr
 10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
 11. Salvar la configuración.
 
-    ![Native plan](/images/vtex-native-plan-4.png)
+    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
 
 12. Verificar que se agregó el plan de nativo.
 
-    ![Native plan](/images/vtex-native-plan-5.png)
+    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
 
 ## Configurar Plan de Pago Off-Line en modo agregador
 
@@ -286,18 +286,18 @@ Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos paso
 4. Cerca del campo de búsqueda.
 5. En el botón (+)
 
-    ![VTEX afiliation](/images/vtex-afiliation-2.png)
+    ![Payment condition bar](/images/vtex-afiliation-2.png)
 
 6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
 
-    ![Offline](/images/vtex-offline-plan-3.png)
+    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
 
 7. Colocar una descripción (puede ser blancos).
 8. Seleccionar la afiliación.
 9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
 10. Salvar la configuración.
 
-    ![Offline](/images/vtex-offline-plan-4.png)
+    ![Adding ticket as payment method](/images/vtex-offline-plan-4.png)
 
 ## Configurar plan de pago personalizado
 
@@ -313,18 +313,18 @@ Uruguay: Oca.
 1. Desplegar el menú de Catalog.
 2. Ingresar en PCI Gateway.
 
-    ![Custom plan](/images/vtex-custom-1.png)
+    ![PCI gateway page](/images/vtex-custom-1.png)
 
 3. Ajustes.
 4. Pagos personalizados.
 5. Seleccionar una Cobrand para configurar.
 
-    ![Custom plan](/images/vtex-custom-2.png)
+    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
 
 6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
 7. Salvar la configuración.
 
-    ![Custom plan](/images/vtex-custom-3.png)
+    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
 
 8. Colocar una descripción (puede ser blancos).
 9. Seleccionar la afiliación.
@@ -340,24 +340,24 @@ Uruguay: Oca.
 1. Desplegar el menú de Catalog .
 2. Ingresar en PCI Gateway.
 
-    ![Offline](/images/vtex-webpay-1.png)
+    ![PCI gateway page](/images/vtex-webpay-1.png)
 
 3. Ajustes.
 4. Planes de pago.
 5. Nuevo plan de pago.
 
-    ![Offline](/images/vtex-webpay-2.png)
+    ![Payment plan bar in VTEX](/images/vtex-webpay-2.png)
 
 6. Buscar y seleccionar Webpay.
 
-    ![Offline](/images/vtex-webpay-3.png)
+    ![Webpay page in VTEX](/images/vtex-webpay-3.png)
 
 7. Colocar una descripción (puede ser blancos).
 8. Seleccionar la afiliación.
 9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
 10. Salvar la configuración.
 
-    ![Offline](/images/vtex-webpay-4.png)
+    ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
     
 ------------
 
@@ -414,12 +414,12 @@ El checkout redirect puede convivir con el checkout transparente.
 2. Desplegar el menú de Pagos
 3. Ingresar en Configuración
 
-    ![VTEX afiliation](/images/vtex-config.png)
+    ![VTEX configuration page - Checkout redirect](/images/vtex-config.png)
 
 4. Afiliaciones
 5. Nueva Afiliación
 
- ![VTEX afiliation](/images/vtex-afiliation.png)
+ ![Gateway affiliation bar](/images/vtex-afiliation.png)
     
 6. Buscar y seleccionar "MercadoPago". 
 7. Completar la siguiente información requerida en la afiliación.
@@ -442,7 +442,7 @@ Luego de configurar la afiliación es necesario agregar el plan de pago
 2. Desplegar el menú de Pagos
 3. Ingresar en Configuración
 
-    ![VTEX afiliation](/images/vtex-config.png).
+    ![Setting payment plan - Checkout redirected](/images/vtex-config.png).
     
 4. Planes de pago
 5. Nuevo plan de pago
@@ -460,16 +460,16 @@ Cuando tu asesor comercial te haya informado que ya están cargados los números
 2. Desplegar el menú de Pagos
 3. Ingresar en Configuración
 
-    ![VTEX afiliation](/images/vtex-config.png).
+    ![VTEX Configuration Page - Gateway](/images/vtex-config.png).
     
 4. Afiliaciones
 5. Nueva Afiliación
 
- ![VTEX afiliation](/images/vtex-afiliation.png)
+ ![Affiliation search bar - Gateway](/images/vtex-afiliation.png)
     
 6. Buscar y seleccionar "MercadoPagoV1".
 
-    ![VTEX afiliation](/images/vtex-afiliation-3.png)    
+    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
     
 7. Completar los campos que se describen a continuación:
 - Nombre de la afiliación: Nombre que identificará la afiliación.
@@ -499,12 +499,12 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 2. Desplegar el menú de Pagos
 3. Ingresar en Configuración
 
-    ![VTEX afiliation](/images/vtex-config.png).
+    ![Setting payment plan - gateway](/images/vtex-config.png).
     
 4. Planes de pago
 5. Nuevo plan de pago
 
-    ![Native plan](/images/vtex-native-plan-3.png).
+    ![Payment methods page - gateway](/images/vtex-native-plan-3.png).
     
 6. Seleccionar el medio de pago (crédito o débito) a cargar
 7. Colocar una descripción.
@@ -521,27 +521,26 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 1. Desplegar el menú de Catalog.
 2. Ingresar en Portal.
 
-    ![Custom plan](/images/vtex-device-settings-1.png)
+    ![Setting deviceID](/images/vtex-device-settings-1.png)
 
 3. Seleccionar el ícono de ajustes.
 
-    ![Custom plan](/images/vtex-device-settings-2.png)
+    ![Adjustment icon](/images/vtex-device-settings-2.png)
 
 4. Ingresar en código.
 5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
+6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
 
 ```
-$('body').append('<form><input type="hidden" id="deviceId" name="deviceId" /></form>');
-$.getScript("https://resources.mlstatic.com/device/meli-metrix.min.js", function(){});
-function startTimer () {
-    setTimeout(stopTimer,2000);
+var dmlscript = document.createElement("script");
+dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
+dmlscript.onload = () => {
+    new DMLSDK({
+        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        out: "vtex.deviceFingerprint"
+    });
 }
-function stopTimer () {
-  	window.vtex.deviceFingerprint = document.getElementById('deviceId').value;
-  console.log("MP-deviceId : " + document.getElementById('deviceId').value)
-}
-window.onload = startTimer;
+document.body.appendChild(dmlscript);
 ```
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:

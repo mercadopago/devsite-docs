@@ -78,7 +78,7 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 
 3. Muito bem! O módulo do Mercado Pago foi instalado com sucesso.
 
-![Instalação](/images/prestashop_select_mp_file.gif)
+![installing the Mercado Pago in Prestashop](/images/prestashop_select_mp_file.gif)
 
 
 ## Configuração
@@ -87,7 +87,7 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 
 2. Na tela **BASIC SETTINGS** será solicitado os dados **Client ID** e **Client Secret**. Esses dados são as credenciais da sua conta do Mercado Pago e podem ser obtidos através do seguinte link: [Obtenha suas credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
 
-![Configuração](/images/prestashop_credentials_configuration.gif)
+![Configuring client id and client secret in Prestashop](/images/prestashop_credentials_configuration.gif)
 
 > Existem dois tipos de credenciais:
 > * **Modo Sandbox**: Essas credenciais são utilizadas para testes.
@@ -95,11 +95,11 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 
 3. Agora na tela **PAYMENT SETTINGS** mantenha Checkout Standard como ativo para utilizar o Checkout Redirecionado do Mercado Pago.
 
-![Checkout Standard](/images/prestashop_checkout_standard.png)
+![Payments settings redirected checkout](/images/prestashop_checkout_standard.png)
 
 4. Em PAYMENT METHOD você pode habilitar as formas de pagamento com as quais irá trabalhar:
 
-![Payment Method](/images/prestashop_payment_method.png)
+![Enabling payment methods in prestashop](/images/prestashop_payment_method.png)
 
 5. Muito bem! Você habilitou pagamentos via Checkout Standard (redirecionado)!
 
@@ -120,7 +120,7 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 
 3. Em **MERCADO ENVIOS** é possível configurar um texto para ser exibido na entrega através do campo **Custom text to use with delivery**. Para realizar a ativação marque o campo **Enable Mercado envios** como **YES**.
 
-![Habilitar Mercado Envios](/images/prestashop_mercado_envios.png)
+![Activating Mercado Envios in Prestashop](/images/prestashop_mercado_envios.png)
 
 4. Muito bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
 

@@ -135,7 +135,7 @@ El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución co
 > * El usuario es redigido fuera de la aplicación para realizar el pago.
 
 
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-checkout/introduction)
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction)
 
 
 Este sería un ejemplo de la creación de la preferencia de pago:

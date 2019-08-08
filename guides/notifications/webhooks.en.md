@@ -8,7 +8,7 @@
 
 A **webhook** is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
-In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access.](https://www.mercadopago.com/mla/account/webhooks).
+In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago.com/mla/account/webhooks).
 
 
 You can also configure the notification when you do the POST of the payment, indicating the URL in the field notificaction_url:
@@ -38,13 +38,18 @@ We will notify the following events:
 | `subscription`       | `application.authorized`   | Account authorized           |
 | `invoice`            | `application.authorized`   | Account authorized           |
 
-If your application is not available or takes too long to respond, Mercado Pago will retry sending the notification according to the following interval:
+Mercado Pago will send notifications with the following schedule of retries and confirmation awaiting times. You must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)` before the corresponding time expires. If not, it will be assumed that you did not receive it correctly and you will be notified again.
 
-1.	Retry after 5 minutes.
-2. Retry after 45 minutes.
-3. Retry after 6 hours.
-4. Retry after 2 days.
-5. Retry after 4 days.
+If you need more information, please review the section [What should I do when I receive a notification?](#bookmark_what_should_i_do_after_receiving_a_notification?).
+
+| Event        | Time after the first dispatch | Confirmation waiting time |
+|--------------|-------------------------------|---------------------------|
+| Dispatch     | -                             | 22 seconds                |
+| First retry  | 5 minutes                     | 5 seconds                 |
+| Second retry | 45 minutes                    | 5 seconds                 |
+| Third retry  | 6 hours                       | 5 seconds                 |
+| Fourth retry | 2 days                        | 5 seconds                 |
+| Fifth retry  | 4 days                        | 5 seconds                 |
 
 The notification sent has the following format:
 
@@ -67,22 +72,32 @@ The notification sent has the following format:
 This indicates that payment **999999999** was created for the user **44444** in **production mode** with the V1 version of the API. That event took place on **2016-03-25T10:04:58.396-04:00**.
 
 
-## What should I do after receiving a notification?
+## What should I do when I receive a notification?
 
-When you receive a notification in your platform, Mercado Pago awaits a response to validate that you received it correctly. To do this, you have to send a response with a `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
 
-Note that this communication is made exclusively between Mercado Pago’s servers and your server, so there will be no physical user viewing any kind of result.
+When you receive a notification on your platform, Mercado Pago waits for a response to validate that you received it correctly. For this, you must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
 
-After that, you will be able to get full information about the notified resource by accessing the corresponding API at https://api.mercadopago.com/:
+It is recommended that you respond to the notification before executing business logic or prior to accessing external resources so as not to exceed [the estimated response times.](#bookmark_events)
+
+This communication is exclusively between the servers of Mercado Pago and your server, so there will not be a physical user seeing any type of result.
+
+After this, you must obtain the complete information of the notified resource by accessing the corresponding endpoint of the API:
+
 
 Type         | URL                                                | Documentation
 ------------ | -------------------------------------------------- | --------------------
-payment      | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
-plan         | /v1/plans/[ID]?access\_token=[ACCESS\_TOKEN]         | -
-subscription | /v1/subscriptions/[ID]?access\_token=[ACCESS\_TOKEN] | -
-invoice      | /v1/invoices/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/invoices/_invoices_id/get/)
+payment      | https://api.mercadopago.com/v1/payments/[ID]?access\_token=[ACCESS\_TOKEN]      | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
+plan         | https://api.mercadopago.com/v1/plans/[ID]?access_token=[ACCESS_TOKEN]         | -
+subscription | https://api.mercadopago.com/v1/subscriptions/[ID]?access\_token=[ACCESS_TOKEN] | -
+invoice      | https://api.mercadopago.com/v1/invoices/[ID]?access_token=[ACCESS_TOKEN]      | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/invoices/_invoices_id/get/)
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
+
+> WARNING
+>
+> Important
+>
+> Keep in mind that if the response times are exceeded, it is possible to receive duplicate notifications of an event.
 
 ### Implement the receiver notification using the following code as example:
 
@@ -105,6 +120,6 @@ With this information you can make the necessary updates on your platform, such 
             $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
             break;
     }
-    
+
 ?>
 ```

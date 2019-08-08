@@ -28,7 +28,7 @@ Para utilizar esta biblioteca, primeiramente insira o seguinte código em nosso 
 Sua chave pública é sua identificação para poder capturar os dados do cartão de forma segura. O upload da chave pública deve ser feito após incluir MercadoPago.js e antes de efetuar uma solicitação.
 
 ```javascript
-Mercadopago.setPublishableKey("TEST-b3d5b663-664a-4e8f-b759-de5d7c12ef8f");
+window.Mercadopago.setPublishableKey(ENV_PUBLIC_KEY);
 ```
 
 > NOTE
@@ -101,15 +101,63 @@ Entre os campos obrigatórios estão o tipo e o número do documento.
 É possível obter a lista de documentos disponíveis:
 
 ```javascript
-Mercadopago.getIdentificationTypes();
+window.Mercadopago.getIdentificationTypes();
 ```
 ------------
 
 ####  Obtenha o meio de pagamento do cartão
 
-É importante obter o meio de pagamento do cartão para poder efetuar o pagamento.
+É importante obter o meio de pagamento do cartão para poder efetuar o pagamento. A função `getBin ()` no exemplo abaixo, obtém os 6 primeiros dígitos do cartão. Esses dígitos são responsáveis por identificar o método de pagamento e o banco emissor do referido cartão.
 
-Para obter o meio de pagamento, utilize o método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este método admite dois parâmetros: um objeto e uma função de callback.
+O retorno da função de nome `setPaymentMethodInfo` recebe um status e uma resposta. A função armazena o id da resposta no campo `paymentMethodId` (input hidden).
+
+```javascript
+function getBin() {
+  const cardnumber = document.getElementById("cardnumber");
+  return cardnumber.substring(0,6);
+}
+
+function guessingPaymentMethod(event) {
+    var bin = getBin();
+
+    if (event.type == "keyup") {
+        if (bin.length >= 6) {
+            window.Mercadopago.getPaymentMethod({
+                "bin": bin
+            }, setPaymentMethodInfo);
+        }
+    } else {
+        setTimeout(function() {
+            if (bin.length >= 6) {
+                window.Mercadopago.getPaymentMethod({
+                    "bin": bin
+                }, setPaymentMethodInfo);
+            }
+        }, 100);
+    }
+};
+
+function setPaymentMethodInfo(status, response) {
+    if (status == 200) {
+        const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
+
+        if (paymentMethodElement) {
+            paymentMethodElement.value = response[0].id;
+        } else {
+            const input = document.createElement('input');
+            input.setattribute('name', 'paymentMethodId');
+            input.setAttribute('type', 'hidden');
+            input.setAttribute('value', response[0].id);     
+
+            form.appendChild(input);
+        }
+    } else {
+        alert(`payment method info error: ${response}`);  
+    }
+};
+```
+
+Para obter o meio de pagamento, utilize o método `window.MercadoPago.getPaymentMethod(jsonParam,callback)`. Este método admite dois parâmetros: um objeto e uma função de callback.
 
 
 ```javascript
@@ -119,34 +167,9 @@ Mercadopago.getPaymentMethod({
 }, setPaymentMethodInfo);
 ```
 
-O `bin` corresponde aos 6 primeiros dígitos do cartão, que identificam o meio de pagamento e o banco emissor do cartão.
-
-O callback recebe um status e uma resposta. A função deverá armazenar a id da resposta no campo `paymentMethodId` (input hidden), por exemplo:
-
-```javascript
-function setPaymentMethodInfo(status, response) {
-  if (status == 200) {
-        const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
-        
-        if (paymentMethodElement) {
-        paymentMethodElement.value = response[0].id;
-        } else {
-        const inputEl = document.createElement('input');
-        inputEl.setattribute('name', 'paymentMethodId');
-        inputEl.setAttribute('type', 'hidden');
-        inputEl.setAttribute('value', response[0].id);     
-        
-        form.appendChild(inputEl);
-        }
-    } else {
-        alert(`payment method info error: ${response}`);  
-    }
-};
-```
-
 #### Capture os dados
 
-Antes de enviar o formulário, deve-se capturar o evento `submit` e utilizar o método `Mercadopago.createToken(form, sdkRespondeHandler)``.
+Antes de enviar o formulário, deve-se capturar o evento `submit` e utilizar o método `window.Mercadopago.createToken(form, sdkRespondeHandler)`.
 
 ```javascript
 doSubmit = false;
@@ -156,9 +179,24 @@ function doPay(event){
     if(!doSubmit){
         var $form = document.querySelector('#pay');
 
-        Mercadopago.createToken($form, sdkResponseHandler); // The function "sdkResponseHandler" is defined below
+        window.Mercadopago.createToken($form, sdkResponseHandler); // The function "sdkResponseHandler" is defined below
 
         return false;
+    }
+};
+
+function sdkResponseHandler(status, response) {
+    if (status != 200 && status != 201) {
+        alert("verify filled data");
+    }else{
+        var form = document.querySelector('#pay');
+        var card = document.createElement('input');
+        card.setAttribute('name', 'token');
+        card.setAttribute('type', 'hidden');
+        card.setAttribute('value', response.id);
+        form.appendChild(card);
+        doSubmit=true;
+        form.submit();
     }
 };
 ```
@@ -200,25 +238,6 @@ O segundo campo do método `createToken` é o `sdkResponseHandler`, que é uma f
 Nós a utilizaremos para criar um campo oculto (input hidden) e armazenaremos o valor de `id` para então enviar o formulário aos seus servidores.
 
 
-```javascript
-function sdkResponseHandler(status, response) {
-    if (status != 200 && status != 201) {
-        alert("verify filled data");
-    }else{
-        var form = document.querySelector('#pay');
-        var card = document.createElement('input');
-        card.setAttribute('name', 'token');
-        card.setAttribute('type', 'hidden');
-        card.setAttribute('value', response.id);
-        form.appendChild(card);
-        doSubmit=true;
-        form.submit();
-    }
-};
-```
-
-É possível fazer o download do exemplo completo [aqui](#).
-
 ## Receba um pagamento com cartão
 
 Para efetuar um pagamento único, deve-se obter o id do card_token a partir dos parâmetros enviados no POST.
@@ -255,7 +274,7 @@ Para efetuar o pagamento, basta realizar um _API call_:
 ```
 ```java
 ===
-O valor de **getStatus()** indicara o estado de um pagamento (**approved**, **rejected or **in_process**). 
+O valor de **getStatus()** indicara o estado de um pagamento (**approved**, **rejected or **in_process**).
 ===
 
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
@@ -324,7 +343,7 @@ payment.payer = {
 # Save and posting the payment
 payment.save()
 
-``` 
+```
 ```csharp
 ===
 O valor da propriedade **status** indicara el estado de um pagamento (**approved**, **rejected or **in_process**).
@@ -568,11 +587,13 @@ payment.Save();
                 "street_name": "Street",
                 "street_number": 123,
                 "zip_code": "5700"
-            } 
+            }
         },
         "shipments": {
             "receiver_address": {
                 "zip_code": "5700",
+                "state_name": "State",
+                "city_name": "City",
                 "street_name": "Street",
                 "street_number": 123,
                 "floor": 4,

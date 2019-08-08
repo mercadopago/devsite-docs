@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Probando la Integración
 
 Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el _checkout_.

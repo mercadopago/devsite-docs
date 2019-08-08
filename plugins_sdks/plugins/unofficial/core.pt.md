@@ -1,6 +1,6 @@
 ---
-  sites_supported:
-      - mlb
+sites_supported:
+  - mlb
 ---
 
 # CORE
@@ -128,7 +128,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 3.  Selecionar a opção **Adicionar Canal**, ou edite um existente.
 
-    ![CORE Configuracao](/images/core15.png) 
+    ![CORE Configuracao](/images/core15.png)
 
 4. No menu de definição do Tipo de Canal, selecionar a opção **Próximo passo**.
 
@@ -136,7 +136,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 5. Defina as informações de configuração do canal, rolar para baxio até encontrar a opção **Contrato Padrão**.
 
-    ![CORE Configuracao](/images/core17.png) 
+    ![CORE Configuracao](/images/core17.png)
 
 6. Clique em **Selecione** e escolha o contrato configurado no tópico anterior, selecionar a opção **Salvar e fechar**.
 

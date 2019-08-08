@@ -15,12 +15,7 @@
 
 ### Configure your credentials
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** in the following address:
-    * Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-    * Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
-    * México: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
-    * Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
-    * Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
+* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link](https://www.mercadopago.com/mla/account/credentials).
 
 ```ruby
 require 'mercadopago.rb'

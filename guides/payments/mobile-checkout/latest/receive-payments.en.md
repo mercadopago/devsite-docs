@@ -23,7 +23,7 @@ This guide will help you integrate MercadoPago’s visual payment component in y
 - Integration in your server: in this step, you will get the payment information.
 - Integration in your application: in this step, you will configure the visual component.
 
-![scheme](/images/mobile-sdk-schema.png)
+![Schema payment mobile Mercado Pago](/images/mobile-sdk-schema.png)
 
 1. Create the payment preference from your server on MercadoPago’s servers.
 2. Start the checkout in your application, using the preference id.

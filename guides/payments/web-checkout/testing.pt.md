@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Teste a Integração
 
 Antes de partir para a produção, é muito importante que realize testes de fluxo de pagamentos, verificando se as configurações feitas nas preferências realmente estão no checkout.

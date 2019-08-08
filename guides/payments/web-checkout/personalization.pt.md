@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mlb
+  - mlm
+  - mlc
+  - mpe
+  - mco
+  - mlu
+---
+
 # Personalização
 
 
@@ -78,14 +88,14 @@ preference.payment_methods = {
 
 Preference preference = new Preference();
 
-PaymentMethods paymentmethods = new PaymentMethods(); 
+PaymentMethods paymentmethods = new PaymentMethods();
 
 List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
   excludedPaymentMethod.Add(new PaymentMethod()
     {
       Id = "master"
     });
-        
+
   paymentmethods.excludedPaymentType = excludedPaymentMethod;
 
 List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
@@ -227,20 +237,20 @@ payment = MercadoPago::Payment.search(filters)
 ```csharp
 Dictionary<string, string> filters = new Dictionary<string, string>;
 filters.Add("external_references", "EXTERNAL");
-      
+
 List<Payment> payments = Payment.Search(filters);
 ```
 ]]]
 
 ### Modo binário
 
-Se a lógica de negócio do seu comércio necessita que a decisão de aprovação do pagamento seja instantânea, é possível ativar o modo binário. Dessa forma o pagamento somente assumirá os status approved ou rejected. 
+Se a lógica de negócio do seu comércio necessita que a decisão de aprovação do pagamento seja instantânea, é possível ativar o modo binário. Dessa forma o pagamento somente assumirá os status approved ou rejected.
 
 Caso não esteja ativado o pagamento pode assumir o status in_process.
 
 Para mais informações consulte os possíveis status de um pagamento:
 
-![payment-diagram](images/payments-status-transitions-diagram.png)
+![Payment diagram Mercado Pago](images/payments-status-transitions-diagram.png)
 
 Para ativá-lo, basta configurar como true o campo binary_mode
 
@@ -259,7 +269,7 @@ Caso não queira permitir que alguém acesse a preferência de pagamentos para e
 ```
 
 
-Para saber mais sobre os atributos da preferência, [consulte a documentação da API]https://www.mercadopago.com.br/developers/pt/reference/reference/preferences/_preferences/post/)
+Para saber mais sobre os atributos da preferência, [consulte a documentação da API](https://www.mercadopago.com.br/developers/pt/reference/preferences/_checkout_preferences/post/)
 
 ### Aqui você tem uma preferência completa
 
@@ -296,7 +306,7 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
       "street_name": "Street",
       "street_number": 123,
       "zip_code": "5700"
-    } 
+    }
   },
   "back_urls": {
     "success": "https://www.success.com",

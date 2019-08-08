@@ -33,7 +33,7 @@ All our payments are assessed by our fraud prevention tool to minimize the risks
 
 Offer the best payment experience to your users, on Android or iOS.
 
-![androidiosfinal](/images/mobile-sdk-flow.png)
+![Mercado Pago sdk android](/images/mobile-sdk-flow.png)
 
 ### It is very easy to integrate the checkout:
 
@@ -51,7 +51,7 @@ Add the following code in the file **build.gradle**.
 Alternatively, you can [download the SDK](https://github.com/mercadopago/px-android/releases) and add it to your project.
 ===
 dependencies {
-   implementation 'com.mercadopago.android.px:checkout:4.0.+'
+   implementation 'com.mercadopago.android.px:checkout:4.+'
 }
 ```
 ```ios

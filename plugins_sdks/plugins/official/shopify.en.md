@@ -7,16 +7,15 @@
 
 Mercado Pago's plugin for shopify has available the next features:
 
-| Feature                                                   | Web Checkout 		|
+| Feature                                                   | Web Checkout 		  |
 |---------------------------------------------------------- |-------------------|
 | Credit card Payments                                      | ✔                 |
 | Other payment methods                                     | ✔                 |
-| Payment with two payment methods	                     	| ✔               	|
+| Payment with two payment methods	                     	  | ✔               	|
 | Mercado Pago's interface                                  | ✔                 |
 | Installments calculator                                   | ✔                 |
 | IPN and webhooks                                          | ✔                 |
 | Mercado Pago coupon discounts                             | ✔                 |
-
 
 ### Web Checkout
 
@@ -36,16 +35,16 @@ Great for merchants who want to get going quickly and easily.
 
 1. In your Shopify admin panel, go to the menu **Settings > Payments**.
 
-  ![Config](/images/shopify-config-1.gif)
+  ![Configuring Mercado Pago in shopify](/images/shopify-config-1.gif)
 
 2. In Accept credit cards, select **MercadoPago**.
-3. Fill the **CLIENT ID** and **CLIENT SECRET**. Get yout credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
+3. Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-  ![Config](/images/shopify-config-2.gif)
+  ![Configuring client id and client secret in shopify](/images/shopify-config-2.gif)
 
 4. Click the button "**Activate**".
 
-  ![Config](/images/shopify-config-3.gif)
+  ![Saving All Settings](/images/shopify-config-3.gif)
 
 5. Congrats! **Mercado Pago** was installed and configured!
 
