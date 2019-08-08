@@ -5,8 +5,11 @@
 > **En esta página**
 >
 > [Introducción](#introducción) 
+>
 > [Casos de uso](#casos-de-uso)
+>
 > [Cómo usar el reporte](#cómo-usar-el-reporte) 
+>
 >    + [Ejemplos](#ejemplos)
 >
 
@@ -15,8 +18,8 @@
 El Reporte de Dinero Disponible es un **informe descargable** en formato .csv o .xlsx que te permite conocer la liquidez de tu negocio, es decir, cuánto dinero tienes para usar. Contiene el **detalle de los pagos liberados** que están listos para retirar a una cuenta bancaria o invertir en Mercado Pago. 
 
 Accede a tus reportes desde la sección de Informes en tu cuenta en Mercado Pago siguiendo estos pasos:
-1. [Inicia sesión](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user) en Mercado Pago
-1. Ve a [Informes](https://www.mercadopago.com/mla/account/movements) y de ahí accede a tus [Reportes](https://www.mercadopago.com.ar/balance/reports)
+1. [Inicia sesión](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user) en Mercado Pago.
+1. Ve a [Informes](https://www.mercadopago.com/mla/account/movements) y de ahí accede a tus [Reportes](https://www.mercadopago.com.ar/balance/reports).
 1. En Reportes, elige Dinero Disponible, allí encontrarás un listado de los reportes generados.
 
 Ten en cuenta que la generación del reporte lleva un tiempo, es decir, que no siempre estará listo al instante y verás el estado “En preparación”. Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas: 
@@ -37,14 +40,14 @@ Generamos un Reporte de Dinero Disponible en estas tres situaciones:
 1. Con cada retiro de dinero a una cuenta bancaria. 
 
 Usa el Reporte de Dinero Disponible en estos casos: 
-* Cuando quieras tener un informe de liquidez de la cuenta,
-* Para conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional,
-* Conciliación mensual o periódica con el detalle de los movimientos que generan saldo disponible para retirar.
-* Para conocer:
+1. Cuando quieras tener un informe de liquidez de la cuenta.
+1. Para conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional.
+1. Conciliación mensual o periódica con el detalle de los movimientos que generan saldo disponible para retirar.
+1. Para conocer:
     + El historial de dinero disponible entre dos fechas o dos retiros. 
     + El detalle de los eventos que componen un retiro automático o manual, total o parcial. 
     + El detalle de disputas, reembolsos, shipping, contracargos, impuestos y otras operaciones que afecten el dinero disponible.
-    + El detalle de las cuotas liberadas y de las operaciones “En cuotas”
+    + El detalle de las cuotas liberadas y de las operaciones “En cuotas”.
 
 
 ## Cómo usar el reporte
@@ -52,21 +55,21 @@ Usa el Reporte de Dinero Disponible en estos casos:
 Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
 
 ![Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
-<p style="text-align:center;">Ejemplo en Excel </p>
+<p style="text-align:center;font-size:14px;">Ejemplo en Excel </p>
 
 ![Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
-<p style="text-align:center;">Ejemplo en Open Office </p>
+<p style="text-align:center;font-size:14px;">Ejemplo en Open Office </p>
 
 
 El reporte contiene 4 secciones:
-1. Balance Inicial (Initial Available Balance)
-1. Detalle de Liberaciones de dinero (Releases)
-1. Bloqueos de dinero por disputas (Block)
-1. Desbloqueos por la resolución de la disputa (Unblock)
+1. Balance Inicial (Initial Available Balance).
+1. Detalle de Liberaciones de dinero (Releases).
+1. Bloqueos de dinero por disputas (Block).
+1. Desbloqueos por la resolución de la disputa (Unblock).
 
 Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
 
-<p style="text-align:center;">Subtotal release - Subtotal block + Subtotal unblock = resultado total</p>
+> <p style="text-align:center;">Subtotal release - Subtotal block + Subtotal unblock = resultado total</p>
 
 Revisa el [Glosario completo](#glosario)
 
