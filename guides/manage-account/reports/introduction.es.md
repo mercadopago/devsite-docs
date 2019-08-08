@@ -5,13 +5,5 @@ Los reportes de Mercado Pago son informes descargables en formato .xlsx o .csv q
 Con estos informes buscamos cubrir las distintas necesidades de nuestros usuarios: 
 
 * Reportes de contabilidad
-    + Dinero disponible
-    + Dinero en cuenta
-    + Facturación
-
-* Reportes de Operaciones
-    + Retiros
-    + Reclamos
-    + Cobros
-    + Contracargos
-    + Gateway
+    + [Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money-reports/)
+    + [Dinero en cuenta](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money-reports/)

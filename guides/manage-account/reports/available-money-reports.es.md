@@ -1,13 +1,14 @@
 # ¿Qué es el Reporte de Dinero Disponible?
 
----
- **En esta página**
-
-- [Introducción](#introducción) 
-- [Casos de uso](#casos-de-uso)
-- [Cómo usar el reporte](#cómo-usar-el-reporte) 
-    + [Ejemplos](#ejemplos)
----
+> INDEX
+>
+> **En esta página**
+>
+> [Introducción](#introducción) 
+> [Casos de uso](#casos-de-uso)
+> [Cómo usar el reporte](#cómo-usar-el-reporte) 
+>    + [Ejemplos](#ejemplos)
+>
 
 ## Introducción
 
@@ -75,17 +76,6 @@ Reflejamos los conceptos contables universales del *debe* (dinero que tienes que
 <p style="padding-left:50px;">Tu deber estará en la columna NET_DEBIT</p>
 
 Verás el dinero disponible de las operaciones liberadas en las columnas NET_CREDIT (acreditado) y NET_DEBIT (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
-
-<!--
-<table style="border: 1px solid black;background:none;">
-  <tr style="border: 1px solid black;background:none;">
-    <td style="border: 1px solid black;background:none;">
-    
-**¿Quieres agregar detalles a la vista de las operaciones?** Selecciona las columnas que quieras exportar e incluir en los Ajustes del reporte, según lo que quieras analizar y conciliar. 
-     </td>
-  </tr>
-</table>
--->
 
 **¿Qué pasa si un retiro falla?**
 

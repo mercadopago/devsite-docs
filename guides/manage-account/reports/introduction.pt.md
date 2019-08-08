@@ -5,13 +5,5 @@ Os relatórios do Mercado Pago podem ser baixados em formato .XLSX ou .CSV e ser
 Com estes relatórios, procuramos cobrir as diferentes necessidades dos nossos usuários: 
 
 * Relatórios de contabilidade
-    + Saldo disponível
-    + Dinheiro em conta
-    + Faturamento
-
-* Relatórios de Operações
-    + Retiradas
-    + Reclamações
-    + Cobranças
-    + Contestações
-    + Gateway
+    + [Saldo disponível](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money-reports/)
+    + [Dinheiro em conta](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money-reports/)
