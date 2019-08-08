@@ -1,11 +1,13 @@
 # ¿Qué es el Reporte de Dinero Disponible?
 
+---
  **En esta página**
 
 - [Introducción](#introducción) 
 - [Casos de uso](#casos-de-uso)
 - [Cómo usar el reporte](#cómo-usar-el-reporte) 
     + [Ejemplos](#ejemplos)
+---
 
 ## Introducción
 
@@ -75,10 +77,10 @@ Reflejamos los conceptos contables universales del *debe* (dinero que tienes que
 Verás el dinero disponible de las operaciones liberadas en las columnas NET_CREDIT (acreditado) y NET_DEBIT (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
 <!--
-<table style="border: 1px solid black;">
-  <tr style="border: 1px solid black;">
-    <td style="border: 1px solid black;">
-
+<table style="border: 1px solid black;background:none;">
+  <tr style="border: 1px solid black;background:none;">
+    <td style="border: 1px solid black;background:none;">
+    
 **¿Quieres agregar detalles a la vista de las operaciones?** Selecciona las columnas que quieras exportar e incluir en los Ajustes del reporte, según lo que quieras analizar y conciliar. 
      </td>
   </tr>
@@ -114,6 +116,7 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
 
 # Genera tus reportes de Dinero Disponible
 
+---
 **En esta página**
 
 - Generación por retiro
@@ -122,6 +125,7 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
     + de forma manual
     + de forma programada
 - Ficha técnica
+---
 
 ## Generación vía web
 
@@ -699,9 +703,11 @@ request(options, callback);
 
 ## Glosario
 
+---
  **En esta página**
 
 - Glosario
+---
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
