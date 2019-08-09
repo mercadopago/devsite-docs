@@ -4,13 +4,13 @@
 >
 > En esta página
 >
-> - [Introducción](#introducción) 
+> - [Introducción](#bookmark_introducción) 
 >
-> - [Casos de uso](#casos-de-uso)
+> - [Casos de uso](#bookmark_casos_de_uso)
 >
-> - [Cómo usar el reporte](#cómo-usar-el-reporte) 
+> - [Cómo usar el reporte](#bookmark_cómo_usar_el_reporte) 
 >
->    + [Ejemplos](#ejemplos)
+>    + [Ejemplos](#bookmark_ejemplos)
 >
 
 ## Introducción
@@ -111,17 +111,17 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > En esta página
 >
-> - [Generación por retiro](#generación-por-retiro) 
+> - [Generación por retiro](#bookmark_generación_por_retiro) 
 >
-> - [Generación vía web](#generacion-via-web)
+> - [Generación vía web](#bookmark_generación_vía_web)
 >
-> - [Generación vía API](#generacion-via-api)
+> - [Generación vía API](#bookmark_generación_vía_api)
 >
 >    + de forma manual
 >
 >    + de forma programada
 >
-> - [Ficha técnica]()
+> - [Ficha técnica](#bookmark_ficha_técnica)
 >
 
 
@@ -705,7 +705,7 @@ request(options, callback);
 >
 > En esta página
 >
-> - Glosario
+> - [Glosario](#bookmark_glosario)
 >
 
 
