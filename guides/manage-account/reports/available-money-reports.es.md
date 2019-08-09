@@ -98,7 +98,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 
 > NOTE 
 > 
-> **Importante: diferencias entre retiro parcial y retiro total.**
+> Importante: diferencias entre retiro parcial y retiro total.
 > 
 > Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
 >
