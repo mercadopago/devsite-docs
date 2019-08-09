@@ -68,75 +68,38 @@ O relatório contém 4 seções:
 1. Bloqueios de dinheiro por disputas (Block)
 1. Desbloqueios pela resolução da disputa (Unblock)
 
-Você verá uma seção de subtotais por cada bloqueio e, finalmente, o resultado total. Calculamos este total sobre os subtotais líquidos de cada seção, é uma soma líquida de: 
+Você verá uma seção de **subtotais** por cada bloqueio e, finalmente, o **resultado total**. Calculamos este total sobre os subtotais líquidos de cada seção, é uma soma líquida de: 
 
 > Subtotal release - Subtotal block + Subtotal unblock = resultado total
 
-Confira o [Glossário completo](https://www.mercadopago.com/mla/pt/guides/manage-account/reports/available-money-reports/#bookmark_glosario)
+Confira o [Glossário completo](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money-reports/#bookmark_glosario)
 
 Vamos ver os conceitos contábeis universais de deve (dinheiro que você tem que pagar) e a ver (dinheiro que você tem que coletar) elaborando o relatório em duas colunas, uma para cada conceito: 
 
-Seu a ver estará na coluna NET_CREDIT
-Seu deve estará na coluna NET_DEBIT
-
-Você verá o dinheiro disponível nas operações liberadas nas colunas NET_CREDIT (creditado) e NET_DEBIT (debitado), dependendo de o valor ser positivo ou negativo. Você também verá o valor bruto e os custos de financiamento, impostos e custos de envio que deduzimos para chegar ao valor líquido.
-
-Quer adicionar detalhes à visualização das transações? Selecione as colunas que quiser exportar e incluir nos Ajustes do relatório, de acordo com o que quiser analisar e conciliar. 
-
-O que acontece se uma retirada falhar?
-Se isso acontecer, o relatório ainda será válido. O dinheiro volta para sua conta e a operação aparecerá no relatório como uma nova linha na coluna NET_CREDIT.
-
-## Cómo usar el reporte
-
-Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
-
-![Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
-<p style="text-align:center;font-size:12px;">Ejemplo en Excel </p>
-
-![Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
-<p style="text-align:center;font-size:12px;">Ejemplo en Open Office </p>
-
-
-El reporte contiene 4 secciones:
-1. Balance Inicial (Initial Available Balance).
-1. Detalle de Liberaciones de dinero (Releases).
-1. Bloqueos de dinero por disputas (Block).
-1. Desbloqueos por la resolución de la disputa (Unblock).
-
-Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
-
-> Subtotal release - Subtotal block + Subtotal unblock = resultado total
-
-Revisa el [Glosario completo](guides/manage-account/reports/available-money-reports/#bookmark_glosario)
-
-Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
-
-
-> Tu haber lo verás en la columna `NET_CREDIT`
+> Seu a ver estará na coluna `NET_CREDIT`
 >
-> Tu deber estará en la columna `NET_DEBIT`
+> Seu deve estará na coluna `NET_DEBIT`
 
+Você verá o dinheiro disponível nas operações liberadas nas colunas `NET_CREDIT` (creditado) e `NET_DEBIT` (debitado), dependendo de o valor ser positivo ou negativo. Você também verá o valor bruto e os custos de financiamento, impostos e custos de envio que deduzimos para chegar ao valor líquido.
 
-Verás el dinero disponible de las operaciones liberadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
+**O que acontece se uma retirada falhar?**
 
-**¿Qué pasa si un retiro falla?**
+Se isso acontecer, o relatório ainda será válido. O dinheiro volta para sua conta e a operação aparecerá no relatório como uma nova linha na coluna `NET_CREDIT`
 
-Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT`.
+### Exemplos (
 
-### Ejemplos
+Veja como o relatório de dinheiro disponível é composto neste exemplo para identificar as seções e ler seus próprios relatórios:
 
-Observa cómo está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
+![Relatório de dinheiro disponivel Exemplos Mercado Pago](/images/manage-account/reports/examples.png)
 
-![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples.png)
-
-La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
+A versão padrão mostrará uma visão estendida das colunas. O relatório final terá o máximo de detalhes possível. Se você quer menos detalhes ou há colunas que não são úteis para conciliação, você pode alterar quais devem ser incluídas e quais não em Ajustes.
 
 
 > NOTE 
 > 
-> Importante: diferencias entre retiro parcial y retiro total.
+> Importante: diferenças entre retirada parcial e retirada total.
 > 
-> Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
+> Quando você retirar todo o seu saldo disponível, o total do relatório corresponderá a esse valor. Por outro lado, quando você faz uma retirada parcial, que não inclui todo o seu dinheiro liberado na conta, o saldo total disponível e o total do relatório não coincidem.
 >
->Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
+>Por exemplo, imagine que você tenha R$ 3.000 disponíveis para retirar para uma conta bancária, mas retira apenas R$ 2.000. A retirada é parcial, mas o valor total do relatório continuará a mostrar o valor do saldo inicial que estava no momento da retirada, ou seja, os R$ 3.000 disponíveis. Por outro lado, se você retirar os R$ 3.000, o valor total do relatório corresponderá ao valor dessa retirada.
 >
