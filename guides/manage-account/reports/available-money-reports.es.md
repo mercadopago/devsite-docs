@@ -77,6 +77,7 @@ Reflejamos los conceptos contables universales del *debe* (dinero que tienes que
 
 
 > Tu haber lo verás en la columna `NET_CREDIT`
+>
 > Tu deber estará en la columna `NET_DEBIT`
 
 
@@ -93,7 +94,6 @@ Observa cómo está compuesto el reporte de dinero disponible en este ejemplo pa
 ![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
-
 
 
 > NOTE 
@@ -121,8 +121,8 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 >    + de forma programada
 >
->
 > - [Ficha técnica]()
+>
 
 
 ## Generación vía web
@@ -154,7 +154,7 @@ Haz el POST a la API especificando las fechas de inicio y fin de la siguiente ma
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report?access_token=`ENV_ACCESS_TOKEN`' \
+    'https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN' \
     -d '{
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
@@ -167,7 +167,7 @@ headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
 }
-params = { 'access_token', `ENV_ACCESS_TOKEN` }
+params = { 'access_token', 'ENV_ACCESS_TOKEN' }
 data = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report', headers=headers, params=params, data=data)
@@ -181,7 +181,7 @@ var headers = { 'accept': 'application/json', 'content-type': 'application/json'
 var dataString = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report?access_token='`ENV_ACCESS_TOKEN`,
+    url: 'https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN',
     method: 'POST',
     headers: headers,
     body: dataString
@@ -314,7 +314,7 @@ Detiene la generación automática del reporte. Actualiza el atributo *`schedule
 curl -X DELETE \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
-  'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`' \
+  'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' \
   -d '{"user_id": USER-ID}'
 ```
 
@@ -369,7 +369,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'http://api.mercadopago.com/v1/account/bank_report/config?access_token=`ENV_ACCESS_TOKEN`' \
+    'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
 ```
 
 ```Python
@@ -378,7 +378,7 @@ headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
 }
-params = {'access_token', '`ENV_ACCESS_TOKEN`'}
+params = {'access_token', 'ENV_ACCESS_TOKEN'}
 
 response = requests.get('http://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params)
 ```
@@ -392,7 +392,7 @@ var headers = {
 };
 
 var options = {
-    url: 'http://api.mercadopago.com/v1/account/bank_report/config?access_token=`ENV_ACCESS_TOKEN`',
+    url: 'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
     headers: headers
 };
 function callback(error, response, body) {
@@ -414,7 +414,7 @@ request(options, callback);
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=`ENV_ACCESS_TOKEN`' \
+    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
     -d '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
@@ -438,7 +438,7 @@ headers = {
     'content-type': 'application/json',
 }
 
-params = {'access_token', `ENV_ACCESS_TOKEN`}
+params = {'access_token', 'ENV_ACCESS_TOKEN'}
 
 data = '{  
             "file_name_prefix": "bank-report-USER_ID",
@@ -474,7 +474,7 @@ var dataString = '{
     }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=`ENV_ACCESS_TOKEN`',
+    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
     method: 'POST',
     headers: headers,
     body: dataString
@@ -500,7 +500,7 @@ request(options, callback);
 curl -X PUT \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=`ENV_ACCESS_TOKEN`' \
+    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
     -d '{
         "file_name_prefix": "bank-report-USER_ID",
         "include_withdrawal_at_end": false,
@@ -524,7 +524,7 @@ headers = {
 }
 
 params = (
-    ('access_token', `ENV_ACCESS_TOKEN`),
+    ('access_token', 'ENV_ACCESS_TOKEN'),
 )
 
 data = '{
@@ -561,7 +561,7 @@ var dataString = '{
     }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=`ENV_ACCESS_TOKEN`',
+    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
     method: 'PUT',
     headers: headers,
     body: dataString
@@ -587,7 +587,7 @@ request(options, callback);
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`'
+    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN'
 ```
 
 ```Python
@@ -614,7 +614,7 @@ var headers = {
 };
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`',
+    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
     method: 'POST',
     headers: headers
 };
@@ -639,7 +639,7 @@ request(options, callback);
 curl -X DELETE \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`'
+    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN'
 ```
 
 ```Python
@@ -663,7 +663,7 @@ var headers = {
 };
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`',
+    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
     method: 'DELETE',
     headers: headers
 };
