@@ -1,6 +1,5 @@
 # ¿Qué es el Reporte de Dinero Disponible?
 
-```
 > INDEX
 >
 > En esta página
@@ -13,8 +12,6 @@
 >
 >    + [Ejemplos](#ejemplos)
 >
-```
-
 
 ## Introducción
 
@@ -35,7 +32,7 @@ Esos plazos tienen que ver con los tiempos de los bancos o por los flujos de int
 
 ## Casos de uso
 
-Por lo general, **este reporte se usa para conciliar los retiros de dinero** e incluye las transacciones que lo componen. 
+Por lo general, **este reporte se usa para conciliar** los retiros de dinero e incluye las transacciones que lo componen. 
 
 Generamos un Reporte de Dinero Disponible en estas tres situaciones: 
 1. Cada vez que lo generas manualmente. 
@@ -72,14 +69,14 @@ El reporte contiene 4 secciones:
 
 Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
 
-> <p style="text-align:center;">Subtotal release - Subtotal block + Subtotal unblock = resultado total</p>
+>           Subtotal release - Subtotal block + Subtotal unblock = resultado total
 
 Revisa el [Glosario completo](#glosario)
 
 Reflejamos los conceptos contables universales del *debe** (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
-><p style="padding-left:50px;">Tu haber lo verás en la columna `NET_CREDIT`</p>
-><p style="padding-left:50px;">Tu deber estará en la columna `NET_DEBIT`</p>
+>           Tu haber lo verás en la columna `NET_CREDIT`
+>           Tu deber estará en la columna `NET_DEBIT`
 
 Verás el dinero disponible de las operaciones liberadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
@@ -95,11 +92,23 @@ Observa cómo está compuesto el reporte de dinero disponible en este ejemplo pa
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
 
+
+
+> WARNING 
+> 
+> Importante: diferencias entre retiro parcial y retiro total.
+> 
+> Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
+>
+>Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
+>
+
+
 <table>
   <tr style="background:none;">
     <td style="border: 1px solid black;width:70%;background:none;">
 
-<span style="font-weight:bold">Importante: diferencias entre retiro parcial y retiro total.</span>
+<span style="font-weight:bold"></span>
 
 Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir. 
 
@@ -113,8 +122,6 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
 
 # Genera tus reportes de Dinero Disponible
 
-
-```
 > INDEX
 >
 > En esta página
@@ -130,7 +137,7 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
 >    + de forma programada
 >
 > - Ficha técnica
-```
+
 
 ## Generación vía web
 
@@ -204,7 +211,7 @@ request(options, callback);
 
 Recibirás como respuesta un `HTTP STATUS 202` (Accepted), y el reporte se generará de manera asincrónica.
 
-#### 2. **Búsqueda**
+#### 2. Búsqueda
 
 Consulta la API de esta forma para ver si la generación de reportes quedó lista:
 
@@ -260,7 +267,7 @@ Recibirás como respuesta un `HTTP STATUS 200` (OK):
 ]
 ```
 
-#### 3. **Descarga**
+#### 3. Descarga
 
 Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
@@ -282,7 +289,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 ### De forma programada
 
-#### 1. **Generación**
+#### 1. Generación
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `*scheduled*` en la configuración a `*true*`:
 
@@ -345,7 +352,7 @@ Recibirás como respuesta un `HTTP STATUS 200` (OK)
 ```
 
 
-#### 2. **Descarga**
+#### 2. Descarga
 
 Descarga el archivo con este comando: 
 
@@ -366,9 +373,9 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 ```
 
 
-#### 3. **Configuración**
+#### 3. Configuración
 
-### Consultar configuración 
+##### Consultar configuración 
 
 [[[
 
@@ -413,7 +420,7 @@ request(options, callback);
 ]]]
 
 
-### Crear configuración
+##### Crear configuración
 
 [[[
     
@@ -499,7 +506,7 @@ request(options, callback);
 
 ]]]
 
-### Actualizar configuración
+##### Actualizar configuración
 
 [[[
 
@@ -586,7 +593,7 @@ request(options, callback);
 
 ]]]
 
-### Iniciar generación programada
+##### Iniciar generación programada
 
 [[[
 
@@ -638,7 +645,7 @@ request(options, callback);
 
 ]]]
 
-### Cancelar generación programada
+##### Cancelar generación programada
 
 [[[
 
@@ -708,15 +715,13 @@ request(options, callback);
 
 ## Glosario
 
-
-```
 > INDEX
 >
 > En esta página
 >
 > - Glosario
 >
-```
+
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
