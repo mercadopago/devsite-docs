@@ -20,7 +20,7 @@ properties:
       es: Nombre del cliente.
       pt: Nome do cliente.
 - last_name:
-    type: String (a-z A-Z)
+    type: String (a-zA-Z)
     description:
       en: Customer's last name.
       es: Apellido del cliente.
