@@ -71,7 +71,7 @@ Verás una sección de **subtotales** por cada bloque y, finalmente, el **result
 
 > Subtotal release - Subtotal block + Subtotal unblock = resultado total
 
-Revisa el [Glosario completo](#glosario)
+Revisa el [Glosario completo](https://www.mercadopago.com/mla/es/guides/manage-account/reports/available-money-reports/#bookmark_glosario)
 
 Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
