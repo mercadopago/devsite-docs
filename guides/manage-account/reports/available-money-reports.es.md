@@ -3,7 +3,7 @@
 ```
 > INDEX
 >
-> **En esta página**
+> En esta página
 >
 > - [Introducción](#introducción) 
 >
@@ -26,7 +26,7 @@ Accede a tus reportes desde la sección de Informes en tu cuenta en Mercado Pago
 1. En Reportes, elige Dinero Disponible, allí encontrarás un listado de los reportes generados.
 
 Ten en cuenta que la generación del reporte lleva un tiempo, es decir, que no siempre estará listo al instante y verás el estado “En preparación”. Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas: 
-* Desde un link de descarga que te enviaremos por mail
+* Desde un link de descarga que te enviaremos por mail.
 * Desde tu cuenta de Mercado Pago, en Reportes de Dinero Disponible.
 
 Es importante aclarar que el valor total del reporte no siempre coincide con los valores del reporte de Dinero en Cuenta o los reportes de facturación. Dependiendo de [los plazos y tasas que elijas](https://www.mercadopago.com.ar/settings/release-options), el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Para saber la fecha exacta en que estará disponible el dinero de una operación, revisa el detalle de tus [cobros acreditados](https://www.mercadopago.com.ar/activities/balance). 
@@ -114,29 +114,23 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
 # Genera tus reportes de Dinero Disponible
 
 
-
 ```
 > INDEX
 >
-> **En esta página**
+> En esta página
 >
-> - [Introducción](#introducción) 
+> - [Generación por retiro](#generación-por-retiro) 
 >
-> - [Casos de uso](#casos-de-uso)
+> - [Generación vía web](#generacion-via-web)
 >
-> - [Cómo usar el reporte](#cómo-usar-el-reporte) 
+> - [Generación vía API](#generacion-via-api)
 >
->    + [Ejemplos](#ejemplos)
+>    + de forma manual
 >
+>    + de forma programada
+>
+> - Ficha técnica
 ```
-
-- Generación por retiro
-- [Generación vía web](#generacion-via-web)
-- [Generación vía API](#generacion-via-api)
-    + de forma manual
-    + de forma programada
-- Ficha técnica
----
 
 ## Generación vía web
 
@@ -714,11 +708,15 @@ request(options, callback);
 
 ## Glosario
 
----
- **En esta página**
 
-- Glosario
----
+```
+> INDEX
+>
+> En esta página
+>
+> - Glosario
+>
+```
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
