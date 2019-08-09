@@ -72,7 +72,7 @@ Você verá uma seção de **subtotais** por cada bloqueio e, finalmente, o **re
 
 > Subtotal release - Subtotal block + Subtotal unblock = resultado total
 
-Confira o [Glossário completo](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money-reports/#bookmark_glosario)
+Confira o [Glossário completo](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money-reports-glossary)
 
 Vamos ver os conceitos contábeis universais de deve (dinheiro que você tem que pagar) e a ver (dinheiro que você tem que coletar) elaborando o relatório em duas colunas, uma para cada conceito: 
 

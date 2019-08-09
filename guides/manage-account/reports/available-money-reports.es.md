@@ -71,7 +71,7 @@ Verás una sección de **subtotales** por cada bloque y, finalmente, el **result
 
 > Subtotal release - Subtotal block + Subtotal unblock = resultado total
 
-Revisa el [Glosario completo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money-reports/#bookmark_glosario)
+Revisa el [Glosario completo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money-reports-glossary)
 
 Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
@@ -79,7 +79,6 @@ Reflejamos los conceptos contables universales del *debe* (dinero que tienes que
 > Tu haber lo verás en la columna `NET_CREDIT`
 >
 > Tu deber estará en la columna `NET_DEBIT`
-
 
 Verás el dinero disponible de las operaciones liberadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
@@ -94,7 +93,6 @@ Observa cómo está compuesto el reporte de dinero disponible en este ejemplo pa
 ![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
-
 
 > NOTE 
 > 
