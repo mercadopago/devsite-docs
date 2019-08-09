@@ -361,7 +361,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 #### 3. Configuración
 
-##### Consultar configuración 
+###### Consultar configuración 
 
 [[[
 
@@ -406,7 +406,7 @@ request(options, callback);
 ]]]
 
 
-##### Crear configuración
+###### Crear configuración
 
 [[[
     
@@ -492,7 +492,7 @@ request(options, callback);
 
 ]]]
 
-##### Actualizar configuración
+###### Actualizar configuración
 
 [[[
 
@@ -579,7 +579,7 @@ request(options, callback);
 
 ]]]
 
-##### Iniciar generación programada
+###### Iniciar generación programada
 
 [[[
 
