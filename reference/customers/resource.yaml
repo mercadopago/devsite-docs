@@ -14,7 +14,7 @@ properties:
       es: Email del cliente.
       pt: E-mail do cliente.
 - first_name:
-    type: String (a-z A-Z)
+    type: String (a-zA-Z)
     description:
       en: Customer's name. 
       es: Nombre del cliente.
