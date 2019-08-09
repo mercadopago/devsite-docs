@@ -69,14 +69,16 @@ El reporte contiene 4 secciones:
 
 Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
 
->           Subtotal release - Subtotal block + Subtotal unblock = resultado total
+> Subtotal release - Subtotal block + Subtotal unblock = resultado total
 
 Revisa el [Glosario completo](#glosario)
 
-Reflejamos los conceptos contables universales del *debe** (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
+Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
->           Tu haber lo verás en la columna `NET_CREDIT`
->           Tu deber estará en la columna `NET_DEBIT`
+
+> Tu haber lo verás en la columna `NET_CREDIT`
+> Tu deber estará en la columna `NET_DEBIT`
+
 
 Verás el dinero disponible de las operaciones liberadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
@@ -94,31 +96,14 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 
 
 
-> WARNING 
+> NOTE 
 > 
-> Importante: diferencias entre retiro parcial y retiro total.
+> **Importante: diferencias entre retiro parcial y retiro total.**
 > 
 > Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
 >
 >Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
 >
-
-
-<table>
-  <tr style="background:none;">
-    <td style="border: 1px solid black;width:70%;background:none;">
-
-<span style="font-weight:bold"></span>
-
-Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir. 
-
-
-Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro. 
-     </td>
-     <td style="border: none;background:none;width:30%"></td>
-
-  </tr>
-</table>
 
 # Genera tus reportes de Dinero Disponible
 
@@ -136,7 +121,8 @@ Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta ba
 >
 >    + de forma programada
 >
-> - Ficha técnica
+>
+> - [Ficha técnica]()
 
 
 ## Generación vía web
@@ -159,7 +145,7 @@ Ganá tiempo programando la **frecuencia de generación** del reporte de Dinero 
 
 Genera tus reportes de forma manual configurando estas tres instancias: 
 
-#### 1. **Generación**
+#### 1. Generación
 
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
@@ -168,7 +154,7 @@ Haz el POST a la API especificando las fechas de inicio y fin de la siguiente ma
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report?access_token='`ENV_ACCESS_TOKEN` \
+    'https://api.mercadopago.com/v1/account/bank_report?access_token=`ENV_ACCESS_TOKEN`' \
     -d '{
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
@@ -291,7 +277,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 #### 1. Generación
 
-Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo `*scheduled*` en la configuración a `*true*`:
+Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
 
 ```curl
 curl -X POST \
@@ -322,7 +308,7 @@ Recibirás como respuesta un `HTTP STATUS 200`(OK)
 }
 ```
 
-Detiene la generación automática del reporte. Actualiza el atributo `scheduled` en la configuración a `false`:
+Detiene la generación automática del reporte. Actualiza el atributo *`scheduled`* en la configuración a *`false`*:
 
 ```curl
 curl -X DELETE \
