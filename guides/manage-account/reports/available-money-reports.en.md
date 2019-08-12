@@ -1,4 +1,4 @@
- # What is the Available Balance Report?
+# What is the Available Balance Report?
 
 > INDEX
 >
