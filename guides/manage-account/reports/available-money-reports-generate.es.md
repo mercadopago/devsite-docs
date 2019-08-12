@@ -69,7 +69,7 @@ $data = '{
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report?access_token=´ENV_ACCESS_TOKEN´', $headers, $data);
 ```
 
-```Java  
+```json  
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report?access_token=´ENV_ACCESS_TOKEN´");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
