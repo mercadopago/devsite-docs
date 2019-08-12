@@ -491,14 +491,13 @@ Recibirás como respuesta un `HTTP STATUS 200` (OK)
 
 #### 2. Descarga
 
-Descarga el archivo con este comando: 
+Descarga el archivo con este comando:
+
 
 [[[
-
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`' 
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -506,7 +505,6 @@ Requests::register_autoloader();
 $headers = array();
 $response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
-
 ```java
  URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN");
 
@@ -518,7 +516,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -528,7 +525,6 @@ params = (
 
 response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
 ```
-
 ```node
 var request = require('request');
 
@@ -544,7 +540,6 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
 Recibirás como respuesta un `HTTP STATUS 200` (OK):
@@ -564,14 +559,12 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 ##### Consultar configuración
 
 [[[
-
 ```curl
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -582,7 +575,6 @@ $headers = array(
 );
 $response = Requests::get('http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
-
 ```java
  URL url = new URL("http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
 
@@ -596,7 +588,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```Python
 import requests
 headers = {
@@ -607,7 +598,6 @@ params = {'access_token', 'ENV_ACCESS_TOKEN'}
 
 response = requests.get('http://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params)
 ```
-
 ```node
 var request = require('request');
 
@@ -627,13 +617,11 @@ function callback(error, response, body) {
 }
 request(options, callback);
 ```
-
 ]]]
 
 ##### Crear configuración
 
 [[[
-
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -653,7 +641,6 @@ curl -X POST \
             }
     }'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -677,7 +664,6 @@ $data = '{
     }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
 
@@ -712,7 +698,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```Python
 import requests
 
@@ -735,7 +720,6 @@ data = '{
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
 ```
-
 ```node
 var request = require('request');
 
@@ -773,13 +757,11 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
 ##### Actualizar configuración
 
 [[[
-
 ```curl
 curl -X PUT \
     -H 'accept: application/json' \
@@ -917,20 +899,17 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
 ##### Iniciar generación programada
 
 [[[
-
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -941,7 +920,6 @@ $headers = array(
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
 
@@ -955,7 +933,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```Python
 import requests
 
@@ -970,7 +947,6 @@ params = (
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
 ```
-
 ```node
 var request = require('request');
 
@@ -993,13 +969,11 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
 ##### Cancelar generación programada
 
 [[[
-
 ```curl
 curl -X DELETE \
     -H 'accept: application/json' \
@@ -1017,7 +991,6 @@ $headers = array(
 );
 $response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
 
@@ -1031,7 +1004,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```Python
 import requests
 
@@ -1043,7 +1015,6 @@ params = {'access_token', 'ENV_ACCESS_TOKEN'}
 
 response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
 ```
-
 ```node
 var request = require('request');
 
