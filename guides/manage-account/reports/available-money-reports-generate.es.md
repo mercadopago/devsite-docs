@@ -77,7 +77,7 @@ connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 connection.setDoOutput(true);
 
-String body = "{\\\"begin_date\\\":\\\"2019-05-01T00:00:00Z\\\",\\\"end_date\\\": \\\"2019-06-01T00:00:00Z\\\"}";
+String body = "{"begin_date\\":\\"2019-05-01T00:00:00Z\\",\\"end_date\\": \\"2019-06-01T00:00:00Z\\"}";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
