@@ -42,7 +42,6 @@ Genera tus reportes de forma manual configurando estas tres instancias:
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 [[[
-
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -78,7 +77,7 @@ connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 connection.setDoOutput(true);
 
-String body = "{\"begin_date\":\"2019-05-01T00:00:00Z\",\"end_date\": \"2019-06-01T00:00:00Z\"}";
+String body = '{"begin_date":"2019-05-01T00:00:00Z","end_date": "2019-06-01T00:00:00Z"}';
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -121,7 +120,6 @@ function callback(error, response, body) {
 }
 request(options, callback);
 ```
-
 ]]]
 
 Recibirás como respuesta un `HTTP STATUS 202` (Accepted), y el reporte se generará de manera asincrónica.
@@ -131,14 +129,12 @@ Recibirás como respuesta un `HTTP STATUS 202` (Accepted), y el reporte se gener
 Consulta la API de esta forma para ver si la generación de reportes quedó lista:
 
 [[[
-
 ```curl
 curl -G \
     -H 'accept: application/json' \
     -d 'access_token=ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/bank_report/list'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -151,7 +147,6 @@ $data = array(
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/list', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/list?access_token=ENV_ACCESS_TOKEN");
 
@@ -163,7 +158,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```Python
 import requests
 headers = { 'accept': 'application/json' }
@@ -186,9 +180,7 @@ function callback(error, response, body) {
     }
 }
 request(options, callback);
-
 ```
-
 ]]]
 
 Recibirás como respuesta un `HTTP STATUS 200` (OK):
@@ -215,11 +207,9 @@ Recibirás como respuesta un `HTTP STATUS 200` (OK):
 Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
 [[[
-
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -232,7 +222,6 @@ $data = array(
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/:file_name', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN");
 
@@ -244,7 +233,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -254,7 +242,6 @@ params = (
 
 response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
 ```
-
 ```node
 var request = require('request');
 
@@ -270,8 +257,8 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
+
 
 Recibirás como respuesta un `HTTP STATUS 200` (OK) :
 
@@ -820,7 +807,6 @@ curl -X PUT \
         }
     }'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -844,7 +830,6 @@ $data = '{
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
 
@@ -879,7 +864,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```Python
 import requests
 
@@ -904,7 +888,6 @@ data = '{
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
 ```
-
 ```node
 var request = require('request');
 
@@ -1091,7 +1074,6 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
 ## Ficha técnica
