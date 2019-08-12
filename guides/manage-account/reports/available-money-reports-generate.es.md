@@ -42,6 +42,7 @@ Genera tus reportes de forma manual configurando estas tres instancias:
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 [[[
+
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -87,7 +88,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```Python
 import requests
 
@@ -100,7 +100,6 @@ data = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report', headers=headers, params=params, data=data)
 ```
-
 ```node
 var request = require('request');
 
