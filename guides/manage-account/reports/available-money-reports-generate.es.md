@@ -95,7 +95,9 @@ headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
 }
-params = { 'access_token', 'ENV_ACCESS_TOKEN' }
+
+params = { 'access_token': 'ENV_ACCESS_TOKEN' }
+
 data = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report', headers=headers, params=params, data=data)
@@ -160,9 +162,12 @@ System.out.println(connection.getInputStream());
 ```
 ```Python
 import requests
+
 headers = { 'accept': 'application/json' }
-data = { 'access_token': 'ENV_ACCESS_TOKEN' }
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report/list', headers=headers, data=data)
+
+params = { 'access_token': 'ENV_ACCESS_TOKEN' }
+
+response = requests.post('https://api.mercadopago.com/v1/account/bank_report/list', headers=headers, params=params)
 ```
 ```node
 var request = require('request');
@@ -236,9 +241,7 @@ System.out.println(connection.getInputStream());
 ```python
 import requests
 
-params = (
-    ('access_token', 'ENV_ACCESS_TOKEN'),
-)
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
 ```
@@ -329,9 +332,7 @@ headers = {
     'content-type': 'application/json',
 }
 
-params = (
-    ('access_token', 'ENV_ACCESS_TOKEN'),
-)
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 data = '{ "user_id": "USER-ID" }'
 
@@ -433,9 +434,7 @@ headers = {
     'content-type': 'application/json',
 }
 
-params = (
-    ('access_token', 'ENV_ACCESS_TOKEN'),
-)
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 data = '{"user_id": "USER-ID" }'
 
@@ -519,9 +518,7 @@ System.out.println(connection.getInputStream());
 ```python
 import requests
 
-params = (
-    ('access_token', 'ENV_ACCESS_TOKEN'),
-)
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
 ```
@@ -594,7 +591,7 @@ headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
 }
-params = {'access_token', 'ENV_ACCESS_TOKEN'}
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 response = requests.get('http://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params)
 ```
@@ -706,7 +703,7 @@ headers = {
     'content-type': 'application/json',
 }
 
-params = {'access_token', 'ENV_ACCESS_TOKEN'}
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 data = '{  
             "file_name_prefix": "bank-report-USER_ID",
@@ -846,9 +843,7 @@ headers = {
     'content-type': 'application/json',
 }
 
-params = (
-    ('access_token', 'ENV_ACCESS_TOKEN'),
-)
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 data = '{
             "file_name_prefix": "bank-report-USER_ID",
@@ -858,6 +853,7 @@ data = '{
             "extended": true,
             "schedule":true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
+
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
@@ -941,9 +937,7 @@ headers = {
     'content-type': 'application/json',
 }
 
-params = (
-    ('access_token', 'ENV_ACCESS_TOKEN'),
-)
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
 ```
@@ -1011,7 +1005,7 @@ headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
 }
-params = {'access_token', 'ENV_ACCESS_TOKEN'}
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
 ```
