@@ -77,7 +77,7 @@ connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 connection.setDoOutput(true);
 
-String body = '{"begin_date":"2019-05-01T00:00:00Z","end_date": "2019-06-01T00:00:00Z"}';
+String body = "{\\\"begin_date\\\":\\\"2019-05-01T00:00:00Z\\\",\\\"end_date\\\": \\\"2019-06-01T00:00:00Z\\\"}";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -279,7 +279,6 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
 
 [[[
-
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -289,7 +288,6 @@ curl -X POST \
         "user_id": "USER-ID"
     }'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -303,7 +301,6 @@ $data = '{
     }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
 
@@ -313,7 +310,7 @@ connection.setRequestMethod("POST");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 
-String body = "{\"user_id\": \"USER-ID\" }";
+String body = "{\\\"user_id\\\": \\\"USER-ID\\\" }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -324,7 +321,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -340,9 +336,7 @@ params = (
 data = '{ "user_id": "USER-ID" }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
-
 ```
-
 ```node
 var request = require('request');
 
@@ -368,7 +362,6 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
 Recibirás como respuesta un `HTTP STATUS 200`(OK)
@@ -376,7 +369,7 @@ Recibirás como respuesta un `HTTP STATUS 200`(OK)
 ```json
 {
     "id": 2541818,
-    "user_id": USER-ID,
+    "user_id": "USER-ID",
     "begin_date": "2019-07-01T06:00:00Z",
     "end_date": "2019-08-01T06:00:00Z",
     "created_from": "schedule",
@@ -393,15 +386,13 @@ Recibirás como respuesta un `HTTP STATUS 200`(OK)
 Detiene la generación automática del reporte. Actualiza el atributo *`scheduled`* en la configuración a *`false`*:
 
 [[[
-
 ```curl
 curl -X DELETE \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
   'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' \
-  -d '{"user_id": USER-ID}'
+  -d '{"user_id": "USER-ID"}'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -413,7 +404,6 @@ $headers = array(
 $data = '{"user_id": "USER-ID" }';
 $response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
 
@@ -423,7 +413,7 @@ connection.setRequestMethod("DELETE");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 
-String body = "{\"user_id\": \"USER-ID\" }";
+String body = "{\\\"user_id\\\": \\\"USER-ID\\\" }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -699,15 +689,15 @@ connection.setRequestProperty("Content-Type", "application/json");
 
 connection.setDoOutput(true);
 
-String body = "{\"file_name_prefix\": \"bank-report-USER_ID\",\"include_withdrawal_at_end\": false,
-            \"detailed\": true,
-            \"execute_after_withdrawal\": true,
-            \"extended\": true,
-            \"schedule\":true,
-            \"frequency\": {
-                \"hour\": 0,
-                \"type\": \"monthly\",
-                \"value\": 1
+String body = "{\\\"file_name_prefix\\\": \\\"bank-report-USER_ID\\\",\\\"include_withdrawal_at_end\\\": false,
+            \\\"detailed\\\": true,
+            \\\"execute_after_withdrawal\\\": true,
+            \\\"extended\\\": true,
+            \\\"schedule\\\":true,
+            \\\"frequency\\\": {
+                \\\"hour\\\": 0,
+                \\\"type\\\": \\\"monthly\\\",
+                \\\"value\\\": 1
             }
             }";
 
@@ -842,18 +832,18 @@ connection.setRequestProperty("Content-Type", "application/json");
 connection.setDoOutput(true);
 
 String body = "{
-                    \"file_name_prefix\": \"bank-report-USER_ID\",
-                    \"include_withdrawal_at_end\": false,
-                    \"detailed\": true,
-                    \"execute_after_withdrawal\": true,
-                    \"extended\": true,
-                    \"schedule\":true,
-                    \"frequency\": {
-                        \"hour\": 0,
-                        \"type\": \"monthly\",
-                        \"value\": 1
-                    }
-                }";
+            \\\"file_name_prefix\\\": \\\"bank-report-USER_ID\\\",
+            \\\"include_withdrawal_at_end\\\": false,
+            \\\"detailed\\\": true,
+            \\\"execute_after_withdrawal\\\": true,
+            \\\"extended\\\": true,
+            \\\"schedule\\\":true,
+            \\\"frequency\\\": {
+                \\\"hour\\\": 0,
+                \\\"type\\\": \\\"monthly\\\",
+                \\\"value\\\": 1
+            }
+            }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
