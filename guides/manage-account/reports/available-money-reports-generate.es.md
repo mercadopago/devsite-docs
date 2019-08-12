@@ -17,7 +17,6 @@
 > - [Ficha técnica](#bookmark_ficha_técnica)
 >
 
-
 ## Generación vía web
 
 Genera tus reportes de Dinero Disponible desde tu panel de Mercado Pago. Solo podrás programar los reportes por retiro. Sigue estos pasos para hacerlo:
@@ -52,6 +51,42 @@ curl -X POST \
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
     }'
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$data = '{
+            "begin_date": "2019-05-01T00:00:00Z",
+            "end_date": "2019-06-01T00:00:00Z"
+    }';
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report?access_token=´ENV_ACCESS_TOKEN´', $headers, $data);
+```
+```java
+        
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report?access_token=´ENV_ACCESS_TOKEN´");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("POST");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+connection.setDoOutput(true);
+
+String body = "{\"begin_date\":\"2019-05-01T00:00:00Z\",\"end_date\": \"2019-06-01T00:00:00Z\"}";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
 ```
 ```Python
 import requests
@@ -100,6 +135,31 @@ curl -G \
     -H 'accept: application/json' \
     -d 'access_token=ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/bank_report/list'
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json'
+);
+$data = array(
+    'access_token' => 'ENV_ACCESS_TOKEN'
+);
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/list', $headers, $data);
+```
+```java
+        
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/list?access_token=´ENV_ACCESS_TOKEN´");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+
 ```
 ```Python
 import requests
@@ -150,9 +210,63 @@ Recibirás como respuesta un `HTTP STATUS 200` (OK):
 
 Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
+[[[
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`' 
 ```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json'
+);
+$data = array(
+    'access_token' => 'ENV_ACCESS_TOKEN'
+);
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/:file_name', $headers, $data);
+```
+```java
+        
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=´ENV_ACCESS_TOKEN´");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+
+```
+```python
+import requests
+
+params = (
+    ('access_token', '`ENV_ACCESS_TOKEN`'),
+)
+
+response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
+
+```
+```node
+
+var request = require('request');
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`'
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
+
+```
+]]]
 
 Recibirás como respuesta un `HTTP STATUS 200` (OK) :
 
@@ -172,6 +286,8 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
 
+[[[
+
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -181,6 +297,85 @@ curl -X POST \
         "user_id": USER-ID
     }'
 ``` 
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$data = '{
+        "user_id": USER-ID
+    }';
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`', $headers, $data);
+
+```
+```java
+
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("POST");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+String body = "{\"user_id\": USER-ID}";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = (
+    ('access_token', 'ENV_ACCESS_TOKEN'),
+)
+
+data = '{ "user_id": USER-ID }'
+
+response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
+
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var dataString = '{ "user_id": USER-ID }';
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`',
+    method: 'POST',
+    headers: headers,
+    body: dataString
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
+
+```
+]]]
 
 Recibirás como respuesta un `HTTP STATUS 200`(OK)
 
@@ -203,6 +398,8 @@ Recibirás como respuesta un `HTTP STATUS 200`(OK)
 
 Detiene la generación automática del reporte. Actualiza el atributo *`scheduled`* en la configuración a *`false`*:
 
+[[[
+
 ```curl
 curl -X DELETE \
   -H 'accept: application/json' \
@@ -210,6 +407,81 @@ curl -X DELETE \
   'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' \
   -d '{"user_id": USER-ID}'
 ```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$data = '{"user_id": USER-ID}';
+$response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("DELETE");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+String body = "{\"user_id\": USER-ID}";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = (
+    ('access_token', 'ENV_ACCESS_TOKEN'),
+)
+
+data = '{"user_id": USER-ID}'
+
+response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
+
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var dataString = '{"user_id": USER-ID}';
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
+    method: 'DELETE',
+    headers: headers,
+    body: dataString
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
+```
+]]]
 
 Recibirás como respuesta un `HTTP STATUS 200` (OK)
 
