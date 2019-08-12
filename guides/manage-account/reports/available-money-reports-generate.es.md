@@ -77,7 +77,7 @@ connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 connection.setDoOutput(true);
 
-String body = "{"begin_date\\":\\"2019-05-01T00:00:00Z\\",\\"end_date\\": \\"2019-06-01T00:00:00Z\\"}";
+String body = "{\\"begin_date\\":\\"2019-05-01T00:00:00Z\\",\\"end_date\\": \\"2019-06-01T00:00:00Z\\"}";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -310,7 +310,7 @@ connection.setRequestMethod("POST");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 
-String body = "{\\\"user_id\\\": \\\"USER-ID\\\" }";
+String body = "{\\"user_id\\": \\"USER-ID\\" }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -413,7 +413,7 @@ connection.setRequestMethod("DELETE");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 
-String body = "{\\\"user_id\\\": \\\"USER-ID\\\" }";
+String body = "{\\"user_id\\": \\"USER-ID\\" }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -689,17 +689,19 @@ connection.setRequestProperty("Content-Type", "application/json");
 
 connection.setDoOutput(true);
 
-String body = "{\\\"file_name_prefix\\\": \\\"bank-report-USER_ID\\\",\\\"include_withdrawal_at_end\\\": false,
-            \\\"detailed\\\": true,
-            \\\"execute_after_withdrawal\\\": true,
-            \\\"extended\\\": true,
-            \\\"schedule\\\":true,
-            \\\"frequency\\\": {
-                \\\"hour\\\": 0,
-                \\\"type\\\": \\\"monthly\\\",
-                \\\"value\\\": 1
-            }
-            }";
+String body = "{
+                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
+                \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
+                \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
+                \\"schedule\\":true,
+                \\"frequency\\": {
+                    \\"hour\\": 0,
+                    \\"type\\": \\"monthly\\",
+                    \\"value\\": 1
+                }
+                }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -832,17 +834,17 @@ connection.setRequestProperty("Content-Type", "application/json");
 connection.setDoOutput(true);
 
 String body = "{
-            \\\"file_name_prefix\\\": \\\"bank-report-USER_ID\\\",
-            \\\"include_withdrawal_at_end\\\": false,
-            \\\"detailed\\\": true,
-            \\\"execute_after_withdrawal\\\": true,
-            \\\"extended\\\": true,
-            \\\"schedule\\\":true,
-            \\\"frequency\\\": {
-                \\\"hour\\\": 0,
-                \\\"type\\\": \\\"monthly\\\",
-                \\\"value\\\": 1
-            }
+                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
+                \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
+                \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
+                \\"schedule\\":true,
+                \\"frequency\\": {
+                    \\"hour\\": 0,
+                    \\"type\\": \\"monthly\\",
+                    \\"value\\": 1
+                }
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
