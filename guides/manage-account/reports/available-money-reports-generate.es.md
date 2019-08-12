@@ -42,7 +42,6 @@ Genera tus reportes de forma manual configurando estas tres instancias:
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 [[[
-
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -53,7 +52,6 @@ curl -X POST \
             "end_date": "2019-06-01T00:00:00Z"
     }'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -66,11 +64,10 @@ $data = '{
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
     }';
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report?access_token=´ENV_ACCESS_TOKEN´', $headers, $data);
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
-
-```json  
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report?access_token=´ENV_ACCESS_TOKEN´");
+```java  
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
@@ -173,7 +170,6 @@ headers = { 'accept': 'application/json' }
 data = { 'access_token': 'ENV_ACCESS_TOKEN' }
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/list', headers=headers, data=data)
 ```
-
 ```node
 var request = require('request');
 var headers = { 'accept': 'application/json'};
