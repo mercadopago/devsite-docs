@@ -507,9 +507,57 @@ Recibirás como respuesta un `HTTP STATUS 200` (OK)
 
 Descarga el archivo con este comando: 
 
+[[[
+
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`' 
 ```
+```php
+
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array();
+$response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`', $headers);
+
+```
+```java
+ URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```python
+import requests
+
+params = (
+    ('access_token', '`ENV_ACCESS_TOKEN`'),
+)
+
+response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
+
+```
+```node
+var request = require('request');
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`'
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
+```
+]]]
 
 Recibirás como respuesta un `HTTP STATUS 200` (OK):
 
@@ -536,7 +584,29 @@ curl -X GET \
     -H 'content-type: application/json' \
     'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
 ```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$response = Requests::get('http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
+```
+```java
+ URL url = new URL("http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
 
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
 ```Python
 import requests
 headers = {
@@ -567,7 +637,6 @@ function callback(error, response, body) {
 }
 request(options, callback);
 ```
-
 ]]]
 
 
@@ -594,6 +663,63 @@ curl -X POST \
             }
     }'
 ```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$data = '{
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "detailed": true,
+            "execute_after_withdrawal": true,
+            "extended": true,
+            "schedule":true,
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            }
+    }';
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+
+```
+```java
+
+ URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("POST");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+connection.setDoOutput(true);
+
+String body = "{\"file_name_prefix\": \"bank-report-USER_ID\",\"include_withdrawal_at_end\": false,
+            \"detailed\": true,
+            \"execute_after_withdrawal\": true,
+            \"extended\": true,
+            \"schedule\":true,
+            \"frequency\": {
+                \"hour\": 0,
+                \"type\": \"monthly\",
+                \"value\": 1
+            } 
+            }";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
 
 ```Python
 import requests
@@ -611,6 +737,7 @@ data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
+            "schedule":true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
         }'
 
@@ -631,6 +758,7 @@ var dataString = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
+            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -672,12 +800,71 @@ curl -X PUT \
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
+        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
             "value": 1
         }
     }'
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$data = '{
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "schedule":true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }';
+$response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+```
+```java
+
+ URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("PUT");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+connection.setDoOutput(true);
+
+String body = "{
+                    \"file_name_prefix\": \"bank-report-USER_ID\",
+                    \"include_withdrawal_at_end\": false,
+                    \"detailed\": true,
+                    \"execute_after_withdrawal\": true,
+                    \"extended\": true,
+                    \"schedule\":true,
+                    \"frequency\": {
+                        \"hour\": 0,
+                        \"type\": \"monthly\",
+                        \"value\": 1
+                    }
+                }";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
 ```
 
 ```Python
@@ -698,6 +885,7 @@ data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
+            "schedule":true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
         }'
 
@@ -718,6 +906,7 @@ var dataString = '{
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
+        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -741,7 +930,6 @@ function callback(error, response, body) {
 request(options, callback);
 
 ```
-
 ]]]
 
 ###### Iniciar generación programada
