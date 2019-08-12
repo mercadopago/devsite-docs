@@ -47,7 +47,7 @@ Haz el POST a la API especificando las fechas de inicio y fin de la siguiente ma
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report?access_token=´ENV_ACCESS_TOKEN´' \
+    'https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN' \
     -d '{
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
@@ -61,13 +61,14 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$data = '{
+$data ='{
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
     }';
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+
+$response = Requests::post("https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN", $headers, $data);
 ```
-```java  
+```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
@@ -108,7 +109,7 @@ var headers = { 'accept': 'application/json', 'content-type': 'application/json'
 var dataString = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report?access_token='ENV_ACCESS_TOKEN,
+    url: 'https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN',
     method: 'POST',
     headers: headers,
     body: dataString
@@ -152,7 +153,7 @@ $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/l
 ```
 
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/list?access_token=´ENV_ACCESS_TOKEN´");
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/list?access_token=ENV_ACCESS_TOKEN");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
@@ -216,7 +217,7 @@ Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguien
 [[[
 
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`' 
+curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
 ```
 
 ```php
@@ -233,7 +234,7 @@ $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/:
 ```
 
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=´ENV_ACCESS_TOKEN´");
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
@@ -248,7 +249,7 @@ System.out.println(connection.getInputStream());
 import requests
 
 params = (
-    ('access_token', '`ENV_ACCESS_TOKEN`'),
+    ('access_token', 'ENV_ACCESS_TOKEN'),
 )
 
 response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
@@ -258,7 +259,7 @@ response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:fil
 var request = require('request');
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`'
+    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
 };
 
 function callback(error, response, body) {
@@ -296,9 +297,9 @@ Programa la generación automática del reporte utilizando la frecuencia en el r
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`' \
+    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' \
     -d '{
-        "user_id": USER-ID
+        "user_id": "USER-ID"
     }'
 ```
 
@@ -311,13 +312,13 @@ $headers = array(
     'content-type' => 'application/json'
 );
 $data = '{
-        "user_id": USER-ID
+        "user_id": "USER-ID"
     }';
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`', $headers, $data);
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
 
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`");
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
@@ -325,7 +326,7 @@ connection.setRequestMethod("POST");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 
-String body = "{\"user_id\": USER-ID}";
+String body = "{\"user_id\": \"USER-ID\" }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -349,7 +350,7 @@ params = (
     ('access_token', 'ENV_ACCESS_TOKEN'),
 )
 
-data = '{ "user_id": USER-ID }'
+data = '{ "user_id": "USER-ID" }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
 
@@ -366,7 +367,7 @@ var headers = {
 var dataString = '{ "user_id": USER-ID }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=`ENV_ACCESS_TOKEN`',
+    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
     method: 'POST',
     headers: headers,
     body: dataString
@@ -422,7 +423,7 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$data = '{"user_id": USER-ID}';
+$data = '{"user_id": "USER-ID" }';
 $response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
 
@@ -435,7 +436,7 @@ connection.setRequestMethod("DELETE");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 
-String body = "{\"user_id\": USER-ID}";
+String body = "{\"user_id\": \"USER-ID\" }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -459,7 +460,7 @@ params = (
     ('access_token', 'ENV_ACCESS_TOKEN'),
 )
 
-data = '{"user_id": USER-ID}'
+data = '{"user_id": "USER-ID" }'
 
 response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
 ```
@@ -472,7 +473,7 @@ var headers = {
     'content-type': 'application/json'
 };
 
-var dataString = '{"user_id": USER-ID}';
+var dataString = '{"user_id": "USER-ID" }';
 
 var options = {
     url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
@@ -507,7 +508,7 @@ Recibirás como respuesta un `HTTP STATUS 200` (OK)
     "report_type": "bank",
     "retries": 0,
     "status": "deleted",
-    "user_id": USER-ID
+    "user_id": "USER-ID"
 }
 ```
 
@@ -526,11 +527,11 @@ curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?acces
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array();
-$response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`', $headers);
+$response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 
 ```java
- URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`");
+ URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
@@ -545,7 +546,7 @@ System.out.println(connection.getInputStream());
 import requests
 
 params = (
-    ('access_token', '`ENV_ACCESS_TOKEN`'),
+    ('access_token', 'ENV_ACCESS_TOKEN'),
 )
 
 response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
@@ -555,7 +556,7 @@ response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:fil
 var request = require('request');
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`'
+    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
 };
 
 function callback(error, response, body) {
