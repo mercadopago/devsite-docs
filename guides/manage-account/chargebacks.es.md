@@ -43,6 +43,7 @@ para consultar su información:
   ],
   "currency": "ARS",
   "amount": 100.20,
+  "reason": "fraud",
   "coverage_applied": false,
   "coverage_elegible": true,
   "documentation_required": true,
@@ -89,7 +90,7 @@ En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 
 > 
 > Requisitos
 >
->Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
+> Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
 
 ## Disputa del contracargo
 

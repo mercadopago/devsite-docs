@@ -45,6 +45,7 @@ para consultar suas informações:
   ],
   "currency": "ARS",
   "amount": 100.20,
+  "reason": "fraud",
   "coverage_applied": false,
   "coverage_elegible": true,
   "documentation_required": true,
