@@ -333,24 +333,18 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Chec
 
 ### Próximos pasos
 
-<div>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Prueba tu integración<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Revisa que esté todo bien en tu integración con los usuarios de prueba.</p>
-</blockquote>
-</a>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
-</blockquote>
-</a>   
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_RECOMMENDED
+>
+> Prueba tu integración
+>
+> Revisa que esté todo bien en tu integración con los usuarios de prueba.
+>
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED
+>
+> Integración avanzada
+>
+> Optimiza tu integración y mejora la gestión de tus ventas.
+>
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
