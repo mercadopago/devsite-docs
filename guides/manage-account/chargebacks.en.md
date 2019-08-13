@@ -88,7 +88,7 @@ In case you need to provide documentation, you have a period of 7 days from the 
 In case you need to provide documentation, you have a period of 10 days from the creation of the chargeback to upload it. In the response of the chargeback query you can see when this term expires in the `date_documentation_deadline` field.
 ------------
 
-> WARNING		 
+> WARNING
 > 
 > Requisites
 >

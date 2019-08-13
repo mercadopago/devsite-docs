@@ -88,7 +88,7 @@ Caso seja requerida a documentação, conta-se com um prazo de 7 dias desde a cr
 Caso seja requerida a documentação, conta-se com um prazo de 10 dias desde a criação da contestação para enviá-la. Na resposta da sua consulta da compra contestada pode-se ver quando se expira esse prazo no campo `date_documentation_deadline`.
 ------------
 
-> WARNING		 
+> WARNING
 > 
 > Requisitos
 >
