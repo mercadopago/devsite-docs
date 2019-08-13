@@ -4,7 +4,7 @@
 >
 > En esta página
 >
-> - [Generación por retiro](#bookmark_generación_por_retiro) 
+> - [Generación por retiro](#bookmark_generación_por_retiro)
 >
 > - [Generación vía web](#bookmark_generación_vía_web)
 >
@@ -1040,7 +1040,7 @@ request(options, callback);
 | `Programacion`| <br/> -  Diaria.<br/><br/>  -  Semanal.<br/><br/> -  Mensual. <br/> <br/> |
 | `Generación`  | <br/> -  Manual.<br/><br/>  -  Automática por retiro de dinero disponible, total o parcial <br/><br/> Las tres instancias de generación conviven. Es decir, aunque programes la generación de tus reportes automáticamente, cada vez que retires dinero se generará un reporte adicional.<br/> <br/>  |
 | `Detalle de tablas` | <br/> El detalle de las tablas comprende información generada en día 1 como mínimo. Excepto en los reportes generados por retiro de dinero. <br/> <br/>  |
-| `Formato del filename` | <br/>Cuando el reporte es programado o manual:<br/> "prefijo-configurable-fecha-de-creación.csv" <br/> Ejemplo:  mitienda-28-05-2019.csv <br/><br/> Cuando el reporte se genera por un retiro de dinero: "\<prefijo-configurable>-<id-de-retiro>-<fecha-de-creación>.csv"<br/> Ejemplo: mitienda-ID23902138-28-05-2019.csv <br/> <br/> |
+| `Formato del filename` | <br/>Cuando el reporte es programado o manual:<br/> "prefijo-configurable-fecha-de-creación.csv" <br/> Ejemplo:  mitienda-28-05-2019.csv <br/><br/> Cuando el reporte se genera por un retiro de dinero: <br/> "\<prefijo-configurable>-<id-de-retiro>-<fecha-de-creación>.csv"<br/> Ejemplo: mitienda-ID23902138-28-05-2019.csv <br/> <br/> |
 | `Formatos de descarga` | <br/> .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. <br/> <br/> |
 | `Configuración disponible vía API` | <br/>-  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> -  Separador decimal (coma o punto)<br/> -  Notificación por e-mail<br/> -  Retiro al final del reporte (opcional) <br/> <br/> |
 | `Orden de columnas` |<br/> Fijo <br/> <br/> |
