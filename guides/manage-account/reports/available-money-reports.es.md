@@ -97,7 +97,7 @@ Observa cómo está compuesto el reporte de dinero disponible en este ejemplo pa
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
 
-> WARNING 
+> WARNING
 > 
 > Importante
 >
