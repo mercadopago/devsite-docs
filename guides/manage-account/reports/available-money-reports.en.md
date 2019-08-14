@@ -78,6 +78,8 @@ We reflect the universal accounting concepts of *debit* (money you have to pay) 
 
 > NOTE
 >
+> Note
+>
 > Your credit will be in the column `NET_CREDIT`
 >
 > Your debit will be in the column `NET_DEBIT`
@@ -96,7 +98,7 @@ Note how the available balance report is composed in this example to identify th
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible. If you want less details or there are columns that are not useful for reconciliation, you can change which ones to include and which not in Settings.
 
-> WARNING 
+> WARNING
 > 
 > Important
 >

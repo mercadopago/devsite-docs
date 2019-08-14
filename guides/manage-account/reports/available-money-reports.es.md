@@ -77,6 +77,8 @@ Reflejamos los conceptos contables universales del *debe* (dinero que tienes que
 
 > NOTE
 >
+> Nota
+>
 > Tu haber lo verás en la columna `NET_CREDIT`
 >
 > Tu deber estará en la columna `NET_DEBIT`

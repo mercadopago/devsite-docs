@@ -78,6 +78,8 @@ Vamos ver os conceitos contábeis universais de deve (dinheiro que você tem que
 
 > NOTE
 >
+> Note
+>
 > Seu a ver estará na coluna `NET_CREDIT`
 >
 > Seu deve estará na coluna `NET_DEBIT`
