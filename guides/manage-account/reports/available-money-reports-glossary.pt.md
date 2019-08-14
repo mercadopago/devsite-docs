@@ -26,8 +26,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
 | PAYMENT METHOD |<br/> Meio de pagamento. Pode ser: <br/>visa<br/>master<br/> amex<br/> naranja<br/> nativa<br/> tarshop<br/> cencosud<br/> cabal<br/> argencard<br/> diners<br/> pagofacil<br/> rapipago<br/> redlink<br/> bapropago<br/> account_money (Pagamento com dinheiro na conta do Mercado Pago). <br/><br/>|
-| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. Pode tomar os seguintes valores conforme a jurisdição:
- <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy<br/><br/>|
+| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. Pode tomar os seguintes valores conforme a jurisdição: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy<br/><br/> |
 | TAX_AMOUNT_TELCO | É o valor do imposto às empresas de telecomunicação descontado do valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Data de aprovação da operação. |
 | POS_ID | ID do caixa, se o pagamento é feito através de um comércio físico. |
