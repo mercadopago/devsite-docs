@@ -48,7 +48,7 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 **Instalação via Marketplace**
 
 1. Vá até o **[Magento Marketplace](https://marketplace.magento.com/)**, pesquise por **Mercado Pago Payment**, selecione o módulo para versão **M1**, adicione o módulo no carrinho e finalize o processo de compra (**você não terá custo nenhum**):
-![Installing Mercado Pago with marketplace of Magento](/images/magento-marketplace_1)
+![Installing Mercado Pago with marketplace of Magento](/images/magento-marketplace_1.gif)
 
 2. Ao finalizar o processo de "compra", clique em **Install** e copie o link que será disponibilizado na tela:
 ![Installing and copying the access keys](/images/magento-marketplace_2.gif)
