@@ -46,7 +46,7 @@ This process will explain the installation of the Mercado Pago module via Packag
 **Installation via Marketplace**
 
 1. Go to **[Magento Marketplace](https://marketplace.magento.com/)**, search for **Mercado Pago**, select the module version **M1**, add the module to the cart and complete the purchase process (**you will have no cost**):
-![Installing Mercado Pago with marketplace of Magento](/images/magento-marketplace_1)
+![Installing Mercado Pago with marketplace of Magento](/images/magento-marketplace_1.gif)
 
 2. When finalizing the process of "purchase", click in **Install** and copy the link:
 ![Installing and copying the access keys](/images/magento-marketplace_2.gif)
