@@ -76,6 +76,8 @@ View the [Complete glossary](https://www.mercadopago.com.ar/developers/en/guides
 
 We reflect the universal accounting concepts of *debit* (money you have to pay) and *credit* (money you have to collect) writing the report in two columns, one for each concept:
 
+> NOTE
+>
 > Your credit will be in the column `NET_CREDIT`
 >
 > Your debit will be in the column `NET_DEBIT`
@@ -94,9 +96,11 @@ Note how the available balance report is composed in this example to identify th
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible. If you want less details or there are columns that are not useful for reconciliation, you can change which ones to include and which not in Settings.
 
-> NOTE 
+> WARNING 
 > 
-> Important: differences between partial and total withdrawal.
+> Important
+>
+> **Differences between partial and total withdrawal.**
 > 
 > When you withdraw all your available balance, the total in the report will match that amount. On the other hand, when you make a partial withdrawal, which does not include all of the released money in your account, the total available balance and the total of the report will not match.
 >

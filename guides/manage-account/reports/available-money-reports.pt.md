@@ -76,6 +76,8 @@ Confira o [Glossário completo](https://www.mercadopago.com.br/developers/pt/gui
 
 Vamos ver os conceitos contábeis universais de deve (dinheiro que você tem que pagar) e a ver (dinheiro que você tem que coletar) elaborando o relatório em duas colunas, uma para cada conceito: 
 
+> NOTE
+>
 > Seu a ver estará na coluna `NET_CREDIT`
 >
 > Seu deve estará na coluna `NET_DEBIT`
@@ -95,11 +97,12 @@ Veja como o relatório de dinheiro disponível é composto neste exemplo para id
 A versão padrão mostrará uma visão estendida das colunas. O relatório final terá o máximo de detalhes possível. Se você quer menos detalhes ou há colunas que não são úteis para conciliação, você pode alterar quais devem ser incluídas e quais não em Ajustes.
 
 
-> NOTE 
+> WARNING 
 > 
-> Importante: diferenças entre retirada parcial e retirada total.
+> Importante
+>
+> **Diferenças entre retirada parcial e retirada total.**
 > 
 > Quando você retirar todo o seu saldo disponível, o total do relatório corresponderá a esse valor. Por outro lado, quando você faz uma retirada parcial, que não inclui todo o seu dinheiro liberado na conta, o saldo total disponível e o total do relatório não coincidem.
 >
 >Por exemplo, imagine que você tenha R$ 3.000 disponíveis para retirar para uma conta bancária, mas retira apenas R$ 2.000. A retirada é parcial, mas o valor total do relatório continuará a mostrar o valor do saldo inicial que estava no momento da retirada, ou seja, os R$ 3.000 disponíveis. Por outro lado, se você retirar os R$ 3.000, o valor total do relatório corresponderá ao valor dessa retirada.
->
