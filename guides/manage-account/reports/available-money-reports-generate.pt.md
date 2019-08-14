@@ -428,8 +428,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
-```python
+```Python
 import requests
 
 headers = {
@@ -443,7 +442,6 @@ data = '{"user_id": "USER-ID" }'
 
 response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
 ```
-
 ```node
 var request = require('request');
 
@@ -469,8 +467,8 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
+
 
 Você receberá como resposta `HTTP STATUS 200` (OK)
 
@@ -520,7 +518,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```python
+```Python
 import requests
 
 params = {'access_token': 'ENV_ACCESS_TOKEN'}

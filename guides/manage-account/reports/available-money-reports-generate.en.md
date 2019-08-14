@@ -239,7 +239,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```python
+```Python
 import requests
 
 params = {'access_token': 'ENV_ACCESS_TOKEN'}
@@ -326,7 +326,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```python
+```Python
 import requests
 
 headers = {
@@ -428,7 +428,7 @@ System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
 
-```python
+```Python
 import requests
 
 headers = {
@@ -518,7 +518,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```python
+```Python
 import requests
 
 params = {'access_token': 'ENV_ACCESS_TOKEN'}

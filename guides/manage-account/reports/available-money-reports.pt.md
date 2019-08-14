@@ -86,7 +86,7 @@ Você verá o dinheiro disponível nas operações liberadas nas colunas `NET_CR
 
 Se isso acontecer, o relatório ainda será válido. O dinheiro volta para sua conta e a operação aparecerá no relatório como uma nova linha na coluna `NET_CREDIT`
 
-### Exemplos (
+### Exemplos
 
 Veja como o relatório de dinheiro disponível é composto neste exemplo para identificar as seções e ler seus próprios relatórios:
 
