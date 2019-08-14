@@ -493,7 +493,7 @@ Descarga el archivo con este comando:
 
 [[[
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=`ENV_ACCESS_TOKEN`' 
+curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN' 
 ```
 ```php
 <?php
