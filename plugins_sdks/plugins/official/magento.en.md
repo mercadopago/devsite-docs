@@ -38,7 +38,6 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 | Additional Settings        | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | It is a requirement that you have an SSL certificate, During testing in Sandbox you will be able to run at http.|
 
-
 <a name="Installation"></a>
 ## Installation: ##
 

@@ -39,7 +39,6 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | Configurações adicionais   | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente. Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
   
-  
 <a name="Instalação"></a>
 ## Instalação: ##
 
@@ -49,10 +48,10 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 **Instalação via Marketplace**
 
 1. Vá até o **[Magento Marketplace](https://marketplace.magento.com/)**, pesquise por **Mercado Pago Payment**, selecione o módulo para versão **M1**, adicione o módulo no carrinho e finalize o processo de compra (você não terá custo nenhum):
-![Installing Mercado Pago with marketplace of Magento](/images/plugins/modules/magentomarketplace_1.gif)
+![Installing Mercado Pago with marketplace of Magento](/images/magento-marketplace_1)
 
 2. Ao finalizar o processo de "compra", clique em **Install** e copie o link que será disponibilizado na tela:
-![Installing and copying the access keys](/images/plugins/modules/magentomarketplace_2.gif)
+![Installing and copying the access keys](/images/magento-marketplace_2.gif)
 > O link copiado deve ser igual a esse:
 > https://connect20.magentocommerce.com/e848b7a0bc8735cd525582c/mercadopago+MercadoPago-2.9.0
 
@@ -60,7 +59,7 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 
 4. Cole o link obtido no **Magento Marketplace** na opção **Install New Extensions** e click em **Install**.
 
-![Pasting the access key to install](/images/plugins/modules/magentomarketplace_3.gif)
+![Pasting the access key to install](/images/magento-marketplace_3.gif)
 
 5. Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
@@ -68,13 +67,13 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 **Instalação via Package**
 
 1. Vá até o **[Github do Módulo Magento do Mercado Pago](https://github.com/mercadopago/cart-magento)**, faça o download do arquivo que possui a extensão **.tgz** (Exemplo: MercadoPago-2.10.0.tgz):
-![Installing the Mercado Pago via package](/images/plugins/modules/magentodownload_github.gif)
+![Installing the Mercado Pago via package](/images/magento-download_github.gif)
 
 2. Para efetuar a instalação iremos utilizar a ferramenta **Magento Connect Manager**, acesse o admin do Magento e vá até o menu  **System > Magento Connect > Magento Connect Manager**.
 
 3. Faça o upload do arquivo na opção **Direct package file upload** e click em **Upload**:
 
-![Uploading the Mercado Pago file in Magento](/images/plugins/modules/magentoinstall_tgz.gif)
+![Uploading the Mercado Pago file on Magento](/images/magento-install_tgz.gif)
 
 4. Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
