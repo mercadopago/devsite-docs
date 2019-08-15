@@ -56,10 +56,10 @@ Conciliação mensal ou periódica com os detalhes das movimentações que geram
 
 Para ler o relatório, recomendamos usar um arquivo .CSV e revisar as configurações dos caracteres. Deve estar em formato UTF-8. Confira nas configurações da sua planilha de cálculo:
 
-![Relatório de dinheiro disponivel excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
+![Relatório de dinheiro disponivel excel Mercado Pago](/images/manage-account/reports/excel-pt.png)
 <p style="text-align:center;font-size:12px;">Exemplo no Excel</p>
 
-![Relatório de dinheiro disponivel Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
+![Relatório de dinheiro disponivel Open Office Mercado Pago](/images/manage-account/reports/open-office-pt.png)
 <p style="text-align:center;font-size:12px;">Exemplo no Open Office</p>
 
 O relatório contém 4 seções:

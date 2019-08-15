@@ -56,10 +56,10 @@ Monthly or periodic reconciliation with the detail of the movements that generat
 
 To read the report we recommend using a .csv file and that you review the character settings. It must be in UTF-8 format. Check it in the settings of your spreadsheet (Excel, LibreOffice Calc, etc):
 
-![Available Balance Report excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
+![Available Balance Report excel Mercado Pago](/images/manage-account/reports/excel-en.png)
 <p style="text-align:center;font-size:12px;">Example in Excel </p>
 
-![Available Balance Report Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
+![Available Balance Report Open Office Mercado Pago](/images/manage-account/reports/open-office-en.png)
 <p style="text-align:center;font-size:12px;">Example in Open Office</p>
 
 The report contains 4 sections:

@@ -54,10 +54,10 @@ Usa el Reporte de Dinero Disponible en estos casos:
 
 Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
 
-![Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/ms-excel.png)
+![Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/excel-es.png)
 <p style="text-align:center;font-size:12px;">Ejemplo en Excel </p>
 
-![Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office.png)
+![Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office-es.png)
 <p style="text-align:center;font-size:12px;">Ejemplo en Open Office </p>
 
 
