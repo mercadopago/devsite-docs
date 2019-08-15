@@ -7,3 +7,10 @@ With these reports we seek to cover the different needs of our users:
 * Accounting Reports
     + [Money available](https://www.mercadopago.com/developers/en/guides/manage-account/reports/available-money-reports/)
     + [Money in the account](https://www.mercadopago.com/developers/en/guides/manage-account/reports/account-money-reports/)
+
+* Transaction Reports
+    + Withdrawals
+    + Complaints
+    + Charges
+    + Chargebacks
+    + Gateway

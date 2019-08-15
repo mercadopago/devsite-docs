@@ -7,3 +7,10 @@ Com estes relatórios, procuramos cobrir as diferentes necessidades dos nossos u
 * Relatórios de contabilidade
     + [Saldo disponível](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money-reports/)
     + [Dinheiro em conta](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money-reports/)
+
+* Relatórios de Operações
+    + Retiradas
+    + Reclamações
+    + Cobranças
+    + Contestações
+    + Gateway
