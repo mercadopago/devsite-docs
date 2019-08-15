@@ -615,6 +615,28 @@ request(options, callback);
 ```
 ]]]
 
+Recibirás como respuesta un `HTTP STATUS 200` (OK):
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
 ##### Crear configuración
 
 [[[
@@ -754,6 +776,28 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
+
+Recibirás como respuesta un `HTTP STATUS 201` (CREATED):
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
 
 ##### Actualizar configuración
 
@@ -896,6 +940,29 @@ request(options, callback);
 ```
 ]]]
 
+
+Recibirás como respuesta un `HTTP STATUS 200` (OK):
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
 ##### Iniciar generación programada
 
 [[[
@@ -963,6 +1030,26 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
+
+
+Recibirás como respuesta un `HTTP STATUS 201` (CREATED):
+
+```json
+{
+    "id": 2787882,
+    "begin_date": "2019-08-15T06:00:00Z",
+    "created_from": "schedule",
+    "end_date": "2019-08-16T06:00:00Z",
+    "generation_date": "2019-08-16T02:00:00.000-04:00",
+    "is_test": false,
+    "last_modified": "2019-08-15T15:41:53.681-04:00",
+    "report_id": null,
+    "report_type": "bank",
+    "retries": 0,
+    "status": "deleted",
+    "user_id": USER_ID
+}
+```
 
 ##### Cancelar generación programada
 

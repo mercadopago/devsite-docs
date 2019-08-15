@@ -622,6 +622,28 @@ request(options, callback);
 ]]]
 
 
+As a response you will receive `HTTP STATUS 200` (OK):
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
 ##### Create configuration
 
 [[[
@@ -761,6 +783,30 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
+
+
+As a response you will receive `HTTP STATUS 201` (CREATED):
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
 
 ##### Update configuration
 
@@ -903,6 +949,29 @@ request(options, callback);
 ```
 ]]]
 
+
+As a response you will receive `HTTP STATUS 200` (OK):
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
 ##### Initiate scheduled generation
 
 [[[
@@ -970,6 +1039,26 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
+
+
+As a response you will receive `HTTP STATUS 201` (CREATED):
+
+```json
+{
+    "id": 2787882,
+    "user_id": USER_ID,
+    "begin_date": "2019-08-15T06:00:00Z",
+    "end_date": "2019-08-16T06:00:00Z",
+    "created_from": "schedule",
+    "is_test": false,
+    "status": "pending",
+    "report_type": "bank",
+    "generation_date": "2019-08-16T06:00:00.000Z",
+    "report_id": null,
+    "last_modified": "2019-08-15T15:40:00.899-04:00",
+    "retries": 0
+}
+```
 
 ##### Cancel scheduled generation
 
