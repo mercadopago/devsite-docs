@@ -25,7 +25,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | TAXES_AMOUNT | Taxes charged for gross income withholdings. |
 | COUPON_AMOUNT | Discount coupon amount. Only the gross amount (`GROSS_AMOUNT`) is discounted if provided by the seller. |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
-| PAYMENT METHOD |<br/> Payment method. It can be: <br/>visa<br/>master<br/> amex<br/> naranja<br/> nativa<br/> tarshop<br/> cencosud<br/> cabal<br/> argencard<br/> diners<br/> pagofacil<br/> rapipago<br/> redlink<br/> bapropago<br/> account_money (Payment with money in the Mercado Pago account).<br/><br/>|
+| PAYMENT METHOD |<br/> Payment method. [It can be](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_payment_methods_by_country)  <br/><br/> |
 | TAX_DETAIL | <br/> Description of the tax withheld by operation in `TAXES_AMOUNT`. It can take the following values according to the jurisdiction: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy<br/><br/>|
 | TAX_AMOUNT_TELCO | It is the value of the tax on telecommunications companies that is deducted from the gross value. |
 | TRANSACTION_APPROVAL_DATE | Date of approval of the operation. |
