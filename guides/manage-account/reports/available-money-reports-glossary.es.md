@@ -25,7 +25,20 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAXES_AMOUNT | Impuestos cobrados por retenciones de Ingresos Brutos. |
 | COUPON_AMOUNT | Monto del cupón de descuento. Solo se descuenta del monto bruto (`GROSS_AMOUNT`) si está provisto por el vendedor.|
 | INSTALLMENTS | Cantidad de cuotas en las que se realizó la operación. |
-| PAYMENT METHOD |<br/> Medio de pago. [Puede ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país)  <br/><br/>|
+| PAYMENT METHOD |<br/> Medio de pago. 
+----[mla]----
+[Puede ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_argentina)  
+------------
+----[mlb]----
+[Puede ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_brasil)  
+------------ 
+----[mpe]----
+[Puede ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_peru)  
+------------
+----[mco]----
+[Puede ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_colombia)  
+------------
+<br/><br/> |
 | TAX_DETAIL | <br/> Descripción del impuesto retenido por operación en el `TAXES_AMOUNT`. Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy<br/><br/>|
 | TAX_AMOUNT_TELCO | Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Fecha de aprobación de la operación. |
