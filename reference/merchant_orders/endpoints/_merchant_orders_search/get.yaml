@@ -1,6 +1,6 @@
 ---
 resource: merchant_orders.raml
-sample:
+samples:
 - search_curl.sh
 - search_curl_response.json
 use:
