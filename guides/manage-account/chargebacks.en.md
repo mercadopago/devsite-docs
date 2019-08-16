@@ -45,6 +45,7 @@ to check your information:
   ],
   "currency": "ARS",
   "amount": 100.20,
+  "reason": "fraud",
   "coverage_applied": false,
   "coverage_elegible": true,
   "documentation_required": true,
@@ -87,11 +88,11 @@ In case you need to provide documentation, you have a period of 7 days from the 
 In case you need to provide documentation, you have a period of 10 days from the creation of the chargeback to upload it. In the response of the chargeback query you can see when this term expires in the `date_documentation_deadline` field.
 ------------
 
-> WARNING		 
+> WARNING
 > 
 > Requisites
 >
->It is only possible to continue with the rest of the steps if the chargeback **can be disputed**, **it is required to upload documentation** and **the term has not expired.** 
+> It is only possible to continue with the rest of the steps if the chargeback **can be disputed**, **it is required to upload documentation** and **the term has not expired.** 
 
 ## Dispute of the chargeback
 
