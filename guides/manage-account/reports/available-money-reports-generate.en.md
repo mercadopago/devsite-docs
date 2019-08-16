@@ -189,7 +189,7 @@ request(options, callback);
 ```
 ]]]
 
-As a response you will receive `HTTP STATUS 200` (OK):
+As a response you will receive `HTTP STATUS 200` (Ok):
 
 ```json
 [
@@ -264,7 +264,7 @@ request(options, callback);
 ]]]
 
 
-As a response you will receive `HTTP STATUS 200` (OK):
+As a response you will receive `HTTP STATUS 200` (Ok):
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -367,7 +367,7 @@ request(options, callback);
 ```
 ]]]
 
-As a response you will receive `HTTP STATUS 200`(OK)
+As a response you will receive `HTTP STATUS 200`(Ok)
 
 ```json
 {
@@ -471,7 +471,7 @@ request(options, callback);
 
 ]]]
 
-As a response you will receive `HTTP STATUS 200` (OK)
+As a response you will receive `HTTP STATUS 200` (Ok)
 
 ```json
 {
@@ -542,7 +542,7 @@ request(options, callback);
 ```
 ]]]
 
-As a response you will receive `HTTP STATUS 200` (OK):
+As a response you will receive `HTTP STATUS 200` (Ok):
 
 
 ```csv
@@ -622,7 +622,7 @@ request(options, callback);
 ]]]
 
 
-As a response you will receive `HTTP STATUS 200` (OK):
+As a response you will receive `HTTP STATUS 200` (Ok):
 
 ```json
 {
@@ -785,7 +785,7 @@ request(options, callback);
 ]]]
 
 
-As a response you will receive `HTTP STATUS 201` (CREATED):
+As a response you will receive `HTTP STATUS 201` (Created):
 
 ```json
 {
@@ -950,7 +950,7 @@ request(options, callback);
 ]]]
 
 
-As a response you will receive `HTTP STATUS 200` (OK):
+As a response you will receive `HTTP STATUS 200` (Ok):
 
 ```json
 {
@@ -1041,7 +1041,7 @@ request(options, callback);
 ]]]
 
 
-As a response you will receive `HTTP STATUS 201` (CREATED):
+As a response you will receive `HTTP STATUS 201` (Created):
 
 ```json
 {
@@ -1129,7 +1129,7 @@ request(options, callback);
 ]]]
 
 
-As a response you will receive `HTTP STATUS 200` (OK):
+As a response you will receive `HTTP STATUS 200` (Ok):
 
 ```json
 {

@@ -188,7 +188,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200` (OK):
+Recibirás como respuesta un `HTTP STATUS 200` (Ok):
 
 ```json
 [
@@ -263,7 +263,7 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200` (OK) :
+Recibirás como respuesta un `HTTP STATUS 200` (Ok) :
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -365,7 +365,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200`(OK)
+Recibirás como respuesta un `HTTP STATUS 200`(Ok)
 
 ```json
 {
@@ -467,7 +467,7 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200` (OK)
+Recibirás como respuesta un `HTTP STATUS 200` (Ok)
 
 ```json
 {
@@ -538,7 +538,7 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200` (OK):
+Recibirás como respuesta un `HTTP STATUS 200` (Ok):
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -615,7 +615,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200` (OK):
+Recibirás como respuesta un `HTTP STATUS 200` (Ok):
 
 ```json
 {
@@ -777,7 +777,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 201` (CREATED):
+Recibirás como respuesta un `HTTP STATUS 201` (Created):
 
 ```json
 {
@@ -941,7 +941,7 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200` (OK):
+Recibirás como respuesta un `HTTP STATUS 200` (Ok):
 
 ```json
 {
@@ -1032,7 +1032,7 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 201` (CREATED):
+Recibirás como respuesta un `HTTP STATUS 201` (Created):
 
 ```json
 {
@@ -1119,7 +1119,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200` (OK):
+Recibirás como respuesta un `HTTP STATUS 200` (Ok):
 
 ```json
 {

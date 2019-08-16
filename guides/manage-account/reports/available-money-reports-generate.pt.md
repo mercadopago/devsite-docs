@@ -782,7 +782,7 @@ request(options, callback);
 ```
 ]]]
 
-Você receberá como resposta `HTTP STATUS 201` (CREATED):
+Você receberá como resposta `HTTP STATUS 201` (Created):
 
 ```json
 {
@@ -1037,7 +1037,7 @@ request(options, callback);
 ]]]
 
 
-Você receberá como resposta `HTTP STATUS 201` (CREATED):
+Você receberá como resposta `HTTP STATUS 201` (Created):
 
 ```json
 {
