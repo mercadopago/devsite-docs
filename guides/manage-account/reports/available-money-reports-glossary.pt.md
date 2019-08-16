@@ -19,7 +19,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | NET_DEBIT_AMOUNT | Creditado no valor disponível. |
 | NET_CREDIT_AMOUNT | Debitado no valor disponível. |
 | GROSS_AMOUNT | Valor bruto da transação. |
-| MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. |
+| MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla,mpe,mco,mlm,mlu,mlc]---- Inclui IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
 | TAXES_AMOUNT | Impostos cobrados por retenção de receita bruta. |

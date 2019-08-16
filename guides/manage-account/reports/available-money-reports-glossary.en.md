@@ -19,7 +19,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | NET_DEBIT_AMOUNT | Accredited to the amount available. |
 | NET_CREDIT_AMOUNT | Debited to the amount available. |
 | GROSS_AMOUNT | Gross operation amount. |
-| MP_FEE_AMOUNT | Commission Payment of Mercado Pago and/or Mercado Libre. Includes VAT.|
+| MP_FEE_AMOUNT | Commission Payment of Mercado Pago and/or Mercado Libre. ----[mla,mpe,mco,mlm,mlu,mlc]---- Includes VAT. ------------ |
 | FINANCING_FEE_AMOUNT | Cost for offering interest-free installments. |
 | SHIPPING_FEE_AMOUNT | Shipping cost. |
 | TAXES_AMOUNT | Taxes charged for gross income withholdings. |

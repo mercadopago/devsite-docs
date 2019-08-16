@@ -19,7 +19,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | NET_DEBIT_AMOUNT | Acreditado al monto disponible. |
 | NET_CREDIT_AMOUNT | Debitado al monto disponible. |
 | GROSS_AMOUNT | Monto de la operación bruto. |
-| MP_FEE_AMOUNT | Pago Comisión de Mercado Pago y/o Mercado Libre. Incluye IVA.|
+| MP_FEE_AMOUNT | Pago Comisión de Mercado Pago y/o Mercado Libre. ----[mla,mpe,mco,mlm,mlu,mlc]---- Incluye IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Costo por ofrecer cuotas sin interés. |
 | SHIPPING_FEE_AMOUNT | Costo de envío. |
 | TAXES_AMOUNT | Impuestos cobrados por retenciones de Ingresos Brutos. |
