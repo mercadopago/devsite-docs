@@ -69,7 +69,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 3) Very good! Mercado Pago module was installed successfully.
 
-![Settings](/images/prestashop_select_mp_file.gif)
+![Settings](/images/prestashop/prestashop_select_mp_file.gif)
 
 
 ## Configuration
@@ -78,7 +78,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 2) On the screen **BASIC SETTINGS** you will be asked for the  **Client ID** and **Client Secret**. These are the credentials of your Mercado Pago account and can be obtained through the following link: [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic).
 
-![Settings](/images/prestashop_credentials_configuration.gif)
+![Settings](/images/prestashop/prestashop_credentials_configuration.gif)
 
 > There are two types of credentials:
 * **Sandbox mode**: These credentials are used for the tests.
@@ -86,11 +86,11 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 3) Now on the screen **PAYMENT SETTINGS** keep Checkout Standard as active to use the Redirected Checkout of Mercado Pago.
 
-![Checkout Standard](/images/prestashop_checkout_standard.png)
+![Checkout Standard](/images/prestashop/prestashop_checkout_standard.png)
 
 4) In PAYMENT METHOD you can enable the payment methods with which you will work:
 
-![Payment Method](/images/prestashop_payment_method.png)
+![Payment Method](/images/prestashop/prestashop_payment_method.png)
 
 5) Well done! You have enabled payments via Checkout Standard (redirected)!
 
@@ -110,7 +110,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 3) In **Mercado Envíos** it is possible to configure a text to be displayed in the delivery through the field **Custom text to use with delivery**. To activate, mark the field **Enable Mercado Envíos** as **YES**.
 
-![Enable Mercado Envíos](/images/prestashop_mercado_envios.png)
+![Enable Mercado Envíos](/images/prestashop/prestashop_mercado_envios.png)
 
 4) Very good! Now you can offer Mercado Envíos as a means of transportation for your customers!
 
