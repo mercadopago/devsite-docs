@@ -1,5 +1,6 @@
 ---
 sites_supported:
+  - mlb
   - mla
 ---
 

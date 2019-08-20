@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Integre o Web Checkout
@@ -307,6 +308,7 @@ Redirige ao init_point da preferência.
 </form>
 ```
 ]]]
+
 > WARNING
 >
 > Importante
