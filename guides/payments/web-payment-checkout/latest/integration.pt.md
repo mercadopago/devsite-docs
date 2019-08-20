@@ -243,79 +243,70 @@ curl -X POST \
 
 ### 2. Adicione o checkout ao seu site
 
+Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Web Checkout onde você quiser que ele apareça.
+
 [[[
 ```php
 ===
-Redirige al 'init_point' de la preferencia
+Redirige ao init_point da preferência.
 ===
-<!doctype html>
-<html>
-  <head>
-    <title>Pagar</title>
-  </head>
-  <body>
-    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-public-key= "ENV_PUBLIC_KEY"
+   data-preference-id="<?php echo $preference->id; ?>">
+  </script>
+</form>
 ```
 ```node
 ===
-Redirige al 'init_point' de la preferencia
+Redirige ao init_point da preferência.
 ===
-<!doctype html>
-<html>
-  <head>
-    <title>Mi sitio</title>
-  </head>
-  <body>
-    <a href="$$init_point$$" target="_blank">Pagar</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-public-key= "ENV_PUBLIC_KEY"
+   data-preference-id="$$id$$">
+  </script>
+</form>
 ```
 ```java
 ===
-Redirige al 'init_point' de la preferencia
+Redirige ao init_point da preferência.
 ===
-<!doctype html>
-<html>
-  <head>
-    <title>Pagar</title>
-  </head>
-  <body>
-    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-public-key= "ENV_PUBLIC_KEY"
+   data-preference-id="${preference.id}">
+  </script>
+</form>
 ```
 ```ruby
 ===
-Redirige al 'init_point' de la preferencia
+Redirige ao init_point da preferência.
 ===
-<!doctype html>
-<html>
-  <head>
-    <title>Mi sitio</title>
-  </head>
-  <body>
-    <a href="<%= @init_point %>" target="_blank">Pagar</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-public-key= "ENV_PUBLIC_KEY"
+   data-preference-id="%= @init_point %>">
+  </script>
+</form>
 ```
 ```csharp
 ===
-Redirige al 'init_point' de la preferencia
+Redirige ao init_point da preferência.
 ===
-<!doctype html>
-<html>
-  <head>
-    <title>Pagar</title>
-  </head>
-  <body>
-    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-public-key= "ENV_PUBLIC_KEY"
+   data-preference-id="@Html.DisplayFor(model => model.id)">
+  </script>
+</form>
 ```
 ]]]
-
 > WARNING
 >
 > Importante
