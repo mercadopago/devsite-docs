@@ -32,7 +32,10 @@ Vía API:
 
 Update the *`execute_after_withdrawal`* attribute with the *`true`* value. Done! You’ll generate a report for each withdrawal you make.
 
+
 > NOTE
+> 
+> Important
 >
 > Generation by withdrawal is another option for generating the Available Balance report. It does not affect or modify the generation you configure via web or via API. Read on to learn about the other two types of report generation.
 

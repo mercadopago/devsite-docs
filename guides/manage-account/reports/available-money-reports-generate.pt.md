@@ -32,7 +32,10 @@ Via API:
 
 Atualize o atributo *`execute_after_withdrawal`* com o valor *`true`* e pronto! Você vai gerar um relatório por cada retirada de dinheiro que fizer.
 
+
 > NOTE
+> 
+> Importante
 >
 >  A geração por retirada é uma opção a mais de geração do relatório de Dinheiro Disponível. Não afeta nem modifica a geração que você configurar via web ou via API. Continue lendo para ver os outros dois tipos de geração de relatórios.
 
