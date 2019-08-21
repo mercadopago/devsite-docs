@@ -94,7 +94,7 @@ Se isso acontecer, o relatório ainda será válido. O dinheiro volta para sua c
 
 Veja como o relatório de dinheiro disponível é composto neste exemplo para identificar as seções e ler seus próprios relatórios:
 
-![Relatório de dinheiro disponivel Exemplos Mercado Pago](/images/manage-account/reports/examples.png)
+![Relatório de dinheiro disponivel Exemplos Mercado Pago](/images/manage-account/reports/examples-pt.png)
 
 A versão padrão mostrará uma visão estendida das colunas. O relatório final terá o máximo de detalhes possível. Se você quer menos detalhes ou há colunas que não são úteis para conciliação, você pode alterar quais devem ser incluídas e quais não em Ajustes.
 

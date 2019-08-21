@@ -17,6 +17,24 @@
 > - [Ficha técnica](#bookmark_ficha_técnica)
 >
 
+## Generación por retiro
+
+Puedes crear un reporte de Dinero Disponible de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API. 
+
+Desde la sección Reportes de Mercado Pago:
+1. Inicia sesión en Mercado Pago y ve a los reportes de Dinero Disponible
+2. Haz click en ‘Programar reportes” y confirma “Programar”.
+3. ¡Y listo! No necesitas escribir ni una sola línea de código. 
+
+Vía API:
+
+Actualiza el atributo *`execute_after_withdrawal`* con el valor *`true`*. Y ¡listo! Generarás un reporte por cada retiro de dinero que hagas. 
+ 
+> NOTE
+>
+> La generación por retiro es una opción más de generación del reporte de Dinero Disponible. No afecta ni modifica la generación que configures vía web o vía API. Sigue leyendo para conocer los otros dos tipos de generación de reportes.
+
+
 ## Generación vía web
 
 Genera tus reportes de Dinero Disponible desde tu panel de Mercado Pago. Solo podrás programar los reportes por retiro. Sigue estos pasos para hacerlo:

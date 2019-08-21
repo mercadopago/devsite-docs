@@ -94,7 +94,7 @@ If this happens, the report is still valid. The money goes back to your account 
 
 Note how the available balance report is composed in this example to identify the sections and read your own reports:
 
-![Available Balance Report Examples Mercado Pago](/images/manage-account/reports/examples.png)
+![Available Balance Report Examples Mercado Pago](/images/manage-account/reports/examples-en.png)
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible. If you want less details or there are columns that are not useful for reconciliation, you can change which ones to include and which not in Settings.
 

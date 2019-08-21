@@ -93,7 +93,7 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 
 Observa cómo está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples.png)
+![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
 
