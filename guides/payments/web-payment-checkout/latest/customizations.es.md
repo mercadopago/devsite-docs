@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Personalizaciones
@@ -33,49 +34,74 @@ básica por el siguiente snippet:
 
 [[[
 ```php
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
-   data-preference-id="<?php echo $preference->id; ?>">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
-   data-preference-id="$$id$$">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="$$init_point$$" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```java
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
-   data-preference-id="${preference.id}">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```ruby
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
-   data-preference-id="%= @init_point %>">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="<%= @init_point %>" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```csharp
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
-   data-preference-id="@Html.DisplayFor(model => model.id)">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ]]]
 
