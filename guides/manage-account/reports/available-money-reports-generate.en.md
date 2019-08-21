@@ -17,6 +17,190 @@
 > - [Datasheet](#bookmark_datasheet)
 >
 
+
+## Generation by withdrawal
+
+You can create an Available Money report automatically every time you make a withdrawal from your Mercado Pago account to a bank account. Program this option from your Mercado Pago panel or via API.
+
+From the Reports section in Mercado Pago:
+
+1. Log in to Mercado Pago and go to the Available Balance reports.
+1. Click on “Program reports” and confirm “Program”.
+1. Done! You do not need to write a single line of code.
+
+Vía API:
+
+Update the *`execute_after_withdrawal`* attribute with the *`true`* value. Done! You’ll generate a report for each withdrawal you make.
+
+> NOTE
+>
+> Generation by withdrawal is another option for generating the Available Balance report. It does not affect or modify the generation you configure via web or via API. Read on to learn about the other two types of report generation.
+
+
+[[[
+```curl
+curl -X PUT \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "schedule":true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }'
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$data = '{
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "schedule":true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }';
+$response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("PUT");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+connection.setDoOutput(true);
+
+String body = "{
+                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
+                \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
+                \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
+                \\"schedule\\":true,
+                \\"frequency\\": {
+                    \\"hour\\": 0,
+                    \\"type\\": \\"monthly\\",
+                    \\"value\\": 1
+                }
+            }";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+data = '{
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "detailed": true,
+            "execute_after_withdrawal": true,
+            "extended": true,
+            "schedule":true,
+            "frequency": {"hour": 0,"type": "monthly","value": 1}
+
+        }'
+
+response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var dataString = '{
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "schedule":true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }';
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
+    method: 'PUT',
+    headers: headers,
+    body: dataString
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
+```
+]]]
+
+
+As a response you will receive `HTTP STATUS 200` (Ok):
+
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
+
 ## Web generation
 
 Generate your Available Balance reports from your Mercado Pago dashboard You can only schedule the reports by withdrawal. Follow these steps to do so:

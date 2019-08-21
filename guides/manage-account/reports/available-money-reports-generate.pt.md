@@ -18,6 +18,188 @@
 >
 
 
+## Geração por retirada
+
+Você pode criar um relatório de Dinheiro Disponível de forma automática cada vez que fizer uma retirada de dinheiro da sua conta do Mercado Pago a uma conta bancária. Programe essa opção pelo seu painel do Mercado Pago ou via API.
+
+Pela seção de Relatórios do Mercado Pago:
+
+1. Entre na sua conta do Mercado Pago e acesse os relatórios de Dinheiro Disponível.
+1. Clique em “Programar relatórios” e confirme “Programar”.
+1. E pronto! Não é necessário escrever código nem mesmo para uma única linha. 
+
+Via API:
+
+Atualize o atributo *`execute_after_withdrawal`* com o valor *`true`* e pronto! Você vai gerar um relatório por cada retirada de dinheiro que fizer.
+
+> NOTE
+>
+>  A geração por retirada é uma opção a mais de geração do relatório de Dinheiro Disponível. Não afeta nem modifica a geração que você configurar via web ou via API. Continue lendo para ver os outros dois tipos de geração de relatórios.
+
+
+[[[
+```curl
+curl -X PUT \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "schedule":true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }'
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json'
+);
+$data = '{
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "schedule":true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }';
+$response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("PUT");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+connection.setDoOutput(true);
+
+String body = "{
+                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
+                \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
+                \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
+                \\"schedule\\":true,
+                \\"frequency\\": {
+                    \\"hour\\": 0,
+                    \\"type\\": \\"monthly\\",
+                    \\"value\\": 1
+                }
+            }";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+data = '{
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "detailed": true,
+            "execute_after_withdrawal": true,
+            "extended": true,
+            "schedule":true,
+            "frequency": {"hour": 0,"type": "monthly","value": 1}
+
+        }'
+
+response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var dataString = '{
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "schedule":true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }';
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
+    method: 'PUT',
+    headers: headers,
+    body: dataString
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
+```
+]]]
+
+
+Você receberá como resposta `HTTP STATUS 200`(Ok)
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
+
 ## Geração via web
 
 Gere seus relatórios de Dinheiro Disponível do seu painel do Mercado Pago. Você poderá programar somente os relatórios por retirada. Siga essas dicas para fazer isso:
