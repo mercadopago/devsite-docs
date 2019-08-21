@@ -1,0 +1,82 @@
+---
+type: object
+properties:
+- name:
+    type: String
+    description:
+      en: 
+      es: Nombre de la Sucursal.
+      pt: 
+- business_hours:
+    type: String
+    description:
+      en: 
+      es: String de horarios. Se dividen por día de la semana y cada uno puede tener hasta dos horarios de entrada y dos de salida.
+      pt: 
+- external_id:
+    type: String
+    description:
+      en: Unique identifier of Store.
+      es: Identificador único de la Sucursal.
+      pt: 
+- user_id:
+    type: String
+    description:
+      en: User Id.
+      es: Id del usuario.
+      pt:       
+- location:
+    type: Object
+    description:
+      en: Store location.
+      es: Ubicación de la Sucursal.
+      pt: 
+    properties:
+    - zip_code:
+        type: String
+        description:
+          en: Zip code.
+          es: Código postal.
+          pt: 
+    - street_number:
+        type: Integer
+        description:
+          en: Number.
+          es: Número
+          pt: 
+    - street_name:
+        type: String
+        description:
+          en: Street name.
+          es: Calle.
+          pt: 
+    - city_name*:
+        type: String
+        description:
+          en: City.
+          es: Ciudad.
+          pt: 
+    - state_name*:
+        type: Object
+        description:
+          en: State.
+          es: Provincia.
+          pt: 
+    - latitude*:
+        type: String
+        description:
+          en: Latitude.
+          es: Latitud.
+          pt: 
+    - logitude*:
+        type: String
+        description:
+          en: Longitude.
+          es: Longitud.
+          pt: 
+    - reference:
+        type: String
+        description:
+          en: Reference.
+          es: Referencia.
+          pt: 

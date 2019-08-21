@@ -1,0 +1,19 @@
+---
+resource: stores.raml
+samples:
+- curl.sh
+- curl_response.json
+use:
+- user_id
+- name
+- business_hours
+- external_id
+- location
+- zip_code
+- street_number
+- street_name
+- city_name
+- state_name
+- latitude
+- longitude
+- reference
