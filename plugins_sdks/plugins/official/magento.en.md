@@ -67,7 +67,7 @@ This process will explain the installation of the Mercado Pago module via Packag
 
 **Installation via Package**
 
-1) Vá até o **[Github do Módulo Magento do Mercado Pago](https://github.com/mercadopago/cart-magento)**, faça o download do arquivo que possui a extensão **.tgz** (Exemplo: MercadoPago-2.10.0.tgz):
+1) Go to the **[Mercado Pago Magento Module Github](https://github.com/mercadopago/cart-magento)**, download the file that has the extension **.tgz** (Example: MercadoPago-2.10.0.tgz):
 
 ![Installing the Mercado Pago via package](/images/magento/magento-download_github.gif)
 
