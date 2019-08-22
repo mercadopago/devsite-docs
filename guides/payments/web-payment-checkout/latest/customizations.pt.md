@@ -12,11 +12,11 @@ sites_supported:
 >
 >
 >
-> [Esquema redirect](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+> [Esquema redirect](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
 >
-> [Cores](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
+> [Cores](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_cores)
 >
-> [Botões](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
+> [Botões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_botões)
 
 ## Esquema redirect
 
@@ -34,7 +34,7 @@ Para integrar o esquema redirect, substitua o botão de pagamento que fez na int
 [[[
 ```php
 ===
-Redirige al 'init_point' de la preferencia
+Redireciona ao 'init_point' da preferência
 ===
 <!doctype html>
 <html>
@@ -42,18 +42,18 @@ Redirige al 'init_point' de la preferencia
     <title>Pagar</title>
   </head>
   <body>
-    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+    <a href="<?php echo $preference->init_point; ?>">Pagar com Mercado Pago</a>
   </body>
 </html>
 ```
 ```node
 ===
-Redirige al 'init_point' de la preferencia
+Redireciona ao 'init_point' da preferência
 ===
 <!doctype html>
 <html>
   <head>
-    <title>Mi sitio</title>
+    <title>Meu site</title>
   </head>
   <body>
     <a href="$$init_point$$" target="_blank">Pagar</a>
@@ -62,7 +62,7 @@ Redirige al 'init_point' de la preferencia
 ```
 ```java
 ===
-Redirige al 'init_point' de la preferencia
+Redireciona ao 'init_point' da preferência
 ===
 <!doctype html>
 <html>
@@ -70,18 +70,18 @@ Redirige al 'init_point' de la preferencia
     <title>Pagar</title>
   </head>
   <body>
-    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
+    <a href="${preference.initPoint}">Pagar com Mercado Pago</a>
   </body>
 </html>
 ```
 ```ruby
 ===
-Redirige al 'init_point' de la preferencia
+Redireciona ao 'init_point' da preferência
 ===
 <!doctype html>
 <html>
   <head>
-    <title>Mi sitio</title>
+    <title>Meu site</title>
   </head>
   <body>
     <a href="<%= @init_point %>" target="_blank">Pagar</a>
@@ -90,7 +90,7 @@ Redirige al 'init_point' de la preferencia
 ```
 ```csharp
 ===
-Redirige al 'init_point' de la preferencia
+Redireciona ao 'init_point' da preferência
 ===
 <!doctype html>
 <html>
@@ -98,7 +98,7 @@ Redirige al 'init_point' de la preferencia
     <title>Pagar</title>
   </head>
   <body>
-    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar com Mercado Pago</a>
   </body>
 </html>
 ```
@@ -148,7 +148,7 @@ data-elements-color="#81ecec" <!-- Cor clara -->
 <br/>Para uma cor de elemento escuro, a cor do texto será branca ou #fff. Por exemplo:
 
 ```html
-data-elements-color="#8e44ad" <!-- Cor escuro -->
+data-elements-color="#8e44ad" <!-- Cor escura -->
 ```
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
@@ -180,7 +180,7 @@ data-button-label="Comprar"
  <p>Configure seus pagamentos e adapte o Web Checkout ao seu negócio.</p>
 </blockquote>
 </a>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
