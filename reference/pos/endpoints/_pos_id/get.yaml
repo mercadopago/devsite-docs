@@ -1,0 +1,26 @@
+samples:
+- curl.sh
+- curl_response.json
+errors:
+- 400 BAD_REQUEST:
+  - 'INVALID_POS_ID':
+      description:
+        en: 
+        es: El id del POS indicado es inválido, tiene que ser numérico.
+        pt:
+  - 'POS_INVALID_EXTERNAL_ID':
+      description:
+        en: 
+        es: El campo exernal_id debe ser alfanumérico, solo letras y números. Sin espacios ni guiones, ni caracteres especiales.
+        pt: 
+  - 'POS_EXTERNAL_ID_TOO_LONG':
+      description:
+        en: 
+        es: El campo external_id debe ser menor a 40 caracteres.
+        pt: 
+- 404 NOT_FOUND:
+  - '1':
+      description:
+        en: 
+        es: Si no existe el POS para un id y user indicados.
+        pt:        

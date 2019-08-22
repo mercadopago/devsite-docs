@@ -1,0 +1,57 @@
+---
+type: object
+properties:
+- name:
+    type: String
+    description:
+      en: 
+      es: Nombre descriptivo de la caja.
+      pt: 
+- fixed_amount:
+    type: Boolean
+    description:
+      en: 
+      es: Identifica si se puede pagar con monto cerrado en esa caja.
+      pt: 
+    enum:
+    - true:
+        en: 
+        es: Monto cerrado. El usuario no podrá elegir el monto a pagar sino que deberá esperar la generación de una orden.
+        pt: 
+    - false:
+        en: 
+        es: Monto abierto. Al escanear, se le muestra al usuario un teclado numérico para ingresar el monto a pagar.
+        pt: 
+- category:
+    type: Long
+    description:
+      en: 
+      es: Código MCC que indica el rubro del Punto de Venta.
+      pt: 
+- store_id:
+    type: String
+    description:
+      en: 
+      es: Id de la sucursal a la que pertenece el Punto de Venta.
+      pt:       
+- external_store_id:
+    type: String
+    description:
+      en: 
+      es: Identificador externo de la Sucursal a la que pertenece el Punto de Venta.
+      pt: 
+- external_id:
+    type: String
+    description:
+      en: 
+      es: Identificador único y externo de la caja, cómo el vendedor se refiere a ella.
+      pt:   
+- url:
+    type: String
+    description:
+      en: 
+      es: URL para obtener la orden de venta de un integrador externo.
+      pt:    
+                
+
+
