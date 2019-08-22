@@ -34,7 +34,7 @@ Actualiza el atributo *`execute_after_withdrawal`* con el valor *`true`*. Y ¡li
 
 > NOTE
 > 
-> Importante
+> Nota
 >
 > La generación por retiro es una opción más de generación del reporte de Dinero Disponible. No afecta ni modifica la generación que configures vía web o vía API. Sigue leyendo para conocer los otros dos tipos de generación de reportes.
 
