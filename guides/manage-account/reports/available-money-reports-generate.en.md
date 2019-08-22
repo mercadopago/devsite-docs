@@ -745,6 +745,44 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 #### 3. Configuration
 
+
+| `Attribute` |`Description`|
+| ---------- | ----------- |
+| `sftp_info (opcional)`| Indicates SFTP upload data if needed |
+| `extended (opcional)` | Indicates whether commission details are desired |
+| `include_withdrawal_at_end` | Indicates whether to include the withdrawal for which the report is generated at the end of the report |
+| `detailed` | Indicates whether the report should include extra columns such as `financing`, `fee amount`, `mp fee amount`, etc. |
+| `file_name_prefix` | Static prefix of the name of the generated report file |
+| `scheduled (read_only)` | Informative, indicates whether there are already scheduled reports for this user |
+| `frequency` | If using scheduled reports, indicate the frequency (`daily`, `weekly`, `monthly`) |
+| `value` | Applies to type `"monthly"` (day of the month) or `"weekly"` (day of the week) |
+| `hour` | Time of day the report should be generated |
+| `type` | Frequency type: `“daily”`, `“weekly”`, `“monthly”` |
+| `execute_after_withdrawal` | Indicates whether a report will be generated automatically after each user's withdrawal of money |
+
+```json
+{
+	"sftp_info": {
+    	    "port": 22,
+    	    "username": "usuario",
+    	    "server": "sftp.tuserver.com",
+    	    "remote_dir": "/",
+    	    "password": "xxxxxxxx"
+	},
+       "extended": false,
+	"file_name_prefix": "bank-report-USER-ID-",
+	"detailed": true,
+	"include_withdrawal_at_end": false,
+	"scheduled": false,
+	"execute_after_withdrawal": false,
+	"frequency": {
+    	    "hour": 0,
+    	    "type": "weekly",
+    	    "value": "monday"
+	}
+}
+```
+
 ##### View configuration
 
 [[[

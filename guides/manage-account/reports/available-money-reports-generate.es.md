@@ -737,6 +737,20 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 #### 3. Configuración
 
+| `Atributo` |`Descripción`|
+| ---------- | ----------- |
+| `sftp_info (opcional)`| Indica los datos de subida a SFTP de ser necesario |
+| `extended (opcional)` | Indica si se desea el detalle de comisiones |
+| `include_withdrawal_at_end` | Indica si debe incluir el retiro para el cual se genera el reporte al final del mismo |
+| `detailed` | Indica si el reporte debe incluir columnas extra como `financing`, `fee amount`, `mp fee amount`, etc |
+| `file_name_prefix` | Prefijo estático del nombre del archivo de reporte generado |
+| `scheduled (read_only)` | Informativo, indica si ya existen reportes programados para este usuario |
+| `frequency` | En caso de usar reportes programados, indica la frecuencia (`daily`, `weekly`, `monthly`) |
+| `value` | Aplica a type `“monthly”` (día del mes) o `“weekly”` (día de la semana) |
+| `hour` | Hora del día en que se debe generar el reporte |
+| `type` | Tipo de frecuencia: `“daily”`, `“weekly”`, `“monthly”` |
+| `execute_after_withdrawal` | Indica si se generará un reporte automáticamente luego de cada retiro de dinero del usuario |
+
 ```json
 {
 	"sftp_info": {
@@ -759,21 +773,6 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 	}
 }
 ```
-
-| `Atributo` |`Descripción`|
-| ---------- | ----------- |
-| `sftp_info (opcional)`| Indica los datos de subida a SFTP de ser necesario |
-| `extended (opcional)` | Indica si se desea el detalle de comisiones |
-| `include_withdrawal_at_end` | Indica si debe incluir el retiro para el cual se genera el reporte al final del mismo |
-| `detailed` | Indica si el reporte debe incluir columnas extra como financing fee amount, mp fee amount, etc |
-| `file_name_prefix` | Prefijo estático del nombre del archivo de reporte generado |
-| `scheduled (read_only)` | Informativo, indica si ya existen reportes programados para este usuario |
-| `frequency` | En caso de usar reportes programados, indica la frecuencia (`daily`, `weekly`, `monthly`) |
-| `value` | Aplica a type `“monthly”` (día del mes) o `“weekly”` (día de la semana) |
-| `hour` | Hora del día en que se debe generar el reporte |
-| `type` | Tipo de frecuencia: `“daily”`, `“weekly”`, `“monthly”` |
-| `execute_after_withdrawal` | Indica si se generará un reporte automáticamente luego de cada retiro de dinero del usuario |
-
 
 ##### Consultar configuración
 
