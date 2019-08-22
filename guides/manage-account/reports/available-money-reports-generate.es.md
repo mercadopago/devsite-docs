@@ -756,7 +756,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 	"sftp_info": {
     	    "port": 22,
     	    "username": "usuario",
-    	    "server": "sftp.tuserver.com",
+    	    "server": "sftp.urlserver.com",
     	    "remote_dir": "/",
     	    "password": "xxxxxxxx"
 	},
