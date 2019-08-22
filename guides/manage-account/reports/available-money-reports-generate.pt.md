@@ -752,9 +752,9 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 | `file_name_prefix` | Prefixo estático do nome do arquivo de relatório gerado |
 | `scheduled (read_only)` | Informativo, indica se já existem relatórios agendados para este usuário |
 | `frequency` | Se estiver usando relatórios agendados, indique a frequência (`daily`, `weekly`, `monthly`) |
-| `value` | Aplica-se ao tipo `"monthly"` (dia do mês) ou `"weekly"` (dia da semana) |
+| `value` | Aplica-se ao tipo `monthly` (dia do mês) ou `weekly` (dia da semana) |
 | `hour` | Hora do dia em que o relatório deve ser gerado |
-| `type` | Tipo de freqüência: `“daily”`, `“weekly”`, `“monthly”` |
+| `type` | Tipo de freqüência: `daily`, `weekly`, `monthly` |
 | `execute_after_withdrawal` | Indica se um relatório será gerado automaticamente após a retirada de dinheiro de cada usuário |
 
 ```json

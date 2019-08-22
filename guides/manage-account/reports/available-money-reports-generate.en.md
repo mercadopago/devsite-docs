@@ -755,9 +755,9 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 | `file_name_prefix` | Static prefix of the name of the generated report file |
 | `scheduled (read_only)` | Informative, indicates whether there are already scheduled reports for this user |
 | `frequency` | If using scheduled reports, indicate the frequency (`daily`, `weekly`, `monthly`) |
-| `value` | Applies to type `"monthly"` (day of the month) or `"weekly"` (day of the week) |
+| `value` | Applies to type `monthly` (day of the month) or `weekly` (day of the week) |
 | `hour` | Time of day the report should be generated |
-| `type` | Frequency type: `“daily”`, `“weekly”`, `“monthly”` |
+| `type` | Frequency type: `daily`, `weekly`, `monthly` |
 | `execute_after_withdrawal` | Indicates whether a report will be generated automatically after each user's withdrawal of money |
 
 ```json
