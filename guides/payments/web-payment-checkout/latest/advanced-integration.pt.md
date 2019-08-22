@@ -12,20 +12,20 @@ sites_supported:
 >
 >
 >
-> [Receba notificações de pagamento ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pagos)
+> [Receba notificações de pagamento ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_receba_notificações_de_pagamentos)
 >
-> [Informações adicionais para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/#bookmark_información_adicional_para_la_preferencia)
+> [Informações adicionais para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informações_adicionais_para_a_preferência)
 >
 > [URL de retorno](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
 >
-> [Cancelamentos e estornos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+> [Cancelamentos e estornos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelamentos_e_estornos)
 >
-> [Gerencie contestações](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+> [Gerencie contestações](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_gerencie_contestações)
 
 
 ## Receba notificações de pagamentos
 
- As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se forma aprovados, recusados ou se estão pendentes.
+ As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se foram aprovados, recusados ou se estão pendentes.
 Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
 
 
@@ -45,22 +45,22 @@ Recomendamos detalhar todas as informações possíveis sobre o item e o comprad
 <?php
   // ...
   $payer = new MercadoPago\Payer();
-  $payer->name = "Charles";
-  $payer->surname = "Luevano";
-  $payer->email = "charles@hotmail.com";
+  $payer->name = "Joao";
+  $payer->surname = "Silva";
+  $payer->email = "user@email.com";
   $payer->date_created = "2018-06-02T12:58:41.425-04:00";
   $payer->phone = array(
-    "area_code" => "",
-    "number" => "949 128 866"
+    "area_code" => "11",
+    "number" => "4444-4444"
   );
   $payer->identification = array(
-    "type" => "DNI",
-    "number" => "12345678"
+    "type" => "CPF",
+    "number" => "19119119100"
   );
   $payer->address = array(
-    "street_name" => "Cuesta Miguel Armendáriz",
-    "street_number" => 1004,
-    "zip_code" => "11020"
+    "street_name" => "Street",
+    "street_number" => 123,
+    "zip_code" => "06233200"
   );
   // ...
 ?>
@@ -68,22 +68,22 @@ Recomendamos detalhar todas as informações possíveis sobre o item e o comprad
 ```node
 // ...
 var payer = {
-  name: "Charles",
-  surname: "Luevano",
-  email: "charles@hotmail.com",
+  name: "Joao",
+  surname: "Silva",
+  email: "user@email.com",
   date_created: "2015-06-02T12:58:41.425-04:00",
   phone: {
-    area_code: "",
-    number: "949 128 866"
+    area_code: "11",
+    number: "4444-4444"
   },
   identification: {
-    type: "DNI",
-    number: "12345678"
+    type: "CPF",
+    number: "19119119100"
   },
   address: {
-    street_name: "Cuesta Miguel Armendáriz",
-    street_number: "1004",
-    zip_code: "11020"
+    street_name: "Street",
+    street_number: "123",
+    zip_code: "06233200"
   }
 }
 // ...
@@ -91,41 +91,41 @@ var payer = {
 ```java
 // ...
 Payer payer = new Payer();
-payer.setName("Charles")
-     .setSurname("Luevano")
-     .setEmail("charles@hotmail.com")
+payer.setName("Joao")
+     .setSurname("Silva")
+     .setEmail("user@email.com")
      .setDateCreated("2018-06-02T12:58:41.425-04:00")
      .setPhone(new Phone()
-        .setAreaCode("")
-        .setPhoneNumber("949 128 866"))
+        .setAreaCode("11")
+        .setPhoneNumber("4444-4444"))
      .setIdentification(new Identification()
-        .setType("DNI")
-        .setNumber("12345678"))
+        .setType("CPF")
+        .setNumber("19119119100"))
      .setAddress(new Address()
-        .setStreetName("Cuesta Miguel Armendáriz")
-        .setBuildingNumber("1004")
-        .setZipCode("11020"));
+        .setStreetName("Street")
+        .setBuildingNumber("123")
+        .setZipCode("06233200"));
 // ...
 ```
 ```ruby
 # ...
 payer = MercadoPago::Payer.new({
-  name: "Charles"
-  surname: "Luevano"
-  email: "charles@hotmail.com"
+  name: "Joao"
+  surname: "Silva"
+  email: "user@email.com"
   date_created: Time.now
   phone: MercadoPago::Phone.new({
-    area_code: "",
-    number: "949 128 866"
+    area_code: "11",
+    number: "4444-4444"
   })
   identification: MercadoPago::Identification.new({
-    type: "DNI",
-    number: "12345678"
+    type: "CPF",
+    number: "19119119100"
   })
   address: MercadoPago::Address.new ({
-    street_name: "Cuesta Miguel Armendáriz",
-    street_number: "1004",
-    zip_code: "11020"
+    street_name: "Street",
+    street_number: "123",
+    zip_code: "06233200"
   })
 })
 # ...
@@ -137,24 +137,24 @@ using MercadoPago.DataStructures.Preference;
 // ...
 Payer payer = new Payer()
 {
-    Name = "Charles",
-    Surname = "Luevano",
-    Email = "charles@hotmail.com",
+    Name = "Joao",
+    Surname = "Silva",
+    Email = "user@email.com",
     Phone = new Phone()
     {
-        AreaCode = "",
-        Number = "949 128 866"
+        AreaCode = "11",
+        Number = "4444-4444"
     },
     Identification = new Identification()
     {
-        Type = "DNI",
-        Number = "12345678"
+        Type = "CPF",
+        Number = "19119119100"
     },
     Address = new Address()
     {
-        StreetName = "Cuesta Miguel Armendáriz",
-        StreetNumber = int.Parse("1004"),
-        ZipCode = "11020"
+        StreetName = "Street",
+        StreetNumber = int.Parse("123"),
+        ZipCode = "06233200"
     }
 };
 // ...
@@ -170,7 +170,7 @@ Payer payer = new Payer()
   $item->id = "1234";
   $item->title = "Heavy Duty Plastic Table";
   $item->quantity = 7;
-  $item->currency_id = "ARS";
+  $item->currency_id = "BRL";
   $item->unit_price = 75.56;
   // ...
 ?>
@@ -182,7 +182,7 @@ items: [
       id: '1234',
       title: 'Lightweight Paper Table',
       quantity: 3,
-      currency_id: 'ARS',
+      currency_id: 'BRL',
       unit_price: 55.41
     }
   ]// ...
@@ -193,7 +193,7 @@ Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
     .setQuantity(3)
-    .setCurrencyId("ARS")
+    .setCurrencyId("BRL")
     .setUnitPrice((float) 55.41);
 // ...
 ```
@@ -203,7 +203,7 @@ item = MercadoPago::Item.new({
   id: "1234",
   title: "Lightweight Paper Table",
   quantity: 3,
-  currency_id: "ARS",
+  currency_id: "BRL",
   unit_price: 55.41
 })# ...
 ```
@@ -215,7 +215,7 @@ preference.Items.Add(
     Id = "1234",
     Title = "Lightweight Paper Table",
     Quantity = 3,
-    CurrencyId = "ARS",
+    CurrencyId = "BRL",
     UnitPrice = (float)55.41
   }
 );
@@ -233,7 +233,7 @@ Para isso, back_urls são usados. Esse redirecionamento pode ser automático atr
 Atributo |	Descrição
 ------------ 	|	--------
 `auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são approved e all.
- `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento cancelado.
+ `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento rejeitado.
 
 
 [[[
@@ -242,9 +242,9 @@ Atributo |	Descrição
 $preference = new MercadoPago\Preference();
 //...
 $preference->back_urls = array(
-    "success" => "https://www.tu-sitio/success",
-    "failure" => "http://www.tu-sitio/failure",
-    "pending" => "http://www.tu-sitio/pending"
+    "success" => "https://www.seu-site/success",
+    "failure" => "http://www.seu-site/failure",
+    "pending" => "http://www.seu-site/pending"
 );
 $preference->auto_return = "approved";
 // ...
@@ -255,9 +255,9 @@ var preference = {}
 preference = {
   // ...
   "back_urls": {
-        "success": "https://www.tu-sitio/success",
-        "failure": "http://www.tu-sitio/failure",
-        "pending": "http://www.tu-sitio/pending"
+        "success": "https://www.seu-site/success",
+        "failure": "http://www.seu-site/failure",
+        "pending": "http://www.seu-site/pending"
     },
     "auto_return": "approved",
   // ...
@@ -267,9 +267,9 @@ preference = {
 Preference preference = new Preference();
 // ...
 BackUrls backUrls = new BackUrls(
-                    "https://www.tu-sitio/success",
-                    "http://www.tu-sitio/pending",
-                    "http://www.tu-sitio/failure");
+                    "https://www.seu-site/success",
+                    "http://www.seu-site/pending",
+                    "http://www.seu-site/failure");
 
 preference.setBackUrls(backUrls);
 // ...
@@ -278,9 +278,9 @@ preference.setBackUrls(backUrls);
 preference = MercadoPago::Preference.new
 # ...
 preference.back_urls = {
-  success: "https://www.tu-sitio/success",
-  failure: "http://www.tu-sitio/failure",
-  pending: "http://www.tu-sitio/pendings"
+  success: "https://www.seu-site/success",
+  failure: "http://www.seu-site/failure",
+  pending: "http://www.seu-site/pendings"
 }
 preference.auto_return = "approved"
 # ...
@@ -289,9 +289,9 @@ preference.auto_return = "approved"
 Preference preference = new Preference();
  preference.BackUrls = new BackUrls()
   {
-    Success = "https://www.tu-sitio/success",
-    Failure = "http://www.tu-sitio/failure",
-    Pending = "http://www.tu-sitio/pendings"
+    Success = "https://www.seu-site/success",
+    Failure = "http://www.seu-site/failure",
+    Pending = "http://www.seu-site/pendings"
   };
   preference.AutoReturn = AutoReturnType.approved;
 ```
@@ -300,10 +300,10 @@ Preference preference = new Preference();
 ## Cancelamentos e estornos
 
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
-Os estornos acontecem quando o pagamento foi feito, mas o vendedor decide cancelá-lo, total ou parcialmente.
+As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
 
 
-Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos.</a>.
+Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos.</a>.
 
 ## Gerencie contestações
 
@@ -311,7 +311,7 @@ Uma contestação ou chargeback acontece quando o comprador entra em contato com
 Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da sua conta do Mercado Pago até que seja solucionada.
 
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/" target="_blank"> Gerenciar contestações</a>
+<a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/chargebacks/" target="_blank"> Gerenciar contestações</a>
 
 ### Próximos passos
 
