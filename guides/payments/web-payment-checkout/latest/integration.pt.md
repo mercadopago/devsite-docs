@@ -12,9 +12,9 @@ sites_supported:
 >
 >
 >
-> [Como me integro?](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿cómo_me_integro?)
+> [Como me integro?](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_como_me_integro?)
 >
-> [Etapas para se integrar](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
+> [Etapas para se integrar](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_etapas_para_se_integrar)
 
 
 ## Como me integro?
@@ -39,7 +39,7 @@ Instalar o Web Checkout requer duas etapas:
 
 Insira o seguinte código que consta de três partes:
 
-1.1 Adicione o <a href="https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK do Mercado Pago</a> no seu projeto:
+1.1 Adicione o <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos" target="_blank"> SDK do Mercado Pago</a> no seu projeto:
 
 [[[
 ```php
@@ -74,7 +74,7 @@ require 'mercadopago.rb'
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
@@ -82,7 +82,7 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 // SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-// Agrega credenciales
+// Configura credenciais
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
@@ -91,21 +91,21 @@ mercadopago.configure({
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
 # SDK de Mercado Pago
 require 'mercadopago.rb'
 
-# Agrega credenciales
+# Configura credenciais
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ]]]
@@ -119,15 +119,15 @@ MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 $preference = new MercadoPago\Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 $item = new MercadoPago\Item();
-$item->title = 'Mi producto';
+$item->title = 'Meu produto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
@@ -138,16 +138,16 @@ $preference->save();
 // SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-// Agrega credenciales
+// Configura credenciais
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 let preference = {
   items: [
     {
-      title: 'Mi producto',
+      title: 'Meu produto',
       unit_price: 100,
       quantity: 1,
     }
@@ -156,7 +156,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor reemplazará el string "$$init_point$$" en tu HTML
+// Este valor substituirá a string "$$init_point$$" no seu HTML
   global.init_point = response.body.init_point;
 }).catch(function(error){
   console.log(error);
@@ -166,15 +166,15 @@ mercadopago.preferences.create(preference)
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 Preference preference = new Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 Item item = new Item();
-item.setTitle("Mi producto")
+item.setTitle("Meu produto")
     .setQuantity(1)
     .setUnitPrice((float) 75.56);
 preference.appendItem(item);
@@ -184,14 +184,14 @@ preference.save();
 # SDK de Mercado Pago
 require 'mercadopago.rb'
 
-# Agrega credenciales
+# Configura credenciais
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 
-# Crea un objeto de preferencia
+# Cria um objeto de preferência
 preference_data = {
   "items": [
     {
-      "title": "Mi producto",  
+      "title": "Meu produto",  
       "unit_price": 100,
       "quantity": 1
     }
@@ -199,26 +199,26 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# Este valor reemplazará el string "<%= @init_point %>" en tu HTML
+# Este valor substituirá a string "<%= @init_point %>" no seu HTML
 @init_point = preference["response"]["init_point"]
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 Preference preference = new Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 preference.Items.Add(
   new Item()
   {
-    Title = "Mi producto",
+    Title = "Meu produto",
     Quantity = 1,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.BRL,
     UnitPrice = (decimal)75.56
   }
 );
@@ -232,7 +232,7 @@ curl -X POST \
   -d '{
     "items": [
         {
-            "title": "Mi producto",
+            "title": "Meu produto",
             "quantity": 1,
             "unit_price": 75.76
         }
@@ -249,11 +249,11 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 [[[
 ```php
 ===
-Redirige ao init_point da preferência.
+Redireciona ao init_point da preferência.
 ===
 <form action="/procesar-pago" method="POST">
   <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="<?php echo $preference->id; ?>">
   </script>
@@ -261,11 +261,11 @@ Redirige ao init_point da preferência.
 ```
 ```node
 ===
-Redirige ao init_point da preferência.
+Redireciona ao init_point da preferência.
 ===
 <form action="/procesar-pago" method="POST">
   <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="$$id$$">
   </script>
@@ -273,11 +273,11 @@ Redirige ao init_point da preferência.
 ```
 ```java
 ===
-Redirige ao init_point da preferência.
+Redireciona ao init_point da preferência.
 ===
 <form action="/procesar-pago" method="POST">
   <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="${preference.id}">
   </script>
@@ -285,11 +285,11 @@ Redirige ao init_point da preferência.
 ```
 ```ruby
 ===
-Redirige ao init_point da preferência.
+Redireciona ao init_point da preferência.
 ===
 <form action="/procesar-pago" method="POST">
   <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="%= @init_point %>">
   </script>
@@ -297,11 +297,11 @@ Redirige ao init_point da preferência.
 ```
 ```csharp
 ===
-Redirige ao init_point da preferência.
+Redireciona ao init_point da preferência.
 ===
 <form action="/procesar-pago" method="POST">
   <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="@Html.DisplayFor(model => model.id)">
   </script>
@@ -316,13 +316,13 @@ Redirige ao init_point da preferência.
 > Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
 
 #### Excelente! Você concluiu sua integração.
-_Clique no link dentro do seu site e [teste a integração do seu Web Checkout.](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Clique no link dentro do seu site e [teste a integração do seu Web Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > NOTE
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [seção de Web Checkout antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
 ### Próximos passos
 
