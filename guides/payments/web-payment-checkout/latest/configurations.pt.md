@@ -12,13 +12,13 @@ sites_supported:
 >
 >
 >
-> [Exemplo de uma preferência completa](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
+> [Exemplo de uma preferência completa](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_exemplo_de_uma_preferência_completa)
 >
-> [Atributos para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
+> [Atributos para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência)
 
 Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago.com.br/developers/pt/reference/preferences/resource/) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
 
-Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que você não quiser aceitar
+Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que você não quiser aceitar
 
 ## Exemplo de uma preferência completa
 
@@ -27,31 +27,31 @@ Se você oferece compras de valores altos, por exemplo, você pode aceitar [paga
     "items": [
         {
             "id": "item-ID-1234",
-            "title": "Mi producto",
-            "currency_id": "ARS",
+            "title": "Meu produto",
+            "currency_id": "BRL",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
-            "description": "Descripción del Item",
+            "description": "Descrição do Item",
             "category_id": "art",
             "quantity": 1,
             "unit_price": 75.76
         }
     ],
     "payer": {
-        "name": "Juan",
-        "surname": "Lopez",
+        "name": "João",
+        "surname": "Silva",
         "email": "user@email.com",
         "phone": {
             "area_code": "11",
             "number": "4444-4444"
         },
         "identification": {
-            "type": "DNI",
-            "number": "12345678"
+            "type": "CPF",
+            "number": "19119119100"
         },
         "address": {
             "street_name": "Street",
             "street_number": 123,
-            "zip_code": "5700"
+            "zip_code": "06233200"
         }
     },
     "back_urls": {
@@ -94,7 +94,7 @@ Atributo | Descrição
 ------------ | -------------
 _`payment_methods`_ | Classe que descreve os atributos e métodos de meios de pagamento.
 _`excluded_payment_methods`_ | Método que exclui por meios de pagamento específicos: Visa, Mastercard o American Express, entre outros.
-_`excluded_payment_types`_ | Método que exclui por tipo de meio de pagamento: boleto, cartão de crédito ou na lotérica.
+_`excluded_payment_types`_ | Método que exclui por tipo de meio de pagamento: cartão de crédito ou ticket (boleto ou pagamento em lotérica).
 _`installments`_ | Método que define o número máximo de parcelas a oferecer
 
 [[[
@@ -179,7 +179,7 @@ paymentmethods.Installments = 12;
 
 ## Modo binário
 
-PVocê pode ativar o modo binário se o modelo de negócios exigir que a aprovação do pagamento seja instantânea. Dessa forma, o pagamento só pode ser aprovado ou recusado.
+Você pode ativar o modo binário se o modelo de negócios exigir que a aprovação do pagamento seja instantânea. Dessa forma, o pagamento só pode ser aprovado ou recusado.
 
 Se o modo binário não estiver ativado, o pagamento pode ficar pendente (no caso de exigir qualquer ação do comprador) ou em processo (se for necessária uma revisão manual).
 
@@ -228,109 +228,109 @@ Lembre-se de que o valor total da preferência será a soma do valor do preço u
 [[[
 ```php
 <?php
-  # Crear un objeto preferencia
+  # Criar um objeto preferência
   $preference = new MercadoPago\Preference();
-  # Crea ítems en la preferencia
+  # Cria itens na preferência
   $item1 = new MercadoPago\Item
-  $item1->title = "Item de Prueba 1";
+  $item1->title = "Item de Teste 1";
   $item1->quantity = 2;
   $item1->unit_price = 11.96;
 
   $item2= new MercadoPago\Item
-  $item2->title = "Item de Prueba 2";
+  $item2->title = "Item de Teste 2";
   $item2->quantity = 1;
   $item2->unit_price = 11.96;
 
   $preference->items = array($item1,$item2);
-  # Guardar y postear la preferencia
+  # Salvar e postar a preferência
   $preference->save();
 ?>
 ```
 ```node
-// Configura tu preferencia
+// Configura sua preferência
 var preference = {
   items: [
-      { title: 'Mi producto',
+      { title: 'Meu produto',
       quantity: 1,
-      currency_id: 'ARS',
+      currency_id: 'BRL',
       unit_price: 75.56 },
-	{ title: 'Mi producto 2’,
+	{ title: 'Meu produto 2’,
       quantity: 2,
-      currency_id: 'ARS',
+      currency_id: 'BRL',
       unit_price: 96.56 }
     ]
 };
-// Crea un botón de pago en tu sitio
+// Cria um botão de pagamento no seu site
 mercadopago.preferences.create(preference)
 .then(function(preference){
-  // Este valor reemplazará el string "$$init_point$$" en tu HTML
+  // Este valor substituirá o string "$$init_point$$" no seu HTML
   global.init_point = preference.body.init_point;
 }).catch(function(error){
   console.log(error);
 });
 ```
 ```java
-// Crea un objeto preferencia
+// Cria um objeto preferência
 Preference preference = new Preference();
-// Crea ítems en la preferencia
+// Cria itens na preferência
 Item item1 = new Item();
 item1.setId("1234")
-    .setTitle("Producto 1")
+    .setTitle("Produto 1")
     .setQuantity(2)
-    .setCurrencyId("ARS")
+    .setCurrencyId("BRL")
     .setUnitPrice((float) 75.56);
 
 Item item2 = new Item();
 item2.setId("12")
-    .setTitle("Producto 2")
+    .setTitle("Produto 2")
     .setQuantity(1)
-    .setCurrencyId("ARS")
+    .setCurrencyId("BRL")
     .setUnitPrice((float) 75.56);
 
 preference.appendItem(item1, item2);
-// Guardar y postear la preferencia
+// Salvar e postar a preferência
 preference.save();
 ```
 ```ruby
-// Crea ítems en la preferencia
+// Cria itens na preferência
 item = MercadoPago::Item.new({
-  title:        "Mi producto",
+  title:        "Meu produto",
   quantity:     1,
   unit_price:   75.56
 })
 item2 = MercadoPago::Item.new({
-  title:        "Mi producto2”,
+  title:        "Meu produto2",
   quantity:     2,
   unit_price:   96.56
 })
-// Crea un objeto preferencia
+// Cria um objeto preferência
 preference = MercadoPago::Preference.new({
   items: [item, item2]
 })
 preference.save()
 ```
 ```csharp
-// Crea un objeto preferencia
+// Cria um objeto preferência
 Preference preference = new Preference();
 
-// Crea ítems en la preferencia
+// Cria itens na preferência
 reference.Items.Add(
   new Item()
   {
-    Title = "Mi producto",
+    Title = "Meu produto",
     Quantity = 1,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.BRL,
     UnitPrice = (decimal)75.56
   },
   new Item()
   {
-    Title = "Mi producto2”,
+    Title = "Meu produto 2",
     Quantity = 2,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.BRL,
     UnitPrice = (decimal)96.56
   }
 );
-preference.Save()"
+preference.Save()
 ```
 ```curl
 curl -X POST \
@@ -343,13 +343,13 @@ curl -X POST \
 		"id_product":1,
 		"quantity":1,
 		"unit_price": 234.33,
-		"titulo":"Mi producto"
+		"titulo":"Meu produto"
 	},
 	{
 		"id_product":2,
 		"quantity":2,
 		"unit_price": 255.33,
-		"titulo":"Mi producto 2"
+		"titulo":"Meu produto 2"
 	}
 ]
 }'
@@ -359,13 +359,13 @@ curl -X POST \
 ### Próximos passos
 
 <div>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
 </blockquote>
 </a>   
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
+<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Customizações</p>
  <p>Adapte o estilo da sua marca na experiência de compra.</p>
