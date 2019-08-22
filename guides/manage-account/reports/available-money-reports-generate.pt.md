@@ -751,7 +751,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 | `detailed` | Indica se o relatório deve incluir colunas extras, como `financing`, `fee amount`, `mp fee amount`, etc. |
 | `file_name_prefix` | Prefixo estático do nome do arquivo de relatório gerado |
 | `scheduled (read_only)` | Informativo, indica se já existem relatórios agendados para este usuário |
-| `frequency` | Se estiver usando relatórios agendados, indique a frequência (`daily`, `weekly`, `monthly`) |
+| `frequency` | Se estiver usando relatórios agendados, indique a frequência (`daily`,`weekly`,`monthly`) |
 | `value` | Aplica-se ao tipo `monthly` (dia do mês) ou `weekly` (dia da semana) |
 | `hour` | Hora do dia em que o relatório deve ser gerado |
 | `type` | Tipo de freqüência: `daily`, `weekly`, `monthly` |

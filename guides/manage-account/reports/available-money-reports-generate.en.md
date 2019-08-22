@@ -754,7 +754,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 | `detailed` | Indicates whether the report should include extra columns such as `financing`, `fee amount`, `mp fee amount`, etc. |
 | `file_name_prefix` | Static prefix of the name of the generated report file |
 | `scheduled (read_only)` | Informative, indicates whether there are already scheduled reports for this user |
-| `frequency` | If using scheduled reports, indicate the frequency (`daily`, `weekly`, `monthly`) |
+| `frequency` | If using scheduled reports, indicate the frequency (`daily`,`weekly`,`monthly`) |
 | `value` | Applies to type `monthly` (day of the month) or `weekly` (day of the week) |
 | `hour` | Time of day the report should be generated |
 | `type` | Frequency type: `daily`, `weekly`, `monthly` |
