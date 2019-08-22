@@ -748,8 +748,8 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 | `Attribute` |`Description`|
 | ---------- | ----------- |
-| `sftp_info (opcional)`| Indicates SFTP upload data if needed |
-| `extended (opcional)` | Indicates whether commission details are desired |
+| `sftp_info (optional)`| Indicates SFTP upload data if needed |
+| `extended (optional)` | Indicates whether commission details are desired |
 | `include_withdrawal_at_end` | Indicates whether to include the withdrawal for which the report is generated at the end of the report |
 | `detailed` | Indicates whether the report should include extra columns such as `financing`, `fee amount`, `mp fee amount`, etc. |
 | `file_name_prefix` | Static prefix of the name of the generated report file |
