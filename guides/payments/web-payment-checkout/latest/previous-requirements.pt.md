@@ -8,7 +8,7 @@ sites_supported:
 
 > INDEX
 >
-> En esta página
+> Nesta página
 >
 >
 >
@@ -18,7 +18,7 @@ sites_supported:
 
 ## Glossário
 
-Sabemos que alguns termos são novos. Antes de começar, os deixamos à mão. 
+Sabemos que alguns termos são novos. Antes de começar, os deixamos à mão.
 
 Termo | Descrição
 ------------ | -------------
@@ -26,8 +26,7 @@ _Preferência (preference)_ | São as **informações do produto ou serviço que
 _Credenciais (credentials)_ | Suas credenciais são as **chaves que te informamos para que você possa configurar suas integrações.**<br/>Existem dois tipos:<br/><br/>**ACCESS_TOKEN**. Chave privada da aplicação para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/>**PUBLIC_KEY**. Chave pública da aplicação para saber, por exemplo, os meios de pagamento e criptografar os dados do cartão. Você deve usá-las somente para as suas integrações.<br/><br/>Para poder encontrá-las, confira suas <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a> e selecione as produtivas na opção _Checkout personalizado_.<br/><br/>Se você entrou nesta página com sua conta, elas serão preenchidas automaticamente dentro das linhas de códigos.
 _Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar a preferência**  e que dá início ao fluxo de pagamento do Web Checkout.
 _Item (ítem)_ | Faz referência ao produto ou serviço que se quer oferecer. Pode ser um ou uma lista.
-_Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **CCada aplicação identifica uma integração específica,**, pois cada uma possui suas próprias . <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.
-<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar. 
+_Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica,**, pois cada uma possui suas próprias<a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar.
 
 ## Pré-requisitos
 
@@ -38,7 +37,7 @@ Para poder começar a integração, é necessário **contar com uma conta do Mer
 Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.br/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
 
 ### 2.  Instalação do SDK do Mercado Pago
-**Instale o SDK oficial** para simplificar sua integração com as nossas APIs. 
+**Instale o SDK oficial** para simplificar sua integração com as nossas APIs.
 
 [[[
 ```php
@@ -66,14 +65,14 @@ Para instalar o SDK no seu projeto<a href="http://maven.apache.org/install.html"
 ```
 ```ruby
 ===
-O SDK do Mercado Pago está disponível como <a href="https://rubygems.org/gems/mercadopago-sdk" target="_blank"> gema</a>, para instalá-la, voc~e deve executar o seguinte código na linha de comandos:
+O SDK do Mercado Pago está disponível como <a href="https://rubygems.org/gems/mercadopago-sdk" target="_blank"> gema</a>, para instalá-la, você deve executar o seguinte código na linha de comandos:
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 Use o  <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar o SDK .NET do Mercado Pago.
-Para isso, execute o seguinte comando no console do NuGet Package Manager: 
+Para isso, execute o seguinte comando no console do NuGet Package Manager:
 ===
 PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
@@ -83,7 +82,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [sessão de Web Checkout antiga](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
 ### Próximos passos
 
