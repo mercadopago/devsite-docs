@@ -27,7 +27,7 @@ Os esquemas disponíveis atualmente são:
 * **Redirect**: abre o Web Checkout em uma nova janela.
 * **Modal**: abre o Web Checkout no seu site.
 
-![Checkout-Modal](/images/web-payment-checkout/CHO_modal_pt.png)
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
 Para integrar o esquema redirect, substitua o botão de pagamento que fez na integração básica pelo seguinte snippet:
 
@@ -163,7 +163,7 @@ Por padrão, o botão mostra o texto “Pagar”. Você pode alterar o texto do 
 data-button-label="Comprar"
 ```
 
-### Por padrão: 
+### Por padrão:
 
 ![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
 

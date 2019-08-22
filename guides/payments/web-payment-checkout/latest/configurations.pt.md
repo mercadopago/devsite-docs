@@ -216,7 +216,7 @@ O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de softw
 Você pode ativar a opção de oferecer pagamento com dois cartões de crédito da conta do Mercado Pago. Para ativar a opção de pagamento, acesse as <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank"> e selecione a opção _Receber pagamentos com 2 cartões de crédito._
 
 
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
 
 
 ## Diversos itens
