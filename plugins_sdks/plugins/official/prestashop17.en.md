@@ -74,7 +74,7 @@ You do not need to know how to design or program to activate Mercado Pago in you
 3. Set your payment preferences and other advanced settings.
 4. Approve your account to [go to Production](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) and receive real payments.
 
-##Receive payments
+## Receive payments
 
 Set the basics of checkout and let your customer complete your purchase quickly, easily and safely:
 
