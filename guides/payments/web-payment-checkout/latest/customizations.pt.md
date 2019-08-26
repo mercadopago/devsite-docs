@@ -12,11 +12,11 @@ sites_supported:
 >
 >
 >
-> [Esquema redirect](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
+> [Esquema redirect](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
 >
-> [Cores](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_cores)
+> [Cores](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_cores)
 >
-> [Botões](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_botões)
+> [Botões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_botões)
 
 ## Esquema redirect
 
@@ -171,13 +171,13 @@ data-button-label="Comprar"
 ### Próximos passos
 
 <div>
-<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
+<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Outras funcionalidades</p>
  <p>Configure seus pagamentos e adapte o Web Checkout ao seu negócio.</p>
 </blockquote>
 </a>
-<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>

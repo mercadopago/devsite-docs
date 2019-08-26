@@ -44,13 +44,13 @@ Pagamento com dois cartões		           |      ✔      |                     |
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [sessão de Web Checkout antiga](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [sessão de Web Checkout antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
 
 ### Próximos passos
 
 <div>
-<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements/" style="text-decoration:none;color:inherit">
+<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-required">OBRIGATORIO</span></p>
  <p>Para realizar a integração, você deve atender os requisitos necessários.</p>
