@@ -94,7 +94,7 @@ Create your payment preferences:
 
 ![Basic configuration](/images/prestashop/es_basico.png)
 
-####**2. Advanced configuration**
+#### **2. Advanced configuration**
 
 Customize the shopping experience with the advanced settings that correspond to each type of checkout:
 
