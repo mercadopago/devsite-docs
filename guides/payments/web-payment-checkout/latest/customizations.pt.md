@@ -130,9 +130,6 @@ O valor do atributo deve estar em formato hexadecimal. Por exemplo:
 data-header-color="#c0392b"
 ```
 
-![Custom-Component](/images/web-payment-checkout/custom_components.gif)
-</p><br/>
-
 #### Textos
 
 A cor do texto dos botões será determinado automaticamente dependendo do contraste da cor definida.

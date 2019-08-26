@@ -226,13 +226,13 @@ preference.Items.Add(
 ## URL de retorno
 
 No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
-Para isso, back_urls são usados. Esse redirecionamento pode ser automático através do atributo auto_return ou de um link que permite retornar ao site do vendedor.
+Para isso, `back_urls` são usados. Esse redirecionamento pode ser automático através do atributo `auto_return` ou de um link que permite retornar ao site do vendedor.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
 Atributo |	Descrição
 ------------ 	|	--------
-`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são approved e all.
+`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são `approved` e `all`.
  `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento rejeitado.
 
 
@@ -303,7 +303,7 @@ Os cancelamentos são feitos quando o pagamento não foi concluído antes da dat
 As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
 
 
-Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos.</a>.
+Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos</a>.
 
 ## Gerencie contestações
 
