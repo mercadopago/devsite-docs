@@ -106,7 +106,7 @@ Customize the shopping experience with the advanced settings that correspond to 
 
 ![Advanced configuration](/images/prestashop/es_avanzado.png)
 
-####**3. Test the module**
+#### **3. Test the module**
 
 Do tests:
 
