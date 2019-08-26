@@ -33,20 +33,21 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
-1. En su panel de administración de Shopify, vaya al menú **Settings > Payments**.
+1) En su panel de administración de Shopify, vaya al menú **Settings > Payments**.
 
-  ![Configurar Mercado Pago Shopify](/images/shopify-config-1.gif)
+![Configurar Mercado Pago Shopify](/images/shopify/shopify-config-1.gif)
 
-2. En **Accept credit cards**, seleccione **Mercado Pago**.
-3. Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
+2) En **Accept credit cards**, seleccione **Mercado Pago**.
 
-  ![Configurar client id y client secret Mercado Pago Shopify](/images/shopify-config-2.gif)
+3) Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-4. Haga clic en el botón **Activate** para guardar.
+  ![Configurar client id y client secret Mercado Pago Shopify](/images/shopify/shopify-config-2.gif)
 
-  ![Guardando toda la configuración Mercado Pago Shopify](/images/shopify-config-3.gif)
+4) Haga clic en el botón **Activate** para guardar.
 
-5. ¡Listo! **Mercado Pago** fue instalado y configurado.
+  ![Guardando toda la configuración Mercado Pago Shopify](/images/shopify/shopify-config-3.gif)
+
+5) ¡Listo! **Mercado Pago** fue instalado y configurado.
 
 ### Mapeo de estados de pago
 
