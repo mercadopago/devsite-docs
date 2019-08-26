@@ -82,7 +82,7 @@ Set the basics of checkout and let your customer complete your purchase quickly,
 
 The better the experience, the more conversions! Follow these steps to configure the Mercado Pago module:
 
-####**1. Basic configuration**
+#### **1. Basic configuration**
 
 Create your payment preferences:
 
