@@ -46,35 +46,38 @@ This process will explain the installation of the Mercado Pago module via Packag
 
 **Installation via Marketplace**
 
-1. Go to **[Magento Marketplace](https://marketplace.magento.com/)**, search for **Mercado Pago**, select the module version **M1**, add the module to the cart and complete the purchase process (you will have no cost):
-![Installing Mercado Pago with marketplace of Magento](/images/magento-marketplace_1)
+1) Go to **[Magento Marketplace](https://marketplace.magento.com/)**, search for **Mercado Pago**, select the module version **M1**, add the module to the cart and complete the purchase process (**you will have no cost**):
 
-2. When finalizing the process of "purchase", click in **Install** and copy the link:
-![Installing and copying the access keys](/images/magento-marketplace_2.gif)
+![Installing Mercado Pago with marketplace of Magento](/images/magento/magento-marketplace_1.gif)
+
+2) When finalizing the process of "purchase", click in **Install** and copy the link:
+
+![Installing and copying the access keys](/images/magento/magento-marketplace_2.gif)
+
 > The copied link should look like this:
 > https://connect20.magentocommerce.com/e848b7a0bc8735cd525582c/mercadopago+MercadoPago-2.9.0
 
-3. To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**.
+3) To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**.
 
-4. Copy the link obtained in the **Magento Marketplace** in the option **Install New Extensions** and click in **Install**.
+4) Copy the link obtained in the **Magento Marketplace** in the option **Install New Extensions** and click in **Install**.
 
-![Pasting the access key to install](/images/magento-marketplace_3.gif)
+![Pasting the access key to install](/images/magento/magento-marketplace_3.gif)
 
-5. Very Good! The module of Mercado Pago was successfully installed.
+5) Very Good! The module of Mercado Pago was successfully installed.
 
 **Installation via Package**
 
-1. Vá até o **[Github do Módulo Magento do Mercado Pago](https://github.com/mercadopago/cart-magento)**, faça o download do arquivo que possui a extensão **.tgz** (Exemplo: MercadoPago-2.10.0.tgz):
-![Installing the Mercado Pago via package](/images/magento-download_github.gif)
+1) Go to the **[Mercado Pago Magento Module Github](https://github.com/mercadopago/cart-magento)**, download the file that has the extension **.tgz** (Example: MercadoPago-2.10.0.tgz):
 
-2. To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**.
+![Installing the Mercado Pago via package](/images/magento/magento-download_github.gif)
 
-3. Upload the file in option **Direct package file upload** and click in **Upload**:
+2) To install we will use the **Magento Connect Manager**, access the Magento Admin and go to the menu **System > Magento Connect > Magento Connect Manager**.
 
-![Uploading the Mercado Pago file on Magento](/images/magento-install_tgz.gif)
+3) Upload the file in option **Direct package file upload** and click in **Upload**:
 
-4. Very Good! The module of Mercado Pago was successfully installed.
+![Uploading the Mercado Pago file on Magento](/images/magento/magento-install_tgz.gif)
 
+4) Very Good! The module of Mercado Pago was successfully installed.
 
 <a name="Upgrade"></a>
 ## Upgrade: ##
@@ -108,122 +111,114 @@ After doing this process, run the **Installation** process.
 
 > Always remember to make a backup of yours before making any changes.
 
-
 <a name="Configure-Credit-Card-and-Ticket"></a>
 ## Configure Credit Card and Ticket: ##
 
 This process will explain how to configure the module to accept payments with Checkout Custom with Credit Card and Tickets:
 
-1. Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
+1) Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
 
-![Configuring Credit Card and Ticket](/images/magento-config-01.gif)
+![Configuring Credit Card and Ticket](/images/magento/magento-config-01.gif)
 
-2. To set up the credentials go to **Mercado Pago - Custom Checkout**, you will see the field **Public Key** and **Access Token**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) To set up the credentials go to **Mercado Pago - Custom Checkout**, you will see the field **Public Key** and **Access Token**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
 
-
-![Configuring credentials in Magento](/images/magento-config-02.gif)
+![Configuring credentials in Magento](/images/magento/magento-config-02.gif)
 
 > There are two types of credentials:
 > * Modo Sandbox: The credentials in this way are used for testing.
 > * Modo Produção: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
 
-3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Make this process for **Checkout Custom - Credit Card** and **Checkout Custom - Ticket** and then click on **Save Config**.
+3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Make this process for **Checkout Custom - Credit Card** and **Checkout Custom - Ticket** and then click on **Save Config**.
 
-![Enabling payment method in Magento](/images/magento-config-03.gif)
+![Enabling payment method in Magento](/images/magento/magento-config-03.gif)
 
-4. Very good! The Checkout Custom with Credit Card and Ticket has been configured and enabled successfully!
+4) Very good! The Checkout Custom with Credit Card and Ticket has been configured and enabled successfully!
 
-![Successfully configured basic checkout](/images/magento-save.png)
-
+![Successfully configured basic checkout](/images/magento/magento-save.png)
 
 <a name="Configure-Checkout-Redirect,-Iframe-and-LightBox"></a>
 ## Configure Checkout Redirect, Iframe, and LightBox: ##
 
 This process will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox:
 
-1. Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
+1) Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
 
-![Configuring Checkout Redirect, Iframe and LightBox](/images/magento-config-01.gif)
+![Configuring Checkout Redirect, Iframe and LightBox](/images/magento/magento-config-01.gif)
 
-2. To set up the credentials go to **Mercado Pago - Classic Checkout**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) To set up the credentials go to **Mercado Pago - Classic Checkout**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
 
-![Configuring credentials - Checkout redirect](/images/magento-config-04.gif)
+![Configuring credentials - Checkout redirect](/images/magento/magento-config-04.gif)
 
-3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
+3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
 
-![Enabling payment method in Magento - Checkout redirect](/images/magento-config-05.gif)
+![Enabling payment method in Magento - Checkout redirect](/images/magento/magento-config-05.gif)
 
-4.  Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
+4)  Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 
-![Successfully configured Checkout redirect](/images/magento-save.png)
-
+![Successfully configured Checkout redirect](/images/magento/magento-save.png)
 
 <a name="Configure-Mercado-Envios"></a>
 ## Configure Mercado Envios: ##
 
 This process will explain how to configure the module to accept Mercado Envios:
 
-1. First, You need to [enable Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) in your Mercado Pago account.
+1) First, You need to [enable Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) in your Mercado Pago account.
 
 > 	IMPORTANT: Your Mercado Pago account must be of type **Seller**.
 
-2. Go to the menu **Systems > Configuration**, in the settings page go to the option **Shipping Methods**:
+2) Go to the menu **Systems > Configuration**, in the settings page go to the option **Shipping Methods**:
 
-![Configuring the Mercado Envios in Magento](/images/plugins/modules/magento/config-me-01.gif)
+![Configuring the Mercado Envios in Magento](/images/magento/magento-config-me-01.gif)
 
-3. To enable the Mercado Envios, go to the **Mercado Envios** option, click in **Configure** and check **Enable** as **Yes**
-![Enabling Market Shipments in Magento](/images/plugins/modules/magento/config-me-02.gif)
+3) To enable the Mercado Envios, go to the **Mercado Envios** option, click in **Configure** and check **Enable** as **Yes**
 
-4. Go to the option **Product attributes mapping** and select according to the attributes that you have configured in your store. Configure the available shipping methods in the **Available shipping methods** option. Click the **Save Config** option to save the settings:
+![Enabling Mercado Envios in Magento](/images/magento/magento-config-me-02.gif)
 
-![Configuring products in Marketplace](/images/plugins/modules/magento/config-me-03.gif)
+4) Go to the option **Product attributes mapping** and select according to the attributes that you have configured in your store. Configure the available shipping methods in the **Available shipping methods** option. Click the **Save Config** option to save the settings:
 
-5. Very good! The Mercado Envios has been configured and enable successfully!
+![Configuring products in Mercado Envios](/images/magento/magento-config-me-03.gif)
 
-![Mercado Envios configured successfully](/images/plugins/modules/magento/me_save.png)
+5) Very good! The Mercado Envios has been configured and enable successfully!
 
+![Mercado Envios configured successfully](/images/magento/magento-me_save.png)
 
 <a name="Configure-Subscriptions"></a>
 ## Configure Subscriptions: ##
 
 This process will explain how to configure the module to accept recurring payments:
 
-1. Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
+1) Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
 
-![Configuring recurring payments](/images/plugins/modules/magento/config-01.gif)
+![Configuring recurring payments](/images/magento/magento-config-01.gif)
 
-2. To set up the credentials go to **Mercado Pago - Recurring Payments**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) To set up the credentials go to **Mercado Pago - Recurring Payments**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)  
 
-![Configuring Credentials - Recurring Payments](/images/plugins/modules/magento/config-re-01.gif)
+![Enabling payment method in Magento - Recurring Payments](/images/magento/magento-config-re-02.gif)
 
-3. With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**.
+3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**.
 
-![Enabling payment method in Magento - Recurring Payments](/images/plugins/modules/magento/config-re-02.gif)
+![Enabling payment method in Magento - Recurring Payments](/images/magento/magento-config-re-02.gif)
 
-4.  Very good! The recurring payments has been configured and enable successfully!
+4)  Very good! The recurring payments has been configured and enable successfully!
 
-![Recurring Payments configured successfully](/images/plugins/modules/magento/save.png)
-
+![Recurring Payments configured successfully](/images/magento/magento-save.png)
 
 <a name="Payment-Notification-status-settings"></a>
 ## Payment Notification status Settings: ##
 
 This process will explain how to set up order statuses for payment notifications:
 
-1. Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
+1) Go to the **Systems > Configuration**, in the settings page go to the option **Payment Methods**:
 
-![Accessing the payment method to configure the status of Payment Notifications](/images/magento-config-01.gif)
-![](/images/plugins/modules/magento/config-01.gif)
+![Accessing the payment method to configure the status of Payment Notifications](/images/magento/magento-config-01.gif)
 
-2. To configure the statuses go to **Mercado Pago - Global Configuration**, go to the option **Order Status Options**.
+2) To configure the statuses go to **Mercado Pago - Global Configuration**, go to the option **Order Status Options**.
 For each payment status you can choose an order status, as soon as your store receives the payment notification the module will automatically update the order to the chosen status. To save the settings click the **Save Config** button.
 
-![Configure payment notification status](/images/plugins/modules/magento/config-06.gif)
+![Configure payment notification status](/images/magento/magento-config-06.gif)
 
 > The module is prepared to receive payment notifications automatically, that is, without the need to configure your Mercado Pago account or module.
 
-3. Very Good! The notification statuses have been successfully configured.
+3) Very Good! The notification statuses have been successfully configured.
 
-![Status of Payment notifications configured successfully](/images/plugins/modules/magento/save.png)
-
- 
+![Status of Payment Notifications configured successfully](/images/magento/magento-save.png)
