@@ -1,4 +1,4 @@
-#Prestashop 1.7
+# Prestashop 1.7
 
 
 ###Mercado Pago Module (Prestashop 1.7.x)
