@@ -1,7 +1,7 @@
 # Prestashop 1.7
 
 
-###Mercado Pago Module (Prestashop 1.7.x)
+### Mercado Pago Module (Prestashop 1.7.x)
 
 * [Introduction](#bookmark_introduction)
 * [Installation Requirements](#bookmark_installation_requirements)
