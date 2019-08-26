@@ -30,7 +30,7 @@ sites_supported:
 Tipos de usuarios | Descrição
 ------------ | -------------
 Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança.**
-Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário visitante:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos , estarão habilitados como meios de pagamento.
+Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos , estarão habilitados como meios de pagamento.
 
 
 
@@ -80,7 +80,9 @@ Gere uma preferência com as <a href="https://www.mercadopago.com/mla/account/cr
 
 ### 2. Faça um pagamento de teste com seu usuário comprador
 
-#### Testes com cartão de crédito
+#### Comprar como usuário convidado
+
+Testes com cartão de crédito
 
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
@@ -121,7 +123,7 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve preencher o formulário <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Eu quero it para produção</a>.
+Para começar a cobrar, você deve preencher o formulário <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Quero ir para produção</a>.
 
 Ao terminar o formulário, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 

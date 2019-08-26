@@ -248,9 +248,6 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 
 [[[
 ```php
-===
-Redireciona ao init_point da preferência.
-===
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
@@ -260,9 +257,6 @@ Redireciona ao init_point da preferência.
 </form>
 ```
 ```node
-===
-Redireciona ao init_point da preferência.
-===
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
@@ -272,9 +266,6 @@ Redireciona ao init_point da preferência.
 </form>
 ```
 ```java
-===
-Redireciona ao init_point da preferência.
-===
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
@@ -284,9 +275,6 @@ Redireciona ao init_point da preferência.
 </form>
 ```
 ```ruby
-===
-Redireciona ao init_point da preferência.
-===
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
@@ -296,9 +284,6 @@ Redireciona ao init_point da preferência.
 </form>
 ```
 ```csharp
-===
-Redireciona ao init_point da preferência.
-===
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"

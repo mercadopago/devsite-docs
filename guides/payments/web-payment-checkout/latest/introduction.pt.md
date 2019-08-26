@@ -20,8 +20,9 @@ O Web Checkout do Mercado Pago é a integração que **te permite cobrar atravé
 ----[mlb]----
 * Pagar com os principais  <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank"> meios de pagamento</a> do país.
 ------------
+* Uma **experiência de compra adaptada** e acessível de qualquer celular ou computador no seu site.
 * **Compras em um clique.** Ao pagar com uma conta do Mercado Pago, os dados e cartões dos compradores são salvos, o que lhes permite pagar informando apenas o código de segurança ou dinheiro na conta.
-* **Compras de visitantes.** Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
+* **Compras de convidados.** Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
 * **Pagamento com dois cartões.** Por exemplo, para casos de valores altos.	 
 
 
@@ -33,7 +34,7 @@ Dificuldade de integração 			  	     |    Baixa    |       Media         |    
 Desing UI/UX 							  	           |      ✔      |         ✔           |
 Otimizado para a melhor conversão	     |      ✔      |         ✔           |
 Otimizado para melhorar a aprovação     |      ✔      |                     |  
-Pagamento de usuários visitantes    	   |      ✔      |         ✔           |      ✔
+Pagamento de usuários convidados    	   |      ✔      |         ✔           |      ✔
 Pagamento de usuários cadastrados        |      ✔      |                     |
 Prevenção de fraude               	     |      ✔      |         ✔           |      ✔
 Tela de finalização de pagamento 		     |      ✔      |                     |
