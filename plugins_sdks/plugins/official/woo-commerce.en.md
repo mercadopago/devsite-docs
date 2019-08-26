@@ -1,7 +1,7 @@
 # WooCommerce
 
 
-###Mercado Pago Module (WooCommerce 3.x)
+### Mercado Pago Module (WooCommerce 3.x)
 
 * [Introduction](#bookmark_introduction)
 * [Installation requirements](#bookmark_installation_requirements)
@@ -11,7 +11,7 @@
 * [Receive payments](#bookmark_receive_payments)
 
 
-##Introduction
+## Introduction
 
 The Mercado Pago module for WooCommerce allows you to expand the functionalities of your online store and offer a unique payment experience for your customers.
 
@@ -41,7 +41,7 @@ Learn about the payment options we develop to meet the needs of your business:
 | Your customers can pay as guests or by entering their Mercado Pago account.       | Your customers can pay as guests without leaving your store. | Your customers can pay as guests without leaving your store. |
 
 
-##Installation requirements
+## Installation requirements
 
 |                             	| Details                                                                 	|
 |-------------------------------|---------------------------------------------------------------------------|
@@ -58,7 +58,7 @@ Learn about the payment options we develop to meet the needs of your business:
 > It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page. During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
 
 
-##Installation
+## Installation
 
 You can install Mercado Pago in WordPress two ways: 
 
@@ -79,7 +79,7 @@ You can install Mercado Pago in WordPress two ways:
 If you installed it correctly, you will see it on the WordPress desktop, within "Installed Plugins". Activate it and let's move on to the integration of your account and the configuration steps.
 
 
-##Integration
+## Integration
 
 Follow these steps to integrate your Mercado Pago account with the module and receive your sales payments:
 
@@ -89,7 +89,7 @@ Follow these steps to integrate your Mercado Pago account with the module and re
 4. Approve your account to [go into Production](https://www.mercadopago.com.ar/developers/en/guides/payments/api/goto-production/) and receive real payments.
 
 
-##Module configuration
+## Module configuration
 
 Enter basic business information to start configuring the module:
 
@@ -100,7 +100,7 @@ Enter basic business information to start configuring the module:
 > **Advanced:** Edit advanced settings when you want to configure [IPN notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/) and record information about transactions between WooCommerce and Mercado Pago in our exchange files with debug and log modes. If you are the one who integrates the module, this will be useful if there are problems in the payments with Mercado Pago.
 
 
-##Receive payments
+## Receive payments
 
 Organize the checkouts you want to use to offer our payment options on the purchase gateway.
 
@@ -139,7 +139,7 @@ Now check the options that all the checkouts have in common and configure each f
 |           | Commission per purchase with **MP** | ✔                                             | ✔                                        | ✔                                             |
 
 
-####**1. Basic Configuration**
+#### **1. Basic Configuration**
 
 Activate the checkout when you want to use it as a payment option in your online store, select the payment methods available to your customers and define the maximum number of installments in which they can pay you.
 
@@ -185,7 +185,7 @@ Custom checkout for cash payments
 * Deduct inventory
   - Activate this option to reduce your stock during the creation of an order, regardless of whether the customer finishes the purchase or not. Disable this option to reduce it only when payments are approved
 
-####**2. Test the module**
+#### **2. Test the module**
 
 Test until you are sure everything works well. 
 
@@ -199,7 +199,7 @@ You can activate and deactivate this mode here:
 
 > By default, we deactivate the Production mode. Activate it when you have the account approved and have verified that both the purchase flow and the receipt of the test payments work well. 
 
-####**3. Go to Production (‘Go live!’)**
+#### **3. Go to Production (‘Go live!’)**
 
 Activate the Production mode only when you are ready to sell. You can do it from here:
 
