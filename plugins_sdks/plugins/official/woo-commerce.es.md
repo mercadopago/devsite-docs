@@ -1,7 +1,7 @@
 # WooCommerce
 
 
-###Mercado Pago Module (WooCommerce 3.x)
+### Mercado Pago Module (WooCommerce 3.x)
 
 * [Introducción](#bookmark_introducción)
 * [Requisitos de instalación](#bookmark_requisitos_de_instalación)
@@ -11,7 +11,7 @@
 * [Recibir Pagos](#bookmark_recibir_pagos)
 
 
-##Introducción
+## Introducción
 
 El módulo de Mercado Pago para WooCommerce te permite ampliar las funcionalidades de tu tienda online y ofrecer una experiencia de pago única para tus clientes. 
 
@@ -42,7 +42,7 @@ Conoce las opciones de pago que desarrollamos para cubrir las necesidades de tu 
 
 
 
-##Requisitos de instalación
+## Requisitos de instalación
 
 |                             	| Detalle                                                                  	|
 |-------------------------------|---------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ Conoce las opciones de pago que desarrollamos para cubrir las necesidades de tu 
 > Es un requisito tener un certificado SSL y el formulario de pago que servido en una página HTTPS. Durante las pruebas en modo sandbox usted puede operar vía HTTP, pero para la homologación usted necesitará adquirir el certificado si no lo tiene.
 
 
-##Instalación
+## Instalación
 
 Puedes instalar Mercado Pago en WordPress de dos formas: 
 
@@ -80,7 +80,7 @@ Puedes instalar Mercado Pago en WordPress de dos formas:
 Si lo instalaste correctamente, lo verás en escritorio de WordPress, dentro de "Plugins instalados". Actívalo y pasemos a la integración de tu cuenta y los pasos de configuración. 
 
 
-##Integración
+## Integración
 
 Sigue estos pasos para integrar tu cuenta de Mercado Pago con el módulo y recibir los cobros de tus ventas:
 
@@ -90,7 +90,7 @@ Sigue estos pasos para integrar tu cuenta de Mercado Pago con el módulo y recib
 4. Homologa tu cuenta para [ir a Producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) y recibir pagos reales.
 
 
-##Configuración del módulo
+## Configuración del módulo
 
 Ingresa información básica de tu negocio para empezar a configurar el módulo:
 
@@ -101,7 +101,7 @@ Ingresa información básica de tu negocio para empezar a configurar el módulo:
 > **Avanzado:** Edita ajustes avanzados cuando quieras configurar las [notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/) y registra la información sobre las operaciones entre WooCommerce y Mercado Pago en nuestros archivos de cambio con los modos debug y log. Si eres quien integra el módulo, esto te será útil si hay problemas en los pagos con Mercado Pago. 
 
 
-##Recibir pagos
+## Recibir pagos
 
 Pon en forma los checkout que quieras usar para ofrecer nuestras opciones de pago en la pasarela de compra.
 
@@ -140,7 +140,7 @@ Ahora revisa las opciones que todos los checkout tienen en común y configura ca
 |           | Comision por compra con **MP**   | ✔                                             | ✔                                        | ✔                                             |
 
 
-####**1. Configuración básica**
+#### **1. Configuración básica**
 
 Activa el checkout cuando quieras usarlo como opción de pago en tu tienda online, selecciona los medios de pago disponibles para tus clientes y define el máximo de cuotas en el que podrán pagarte.
 
@@ -187,7 +187,7 @@ Checkout personalizado para pagos en efectivo
   - Activa esta opción para reducir tu stock durante la creación de un pedido, independientemente de si el cliente termina o no la compra. Desactiva esta opción para reducirlo solo cuando estén aprobados los pagos
 
 
-####**2. Prueba el módulo**
+#### **2. Prueba el módulo**
 
 Haz pruebas hasta asegurarte que todo funciona bien. 
 
@@ -201,7 +201,7 @@ Podrás activar o desactivar este modo desde aquí:
 
 > Por defecto, desactivamos Producción. Activa Producción cuando tengas la cuenta homologada y hayas comprobado que tanto el flujo de compra como la recepción de los pagos de prueba funcionan bien. 
 
-####**3. Ir a producción (‘Go live!’)**
+#### **3. Ir a producción (‘Go live!’)**
 
 Activa el modo Producción solo cuando estés listo para vender. Podrás hacerlo desde aquí: 
 

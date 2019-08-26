@@ -1,7 +1,7 @@
 # WooCommerce
 
 
-###Mercado Pago Module (WooCommerce 3.x)
+### Mercado Pago Module (WooCommerce 3.x)
 
 * [Introdução](#bookmark_introdução)
 * [Requisitos de instalação](#bookmark_requisitos_de_instalação)
@@ -11,7 +11,7 @@
 * [Receber Pagamentos](#bookmark_receber_pagamentos)
 
 
-##Introdução
+## Introdução
 
 O módulo do Mercado Pago para o WooCommerce permite expandir as funcionalidades da sua loja virtual e oferecer uma experiência de pagamento única aos seus clientes.
 
@@ -41,7 +41,7 @@ Confira as opções de pagamento que desenvolvemos para cobrir as necessidades d
 | Seus clientes podem pagar como visitantes ou acessando sua conta do Mercado Pago. | Seus clientes pagam como visitantes sem sair da sua loja. | Seus clientes pagam como visitantes sem sair da sua loja. |
 
 
-##Requisitos de instalação
+## Requisitos de instalação
 
 |                             	| Detalhes                                                                 	|
 |-------------------------------|---------------------------------------------------------------------------|
@@ -58,7 +58,7 @@ Confira as opções de pagamento que desenvolvemos para cobrir as necessidades d
 > É um requisito que você tenha um certificado SSL e o formulário de pagamento a ser fornecido em uma página HTTPS. Durante os testes do modo sandbox você pode operar via HTTP, mas para homologação você precisará adquirir o certificado caso não o tenha.
 
 
-##Instalação
+## Instalação
 
 Você pode instalar o Mercado Pago no WordPress de duas formas:
 
@@ -79,7 +79,7 @@ Você pode instalar o Mercado Pago no WordPress de duas formas:
 Se a instalação foi feita corretamente, você o verá na área de trabalho do WordPress, em "Plug-ins instalados". Ative-o e vamos passar para a integração da sua conta e as etapas de configuração.
 
 
-##Integração
+## Integração
 
 Siga estas etapas para integrar sua conta do Mercado Pago ao módulo e receber os pagamentos das suas vendas:
 
@@ -89,7 +89,7 @@ Siga estas etapas para integrar sua conta do Mercado Pago ao módulo e receber o
 4. Homologue sua conta para [ir a Produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) e receba pagamentos reais.
 
 
-##Configuração do módulo
+## Configuração do módulo
 
 Insira as informações básicas sobre sua empresa para começar a configurar o módulo:
 
@@ -100,7 +100,7 @@ Insira as informações básicas sobre sua empresa para começar a configurar o 
 > **Avanzado:** edite os ajustes avançados quando quiser configurar as [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) e registre informações sobre as transações entre WooCommerce e o Mercado Pago em nossos arquivos de troca com os modos de debug e log. Se é você quem integra o módulo, isso será útil caso haja problemas nos pagamentos com o Mercado Pago.
 
 
-##Receber pagamentos
+## Receber pagamentos
 
 Coloque o checkout que você deseja usar para oferecer nossas opções de pagamento no gateway de compra.
 
@@ -139,7 +139,7 @@ Agora, revise as opções que todos os checkouts têm e configure cada campo, ab
 |           | Comissão por compra com **MP**    | ✔                                             | ✔                                        | ✔                                             |
 
 
-####**1. Configuração básica**
+#### **1. Configuração básica**
 
 Ative o checkout quando quiser usá-lo como uma opção de pagamento na sua loja virtual, selecione as formas de pagamento disponíveis para seus clientes e defina o número máximo de vezes em que eles podem parcelar.
 
@@ -186,7 +186,7 @@ Checkout personalizado para pagos en efectivo
   - Ative esta opção para reduzir seu estoque durante a criação de um pedido,  independentemente do cliente concluir ou não a compra. Desative esta opção para reduzi-lo somente quando os pagamentos estiverem aprovados.
 
 
-####**2. Teste o módulo**
+#### **2. Teste o módulo**
 
 Faça testes até ter certeza de que está tudo em ordem. 
 
@@ -200,7 +200,7 @@ Você poderá ativar ou desativar este modo por aqui:
 
 > Por padrão, desativamos o Produção. Ative o Produção quando tiver a conta homologada e verifique se o fluxo de compra e o recebimento dos pagamentos de teste funcionam bem.
 
-####**3. Ir a producción (‘Go live!’)**
+#### **3. Ir a producción (‘Go live!’)**
 
 Ative o modo Produção somente quando estiver pronto para vender. Você poderá fazer isso por aqui: 
 

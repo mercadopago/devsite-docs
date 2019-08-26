@@ -1,7 +1,7 @@
-#Prestashop 1.7
+# Prestashop 1.7
 
 
-###Mercado Pago Module (Prestashop 1.7.x)
+### Mercado Pago Module (Prestashop 1.7.x)
 
 * [Introduction](#bookmark_introduction)
 * [Installation Requirements](#bookmark_installation_requirements)
@@ -9,7 +9,7 @@
 * [Integration](#bookmark_integration)
 * [Receive Payments](#bookmark_receive_payments)
 
-##Introduction
+## Introduction
 
 As you can imagine, a website without a payment processor is nothing more than an online catalog. Your customers will be able to see your products but they won't be able to pay for them.
 
@@ -31,7 +31,7 @@ Think big. Install the Mercado Pago payment gateway in Prestashop and take your 
 
 > **Are you a Mercado Pago partner?** Do not forget to enter your Sponsor_ID, so we identify all your transactions and know how many sales your account processes. 
 
-##Installation Requirements
+## Installation Requirements
 
 On a technical level, your version of Prestashop must meet these requirements:
 
@@ -65,7 +65,7 @@ The installation of our module doesn't affect the performance of your store!
 
 3) Very good! Mercado Pago Module was successfully installed.
 
-##Integration
+## Integration
 
 You do not need to know how to design or program to activate Mercado Pago in your Prestashop store. Once the module is installed, this is what you should do:
 
@@ -74,7 +74,7 @@ You do not need to know how to design or program to activate Mercado Pago in you
 3. Set your payment preferences and other advanced settings.
 4. Approve your account to [go to Production](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) and receive real payments.
 
-##Receive payments
+## Receive payments
 
 Set the basics of checkout and let your customer complete your purchase quickly, easily and safely:
 
@@ -82,7 +82,7 @@ Set the basics of checkout and let your customer complete your purchase quickly,
 
 The better the experience, the more conversions! Follow these steps to configure the Mercado Pago module:
 
-####**1. Basic configuration**
+#### **1. Basic configuration**
 
 Create your payment preferences:
 
@@ -94,7 +94,7 @@ Create your payment preferences:
 
 ![Basic configuration](/images/prestashop/es_basico.png)
 
-####**2. Advanced configuration**
+#### **2. Advanced configuration**
 
 Customize the shopping experience with the advanced settings that correspond to each type of checkout:
 
@@ -106,7 +106,7 @@ Customize the shopping experience with the advanced settings that correspond to 
 
 ![Advanced configuration](/images/prestashop/es_avanzado.png)
 
-####**3. Test the module**
+#### **3. Test the module**
 
 Do tests:
 
@@ -118,7 +118,7 @@ Do tests:
 
 > By default, we leave sandbox mode activated. Disable it when you have the homologated account and go to production only when you have verified that the purchase flow works and that test payments were processed. 
 
-####**4. Go to production (‘Go live!’)**
+#### **4. Go to production (‘Go live!’)**
 
 Before going out to collect, we need you to go through the homologation process. In it we will ask you to complete a form with information related to your business.
 
