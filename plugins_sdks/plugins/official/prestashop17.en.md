@@ -31,7 +31,7 @@ Think big. Install the Mercado Pago payment gateway in Prestashop and take your 
 
 > **Are you a Mercado Pago partner?** Do not forget to enter your Sponsor_ID, so we identify all your transactions and know how many sales your account processes. 
 
-##Installation Requirements
+## Installation Requirements
 
 On a technical level, your version of Prestashop must meet these requirements:
 
