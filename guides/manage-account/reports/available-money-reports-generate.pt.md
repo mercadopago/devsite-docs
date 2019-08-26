@@ -8,7 +8,7 @@
 >
 > - [Geração via web](#bookmark_geração_via_web)
 >
-> - [Geração via API](#bookmark_geração_via_API)
+> - [Geração via API](#bookmark_geração_via_api)
 >
 >    + de forma manual
 >
