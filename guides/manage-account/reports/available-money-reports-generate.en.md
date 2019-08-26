@@ -8,7 +8,7 @@
 >
 > - [Web generation](#bookmark_web_generation)
 >
-> - [API generation](#bookmark_API_generation)
+> - [API generation](#bookmark_api_generation)
 >
 >    + manually
 >
