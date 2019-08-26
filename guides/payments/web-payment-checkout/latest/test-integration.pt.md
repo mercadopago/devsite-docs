@@ -12,15 +12,15 @@ sites_supported:
 >
 >
 >
-> [Como testar sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_como_testar_minha_integração)
+> [Como testar sua integração](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_como_testar_minha_integração)
 >
-> [Como criar usuários](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_como_criar_usuários)
+> [Como criar usuários](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_como_criar_usuários)
 >
-> [Teste o fluxo de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_teste_o_fluxo_de_pagamento)
+> [Teste o fluxo de pagamento](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_teste_o_fluxo_de_pagamento)
 >
-> [Cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_cartões_de_teste)
+> [Cartões de teste](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_cartões_de_teste)
 >
-> [Começar a receber pagamentos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_começar_a_receber_pagamentos)
+> [Começar a receber pagamentos](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_começar_a_receber_pagamentos)
 
 
 ## Como testar minha integração
@@ -85,7 +85,7 @@ Gere uma preferência com as <a href="https://www.mercadopago.com/mla/account/cr
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Selecione Cartão como meio de pagamento.
-2. Insira os dados de um [cartão de teste.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_cartões_de_teste)
+2. Insira os dados de um [cartão de teste.](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_cartões_de_teste)
 3. Informe o e-mail e pronto!<br/><br/>
 
 #### Comprar como usuário cadastrado (com conta do Mercado Pago)
@@ -128,13 +128,13 @@ Ao terminar o formulário, certifique-se de que as credenciais na sua integraç�
 ### Próximos passos
 
 <div>
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
 </blockquote>
 </a>   
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
+<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Customizações</p>
  <p>Adapte o estilo da sua marca na experiência de compra.</p>

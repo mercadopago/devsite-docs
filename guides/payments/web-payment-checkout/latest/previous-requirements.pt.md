@@ -12,9 +12,9 @@ sites_supported:
 >
 >
 >
-> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario)
+> [Glossário](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario)
 >
-> [Pré-requisitos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos)
+> [Pré-requisitos](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos)
 
 ## Glossário
 
@@ -87,13 +87,13 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 ### Próximos passos
 
 <div>
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
+<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Integre o Web Checkout<span class="card-status-tag card-status-tag-required">OBRIGATORIO</span></p>
  <p>Siga o passo a passo para começar a receber pagamentos no seu site.</p>
 </blockquote>
 </a>    
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Teste a sua integração<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Confira se está tudo em ordem na sua integração com os usuários de teste.</p>

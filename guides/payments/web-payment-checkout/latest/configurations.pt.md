@@ -12,13 +12,13 @@ sites_supported:
 >
 >
 >
-> [Exemplo de uma preferência completa](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_exemplo_de_uma_preferência_completa)
+> [Exemplo de uma preferência completa](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_exemplo_de_uma_preferência_completa)
 >
-> [Atributos para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência)
+> [Atributos para a preferência](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência)
 
 Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago.com.br/developers/pt/reference/preferences/resource/) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
 
-Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que você não quiser aceitar
+Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) ou tambén, [excluir meios de pagamento](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que você não quiser aceitar
 
 ## Exemplo de uma preferência completa
 
@@ -359,13 +359,13 @@ curl -X POST \
 ### Próximos passos
 
 <div>
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="http://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
 </blockquote>
 </a>   
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
+<a href="http://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Customizações</p>
  <p>Adapte o estilo da sua marca na experiência de compra.</p>

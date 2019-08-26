@@ -12,16 +12,16 @@ sites_supported:
 >
 >
 >
-> [Como me integro?](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_como_me_integro?)
+> [Como me integro?](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_como_me_integro?)
 >
-> [Etapas para se integrar](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_etapas_para_se_integrar)
+> [Etapas para se integrar](https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_etapas_para_se_integrar)
 
 
 ## Como me integro?
 
 ![Integration](/images/web-payment-checkout/flow-v2.png)
 
-1. Gere sua preferência 
+1. Gere sua preferência
 
 	1.1 Adicione o SDK baixado do Mercado Pago no seu projeto.
 
@@ -29,7 +29,7 @@ sites_supported:
 
 	1.3 Configure a preferência conforme seu produto ou serviço.
 
-2. Adicione o checkout ao seu site 
+2. Adicione o checkout ao seu site
 
 ## Etapas para se integrar
 
@@ -39,7 +39,7 @@ Instalar o Web Checkout requer duas etapas:
 
 Insira o seguinte código que consta de três partes:
 
-1.1 Adicione o <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos" target="_blank"> SDK do Mercado Pago</a> no seu projeto:
+1.1 Adicione o <a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos" target="_blank"> SDK do Mercado Pago</a> no seu projeto:
 
 [[[
 ```php
@@ -327,13 +327,13 @@ _Clique no link dentro do seu site e [teste a integração do seu Web Checkout.]
 ### Próximos passos
 
 <div>
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
+<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Teste sua integração<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Confira se está tudo em ordem na sua integração com os usuários de teste.</p>
 </blockquote>
 </a>
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
+<a href="https://beta.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
 <p>Otimize sua integração e melhore o gerenciamento das suas vendas.</p>
@@ -347,4 +347,3 @@ _Clique no link dentro do seu site e [teste a integração do seu Web Checkout.]
 <br/>
 <br/>
 <br/>
-
