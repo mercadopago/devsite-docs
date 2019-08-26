@@ -118,7 +118,7 @@ Do tests:
 
 > By default, we leave sandbox mode activated. Disable it when you have the homologated account and go to production only when you have verified that the purchase flow works and that test payments were processed. 
 
-####**4. Go to production (‘Go live!’)**
+#### **4. Go to production (‘Go live!’)**
 
 Before going out to collect, we need you to go through the homologation process. In it we will ask you to complete a form with information related to your business.
 
