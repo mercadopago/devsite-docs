@@ -65,7 +65,7 @@ The installation of our module doesn't affect the performance of your store!
 
 3) Very good! Mercado Pago Module was successfully installed.
 
-##Integration
+## Integration
 
 You do not need to know how to design or program to activate Mercado Pago in your Prestashop store. Once the module is installed, this is what you should do:
 
