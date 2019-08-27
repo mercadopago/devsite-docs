@@ -3,7 +3,6 @@ sites_supported:
   - mla
   - mlb
 ---
-
 # Integra Web Checkout
 
 > INDEX
@@ -247,58 +246,73 @@ curl -X POST \
 [[[
 ```php
 ===
-Redirige ao init_point da preferência.
+Redirige al 'init_point' de la preferencia
 ===
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<?php echo $preference->id; ?>">
-  </script>
-</form>
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```node
 ===
-Redirige ao init_point da preferência.
+Redirige al 'init_point' de la preferencia
 ===
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
-  </script>
-</form>
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="$$init_point$$" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```java
 ===
-Redirige ao init_point da preferência.
+Redirige al 'init_point' de la preferencia
 ===
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="${preference.id}">
-  </script>
-</form>
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```ruby
 ===
-Redirige ao init_point da preferência.
+Redirige al 'init_point' de la preferencia
 ===
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
-  </script>
-</form>
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="<%= @init_point %>" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```csharp
 ===
-Redirige ao init_point da preferência.
+Redirige al 'init_point' de la preferencia
 ===
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="@Html.DisplayFor(model => model.id)">
-  </script>
-</form>
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ]]]
 
