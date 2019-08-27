@@ -4,7 +4,7 @@ sites_supported:
   - mlb
 ---
 
-# Integre o Web Checkout
+# Integre o Smart Checkout
 
 > INDEX
 >
@@ -33,7 +33,7 @@ sites_supported:
 
 ## Etapas para se integrar
 
-Instalar o Web Checkout requer duas etapas:
+Instalar o Smart Checkout requer duas etapas:
 
 ### 1. Gere sua preferência
 
@@ -244,7 +244,7 @@ curl -X POST \
 
 ### 2. Adicione o checkout ao seu site
 
-Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Web Checkout onde você quiser que ele apareça.
+Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Smart Checkout onde você quiser que ele apareça.
 
 [[[
 ```php
@@ -301,13 +301,13 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 > Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
 
 #### Excelente! Você concluiu sua integração.
-_Clique no link dentro do seu site e [teste a integração do seu Web Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Clique no link dentro do seu site e [teste a integração do seu Smart Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > NOTE
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [seção de Web Checkout antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [seção de Smart Checkout antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
 ### Próximos passos
 

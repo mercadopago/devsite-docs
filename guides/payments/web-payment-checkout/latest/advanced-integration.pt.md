@@ -320,7 +320,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
   <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
     <blockquote class="next-step-card next-step-card-left">
       <p class="card-note-title">Outras funcionalidades</p>
-      <p>Configure seus pagamentos e adapte o Web Checkout ao seu negócio. </p>
+      <p>Configure seus pagamentos e adapte o Smart Checkout ao seu negócio. </p>
     </blockquote>
   </a>
   </div>

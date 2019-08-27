@@ -5,14 +5,14 @@ sites_supported:
   - global
 ---
 
-# Mercado Pago Gateway: Web Checkout
+# Mercado Pago Gateway: Smart Checkout
 ----[mla]----
 > NOTE
 >
 > Pre-requisito
 >
 
-> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Web Checkout**
+> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Smart Checkout**
 ------------
 
 ----[mlb,mlc,mlm,mpe,mco,mlu]----
@@ -21,12 +21,12 @@ sites_supported:
 > Pre-requisito
 >
 
-> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Web Checkout**
+> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Smart Checkout**
 ------------
 
 ## Integración
 
-La única modificación necesaria para soportar **Modelo Gateway** en el Web Checkout, es agregar el atributo `processing_modes` cuando creas una preferencia.
+La única modificación necesaria para soportar **Modelo Gateway** en el Smart Checkout, es agregar el atributo `processing_modes` cuando creas una preferencia.
 
 [[[
 ```php
@@ -43,9 +43,9 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Web Che
 ```
 ]]]
 
-¡Listo! Tu **Web Checkout** ahora estará funcionando en Modelo Gateway.
+¡Listo! Tu **Smart Checkout** ahora estará funcionando en Modelo Gateway.
 
-> **Modelo híbrido:** todavía no estamos soportando este modelo en Web Checkout. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
+> **Modelo híbrido:** todavía no estamos soportando este modelo en Smart Checkout. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
 
 ## Próximos pasos
 
