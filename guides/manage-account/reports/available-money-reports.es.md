@@ -52,7 +52,7 @@ Usa el Reporte de Dinero Disponible en estos casos:
 
 ## Cómo usar el reporte
 
-Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc): 
+Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc):
 
 ![Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/excel-es.png)
 <p style="text-align:center;font-size:12px;">Ejemplo en Excel </p>
@@ -62,14 +62,14 @@ Para leer el reporte te recomendamos usar un archivo .csv y que revises la confi
 
 
 El reporte contiene 4 secciones:
-1. Balance Inicial (Initial Available Balance).
-1. Detalle de Liberaciones de dinero (Releases).
-1. Bloqueos de dinero por disputas (Block).
-1. Desbloqueos por la resolución de la disputa (Unblock).
+1. Balance Inicial `Initial Available Balance`.
+1. Detalle de Liberaciones de dinero `Releases`.
+1. Bloqueos de dinero por disputas `Block`.
+1. Desbloqueos por la resolución de la disputa `Unblock`.
 
 Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
 
-> Subtotal release - Subtotal block + Subtotal unblock = resultado total
+> Subtotal `release` - Subtotal `block` + Subtotal `unblock` = resultado total
 
 Revisa el [Glosario completo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money-reports-glossary)
 

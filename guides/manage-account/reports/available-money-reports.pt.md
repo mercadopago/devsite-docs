@@ -63,14 +63,14 @@ Para ler o relatório, recomendamos usar um arquivo .CSV e revisar as configura�
 <p style="text-align:center;font-size:12px;">Exemplo no Open Office</p>
 
 O relatório contém 4 seções:
-1. Saldo inicial (Initial Available Balance)
-1. Detalhes de liberações de dinheiro (Releases)
-1. Bloqueios de dinheiro por disputas (Block)
-1. Desbloqueios pela resolução da disputa (Unblock)
+1. Saldo inicial `Initial Available Balance`.
+1. Detalhes de liberações de dinheiro `Releases`.
+1. Bloqueios de dinheiro por disputas `Block`.
+1. Desbloqueios pela resolução da disputa `Unblock`.
 
 Você verá uma seção de **subtotais** por cada bloqueio e, finalmente, o **resultado total**. Calculamos este total sobre os subtotais líquidos de cada seção, é uma soma líquida de: 
 
-> Subtotal release - Subtotal block + Subtotal unblock = resultado total
+> Subtotal `release` - Subtotal `block` + Subtotal `unblock` = resultado total
 
 Confira o [Glossário completo](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money-reports-glossary)
 

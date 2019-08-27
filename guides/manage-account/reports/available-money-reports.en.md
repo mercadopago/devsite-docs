@@ -63,14 +63,14 @@ To read the report we recommend using a .csv file and that you review the charac
 <p style="text-align:center;font-size:12px;">Example in Open Office</p>
 
 The report contains 4 sections:
-1. Initial Balance (Initial Available Balance)
-1. Money Release Details (Releases)
-1. Freezing of money due to disputes (Block)
-1. Unfreeze for dispute resolution (Unblock)
+1. Initial Balance `Initial Available Balance`.
+1. Money Release Details `Releases`.
+1. Freezing of money due to disputes `Block`.
+1. Unfreeze for dispute resolution `Unblock`.
 
 You will see a section of **subtotals** for each block and, finally, the **total result**. We calculate this total on the net subtotals of each section, it is the net sum of:
 
-> Subtotal Release - Subtotal Block + Subtotal Unblock = Total Result
+> Subtotal `release` - Subtotal `block` + Subtotal `unblock` = Total result
 
 View the [Complete glossary](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money-reports-glossary)
 
