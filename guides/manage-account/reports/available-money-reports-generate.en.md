@@ -549,7 +549,6 @@ As a response you will receive `HTTP STATUS 200`(Ok)
     "status": "pending",
     "report_type": "bank",
     "generation_date": "2019-08-01T06:00:00.000Z",
-    "report_id": null,
     "last_modified": "2019-07-24T13:45:33.479-04:00",
     "retries": 0
 }
@@ -673,7 +672,6 @@ As a response you will receive `HTTP STATUS 200` (Ok)
     "end_date": "2019-07-25T06:00:00Z",
     "generation_date": "2019-07-25T02:00:00.000-04:00",
     "last_modified": "2019-07-24T13:50:10.719-04:00",
-    "report_id": null,
     "report_type": "bank",
     "retries": 0,
     "status": "deleted",
@@ -1280,7 +1278,6 @@ As a response you will receive `HTTP STATUS 201` (Created):
     "status": "pending",
     "report_type": "bank",
     "generation_date": "2019-08-16T06:00:00.000Z",
-    "report_id": null,
     "last_modified": "2019-08-15T15:40:00.899-04:00",
     "retries": 0
 }
@@ -1365,7 +1362,6 @@ As a response you will receive `HTTP STATUS 200` (Ok):
     "end_date": "2019-08-16T06:00:00Z",
     "generation_date": "2019-08-16T02:00:00.000-04:00",
     "last_modified": "2019-08-15T15:41:53.681-04:00",
-    "report_id": null,
     "report_type": "bank",
     "retries": 0,
     "status": "deleted",

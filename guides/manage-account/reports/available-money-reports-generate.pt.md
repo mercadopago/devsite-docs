@@ -381,7 +381,7 @@ Você receberá como resposta `HTTP STATUS 200` (OK):
 ```json
 [
     {
-        "id": 1234,
+        "id": 12345678,
         "user_id": USER-ID,
         "begin_date": "2015-05-01T00:00:00Z",
         "end_date": "2015-06-01T00:00:00Z",
@@ -548,7 +548,6 @@ Você receberá como resposta `HTTP STATUS 200`(OK)
     "status": "pending",
     "report_type": "bank",
     "generation_date": "2019-08-01T06:00:00.000Z",
-    "report_id": null,
     "last_modified": "2019-07-24T13:45:33.479-04:00",
     "retries": 0
 }
@@ -634,7 +633,6 @@ Você receberá como resposta `HTTP STATUS 200` (OK)
     "end_date": "2019-07-25T06:00:00Z",
     "generation_date": "2019-07-25T02:00:00.000-04:00",
     "last_modified": "2019-07-24T13:50:10.719-04:00",
-    "report_id": null,
     "report_type": "bank",
     "retries": 0,
     "status": "deleted",
@@ -1240,7 +1238,6 @@ Você receberá como resposta `HTTP STATUS 201` (Created):
     "status": "pending",
     "report_type": "bank",
     "generation_date": "2019-08-16T06:00:00.000Z",
-    "report_id": null,
     "last_modified": "2019-08-15T15:40:00.899-04:00",
     "retries": 0
 }
@@ -1324,7 +1321,6 @@ Você receberá como resposta `HTTP STATUS 200` (OK):
     "end_date": "2019-08-16T06:00:00Z",
     "generation_date": "2019-08-16T02:00:00.000-04:00",
     "last_modified": "2019-08-15T15:41:53.681-04:00",
-    "report_id": null,
     "report_type": "bank",
     "retries": 0,
     "status": "deleted",
