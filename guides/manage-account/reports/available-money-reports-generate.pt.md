@@ -10,9 +10,10 @@
 >
 > - [Geração via API](#bookmark_geração_via_api)
 >
->    + de forma manual
+>    + [de forma manual](#bookmark_de_forma_manual)
 >
->    + de forma programada
+>    + [de forma programada](#bookmark_de_forma_programada)
+>
 >
 > - [Ficha técnica](#bookmark_ficha_técnica)
 >
@@ -24,7 +25,7 @@ Você pode criar um relatório de Dinheiro Disponível de forma automática cada
 
 Pela seção de Relatórios do Mercado Pago:
 
-1. Entre na sua conta do Mercado Pago e acesse os relatórios de Dinheiro Disponível.
+1. [Entre](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user) na sua conta do Mercado Pago e acesse os relatórios de Dinheiro Disponível.
 1. Clique em “Programar relatórios” e confirme “Programar”.
 1. E pronto! Não é necessário escrever código nem mesmo para uma única linha. 
 
@@ -474,10 +475,7 @@ Programe a geração automática do relatório usando a frequência no recurso d
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' \
-    -d '{
-        "user_id": "USER-ID"
-    }'
+    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' 
 ```
 ```php
 <?php
@@ -487,10 +485,7 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$data = '{
-        "user_id": "USER-ID"
-    }';
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
@@ -501,18 +496,11 @@ connection.setRequestMethod("POST");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
 
-String body = "{\\"user_id\\": \\"USER-ID\\" }";
-
-try(OutputStream os = connection.getOutputStream()) {
-    byte[] input = body.getBytes("utf-8");
-    os.write(input, 0, input.length);
-}
-
 System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```python
+```Python
 import requests
 
 headers = {
@@ -522,9 +510,7 @@ headers = {
 
 params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
-data = '{ "user_id": "USER-ID" }'
-
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
+response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
 ```
 ```node
 var request = require('request');
@@ -534,13 +520,10 @@ var headers = {
     'content-type': 'application/json'
 };
 
-var dataString = '{ "user_id": USER-ID }';
-
 var options = {
     url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
     method: 'POST',
-    headers: headers,
-    body: dataString
+    headers: headers
 };
 
 function callback(error, response, body) {
@@ -562,7 +545,6 @@ Você receberá como resposta `HTTP STATUS 200`(OK)
     "begin_date": "2019-07-01T06:00:00Z",
     "end_date": "2019-08-01T06:00:00Z",
     "created_from": "schedule",
-    "is_test": false,
     "status": "pending",
     "report_type": "bank",
     "generation_date": "2019-08-01T06:00:00.000Z",
@@ -574,13 +556,13 @@ Você receberá como resposta `HTTP STATUS 200`(OK)
 
 Pare a geração automática do relatório. Atualize o atributo *`scheduled`* na configuração para *`false`*:
 
+
 [[[
 ```curl
 curl -X DELETE \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
   'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' \
-  -d '{"user_id": "USER-ID"}'
 ```
 ```php
 <?php
@@ -590,8 +572,7 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$data = '{"user_id": "USER-ID" }';
-$response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+$response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
@@ -601,13 +582,6 @@ HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 connection.setRequestMethod("DELETE");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
-
-String body = "{\\"user_id\\": \\"USER-ID\\" }";
-
-try(OutputStream os = connection.getOutputStream()) {
-    byte[] input = body.getBytes("utf-8");
-    os.write(input, 0, input.length);
-}
 
 System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
@@ -623,9 +597,7 @@ headers = {
 
 params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
-data = '{"user_id": "USER-ID" }'
-
-response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params, data=data)
+response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
 ```
 ```node
 var request = require('request');
@@ -635,13 +607,10 @@ var headers = {
     'content-type': 'application/json'
 };
 
-var dataString = '{"user_id": "USER-ID" }';
-
 var options = {
     url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
     method: 'DELETE',
-    headers: headers,
-    body: dataString
+    headers: headers
 };
 
 function callback(error, response, body) {
@@ -664,7 +633,6 @@ Você receberá como resposta `HTTP STATUS 200` (OK)
     "created_from": "schedule",
     "end_date": "2019-07-25T06:00:00Z",
     "generation_date": "2019-07-25T02:00:00.000-04:00",
-    "is_test": false,
     "last_modified": "2019-07-24T13:50:10.719-04:00",
     "report_id": null,
     "report_type": "bank",
@@ -1269,7 +1237,6 @@ Você receberá como resposta `HTTP STATUS 201` (Created):
     "begin_date": "2019-08-15T06:00:00Z",
     "end_date": "2019-08-16T06:00:00Z",
     "created_from": "schedule",
-    "is_test": false,
     "status": "pending",
     "report_type": "bank",
     "generation_date": "2019-08-16T06:00:00.000Z",
@@ -1347,7 +1314,6 @@ request(options, callback);
 ```
 ]]]
 
-
 Você receberá como resposta `HTTP STATUS 200` (OK):
 
 ```json
@@ -1357,7 +1323,6 @@ Você receberá como resposta `HTTP STATUS 200` (OK):
     "created_from": "schedule",
     "end_date": "2019-08-16T06:00:00Z",
     "generation_date": "2019-08-16T02:00:00.000-04:00",
-    "is_test": false,
     "last_modified": "2019-08-15T15:41:53.681-04:00",
     "report_id": null,
     "report_type": "bank",
