@@ -12,7 +12,7 @@
 >
 >    + [de forma manual](#bookmark_de_forma_manual)
 >
->    + [de forma programada](#bookmark_de_forma_programada)<br/>
+>    + [de forma programada](#bookmark_de_forma_programada)<br/><br/>
 >
 > * [Ficha técnica](#bookmark_ficha_técnica)
 >
