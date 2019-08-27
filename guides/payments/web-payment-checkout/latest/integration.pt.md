@@ -302,7 +302,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Web Checkout.]
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [seção de Web Checkout antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [seção de Web Checkout antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
 ### Próximos passos
 
