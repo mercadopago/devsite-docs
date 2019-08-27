@@ -251,7 +251,6 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="<?php echo $preference->id; ?>">
   </script>
 </form>
@@ -260,7 +259,6 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="$$id$$">
   </script>
 </form>
@@ -269,7 +267,6 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="${preference.id}">
   </script>
 </form>
@@ -278,7 +275,6 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="%= @init_point %>">
   </script>
 </form>
@@ -287,7 +283,6 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="@Html.DisplayFor(model => model.id)">
   </script>
 </form>
@@ -307,7 +302,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Web Checkout.]
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [seção de Web Checkout antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Web Checkout. **Para ver a versão anterior**, confira a [seção de Web Checkout antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
 ### Próximos passos
 

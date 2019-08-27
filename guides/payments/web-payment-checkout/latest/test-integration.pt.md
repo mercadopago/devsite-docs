@@ -30,7 +30,7 @@ sites_supported:
 Tipos de usuarios | Descrição
 ------------ | -------------
 Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança.**
-Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos , estarão habilitados como meios de pagamento.
+Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos, estarão habilitados como meios de pagamento.
 
 
 
@@ -98,7 +98,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Inicie sessão no Mercado Pago com a conta do seu usuário de teste comprador.
 2. Selecione _Cartão_ como meio de pagamento.
-3. Selecione um  cartão salvo ou preencha os dados um um novo e pronto!
+3. Selecione um  cartão salvo ou preencha os dados um novo e pronto!
 
 
 ## Cartões de teste
