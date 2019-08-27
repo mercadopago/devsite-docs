@@ -737,30 +737,30 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 #### 3. Configuración
 
-| `Atributo` |`Descripción`|
+| Atributo | Descripción|
 | ---------- | ----------- |
-| `sftp_info (opcional)`| Indica los datos de subida a SFTP de ser necesario |
-| `extended (opcional)` | Indica si se desea el detalle de comisiones |
-| `include_withdrawal_at_end` | Indica si debe incluir el retiro para el cual se genera el reporte al final del mismo |
-| `detailed` | Indica si el reporte debe incluir columnas extra como `financing`, `fee amount`, `mp fee amount`, etc |
-| `file_name_prefix` | Prefijo estático del nombre del archivo de reporte generado |
-| `scheduled (read_only)` | Informativo, indica si ya existen reportes programados para este usuario |
-| `frequency` | En caso de usar reportes programados, indica la frecuencia (`daily`,`weekly`,`monthly`) |
-| `value` | Aplica a type `monthly` (día del mes) o `weekly` (día de la semana) |
-| `hour` | Hora del día en que se debe generar el reporte |
-| `type` | Tipo de frecuencia: `daily`, `weekly`, `monthly` |
-| `execute_after_withdrawal` | Indica si se generará un reporte automáticamente luego de cada retiro de dinero del usuario |
+| sftp_info (opcional) | Indica los datos de subida a SFTP de ser necesario |
+| extended (opcional) | Indica si se desea el detalle de comisiones |
+| include_withdrawal_at_end | Indica si debe incluir el retiro para el cual se genera el reporte al final del mismo |
+| detailed | Indica si el reporte debe incluir columnas extra como `financing`, `fee amount`, `mp fee amount`, etc |
+| file_name_prefix | Prefijo estático del nombre del archivo de reporte generado |
+| scheduled (read_only) | Informativo, indica si ya existen reportes programados para este usuario |
+| frequency | En caso de usar reportes programados, indica la frecuencia (`daily`,`weekly`,`monthly`) |
+| value | Aplica a type `monthly` (día del mes) o `weekly` (día de la semana) |
+| hour | Hora del día en que se debe generar el reporte |
+| type | Tipo de frecuencia: `daily`, `weekly`, `monthly` |
+| execute_after_withdrawal` | Indica si se generará un reporte automáticamente luego de cada retiro de dinero del usuario |
 
 ```json
 {
 	"sftp_info": {
     	    "port": 22,
-    	    "username": "usuario",
+    	    "username": "username",
     	    "server": "sftp.urlserver.com",
     	    "remote_dir": "/",
     	    "password": "xxxxxxxx"
 	},
-       "extended": false,
+    "extended": false,
 	"file_name_prefix": "bank-report-USER-ID-",
 	"detailed": true,
 	"include_withdrawal_at_end": false,
@@ -1363,18 +1363,18 @@ Recibirás como respuesta un `HTTP STATUS 200` (Ok):
 
 ## Ficha técnica
 
-| `Elemento o acción` |`Características`|
+| Elemento o acción | Características |
 | ------------ |	--------    |
-| `Programacion`| <br/> -  Diaria.<br/><br/>  -  Semanal.<br/><br/> -  Mensual. <br/> <br/> |
-| `Generación`  | <br/> -  Manual.<br/><br/>  -  Automática por retiro de dinero disponible, total o parcial <br/><br/> Las tres instancias de generación conviven. Es decir, aunque programes la generación de tus reportes automáticamente, cada vez que retires dinero se generará un reporte adicional.<br/> <br/>  |
-| `Detalle de tablas` | <br/> El detalle de las tablas comprende información generada en día 1 como mínimo. Excepto en los reportes generados por retiro de dinero. <br/> <br/>  |
-| `Formato del filename` | <br/>Cuando el reporte es programado o manual:<br/> "prefijo-configurable-<span style='color:#999999;'>fecha-de-creación.csv</span>" <br/> Ejemplo:  mitienda-28-05-2019.csv <br/><br/> Cuando el reporte se genera por un retiro de dinero: <br/> "prefijo-configurable-<span style='color:#999999;'>id-de-retiro-fecha-de-creación.csv</span>"<br/> Ejemplo: mitienda-ID23902138-28-05-2019.csv <br/> <br/> |
-| `Formatos de descarga` | <br/> .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. <br/> <br/> |
-| `Configuración disponible vía API` | <br/>-  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> -  Separador decimal (coma o punto)<br/> -  Notificación por e-mail<br/> -  Retiro al final del reporte (opcional) <br/> <br/> |
-| `Orden de columnas` |<br/> Fijo <br/> <br/> |
-| `Archivo` | <br/> Los reportes generados quedan guardados en tu cuenta de Mercado Pago <br/> <br/> |
-| `Período máximo` | <br/> Reportes con datos de hasta 60 días <br/> <br/> |
-| `Moneda` | <br/> Local (basada en el país donde esté registrada la cuenta de Mercado Pago) <br/> <br/> |
-| `Zona horaria de las columnas con fechas` | <br/> GMT-4 <br/> <br/> |
-| `Selección de fechas vía API` |<br/>  Formato del timezone: UTC / GMT-0 <br/> <br/> |
-| `Selección de fechas vía web`  | <br/> Debe basarse en el timezone de la cuenta del usuario. <br/>Por ejemplo, a la cuenta de usuario registrada en Brasil le corresponde el timezone de Sao Paulo. <br/> <br/> |
+| Programacion | <br/> -  Diaria.<br/><br/>  -  Semanal.<br/><br/> -  Mensual. <br/> <br/> |
+| Generación  | <br/> -  Manual.<br/><br/>  -  Automática por retiro de dinero disponible, total o parcial <br/><br/> Las tres instancias de generación conviven. Es decir, aunque programes la generación de tus reportes automáticamente, cada vez que retires dinero se generará un reporte adicional.<br/> <br/>  |
+| Detalle de tablas | <br/> El detalle de las tablas comprende información generada en día 1 como mínimo. Excepto en los reportes generados por retiro de dinero. <br/> <br/>  |
+| Formato del filename | <br/>Cuando el reporte es programado o manual:<br/> "prefijo-configurable-<span style='color:#999999;'>fecha-de-creación.csv</span>" <br/> Ejemplo:  mitienda-28-05-2019.csv <br/><br/> Cuando el reporte se genera por un retiro de dinero: <br/> "prefijo-configurable-<span style='color:#999999;'>id-de-retiro-fecha-de-creación.csv</span>"<br/> Ejemplo: mitienda-ID23902138-28-05-2019.csv <br/> <br/> |
+| Formatos de descarga | <br/> .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. <br/> <br/> |
+| Configuración disponible vía API | <br/>-  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> -  Separador decimal (coma o punto)<br/> -  Notificación por e-mail<br/> -  Retiro al final del reporte (opcional) <br/> <br/> |
+| Orden de columnas |<br/> Fijo <br/> <br/> |
+| Archivo | <br/> Los reportes generados quedan guardados en tu cuenta de Mercado Pago <br/> <br/> |
+| Período máximo | <br/> Reportes con datos de hasta 60 días <br/> <br/> |
+| Moneda | <br/> Local (basada en el país donde esté registrada la cuenta de Mercado Pago) <br/> <br/> |
+| Zona horaria de las columnas con fechas | <br/> GMT-4 <br/> <br/> |
+| Selección de fechas vía API |<br/>  Formato del timezone: UTC / GMT-0 <br/> <br/> |
+| Selección de fechas vía web | <br/> Debe basarse en el timezone de la cuenta del usuario. <br/>Por ejemplo, a la cuenta de usuario registrada en Brasil le corresponde el timezone de Sao Paulo. <br/> <br/> |
