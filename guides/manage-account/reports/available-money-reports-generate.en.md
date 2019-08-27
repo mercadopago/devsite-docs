@@ -1369,7 +1369,6 @@ As a response you will receive `HTTP STATUS 200` (Ok):
 }
 ```
 
-
 ## Datasheet
 
 | Actions and components | Characteristics |

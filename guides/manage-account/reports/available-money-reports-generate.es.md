@@ -4,18 +4,17 @@
 >
 > En esta página
 >
-> - [Generación por retiro](#bookmark_generación_por_retiro)
+> * [Generación por retiro](#bookmark_generación_por_retiro)
 >
-> - [Generación vía web](#bookmark_generación_vía_web)
+> * [Generación vía web](#bookmark_generación_vía_web)
 >
-> - [Generación vía API](#bookmark_generación_vía_api)
+> * [Generación vía API](#bookmark_generación_vía_api)
 >
 >    + [de forma manual](#bookmark_de_forma_manual)
 >
 >    + [de forma programada](#bookmark_de_forma_programada)
 >
->
-> - [Ficha técnica](#bookmark_ficha_técnica)
+> * [Ficha técnica](#bookmark_ficha_técnica)
 >
 
 
