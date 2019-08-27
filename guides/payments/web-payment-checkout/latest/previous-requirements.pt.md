@@ -12,9 +12,9 @@ sites_supported:
 >
 >
 >
-> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario)
+> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_glossário)
 >
-> [Pré-requisitos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos)
+> [Pré-requisitos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos)
 
 ## Glossário
 
@@ -26,7 +26,7 @@ _Preferência (preference)_ | São as **informações do produto ou serviço que
 _Credenciais (credentials)_ | Suas credenciais são as **chaves que te informamos para que você possa configurar suas integrações.**<br/>Existem dois tipos:<br/><br/>**ACCESS_TOKEN**. Chave privada da aplicação para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/>**PUBLIC_KEY**. Chave pública da aplicação para saber, por exemplo, os meios de pagamento e criptografar os dados do cartão. Você deve usá-las somente para as suas integrações.<br/><br/>Para poder encontrá-las, confira suas <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a> e selecione as produtivas na opção _Checkout personalizado_.<br/><br/>Se você entrou nesta página com sua conta, elas serão preenchidas automaticamente dentro das linhas de códigos.
 _Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar a preferência**  e que dá início ao fluxo de pagamento do Web Checkout.
 _Item (ítem)_ | Faz referência ao produto ou serviço que se quer oferecer. Pode ser um ou uma lista.
-_Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica,**, pois cada uma possui suas próprias<a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar.
+_Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui suas próprias<a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar.
 
 ## Pré-requisitos
 
