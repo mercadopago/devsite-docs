@@ -9,7 +9,7 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 |     Produto        | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Botão de pagamento | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Web Checkout       | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Smart Checkout       | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Mobile Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
 | API                | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
@@ -18,14 +18,14 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 |    Produto         | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Botão de pagamento | ✔   | ✔   |     |     | ✔   |     |     |     |
-| Web Checkout       | ✔   | ✔   |     |     | ✔   |     |     |     |
+| Smart Checkout       | ✔   | ✔   |     |     | ✔   |     |     |     |
 | API                | ✔   | ✔   |     |     | ✔   |     |     |     |
 
 ### Marketplace:
 
 |   Produto    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Web Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Smart Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 
@@ -53,13 +53,13 @@ Pode ser que alguns [meios de pagamento](https://www.mercadopago.com.br/develope
 |    Produto    |     Solução     |                                                                            Meios de pagamento não disponíveis                                                                       |
 | :------------ | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Pagamentos         | Botão de pagamento   | N/A                                                                                                                                                                                 |
-| Pagamentos         | Web Checkout    | N/A                                                                                                                                                                                 |
+| Pagamentos         | Smart Checkout    | N/A                                                                                                                                                                                 |
 | Pagamentos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
 | Pagamentos         | API             | N/A                                                                                                                                                                                 |
 | Assinaturas | Botão de pagamento   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
-Assinaturas | Web Checkout    |`naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Assinaturas | Smart Checkout    |`naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
-| Marketplace | Web Checkout | N/A |
+| Marketplace | Smart Checkout | N/A |
 | Marketplace | API          | N/A |
 
 ### Brasil
@@ -67,13 +67,13 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 |    Produto    |     Solução     | Meios de pagamento não disponíveis |
 | :------------ | :-------------- | :---------------------------- |
 | Pagamentos         | Botão de pagamento   | N/A                           |
-| Pagamentos         | Web Checkout    | N/A                           |
+| Pagamentos         | Smart Checkout    | N/A                           |
 | Pagamentos         | Mobile Checkout | `account_money`               |
 | Pagamentos         | API             | N/A                           |
 | Assinaturas | Botão de pagamento   | `bolbradesco`, `giftcard`     |
 | Assinaturas | Checkout        | `bolbradesco`, `giftcard`     |
 | Assinaturas | API             | `bolbradesco`, `giftcard`     |
-| Marketplace   | Web Checkout    | N/A                           |
+| Marketplace   | Smart Checkout    | N/A                           |
 | Marketplace   | API             | N/A                           |
 
 ### Chile
@@ -81,10 +81,10 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 |   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
 | :---------- | :-------------- | :------------------------------------------ |
 | Pagamentos       | Botão de pagamento   | N/A                                         |
-| Pagamentos       | Web Checkout    | N/A                                         |
+| Pagamentos       | Smart Checkout    | N/A                                         |
 | Pagamentos       | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
 | Pagamentos       | API             | `khipu`                                     |
-| Marketplace | Web Checkout    | N/A                                         |
+| Marketplace | Smart Checkout    | N/A                                         |
 | Marketplace | API             | `khipu`                                     |
 
 ### Colômbia
@@ -92,10 +92,10 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 |   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
 | :---------- | :-------------- | :------------------------------------------ |
 | Pagamentos       | Botão de pagamento   | N/A                                         |
-| Pagamentos       | Web Checkout    | N/A                                |
+| Pagamentos       | Smart Checkout    | N/A                                |
 | Pagamentos       | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
 | Pagamentos       | API             | `account_money`                                       |
-| Marketplace | Web Checkout    | N/A                                |
+| Marketplace | Smart Checkout    | N/A                                |
 | Marketplace | API             | `account_money`                                       |
 
 ### México
@@ -103,13 +103,13 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 |    Produto    |     Solução     |                         Meios de pagamento não disponíveis                    |
 | :------------ | :-------------- | :---------------------------------------------------------------------------- |
 | Pagamentos         | Botão de pagamento   | N/A                                                                           |
-| Pagamentos         | Web Checkout    | N/A                                                                           |
+| Pagamentos         | Smart Checkout    | N/A                                                                           |
 | Pagamentos         | Mobile Checkout | `account_money`                                                               |
 | Pagamentos         | API             | N/A                                                                           |
 | Assinaturas | Botão de pagamento   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Assinaturas | Web Checkout    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Assinaturas | Smart Checkout    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Assinaturas | API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Marketplace   | Web Checkout    | N/A                                                                           |
+| Marketplace   | Smart Checkout    | N/A                                                                           |
 | Marketplace   | API             | N/A                                                                           |
 
 ### Peru
@@ -117,10 +117,10 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 |   Produto   |     Solução     | Meios de pagamento não disponíveis |
 | :---------- | :-------------- | :---------------------------- |
 | Pagamentos       | Botão de pagamento   | N/A                           |
-| Pagamentos       | Web Checkout    | N/A                           |
+| Pagamentos       | Smart Checkout    | N/A                           |
 | Pagamentos       | Mobile Checkout | `account_money`               |
 | Pagamentos       | API             | N/A                           |
-| Marketplace | Web Checkout    | N/A                           |
+| Marketplace | Smart Checkout    | N/A                           |
 | Marketplace | API             | N/A                           |
 
 ### Uruguai
@@ -128,5 +128,5 @@ Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `deb
 |   Produto   |    Solução    | Meios de pagamento não disponíveis |
 | :---------- | :------------ | :---------------------------- |
 | Pagamentos       | Botão de pagamento | N/A                           |
-| Pagamentos       | Web Checkout  | N/A                           |
-| Marketplace | Web Checkout  | N/A                           |
+| Pagamentos       | Smart Checkout  | N/A                           |
+| Marketplace | Smart Checkout  | N/A                           |
