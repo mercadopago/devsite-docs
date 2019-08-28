@@ -6,6 +6,14 @@ sites_supported:
 
 # Smart Checkout
 
+> WARNING
+>
+> Nota
+>
+> Esta documentação é referente à versão anterior do Checkout.
+>
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+
 O Mercado Pago fornece as ferramentas necessárias para que você possa receber pagamentos através do nosso formulário web de forma simples, rápida e segura.
 
 Trabalhamos para que seus usuários tenham a melhor experiência de pagamento oferecendo:
