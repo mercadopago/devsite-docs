@@ -1,7 +1,7 @@
-#Prestashop 1.7
+# Prestashop 1.7
 
 
-###Mercado Pago Module (Prestashop 1.7.x)
+### Mercado Pago Module (Prestashop 1.7.x)
 
 * [Introducción](#bookmark_introducción)
 * [Requisitos de instalación](#bookmark_requisitos_de_instalación)
@@ -9,7 +9,7 @@
 * [Integración](#bookmark_integración)
 * [Recibir Pagos](#bookmark_recibir_pagos)
 
-##Introducción
+## Introducción
 
 Como imaginarás, una página web sin un procesador de pagos no es más que un catálogo en línea. Tus clientes podrán ver tus productos pero no podrán pagarte por ellos. 
 
@@ -31,7 +31,7 @@ Piensa en grande. Instala la pasarela de pagos de Mercado Pago en Prestashop y l
 
 > **¿Eres partner de Mercado Pago?** No olvides ingresar tu Sponsor_ID, así identificamos todas tus transacciones y sabemos cuántas ventas procesa tu cuenta. 
 
-##Requisitos de instalación
+## Requisitos de instalación
 
 A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos: 
 
@@ -51,7 +51,7 @@ A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 
 > Puedes usar el protocolo HTTP mientras estés en modo ‘Pruebas’ y no estés haciendo transacciones reales. Cuando vayas a Producción debes tener un **certificado SSL** para ofrecer una **navegación segura** y proteger tus datos y los de tus clientes. Una vez que lo tengas, la ruta de acceso a tu tienda online responderá al **protocolo HTTPS**.
 
-##Instalación
+## Instalación
 
 1) Descargue el archivo **mercadopago.zip** en nuestro Github.
 
@@ -65,16 +65,16 @@ A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 
 3) Muy bien! El módulo de Mercado Pago fue instalado con éxito.
 
-##Integración
+## Integración
 
 No necesitas saber diseñar o programar para activar Mercado Pago en tu tienda de Prestashop. Una vez instalado el módulo, esto es lo que debes hacer:
 
-1. Crea una cuenta vendedor en Mercado Pago si todavía no tienes una.
+1. Crea una [cuenta vendedor](https://www.mercadopago.com.ar/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar) en Mercado Pago si todavía no tienes una.
 2. Obtén tus [credenciales](https://www.mercadopago.com.ar/developers/es/guides/localization/credentials) y pégalas en los campos correspondientes para integrar el módulo con tu cuenta.
 3. Configura tus preferencias de pago y otros ajustes avanzados.
 4. Homologa tu cuenta para [ir a Producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) y recibir pagos reales.
 
-##Recibir pagos
+## Recibir pagos
 
 Configura lo básico del checkout y haz que tu cliente termine su compra de forma rápida, fácil y segura:
 
@@ -82,7 +82,7 @@ Configura lo básico del checkout y haz que tu cliente termine su compra de form
 
 Cuanto mejor sea la experiencia, ¡más conversiones! Sigue estos pasos para configurar el plugin de Mercado Pago:
 
-####**1. Configuración básica**
+#### **1. Configuración básica**
 
 Crea tus preferencias de pago:
 
@@ -94,7 +94,7 @@ Crea tus preferencias de pago:
 
 ![Configuración básica](/images/prestashop/es_basico.png)
 
-####**2. Configuración avanzada**
+#### **2. Configuración avanzada**
 
 Personaliza la experiencia de compra con los ajustes avanzados que correspondan a cada tipo de checkout:
 
@@ -106,7 +106,7 @@ Personaliza la experiencia de compra con los ajustes avanzados que correspondan 
 
 ![Configuración avanzada](/images/prestashop/es_avanzado.png)
 
-####**3. Prueba el módulo**
+#### **3. Prueba el módulo**
 
 Haz pruebas:
 
@@ -118,7 +118,7 @@ Haz pruebas:
 
 > Por defecto, te dejamos este modo activo. Desactívalo cuando tengas la cuenta homologada y ve a Producción solo cuando hayas comprobado que el flujo de compra funciona y que los pagos de prueba fueron procesados. 
 
-####**4. Ir a producción (‘Go live!’)**
+#### **4. Ir a producción (‘Go live!’)**
 
 Antes de salir a cobrar, necesitamos que pases por el proceso de homologación. En él te pediremos que completes un formulario con información relacionada a tu negocio. 
 
