@@ -105,7 +105,7 @@ O POST nessa API gera uma ordem, que é a que recebe a aplicação de Mercado Pa
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--d '{"parameter_name":"parameter_value"}' \
+-d '{"amount":100,"description":"xícara","device_name":"dispositivo","cc_type":"credit_card"}' \
 'https://mobile.mercadopago.com/point/services/integrations/v1?access_token=ACCESS_TOKEN'
 ```
 
