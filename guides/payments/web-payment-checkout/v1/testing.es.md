@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Probando la Integración

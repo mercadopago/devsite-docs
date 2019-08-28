@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Prueba tu integración
@@ -42,8 +43,8 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=**PROD_ACCESS_TOKEN**" \
--d '{"site_id":"MLA"}'
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
 
@@ -74,7 +75,7 @@ curl -X POST \
 
 ### 1. Configura el checkout con los datos de tu usuario vendedor
 
-Configura la preferencia con las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> del usuario de prueba que quieras usar como vendedor.
+Genera una preferencia con las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> del usuario de prueba que quieras usar como vendedor.
 
 ### 2. Realiza un pago con tu usuario comprador
 
@@ -82,27 +83,41 @@ Configura la preferencia con las <a href="https://www.mercadopago.com/mla/accoun
 
 Pruebas con tarjeta de crédito
 
+Al abrir el checkout creado con los datos de tu usuario vendedor:
+
 1. Selecciona _Tarjeta_ como medio de pago.
 2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba).
 3. Completa el e-mail y ¡listo!<br/><br/>
 
 #### Comprar como usuario registrado (con cuenta de Mercado Pago)
+
 Pruebas con tarjeta de crédito
 
-1. Cierra sesión del usuario de prueba vendedor.
-2. Inicia sesión en Mercado Pago con una cuenta de usuario de prueba comprador.
-3. Selecciona _Tarjeta_ como medio de pago.
-4. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
+Al abrir el checkout creado con los datos de tu usuario vendedor:
+
+1. Inicia sesión en Mercado Pago con la cuenta de tu usuario de prueba comprador.
+2. Selecciona _Tarjeta_ como medio de pago.
+3. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
 
 
 ## Tarjetas de prueba
 
-Tarjeta | Número
------------- | -------------
-Mastercard | 5031 7557 3453 0604
-Visa | 4170 0688 1010 8020
-American Express | 3711 8030 3257 522
+Tarjeta | Número | CVV | Fecha de vencimiento
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4170 0688 1010 8020 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
 
+Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
+
+- APRO: Pago aprobado.
+- CONT: Pago pendiente.
+- OTHE: Rechazado por error general.
+- CALL: Rechazado con validación para autorizar.
+- FUND: Rechazado por monto insuficiente.
+- SECU: Rechazado por código de seguridad inválido.
+- EXPI: Rechazado por problema con la fecha de expiración.
+- FORM: Rechazado por error en formulario.
 
 ## Comenzar a recibir pagos
 

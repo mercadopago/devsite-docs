@@ -49,13 +49,7 @@ In order to use callbacks, simply pass a function as the last parameter.
 
 ## Configure
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** in the following address:
-    * Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-    * Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
-    * México: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
-    * Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
-    * Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
-    * Uruguay: [https://www.mercadopago.com/mlu/herramientas/aplicaciones](https://www.mercadopago.com/mlu/herramientas/aplicaciones)
+* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link](https://www.mercadopago.com/mla/account/credentials).
 
 ### Configure Method
 
@@ -157,7 +151,7 @@ _Callbacks:_
 ```javascript
 library.method(function (err, res) {
     if (err) return console.log(err);
-    
+
     console.log(res);
 })
 ```
@@ -231,7 +225,7 @@ This will output:
 
 ```javascript
 mercadopagoResponse {
-  body: 
+  body:
    { id: 2556382,
      date_created: '2017-01-19T17:00:21.000-04:00',
      date_approved: null,
@@ -249,7 +243,7 @@ mercadopagoResponse {
      sponsor_id: null,
      authorization_code: null,
      collector_id: 239656545,
-     payer: 
+     payer:
       { type: 'guest',
         id: null,
         email: 'test_user_3931694@testuser.com',
@@ -266,7 +260,7 @@ mercadopagoResponse {
      coupon_amount: 0,
      differential_pricing_id: null,
      deduction_schema: null,
-     transaction_details: 
+     transaction_details:
       { net_received_amount: 0,
         total_paid_amount: 10,
         overpaid_amount: 0,
@@ -728,9 +722,9 @@ mercadopago.payment.search({
 The output is going to be this:
 ```javascript
 mercadopagoResponse {
-  body: 
+  body:
    { paging: { total: 110, limit: 30, offset: 0 },
-     results: 
+     results:
       [ [Object],
         [Object],
         [Object],
@@ -849,7 +843,7 @@ Merchant Order:
 
 Payment:
 ```
-/v1/payments/[ID]?access_token=[ACCESS_TOKEN] 
+/v1/payments/[ID]?access_token=[ACCESS_TOKEN]
 ```
 
 ### IPN Manager
@@ -868,7 +862,7 @@ The output will be:
 
 ```javascript
 mercadopagoIpnResponse {
-  body: 
+  body:
    { id: 2556382,
      date_created: '2017-01-19T17:00:21.000-04:00',
      date_approved: null,
@@ -886,7 +880,7 @@ mercadopagoIpnResponse {
      sponsor_id: null,
      authorization_code: null,
      collector_id: 239656545,
-     payer: 
+     payer:
       { type: 'guest',
         id: null,
         email: 'test_user_3931694@testuser.com',
@@ -903,7 +897,7 @@ mercadopagoIpnResponse {
      coupon_amount: 0,
      differential_pricing_id: null,
      deduction_schema: null,
-     transaction_details: 
+     transaction_details:
       { net_received_amount: 0,
         total_paid_amount: 10,
         overpaid_amount: 0,
@@ -926,7 +920,3 @@ mercadopagoIpnResponse {
 ```
 
 Inside the response you will find the **topic** received on the request, so you dont need to get the value from it.
-
-
-
-

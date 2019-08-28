@@ -1,8 +1,8 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
-
 # Integra Web Checkout
 
 > INDEX

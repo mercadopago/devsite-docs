@@ -45,6 +45,7 @@ para consultar suas informações:
   ],
   "currency": "ARS",
   "amount": 100.20,
+  "reason": "fraud",
   "coverage_applied": false,
   "coverage_elegible": true,
   "documentation_required": true,
@@ -87,7 +88,7 @@ Caso seja requerida a documentação, conta-se com um prazo de 7 dias desde a cr
 Caso seja requerida a documentação, conta-se com um prazo de 10 dias desde a criação da contestação para enviá-la. Na resposta da sua consulta da compra contestada pode-se ver quando se expira esse prazo no campo `date_documentation_deadline`.
 ------------
 
-> WARNING		 
+> WARNING
 > 
 > Requisitos
 >

@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Integración avanzada
@@ -230,7 +231,9 @@ Para esto, se utilizan las `back_urls`. Esta redirección puede ser automática 
 Atributo |	Descripción
 ------------ 	|	--------
 `auto_return` | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. Los valores posibles son _approved_ y _all_.
- `back_url`| **_success._** URL de retorno ante pago aprobado.<br/><br/>**_pending._** URL de retorno ante pago pendiente.<br/><br/>**_failure._** URL de retorno ante pago cancelado.
+ | **_success._** URL de retorno ante pago aprobado.
+ `back_url`| **_pending._** URL de retorno ante pago pendiente.
+  | **_failure._** URL de retorno ante pago cancelado.
 
 
 [[[
@@ -313,8 +316,8 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 <div>
   <div>
   <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
-    <blockquote class="next-step-card next-step-card-left">
-      <p class="card-note-title">Otras funcionalidades</p>
+    <blockquote class="next-step-card">
+      <p class="card-note-title next-step-card-left">Otras funcionalidades</p>
       <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
     </blockquote>
   </a>

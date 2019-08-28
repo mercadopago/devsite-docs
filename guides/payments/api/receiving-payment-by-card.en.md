@@ -28,7 +28,7 @@ To use this library, you must first enter the following code in our checkout:
 Your public key is what identifies you so that you can safely collect the card information. The public key must be uploaded after including _MercadoPago.js_ and before making a request.
 
 ```javascript
-Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
+window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 ```
 
 > NOTE
@@ -102,35 +102,58 @@ It is possible to get the list of available documents:
 
 
 ```javascript
-Mercadopago.getIdentificationTypes();
+window.Mercadopago.getIdentificationTypes();
 ```
 ------------
 
 #### Get the card’s payment method
 
-It is important to get the card’s payment method so that payment can be made.
+It is important to get the card’s payment method so that payment can be made. The function `getBin()` in the example below retrieves the first 6 digits of the credit card. This digits identifies the payment method and the issuer of that card.
 
-When your client enters The BIN of the credit card, in other words, the first 6 digits of the card, the SDK implements the `getBin()` and then consults the payment method API to see which one corresponds to that BIN:
-
+The _callback_ function `setPaymentMethodInfo` receives a _status_ and a _response_ and it storages the id of the response in the attribute `paymentMethodId` (_input hidden_).
 
 ```javascript
+function getBin() {
+  const cardnumber = document.getElementById("cardnumber");
+  return cardnumber.substring(0,6);
+}
+
 function guessingPaymentMethod(event) {
     var bin = getBin();
 
     if (event.type == "keyup") {
         if (bin.length >= 6) {
-            Mercadopago.getPaymentMethod({
+            window.Mercadopago.getPaymentMethod({
                 "bin": bin
             }, setPaymentMethodInfo);
         }
     } else {
         setTimeout(function() {
             if (bin.length >= 6) {
-                Mercadopago.getPaymentMethod({
+                window.Mercadopago.getPaymentMethod({
                     "bin": bin
                 }, setPaymentMethodInfo);
             }
         }, 100);
+    }
+};
+
+function setPaymentMethodInfo(status, response) {
+    if (status == 200) {
+        const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
+
+        if (paymentMethodElement) {
+            paymentMethodElement.value = response[0].id;
+        } else {
+            const input = document.createElement('input');
+            input.setattribute('name', 'paymentMethodId');
+            input.setAttribute('type', 'hidden');
+            input.setAttribute('value', response[0].id);     
+
+            form.appendChild(input);
+        }
+    } else {
+        alert(`payment method info error: ${response}`);  
     }
 };
 ```
@@ -141,31 +164,6 @@ In order to get the payment method, use `MercadoPago.getPaymentMethod(jsonParam,
 Mercadopago.getPaymentMethod({
     "bin": bin
 }, setPaymentMethodInfo);
-```
-
-The `bin` corresponds to the first 6 card digits, which identify the payment method and the issuing bank.
-
-The callback receives a status and a response. The function must store the response id in the `paymentMethodId` field (input hidden), for example:
-
-```javascript
-function setPaymentMethodInfo(status, response) {
-    if (status == 200) {
-        const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
-        
-        if (paymentMethodElement) {
-        paymentMethodElement.value = response[0].id;
-        } else {
-        const inputEl = document.createElement('input');
-        inputEl.setattribute('name', 'paymentMethodId');
-        inputEl.setAttribute('type', 'hidden');
-        inputEl.setAttribute('value', response[0].id);     
-        
-        form.appendChild(inputEl);
-        }
-    } else {
-        alert(`payment method info error: ${response}`);  
-    }
-};
 ```
 
 #### Collect data
@@ -180,9 +178,24 @@ function doPay(event){
     if(!doSubmit){
         var $form = document.querySelector('#pay');
 
-        Mercadopago.createToken($form, sdkResponseHandler); // The function "sdkResponseHandler" is defined below
+        window.Mercadopago.createToken($form, sdkResponseHandler); // The function "sdkResponseHandler" is defined below
 
         return false;
+    }
+};
+
+function sdkResponseHandler(status, response) {
+    if (status != 200 && status != 201) {
+        alert("verify filled data");
+    }else{
+        var form = document.querySelector('#pay');
+        var card = document.createElement('input');
+        card.setAttribute('name', 'token');
+        card.setAttribute('type', 'hidden');
+        card.setAttribute('value', response.id);
+        form.appendChild(card);
+        doSubmit=true;
+        form.submit();
     }
 };
 ```
@@ -222,23 +235,6 @@ The `createToken` method will return a card_token, which is the secure represen
 The second field of `createToken` method is the `sdkResponseHandler`, which is a callback function that will run when creating the `card_token`.
 
 We will use this to create a hidden field (input hidden), and store the `id` value in order to send the form to your servers.
-
-```javascript
-function sdkResponseHandler(status, response) {
-    if (status != 200 && status != 201) {
-        alert("verify filled data");
-    }else{
-        var form = document.querySelector('#pay');
-        var card = document.createElement('input');
-        card.setAttribute('name', 'token');
-        card.setAttribute('type', 'hidden');
-        card.setAttribute('value', response.id);
-        form.appendChild(card);
-        doSubmit=true;
-        form.submit();
-    }
-};
-```
 
 
 ## Receive card payments
@@ -346,7 +342,7 @@ To make the payment, simply make an API call:
     # Save and posting the payment
     payment.save()
 
-``` 
+```
 ```csharp
     ===
     The `Status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
@@ -587,7 +583,7 @@ payment.Save();
                 "street_name": "Street",
                 "street_number": 123,
                 "zip_code": "5700"
-            } 
+            }
         },
         "shipments": {
             "receiver_address": {

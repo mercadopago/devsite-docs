@@ -1,9 +1,18 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Campanhas de desconto
+
+> WARNING
+>
+> Nota
+>
+> Esta documentação é referente à versão anterior do Checkout.
+>
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
 Crie campanhas de desconto para impulsionar suas vendas utilizando as ferramentas de marketing da sua conta no Mercado Pago, entrando na seção Configurações para o seu Negócio: [Criar desconto](https://www.mercadopago.com.ar/campaigns/create).
 

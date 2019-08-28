@@ -76,13 +76,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
-	Get your CLIENT_ID and CLIENT_SECRET in the following address:
-	* Argentina: [https://www.mercadopago.com/mla/herramientas/aplicaciones](https://www.mercadopago.com/mla/herramientas/aplicaciones)
-	* Brazil: [https://www.mercadopago.com/mlb/ferramentas/aplicacoes](https://www.mercadopago.com/mlb/ferramentas/aplicacoes)
-	* Chile: [https://www.mercadopago.com/mlc/herramientas/aplicaciones](https://www.mercadopago.com/mlc/herramientas/aplicaciones)
-	* Colombia: [https://www.mercadopago.com/mco/herramientas/aplicaciones](https://www.mercadopago.com/mco/herramientas/aplicaciones)
-	* Mexico: [https://www.mercadopago.com/mlm/herramientas/aplicaciones](https://www.mercadopago.com/mlm/herramientas/aplicaciones)
-	* Peru: [https://www.mercadopago.com/mpe/herramientas/aplicaciones](https://www.mercadopago.com/mpe/herramientas/aplicaciones)
+	Get your CLIENT_ID and CLIENT_SECRET [in the following link](https://www.mercadopago.com/mla/account/credentials).
 
 	Other options have been added and you can choose any time after installation:
 
