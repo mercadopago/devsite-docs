@@ -57,6 +57,6 @@ new Device(context);
 ```
 
 Dispositivos [IOS](https://github.com/mercadopago/px-ios)
-```iOS
+```ios
 Device()
 ```
