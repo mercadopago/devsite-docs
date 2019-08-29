@@ -35,7 +35,7 @@ use:
 - statement_descriptor
 - installments
 - notification_url
-- refunds 
+- refunds
 errors:
 - 404 NOT_FOUND:
   - '2000':

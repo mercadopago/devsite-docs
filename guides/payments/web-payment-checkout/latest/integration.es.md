@@ -1,9 +1,10 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
-# Integra Web Checkout
+# Integra Smart Checkout
 
 > INDEX
 >
@@ -32,7 +33,7 @@ sites_supported:
 
 ## Pasos para integrarte
 
-Instalar el Web Checkout consta de dos pasos:
+Instalar el Smart Checkout consta de dos pasos:
 
 ### 1. Genera tu preferencia
 
@@ -323,13 +324,15 @@ Redirige al 'init_point' de la preferencia
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > NOTE
 >
 > Nota
 >
-> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+
+--- <br/>
 
 ### Próximos pasos
 

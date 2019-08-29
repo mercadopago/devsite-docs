@@ -106,7 +106,7 @@ El POST en esta API genera una orden, que es la que recibe la aplicación de Me
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--d '{"parameter_name":"parameter_value"}' \
+-d '{"amount":100,"description":"taza","device_name":"dispositivo","cc_type":"credit_card"}' \
 'https://mobile.mercadopago.com/point/services/integrations/v1?access_token=ACCESS_TOKEN'
 ```
 

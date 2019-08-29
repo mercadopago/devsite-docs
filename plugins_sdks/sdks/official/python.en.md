@@ -2,7 +2,7 @@
 
 
 * [Install](#bookmark_install)
-* [Web Checkout](#bookmark_web_checkout)
+* [Smart Checkout](#bookmark_smart_checkout)
 * [Customized checkout](#bookmark_customized_checkout)
 * [Generic methods](#bookmark_generic_methods)
 
@@ -17,18 +17,13 @@ On Python 3.x
 
 ``pip3 install mercadopago``
 
-## Web Checkout
+## Smart Checkout
 
 
 Configure your credentials
 
 
-- Get your **CLIENT_ID** and **CLIENT_SECRET** in the following address:
-    - Argentina: `https://www.mercadopago.com/mla/herramientas/aplicaciones <https://www.mercadopago.com/mla/herramientas/aplicaciones>`_
-    - Brazil: `https://www.mercadopago.com/mlb/ferramentas/aplicacoes <https://www.mercadopago.com/mlb/ferramentas/aplicacoes>`_
-    - Mexico: `https://www.mercadopago.com/mlm/herramientas/aplicaciones <https://www.mercadopago.com/mlm/herramientas/aplicaciones>`_
-    - Colombia: `https://www.mercadopago.com/mco/herramientas/aplicaciones <https://www.mercadopago.com/mco/herramientas/aplicaciones>`_
-    - Chile: `https://www.mercadopago.com/mlc/herramientas/aplicaciones <https://www.mercadopago.com/mlc/herramientas/aplicaciones>`_
+- Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link](https://www.mercadopago.com/mla/account/credentials).
 
 
 ``` python

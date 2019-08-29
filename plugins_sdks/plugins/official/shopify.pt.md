@@ -7,7 +7,7 @@
 
 O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
 
-| Funcionalidade                                           	| Web Checkout    	|
+| Funcionalidade                                           	| Smart Checkout    	|
 |-----------------------------------------------------------|-------------------|
 | Pagamento com Cartão de Crédito                          	| ✔               	|
 | Outros Meios de Pagamento, como os Boletos               	| ✔               	|
@@ -17,7 +17,7 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 | Notificação instantânea de pagamentos e webhooks         	| ✔               	|
 | Descontos por meio de pagamento ou cupom do Mercado Pago 	| ✔               	|
 
-### Web Checkout
+### Smart Checkout
 
 Ótimo para os vendedores que querem começar a vender rápido e fácil.
 
@@ -33,20 +33,21 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
   <iframe width="560" height="315" src="https://www.youtube.com/watch?v=X3mq4fbykOg" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
-1. No seu painel de administração do Shopify, va até o menu **Settings > Payments**.
+1) No seu painel de administração do Shopify, va até o menu **Settings > Payments**.
 
-  ![Configuring Mercado Pago in shopify](/images/shopify-config-1.gif)
+![Configuring Mercado Pago in shopify](/images/shopify/shopify-config-1.gif)
 
-2. Em **Accept credit cards**, selecione **Mercado Pago**.
-3. Preencha o **CLIENT ID** e **CLIENT SECRET**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)
+2) Em **Accept credit cards**, selecione **Mercado Pago**.
 
-  ![Configuring client id and client secret in shopify](/images/shopify-config-2.gif)
+3) Preencha o **CLIENT ID** e **CLIENT SECRET**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-4. Click no botão "**Activate**" para salvar.
+  ![Configuring client id and client secret in shopify](/images/shopify/shopify-config-2.gif)
 
-  ![Saving All Settings](/images/shopify-config-3.gif)
+4) Click no botão "**Activate**" para salvar.
 
-5. Parabéns! o **Mercado Pago** foi configurado.
+  ![Saving All Settings](/images/shopify/shopify-config-3.gif)
+
+5) Parabéns! o **Mercado Pago** foi configurado.
 
 ### Mapeamento de declarações de pagamento
 

@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Requisitos previos para comenzar
@@ -23,7 +24,7 @@ Término | Descripción
 ------------ | -------------
 _Preferencia (preference)_ | Es la **información del producto o servicio que se quiere ofrecer.** Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
 _Credenciales (credentials)_ | Tus credenciales son las **claves que te proporcionamos para que puedas configurar tus integraciones.**<br/>Existen dos tipos:<br/><br/>**ACCESS_TOKEN**. Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones.<br/>**PUBLIC_KEY**. Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.<br/><br/>Para poder encontrarlas, ve a tus <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales </a> y selecciona las productivas en la opción _Checkout personalizado_.<br/><br/>Si ingresaste con tu cuenta en esta página, se completarán automáticamente dentro de las líneas de códigos.
-_Punto de inicio (init_point)_ | **Es la URL que se obtiene al momento de generar la preferencia** y que da inicio al flujo de pago del Web Checkout.
+_Punto de inicio (init_point)_ | **Es la URL que se obtiene al momento de generar la preferencia** y que da inicio al flujo de pago del Smart Checkout.
 _Item (ítem)_ | Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
 _Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos del vendedor. **Cada aplicación identifica a una integración en particular**, ya que cada una tiene sus <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales </a>propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.<br/><br/>Puedes encontrar la información de cada una en credenciales. Al ingresar, se creará una automáticamente o puedes <a href="https://applications.mercadopago.com/" target="_blank"> crear una aplicación</a> cada vez que lo necesites.
 
@@ -82,13 +83,15 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Nota
 >
-> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+
+---
 
 ### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED
 >
-> Integra Web Checkout
+> Integra Smart Checkout
 >
 > Sigue el paso a paso para comenzar a recibir pagos en tu sitio.
 >

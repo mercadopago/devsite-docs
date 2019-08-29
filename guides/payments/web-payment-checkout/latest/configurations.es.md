@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Otras funcionalidades
@@ -199,7 +200,7 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 
 ## Sponsor ID
 
-El atributo `sponsor_id` es un identificador del desarrollador o compañía de software que realiza la integración del  Web Checkout, este dato es visible en la preferencia y en el pago.
+El atributo `sponsor_id` es un identificador del desarrollador o compañía de software que realiza la integración del  Smart Checkout, este dato es visible en la preferencia y en el pago.
 
 ```json
 "sponsor_id": 123456789
@@ -350,6 +351,8 @@ curl -X POST \
 }'
 ```
 ]]]
+
+---
 
 ### Próximos pasos
 

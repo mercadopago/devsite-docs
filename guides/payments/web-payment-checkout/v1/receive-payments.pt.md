@@ -1,9 +1,18 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Receba Pagamentos
+
+> WARNING
+>
+> Nota
+>
+> Esta documentação é referente à versão anterior do Checkout.
+>
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
 Receba pagamentos de forma simples e segura utilizando o Checkout do Mercado Pago.
 

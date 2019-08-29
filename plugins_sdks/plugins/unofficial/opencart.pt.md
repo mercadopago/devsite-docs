@@ -14,7 +14,7 @@
 
 O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a seguir:
 
-| Funcionalidade                                            | Web Checkout      | API                     |
+| Funcionalidade                                            | Smart Checkout      | API                     |
 |---------------------------------------------------------- |-------------------|-------------------------|
 | Pagamento com Cartão de Crédito                           | ✔                 | ✔                       |
 | Outros Meios de Pagamento, como os Boletos                | ✔                 | ✔                       |
@@ -31,7 +31,7 @@ O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a 
 
 Oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagamentos de qualquer pessoa em qualquer lugar.
 
-**Web Checkout**
+**Smart Checkout**
 
 Ótimo para vendedores que querem rapidez e agilidade.
 
@@ -88,8 +88,8 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
   * [OpenCart 1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)
   * [OpenCart 1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)
   * [OpenCart 2.x - 2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)
-  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2)
-  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3)
+  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)
+  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip)
 
 2. Copie as pastas **admin**, **catalog** e **image** para a raiz da sua instalação do OpenCart. Se assegure de manter a estrutura de pastas do OpenCart intactas.
 

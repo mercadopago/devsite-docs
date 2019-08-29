@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Probando la Integración
@@ -11,7 +12,7 @@ sites_supported:
 >
 > Esta documentación es sobre la versión antigua de Checkout.
 >
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Web Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Es muy importante que antes de salir a producción realices pruebas del flujo de pagos, verificando que las configuraciones que realizaste a nivel de preferencia se reflejen efectivamente en el _checkout_.
 Debes verificar que:

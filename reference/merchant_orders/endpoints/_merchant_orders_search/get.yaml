@@ -1,0 +1,41 @@
+---
+resource: merchant_orders.raml
+samples:
+- search_curl.sh
+- search_curl_response.json
+use:
+- id
+- status
+- external_reference
+- preference_id
+- payments
+- shipments
+- collector
+- marketplace
+- notification_url
+- date_created
+- last_updated
+- sponsor_id
+- shipping_cost
+- total_amount
+- site_id
+- paid_amount
+- refunded_amount
+- payer
+- items
+- cancelled
+- additional_info
+- application_id
+errors:
+  - 400 BAD_REQUEST:
+    - ds_search_query:
+        description:
+          en: invalid query.
+          es: invalid query.
+          pt: invalid query.
+  - 401 UNAUTHORIZED:
+    - invalid_token:
+        description:
+          en: invalid_token.
+          es: invalid_token.
+          pt: invalid_token.

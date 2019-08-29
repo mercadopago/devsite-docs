@@ -51,7 +51,7 @@ No arquivo **build.gradle** insira o código a seguir.
 Opcionalmente, você pode [baixar o SDK](https://github.com/mercadopago/px-android/releases) e adicioná-lo ao seu projeto.
 ===
 dependencies {
-   implementation 'com.mercadopago.android.px:checkout:4.0.+'
+   implementation 'com.mercadopago.android.px:checkout:4.+'
 }
 ```
 ```ios

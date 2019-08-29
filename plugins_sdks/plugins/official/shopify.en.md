@@ -7,7 +7,7 @@
 
 Mercado Pago's plugin for shopify has available the next features:
 
-| Feature                                                   | Web Checkout 		  |
+| Feature                                                   | Smart Checkout 		  |
 |---------------------------------------------------------- |-------------------|
 | Credit card Payments                                      | ✔                 |
 | Other payment methods                                     | ✔                 |
@@ -17,7 +17,7 @@ Mercado Pago's plugin for shopify has available the next features:
 | IPN and webhooks                                          | ✔                 |
 | Mercado Pago coupon discounts                             | ✔                 |
 
-### Web Checkout
+### Smart Checkout
 
 Great for merchants who want to get going quickly and easily.
 
@@ -33,20 +33,21 @@ Great for merchants who want to get going quickly and easily.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
-1. In your Shopify admin panel, go to the menu **Settings > Payments**.
+1) In your Shopify admin panel, go to the menu **Settings > Payments**.
 
-  ![Configuring Mercado Pago in shopify](/images/shopify-config-1.gif)
+![Configuring Mercado Pago in shopify](/images/shopify/shopify-config-1.gif)
 
-2. In Accept credit cards, select **MercadoPago**.
-3. Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
+2) In Accept credit cards, select **MercadoPago**.
 
-  ![Configuring client id and client secret in shopify](/images/shopify-config-2.gif)
+3) Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
 
-4. Click the button "**Activate**".
+  ![Configuring client id and client secret in shopify](/images/shopify/shopify-config-2.gif)
 
-  ![Saving All Settings](/images/shopify-config-3.gif)
+4) Click the button "**Activate**".
 
-5. Congrats! **Mercado Pago** was installed and configured!
+  ![Saving All Settings](/images/shopify/shopify-config-3.gif)
+
+5) Congrats! **Mercado Pago** was installed and configured!
 
 ### Mapping of payment status
 

@@ -1,6 +1,5 @@
 ---
 sites_supported:
-  - mlb
   - mlm
   - mlc
   - mpe

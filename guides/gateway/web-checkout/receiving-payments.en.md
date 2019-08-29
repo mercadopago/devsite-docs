@@ -5,18 +5,18 @@ sites_supported:
   - global
 ---
 
-# Mercado Pago Gateway: Web Checkout
+# Mercado Pago Gateway: Smart Checkout
 
 > NOTE
 >
 > Pre-requisites
 >
 
-> Have already integrated the [Web Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
+> Have already integrated the [Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
 
 ## Integration
 
-There is only one necessary change to support the **Gateway Model** in the Web Checkout: add the `processing_modes` attribute when you create a preference:
+There is only one necessary change to support the **Gateway Model** in the Smart Checkout: add the `processing_modes` attribute when you create a preference:
 
 [[[
 ```php
@@ -33,9 +33,9 @@ There is only one necessary change to support the **Gateway Model** in the Web C
 ```
 ]]]
 
-Done! Your **Web Checkout** is now working in the Gateway Model.
+Done! Your **Smart Checkout** is now working in the Gateway Model.
 
-> **Hybrid model:** the Web checkout doesn't support this mode yet. We are working to have this option soon. We'll let you know when is available to use.
+> **Hybrid model:** the Smart Checkout doesn't support this mode yet. We are working to have this option soon. We'll let you know when is available to use.
 
 ## Next steps
 
