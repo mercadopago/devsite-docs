@@ -32,7 +32,7 @@ Esta librería provee a los desarrolladores un simple set de bindings con la API
 
 2. Configura tus credenciales
 
--**Para Web-checkout:**
+-**Para Smart Checkout:**
 
 ```csharp
 MercadoPago.SDK.ClientId     = "YOUR_CLIENT_ID";

@@ -2,7 +2,7 @@
 
 This library provides developers with a simple set of bindings to the Mercado Pago API.
 
-## Installation 
+## Installation
 
 ### Using Maven
 1. Append MercadoPago dependencies to pom.xml
@@ -24,14 +24,14 @@ This library provides developers with a simple set of bindings to the Mercado Pa
 
 1. Import Mercado Pago basic clases. `import import com.mercadopago.*;`
 2. Setup your credentials.
-  - **For Web-checkout:**
+  - **For Smart Checkout:**
     ```java
       MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
       MercadoPago.SDK.setClientId("CLIENT_ID_OK");
     ```
   - **For API or Custom-checkout:**
     ```java
-      MercadoPago.SDK.setAccessToken("ACCESS_TOKEN"); 
+      MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```
 3. Using Resource objects.
 

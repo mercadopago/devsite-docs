@@ -6,7 +6,7 @@ Esta biblioteca fornece um conjunto de classes e métodos para interagir com a A
 
 O SDK suporta PHP 5.5.0 ou maior
 
-### Instalação 
+### Instalação
 
 #### Usando Composer
 
@@ -30,7 +30,7 @@ O SDK suporta PHP 5.5.0 ou maior
 
   Você tem dois tipos de credenciais:
 
-  * **Para Web-checkout:**
+  * **Para Smart Checkout:**
     ```php
     MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
     MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
@@ -45,14 +45,14 @@ O SDK suporta PHP 5.5.0 ou maior
 3. Usando objetos de recursos.
 
   Você pode interagir com todos os recursos disponíveis na API pública, para isso cada recurso é representado por classes de acordo com o seguinte diagrama:
-  
+
   ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
-  
+
   **Exemplo**
-  
+
 ```php
   <?php
-  
+
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -74,4 +74,3 @@ O SDK suporta PHP 5.5.0 ou maior
 
   ?>
 ```
-
