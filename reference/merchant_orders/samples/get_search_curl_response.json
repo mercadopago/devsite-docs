@@ -1,0 +1,63 @@
+{
+  "elements": [
+    {
+      "id": 839194759,
+      "status": "closed",
+      "external_reference": "default",
+      "preference_id": "340130264-04cd86e2-c44a-4cfe-8bd4-cec60903d911",
+      "payments": [
+        {
+          "id": 4165723358,
+          "transaction_amount": 5,
+          "total_paid_amount": 5,
+          "shipping_cost": 0,
+          "currency_id": "ARS",
+          "status": "approved",
+          "status_detail": "accredited",
+          "operation_type": "regular_payment",
+          "date_approved": "2018-09-14T13:11:42.000-04:00",
+          "date_created": "2018-09-14T13:11:41.000-04:00",
+          "last_modified": "2018-09-14T13:11:42.000-04:00",
+          "amount_refunded": 0
+        }
+      ],
+      "shipments": [],
+      "collector": {
+        "id": 340130264,
+        "email": null,
+        "nickname": null
+      },
+      "marketplace": "NONE",
+      "notification_url": null,
+      "date_created": "2018-09-14T13:11:31.000-04:00",
+      "last_updated": "2018-09-14T13:11:43.000-04:00",
+      "sponsor_id": null,
+      "shipping_cost": 0,
+      "total_amount": 5,
+      "site_id": "MLA",
+      "paid_amount": 5,
+      "refunded_amount": 0,
+      "payer": {
+        "id": 337631529,
+        "email": null
+      },
+      "items": [
+        {
+          "id": null,
+          "category_id": null,
+          "currency_id": "ARS",
+          "description": null,
+          "picture_url": null,
+          "title": "Producto de Test",
+          "quantity": 1,
+          "unit_price": 5
+        }
+      ],
+      "cancelled": false,
+      "additional_info": null,
+      "application_id": null
+    }
+  ],
+  "next_offset": 1,
+  "total": 1
+}

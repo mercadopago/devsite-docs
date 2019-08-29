@@ -10,17 +10,17 @@ properties:
 - email:
     type: String
     description:
-      en: Customer's email.
+      en: Customer's email. 
       es: Email del cliente.
       pt: E-mail do cliente.
 - first_name:
-    type: String
+    type: String (a-zA-Z)
     description:
-      en: Customer's name.
+      en: Customer's name. 
       es: Nombre del cliente.
       pt: Nome do cliente.
 - last_name:
-    type: String
+    type: String (a-zA-Z)
     description:
       en: Customer's last name.
       es: Apellido del cliente.

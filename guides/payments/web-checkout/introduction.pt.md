@@ -1,6 +1,5 @@
 ---
 sites_supported:
-  - mlb
   - mlm
   - mlc
   - mpe
@@ -8,7 +7,7 @@ sites_supported:
   - mlu
 ---
 
-# Web Checkout
+# Smart Checkout
 
 O Mercado Pago fornece as ferramentas necessárias para que você possa receber pagamentos através do nosso formulário web de forma simples, rápida e segura.
 

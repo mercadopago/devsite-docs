@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Prueba tu integración
@@ -24,7 +25,7 @@ sites_supported:
 
 ## Cómo probar mi integración
 
-**Los usuarios de prueba te permiten probar tu Web Checkout** al generar flujos de pagos en una copia exacta de tu integración.
+**Los usuarios de prueba te permiten probar tu Smart Checkout** al generar flujos de pagos en una copia exacta de tu integración.
 
 Tipos de usuarios | Descripción
 ------------ | -------------
@@ -42,8 +43,8 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=**PROD_ACCESS_TOKEN**" \
--d '{"site_id":"MLA"}'
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
 

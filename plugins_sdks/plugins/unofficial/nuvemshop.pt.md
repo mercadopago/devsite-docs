@@ -8,7 +8,7 @@
 
 Nuvem Shop permite operar Mercado Pago na seguinte modalidade:
 
-### Web Checkout
+### Smart Checkout
 
 Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
 
@@ -24,7 +24,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 2. No menu configurações, selecionar a opção **MEIOS DE PAGAMENTO**
 
     ![Payments Modules - Nuvem Shop](/images/NuvemShopmeiodepagamento1.png)
-   
+
 
 3. Clique no botão **ATIVAR** no quadro do Mercado Pago.
 

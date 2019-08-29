@@ -1,6 +1,7 @@
 ---
 sites_supported:
   - mla
+  - mlb
 ---
 
 # Personalizaciones
@@ -19,12 +20,12 @@ sites_supported:
 
 ## Esquema modal
 
-El Web Checkout modal permite cambiar su esquema de apertura.
+El Smart Checkout modal permite cambiar su esquema de apertura.
 
 Los esquemas disponibles actualmente son:
 
-* **Redirect**: abre el Web Checkout en una nueva ventana.
-* **Modal**: abre el Web Checkout en tu sitio.
+* **Redirect**: abre el Smart Checkout en una nueva ventana.
+* **Modal**: abre el Smart Checkout en tu sitio.
 
 ![Checkout-Modal](/images/web-payment-checkout/checkout-modal.png)
 
@@ -36,7 +37,6 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="<?php echo $preference->id; ?>">
   </script>
 </form>
@@ -45,7 +45,6 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="$$id$$">
   </script>
 </form>
@@ -54,7 +53,6 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="${preference.id}">
   </script>
 </form>
@@ -63,7 +61,6 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="%= @init_point %>">
   </script>
 </form>
@@ -72,7 +69,6 @@ básica por el siguiente snippet:
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-public-key= "ENV_PUBLIC_KEY"
    data-preference-id="@Html.DisplayFor(model => model.id)">
   </script>
 </form>
@@ -150,7 +146,7 @@ data-button-label="Comprar"
 <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Otras funcionalidades</p>
- <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
+ <p>Configura tus pago y adapta Smart Checkout a tu negocio.</p>
 </blockquote>
 </a>
 <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       

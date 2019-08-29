@@ -1,307 +1,215 @@
 # WooCommerce
 
 
-## Mercado Pago Module (WooCommerce 3.x)
+### Mercado Pago Module (WooCommerce 3.x)
 
-* [Funcionalidades](#bookmark_Funcionalidades)
-* [Requisitos](#bookmark_Requisitos)
-* [Versões](#bookmark_Versões)
-* [Instalação](#bookmark_Instalação)
-* [Configuração](#bookmark_Configuração)
-* [Notificações](#bookmark_Notificações)
-* [Atualização](#bookmark_Atualização) 
+* [Introdução](#bookmark_introdução)
+* [Requisitos de instalação](#bookmark_requisitos_de_instalação)
+* [Instalação](#bookmark_instalação)
+* [Integração](#bookmark_integração)
+* [Configuração do módulo](#bookmark_configuração_do_módulo)
+* [Receber Pagamentos](#bookmark_receber_pagamentos)
 
 
-## Funcionalidades
+## Introdução
 
-O módulo do Mercado Pago para WooCommerce esta integrado com as funcionalidades a seguir::
+O módulo do Mercado Pago para o WooCommerce permite expandir as funcionalidades da sua loja virtual e oferecer uma experiência de pagamento única aos seus clientes.
 
-| Funcionalidade                                           	| Checkout Básico 	| Checkout Transparente 	|
-|----------------------------------------------------------	|-------------------|-------------------------|
-| Pagamento com Cartão de Crédito                          	| ✔               	| ✔                     	|
-| Outros Meios de Pagamento, como os Boletos                | ✔                 | ✔                       |
-| Divisão de Pagamento (Dois Cartões)                       | ✔                 | ✔                       |
-| Devolução/Cancelamento de Pagamentos                      |                   |                         |
-| Pagamento com um click (Clientes e Cartões)               |                   | ✔                       |
-| Interfaces pré-construídas do Mercado Pago               	| ✔               	|                       	|
-| Calculadora de Parcelas                                   | ✔                 | ✔                       |
-| Notificação instantânea de pagamentos e webhooks          | ✔                 | ✔                       |
-| Descontos por meio de pagamento ou cupom do Mercado Pago  | ✔                 |                         |
-| Armazenamento de cartão                                   | ✔                 | ✔                       |
-| MercadoEnvios                                            	| ✔               	|                       	|
-| Assinatura (Recorrência)                                  | ✔                 |                         |
-| Checagens de credenciais e status de plataforma          	| ✔               	| ✔                     	|
-| Pagina de sucesso personalizável                         	|                 	| ✔                     	|
-| Conversão de moedas                                      	|                 	| ✔                     	|
-| Log e ferramentas de debug                               	| ✔               	| ✔                     	|
+Se você já usa o WooCommerce para criar sites de e-commerce no WordPress, um dos gerenciadores de conteúdo mais populares do mundo, pode contar com nosso módulo para adicionar um processador de pagamento confiável ao seu site ou de seus clientes.
 
+> Leve suas vendas para outro nível com o processador de pagamento para WooCommerce do Mercado Pago, pronto para uso na sua loja virtual.
 
-## Requisitos
+Pense grande. Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro nível com a melhor experiência de compra:
 
-| Requisito                | Detalhe                                                               |
-| ------------------------ | --------------------------------------------------------------------- |
-| Versões de Plataforma    | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x                    |
-| Ambiente                 | LAMP (Linux, Apache, MySQL e PHP)                                     |
-| OS                       | Linux x86, x86-64                                                     |
-| Versões PHP              | 5.6 ou maior com suporte a cURL                                       |
-| Versões MySQL            | 5.6 ou maior, MariaDB 10.0 ou maior                                   |
-| Configurações Adicionais | safe_mode off, memory_limit maior que 256MB (512MB é o recomendado)   |
-| SSL                      | SSL é necessário para uso de cartão de crédito                        |
+* Faça **promoções** e venda parcelado com o melhor **financiamento** possível
+* Principais **meios de pagamento** de cada país onde operamos 
+* **Compra em um clique:** lembramos os dados dos seus clientes, basta digitar o código de segurança do cartão
+* **Pagamento como visitante:** não excluímos ninguém, não é necessário que seus clientes abram uma conta no Mercado Pago
+* **Estorno** de pagamentos 
+* **Cancelamento** de pagamentos pendentes
+* Recuse ou aceite pagamentos **de forma automática**
+* Conte com o **suporte oficial** do Mercado Pago
 
->É um requisito que você tenha um certificado SSL e o formulário de pagamento a ser fornecido em uma página HTTPS. Durante os testes do modo sandbox você pode operar via HTTP, mas para homologação você precisará adquirir o certificado caso não o tenha.
+> **Você é desenvolvedor?** Este manual também foi pensado para que você faça a instalação, integração e configuração mais rapidamente do nosso módulo de plataformas de e-commerce mais reconhecidas no mundo.
 
+Confira as opções de pagamento que desenvolvemos para cobrir as necessidades do seu negócio:
 
-## Versões
+| Checkout básico                                                                   | Checkout de pagamentos com cartão                         | Checkout de pagamentos presenciais           |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------|----------------------------------------------|
+| Ofereça todos os meios de pagamento.                                              | Ofereça pagamentos com cartão de crédito.                 | Ofereça pagamentos com boleto e na lotérica. |
+| Experiência de pagamento no site do Mercado Pago.                                 | Experiência de pagamento dentro da sua loja.              | Experiência de pagamento dentro da sua loja. |
+| Seus clientes podem pagar como visitantes ou acessando sua conta do Mercado Pago. | Seus clientes pagam como visitantes sem sair da sua loja. | Seus clientes pagam como visitantes sem sair da sua loja. |
 
-| Plugin Version                                                                          | Status                    | Versões Compatíveis   |
-|-----------------------------------------------------------------------------------------|---------------------------|-----------------------|
-| [v3.x](https://github.com/mercadopago/cart-woocommerce/archive/master.zip)              | Stable (Current Version)  | WooCommerce 3.x       |
 
+## Requisitos de instalação
 
-# Instalação
+|                             	| Detalhes                                                                 	|
+|-------------------------------|---------------------------------------------------------------------------|
+| Versões de Plataforma       	| WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x                       	|
+| Ambiente                    	| LAMP (Linux, Apache, MySQL e PHP)                                        	|
+| Sistema                     	| Linux x86, x86-64                                                        	|
+| Servidor Web                	| Apache 2.x                                                               	|
+| Versão PHP                  	| 5.6 o superior con soporte a curl                                        	|
+| Banco de Dados              	| MySql 5.6 ou superior, MariaDB 10.0 ou superior                          	|
+| Dependências de estensões   	| WooComerce                                                               	|
+| Configurações Adicionais     	| safe_mode off, memory_limit maior que 256 MB                             	|
+| SSL                         	| Certificado SSL é necessário para usar cartões de crédito ou boletos     	|
 
-> NOTE
->
-> Nota
->
-> Se você já tiver este módulo instalado, por favor, siga as [Instruções de Atualização](#atualização) antes.
+> É um requisito que você tenha um certificado SSL e o formulário de pagamento a ser fornecido em uma página HTTPS. Durante os testes do modo sandbox você pode operar via HTTP, mas para homologação você precisará adquirir o certificado caso não o tenha.
 
-Você tem duas opções para instalar este módulo: através da sua loja WordPress, ou fazendo o download manual e copiando o diretório do módulo.
 
+## Instalação
 
-### Instalar a Partir do WordPress
+Você pode instalar o Mercado Pago no WordPress de duas formas:
 
-1. Na administração da sua loja, vá para a opção *Plugins* na barra lateral;
+1. De forma automática, pela seção de “Plugins” do WordPress
+  * Siga estas etapas para a instalação:
+    * Acesse “Adicionar novo” e busque “WooCommerce Mercado Pago” entre a oferta de módulos do WordPress.
+    * Clique em Instalar e depois entre na seção “Plugins Instalados”. 
+    * Ative-o para começar a configurar o módulo na sua loja.
+    * Pronto!
 
-2. Clique no botão *Adicionar Novo* e digite "WooCommerce MercadoPago" no campo de texto *Procurar Plugins*. Pressione Enter;
+2. De forma manual
+  * Instale o módulo seguindo estas etapas:
+    * Baixe o arquivo [.zip](https://github.com/mercadopago/cart-woocommerce/archive/master.zip) agora ou pelo [directorio](https://br.wordpress.org/plugins/woocommerce-mercadopago/) de módulos do WordPress
+    * Descompacte a pasta e altere o nome para “woocommerce-mercadopago”
+    * Copie o arquivo “woocommerce-mercadopago” no seu diretório do WordPress, dentro da pasta “Plugins”
+    * Pronto!
 
-3. Você deverá encontrar o módulo pronto para ser instalado. Clique em "instalar". Está feito!
+Se a instalação foi feita corretamente, você o verá na área de trabalho do WordPress, em "Plug-ins instalados". Ative-o e vamos passar para a integração da sua conta e as etapas de configuração.
 
-![Installing Mercado Pago with Wordpress](/images/woocommerce_install_plugin.gif)
 
-### Download Manual
+## Integração
 
-1. Obtenha o código fonte do módulo de um repositório [Github](https://github.com/mercadopago/cart-woocommerce/archive/master.zip) ou [WordPress Plugin Directory](https://br.wordpress.org/plugins/woocommerce-mercadopago/);
+Siga estas etapas para integrar sua conta do Mercado Pago ao módulo e receber os pagamentos das suas vendas:
 
-2. Descompacte a pasta e a renomeie para "woocommerce-mercadopago";
+1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar) no Mercado Pago, caso ainda não tenha uma.
+2. Obtenha suas [credenciais](https://www.mercadopago.com.br/developers/pt/guides/localization/credentials), são as chaves, que te identificam de forma única dentro da plataforma, e as insira nos campos correspondentes para integrar o módulo à sua conta.
+3. Configure as preferências de pagamento do checkout que quiser oferecer e faça outros ajustes avançados se quiser alterar as opções que vêm por padrão.
+4. Homologue sua conta para [ir a Produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) e receba pagamentos reais.
 
-3. Copie o diretório "woocommerce-mercadopago" para dentro do diretório *[WordPressRootDirectory]/wp-content/plugins/*. Está feito!
 
-> DICA: Para confirmar que seu módulo está realmente instalado, você pode clicar no item *Plugins* no menu lateral da página administrativa da sua loja, e checar seu módulo recém-instalado. Apenas clique em *ativar* para ativá-lo e você deverá receber a mensagem "Plugin ativado." como uma notificação em seu WordPress.
+## Configuração do módulo
 
-![Installing Mercado Pago manually in Wordpress](/images/woocommerce_activate_plugin.gif)
+Insira as informações básicas sobre sua empresa para começar a configurar o módulo:
 
-# Configuração
+* Digite o nome da sua loja, ele aparecerá nas NF-e que enviarmos para seus clientes para cada compra.
+* Selecione a qual categoria seus produtos pertencem.
+* Preencha um número ou prefixo para identificar os pedidos e pagamentos da sua loja.
 
-Certifique-se de que o plugin WooCommerce MercadoPago esteja habilitado, clicando no item *Plugins* na barra lateral do WordPress, conforme mostrado abaixo:
+> **Avanzado:** edite os ajustes avançados quando quiser configurar as [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) e registre informações sobre as transações entre WooCommerce e o Mercado Pago em nossos arquivos de troca com os modos de debug e log. Se é você quem integra o módulo, isso será útil caso haja problemas nos pagamentos com o Mercado Pago.
 
-![Enabling Mercado Pago in Woocommerce plugins](/images/woocommerce-plugins_menu.png)
 
-Agora clique na opção *Mercado Pago Settings*. Você deve obter a seguinte página:
+## Receber pagamentos
 
-![Mercado Pago configuration page in Woocommerce](/images/woocommerce-mercadopago_config.png)
+Coloque o checkout que você deseja usar para oferecer nossas opções de pagamento no gateway de compra.
 
-Esta janela mostra as principais configurações do plugin WooCommerce MercadoPago, onde você pode verificar e configurar o seguinte:
+Quando você ativa o plug-in, a plataforma leva você para as Configurações do WooCommerce e, de lá, para a seção "Pagamentos", onde terá à sua disposição os tipos de checkout que oferecemos para sua loja virtual: Checkout Básico, Checkout Personalizado para pagamentos on-line e Check-out personalizado para pagamentos com boleto. 
 
-### Status do Plugin e Opções de Pagamento
+![Checkouts Mercado Pago](/images/woocommerce/br_woo_payments.png)
 
-É a parte superior da janela. Mostra os status da plataforma e a consistência do sistema para usar este plugin. Além disso, existem botões que servem como atalhos para os gateways de pagamento que são oferecidos. É uma boa ideia ter todos os campos do status marcados com um ícone verde de checado.
+O checkout básico e checkout personalizado são excludentes um do outro. Portanto, se você usar o checkout básico, não poderá usar as opções personalizadas e vice-versa.
 
-> NOTE
->
-> Nota
->
-> Para realização de pagamentos com cartão de crédito no Custom Checkout (checkout transparente) é preciso que o servidor da aplicação possua SSL e que este esteja habilitado no painel do Wordpress.
+Você deve tomar uma decisão para ativar as diferentes experiências de compra:
 
-### Checkout Básico & Inscrições
+* Você quer oferecer **todos os meios de pagamento** de uma forma pré-estabelecida? Ative e configure o checkout básico. 
+* Quer permitir **somente pagamentos com boleto?** Ative o checkout personalizado de pagamentos com boleto. 
+* Você permitirá **pagamentos com cartão de crédito** sob medida? Ative o checkout personalizado de pagamentos on-line.
+* Quer oferecer **todos os meios de pagamento de forma personalizada?** Ative tanto o checkout personalizado para pagamentos on-line como o checkout personalizado para pagamentos com boleto.  
 
-  * Aqui você deve colocar suas chaves *Client Id* e *Client Secret*, que são as credenciais que o identificam de maneira única no Mercado Pago. O *Client Id* e *Client Secret* são usados para os meios de pagamentos Checkout Básico e Assinaturas. Clique no link a seguir para [obter suas credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic);
-  * Além disso, logo abaixo, você pode ativar o modo de conversão de moeda para as vendas com Checkout Básico e Assinaturas. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WooCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor.
+Agora, revise as opções que todos os checkouts têm e configure cada campo, abaixo você encontrará o detalhe de cada um:
 
-### Checkout Transparente & Boletos
-  * Aqui você deve colocar suas chaves *Public Key* e *Access Token*, que são as credenciais que o identificam de maneira única no Mercado Pago. O *Public Key* e *Access Token* são usados para os meios de pagamentos Checkout Transparente e Boletos;
-  * Além disso, logo abaixo, você pode ativar o modo de conversão de moeda para as vendas com Checkout Transparente e Boletos. A conversão de moeda é uma funcionalidade que lhe permite configurar uma moeda não suportada no WooCommerce enquanto mantém o Mercado Pago como método de pagamento. A moeda não suportada será convertida para a moeda usada em seu país. Fique atento, pois este serviço converte valores em tempo real durante a compra e pode trazer algum atraso adicional ao seu servidor.
+|           |                                   | Checkout Básico para todos los medios de pago | Checkout Personalizado para pagos online | Checkout Personalizado para pagos en efectivo | 
+|-----------|-----------------------------------|-----------------------------------------------|------------------------------------------|-----------------------------------------------|
+| Básicas   | Ativar CHO                        | ✔                                             | ✔                                        | ✔                                             |
+|           | Meios de pagamento On             | ✔                                             | ✔                                        |                                               |
+|           | Meios de pagamento Off            | ✔                                             |                                          | ✔                                             |
+|           | Máximo de parcelas                | ✔                                             | ✔                                        | ✔                                             |
+|           | Dias para vencimento              |                                               |                                          | ✔                                             |
+| Avançadas | Experiência de pagamento redirect | ✔                                             |                                          |                                               |
+|           | Experiência de pagamento modal    | ✔                                             |                                          |                                               |
+|           | Cupons de desconto                | ✔                                             | ✔                                        | ✔                                             |
+|           | Voltar à loja                     | ✔                                             |                                          |                                               |
+|           | Reduzir inventário                |                                               |                                          | ✔                                             |
+|           | URL de sucesso                    | ✔                                             |                                          |                                               |
+|           | URL de pagamento recusado         | ✔                                             |                                          |                                               |
+|           | URL de pagamento pendente         | ✔                                             |                                          |                                               |
+|           | Modo binário                      | ✔                                             | ✔                                        | ✔                                             |
+|           | Descontos por compra com **MP**   | ✔                                             | ✔                                        | ✔                                             |
+|           | Comissão por compra com **MP**    | ✔                                             | ✔                                        | ✔                                             |
 
-### Mapeamento de Estados de Pagamento x Pedido
-Aqui você pode mapear cada estado de pagamento para um determinado estado de pedido. Somente faça mudanças aqui se você estiver plenamente consciente do que está fazendo.
 
-### Configurações da Loja
-Esses campos são campos gerais da sua loja.
-  * *Descritor da Declaração*: A descrição que será mostrada na fatura do seu cliente;
-  * *Categoria da Loja*: Define a categoria da loja;
-  * *Identificador da Loja*: Um prefixo para identificar sua loja, quando você possui várias lojas para uma única conta do Mercado Pago.
-  * *Custom banner for checkout*: Uma URL para a imagem de um banner a ser exibido no checkout. Ao deixar em branco será utilizado o banner padrão do Mercado Pago.
-  * *Custom URL for IPN*: Uma URL customizada para recebimento de notificações IPN. O formato padrão é: https://yourdomain.com/yoursubdomain.
+#### **1. Configuração básica**
 
-### Opções de Debug e Teste
-Oferece ferramentas de registro para que você possa analisar possíveis problemas que possam estar ocorrendo. Mantenha isso desabilitado se estiver trabalhando em produção com um sistema estável
+Ative o checkout quando quiser usá-lo como uma opção de pagamento na sua loja virtual, selecione as formas de pagamento disponíveis para seus clientes e defina o número máximo de vezes em que eles podem parcelar.
 
-# Configurando o Cartão de Crédito
-Esta página explicará como configurar o módulo para aceitar pagamentos com o Cartão de Crédito do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Custom Checkout*. Você deve obter a seguinte página:
+![Configuração básica](/images/woocommerce/br_woo_basico.png)
 
-![Setting credit card in Woocommerce](/images/woocommerce-custom_checkout_config.png)
+Como você viu no gráfico de comparação, os checkouts têm algumas configurações avançadas em comum e outras configurações do que cada uma oferece:
 
-Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações_gerais_do_mercado_pago), então você pode agora customizar seu checkout por cartão de crédito:
+- Opções por compra com MP
 
-### Interface do Checkout
-Como o checkout é mostrado.
-  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
-  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes.
+  - Você poderá configurar descontos e tarifas para seus compradores cada vez que pagarem com o Mercado Pago na sua loja virtual. 
+  
+ ![Desconto e comissão](/images/woocommerce/br_woo_comdesc.png)
 
-### Opções de Pagamento
-Como a opção de pagamento se comporta.
-  * *Cupons*: Permitir cupom de campanhas para descontos
-  * *Modo Binário*: Ao cobrar um cartão de crédito, apenas o status [aprovado] ou [rejeitado] será tomado;
-  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem cartões de crédito como método de pagamento.
+- Modo binário 
 
-# Configurando os Boletos
-Esta página explicará como configurar o módulo para aceitar pagamentos com o Boleto do Checkout transparente. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Ticket*. Você deve obter a seguinte página:
+  - Algumas empresas, devido à sua lógica de negócios, podem precisar de um processo instantâneo de aprovação ou rejeição de pagamentos na experiência de compra, ou seja, evitar a instância de pagamento pendente.
+  - Para operar dessa forma, você pode ativar o **modo binário** nas configurações avançadas e, assim, definir a aprovação ou rejeição de cada pagamento instantaneamente. Se você desativar o modo binário, poderá ter cobranças pendentes que estaremos analisando com nossa ferramenta de prevenção contra fraudes.
 
-![Setting tickets in Woocommerce](/images/woocommerce-ticket_checkout_config.png)
+Revise os ajustes avançados próprios de cada checkout para não deixar nada pelo caminho:
 
-Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações_gerais_do_mercado_pago), então você pode agora customizar seu checkout por boleto:
+Checkout básico para todos os meios de pagamento
 
-### Interface do Checkout
-Como o checkout é mostrado.
-  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
-  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes.
+1. Experiência de pagamento
+  - Define como será a experiência de pagamento que seus clientes terão: se eles deixarão seu site para pagar. "Redirect" os levará para fora de sua loja para pagar no nosso portal de pagamento. A opção Modal abrirá o formulário de pagamento em sua loja virtual, sem sair dela para concluir o processo de compra. 
 
-### Opções de Pagamento
-Como a opção de pagamento se comporta.
-  * *Cupons*: Permitir cupom de campanhas para descontos;
-  * *Redução de Estoque*: Reduza o estoque quando o pedido é criado em vez de quando o pagamento é feito;
-  * *Dias para Expiração*: Defina uma quantidade de dias (entre 1 e 30) para a expiração do pagamento;
-  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem boletos como método de pagamento.
+2. Voltar à loja
+  - Aqui você poderá escolher se quer que seus compradores voltem para a sua loja. Se este for o caso, os levaremos diretamente quando o pagamento for concluído.  
 
-# Configurando o Checkout por Redirect, Iframe, ou LightBox
-Esta página explicará como configurar o módulo para aceitar os pagamentos com o Checkout Básico em Redirecionamento, Iframe ou Lightbox. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Checkout Básico*. Você deve obter a seguinte página:
+3. URLs configuráveis apenas no checkout básico
+  - de sucesso: Informe seus compradores cada vez que um pagamento for aprovado, levando-os a uma página que informe o resultado. É uma boa prática já que assim, você os passará confiança sobre a transação que acabam de fazer. A URL que você inserir neste campo cumprirá essa função. 
+  - de pagamento recusado: Igual que el punto anterior, pero para cuando las cosas no salen del todo bien. Crea una página que sirva para informar a tus compradores cuando un pago es rechazado y cuéntale qué pasos puede seguir en adelante. En este campo podrás insertarla.  
+  - de pagamento pendente: Insira a URL de uma página onde você informa seus compradores que têm um pago pendente o que isso significa: que o pago ainda não está confirmado. Você vai melhorar a experiência de compra sempre que der as informações corretas e manter seus compradores a par do processo. 
 
-![Setting the redirect checkout](/images/woocommerce-basic_checkout_config.png)
+Checkout personalizado para pagamentos com cartão de crédito
 
-Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações_gerais_do_mercado_pago), então você pode agora customizar seu checkout por cartão de crédito:
+* Cupons de desconto
+  - Alguns comércios podem querer trabalhar com cupons de desconto. Se este é o seu caso, ative de forma simples esta opção, selecionando ‘Sim’ no campo de configuração:  
 
-### Interface do Checkout
-Como o checkout é mostrado.
-  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
-  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes;
-  * *Método de Integração*: Como seus clientes irão interagir com o Mercado Pago para pagar os pedidos. Pode ser do tipo **Modal Window** (dentro da sua loja), **Redirect** (o cliente é redirecionado para o Mercado Pago) ou **iFrame** (uma janela interna é incorporada ao layout da página);
-  * *Largura do iFrame*: A largura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
-  * *Altura do iFrame*: A altura, em pixels, do iFrame (usado apenas com o método de integração por iFrame).
+![Desconto Mercado Pago no checkout](/images/woocommerce/br_woo_cupon.png)
 
-### Navegação do Checkout
-Como a navegação do checkout irá se comportar.
-  * *Auto Retorno*: Se configurado, a plataforma irá retornar para sua loja quando o pagamento for finalizado;
-  * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
-  * *URL de Falha*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for recusado. Deixe em branco para redirecionar para a loja;
-  * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja;
+Checkout personalizado para pagos en efectivo
 
-### Opções de Pagamento
-Como a opção de pagamento se comporta.
-  * *Parcelamento Máximo*: O número máximo de parcelas permitidas para seus clientes;
-  * *Excluir Meios de Pagamento*: Selecione os métodos de pagamento que você não deseja oferecer com Mercado Pago;
-  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles usem boletos como método de pagamento;
-  * *Modo Dois Cartões*: Habilite para permitir que seus clientes paguem com dois cartões diferentes.
+* Reduzir inventário
+  - Ative esta opção para reduzir seu estoque durante a criação de um pedido,  independentemente do cliente concluir ou não a compra. Desative esta opção para reduzi-lo somente quando os pagamentos estiverem aprovados.
 
-# Configurando o Mercado Envios
-Esta página irá explicar como configurar o módulo para aceitar o Mercado Envios.
 
-### Habilite Seu Mercado Envios
-Para usar o Mercado Envios, [você precisa habilitá-lo em sua conta do Mercado Pago.](http://shipping.mercadopago.com.ar/optin/doOptin)
+#### **2. Teste o módulo**
 
-### Crie a Zona de Envio e os Métodos de Envio
-Para usar o Mercado Envios, você precisa que ele seja configurado como método de envio do WooCommerce. Basta seguir as seguintes etapas:
+Faça testes até ter certeza de que está tudo em ordem. 
 
-1. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Entrega*. Em *Zona de Envio*, clique em *Adicionar zona de envio*. Digite o nome da zona, selecione as regiões dentro desta zona e clique em *Salvar Alterações*.<br>![Creating the Shipping Zone of the Mercado envios in Woocommerce](/images/woocommerce-me_0.png)
-2. Clique em *ver* da zona criada.<br>![Created zone settings in Woocommerce](/images/woocommerce-me_1.png)
-3. Clique em *Adicionar método de envio* e selecione *Mercado Envios - Normal* ou *Mercado Envios - Express*. Este processo deve ser repetido duas vezes, até que as opções "normal" e "express" estejam selecionadas.<br>![Adding Mercado Envios as Shipping Method in Woocommerce](/images/woocommerce-me_2.png)
-4. Você pode configurar também as opções *Envio Gratuito* e/ou mostrar o *Tempo de Entrega* estimado no cálculo de envio.<br>![Setting free shipping and delivery time](/images/woocommerce-me_3.png)
-5. O Mercado Envios está pronto para uso, mas não se esqueça de habilitar o *Checkout Básico* para a correta operação do *Mercado Envios* e de informar as medidas do seu produto.<br>![Mercado Envios ready for use](/images/woocommerce-me_4.png)
+* Simule pagamentos como se você fosse um dos seus clientes comprando no site.
+* Certifique-se de que o fluxo funcione corretamente e que seja fácil de usar. 
+* Viu que está tudo em ordem? Desactive o modo de testes e comece a receber pagamentos reais! 
 
-> IMPORTANTE 1: Sua conta do Mercado Pago precisa ser uma *Seller Account*;
+Você poderá ativar ou desativar este modo por aqui: 
 
-> IMPORTANTE 2: No momento, o Mercado Envios está disponível apenas para Argentina, Brasil, e México, e pode ser utilizado apenas com o Checkout Básico;
+![Modo Sandbox](/images/woocommerce/br_woo_sandbox.png)
 
-> IMPORTANTE 3: O produto enviado deve ter suas dimensões (largura, altura, comprimento e peso) adequadamente configurados e dentro das [regras e limites suportados](https://www.correios.com.br/a-a-z/limites-de-dimensoes-e-peso) pelo país especificado.
+> Por padrão, desativamos o Produção. Ative o Produção quando tiver a conta homologada e verifique se o fluxo de compra e o recebimento dos pagamentos de teste funcionam bem.
 
-# Configurando as Assinaturas
-Esta página explicará como configurar o módulo para aceitar pagamentos recorrentes de assinaturas. Na administração da sua loja, vá para a guia *WooCommerce > Configurações > Checkout*. Em *Opções de Checkout*, clique em *Mercado Pago - Assinaturas*. Você deve obter a seguinte página:
+#### **3. Ir a producción (‘Go live!’)**
 
-![Setting Subscription in Woocommerce](/images/woocommerce-subscription_checkout_config.png)
+Ative o modo Produção somente quando estiver pronto para vender. Você poderá fazer isso por aqui: 
 
-Se você configurou adequadamente suas credenciais em [Configurações Gerais do Mercado Pago](#configurações_gerais_do_mercado_pago), então você pode agora customizar seu checkout por cartão de crédito:
+![Modo Produção](/images/woocommerce/br_woo_produccion.png)
 
-### Interface do Checkout
-Como o checkout é mostrado.
-  * *Título*: Este é o título da opção de pagamento que será exibido aos seus clientes;
-  * *Descrição*: Esta é a descrição da opção de pagamento que será mostrada aos seus clientes;
-  * *Método de Integração*: Como seus clientes irão interagir com o Mercado Pago para pagar os pedidos;
-  * *Largura do iFrame*: A largura, em pixels, do iFrame (usado apenas com o método de integração por iFrame);
-  * *Altura do iFrame*: A altura, em pixels, do iFrame (usado apenas com o método de integração por iFrame).
+Antes começar a cobrar, precisamos que você passe pelo processo de homologação, onde pediremos que você preencha um formulário com informações sobre sua empresa. 
 
-### Navegação do Checkout
-Como a navegação do checkout irá se comportar.
-  * *URL de Notificação Instantânea de Pagamento (IPN)*: Nesta parte, você pode verificar sua URL de IPN, onde você receberá as notificações das atualizações de pagamento. Para esta solução, você precisa configurar uma URL de IPN em sua conta do Mercado Pago. Anote sua URL, clique no link do seu país e coloque o URL no campo solicitado. Então salve-o;
-  * *URL de Sucesso*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for aprovado. Deixe em branco para redirecionar para a loja;
-  * *URL de Falha*: Personalize uma URL para o cliente ser redirecionado quando um pagamento for recusado. Deixe em branco para redirecionar para a loja;
-  * *URL de Pendência*: Personalize uma URL para o cliente ser redirecionado quando um pagamento estiver pendente. Deixe em branco para redirecionar para a loja.
+> Confira os [requisitos para ir a produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/).
 
-### Opções de Pagamento
-Como a opção de pagamento se comporta.
-  * *Desconto por Gateway*: Dá um desconto percentual para seus clientes caso eles façam uma assinatura;
+Já fez isso? Então, você poderá ativar o “Produção” pelo painel de configuração do Mercado Pago.
 
-### Criando um Produto Assinável
-Uma assinatura precisa de um tipo especial de produto, que deve ser vendido periodicamente. Você pode configurar um produto para ser assinável seguindo as seguintes etapas:
-1. Vá para *Produtos* no menu lateral e clique no botão *Adicionar Produto*. A página aberta deve conter os detalhes e os campos do produto na janela *Dados do Produto*;<br>![Setting subscription products pages](/images/woocommerce-subscription_checkout_product.png)
-2. Complete as informações do seu produto (nome, preço, imagens, etc.) e, em seguida, marque a caixa *Produto Recorrente*;
-3. Preencha os campos de informação para a assinatura: *Frequência* (frequência com que as cobranças serão feitas ao seu cliente), *Tipo de Frequência* (o tipo da frequência pode estar em [Dias] ou [Meses]) e *Data Final* (data em que a assinatura deve terminar).
-
-> IMPORTANTE: Uma assinatura deve ser exclusiva no carrinho do cliente. Os clientes só podem assinar um produto de cada vez e este não pode ser misturado com outros produtos não assináveis.
-
-# Norificações
-Notificação Instantânea de Pagamento (IPN) é um mecanismo que permite que sua loja receba mensagens do servidor do Mercado Pago informando o estado de um determinado pagamento. Neste plugin, você não precisa se preocupar com a configuração da IPN pois ela já está implementada e configurada.
-
-### Configurando a IPN para Assinaturas
-Assinaturas é o único gateway que você deve configurar a IPN para receber corretamente as notificações em seu servidor. Para configurá-lo, faça o seguinte:
-
-1. Na administração da sua loja, acesse *WooCommerce > Configurações > Checkout* e depois, nas opções de gateway listadas, selecione *Mercado Pago - Assinaturas*;
-
-2. Anote a URL informada no campo *URL de Notificação Instantânea de Pagamento (IPN)* e acesse o ambiente da IPN/Webhook para seu país: [Argentina](https://www.mercadopago.com.ar/ipn-notifications), [Brasil](https://www.mercadopago.com.br/ipn-notifications), ou [México](https://www.mercadopago.com.mx/ipn-notifications);
-
-3. Insira a URL no campo e clique no botão *salvar*. Você receberá uma mensagem informando se o Mercado Pago acessou seu servidor corretamente e recebeu uma resposta válida. Se tudo estiver OK, você deve receber uma mensagem de confirmação.
-
-> DICA 1: Ao configurar ou testar sua IPN/Webhooks e comunicações de servidor, certifique-se de que seu servidor possa acessar o servidor Mercado Pago.
-
-> DICA 2: Observe que o Mercado Pago usa o protocolo TSL versão 1.1, logo seu servidor precisa suportar/aceitar conexões com esta versão ou superior do protocolo.
-
-> DICA 3: Tenha certeza de que nenhum outro plugin do WordPress esteja bloqueando o Mercado Pago.
-
-# Atualização
-
-Se você já instalou uma versão anterior do WooCommerce MercadoPago, siga as instruções. Da mesma forma como foi a instalação, novamente você tem duas opções: da sua loja do WordPress ou baixando e copiando manualmente o diretório do módulo.
-
-### Upgrade a partir do WordPress
-1. Na administração da sua loja, vá para a opção *Plugins* na barra lateral;
-2. Clique no botão *atualizar agora* na janela do painel do plugin;
-3. Em alguns segundos, deverá ser mostrado a mensagem *Atualizado!*.
-
-### Atualizar com Download Manual
-1. Obtenha o código fonte do módulo de um repositório [Github](https://github.com/mercadopago/cart-woocommerce/archive/master.zip) ou [WordPress Plugin Directory](https://br.wordpress.org/plugins/woocommerce-mercadopago/);
-2. Descompacte a pasta e a renomeie para "woocommerce-mercadopago;
-3. Vá para o diretório *[WordPressRootDirectory]/wp-content/plugins/* e exclua o diretório existente "woocommerce-mercadopago";
-4. Copie o diretório "woocommerce-mercadopago" para *[WordPressRootDirectory]/wp-content/plugins/* directory.
-
-### Atualização de 2.x para 3.x
-Antes de atualizar, por favor, considere o seguinte:
-* Esta é uma atualização grande (2.x para 3.x) e além disso estamos migrando o slugname do projeto na WordPress Plugin Directory, então criar um backup do seu site e dos seus dados pode ser uma boa ideia;
-* No momento, a atualização consiste nos seguintes passos:
-   1. Desativar o plugin Woo Mercado Pago Module;
-   2. Desinstalar o plugin Woo Mercado Pago Module;
-   3. Instalar o plugin WooCommerce MercadoPago;
-   4. Ativar o plugin WooCommerce MercadoPago;
-   5. Configurar o plugin WooCommerce MercadoPago.
-* Você pode obter a versão 3.x no link: https://wordpress.org/plugins/woocommerce-mercadopago/;
-* O quanto antes estaremos disponibilizando uma migração nativa como uma funcionalidade para a versão 2.x.
-
-Para confirmar que seu módulo está realmente atualizado, você pode ver no item *Plugins* no menu de administração da loja e verificar a atualização do seu módulo. A versão deve corresponder ao plugin atualizado recentemente.
-
-> DICA: Lembre-se sempre de fazer um backup dos seus dados e de seu sistema antes de fazer qualquer alteração.
+**Pronto!** Agora, você poderá maximizar sua conversão ou a dos seus clientes com a experiência de compra on-line do Mercado Pago. 

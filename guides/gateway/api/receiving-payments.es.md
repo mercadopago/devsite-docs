@@ -132,7 +132,8 @@ curl -X POST \
   'processing_mode': 'gateway',
   'payment_method_option_id': '{ID}'
   'merchant_services': {
-    'fraud_scoring': true
+    'fraud_scoring': true,
+    'fraud_manual_review': true
   }
 }"
 ```
