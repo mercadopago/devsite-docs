@@ -20,12 +20,12 @@ sites_supported:
 
 ## Esquema redirect
 
-O Web Checkout redirect permite alterar seu esquema de abertura.
+O Smart Checkout redirect permite alterar seu esquema de abertura.
 
 Os esquemas disponíveis atualmente são:
 
-* **Redirect**: abre o Web Checkout em uma nova janela.
-* **Modal**: abre o Web Checkout no seu site.
+* **Redirect**: abre o Smart Checkout em uma nova janela.
+* **Modal**: abre o Smart Checkout no seu site.
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
@@ -176,7 +176,7 @@ data-button-label="Comprar"
 <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Outras funcionalidades</p>
- <p>Configure seus pagamentos e adapte o Web Checkout ao seu negócio.</p>
+ <p>Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.</p>
 </blockquote>
 </a>
 <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       

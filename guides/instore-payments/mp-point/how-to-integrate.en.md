@@ -104,7 +104,7 @@ The POST to the API generates an order that MercadoPago application receives in 
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--d '{"parameter_name":"parameter_value"}' \
+-d '{"amount":100,"description":"Cup","device_name":"device","cc_type":"credit_card"}' \
 'https://mobile.mercadopago.com/point/services/integrations/v1?access_token=ACCESS_TOKEN'
 ```
 

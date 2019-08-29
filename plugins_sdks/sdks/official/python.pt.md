@@ -2,7 +2,7 @@
 
 
 * [Instalação](#bookmark_instalação)
-* [Web Checkout](#bookmark_web_checkout)
+* [Smart Checkout](#bookmark_smart_checkout)
 * [Customized checkout](#bookmark_checkout_custom)
 * [Generic methods](#bookmark_métodos_genéricos)
 
@@ -17,7 +17,7 @@ Em Python 3.x:
 
 ``pip3 install mercadopago``
 
-## Web Checkout
+## Smart Checkout
 
 
 ### Configure suas credenciais

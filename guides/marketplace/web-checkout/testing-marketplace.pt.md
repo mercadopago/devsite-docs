@@ -21,7 +21,7 @@ Para simular o processo de pagamento do começo ao fim, é necessário criar 3 u
 >
 > Nota
 >
-> Para poder testar o Web Checkout todos os envolvido no fluxo devem ser test_users, caso contrário ele retornará o erro "Invalid users involved".
+> Para poder testar o Smart Checkout todos os envolvido no fluxo devem ser test_users, caso contrário ele retornará o erro "Invalid users involved".
 
 
 Você deve fazer a seguinte requisição à API para criar cada um dos usuários.

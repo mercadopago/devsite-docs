@@ -4,7 +4,7 @@ sites_supported:
   - mlb
 ---
 
-# Web Checkout
+# Smart Checkout
 
 > WARNING
 >

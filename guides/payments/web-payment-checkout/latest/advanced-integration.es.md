@@ -318,7 +318,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
   <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
     <blockquote class="next-step-card">
       <p class="card-note-title next-step-card-left">Otras funcionalidades</p>
-      <p>Configura tus pago y adapta Web Checkout a tu negocio.</p>
+      <p>Configura tus pago y adapta Smart Checkout a tu negocio.</p>
     </blockquote>
   </a>
   </div>

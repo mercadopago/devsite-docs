@@ -1,7 +1,7 @@
-#Prestashop 1.7
+# Prestashop 1.7
 
 
-###Mercado Pago Module (Prestashop 1.7.x)
+### Mercado Pago Module (Prestashop 1.7.x)
 
 * [Introdução](#bookmark_introdução)
 * [Requisitos de Instalação](#bookmark_requisitos_de_instalação)
@@ -9,31 +9,29 @@
 * [Integração](#bookmark_integração)
 * [Receber Pagamentos](#bookmark_receber_pagamentos)
 
-##Introdução
+## Introdução
 
-Como imaginarás, una página web sin un procesador de pagos no es más que un catálogo en línea. Tus clientes podrán ver tus productos pero no podrán pagarte por ellos. 
+Como você pode imaginar, um site sem um processador de pagamento nada mais é do que um catálogo on-line. Seus clientes poderão ver seus produtos, mas não poderão pagar por eles.
 
-> Somos partners oficiales de Prestashop, un gestor de contenidos con el que puedes crear tiendas online a tu medida.
+> Somos parceiros oficiais da Prestashop, um sistema gerenciador de conteúdo com o qual você pode criar lojas virtuais sob medida.
 
-Piensa en grande. Instala la pasarela de pagos de Mercado Pago en Prestashop y lleva tus ventas a otro nivel con la mejor experiencia de compra:
+Pense grande. Instale o Mercado Pago no Prestashop e leve suas vendas (ou as dos seus clientes) a outro nível com a melhor experiência de compra:
 
-* Haz **promociones** y vende en cuotas con la mejor **financiación** posible
-* Libera el dinero de tus ventas al instante.
-* Elige el **checkout** que quieras ofrecer a tus clientes.
-* **Medios de pago** principales de cada país en el que operamos.
-* **Compra con un clic:** recordamos los datos de tus clientes, ellos solo ingresan el código de seguridad de su tarjeta
-* **Pago como invitado:** no hace falta que tus clientes abran una cuenta en Mercado Pago
-* **Devolución** de pagos 
-* **Cancelación** de pagos pendientes
-* Rechaza o acepta pagos **de forma automática**
+* Ofereça **promoções** e venda parcelado com o melhor **financiamento** possível
+* Principais **meios de pagamento** de cada país onde operamos 
+* **Compre em um clique:** lembramos os dados dos seus clientes, eles só informam o código de segurança do cartão
+* **Pagamento como visitante:** não excluímos ninguém, não é necessário que seus clientes abram uma conta no Mercado Pago
+* **Estorno** de pagamentos 
+* **Cancelamento** de pagamentos pendentes
+* Recuse ou aceite pagamentos **automaticamente**
 
-> **¿Eres desarrollador?** Esta guía también está pensada para que hagas más rápido tu trabajo de instalación, integración y configuración.
+> **Você é desenvolvedor?** Este manual também foi pensado para que você faça a instalação, integração e configuração mais rapidamente.
 
-> **¿Eres partner de Mercado Pago?** No olvides ingresar tu Sponsor_ID, así identificamos todas tus transacciones y sabemos cuántas ventas procesa tu cuenta. 
+> **Você é parceiro do Mercado Pago?** Não esqueça de inserir seu Sponsor_ID, assim podemos identificar todas as suas transações e saberemos quantas vendas a sua conta processa.
 
-##Requisitos de Instalação
+## Requisitos de Instalação
 
-A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos: 
+A nível técnico, sua versão do Prestashop deve atender estes requisitos: 
 
 |                            | Detalhes                                                                                       |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -49,9 +47,9 @@ A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 
 ¡La instalación de nuestro módulo no afecta la velocidad de tu tienda! 
 
->Puedes usar el protocolo HTTP mientras estés en modo ‘Pruebas’ y no estés haciendo transacciones reales. Cuando vayas a Producción debes tener un **certificado SSL** para ofrecer una **navegación segura** y proteger tus datos y los de tus clientes. Una vez que lo tengas, la ruta de acceso a tu tienda online responderá al **protocolo HTTPS**.
+> Você pode usar o protocolo HTTP no modo "Teste" e não fazer transações reais. Quando for a Produção, você deve ter um **certificado SSL** para oferecer **navegação segura** e proteger seus dados e os dos seus clientes. Depois, a rota de acesso para a sua loja virtual responderá ao **protocolo HTTPS**.
 
-##Instalação
+## Instalação
 
 1) Baixe o arquivo mercadopago.zip em nosso Github.
 
@@ -65,67 +63,69 @@ A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 
 3) Muito bem! O módulo do Mercado Pago foi instalado com sucesso.
 
-##Integração
+## Integração
 
-No necesitas saber diseñar o programar para activar Mercado Pago en tu tienda de Prestashop. Una vez instalado el módulo, esto es lo que debes hacer:
+Você não precisa de conhecimentos de design ou programação para ativar o Mercado Pago na sua loja Prestashop. Depois que o módulo estiver instalado, siga estas etapas para integrar: 
 
-1. Crea una cuenta vendedor en Mercado Pago si todavía no tienes una.
-2. Obtén tus [credenciales](https://www.mercadopago.com.ar/developers/es/guides/localization/credentials) y pégalas en los campos correspondientes para integrar el módulo con tu cuenta.
-3. Configura tus preferencias de pago y otros ajustes avanzados.
-4. Homologa tu cuenta para [ir a Producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) y recibir pagos reales.
+1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar) no Mercado Pago, caso ainda não tenha uma.
+2. Obtenha suas [credenciais](https://www.mercadopago.com.br/developers/pt/guides/localization/credentials) e as insira nos campos correspondentes para integrar o módulo à sua conta.
+3. Configure suas preferências de pagamento e outros ajustes avançados.
+4. Homologue sua conta para [ir a Produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) e receba pagamentos reais.
 
-##Receber Pagamentos
+## Receber Pagamentos
 
-Configura lo básico del checkout y haz que tu cliente termine su compra de forma rápida, fácil y segura:
+Configure o básico de cada checkout e faça com que seu cliente conclua a compra de forma rápida, fácil e segura:
 
-> Checkout Básico: acepta pagos con tarjetas de crédito o débito, dinero en cuenta de Mercado Pago y dinero en efectivo.
+> Checkout Básico: aceita todos os meios de pagamento.
 
-Cuanto mejor sea la experiencia, ¡más conversiones! Sigue estos pasos para configurar el plugin de Mercado Pago:
+Quanto melhor for a experiência, mais conversões você terá! Siga estas etapas para configurar cada checkout do Mercado Pago:
 
-####**1. Configuração básica**
+#### **1. Configuração básica**
 
-Crea tus preferencias de pago:
+Crie suas preferências de pagamento:
 
-- Ingresa tu marca o el nombre de tu tienda para las facturas que enviemos a tus clientes por cada compra.
-- Selecciona a qué categoría pertenecen tus productos.
-- Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
-- Establece el máximo de cuotas en el que podrán pagarte.
-- Vencimientos de pagos en efectivo: establece en cuántos días caducarán los pagos del checkout personalizado.  
+- Insira sua marca ou o nome da sua loja para as NF-e que enviamos aos seus clientes para cada compra.
+- Selecione a qual categoria seus produtos pertencem.
+- Selecione os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods/) para seus clientes conforme o país onde você opera e o tipo de checkout que você está configurando. 
+- Estabeleça o número máximo de vezes que poderão parcelar.
+- Vencimentos de pagamentos com boleto e na lotérica: estabeleça em quantos dias os pagamentos do checkout personalizado vencerão.
 
 ![Configuração básica](/images/prestashop/br_basico.png)
 
-####**2. Configuração avançada**
+#### **2. Configuração avançada**
 
-Personaliza la experiencia de compra con los ajustes avanzados que correspondan a cada tipo de checkout:
+Personalize a experiência de compra com os ajustes avançados que correspondam a cada tipo de checkout:
 
-- Que tus clientes vuelvan a tu tienda cada vez que terminen una compra.
-- Aceptar y rechazar pagos de forma automática, saltando las instancias de cobros en revisión con el modo binario.
-- Tiempo máximo de los links de pago con las preferencias de compra de tus clientes que dejan el proceso de compra a mitad de camino.
-- Cupones de descuento
-- Cuándo reducir el inventario en el checkout personalizado de pagos en efectivo
+- Seus clientes retornam à sua loja sempre que terminarem uma compra.
+- Modo binário para aceitar e recusar pagamentos de forma automática, pulando as instâncias de cobranças em revisão. 
+- Tempo máximo dos links de pagamento com as preferências de compra dos seus clientes que abandonam o processo de compra no meio do caminho.
+- Cupons de desconto.
+- Quando reduzir o estoque no checkout personalizado de pagamentos com boleto e na lotérica.
+- Selecione a porcentagem de desconto que aplicará para os clientes que quiserem pagar à vista. 
 
-![Configuração avanzada](/images/prestashop/br_avanzado.png)
+![Configuração avançada](/images/prestashop/br_avanzado.png)
 
-####**3. Teste o módulo**
+#### **3. Teste o módulo**
 
-Haz pruebas:
+Faça testes:
 
-- Simula pagos como si fueras uno de tus clientes comprando en el sitio.
-- Asegúrate de que el flujo funcione correctamente y sea fácil de usar. 
-- ¿Ves que todo va bien? Desactiva el modo pruebas y ¡empieza a recibir pagos reales! 
+- Simule pagamentos como se você fosse um dos seus clientes comprando no site.
+- Certifique-se de que o fluxo funcione corretamente e seja fácil de usar. 
+- Viu que está tudo em ordem? Desative o modo de testes e comece a receber pagamentos reais! 
+
 
 ![Testar loja](/images/prestashop/br_testear.png)
 
-> Por defecto, te dejamos este modo activo. Desactívalo cuando tengas la cuenta homologada y ve a Producción solo cuando hayas comprobado que el flujo de compra funciona y que los pagos de prueba fueron procesados. 
+> Por padrão, deixamos este modo ativo. Desative-o quando tiver a conta homologada e vá para Produção somente depois de verificar se o fluxo de compra funciona e se os pagamentos de teste foram processados.
 
-####**4. Ir para produção (‘Go live!’)**
+#### **4. Ir para produção (‘Go live!’)**
 
-Antes de salir a cobrar, necesitamos que pases por el proceso de homologación. En él te pediremos que completes un formulario con información relacionada a tu negocio. 
+Antes de começar a cobrar, precisamos que você passe pelo processo de homologação. Nele, pediremos que você preencha um formulário com informações relacionadas ao seu negócio.
 
-> Consulta los [requisitos para ir a producción.](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/)
+> Confira os [requisitos para ir a produção.](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/)
 
-¿Ya lo hiciste? Entonces podrás pasar rápidamente de ‘Pruebas’ a ‘Producción’ desde el panel de configuración de Mercado Pago. 
+Já fez isso? Então, você pode passar rapidamente de "Testes" para "Produção" no painel de configuração do Mercado Pago.
 
 ![Começar a vender](/images/prestashop/br_vender.png)
 
-**¡Y listo!** Ahora podrás maximizar tu conversión o la de tus clientes con la experiencia de compra online de Mercado Pago. 
+**E pronto!** Agora, você poderá maximizar sua conversão ou a dos seus clientes com a experiência de compra on-line do Mercado Pago. 

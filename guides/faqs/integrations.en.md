@@ -13,7 +13,7 @@ We offer different options so you can build the payment solution that best suits
 
 We have tools that are ready to use, such as SDKs, payment buttons, modules or plugins. In addition, we have a flexible and robust API so you can create your own payment experience.
 
-### Web Checkout
+### Smart Checkout
 
 This option allows you to collect through our web form within the safe environment of Mercado Pago in a simple, fast and secure way
 
@@ -24,22 +24,22 @@ This option allows you to collect through our web form within the safe environme
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
 ----[mla, mlb]----
-[Integrate Web Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
+[Integrate Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
 ------------
-----[mlm, mpe, mco, mlu]----
-[Integrate Web Checkout](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
+----[mlm, mpe, mco, mlu, mlc]----
+[Integrate Smart Checkout](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
 ------------
 
 ### Mobile Checkout
 
-Unlike Web Checkout, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
+Unlike Smart Checkout, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
 
 [Integrar Mobile Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
 
-It's the simplified version of the Web Checkout with a renewed user experience.
+It's the simplified version of the Smart Checkout with a renewed user experience.
 
 - **Don't worry about the design.** We provide you with a form with design and front-end ready for you to use.
 

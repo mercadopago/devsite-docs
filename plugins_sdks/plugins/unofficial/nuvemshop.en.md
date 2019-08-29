@@ -2,7 +2,7 @@
 
 Tienda Nube allows to operate Mercado Pago in the following modality:
 
-### Web Checkout
+### Smart Checkout
 
 Receive payments in your store using the Mercado Pago's checkout, in this model the user (client) will be redirected to a Mercado Pago site to finalize their purchase.
 

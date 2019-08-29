@@ -25,7 +25,7 @@ sites_supported:
 
 ## Cómo probar mi integración
 
-**Los usuarios de prueba te permiten probar tu Web Checkout** al generar flujos de pagos en una copia exacta de tu integración.
+**Los usuarios de prueba te permiten probar tu Smart Checkout** al generar flujos de pagos en una copia exacta de tu integración.
 
 Tipos de usuarios | Descripción
 ------------ | -------------

@@ -69,7 +69,7 @@ The installation of our module doesn't affect the performance of your store!
 
 You do not need to know how to design or program to activate Mercado Pago in your Prestashop store. Once the module is installed, this is what you should do:
 
-1. Create a merchant account in Mercado Pago if you don't have one yet.
+1. Create a [merchant account](https://www.mercadopago.com.ar/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar) in Mercado Pago if you don't have one yet.
 2. Obtain your [credentials](https://www.mercadopago.com.ar/developers/es/guides/localization/credentials) and paste them in the corresponding fields to integrate the module with your account.
 3. Set your payment preferences and other advanced settings.
 4. Approve your account to [go to Production](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) and receive real payments.

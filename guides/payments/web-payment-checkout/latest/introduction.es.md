@@ -4,15 +4,15 @@ sites_supported:
   - mlb
 ---
 
-# ¿Qué es el Web Checkout?
+# ¿Qué es el Smart Checkout?
 <br/>
 
-Web Checkout de Mercado Pago es la integración que **te permite cobrar a través de nuestro formulario web desde cualquier dispositivo** de manera simple, rápida y segura.
+Smart Checkout de Mercado Pago es la integración que **te permite cobrar a través de nuestro formulario web desde cualquier dispositivo** de manera simple, rápida y segura.
 
 ![Basic-Checkout](/images/web-payment-checkout/cho-introduction.png)
 
 
-## Web Checkout ofrece:
+## Smart Checkout ofrece:
 
 * Pagar con los principales <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
 * Una **experiencia de compra adaptada** y accesible desde cualquier celular o computadora.  
@@ -21,9 +21,9 @@ Web Checkout de Mercado Pago es la integración que **te permite cobrar a travé
 * **Pago con dos tarjetas.** Por ejemplo, para casos de montos altos.
 
 
-## Diferencias de Web Checkout con otras herramientas de Mercado Pago
+## Diferencias de Smart Checkout con otras herramientas de Mercado Pago
 
-                                   | Web Checkout|Web Tokenize Checkout|      API
+                                   | Smart Checkout|Web Tokenize Checkout|      API
 :---------------------------------  | :-----------: | :-------------------: | :---------:
 Dificultad de integración 			  	     |     Baja    |       Media         |     Alta
 Diseño UI/UX 							  	           |      ✔      |         ✔           |
@@ -39,7 +39,7 @@ Pago con dos tarjetas					           |      ✔      |                     |
 >
 > Nota
 >
-> Esta documentación refiere a la nueva versión del Web Checkout. Para **ver la versión anterior**, ve a la [sección de Web Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
 
 ### Próximos pasos
