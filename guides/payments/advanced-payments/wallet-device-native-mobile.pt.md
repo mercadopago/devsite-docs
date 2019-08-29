@@ -35,7 +35,7 @@ curl -X POST \
 
 #### Response
 
-LA resposta exitosa será um `HTTP Status 200 OK` e restituirá o advanced payment completo. Do contrário, restituirá o `HTTP Status` correspondente ao erro e uma mensagem esclarecedora.
+A resposta exitosa será um `HTTP Status 200 OK` e restituirá o advanced payment completo. Do contrário, restituirá o `HTTP Status` correspondente ao erro e uma mensagem esclarecedora.
 
 ```json
 {

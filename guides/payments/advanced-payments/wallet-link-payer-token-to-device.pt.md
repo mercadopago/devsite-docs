@@ -2,15 +2,15 @@
   indexable: false
 ---
 
-# Vincular access token del pagador al dispositivo utilizado
+# Vincular access token do pagador com o dispositivo utilizado
 
 > WARNING
 >
 > Importante
 >
-> Este paso es solo para integraciones Mobile y es **requerido**.
+> Este passo é apenas para integrações Mobile e é  **requerido**.
 
-Se debe recolectar información (fingerprint) del dispositivo mobile utilizado en la autenticación y enviarla a la API de DeviceSessions.
+As informações (fingerprint) do dispositivo mobile utilizado na autenticação devem ser coletadas e encaminhadas à API de DeviceSessions.
 
 #### Request
 ```curl
@@ -41,6 +41,6 @@ curl -X POST \
 
 > NOTE
 > 
-> Nota
+> OBS
 > 
-> Ver [referencia](https://www.mercadopago.com.ar/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) al ejemplo completo de Fingerprint e implementación mediante SDK. 
+> Ver [referência](https://www.mercadopago.com.br/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) ao exemplo completo de Fingerprint e implementação mediante SDK. 
