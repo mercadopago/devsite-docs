@@ -332,7 +332,7 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Smart Ch
 >
 > Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
---- <br/>
+---
 
 ### Próximos pasos
 

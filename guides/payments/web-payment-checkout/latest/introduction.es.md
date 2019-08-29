@@ -41,7 +41,7 @@ Pago con dos tarjetas					           |      ✔      |                     |
 >
 > Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
---- <br/>
+---
 
 ### Próximos pasos
 

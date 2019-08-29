@@ -125,7 +125,7 @@ Para empezar a cobrar, debes completar el formulario <a href="https://www.mercad
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
----<br/>
+---
 
 ### Próximos pasos
 
