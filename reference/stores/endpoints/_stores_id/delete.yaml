@@ -24,7 +24,7 @@ errors:
         en: user_id must be number.
         es: El usuario debe ser un número.
         pt: 
-   - 'INVALID_STORE_ID':
+  - 'INVALID_STORE_ID':
       description:
         en: store_id must be number.
         es: El store_id debe ser un número.
@@ -36,7 +36,7 @@ errors:
         pt: 
   - 'UNKNOWN_FIELD':
       description:
-        en: "XX" is unknown.
+        en: 
         es: Campo desconocido
         pt: 
 

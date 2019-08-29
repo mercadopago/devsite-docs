@@ -30,7 +30,7 @@ errors:
         pt: 
   - 'UNKNOWN_FIELD':
       description:
-        en: "XX" is unknown.
+        en: 
         es: Campo desconocido
         pt: 
   - 'INVALID_NAME':

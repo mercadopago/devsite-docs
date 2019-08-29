@@ -51,12 +51,12 @@ errors:
         en: 
         es: El campo category debe ser uno válido para el site del usuario.
         pt: 
-   - 'POS_INVALID_STORE_ID':
+  - 'POS_INVALID_STORE_ID':
       description:
         en: 
         es: El campo store_id debe ser numérico.
         pt: 
-   - 'POS_INVALID_EXTERNAL_STORE_ID':
+  - 'POS_INVALID_EXTERNAL_STORE_ID':
       description:
         en: 
         es: El campo external_store_id debe ser String.

@@ -1,3 +1,5 @@
+---
+resource: pos.raml
 samples:
 - curl.sh
 - curl_response.json

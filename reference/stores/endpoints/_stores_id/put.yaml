@@ -20,12 +20,10 @@ errors:
       description:
         en: user_id must be number.
         es: El usuario debe ser un número.
-        pt: 
-
-        pt: 
+        pt:  
   - 'UNKNOWN_FIELD':
       description:
-        en: "XX" is unknown.
+        en: 
         es: Campo desconocido
         pt: 
   - 'INVALID_NAME':
