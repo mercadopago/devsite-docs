@@ -1,19 +1,5 @@
 # ¿Qué es el Reporte de Dinero Disponible?
 
-> INDEX
->
-> En esta página
->
-> - [Introducción](#bookmark_introducción) 
->
-> - [Casos de uso](#bookmark_casos_de_uso)
->
-> - [Cómo usar el reporte](#bookmark_cómo_usar_el_reporte) 
->
->    + [Ejemplos](#bookmark_ejemplos)
->
-
-## Introducción
 
 El Reporte de Dinero Disponible es un **informe descargable** en formato .csv o .xlsx que te permite conocer la liquidez de tu negocio, es decir, cuánto dinero tienes para usar. Contiene el **detalle de los pagos liberados** que están listos para retirar a una cuenta bancaria o invertir en Mercado Pago. 
 
