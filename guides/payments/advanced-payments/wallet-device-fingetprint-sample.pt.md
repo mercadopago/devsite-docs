@@ -52,7 +52,7 @@
 É possível obter a impressão digital de um dispositivo móvel através do Mercado Pago sdk.
 
 Dispositivos [Android](https://github.com/mercadopago/px-android)
-```curl
+```android
 new Device(context);
 ```
 
