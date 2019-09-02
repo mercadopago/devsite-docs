@@ -25,87 +25,22 @@ Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás desca
 
 Dependiendo de [los plazos y tasas que elijas,](https://www.mercadopago.com/mla/settings/release-options) el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Por esta razón, el valor total que verás en el reporte no siempre va a coincidir con tu saldo total o con el valor que veas en los reportes de facturación.
 
-> NOTE
->
-> Nota
->
+
 > Para saber la fecha exacta en que estará disponible el dinero de una operación, revisa el [detalle de tus cobros acreditados.](https://www.mercadopago.com.ar/activities/balance)
 
 Esos plazos tienen que ver con los tiempos de los bancos o por los flujos de intermediación cuando las operaciones se realizan en Mercado Libre. Otras operaciones que pueden afectar la liberación de tu dinero son los Contracargos y Reclamos que puedas recibir por una venta.
 
-## Casos de uso
+## Para qué usar el reporte
 
-Por lo general, **este reporte se usa para conciliar** los retiros de dinero e incluye las transacciones que lo componen. 
+Por lo general, **este reporte se usa para conciliar** los retiros de dinero e incluye las transacciones que lo componen.
 
-Generamos un Reporte de Dinero Disponible en estas tres situaciones: 
-1. Cada vez que lo generas manualmente. 
+Puedes generar un Reporte de Dinero Disponible en tres instancias:
+1. Cada vez que lo generas manualmente.
 1. De forma programada, según tus ajustes.
-1. Con cada retiro de dinero a una cuenta bancaria. 
+1. Con cada retiro de dinero a una cuenta bancaria.
 
-Usa el Reporte de Dinero Disponible en estos casos: 
-1. Cuando quieras tener un informe de liquidez de la cuenta.
-1. Para conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional.
-1. Conciliación mensual o periódica con el detalle de los movimientos que generan saldo disponible para retirar.
-1. Para conocer:
-    + El historial de dinero disponible entre dos fechas o dos retiros. 
-    + El detalle de los eventos que componen un retiro automático o manual, total o parcial. 
-    + El detalle de disputas, reembolsos, shipping, contracargos, impuestos y otras operaciones que afecten el dinero disponible.
-    + El detalle de las cuotas liberadas y de las operaciones “En cuotas”.
+Usa el Reporte de Dinero Disponible **cuando quieras tener un informe de liquidez de la cuenta,** conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional o para **conciliar mensual y periódicamente con el detalle de los movimientos** que generan un saldo disponible para retirar. 
 
+Además, puedes usar el reporte para conocer el historial de dinero disponible entre dos fechas o dos retiros de dinero, el detalle de los eventos que componen un retiro automático o manual (total o parcial), el detalle de disputas, reembolsos, *shipping*, contracargos, impuestos y otras operaciones que afecten el dinero disponible y el detalle de las cuotas liberadas y las cuotas que aún faltan saldar. 
 
-## Cómo usar el reporte
-
-Para leer el reporte te recomendamos usar un archivo .csv y que revises la configuración de los caracteres. Debe estar en formato UTF-8. Compruébalo en los ajustes de tu planilla de cálculo (Excel, LibreOffice Calc, etc):
-
-![Reporte de dinero disponible excel Mercado Pago](/images/manage-account/reports/excel-es.png)
-<p style="text-align:center;font-size:12px;">Ejemplo en Excel </p>
-
-![Reporte de dinero disponible Open Office Mercado Pago](/images/manage-account/reports/open-office-es.png)
-<p style="text-align:center;font-size:12px;">Ejemplo en Open Office </p>
-
-
-El reporte contiene 4 secciones:
-1. Balance Inicial `Initial Available Balance`.
-1. Detalle de Liberaciones de dinero `Releases`.
-1. Bloqueos de dinero por disputas `Block`.
-1. Desbloqueos por la resolución de la disputa `Unblock`.
-
-Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
-
-> Subtotal `release` - Subtotal `block` + Subtotal `unblock` = resultado total
-
-Revisa el [Glosario completo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money-reports-glossary)
-
-Reflejamos los conceptos contables universales del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
-
-> NOTE
->
-> Nota
->
-> Tu haber lo verás en la columna `NET_CREDIT`
->
-> Tu deber estará en la columna `NET_DEBIT`
-
-Verás el dinero disponible de las operaciones liberadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
-
-**¿Qué pasa si un retiro falla?**
-
-Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT`.
-
-### Ejemplos
-
-Observa cómo está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
-
-![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
-
-La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible. Si quieres menos detalle o hay columnas que no te sirven para la conciliación, puedes modificar cuáles incluir y cuáles no en Ajustes.  
-
-> WARNING
-> 
-> Importante
->
-> **Diferencias entre retiro parcial y retiro total.**
-> 
-> Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
->
->Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
+> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
