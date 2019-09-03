@@ -29,6 +29,10 @@ Verás una sección de **subtotales** por cada bloque y, finalmente, el **result
 
 <p style="text-align:center" >Subtotal <span style="background:#eee">release</span> - Subtotal <span style="background:#eee">block</span> + Subtotal <span style="background:#eee">unblock</span> = resultado total</p>
 
+> NOTE
+>
+> Nota
+>
 > Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.
 
 Reflejamos los conceptos contables universales del debe (dinero que tienes que pagar) y haber (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  

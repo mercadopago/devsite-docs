@@ -43,4 +43,8 @@ Usa el Reporte de Dinero Disponible **cuando quieras tener un informe de liquide
 
 Además, puedes usar el reporte para conocer el historial de dinero disponible entre dos fechas o dos retiros de dinero, el detalle de los eventos que componen un retiro automático o manual (total o parcial), el detalle de disputas, reembolsos, *shipping*, contracargos, impuestos y otras operaciones que afecten el dinero disponible y el detalle de las cuotas liberadas y las cuotas que aún faltan saldar. 
 
+> NOTE
+>
+> Nota
+>
 > Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.

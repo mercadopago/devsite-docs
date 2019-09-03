@@ -20,6 +20,10 @@
 
 Ganá tiempo programando la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
 
+> NOTE
+>
+> Nota
+>
 > Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.
 
 ## Atributos configurables

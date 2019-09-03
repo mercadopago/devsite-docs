@@ -60,4 +60,8 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 | Configuración disponible vía API | -  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> -  Separador decimal (coma o punto)<br/> -  Notificación por e-mail<br/> -  Retiro al final del reporte (opcional) <br/> |
 
 
+> NOTE
+>
+> Nota
+>
 > Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.

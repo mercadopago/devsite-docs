@@ -29,6 +29,10 @@ Sigue estos pasos para generar tus reportes:
 1. Ingresa en la sección de Dinero Disponible y haz click en ‘Generar reporte’.
 1. Busca los retiros por **período de tiempo** y selecciona el retiro quieras conciliar.<br/><br/>¡Y listo! Vas a ver tu reporte en preparación.
 
+> NOTE
+>
+> Nota
+>
 > Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.
 
 

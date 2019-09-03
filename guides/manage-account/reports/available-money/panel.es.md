@@ -13,4 +13,8 @@ Sigue estos pasos para generar tus reportes:
 
 También podrás programar la generación de estos reportes [por cada retiro](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/withdrawal) de dinero.
 
+> NOTE
+>
+> Nota
+>
 > Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.
