@@ -248,7 +248,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 
 [[[
 ```php
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="<?php echo $preference->id; ?>">
@@ -256,7 +256,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="$$id$$">
@@ -264,7 +264,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```java
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="${preference.id}">
@@ -272,7 +272,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```ruby
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="%= @init_point %>">
@@ -280,7 +280,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```csharp
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="@Html.DisplayFor(model => model.id)">

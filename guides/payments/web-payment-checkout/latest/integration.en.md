@@ -248,7 +248,7 @@ Finally, add the following code to show the payment button of your Smart Checkou
 
 [[[
 ```php
-<form action="/procesar-pago" method="POST">
+<form action="/payment-process" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="<?php echo $preference->id; ?>">
@@ -256,7 +256,7 @@ Finally, add the following code to show the payment button of your Smart Checkou
 </form>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
+<form action="/payment-process" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="$$id$$">
@@ -264,7 +264,7 @@ Finally, add the following code to show the payment button of your Smart Checkou
 </form>
 ```
 ```java
-<form action="/procesar-pago" method="POST">
+<form action="/payment-process" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="${preference.id}">
@@ -272,7 +272,7 @@ Finally, add the following code to show the payment button of your Smart Checkou
 </form>
 ```
 ```ruby
-<form action="/procesar-pago" method="POST">
+<form action="/payment-process" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="%= @init_point %>">
@@ -280,7 +280,7 @@ Finally, add the following code to show the payment button of your Smart Checkou
 </form>
 ```
 ```csharp
-<form action="/procesar-pago" method="POST">
+<form action="/payment-process" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="@Html.DisplayFor(model => model.id)">
@@ -290,14 +290,14 @@ Finally, add the following code to show the payment button of your Smart Checkou
 ]]]
 
 
-#### Excellent! You finished your integration.
-_Click on the link within your site and [test the integration of your Smart Checkout.](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
-
 > WARNING
 >
 > Important
 >
 > Do not forget to access from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
+
+#### Excellent! You finished your integration.
+_Click on the link within your site and [test the integration of your Smart Checkout.](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > NOTE
 >
