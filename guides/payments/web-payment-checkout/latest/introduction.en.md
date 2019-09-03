@@ -43,7 +43,7 @@ Payment with two cards		           |      ✔      |                     |
 
 ---
 
-### Próximos pasos
+### Next steps
 
 > LEFT_BUTTON_REQUIRED
 >
