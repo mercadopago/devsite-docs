@@ -304,30 +304,6 @@ _Clique no link dentro do seu site e [teste a integração do seu Smart Checkout
 >
 > Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [seção de Smart Checkout antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
-### Próximos passos
-
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Teste sua integração<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Confira se está tudo em ordem na sua integração com os usuários de teste.</p>
-</blockquote>
-</a>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Otimize sua integração e melhore o gerenciamento das suas vendas.</p>
-</blockquote>
-</a>   
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 ---
 
 ### Próximos passos

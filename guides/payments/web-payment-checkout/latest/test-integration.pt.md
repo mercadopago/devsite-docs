@@ -123,7 +123,7 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve preencher o formulário <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Quero ir para produção</a>.
+Para começar a cobrar, você deve preencher o formulário <a href="https://www.mercadopago.com/mlb/account/credentials/" target="_blank"> Quero ir para produção</a>.
 
 Ao terminar o formulário, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
