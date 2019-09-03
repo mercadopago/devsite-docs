@@ -4,7 +4,7 @@
 
 # Fingerprint
 
-#### Ejemplo completo de Fingerprint para enviar a la API de DeviceSessions
+#### Complete example of Fingerprint to send to DeviceSessions API.
 
 ```json
 {
@@ -47,16 +47,16 @@
 }
 ```
 
-#### Ejemplo de Fingerprint mediante SDK
+#### Example of Fingerprint via SDK
 
-Es posible obtener el fingerprint de un dispositivo mobile mediante el sdk de Mercado Pago.
+It’s possible to get a fingerprint from a mobile device via Mercado Pago SDK.
 
-Dispositivos [Android](https://github.com/mercadopago/px-android)
+Device [Android](https://github.com/mercadopago/px-android)
 ```android
 new Device(context);
 ```
 
-Dispositivos [IOS](https://github.com/mercadopago/px-ios)
+Device [IOS](https://github.com/mercadopago/px-ios)
 ```ios
 Device()
 ```

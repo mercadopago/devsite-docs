@@ -4,7 +4,7 @@
 
 # Device Mobile Nativo
 
-El integrador debe recolectar información del fingerprint y enviarla a la API de `DeviceSession` Aantes de enviar la petición para procesar el pago.
+O integrador deve coletar informações do fingerprint e encaminhá-las para a API de DeviceSession antes de enviar o requerimento para processar o pagamento.
 
 #### Request
 ```curl
@@ -35,8 +35,7 @@ curl -X POST \
 
 #### Response
 
-
-La respuesta exitosa será un `HTTP Status 200 OK`y devolverá el advanced payment completo. De lo contrario devolverá el `HTTP Status` correspondiente al error y un mensaje aclaratorio.
+A resposta exitosa será um `HTTP Status 200 OK` e restituirá o advanced payment completo. Do contrário, restituirá o `HTTP Status` correspondente ao erro e uma mensagem esclarecedora.
 
 ```json
 {
@@ -49,11 +48,11 @@ La respuesta exitosa será un `HTTP Status 200 OK`y devolverá el advanced payme
 
 > NOTE
 > 
-> Nota
+> OBS.
 > 
-> Ver [referencia](https://www.mercadopago.com.ar/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) al ejemplo completo de Fingerprint e implementación mediante SDK.
+> Ver [referência](https://www.mercadopago.com.ar/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) ao exemplo completo de Fingerprint e implementação mediante SDK.
 
-Se debe capturar el valor `id` de la respuesta para enviar luego en el header `X-Device-Session-Id`.
+O valor `id` da resposta deve ser capturado para ser depois enviado no header `X-Device-Session-Id`.
 
 #### Request
 ```curl
