@@ -170,30 +170,6 @@ data-button-label="Comprar"
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
-### Próximos passos
-
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Outras funcionalidades</p>
- <p>Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.</p>
-</blockquote>
-</a>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
-</blockquote>
-</a>   
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 ---
 
 ### Próximos passos

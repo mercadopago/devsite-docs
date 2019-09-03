@@ -4,6 +4,14 @@ sites_supported:
   - mlb
 ---
 
+> WARNING
+>
+> Note
+>
+> This documentation refers to the new version of the Smart Checkout.
+>
+> Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+
 # Smart Checkout
 
 Mercado Pago provides you with the necessary tools so that you can receive payments using our web form in a simple, fast and safe way.

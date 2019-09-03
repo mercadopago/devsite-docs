@@ -4,6 +4,14 @@ sites_supported:
   - mlb
 ---
 
+> WARNING
+>
+> Note
+>
+> This documentation refers to the new version of the Smart Checkout.
+>
+> Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+
 # Test the Integration
 
 Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected in the checkout.
