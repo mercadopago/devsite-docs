@@ -21,9 +21,9 @@ Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de c
 Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas:
 
 * Desde un link de descarga que te enviaremos por mail.
-* Desde tu cuenta de Mercado Pago, en [Reportes de Dinero Disponible.](https://www.mercadopago.com/mla/balance/reports?page=1#!/bank-report)
+* Desde tu cuenta de Mercado Pago, en [Reportes de Dinero Disponible.](https://www.mercadopago.com.ar/balance/reports?page=1#!/bank-report)
 
-Dependiendo de [los plazos y tasas que elijas,](https://www.mercadopago.com/mla/settings/release-options) el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Por esta razón, el valor total que verás en el reporte no siempre va a coincidir con tu saldo total o con el valor que veas en los reportes de facturación.
+Dependiendo de [los plazos y tasas que elijas,](https://www.mercadopago.com.ar/settings/release-options) el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Por esta razón, el valor total que verás en el reporte no siempre va a coincidir con tu saldo total o con el valor que veas en los reportes de facturación.
 
 
 > Para saber la fecha exacta en que estará disponible el dinero de una operación, revisa el [detalle de tus cobros acreditados.](https://www.mercadopago.com.ar/activities/balance)

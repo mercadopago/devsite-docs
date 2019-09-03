@@ -27,7 +27,7 @@ El reporte contiene 4 secciones:
 
 Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
 
-<p style="text-align:center" >Subtotal `release` - Subtotal `block` + Subtotal `unblock` = resultado total</p>
+<p style="text-align:center" >Subtotal <span style="background:#eee">release</span> - Subtotal <span style="background:#eee">block</span> + Subtotal <span style="background:#eee">unblock</span> = resultado total</p>
 
 > Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.
 
