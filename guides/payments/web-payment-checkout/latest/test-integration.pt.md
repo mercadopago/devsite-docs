@@ -123,30 +123,26 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve preencher o formulário <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Quero ir para produção</a>.
+Para começar a cobrar, você deve preencher o formulário <a href="https://www.mercadopago.com/mlb/account/credentials/" target="_blank"> Quero ir para produção</a>.
 
 Ao terminar o formulário, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
+---
+
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
-</blockquote>
-</a>   
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Customizações</p>
- <p>Adapte o estilo da sua marca na experiência de compra.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_RECOMMENDED
+>
+> Integração avançada
+>
+> Otimize sua integração e melhore o gerenciamento de suas vendas.
+>
+> [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED
+>
+> Customizações
+>
+> Adapte o estilo da sua marca na experiência de compra.
+>
+> [Prueba](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/)

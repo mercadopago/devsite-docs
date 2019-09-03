@@ -311,30 +311,23 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 
 <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/" target="_blank"> Gestionar contracargos</a>
 
+---
+
 ### Próximos pasos
 
-<div>
-  <div>
-  <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
-    <blockquote class="next-step-card">
-      <p class="card-note-title next-step-card-left">Otras funcionalidades</p>
-      <p>Configura tus pago y adapta Smart Checkout a tu negocio.</p>
-    </blockquote>
-  </a>
-  </div>
-  <div>   
-  <a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
-    <blockquote class="next-step-card next-step-card-right">
-      <p class="card-note-title">Personalizaciones</p>
-      <p>Adapta el estilo de tu marca en la experiencia de compra.</p>
-    </blockquote>
-  </a>
-  </div>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON
+>
+> Otras funcionalidades
+>
+> Configura tus pago y adapta Smart Checkout a tu negocio.
+>
+> [Configurations](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
+
+> RIGHT_BUTTON
+>
+> Personalizaciones
+>
+> Adapta el estilo de tu marca en la experiencia de compra.
+>
+> [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)

@@ -125,26 +125,22 @@ Para empezar a cobrar, debes completar el formulario <a href="https://www.mercad
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
+---
+
 ### Próximos pasos
 
-<div>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
-</blockquote>
-</a>   
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Personalizaciones</p>
- <p>Adapta el estilo de tu marca en la experiencia de compra.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_RECOMMENDED
+>
+> Integración avanzada
+>
+> Optimiza tu integración y mejora la gestión de tus ventas.
+>
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED
+>
+> Personalizaciones
+>
+> Adapta el estilo de tu marca en la experiencia de compra.
+>
+> [Prueba](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)

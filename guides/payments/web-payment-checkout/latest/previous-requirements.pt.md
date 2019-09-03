@@ -82,28 +82,24 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [sessão de Smart Checkout antiga](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [sessão de Smart Checkout antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+
+---
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integre o Smart Checkout<span class="card-status-tag card-status-tag-required">OBRIGATORIO</span></p>
- <p>Siga o passo a passo para começar a receber pagamentos no seu site.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Teste a sua integração<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Confira se está tudo em ordem na sua integração com os usuários de teste.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_REQUIRED
+>
+> Integre o Smart Checkout
+>
+> Siga o passo a passo para começar a receber pagamentos no seu site.
+>
+> [Integre o Smart Checkout](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
+
+> RIGHT_BUTTON_RECOMMENDED
+>
+> Teste a sua integração
+>
+> Confira se está tudo em ordem na sua integração com os usuários de teste.
+>
+> [Teste a sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)

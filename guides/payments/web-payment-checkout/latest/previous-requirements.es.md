@@ -85,26 +85,22 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
+---
+
 ### Próximos pasos
 
-<div>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integra Smart Checkout<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Sigue el paso a paso para comenzar a recibir pagos en tu sitio.</p>
-</blockquote>
-</a>    
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Prueba tu integración<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Revisa que esté todo bien en tu integración con los usuarios de prueba.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_REQUIRED
+>
+> Integra Smart Checkout
+>
+> Sigue el paso a paso para comenzar a recibir pagos en tu sitio.
+>
+> [Integra](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration/)
+
+> RIGHT_BUTTON_RECOMMENDED
+>
+> Prueba tu integración
+>
+> Revisa que esté todo bien en tu integración con los usuarios de prueba.
+>
+> [Prueba](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
