@@ -47,20 +47,15 @@ Pagamento com dois cartões		           |      ✔      |                     |
 > Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [sessão de Smart Checkout antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
 
+---
+
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Requisitos para integrar<span class="card-status-tag card-status-tag-required">OBRIGATORIO</span></p>
- <p>Para realizar a integração, você deve atender os requisitos necessários.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_REQUIRED
+>
+> Requisitos para integrar
+>
+> Para realizar a integração, você deve atender os requisitos necessários.
+>
+> [Requisitos para integrar](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements/)
+>

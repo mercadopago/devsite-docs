@@ -356,26 +356,22 @@ curl -X POST \
 ```
 ]]]
 
+---
+
 ### Próximos passos
 
-<div>
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
-</blockquote>
-</a>   
-<a href="http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Customizações</p>
- <p>Adapte o estilo da sua marca na experiência de compra.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_REQUIRED
+>
+> Integração avançada
+>
+> Otimize sua integração e melhore o gerenciamento de suas vendas.
+>
+> [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED
+>
+> Customizações
+>
+> Adapte o estilo da sua marca na experiência de compra.
+>
+> [Customizações](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/)

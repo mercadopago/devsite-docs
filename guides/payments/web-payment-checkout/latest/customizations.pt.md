@@ -193,3 +193,24 @@ data-button-label="Comprar"
 <br/>
 <br/>
 <br/>
+
+---
+
+### Próximos passos
+
+
+> LEFT_BUTTON_RECOMMENDED
+>
+> Outras funcionalidades
+>
+> Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.
+>
+> [Outras funcionalidades](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
+
+> RIGHT_BUTTON_RECOMMENDED
+>
+> Integração avançada
+>
+> Otimize sua integração e melhore o gerenciamento de suas vendas.
+>
+> [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
