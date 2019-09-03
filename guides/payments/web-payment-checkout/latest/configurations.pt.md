@@ -360,7 +360,7 @@ curl -X POST \
 
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Integração avançada
 >

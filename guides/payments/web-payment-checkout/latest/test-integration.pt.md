@@ -131,7 +131,7 @@ Ao terminar o formulário, certifique-se de que as credenciais na sua integraç�
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Integração avançada
 >

@@ -356,7 +356,7 @@ curl -X POST \
 
 ### Próximos pasos
 
-> LEFT_BUTTON_REQUIRED
+> LEFT_BUTTON_REQUIRED_ES
 >
 > Integración avanzada
 >

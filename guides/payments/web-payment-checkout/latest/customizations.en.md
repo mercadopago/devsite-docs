@@ -175,7 +175,7 @@ data-button-label="Buy"
 ### Next steps
 
 
-> LEFT_BUTTON_RECOMMENDED
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > Other functionalities
 >

@@ -129,7 +129,7 @@ Al terminar el formulario, verifica que las credenciales en tu integración sean
 
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED
+> LEFT_BUTTON_RECOMMENDED_ES
 >
 > Integración avanzada
 >

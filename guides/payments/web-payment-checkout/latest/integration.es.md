@@ -336,7 +336,7 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Smart Ch
 
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED
+> LEFT_BUTTON_RECOMMENDED_ES
 >
 > Prueba tu integración
 >

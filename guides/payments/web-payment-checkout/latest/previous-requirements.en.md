@@ -34,7 +34,7 @@ To continue, check the necessary prerequisites:
 
 ### 1. Access to the Mercado Pago or Mercado Libre account
 In order to start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account.**.
-If you don't have one yet, you can <a href="https://www.mercadopago.com.ar/" target="_blank"> crear una cuenta de Mercado create a Mercado Pago account</a> whenever you want.
+If you don't have one yet, you can <a href="https://www.mercadopago.com.ar/" target="_blank"> create a Mercado Pago account</a> whenever you want.
 
 ### 2. Installations of Mercado Pago SDK
 **Install the official SDK** to simplify your interaction with our APIs.
@@ -84,10 +84,12 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 > Note
 >
 > This documentation refers to the new version of the Smart Checkout. **To view the previous version**, go to the [old Smart Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
+ 
+ ---
 
 ### Next steps
 
-> LEFT_BUTTON_REQUIRED
+> LEFT_BUTTON_REQUIRED_EN
 >
 > Integrate Smart Checkout
 >
