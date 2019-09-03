@@ -51,7 +51,7 @@ Pagamento com dois cartões		           |      ✔      |                     |
 
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Requisitos para integrar
 >

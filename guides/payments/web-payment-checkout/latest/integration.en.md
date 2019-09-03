@@ -309,7 +309,7 @@ _Click on the link within your site and [test the integration of your Smart Chec
 
 ### Next steps
 
-> LEFT_BUTTON_RECOMMENDED
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > Test your integration
 >

@@ -308,7 +308,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Smart Checkout
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Teste sua integração
 >

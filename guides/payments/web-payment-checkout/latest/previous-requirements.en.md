@@ -89,7 +89,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ### Next steps
 
-> LEFT_BUTTON_REQUIRED
+> LEFT_BUTTON_REQUIRED_EN
 >
 > Integrate Smart Checkout
 >

@@ -129,7 +129,7 @@ Upon completing the form, verify that the credentials in your integration are th
 
 ### Next steps
 
-> LEFT_BUTTON_RECOMMENDED
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > Advanced integration
 >
