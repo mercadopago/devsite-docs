@@ -6,7 +6,7 @@
 >
 > [Canales de generación de reportes](#bookmark_canales_de_generación)
 >
-> [Cómo está compuesto el reporte de Dinero Disponible](#bookmark_cómo_está_compuesto_el_reporte)
+> [Cómo está compuesto el reporte de Dinero Disponible](#bookmark_composición_de_un_reporte)
 
 
 ## Canales de generación

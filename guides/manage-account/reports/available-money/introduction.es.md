@@ -5,7 +5,7 @@
 >
 > En esta página
 >
-> [Para qué usar el reporte de Dinero Disponible](#bookmark_para_qué_usar_el_report)
+> [Para qué usar el reporte de Dinero Disponible](#bookmark_para_qué_usar_el_reporte)
 >
 
 

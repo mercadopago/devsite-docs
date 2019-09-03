@@ -5,8 +5,8 @@ Mercado Pago reports are downloadable reports in .xlsx or .csv format that allow
 With these reports we seek to cover the different needs of our users: 
 
 * Accounting Reports
-    + [Money available](https://www.mercadopago.com/developers/en/guides/manage-account/reports/available-money-reports/)
-    + [Money in the account](https://www.mercadopago.com/developers/en/guides/manage-account/reports/account-money-reports/)
+    + [Money available](https://www.mercadopago.com/developers/en/guides/manage-account/reports/available-money/introduction/)
+    + [Money in the account](https://www.mercadopago.com/developers/en/guides/manage-account/reports/account-money/introduction/)
 
 * Transaction Reports
     + Withdrawals

@@ -32,7 +32,7 @@ Sigue estos pasos para generar tus reportes:
 > Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.
 
 
-## Generar vía API
+## Generar por API
 
 Actualiza el atributo `execute_after_withdrawal` con el valor `true`. Y ¡listo! Generarás un reporte por cada retiro de dinero que hagas.
 

@@ -5,7 +5,7 @@
 >
 > En esta página
 >
-> [¿Qué contiene el reporte?](#bookmark_qué_contiene_el_reporte)
+> [¿Qué contiene el reporte?](#bookmark_¿qué_contiene_el_reporte?)
 >
 > [Ejemplo de un reporte](#bookmark_ejemplo_de_un_reporte)
 
