@@ -93,7 +93,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Follow the step by step to start receiving payments on your website.
 >
-> [Integra](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/integration/)
+> [Integrate Smart Checkout](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/integration/)
 
 > RIGHT_BUTTON_RECOMMENDED
 >
