@@ -2,7 +2,7 @@
 
 Esta biblioteca fornece um conjunto de classes e métodos para interagir com a API do Mercado Pago.
 
-## Instalação 
+## Instalação
 
 ### Usando Maven
 1. Anexe dependências do MercadoPago para pom.xml
@@ -24,14 +24,14 @@ Esta biblioteca fornece um conjunto de classes e métodos para interagir com a A
 
 1. Importar as classes básicas de Mercado Pago. `import import com.mercadopago.*;`
 2. Configure suas credenciais.
-  - **Para Web-checkout:**
+  - **Para Smart Checkout:**
     ```java
       MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
       MercadoPago.SDK.setClientId("CLIENT_ID_OK");
     ```
   - **Para API or Custom-checkout:**
     ```java
-      MercadoPago.SDK.setAccessToken("ACCESS_TOKEN"); 
+      MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```
 3. Usando objetos de recursos.
 
@@ -69,4 +69,3 @@ Esta biblioteca fornece um conjunto de classes e métodos para interagir com a A
       }
   }
 ```
- 

@@ -32,7 +32,7 @@ Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações pa
 ```
 
 2. Configure suas crecenciais.
--**Para Web-checkout:**
+-**Para Smart Checkout:**
 
 ```csharp
  MercadoPago.SDK.ClientId = "YOUR_CLIENT_ID";

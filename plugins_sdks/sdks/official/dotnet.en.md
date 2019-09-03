@@ -29,7 +29,7 @@ This library provides developers with a simple set of bindings to the Mercado Pa
  using MercadoPago;
 ```
 2. Setup your credentials
--**For Web-checkout:**
+-**For Smart Checkout:**
 ```csharp
  MercadoPago.SDK.ClientId = "YOUR_CLIENT_ID";
  MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
