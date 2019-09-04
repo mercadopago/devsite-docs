@@ -12,11 +12,11 @@ sites_supported:
 >
 >
 >
-> [Redirect scheme](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+> [Redirect scheme](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_redirect_scheme)
 >
-> [Colors](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_colores)
+> [Colors](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_colors)
 >
-> [Buttons](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_botones)
+> [Buttons](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_buttons)
 
 ## Redirect Scheme
 
@@ -189,4 +189,4 @@ data-button-label="Buy"
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago.com.ar/developers/e/guides/payments/web-payment-checkout/advanced-integration/)

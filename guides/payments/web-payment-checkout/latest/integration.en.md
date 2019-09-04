@@ -12,9 +12,9 @@ sites_supported:
 >
 >
 >
-> [How do I integrate?](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/integration#bookmark_como_me_integro?)
+> [How do I integrate?](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/integration#bookmark_how_do_i_integrate?)
 >
-> [Steps to integrate](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/integration#bookmark_etapas_para_se_integrar)
+> [Steps to integrate](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/integration#bookmark_steps_to_integrate)
 
 
 ## How do I integrate?

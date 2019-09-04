@@ -12,15 +12,15 @@ sites_supported:
 >
 >
 >
-> [Receive payment notifications](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_recibe_notificaciones_de_pagos)
+> [Receive payment notifications](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_receive_payment_notifications)
 >
-> [Additional information for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/#bookmark_información_adicional_para_la_preferencia)
+> [Additional information for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/#bookmark_additional_information_for_preference)
 >
-> [Return URL](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
+> [Return URL](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_return_url)
 >
-> [Cancellations and returns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelaciones_y_devoluciones)
+> [Cancellations and returns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancellations_and_returns)
 >
-> [Manage chargebacks](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_gestiona_contracargos)
+> [Manage chargebacks](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_manage_chargebacks)
 
 
 ## Receive Payment Notifications

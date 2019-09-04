@@ -12,15 +12,15 @@ sites_supported:
 >
 >
 >
-> [How to test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_mi_integración)
+> [How to test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_test_your_integration)
 >
-> [How to create users](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
+> [How to create users](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_create_users)
 >
-> [Test the payment flow](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
+> [Test the payment flow](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_the_payment_flow)
 >
-> [Test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
+> [Test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_cards)
 >
-> [Start receiving payments](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
+> [Start receiving payments](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_start_receiving_payments)
 
 
 ## How to test my integration

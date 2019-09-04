@@ -12,9 +12,9 @@ sites_supported:
 >
 >
 >
-> [Example of a complete preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
+> [Example of a complete preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_example_of_a_complete_preference)
 >
-> [Attributes for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
+> [Attributes for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_preference)
 
 You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
