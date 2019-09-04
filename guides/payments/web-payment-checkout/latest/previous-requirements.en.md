@@ -12,9 +12,9 @@ sites_supported:
 >
 >
 >
-> [Glossary](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_glosario)
+> [Glossary](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_glossary)
 >
-> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_requisitos_previos)
+> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_previous_requirements)
 
 ## Glossary
 

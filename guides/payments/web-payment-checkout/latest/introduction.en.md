@@ -51,5 +51,5 @@ Payment with two cards		           |      ✔      |                     |
 >
 > To integrate, you have to meet the necessary requirements.
 >
-> [Requirements to integrate](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/previous-requirements/)
+> [Requirements to integrate](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements/)
 >

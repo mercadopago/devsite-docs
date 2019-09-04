@@ -12,15 +12,15 @@ sites_supported:
 >
 >
 >
-> [How to test your integration](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_mi_integración)
+> [How to test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_test_your_integration)
 >
-> [How to create users](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
+> [How to create users](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_create_users)
 >
-> [Test the payment flow](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
+> [Test the payment flow](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_the_payment_flow)
 >
-> [Test cards](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
+> [Test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_cards)
 >
-> [Start receiving payments](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
+> [Start receiving payments](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_start_receiving_payments)
 
 
 ## How to test my integration
@@ -135,7 +135,7 @@ Upon completing the form, verify that the credentials in your integration are th
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced integration](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
+> [Advanced integration](http://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -143,4 +143,4 @@ Upon completing the form, verify that the credentials in your integration are th
 >
 > Adapt the style of your brand in the buying experience.
 >
-> [Customization](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/)
+> [Customization](http://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/customizations/)
