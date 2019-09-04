@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Integra Smart Checkout
@@ -218,7 +222,7 @@ preference.Items.Add(
   {
     Title = "Mi producto",
     Quantity = 1,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   }
 );

@@ -2,6 +2,10 @@
 sites_supported:
   - mlb
   - mla
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # O que é o Smart Checkout?

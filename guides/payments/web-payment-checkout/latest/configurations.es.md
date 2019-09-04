@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Otras funcionalidades
@@ -28,7 +32,7 @@ Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos t
         {
             "id": "item-ID-1234",
             "title": "Mi producto",
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
             "description": "Descripción del Item",
             "category_id": "art",
@@ -248,11 +252,11 @@ var preference = {
   items: [
       { title: 'Mi producto',
       quantity: 1,
-      currency_id: 'ARS',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 75.56 },
 	{ title: 'Mi producto 2’,
       quantity: 2,
-      currency_id: 'ARS',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 96.56 }
     ]
 };
@@ -273,14 +277,14 @@ Item item1 = new Item();
 item1.setId("1234")
     .setTitle("Producto 1")
     .setQuantity(2)
-    .setCurrencyId("ARS")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 75.56);
 
 Item item2 = new Item();
 item2.setId("12")
     .setTitle("Producto 2")
     .setQuantity(1)
-    .setCurrencyId("ARS")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 75.56);
 
 preference.appendItem(item1, item2);
@@ -315,14 +319,14 @@ reference.Items.Add(
   {
     Title = "Mi producto",
     Quantity = 1,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   },
   new Item()
   {
     Title = "Mi producto2”,
     Quantity = 2,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)96.56
   }
 );

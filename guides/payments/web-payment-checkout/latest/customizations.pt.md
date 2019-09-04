@@ -2,6 +2,10 @@
 sites_supported:
   - mlb
   - mla
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Customizações
