@@ -317,7 +317,7 @@ _Click on the link within your site and [test the integration of your Smart Chec
 >
 > [Test your integration](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
 > Advanced integration
 >

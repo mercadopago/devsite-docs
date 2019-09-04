@@ -153,7 +153,7 @@ data-button-label="Comprar"
 >
 > [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Integración avanzada
 >

@@ -183,7 +183,7 @@ data-button-label="Buy"
 >
 > [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
 > Advanced Integration
 >

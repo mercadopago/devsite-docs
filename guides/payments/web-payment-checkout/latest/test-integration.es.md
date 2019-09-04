@@ -137,7 +137,7 @@ Al terminar el formulario, verifica que las credenciales en tu integración sean
 >
 > [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Personalizaciones
 >

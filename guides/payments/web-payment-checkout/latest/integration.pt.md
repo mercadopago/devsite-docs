@@ -316,7 +316,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Smart Checkout
 >
 > [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Integração avançada
 >
