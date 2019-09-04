@@ -189,4 +189,4 @@ data-button-label="Buy"
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/)

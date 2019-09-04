@@ -39,7 +39,7 @@ Installing the Smart Checkout consists of two steps:
 
 Write the following code consisting of three parts:
 
-1.1 Add the <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos" target="_blank"> Mercado Pago SDK</a> in your project:
+1.1 Add the <a href="https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos" target="_blank"> Mercado Pago SDK</a> in your project:
 
 [[[
 ```php
@@ -315,7 +315,7 @@ _Click on the link within your site and [test the integration of your Smart Chec
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
+> [Test your integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED
 >
@@ -323,4 +323,4 @@ _Click on the link within your site and [test the integration of your Smart Chec
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced integration](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+> [Advanced integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/)
