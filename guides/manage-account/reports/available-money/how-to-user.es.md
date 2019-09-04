@@ -18,22 +18,23 @@ A esto lo puedes comprobar en los ajustes del programa que uses.
 
 ## ¿Qué contiene el reporte?
 
-El reporte contiene 4 secciones:
-1. Balance Inicial (Initial Available Balance)
-1. Detalle de Liberaciones de dinero (Releases)
-1. Bloqueos de dinero por disputas (Block)
-1. Desbloqueos por la resolución de la disputa (Unblock)
+El reporte está compuesto por:
 
+| Composición del reporte | Descripción |
+| --- | --- |
+| Initial Available Balance | Balance inicial.|
+| Release | El detalle de las liberaciones de dinero que incluye el balance inicial. |
+| Block | Los bloqueos de dinero por disputas. |
+| Unblock | Los desbloqueos por la resolución de las disputas.|
+| Subtotal | Es la suma de las operaciones que componen a cada sección.|
+| Total| Es el resultado final compuesto por la suma de todos los subtotales. <br/><br/>Es decir:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = resultado total |
 
-Verás una sección de **subtotales** por cada bloque y, finalmente, el **resultado total**. A este total lo calculamos sobre los subtotales netos de cada sección, es la suma neta de: 
-
-<p style="text-align:center" >Subtotal <span style="background:#eee">release</span> - Subtotal <span style="background:#eee">block</span> + Subtotal <span style="background:#eee">unblock</span> = resultado total</p>
 
 > NOTE
 >
 > Nota
 >
-> Ten a mano el [Glosario completo](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) para revisarlo cuando lo necesites.
+> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 Reflejamos los conceptos contables universales del debe (dinero que tienes que pagar) y haber (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
  
