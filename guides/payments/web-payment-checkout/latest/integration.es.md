@@ -344,7 +344,7 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Smart Ch
 >
 > [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Integración avanzada
 >

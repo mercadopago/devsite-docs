@@ -96,7 +96,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > [Integre o Smart Checkout](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Teste a sua integração
 >

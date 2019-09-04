@@ -365,7 +365,7 @@ curl -X POST \
 >
 > [Advanced Integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
 > Customization
 >
