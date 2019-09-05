@@ -38,10 +38,7 @@ El reporte está compuesto por:
 
 Reflejamos los conceptos contables universales del debe (dinero que tienes que pagar) y haber (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
  
-> NOTE
->
-> Nota
->
+
 > Tu haber lo verás en la columna `NET_CREDIT`
 >
 > Tu deber estará en la columna `NET_DEBIT`
