@@ -10,24 +10,12 @@
 > [Atributos configurables](#bookmark_atributos_configurables)
 >
 > [Generar de forma manual](#bookmark_generar_de_forma_manual)
-> 1. Generación
-> 1. Búsqueda
-> 1. Descarga<br/>
 >
 > [Generar de forma programada](#bookmark_generar_de_forma_programada)
-> 1. Generación
-> 1. Configuración
-> 1. Descarga
 
 
-Ganá tiempo y automatizá la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
+Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
 
-
-> NOTE
->
-> Nota
->
-> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 ## Configurar tus reportes
 
@@ -452,23 +440,33 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 }
 ```
 
+
+
 ## Atributos configurables
 
-Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
+Conoce los campos que puedes configurar para ajustar tus preferencias:
 
 
 | Campos configurables | Descripción |
 | ----------| ---------------------- |
-| `sftp_info` (opcional) | Indica los datos de subida a SFTP cuando lo necesites. |
-| `separator` (opcional) | Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma (‘,’). |
-| `extended` (opcional) | Incluye el detalle de las comisiones en el reporte. |
-| `refund_detailed` (opcional) | Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago. |
-| `include_withdrawal` (opcional) | Incluir los retiros de dinero en el reporte. |
-| `coupon_detailed` (opcional) | Incluye una columna para mostrar el detalle de los cupones de descuento. |
-| `detailed` | Incluye las columnas para mostrar la comisión de Mercado Pago (mp_fee_amount), financing_fee_amount, etc |
-| `file_name_prefix` | Prefijo que compone el nombre del reporte una vez generado y listo para descargar. |
-| `frequency` | Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type ‘monthly’ al día del mes o ‘weekly’ el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia ‘daily’ (diaria), ‘weekly’ (semanal) y ‘monthly’(mensual). |
-| `scheduled` (read_only) | Campo informativo que indica si ya existen reportes programados en la cuenta de usuario. |
+| `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
+| `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
+| `extended` (opcional) | <br/>Incluye el detalle de las comisiones en el reporte.<br/><br/> |
+| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
+| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
+| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
+| `detailed` | <br/>Incluye las columnas para mostrar la comisión de Mercado Pago (mp_fee_amount), financing_fee_amount, etc <br/><br/>|
+| `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
+| `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
+| `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
+
+
+> NOTE
+>
+> Nota
+>
+> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
 
 
 ## Generar de forma manual
@@ -566,7 +564,7 @@ Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se gener
 
 ### 2. Búsqueda
 
-Consulta la API de esta forma para ver si la generación de reportes quedó lista:
+Consulta la API para ver si la generación de reportes quedó lista:
 
 [[[
 ```curl
@@ -626,7 +624,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`:
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```json
 [
@@ -701,7 +699,7 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` :
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -712,6 +710,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
+
 
 ## Generar de forma programada
 
@@ -804,184 +803,11 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 }
 ```
 
-Detiene la generación automática del reporte. Actualiza el atributo *`scheduled`* en la configuración a *`false`*:
-
-[[[
-```curl
-curl -X DELETE \
-  -H 'accept: application/json' \
-  -H 'content-type: application/json' \
-  'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' \
-```
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'accept' => 'application/json',
-    'content-type' => 'application/json'
-);
-$response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("DELETE");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
-    method: 'DELETE',
-    headers: headers
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
-```
-]]]
-
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
-
-```json
-{
-    "id": 2538023,
-    "begin_date": "2019-07-24T06:00:00Z",
-    "created_from": "schedule",
-    "end_date": "2019-07-25T06:00:00Z",
-    "generation_date": "2019-07-25T02:00:00.000-04:00",
-    "last_modified": "2019-07-24T13:50:10.719-04:00",
-    "report_type": "bank",
-    "retries": 0,
-    "status": "deleted",
-    "user_id": "USER-ID"
-}
-```
-
-
 
 ### 2. Configuración
 
-Ejecuta el curl que necesites para iniciar y cancelar la generación programada de tus reportes.
+Ejecuta el curl que necesites para cancelar la generación programada de tus reportes.
 
-##### Iniciar generación programada
-
-[[[
-```curl
-curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN'
-```
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'accept' => 'application/json',
-    'content-type' => 'application/json'
-);
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("POST");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
-    method: 'POST',
-    headers: headers
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
-```
-]]]
-
-
-Recibirás como respuesta un `HTTP STATUS 201 (Created)`
-
-```json
-{
-    "id": 2787882,
-    "begin_date": "2019-08-15T06:00:00Z",
-    "created_from": "schedule",
-    "end_date": "2019-08-16T06:00:00Z",
-    "generation_date": "2019-08-16T02:00:00.000-04:00",
-    "last_modified": "2019-08-15T15:41:53.681-04:00",
-    "report_type": "bank",
-    "retries": 0,
-    "status": "deleted",
-    "user_id": USER_ID
-}
-```
-
-##### Cancelar generación programada
 
 [[[
 ```curl
@@ -1117,7 +943,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200` (Ok):
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD

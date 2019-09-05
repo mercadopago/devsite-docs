@@ -22,12 +22,12 @@ El reporte está compuesto por:
 
 | Composición del reporte | Descripción |
 | --- | --- |
-| Initial Available Balance | Balance inicial.|
-| Release | El detalle de las liberaciones de dinero que incluye el balance inicial. |
-| Block | Los bloqueos de dinero por disputas. |
-| Unblock | Los desbloqueos por la resolución de las disputas.|
-| Subtotal | Es la suma de las operaciones que componen a cada sección.|
-| Total| Es el resultado final compuesto por la suma de todos los subtotales. <br/><br/>Es decir:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = resultado total |
+| Initial Available Balance |<br/> Balance inicial.<br/><br/>|
+| Release |<br/> El detalle de las liberaciones de dinero que incluye el balance inicial.<br/><br/> |
+| Block | <br/>Los bloqueos de dinero por disputas.<br/><br/> |
+| Unblock |<br/> Los desbloqueos por la resolución de las disputas.<br/><br/>|
+| Subtotal | <br/>Es la suma de las operaciones que componen a cada sección.<br/><br/>|
+| Total| <br/> Es el resultado final compuesto por la suma de todos los subtotales. <br/><br/>Es decir:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = resultado total<br/><br/> |
 
 
 Ademas el reporte refleja los conceptos contables del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
@@ -38,15 +38,16 @@ Ademas el reporte refleja los conceptos contables del *debe* (dinero que tienes 
 
 Verás el dinero disponible de las operaciones liberadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
+**¿Qué pasa si un retiro falla?**
+
+Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT`.
+
+
 > NOTE
 >
 > Nota
 >
 > Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
-
-**¿Qué pasa si un retiro falla?**
-
-Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT`.
 
 ## Ejemplo de un reporte
 
@@ -58,7 +59,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 
 > WARNING
 > 
-> Importante: diferencias entre retiro parcial y retiro total.
+> Importante: diferencias entre retiro parcial y retiro total
 > 
 > Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
 >

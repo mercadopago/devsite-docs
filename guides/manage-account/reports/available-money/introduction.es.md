@@ -5,13 +5,17 @@
 >
 > En esta página
 >
+> [¿Cómo descargo el reporte?](#bookmark_¿cómo_descargo_el_reporte?)
+>
+> [Valores del reporte](#bookmark_valores_del_reporte)
+>
 > [Para qué usar el reporte](#bookmark_para_qué_usar_el_reporte)
 >
 
 
 El reporte de Dinero Disponible es un **informe descargable que te permite conocer la liquidez de tu negocio**, es decir, cuánto dinero tienes para usar. Contiene el **detalle de los pagos liberados** que están listos para retirar a una cuenta bancaria, invertir en Mercado Pago o usar como saldo en la tarjeta prepaga de Mercado Pago.
 
-### ¿Cómo descargo el reporte?
+## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
 
@@ -26,7 +30,7 @@ Para acceder a tus reportes desde la sección de Informes en tu cuenta de Mercad
 1. Ve a [Informes](https://www.mercadopago.com/mla/account/movements) y de ahí accede a Reportes.
 1. En [Reportes](https://www.mercadopago.com.ar/balance/reports), elige *Dinero Disponible*, allí encontrarás un listado de los reportes que has generado.
 
-### Valores del reporte
+## Valores del reporte
 
 Dependiendo de las [tasas y plazos](https://www.mercadopago.com.ar/settings/release-options) que elijas, el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Por esta razón, el valor total que verás en el reporte no siempre va a coincidir con tu saldo total o con el valor que veas en los reportes de facturación.
 
@@ -42,7 +46,7 @@ Los plazos de liberación tienen que ver con los tiempos de los bancos o por los
 
 **Este reporte se usa para conciliar** los retiros de dinero e incluye las transacciones que lo componen.
 
-Puedes generar un Reporte de Dinero Disponible en tres instancias:
+Puedes generar un reporte de Dinero Disponible en tres instancias:
 1. Cada vez que lo generas manualmente.
 1. De forma programada, según tus ajustes.
 1. Con cada retiro de dinero a una cuenta bancaria.
