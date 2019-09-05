@@ -144,7 +144,7 @@ curl -X POST \
             "description": "Description",
             "quantity": 1,
             "unit_price": 50,
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif"
         }
     ],

@@ -83,7 +83,7 @@ Within to the previous concepts, you must also know the objects with which we go
    "items":[
       {
          "title":" $500.00 Premium",
-         "currency_id": "MXN",
+         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
          "description":"$500.00 Premium",
          "quantity": 1.0,
          "unit_price": 500.00

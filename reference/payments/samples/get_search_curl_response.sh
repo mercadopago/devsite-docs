@@ -18,7 +18,7 @@
           "payment_type_id": "account_money",
           "status": "approved",
           "status_detail": "accredited",
-          "currency_id": "ARS",
+          "currency_id": "[FAKER][CURRENCY][ACRONYM]",
           "description": "Pago Pizza",
           "live_mode": true,
           "sponsor_id": null,

@@ -218,7 +218,7 @@ preference.Items.Add(
   {
     Title = "My Item",
     Quantity = 1,
-    CurrencyId = CurrencyId.BRL,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   }
 );

@@ -98,7 +98,7 @@ Para la integración de Cross Border será fundamental la utilización de la API
 La API de Exchange Rate es:
 
 ```
-https://api.mercadopago.com/v1/exchange_rates?from=USD&to=MXN&public_key=<PUBLIC_KEY>
+https://api.mercadopago.com/v1/exchange_rates?from=USD&to=[FAKER][CURRENCY][ACRONYM]&public_key=<PUBLIC_KEY>
 ```
 
 La respuesta que vas a obtener es similar a la siguiente:
@@ -107,7 +107,7 @@ La respuesta que vas a obtener es similar a la siguiente:
 {
   "creation_date": "2018-04-13T05:15:19.752-04:00",
   "currency_base": "USD",
-  "currency_quote": "MXN",
+  "currency_quote": "[FAKER][CURRENCY][ACRONYM]",
   "id": "95f77580-602a-4086-9cec-c3b5afad2c5f",
   "inv_rate": 0.05458033,
   "rate": 18.3216177
@@ -149,7 +149,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 		{
 			"id": "item-ID-1234",
 			"title": "Title of what you are paying for. It will be displayed in the payment process.",
-			"currency_id": "ARS",
+			"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
 			"category_id": "others",
@@ -224,7 +224,7 @@ Este sería un ejemplo de la  respuesta de la creación de la preferencia de pag
             "title": "Title of what you are paying for. It will be displayed in the payment process.",
             "description": "Item description",
             "category_id": "others",
-            "currency_id": "MXN",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "quantity": 1,
             "unit_price": 100
         }
@@ -409,7 +409,7 @@ Este es un ejemplo de la respuesta del pago:
   "call_for_authorize_id": null,
   "risk_execution_id": 14940341296,
   "api_version": "2",
-  "currency_id": "MXN",
+  "currency_id": "[FAKER][CURRENCY][ACRONYM]",
   "sponsor_id": null,
   "deduction_schema": null,
   "payment_method_id": "debvisa",
@@ -564,7 +564,7 @@ Este es un ejemplo de la respuesta del pago:
     "payment_type_id": "credit_card",
     "status": "approved",
     "status_detail": "accredited",
-    "currency_id": "MXN",
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
     "description": "Title of what you are paying for",
     "live_mode": true,
     "sponsor_id": null,
@@ -832,7 +832,7 @@ Este es un ejemplo de la respuesta del pago:
     "payment_type_id": "credit_card",
     "status": "approved",
     "status_detail": "accredited",
-    "currency_id": "MXN",
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
     "description": "Title of what you are paying for",
     "live_mode": true,
     "sponsor_id": null,
@@ -960,7 +960,7 @@ Este es un ejemplo de la respuesta del pago:
 
 
 ## Devoluciones de pagos
-La devolución de los pagos se hacen por valor de la moneda local de la operación (por ejemplo, MXN) bajo la misma conversión del pago original.
+La devolución de los pagos se hacen por valor de la moneda local de la operación (por ejemplo, [FAKER][CURRENCY][ACRONYM]) bajo la misma conversión del pago original.
 
 Para esto, será necesario que hagas la busqueda del pago mediante el `payment_id` y obtener el `currency_conversion`.
 

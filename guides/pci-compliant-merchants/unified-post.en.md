@@ -57,7 +57,7 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
       "payment_type_id": "credit_card",
       "status": "approved",
       "status_detail": "accredited",
-      "currency_id": "ARS",
+      "currency_id": "[FAKER][CURRENCY][ACRONYM]",
       "description": "Payment test",
 
       "live_mode": false,
