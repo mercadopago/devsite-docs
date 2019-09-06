@@ -74,7 +74,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 
 ### Próximos pasos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_RECOMMENDED_ES
 >
 > Generación desde Mercado Pago  
 >
@@ -82,7 +82,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/panel)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Generación por API
 >

@@ -22,7 +22,7 @@ Sigue estos pasos para generar tus reportes:
 
 ### Próximos pasos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_RECOMMENDED_ES
 >
 > Generación por API
 >
@@ -30,7 +30,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/api)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Generación por retiro
 >

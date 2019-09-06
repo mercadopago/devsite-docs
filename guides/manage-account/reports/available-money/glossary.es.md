@@ -35,3 +35,24 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | STORE_ID | ID de sucursal si el pago se realiza a través de un comercio físico. |
 | STORE_NAME | Nombre de sucursal para el pago realizado a través de un comercio físico. |
 | EXTERNAL_STORE_ID | ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. |
+
+
+<hr/>
+
+### Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Cómo usar el reporte
+>
+> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
+>
+> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/how-to-use)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Genera tus reportes
+>
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/generate)
