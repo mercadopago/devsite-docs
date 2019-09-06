@@ -455,7 +455,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias:
 | `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
 | `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
-| `detailed` | <br/>Incluye las columnas para mostrar la comisión de Mercado Pago (mp_fee_amount), financing_fee_amount, etc <br/><br/>|
+| `detailed` | <br/>Incluye las columnas para mostrar la comisión de Mercado Pago (mp_fee_amount, financing_fee_amount, etc). <br/><br/>|
 | `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
 | `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
