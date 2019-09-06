@@ -64,3 +64,22 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 > Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
 >
 >Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
+
+
+Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Genera tus reportes
+>
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tus reportes](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/generate)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Glosario
+>
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
+>
+> [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary)

@@ -206,3 +206,22 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 > Importante
 >
 > La generación por retiro es una opción más de generación del reporte de Dinero Disponible. No modifica la generación que configures desde tu panel de Mercado Pago o vía API.
+
+
+Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Generación desde Mercado Pago
+>
+> Puedes generar tus reportes de Dinero Disponible desde el panel de Mercado Pago en tres simples pasos.
+>
+> [Generación desde Mercado Pago](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/panel)
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Generación por API
+>
+> Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
+>
+> [Generación por API](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/api)

@@ -954,3 +954,23 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
+
+
+Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Generación desde Mercado Pago
+>
+> Puedes generar tus reportes de Dinero Disponible desde el panel de Mercado Pago en tres simples pasos.
+>
+> [Generación desde Mercado Pago](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/panel)
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Generación por retiro
+>
+> Puedes generar un reporte cada vez que retires dinero disponible a una cuenta bancaria.
+>
+> [Generación por retiro](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/withdrawal)
+

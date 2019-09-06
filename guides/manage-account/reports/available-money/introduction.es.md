@@ -74,11 +74,10 @@ Próximos pasos
 >
 > [Cómo usar el reporte](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/how-to-use)
 
-
 > RIGHT_BUTTON_REQUIRED_ES
 >
 > Genera tus reportes
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes ](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary)
+> [Genera tus reportes](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/generate)

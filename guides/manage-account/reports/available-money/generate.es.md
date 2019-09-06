@@ -69,3 +69,22 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 > Nota
 >
 > Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
+
+Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Generación desde Mercado Pago  
+>
+> Crea tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
+>
+> [Generación desde Mercado Pago](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/panel)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Generación por API
+>
+> Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
+>
+> [Generación por API](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/api)
