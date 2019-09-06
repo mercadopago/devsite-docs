@@ -299,7 +299,7 @@ Para conocer más sobre los atributos de la preferencia, [consultá la documenta
 ### Aquí tienes una preferencia completa
 Para resumir todo lo anterior, a continuación se muestran todos los datos que se pueden configurar en una preferencia:
 
-----[mlm, mlc, mpe, mlu]----
+----[mlm, mlc, mpe, mla, mlb, mlu]----
 
 
 ```json
