@@ -16,7 +16,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -28,7 +28,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
 >
-> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/api)
+> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/api)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -36,4 +36,4 @@ Sigue estos pasos para generar tus reportes:
 >
 > Puedes generar un reporte cada vez que retires dinero disponible a una cuenta bancaria.
 >
-> [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/withdrawal)
+> [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/withdrawal)
