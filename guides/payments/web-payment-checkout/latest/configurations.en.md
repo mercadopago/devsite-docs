@@ -46,7 +46,7 @@ If you offer purchases of high amounts, for example, you can accept [payments wi
             "number": "4444-4444"
         },
         "identification": {
-            "type": "DNI",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "12345678"
         },
         "address": {

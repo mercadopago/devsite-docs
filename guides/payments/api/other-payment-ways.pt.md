@@ -103,7 +103,7 @@ Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprad
         "first_name": "Test",
         "last_name": "User",
         "identification": {
-            "type": "CPF",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "19119119100"
         },
         "address": {
@@ -134,7 +134,7 @@ Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprad
      "first_name" => "Test",
      "last_name" => "User",
      "identification" => array( 
-         "type" => "CPF",
+         "type" => "[FAKER][IDENTIFICATION][TYPE]",
          "number" => "19119119100"
       ),
      "address"=>  array(
@@ -168,7 +168,7 @@ payment.setDateOfExpiration("2018-01-01T21:52:49.000-04:00")
            .setFirstName("Test")
            .setLastName("User")
            .setIdentification(new Identification()
-               .setType("CPF")
+               .setType("[FAKER][IDENTIFICATION][TYPE]")
                .setNumber("19119119100"))
            .setAddress(new Address()
                .setZipCode("06233200")
@@ -196,7 +196,7 @@ payment_data = {
     first_name: "Test",
     last_name: "User",
     identification: {
-        type: "CPF",
+        type: "[FAKER][IDENTIFICATION][TYPE]",
         number: "191191191-00"
     },
     address: {
@@ -232,7 +232,7 @@ Payment payment = new Payment()
         FirstName = "Test",
         LastName = "User",
         Identification = new Identification(){
-          Type = "CPF",
+          Type = "[FAKER][IDENTIFICATION][TYPE]",
           Number = "191191191-00"
         },
         Address = new Address(){

@@ -393,7 +393,7 @@ $ curl https://core.spreedly.com/v1/gateways/6DqX57I6fHgIuUkVN2HGszjDSu1/purchas
           "currency_code": "ARS",
           "gateway_specific_fields":{
           	"mercado_pago":{
-          		"cardholder_identification_type":"DNI",
+          		"cardholder_identification_type":"[FAKER][IDENTIFICATION][TYPE]",
           		"cardholder_identification_number":"22333444",
           		"installments": "1",
           		"device_id": "392d1af8-bc36-893c-ccf4-80b6abbc07b7",

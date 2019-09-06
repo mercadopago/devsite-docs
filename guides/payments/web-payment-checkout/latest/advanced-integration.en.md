@@ -52,7 +52,7 @@ We recommend detailing all possible information about the item and the buyer.
     "number" => "949 128 866"
   );
   $payer->identification = array(
-    "type" => "DNI",
+    "type" => "[FAKER][IDENTIFICATION][TYPE]",
     "number" => "12345678"
   );
   $payer->address = array(
@@ -75,7 +75,7 @@ var payer = {
     number: "949 128 866"
   },
   identification: {
-    type: "DNI",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "12345678"
   },
   address: {
@@ -97,7 +97,7 @@ payer.setName("Charles")
         .setAreaCode("")
         .setPhoneNumber("949 128 866"))
      .setIdentification(new Identification()
-        .setType("DNI")
+        .setType("[FAKER][IDENTIFICATION][TYPE]")
         .setNumber("12345678"))
      .setAddress(new Address()
         .setStreetName("Cuesta Miguel Armendáriz")
@@ -117,7 +117,7 @@ payer = MercadoPago::Payer.new({
     number: "949 128 866"
   })
   identification: MercadoPago::Identification.new({
-    type: "DNI",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "12345678"
   })
   address: MercadoPago::Address.new ({
@@ -145,7 +145,7 @@ Payer payer = new Payer()
     },
     Identification = new Identification()
     {
-        Type = "DNI",
+        Type = "[FAKER][IDENTIFICATION][TYPE]",
         Number = "12345678"
     },
     Address = new Address()

@@ -29,7 +29,7 @@
         "email": "test_user_80507629@testuser.com",
         "identification": {
             "number": "32659430",
-            "type": "DNI"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         },
         "phone": {
             "area_code": "01",
@@ -117,7 +117,7 @@
             "name": "APRO",
             "identification": {
                 "number": "19119119100",
-                "type": "CPF"
+                "type": "[FAKER][IDENTIFICATION][TYPE]"
             }
         }
     },

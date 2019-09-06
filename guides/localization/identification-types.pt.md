@@ -33,8 +33,8 @@ curl -X GET \
 ```json
 	[
 		{
-		    "id": "DNI",
-		    "name": "DNI",
+		    "id": "[FAKER][IDENTIFICATION][TYPE]",
+		    "name": "[FAKER][IDENTIFICATION][TYPE]",
 		    "type": "number",
 		    "min_length": 7,
 		    "max_length": 8

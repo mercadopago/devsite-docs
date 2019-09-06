@@ -166,7 +166,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"number": "4444-4444"
 		},
 		"identification": {
-			"type": "DNI",
+			"type": "[FAKER][IDENTIFICATION][TYPE]",
 			"number": "12345678"
 		},
 		"address": {
@@ -239,7 +239,7 @@ Este sería un ejemplo de la  respuesta de la creación de la preferencia de pag
             "number": "4444-4444"
         },
         "identification": {
-            "type": "DNI",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "12345678"
         },
         "address": {
@@ -389,7 +389,7 @@ Este es un ejemplo de la respuesta del pago:
     "email": "test.cbt.off.merchantcbt@test.com",
     "identification": {
       "number": "25060337",
-      "type": "RFC"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
     },
     "last_name": "TEST MPFRONT"
   },
@@ -431,7 +431,7 @@ Este es un ejemplo de la respuesta del pago:
     "email": "test_user_33759716@testuser.com",
     "identification": {
       "number": "800825569",
-      "type": "RFC"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
     },
     "last_name": "Test",
     "entity_type": null,
@@ -582,7 +582,7 @@ Este es un ejemplo de la respuesta del pago:
         "id": null,
         "email": "test_user_33759716@testuser.com",
         "identification": {
-            "type": "RFC",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "800825569"
         },
         "phone": {
@@ -850,7 +850,7 @@ Este es un ejemplo de la respuesta del pago:
         "id": null,
         "email": "test_user_33759716@testuser.com",
         "identification": {
-            "type": "RFC",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "800825569"
         },
         "phone": {

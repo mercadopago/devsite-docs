@@ -378,7 +378,7 @@ Response:
 		"name": "Card holdername",
 		"identification": {
 			"number": "12345678",
-			"type": "DNI"
+			"type": "[FAKER][IDENTIFICATION][TYPE]"
 		}
 	},
 	"date_created": "2017-05-05T09:22:30.893-04:00",

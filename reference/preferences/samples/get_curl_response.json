@@ -44,7 +44,7 @@
         "email": "",
         "identification": {
             "number": "12345678",
-            "type": "DNI"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         },
         "name": "",
         "surname": "",

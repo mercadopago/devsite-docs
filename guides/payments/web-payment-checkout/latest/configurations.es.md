@@ -45,7 +45,7 @@ Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos t
             "number": "4444-4444"
         },
         "identification": {
-            "type": "DNI",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "12345678"
         },
         "address": {

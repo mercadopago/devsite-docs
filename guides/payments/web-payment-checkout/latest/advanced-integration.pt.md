@@ -54,7 +54,7 @@ Recomendamos detalhar todas as informações possíveis sobre o item e o comprad
     "number" => "4444-4444"
   );
   $payer->identification = array(
-    "type" => "CPF",
+    "type" => "[FAKER][IDENTIFICATION][TYPE]",
     "number" => "19119119100"
   );
   $payer->address = array(
@@ -77,7 +77,7 @@ var payer = {
     number: "4444-4444"
   },
   identification: {
-    type: "CPF",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "19119119100"
   },
   address: {
@@ -99,7 +99,7 @@ payer.setName("Joao")
         .setAreaCode("11")
         .setPhoneNumber("4444-4444"))
      .setIdentification(new Identification()
-        .setType("CPF")
+        .setType("[FAKER][IDENTIFICATION][TYPE]")
         .setNumber("19119119100"))
      .setAddress(new Address()
         .setStreetName("Street")
@@ -119,7 +119,7 @@ payer = MercadoPago::Payer.new({
     number: "4444-4444"
   })
   identification: MercadoPago::Identification.new({
-    type: "CPF",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "19119119100"
   })
   address: MercadoPago::Address.new ({
@@ -147,7 +147,7 @@ Payer payer = new Payer()
     },
     Identification = new Identification()
     {
-        Type = "CPF",
+        Type = "[FAKER][IDENTIFICATION][TYPE]",
         Number = "19119119100"
     },
     Address = new Address()

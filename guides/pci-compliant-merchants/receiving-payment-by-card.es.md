@@ -28,7 +28,7 @@ Es necesario crear un `card_token`, el cual es la representación segura de la t
             "name" => "APRO",
             "identification" => array(
                 "number" => "12345678",
-                "type" => "DNI"
+                "type" => "[FAKER][IDENTIFICATION][TYPE]"
             )
         )
     );
@@ -51,7 +51,7 @@ JSONObject payment = mp.post("/v1/card_tokens", "{"+
         "'name': 'APRO',"+
         "'identification': {"+
             "'number': '12345678',"+
-            "'type': 'DNI',"+
+            "'type': '[FAKER][IDENTIFICATION][TYPE]',"+
         "}"+
     "}"+
 "}");
@@ -72,7 +72,7 @@ Hashtable card_token = mp.post("/v1/card_tokens", "{"+
                 "\"name\": \"APRO\","+
                 "\"identification\": {"+
                     "\"number\": \"12345678\","+
-                    "\"type\": \"DNI\""+
+                    "\"type\": \"[FAKER][IDENTIFICATION][TYPE]\""+
                 "}"+
             "}"+
         "}");
@@ -90,7 +90,7 @@ var doCardToken = mp.post ("/v1/card_tokens",
         "name": "APRO",
         "identification": {
             "number": "12345678",
-            "type": "DNI"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         }
     });
 
@@ -115,7 +115,7 @@ cardTokenData = Hash[
         "name" => "APRO",
         "identification" => Hash[
             "number" => "12345678",
-            "type" => "DNI"
+            "type" => "[FAKER][IDENTIFICATION][TYPE]"
         ]
     ]
 
@@ -136,7 +136,7 @@ card_token = mp.post("/v1/card_tokens", {
         "name": "APRO",
         "identification": {
             "number": "12345678",
-            "type": "DNI"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         }
     }
 });
@@ -168,7 +168,7 @@ print(json.dumps(card_token, indent=4))
     "cardholder": {
         "identification": {
             "number": "12345678",
-            "type": "type"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         },
         "name": "name"
     }

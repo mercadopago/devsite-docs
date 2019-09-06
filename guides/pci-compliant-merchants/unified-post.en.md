@@ -26,7 +26,7 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
           "name": "APRO",
           "identification": {
           "number": "23456789",
-          "type": "DNI"
+          "type": "[FAKER][IDENTIFICATION][TYPE]"
           }
         }
       },
@@ -116,7 +116,7 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
       "name": "APRO",
       "identification": {
       "number": "23456789",
-      "type": "DNI"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
       }
       }
       },
@@ -145,7 +145,7 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
       "name": "APRO",
       "identification": {
       "number": "23456789",
-      "type": "DNI"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
       }
       }
       },

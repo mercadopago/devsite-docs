@@ -273,7 +273,7 @@ $payment->description = "Title of what you are paying for";
 $payment->payer = array (
 		"email" => "test_user_19653727@testuser.com",
 		"identification" => array(
-			"type" => "RUT",
+			"type" => "[FAKER][IDENTIFICATION][TYPE]",
 			"number" => "76262349"
 		),
 		"entity_type" => "individual"
@@ -297,7 +297,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payer payer = new Payer();
 payer.setEmail("test_user_19653727@testuser.com");
-payer.setIdentification(new Identification("RUT", 76262349));
+payer.setIdentification(new Identification("[FAKER][IDENTIFICATION][TYPE]", 76262349));
 payer.setEntityType("individual");
 
 TransactionDetails transactionDetails = new TransactionDetails();
@@ -328,7 +328,7 @@ var payment_data = {
   payer: {
     email: 'test_user_3931694@testuser.com',
     identification: {
-      type: "URL",
+      type: "[FAKER][IDENTIFICATION][TYPE]",
       number: "76262349"
     },
     entity_type: "individual"
@@ -360,7 +360,7 @@ payment.description = 'Title of what you are paying for'
 payment.payer = {
   email: 'test_user_3931694@testuser.com',
   identification: {
-    type: "URL",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "76262349"
   },
   entity_type: "individual"
@@ -464,7 +464,7 @@ $payment->description = "Title of what you are paying for";
 $payment->payer = array (
 		"email" => "test_user_19653727@testuser.com",
 		"identification" => array(
-			"type" => "CC",
+			"type" => "[FAKER][IDENTIFICATION][TYPE]",
 			"number" => "76262349"
 		),
 		"entity_type" => "individual"
@@ -488,7 +488,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payer payer = new Payer();
 payer.setEmail("test_user_19653727@testuser.com");
-payer.setIdentification(new Identification("CC", 76262349));
+payer.setIdentification(new Identification("[FAKER][IDENTIFICATION][TYPE]", 76262349));
 payer.setEntityType("individual");
 
 TransactionDetails transactionDetails = new TransactionDetails();
@@ -519,7 +519,7 @@ var payment_data = {
   payer: {
     email: 'test_user_3931694@testuser.com',
     identification: {
-      type: "CC",
+      type: "[FAKER][IDENTIFICATION][TYPE]",
       number: "76262349"
     },
     entity_type: "individual"
@@ -551,7 +551,7 @@ payment.description = 'Title of what you are paying for'
 payment.payer = {
   email: 'test_user_3931694@testuser.com',
   identification: {
-    type: "CC",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "76262349"
   },
   entity_type: "individual"

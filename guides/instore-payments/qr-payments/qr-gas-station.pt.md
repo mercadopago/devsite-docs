@@ -106,7 +106,7 @@ Além dos conceitos anteriores, você também deve conhecer os objetos com os qu
          }
       ],
       "cashier_identification":{
-         "type":"CPF",
+         "type":"[FAKER][IDENTIFICATION][TYPE]",
          "number":"00000000"
       },
       "period":"0000",

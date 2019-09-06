@@ -300,7 +300,7 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
 			"number": "4444-4444"
 		},
 		"identification": {
-			"type": "RUT", // Available ID types at https://api.mercadopago.com/v1/identification_types
+			"type": "[FAKER][IDENTIFICATION][TYPE]", // Available ID types at https://api.mercadopago.com/v1/identification_types
 			"number": "12345678"
 		},
 		"address": {

@@ -27,7 +27,7 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
           "name": "APRO",
           "identification": {
           "number": "23456789",
-          "type": "DNI"
+          "type": "[FAKER][IDENTIFICATION][TYPE]"
           }
         }
       },
@@ -117,7 +117,7 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
       "name": "APRO",
       "identification": {
       "number": "23456789",
-      "type": "DNI"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
       }
       }
       },
@@ -146,7 +146,7 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
       "name": "APRO",
       "identification": {
       "number": "23456789",
-      "type": "DNI"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
       }
       }
       },

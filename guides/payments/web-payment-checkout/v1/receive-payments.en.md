@@ -197,7 +197,7 @@ You must submit your buyer’s `email`. If you include information such as ident
     "number" => "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
   );
   $payer->identification = array(
-    "type" => "DNI",
+    "type" => "[FAKER][IDENTIFICATION][TYPE]",
     "number" => "12345678"
   );
   $payer->address = array(
@@ -219,7 +219,7 @@ payer.setName("Charles")
         .setAreaCode("[FAKER][PHONE_NUMBER][AREA_CODE]")
         .setPhoneNumber("[FAKER][PHONE_NUMBER][PHONE_NUMBER]"))
      .setIdentification(new Identification()
-        .setType("DNI")
+        .setType("[FAKER][IDENTIFICATION][TYPE]")
         .setNumber("12345678"))
      .setAddress(new Address()
         .setStreetName("[FAKER][ADDRESS][STREET_NAME]")
@@ -239,7 +239,7 @@ var payer = {
     number: "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
   },
   identification: {
-    type: "DNI",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "12345678"
   },
   address: {
@@ -262,7 +262,7 @@ payer = MercadoPago::Payer.new({
     number: "[FAKER][PHONE_NUMBER][PHONE_NUMBER]"
   })
   identification: MercadoPago::Identification.new({
-    type: "DNI",
+    type: "[FAKER][IDENTIFICATION][TYPE]",
     number: "12345678"
   })
   address: MercadoPago::Address.new ({
@@ -290,7 +290,7 @@ Payer payer = new Payer()
     },
     Identification = new Identification()
     {
-        Type = "DNI",
+        Type = "[FAKER][IDENTIFICATION][TYPE]",
         Number = "12345678"
     },
     Address = new Address()

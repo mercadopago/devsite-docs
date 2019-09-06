@@ -225,7 +225,7 @@ El método `createToken` devolverá un *card_token*, lo cual es la representaci�
     "cardholder": {
         "identification": {
             "number": "23456789",
-            "type": "type"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         },
         "name": "name"
     }

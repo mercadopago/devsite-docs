@@ -204,7 +204,7 @@ mercadopago.payment.create({
   payer: {
     email: 'test_user_3931694@testuser.com',
     identification: {
-      type: 'DNI',
+      type: '[FAKER][IDENTIFICATION][TYPE]',
       number: '34123123'
     }
   }
@@ -342,7 +342,7 @@ var payment = {
   payer: {
     email: 'test_user_3931694@testuser.com',
     identification: {
-      type: 'DNI',
+      type: '[FAKER][IDENTIFICATION][TYPE]',
       number: '34123123'
     }
   }
@@ -389,7 +389,7 @@ var payment = {
   payer: {
     email: 'test_user_3931694@testuser.com',
     identification: {
-      type: 'DNI',
+      type: '[FAKER][IDENTIFICATION][TYPE]',
       number: '34123123'
     }
   }
@@ -645,7 +645,7 @@ var payment = {
   payer: {
     email: 'test_user_3931694@testuser.com',
     identification: {
-      type: 'DNI',
+      type: '[FAKER][IDENTIFICATION][TYPE]',
       number: '34214577'
     }
   }
@@ -675,7 +675,7 @@ mercadopago.payment.create({
   payer: {
     email: 'test_user_3931694@testuser.com',
     identification: {
-      type: 'DNI',
+      type: '[FAKER][IDENTIFICATION][TYPE]',
       number: '34214577'
     }
   }

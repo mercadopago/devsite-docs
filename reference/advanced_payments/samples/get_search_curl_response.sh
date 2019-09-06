@@ -97,7 +97,7 @@
           "street_numer": "120"
         },
         "identification": {
-          "type": "DNI",
+          "type": "[FAKER][IDENTIFICATION][TYPE]",
           "number": "88999000"
         }
       },

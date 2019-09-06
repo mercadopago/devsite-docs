@@ -165,7 +165,7 @@ You must submit your buyer’s email.
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
     "identification": {
-      "type": "DNI",
+      "type": "[FAKER][IDENTIFICATION][TYPE]",
       "number": "123456789"
     },
     "address": {

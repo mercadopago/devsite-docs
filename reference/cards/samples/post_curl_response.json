@@ -23,7 +23,7 @@
         "name": "APRO",
         "identification": {
             "number": "19119119100",
-            "type": "CPF"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         }
     },
     "date_created": "2019-07-03T17:15:35.000-04:00",

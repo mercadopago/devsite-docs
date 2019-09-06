@@ -31,7 +31,7 @@
             "id": "000001",
             "email": "afriend@gmail.com",
             "identification": {
-              "type": "DNI",
+              "type": "[FAKER][IDENTIFICATION][TYPE]",
               "number": "12345678"
             },
             "phone": {

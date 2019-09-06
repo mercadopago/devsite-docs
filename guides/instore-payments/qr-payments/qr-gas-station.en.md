@@ -107,7 +107,7 @@ Within to the previous concepts, you must also know the objects with which we go
          }
       ],
       "cashier_identification":{
-         "type":"INE",
+         "type":"[FAKER][IDENTIFICATION][TYPE]",
          "number":"00000000"
       },
       "period":"0000",

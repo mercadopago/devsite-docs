@@ -45,7 +45,7 @@ Se você oferece compras de valores altos, por exemplo, você pode aceitar [paga
             "number": "4444-4444"
         },
         "identification": {
-            "type": "CPF",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "19119119100"
         },
         "address": {

@@ -9,7 +9,7 @@ curl -X POST \
             "number": "12345678"
         },
         "identification": {
-            "type": "DNI",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "12345678"
         },
         "address": {

@@ -142,7 +142,7 @@ Por último recibirás una respuesta del pago como la siguiente:
 	    "id": "399605060",
 	    "identification": { 
 		    "number": "32659430",
-		    "type": "DNI" 
+		    "type": "[FAKER][IDENTIFICATION][TYPE]" 
 	     },
 	    "last_name": "Test",
 	    "operator_id": null,

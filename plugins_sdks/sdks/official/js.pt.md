@@ -69,7 +69,7 @@ A função callback receberá um objeto com as seguintes propriedades:
     "cardholder": {
         "identification": {
             "number": "23456789",
-            "type": "type"
+            "type": "[FAKER][IDENTIFICATION][TYPE]"
         },
         "name": "name"
     }

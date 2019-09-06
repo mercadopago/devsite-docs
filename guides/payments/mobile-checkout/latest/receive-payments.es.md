@@ -192,7 +192,7 @@ Es requerido el envío del `email` de tu comprador.
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
     "identification": {
-      "type": "DNI",
+      "type": "[FAKER][IDENTIFICATION][TYPE]",
       "number": "123456789"
     },
     "address": {

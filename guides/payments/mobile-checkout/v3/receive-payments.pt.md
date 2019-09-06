@@ -167,7 +167,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
     "identification": {
-      "type": "DNI",
+      "type": "[FAKER][IDENTIFICATION][TYPE]",
       "number": "123456789"
     },
     "address": {

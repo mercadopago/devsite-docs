@@ -167,7 +167,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 			"number": "4444-4444"
 		},
 		"identification": {
-			"type": "DNI",
+			"type": "[FAKER][IDENTIFICATION][TYPE]",
 			"number": "12345678"
 		},
 		"address": {
@@ -240,7 +240,7 @@ This is an example of the response to the creation of the payment preference:
             "number": "4444-4444"
         },
         "identification": {
-            "type": "DNI",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "12345678"
         },
         "address": {
@@ -390,7 +390,7 @@ This is an example of the payment response:
     "email": "test.cbt.off.merchantcbt@test.com",
     "identification": {
       "number": "25060337",
-      "type": "RFC"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
     },
     "last_name": "TEST MPFRONT"
   },
@@ -432,7 +432,7 @@ This is an example of the payment response:
     "email": "test_user_33759716@testuser.com",
     "identification": {
       "number": "800825569",
-      "type": "RFC"
+      "type": "[FAKER][IDENTIFICATION][TYPE]"
     },
     "last_name": "Test",
     "entity_type": null,
@@ -584,7 +584,7 @@ This is an example of the payment response:
         "id": null,
         "email": "test_user_33759716@testuser.com",
         "identification": {
-            "type": "RFC",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "800825569"
         },
         "phone": {
@@ -852,7 +852,7 @@ This is an example of the payment response:
         "id": null,
         "email": "test_user_33759716@testuser.com",
         "identification": {
-            "type": "RFC",
+            "type": "[FAKER][IDENTIFICATION][TYPE]",
             "number": "800825569"
         },
         "phone": {

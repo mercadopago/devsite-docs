@@ -106,7 +106,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
          }
       ],
       "cashier_identification":{
-         "type":"INE",
+         "type":"[FAKER][IDENTIFICATION][TYPE]",
          "number":"00000000"
       },
       "period":"0000",
