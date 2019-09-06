@@ -19,7 +19,7 @@ Sigue estos pasos para generar tus reportes:
 > Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
-Próximos pasos
+### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
 >

@@ -64,7 +64,7 @@ Además, puedes usar el reporte para conocer el historial de dinero disponible e
 > Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
-Próximos pasos
+### Próximos pasos
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >

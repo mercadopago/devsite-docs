@@ -66,7 +66,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
 
 
-Próximos pasos
+### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
 >

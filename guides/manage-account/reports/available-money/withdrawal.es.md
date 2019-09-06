@@ -208,7 +208,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 > La generación por retiro es una opción más de generación del reporte de Dinero Disponible. No modifica la generación que configures desde tu panel de Mercado Pago o vía API.
 
 
-Próximos pasos
+### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
 >
