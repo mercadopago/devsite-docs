@@ -70,15 +70,15 @@ Próximos pasos
 >
 > Cómo usar el reporte
 >
-> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación. 
+> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
 >
-> [Integración avanzada](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/how-to-use)
+> [Cómo usar el reporte](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/how-to-use)
 
 
-> RIGHT_BUTTON_SUGGESTED_ES
+> RIGHT_BUTTON_REQUIRED_ES
 >
-> Integración avanzada
+> Genera tus reportes
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Integración avanzada](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary)
+> [Genera tus reportes ](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary)
