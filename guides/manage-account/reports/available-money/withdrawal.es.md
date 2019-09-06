@@ -217,7 +217,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Puedes generar tus reportes de Dinero Disponible desde el panel de Mercado Pago en tres simples pasos.
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/panel)
+> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/panel)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -225,4 +225,4 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
 >
-> [Generación por API](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/api)
+> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/api)

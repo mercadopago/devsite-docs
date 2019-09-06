@@ -35,23 +35,3 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | STORE_ID | Branch ID if payment is made through a physical commerce. |
 | STORE_NAME | Branch name for payment made through a physical commerce. |
 | EXTERNAL_STORE_ID | User-defined branch ID for payment made through a physical commerce. |
-
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Generación desde Mercado Pago  
->
-> Crea tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
->
-> [Generación desde Mercado Pago](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/panel)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Generación por API
->
-> Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
->
-> [Generación por API](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/api)
