@@ -1,89 +1,50 @@
-* [Requisitos](#Requisitos)
-* [Funcionalidades](#Funcionalidades)
-* [Instalação](#Instalação) 
-* [Configurando Cartão de Crédito e Boleto (Checkout Transparente)](#Configurando Cartão de Crédito e Boleto (Checkout Transparente))
-* [Configurações de status de Notificações de Pagamento](#onfigurações de status de Notificações de Pagamento)
-* [Configurações de status de Notificações de Pagamento](#Configurações-de-status-de-Notificações-de-Pagamento)
+# Magento 2
 
-<a name="Requisitos"></a>
-## Requisitos:
+* [Requisitos para integrar](#bookmark_requisitos_para_integrar)
+* [Funcionalidades](#bookmark_funcionalidades)
+* [Instalação](#bookmark_instalação) 
+* [Configurações de Cartão de Crédito e Boleto (Custom Checkout)](#bookmark_configurações_de_cartão_de_crédito_e_boleto_(custom_checkout))
+* [Configurações de Basic Checkout](#bookmark_configurações_de_basic_checkout)
+* [Configurações de status de Notificações de Pagamento](#bookmark_configurações_de_status_de_notificações_de_pagamento)
 
-## Requisitos:
-### Versão do Magento
-* 2.x
 
-### Ambiente
-* LAMP (Linux, Apache, MySQL, and PHP)
-* LNMP stack
+## Requisitos para integrar
 
-### Sistema Operacional
-* Linux x86-64
+Requisito                 | Descrição
+------------------------- | -------------------------------------------------------------------------
+Versão do Magento         | 2.x
+Ambiente                  | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack
+Sistema Operacional       | Linux x86-64
+Memoria                   | Minimum 2GB of RAM
+Web Server                | Apache 2.x<br/>Nginx 1.7.x
+Versões do PHP            | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/>
+Versões do MySQL          | MySQL 5.6<br/>MariaDB ou Percona são compatíveis com Magento porque suportam as APIs do MySQL 5.6.
+Dependências de extensões | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/>
+PHP 7 only                | json<br/>iconv
+SSL                       | É um requisito que você tenha um certificado SSL.<br/>Durante os testes em modo de Sandbox você poderá executar os testes em HTTP
 
-### Memoria
-* Minimum 2GB of RAM
 
-### Web Server
-* Apache 2.x
-* Nginx 1.7.x
-
-### Versões do PHP
-* 5.6.x
-* 7.0.2
-* 7.0.6–7.0.x
-
-### Versões do MySQL
-* MySQL 5.6
-* MariaDB ou Percona devido ao suporte as APIs do MySQL 5.6.
-
-### Dependências de extensões
-* bc-math (Magento Commerce only)
-* curl
-* gd, ImageMagick 6.3.7 (or later) or both
-* intl
-m* bstring
-* mcrypt
-* hash
-* openssl
-* PDO/MySQL
-* SimpleXML
-* soap
-* xml
-* xsl
-* zip
-
-PHP 7 only:
-   * json
-   * iconv
-
-### SSL
-* É um requisito que você tenha um certificado SSL.
-* Durante os testes em modo de Sandbox você poderá executar os testes em HTTP. 
-
-<a name="Funcionalidades"></a>
-## Funcionalidades:
+## Funcionalidades
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * Pagamento com dois cartões
-    * [Mercado Envios](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/refund-cancel#refund)
+* [Checkout básico (Smart Checkout, Modal)](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/)
+    * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
+    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/)
 
 
 * Checkout Transparente
-    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods/)
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/refund-cancel#refund)
+    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card/)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/guides/payments/api/customers-and-cards/)
+    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-payment-ways/)
+    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds)
 
 
 * Outras funcionalidades
     * Atualização do pedido através de Cron
 
 
-
-<a name="Instalação"></a>
-## Instalação:
+## Instalação
 
     Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
 
@@ -107,7 +68,7 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 > bin/magento cache:clean
 
-4) Quando a loja está no modo **production**, é necessário gerar novamente os arquivos estáticos:
+4) Quando a loja está no modo **Produção**, é necessário gerar novamente os arquivos estáticos:
 
 > bin/magento setup:static-content:deploy
 
@@ -117,8 +78,8 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 6) Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
-<a name="Configuração Checkout Custom (Cartão de Crédito e Boleto)"></a>
-## Configuração Checkout Custom (Cartão de Crédito e Boleto):
+
+## Configurações de Cartão de Crédito e Boleto (Custom Checkout)
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos com Checkout Custom (Transparente) com Cartão de crédito e Boleto:
 
@@ -140,16 +101,14 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 > * Modo Sandbox: As credenciais desse modo são utilizadas para realizar testes.
 > * Modo Produção: As credenciais desse modo são utilizadas para receber os pagamentos em Produção. Para utilizar as credenciais do Modo Produção é necessário preencher o formulário "Eu quero ir para produção".
 
-3) Com as credenciais preenchidas, é necessário habilitar os métodos de pagamento. Acesse a opção **Checkout Custom - Credit And Debit Card**, clique no botão **Configure** e marque a opção **Enable** como **Yes**. Faça esse processo para o **Checkout Custom - Credit And Debit Card** e para o **Checkout Custom - Offline Payment Methods (Ticket)** e logo seguida clique em **Save Config**.
+3) Com as credenciais preenchidas, é necessário habilitar os métodos de pagamento. Acesse a opção **Custom Checkout - Credit And Debit Card**, clique no botão **Configure** e marque a opção **Enable** como **Yes**. Faça esse processo também para **Custom Checkout - Offline Payments Methods (Ticket)** e logo seguida clique em **Save Config**.
 
-![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png) 
-
+![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
 4)  Pronto! o Checkout Custom com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
 
-<a name="Configurando o Checkout Clássico (Redirect, Iframe e LightBox)"></a>
-## Configurando o Checkout Clássico (Redirect, Iframe e LightBox):
+## Configurações de Basic Checkout
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos com o Checkout Clássico no Redirect, Iframe ou Lightbox:
 
@@ -166,18 +125,15 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
-
-
-
 3) Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**. 
 Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usuário deve retornar a sua loja ao finalizar o checkout (**Auto Redirect**).
+
+![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 4)  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso! 
 
 
-<a name="(Configurando o Checkout Clássico (Redirect, Iframe e LightBox)"></a>
-## Configurando o Checkout Clássico (Redirect, Iframe e LightBox):
+## Configurações de status de Notificações de Pagamento
 
 Esse processo irá explicar como configurar os status de pedido para as notificações de pagamento:
 
@@ -188,4 +144,4 @@ Para cada status de pagamento você poderá escolher um status de pedido, assim 
 
 > O módulo está preparado para receber as notificações de pagamento de forma automática, ou seja, sem a necessidade de configurar a sua conta Mercado Pago ou o módulo. 
 
-3) Pronto! os status de notificação foram configurados com sucesso
+3) Pronto! os status de notificação foram configurados com sucesso.

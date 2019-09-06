@@ -1,85 +1,50 @@
-* [Requirements](#Requirements)
-* [Features](#Features)
-* [Installation](#Installation)
-* [Configure Credit Card and Ticket (Checkout Custom)](#Configure_Credit_Card_and_Ticket_(Checkout_Custom))
-* [Configure Checkout Redirect, Iframe, and LightBox](#Configure_Checkout_Redirect,_Iframe,_and_LightBox_(Basic_Checkout)) 
+# Magento 2
 
-<a name="Requirements"></a>
-## Requirements:
+* [Requirements to integrate](#bookmark_requirements_to_integrate)
+* [Features](#bookmark_features)
+* [Installation](#bookmark_installation)
+* [Credit Card and Ticket Configuration (Custom Checkout)](#bookmark_credit_card_and_ticket_configuration_(custom_checkout))
+* [Basic Checkout Configuration](#bookmark_basic_checkout_configuration)
+* [Payment Notification status settings](#bookmark_payment_notification_status_settings)
 
-### Magento Version
-* 2.x
 
-### Environment
-* LAMP (Linux, Apache, MySQL, and PHP)
-* LNMP stack
+## Requirements to integrate
 
-### Operational System
-* Linux x86-64
+Requirement                 | Description
+----------------------------| -------------------------------------------------------------------------
+Magento Version             | 2.x
+Environment                 | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack
+Operational System          | Linux x86-64
+Memory requirement          | Minimum 2GB of RAM
+Web Server                  | Apache 2.x<br/>Nginx 1.7.x
+PHP Versions                | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/>
+MySQL Version               | MySQL 5.6<br/>MariaDB and Percona are compatible with Magento because we support MySQL 5.6 APIs.
+Extension Dependencies      | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/>
+PHP 7 only                  | json<br/>iconv
+SSL                         | It is a requirement that you have an SSL certificate.<br/>During testing in Sandbox you will be able to run at http.
 
-### Memory requirement
-* Minimum 2GB of RAM
 
-### Web Server
-* Apache 2.x
-* Nginx 1.7.x
-
-### PHP Versions
-* 5.6.x
-* 7.0.2
-* 7.0.6–7.0.x
-
-### MySQL Version
-* MySQL 5.6
-* MariaDB and Percona are compatible with Magento because we support MySQL 5.6 APIs.
-
-### Extension Dependencies
-* bc-math (Magento Commerce only)
-* curl
-* gd, ImageMagick 6.3.7 (or later) or both
-* intl
-* bstring
-* mcrypt
-* hash
-* openssl
-* PDO/MySQL
-* SimpleXML
-* soap
-* xml
-* xsl
-* zip
-
-PHP 7 only:
-   * json
-   * iconv
-
-### SSL
-* It is a requirement that you have an SSL certificate.
-* During testing in Sandbox you will be able to run at http.
-
-<a name="Features"></a>
-## Features:
+## Features
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
-* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * Split payments (Two cards)
-    * [Mercado Envios](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
+* [Basic Checkout (Smart Checkout, Modal)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
+    * [Split payments (Two cards)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_payments_with_two_credit_cards)
+    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds/)
 
 
 * Custom Checkout
-    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/refund-cancel#refund)
+    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/guides/payments/api/receiving-payment-by-card/)
+    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/guides/payments/api/customers-and-cards/)
+    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/guides/payments/api/other-payment-ways/)
+    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds)
 
 
 * Other features
     * Customizable success page
 
-<a name="Installation"></a>
-## Installation:
+
+## Installation
 
     This process will explain the installation of the Mercado Pago module via Composer:
 
@@ -113,8 +78,8 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 
 6) Very Good! The module of Mercado Pago was successfully installed.
 
-<a name="Configure Credit Card and Ticket"></a>
-## Configure Credit Card and Ticket:
+
+## Credit Card and Ticket Configuration (Custom Checkout)
 
 This process will explain how to configure the module to accept payments with Checkout Custom with Credit Card and Tickets:
 
@@ -135,14 +100,14 @@ This process will explain how to configure the module to accept payments with Ch
 > * Modo Sandbox: The credentials in this way are used for testing.
 > * Modo Produção: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
 
-3) With your credentials filled, you need to enable payment methods. Go to **Checkout Custom - Credit And Debit Card**, click in **Configure** and check **Enable** as **Yes**. Make this process for **Checkout Custom - Credit And Debit Card** and **Checkout Custom - Offline Payment Methods (Ticket)** and then click on **Save Config**.
+3) With your credentials filled, you need to enable payment methods. Go to **Custom Checkout - Credit And Debit Card**, click in **Configure** and check **Enable** as **Yes**. Make this process for **Custom Checkout - Offline Payments Methods (Ticket)** too and then click on **Save Config**.
 
-![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_global_configuration.png)
+![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
 4) Very good! The Checkout Custom with Credit Card and Ticket has been configured and enabled successfully!
 
-<a name="Configure Checkout Redirect, Iframe and LightBox"></a>
-##Configure Checkout Redirect, Iframe and LightBox:
+
+## Basic Checkout Configuration
 
 This process will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox:
 
@@ -159,17 +124,14 @@ This process will explain how to configure the module to accept payments with Ba
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
-
-
 3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
 
-images/magento2/mercadopago_custom_checkout_configuration.png
+![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 4) Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 
-<a name="Payment Notification status settings"></a>
-## Payment Notification status settings:
+
+## Payment Notification status settings
 
 This process will explain how to set up order statuses for payment notifications:
 

@@ -1,13 +1,15 @@
 # Magento
 
-* [Requisitos](#Requisitos)
-* [Funcionalidades](#Funcionalidades)
-* [Instalação](#Instalação) 
-* [Atualização](#Atualização)
+* [Funcionalidades](#bookmark_funcionalidades)
+* [Requisitos](#bookmark_requisitos)
+* [Instalação](#bookmark_instalação) 
+* [Atualização](#bookmark_atualização)
 * Checkout Custom (Transparente)
 * Checkout Básico 
-* [Configurações de status de Notificações de Pagamento](#Configurações-de-status-de-Notificações-de-Pagamento)
-* [Suporte](#Suporte)
+* [Configurações de status de Notificações de Pagamento](#bookmark_configurações_de_status_de_notificações_de_pagamento)
+
+
+## Funcionalidades
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
@@ -24,8 +26,8 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | Página de sucesso personalizável            	|                 	| ✔                     	|
 | Calculadora de Parcelas                     	| ✔               	| ✔                     	|
 
-<a name="Requisitos"></a>
-## Requisitos:
+
+## Requisitos
 
 |                            | Detalle                                                                                        |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -38,14 +40,12 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | Dependências               | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
 | Configurações adicionais   | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente. Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
+
   
-  
-<a name="Instalação"></a>
-## Instalação: ##
+## Instalação
 
 Esse processo irá explicar a instalação do módulo Mercado Pago via Package e Marketplace:
 
-<a name="Via-Marketplace"></a>
 **Instalação via Marketplace**
 
 1) Vá até o **[Magento Marketplace](https://marketplace.magento.com/)**, pesquise por **Mercado Pago Payment**, selecione o módulo para versão **M1**, adicione o módulo no carrinho e finalize o processo de compra (**você não terá custo nenhum**):
@@ -67,7 +67,6 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 
 5) Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
-<a name="Via-Package"></a>
 **Instalação via Package**
 
 1) Vá até o **[Github do Módulo Magento do Mercado Pago](https://github.com/mercadopago/cart-magento)**, faça o download do arquivo que possui a extensão **.tgz** (Exemplo: MercadoPago-2.10.0.tgz):
@@ -82,8 +81,8 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Package e
 
 4) Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
-<a name="Atualização"></a>
-## Atualização: ##
+
+## Atualização
 
 Caso você ja possua o módulo do Mercado Pago e deseja instalar uma versão mais atual do módulo, aconselhamos remover todos os arquivos relacionados aos módulo anterior.
 
@@ -115,8 +114,7 @@ Depois de feito esse processo, execute o processo de **Instalação**.
 > Lembre-se sempre de realizar um backup da sua loja antes de fazer qualquer alteração.
 
 
-<a name="Config-Checkout-Custom-Cartão-Crédito-e-Boleto"></a>
-## Configurando Cartão de Crédito e Boleto: ##
+## Configurando Cartão de Crédito e Boleto
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos com Checkout Custom (Transparente) com Cartão de crédito e Boleto:
 
@@ -136,12 +134,12 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 ![Enabling payment method in Magento](/images/magento/magento-config-03.gif)
 
-4)  Pronto! o Checkout Custom com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
+4) Pronto! o Checkout Custom com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
 ![Successfully configured basic checkout](/images/magento/magento-save.png)
 
-<a name="Configurando-o-Checkout-Classico"></a>
-## Configurando o Checkout Clássico (Redirect, Iframe e LightBox): ##
+
+## Configurando o Checkout Clássico (Redirect, Iframe e LightBox)
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos com o Checkout Clássico no Redirect, Iframe ou Lightbox:
 
@@ -158,12 +156,12 @@ Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usu�
 
 ![Enabling payment method in Magento - Checkout redirect](/images/magento/magento-config-05.gif)
 
-4)  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
+4) Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
 ![Successfully configured Checkout redirect](/images/magento/magento-save.png)
 
-<a name="Configurando-o-Mercado-Envios"></a>
-## Configurando o Mercado Envios: ##
+
+## Configurando o Mercado Envios
 
 Esse processo irá explicar como configurar o módulo para aceitar Mercado Envios:
 
@@ -187,8 +185,8 @@ Esse processo irá explicar como configurar o módulo para aceitar Mercado Envio
 
 ![Mercado Envios configured successfully](/images/magento/magento-me_save.png)
 
-<a name="Configurando-o-Pagamento-Recorrente"></a>
-## Configurando o Pagamento Recorrente: ##
+
+## Configurando o Pagamento Recorrente
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos recorrentes:
 
@@ -204,12 +202,12 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos re
 
 ![Enabling payment method in Magento - Recurring Payments](/images/magento/magento-config-re-02.gif)
 
-4)  Pronto! o Pagamento Recorrente foi configurado com sucesso!
+4) Pronto! o Pagamento Recorrente foi configurado com sucesso!
 
 ![Recurring Payments configured successfully](/images/magento/magento-save.png)
 
-<a name="Configurações-de-status-de-Notificações-de-Pagamento"></a>
-## Configurações de status de Notificações de Pagamento: ##
+
+## Configurações de status de Notificações de Pagamento
 
 Esse processo irá explicar como configurar os status de pedido para as notificações de pagamento:
 
