@@ -36,8 +36,9 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | STORE_NAME | Branch name for payment made through a physical commerce. |
 | EXTERNAL_STORE_ID | User-defined branch ID for payment made through a physical commerce. |
 
+<hr/>
 
-Próximos pasos
+### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
 >
