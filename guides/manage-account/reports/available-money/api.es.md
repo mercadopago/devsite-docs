@@ -967,7 +967,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > [Generación desde Mercado Pago](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/panel)
 
-> LEFT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_ES
 >
 > Generación por retiro
 >

@@ -219,7 +219,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > [Generación desde Mercado Pago](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/panel)
 
-> LEFT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_ES
 >
 > Generación por API
 >
