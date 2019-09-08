@@ -28,7 +28,7 @@ SSL                       | É um requisito que você tenha um certificado SSL.<
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Smart Checkout, Modal)](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/)
+* [Checkout básico (Smart Checkout)](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/)
     * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
     * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/)
 
