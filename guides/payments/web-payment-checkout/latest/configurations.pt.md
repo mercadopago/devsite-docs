@@ -26,6 +26,8 @@ Se você oferece compras de valores altos, por exemplo, você pode aceitar [paga
 
 ## Exemplo de uma preferência completa
 
+----[mlm, mla, mlb, mlc, mlu]----
+
 ```json
 {
     "items": [
@@ -84,6 +86,87 @@ Se você oferece compras de valores altos, por exemplo, você pode aceitar [paga
     "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
 }
 ```
+
+------------
+----[mco]----
+
+ ```json
+{
+	"items": [
+		{
+			"id": "item-ID-1234",
+			"title": "Title of what you are paying for. It will be displayed in the payment process.",
+			"currency_id": "CLP",
+			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
+			"description": "Item description",
+			"category_id": "art", // Available categories at https://api.mercadopago.com/item_categories
+			"quantity": 1,
+			"unit_price": 100
+		}
+	],
+	"payer": {
+		"name": "user-name",
+		"surname": "user-surname",
+		"email": "user@email.com",
+		"date_created": "2015-06-02T12:58:41.425-04:00",
+		"phone": {
+			"area_code": "11",
+			"number": "4444-4444"
+		},
+		"identification": {
+			"type": "RUT", // Available ID types at https://api.mercadopago.com/v1/identification_types
+			"number": "12345678"
+		},
+		"address": {
+			"street_name": "Street",
+			"street_number": 123,
+			"zip_code": "5700"
+		}
+	},
+	"back_urls": {
+		"success": "https://www.success.com",
+		"failure": "http://www.failure.com",
+		"pending": "http://www.pending.com"
+	},
+	"auto_return": "approved",
+	"payment_methods": {
+		"excluded_payment_methods": [
+			{
+				"id": "master"
+			}
+		],
+		"excluded_payment_types": [
+			{
+				"id": "ticket"
+			}
+		],
+		"installments": 12,
+		"default_payment_method_id": null,
+		"default_installments": null
+	},
+	"shipments": {
+		"receiver_address": {
+			"zip_code": "5700",
+			"street_number": 123,
+			"street_name": "Street",
+			"floor": 4,
+			"apartment": "C"
+		}
+	},
+	"notification_url": "https://www.your-site.com/ipn",
+	"external_reference": "Reference_1234",
+	"expires": true,
+	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
+	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+	"taxes": [
+		{
+			"type": "IVA",
+			"value": 16
+		}
+	]
+}
+ ```
+------------
 
 ## Atributos para a preferência
 
@@ -193,6 +276,29 @@ Para ativá-lo, basta definir o atributo _`binary_mode`_ da preferência de paga
 ```json
 "binary_mode": true
 ```
+----[mco]----
+### IVA diferenciado
+ 
+Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas Nacionales (DIAN) que é aplicado de acordo com o produto ou serviço que você oferece. Se o valor não for diferenciado, será aplicado 19% como padrão.
+ 
+ Atributo | Descrição
+---------| -----------
+type | Identificador do imposto. Permitido somente os valores IVA e INC
+value | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero
+ 
+ ```json
+===
+É usado o atributo taxes para definir o valor correspondente
+===
+"taxes": [
+  {
+    "type": "IVA",
+    "value": 16
+  }
+]
+```
+ 
+------------
 
 ## Vigência de preferências
 
@@ -213,6 +319,8 @@ O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de softw
 "sponsor_id": 123456789
 ```
 
+----[mlm, mla, mlb]----
+
 ## Pagamentos com 2 cartão de crédito
 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas_br.png)
@@ -222,6 +330,7 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
 
+------------
 
 ## Diversos itens
 

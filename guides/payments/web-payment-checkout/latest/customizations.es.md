@@ -16,13 +16,13 @@ sites_supported:
 >
 >
 >
-> [Esquema modal](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+> [Esquema redirect](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
 >
 > [Colores](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
 >
 > [Botones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
-## Esquema modal
+## Esquema redirect
 
 El Smart Checkout modal permite cambiar su esquema de apertura.
 
@@ -31,51 +31,81 @@ Los esquemas disponibles actualmente son:
 * **Redirect**: abre el Smart Checkout en una nueva ventana.
 * **Modal**: abre el Smart Checkout en tu sitio.
 
-![Checkout-Modal](/images/web-payment-checkout/checkout-modal.png)
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
-Para integrar el esquema modal, reemplaza el botón de pago que realizaste en la integración
+Para integrar el esquema redirect, reemplaza el botón de pago que realizaste en la integración
 básica por el siguiente snippet:
 
 [[[
 ```php
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<?php echo $preference->id; ?>">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="$$init_point$$" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```java
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="${preference.id}">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```ruby
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="<%= @init_point %>" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```csharp
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="@Html.DisplayFor(model => model.id)">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ]]]
 

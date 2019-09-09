@@ -39,6 +39,7 @@ Fraud prevention               	     |      ✔      |         ✔           |  
 Payment completion screen		         |      ✔      |                     |
 Payment with two cards		           |      ✔      |                     |
 
+
 > NOTE
 >
 > Note

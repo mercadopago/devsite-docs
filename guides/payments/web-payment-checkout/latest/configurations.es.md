@@ -317,6 +317,8 @@ El atributo `sponsor_id` es un identificador del desarrollador o compañía de s
 "sponsor_id": 123456789
 ```
 
+----[mlm, mla, mlb]----
+
 ## Pagos con dos tarjetas de crédito
 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
@@ -326,6 +328,7 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
+------------
 
 ## Múltiples ítems
 

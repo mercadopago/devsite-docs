@@ -211,6 +211,8 @@ The `sponsor_id` attribute is an identifier of the developer or software company
 "sponsor_id": 123456789
 ```
 
+----[mlm, mla, mlb]----
+
 ## Payments with Two Credit Cards
 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
@@ -220,6 +222,7 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
+------------
 
 ## Multiple Items
 
