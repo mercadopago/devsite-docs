@@ -3,8 +3,8 @@
 * [Requisitos](#bookmark_requisitos)
 * [Instalación](#bookmark_instalación)
 * [Actualización](#bookmark_actualización)
-* Checkout Personalizado
-* Checkout Básico
+* [Configurar el Checkout Personalizado (Tarjeta de crédito y Tickets)](#bookmark_configurar_el_checkout_personalizado_ (tarjeta_de_crédito_y_tickets))
+* [Configurar el Checkout Clásico](#bookmark_configurar_el_checkout_clásico)
 * [Configuración de estado de las notificaciones de Pago](#bookmark_configuración_de_estado_de_las_notificaciones_de_pago)
 
 El módulo de Mercado Pago para Magento ofrece las siguientes funcionalidades:
@@ -111,7 +111,7 @@ Una vez realizado este proceso, ejecute el proceso de **Instalación**.
 > Siempre haga una copia de seguridad antes de realizar cualquier cambio.
 
 
-## Configuración para procesar Tarjeta de crédito y Tickets
+## Configurar el Checkout Personalizado (Tarjeta de crédito y Tickets)
 
 Este proceso explicará cómo configurar el módulo para aceptar pagos con Checkout Personalizado con tarjeta de crédito y tickets:
 
@@ -136,8 +136,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 ![Configuración de checkout exitosa Mercado Pago Magento](/images/magento/magento-save.png)
 
 
-## Configurar el Checkout Redirect, Iframe y LightBox
-
+## Configurar el Checkout Clásico
 Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
 
 1) Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
