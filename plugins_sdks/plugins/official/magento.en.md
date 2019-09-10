@@ -4,8 +4,8 @@
 * [Requirements](#bookmark_requirements)
 * [Installation](#bookmark_installation)
 * [Upgrade](#bookmark_upgrade)
-* Checkout Custom 
-* Basic Checkout 
+* [Configure Checkout Custom (Credit Card and Ticket)](#bookmark_configure_checkout_custom_(credit_card_and_ticket))
+* [Configure Checkout Classic](#bookmark_configure_checkout_classic)
 * [Payment Notification Status Settings](#bookmark_payment_notification_status_settings) 
 
 
@@ -114,7 +114,7 @@ After doing this process, run the **Installation** process.
 > Always remember to make a backup of yours before making any changes.
 
 
-## Configure Credit Card and Ticket
+## Configure Checkout Custom (Credit Card and Ticket)
 
 This process will explain how to configure the module to accept payments with Checkout Custom with Credit Card and Tickets:
 
@@ -139,7 +139,7 @@ This process will explain how to configure the module to accept payments with Ch
 ![Successfully configured basic checkout](/images/magento/magento-save.png)
 
 
-## Configure Checkout Redirect, Iframe, and LightBox
+## Configure Checkout Classic
 
 This process will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox:
 
