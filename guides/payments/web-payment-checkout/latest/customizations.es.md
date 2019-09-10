@@ -31,7 +31,7 @@ Los esquemas disponibles actualmente son:
 * **Redirect**: abre el Smart Checkout en una nueva ventana.
 * **Modal**: abre el Smart Checkout en tu sitio.
 
-![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
 
 Para integrar el esquema redirect, reemplaza el botón de pago que realizaste en la integración
 básica por el siguiente snippet:

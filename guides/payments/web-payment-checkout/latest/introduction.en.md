@@ -13,12 +13,29 @@ sites_supported:
 
 Smart Checkout of Mercado Pago is the integration that **allows you to charge through our web form from any device** in a simple, fast and secure way. 
 
-![Basic-Checkout](/images/web-payment-checkout/cho-introduction.png)
+![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
 
 
 ## Smart Checkout offers:
 
+----[mla]----
 * Payment with the main <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+------------
+----[mlm]----
+* Payment with the main <a href="https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+------------
+----[mlc]----
+* Payment with the main <a href="https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+------------
+----[mlu]----
+* Payment with the main <a href="https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+------------
+----[mco]----
+* Payment with the main <a href="https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+------------
+----[mlb]----
+* Payment with the main <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank">payment methods</a> in the country.
+------------
 * A **shopping experience that is adapted** and accessible from any cell phone or computer device on your site.  
 * **One click purchases.** When paying with a Mercado Pago account, the details and cards of the buyers are saved, so it allows payments by entering only the security code or money in account.
 * **Guest purchases.** It is not necessary to create a Mercado Pago account in order to make the payment.
@@ -27,8 +44,9 @@ Smart Checkout of Mercado Pago is the integration that **allows you to charge th
 
 ## Differences between the Smart Checkout with other Mercado Pago tools
 
+----[mla, mlb]----
                                    | Smart Checkout|Web Tokenize Checkout|      API
-:---------------------------------  | :-----------: | :-------------------: | :---------:
+:---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |
 Optimized for the best conversion	   |      ✔      |         ✔           |
@@ -39,6 +57,20 @@ Fraud prevention               	     |      ✔      |         ✔           |  
 Payment completion screen		         |      ✔      |                     |
 Payment with two cards		           |      ✔      |                     |
 
+------------
+----[mlm, mlu, mco, mlc]----
+                                   | Smart Checkout|Web Tokenize Checkout|      API
+:---  | :---: | :---: | :---:
+Integration difficulty		  	      |     Low    |       Medium         |     High
+UI/UX Design 							  	       |      ✔      |         ✔           |
+Optimized for the best conversion	   |      ✔      |         ✔           |
+Optimized to improve approval        |      ✔      |                     |  
+Payment of guest users        	     |      ✔      |         ✔           |      ✔
+Payment of registered users          |      ✔      |                     |
+Fraud prevention               	     |      ✔      |         ✔           |      ✔
+Payment completion screen		         |      ✔      |                     |
+
+------------
 
 > NOTE
 >

@@ -31,7 +31,7 @@ The schemes currently available are:
 * **Redirect**: Opens the Smart Checkout in a new window.
 * **Modal**: Opens the Smart Checkout on your website.
 
-![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
 
 To integrate the redirect scheme, replace the payment button you made in the basic integration with the following snippet:
 
