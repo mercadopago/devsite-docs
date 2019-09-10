@@ -4,8 +4,8 @@
 * [Requisitos](#bookmark_requisitos)
 * [Instalação](#bookmark_instalação) 
 * [Atualização](#bookmark_atualização)
-* Checkout Custom (Transparente)
-* Checkout Básico 
+* [Configurar Checkout Custom (Cartão de Crédito e Boleto)](#bookmark_configurar_checkout_custom_(cartão_de_crédito_e_boleto))
+* [Configurar Checkout Clássico](#bookmark_configurar_checkout_clássico)
 * [Configurações de status de Notificações de Pagamento](#bookmark_configurações_de_status_de_notificações_de_pagamento)
 
 
@@ -114,7 +114,7 @@ Depois de feito esse processo, execute o processo de **Instalação**.
 > Lembre-se sempre de realizar um backup da sua loja antes de fazer qualquer alteração.
 
 
-## Configurando Cartão de Crédito e Boleto
+## Configurar Checkout Custom (Cartão de Crédito e Boleto)
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos com Checkout Custom (Transparente) com Cartão de crédito e Boleto:
 
@@ -139,7 +139,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 ![Successfully configured basic checkout](/images/magento/magento-save.png)
 
 
-## Configurando o Checkout Clássico (Redirect, Iframe e LightBox)
+## Configurar Checkout Clássico
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos com o Checkout Clássico no Redirect, Iframe ou Lightbox:
 
