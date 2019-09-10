@@ -7,7 +7,7 @@ curl -X POST \
             "title": "Dummy Item",
             "description": "Multicolor Item",
             "quantity": 1,
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "unit_price": 10.0
             }
         ]

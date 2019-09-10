@@ -170,7 +170,7 @@ Payer payer = new Payer()
   $item->id = "1234";
   $item->title = "Heavy Duty Plastic Table";
   $item->quantity = 7;
-  $item->currency_id = "BRL";
+  $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = 75.56;
   // ...
 ?>
@@ -182,7 +182,7 @@ items: [
       id: '1234',
       title: 'Lightweight Paper Table',
       quantity: 3,
-      currency_id: 'BRL',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 55.41
     }
   ]// ...
@@ -193,7 +193,7 @@ Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
     .setQuantity(3)
-    .setCurrencyId("BRL")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 55.41);
 // ...
 ```
@@ -203,7 +203,7 @@ item = MercadoPago::Item.new({
   id: "1234",
   title: "Lightweight Paper Table",
   quantity: 3,
-  currency_id: "BRL",
+  currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
 })# ...
 ```
@@ -215,7 +215,7 @@ preference.Items.Add(
     Id = "1234",
     Title = "Lightweight Paper Table",
     Quantity = 3,
-    CurrencyId = "BRL",
+    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)55.41
   }
 );

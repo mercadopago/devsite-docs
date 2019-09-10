@@ -308,7 +308,7 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
 		{
 			"id": "item-ID-1234",
 			"title": "Title of what you are paying for. It will be displayed in the payment process.",
-			"currency_id": "CLP",
+			"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
 			"category_id": "art", // Available categories at https://api.mercadopago.com/item_categories

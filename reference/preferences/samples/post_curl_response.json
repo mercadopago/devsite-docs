@@ -8,7 +8,7 @@
             "title": "Dummy Item",
             "description": "Multicolor Item",
             "category_id": "",
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "quantity": 1,
             "unit_price": 10
         }
