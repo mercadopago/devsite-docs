@@ -1,10 +1,6 @@
 ---
 sites_supported:
-  - mlm
-  - mlc
   - mpe
-  - mco
-  - mlu
 ---
 
 # Campañas de descuento

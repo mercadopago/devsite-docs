@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Teste sua integração
@@ -139,7 +143,7 @@ Ao terminar o formulário, certifique-se de que as credenciais na sua integraç�
 >
 > [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON
 >
 > Customizações
 >

@@ -6,7 +6,7 @@ sites_supported:
 ---
 
 # Mercado Pago Gateway: Smart Checkout
-----[mla]----
+----[mla, mlb, mlc, mlm, mco, mlu]----
 > NOTE
 >
 > Pre-requisito
@@ -15,7 +15,7 @@ sites_supported:
 > Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Smart Checkout**
 ------------
 
-----[mlb,mlc,mlm,mpe,mco,mlu]----
+----[mpe]----
 > NOTE
 >
 > Pre-requisito

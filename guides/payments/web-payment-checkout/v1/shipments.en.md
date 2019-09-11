@@ -2,7 +2,13 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlc
+  - mlm
 ---
+
+# MercadoEnvíos
 
 > WARNING
 >
@@ -11,8 +17,6 @@ sites_supported:
 > This documentation refers to the new version of the Smart Checkout.
 >
 > Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
-
-# MercadoEnvíos
 
 Implement the logistics of your business with **Mercado Envíos**.
 
