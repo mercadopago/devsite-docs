@@ -93,7 +93,12 @@ gem install mercadopago-sdk
 ```
 ```csharp
 ===
+----[mlb]----
+Use <a href="https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
+------------
+----[mla, mco, mlu, mlc, mlm]----
 Use <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
+------------
 To do this, run the following command in the NuGet Package Manager console:
 ===
 PM> Install-Package mercadopago-sdk -Version 1.0.57

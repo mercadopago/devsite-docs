@@ -172,16 +172,33 @@ Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos t
 
 ### Definición de medios de pago
 
+----[mla, mco, mlb, mlu, mlc]----
 Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
 También se puede definir un medio de pago para que aparezca por defecto o la cantidad de cuotas máximas a ofrecer.
+------------
+----[mlm]----
+Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
+También se puede definir un medio de pago para que aparezca por defecto o la cantidad de mensualidades máximas a ofrecer.
+------------
 
 
+----[mla, mco, mlb, mlu, mlc]----
 Atributo | Descripción
------------- | -------------
+------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
 _`excluded_payment_methods`_ | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
 _`excluded_payment_types`_ | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
+------------
+
+----[mlm]----
+Atributo | Descripción
+------ | -----
+_`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
+_`excluded_payment_methods`_ | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
+_`installments`_ | Método que define la cantidad de mensualidades máximas a ofrecer.
+------------
 
 [[[
 ```php
@@ -317,7 +334,7 @@ El atributo `sponsor_id` es un identificador del desarrollador o compañía de s
 "sponsor_id": 123456789
 ```
 
-----[mlm, mla, mlb]----
+----[mla, mlb]----
 
 ## Pagos con dos tarjetas de crédito
 

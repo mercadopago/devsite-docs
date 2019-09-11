@@ -320,7 +320,7 @@ O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de softw
 "sponsor_id": 123456789
 ```
 
-----[mlm, mla, mlb]----
+----[mla, mlb]----
 
 ## Pagamentos com 2 cartão de crédito
 

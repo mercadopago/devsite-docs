@@ -211,7 +211,7 @@ The `sponsor_id` attribute is an identifier of the developer or software company
 "sponsor_id": 123456789
 ```
 
-----[mlm, mla, mlb]----
+----[mla, mlb]----
 
 ## Payments with Two Credit Cards
 
