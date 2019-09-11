@@ -263,20 +263,8 @@ paymentmethods.Installments = 12;
 ```
 ]]]
 
-## Modo binario
-
-Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago solo puede resultar aprobado o rechazado.
-
-En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
-
-Para activarlo, solo debes configurar como `true` el atributo _`binary_mode`_ de la preferencia de pago:
-
-```json
-"binary_mode": true
-```
-
 ----[mco]----
-### IVA diferenciado
+## IVA diferenciado
 
  Puedes modificar el valor del impuesto para la Dirección de Impuestos y Aduanas Nacionales (DIAN) que aplique según el producto o servicio que ofrezcas. Si no diferencias este valor, se aplicará por defecto el 19%.
 
@@ -298,6 +286,18 @@ Usa el atributo taxes para definir el valor que corresponda
 ```
 
 ------------
+
+## Modo binario
+
+Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago solo puede resultar aprobado o rechazado.
+
+En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
+
+Para activarlo, solo debes configurar como `true` el atributo _`binary_mode`_ de la preferencia de pago:
+
+```json
+"binary_mode": true
+```
 
 ## Vigencia de preferencias
 

@@ -38,7 +38,24 @@ To continue, check the necessary prerequisites:
 
 ### 1. Access to the Mercado Pago or Mercado Libre account
 In order to start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account.**.
+----[mla]----
 If you don't have one yet, you can <a href="https://www.mercadopago.com.ar/" target="_blank"> create a Mercado Pago account</a> whenever you want.
+------------
+----[mlm]----
+If you don't have one yet, you can <a href="https://www.mercadopago.com.mx/" target="_blank"> create a Mercado Pago account</a> whenever you want.
+------------
+----[mlu]----
+If you don't have one yet, you can <a href="https://www.mercadopago.com.uy/" target="_blank"> create a Mercado Pago account</a> whenever you want.
+------------
+----[mlc]----
+If you don't have one yet, you can <a href="https://www.mercadopago.cl/" target="_blank"> create a Mercado Pago account</a> whenever you want.
+------------
+----[mco]----
+If you don't have one yet, you can <a href="https://www.mercadopago.com.co/" target="_blank"> create a Mercado Pago account</a> whenever you want.
+------------
+----[mlb]----
+If you don't have one yet, you can <a href="https://www.mercadopago.com.br/" target="_blank"> create a Mercado Pago account</a> whenever you want.
+------------
 
 ### 2. Installations of Mercado Pago SDK
 **Install the official SDK** to simplify your interaction with our APIs.

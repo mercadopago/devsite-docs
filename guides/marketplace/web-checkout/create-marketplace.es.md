@@ -1,19 +1,18 @@
 # Cómo integrar marketplace en el Checkout Web
 
-----[mla]----
+----[mla,mlb,mlc,mlm,mco,mlu]----
 > WARNING
 >
 > Pre-requisitos
 >
 > * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction).
 ------------
-
-----[mlb,mlc,mlm,mpe,mco,mlu]----
+----[mpe]----
 > WARNING
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction).
+> * Tener implementado [Checkout](https://www.mercadopago.com.pe/developers/es/guides/payments/web-checkout/introduction).
 ------------
 
 

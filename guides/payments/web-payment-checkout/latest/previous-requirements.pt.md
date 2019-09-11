@@ -38,7 +38,24 @@ Para continuar, confira os pré-requisitos:
 
 ### 1. Acesso à conta do Mercado Pago ou do Mercado Livre
 Para poder começar a integração, é necessário **contar com uma conta do Mercado Pago ou do Mercado Livre.**
+----[mla]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.ar/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlm]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.mx/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlu]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.uy/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mco]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.co/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlc]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.cl/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlb]----
 Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.br/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
 
 ### 2.  Instalação do SDK do Mercado Pago
 **Instale o SDK oficial** para simplificar sua integração com as nossas APIs.

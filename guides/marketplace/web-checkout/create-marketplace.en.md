@@ -1,10 +1,19 @@
 # How to Integrate the Marketplace in the Smart Checkout
 
+----[mla,mlb,mlc,mlm,mco,mlu]----
+> WARNING
+>
+> Prerequisites
+>
+> * Have the [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implemented.
+------------
+----[mpe]----
 > WARNING
 >
 > Prerequisites
 >
 > * Have the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
+------------
 
 To begin, you need to:
 
