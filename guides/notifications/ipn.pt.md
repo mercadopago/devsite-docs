@@ -1,6 +1,6 @@
 # Notificações IPN
 
-----[mla,mlb,mlc,mlm,mco,mlu]----
+----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
 >
 > Pré-requisitos
