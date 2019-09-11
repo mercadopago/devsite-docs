@@ -1,0 +1,14 @@
+---
+resource: stores.raml
+samples:
+- byid_curl.sh
+- byid_curl_response.json
+use:
+- id
+errors:
+- 400 BAD_REQUEST:
+  - 'INVALID_STORE_ID':
+      description:
+        en: invalid_store_id.
+        es: store_id debe ser valido.
+        pt:  

@@ -1,0 +1,26 @@
+---
+resource: stores.raml
+samples:
+- curl.sh
+use:
+- id
+- user_id
+errors:
+- 400 BAD_REQUEST:
+  - 'INVALID_USER_ID':
+      description:
+        en: user_id must be number.
+        es: El usuario debe ser un número.
+        pt: 
+  - 'INVALID_STORE_ID':
+      description:
+        en: store_id must be number.
+        es: El store_id debe ser un número.
+        pt:          
+  - 'UNKNOWN_FIELD':
+      description:
+        en: 
+        es: Campo desconocido
+        pt: 
+
+

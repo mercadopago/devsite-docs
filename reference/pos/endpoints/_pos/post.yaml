@@ -1,0 +1,113 @@
+---
+resource: pos.raml
+samples:
+- curl.sh
+- curl_response.json
+use:
+- name
+- fixed_amount
+- category
+- store_id
+- external_store_id
+- external_id
+- url
+errors:
+- 400 BAD_REQUEST:
+  - 'MISSING_BODY':
+      description:
+        en: 
+        es: El body es requerido para modificar cajas.
+        pt: 
+  - 'UNKNOWN_FIELD_EXCEPTION':
+      description:
+        en: 
+        es: El campo indicado no se permite para esta operación o es desconocido.
+        pt: 
+  - 'POS_INVALID_NAME':
+      description:
+        en: 
+        es: El name debe ser String.
+        pt: 
+  - 'POS_NAME_TOO_LONG':
+      description:
+        en: 
+        es: El name debe ser menor a 45 caracteres.
+        pt: 
+  - 'POS_INVALID_FIXED_AMOUNT':
+      description:
+        en: 
+        es: El campo fixed_amount debe ser Boolean.
+        pt: 
+  - 'POS_INVALID_CATEGORY':
+      description:
+        en: 
+        es: El campo category debe ser numérico.
+        pt:
+  - 'POS_UNKNOWN_MCC':
+      description:
+        en: 
+        es: El campo category debe ser uno válido para el site del usuario.
+        pt: 
+  - 'POS_INVALID_STORE_ID':
+      description:
+        en: 
+        es: El campo store_id debe ser numérico.
+        pt: 
+  - 'POS_INVALID_EXTERNAL_STORE_ID':
+      description:
+        en: 
+        es: El campo external_store_id debe ser String.
+        pt: 
+  - 'POS_EXTERNAL_STORE_ID_NOT_MATCH':
+      description:
+        en: 
+        es: El campo external_store_id no hace referencia al store_id indicado.
+        pt: 
+  - 'POS_INEXISTENT_EXTERNAL_STORE_ID':
+      description:
+        en:
+        es: El campo external_store_id no hace referencia a ningún store existente.
+        pt: 
+  - 'POS_INVALID_EXTERNAL_ID':
+      description:
+        en: 
+        es: El campo external_id debe ser alfanumérico, solo letras y números. Sin espacios ni guiones, ni caracteres especiales.
+        pt: 
+  - 'POS_EXTERNAL_ID_TOO_LONG':
+      description:
+        en: 
+        es: El campo external_id debe ser menor a 40 caracteres.
+        pt: 
+  - 'POS_INVALID_URL':
+      description:
+        en: 
+        es: El campo url debe ser String, y tener el formato de una url válida.
+        pt: 
+  - 'POS_URL_TOO_LONG':
+      description:
+        en: 
+        es: El campo url debe ser menor a 300 caracteres.
+        pt: 
+  - 'POS_FIXED_AMOUNT_FALSE':
+      description:
+        en: 
+        es: Si se indica el campo url el campo fixed_amount debe ser true. No soportamos la modalidad de monto abierto en este caso.
+        pt: 
+- 403 FORBIDDEN:
+  - '1':
+      description:
+        en: 
+        es: Si estás usando el campo url, el host de la misma tiene que estar whitelisteado en nuestra aplicación. Si no lo está, recibirás este error. Por favor contactá a nuestro equipo de integraciones.
+        pt: 
+- 404 NOT_FOUND:
+  - '1':
+      description:
+        en: 
+        es: Si no existe el POS para un id y user indicados.
+        pt:        
+- 409 CONFLICT:
+  - '1':
+      description:
+        en: 
+        es: Ya existe una caja con el mismo external_id
+        pt: 

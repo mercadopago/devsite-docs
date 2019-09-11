@@ -1,0 +1,36 @@
+{
+"id": "00000001",
+"name": "Cambio Sucursal",
+"date_creation": "2019-08-09T09:09:07Z",
+"business_hours": {
+  "monday": [
+	{
+	  "open": "08:00",
+	  "close": "13:00"
+	},
+	{
+	  "open": "15:00",
+	  "close": "18:00"
+	}
+  ],
+  "tuesday": [
+	{
+	  "open": "08:00",
+	  "close": "18:00"
+	}
+  ],
+  "wednesday": [
+	{
+	  "open": "07:00",
+	  "close": "10:00"
+	}
+  ]
+},
+"location": {
+	"address_line": "H. Yrigoyen 13298, Almirante Brown, Buenos Aires, Argentina",
+	"reference": "3er Piso",
+	"latitude": -32.8897322,
+	"longitude": -68.8443275
+},
+"external_id": "SUC001"
+}
