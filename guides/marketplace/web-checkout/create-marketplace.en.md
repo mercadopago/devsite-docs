@@ -1,6 +1,6 @@
 # How to Integrate the Marketplace in the Smart Checkout
 
-----[mla,mlb,mlc,mlm,mco,mlu]----
+----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
 >
 > Prerequisites
