@@ -1,6 +1,6 @@
 # Recibir pagos
 
-----[mla,mlb,mlc,mlm,mco]----
+----[mla, mlb, mlc, mlm, mco]----
 > En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)** o **[API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)**.
 ------------
 
