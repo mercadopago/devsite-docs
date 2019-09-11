@@ -33,7 +33,7 @@ Os esquemas disponíveis atualmente são:
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
-Para integrar o esquema redirect, substitua o botão de pagamento que fez na integração básica pelo seguinte snippet:
+Para integrar o esquema de redirecionamento, substitua o botão de pagamento que você fez na integração básica por este novo e adicione o link do Web Checkout ao seu site no local em que deseja que ele apareça.
 
 [[[
 ```php

@@ -39,8 +39,9 @@ O Smart Checkout do Mercado Pago é a integração que **te permite cobrar atrav
 * Uma **experiência de compra adaptada** e acessível de qualquer celular ou computador no seu site.
 * **Compras em um clique.** Ao pagar com uma conta do Mercado Pago, os dados e cartões dos compradores são salvos, o que lhes permite pagar informando apenas o código de segurança ou dinheiro na conta.
 * **Compras de convidados.** Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
+----[mla, mlb]----
 * **Pagamento com dois cartões.** Por exemplo, para casos de valores altos.	 
-
+------------
 
 ## Diferenças do Smart Checkout com outras ferramentas do Mercado Pago
 

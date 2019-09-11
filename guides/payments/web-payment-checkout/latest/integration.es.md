@@ -33,7 +33,7 @@ sites_supported:
 
 	1.3 Configura la preferencia según tu producto o servicio.
 
-2. Suma el Checkout a tu sitio
+2. Suma el checkout a tu sitio
 
 ## Pasos para integrarte
 
@@ -248,7 +248,7 @@ curl -X POST \
 
 ### 2. Suma el checkout a tu sitio
 
-Por último, suma el siguiente código para mostrar el botón de pago de tu Web Checkout en el lugar que quieras que aparezca.
+Por último, suma el siguiente código para mostrar el botón de pago de tu Smart Checkout en el lugar que quieras que aparezca.
 
 [[[
 ```php

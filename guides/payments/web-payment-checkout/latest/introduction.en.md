@@ -13,8 +13,12 @@ sites_supported:
 
 Smart Checkout of Mercado Pago is the integration that **allows you to charge through our web form from any device** in a simple, fast and secure way. 
 
+----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
-
+------------
+----[mlc, mco, mlu, mlb, mlm]----
+![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
+------------
 
 ## Smart Checkout offers:
 
@@ -39,8 +43,9 @@ Smart Checkout of Mercado Pago is the integration that **allows you to charge th
 * A **shopping experience that is adapted** and accessible from any cell phone or computer device on your site.  
 * **One click purchases.** When paying with a Mercado Pago account, the details and cards of the buyers are saved, so it allows payments by entering only the security code or money in account.
 * **Guest purchases.** It is not necessary to create a Mercado Pago account in order to make the payment.
+----[mla, mlb]----
 * **Payment with two different cards.** For example, i cases of high amounts.
-
+------------
 
 ## Differences between the Smart Checkout with other Mercado Pago tools
 

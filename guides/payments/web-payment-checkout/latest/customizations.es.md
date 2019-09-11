@@ -31,10 +31,15 @@ Los esquemas disponibles actualmente son:
 * **Redirect**: abre el Smart Checkout en una nueva ventana.
 * **Modal**: abre el Smart Checkout en tu sitio.
 
+----[mla]----
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
+------------
+----[mlc, mco, mlu, mlb, mlm]----
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-sv.png)
+------------
 
-Para integrar el esquema redirect, reemplaza el botón de pago que realizaste en la integración
-básica por el siguiente snippet:
+
+Para integrar el esquema redirect, reemplaza el botón de pago que realizaste en la integración básica por este nuevo y suma el link del Web Checkout en tu sitio en el lugar que quieras que aparezca.
 
 [[[
 ```php

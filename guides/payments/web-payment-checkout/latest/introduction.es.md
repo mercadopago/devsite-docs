@@ -13,8 +13,12 @@ sites_supported:
 
 Smart Checkout de Mercado Pago es la integración que **te permite cobrar a través de nuestro formulario web desde cualquier dispositivo** de manera simple, rápida y segura.
 
+----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
-
+------------
+----[mlc, mco, mlu, mlb, mlm]----
+![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
+------------
 
 ## Smart Checkout ofrece:
 
@@ -39,8 +43,9 @@ Smart Checkout de Mercado Pago es la integración que **te permite cobrar a trav
 * Una **experiencia de compra adaptada** y accesible desde cualquier celular o computadora.  
 * **Compras en un click.** Al pagar con una cuenta de Mercado Pago, se recuerdan los datos y tarjetas de los compradores, por lo que permite pagos ingresando solo el código de seguridad o dinero en cuenta.
 * **Compras de invitados.** No es necesario crear una cuenta de Mercado Pago para poder hacer el pago.
+----[mla, mlb]----
 * **Pago con dos tarjetas.** Por ejemplo, para casos de montos altos.
-
+------------
 
 ## Diferencias de Smart Checkout con otras herramientas de Mercado Pago
 

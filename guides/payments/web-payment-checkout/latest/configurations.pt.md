@@ -10,6 +10,7 @@ sites_supported:
 
 # Outras funcionalidades
 
+----[mlc, mco, mlm, mlu]----
 > INDEX
 >
 > Nesta página
@@ -20,9 +21,30 @@ sites_supported:
 >
 > [Atributos para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência)
 
+------------
+----[mla, mlb]----
+> INDEX
+>
+> Nesta página
+>
+>
+>
+> [Exemplo de uma preferência completa](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_exemplo_de_uma_preferência_completa)
+>
+> [Atributos para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência)
+>
+> [Pagamentos com 2 cartão de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_artão_de_crédito)
+
+------------
+
 Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago.com.br/developers/pt/reference/preferences/resource/) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
 
+----[mla, mlb]----
 Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
+------------
+----[mlm, mlc, mlu, mco]----
+Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
+------------
 
 ## Exemplo de uma preferência completa
 
@@ -265,14 +287,14 @@ paymentmethods.Installments = 12;
 ]]]
 
 ----[mco]----
-## IVA diferenciado
+### IVA diferenciado
  
 Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas Nacionales (DIAN) que é aplicado de acordo com o produto ou serviço que você oferece. Se o valor não for diferenciado, será aplicado 19% como padrão.
  
  Atributo | Descrição
 ---------| -----------
-type | Identificador do imposto. Permitido somente os valores IVA e INC
-value | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero
+_`type`_ | Identificador do imposto. Permitido somente os valores IVA e INC.
+_`value`_ | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero.
  
  ```json
 ===
@@ -288,7 +310,7 @@ value | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens
  
 ------------
 
-## Modo binário
+### Modo binário
 
 Você pode ativar o modo binário se o modelo de negócios exigir que a aprovação do pagamento seja instantânea. Dessa forma, o pagamento só pode ser aprovado ou recusado.
 
@@ -301,7 +323,7 @@ Para ativá-lo, basta definir o atributo _`binary_mode`_ da preferência de paga
 "binary_mode": true
 ```
 
-## Vigência de preferências
+### Vigência de preferências
 
 Se quiser ativar o pagamento de uma preferência com uma determinada duração, poderá ativar um período de validade ou concluir diretamente com os seguintes atributos:
 
@@ -311,7 +333,7 @@ Se quiser ativar o pagamento de uma preferência com uma determinada duração, 
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-## Sponsor ID
+### Sponsor ID
 
 O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de software que faz a integração do  Smart Checkout, este dado é visível na preferência e no pagamento.
 
@@ -320,20 +342,8 @@ O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de softw
 "sponsor_id": 123456789
 ```
 
-----[mla, mlb]----
 
-## Pagamentos com 2 cartão de crédito
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas_br.png)
-
-Você pode ativar a opção de oferecer pagamento com dois cartões de crédito da conta do Mercado Pago. Para ativar a opção de pagamento, acesse as <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">opcões de negócio</a> e selecione a opção _Receber pagamentos com 2 cartões de crédito_.
-
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
-
-------------
-
-## Diversos itens
+### Diversos itens
 
 Se você precisar criar uma preferência para mais de um item, só deverá adicioná-los como uma lista dentro _dos items._
 Lembre-se de que o valor total da preferência será a soma do valor do preço unitário de cada item.
@@ -469,6 +479,19 @@ curl -X POST \
 }'
 ```
 ]]]
+
+----[mla, mlb]----
+
+## Pagamentos com 2 cartão de crédito
+
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas_br.png)
+
+Você pode ativar a opção de oferecer pagamento com dois cartões de crédito da conta do Mercado Pago. Para ativar a opção de pagamento, acesse as <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">opcões de negócio</a> e selecione a opção _Receber pagamentos com 2 cartões de crédito_.
+
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
+
+------------
 
 ---
 

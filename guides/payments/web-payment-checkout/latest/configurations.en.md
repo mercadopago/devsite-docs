@@ -10,6 +10,7 @@ sites_supported:
 
 # Other functionalities
 
+----[mla, mlb]----
 > INDEX
 >
 > In this page
@@ -19,6 +20,20 @@ sites_supported:
 > [Example of a complete preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_example_of_a_complete_preference)
 >
 > [Attributes for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_preference)
+>
+> [Payments with Two Credit Cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_payments_with_two_credit_cards)
+------------
+----[mlc, mco, mlu, mlm]----
+> INDEX
+>
+> In this page
+>
+>
+>
+> [Example of a complete preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_example_of_a_complete_preference)
+>
+> [Attributes for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_preference)
+------------
 
 You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
@@ -181,7 +196,7 @@ paymentmethods.Installments = 12;
 ```
 ]]]
 
-## Binary Mode
+### Binary Mode
 
 You can activate the binary mode if the business model requires payment approval to be instantaneous. This way, payment can only be approved or declined.
 
@@ -193,7 +208,7 @@ To activate it, you only have to set the _`binary_mode`_ attribute of the paymen
 "binary_mode": true
 ```
 
-## Validity of Preferences
+### Validity of Preferences
 
 If you want to enable the payment of a preference with a certain duration, you can activate a period of validity or complete directly with the following attributes:
 
@@ -203,7 +218,7 @@ If you want to enable the payment of a preference with a certain duration, you c
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-## Sponsor ID
+### Sponsor ID
 
 The `sponsor_id` attribute is an identifier of the developer or software company that performs the Smart Checkout integration, this data is visible in the preference and in the payment.
 
@@ -211,20 +226,8 @@ The `sponsor_id` attribute is an identifier of the developer or software company
 "sponsor_id": 123456789
 ```
 
-----[mla, mlb]----
 
-## Payments with Two Credit Cards
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
-You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
-To activate the payment option, go to your <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">business options</a> and choose the option _Receive payments with 2 credit cards_.
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
-
-------------
-
-## Multiple Items
+### Multiple Items
 
 If you need to create a preference for more than one item, you should only add them as a list within _items_.
 Keep in mind that the total amount of the preference will be the sum of the amount for the unit price of each item.
@@ -359,6 +362,19 @@ curl -X POST \
 }'
 ```
 ]]]
+
+----[mla, mlb]----
+
+## Payments with Two Credit Cards
+
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
+
+You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
+To activate the payment option, go to your <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">business options</a> and choose the option _Receive payments with 2 credit cards_.
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
+------------
 
 ---
 
