@@ -18,14 +18,14 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tenés que preocuparte de nada. Si tenés algún problema, te respaldamos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
-----[mla, mlb]----
+----[mla, mlb, mco, mlu, mlc, mlm]----
 
 [Integrar Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)
 
 ------------
-----[mlm, mpe, mco, mlu, mlc]----
+----[mpe]----
 
-[Integrar Smart Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-payment-checkout/introduction/)
+[Integrar Smart Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/receive-payments/)
 
 ------------
 
