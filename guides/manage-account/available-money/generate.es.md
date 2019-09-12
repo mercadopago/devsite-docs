@@ -6,7 +6,7 @@
 >
 > [Canales de generación](#bookmark_canales_de_generación)
 >
-> [Cómo está compuesto el reporte](#bookmark_cómo_está_compuesto_el_reporte)
+> [Características técnicas del reporte](#bookmark_características_técnicas_del_reporte)
 
 
 ## Canales de generación
@@ -20,7 +20,7 @@ Existen tres formas de generar un reporte de Dinero Disponible:
 | Con el retiro de dinero | <br/>Genera un reporte automáticamente cada vez que retires tu saldo disponible a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero.](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/withdrawal)<br/><br/> |
 
 
-## Cómo está compuesto el reporte
+## Características técnicas del reporte
 
 Ten en cuenta la siguiente información técnica cuando quieras generar, programar y configurar tus reportes.
 

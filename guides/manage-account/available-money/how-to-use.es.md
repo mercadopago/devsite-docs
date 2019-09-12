@@ -12,9 +12,7 @@
 
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que uses.
 
-Para consultar el reporte te recomendamos descargarlo en formato .csv para abrirlo en el programa que lo visualices. El archivo debe estar configurado en formato UTF-8 para evitar problemas de lectura. 
-A esto lo puedes comprobar en los ajustes del programa que uses.
-
+Para consultar el reporte te recomendamos descargarlo en formato .csv para abrirlo en el programa que lo visualices. Configura tu programa para que soporte el formato UTF-8, así evitas problemas de lectura.
 
 ## ¿Qué contiene el reporte?
 
