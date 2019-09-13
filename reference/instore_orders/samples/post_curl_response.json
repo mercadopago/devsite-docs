@@ -1,0 +1,69 @@
+{
+  "id": "360472057-3d2cadbf-2c54-485c-bcb9-f262adc14af6",
+  "items": [
+      {
+            "title" : "Shampoo",
+            "id" : "78123172",
+            "currency_id" : "ARS",
+            "unit_price" : 120.00,
+            "quantity" : 1,
+            "description": "Almendras",
+            "picture_url": "https://bit.ly/2Tfs6Zw"
+     }
+  ],
+  "collector_id": 360472057,
+  "collector": {},
+  "total_amount": 120,
+  "amount": 120,
+  "external_reference": "Factura-0001",
+  "operation_type": "regular_payment",
+  "payment_methods": {
+      "excluded_payment_methods": [
+          {
+              "id": ""
+          }
+      ],
+      "excluded_payment_types": [
+          {
+              "id": "ticket"
+          },
+          {
+              "id": "atm"
+          }
+      ]
+  },
+  "marketplace": "NONE",
+  "marketplace_fee": 0,
+  "sponsor_id": 446566691,
+  "notification_url": "http://www.yourserver.com",
+  "back_urls": {
+      "success": "",
+      "pending": "",
+      "failure": ""
+  },
+  "payer": {
+      "id": 0,
+      "email": "",
+      "identification": {
+          "number": "",
+          "type": ""
+      },
+      "address": {
+          "primary": false,
+          "zip": ""
+      },
+      "phone": {
+          "area_code": "",
+          "number": ""
+      },
+      "internal_tags": []
+  },
+  "expires": false,
+  "additional_info": "",
+  "site_id": "MLA",
+  "client_id": 360472057,
+  "processing_modes": [
+      "aggregator"
+  ],
+  "internal_metadata": {}
+}

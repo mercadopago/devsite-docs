@@ -1,0 +1,117 @@
+---
+type: object
+properties:
+- user_id:
+    type: String
+    description:
+      en: 
+      es: Identificador del usuario.
+      pt:  
+- external_id:
+    type: String
+    description:
+      en: 
+      es: Identificador único de la caja/punto de venta, definido por el integrador. 
+      pt:       
+- external_reference:
+    type: String(256)
+    description:
+      en: Reference you can synchronize with your payment system.
+      es: Código alfanumérico definido por el integrador para asociar el pago realizado hecho con la orden. Generalmente es el número de la orden.
+      pt: Referência que pode sincronizar com seu sistema de pagamentos.
+- notification_url:
+    type: String(500)
+    description:
+      en: URL where you'd like to receive a payment notification.
+      es: URL a la cual se enviará la notificación de pago.
+      pt: URL em que você gostaria de receber uma notificação de status de pagamento.
+- sponsor_id:
+    type: String
+    description:
+      en: Sponsor ID in Mercado Pago.
+      es: COLLECTOR_ID de la cuenta de Mercado Pago del integrador.
+      pt: Sponsor ID in Mercado Pago.
+- items:
+    type: Object
+    description:
+      en: items information.
+      es: Información de los productos involucrados en la orden.
+      pt: Informação do item.
+    properties:
+    - id:
+        type: String
+        description:
+          en: Item id.
+          es: Código del producto.
+          pt: Id do anúncio.
+    - title:
+        type: String
+        description:
+          en: Item title.
+          es: Título del producto.
+          pt: Título do item.        
+    - currency_id:
+        type: String(3)
+        description:
+          en: ID of the currency used in the item price.
+          es: Identificador de moneda en formato ISO_4217.
+          pt: Identificador da moeda utilizada no preço do item.
+          enum:
+            - ARS:
+                en: Argentine peso.
+                es: Peso argentino.
+                pt: Argentine peso.
+            - BRL:
+                en: Brasil real.
+                es: Real brasilero.
+                pt: Brasil real.
+            - CLP:
+                en: Chilean peso.
+                es: Peso chileno.
+                pt: Chilean peso.
+            - MXN:
+                en: Mexican peso.
+                es: Peso mexicano.
+                pt: Mexican peso.
+            - COP:
+                en: Colombian peso.
+                es: Peso colombiano.
+                pt: Colombian peso.
+            - PEN:
+                en: Peruvian sol.
+                es: Sol peruano.
+                pt: Peruvian sol.
+            - UYU:
+                en: Uruguayan peso.
+                es: Peso uruguayo.
+                pt: Uruguayan peso.
+    - unit_price:
+        type: Float
+        description:
+          en: Item unit price.
+          es: Precio unitario del producto (máximo 2 decimales).
+          pt: Preço unitário do item. 
+    - quantity:
+        type: Integer
+        description:
+          en: Total amount paid by the buyer.
+          es: Cantidad de producto.
+          pt: Montante total pago pelo comprador.                         
+    - description:
+        type: String
+        description:
+          en: Item description.
+          es: Descripción del producto.
+          pt: Descrição do anúncio.
+    - picture_url:
+        type: String
+        description:
+          en: Item picture URL.
+          es: URL de imagen del producto.
+          pt: URL da imagem do anúncio.
+
+
+
+
+
+

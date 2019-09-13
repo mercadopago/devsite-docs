@@ -1,0 +1,21 @@
+---
+resource: pos.raml
+samples:
+- curl.sh
+use:
+- id
+errors:
+- 400 BAD_REQUEST:
+  - 'INVALID_POS_ID':
+      description:
+        en: 
+        es: El id del POS indicado es inválido, tiene que ser numérico.
+        pt: 
+- 404 NOT_FOUND:
+  - '1':
+      description:
+        en: 
+        es: Si no existe el POS para un id y user indicados.
+        pt: 
+
+

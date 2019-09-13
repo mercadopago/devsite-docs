@@ -1,0 +1,24 @@
+---
+resource: instore_orders.raml
+samples:
+- curl.sh
+use:
+- user_id
+- external_id
+errors:
+- 400 BAD_REQUEST:
+  - invalid_collector_id:
+      description:
+        en: collector_id must be a number.
+        es: collector_id debe ser un número.
+        pt: collector_id must be a number.
+  - invalid_collector_id:
+      description:
+        en: collector_id invalid.
+        es: collector_id inválido.
+        pt: collector_id invalid.
+  - invalid_access_token:
+      description:
+        en: access denied
+        es: Acceso denegado.
+        pt: access denied

@@ -1,0 +1,109 @@
+---
+resource: instore_orders.raml
+samples:
+- curl.sh
+- curl_response.json
+use:
+- user_id
+- external_id
+- external_reference
+- notification_url
+- sponsor_id
+- items
+errors:
+- 400 BAD_REQUEST:
+  - invalid_collector_id:
+      description:
+        en: collector_id must be a number.
+        es: collector_id debe ser un número.
+        pt: collector_id must be a number.
+  - invalid_collector_id:
+      description:
+        en: collector_id invalid.
+        es: collector_id inválido.
+        pt: collector_id invalid.
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id not found.
+        es: No se ha encontrado el sponsor_id.
+        pt: sponsor_id not found.
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id must be a number
+        es: sponsor_id debe ser un número.
+        pt: sponsor_id must be a number
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id should be different than collector_id.
+        es: El parámetro sponsor_id debe ser distinto del parámetro collector_id.
+        pt: sponsor_id should be different than collector_id.
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id site must be the same as collector_id.
+        es: El site del parámetro sponsor_id debe ser el mismo que el parámetro collector_id.
+        pt: sponsor_id site must be the same as collector_id.
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id didn't accept MercadoPago's Terms and Conditions.
+        es: El sponsor_id no aceptó los términos y condiciones de Mercado Pago.
+        pt: sponsor_id didn't accept MercadoPago's Terms and Conditions.
+  - invalid_sponsor_id:
+      description:
+        en: sponsor_id is not an active user.
+        es: El sponsor_id no es un usuario activo.
+        pt: sponsor_id is not an active user.
+  - invalid_items:
+      description:
+        en: amount cannot be paid with Mercado Pago.
+        es: El monto no puede ser pagado con Mercado Pago.
+        pt: amount cannot be paid with Mercado Pago.
+  - invalid_items:
+      description:
+        en: items needed.
+        es: ítems requeridos.
+        pt: items needed.
+  - invalid_items:
+      description:
+        en: items invalid. Wrong format
+        es: ítems inválidos, error de formato.
+        pt: items invalid. Wrong format
+  - invalid_items:
+      description:
+        en: currency_id needed.
+        es: currency_id es requerido.
+        pt: currency_id needed.
+  - invalid_items:
+      description:
+        en: currency_id invalid.
+        es: currency_id inválido.
+        pt: currency_id invalid.
+  - invalid_items:
+      description:
+        en: quantity needed.
+        es: El parámetro quantity es requerido.
+        pt: quantity needed.
+  - invalid_items:
+      description:
+        en: quantity must be a number.
+        es: El parámetro quantity debe ser un número.
+        pt: quantity must be a number.
+  - invalid_items:
+      description:
+        en: unit_price needed.
+        es: El parámetro unit_price es requerido.
+        pt: unit_price needed.
+  - invalid_items:
+      description:
+        en: unit_price must be a number.
+        es: unit_price debe ser un número.
+        pt: unit_price must be a number.
+  - invalid_items:
+      description:
+        en: unit_price invalid.
+        es: unit_price inválido.
+        pt: unit_price invalid.
+  - invalid_access_token:
+      description:
+        en: access denied
+        es: Acceso denegado.
+        pt: access denied

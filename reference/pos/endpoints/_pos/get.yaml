@@ -1,0 +1,54 @@
+---
+resource: pos.raml
+samples:
+- all_curl.sh
+- all_curl_response.json
+use:
+- category
+- store_id
+- external_store_id
+- external_id   
+- limit
+- offset         
+errors:
+- 400 BAD_REQUEST:
+  - 'POS_INVALID_CATEGORY':
+      description:
+        en: 
+        es: El campo category debe ser numérico.
+        pt:
+  - 'POS_INVALID_STORE_ID':
+      description:
+        en: 
+        es: El campo store_id debe ser numérico.
+        pt: 
+  - 'POS_INVALID_EXTERNAL_STORE_ID':
+      description:
+        en: 
+        es: El campo external_store_id debe ser String.
+        pt: 
+  - 'POS_INEXISTENT_EXTERNAL_STORE_ID':
+      description:
+        en:
+        es: El campo external_store_id no hace referencia a ningún store existente.
+        pt: 
+  - 'POS_INVALID_EXTERNAL_ID':
+      description:
+        en: 
+        es: El campo external_id debe ser alfanumérico, solo letras y números. Sin espacios ni guiones, ni caracteres especiales.
+        pt: 
+  - 'POS_EXTERNAL_ID_TOO_LONG':
+      description:
+        en: 
+        es: El campo external_id debe ser menor a 40 caracteres.
+        pt: 
+  - 'POS_INVALID_LIMIT':
+      description:
+        en:
+        es: El campo limit debe ser numérico.
+        pt:
+  - 'POS_INVALID_OFFSET':
+      description:
+        en:
+        es: El campo offset debe ser numérico.
+        pt:
