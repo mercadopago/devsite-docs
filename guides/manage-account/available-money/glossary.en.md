@@ -1,11 +1,5 @@
-## Glossary
+# Glossary
 
-> INDEX
->
-> In this page
->
-> - [Glossary](#bookmark_glossary)
->
 
 We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 

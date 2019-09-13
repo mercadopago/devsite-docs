@@ -1,11 +1,5 @@
-## Glosario
+# Glosario
 
-> INDEX
->
-> En esta página
->
-> - [Glosario](#bookmark_glosario)
->
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
