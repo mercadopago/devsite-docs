@@ -10,15 +10,6 @@ sites_supported:
 
 # Pré-requisitos para começar
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_glossário)
->
-> [Pré-requisitos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos)
 
 ## Glossário
 

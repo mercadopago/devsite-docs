@@ -10,15 +10,6 @@ sites_supported:
 
 # Integre o Smart Checkout
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Como me integro?](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_como_me_integro?)
->
-> [Etapas para se integrar](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_etapas_para_se_integrar)
 
 
 ## Como me integro?

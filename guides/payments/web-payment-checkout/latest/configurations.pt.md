@@ -10,32 +10,6 @@ sites_supported:
 
 # Outras funcionalidades
 
-----[mlc, mco, mlm, mlu]----
-> INDEX
->
-> Nesta página
->
->
->
-> [Exemplo de uma preferência completa](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_exemplo_de_uma_preferência_completa)
->
-> [Atributos para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência)
-
-------------
-----[mla, mlb]----
-> INDEX
->
-> Nesta página
->
->
->
-> [Exemplo de uma preferência completa](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_exemplo_de_uma_preferência_completa)
->
-> [Atributos para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência)
->
-> [Pagamentos com 2 cartão de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_artão_de_crédito)
-
-------------
 
 Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago.com.br/developers/pt/reference/preferences/resource/) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
 
@@ -288,14 +262,14 @@ paymentmethods.Installments = 12;
 
 ----[mco]----
 ### IVA diferenciado
- 
+
 Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas Nacionales (DIAN) que é aplicado de acordo com o produto ou serviço que você oferece. Se o valor não for diferenciado, será aplicado 19% como padrão.
- 
+
  Atributo | Descrição
 ---------| -----------
 _`type`_ | Identificador do imposto. Permitido somente os valores IVA e INC.
 _`value`_ | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero.
- 
+
  ```json
 ===
 É usado o atributo taxes para definir o valor correspondente
@@ -307,7 +281,7 @@ _`value`_ | Valor do imposto. Permitido o máximo de duas casas decimais. Para i
   }
 ]
 ```
- 
+
 ------------
 
 ### Modo binário
