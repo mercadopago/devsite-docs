@@ -18,16 +18,8 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tenés que preocuparte de nada. Si tenés algún problema, te respaldamos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
-----[mla, mlb, mco, mlu, mlc, mlm]----
 
 [Integrar Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)
-
-------------
-----[mpe]----
-
-[Integrar Smart Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/receive-payments/)
-
-------------
 
 ### Mobile Checkout
 
@@ -469,4 +461,5 @@ Un Marketplace es un sitio o aplicación que te permite hacer cobros a nombre de
 > Nota
 >
 > La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor. Primero se descuenta la comisión de Mercado Pago, y del resto se descuenta la comisión del Marketplace.
+
 ------------
