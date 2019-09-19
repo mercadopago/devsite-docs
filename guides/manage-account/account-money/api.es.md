@@ -14,13 +14,12 @@
 > [Generar de forma programada](#bookmark_generar_de_forma_programada)
 
 
-Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
+Ganá tiempo y **automatizá la frecuencia de generación del reporte** de Dinero en cuenta las veces que quieras, tanto de forma manual como de forma programada. 
 
 
 ## Configurar tus reportes
 
 Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
-
 
 ### Consultar configuración
 
@@ -183,7 +182,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ## Atributos configurables
 
-Conoce los campos que puedes configurar para ajustar tus preferencias:
+Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
 
 
 | Campos configurables | Descripción |
@@ -199,15 +198,13 @@ Conoce los campos que puedes configurar para ajustar tus preferencias:
 | `show_fee_prevision` (opcional) |   <br/> Incluye el detalle de las comisiones  <br/> <br/>|
 | `show_chargeback_cancel` (opcional) |  <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
 | `shipping_detail` (opcional) |  <br/>  Incluye el detalle de los envios <br/> <br/>|
-| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
 
 > NOTE
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
-
+> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ## Generar de forma manual
@@ -426,15 +423,14 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Generación desde Mercado Pago
 >
-> Puedes generar tus reportes de Dinero Disponible desde el panel de Mercado Pago en tres simples pasos.
+> Descarga tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.         
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/panel/)
+> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Generación por retiro
+> Glosario
 >
-> Puedes generar un reporte cada vez que retires dinero disponible a una cuenta bancaria.
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/withdrawal/)
-
+> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glossary)
