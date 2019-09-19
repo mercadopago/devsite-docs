@@ -41,7 +41,7 @@ Conoce las características de los elementos que conforman tu reporte.
 
 | Elemento o acción | Características |
 | ------------ |	--------    |
-| Detalle de tablas | <br/>El detalle de las tablas comprende información generada en día 1 como mínimo. Excepto en los reportes generados por retiro de dinero. <br/> <br/>  |
+| Detalle de tablas | <br/>El detalle de las tablas comprende información generada en día 1 como mínimo.<br/> <br/>  |
 | Orden de columnas |<br/> Fijo <br/> <br/> |
 | Período máximo | <br/> Reportes con datos de hasta 60 días. <br/> <br/> |
 | Moneda | <br/> Local (basada en el país donde esté registrada la cuenta de Mercado Pago) <br/> <br/> |
