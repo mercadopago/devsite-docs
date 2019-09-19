@@ -28,12 +28,10 @@ Sigue estos pasos para generar tus reportes:
 >
 > Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
 >
-> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/api)
+> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/api)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Glosario
 >
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
->
->
