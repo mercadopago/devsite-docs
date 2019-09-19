@@ -344,7 +344,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "end_date": "2019-08-01T06:00:00Z",
     "created_from": "schedule",
     "status": "pending",
-    "report_type": "bank",
+    "report_type": "settlement",
     "generation_date": "2019-08-01T06:00:00.000Z",
     "last_modified": "2019-07-24T13:45:33.479-04:00",
     "retries": 0
@@ -380,7 +380,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "end_date": "2019-08-16T06:00:00Z",
     "generation_date": "2019-08-16T02:00:00.000-04:00",
     "last_modified": "2019-08-15T15:41:53.681-04:00",
-    "report_type": "bank",
+    "report_type": "settlement",
     "retries": 0,
     "status": "deleted",
     "user_id": USER_ID
