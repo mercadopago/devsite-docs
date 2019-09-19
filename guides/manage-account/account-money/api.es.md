@@ -27,13 +27,7 @@ Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
 Consulta la configuración de tus reportes por API de esta forma:
 
 [[[
-```curl
-curl -X GET \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -41,49 +35,7 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$response = Requests::get('http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
-```
-```java
- URL url = new URL("http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.get('http://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var options = {
-    url: 'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
-    headers: headers
-};
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-request(options, callback);
+$response = Requests::get('http://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 ]]]
 
@@ -91,20 +43,21 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```json
 {
-    "file_name_prefix": "bank-report-USER_ID",
-    "include_withdrawal_at_end": false,
+    "include_withdraw": true,
+    "file_name_prefix": "settlement-report-USER_ID",
+    "show_fee_prevision": false,
+    "show_chargeback_cancel": true,
     "detailed": true,
-    "scheduled": true,
-    "execute_after_withdrawal": true,
-    "v1": {
-        "language": null,
-        "generate_bank_report": false
-    },
-    "extended": true,
+    "scheduled": false,
+    "coupon_detailed": true,
+    "custom_values_unquote": false,
+    "shipping_detail": true,
+    "refund_detailed": true,
+    "extended": false,
     "frequency": {
-        "hour": 3,
-        "type": "daily",
-        "value": {}
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
     }
 }
 ```
@@ -114,26 +67,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 Crea tus preferencias de generación por API para exportar columnas, nombrar a tus archivos y configurar otros ajustes:
 
 [[[
-```curl
-curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
-    -d '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "detailed": true,
-            "execute_after_withdrawal": true,
-            "extended": true,
-            "schedule":true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            }
-    }'
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -142,112 +76,24 @@ $headers = array(
     'content-type' => 'application/json'
 );
 $data = '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
+            "include_withdraw": true,
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
             "detailed": true,
-            "execute_after_withdrawal": true,
-            "extended": true,
-            "schedule":true,
+            "scheduled": false,
+            "coupon_detailed": true,
+            "custom_values_unquote": false,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "extended": false,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
             }
-    }';
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("POST");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-connection.setDoOutput(true);
-
-String body = "{
-                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
-                \\"include_withdrawal_at_end\\": false,
-                \\"detailed\\": true,
-                \\"execute_after_withdrawal\\": true,
-                \\"extended\\": true,
-                \\"schedule\\":true,
-                \\"frequency\\": {
-                    \\"hour\\": 0,
-                    \\"type\\": \\"monthly\\",
-                    \\"value\\": 1
-                }
-                }";
-
-try(OutputStream os = connection.getOutputStream()) {
-    byte[] input = body.getBytes("utf-8");
-    os.write(input, 0, input.length);
-}
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-data = '{  
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "detailed": true,
-            "execute_after_withdrawal": true,
-            "extended": true,
-            "schedule":true,
-            "frequency": {"hour": 0,"type": "monthly","value": 1}
-        }'
-
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var dataString = '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "detailed": true,
-            "execute_after_withdrawal": true,
-            "extended": true,
-            "schedule":true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            }
-    }';
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
-    method: 'POST',
-    headers: headers,
-    body: dataString
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
+        }';
+$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
 ]]]
 
@@ -255,20 +101,21 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
 
 ```json
 {
-    "file_name_prefix": "bank-report-USER_ID",
-    "include_withdrawal_at_end": false,
+    "include_withdraw": true,
+    "file_name_prefix": "settlement-report-USER_ID",
+    "show_fee_prevision": false,
+    "show_chargeback_cancel": true,
     "detailed": true,
-    "scheduled": true,
-    "execute_after_withdrawal": true,
-    "v1": {
-        "language": null,
-        "generate_bank_report": false
-    },
-    "extended": true,
+    "scheduled": false,
+    "coupon_detailed": true,
+    "custom_values_unquote": false,
+    "shipping_detail": true,
+    "refund_detailed": true,
+    "extended": false,
     "frequency": {
-        "hour": 3,
-        "type": "daily",
-        "value": {}
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
     }
 }
 ```
@@ -279,26 +126,7 @@ Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atr
 
 
 [[[
-```curl
-curl -X PUT \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
-    -d '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "schedule":true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
-    }'
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -307,113 +135,24 @@ $headers = array(
     'content-type' => 'application/json'
 );
 $data = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
+        "include_withdraw": true,
+        "file_name_prefix": "settlement-report-USER_ID",
+        "show_fee_prevision": false,
+        "show_chargeback_cancel": true,
         "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "schedule":true,
+        "scheduled": false,
+        "coupon_detailed": true,
+        "custom_values_unquote": false,
+        "shipping_detail": true,
+        "refund_detailed": true,
+        "extended": false,
         "frequency": {
             "hour": 0,
             "type": "monthly",
             "value": 1
         }
     }';
-$response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("PUT");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-connection.setDoOutput(true);
-
-String body = "{
-                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
-                \\"include_withdrawal_at_end\\": false,
-                \\"detailed\\": true,
-                \\"execute_after_withdrawal\\": true,
-                \\"extended\\": true,
-                \\"schedule\\":true,
-                \\"frequency\\": {
-                    \\"hour\\": 0,
-                    \\"type\\": \\"monthly\\",
-                    \\"value\\": 1
-                }
-            }";
-
-try(OutputStream os = connection.getOutputStream()) {
-    byte[] input = body.getBytes("utf-8");
-    os.write(input, 0, input.length);
-}
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-data = '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "detailed": true,
-            "execute_after_withdrawal": true,
-            "extended": true,
-            "schedule":true,
-            "frequency": {"hour": 0,"type": "monthly","value": 1}
-
-        }'
-
-response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var dataString = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "schedule":true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
-    }';
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
-    method: 'PUT',
-    headers: headers,
-    body: dataString
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
+$response = Requests::put('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
 ```
 ]]]
 
@@ -422,24 +161,24 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```json
 {
-    "file_name_prefix": "bank-report-USER_ID",
-    "include_withdrawal_at_end": false,
+    "include_withdraw": true,
+    "file_name_prefix": "settlement-report-USER_ID",
+    "show_fee_prevision": false,
+    "show_chargeback_cancel": true,
     "detailed": true,
-    "scheduled": true,
-    "execute_after_withdrawal": true,
-    "v1": {
-        "language": null,
-        "generate_bank_report": false
-    },
-    "extended": true,
+    "scheduled": false,
+    "coupon_detailed": true,
+    "custom_values_unquote": false,
+    "shipping_detail": true,
+    "refund_detailed": true,
+    "extended": false,
     "frequency": {
-        "hour": 3,
-        "type": "daily",
-        "value": {}
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
     }
 }
 ```
-
 
 
 ## Atributos configurables
@@ -451,15 +190,17 @@ Conoce los campos que puedes configurar para ajustar tus preferencias:
 | ----------| ---------------------- |
 | `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
 | `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
-| `extended` (opcional) | <br/>Incluye el detalle de las comisiones en el reporte.<br/><br/> |
-| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
-| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
-| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
-| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Comisión de Mercado Pago (`mp_fee_amount`)<br/> - Comisión por ofrecer cuotas sin interés (`financing_fee_amount`)<br/> - Monto bruto de la operación (`gross_amount`)<br/> - Medios de pago (`payment_method`)<br/> - Cuotas (`installments`)<br/> - Cupón de descuento (`coupon_amount`) <br/> - Costos de envío (`shipping_fee_amount`) <br/> - Impuestos  cobrados por retenciones de IIBB (`taxes_amount`) <br/> - Monto recibido por compras con split (`seller_amount`)<br/><br/>|
 | `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
 | `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
-
+| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
+| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Impuesto de mercado pago (`mkp_fee_amount`)<br/> - Impuesto financiero (`financing_fee_amount`)<br/> - Impuesto de envio (`shipping_fee_amount`)<br/> - Impuestos (`taxes_amount`)<br/> - Cuotas (`installments`)<br/> <br/><br/>|
+| `extended` (opcional) | <br/>Incluye el detalle de las comisiones en el reporte:<br/> - Detalle del impuesto (`tax_detail`)<br/> - Detalle del impuesto (`tax_amount_telco`)<br/> - Id del punto de venta (`pos_id`)<br/> - Id de la sucursal (`store_id`)<br/> - Nombre de la sucursal (`store_name`)<br/> - Id externo del punto de venta (`external_pos_id`)<br/> - Nombre del punto de venta (`pos_name`)<br/> - Id externo de la sucursal (`external_store_id`)<br/> <br/><br/> |
+| `show_fee_prevision` (opcional) |   <br/> Incluye el detalle de las comisiones  <br/> <br/>|
+| `show_chargeback_cancel` (opcional) |  <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
+| `shipping_detail` (opcional) |  <br/>  Incluye el detalle de los envios <br/> <br/>|
+| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
+| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
 
 > NOTE
 >
@@ -478,17 +219,7 @@ Genera tus reportes de forma manual configurando tres instancias: generación, b
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 [[[
-```curl
-curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN' \
-    -d '{
-            "begin_date": "2019-05-01T00:00:00Z",
-            "end_date": "2019-06-01T00:00:00Z"
-    }'
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -501,62 +232,7 @@ $data ='{
             "end_date": "2019-06-01T00:00:00Z"
     }';
 
-$response = Requests::post("https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN", $headers, $data);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("POST");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-connection.setDoOutput(true);
-
-String body = "{\\"begin_date\\":\\"2019-05-01T00:00:00Z\\",\\"end_date\\": \\"2019-06-01T00:00:00Z\\"}";
-
-try(OutputStream os = connection.getOutputStream()) {
-    byte[] input = body.getBytes("utf-8");
-    os.write(input, 0, input.length);
-}
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-params = { 'access_token': 'ENV_ACCESS_TOKEN' }
-
-data = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }'
-
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report', headers=headers, params=params, data=data)
-```
-```node
-var request = require('request');
-
-var headers = { 'accept': 'application/json', 'content-type': 'application/json' };
-
-var dataString = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }';
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report?access_token=ENV_ACCESS_TOKEN',
-    method: 'POST',
-    headers: headers,
-    body: dataString
-};
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-request(options, callback);
+$response = Requests::post("https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN", $headers, $data);
 ```
 ]]]
 
@@ -567,13 +243,7 @@ Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se gener
 Consulta la API para ver si la generación de reportes quedó lista:
 
 [[[
-```curl
-curl -G \
-    -H 'accept: application/json' \
-    -d 'access_token=ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/account/bank_report/list'
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -583,44 +253,7 @@ $headers = array(
 $data = array(
     'access_token' => 'ENV_ACCESS_TOKEN'
 );
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/list', $headers, $data);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/list?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = { 'accept': 'application/json' }
-
-params = { 'access_token': 'ENV_ACCESS_TOKEN' }
-
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report/list', headers=headers, params=params)
-```
-```node
-var request = require('request');
-var headers = { 'accept': 'application/json'};
-var dataString = 'access_token=ENV_ACCESS_TOKEN';
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/list',
-    method: 'POST',
-    headers: headers,
-    body: dataString
-};
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-request(options, callback);
+$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/list', $headers, $data);
 ```
 ]]]
 
@@ -633,7 +266,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
         "user_id": USER-ID,
         "begin_date": "2015-05-01T00:00:00Z",
         "end_date": "2015-06-01T00:00:00Z",
-        "file_name": "bank-report-USER_ID-2016-01-20-131015.csv",
+        "file_name": "settlement-report-USER_ID-2016-01-20-131015.csv",
         "created_from": "manual",
         "date_created": "2016-01-20T10:07:53.000-04:00"
     },
@@ -648,10 +281,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
 [[[
-```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -661,40 +291,7 @@ $headers = array(
 $data = array(
     'access_token' => 'ENV_ACCESS_TOKEN'
 );
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/:file_name', $headers, $data);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
-```
-```node
-var request = require('request');
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
+$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/:file_name', $headers, $data);
 ```
 ]]]
 
@@ -702,13 +299,17 @@ request(options, callback);
 Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```csv
-DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
-2018-04-17T15:07:53.000-04:00,,,initial_available_balance,,813439.19,0.00,813439.19,0.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:07:53.000-04:00,,,release,withdrawal,0.00,813363.45,-813360.45,-3.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:11:12.000-04:00,,,release,payment,225.96,0.00,269.00,-43.04,0.00,0.00,0.00,0.00,1,account_money
-2018-04-17T15:18:16.000-04:00,,,release,payment,124.32,0.00,148.00,-23.68,0.00,0.00,0.00,0.00,1,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
+EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRANSACTION_TYPE;TRANSACTION_AMOUNT;TRANSACTION_CURRENCY;TRANSACTION_DATE;FEE_AMOUNT;SETTLEMENT_NET_AMOUNT;SETTLEMENT_CURRENCY;SETTLEMENT_DATE;REAL_AMOUNT;COUPON_AMOUNT;METADATA;MKP_FEE_AMOUNT;FINANCING_FEE_AMOUNT;SHIPPING_FEE_AMOUNT;TAXES_AMOUNT;INSTALLMENTS;ORDER_ID;SHIPPING_ID;SHIPMENT_MODE;PACK_ID
+2112818453;5067634447;242175264;account_money;account_money;MLB;SETTLEMENT;79.00;BRL;2019-08-11T22:20:19.000-04:00;-8.85;70.15;BRL;2019-08-11T22:20:19.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112818453;28067695419;me1;2E+15
+2112815686;5067535844;242175264;account_money;account_money;MLB;SETTLEMENT;819.00;BRL;2019-08-11T22:15:32.000-04:00;-91.73;727.27;BRL;2019-08-11T22:15:32.000-04:00;727.27;0.00;[{}];-91.73;0.00;0.00;0.00;1;2112815686;28067772278;me1;2E+15
+2112811587;5067365727;242175264;account_money;account_money;MLB;SETTLEMENT;769.00;BRL;2019-08-11T22:11:13.000-04:00;-86.13;682.87;BRL;2019-08-11T22:11:13.000-04:00;682.87;0.00;[{}];-86.13;0.00;0.00;0.00;1;2112811587;28067612908;me1;2E+15
+2112784039;5067781790;242175264;credit_card;master;MLB;SETTLEMENT;199.00;BRL;2019-08-11T21:38:18.000-04:00;-22.29;176.71;BRL;2019-08-11T21:38:24.000-04:00;176.71;0.00;[{}];-22.29;0.00;0.00;0.00;1;2112784039;;;
+2112755183;5067186172;242175264;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T21:10:20.000-04:00;-8.85;70.15;BRL;2019-08-11T21:10:27.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112755183;;;
+2112747018;5067323570;242175264;credit_card;visa;MLB;SETTLEMENT;3109.00;BRL;2019-08-11T21:00:11.000-04:00;-348.21;2760.79;BRL;2019-08-11T21:00:18.000-04:00;2760.79;0.00;[{}];-348.21;0.00;0.00;0.00;12;2112747018;;;
+2112742918;5067175589;242175264;account_money;account_money;MLB;SETTLEMENT;154.00;BRL;2019-08-11T20:57:05.000-04:00;-17.25;136.75;BRL;2019-08-11T20:57:05.000-04:00;136.75;0.00;[{}];-17.25;0.00;0.00;0.00;1;2112742918;28067593333;me1;2E+15
+2112736997;5067585992;242175264;digital_currency;consumer_credits;MLB;SETTLEMENT;94.00;BRL;2019-08-11T20:51:12.000-04:00;-10.53;83.47;BRL;2019-08-11T20:51:18.000-04:00;83.47;0.00;[{}];-10.53;0.00;0.00;0.00;1;2112736997;;;
+2112736008;5067314803;242175264;digital_currency;consumer_credits;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:48:08.000-04:00;-8.85;70.15;BRL;2019-08-11T20:48:15.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112736008;;;
+2112729919;5067463621;242175264;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:41:46.000-04:00;-8.85;70.15;BRL;2019-08-11T20:41:55.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112729919;;;
 ```
 
 
@@ -721,13 +322,7 @@ Genera tus reportes de forma programada configurando tres instancias: generació
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
 
 [[[
-```curl
-curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' 
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -735,54 +330,7 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("POST");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
-    method: 'POST',
-    headers: headers
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
+$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 ]]]
 
@@ -810,14 +358,7 @@ Ejecuta el curl que necesites para cancelar la generación programada de tus rep
 
 
 [[[
-```curl
-curl -X DELETE \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN'
-```
-
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -825,53 +366,7 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("DELETE");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.delete('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
-    method: 'DELETE',
-    headers: headers
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
+$response = Requests::delete('https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 ]]]
 
@@ -898,61 +393,29 @@ Descarga el archivo con este comando:
 
 
 [[[
-```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN' 
-```
-```php
+```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array();
-$response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN', $headers);
-```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.get('https://api.mercadopago.com/v1/account/bank_report/:file_name', params=params)
-```
-```node
-var request = require('request');
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
+$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 ]]]
 
 Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```csv
-DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
-2018-04-17T15:07:53.000-04:00,,,initial_available_balance,,813439.19,0.00,813439.19,0.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:07:53.000-04:00,,,release,withdrawal,0.00,813363.45,-813360.45,-3.00,0.00,0.00,0.00,0.00,1,
-2018-04-17T15:11:12.000-04:00,,,release,payment,225.96,0.00,269.00,-43.04,0.00,0.00,0.00,0.00,1,account_money
-2018-04-17T15:18:16.000-04:00,,,release,payment,124.32,0.00,148.00,-23.68,0.00,0.00,0.00,0.00,1,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
-2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
+EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRANSACTION_TYPE;TRANSACTION_AMOUNT;TRANSACTION_CURRENCY;TRANSACTION_DATE;FEE_AMOUNT;SETTLEMENT_NET_AMOUNT;SETTLEMENT_CURRENCY;SETTLEMENT_DATE;REAL_AMOUNT;COUPON_AMOUNT;METADATA;MKP_FEE_AMOUNT;FINANCING_FEE_AMOUNT;SHIPPING_FEE_AMOUNT;TAXES_AMOUNT;INSTALLMENTS;ORDER_ID;SHIPPING_ID;SHIPMENT_MODE;PACK_ID
+2112818453;5067634447;242175264;account_money;account_money;MLB;SETTLEMENT;79.00;BRL;2019-08-11T22:20:19.000-04:00;-8.85;70.15;BRL;2019-08-11T22:20:19.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112818453;28067695419;me1;2E+15
+2112815686;5067535844;242175264;account_money;account_money;MLB;SETTLEMENT;819.00;BRL;2019-08-11T22:15:32.000-04:00;-91.73;727.27;BRL;2019-08-11T22:15:32.000-04:00;727.27;0.00;[{}];-91.73;0.00;0.00;0.00;1;2112815686;28067772278;me1;2E+15
+2112811587;5067365727;242175264;account_money;account_money;MLB;SETTLEMENT;769.00;BRL;2019-08-11T22:11:13.000-04:00;-86.13;682.87;BRL;2019-08-11T22:11:13.000-04:00;682.87;0.00;[{}];-86.13;0.00;0.00;0.00;1;2112811587;28067612908;me1;2E+15
+2112784039;5067781790;242175264;credit_card;master;MLB;SETTLEMENT;199.00;BRL;2019-08-11T21:38:18.000-04:00;-22.29;176.71;BRL;2019-08-11T21:38:24.000-04:00;176.71;0.00;[{}];-22.29;0.00;0.00;0.00;1;2112784039;;;
+2112755183;5067186172;242175264;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T21:10:20.000-04:00;-8.85;70.15;BRL;2019-08-11T21:10:27.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112755183;;;
+2112747018;5067323570;242175264;credit_card;visa;MLB;SETTLEMENT;3109.00;BRL;2019-08-11T21:00:11.000-04:00;-348.21;2760.79;BRL;2019-08-11T21:00:18.000-04:00;2760.79;0.00;[{}];-348.21;0.00;0.00;0.00;12;2112747018;;;
+2112742918;5067175589;242175264;account_money;account_money;MLB;SETTLEMENT;154.00;BRL;2019-08-11T20:57:05.000-04:00;-17.25;136.75;BRL;2019-08-11T20:57:05.000-04:00;136.75;0.00;[{}];-17.25;0.00;0.00;0.00;1;2112742918;28067593333;me1;2E+15
+2112736997;5067585992;242175264;digital_currency;consumer_credits;MLB;SETTLEMENT;94.00;BRL;2019-08-11T20:51:12.000-04:00;-10.53;83.47;BRL;2019-08-11T20:51:18.000-04:00;83.47;0.00;[{}];-10.53;0.00;0.00;0.00;1;2112736997;;;
+2112736008;5067314803;242175264;digital_currency;consumer_credits;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:48:08.000-04:00;-8.85;70.15;BRL;2019-08-11T20:48:15.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112736008;;;
+2112729919;5067463621;242175264;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:41:46.000-04:00;-8.85;70.15;BRL;2019-08-11T20:41:55.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112729919;;;
 ```
 
 <hr/>
