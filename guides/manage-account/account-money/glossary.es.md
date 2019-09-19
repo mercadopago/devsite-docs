@@ -44,9 +44,13 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > Cómo usar el reporte
 >
 > Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
+>
+> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
 > Genera tus reportes
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
+>
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/generate/)
