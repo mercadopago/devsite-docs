@@ -2,6 +2,10 @@
 sites_supported:
   - mlb
   - mla
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Customizações
@@ -20,7 +24,7 @@ sites_supported:
 
 ## Esquema redirect
 
-O Smart Checkout redirect permite alterar seu esquema de abertura.
+O Smart Checkout permite alterar seu esquema de abertura.
 
 Os esquemas disponíveis atualmente são:
 
@@ -29,7 +33,7 @@ Os esquemas disponíveis atualmente são:
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
-Para integrar o esquema redirect, substitua o botão de pagamento que fez na integração básica pelo seguinte snippet:
+Para integrar o esquema de redirecionamento, substitua o botão de pagamento que você fez na integração básica por este novo e adicione o link do Web Checkout ao seu site no local em que deseja que ele apareça.
 
 [[[
 ```php
@@ -170,26 +174,23 @@ data-button-label="Comprar"
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
+---
+
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Outras funcionalidades</p>
- <p>Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.</p>
-</blockquote>
-</a>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Otimize sua integração e melhore o gerenciamento de suas vendas.</p>
-</blockquote>
-</a>   
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Outras funcionalidades
+>
+> Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.
+>
+> [Outras funcionalidades](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Integração avançada
+>
+> Otimize sua integração e melhore o gerenciamento de suas vendas.
+>
+> [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)

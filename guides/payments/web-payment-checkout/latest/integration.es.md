@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Integra Smart Checkout
@@ -29,7 +33,7 @@ sites_supported:
 
 	1.3 Configura la preferencia según tu producto o servicio.
 
-2. Suma el Checkout a tu sitio
+2. Suma el checkout a tu sitio
 
 ## Pasos para integrarte
 
@@ -218,7 +222,7 @@ preference.Items.Add(
   {
     Title = "Mi producto",
     Quantity = 1,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   }
 );
@@ -244,78 +248,51 @@ curl -X POST \
 
 ### 2. Suma el checkout a tu sitio
 
+Por último, suma el siguiente código para mostrar el botón de pago de tu Smart Checkout en el lugar que quieras que aparezca.
+
 [[[
 ```php
-===
-Redirige al 'init_point' de la preferencia
-===
-<!doctype html>
-<html>
-  <head>
-    <title>Pagar</title>
-  </head>
-  <body>
-    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-preference-id="<?php echo $preference->id; ?>">
+  </script>
+</form>
 ```
 ```node
-===
-Redirige al 'init_point' de la preferencia
-===
-<!doctype html>
-<html>
-  <head>
-    <title>Mi sitio</title>
-  </head>
-  <body>
-    <a href="$$init_point$$" target="_blank">Pagar</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-preference-id="$$id$$">
+  </script>
+</form>
 ```
 ```java
-===
-Redirige al 'init_point' de la preferencia
-===
-<!doctype html>
-<html>
-  <head>
-    <title>Pagar</title>
-  </head>
-  <body>
-    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-preference-id="${preference.id}">
+  </script>
+</form>
 ```
 ```ruby
-===
-Redirige al 'init_point' de la preferencia
-===
-<!doctype html>
-<html>
-  <head>
-    <title>Mi sitio</title>
-  </head>
-  <body>
-    <a href="<%= @init_point %>" target="_blank">Pagar</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-preference-id="%= @init_point %>">
+  </script>
+</form>
 ```
 ```csharp
-===
-Redirige al 'init_point' de la preferencia
-===
-<!doctype html>
-<html>
-  <head>
-    <title>Pagar</title>
-  </head>
-  <body>
-    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
-  </body>
-</html>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-preference-id="@Html.DisplayFor(model => model.id)">
+  </script>
+</form>
 ```
 ]]]
+
 
 > WARNING
 >
@@ -332,26 +309,22 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Smart Ch
 >
 > Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
+---
+
 ### Próximos pasos
 
-<div>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Prueba tu integración<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Revisa que esté todo bien en tu integración con los usuarios de prueba.</p>
-</blockquote>
-</a>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
-</blockquote>
-</a>   
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Prueba tu integración
+>
+> Revisa que esté todo bien en tu integración con los usuarios de prueba.
+>
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Integración avanzada
+>
+> Optimiza tu integración y mejora la gestión de tus ventas.
+>
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)

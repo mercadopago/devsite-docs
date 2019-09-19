@@ -2,9 +2,21 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlc
+  - mlm
 ---
 
 # Discount campaigns
+
+> WARNING
+>
+> Note
+>
+> This documentation refers to the new version of the Smart Checkout.
+>
+> Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 Create discount campaigns to boost your sales using the marketing tools of your Mercado Pago account in the section Configuration for your Business: [Create discount](https://www.mercadopago.com.ar/campaigns/create).
 

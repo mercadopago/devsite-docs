@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlc
+  - mlm
 ---
 
 # Personalização
@@ -12,9 +16,10 @@ sites_supported:
 >
 > Esta documentação é referente à versão anterior do Checkout.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Web Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Smart Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
 Na preferência de pagamentos, é possível enviar as informações do item a ser pago, bem como do comprador, além de definir os meios de pagamento que não deseja aceitar, a URL de retorno ao seu site após o pagamento, os métodos de envio, etc.
+
 
 ### Defina os tipos e formas de pagamento
 
@@ -284,7 +289,7 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
     {
       "id": "item-ID-1234",
       "title": "Title of what you are paying for. It will be displayed in the payment process.",
-      "currency_id": "CLP",
+      "currency_id": "[FAKER][CURRENCY][ACRONYM]",
       "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
       "description": "Item description",
       "category_id": "art", // Available categories at https://api.mercadopago.com/item_categories

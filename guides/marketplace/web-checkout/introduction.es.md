@@ -13,7 +13,7 @@ _Aclaración: El split del pago sólo se podrá realizar entre dos cuentas (el M
 > Nota
 >
 > La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor.
-> Primero se descuenta la comisión de Mercado Pago, y sobre el restante se descuenta la comisión del Marketplace. 
+> Primero se descuenta la comisión de Mercado Pago, y sobre el restante se descuenta la comisión del Marketplace.
 
 _Marketplace_ requiere de 3 pasos:
 
@@ -32,7 +32,7 @@ Las **credenciales privadas** (también llamada `access_token`), se utilizan par
 
 Antes de utilizar el Access Token se deberá completar el formulario de "Quiero ir a producción".
 
-Al estar utilizando el Web-Checkout, las credenciales que se deberán utilizar para la asociación de los vendedores a tu Marketplace (2º Paso) son el Client_id y Client_secret de la sección de Checkout Básico en la página de credenciales. 
+Al estar utilizando el Smart Checkout, las credenciales que se deberán utilizar para la asociación de los vendedores a tu Marketplace (2º Paso) son el Client_id y Client_secret de la sección de Checkout Básico en la página de credenciales. 
 
 
 #### [Comenzar a crear mi Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/create-marketplace)

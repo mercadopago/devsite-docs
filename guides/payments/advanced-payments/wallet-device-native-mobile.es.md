@@ -4,7 +4,7 @@
 
 # Device Mobile Nativo
 
-El integrador debe recolectar información del fingerprint y enviarla a la API de `DeviceSession` antes de enviar la petición para procesar el pago.
+El integrador debe recolectar información del fingerprint y enviarla a la API de `DeviceSession` Aantes de enviar la petición para procesar el pago.
 
 #### Request
 ```curl
@@ -35,7 +35,8 @@ curl -X POST \
 
 #### Response
 
-La respuesta exitosa será un `HTTP Status 200 OK` y devolverá el advanced payment completo. De lo contrario devolverá el `HTTP Status` correspondiente al error y un mensaje aclaratorio.
+
+La respuesta exitosa será un `HTTP Status 200 OK`y devolverá el advanced payment completo. De lo contrario devolverá el `HTTP Status` correspondiente al error y un mensaje aclaratorio.
 
 ```json
 {

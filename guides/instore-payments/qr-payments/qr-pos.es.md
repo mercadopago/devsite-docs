@@ -58,12 +58,12 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 	"notification_url": "www.yourserver.com/endpoint",
       "items" :[{
         "title" : "Tacos",
-        "currency_id" : "MXN",
+        "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
         "unit_price" : 16.0,
         "quantity" : 4
       },{
         "title" : "Refresco",
-        "currency_id" : "MXN",
+        "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
         "unit_price" : 15.0,
         "quantity" : 1
       }]
@@ -144,7 +144,7 @@ curl -X POST https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERN
 	"notification_url": "www.yourserver.com/endpoint",
       "items" :[{
         "title" : "Tacos",
-        "currency_id" : "MXN",
+        "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
         "unit_price" : 16.0,
         "quantity" : 4
       }]

@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Integre o Smart Checkout
@@ -218,7 +222,7 @@ preference.Items.Add(
   {
     Title = "Meu produto",
     Quantity = 1,
-    CurrencyId = CurrencyId.BRL,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   }
 );
@@ -248,7 +252,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 
 [[[
 ```php
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="<?php echo $preference->id; ?>">
@@ -256,7 +260,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="$$id$$">
@@ -264,7 +268,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```java
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="${preference.id}">
@@ -272,7 +276,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```ruby
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="%= @init_point %>">
@@ -280,7 +284,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```csharp
-<form action="/procesar-pago" method="POST">
+<form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id="@Html.DisplayFor(model => model.id)">
@@ -304,26 +308,22 @@ _Clique no link dentro do seu site e [teste a integração do seu Smart Checkout
 >
 > Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [seção de Smart Checkout antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
+---
+
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Teste sua integração<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Confira se está tudo em ordem na sua integração com os usuários de teste.</p>
-</blockquote>
-</a>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Otimize sua integração e melhore o gerenciamento das suas vendas.</p>
-</blockquote>
-</a>   
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Teste sua integração
+>
+> Confira se está tudo em ordem na sua integração com os usuários de teste.
+>
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Integração avançada
+>
+> Otimize sua integração e melhore o gerenciamento das suas vendas.
+>
+> [Integração avançada](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)

@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Integração avançada
@@ -170,7 +174,7 @@ Payer payer = new Payer()
   $item->id = "1234";
   $item->title = "Heavy Duty Plastic Table";
   $item->quantity = 7;
-  $item->currency_id = "BRL";
+  $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = 75.56;
   // ...
 ?>
@@ -182,7 +186,7 @@ items: [
       id: '1234',
       title: 'Lightweight Paper Table',
       quantity: 3,
-      currency_id: 'BRL',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 55.41
     }
   ]// ...
@@ -193,7 +197,7 @@ Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
     .setQuantity(3)
-    .setCurrencyId("BRL")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 55.41);
 // ...
 ```
@@ -203,7 +207,7 @@ item = MercadoPago::Item.new({
   id: "1234",
   title: "Lightweight Paper Table",
   quantity: 3,
-  currency_id: "BRL",
+  currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
 })# ...
 ```
@@ -215,7 +219,7 @@ preference.Items.Add(
     Id = "1234",
     Title = "Lightweight Paper Table",
     Quantity = 3,
-    CurrencyId = "BRL",
+    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)55.41
   }
 );
@@ -313,30 +317,23 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 
 <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/chargebacks/" target="_blank"> Gerenciar contestações</a>
 
+---
+
 ### Próximos passos
 
-<div>
-  <div>
-  <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">       
-    <blockquote class="next-step-card next-step-card-left">
-      <p class="card-note-title">Outras funcionalidades</p>
-      <p>Configure seus pagamentos e adapte o Smart Checkout ao seu negócio. </p>
-    </blockquote>
-  </a>
-  </div>
-  <div>   
-  <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/" style="text-decoration:none;color:inherit">
-    <blockquote class="next-step-card next-step-card-right">
-      <p class="card-note-title">Customizações</p>
-      <p>Adapte o estilo da sua marca na experiência de compra.</p>
-    </blockquote>
-  </a>
-  </div>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON
+>
+> Outras funcionalidades
+>
+> Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.
+>
+> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
+
+> RIGHT_BUTTON
+>
+> Customizações
+>
+> Adapte o estilo da sua marca na experiência de compra.
+>
+> [Customizações](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/)

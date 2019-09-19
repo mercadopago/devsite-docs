@@ -2,6 +2,10 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Personalizaciones
@@ -12,66 +16,101 @@ sites_supported:
 >
 >
 >
-> [Esquema modal](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_modal)
+> [Esquema redirect](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
 >
 > [Colores](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
 >
 > [Botones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
-## Esquema modal
+## Esquema redirect
 
-El Smart Checkout modal permite cambiar su esquema de apertura.
+El Smart Checkout permite cambiar su esquema de apertura.
 
 Los esquemas disponibles actualmente son:
 
 * **Redirect**: abre el Smart Checkout en una nueva ventana.
 * **Modal**: abre el Smart Checkout en tu sitio.
 
-![Checkout-Modal](/images/web-payment-checkout/checkout-modal.png)
+----[mla]----
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
+------------
+----[mlc, mco, mlu, mlb, mlm]----
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-sv.png)
+------------
 
-Para integrar el esquema modal, reemplaza el botón de pago que realizaste en la integración
-básica por el siguiente snippet:
+
+Para integrar el esquema redirect, reemplaza el botón de pago que realizaste en la integración básica por este nuevo y suma el link del Web Checkout en tu sitio en el lugar que quieras que aparezca.
 
 [[[
 ```php
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<?php echo $preference->id; ?>">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="$$init_point$$" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```java
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="${preference.id}">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="${preference.initPoint}">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ```ruby
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Mi sitio</title>
+  </head>
+  <body>
+    <a href="<%= @init_point %>" target="_blank">Pagar</a>
+  </body>
+</html>
 ```
 ```csharp
-<form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="@Html.DisplayFor(model => model.id)">
-  </script>
-</form>
+===
+Redirige al 'init_point' de la preferencia
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pagar</title>
+  </head>
+  <body>
+    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+  </body>
+</html>
 ```
 ]]]
 
@@ -140,26 +179,23 @@ data-button-label="Comprar"
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
+---
+
 ### Próximos pasos
 
-<div>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Otras funcionalidades</p>
- <p>Configura tus pago y adapta Smart Checkout a tu negocio.</p>
-</blockquote>
-</a>
-<a href="http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Optimiza tu integración y mejora la gestión de tus ventas.</p>
-</blockquote>
-</a>   
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Otras funcionalidades
+>
+> Configura tus pago y adapta Smart Checkout a tu negocio.
+>
+> [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Integración avanzada
+>
+> Optimiza tu integración y mejora la gestión de tus ventas.
+>
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)

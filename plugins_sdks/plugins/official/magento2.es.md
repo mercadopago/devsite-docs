@@ -1,72 +1,29 @@
 # Magento 2
 
-* [Requisitos](#Requisitos)
-* [Instalación](#Instalación)
-* [Actualización](#Actualización)
-* [Configuración de la tarjeta de crédito y tickets](#Configuración_de_la_tarjeta de_crédito_y_tickets)
-* [Configurar el Checkout Redirect, Iframe y LightBox](#Configurar el Checkout Redirect, Iframe y LightBox)
-* Checkout Básico
-* [Configuración de estado de las notificaciones de Pago](#Configuración-de-estado-de-las-notificaciones-de-Pago)
+* [Requisitos para integrar](#bookmark_requisitos_para_integrar)
+* [Instalación](#bookmark_instalación)
+* [Configuración de la tarjeta de crédito y tickets (Custom Checkout)](#bookmark_configuración_de_la_tarjeta_de_crédito_y_tickets_(custom_checkout))
+* [Configuración de Basic Checkout](#bookmark_configuración_de_basic_checkout)
+* [Configuración de estado de las notificaciones de Pago](#bookmark_configuración_de_estado_de_las_notificaciones_de_pago)
 
 
+## Requisitos para integrar
+
+Requisito                   | Descripción
+----------------------------| -------------------------------------------------------------------------
+Versión del Magento         | 2.x
+Ambiente                    | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack
+Sistema Operativo           | Linux x86-64
+Memoria                     | Minimum 2GB of RAM
+Web Server                  | Apache 2.x<br/>Nginx 1.7.x
+Versión del PHP             | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/>
+Versión del MySQL           | MySQL 5.6<br/>MariaDB y Percona son compatibles con Magento porque suportam las APIs del MySQL 5.6.
+Dependencias de Extensiones | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/>
+PHP 7 only                  | json<br/>iconv
+SSL                         | Es un requisito que tenga un certificado SSL.<br/>Durante las pruebas en modo de Sandbox usted podrá ejecutar las pruebas en HTTP.
 
 
-<a name="Requisitos"></a>
-## Requisitos:
-
-### Versión del Magento
-* 2.x
-
-### Ambiente
-* LAMP (Linux, Apache, MySQL, and PHP)
-* LNMP stack
-
-### Sistema
-* Linux x86-64
-
-### Memoria
-* Minimum 2GB of RAM
-
-### Web Server
-* Apache 2.x
-* Nginx 1.7.x
-
-### Versión del PHP
-* 5.6.x
-* 7.0.2
-* 7.0.6–7.0.x
-
-### Versión del MySQL
-* MySQL 5.6
-* MariaDB and Percona are compatible with Magento because we support MySQL 5.6 APIs.
-
-### Dependencias de Extensiones
-* bc-math (Magento Commerce only)
-* curl
-* gd, ImageMagick 6.3.7 (or later) or both
-* intl
-m* bstring
-* mcrypt
-* hash
-* openssl
-* PDO/MySQL
-* SimpleXML
-* soap
-* xml
-* xsl
-* zip
-
-PHP 7 only:
-   * json
-   * iconv
-
-### SSL
-* Es un requisito que tenga un certificado SSL.
-* Durante las pruebas en modo de Sandbox usted podrá ejecutar las pruebas en HTTP.
-
-
-<a name="Instalación"></a>
-## Instalación: ##
+## Instalación
 
 Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 
@@ -100,8 +57,8 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 
 6) ¡Listo! El módulo del Mercado Pago fue instalado con éxito.
 
-<a name="Configuración de la tarjeta de crédito y tickets"></a>
-## Configuración de la tarjeta de crédito y tickets: ##
+
+## Configuración de la tarjeta de crédito y tickets (Custom Checkout)
 
 Este proceso explicará cómo configurar el módulo para aceptar pagos con Checkout Personalizado con tarjeta de crédito y tickets:
 
@@ -127,12 +84,10 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 
 ![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
-
 4) ¡Listo! El Checkout Custom con Tarjeta de crédito y Ticket ha sido configurado y habilitado con éxito!
 
-<a name="Configurar el Checkout Redirect, Iframe y LightBox "></a>
 
-## Configurar el Checkout Redirect, Iframe y LightBox: ##
+## Configuración de Basic Checkout
 
 Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
 
@@ -149,16 +104,14 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
-
-
 3) Con las credenciales llenadas, ahora es necesario habilitar el método de pago. Vaya a la opción **Enable** y marque como **Yes**. Aproveche y configure el Tipo de Checkout (**Type Checkout**) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (**Auto Redirect**).
+
+![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 4) ¡Listo! El Checkout Básico ha sido configurado y habilitado con éxito!
 
-<a name="Configuración de estado de las notificaciones de Pago "></a>
 
-## Configuración de estado de las notificaciones de Pago: ##
+## Configuración de estado de las notificaciones de Pago
 
 Este proceso explicará cómo configurar el estado de pedido para las notificaciones de pago:
 
@@ -170,10 +123,8 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
 
 3) ¡Listo! El estado de notificación se ha configurado correctamente.
 
-<a name="Soporte técnico "></a>
 
-## Soporte técnico ##
-
+## Soporte técnico
 
 Caso tenga alguna duda, problema o error tenemos un canal de contacto.
 Envié un email a modulos@mercadopago.com con la seguinte información:

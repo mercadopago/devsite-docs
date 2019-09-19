@@ -214,7 +214,7 @@ $ curl https://core.spreedly.com/v1/gateways/6DqX57I6fHgIuUkVN2HGszjDSu1/purchas
         "transaction": {
           "payment_method_token": "3uAIR1sSCVJG90obnCN1Ip1BY3b",
           "amount": 100,
-          "currency_code": "ARS",
+          "currency_code": "[FAKER][CURRENCY][ACRONYM]",
           "retain_on_success": true
         }
       }'
@@ -245,7 +245,7 @@ A resposta que obterá é similar à seguinte:
     "gateway_transaction_id": "49",
     "gateway_latency_ms": 2,
     "amount": 100,
-    "currency_code": "ARS",
+    "currency_code": "[FAKER][CURRENCY][ACRONYM]",
     "retain_on_success": true,
     "payment_method_added": false,
     "message_key": "messages.transaction_succeeded",
@@ -392,7 +392,7 @@ $ curl https://core.spreedly.com/v1/gateways/6DqX57I6fHgIuUkVN2HGszjDSu1/purchas
   "transaction": {
           "payment_method_token": "3uAIR1sSCVJG90obnCN1Ip1BY3b",
           "amount": 500,
-          "currency_code": "ARS",
+          "currency_code": "[FAKER][CURRENCY][ACRONYM]",
           "gateway_specific_fields":{
           	"mercado_pago":{
           		"cardholder_identification_type":"DNI",

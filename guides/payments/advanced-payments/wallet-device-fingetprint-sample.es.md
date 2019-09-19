@@ -52,11 +52,11 @@
 Es posible obtener el fingerprint de un dispositivo mobile mediante el sdk de Mercado Pago.
 
 Dispositivos [Android](https://github.com/mercadopago/px-android)
-```curl
+```android
 new Device(context);
 ```
 
 Dispositivos [IOS](https://github.com/mercadopago/px-ios)
-```curl
+```ios
 Device()
 ```

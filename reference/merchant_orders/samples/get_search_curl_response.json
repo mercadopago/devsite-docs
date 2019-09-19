@@ -11,7 +11,7 @@
           "transaction_amount": 5,
           "total_paid_amount": 5,
           "shipping_cost": 0,
-          "currency_id": "ARS",
+          "currency_id": "[FAKER][CURRENCY][ACRONYM]",
           "status": "approved",
           "status_detail": "accredited",
           "operation_type": "regular_payment",
@@ -45,7 +45,7 @@
         {
           "id": null,
           "category_id": null,
-          "currency_id": "ARS",
+          "currency_id": "[FAKER][CURRENCY][ACRONYM]",
           "description": null,
           "picture_url": null,
           "title": "Producto de Test",

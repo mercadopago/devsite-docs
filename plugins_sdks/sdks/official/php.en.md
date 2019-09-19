@@ -6,7 +6,7 @@ This library provides developers with a simple set of bindings to the Mercado Pa
 
 The SDK supports PHP 5.5.0 or major
 
-### Installation 
+### Installation
 
 #### Using Composer
 
@@ -18,7 +18,7 @@ The SDK supports PHP 5.5.0 or major
 
 4. Thats all, you have Mercado Pago SDK installed.
 
-### Quick Start 
+### Quick Start
 
 1. You have to require the library from your Composer vendor folder.
 
@@ -30,7 +30,7 @@ The SDK supports PHP 5.5.0 or major
 
   You have two types of credentials:
 
-  * **For Web-checkout:**
+  * **For Smart Checkout:**
     ```php
     MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
     MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
@@ -45,14 +45,14 @@ The SDK supports PHP 5.5.0 or major
 3. Using resource objects.
 
   You can interact with all the resources available in the public API, to this each resource is represented by classes according to the following diagram:
-  
+
   ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
-  
+
   **Sample**
-  
+
 ```php
   <?php
-  
+
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -74,4 +74,3 @@ The SDK supports PHP 5.5.0 or major
 
   ?>
 ```
-

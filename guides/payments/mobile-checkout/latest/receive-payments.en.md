@@ -113,7 +113,7 @@ var preference = {}
 var item = {
   title: '[FAKER][COMMERCE][PRODUCT_NAME]',
   quantity: 1,
-  currency_id: 'ARS',
+  currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
 }
 

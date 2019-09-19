@@ -82,7 +82,7 @@ Além dos conceitos anteriores, você também deve conhecer os objetos com os qu
    "items":[
       {
          "title":" $500.00 de Premium",
-         "currency_id": "BRL",
+         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
          "description":"$500.00 de Premium",
          "quantity": 1.0,
          "unit_price": 500.00

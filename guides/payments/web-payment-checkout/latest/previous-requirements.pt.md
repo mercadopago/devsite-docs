@@ -2,6 +2,10 @@
 sites_supported:
   - mlb
   - mla
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Pré-requisitos para começar
@@ -25,7 +29,7 @@ Termo | Descrição
 _Preferência (preference)_ | São as **informações do produto ou serviço que você quer oferecer.** Entre os atributos mais importantes de uma preferência são definidos: a descrição, o valor e os itens. Ao gerá-lo, você obtém uma URL para iniciar o fluxo de pagamento.
 _Credenciais (credentials)_ | Suas credenciais são as **chaves que te informamos para que você possa configurar suas integrações.**<br/>Existem dois tipos:<br/><br/>**ACCESS_TOKEN**. Chave privada da aplicação para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/>**PUBLIC_KEY**. Chave pública da aplicação para saber, por exemplo, os meios de pagamento e criptografar os dados do cartão. Você deve usá-las somente para as suas integrações.<br/><br/>Para poder encontrá-las, confira suas <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a> e selecione as produtivas na opção _Checkout personalizado_.<br/><br/>Se você entrou nesta página com sua conta, elas serão preenchidas automaticamente dentro das linhas de códigos.
 _Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar a preferência**  e que dá início ao fluxo de pagamento do Smart Checkout.
-_Item (ítem)_ | Faz referência ao produto ou serviço que se quer oferecer. Pode ser um ou uma lista.
+_Ítem (ítem)_ | Faz referência ao produto ou serviço que se quer oferecer. Pode ser um ou uma lista.
 _Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui suas próprias<a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar.
 
 ## Pré-requisitos
@@ -34,7 +38,24 @@ Para continuar, confira os pré-requisitos:
 
 ### 1. Acesso à conta do Mercado Pago ou do Mercado Livre
 Para poder começar a integração, é necessário **contar com uma conta do Mercado Pago ou do Mercado Livre.**
+----[mla]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.ar/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlm]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.mx/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlu]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.uy/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mco]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.co/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlc]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.cl/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mlb]----
 Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.br/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
 
 ### 2.  Instalação do SDK do Mercado Pago
 **Instale o SDK oficial** para simplificar sua integração com as nossas APIs.
@@ -71,7 +92,12 @@ gem install mercadopago-sdk
 ```
 ```csharp
 ===
+----[mla, mco, mlu, mlc, mlm]----
 Use o  <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar o SDK .NET do Mercado Pago.
+------------
+----[mlb]----
+Use o  <a href="https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar o SDK .NET do Mercado Pago.
+------------
 Para isso, execute o seguinte comando no console do NuGet Package Manager:
 ===
 PM> Install-Package mercadopago-sdk -Version 1.0.57
@@ -82,28 +108,24 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [sessão de Smart Checkout antiga](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [sessão de Smart Checkout antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+
+---
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integre o Smart Checkout<span class="card-status-tag card-status-tag-required">OBRIGATORIO</span></p>
- <p>Siga o passo a passo para começar a receber pagamentos no seu site.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Teste a sua integração<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Confira se está tudo em ordem na sua integração com os usuários de teste.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integre o Smart Checkout
+>
+> Siga o passo a passo para começar a receber pagamentos no seu site.
+>
+> [Integre o Smart Checkout](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Teste a sua integração
+>
+> Confira se está tudo em ordem na sua integração com os usuários de teste.
+>
+> [Teste a sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)
