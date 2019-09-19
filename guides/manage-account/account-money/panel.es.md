@@ -36,5 +36,5 @@ Sigue estos pasos para generar tus reportes:
 >
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glosary)
+> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glossary)
 
