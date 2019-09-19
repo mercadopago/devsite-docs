@@ -39,7 +39,7 @@ Y en la columna SETTLEMENT_NET_AMOUNT encontrarás el impacto real sobre el dine
 
 ## Ejemplo de un reporte
 
-Observa cómo está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de dinero encuenta en este ejemplo para identificar las operaciones y leer tus propios reportes:
 
 ![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
 
