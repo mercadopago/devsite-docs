@@ -25,16 +25,11 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 | Chargeback | <br/>Contracargo<br/><br/> |
 | Dispute |<br/> Se encuentran en reclamo.<br/><br/>|
 | Withdrawal | <br/>Dinero retirado.<br/><br/>|
-| Cashback | <br/> Devolución de dinero.<br/> |
-| Settlement shipping | <br/> Aprobadas de envios.<br/> |
-| Refund shipping | <br/> Devueltas total o parcialmente de envios.<br/> |
+| Cashback | <br/> Devolución de dinero.<br/><br/> |
+| Settlement shipping | <br/> Aprobadas de envios.<br/><br/> |
+| Refund shipping | <br/> Devueltas total o parcialmente de envios.<br/><br/> |
 
 Y en la columna SETTLEMENT_NET_AMOUNT encontrarás el impacto real sobre el dinero de tu cuenta.
-
-**¿Qué pasa si un retiro falla?**
-
-Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT`.
-
 
 > NOTE
 >
