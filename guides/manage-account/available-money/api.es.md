@@ -465,7 +465,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias:
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 
