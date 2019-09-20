@@ -30,7 +30,7 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 ## Configuração
 
 <center>
-  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=PG78aN18d_w" frameborder="0" allowfullscreen=""></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PG78aN18d_w" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
 1) No seu painel de administração do Shopify, va até o menu **Settings > Payments**.
