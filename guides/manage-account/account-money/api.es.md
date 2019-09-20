@@ -13,13 +13,12 @@
 >
 > [Generar de forma programada](#bookmark_generar_de_forma_programada)
 
-
-Ganá tiempo y **automatizá la frecuencia de generación del reporte** de Dinero en cuenta las veces que quieras, tanto de forma manual como de forma programada. 
-
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. 
+Ganá tiempo y automatizá la frecuencia de generación del reporte de Dinero en cuenta las veces que quieras.
 
 ## Configurar tus reportes
 
-Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
+Ejecuta la solicitud que necesites para consultar, crear y actualizar tus reportes.
 
 ### Consultar configuración
 
@@ -204,7 +203,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ## Generar de forma manual

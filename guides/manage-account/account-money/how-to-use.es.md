@@ -35,7 +35,7 @@ Y en la columna SETTLEMENT_NET_AMOUNT encontrarás el impacto real sobre el dine
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
@@ -43,7 +43,7 @@ Observa cómo está compuesto el reporte de dinero encuenta en este ejemplo para
 
 ![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
 
-La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
+La versión por defecto mostrará una vista extendida de las columnas. El informe tendrá la mayor cantidad de detalle posible.
 
 <hr/>
 
