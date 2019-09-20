@@ -21,7 +21,7 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 | Transacciones | Tipo de operación |
 | --- | --- |
 | SETTLEMENT |<br/> Aprobadas<br/><br/>|
-| REFUND |<br/> Devueltas total o parcialmente.<br/><br/> |
+| REFUND |<br/> Devoluciones total o parcialmente.<br/><br/> |
 | CHARGEBACK | <br/>Contracargo<br/><br/> |
 | DISPUTE |<br/> Se encuentran en reclamo.<br/><br/>|
 | WITHDRAWAL | <br/>Dinero retirado.<br/><br/>|
