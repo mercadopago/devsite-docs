@@ -1,0 +1,42 @@
+{
+  "id": 9999999999,
+  "status": "closed",
+  "external_reference": "default",
+  "preference_id": "Preference identification",
+  "payments": [],
+  "shipments": [],
+  "collector": {
+    "id": 999999999,
+    "email": "collector@email.com",
+    "nickname": null
+  },
+  "marketplace": "NONE",
+  "notification_url": null,
+  "date_created": "2018-09-14T13:11:31.000-04:00",
+  "last_updated": "2018-09-14T13:11:43.000-04:00",
+  "sponsor_id": null,
+  "shipping_cost": 0,
+  "total_amount": 5,
+  "site_id": "MLA",
+  "paid_amount": 5,
+  "refunded_amount": 0,
+  "payer": {
+    "id": 999999999,
+    "email": "payer@email.com"
+  },
+  "items": [
+    {
+      "id": "item id",
+      "category_id": "item category",
+      "currency_id": "ARS",
+      "description": "item description",
+      "picture_url": "item picture url",
+      "title": "item title",
+      "quantity": 1,
+      "unit_price": 5
+    }
+  ],
+  "cancelled": false,
+  "additional_info": "additional information",
+  "application_id": 9999999999999999
+}

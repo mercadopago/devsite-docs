@@ -1,28 +1,15 @@
 ---
 resource: merchant_orders.raml
 use:
-- id
-- status
 - external_reference
-- preference_id
-- payments
+- additional_info
 - shipments
-- collector
 - marketplace
 - notification_url
-- date_created
-- last_updated
 - sponsor_id
-- shipping_cost
-- total_amount
 - site_id
-- paid_amount
-- refunded_amount
 - payer
 - items
-- cancelled
-- additional_info
-- application_id
 errors:
   - 400 BAD_REQUEST:
     - invalid_user_id:
@@ -65,16 +52,6 @@ errors:
           en: invalid item quantity.
           es: invalid item quantity.
           pt: invalid item quantity.
-    - invalid_items:
-        description:
-          en: unit_price cannot be null for the given item.
-          es: unit_price cannot be null for the given item.
-          pt: unit_price cannot be null for the given item.
-    - invalid_items:
-        description:
-          en: currency_id cannot be null for the given item.
-          es: currency_id cannot be null for the given item.
-          pt: currency_id cannot be null for the given item.
     - invalid_items:
         description:
           en: cannot operate with this currency code.
@@ -145,9 +122,19 @@ errors:
           en: invalid URL. Isn't HTTP or HTTPS.
           es: invalid URL. Isn't HTTP or HTTPS.
           pt: invalid URL. Isn't HTTP or HTTPS.
+    - communication_error:
+        description:
+          en: Error when calling...
+          es: Error when calling...
+          pt: Error when calling...
   - 401 UNAUTHORIZED:
     - invalid_token:
         description:
           en: access denied.
           es: access denied.
           pt: access denied.
+    - invalid_caller_id:
+        description:
+          en: invalid caller_id
+          es: invalid caller_id
+          pt: invalid caller_id
