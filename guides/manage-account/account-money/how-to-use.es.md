@@ -20,14 +20,14 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 
 | Transacciones | Tipo de operación |
 | --- | --- |
-| Settlement |<br/> Aprobadas<br/><br/>|
-| Refund |<br/> Devueltas total o parcialmente.<br/><br/> |
-| Chargeback | <br/>Contracargo<br/><br/> |
-| Dispute |<br/> Se encuentran en reclamo.<br/><br/>|
-| Withdrawal | <br/>Dinero retirado.<br/><br/>|
-| Cashback | <br/> Devolución de dinero.<br/><br/> |
-| Settlement shipping | <br/> Aprobadas de envios.<br/><br/> |
-| Refund shipping | <br/> Devueltas total o parcialmente de envios.<br/><br/> |
+| SETTLEMENT |<br/> Aprobadas<br/><br/>|
+| REFUND |<br/> Devueltas total o parcialmente.<br/><br/> |
+| CHARGEBACK | <br/>Contracargo<br/><br/> |
+| DISPUTE |<br/> Se encuentran en reclamo.<br/><br/>|
+| WITHDRAWAL | <br/>Dinero retirado.<br/><br/>|
+| CASHBACK | <br/> Devolución de dinero.<br/><br/> |
+| SETTLEMENT_SHIPPING | <br/> Envíos aprobados.<br/><br/> |
+| REFUND_SHIPPING | <br/> Devoluciones totales o parciales de costos de envíos.<br/><br/> |
 
 Y en la columna SETTLEMENT_NET_AMOUNT encontrarás el impacto real sobre el dinero de tu cuenta.
 
@@ -41,7 +41,7 @@ Y en la columna SETTLEMENT_NET_AMOUNT encontrarás el impacto real sobre el dine
 
 Observa cómo está compuesto el reporte de dinero encuenta en este ejemplo para identificar las operaciones y leer tus propios reportes:
 
-![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
+![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-es.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe tendrá la mayor cantidad de detalle posible.
 
