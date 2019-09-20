@@ -197,7 +197,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | `extended` (opcional) | <br/>Incluye el detalle de las comisiones en el reporte:<br/> - Detalle del impuesto (`tax_detail`)<br/> - Detalle del impuesto (`tax_amount_telco`)<br/> - Id del punto de venta (`pos_id`)<br/> - Id de la sucursal (`store_id`)<br/> - Nombre de la sucursal (`store_name`)<br/> - Id externo del punto de venta (`external_pos_id`)<br/> - Nombre del punto de venta (`pos_name`)<br/> - Id externo de la sucursal (`external_store_id`)<br/> <br/><br/> |
 | `show_fee_prevision` (opcional) |   <br/> Incluye el detalle de las comisiones  <br/> <br/>|
 | `show_chargeback_cancel` (opcional) |  <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
-| `shipping_detail` (opcional) |  <br/>  Incluye el detalle de los envios <br/> <br/>|
+| `shipping_detail` (opcional) |  <br/>  Incluye el detalle de los envíos <br/> <br/>|
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
 
 > NOTE

@@ -25,9 +25,9 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | MKP_FEE_AMOUNT | Comisión de Mercado Libre. Incluye IVA. |
 | FINANCING_FEE_AMOUNT | Costo por ofrecer cuotas sin interés. |
 | SHIPPING_FEE_AMOUNT | Costo de envío. |
-| TAXES_AMOUNT | ----[mla, mco]---- Impuestos cobrados por retenciones de IVA, ICA y Fuente según aplique el caso. ------------ ----[mlu]---- Impuestos cobrados por retenciones de IVA.  ------------ ----[mlu]---- Impuestos cobrados. ------------ ----[mpe]---- Impuestos cobrados. ------------ |
+| TAXES_AMOUNT | ----[mla, mco]---- Impuestos cobrados por retenciones de IVA, ICA y Fuente según aplique el caso. ------------ ----[mlu]---- Impuestos cobrados por retenciones de IVA.  ------------ ----[mlu, mpe]---- Impuestos cobrados. ------------ |
 | INSTALLMENTS | Cantidad de cuotas en las que fue realizada la operación. |
-| TAX_AMOUNT_TELCO | ----[mla, mco, mlu]----  <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Descripción del impuesto retenido por operación en el TAXES_AMOUNT. <br/><br/> Puede tomar el valor de:<br/><ul><li> fuente</li><li>iva</li><li>ica</li></td></tr><tr style="border:none;"></table> ------------ |
+| TAX_AMOUNT_TELCO | ----[mla]----  <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Descripción del impuesto retenido por operación en el TAXES_AMOUNT. <br/><br/> Puede tomar el valor de:<br/><ul><li> fuente</li><li>iva</li><li>ica</li></td></tr><tr style="border:none;"></table> ------------ ----[mco, mlu]---- Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto. ------------ |
 | TAX_DETAIL | <br/> Descripción del impuesto retenido por operación en el `TAXES_AMOUNT`. ----[mla]---- Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
 | POS_ID | ID de caja si el pago se realiza a través de un comercio físico. |
 | POS_NAME | Nombre de caja para el pago realizado a través de un comercio físico. |
@@ -35,6 +35,11 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | STORE_ID | ID de sucursal si el pago se realiza a través de un comercio físico. |
 | STORE_NAME |  ----[mla, mlm]---- Nombre de sucursal para el pago realizado a través de un comercio físico. ------------ |
 | EXTERNAL_STORE_ID |  ----[mla, mlm]---- ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. ------------ |
+| ORDER_ID |  ----[mla, mlm]---- Orden de compra. ------------ |
+| SHIPPING_ID |  ----[mla, mlm]---- Identificador de envío. ------------ |
+| SHIPMENT_MODE |  ----[mla, mlm]---- Modalidad de envío ------------ |
+| PACK_ID |  ----[mla, mlm]---- Identificador del paquete en el carrito. ------------ |
+
 <hr/>
 
 ### Próximos pasos

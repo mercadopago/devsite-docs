@@ -17,12 +17,6 @@ El reporte de Dinero en cuenta es un *informe descargable que te permite conocer
 
 Contiene, por ejemplo, el detalle de tus pagos, los ingresos de dinero, los contracargos y las devoluciones, en un periodo de tiempo con su desglose en bruto y neto. Está compuesto por el dinero disponible y el no disponible. Es decir, el dinero que tienes liberado para retirar y el que falta liberar según tus tasas y plazos elegidos.
 
-> NOTE
->
-> Nota
->
-> Ten en cuenta de habilitar la ----[mla]---- [sección de Reportes](https://www.mercadopago.com.ar/balance/reports) ------------ ----[mlm]---- [sección de Reportes](https://www.mercadopago.com.mx/balance/reports) ------------ ----[mlu]---- [sección de Reportes](https://www.mercadopago.com.uy/balance/reports) ------------ ----[mlc]---- [sección de Reportes](https://www.mercadopago.cl/balance/reports) ------------ ----[mco]---- [sección de Reportes](https://www.mercadopago.com.co/balance/reports) ------------ ----[mpe]---- [sección de Reportes](https://www.mercadopago.com.pe/balance/reports) ------------, ya que que no podrás generar reportes previos ese momento por más que tu operación en Mercado Pago haya comenzado antes del alta.
-
 ## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
