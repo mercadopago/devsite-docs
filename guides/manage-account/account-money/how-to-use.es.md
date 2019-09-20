@@ -28,6 +28,9 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 | CASHBACK | <br/> Devolución de dinero.<br/><br/> |
 | SETTLEMENT_SHIPPING | <br/> Envíos aprobados.<br/><br/> |
 | REFUND_SHIPPING | <br/> Devoluciones totales o parciales de costos de envíos.<br/><br/> |
+| CHARGEBACK_SHIPPING | <br/> Contracargo de envíos.<br/><br/> |
+| DISPUTE_SHIPPING | <br/> El envío se encuentran en reclamo.<br/><br/> |
+
 
 Y en la columna SETTLEMENT_NET_AMOUNT encontrarás el impacto real sobre el dinero de tu cuenta.
 
