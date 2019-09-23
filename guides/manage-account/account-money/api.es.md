@@ -25,7 +25,13 @@ Ejecuta la solicitud que necesites para consultar, crear y actualizar tus report
 Consulta la configuración de tus reportes por API de esta forma:
 
 [[[
-```PHP
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN' \
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -33,7 +39,49 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$response = Requests::get('http://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
+$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
+```
+```java
+ URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, params=params)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN',
+    headers: headers
+};
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+request(options, callback);
 ```
 ]]]
 
@@ -47,7 +95,6 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "detailed": true,
     "scheduled": false,
     "coupon_detailed": true,
-    "custom_values_unquote": false,
     "shipping_detail": true,
     "refund_detailed": true,
     "extended": false,
@@ -64,7 +111,26 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 Crea tus preferencias de generación por API para exportar columnas, nombrar a tus archivos y configurar otros ajustes:
 
 [[[
-```PHP
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "detailed": true,
+            "execute_after_withdrawal": true,
+            "extended": true,
+            "schedule":true,
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            }
+    }'
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -79,7 +145,6 @@ $data = '{
             "detailed": true,
             "scheduled": false,
             "coupon_detailed": true,
-            "custom_values_unquote": false,
             "shipping_detail": true,
             "refund_detailed": true,
             "extended": false,
@@ -90,6 +155,112 @@ $data = '{
             }
         }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("POST");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+connection.setDoOutput(true);
+
+String body = "{
+                    \\"file_name_prefix\\": \\"settlement-report-USER_ID\\",
+                    \\"show_fee_prevision\\": false,
+                    \\"show_chargeback_cancel\\": true,
+                    \\"detailed\\": true,
+                    \\"scheduled\\": false,
+                    \\"coupon_detailed\\": true,
+                    \\"shipping_detail\\": true,
+                    \\"refund_detailed\\": true,
+                    \\"extended\\": false,
+                    \\"frequency\\": {
+                        \\"hour\\": 0,
+                        \\"type\\": \\"monthly\\",
+                        \\"value\\": 1
+                    }
+                }";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+data = '{  
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "detailed": true,
+            "scheduled": false,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "extended": false,
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            }
+        }'
+
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, params=params, data=data)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var dataString = '{
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "detailed": true,
+            "scheduled": false,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "extended": false,
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            }
+    }';
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN',
+    method: 'POST',
+    headers: headers,
+    body: dataString
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
 ```
 ]]]
 
@@ -103,7 +274,6 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
     "detailed": true,
     "scheduled": false,
     "coupon_detailed": true,
-    "custom_values_unquote": false,
     "shipping_detail": true,
     "refund_detailed": true,
     "extended": false,
@@ -121,6 +291,28 @@ Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atr
 
 
 [[[
+```curl
+curl -X PUT \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+        "file_name_prefix": "settlement-report-USER_ID",
+        "show_fee_prevision": false,
+        "show_chargeback_cancel": true,
+        "detailed": true,
+        "scheduled": false,
+        "coupon_detailed": true,
+        "shipping_detail": true,
+        "refund_detailed": true,
+        "extended": false,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }'
+```
 ```PHP
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -136,7 +328,6 @@ $data = '{
         "detailed": true,
         "scheduled": false,
         "coupon_detailed": true,
-        "custom_values_unquote": false,
         "shipping_detail": true,
         "refund_detailed": true,
         "extended": false,
@@ -147,6 +338,112 @@ $data = '{
         }
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("PUT");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+connection.setDoOutput(true);
+
+String body = "{
+                    \\"file_name_prefix\\": \\"settlement-report-USER_ID\\",
+                    \\"show_fee_prevision\\": false,
+                    \\"show_chargeback_cancel\\": true,
+                    \\"detailed\\": true,
+                    \\"scheduled\\": false,
+                    \\"coupon_detailed\\": true,
+                    \\"shipping_detail\\": true,
+                    \\"refund_detailed\\": true,
+                    \\"extended\\": false,
+                    \\"frequency\\": {
+                        \\"hour\\": 0,
+                        \\"type\\": \\"monthly\\",
+                        \\"value\\": 1
+                    }
+            }";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+data = '{
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "detailed": true,
+            "scheduled": false,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "extended": false,
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            }
+        }'
+
+response = requests.put('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, params=params, data=data)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var dataString = '{
+        "file_name_prefix": "settlement-report-USER_ID",
+        "show_fee_prevision": false,
+        "show_chargeback_cancel": true,
+        "detailed": true,
+        "scheduled": false,
+        "coupon_detailed": true,
+        "shipping_detail": true,
+        "refund_detailed": true,
+        "extended": false,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
+    }';
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN',
+    method: 'PUT',
+    headers: headers,
+    body: dataString
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
 ```
 ]]]
 
@@ -161,7 +458,6 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "detailed": true,
     "scheduled": false,
     "coupon_detailed": true,
-    "custom_values_unquote": false,
     "shipping_detail": true,
     "refund_detailed": true,
     "extended": false,
@@ -210,7 +506,17 @@ Genera tus reportes de forma manual configurando tres instancias: generación, b
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 [[[
-```PHP
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+            "begin_date": "2019-05-01T00:00:00Z",
+            "end_date": "2019-06-01T00:00:00Z"
+    }'
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -225,6 +531,61 @@ $data ='{
 
 $response = Requests::post("https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN", $headers, $data);
 ```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("POST");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+connection.setDoOutput(true);
+
+String body = "{\\"begin_date\\":\\"2019-05-01T00:00:00Z\\",\\"end_date\\": \\"2019-06-01T00:00:00Z\\"}";
+
+try(OutputStream os = connection.getOutputStream()) {
+    byte[] input = body.getBytes("utf-8");
+    os.write(input, 0, input.length);
+}
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = { 'access_token': 'ENV_ACCESS_TOKEN' }
+
+data = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }'
+
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report', headers=headers, params=params, data=data)
+```
+```node
+var request = require('request');
+
+var headers = { 'accept': 'application/json', 'content-type': 'application/json' };
+
+var dataString = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }';
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN',
+    method: 'POST',
+    headers: headers,
+    body: dataString
+};
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+request(options, callback);
+```
 ]]]
 
 Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica.
@@ -234,7 +595,13 @@ Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se gener
 Consulta la API para ver si la generación de reportes quedó lista:
 
 [[[
-```PHP
+```curl
+curl -G \
+    -H 'accept: application/json' \
+    -d 'access_token=ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/list'
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -245,6 +612,43 @@ $data = array(
     'access_token' => 'ENV_ACCESS_TOKEN'
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/list', $headers, $data);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/list?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = { 'accept': 'application/json' }
+
+params = { 'access_token': 'ENV_ACCESS_TOKEN' }
+
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/list', headers=headers, params=params)
+```
+```node
+var request = require('request');
+var headers = { 'accept': 'application/json'};
+var dataString = 'access_token=ENV_ACCESS_TOKEN';
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/list',
+    method: 'POST',
+    headers: headers,
+    body: dataString
+};
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+request(options, callback);
 ```
 ]]]
 
@@ -272,7 +676,10 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
 [[[
-```PHP
+```curl
+curl -X GET 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -283,6 +690,39 @@ $data = array(
     'access_token' => 'ENV_ACCESS_TOKEN'
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/:file_name', $headers, $data);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/:file_name', params=params)
+```
+```node
+var request = require('request');
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
 ```
 ]]]
 
@@ -313,7 +753,13 @@ Genera tus reportes de forma programada configurando tres instancias: generació
 Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
 
 [[[
-```PHP
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN' 
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -322,6 +768,53 @@ $headers = array(
     'content-type' => 'application/json'
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("POST");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/schedule', headers=headers, params=params)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN',
+    method: 'POST',
+    headers: headers
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
 ```
 ]]]
 
@@ -349,7 +842,13 @@ Ejecuta el curl que necesites para cancelar la generación programada de tus rep
 
 
 [[[
-```PHP
+```curl
+curl -X DELETE \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN'
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
@@ -358,6 +857,52 @@ $headers = array(
     'content-type' => 'application/json'
 );
 $response = Requests::delete('https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("DELETE");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+}
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+response = requests.delete('https://api.mercadopago.com/v1/account/settlement_report/schedule', headers=headers, params=params)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json'
+};
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN',
+    method: 'DELETE',
+    headers: headers
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
 ```
 ]]]
 
@@ -384,12 +929,48 @@ Descarga el archivo con este comando:
 
 
 [[[
-```PHP
+```curl
+curl -X GET 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN' 
+```
+```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array();
 $response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN', $headers);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```Python
+import requests
+
+params = {'access_token': 'ENV_ACCESS_TOKEN'}
+
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/:file_name', params=params)
+```
+```node
+var request = require('request');
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
 ```
 ]]]
 
