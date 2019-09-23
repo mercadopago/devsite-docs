@@ -37,6 +37,6 @@ Done! Your **Smart Checkout** is now working in the Gateway Model.
 
 > **Hybrid model:** the Smart Checkout doesn't support this mode yet. We are working to have this option soon. We'll let you know when is available to use.
 
-## Next steps
+### Next steps
 
 * [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/reconciliation/)

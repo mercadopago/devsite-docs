@@ -618,9 +618,9 @@ Um _Webhook_ é uma notificação enviada de um servidor para outro mediante uma
 
 Todas as informações relacionadas a esse assunto podem ser encontradas no [artigo sobre Webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
 
-## Próximos passos
+### Próximos passos
 
-### Receba pagamentos com cartões armazenados
+#### Receba pagamentos com cartões armazenados
 
 Armazene os cartões de seus clientes com segurança e efetue pagamentos com uma experiência one-click-to-buy (ou compra com um clique).
 
