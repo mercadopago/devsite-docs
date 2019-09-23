@@ -31,7 +31,7 @@ Consulta la configuración de tus reportes por API de esta forma:
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
 ```
 ```php
 <?php
@@ -41,10 +41,10 @@ $headers = array(
     'accept' => 'application/json',
     'content-type' => 'application/json'
 );
-$response = Requests::get('http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
+$response = Requests::get('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
 ```
 ```java
- URL url = new URL("http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
+ URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
@@ -64,7 +64,7 @@ headers = {
 }
 params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
-response = requests.get('http://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params)
+response = requests.get('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params)
 ```
 ```node
 var request = require('request');
@@ -75,7 +75,7 @@ var headers = {
 };
 
 var options = {
-    url: 'http://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
     headers: headers
 };
 function callback(error, response, body) {
