@@ -14,7 +14,7 @@
 > [Generar de forma programada](#bookmark_generar_de_forma_programada)
 
 Puedes generar tu reporte por API, tanto de forma manual como de forma programada. 
-Ganá tiempo y automatizá la frecuencia de generación del reporte de Dinero en cuenta las veces que quieras.
+Ganá tiempo y **automatizá la frecuencia de generación del reporte** de Dinero en cuenta las veces que quieras.
 
 ## Configurar tus reportes
 
@@ -477,18 +477,18 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 
 | Campos configurables | Descripción |
 | ----------| ---------------------- |
-| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
-| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Impuesto de mercado pago (`mkp_fee_amount`)<br/> - Impuesto financiero (`financing_fee_amount`)<br/> - Impuesto de envio (`shipping_fee_amount`)<br/> - Impuestos (`taxes_amount`)<br/> - Cuotas (`installments`)<br/> <br/><br/>|
-| `extended` (opcional) | <br/>Incluye el detalle de las comisiones en el reporte:<br/> - Detalle del impuesto (`tax_detail`)<br/> - Detalle del impuesto (`tax_amount_telco`)<br/> - Id del punto de venta (`pos_id`)<br/> - Id de la sucursal (`store_id`)<br/> - Nombre de la sucursal (`store_name`)<br/> - Id externo del punto de venta (`external_pos_id`)<br/> - Nombre del punto de venta (`pos_name`)<br/> - Id externo de la sucursal (`external_store_id`)<br/> <br/><br/> |
+| *`coupon_detailed` (opcional)* | <br/>Incluye una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
+| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Comisión de Mercado Libre (`mkp_fee_amount`)<br/> - Impuesto financiero (`financing_fee_amount`)<br/> - Impuesto de envío (`shipping_fee_amount`)<br/> - Impuestos  cobrados por retenciones de IIBB (`taxes_amount`)<br/> - Cuotas (`installments`)<br/> <br/><br/>|
+| *`extended` (opcional)* | <br/>Incluye el detalle de las comisiones en el reporte:<br/> - Detalle del impuesto (`tax_detail`)<br/> - Detalle del impuesto (`tax_amount_telco`)<br/> - Id del punto de venta (`pos_id`)<br/> - Id de la sucursal (`store_id`)<br/> - Nombre de la sucursal (`store_name`)<br/> - Id externo del punto de venta (`external_pos_id`)<br/> - Nombre del punto de venta (`pos_name`)<br/> - Id externo de la sucursal (`external_store_id`)<br/> <br/><br/> |
 | `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
 | `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
-| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
+| *`refund_detailed` (opcional)* | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
-| `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
-| `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
-| `shipping_detail` (opcional) |  <br/>  Incluye el detalle de los envíos <br/> <br/>|
-| `show_chargeback_cancel` (opcional) |  <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
-| `show_fee_prevision` (opcional) |   <br/> Incluye el detalle de las comisiones  <br/> <br/>|
+| *`separator` (opcional)* | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
+| *`sftp_info` (opcional)* | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
+| *`shipping_detail` (opcional)* |  <br/>  Incluye el detalle de los envíos <br/> <br/>|
+| *`show_chargeback_cancel` (opcional)* |  <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
+| *`show_fee_prevision` (opcional)* |   <br/> Incluye el detalle de las comisiones  <br/> <br/>|
 
 > NOTE
 >
