@@ -13,7 +13,7 @@ sites_supported:
 
 ## Esquema redirect
 
-El Smart Checkout modal permite cambiar su esquema de apertura.
+El Smart Checkout permite cambiar su esquema de apertura.
 
 Los esquemas disponibles actualmente son:
 

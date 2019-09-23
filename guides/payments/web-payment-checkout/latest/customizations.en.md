@@ -13,7 +13,7 @@ sites_supported:
 
 ## Redirect Scheme
 
-The Smart Checkout redirect allows you to change your opening scheme.
+The Smart Checkout allows you to change your opening scheme.
 
 The schemes currently available are:
 

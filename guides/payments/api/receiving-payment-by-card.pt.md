@@ -379,6 +379,8 @@ Console.log(payment.Status);
 
 > NOTE
 >
+> Nota
+>
 > Você pode consultar mais informações sobre [manipulação de respostas](#manipulação-de-respostas).
 
 ## Receba um pagamento em parcelas

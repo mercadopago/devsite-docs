@@ -9,7 +9,7 @@ sites_supported:
     - mlv
     - global
 ---
-# **Personalização**
+# Personalização
 
 > WARNING
 >

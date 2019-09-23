@@ -378,6 +378,8 @@ To make the payment, simply make an API call:
 
 > NOTE
 >
+> Note
+>
 > See more information about [response handling](#manejo-de-respuestas).
 
 ## Receive a payment with installments

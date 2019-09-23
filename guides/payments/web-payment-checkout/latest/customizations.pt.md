@@ -13,7 +13,7 @@ sites_supported:
 
 ## Esquema redirect
 
-O Smart Checkout redirect permite alterar seu esquema de abertura.
+O Smart Checkout permite alterar seu esquema de abertura.
 
 Os esquemas disponíveis atualmente são:
 
