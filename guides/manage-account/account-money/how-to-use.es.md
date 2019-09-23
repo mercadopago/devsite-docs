@@ -16,7 +16,7 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 
 ## ¿Qué contiene el reporte?
 
-El reporte está compuesto por distintos tipo de transacciones que puedes ver en la columna TRANSACTION_TYPE . Cada una de ellas tendrá el monto bruto de la operación.
+El reporte está compuesto por distintos tipo de transacciones que puedes ver en la columna `TRANSACTION_TYPE` . Cada una de ellas tendrá el monto bruto de la operación.
 
 | Transacciones | Tipo de operación |
 | --- | --- |
@@ -32,7 +32,7 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 | DISPUTE_SHIPPING | <br/> El envío se encuentran en reclamo.<br/><br/> |
 
 
-Y en la columna SETTLEMENT_NET_AMOUNT encontrarás el impacto real sobre el dinero de tu cuenta.
+Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre el dinero de tu cuenta.
 
 > NOTE
 >
