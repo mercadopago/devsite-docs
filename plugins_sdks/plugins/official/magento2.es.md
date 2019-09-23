@@ -122,17 +122,3 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar su cuenta de Mercado Pago o el módulo.
 
 3) ¡Listo! El estado de notificación se ha configurado correctamente.
-
-
-## Soporte técnico
-
-Caso tenga alguna duda, problema o error tenemos un canal de contacto.
-Envié un email a modulos@mercadopago.com con la seguinte información:
-
-* Email de su cuenta de Mercado Pago.
-* Detalles sobre su duda, problema o error.
-* Archivos que puedan ayudar en el entendimiento (Print-Screen, Video, Archivos de logs, etc).
-* Versión del Magento.
-* Versión del módulo, si está utilizando.
-
-No te preocupes... Vamos a ayudarle lo más rápidamente posible.
