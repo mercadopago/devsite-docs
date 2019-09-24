@@ -38,7 +38,7 @@ Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre el di
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
@@ -58,7 +58,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Conoce la composición del reporte y aprende a leerlo.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/how-to-use/)
+> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/how-to-use/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -66,4 +66,4 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Elige la forma de generar tu reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/generate/)
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)

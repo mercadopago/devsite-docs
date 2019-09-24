@@ -15,8 +15,8 @@ Existen dos formas de generar un reporte de Dinero en cuenta:
 
 | Canales | Descripción |
 | ------- | ----------- |
-| Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus informes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [tus informes](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus informes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus informes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus informes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus informes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ y elige la opción de Reportes.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/panel/)<br/><br/> |
-| Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/api/) <br/><br/>|
+| Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus informes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [tus informes](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus informes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus informes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus informes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus informes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ y elige la opción de Reportes.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/panel/)<br/><br/> |
+| Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/api/) <br/><br/>|
 
 
 ## Características técnicas del reporte
@@ -67,7 +67,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -79,7 +79,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > Descarga tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/panel/)
+> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -87,4 +87,4 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
 >
-> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/api/)
+> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/api/)

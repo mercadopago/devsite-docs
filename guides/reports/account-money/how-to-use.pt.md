@@ -4,4 +4,4 @@
 >
 > No momento, esta página não está disponível em português.
 >
->[Ver documentação em espanhol](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/how-to-use/)
+>[Ver documentação em espanhol](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/how-to-use/)

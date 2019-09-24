@@ -41,7 +41,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/how-to-use/)
+> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -49,4 +49,4 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/generate/)
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/generate/)

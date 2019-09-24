@@ -45,7 +45,7 @@ Además, puedes usar el reporte para conocer el historial de tu dinero en cuenta
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ### Próximos pasos
@@ -56,7 +56,7 @@ Además, puedes usar el reporte para conocer el historial de tu dinero en cuenta
 >
 > Conoce la composición del reporte y aprende a leerlo.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/how-to-use/)
+> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -64,4 +64,4 @@ Además, puedes usar el reporte para conocer el historial de tu dinero en cuenta
 >
 > Elige la forma de generar tu reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account-money/generate/)
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)

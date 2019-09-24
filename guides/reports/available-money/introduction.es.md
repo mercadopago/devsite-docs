@@ -61,7 +61,7 @@ Además, puedes usar el reporte para conocer el historial de dinero disponible e
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -73,7 +73,7 @@ Además, puedes usar el reporte para conocer el historial de dinero disponible e
 >
 > Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/how-to-use/)
+> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -81,4 +81,4 @@ Además, puedes usar el reporte para conocer el historial de dinero disponible e
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/generate/)
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/generate/)
