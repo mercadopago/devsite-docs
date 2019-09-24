@@ -35,7 +35,7 @@ Los movimientos de dinero se impactan automáticamente en el reporte cuando se a
 
 ### Usa el reporte para conciliar
 
-Este reporte **se usa para conciliar los movimientos de dinero** aprobados e incluye las transacciones que lo componen. Al mismo tiempo, puedes para ver el estado de tu cuenta.
+Este reporte **se usa para conciliar los movimientos de dinero** aprobados e incluye las transacciones que lo componen. Al mismo tiempo, puedes usarlo para ver el estado de tu cuenta.
 
 ### Usa el reporte para conocer tu historial
 
