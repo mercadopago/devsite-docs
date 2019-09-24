@@ -798,10 +798,6 @@ properties:
         en: Order with payments "in_process", "pending" or "authorized".
         es: Orden con pagos "in_process", "pending" or "authorized".
         pt: Order with payments "in_process", "pending" or "authorized".  
-    - expired:
-        en: Order expired.
-        es: Orden caducada.
-        pt: Order expired.
     - undefined:
         en: Order created before the existence of the order_status state.
         es: Orden creada antes de la existencia del estado order_status.
