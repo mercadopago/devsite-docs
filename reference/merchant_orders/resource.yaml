@@ -788,7 +788,7 @@ properties:
         pt: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the total amount of the MO.
     - partially_reverted:
         en: Order with at least one payment "refunded" or "chargeback".
-        es: Orden con al menos un pago en "refunded" o "chargeback.
+        es: Orden con al menos un pago en "refunded" o "chargeback".
         pt: Order with at least one payment "refunded" or "chargeback".
     - partially_paid:
         en: Order with at least one payment "approved" and not covering MO total amount.
