@@ -45,7 +45,7 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
@@ -73,7 +73,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/generate/)
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -81,4 +81,4 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/glossary/)
+> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/)
