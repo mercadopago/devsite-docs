@@ -28,7 +28,7 @@
     {
       "id": "item id",
       "category_id": "item category",
-      "currency_id": "ARS",
+      "currency_id": "[FAKER][CURRENCY][ACRONYM]",
       "description": "item description",
       "picture_url": "item picture url",
       "title": "item title",
