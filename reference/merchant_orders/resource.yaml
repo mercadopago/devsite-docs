@@ -770,9 +770,9 @@ properties:
 - order_status:
     type: String
     description:
-      en: Show the current merchant order state given the payments status.
+      en: Show the current merchant order status given the payments status.
       es: Muestra el estado actual de la orden según el estado de los pagos.
-      pt: Exibe o estado atual da ordem considerando o status dos pagamentos.
+      pt: Show the current merchant order status given the payments status.
     enum:
     - payment_required:
         en: Order without payments or with all payments "rejected" or "cancelled".
@@ -799,6 +799,6 @@ properties:
         es: Orden con pagos "in_process", "pending" or "authorized".
         pt: Order with payments "in_process", "pending" or "authorized".  
     - undefined:
-        en: Order created before the existence of the order_status state.
+        en: Order created before the existence of the order_status status.
         es: Orden creada antes de la existencia del estado order_status.
-        pt: Order created before the existence of the order_status state.
+        pt: Order created before the existence of the order_status status.
