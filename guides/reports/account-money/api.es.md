@@ -744,6 +744,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 ```
 
 
+
 ## Generar de forma programada
 
 Genera tus reportes de forma programada configurando tres instancias: generación, configuración y descarga.

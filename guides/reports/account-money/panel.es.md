@@ -3,11 +3,12 @@
 
 Genera tus reportes de Dinero en cuenta desde tu panel de Mercado Pago. 
 
+
 Sigue estos pasos para generar tus reportes:
 
-1. Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tasas y plazos](https://www.mercadopago.com.ar/balance/reports) ------------ ----[mlm]---- [tasas y plazos](https://www.mercadopago.com.mlm/balance/reports) ------------ ----[mlu]---- [tasas y plazos](https://www.mercadopago.com.uy/balance/reports) ------------ ----[mlc]---- [tasas y plazos](https://www.mercadopago.com.cl/balance/reports) ------------ ----[mco]---- [tasas y plazos](https://www.mercadopago.com.co/balance/reports) ------------ ----[mpe]---- [tasas y plazos](https://www.mercadopago.com.pe/balance/reports) ------------ y elige la opción de *Reportes*.
-1. Ve a ----[mla]---- [reportes de Dinero en Cuenta](https://www.mercadopago.com.ar/settings/release-options) ------------ ----[mlm]---- [reportes de Dinero en Cuenta](https://www.mercadopago.com.mlm/settings/release-options) ------------ ----[mlu]---- [reportes de Dinero en Cuenta](https://www.mercadopago.com.uy/settings/release-options) ------------ ----[mlc]---- [reportes de Dinero en Cuenta](https://www.mercadopago.com.cl/settings/release-options) ------------ ----[mco]---- [reportes de Dinero en Cuenta][https://www.mercadopago.com.co/settings/release-options) ------------ ----[mpe]---- [reportes de Dinero en Cuenta](https://www.mercadopago.com.pe/settings/release-options) ------------  y haz click en *Crear Reporte*.
-1. Busca las operaciones por **período de tiempo** y selecciona las que quieras conciliar.
+1. Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus Informes](https://www.mercadopago.com.ar/balance/reports) ------------ ----[mlm]---- [tus Informes](https://www.mercadopago.com.mlm/balance/reports) ------------ ----[mlu]---- [tus Informes](https://www.mercadopago.com.uy/balance/reports) ------------ ----[mlc]---- [tus Informes](https://www.mercadopago.com.cl/balance/reports) ------------ ----[mco]---- [tus Informes](https://www.mercadopago.com.co/balance/reports) ------------ ----[mpe]---- [tus Informes](https://www.mercadopago.com.pe/balance/reports) ------------ y elige la opción de *Reportes*.
+1. Ve a ----[mla]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.ar/settings/release-options) ------------ ----[mlm]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.mlm/settings/release-options) ------------ ----[mlu]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.uy/settings/release-options) ------------ ----[mlc]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.cl/settings/release-options) ------------ ----[mco]---- [reportes de Dinero en cuenta][https://www.mercadopago.com.co/settings/release-options) ------------ ----[mpe]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.pe/settings/release-options) ------------  y haz clic en *Crear Reporte*.
+1. Busca las operaciones por período de tiempo y selecciona las que quieras conciliar.
 
 <span style="margin-left:40px">¡Y listo! Vas a ver tu reporte *En Preparación*.</span>
 

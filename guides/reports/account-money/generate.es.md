@@ -19,6 +19,7 @@ Existen dos formas de generar un reporte de Dinero en cuenta:
 | Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/api/) <br/><br/>|
 
 
+
 ## Características técnicas del reporte
 
 Ten en cuenta la siguiente información técnica cuando quieras generar, programar y configurar tus reportes.
@@ -56,7 +57,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 
 | Elemento o acción | Características |
 | ------------ |	--------    |
-| Formato del nombre del archivo | <br/>Cuando el reporte es programado o manual:<br/> "&#60;prefijo-configurable&#62;-<span>&#60;yyyy-MM-dd-hhmmss&#62;.&#60;csv&#62;</span>" <br/> Ejemplo:  mitienda-2019-05-28-104010.csv<br/> |
+| Formato del nombre del archivo | <br/>Cuando el reporte es programado o manual:<br/> "&#60;prefijo-configurable&#62;-<span>&#60;yyyy-MM-dd-hhmmss&#62;.&#60;formato&#62;</span>" <br/> Ejemplo:  mitienda-2019-05-28-104010.csv<br/> |
 | Formatos de descarga | <br/>.csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. <br/><br/> |
 | Archivo | <br/>Los reportes generados quedan guardados en tu cuenta de Mercado Pago.<br/><br/> |
 | Configuración disponible vía API | <br/>-  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> -  Separador decimal (coma o punto)<br/> -  Notificación por e-mail<br/><br/> |

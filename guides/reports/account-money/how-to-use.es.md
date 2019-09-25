@@ -20,16 +20,16 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 
 | Transacciones | Tipo de operación |
 | --- | --- |
-| SETTLEMENT |<br/> Aprobadas<br/><br/>|
-| REFUND |<br/> Devoluciones total o parcialmente.<br/><br/> |
-| CHARGEBACK | <br/>Contracargo<br/><br/> |
-| DISPUTE |<br/> Se encuentran en reclamo.<br/><br/>|
-| WITHDRAWAL | <br/>Dinero retirado.<br/><br/>|
-| CASHBACK | <br/> Devolución de dinero.<br/><br/> |
-| SETTLEMENT_SHIPPING | <br/> Envíos aprobados.<br/><br/> |
-| REFUND_SHIPPING | <br/> Devoluciones totales o parciales de costos de envíos.<br/><br/> |
-| CHARGEBACK_SHIPPING | <br/> Contracargo de envíos.<br/><br/> |
-| DISPUTE_SHIPPING | <br/> El envío se encuentran en reclamo.<br/><br/> |
+| *SETTLEMENT* |<br/> Aprobadas<br/><br/>|
+| *REFUND* |<br/> Devoluciones total o parcialmente.<br/><br/> |
+| *CHARGEBACK* | <br/>Contracargo<br/><br/> |
+| *DISPUTE* |<br/> Se encuentran en reclamo.<br/><br/>|
+| *WITHDRAWAL* | <br/>Dinero retirado.<br/><br/>|
+| *CASHBACK* | <br/> Devolución de dinero.<br/><br/> |
+| *SETTLEMENT_SHIPPING* | <br/> Envíos aprobados.<br/><br/> |
+| *REFUND_SHIPPING* | <br/> Devoluciones totales o parciales de costos de envíos.<br/><br/> |
+| *CHARGEBACK_SHIPPING* | <br/> Contracargo de envíos.<br/><br/> |
+| *DISPUTE_SHIPPING* | <br/> El envío se encuentran en reclamo.<br/><br/> |
 
 
 Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre el dinero de tu cuenta.
@@ -38,11 +38,12 @@ Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre el di
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero encuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
 Observa cómo está compuesto el reporte de dinero encuenta en este ejemplo para identificar las operaciones y leer tus propios reportes:
+
 
 ![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-es.png)
 
