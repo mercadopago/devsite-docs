@@ -6,7 +6,7 @@ curl -X POST \
         {
             "id": "item_id",
             "category_id": "category_id",
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "description": "item description",
             "picture_url": "picture_url",
             "title": "item title",
