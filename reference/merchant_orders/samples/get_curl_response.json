@@ -99,7 +99,7 @@
   "sponsor_id": null,
   "shipping_cost": 0,
   "total_amount": 5,
-  "site_id": "MLA",
+  "site_id": "[FAKER][GLOBALIZE][UPPER_SITE_ID]",
   "paid_amount": 5,
   "refunded_amount": 0,
   "payer": {
