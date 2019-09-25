@@ -1,3 +1,7 @@
+---
+sites_supported:
+  - mlb
+---
 
 # Generación por panel de Mercado Pago
 

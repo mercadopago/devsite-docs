@@ -1,3 +1,8 @@
+---
+sites_supported:
+  - mlb
+---
+
 # Reporte de dinero en cuenta (_Settlement Report_)
 
 Contiene todos los eventos de pagos (acreditación, devolución, mediación y contracargos) que afectaron el balance de tu cuenta de Mercado Pago para un período específico.

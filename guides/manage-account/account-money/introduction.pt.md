@@ -1,3 +1,8 @@
+---
+sites_supported:
+  - mlb
+---
+
 # Relatório de dinheiro em conta (Settlement Report)
 
 Contém todos os eventos de pagamento (aprovados, devolvidos, em mediação e estornos) que afetam o saldo de sua conta no Mercado Pago no período solicitado.

@@ -1,3 +1,8 @@
+---
+sites_supported:
+  - mlb
+---
+
 > WARNING
 >
 > Desculpe

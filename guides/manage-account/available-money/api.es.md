@@ -1,3 +1,7 @@
+---
+sites_supported:
+  - mlb
+---
 
 # Generación por API
 
@@ -725,7 +729,7 @@ Programa la generación automática del reporte utilizando la frecuencia en el r
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN' 
+    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN'
 ```
 ```php
 <?php
@@ -899,7 +903,7 @@ Descarga el archivo con este comando:
 
 [[[
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN' 
+curl -X GET 'https://api.mercadopago.com/v1/account/bank_report/:file_name?access_token=ENV_ACCESS_TOKEN'
 ```
 ```php
 <?php
@@ -974,4 +978,3 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 > Puedes generar un reporte cada vez que retires dinero disponible a una cuenta bancaria.
 >
 > [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/manage-account/available-money/withdrawal/)
-
