@@ -55,16 +55,16 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Cómo usar el reporte          
+> Genera tus reportes
 >
-> Conoce la composición del reporte y aprende a leerlo.
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/how-to-use/)
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Genera tus reportes
+> Glosario
 >
-> Elige la forma de generar tu reporte y sigue los pasos para configurar tus preferencias.
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)
+> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/)
