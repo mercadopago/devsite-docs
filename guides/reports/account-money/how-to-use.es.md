@@ -16,7 +16,7 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 
 ## ¿Qué contiene el reporte?
 
-El reporte está compuesto por distintos tipo de transacciones que puedes ver en la columna `TRANSACTION_TYPE` . Cada una de ellas tendrá el monto bruto de la operación.
+El reporte está compuesto por distintos tipo de transacciones que puedes ver en la columna `TRANSACTION_TYPE`. Cada una de ellas tendrá el monto bruto de la operación.
 <br/>
 | Transacciones | Tipo de operación |
 | --- | --- |

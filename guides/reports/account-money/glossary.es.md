@@ -20,7 +20,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | SETTLEMENT_CURRENCY | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Puede tomar algunos de estos valores según corresponda:<br/><ul><li> MXN (Peso mexicano)</li><li>CLP (Peso Chileno)</li><li>ARS (Peso Argentino)</li><li>BRL (Real Brasilero</li><li>PEN (Sol Peruano)</li><li>COP (Peso Colombiano)</li><li>UYU (Peso Uruguayo)</li><li>VES (Bolivar Venezolano)</li></ul></td></tr></table> |
 | SETTLEMENT_DATE | Fecha en que se acreditó el dinero de la operación. |
 | REAL_AMOUNT | Monto neto de la operación, si es un *settlement*, se le descuentan los montos por contracargos, reclamos o devoluciones. |
-| COUPON_AMOUNT | Monto del cupón de descuento. *`Solo se descuenta del monto bruto (TRANSACTION_AMOUNT) si está provisto por el vendedor`*. |
+| COUPON_AMOUNT | Monto del cupón de descuento. **Solo se descuenta del monto bruto (`TRANSACTION_AMOUNT`) si está provisto por el vendedor**. |
 | METADATA | Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa. |
 | MKP_FEE_AMOUNT | Comisión de Mercado Libre. Incluye IVA. |
 | FINANCING_FEE_AMOUNT | Costo por ofrecer cuotas sin interés. |
