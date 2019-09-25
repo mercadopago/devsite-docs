@@ -1,3 +1,12 @@
+---
+sites_supported:
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
+---
 
 # Generación por API
 
@@ -13,7 +22,7 @@
 >
 > [Generar de forma programada](#bookmark_generar_de_forma_programada)
 
-Puedes generar tu reporte por API, tanto de forma manual como de forma programada. 
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada.
 Ganá tiempo y **automatizá la frecuencia de generación del reporte** de Dinero en cuenta las veces que quieras.
 
 ## Configurar tus reportes
@@ -758,7 +767,7 @@ Programa la generación automática del reporte utilizando la frecuencia en el r
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN' 
+    'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN'
 ```
 ```php
 <?php
@@ -931,7 +940,7 @@ Descarga el archivo con este comando:
 
 [[[
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN' 
+curl -X GET 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
 ```
 ```php
 <?php

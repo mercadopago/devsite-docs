@@ -1,7 +1,16 @@
+---
+sites_supported:
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
+---
 
 # Generación por panel de Mercado Pago
 
-Genera tus reportes de Dinero en cuenta desde tu panel de Mercado Pago. 
+Genera tus reportes de Dinero en cuenta desde tu panel de Mercado Pago.
 
 
 Sigue estos pasos para generar tus reportes:
@@ -38,4 +47,3 @@ Sigue estos pasos para generar tus reportes:
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
 > [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary)
-

@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
+---
+
 # ¿Qué es el Reporte de Dinero Disponible?
 
 
@@ -51,11 +61,11 @@ Puedes generar un reporte de Dinero Disponible en tres instancias:
 1. De forma programada, según tus ajustes.
 1. Con cada retiro de dinero a una cuenta bancaria.
 
-Usa el reporte de Dinero Disponible **cuando quieras tener un informe de liquidez de la cuenta,** conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional o para **conciliar mensual y periódicamente con el detalle de los movimientos** que generan un saldo disponible para retirar. 
+Usa el reporte de Dinero Disponible **cuando quieras tener un informe de liquidez de la cuenta,** conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional o para **conciliar mensual y periódicamente con el detalle de los movimientos** que generan un saldo disponible para retirar.
 
 ### Usa el reporte para conocer tu historial
 
-Además, puedes usar el reporte para conocer el historial de dinero disponible entre dos fechas o dos retiros de dinero, el detalle de los eventos que componen un retiro automático o manual (total o parcial), el detalle de disputas, reembolsos, envios, contracargos, impuestos y otras operaciones que afecten el dinero disponible y el detalle de las cuotas liberadas y las cuotas que aún faltan saldar. 
+Además, puedes usar el reporte para conocer el historial de dinero disponible entre dos fechas o dos retiros de dinero, el detalle de los eventos que componen un retiro automático o manual (total o parcial), el detalle de disputas, reembolsos, envios, contracargos, impuestos y otras operaciones que afecten el dinero disponible y el detalle de las cuotas liberadas y las cuotas que aún faltan saldar.
 
 > NOTE
 >

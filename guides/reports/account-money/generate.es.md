@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
+---
+
 # ¿Cómo generar tu reporte de Dinero en cuenta?
 
 > INDEX
@@ -11,7 +21,7 @@
 
 ## Canales de generación
 
-Existen dos formas de generar un reporte de Dinero en cuenta: 
+Existen dos formas de generar un reporte de Dinero en cuenta:
 
 | Canales | Descripción |
 | ------- | ----------- |
@@ -26,7 +36,7 @@ Ten en cuenta la siguiente información técnica cuando quieras generar, program
 
 ### Programación del reporte
 
-Programa cómo y con qué frecuencia quieres generar tus reportes. 
+Programa cómo y con qué frecuencia quieres generar tus reportes.
 
 
 | Elemento | Características |

@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
+---
+
 # ¿Cómo usar el reporte?
 
 
@@ -29,7 +39,7 @@ El reporte está compuesto por:
 
 
 Ademas el reporte refleja los conceptos contables del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
- 
+
 > Tu haber lo verás en la columna `NET_CREDIT`
 >
 > Tu debe estará en la columna `NET_DEBIT`
@@ -56,9 +66,9 @@ Observa cómo está compuesto el reporte de dinero disponible en este ejemplo pa
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
 
 > WARNING
-> 
+>
 > Importante: diferencias entre retiro parcial y retiro total
-> 
+>
 > Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
 >
 >Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
