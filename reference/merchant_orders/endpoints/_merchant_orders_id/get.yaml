@@ -1,28 +1,10 @@
 ---
 resource: merchant_orders.raml
+samples:
+- curl.sh
+- curl_response.json
 use:
 - id
-- status
-- external_reference
-- preference_id
-- payments
-- shipments
-- collector
-- marketplace
-- notification_url
-- date_created
-- last_updated
-- sponsor_id
-- shipping_cost
-- total_amount
-- site_id
-- paid_amount
-- refunded_amount
-- payer
-- items
-- cancelled
-- additional_info
-- application_id
 errors:
   - 400 BAD_REQUEST:
     - invalid_format:
@@ -41,3 +23,8 @@ errors:
           en: access denied.
           es: access denied.
           pt: access denied.
+  - invalid_caller_id:
+        description:
+          en: invalid caller_id
+          es: invalid caller_id
+          pt: invalid caller_id

@@ -319,6 +319,11 @@ properties:
           en: Item id.
           es: Identificador del ítem.
           pt: Id do anúncio.
+        enum:
+          - put:
+              en: Required in PUT
+              es: Requerido en PUT
+              pt: Required in PUT
     - category_id:
         type: String
         description:
@@ -331,35 +336,35 @@ properties:
           en: ID of the currency used in the item price.
           es: Identificador de la moneda utilizada en el precio del ítem.
           pt: Identificador da moeda utilizada no preço do item.
-          enum:
-            - ARS:
-                en: Argentine peso.
-                es: Peso argentino.
-                pt: Argentine peso.
-            - BRL:
-                en: Brasil real.
-                es: Real brasilero.
-                pt: Brasil real.
-            - CLP:
-                en: Chilean peso.
-                es: Peso chileno.
-                pt: Chilean peso.
-            - MXN:
-                en: Mexican peso.
-                es: Peso mexicano.
-                pt: Mexican peso.
-            - COP:
-                en: Colombian peso.
-                es: Peso colombiano.
-                pt: Colombian peso.
-            - PEN:
-                en: Peruvian sol.
-                es: Sol peruano.
-                pt: Peruvian sol.
-            - UYU:
-                en: Uruguayan peso.
-                es: Peso uruguayo.
-                pt: Uruguayan peso.
+        enum:
+          - ARS:
+              en: Argentine peso.
+              es: Peso argentino.
+              pt: Argentine peso.
+          - BRL:
+              en: Brasil real.
+              es: Real brasilero.
+              pt: Brasil real.
+          - CLP:
+              en: Chilean peso.
+              es: Peso chileno.
+              pt: Chilean peso.
+          - MXN:
+              en: Mexican peso.
+              es: Peso mexicano.
+              pt: Mexican peso.
+          - COP:
+              en: Colombian peso.
+              es: Peso colombiano.
+              pt: Colombian peso.
+          - PEN:
+              en: Peruvian sol.
+              es: Sol peruano.
+              pt: Peruvian sol.
+          - UYU:
+              en: Uruguayan peso.
+              es: Peso uruguayo.
+              pt: Uruguayan peso.
     - description:
         type: String
         description:
@@ -375,9 +380,14 @@ properties:
     - quantity:
         type: Integer
         description:
-          en: Total amount paid by the buyer.
-          es: Monto total pagado por el comprador.
-          pt: Montante total pago pelo comprador.
+          en: Item quantity.
+          es: Cantidad de items.
+          pt: Item quantity.
+        enum:
+          - put:
+              en: This is the only field of item that can be modified in put
+              es: Este es el único campo de ítem que puede ser modificado con un put put
+              pt: This is the only field of item that can be modified in put
     - unit_price:
         type: Float
         description:

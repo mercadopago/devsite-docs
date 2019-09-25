@@ -1,3 +1,8 @@
+---
+sites_supported:
+  - mlb
+---
+
 # Account money report (Settlement Report)
 
 It contains all payment events (approved, refund, mediation and chargebacks) that have affected the balance of your Mercado Pago account for a specific period.
@@ -96,6 +101,6 @@ Interrupt the automatic generation of the report. Update the `scheduled` attribu
 
 #### 2. Download
 
-Download the specified file: 
+Download the specified file:
 
 	`GET` /v1/account/settlement_report/:file_name
