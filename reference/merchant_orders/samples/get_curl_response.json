@@ -9,7 +9,7 @@
       "transaction_amount": 1,
       "total_paid_amount": 1,
       "shipping_cost": 0,
-      "currency_id": "ARS",
+      "currency_id": "[FAKER][CURRENCY][ACRONYM]",
       "status": "approved",
       "status_detail": "accredited",
       "operation_type": "regular_payment",
