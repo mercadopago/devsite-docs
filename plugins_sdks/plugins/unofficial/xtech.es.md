@@ -1,98 +1,93 @@
----
-sites_supported:
-  - mlb
----
-
 # XTECH
 
-## O que é XTECH
+## ¿Qué es XTECH?
 
-[XTECH](https://www.xtechcommerce.com/) é uma plataforma de ecommerce que disponibiliza a integração com Mercado Pago como meio de pagamento.
+[XTECH](https://www.xtechcommerce.com/) es una plataforma de ecommerce que dispinibiliza una integración con Mercado Pago como medio de pago.
 
-## Como posso operar com Mercado Pago na XTECH
+## ¿Cómo puedo operar con Mercado Pago en XTECH?
 
-XTECH permite operar Mercado Pago nas seguintes modalidades:
+Adaltech permite operar con Mercado Pago en las siguientes modalidades:
 
-### Checkout Transparente
+### API
 
-Receba pagamentos em sua loja através de Cartão de Crédito e/ou Boleto Bancário no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma XTECH.
+Reciba pagos en su tienda a través de la tarjeta de crédito en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma XTECH.
 
-### Checkout Redirect
+### Smart Checkout
 
-Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
+Reciba pagos en su tienda utilizando el checkout del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 
-## Conta Mercado Pago
+## Cuenta de Mercado Pago
 
-Antes de iniciar a configuração, é necessário que você possua uma conta válida no **Mercado Pago**, caso não tenha, pode realizar o cadastro acessando o [formulário de registro](https://www.mercadopago.com.br/registration-mp?mode=mp).
+Antes de comenzar la configuración, debe tener una cuenta válida de **Mercado Pago**, si no la tiene, puede registrarse accediendo al [formulario de registro](https://www.mercadopago.com.ar/registration-mp?mode=mp).
 
-Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](https://www.mercadopago.com.br/).
+Si desea obtener más información sobre **Mercado Pago**, visite nuestra [página principal](https://www.mercadopago.com.ar/).
 
-## Como habilitar o Mercado Pago
+## ¿Cómo habilitar Mercado Pago?
 
-1. Acessar o administrador se sua loja na plataforma.
-2. No menu Ferramentas, selecionar a opção **MÓDULOS DE PAGAMENTO**
+1. Acceda al administrador si su tienda está en la plataforma.
+2. Desde el menú Herramientas, seleccione la opción **MÓDULOS DE PAGAMENTO**
 
     ![Enabling Mercado Pago in Xtech](/images/xtech_config01.png)
 
-3. Clique no botão **INSTALAR** no quadro do Mercado Pago
+3. Haga clic en el botón **INSTALAR** en el cuadro de Mercado Pago
 
     ![Mercado Pago installation page at Xtech](/images/xtech_config02.png)
 
-4. Será redirecionado para uma página do Mercado Pago para poder realizar permitir a conexão entre a XTECH Plataforma e sua conta Mercado Pago, realizando todas as configurações necessárias.
+4. Será redirigido a una página de Mercado Pago para poder permitir la conexión entre XTECH Plataforma y su cuenta de Mercado Pago, haciendo todas las configuraciones necesarias.
 
     ![Xtech authorization message](/images/xtech_config03.png)
 
-5. Após clicar em **PERMITIR** você será redirecionado de volta para a seção administrativa da plataforma, na tela de configurações do módulo Mercado Pago.
+5. Después de hacer clic en **PERMITIR**, se lo redirigirá a la sección administrativa de la plataforma en la pantalla de configuración del módulo Mercado Pago.
 
     ![Xtech Configuration Page](/images/xtech_config04.png)
 
-O Mercado pago está instalado porém **desativado**, siga os passos abaixo para realizar as configurações do módulo.
+Mercado Pago está instalado pero **deshabilitado**, siga los pasos a continuación para configurar el módulo.
 
-### Configurando o Mercado Pago
+### Configuración de Mercado Pago
 
-Após seguir os passos anteriores, o módulo do Mercado Pago na plataforma já estará habilitado, agora é necessário configurá-lo de acordo com o tipo de checkout que deseja utilizar.
+Después de seguir los pasos anteriores, el módulo Mercado Pago en la plataforma ya está habilitado, ahora debe configurarlo de acuerdo con el tipo de pago que desea usar.
 
-#### Ativando o meio de pagamento
+#### Habilitar medios de pago
 
-Para ativar o meio de pagamento, é necessário selecionar a opção **ATIVADO** do campo **STATUS**.
+Para habilitar el método de pago, debe seleccionar la opción **ACTIVADO** en el campo **STATUS**.
 
 ![Activating payment method](/images/xtech_config06.png)
 
-#### Escolhendo o tipo de checkout
+#### Elegir el tipo de Checkout
 
-Para escolher o checkout transparente, é necessário selecionar a opção **ATIVADO** do campo **Checkout transparente**.
+Para elegir un pago transparente, debe seleccionar la opción **ACTIVADO** de **Checkout transparente**.
 
 ![Choice of checkout type](/images/xtech_config07.png)
 
-Para escolher o checkout redirect, é necessários elecionar a opção **DESATIVADO** do campo **Checkout transparente**.
+Para elegir redireccionar el pago, debe seleccionar ** DESACTIVADO ** en el campo **Checkout transparente**.
 
 ![Transparent checkout disabled](/images/xtech_config08.png)
 
-#### Entendendo o formulário de configuração da XTECH
+#### Comprender el formulario de configuración XTECH
 
 ![Understanding Xtech Configuration Page](/images/xtech_config05.png)
 
-Segue abaixo a descrição de cada campo do formulário de configuração no painel administrativo da plataforma:
+A continuación se muestra la descripción de cada campo del formulario de configuración en el panel de administración de la plataforma:
 
-Item | Valores | Descrição
+Item | Valores | Descripción
 ---------|----------|---------
- Status | Ativado / Desativado | Indica se o meio de pagamento está ativado/desativado na págian do checkout
- Nome da Aba no Checkout | | Indica o nome da aba para o meio de pagamento
- Desconto no boleto (%) | | Valor a ser descontado quando a forma de pagamento selecionada for boleto
- Cupom Mercado Pago | Ativado / Desativado | Habilitar o cupom de desconto exclusivo do Mercado Pago
- Checkout Transparente | Ativado / Desativado | Indica o tipo de checkout. Ativado habilita o checkout transparente enquanto que desativado habilita o checkout redirect
- Nome da Fatura do cartão de crédito | | Indica o nome que irá aparecer na fatura do cliente, sugerismo utilizar o nome da loja. Limite máximo de 11 caracteres.
- Formas de pagamento | Cartão de crédito / Boleto Bancário | Habilita as formas de pagamento que serão exibidas na página do checkout.
- Número de parcelas | | Indica a quantidade máxima de parcelas que serão aceitas no checkout.
- Valor minimo de parcela | | Indica o menor valor que a parcela poderá ter.
+Status | Activo / Inactivo | Indica si el método de pago está habilitado / deshabilitado en la página de pago
+Nombre de pestaña de pago |  | Indica el nombre de la pestaña para el método de pago
+Descuento de boleto (%) |  | Cantidad a descontar cuando el método de pago seleccionado es un recibo bancario
+Cupón de pago del mercado | Encendido / Apagado | Habilite el cupón de descuento exclusivo de Marketplace pagado
+Pago transparente | Encendido / Apagado | Indica el tipo de pago. Encendido habilita el pago transparente mientras que deshabilitado habilita el pago de redireccionamiento
+Nombre de factura de tarjeta de crédito | | Indica el nombre que aparecerá en la factura del cliente, sugiero usar el nombre de la tienda. Límite máximo de 11 caracteres.
+Formas de pago | Tarjeta de crédito / transferencia bancaria | Habilita los métodos de pago que aparecerán en la página de pago.
+Número de cuotas | | Indica la cantidad máxima de cuotas que se aceptarán al finalizar la compra.
+Valor mínimo de la cuota | | Indica la cantidad más pequeña que puede tener el paquete.
 
-## Exemplos
+## Ejemplos
 
-Utilizamos uma loja virtual de demonstração da XTECH para mostrar o resultado dos tipos de checkouts para os clientes.
+Utilizamos una tienda de demostración XTECH para mostrar el resultado de los tipos de pago a los clientes.
 
-### Visual do Checkout Transparente
+### Apariencia del Checkout Transparente
 
-**_Cartao de Crédito_**
+**Tarjeta de Crédito_**
 
 ![Setting up payment method - Credit card](/images/xtech_config12.png)
 
@@ -100,10 +95,10 @@ Utilizamos uma loja virtual de demonstração da XTECH para mostrar o resultado 
 
 ![Setting up payment method - Ticket](/images/xtech_config11.png)
 
-### Visual do Checkout Redirect
+### pariencia del Checkout Redirect
 
 ![Checkout redirect visual](/images/xtech_config10.png)
 
-Após clicar em **FINALIZAR COMPRA** o cliente será redirecionado para uma página do Mercado Pago para finalizar sua compra:
+Después de hacer clic en **FINALIZAR LA COMPRA**, el cliente será redirigido a una página de Mercado Pago para finalizar su compra:
 
 ![Checkout page - Checkout redirect](/images/xtech_gif01.png)

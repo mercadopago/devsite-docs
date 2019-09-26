@@ -1,36 +1,31 @@
----
-sites_supported:
-  - mlb
----
-
 # Irroba
 
-## O que é Irroba
+## ¿Qué es Irroba?
 
-[Irroba](http://www.Irroba.com.br/) é uma plataforma de ecommerce que disponibiliza a integração com Mercado Pago como meio de pagamento.
+[Irroba](http://www.Irroba.com.br/) es una plataforma de ecommerce que dispinibiliza una integración con Mercado Pago como medio de pago.
 
-## Como posso operar com Mercado Pago na Irroba
+## ¿Cómo puedo operar con Mercado Pago en Irroba?
 
-Irroba permite operar Mercado Pago nas seguintes modalidades:
+Irroba permite operar con Mercado Pago en las siguientes modalidades:
 
 ### API
 
-Receba pagamentos em sua loja através de Cartão de Crédito Bancário no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma Irroba.
+Reciba pagos en su tienda a través de la tarjeta de crédito en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma Irroba.
 
 ### Smart Checkout
 
-Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
+Reciba pagos en su tienda utilizando el checkout del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 
-## Conta Mercado Pago
+## Cuenta de Mercado Pago
 
-Antes de iniciar a configuração, é necessário que você possua uma conta válida no **Mercado Pago**, caso não tenha, pode realizar o cadastro acessando o [formulário de registro](https://www.mercadopago.com.br/registration-mp?mode=mp).
+Antes de comenzar la configuración, debe tener una cuenta válida de ** Mercado Pago **, si no la tiene, puede registrarse accediendo al [formulario de registro](https://www.mercadopago.com.ar/registration-mp?mode=mp).
 
-Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](https://www.mercadopago.com.br/).
+Si desea obtener más información sobre **Mercado Pago**, visite nuestra [página principal](https://www.mercadopago.com.ar/).
 
-## Como habilitar o Mercado Pago
+## ¿Cómo habilitar Mercado Pago?
 
-Irroba realiza todas as configurações necessárias para que você venda em sua loja online com o Mercado Pago em uma integração transparente e segura.
+Irroba realiza todas las configuraciones necesarias para que pueda vender en su tienda en línea con Mercado Pago en una integración transparente y segura.
 
-## Canal de suporte
+### Canal de soporte de la plataforma
 
 https://helpdesk.irroba.com.br/

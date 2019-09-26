@@ -1,8 +1,3 @@
----
-sites_supported:
-  - mlb
----
-
 # Bis2Bis
 
 ## O que é Bis2Bis
@@ -37,7 +32,7 @@ Credenciais: https://www.mercadopago.com/mlb/account/credentials
 
 Public Key e Access Token
 
-## Canal de Atendimento:
+### Canal de Atendimento:
 
 Email | Telefone
 --|--

@@ -1,8 +1,3 @@
----
-sites_supported:
-  - mlb
----
-
 # Adaltech
 
 ## O que é Adaltech

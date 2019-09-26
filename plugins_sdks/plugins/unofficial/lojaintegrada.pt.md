@@ -1,8 +1,3 @@
----
-sites_supported:
-  - mlb
----
-
 # Loja Integrada
 
 ## O que é Loja Integrada?

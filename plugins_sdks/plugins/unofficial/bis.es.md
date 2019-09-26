@@ -1,11 +1,6 @@
----
-sites_supported:
-  - mlb
----
-
 # Bis2Bis
 
-## O que é Bis2Bis
+## ¿Qué es Bis2Bis?
 
 [Bis2Bis](http://www.bis2bis.com.br/) é uma plataforma de ecommerce que disponibiliza a integração com o Mercado Pago como meio de pagamento, trabalhamos com a plataforma de e-commerce Magento.
 
@@ -15,30 +10,28 @@ Bis2Bis permite operar Mercado Pago nas seguintes modalidades:
 
 ### API
 
-Receba pagamentos em sua loja através de Cartão de Crédito e/ou boleto bancario no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma Bis2Bis.
+Reciba pagos en su tienda a través de la tarjeta de crédito en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma Adaltech.
 
 ### Smart Checkout
 
-Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
+Reciba pagos en su tienda utilizando el checkout del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 
-## Conta Mercado Pago
+## Cuenta de Mercado Pago
 
-Antes de iniciar a configuração, é necessário que você possua uma conta válida no **Mercado Pago**, caso não tenha, pode realizar o cadastro acessando o [formulário de registro](https://www.mercadopago.com.br/registration-mp?mode=mp).
+Antes de comenzar la configuración, debe tener una cuenta válida de ** Mercado Pago **, si no la tiene, puede registrarse accediendo al [formulario de registro](https://www.mercadopago.com.ar/registration-mp?mode=mp).
 
-Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](https://www.mercadopago.com.br/).
+Si desea obtener más información sobre **Mercado Pago**, visite nuestra [página principal](https://www.mercadopago.com.ar/).
 
-## Como habilitar o Mercado Pago
+## ¿Cómo habilitar Mercado Pago?
 
-Para habilitar o módulo basta entrar em contato com nossa equipe de suporte pelos nossos canais de atendimento.
+Con la cuenta de MercadoPago ya creada, debe ingresar los datos a continuación para que el representante de Bis2Bis realice la configuración en su tienda, y así el método de pago esté disponible para que sus clientes realicen compras.
 
-Com a conta do MercadoPago já criada, você deve informar os dados abaixo para que o atendente realize as configurações na sua loja, e assim o método de pagamento fique disponível para seus clientes realizem as compras.
+Credenciales: https://www.mercadopago.com/mlb/account/credentials
 
-Credenciais: https://www.mercadopago.com/mlb/account/credentials
+Public Key y Access Token
 
-Public Key e Access Token
+### Canal de soporte de la plataforma:
 
-## Canal de Atendimento:
-
-Email | Telefone
+Email | Teléfono
 --|--
 http://cliente.bis2bis.com.br |(43) 3326-1500

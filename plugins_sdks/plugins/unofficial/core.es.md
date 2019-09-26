@@ -1,143 +1,139 @@
----
-sites_supported:
-  - mlb
----
-
 # CORE
 
-## O que é CORE?
+![CORE Configuracao](/images/core18.png)
+## ¿Qué es CORE?
 
-[CORE Commerce](http://www.plataformacore.com.br) é um ecossistema focado em soluções multi canal para sua loja virtual que permite processar pagamentos através do Mercado Pago.
-Para obter maiores informações sobre as possibilidades que a CORE oferece acesse [sua página de recursos](http://www.plataformacore.com.br/recursos/).
+[CORE Commerce](http://www.platformcore.com) es un ecosistema centrado en soluciones multicanal para su tienda en línea que le permite procesar pagos a través de Mercado Pago.
+Para obtener más información sobre las posibilidades que ofrece CORE, visite [su página de recursos](http://www.platformcore.com/resources/).
 
-## Como posso operar com Mercado Pago na CORE
+## ¿Cómo puedo comerciar con Mercado Pago en CORE?
 
-CORE permite operar Mercado Pago nas seguintes modalidades:
+CORE le permite operar Mercado Pago de las siguientes maneras:
 
-### Checkout Transparente
+### Pago transparente
 
-Receba pagamentos em sua loja através de Cartão de Crédito e/ou Boleto Bancário no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma CORE.
+Reciba pagos en su tienda a través de tarjeta de crédito y/o recibo bancario en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma CORE.
 
-### Checkout Redirect
+### Redirección de pago
 
-Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
+Reciba pagos en su tienda utilizando el pago del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 
-## Conta Mercado Pago
+## Cuenta de Mercado Pago
 
-Antes de iniciar a configuração, é necessário que você possua uma conta válida no **Mercado Pago**, caso não tenha, pode realizar o cadastro acessando o [formulário de registro](https://www.mercadopago.com.br/registration-mp?mode=mp).
+Antes de comenzar a configurar, debe tener una cuenta válida **Mercado Pago**, si no tiene una, puede registrarse accediendo al [formulario de registro](https://www.mercadopago.com.ar/registro-mp?modo=mp).
 
-Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](https://www.mercadopago.com.br/).
+Si desea saber más acerca de **Mercado Pago**, visite nuestra [página principal](https://www.mercadopago.com.ar/).
 
-## Como habilitar o Checkout Redirect
+## ¿Cómo habilitar el redireccionamiento de pago?
 
-1. Acessar o painel administrativo de sua loja na plataforma.
+1. Acceda al panel administrativo de su tienda en la plataforma.
 
-2. No menu Configs, selecionar a opção **MEIOS DE PAGAMENTO**.
+2. En el menú Configuración, seleccione la opción **PAGO**.
 
-    ![CORE Configuracao](/images/core1.png)
+    ![Configuración CORE](/images/core1.png)
 
-3. Busque no menu pela opção **Integração MercadoPago** clique no quadro de seleção ao lado do logotipo Mercado Pago e depois clique no botão de editar representado por um lápis na lista de ações.
+3. Busque en el menú **Integración de Mercado Pago** haga clic en la casilla de verificación junto al logotipo de Mercado Pago y luego haga clic en el botón de edición representado por un lápiz en la lista de acciones.
 
-    ![CORE Configuracao](/images/core19.png)
+    ![Configuración CORE](/images/core19.png)
 
-4. Na tela de dados gerais deixe o campo **ativo** como **sim**.
+4. En la pantalla de datos generales, deje el campo **activo** como **sí**.
 
-    ![CORE Configuracao](/images/core3.png)
+    ![Configuración CORE](/images/core3.png)
 
 
-5. No menu **Integração** informe as [credenciais de sua conta mercado pago](https://www.mercadopago.com/mlb/account/credentials).
+5. En el menú **Integración**, ingrese las [credenciales de su cuenta de mercado paga](https://www.mercadopago.com/mlb/account/credentials).
 
-    ![CORE Configuracao](/images/core0.png)
+    ![Configuración CORE](/images/core0.png)
 
-6. No menu **Cartões de Crédito** navegue pelos paineis mudando o status de cada bandeira para **ativo**.
+6. En el menú **Tarjetas de crédito** navegue por los paneles cambiando el estado de cada indicador a **activo**.
 
-    ![CORE Configuracao](/images/core6.png)
+    ![Configuración CORE](/images/core6.png)
 
-7. No menu **Boletos** assim como feito para as bandeiras de cartão de crédito clique no status **ativo**.
+7. En el menú **Boletos** al igual que para los banners de tarjetas de crédito, haga clic en el estado **activo**.
 
-    ![CORE Configuracao](/images/core7.png)
+    ![Configuración CORE](/images/core7.png)
 
-8. Ativas as formas de pagamento de sua escolha e definidas as credenciais é preciso então ativar a configuração do contrato para que seja disponibilizado na loja, avance para o tópico **Como configurar contratos**.
+8. Active los métodos de pago que elija y establezca las credenciales, luego debe activar la configuración del contrato para que esté disponible en la tienda, continúe con el tema **Cómo configurar los contratos**.
 
-# Como habilitar o Checkout Transparente
+## ¿Cómo habilitar Transparent Checkout?
 
-1. Acessar o painel administrativo de sua loja na plataforma.
+1. Acceda al panel administrativo de su tienda en la plataforma.
 
-2. No menu Configs, selecionar a opção **MEIOS DE PAGAMENTO**.
+2. En el menú Configuración, seleccione la opción **PAGO**.
 
-    ![CORE Configuracao](/images/core1.png)
+    ![Configuración CORE](/images/core1.png)
 
-3. Busque no menu pela opção **MercadoPagoV2** clique no quadro de seleção ao lado do logotipo Mercado Pago e depois clique no botão de editar representado por um lápis na lista de ações.
+3. Busque el menú para **MercadoPagoV2** haga clic en la casilla de verificación junto al logotipo de Mercado Pago y luego haga clic en el botón de edición representado por un lápiz en la lista de acciones.
 
-    ![CORE Configuracao](/images/core2.png)
+    ![Configuración CORE](/images/core2.png)
 
-4. Na tela de dados gerais deixe o campo **ativo** como **sim**.
+4. En la pantalla de datos generales, deje el campo **activo** como **sí**.
 
-    ![CORE Configuracao](/images/core4.png)
+    ![Configuración CORE](/images/core4.png)
 
 
-5. No menu **Integração** informe as [credenciais de sua conta mercado pago](https://www.mercadopago.com/mlb/account/credentials).
+5. En el menú **Integración**, ingrese las [credenciales de su cuenta de Mercado Pago](https://www.mercadopago.com/mlb/account/credentials).
 
-    ![CORE Configuracao](/images/core5.png)
+    ![Configuración CORE](/images/core5.png)
 
-6. No menu **Cartões de Crédito** navegue pelos paineis mudando o status de cada bandeira para **ativo**.
+6. En el menú **Tarjetas de crédito** navegue por los paneles cambiando el estado de cada indicador a **activo**.
 
-    ![CORE Configuracao](/images/core6.png)
+    ![Configuración CORE](/images/core6.png)
 
-7. No menu **Boletos** assim como feito para as bandeiras de cartão de crédito clique no status **ativo**.
+7. En el menú **Boletos** al igual que para los banners de tarjetas de crédito, haga clic en el estado **activo**.
 
-    ![CORE Configuracao](/images/core7.png)
+    ![Configuración CORE](/images/core7.png)
 
-8. Ativas as formas de pagamento de sua escolha e definidas as credenciais é preciso então ativar a configuração do contrato para que seja disponibilizado na loja, avance para o tópico **Como configurar contratos**.
+8. Active los métodos de pago que elija y establezca las credenciales, luego debe activar la configuración del contrato para que esté disponible en la tienda, continúe con el tema **Cómo configurar los contratos**.
 
-## Como configurar contratos
+## ¿Cómo configurar contratos?
 
-1. Acessar o painel administrativo de sua loja na plataforma.
+1. Acceda al panel administrativo de su tienda en la plataforma.
 
-2. No menu Backoffice, selecionar a opção **CONTRATOS**.
+2. En el menú Backoffice, seleccione la opción **CONTRACTOS**.
 
-    ![CORE Configuracao](/images/core8.png)
+    ![Configuración CORE](/images/core8.png)
 
-3. Selecionar a opção **Adicionar Contrato**, ou edite um existente.
+3. Seleccione la opción **Agregar contrato** o edite una existente.
 
-    ![CORE Configuracao](/images/core9.png)
+    ![Configuración CORE](/images/core9.png)
 
-4. Caso esteja criando um novo contrato estara selecionado o meio de pagamento do contrato padrão, selecionar a opção **Definidos abaixo**.
+4. Si está creando un nuevo contrato, se seleccionará el método de pago predeterminado del contrato, seleccione la opción **Definida a continuación**.
 
-    ![CORE Configuracao](/images/core10.png)
+    ![Configuración CORE](/images/core10.png)
 
-5. Na tela de aviso, selecionar a opção **Sim**.
+5. En la pantalla de advertencia, seleccione **Sí**.
 
-    ![CORE Configuracao](/images/core11.png)
+    ![Configuración CORE](/images/core11.png)
 
-6. Retornando ao menu do contrato, selecionar a opção **Selecione**.
+6. Volviendo al menú del contrato, seleccione la opción **Seleccionar**.
 
-    ![CORE Configuracao](/images/core12.png)    
+    ![Configuración CORE](/images/core12.png)
 
-7. Defina então para este contrato de Meio de Pagamento o Checkout que Configurou no tópico anterior clicando nas setas de maneira com que as formas de pagamento selecionadas mudem para o menu da direita, selecionar então a opção **salvar**.
+7. Luego, configure para este acuerdo de Método de pago el proceso de pago que configuró en el tema anterior haciendo clic en las flechas para que los métodos de pago seleccionados cambien al menú de la derecha, luego seleccione la opción **guardar**.
 
-    ![CORE Configuracao](/images/core13.png)    
+    ![Configuración CORE](/images/core13.png)
 
-## Como configurar multicanais
+## Cómo configurar multicanal
 
-1. Acessar o painel administrativo de sua loja na plataforma.
+1. Acceda al panel administrativo de su tienda en la plataforma.
 
-2. No menu Canais, selecionar a opção **CANAIS**.
+2. En el menú Canales, seleccione **CANALES**.
 
-    ![CORE Configuracao](/images/core14.png)
+    ![Configuración CORE](/images/core14.png)
 
-3.  Selecionar a opção **Adicionar Canal**, ou edite um existente.
+3. Seleccione la opción **Agregar canal** o edite una existente.
 
-    ![CORE Configuracao](/images/core15.png)
+     ![Configuración CORE](/images/core15.png)
 
-4. No menu de definição do Tipo de Canal, selecionar a opção **Próximo passo**.
+4. En el menú de configuración Tipo de canal, seleccione **Siguiente paso**.
 
-    ![CORE Configuracao](/images/core16.png)
+     ![Configuración CORE](/images/core16.png)
 
-5. Defina as informações de configuração do canal, rolar para baxio até encontrar a opção **Contrato Padrão**.
+5. Configure la información de configuración del canal, desplácese hasta abajo hasta que encuentre **Contrato estándar**.
 
-    ![CORE Configuracao](/images/core17.png)
+     ![Configuración CORE](/images/core17.png)
 
-6. Clique em **Selecione** e escolha o contrato configurado no tópico anterior, selecionar a opção **Salvar e fechar**.
+6. Haga clic en **Seleccionar** y elija el contrato configurado en el tema anterior, seleccione **Guardar y cerrar**
 
-    ![CORE Configuracao](/images/core18.png)  
+     ![Configuración CORE](/images/core18.png)  

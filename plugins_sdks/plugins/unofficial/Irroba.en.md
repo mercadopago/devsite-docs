@@ -1,8 +1,3 @@
----
-sites_supported:
-  - mlb
----
-
 # Irroba
 
 ## O que é Irroba
