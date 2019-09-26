@@ -1,8 +1,5 @@
 # Shopify  
 
-* [Features](#bookmark_Features)
-* [Configuration](#bookmark_Configuration)
-
 ## Features
 
 Mercado Pago's plugin for shopify has available the next features:

@@ -1,16 +1,6 @@
 # VirtueMart – Módulo de Mercado Pago (v3.0.x)
 
-* [Requerimientos](#Requerimientos)
-* [Versiones disponibles](#Versiones_disponibles)
-* [Funcionalidad](#Funcionalidad)
-* [Instalación](#Instalación)
-* [Configuración del Checkout básico](#configuración_basico)
-* [Configuración del Checkout personalizado - Tarjeta de crédito](#configuración_custom)
-* [Configuración del Checkout personalizado - Ticket](#configuración_custom_ticket)
-* [Soporte técnico](#Soporte-técnico)
-
-<a name="Requerimientos"></a>
-## Requerimientos: ##
+## Requerimientos ##
 
 Basicamente, los requerimientos de este plugin son los mismos que se necesitan para utilizer Virtuemart y Joomla. Tu máquina debería tener:
 
@@ -51,7 +41,7 @@ Durante los testeos en modo Sandbox, puedes operar sobre HTTP, pero para la homo
 </table>
 
 <a name="Funcionalidad"></a>
-## Funcionalidad: ##
+## Funcionalidad ##
 
 El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
@@ -63,15 +53,13 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
     * [Pagos con un click (Clientes y Tarjetas)](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/one-click-charges/javascript/)
     * [Pagos con otros medios](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/charge-with-other-methods/)
 
-<a name="Instalación"></a>
-## Instalación: ##
+## Instalación ##
 
 1. Descargar el zip del módulo
 2. Ir a **Extensions > Extension Manager**
 3. En **Upload Package File > Package File** seleccionar **cart-virtuemart.zip** y clickear en **Upload & Installation**
 
-<a name="configuración_basico"></a>
-## Configuración del Checkout básico: ##
+## Configuración del Checkout básico ##
 
 1. Ir a **VirtueMart > Payment Methods** and click **New**
 
@@ -130,8 +118,7 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
   **Log**: Habilitar/Deshabilitar logs.<br />
   **Logo**: Seleccionar el logo. Debes agregar el archivo en la carpeta /images/stories/virtuemart/payment <br />
 
-<a name="configuración_custom"></a>
-## Configuración del Checkout personalizado - Tarjeta de crédito: ##
+## Configuración del Checkout personalizado - Tarjeta de crédito
 
 1. Ir a **VirtueMart > Payment Methods** y hacer click en **New**
 
@@ -181,8 +168,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
   * **Elige el status para ordenes canceladas**: Setea el status de la orden cuando los pagos son cancelados.
   * **Elige el status para ordenes rechazadas**: Setea el status de la orden cuando los pagos son rechazados.
 
-<a name="configuración_custom_ticket"></a>
-## Configuración del Checkout personalizado - Ticket: ##
+## Configuración del Checkout personalizado - Ticket
 
 1. Ir a **VirtueMart > Payment Methods** y hacer click en **New**
 
@@ -225,9 +211,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
   * **Elige el status para ordenes canceladas**: Setea el status de la orden cuando los pagos son cancelados.
   * **Elige el status para ordenes rechazadas**: Setea el status de la orden cuando los pagos son rechazados.
 
-
-<a name="Soporte-técnico"></a>
-## Soporte técnico: ##
+## Soporte técnico
 
 Contáctanos a nuestro canal de [soporte](/support) con la siguiente información:
 

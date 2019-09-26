@@ -10,21 +10,10 @@ sites_supported:
 
 # Personalizaciones
 
-> INDEX
->
-> En esta página
->
->
->
-> [Esquema redirect](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
->
-> [Colores](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_colores)
->
-> [Botones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations#bookmark_botones)
 
 ## Esquema redirect
 
-El Smart Checkout modal permite cambiar su esquema de apertura.
+El Smart Checkout permite cambiar su esquema de apertura.
 
 Los esquemas disponibles actualmente son:
 

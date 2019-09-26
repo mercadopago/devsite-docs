@@ -42,10 +42,10 @@ Para operar em modo Agregador sé é necessário configurar uma afiliação.
     ![Setting affiliation in VTEX](/images/vtex-afiliation-1.png)
 
 3. Acesse menu lateral: Pagamento.
-4. Configurações. 
+4. Configurações.
 
     ![VTEX Configuration Page](/images/vtex-config.png)
-    
+
 5. Acesse menu superior: Afiliações de Gateways.
 6. Adicionar Nova Afiliação (Sinal de +).
 
@@ -141,7 +141,7 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 9. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
 10. Salvar a configuração.
 
-   
+
 
 ### Configurar plano de pagamento Webpay
 

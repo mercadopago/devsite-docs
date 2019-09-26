@@ -207,6 +207,6 @@ Consulta os [dados para testes](https://www.mercadopago.com.br/developers/pt/gui
 
 [Aqui](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) poderá encontrar nosso dicionário de erros.
 
-## Relatórios
+### Relatórios
 
 Consulte a [documentação completa](https://www.mercadopago.com.br/ajuda/relatorios-conciliacao_2164) sobre os relatórios do Mercado Pago.

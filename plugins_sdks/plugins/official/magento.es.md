@@ -1,11 +1,6 @@
 # Magento
 
-* [Requisitos](#bookmark_requisitos)
-* [Instalación](#bookmark_instalación)
-* [Actualización](#bookmark_actualización)
-* [Configurar el Checkout Personalizado (Tarjeta de crédito y Tickets)](#bookmark_configurar_el_checkout_personalizado_ (tarjeta_de_crédito_y_tickets))
-* [Configurar el Checkout Clásico](#bookmark_configurar_el_checkout_clásico)
-* [Configuración de estado de las notificaciones de Pago](#bookmark_configuración_de_estado_de_las_notificaciones_de_pago)
+## Funcionalidades
 
 El módulo de Mercado Pago para Magento ofrece las siguientes funcionalidades:
 
@@ -140,7 +135,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
 
 1) Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
-    
+
 ![Configurando Checkout Redirect, Iframe and LightBox Mercado Pago Magento](/images/magento/magento-config-01.gif)
 
 2) Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
@@ -165,7 +160,7 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos
 > 	IMPORTANTE: Su cuenta de Mercado Pago tiene que ser del tipo **Vendedor**.
 
 2) Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Shipping Methods**:
-    
+
 ![Configurando Mercado Envíos en Mercado Pago Magento](/images/magento/magento-config-me-01.gif)
 
 3) Para habilitar Mercado Envíos **MercadoEnvios**, haga un clic en el botón  **Configure**. Vaya a la opción **Enable** y marque como **Yes**.

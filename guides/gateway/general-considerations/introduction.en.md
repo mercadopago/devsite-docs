@@ -56,7 +56,7 @@ The integration with Mercado Pago also allows you to operate in a hybrid mode, u
 
 The service costs in the **Gateway Model** are negotiated one on one. The cost depends on the seller's monthly payment volume.
 
-## Next steps
+### Next steps
 
 * [Configure your merchant IDs and payment methods](https://www.mercadopago.com.ar/developers/en/guides/gateway/configuration) in Mercado Pago's backoffice
 * [Integrate the Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/gateway/web-checkout/receiving-payments) for the Gateway Model

@@ -1,11 +1,5 @@
 # WP-eCommerce
 
-* [Requisitos del Sistema](#requisitos-del-sistema)
-* [Funcionalidad](#funcionalidad)
-* [Instalación](#instalación)
-* [Configuraciones de las Notificaciones Instantáneas de Pago](#configuraciones-de-las-notificaciones-instantáneas-de-pago)
-* [Actualización](#actualización)
-
 # Requisitos del Sistema
 ### Versiones de la plataforma
 * <a href="https://wordpress.org/download/">WordPress</a> 4.1 o mayor

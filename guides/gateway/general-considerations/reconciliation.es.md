@@ -120,6 +120,6 @@ Elegí tu formato preferido y el archivo será generado
 
 > Si el archivo es muy grande lo recibirás unos minutos más tarde via e-mail a la casilla de tu cuenta de Mercado Pago
 
-## ¿Necesitás ayuda?
+### ¿Necesitás ayuda?
 
 Comunicate con tu ejecutivo de cuenta.

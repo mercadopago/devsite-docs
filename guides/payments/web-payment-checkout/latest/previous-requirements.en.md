@@ -10,15 +10,6 @@ sites_supported:
 
 # Prerequisites to get started
 
-> INDEX
->
-> In this page
->
->
->
-> [Glossary](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_glossary)
->
-> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_previous_requirements)
 
 ## Glossary
 
@@ -110,7 +101,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 > Note
 >
 > This documentation refers to the new version of the Smart Checkout. **To view the previous version**, go to the [old Smart Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
- 
+
  ---
 
 ### Next steps
@@ -130,4 +121,3 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 > Check that everything works in your integration with test users.
 >
 > [Test your integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration/)
-

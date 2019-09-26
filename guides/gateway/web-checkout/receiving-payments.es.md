@@ -47,6 +47,6 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Smart C
 
 > **Modelo híbrido:** todavía no estamos soportando este modelo en Smart Checkout. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
 
-## Próximos pasos
+### Próximos pasos
 
 * [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/reconciliation)
