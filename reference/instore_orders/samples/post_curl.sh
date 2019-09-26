@@ -11,7 +11,7 @@ curl -X POST \
     		"unit_price" : 120.00,
     		"quantity" : 1,
             "description": "Almendras",
-            "picture_url": "https://bit.ly/2Tfs6Zw"
+            "picture_url": "https://bit.ly/2nxdWHa"
     		    }
               ]
     }'

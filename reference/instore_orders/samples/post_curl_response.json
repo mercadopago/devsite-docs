@@ -4,11 +4,11 @@
       {
             "title" : "Shampoo",
             "id" : "78123172",
-            "currency_id" : "ARS",
+            "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
             "unit_price" : 120.00,
             "quantity" : 1,
             "description": "Almendras",
-            "picture_url": "https://bit.ly/2Tfs6Zw"
+            "picture_url": "https://bit.ly/2nxdWHa"
      }
   ],
   "collector_id": 360472057,
@@ -60,7 +60,7 @@
   },
   "expires": false,
   "additional_info": "",
-  "site_id": "MLA",
+  "site_id": "[FAKER][GLOBALIZE][UPPER_SITE_ID]",
   "client_id": 360472057,
   "processing_modes": [
       "aggregator"
