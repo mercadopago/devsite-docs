@@ -9,25 +9,18 @@ sites_supported:
 
 ---
 
-# Pagos Presenciales con QR
+# Face-to-face payments with QR
 
 ----[mlb]----
 
 > ![QR payments Mercado Pago](/images/qr.pt.png)
-
-------
-
+------------
 ----[mla]----
-
 > ![QR payments Mercado Pago](/images/qr_mla.es.png)
-
-------
-
+------------
 ----[mlm]----
-
 > ![QR payments Mercado Pago](/images/qr_mlm.es.png)
-
-------
+------------
 
 You can boost in-store sales by using QR codes to get paid. The mobile app of Mercado Pago allows its users to securely store their credit cards, debit cards and use the available account balance. Its main features are:
 

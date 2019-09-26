@@ -9,42 +9,52 @@ sites_supported:
 ---
 
 
-# Pagos Presenciales con QR
+# ¿Qué es el código QR?
+
+El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te permite recibir pagos de un modo simple, rápido y seguro.
 
 ----[mlb]----
 
 > ![Pagos QR Mercado Pago](/images/qr.pt.png)
 ------------
 ----[mla]----
-> ![Pagos QR Mercado Pago](/images/qr_mla.es.png)
+
+![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+
 ------------
 ----[mlm]----
 > ![Pagos QR Mercado Pago](/images/qr_mlm.es.png)
 ------------
 
+## ¿Cuáles son los beneficios?
 
-Potencializa tus ventas en el mundo físico cobrando a través de códigos QR.  
+* Lo generas gratis. 
+* **Pagos inmediatos**. Mercado Pago recuerda los datos y tarjetas de los compradores, procesando los pagos al instante.
+* Permite cobrar con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) de tu país.
+* Cobros al **costo más bajo del mercado**.
+* Ofrecer una **experiencia de compra segura desde cualquier dispositivo móvil** con la app de Mercado Pago o Mercado Libre.
 
-Nuestra aplicación móvil tiene la funcionalidad de almacenar de forma segura sus tarjetas de crédito, tarjetas de débito y utilizar el dinero en cuenta disponible. Sus principales funcionalidades son:
+## ¿Cómo funciona?
 
-* Efectuar pago de servicios.
-* Hacer recarga de celular.
-* Hacer envíos de dinero entre cuentas.
-* Pagar en tiendas en forma presencial.
+Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un lugar visible o mostrarlo en tu dispositivo móvil** y cobrar desde la app de Mercado Pago.
 
-Utilizando su aplicación móvil de Mercado Pago/Mercado Libre, tus clientes podrán escanear tu código QR y pagar utilizando sus tarjetas almacenadas o dinero en cuenta de forma segura. Además, puedes ofrecer en tus tiendas físicas pagos en cuotas y el resto de los beneficios que ofrece Mercado Pago.
+> ![Flujo QR](/images/qr_flujo.es.png)
 
-Para poder pagar, tus clientes deben descargar la App desde el store de su teléfono móvil:
+---
+### Próximos pasos
 
-> [<img src="/developers/bundles/images/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/developers/bundles/images/AppStoreBadge.es.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
-
-## Formas de cobrar con QR  
-
-| Tipo                                                         | Descripción                                                  | ¿Requieres integración? |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- |
-| [QR sin integración](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-static) | Generas el QR desde tu portal de Mercado Pago, así el comprador escanea tu código y puede enviarte dinero. Debe ingresar el monto en forma manual. | No                      |
-| [QR Punto de Venta](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-pos) | Integrando a tu sistema de punto de venta la opción de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza la descripción de lo que compró y el monto que debe pagar. | Sí                      |
-| [QR Petroleras](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-gas-station) | Integrando a tu sistema de gestión la modalidad de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza el monto que debe pagar. | Sí                      |
-
-En base a tu modelo de negocio, puedes escoger alguna de las opciones o combinarlas para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
-
+<div>
+<a href="https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/integrations/" style="text-decoration:none;color:inherit">
+<blockquote class="next-step-card next-step-card-left">
+<p class="card-note-title">¿Cómo generar el QR?<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
+ <p>Conoce las distintas formas de cobrar con un código QR.</p>
+</blockquote>
+</a>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
