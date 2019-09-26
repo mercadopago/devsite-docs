@@ -1,13 +1,6 @@
 # Prestashop 1.7
 
-
 ### Mercado Pago Module (Prestashop 1.7.x)
-
-* [Introduction](#bookmark_introduction)
-* [Installation Requirements](#bookmark_installation_requirements)
-* [Installation](#bookmark_installation)
-* [Integration](#bookmark_integration)
-* [Receive Payments](#bookmark_receive_payments)
 
 ## Introduction
 
@@ -29,7 +22,7 @@ Think big. Install the Mercado Pago payment gateway in Prestashop and take your 
 
 > **Are you a developer?** This guide is also designed to make your installation, integration and configuration work faster.
 
-> **Are you a Mercado Pago partner?** Do not forget to enter your Sponsor_ID, so we identify all your transactions and know how many sales your account processes. 
+> **Are you a Mercado Pago partner?** Do not forget to enter your Sponsor_ID, so we identify all your transactions and know how many sales your account processes.
 
 ## Installation Requirements
 
@@ -116,7 +109,7 @@ Do tests:
 
 ![Test the module](/images/prestashop/es_testear.png)
 
-> By default, we leave sandbox mode activated. Disable it when you have the homologated account and go to production only when you have verified that the purchase flow works and that test payments were processed. 
+> By default, we leave sandbox mode activated. Disable it when you have the homologated account and go to production only when you have verified that the purchase flow works and that test payments were processed.
 
 #### **4. Go to production (‘Go live!’)**
 
@@ -128,4 +121,4 @@ Have you done it? Then you can quickly move from "Sandbox" to "Production" from 
 
 ![Start your sales](/images/prestashop/es_vender.png)
 
-**And that's it!**  Now you can maximize the conversion of your store with the online shopping experience of Mercado Pago. 
+**And that's it!**  Now you can maximize the conversion of your store with the online shopping experience of Mercado Pago.

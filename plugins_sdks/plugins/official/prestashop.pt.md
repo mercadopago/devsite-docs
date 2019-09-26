@@ -3,12 +3,6 @@
 
 ### Mercado Pago Module (Prestashop 1.7.x)
 
-* [Introdução](#bookmark_introdução)
-* [Requisitos de Instalação](#bookmark_requisitos_de_instalação)
-* [Instalação](#bookmark_instalação)
-* [Integração](#bookmark_integração)
-* [Receber Pagamentos](#bookmark_receber_pagamentos)
-
 ## Introdução
 
 Como você pode imaginar, um site sem um processador de pagamento nada mais é do que um catálogo on-line. Seus clientes poderão ver seus produtos, mas não poderão pagar por eles.
@@ -18,10 +12,10 @@ Como você pode imaginar, um site sem um processador de pagamento nada mais é d
 Pense grande. Instale o Mercado Pago no Prestashop e leve suas vendas (ou as dos seus clientes) a outro nível com a melhor experiência de compra:
 
 * Ofereça **promoções** e venda parcelado com o melhor **financiamento** possível
-* Principais **meios de pagamento** de cada país onde operamos 
+* Principais **meios de pagamento** de cada país onde operamos
 * **Compre em um clique:** lembramos os dados dos seus clientes, eles só informam o código de segurança do cartão
 * **Pagamento como visitante:** não excluímos ninguém, não é necessário que seus clientes abram uma conta no Mercado Pago
-* **Estorno** de pagamentos 
+* **Estorno** de pagamentos
 * **Cancelamento** de pagamentos pendentes
 * Recuse ou aceite pagamentos **automaticamente**
 
@@ -31,7 +25,7 @@ Pense grande. Instale o Mercado Pago no Prestashop e leve suas vendas (ou as dos
 
 ## Requisitos de Instalação
 
-A nível técnico, sua versão do Prestashop deve atender estes requisitos: 
+A nível técnico, sua versão do Prestashop deve atender estes requisitos:
 
 |                            | Detalhes                                                                                       |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -45,7 +39,7 @@ A nível técnico, sua versão do Prestashop deve atender estes requisitos:
 | Configurações adicionais   | safe_mode off * memory_limite mayor que 256MB (512MB recomendado)                              |
 | SSL                        | Es un requisito que tenga un certificado SSL                                                   |
 
-¡La instalación de nuestro módulo no afecta la velocidad de tu tienda! 
+¡La instalación de nuestro módulo no afecta la velocidad de tu tienda!
 
 > Você pode usar o protocolo HTTP no modo "Teste" e não fazer transações reais. Quando for a Produção, você deve ter um **certificado SSL** para oferecer **navegação segura** e proteger seus dados e os dos seus clientes. Depois, a rota de acesso para a sua loja virtual responderá ao **protocolo HTTPS**.
 
@@ -65,7 +59,7 @@ A nível técnico, sua versão do Prestashop deve atender estes requisitos:
 
 ## Integração
 
-Você não precisa de conhecimentos de design ou programação para ativar o Mercado Pago na sua loja Prestashop. Depois que o módulo estiver instalado, siga estas etapas para integrar: 
+Você não precisa de conhecimentos de design ou programação para ativar o Mercado Pago na sua loja Prestashop. Depois que o módulo estiver instalado, siga estas etapas para integrar:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar) no Mercado Pago, caso ainda não tenha uma.
 2. Obtenha suas [credenciais](https://www.mercadopago.com.br/developers/pt/guides/localization/credentials) e as insira nos campos correspondentes para integrar o módulo à sua conta.
@@ -86,7 +80,7 @@ Crie suas preferências de pagamento:
 
 - Insira sua marca ou o nome da sua loja para as NF-e que enviamos aos seus clientes para cada compra.
 - Selecione a qual categoria seus produtos pertencem.
-- Selecione os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods/) para seus clientes conforme o país onde você opera e o tipo de checkout que você está configurando. 
+- Selecione os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods/) para seus clientes conforme o país onde você opera e o tipo de checkout que você está configurando.
 - Estabeleça o número máximo de vezes que poderão parcelar.
 - Vencimentos de pagamentos com boleto e na lotérica: estabeleça em quantos dias os pagamentos do checkout personalizado vencerão.
 
@@ -97,11 +91,11 @@ Crie suas preferências de pagamento:
 Personalize a experiência de compra com os ajustes avançados que correspondam a cada tipo de checkout:
 
 - Seus clientes retornam à sua loja sempre que terminarem uma compra.
-- Modo binário para aceitar e recusar pagamentos de forma automática, pulando as instâncias de cobranças em revisão. 
+- Modo binário para aceitar e recusar pagamentos de forma automática, pulando as instâncias de cobranças em revisão.
 - Tempo máximo dos links de pagamento com as preferências de compra dos seus clientes que abandonam o processo de compra no meio do caminho.
 - Cupons de desconto.
 - Quando reduzir o estoque no checkout personalizado de pagamentos com boleto e na lotérica.
-- Selecione a porcentagem de desconto que aplicará para os clientes que quiserem pagar à vista. 
+- Selecione a porcentagem de desconto que aplicará para os clientes que quiserem pagar à vista.
 
 ![Configuração avançada](/images/prestashop/br_avanzado.png)
 
@@ -110,8 +104,8 @@ Personalize a experiência de compra com os ajustes avançados que correspondam 
 Faça testes:
 
 - Simule pagamentos como se você fosse um dos seus clientes comprando no site.
-- Certifique-se de que o fluxo funcione corretamente e seja fácil de usar. 
-- Viu que está tudo em ordem? Desative o modo de testes e comece a receber pagamentos reais! 
+- Certifique-se de que o fluxo funcione corretamente e seja fácil de usar.
+- Viu que está tudo em ordem? Desative o modo de testes e comece a receber pagamentos reais!
 
 
 ![Testar loja](/images/prestashop/br_testear.png)
@@ -128,4 +122,4 @@ Já fez isso? Então, você pode passar rapidamente de "Testes" para "Produção
 
 ![Começar a vender](/images/prestashop/br_vender.png)
 
-**E pronto!** Agora, você poderá maximizar sua conversão ou a dos seus clientes com a experiência de compra on-line do Mercado Pago. 
+**E pronto!** Agora, você poderá maximizar sua conversão ou a dos seus clientes com a experiência de compra on-line do Mercado Pago.

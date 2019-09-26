@@ -1,14 +1,6 @@
 # OpenCart
 
-## Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
-
-* [Funcionalidades](#bookmark_Funcionalidades)
-* [Requisitos](#bookmark_Requisitos)
-* [Versiones](#bookmark_Versiones)
-* [Instalación](#bookmark_Instalación)
-* [Configuración](#bookmark_Configuración)
-* [Notificaciones](#bookmark_Notificaciones)
-* [Actualización](#bookmark_Actualización)
+#### Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
 
 ## Funcionalidades
 
@@ -129,6 +121,6 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 Su tienda se sincronizará automáticamente con MercadoPago. La URL de notificación se enviará en cada pago.
 
 
-## Actualización
+### Actualización
 
-Siga los mismos pasos que para [instalar el módulo](##bookmark_Instalación).
+Siga los mismos pasos que para [instalar el módulo](##bookmark_instalación).

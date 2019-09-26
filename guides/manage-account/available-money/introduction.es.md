@@ -6,18 +6,6 @@ sites_supported:
 # ¿Qué es el Reporte de Dinero Disponible?
 
 
-> INDEX
->
-> En esta página
->
-> [¿Cómo descargo el reporte?](#bookmark_¿cómo_descargo_el_reporte?)
->
-> [Valores del reporte](#bookmark_valores_del_reporte)
->
-> [Para qué usar el reporte](#bookmark_para_qué_usar_el_reporte)
->
-
-
 El reporte de Dinero Disponible es un **informe descargable que te permite conocer la liquidez de tu negocio**, es decir, cuánto dinero tienes para usar. Contiene el **detalle de los pagos liberados** que están listos para retirar a una cuenta bancaria, invertir en Mercado Pago o usar como saldo en la tarjeta prepaga de Mercado Pago.
 
 ## ¿Cómo descargo el reporte?

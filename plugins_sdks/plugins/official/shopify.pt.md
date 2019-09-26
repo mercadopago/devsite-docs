@@ -1,8 +1,5 @@
 # Shopify
 
-* [Funcionalidades](#funcionalidades)
-* [Configuração](#configuração)
-
 ## Funcionalidades
 
 O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:

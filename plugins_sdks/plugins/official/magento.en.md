@@ -1,14 +1,5 @@
 # Magento
 
-* [Features](#bookmark_features)
-* [Requirements](#bookmark_requirements)
-* [Installation](#bookmark_installation)
-* [Upgrade](#bookmark_upgrade)
-* [Configure Checkout Custom (Credit Card and Ticket)](#bookmark_configure_checkout_custom_(credit_card_and_ticket))
-* [Configure Checkout Classic](#bookmark_configure_checkout_classic)
-* [Payment Notification Status Settings](#bookmark_payment_notification_status_settings) 
-
-
 ## Features
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:

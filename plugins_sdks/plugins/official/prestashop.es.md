@@ -3,15 +3,9 @@
 
 ### Mercado Pago Module (Prestashop 1.7.x)
 
-* [Introducción](#bookmark_introducción)
-* [Requisitos de instalación](#bookmark_requisitos_de_instalación)
-* [Instalación](#bookmark_instalación)
-* [Integración](#bookmark_integración)
-* [Recibir Pagos](#bookmark_recibir_pagos)
-
 ## Introducción
 
-Como imaginarás, una página web sin un procesador de pagos no es más que un catálogo en línea. Tus clientes podrán ver tus productos pero no podrán pagarte por ellos. 
+Como imaginarás, una página web sin un procesador de pagos no es más que un catálogo en línea. Tus clientes podrán ver tus productos pero no podrán pagarte por ellos.
 
 > Somos partners oficiales de Prestashop, un gestor de contenidos con el que puedes crear tiendas online a tu medida.
 
@@ -23,17 +17,17 @@ Piensa en grande. Instala la pasarela de pagos de Mercado Pago en Prestashop y l
 * **Medios de pago** principales de cada país en el que operamos.
 * **Compra con un clic:** recordamos los datos de tus clientes, ellos solo ingresan el código de seguridad de su tarjeta
 * **Pago como invitado:** no hace falta que tus clientes abran una cuenta en Mercado Pago
-* **Devolución** de pagos 
+* **Devolución** de pagos
 * **Cancelación** de pagos pendientes
 * Rechaza o acepta pagos **de forma automática**
 
 > **¿Eres desarrollador?** Esta guía también está pensada para que hagas más rápido tu trabajo de instalación, integración y configuración.
 
-> **¿Eres partner de Mercado Pago?** No olvides ingresar tu Sponsor_ID, así identificamos todas tus transacciones y sabemos cuántas ventas procesa tu cuenta. 
+> **¿Eres partner de Mercado Pago?** No olvides ingresar tu Sponsor_ID, así identificamos todas tus transacciones y sabemos cuántas ventas procesa tu cuenta.
 
 ## Requisitos de instalación
 
-A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos: 
+A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 
 |                            | Detalles                                                                                       |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -47,7 +41,7 @@ A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 | Configuración adicionales  | safe_mode off * memory_limite mayor que 256MB (512MB recomendado)                              |
 | SSL                        | Es un requisito que tenga un certificado SSL                                                   |
 
-¡La instalación de nuestro módulo no afecta la velocidad de tu tienda! 
+¡La instalación de nuestro módulo no afecta la velocidad de tu tienda!
 
 > Puedes usar el protocolo HTTP mientras estés en modo ‘Pruebas’ y no estés haciendo transacciones reales. Cuando vayas a Producción debes tener un **certificado SSL** para ofrecer una **navegación segura** y proteger tus datos y los de tus clientes. Una vez que lo tengas, la ruta de acceso a tu tienda online responderá al **protocolo HTTPS**.
 
@@ -88,7 +82,7 @@ Crea tus preferencias de pago:
 
 - Ingresa tu marca o el nombre de tu tienda para las facturas que enviemos a tus clientes por cada compra.
 - Selecciona a qué categoría pertenecen tus productos.
-- Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
+- Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando.
 - Establece el máximo de cuotas en el que podrán pagarte.
 - Vencimientos de pagos en efectivo: establece en cuántos días caducarán los pagos del checkout personalizado.  
 
@@ -111,21 +105,21 @@ Personaliza la experiencia de compra con los ajustes avanzados que correspondan 
 Haz pruebas:
 
 - Simula pagos como si fueras uno de tus clientes comprando en el sitio.
-- Asegúrate de que el flujo funcione correctamente y sea fácil de usar. 
-- ¿Ves que todo va bien? Desactiva el modo pruebas y ¡empieza a recibir pagos reales! 
+- Asegúrate de que el flujo funcione correctamente y sea fácil de usar.
+- ¿Ves que todo va bien? Desactiva el modo pruebas y ¡empieza a recibir pagos reales!
 
 ![Probar tienda](/images/prestashop/es_testear.png)
 
-> Por defecto, te dejamos este modo activo. Desactívalo cuando tengas la cuenta homologada y ve a Producción solo cuando hayas comprobado que el flujo de compra funciona y que los pagos de prueba fueron procesados. 
+> Por defecto, te dejamos este modo activo. Desactívalo cuando tengas la cuenta homologada y ve a Producción solo cuando hayas comprobado que el flujo de compra funciona y que los pagos de prueba fueron procesados.
 
 #### **4. Ir a producción (‘Go live!’)**
 
-Antes de salir a cobrar, necesitamos que pases por el proceso de homologación. En él te pediremos que completes un formulario con información relacionada a tu negocio. 
+Antes de salir a cobrar, necesitamos que pases por el proceso de homologación. En él te pediremos que completes un formulario con información relacionada a tu negocio.
 
 > Consulta los [requisitos para ir a producción.](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/)
 
-¿Ya lo hiciste? Entonces podrás pasar rápidamente de ‘Pruebas’ a ‘Producción’ desde el panel de configuración de Mercado Pago. 
+¿Ya lo hiciste? Entonces podrás pasar rápidamente de ‘Pruebas’ a ‘Producción’ desde el panel de configuración de Mercado Pago.
 
 ![Comenzar a vender](/images/prestashop/es_vender.png)
 
-**¡Y listo!** Ahora podrás maximizar tu conversión o la de tus clientes con la experiencia de compra online de Mercado Pago. 
+**¡Y listo!** Ahora podrás maximizar tu conversión o la de tus clientes con la experiencia de compra online de Mercado Pago.

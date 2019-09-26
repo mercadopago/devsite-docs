@@ -11,16 +11,6 @@ sites_supported:
 # Generación por retiro
 
 
-> INDEX
->
-> En esta página
->
-> [Generar desde el panel de Mercado Pago](#bookmark_generar_desde_el_panel_de_mercado_pago)
->
-> [Generar por API](#bookmark_generar_por_api)
-
-
-
 Puedes crear un reporte de Dinero Disponible de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API.
 
 ## Generar desde el panel de Mercado Pago

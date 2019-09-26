@@ -105,7 +105,7 @@ Desactivá los acuerdos que no te interesen ofrecer.
 
 > Si querés desactivar un medio de pago entero deseleccioná la lista entera
 
-## ¿Necesitás ayuda?
+### ¿Necesitás ayuda?
 
 Comunicate con tu ejecutivo de cuenta.
 

@@ -11,14 +11,6 @@ sites_supported:
 # ¿Cómo usar el reporte?
 
 
-> INDEX
->
-> En esta página
->
-> [¿Qué contiene el reporte?](#bookmark_¿qué_contiene_el_reporte?)
->
-> [Ejemplo de un reporte](#bookmark_ejemplo_de_un_reporte)
-
 
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que uses.
 

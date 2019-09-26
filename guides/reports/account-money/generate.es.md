@@ -10,15 +10,6 @@ sites_supported:
 
 # ¿Cómo generar tu reporte de Dinero en cuenta?
 
-> INDEX
->
-> En esta página
->
-> [Canales de generación](#bookmark_canales_de_generación)
->
-> [Características técnicas del reporte](#bookmark_características_técnicas_del_reporte)
-
-
 ## Canales de generación
 
 Existen dos formas de generar un reporte de Dinero en cuenta:
