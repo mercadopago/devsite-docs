@@ -287,7 +287,7 @@ Uruguay: Oca.
 
 ![Custom plan](/images/vtex-custom-4.png)
 
-----[mlc, global]----
+----[mlc]----
 ### Configurar plan de pago Webpay en modo agregador
 
 1. Desplegar el menú de Catalog .
@@ -313,11 +313,9 @@ Uruguay: Oca.
     ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
 
 ------------
+----[mla]----
 
-
-----[mla, global]----
-
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Argentina
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre                   | Descripción              | Medio de pago |       Bines {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pago en adquiriente (opcional) |
 |--------------------------|--------------------------|---------------|:-------------------------------------------------------:|------------------------------------------|
@@ -330,9 +328,9 @@ Uruguay: Oca.
 
 ------------
 
-----[mlc, global]----
+----[mlc]----
 
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Chile
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre | Descripción | Medio de pago |                                   Bines {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pago en adquiriente (opcional) |
 |--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
@@ -342,8 +340,8 @@ Uruguay: Oca.
 
 ------------
 
-----[mco, global]----
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Colombia
+----[mco]----
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre  | Descripción | Medio de pago | Bines {min}-{max},{min}-{max},{bin1},{bin2} | Código de pago en adquiriente (opcional) |
 |---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
@@ -351,8 +349,8 @@ Uruguay: Oca.
 
 ------------
 
-----[mlu, global]----
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Uruguay
+----[mlu]----
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre | Descripción | Medio de pago |                     Bines {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pago en adquiriente (opcional) |
 |--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
@@ -406,7 +404,7 @@ Luego de configurar la afiliación es necesario agregar el plan de pago
 10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
 11. Salvar la configuración
 
-----[mla, mco, global]----
+----[mla, mco]----
 ## Configurar afiliación para operar en modo Gateway
 Cuando tu asesor comercial te haya informado que ya están cargados los números de comercio y te haya pasado los `merchant_account_id` de cada número de comercio realizar los siguientes pasos para cada una de las tarjetas que tengas número de comercio:
 1. Desplegar el menú lateral
