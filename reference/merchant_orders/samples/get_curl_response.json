@@ -9,7 +9,7 @@
       "transaction_amount": 1,
       "total_paid_amount": 1,
       "shipping_cost": 0,
-      "currency_id": "ARS",
+      "currency_id": "[FAKER][CURRENCY][ACRONYM]",
       "status": "approved",
       "status_detail": "accredited",
       "operation_type": "regular_payment",
@@ -71,7 +71,7 @@
       "shipping_option": {
         "id": 999999999,
         "cost": 0,
-        "currency_id": "ARS",
+        "currency_id": "[FAKER][CURRENCY][ACRONYM]",
         "shipping_method_id": 99999,
         "estimated_delivery": {
           "date": "2019-04-11T00:00:00.000-03:00",
@@ -99,7 +99,7 @@
   "sponsor_id": null,
   "shipping_cost": 0,
   "total_amount": 5,
-  "site_id": "MLA",
+  "site_id": "[FAKER][GLOBALIZE][UPPER_SITE_ID]",
   "paid_amount": 5,
   "refunded_amount": 0,
   "payer": {
@@ -110,7 +110,7 @@
     {
       "id": "item id",
       "category_id": "item category",
-      "currency_id": "ARS",
+      "currency_id": "[FAKER][CURRENCY][ACRONYM]",
       "description": "item description",
       "picture_url": "item picture url",
       "title": "item title",
@@ -120,6 +120,11 @@
   ],
   "cancelled": false,
   "additional_info": "additional information",
+<<<<<<< HEAD
   "application_id": 9999999999999999,
   "order_status": "partially_paid"
 }
+=======
+  "application_id": 9999999999999999
+}
+>>>>>>> f02f76feeb2bdebf0b3892a1a6df55ec61dbd58f

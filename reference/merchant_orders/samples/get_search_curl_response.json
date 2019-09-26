@@ -73,7 +73,7 @@
           "shipping_option": {
             "id": 999999999,
             "cost": 0,
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "shipping_method_id": 99999,
             "estimated_delivery": {
               "date": "2019-04-11T00:00:00.000-03:00",
