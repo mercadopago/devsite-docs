@@ -10,21 +10,6 @@ sites_supported:
 
 # Prueba tu integración
 
-> INDEX
->
-> En esta página
->
->
->
-> [Cómo probar mi integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_mi_integración)
->
-> [Cómo crear usuarios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
->
-> [Prueba el flujo de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
->
-> [Tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
->
-> [Comenzar a recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
 
 
 ## Cómo probar mi integración

@@ -61,7 +61,7 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 |-------------------------------------------------------------|--------------------------|---------------------|
 | [v1.6.x](https://github.com/mercadopago/cart-prestashop-6/) | Stable (Current Version) | Prestashop v1.6.x   |
 
-  
+
 ## Instalação
 
 1) Baixe o arquivo **mercadopago.zip** em nosso Github de acordo com a versão do Prestashop com a qual trabalha.
@@ -105,7 +105,7 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 
 > IMPORTANTE: O Mercado Envios funciona com o Checkout Standard (redirecionado). Ao utilizá-lo os demais meios de pagamentos serão desabilitados.
 
-1) Primeiro, você precisa [habilitar o Mercado Envios na sua conta](http://shipping.mercadopago.com.ar/optin/doOptin). 
+1) Primeiro, você precisa [habilitar o Mercado Envios na sua conta](http://shipping.mercadopago.com.ar/optin/doOptin).
 
 > NOTE
 >
@@ -128,6 +128,6 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 Sua loja irá sincronizar automaticamente com o MercadoPago. A URL de notificação será enviado em cada pagamento.
 
 
-## Atualização
+### Atualização
 
-Siga os mesmos passos que você fez para [instalar](#instalação) o módulo.
+Siga os mesmos passos que você fez para [instalar](#bookmark_instalação) o módulo.

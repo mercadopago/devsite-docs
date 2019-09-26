@@ -1,13 +1,5 @@
 # Magento 2
 
-* [Requisitos para integrar](#bookmark_requisitos_para_integrar)
-* [Funcionalidades](#bookmark_funcionalidades)
-* [Instalação](#bookmark_instalação) 
-* [Configurações de Cartão de Crédito e Boleto (Custom Checkout)](#bookmark_configurações_de_cartão_de_crédito_e_boleto_(custom_checkout))
-* [Configurações de Basic Checkout](#bookmark_configurações_de_basic_checkout)
-* [Configurações de status de Notificações de Pagamento](#bookmark_configurações_de_status_de_notificações_de_pagamento)
-
-
 ## Requisitos para integrar
 
 Requisito                 | Descrição
@@ -125,12 +117,12 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 * Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
 * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
 
-3) Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**. 
+3) Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**.
 Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usuário deve retornar a sua loja ao finalizar o checkout (**Auto Redirect**).
 
 ![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4)  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso! 
+4)  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
 
 ## Configurações de status de Notificações de Pagamento
@@ -139,9 +131,9 @@ Esse processo irá explicar como configurar os status de pedido para as notifica
 
 1) Vá até o menu **Stores > Configuration > Sales > Payment Methods**.
 
-2) Para configurar os status acesse a opção **Mercado Pago - Global Configuration**, vá até a opção **Order Status Options**. 
+2) Para configurar os status acesse a opção **Mercado Pago - Global Configuration**, vá até a opção **Order Status Options**.
 Para cada status de pagamento você poderá escolher um status de pedido, assim que a sua loja receber a notificação de pagamento o módulo atualizará automaticamente o pedido para o status escolhido. Para salvar as configurações clique no botão **Save Config**.
 
-> O módulo está preparado para receber as notificações de pagamento de forma automática, ou seja, sem a necessidade de configurar a sua conta Mercado Pago ou o módulo. 
+> O módulo está preparado para receber as notificações de pagamento de forma automática, ou seja, sem a necessidade de configurar a sua conta Mercado Pago ou o módulo.
 
 3) Pronto! os status de notificação foram configurados com sucesso.

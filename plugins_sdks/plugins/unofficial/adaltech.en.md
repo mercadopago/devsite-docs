@@ -26,7 +26,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 Adaltech realiza todas as configurações necessárias para que você venda em sua loja online com o Mercado Pago em uma integração transparente e segura.
 
-### Canal de suporte
+## Canal de suporte
 
 Email | Telefone
 --|--

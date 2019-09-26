@@ -10,18 +10,6 @@ sites_supported:
 
 # Generación por API
 
-> INDEX
->
-> En esta página
->
-> [Configurar tus reportes](#bookmark_configurar_tus_reportes)
->
-> [Atributos configurables](#bookmark_atributos_configurables)
->
-> [Generar de forma manual](#bookmark_generar_de_forma_manual)
->
-> [Generar de forma programada](#bookmark_generar_de_forma_programada)
-
 
 Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
 

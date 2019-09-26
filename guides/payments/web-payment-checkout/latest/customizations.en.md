@@ -10,17 +10,6 @@ sites_supported:
 
 # Customization
 
-> INDEX
->
-> In this page
->
->
->
-> [Redirect scheme](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_redirect_scheme)
->
-> [Colors](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_colors)
->
-> [Buttons](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_buttons)
 
 ## Redirect Scheme
 

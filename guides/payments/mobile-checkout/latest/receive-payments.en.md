@@ -154,7 +154,7 @@ Preference preference = new Preference();
   new Item()
   {
     Id = "1234",
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
     Quantity = [FAKER][NUMBER][BETWEEN][1,10],
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)[FAKER][COMMERCE][PRICE]
@@ -433,7 +433,7 @@ Implement **PXLifeCycleProtocol** protocol to be able to obtain the checkout res
 
 ]]]
 
-## Enable payment notifications
+### Enable payment notifications
 
 Notifications are automatically sent to inform you of any new payments and status updates.
 
@@ -441,7 +441,7 @@ This will allow you to manage your inventories and keep your system in sync.
 
 To learn more about it, go to [Notifications.](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
 
-## Test the integration
+### Test the integration
 
 You can test the integration before going into production, in order to check the operation and make all the adjustments you need.
 

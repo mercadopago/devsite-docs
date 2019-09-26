@@ -120,6 +120,6 @@ Choose your preferred format and the file will be generated
 
 > If the file is too big you will receive it a few minutes later via e-mail (the one registered in your account)
 
-## Do you need help?
+### Do you need help?
 
 Get in touch with your sales represantive.

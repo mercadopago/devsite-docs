@@ -43,7 +43,7 @@ The module of Mercado Pago to Prestahop is integrated with the features and paym
 | Extension Dependencies     | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)           |
 | Additional Settings        | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | It is a requirement that you have an SSL certificate, During testing in Sandbox you will be able to run at http.|
- 
+
 >It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
 During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
 
@@ -120,6 +120,6 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 Your store will automatically synchronize with Mercado Pago. The notification URL will be sent in each payment.
 
 
-## Upgrade
+### Upgrade
 
-Follow the same steps you did to [install the module](#bookmark_Installation).
+Follow the same steps you did to [install the module](#bookmark_installation).

@@ -616,10 +616,10 @@ A Webhook is a notification that is sent from one server to another through an `
 
 You can find all the information about it in the [Webhooks](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks)section.
 
-## Next steps
+### Next steps
 
-### Receive payments with stored cards
+#### Receive payments with stored cards
 
-You can securely store your customers’ cards and make payments with a one-click-to-buy experience.
+You can securely store your customer’s cards and make payments with a one-click-to-buy experience.
 
 [More info.](https://www.mercadopago.com.ar/developers/en/guides/payments/api/customers-and-cards)

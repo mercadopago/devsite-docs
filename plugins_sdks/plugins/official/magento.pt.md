@@ -1,14 +1,5 @@
 # Magento
 
-* [Funcionalidades](#bookmark_funcionalidades)
-* [Requisitos](#bookmark_requisitos)
-* [Instalação](#bookmark_instalação) 
-* [Atualização](#bookmark_atualização)
-* [Configurar Checkout Custom (Cartão de Crédito e Boleto)](#bookmark_configurar_checkout_custom_(cartão_de_crédito_e_boleto))
-* [Configurar Checkout Clássico](#bookmark_configurar_checkout_clássico)
-* [Configurações de status de Notificações de Pagamento](#bookmark_configurações_de_status_de_notificações_de_pagamento)
-
-
 ## Funcionalidades
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
@@ -41,7 +32,7 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | Configurações adicionais   | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente. Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
 
-  
+
 ## Instalação
 
 Esse processo irá explicar a instalação do módulo Mercado Pago via Package e Marketplace:

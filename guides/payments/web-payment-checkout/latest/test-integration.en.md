@@ -10,21 +10,6 @@ sites_supported:
 
 # Test your integration
 
-> INDEX
->
-> In this page
->
->
->
-> [How to test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_test_your_integration)
->
-> [How to create users](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_create_users)
->
-> [Test the payment flow](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_the_payment_flow)
->
-> [Test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_cards)
->
-> [Start receiving payments](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_start_receiving_payments)
 
 
 ## How to test my integration

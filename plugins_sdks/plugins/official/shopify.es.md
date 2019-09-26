@@ -1,13 +1,10 @@
 # Shopify  
 
-* [Funcionalidades](#bookmark_Funcionalidades)
-* [Configuración](#bookmark_Configuración)
-
 ## Funcionalidades
 
 O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
 
-| Funcionalidades                                           | Smart Checkout	    | 
+| Funcionalidades                                           | Smart Checkout	    |
 |---------------------------------------------------------- |-------------------|
 | Pago con tarjeta de crédito                               | ✔                 |
 | Otros medios de pago                                      | ✔                 |

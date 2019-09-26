@@ -43,6 +43,6 @@ Además, cuando un pago con tarjeta de crédito resulte aprobado, deberás mostr
 
 Si permites hacer devoluciones de pagos, aclara que sólo pueden ser hechas hasta 90 días luego de su acreditación.
 
-## Términos y condiciones
+### Términos y condiciones
 
 Debes disponer de una política de términos y condiciones, en la cual especifiques que te responsabilizas por todos los datos que sean ingresados en tu sitio.

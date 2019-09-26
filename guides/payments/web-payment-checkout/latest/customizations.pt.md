@@ -10,17 +10,6 @@ sites_supported:
 
 # Customizações
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Esquema redirect](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
->
-> [Cores](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_cores)
->
-> [Botões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_botões)
 
 ## Esquema redirect
 

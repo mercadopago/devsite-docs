@@ -125,6 +125,6 @@ El producto enviado debe tener sus dimensiones (ancho, altura, longitud y peso) 
 Su tienda se sincronizará automáticamente con MercadoPago. La URL de notificación se enviará en cada pago.
 
 
-## Actualización
+### Actualización
 
-Siga los mismos pasos que hizo para [instalar el módulo](#bookmark_Instalación).
+Siga los mismos pasos que hizo para [instalar el módulo](#bookmark_instalación).

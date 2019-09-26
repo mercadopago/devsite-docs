@@ -281,6 +281,6 @@ Consult the [test data](https://www.mercadopago.com.ar/developers/es/guides/paym
 
 [Here](https://www.mercadopago.com.mx/developers/en/guides/payments/api/handling-responses/) you can find our error dictionary.
 
-## Reports
+### Reports
 
 Consult the [complete documentation](https://www.mercadopago.com.ar/ayuda/herramienta-conciliacion_2116) about the Mercado Pago reports.

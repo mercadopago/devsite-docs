@@ -1,12 +1,5 @@
 # Magento 2
 
-* [Requisitos para integrar](#bookmark_requisitos_para_integrar)
-* [Instalación](#bookmark_instalación)
-* [Configuración de la tarjeta de crédito y tickets (Custom Checkout)](#bookmark_configuración_de_la_tarjeta_de_crédito_y_tickets_(custom_checkout))
-* [Configuración de Basic Checkout](#bookmark_configuración_de_basic_checkout)
-* [Configuración de estado de las notificaciones de Pago](#bookmark_configuración_de_estado_de_las_notificaciones_de_pago)
-
-
 ## Requisitos para integrar
 
 Requisito                   | Descripción
@@ -122,17 +115,3 @@ Este proceso explicará cómo configurar el estado de pedido para las notificaci
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar su cuenta de Mercado Pago o el módulo.
 
 3) ¡Listo! El estado de notificación se ha configurado correctamente.
-
-
-## Soporte técnico
-
-Caso tenga alguna duda, problema o error tenemos un canal de contacto.
-Envié un email a modulos@mercadopago.com con la seguinte información:
-
-* Email de su cuenta de Mercado Pago.
-* Detalles sobre su duda, problema o error.
-* Archivos que puedan ayudar en el entendimiento (Print-Screen, Video, Archivos de logs, etc).
-* Versión del Magento.
-* Versión del módulo, si está utilizando.
-
-No te preocupes... Vamos a ayudarle lo más rápidamente posible.

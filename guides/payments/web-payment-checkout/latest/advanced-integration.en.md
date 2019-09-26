@@ -10,23 +10,6 @@ sites_supported:
 
 # Advanced Integration
 
-> INDEX
->
-> In this page
->
->
->
-> [Receive payment notifications](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_receive_payment_notifications)
->
-> [Additional information for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/#bookmark_additional_information_for_preference)
->
-> [Return URL](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_return_url)
->
-> [Cancellations and returns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancellations_and_returns)
->
-> [Manage chargebacks](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration#bookmark_manage_chargebacks)
-
-
 ## Receive Payment Notifications
 
 IPN (Instant Payment Notification) notifications are the **automatic form of notice of the creation of new payments and updates of their status.** For example if they were approved, rejected or if they are pending.

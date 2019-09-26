@@ -1,17 +1,4 @@
-#SDK Javascript#
-
-> WARNING
->
-> Índice de conteúdo
->
-> - Inclua o SKD de MercadoPago.
-> - Configure sua chave pública.
-> - Obtenha um token de uso único para o cartão.
-> - Obtenha informação sobre o meio de pagamento.
-> - Obtenha os tipos de documento.
-> - Obtenha os emissores de cartão.
-> - Obtenha as taxas e custos de financiamento.
-
+#SDK Javascript
 
 O SDK Javascript de Mercado Pago facilita a obtenção dos dados de cartões de seus clientes de forma segura.
 
@@ -75,7 +62,7 @@ A função callback receberá um objeto com as seguintes propriedades:
     }
 }
 ```
- 
+
 ##Obtenha informação dos meios de pagamento
 
 Pode-se obter informação do cartão inserido como meio de pagamento selecionado, usando:

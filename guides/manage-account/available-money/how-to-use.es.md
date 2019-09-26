@@ -6,15 +6,6 @@ sites_supported:
 # ¿Cómo usar el reporte?
 
 
-> INDEX
->
-> En esta página
->
-> [¿Qué contiene el reporte?](#bookmark_¿qué_contiene_el_reporte?)
->
-> [Ejemplo de un reporte](#bookmark_ejemplo_de_un_reporte)
-
-
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que uses.
 
 Para consultar el reporte te recomendamos descargarlo en formato .csv para abrirlo en el programa que lo visualices. Configura tu programa para que soporte el formato UTF-8, así evitas problemas de lectura.

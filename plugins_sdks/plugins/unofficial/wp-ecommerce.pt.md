@@ -1,10 +1,5 @@
 # WP-eCommerce
 
-* [Requisitos de Sistema](#requisitos-de-sistema)
-* [Funcionalidades](#funcionalidades)
-* [Instalação](#instalação)
-* [Configurações das Notificações Instantâneas de Pagamento](#configurações-das-notificações-instantâneas-de-pagamento)
-* [Atualização](#atualização)
 
 # Requisitos de Sistema
 ### Versões de Plataforma

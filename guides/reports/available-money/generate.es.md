@@ -10,14 +10,6 @@ sites_supported:
 
 # ¿Cómo generar tu reporte de Dinero Disponible?
 
-> INDEX
->
-> En esta página
->
-> [Canales de generación](#bookmark_canales_de_generación)
->
-> [Características técnicas del reporte](#bookmark_características_técnicas_del_reporte)
-
 
 ## Canales de generación
 

@@ -1,13 +1,5 @@
 # Magento 2
 
-* [Requirements to integrate](#bookmark_requirements_to_integrate)
-* [Features](#bookmark_features)
-* [Installation](#bookmark_installation)
-* [Credit Card and Ticket Configuration (Custom Checkout)](#bookmark_credit_card_and_ticket_configuration_(custom_checkout))
-* [Basic Checkout Configuration](#bookmark_basic_checkout_configuration)
-* [Payment Notification status settings](#bookmark_payment_notification_status_settings)
-
-
 ## Requirements to integrate
 
 Requirement                 | Description
@@ -137,7 +129,7 @@ This process will explain how to set up order statuses for payment notifications
 
 1) Go to **Stores > Configuration > Sales > Payment Methods**.
 
-2) To configure the statuses go to **Mercado Pago - Global Configuration**, go to the option **Order Status Options**. 
+2) To configure the statuses go to **Mercado Pago - Global Configuration**, go to the option **Order Status Options**.
 For each payment status you can choose an order status, as soon as your store receives the payment notification the module will automatically update the order to the chosen status. To save the settings click the **Save Config** button.
 
 > The module is prepared to receive payment notifications automatically, that is, without the need to configure your Mercado Pago account or module.

@@ -205,6 +205,6 @@ Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/gui
 
 [Aquí](https://www.mercadopago.com.mx/developers/es/guides/payments/api/handling-responses/) podrás encontrar nuestro diccionario de errores.
 
-## Reportes
+### Reportes
 
 Consultar la [documentación completa](https://www.mercadopago.com.ar/ayuda/herramienta-conciliacion_2116) sobre los reportes de Mercado Pago.
