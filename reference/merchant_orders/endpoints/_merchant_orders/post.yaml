@@ -1,26 +1,17 @@
 ---
 resource: merchant_orders.raml
+samples:
+- curl.sh
+- curl_response.json
 use:
-- id
-- status
 - external_reference
 - preference_id
-- payments
-- shipments
-- collector
 - marketplace
 - notification_url
-- date_created
-- last_updated
 - sponsor_id
-- shipping_cost
-- total_amount
-- site_id
-- paid_amount
-- refunded_amount
 - payer
+- site_id
 - items
-- cancelled
 - additional_info
 - application_id
 errors:
@@ -45,11 +36,6 @@ errors:
           en: internal server error.
           es: internal server error.
           pt: internal server error.
-    - invalid_items:
-        description:
-          en: should specify at least one item.
-          es: should specify at least one item.
-          pt: should specify at least one item.
     - invalid_items:
         description:
           en: title cannot be null for the given item.
@@ -90,11 +76,6 @@ errors:
           en: user not allowed to operate.
           es: user not allowed to operate.
           pt: user not allowed to operate.
-    - invalid_payment_id:
-        description:
-          en: invalid payment identifier.
-          es: invalid payment identifier.
-          pt: invalid payment identifier.
     - invalid_operation_type:
         description:
           en: invalid operation type.
@@ -115,11 +96,6 @@ errors:
           en: the preference_id has expired.
           es: the preference_id has expired.
           pt: the preference_id has expired.
-    - invalid_shipment_id:
-        description:
-          en: invalid shipment identifier.
-          es: invalid shipment identifier.
-          pt: invalid shipment identifier.
     - invalid_sponsor_id:
         description:
           en: invalid sponsor_id.
@@ -130,7 +106,7 @@ errors:
           en: invalid marketplace.
           es: invalid marketplace.
           pt: invalid marketplace.
-    - unmarshall_error:
+    - unmarshal_error:
         description:
           en: could not unmarshal request body into merchant order struct.
           es: could not unmarshal request body into merchant order struct.
@@ -140,9 +116,19 @@ errors:
           en: invalid URL. Isn't HTTP or HTTPS.
           es: invalid URL. Isn't HTTP or HTTPS.
           pt: invalid URL. Isn't HTTP or HTTPS.
+    - communication_error:
+        description:
+          en: Error when calling...
+          es: Error when calling...
+          pt: Error when calling...
   - 401 UNAUTHORIZED:
     - invalid_token:
         description:
           en: access denied.
           es: access denied.
           pt: access denied.
+    - invalid_caller_id:
+        description:
+          en: invalid caller_id
+          es: invalid caller_id
+          pt: invalid caller_id

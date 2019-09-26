@@ -1,3 +1,8 @@
+---
+sites_supported:
+  - mlb
+---
+
 # O que são os relatórios?
 
 Os relatórios do Mercado Pago podem ser baixados em formato .xlsx ou .csv e servem para que você veja as movimentações da sua conta e possa conciliar suas vendas e outras operações com seus sistemas de gestão internos.

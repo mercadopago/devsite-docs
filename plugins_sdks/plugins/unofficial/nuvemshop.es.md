@@ -1,12 +1,12 @@
-# Tienda nube
+# Tiendanube
 
-## ¿Qué es Tienda Nube?
+## ¿Qué es Tiendanube?
 
-[Tienda Nube] (https://www.tiendanube.com/) es una plataforma de ecommerce que ofrece la integración con Mercado Pago como medio de pago.
+[Tiendanube] (https://www.tiendanube.com/) es una plataforma de ecommerce que ofrece la integración con Mercado Pago como medio de pago.
 
-## ¿Cómo puedo operar con Mercado Pago en Tienda Nube?
+## ¿Cómo puedo operar con Mercado Pago en Tiendanube?
 
-Tienda Nube permite operar Mercado Pago en la siguiente modalidad:
+Tiendanube permite operar Mercado Pago en la siguiente modalidad:
 
 ### Smart Checkout
 
@@ -18,25 +18,25 @@ Antes de comenzar la configuración, es necesario que tenga una cuenta válida e
 
 Si desea saber más sobre  ** Mercado Pago ** acceda a nuestra página principal (https://www.mercadopago.com/).
 
-## Cómo habilitar Mercado Pago en Tienda Nube
+## Cómo habilitar Mercado Pago en Tiendanube
 
 1. Acceder al administrador de tu tienda en la plataforma.
 2. En el menú configuración, seleccione la opción ** MEDIOS DE PAGO **
 
-    ![Payments Modules - Nuvem Shop](/images/NuvemShopmeiodepagamento1.png)
+    ![Payments Modules - Nuvemshop](/images/NuvemShopmeiodepagamento1.png)
    
 
 3. Haga clic en el botón ** ACTIVAR ** en el marco de Mercado Pago.
 
-    ![Enabling Mercado Pago in Nuvem Shop](/images/NuvemShopativarMP.png)
+    ![Enabling Mercado Pago in Nuvemshop](/images/NuvemShopativarMP.png)
 
 4. Elija las formas de pago: Tarjeta de Crédito y Boleto
 
-    ![Payments Method page - Nuvem shop](/images/NuvemShopativarMP2.png)
+    ![Payments Method page - Nuvemshop](/images/NuvemShopativarMP2.png)
 
-5. Se redirirá a una página de Mercado Pago para poder permitir la conexión entre Tienda Nube y su cuenta de Mercado Pago, realizando todas las configuraciones necesarias.
+5. Se redirirá a una página de Mercado Pago para poder permitir la conexión entre Tiendanube y su cuenta de Mercado Pago, realizando todas las configuraciones necesarias.
 
-    ![Authorization message from the Nuvem Shop with the Mercado Pago](/images/NuvemShoppermitirMP.png)
+    ![Authorization message from the Nuvemshop with the Mercado Pago](/images/NuvemShoppermitirMP.png)
 
 6. Después de hacer clic en ** PERMITIR ** usted será redirigido de vuelta a la sección administrativa de la plataforma, en la pantalla de ajustes del módulo Mercado Pago.
 
