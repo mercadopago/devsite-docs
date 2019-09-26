@@ -2,7 +2,7 @@
 
 ## ¿Qué es Adaltech?
 
-[Adaltech](http://www.adaltech.com.br/) es una plataforma de ecommerce que dispinibiliza una integración con Mercado Pago como medio de pago. Automatiza los procesos que operan en el modelo de negocio de eventos y tiene productos diversificados que permiten la gestión de venta de entradas, la acreditación de acceso, la validación de entradas, las ventas en línea y otros servicios que forman parte del espectáculo, congresos y las operaciones relacionadas.
+[Adaltech](http://www.adaltech.com.br/) es una plataforma de ecommerce que disponibiliza una integración con Mercado Pago como medio de pago. Automatiza los procesos que operan en el modelo de negocio de eventos y tiene productos diversificados que permiten la gestión de venta de entradas, la acreditación de acceso, la validación de entradas, las ventas en línea y otros servicios que forman parte del espectáculo, congresos y las operaciones relacionadas.
 
 ## ¿Cómo puedo operar con Mercado Pago en Adaltech?
 

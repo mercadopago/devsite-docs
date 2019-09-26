@@ -152,7 +152,7 @@ Preference preference = new Preference();
   new Item()
   {
     Id = "1234",
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
     Quantity = [FAKER][NUMBER][BETWEEN][1,10],
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)[FAKER][COMMERCE][PRICE]
@@ -435,7 +435,7 @@ Para obtener una respuesta de pago se deberá implementar el protocolo **PXLifeC
 
 ]]]
 
-## Ative as notificações de pagamento
+### Ative as notificações de pagamento
 
 As notificações informam automaticamente sobre seus novos pagamentos e atualizações de status.
 
@@ -443,7 +443,7 @@ Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincroniza
 
 Para mais informações, consulte a seção de [Notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
 
-## Teste a integração
+### Teste a integração
 
 Você pode testar sua integração antes de partir para a produção, a fim de verificar o funcionamento e fazer os ajustes necessários.
 

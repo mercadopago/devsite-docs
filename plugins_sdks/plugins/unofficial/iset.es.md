@@ -2,7 +2,7 @@
 
 ## ¿Qué es ISET?
 
-[ISET](https://www.iset.com.br/) es una plataforma de ecommerce que dispinibiliza una integración con Mercado Pago como medio de pago.
+[ISET](https://www.iset.com.br/) es una plataforma de ecommerce que disponibiliza una integración con Mercado Pago como medio de pago.
 
 ## ¿Cómo puedo operar con Mercado Pago en ISET?
 
