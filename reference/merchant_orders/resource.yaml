@@ -767,3 +767,38 @@ properties:
       en: Total amount of the order.
       es: Costo total de la orden.
       pt: Total amount of the order.
+- order_status:
+    type: String
+    description:
+      en: Show the current merchant order status given the payments status.
+      es: Muestra el estado actual de la orden según el estado de los pagos.
+      pt: Show the current merchant order status given the payments status.
+    enum:
+    - payment_required:
+        en: Order without payments or with all payments "rejected" or "cancelled".
+        es: Orden sin ningún pago o con todos los pagos "rejected" o "cancelled".
+        pt: Order without payments or with all payments "rejected" or "cancelled".
+    - reverted:
+        en: Order with all payments "refunded" o "chargeback".
+        es: Orden con todos los pagos en "refunded" o "chargeback".
+        pt: Order with all payments "refunded" o "chargeback".
+    - paid:
+        en: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the total amount of the MO.
+        es: Orden con la suma de todos los pagos "approved", "chargeback" o "in_mediation" cubre el monto total de la MO.
+        pt: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the total amount of the MO.
+    - partially_reverted:
+        en: Order with at least one payment "refunded" or "chargeback".
+        es: Orden con al menos un pago en "refunded" o "chargeback".
+        pt: Order with at least one payment "refunded" or "chargeback".
+    - partially_paid:
+        en: Order with at least one payment "approved" and not covering MO total amount.
+        es: Orden con al menos un pago en "approved" y no cubre el total de la MO.
+        pt: Order with at least one payment "approved" and not covering MO total amount.
+    - payment_in_process:
+        en: Order with payments "in_process", "pending" or "authorized".
+        es: Orden con pagos "in_process", "pending" or "authorized".
+        pt: Order with payments "in_process", "pending" or "authorized".  
+    - undefined:
+        en: Order created before the existence of the order_status status.
+        es: Orden creada antes de la existencia del estado order_status.
+        pt: Order created before the existence of the order_status status.
