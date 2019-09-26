@@ -38,11 +38,6 @@
   ],
   "cancelled": false,
   "additional_info": "additional information",
-<<<<<<< HEAD
   "application_id": 9999999999999999,
   "order_status": "paid"
 }
-=======
-  "application_id": 9999999999999999
-}
->>>>>>> f02f76feeb2bdebf0b3892a1a6df55ec61dbd58f
