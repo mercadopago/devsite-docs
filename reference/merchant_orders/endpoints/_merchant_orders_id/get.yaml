@@ -23,7 +23,7 @@ errors:
           en: access denied.
           es: access denied.
           pt: access denied.
-  - invalid_caller_id:
+    - invalid_caller_id:
         description:
           en: invalid caller_id
           es: invalid caller_id
