@@ -58,5 +58,7 @@ The following scheme represents the correlation between the payment status in Me
 | Approved            | Completed            |
 | Pending             | Pending              |
 | In process          | Pending              |
-| Rejected            | Pending              |
+| In Mediation        | Pending              |
 | Cancelled           | Failed               |
+| Refunded            | Failed               |
+| Rejected            | Failed               |

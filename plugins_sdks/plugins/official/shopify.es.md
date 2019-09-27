@@ -58,5 +58,7 @@ El siguiente esquema representa la correlación entre los estados de un pago en 
 | Approved            | Completed            |
 | Pending             | Pending              |
 | In process          | Pending              |
-| Rejected            | Pending              |
+| In Mediation        | Pending              |
 | Cancelled           | Failed               |
+| Refunded            | Failed               |
+| Rejected            | Failed               |
