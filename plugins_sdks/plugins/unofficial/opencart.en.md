@@ -1,14 +1,6 @@
 # OpenCart
 
-## Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
-
-* [Features](#bookmark_Features)
-* [Available Versions](#bookmark_Available_Versions)
-* [Requirements](#bookmark_Requirements)
-* [Installation](#bookmark_Installation)
-* [Configuration](#bookmark_Configuration)
-* [Upgrade](#bookmark_Upgrade)
-* [Feedback](#bookmark_Feedback)
+#### Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
 
 ## Features:
 
@@ -137,6 +129,6 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 Your store will automatically sync with MercadoPago. The notification URL will be sent in each payment.
 
-## Upgrade Mercado Pago Plugin
+### Upgrade Mercado Pago Plugin
 
-Follow the same steps that you did to [install the module](#bookmark_Installation).
+Follow the same steps that you did to [install the module](#bookmark_installation).

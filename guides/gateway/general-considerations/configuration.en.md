@@ -31,7 +31,7 @@ When pressing the _Agregar Nº comercio_ button you will see the following secti
 
 ![Merchant IDs](/images/gateway/merchant_accounts_new.png)
 
-Fill in the necessary information and press the _Continuar_ button. 
+Fill in the necessary information and press the _Continuar_ button.
 
 ![Merchant ID created](/images/gateway/merchant_accounts_congrats.png)
 
@@ -77,7 +77,7 @@ Continue by pressing the _Continuar_ button:
 
 ![New Gateway payment method 2](/images/gateway/payment_methods_gateway_new_2.png)
 
-Here you need to select which Merchant IDs are valid for the payment method just created. 
+Here you need to select which Merchant IDs are valid for the payment method just created.
 
 ![New Gateway payment method 3](/images/gateway/payment_methods_gateway_new_3.png)
 
@@ -109,13 +109,12 @@ Deactivate the agreements you don't want to offer.
 
 > If you want to deactivate an entire payment method deselect all the items in the list.
 
-## Do you need help?
+### Do you need help?
 
 Get in touch with your sales representative.
 
-## Next steps
+### Next steps
 
-<<<<<<< HEAD
 
 * [Integrate the Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/gateway/web-checkout/receiving-payments) for the Gateway Model
 * [Integrate the API](https://www.mercadopago.com.ar/developers/en/guides/gateway/api/receiving-payments) for the Gateway Model

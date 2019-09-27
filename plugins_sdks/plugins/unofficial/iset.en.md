@@ -1,8 +1,3 @@
----
-sites_supported:
-  - mlb
----
-
 # ISET
 
 ## O que é ISET

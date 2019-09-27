@@ -11,7 +11,7 @@
     "payment_type_id": "credit_card",
     "status": "approved",
     "status_detail": "accredited",
-    "currency_id": "BRL",
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
     "description": "Point Mini a maquininha que dá o dinheiro de suas vendas na hora",
     "live_mode": false,
     "sponsor_id": null,

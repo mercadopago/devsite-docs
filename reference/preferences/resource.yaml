@@ -472,5 +472,24 @@ properties:
     description:
           en: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.
           es: Cuando se configura como true los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.
-          pt: Quando definido como true, o pagamento só pode ter os status approved ou rejected. Caso contrário, o status in_process é adicionado..
+          pt: Quando definido como true, o pagamento só pode ter os status approved ou rejected. Caso contrário, o status in_process é adicionado.
+- taxes:
+    type: Array(Object)
+    description:
+      en: 'Differentiated taxes definition. Only available for Mercado Libre Colombia.'
+      es: 'Definición de impuestos diferenciados. Unicamente disponible para Mercado Libre Colombia.'
+      pt: 'Definição de impostos diferenciados. Disponível apenas para o Mercado Livre Colombia.'
+    properties:
+    - type:
+        type: String(3)
+        description:
+          en: 'Tax identifier. Only IVA and INC'
+          es: 'Identificador de impuesto. Solo se admiten los valores IVA e INC.'
+          pt: 'Identificador de imposto. Somente IVA e INC.'
+    - value:
+        type: Float
+        description:
+          en: 'Tax amount. A maximum of two decimal places is supported. For tax exempt items, zero must be reported.'
+          es: 'Monto del impuesto. Se admite un máximo de dos decimales. Para ítems exentos de impuestos se debe informar cero.'
+          pt: 'Valor do imposto. É suportado no máximo duas casas decimais. Para itens isentos de imposto, zero deve ser relatado.'
 

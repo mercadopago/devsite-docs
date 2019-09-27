@@ -43,7 +43,7 @@ para consultar suas informações:
   "payments": [
     345345345
   ],
-  "currency": "ARS",
+  "currency": "[FAKER][CURRENCY][ACRONYM]",
   "amount": 100.20,
   "reason": "fraud",
   "coverage_applied": false,

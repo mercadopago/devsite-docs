@@ -2,32 +2,25 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Customization
 
-> INDEX
->
-> In this page
->
->
->
-> [Redirect scheme](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_redirect_scheme)
->
-> [Colors](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_colors)
->
-> [Buttons](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations#bookmark_buttons)
 
 ## Redirect Scheme
 
-The Smart Checkout redirect allows you to change your opening scheme.
+The Smart Checkout allows you to change your opening scheme.
 
 The schemes currently available are:
 
 * **Redirect**: Opens the Smart Checkout in a new window.
 * **Modal**: Opens the Smart Checkout on your website.
 
-![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
+![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
 
 To integrate the redirect scheme, replace the payment button you made in the basic integration with the following snippet:
 

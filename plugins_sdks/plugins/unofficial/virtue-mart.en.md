@@ -1,17 +1,6 @@
 # VirtueMart - Mercado Pago Module (v3.0.x)
 
-* [Requirements](#requirements)
-* [Available versions](#available_versions)
-* [Features](#features)
-* [Installation](#installation)
-* [Standard Checkout Configuration](#configuration_std)
-* [Credit Card - Custom Checkout Configurationn](#configuration_custom)
-* [Ticket - Custom Checkout Configuration](#configuration_custom_ticket)
-* [Support](#Support)
-
-
-<a name="requirements"></a>
-## Requirements: ##
+## Requirements
 
 Basically, the requirements of this plugin are same as you need to run Virtuemart and Joomla. Your machine should have:
 
@@ -31,8 +20,7 @@ Basically, the requirements of this plugin are same as you need to run Virtuemar
 If you're using Custom Checkout, it is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
 During the sandbox mode tests, you can operate over HTTP, but for homologation you'll need to acquire the certificate in case you don't have it.
 
-<a name="available_versions"></a>
-## Available versions: ##
+## Available versions
 
 <table>
   <thead>
@@ -51,8 +39,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
   </tbody>
 </table>
 
-<a name="features"></a>
-## Features: ##
+## Features
 
 The module of Mercado Pago to VirtueMart is integrated with the features and payment solutions:
 
@@ -65,16 +52,13 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
   * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
 
-<a name="installation"></a>
-## Installation: ##
+## Installation
 
 1. Download the zip module
 2. Go to **Extensions > Extension Manager**
 3. In **Upload Package File > Package File** select the **cart-virtuemart.zip** and click **Upload & Installation**
 
-
-<a name="configuration_std"></a>
-## Standard Checkout Configuration: ##
+## Standard Checkout Configuration
 
 1. Go to **VirtueMart > Payment Methods** and click **New**
 
@@ -91,7 +75,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
   You can obtain your **Client_id** and **Client_secret**, accordingly to your country,[in the following link](https://www.mercadopago.com/mla/account/credentials).
-  
+
 5. Checkout settings. <br/>
 
   ![Settings checkout](/images/virtuemart-checkout_settings.png) <br />
@@ -125,8 +109,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   **Log**: Enables/disables logs.<br />
   **Logo**: Select the logo. You must add the file in the folder /images/stories/virtuemart/payment <br />
 
-<a name="configuration_custom"></a>
-## Credit Card - Custom Checkout Configuration: ##
+## Credit Card - Custom Checkout Configuration
 
   1. Go to **VirtueMart > Payment Methods** and click **New**
 
@@ -174,8 +157,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
   * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
 
-<a name="configuration_custom_ticket"></a>
-## Ticket - Custom Checkout Configuration: ##
+## Ticket - Custom Checkout Configuration
 
   1. Go to **VirtueMart > Payment Methods** and click **New**
 
@@ -215,8 +197,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
   * **Choose the status when payment was canceled**: Sets up the order status when payments are canceled.
   * **Choose the status when payment was reject**: Sets up the order status when payments are rejected.
 
-<a name="Support"></a>
-## Support: ##
+## Support
 
 If you have any questions, problems or errors we have a support channel. Write us at our [support form](/support) with the following information:
 

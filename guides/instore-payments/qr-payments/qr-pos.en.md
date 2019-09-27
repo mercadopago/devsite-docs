@@ -59,12 +59,12 @@ In addition to the previous concepts, you must also know the objects with which 
 	"notification_url": "www.yourserver.com/endpoint",
       "items" :[{
         "title" : "Tacos",
-        "currency_id" : "MXN",
+        "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
         "unit_price" : 16.0,
         "quantity" : 4
       },{
         "title" : "Soda",
-        "currency_id" : "MXN",
+        "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
         "unit_price" : 15.0,
         "quantity" : 1
       }]
@@ -145,7 +145,7 @@ curl -X POST https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERN
 	"notification_url": "www.yourserver.com/endpoint",
       "items" :[{
         "title" : "Tacos",
-        "currency_id" : "MXN",
+        "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
         "unit_price" : 16.0,
         "quantity" : 4
       }]
@@ -206,6 +206,6 @@ Consult the [test data](https://www.mercadopago.com.mx/developers/es/guides/paym
 
 [Here](https://www.mercadopago.com.mx/developers/en/guides/payments/api/handling-responses/) you can find our error dictionary.
 
-## Reports
+### Reports
 
 Consult the [complete documentation](https://www.mercadopago.com.ar/ayuda/herramienta-conciliacion_2116) about the Mercado Pago reports.

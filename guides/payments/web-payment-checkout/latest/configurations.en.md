@@ -2,19 +2,14 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Other functionalities
 
-> INDEX
->
-> In this page
->
->
->
-> [Example of a complete preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_example_of_a_complete_preference)
->
-> [Attributes for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_preference)
 
 You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
@@ -29,7 +24,7 @@ If you offer purchases of high amounts, for example, you can accept [payments wi
         {
             "id": "item-ID-1234",
             "title": "Mi producto",
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
             "description": "Descripción del Item",
             "category_id": "art",
@@ -177,7 +172,7 @@ paymentmethods.Installments = 12;
 ```
 ]]]
 
-## Binary Mode
+### Binary Mode
 
 You can activate the binary mode if the business model requires payment approval to be instantaneous. This way, payment can only be approved or declined.
 
@@ -189,7 +184,7 @@ To activate it, you only have to set the _`binary_mode`_ attribute of the paymen
 "binary_mode": true
 ```
 
-## Validity of Preferences
+### Validity of Preferences
 
 If you want to enable the payment of a preference with a certain duration, you can activate a period of validity or complete directly with the following attributes:
 
@@ -199,7 +194,7 @@ If you want to enable the payment of a preference with a certain duration, you c
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-## Sponsor ID
+### Sponsor ID
 
 The `sponsor_id` attribute is an identifier of the developer or software company that performs the Smart Checkout integration, this data is visible in the preference and in the payment.
 
@@ -207,17 +202,8 @@ The `sponsor_id` attribute is an identifier of the developer or software company
 "sponsor_id": 123456789
 ```
 
-## Payments with Two Credit Cards
 
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
-You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
-To activate the payment option, go to your <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">business options</a> and choose the option _Receive payments with 2 credit cards_.
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
-
-
-## Multiple Items
+### Multiple Items
 
 If you need to create a preference for more than one item, you should only add them as a list within _items_.
 Keep in mind that the total amount of the preference will be the sum of the amount for the unit price of each item.
@@ -249,11 +235,11 @@ var preference = {
   items: [
       { title: 'Mi producto',
       quantity: 1,
-      currency_id: 'ARS',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 75.56 },
 	{ title: 'Mi producto 2’,
       quantity: 2,
-      currency_id: 'ARS',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 96.56 }
     ]
 };
@@ -274,14 +260,14 @@ Item item1 = new Item();
 item1.setId("1234")
     .setTitle("Producto 1")
     .setQuantity(2)
-    .setCurrencyId("ARS")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 75.56);
 
 Item item2 = new Item();
 item2.setId("12")
     .setTitle("Producto 2")
     .setQuantity(1)
-    .setCurrencyId("ARS")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 75.56);
 
 preference.appendItem(item1, item2);
@@ -316,14 +302,14 @@ reference.Items.Add(
   {
     Title = "Mi producto",
     Quantity = 1,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   },
   new Item()
   {
     Title = "Mi producto2”,
     Quantity = 2,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)96.56
   }
 );
@@ -352,6 +338,19 @@ curl -X POST \
 }'
 ```
 ]]]
+
+----[mla, mlb]----
+
+## Payments with Two Credit Cards
+
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
+
+You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
+To activate the payment option, go to your <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">business options</a> and choose the option _Receive payments with 2 credit cards_.
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
+------------
 
 ---
 

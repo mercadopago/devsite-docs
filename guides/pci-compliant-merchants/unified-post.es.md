@@ -58,7 +58,7 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
       "payment_type_id": "credit_card",
       "status": "approved",
       "status_detail": "accredited",
-      "currency_id": "ARS",
+      "currency_id": "[FAKER][CURRENCY][ACRONYM]",
       "description": "Payment test",
 
       "live_mode": false,

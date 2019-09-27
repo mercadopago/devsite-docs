@@ -1,11 +1,6 @@
 # Magento
 
-* [Requisitos](#Requisitos)
-* [Instalación](#Instalación)
-* [Actualización](#Actualización)
-* Checkout Personalizado
-* Checkout Básico
-* [Configuración de estado de las notificaciones de Pago](#Configuración-de-estado-de-las-notificaciones-de-Pago)
+## Funcionalidades
 
 El módulo de Mercado Pago para Magento ofrece las siguientes funcionalidades:
 
@@ -23,8 +18,7 @@ El módulo de Mercado Pago para Magento ofrece las siguientes funcionalidades:
 | Calculadora de Cuotas          	| ✔               	| ✔                      	|
 
 
-<a name="Requisitos"></a>
-## Requisitos:
+## Requisitos
 
 |                            | Detalle                                                                                        |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -38,10 +32,11 @@ El módulo de Mercado Pago para Magento ofrece las siguientes funcionalidades:
 | Configuración adicionales  | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | Es un requisito que tenga un certificado SSL, Durante las pruebas en modo de Sandbox podras usar HTTP.|
 
-<a name="Instalación"></a>
-## Instalación: ##
+
+## Instalación
 
 Este proceso explicará la instalación del módulo Mercado Pago vía Package y Marketplace:
+
 
 ### Instalación via Marketplace
 
@@ -61,6 +56,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 
 5) ¡Listo! El módulo de Mercado Pago fue instalado con éxito.
 
+
 ### Instalación via Package
 
 1) Acceda al **[Github del Módulo para Magento de Mercado Pago](https://github.com/mercadopago/cart-magento)**, descargar el archivo que tiene la extensión **.tgz** (Ejemplo: MercadoPago-2.10.0.tgz):
@@ -75,8 +71,8 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Package y 
 
 4) ¡Listo! El módulo de Mercado Pago fue instalado con éxito.
 
-<a name="Actualización"></a>
-## Actualización:
+
+## Actualización
 
 Si ya tiene el módulo de Mercado Pago y desea instalar una versión más actual del módulo, le aconsejamos eliminar todos los archivos relacionados con el módulo anterior.
 
@@ -109,8 +105,8 @@ Una vez realizado este proceso, ejecute el proceso de **Instalación**.
 
 > Siempre haga una copia de seguridad antes de realizar cualquier cambio.
 
-<a name="Configuración-de-la-tarjeta-de-crédito-y-tickets"></a>
-## Configuración para procesar Tarjeta de crédito y Tickets: ##
+
+## Configurar el Checkout Personalizado (Tarjeta de crédito y Tickets)
 
 Este proceso explicará cómo configurar el módulo para aceptar pagos con Checkout Personalizado con tarjeta de crédito y tickets:
 
@@ -134,13 +130,12 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 
 ![Configuración de checkout exitosa Mercado Pago Magento](/images/magento/magento-save.png)
 
-<a name="Configurar-el-Checkout-Redirect,-Iframe-y-LightBox"></a>
-## Configurar el Checkout Redirect, Iframe y LightBox:
 
+## Configurar el Checkout Clásico
 Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
 
 1) Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Payment Methods**:
-    
+
 ![Configurando Checkout Redirect, Iframe and LightBox Mercado Pago Magento](/images/magento/magento-config-01.gif)
 
 2) Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
@@ -155,8 +150,8 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 ![Checkout redirect configurado existosamente Mercado Pago Magento](/images/magento/magento-save.png)
 
-<a name="Configurar-Mercado-Envios"></a>
-## Configurar Mercado Envíos: ##
+
+## Configurar Mercado Envíos
 
 Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos:
 
@@ -165,7 +160,7 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos
 > 	IMPORTANTE: Su cuenta de Mercado Pago tiene que ser del tipo **Vendedor**.
 
 2) Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Shipping Methods**:
-    
+
 ![Configurando Mercado Envíos en Mercado Pago Magento](/images/magento/magento-config-me-01.gif)
 
 3) Para habilitar Mercado Envíos **MercadoEnvios**, haga un clic en el botón  **Configure**. Vaya a la opción **Enable** y marque como **Yes**.
@@ -180,8 +175,8 @@ Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos
 
 ![Mercado Envíos configurado exitosamente Mercado Pago Magento](/images/magento/magento-me_save.png)
 
-<a name="Configurar-Suscripciones"></a>
-## Configurar Suscripciones: ##
+
+## Configurar Suscripciones
 
 Este proceso explicará cómo configurar el módulo para aceptar pagos con suscripciones:
 
@@ -201,8 +196,8 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con suscr
 
 ![Pagos recurrentes configurados exitosamente Mercado Pago Magento](/images/magento/magento-save.png)
 
-<a name="Configuración-de-estado-de-las-notificaciones-de-Pago"></a>
-## Configuración de estado de las notificaciones de Pago: ##
+
+## Configuración de estado de las notificaciones de Pago
 
 Este proceso explicará cómo configurar el estado de pedido para las notificaciones de pago:
 

@@ -1,32 +1,19 @@
 # ZenCart - Mercado Pago Module (v1.5.x)
 
-* [Funcionalidades](#features)
-* [Versões disponíveis](#available_versions)
-* [Requisitos](#requirements)
-* [Instalação](#installation)
-* [Configuração](#setup)
-* [Suporte](#Support)
-
-
-<a name="features"></a>
-## Funcionalidades: ##
+## Funcionalidades
 
 O módulo do Mercado Pago para o ZenCart esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
 * [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * Pagamento com dois cartões
+* Pagamento com dois cartões
 
-
-<a name="available_versions"></a>
-## Versões disponíveis: ##
+## Versões disponíveis
 
 Versão do Plugin | Status | Versões compativéis
 -------------- | ------ | -------------------
 v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
-
-<a name="requirements"></a>
-## Requisitos: ##
+## Requisitos
 
 **PHP**
 
@@ -37,15 +24,14 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 * MySQL v5+
 
-<a name="installation"></a>
-## Instalação: ##
+
+## Instalação
 
 1. Faça o download do modulo do Mercado Pago.
 
 2. Copie a pasta do modulo na Raiz da sua loja ZenCart.
 
-<a name="setup"></a>
-## Configuração: ##
+## Configuração
 
 1. Na pagina de administração da sua loja, va até a opção **Modules > Payment**.
 
@@ -97,8 +83,7 @@ Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
   * **Live or Sandbox**: Habilite o modo sandbox para realizar pagamentos de test;
   * **Sort order of display**: Ordem de exibição do Mercado Pago;
 
-<a name="Suporte"></a>
-## Suporte: ##
+## Suporte
 
 Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento.
 Escreva para o nosso [formulário de apoio](/support) com as seguintes informações:

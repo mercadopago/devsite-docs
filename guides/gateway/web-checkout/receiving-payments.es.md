@@ -6,7 +6,7 @@ sites_supported:
 ---
 
 # Mercado Pago Gateway: Smart Checkout
-----[mla]----
+----[mla, mlb, mlc, mlm, mco, mlu]----
 > NOTE
 >
 > Pre-requisito
@@ -15,7 +15,7 @@ sites_supported:
 > Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Smart Checkout**
 ------------
 
-----[mlb,mlc,mlm,mpe,mco,mlu]----
+----[mpe]----
 > NOTE
 >
 > Pre-requisito
@@ -47,6 +47,6 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Smart C
 
 > **Modelo híbrido:** todavía no estamos soportando este modelo en Smart Checkout. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
 
-## Próximos pasos
+### Próximos pasos
 
 * [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/reconciliation)

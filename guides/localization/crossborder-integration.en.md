@@ -100,7 +100,7 @@ For the integration of Cross Border, the use of the Exchange Rate API will be es
 The Exchange Rate API is:
 
 ```
-https://api.mercadopago.com/v1/exchange_rates?from=USD&to=MXN&public_key=<PUBLIC_KEY>
+https://api.mercadopago.com/v1/exchange_rates?from=USD&to=[FAKER][CURRENCY][ACRONYM]&public_key=<PUBLIC_KEY>
 ```
 
 The answer you will get is similar to the following:
@@ -109,14 +109,14 @@ The answer you will get is similar to the following:
 {
   "creation_date": "2018-04-13T05:15:19.752-04:00",
   "currency_base": "USD",
-  "currency_quote": "MXN",
+  "currency_quote": "[FAKER][CURRENCY][ACRONYM]",
   "id": "95f77580-602a-4086-9cec-c3b5afad2c5f",
   "inv_rate": 0.05458033,
   "rate": 18.3216177
 }
 ```
 
-> The rate field is expressed in the currency corresponding to the 'to' of the API call. In this example, it is in MXN.
+> The rate field is expressed in the currency corresponding to the 'to' of the API call. In this example, it is in [FAKER][CURRENCY][ACRONYM].
 
 
 ## Basic Checkout Integration
@@ -150,7 +150,7 @@ $ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOK
 		{
 			"id": "item-ID-1234",
 			"title": "Title of what you are paying for. It will be displayed in the payment process.",
-			"currency_id": "ARS",
+			"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
 			"category_id": "others",
@@ -225,7 +225,7 @@ This is an example of the response to the creation of the payment preference:
             "title": "Title of what you are paying for. It will be displayed in the payment process.",
             "description": "Item description",
             "category_id": "others",
-            "currency_id": "MXN",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "quantity": 1,
             "unit_price": 100
         }
@@ -410,7 +410,7 @@ This is an example of the payment response:
   "call_for_authorize_id": null,
   "risk_execution_id": 14940341296,
   "api_version": "2",
-  "currency_id": "MXN",
+  "currency_id": "[FAKER][CURRENCY][ACRONYM]",
   "sponsor_id": null,
   "deduction_schema": null,
   "payment_method_id": "debvisa",
@@ -566,7 +566,7 @@ This is an example of the payment response:
     "payment_type_id": "credit_card",
     "status": "approved",
     "status_detail": "accredited",
-    "currency_id": "MXN",
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
     "description": "Title of what you are paying for",
     "live_mode": true,
     "sponsor_id": null,
@@ -834,7 +834,7 @@ This is an example of the payment response:
     "payment_type_id": "credit_card",
     "status": "approved",
     "status_detail": "accredited",
-    "currency_id": "MXN",
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
     "description": "Title of what you are paying for",
     "live_mode": true,
     "sponsor_id": null,
@@ -962,7 +962,7 @@ This is an example of the payment response:
 
 
 ## Payments Refund
-The refund of a payment is made in the local currency of the operation (for example, MXN) under the same conversion of the original payment.
+The refund of a payment is made in the local currency of the operation (for example, [FAKER][CURRENCY][ACRONYM]) under the same conversion of the original payment.
 
 For this, it will be necessary for you to search for the payment by means of the `payment_id` and obtain the` currency_conversion`.
 

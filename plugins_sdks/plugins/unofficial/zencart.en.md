@@ -1,15 +1,6 @@
 # ZenCart - Mercado Pago Module (v1.5.x)
 
-* [Features](#features)
-* [Available versions](#available_versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Setup](#setup)
-* [Support](#Support)
-
-
-<a name="features"></a>
-## Features: ##
+## Features
 
 The module of Mercado Pago to Zencart is integrated with the feature and payment solutions:
 
@@ -17,17 +8,13 @@ The module of Mercado Pago to Zencart is integrated with the feature and payment
     * Split payments (Two cards)
     * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 
-
-<a name="available_versions"></a>
-## Available versions: ##
+## Available versions
 
 Plugin Version | Status | Compatible Versions
 -------------- | ------ | -------------------
 v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
-
-<a name="requirements"></a>
-## Requirements: ##
+## Requirements
 
 **PHP**
 
@@ -38,15 +25,13 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 * MySQL v5+
 
-<a name="installation"></a>
-## Installation: ##
+## Installation
 
 1. Download Mercado Pago module.
 
 2. Copy the module folder to your ZenCart ROOT installation.
 
-<a name="setup"></a>
-## Setup MercadoPago: ##
+## Setup MercadoPago
 
 1. On your store administration, go to **Modules > Payment**.
 
@@ -97,8 +82,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
   * **Live or Sandbox**: Test your payments in Mercado Pago sandbox environment;
   * **Sort order of display**: Complete the display order of MercadoPago
 
-<a name="Support"></a>
-## Support: ##
+## Support:
 
 If you have any questions, problems or errors we have a support channel. Write us at our [support form](/support) with the following information:
 

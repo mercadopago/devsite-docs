@@ -57,7 +57,7 @@ La integración con Mercado Pago adicionalmente te permite utilizar el modelo h�
 Los costos de servicio en el **Modelo Gateway** son negociados uno a uno.
 El costo dependerá según el volumen mensual operado del vendedor.
 
-## Próximos pasos
+### Próximos pasos
 
 * [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/configuration) en el backoffice de Mercado Pago
 * [Integrá el Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway

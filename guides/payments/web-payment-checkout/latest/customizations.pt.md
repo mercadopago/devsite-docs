@@ -2,25 +2,18 @@
 sites_supported:
   - mlb
   - mla
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Customizações
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Esquema redirect](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_esquema_redirect)
->
-> [Cores](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_cores)
->
-> [Botões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations#bookmark_botões)
 
 ## Esquema redirect
 
-O Smart Checkout redirect permite alterar seu esquema de abertura.
+O Smart Checkout permite alterar seu esquema de abertura.
 
 Os esquemas disponíveis atualmente são:
 
@@ -29,7 +22,7 @@ Os esquemas disponíveis atualmente são:
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
-Para integrar o esquema redirect, substitua o botão de pagamento que fez na integração básica pelo seguinte snippet:
+Para integrar o esquema de redirecionamento, substitua o botão de pagamento que você fez na integração básica por este novo e adicione o link do Web Checkout ao seu site no local em que deseja que ele apareça.
 
 [[[
 ```php

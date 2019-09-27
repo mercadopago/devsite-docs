@@ -1,10 +1,19 @@
 # Notificações IPN
 
+----[mla, mlb, mlc, mlm, mco, mlu]----
+> WARNING
+>
+> Pré-requisitos
+>
+> * Possuir o [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implementado.
+------------
+----[mpe]----
 > WARNING
 >
 > Pré-requisitos
 >
 > * Possuir o [Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction) implementado.
+------------
 
 O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 

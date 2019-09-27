@@ -2,25 +2,27 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Otras funcionalidades
 
-> INDEX
->
-> En esta página
->
->
->
-> [Ejemplo de una preferencia completa](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
->
-> [Atributos para la preferencia](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
 
 Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
 
+----[mla, mlb]----
 Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+------------
+----[mlm, mlc, mlu, mco]----
+Si ofreces compras de montos bajos, por ejemplo, puedes [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+------------
 
 ## Ejemplo de una preferencia completa
+
+----[mlm, mla, mlb, mlc, mlu]----
 
 ```json
 {
@@ -28,7 +30,7 @@ Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos t
         {
             "id": "item-ID-1234",
             "title": "Mi producto",
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
             "description": "Descripción del Item",
             "category_id": "art",
@@ -81,20 +83,118 @@ Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos t
 }
 ```
 
+------------
+----[mco]----
+
+ ```json
+{
+	"items": [
+		{
+			"id": "item-ID-1234",
+			"title": "Title of what you are paying for. It will be displayed in the payment process.",
+			"currency_id": "CLP",
+			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
+			"description": "Item description",
+			"category_id": "art", // Available categories at https://api.mercadopago.com/item_categories
+			"quantity": 1,
+			"unit_price": 100
+		}
+	],
+	"payer": {
+		"name": "user-name",
+		"surname": "user-surname",
+		"email": "user@email.com",
+		"date_created": "2015-06-02T12:58:41.425-04:00",
+		"phone": {
+			"area_code": "11",
+			"number": "4444-4444"
+		},
+		"identification": {
+			"type": "RUT", // Available ID types at https://api.mercadopago.com/v1/identification_types
+			"number": "12345678"
+		},
+		"address": {
+			"street_name": "Street",
+			"street_number": 123,
+			"zip_code": "5700"
+		}
+	},
+	"back_urls": {
+		"success": "https://www.success.com",
+		"failure": "http://www.failure.com",
+		"pending": "http://www.pending.com"
+	},
+	"auto_return": "approved",
+	"payment_methods": {
+		"excluded_payment_methods": [
+			{
+				"id": "master"
+			}
+		],
+		"excluded_payment_types": [
+			{
+				"id": "ticket"
+			}
+		],
+		"installments": 12,
+		"default_payment_method_id": null,
+		"default_installments": null
+	},
+	"shipments": {
+		"receiver_address": {
+			"zip_code": "5700",
+			"street_number": 123,
+			"street_name": "Street",
+			"floor": 4,
+			"apartment": "C"
+		}
+	},
+	"notification_url": "https://www.your-site.com/ipn",
+	"external_reference": "Reference_1234",
+	"expires": true,
+	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
+	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+	"taxes": [
+		{
+			"type": "IVA",
+			"value": 16
+		}
+	]
+}
+ ```
+------------
+
 ## Atributos para la preferencia
 
 ### Definición de medios de pago
 
+----[mla, mco, mlb, mlu, mlc]----
 Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
 También se puede definir un medio de pago para que aparezca por defecto o la cantidad de cuotas máximas a ofrecer.
+------------
+----[mlm]----
+Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
+También se puede definir un medio de pago para que aparezca por defecto o la cantidad de mensualidades máximas a ofrecer.
+------------
 
 
+----[mla, mco, mlb, mlu, mlc]----
 Atributo | Descripción
------------- | -------------
+------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
 _`excluded_payment_methods`_ | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
 _`excluded_payment_types`_ | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
+------------
+
+----[mlm]----
+Atributo | Descripción
+------ | -----
+_`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
+_`excluded_payment_methods`_ | Método que excluye por medio de pago específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de medio de pago: efectivo, tarjetas de crédito o débito.
+_`installments`_ | Método que define la cantidad de mensualidades máximas a ofrecer.
+------------
 
 [[[
 ```php
@@ -176,7 +276,31 @@ paymentmethods.Installments = 12;
 ```
 ]]]
 
-## Modo binario
+----[mco]----
+### IVA diferenciado
+
+ Puedes modificar el valor del impuesto para la Dirección de Impuestos y Aduanas Nacionales (DIAN) que aplique según el producto o servicio que ofrezcas. Si no diferencias este valor, se aplicará por defecto el 19%.
+
+ Atributo | Descripción
+---------| -----------
+_`type`_ | Identificador del impuesto. Solo se admiten los valores IVA e INC.
+_`value`_ | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero.
+
+ ```json
+===
+Usa el atributo taxes para definir el valor que corresponda
+===
+"taxes": [
+	{
+		"type": "IVA",
+		"value": 16
+	}
+]
+```
+
+------------
+
+### Modo binario
 
 Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago solo puede resultar aprobado o rechazado.
 
@@ -188,7 +312,7 @@ Para activarlo, solo debes configurar como `true` el atributo _`binary_mode`_ de
 "binary_mode": true
 ```
 
-## Vigencia de preferencias
+### Vigencia de preferencias
 
 Si se quiere habilitar el pago de una preferencia con un tiempo de duración determinado, se puede activar un periodo de vigencia o concluir directamente con los siguientes atributos:
 
@@ -198,7 +322,7 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-## Sponsor ID
+### Sponsor ID
 
 El atributo `sponsor_id` es un identificador del desarrollador o compañía de software que realiza la integración del  Smart Checkout, este dato es visible en la preferencia y en el pago.
 
@@ -206,17 +330,7 @@ El atributo `sponsor_id` es un identificador del desarrollador o compañía de s
 "sponsor_id": 123456789
 ```
 
-## Pagos con dos tarjetas de crédito
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
-Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
-Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank"> opciones de negocio</a> y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
-
-
-## Múltiples ítems
+### Múltiples ítems
 
 Si se necesita crear una preferencia para más de un ítems, solo debes agregarlos como una lista dentro de _items_.
 Ten en cuenta que el monto total de la preferencia será la suma de la cantidad por el precio unitario de cada ítem.
@@ -248,11 +362,11 @@ var preference = {
   items: [
       { title: 'Mi producto',
       quantity: 1,
-      currency_id: 'ARS',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 75.56 },
 	{ title: 'Mi producto 2’,
       quantity: 2,
-      currency_id: 'ARS',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 96.56 }
     ]
 };
@@ -273,14 +387,14 @@ Item item1 = new Item();
 item1.setId("1234")
     .setTitle("Producto 1")
     .setQuantity(2)
-    .setCurrencyId("ARS")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 75.56);
 
 Item item2 = new Item();
 item2.setId("12")
     .setTitle("Producto 2")
     .setQuantity(1)
-    .setCurrencyId("ARS")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 75.56);
 
 preference.appendItem(item1, item2);
@@ -315,14 +429,14 @@ reference.Items.Add(
   {
     Title = "Mi producto",
     Quantity = 1,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   },
   new Item()
   {
     Title = "Mi producto2”,
     Quantity = 2,
-    CurrencyId = CurrencyId.ARS,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)96.56
   }
 );
@@ -353,6 +467,19 @@ curl -X POST \
 ]]]
 
 ---
+
+----[mla, mlb]----
+
+## Pagos con dos tarjetas de crédito
+
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
+
+Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
+Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank"> opciones de negocio</a> y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
+------------
 
 ### Próximos pasos
 

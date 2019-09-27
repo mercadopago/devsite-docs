@@ -45,6 +45,6 @@ Além disso, quando o pagamento com cartão de crédito é aprovado, deverá mos
 
 Se permite fazer devoluções de pagamentos, deixe claro que poderão ser feitas em até 90 dias depois da aprovação do pagamento.
 
-## Termos e condições
+### Termos e condições
 
 Deve disponibilizar uma politica de termos e condições, na qual especifique que se responsibiliza por todos os dados que estão sendo inseridos no seu site.

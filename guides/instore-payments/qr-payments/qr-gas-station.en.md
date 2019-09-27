@@ -83,7 +83,7 @@ Within to the previous concepts, you must also know the objects with which we go
    "items":[
       {
          "title":" $500.00 Premium",
-         "currency_id": "MXN",
+         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
          "description":"$500.00 Premium",
          "quantity": 1.0,
          "unit_price": 500.00
@@ -281,6 +281,6 @@ Consult the [test data](https://www.mercadopago.com.ar/developers/es/guides/paym
 
 [Here](https://www.mercadopago.com.mx/developers/en/guides/payments/api/handling-responses/) you can find our error dictionary.
 
-## Reports
+### Reports
 
 Consult the [complete documentation](https://www.mercadopago.com.ar/ayuda/herramienta-conciliacion_2116) about the Mercado Pago reports.
