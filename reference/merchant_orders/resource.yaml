@@ -779,21 +779,21 @@ properties:
         es: Orden sin ningún pago o con todos los pagos "rejected" o "cancelled".
         pt: Order without payments or with all payments "rejected" or "cancelled".
     - reverted:
-        en: Order with all payments "refunded" o "chargeback".
+        en: Order with all payments "refunded" or "chargeback".
         es: Orden con todos los pagos en "refunded" o "chargeback".
-        pt: Order with all payments "refunded" o "chargeback".
+        pt: Order with all payments "refunded" or "chargeback".
     - paid:
-        en: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the total amount of the MO.
-        es: Orden con la suma de todos los pagos "approved", "chargeback" o "in_mediation" cubre el monto total de la MO.
-        pt: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the total amount of the MO.
+        en: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
+        es: Orden con la suma de todos los pagos "approved", "chargeback" o "in_mediation" cubre el monto total de la orden.
+        pt: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
     - partially_reverted:
         en: Order with at least one payment "refunded" or "chargeback".
         es: Orden con al menos un pago en "refunded" o "chargeback".
         pt: Order with at least one payment "refunded" or "chargeback".
     - partially_paid:
-        en: Order with at least one payment "approved" and not covering MO total amount.
-        es: Orden con al menos un pago en "approved" y no cubre el total de la MO.
-        pt: Order with at least one payment "approved" and not covering MO total amount.
+        en: Order with at least one payment "approved" and not covering order total amount.
+        es: Orden con al menos un pago en "approved" y no cubre el total de la orden.
+        pt: Order with at least one payment "approved" and not covering order total amount.
     - payment_in_process:
         en: Order with payments "in_process", "pending" or "authorized".
         es: Orden con pagos "in_process", "pending" or "authorized".
