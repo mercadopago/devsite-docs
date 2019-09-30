@@ -9,18 +9,16 @@ errors:
 - 400 BAD_REQUEST:
   - 'INVALID_USER_ID':
       description:
-        en: user_id must be number.
-        es: El usuario debe ser un número.
-        pt: 
+        en: USER_ID must be number.
+        es: El USER_ID debe ser un número.
+        pt: O USER_ID deve ser um número.
   - 'INVALID_STORE_ID':
       description:
-        en: store_id must be number.
-        es: El store_id debe ser un número.
-        pt:          
+        en: STORE_ID must be number.
+        es: El STORE_ID debe ser un número.
+        pt: O STORE_ID deve ser um número.
   - 'UNKNOWN_FIELD':
       description:
-        en: 
-        es: Campo desconocido
-        pt: 
-
-
+        en: Unknow field.
+        es: Campo desconocido.
+        pt: Campo desconhecido.

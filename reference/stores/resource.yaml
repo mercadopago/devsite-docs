@@ -4,91 +4,91 @@ properties:
 - id:
     type: String
     description:
-      en: 
-      es: Id de la Sucursal.
-      pt: 
+      en: Store identifier, numerical and self-generated.
+      es: Identificador de la Sucursal, numérico y autogenerado.
+      pt: Identificador do loja, numérico e gerado automaticamente.
 - name:
     type: String
     description:
-      en: 
+      en: Store name.
       es: Nombre de la Sucursal.
-      pt: 
+      pt: Nome da loja.
 - business_hours:
     type: String
     description:
-      en: 
-      es: String de horarios. Se dividen por día de la semana y cada uno puede tener hasta dos horarios de entrada y dos de salida.
-      pt: 
+      en: Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.
+      es: Horario de trabajo. Se dividen por día de la semana y se admite hasta dos horarios de apertura y cierre por día.
+      pt: Horário de trabalho. Eles são divididos por dia da semana e são permitidos até dois horários de abertura e fechamento por dia.
 - external_id:
     type: String
     description:
-      en: Unique identifier of Store.
-      es: Identificador único de la Sucursal.
-      pt: 
+      en: Unique identifier of the store defined by integrator system.
+      es: Identificador único de la Sucursal definido por el integrador.
+      pt: Identificador único da loja definido pelo sistema integrador.  
 - user_id:
     type: String
     description:
-      en: User Id.
-      es: Id del usuario.
-      pt:  
+      en: User identifier.
+      es: Identificador del usuario.
+      pt: Identificador do usuário.
 - store_id:
     type: String
     description:
-      en: Store Id.
-      es: Id de la sucursal.
-      pt:     
+      en: Store identifier.
+      es: Identificador de la Sucursal.
+      pt: Identificador do loja.
 - location:
     type: Object
     description:
       en: Store location.
       es: Ubicación de la Sucursal.
-      pt: 
+      pt: Localização da Loja.
     properties:
     - zip_code:
         type: String
         description:
           en: Zip code.
           es: Código postal.
-          pt: 
+          pt: Código postal.
     - street_number:
         type: Integer
         description:
           en: Number.
-          es: Número
-          pt: 
+          es: Número.
+          pt: Número.
     - street_name:
         type: String
         description:
           en: Street name.
           es: Calle.
-          pt: 
+          pt: Rua.
     - city_name:
         type: String
         description:
           en: City.
           es: Ciudad.
-          pt: 
+          pt: Cidade.
     - state_name:
         type: Object
         description:
           en: State.
           es: Provincia.
-          pt: 
+          pt: Estado.
     - latitude:
         type: String
         description:
           en: Latitude.
           es: Latitud.
-          pt: 
+          pt: Latitude.
     - logitude:
         type: String
         description:
           en: Longitude.
           es: Longitud.
-          pt: 
+          pt: Longitude.
     - reference:
         type: String
         description:
           en: Reference.
           es: Referencia.
-          pt: 
+          pt: Referência.

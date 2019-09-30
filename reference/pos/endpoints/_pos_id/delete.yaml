@@ -8,14 +8,12 @@ errors:
 - 400 BAD_REQUEST:
   - 'INVALID_POS_ID':
       description:
-        en: 
-        es: El id del POS indicado es inválido, tiene que ser numérico.
-        pt: 
+        en: The ID of the pos is invalid, it must be numeric.
+        es: El ID de la caja es inválido, tiene que ser numérico.
+        pt: O ID da caixa é inválido, deve ser numérico.
 - 404 NOT_FOUND:
   - '1':
       description:
-        en: 
-        es: Si no existe el POS para un id y user indicados.
-        pt: 
-
-
+        en: If there is no pos for the indicated ID and user.
+        es: Si no existe la caja para un ID y user indicados.
+        pt: Se não houver caixa para um ID e usuário indicados.

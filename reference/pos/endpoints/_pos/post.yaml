@@ -15,99 +15,99 @@ errors:
 - 400 BAD_REQUEST:
   - 'MISSING_BODY':
       description:
-        en: 
-        es: El body es requerido para modificar cajas.
-        pt: 
+        en: HTTP body is required to create pos.
+        es: El body HTTP es requerido para crear cajas.
+        pt: O corpo HTTP é necessário para criar caixas.
   - 'UNKNOWN_FIELD_EXCEPTION':
       description:
-        en: 
+        en: The indicated field is not allowed for this operation or is unknown.
         es: El campo indicado no se permite para esta operación o es desconocido.
-        pt: 
+        pt: O campo indicado não é permitido para esta operação ou é desconhecido.
   - 'POS_INVALID_NAME':
       description:
-        en: 
-        es: El name debe ser String.
-        pt: 
+        en: NAME must be String.
+        es: El NAME debe ser String.
+        pt: O NAME deve ser String.
   - 'POS_NAME_TOO_LONG':
       description:
-        en: 
-        es: El name debe ser menor a 45 caracteres.
-        pt: 
+        en: The NAME must be less than 45 characters.
+        es: El NAME debe ser menor a 45 caracteres.
+        pt: O campo NAME deve ter menos de 45 caracteres.
   - 'POS_INVALID_FIXED_AMOUNT':
       description:
-        en: 
-        es: El campo fixed_amount debe ser Boolean.
-        pt: 
+        en: FIXED_AMOUNT must be boolean.
+        es: El campo FIXED_AMOUNT debe ser Boolean.
+        pt: O FIXED_AMOUNT deve ser Boolean.
   - 'POS_INVALID_CATEGORY':
       description:
-        en: 
-        es: El campo category debe ser numérico.
-        pt:
+        en: CATEGORY must be numeric.
+        es: El campo CATEGORY debe ser numérico.
+        pt: O campo CATEGORY deve ser numérico.
   - 'POS_UNKNOWN_MCC':
       description:
-        en: 
-        es: El campo category debe ser uno válido para el site del usuario.
-        pt: 
+        en: The CATEGORY must be valid for the user's site.
+        es: El campo CATEGORY debe ser uno válido para el site del usuario.
+        pt: O CATEGORY deve ser válido para o site do usuário.
   - 'POS_INVALID_STORE_ID':
       description:
-        en: 
-        es: El campo store_id debe ser numérico.
-        pt: 
+        en: STORE_ID must be numeric.
+        es: El campo STORE_ID debe ser numérico.
+        pt: O campo STORE_ID deve ser numérico.
   - 'POS_INVALID_EXTERNAL_STORE_ID':
       description:
-        en: 
-        es: El campo external_store_id debe ser String.
-        pt: 
+        en: EXTERNAL_STORE_ID must be String.
+        es: El campo EXTERNAL_STORE_ID debe ser String.
+        pt: O EXTERNAL_STORE_ID deve ser String.
   - 'POS_EXTERNAL_STORE_ID_NOT_MATCH':
       description:
-        en: 
-        es: El campo external_store_id no hace referencia al store_id indicado.
-        pt: 
+        en: The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.
+        es: El campo EXTERNAL_STORE_ID no hace referencia al STORE_ID indicado.
+        pt: O EXTERNAL_STORE_ID não se refere ao STORE_ID indicado.
   - 'POS_INEXISTENT_EXTERNAL_STORE_ID':
       description:
-        en:
-        es: El campo external_store_id no hace referencia a ningún store existente.
-        pt: 
+        en: The EXTERNAL_STORE_ID does not refer to any existing store.
+        es: El campo EXTERNAL_STORE_ID no hace referencia a ningún sucursal existente.
+        pt: O EXTERNAL_STORE_ID não se refere a nenhuma loja existente.
   - 'POS_INVALID_EXTERNAL_ID':
       description:
-        en: 
-        es: El campo external_id debe ser alfanumérico, solo letras y números. Sin espacios ni guiones, ni caracteres especiales.
-        pt: 
+        en: The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.
+        es: El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios ni guiones, ni caracteres especiales.
+        pt: O EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços ou hífens ou caracteres especiais.
   - 'POS_EXTERNAL_ID_TOO_LONG':
       description:
-        en: 
-        es: El campo external_id debe ser menor a 40 caracteres.
-        pt: 
+        en: The EXTERNAL_ID must be less than 40 characters.
+        es: El campo EXTERNAL_ID debe ser menor a 40 caracteres.
+        pt: O campo EXTERNAL_ID deve ter menos de 40 caracteres.
   - 'POS_INVALID_URL':
       description:
-        en: 
-        es: El campo url debe ser String, y tener el formato de una url válida.
-        pt: 
+        en: The URL must be String and must have the format of a valid url.
+        es: El campo URL debe ser String, y tener el formato de una url válida.
+        pt: O URL deve ser String e ter o formato de um URL válido.
   - 'POS_URL_TOO_LONG':
       description:
-        en: 
-        es: El campo url debe ser menor a 300 caracteres.
-        pt: 
+        en: The URL must be less than 300 characters.
+        es: El campo URL debe ser menor a 300 caracteres.
+        pt: O campo URL deve ter menos de 40 caracteres.
   - 'POS_FIXED_AMOUNT_FALSE':
       description:
-        en: 
-        es: Si se indica el campo url el campo fixed_amount debe ser true. No soportamos la modalidad de monto abierto en este caso.
-        pt: 
+        en: If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.
+        es: Si se indica el campo URL, el campo FIXED_AMOUNT debe ser true. No soportamos la modalidad de monto abierto en este caso.
+        pt: Se o campo URL for indicado, o campo FIXED_AMOUNT deve ser true.
 - 403 FORBIDDEN:
   - '1':
       description:
-        en: 
-        es: Si estás usando el campo url, el host de la misma tiene que estar whitelisteado en nuestra aplicación. Si no lo está, recibirás este error. Por favor contactá a nuestro equipo de integraciones.
-        pt: 
+        en: If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.
+        es: Si estás usando el campo URL, el host de la misma tiene que estar habilitado por Mercado Pago. Si no lo está, recibirás este error. Por favor contactá a tu asesor técnico asignado.
+        pt: Se você estiver usando o campo URL, o host deve ser ativado pelo Mercado Pago. Caso contrário, você receberá este erro. Entre em contato com o consultor técnico designado.
 - 404 NOT_FOUND:
   - '1':
       description:
-        en: 
-        es: Si no existe el POS para un id y user indicados.
-        pt:        
+        en: If the POS does not exist for an indicated ID or EXTERNAL_ID and user.
+        es: Si no existe el POS para un ID o EXTERNAL_ID y user indicados.
+        pt: Se o caixa não existir para um ID indicado ou EXTERNAL_ID e usuário.       
 - 409 CONFLICT:
   - '1':
       description:
-        en: 
-        es: Ya existe una caja con el mismo external_id
-        pt: 
+        en: A pos with the same EXTERNAL_ID already exists.
+        es: Ya existe una caja con el mismo EXTERNAL_ID.
+        pt: Uma caixa com o mesmo EXTERNAL_ID já existe.

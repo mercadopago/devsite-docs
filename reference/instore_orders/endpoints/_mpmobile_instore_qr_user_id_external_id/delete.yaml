@@ -9,16 +9,16 @@ errors:
 - 400 BAD_REQUEST:
   - invalid_collector_id:
       description:
-        en: collector_id must be a number.
-        es: collector_id debe ser un número.
-        pt: collector_id must be a number.
+        en: COLLECTOR_ID must be a number.
+        es: COLLECTOR_ID debe ser un número.
+        pt: COLLECTOR_ID deve ser um número.
   - invalid_collector_id:
       description:
-        en: collector_id invalid.
-        es: collector_id inválido.
-        pt: collector_id invalid.
+        en: COLLECTOR_ID invalid.
+        es: COLLECTOR_ID inválido.
+        pt: COLLECTOR_ID inválido.
   - invalid_access_token:
       description:
-        en: access denied
+        en: access denied.
         es: Acceso denegado.
-        pt: access denied
+        pt: Acesso negado.

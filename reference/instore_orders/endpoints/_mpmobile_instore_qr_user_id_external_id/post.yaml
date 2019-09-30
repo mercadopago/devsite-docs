@@ -16,57 +16,57 @@ errors:
       description:
         en: collector_id must be a number.
         es: collector_id debe ser un número.
-        pt: collector_id must be a number.
+        pt: collector_id deve ser um número.
   - invalid_collector_id:
       description:
         en: collector_id invalid.
         es: collector_id inválido.
-        pt: collector_id invalid.
+        pt: collector_id inválido.
   - invalid_sponsor_id:
       description:
         en: sponsor_id not found.
         es: No se ha encontrado el sponsor_id.
-        pt: sponsor_id not found.
+        pt: O sponsor_id não foi encontrado.
   - invalid_sponsor_id:
       description:
         en: sponsor_id must be a number
         es: sponsor_id debe ser un número.
-        pt: sponsor_id must be a number
+        pt: sponsor_id deve ser um número.
   - invalid_sponsor_id:
       description:
         en: sponsor_id should be different than collector_id.
         es: El parámetro sponsor_id debe ser distinto del parámetro collector_id.
-        pt: sponsor_id should be different than collector_id.
+        pt: O parâmetro sponsor_id deve ser diferente do parâmetro collector_id.
   - invalid_sponsor_id:
       description:
         en: sponsor_id site must be the same as collector_id.
         es: El site del parámetro sponsor_id debe ser el mismo que el parámetro collector_id.
-        pt: sponsor_id site must be the same as collector_id.
+        pt: O site do parâmetro sponsor_id deve ser o mesmo que o parâmetro collector_id.
   - invalid_sponsor_id:
       description:
         en: sponsor_id didn't accept MercadoPago's Terms and Conditions.
         es: El sponsor_id no aceptó los términos y condiciones de Mercado Pago.
-        pt: sponsor_id didn't accept MercadoPago's Terms and Conditions.
+        pt: O sponsor_id não aceitou os termos e condições do Mercado Pago.
   - invalid_sponsor_id:
       description:
         en: sponsor_id is not an active user.
         es: El sponsor_id no es un usuario activo.
-        pt: sponsor_id is not an active user.
+        pt: O sponsor_id não é um usuário ativo.
   - invalid_items:
       description:
-        en: amount cannot be paid with Mercado Pago.
+        en: The amount cannot be paid with Mercado Pago.
         es: El monto no puede ser pagado con Mercado Pago.
-        pt: amount cannot be paid with Mercado Pago.
+        pt: O valor não pode ser pago com o Mercado Pago.
   - invalid_items:
       description:
-        en: items needed.
+        en: Items needed.
         es: ítems requeridos.
-        pt: items needed.
+        pt: itens obrigatórios.
   - invalid_items:
       description:
-        en: items invalid. Wrong format
+        en: Invalid items, format error.
         es: ítems inválidos, error de formato.
-        pt: items invalid. Wrong format
+        pt: Itens inválidos, erro de formato.
   - invalid_items:
       description:
         en: currency_id needed.
@@ -79,31 +79,31 @@ errors:
         pt: currency_id invalid.
   - invalid_items:
       description:
-        en: quantity needed.
+        en: Quantity is needed.
         es: El parámetro quantity es requerido.
         pt: quantity needed.
   - invalid_items:
       description:
         en: quantity must be a number.
         es: El parámetro quantity debe ser un número.
-        pt: quantity must be a number.
+        pt: O parâmetro de quantidade é obrigatório.
   - invalid_items:
       description:
-        en: unit_price needed.
+        en: Unit_price is needed.
         es: El parámetro unit_price es requerido.
-        pt: unit_price needed.
+        pt: O parâmetro unit_price é obrigatório.
   - invalid_items:
       description:
         en: unit_price must be a number.
         es: unit_price debe ser un número.
-        pt: unit_price must be a number.
+        pt: unit_price deve ser um número.
   - invalid_items:
       description:
         en: unit_price invalid.
         es: unit_price inválido.
-        pt: unit_price invalid.
+        pt: Unit_price inválido.
   - invalid_access_token:
       description:
-        en: access denied
+        en: Access denied.
         es: Acceso denegado.
-        pt: access denied
+        pt: Acesso negado.

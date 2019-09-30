@@ -4,46 +4,46 @@ properties:
 - user_id:
     type: String
     description:
-      en: 
+      en: User identifier.
       es: Identificador del usuario.
-      pt:  
+      pt: Identificador do usuário.
 - external_id:
     type: String
     description:
-      en: 
+      en: Unique identifier of the point of sale defined by integrator system.
       es: Identificador único de la caja/punto de venta, definido por el integrador. 
-      pt:       
+      pt: Identificador único do ponto de venda definido pelo sistema integrador.      
 - external_reference:
     type: String(256)
     description:
-      en: Reference you can synchronize with your payment system.
-      es: Código alfanumérico definido por el integrador para asociar el pago realizado hecho con la orden. Generalmente es el número de la orden.
-      pt: Referência que pode sincronizar com seu sistema de pagamentos.
+      en: Reference you can synchronize with your sale system.
+      es: Referencia que puede sincronizar con su sistema de venta.
+      pt: Referência que pode sincronizar com seu sistema de vendas.
 - notification_url:
     type: String(500)
     description:
-      en: URL where you'd like to receive a payment notification.
-      es: URL a la cual se enviará la notificación de pago.
-      pt: URL em que você gostaria de receber uma notificação de status de pagamento.
+      en: URL where you'd like to receive a payment or merchant_order notification.
+      es: URL a la cual se enviará la notificación de pago o merchant_order.
+      pt: URL em que você gostaria de receber uma notificação de pagamento ou merchant_order.
 - sponsor_id:
     type: String
     description:
-      en: Sponsor ID in Mercado Pago.
-      es: COLLECTOR_ID de la cuenta de Mercado Pago del integrador.
-      pt: Sponsor ID in Mercado Pago.
+      en: Mercado Pago's USER_ID of the integrator system.
+      es: USER_ID de la cuenta de Mercado Pago del sistema integrador.
+      pt: USER_ID de conta de  Mercado Pago do sistema integrador. 
 - items:
     type: Object
     description:
-      en: items information.
+      en: Information on the products involved in the order.
       es: Información de los productos involucrados en la orden.
-      pt: Informação do item.
+      pt: Informações sobre os produtos envolvidos no ordem.
     properties:
     - id:
         type: String
         description:
           en: Item id.
           es: Código del producto.
-          pt: Id do anúncio.
+          pt: Código do produto.
     - title:
         type: String
         description:
@@ -53,65 +53,59 @@ properties:
     - currency_id:
         type: String(3)
         description:
-          en: ID of the currency used in the item price.
+          en: Currency identifier in ISO_4217 format.
           es: Identificador de moneda en formato ISO_4217.
-          pt: Identificador da moeda utilizada no preço do item.
+          pt: Identificador de moeda no formato ISO_4217.
           enum:
             - ARS:
                 en: Argentine peso.
                 es: Peso argentino.
-                pt: Argentine peso.
+                pt: Peso argentino.
             - BRL:
                 en: Brasil real.
                 es: Real brasilero.
-                pt: Brasil real.
+                pt: Real brasileiro.
             - CLP:
                 en: Chilean peso.
                 es: Peso chileno.
-                pt: Chilean peso.
+                pt: Peso chileno.
             - MXN:
                 en: Mexican peso.
                 es: Peso mexicano.
-                pt: Mexican peso.
+                pt: Peso mexicano.
             - COP:
                 en: Colombian peso.
                 es: Peso colombiano.
-                pt: Colombian peso.
+                pt: Peso colombiano.
             - PEN:
                 en: Peruvian sol.
                 es: Sol peruano.
-                pt: Peruvian sol.
+                pt: Sol peruano.
             - UYU:
                 en: Uruguayan peso.
                 es: Peso uruguayo.
-                pt: Uruguayan peso.
+                pt: Peso uruguaio.
     - unit_price:
         type: Float
         description:
-          en: Item unit price.
+          en: Unit price of the item (maximum 2 decimals).
           es: Precio unitario del producto (máximo 2 decimales).
-          pt: Preço unitário do item. 
+          pt: Preço unitário do produto (máximo de 2 decimais).
     - quantity:
         type: Integer
         description:
-          en: Total amount paid by the buyer.
+          en: Item quantity.
           es: Cantidad de producto.
-          pt: Montante total pago pelo comprador.                         
+          pt: Quantidade do produto.                        
     - description:
         type: String
         description:
           en: Item description.
           es: Descripción del producto.
-          pt: Descrição do anúncio.
+          pt: Descrição do produto.
     - picture_url:
         type: String
         description:
-          en: Item picture URL.
+          en: Item image URL.
           es: URL de imagen del producto.
-          pt: URL da imagem do anúncio.
-
-
-
-
-
-
+          pt: URL da imagem do produto.

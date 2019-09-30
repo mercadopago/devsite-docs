@@ -9,6 +9,6 @@ errors:
 - 400 BAD_REQUEST:
   - 'INVALID_STORE_ID':
       description:
-        en: invalid_store_id.
-        es: store_id debe ser valido.
-        pt:  
+        en: Invalid STORE_ID.
+        es: STORE_ID debe ser valido.
+        pt: STORE_ID deve ser válido.

@@ -4,69 +4,57 @@ properties:
 - id:
     type: String
     description:
-      en: 
+      en: POS identifier, numerical and self-generated.
       es: Identificador único de la caja, numérico y autogenerado.
-      pt: 
+      pt: Identificador exclusivo da caixa, numérico e gerado automaticamente.
 - name:
     type: String
     description:
-      en: 
-      es: Nombre descriptivo de la caja.
-      pt: 
+      en: Name of the POS.
+      es: Nombre de la caja.
+      pt: Nome da caixa.
 - fixed_amount:
     type: Boolean
     description:
-      en: 
-      es: Identifica si se puede pagar con monto cerrado en esa caja.
-      pt: 
+      en: Define if the customer can insert the amount to be paid.
+      es: Determina si el cliente puede insertar el monto a pagar.
+      pt: Determine se o cliente pode inserir o valor a ser pago.
     enum:
     - true:
-        en: 
-        es: Monto cerrado. El usuario no podrá elegir el monto a pagar sino que deberá esperar la generación de una orden.
-        pt: 
+        en: The customer cannot choose the amount to be paid and must wait for the generation of an order.
+        es: El cliente no podrá elegir el monto a pagar sino que deberá esperar la generación de una orden.
+        pt: O cliente não pode escolher o valor a ser pago, deve aguardar a geração de um pedido.
     - false:
-        en: 
-        es: Monto abierto. Al escanear, se le muestra al usuario un teclado numérico para ingresar el monto a pagar.
-        pt: 
+        en: After scanning the QR code of the POS, the customer enters the amount to be paid.
+        es: Luego de escanear el código QR de la caja, el cliente ingresa el monto a pagar.
+        pt: Depois de ler o código QR da caixa, o cliente digita o valor a ser pago.
 - category:
     type: Long
     description:
-      en: 
+      en: MCC code that indicates the category of the Point of Sale.
       es: Código MCC que indica el rubro del Punto de Venta.
-      pt: 
+      pt: Código MCC que indica o categoria do ponto de venda.
 - store_id:
     type: String
     description:
-      en: 
-      es: Id de la sucursal a la que pertenece el Punto de Venta.
-      pt:       
+      en: Store identifier to which the point of sale belongs.
+      es: Identificador de la sucursal a la que pertenece el Punto de Venta.
+      pt: Identificador da loja à qual o caixa pertence.      
 - external_store_id:
     type: String
     description:
-      en: 
-      es: Identificador externo de la Sucursal a la que pertenece el Punto de Venta.
-      pt: 
+      en: Unique identifier of the store to which the pos belongs defined by integrator system.
+      es: Identificador único de la sucursal a la cual pertenece la caja, definido por el integrador.
+      pt: Identificador único da loja a que a caixa pertence, definido pelo sistema integrador.    
 - external_id:
     type: String
     description:
-      en: 
-      es: Identificador único y externo de la caja, cómo el vendedor se refiere a ella.
-      pt:   
+      en: Unique identifier of the pos defined by integrator system.
+      es: Identificador único de la caja definido por el integrador.
+      pt: Identificador único da caixa definido pelo sistema integrador.   
 - url:
     type: String
     description:
-      en: 
-      es: URL para obtener la orden de venta de un integrador externo. Es opcional y se utiliza en el modelo desatendido.
-      pt: 
-- limit:
-    type: String
-    description:
-      en: 
-      es: Indica el límite máximo de stores a traer. Si no se indica el valor por defecto es 30, el máximo valor posible es 100.
-      pt: 
-- offset:
-    type: String
-    description:
-      en: 
-      es: Paginado, indica el valor desde el cual se quiere empezar a buscar. Ejemplo 50, incluirá la cajas desde la posición 51 en adelante.
-      pt: 
+      en: URL to get the order of the integrator system. It is optional and is used only in the disregarded integration model.
+      es: URL para obtener la orden del sistema integrador. Es opcional y se utiliza sólo en el modelo de integración desatendido.
+      pt: URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração autônoma.
