@@ -82,7 +82,7 @@ Além dos conceitos anteriores, você também deve conhecer os objetos com os qu
    "items":[
       {
          "title":" $500.00 de Premium",
-         "currency_id": "BRL",
+         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
          "description":"$500.00 de Premium",
          "quantity": 1.0,
          "unit_price": 500.00
@@ -285,6 +285,6 @@ Verifique os [dados de teste](https://www.mercadopago.com.br/developers/pt/guide
 
 [Aqui](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) você pode encontrar nosso dicionário de erros.
 
-## Relatórios
+### Relatórios
 
 Consulte a [documentação completa](https://www.mercadopago.com.ar/ayuda/herramienta-conciliacion_2116) sobre os relatórios do Mercado Pago.

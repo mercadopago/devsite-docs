@@ -1,11 +1,5 @@
 # WP-eCommerce
 
-* [System Requirements](#system-requirements)
-* [Features](#features)
-* [Installation](#installation)
-* [Instant Payment Notification Settings](#instant-payment-notification-settings)
-* [Upgrade](#upgrade)
-
 # System Requirements
 ### Platform Version
 * <a href="https://wordpress.org/download/">WordPress</a> 4.1 or greater

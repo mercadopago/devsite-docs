@@ -18,7 +18,7 @@
     "items": [
         {
             "id": "item-ID-1234",
-            "currency_id": "ARS",
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "title": "Practical Granite Shirt",
             "picture_url": "http://placehold.it/350x150",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies est sed elit interdum, quis consectetur libero mollis. Phasellus posuere sed eros vel volutpat.",

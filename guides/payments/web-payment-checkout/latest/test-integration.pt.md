@@ -2,25 +2,14 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Teste sua integração
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Como testar sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_como_testar_minha_integração)
->
-> [Como criar usuários](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_como_criar_usuários)
->
-> [Teste o fluxo de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_teste_o_fluxo_de_pagamento)
->
-> [Cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_cartões_de_teste)
->
-> [Começar a receber pagamentos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration#bookmark_começar_a_receber_pagamentos)
 
 
 ## Como testar minha integração
@@ -139,7 +128,7 @@ Ao terminar o formulário, certifique-se de que as credenciais na sua integraç�
 >
 > [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON
 >
 > Customizações
 >

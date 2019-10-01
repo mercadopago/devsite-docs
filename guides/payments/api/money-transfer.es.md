@@ -128,7 +128,7 @@ Por último recibirás una respuesta del pago como la siguiente:
     "payment_type_id": "account_money",
     "status": "approved",
     "status_detail": "accredited",
-    "currency_id": "ARS",
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
     "description": "Title of what you are paying for",
     "live_mode": true,
     "sponsor_id": null,

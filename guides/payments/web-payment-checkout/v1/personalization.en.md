@@ -2,7 +2,13 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlc
+  - mlm
 ---
+
+# Customization
 
 > WARNING
 >
@@ -12,9 +18,8 @@ sites_supported:
 >
 > Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
-# Customization
-
 In payment preferences, you can not only send information about the item to be paid, and the buyer’s, but also set the payment methods you do not want to accept, the return URL to your website after the payment, shipping options, etc.  
+
 
 ### Set payment types and methods
 
@@ -284,7 +289,7 @@ To summarize all of the above, the following JSON shows all the data that can be
 		{
 			"id": "item-ID-1234",
 			"title": "Title of what you are paying for. It will be displayed in the payment process.",
-			"currency_id": "CLP",
+			"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
 			"category_id": "art", // Available categories at https://api.mercadopago.com/item_categories

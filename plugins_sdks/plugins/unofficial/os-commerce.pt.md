@@ -1,14 +1,6 @@
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
 
-* [Funcionalidades](#features)
-* [Versões disponíveis](#available_versions)
-* [Requisitos](#requirements)
-* [Instalação](#installation)
-* [Configuração](#setup)
-* [Suporte](#Support)
-
-<a name="features"></a>
-## Funcionalidades: ##
+## Funcionalidades
 
 O módulo do Mercado Pago para o OsCommerce esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
@@ -16,16 +8,14 @@ O módulo do Mercado Pago para o OsCommerce esta integrado com as seguintes func
     * Pagamento com dois cartões
 
 
-<a name="available_versions"></a>
-## Versões disponíveis: ##
+## Versões disponíveis
 
 Versão do Plugin | Status | Versões compativéis
 -------------- | ------ | -------------------
 v2.2 | Deprecated (Old version) | osCommerce 2.2
 v2.3 | Stable (Current version) | osCommerce 2.3
 
-<a name="requirements"></a>
-## Requisitos: ##
+## Requisitos
 
 **PHP**
 
@@ -36,9 +26,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 * MySQL v3+ (MySQL v5+ recommended)
 
-
-<a name="installation"></a>
-## Instalação: ##
+## Instalação
 
 1. Faça o download do modulo do Mercado Pago:
     * osCommerce 2.2
@@ -46,9 +34,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 2. Copie a pasta do modulo na Raiz da sua loja OsCommerce.
 
-
-<a name="setup"></a>
-## Configuração: ##
+## Configuração
 
 1. Na pagina de administração da sua loja, va até a opção **Modules > Payment**.
 
@@ -116,8 +102,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 * Peru:
 	* **PEN** (Peruvian Sol)
 
-<a name="Suporte"></a>
-## Suporte: ##
+## Suporte
 
 Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento.
 Escreva para o nosso [formulário de apoio](/support) com as seguintes informações:

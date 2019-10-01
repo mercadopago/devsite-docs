@@ -1,15 +1,6 @@
 # WooCommerce
 
-
 ### Mercado Pago Module (WooCommerce 3.x)
-
-* [Introdução](#bookmark_introdução)
-* [Requisitos de instalação](#bookmark_requisitos_de_instalação)
-* [Instalação](#bookmark_instalação)
-* [Integração](#bookmark_integração)
-* [Configuração do módulo](#bookmark_configuração_do_módulo)
-* [Receber Pagamentos](#bookmark_receber_pagamentos)
-
 
 ## Introdução
 
@@ -22,10 +13,10 @@ Se você já usa o WooCommerce para criar sites de e-commerce no WordPress, um d
 Pense grande. Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro nível com a melhor experiência de compra:
 
 * Faça **promoções** e venda parcelado com o melhor **financiamento** possível
-* Principais **meios de pagamento** de cada país onde operamos 
+* Principais **meios de pagamento** de cada país onde operamos
 * **Compra em um clique:** lembramos os dados dos seus clientes, basta digitar o código de segurança do cartão
 * **Pagamento como visitante:** não excluímos ninguém, não é necessário que seus clientes abram uma conta no Mercado Pago
-* **Estorno** de pagamentos 
+* **Estorno** de pagamentos
 * **Cancelamento** de pagamentos pendentes
 * Recuse ou aceite pagamentos **de forma automática**
 * Conte com o **suporte oficial** do Mercado Pago
@@ -65,7 +56,7 @@ Você pode instalar o Mercado Pago no WordPress de duas formas:
 1. De forma automática, pela seção de “Plugins” do WordPress
   * Siga estas etapas para a instalação:
     * Acesse “Adicionar novo” e busque “WooCommerce Mercado Pago” entre a oferta de módulos do WordPress.
-    * Clique em Instalar e depois entre na seção “Plugins Instalados”. 
+    * Clique em Instalar e depois entre na seção “Plugins Instalados”.
     * Ative-o para começar a configurar o módulo na sua loja.
     * Pronto!
 
@@ -104,7 +95,7 @@ Insira as informações básicas sobre sua empresa para começar a configurar o 
 
 Coloque o checkout que você deseja usar para oferecer nossas opções de pagamento no gateway de compra.
 
-Quando você ativa o plug-in, a plataforma leva você para as Configurações do WooCommerce e, de lá, para a seção "Pagamentos", onde terá à sua disposição os tipos de checkout que oferecemos para sua loja virtual: Checkout Básico, Checkout Personalizado para pagamentos on-line e Check-out personalizado para pagamentos com boleto. 
+Quando você ativa o plug-in, a plataforma leva você para as Configurações do WooCommerce e, de lá, para a seção "Pagamentos", onde terá à sua disposição os tipos de checkout que oferecemos para sua loja virtual: Checkout Básico, Checkout Personalizado para pagamentos on-line e Check-out personalizado para pagamentos com boleto.
 
 ![Checkouts Mercado Pago](/images/woocommerce/br_woo_payments.png)
 
@@ -112,14 +103,14 @@ O checkout básico e checkout personalizado são excludentes um do outro. Portan
 
 Você deve tomar uma decisão para ativar as diferentes experiências de compra:
 
-* Você quer oferecer **todos os meios de pagamento** de uma forma pré-estabelecida? Ative e configure o checkout básico. 
-* Quer permitir **somente pagamentos com boleto?** Ative o checkout personalizado de pagamentos com boleto. 
+* Você quer oferecer **todos os meios de pagamento** de uma forma pré-estabelecida? Ative e configure o checkout básico.
+* Quer permitir **somente pagamentos com boleto?** Ative o checkout personalizado de pagamentos com boleto.
 * Você permitirá **pagamentos com cartão de crédito** sob medida? Ative o checkout personalizado de pagamentos on-line.
 * Quer oferecer **todos os meios de pagamento de forma personalizada?** Ative tanto o checkout personalizado para pagamentos on-line como o checkout personalizado para pagamentos com boleto.  
 
 Agora, revise as opções que todos os checkouts têm e configure cada campo, abaixo você encontrará o detalhe de cada um:
 
-|           |                                   | Checkout Básico para todos los medios de pago | Checkout Personalizado para pagos online | Checkout Personalizado para pagos en efectivo | 
+|           |                                   | Checkout Básico para todos los medios de pago | Checkout Personalizado para pagos online | Checkout Personalizado para pagos en efectivo |
 |-----------|-----------------------------------|-----------------------------------------------|------------------------------------------|-----------------------------------------------|
 | Básicas   | Ativar CHO                        | ✔                                             | ✔                                        | ✔                                             |
 |           | Meios de pagamento On             | ✔                                             | ✔                                        |                                               |
@@ -149,11 +140,11 @@ Como você viu no gráfico de comparação, os checkouts têm algumas configura�
 
 - Opções por compra com MP
 
-  - Você poderá configurar descontos e tarifas para seus compradores cada vez que pagarem com o Mercado Pago na sua loja virtual. 
-  
+  - Você poderá configurar descontos e tarifas para seus compradores cada vez que pagarem com o Mercado Pago na sua loja virtual.
+
  ![Desconto e comissão](/images/woocommerce/br_woo_comdesc.png)
 
-- Modo binário 
+- Modo binário
 
   - Algumas empresas, devido à sua lógica de negócios, podem precisar de um processo instantâneo de aprovação ou rejeição de pagamentos na experiência de compra, ou seja, evitar a instância de pagamento pendente.
   - Para operar dessa forma, você pode ativar o **modo binário** nas configurações avançadas e, assim, definir a aprovação ou rejeição de cada pagamento instantaneamente. Se você desativar o modo binário, poderá ter cobranças pendentes que estaremos analisando com nossa ferramenta de prevenção contra fraudes.
@@ -163,15 +154,15 @@ Revise os ajustes avançados próprios de cada checkout para não deixar nada pe
 Checkout básico para todos os meios de pagamento
 
 1. Experiência de pagamento
-  - Define como será a experiência de pagamento que seus clientes terão: se eles deixarão seu site para pagar. "Redirect" os levará para fora de sua loja para pagar no nosso portal de pagamento. A opção Modal abrirá o formulário de pagamento em sua loja virtual, sem sair dela para concluir o processo de compra. 
+  - Define como será a experiência de pagamento que seus clientes terão: se eles deixarão seu site para pagar. "Redirect" os levará para fora de sua loja para pagar no nosso portal de pagamento. A opção Modal abrirá o formulário de pagamento em sua loja virtual, sem sair dela para concluir o processo de compra.
 
 2. Voltar à loja
   - Aqui você poderá escolher se quer que seus compradores voltem para a sua loja. Se este for o caso, os levaremos diretamente quando o pagamento for concluído.  
 
 3. URLs configuráveis apenas no checkout básico
-  - de sucesso: Informe seus compradores cada vez que um pagamento for aprovado, levando-os a uma página que informe o resultado. É uma boa prática já que assim, você os passará confiança sobre a transação que acabam de fazer. A URL que você inserir neste campo cumprirá essa função. 
+  - de sucesso: Informe seus compradores cada vez que um pagamento for aprovado, levando-os a uma página que informe o resultado. É uma boa prática já que assim, você os passará confiança sobre a transação que acabam de fazer. A URL que você inserir neste campo cumprirá essa função.
   - de pagamento recusado: Igual que el punto anterior, pero para cuando las cosas no salen del todo bien. Crea una página que sirva para informar a tus compradores cuando un pago es rechazado y cuéntale qué pasos puede seguir en adelante. En este campo podrás insertarla.  
-  - de pagamento pendente: Insira a URL de uma página onde você informa seus compradores que têm um pago pendente o que isso significa: que o pago ainda não está confirmado. Você vai melhorar a experiência de compra sempre que der as informações corretas e manter seus compradores a par do processo. 
+  - de pagamento pendente: Insira a URL de uma página onde você informa seus compradores que têm um pago pendente o que isso significa: que o pago ainda não está confirmado. Você vai melhorar a experiência de compra sempre que der as informações corretas e manter seus compradores a par do processo.
 
 Checkout personalizado para pagamentos com cartão de crédito
 
@@ -188,13 +179,13 @@ Checkout personalizado para pagos en efectivo
 
 #### **2. Teste o módulo**
 
-Faça testes até ter certeza de que está tudo em ordem. 
+Faça testes até ter certeza de que está tudo em ordem.
 
 * Simule pagamentos como se você fosse um dos seus clientes comprando no site.
-* Certifique-se de que o fluxo funcione corretamente e que seja fácil de usar. 
-* Viu que está tudo em ordem? Desactive o modo de testes e comece a receber pagamentos reais! 
+* Certifique-se de que o fluxo funcione corretamente e que seja fácil de usar.
+* Viu que está tudo em ordem? Desactive o modo de testes e comece a receber pagamentos reais!
 
-Você poderá ativar ou desativar este modo por aqui: 
+Você poderá ativar ou desativar este modo por aqui:
 
 ![Modo Sandbox](/images/woocommerce/br_woo_sandbox.png)
 
@@ -202,14 +193,14 @@ Você poderá ativar ou desativar este modo por aqui:
 
 #### **3. Ir a producción (‘Go live!’)**
 
-Ative o modo Produção somente quando estiver pronto para vender. Você poderá fazer isso por aqui: 
+Ative o modo Produção somente quando estiver pronto para vender. Você poderá fazer isso por aqui:
 
 ![Modo Produção](/images/woocommerce/br_woo_produccion.png)
 
-Antes começar a cobrar, precisamos que você passe pelo processo de homologação, onde pediremos que você preencha um formulário com informações sobre sua empresa. 
+Antes começar a cobrar, precisamos que você passe pelo processo de homologação, onde pediremos que você preencha um formulário com informações sobre sua empresa.
 
 > Confira os [requisitos para ir a produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/).
 
 Já fez isso? Então, você poderá ativar o “Produção” pelo painel de configuração do Mercado Pago.
 
-**Pronto!** Agora, você poderá maximizar sua conversão ou a dos seus clientes com a experiência de compra on-line do Mercado Pago. 
+**Pronto!** Agora, você poderá maximizar sua conversão ou a dos seus clientes com a experiência de compra on-line do Mercado Pago.

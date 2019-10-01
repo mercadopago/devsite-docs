@@ -1,12 +1,6 @@
 # Magento
 
-* [Requirements](#Requirements)
-* [Features](#Features)
-* [Installation](#Installation)
-* [Upgrade](#Upgrade)
-* Checkout Custom 
-* Basic Checkout 
-* [Payment Notification status Settings](#Payment-Notification-status-settings) 
+## Features
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
@@ -23,8 +17,8 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 | Customizable success page           	|                	| ✔               	|
 | Installments calculator             	| ✔              	| ✔               	|
 
-<a name="Requirements"></a>
-## Requirements:
+
+## Requirements
 
 |                            | Detail                                                                                         |
 |----------------------------|------------------------------------------------------------------------------------------------|
@@ -39,8 +33,7 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 | SSL                        | It is a requirement that you have an SSL certificate, During testing in Sandbox you will be able to run at http.|
 
 
-<a name="Installation"></a>
-## Installation: ##
+## Installation
 
 This process will explain the installation of the Mercado Pago module via Package and Marketplace:
 
@@ -79,8 +72,8 @@ This process will explain the installation of the Mercado Pago module via Packag
 
 4) Very Good! The module of Mercado Pago was successfully installed.
 
-<a name="Upgrade"></a>
-## Upgrade: ##
+
+## Upgrade
 
 If you already have the Mercado Pago module and want to install a more current version of the module, we advise you to remove all the files related to the previous module.
 
@@ -111,8 +104,8 @@ After doing this process, run the **Installation** process.
 
 > Always remember to make a backup of yours before making any changes.
 
-<a name="Configure-Credit-Card-and-Ticket"></a>
-## Configure Credit Card and Ticket: ##
+
+## Configure Checkout Custom (Credit Card and Ticket)
 
 This process will explain how to configure the module to accept payments with Checkout Custom with Credit Card and Tickets:
 
@@ -136,8 +129,8 @@ This process will explain how to configure the module to accept payments with Ch
 
 ![Successfully configured basic checkout](/images/magento/magento-save.png)
 
-<a name="Configure-Checkout-Redirect,-Iframe-and-LightBox"></a>
-## Configure Checkout Redirect, Iframe, and LightBox: ##
+
+## Configure Checkout Classic
 
 This process will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox:
 
@@ -153,12 +146,12 @@ This process will explain how to configure the module to accept payments with Ba
 
 ![Enabling payment method in Magento - Checkout redirect](/images/magento/magento-config-05.gif)
 
-4)  Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
+4) Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 
 ![Successfully configured Checkout redirect](/images/magento/magento-save.png)
 
-<a name="Configure-Mercado-Envios"></a>
-## Configure Mercado Envios: ##
+
+## Configure Mercado Envios
 
 This process will explain how to configure the module to accept Mercado Envios:
 
@@ -182,8 +175,8 @@ This process will explain how to configure the module to accept Mercado Envios:
 
 ![Mercado Envios configured successfully](/images/magento/magento-me_save.png)
 
-<a name="Configure-Subscriptions"></a>
-## Configure Subscriptions: ##
+
+## Configure Subscriptions
 
 This process will explain how to configure the module to accept recurring payments:
 
@@ -199,12 +192,12 @@ This process will explain how to configure the module to accept recurring paymen
 
 ![Enabling payment method in Magento - Recurring Payments](/images/magento/magento-config-re-02.gif)
 
-4)  Very good! The recurring payments has been configured and enable successfully!
+4) Very good! The recurring payments has been configured and enable successfully!
 
 ![Recurring Payments configured successfully](/images/magento/magento-save.png)
 
-<a name="Payment-Notification-status-settings"></a>
-## Payment Notification status Settings: ##
+
+## Payment Notification status Settings
 
 This process will explain how to set up order statuses for payment notifications:
 

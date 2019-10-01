@@ -2,6 +2,10 @@
 sites_supported:
   - mlb
   - mla
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # O que é o Smart Checkout?
@@ -20,16 +24,31 @@ O Smart Checkout do Mercado Pago é a integração que **te permite cobrar atrav
 ----[mlb]----
 * Pagar com os principais  <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank"> meios de pagamento</a> do país.
 ------------
+----[mlu]----
+* Pagar com os principais  <a href="https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> meios de pagamento</a> do país.
+------------
+----[mlc]----
+* Pagar com os principais  <a href="https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> meios de pagamento</a> do país.
+------------
+----[mco]----
+* Pagar com os principais  <a href="https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> meios de pagamento</a> do país.
+------------
+----[mlm]----
+* Pagar com os principais  <a href="https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> meios de pagamento</a> do país.
+------------
 * Uma **experiência de compra adaptada** e acessível de qualquer celular ou computador no seu site.
 * **Compras em um clique.** Ao pagar com uma conta do Mercado Pago, os dados e cartões dos compradores são salvos, o que lhes permite pagar informando apenas o código de segurança ou dinheiro na conta.
 * **Compras de convidados.** Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
+----[mla, mlb]----
 * **Pagamento com dois cartões.** Por exemplo, para casos de valores altos.	 
-
+------------
 
 ## Diferenças do Smart Checkout com outras ferramentas do Mercado Pago
 
+----[mla, mlb]----
+
                                    | Smart Checkout|Web Tokenize Checkout|      API
-:---------------------------------  | :-----------: | :-------------------: | :---------:
+:---  | :---: | :---: | :---:
 Dificuldade de integração 			  	     |    Baixa    |       Media         |     Alta
 Desing UI/UX 							  	           |      ✔      |         ✔           |
 Otimizado para a melhor conversão	     |      ✔      |         ✔           |
@@ -39,6 +58,22 @@ Pagamento de usuários cadastrados        |      ✔      |                     
 Prevenção de fraude               	     |      ✔      |         ✔           |      ✔
 Tela de finalização de pagamento 		     |      ✔      |                     |
 Pagamento com dois cartões		           |      ✔      |                     |
+
+------------
+
+----[mlm, mlu, mco, mlc]----
+                                   | Smart Checkout|Web Tokenize Checkout|      API
+:---  | :---: | :---: | :---:
+Dificuldade de integração 			  	     |    Baixa    |       Media         |     Alta
+Desing UI/UX 							  	           |      ✔      |         ✔           |
+Otimizado para a melhor conversão	     |      ✔      |         ✔           |
+Otimizado para melhorar a aprovação     |      ✔      |                     |  
+Pagamento de usuários convidados    	   |      ✔      |         ✔           |      ✔
+Pagamento de usuários cadastrados        |      ✔      |                     |
+Prevenção de fraude               	     |      ✔      |         ✔           |      ✔
+Tela de finalização de pagamento 		     |      ✔      |                     |
+
+------------
 
 > NOTE
 >

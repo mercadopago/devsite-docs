@@ -18,16 +18,8 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tenés que preocuparte de nada. Si tenés algún problema, te respaldamos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
-----[mla, mlb]----
 
 [Integrar Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)
-
-------------
-----[mlm, mpe, mco, mlu, mlc]----
-
-[Integrar Smart Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction)
-
-------------
 
 ### Mobile Checkout
 
@@ -116,7 +108,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldaremos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.mx/ayuda/dinero-seguridad-ventas_701).
 
-[Integrar Smart Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Smart Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Mobile Checkout
 
@@ -279,7 +271,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes  algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.co/ayuda/seguridad-vendedor_1800).
 
-[Integrar Smart Checkout](https://www.mercadopago.com.co/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Smart Checkout](https://www.mercadopago.com.co/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Mobile Checkout
 
@@ -346,13 +338,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.uy/ayuda/dinero-seguridad-ventas-uy_2989).
 
-[Integrar Smart Checkout](https://www.mercadopago.com.uy/developers/es/guides/payments/web-checkout/introduction)
-
-### Mobile Checkout
-
-A diferencia de Smart Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
-
-[Integrar Mobile Checkout](https://www.mercadopago.com.uy/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Smart Checkout](https://www.mercadopago.com.uy/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Web Tokenize
 
@@ -426,7 +412,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor.](https://www.mercadopago.cl/ayuda/proteccion-vendedores_1807)
 
-[Integrar Smart Checkout](https://www.mercadopago.cl/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Smart Checkout](https://www.mercadopago.cl/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Mobile Checkout
 
@@ -475,4 +461,5 @@ Un Marketplace es un sitio o aplicación que te permite hacer cobros a nombre de
 > Nota
 >
 > La comisión de Mercado Pago será descontada de los fondos que reciba el vendedor. Primero se descuenta la comisión de Mercado Pago, y del resto se descuenta la comisión del Marketplace.
+
 ------------

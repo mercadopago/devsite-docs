@@ -394,6 +394,8 @@ Respuesta:
 
 > NOTE
 >
+> Nota
+>
 > Puedes ver más información sobre el [manejo de respuestas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
 
 ## Recibir un pago en cuotas
@@ -630,9 +632,9 @@ Un _Webhook_ es una notificación que se envía de un servidor a otro mediante u
 
 Puedes encontrar toda la información al respecto en el [artículo de webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks).
 
-## Próximos pasos
+### Próximos pasos
 
-### Recibe pagos con tarjetas guardadas
+#### Recibe pagos con tarjetas guardadas
 
 Puedes almacenar de forma segura las tarjetas de tus clientes y realizar pagos con una experiencia _one-click-to-buy_.
 

@@ -2,25 +2,14 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Prueba tu integración
 
-> INDEX
->
-> En esta página
->
->
->
-> [Cómo probar mi integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_mi_integración)
->
-> [Cómo crear usuarios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
->
-> [Prueba el flujo de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
->
-> [Tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
->
-> [Comenzar a recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
 
 
 ## Cómo probar mi integración
@@ -87,7 +76,7 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 1. Selecciona _Tarjeta_ como medio de pago.
 2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba).
-3. Completa el e-mail y ¡listo!<br/><br/>
+3. Completa el e-mail ¡y listo!<br/><br/>
 
 #### Comprar como usuario registrado (con cuenta de Mercado Pago)
 
@@ -97,7 +86,7 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 1. Inicia sesión en Mercado Pago con la cuenta de tu usuario de prueba comprador.
 2. Selecciona _Tarjeta_ como medio de pago.
-3. Elige una tarjeta guardada o completa los datos con una nueva y ¡listo!
+3. Elige una tarjeta guardada o completa los datos con una nueva ¡y listo!
 
 
 ## Tarjetas de prueba
@@ -137,7 +126,7 @@ Al terminar el formulario, verifica que las credenciales en tu integración sean
 >
 > [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON
 >
 > Personalizaciones
 >

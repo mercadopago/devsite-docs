@@ -1,18 +1,5 @@
 #SDK Javascript#
 
-> WARNING
->
-> Índice de contenidos
->
-> - Incluye el SDK de MercadoPago.
-> - Configura tu clave pública.
-> - Obtén un token de uso único para la tarjeta.
-> - Obtén información del medio de pago.
-> - Obtén los tipos de documento.
-> - Obtén los emisores de la tarjeta.
-> - Obtén las cuotas y costos de financiación.
-
-
 El SDK Javascript de Mercado Pago te facilita obtener los datos de las tarjetas de tus clientes de forma segura.
 
 Al usar el SDK, y seguir los pasos que te indicamos, la información sensible de la tarjeta nunca viajará a tus servidores, asegurando el nivel adecuado de cumplimiento de la norma PCI DSS.
@@ -74,7 +61,7 @@ En la función de callback recibirás un objeto con las siguientes propiedades:
     }
 }
 ```
- 
+
 ##Obtén información del medio de pago
 
 Puedes obtener información de la tarjeta ingresada o del medio de pago seleccionado utilizando:

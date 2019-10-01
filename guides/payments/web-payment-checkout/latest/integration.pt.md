@@ -2,19 +2,14 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Integre o Smart Checkout
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Como me integro?](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_como_me_integro?)
->
-> [Etapas para se integrar](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration#bookmark_etapas_para_se_integrar)
 
 
 ## Como me integro?
@@ -218,7 +213,7 @@ preference.Items.Add(
   {
     Title = "Meu produto",
     Quantity = 1,
-    CurrencyId = CurrencyId.BRL,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
   }
 );

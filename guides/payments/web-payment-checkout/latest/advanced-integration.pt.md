@@ -2,25 +2,13 @@
 sites_supported:
   - mla
   - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # Integração avançada
-
-> INDEX
->
-> Nesta página
->
->
->
-> [Receba notificações de pagamento ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_receba_notificações_de_pagamentos)
->
-> [Informações adicionais para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informações_adicionais_para_a_preferência)
->
-> [URL de retorno](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
->
-> [Cancelamentos e estornos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelamentos_e_estornos)
->
-> [Gerencie contestações](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_gerencie_contestações)
 
 
 ## Receba notificações de pagamentos
@@ -170,7 +158,7 @@ Payer payer = new Payer()
   $item->id = "1234";
   $item->title = "Heavy Duty Plastic Table";
   $item->quantity = 7;
-  $item->currency_id = "BRL";
+  $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = 75.56;
   // ...
 ?>
@@ -182,7 +170,7 @@ items: [
       id: '1234',
       title: 'Lightweight Paper Table',
       quantity: 3,
-      currency_id: 'BRL',
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 55.41
     }
   ]// ...
@@ -193,7 +181,7 @@ Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
     .setQuantity(3)
-    .setCurrencyId("BRL")
+    .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 55.41);
 // ...
 ```
@@ -203,7 +191,7 @@ item = MercadoPago::Item.new({
   id: "1234",
   title: "Lightweight Paper Table",
   quantity: 3,
-  currency_id: "BRL",
+  currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
 })# ...
 ```
@@ -215,7 +203,7 @@ preference.Items.Add(
     Id = "1234",
     Title = "Lightweight Paper Table",
     Quantity = 3,
-    CurrencyId = "BRL",
+    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)55.41
   }
 );
