@@ -58,7 +58,7 @@ errors:
         en: EXTERNAL_STORE_ID must be String.
         es: El campo EXTERNAL_STORE_ID debe ser String.
         pt: O EXTERNAL_STORE_ID deve ser String.
-  - 'POS_EXTERNAL_STORE_ID_NOT_MATCH':
+  - 'EXTERNAL_STORE_ID_NOT_MATCH':
       description:
         en: The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.
         es: El campo EXTERNAL_STORE_ID no hace referencia al STORE_ID indicado.
