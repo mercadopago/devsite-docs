@@ -12,12 +12,12 @@ errors:
         en: The ID of the pos is invalid, it must be numeric.
         es: El ID de la caja es inválido, tiene que ser numérico.
         pt: O ID da caixa é inválido, deve ser numérico.
-  - 'POS_INVALID_EXTERNAL_ID':
+  - 'INVALID_EXTERNAL_ID':
       description:
         en: The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.
         es: El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios ni guiones, ni caracteres especiales.
         pt: O EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços ou hífens ou caracteres especiais.
-  - 'POS_EXTERNAL_ID_TOO_LONG':
+  - 'EXTERNAL_ID_TOO_LONG':
       description:
         en: The EXTERNAL_ID must be less than 40 characters.
         es: El campo EXTERNAL_ID debe ser menor a 40 caracteres.

@@ -23,37 +23,37 @@ errors:
         en: The indicated field is not allowed for this operation or is unknown.
         es: El campo indicado no se permite para esta operación o es desconocido.
         pt: O campo indicado não é permitido para esta operação ou é desconhecido.
-  - 'POS_INVALID_NAME':
+  - 'INVALID_NAME':
       description:
         en: NAME must be String.
         es: El NAME debe ser String.
         pt: O NAME deve ser String.
-  - 'POS_NAME_TOO_LONG':
+  - 'NAME_TOO_LONG':
       description:
         en: The NAME must be less than 45 characters.
         es: El NAME debe ser menor a 45 caracteres.
         pt: O campo NAME deve ter menos de 45 caracteres.
-  - 'POS_INVALID_FIXED_AMOUNT':
+  - 'INVALID_FIXED_AMOUNT':
       description:
         en: FIXED_AMOUNT must be boolean.
         es: El campo FIXED_AMOUNT debe ser Boolean.
         pt: O FIXED_AMOUNT deve ser Boolean.
-  - 'POS_INVALID_CATEGORY':
+  - 'INVALID_CATEGORY':
       description:
         en: CATEGORY must be numeric.
         es: El campo CATEGORY debe ser numérico.
         pt: O campo CATEGORY deve ser numérico.
-  - 'POS_UNKNOWN_MCC':
+  - 'UNKNOWN_MCC':
       description:
         en: The CATEGORY must be valid for the user's site.
         es: El campo CATEGORY debe ser uno válido para el site del usuario.
         pt: O CATEGORY deve ser válido para o site do usuário.
-  - 'POS_INVALID_STORE_ID':
+  - 'INVALID_STORE_ID':
       description:
         en: STORE_ID must be numeric.
         es: El campo STORE_ID debe ser numérico.
         pt: O campo STORE_ID deve ser numérico.
-  - 'POS_INVALID_EXTERNAL_STORE_ID':
+  - 'INVALID_EXTERNAL_STORE_ID':
       description:
         en: EXTERNAL_STORE_ID must be String.
         es: El campo EXTERNAL_STORE_ID debe ser String.
@@ -63,32 +63,32 @@ errors:
         en: The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.
         es: El campo EXTERNAL_STORE_ID no hace referencia al STORE_ID indicado.
         pt: O EXTERNAL_STORE_ID não se refere ao STORE_ID indicado.
-  - 'POS_INEXISTENT_EXTERNAL_STORE_ID':
+  - 'INEXISTENT_EXTERNAL_STORE_ID':
       description:
         en: The EXTERNAL_STORE_ID does not refer to any existing store.
         es: El campo EXTERNAL_STORE_ID no hace referencia a ningún sucursal existente.
         pt: O EXTERNAL_STORE_ID não se refere a nenhuma loja existente.
-  - 'POS_INVALID_EXTERNAL_ID':
+  - 'INVALID_EXTERNAL_ID':
       description:
         en: The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.
         es: El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios ni guiones, ni caracteres especiales.
         pt: O EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços ou hífens ou caracteres especiais.
-  - 'POS_EXTERNAL_ID_TOO_LONG':
+  - 'EXTERNAL_ID_TOO_LONG':
       description:
         en: The EXTERNAL_ID must be less than 40 characters.
         es: El campo EXTERNAL_ID debe ser menor a 40 caracteres.
         pt: O campo EXTERNAL_ID deve ter menos de 40 caracteres.
-  - 'POS_INVALID_URL':
+  - 'INVALID_URL':
       description:
         en: The URL must be String and must have the format of a valid url.
         es: El campo URL debe ser String, y tener el formato de una url válida.
         pt: O URL deve ser String e ter o formato de um URL válido.
-  - 'POS_URL_TOO_LONG':
+  - 'URL_TOO_LONG':
       description:
         en: The URL must be less than 300 characters.
         es: El campo URL debe ser menor a 300 caracteres.
         pt: O campo URL deve ter menos de 40 caracteres.
-  - 'POS_FIXED_AMOUNT_FALSE':
+  - 'FIXED_AMOUNT_FALSE':
       description:
         en: If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.
         es: Si se indica el campo URL, el campo FIXED_AMOUNT debe ser true. No soportamos la modalidad de monto abierto en este caso.
