@@ -10,6 +10,24 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 - **Atualizações na documentação:** Guias, referências e tutoriais para te ajudar a monetizar seu negócio integrando Mercado Pago.
 
+----[mlc, mco]----
+
+## 25 de Setembro de 2019
+
+**Melhorias no fluxo PSE, Webpay e Khipu.**
+
+- Se a URL desejada for informada no campo “callback_url”, o usuário será redirecionado a respectiva url 15 segundos após realização do pagamento.
+- Caso um “callback_url” não seja informado, nossa tela de confirmação será exibida, sem acionar o redirecionamento.
+
+------------
+----[mlc]----
+
+**Melhorias para pagamentos recusados no Shopify**
+
+- Houve a solução do problema que ocorria quando um cliente do Shopify selecionava débito como meio de pagamento via Webpay e voltava ao navegador, a tela de confirmação não é mais exibida, mas sim o pagamento é rejeitado.
+
+------------
+
 ## 26 de junho de 2019
 
 Melhorias na documentação do Mercado Pago Gateway
