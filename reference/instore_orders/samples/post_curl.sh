@@ -7,7 +7,7 @@ curl -X POST \
     "items" :[{
     		"id" : "78123172",
   		    "title" : "Shampoo",
-    		"currency_id" : "ARS",
+    		"currency_id" : "[FAKER][CURRENCY][ACRONYM]",
     		"unit_price" : 120.00,
     		"quantity" : 1,
             "description": "Almendras",
