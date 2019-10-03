@@ -1,0 +1,30 @@
+---
+resource: stores.raml
+samples:
+- curl.sh
+- curl_response.json
+use:
+- user_id
+- external_id
+errors:
+- 400 BAD_REQUEST:
+  - 'INVALID_USER_ID':
+      description:
+        en: USER_ID must be number.
+        es: USER_ID debe ser un número.
+        pt: USER_ID deve ser um número.
+  - 'INVALID_OFFSET':
+      description:
+        en: OFFSET must be number.
+        es: OFFSET debe ser un número.
+        pt: OFFSET deve ser um número.
+  - 'INVALID_LIMIT':
+      description:
+        en: LIMIT must be number.
+        es: LIMIT debe ser un número.
+        pt: LIMIT deve ser um número.
+  - 'INVALID_EXTERNAL_ID':
+      description:
+        en: EXTERNAL_ID must be alphanumeric.
+        es: EXTERNAL_ID debe ser alfanumerico.
+        pt: EXTERNAL_ID deve ser alfanumérico.

@@ -1,0 +1,92 @@
+---
+resource: stores.raml
+samples:
+- curl.sh
+- curl_response.json
+use:
+- id
+- user_id
+- name
+- business_hours
+- external_id
+- location
+- zip_code
+- street_number
+- street_name
+- city_name
+- state_name
+- latitude
+- longitude
+- reference
+errors:
+- 400 BAD_REQUEST:
+  - 'INVALID_USER_ID':
+      description:
+        en: USER_ID must be number.
+        es: El USER_ID debe ser un número.
+        pt: O USER_ID deve ser um número.
+  - 'UNKNOWN_FIELD':
+      description:
+        en: Unknown field.
+        es: Campo desconocido.
+        pt: Campo desconhecido.
+  - 'INVALID_NAME':
+      description:
+        en: Name must be string.
+        es: Nombre inválido. Debe ser String.
+        pt: O nome deve ser um String.
+  - 'INVALID_BUSINESS_HOURS':
+      description:
+        en: BUSINESS_HOURS must be json_object.
+        es: BUSINESS_HOURS debe ser un json_object.
+        pt: BUSINESS_HOURS deve ser um json_object.
+  - 'INVALID_DAY':
+      description:
+        en: Day must be json_array.
+        es: El día debe ser un json_array.
+        pt: O dia deve ser um json_array.
+  - 'INVALID_LOCATION':
+      description:
+        en: LOCATION must be json_object.
+        es: LOCATION debe ser un json_object.
+        pt: LOCATION deve ser um json_object.
+  - 'INVALID_STREET_NAME':
+      description:
+        en: STREET_NAME must be string.
+        es: STREET_NAME debe ser un String.
+        pt: STREET_NAME deve ser um String.
+  - 'INVALID_STREET_NUMBER':
+      description:
+        en: STREET_NUMBER must be string.
+        es: STREET_NUMBER debe ser un String.
+        pt: STREET_NUMBER deve ser um String.
+  - 'INVALID_ZIP_CODE':
+      description:
+        en: ZIP_CODE must be string.
+        es: ZIP_CODE debe ser un String.
+        pt: ZIP_CODE deve ser um String.
+  - 'INVALID_CITY_NAME':
+      description:
+        en: CITY_NAME must be string.
+        es: CITY_NAME debe ser un String.
+        pt: CITY_NAME deve ser um String.
+  - 'INVALID_STATE_NAME':
+      description:
+        en: STATE_NAME must be string.
+        es: STATE_NAME debe ser un String.
+        pt: STATE_NAME deve ser um String.
+  - 'INVALID_LATITUDE':
+      description:
+        en: LATITUDE must be number.
+        es: LATITUDE debe ser un número.
+        pt: LATITUDE deve ser um número.
+  - 'INVALID_LONGITUDE':
+      description:
+        en: LONGITUDE must be number.
+        es: LONGITUDE debe ser un número.
+        pt: LONGITUDE deve ser um número.
+  - 'INVALID_REFERENCE':
+      description:
+        en: REFERENCE must be string.
+        es: REFERENCE debe ser un String.
+        pt: REFERENCE deve ser um String.
