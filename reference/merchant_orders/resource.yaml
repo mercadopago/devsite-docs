@@ -770,9 +770,9 @@ properties:
 - order_status:
     type: String
     description:
-      en: Show the current merchant order status given the payments status.
-      es: Muestra el estado actual de la orden según el estado de los pagos.
-      pt: Show the current merchant order status given the payments status.
+      en: Current merchant order status given the payments status.
+      es: Estado actual de la orden según el estado de los pagos.
+      pt: Current merchant order status given the payments status.
     enum:
     - payment_required:
         en: Order without payments or with all payments "rejected" or "cancelled".
