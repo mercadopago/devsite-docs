@@ -259,7 +259,7 @@ Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pa
 }
 ```
 
-Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **webpay**, el `identification number` y el `financial_institution`:
+Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **webpay** y el `financial_institution` **1234**:
 
 [[[
 ```php
@@ -272,10 +272,6 @@ $payment->transaction_amount = 10000;
 $payment->description = "Title of what you are paying for";
 $payment->payer = array (
 		"email" => "test_user_19653727@testuser.com",
-		"identification" => array(
-			"type" => "RUT",
-			"number" => "76262349"
-		),
 		"entity_type" => "individual"
 	);
 $payment->transaction_details = array(
@@ -297,7 +293,6 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payer payer = new Payer();
 payer.setEmail("test_user_19653727@testuser.com");
-payer.setIdentification(new Identification("RUT", 76262349));
 payer.setEntityType("individual");
 
 TransactionDetails transactionDetails = new TransactionDetails();
@@ -327,10 +322,6 @@ var payment_data = {
   description: 'Title of what you are paying for',
   payer: {
     email: 'test_user_3931694@testuser.com',
-    identification: {
-      type: "URL",
-      number: "76262349"
-    },
     entity_type: "individual"
   },
   transaction_details: {
@@ -359,10 +350,6 @@ payment.transaction_amount = 10000
 payment.description = 'Title of what you are paying for'
 payment.payer = {
   email: 'test_user_3931694@testuser.com',
-  identification: {
-    type: "URL",
-    number: "76262349"
-  },
   entity_type: "individual"
 }
 payment.transaction_details = {
