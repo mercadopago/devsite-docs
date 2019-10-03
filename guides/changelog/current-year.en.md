@@ -10,6 +10,24 @@ Each release note describes the new changes applying to a version. This changes 
 
 - **Documentation updates:** Guides, references and tutorials to help you monetize your business by integrating Mercado Pago.
 
+----[mlc, mco]----
+
+## September 25th, 2019
+
+**Flow improvements for PSE, Webpay y Khipu.**
+
+- If customer “callback_url” is set for the payment, user is redirected to the defined url after 15 seconds.
+- In case it is not defined, Mercado Pago´s success is displayed without redirection
+
+------------
+----[mlc]----
+
+**Improvements for rejected payments in Webpay**
+
+- Shopify: Problem solved when a client selects as payment method Debit in Webpay's flow. When the user tried to navigate backwards, the success receipt is no longer displayed, but the payment rejected screen is displayed.
+
+------------
+
 ## June 26th, 2019
 
 Improvement in Gateway Model documentation
