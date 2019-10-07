@@ -15,7 +15,7 @@ El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te perm
 
 ----[mlb]----
 
-> ![Pagos QR Mercado Pago](/images/qr.pt.png)
+![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
 ------------
 ----[mla]----
 
@@ -23,7 +23,7 @@ El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te perm
 
 ------------
 ----[mlm]----
-> ![Pagos QR Mercado Pago](/images/qr_mlm.es.png)
+![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
 ------------
 
 ## ¿Cuáles son los beneficios?
