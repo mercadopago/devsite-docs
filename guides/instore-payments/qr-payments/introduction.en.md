@@ -9,7 +9,7 @@ sites_supported:
 
 ---
 
-# Face-to-face payments with QR
+# Payments from QR code
 
 ----[mlb]----
 
