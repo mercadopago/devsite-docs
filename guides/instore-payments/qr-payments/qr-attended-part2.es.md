@@ -17,7 +17,7 @@ Para cobrar a través de un código QR modelo atendido, deberás crear una orden
 
 ```curl
 curl -X POST 
-https://api.mercadopago.com/mpmobile/instore/qr/$COLLECTOR_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN -d
+https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN -d
 {
     "external_reference": "Factura-0001",
     "notification_url": "www.yourserver.com",
@@ -58,7 +58,7 @@ Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el heade
 Para eliminar la orden asociada a un QR antes de que expire por vigencia, o se cierre, puedes hacerlo a través del siguiente método: 
 
 ```curl
-curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/$COLLECTOR_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN  -d 
+curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN  -d 
 ```
 La respuesta será un `HTTP 204 No Content`.
 
