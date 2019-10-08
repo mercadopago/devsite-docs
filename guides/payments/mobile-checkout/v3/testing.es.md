@@ -21,7 +21,7 @@ Debes verificar que:
 
 Para probar la integración sigue estos pasos:
 
-1. Configura la [_public key_ de _sandbox_](https://www.mercadopago.com/mla/account/credentials?type=basic) en tu aplicación.
+1. Configura la [_public key_ de _sandbox_](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic) en tu aplicación.
 2. Crea la preferencia en tu servidor con el access token.
 3. Completa los datos del formulario, ingresando los dígitos de una tarjeta de prueba. En fecha de expiración debes ingresar cualquier fecha posterior a la actual y en código de seguridad 3 o 4 dígitos dependiendo de la tarjeta.
 4. En el nombre del titular de la tarjeta debes ingresar el prefijo correspondiente a lo que quieras probar:

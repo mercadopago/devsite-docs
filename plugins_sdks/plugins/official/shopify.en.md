@@ -36,7 +36,7 @@ Great for merchants who want to get going quickly and easily.
 
 2) In Accept credit cards, select **MercadoPago**.
 
-3) Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
+3) Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic)
 
   ![Configuring client id and client secret in shopify](/images/shopify/shopify-config-2.gif)
 

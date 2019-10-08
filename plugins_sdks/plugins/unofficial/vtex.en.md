@@ -272,7 +272,7 @@ document.body.appendChild(dmlscript);
 To get Mercado Pago credentials you must follow this steps:
 
 1. Log into Mercado Pago account.
-2. Go to this [URL](https://www.mercadopago.com/mla/account/credentials).
+2. Go to this [URL](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
 3. Select custom checkout tab.
 4. Copy and paste the Public key and Access token (Production mode to process real payments / Sandbox mode to test).
 5. Before going to production you must fill the form ‘I want to go to production’.

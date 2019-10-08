@@ -29,7 +29,7 @@ Los pasos para empezar a operar con Mercado Pago son los siguientes:
 
 ![wix_configuration3](/images/wix_configuration3.png)
 
-4. Para conectar la cuenta se solicita dos informaciones: **ID DEL CLIENTE** y **CLIENT_SECRET**. Estos datos son las credenciales de Mercado Pago y están disponibles en el siguiente [LINK](https://www.mercadopago.com/mla/account/credentials?type=basic) de su cuenta.
+4. Para conectar la cuenta se solicita dos informaciones: **ID DEL CLIENTE** y **CLIENT_SECRET**. Estos datos son las credenciales de Mercado Pago y están disponibles en el siguiente [LINK](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic) de su cuenta.
 
 ![wix_configuration4](/images/wix_configuration4.png)
 

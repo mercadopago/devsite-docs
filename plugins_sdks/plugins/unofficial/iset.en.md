@@ -79,7 +79,7 @@ Para escolher o checkout transparente, selecione a opção através do item **Mo
 
 ### Configurando as credenciais do Mercado Pago
 
-Para ter acesso as credenciais, basta acessar o [link](https://www.mercadopago.com/mlb/account/credentials), para obter os dados de public_key (chave pública) utilize a aba *checkout transparente* e para obter o client_id e client_secret utilize a aba *checkout básico*:
+Para ter acesso as credenciais, basta acessar o [link](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials), para obter os dados de public_key (chave pública) utilize a aba *checkout transparente* e para obter o client_id e client_secret utilize a aba *checkout básico*:
 
 ![Configuring the client Id and client secret - Iset](/images/iset-img14.png)
 

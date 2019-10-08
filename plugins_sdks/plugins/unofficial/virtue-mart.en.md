@@ -74,7 +74,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-  You can obtain your **Client_id** and **Client_secret**, accordingly to your country,[in the following link](https://www.mercadopago.com/mla/account/credentials).
+  You can obtain your **Client_id** and **Client_secret**, accordingly to your country,[in the following link](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
 
 5. Checkout settings. <br/>
 
@@ -131,11 +131,11 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   You can obtain your **Public Key** and **Access Token**, accordingly to your country, in the following links:
 
-  * Argentina: https://www.mercadopago.com/mla/account/credentials
-  * Brazil: https://www.mercadopago.com/mlb/account/credentials
-  * Colombia: https://www.mercadopago.com/mco/account/credentials
-  * Mexico: https://www.mercadopago.com/mlm/account/credentials
-  * Uruguay: https://www.mercadopago.com/mlu/account/credentials
+  * Argentina: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials
+  * Brazil: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials
+  * Colombia: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials
+  * Mexico: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials
+  * Uruguay: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials
 
   7. Checkout settings. <br/>
 
@@ -179,11 +179,11 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   You can obtain your **Access Token**, accordingly to your country, in the following links:
 
-  * Argentina: https://www.mercadopago.com/mla/account/credentials
-  * Brazil: https://www.mercadopago.com/mlb/account/credentials
-  * Colombia: https://www.mercadopago.com/mco/account/credentials
-  * Mexico: https://www.mercadopago.com/mlm/account/credentials
-  * Uruguay: https://www.mercadopago.com/mlu/account/credentials  
+  * Argentina: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials
+  * Brazil: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials
+  * Colombia: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials
+  * Mexico: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials
+  * Uruguay: https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials  
 
   7. IPN settings.
   <br/>![Setting Notification - IPN](/images/virtuemart-ipn_settings.png) <br />

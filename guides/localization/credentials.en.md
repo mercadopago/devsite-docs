@@ -13,7 +13,7 @@ If you do not have an account, create one by clicking **"Register"**. Fill out t
 
 ## Access Credentials
 
-Once Authenticated in your Mercado Pago account, access the following link [https://www.mercadopago.com/mlb/account/credentials/](https://www.mercadopago.com/mlb/account/credentials/).
+Once Authenticated in your Mercado Pago account, access the following link [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials/](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials/).
 You'll be taken to the credentials page of your account.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)

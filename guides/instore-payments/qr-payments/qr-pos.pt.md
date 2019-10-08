@@ -22,7 +22,7 @@ Primeiro você deve familiarizar-se com os seguintes conceitos que usará durant
 
 | Atributo       | Descrição                                                  |
 | -------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN` | É o [token de acceso](https://www.mercadopago.com/mlb/account/credentials) da conta Mercado Pago a qual se creditarão suas cobranças. |
+| `ACCESS_TOKEN` | É o [token de acceso](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials) da conta Mercado Pago a qual se creditarão suas cobranças. |
 | `COLLECTOR_ID` | É o número de usuário da conta Mercado Pago, são os últimos 9 dígitos de seu `access_token`, posterior ao hífen. |
 
 ## Objetos

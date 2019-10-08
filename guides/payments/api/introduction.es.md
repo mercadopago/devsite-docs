@@ -43,7 +43,7 @@ Una vez que hayas probado tu aplicación en Modo _Sandbox_, debes completar el p
 * Comunicar las [promociones y posibilidades de financiación](https://www.mercadopago.com.ar/promociones) ofrecidas por Mercado Pago. Puedes incluir nuestros [banners](https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales) institucionales.
 
 
-> Cuando hayas cumplido con los requisitos, debes completar el formulario **Quiero salir a producción** que se encuentra en la sección de tus [credenciales](https://www.mercadopago.com/mla/account/credentials)
+> Cuando hayas cumplido con los requisitos, debes completar el formulario **Quiero salir a producción** que se encuentra en la sección de tus [credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials)
 
 El incumplimiento de estas normas puede implicar desde el no procesamiento de pagos, hasta acciones legales de acuerdo a lo establecido en los [términos y condiciones](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299).
 Debes disponer de una política de términos y condiciones, en la cual especifiques que te responsabilizas por todos los datos que sean ingresados en tu sitio.

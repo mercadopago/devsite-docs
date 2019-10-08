@@ -65,7 +65,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
-	Get your CLIENT_ID and CLIENT_SECRET [in the following link](https://www.mercadopago.com/mla/account/credentials).
+	Get your CLIENT_ID and CLIENT_SECRET [in the following link](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
 
 	Other options have been added and you can choose any time after installation:
 

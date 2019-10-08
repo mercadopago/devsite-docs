@@ -24,7 +24,7 @@ Después de crear la aplicación, sólo es necesario ejecutar el segundo y terce
 
 ## Credenciales
 
-Al igual que con la API de Pagos, cuentas con dos pares de claves para conectarte con la API. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com/mla/account/credentials).
+Al igual que con la API de Pagos, cuentas con dos pares de claves para conectarte con la API. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
 
 La **credencial pública**, o *public\_key*, es la utilizada para acceder a todos los recursos que necesitará tu _frontend_ para recolectar los datos de tarjeta de crédito, y _tokenizar_.
 
@@ -38,7 +38,7 @@ Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo 
 
 Te brindaremos [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/testing-marketplace/), para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/goto-production/) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com/mla/account/credentials).
+Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/goto-production/) y completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
 
 **Antes de utilizar las credenciales de producción se deberá completar el formulario de "Quiero ir a producción" para activarlas.** 
 Caso contrario se recibirá el error de "Invalid use of live credentials". 

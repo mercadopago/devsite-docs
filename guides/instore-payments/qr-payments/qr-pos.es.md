@@ -21,7 +21,7 @@ Primero debes familiarizarte con los siguiente conceptos ya que los usarás dura
 
 | Atributo       | Descripción                                                  |
 | -------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
+| `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
 | `COLLECTOR_ID` | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
 
 ## Objetos

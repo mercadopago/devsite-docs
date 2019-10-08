@@ -35,7 +35,7 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 >
 > Note
 >
-> This is a public key of the test environment. To capture real cards you will need to replace them with your own [production public key](https://www.mercadopago.com/mla/account/credentials).
+> This is a public key of the test environment. To capture real cards you will need to replace them with your own [production public key](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
 
 
 ### 3. Collect card information
