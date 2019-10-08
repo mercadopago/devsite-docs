@@ -20,7 +20,7 @@ Before creating the payment, check whether your buyer is eligible for any of you
 
 ### Campaigns for all buyers
 
-To check it, use your [application’s credentials](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials):
+To check it, use your [application’s credentials]([FAKER][CREDENTIALS][URL]):
 
 ```curl
 curl -H "Accept: application/json" \
@@ -100,7 +100,7 @@ Add an additional field on the payment form to capture the coupon code entered b
 
 #### Check if the buyer has any discount available:
 
-To check it, use your [application’s credentials](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials):
+To check it, use your [application’s credentials]([FAKER][CREDENTIALS][URL]):
 
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'

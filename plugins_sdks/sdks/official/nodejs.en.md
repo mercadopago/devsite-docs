@@ -49,7 +49,7 @@ In order to use callbacks, simply pass a function as the last parameter.
 
 ## Configure
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL]).
 
 ### Configure Method
 

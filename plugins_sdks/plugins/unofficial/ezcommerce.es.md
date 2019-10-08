@@ -48,7 +48,7 @@ Para operar con tarjetas de crédito siga estos pasos:
 Para obtener las credenciales debe seguir estes pasos:
 
 1. Iniciar sesión en la cuenta de Mercado Pago.
-2. Acceda a este [panel](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+2. Acceda a este [panel]([FAKER][CREDENTIALS][URL]).
 3. Seleccione la pestaña "Checkout básico" para ver el Client Id y el Client Secret.
 4. Seleccione la pestaña "Checkout transparente" para ver la Public Key y el Access Token ("modo de produção" para procesar pagos reales / "modo Sandbox" para realizar pruebas).
 5. Antes de pasar a la producción asegúrese de rellenar el formulario ‘Quiero ir a producción’ (Si ya ha realizado este paso, el vínculo no aparece).

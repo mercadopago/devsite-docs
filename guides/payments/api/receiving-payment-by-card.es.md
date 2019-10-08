@@ -35,7 +35,7 @@ window.Mercadopago.setPublishableKey(ENV_PUBLIC_KEY);
 >
 > Nota
 >
-> Esta es una clave pública del entorno de pruebas. Para capturar tarjetas reales deberás reemplazarla por tu [clave pública productiva](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+> Esta es una clave pública del entorno de pruebas. Para capturar tarjetas reales deberás reemplazarla por tu [clave pública productiva]([FAKER][CREDENTIALS][URL]).
 
 
 ### 3. Capturar datos de tarjeta

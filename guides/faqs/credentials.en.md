@@ -10,11 +10,11 @@ sites_supported:
 
 ## Where to find my credentials
 
-Your credentials are the keys that we provided you so that you could make your integrations. They are available in your Mercado Pago account, in the [Credentials section](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+Your credentials are the keys that we provided you so that you could make your integrations. They are available in your Mercado Pago account, in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ## My credentials expired. How to renew them?
 
-You can renew your credentials from the [Credentials section](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+You can renew your credentials from the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 For security reasons, the credentials expire but don't worry, you can renew them as many times as necessary.
 
@@ -22,7 +22,7 @@ Keep in mind that you have to replace the credentials you already used with the 
 
 ## I am already integrated and tested, how do I implement in production?
 
-You must fill the form "I want to go into production" found in the [Credentials section](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+You must fill the form "I want to go into production" found in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 This form is necessary to make transactions with real money.
 

@@ -61,8 +61,8 @@ To operate in aggregator mode you just need to set an affiliation.
 
 - Affiliation Name: Affiliation identifier name.
 - OAuth login: Not used.
-- PublicKey PublicKey: Mercado Pago's PublicKey, [see credentials](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access:Mercado Pago's AccessToken, [see credentials](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: Mercado Pago's PublicKey, [see credentials]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access:Mercado Pago's AccessToken, [see credentials]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: Not used - leave blank.
 - ExpiredTokenIn: Not used - leave blank.
 - Merchant Account Id: Not used - leave blank.
@@ -272,7 +272,7 @@ document.body.appendChild(dmlscript);
 To get Mercado Pago credentials you must follow this steps:
 
 1. Log into Mercado Pago account.
-2. Go to this [URL](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+2. Go to this [URL]([FAKER][CREDENTIALS][URL]).
 3. Select custom checkout tab.
 4. Copy and paste the Public key and Access token (Production mode to process real payments / Sandbox mode to test).
 5. Before going to production you must fill the form ‘I want to go to production’.

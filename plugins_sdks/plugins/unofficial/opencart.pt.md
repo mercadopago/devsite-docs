@@ -96,7 +96,7 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 
  ![Open cart configuration page](/images/opencart_mpaccount.png)
 
-2.  Configure seu **CLIENT_ID** e **CLIENT_SECRET**, ou **PUBLIC_KEY** e **ACCESS_TOKEN** (dependendo de qual módulo você está utilizando). [Obtenha suas credenciais](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials).
+2.  Configure seu **CLIENT_ID** e **CLIENT_SECRET**, ou **PUBLIC_KEY** e **ACCESS_TOKEN** (dependendo de qual módulo você está utilizando). [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]).
  
 3. Se você está utilizando **Checkout Transparente** ou **Checkout Básico**, selecione o pais relacionado a sua conta do **MercadoPago**. Se você está utilizando **Ticket Checkout**, não é preciso configurar o país.
 

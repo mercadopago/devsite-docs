@@ -10,7 +10,7 @@ Los metodos disponibles de Spreedly con Mercado Pago son:
 - Void
 - Verify
 
-Para la integración con Spreedly es necesario obtener y configurar las credenciales de Mercado Pago que podes obtener desde el siguiente [link](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials)
+Para la integración con Spreedly es necesario obtener y configurar las credenciales de Mercado Pago que podes obtener desde el siguiente [link]([FAKER][CREDENTIALS][URL])
 
 A su vez, también es necesario ingresar el código de país:
 

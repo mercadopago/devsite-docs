@@ -40,7 +40,7 @@ Primeiro você deve se familiarizar com os seguintes conceitos, já que você os
 
 | Atributo                    | Descrição                                                  |
 | --------------------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN`              | É o [token de acesso] (https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials) da conta do Mercado Pago para a qual as coleções serão creditadas. |
+| `ACCESS_TOKEN`              | É o [token de acesso] ([FAKER][CREDENTIALS][URL]) da conta do Mercado Pago para a qual as coleções serão creditadas. |
 | `COLLECTOR_ID`              | É o número de usuário da conta Mercado Pago, são os últimos 9 dígitos do seu `access_token`, após o hífen. |
 | `EXTERNAL_ID`               | É o identificador único do fornecedor. É um código alfanumérico definido pelo integrador, não pode conter espaços ou caracteres especiais e não faz distinção entre maiúsculas e minúsculas. |
 | `SPONSOR_ID`                | `COLLECTOR_ID` da conta do Mercado Pago do integrador. Você deve criar uma conta por marca (YPF, Shell, Axion, etc).|

@@ -265,7 +265,7 @@ document.body.appendChild(dmlscript);
 Para obter as credenciais deve seguir os seguintes passos:
 
 1. Faça login na conta do Mercado Pago
-2. Acesse [URL](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+2. Acesse [URL]([FAKER][CREDENTIALS][URL]).
 3. Selecione a guia checkout personalizado.
 4. Copiar e colar a Public key e Access token (Modo Produção para processar pagamentos reais / Modo Sandbox para realizar testes).
 5. Antes de passar à Produção assegure se de preencher o formulário ‘Eu quero ir para produção’ (Se já realizou este passo, o link não aparece).

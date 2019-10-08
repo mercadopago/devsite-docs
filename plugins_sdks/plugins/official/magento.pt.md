@@ -113,7 +113,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 ![Configuring Credit Card and Ticket in Magento](/images/magento/magento-config-01.gif)
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago - Custom Checkout**, irá aparecer o campo da **Public Key** e o campo do **Access Token**. [Obtenha suas credenciais](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) Para configurar as credenciais acesse a opção **Mercado Pago - Custom Checkout**, irá aparecer o campo da **Public Key** e o campo do **Access Token**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]) 
 
 ![Configuring credentials in Magento](/images/magento/magento-config-02.gif)
 
@@ -138,7 +138,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 ![Configuring Checkout Redirect, Iframe and LightBox](/images/magento/magento-config-01.gif)
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]) 
 
 ![Configuring credentials - Checkout redirect](/images/magento/magento-config-04.gif)
 
@@ -185,7 +185,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos re
 
 ![Configuring recurring payments](/images/magento/magento-config-01.gif)
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago - Recurring Payments**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) Para configurar as credenciais acesse a opção **Mercado Pago - Recurring Payments**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]) 
 
 ![Configuring Credentials - Recurring Payments](/images/magento/magento-config-re-01.gif)
 

@@ -114,7 +114,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
  It is very important that before going to production you perform tests of the complete flow, verifying that the creation of payments is done correctly and that the messages are effective when communicating to the user.
 
  A good experience of your customers in the _checkout_ helps to improve the conversion.
- You have a couple of [credentials of _sandbox_](https://www.mercadopago.com.ar/account/credentials?type=custom), which allow you to test all the integration in an exact replica of the Production Mode, being able to simulate transactions using the test cards:
+ You have a couple of [credentials of _sandbox_]([FAKER][CREDENTIALS][URL]), which allow you to test all the integration in an exact replica of the Production Mode, being able to simulate transactions using the test cards:
 
 | Country     	 | Visa 				       | Mastercard        | American Express |
 | ---- 		   | ---- 				       | ----------        | ---------------- |

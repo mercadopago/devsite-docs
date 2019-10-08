@@ -21,7 +21,7 @@ You should check if:
 
 To test the integration, follow the steps below:
 
-1. Configure the [sandbox public key](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic) in your application.
+1. Configure the [sandbox public key]([FAKER][CREDENTIALS][URL])in your application.
 2. Create the preference on your server with the access token.
 3. Complete the form, entering the digits of a test card. On the expiration date you must enter any date after the current date and a 3-or 4-digit security code, depending on the card.
 4. In the cardholder field you must enter the prefix corresponding to what you want to test:

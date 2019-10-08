@@ -74,7 +74,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-  You can obtain your **Client_id** and **Client_secret**, accordingly to your country,[in the following link](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+  You can obtain your **Client_id** and **Client_secret**, accordingly to your country,[in the following link]([FAKER][CREDENTIALS][URL]).
 
 5. Checkout settings. <br/>
 

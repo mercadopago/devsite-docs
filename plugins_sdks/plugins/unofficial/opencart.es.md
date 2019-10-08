@@ -93,7 +93,7 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 
  [Open cart configuration page] (https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
 
-2. Configure su **CLIENT_ID** y **CLIENT_SECRET**, o **PUBLIC_KEY** y **ACCESS_TOKEN** (dependiendo de qué módulo está utilizando). [Obtenga sus credenciales] (https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials).
+2. Configure su **CLIENT_ID** y **CLIENT_SECRET**, o **PUBLIC_KEY** y **ACCESS_TOKEN** (dependiendo de qué módulo está utilizando). [Obtenga sus credenciales] ([FAKER][CREDENTIALS][URL]).
 
 3. Si está utilizando **Checkout Transparente** o **Checkout Básico**, seleccione el país relacionado con su cuenta de ** MercadoPago **. Si está utilizando **Ticket Checkout**, no es necesario configurar el país.
 

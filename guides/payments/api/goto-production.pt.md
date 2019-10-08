@@ -1,6 +1,6 @@
 # Requisitos para ir à produção
 
-Quando tenha a aplicação pronta e funcionando na modalidade Sandbox e quiser começar a processar pagamentos reais, deverá completar a homologação da sua integração a partir da [página das credenciais.](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials) Mais tarde Mercado Pago pode verificar o seu site afim que sejam cumpridos todos os detalhes a seguir. Caso contrário, um assessor entrará em contato contigo para dizer se há algo que deve ser corrigido na sua integração.
+Quando tenha a aplicação pronta e funcionando na modalidade Sandbox e quiser começar a processar pagamentos reais, deverá completar a homologação da sua integração a partir da [página das credenciais.]([FAKER][CREDENTIALS][URL]) Mais tarde Mercado Pago pode verificar o seu site afim que sejam cumpridos todos os detalhes a seguir. Caso contrário, um assessor entrará em contato contigo para dizer se há algo que deve ser corrigido na sua integração.
 
 ## Por que é necessário esse processo?
 

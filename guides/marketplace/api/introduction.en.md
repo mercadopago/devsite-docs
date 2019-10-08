@@ -24,7 +24,7 @@ After creating the application, you only need to take the second and third steps
 
 ## Credentials
 
-Similar to the Payment API, you have a pair of private keys to connect to the API. You can find these keys in the [credentials of your account](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+Similar to the Payment API, you have a pair of private keys to connect to the API. You can find these keys in the [credentials of your account]([FAKER][CREDENTIALS][URL]).
 
 The **credencial pública**, or *public\_key*, is used to access all features your frontend will need to collect the credit card info, and tokenize it.
 

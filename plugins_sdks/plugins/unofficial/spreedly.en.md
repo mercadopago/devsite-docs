@@ -11,7 +11,7 @@ The available Spreedly methods with Mercado Pago are:
 - Void
 - Verify
 
-To integrate Spreedly you need to obtain and setup your Mercado Pago keys.You can find these keys in the [credentials section of your account](https://www.mercadopago.com.ar/account/credentials).
+To integrate Spreedly you need to obtain and setup your Mercado Pago keys.You can find these keys in the [credentials section of your account]([FAKER][CREDENTIALS][URL]).
 
 In addition, you have to set up the country code:
 

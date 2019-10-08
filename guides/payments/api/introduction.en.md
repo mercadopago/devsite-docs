@@ -13,7 +13,7 @@ With our APIs:
 
 ## Credentials
 
-You have two pairs of keys to connect to the API, one for a test mode and the other for the production mode. You can find these keys in the [credenciales de tu cuenta](https://www.mercadopago.com.ar/account/credentials).
+You have two pairs of keys to connect to the API, one for a test mode and the other for the production mode. You can find these keys in the [credenciales de tu cuenta]([FAKER][CREDENTIALS][URL]).
 
 The **public key**, or *public_key*, is used to access all features your frontend will need to collect the credit card info and tokenize it.
 
@@ -29,7 +29,7 @@ Initially, your application will only be able to interact with Mercado Pago in *
 
 We will provide you with test cards, so that you can simulate transactions as if they were real.
 
-As soon as you have [tested your application](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing), you must complete the “I want to go to production” form that you will find in your [credentials.](https://www.mercadopago.com.ar/account/credentials)
+As soon as you have [tested your application](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing), you must complete the “I want to go to production” form that you will find in your [credentials.]([FAKER][CREDENTIALS][URL])
 
 Your application will be automatically activated. All you should do is replace the sandbox keys with the production ones in your code.
 
@@ -44,7 +44,7 @@ Once you have tested you application in _Sandbox_ mode, you have to complete the
 * Communicate the [promotions and financing possibilities] (https://www.mercadopago.com.ar/promociones) offered by Mercado Pago. You can include our [institutional banners] (https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales).
 
 
-> When you have fulfilled the requirements, you must complete the form **I want to go live** that you can find in your account [credentials](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials)
+> When you have fulfilled the requirements, you must complete the form **I want to go live** that you can find in your account [credentials]([FAKER][CREDENTIALS][URL])
 
 The failure of fulfillment of these rules may involve: not processing payments and legal actions in accordance with the [terms and conditions] (https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299) .
 You must have a policy of terms and conditions, in which you specify that you are responsible for all the data that is entered into your site.

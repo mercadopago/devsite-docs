@@ -103,7 +103,7 @@ Você também pode [usar cartões de teste para formas de pagamento locais de ca
 
 O processo completo para testar o checkout é o seguinte:
 
-1. Inicie a sessão no Mercado Pago com o **vendedor** e obtenha as [credenciais](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials) para configurá-las na criação da preferência de pagamento.
+1. Inicie a sessão no Mercado Pago com o **vendedor** e obtenha as [credenciais]([FAKER][CREDENTIALS][URL]) para configurá-las na criação da preferência de pagamento.
 2. Encerre a sessão no Mercado Pago.
 3. Envie o e-mail do **comprador** na preferência de pagamento.
 4. Preencha os dados do formulário, inserindo os dígitos de um cartão de teste. Na data de vencimento é necessário inserir qualquer data posterior à data atual e o código de segurança aleatório de 4 dígitos para cartões Amex ou 3 dígitos para quaisquer outros cartões.

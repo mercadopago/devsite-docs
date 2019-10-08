@@ -3,11 +3,11 @@
 
 ## Dónde puedo encontrar mis credenciales
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## Mis credenciales expiraron, ¿cómo puedo renovarlas?
 
-Podés renovar tus credenciales desde la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+Podés renovar tus credenciales desde la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Por motivos de seguridad las credenciales caducan pero no te preocupes, las podés renovar todas las veces que sea necesario.
 
@@ -15,7 +15,7 @@ Tené en cuenta que tenés que reemplazar las credenciales que ya usabas por las
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tenés que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials).
+Tenés que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Este formulario es necesario para hacer operaciones con dinero real.
 
@@ -31,11 +31,11 @@ Al completar los campos, tené en cuenta:
 
 ## Dónde puedo encontrar mis credenciales
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials).
+Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## Mis credenciales expiraron, ¿cómo puedo renovarlas?
 
-Puedes renovar tus credenciales desde la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials).
+Puedes renovar tus credenciales desde la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Por motivos de seguridad las credenciales caducan pero no te preocupes, las puedes renovar todas las veces que sea necesario.
 
@@ -43,7 +43,7 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials).
+Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Este formulario es necesario para hacer operaciones con dinero real.
 
@@ -59,11 +59,11 @@ Al completar los campos, ten en cuenta:
 
 ## Dónde puedo encontrar mis credenciales
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials).
+Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## Mis credenciales expiraron, ¿cómo puedo renovarlas?
 
-Puedes renovar tus credenciales desde la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials).
+Puedes renovar tus credenciales desde la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Por motivos de seguridad las credenciales caducan pero no te preocupes, las puedes renovar todas las veces que sea necesario.
 
@@ -71,7 +71,7 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales.](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials)
+Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales.]([FAKER][CREDENTIALS][URL])
 
 Este formulario es necesario para hacer operaciones con dinero real.
 
@@ -86,11 +86,11 @@ Al completar los campos, ten en cuenta:
 
 ## Dónde puedo encontrar mis credenciales
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials).
+Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## Mis credenciales expiraron, ¿cómo puedo renovarlas?
 
-Puedes renovar tus credenciales desde la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials).
+Puedes renovar tus credenciales desde la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Por motivos de seguridad las credenciales caducan pero no te preocupes, las puedes renovar todas las veces que sea necesario.
 
@@ -98,7 +98,7 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials).
+Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Este formulario es necesario para hacer operaciones con dinero real.
 
@@ -113,11 +113,11 @@ Al completar los campos, ten en cuenta:
 
 ## Dónde puedo encontrar mis credenciales
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials).
+Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## Mis credenciales expiraron, ¿cómo puedo renovarlas?
 
-Puedes renovar tus credenciales desde la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials).
+Puedes renovar tus credenciales desde la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Por motivos de seguridad las credenciales caducan pero no te preocupes, las puedes renovar todas las veces que sea necesario.
 
@@ -125,7 +125,7 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials).
+Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Este formulario es necesario para hacer operaciones con dinero real.
 
@@ -140,11 +140,11 @@ Al completar los campos, ten en cuenta:
 
 ## Dónde puedo encontrar mis credenciales
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials).
+Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones. Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## Mis credenciales expiraron, ¿cómo puedo renovarlas?
 
-Puedes renovar tus credenciales desde la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials).
+Puedes renovar tus credenciales desde la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Por motivos de seguridad las credenciales caducan pero no te preocupes, las puedes renovar todas las veces que sea necesario.
 
@@ -152,7 +152,7 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 ### Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials).
+Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Este formulario es necesario para hacer operaciones con dinero real.
 

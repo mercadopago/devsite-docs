@@ -102,7 +102,7 @@ You can also [use test credit cards from local payment methods in each country](
 
 The complete process for testing the checkout is as follows:
 
-1. Log in to Mercado Pago with the **seller** and get the [credentials](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials) to configure them in the creation of the payment preference.
+1. Log in to Mercado Pago with the **seller** and get the [credentials]([FAKER][CREDENTIALS][URL]) to configure them in the creation of the payment preference.
 2. Log out from MercadoPago.
 3. Send the **buyer's** mail in the payment preference.
 4. Complete the form, entering the digits of a test card. On the expiration date you must enter any date after the current date, as well as a 4-digit security code for Amex cards or a 3-digit security code for any other card.
