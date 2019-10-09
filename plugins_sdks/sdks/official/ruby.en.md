@@ -18,7 +18,7 @@ gem install mercadopago-sdk
 
 ### Configure your credentials
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL]).
+* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
 
 ```ruby
 require 'mercadopago.rb'

@@ -15,7 +15,7 @@
 
 ### Configure suas credenciais
 
-* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [no seguinte endereço]([FAKER][CREDENTIALS][URL]).
+* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [no seguinte endereço]([FAKER][CREDENTIALS][URL_BASIC]).
 
 ```ruby
 require 'mercadopago.rb'
