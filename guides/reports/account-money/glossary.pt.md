@@ -1,7 +1,3 @@
----	
-sites_supported:	
-  - mlb
----
 
 # Glossário
 

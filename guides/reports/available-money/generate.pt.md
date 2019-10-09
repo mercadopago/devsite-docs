@@ -1,7 +1,3 @@
----	
-sites_supported:	
-  - mlb
----
 
 # Como gerar o seu relatório de Dinheiro Disponível?
 

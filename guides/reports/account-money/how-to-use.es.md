@@ -1,12 +1,3 @@
----	
-sites_supported:	
-  - mla	
-  - mpe	
-  - mco	
-  - mlu	
-  - mlm	
-  - mlc	
----
 
 # ¿Cómo usar el reporte?
 
