@@ -1,7 +1,3 @@
----
-sites_supported:
-  - mlb
----
 
 # Geração via API
 

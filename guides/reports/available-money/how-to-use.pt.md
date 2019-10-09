@@ -1,7 +1,3 @@
----
-sites_supported:
-  - mlb
----
 
 # Como usar o relatório?
 
@@ -53,7 +49,7 @@ Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à su
 
 Observe como está composto o relatório de dinheiro disponível neste exemplo para identificar as seções e analisar seus próprios relatórios:
 
-![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
+![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-pt.png)
 
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível. Se você quiser menos detalhes ou se há colunas que não servem para a sua conciliação, você pode alterar quais delas quer incluir ou não em Ajustes.
 

@@ -1,7 +1,3 @@
----
-sites_supported:
-  - mlb
----
 
 # O que é o relatório de Dinheiro em conta?
 

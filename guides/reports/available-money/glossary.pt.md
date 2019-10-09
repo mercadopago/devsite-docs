@@ -1,12 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
 
 # Glossário
 
@@ -39,3 +30,24 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | STORE_ID | ID da loja se o pagamento é feito em um comércio físico. |
 | STORE_NAME | Nome da loja para o pagamento feito em um comércio físico. |
 | EXTERNAL_STORE_ID | ID da lojal definido pelo usuário para o pagamento feito em um comércio físico. |
+
+
+<hr/>
+
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Como usar o relatório
+>
+> Saiba como o relatório é composto e aprenda a analisá-lo.
+>
+> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/how-to-use/)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/generate/)
