@@ -15,4 +15,4 @@ sites_supported:
 >
 > No momento, esta página não está disponível em português.
 >
-> [Ver documentação em espanhol](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-unattended-part2/)
+> [Ver documentação em espanhol](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-attended-partB/)

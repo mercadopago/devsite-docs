@@ -87,8 +87,8 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 ### 1. Con tu usuario vendedor, asigna una orden a un punto de venta. 
 
 Genera una orden con las [credenciales](https://www.mercadopago.com/mla/account/credentials) del usuario de pruebas que quieras usar como vendedor:
-  - Para [modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-attended-part1/), envía una orden al QR previamente creado. 
-  - Para [modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-unattended-part1/), disponibiliza la orden en la URL asignada.
+  - Para [modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-attended-partA/), envía una orden al QR previamente creado. 
+  - Para [modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-unattended-partA/), disponibiliza la orden en la URL asignada.
 
 ### 2. Realiza un pago con tu usuario comprador
   - A. Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.

@@ -62,7 +62,7 @@ Te explicamos cómo funciona el modelo atendido:
 ### Próximos pasos
 
 <div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-attended-part2/" style="text-decoration:none;color:inherit">       
+<a href="https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-attended-partB/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Cómo integrar QR modelo atendido<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
  <p>Conoce paso a paso como integrar este modelo.</p>

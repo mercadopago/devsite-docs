@@ -118,13 +118,13 @@ Una vez creada la caja, podremos ver en el “Response” los links a distintos 
 ### Próximos pasos
 
 <div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-attended-part1/" style="text-decoration:none;color:inherit">       
+<a href="https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-attended-partA/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
 <p class="card-note-title">Integrar QR modelo atendido<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Si en tu proceso de venta, es necesario que participe un operador, revisa este modelo!</p>
 </blockquote>
 </a>    
-<a href="https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-unattended-part1/" style="text-decoration:none;color:inherit">
+<a href="https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-unattended-partA/" style="text-decoration:none;color:inherit">
 <blockquote class="next-step-card next-step-card-right">
 <p class="card-note-title">Integrar QR modelo desatendido<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
  <p>Si puede concretarse la venta solamente con la acción del cliente, este es tu modelo!</p>
