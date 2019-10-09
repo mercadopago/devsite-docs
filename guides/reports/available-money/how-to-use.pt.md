@@ -1,3 +1,7 @@
+---	
+sites_supported:	
+  - mlb
+---
 
 # Como usar o relatório?
 

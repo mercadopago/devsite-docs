@@ -1,3 +1,12 @@
+---	
+sites_supported:	
+  - mla	
+  - mpe	
+  - mco	
+  - mlu	
+  - mlm	
+  - mlc	
+---
 
 # Generación por panel de Mercado Pago
 

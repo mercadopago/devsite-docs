@@ -1,3 +1,7 @@
+---	
+sites_supported:	
+  - mlb
+---
 
 # O que é o Relatório de Dinheiro Disponível?
 
