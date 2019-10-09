@@ -29,7 +29,7 @@ A preferência de pagamentos contém todas as informações sobre o produto ou s
 * Meios de pagamentos aceitos.
 * ID de referência do seu sistema.
 
-Para criar uma preferência de pagamento, você deve [instalar o SDK do MercadoPago](https://www.mercadopago.com.br/developers/pt/plugins_sdks) e configurar suas [credenciais](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic).
+Para criar uma preferência de pagamento, você deve [instalar o SDK do MercadoPago](https://www.mercadopago.com.br/developers/pt/plugins_sdks) e configurar suas [credenciais]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php

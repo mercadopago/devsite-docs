@@ -142,15 +142,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
 
 ### Configura tus credenciales
 
-Obtén tu **ACCESS_TOKEN** en los siguientes links:
-
-* Argentina: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials]([FAKER][CREDENTIALS][URL])
-* Brasil: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials]([FAKER][CREDENTIALS][URL])
-* México: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials]([FAKER][CREDENTIALS][URL])
-* Colombia: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials]([FAKER][CREDENTIALS][URL])
-* Perú: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials]([FAKER][CREDENTIALS][URL])
-* Chile: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials]([FAKER][CREDENTIALS][URL])
-* Uruguay: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials]([FAKER][CREDENTIALS][URL])
+Obtén tu **ACCESS_TOKEN** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
 
 ``` python

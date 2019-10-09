@@ -8,9 +8,12 @@
 <a name="install"></a>
 ## Install
 
-```gem install mercadopago-sdk```
+```
+gem install mercadopago-sdk
+```
 
 <a name="basic-checkout"></a>
+
 ## Basic checkout
 
 ### Configure your credentials
@@ -105,11 +108,7 @@ puts result
 
 ### Configure your credentials
 
-* Get your **ACCESS_TOKEN** in the following address:
-    * Argentina: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials]([FAKER][CREDENTIALS][URL])
-    * Brazil: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials]([FAKER][CREDENTIALS][URL])
-    * Mexico: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials]([FAKER][CREDENTIALS][URL])
-    * Colombia: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials]([FAKER][CREDENTIALS][URL])
+* Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
 ```ruby
 require 'mercadopago.rb'

@@ -11,7 +11,7 @@ Si no tienes una cuenta, haz clic en **"Inscríbete"**. Rellene el formulario de
 
 ## Accdet Credenciales
 
-Una vez Autenticado en su cuenta de Mercado Pago, acceda a lo siguiente link: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials/](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials/).
+Una vez Autenticado en su cuenta de Mercado Pago, acceda a lo siguiente link: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials/]([FAKER][CREDENTIALS][URL]).
 Usted accede a la página de credenciales de su cuenta.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)

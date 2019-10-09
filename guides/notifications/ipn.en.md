@@ -102,4 +102,4 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 ?>
 ```
 
-> To get your `ACCESS_TOKEN`, check the [Credentials](https://www.mercadopago.com.ar/account/credentials?type=basic) section.
+> To get your `ACCESS_TOKEN`, check the [Credentials]([FAKER][CREDENTIALS][URL]) section.

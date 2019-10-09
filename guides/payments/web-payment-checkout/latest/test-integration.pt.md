@@ -65,7 +65,7 @@ curl -X POST \
 
 ### 1. Configure o checkout com os dados do seu usuário vendedor
 
-Gere uma preferência com as <a href="https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais</a> do usuário de teste que quiser usar como vendedor.
+Gere uma preferência com as <a href="([FAKER][CREDENTIALS][URL])" target="_blank"> credenciais</a> do usuário de teste que quiser usar como vendedor.
 
 ### 2. Faça um pagamento de teste com seu usuário comprador
 
@@ -112,7 +112,7 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve preencher o formulário <a href="https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials/" target="_blank"> Quero ir para produção</a>.
+Para começar a cobrar, você deve preencher o formulário <a href="([FAKER][CREDENTIALS][URL])" target="_blank"> Quero ir para produção</a>.
 
 Ao terminar o formulário, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 

@@ -61,7 +61,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Agrega las <a href="https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
+<br/><br/>1.2 Agrega las <a href="([FAKER][CREDENTIALS][URL])" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
 
 [[[
 ```php

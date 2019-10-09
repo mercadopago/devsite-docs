@@ -71,19 +71,11 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 3. Click en **Save**
 
 4. Ir a **Configuration** <br/>
-  Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, complete tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
+  Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, completa tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-  Puedes obtener tu **Client_id** y **Client_secret**, dependiendo e tu país en los siguientes links:
-
-  * Argentina: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Brazil: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Chile: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Colombia: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Mexico: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Peru: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Uruguay: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials]([FAKER][CREDENTIALS][URL])
+Encuentra tu **Client_id** y **Client_secret** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configuraciones del Checkout. <br/>
 
@@ -138,15 +130,7 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 
 ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
-
-  * Argentina: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Brazil: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Chile: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Colombia: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Mexico: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Peru: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Uruguay: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials]([FAKER][CREDENTIALS][URL])
+Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
 7. Configuración del checkout. <br/>
 
@@ -188,15 +172,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 ![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
-
-  * Argentina: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Brazil: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Chile: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Colombia: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Mexico: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Peru: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials]([FAKER][CREDENTIALS][URL])
-  * Uruguay: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials]([FAKER][CREDENTIALS][URL])
+Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
 7. Configuración IPN. <br/>
 

@@ -49,7 +49,7 @@ In order to use callbacks, simply pass a function as the last parameter.
 
 ## Configure
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL]).
+* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
 
 ### Configure Method
 

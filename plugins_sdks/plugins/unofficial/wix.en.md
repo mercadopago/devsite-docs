@@ -29,7 +29,7 @@ The steps to start trading with Mercado Pago are as follows:
 
 ![wix_configuration3](/images/wix_configuration3.png)
 
-4. To connect the account, two information is requested: **CUSTOMER ID** and **CLIENT_SECRET**. This data is the credentials of Mercado Pago and is available at the following [LINK]([FAKER][CREDENTIALS][URL])of your account.
+4. To connect the account, two information is requested: **CUSTOMER ID** and **CLIENT_SECRET**. This data is the credentials of Mercado Pago and is available at the following [LINK]([FAKER][CREDENTIALS][URL_BASIC]) of your account.
 
 ![wix_configuration4](/images/wix_configuration4.png)
 

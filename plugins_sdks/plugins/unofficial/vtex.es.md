@@ -375,8 +375,8 @@ El checkout redirect puede convivir con el checkout transparente.
 6. Buscar y seleccionar "MercadoPago".
 7. Completar la siguiente información requerida en la afiliación.
 - Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic).
-- Client_secret -> Ver [Credenciales](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic).
+- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
+- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
 - AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
 - Pais -> Seleccionar País
 - Time Zone -> Región que define la hora local
