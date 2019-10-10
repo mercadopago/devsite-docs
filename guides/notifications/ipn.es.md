@@ -70,7 +70,7 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 
 	switch($_GET["topic"]) {
 		case "payment":
-			$payment = MercadoPago\Payment::find_by_id($_GET["data_id"]);
+			$payment = MercadoPago\Payment::find_by_id($_GET["id"]);
 			// Get the payment and the corresponding merchant_order reported by the IPN.
 			$merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
 			break;
