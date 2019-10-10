@@ -13,15 +13,15 @@ Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações pa
 
 **Usando Package Manager**
 
-`PM> Install-Package mercadopago-sdk -Version [VERSION-dx-dotnet]`
+`PM> Install-Package mercadopago-sdk -Version 1.2.0`
 
 **Usando .Net CLI**
 
-`> dotnet add package mercadopago-sdk --version [VERSION-dx-dotnet]`
+`> dotnet add package mercadopago-sdk --version 1.2.0`
 
 **Usando Packet CLI**
 
-`> paket add mercadopago-sdk --version [VERSION-dx-dotnet]`
+`> paket add mercadopago-sdk --version 1.2.0`
 
 ## Início Rápido
 
