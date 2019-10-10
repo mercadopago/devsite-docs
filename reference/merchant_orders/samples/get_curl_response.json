@@ -120,5 +120,6 @@
   ],
   "cancelled": false,
   "additional_info": "additional information",
-  "application_id": 9999999999999999
+  "application_id": 9999999999999999,
+  "order_status": "paid"
 }
