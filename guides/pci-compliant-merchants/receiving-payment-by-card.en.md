@@ -189,7 +189,7 @@ To deploy the generation of the device on your website, you must add the followi
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-It is important that you submit the javascript automatically created global variable `MP_DEVICE_SESSION_ID` to your server and add the following header to the request when creating the payment:
+It is important that you submit the automatically created javascript global variable `MP_DEVICE_SESSION_ID` to your server and add the following header to the request when creating the payment:
 
 ```http
 X-meli-session-id: device_id

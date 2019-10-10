@@ -372,7 +372,7 @@ In order get the best approval rates as possible you can send additional informa
 
 Mercado Pago has it's own fraud prevention tools, that is why we recommend to send information about the customer's device. This will help to avoid fraudulent transactions and will improve your payment approval rates.
 
-To deploy the generation of the device on your website, you must add the following code to your checkout:
+To implement the generation of the device on your website, you must add the following code to your checkout:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
