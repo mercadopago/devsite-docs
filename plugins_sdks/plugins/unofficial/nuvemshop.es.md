@@ -14,19 +14,19 @@ Recibir pagos en su tienda utilizando el checkout de Mercado Pago, en este model
 
 ## Cuenta Mercado Pago
 
-Antes de comenzar la configuración, es necesario que tenga una cuenta válida en ** Mercado Pago **, si no lo tiene, puede realizar el registro accediendo al [formulario de registro] (https://www.mercadopago.com)
+Antes de comenzar la configuración, es necesario que tenga una cuenta válida en **Mercado Pago**, si no lo tiene, puede realizar el registro accediendo al [formulario de registro](https://www.mercadopago.com)
 
-Si desea saber más sobre  ** Mercado Pago ** acceda a nuestra página principal (https://www.mercadopago.com/).
+Si desea saber más sobre  **Mercado Pago** acceda a nuestra página principal (https://www.mercadopago.com/).
 
 ## Cómo habilitar Mercado Pago en Tiendanube
 
 1. Acceder al administrador de tu tienda en la plataforma.
-2. En el menú configuración, seleccione la opción ** MEDIOS DE PAGO **
+2. En el menú configuración, seleccione la opción **MEDIOS DE PAGO**
 
     ![Payments Modules - Nuvemshop](/images/NuvemShopmeiodepagamento1.png)
    
 
-3. Haga clic en el botón ** ACTIVAR ** en el marco de Mercado Pago.
+3. Haga clic en el botón **ACTIVAR** en el marco de Mercado Pago.
 
     ![Enabling Mercado Pago in Nuvemshop](/images/NuvemShopativarMP.png)
 
@@ -38,7 +38,7 @@ Si desea saber más sobre  ** Mercado Pago ** acceda a nuestra página principal
 
     ![Authorization message from the Nuvemshop with the Mercado Pago](/images/NuvemShoppermitirMP.png)
 
-6. Después de hacer clic en ** PERMITIR ** usted será redirigido de vuelta a la sección administrativa de la plataforma, en la pantalla de ajustes del módulo Mercado Pago.
+6. Después de hacer clic en **PERMITIR** usted será redirigido de vuelta a la sección administrativa de la plataforma, en la pantalla de ajustes del módulo Mercado Pago.
 
 
-Con eso Mercado Pago está instalado y ** activado **.
+Con eso Mercado Pago está instalado y **activado**.

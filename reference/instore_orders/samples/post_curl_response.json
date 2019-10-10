@@ -60,7 +60,7 @@
   },
   "expires": false,
   "additional_info": "",
-  "site_id": "[FAKER][GLOBALIZE][UPPER_SITE_ID]",
+  "site_id": "[FAKER][GLOBALIZE][SITE_ID]",
   "client_id": 360472057,
   "processing_modes": [
       "aggregator"

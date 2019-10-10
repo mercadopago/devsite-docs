@@ -36,7 +36,7 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 2) En **Accept credit cards**, seleccione **Mercado Pago**.
 
-3) Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
+3) Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales]([FAKER][CREDENTIALS][URL])
 
   ![Configurar client id y client secret Mercado Pago Shopify](/images/shopify/shopify-config-2.gif)
 

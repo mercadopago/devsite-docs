@@ -114,7 +114,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 
 ![Configurando tarjeta de crédito y otros medios de pago Mercado Pago Magento](/images/magento/magento-config-01.gif)
 
-2) Para configurar las credenciales acceda a la opción **Mercado Pago - Custom Checkout**, aparecerá el campo **Public Key** y el campo **Access Token**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
+2) Para configurar las credenciales acceda a la opción **Mercado Pago - Custom Checkout**, aparecerá el campo **Public Key** y el campo **Access Token**. [Obtén tus credenciales]([FAKER][CREDENTIALS][URL])
 
 ![Configurar las credenciales Mercado Pago Magento](/images/magento/magento-config-02.gif)
 
@@ -138,7 +138,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 ![Configurando Checkout Redirect, Iframe and LightBox Mercado Pago Magento](/images/magento/magento-config-01.gif)
 
-2) Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
+2) Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obtén tus credenciales]([FAKER][CREDENTIALS][URL])
 
 ![Configurando credenciales - Checkout redirect Mercado Pago Magento](/images/magento/magento-config-04.gif)
 
@@ -184,7 +184,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con suscr
 
 ![Configurando pagos recurrentes Mercado Pago Magento](/images/magento/magento-config-01.gif)
 
-2) Para configurar las credenciales acceda a la opción **Mercado Pago - Recurring Payments**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obten tus credenciales en la url](https://www.mercadopago.com/mla/account/credentials?type=basic)
+2) Para configurar las credenciales acceda a la opción **Mercado Pago - Recurring Payments**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client Secret**. [Obten tus credenciales en la url]([FAKER][CREDENTIALS][URL])
 
 ![Configurar credenciales - Recurring Payments Mercado Pago Magento](/images/magento/magento-config-re-01.gif)
 

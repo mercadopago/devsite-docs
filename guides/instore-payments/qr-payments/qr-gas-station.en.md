@@ -41,7 +41,7 @@ First you must familiarize yourself with the following concepts since you will u
 
 | Attribute                    | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN`               | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account where the payments will be accredited. |
+| `ACCESS_TOKEN`               | It is the [access token]([FAKER][CREDENTIALS][URL]) of the Mercado Pago account where the payments will be accredited. |
 | `COLLECTOR_ID`               | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
 | `EXTERNAL_ID`                | It is the unique identifier of the supplier. It is an alphanumeric code defined by you, it can not contain spaces or special characters and the uppercase of the lowercase is not distinguished. |
 | `SPONSOR_ID`                 | `COLLECTOR_ID` of a developer's Mercado Pago account. You must create an account by brand (YPF, Shell, Axion, etc). |

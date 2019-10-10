@@ -4,7 +4,7 @@ Es muy importante que antes de salir a producción realices pruebas del flujo co
 
 Una buena experiencia de tus clientes en el _checkout_ ayuda a mejorar la conversión.
 
-Cuentas con un par de [credenciales de _sandbox_](https://www.mercadopago.com.ar/account/credentials?type=custom), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
+Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
 
 | País     	 | Visa 				       | Mastercard        | American Express |
 | ---- 		   | ---- 				       | ----------        | ---------------- |

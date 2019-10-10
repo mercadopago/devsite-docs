@@ -35,7 +35,7 @@ window.Mercadopago.setPublishableKey(ENV_PUBLIC_KEY);
 >
 > Nota
 >
-> Esta é uma chave pública do ambiente de testes. Para capturar cartões reais, você deve substituí-la pela sua [chave pública de produção](https://www.mercadopago.com/mla/account/credentials).
+> Esta é uma chave pública do ambiente de testes. Para capturar cartões reais, você deve substituí-la pela sua [chave pública de produção]([FAKER][CREDENTIALS][URL]).
 
 
 ### 3. Capturar dados do cartão

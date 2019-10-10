@@ -40,7 +40,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
     ![CORE Configuracao](/images/core3.png)
 
 
-5. No menu **Integração** informe as [credenciais de sua conta mercado pago](https://www.mercadopago.com/mlb/account/credentials).
+5. No menu **Integração** informe as [credenciais de sua conta mercado pago]([FAKER][CREDENTIALS][URL]).
 
     ![CORE Configuracao](/images/core0.png)
 
@@ -71,7 +71,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
     ![CORE Configuracao](/images/core4.png)
 
 
-5. No menu **Integração** informe as [credenciais de sua conta mercado pago](https://www.mercadopago.com/mlb/account/credentials).
+5. No menu **Integração** informe as [credenciais de sua conta mercado pago]([FAKER][CREDENTIALS][URL]).
 
     ![CORE Configuracao](/images/core5.png)
 

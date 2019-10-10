@@ -61,7 +61,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Add the <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credentials</a> to enable the use of the Mercado Pago SDK:<br/>
+<br/><br/>1.2 Add the <a href="([FAKER][CREDENTIALS][URL])" target="_blank"> credentials</a> to enable the use of the Mercado Pago SDK:<br/>
 
 [[[
 ```php

@@ -22,7 +22,7 @@ First, you must familiarize yourself with the following concepts since you will 
 
 | Attribute      | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN` | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account to which the charges will be credited. |
+| `ACCESS_TOKEN` | It is the [access token]([FAKER][CREDENTIALS][URL]) of the Mercado Pago account to which the charges will be credited. |
 | `COLLECTOR_ID` | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
 
 ## Objects
