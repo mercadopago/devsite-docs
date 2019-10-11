@@ -182,20 +182,13 @@ O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Semp
 
 ### Implementação de dispositivo na Web
 
-Para implementar a geração do dispositivo em seu site, adicione o seguinte código em seu checkout, substituindo o campo `publicKey`:
+Para implementar a geração do dispositivo em seu site, adicione o seguinte código em seu checkout:
 
-```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-    });
-}
-document.body.appendChild(dmlscript);
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
- É importante que envie o campo `MP_DEVICE_SESSION_ID` (gerado automaticamente após a execução do código acima) para o seu servidor, que no momento da criação do pagamento você adiciona o seguinte header ao request:
+ É importante que envie o campo `MP_DEVICE_SESSION_ID` (gerado automaticamente como uma variável javascript global) para o seu servidor, que no momento da criação do pagamento você adiciona o seguinte header ao request:
 
 
 ```http
