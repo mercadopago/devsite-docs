@@ -111,7 +111,7 @@ Caso | Resultado esperado | Observaciones
 
 ## Quiero ir a Producción
 
-Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
+Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes completar el formulario [Quiero ir a producción]([FAKER][CREDENTIALS][URL]). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
 > WARNING
 > 
