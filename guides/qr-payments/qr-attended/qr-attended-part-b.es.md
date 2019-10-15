@@ -25,11 +25,11 @@ https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_tok
     		   "title" : [FAKER][COMMERCE][PRODUCT_NAME],
     		   "currency_id" : [FAKER][CURRENCY][ACRONYM],
     		   "unit_price" : 120.00,
-    	           "quantity" : 1,
-                   "description": "Producto de Mercado Pago",
-                   "picture_url": "https://bit.ly/2lCRcEN"
-
-    		    },{
+    	     "quantity" : 1,
+           "description": "Producto de Mercado Pago",
+           "picture_url": "https://bit.ly/2lCRcEN"
+    		    },
+            {
     		   "title" : [FAKER][COMMERCE][PRODUCT_NAME],
     		   "currency_id" : [FAKER][CURRENCY][ACRONYM],
     		   "unit_price" : 100.00,
@@ -38,7 +38,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_tok
     "sponsor_id": 446566691
 }
 ```
-Puedes obtener más información en la [Referencias de API](www.google.com).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post/).
 
 > NOTE
 > 

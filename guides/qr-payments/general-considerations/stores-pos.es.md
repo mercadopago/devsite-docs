@@ -42,9 +42,6 @@ Ejecuta el siguiente código para generarla:
 
 [[[
  ```curl
-===
-API de creación de Sucursales
-===
 curl -X POST https://api.mercadopago.com/users/$COLLECTOR_ID/stores?access_token=PROD_ACCESS_TOKEN -d
 {  
    "name":"Sucursal Instore",
@@ -80,7 +77,8 @@ curl -X POST https://api.mercadopago.com/users/$COLLECTOR_ID/stores?access_token
 ```
 ]]]
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/stores/_users_user_id_stores/post/).
+
 
 ## Cajas
 
@@ -94,9 +92,6 @@ Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguie
 
 [[[
  ```curl
-===
-API de creación de Cajas
-===
 curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
 {
   "name":"Caja Principal", 
@@ -109,7 +104,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
 ```
 ]]]
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/pos/_pos/post/).
 
 Una vez creada la caja, podremos ver en el “Response” los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 

@@ -4,7 +4,7 @@
 
 **IPN** (_Instant Payment Notification_) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
-Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Para recibir las notificaciones de los eventos en tu plataforma, puedes [configurar previamente una notification_url a la cual Mercado Pago tenga acceso](https://www.mercadopago.com.ar/herramientas/notificaciones).
 
 
 ## Eventos
@@ -13,7 +13,7 @@ Notificamos eventos referidos a tus órdenes (`merchant_orders`), pagos recibido
 
 La `merchant_orders` es una entidad que agrupa tanto pagos como envíos. Tendrás que consultar los datos de las órdenes que te sean notificadas.
 
-Siempre que suceda un evento relacionado a alguno de los recursos mencionados, te enviaremos una notificación usando `HTTP POST` a la URL que especificaste.
+Siempre que suceda un evento relacionado a alguno de los recursos mencionados, te enviaremos una notificación usando `HTTP POST` a la `notification_url` que especificaste.
 
 Si la aplicación no está disponible o demora en responder más de 22 segundos, Mercado Pago reintentará la notificación mediante el siguiente esquema:
 
@@ -23,7 +23,7 @@ Si la aplicación no está disponible o demora en responder más de 22 segundos,
 4. Reintento a los 2 días.
 5. Reintento a los 4 días.
 
-Mercado Pago informará a esta URL tanto en la creación como actualización de los estados de pagos u ordenes con dos parámetros:
+Mercado Pago informará a esta `notification_url` tanto en la creación como actualización de los estados de pagos u ordenes con dos parámetros:
 
 | Campo 		| Descripción 				 |
 | ---- 		| ---- 				 |
@@ -31,7 +31,7 @@ Mercado Pago informará a esta URL tanto en la creación como actualización de 
 | `id` | Es un identificador único del recurso notificado. |
 
 
-Ejemplo: Si configuraste la URL: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago de esta manera: `https://www.yoursite.com/notifications?topic=payment&id=123456789`
+Ejemplo: Si configuraste la notification_url: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago de esta manera: `https://www.yoursite.com/notifications?topic=payment&id=123456789`
 
 ## ¿Qué debo hacer al recibir una notificación?
 
@@ -116,6 +116,8 @@ Más información en la [Referencia de API](https://www.mercadopago.com.ar/devel
 
 Se puede implementar la **búsqueda** por external_reference de dos formas:
 
+| Formas	|	Descripción		|
+| ----------- | ----------------- |
 | **Manual** | El punto de venta debe incluir un botón para realizar la búsqueda. |
 | **Automática** | Pasado un tiempo prudencial sin haber recibido alguna notificación, se comienza una búsqueda de la orden cada un intervalo de, por ejemplo, 5 segundos. |
 

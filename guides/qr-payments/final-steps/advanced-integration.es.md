@@ -30,7 +30,7 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 
 ## Genera reportes de tus ventas
 
-Integra los [reportes de conciliación de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reconciliation-reports/) con tu sistema para conciliar tus ventas y conocer los movimientos de tu cuenta.
+Integra los [reportes de conciliación de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/general-considerations/reconciliation-reports/) con tu sistema para conciliar tus ventas y conocer los movimientos de tu cuenta.
 
 ## Prueba y valida tu integración
 

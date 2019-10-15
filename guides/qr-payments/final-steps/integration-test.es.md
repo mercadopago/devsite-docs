@@ -74,13 +74,11 @@ American Express | 3711 8030 3257 522 | 1234 | 11/25
 Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
 
 - APRO: Pago aprobado.
-- CONT: Pago pendiente.
 - OTHE: Rechazado por error general.
 - CALL: Rechazado con validación para autorizar.
 - FUND: Rechazado por monto insuficiente.
 - SECU: Rechazado por código de seguridad inválido.
 - EXPI: Rechazado por problema con la fecha de expiración.
-- FORM: Rechazado por error en formulario.
 
 ## Prueba el flujo de pago
 
@@ -111,9 +109,15 @@ Caso | Resultado esperado | Observaciones
 **Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago.com.ar/activities).
 **Cancelar orden**. El usuario se arrepiente y decide pagar en efectivo. | Se elimina la orden, y por ende al escanear el QR sólo se muestra la pantalla de espera. | Eliminar la orden de la caja.
 
-## Homologación
+## Quiero ir a Producción
 
 Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
+
+> WARNING
+> 
+> IMPORTANTE
+> 
+> * Si no completas el formulario de [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/), no podrás hacer ningun tipo de devoluciones.
 
 ## ¿Por qué es necesario este proceso?
 

@@ -10,7 +10,7 @@ Existen diferentes situaciones en las que puedes querer anular una venta:
 >
 > ADVERTENCIA
 >
-> * Ten en cuenta que para pagos presenciales, sólo puedes efectuar devoluciones pero no cancelaciones.
+> * Ten en cuenta que para pagos con QR y POINT, sólo puedes efectuar devoluciones pero no cancelaciones.
 
 ## Cancelaciones
 
