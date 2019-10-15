@@ -14,6 +14,12 @@ Um Marketplace pode ser informado sobre as mudanças de status de um advanced pa
 
 ![Status map](/images/advanced-payments/advanced-payments-status-map.png)
 
+> WARNING
+>
+> Importante
+>
+> Se ocorrer um erro interno na criação do Advanced Payments, ele permanecerá com o status `vacated`.
+
 #### Definição de estados
 
 Estado              |Descrição                                                              |
@@ -27,8 +33,9 @@ cancelled           |O pagamento foi cancelado por uma das partes ou expirou.   
 refunded            |O pagamento foi devolvido ao usuário.                                  |
 partially_refunded  |Parte do pagamento foi devolvida ao usuário.                           |
 charged_back        |Um estorno foi feito no cartão de crédito do comprador.                |
+vacated             |Ocorreu um erro interno.                                               |
 
-#### Notificações de Webhooks
+# Notificações de Webhooks
 
 Se você tiver as notificações configuradas, receberá uma notificação sempre que o Advanced Payment for modificado.
 

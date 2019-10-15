@@ -4,7 +4,7 @@ Antes de partir para a produção, é muito importante que realize testes do flu
 
 Proporcionar uma boa experiência aos seus clientes no checkout ajuda a garantir a conversão.
 
-Você conta com um par de [credenciais do sandbox](https://www.mercadopago.com.br/account/credentials?type=custom), que permitem testar toda a integração em uma réplica exata do Modo de Produção, podendo simular transações utilizando cartões de teste:
+Você conta com um par de [credenciais do sandbox]([FAKER][CREDENTIALS][URL]), que permitem testar toda a integração em uma réplica exata do Modo de Produção, podendo simular transações utilizando cartões de teste:
 
 | País       | Visa                | Mastercard          | American Express  |
 | ---------- | ------------------- | ------------------- | ----------------- |

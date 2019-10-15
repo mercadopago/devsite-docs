@@ -1,6 +1,6 @@
 # Requirements for production environment
 
-When you have your application ready and working in sandbox mode, and you want to start processing real payments, you shall [complete your integration's homologation from the credentials section](https://www.mercadopago.com/mla/account/credentials). Later, MercadoPago may audit your site or app, verifying that the rules listed below are met. Otherwise, a consultant will contact you to discuss if you need to correct something in your integration.
+When you have your application ready and working in sandbox mode, and you want to start processing real payments, you shall [complete your integration's homologation from the credentials section]([FAKER][CREDENTIALS][URL]). Later, MercadoPago may audit your site or app, verifying that the rules listed below are met. Otherwise, a consultant will contact you to discuss if you need to correct something in your integration.
 
 ## Why is this process needed?
 

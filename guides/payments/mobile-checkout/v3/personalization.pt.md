@@ -273,7 +273,7 @@ let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: 
 	let checkoutPreference = CheckoutPreference()
 	checkoutPreference.items = [item]
 	checkoutPreference.payer = payer
-	checkoutPreference.setId("[FAKER][GLOBALIZE][UPPER_SITE_ID]")
+	checkoutPreference.setId("[FAKER][GLOBALIZE][SITE_ID]")
 
 
 let servicePreference = ServicePreference()
@@ -294,7 +294,7 @@ checkout.start()
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
     self.pref = [[CheckoutPreference alloc] initWithItems:items payer:payer paymentMethods:nil];
-	[self.pref setSiteId:@"[FAKER][GLOBALIZE][UPPER_SITE_ID]"];
+	[self.pref setSiteId:@"[FAKER][GLOBALIZE][SITE_ID]"];
 
 	ServicePreference * servicePreference = [[ServicePreference alloc] init];
 	 NSDictionary *extraParams = @{

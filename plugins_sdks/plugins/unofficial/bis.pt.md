@@ -28,9 +28,9 @@ Para habilitar o módulo basta entrar em contato com nossa equipe de suporte pel
 
 Com a conta do MercadoPago já criada, você deve informar os dados abaixo para que o atendente realize as configurações na sua loja, e assim o método de pagamento fique disponível para seus clientes realizem as compras.
 
-Credenciais: https://www.mercadopago.com/mlb/account/credentials
+#### Credenciais
 
-Public Key e Access Token
+[Public Key e Access Token]([FAKER][CREDENTIALS][URL])
 
 ### Canal de Atendimento:
 

@@ -29,7 +29,7 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
 >
 > Nota
 >
-> Puedes encontrar tu public key en la página de [credenciales](https://www.mercadopago.com.ar/account/credentials)
+> Puedes encontrar tu public key en la página de [credenciales]([FAKER][CREDENTIALS][URL])
 
 
 ### Paso 3: Obtener los datos

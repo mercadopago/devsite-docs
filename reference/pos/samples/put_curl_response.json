@@ -1,0 +1,20 @@
+{
+    "id": 2711382,
+    "qr": {
+        "image": "https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
+        "template_document": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf",
+        "template_image": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png"
+    },
+    "status": "active",
+    "date_created": "2019-08-22T10:11:12.000-04:00",
+    "date_last_updated": "2019-08-22T10:11:12.000-04:00",
+    "uuid": "0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1",
+    "user_id": 446566691,
+    "name": "Caja Secundaria",
+    "fixed_amount": false,
+    "category": 473000,
+    "store_id": "123456",
+    "external_store_id": "BK022",
+    "url": "https://www.myserver.com?pos=001",
+    "external_id": "4lph4num3r1c"
+}

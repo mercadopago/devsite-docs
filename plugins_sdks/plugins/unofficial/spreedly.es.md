@@ -10,7 +10,7 @@ Los metodos disponibles de Spreedly con Mercado Pago son:
 - Void
 - Verify
 
-Para la integración con Spreedly es necesario obtener y configurar las credenciales de Mercado Pago que podes obtener desde el siguiente [link](https://www.mercadopago.com/mla/account/credentials)
+Para la integración con Spreedly es necesario obtener y configurar las credenciales de Mercado Pago que podes obtener desde el siguiente [link]([FAKER][CREDENTIALS][URL])
 
 A su vez, también es necesario ingresar el código de país:
 
@@ -362,21 +362,13 @@ Para obtener una mejora en la aprobación de los pagos podes enviar información
 ### Mercado Pago Device Fingerprint
 Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas y mejorará la aprobación de tus pagos.
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu checkout, reemplazando el contenido del campo publicKey según corresponda:
+Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu _checkout_:
 
-
-```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-    });
-}
-document.body.appendChild(dmlscript);
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-Finalmente, deberás enviar el valor que se encuentra en la variable global `MP_DEVICE_SESSION_ID` en el campo `device_id`.
+Finalmente, deberás enviar el valor que se encuentra en la variable global de javascript `MP_DEVICE_SESSION_ID` en el campo `device_id`.
 
 ### Ejemplo de un pago completo
 A continuación pueden ver un ejemplo de un pago enviando toda la información disponible:

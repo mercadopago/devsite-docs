@@ -1,0 +1,31 @@
+{
+    "id": "1234567",
+    "name": "Sucursal Instore",
+    "date_created": "2019-08-08T19:29:45.019Z",
+    "business_hours": {
+      "monday": [
+        {
+          "open": "08:00",
+          "close": "12:00"
+        },
+        {
+          "open": "14:00",
+          "close": "18:00"
+        }
+      ],
+      "tuesday": [
+        {
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ]
+    },
+    "location": {
+      "address_line": "Caseros 3039, Belgrano, Capital Federal",
+      "latitude":-32.8897322,
+      "longitude":-68.8443275,
+      "reference": "3er Piso"
+    },
+    "external_id": "1234"
+  }
+  

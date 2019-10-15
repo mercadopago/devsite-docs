@@ -15,6 +15,7 @@ use:
 - payer
 - items
 - application_id
+- order_status
 errors:
   - 400 BAD_REQUEST:
     - ds_search_query:

@@ -79,7 +79,7 @@ Para elegir un pago transparente, seleccione la opción a través de **Plantilla
 
 ### Configuración de credenciales de Mercado Pago
 
-Para acceder a las credenciales, simplemente vaya al [enlace](https://www.mercadopago.com/mlb/account/credentials), para obtener los datos de public_key utilice la pestaña *checkout transparente* y para obtener client_id y client_secret usan la pestaña *checkout básico*:
+Para acceder a las credenciales, simplemente vaya al [enlace]([FAKER][CREDENTIALS][URL]), para obtener los datos de public_key utilice la pestaña *checkout transparente* y para obtener client_id y client_secret usa la pestaña *checkout básico*:
 
 ![Configuring the client Id and client secret - Iset](/images/iset-img14.png)
 

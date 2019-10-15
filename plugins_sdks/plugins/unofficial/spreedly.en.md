@@ -11,7 +11,7 @@ The available Spreedly methods with Mercado Pago are:
 - Void
 - Verify
 
-To integrate Spreedly you need to obtain and setup your Mercado Pago keys.You can find these keys in the [credentials section of your account](https://www.mercadopago.com.ar/account/credentials).
+To integrate Spreedly you need to obtain and setup your Mercado Pago keys.You can find these keys in the [credentials section of your account]([FAKER][CREDENTIALS][URL]).
 
 In addition, you have to set up the country code:
 
@@ -372,22 +372,13 @@ In order get the best approval rates as possible you can send additional informa
 
 Mercado Pago has it's own fraud prevention tools, that is why we recommend to send information about the customer's device. This will help to avoid fraudulent transactions and will improve your payment approval rates.
 
-To implement in your site the generation of the device, you have to add the following code to your checkout replacing field publicKey with your credentials:
+To implement the generation of the device on your website, you must add the following code to your checkout:
 
-
-```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-    });
-}
-document.body.appendChild(dmlscript);
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-
-Finally, you have to send the information obtained in global variable `MP_DEVICE_SESSION_ID` in the field `device_id`.
+Finally, you have to send the information obtained in the javascript global variable `MP_DEVICE_SESSION_ID` in the field `device_id`.
 
 ### Full payment example
 

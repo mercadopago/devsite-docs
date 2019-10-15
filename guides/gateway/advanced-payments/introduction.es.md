@@ -21,16 +21,16 @@ En el caso de que tu cuenta de Mercado Pago sea de Colombia, contáctate con tu 
 
 Debes crear una cuenta desde el sitio de Mercado Pago del país a donde desees recibir pagos. La modalidad Gateway está disponible actualmente sólo para Argentina y Colombia:
 
-* Argentina: www.mercadopago.com.ar
-* Colombia: www.mercadopago.com.co
+* [Argentina](https://www.mercadopago.com.ar)
+* [Colombia](https://www.mercadopago.com.co)
 
 ### Crear una aplicación
 
 La aplicación será utilizada para poder cargar los números de comercio, acuerdos y medios de pago y, posteriormente, realizar la integración con la API.
 Debes crear una aplicación accediendo a la página de aplicaciones de Mercado Pago del país correspondiente a tu cuenta y completando la información solicitada:
 
-* Argentina: https://applications.mercadopago.com.ar
-* Colombia: https://applications.mercadopago.com.co
+* [Argentina](https://applications.mercadopago.com.ar)
+* [Colombia](https://applications.mercadopago.com.co)
 
 Una vez creada la aplicación, obtendrás el valor de APP_ID, que será necesario para los siguientes pasos.
 

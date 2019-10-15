@@ -74,9 +74,11 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 		case "payment":
 			$payment = MercadoPago\Payment::find_by_id($_GET["id"]);
 			// Get the payment and the corresponding merchant_order reported by the IPN.
-			$merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order_id;
+			$merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
+			break;
 		case "merchant_order":
 			$merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
+			break;
 	}
 
 	$paid_amount = 0;
@@ -102,7 +104,7 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 ?>
 ```
 
-> Para obtener tu `ACCESS_TOKEN`, revisa la sección de [Credenciales](https://www.mercadopago.com.ar/account/credentials?type=basic)
+> Para obtener tu `ACCESS_TOKEN`, revisa la sección de [Credenciales]([FAKER][CREDENTIALS][URL])
 
 ## Búsqueda de la orden
 
@@ -158,3 +160,4 @@ En caso contrario, la respuesta que se recibe si todavía **no se escaneó el QR
 > ATENCIÓN
 >
 > * Desde Mercado Pago requerimos para homologar la integración de pagos presenciales que tengan implementada la notificación (IPN) como método principal. La búsqueda de orden por external_reference deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
+
