@@ -117,7 +117,7 @@ Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y qu
 > 
 > IMPORTANTE
 > 
-> * Si no completas el formulario de [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/), no podrás hacer ningun tipo de devoluciones.
+> * Si no completas el formulario de [Quiero ir a producción]([FAKER][CREDENTIALS][URL]), no podrás hacer ningun tipo de devoluciones.
 
 ## ¿Por qué es necesario este proceso?
 
