@@ -1,6 +1,6 @@
 # Requisitos para ir a producción
 
-Cuando tengas la aplicación lista y funcionando en modalidad sandbox, y quieras empezar a procesar pagos reales, deberás [completar un proceso de homologación de tu integración](https://www.mercadopago.com/mla/account/credentials) desde la sección de credenciales. Más tarde MercadoPago podrá auditar tu sitio o app, verificando que se cumplan las reglas que se detallan a continuación. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
+Cuando tengas la aplicación lista y funcionando en modalidad sandbox, y quieras empezar a procesar pagos reales, deberás [completar un proceso de homologación de tu integración]([FAKER][CREDENTIALS][URL]) desde la sección de credenciales. Más tarde MercadoPago podrá auditar tu sitio o app, verificando que se cumplan las reglas que se detallan a continuación. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
 ## ¿Por qué es necesario este proceso?
 

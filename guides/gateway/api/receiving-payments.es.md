@@ -143,4 +143,4 @@ curl -X POST \
 
 ### Próximos pasos
 
-* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/reconciliation)
+* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/reconciliation/)

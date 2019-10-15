@@ -83,7 +83,7 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 
 1) Após a instalação do módulo, se direcione para **MELHORIAS** -> **Módulos** -> **Módulos e Serviços** e clique em **Configurar** no Plugin do Mercado Pago.
 
-2) Na tela **BASIC SETTINGS** será solicitado os dados **Client ID** e **Client Secret**. Esses dados são as credenciais da sua conta do Mercado Pago e podem ser obtidos através do seguinte link: [Obtenha suas credenciais](https://www.mercadopago.com/mlb/account/credentials?type=basic).
+2) Na tela **BASIC SETTINGS** será solicitado os dados **Client ID** e **Client Secret**. Esses dados são as credenciais da sua conta do Mercado Pago e podem ser obtidos através do seguinte link: [Obtenha suas credenciais](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials?type=basic).
 
 ![Configuração](/images/prestashop_credentials_configuration.gif)
 

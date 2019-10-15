@@ -28,7 +28,7 @@ This _fragment of HTML code_ will insert a payment button. When the buyer presse
 >
 > Note
 >
-> You can find the public key in the [credentials](https://www.mercadopago.com.ar/account/credentials) page.
+> You can find the public key in the [credentials]([FAKER][CREDENTIALS][URL]) page.
 
 ### Step 3: Get the data
 

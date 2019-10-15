@@ -140,4 +140,4 @@ curl -X POST \
 
 ### Next steps
 
-* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/reconciliation/)
+* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/reconciliation/)

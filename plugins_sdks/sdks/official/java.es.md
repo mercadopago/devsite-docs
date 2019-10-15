@@ -13,7 +13,7 @@ Esta libreria provee una set de clases y metodos para interactuar con el API de 
         <dependency>
             <groupId> com.mercadopago </groupId>
             <artifactId> dx-java </artifactId>
-            <version> [VERSION-dx-java] </version>
+            <version> 1.2.1 </version>
         </dependency>
     </dependencies>
     ...

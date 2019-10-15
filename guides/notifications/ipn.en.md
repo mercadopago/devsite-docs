@@ -74,9 +74,11 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 		case "payment":
 			$payment = MercadoPago\Payment::find_by_id($_GET["id"]);
 			// Get the payment and the corresponding merchant_order reported by the IPN.
-			$merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order_id;
+			$merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
+			break;
 		case "merchant_order":
 			$merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
+			break;
 	}
 
 	$paid_amount = 0;
@@ -102,4 +104,4 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 ?>
 ```
 
-> To get your `ACCESS_TOKEN`, check the [Credentials](https://www.mercadopago.com.ar/account/credentials?type=basic) section.
+> To get your `ACCESS_TOKEN`, check the [Credentials]([FAKER][CREDENTIALS][URL]) section.

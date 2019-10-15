@@ -49,7 +49,7 @@ To trade with credit cards, follow this steps:
 To obtain the credentials you must follow these steps:
 
 1. Sign in to the Mercado Pago account.
-2. Acesse esse [painel](https://www.mercadopago.com/mla/account/credentials).
+2. Acesse esse [painel]([FAKER][CREDENTIALS][URL]).
 3. Select the "Checkout básico" tab to visualize Client ID and Client Secret.
 4. Select the "Checkout transparente" tab to visualize Public Key and Access Token ("Modo Produção" to process real payments / "Modo Sandbox" to teste payments).
 5. Before proceeding to Production, make sure that you complete the 'Eu quero ir para produção' form (If you have already completed this step, the link does not appear).

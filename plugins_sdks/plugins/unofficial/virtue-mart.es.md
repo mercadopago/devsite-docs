@@ -71,19 +71,11 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 3. Click en **Save**
 
 4. Ir a **Configuration** <br/>
-  Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, complete tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
+  Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, completa tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-  Puedes obtener tu **Client_id** y **Client_secret**, dependiendo e tu país en los siguientes links:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Encuentra tu **Client_id** y **Client_secret** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configuraciones del Checkout. <br/>
 
@@ -138,15 +130,7 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 
 ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
 7. Configuración del checkout. <br/>
 
@@ -188,15 +172,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 ![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
 7. Configuración IPN. <br/>
 

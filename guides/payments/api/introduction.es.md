@@ -14,7 +14,7 @@ Con nuestras APIs:
 
 ## Credenciales
 
-Cuentas con dos pares de claves para conectarte con la API, uno para un entorno de pruebas y otro productivo. Estas claves las encuentras en la sección [credenciales de tu cuenta](https://www.mercadopago.com.ar/account/credentials).
+Cuentas con dos pares de claves para conectarte con la API, uno para un entorno de pruebas y otro productivo. Estas claves las encuentras en la sección [credenciales de tu cuenta]([FAKER][CREDENTIALS][URL]).
 
 La **credencial pública**, o *public key*, es la utilizada para acceder a todos los recursos que necesitará tu frontend para recolectar los datos de tarjeta de crédito, y _tokenizar_.
 
@@ -28,7 +28,7 @@ Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo 
 
 Te brindaremos tarjetas de prueba, para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas [probado tu aplicación](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales](https://www.mercadopago.com.ar/account/credentials).
+Una vez que hayas [probado tu aplicación](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing), deberás completar el formulario "Quiero ir a producción" que encontrarás en tus [credenciales]([FAKER][CREDENTIALS][URL]).
 
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 
@@ -43,7 +43,7 @@ Una vez que hayas probado tu aplicación en Modo _Sandbox_, debes completar el p
 * Comunicar las [promociones y posibilidades de financiación](https://www.mercadopago.com.ar/promociones) ofrecidas por Mercado Pago. Puedes incluir nuestros [banners](https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales) institucionales.
 
 
-> Cuando hayas cumplido con los requisitos, debes completar el formulario **Quiero salir a producción** que se encuentra en la sección de tus [credenciales](https://www.mercadopago.com/mla/account/credentials)
+> Cuando hayas cumplido con los requisitos, debes completar el formulario **Quiero salir a producción** que se encuentra en la sección de tus [credenciales]([FAKER][CREDENTIALS][URL])
 
 El incumplimiento de estas normas puede implicar desde el no procesamiento de pagos, hasta acciones legales de acuerdo a lo establecido en los [términos y condiciones](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299).
 Debes disponer de una política de términos y condiciones, en la cual especifiques que te responsabilizas por todos los datos que sean ingresados en tu sitio.

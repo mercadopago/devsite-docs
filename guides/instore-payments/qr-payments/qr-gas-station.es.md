@@ -40,7 +40,7 @@ Primero debes familiarizarte con los siguiente conceptos ya que los usarás dura
 
 | Atributo                    | Descripción                                                  |
 | --------------------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN`              | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
+| `ACCESS_TOKEN`              | Es el [token de acceso]([FAKER][CREDENTIALS][URL]) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
 | `COLLECTOR_ID`              | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
 | `EXTERNAL_ID`               | Es el identificador único del surtidor. Es un código alfanumérico definido por el integrador, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas. |
 | `SPONSOR_ID`                | `COLLECTOR_ID` de la cuenta de Mercado Pago del integrador. Se debe crear una cuenta por marca (YPF, Shell, Axion, etc). |

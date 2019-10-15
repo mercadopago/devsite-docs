@@ -20,7 +20,7 @@ Antes de criar o pagamento, verifique se seu comprador se adequa a alguma de sua
 
 ### Campanhas para todos os compradores
 
-Para verificar, utilize as [credenciais de sua aplicação](https://www.mercadopago.com/mla/account/credentials):
+Para verificar, utilize as [credenciais de sua aplicação]([FAKER][CREDENTIALS][URL]):
 
 ```curl
 curl -H "Accept: application/json" \
@@ -100,7 +100,7 @@ Adicione um campo adicional no formulário de pagamento para capturar o código 
 
 #### Verifique se o comprador possui desconto disponível:
 
-Para verificar, utilize as [credenciais da sua aplicação](https://www.mercadopago.com/mla/account/credentials):
+Para verificar, utilize as [credenciais da sua aplicação]([FAKER][CREDENTIALS][URL]):
 
 ```curl
 curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'

@@ -1,6 +1,6 @@
 # Pagos sin CVV
 
->INFO 
+>INFO
 >
 > Consideraciones
 >
@@ -110,7 +110,7 @@ Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago
 
 ## Reintentos
 
-Si el pago sin cvv es rechazado, te recomendamos que sigas una lógica de reintentos según el estado del rechazo. Por ejemplo, si el pago fue rechazado por tarjeta vencida no tiene sentido que se haga un reintento. Se le deberá solicitar al cliente que informa otra tarjeta para cursar los cobros siguientes. En caso que el rechazo sea por fondos insuficientes, tiene sentido que se haga una lógica de reintentos. 
+Si el pago sin cvv es rechazado, te recomendamos que sigas una lógica de reintentos según el estado del rechazo. Por ejemplo, si el pago fue rechazado por tarjeta vencida no tiene sentido que se haga un reintento. Se le deberá solicitar al cliente que informa otra tarjeta para cursar los cobros siguientes. En caso que el rechazo sea por fondos insuficientes, tiene sentido que se haga una lógica de reintentos.
 
 Podrás ver todos los rechazos [aquí](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses)
 
@@ -120,7 +120,7 @@ Es muy importante que antes de salir a producción realices pruebas del flujo co
 
 Una buena experiencia de tus clientes en el _checkout_ ayuda a mejorar la conversión.
 
-Cuentas con un par de [credenciales de _sandbox_](https://www.mercadopago.com.ar/account/credentials?type=custom), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
+Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
 
 | País     	 | Visa 				       | Mastercard        | American Express |
 | ---- 		   | ---- 				       | ----------        | ---------------- |
@@ -151,4 +151,3 @@ Para ello te informaremos con un HTTP Status 201 OK que el pago ha sido creado c
 ## Verifica haber recibido la notificación Webhook
 
 Mercado Pago te enviará una notificación del evento ocurrido. Valida que la hayas recibido correctamente e impactado en forma correcta en tu sistema de gestión.
-

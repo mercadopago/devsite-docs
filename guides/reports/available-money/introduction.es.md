@@ -15,7 +15,7 @@ Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás desca
 
 Para acceder a tus reportes desde la sección de Informes en tu cuenta de Mercado Pago, sigue estos pasos:
 
-1. Inicia sesión en [tu cuenta de Mercado Pago.](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user)
+1. Inicia sesión en [tu cuenta de Mercado Pago.](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user)
 1. Ve a [Informes](https://www.mercadopago.com/mla/account/movements) y de ahí accede a Reportes.
 1. En [Reportes](https://www.mercadopago.com.ar/balance/reports), elige *Dinero Disponible*, allí encontrarás un listado de los reportes que has generado.
 

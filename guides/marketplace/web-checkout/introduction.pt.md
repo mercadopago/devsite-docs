@@ -25,7 +25,7 @@ Após criar a aplicação, você só precisa executar o segundo e o terceiro pas
 
 ## Credenciais
 
-Assim como no Checkout de Pagamentos, você conta com um par de chaves privadas para conectar-se com a API. Essas chaves são encontradas na sessão de [credenciais da sua conta](https://www.mercadopago.com.br/account/credentials).
+Assim como no Checkout de Pagamentos, você conta com um par de chaves privadas para conectar-se com a API. Essas chaves são encontradas na sessão de [credenciais da sua conta]([FAKER][CREDENTIALS][URL]).
 
 As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, etc. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
 

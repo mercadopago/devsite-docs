@@ -48,8 +48,8 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 ----[mlc]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -72,8 +72,8 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 ----[mlb]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -96,8 +96,8 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 ----[mla]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -120,8 +120,8 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 ----[mpe]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -144,8 +144,8 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 ----[mco]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -168,8 +168,8 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 ----[mlu]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -375,9 +375,9 @@ El checkout redirect puede convivir con el checkout transparente.
 6. Buscar y seleccionar "MercadoPago".
 7. Completar la siguiente información requerida en la afiliación.
 - Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
-- Client_secret -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
-- AccessToken de Mercado Pago -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials).
+- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
+- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
 - Pais -> Seleccionar País
 - Time Zone -> Región que define la hora local
 - orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
@@ -425,8 +425,8 @@ Cuando tu asesor comercial te haya informado que ya están cargados los números
 7. Completar los campos que se describen a continuación:
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: Completar con el id que fueron compartidos por su asesor comercial correspondientes a cada tarjeta.

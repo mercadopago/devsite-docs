@@ -76,7 +76,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 1) After the module installation, go to **IMPROVEMENTS** -> **Modules** -> **Modules and Services** and click **Configure** in the Mercado Pago Plugin.
 
-2) On the screen **BASIC SETTINGS** you will be asked for the  **Client ID** and **Client Secret**. These are the credentials of your Mercado Pago account and can be obtained through the following link: [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic).
+2) On the screen **BASIC SETTINGS** you will be asked for the  **Client ID** and **Client Secret**. These are the credentials of your Mercado Pago account and can be obtained through the following link: [Get your credentials]([FAKER][CREDENTIALS][URL]).
 
 ![Settings](/images/prestashop/prestashop_credentials_configuration.gif)
 
