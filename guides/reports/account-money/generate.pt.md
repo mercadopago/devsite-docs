@@ -3,7 +3,7 @@
 
 ## Canais de geração
 
-Há dois formas de gerar um relatório de Dinheiro em conta:
+Há duas formas de gerar um relatório de Dinheiro em conta:
 
 | Canais | Descrição |
 | ------- | ----------- |
