@@ -4,7 +4,7 @@
 
 Você pode criar um relatório de Dinheiro Disponível de forma automática cada vez que fizer uma retirada de dinheiro da sua conta do Mercado Pago para uma conta bancária. Programe esta opção a partir do seu painel do Mercado Pago ou via API. 
 
-## Generar a partir do painel do Mercado Pago
+## Gerar a partir do painel do Mercado Pago
 
 A partir da seção "Relatórios" do Mercado Pago, programe a geração de relatórios por retirada seguindo estas etapas: 
 
