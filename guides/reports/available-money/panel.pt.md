@@ -21,7 +21,7 @@ Você também pode programar a geração destes relatórios por cada retirada de
 
 <hr/>
 
-### Próximos pasos
+### Próximos passos
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
