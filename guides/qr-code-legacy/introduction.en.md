@@ -9,19 +9,19 @@ sites_supported:
 
 > ![QR payments Mercado Pago](/images/qr.pt.png)
 
-------
+------------
 
 ----[mla]----
 
 > ![QR payments Mercado Pago](/images/qr_mla.es.png)
 
-------
+------------
 
 ----[mlm]----
 
 > ![QR payments Mercado Pago](/images/qr_mlm.es.png)
 
-------
+------------
 
 You can boost in-store sales by using QR codes to get paid. The mobile app of Mercado Pago allows its users to securely store their credit cards, debit cards and use the available account balance. Its main features are:
 
@@ -36,7 +36,7 @@ This allows you to offer in your physical stores payments in installments withou
 
 To make the payment, your customers need to download the app on their mobile phone:
 
-> [<img src="/developers/bundles/images/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/developers/bundles/images/AppStoreBadge.es.svg" alt="iOS App Store" width="158"/>)](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/developers/bundles/images/GooglePlayBadge.en.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/developers/bundles/images/AppStoreBadge.en.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
 ## QR Payments types
 

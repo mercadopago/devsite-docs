@@ -32,7 +32,7 @@ Usando seu aplicativo móvel Mercado Pago / Mercado Livre, seus clientes podem e
 
 Para poder pagar, seus clientes devem baixar o aplicativo da loja do celular:
 
-> [<img src="/developers/bundles/images/mobile/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/developers/bundles/images/mobile/AppStoreBadge.es.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/developers/bundles/images/GooglePlayBadge.pt.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/developers/bundles/images/AppStoreBadge.pt.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
 ## Formas de cobrar com QR  
 
