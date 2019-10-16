@@ -47,7 +47,7 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 >
 > [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/how-to-use/)
 
-> RIGHT_BUTTON_REQUIRED_LANG
+> RIGHT_BUTTON_REQUIRED_PT
 >
 > Gere seus relatórios
 >

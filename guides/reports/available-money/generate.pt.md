@@ -50,10 +50,10 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 | Ações e componentes | Características |
 | ------------ |	--------    |
-| Formato do nome do arquivo | <br/>Quando o relatório é programado ou manual:<br/> "prefijo-configurable-<span style='color:#999999;'>fecha-de-creación.csv</span>" <br/> Exemplo:  mitienda-28-05-2019.csv <br/><br/> Quando o relatório é gerado por uma retirada de dinheiro: <br/> "prefijo-configurable-<span style='color:#999999;'>id-de-retiro-fecha-de-creación.csv</span>"<br/> Ejemplo: mitienda-ID123456789-28-05-2019.csv <br/> <br/> |
+| Formato do nome do arquivo | <br/>Quando o relatório é programado ou manual:<br/> "prefixo-configurável-<span style='color:#999999;'>data-de-criação.csv</span>" <br/> Exemplo:  mitienda-28-05-2019.csv <br/><br/> Quando o relatório é gerado por uma retirada de dinheiro: <br/> "prefixo-configurável-<span style='color:#999999;'>id-de-retirada-data-de-criação.csv</span>"<br/> Exemplo: mitienda-ID123456789-28-05-2019.csv <br/> <br/> |
 | Formatos de download | <br/>.csv, .xlsx <br/><br/>Dica: baixe o relatório em .csv para importar os dados e usá-los em outros aplicativos. Baixe-o em .xlsx para ler as informações nas tabelas da planilha.<br/><br/> |
 | Arquivo | <br/> Os relatórios gerados ficam salvos na sua conta do Mercado Pago. <br/><br/> |
-| Configuração disponível via API | <br/>-  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> -  Separador decimal (coma o punto)<br/> -  Notificación por e-mail<br/> -  Retiro al final del reporte (opcional) <br/><br/> |
+| Configuração disponível via API | <br/>-  Colunas a gerar por relatório<br/> -  Prefixo do arquivo para identificá-lo facilmente<br/> -  Envio por SFTP<br/> -  Separador de colunas (ponto ou ponto e vírgula)<br/> -  Separador decimal (vírgula ou ponto)<br/> -  Notificação por e-mail<br/> - Retirada no final do relatório (opcional)<br/><br/> |
 
 
 
