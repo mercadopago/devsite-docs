@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Payments without CVV
 
 >INFO 
