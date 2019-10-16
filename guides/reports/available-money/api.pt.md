@@ -946,7 +946,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Geração a partir do Mercado Pago
 >
@@ -954,7 +954,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/panel/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Geração por retirada
 >

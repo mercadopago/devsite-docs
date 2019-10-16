@@ -45,7 +45,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Como usar o relatório
 >
@@ -53,7 +53,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/how-to-use/)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_PT
 >
 > Gere seus relatórios
 >

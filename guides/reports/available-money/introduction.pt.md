@@ -56,7 +56,7 @@ Além disso, você pode usar o relatório para saber o histórico do saldo dispo
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Como usar o relatório
 >
@@ -64,7 +64,7 @@ Além disso, você pode usar o relatório para saber o histórico do saldo dispo
 >
 > [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/how-to-use/)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_PT
 >
 > Gere seus relatórios
 >

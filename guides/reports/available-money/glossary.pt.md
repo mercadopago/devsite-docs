@@ -17,7 +17,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla,mpe,mco,mlm,mlu,mlc]---- Inclui IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
-| TAXES_AMOUNT | Impostos cobrados por retenção de receita bruta. |
+| TAXES_AMOUNT | Impostos recebidos por retenção de receita bruta. |
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
 | PAYMENT METHOD | Meio de pagamento. ----[mla]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_chile) ------------ |
@@ -36,7 +36,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Como usar o relatório
 >
@@ -44,7 +44,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/how-to-use/)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_PT
 >
 > Gere seus relatórios
 >

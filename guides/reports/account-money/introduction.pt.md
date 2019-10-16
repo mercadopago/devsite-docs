@@ -4,7 +4,6 @@
 
 O relatório de Dinheiro em conta é um **relatório para baixar que te permite ver as transações que afetaram o seu dinheiro em conta**, ou seja, as movimentações que afetaram o seu saldo no Mercado Pago.
 
-Contiene, por ejemplo, el detalle de tus pagos, los ingresos de dinero, los contracargos y las devoluciones, en un periodo de tiempo con su desglose en bruto y neto. Está compuesto por el dinero disponible y el no disponible. 
 Contém, por exemplo, os detalhes dos seus pagamentos, as entradas de dinheiro, as contestações e devoluções, tudo por período de tempo e discriminado por líquido e bruto. É composto pelo dinheiro disponível e não disponível. Ou seja, o dinheiro que você tem liberado para retirada e o que falta liberar de acordo com as suas escolhidos.
 
 ## Como baixar o relatório?
@@ -35,12 +34,12 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 >
 > Nota
 >
-> Tenha em mãos o [Glosario del reporte](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary/) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary/) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Como usar o relatório
 >
@@ -48,7 +47,7 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 >
 > [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/how-to-use/)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_LANG
 >
 > Gere seus relatórios
 >

@@ -982,7 +982,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Geração a partir do Mercado Pago
 >
@@ -990,7 +990,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/panel/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Glossário
 >

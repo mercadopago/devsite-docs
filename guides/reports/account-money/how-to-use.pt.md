@@ -31,7 +31,7 @@ Na coluna `SETTLEMENT_NET_AMOUNT` está o impacto real sobre o dinheiro da sua c
 >
 > Nota
 >
-> Ten a mano el [Glossário do relatório](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinheiro 
+> Ten a mano el [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary/) de Dinheiro 
 
 em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
@@ -47,7 +47,7 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Gere seus relatórios
 >
@@ -55,7 +55,7 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/generate/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Glossário
 >

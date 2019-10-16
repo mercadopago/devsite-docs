@@ -23,7 +23,7 @@ Siga estas etapas para gerar seus relatórios:
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Generação via API
 >
@@ -31,7 +31,7 @@ Siga estas etapas para gerar seus relatórios:
 >
 > [Generação via API](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/api)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Glossário
 >

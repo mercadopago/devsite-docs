@@ -65,7 +65,7 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Gere seus relatórios
 >
@@ -73,7 +73,7 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/generate/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Glossário
 >

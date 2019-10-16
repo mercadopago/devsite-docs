@@ -23,7 +23,7 @@ Você também pode programar a geração destes relatórios por cada retirada de
 
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Geração via API
 >
@@ -31,7 +31,7 @@ Você também pode programar a geração destes relatórios por cada retirada de
 >
 > [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/api/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Geração por retirada
 >
