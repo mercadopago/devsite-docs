@@ -40,8 +40,7 @@ Saiba as características dos elementos que compõem seu relatório.
 | Moeda | <br/> Local (com base no país onde está cadastrada a conta do Mercado Pago) <br/> <br/> |
 | Fuso horário das colunas: | <br/> GMT-4 <br/> |
 | Seleção de datas via API |<br/>  Formato do fuso horário: UTC / GMT-0 <br/> <br/> |
-| Seleção de datas via web  | <br/> Deve ter como base o fuso horário da conta do usuário. 
-Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. <br/> <br/> |
+| Seleção de datas via web  | <br/> Deve ter como base o fuso horário da conta do usuário.<br/> Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. <br/> <br/> |
 
 
 ### Exportação do relatório
