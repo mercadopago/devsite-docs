@@ -4,7 +4,7 @@
 
 O relatório de Dinheiro em conta é um **relatório para baixar que te permite ver as transações que afetaram o seu dinheiro em conta**, ou seja, as movimentações que afetaram o seu saldo no Mercado Pago.
 
-Contém, por exemplo, os detalhes dos seus pagamentos, as entradas de dinheiro, as contestações e devoluções, tudo por período de tempo e discriminado por líquido e bruto. É composto pelo dinheiro disponível e não disponível. Ou seja, o dinheiro que você tem liberado para retirada e o que falta liberar de acordo com as suas escolhidos.
+Contém, por exemplo, os detalhes dos seus pagamentos, as entradas de dinheiro, as contestações e devoluções, tudo por período de tempo e discriminado por líquido e bruto. É composto pelo dinheiro disponível e não disponível. Ou seja, o dinheiro que você tem liberado para retirada e o que falta liberar de acordo com as suas escolhas.
 
 ## Como baixar o relatório?
 
