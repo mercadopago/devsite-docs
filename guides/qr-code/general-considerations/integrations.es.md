@@ -1,11 +1,11 @@
 ---
 sites_supported:
   - mla
-  - mco
-  - mlm
-  - mlu
-  - mlc
   - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
 ---
 
 # ¿Cómo generar el QR?
