@@ -235,7 +235,7 @@ Para más información puedes ver el artículo sobre [devoluciones](https://www.
 
 ## Integrar Webpay (Chile)
 
-Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes el **RUT**, **tipo de persona**, **dirección IP** del comprador, y la **institución financiera** que procesará el pago.
+Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes la **dirección IP** del comprador, la **institución financiera** que procesará el pago y, opcionalmente, el **RUT** y el **tipo de persona**.
 
 > NOTE
 >
