@@ -25,11 +25,11 @@ Siga estas etapas para gerar seus relatórios:
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Generação via API
+> Geração via API
 >
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
-> [Generação via API](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/api)
+> [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/api)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
