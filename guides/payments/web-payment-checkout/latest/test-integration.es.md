@@ -34,6 +34,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
 -d '{"site_id":"[FAKER][GLOBALIZE][SITE_ID]"}'
+** TE PONEN EL ID EN MINUSCULA, SOLO FUNCIONA EN MAYUSCULA. Ej: mla, no me andaba, con MLA si.
 ```
 
 
