@@ -474,9 +474,9 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
 | *`separator` (opcional)* | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula. <br/><br/> |
 | *`sftp_info` (opcional)* | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
-| *`shipping_detail` (opcional)* |  <br/>  Incluye el detalle de los envíos <br/> <br/>|
-| *`show_chargeback_cancel` (opcional)* |  <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
-| *`show_fee_prevision` (opcional)* |   <br/> Incluye el detalle de las comisiones  <br/> <br/>|
+| *`shipping_detail` (opcional)* |  <br/>  Inclui os detalhes dos envios. <br/> <br/>|
+| *`show_chargeback_cancel` (opcional)* |  <br/> Inclui os detalhes dos cancelamentos das contestações. <br/> <br/>|
+| *`show_fee_prevision` (opcional)* |   <br/> Inclui os detalhes das comissões. <br/> <br/>|
 
 > NOTE
 >
