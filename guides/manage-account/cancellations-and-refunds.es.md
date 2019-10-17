@@ -6,6 +6,12 @@ Existen diferentes situaciones en las que puedes querer anular una venta:
 
 * Si el `status` del pago es `approved` entonces tu comprador pudo efectuarlo y podrás realizar una devolución si lo deseas. 
 
+> WARNING
+>
+> ADVERTENCIA
+>
+> * Ten en cuenta que para pagos con QR y POINT, sólo puedes efectuar devoluciones pero no cancelaciones.
+
 ## Cancelaciones
 
 - Las cancelaciones se pueden hacer solo con _pending_ e _in process_.
@@ -85,6 +91,7 @@ Si el pago fue realizado con otro medio, se reintegrará en la cuenta de Mercado
 
 Para realizar la devolución total, realiza el siguiente _request_ indicando el `payment_id`:
 
+[[[
 ```php
 <?php
 
@@ -98,7 +105,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
 ```
-
+]]]
 
 > NOTE
 >
@@ -183,6 +190,11 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 ```ruby
 payment = MercadoPago::Payment.find_by_id(payment_id)
 refunds = payment.refund()
+```
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
 ```
 ]]]
 
