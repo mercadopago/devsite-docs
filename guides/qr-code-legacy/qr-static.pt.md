@@ -31,4 +31,4 @@ Esta transferência de saldo não possui uma ordem de venda associada. Ela apena
 
 Você pode consultar suas vendas na lista de atividades de sua conta no Mercado Pago, ou integrar as notificações em seu sistema de gestão.
 
-> Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de [QR integrado](https://www.mercadopago.com.br/developers/pt/guides/qr-code-legacy/qr-static)
+> Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de [QR integrado](https://www.mercadopago.com.br/developers/pt/guides/qr-code-legacy/qr-pos)
