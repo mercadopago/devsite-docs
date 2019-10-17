@@ -16,10 +16,10 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 | Término                            | Descripción                                                  |
 | -----------------------------------| ------------------------------------------------------------ | 
-| Credenciales (Credentials)         | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]) y selecciona las **productivas** en la opción Checkout personalizado. |
-| `ACCESS_TOKEN` | Es la clave privada de la aplicación para generar pagos, dentro de la sección [credenciales]([FAKER][CREDENTIALS][URL]). Debes usarla para identificarte en tus integraciones. Siempre usa las del “Modo Producción”. |
-| `COLLECTOR_ID` | Es el id del usuario vendedor en Mercado Pago, son los últimos 9 dígitos del `access_token`, posterior al guión medio. También se lo conoce como `USER_ID` |
-| `SPONSOR_ID` | Es el id del usuario proveedor del sistema integrado con Mercado Pago, son los últimos 9 dígitos del `access_token`, posterior al guión medio. El `sponsor_ID` no puede ser igual al `COLLECTOR_ID`. |
+| Credenciales (Credentials)         | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]) y selecciona las **productivas** en la opción _Checkout personalizado._ |
+| `ACCESS_TOKEN` | Es la clave privada de la aplicación para generar pagos, dentro de la sección [credenciales]([FAKER][CREDENTIALS][URL]). Debes usarla para identificarte en tus integraciones. Siempre usa las del Modo Producción. |
+| `COLLECTOR_ID` | Es el ID del usuario vendedor en Mercado Pago, son los últimos 9 dígitos del `access_token`, posterior al guión medio. También se lo conoce como `USER_ID` |
+| `SPONSOR_ID` | Es el ID del usuario proveedor del sistema integrado con Mercado Pago, son los últimos 9 dígitos del `access_token`, posterior al guión medio. El `sponsor_ID` no puede ser igual al `COLLECTOR_ID`. |
 | Sucursal | Es una **tienda física** en la que tus clientes pueden adquirir tus productos o servicios. Puedes tener varias sucursales en una misma cuenta. |
 | Caja | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
 | Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado.

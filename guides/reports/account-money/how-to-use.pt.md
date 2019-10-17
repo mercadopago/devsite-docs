@@ -31,9 +31,7 @@ Na coluna `SETTLEMENT_NET_AMOUNT` está o impacto real sobre o dinheiro da sua c
 >
 > Nota
 >
-> Ten a mano el [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary/) de Dinheiro 
-
-em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Ten a mano el [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary/) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 ## Exemplo de um relatório
 
