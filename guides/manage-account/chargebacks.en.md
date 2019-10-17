@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Chargeback management
 
 > NOTE

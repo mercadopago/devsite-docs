@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Gestão de compras contestadas
 
 > NOTE

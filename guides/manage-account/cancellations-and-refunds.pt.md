@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Devoluções e cancelamentos
 
 Existem diferentes situações que podem dar origem ao cancelamento de uma venda:
