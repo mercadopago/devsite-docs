@@ -49,7 +49,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 | Ações e componentes | Características |
 | ------------ |	--------    |
-| Formato do nome do arquivo | <br/>Quando o relatório é programado ou manual:<br/> "&#60;prefixo-configurável&#62;-<span>&#60;yyyy-MM-dd-hhmmss&#62;.&#60;formato&#62;</span>" <br/> Exemplo:  mitienda-2019-05-28-104010.csv<br/><br/> |
+| Formato do nome do arquivo | <br/>Quando o relatório é programado ou manual:<br/> "&#60;prefixo-configurável&#62;-<span>&#60;yyyy-MM-dd-hhmmss&#62;.&#60;formato&#62;</span>" <br/> Exemplo:  minhaloja-2019-05-28-104010.csv<br/><br/> |
 | Formatos de download | <br/>.csv, .xlsx <br/><br/>Dica: baixe o relatório em .csv para importar os dados e usá-los em outros aplicativos. Baixe-o em .xlsx para ler as informações nas tabelas da planilha. <br/><br/> |
 | Arquivo | <br/>Os relatórios gerados ficam salvos na sua conta do Mercado Pago.<br/><br/> |
 | Configuração disponível via API | <br/>-  Colunas a gerar por relatório<br/> -  Prefixo do arquivo para identificá-lo facilmente<br/> -  Envio por SFTP<br/> -  Separador de colunas (ponto ou ponto e vírgula)<br/> - Notificação por e-mail<br/><br/> |
