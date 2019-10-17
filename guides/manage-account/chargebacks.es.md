@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Gestión de Contracargos
 
 > NOTE

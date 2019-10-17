@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Devoluciones y cancelaciones
 
 Existen diferentes situaciones en las que puedes querer anular una venta:

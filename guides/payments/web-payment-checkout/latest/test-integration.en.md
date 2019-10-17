@@ -33,7 +33,7 @@ Execute the following curl to generate a test user:
 curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
--d '{"site_id":"[FAKER][GLOBALIZE][SITE_ID]"}'
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
 

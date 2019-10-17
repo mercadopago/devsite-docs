@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Refunds and cancellations
 
 There are different situations in which you may want to cancel a sale:
