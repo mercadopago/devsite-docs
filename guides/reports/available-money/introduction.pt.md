@@ -16,7 +16,7 @@ Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá 
 Para ter acesso aos seus relatórios pela seção de Relatórios na sua conta do Mercado Pago, siga estes passos:
 
 1. Entre na [sua conta do Mercado Pago](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user)
-1. Vá até [Relatórios](https://www.mercadopago.com/mlb/account/movements) e entre em *Relatórios*.
+1. Vá até [Relatórios](https://www.mercadopago.com.br/balance/reports) e entre em *Relatórios*.
 1. Em [Relatórios](https://www.mercadopago.com.br/balance/reports), , clique em  *Dinheiro Disponível*, e ali verá uma lista dos relatórios gerados.
 
 ## Valores do relatório
@@ -40,7 +40,7 @@ Os prazos de liberação têm relação com os tempos dos bancos ou com os fluxo
 1. Agendado, de acordo com suas configurações.
 1. A cada retirada de dinheiro para uma conta bancária.
 
-Use o relatório de dinheiro disponível **quando precisar de informações sobre a liquidez da conta,** cconciliar como estão compostas as transações que impactam seu saldo disponível a nível transacional ou para **conciliar mensal e periodicamente os detalhes das movimentações** que geram um saldo disponível para retirada.
+Use o relatório de dinheiro disponível **quando precisar de informações sobre a liquidez da conta,** conciliar como estão compostas as transações que impactam seu saldo disponível a nível transacional ou para **conciliar mensal e periodicamente os detalhes das movimentações** que geram um saldo disponível para retirada.
 
 ### Use o relatório para conhecer seu histórico
 

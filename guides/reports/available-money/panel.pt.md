@@ -11,7 +11,7 @@ Gere seus relatórios de Dinheiro Disponível a partir do seu painel do Mercado 
 
 <span style="margin-left:40px">Pronto! Você verá seu relatório *em preparação*.</span>
 
-Você também pode programar a geração destes relatórios por cada retirada de dinheiro.
+Você também pode programar a geração destes relatórios [por cada retirada de dinheiro](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/withdrawal/).
 
 > NOTE
 >

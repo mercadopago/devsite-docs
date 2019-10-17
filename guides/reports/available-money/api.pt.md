@@ -708,88 +708,20 @@ Gere seus relatórios de forma programada configurando três instâncias: geraç
 
 Programe a geração automática do relatório usando a frequência do recurso de configuração. Atualize o atributo *`scheduled`* na configuração *`true`*:
 
-[[[
-```curl
-curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN'
+```plain
+[
+    POST /v1/account/bank_report/schedule
+]
 ```
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'accept' => 'application/json',
-    'content-type' => 'application/json'
-);
-$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
+
+Pare a geração automática do relatório. Atualize o atributo scheduled na configuração para false:
+
+```plain
+[
+    DELETE /v1/account/bank_report/schedule
+]
 ```
-```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN");
 
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("POST");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```Python
-import requests
-
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers, params=params)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule?access_token=ENV_ACCESS_TOKEN',
-    method: 'POST',
-    headers: headers
-};
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-
-request(options, callback);
-```
-]]]
-
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
-
-```json
-{
-    "id": 2541818,
-    "user_id": "USER-ID",
-    "begin_date": "2019-07-01T06:00:00Z",
-    "end_date": "2019-08-01T06:00:00Z",
-    "created_from": "schedule",
-    "status": "pending",
-    "report_type": "bank",
-    "generation_date": "2019-08-01T06:00:00.000Z",
-    "last_modified": "2019-07-24T13:45:33.479-04:00",
-    "retries": 0
-}
-```
 
 ### 2. Configuração
 

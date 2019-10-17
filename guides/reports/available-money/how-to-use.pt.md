@@ -14,12 +14,12 @@ O relatório é composto por:
 
 | Composição do relatório | Descrição |
 | --- | --- |
-| Initial Available Balance |<br/> Saldo inicial.<br/><br/>|
-| Release |<br/> O detalhe das liberações de dinheiro que inclui o saldo inicial.<br/><br/> |
-| Block | <br/>Os bloqueios de dinheiro por disputas.<br/><br/> |
-| Unblock |<br/> Os desbloqueios após a resolução das disputas.<br/><br/>|
-| Subtotal | <br/>É a soma das transações que compõem cada seção.<br/><br/>|
-| Total| <br/> É o resultado final composto pela soma de todos os subtotais. <br/><br/>Ou seja:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = Resultado total<br/><br/> |
+| *Initial Available Balance* |<br/> Saldo inicial.<br/><br/>|
+| *Release* |<br/> O detalhe das liberações de dinheiro que inclui o saldo inicial.<br/><br/> |
+| *Block* | <br/>Os bloqueios de dinheiro por disputas.<br/><br/> |
+| *Unblock* |<br/> Os desbloqueios após a resolução das disputas.<br/><br/>|
+| *Subtotal* | <br/>É a soma das transações que compõem cada seção.<br/><br/>|
+| *Total*| <br/> É o resultado final composto pela soma de todos os subtotais. <br/><br/>Ou seja:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = Resultado total<br/><br/> |
 
 
 Além disso, o relatório reflete os conceitos de débito (dinheiro a pagar) e crédito (dinheiro a receber) em duas colunas, uma para conceito:  
@@ -30,6 +30,12 @@ Além disso, o relatório reflete os conceitos de débito (dinheiro a pagar) e c
 
 Você verá o saldo disponível das transações liberadas nas colunas `NET_CREDIT` (creditado) e `NET_DEBIT` (debitado), dependendo se o valor é positivo ou negativo. Você também verá aí o valor bruto e os gastos de financiamento, impostos e custos de envio que descontamos para chegar ao valor líquido.
 
+> NOTE
+>
+> Nota
+>
+> Tenha em mãos o [Glossário do relatório ](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
+
 **Você quer adicionar detalhes à visualização das transações?**
 
 Selecione as colunas que quer exportar e incluir nos Ajustes do relatório, de acordo com o que queira analisar e conciliar.
@@ -37,13 +43,7 @@ Selecione as colunas que quer exportar e incluir nos Ajustes do relatório, de a
 **O que acontece se uma retirada não se concretizar?**
 
 Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à sua conta e a transação aparecerá no relatório em uma nova linha na coluna `NET_CREDIT`.
-
-
-> NOTE
->
-> Nota
->
-> Tenha em mãos o [Glossário do relatório ](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico. 
+ 
 
 ## Exemplo de um relatório
 
