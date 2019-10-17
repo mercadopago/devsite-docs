@@ -1,12 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
 
 # Glossário
 
@@ -26,7 +17,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla,mpe,mco,mlm,mlu,mlc]---- Inclui IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
-| TAXES_AMOUNT | Impostos cobrados por retenção de receita bruta. |
+| TAXES_AMOUNT | Impostos recebidos por retenção de receita bruta. |
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
 | PAYMENT METHOD | Meio de pagamento. ----[mla]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [Pode ser](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_chile) ------------ |
@@ -39,3 +30,24 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | STORE_ID | ID da loja se o pagamento é feito em um comércio físico. |
 | STORE_NAME | Nome da loja para o pagamento feito em um comércio físico. |
 | EXTERNAL_STORE_ID | ID da lojal definido pelo usuário para o pagamento feito em um comércio físico. |
+
+
+<hr/>
+
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Como usar o relatório
+>
+> Saiba como o relatório é composto e aprenda a analisá-lo.
+>
+> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/how-to-use/)
+
+> RIGHT_BUTTON_REQUIRED_PT
+>
+> Gere seus relatórios
+>
+> Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
+>
+> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/generate/)
