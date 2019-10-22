@@ -37,7 +37,7 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Smart C
   $item->quantity = 1;
   $item->unit_price = 100.0;
   $preference->items = array($item);
-  $processing_modes = array('gateway');
+  $preference->$processing_modes = array('gateway');
   $preference->save();
 ?>
 ```
