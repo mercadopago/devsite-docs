@@ -251,7 +251,7 @@ In the article [notificaciones](https://www.mercadopago.com.ar/developers/en/gui
 
 
 ## Point payments
-Point payments can be search in the Payments API. You can find more information in the following article: [API's]https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
+Point payments can be search in the Payments API. You can find more information in the following article: [API's](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
 
 On the other hand, we have an exclusive Point API that has some additional information about the payments: `https://api.mercadolibre.com/point/services/payment/<payment_id>?access_token=<access_token>`
 

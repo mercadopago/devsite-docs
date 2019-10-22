@@ -253,7 +253,7 @@ No artigo de [notificações](https://www.mercadopago.com.br/developers/pt/guide
 
 ## Pagamentos de Point
 
-Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar mais informações no artigo de [API's]https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/)
+Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar mais informações no artigo de [API's](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/)
 
 Existe uma API exclusiva de Point que conta com informações adicionais do pagamento: `https://api.mercadolibre.com/point/services/payment/<payment_id>?access_token=<access_token>`
 
