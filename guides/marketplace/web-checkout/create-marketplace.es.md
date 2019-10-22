@@ -1,4 +1,4 @@
-# Cómo integrar marketplace en el Checkout Web
+# Cómo integrar marketplace en el Smart Checkout
 
 ----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
