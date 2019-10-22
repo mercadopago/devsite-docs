@@ -41,7 +41,7 @@ Once you have tested you application in _Sandbox_ mode, you have to complete the
 * Use the `data_checkout` attribute in the` input` tags to handle data securely and prevent it from reaching your server. Make sure you do NOT include the `name` attribute in these tags.
 * Have an SSL certificate to ensure safe browsing and that the payment form is sent via HTTPS.
 * Communicate correctly the result of the payment to the user to try the recovery of the payment in case of rejection. To do this, use the [recommended response codes] (https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
-* Communicate the [promotions and financing possibilities] (https://www.mercadopago.com.ar/promociones) offered by Mercado Pago. You can include our [institutional banners] (https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales).
+* Communicate the [promotions and financing possibilities] (https://www.mercadopago.com.ar/promociones) offered by Mercado Pago. You can include our [institutional banners] (https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners).
 
 
 > When you have fulfilled the requirements, you must complete the form **I want to go live** that you can find in your account [credentials]([FAKER][CREDENTIALS][URL])
