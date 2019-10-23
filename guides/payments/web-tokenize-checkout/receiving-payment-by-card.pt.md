@@ -230,4 +230,4 @@ Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário
 
 ### Promoções
 
-Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago.com/mlb/com.mercadopago.web.landing.LandingController?id=banners).
+Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](shorturl.at/sILS3).
