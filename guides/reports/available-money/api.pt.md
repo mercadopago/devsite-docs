@@ -709,17 +709,13 @@ Gere seus relatórios de forma programada configurando três instâncias: geraç
 Programe a geração automática do relatório usando a frequência do recurso de configuração. Atualize o atributo *`scheduled`* na configuração *`true`*:
 
 ```plain
-[
     POST /v1/account/bank_report/schedule
-]
 ```
 
 Pare a geração automática do relatório. Atualize o atributo scheduled na configuração para false:
 
 ```plain
-[
     DELETE /v1/account/bank_report/schedule
-]
 ```
 
 
