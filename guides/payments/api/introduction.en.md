@@ -41,12 +41,12 @@ Once you have tested you application in _Sandbox_ mode, you have to complete the
 * Use the `data_checkout` attribute in the` input` tags to handle data securely and prevent it from reaching your server. Make sure you do NOT include the `name` attribute in these tags.
 * Have an SSL certificate to ensure safe browsing and that the payment form is sent via HTTPS.
 * Communicate correctly the result of the payment to the user to try the recovery of the payment in case of rejection. To do this, use the [recommended response codes](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
-* Communicate the [promotions and financing possibilities] (https://www.mercadopago.com.ar/promociones) offered by Mercado Pago. You can include our [institutional banners] (https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners).
+* Communicate the [promotions and financing possibilities](https://www.mercadopago.com.ar/promociones) offered by Mercado Pago. You can include our [institutional banners](https://mercadopago.com.ar/ayuda/banners_624).
 
 
 > When you have fulfilled the requirements, you must complete the form **I want to go live** that you can find in your account [credentials]([FAKER][CREDENTIALS][URL])
 
-The failure of fulfillment of these rules may involve: not processing payments and legal actions in accordance with the [terms and conditions] (https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299) .
+The failure of fulfillment of these rules may involve: not processing payments and legal actions in accordance with the [terms and conditions](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299) .
 You must have a policy of terms and conditions, in which you specify that you are responsible for all the data that is entered into your site.
 
 #### [Start integrating the API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card)
