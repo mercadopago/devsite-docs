@@ -46,11 +46,7 @@ La integración con Mercado Pago adicionalmente te permite utilizar el modelo h�
 
 ### Si ya estás operando con Mercado Pago
 
-* Ponte en contacto con tu ejecutivo de cuentas
-
-### Si no estás operando con Mercado Pago aún <br> (o no tienes un ejecutivo asignado)
-
-* [Completá el siguiente formulario](http://e.mercadolibre.com.ar/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlYQGsPShNr7YSD716AmfdSgiLzc9zaHbPGEzcMTwa2VXMtX%3DYQpglLjHJlYQGmfifPS0tzgzeKqXw7tLnnzgHYCPEBohUzdBmze09&_ei_=ErPkEDqzVJEurmXsCCFMSWw) y nos comunicaremos contigo
+* Ponte en contacto con tu ejecutivo de cuentas.
 
 ## Costos de servicio
 
