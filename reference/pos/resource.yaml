@@ -31,9 +31,38 @@ properties:
 - category:
     type: Long
     description:
-      en: MCC code that indicates the category of the Point of Sale.
-      es: Código MCC que indica el rubro del Punto de Venta.
-      pt: Código MCC que indica o categoria do ponto de venda.
+      en: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category
+      es: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoria generica.
+      pt: Código MCC que indica o categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica
+    enum:
+    - Argentina:
+        en: Gastronomy - 621102 <br/> Gas station - 473000
+        es: Gastronomía - 621102 <br/> Petrolera - 473000
+        pt: Gastronomia - 621102 <br/> Estação de serviço - 473000
+    - Brasil:
+        en: Gastronomy - 5611203 <br/> Gas station - 4731300
+        es: Gastronomía - 5611203 <br/> Petrolera - 4731300
+        pt: Gastronomia - 5611203 <br/> Estação de serviço - 4731300
+    - Mexico:
+        en: Gastronomy - 5812 <br/> Gas station - 468419
+        es: Gastronomía - 5812 <br/> Petrolera - 468419
+        pt: Gastronomia - 5812 <br/> Estação de serviço - 468419
+    - Colombia:   
+        en: Gastronomy - 5611 <br/> Gas station - 4731
+        es: Gastronomía - 5611 <br/> Petrolera - 4731
+        pt: Gastronomia - 5611 <br/> Estação de serviço - 4731
+    - Peru:
+        en: Gastronomy - 5520 <br/> Gas station - 5050
+        es: Gastronomía - 5520 <br/> Petrolera - 5050
+        pt: Gastronomia - 5520 <br/> Estação de serviço - 5050
+    - Uruguay:
+        en: Gastronomy - 56101 <br/> Gas station - 47300
+        es: Gastronomía - 56101 <br/> Petrolera - 47300
+        pt: Gastronomia - 56101 <br/> Estação de serviço - 47300
+    - Chile:
+        en: Gastronomy - 561000 <br/> Gas station - 473001
+        es: Gastronomía - 561000 <br/> Petrolera - 473001
+        pt: Gastronomia - 561000 <br/> Estação de serviço - 473001
 - store_id:
     type: String
     description:
