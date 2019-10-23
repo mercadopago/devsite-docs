@@ -46,11 +46,7 @@ The integration with Mercado Pago also allows you to operate in a hybrid mode, u
 
 ### If you are currently operating with Mercado Pago
 
-* Get in touch with your sales representative
-
-### If you are not operating with Mercado Pago yet <br> (or you don't have a sales representative)
-
-* [Fill out the following form](http://e.mercadolibre.com.ar/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlYQGsPShNr7YSD716AmfdSgiLzc9zaHbPGEzcMTwa2VXMtX%3DYQpglLjHJlYQGmfifPS0tzgzeKqXw7tLnnzgHYCPEBohUzdBmze09&_ei_=ErPkEDqzVJEurmXsCCFMSWw) and we'll get in touch
+* Get in touch with your sales representative.
 
 ## Service costs
 
@@ -58,6 +54,6 @@ The service costs in the **Gateway Model** are negotiated one on one. The cost d
 
 ### Next steps
 
-* [Configure your merchant IDs and payment methods](https://www.mercadopago.com.ar/developers/en/guides/gateway/configuration) in Mercado Pago's backoffice
+* [Configure your merchant IDs and payment methods](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/configuration) in Mercado Pago's backoffice
 * [Integrate the Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/gateway/web-checkout/receiving-payments) for the Gateway Model
 * [Integrate the API](https://www.mercadopago.com.ar/developers/en/guides/gateway/api/receiving-payments) for the Gateway Model

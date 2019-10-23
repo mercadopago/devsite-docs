@@ -99,7 +99,7 @@ Debes usar el campo external_reference para poder identificar la orden de tu sis
 
 ## 2. Declarar la URL de tu dominio a Mercado Pago
 
-Debes informar a tu [asesor técnico asignado](https://www.mercadopago.com.ar/developers/es/support), la URL base de tu dominio a la que Mercado Pago consultará por cada transacción.
+Debes informar a tu asesor técnico asignado, la URL base de tu dominio a la que Mercado Pago consultará por cada transacción.
 
 > WARNING
 > 

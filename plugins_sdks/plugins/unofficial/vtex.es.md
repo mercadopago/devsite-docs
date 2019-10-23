@@ -521,7 +521,7 @@ Los datos más significativos son los siguientes:
 - `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
 - `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
 - `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Codigo de comercio (solo para Gateway).
+- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
 
 Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
 
