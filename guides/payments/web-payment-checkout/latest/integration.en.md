@@ -194,8 +194,8 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# This value replaces the String "<%= @init_point %>" in your HTML
-@init_point = preference["response"]["init_point"]
+# This value replaces the String "<%= @preference_id %>" in your HTML
+@preference_id = preference["response"]["id"]
 ```
 ```csharp
 // Mercado Pago SDK
@@ -270,7 +270,7 @@ Finally, add the following code to show the payment button of your Smart Checkou
 <form action="/payment-process" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
+   data-preference-id="<%= @preference_id %>">
   </script>
 </form>
 ```
