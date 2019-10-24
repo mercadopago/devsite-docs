@@ -194,8 +194,8 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# Este valor substituirá a string "<%= @init_point %>" no seu HTML
-@init_point = preference["response"]["init_point"]
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
+@preference_id = preference["response"]["id"]
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -270,7 +270,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <form action="/processar_pagamento" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
+   data-preference-id="<%= @preference_id %>">
   </script>
 </form>
 ```

@@ -194,8 +194,8 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# Este valor reemplazará el string "<%= @init_point %>" en tu HTML
-@init_point = preference["response"]["init_point"]
+# Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
+@preference_id = preference["response"]["id"]
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -270,7 +270,7 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Smar
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
+   data-preference-id="<%= @preference_id %>">
   </script>
 </form>
 ```
