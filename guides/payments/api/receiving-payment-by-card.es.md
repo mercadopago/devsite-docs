@@ -28,7 +28,7 @@ Para hacer uso de esta librería debes comenzar insertando el siguiente código 
 Tu clave pública es la que es la que te identifica para poder capturar los datos de tarjeta de forma segura. La _public key_ debe ser cargada después de incluir _MercadoPago.js_ y antes de realizar un _request_.
 
 ```javascript
-window.Mercadopago.setPublishableKey(ENV_PUBLIC_KEY);
+window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 ```
 
 > NOTE
