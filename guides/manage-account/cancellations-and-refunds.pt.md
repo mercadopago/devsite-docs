@@ -75,8 +75,11 @@ curl -X PUT \
 ----[mlm]----
 É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
 ------------
-----[mlc, mlu, mpe, mco]----
-É possível devolver um pagamento dentro de **90 dias** a partir de sua data de aprovação.
+----[mlc]----
+You can refund a payment within **330 days** after it was approved.
+------------
+----[mlu, mpe, mco]----
+You can refund a payment within **90 days** after it was approved.
 ------------
 
 Deve haver saldo suficiente disponível em sua conta para efetuar a devolução do valor do pagamento com sucesso. Caso contrário, obterá um erro `400 Bad Request`.

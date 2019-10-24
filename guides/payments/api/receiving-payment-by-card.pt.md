@@ -28,7 +28,7 @@ Para utilizar esta biblioteca, primeiramente insira o seguinte código em nosso 
 Sua chave pública é sua identificação para poder capturar os dados do cartão de forma segura. O upload da chave pública deve ser feito após incluir MercadoPago.js e antes de efetuar uma solicitação.
 
 ```javascript
-window.Mercadopago.setPublishableKey(ENV_PUBLIC_KEY);
+window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 ```
 
 > NOTE
