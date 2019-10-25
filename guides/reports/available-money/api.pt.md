@@ -2,7 +2,8 @@
 # Geração via API
 
 
-Ganhe tempo e automatize a **frequência de geração** do relatório de Dinheiro Disponível sempre que quiser, tanto de forma manual quanto programada.
+Você pode gerar seu relatório via API, tanto de forma manual quanto programada.
+Ganhe tempo e automatize a **frequência de geração** do relatório de Dinheiro disponível sempre que quiser.
 
 
 ## Configurar seus relatórios
@@ -453,7 +454,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 
 

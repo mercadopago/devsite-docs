@@ -1,8 +1,7 @@
 
 # Generación por API
 
-Puedes generar tu reporte por API, tanto de forma manual como de forma programada.
-Ganá tiempo y **automatizá la frecuencia de generación del reporte** de Dinero en cuenta las veces que quieras.
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero en cuenta las veces que quieras.
 
 ## Configurar tus reportes
 

@@ -1,7 +1,7 @@
 
 # Generación por panel de Mercado Pago
 
-Genera tus reportes de Dinero Disponible desde tu panel de Mercado Pago. Podrás programar la generación de un reporte de Dinero Disponible cada vez que hagas un retiro de tu saldo a una cuenta bancaria.
+Genera tus reportes de Dinero Disponible desde tu panel de Mercado Pago. Podrás programar la generación de un reporte de Dinero disponible cada vez que hagas un retiro de tu saldo a una cuenta bancaria.
 
 Sigue estos pasos para generar tus reportes:
 
@@ -16,7 +16,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 

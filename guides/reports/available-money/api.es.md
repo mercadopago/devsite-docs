@@ -2,7 +2,7 @@
 # Generación por API
 
 
-Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero disponible las veces que quieras.
 
 
 ## Configurar tus reportes
@@ -453,7 +453,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias:
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 

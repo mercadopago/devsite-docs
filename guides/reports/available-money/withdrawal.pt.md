@@ -2,7 +2,7 @@
 # Geração por retirada
 
 
-Você pode criar um relatório de Dinheiro Disponível de forma automática cada vez que fizer uma retirada de dinheiro da sua conta do Mercado Pago para uma conta bancária. Programe esta opção a partir do seu painel do Mercado Pago ou via API. 
+Você pode criar um relatório de Dinheiro disponível de forma automática cada vez que fizer uma retirada de dinheiro da sua conta do Mercado Pago para uma conta bancária. Programe esta opção a partir do seu painel do Mercado Pago ou via API. 
 
 ## Gerar a partir do painel do Mercado Pago
 
@@ -194,7 +194,7 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 >
 > Importante
 >
-> A geração por retirada é uma opção a mais de geração de relatório de Dinheiro Disponível. Não altera a geração configurada no seu painel do Mercado Pago ou via API. Confira o resto da documentação para saber de quais outras formas é possível gerar seus relatórios: pelo painel do Mercado Pago e via API. 
+> A geração por retirada é uma opção a mais de geração de relatório de Dinheiro disponível. Não altera a geração configurada no seu painel do Mercado Pago ou via API. Confira o resto da documentação para saber de quais outras formas é possível gerar seus relatórios: pelo painel do Mercado Pago e via API. 
 
 <hr/>
 

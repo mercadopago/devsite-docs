@@ -38,13 +38,13 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
-Observa cómo está compuesto el reporte de dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de Dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
+![Reporte de Dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
 
