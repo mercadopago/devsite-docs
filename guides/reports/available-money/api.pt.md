@@ -114,7 +114,6 @@ curl -X POST \
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -136,7 +135,6 @@ $data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -162,7 +160,6 @@ String body = "{
                 \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
                 \\"extended\\": true,
-                \\"schedule\\":true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -195,7 +192,6 @@ data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
         }'
 
@@ -215,7 +211,6 @@ var dataString = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -247,7 +242,7 @@ Como resposta, você receberá um  `HTTP STATUS 201 (Created)`
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
     "detailed": true,
-    "scheduled": true,
+    "scheduled": false,
     "execute_after_withdrawal": true,
     "v1": {
         "language": null,
@@ -279,7 +274,6 @@ curl -X PUT \
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -301,7 +295,6 @@ $data = '{
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -327,7 +320,6 @@ String body = "{
                 \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
                 \\"extended\\": true,
-                \\"schedule\\":true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -360,7 +352,6 @@ data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
 
         }'
@@ -381,7 +372,6 @@ var dataString = '{
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -414,7 +404,7 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
     "detailed": true,
-    "scheduled": true,
+    "scheduled": false,
     "execute_after_withdrawal": true,
     "v1": {
         "language": null,
