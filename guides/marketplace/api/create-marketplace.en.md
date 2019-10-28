@@ -62,7 +62,7 @@ curl -X POST \
 
 The parameters you need to include are:
 
-* `client_secret`: Your `ACCESS_TOKEN`. You can get it from the detail of your [application.](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials/]([FAKER][CREDENTIALS][URL])
+* `client_secret`: Your `ACCESS_TOKEN`. You can get it from the detail of your [application.]([FAKER][CREDENTIALS][URL])
 * `code`: The authorization code you got when redirecting the user back to your site.
 * `redirect_uri`: It must be the same Redirect URI that you set up in your application.
 
