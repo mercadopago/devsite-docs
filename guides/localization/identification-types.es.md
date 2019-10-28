@@ -64,6 +64,8 @@ Otro                            | `Otro`                   |
 Tipo de documento           | ID                       |
 :-------------------------- | :----------------------- |
 Cadastro de Pessoas Físicas | `CPF`                    |
+Cadastro Nacional da Pessoa Jurídica | `CNPJ`                   |
+
 
 ### Chile
 
@@ -93,5 +95,5 @@ Registro Único de Contribuyentes | `RUC`                    |
 
 Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
-Cédula de Identidad        | `CI`                    |
+Cédula de Identidad        | `CI`                     |
 Otro                       | `Otro`                   |

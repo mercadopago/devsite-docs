@@ -61,20 +61,21 @@ Documento Nacional de Identidad | `DNI`                    |
 Cédula de Identidad             | `CI`                     |
 Libreta Cívica                  | `LC`                     |
 Libreta de Enrolamiento         | `LE`                     |
-Outros                            | `Otro`                   |
+Outros                          | `Otro`                   |
 
 ### Brasil
 
 Tipo de documento           | ID                       |
 :-------------------------- | :----------------------- |
 Cadastro de Pessoas Físicas | `CPF`                    |
+Cadastro Nacional da Pessoa Jurídica | `CNPJ`                   |
 
 ### Chile
 
 Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Rol Único Tributario       | `RUT`                    |
-Outros                       | `Otro`                   |
+Outros                     | `Otro`                   |
 
 ### Colômbia
 
@@ -83,7 +84,7 @@ Tipo de documento                   | ID                       |
 Cédula de Ciudadanía                | `CC`                     |
 Cédula de Extranjeria               | `CE`                     |
 Número de Identificación Tributaria | `NIT`                    |
-Outros                                | `Otro`                   |
+Outros                              | `Otro`                   |
 
 ### Peru
 
@@ -98,5 +99,5 @@ Registro Único de Contribuyentes | `RUC`                    |
 Tipo de documento          | ID                       |
 :------------------------- | :----------------------- |
 Cédula de Identidad        | `CI`                    |
-Outros                       | `Otro`                   |
+Outros                     | `Otro`                   |
 
