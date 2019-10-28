@@ -54,8 +54,7 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_id=CLIENT_ID' \
-     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_secret=ACCESS_TOKEN' \
      -d 'grant_type=authorization_code' \
      -d 'code=AUTHORIZATION_CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -63,8 +62,7 @@ curl -X POST \
 
 The parameters you need to include are:
 
-* `client_id`: The value of `APP_ID`. You can get it from the detail of your [application.](https://applications.mercadopago.com/)
-* `client_secret`: Your `SECRET_KEY`. You can get it from the detail of your [application.](https://applications.mercadopago.com/)
+* `client_secret`: Your `ACCESS_TOKEN`. You can get it from the detail of your [application.](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials/]([FAKER][CREDENTIALS][URL])
 * `code`: The authorization code you got when redirecting the user back to your site.
 * `redirect_uri`: It must be the same Redirect URI that you set up in your application.
 
