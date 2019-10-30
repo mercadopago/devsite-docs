@@ -1,10 +1,10 @@
 
-# Como gerar o seu relatório de Dinheiro Disponível?
+# Como gerar o seu relatório de Dinheiro disponível?
 
 
 ## Canais de geração
 
-Há três formas de gerar um relatório de Dinheiro Disponível: 
+Há três formas de gerar um relatório de Dinheiro disponível: 
 
 | Canais | Descrição |
 | ------- | ----------- |

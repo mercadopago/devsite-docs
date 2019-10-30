@@ -47,7 +47,7 @@ Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à su
 
 ## Exemplo de um relatório
 
-Observe como está composto o relatório de dinheiro disponível neste exemplo para identificar as seções e analisar seus próprios relatórios:
+Observe como está composto o relatório de Dinheiro disponível neste exemplo para identificar as seções e analisar seus próprios relatórios:
 
 ![Reporte de dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-pt.png)
 

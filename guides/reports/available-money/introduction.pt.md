@@ -1,8 +1,8 @@
 
-# O que é o Relatório de Dinheiro Disponível?
+# O que é o relatório de Dinheiro disponível?
 
 
-O relatório de Dinheiro Disponível é um **relatório para ser baixado que te permite saber a liquidez do seu negócio**, ou seja, quanto você tem para usar. Ele contém **detalhes dos pagamentos liberados** que estão prontos para serem retirados para uma conta bancária, render no Mercado Pago ou para usar saldo no cartão pré-pago Cartão Mercado Pago.
+O relatório de Dinheiro disponível é um **relatório para ser baixado que te permite saber a liquidez do seu negócio**, ou seja, quanto você tem para usar. Ele contém **detalhes dos pagamentos liberados** que estão prontos para serem retirados para uma conta bancária, render no Mercado Pago ou para usar saldo no cartão pré-pago Cartão Mercado Pago.
 
 ## Como baixar o relatório?
 
@@ -35,12 +35,12 @@ Os prazos de liberação têm relação com os tempos dos bancos ou com os fluxo
 
 **Este relatório é usado para conciliar** as retiradas de dinheiro e inclui as transações que o compõem.
 
-É possível gerar um Relatório de dinheiro disponível em três casos:
+É possível gerar um relatório de Dinheiro disponível em três casos:
 1. Toda vez que você o gerar manualmente.
 1. Agendado, de acordo com suas configurações.
 1. A cada retirada de dinheiro para uma conta bancária.
 
-Use o relatório de dinheiro disponível **quando precisar de informações sobre a liquidez da conta,** conciliar como estão compostas as transações que impactam seu saldo disponível a nível transacional ou para **conciliar mensal e periodicamente os detalhes das movimentações** que geram um saldo disponível para retirada.
+Use o relatório de Dinheiro disponível **quando precisar de informações sobre a liquidez da conta,** conciliar como estão compostas as transações que impactam seu saldo disponível a nível transacional ou para **conciliar mensal e periodicamente os detalhes das movimentações** que geram um saldo disponível para retirada.
 
 ### Use o relatório para conhecer seu histórico
 

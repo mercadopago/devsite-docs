@@ -1,7 +1,7 @@
 
 # Geração pelo painel do Mercado Pago
 
-Gere seus relatórios de Dinheiro Disponível a partir do seu painel do Mercado Pago. Você poderá programar a geração de um Relatório de Dinheiro Disponível para cada vez que fizer uma retirada do seu saldo para uma conta bancária.
+Gere seus relatórios de Dinheiro Disponível a partir do seu painel do Mercado Pago. Você poderá programar a geração de um relatório de Dinheiro disponível para cada vez que fizer uma retirada do seu saldo para uma conta bancária.
 
  Siga estas etapas para gerar seus relatórios:
 

@@ -1,8 +1,7 @@
 
 # Generación por API
 
-Puedes generar tu reporte por API, tanto de forma manual como de forma programada.
-Ganá tiempo y **automatizá la frecuencia de generación del reporte** de Dinero en cuenta las veces que quieras.
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero en cuenta las veces que quieras.
 
 ## Configurar tus reportes
 
@@ -110,7 +109,6 @@ curl -X POST \
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -131,7 +129,6 @@ $data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -160,7 +157,6 @@ String body = "{
                     \\"show_fee_prevision\\": false,
                     \\"show_chargeback_cancel\\": true,
                     \\"detailed\\": true,
-                    \\"scheduled\\": false,
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
@@ -196,7 +192,6 @@ data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -223,7 +218,6 @@ var dataString = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -289,7 +283,6 @@ curl -X PUT \
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "detailed": true,
-        "scheduled": false,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
@@ -314,7 +307,6 @@ $data = '{
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "detailed": true,
-        "scheduled": false,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
@@ -343,7 +335,6 @@ String body = "{
                     \\"show_fee_prevision\\": false,
                     \\"show_chargeback_cancel\\": true,
                     \\"detailed\\": true,
-                    \\"scheduled\\": false,
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
@@ -379,7 +370,6 @@ data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -406,7 +396,6 @@ var dataString = '{
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "detailed": true,
-        "scheduled": false,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,

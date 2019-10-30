@@ -1,8 +1,8 @@
 
-# ¿Qué es el Reporte de Dinero Disponible?
+# ¿Qué es el reporte de Dinero disponible?
 
 
-El reporte de Dinero Disponible es un **informe descargable que te permite conocer la liquidez de tu negocio**, es decir, cuánto dinero tienes para usar. Contiene el **detalle de los pagos liberados** que están listos para retirar a una cuenta bancaria, invertir en Mercado Pago o usar como saldo en la tarjeta prepaga de Mercado Pago.
+El reporte de Dinero disponible es un **informe descargable que te permite conocer la liquidez de tu negocio**, es decir, cuánto dinero tienes para usar. Contiene el **detalle de los pagos liberados** que están listos para retirar a una cuenta bancaria, invertir en Mercado Pago o usar como saldo en la tarjeta prepaga de Mercado Pago.
 
 ## ¿Cómo descargo el reporte?
 
@@ -10,14 +10,8 @@ Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de c
 
 Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas:
 
-* Desde un link de descarga que te enviaremos por mail.
-* Desde tu cuenta de Mercado Pago, en *Reportes de Dinero Disponible.*
-
-Para acceder a tus reportes desde la sección de Informes en tu cuenta de Mercado Pago, sigue estos pasos:
-
-1. Inicia sesión en [tu cuenta de Mercado Pago.](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user)
-1. Ve a [Informes](https://www.mercadopago.com/mla/account/movements) y de ahí accede a Reportes.
-1. En [Reportes](https://www.mercadopago.com.ar/balance/reports), elige *Dinero Disponible*, allí encontrarás un listado de los reportes que has generado.
+* Desde un link de descarga que te enviaremos por e-mail.
+* Desde tu cuenta de Mercado Pago, ve a [tus informes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) y elige la opción *Reportes de Dinero en disponible*.
 
 ## Valores del reporte
 
@@ -35,12 +29,12 @@ Los plazos de liberación tienen que ver con los tiempos de los bancos o por los
 
 **Este reporte se usa para conciliar** los retiros de dinero e incluye las transacciones que lo componen.
 
-Puedes generar un reporte de Dinero Disponible en tres instancias:
+Puedes generar un reporte de Dinero disponible en tres instancias:
 1. Cada vez que lo generas manualmente.
 1. De forma programada, según tus ajustes.
 1. Con cada retiro de dinero a una cuenta bancaria.
 
-Usa el reporte de Dinero Disponible **cuando quieras tener un informe de liquidez de la cuenta,** conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional o para **conciliar mensual y periódicamente con el detalle de los movimientos** que generan un saldo disponible para retirar.
+Usa el reporte de Dinero disponible **cuando quieras tener un informe de liquidez de la cuenta,** conciliar cómo están compuestas las operaciones que impactan en tu dinero disponible en un nivel transaccional o para **conciliar mensual y periódicamente con el detalle de los movimientos** que generan un saldo disponible para retirar.
 
 ### Usa el reporte para conocer tu historial
 
@@ -50,7 +44,7 @@ Además, puedes usar el reporte para conocer el historial de dinero disponible e
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 
