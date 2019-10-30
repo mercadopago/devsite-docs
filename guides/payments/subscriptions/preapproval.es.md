@@ -17,6 +17,7 @@
 >
 > C. Pre-Approval solo está disponible a través del checkout personalizado de Mercado Pago o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
 
+<br/>
 
 > NOTE
 >
