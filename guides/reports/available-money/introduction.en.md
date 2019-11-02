@@ -1,5 +1,5 @@
 
-# What is the Available Balance Report?
+# What is the Available Balance report?
 
 
 The Available Balance report is a **downloadable report that allows you to know the liquidity of your business**, that is, how much money you have to use. It contains the **detail of the released payments** that are ready to withdraw to a bank account, invest in Mercado Pago or use as balance in the Mercado Pago prepaid card.
@@ -12,12 +12,6 @@ Once available, it will be in your report tray and you can always download it tw
 
 * From the download link we’ll email you.
 * From your Mercado Pago account, in *Available Balance Reports*.
-
-To access your reports from the Reports section in your Mercado Pago account, follow these steps:
-
-1. Log in to your [Mercado Pago account](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user).
-1. Go to [Reports](https://www.mercadopago.com/mla/account/movements) and from there access *Reports*.
-1. In [Reports](https://www.mercadopago.com/mla/account/movements), select *Available Balance*, there you will find a list of the reports you have generated..
 
 ## Report Values
 
@@ -57,7 +51,7 @@ In addition, you can use the report to know the history of balance available bet
 
 ### Next steps
 
-> LEFT_BUTTON_REQUIRED_EN
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > How to use the report
 >
