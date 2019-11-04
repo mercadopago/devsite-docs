@@ -8,7 +8,7 @@ sites_supported:
 
 ## Introdução
 
-A modalidade de `Gateway`  em Advanced Payments permite realizar múltiplos pagamentos com diferentes números de comércio próprios e num mesmo card token. Isso significa que o comprador deve ingressar os dados de seu cartão uma única vez.
+A modalidade de `Gateway` em Advanced Payments permite realizar múltiplos pagamentos com diferentes números de comércio próprios e em um mesmo card token. Isso significa que o comprador deve ingressar os dados de seu cartão uma única vez.
 
 Para poder realizar pagamentos nessa modalidade, deverá fazer o carregamento de seus números de comércios, acordos e meios de pagamento associados desde a configuração de sua conta de Mercado Pago. Eles serão utilizados na integração com o API.
 ----[mco]----
