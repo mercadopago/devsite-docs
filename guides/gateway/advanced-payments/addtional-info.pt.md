@@ -6,7 +6,7 @@ sites_supported:
 
 # Informações adicionais
 
-É possível enviar informações que podem melhorar a análise de prevenção de fraude. Para isso, deverá enviar o campo `additional_info` com informações do pagador e o endereço de envio. Quantas mais informações forem enviadas, melhor será a taxa de conversão dos pagamentos.
+É possível enviar informações que podem melhorar a análise de prevenção de fraude. Para isso, deverá enviar o campo `additional_info` com informações do pagador e o endereço de envio. Quanto mais informações forem enviadas, melhor será a taxa de conversão dos pagamentos.
 
 Além disso, é possível enviar o objeto `metadata` com informações relevantes para seu negócio que o vendedor queira adicionar. As informações que podem conter esse objeto são do tipo senha/valor.
 
