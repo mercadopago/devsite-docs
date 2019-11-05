@@ -16,7 +16,7 @@ Establece el viewport agregando el siguiente código dentro de la etiqueta `<hea
 Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprador presione el botón se mostrará el checkout. Incluye el siguiente código en el lugar donde va a estar ubicado el botón dentro de tu sitio Web:
 
 ```html
-<form action="/procesar-pago" method="POST">
+<form action="https://www.mi-sitio.com/procesar-pago" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
