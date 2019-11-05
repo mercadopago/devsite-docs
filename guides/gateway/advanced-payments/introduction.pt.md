@@ -10,7 +10,7 @@ sites_supported:
 
 A modalidade de `Gateway` em Advanced Payments permite realizar múltiplos pagamentos com diferentes números de comércio próprio e um mesmo card token. Isso significa que o comprador deve ingressar os dados de seu cartão uma única vez.
 
-Para poder realizar pagamentos nessa modalidade, deverá configurar seus números de comércio, acordos e meios de pagamento associados na configuração da sua conta Mercado Pago. Eles serão utilizados na integração com a API.
+Para poder realizar pagamentos nessa modalidade, é necessário configurar o número de comércio, acordos e meios de pagamento associados na configuração da sua conta Mercado Pago. Eles serão utilizados na integração com a API.
 ----[mco]----
 No caso da sua conta Mercado Pago ser da Colômbia, entre em contato com o seu executivo de contas para poder configurar os números de comércio, acordos e meios de pagamento associados.
 ------------
@@ -19,7 +19,7 @@ No caso da sua conta Mercado Pago ser da Colômbia, entre em contato com o seu e
 
 ### Criar uma conta no Mercado Pago
 
-Você deve criar uma conta no website do Mercado Pago do país onde desejar receber pagamentos. Atualmente, modalidade Gateway é disponibilizada apenas para Argentina e Colômbia:
+Você deve criar uma conta no website do Mercado Pago do país onde desejar receber pagamentos. Atualmente, a modalidade Gateway é disponibilizada apenas para Argentina e Colômbia:
 
 * [Argentina](https://www.mercadopago.com.ar)
 * [Colombia](https://www.mercadopago.com.co)
@@ -37,7 +37,7 @@ Uma vez criada a aplicação, será obtido o valor de APP_ID, que será necessá
 
 É necessário contatar seu executivo de contas e informar o APP_ID de seu aplicativo, a fim de requerer a habilitação da modalidade Gateway.
 
-### Carregamento de informações correspondentes a números de comércios, acordos e meios de pagamento associados
+### Configurar informações correspondentes a números de comércio, acordos e meios de pagamento associados
 
 Para poder realizar pagamentos nessa modalidade, você deverá configurar seus números de comércio, acordos e meios de pagamento associados na sua conta Mercado Pago. Eles serão utilizados na integração com a API.
 
