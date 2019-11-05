@@ -10,15 +10,15 @@ sites_supported:
 >
 > Importante
 >
-> Antes de começar, você deverá entrar em contato com seu executivo de contas informando o ID de seu aplicativo, aos fins de requerer a habilitação de sua modalidade Gateway.
+> Antes de começar, você deverá entrar em contato com seu executivo de contas informando o ID de seu aplicativo, a fim de requerer a habilitação de sua modalidade Gateway.
 
-#### Pagamentos split no modo Gateway
+#### Split de pagamentos no modo Gateway
 
 > NOTE
 >
 > Nota
 >
-> Atualmente o API somente permite realizar pagamentos binários com captura direta.
+> Atualmente a API permite realizar pagamentos binários somente com captura direta.
 
 A seguir vemos um exemplo de pagamento na modalidade Gateway, utilizando a API REST de Advanced Payments.
 
