@@ -1,17 +1,39 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
 
-> WARNING
+# Generation by the Mercado Pago panel
+
+Generate your Account Money reports from your Mercado Pago panel.
+
+
+Follow these steps to generate your reports:
+
+1. From your Mercado Pago account, go to your reports and select the *Reports* option.
+1. Go to [Account Money reports]() and click on *Create report*.
+1. Search the transactions per period of time and select the ones you wish to reconcile. 
+
+<span style="margin-left:40px">Done! You will see your report *In preparation*.</span>
+
+> NOTE
 >
-> We're sorry
+> Note
 >
-> This page is currently not available in English.
+> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
+
+<hr/>
+
+### Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
 >
->[View documentation in Spanish](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/panel/)
+> Generating through API
+>
+> Create reports in scheduled and manual ways through an integration with Mercado Pago.
+>
+> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/api)
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Glossary
+>
+> Know what each term means and the detail of the columns that make up the report.
+>
+> [Glossary](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/glossary)
