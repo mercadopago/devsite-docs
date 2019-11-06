@@ -32,30 +32,30 @@ properties:
           en: Item image URL.
           es: URL de imagen del ítem.
           pt: URL da imagem do anúncio.
-        - category_id:
-          type: String(256)
-          description:
-              en: Item category ID.
-              es: Identificador de la categoría del ítem.
-              pt: Identificador da categoria do item.
-        - quantity:
-            type: Integer
-            description:
-              en: Item quantity.
-              es: Cantidad de ítems.
-              pt: Quantidade de itens.
+    - category_id:
+        type: String(256)
+        description:
+          en: Item category ID.
+          es: Identificador de la categoría del ítem.
+          pt: Identificador da categoria do item.
+    - quantity:	        - quantity:
+        type: Integer
+        description:
+          en: Item quantity.
+          es: Cantidad de ítems.
+          pt: Quantidade de itens.
     - currency_id:
         type: String(3)
         description:
           en: Currency ID. ISO_4217 code.
-          es: Identificador de moneda en formato ISO_4217.
-          pt: Identificador de moeda em formato ISO_4217.
-        - unit_price:
-            type: Float
-            description:
-              en: Unit price.
-              es: Precio unitario.
-              pt: Preço unitário.
+          es: Identificador de moneda en formato ISO_4217.	          
+          pt: Identificador de moeda em formato ISO_4217.	          
+    - unit_price:	        
+        type: Float	            
+        description:	            
+          en: Unit price.	              
+          es: Precio unitario.	             
+          pt: Preço unitário.	
 - payer:
     type: Object
     description:
