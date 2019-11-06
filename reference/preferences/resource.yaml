@@ -38,7 +38,7 @@ properties:
           en: Item category ID.
           es: Identificador de la categoría del ítem.
           pt: Identificador da categoria do item.
-    - quantity:	        - quantity:
+    - quantity:
         type: Integer
         description:
           en: Item quantity.
