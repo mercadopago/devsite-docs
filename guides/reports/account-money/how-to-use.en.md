@@ -11,7 +11,7 @@ The report is made up of different types of transactions that you can see in the
 
 <br/>
 
-| Transacciones | Tipo de operación |
+| Transactions | Transaction type |
 | --- | --- |
 | *SETTLEMENT* |<br/> Approved <br/><br/>|
 | *REFUND* |<br/> Total or partial returns <br/><br/> |
@@ -37,7 +37,7 @@ And in the `SETTLEMENT_NET_AMOUNT` column you will find the real impact on your 
 Note how the Account Money report is composed in this example to identify the operations and read your own reports:
 
 
-![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-en.png)
+![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-en.jpg)
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 
