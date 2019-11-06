@@ -81,6 +81,28 @@ request(options, callback);
 ```
 ]]]
 
+You will receive an `HTTP STATUS 200 (OK)` in response.
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": true,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
+
 ### Create configuration
 
 Create your API generation preferences to export columns, name your files and configure other settings:
@@ -217,6 +239,28 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
+
+You will receive an `HTTP STATUS 201 (Created)` in response.
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": false,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
 
 ### Update configuration
 
@@ -355,6 +399,28 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
+
+You will receive an `HTTP STATUS 200 (OK)` in response.
+
+```json
+{
+    "file_name_prefix": "bank-report-USER_ID",
+    "include_withdrawal_at_end": false,
+    "detailed": true,
+    "scheduled": false,
+    "execute_after_withdrawal": true,
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
+    },
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
+}
+```
 
 
 
@@ -533,7 +599,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive in response:
+You will receive `HTTP STATUS 200 (OK)` in response:
 
 ```json
 [
@@ -607,6 +673,17 @@ request(options, callback);
 ```
 ]]]
 
+You will receive an `HTTP STATUS 200 (OK)` in response.
+
+```csv
+DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
+2018-04-17T15:07:53.000-04:00,,,initial_available_balance,,813439.19,0.00,813439.19,0.00,0.00,0.00,0.00,0.00,1,
+2018-04-17T15:07:53.000-04:00,,,release,withdrawal,0.00,813363.45,-813360.45,-3.00,0.00,0.00,0.00,0.00,1,
+2018-04-17T15:11:12.000-04:00,,,release,payment,225.96,0.00,269.00,-43.04,0.00,0.00,0.00,0.00,1,account_money
+2018-04-17T15:18:16.000-04:00,,,release,payment,124.32,0.00,148.00,-23.68,0.00,0.00,0.00,0.00,1,visa
+2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
+2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
+```
 
 
 ## Generating on a scheduled basis

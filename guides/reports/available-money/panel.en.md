@@ -1,7 +1,7 @@
 
 # Generation by the Mercado Pago panel
 
-Generate your Available Balance reports from your Mercado Pago panel. You can schedule the generation of an Available Balance Report for each time you make a withdrawal from your balance to a bank account.
+Generate your Available Balance reports from your Mercado Pago panel. You can schedule the generation of an Available Balance report for each time you make a withdrawal from your balance to a bank account.
 
 Follow these steps to generate your reports:
 

@@ -11,7 +11,7 @@ Keep in mind that the report generation takes a few minutes depending on how muc
 Once available, it will be in your report tray and you can always download it two ways:
 
 * From the download link we’ll email you.
-* From your Mercado Pago account, in *Available Balance Reports*.
+* From your Mercado Pago account, go to [your reports](https://www.mercadopago.com/balance/reports/settlement-report) and select the *Available Balance report* option.
 
 ## Report Values
 
@@ -29,7 +29,7 @@ The release periods have to do with the bank terms or the intermediation flows w
 
 **This report is used to reconcile** money withdrawals and includes the transactions that comprise it.
 
-You can generate an Available Balance Report in three instances:
+You can generate an Available Balance report in three instances:
 
 1. Every time you generate it manually.
 1. Scheduled, according to your settings.

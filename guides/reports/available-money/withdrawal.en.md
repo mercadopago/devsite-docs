@@ -2,9 +2,9 @@
 # Generating per withdrawal
 
 
-## Generating from the Mercado Pago panel
- 
 You can create an Available Balance report automatically every time you transfer money from your Mercado Pago account to a bank account. Set up this option from your Mercado Pago panel or via API.
+
+## Generating from the Mercado Pago panel
 
 From the Mercado Pago Reports section, schedule the generation of reports by withdrawal following these steps:
 
@@ -17,7 +17,8 @@ Generate your reports every time you want to review a withdrawal
 1. From your Mercado Pago account, go to [your Reports](https://www.mercadopago.com.ar/balance/reports) and from there to *Reports*.
 1. Go to your [Available Balance report](https://www.mercadopago.com.ar/balance/reports?page=1#!/bank-report) and click on *Create report*.
 1. Locate your withdrawals by **time period** and select the withdrawal you want to review.
-1. Done! You’ll see your report *in preparation*. 
+
+<span style="margin-left:40px">Done! You will see your report *In preparation*.</span>
 
 > NOTE
 >
