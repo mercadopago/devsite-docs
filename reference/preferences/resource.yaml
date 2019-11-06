@@ -48,14 +48,14 @@ properties:
         type: String(3)
         description:
           en: Currency ID. ISO_4217 code.
-          es: Identificador de moneda en formato ISO_4217.	          
-          pt: Identificador de moeda em formato ISO_4217.	          
-    - unit_price:	        
-        type: Float	            
-        description:	            
-          en: Unit price.	              
-          es: Precio unitario.	             
-          pt: Preço unitário.	
+          es: Identificador de moneda en formato ISO_4217.
+          pt: Identificador de moeda em formato ISO_4217.
+    - unit_price:
+        type: Float
+        description:
+          en: Unit price.
+          es: Precio unitario.
+          pt: Preço unitário.
 - payer:
     type: Object
     description:
