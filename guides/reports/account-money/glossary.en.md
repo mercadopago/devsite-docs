@@ -28,20 +28,20 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | MKP_FEE_AMOUNT | Mercado Libre Fee. |
 | FINANCING_FEE_AMOUNT | Cost for offering interest-free installments. |
 | SHIPPING_FEE_AMOUNT | Shipping cost. |
-| TAXES_AMOUNT | ----[mla]---- Impuestos cobrados por retenciones de Ingresos Brutos. ------------ ----[mco]---- Impuestos cobrados por retenciones de IVA, ICA y Fuente según aplique el caso. ------------ ----[mlu]---- Impuestos cobrados por retenciones de IVA.  ------------ ----[mlu, mpe, mlm]---- Impuestos cobrados. ------------ |
+| TAXES_AMOUNT | Taxes charged for gross income withholdings. |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
-| TAX_AMOUNT_TELCO | ----[mco]---- <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Descripción del impuesto retenido por operación en el TAXES_AMOUNT. <br/><br/> Puede tomar el valor de:<br/><ul><li> fuente</li><li>iva</li><li>ica</li></td></tr><tr style="border:none;"></table> ------------ ----[mlu]---- Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto. ------------ |
-| TAX_DETAIL | <br/> Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
+| TAX_AMOUNT_TELCO | The value of the tax on telecommunications companies that is deducted from the gross value. |
+| TAX_DETAIL | Description of the tax withheld by operation in TAXES_AMOUNT.  |
 | POS_ID | Cash ID if the payment is made through a physical commerce. |
 | POS_NAME | Cash name for the payment made through a physical commerce. |
-| EXTERNAL_POS_ID |  ----[mla, mlm]---- User-defined cashier ID for payment made through a physical commerce. ------------ |
+| EXTERNAL_POS_ID |  User-defined cashier ID for payment made through a physical commerce. |
 | STORE_ID | Branch ID if payment is made through a physical commerce. |
-| STORE_NAME |  ----[mla, mlm]---- Branch name for payment made through a physical commerce. ------------ |
-| EXTERNAL_STORE_ID |  ----[mla, mlm]---- User-defined branch ID for payment made through a physical commerce. ------------ |
-| ORDER_ID |  ----[mla, mlm]---- Purchase Order. ------------ |
-| SHIPPING_ID |  ----[mla, mlm]---- Shipping Identification. ------------ |
-| SHIPMENT_MODE |  ----[mla, mlm]---- Shipping Mode. ------------ |
-| PACK_ID |  ----[mla, mlm]---- Package identification in the cart. ------------ |
+| STORE_NAME |  Branch name for payment made through a physical commerce. |
+| EXTERNAL_STORE_ID | User-defined branch ID for payment made through a physical commerce. |
+| ORDER_ID | Purchase Order. |
+| SHIPPING_ID | Shipping Identification. |
+| SHIPMENT_MODE | Shipping Mode. |
+| PACK_ID | Package identification in the cart. |
 
 <hr/>
 

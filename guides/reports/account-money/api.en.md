@@ -73,7 +73,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ```json
 {
@@ -247,7 +247,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (Created)` in response.
+You will receive an `HTTP STATUS 201 (Created)` in response.
 
 ```json
 {
@@ -424,7 +424,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ```json
 {
@@ -626,7 +626,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ```json
 [
@@ -700,7 +700,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ```csv
 EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRANSACTION_TYPE;TRANSACTION_AMOUNT;TRANSACTION_CURRENCY;TRANSACTION_DATE;FEE_AMOUNT;SETTLEMENT_NET_AMOUNT;SETTLEMENT_CURRENCY;SETTLEMENT_DATE;REAL_AMOUNT;COUPON_AMOUNT;METADATA;MKP_FEE_AMOUNT;FINANCING_FEE_AMOUNT;SHIPPING_FEE_AMOUNT;TAXES_AMOUNT;INSTALLMENTS;ORDER_ID;SHIPPING_ID;SHIPMENT_MODE;PACK_ID
@@ -792,7 +792,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ```json
 {
@@ -878,7 +878,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ```json
 {
@@ -945,7 +945,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response.
 
 ```csv
 EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRANSACTION_TYPE;TRANSACTION_AMOUNT;TRANSACTION_CURRENCY;TRANSACTION_DATE;FEE_AMOUNT;SETTLEMENT_NET_AMOUNT;SETTLEMENT_CURRENCY;SETTLEMENT_DATE;REAL_AMOUNT;COUPON_AMOUNT;METADATA;MKP_FEE_AMOUNT;FINANCING_FEE_AMOUNT;SHIPPING_FEE_AMOUNT;TAXES_AMOUNT;INSTALLMENTS;ORDER_ID;SHIPPING_ID;SHIPMENT_MODE;PACK_ID
