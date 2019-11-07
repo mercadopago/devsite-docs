@@ -5,7 +5,7 @@ Generate your Available Balance reports from your Mercado Pago panel. You can sc
 
 Follow these steps to generate your reports:
 
-1. From your Mercado Pago account, go to [your reports]() and select the *Reports* option.
+1. From your Mercado Pago account, go to [your reports](https://www.mercadopago.com.ar/balance/reports) and select the *Reports* option.
 1. Go to Available Money reports and click on *Create report*.
 1. Search for withdrawals by **time period** and select the withdrawal you want to reconcile.
 
