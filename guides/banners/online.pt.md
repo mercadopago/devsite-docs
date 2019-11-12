@@ -2,16 +2,13 @@
 sites_supported:
   - mla
   - mlb
-  - mlm
   - mco
   - mlc
 ---
 
-# Banners de Mercado Pago
+# Banners de Mercado Pago: Medios de acreditación inmediata
 
 Promociona las ventajas de MercadoPago en tu sitio.
-
-## Medios de acreditación inmediata
 
 Anuncia a tus clientes los medios de pago de acreditación inmediata que ofrece MercadoPago.
 

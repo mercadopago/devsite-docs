@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mlb
-  - mlm
   - mco
   - mlc
 ---
