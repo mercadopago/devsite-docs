@@ -38,7 +38,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | EXTERNAL_STORE_ID |  ----[mla, mlm]---- ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. ------------ |
 | ORDER_ID |  ----[mla, mlm]---- Orden de compra. ------------ |
 | SHIPPING_ID |  ----[mla, mlm]---- Identificador de envío. ------------ |
-| SHIPMENT_MODE |  ----[mla, mlm]---- Modalidad de envío ------------ |
+| SHIPMENT_MODE |  ----[mla, mlm]---- Modalidad de envío. ------------ |
 | PACK_ID |  ----[mla, mlm]---- Identificador del paquete en el carrito. ------------ |
 
 <hr/>
