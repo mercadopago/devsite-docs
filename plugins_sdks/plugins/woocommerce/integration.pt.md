@@ -32,7 +32,7 @@ Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 >
 > Importante
 >
-> As [credenciais](https://www.mercadopago.com.ar/developers/es/guides/localization/credentials) são a senhas que te identificam de forma única dentro da plataforma. Para operar em um **ambiente de testes** para simular pagamentos on-line, utilize as credenciais de teste. Use as credenciais de **produção** para receber pagamentos reais.
+> As [credenciais](https://www.mercadopago.com.br/developers/pt/guides/localization/credentials) são a senhas que te identificam de forma única dentro da plataforma. Para operar em um **ambiente de testes** para simular pagamentos on-line, utilize as credenciais de teste. Use as credenciais de **produção** para receber pagamentos reais.
 
 ---
 

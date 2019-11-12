@@ -44,7 +44,7 @@ Activate the checkout you want to offer your customers according to your prefere
 >
 > Important
 >
-> Note that the [Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment.
+> Note that the [Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment.
 
 2) Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
@@ -67,7 +67,7 @@ You will have different settings available depending on the type of checkout you
 | Configuration                 | Description                                                                 	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | Binary Mode     	            | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
-| Gateway Mode              	  | If you operate with the [gateway mode](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/introduction/) as a payment processor and have your own trade numbers, you can set up discounts and commissions to your customers for paying with Mercado Pago.|
+| Gateway Mode              	  | If you operate with the [gateway mode](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/introduction/) as a payment processor and have your own trade numbers, you can set up discounts and commissions to your customers for paying with Mercado Pago.|
 
 ### Smart Checkout
 
@@ -84,7 +84,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Nota
 >
-> Check out the [Smart Checkout documentation](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
+> Check out the [Smart Checkout documentation](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
 
 | Configuration                 | Description                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
