@@ -6,7 +6,7 @@ Once the report is ready and downloaded, you will have a file to review the spre
 
 To review the report we recommend downloading it in .csv format to open it in the program that you view it. Configure your program to support the UTF-8 format, so you avoid reading problems.
 
-# What does the report contain?
+## What does the report contain?
 
 The report is composed by:
 

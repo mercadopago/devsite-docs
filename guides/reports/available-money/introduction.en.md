@@ -45,7 +45,7 @@ In addition, you can use the report to know the history of balance available bet
 >
 > Note
 >
-> Have the [Glossary](https://www.mercadopago.com.ar/ayuda/_2118) of the Available Balance report on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Available Balance report](https://www.mercadopago.com.ar/ayuda/_2118) on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
