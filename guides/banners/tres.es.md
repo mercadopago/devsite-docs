@@ -4,7 +4,6 @@ sites_supported:
 ---
 
 # Banners de Mercado Pago: 
-# 3x cuotas sin interes
 
 Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
 

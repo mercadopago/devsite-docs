@@ -6,7 +6,6 @@ sites_supported:
 ---
 
 # Banners de Mercado Pago: 
-# Medios de acreditación inmediata
 
 Anuncia a tus clientes los medios de pago de acreditación inmediata que ofrece MercadoPago.
 

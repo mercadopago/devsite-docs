@@ -7,9 +7,8 @@ sites_supported:
 ---
 
 # Banners de Mercado Pago: 
-# Todos los medios de pago
 
-Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
+Informe aos seus clientes os meios de pagamento que o MercadoPago oferece.
 
 ----[mla]----
 

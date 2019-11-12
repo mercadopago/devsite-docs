@@ -4,7 +4,6 @@ sites_supported:
 ---
 
 # Banners de Mercado Pago: 
-# 6x sem juros
 
 Informe aos seus clientes os meios de pagamento em até 6x sem juros que você oferece.
 
