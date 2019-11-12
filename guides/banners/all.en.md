@@ -4,7 +4,6 @@ sites_supported:
   - mlb
   - mlm
   - mco
-  - mlc
 ---
 
 # Banners de Mercado Pago: 
@@ -266,4 +265,96 @@ width="785" height="40"/>
 
 <img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/785x40_Todos-los-medios-de-pago.jpg"  alt="MercadoPago - Medios de pago" width="785" height="40"/>
 
+------------
+----[mlb]----
+
+## 735 x 40 px
+
+### Codigo:
+
+```html
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_735X40.jpg?v=1" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="735" height="40"/>
+```
+
+### Vista previa:
+
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_735X40.jpg?v=1" alt="MercadoPago - Meios de pagamento" width="735" height="40"/>
+
+
+## 575 x 40 px
+
+### Codigo:
+
+```html
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_575X40.jpg?v=1" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="575" height="40"/>
+```
+
+### Vista previa:
+
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_575X40.jpg?v=1" alt="MercadoPago - Meios de pagamento" width="575" height="40"/>
+
+
+## 468 x 60 px
+
+### Codigo:
+
+```html
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_468X60.jpg?v=1" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="468" height="60"/>
+```
+
+### Vista previa:
+
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_468X60.jpg?v=1" alt="MercadoPago - Meios de pagamento" width="468" height="60"/>
+
+
+## 125 x 125 px
+
+### Codigo:
+
+```html
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_125X125.jpg?v=1" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="125" height="125"/>
+```
+
+### Vista previa:
+
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_125X125.jpg?v=1" alt="MercadoPago - Meios de pagamento" width="125" height="125"/>
+
+
+## 120 x 240 px
+
+### Codigo:
+
+```html
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X240.jpg?v=1" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="120" height="240"/>
+```
+
+### Vista previa:
+
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X240.jpg?v=1" alt="MercadoPago - Meios de pagamento" width="120" height="240"/>
+
+
+## 120 x 600px
+
+### Codigo:
+
+```html
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X600.jpg?v=1" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="120" height="600"/>
+```
+
+### Vista previa:
+
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X600.jpg?v=1" alt="MercadoPago - Meios de pagamento"
+width="120" height="600"/>
 ------------
