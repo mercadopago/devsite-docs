@@ -9,8 +9,6 @@ sites_supported:
 # Banners de Mercado Pago: 
 # Medios de acreditación inmediata
 
-Promociona las ventajas de MercadoPago en tu sitio.
-
 Anuncia a tus clientes los medios de pago de acreditación inmediata que ofrece MercadoPago.
 
 ## 785 x 40 px
@@ -18,10 +16,9 @@ Anuncia a tus clientes los medios de pago de acreditación inmediata que ofrece 
 ### Codigo:
 
 ```html
-
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/785X40.jpg" 
-title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="785" height="40"/>
-
+title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" 
+width="785" height="40"/>
 ```
 
 ### Vista previa:
@@ -33,25 +30,23 @@ title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="7
 ### Codigo:
 
 ```html
-
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/575X40.jpg" 
-title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="575" height="40"/>
-
+title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" 
+width="575" height="40"/>
 ```
 
-### Vista previa
+### Vista previa:
 
-> <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/575X40.jpg" alt="MercadoPago - Medios de pago" width="575" height="40"/>
+<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/575X40.jpg" alt="MercadoPago - Medios de pago" width="575" height="40"/>
 
 ## 468 x 60 px
 
 ### Codigo:
 
 ```html
-
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/468X60.jpg" 
-title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="468" height="60"/>
-
+title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" 
+width="468" height="60"/>
 ```
 
 ### Vista previa:
@@ -63,10 +58,9 @@ title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="4
 ### Codigo:
 
 ```html
-
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/125X125.jpg" 
-title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="125" height="125"/>
-
+title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" 
+width="125" height="125"/>
 ```
 
 ### Vista previa:
@@ -76,16 +70,15 @@ title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="1
 
 ## 120 x 240 px
 
-### Código:
+### Codigo:
 
 ```html
-
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X240.jpg" 
-title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="120" height="240"/>
-
+title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" 
+width="120" height="240"/>
 ```
 
-### Vista previa:
+### Vista previa
 
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X240.jpg" alt="MercadoPago - Medios de pago" width="120" height="240"/>
 
@@ -94,10 +87,9 @@ title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="1
 ### Codigo:
 
 ```html
-
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X600.jpg" 
-title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" width="120" height="600"/>
-
+title="MercadoPago - Medios de pago" alt="MercadoPago - Medios de pago" 
+width="120" height="600"/>
 ```
 
 ### Vista previa:
