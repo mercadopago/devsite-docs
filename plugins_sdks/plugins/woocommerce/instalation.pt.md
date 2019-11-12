@@ -107,4 +107,4 @@ A seguir, execute as etapas de uma **nova instalação** para atualizar sua loja
 >
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você queira oferecer aos seus clientes.
 >
-> [Recibir pagos](http://www.mercadopago.com.br/mlb/pt/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Receber pagamentos](http://www.mercadopago.com.br/mlb/pt/plugins_sdks/plugins/woocommerce/receive-payments/)
