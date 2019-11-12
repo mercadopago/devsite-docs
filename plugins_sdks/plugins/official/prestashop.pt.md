@@ -49,9 +49,9 @@ A nível técnico, sua versão do Prestashop deve atender estes requisitos:
 
 > NOTE
 >
-> [DOWNLOAD](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip)
+> [DOWNLOAD](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip)
 >
-> [Módulo Mercado Pago para Prestashop 1.7](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip)
+> [Módulo Mercado Pago para Prestashop 1.7](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip)
 
 2) Acesse o painel administrativo do Prestashop em **Módulos** -> **Módulos e Serviços**, clicar no botão **"Enviar um Módulo"** e selecionar o arquivo **mercadopago.zip** baixado anteriormente.
 

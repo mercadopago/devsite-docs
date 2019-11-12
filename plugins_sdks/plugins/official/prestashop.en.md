@@ -50,9 +50,9 @@ The installation of our module doesn't affect the performance of your store!
 
 > NOTE
 >
-> [DOWNLOAD](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip)
+> [DOWNLOAD](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip)
 >
-> [Mercado Pago Module for Prestashop 1.7](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip)
+> [Mercado Pago Module for Prestashop 1.7](https://github.com/mercadopago/cart-prestashop-/blob/master/mercadopago.zip)
 
 2) Access the Prestashop administrative panel at **Modules** -> **Modules and Services**, click on the **"Upload a Module"** button and select the file **Mercadopago.zip** previously downloaded.
 

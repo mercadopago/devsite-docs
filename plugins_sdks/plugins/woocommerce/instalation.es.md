@@ -1,0 +1,110 @@
+---
+sites_supported:
+  - mla
+  - mlb
+  - mco
+  - mlu
+  - mlm
+  - mlc
+---
+
+# Instala Mercado Pago en WooCommerce
+<br/>
+
+Instala el módulo de Mercado Pago en WooCommerce de forma automática, desde tu panel de WordPress, o de forma manual, importando un .zip en tu directorio vía FTP.
+
+> NOTE
+>
+> Nota
+>
+> La instalación de nuestro módulo no afecta la velocidad de tu tienda.
+
+## Requisitos de instalación
+
+Revisa los requisitos de instalación y sigue los pasos que te indicamos ¡solo te llevará unos minutos instalar el módulo! 
+
+| Requisitos                    | Detalles                                                                  	                  |
+|-------------------------------|-----------------------------------------------------------------------------------------------|
+| Versiones        	            | El módulo funciona para las versiones de WordPress 3.1.x - 4.9.x y WooCommerce 2.6.x - 3.4.x  |
+| Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
+| Sistema                     	| Linux x86, Windows x86-64                                                        	            |
+| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	      |
+| Versión PHP                 	| PHP 5.6, 5.5 y 5.4                                        	                                  |
+| Base de datos               	| MySql 5.6 o superior, MariaDB 10.0 o superior                            	                    |
+| Dependencias de extensiones 	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API)         |
+| Configuraciones adicionales   | safe_mode off * memory_limite mayor que 256MB (512MB recomendado)                             |
+| SSL                         	| Certificado SSL  	                                                                            |
+
+> WARNING
+>
+> Importante
+>
+> Puedes usar el protocolo HTTP mientras estés en modo ‘Pruebas’ y no estés haciendo transacciones reales. Cuando vayas a Producción debes tener un **certificado SSL** para ofrecer una **navegación segura** y proteger tus datos y los de tus clientes. Una vez que lo tengas, la ruta de acceso a tu tienda online responderá al **protocolo HTTPS**.
+
+## Instalación Automática
+
+### De forma automática, desde la sección ‘Plugins’ de WordPress
+
+Sigue estos pasos para la instalación:
+
+* Ve a **Añadir** nuevo y busca “WooCommerce Mercado Pago” entre la oferta de módulos de WordPress.
+* Haz clic en Instalar y luego búscalo en la sección “Plugins Instalados”. 
+* Actívalo para empezar a configurar el módulo en tu tienda.
+* ¡Excelente! verás el módulo instalado en la sección Plugins de tu panel de administración. Actívalo para poder hacer las configuraciones necesarias en tu tienda.
+
+## Instalación manual
+
+### De forma manual, instala el módulo siguiendo estos pasos:
+
+* Descarga el archivo .zip directo de nuestro Github o desde el directorio de módulos de WordPress.
+                    
+> NOTE
+>
+> [Descargar](https://github.com/mercadopago/cart-woocommerce/archive/master.zip)
+>
+> [Módulo de Mercado Pago para WooCommerce](https://github.com/mercadopago/cart-woocommerce/archive/master.zip)
+
+* Descomprime la carpeta descargada y cambia el nombre a ‘woocommerce-mercadopago’.
+* Conéctate a tu servidor web y copia el archivo ‘woocommerce-mercadopago’ en tu directorio de WordPress, dentro de la carpeta ‘Plugins’.
+* ¡Y listo! El módulo de Mercado Pago se instalará en tu tienda online.
+
+Revisa que todo haya salido bien desde tu escritorio de WordPress. Verás el módulo entre tus Plugins instalados. Actívalo para pasar a la integración de tu cuenta y los pasos de configuración. 
+
+Cuando actives el plugin, WordPress te llevará a los Ajustes de WooCommerce y, de allí, a la sección Payments, donde tendrás a mano los tipos de checkout que ofrecemos para tu tienda online: Smart Checkout y Checkout Personalizado.
+
+> NOTE
+>
+> Nota
+>
+> Todos nuestros módulos cuentan con una licencia de código abierto. **¿Quieres participar en su construcción?** Sugiere mejoras y ediciones en [Github](https://github.com/mercadopago/).
+
+## Mantenimiento
+
+Te aconsejamos hacer una **copia de seguridad de la tienda online** antes de efectuar cualquier cambio. Una vez lista la copia, elimina todos los archivos relacionados a la versión anterior del módulo. 
+
+Luego ejecuta los pasos de una **nueva instalación** para actualizar tu tienda con la última versión del módulo disponible.
+
+---
+
+> Mantén el módulo actualizado siempre en la última versión.
+
+---
+
+### Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Integrar el módulo de Mercado Pago
+>
+> Conecta tu cuenta de Mercado Pago al módulo de WooCommerce y captura los pagos que recibas por tus ventas online.  
+>
+> 
+> [Integrar](http://www.mercadopago.com.ar/mla/es/plugins_sdks/plugins/woocommerce/integration/)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Configurar el módulo para recibir pagos
+>
+> Configura tus preferencias de pago y haz ajustes según la experiencia que quieras ofrecer a tus clientes.
+>
+> [Recibir pagos](http://www.mercadopago.com.ar/mla/es/plugins_sdks/plugins/woocommerce/receive-payments/)
