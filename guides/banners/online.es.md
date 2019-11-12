@@ -6,7 +6,8 @@ sites_supported:
   - mlc
 ---
 
-# Banners de Mercado Pago: Medios de acreditación inmediata
+# Banners de Mercado Pago: 
+# Medios de acreditación inmediata
 
 Promociona las ventajas de MercadoPago en tu sitio.
 
