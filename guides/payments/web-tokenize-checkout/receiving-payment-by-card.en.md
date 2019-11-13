@@ -15,7 +15,7 @@ Set the viewport by adding the following code inside the `<head>` tag of your we
 This _fragment of HTML code_ will insert a payment button. When the buyer presses the button, the checkout will be displayed. Include the following code in the place where the button will be located within your website:
 
 ```html
-<form action="/procesar-pago" method="POST">
+<form action="https://www.my-site.com/process-payment" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
