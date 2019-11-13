@@ -145,6 +145,12 @@ Respuesta del Servidor:
 }
 ```
 
+> NOTE
+>
+> Nota
+>
+> Para las tarjetas `master` también se debe enviar el campo `issuer_id` a la hora de crearle la tarjeta a un customer.
+
 ## Recibir un pago de un Customer
 
 Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código HTML el ID del customer y los IDs de las tarjetas del usuario a través de los atributos `data-customer-id` y `data-card-ids`. Por ejemplo:

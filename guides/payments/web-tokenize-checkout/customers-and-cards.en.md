@@ -143,6 +143,12 @@ Server response:
 }
 ```
 
+> NOTE
+>
+> Note
+>
+> All payment methods with `master` as the payment_method_id value, must send a `issuer_id` when created. `issuer_id` is the identifier of the issuing bank.
+
 ## Receive a payment from a Customer
 
 In order to receive a payment from a stored card, it is necessary to include in the HTML code the customer ID and the IDs of the user cards through the attributes `data-customer-id` and `data-card-ids` . 
