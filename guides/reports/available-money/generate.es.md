@@ -39,7 +39,7 @@ Conoce las características de los elementos que conforman tu reporte.
 | Orden de columnas |<br/> Fijo <br/> <br/> |
 | Período máximo | <br/> Reportes con datos de hasta 60 días. <br/> <br/> |
 | Moneda | <br/> Local (basada en el país donde esté registrada la cuenta de Mercado Pago) <br/> <br/> |
-| Zona horaria de las columnas con fechas | <br/> GMT-4 <br/> <br/> |
+| Zona horaria de las columnas con fechas | <br/> GMT-4 <br/> <br/> Toma como referencia el lugar desde el que se descarga el reporte. <br/> <br/> |
 | Selección de fechas vía API |<br/>  Formato del timezone: UTC / GMT-0 <br/> <br/> |
 | Selección de fechas vía web | <br/> Debe basarse en el timezone de la cuenta. <br/>Por ejemplo, a la cuenta registrada en Brasil le corresponde el timezone de São Paulo. <br/> <br/> |
 
