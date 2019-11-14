@@ -6,7 +6,7 @@ sites_supported:
   - mco
 ---
 
-# Banners de Mercado Pago 
+# Todos los medios de pago
 
 Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
 
@@ -14,7 +14,7 @@ Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
 
 ## 785 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/785X40.jpg" 
@@ -29,7 +29,7 @@ width="785" height="40"/>
 
 ## 575 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/575X40.jpg" 
@@ -43,7 +43,7 @@ width="575" height="40"/>
 
 ## 468 x 60 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/468X60.jpg" 
@@ -57,7 +57,7 @@ width="468" height="60"/>
 
 ## 125 x 125 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/125X125.jpg" 
@@ -72,7 +72,7 @@ width="125" height="125"/>
 
 ## 120 x 240 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/120X240.jpg" 
@@ -86,7 +86,7 @@ width="120" height="240"/>
 
 ## 120 x 600 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/120X600.jpg" 
@@ -103,7 +103,7 @@ width="120" height="600"/>
 
 ## 728 x 90 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_728X90_new.jpg" 
@@ -117,7 +117,7 @@ width="728" height="90"/>
 
 ## 575 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_575X40_new.jpg" 
@@ -132,7 +132,7 @@ width="575" height="40"/>
 
 ## 468 x 60 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_468X60_new.jpg" 
@@ -147,7 +147,7 @@ width="468" height="60"/>
 
 ## 120 x 240 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_120X240_new.jpg" 
@@ -162,7 +162,7 @@ width="120" height="240"/>
 
 ## 120 x 600 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_120X600_new.jpg" 
@@ -179,7 +179,7 @@ width="120" height="600"/>
 
 ## 120 x 240 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/120x240_Todos-los-medios-de-pago.jpg" 
@@ -194,7 +194,7 @@ width="120" height="240"/>
 
 ## 120 x 600px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/120x600_Todos-los-medios-de-pago.jpg" 
@@ -208,7 +208,7 @@ width="120" height="600"/>
 
 ## 125 x 125 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/125x125_Todos-los-medios-de-pago.jpg" 
@@ -222,7 +222,7 @@ width="125" height="125"/>
 
 ## 468 x 60 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/468x60_Todos-los-medios-de-pago.jpg" 
@@ -237,7 +237,7 @@ width="468" height="60"/>
 
 ## 575 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/575x40_Todos-los-medios-de-pago.jpg" 
@@ -252,7 +252,7 @@ width="575" height="40"/>
 
 ## 785 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/785x40_Todos-los-medios-de-pago.jpg" 
@@ -269,7 +269,7 @@ width="785" height="40"/>
 
 ## 735 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_735X40.jpg?v=1" 
@@ -284,7 +284,7 @@ width="735" height="40"/>
 
 ## 575 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_575X40.jpg?v=1" 
@@ -299,7 +299,7 @@ width="575" height="40"/>
 
 ## 468 x 60 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_468X60.jpg?v=1" 
@@ -314,7 +314,7 @@ width="468" height="60"/>
 
 ## 125 x 125 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_125X125.jpg?v=1" 
@@ -329,7 +329,7 @@ width="125" height="125"/>
 
 ## 120 x 240 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X240.jpg?v=1" 
@@ -344,7 +344,7 @@ width="120" height="240"/>
 
 ## 120 x 600px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X600.jpg?v=1" 

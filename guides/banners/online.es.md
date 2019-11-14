@@ -5,13 +5,13 @@ sites_supported:
   - mlc
 ---
 
-# Banners de Mercado Pago: 
+# Medios de acreditación inmediata
 
 Anuncia a tus clientes los medios de pago de acreditación inmediata que ofrece MercadoPago.
 
 ## 785 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/785X40.jpg" 
@@ -25,7 +25,7 @@ width="785" height="40"/>
 
 ## 575 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/575X40.jpg" 
@@ -39,7 +39,7 @@ width="575" height="40"/>
 
 ## 468 x 60 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/468X60.jpg" 
@@ -53,7 +53,7 @@ width="468" height="60"/>
 
 ## 125 x 125 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/125X125.jpg" 
@@ -68,7 +68,7 @@ width="125" height="125"/>
 
 ## 120 x 240 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X240.jpg" 
@@ -82,7 +82,7 @@ width="120" height="240"/>
 
 ## 120 x 600 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X600.jpg" 

@@ -3,7 +3,7 @@ sites_supported:
   - mlb
 ---
 
-# Banners de Mercado Pago: 
+# Medios de pago: 6 cuotas sin interés
 
 Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
 

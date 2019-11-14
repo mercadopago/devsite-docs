@@ -3,13 +3,13 @@ sites_supported:
   - mlb
 ---
 
-# Banners de Mercado Pago: 
+# Medios de pago: 3 cuotas sin interés
 
 Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
 
 ## 735 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/735x40_banner_psj_3x.jpg" 
@@ -24,7 +24,7 @@ width="735" height="40"/>
 
 ## 575 x 40 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/575x40_banner_psj_3x.jpg" 
@@ -39,7 +39,7 @@ width="575" height="40"/>
 
 ## 468 x 60 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/468x60_banner_psj_3x.jpg" 
@@ -54,7 +54,7 @@ width="468" height="60"/>
 
 ## 125 x 125 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/125x125_banner_psj_3x.jpg" 
@@ -69,7 +69,7 @@ width="125" height="125"/>
 
 ## 120 x 240 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x240_banner_psj_3x.jpg" 
@@ -84,7 +84,7 @@ width="120" height="240"/>
 
 ## 120 x 600 px
 
-### Codigo:
+### Código:
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x600_banner_psj_3x.jpg" 

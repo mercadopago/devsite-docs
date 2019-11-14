@@ -3,7 +3,7 @@ sites_supported:
   - mlb
 ---
 
-# Banners de Mercado Pago: 
+# Meios de pagamento: 6x sem juros
 
 Informe aos seus clientes os meios de pagamento em até 6x sem juros que você oferece.
 
