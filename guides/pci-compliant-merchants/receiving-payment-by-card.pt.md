@@ -251,13 +251,13 @@ Nossos SDKs possuem funções que podem ser utilizadas para capturar essas infor
 
 ```android
 ===
-A classe [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) coletará tanto as informações do dispositivo quanto sua impressão digital (fingerprint).
+A classe [Device](https://github.com/mercadopago/px-android/blob/master/px-services/src/main/java/com/mercadopago/android/px/model/Device.java) coletará tanto as informações do dispositivo quanto sua impressão digital (fingerprint).
 ===
 new Device(context);
 ```
 ```swift
 ===
-A classe [Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) coletará tanto as informações do dispositivo quanto sua impressão digital (fingerprint).
+A classe [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) coletará tanto as informações do dispositivo quanto sua impressão digital (fingerprint).
 ===
 Device()
 ```
