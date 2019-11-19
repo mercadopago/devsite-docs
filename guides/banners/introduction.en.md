@@ -7,45 +7,45 @@ sites_supported:
   - mlc
 ---
 
-# Banners de Mercado Pago 
+# Mercado Pago banners
 
-Promociona las ventajas de Mercado Pago en tu sitio.
+Promote all the benefits of using Mercado Pago as a payment method in your site.
 
 ----[mla]----
 
-* Tipos de banners
-    + [Todos los medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/all/)
-    + [Medios de acreditación inmediata](https://www.mercadopago.com.ar/developers/es/guides/banners/online/)
+* Banner types
+    + [All payment methods](https://www.mercadopago.com.ar/developers/en/guides/banners/all/)
+    + [Payment methods](https://www.mercadopago.com.ar/developers/en/guides/banners/online/)
 
 ------------
 ----[mlm]----
 
-* Tipos de banners
-    + [Todos los medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/all/)
+* Banner types
+    + [All payment methods](https://www.mercadopago.com.ar/developers/en/guides/banners/all/)
 
 ------------
 ----[mco]----
 
-* Tipos de banners
-    + [Todos los medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/all/)
-    + [Medios de acreditación inmediata](https://www.mercadopago.com.ar/developers/es/guides/banners/online/)
+* Banner types
+    + [All payment methods](https://www.mercadopago.com.ar/developers/en/guides/banners/all/)
+    + [Payment methods](https://www.mercadopago.com.ar/developers/en/guides/banners/online/)
 
 ------------
 ----[mlc]----
 
-* Tipos de banners
-    + [Todos los medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/all/)
-    + [Medios de pago: 6 cuotas sin interés](https://www.mercadopago.com.ar/developers/es/guides/banners/seis/)
+* Banner types
+    + [All payment methods](https://www.mercadopago.com.ar/developers/en/guides/banners/all/)
+    + [Payment methods: 6 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/seis/)
 
 ------------
 ----[mlb]----
 
-* Tipos de banners
-    + [Todos los medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/all/)
-    + [Medios de pago: 3 cuotas sin interés](https://www.mercadopago.com.ar/developers/es/guides/banners/tres/)
-    + [Medios de pago: 6 cuotas sin interés](https://www.mercadopago.com.ar/developers/es/guides/banners/seis/)
-    + [Medios de pago: 9 cuotas sin interés](https://www.mercadopago.com.ar/developers/es/guides/banners/nove/)
-    + [Medios de pago: 10 cuotas sin interés](https://www.mercadopago.com.ar/developers/es/guides/banners/dez/)
-    + [Medios de pago: 12 cuotas sin interés](https://www.mercadopago.com.ar/developers/es/guides/banners/doze/)
+* Banner types
+    + [All payment methods](https://www.mercadopago.com.ar/developers/en/guides/banners/all/)
+    + [Payment methods: 3 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/tres/)
+    + [Payment methods: 6 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/seis/)
+    + [Payment methods: 9 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/nove/)
+    + [Payment methods: 10 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/dez/)
+    + [Payment methods: 12q interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/doze/)
 
 ------------

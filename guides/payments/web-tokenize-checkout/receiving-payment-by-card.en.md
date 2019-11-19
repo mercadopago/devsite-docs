@@ -230,4 +230,4 @@ To make testing payments (with your TEST credentials), you need to use [test car
 
 ### Installments offer
 
-We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com/mla/ayuda/banners).
+We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com.ar/developers/en/guides/banners/introduction/).

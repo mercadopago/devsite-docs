@@ -3,7 +3,7 @@ sites_supported:
   - mlb
 ---
 
-# Meios de pagamento: 3x sem juros
+# Payment methods: 3 interest-free installments
 
 Informe aos seus clientes os meios de pagamento em até 3x sem juros que você oferece.
 

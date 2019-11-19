@@ -7,9 +7,9 @@ sites_supported:
   - mlc
 ---
 
-# Banners de Mercado Pago 
+# Banners de Mercado Pago
 
-Promociona las ventajas de Mercado Pago en tu sitio.
+Promociona los beneficios de pagar con Mercado Pago en tu sitio
 
 ----[mla]----
 

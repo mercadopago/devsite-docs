@@ -5,9 +5,9 @@ sites_supported:
   - mlc
 ---
 
-# Medios de acreditación inmediata
+# Medios de pago
 
-Anuncia a tus clientes los medios de pago de acreditación inmediata que ofrece MercadoPago.
+Permite a tus clientes pagar al instante con estos medios de pago.
 
 ## 785 x 40 px
 

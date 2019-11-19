@@ -5,7 +5,7 @@ sites_supported:
 
 # Medios de pago: 3 cuotas sin interés
 
-Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
+Permite a tus clientes pagar al instante con estos medios de pago.
 
 ## 735 x 40 px
 

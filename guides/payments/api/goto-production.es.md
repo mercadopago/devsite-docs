@@ -24,7 +24,7 @@ Durante las pruebas en modo sandbox, puedes operar en HTTP, pero para homologart
 
 ## Promociones y financiación
 
-Si ofreces pagos con tarjeta de crédito en múltiples cuotas, debes aclarar que las promociones son ofrecidas por MercadoPago. [Puedes incluir uno de nuestros banners de medios de pago](https://mercadopago.com.ar/ayuda/banners_624), o bien [linkear a la sección de promociones](https://www.mercadopago.com/mla/credit_card_promos.htm).
+Si ofreces pagos con tarjeta de crédito en múltiples cuotas, debes aclarar que las promociones son ofrecidas por MercadoPago. [Puedes incluir uno de nuestros banners de medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/introduction/), o bien [linkear a la sección de promociones](https://www.mercadopago.com/mla/credit_card_promos.htm).
 También debes informar los intereses que afrontarán tus usuarios, linkeando a la [sección de costos de financiación de MercadoPago](https://www.mercadopago.com.ar/ayuda/costos-financiacion_621).
 
 > NOTE

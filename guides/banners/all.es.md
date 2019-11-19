@@ -8,7 +8,7 @@ sites_supported:
 
 # Todos los medios de pago
 
-Anuncia a tus clientes todos los medios de pago que ofrece MercadoPago.
+Permite a tus clientes pagar con todos los medios de pago disponibles en Mercado Pago.
 
 ----[mla]----
 
@@ -356,4 +356,94 @@ width="120" height="600"/>
 
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X600.jpg?v=1" alt="MercadoPago - Meios de pagamento"
 width="120" height="600"/>
+------------
+----[mlc]----
+
+## 785 x 40 px
+
+### Código:
+
+```html
+<img src="https://www.mercadopago.cl/banner/785x40_banner.jpg" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="735" height="40"/>
+```
+
+### Vista previa:
+
+<img src="https://www.mercadopago.cl/banner/785x40_banner.jpg" alt="MercadoPago - Meios de pagamento" width="735" height="40"/>
+
+
+## 575 x 40 px
+
+### Código:
+
+```html
+<img src="https://www.mercadopago.cl/banner/575x40_banner.jpg" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="575" height="40"/>
+```
+
+### Vista previa:
+
+<img src="https://www.mercadopago.cl/banner/575x40_banner.jpg" alt="MercadoPago - Meios de pagamento" width="575" height="40"/>
+
+## 468 x 60 px
+
+### Código:
+
+```html
+<img src="https://www.mercadopago.cl/banner/468x60_banner.jpg" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="468" height="60"/>
+```
+
+### Vista previa:
+
+<img src="https://www.mercadopago.cl/banner/468x60_banner.jpg" alt="MercadoPago - Meios de pagamento" width="468" height="60"/>
+
+## 125 x 125 px
+
+### Código:
+
+```html
+<img src="https://www.mercadopago.cl/banner/125x125_banner.jpg" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="125" height="125"/>
+```
+
+### Vista previa:
+
+<img src="https://www.mercadopago.cl/banner/125x125_banner.jpg" alt="MercadoPago - Meios de pagamento" width="125" height="125"/>
+
+
+## 120 x 240 px
+
+### Código:
+
+```html
+<img src="https://www.mercadopago.cl/banner/120x240_banner.jpg" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="120" height="240"/>
+```
+
+### Vista previa:
+
+<img src="https://www.mercadopago.cl/banner/120x240_banner.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="240"/>
+
+## 120 x 600 px
+
+### Código:
+
+```html
+<img src="https://www.mercadopago.cl/banner/120x600_banner.jpg" 
+alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+width="120" height="600"/>
+```
+
+### Vista previa:
+
+<img src="https://www.mercadopago.cl/banner/120x600_banner.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="600"/>
+
+
 ------------
