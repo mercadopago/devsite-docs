@@ -2,6 +2,10 @@
 
 Esta libreria provee una set de clases y metodos para interactuar con el API de Mercado Pago.
 
+### Versiones Soportadas:
+
+Nuesto SDK es compatible con las versiones de Java 8 o superior.
+
 ## Instalación
 
 ### Usando Maven
@@ -20,6 +24,14 @@ Esta libreria provee una set de clases y metodos para interactuar con el API de 
   ```
 
 2. Ejecutar `mvn install` y es todo, ahora tienes el SDK de Mercado Pago instalado.
+
+
+
+### Compatibilidad
+
+Nuestro SDK es compatible con la versión 6 de Java o superior. De todas formas, se recomienda utilizar la versión 8 o superior.
+
+
 
 ## Inicio Rápido
 
