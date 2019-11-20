@@ -15,7 +15,7 @@ Promociona los beneficios de pagar con Mercado Pago en tu sitio
 
 * Tipos de banners
     + [Todos los medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/all/)
-    + [Medios de acreditación inmediata](https://www.mercadopago.com.ar/developers/es/guides/banners/online/)
+    + [Medios de pago al instante](https://www.mercadopago.com.ar/developers/es/guides/banners/online/)
 
 ------------
 ----[mlm]----
@@ -28,7 +28,7 @@ Promociona los beneficios de pagar con Mercado Pago en tu sitio
 
 * Tipos de banners
     + [Todos los medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/all/)
-    + [Medios de acreditación inmediata](https://www.mercadopago.com.ar/developers/es/guides/banners/online/)
+    + [Medios de pago al instante](https://www.mercadopago.com.ar/developers/es/guides/banners/online/)
 
 ------------
 ----[mlc]----
