@@ -46,6 +46,6 @@ Promote all the benefits of using Mercado Pago as a payment method in your site.
     + [Payment methods: 6 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/seis/)
     + [Payment methods: 9 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/nove/)
     + [Payment methods: 10 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/dez/)
-    + [Payment methods: 12q interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/doze/)
+    + [Payment methods: 12 interest-free installments.](https://www.mercadopago.com.ar/developers/en/guides/banners/doze/)
 
 ------------
