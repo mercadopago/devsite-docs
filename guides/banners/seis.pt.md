@@ -15,13 +15,13 @@ Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/735x40_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="735" height="40"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/735x40_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="735" height="40"/>
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/735x40_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="735" height="40"/>
 
 
 ## 575 x 40 px
@@ -30,13 +30,13 @@ width="735" height="40"/>
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/575x40_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="575" height="40"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/575x40_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="575" height="40"/>
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/575x40_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="575" height="40"/>
 
 
 ## 468 x 60 px
@@ -45,13 +45,13 @@ width="575" height="40"/>
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/468x60_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="468" height="60"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/468x60_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="468" height="60"/>
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/468x60_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="468" height="60"/>
 
 
 ## 125 x 125 px
@@ -60,13 +60,13 @@ width="468" height="60"/>
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/125x125_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="125" height="125"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/125x125_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="125" height="125"/>
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/125x125_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="125" height="125"/>
 
 
 ## 120 x 240 px
@@ -75,13 +75,13 @@ width="125" height="125"/>
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x240_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="120" height="240"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x240_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="240"/>
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x240_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="240"/>
 
 
 ## 120 x 600 px
@@ -90,13 +90,13 @@ width="120" height="240"/>
 
 ```html
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x600_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="120" height="600"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x600_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="600"/>
+<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x600_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="600"/>
 
 ------------
 
@@ -108,13 +108,13 @@ width="120" height="600"/>
 
 ```html
 <img src="https://www.mercadopago.cl/banner/785x40_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="735" height="40"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://www.mercadopago.cl/banner/785x40_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="735" height="40"/>
+<img src="https://www.mercadopago.cl/banner/785x40_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="735" height="40"/>
 
 
 ## 575 x 40 px
@@ -123,13 +123,13 @@ width="735" height="40"/>
 
 ```html
 <img src="https://www.mercadopago.cl/banner/575x40_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="575" height="40"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://www.mercadopago.cl/banner/575x40_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="575" height="40"/>
+<img src="https://www.mercadopago.cl/banner/575x40_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="575" height="40"/>
 
 ## 468 x 60 px
 
@@ -137,13 +137,13 @@ width="575" height="40"/>
 
 ```html
 <img src="https://www.mercadopago.cl/banner/468x60_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="468" height="60"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://www.mercadopago.cl/banner/468x60_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="468" height="60"/>
+<img src="https://www.mercadopago.cl/banner/468x60_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="468" height="60"/>
 
 ## 125 x 125 px
 
@@ -151,13 +151,13 @@ width="468" height="60"/>
 
 ```html
 <img src="https://www.mercadopago.cl/banner/125x125_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="125" height="125"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://www.mercadopago.cl/banner/125x125_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="125" height="125"/>
+<img src="https://www.mercadopago.cl/banner/125x125_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="125" height="125"/>
 
 
 ## 120 x 240 px
@@ -166,13 +166,13 @@ width="125" height="125"/>
 
 ```html
 <img src="https://www.mercadopago.cl/banner/120x240_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="120" height="240"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://www.mercadopago.cl/banner/120x240_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="240"/>
+<img src="https://www.mercadopago.cl/banner/120x240_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="240"/>
 
 ## 120 x 600 px
 
@@ -180,13 +180,13 @@ width="120" height="240"/>
 
 ```html
 <img src="https://www.mercadopago.cl/banner/120x600_banner_psj_6x.jpg" 
-alt="MercadoPago - Meios de pagamento" title="MercadoPago - Meios de pagamento" 
+alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="120" height="600"/>
 ```
 
 ### Vista prévia:
 
-<img src="https://www.mercadopago.cl/banner/120x600_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="600"/>
+<img src="https://www.mercadopago.cl/banner/120x600_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="600"/>
 
 ------------
 
