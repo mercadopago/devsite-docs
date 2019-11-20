@@ -103,4 +103,4 @@ width="120" height="600"/>
 >
 > Promote all the benefits of using Mercado Pago as a payment method in your site.
 >
-> [Banners de Mercado Pago](http://www.mercadopago.com.ar/developers/en/guides/guides/banners/introduction/)
+> [Banners de Mercado Pago](http://www.mercadopago.com.ar/developers/en/guides/banners/introduction/)
