@@ -93,3 +93,13 @@ width="120" height="600"/>
 ### Vista prévia:
 
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X600.jpg" alt="MercadoPago - Medios de pago" width="120" height="600"/>
+
+
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Banners de Mercado Pago
+>
+> Ofereça os benefícios de pagar com Mercado Pago no seu site.
+>
+> [Banners de Mercado Pago](http://www.mercadopago.com.ar/developers/pt/guides/guides/banners/introduction/)

@@ -49,4 +49,3 @@ Promociona los beneficios de pagar con Mercado Pago en tu sitio
     + [Medios de pago: 12 cuotas sin interés](https://www.mercadopago.com.ar/developers/es/guides/banners/doze/)
 
 ------------
-

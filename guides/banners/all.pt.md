@@ -447,3 +447,13 @@ width="120" height="600"/>
 
 
 ------------
+
+
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Banners de Mercado Pago
+>
+> Ofereça os benefícios de pagar com Mercado Pago no seu site.
+>
+> [Banners de Mercado Pago](http://www.mercadopago.com.ar/developers/pt/guides/guides/banners/introduction/)

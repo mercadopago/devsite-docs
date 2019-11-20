@@ -189,3 +189,13 @@ width="120" height="600"/>
 <img src="https://www.mercadopago.cl/banner/120x600_banner_psj_6x.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="600"/>
 
 ------------
+
+
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Banners de Mercado Pago
+>
+> Promociona los beneficios de pagar con Mercado Pago en tu sitio
+>
+> [Banners de Mercado Pago](http://www.mercadopago.com.ar/developers/es/guides/guides/banners/introduction/)

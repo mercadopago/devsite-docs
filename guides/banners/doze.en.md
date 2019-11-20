@@ -95,3 +95,12 @@ width="120" height="600"/>
 ### Preview:
 
 <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x600_banner_psj_12x.jpg" alt="MercadoPago - Meios de pagamento" width="120" height="600"/>
+
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Mercado Pago banners
+>
+> Promote all the benefits of using Mercado Pago as a payment method in your site.
+>
+> [Banners de Mercado Pago](http://www.mercadopago.com.ar/developers/en/guides/guides/banners/introduction/)
