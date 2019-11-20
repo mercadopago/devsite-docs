@@ -24,7 +24,7 @@ Durante os testes em modo sandbox, pode operar em HTTP, mas para a homologação
 
 ## Promoções e Financiamento
 
-Se oferece pagamentos com cartões de crédito com parcelamentos, deve deixar claro as promoções oferecidas pelo MercadoPago. Pode incluir um de nossos [banners de meio de pagamentos](shorturl.at/sILS3), ou ainda direcionar o cliente para a [sessão de promoções](https://www.mercadopago.com.br/promocoes/).
+Se oferece pagamentos com cartões de crédito com parcelamentos, deve deixar claro as promoções oferecidas pelo MercadoPago. Pode incluir um de nossos [banners de meio de pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/banners/introduction/), ou ainda direcionar o cliente para a [sessão de promoções](https://www.mercadopago.com.br/promocoes/).
 Também deve informar os juros que serão pagos pelo seu usuário, direcionando para a sessão [custos de parcelamento MercadoPago](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
