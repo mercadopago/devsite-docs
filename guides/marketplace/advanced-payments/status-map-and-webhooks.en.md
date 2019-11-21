@@ -50,7 +50,7 @@ The structure of the notification is as follows:
 }
 ```
 
-* `id`: Advanced Payment ID.
+* `id`: Notification ID.
 * `user_id`: ID of the Marketplace owner.
 * `date_created`: Event date.
 * `action`: Action that was made with respect to the Advanced Payment (can be splitter.insert or splitter.update).
@@ -58,7 +58,7 @@ The structure of the notification is as follows:
 * `application_id`: Application ID.
 * `live_mode`: Indicates whether it is a productive (true) or sandbox (false) notification.
 * `version`: Advanced Payment version.
-* `data.id`: Payment External Reference.
+* `data.id`: Advanced Payment ID.
 
 # Binary Payment
 
