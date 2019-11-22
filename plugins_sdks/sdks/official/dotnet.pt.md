@@ -5,7 +5,7 @@
 Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações para a API do Mercado Pago.
 
 ### Versões do .net suportadas:
-3.5 .Net Framework ou maior
+Nosso SDK é compatível com .NET versão 3.5 ou maior.
 
 ## Instalação
 

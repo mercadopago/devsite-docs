@@ -6,6 +6,10 @@
 * [Customized checkout](#bookmark_customized_checkout)
 * [Generic methods](#bookmark_generic_methods)
 
+### Supported Python Versions:
+
+This SDK supports Python versions 2.x and 3.x
+
 ## Install
 
 
@@ -183,13 +187,13 @@ You can access any other resource from the MercadoPago API using the generic met
 
     // Get a resource, with optional URL params. Also you can disable authentication for public APIs
     mp.get ("/resource/uri", [params], [authenticate=true]);
-
+    
     // Create a resource with "data" and optional URL params.
     mp.post ("/resource/uri", data, [params]);
-
+    
     // Update a resource with "data" and optional URL params.
     mp.put ("/resource/uri", data, [params]);
-
+    
     // Delete a resource with optional URL params.
     mp.delete ("/resource/uri", [params]);
 
@@ -197,7 +201,7 @@ For example, if you want to get the Sites list (no params and no authentication)
 
 
     result = mp.get ("/sites", null, false);
-
+    
     print (json.dumps(result, indent=4))
 
 ### Running tests

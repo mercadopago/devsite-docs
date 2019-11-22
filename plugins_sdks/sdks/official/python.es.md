@@ -6,6 +6,10 @@
 * [Customized checkout](#bookmark_checkout_custom)
 * [Generic methods](#bookmark_métodos_genéricos)
 
+### Versiones Soportadas:
+
+Nuesto SDK es compatible con las versiones de 2.x y 3.x de Python.
+
 ## Instalación
 
 

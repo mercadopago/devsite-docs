@@ -4,7 +4,7 @@ Esta biblioteca fornece um conjunto de classes e métodos para interagir com a A
 
 ### Versões do PHP suportadas:
 
-O SDK suporta PHP 5.5.0 ou maior
+Nosso SDK é compatível com PHP versão 5.6 ou maior.
 
 ### Instalação
 
