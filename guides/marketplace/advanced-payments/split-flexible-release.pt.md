@@ -72,10 +72,10 @@ No `body` devemos definir a nova data de liberação.
 }
 ```
 
-Una vez solicitado el cambio, comenzará a procesarse de manera  asíncrona y se notificará, via webhook, cuando el proceso haya finalizado.
+Depois que a alteração for solicitada, ela será processada de forma assíncrona e o resultado será notificado via Webhook.
 
 > NOTE
 >
 > Nota
 >
-> Recordá que para recibir las notificaciones de este evento, deberás [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com/mla/account/webhooks).
+> Para receber notificações deste evento, você deve primeiro [configurar o URL ao qual o Mercado Pago tem acesso](https://www.mercadopago.com/mla/account/webhooks).

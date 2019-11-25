@@ -72,10 +72,10 @@ In the `body` we must set the new release date.
 }
 ```  
 
-Una vez solicitado el cambio, comenzará a procesarse de manera  asíncrona y se notificará, via webhook, cuando el proceso haya finalizado.
+Once the change is requested, a asynchronous process will begin and it will be notified via webhook when it finishes.
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Recordá que para recibir las notificaciones de este evento, deberás [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com/mla/account/webhooks).
+> Remember: in order to receive notifications about this event, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago.com/mla/account/webhooks).
