@@ -80,4 +80,4 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 >
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
-> [Generação via API](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/api/)
+> [Generação via API](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/api/)
