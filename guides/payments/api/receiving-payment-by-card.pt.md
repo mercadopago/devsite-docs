@@ -537,7 +537,7 @@ mercadopago.payment.save(payment_data).then(function (data) {
 
 require 'mercadopago'
 # ...
-MercadoPago::SDK.setAccessToken(ENV_ACCESS_TOKEN)
+MercadoPago::SDK.setAccessToken("ENV_ACCESS_TOKEN")
 # ...
 payment = MercadoPago::Payment.new()
 payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
