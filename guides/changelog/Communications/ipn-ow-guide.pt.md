@@ -1,6 +1,6 @@
 # Manual de migração: atualizamos as notificações IPN
 
-> Se você está usando as notificações IPN desde {31 de julho}, não se preocupe, esta mudança não se aplica a você.  
+> Se você está usando as notificações IPN desde 31 de julho, não se preocupe, esta mudança não se aplica a você.  
 
 A versão antiga de notificações IPN não estará mais disponível. Por isso, recomendamos que você confirme se está atualizado para que possa ficar informado e não tenha problemas com seus pagamentos.
 

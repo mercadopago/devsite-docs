@@ -1,6 +1,6 @@
 # Migration guide: we updated the IPN notifications
 
-> If you are using IPN notifications since {July 31}, don’t worry, this change does not affect you. 
+> If you are using IPN notifications since July 31, don’t worry, this change does not affect you. 
 
 The old version of IPN notifications will no longer be available. Therefore, we recommend that you confirm if you are updated so you can stay informed and have no problems with your payments.
 

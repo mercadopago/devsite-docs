@@ -12,11 +12,11 @@ Each release note describes the new changes applying to a version. This changes 
 
 ## November 25, 2019
 
-To meet the highest security standards, we seek to always be updated. Therefore, the old version of **IPN notifications (Instant Payment Notification)** will no longer be available from {November 29}.
+To meet the highest security standards, we seek to always be updated. Therefore, the old version of **IPN notifications (Instant Payment Notification)** will no longer be available from November 29.
 
 If you are using it, **you must check your version and update it to avoid problems and loss of service.** In case you don't want to do it, you can use other types of notifications that we offer.
 
-You can find all the necessary information in the [migration guide](#). 
+You can find all the necessary information in the [migration guide](https://www.mercadopago.com.br/developers/en/guides/changelog/communications). 
 
 ----[mlc, mco]----
 
