@@ -10,6 +10,14 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
+## 25 de Noviembre de 2019
+
+Para cumplir con los más altos estándares de seguridad, buscamos siempre estar actualizados. Por eso, la versión antigua de **notificaciones IPN (Instant Payment Notification)** ya no estará disponible a partir del {09 de diciembre}.
+
+Si la estás usando, **tienes que revisar tu versión y actualizarla para evitar problemas y pérdidas de servicio.** En caso de no querer hacerlo, puedes usar otro tipo de notificaciones que ofrecemos.
+
+Puedes encontrar toda la información necesaria en la [guía de la migración](#).
+
 ----[mlc, mco]----
 
 ## 25 de Septiembre de 2019
