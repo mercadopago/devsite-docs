@@ -253,7 +253,7 @@ Para efetuar um pagamento único, deve-se obter o id do card_token a partir dos 
 
 Os `card_token` são **válidos por 7 dias** e podem ser utilizados apenas uma vez.
 
-Para efetuar o pagamento, basta realizar um _API call_ na rota definida no action do formulário:
+Para efetuar o pagamento, basta realizar um _API call_ na rota definida no _action_ do formulário:
 
 [[[
 ```php
@@ -512,7 +512,7 @@ payment.save
 ```node
 
 var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+mercadopago.configurations.setAccessToken("ENV_ACCESS_TOKEN");
 
 var payment_data = {
   transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
