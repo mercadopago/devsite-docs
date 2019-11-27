@@ -16,7 +16,7 @@ Para cumplir con los más altos estándares de seguridad, buscamos siempre estar
 
 Si la estás usando, **tienes que revisar tu versión y actualizarla para evitar problemas y pérdidas de servicio.** En caso de no querer hacerlo, puedes usar otro tipo de notificaciones que ofrecemos.
 
-Puedes encontrar toda la información necesaria en la [guía de la migración](https://www.mercadopago.com.ar/developers/es/guides/changelog/communications).
+Puedes encontrar toda la información necesaria en la [guía de la migración](https://www.mercadopago.com.ar/developers/es/guides/changelog/communications/ipn-ow-guide).
 
 ----[mlc, mco]----
 
