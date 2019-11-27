@@ -45,12 +45,12 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer esto es importante contar con un formulario que utilice los siguientes atributos `data-checkout`:
 
 ```html
-<form action="" method="post" id="pay" name="pay" >
+<form action="/procesar_pago" method="post" id="pay" name="pay" >
     <fieldset>
         <ul>
             <li>
                 <label for="email">Email</label>
-                <input id="email" name="email" value="test_user_19653727@testuser.com" type="email" placeholder="your email"/>
+                <input type="email" id="email" name="email" value="test_user_19653727@testuser.com"  placeholder="your email"/>
             </li>
             <li>
                 <label for="cardNumber">Credit card number:</label>
@@ -62,11 +62,11 @@ El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer est
             </li>
             <li>
                 <label for="cardExpirationMonth">Expiration month:</label>
-                <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" placeholder="12" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
+                <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" placeholder="11" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
             </li>
             <li>
                 <label for="cardExpirationYear">Expiration year:</label>
-                <input type="text" id="cardExpirationYear" data-checkout="cardExpirationYear" placeholder="2015" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
+                <input type="text" id="cardExpirationYear" data-checkout="cardExpirationYear" placeholder="2025" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
             </li>
             <li>
                 <label for="cardholderName">Card holder name:</label>
@@ -80,7 +80,12 @@ El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer est
                 <label for="docNumber">Document number:</label>
                 <input type="text" id="docNumber" data-checkout="docNumber" placeholder="12345678" />
             </li>
+            <li>
+               <label for="installments">Installments:</label>
+               <select id="installments" class="form-control" name="installments"></select>
+          </li>
         </ul>
+        <input type="hidden" name="amount" id="amount"/>
         <input type="hidden" name="paymentMethodId" />
         <input type="submit" value="Pay!" />
     </fieldset>
@@ -113,10 +118,24 @@ Es importante que obtengas el medio de pago de la tarjeta para poder realizar el
 El _callback_ llamado `setPaymentMethodInfo` recibe un _status_ y un _response_. La función almacena el id de la respuesta en el campo `paymentMethodId` (_input hidden_)
 
 ```javascript
+
+function addEvent(to, type, fn){ 
+        if(document.addEventListener){
+            to.addEventListener(type, fn, false);
+        } else if(document.attachEvent){
+            to.attachEvent('on'+type, fn);
+        } else {
+            to['on'+type] = fn;
+        }  
+    }; 
+
+addEvent(document.querySelector('#cardNumber'), 'keyup', guessingPaymentMethod);
+addEvent(document.querySelector('#cardNumber'), 'change', guessingPaymentMethod);
+
 function getBin() {
-  const cardnumber = document.getElementById("cardnumber");
-  return cardnumber.substring(0,6);
-}
+  const cardnumber = document.getElementById("cardNumber");
+  return cardnumber.value.substring(0,6);
+};
 
 function guessingPaymentMethod(event) {
     var bin = getBin();
@@ -146,7 +165,7 @@ function setPaymentMethodInfo(status, response) {
             paymentMethodElement.value = response[0].id;
         } else {
             const input = document.createElement('input');
-            input.setattribute('name', 'paymentMethodId');
+            input.setAttribute('name', 'paymentMethodId');
             input.setAttribute('type', 'hidden');
             input.setAttribute('value', response[0].id);     
 
@@ -156,14 +175,6 @@ function setPaymentMethodInfo(status, response) {
         alert(`payment method info error: ${response}`);  
     }
 };
-```
-
-Para obtener el medio de pago, utiliza el método `MercadoPago.getPaymentMethod(jsonParam,callback)`. Este acepta dos parámetros: un objeto y una función de _callback_.
-
-```javascript
-window.Mercadopago.getPaymentMethod({
-    "bin": bin
-}, setPaymentMethodInfo);
 ```
 
 #### Capturar los datos
@@ -243,7 +254,7 @@ Debes obtener de los parametros enviados en el `POST` el id del `card_token` par
 
 Los `card_token` tienen **una validez de 7 días** y son de único uso.
 
-Para realizar el pago solamente debes realizar un _API call_:
+Para realizar el pago solamente debes realizar un _API call_ en la ruta definida en el _action_ del formulario:
 
 [[[
 ```php
@@ -251,6 +262,8 @@ Para realizar el pago solamente debes realizar un _API call_:
     ===
     El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected or **in_process**).
     ===
+
+    require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
@@ -299,7 +312,7 @@ El valor de la propiedad **status** indicara el estado de un pago (**approved**,
 ===
 
 var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+mercadopago.configurations.setAccessToken("ENV_ACCESS_TOKEN");
 
 var payment_data = {
   transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
@@ -313,11 +326,12 @@ var payment_data = {
   }
 };
 // Save and posting the payment
-mercadopago.payment.save(payment_data).then(function (payment) {
-  // ...
-}).catch(function (error) {
-  // ...
-});
+mercadopago.payment.save(payment_data).then(function (data) {
+      console.log(data);
+      res.send(data);
+    }).catch(function (error) {
+      console.log(error);
+    });
 
 ```
 ```ruby
@@ -367,7 +381,7 @@ Payment payment = new Payment()
 payment.Save();
 //...
 // Print the payment status
-Console.log(payment.Status);
+console.log(payment.Status);
 //...
 ```
 ]]]
@@ -409,9 +423,28 @@ Para obtener las cuotas disponibles
 ```javascript
 
 Mercadopago.getInstallments({
-    "bin": bin,
-    "amount": amount
+"bin": getBin(),
+"amount": parseFloat(document.querySelector('#amount').value),
 }, setInstallmentInfo);
+
+function setInstallmentInfo(status, response) {
+        var selectorInstallments = document.querySelector("#installments"),
+        fragment = document.createDocumentFragment();
+        selectorInstallments.options.length = 0;
+
+        if (response.length > 0) {
+            var option = new Option("Escolha...", '-1'),
+            payerCosts = response[0].payer_costs;
+            fragment.appendChild(option);
+            
+            for (var i = 0; i < payerCosts.length; i++) {
+                fragment.appendChild(new Option(payerCosts[i].recommended_message, payerCosts[i].installments));
+            }
+            
+            selectorInstallments.appendChild(fragment);
+            selectorInstallments.removeAttribute('disabled');
+        }
+    };
 ```
 
 La respuesta cuenta con el `issuer_id` que debe ser enviado, y el mensaje recomendado para mostrar en cada una de las cuotas disponibles indicando el valor a pagar:
@@ -455,7 +488,10 @@ Para crear el pago es importante enviar los datos indicados anteriormente:
 ```php
 <?php  
 
+    require_once 'vendor/autoload.php';
+
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
     //...
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
@@ -492,7 +528,7 @@ payment.save
 ```node
 
 var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+mercadopago.configurations.setAccessToken("ENV_ACCESS_TOKEN");
 
 var payment_data = {
   transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
@@ -506,18 +542,18 @@ var payment_data = {
   }
 };
 // Save and posting the payment
-mercadopago.payment.save(payment_data).then(function (payment) {
-  // ...
-}).catch(function (error) {
-  // ...
-});
-
+mercadopago.payment.save(payment_data).then(function (data) {
+      console.log(data);
+      res.send(data);
+    }).catch(function (error) {
+      console.log(error);
+    });
 ```
 ```ruby
 
 require 'mercadopago'
 # ...
-MercadoPago::SDK.setAccessToken(ENV_ACCESS_TOKEN)
+MercadoPago::SDK.setAccessToken("ENV_ACCESS_TOKEN")
 # ...
 payment = MercadoPago::Payment.new()
 payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
