@@ -107,7 +107,7 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 >
 > IMPORTANTE
 >
-> Su cuenta de Mercado Pago necesita ser del tipo **Vendedor**. 
+> Su cuenta de Mercado Pago necesita ser del tipo **Vendedor**.
 > El producto enviado debe tener sus dimensiones (ancho, altura, longitud y peso) adecuadamente configurados y dentro de las reglas y límites soportados por el país especificado.
 
 2) Para habilitar en el módulo, sólo tiene que activarlo accediendo al panel administrativo de Prestashopp en **MEJORAS -> Módulos -> Módulos y Servicios** y haciendo clic en **Configurar** en el módulo del Mercado Pagado:
