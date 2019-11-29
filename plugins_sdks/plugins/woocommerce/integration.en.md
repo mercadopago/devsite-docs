@@ -22,7 +22,7 @@ Connect a Mercado Pago account to the module to capture your sales charges in Wo
 Once the module is installed, follow these steps to integrate:
 
 1. Create a [seller account](https://www.mercadopago.com.ar/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar)  in Mercado Pago if you don’t have one yet.
-2. Obtain the Access Token and Public Key [credentials](https://www.mercadopago.com.ar/developers/es/guides/localization/credentials) and paste them into the Production and Testing fields that you will find in the module configuration.
+2. Obtain the Access Token and Public Key [credentials](https://www.mercadopago.com.ar/developers/en/guides/localization/credentials) and paste them into the Production and Testing fields that you will find in the module configuration.
 3. Approve the account to [go to Production](https://www.mercadopago.com.ar/developers/en/guides/payments/api/goto-production/) and receive money from your sales in Mercado Pago.
 
 Done! With this you can capture the payments you receive in WooCommerce with your Mercado Pago account.
@@ -33,7 +33,7 @@ Done! With this you can capture the payments you receive in WooCommerce with you
 >
 > Important
 >
-> The [credentials](https://www.mercadopago.com.ar/developers/es/guides/localization/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** with which to simulate online payments, use the test credentials. Use **production** credentials to receive real payments.
+> The [credentials](https://www.mercadopago.com.ar/developers/en/guides/localization/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** with which to simulate online payments, use the test credentials. Use **production** credentials to receive real payments.
 
 
 ---

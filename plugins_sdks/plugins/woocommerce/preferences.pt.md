@@ -74,7 +74,7 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 | Configuración                 | Descripción                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | Modo binário     	            | Ative esta opção quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.|
-| Modelo Gateway               	| Se você opera com o [modelo gateway](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/introduction/) como processador de pagamentos e tem seus próprios números de comércio, é possível configurar descontos e tarifas para os seus clientes por pagarem com Mercado Pago.|
+| Modelo Gateway               	| Se você opera com o [modelo gateway](https://www.mercadopago.com.ar/developers/pt/guides/gateway/general-considerations/introduction/) como processador de pagamentos e tem seus próprios números de comércio, é possível configurar descontos e tarifas para os seus clientes por pagarem com Mercado Pago.|
 
 ### Smart Checkout
 
