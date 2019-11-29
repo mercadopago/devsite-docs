@@ -4,18 +4,18 @@
 
 A versão antiga de notificações IPN não estará mais disponível. Por isso, recomendamos que você confirme se está atualizado para que possa ficar informado e não tenha problemas com seus pagamentos.
 
-#### Sobre a nova versão ####
+#### Sobre a nova versão
 
 Agora, você vai poder se inscrever nos tópicos de pagamentos que te interessam, além de receber os novos eventos em uma URL HTTPS em formato JSON.  
 
-## Quais são os benefícios? ##
+## Quais são os benefícios?
 
 - **Resiliência em novas tentativas.**
 - **Melhores auditorias.** Isso nos permite entender o que aconteceu com as notificações.
 - **Mais estabilidade.** Oferece uma arquitetura mais moderna e segura. 
 - **Somos mais rápidos.** Reduzimos o tempo de notificação para menos de dois segundos.
 
-## O que muda? ##
+## O que muda?
 
 Você receberá um objeto no formato JSON com informações básicas sobre o pagamento.
 Até agora você recebia "x-www-form-urlencoded", portanto, é necessário adaptar a lógica do seu servidor para processar formato JSON. 
@@ -26,7 +26,7 @@ O JSON terá as informações básicas de pagamento. Caso você precise de mais 
 
 > É necessário que seu servidor tenha certificados HTTPS.
 
-## Como ativar as notificações IPN? ##
+## Como ativar as notificações IPN?
 
 Da sua conta do Mercado Pago, você pode adicionar notificações IPN.
 
@@ -37,7 +37,7 @@ Ao ativá-las, lembre-se:
 - É necessário colocar o endpoint que você preparou para que te enviemos novidades.
 - Os tópicos que você verá identificam sobre o que é a notificação. Eles podem ser payment, chargebacks ou merchant_order.
 
-## Quais parâmetros vou receber ##
+## Quais parâmetros vou receber
 
 Se você configurou o URL da seguite forma: `“https://www.yoursite.com/notifications”`, vai receber:  
 
@@ -62,7 +62,7 @@ Você também receberá um JSON desta forma:
 
 > Você pode encontrar mais informações sobre como integrar as notificações na seção Notificações IPN.
 
-## Se eu não quiser notificações IPN, o que posso fazer?##
+## Se eu não quiser notificações IPN, o que posso fazer?
 
 Caso você não queira ou precise de outro tipo de notificação, pode [usar webhooks](https://www.mercadopago.com/mlb/account/webhooks)
 

@@ -4,18 +4,18 @@
 
 The old version of IPN notifications will no longer be available. Therefore, we recommend that you confirm if you are updated so you can stay informed and have no problems with your payments.
 
-#### About the new version ####
+#### About the new version
 
 Ahora, vas a poder suscribirte a los tópicos de pago que te interesen y vas a recibir los nuevos eventos en una URL HTTPS en formato JSON. 
 
-## Which are the benefits? ##
+## Which are the benefits?
 
 - **Resilience in retries.**
 - **Better audits.** Allows us to understand what happened with the notifications.
 - **Greater stability.** It offers a more modern and secure architecture.
 - **We are faster.** We reduced notification times to less than two seconds.
 
-## What changes? ##
+## What changes?
 
 You will receive an object in JSON format with basic payment information.
 Until now you received “x-www-form-urlencoded”, so you have to adapt the logic of your server to process JSON format. 
@@ -26,7 +26,7 @@ The JSON will have basic payment information. If you need more information, [per
 
 > It is necessary for your server to have HTTPS certificates.
 
-## How to activate the new IPN notifications? ##
+## How to activate the new IPN notifications?
 
 From your Mercado Pago account you can [add IPN notifications](https://www.mercadopago.com.br/ipn-notifications).
 
@@ -37,7 +37,7 @@ Keep in mind when activating them:
 - It is necessary that you place the endpoint that you prepared for us to send you news.
 - The topics you are going to see identify what the notification is about. They can be payment, chargebacks or merchant_order.
 
-## What parameters will I receive? ##
+## What parameters will I receive?
 
 If you set the URL as follows: `“https://www.yoursite.com/notifications”` you will receive: 
 
@@ -62,7 +62,7 @@ You will also receive a JSON as follows:
 
 > You can find more information on how to integrate notifications in the [IPN notification section](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/).
 
-## What can I do if I don’t want IPN notifications? ##
+## What can I do if I don’t want IPN notifications?
 
 If you want or need other types of notifications, you can [use webhooks](https://www.mercadopago.com/mlb/account/webhooks).
 

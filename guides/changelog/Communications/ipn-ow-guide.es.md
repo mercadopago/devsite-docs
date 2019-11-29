@@ -4,18 +4,18 @@
 
 La versión antigua de notificaciones IPN ya no estará disponible. Por eso, te recomendamos que confirmes si estás actualizado para que puedas estar informado y no tengas problemas con tus pagos.
 
-#### Sobre la nueva versión ####
+#### Sobre la nueva versión
 
 Ahora, vas a poder suscribirte a los tópicos de pago que te interesen y vas a recibir los nuevos eventos en una URL HTTPS en formato JSON. 
 
-## ¿Qué beneficios tiene? ##
+## ¿Qué beneficios tiene?
 
 - **Resiliencia en los reintentos.**
 - **Mejores auditorías.** Nos permite entender qué sucedió con los notificaciones.
 - **Mayor estabilidad.** Ofrece una arquitectura más moderna y segura.
 - **Somos más rápidos.** Reducimos los tiempos de notificaciones a menos dos segundos.
 
-## ¿Qué es lo que cambia? ##
+## ¿Qué es lo que cambia?
 
 Vas a recibir un objeto en formato JSON con datos básicos del pago. 
 Hasta ahora recibías “x-www-form-urlencoded”, por lo que tenés que adaptar la lógica de tu servidor a procesar formato JSON. 
@@ -26,7 +26,7 @@ El JSON va a tener información básica del pago. Y si necesitas más informaci�
 
 > Es necesario que tu servidor tenga certificados HTTPS.
 
-## ¿Cómo activar las notificaciones IPN? ##
+## ¿Cómo activar las notificaciones IPN?
 
 Desde tu cuenta de Mercado Pago, puedes [sumar notificaciones IPN](https://www.mercadopago.com.ar/ipn-notifications).
 
@@ -37,7 +37,7 @@ Al activarlas, ten en cuenta:
 - Es necesario que coloques el endpoint que preparaste para que te enviemos novedades.
 - Los topics que vas a ver identifica de qué se trata la notificación. Pueden ser payment, chargebacks o merchant_order.
 
-## ¿Qué parámetros voy a recibir? ##
+## ¿Qué parámetros voy a recibir?
 
 Si configuraste la URL de la siguiente manera: `“https://www.yoursite.com/notifications”` vas a recibir: 
 
@@ -62,7 +62,7 @@ También vas a recibir un JSON de esta forma:
 
 > Puedes encontrar más información sobre cómo integrar las notificaciones en la [sección Notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/).
 
-## Si no quiero notificaciones IPN, ¿qué puedo hacer? ##
+## Si no quiero notificaciones IPN, ¿qué puedo hacer?
 
 En caso de querer o necesitar otro tipo de notificaciones puedes [usar webhooks](https://www.mercadopago.com/mla/account/webhooks).
 
