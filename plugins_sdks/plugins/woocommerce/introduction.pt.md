@@ -40,7 +40,7 @@ Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro 
 >
 > Nota
 > 
-> Todos os nossos módulos contam com uma licença de código aberto. **Quer participar da criação?** Sugira melhorias e edições no [Github](https://github.com/mercadopago/cart-woocommerce).
+> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições](https://github.com/mercadopago/cart-woocommerce) no Github.
 
 ## Tipos de checkout
 
@@ -67,7 +67,7 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 > Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
 >
 > 
-> [Instalar](http://www.mercadopago.com.br/mlb/pt/plugins_sdks/plugins/woocommerce/instalation/)
+> [Instalar](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/instalation/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -75,4 +75,4 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 >
 > Conecte sua conta do Mercado Pago ao módulo e capture os pagamentos que você receber pelas suas vendas on-line.
 >
-> [Integrar](http://www.mercadopago.com.br/mlb/pt/plugins_sdks/plugins/woocommerce/integration/)
+> [Integrar](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/integration/)

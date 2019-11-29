@@ -11,7 +11,7 @@ sites_supported:
 # Payment Preferences
 <br/>
 
-Find the payment preference settings in the 'WooCommerce Settings' once you have installed the module. There, go to the 'Payments' section, activate the checkout you want to offer and configure the options you prefer for your shopping gateway.
+Find the payment preference settings in the WooCommerce *Settings* once you have installed the module. There, go to the *Payments* section, activate the checkout you want to offer and configure the options you prefer for your shopping gateway.
 
 > NOTE
 >
@@ -31,26 +31,33 @@ Enter the **name of the business** to appear on your customers' invoice and make
 >
 > **Are you a Mercado Pago partner?** Don’t forget to enter your Sponsor_ID, so we can identify all your transactions and know how many orders your account processes.
 
+<span></span>
+
+> NOTE
+>
+> Note
+>
+> All our modules have an open source license. **Do you want to participate in its construction?** [Suggest improvements and editions](https://github.com/mercadopago/cart-woocommerce) on Github.
+
 ## Basic configuration
 
 Activate the checkout you want to offer your customers according to your preferences and choose the payment methods with which they can make the purchase.
 
-1) Activate a checkout type
-
+* Activate a checkout type
   * Use Smart checkout to support payments with cards, cash and money in the Mercado Pago account.
   * Use the Custom Checkout to have control over other settings.
 
-> WARNING
+<!-- > WARNING
 >
 > Important
 >
-> Note that the [Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment.
+> Note that the [Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
 
-2) Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
+* Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
-3) Set the maximum number of installments in which they can pay you.
+* Set the maximum number of installments in which they can pay you.
 
-4) Activate the currency conversion with the one you have in Mercado Pago.
+* Activate the currency conversion with the one you have in Mercado Pago.
 
 > NOTE
 >
@@ -117,4 +124,13 @@ Choose what shopping experience your customers will have when paying:
 > Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
 >
 >
-> [Receive payments](http://www.mercadopago.com.ar/mla/en/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Receive payments](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/receive-payments/)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Install Mercado Pago in WooCommerce
+>
+> Follow these steps to install the Mercado Pago module in your online store.
+>
+> 
+> [Install](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/instalation/)

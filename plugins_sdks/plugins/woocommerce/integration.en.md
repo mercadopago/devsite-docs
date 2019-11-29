@@ -24,7 +24,8 @@ Once the module is installed, follow these steps to integrate:
 1. Create a [seller account](https://www.mercadopago.com.ar/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar)  in Mercado Pago if you don’t have one yet.
 2. Obtain the Access Token and Public Key [credentials](https://www.mercadopago.com.ar/developers/es/guides/localization/credentials) and paste them into the Production and Testing fields that you will find in the module configuration.
 3. Approve the account to [go to Production](https://www.mercadopago.com.ar/developers/en/guides/payments/api/goto-production/) and receive money from your sales in Mercado Pago.
-4. Done! With this you can capture the payments you receive in WooCommerce with your Mercado Pago account.
+
+Done! With this you can capture the payments you receive in WooCommerce with your Mercado Pago account.
 
 ![Credentials flow](/images/woocomerce/es_woo_credenciales.gif)
 
@@ -46,7 +47,7 @@ Once the module is installed, follow these steps to integrate:
 > Set your payment preferences and make adjustments according to the experience you want to offer your customers.
 >
 >
-> [Preferences](http://www.mercadopago.com.ar/mla/en/plugins_sdks/plugins/woocommerce/integration/)
+> [Preferences](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -54,4 +55,4 @@ Once the module is installed, follow these steps to integrate:
 >
 > Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
 >
-> [Receive payments](http://www.mercadopago.com.ar/mla/es/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Receive payments](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/receive-payments/)

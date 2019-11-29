@@ -28,7 +28,7 @@ Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel co
 | Pago como invitado            | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en WooCommerce.                             |
 | Devolución de pagos 	        | Devuelve pagos desde la plataforma.                                                               	                     |
 | Cancelación de pagos     	    | Cancela los pagos pendientes desde la plataforma.                            	                                           |
-| Modo binario                  | Aprueba o rechaza pagos en el momento. 	                                                                                 |
+| Modo binario                  | Aprueba o rechaza pagos al instante y de forma automática.                                                               |
 | Conversión de moneda          | No más problemas de compatibilidad. Convierte la moneda que usas en WooCommerce a la moneda de tu cuenta de Mercado Pago.|
 
 >**¿Eres desarrollador?**
@@ -40,11 +40,11 @@ Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel co
 >
 > Nota
 >
-> Todos nuestros módulos cuentan con una licencia de código abierto. **¿Quieres participar en su construcción?** Sugiere mejoras y ediciones en [Github](https://github.com/mercadopago/cart-woocommerce).
+> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-woocommerce) en Github.
 
 ## Tipos de checkout
 
-Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las características para elegir cuál se adapta mejor a tu negocio.
+Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las características para elegir cuál se adapta mejor al tuyo.
 
 | Características     | Smart Checkout                                                                                                                 | Checkout personalizado                                         |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -67,12 +67,12 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 > Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
 >
 > 
-> [Instalar](http://www.mercadopago.com.ar/mla/es/plugins_sdks/plugins/woocommerce/instalation/)
+> [Instalar](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/instalation/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Integrar Mercado Pago en WooCommerce
 >
-> Conecta tu cuenta de Mercado Pago al módulo de WooCommerce y captura los pagos que recibas por tus ventas online.
+> Conecta tu cuenta de Mercado Pago al módulo y captura los pagos de tus ventas online.
 >
-> [Integrar](http://www.mercadopago.com.ar/mla/es/plugins_sdks/plugins/woocommerce/integration/)
+> [Integrar](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/integration/)

@@ -13,13 +13,9 @@ sites_supported:
 
 Install the Mercado Pago module in WooCommerce automatically, from your WordPress panel, or manually, by importing a .zip file into your directory via FTP. 
 
-> NOTE
->
-> Note
->
 > The installation of our module does not affect the speed of your store.
 
-## Installation Requirements
+## Installation requirements
 
 Review the installation requirements and follow the steps we indicate, it will only take a few minutes to install the module!
 
@@ -41,22 +37,25 @@ Review the installation requirements and follow the steps we indicate, it will o
 >
 > You can use the HTTP protocol while in ‘Testing’ mode and not making real transactions. When you go to Production you must have an **SSL certificate** to offer a **secure navigation** that protects your data and those of your customers. Once you have it, the path to your online store must respond to the **HTTPS protocol**.
 
-## Automatic Installation
+## Automatic installation
 
-### Automatically, from the ‘Plugins’ section of WordPress
+Automatically, from the ‘Plugins’ section of WordPress
 
 Follow these steps for installation:
 
-* Go to **Add new** and search for “WooCommerce Mercado Pago” among the WordPress modules offer.
-* Click Install and then look for it in the "Installed Plugins" section. 
-* Activate it to start configuring the module in your store.
-* Excellent! You will see the module installed in the Plugins section of your administration panel. Activate it to be able to adjust the necessary settings in your store.
+1) Go to **Add new** and search for “WooCommerce Mercado Pago” among the WordPress modules offer.
 
-## Manual Installation
+2) Click Install and then look for it in the "Installed Plugins" section. 
 
-### Manually, follow these steps for installation: 
+3) Activate it to start configuring the module in your store.
 
-* Download the .zip file directly from our Github or from the directory of modules of WordPress.
+Excellent! You will see the module installed in the Plugins section of your administration panel. Activate it to be able to adjust the necessary settings in your store.
+
+## Manual installation
+
+Manually, follow these steps for installation: 
+
+1) Download the .zip file directly from our Github or from the directory of modules of WordPress.
                     
 > NOTE
 >
@@ -64,19 +63,21 @@ Follow these steps for installation:
 >
 > [Mercado Pago module for WooCommerce ](https://github.com/mercadopago/cart-woocommerce/archive/master.zip)
 
-* Unzip the downloaded folder and change the name to ‘woocommerce-mercadopago’.
-* Connect to your web server and copy the file ‘woocommerce-mercadopago’ into your WordPress directory, in the ‘Plugins’ folder.
-* Done! The Mercado Pago module will be installed in your online store.
+2) Unzip the downloaded folder and change the name to ‘woocommerce-mercadopago’.
 
-Check that everything went well from your WordPress desktop. You will see the module among your Installed Plugins. Activate it to proceed to the integration of your account and the configuration steps.
+3) Connect to your web server and copy the file ‘woocommerce-mercadopago’ into your WordPress directory, in the ‘Plugins’ folder.
 
-When you activate the plugin, WordPress will take you to the WooCommerce Settings and, from there, to the Payments section, where you will have the types of checkout we offer for your online store: Smart Checkout and Custom Checkout.
+Done! The Mercado Pago module will be installed in your online store.
+
+Check that everything went well from your WordPress desktop. You will see the module among your *Installed Plugins*. Activate it to proceed to the integration of your account and the configuration steps.
+
+When you activate the plugin, WordPress will take you to the WooCommerce *Settings* and, from there, to the *Payments* section, where you will have the [types of checkout](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/introduction/#bookmark_checkout_types) we offer for your online store: Smart Checkout and Custom Checkout.
 
 > NOTE
 >
 > Note
 >
-> All our modules have an open source license. **Do you want to participate in its construction?** Suggest improvements and editions on [Github](https://github.com/mercadopago/cart-woocommerce).
+> All our modules have an open source license. **Do you want to participate in its construction?** [Suggest improvements and editions](https://github.com/mercadopago/cart-woocommerce) on Github.
 
 ## Maintenance
 
@@ -94,17 +95,17 @@ Then execute the steps of a **new installation** to update your page with the la
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Integrate Mercado Pago in WooCommerce
+> Integrate Mercado Pago into WooCommerce
 >
 > Connect your Mercado Pago account to the module and capture the payments you receive for your online sales.
 >
 > 
-> [Integrate](http://www.mercadopago.com.ar/mla/en/plugins_sdks/plugins/woocommerce/integration/)
+> [Integrate](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_REQUIRED_ES
 >
 > Payment preferences
 >
 > Set your payment preferences and make adjustments according to the experience you want to offer your customers.
 >
-> [Receive payments](http://www.mercadopago.com.ar/mla/en/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Preferences](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/receive-payments/)

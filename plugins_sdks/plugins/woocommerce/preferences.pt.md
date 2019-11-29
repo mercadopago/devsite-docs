@@ -11,7 +11,7 @@ sites_supported:
 # Preferências de pagamento
 <br/>
 
-Encontre a configuração das preferências de pagamento nos "Ajustes do WooCommerce" assim que tiver instalado o módulo. Lá, vá à seção "Payments", ative o checkout que quiser oferecer e configure as opções que preferir para o seu site.
+Encontre a configuração das preferências de pagamento nos *Ajustes* do WooCommerce assim que tiver instalado o módulo. Lá, vá à seção *Payments*, ative o checkout que quiser oferecer e configure as opções que preferir para o seu site.
 
 > NOTE
 >
@@ -29,28 +29,35 @@ Insira o **nome do seu negócio** para que apareça na fatura dos seus clientes 
 >
 > Importante
 >
-> **Você já trabalha com o Mercado Pago?** Não esqueça de inserir seu Sponsor_ID, assim identificamos todas as suas transações e sabemos quantas vendas sua conta processa.  
+> **Você já trabalha com o Mercado Pago?** Não esqueça de inserir seu Sponsor_ID, assim identificamos todas as suas transações e sabemos quantas vendas sua conta processa. 
+
+<span></span>
+
+> NOTE
+>
+> Nota
+> 
+> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições](https://github.com/mercadopago/cart-woocommerce) no Github.
 
 ## Configuração básica
 
 Ative o checkout que quer oferecer aos seus clientes conforme suas preferências e escolha os meios de pagamento com os quais eles podem comprar.
 
-1) Ative um tipo de checkout
-
+* Ative um tipo de checkout
   * Use o Smart checkout para aceitar pagamentos com cartões, em dinheiro e saldo na conta do Mercado Pago. 
   * Use o Checkout Personalizado para ter controle sobre outras configurações. 
 
-> WARNING
+<!-- > WARNING
 >
 > Importante
 >
-> Lembre-se de que o [Smart Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction) é excludente do Checkout Personalizado e viceversa. Você pode usar os de checkout personalizados ao mesmo tempo para oferecer todos os meios de pagamento.
+> Lembre-se de que o [Smart Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction) é excludente do Checkout Personalizado e viceversa. Você pode usar os de checkout personalizados ao mesmo tempo para oferecer todos os meios de pagamento. -->
 
-2) Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods/) para seus clientes conforme o país onde operam e o tipo de checkout que esteja configurando.
+* Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods/) para seus clientes conforme o país onde operam e o tipo de checkout que esteja configurando.
 
-3) Estableça o máximo de parcelas que poderão pagar.
+* Estableça o máximo de parcelas que poderão pagar.
 
-4) Ativar conversão de moeda do Mercado Pago.
+* Ativar conversão de moeda do Mercado Pago.
 
 > NOTE
 >
@@ -117,4 +124,13 @@ Escolha qual experiência de compra seus clientes terão na hora de pagar:
 > Teste o módulo e confira se tudo está funcionando bem para começar a receber o dinheiro das suas vendas no Mercado Pago. 
 >
 >
-> [Receber pagamentos](http://www.mercadopago.com.br/mlb/pt/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/receive-payments/)
+
+> RIGHT_BUTTON_REQUIRED_ES
+>
+> Instalar Mercado Pago no WooCommerce
+>
+> Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
+>
+> 
+> [Instalar](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/instalation/)

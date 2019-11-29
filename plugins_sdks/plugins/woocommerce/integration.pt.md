@@ -24,7 +24,8 @@ Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.br%2Fcomo-cobrar) no Mercado Pago caso ainda não tenha uma.
 2. Crie algumas [credenciais](https://www.mercadopago.com.br/developers/pt/guides/localization/credentials)) Access Token e Public Key e cole-as nos campos de Produção e Testes que estarão na configuração do módulo.
 3. Homologue a conta para [ir à Produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
-4. Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce com a sua conta do Mercado Pago.
+
+Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce com a sua conta do Mercado Pago.
 
 ![Fluxo de credenciais](/images/woocomerce/br_woo_credenciales.gif)
 
@@ -45,7 +46,7 @@ Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você quer oferecer aos seus clientes.
 >
 >
-> [Preferências](http://www.mercadopago.com.br/mlb/pt/plugins_sdks/plugins/woocommerce/integration/)
+> [Preferências](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -53,4 +54,4 @@ Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 >
 > Teste o módulo e verifique se tudo está funcionando bem para começar a receber o dinheiro das suas vendas no Mercado Pago.
 >
-> [Receber pagamentos](http://www.mercadopago.com.br/mlb/pt/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/receive-payments/)

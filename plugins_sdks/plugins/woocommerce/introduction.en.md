@@ -40,7 +40,7 @@ Install the payment processor in WooCommerce and take your sales to another leve
 >
 > Note
 >
-> All our modules have an open source license. **Do you want to participate in its construction?** Suggest improvements and editions on [Github](https://github.com/mercadopago/cart-woocommerce).
+> All our modules have an open source license. **Do you want to participate in its construction?** [Suggest improvements and editions](https://github.com/mercadopago/cart-woocommerce) on Github.
 
 ## Checkout types
 
@@ -67,7 +67,7 @@ With these payment options we cover the needs of each business. Review the featu
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](http://www.mercadopago.com.ar/mla/en/plugins_sdks/plugins/woocommerce/instalation/)
+> [Install](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/instalation/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -75,4 +75,4 @@ With these payment options we cover the needs of each business. Review the featu
 >
 > Connect your Mercado Pago account to the module and capture the payments you receive for your online sales. 
 >
-> [Integrate](http://www.mercadopago.com.ar/mla/en/plugins_sdks/plugins/woocommerce/integration/)
+> [Integrate](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/integration/)
