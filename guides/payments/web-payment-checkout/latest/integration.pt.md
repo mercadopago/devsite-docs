@@ -317,4 +317,4 @@ _Clique no link dentro do seu site e [teste a integração do seu Smart Checkout
 >
 > Otimize sua integração e melhore o gerenciamento das suas vendas.
 >
-> [Integração avançada](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
