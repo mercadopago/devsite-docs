@@ -48,7 +48,7 @@ Se você configurou o URL da seguite forma: `“https://www.yoursite.com/notific
 
 E finalmente ficará assim:
 
-`https://www.yoursite.com/notifications/topic=payment&id=1234567`
+`https://www.yoursite.com/notifications?topic=payment&id=1234567`
 
 Você também receberá um JSON desta forma:
 
