@@ -20,7 +20,7 @@ As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago par
 | Loja      | É um **estabelecimiento físico** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta.  |
 | Caixa           | É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado.  |
 
-> ![Cajas y Sucursales](/images/stores_pos.es.png) 
+> ![Cajas y Sucursales](/images/stores_pos.ept.png) 
 
 
 
