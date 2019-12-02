@@ -9,7 +9,7 @@ Un pago puede ser rechazado por un error con el medio de pago o porque no se cum
 >
 > Nota
 >
-> Si quieres más información, consulta [los estados y motivos de rechazo existentes &raquo;](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses)
+> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses)
 
 Para evitar pérdidas de ingresos de tu negocio y mejorar la experiencia de tus clientes, trabajamos con los emisores de responsables de cada medio de pago y utilizamos las últimas tecnologías para evitar el fraude y aumentar la cantidad de pagos aprobados. 
 
