@@ -57,7 +57,7 @@ A estrutura da notificação é a seguinte:
 }
 ```
 
-* `id`: ID do Advanced Payment.
+* `id`: ID da notificação.
 * `user_id`: ID do proprietário do Marketplace.
 * `date_created`: Data do evento.
 * `action`: Ação que foi feita em relação ao Advanced Payment (pode ser splitter.insert o splitter.update).
@@ -65,7 +65,7 @@ A estrutura da notificação é a seguinte:
 * `application_id`: ID da aplicação.
 * `live_mode`: Indica se é uma notificação produtiva (true) ou sandbox (false).
 * `version`: Versão do Advanced Payment.
-* `data.id`: External Reference do pagamento.
+* `data.id`: ID do Advanced Payment.
 
 # Pagamentos binários
 
