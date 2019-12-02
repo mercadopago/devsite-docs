@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 # Pagamentos QR modelo desatendido
@@ -34,7 +35,7 @@ As características principais são:
 
 Explicamos a você o funcionamento do modelo desatendido:
 
->![Fluxo do modelo](/images/qr_flujo_desatendido.es.png)
+>![Fluxo do modelo](/images/qr-gas-station-flow.pt.png)
 
 1. O cliente escaneia o código QR desde seu aplicativo.
 2. Em função do URL associado ao caixa, Mercado Pago busca o pedido no server do  vendedor.

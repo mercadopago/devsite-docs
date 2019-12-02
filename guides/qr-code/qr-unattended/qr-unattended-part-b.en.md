@@ -1,17 +1,135 @@
 ---
 sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
+- mla
+- mpe
+- mco
+- mlu
+- mlm
+- mlc
+- mlb
 ---
 
+# How to integrate QR unattended model 
+
+Ton integrate QR unattended model you need to:
+
+1. Create a service that will be called when a payment request is received and its associate logic.
+- A. Order information isn’t available yet. 
+- B. Order information is available.
+
+2. Declare your domain URL to Mercado Pago
+
+## 1. Create a service that will be called when a payment request is received.
+
+You need to **create a service that Mercado Pago will call each time a QR payment is requested**. For example: https://www.mybusiness.com/pay-mp?storeid=6232&posid=1 
+
+This service will return the information needed to charge a customer. The URL service is declared on Point of Sale URL field.
+
+## Service logics
+
+Implement the next logics on the service to support the following cases:
+
+### A. Order informations isn’t available yet
+
+In some cases, order data may not be available yet when a customer tries to pay. I.e, when filling the tank at a gas station.
+
+In those cases, service must answer with an error message, so the user sees a waiting screen. Service must return a status code `HTTP 400 (Bad Request)` with the following format:
+
+```json
+{
+"error": 
+{  "type": "XXX",
+"message": "YYYY" }
+}
+```
+
+### Attributes
+
+| Type          |  Description                                                 |
+| ------------- | ------------------------------------------------------------ |
+| `in_process`     | An order is being processed but an amount is not defined yet.  |
+| `unavailable`           | There’s no order being processed or pending.   |
+| `invalid`           | Secondary parameters (Station ID, Position, etc.) reference an unknown location. |
+| `timeout`           | Merchant server couldn’t communicate with any internal system (For example, vending machine) and cancelled the operation. |
+
+`message` is a plain text that can come with the declared type and is optional.
+
+
+### B. Order infromation is available
+
+If order exits and is ready to be paid, service must return its information. 
+
+The answer expected from this service must contain the header `Content-Type: application/json` and the status `HTTP 200 (OK)`.
+
+Answer should contain the following message from the order: 
+
+```json
+{
+"collector_id": 178106235,
+"sponsor_id": 334249281,
+"items":[
+{
+"title":" $500.00 SUPER",
+"currency_id": [FAKER][CURRENCY][ACRONYM],
+"description":"$500.00 SUPER",
+"quantity": 1.0,
+"unit_price": 500.00
+}
+],
+"external_reference":"45ea80da",
+"notification_url":"https://www.yoursite.com"
+}
+```
+
+You should use the field `external_reference` to be able to identify the order from your system inside Mercado Pago. 
+
+### Attributes
+
+| Atributo            | Tipo (type)       |  Descripción               |
+| ------------- | ------------- | ------------------------------------------------------------ |
+| `collector_id` | Long     | Mercado Pago account identifier, to which payments will be imputed.  |
+| `sponsor_id` | Long           | Mercado Pago account identifier from integrative system. |
+| `items.title` | String           | Product title. |
+| `items.currency_id` | String(3)           | Currency identifier in ISO-4217 format. |
+| `items.description` | String     | Product description.  |
+| `items.quantity` | Integer           | Product quantity. |
+| `items.unit_price` | Decimal           | Unitary price. |
+| `external_reference` | String (256)           | Reference to link an order in Mercado Pago with a shopping order from your system. Usually, is the receipt number.  |
+| `notification_url` | String | URL to which the notification will be send.  |
+
+## 2. Declare your domain URL to Mercado Pago
+
+You must inform your domain URL to your [assigned technical advisor](https://www.mercadopago.com.ar/developers/en/support). Mercado Pago will use it for each transaction. 
+
 > WARNING
->
-> We're sorry
->
-> This page is currently not available in English.
->
->[View documentation in Spanish](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-b/)
+> 
+> IMPORTANT
+> 
+> Your integration won’t work if you don’t complete this step.
+
+
+---
+
+### Next steps
+
+<div>
+<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/advanced-integration/" style="text-decoration:none;color:inherit">       
+<blockquote class="next-step-card next-step-card-left">
+<p class="card-note-title">Advanced Integration<span class="card-status-tag card-status-tag-required">REQUIRED</span></p>
+<p>Learn the options to take your integration to the next level.</p>
+</blockquote>
+</a>    
+<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/" style="text-decoration:none;color:inherit">
+<blockquote class="next-step-card next-step-card-right">
+<p class="card-note-title">Test your integration<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
+<p>Try the most frequent use cases to validate your integration.</p>
+</blockquote>
+</a>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

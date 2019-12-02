@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 # Pagamentos QR modelo atendido
@@ -27,7 +28,7 @@ As características principais são:
 
 Explicamos a você o funcionamento do modelo atendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr_flujo_pdv.es.png)
+>![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.pt.png)
 
 ---
 
