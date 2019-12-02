@@ -270,6 +270,8 @@ preference.Items.Add(
 ```
 ]]]
 
+Consulta la [referencia de la API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/) por más información de cada atributo.
+
 ###Ayuda a tus clientes con sus pagos rechazados
 Es importante que le expliques a tus clientes el motivo de rechazo del pago y qué acción puede hacer para solucionarlo. Tus clientes tendrán toda la información que necesitan y tú tendrás beneficios.
 
