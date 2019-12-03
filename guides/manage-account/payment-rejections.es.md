@@ -39,6 +39,7 @@ Y también, puedes encontrar más información sobre el detalle del pago en la [
 >Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago como `cc_rejected_other_reason`. Para esta caso, es recomendable que se cambie el medio de pago o que se contacte con el banco para resolver el problema. 
 
 ## Pagos rechazados para prevenir fraude
+
 Seguimos en tiempo real las transacciones y tenemos validaciones de seguridad para reconocer pagos que no fueron autorizados por la persona dueña de la cuenta y evitar contracargos o cancelaciones. 
 
 Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, puedes ver el estado del pago en la respuesta de la API como rejected y el motivo de rechazo como `cc_rejected_high_risk`.
@@ -61,8 +62,11 @@ Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, pued
 > Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
 
 ## Recomendaciones para mejorar tu aprobación
+
 Para evitar que un pago real se rechace por no cumplir con las validaciones de seguridad, es necesario sumar toda la información posible a la hora de realizar la operación. 
+
 ### Suma nuestro código de seguridad en tu sitio
+
 Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad para prevenir el fraude. 
 
 Es muy simple. Agrega el script, configura la sección de tu sitio en la que se encuentra ¡y listo! Solo debes reemplazar el valor de `view` por el nombre de la página en la que quieras sumarlo.
@@ -86,6 +90,7 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
 
 ### Detalla toda la información sobre el pago
+
 Para optimizar la validación de seguridad de los pagos y mejorar las aprobaciones, puedes enviarnos los dato del comprador y del ítem para que los analicemos. Por ejemplo, si nos envías esta información, podemos detectar si ese comprador realizó pagos sospechosos en otro momento y prevenirlo.
 
 #### Datos del comprador
@@ -276,6 +281,7 @@ preference.Items.Add(
 Consulta la [referencia de la API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/) por más información de cada atributo.
 
 ### Ayuda a tus clientes con sus pagos rechazados
+
 Es importante que le expliques a tus clientes el motivo de rechazo del pago y qué acción puede hacer para solucionarlo. Tus clientes tendrán toda la información que necesitan y tú tendrás beneficios.
 
 Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación. 
