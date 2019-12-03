@@ -65,19 +65,19 @@ Answer should contain the following message from the order:
 
 ```json
 {
-"collector_id": 178106235,
-"sponsor_id": 334249281,
-"items":[
-{
-"title":" $500.00 SUPER",
-"currency_id": [FAKER][CURRENCY][ACRONYM],
-"description":"$500.00 SUPER",
-"quantity": 1.0,
-"unit_price": 500.00
-}
-],
-"external_reference":"45ea80da",
-"notification_url":"https://www.yoursite.com"
+   "collector_id": 178106235,
+   "sponsor_id": 334249281,
+   "items":[
+      {
+         "title":" $500.00 de SUPER",
+         "currency_id": [FAKER][CURRENCY][ACRONYM],
+         "description":"$500.00 de SUPER",
+         "quantity": 1.0,
+         "unit_price": 500.00
+      }
+   ],
+   "external_reference":"45ea80da",
+   "notification_url":"https://www.tusitio.com"
 }
 ```
 

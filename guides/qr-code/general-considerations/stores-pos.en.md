@@ -42,38 +42,38 @@ To create a store, is importante to declare name, working hours, location and an
 Run the next code to generate a store: 
 
 [[[
-```curl
+ ```curl
 curl -X POST https://api.mercadopago.com/users/$COLLECTOR_ID/stores?access_token=PROD_ACCESS_TOKEN -d
 {  
-"name":"Store 1",
-"business_hours":{  
-"monday":[  
-{  
-"open":"08:00",
-"close":"13:00"
-},
-{  
-"open":"15:00",
-"close":"18:00"
-}
-],
-"tuesday":[  
-{  
-"open":"08:00",
-"close":"18:00"
-}
-]   
-},
-"location":{  
-"street_number":"3039",
-"street_name":"Caseros",
-"city_name":"Belgrano",
-"state_name":"Capital Federal",
-"latitude":-32.8897322,
-"longitude":-68.8443275,
-"reference":"3er Piso"
-},
-"external_id":"STORE001"
+   "name":"Store 1",
+   "business_hours":{  
+      "monday":[  
+         {  
+            "open":"08:00",
+            "close":"13:00"
+         },
+         {  
+            "open":"15:00",
+            "close":"18:00"
+         }
+      ],
+      "tuesday":[  
+         {  
+            "open":"08:00",
+            "close":"18:00"
+         }
+      ]   
+   },
+   "location":{  
+      "street_number":"3039",
+      "street_name":"Caseros",
+      "city_name":"Belgrano",
+      "state_name":"Capital Federal",
+      "latitude":-32.8897322,
+      "longitude":-68.8443275,
+      "reference":"3er Piso"
+   },
+   "external_id":"STORE001"
 }
 ```
 ]]]
@@ -94,15 +94,15 @@ Once you created your stores, the next step is to generate your POS. Some consid
 | `URL`           | Will only be used in the Unattended model.  On this field you’ll declare your web address, to which Mercado Pago will later make requests for available orders. |
 
 [[[
-```curl
+ ```curl
 curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
 {
-"name":"POS 1", 
-"fixed_amount": true,
-"category": 621102,
-"external_store_id": "STORE001",
-"external_id": "POS0001",
-"url": "https://www.mibusiness.com/pay-mp?locationId=6232&positionId=1"
+  "name":"Main Pos", 
+  "fixed_amount": true,
+  "category": 621102,
+  "external_store_id": "STORE001",
+  "external_id": "POS0001",
+  "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
 }
 ```
 ]]]

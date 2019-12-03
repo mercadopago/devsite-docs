@@ -19,23 +19,23 @@ To charge with a QR attended model, you’ll have to create and order and then a
 curl -X POST 
 https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN -d
 {
-"external_reference": "Factura-0001",
-"notification_url": "www.yourserver.com",
-"items" :[{
-"title" : [FAKER][COMMERCE][PRODUCT_NAME],
-"currency_id" : [FAKER][CURRENCY][ACRONYM],
-"unit_price" : 120.00,
-"quantity" : 1,
-"description": "Mercado Pago Product",
-"picture_url": "https://bit.ly/2lCRcEN"
-},
-{
-"title" : [FAKER][COMMERCE][PRODUCT_NAME],
-"currency_id" : [FAKER][CURRENCY][ACRONYM],
-"unit_price" : 100.00,
-"quantity" : 2
-}],
-"sponsor_id": 446566691
+    "external_reference": "Bill-0001",
+    "notification_url": "www.yourserver.com",
+    "items" :[{
+    		   "title" : [FAKER][COMMERCE][PRODUCT_NAME],
+    		   "currency_id" : [FAKER][CURRENCY][ACRONYM],
+    		   "unit_price" : 120.00,
+    	     "quantity" : 1,
+           "description": "Mercado Pago Item",
+           "picture_url": "https://bit.ly/2lCRcEN"
+    		    },
+            {
+    		   "title" : [FAKER][COMMERCE][PRODUCT_NAME],
+    		   "currency_id" : [FAKER][CURRENCY][ACRONYM],
+    		   "unit_price" : 100.00,
+    		   "quantity" : 2
+    		    }],
+    "sponsor_id": 446566691
 }
 ```
 
