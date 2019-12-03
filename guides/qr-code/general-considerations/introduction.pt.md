@@ -48,7 +48,7 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 > 
 > Nota
 > 
-> Esta documentação refere-se à nova versão do QR Code. Para ver a versão anterior, vá para a seção [Código QR antigo](https://www.mercadopago.com.ar/developers/es/guides/qr-code-legacy/introduction/).
+> Esta documentação refere-se à nova versão do QR Code. Para ver a versão anterior, vá para a seção [Código QR antigo](https://www.mercadopago.com.ar/developers/pt/guides/qr-code-legacy/introduction/).
 
 ---
 ### Próximos passos
