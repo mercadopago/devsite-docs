@@ -42,6 +42,14 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 > ![Flujo QR](/images/qr_flujo.es.png)
 
 ---
+
+> NOTE
+> 
+> Nota
+> 
+> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago.com.ar/developers/es/guides/qr-code-legacy/introduction/).
+
+---
 ### Próximos pasos
 
 <div>

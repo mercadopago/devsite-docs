@@ -42,6 +42,14 @@ In order to receive payments with QR, you can **print it and paste it in a visib
 > ![Flujo QR](/images/qr_flujo.en.png)
 
 ---
+
+> NOTE
+> 
+> Note
+> 
+> This documentation refers to the new version of QR Code. To see the previous version, go to the [Old QR Code section](https://www.mercadopago.com.ar/developers/en/guides/qr-code-legacy/introduction/).
+
+---
 ### Next steps
 
 <div>
