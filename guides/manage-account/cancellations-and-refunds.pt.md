@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Devoluções e cancelamentos
 
 Existem diferentes situações que podem dar origem ao cancelamento de uma venda:
@@ -71,7 +75,10 @@ curl -X PUT \
 ----[mlm]----
 É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
 ------------
-----[mlc, mlu, mpe, mco]----
+----[mlc]----
+É possível devolver um pagamento dentro de **330 dias** a partir de sua data de aprovação.
+------------
+----[mlu, mpe, mco]----
 É possível devolver um pagamento dentro de **90 dias** a partir de sua data de aprovação.
 ------------
 

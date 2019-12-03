@@ -1,17 +1,8 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
 
 # Generación por API
 
 
-Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero Disponible las veces que quieras, tanto de forma manual como de forma programada.
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero disponible las veces que quieras.
 
 
 ## Configurar tus reportes
@@ -122,7 +113,6 @@ curl -X POST \
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -144,7 +134,6 @@ $data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -170,7 +159,6 @@ String body = "{
                 \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
                 \\"extended\\": true,
-                \\"schedule\\":true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -203,7 +191,6 @@ data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
         }'
 
@@ -223,7 +210,6 @@ var dataString = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -255,7 +241,7 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
     "detailed": true,
-    "scheduled": true,
+    "scheduled": false,
     "execute_after_withdrawal": true,
     "v1": {
         "language": null,
@@ -287,7 +273,6 @@ curl -X PUT \
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -309,7 +294,6 @@ $data = '{
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -335,7 +319,6 @@ String body = "{
                 \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
                 \\"extended\\": true,
-                \\"schedule\\":true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -368,7 +351,6 @@ data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
 
         }'
@@ -389,7 +371,6 @@ var dataString = '{
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -422,7 +403,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
     "detailed": true,
-    "scheduled": true,
+    "scheduled": false,
     "execute_after_withdrawal": true,
     "v1": {
         "language": null,
@@ -462,7 +443,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias:
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 

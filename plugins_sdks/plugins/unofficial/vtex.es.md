@@ -318,7 +318,7 @@ Uruguay: Oca.
 ### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre                   | Descripción              | Medio de pago |       Bines {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pago en adquiriente (opcional) |
-|--------------------------|--------------------------|---------------|:-------------------------------------------------------:|------------------------------------------|
+|----|-----|-----|:------:|------|
 | Argencard                | Argencard                | Mastercard    | 501105-501105                                           | argencard                                |
 | Cencosud                 | Cencosud                 | Mastercard    | 603493-603493                                           | cencosud                                 |
 | CMR                      | CMR                      | Mastercard    | 557039-557039                                           | cmr                                      |
@@ -333,7 +333,7 @@ Uruguay: Oca.
 ### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre | Descripción | Medio de pago |                                   Bines {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pago en adquiriente (opcional) |
-|--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
+|----|---|---|:-----:|-----|
 | Presto | Presto      | Mastercard    | 920000-920099                                                                                                   | presto                                   |
 | Magna  | Magna       | Mastercard    | 568000-568099                                                                                                   | magna                                    |
 | CMR    | CMR         | Mastercard    | 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984 | cmr                                      |
@@ -344,7 +344,7 @@ Uruguay: Oca.
 ### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre  | Descripción | Medio de pago | Bines {min}-{max},{min}-{max},{bin1},{bin2} | Código de pago en adquiriente (opcional) |
-|---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
+|----|----|---|:---:|-----|
 | Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
 
 ------------
@@ -353,7 +353,7 @@ Uruguay: Oca.
 ### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre | Descripción | Medio de pago |                     Bines {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pago en adquiriente (opcional) |
-|--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
+|---|---|--------|:-----:|-----|
 | OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
 
 ------------
@@ -521,7 +521,7 @@ Los datos más significativos son los siguientes:
 - `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
 - `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
 - `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Codigo de comercio (solo para Gateway).
+- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
 
 Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
 

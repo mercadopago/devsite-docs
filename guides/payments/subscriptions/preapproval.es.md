@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Pagos sin CVV
 
 >INFO
@@ -12,8 +16,14 @@
 > B. En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
 >
 > C. Pre-Approval solo está disponible a través del checkout personalizado de Mercado Pago o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
+
+<br/>
+
+> NOTE
 >
->(*) NOTA: En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: “MERPAG*<brand_name>”. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como MERPAG*<brand_name>” donde <Brand_name> se configura desde la cuenta de Mercado Pago del vendedor: Menu -> Configuracion > Nombre de mi negocio.
+> Nota
+>
+> En el caso de tarjetas de crédito Master y Amex, en la tarjeta de crédito aparecerá como: “MERPAG*<brand_name>”. Por lo que para estos medios de pago podrán comunicar: “En tu resumen verás el cargo como MERPAG*<brand_name>” donde <Brand_name> se configura desde la cuenta de Mercado Pago del vendedor: Menu -> Configuracion > Nombre de mi negocio.
 
 Con los pagos sin cvv, se podrán realizar cobros recurrentes con Mercado Pago teniendo la libertad de amoldar la solución de la forma más óptima para tu negocio.
 
@@ -38,10 +48,9 @@ Para conocer los datos de tu cliente, podrás obtenerlo de la siguiente forma:
 [[[
 ```php
 <?php
-require_once ('mercadopago.php'); $mp = new MP ("TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-
-186597721"); $filters = array ("email" => "your.payer@email"); $customer = $mp->get
-("/v1/customers/search", $filters);
+require_once ('mercadopago.php'); $mp = new MP ("ENV_ACCESS_TOKEN"); 
+$filters = array ("email" => "your.payer@email"); 
+$customer = $mp->get("/v1/customers/search", $filters);
 print_r ($customer);
 ?>
 ```
@@ -55,9 +64,7 @@ Una vez hayas obtenido el id de tu cliente, puedes buscar la tarjeta de la sigui
 ```php
 <?php
 require_once ('mercadopago.php');
-$mp = new MP ("TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-
-186597721");
+$mp = new MP ("ENV_ACCESS_TOKEN");
 $cards = $mp->get ("/v1/customers/[CUSTOMER_ID]/cards");
 print_r ($cards["response"]);
 ?>
@@ -70,9 +77,7 @@ print_r ($cards["response"]);
 ```php
 <?php
 require_once ('mercadopago.php');
-$mp = new MP ("TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-
-186597721");
+$mp = new MP ("ENV_ACCESS_TOKEN");
 $card_token = $mp->post ("/v1/card_tokens", array("card_id" => "cardId"));
 print_r ($card_token);
 ?>
@@ -88,8 +93,7 @@ Al estar usando un token creado con el card_id, deberás realizar el posteo del 
 ```php
 <?php
 require_once ('mercadopago.php');
-$mp = new MP('TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-186597721');
+$mp = new MP('ENV_ACCESS_TOKEN');
 $payment_data = array(
 "transaction_amount'" => 100,
 "token'" => "ff8080814c11e237014c1ff593b57b4d",

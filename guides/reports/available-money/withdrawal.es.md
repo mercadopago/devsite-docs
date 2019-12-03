@@ -1,17 +1,8 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
 
 # Generación por retiro
 
 
-Puedes crear un reporte de Dinero Disponible de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API.
+Puedes crear un reporte de Dinero disponible de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API.
 
 ## Generar desde el panel de Mercado Pago
 
@@ -26,14 +17,14 @@ Genera tus reportes cada vez que quieras consultar un retiro de dinero
 1. Desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de *Reportes*.
 1. Ve a tus [reportes de Dinero Disponible](https://www.mercadopago.com.ar/balance/reports?page=1#!/bank-report) y haz click en *Crear reporte*.
 1. Ubica tus retiros por **período de tiempo** y selecciona el retiro quieras consultar.
-1. ¡Y listo! Vas a ver tu reporte *En Preparación*.
 
+<span style="margin-left:40px">¡Y listo! Vas a ver tu reporte *En Preparación*.</span>
 
 > NOTE
 >
 > Nota
 >
-> Ten a mano el [Glosario](https://www.mercadopago.com/developers/es/guides/reports/available-money/glossary/) del reporte de Dinero Disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ## Generar por API
@@ -204,7 +195,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Importante
 >
-> La generación por retiro es una opción más de generación del reporte de Dinero Disponible. No modifica la generación que configures desde tu panel de Mercado Pago o vía API.
+> La generación por retiro es una opción más de generación del reporte de Dinero disponible. No modifica la generación que configures desde tu panel de Mercado Pago o vía API.
 
 <hr/>
 

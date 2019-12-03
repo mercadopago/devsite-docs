@@ -103,8 +103,9 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 > NOTE
 >
 > IMPORTANT
-> * Your Mercado Pago account needs to be of the **Seller** type.
->The submitted product must have its dimensions (width, height, length and weight) properly configured and within the rules and limits supported by the specified country.
+>
+> Your Mercado Pago account needs to be of the **Seller** type.
+> The submitted product must have its dimensions (width, height, length and weight) properly configured and within the rules and limits supported by the specified country.
 
 2) To enable the module, simply activate it by accessing the Prestashopp administrative panel in **IMPROVEMENTS -> Modules -> Modules and Services** and clicking **Configure** in the Mercado Pago module:
 

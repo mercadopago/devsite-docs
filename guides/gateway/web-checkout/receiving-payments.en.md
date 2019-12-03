@@ -27,7 +27,7 @@ There is only one necessary change to support the **Gateway Model** in the Smart
   $item->quantity = 1;
   $item->unit_price = 100.0;
   $preference->items = array($item);
-  $processing_modes = array('gateway');
+  $preference->$processing_modes = array('gateway');
   $preference->save();
 ?>
 ```
@@ -39,4 +39,4 @@ Done! Your **Smart Checkout** is now working in the Gateway Model.
 
 ### Next steps
 
-* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/reconciliation/)
+* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/reconciliation/)

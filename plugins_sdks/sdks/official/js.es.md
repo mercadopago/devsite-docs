@@ -175,7 +175,7 @@ Ejemplo de respuesta:
 
 ##Obtén los emisores de la tarjeta
 
-Algunas tarjetas requieren que envíes información adicional del emisor. Para esto, el SDK de MecadoPago provee una función que te permite obtener los emisores de una tarjeta.
+Algunas tarjetas requieren que envíes información adicional del emisor. Para esto, el SDK de MercadoPago provee una función que te permite obtener los emisores de una tarjeta.
 ```javascript
 Mercadopago.getIssuers(paymentMethodId, issuersHandler);
 ```
@@ -245,7 +245,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 1,
         "installment_rate": 0,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 0,
@@ -257,7 +257,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 3,
         "installment_rate": 0,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
           "recommended_installment"
         ],
@@ -270,7 +270,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 6,
         "installment_rate": 26.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 3,
@@ -282,7 +282,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 9,
         "installment_rate": 42.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 5,
@@ -294,7 +294,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 12,
         "installment_rate": 52.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 6,

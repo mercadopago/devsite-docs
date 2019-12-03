@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Credentials
 
 The Mercado Pago has two types of credential pairs, **_CLIENT_ID_** | **_CLIENT_SECRET_** and **_PUBLIC_KEY_** | **_ACCESS_TOKEN_**. These credentials serve as a kind of personal key to create your payment method and integrate the Mercado Pago with your online store.

@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Refunds and cancellations
 
 There are different situations in which you may want to cancel a sale:
@@ -70,7 +74,10 @@ You can refund a payment within **120 days** after it was approved.
 ----[mlm]----
 You can refund a payment within **180 days** after it was approved.
 ------------
-----[mlc, mlu, mpe, mco]----
+----[mlc]----
+You can refund a payment within **330 days** after it was approved.
+------------
+----[mlu, mpe, mco]----
 You can refund a payment within **90 days** after it was approved.
 ------------
 

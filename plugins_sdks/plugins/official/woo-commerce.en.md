@@ -110,7 +110,7 @@ You must make a decision to activate the different shopping experiences:
 
 Now check the options that all the checkouts have in common and configure each field, below you will find the detail of each one:
 
-|           |                                     | Checkout Básico para todos los medios de pago | Checkout Personalizado para pagos online | Checkout Personalizado para pagos en efectivo |
+|           |                                     | Basic Checkout for all payments methods | Custom Checkout for online payments | Custom Checkout for cash payments |
 |-----------|-------------------------------------|-----------------------------------------------|------------------------------------------|-----------------------------------------------|
 | Basic     | Activate CHO                        | ✔                                             | ✔                                        | ✔                                             |
 |           | Payments method On                  | ✔                                             | ✔                                        |                                               |

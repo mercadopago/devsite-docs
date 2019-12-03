@@ -37,7 +37,7 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Smart C
   $item->quantity = 1;
   $item->unit_price = 100.0;
   $preference->items = array($item);
-  $processing_modes = array('gateway');
+  $preference->$processing_modes = array('gateway');
   $preference->save();
 ?>
 ```
@@ -49,4 +49,4 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Smart C
 
 ### Próximos pasos
 
-* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/reconciliation)
+* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/reconciliation)

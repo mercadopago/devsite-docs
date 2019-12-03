@@ -2,9 +2,9 @@
 
 Esta libreria provee una set de clases y metodos para interactuar con el API de Mercado Pago.
 
-### Versiones de PHP Soportadas:
+### Versiones Soportadas:
 
-El SDK soporta PHP 5.5.0 o mayor
+Nuesto SDK es compatible con las versiones de PHP 5.6 o superior.
 
 ### Instalación 
 
@@ -18,8 +18,6 @@ El SDK soporta PHP 5.5.0 o mayor
 
 4. Esto es todo, ya tienes el SDK de Mercado Pago instalado.
 
-![installation-demo](images/sdk-php-installation-demo.svg)
-
 ### Inicio Rápido
 
 1. Cargar el archivo autoload.php para cargar las librerias instaladas en tu proyecto.
@@ -32,7 +30,7 @@ El SDK soporta PHP 5.5.0 o mayor
   
   Existen 2 tipos de credenciales:
 
-  * **Para el Checkout Web:**
+  * **Para el Smart Checkout:**
     ```php
     MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
     MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");

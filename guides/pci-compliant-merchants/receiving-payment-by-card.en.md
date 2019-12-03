@@ -250,13 +250,13 @@ Our SDKs have features you can use to capture this information.
 
 ```android
 ===
-The [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) class will collect both device and fingerprint information.
+The [Device](https://github.com/mercadopago/px-android/blob/master/px-services/src/main/java/com/mercadopago/android/px/model/Device.java) class will collect both device and fingerprint information.
 ===
 new Device(context);
 ```
 ```swift
 ===
-The [Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) class will collect both device and fingerprint information.
+The [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) class will collect both device and fingerprint information.
 ===
 Device()
 ```

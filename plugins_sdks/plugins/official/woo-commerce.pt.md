@@ -88,7 +88,7 @@ Insira as informações básicas sobre sua empresa para começar a configurar o 
 * Selecione a qual categoria seus produtos pertencem.
 * Preencha um número ou prefixo para identificar os pedidos e pagamentos da sua loja.
 
-> **Avanzado:** edite os ajustes avançados quando quiser configurar as [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) e registre informações sobre as transações entre WooCommerce e o Mercado Pago em nossos arquivos de troca com os modos de debug e log. Se é você quem integra o módulo, isso será útil caso haja problemas nos pagamentos com o Mercado Pago.
+> **Avançado:** edite os ajustes avançados quando quiser configurar as [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) e registre informações sobre as transações entre WooCommerce e o Mercado Pago em nossos arquivos de troca com os modos de debug e log. Se é você quem integra o módulo, isso será útil caso haja problemas nos pagamentos com o Mercado Pago.
 
 
 ## Receber pagamentos
@@ -110,7 +110,7 @@ Você deve tomar uma decisão para ativar as diferentes experiências de compra:
 
 Agora, revise as opções que todos os checkouts têm e configure cada campo, abaixo você encontrará o detalhe de cada um:
 
-|           |                                   | Checkout Básico para todos los medios de pago | Checkout Personalizado para pagos online | Checkout Personalizado para pagos en efectivo |
+|           |                                   | Checkout Básico para todos os meios de pagamento | Checkout Personalizado para pagamentos online | Checkout Personalizado para pagamentos em dinheiro |
 |-----------|-----------------------------------|-----------------------------------------------|------------------------------------------|-----------------------------------------------|
 | Básicas   | Ativar CHO                        | ✔                                             | ✔                                        | ✔                                             |
 |           | Meios de pagamento On             | ✔                                             | ✔                                        |                                               |
@@ -191,7 +191,7 @@ Você poderá ativar ou desativar este modo por aqui:
 
 > Por padrão, desativamos o Produção. Ative o Produção quando tiver a conta homologada e verifique se o fluxo de compra e o recebimento dos pagamentos de teste funcionam bem.
 
-#### **3. Ir a producción (‘Go live!’)**
+#### **3. Ir para produção (‘Go live!’)**
 
 Ative o modo Produção somente quando estiver pronto para vender. Você poderá fazer isso por aqui:
 

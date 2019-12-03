@@ -237,7 +237,7 @@ For more information, go to [Refunds](https://www.mercadopago.com.ar/developers/
 
 ## Integrate Webpay (Chile)
 
-Webpay is one of the payment methods available in Chile. In order to process payments with Webpay, you must send the **RUT**, **entity type**, **IP address** of the buyer, and the **financial institution** that will process the payment.
+Webpay is one of the payment methods available in Chile. In order to process payments with Webpay, you must send the **IP address** of the buyer, the **financial institution** that will process the payment and, optionally, the **RUT** and the **entity type**.
 
 > NOTE
 >

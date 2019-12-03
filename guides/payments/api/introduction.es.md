@@ -40,7 +40,7 @@ Una vez que hayas probado tu aplicación en Modo _Sandbox_, debes completar el p
 * Usar el atributo `data_checkout` en las etiquetas de `input`para manejar los datos en forma segura y evitar que lleguen a tu servidor. Asegurate de NO incluir el atributo `name` en éstas etiquetas.
 * Contar con certificado SSL para asegurar la navegación segura y que el formulario de pagos es enviado mediante HTTPS.
 * Comunicar correctamente el resultado del pago al usuario para intentar el recupero del cobro en caso de rechazo. Para esto utiliza los [códigos de respuesta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
-* Comunicar las [promociones y posibilidades de financiación](https://www.mercadopago.com.ar/promociones) ofrecidas por Mercado Pago. Puedes incluir nuestros [banners](https://www.mercadopago.com/mla/com.mercadopago.web.landing.LandingController?id=banners#!institucionales) institucionales.
+* Comunicar las [promociones y posibilidades de financiación](https://www.mercadopago.com.ar/promociones) ofrecidas por Mercado Pago. Puedes incluir nuestros [banners](https://www.mercadopago.com.ar/developers/es/guides/banners/introduction/) institucionales.
 
 
 > Cuando hayas cumplido con los requisitos, debes completar el formulario **Quiero salir a producción** que se encuentra en la sección de tus [credenciales]([FAKER][CREDENTIALS][URL])

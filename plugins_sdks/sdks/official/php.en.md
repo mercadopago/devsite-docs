@@ -2,9 +2,9 @@
 
 This library provides developers with a simple set of bindings to the Mercado Pago API.
 
-### PHP Versions Supported:
+### Supported PHP Versions:
 
-The SDK supports PHP 5.5.0 or major
+This SDK supports PHP version 5.6 or newer.
 
 ### Installation
 

@@ -111,8 +111,8 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 >
 > IMPORTANTE
 >
-> * Sua conta do Mercado Pago precisa ser do tipo **Vendedor**.
-> * O produto enviado deve ter suas dimensões (largura, altura, comprimento e peso) adequadamente configurados e dentro das [regras e limites suportados](https://www.correios.com.br/a-a-z/limites-de-dimensoes-e-peso) pelo país especificado.
+> Sua conta do Mercado Pago precisa ser do tipo **Vendedor**. 
+> O produto enviado deve ter suas dimensões (largura, altura, comprimento e peso) adequadamente configurados e dentro das [regras e limites suportados](https://www.correios.com.br/a-a-z/limites-de-dimensoes-e-peso) pelo país especificado.
 
 2) Para habilitar no módulo, você precisa apenas ativa-lo acessando o painel administrativo do Prestashopp em **MELHORIAS -> Módulos -> Módulos e Serviços** e clicando em **Configurar** no módulo do Mercado Pago:
 

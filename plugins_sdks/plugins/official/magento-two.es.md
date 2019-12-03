@@ -38,7 +38,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 
 3) Ejecute el comando para limpiar el cache de Magento:
 
-> bin/magento setup:upgrade
+> bin/magento cache:clean
 
 4) Cuando la tienda está en modo **productivo**, es necesario generar los archivos static nuevamente:
 

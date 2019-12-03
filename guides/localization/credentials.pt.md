@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Credenciais
 
 O Mercado Pago possui dois tipos de pares de credenciais, **CLIENT_ID** | **CLIENT_SECRET** e **PUBLIC_KEY** | **ACCESS_TOKEN**. Essas credenciais servem como um tipo de chave pessoal para que você crie seu método de pagamento e integre o Mercado Pago com sua loja virtual. Segue abaixo procedimento para obtenção das Credenciais.
