@@ -278,7 +278,7 @@ preference.Items.Add(
 ```
 ]]]
 
-Consulta la [referencia de la API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/) por más información de cada atributo.
+Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
 
 ### Ayuda a tus clientes con sus pagos rechazados
 
