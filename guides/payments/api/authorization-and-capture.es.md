@@ -139,7 +139,7 @@ Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta 
 >
 > * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento será cancelada.
 > * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
-------------
+-------------
 ----[mpe]----
 > WARNING
 >
@@ -147,7 +147,7 @@ Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta 
 >
 > * La reserva tendrá una validez de 7 días para Visa y 28 días para Mastercad, Amex y Diners. Si no la capturas hasta ese momento será cancelada.
 > * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
-------------
+-------------
 ----[mlb]----
 > WARNING
 >
@@ -155,7 +155,7 @@ Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta 
 >
 > * La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento será cancelada.
 > * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
-------------
+-------------
 
 ## Capturar un pago
 
