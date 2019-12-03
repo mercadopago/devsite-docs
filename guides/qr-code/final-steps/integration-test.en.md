@@ -81,6 +81,11 @@ To test **different payments results**, complete the data you want in the cardho
 - SECU: Rejected due to invalid CVV. 
 - EXPI: Rejected due to expiration date problem. 
 
+> NOTE
+> 
+> Note
+> 
+> Here you can find more [test cards](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards/).
 
 ## Test payment process
 

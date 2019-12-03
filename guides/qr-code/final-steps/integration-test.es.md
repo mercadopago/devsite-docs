@@ -81,6 +81,12 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 - SECU: Rechazado por código de seguridad inválido.
 - EXPI: Rechazado por problema con la fecha de expiración.
 
+> NOTE
+> 
+> Nota
+> 
+> Aquí podras encontrar mas [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards/). 
+
 ## Prueba el flujo de pago
 
 ### 1. Con tu usuario vendedor, asigna una orden a un punto de venta. 

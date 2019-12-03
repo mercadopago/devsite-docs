@@ -81,6 +81,12 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 - SECU: Recusado por código de segurança inválido.
 - EXPI: Recusado por problema com a data de validade.
 
+> NOTE
+> 
+> Nota
+> 
+> Aqui você encontra mais [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards/).
+
 ## Teste o fluxo de pagamento
 
 ### 1. Com seu usuário vendedor, atribui um pedido a um ponto de venda. 
