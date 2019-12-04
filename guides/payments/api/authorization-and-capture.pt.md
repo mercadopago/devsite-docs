@@ -139,7 +139,7 @@ Tenha em mente que este valor não poderá ser utilizado pelo comprador enquanto
 >
 > * A reserva será válida por 5 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
 > * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
--------------
+------------
 ----[mla]----
 >WARNING
 >
@@ -147,7 +147,7 @@ Tenha em mente que este valor não poderá ser utilizado pelo comprador enquanto
 >
 > * A reserva será válida por 7 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
 > * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
--------------
+------------
 ----[mpe]----
 >WARNING
 >
@@ -155,7 +155,7 @@ Tenha em mente que este valor não poderá ser utilizado pelo comprador enquanto
 >
 > * A reserva será válida por 7 dias para Visa e 28 dias para Mastercard, Amex e Diners. Se não efetuar a captura dentro desse prazo, ela será cancelada.
 > * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
-------------
+-----------
 
 ## Capture um pagamento
 
