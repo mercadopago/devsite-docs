@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 
@@ -39,6 +40,14 @@ El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te perm
 Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un lugar visible o mostrarlo en tu dispositivo móvil** y cobrar desde la app de Mercado Pago.
 
 > ![Flujo QR](/images/qr_flujo.es.png)
+
+---
+
+> NOTE
+> 
+> Nota
+> 
+> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago.com.ar/developers/es/guides/qr-code-legacy/introduction/).
 
 ---
 ### Próximos pasos
