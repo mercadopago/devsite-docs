@@ -20,12 +20,12 @@ Después del 12 de diciembre del 2019, la versión 0 dejara de tener soporte.
 
 El apagado afecta a los siguientes recursos:
 
-| Uso                     | Método | URI del Recurso deprecado                |
-|-------------------------|--------|------------------------------------------|
-| Pago                    | `POST` | /checkout/custom/create_payment          |
-| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods         |
-| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods/search  |
-| Tarjetas                | `GET`  | /checkout/custom/card_issuers            |
+| Uso                        | Método | URI del Recurso deprecado                |
+|----------------------------|--------|------------------------------------------|
+| Pago                       | `POST` | /checkout/custom/create_payment          |
+| Medio de Pagos             | `GET`  | /checkout/custom/payment_methods         |
+| Búsqueda de Medios de Pagos| `GET`  | /checkout/custom/payment_methods/search  |
+| Emisores                   | `GET`  | /checkout/custom/card_issuers            |
 
 En [este artículo](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction) vas a encontrar los recursos equivalentes.
 

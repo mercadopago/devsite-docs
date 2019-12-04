@@ -14,20 +14,20 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 No Mercado Pago, sempre buscamos otimizar nossa plataforma, oferecendo a mais alta eficiência e segurança no processamento de pagamentos.
 
-Nesta ocasião, estamos trabalhando no encerramento da versão 0 da API do Checkout Custom para manter os mais altos padrões de qualidade.
+Nesta ocasião, estamos trabalhando na descontinuação da versão 0 da API do Checkout Custom para manter os mais altos padrões de qualidade.
 
 Após 12 de dezembro de 2019, a versão 0 não será mais suportada.
 
-O desligamento afeta os seguintes recursos:
+O desligamento afetará os seguintes recursos:
 
-| Usar                    | Método | URI do Recurso deprecado                 |
-|-------------------------|--------|------------------------------------------|
-| Pagamento               | `POST` | /checkout/custom/create_payment          |
-| Meio de Pagamento       | `GET`  | /checkout/custom/payment_methods         |
-| Meio de Pagamento       | `GET`  | /checkout/custom/payment_methods/search  |
-| cartões                 | `GET`  | /checkout/custom/card_issuers            |
+| Serviço                     | Método | URI do Recurso depreciado                |
+|-----------------------------|--------|------------------------------------------|
+| Pagamento                   | `POST` | /checkout/custom/create_payment          |
+| Meio de Pagamento           | `GET`  | /checkout/custom/payment_methods         |
+| Busca de Meios de Pagamentos| `GET`  | /checkout/custom/payment_methods/search  |
+| Emissores                   | `GET`  | /checkout/custom/card_issuers            |
 
-[Neste artigo](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), você encontrará os recursos equivalentes.
+[Neste link](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), você encontrará os recursos que vão substituir os que estão sendo depreciados.
 
 ## 24 de novembro de 2019
 
