@@ -10,6 +10,25 @@ Each release note describes the new changes applying to a version. This changes 
 
 - **Documentation updates:** Guides, references and tutorials to help you monetize your business by integrating Mercado Pago.
 
+## December 5th, 2019
+
+At Mercado Pago we always try to optimize our platform offering the highest efficiency and security in payment processing.
+
+We are currently working on shutting down our Custom Checkout API version 0 in order to maintain the highest quality standards.
+
+After December 12th, 2019 version 0 will stop having support.
+
+The shutdown will involve the following resources:
+
+| Uso                     | Método | URI del Recurso deprecado                |
+|-------------------------|--------|------------------------------------------|
+| Pago                    | `POST` | /checkout/custom/create_payment          |
+| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods         |
+| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods/search  |
+| Tarjetas                | `GET`  | /checkout/custom/card_issuers            |
+
+En [este artículo](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction/) vas a encontrar los recursos equivalentes.
+
 ## November 25, 2019
 
 To meet the highest security standards, we seek to always be updated. Therefore, the old version of **IPN notifications (Instant Payment Notification)** will no longer be available from November 29.
