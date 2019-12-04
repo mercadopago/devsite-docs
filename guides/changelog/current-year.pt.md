@@ -10,6 +10,25 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 - **Atualizações na documentação:** Guias, referências e tutoriais para te ajudar a monetizar seu negócio integrando Mercado Pago.
 
+## 5 de dezembro de 2019
+
+No Mercado Pago, sempre buscamos otimizar nossa plataforma, oferecendo a mais alta eficiência e segurança no processamento de pagamentos.
+
+Nesta ocasião, estamos trabalhando na descontinuação da versão 0 da API do Checkout Custom para manter os mais altos padrões de qualidade.
+
+Após 12 de dezembro de 2019, a versão 0 não será mais suportada.
+
+O desligamento afetará os seguintes recursos:
+
+| Serviço                     | Método | URI do Recurso depreciado                |
+|-----------------------------|--------|------------------------------------------|
+| Pagamento                   | `POST` | /checkout/custom/create_payment          |
+| Meio de Pagamento           | `GET`  | /checkout/custom/payment_methods         |
+| Busca de Meios de Pagamentos| `GET`  | /checkout/custom/payment_methods/search  |
+| Emissores                   | `GET`  | /checkout/custom/card_issuers            |
+
+[Neste link](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), você encontrará os recursos que vão substituir os que estão sendo depreciados.
+
 ## 24 de novembro de 2019
 
 Para atender aos mais altos padrões de segurança, buscamos estar sempre atualizados. Portanto, a versão antiga das **notificações IPN (Notificação de pagamento instantâneo)** não estará mais disponível a partir do dia 9 de dezembro.
