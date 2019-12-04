@@ -86,6 +86,7 @@ O próximo passo é capturar os dados do cartão. Para isso, é importante possu
           </li>
         </ul>
         <input type="hidden" name="amount" id="amount"/>
+        <input type="hidden" name="description"/>
         <input type="hidden" name="paymentMethodId" />
         <input type="submit" value="Pay!" />
     </fieldset>
@@ -170,6 +171,12 @@ function setPaymentMethodInfo(status, response) {
 
             form.appendChild(input);
         }
+
+        Mercadopago.getInstallments({
+            "bin": getBin(),
+            "amount": parseFloat(document.querySelector('#amount').value),
+        }, setInstallmentInfo);
+
     } else {
         alert(`payment method info error: ${response}`);  
     }
@@ -387,11 +394,29 @@ console.log(payment.Status);
 
 > Os campos obrigatórios para enviar são  `token`, `transaction_amount`, `payment_method_id` e o `payer.email`.
 
+Resposta:
+
+```json
+{
+    "status": "approved",
+    "status_detail": "accredited",
+    "id": 3055677,
+    "date_approved": "2019-02-23T00:01:10.000-04:00",
+    "payer": {
+        ...
+    },
+    "payment_method_id": "visa",
+    "payment_type_id": "credit_card",
+    "refunds": [],
+    ...
+}
+```
+
 > NOTE
 >
 > Nota
 >
-> Você pode consultar mais informações sobre [manipulação de respostas](#manipulação-de-respostas).
+> Você pode consultar mais informações sobre [manipulação de respostas](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses).
 
 ## Receba um pagamento em parcelas
 
@@ -402,11 +427,6 @@ O campo installments corresponde ao número de parcelas selecionado pelo comprad
 Para obter as parcelas disponíveis:
 
 ```javascript
-
-Mercadopago.getInstallments({
-"bin": getBin(),
-"amount": parseFloat(document.querySelector('#amount').value),
-}, setInstallmentInfo);
 
 function setInstallmentInfo(status, response) {
         var selectorInstallments = document.querySelector("#installments"),
