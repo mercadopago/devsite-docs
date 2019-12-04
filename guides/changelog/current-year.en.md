@@ -20,14 +20,14 @@ After December 12th, 2019 version 0 will stop having support.
 
 The shutdown will involve the following resources:
 
-| Uso                     | Método | URI del Recurso deprecado                |
+| Use                     | Method | Deprecated resource URI                  |
 |-------------------------|--------|------------------------------------------|
-| Pago                    | `POST` | /checkout/custom/create_payment          |
-| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods         |
-| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods/search  |
-| Tarjetas                | `GET`  | /checkout/custom/card_issuers            |
+| Payment                 | `POST` | /checkout/custom/create_payment          |
+| Payment Methods         | `GET`  | /checkout/custom/payment_methods         |
+| Payment Methods         | `GET`  | /checkout/custom/payment_methods/search  |
+| Card issuers            | `GET`  | /checkout/custom/card_issuers            |
 
-En [este artículo](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction/) vas a encontrar los recursos equivalentes.
+You can find the equivalent resources in [this article](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction/).
 
 ## November 25, 2019
 

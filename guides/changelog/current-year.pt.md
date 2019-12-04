@@ -20,12 +20,12 @@ Após 12 de dezembro de 2019, a versão 0 não será mais suportada.
 
 O desligamento afeta os seguintes recursos:
 
-| Usar                    | Método | URI del Recurso descontinuado                |
+| Usar                    | Método | URI do Recurso deprecado                 |
 |-------------------------|--------|------------------------------------------|
-| Pago                    | `POST` | /checkout/custom/create_payment          |
-| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods         |
-| Medio de Pagos          | `GET`  | /checkout/custom/payment_methods/search  |
-| Tarjetas                | `GET`  | /checkout/custom/card_issuers            |
+| Pagamento               | `POST` | /checkout/custom/create_payment          |
+| Meio de Pagamento       | `GET`  | /checkout/custom/payment_methods         |
+| Meio de Pagamento       | `GET`  | /checkout/custom/payment_methods/search  |
+| cartões                 | `GET`  | /checkout/custom/card_issuers            |
 
 [Neste artigo](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), você encontrará os recursos equivalentes.
 
