@@ -139,7 +139,7 @@ Keep in mind that the money is frozen in the buyer’s card until you decide to 
 >
 > * The authorization hold is valid for 7 days days. If you do not capture it until that date, it will be cancelled.
 > * The authorization may also be rejected or remain pending, just like any other regular payment.
--------------
+------------
 ----[mpe]----
 > WARNING
 >
@@ -147,7 +147,7 @@ Keep in mind that the money is frozen in the buyer’s card until you decide to 
 >
 > * The authorization hold is valid for 7 days for Visa and 28 days for Mastercard, Amex and Diners. If you do not capture it until that date, it will be cancelled.
 > * The authorization may also be rejected or remain pending, just like any other regular payment.
--------------
+------------
 ----[mlb]----
 > WARNING
 >
@@ -155,7 +155,7 @@ Keep in mind that the money is frozen in the buyer’s card until you decide to 
 >
 > * The authorization hold is valid for 5 days. If you do not capture it until that date, it will be cancelled.
 > * The authorization may also be rejected or remain pending, just like any other regular payment.
--------------
+------------
 
 ## Capture a payment
 
