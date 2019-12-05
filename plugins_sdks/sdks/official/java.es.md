@@ -9,6 +9,7 @@ Nuesto SDK es compatible con las versiones de Java 8 o superior.
 ## Instalación
 
 ### Usando Maven
+
 1. Agregar la dependencia al archivo pom.xml
 
   ```xml
@@ -24,12 +25,6 @@ Nuesto SDK es compatible con las versiones de Java 8 o superior.
   ```
 
 2. Ejecutar `mvn install` y es todo, ahora tienes el SDK de Mercado Pago instalado.
-
-
-
-### Compatibilidad
-
-Nuestro SDK es compatible con la versión 6 de Java o superior. De todas formas, se recomienda utilizar la versión 8 o superior.
 
 
 
