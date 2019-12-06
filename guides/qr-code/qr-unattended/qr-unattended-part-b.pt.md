@@ -100,7 +100,7 @@ Deve utilizar o campo external_reference para poder identificar o pedido em seu 
 
 ## 2. Declarar o URL de seu domínio a Mercado Pago
 
-Deve informar ao seu [assessor técnico atribuído](https://www.mercadopago.com.br/developers/pt/support/), o URL base de seu domínio ao qual Mercado Pago consultará por cada transação. 
+Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao qual Mercado Pago consultará por cada transação. 
 
 > WARNING
 > 
