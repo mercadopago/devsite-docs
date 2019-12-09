@@ -112,24 +112,20 @@ Una vez creada la caja, podremos ver en el “Response” los links a distintos 
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integrar QR modelo atendido<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Si en tu proceso de venta, es necesario que participe un operador, revisa este modelo!</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integrar QR modelo desatendido<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Si puede concretarse la venta solamente con la acción del cliente, este es tu modelo!</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Integrar QR modelo atendido
+>
+> Si en tu proceso de venta, es necesario que participe un operador, revisa este modelo!
+>
+> [Integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/)
+
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Integrar QR modelo desatendido
+>
+> Si puede concretarse la venta solamente con la acción del cliente, este es tu modelo!
+>
+> [Integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/)

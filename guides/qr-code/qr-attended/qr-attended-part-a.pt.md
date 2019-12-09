@@ -68,10 +68,12 @@ Explicamos a você o funcionamento do modelo atendido:
  <p>Conheça passo a passo como integrar este modelo.</p>
 </blockquote>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integrar o modelo QR atendido
+>
+> Conheça passo a passo como integrar este modelo.
+>
+> [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-b/)

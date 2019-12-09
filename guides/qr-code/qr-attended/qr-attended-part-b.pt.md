@@ -79,10 +79,21 @@ A resposta será um `HTTP 204 No Content`.
 </blockquote>
 </a>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integração avançada
+>
+> Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
+>
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/advanced-integration/)
+
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Teste sua integração
+>
+> Realiza os casos de uso mais frequentes para validar sua integração.
+>
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/integration-test/)

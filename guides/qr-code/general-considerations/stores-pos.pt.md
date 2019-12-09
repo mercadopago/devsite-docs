@@ -112,24 +112,20 @@ Uma vez criado o caixa, poderemos ver no “Response” os links para diferentes
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-a/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integrar o modelo QR atendido<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Se em seu processo de venda for necessária a participação de um operador, revise esse modelo!</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-unattended/qr-unattended-part-a/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integrar o modelo autônomo do QR<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Se a venda só pode ser concretizada com a ação do cliente, esse é o seu modelo!</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Integrar o modelo QR atendido
+>
+> Se em seu processo de venda for necessária a participação de um operador, revise esse modelo!
+>
+> [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-a/)
+
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Integrar o modelo autônomo do QR
+>
+> Se a venda só pode ser concretizada com a ação do cliente, esse é o seu modelo!
+>
+> [Integrar o modelo autônomo do QR](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-unattended/qr-unattended-part-a/)
