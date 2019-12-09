@@ -122,7 +122,7 @@ Uma vez criado o caixa, poderemos ver no “Response” os links para diferentes
 > [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-a/)
 
 
-> LEFT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Integrar o modelo autônomo do QR
 >

@@ -112,24 +112,20 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integração avançada<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Conheça as opções disponíveis para chegar à integração para o seguinte nível.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/integration-test/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Teste sua integração<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Realiza os casos de uso mais frequentes para validar sua integração.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integração avançada
+>
+> Conheça as opções disponíveis para chegar à integração para o seguinte nível.
+>
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/advanced-integration/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Teste sua integração
+>
+> Realiza os casos de uso mais frequentes para validar sua integração.
+>
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/integration-test/)

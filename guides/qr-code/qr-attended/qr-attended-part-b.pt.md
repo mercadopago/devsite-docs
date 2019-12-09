@@ -75,7 +75,7 @@ A resposta será um `HTTP 204 No Content`.
 > [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/advanced-integration/)
 
 
-> LEFT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Teste sua integração
 >

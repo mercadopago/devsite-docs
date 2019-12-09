@@ -122,7 +122,7 @@ Una vez creada la caja, podremos ver en el “Response” los links a distintos 
 > [Integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/)
 
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Integrar QR modelo desatendido
 >
