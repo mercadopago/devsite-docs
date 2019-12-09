@@ -29,7 +29,9 @@ To set up aggregator mode you must follow this steps:
 1. Set up affiliation.
 1. Set up native payment plans.
 1. Set up offline payment plans.
+----[mlc]----
 1. Set up offline payment Webpay.
+------------
 1. Set up custom payment plans.
 1. Set up DeviceID.
 
@@ -144,6 +146,7 @@ Offline payment plan are the payment methods which payments are made in two step
 
     ![Offline](/images/vtex-offline-plan-4.png)
 
+----[mlc]----
 ### Set up Webpay payment plan
 
 1. Select Catalog menu.
@@ -167,7 +170,7 @@ Offline payment plan are the payment methods which payments are made in two step
 10. Save.
 
     ![Offline](/images/vtex-webpay-4.png)
-
+------------
 
 ### Set up custom payment plan
 

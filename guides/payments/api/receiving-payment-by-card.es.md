@@ -86,6 +86,7 @@ El siguiente paso es realizar la captura de los datos de tarjeta. Para hacer est
           </li>
         </ul>
         <input type="hidden" name="amount" id="amount"/>
+        <input type="hidden" name="description"/>
         <input type="hidden" name="paymentMethodId" />
         <input type="submit" value="Pay!" />
     </fieldset>
@@ -171,6 +172,12 @@ function setPaymentMethodInfo(status, response) {
 
             form.appendChild(input);
         }
+
+        Mercadopago.getInstallments({
+            "bin": getBin(),
+            "amount": parseFloat(document.querySelector('#amount').value),
+        }, setInstallmentInfo);
+        
     } else {
         alert(`payment method info error: ${response}`);  
     }
@@ -395,11 +402,11 @@ Respuesta:
     "status": "approved",
     "status_detail": "accredited",
     "id": 3055677,
-    "date_approved": "2017-02-23T00:01:10.000-04:00",
+    "date_approved": "2019-02-23T00:01:10.000-04:00",
     "payer": {
         ...
     },
-    "payment_method_id": "master",
+    "payment_method_id": "visa",
     "payment_type_id": "credit_card",
     "refunds": [],
     ...
@@ -421,11 +428,6 @@ El campo `installments` corresponde a la cantidad de cuotas que el comprador eli
 Para obtener las cuotas disponibles
 
 ```javascript
-
-Mercadopago.getInstallments({
-"bin": getBin(),
-"amount": parseFloat(document.querySelector('#amount').value),
-}, setInstallmentInfo);
 
 function setInstallmentInfo(status, response) {
         var selectorInstallments = document.querySelector("#installments"),

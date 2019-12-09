@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 > WARNING
@@ -14,4 +15,4 @@ sites_supported:
 >
 > This page is currently not available in English.
 >
->[View documentation in Spanish](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/)
+>[View documentation in Spanish](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/stores-pos/)

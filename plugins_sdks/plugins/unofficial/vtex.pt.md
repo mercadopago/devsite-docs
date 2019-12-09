@@ -28,7 +28,9 @@ Os passos para configurar o modo Agregador são:
 1. Configurar Afiliação.
 1. Configurar Planos Nativos de Pagamento.
 1. Configurar Planos de Pagamento Off-Line.
+----[mlc]----
 1. Configurar plano de pagamento Webpay
+------------
 1. Configurar Planos de Pagamento Personalizados.
 1. Configurar DeviceID.
 
@@ -142,7 +144,7 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 10. Salvar a configuração.
 
 
-
+----[mlc]----
 ### Configurar plano de pagamento Webpay
 
 1. Expanda o menu Catalog.
@@ -166,7 +168,7 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 10. Salvar a configuração.
 
     ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
-
+------------
 ### Configurar plano de pagamento personalizado
 
 Plano de pagamento personalizado permite adicionar à VTEX cartões de crédito locais que VTEX não integra como um meio de pagamento nativo e podem ser utilizados com Mercado Pago.
