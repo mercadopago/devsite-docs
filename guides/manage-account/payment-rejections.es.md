@@ -11,11 +11,11 @@ Un pago puede ser rechazado por un error con el medio de pago o porque no se cum
 >
 > Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses)
 
-Para evitar pérdidas de ingresos de tu negocio y mejorar la experiencia de tus clientes, trabajamos con los emisores de responsables de cada medio de pago y utilizamos las últimas tecnologías para evitar el fraude y aumentar la cantidad de pagos aprobados. 
+Para evitar pérdidas de ingresos de tu negocio y mejorar la experiencia de tus clientes, trabajamos con los emisores de responsables de cada medio de pago y utilizamos las últimas tecnologías para evitar el fraude y aumentar la cantidad de pagos aprobados.
 
 ## Pagos rechazados por el banco
 
-Al ofrecer un pago con tarjeta de crédito o débito, el emisor puede rechazar el cobro por distintas razones. Por ejemplo, si la tarjeta se encuentra vencida, no tiene los fondos suficientes o que los datos no sean correctos. 
+Al ofrecer un pago con tarjeta de crédito o débito, el emisor puede rechazar el cobro por distintas razones. Por ejemplo, si la tarjeta se encuentra vencida, no tiene los fondos suficientes o que los datos no sean correctos.
 
 Puedes ver el estado del pago en la respuesta de la API como `rejected` y el motivo de rechazo en el campo `status_detail`.
 
@@ -40,9 +40,9 @@ Y también, puedes encontrar más información sobre el detalle del pago en la [
 
 ## Pagos rechazados para prevenir fraude
 
-Seguimos en tiempo real las transacciones y tenemos validaciones de seguridad para reconocer pagos que no fueron autorizados por la persona dueña de la cuenta y evitar contracargos o cancelaciones. 
+Seguimos en tiempo real las transacciones y tenemos validaciones de seguridad para reconocer pagos que no fueron autorizados por la persona dueña de la tarjeta y evitar contracargos.
 
-Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, puedes ver el estado del pago en la respuesta de la API como rejected y el motivo de rechazo como `cc_rejected_high_risk`.
+Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, puedes ver el estado del pago en la respuesta de la API como `rejected` y el motivo de rechazo como `cc_rejected_high_risk`.
 
 ```json
 {
@@ -67,7 +67,7 @@ Para evitar que un pago real se rechace por no cumplir con las validaciones de s
 
 ### Suma nuestro código de seguridad en tu sitio
 
-Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad para prevenir el fraude. 
+Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad para prevenir el fraude. Y no te preocupes, no guardaremos ni compartiremos los datos de tus clientes.
 
 Es muy simple. Agrega el script, configura la sección de tu sitio en la que se encuentra ¡y listo! Solo debes reemplazar el valor de `view` por el nombre de la página en la que quieras sumarlo.
 
@@ -80,7 +80,7 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 | Tipo                                                         | Descripción                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | home | Página principal de tu sitio. | 
-| search | Página de búsqueda o listado de productos.  |
+| search | Página de búsqueda o listado de productos. |
 | item | Página de un producto específico. |
 
 > NOTE
