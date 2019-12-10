@@ -8,12 +8,12 @@ sites_supported:
   - mlc
 ---
 
-# What's Smart Checkout?
+# What's Checkout Mercado Pago?
 <br/>
 
-Smart Checkout of Mercado Pago is the integration that **allows you to charge through our web form from any device** in a simple, fast and secure way. 
+Checkout Mercado Pago of Mercado Pago is the integration that **allows you to charge through our web form from any device** in a simple, fast and secure way. 
 
-Mercado Pago Smart Checkout is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
+Mercado Pago Checkout Mercado Pago is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
 
 ----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
@@ -22,7 +22,7 @@ Mercado Pago Smart Checkout is an integration that allows you to **charge your c
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
-## Smart Checkout offers:
+## Checkout Mercado Pago offers:
 
 ----[mla]----
 * The most popular <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
@@ -50,10 +50,10 @@ Mercado Pago Smart Checkout is an integration that allows you to **charge your c
 * **Split Payments.** Customers can pay with two cards. This is a very useful feature in cases like high amount transactions.
 ------------
 
-## Smart Checkout vs. other Mercado Pago tools
+## Checkout Mercado Pago vs. other Mercado Pago tools
 
 ----[mla, mlb]----
-                                   | Smart Checkout|Web Tokenize Checkout|      API
+                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |
@@ -67,7 +67,7 @@ Split payments		           |      ✔      |                     |
 
 ------------
 ----[mlm, mlu, mco, mlc]----
-                                   | Smart Checkout|Web Tokenize Checkout|      API
+                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |
@@ -84,7 +84,7 @@ Order completed page		         |      ✔      |                     |
 >
 > Note
 >
-> This article is about the last version of Smart Checkout. **For the previous version**, please consult the [old Smart Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
+> This article is about the last version of Checkout Mercado Pago. **For the previous version**, please consult the [old Checkout Mercado Pago section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
 
 ---
 

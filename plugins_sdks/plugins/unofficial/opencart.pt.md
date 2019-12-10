@@ -6,7 +6,7 @@
 
 O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a seguir:
 
-| Funcionalidade                                            | Smart Checkout      | API                     |
+| Funcionalidade                                            | Checkout Mercado Pago      | API                     |
 |---------------------------------------------------------- |-------------------|-------------------------|
 | Pagamento com Cartão de Crédito                           | ✔                 | ✔                       |
 | Outros Meios de Pagamento, como os Boletos                | ✔                 | ✔                       |
@@ -23,7 +23,7 @@ O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a 
 
 Oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagamentos de qualquer pessoa em qualquer lugar.
 
-**Smart Checkout**
+**Checkout Mercado Pago**
 
 Ótimo para vendedores que querem rapidez e agilidade.
 

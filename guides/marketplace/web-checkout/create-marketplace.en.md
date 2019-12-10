@@ -1,4 +1,4 @@
-# How to Integrate the Marketplace in the Smart Checkout
+# How to Integrate the Marketplace in the Checkout Mercado Pago
 
 ----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING

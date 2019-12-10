@@ -310,7 +310,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Outras funcionalidades
 >
-> Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.
+> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
 >
 > [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
 

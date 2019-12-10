@@ -33,7 +33,7 @@ Nuesto SDK es compatible con las versiones de .NET 4.5 o superior.
 
 2. Configura tus credenciales
 
--**Para Smart Checkout:**
+-**Para Checkout Mercado Pago:**
 
 ```csharp
 MercadoPago.SDK.ClientId     = "YOUR_CLIENT_ID";
