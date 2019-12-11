@@ -71,7 +71,7 @@ De forma manual, instala el módulo siguiendo estos pasos:
 
 Revisa que todo haya salido bien desde tu escritorio de WordPress. Verás el módulo entre tus *Plugins instalados*. Actívalo para pasar a la integración de tu cuenta y los pasos de configuración. 
 
-Cuando actives el plugin, WordPress te llevará a los *Ajustes* de WooCommerce y, de allí, a la sección *Payments*, donde tendrás a mano los [tipos de checkout](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que ofrecemos para tu tienda online: Smart Checkout y Checkout Personalizado.
+Cuando actives el plugin, WordPress te llevará a los *Ajustes* de WooCommerce y, de allí, a la sección *Payments*, donde tendrás a mano los [tipos de checkout](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que ofrecemos para tu tienda online: Checkout Mercado Pago y Checkout Personalizado.
 
 > NOTE
 >

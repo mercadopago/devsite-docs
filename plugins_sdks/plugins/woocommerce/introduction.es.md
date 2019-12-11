@@ -24,7 +24,7 @@ Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel co
 | Financiación                 	| Vende en cuotas y ofrece las promociones que desees.                    	                                               |
 | Liberación de dinero          | Al instante o con las tasas y plazos que mejor se adapten al negocio.    	                                               |
 | Medios de pago                | Acepta pagos con tarjeta de crédito y débito, pagos en efectivo y con dinero en cuenta de Mercado Pago                   |
-| Tipos de checkout             | Smart Checkout, Checkout personalizado                                                               	                   |
+| Tipos de checkout             | Checkout Mercado Pago, Checkout personalizado                                                               	                   |
 | Pago como invitado            | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en WooCommerce.                             |
 | Devolución de pagos 	        | Devuelve pagos desde la plataforma.                                                               	                     |
 | Cancelación de pagos     	    | Cancela los pagos pendientes desde la plataforma.                            	                                           |
@@ -46,7 +46,7 @@ Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel co
 
 Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las características para elegir cuál se adapta mejor al tuyo.
 
-| Características     | Smart Checkout                                                                                                                 | Checkout personalizado                                         |
+| Características     | Checkout Mercado Pago                                                                                                                 | Checkout personalizado                                         |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | Medios de pago      | Pagos con tarjetas, en efectivo y con dinero en cuenta de Mercado Pago.                                                        | Pagos con tarjetas de débito y crédito o pagos presenciales.   |
 | Experiencia de pago | Tus clientes pagan desde la página de Mercado Pago con un formato redirect (fuera de tu tienda) o modal (dentro de tu tienda). | Tus clientes pagan como invitados sin salir de tu tienda.      |
@@ -56,7 +56,7 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 >
 > Nota
 >
-> Consulta la [documentación del Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 ### Próximos pasos
 

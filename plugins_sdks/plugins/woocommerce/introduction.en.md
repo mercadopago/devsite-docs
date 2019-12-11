@@ -24,7 +24,7 @@ Install the payment processor in WooCommerce and take your sales to another leve
 | Installments                 	| Sell in installments and offer the promotions you want.                  	                                               |
 | Money release                 | Instantly or with the rates and terms that best suit the business.      	                                               |
 | Payment methods               | Accept payments by credit and debit card, cash and payments with Mercado Pago account money.                             |
-| Checkout types                | Smart Checkout, Custom Checkout                                                                      	                   |
+| Checkout types                | Checkout Mercado Pago, Custom Checkout                                                                      	                   |
 | Payment as a guest            | Users don’t need to be registered in Mercado Pago in order to pay in WooCommerce.                                        |
 | Payment refunds     	        | Refund payments directly from the platform.                                                        	                     |
 | Payment cancellations   	    | Cancel the pending payments directly from the platform                       	                                           |
@@ -46,7 +46,7 @@ Install the payment processor in WooCommerce and take your sales to another leve
 
 With these payment options we cover the needs of each business. Review the features to choose which one best suits your business.
 
-| Characteristics    | Smart Checkout                                                                                                          | Custom Checkout                                               |
+| Characteristics    | Checkout Mercado Pago                                                                                                          | Custom Checkout                                               |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | Payment methods    | Payments with cards, cash and money in Mercado Pago account.                                                            | Payments with debit and credit cards or in-person payments.   |
 | Payment experience | Your customers pay from the Mercado Pago page with a redirect (outside your store) or modal (inside your store) format. | Your customers pay without leaving your online store.         |
@@ -56,7 +56,7 @@ With these payment options we cover the needs of each business. Review the featu
 >
 > Note
 >
-> Check out the [Smart Checkout documentation](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its characteristics and functionalities.
+> Check out the [Checkout Mercado Pago documentation](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its characteristics and functionalities.
 
 ### Next steps
 

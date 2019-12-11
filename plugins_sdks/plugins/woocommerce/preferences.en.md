@@ -44,14 +44,14 @@ Enter the **name of the business** to appear on your customers' invoice and make
 Activate the checkout you want to offer your customers according to your preferences and choose the payment methods with which they can make the purchase.
 
 * Activate a checkout type
-  * Use Smart checkout to support payments with cards, cash and money in the Mercado Pago account.
+  * Use Checkout Mercado Pago to support payments with cards, cash and money in the Mercado Pago account.
   * Use the Custom Checkout to have control over other settings.
 
 <!-- > WARNING
 >
 > Important
 >
-> Note that the [Smart Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
+> Note that the [Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
 
 * Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
@@ -63,7 +63,7 @@ Activate the checkout you want to offer your customers according to your prefere
 >
 > Note
 >
-> The option to the activate currency conversion is available only for the Custom Checkout. The Smart Checkout converts automatically.
+> The option to the activate currency conversion is available only for the Custom Checkout. The Checkout Mercado Pago converts automatically.
 
 ## Advanced configuration
 
@@ -76,9 +76,9 @@ You will have different settings available depending on the type of checkout you
 | Binary Mode     	            | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
 | Gateway Mode              	  | If you operate with the [gateway mode](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/introduction/) as a payment processor and have your own trade numbers, you can set up discounts and commissions to your customers for paying with Mercado Pago.|
 
-### Smart Checkout
+### Checkout Mercado Pago
 
-#### Payment experiences in Smart checkout
+#### Payment experiences in Checkout Mercado Pago
 
 Choose what shopping experience your customers will have when paying: 
 
@@ -91,7 +91,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Nota
 >
-> Check out the [Smart Checkout documentation](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
+> Check out the [Checkout Mercado Pago documentation](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
 
 | Configuration                 | Description                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|

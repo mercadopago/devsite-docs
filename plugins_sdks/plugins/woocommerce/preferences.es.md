@@ -44,14 +44,14 @@ Ingresa el **nombre del negocio** para que aparezca en la factura de tus cliente
 Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y elige los medios de pago con los que podrán hacer la compra.
 
 * Activa un tipo de checkout
- * Usa Smart checkout para soportar pagos con tarjetas, en efectivo y dinero en cuenta de Mercado Pago.
+ * Usa Checkout Mercado Pago para soportar pagos con tarjetas, en efectivo y dinero en cuenta de Mercado Pago.
  * Usa el Checkout Personalizado para tener control sobre otras configuraciones.
 
 <!-- > WARNING
 >
 > Importante
 >
-> Ten en cuenta que el [Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
+> Ten en cuenta que el [Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
 
 * Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
 
@@ -63,7 +63,7 @@ Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y 
 >
 > Nota
 >
-> La opción de activar la conversión de moneda está disponible solo en el checkout personalizado. El Smart Checkout hace la conversión de forma automática.
+> La opción de activar la conversión de moneda está disponible solo en el checkout personalizado. El Checkout Mercado Pago hace la conversión de forma automática.
 
 ## Configuración avanzada
 
@@ -76,9 +76,9 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 | Modo binario     	            | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática.|
 | Modelo Gateway               	| Si operas con el [modelo gateway](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/introduction/) como procesador de pagos y tienes tus propios números de comercio puedes configurar descuentos y comisiones a tus clientes por pagar con Mercado Pago.|
 
-### Smart Checkout
+### Checkout Mercado Pago
 
-#### Experiencias de pago en Smart checkout
+#### Experiencias de pago en Checkout Mercado Pago
 
 Elige qué experiencia de compra tendrán tus clientes a la hora de pagar: 
 
@@ -91,7 +91,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 > Nota
 >
-> Consulta la [documentación del Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 | Configuración                 | Descripción                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
