@@ -33,7 +33,7 @@ A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 |----------------------------|------------------------------------------------------------------------------------------------|
 | Versiones Soportadas       | Prestashop 1.7.x                                                                               |
 | Ambiente                   | LAMP (Linux, Apache, MySQL, and PHP) ó LNMP stack                                              |
-| Sistema                     | Linux x86, Windows x86-64                                                                     |
+| Sistema                    | Linux x86, Windows x86-64                                                                     |
 | Servidor Web               | Apache 2.x,  Nginx 1.7.x                                                                       |
 | Version PHP                | PHP 5.6, 5.5 y 5.4                                                                             |
 | Base de datos              | MySQL 5.6 (Oracle o Percona)                                                                   |
@@ -51,9 +51,9 @@ A nivel técnico, tu versión de Prestashop debe cumplir con estos requisitos:
 
 > NOTE
 >
-> [DESCARGAR](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip)
+> [DESCARGAR](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip)
 >
-> [Módulo Mercado Pago para Prestashop 1.7](https://github.com/mercadopago/cart-prestashop-6/blob/master/mercadopago.zip)
+> [Módulo Mercado Pago para Prestashop 1.7](https://github.com/mercadopago/cart-prestashop-7/blob/master/mercadopago.zip)
 
 2) Acceda al panel administrativo del Prestashop en **Módulos** -> **Módulos y Servicios**, haga clic en el botón **"Enviar un Módulo"** y seleccione el archivo **mercadopago.zip** descargado anteriormente.
 
