@@ -32,7 +32,7 @@ Nuesto SDK es compatible con las versiones de Java 8 o superior.
 
 1. Importar las clases basicas del SDK `import import com.mercadopago.*;`
 2. Configura tus credenciales.
-  - **Para Smart Checkout:**
+  - **Para Checkout Mercado Pago:**
     ```java
       MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
       MercadoPago.SDK.setClientId("CLIENT_ID_OK");

@@ -9,7 +9,7 @@ For more information on the possibilities that Wix offers, visit [your features 
 
 Wix allows to operate Mercado Pago in the following modality:
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Receive payments in your store using the checkout of Mercado Pago itself, in this model the user (client) will be redirected to a page of Mercado Pago to finalize their purchase.
 

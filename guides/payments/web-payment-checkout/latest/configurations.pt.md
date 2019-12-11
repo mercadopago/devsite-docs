@@ -309,7 +309,7 @@ Se quiser ativar o pagamento de uma preferência com uma determinada duração, 
 
 ### Sponsor ID
 
-O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de software que faz a integração do  Smart Checkout, este dado é visível na preferência e no pagamento.
+O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de software que faz a integração do  Checkout Mercado Pago, este dado é visível na preferência e no pagamento.
 
 
 ```json

@@ -16,7 +16,7 @@ sites_supported:
 >
 > Esta documentação é referente à versão anterior do Checkout.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Smart Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
 Implemente a logística do seu negócio utilizando o **Mercado Envios**.
 

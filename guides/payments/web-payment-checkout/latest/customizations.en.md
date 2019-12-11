@@ -13,12 +13,12 @@ sites_supported:
 
 ## Redirect Scheme
 
-The Smart Checkout allows you to change your opening scheme.
+The Checkout Mercado Pago allows you to change your opening scheme.
 
 The schemes currently available are:
 
-* **Redirect**: Opens the Smart Checkout in a new window.
-* **Modal**: Opens the Smart Checkout on your website.
+* **Redirect**: Opens the Checkout Mercado Pago in a new window.
+* **Modal**: Opens the Checkout Mercado Pago on your website.
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
 
@@ -172,7 +172,7 @@ data-button-label="Buy"
 >
 > Other functionalities
 >
-> Set up your payment and adapt Smart Checkout to your business.
+> Set up your payment and adapt Checkout Mercado Pago to your business.
 >
 > [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/)
 

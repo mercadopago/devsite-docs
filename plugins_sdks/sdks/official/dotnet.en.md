@@ -34,7 +34,7 @@ Our SDK is compatible with .NET 3.5 or grater. Our development team recomends to
  using MercadoPago;
 ```
 2. Setup your credentials
--**For Smart Checkout:**
+-**For Checkout Mercado Pago:**
 ```csharp
  MercadoPago.SDK.ClientId = "YOUR_CLIENT_ID";
  MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
