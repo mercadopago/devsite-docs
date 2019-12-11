@@ -43,17 +43,11 @@ Para poder começar a integração, é necessário **contar com uma conta de Mer
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/stores-pos/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Lojas e Caixas<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Para realizar a integração, primeiramente deverá configurar suas sucursais e caixas.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Lojas e Caixas
+>
+> Para realizar a integração, primeiramente deverá configurar suas sucursais e caixas.
+>
+> [Lojas e Caixas](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/stores-pos/)

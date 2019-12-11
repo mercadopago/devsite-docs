@@ -43,17 +43,11 @@ Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mer
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/stores-pos/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Sucursales y Cajas<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Para realizar la integración, primero debes configurar tus sucursales y cajas.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Sucursales y Cajas
+>
+> Para realizar la integración, primero debes configurar tus sucursales y cajas.
+>
+> [Sucursales y Cajas](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/integrations/)

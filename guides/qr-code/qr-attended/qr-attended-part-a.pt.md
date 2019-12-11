@@ -61,17 +61,11 @@ Explicamos a você o funcionamento do modelo atendido:
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-b/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integrar o modelo QR atendido<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Conheça passo a passo como integrar este modelo.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integrar o modelo QR atendido
+>
+> Conheça passo a passo como integrar este modelo.
+>
+> [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-b/)

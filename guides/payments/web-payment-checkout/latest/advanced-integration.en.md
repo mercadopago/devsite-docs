@@ -307,7 +307,7 @@ This means that the seller's money for that payment will be withheld from their 
 >
 > Other functionalities
 >
-> Set up your payment and adapt the Smart Checkout to your business.
+> Set up your payment and adapt the Checkout Mercado Pago to your business.
 >
 > [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/)
 

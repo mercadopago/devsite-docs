@@ -30,7 +30,7 @@ Nuesto SDK es compatible con las versiones de PHP 5.6 o superior.
   
   Existen 2 tipos de credenciales:
 
-  * **Para el Smart Checkout:**
+  * **Para el Checkout Mercado Pago:**
     ```php
     MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
     MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");

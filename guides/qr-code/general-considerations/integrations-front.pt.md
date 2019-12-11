@@ -41,24 +41,19 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/introduction/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Que é o código QR?<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Configura as notificações de seus pagamentos.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/integrations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Como gerar o QR?<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Conheça as diferentes opções de receber com QR segundo seu negócio. </p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Que é o código QR?
+>
+> Configura as notificações de seus pagamentos.
+>
+> [Que é o código QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/introduction/)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Como gerar o QR?
+>
+> Conheça as diferentes opções de receber com QR segundo seu negócio.
+>
+> [Como gerar o QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/integrations/)
