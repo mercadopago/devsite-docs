@@ -64,17 +64,11 @@ Explicamos a você o funcionamento do modelo desatendido:
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-unattended/qr-unattended-part-b/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integrar o modelo autônomo do QR<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Conheça passo a passo como integrar este modelo.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integrar o modelo autônomo do QR
+>
+> Conoce paso a paso como integrar este modelo.
+>
+> [Integrar o modelo autônomo do QR](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-unattended/qr-unattended-part-b/)

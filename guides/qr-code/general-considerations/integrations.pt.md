@@ -33,18 +33,11 @@ Você pode receber, restituir pagamentos e receber notificações em seu sistema
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/pre-requisites/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Pré-requisitos<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Para integrar seu sistema, é importante conhecer os dados de sua conta e suas credenciais de acesso. </p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Pré-requisitos
+>
+> Para integrar seu sistema, é importante conhecer os dados de sua conta e suas credenciais de acesso.
+>
+> [Pré-requisitos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/)
