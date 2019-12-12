@@ -1,3 +1,9 @@
+---
+sites_supported:
+  - mla
+  - mlb
+---
+
 # Los rendimientos en el reporte de Dinero en cuenta
 
 Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pago en el reporte de Dinero en cuenta.
@@ -27,7 +33,20 @@ Puedes ver cuatro tipos de operaciones según la variación del [valor de cuotap
 
 ### Rendimientos positivos
 
+![Ejemplo rendimiento positivo en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-positive.png)
+
 ### Rendimientos negativos
+
+![Ejemplo rendimiento negativo en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-negative.png)
+----[mlb]---- 
+### Impuesto a la renta
+
+![Ejemplo impuesto a la renta en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-with-taxes-negative.png)
+
+### Devolución de impuesto a la renta
+
+![Ejemplo devolución de impuesto a la renta en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-with-taxes-positive.png)
+------------
 
 ### Próximos pasos
 
