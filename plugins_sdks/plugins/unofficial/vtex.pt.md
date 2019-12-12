@@ -28,7 +28,9 @@ Os passos para configurar o modo Agregador são:
 1. Configurar Afiliação.
 1. Configurar Planos Nativos de Pagamento.
 1. Configurar Planos de Pagamento Off-Line.
+----[mlc]----
 1. Configurar plano de pagamento Webpay
+------------
 1. Configurar Planos de Pagamento Personalizados.
 1. Configurar DeviceID.
 
@@ -42,10 +44,10 @@ Para operar em modo Agregador sé é necessário configurar uma afiliação.
     ![Setting affiliation in VTEX](/images/vtex-afiliation-1.png)
 
 3. Acesse menu lateral: Pagamento.
-4. Configurações. 
+4. Configurações.
 
     ![VTEX Configuration Page](/images/vtex-config.png)
-    
+
 5. Acesse menu superior: Afiliações de Gateways.
 6. Adicionar Nova Afiliação (Sinal de +).
 
@@ -141,8 +143,8 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 9. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
 10. Salvar a configuração.
 
-   
 
+----[mlc]----
 ### Configurar plano de pagamento Webpay
 
 1. Expanda o menu Catalog.
@@ -166,7 +168,7 @@ Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se real
 10. Salvar a configuração.
 
     ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
-
+------------
 ### Configurar plano de pagamento personalizado
 
 Plano de pagamento personalizado permite adicionar à VTEX cartões de crédito locais que VTEX não integra como um meio de pagamento nativo e podem ser utilizados com Mercado Pago.
@@ -203,7 +205,7 @@ Uruguay: Oca.
 ### Configurar Plano de Pagamento Personalizado - Cartões da Argentina
 
 | Name                   | Descrição              | Meio de pagamento |       Bins {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pagamento no adquirente (opcional) |
-|--------------------------|--------------------------|---------------|:-------------------------------------------------------:|------------------------------------------|
+|----|----|----|:-----:|-----|
 | Argencard                | Argencard                | Mastercard    | 501105-501105                                           | argencard                                |
 | Cencosud                 | Cencosud                 | Mastercard    | 603493-603493                                           | cencosud                                 |
 | CMR                      | CMR                      | Mastercard    | 557039-557039                                           | cmr                                      |
@@ -214,7 +216,7 @@ Uruguay: Oca.
 ### Configurar Plano de Pagamento Personalizado – Cartões do Chile
 
 | Nome | Descrição | Meio de pagamento |                                   Bins {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pagamento no adquiriente (opcional) |
-|--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
+|---|-----|------|:-----:|-----|
 | Presto | Presto      | Mastercard    | 920000-920099                                                                                                   | presto                                   |
 | Magna  | Magna       | Mastercard    | 568000-568099                                                                                                   | magna                                    |
 | CMR    | CMR         | Mastercard    | 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984 | cmr                                      |
@@ -222,13 +224,13 @@ Uruguay: Oca.
 ### Configurar Plano de Pagamento Personalizado – Cartões da Colombia
 
 | Nome  | Descrição | Meio de pagamento | Bins {min}-{max},{min}-{max},{bin1},{bin2} | Código de pagamento no adquirente (opcional) |
-|---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
+|----|---|----|:----:|------|
 | Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
 
 ### Configurar Plano de Pagamento Personalizado – Cartões do Uruguay
 
 | Nome | Descrição | Meio de pagamento |                     Bins {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pagamento no adquirente (opcional) |
-|--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
+|----|-----|------|:-----:|------|
 | OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
 
 ## Configurar DeviceID
@@ -265,7 +267,7 @@ document.body.appendChild(dmlscript);
 Para obter as credenciais deve seguir os seguintes passos:
 
 1. Faça login na conta do Mercado Pago
-2. Acesse [URL](https://www.mercadopago.com/mla/account/credentials).
+2. Acesse [URL]([FAKER][CREDENTIALS][URL]).
 3. Selecione a guia checkout personalizado.
 4. Copiar e colar a Public key e Access token (Modo Produção para processar pagamentos reais / Modo Sandbox para realizar testes).
 5. Antes de passar à Produção assegure se de preencher o formulário ‘Eu quero ir para produção’ (Se já realizou este passo, o link não aparece).

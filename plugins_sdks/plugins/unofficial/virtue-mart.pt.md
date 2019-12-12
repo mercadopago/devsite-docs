@@ -1,16 +1,6 @@
 # VirtueMart - Mercado Pago Module (v3.0.x)
 
-* [Requisitos](#requirements)
-* [Versões disponíveis](#available_versions)
-* [Funcionalidades](#features)
-* [Instalação](#installation)
-* [Configuração de Checkout Padrão](#configuration_std)
-* [Cartão de crédito - Checkout Transparente](#configuration_custom)
-* [Boleto - Checkout Transparente](#configuration_custom_ticket)
-* [Suporte](#Suporte)
-
-<a name="requirements"> </a>
-## Requisitos: ##
+## Requisitos
 
 Basicamente, os requisitos deste plugin são os mesmos que você precisa executar Virtuemart e Joomla. Sua máquina deve ter:
 
@@ -30,8 +20,7 @@ Se você estiver usando Custom Checkout, é um requisito que você tenha um cert
 
 Durante os testes em modo sandbox, você pode operar por HTTP, mas para homologação, você precisará adquirir o certificado caso não o tenha.
 
-<a name="available_versions"> </a>
-## Versões disponíveis: ##
+## Versões disponíveis
 <table>
   <thead>
     <tr>
@@ -49,8 +38,7 @@ Durante os testes em modo sandbox, você pode operar por HTTP, mas para homologa
   </tbody>
 </table>
 
-<a name="Funcionalidades"></a>
-## Funcionalidades: ##
+## Funcionalidades
 
 O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
@@ -62,15 +50,14 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
     * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript/)
     * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods/)
 
-<a name="installation"> </a>
-## Instalação: ##
+## Instalação
 
 1. Baixe o módulo zip
 2. Vá para **Extensões> Gerenciador de extensão **
 3. Em **Carregar arquivo de pacote> Arquivo de pacote** selecione o **cart-virtuemart.zip** e clique em **Carregar e instalar **
 
 <a name="configuration_std"> </a>
-## Configuração do checkout básico: ##
+## Configuração do checkout básico
 
 1. Vá para **VirtueMart> Métodos de pagamento** e clique em **Novo**
 
@@ -86,15 +73,7 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país, nos seguintes links:
-
-* Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
-* Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
-* Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-* Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
+Encontre seu **Client_id** e **Client_secret** na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configurações do checkout básico. <br />
 
@@ -128,9 +107,7 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
   **Log**: Habilite/Desabilite logs.<br />
   **Logo**: Selecione o logo. Você precisa adicionar na pasta /images/stories/virtuemart/payment <br />
 
-
-<a name="configuration_custom"></a>
-## Configuração do Checkout Transparente - Cartão de crédito: ##
+## Configuração do Checkout Transparente - Cartão de crédito
 
   1. Ir até **VirtueMart > Métodos de pagamento** e clique **Novo**
 
@@ -150,16 +127,9 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 
   ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
 
-  Para obter suas credenciais **Public Key** e **Access Token**, acesse os links a seguir de acordo com o seu país:
+Encontre seu **Public Key** e **Access Token** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
-  * Argentina: https://www.mercadopago.com/mla/account/credentials
-  * Brasil: https://www.mercadopago.com/mlb/account/credentials
-  * Colombia: https://www.mercadopago.com/mco/account/credentials
-  * Mexico: https://www.mercadopago.com/mlm/account/credentials
-  * Uruguai: https://www.mercadopago.com/mlu/account/credentials
-
-<a name="configuration_custom_ticket"></a>
-## Configuração do Checkout Transparente - Boleto: ##
+## Configuração do Checkout Transparente - Boleto
 
 1. Ir em **VirtueMart > Payment Methods** e clique **New**
 
@@ -179,16 +149,9 @@ Você pode obter seu **Client_id** e **Client_secret**, de acordo com seu país,
 
 ![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
 
-Para obter seu **Access Token**, acesse o link abaixo de acordo com o seu país:
+Encontre seu **Access Token** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
-* Argentina: https://www.mercadopago.com/mla/account/credentials
-* Brazil: https://www.mercadopago.com/mlb/account/credentials
-* Colombia: https://www.mercadopago.com/mco/account/credentials
-* Mexico: https://www.mercadopago.com/mlm/account/credentials
-* Uruguai: https://www.mercadopago.com/mlu/account/credentials  
-
-<a name="Suporte"></a>
-## Suporte: ##
+## Suporte
 
 Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento.
 Escreva para o nosso [formulário de apoio](/support) com as seguintes informações:

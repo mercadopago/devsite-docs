@@ -1,15 +1,6 @@
 # WooCommerce
 
-
 ### Mercado Pago Module (WooCommerce 3.x)
-
-* [Introduction](#bookmark_introduction)
-* [Installation requirements](#bookmark_installation_requirements)
-* [Installation](#bookmark_installation)
-* [Integration](#bookmark_integration)
-* [Module configuration](#bookmark_module_configuration)
-* [Receive payments](#bookmark_receive_payments)
-
 
 ## Introduction
 
@@ -22,7 +13,7 @@ If you already use WooCommerce to create e-commerce websites in WordPress, one o
 Think big. Install our payment gateway on WooCommerce and take your sales to another level with the best shopping experience:
 
 * Make **promotions** and sell in installments with the best possible **financing**
-* Main **payment methods** of each country in which we operate 
+* Main **payment methods** of each country in which we operate
 * **One click purchase:** rwe remember your customers' details, they just enter the card’s CVV Code
 * **Payment as a guest:** we do not exclude anyone, it is not necessary for your customers to open an account in Mercado Pago
 * Payment **Devolution**
@@ -60,17 +51,17 @@ Learn about the payment options we develop to meet the needs of your business:
 
 ## Installation
 
-You can install Mercado Pago in WordPress two ways: 
+You can install Mercado Pago in WordPress two ways:
 
 1. Automatically, from the ‘Plugins’ section of WordPress
   * Follow these steps for installation:
     * Go to "Add new" and look for “WooCommerce Mercado Pago” among the WordPress module offer.
-    * Click Install and then look for it in the "Installed Plugins" section. 
+    * Click Install and then look for it in the "Installed Plugins" section.
     * Activate it to start configuring the module in your store.
     * And done!
 
 2. Manuallyl
-  * Install the module following these steps: 
+  * Install the module following these steps:
     * Download the [.zip](https://github.com/mercadopago/cart-woocommerce/archive/master.zip) file now from the WordPress modules [directory](https://wordpress.org/plugins/woocommerce-mercadopago/) de módulos do WordPress
     * Unzip the folder and change the name to "woocommerce-Mercadopago"
     * Copy the ‘woocommerce-marketpayment’ file into your WordPress directory, into the "Plugins" folder
@@ -110,16 +101,16 @@ When you activate the plugin, the platform will take you to the WooCommerce Sett
 
 Basic checkout and custom checkout are excludant of each other. Therefore, if you use the basic checkout you will not be able to use the custom options and vice versa.
 
-You must make a decision to activate the different shopping experiences: 
+You must make a decision to activate the different shopping experiences:
 
-* Do you want to offer **all the payment methods** in a pre-established way? Activate and configure the basic checkout. 
-* Do you wish to allow **only cash payments?** Activate the custom checkout of cash payments. 
+* Do you want to offer **all the payment methods** in a pre-established way? Activate and configure the basic checkout.
+* Do you wish to allow **only cash payments?** Activate the custom checkout of cash payments.
 * Will you allow **debit and credit card payments?** Activate the custom checkout of online payments.
 * Do you wish to offer **all the payment methods in a customized way?** Activate both the custom checkout for online payments and the custom checkout for cash payments.   
 
 Now check the options that all the checkouts have in common and configure each field, below you will find the detail of each one:
 
-|           |                                     | Checkout Básico para todos los medios de pago | Checkout Personalizado para pagos online | Checkout Personalizado para pagos en efectivo | 
+|           |                                     | Basic Checkout for all payments methods | Custom Checkout for online payments | Custom Checkout for cash payments |
 |-----------|-------------------------------------|-----------------------------------------------|------------------------------------------|-----------------------------------------------|
 | Basic     | Activate CHO                        | ✔                                             | ✔                                        | ✔                                             |
 |           | Payments method On                  | ✔                                             | ✔                                        |                                               |
@@ -150,20 +141,20 @@ As you have seen in the comparison chart, checkouts have some advanced configura
 - MP purchase options
 
   - You can configure discounts and fees for your buyers each time they pay with Mercado Pago in your online store.
-  
+
  ![Discounts and commission](/images/woocommerce/es_woo_comdesc.png)
 
 - Binary mode
 
-  - Some businesses, due to their business logic, may need an instant process of approval or rejection of payments in the shopping experience, that is, avoid the pending payment instance. 
+  - Some businesses, due to their business logic, may need an instant process of approval or rejection of payments in the shopping experience, that is, avoid the pending payment instance.
   - To operate this way, you can enable the **binary mode** in the advanced settings and thus define the approval or rejection of each payment instantly. If you disable the binary mode, you may have pending charges that we analyze with our fraud prevention tool.
 
 Check the advanced settings of each checkout to leave nothing behind:
 
-Basic checkout for all payment methods 
+Basic checkout for all payment methods
 
 1. Payment experience
-  - Define what your payment experience will be like for your customers: whether or not they will leave your site to pay. ‘Redirect’ will take them out of your store to pay on our payment gateway. The Modal option will open the payment form within your online store, without leaving it to finish the purchase process. 
+  - Define what your payment experience will be like for your customers: whether or not they will leave your site to pay. ‘Redirect’ will take them out of your store to pay on our payment gateway. The Modal option will open the payment form within your online store, without leaving it to finish the purchase process.
 
 2. Back to the store
   - Here you can choose if you want your buyers to return to your store. If so, we will take them directly once the payment is finished.
@@ -171,7 +162,7 @@ Basic checkout for all payment methods
 3. Configurable URLs only in the basic checkout
   - of success: Inform your buyers every time a payment is approved by taking them to a page that communicates the result. It is a good practice as this will give them confidence about the transaction just performed. The URL you enter in this field will fulfill that function.
   - of rejected payment: Same as the previous point, but for when things do not go well at all. Create a page that serves to inform your buyers when a payment is declined and tell them what steps to take. You can enter it in this field.  
-  - of pending payment: Enter the URL of a page where you tell your buyers that they have a pending payment and what it means: that the payment is not yet confirmed. You will improve the shopping experience as long as you give the right information and make your buyers aware of the process. 
+  - of pending payment: Enter the URL of a page where you tell your buyers that they have a pending payment and what it means: that the payment is not yet confirmed. You will improve the shopping experience as long as you give the right information and make your buyers aware of the process.
 
 Custom checkout for payments with debit and credit cards
 
@@ -187,17 +178,17 @@ Custom checkout for cash payments
 
 #### **2. Test the module**
 
-Test until you are sure everything works well. 
+Test until you are sure everything works well.
 
 * Simulate payments as if you were one of your customers buying on the website.
 * Make sure the flow works correctly and is easy to use.
-* Do you see that everything is going well? Disable the testing mode and start receiving real payments! 
+* Do you see that everything is going well? Disable the testing mode and start receiving real payments!
 
-You can activate and deactivate this mode here: 
+You can activate and deactivate this mode here:
 
 ![Sandbox Mode](/images/woocommerce/es_woo_sandbox.png)
 
-> By default, we deactivate the Production mode. Activate it when you have the account approved and have verified that both the purchase flow and the receipt of the test payments work well. 
+> By default, we deactivate the Production mode. Activate it when you have the account approved and have verified that both the purchase flow and the receipt of the test payments work well.
 
 #### **3. Go to Production (‘Go live!’)**
 

@@ -25,12 +25,12 @@ Após criar a aplicação, você só precisa executar o segundo e o terceiro pas
 
 ## Credenciais
 
-Assim como no Checkout de Pagamentos, você conta com um par de chaves privadas para conectar-se com a API. Essas chaves são encontradas na sessão de [credenciais da sua conta](https://www.mercadopago.com.br/account/credentials).
+Assim como no Checkout de Pagamentos, você conta com um par de chaves privadas para conectar-se com a API. Essas chaves são encontradas na sessão de [credenciais da sua conta]([FAKER][CREDENTIALS][URL]).
 
 As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, etc. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
 
 Antes de utilizar o Access Token é preciso preencher o formulário "Quero ir para produção".
 
-Ao utilizar o Smart Checkout, as credenciais que se deve utilizar para associação dos vendedores ao Marketplace (2º Passo) são o Client_id e Client_secret da sessão de Checkout Básico da página de credenciais.
+Ao utilizar o Checkout Mercado Pago, as credenciais que se deve utilizar para associação dos vendedores ao Marketplace (2º Passo) são o Client_id e Client_secret da sessão de Checkout Básico da página de credenciais.
 
 #### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/create-marketplace)

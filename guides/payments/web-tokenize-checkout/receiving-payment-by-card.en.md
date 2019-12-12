@@ -15,7 +15,7 @@ Set the viewport by adding the following code inside the `<head>` tag of your we
 This _fragment of HTML code_ will insert a payment button. When the buyer presses the button, the checkout will be displayed. Include the following code in the place where the button will be located within your website:
 
 ```html
-<form action="/procesar-pago" method="POST">
+<form action="https://www.my-site.com/process-payment" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
@@ -28,7 +28,7 @@ This _fragment of HTML code_ will insert a payment button. When the buyer presse
 >
 > Note
 >
-> You can find the public key in the [credentials](https://www.mercadopago.com.ar/account/credentials) page.
+> You can find the public key in the [credentials]([FAKER][CREDENTIALS][URL]) page.
 
 ### Step 3: Get the data
 
@@ -230,4 +230,4 @@ To make testing payments (with your TEST credentials), you need to use [test car
 
 ### Installments offer
 
-We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com/mla/ayuda/banners).
+We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com.ar/developers/en/guides/banners/introduction/).

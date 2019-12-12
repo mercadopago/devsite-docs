@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Payments without CVV
 
 >INFO 
@@ -12,8 +16,14 @@
 > B. In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
 >
 > C. Pre-Approval is only available through the personalized checkout of Mercado Pago or web tokenize checkout, that is, via the use of our API's.
+
+<br/>
+
+> NOTE
 >
->(*) NOTE: In the case of Master and Amex credit cards, the credit card will appear as: "MERPAG * <brand_name>". So for these means that for this payments methods you can communicate: "In your summary you will see the charge as MERPAG * <brand_name>" where <Brand_name> is configured from the Market account Seller payment: Menu -> Settings> Name of my business.
+> Note
+>
+> In the case of Master and Amex credit cards, the credit card will appear as: "MERPAG * <brand_name>". So for these means that for this payments methods you can communicate: "In your summary you will see the charge as MERPAG * <brand_name>" where <Brand_name> is configured from the Market account Seller payment: Menu -> Settings> Name of my business.
 
  With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
  
@@ -37,10 +47,9 @@ To know the data of your client, you can obtain it in the following way:
 [[[
 ```php
 <?php
-require_once ('mercadopago.php'); $mp = new MP ("TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-
-186597721"); $filters = array ("email" => "your.payer@email"); $customer = $mp->get
-("/v1/customers/search", $filters);
+require_once ('mercadopago.php'); $mp = new MP ("ENV_ACCESS_TOKEN"); 
+$filters = array ("email" => "your.payer@email"); 
+$customer = $mp->get ("/v1/customers/search", $filters);
 print_r ($customer);
 ?>
 ```
@@ -53,9 +62,7 @@ Once you have obtained the id of your client, you can look for the card in the f
 ```php
 <?php
 require_once ('mercadopago.php');
-$mp = new MP ("TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-
-186597721");
+$mp = new MP ("ENV_ACCESS_TOKEN");
 $cards = $mp->get ("/v1/customers/[CUSTOMER_ID]/cards");
 print_r ($cards["response"]);
 ?>
@@ -68,9 +75,7 @@ print_r ($cards["response"]);
 ```php
 <?php
 require_once ('mercadopago.php');
-$mp = new MP ("TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-
-186597721");
+$mp = new MP ("ENV_ACCESS_TOKEN");
 $card_token = $mp->post ("/v1/card_tokens", array("card_id" => "cardId"));
 print_r ($card_token);
 ?>
@@ -84,8 +89,7 @@ print_r ($card_token);
 ```php
 <?php
 require_once ('mercadopago.php');
-$mp = new MP('TEST-8770266498150001-062911-
-821263869b3801c4f007924913b979ea__LB_LD__-186597721');
+$mp = new MP('ENV_ACCESS_TOKEN');
 $payment_data = array(
 "transaction_amount'" => 100,
 "token'" => "ff8080814c11e237014c1ff593b57b4d",
@@ -114,7 +118,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
  It is very important that before going to production you perform tests of the complete flow, verifying that the creation of payments is done correctly and that the messages are effective when communicating to the user.
 
  A good experience of your customers in the _checkout_ helps to improve the conversion.
- You have a couple of [credentials of _sandbox_](https://www.mercadopago.com.ar/account/credentials?type=custom), which allow you to test all the integration in an exact replica of the Production Mode, being able to simulate transactions using the test cards:
+ You have a couple of [credentials of _sandbox_]([FAKER][CREDENTIALS][URL]), which allow you to test all the integration in an exact replica of the Production Mode, being able to simulate transactions using the test cards:
 
 | Country     	 | Visa 				       | Mastercard        | American Express |
 | ---- 		   | ---- 				       | ----------        | ---------------- |

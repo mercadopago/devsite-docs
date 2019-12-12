@@ -46,20 +46,16 @@ La integración con Mercado Pago adicionalmente te permite utilizar el modelo h�
 
 ### Si ya estás operando con Mercado Pago
 
-* Ponte en contacto con tu ejecutivo de cuentas
-
-### Si no estás operando con Mercado Pago aún <br> (o no tienes un ejecutivo asignado)
-
-* [Completá el siguiente formulario](http://e.mercadolibre.com.ar/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlYQGsPShNr7YSD716AmfdSgiLzc9zaHbPGEzcMTwa2VXMtX%3DYQpglLjHJlYQGmfifPS0tzgzeKqXw7tLnnzgHYCPEBohUzdBmze09&_ei_=ErPkEDqzVJEurmXsCCFMSWw) y nos comunicaremos contigo
+* Ponte en contacto con tu ejecutivo de cuentas.
 
 ## Costos de servicio
 
 Los costos de servicio en el **Modelo Gateway** son negociados uno a uno.
 El costo dependerá según el volumen mensual operado del vendedor.
 
-## Próximos pasos
+### Próximos pasos
 
-* [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/configuration) en el backoffice de Mercado Pago
-* [Integrá el Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway
+* [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/configuration) en el backoffice de Mercado Pago
+* [Integrá el Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway
 * [Integrá la API](https://www.mercadopago.com.ar/developers/es/guides/gateway/api/receiving-payments) en Modelo Gateway
 * [Integrá pagos avanzados](https://www.mercadopago.com.ar/developers/es/guides/gateway/advanced/introduction) en Modelo Gateway

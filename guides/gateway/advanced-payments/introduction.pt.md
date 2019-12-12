@@ -4,47 +4,45 @@ sites_supported:
   - mco
 ---
 
-# Pagamentos em modo Gateway em Advanced Payments
+# Pagamentos no modo Gateway em Advanced Payments
 
 ## Introdução
 
-A modalidade de `Gateway` em Advanced Payments permite realizar múltiplos pagamentos com distintos números de comércio próprio e um mesmo card token. Isso implica que o comprador deve ingressar os dados do seu cartão uma única vez
+A modalidade de `Gateway` em Advanced Payments permite realizar múltiplos pagamentos com diferentes números de comércio próprio e um mesmo card token. Isso significa que o comprador deve ingressar os dados de seu cartão uma única vez.
 
-Para poder realizar pagamentos nessa modalidade, deve configurar o número de comércio, acordos e métodos de pagamento na sua conta do Mercado Pago. Os mesmos serão utilizados na integração com a API.
+Para poder realizar pagamentos nessa modalidade, é necessário configurar o número de comércio, acordos e meios de pagamento associados na configuração da sua conta Mercado Pago. Eles serão utilizados na integração com a API.
 ----[mco]----
-No caso da sua conta do Mercado Pago ser da Colômbia, entre em contato com o seu executivo de contas para poder configurar os números de comércio, acordos e métodos de pagamento associados.
-
+No caso da sua conta Mercado Pago ser da Colômbia, entre em contato com o seu executivo de contas para poder configurar os números de comércio, acordos e meios de pagamento associados.
 ------------
 
 ## Configurar Aplicação para processar pagamentos no modo Gateway
 
 ### Criar uma conta no Mercado Pago
 
-É preciso criar uma conta no site do Mercado Pago do país onde deseja receber pagamentos. A modalidade Gateway está disponível atualmente apenas para Argentina e Colômbia:
+Você deve criar uma conta no website do Mercado Pago do país onde desejar receber pagamentos. Atualmente, a modalidade Gateway é disponibilizada apenas para Argentina e Colômbia:
 
-* Argentina: www.mercadopago.com.ar
-* Colombia: www.mercadopago.com.co
+* [Argentina](https://www.mercadopago.com.ar)
+* [Colombia](https://www.mercadopago.com.co)
 
 ### Criar uma aplicação
 
-A aplicação será utilizada para poder configurar os números de comércio, acordos, meios de pagamento e, posteriormente, realizar a integração com a API. É necessário criar uma aplicação acessando a página de aplicações do Mercado Pago do país correspondente a sua conta, completando as informações solicitadas.
+A aplicação será utilizada para poder configurar os números de comércio, acordos e meios de pagamento e, depois, realizar a integração com a API. Deverá criar uma aplicação acessando a página de aplicações do Mercado Pago do país correspondente à sua conta e preenchendo as informações requisitadas:
 
-* Argentina: https://applications.mercadopago.com.ar
-* Colombia: https://applications.mercadopago.com.co
+* [Argentina](https://applications.mercadopago.com.ar)
+* [Colombia](https://applications.mercadopago.com.co)
 
-Uma vez criada a aplicação, será fornecido o valor de APP_ID, que será necessário para os passos seguintes.
-
+Uma vez criada a aplicação, será obtido o valor de APP_ID, que será necessário para os passos seguintes.
 
 ### Habilitar a aplicação para receber pagamentos na modalidade Gateway
 
-É preciso contatar seu executivo de conta informando o APP_ID da sua aplicação a fim de solicitar a habilitação da modalidade Gateway.
+É necessário contatar seu executivo de contas e informar o APP_ID de seu aplicativo, a fim de requerer a habilitação da modalidade Gateway.
 
-### Configurar informações correspondente a números de comércio, acordos e meios de pagamento associados
+### Configurar informações correspondentes a números de comércio, acordos e meios de pagamento associados
 
-Para poder realizar pagamentos nessa modalidade, é preciso configurar seus números de comércio, acordos e meios de pagamento associados na sua conta do Mercado Pago. Os mesmos serão utilizados na integração com a API.
+Para poder realizar pagamentos nessa modalidade, você deverá configurar seus números de comércio, acordos e meios de pagamento associados na sua conta Mercado Pago. Eles serão utilizados na integração com a API.
 
-Caso sua conta do Mercado Pago seja da Colômbia, contate seu executivo de contas para poder configurar seus números de comércio, acordos e meios de pagamento associados.
+Se sua conta Mercado Pago for da Colômbia, entre em contato com seu executivo de contas para poder configurar seus números de comércio, acordos e meios de pagamento associados.
 
 ### Gerar um token de cartão
 
-É preciso gerar o token de cartão do pagador para poder processar pagamentos com a API. Este guia assume que você já sabe [como gerar um token de cartão](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/receiving-payment-by-card).
+É necessário gerar o token de cartão do pagador para poder processar pagamentos com a API. Este guia assume que você já sabe [Como gerar um token de cartão](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/receiving-payment-by-card).

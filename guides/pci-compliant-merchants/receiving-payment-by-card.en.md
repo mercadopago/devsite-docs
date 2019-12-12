@@ -183,21 +183,13 @@ Mercado Pago has its own fraud prevention tools. Whenever possible, we recommend
 
 ### Device deployment on the Web
 
-To deploy the generation of the device on your website, you must add the following code to your checkout replacing field publicKey with your credentials:
+To deploy the generation of the device on your website, you must add the following code to your checkout:
 
-```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-    });
-}
-document.body.appendChild(dmlscript);
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-
-It is important that you submit the automatically created global variable `MP_DEVICE_SESSION_ID` to your server and add the following header to the request when creating the payment:
+It is important that you submit the automatically created javascript global variable `MP_DEVICE_SESSION_ID` to your server and add the following header to the request when creating the payment:
 
 ```http
 X-meli-session-id: device_id
@@ -258,13 +250,13 @@ Our SDKs have features you can use to capture this information.
 
 ```android
 ===
-The [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) class will collect both device and fingerprint information.
+The [Device](https://github.com/mercadopago/px-android/blob/master/px-services/src/main/java/com/mercadopago/android/px/model/Device.java) class will collect both device and fingerprint information.
 ===
 new Device(context);
 ```
 ```swift
 ===
-The [Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) class will collect both device and fingerprint information.
+The [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) class will collect both device and fingerprint information.
 ===
 Device()
 ```

@@ -50,15 +50,7 @@ Para utilizar callbacks, simplemente pasa una función como último parámetro.
 
 ## Configuración
 
-Obtén tu **ACCESS_TOKEN** en los siguientes links:
-
-* Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-* Brasil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-* México: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-* Perú: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Obtén tu **ACCESS_TOKEN** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
 Para configurar el SDK debes usar el método **cofigure**.Este método recibe un objeto JSON. Las configuraciones válidas son:
 
@@ -147,7 +139,7 @@ _Callbacks:_
 ```javascript
 library.method(function (err, res) {
     if (err) return console.log(err);
-    
+
     console.log(res);
 })
 ```
@@ -219,7 +211,7 @@ Como resultado obtendras:
 
 ```javascript
 mercadopagoResponse {
-  body: 
+  body:
    { id: 2556382,
      date_created: '2017-01-19T17:00:21.000-04:00',
      date_approved: null,
@@ -237,7 +229,7 @@ mercadopagoResponse {
      sponsor_id: null,
      authorization_code: null,
      collector_id: 239656545,
-     payer: 
+     payer:
       { type: 'guest',
         id: null,
         email: 'test_user_3931694@testuser.com',
@@ -254,7 +246,7 @@ mercadopagoResponse {
      coupon_amount: 0,
      differential_pricing_id: null,
      deduction_schema: null,
-     transaction_details: 
+     transaction_details:
       { net_received_amount: 0,
         total_paid_amount: 10,
         overpaid_amount: 0,
@@ -693,7 +685,7 @@ mercadopago.payment.create({
 
 ## Paginación
 
-### Wrapper Automatico de paginación 
+### Wrapper Automatico de paginación
 
 Hay algunos endpoints que devuelven la respuesta paginada. Por ejemplo, si está buscando todos los pagos que se hicieron desde su cuenta. Veamos un ejemplo:
 
@@ -711,9 +703,9 @@ El output será:
 
 ```javascript
 mercadopagoResponse {
-  body: 
+  body:
    { paging: { total: 110, limit: 30, offset: 0 },
-     results: 
+     results:
       [ [Object],
         [Object],
         [Object],
@@ -828,7 +820,7 @@ Merchant Order:
 
 Payment:
 ```
-/v1/payments/[ID]?access_token=[ACCESS_TOKEN] 
+/v1/payments/[ID]?access_token=[ACCESS_TOKEN]
 ```
 
 ### IPN Manager
@@ -847,7 +839,7 @@ El output será:
 
 ```javascript
 mercadopagoIpnResponse {
-  body: 
+  body:
    { id: 2556382,
      date_created: '2017-01-19T17:00:21.000-04:00',
      date_approved: null,
@@ -865,7 +857,7 @@ mercadopagoIpnResponse {
      sponsor_id: null,
      authorization_code: null,
      collector_id: 239656545,
-     payer: 
+     payer:
       { type: 'guest',
         id: null,
         email: 'test_user_3931694@testuser.com',
@@ -882,7 +874,7 @@ mercadopagoIpnResponse {
      coupon_amount: 0,
      differential_pricing_id: null,
      deduction_schema: null,
-     transaction_details: 
+     transaction_details:
       { net_received_amount: 0,
         total_paid_amount: 10,
         overpaid_amount: 0,
@@ -905,6 +897,3 @@ mercadopagoIpnResponse {
 ```
 
 Dentro de la respuesta encontrará el **topic** recibido en la request, por lo que no necesita obtener el valor de la misma.
-
-
-

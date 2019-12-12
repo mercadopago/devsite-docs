@@ -9,7 +9,7 @@ Para obtener más información sobre las posibilidades que ofrece Wix, acceda a 
 
 Wix permite operar Mercado Pago en la siguiente modalidad:
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Recibir pagos en su tienda utilizando el checkout del propio Mercado Pago. En este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 
@@ -29,7 +29,7 @@ Los pasos para empezar a operar con Mercado Pago son los siguientes:
 
 ![wix_configuration3](/images/wix_configuration3.png)
 
-4. Para conectar la cuenta se solicita dos informaciones: **ID DEL CLIENTE** y **CLIENT_SECRET**. Estos datos son las credenciales de Mercado Pago y están disponibles en el siguiente [LINK](https://www.mercadopago.com/mla/account/credentials?type=basic) de su cuenta.
+4. Para conectar la cuenta se solicita dos informaciones: **ID DEL CLIENTE** y **CLIENT_SECRET**. Estos datos son las credenciales de Mercado Pago y están disponibles en el siguiente [LINK]([FAKER][CREDENTIALS][URL_BASIC]) de su cuenta.
 
 ![wix_configuration4](/images/wix_configuration4.png)
 

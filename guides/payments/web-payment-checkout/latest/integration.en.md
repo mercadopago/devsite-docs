@@ -8,17 +8,8 @@ sites_supported:
   - mlc
 ---
 
-# Integrate Smart Checkout
+# Integrate Checkout Mercado Pago
 
-> INDEX
->
-> In this page
->
->
->
-> [How do I integrate?](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/integration#bookmark_how_do_i_integrate?)
->
-> [Steps to integrate](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/integration#bookmark_steps_to_integrate)
 
 
 ## How do I integrate?
@@ -37,7 +28,7 @@ sites_supported:
 
 ## Steps to integrate
 
-Installing the Smart Checkout consists of two steps:
+Installing the Checkout Mercado Pago consists of two steps:
 
 ### 1. Generate your preference
 
@@ -70,7 +61,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Add the <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credentials</a> to enable the use of the Mercado Pago SDK:<br/>
+<br/><br/>1.2 Add the <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> to enable the use of the Mercado Pago SDK:<br/>
 
 [[[
 ```php
@@ -203,8 +194,8 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# This value replaces the String "<%= @init_point %>" in your HTML
-@init_point = preference["response"]["init_point"]
+# This value replaces the String "<%= @preference_id %>" in your HTML
+@preference_id = preference["response"]["id"]
 ```
 ```csharp
 // Mercado Pago SDK
@@ -248,7 +239,7 @@ curl -X POST \
 
 ### 2. Add the checkout to your website
 
-Finally, add the following code to show the payment button of your Smart Checkout in the place you want it to appear.
+Finally, add the following code to show the payment button of your Checkout Mercado Pago in the place you want it to appear.
 
 [[[
 ```php
@@ -279,7 +270,7 @@ Finally, add the following code to show the payment button of your Smart Checkou
 <form action="/payment-process" method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
+   data-preference-id="<%= @preference_id %>">
   </script>
 </form>
 ```
@@ -301,13 +292,13 @@ Finally, add the following code to show the payment button of your Smart Checkou
 > Do not forget to access from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
 
 #### Excellent! You finished your integration.
-_Click on the link within your site and [test the integration of your Smart Checkout.](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Click on the link within your site and [test the integration of your Checkout Mercado Pago.](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > NOTE
 >
 > Note
 >
-> This documentation refers to the new version of the Smart Checkout. **To view the previous version**, go to the [old Smart Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
+> This documentation refers to the new version of the Checkout Mercado Pago. **To view the previous version**, go to the [old Checkout Mercado Pago section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
 
 ---
 

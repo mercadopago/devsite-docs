@@ -10,26 +10,11 @@ sites_supported:
 
 # Test your integration
 
-> INDEX
->
-> In this page
->
->
->
-> [How to test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_test_your_integration)
->
-> [How to create users](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_how_to_create_users)
->
-> [Test the payment flow](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_the_payment_flow)
->
-> [Test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_test_cards)
->
-> [Start receiving payments](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration#bookmark_start_receiving_payments)
 
 
 ## How to test my integration
 
-**Test users allow you to test your Smart Checkout** by generating payment flows in an exact copy of your integration.
+**Test users allow you to test your Checkout Mercado Pago** by generating payment flows in an exact copy of your integration.
 
 User types | Description
 ------------ | -------------
@@ -79,7 +64,7 @@ curl -X POST \
 
 ### 1. Configure the checkout with the information of your selling user
 
-Generate a preference with the <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credentials</a> of the test user that you want to use as a seller.
+Generate a preference with the <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> of the test user that you want to use as a seller.
 
 ### 2. Make a payment with your buyer user
 
@@ -125,7 +110,7 @@ To **test different payment results,** complete the information you want in the 
 
 ## Start receiving payments
 
-To start charging, you must complete the form <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> I want to go to production.</a>.
+To start charging, you must complete the form <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> I want to go to production.</a>.
 
 Upon completing the form, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
 

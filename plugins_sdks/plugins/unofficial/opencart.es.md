@@ -1,14 +1,6 @@
 # OpenCart
 
-## Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
-
-* [Funcionalidades](#bookmark_Funcionalidades)
-* [Requisitos](#bookmark_Requisitos)
-* [Versiones](#bookmark_Versiones)
-* [Instalación](#bookmark_Instalación)
-* [Configuración](#bookmark_Configuración)
-* [Notificaciones](#bookmark_Notificaciones)
-* [Actualización](#bookmark_Actualización)
+#### Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
 
 ## Funcionalidades
 
@@ -101,7 +93,7 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 
  [Open cart configuration page] (https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
 
-2. Configure su **CLIENT_ID** y **CLIENT_SECRET**, o **PUBLIC_KEY** y **ACCESS_TOKEN** (dependiendo de qué módulo está utilizando). [Obtenga sus credenciales] (https://www.mercadopago.com/mlb/account/credentials).
+2. Configure su **CLIENT_ID** y **CLIENT_SECRET**, o **PUBLIC_KEY** y **ACCESS_TOKEN** (dependiendo de qué módulo está utilizando). [Obtenga sus credenciales]([FAKER][CREDENTIALS][URL]).
 
 3. Si está utilizando **Checkout Transparente** o **Checkout Básico**, seleccione el país relacionado con su cuenta de ** MercadoPago **. Si está utilizando **Ticket Checkout**, no es necesario configurar el país.
 
@@ -129,6 +121,6 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 Su tienda se sincronizará automáticamente con MercadoPago. La URL de notificación se enviará en cada pago.
 
 
-## Actualización
+### Actualización
 
-Siga los mismos pasos que para [instalar el módulo](##bookmark_Instalación).
+Siga los mismos pasos que para [instalar el módulo](##bookmark_instalación).

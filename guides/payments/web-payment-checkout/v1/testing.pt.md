@@ -16,7 +16,7 @@ sites_supported:
 >
 > Esta documentação é referente à versão anterior do Checkout.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Smart Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
 Antes de partir para a produção, é muito importante que realize testes de fluxo de pagamentos, verificando se as configurações feitas nas preferências realmente estão no checkout.
 
@@ -57,7 +57,7 @@ Utilize o *site_id* para indicar o país de onde quer realizar os testes.
 
   $body = array(
     "json_data" => array(
-      "site_id" => "[FAKER][GLOBALIZE][UPPER_SITE_ID]"
+      "site_id" => "[FAKER][GLOBALIZE][SITE_ID]"
     )
   );
 
@@ -103,7 +103,7 @@ Você também pode [usar cartões de teste para formas de pagamento locais de ca
 
 O processo completo para testar o checkout é o seguinte:
 
-1. Inicie a sessão no Mercado Pago com o **vendedor** e obtenha as [credenciais](https://www.mercadopago.com/mla/account/credentials) para configurá-las na criação da preferência de pagamento.
+1. Inicie a sessão no Mercado Pago com o **vendedor** e obtenha as [credenciais]([FAKER][CREDENTIALS][URL]) para configurá-las na criação da preferência de pagamento.
 2. Encerre a sessão no Mercado Pago.
 3. Envie o e-mail do **comprador** na preferência de pagamento.
 4. Preencha os dados do formulário, inserindo os dígitos de um cartão de teste. Na data de vencimento é necessário inserir qualquer data posterior à data atual e o código de segurança aleatório de 4 dígitos para cartões Amex ou 3 dígitos para quaisquer outros cartões.

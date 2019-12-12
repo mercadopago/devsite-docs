@@ -10,30 +10,6 @@ sites_supported:
 
 # Other functionalities
 
-----[mla, mlb]----
-> INDEX
->
-> In this page
->
->
->
-> [Example of a complete preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_example_of_a_complete_preference)
->
-> [Attributes for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_preference)
->
-> [Payments with Two Credit Cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_payments_with_two_credit_cards)
-------------
-----[mlc, mco, mlu, mlm]----
-> INDEX
->
-> In this page
->
->
->
-> [Example of a complete preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_example_of_a_complete_preference)
->
-> [Attributes for preference](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_preference)
-------------
 
 You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
@@ -220,7 +196,7 @@ If you want to enable the payment of a preference with a certain duration, you c
 
 ### Sponsor ID
 
-The `sponsor_id` attribute is an identifier of the developer or software company that performs the Smart Checkout integration, this data is visible in the preference and in the payment.
+The `sponsor_id` attribute is an identifier of the developer or software company that performs the Checkout Mercado Pago integration, this data is visible in the preference and in the payment.
 
 ```json
 "sponsor_id": 123456789

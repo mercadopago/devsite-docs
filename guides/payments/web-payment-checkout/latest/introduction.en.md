@@ -8,10 +8,12 @@ sites_supported:
   - mlc
 ---
 
-# What is the Smart Checkout?
+# What's Checkout Mercado Pago?
 <br/>
 
-Smart Checkout of Mercado Pago is the integration that **allows you to charge through our web form from any device** in a simple, fast and secure way. 
+Checkout Mercado Pago of Mercado Pago is the integration that **allows you to charge through our web form from any device** in a simple, fast and secure way. 
+
+Mercado Pago Checkout Mercado Pago is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
 
 ----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
@@ -20,60 +22,61 @@ Smart Checkout of Mercado Pago is the integration that **allows you to charge th
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
-## Smart Checkout offers:
+## Checkout Mercado Pago offers:
 
 ----[mla]----
-* Payment with the main <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
 ------------
 ----[mlm]----
-* Payment with the main <a href="https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+*  The most popular <a href="https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
 ------------
 ----[mlc]----
-* Payment with the main <a href="https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular <a href="https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
 ------------
 ----[mlu]----
-* Payment with the main <a href="https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular <a href="https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
 ------------
 ----[mco]----
-* Payment with the main <a href="https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular <a href="https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
 ------------
 ----[mlb]----
-* Payment with the main <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank">payment methods</a> in the country.
-------------
-* A **shopping experience that is adapted** and accessible from any cell phone or computer device on your site.  
-* **One click purchases.** When paying with a Mercado Pago account, the details and cards of the buyers are saved, so it allows payments by entering only the security code or money in account.
-* **Guest purchases.** It is not necessary to create a Mercado Pago account in order to make the payment.
-----[mla, mlb]----
-* **Payment with two different cards.** For example, i cases of high amounts.
+* The most popular <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank">payment methods</a> in the country.
 ------------
 
-## Differences between the Smart Checkout with other Mercado Pago tools
+* A shopping experience on your site that's accessible across devices.
+* **One-click purchases.** When paying with a Mercado Pago account, user information and cards can be saved, allowing payments that only requires a security code or money in your account.
+* **Guest purchases**. Having a Mercado Pago account is not required to make a payment.
+----[mla, mlb]----
+* **Split Payments.** Customers can pay with two cards. This is a very useful feature in cases like high amount transactions.
+------------
+
+## Checkout Mercado Pago vs. other Mercado Pago tools
 
 ----[mla, mlb]----
-                                   | Smart Checkout|Web Tokenize Checkout|      API
+                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |
-Optimized for the best conversion	   |      ✔      |         ✔           |
-Optimized to improve approval        |      ✔      |                     |  
-Payment of guest users        	     |      ✔      |         ✔           |      ✔
-Payment of registered users          |      ✔      |                     |
+Conversion optimization	   |      ✔      |         ✔           |
+Approval optimization       |      ✔      |                     |  
+Guest payments        	     |      ✔      |         ✔           |      ✔
+Registered users payments          |      ✔      |                     |
 Fraud prevention               	     |      ✔      |         ✔           |      ✔
-Payment completion screen		         |      ✔      |                     |
-Payment with two cards		           |      ✔      |                     |
+Order completed page		         |      ✔      |                     |
+Split payments		           |      ✔      |                     |
 
 ------------
 ----[mlm, mlu, mco, mlc]----
-                                   | Smart Checkout|Web Tokenize Checkout|      API
+                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |
-Optimized for the best conversion	   |      ✔      |         ✔           |
-Optimized to improve approval        |      ✔      |                     |  
-Payment of guest users        	     |      ✔      |         ✔           |      ✔
-Payment of registered users          |      ✔      |                     |
+Conversion optimization	   |      ✔      |         ✔           |
+Approval optimization        |      ✔      |                     |  
+Guest Payments      	     |      ✔      |         ✔           |      ✔
+Registered users payments          |      ✔      |                     |
 Fraud prevention               	     |      ✔      |         ✔           |      ✔
-Payment completion screen		         |      ✔      |                     |
+Order completed page		         |      ✔      |                     |
 
 ------------
 
@@ -81,7 +84,7 @@ Payment completion screen		         |      ✔      |                     |
 >
 > Note
 >
-> This documentation refers to the new version of the Smart Checkout. **To view the previous version**, go to the [old Smart Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
+> This article is about the last version of Checkout Mercado Pago. **For the previous version**, please consult the [old Checkout Mercado Pago section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
 
 ---
 
@@ -89,9 +92,9 @@ Payment completion screen		         |      ✔      |                     |
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Requirements to integrate
+> Integration requirements
 >
-> To integrate, you have to meet the necessary requirements.
+> Prerequisites to get started
 >
-> [Requirements to integrate](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements/)
+> [Integrations requirements](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/previous-requirements/)
 >

@@ -10,26 +10,11 @@ sites_supported:
 
 # Prueba tu integración
 
-> INDEX
->
-> En esta página
->
->
->
-> [Cómo probar mi integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_probar_mi_integración)
->
-> [Cómo crear usuarios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_cómo_crear_usuarios)
->
-> [Prueba el flujo de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_prueba_el_flujo_de_pago)
->
-> [Tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_tarjetas_de_prueba)
->
-> [Comenzar a recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration#bookmark_comenzar_a_recibir_pagos)
 
 
 ## Cómo probar mi integración
 
-**Los usuarios de prueba te permiten probar tu Smart Checkout** al generar flujos de pagos en una copia exacta de tu integración.
+**Los usuarios de prueba te permiten probar tu Checkout Mercado Pago** al generar flujos de pagos en una copia exacta de tu integración.
 
 Tipos de usuarios | Descripción
 ------------ | -------------
@@ -79,7 +64,7 @@ curl -X POST \
 
 ### 1. Configura el checkout con los datos de tu usuario vendedor
 
-Genera una preferencia con las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> del usuario de prueba que quieras usar como vendedor.
+Genera una preferencia con las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales</a> del usuario de prueba que quieras usar como vendedor.
 
 ### 2. Realiza un pago con tu usuario comprador
 
@@ -125,7 +110,7 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 
 ## Comenzar a recibir pagos
 
-Para empezar a cobrar, debes completar el formulario <a href="https://www.mercadopago.com/mla/account/credentials/" target="_blank"> Quiero ir a producción</a>.
+Para empezar a cobrar, debes completar el formulario <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Quiero ir a producción</a>.
 
 Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 

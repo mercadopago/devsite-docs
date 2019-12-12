@@ -22,57 +22,34 @@ Recibir pagos directamente en los códigos de comercio del vendedor utilizando t
 
 Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
 
-## Configurar VTEX para operar en modo Agregador
-
-Los pasos a seguir para usar y configurar el checkout personalizado modo Agregador son:
-
-1. [Configurar Afiliación](##Configurar_afiliación_en_modo_agregador).
-2. [Configurar Planes de Pago Nativos](#bookmark_Configurar_plan_de_pago_Nativo_en_modo_agregador).
-3. [Configurar Planes de Pago Off-Line](#bookmark_Medios_Off-Line_por_país_en_modo_agregador).
-4. [Configurar Planes de Pago Personalizados](#bookmark_Configurar_plan_de_pago_personalizado).
-
-Para usar el checkout redireccionado en modo agregador se debe realizar lo que se describe a continuación:
-1. [Configurar Afiliación](#bookmark_Configurar_afiliación_checkout_redireccionado).
-2. [Configurar plan de pago checkout redirect](#bookmark_Configurar_plan_de_pago_checkout_redireccionado).
-
-## Configurar VTEX para operar en modo Gateway
-1. [Configurar Afiliación](#bookmark_Configurar_afiliación_para_operar_en_modo_Gateway).
-2. [Configurar Planes de pago Nativos](#bookmark_Configurar_plan_de_pago_para_operar_en_modo_Gateway).
-
-## Configurar Device en VTEX
-1. [Configurar DeviceID](#bookmark_Configurar_DeviceID).
-
-## Interpretar logs de VTEX
-1. [Realizar las interpretaciones de la respuesta del pago en vtex](##Interpretar_log_de_VTEX).
-
 ## Configurar afiliación en modo agregador
 
 Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 1. Seleccione en el menú lateral la opción "Pago".
-2. Configuraciones. 
+2. Configuraciones.
 
     ![VTEX Configuration Page](/images/vtex-config.png)
-    
+
 3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
 4. Añadir nueva afiliación con el botón (+)
 
     ![Affiliation search bar](/images/vtex-afiliation.png)
-    
+
 5. Buscar y seleccionar "MercadoPagoV1".
 
     ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
-    
-    
+
+
 6. Completar la información requerida en la afiliación.
 
     ![Complete affliation information](/images/vtex-afiliation-4.png)
 
-----[mlc, global]----
+----[mlc]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -92,11 +69,11 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 ------------
 
-----[mlb, global]----
+----[mlb]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -116,11 +93,11 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 ------------
 
-----[mla, global]----
+----[mla]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -140,11 +117,11 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 ------------
 
-----[mpe, global]----
+----[mpe]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -164,11 +141,11 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 ------------
 
-----[mco, global]----
+----[mco]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -188,35 +165,11 @@ Para operar en modo Agregador solo es necesario configurar una afiliación.
 
 ------------
 
-----[mlv, global]----
+----[mlu]----
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: No se utiliza - dejar en blanco.
-- Processing Mode: Seleccionar aggregator.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: Yes.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: No se utiliza - dejar en blanco.
-
-------------
-
-----[mlu, global]----
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: No se utiliza - dejar en blanco.
@@ -334,7 +287,7 @@ Uruguay: Oca.
 
 ![Custom plan](/images/vtex-custom-4.png)
 
-----[mlc, global]----
+----[mlc]----
 ### Configurar plan de pago Webpay en modo agregador
 
 1. Desplegar el menú de Catalog .
@@ -358,16 +311,14 @@ Uruguay: Oca.
 10. Salvar la configuración.
 
     ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
-    
+
 ------------
+----[mla]----
 
-
-----[mla, global]----
-
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Argentina 
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre                   | Descripción              | Medio de pago |       Bines {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pago en adquiriente (opcional) |
-|--------------------------|--------------------------|---------------|:-------------------------------------------------------:|------------------------------------------|
+|----|-----|-----|:------:|------|
 | Argencard                | Argencard                | Mastercard    | 501105-501105                                           | argencard                                |
 | Cencosud                 | Cencosud                 | Mastercard    | 603493-603493                                           | cencosud                                 |
 | CMR                      | CMR                      | Mastercard    | 557039-557039                                           | cmr                                      |
@@ -377,32 +328,32 @@ Uruguay: Oca.
 
 ------------
 
-----[mlc, global]----
+----[mlc]----
 
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Chile
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre | Descripción | Medio de pago |                                   Bines {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pago en adquiriente (opcional) |
-|--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
+|----|---|---|:-----:|-----|
 | Presto | Presto      | Mastercard    | 920000-920099                                                                                                   | presto                                   |
 | Magna  | Magna       | Mastercard    | 568000-568099                                                                                                   | magna                                    |
 | CMR    | CMR         | Mastercard    | 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984 | cmr                                      |
 
 ------------
 
-----[mco, global]----
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Colombia
+----[mco]----
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre  | Descripción | Medio de pago | Bines {min}-{max},{min}-{max},{bin1},{bin2} | Código de pago en adquiriente (opcional) |
-|---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
+|----|----|---|:---:|-----|
 | Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
 
 ------------
 
-----[mlu, global]----
-## Configurar Plan de Pago Personalizado en modo agregador - Tarjetas de Uruguay
+----[mlu]----
+### Configurar Plan de Pago Personalizado en modo agregador
 
 | Nombre | Descripción | Medio de pago |                     Bines {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pago en adquiriente (opcional) |
-|--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
+|---|---|--------|:-----:|-----|
 | OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
 
 ------------
@@ -420,17 +371,17 @@ El checkout redirect puede convivir con el checkout transparente.
 5. Nueva Afiliación
 
  ![Gateway affiliation bar](/images/vtex-afiliation.png)
-    
-6. Buscar y seleccionar "MercadoPago". 
+
+6. Buscar y seleccionar "MercadoPago".
 7. Completar la siguiente información requerida en la afiliación.
 - Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
-- Client_secret -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
-- AccessToken de Mercado Pago -> Ver [Credenciales](https://www.mercadopago.com/mla/account/credentials).
+- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
+- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
 - Pais -> Seleccionar País
 - Time Zone -> Región que define la hora local
 - orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
-- maxInstallments -> Cantidad máxima de cuotas 
+- maxInstallments -> Cantidad máxima de cuotas
 - Categoria Principal -> Categoría del producto
 - Tipo de Estorno
     - Automatico sempre que possivel - Genera la devolución del pago en MP
@@ -443,7 +394,7 @@ Luego de configurar la afiliación es necesario agregar el plan de pago
 3. Ingresar en Configuración
 
     ![Setting payment plan - Checkout redirected](/images/vtex-config.png).
-    
+
 4. Planes de pago
 5. Nuevo plan de pago
 6. Buscar en la grupo OTRO - Mercado Pago
@@ -453,7 +404,7 @@ Luego de configurar la afiliación es necesario agregar el plan de pago
 10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
 11. Salvar la configuración
 
-----[mla, mco, global]----
+----[mla, mco]----
 ## Configurar afiliación para operar en modo Gateway
 Cuando tu asesor comercial te haya informado que ya están cargados los números de comercio y te haya pasado los `merchant_account_id` de cada número de comercio realizar los siguientes pasos para cada una de las tarjetas que tengas número de comercio:
 1. Desplegar el menú lateral
@@ -461,21 +412,21 @@ Cuando tu asesor comercial te haya informado que ya están cargados los números
 3. Ingresar en Configuración
 
     ![VTEX Configuration Page - Gateway](/images/vtex-config.png).
-    
+
 4. Afiliaciones
 5. Nueva Afiliación
 
  ![Affiliation search bar - Gateway](/images/vtex-afiliation.png)
-    
+
 6. Buscar y seleccionar "MercadoPagoV1".
 
     ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
-    
+
 7. Completar los campos que se describen a continuación:
 - Nombre de la afiliación: Nombre que identificará la afiliación.
 - OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: No se utiliza - dejar en blanco.
 - ExpiredTokenIn: No se utiliza - dejar en blanco.
 - Merchant Account Id: Completar con el id que fueron compartidos por su asesor comercial correspondientes a cada tarjeta.
@@ -500,12 +451,12 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 3. Ingresar en Configuración
 
     ![Setting payment plan - gateway](/images/vtex-config.png).
-    
+
 4. Planes de pago
 5. Nuevo plan de pago
 
     ![Payment methods page - gateway](/images/vtex-native-plan-3.png).
-    
+
 6. Seleccionar el medio de pago (crédito o débito) a cargar
 7. Colocar una descripción.
 8. Seleccionar la afiliación creada para este medio de pago
@@ -570,7 +521,7 @@ Los datos más significativos son los siguientes:
 - `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
 - `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
 - `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Codigo de comercio (solo para Gateway).
+- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
 
 Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
 

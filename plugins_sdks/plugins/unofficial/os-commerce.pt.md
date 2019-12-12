@@ -1,14 +1,6 @@
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
 
-* [Funcionalidades](#features)
-* [Versões disponíveis](#available_versions)
-* [Requisitos](#requirements)
-* [Instalação](#installation)
-* [Configuração](#setup)
-* [Suporte](#Support)
-
-<a name="features"></a>
-## Funcionalidades: ##
+## Funcionalidades
 
 O módulo do Mercado Pago para o OsCommerce esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
@@ -16,16 +8,14 @@ O módulo do Mercado Pago para o OsCommerce esta integrado com as seguintes func
     * Pagamento com dois cartões
 
 
-<a name="available_versions"></a>
-## Versões disponíveis: ##
+## Versões disponíveis
 
 Versão do Plugin | Status | Versões compativéis
 -------------- | ------ | -------------------
 v2.2 | Deprecated (Old version) | osCommerce 2.2
 v2.3 | Stable (Current version) | osCommerce 2.3
 
-<a name="requirements"></a>
-## Requisitos: ##
+## Requisitos
 
 **PHP**
 
@@ -36,9 +26,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 * MySQL v3+ (MySQL v5+ recommended)
 
-
-<a name="installation"></a>
-## Instalação: ##
+## Instalação
 
 1. Faça o download do modulo do Mercado Pago:
     * osCommerce 2.2
@@ -46,9 +34,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 2. Copie a pasta do modulo na Raiz da sua loja OsCommerce.
 
-
-<a name="setup"></a>
-## Configuração: ##
+## Configuração
 
 1. Na pagina de administração da sua loja, va até a opção **Modules > Payment**.
 
@@ -74,16 +60,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 8. Agora, é muito importante você configurar o seu **CLIENT_ID** e **CLIENT_SECRET**.
 
-	Obtenha o seu CLIENT_ID e CLIENT_SECRET de acordo com seu país:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
-  * Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
-
+	Obtenha o seu CLIENT_ID e CLIENT_SECRET na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
 
 	Depois de efetuar a instalação e configuração básica, outras opções estão disponíveis para serem configuradas:
 
@@ -116,8 +93,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 * Peru:
 	* **PEN** (Peruvian Sol)
 
-<a name="Suporte"></a>
-## Suporte: ##
+## Suporte
 
 Caso tenha alguma dúvida, problema ou erro temos um canal de atendimento.
 Escreva para o nosso [formulário de apoio](/support) com as seguintes informações:

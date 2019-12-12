@@ -5,7 +5,7 @@
 Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações para a API do Mercado Pago.
 
 ### Versões do .net suportadas:
-3.5 .Net Framework ou maior
+Nosso SDK é compatível com .NET versão 3.5 ou maior.
 
 ## Instalação
 
@@ -13,15 +13,15 @@ Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações pa
 
 **Usando Package Manager**
 
-`PM> Install-Package mercadopago-sdk -Version [VERSION-dx-dotnet]`
+`PM> Install-Package mercadopago-sdk -Version 1.2.0`
 
 **Usando .Net CLI**
 
-`> dotnet add package mercadopago-sdk --version [VERSION-dx-dotnet]`
+`> dotnet add package mercadopago-sdk --version 1.2.0`
 
 **Usando Packet CLI**
 
-`> paket add mercadopago-sdk --version [VERSION-dx-dotnet]`
+`> paket add mercadopago-sdk --version 1.2.0`
 
 ## Início Rápido
 
@@ -32,7 +32,7 @@ Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações pa
 ```
 
 2. Configure suas crecenciais.
--**Para Smart Checkout:**
+-**Para Checkout Mercado Pago:**
 
 ```csharp
  MercadoPago.SDK.ClientId = "YOUR_CLIENT_ID";

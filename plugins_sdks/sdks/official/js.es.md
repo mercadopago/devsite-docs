@@ -1,18 +1,5 @@
 #SDK Javascript#
 
-> WARNING
->
-> Índice de contenidos
->
-> - Incluye el SDK de MercadoPago.
-> - Configura tu clave pública.
-> - Obtén un token de uso único para la tarjeta.
-> - Obtén información del medio de pago.
-> - Obtén los tipos de documento.
-> - Obtén los emisores de la tarjeta.
-> - Obtén las cuotas y costos de financiación.
-
-
 El SDK Javascript de Mercado Pago te facilita obtener los datos de las tarjetas de tus clientes de forma segura.
 
 Al usar el SDK, y seguir los pasos que te indicamos, la información sensible de la tarjeta nunca viajará a tus servidores, asegurando el nivel adecuado de cumplimiento de la norma PCI DSS.
@@ -74,7 +61,7 @@ En la función de callback recibirás un objeto con las siguientes propiedades:
     }
 }
 ```
- 
+
 ##Obtén información del medio de pago
 
 Puedes obtener información de la tarjeta ingresada o del medio de pago seleccionado utilizando:
@@ -188,7 +175,7 @@ Ejemplo de respuesta:
 
 ##Obtén los emisores de la tarjeta
 
-Algunas tarjetas requieren que envíes información adicional del emisor. Para esto, el SDK de MecadoPago provee una función que te permite obtener los emisores de una tarjeta.
+Algunas tarjetas requieren que envíes información adicional del emisor. Para esto, el SDK de MercadoPago provee una función que te permite obtener los emisores de una tarjeta.
 ```javascript
 Mercadopago.getIssuers(paymentMethodId, issuersHandler);
 ```
@@ -258,7 +245,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 1,
         "installment_rate": 0,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 0,
@@ -270,7 +257,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 3,
         "installment_rate": 0,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
           "recommended_installment"
         ],
@@ -283,7 +270,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 6,
         "installment_rate": 26.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 3,
@@ -295,7 +282,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 9,
         "installment_rate": 42.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 5,
@@ -307,7 +294,7 @@ Ejemplo con {"bin": "530575", "amount": 10}:
       {
         "installments": 12,
         "installment_rate": 52.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 6,

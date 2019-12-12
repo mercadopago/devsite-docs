@@ -16,7 +16,7 @@ Establece el viewport agregando el siguiente código dentro de la etiqueta `<hea
 Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprador presione el botón se mostrará el checkout. Incluye el siguiente código en el lugar donde va a estar ubicado el botón dentro de tu sitio Web:
 
 ```html
-<form action="/procesar-pago" method="POST">
+<form action="https://www.mi-sitio.com/procesar-pago" method="POST">
   <script
     src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
@@ -29,7 +29,7 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
 >
 > Nota
 >
-> Puedes encontrar tu public key en la página de [credenciales](https://www.mercadopago.com.ar/account/credentials)
+> Puedes encontrar tu public key en la página de [credenciales]([FAKER][CREDENTIALS][URL])
 
 
 ### Paso 3: Obtener los datos
@@ -232,4 +232,4 @@ Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que u
 
 ### Promociones
 
-Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com/mla/ayuda/banners).
+Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/introduction/).

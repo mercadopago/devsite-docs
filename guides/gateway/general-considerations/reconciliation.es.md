@@ -27,7 +27,8 @@ Si deseas realizar la conciliación a través de tu sistema de gestión o con un
 
 Realizando un **GET** al endpoint /payments de la API de Mercado Pago puedes obtener el listado de operaciones:
 
-```curl -X GET \
+```curl
+curl -X GET \
 "https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN" \
 -H "Content-Type: application/json"
 -d "{
@@ -120,6 +121,6 @@ Elegí tu formato preferido y el archivo será generado
 
 > Si el archivo es muy grande lo recibirás unos minutos más tarde via e-mail a la casilla de tu cuenta de Mercado Pago
 
-## ¿Necesitás ayuda?
+### ¿Necesitás ayuda?
 
 Comunicate con tu ejecutivo de cuenta.

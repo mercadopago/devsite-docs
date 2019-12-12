@@ -1,13 +1,10 @@
 # Shopify  
 
-* [Features](#bookmark_Features)
-* [Configuration](#bookmark_Configuration)
-
 ## Features
 
 Mercado Pago's plugin for shopify has available the next features:
 
-| Feature                                                   | Smart Checkout 		  |
+| Feature                                                   | Checkout Mercado Pago 		  |
 |---------------------------------------------------------- |-------------------|
 | Credit card Payments                                      | ✔                 |
 | Other payment methods                                     | ✔                 |
@@ -17,7 +14,7 @@ Mercado Pago's plugin for shopify has available the next features:
 | IPN and webhooks                                          | ✔                 |
 | Mercado Pago coupon discounts                             | ✔                 |
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Great for merchants who want to get going quickly and easily.
 
@@ -39,7 +36,7 @@ Great for merchants who want to get going quickly and easily.
 
 2) In Accept credit cards, select **MercadoPago**.
 
-3) Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials](https://www.mercadopago.com/mla/account/credentials?type=basic)
+3) Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials]([FAKER][CREDENTIALS][URL])
 
   ![Configuring client id and client secret in shopify](/images/shopify/shopify-config-2.gif)
 
@@ -58,5 +55,7 @@ The following scheme represents the correlation between the payment status in Me
 | Approved            | Completed            |
 | Pending             | Pending              |
 | In process          | Pending              |
-| Rejected            | Pending              |
+| In Mediation        | Pending              |
 | Cancelled           | Failed               |
+| Refunded            | Failed               |
+| Rejected            | Failed               |

@@ -27,7 +27,8 @@ If you want to reconcile with a custom development or system you have two option
 
 By making a **GET** call to the /payments endpoint you can obtain the list of all your transactions:
 
-```curl -X GET \
+```curl 
+curl -X GET \
 "https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN" \
 -H "Content-Type: application/json"
 -d "{
@@ -120,6 +121,6 @@ Choose your preferred format and the file will be generated
 
 > If the file is too big you will receive it a few minutes later via e-mail (the one registered in your account)
 
-## Do you need help?
+### Do you need help?
 
 Get in touch with your sales represantive.

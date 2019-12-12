@@ -14,6 +14,12 @@ A Marketplace can be informed of the status changes of an Advanced Payment if yo
 
 ![Status map](/images/advanced-payments/advanced-payments-status-map.png)
 
+> WARNING
+>
+> Important
+>
+> If occurs an internal error in the creation of the Advanced Payment, it will remain with status `vacated`.
+
 #### Status definition
 
 State               |Description                                                            |
@@ -27,8 +33,9 @@ cancelled           |The payment was canceled by one of the parties or the payme
 refunded            |The payment was returned to the user.                                  |
 partially_refunded  |Part of the payment was returned to the user.                          |
 charged_back        |A chargeback has been made on the buyer's credit card.                 |
+vacated             |There was an internal error.                                           |
 
-#### Webhooks Notifications
+# Webhooks Notifications
 
 If you are subscribed to notifications, then you will receive a notification each time the Advanced Payment is modified.
 
@@ -50,7 +57,7 @@ The structure of the notification is as follows:
 }
 ```
 
-* `id`: Advanced Payment ID.
+* `id`: Notification ID.
 * `user_id`: ID of the Marketplace owner.
 * `date_created`: Event date.
 * `action`: Action that was made with respect to the Advanced Payment (can be splitter.insert or splitter.update).
@@ -58,7 +65,7 @@ The structure of the notification is as follows:
 * `application_id`: Application ID.
 * `live_mode`: Indicates whether it is a productive (true) or sandbox (false) notification.
 * `version`: Advanced Payment version.
-* `data.id`: Payment External Reference.
+* `data.id`: Advanced Payment ID.
 
 # Binary Payment
 

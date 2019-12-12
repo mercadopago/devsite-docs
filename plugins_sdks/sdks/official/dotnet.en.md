@@ -3,8 +3,9 @@
 
 This library provides developers with a simple set of bindings to the Mercado Pago API.
 
-### .Net versions supported:
-3.5 .Net Framework or Major
+### Supported .NET Versions:
+
+This SDK supports .NET version 4.5 or newer.
 
 ## Installation
 
@@ -12,15 +13,19 @@ This library provides developers with a simple set of bindings to the Mercado Pa
 
 **Using Package Manager**
 
-`PM> Install-Package mercadopago-sdk -Version [VERSION-dx-dotnet]`
+`PM> Install-Package mercadopago-sdk -Version 1.2.0`
 
 **Using .Net CLI**
 
-`> dotnet add package mercadopago-sdk --version [VERSION-dx-dotnet]`
+`> dotnet add package mercadopago-sdk --version 1.2.0`
 
 **Using Packet CLI**
 
-`> paket add mercadopago-sdk --version [VERSION-dx-dotnet]`
+`> paket add mercadopago-sdk --version 1.2.0`
+
+### Compatibility
+
+Our SDK is compatible with .NET 3.5 or grater. Our development team recomends to use .NET 4.5 or newer versions.
 
 ## Quick Start
 
@@ -29,7 +34,7 @@ This library provides developers with a simple set of bindings to the Mercado Pa
  using MercadoPago;
 ```
 2. Setup your credentials
--**For Smart Checkout:**
+-**For Checkout Mercado Pago:**
 ```csharp
  MercadoPago.SDK.ClientId = "YOUR_CLIENT_ID";
  MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";

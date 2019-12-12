@@ -50,15 +50,7 @@ Para utilizar callbacks, simplesmente passe uma função como último parâmetro
 
 ## Configuração
 
-Obtenha seu **ACCESS_TOKEN** nos seguintes links:
-
-* Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-* Brasil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-* México: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-* Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-* Perú: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-* Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-* Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Obtenha seu **ACCESS_TOKEN** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
 Para configurar o SDK deve-se usar o método **cofigure**. Este método recebe um objeto JSON. As configurações válidas são:
 
@@ -147,7 +139,7 @@ _Callbacks:_
 ```javascript
 library.method(function (err, res) {
     if (err) return console.log(err);
-    
+
     console.log(res);
 })
 ```
@@ -219,7 +211,7 @@ Como resultado obterá:
 
 ```javascript
 mercadopagoResponse {
-  body: 
+  body:
    { id: 2556382,
      date_created: '2017-01-19T17:00:21.000-04:00',
      date_approved: null,
@@ -237,7 +229,7 @@ mercadopagoResponse {
      sponsor_id: null,
      authorization_code: null,
      collector_id: 239656545,
-     payer: 
+     payer:
       { type: 'guest',
         id: null,
         email: 'test_user_3931694@testuser.com',
@@ -254,7 +246,7 @@ mercadopagoResponse {
      coupon_amount: 0,
      differential_pricing_id: null,
      deduction_schema: null,
-     transaction_details: 
+     transaction_details:
       { net_received_amount: 0,
         total_paid_amount: 10,
         overpaid_amount: 0,
@@ -710,9 +702,9 @@ O output será:
 
 ```javascript
 mercadopagoResponse {
-  body: 
+  body:
    { paging: { total: 110, limit: 30, offset: 0 },
-     results: 
+     results:
       [ [Object],
         [Object],
         [Object],
@@ -826,7 +818,7 @@ Merchant Order:
 
 Payment:
 ```
-/v1/payments/[ID]?access_token=[ACCESS_TOKEN] 
+/v1/payments/[ID]?access_token=[ACCESS_TOKEN]
 ```
 
 ### IPN Manager
@@ -845,7 +837,7 @@ O output será:
 
 ```javascript
 mercadopagoIpnResponse {
-  body: 
+  body:
    { id: 2556382,
      date_created: '2017-01-19T17:00:21.000-04:00',
      date_approved: null,
@@ -863,7 +855,7 @@ mercadopagoIpnResponse {
      sponsor_id: null,
      authorization_code: null,
      collector_id: 239656545,
-     payer: 
+     payer:
       { type: 'guest',
         id: null,
         email: 'test_user_3931694@testuser.com',
@@ -880,7 +872,7 @@ mercadopagoIpnResponse {
      coupon_amount: 0,
      differential_pricing_id: null,
      deduction_schema: null,
-     transaction_details: 
+     transaction_details:
       { net_received_amount: 0,
         total_paid_amount: 10,
         overpaid_amount: 0,

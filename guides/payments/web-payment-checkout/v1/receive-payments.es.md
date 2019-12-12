@@ -16,7 +16,7 @@ sites_supported:
 >
 > Esta documentación es sobre la versión antigua de Checkout.
 >
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
 
@@ -29,7 +29,7 @@ Una preferencia de pago contiene toda la información del producto o servicio qu
 * Medios de pago que aceptas.
 * _ID_ de referencia de tu sistema.
 
-Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https://www.mercadopago.com.ar/developers/es/plugins_sdks) y configurar tus [credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic).
+Para crear una preferencia de pago debes [instalar el SDK de MercadoPago](https://www.mercadopago.com.ar/developers/es/plugins_sdks) y configurar tus [credenciales]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php

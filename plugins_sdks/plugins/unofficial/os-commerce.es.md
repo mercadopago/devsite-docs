@@ -1,15 +1,7 @@
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
 ---
 
-* [Features](#features)
-* [Available versions](#available_versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Setup](#setup)
-
-
-<a name="features"></a>
-##Features##
+## Features
 
 **Standard Checkout**
 
@@ -23,9 +15,7 @@ Great for merchants who want to get going quickly and easily.
 
 *Available for Argentina, Brazil, Chile, Colombia, Mexico and Peru*
 
-
-<a name="available_versions"></a>
-##Available versions##
+## Available versions
 
 Plugin Version | Status | Compatible Versions
 -------------- | ------ | -------------------
@@ -33,8 +23,7 @@ v2.2 | Deprecated (Old version) | osCommerce 2.2
 v2.3 | Stable (Current version) | osCommerce 2.3
 
 
-<a name="requirements"></a>
-## Requirements:
+## Requirements
 
 **PHP**
 
@@ -46,8 +35,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 * MySQL v3+ (MySQL v5+ recommended)
 
 
-<a name="installation"></a>
-## Installation:
+## Installation
 
 1. Download Mercado Pago module:
     * osCommerce 2.2
@@ -55,8 +43,6 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 2. Copy the module folder to your osCommerce ROOT installation.
 
-
-<a name="setup"></a>
 ## Setup MercadoPago
 
 1. On your store administration, go to **Modules > Payment**.
@@ -83,7 +69,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
-	Get your CLIENT_ID and CLIENT_SECRET [in the following link](https://www.mercadopago.com/mla/account/credentials).
+	Get your CLIENT_ID and CLIENT_SECRET [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
 
 	Other options have been added and you can choose any time after installation:
 

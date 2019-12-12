@@ -14,6 +14,12 @@ Um Marketplace pode ser informado sobre as mudanças de status de um advanced pa
 
 ![Status map](/images/advanced-payments/advanced-payments-status-map.png)
 
+> WARNING
+>
+> Importante
+>
+> Se ocorrer um erro interno na criação do Advanced Payments, ele permanecerá com o status `vacated`.
+
 #### Definição de estados
 
 Estado              |Descrição                                                              |
@@ -27,8 +33,9 @@ cancelled           |O pagamento foi cancelado por uma das partes ou expirou.   
 refunded            |O pagamento foi devolvido ao usuário.                                  |
 partially_refunded  |Parte do pagamento foi devolvida ao usuário.                           |
 charged_back        |Um estorno foi feito no cartão de crédito do comprador.                |
+vacated             |Ocorreu um erro interno.                                               |
 
-#### Notificações de Webhooks
+# Notificações de Webhooks
 
 Se você tiver as notificações configuradas, receberá uma notificação sempre que o Advanced Payment for modificado.
 
@@ -50,7 +57,7 @@ A estrutura da notificação é a seguinte:
 }
 ```
 
-* `id`: ID do Advanced Payment.
+* `id`: ID da notificação.
 * `user_id`: ID do proprietário do Marketplace.
 * `date_created`: Data do evento.
 * `action`: Ação que foi feita em relação ao Advanced Payment (pode ser splitter.insert o splitter.update).
@@ -58,7 +65,7 @@ A estrutura da notificação é a seguinte:
 * `application_id`: ID da aplicação.
 * `live_mode`: Indica se é uma notificação produtiva (true) ou sandbox (false).
 * `version`: Versão do Advanced Payment.
-* `data.id`: External Reference do pagamento.
+* `data.id`: ID do Advanced Payment.
 
 # Pagamentos binários
 

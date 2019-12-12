@@ -14,9 +14,9 @@ sites_supported:
 >
 > Note
 >
-> This documentation refers to the new version of the Smart Checkout.
+> This documentation refers to the new version of the Checkout Mercado Pago.
 >
-> Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Checkout Mercado Pago.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 Receive payments simply and securely using the Mercado Pago’s Checkout.
 
@@ -30,7 +30,7 @@ A payment preference contains all the information about the product or service t
 * Payment methods accepted.
 * Reference ID of your system.
 
-To create a payment preference you must install [Mercado Pago SDK](https://www.mercadopago.com.ar/developers/en/plugins_sdks) and set up your [credentials](https://www.mercadopago.com/mla/account/credentials?type=basic).
+To create a payment preference you must install [Mercado Pago SDK](https://www.mercadopago.com.ar/developers/en/plugins_sdks) and set up your [credentials]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php

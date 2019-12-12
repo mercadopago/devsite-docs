@@ -1,16 +1,6 @@
 # VirtueMart – Módulo de Mercado Pago (v3.0.x)
 
-* [Requerimientos](#Requerimientos)
-* [Versiones disponibles](#Versiones_disponibles)
-* [Funcionalidad](#Funcionalidad)
-* [Instalación](#Instalación)
-* [Configuración del Checkout básico](#configuración_basico)
-* [Configuración del Checkout personalizado - Tarjeta de crédito](#configuración_custom)
-* [Configuración del Checkout personalizado - Ticket](#configuración_custom_ticket)
-* [Soporte técnico](#Soporte-técnico)
-
-<a name="Requerimientos"></a>
-## Requerimientos: ##
+## Requerimientos ##
 
 Basicamente, los requerimientos de este plugin son los mismos que se necesitan para utilizer Virtuemart y Joomla. Tu máquina debería tener:
 
@@ -51,7 +41,7 @@ Durante los testeos en modo Sandbox, puedes operar sobre HTTP, pero para la homo
 </table>
 
 <a name="Funcionalidad"></a>
-## Funcionalidad: ##
+## Funcionalidad ##
 
 El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
@@ -63,15 +53,13 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
     * [Pagos con un click (Clientes y Tarjetas)](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/one-click-charges/javascript/)
     * [Pagos con otros medios](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/charge-with-other-methods/)
 
-<a name="Instalación"></a>
-## Instalación: ##
+## Instalación ##
 
 1. Descargar el zip del módulo
 2. Ir a **Extensions > Extension Manager**
 3. En **Upload Package File > Package File** seleccionar **cart-virtuemart.zip** y clickear en **Upload & Installation**
 
-<a name="configuración_basico"></a>
-## Configuración del Checkout básico: ##
+## Configuración del Checkout básico ##
 
 1. Ir a **VirtueMart > Payment Methods** and click **New**
 
@@ -83,19 +71,11 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 3. Click en **Save**
 
 4. Ir a **Configuration** <br/>
-  Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, complete tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
+  Primero que nada, necesitas configurar las credenciales de tu cliente. Para hacerlo, completa tu **Client_id** y **Client_secret** en la sección de la configuración de las credenciales.
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-  Puedes obtener tu **Client_id** y **Client_secret**, dependiendo e tu país en los siguientes links:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Encuentra tu **Client_id** y **Client_secret** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configuraciones del Checkout. <br/>
 
@@ -130,8 +110,7 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
   **Log**: Habilitar/Deshabilitar logs.<br />
   **Logo**: Seleccionar el logo. Debes agregar el archivo en la carpeta /images/stories/virtuemart/payment <br />
 
-<a name="configuración_custom"></a>
-## Configuración del Checkout personalizado - Tarjeta de crédito: ##
+## Configuración del Checkout personalizado - Tarjeta de crédito
 
 1. Ir a **VirtueMart > Payment Methods** y hacer click en **New**
 
@@ -151,15 +130,7 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 
 ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
 7. Configuración del checkout. <br/>
 
@@ -181,8 +152,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
   * **Elige el status para ordenes canceladas**: Setea el status de la orden cuando los pagos son cancelados.
   * **Elige el status para ordenes rechazadas**: Setea el status de la orden cuando los pagos son rechazados.
 
-<a name="configuración_custom_ticket"></a>
-## Configuración del Checkout personalizado - Ticket: ##
+## Configuración del Checkout personalizado - Ticket
 
 1. Ir a **VirtueMart > Payment Methods** y hacer click en **New**
 
@@ -202,15 +172,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
 
 ![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials](https://www.mercadopago.com/mla/account/credentials)
-  * Brazil: [https://www.mercadopago.com/mlb/account/credentials](https://www.mercadopago.com/mlb/account/credentials)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials](https://www.mercadopago.com/mlc/account/credentials)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials](https://www.mercadopago.com/mco/account/credentials)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials](https://www.mercadopago.com/mlm/account/credentials)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials](https://www.mercadopago.com/mpe/account/credentials)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials](https://www.mercadopago.com/mlu/account/credentials)
+Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
 7. Configuración IPN. <br/>
 
@@ -225,9 +187,7 @@ Puedes obtener tu **Public Key** y **Access Token**, dependiendo de tu país, en
   * **Elige el status para ordenes canceladas**: Setea el status de la orden cuando los pagos son cancelados.
   * **Elige el status para ordenes rechazadas**: Setea el status de la orden cuando los pagos son rechazados.
 
-
-<a name="Soporte-técnico"></a>
-## Soporte técnico: ##
+## Soporte técnico
 
 Contáctanos a nuestro canal de [soporte](/support) con la siguiente información:
 

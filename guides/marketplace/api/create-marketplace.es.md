@@ -55,8 +55,7 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_id=CLIENT_ID' \
-     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_secret=ACCESS_TOKEN' \
      -d 'grant_type=authorization_code' \
      -d 'code=AUTHORIZATION_CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -64,8 +63,7 @@ curl -X POST \
 
 Los parámetros que debes incluir son:
 
-* `client_id`: El valor de `APP_ID`. Puedes obtenerlo desde el detalle de tu [aplicación.](https://applications.mercadopago.com/)
-* `client_secret`: Tu `SECRET_KEY`. Puedes obtenerlo desde el detalle de tu [aplicación.](https://applications.mercadopago.com/)
+* `client_secret`: Tu `ACCESS_TOKEN`. Puedes obtenerlo desde el detalle de tu [aplicación.]([FAKER][CREDENTIALS][URL])
 * `code`: El código de autorización que obtuviste al redirigir al usuario de vuelta a tu sitio.
 * `redirect_uri`: Debe ser la misma Redirect URI que configuraste en tu aplicación.
 
@@ -255,7 +253,7 @@ En caso de que las cancelaciones las haga el Marketplace, se deben utilizar las 
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el artículo sobre [devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/refunds-and-cancellations).
+Puedes encontrar más información en el artículo sobre [devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
 
 ### Probá tu Marketplace
 

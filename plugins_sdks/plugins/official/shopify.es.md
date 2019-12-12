@@ -1,13 +1,10 @@
 # Shopify  
 
-* [Funcionalidades](#bookmark_Funcionalidades)
-* [Configuración](#bookmark_Configuración)
-
 ## Funcionalidades
 
 O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
 
-| Funcionalidades                                           | Smart Checkout	    | 
+| Funcionalidades                                           | Checkout Mercado Pago	    |
 |---------------------------------------------------------- |-------------------|
 | Pago con tarjeta de crédito                               | ✔                 |
 | Otros medios de pago                                      | ✔                 |
@@ -17,7 +14,7 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 | IPN y webhooks                                            | ✔                 |
 | Descuentos con cupones de Mercado Pago                    | ✔                 |
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
@@ -39,7 +36,7 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 2) En **Accept credit cards**, seleccione **Mercado Pago**.
 
-3) Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales](https://www.mercadopago.com/mla/account/credentials?type=basic)
+3) Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales]([FAKER][CREDENTIALS][URL])
 
   ![Configurar client id y client secret Mercado Pago Shopify](/images/shopify/shopify-config-2.gif)
 
@@ -58,5 +55,7 @@ El siguiente esquema representa la correlación entre los estados de un pago en 
 | Approved            | Completed            |
 | Pending             | Pending              |
 | In process          | Pending              |
-| Rejected            | Pending              |
+| In Mediation        | Pending              |
 | Cancelled           | Failed               |
+| Refunded            | Failed               |
+| Rejected            | Failed               |

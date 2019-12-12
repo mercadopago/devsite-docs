@@ -24,7 +24,7 @@ After creating the application, you only need to take the second and third steps
 
 ## Credentials
 
-Similar to the Checkout of Payments, you have a pair of private keys to connect to the API. You can find these keys in the [credentials section of your account](https://www.mercadopago.com.ar/account/credentials).
+Similar to the Checkout of Payments, you have a pair of private keys to connect to the API. You can find these keys in the [credentials section of your account]([FAKER][CREDENTIALS][URL]).
 
 The **private keys** (also known as `access_token`) are used for all the requests to the APIs, such as processing payments, refunds, etc. The private keys must be kept **confidentially** in your backend servers and should never be published.
 

@@ -132,21 +132,30 @@ A resposta indica que o pagamento foi **autorizado** e está **aguardando a capt
 
 Tenha em mente que este valor não poderá ser utilizado pelo comprador enquanto não for capturado, por isso recomendamos realizar a captura o mais rápido possível.
 
-
+----[mlb]----
 > WARNING
 >
 > Considerações
 >
-----[mlb]----
 > * A reserva será válida por 5 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
+> * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
 ------------
 ----[mla]----
+>WARNING
+>
+>Considerações
+>
 > * A reserva será válida por 7 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
+> * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
 ------------
 ----[mpe]----
-> * A reserva será válida por 22 dias. Se não efetuar a captura dentro desse prazo, ela será cancelada.
-------------
+>WARNING
+>
+>Considerações
+>
+> * A reserva será válida por 7 dias para Visa e 28 dias para Mastercard, Amex e Diners. Se não efetuar a captura dentro desse prazo, ela será cancelada.
 > * A reserva também pode ser recusada ou ficar pendente, assim como qualquer outro pagamento.
+------------
 
 ## Capture um pagamento
 

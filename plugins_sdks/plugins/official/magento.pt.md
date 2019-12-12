@@ -1,14 +1,5 @@
 # Magento
 
-* [Funcionalidades](#bookmark_funcionalidades)
-* [Requisitos](#bookmark_requisitos)
-* [Instalação](#bookmark_instalação) 
-* [Atualização](#bookmark_atualização)
-* [Configurar Checkout Custom (Cartão de Crédito e Boleto)](#bookmark_configurar_checkout_custom_(cartão_de_crédito_e_boleto))
-* [Configurar Checkout Clássico](#bookmark_configurar_checkout_clássico)
-* [Configurações de status de Notificações de Pagamento](#bookmark_configurações_de_status_de_notificações_de_pagamento)
-
-
 ## Funcionalidades
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
@@ -41,7 +32,7 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | Configurações adicionais   | safe_mode off * memory_limit maior que 256MB (512MB é o recomendado)                           |
 | SSL                        | Isso é obrigatório para ir para produção e utilizar nosso checkout transparente. Durante os testes você pode utilizar as credenciais de SandBox sem a necessidade de https.|
 
-  
+
 ## Instalação
 
 Esse processo irá explicar a instalação do módulo Mercado Pago via Package e Marketplace:
@@ -122,7 +113,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 ![Configuring Credit Card and Ticket in Magento](/images/magento/magento-config-01.gif)
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago - Custom Checkout**, irá aparecer o campo da **Public Key** e o campo do **Access Token**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) Para configurar as credenciais acesse a opção **Mercado Pago - Custom Checkout**, irá aparecer o campo da **Public Key** e o campo do **Access Token**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]) 
 
 ![Configuring credentials in Magento](/images/magento/magento-config-02.gif)
 
@@ -147,7 +138,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 ![Configuring Checkout Redirect, Iframe and LightBox](/images/magento/magento-config-01.gif)
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]) 
 
 ![Configuring credentials - Checkout redirect](/images/magento/magento-config-04.gif)
 
@@ -194,7 +185,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos re
 
 ![Configuring recurring payments](/images/magento/magento-config-01.gif)
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago - Recurring Payments**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais](https://www.mercadopago.com/mla/account/credentials?type=basic)  
+2) Para configurar as credenciais acesse a opção **Mercado Pago - Recurring Payments**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client Secret**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]) 
 
 ![Configuring Credentials - Recurring Payments](/images/magento/magento-config-re-01.gif)
 

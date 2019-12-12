@@ -16,7 +16,7 @@ sites_supported:
 >
 > Esta documentación es sobre la versión antigua de Checkout.
 >
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de _marketing_ de tu cuenta de Mercado Pago, ingresando en la sección Configuración para tu Negocio: [Crear descuento](https://www.mercadopago.com.ar/campaigns/create).
 

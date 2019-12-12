@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Devoluciones y cancelaciones
 
 Existen diferentes situaciones en las que puedes querer anular una venta:
@@ -5,6 +9,12 @@ Existen diferentes situaciones en las que puedes querer anular una venta:
 * Si el status del pago es `pending`o `in_process` el dinero aún no se le ha cobrado al comprador, por lo que puedes efectuar una cancelación.
 
 * Si el `status` del pago es `approved` entonces tu comprador pudo efectuarlo y podrás realizar una devolución si lo deseas. 
+
+> WARNING
+>
+> ADVERTENCIA
+>
+> * Ten en cuenta que para pagos con QR y POINT, sólo puedes efectuar devoluciones pero no cancelaciones.
 
 ## Cancelaciones
 
@@ -70,7 +80,10 @@ Puedes devolver un pago dentro de los **120 días** desde su acreditación.
 ----[mlm]----
 Puedes devolver un pago dentro de los **180 días** desde su acreditación.
 ------------
-----[mlc, mlu, mpe, mco]----
+----[mlc]----
+Puedes devolver un pago dentro de los **330 días** desde su acreditación.
+------------
+----[mlu, mpe, mco]----
 Puedes devolver un pago dentro de los **90 días** desde su acreditación.
 ------------
 
@@ -85,6 +98,7 @@ Si el pago fue realizado con otro medio, se reintegrará en la cuenta de Mercado
 
 Para realizar la devolución total, realiza el siguiente _request_ indicando el `payment_id`:
 
+[[[
 ```php
 <?php
 
@@ -98,7 +112,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
 ```
-
+]]]
 
 > NOTE
 >
@@ -183,6 +197,11 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 ```ruby
 payment = MercadoPago::Payment.find_by_id(payment_id)
 refunds = payment.refund()
+```
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
 ```
 ]]]
 

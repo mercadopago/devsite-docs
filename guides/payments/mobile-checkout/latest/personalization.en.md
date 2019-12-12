@@ -7,6 +7,7 @@ sites_supported:
     - mlc
     - mpe
     - mlv
+    - mlu
     - global
 ---
 # Customization

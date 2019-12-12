@@ -1,24 +1,14 @@
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
 
-* [Features](#features)
-* [Available versions](#available_versions)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Setup](#setup)
-* [Support](#Support)
-
-
-<a name="features"></a>
-## Features: ##
+## Features
 
 The module of Mercado Pago to OsCommerce is integrated with the feature and payment solutions:
 
 * [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-    * Split payments (Two cards)
+* Split payments (Two cards)
 
 
-<a name="available_versions"></a>
-## Available versions: ##
+## Available versions
 
 
 Plugin Version | Status | Compatible Versions
@@ -26,8 +16,8 @@ Plugin Version | Status | Compatible Versions
 v2.2 | Deprecated (Old version) | osCommerce 2.2
 v2.3 | Stable (Current version) | osCommerce 2.3
 
-<a name="requirements"></a>
-## Requirements: ##
+
+## Requirements:
 
 **PHP**
 
@@ -49,8 +39,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 2. Copy the module folder to your osCommerce ROOT installation.
 
 
-<a name="setup"></a>
-## Setup MercadoPago: ##
+## Setup MercadoPago
 
 1. On your store administration, go to **Modules > Payment**.
 
@@ -76,7 +65,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
-	Get your CLIENT_ID and CLIENT_SECRET [in the following link](https://www.mercadopago.com/mla/account/credentials).
+	Get your CLIENT_ID and CLIENT_SECRET [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
 
 	Other options have been added and you can choose any time after installation:
 
@@ -109,9 +98,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 * Peru:
 	* **PEN** (Peruvian Sol)
 
-
-<a name="Support"></a>
-## Support: ##
+## Support
 
 If you have any questions, problems or errors we have a support channel. Write us at our [support form](/support) with the following information:
 

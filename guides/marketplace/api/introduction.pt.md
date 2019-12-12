@@ -25,7 +25,7 @@ Após criar a aplicação, você só precisa executar o segundo e o terceiro pas
 
 ## Credenciais
 
-Assim como na API de Pagamentos, você conta com dois pares de chaves para conectar-se com a API. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadopago.com/mlb/account/credentials).
+Assim como na API de Pagamentos, você conta com dois pares de chaves para conectar-se com a API. Estas chaves podem ser encontradas na seção [credenciais da sua conta]([FAKER][CREDENTIALS][URL]).
 
 A **chave pública**, ou *public_key*, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e _tokenizar_.
 
@@ -39,7 +39,7 @@ Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **M
 
 Forneceremos [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/testing-marketplace) para que possa simular transações como se fossem reais.
 
-Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/goto-production) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas [credenciais](https://www.mercadopago.com/mlb/account/credentials).
+Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/goto-production) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas [credenciais]([FAKER][CREDENTIALS][URL]).
 
 **Antes de utilizar as credenciais de produção é preciso completar o formulário de "Quero ir para produção" para ativa-las.** 
 Caso contrario se receberá o erro de "Invalid use of live credentials". 

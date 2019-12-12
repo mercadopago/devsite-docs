@@ -1,32 +1,19 @@
 # ZenCart - Mercado Pago Module (v1.5.x)
 
-* [Funcionalidad](#features)
-* [Versión Disponibles](#available_versions)
-* [Requisitos](#requirements)
-* [Instalación](#installation)
-* [Configuración](#setup)
-* [Soporte técnico](#Soporte-técnico)
-
-
-<a name="features"></a>
-## Funcionalidad: ##
+## Funcionalidad
 
 El módulo de Mercado Pago para ZenCart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
 * [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
-    * Pagos con dos tarjetas
+* Pagos con dos tarjetas
 
-
-<a name="available_versions"></a>
-## Versión Disponibles: ##
+## Versión Disponibles
 
 Versión del Plugin | Status | Versiones compatibles
 -------------- | ------ | -------------------
 v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
-
-<a name="requirements"></a>
-## Requisitos: ##
+## Requisitos:
 
 **PHP**
 
@@ -38,14 +25,13 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 * MySQL v5+
 
 <a name="installation"></a>
-## Instalación: ##
+## Instalación
 
 1. Descargue el modulo de Mercado Pago.
 
 2. Copia la carpeta del módulo en la raíz de tu tienda ZenCart.
 
-<a name="setup"></a>
-## Configuración: ##
+## Configuración
 
 1. En la página de administración de tu tienda, vaya hasta la opción **Modules > Payment**.
 
@@ -57,15 +43,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
   ![Setting client id and client secret](/images/zencart-credentials.png) <br />
 
-Obtenga su CLIENT_ID e CLIENT_SECRET de acuerdo con su país:
-
-  * Argentina: [https://www.mercadopago.com/mla/account/credentials?type=basic](https://www.mercadopago.com/mla/account/credentials?type=basic)
-  * Brasil: [https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadopago.com/mlb/account/credentials?type=basic)
-  * Chile: [https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadopago.com/mlc/account/credentials?type=basic)
-  * Colombia: [https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadopago.com/mco/account/credentials?type=basic)
-  * Mexico: [https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadopago.com/mlm/account/credentials?type=basic)
-  * Uruguay: [https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadopago.com/mlu/account/credentials?type=basic)
-  * Peru: [https://www.mercadopago.com/mpe/account/credentials?type=basic](https://www.mercadopago.com/mpe/account/credentials?type=basic)
+Obtenga su [CLIENT_ID y CLIENT_SECRET]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configure el estado para IPN (Instant Payment Notification):
 
@@ -97,8 +75,7 @@ Obtenga su CLIENT_ID e CLIENT_SECRET de acuerdo con su país:
   * **Live or Sandbox**: Habilite el modo sandbox para realizar pagos de prueba;
   * **Sort order of display**: Orden de visualización de Mercado Pago;
 
-<a name="Soporte-técnico"></a>
-## Soporte técnico: ##
+## Soporte técnico
 
 En el caso de que tenga alguna duda, problema o error tenemos un canal de contacto.
 Contáctanos a nuestro canal de [soporte](/support) con la siguiente información:

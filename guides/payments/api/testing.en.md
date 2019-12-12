@@ -4,7 +4,7 @@ Before going into production, it is very important to test the complete payment 
 
 A good customer experience at the checkout helps to ensure the conversion.
 
-You have a pair of [sandbox keys](https://www.mercadopago.com.ar/account/credentials?type=custom) which will allow you to test the whole integration based on an exact replica of the Production Mode, being able to simulate transactions using the test cards:
+You have a pair of [sandbox keys]([FAKER][CREDENTIALS][URL]) which will allow you to test the whole integration based on an exact replica of the Production Mode, being able to simulate transactions using the test cards:
 
 
 | Country 	 | Visa 				       | Mastercard        | American Express |

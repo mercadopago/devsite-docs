@@ -2,9 +2,13 @@
 
 
 * [Install](#bookmark_install)
-* [Smart Checkout](#bookmark_smart_checkout)
+* [Checkout Mercado Pago](#bookmark_checkout_mercado_pago)
 * [Customized checkout](#bookmark_customized_checkout)
 * [Generic methods](#bookmark_generic_methods)
+
+### Supported Python Versions:
+
+This SDK supports Python versions 2.x and 3.x
 
 ## Install
 
@@ -17,13 +21,13 @@ On Python 3.x
 
 ``pip3 install mercadopago``
 
-## Smart Checkout
+## Checkout Mercado Pago
 
 
 Configure your credentials
 
 
-- Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link](https://www.mercadopago.com/mla/account/credentials).
+- Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL]).
 
 
 ``` python
@@ -143,11 +147,7 @@ Refund (only for accredited payments)
 
 Configure your credentials
 
-* Get your **ACCESS_TOKEN** in the following address:
-    * Argentina: `https://www.mercadopago.com/mla/account/credentials <https://www.mercadopago.com/mla/account/credentials>`_
-    * Brazil: `https://www.mercadopago.com/mlb/account/credentials <https://www.mercadopago.com/mlb/account/credentials>`_
-    * Mexico: `https://www.mercadopago.com/mlm/account/credentials <https://www.mercadopago.com/mlm/account/credentials>`_
-    * Colombia: `https://www.mercadopago.com/mco/account/credentials <https://www.mercadopago.com/mco/account/credentials>`_
+* Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
 
 ``` python
@@ -187,13 +187,13 @@ You can access any other resource from the MercadoPago API using the generic met
 
     // Get a resource, with optional URL params. Also you can disable authentication for public APIs
     mp.get ("/resource/uri", [params], [authenticate=true]);
-
+    
     // Create a resource with "data" and optional URL params.
     mp.post ("/resource/uri", data, [params]);
-
+    
     // Update a resource with "data" and optional URL params.
     mp.put ("/resource/uri", data, [params]);
-
+    
     // Delete a resource with optional URL params.
     mp.delete ("/resource/uri", [params]);
 
@@ -201,7 +201,7 @@ For example, if you want to get the Sites list (no params and no authentication)
 
 
     result = mp.get ("/sites", null, false);
-
+    
     print (json.dumps(result, indent=4))
 
 ### Running tests

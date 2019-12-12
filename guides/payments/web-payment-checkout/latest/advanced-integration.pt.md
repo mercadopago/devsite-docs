@@ -10,22 +10,6 @@ sites_supported:
 
 # Integração avançada
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Receba notificações de pagamento ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_receba_notificações_de_pagamentos)
->
-> [Informações adicionais para a preferência](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/#bookmark_informações_adicionais_para_a_preferência)
->
-> [URL de retorno](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_url_de_retorno)
->
-> [Cancelamentos e estornos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_cancelamentos_e_estornos)
->
-> [Gerencie contestações](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration#bookmark_gerencie_contestações)
-
 
 ## Receba notificações de pagamentos
 
@@ -326,7 +310,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Outras funcionalidades
 >
-> Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.
+> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
 >
 > [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
 

@@ -10,15 +10,6 @@ sites_supported:
 
 # Pré-requisitos para começar
 
-> INDEX
->
-> Nesta página
->
->
->
-> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_glossário)
->
-> [Pré-requisitos](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos)
 
 ## Glossário
 
@@ -27,10 +18,10 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos à mão.
 Termo | Descrição
 ------------ | -------------
 _Preferência (preference)_ | São as **informações do produto ou serviço que você quer oferecer.** Entre os atributos mais importantes de uma preferência são definidos: a descrição, o valor e os itens. Ao gerá-lo, você obtém uma URL para iniciar o fluxo de pagamento.
-_Credenciais (credentials)_ | Suas credenciais são as **chaves que te informamos para que você possa configurar suas integrações.**<br/>Existem dois tipos:<br/><br/>**ACCESS_TOKEN**. Chave privada da aplicação para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/>**PUBLIC_KEY**. Chave pública da aplicação para saber, por exemplo, os meios de pagamento e criptografar os dados do cartão. Você deve usá-las somente para as suas integrações.<br/><br/>Para poder encontrá-las, confira suas <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a> e selecione as produtivas na opção _Checkout personalizado_.<br/><br/>Se você entrou nesta página com sua conta, elas serão preenchidas automaticamente dentro das linhas de códigos.
-_Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar a preferência**  e que dá início ao fluxo de pagamento do Smart Checkout.
+_Credenciais (credentials)_ | Suas credenciais são as **chaves que te informamos para que você possa configurar suas integrações.**<br/>Existem dois tipos:<br/><br/>**ACCESS_TOKEN**. Chave privada da aplicação para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/>**PUBLIC_KEY**. Chave pública da aplicação para saber, por exemplo, os meios de pagamento e criptografar os dados do cartão. Você deve usá-las somente para as suas integrações.<br/><br/>Para poder encontrá-las, confira suas <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a> e selecione as produtivas na opção _Checkout personalizado_.<br/><br/>Se você entrou nesta página com sua conta, elas serão preenchidas automaticamente dentro das linhas de códigos.
+_Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar a preferência**  e que dá início ao fluxo de pagamento do Checkout Mercado Pago.
 _Ítem (ítem)_ | Faz referência ao produto ou serviço que se quer oferecer. Pode ser um ou uma lista.
-_Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui suas próprias<a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar.
+_Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui suas próprias<a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar.
 
 ## Pré-requisitos
 
@@ -108,7 +99,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Nota
 >
-> Esta documentação é referente à nova versão do Smart Checkout. **Para ver a versão anterior**, confira a [sessão de Smart Checkout antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentação é referente à nova versão do Checkout Mercado Pago. **Para ver a versão anterior**, confira a [sessão de Checkout Mercado Pago antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
 
 ---
 
@@ -116,11 +107,11 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Integre o Smart Checkout
+> Integre o Checkout Mercado Pago
 >
 > Siga o passo a passo para começar a receber pagamentos no seu site.
 >
-> [Integre o Smart Checkout](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
+> [Integre o Checkout Mercado Pago](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

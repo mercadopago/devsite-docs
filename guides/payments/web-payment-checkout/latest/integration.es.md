@@ -8,17 +8,8 @@ sites_supported:
   - mlc
 ---
 
-# Integra Smart Checkout
+# Integra Checkout Mercado Pago
 
-> INDEX
->
-> En esta página
->
->
->
-> [¿Cómo me integro?](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_¿cómo_me_integro?)
->
-> [Pasos para integrarte](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/integration#bookmark_pasos_para_integrarte)
 
 
 ## ¿Cómo me integro?
@@ -37,7 +28,7 @@ sites_supported:
 
 ## Pasos para integrarte
 
-Instalar el Smart Checkout consta de dos pasos:
+Instalar el Checkout Mercado Pago consta de dos pasos:
 
 ### 1. Genera tu preferencia
 
@@ -70,7 +61,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Agrega las <a href="https://www.mercadopago.com/mla/account/credentials" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
+<br/><br/>1.2 Agrega las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
 
 [[[
 ```php
@@ -203,8 +194,8 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# Este valor reemplazará el string "<%= @init_point %>" en tu HTML
-@init_point = preference["response"]["init_point"]
+# Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
+@preference_id = preference["response"]["id"]
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -248,7 +239,7 @@ curl -X POST \
 
 ### 2. Suma el checkout a tu sitio
 
-Por último, suma el siguiente código para mostrar el botón de pago de tu Smart Checkout en el lugar que quieras que aparezca.
+Por último, suma el siguiente código para mostrar el botón de pago de tu Checkout Mercado Pago en el lugar que quieras que aparezca.
 
 [[[
 ```php
@@ -279,7 +270,7 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Smar
 <form action="/procesar-pago" method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="%= @init_point %>">
+   data-preference-id="<%= @preference_id %>">
   </script>
 </form>
 ```
@@ -301,13 +292,13 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Smar
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > NOTE
 >
 > Nota
 >
-> Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentación refiere a la nueva versión del Checkout Mercado Pago. Para **ver la versión anterior**, ve a la [sección de Checkout Mercado Pago antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
 ---
 

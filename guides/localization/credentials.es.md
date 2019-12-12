@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Credenciales
 
 Mercado Pago tiene dos tipos de pares de credenciales, **CLIENT_ID** | **CLIENT_SECRET** y **PUBLIC_KEY** | **ACCESS_TOKEN**. Estas credenciales sirven como un tipo de clave personal para que usted cree su método de pago e integre el Mercado Pago con su tienda virtual. El siguiente es el procedimiento para obtener las credenciales.
@@ -11,19 +15,19 @@ Si no tienes una cuenta, haz clic en **"Inscríbete"**. Rellene el formulario de
 
 ## Accdet Credenciales
 
-Una vez Autenticado en su cuenta de Mercado Pago, acceda a lo siguiente link: [https://www.mercadopago.com/mla/account/credentials/](https://www.mercadopago.com/mla/account/credentials/).
+Una vez Autenticado en su cuenta de Mercado Pago, acceda a lo siguiente link: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials/]([FAKER][CREDENTIALS][URL]).
 Usted accede a la página de credenciales de su cuenta.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)
 
-En esta página usted tendrá acceso a las claves de configuración de su cuenta Mercado Pago para instalar la integración por API o Smart Checkout (Redirect, LightBox o Iframe) en su Tienda Virtual.
+En esta página usted tendrá acceso a las claves de configuración de su cuenta Mercado Pago para instalar la integración por API o Checkout Mercado Pago (Redirect, LightBox o Iframe) en su Tienda Virtual.
 
 > NOTE
 >
 > Nota
 >
 > Para configurar la integración por API será necesario informar las credenciales **PUBLIC_KEY** y **ACCESS_TOKEN**.
-> Para configurar el Smart Checkout (Redirect, LightBox o Iframe) será necesario informar las credenciales **CLIENT_ID** y **CLIENT_SECRET**.
+> Para configurar el Checkout Mercado Pago (Redirect, LightBox o Iframe) será necesario informar las credenciales **CLIENT_ID** y **CLIENT_SECRET**.
 
 ## Formulario Quiero ir a Producción
 

@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Credentials
 
 The Mercado Pago has two types of credential pairs, **_CLIENT_ID_** | **_CLIENT_SECRET_** and **_PUBLIC_KEY_** | **_ACCESS_TOKEN_**. These credentials serve as a kind of personal key to create your payment method and integrate the Mercado Pago with your online store.
@@ -13,19 +17,19 @@ If you do not have an account, create one by clicking **"Register"**. Fill out t
 
 ## Access Credentials
 
-Once Authenticated in your Mercado Pago account, access the following link [https://www.mercadopago.com/mlb/account/credentials/](https://www.mercadopago.com/mlb/account/credentials/).
+Once Authenticated in your Mercado Pago account, access the following link [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials/]([FAKER][CREDENTIALS][URL]).
 You'll be taken to the credentials page of your account.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)
 
-On this page you will have access to the configuration keys of your Mercado Pago account to install the API integration or Smart Checkout (Redirect, LightBox or Iframe) in your Virtual Store.
+On this page you will have access to the configuration keys of your Mercado Pago account to install the API integration or Checkout Mercado Pago (Redirect, LightBox or Iframe) in your Virtual Store.
 
 > NOTE
 >
 > Note
 >
 > To set up API integration you will need to enter the credentials **_PUBLIC_KEY_** and **_ACCESS_TOKEN_**.
-> To configure the Smart Checkout (Redirect, LightBox or Iframe) you will need to enter the credentials **_CLIENT_ID_** and **_CLIENT_SECRET_**.
+> To configure the Checkout Mercado Pago (Redirect, LightBox or Iframe) you will need to enter the credentials **_CLIENT_ID_** and **_CLIENT_SECRET_**.
 
 ## Form I want to go to Production
 

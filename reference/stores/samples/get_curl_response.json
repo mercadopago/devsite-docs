@@ -1,0 +1,57 @@
+{
+    "paging": {
+        "total": 2,
+        "offset": 0,
+        "limit": 30
+    },
+    "results": [
+        {
+            "id": "30163646",
+            "name": "Sucursal Instore",
+            "date_creation": "2019-09-09T09:25:56Z",
+            "business_hours": {
+                "monday": [
+                    {
+                        "open": "08:00",
+                        "close": "13:00"
+                    },
+                    {
+                        "open": "15:00",
+                        "close": "18:00"
+                    }
+                ],
+                "tuesday": [
+                    {
+                        "open": "08:00",
+                        "close": "18:00"
+                    }
+                ],
+                "wednesday": [
+                    {
+                        "open": "07:00",
+                        "close": "10:00"
+                    }
+                ]
+            },
+            "location": {
+                "address_line": "Caseros 3039, Belgrano, Capital Federal, Argentina",
+                "reference": "3er Piso",
+                "latitude": -32.8897322,
+                "longitude": -68.8443275
+            },
+            "external_id": "SUC001"
+        },
+            {
+                "id": "30089632",
+                "name": "SUCURSAL LAS PIEDRAS",
+                "date_creation": "2019-07-17T10:45:32Z",
+                "location": {
+                    "address_line": "LAS PIEDRAS 2633, 1825, Lanús, Buenos Aires, Argentina",
+                    "reference": "",
+                    "latitude": -34.7204829,
+                    "longitude": -58.376746
+                },
+                "external_id": "SUC002"
+            }
+    ]
+}

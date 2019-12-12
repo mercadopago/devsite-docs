@@ -1,6 +1,6 @@
 # Requisitos para ir à produção
 
-Quando tenha a aplicação pronta e funcionando na modalidade Sandbox e quiser começar a processar pagamentos reais, deverá completar a homologação da sua integração a partir da [página das credenciais.](https://www.mercadopago.com/mlb/account/credentials) Mais tarde Mercado Pago pode verificar o seu site afim que sejam cumpridos todos os detalhes a seguir. Caso contrário, um assessor entrará em contato contigo para dizer se há algo que deve ser corrigido na sua integração.
+Quando tenha a aplicação pronta e funcionando na modalidade Sandbox e quiser começar a processar pagamentos reais, deverá completar a homologação da sua integração a partir da [página das credenciais.]([FAKER][CREDENTIALS][URL]) Mais tarde Mercado Pago pode verificar o seu site afim que sejam cumpridos todos os detalhes a seguir. Caso contrário, um assessor entrará em contato contigo para dizer se há algo que deve ser corrigido na sua integração.
 
 ## Por que é necessário esse processo?
 
@@ -24,7 +24,7 @@ Durante os testes em modo sandbox, pode operar em HTTP, mas para a homologação
 
 ## Promoções e Financiamento
 
-Se oferece pagamentos com cartões de crédito com parcelamentos, deve deixar claro as promoções oferecidas pelo MercadoPago. Pode incluir um de nossos [banners de meio de pagamentos](https://www.mercadopago.com/mlb/com.mercadopago.web.landing.LandingController?id=banners), ou ainda direcionar o cliente para a [sessão de promoções](https://www.mercadopago.com.br/promocoes/).
+Se oferece pagamentos com cartões de crédito com parcelamentos, deve deixar claro as promoções oferecidas pelo MercadoPago. Pode incluir um de nossos [banners de meio de pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/banners/introduction/), ou ainda direcionar o cliente para a [sessão de promoções](https://www.mercadopago.com.br/promocoes/).
 Também deve informar os juros que serão pagos pelo seu usuário, direcionando para a sessão [custos de parcelamento MercadoPago](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
@@ -45,6 +45,6 @@ Além disso, quando o pagamento com cartão de crédito é aprovado, deverá mos
 
 Se permite fazer devoluções de pagamentos, deixe claro que poderão ser feitas em até 90 dias depois da aprovação do pagamento.
 
-## Termos e condições
+### Termos e condições
 
 Deve disponibilizar uma politica de termos e condições, na qual especifique que se responsibiliza por todos os dados que estão sendo inseridos no seu site.

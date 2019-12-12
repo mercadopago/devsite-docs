@@ -1,24 +1,5 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
 
 # ¿Cómo usar el reporte?
-
-
-> INDEX
->
-> En esta página
->
-> [¿Qué contiene el reporte?](#bookmark_¿qué_contiene_el_reporte?)
->
-> [Ejemplo de un reporte](#bookmark_ejemplo_de_un_reporte)
-
 
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que uses.
 
@@ -50,7 +31,7 @@ Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre el di
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero encuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 

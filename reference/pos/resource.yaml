@@ -1,0 +1,89 @@
+---
+type: object
+properties:
+- id:
+    type: String
+    description:
+      en: POS identifier, numerical and self-generated.
+      es: Identificador único de la caja, numérico y autogenerado.
+      pt: Identificador exclusivo da caixa, numérico e gerado automaticamente.
+- name:
+    type: String
+    description:
+      en: Name of the POS.
+      es: Nombre de la caja.
+      pt: Nome da caixa.
+- fixed_amount:
+    type: Boolean
+    description:
+      en: Define if the customer can insert the amount to be paid.
+      es: Determina si el cliente puede insertar el monto a pagar.
+      pt: Determine se o cliente pode inserir o valor a ser pago.
+    enum:
+    - true:
+        en: The customer cannot choose the amount to be paid and must wait for the generation of an order.
+        es: El cliente no podrá elegir el monto a pagar sino que deberá esperar la generación de una orden.
+        pt: O cliente não pode escolher o valor a ser pago, deve aguardar a geração de um pedido.
+    - false:
+        en: After scanning the QR code of the POS, the customer enters the amount to be paid.
+        es: Luego de escanear el código QR de la caja, el cliente ingresa el monto a pagar.
+        pt: Depois de ler o código QR da caixa, o cliente digita o valor a ser pago.
+- category:
+    type: Long
+    description:
+      en: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category
+      es: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoria generica.
+      pt: Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica
+    enum:
+    - Argentina:
+        en: Gastronomy - 621102 <br/> Gas station - 473000
+        es: Gastronomía - 621102 <br/> Petrolera - 473000
+        pt: Gastronomia - 621102 <br/> Posto de combustível - 473000
+    - Brasil:
+        en: Gastronomy - 5611203 <br/> Gas station - 4731300
+        es: Gastronomía - 5611203 <br/> Petrolera - 4731300
+        pt: Gastronomia - 5611203 <br/> Posto de combustível - 4731300
+    - Mexico:
+        en: Gastronomy - 5812 <br/> Gas station - 468419
+        es: Gastronomía - 5812 <br/> Petrolera - 468419
+        pt: Gastronomia - 5812 <br/> Posto de combustível - 468419
+    - Colombia:   
+        en: Gastronomy - 5611 <br/> Gas station - 4731
+        es: Gastronomía - 5611 <br/> Petrolera - 4731
+        pt: Gastronomia - 5611 <br/> Posto de combustível - 4731
+    - Peru:
+        en: Gastronomy - 5520 <br/> Gas station - 5050
+        es: Gastronomía - 5520 <br/> Petrolera - 5050
+        pt: Gastronomia - 5520 <br/> Posto de combustível - 5050
+    - Uruguay:
+        en: Gastronomy - 56101 <br/> Gas station - 47300
+        es: Gastronomía - 56101 <br/> Petrolera - 47300
+        pt: Gastronomia - 56101 <br/> Posto de combustível - 47300
+    - Chile:
+        en: Gastronomy - 561000 <br/> Gas station - 473001
+        es: Gastronomía - 561000 <br/> Petrolera - 473001
+        pt: Gastronomia - 561000 <br/> Posto de combustível - 473001
+- store_id:
+    type: String
+    description:
+      en: Store identifier to which the point of sale belongs.
+      es: Identificador de la sucursal a la que pertenece el Punto de Venta.
+      pt: Identificador da loja à qual o caixa pertence.      
+- external_store_id:
+    type: String
+    description:
+      en: Unique identifier of the store to which the pos belongs defined by integrator system.
+      es: Identificador único de la sucursal a la cual pertenece la caja, definido por el integrador.
+      pt: Identificador único da loja a que a caixa pertence, definido pelo sistema integrador.    
+- external_id:
+    type: String
+    description:
+      en: Unique identifier of the pos defined by integrator system.
+      es: Identificador único de la caja definido por el integrador.
+      pt: Identificador único da caixa definido pelo sistema integrador.   
+- url:
+    type: String
+    description:
+      en: URL to get the order of the integrator system. It is optional and is used only in the disregarded integration model.
+      es: URL para obtener la orden del sistema integrador. Es opcional y se utiliza sólo en el modelo de integración desatendido.
+      pt: URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração autônoma.

@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # What are the reports?
 
 Mercado Pago reports are downloadable reports in .xlsx or .csv format that allow you to view your account movements and reconcile your sales and other operations with your internal management systems.

@@ -132,12 +132,30 @@ The response indicates that the payment is **authorized** and **pending capture*
 
 Keep in mind that the money is frozen in the buyer’s card until you decide to capture it, so we recommend that you capture it as soon as possible.
 
+----[mla]----
 > WARNING
 >
-> Considerations
+> Consideraciones
 >
-> * The authorization hold is valid for  [AR:7][BR:5][PE:22] days. If you do not capture it until that date, it will be cancelled.
+> * The authorization hold is valid for 7 days days. If you do not capture it until that date, it will be cancelled.
 > * The authorization may also be rejected or remain pending, just like any other regular payment.
+------------
+----[mpe]----
+> WARNING
+>
+> Consideraciones
+>
+> * The authorization hold is valid for 7 days for Visa and 28 days for Mastercard, Amex and Diners. If you do not capture it until that date, it will be cancelled.
+> * The authorization may also be rejected or remain pending, just like any other regular payment.
+------------
+----[mlb]----
+> WARNING
+>
+> Consideraciones
+>
+> * The authorization hold is valid for 5 days. If you do not capture it until that date, it will be cancelled.
+> * The authorization may also be rejected or remain pending, just like any other regular payment.
+------------
 
 ## Capture a payment
 

@@ -1,29 +1,7 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
 
 # Generación por API
 
-> INDEX
->
-> En esta página
->
-> [Configurar tus reportes](#bookmark_configurar_tus_reportes)
->
-> [Atributos configurables](#bookmark_atributos_configurables)
->
-> [Generar de forma manual](#bookmark_generar_de_forma_manual)
->
-> [Generar de forma programada](#bookmark_generar_de_forma_programada)
-
-Puedes generar tu reporte por API, tanto de forma manual como de forma programada.
-Ganá tiempo y **automatizá la frecuencia de generación del reporte** de Dinero en cuenta las veces que quieras.
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero en cuenta las veces que quieras.
 
 ## Configurar tus reportes
 
@@ -131,7 +109,6 @@ curl -X POST \
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -152,7 +129,6 @@ $data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -181,7 +157,6 @@ String body = "{
                     \\"show_fee_prevision\\": false,
                     \\"show_chargeback_cancel\\": true,
                     \\"detailed\\": true,
-                    \\"scheduled\\": false,
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
@@ -217,7 +192,6 @@ data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -244,7 +218,6 @@ var dataString = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -310,7 +283,6 @@ curl -X PUT \
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "detailed": true,
-        "scheduled": false,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
@@ -335,7 +307,6 @@ $data = '{
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "detailed": true,
-        "scheduled": false,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
@@ -364,7 +335,6 @@ String body = "{
                     \\"show_fee_prevision\\": false,
                     \\"show_chargeback_cancel\\": true,
                     \\"detailed\\": true,
-                    \\"scheduled\\": false,
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
@@ -400,7 +370,6 @@ data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "detailed": true,
-            "scheduled": false,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -427,7 +396,6 @@ var dataString = '{
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "detailed": true,
-        "scheduled": false,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
@@ -487,8 +455,8 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | Campos configurables | Descripción |
 | ----------| ---------------------- |
 | *`coupon_detailed` (opcional)* | <br/>Incluye una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
-| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Comisión de Mercado Libre (`mkp_fee_amount`)<br/> - Impuesto financiero (`financing_fee_amount`)<br/> - Impuesto de envío (`shipping_fee_amount`)<br/> - Impuestos  cobrados por retenciones de IIBB (`taxes_amount`)<br/> - Cuotas (`installments`)<br/> <br/><br/>|
-| *`extended` (opcional)* | <br/>Incluye el detalle de las comisiones en el reporte:<br/> - Detalle del impuesto (`tax_detail`)<br/> - Detalle del impuesto(`tax_amount_telco`)<br/> - Id del punto de venta (`pos_id`)<br/> - Id de la sucursal (`store_id`)<br/> - Nombre de la sucursal (`store_name`)<br/> - Id externo del punto de venta (`external_pos_id`)<br/> - Nombre del punto de venta (`pos_name`)<br/> - Id externo de la sucursal (`external_store_id`)<br/> <br/><br/> |
+| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Comisión de Mercado Libre (`mkp_fee_amount`)<br/> - Impuesto financiero (`financing_fee_amount`)<br/> - Impuesto de envío (`shipping_fee_amount`)<br/> ----[mla]---- - Impuestos  cobrados por retenciones de IIBB (`taxes_amount`) ------------ ----[mlm, mlu, mco, mlc, mpe, mlb]---- - Impuestos cobrados (`taxes_amount`) ------------ <br/> - Cuotas (`installments`)<br/> <br/><br/>|
+| *`extended` (opcional)* | <br/>Incluye el detalle de las comisiones en el reporte:<br/> - Detalle del impuesto (`tax_detail`)<br/> - Detalle del impuesto (`tax_amount_telco`)<br/> - ID del punto de venta (`pos_id`)<br/> - ID de la sucursal (`store_id`)<br/> - Nombre de la sucursal (`store_name`)<br/> - ID externo del punto de venta (`external_pos_id`)<br/> - Nombre del punto de venta (`pos_name`)<br/> - ID externo de la sucursal (`external_store_id`)<br/> <br/><br/> |
 | `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
 | `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
 | *`refund_detailed` (opcional)* | <br/>Muestra el código de referencia (`external_reference`) del reembolso en vez del código de referencia (`external_reference`) del pago.<br/><br/> |
@@ -503,7 +471,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ## Generar de forma manual

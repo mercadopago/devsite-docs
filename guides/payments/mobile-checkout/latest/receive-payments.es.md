@@ -7,6 +7,7 @@ sites_supported:
     - mlc
     - mpe
     - mlv
+    - mlu
     - global
 ---
 # Recibir pagos
@@ -156,7 +157,7 @@ Preference preference = new Preference();
   new Item()
   {
     Id = "1234",
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]", 
+    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
     Quantity = [FAKER][NUMBER][BETWEEN][1,10],
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)[FAKER][COMMERCE][PRICE]
@@ -436,13 +437,13 @@ Para obtener una respuesta de pago se deberá implementar el protocolo **PXLifeC
 
 ]]]
 
-## Activa las notificaciones de pagos
+### Activa las notificaciones de pagos
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
 Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para conocer más sobre esto.
 
-## Prueba la integración
+### Prueba la integración
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 

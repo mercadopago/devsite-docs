@@ -12,6 +12,10 @@
 * [Pagination](#bookmark_pagination)
 * [IPN Notifications](#bookmark_IPN_notifications)
 
+### Supported Node Versions:
+
+All node versions are supported
+
 ## Install
 
 ```
@@ -49,7 +53,7 @@ In order to use callbacks, simply pass a function as the last parameter.
 
 ## Configure
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link](https://www.mercadopago.com/mla/account/credentials).
+* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
 
 ### Configure Method
 

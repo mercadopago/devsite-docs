@@ -27,7 +27,7 @@ Al presionar el botón _Agregar Nº comercio_ verás la siguiente vista:
 
 ![Números de comercio](/images/gateway/merchant_accounts_new.png)
 
-Completá la información necesaria y presiona el botón _Continuar_ 
+Completá la información necesaria y presiona el botón _Continuar_
 
 ![Número de comercio cargado](/images/gateway/merchant_accounts_congrats.png)
 
@@ -105,11 +105,11 @@ Desactivá los acuerdos que no te interesen ofrecer.
 
 > Si querés desactivar un medio de pago entero deseleccioná la lista entera
 
-## ¿Necesitás ayuda?
+### ¿Necesitás ayuda?
 
 Comunicate con tu ejecutivo de cuenta.
 
-## Próximos pasos
+### Próximos pasos
 
-* [Integrá el Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway
+* [Integrá el Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway
 * [Integrá la API](https://www.mercadopago.com.ar/developers/es/guides/gateway/api/receiving-payments) en Modelo Gateway

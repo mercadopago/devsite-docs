@@ -29,7 +29,9 @@ To set up aggregator mode you must follow this steps:
 1. Set up affiliation.
 1. Set up native payment plans.
 1. Set up offline payment plans.
+----[mlc]----
 1. Set up offline payment Webpay.
+------------
 1. Set up custom payment plans.
 1. Set up DeviceID.
 
@@ -61,8 +63,8 @@ To operate in aggregator mode you just need to set an affiliation.
 
 - Affiliation Name: Affiliation identifier name.
 - OAuth login: Not used.
-- PublicKey PublicKey: Mercado Pago's PublicKey, [see credentials](https://www.mercadopago.com.ar/account/credentials).
-- AccessToken Access:Mercado Pago's AccessToken, [see credentials](https://www.mercadopago.com.ar/account/credentials).
+- PublicKey PublicKey: Mercado Pago's PublicKey, [see credentials]([FAKER][CREDENTIALS][URL]).
+- AccessToken Access:Mercado Pago's AccessToken, [see credentials]([FAKER][CREDENTIALS][URL]).
 - RefreshToken RefreshToken: Not used - leave blank.
 - ExpiredTokenIn: Not used - leave blank.
 - Merchant Account Id: Not used - leave blank.
@@ -144,6 +146,7 @@ Offline payment plan are the payment methods which payments are made in two step
 
     ![Offline](/images/vtex-offline-plan-4.png)
 
+----[mlc]----
 ### Set up Webpay payment plan
 
 1. Select Catalog menu.
@@ -167,7 +170,7 @@ Offline payment plan are the payment methods which payments are made in two step
 10. Save.
 
     ![Offline](/images/vtex-webpay-4.png)
-
+------------
 
 ### Set up custom payment plan
 
@@ -207,7 +210,7 @@ Uruguay: Oca.
 ### Set up custom plan - Argentina cards
 
 | Name                   | Description              | Payment method |       Bins {min}-{max},{min}-{max},{bin1},{bin2}       | Payment code in acquirer (optional) |
-|--------------------------|--------------------------|---------------|:-------------------------------------------------------:|------------------------------------------|
+|----|----|------|:-----:|------|
 | Argencard                | Argencard                | Mastercard    | 501105-501105                                           | argencard                                |
 | Cencosud                 | Cencosud                 | Mastercard    | 603493-603493                                           | cencosud                                 |
 | CMR                      | CMR                      | Mastercard    | 557039-557039                                           | cmr                                      |
@@ -219,7 +222,7 @@ Uruguay: Oca.
 ### Set up custom plan - Chile cards
 
 | Name | Description | Payment method|                                   Bins {min}-{max},{min}-{max},{bin1},{bin2}                                   | Payment code in acquirer (optional) |
-|--------|-------------|---------------|:---------------------------------------------------------------------------------------------------------------:|------------------------------------------|
+|---|-----|-----|:----:|------|
 | Presto | Presto      | Mastercard    | 920000-920099                                                                                                   | presto                                   |
 | Magna  | Magna       | Mastercard    | 568000-568099                                                                                                   | magna                                    |
 | CMR    | CMR         | Mastercard    | 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984 | cmr                                      |
@@ -227,13 +230,13 @@ Uruguay: Oca.
 ### Set up custom plan - Colombia cards
 
 | Name  | Description |Payment method | Bins {min}-{max},{min}-{max},{bin1},{bin2} | Payment code in acquirer (optional) |
-|---------|-------------|---------------|:-------------------------------------------:|------------------------------------------|
+|---|------|-----|:------:|------|
 | Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
 
 ### Set up custom plan - Uruguay cards
 
 | Name | Description | Payment method |                     Bins {min}-{max},{min}-{max},{bin1},{bin2}                     | Payment code in acquirer (optional) |
-|--------|-------------|---------------|:-----------------------------------------------------------------------------------:|------------------------------------------|
+|---|----|---|:----:|------|
 | OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
 
 ## Set up DeviceID
@@ -272,7 +275,7 @@ document.body.appendChild(dmlscript);
 To get Mercado Pago credentials you must follow this steps:
 
 1. Log into Mercado Pago account.
-2. Go to this [URL](https://www.mercadopago.com/mla/account/credentials).
+2. Go to this [URL]([FAKER][CREDENTIALS][URL]).
 3. Select custom checkout tab.
 4. Copy and paste the Public key and Access token (Production mode to process real payments / Sandbox mode to test).
 5. Before going to production you must fill the form ‘I want to go to production’.

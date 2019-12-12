@@ -10,32 +10,6 @@ sites_supported:
 
 # Otras funcionalidades
 
-----[mla, mlb]----
-> INDEX
->
-> En esta página
->
->
->
-> [Ejemplo de una preferencia completa](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
->
-> [Atributos para la preferencia](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
->
-> [Pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_credito)
-
-------------
-----[mlc, mco, mlm, mlu]----
-> INDEX
->
-> En esta página
->
->
->
-> [Ejemplo de una preferencia completa](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_ejemplo_de_una_preferencia_completa)
->
-> [Atributos para la preferencia](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia)
-
-------------
 
 Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
 
@@ -350,7 +324,7 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 
 ### Sponsor ID
 
-El atributo `sponsor_id` es un identificador del desarrollador o compañía de software que realiza la integración del  Smart Checkout, este dato es visible en la preferencia y en el pago.
+El atributo `sponsor_id` es un identificador del desarrollador o compañía de software que realiza la integración del  Checkout Mercado Pago, este dato es visible en la preferencia y en el pago.
 
 ```json
 "sponsor_id": 123456789

@@ -1,0 +1,26 @@
+{
+    "paging": {
+        "total": 1,
+        "offset": 0,
+        "limit": 0
+    },
+    "results": [
+        {
+            "user_id": 446566691,
+            "name": "Caja Principal",
+            "fixed_amount": true,
+            "category": 621102,
+            "store_id": "12345678",
+            "external_id": "4lph4num3r1c",
+            "id": 1988157,
+            "qr": {
+                "image": "https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png",
+                "template_document": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf",
+                "template_image": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png"
+            },
+            "date_created": "2019-06-24T09:31:56.000-04:00",
+            "date_last_updated": "2019-08-07T17:07:26.000-04:00",
+            "external_store_id": "BK001"
+        }
+    ]
+}

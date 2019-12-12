@@ -183,22 +183,13 @@ Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre qu
 
 ### Implementación de _device_ en Web
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu _checkout_, reemplazando el valor publicKey según corresponda:
+Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu _checkout_:
 
-```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-    });
-}
-document.body.appendChild(dmlscript);
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-
-
-Es importante que envíes el campo `MP_DEVICE_SESSION_ID` (generado automáticamente luego de la ejecución del código de arriba) a tu servidor y que al momento de crear el pago agregues el siguiente _header_ al _request_:
+Es importante que envíes el campo `MP_DEVICE_SESSION_ID` (generado automáticamente como variable global de javascript) a tu servidor y que al momento de crear el pago agregues el siguiente _header_ al _request_:
 
 ```http
 X-meli-session-id: device_id
@@ -259,13 +250,13 @@ Nuestros SDKs cuentan con funciones que puedes utilizar para capturar esta infor
 
 ```android
 ===
-La clase[Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) recolectará tanto la información del dispositivo como su fingerprint.
+La clase [Device](https://github.com/mercadopago/px-android/blob/master/px-services/src/main/java/com/mercadopago/android/px/model/Device.java) recolectará tanto la información del dispositivo como su fingerprint.
 ===
 new Device(context);
 ```
 ```swift
 ===
-La clase[Device](https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/Device.java) recolectará tanto la información del dispositivo como su fingerprint.
+La clase [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) recolectará tanto la información del dispositivo como su fingerprint.
 ===
 Device()
 ```

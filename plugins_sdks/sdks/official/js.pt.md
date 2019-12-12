@@ -1,17 +1,4 @@
-#SDK Javascript#
-
-> WARNING
->
-> Índice de conteúdo
->
-> - Inclua o SKD de MercadoPago.
-> - Configure sua chave pública.
-> - Obtenha um token de uso único para o cartão.
-> - Obtenha informação sobre o meio de pagamento.
-> - Obtenha os tipos de documento.
-> - Obtenha os emissores de cartão.
-> - Obtenha as taxas e custos de financiamento.
-
+#SDK Javascript
 
 O SDK Javascript de Mercado Pago facilita a obtenção dos dados de cartões de seus clientes de forma segura.
 
@@ -75,7 +62,7 @@ A função callback receberá um objeto com as seguintes propriedades:
     }
 }
 ```
- 
+
 ##Obtenha informação dos meios de pagamento
 
 Pode-se obter informação do cartão inserido como meio de pagamento selecionado, usando:
@@ -262,7 +249,7 @@ Exemplo com {"bin": "530575", "amount": 10}:
       {
         "installments": 1,
         "installment_rate": 0,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 0,
@@ -274,7 +261,7 @@ Exemplo com {"bin": "530575", "amount": 10}:
       {
         "installments": 3,
         "installment_rate": 0,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
           "recommended_installment"
         ],
@@ -287,7 +274,7 @@ Exemplo com {"bin": "530575", "amount": 10}:
       {
         "installments": 6,
         "installment_rate": 26.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 3,
@@ -299,7 +286,7 @@ Exemplo com {"bin": "530575", "amount": 10}:
       {
         "installments": 9,
         "installment_rate": 42.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 5,
@@ -311,7 +298,7 @@ Exemplo com {"bin": "530575", "amount": 10}:
       {
         "installments": 12,
         "installment_rate": 52.99,
-        "disccount_rate": null,
+        "discount_rate": null,
         "labels": [
         ],
         "min_allowed_amount": 6,
