@@ -13,7 +13,7 @@ sites_supported:
 
 ## Introdução
 
-As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago para gerenciar seus negócios e manter um registro das suas contas. Você pode ter várias caixas dentro de uma loja.
+As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago para gerenciar seus negócios e manter um registro das suas contas. Você pode ter vários caixas dentro de uma loja.
 
 | Termo       |  Descrição                                                 |
 | ------------- | ------------------------------------------------------------ |
@@ -31,7 +31,7 @@ As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago par
 Os benefícios de criar Sucursais são:
 
 - **Conseguir traçabilidade**. Cada pagamento ficará associado a uma sucursal e no momento de obter seus relatórios de conciliação será valioso para identificar transações por sucursal. 
-- **Visibilidade em mapas de sucursais**.  As sucursais criadas aparecem no mapa dos app de Mercado Pago ou Mercado Libre à medida que forem tendo pagamentos. Assim, conferem visibilidade a todos os clientes sobre a existência da loja. 
+- **Visibilidade em mapas de sucursais**.  As sucursais criadas aparecem no mapa dos app de Mercado Pago ou Mercado Livre à medida que forem tendo pagamentos. Assim, conferem visibilidade a todos os clientes sobre a existência da loja. 
 - **Aportar uma melhor organização dos caixas**. 
 
 ### Como criar uma sucursal?

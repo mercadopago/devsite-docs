@@ -456,7 +456,7 @@ curl -X POST \
 
 ----[mla, mlb]----
 
-## Pagamentos com 2 cartão de crédito
+## Pagamentos com 2 cartões de crédito
 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas_br.png)
 
