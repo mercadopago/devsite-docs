@@ -8,15 +8,18 @@ sites_supported:
 
 Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pago en el reporte de Dinero disponible.
 
+----[mla]----
 > NOTE
 >
 > Nota
 >
 > ¿Quieres empezar a generar rendimientos? [Comienza ahora](https://www.mercadopago.com.ar/ayuda/Ayuda_con_tus_Rendimientos_4048).
+------------
 
 ## Movimientos de tus rendimientos
 ----[mla]---- 
 Puedes ver dos tipos de movimientos según la variación del [valor de cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) suscriptas en el Fondo Común de Inversión: positivos y negativos.
+Es decir, como movimiento positivo vas a encontrar el dinero que ingresó en tu cuenta y como negativo, el egreso.
 ------------
 ----[mlb]---- 
 Puedes ver cuatro tipos de movimientos según la variación del [valor de cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) suscriptas en el Fondo Común de Inversión:
