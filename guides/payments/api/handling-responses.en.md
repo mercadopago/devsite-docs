@@ -2,6 +2,12 @@
 
 Provide clear and accurate information to your customers in the event of possible errors when entering card data and about the payment status. This will allow you to improve your checkout conversion, since users will know if they should correct any information or take any action to successfully complete the payment process.
 
+> NOTE
+>
+> Note
+>
+> We can help you improve your clients experience and avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+
 ## When receiving a payment
 
 ### Results when creating a payment: `HTTP Status 201 OK`

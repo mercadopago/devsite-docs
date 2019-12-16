@@ -2,7 +2,6 @@
 
 Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura, manteniendo el control de la experiencia de compra que le brindas a tus usuarios.
 
-
 ## Captura los datos de tarjeta
 
 La captura de datos de tarjeta es realizada desde el navegador de tu comprador. Es **muy importante que los datos nunca lleguen a tus servidores por cuestiones de seguridad**.
@@ -334,11 +333,11 @@ var payment_data = {
 };
 // Save and posting the payment
 mercadopago.payment.save(payment_data).then(function (data) {
-      console.log(data);
-      res.send(data);
-    }).catch(function (error) {
-      console.log(error);
-    });
+console.log(data);
+  res.send(data);
+}).catch(function (error) {
+  console.log(error);
+});
 
 ```
 ```ruby

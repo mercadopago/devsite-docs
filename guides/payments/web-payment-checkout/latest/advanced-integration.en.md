@@ -284,6 +284,12 @@ Preference preference = new Preference();
 ```
 ]]]
 
+## Prevent payment rejection
+
+A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
+
+About rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections" target="_blank">improve the approval process</a>.
+
 ## Cancellations and Returns
 
 Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.

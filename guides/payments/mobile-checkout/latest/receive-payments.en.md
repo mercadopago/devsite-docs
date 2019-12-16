@@ -215,7 +215,7 @@ As an example, we propose that you initiate the MercadoPago’s flow from a butt
 
 ```android-xml
 ===
-1.  Create an Activity to insert the button (** MainActivity**, for example).  
+1. Create an Activity to insert the button (**MainActivity**, for example).
 2. Add a text field to show the payment result.
 3. Paste the following sample code in **res/layout/activity_main.xml**.
 ===
@@ -441,6 +441,12 @@ Notifications are automatically sent to inform you of any new payments and statu
 This will allow you to manage your inventories and keep your system in sync.
 
 To learn more about it, go to [Notifications.](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
+
+### Prevent payment rejection
+
+A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
+
+About rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections" target="_blank">improve the approval process</a>.
 
 ### Test the integration
 
