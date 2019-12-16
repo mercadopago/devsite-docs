@@ -45,6 +45,12 @@ Além disso, quando o pagamento com cartão de crédito é aprovado, deverá mos
 
 Se permite fazer devoluções de pagamentos, deixe claro que poderão ser feitas em até 90 dias depois da aprovação do pagamento.
 
+> NOTE
+>
+> Nota
+>
+> Melhore a experiência de seus clientes e obtenha benefícios para o seu negócio com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+
 ### Termos e condições
 
 Deve disponibilizar uma politica de termos e condições, na qual especifique que se responsibiliza por todos os dados que estão sendo inseridos no seu site.

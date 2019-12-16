@@ -443,7 +443,7 @@ Las notificaciones son la forma automática de enterarte de tus nuevos pagos y l
 
 Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para conocer más sobre esto.
 
-## Previene pagos rechazados
+### Previene pagos rechazados
 
 Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema o porque no se cumple con los requisitos de seguridad necesarios.
 

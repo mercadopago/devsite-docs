@@ -664,6 +664,12 @@ payment.Save();
 
 Recomendamos que leia o artigo sobre [manipulação de respostas](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses) e utilize a comunicação sugerida em cada um dos casos.
 
+> NOTE
+>
+> Nota
+>
+> Melhore a experiência de seus clientes e evite pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+
 ## Receba uma notificação de pagamento
 
 É importante estar ciente sobre quaisquer atualizações do status do seu pagamento. Para isso, deve-se utilizar _Webhooks_.

@@ -290,7 +290,6 @@ Un pago puede ser rechazado porque el emisor del medio de pago detecta un proble
 
 Evita pagos rechazados con nuestras recomendaciones y <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections" target="_blank">mejora la aprobación de tus pagos</a>.
 
-
 ## Cancelaciones y devoluciones
 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.

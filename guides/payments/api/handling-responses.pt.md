@@ -2,6 +2,12 @@
 
 Ofereça aos seus clientes informações claras e precisas diante de possíveis erros na inclusão dos dados do cartão e sobre o status do pagamento realizado. Isso permitirá melhorar a conversão do seu checkout, pois o usuário estará ciente de que precisa corrigir alguma informação ou fazer algo para concluir o processo de pagamento com sucesso.
 
+> NOTE
+>
+> Nota
+>
+> Ajudamos você a melhorar a experiência de seus clientes e evitar pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+
 ## Realização de cobranças
 
 ### Resultados da criação de uma cobrança: `HTTP Status 201 OK`
