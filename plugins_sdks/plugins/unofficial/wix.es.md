@@ -9,7 +9,7 @@ Para obtener más información sobre las posibilidades que ofrece Wix, acceda a 
 
 Wix permite operar Mercado Pago en la siguiente modalidad:
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Recibir pagos en su tienda utilizando el checkout del propio Mercado Pago. En este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 

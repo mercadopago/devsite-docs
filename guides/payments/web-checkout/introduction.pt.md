@@ -3,7 +3,7 @@ sites_supported:
   - mpe
 ---
 
-# Smart Checkout
+# Checkout Mercado Pago
 
 O Mercado Pago fornece as ferramentas necessárias para que você possa receber pagamentos através do nosso formulário web de forma simples, rápida e segura.
 

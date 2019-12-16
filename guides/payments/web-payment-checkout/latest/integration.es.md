@@ -8,7 +8,7 @@ sites_supported:
   - mlc
 ---
 
-# Integra Smart Checkout
+# Integra Checkout Mercado Pago
 
 
 
@@ -28,7 +28,7 @@ sites_supported:
 
 ## Pasos para integrarte
 
-Instalar el Smart Checkout consta de dos pasos:
+Instalar el Checkout Mercado Pago consta de dos pasos:
 
 ### 1. Genera tu preferencia
 
@@ -239,7 +239,7 @@ curl -X POST \
 
 ### 2. Suma el checkout a tu sitio
 
-Por último, suma el siguiente código para mostrar el botón de pago de tu Smart Checkout en el lugar que quieras que aparezca.
+Por último, suma el siguiente código para mostrar el botón de pago de tu Checkout Mercado Pago en el lugar que quieras que aparezca.
 
 [[[
 ```php
@@ -292,13 +292,13 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Smar
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 > NOTE
 >
 > Nota
 >
-> Esta documentación refiere a la nueva versión del Smart Checkout. Para **ver la versión anterior**, ve a la [sección de Smart Checkout antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentación refiere a la nueva versión del Checkout Mercado Pago. Para **ver la versión anterior**, ve a la [sección de Checkout Mercado Pago antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
 ---
 

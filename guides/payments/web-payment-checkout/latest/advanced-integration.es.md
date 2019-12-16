@@ -314,7 +314,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Otras funcionalidades
 >
-> Configura tus pago y adapta Smart Checkout a tu negocio.
+> Configura tus pago y adapta Checkout Mercado Pago a tu negocio.
 >
 > [Configurations](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
 

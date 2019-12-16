@@ -33,7 +33,7 @@ Our SDK is compatible with Java 6 or grater. Our development team recomends to u
 
 1. Import Mercado Pago basic clases. `import import com.mercadopago.*;`
 2. Setup your credentials.
-  - **For Smart Checkout:**
+  - **For Checkout Mercado Pago:**
     ```java
       MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
       MercadoPago.SDK.setClientId("CLIENT_ID_OK");

@@ -14,7 +14,7 @@ sites_supported:
 
 ## How to test my integration
 
-**Test users allow you to test your Smart Checkout** by generating payment flows in an exact copy of your integration.
+**Test users allow you to test your Checkout Mercado Pago** by generating payment flows in an exact copy of your integration.
 
 User types | Description
 ------------ | -------------

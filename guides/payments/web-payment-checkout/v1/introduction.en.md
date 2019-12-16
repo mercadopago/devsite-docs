@@ -8,15 +8,15 @@ sites_supported:
   - mlm
 ---
 
-# Smart Checkout
+# Checkout Mercado Pago
 
 > WARNING
 >
 > Note
 >
-> This documentation refers to the new version of the Smart Checkout.
+> This documentation refers to the new version of the Checkout Mercado Pago.
 >
-> Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Checkout Mercado Pago.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 Mercado Pago provides you with the necessary tools so that you can receive payments using our web form in a simple, fast and safe way.
 
