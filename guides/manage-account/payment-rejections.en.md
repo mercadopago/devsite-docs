@@ -30,7 +30,7 @@ You can see the payment status in the API response as `rejected` and the reason 
 }
 ```
 
-Also, you can find more information about [payment details](https://www.mercadopago.com.ar/)on Mercado Pago activity section, where payments are being receive.
+Also, you can find more information about [payment details](https://www.mercadopago.com.ar/) on Mercado Pago activity section, where payments are being receive.
 
 > NOTE
 >
