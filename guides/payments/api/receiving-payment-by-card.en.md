@@ -665,7 +665,7 @@ We recommend that you read the article [response handling](https://www.mercadopa
 >
 > Note
 >
-> Enhance your clients experience and avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+> Enhance your clients experience and avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections).
 
 ## Receive a payment notification
 

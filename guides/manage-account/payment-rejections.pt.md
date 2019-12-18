@@ -9,7 +9,7 @@ Um pagamento pode ser recusado por um erro com o meio de pagamento ou porque nã
 >
 > Nota
 >
-> Se quiser mais informações, consulte [os estados e motivos de recusa existentes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> Se quiser mais informações, consulte [os estados e motivos de recusa existentes](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).
 
 Para evitar perdas de receitas de seu negócio e melhorar a experiência de seus clientes, trabalhamos com os emissores de responsáveis de cada meio de pagamento e utilizamos as últimas tecnologias para evitar a fraude e aumentar a quantidade de pagamentos aprovados.
 
@@ -59,7 +59,7 @@ Quando o nosso sistema de prevenção de fraude detectar um pagamento suspeito, 
 >
 > Nota
 >
-> Se você quiser mais informações, consulte os [estados e motivos de recusa existentes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> Se você quiser mais informações, consulte os [estados e motivos de recusa existentes](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).
 
 ## Recomendações para melhorar sua aprovação
 
@@ -278,7 +278,7 @@ preference.Items.Add(
 ```
 ]]]
 
-Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments/post/).
 
 ### Auxilie os seus clientes com seus pagamentos recusados
 
@@ -290,4 +290,4 @@ Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá reco
 >
 > Nota
 >
-> Se você utilizar o nosso Smart Checkout, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> Se você utilizar o nosso Smart Checkout, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).

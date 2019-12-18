@@ -49,7 +49,7 @@ Se permite fazer devoluções de pagamentos, deixe claro que poderão ser feitas
 >
 > Nota
 >
-> Melhore a experiência de seus clientes e obtenha benefícios para o seu negócio com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+> Melhore a experiência de seus clientes e obtenha benefícios para o seu negócio com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
 
 ### Termos e condições
 

@@ -7,9 +7,9 @@ A payment can be rejected due to an error with a payment method or non-complianc
 
 > NOTE
 >
-> Nota
+> Note
 >
-> For more information, check [current rejection status and reasons](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> For more information, check [current rejection status and reasons](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
 
 In order to avoid any revenue loss with your business and to enhance your customers experience, we work with agents from each payment method and operate with the latest tools for fraud prevention and payment growth.
 
@@ -34,7 +34,7 @@ Also, you can find more information about [payment details](https://www.mercadop
 
 > NOTE
 >
-> Nota
+> Note
 >
 >Keep in mind that if the card issuer fails to inform the rejection reason, you’ll see the payment details as `cc_rejected_other_reason`. In this scenario, we recommend changing the payment method or reaching out to the bank to solve the issue.
 
@@ -57,9 +57,9 @@ When our fraud prevention system detects a suspicious payout, you'll be able to 
 
 > NOTE
 >
-> Nota
+> Note
 >
-> For more information, check the current [rejection status and reasons](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> For more information, check the current [rejection status and reasons](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
 
 ## Tips to improve the approval process
 
@@ -75,9 +75,9 @@ It’s simple. Add the script, adjust the section of your website where you inse
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-#### Posibles valores para VIEW
+#### VIEW Values
 
-| Tipo                                                         | Descripción                                                  |
+| Value                                                         | Section                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | home | Your website main page. |
 | search | Search page or product list page. |
@@ -85,7 +85,7 @@ It’s simple. Add the script, adjust the section of your website where you inse
 
 > NOTE
 >
-> Nota
+> Note
 >
 > In case of unavailable value for a section, left empty.
 
@@ -278,7 +278,7 @@ preference.Items.Add(
 ```
 ]]]
 
-Learn all about these attributes in our [API Reference](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Learn all about these attributes in our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments/post/).
 
 ### Help your clients with their rejected payments
 
@@ -288,6 +288,6 @@ For instance, if a payment is rejected due to lack of funds, you can recommend t
 
 > NOTE
 >
-> Nota
+> Note
 >
-> If you’re using our Checkout Mercado Pago, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> If you’re using our Checkout Mercado Pago, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).

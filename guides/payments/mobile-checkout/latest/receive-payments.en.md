@@ -446,7 +446,7 @@ To learn more about it, go to [Notifications.](https://www.mercadopago.com.ar/de
 
 A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
 
-About rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections" target="_blank">improve the approval process</a>.
+About rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections" target="_blank">improve the approval process</a>.
 
 ### Test the integration
 

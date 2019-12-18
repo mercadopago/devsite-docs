@@ -286,7 +286,7 @@ Preference preference = new Preference();
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
 
 ## Cancelamentos e estornos
 

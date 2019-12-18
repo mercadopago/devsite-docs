@@ -4,7 +4,7 @@
 >
 > Note
 >
-> Enhance your clients experience and avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+> Enhance your clients experience and avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections).
 
 In the event that a payment is rejected you can offer the buyer the option to retry it and recover the sale.
 
