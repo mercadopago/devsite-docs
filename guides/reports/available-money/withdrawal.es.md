@@ -17,8 +17,8 @@ Genera tus reportes cada vez que quieras consultar un retiro de dinero
 1. Desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de *Reportes*.
 1. Ve a tus [reportes de Dinero Disponible](https://www.mercadopago.com.ar/balance/reports?page=1#!/bank-report) y haz click en *Crear reporte*.
 1. Ubica tus retiros por **período de tiempo** y selecciona el retiro quieras consultar.
-1. ¡Y listo! Vas a ver tu reporte *En Preparación*.
 
+<span style="margin-left:40px">¡Y listo! Vas a ver tu reporte *En Preparación*.</span>
 
 > NOTE
 >

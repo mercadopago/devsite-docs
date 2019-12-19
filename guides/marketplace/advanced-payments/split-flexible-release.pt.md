@@ -71,3 +71,11 @@ No `body` devemos definir a nova data de liberação.
   "money_release_date": "2018-07-10T10:23:18.000-04:00"
 }
 ```
+
+Depois que a alteração for solicitada, ela será processada de forma assíncrona e o resultado será notificado via Webhook.
+
+> NOTE
+>
+> Nota
+>
+> Para receber notificações deste evento, você deve primeiro [configurar o URL ao qual o Mercado Pago tem acesso](https://www.mercadopago.com/mla/account/webhooks).

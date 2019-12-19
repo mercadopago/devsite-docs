@@ -8,7 +8,7 @@ Te ofrecemos distintas opciones para que puedas construir la solución de pagos 
 
 Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plugins. Y también una API flexible y robusta para que puedas crear tu propia experiencia de pago.
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
@@ -19,17 +19,17 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 - **Protegemos tu dinero, siempre.** No tenés que preocuparte de nada. Si tenés algún problema, te respaldamos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
 
-[Integrar Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)
+[Integrar Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)
 
 ### Mobile Checkout
 
-A diferencia de Smart Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
+A diferencia de Checkout Mercado Pago, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
 
 [Integrar Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
-Es la versión simplificada del Smart Checkout con una experiencia de usuario renovada.
+Es la versión simplificada del Checkout Mercado Pago con una experiencia de usuario renovada.
 
 - **Despreocupate del diseño.** Te damos un formulario con diseño y front-end listo para que puedas usar.
 
@@ -98,7 +98,7 @@ Te ofrecemos distintas opciones para que puedas construir la solución de pagos 
 
 Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plugins. Y también una API flexible y robusta para que puedas crear tu propia experiencia de pago.
 
-###  Smart Checkout
+###  Checkout Mercado Pago
 
 Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
@@ -108,17 +108,17 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldaremos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.mx/ayuda/dinero-seguridad-ventas_701).
 
-[Integrar Smart Checkout](https://www.mercadopago.com.mx/developers/es/guides/payments/web-payment-checkout/introduction/)
+[Integrar Checkout Mercado Pago](https://www.mercadopago.com.mx/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Mobile Checkout
 
-A diferencia de Smart Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
+A diferencia de Checkout Mercado Pago, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
 
 [Integrar Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
-Es la versión simplificada del Smart Checkout con una experiencia de usuario renovada.
+Es la versión simplificada del Checkout Mercado Pago con una experiencia de usuario renovada.
 
 - **Despreocúpate del diseño.** Te proporcionamos un formulario con diseño y front-end listo para que puedas usar.
 
@@ -192,7 +192,7 @@ Te ofrecemos distintas opciones para que puedas construir la solución de pagos 
 
 Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plugins. Y también una API flexible y robusta para que puedas crear tu propia experiencia de pago.
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
@@ -202,17 +202,17 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - Protegemos tu dinero, siempre. No tienes que preocuparte de nada. Si tenés algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.pe/ayuda/dinero-seguridad-ventas_288).
 
-[Integrar Smart Checkout](https://www.mercadopago.com.pe/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Checkout Mercado Pago](https://www.mercadopago.com.pe/developers/es/guides/payments/web-checkout/introduction)
 
 ### Mobile Checkout
 
-A diferencia de Smart Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
+A diferencia de Checkout Mercado Pago, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
 
 [Integrar Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
-Es la versión simplificada del Smart Checkout con una experiencia de usuario renovada.
+Es la versión simplificada del Checkout Mercado Pago con una experiencia de usuario renovada.
 
 - Despreocúpate del diseño. Te damos un formulario con diseño y front-end listo para que puedas usar.
 
@@ -261,7 +261,7 @@ Te ofrecemos distintas opciones para que puedas construir la solución de pagos 
 
 Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plugins. Y también una API flexible y robusta para que puedas crear tu propia experiencia de pago.
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
@@ -271,17 +271,17 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes  algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.co/ayuda/seguridad-vendedor_1800).
 
-[Integrar Smart Checkout](https://www.mercadopago.com.co/developers/es/guides/payments/web-payment-checkout/introduction/)
+[Integrar Checkout Mercado Pago](https://www.mercadopago.com.co/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Mobile Checkout
 
-A diferencia de Smart Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
+A diferencia de Checkout Mercado Pago, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
 
 [Integrar Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
-Es la versión simplificada del Smart Checkout con una experiencia de usuario renovada.
+Es la versión simplificada del Checkout Mercado Pago con una experiencia de usuario renovada.
 
 - **Despreocúpate del diseño.** Te damos un formulario con diseño y front-end listo para que puedas usar.
 
@@ -328,7 +328,7 @@ Te ofrecemos distintas opciones para que puedas construir la solución de pagos 
 
 Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plugins. Y también una API flexible y robusta para que puedas crear tu propia experiencia de pago.
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
@@ -338,11 +338,11 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.uy/ayuda/dinero-seguridad-ventas-uy_2989).
 
-[Integrar Smart Checkout](https://www.mercadopago.com.uy/developers/es/guides/payments/web-payment-checkout/introduction/)
+[Integrar Checkout Mercado Pago](https://www.mercadopago.com.uy/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Web Tokenize
 
-Es la versión simplificada del Smart Checkout con una experiencia de usuario renovada.
+Es la versión simplificada del Checkout Mercado Pago con una experiencia de usuario renovada.
 
 - **Despreocúpate del diseño.** Te damos un formulario con diseño y front-end listo para que puedas usar.
 
@@ -402,7 +402,7 @@ Te ofrecemos distintas opciones para que puedas construir la solución de pagos 
 
 Tenemos herramientas listas para usar como SDKs, botones de pago, módulos o plugins. Y también una API flexible y robusta para que puedas crear tu propia experiencia de pago.
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Esta opción te permite cobrar a través de nuestro formulario web dentro del ambiente seguro de Mercado Pago de manera simple y rápida.
 
@@ -412,17 +412,17 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor.](https://www.mercadopago.cl/ayuda/proteccion-vendedores_1807)
 
-[Integrar Smart Checkout](https://www.mercadopago.cl/developers/es/guides/payments/web-payment-checkout/introduction/)
+[Integrar Checkout Mercado Pago](https://www.mercadopago.cl/developers/es/guides/payments/web-payment-checkout/introduction/)
 
 ### Mobile Checkout
 
-A diferencia de Smart Checkout, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
+A diferencia de Checkout Mercado Pago, te facilitamos la creación de una experiencia de pago pero desde tu aplicación a través de nuestra SDK. Es una integración simple y rápida con los mejores medios de pago.
 
 [Integrar Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
-Es la versión simplificada del Smart Checkout con una experiencia de usuario renovada.
+Es la versión simplificada del Checkout Mercado Pago con una experiencia de usuario renovada.
 
 - **Despreocúpate del diseño.** Te damos un formulario con diseño y front-end listo para que puedas usar.
 

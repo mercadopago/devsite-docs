@@ -7,7 +7,7 @@ Há duas formas de gerar um relatório de Dinheiro em conta:
 
 | Canais | Descrição |
 | ------- | ----------- |
-| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de Relatórios.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel.](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/panel/)<br/><br/> |
+| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de *Relatórios*.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel.](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/panel/)<br/><br/> |
 | Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API.](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/api/) <br/><br/>|
 
 <br/>
@@ -38,7 +38,7 @@ Saiba as características dos elementos que compõem seu relatório.
 | Ordem das colunas |<br/> Fixa <br/> <br/> |
 | Período máximo | <br/> Relatórios com dados de até 60 dias.   <br/> <br/> |
 | Moeda | <br/> Local (com base no país onde está cadastrada a conta do Mercado Pago) <br/> <br/> |
-| Fuso horário das colunas: | <br/> GMT-4 <br/> |
+| Fuso horário das colunas: | <br/> GMT-4 <br/> <br> Tome como referência o lugar de onde o relatório é baixado. <br/><br/> |
 | Seleção de datas via API |<br/>  Formato do fuso horário: UTC / GMT-0 <br/> <br/> |
 | Seleção de datas via web  | <br/> Deve ter como base o fuso horário da conta do usuário.<br/> Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. <br/> <br/> |
 
@@ -80,4 +80,4 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 >
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
-> [Generação via API](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/api/)
+> [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/api/)

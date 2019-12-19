@@ -2,9 +2,13 @@
 
 
 * [Instalação](#bookmark_instalação)
-* [Smart Checkout](#bookmark_smart_checkout)
+* [Checkout Mercado Pago](#bookmark_checkout_mercado_pago)
 * [Customized checkout](#bookmark_checkout_custom)
 * [Generic methods](#bookmark_métodos_genéricos)
+
+### Versões do Python suportadas:
+
+Nosso SDK é compatível com Python versão 2.x e 3.x
 
 ## Instalação
 
@@ -17,7 +21,7 @@ Em Python 3.x:
 
 ``pip3 install mercadopago``
 
-## Smart Checkout
+## Checkout Mercado Pago
 
 
 ### Configure suas credenciais

@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 #  Cómo integrar QR modelo atendido
@@ -63,25 +64,20 @@ La respuesta será un `HTTP 204 No Content`.
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integración avanzada<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Conoce las opciones que dispones para llegar la integración al siguiente nivel.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Prueba tu integración<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Realiza los casos de uso más frecuentes para validar tu integración.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Integración avanzada
+>
+> Conoce las opciones que dispones para llegar la integración al siguiente nivel.
+>
+> [Integrar o modelo QR atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Prueba tu integración
+>
+> Realiza los casos de uso más frecuentes para validar tu integración.
+>
+> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/)

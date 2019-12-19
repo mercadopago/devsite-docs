@@ -9,7 +9,7 @@ The products offered by Mercado Pago may vary by country.
 |     Product     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :-------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Pay button      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Smart Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Checkout Mercado Pago    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Mobile Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
 | API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
@@ -18,14 +18,14 @@ The products offered by Mercado Pago may vary by country.
 |    Product     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Pay button     | ✔   | ✔   |     |     | ✔   |     |     |     |
-| Smart Checkout   | ✔   | ✔   |     |     | ✔   |     |     |     |
+| Checkout Mercado Pago   | ✔   | ✔   |     |     | ✔   |     |     |     |
 | API            | ✔   | ✔   |     |     | ✔   |     |     |     |
 
 ### Marketplace:
 
 |   Product    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :----------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Smart Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Checkout Mercado Pago | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 
 
@@ -53,13 +53,13 @@ Certain [payment methods](payment-methods) may not be available for certain prod
 |    Product    |     Solution    |                                                                            Unavailable payment methods                                                                            |
 | :------------ | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Payments      | Pay button      | N/A                                                                                                                                                                                 |
-| Payments      | Smart Checkout    | N/A                                                                                                                                                                                 |
+| Payments      | Checkout Mercado Pago    | N/A                                                                                                                                                                                 |
 | Payments      | Mobile Checkout | `account_money`                                                                                                                                                                     |
 | Payments      | API             | N/A                                                                                                                                                                                 |
 | Subscriptions | Pay button      | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
-Subscriptions | Smart Checkout    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Subscriptions | Checkout Mercado Pago    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
-| Marketplace | Smart Checkout | N/A |
+| Marketplace | Checkout Mercado Pago | N/A |
 | Marketplace | API          | N/A |
 
 ### Brazil
@@ -67,13 +67,13 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 |    Product    |     Solution    | Unavailable payment methods   |
 | :------------ | :-------------- | :---------------------------- |
 | Payments      | Pay button      | N/A                           |
-| Payments      | Smart Checkout    | N/A                           |
+| Payments      | Checkout Mercado Pago    | N/A                           |
 | Payments      | Mobile Checkout | `account_money`               |
 | Payments      | API             | N/A                           |
 | Subscriptions | Pay button      | `bolbradesco`, `giftcard`     |
 | Subscriptions | Checkout        | `bolbradesco`, `giftcard`     |
 | Subscriptions | API             | `bolbradesco`, `giftcard`     |
-| Marketplace   | Smart Checkout    | N/A                           |
+| Marketplace   | Checkout Mercado Pago    | N/A                           |
 | Marketplace   | API             | N/A                           |
 
 ### Chile
@@ -81,10 +81,10 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 |   Product   |     Solution    |        Unavailable payment methods          |
 | :---------- | :-------------- | :------------------------------------------ |
 | Payments    | Pay button      | N/A                                         |
-| Payments    | Smart Checkout    | N/A                                         |
+| Payments    | Checkout Mercado Pago    | N/A                                         |
 | Payments    | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
 | Payments    | API             | `khipu`                                     |
-| Marketplace | Smart Checkout    | N/A                                         |
+| Marketplace | Checkout Mercado Pago    | N/A                                         |
 | Marketplace | API             | `khipu`                                     |
 
 ### Colombia
@@ -92,10 +92,10 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 |   Product   |     Solution    |        Unavailable payment methods          |
 | :---------- | :-------------- | :------------------------------------------ |
 | Payments    | Pay button      | N/A                                         |
-| Payments    | Smart Checkout    | N/A                                         |
+| Payments    | Checkout Mercado Pago    | N/A                                         |
 | Payments    | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
 | Payments    | API             | `account_money`                             |
-| Marketplace | Smart Checkout    | N/A                                         |
+| Marketplace | Checkout Mercado Pago    | N/A                                         |
 | Marketplace | API             | `account_money`                             |
 
 ### Mexico
@@ -103,13 +103,13 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 |    Product    |     Solution    |                         Unavailable payment methods                           |
 | :------------ | :-------------- | :---------------------------------------------------------------------------- |
 | Payments      | Pay button      | N/A                                                                           |
-| Payments      | Smart Checkout    | N/A                                                                           |
+| Payments      | Checkout Mercado Pago    | N/A                                                                           |
 | Payments      | Mobile Checkout | `account_money`                                                               |
 | Payments      | API             | N/A                                                                           |
 | Subscriptions | Pay button      | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Subscriptions | Smart Checkout    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Subscriptions | Checkout Mercado Pago    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Subscriptions | API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Marketplace   | Smart Checkout    | N/A                                                                           |
+| Marketplace   | Checkout Mercado Pago    | N/A                                                                           |
 | Marketplace   | API             | N/A                                                                           |
 
 ### Peru
@@ -117,10 +117,10 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 |   Product   |     Solution    | Unavailable payment methods   |
 | :---------- | :-------------- | :---------------------------- |
 | Payments    | Pay button      | N/A                           |
-| Payments    | Smart Checkout    | N/A                           |
+| Payments    | Checkout Mercado Pago    | N/A                           |
 | Payments    | Mobile Checkout | `account_money`               |
 | Payments    | API             | N/A                           |
-| Marketplace | Smart Checkout    | N/A                           |
+| Marketplace | Checkout Mercado Pago    | N/A                           |
 | Marketplace | API             | N/A                           |
 
 ### Uruguay
@@ -128,5 +128,5 @@ Subscriptions | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `d
 |   Product   |    Solution   | Unavailable payment methods   |
 | :---------- | :------------ | :---------------------------- |
 | Payments    | Pay button    | N/A                           |
-| Payments    | Smart Checkout  | N/A                           |
-| Marketplace | Smart Checkout  | N/A                           |
+| Payments    | Checkout Mercado Pago  | N/A                           |
+| Marketplace | Checkout Mercado Pago  | N/A                           |

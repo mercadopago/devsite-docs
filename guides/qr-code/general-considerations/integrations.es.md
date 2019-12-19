@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 # ¿Cómo generar el QR?
@@ -31,18 +32,11 @@ Puedes cobrar, devolver pagos y recibir notificaciones en tu sistema. Elige uno 
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Requisitos previos<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Para integrar tu sistema, es importante conocer los datos de tu cuenta y tus credenciales de acceso.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Requisitos previos
+>
+> Para integrar tu sistema, es importante conocer los datos de tu cuenta y tus credenciales de acceso.
+>
+> [Requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/)

@@ -3,8 +3,9 @@
 
 Esta librería provee a los desarrolladores un simple set de bindings con la API de Mercado Pago.
 
-### Vesiones soportadas de .Net :
-3.5 .Net Framework o posterior
+### Versiones Soportadas:
+
+Nuesto SDK es compatible con las versiones de .NET 4.5 o superior.
 
 ## Instalación
 
@@ -32,7 +33,7 @@ Esta librería provee a los desarrolladores un simple set de bindings con la API
 
 2. Configura tus credenciales
 
--**Para Smart Checkout:**
+-**Para Checkout Mercado Pago:**
 
 ```csharp
 MercadoPago.SDK.ClientId     = "YOUR_CLIENT_ID";

@@ -175,7 +175,7 @@ Ejemplo de respuesta:
 
 ##Obtén los emisores de la tarjeta
 
-Algunas tarjetas requieren que envíes información adicional del emisor. Para esto, el SDK de MecadoPago provee una función que te permite obtener los emisores de una tarjeta.
+Algunas tarjetas requieren que envíes información adicional del emisor. Para esto, el SDK de MercadoPago provee una función que te permite obtener los emisores de una tarjeta.
 ```javascript
 Mercadopago.getIssuers(paymentMethodId, issuersHandler);
 ```

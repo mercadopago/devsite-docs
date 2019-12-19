@@ -11,13 +11,7 @@ Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de
 Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá baixá-lo de duas formas: 
 
 * Por um link de download que enviaremos via e-mail.
-* Pela sua conta do Mercado Pago, em *Relatórios de dinheiro disponível.*
-
-Para ter acesso aos seus relatórios pela seção de Relatórios na sua conta do Mercado Pago, siga estes passos:
-
-1. Entre na [sua conta do Mercado Pago](https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAy2OQQ7DIAwE_-JzlNw59iPIIoagQo2MI1pF_XtN1OOux2NfUDjll9dPI3BA71ZyyAoLtIIaWarPuw1qs6pnpX8sOBEUrKQkHdw1RYn2B9nSVKmcZAyeevhYeFh1n7IusYVDtXW3bWOMtZIE3Llh4jVwXVE2w4RS7man-cCt-y4QsatXwfAEF7F0-v4AxU1qhMMAAAA/user)
-1. Vá até [Relatórios](https://www.mercadopago.com.br/balance/reports) e entre em *Relatórios*.
-1. Em [Relatórios](https://www.mercadopago.com.br/balance/reports), , clique em  *Dinheiro Disponível*, e ali verá uma lista dos relatórios gerados.
+* Na sua conta do Mercado Pago, acesse ----[mla]---- [seus relatórios](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [seus relatórios](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [seus relatórios](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [seus relatórios](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [seus relatórios](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [seus relatórios](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [seus relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ e selecione a opção *Relatórios de Dinheiro disponível*.
 
 ## Valores do relatório
 

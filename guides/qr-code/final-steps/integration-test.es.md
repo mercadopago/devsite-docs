@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 
@@ -79,6 +80,12 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 - FUND: Rechazado por monto insuficiente.
 - SECU: Rechazado por código de seguridad inválido.
 - EXPI: Rechazado por problema con la fecha de expiración.
+
+> NOTE
+> 
+> Nota
+> 
+> Aquí podras encontrar mas [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards/). 
 
 ## Prueba el flujo de pago
 

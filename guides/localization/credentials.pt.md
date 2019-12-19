@@ -20,14 +20,14 @@ Você acessará a página de credenciais da sua conta.
 
 ![paginaCredenciais](/images/paginaCredenciais.gif)
 
-Nesta página você terá acesso as chaves de configuração da sua conta Mercado Pago para instalar a integração por API ou Smart Checkout (Redirect, LightBox ou Iframe) na sua Loja Virtual.
+Nesta página você terá acesso as chaves de configuração da sua conta Mercado Pago para instalar a integração por API ou Checkout Mercado Pago (Redirect, LightBox ou Iframe) na sua Loja Virtual.
 
 > NOTE
 >
 > Nota
 >
 > Para configurar a integração por API será necessário informar as credencias **PUBLIC_KEY** e **ACCESS_TOKEN**.
-> Para configurar o Smart Checkout (Redirect, LightBox ou Iframe) será necessário informar as credencias **CLIENT_ID** e **CLIENT_SECRET**.
+> Para configurar o Checkout Mercado Pago (Redirect, LightBox ou Iframe) será necessário informar as credencias **CLIENT_ID** e **CLIENT_SECRET**.
 
 ## Formulário Quero ir para Produção
 

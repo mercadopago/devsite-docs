@@ -20,7 +20,7 @@ To simulate the entire payment process, you must create 3 test users: **marketpl
 >
 > Note
 >
-> In order to test the Smart Checkout all the users involved in the test must be test_users, if not you´ll get the "Invalid users involved" error.  
+> In order to test the Checkout Mercado Pago all the users involved in the test must be test_users, if not you´ll get the "Invalid users involved" error.  
 
 
 You must make the following API request to create each of the users.

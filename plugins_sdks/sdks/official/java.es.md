@@ -2,9 +2,14 @@
 
 Esta libreria provee una set de clases y metodos para interactuar con el API de Mercado Pago.
 
+### Versiones Soportadas:
+
+Nuesto SDK es compatible con las versiones de Java 8 o superior.
+
 ## Instalación
 
 ### Usando Maven
+
 1. Agregar la dependencia al archivo pom.xml
 
   ```xml
@@ -21,11 +26,13 @@ Esta libreria provee una set de clases y metodos para interactuar con el API de 
 
 2. Ejecutar `mvn install` y es todo, ahora tienes el SDK de Mercado Pago instalado.
 
+
+
 ## Inicio Rápido
 
 1. Importar las clases basicas del SDK `import import com.mercadopago.*;`
 2. Configura tus credenciales.
-  - **Para Smart Checkout:**
+  - **Para Checkout Mercado Pago:**
     ```java
       MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
       MercadoPago.SDK.setClientId("CLIENT_ID_OK");

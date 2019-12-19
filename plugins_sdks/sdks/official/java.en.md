@@ -2,6 +2,10 @@
 
 This library provides developers with a simple set of bindings to the Mercado Pago API.
 
+### Supported Java Versions:
+
+This SDK supports Java version 8 or newer.
+
 ## Installation
 
 ### Using Maven
@@ -18,13 +22,18 @@ This library provides developers with a simple set of bindings to the Mercado Pa
     </dependencies>
     ...
   ```
+  
 2. Run `mvn install` and thats all, you have Mercado Pago SDK installed.
+
+### Compatibility
+
+Our SDK is compatible with Java 6 or grater. Our development team recomends to use Java 8 or newer versions.
 
 ## Quick Start
 
 1. Import Mercado Pago basic clases. `import import com.mercadopago.*;`
 2. Setup your credentials.
-  - **For Smart Checkout:**
+  - **For Checkout Mercado Pago:**
     ```java
       MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
       MercadoPago.SDK.setClientId("CLIENT_ID_OK");

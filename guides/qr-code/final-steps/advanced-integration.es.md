@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 # Integración avanzada
@@ -38,18 +39,11 @@ Puedes encontrar todos los casos en la sección de Pruebas.
 
 ### Próximos pasos
 
-<div>  
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Prueba tu integración<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Realiza los casos de uso más frecuentes para validar tu integración.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Prueba tu integración
+>
+> Realiza los casos de uso más frecuentes para validar tu integración.
+>
+> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/)

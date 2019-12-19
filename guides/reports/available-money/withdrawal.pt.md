@@ -17,8 +17,8 @@ Gere seus relatórios cada vez que quiser consultar uma retirada de dinheiro
 1. Na sua conta do Mercado Pago, vá até [Relatórios](https://www.mercadopago.com.br/balance/reports) e depois, *Relatórios*.
 1. Vá em [Dinheiro Disponível](https://www.mercadopago.com.br/balance/reports?page=1#!/bank-report) e clique em *Gerar relatório*.
 1. Organize suas retiradas por **período de tempo** e selecione a retirada que quer consultar.
-1. Pronto! Você verá seu relatório *em preparação*.
 
+<span style="margin-left:40px">Pronto! Você verá seu relatório *em preparação*.</span>
 
 > NOTE
 >

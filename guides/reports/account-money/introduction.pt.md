@@ -13,7 +13,7 @@ Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de
 Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá baixá-lo de duas formas: 
 
 * Por um link de download que enviaremos via e-mail.
-* Pela sua conta do Mercado Pago, em *Relatórios de Dinheiro em conta*.
+* Na sua conta do Mercado Pago, acesse ----[mla]---- [seus relatórios](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [seus relatórios](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [seus relatórios](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [seus relatórios](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [seus relatórios](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [seus relatórios](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [seus relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ e selecione a opção *Relatórios de dinheiro em conta*.
 
 
 ## Valores do relatório

@@ -20,7 +20,7 @@ SSL                         | It is a requirement that you have an SSL certifica
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
-* [Basic Checkout (Smart Checkout)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
+* [Basic Checkout (Checkout Mercado Pago)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
     * [Split payments (Two cards)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_payments_with_two_credit_cards)
     * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds/)
 

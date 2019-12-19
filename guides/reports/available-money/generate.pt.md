@@ -39,7 +39,7 @@ Saiba as características dos elementos que compõem seu relatório.
 | Ordem das colunas |<br/> Fixa <br/> <br/> |
 | Período máximo | <br/> Relatórios com dados de até 60 dias. <br/> <br/> |
 | Moeda | <br/> Local (com base no país onde está cadastrada a conta do Mercado Pago). <br/> <br/> |
-| Fuso horário das colunas: | <br/> GMT-4 <br/> <br/> |
+| Fuso horário das colunas: | <br/> GMT-4 <br/> <br/> Tome como referência o lugar de onde o relatório é baixado. <br/> <br/> |
 | Seleção de datas via API |<br/>  Formato do fuso horário: UTC / GMT-0 <br/> <br/> |
 | Seleção de datas via web | <br/> Deve ter como base o fuso horário da conta do usuário. <br/>Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. <br/> <br/> |
 

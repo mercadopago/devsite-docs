@@ -12,6 +12,10 @@
 * [Pagination](#bookmark_pagination)
 * [IPN Notifications](#bookmark_IPN_notifications)
 
+### Supported Node Versions:
+
+All node versions are supported
+
 ## Install
 
 ```

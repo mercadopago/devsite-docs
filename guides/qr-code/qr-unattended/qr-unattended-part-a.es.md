@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 # Pagos QR modelo desatendido
@@ -34,7 +35,7 @@ Las características principales son:
 
 Te explicamos cómo funciona el modelo desatendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr_flujo_desatendido.es.png)
+>![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-gas-station-flow.es.png)
 
 
 1. El cliente escanea el código QR desde su aplicación.
@@ -64,17 +65,12 @@ Te explicamos cómo funciona el modelo desatendido:
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-b/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Cómo integrar QR modelo desatendido<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Conoce paso a paso como integrar este modelo.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Cómo integrar QR modelo desatendido
+>
+> Conoce paso a paso como integrar este modelo.
+>
+> [Cómo integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-b/)
+

@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 # Pagos QR modelo atendido
@@ -27,7 +28,7 @@ Las características principales son:
 
 Te explicamos cómo funciona el modelo atendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr_flujo_pdv.es.png)
+>![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
 
 ---
 
@@ -60,17 +61,13 @@ Te explicamos cómo funciona el modelo atendido:
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-b/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Cómo integrar QR modelo atendido<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Conoce paso a paso como integrar este modelo.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Cómo integrar QR modelo atendido
+>
+> Conoce paso a paso como integrar este modelo.
+>
+> [Cómo integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-b/)
+
+

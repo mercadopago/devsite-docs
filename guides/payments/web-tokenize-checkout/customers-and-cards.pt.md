@@ -143,6 +143,12 @@ Retorno do Servidor:
 }
 ```
 
+> NOTE
+>
+> Nota
+>
+> Para os cartões `master` também é preciso enviar o campo `issuer_id` no momento de criar o cartão para um customer.
+
 ## Receber pagamento de um Customer
 
 Para que possa receber um pagamento utilizando um cartão armazenado, é necessário incluir no código HTML o ID do customer e os IDs dos cartões do usuário através dos atributos `data-customer-id` e `data-card-ids`. Por exemplo:

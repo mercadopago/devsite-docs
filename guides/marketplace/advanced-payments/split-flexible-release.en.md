@@ -71,3 +71,11 @@ In the `body` we must set the new release date.
   "money_release_date": "2018-07-10T10:23:18.000-04:00"
 }
 ```  
+
+Once the change is requested, a asynchronous process will begin and it will be notified via webhook when it finishes.
+
+> NOTE
+>
+> Note
+>
+> Remember: in order to receive notifications about this event, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago.com/mla/account/webhooks).

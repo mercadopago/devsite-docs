@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlm
   - mlc
+  - mlb
 ---
 
 
@@ -41,20 +42,22 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 > ![Flujo QR](/images/qr_flujo.es.png)
 
 ---
+
+> NOTE
+> 
+> Nota
+> 
+> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago.com.ar/developers/es/guides/qr-code-legacy/introduction/).
+
+---
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/integrations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">¿Cómo generar el QR?<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Conoce las distintas formas de cobrar con un código QR.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> ¿Cómo generar el QR?
+>
+> Conoce las distintas formas de cobrar con un código QR.
+>
+> [¿Cómo generar el QR?](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/integrations/)
+

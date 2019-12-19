@@ -14,9 +14,9 @@ sites_supported:
 >
 > Note
 >
-> This documentation refers to the new version of the Smart Checkout.
+> This documentation refers to the new version of the Checkout Mercado Pago.
 >
-> Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Checkout Mercado Pago.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected in the checkout.
 You should check if:
