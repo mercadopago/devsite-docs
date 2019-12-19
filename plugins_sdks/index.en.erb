@@ -1,7 +1,7 @@
 <% basic_path           = "#{locals[:settings]['deploy_path']}/#{locals[:lang]}" %>
 <% offcial_sdk_path     = "#{basic_path}/plugins_sdks/sdks/official" %>
 <% offcial_plugin_path  = "#{basic_path}/plugins_sdks/plugins/official" %>
-<% plugin_path          = "#{basic_path}/plugins_sdks/plugins/woocommerce" %>
+<% plugin_path          = "#{basic_path}/plugins_sdks/plugins" %>
 
 <h2> SDKs </h2>
 <p>Everything is easier with a great SDK</p>
@@ -27,7 +27,7 @@
     <a href="<%="#{offcial_plugin_path}/prestashop/"%>" title="Prestashop"><span class="u-accessibility-hidden">Prestashop</span></a>
   </li>
   <li class="modules-brands__item woo">
-  <a href="<%="#{plugin_path}/introduction/"%>" title="WooCommerce"><span class="u-accessibility-hidden">WooCommerce</span></a>
+  <a href="<%="#{plugin_path}/woocommerce/introduction/"%>" title="WooCommerce"><span class="u-accessibility-hidden">WooCommerce</span></a>
   </li>
   <li class="modules-brands__item shopify">
     <a href="<%="#{offcial_plugin_path}/shopify/"%>" title="Shopify"><span class="u-accessibility-hidden">Shopify</span></a>
