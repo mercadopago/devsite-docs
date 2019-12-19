@@ -23,12 +23,10 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 | Pagos con dos tarjetas         	| ✔               	| ✔                      	|
 | Tarjetas guardadas             	|                 	| ✔                      	|
 | Suscripciones                  	| ✔               	|                        	|
-| Mercado Envíos                  	| ✔               	|                        	|
 | Devolución de Pagos            	| ✔               	| ✔                      	|
 | CRON (Actualización de Pedido) 	|                 	| ✔                      	|
 | Pagina de éxito personalizable 	|                 	| ✔                      	|
 | Calculadora de Cuotas          	| ✔               	| ✔                      	|
-| Calculadora de Mercado Envíos     | ✔               	| ✔                      	|
 
 > NOTE
 >
@@ -96,29 +94,6 @@ El módulo de Mercado Pago para Prestashop esta integrado con las siguientes fun
 ![Payment Method](/images/prestashop_payment_method.png)
 
 5) Muy bien! Usted ha habilitado los pagos vía Checkout Standard (redireccionado)!
-
-### Configuración de Mercado Envíos
-
-> IMPORTANTE: Mercado Envíos funciona con el Checkout Standard (redireccionado). Al utilizarlo los demás medios de pago serán deshabilitados.
-
-1) Primero, usted necesita [habilitar Mercado Envíos en su cuenta](http://shipping.mercadopago.com.ar/optin/doOptin).
-
-> NOTE
->
-> IMPORTANTE
->
-
-* * Su cuenta de Mercado Pago necesita ser del tipo **Vendedor**.
-El producto enviado debe tener sus dimensiones (ancho, altura, longitud y peso) adecuadamente configurados y dentro de las reglas y límites soportados por el país especificado.
-
-2) Para habilitar en el módulo, sólo tiene que activarlo accediendo al panel administrativo de Prestashopp en **MEJORAS -> Módulos -> Módulos y Servicios** y haciendo clic en **Configurar** en el módulo del Mercado Pagado:
-
-3) En **MERCADO Envíos** es posible configurar un texto para ser exhibido en la entrega a través del campo **Custom text para usar con entrega**. Para realizar la activación marque el campo ** Enable Mercado Envíos** como **YES**.
-
-![Habilitar Mercado Envíos](/images/prestashop_mercado_envios.png)
-
-4) Muy bien! Ahora usted puede ofrecer Mercado Envíos como medio de transporte para sus clientes!
-
 
 ## Notificaciones
 
