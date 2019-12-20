@@ -32,10 +32,6 @@ Puedes ver el estado del pago en la respuesta de la API como `rejected` y el mot
 
 Y también, puedes encontrar más información sobre el [detalle del pago](http://mercadopago.com.ar/activities) en la actividad de la cuenta de Mercado Pago en la que se reciben los pagos.
 
-> NOTE
->
-> Nota
->
 >Es importante tener en cuenta que si el emisor de la tarjeta no indica el motivo del rechazo, vas a ver el detalle del pago como `cc_rejected_other_reason`. Para esta caso, es recomendable que se cambie el medio de pago o que se contacte con el banco para resolver el problema. 
 
 ## Pagos rechazados para prevenir fraude
