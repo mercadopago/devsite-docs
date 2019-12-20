@@ -8,18 +8,21 @@ sites_supported:
 
 Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pago en el reporte de Dinero en cuenta.
 
+----[mla]----
 > NOTE
 >
 > Nota
 >
 > ¿Quieres empezar a generar rendimientos? [Comienza ahora](https://www.mercadopago.com.ar/ayuda/Ayuda_con_tus_Rendimientos_4048).
+------------
 
 ## Operaciones de tus rendimientos
+
 ----[mla]---- 
-Puedes ver dos tipos de operaciones según la variación del [valor de cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) suscriptas en el Fondo Común de Inversión: positivos y negativos.
+Puedes ver dos tipos de movimientos según la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero en cuenta: rendimientos positivos y negativos.
 ------------
 ----[mlb]---- 
-Puedes ver cuatro tipos de operaciones según la variación del [valor de cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) suscriptas en el Fondo Común de Inversión:
+Puedes ver cuatro tipos de movimientos que se generan a partir de la cantidad de dinero en cuenta que tengas disponible:
 
 * Positivos
 * Negativos
@@ -29,7 +32,14 @@ Puedes ver cuatro tipos de operaciones según la variación del [valor de cuotap
 > Para más información sobre el impuesto a la renta y su devolución [consulta nuestras preguntas frecuentes](https://www.mercadopago.com.br/ajuda/Como-gerar-rendimientos_4265).
 ------------
 
+
 ## Ejemplos de los rendimientos en el reporte
+
+----[mlb]---- 
+Cuando en la columna `DESCRIPTION` aparece el valor `asset_management_retention` puedes encontrar impactado el impuesto a la renta y cuando el valor es `asset_management_return` refiere a la devolución correspondiente.
+------------
+
+Para identificarlos en tus reportes, vas a encontrar que los datos de las columnas `EXTERNAL_REFERENCE`, `PAYMENY_METHOD_TYPE` y `PAYMENT_METHOD` están vacíos. Y según el valor del `SETTLEMENT_NET_AMOUNT`, ese rendimientos será negativo o positivo. 
 
 ### Rendimientos positivos
 
@@ -38,6 +48,7 @@ Puedes ver cuatro tipos de operaciones según la variación del [valor de cuotap
 ### Rendimientos negativos
 
 ![Ejemplo rendimiento negativo en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-negative.png)
+
 ----[mlb]---- 
 ### Impuesto a la renta
 
@@ -47,6 +58,13 @@ Puedes ver cuatro tipos de operaciones según la variación del [valor de cuotap
 
 ![Ejemplo devolución de impuesto a la renta en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-with-taxes-positive.png)
 ------------
+
+> NOTE
+>
+> Nota
+>
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+
 
 ### Próximos pasos
 
@@ -58,7 +76,7 @@ Puedes ver cuatro tipos de operaciones según la variación del [valor de cuotap
 >
 > [Genera tu reporte de Dinero en cuenta](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_REQUIRED_ES
 >
 > Detalle de información sobre tu reporte
 >

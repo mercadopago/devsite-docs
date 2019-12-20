@@ -13,16 +13,16 @@ Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pag
 >
 > Nota
 >
-> ¿Quieres empezar a generar rendimientos? [Comienza ahora](https://www.mercadopago.com.ar/ayuda/Ayuda_con_tus_Rendimientos_4048).
+> ¿Quieres empezar a generar rendimientos? [Comienza ahora](https://www.mercadopago.com.ar/ayuda/empezar-a-invertir_4055).
 ------------
 
 ## Movimientos de tus rendimientos
+
 ----[mla]---- 
-Puedes ver dos tipos de movimientos según la variación del [valor de cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) suscriptas en el Fondo Común de Inversión: positivos y negativos.
-Es decir, como movimiento positivo vas a encontrar el dinero que ingresó en tu cuenta y como negativo, el egreso.
-------------
+Puedes ver dos tipos de movimientos según la la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero en cuenta: rendimientos positivos y negativos.
+-------------
 ----[mlb]---- 
-Puedes ver cuatro tipos de movimientos según la variación del [valor de cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) suscriptas en el Fondo Común de Inversión:
+Puedes ver cuatro tipos de movimientos que se generan a partir de la cantidad de dinero en cuenta que tengas disponible:
 
 * Positivos
 * Negativos
@@ -34,6 +34,13 @@ Puedes ver cuatro tipos de movimientos según la variación del [valor de cuotap
 
 ## Ejemplos de los rendimientos en el reporte
 
+
+Para identificarlos en tus reportes, busca en la columna `DESCRIPTION` el valor `asset_management` que corresponde a un rendimiento. Según el valor del `GROSS_AMOUNT`, ese rendimientos será negativo o positivo.  
+
+----[mlb]---- 
+Cuando en la columna `DESCRIPTION` aparece el valor `asset_management_retention` puedes encontrar impactado el impuesto a la renta y cuando el valor es `asset_management_return` refiere a la devolución correspondiente.
+------------
+
 ### Rendimientos positivos
 
 ![Ejemplo rendimiento positivo en reporte de Dinero disponible](/images/manage-account/reports/reports-information-details/asset-management-bank-positive.png)
@@ -41,6 +48,7 @@ Puedes ver cuatro tipos de movimientos según la variación del [valor de cuotap
 ### Rendimientos negativos
 
 ![Ejemplo rendimiento negativo en reporte de Dinero disponible](/images/manage-account/reports/reports-information-details/asset-management-bank-negative.png)
+
 ----[mlb]---- 
 ### Impuesto a la renta
 
@@ -50,6 +58,13 @@ Puedes ver cuatro tipos de movimientos según la variación del [valor de cuotap
 
 ![Ejemplo devolución de impuesto a la renta en reporte de Dinero disponible](/images/manage-account/reports/reports-information-details/asset-management-bank-with-taxes-positive.png)
 ------------
+
+> NOTE
+>
+> Nota
+>
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
 
 ### Próximos pasos
 
