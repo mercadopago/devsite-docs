@@ -15,7 +15,7 @@ Para evitar pérdidas de ingresos de tu negocio y mejorar la experiencia de tus 
 
 ## Pagos rechazados por el banco
 
-Al ofrecer un pago con tarjeta de crédito o débito, el emisor puede rechazar el cobro por distintas razones. Por ejemplo, si la tarjeta se encuentra vencida, no tiene los fondos suficientes o que los datos no sean correctos.
+Al ofrecer un pago con tarjeta de crédito o débito, el emisor puede rechazar el cobro por distintas razones. Por ejemplo, si la tarjeta se encuentra vencida, no tiene los fondos suficientes o si los datos cargados no son correctos.
 
 Puedes ver el estado del pago en la respuesta de la API como `rejected` y el motivo de rechazo en el campo `status_detail`.
 
@@ -30,7 +30,7 @@ Puedes ver el estado del pago en la respuesta de la API como `rejected` y el mot
 }
 ```
 
-Y también, puedes encontrar más información sobre el detalle del pago en la [actividad de la cuenta](https://www.mercadopago.com.ar/) de Mercado Pago en la que se reciben los pagos.
+Y también, puedes encontrar más información sobre el [detalle del pago](http://mercadopago.com.ar/activities) en la actividad de la cuenta de Mercado Pago en la que se reciben los pagos.
 
 > NOTE
 >
@@ -40,7 +40,7 @@ Y también, puedes encontrar más información sobre el detalle del pago en la [
 
 ## Pagos rechazados para prevenir fraude
 
-Seguimos en tiempo real las transacciones y tenemos validaciones de seguridad para reconocer pagos que no fueron autorizados por la persona dueña de la tarjeta y evitar contracargos.
+Seguimos en tiempo real las transacciones y tenemos validaciones de seguridad tanto para reconocer pagos que no fueron autorizados por la persona dueña de la tarjeta como para evitar contracargos.
 
 Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, puedes ver el estado del pago en la respuesta de la API como `rejected` y el motivo de rechazo como `cc_rejected_high_risk`.
 
@@ -79,9 +79,9 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 | Tipo                                                         | Descripción                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| home | Página principal de tu sitio. | 
-| search | Página de búsqueda o listado de productos. |
-| item | Página de un producto específico. |
+| *home* | Página principal de tu sitio. | 
+| *search* | Página de búsqueda o listado de productos. |
+| *item* | Página de un producto específico. |
 
 > NOTE
 >
@@ -291,4 +291,4 @@ Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarle
 >
 > Nota
 >
->Si utilizas nuestro Checkout Mercado Pago, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+>Si utilizas el Checkout de Mercado Pago, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).

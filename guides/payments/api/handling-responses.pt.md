@@ -6,7 +6,7 @@ Ofereça aos seus clientes informações claras e precisas diante de possíveis 
 >
 > Nota
 >
-> Ajudamos você a melhorar a experiência de seus clientes e evitar pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
+> Evite pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
 
 ## Realização de cobranças
 

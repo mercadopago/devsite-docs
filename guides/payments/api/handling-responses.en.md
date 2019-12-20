@@ -6,7 +6,7 @@ Provide clear and accurate information to your customers in the event of possibl
 >
 > Note
 >
-> We can help you improve your clients experience and avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections).
+> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections).
 
 ## When receiving a payment
 

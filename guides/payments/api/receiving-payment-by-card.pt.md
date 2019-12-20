@@ -668,7 +668,7 @@ Recomendamos que leia o artigo sobre [manipulação de respostas](https://www.me
 >
 > Nota
 >
-> Melhore a experiência de seus clientes e evite pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
+> Evite pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
 
 ## Receba uma notificação de pagamento
 

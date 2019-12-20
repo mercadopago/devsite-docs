@@ -282,7 +282,7 @@ Preference preference = new Preference();
 ```
 ]]]
 
-## Previene pagos rechazados
+## Evite recusas de pagamentos
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 

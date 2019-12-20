@@ -30,7 +30,7 @@ Você pode ver o estado do pagamento na resposta do API como `rejected` e o moti
 }
 ```
 
-E também poderá achar mais informações sobre o [detalhe do pagamento](https://www.mercadopago.com.ar/) na atividade da conta de Mercado Pago em que os pagamentos são recebidos.
+E também poderá achar mais informações sobre o [detalhe do pagamento](https://www.mercadopago.com.br/activities) na atividade da conta de Mercado Pago em que os pagamentos são recebidos.
 
 > NOTE
 >
@@ -77,11 +77,11 @@ Ajudamos você a detectar comportamentos infrequentes dos clientes com o nosso c
 
 #### Possíveis valores para VIEW
 
-| Tipo                                                         | Descripción                                                  |
+| Valor                                                         | Seção                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| home | Página principal de seu website. |
-| search | Página de busca ou lista de produtos. |
-| item | Página de um produto específico. |
+| *home* | Página principal de seu website. |
+| *search* | Página de busca ou lista de produtos. |
+| *item* | Página de um produto específico. |
 
 > NOTE
 >
@@ -216,7 +216,7 @@ Payer payer = new Payer()
 ```
 ]]]
 
-### Datos del ítem
+### Dados do item
 
 [[[
 ```php
@@ -290,4 +290,4 @@ Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá reco
 >
 > Nota
 >
-> Se você utilizar o nosso Smart Checkout, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).
+> Se você utilizar o Checkout Mercado Pago, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).

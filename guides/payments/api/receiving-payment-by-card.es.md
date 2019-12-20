@@ -665,7 +665,7 @@ Te recomendamos leer el artículo sobre el [manejo de respuestas](https://www.me
 >
 > Nota
 >
->Mejora la experiencia de tus clientes y evita pagos rechazados con nuestras recomendaciones para [mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+> Evita pagos rechazados con nuestras recomendaciones para [mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
 
 ## Recibir una notificación del pago
 

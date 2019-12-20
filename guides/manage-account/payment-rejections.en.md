@@ -79,9 +79,9 @@ It’s simple. Add the script, adjust the section of your website where you inse
 
 | Value                                                         | Section                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| home | Your website main page. |
-| search | Search page or product list page. |
-| item | Single product page with details for one product. |
+| *home* | Your website main page. |
+| *search* | Search page or product list page. |
+| *item* | Single product page with details for one product. |
 
 > NOTE
 >
@@ -290,4 +290,4 @@ For instance, if a payment is rejected due to lack of funds, you can recommend t
 >
 > Note
 >
-> If you’re using our Checkout Mercado Pago, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
+> If you’re using Mercado Pago Checkout, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
