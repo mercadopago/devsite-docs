@@ -11,7 +11,6 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 | Split payments (Two cards)                  	| ✔               	| ✔                     	|
 | Pagamento com um click (Clientes e Cartões) 	|                 	| ✔                     	|
 | Assinatura (Recorrência)                    	| ✔               	|                       	|
-| MercadoEnvios                               	| ✔               	|                       	|
 | Devolução de Pagamentos                     	| ✔               	| ✔                     	|
 | Atualização do pedido através de Cron       	|                 	| ✔                     	|
 | Página de sucesso personalizável            	|                 	| ✔                     	|
@@ -150,32 +149,6 @@ Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usu�
 4) Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
 ![Successfully configured Checkout redirect](/images/magento/magento-save.png)
-
-
-## Configurando o Mercado Envios
-
-Esse processo irá explicar como configurar o módulo para aceitar Mercado Envios:
-
-1) Primeiro, Você precisa [habilitar o Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) na sua conta Mercado Pago.
-
-> 	IMPORTANTE: A sua conta Mercado Pago tem que ser do tipo **Vendedor**.
-
-2) Vá até o menu **Systems > Configuration**, na pagina de configurações vá até a opção **Shipping Methods**:
-
-![Configuring the Mercado Envios in Magento](/images/magento/magento-config-me-01.gif)
-
-3) Para habilitar o Mercado Envios acesse a opção **MercadoEnvios**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Enable** marque esse campo com a opção **Yes**:
-
-![Enabling Mercado Envios in Magento](/images/magento/magento-config-me-02.gif)
-
-4) Vá até a opção **Product attributes mapping** e selecione de acordo com os atributos que você possui configurado em sua loja. Aproveite e configure os métodos de envio disponível, na opção **Available shipping methods**. Clique na opção **Save Config** para salvar as configurações realizadas:
-
-![Configuring products in Mercado Envios](/images/magento/magento-config-me-03.gif)
-
-5) Pronto! O Mercado Envios foi habilitado e configurado com sucesso!
-
-![Mercado Envios configured successfully](/images/magento/magento-me_save.png)
-
 
 ## Configurando o Pagamento Recorrente
 
