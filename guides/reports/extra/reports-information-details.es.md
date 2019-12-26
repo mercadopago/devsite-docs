@@ -1,13 +1,19 @@
+---
+sites_supported:
+  - mla
+  - mlb
+---
+
 # Detalle de información sobre tus reportes
 
-Encuentra información específica sobre los movimientos y operaciones que aparecen en tu reportes.
+Encuentra información específica sobre los movimientos y operaciones que aparecen en tus reportes.
 
 ----[mlb]---- 
-## Pagamento no fluxo
-Mercado Pago te permite realizar la liberación de forma mensual de tus cobros según la cantidad de cuotas con las que se efectuó el pago. Es decir, la cantidad de cuotas con las que el comprador pague, determinará la cantidad de pagos que recibirá el vendedor. 
+## Cobros de cuotas mes a mes
+Mercado Pago te permite realizar la liberación de forma mensual de tus cobros según la cantidad de cuotas con las que se efectuó el pago. Es decir, la cantidad de cuotas con las que el comprador pague, determinará la cantidad de pagos que recibirá el vendedor.
 
-### Cómo ver los cobros mensuales en tus reportes
-Te explicamos cómo ver la información de tus [cobros mensuales en el reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/).
+### Cómo ver los cobros de cuotas mes a mes en tus reportes
+Te explicamos cómo ver la información de tus [cobros mensuales en el reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/pnf-bank).
 ------------
 
 ## Los rendimientos
