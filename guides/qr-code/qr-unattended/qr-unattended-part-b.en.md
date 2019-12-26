@@ -11,7 +11,7 @@ sites_supported:
 
 # How to integrate QR unattended model 
 
-Ton integrate QR unattended model you need to:
+To integrate QR unattended model you need to:
 
 1. Create a service that will be called when a payment request is received and its associate logic.
 - A. Order information isn’t available yet. 
@@ -52,7 +52,7 @@ In those cases, service must answer with an error message, so the user sees a wa
 | `invalid`           | Secondary parameters (Station ID, Position, etc.) reference an unknown location. |
 | `timeout`           | Merchant server couldn’t communicate with any internal system (For example, vending machine) and cancelled the operation. |
 
-`message` is a plain text that can come with the declared type and is optional.
+A `message` is a plain text that can come with the declared type and is optional.
 
 
 ### B. Order infromation is available
@@ -99,7 +99,7 @@ You should use the field `external_reference` to be able to identify the order f
 
 ## 2. Declare your domain URL to Mercado Pago
 
-You must inform your domain URL to your [assigned technical advisor](https://www.mercadopago.com.ar/developers/en/support). Mercado Pago will use it for each transaction. 
+You must inform your domain URL to your assigned technical advisor. Mercado Pago will use it for each transaction. 
 
 > WARNING
 > 

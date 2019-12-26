@@ -14,10 +14,10 @@ sites_supported:
 Depending on your business needs, you have different options when it comes to creating QR codes. You can also combine methods to offer your client a unique buying experience in your physical store.
 
 
-## Generating QR from Mercado Pago front page
+## Generating QR by the Mercado Pago panel
 
 This is the simplest way to charge with QR: you **don't need an integration between your system and Mercado Pago in order to work**.
-There are various ways of doing it. Consult all available information to [generate QR from the front page](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations-front/).
+There are various ways of doing it. Consult all available information to [generate reports from this panel](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations-front/).
 
 ## Generating integrated QR 
 

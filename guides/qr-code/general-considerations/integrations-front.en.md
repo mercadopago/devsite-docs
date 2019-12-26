@@ -10,7 +10,7 @@ sites_supported:
 ---
 
 
-# Generate QR from Mercado Pago front page
+# Generation QR by the Mercado Pago panel
 
 ## How to charge with QR
 

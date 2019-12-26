@@ -22,7 +22,7 @@ We know some concepts may be new for you. Before starting, here’s a cheatsheet
 | `COLLECTOR_ID` | Buyer’s user ID in Mercado Pago, consist on the last 9 digits on the `access_token`, the numbers after the dash. Also known as the `USER_ID`.|
 | `SPONSOR_ID` | Supplier’s ID on the integrated system with Mercado Pago. Consist on the last 9 digits of the `access_token`, after the dash mark. `sponsor_ID` must be different than `COLLECTOR_ID`.|
 | Store | A **physical shop** in which your clients can get products and services. You can have multiple stores on one account. |
-| Point of sale (POS) | A place to perform a transaction on a store or physical shop. Each POS will be linked with a unique QR code. |
+| Point of sale (POS) | A **place to perform a transaction** on a store or physical shop. Each POS will be linked with a unique QR code. |
 | Order | A purchase made by your client. Contains a list of product with an associated cost. |
 
 ## Previous requirements

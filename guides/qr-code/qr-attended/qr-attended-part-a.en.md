@@ -9,19 +9,19 @@ sites_supported:
 - mlb
 ---
 
-# QR attended model 
+# QR attended model
 
-## What is this model?
+## What’s QR attended model?
 
-After taking a client’s order, this **model allows an operator to connect the order with a Point of Sale** to complete the transaction. 
+After taking a client’s order, this **model allows an operator to connect the order with a Point of Sale** to complete the transaction.
 This system is recommended for retail and restaurants, among others.
 
 ## Main characteristics
 
-Las características principales son: 
+The main characteristics are:
 
 - Operator always works from its Point of Sale system, that was previously set up with a Mercado Pago charge function. From that option, the order is sent to the associated POS.
-- For a client to make a payment, an order needs to be linked to a POS. 
+- For a client to make a payment, an order needs to be linked to a POS.
 - Operator can see the completed payment on its system.
 
 
