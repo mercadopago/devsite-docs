@@ -11,7 +11,6 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 | Split payments (Two cards)          	| ✔              	| ✔               	|
 | One Click Pay (Customers and Cards) 	|                	| ✔               	|
 | Subscriptions                       	| ✔              	|                 	|
-| MercadoEnvios                       	| ✔              	|                 	|
 | Refunds of Payments                 	| ✔              	| ✔               	|
 | Order update via Cron               	|                	| ✔               	|
 | Customizable success page           	|                	| ✔               	|
@@ -149,32 +148,6 @@ This process will explain how to configure the module to accept payments with Ba
 4) Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 
 ![Successfully configured Checkout redirect](/images/magento/magento-save.png)
-
-
-## Configure Mercado Envios
-
-This process will explain how to configure the module to accept Mercado Envios:
-
-1) First, You need to [enable Mercado Envios](http://shipping.mercadopago.com.ar/optin/doOptin) in your Mercado Pago account.
-
-> 	IMPORTANT: Your Mercado Pago account must be of type **Seller**.
-
-2) Go to the menu **Systems > Configuration**, in the settings page go to the option **Shipping Methods**:
-
-![Configuring the Mercado Envios in Magento](/images/magento/magento-config-me-01.gif)
-
-3) To enable the Mercado Envios, go to the **Mercado Envios** option, click in **Configure** and check **Enable** as **Yes**
-
-![Enabling Mercado Envios in Magento](/images/magento/magento-config-me-02.gif)
-
-4) Go to the option **Product attributes mapping** and select according to the attributes that you have configured in your store. Configure the available shipping methods in the **Available shipping methods** option. Click the **Save Config** option to save the settings:
-
-![Configuring products in Mercado Envios](/images/magento/magento-config-me-03.gif)
-
-5) Very good! The Mercado Envios has been configured and enable successfully!
-
-![Mercado Envios configured successfully](/images/magento/magento-me_save.png)
-
 
 ## Configure Subscriptions
 

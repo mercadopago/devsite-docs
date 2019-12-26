@@ -16,6 +16,7 @@
 
 O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades a seguir:
 
+
 | Funcionalidade                               	| Checkout Mercado Pago    	| API                   |
 |-----------------------------------------------|-------------------|-----------------------|
 | Pagamento com Cartão de Crédito             	| ✔               	| ✔                     |
@@ -24,11 +25,9 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 | Devolução/Cancelamento de Pagamentos          |                 	|                       |
 | Pagamento com um click (Clientes e Cartões) 	|                 	| ✔                     |
 | Calculadora de Parcelas                     	| ✔               	| ✔                     |
-| MercadoEnvios                               	| ✔               	|                       |
 | Assinatura (Recorrência)                    	| ✔               	|                       |
 | Pagina de sucesso personalizável            	|                 	| ✔                     |
 | Atualização do pedido através de Cron       	|                 	| ✔                     |
-| Calculadora de Mercado Envios               	| ✔               	| ✔                     |
 
 
 > NOTE
@@ -78,7 +77,6 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 
 ![Instalação](/images/prestashop_select_mp_file.gif)
 
-
 ## Configuração
 
 1) Após a instalação do módulo, se direcione para **MELHORIAS** -> **Módulos** -> **Módulos e Serviços** e clique em **Configurar** no Plugin do Mercado Pago.
@@ -100,28 +98,6 @@ O módulo do Mercado Pago para Prestashop esta integrado com as funcionalidades 
 ![Payment Method](/images/prestashop_payment_method.png)
 
 5) Muito bem! Você habilitou pagamentos via Checkout Standard (redirecionado)!
-
-### Configuração Mercado Envios
-
-> IMPORTANTE: O Mercado Envios funciona com o Checkout Standard (redirecionado). Ao utilizá-lo os demais meios de pagamentos serão desabilitados.
-
-1) Primeiro, você precisa [habilitar o Mercado Envios na sua conta](http://shipping.mercadopago.com.ar/optin/doOptin).
-
-> NOTE
->
-> IMPORTANTE
->
-> Sua conta do Mercado Pago precisa ser do tipo **Vendedor**. 
-> O produto enviado deve ter suas dimensões (largura, altura, comprimento e peso) adequadamente configurados e dentro das [regras e limites suportados](https://www.correios.com.br/a-a-z/limites-de-dimensoes-e-peso) pelo país especificado.
-
-2) Para habilitar no módulo, você precisa apenas ativa-lo acessando o painel administrativo do Prestashopp em **MELHORIAS -> Módulos -> Módulos e Serviços** e clicando em **Configurar** no módulo do Mercado Pago:
-
-3) Em **MERCADO ENVIOS** é possível configurar um texto para ser exibido na entrega através do campo **Custom text to use with delivery**. Para realizar a ativação marque o campo **Enable Mercado envios** como **YES**.
-
-![Habilitar Mercado Envios](/images/prestashop_mercado_envios.png)
-
-4) Muito bem! Agora você pode oferecer o Mercado Envios como meio de transportes para seus clientes!
-
 
 ## Notificações
 
