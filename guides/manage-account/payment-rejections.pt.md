@@ -11,7 +11,7 @@ Um pagamento pode ser recusado por um erro com o meio de pagamento ou porque nã
 >
 > Se quiser mais informações, consulte [os estados e motivos de recusa existentes](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).
 
-Para evitar perdas de receitas de seu negócio e melhorar a experiência de seus clientes, trabalhamos com os emissores de responsáveis de cada meio de pagamento e utilizamos as últimas tecnologias para evitar a fraude e aumentar a quantidade de pagamentos aprovados.
+Para evitar perdas de receitas de seu negócio e melhorar a experiência de seus clientes, trabalhamos com os emissores responsáveis de cada meio de pagamento e utilizamos as últimas tecnologias para evitar a fraude e aumentar a quantidade de pagamentos aprovados.
 
 ## Pagamentos recusados pelo banco
 
@@ -30,8 +30,12 @@ Você pode ver o estado do pagamento na resposta do API como `rejected` e o moti
 }
 ```
 
-E também poderá achar mais informações sobre o [detalhe do pagamento](https://www.mercadopago.com.br/activities) na atividade da conta de Mercado Pago em que os pagamentos são recebidos.
+E também poderá achar mais informações sobre o detalhe do pagamento [na atividade da conta](https://www.mercadopago.com.br/activities) de Mercado Pago em que os pagamentos são recebidos.
 
+> WARNING
+>
+> Recusa sem motivo
+>
 >É importante levar em consideração que se o emissor do cartão de crédito não indicar o motivo da recusa, você verá o detalhe do pagamento como `cc_rejected_other_reason`. Nesse caso, é recomendável alterar o meio de pagamento ou entrar em contato com o banco para resolver o problema.
 
 ## Pagamentos recusados para prevenir fraude

@@ -30,8 +30,12 @@ You can see the payment status in the API response as `rejected` and the reason 
 }
 ```
 
-Also, you can find more information about [payment details](https://www.mercadopago.com.ar/) on Mercado Pago activity section, where payments are being receive.
+Also, you can find more information about payment details on Mercado Pago [activity section](https://www.mercadopago.com.ar/), where payments are being receive.
 
+> WARNING
+>
+> Rejection without reason
+>
 >Keep in mind that if the card issuer fails to inform the rejection reason, you’ll see the payment details as `cc_rejected_other_reason`. In this scenario, we recommend changing the payment method or reaching out to the bank to solve the issue.
 
 ## Payments rejected due to fraud prevention
