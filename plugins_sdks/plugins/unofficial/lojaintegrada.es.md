@@ -2,8 +2,7 @@
 
 ## ¿Qué es Loja Integrada?
 
-[Loja integrada](https://www.lojaintegrada.com.br/) é uma plataforma para sua loja virtual que permite processar pagamentos através do Mercado Pago.
-Para obter maiores informações sobre as possibilidades que a Loja Integrada oferece acesse [sua página de recursos](https://lojaintegrada.com.br/recursos/).
+Loja integrada es una plataforma virtual que permite procesar pagos a través de Mercado Pago. Para obtener más información, visita el sitio de [Loja integrada](https://www.lojaintegrada.com.br/).
 
 ## Configure la tienda integrada para operar con Mercado Pago
 
