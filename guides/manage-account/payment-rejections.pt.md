@@ -30,7 +30,7 @@ Você pode ver o estado do pagamento na resposta do API como `rejected` e o moti
 }
 ```
 
-E também poderá achar mais informações sobre o detalhe do pagamento [na atividade da conta](https://www.mercadopago.com.br/activities) de Mercado Pago em que os pagamentos são recebidos.
+E também poderá achar mais informações sobre o detalhe do pagamento na [atividade da conta de Mercado Pago](https://www.mercadopago.com.br/activities) em que os pagamentos são recebidos.
 
 > WARNING
 >
@@ -67,7 +67,7 @@ Para evitar que um pagamento real seja recusado por não atender as validações
 
 ### Adicione o nosso código de segurança em seu website
 
-Ajudamos você a detectar comportamentos infrequentes dos clientes com o nosso código de segurança para prevenir a fraude. E não se preocupe, não guardaremos nem compartilharemos os dados de seus clientes.
+Ajudamos você a detectar comportamentos infrequentes dos clientes com o nosso código de segurança para prevenir a fraude. E não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
 
 É muito simples. Adicione o script, configure a seção de seu website onde estiver e pronto! Você apenas deverá substituir o valor de `view` pelo nome do website onde quiser adicioná-lo.
 
@@ -282,7 +282,7 @@ Você pode obter mais informações sobre cada atributo nas [Referências de API
 
 ### Auxilie os seus clientes com seus pagamentos recusados
 
-É importante que você explique aos seus clientes o motivo de recusa do pagamento e que ação pode realizar para solucioná-lo. Seus clientes terão todas as informações que necessitem e você obterá benefícios.
+É importante que você explique aos seus clientes o motivo de recusa do pagamento e que ação pode realizar para solucioná-lo. Seus clientes terão todas as informações necessárias para pagar sem problemas.
 
 Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá recomendar a eles que tentem novamente com outro meio de pagamento para completar a operação.
 

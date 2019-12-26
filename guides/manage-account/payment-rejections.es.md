@@ -30,7 +30,7 @@ Puedes ver el estado del pago en la respuesta de la API como `rejected` y el mot
 }
 ```
 
-Puedes encontrar más información sobre el detalle del pago en [la actividad de la cuenta](http://mercadopago.com.ar/activities) de Mercado Pago en la que se reciben los cobros.
+Puedes encontrar más información sobre el detalle del pago en la [actividad de la cuenta de Mercado Pago](http://mercadopago.com.ar/activities) en la que se reciben los cobros.
 
 > WARNING
 >
@@ -67,7 +67,7 @@ Para evitar que un pago real se rechace por no cumplir con las validaciones de s
 
 ### Suma nuestro código de seguridad en tu sitio
 
-Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad para prevenir el fraude. Y no te preocupes, no guardaremos ni compartiremos los datos de tus clientes.
+Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad para prevenir el fraude. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
 
 Es muy simple. Agrega el script, configura la sección de tu sitio en la que se encuentra ¡y listo! Solo debes reemplazar el valor de `view` por el nombre de la página en la que quieras sumarlo.
 
@@ -282,7 +282,7 @@ Puedes obtener más información sobre cada atributo en las [Referencias de API]
 
 ### Ayuda a tus clientes con sus pagos rechazados
 
-Es importante que le expliques a tus clientes el motivo de rechazo del pago y qué acción puede hacer para solucionarlo. Tus clientes tendrán toda la información que necesitan y tú tendrás beneficios.
+Es importante que le expliques a tus clientes el motivo de rechazo del pago y qué acción puede hacer para solucionarlo. Tus clientes tendrán toda la información que necesitan y para poder pagarte sin problemas.
 
 Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación. 
 

@@ -30,7 +30,7 @@ You can see the payment status in the API response as `rejected` and the reason 
 }
 ```
 
-Also, you can find more information about payment details on Mercado Pago [activity section](https://www.mercadopago.com.ar/), where payments are being receive.
+Also, you can find more information about payment details on [Mercado Pago activity section](https://www.mercadopago.com.ar/), where payments are being receive.
 
 > WARNING
 >
@@ -67,7 +67,7 @@ To prevent real payments being rejected by security non-compliance, you must add
 
 ### Add our security code into your website
 
-We can help you detect unusual client behaviour with our security code, created to prevent fraud. And don’t worry, we will never keep nor share your clients data.
+We can help you detect unusual client behaviour with our security code, created to prevent fraud. And don’t worry, we take care of your customers data and we won't share it with anyone.
 
 It’s simple. Add the script, adjust the section of your website where you inserted it and that’s it! You’re all set and done. You just need to replace the `view` value for the page name you want.
 
@@ -282,7 +282,7 @@ Learn all about these attributes in our [API Reference](https://www.mercadopago.
 
 ### Help your clients with their rejected payments
 
-It’s important to explain to your clients the reason for a payment rejection and how to fix it. Your clients will have all the necessary information and you’ll benefit from it.
+It’s important to explain to your clients the reason for a payment rejection and how to fix it. Your customers will have all the information they need to be able to pay you without problems.
 
 For instance, if a payment is rejected due to lack of funds, you can recommend trying again with a different payment method.
 
