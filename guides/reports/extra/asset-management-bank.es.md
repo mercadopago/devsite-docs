@@ -20,7 +20,8 @@ Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pag
 
 ----[mla]---- 
 Puedes ver dos tipos de movimientos según la la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero en cuenta: rendimientos positivos y negativos.
--------------
+
+------------
 ----[mlb]---- 
 Puedes ver cuatro tipos de movimientos que se generan a partir de la cantidad de dinero en cuenta que tengas disponible:
 
@@ -39,6 +40,7 @@ Para identificarlos en tus reportes, busca en la columna `DESCRIPTION` el valor 
 
 ----[mlb]---- 
 Cuando en la columna `DESCRIPTION` aparece el valor `asset_management_retention` puedes encontrar impactado el impuesto a la renta y cuando el valor es `asset_management_return` refiere a la devolución correspondiente.
+
 ------------
 
 ### Rendimientos positivos
