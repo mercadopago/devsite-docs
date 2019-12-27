@@ -53,4 +53,4 @@ Te explicamos cómo ver la información de tus rendimientos según el tipo de re
 >
 > Nota
 >
-> ¿Tienes dudas? Conoce toda la información sobre los ----[mla]---- [rendimientos del dinero con Mercado Pago](https://www.mercadopago.com.ar/ayuda/Ayuda_con_tus_Rendimientos_4048) ------------ ----[mlb]---- [rendimientos del dinero en cuenta de Mercado Pago](https://www.mercadopago.com.br/ajuda/Rendimento-em-conta_4190) ------------.
+> ¿Tienes dudas? Conoce toda la información sobre los ----[mla]---- [rendimientos del dinero con Mercado Pago.](https://www.mercadopago.com.ar/ayuda/Ayuda_con_tus_Rendimientos_4048) ------------ ----[mlb]---- [rendimientos del dinero en cuenta de Mercado Pago.](https://www.mercadopago.com.br/ajuda/Rendimento-em-conta_4190) ------------
