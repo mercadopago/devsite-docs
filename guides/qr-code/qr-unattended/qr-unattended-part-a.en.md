@@ -65,17 +65,11 @@ This is how the QR unattended model works:
 
 ### Next steps
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-b/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">How to integrate QR unattended model<span class="card-status-tag card-status-tag-required">REQUIRED</span></p>
-<p>Learn how to set up this model step by step.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> How to integrate QR unattended model
+>
+> Learn how to set up this model step by step.
+>
+> [How to integrate QR unattended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-b/)

@@ -41,24 +41,20 @@ You can check your sales in the activity list in your [Mercado Pago account](htt
 
 ### Next Steps
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/introduction/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">¿What’s a QR code?<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
-<p>Learn about QR code integration.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">How to generate a QR<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
-<p>Learn about all the options to charge with QR depending on your type of business.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+  
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> ¿What’s a QR code?
+>
+> Learn about QR code integration.
+>
+> [¿What’s a QR code?](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/introduction/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> How to generate a QR
+>
+> Learn about all the options to charge with QR depending on your type of business.
+>
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations/)

@@ -112,24 +112,20 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 
 ### Next steps
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Advanced Integration<span class="card-status-tag card-status-tag-required">REQUIRED</span></p>
-<p>Learn the options to take your integration to the next level.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Test your integration<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
-<p>Try the most frequent use cases to validate your integration.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Advanced Integration
+>
+> Learn the options to take your integration to the next level.
+>
+> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/advanced-integration/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Test your integration
+>
+> Try the most frequent use cases to validate your integration.
+>
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/)

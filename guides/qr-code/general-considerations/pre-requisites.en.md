@@ -44,17 +44,12 @@ If you don’t have an account yet, you can [create one here](https://www.mercad
 
 ### Next steps
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/stores-pos/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Stores and POS<span class="card-status-tag card-status-tag-required">REQUIRED</span></p>
-<p>To build the integration, you must set up your stores and POS first.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Stores and POS
+>
+> To build the integration, you must set up your stores and POS first.
+>
+> [Stores and POS](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/stores-pos/)
+

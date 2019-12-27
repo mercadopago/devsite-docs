@@ -40,18 +40,11 @@ Find all this information in the Tests section.
 
 ### Next steps
 
-<div>  
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Test your integration<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
-<p>Perform the most frequent use cases to validate your integration.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Test your integration
+>
+> Perform the most frequent use cases to validate your integration.
+>
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/)

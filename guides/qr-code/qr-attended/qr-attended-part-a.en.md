@@ -63,17 +63,11 @@ Here's an explanation of how this model works:
 
 ### Next steps
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-b/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">How to Integrate attended model<span class="card-status-tag card-status-tag-required">REQUIRED</span></p>
-<p>Learn to integrate this model step by step.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> How to Integrate attended model
+>
+> Learn to integrate this model step by step.
+>
+> [How to Integrate attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-b/)
