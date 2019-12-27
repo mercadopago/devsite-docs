@@ -22,8 +22,7 @@ Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pag
 
 Puedes ver dos tipos de movimientos según la la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero en cuenta: rendimientos positivos y negativos.
 
--------------
-
+------------
 ----[mlb]---- 
 
 Puedes ver cuatro tipos de movimientos que se generan a partir de la cantidad de dinero en cuenta que tengas disponible:
