@@ -136,3 +136,20 @@ Once Point of Sale is created, you’ll be able to see the QR files in the “Re
 <br/>
 <br/>
 <br/>
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Integrate QR attended model
+>
+> Check this if your selling process needs an operator.
+>
+> [Integrate QR attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-a/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Integrate QR unattended model
+>
+> If your selling process only needs a client action, this is the model for you.
+>
+> [Integrate QR unattended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-a/)
