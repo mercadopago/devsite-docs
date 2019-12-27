@@ -37,6 +37,12 @@ Besides, when a credit card payment is appoved, you must show in screen and in a
 
 If you allow payment refunds, you must be clear that this can be done only within 90 days after the payment credits.
 
+> NOTE
+>
+> Note
+>
+> Get benefit for your business with our recommendations to [improve the payments approval](https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections).
+
 ### Terms and conditions
 
 You must have a policy of terms and conditions, in which you specify that you're the responsible of all the data entered in your site.
