@@ -80,7 +80,7 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 >
 > Learn how to create a report and follow the steps to set up your references.
 >
-> [Genera tu reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/generate/)
+> [Create your Available Money report](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
