@@ -76,7 +76,7 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
-> Create your available Money report
+> Create your Available Money report
 >
 > Learn how to create a report and follow the steps to set up your references.
 >
