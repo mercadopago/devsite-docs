@@ -46,7 +46,7 @@ If partial refund before first collection, number of installments and relevant a
 
 If refund is higher than amount pending receipt, don't worry, the next report will show difference amount debited to complete it.
 
-### Chargebacks
+## Chargebacks
 
 Your report shows when a [chargeback](https://www.mercadopago.com.ar/developers/en/guides/manage-account/chargebacks/) or mediation is resolved in favor of buyer. You will see a list of all installments, or those pending release, and the total amount for payment chargeback.
 
