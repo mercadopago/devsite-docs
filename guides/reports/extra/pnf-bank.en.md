@@ -84,7 +84,7 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Detail of information about your report
+> Information detail about your report
 >
 > We will explain all the information necessary about your report data and how to read them.
 >
