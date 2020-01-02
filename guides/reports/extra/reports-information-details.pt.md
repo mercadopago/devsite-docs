@@ -14,7 +14,7 @@ Encontre informações específicas sobre os movimentos e operações que consta
 
 O Mercado Pago permite a você realizar a liberação das suas cobranças de forma mensal em função do número de parcelas com que o pagamento foi realizado. Isto é, o número de parcelas com que o comprador pagar determinará o número de pagamentos que o vendedor vai receber.
 
-## Como visualizar as cobranças de parcelas mês a mês em seus relatórios
+## Como visualizar as cobranças de pagamentos no fluxo em seus relatórios
 
 Vamos lhe explicar como ver as informações de seus [pagamentos no fluxo
  no relatório de Dinheiro disponível](https://www.mercadopago.com.br/developers/pt/guides/reports/extra/pnf-bank).
