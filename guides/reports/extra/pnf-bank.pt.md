@@ -7,7 +7,7 @@ sites_supported:
 
 Vamos lhe mostrar como ver as cobranças mês a mês da sua conta do Mercado Pago no relatório de Dinheiro disponível.
 
-## Movimentos das suas pagamento no fluxo
+## Movimentação de seus pagamentos no fluxo
 
 O número de parcelas escolhido pelo comprador determina o número de pagamentos que você recebe. Por isso, a visualização dos pagamentos é diferente do esquema tradicional de liberação.
 
