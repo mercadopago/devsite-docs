@@ -352,6 +352,7 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 
 ------------
 
+
 ---
 
 ### Next steps

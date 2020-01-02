@@ -46,11 +46,14 @@ Si la devolución es parcial antes del primer cobro, solo se va a actualizar el 
 
 Si la devolución es mayor que el monto que te falta recibir, no te preocupes, en el próximo reporte verás el valor por la diferencia para poder completarla.  
 
-### Contracargos
+## Contracargos
 
 Cuando un [contracargo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/) o una mediación se resuelve a favor del comprador puedes encontrar el detalle en el reporte. Aparecerá el listado con el detalle de todas las cuotas, o las que falten liberar, y el monto total por el contracargo del pago. 
 
 Para identificar este caso, puedes ver en la columna de `DESCRIPTION` el valor `chargeback` que corresponde a los contracargos de las cuotas que ya habían sido cobradas. 
+
+
+> Si tienes dudas sobre cuáles son las cuotas que corresponden a un pago, busca los movimientos que tengan el mismo `SOURCE_ID`.
 
 ![Ejemplo de contracargo](/images/manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
 
@@ -62,6 +65,10 @@ En la columna de `DESCRIPTION` puedes identificar cada cuota con el valor `insta
 
 ![Ejemplo de adelanto de cuotas](/images/manage-account/reports/reports-information-details/pnf-adelanto-de-cuotas-bank.png)
 
+> NOTE
+>
+> Nota
+>
 > Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
