@@ -481,7 +481,9 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 
 ------------
 
-## Integraciones
+## Optimizá la conversión de tus anuncios
+
+Sabemos que es importante maximizar la efectividad de tus anuncios. Para este fin, puedes integrar el Checkout de Mercado Pago con las plataformas de Facebook Ads y Google Ads para asociar pagos a tus campañas. 
 
 ### Píxel de Facebook
 
@@ -591,7 +593,7 @@ Con esta configuración, cuando se *aprueben* pagos a través de Checkout Mercad
 >
 > Importante
 >
-> Los pagos que no sean aprobados en el momento (pendientes) no serán asociados al píxel. <br/>Por el momento, sólo se puede configurar un píxel.<br/>
+> Sólo se verán asociados al píxel los pagos aprobados al instante con tarjetas, dinero en cuenta de Mercado Pago o Mercado Créditos. <br/>Por el momento, sólo se puede configurar un píxel.<br/>
 
 > NOTE
 >
@@ -708,12 +710,13 @@ curl -X POST \
 ```
 ]]]
 
+De esta forma, cuando se *aprueben* pagos a través de Checkout Mercado Pago, se asociará la conversión a la etiqueta configurada. 
 
 > WARNING
 >
 > Importante
 >
-> Los pagos que no sean aprobados en el momento (pendientes) no serán asociados. <br/>Por el momento, sólo se puede configurar un tag.<br/>
+> Sólo se verán asociados los pagos aprobados al instante con tarjetas, dinero en cuenta de Mercado Pago o Mercado Créditos. <br/>Por el momento, sólo se puede configurar una etiqueta.<br/>
 
 
 ### Próximos pasos
