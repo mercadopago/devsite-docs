@@ -26,6 +26,7 @@ use:
 - marketplace
 - marketplace_fee
 - differential_pricing
+- tracks
 errors:
 - 400 bad_request:
   - invalid_collector_id:

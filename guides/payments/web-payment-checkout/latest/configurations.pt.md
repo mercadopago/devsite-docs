@@ -467,6 +467,239 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 
 ------------
 
+## Integraciones
+
+### Pixel do Facebook
+
+Ao criar uma preferência, você pode associar um identificador correspondente a um Pixel do Facebook da seguinte maneira:
+
+
+[[[
+```php
+<?php
+  # Cria um objeto preferência
+  $preference = new MercadoPago\Preference();
+  ...
+  $preference->tracks = array(
+    array(
+      'type' => 'facebook_ad',
+      'values'=> array(
+        'pixel_id' => 'PIXEL_ID'
+      )
+    )
+  );
+
+  ...
+  # Salvar e postar a preferência
+  $preference->save();
+?>
+```
+```node
+var preference = {
+  ...
+  tracks: [
+        {
+          type: "facebook_ad",
+          values: {
+            "pixel_id": 'PIXEL_ID'
+          }
+        }
+      ]
+  ...
+};
+```
+```java
+// Cria um objeto preferência
+Preference preference = new Preference();
+
+Track trackFacebook = new Track()
+                .setType("facebook_ad")
+                .setValues(new TrackValues()
+                        .setPixelId("PIXEL_ID")
+                );
+
+Preference preference = new Preference()
+        .appendTrack(trackFacebook);
+
+// Salvar e postar a preferência
+preference.save();
+```
+```csharp
+List<Track> tracks = new List<Track>();
+tracks.Add(
+    new Track
+    {
+        Type = "facebook_ad",
+        Values = new JObject
+        {
+            { "pixel_id", "PIXEL_ID" }
+        }
+    });
+
+MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+{
+    ...
+    Tracks = tracks
+};
+
+preference.Save();
+```
+```curl
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"items": [
+        {
+            "id_product":1,
+            "quantity":1,
+            "unit_price": 234.33,
+            "titulo":"Mi producto"
+        }
+    ],
+    "tracks": [
+        {
+            "type": "facebook_ad",
+            "values": {
+                "pixel_id": "PIXEL_ID"
+            }
+        }
+    ]
+}'
+```
+]]]
+
+Com essa configuração, quando os pagamentos são *aprovados* pelo Checkout Mercado Pago, você verá um evento `Purchase` associado ao pixel especificado.
+
+> WARNING
+>
+> Importante
+>
+> Os pagamentos que não são aprovados no momento (pendentes) não serão associados ao pixel. <br/> No momento, apenas um pixel pode ser definido. <br/>
+
+> NOTE
+>
+> Nota
+>
+> Você pode testar como sua integração funciona usando a extensão do Chrome _Facebook Pixel Helper_. 
+
+
+### Conversões do Google Ads
+
+Ao criar uma preferência, você pode associar uma tag ao Google Ads Conversion Tracking da seguinte maneira:
+
+
+[[[
+```php
+<?php
+  # Cria um objeto preferência
+  $preference = new MercadoPago\Preference();
+  ...
+  $preference->tracks = array(
+    array(
+        'type' => 'google_ad',
+        'values' => array(
+          'conversion_id' => 'CONVERSION_ID',
+          'conversion_label' => 'CONVERSION_LABEL'
+        )
+    )
+  );
+
+  ...
+  # Salvar e postar a preferência
+  $preference->save();
+?>
+```
+```node
+var preference = {
+  ...
+  tracks: [
+        {
+            type: "google_ad",
+            values: {
+              conversion_id: "CONVERSION_ID",
+              conversion_label: "CONVERSION_LABEL"
+            } 
+        }
+      ]
+  ...
+};
+```
+```java
+// Cria um objeto preferência
+Preference preference = new Preference();
+
+Track trackGoogle = new Track()
+                .setType("google_ad")
+                .setValues(new TrackValues()
+                        .setConversionId("CONVERSION_ID")
+                        .setConversionLabel("CONVERSION_LABEL")
+                );
+
+
+Preference preference = new Preference()
+        .appendTrack(Google);
+
+// Salvar e postar a preferência
+preference.save();
+```
+```csharp
+List<Track> tracks = new List<Track>();
+tracks.Add(
+    new Track
+    {
+        Type = "google_ad",
+        Values = new JObject
+        {
+            { "conversion_id", "CONVERSION_ID" },
+            { "conversion_label", "CONVERSION_LABEL" }
+        }
+    });
+
+MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+{
+    ...
+    Tracks = tracks
+};
+
+preference.Save();
+```
+```curl
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"items": [
+        {
+            "id_product":1,
+            "quantity":1,
+            "unit_price": 234.33,
+            "titulo":"Mi producto"
+        }
+    ],
+    "tracks": [
+        {
+            "type": "google_ad",
+            "values": {
+                "conversion_id", "CONVERSION_ID",
+                "conversion_label", "CONVERSION_LABEL"
+            }
+        }
+    ]
+}'
+```
+]]]
+
+
+> WARNING
+>
+> Importante
+>
+> Os pagamentos que não forem aprovados no momento (pendentes) não serão associados. <br/> No momento, apenas uma tag pode ser definida. <br/>
+
+
 ---
 
 ### Próximos passos
