@@ -29,10 +29,7 @@ Se a devolução for total, você vai encontrar o detalhe de todas as parcelas e
 
 Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `installment` e a devolução total como `refund`. 
 
-> NOTE
->
-> Nota
->
+
 > Se você tiver dúvidas sobre quais as parcelas relativas a um pagamento, procure os movimentos que tiverem o mesmo `SOURCE_ID`. 
 
 ![Ejemplo de reembolso antes de liberar alguna cuota](/images/manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
@@ -52,10 +49,7 @@ Você pode ver no seu relatório quando um [estorno](https://www.mercadopago.com
 
 Para identificar este caso, você pode ver na coluna `DESCRIPTION` o valor `chargeback` que corresponde aos estornos das parcelas que já tenham sido cobradas. 
 
-> NOTE
->
-> Nota
->
+
 > Se você tiver dúvidas sobre quais as parcelas relativas a um pagamento, procure os movimentos que tiverem o mesmo `SOURCE_ID`. 
 
 ![Ejemplo de contracargo](/images/manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
@@ -68,6 +62,10 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 
 ![Ejemplo de adelanto de cuotas](/images/manage-account/reports/reports-information-details/pnf-adelanto-de-cuotas-bank.png)
 
+> NOTE
+>
+> Nota
+>
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.ar/developers/pt/guides/reports/available-money/glossary/) de Dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 
@@ -87,4 +85,4 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 >
 > Vamos lhe mostrar todas as informações necessárias sobre os dados dos seus relatórios e como lê-los.
 >
-> [Detalle de información sobre tu reporte](https://www.mercadopago.com.ar/developers/pt/guides/reports/extra/reports-information-details/)
+> [Detalhamento de informações sobre seu relatório](https://www.mercadopago.com.ar/developers/pt/guides/reports/extra/reports-information-details/)

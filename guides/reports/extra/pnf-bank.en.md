@@ -52,10 +52,7 @@ Your report shows when a [chargeback](https://www.mercadopago.com.ar/developers/
 
 To identify this case, column `DESCRIPTION` show `chargeback` value for chargebacks of already collected installments. 
 
-> NOTE
->
-> Note
->
+
 > If in doubt about payment installments, search activity with the same `SOURCE_ID`. 
 
 ![Ejemplo de contracargo](/images/manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
@@ -68,8 +65,11 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 
 ![Ejemplo de adelanto de cuotas](/images/manage-account/reports/reports-information-details/pnf-adelanto-de-cuotas-bank.png)
 
+> NOTE
+>
+> Note
+>
 > Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
-
 
 
 ### Next steps
@@ -88,4 +88,4 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 >
 > We will explain all the information necessary about your report data and how to read them.
 >
-> [Detalle de información sobre tu reporte](https://www.mercadopago.com.ar/developers/en/guides/reports/extra/reports-information-details/)
+> [Information detail about your report](https://www.mercadopago.com.ar/developers/en/guides/reports/extra/reports-information-details/)
