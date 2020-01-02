@@ -599,7 +599,7 @@ Con esta configuración, cuando se *aprueben* pagos a través de Checkout Mercad
 >
 > Nota
 >
-> Puedes probar el funcionamiento de tu integración utilizando la extensión de Chrome _Facebook Pixel Helper_. 
+> Puedes probar el funcionamiento de tu integración utilizando la extensión de Chrome _Facebook Pixel Helper_. </br>Para más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).</br>
 
 
 ### Conversiones de Google Ads
@@ -717,6 +717,12 @@ De esta forma, cuando se *aprueben* pagos a través de Checkout Mercado Pago, se
 > Importante
 >
 > Sólo se verán asociados los pagos aprobados al instante con tarjetas, dinero en cuenta de Mercado Pago o Mercado Créditos. <br/>Por el momento, sólo se puede configurar una etiqueta.<br/>
+
+> NOTE
+>
+> Nota
+>
+> Para más información, visita el [sitio oficial de Google](https://support.google.com/google-ads).</br>
 
 
 ### Próximos pasos
