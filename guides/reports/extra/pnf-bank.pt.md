@@ -79,7 +79,7 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 >
 > Conheça as formas de gerar um relatório e siga os passos para configurar suas preferências.
 >
-> [Genera tu reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/pt/guides/reports/available-money/generate/)
+> [Gere seu relatório de Dinheiro disponível](https://www.mercadopago.com.ar/developers/pt/guides/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
