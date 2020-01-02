@@ -14,7 +14,7 @@ Find specific information about activity and transactions shown in your reports.
 
 Mercado Pago allows you to monthly release your collections per number of payment installments. That is, the number of installments paid by buyer will set the number of payments to be received by seller.
 
-### How to see collection of installments month by month in your reports
+## How to see collection of installments month by month in your reports
 
 We explain to you how to see information about [monthly collections in your available Money report](https://www.mercadopago.com.br/developers/en/guides/reports/extra/pnf-bank).
 
