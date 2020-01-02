@@ -16,7 +16,7 @@ Mercado Pago allows you to monthly release your collections per number of paymen
 
 ## How to see collection of installments month by month in your reports
 
-We explain to you how to see information about [monthly collections in your available Money report](https://www.mercadopago.com.br/developers/en/guides/reports/extra/pnf-bank).
+We explain to you how to see information about [monthly collections in your Available Money report](https://www.mercadopago.com.br/developers/en/guides/reports/extra/pnf-bank).
 
 ------------
 
