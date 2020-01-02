@@ -5,7 +5,7 @@ sites_supported:
 
 # Collections month by month in available Money report
 
-We show you how to see your Mercado Pago account collections month by month in available Money report.
+We show you how to see your Mercado Pago account collections month by month in Available Money report.
 
 ## Collections month by month activity
 
