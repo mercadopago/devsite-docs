@@ -493,3 +493,4 @@ properties:
           es: 'Monto del impuesto. Se admite un máximo de dos decimales. Para ítems exentos de impuestos se debe informar cero.'
           pt: 'Valor do imposto. É suportado no máximo duas casas decimais. Para itens isentos de imposto, zero deve ser relatado.'
 
+          

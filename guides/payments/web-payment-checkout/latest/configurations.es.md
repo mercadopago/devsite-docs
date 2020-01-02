@@ -481,6 +481,9 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 
 ------------
 
+
+---
+
 ### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES

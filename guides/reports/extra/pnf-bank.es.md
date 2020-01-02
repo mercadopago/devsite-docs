@@ -52,6 +52,12 @@ Cuando un [contracargo](https://www.mercadopago.com.ar/developers/es/guides/mana
 
 Para identificar este caso, puedes ver en la columna de `DESCRIPTION` el valor `chargeback` que corresponde a los contracargos de las cuotas que ya habían sido cobradas. 
 
+> NOTE
+>
+> Nota
+>
+> Si tienes dudas sobre cuáles son las cuotas que corresponden a un pago, busca los movimientos que tengan el mismo `SOURCE_ID`.
+
 ![Ejemplo de contracargo](/images/manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
 
 ## Adelanto de cuotas
