@@ -9,7 +9,7 @@ We show you how to see your Mercado Pago account collections month by month in A
 
 ## Collections month by month activity
 
-Number of installments chosen by buyer sets number of payments you receive.  So viewing payments is different from traditional release schedule. 
+Number of installments chosen by buyer sets number of payments you receive. So viewing payments is different from traditional release schedule. 
 
 ## How to see your collections
 
