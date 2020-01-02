@@ -16,7 +16,7 @@ O Mercado Pago permite a você realizar a liberação das suas cobranças de for
 
 ## Como visualizar as cobranças de parcelas mês a mês em seus relatórios
 
-Vamos lhe explicar como ver as informações das suas [cobranças mensais no relatório de Dinheiro disponível](https://www.mercadopago.com.br/developers/pt/guides/reports/extra/pnf-bank).
+Vamos lhe explicar como ver as informações das suas [pagamento no fluxo no relatório de Dinheiro disponível](https://www.mercadopago.com.br/developers/pt/guides/reports/extra/pnf-bank).
 
 ------------
 
