@@ -46,7 +46,7 @@ Se a devolução for parcial antes da primeira cobrança, o número de parcelas 
 
 Se a devolução for maior ao montante que você ainda deve receber, não se preocupe, no próximo relatório você verá debitado o valor pela diferença para poder completá-la.  
 
-### Estornos
+## Estornos
 
 Você pode ver no seu relatório quando um [estorno](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/chargebacks/) ou uma mediação é resolvido em favor do comprador. Você visualizará a lista com o detalhe de todas as parcelas, ou as que ainda não tenham sido liberadas, e o montante total pelo estorno do pagamento.
 
