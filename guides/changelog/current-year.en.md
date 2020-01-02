@@ -10,7 +10,7 @@ Each release note describes the new changes applying to a version. This changes 
 
 - **Documentation updates:** Guides, references and tutorials to help you monetize your business by integrating Mercado Pago.
 
-## January 3th, 2020
+## January 9th, 2020
 
 Para facilitar el seguimiento de los pagos aprobados en el Checkout Mercado Pago, ahora puedes configurar un Píxel de Facebook y/o un tag de Seguimiento de Conversiones de Google Ads de GTM, a los cuales se asociarán los pagos realizados por tus usuarios.
 
