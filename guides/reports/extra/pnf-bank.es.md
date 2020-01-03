@@ -27,30 +27,30 @@ Existen distintas formas de ver tus devoluciones según su tipo y las cuotas lib
 
 Si la devolución es total, vas a encontrar el detalle de todas las cuotas en tu reporte y al mismo tiempo, el reembolso correspondiente del pago completo.
 
-En la columna `DESCRIPTION` puedes identificar cada cuota con el valor `installment` y a la devolución total como `refund`. 
+En la columna `DESCRIPTION` puedes identificar cada cuota con el valor `installment` y a la devolución total como `refund`.
+
+> Si tienes dudas sobre cuáles son las cuotas que corresponden a un pago, busca los movimientos que tengan el mismo `SOURCE_ID`.
+
+![Ejemplo de reembolso antes de liberar alguna cuota](/images/manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
 
 > NOTE
 >
 > Nota
 >
-> Si tienes dudas sobre cuáles son las cuotas que corresponden a un pago, busca los movimientos que tengan el mismo `SOURCE_ID`. 
-
-![Ejemplo de reembolso antes de liberar alguna cuota](/images/manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
-
 > Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ### Devoluciones parciales
 
-Si la devolución es parcial antes del primer cobro, solo se va a actualizar el número de cuotas y sus cantidades según corresponda. En el caso de que ya hayas recibido algún pago, se restará la devolución del total que falte cobrar y se volverá a especificar el monto de las cuotas. 
+Si la devolución es parcial antes del primer cobro, solo se va a actualizar el número de cuotas y sus cantidades según corresponda. En el caso de que ya hayas recibido algún pago, se restará la devolución del total que falte cobrar y se volverá a especificar el monto de las cuotas.
 
-Si la devolución es mayor que el monto que te falta recibir, no te preocupes, en el próximo reporte verás el valor por la diferencia para poder completarla.  
+Si la devolución es mayor que el monto que te falta recibir, no te preocupes, en el próximo reporte verás el valor por la diferencia para poder completarla.
 
 ## Contracargos
 
-Cuando un [contracargo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/) o una mediación se resuelve a favor del comprador puedes encontrar el detalle en el reporte. Aparecerá el listado con el detalle de todas las cuotas, o las que falten liberar, y el monto total por el contracargo del pago. 
+Cuando un [contracargo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/) o una mediación se resuelve a favor del comprador puedes encontrar el detalle en el reporte. Aparecerá el listado con el detalle de todas las cuotas, o las que falten liberar, y el monto total por el contracargo del pago.
 
-Para identificar este caso, puedes ver en la columna de `DESCRIPTION` el valor `chargeback` que corresponde a los contracargos de las cuotas que ya habían sido cobradas. 
+Para identificar este caso, puedes ver en la columna de `DESCRIPTION` el valor `chargeback` que corresponde a los contracargos de las cuotas que ya habían sido cobradas.
 
 
 > Si tienes dudas sobre cuáles son las cuotas que corresponden a un pago, busca los movimientos que tengan el mismo `SOURCE_ID`.
@@ -59,7 +59,7 @@ Para identificar este caso, puedes ver en la columna de `DESCRIPTION` el valor `
 
 ## Adelanto de cuotas
 
-Si pediste un adelanto vas a poder ver todas las cuotas que anticipaste en el reporte y la comisión que corresponda. 
+Si pediste un adelanto vas a poder ver todas las cuotas que anticipaste en el reporte y la comisión que corresponda.
 
 En la columna de `DESCRIPTION` puedes identificar cada cuota con el valor `installment` y a la comisión como `fee-release_in_advance`.
 
