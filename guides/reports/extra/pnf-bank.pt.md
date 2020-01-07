@@ -29,11 +29,14 @@ Se a devolução for total, você vai encontrar o detalhe de todas as parcelas e
 
 Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `installment` e a devolução total como `refund`.
 
-
 > Se você tiver dúvidas sobre quais as parcelas relativas a um pagamento, procure os movimentos que tiverem o mesmo `SOURCE_ID`.
 
 ![Ejemplo de reembolso antes de liberar alguna cuota](/images/manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
 
+> NOTE
+>
+> Nota
+>
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.ar/developers/pt/guides/reports/available-money/glossary/) de Dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 
