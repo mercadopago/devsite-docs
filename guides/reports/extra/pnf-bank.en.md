@@ -29,14 +29,14 @@ If total refund, you will see the detail of all installments in your report and,
 
 Column `DESCRIPTION` identifies each installment with `installment` value and total refund as `refund`. 
 
-> NOTE
->
-> Note
->
 > If in doubt about payment installments, search activity with the same `SOURCE_ID`. 
 
 ![Ejemplo de reembolso antes de liberar alguna cuota](/images/manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
 
+> NOTE
+>
+> Nota
+>
 > Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 
