@@ -40,4 +40,4 @@ Você pode receber, restituir pagamentos e receber notificações em seu sistema
 >
 > Para integrar seu sistema, é importante conhecer os dados de sua conta e suas credenciais de acesso.
 >
-> [Pré-requisitos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/)
+> [Pré-requisitos](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/pre-requisites/)
