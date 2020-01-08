@@ -46,7 +46,7 @@ Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce co
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você quer oferecer aos seus clientes.
 >
 >
-> [Preferências](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/integration/)
+> [Preferências](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/preferences/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

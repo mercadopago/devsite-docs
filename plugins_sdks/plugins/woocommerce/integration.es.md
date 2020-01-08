@@ -46,7 +46,7 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 > Configura tus preferencias de pago y haz ajustes según la experiencia que quieras ofrecer a tus clientes  
 >
 >
-> [Preferencias](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/integration/)
+> [Preferencias](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/preferences/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
