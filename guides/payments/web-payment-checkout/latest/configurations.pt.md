@@ -20,6 +20,8 @@ Se você oferece compras de valores altos, por exemplo, você pode aceitar [paga
 Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 
+Y también, puedes medir la efectividad de tus publicidades y darles seguimiento al [integrar un píxel de Facebook](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) o al [asociar tus anuncios de Google](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+
 ## Exemplo de uma preferência completa
 
 ----[mlm, mla, mlb, mlc, mlu]----
@@ -467,19 +469,30 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 
 ------------
 
-## Integraciones
+## Optimiza la conversión de tus anuncios
 
-### Pixel do Facebook
+Sabemos que es importante maximizar la efectividad de tus anuncios. Por esto, te damos la posibilidad de integrar el Checkout de Mercado Pago con las plataformas de Facebook Ads y Google Ads para asociar pagos a tus campañas. 
 
-Ao criar uma preferência, você pode associar um identificador correspondente a um Pixel do Facebook da seguinte maneira:
+> NOTE
+>
+> Nota
+>
+> Solo se verán asociados los pagos aprobados al instante con tarjetas, dinero en cuenta de Mercado Pago o Mercado Créditos. 
 
+### Asocia un píxel de Facebook
+
+Al momento de crear una preferencia, asocia el identificador correspondiente a tu píxel de Facebook de la siguiente manera:
 
 [[[
 ```php
+===
+Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+===
 <?php
-  # Cria um objeto preferência
+  // Crear un objeto preferencia
   $preference = new MercadoPago\Preference();
-  ...
+
+  // Asocia tu píxel de Facebook
   $preference->tracks = array(
     array(
       'type' => 'facebook_ad',
@@ -489,14 +502,19 @@ Ao criar uma preferência, você pode associar um identificador correspondente a
     )
   );
 
-  ...
-  # Salvar e postar a preferência
+  // ...
+  // Guardar y postear la preferencia
   $preference->save();
 ?>
 ```
 ```node
+===
+Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+===
+// Configura tu preferencia
 var preference = {
-  ...
+
+  // Asocia tu píxel de Facebook
   tracks: [
         {
           type: "facebook_ad",
@@ -505,13 +523,17 @@ var preference = {
           }
         }
       ]
-  ...
+  //...
 };
 ```
 ```java
-// Cria um objeto preferência
+===
+Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+===
+// Crea un objeto preferencia
 Preference preference = new Preference();
 
+// Asocia tu píxel de Facebook
 Track trackFacebook = new Track()
                 .setType("facebook_ad")
                 .setValues(new TrackValues()
@@ -521,11 +543,15 @@ Track trackFacebook = new Track()
 Preference preference = new Preference()
         .appendTrack(trackFacebook);
 
-// Salvar e postar a preferência
+// Guardar y postear la preferencia
 preference.save();
 ```
 ```csharp
+===
+Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+===
 List<Track> tracks = new List<Track>();
+// Asocia tu píxel de Facebook
 tracks.Add(
     new Track
     {
@@ -538,13 +564,17 @@ tracks.Add(
 
 MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
 {
-    ...
+    // ...
     Tracks = tracks
 };
 
 preference.Save();
 ```
 ```curl
+===
+Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+===
+
 curl -X POST \
   'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
   -H 'Content-Type: application/json' \
@@ -570,32 +600,31 @@ curl -X POST \
 ```
 ]]]
 
-Com essa configuração, quando os pagamentos são *aprovados* pelo Checkout Mercado Pago, você verá um evento `Purchase` associado ao pixel especificado.
-
-> WARNING
->
-> Importante
->
-> Os pagamentos que não são aprovados no momento (pendentes) não serão associados ao pixel. <br/> No momento, apenas um pixel pode ser definido. <br/>
+Al configurarlo, cuando se apruebe un pago a través de tu Checkout de Mercado Pago, verás un evento `Purchase` asociado al píxel especificado.
 
 > NOTE
 >
 > Nota
 >
-> Você pode testar como sua integração funciona usando a extensão do Chrome _Facebook Pixel Helper_. 
+> Por el momento, sólo se puede configurar un píxel. Prueba el funcionamiento de tu integración utilizando la extensión de Chrome Facebook Pixel Helper. Para más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
 
 
-### Conversões do Google Ads
+### Asocia una etiqueta de Google Ads
 
-Ao criar uma preferência, você pode associar uma tag ao Google Ads Conversion Tracking da seguinte maneira:
+Al crear una preferencia, puedes asociarle una etiqueta para seguimiento de conversiones de Google Ads de la siguiente manera:
 
 
 [[[
 ```php
+===
+Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+===
+
 <?php
-  # Cria um objeto preferência
+  // Crear un objeto preferencia
   $preference = new MercadoPago\Preference();
-  ...
+ 
+  // Asocia tu etiqueta
   $preference->tracks = array(
     array(
         'type' => 'google_ad',
@@ -607,13 +636,18 @@ Ao criar uma preferência, você pode associar uma tag ao Google Ads Conversion 
   );
 
   ...
-  # Salvar e postar a preferência
+  // Guardar y postear la preferencia
   $preference->save();
 ?>
 ```
 ```node
+===
+Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+===
+// Configura tu preferencia
 var preference = {
-  ...
+ 
+  // Asocia tu etiqueta
   tracks: [
         {
             type: "google_ad",
@@ -627,9 +661,13 @@ var preference = {
 };
 ```
 ```java
-// Cria um objeto preferência
+===
+Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+===
+// Crea un objeto preferencia
 Preference preference = new Preference();
 
+// Asocia tu etiqueta
 Track trackGoogle = new Track()
                 .setType("google_ad")
                 .setValues(new TrackValues()
@@ -641,11 +679,15 @@ Track trackGoogle = new Track()
 Preference preference = new Preference()
         .appendTrack(Google);
 
-// Salvar e postar a preferência
+// Guardar y postear la preferencia
 preference.save();
 ```
 ```csharp
+===
+Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+===
 List<Track> tracks = new List<Track>();
+// Asocia tu etiqueta
 tracks.Add(
     new Track
     {
@@ -666,6 +708,9 @@ MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preferen
 preference.Save();
 ```
 ```curl
+===
+Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+===
 curl -X POST \
   'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
   -H 'Content-Type: application/json' \
@@ -692,13 +737,13 @@ curl -X POST \
 ```
 ]]]
 
+De este modo, cuando se apruebe un pagos a través de tu Checkout de Mercado Pago, se asociará una conversión a la etiqueta configurada.
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
-> Os pagamentos que não forem aprovados no momento (pendentes) não serão associados. <br/> No momento, apenas uma tag pode ser definida. <br/>
-
+> Por el momento, solo se puede configurar una etiqueta. Para más información sobre las etiquetas para seguimiento de conversiones de Google Ads, visita el [sitio oficial de Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
 ---
 
