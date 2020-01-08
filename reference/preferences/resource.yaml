@@ -492,5 +492,33 @@ properties:
           en: 'Tax amount. A maximum of two decimal places is supported. For tax exempt items, zero must be reported.'
           es: 'Monto del impuesto. Se admite un máximo de dos decimales. Para ítems exentos de impuestos se debe informar cero.'
           pt: 'Valor do imposto. É suportado no máximo duas casas decimais. Para itens isentos de imposto, zero deve ser relatado.'
+- tracks:
+    type: Array (Object)
+    description:
+      en: Tracks to be executed during the users's interaction in the Checkout flow.
+      es: Tracks que se ejecutarán durante la interacción de los usuarios en el flujo de Pago.
+      pt: Tracks que serão executados durante a interação do usuário no fluxo de Pagamento.
+    properties:
+    - type:
+        type: String
+        description:
+          en: Track type. Specifies which tool the values belong to.
+          es: Tipo del track. Especifica a qué herramienta pertenecen los valores.
+          pt: Tipo da track. Especifique a herramienta pertenecen los valores.
+        enum:
+        - google_ad:
+            en: "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values: conversion_id and conversion_label."
+            es: "Permite configurar una etiqueta de seguimiento de conversiones de Google Ads de GTM. Valores necesarios: conversion_id y conversion_label."
+            pt: "Configure uma tag de acompanhamento de conversões do Google Ads no GTM. Valores necessários: conversion_id e conversion_label."
+        - facebook_ad:
+            en: "Allows configurations for Facebook Pixel. Necessary values: pixel_id."
+            es: "Permite configurar un Pixel de Facebook. Valores necesarios: pixel_id."
+            pt: "Permite configurar um pixel do Facebook. Valores necessários: pixel_id."
+    - values:
+        type: Map
+        description:
+          en: Configuration values according the track type.
+          es: Valores de configuración de acuerdo al tipo de track.
+          pt: Valores de configuração de acordo com o tipo de track.
 
           

@@ -13,8 +13,9 @@ sites_supported:
 
 You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
-
 If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) that you do not want to accept.
+
+You can also measure the effectiveness of your advertisements and follow your [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
 
 ## Example of a complete preference
 
@@ -352,6 +353,280 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 
 ------------
 
+## Optimize Ad Conversion
+
+We know it’s important to maximize your ads effectiveness. For this reason, we offer you the choice integrating Mercado Pago Checkout with Facebook Ads and Google Ads platforms, in order to associate payments to your campaigns.
+
+> NOTE
+>
+> Note
+>
+> Only instantly approved payments with credit or debit cards, money in Mercado Pago or with Mercado Credits will be associated.
+
+### Associate a Facebook Pixel
+
+When creating a preference, associate the corresponding identifier to your Facebook Pixel as follows:
+
+[[[
+```php
+===
+Add the code in the preference and replace the value 'PIXEL_ID' with your identifier.
+===
+<?php
+  // Create a preference object
+  $preference = new MercadoPago\Preference();
+
+  // Associate your Facebook Pixel
+  $preference->tracks = array(
+    array(
+      'type' => 'facebook_ad',
+      'values'=> array(
+        'pixel_id' => 'PIXEL_ID'
+      )
+    )
+  );
+
+  // ...
+  // Save and post the preference
+  $preference->save();
+?>
+```
+```node
+===
+Add the code in the preference and replace the value 'PIXEL_ID' with your identifier.
+===
+  // Create a preference object
+var preference = {
+
+  // Associate your Facebook Pixel
+  tracks: [
+        {
+          type: "facebook_ad",
+          values: {
+            "pixel_id": 'PIXEL_ID'
+          }
+        }
+      ]
+  //...
+};
+```
+```java
+===
+Add the code in the preference and replace the value 'PIXEL_ID' with your identifier.
+===
+  // Create a preference object
+Preference preference = new Preference();
+
+  // Associate your Facebook Pixel
+Track trackFacebook = new Track()
+                .setType("facebook_ad")
+                .setValues(new TrackValues()
+                        .setPixelId("PIXEL_ID")
+                );
+
+Preference preference = new Preference()
+        .appendTrack(trackFacebook);
+
+  // Save and post the preference
+preference.save();
+```
+```csharp
+===
+Add the code in the preference and replace the value 'PIXEL_ID' with your identifier.
+===
+List<Track> tracks = new List<Track>();
+  // Associate your Facebook Pixel
+tracks.Add(
+    new Track
+    {
+        Type = "facebook_ad",
+        Values = new JObject
+        {
+            { "pixel_id", "PIXEL_ID" }
+        }
+    });
+
+MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+{
+    // ...
+    Tracks = tracks
+};
+
+preference.Save();
+```
+```curl
+===
+Add the code in the preference and replace the value 'PIXEL_ID' with your identifier.
+===
+
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"items": [
+        {
+            "id_product":1,
+            "quantity":1,
+            "unit_price": 234.33,
+            "titulo":"Mi producto"
+        }
+    ],
+    "tracks": [
+        {
+            "type": "facebook_ad",
+            "values": {
+                "pixel_id": "PIXEL_ID"
+            }
+        }
+    ]
+}'
+```
+]]]
+
+Once set up, you’ll see a 'Purchase' event for the specified Pixel everytime a payment is approved through your Mercado Pago Checkout.
+
+> NOTE
+>
+> Note
+>
+> At the moment, only one Pixel can be set. Test your integration’s performance with Facebook Pixel Helper extension, available on Chrome Store. For more information, visit [Facebook’s official website](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
+
+
+### Associate a Google Ads tag
+
+When creating a preference, you can associate a Google Ads conversion tracking tag as follows:
+
+[[[
+```php
+===
+Add the code in the preference and replace the values ​​'CONVERSION\_ID' y 'CONVERSION\_LABEL' with your tag data.
+===
+
+<?php
+  // Create a preference object
+  $preference = new MercadoPago\Preference();
+ 
+  // Associate your tag
+  $preference->tracks = array(
+    array(
+        'type' => 'google_ad',
+        'values' => array(
+          'conversion_id' => 'CONVERSION_ID',
+          'conversion_label' => 'CONVERSION_LABEL'
+        )
+    )
+  );
+
+  ...
+  // Save and post the preference
+  $preference->save();
+?>
+```
+```node
+===
+Add the code in the preference and replace the values ​​'CONVERSION\_ID' y 'CONVERSION\_LABEL' with your tag data.
+===
+// Configure your preference
+var preference = {
+
+ // Associate your tag
+  tracks: [
+        {
+            type: "google_ad",
+            values: {
+              conversion_id: "CONVERSION_ID",
+              conversion_label: "CONVERSION_LABEL"
+            }
+        }
+      ]
+  ...
+};
+```
+```java
+===
+Add the code in the preference and replace the values ​​'CONVERSION\_ID' y 'CONVERSION\_LABEL' with your tag data.
+===
+  // Create a preference object
+Preference preference = new Preference();
+
+  // Associate your tag
+Track trackGoogle = new Track()
+                .setType("google_ad")
+                .setValues(new TrackValues()
+                        .setConversionId("CONVERSION_ID")
+                        .setConversionLabel("CONVERSION_LABEL")
+                );
+
+
+Preference preference = new Preference()
+        .appendTrack(Google);
+
+  // Save and post the preference
+preference.save();
+```
+```csharp
+===
+Add the code in the preference and replace the values ​​'CONVERSION\_ID' y 'CONVERSION\_LABEL' with your tag data.
+===
+List<Track> tracks = new List<Track>();
+  // Associate your tag
+tracks.Add(
+    new Track
+    {
+        Type = "google_ad",
+        Values = new JObject
+        {
+            { "conversion_id", "CONVERSION_ID" },
+            { "conversion_label", "CONVERSION_LABEL" }
+        }
+    });
+
+MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+{
+    ...
+    Tracks = tracks
+};
+
+preference.Save();
+```
+```curl
+===
+Add the code in the preference and replace the values ​​'CONVERSION\_ID' y 'CONVERSION\_LABEL' with your tag data.
+===
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"items": [
+        {
+            "id_product":1,
+            "quantity":1,
+            "unit_price": 234.33,
+            "titulo":"Mi producto"
+        }
+    ],
+    "tracks": [
+        {
+            "type": "google_ad",
+            "values": {
+                "conversion_id", "CONVERSION_ID",
+                "conversion_label", "CONVERSION_LABEL"
+            }
+        }
+    ]
+}'
+```
+]]]
+
+Once set up, you’ll see a conversion associated to the configured label everytime a payment is approved through your Mercado Pago Checkout.
+
+> NOTE
+>
+> Note
+>
+> At the moment, only one label can be configured. For more information about Google Ads conversion tracking tags, visit the [Google's official website](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
 ---
 
