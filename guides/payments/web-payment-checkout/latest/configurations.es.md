@@ -631,7 +631,7 @@ Al crear una preferencia, puedes asociarle una etiqueta para seguimiento de conv
 [[[
 ```php
 ===
-Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+Agrega este código al crear la preferencia y reemplaza los valores ‘CONVERSION_ID‘ y ‘CONVERSION_LABEL‘ por los datos de tu etiqueta.
 ===
 
 <?php
