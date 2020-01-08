@@ -485,13 +485,13 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 
 ## Optimiza la conversión de tus anuncios
 
-Sabemos que es importante maximizar la efectividad de tus anuncios. Por esto, te damos la posibilidad de integrar el Checkout de Mercado Pago con las plataformas de Facebook Ads y Google Ads para asociar pagos a tus campañas. 
+Sabemos que es importante maximizar la efectividad de tus anuncios. Por esto, te damos la posibilidad de integrar el Checkout de Mercado Pago con las plataformas de Facebook Ads y Google Ads para asociar los pagos a tus campañas.
 
 > NOTE
 >
 > Nota
 >
-> Solo se verán asociados los pagos aprobados al instante con tarjetas, dinero en cuenta de Mercado Pago o Mercado Créditos. 
+> Solo se verán asociados los pagos aprobados al instante con tarjetas de crédito o débito, dinero en Mercado Pago o con Mercado Créditos.
 
 ### Asocia un píxel de Facebook
 
@@ -500,7 +500,7 @@ Al momento de crear una preferencia, asocia el identificador correspondiente a t
 [[[
 ```php
 ===
-Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor 'PIXEL_ID' por tu identificador.
 ===
 <?php
   // Crear un objeto preferencia
@@ -523,7 +523,7 @@ Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ 
 ```
 ```node
 ===
-Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor 'PIXEL_ID' por tu identificador.
 ===
 // Configura tu preferencia
 var preference = {
@@ -542,7 +542,7 @@ var preference = {
 ```
 ```java
 ===
-Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor 'PIXEL_ID' por tu identificador.
 ===
 // Crea un objeto preferencia
 Preference preference = new Preference();
@@ -562,7 +562,7 @@ preference.save();
 ```
 ```csharp
 ===
-Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor 'PIXEL_ID' por tu identificador.
 ===
 List<Track> tracks = new List<Track>();
 // Asocia tu píxel de Facebook
@@ -586,7 +586,7 @@ preference.Save();
 ```
 ```curl
 ===
-Agrega este código al crear la preferencia y reemplaza el valor ‘PIXEL_ID’ por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor 'PIXEL_ID' por tu identificador.
 ===
 
 curl -X POST \
@@ -620,7 +620,7 @@ Al configurarlo, cuando se apruebe un pago a través de tu Checkout de Mercado P
 >
 > Nota
 >
-> Por el momento, sólo se puede configurar un píxel. Prueba el funcionamiento de tu integración utilizando la extensión de Chrome Facebook Pixel Helper. Para más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
+> Por el momento, solo se puede configurar un píxel. Prueba el funcionamiento de tu integración utilizando la extensión de Chrome Facebook Pixel Helper. Para más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
 
 
 ### Asocia una etiqueta de Google Ads
@@ -631,7 +631,7 @@ Al crear una preferencia, puedes asociarle una etiqueta para seguimiento de conv
 [[[
 ```php
 ===
-Agrega este código al crear la preferencia y reemplaza los valores ‘CONVERSION_ID‘ y ‘CONVERSION_LABEL‘ por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores 'CONVERSION\_ID' y 'CONVERSION\_LABEL' por los datos de tu etiqueta.
 ===
 
 <?php
@@ -656,7 +656,7 @@ Agrega este código al crear la preferencia y reemplaza los valores ‘CONVERSIO
 ```
 ```node
 ===
-Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores 'CONVERSION\_ID' y 'CONVERSION\_LABEL' por los datos de tu etiqueta.
 ===
 // Configura tu preferencia
 var preference = {
@@ -676,7 +676,7 @@ var preference = {
 ```
 ```java
 ===
-Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores 'CONVERSION\_ID' y 'CONVERSION\_LABEL' por los datos de tu etiqueta.
 ===
 // Crea un objeto preferencia
 Preference preference = new Preference();
@@ -698,7 +698,7 @@ preference.save();
 ```
 ```csharp
 ===
-Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores 'CONVERSION\_ID' y 'CONVERSION\_LABEL' por los datos de tu etiqueta.
 ===
 List<Track> tracks = new List<Track>();
 // Asocia tu etiqueta
@@ -723,7 +723,7 @@ preference.Save();
 ```
 ```curl
 ===
-Agrega este código al crear la preferencia y reemplaza los valores 'CONVERSION_ID' y 'CONVERSION_LABEL' por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores 'CONVERSION\_ID' y 'CONVERSION\_LABEL' por los datos de tu etiqueta.
 ===
 curl -X POST \
   'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \

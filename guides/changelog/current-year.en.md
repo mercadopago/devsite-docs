@@ -12,6 +12,6 @@ Each release note describes the new changes applying to a version. This changes 
 
 ## January 9th, 2020 
 
-Para facilitar el seguimiento de los pagos aprobados en el Checkout Mercado Pago, ahora puedes configurar un Píxel de Facebook y/o un tag de Seguimiento de Conversiones de Google Ads de GTM, a los cuales se asociarán los pagos realizados por tus usuarios.
+If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Mercado Pago Checkout.
 
-Para más detalle, [ver cómo integrar Facebook Pixel y Conversiones de Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/).
+[Start now measuring the conversion of your ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/).
