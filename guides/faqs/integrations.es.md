@@ -14,7 +14,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo clic y  con la posibilidad de pagar con 2 tarjetas.
 
-- **Ofrecé los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), sin que hagas nada y podés [ofrecer cuotas con sin interés](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) con la mejor financiación.
+- **Ofrecé los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), sin que hagas nada y podés [ofrecer cuotas sin interés](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) con la mejor financiación.
 
 - **Protegemos tu dinero, siempre.** No tenés que preocuparte de nada. Si tenés algún problema, te respaldamos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
