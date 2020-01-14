@@ -43,7 +43,7 @@ Es la versión simplificada del Checkout Mercado Pago con una experiencia de usu
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencia de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -51,7 +51,7 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 ## Cómo ofrecer descuentos
 
-Es muy simple, eligí cuánto dinero querés invertir y en qué momento, y listo. ¡Sin costos extras!
+Es muy simple, elegí cuánto dinero querés invertir y en qué momento, y listo. ¡Sin costos extras!
 
 Podés [ofrecer descuentos y generar cupones](https://www.mercadopago.com.ar/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
 
@@ -334,7 +334,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo clic y con la posibilidad de pagar con 2 tarjetas.
 
-- **Ofrece los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.uy/ayuda/Medios-de-pago-para-tus-compradores-uy_2995), sin que tengas que hacer nada y puedes ofrecer cuotas con sin interés con la mejor financiación.
+- **Ofrece los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.uy/ayuda/Medios-de-pago-para-tus-compradores-uy_2995), sin que tengas que hacer nada y puedes ofrecer cuotas sin interés con la mejor financiación.
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.uy/ayuda/dinero-seguridad-ventas-uy_2989).
 
