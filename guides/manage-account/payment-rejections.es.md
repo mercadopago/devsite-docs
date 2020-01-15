@@ -91,7 +91,7 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 ### Detalla toda la información sobre el pago
 
-Para optimizar la validación de seguridad de los pagos y mejorar las aprobaciones, puedes enviarnos los dato del comprador y del ítem para que los analicemos. Por ejemplo, si nos envías esta información, podemos detectar si ese comprador realizó pagos sospechosos en otro momento y prevenirlo.
+Para optimizar la validación de seguridad de los pagos y mejorar las aprobaciones, puedes enviarnos los datos del comprador y del ítem para que los analicemos. Por ejemplo, si nos envías esta información, podemos detectar si ese comprador realizó pagos sospechosos en otro momento y prevenirlo.
 
 #### Datos del comprador
 
