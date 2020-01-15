@@ -14,7 +14,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo clic y  con la posibilidad de pagar con 2 tarjetas.
 
-- **Ofrecé los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), sin que hagas nada y podés [ofrecer cuotas con sin interés](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) con la mejor financiación.
+- **Ofrecé los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221), sin que hagas nada y podés [ofrecer cuotas sin interés](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) con la mejor financiación.
 
 - **Protegemos tu dinero, siempre.** No tenés que preocuparte de nada. Si tenés algún problema, te respaldamos con [nuestro Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
@@ -43,7 +43,7 @@ Es la versión simplificada del Checkout Mercado Pago con una experiencia de usu
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencia de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -63,7 +63,7 @@ Es muy simple ya que no requiere que necesites saber de programación y si tiene
 
 Creamos una herramienta para que puedas ofrecer cuotas sin interés y hacer que tu negocio sea más atractivo.
 
-Desde tu cuenta de Mercado Pago, en la sección ofrecer cuotas sin interés podés configurar la cantidad de cuotas que quieras para tu cliente y el [costos de financiación](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) que absorberás.
+Desde tu cuenta de Mercado Pago, en la sección ofrecer cuotas sin interés podés configurar la cantidad de cuotas que quieras para tu cliente y el [costo de financiación](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) que absorberás.
 
 [Ofrecer cuotas sin interés](https://www.mercadopago.com/mla/front/cost-absorption)
 
@@ -301,7 +301,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **La mejor experiencia garantizada.** Te ofrecemos la mejor experiencia de compra desde cualquier celular o computadora con un solo clic y con la posibilidad de pagar con 2 tarjetas.
 
-- **Ofrece los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.uy/ayuda/Medios-de-pago-para-tus-compradores-uy_2995), sin que tengas que hacer nada y puedes ofrecer cuotas con sin interés con la mejor financiación.
+- **Ofrece los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.uy/ayuda/Medios-de-pago-para-tus-compradores-uy_2995), sin que tengas que hacer nada y puedes ofrecer cuotas sin interés con la mejor financiación.
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.uy/ayuda/dinero-seguridad-ventas-uy_2989).
 
