@@ -83,7 +83,7 @@ Você pode usá-lo para o que quiser, como cobrar mensalidades de academia, alug
 
 É muito simples, pois não requer conhecimento sobre programação e, caso tenha dúvidas sobre como configurá-lo, você pode acessar o [manual de configuração](https://www.mercadopago.com.br/ajuda/cobrar-debito-automatico-cartao_1181) no portal de ajuda do Mercado Pago.
 
-[[Criar botão de assinatura]](http://www.mercadopago.com.br/receive-payments/tools)
+[Criar botão de assinatura](http://www.mercadopago.com.br/receive-payments/tools)
 
 ## Como oferecer parcelamento sem juros
 
