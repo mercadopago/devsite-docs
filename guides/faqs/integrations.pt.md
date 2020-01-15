@@ -58,15 +58,6 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 
 [Integrar por API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
 
-## Como oferecer descontos
-
-É muito simples, você escolhe quanto e quando quer investir e pronto. Sem custos adicionais!
-
-Você pode [oferecer descontos e gerar cupons](https://www.mercadopago.com.br/settings/my-business) com descontos de valores fixos ou por uma porcentagem dos produtos pelos seus botões ou links de pagamento. Você também pode habilitá-los para todos os seus compradores ou somente para alguns deles.
-
-Você pode usá-lo para oferecer 10% ou 20% de desconto nos seus produtos, por exemplo, ou um desconto de valor fixo por cada pagamento aos compradores que quiser.
-
-
 ## Posso oferecer pagamentos com cartão de débito?
 
 Por enquanto, não oferecemos a opção de pagamento com cartão de débito.
