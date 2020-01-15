@@ -10,7 +10,7 @@
 >
 > **¿Qué es?** Cuando un comprador se comunica con la entidad que emitió su tarjeta (un banco, por ejemplo) y desconoce un pago realizado a través de ese medio, se genera un _contracargo_. [Más información &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249)
 
-El contracargo, en principio, signfica que Mercado Pago retendrá el dinero de la venta hasta que el problema sea solucionado.
+El contracargo, en principio, significa que Mercado Pago retendrá el dinero de la venta hasta que el problema sea solucionado.
 
 Los contracargos pueden ser gestionados vía API.
 Es importante en este proceso mencionar cuáles son las instancias clave:
@@ -22,7 +22,7 @@ Es importante en este proceso mencionar cuáles son las instancias clave:
 5. Revisión por parte de Mercado Pago
 6. Resolución
 
-Ahora entraremos en detalle en cada una de ellas
+Ahora entraremos en detalle en cada una de ellas.
 
 ## Aparición del contracargo
 

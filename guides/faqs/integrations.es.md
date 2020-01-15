@@ -49,15 +49,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 [Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
 
-## Cómo ofrecer descuentos
-
-Es muy simple, elegí cuánto dinero querés invertir y en qué momento, y listo. ¡Sin costos extras!
-
-Podés [ofrecer descuentos y generar cupones](https://www.mercadopago.com.ar/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
-
-Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
-
-
 ## Cómo ofrecer suscripciones
 
 Podés crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuánto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
@@ -138,14 +129,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 [Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
 
-## Cómo ofrecer descuentos
-
-Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. ¡Sin costos extras!
-
-Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.mx/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
-
-Lo puedes usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
-
 ## Cómo ofrecer suscripciones
 
 Puedes crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuánto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
@@ -154,7 +137,7 @@ Lo puedes usar para lo que quieras, como cobrar cuotas del gimnasio, alquileres 
 
 Es muy simple ya que no requiere que necesites saber de programación y si tienes dudas de como configurarlo, puedes acceder a la [guía de configuración](https://www.mercadopago.com.mx/ayuda/cobrar-cargo-automatico-tarjeta_1277) en el portal de ayuda de Mercado Pago.
 
-[[Crear botón de suscripción]](http://www.mercadopago.com.mx/receive-payments/tools)
+[Crear botón de suscripción](http://www.mercadopago.com.mx/receive-payments/tools)
 
 ## Cómo ofrecer mensualidades sin intereses
 
@@ -162,7 +145,7 @@ Creamos una herramienta para que puedas ofrecer mensualidades sin intereses y ha
 
 Desde tu cuenta de Mercado Pago, en la sección Ofrecer mensualidades sin intereses puedes configurar la cantidad de mensualidades que quieras y sus [costos de financiación](https://www.mercadopago.com.mx/ayuda/mensualidades-sin-intereses_2255) con un descuento.
 
-[Ofrecer mensualidades sin interes](https://www.mercadopago.com/mlm/front/cost-absorption)]
+[Ofrecer mensualidades sin interes](https://www.mercadopago.com/mlm/front/cost-absorption)
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 
@@ -232,14 +215,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 [Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
 
-## Cómo ofrecer descuentos
-
-Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. ¡Sin costos extras!
-
-Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.pe/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
-
-Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
-
 ## Cómo gestionar las ventas de clientes en mi sitio
 
 Para poder gestionar vendedores y que puedan hacer transacciones comerciales en tu sitio tienes que [crear un Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/introduction).
@@ -301,14 +276,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 [Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
 
-## Cómo ofrecer descuentos
-
-Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. ¡Sin costos extras!
-
-Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.co/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
-
-Lo puedes usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
-
 ## Cómo gestionar las ventas de clientes en mi sitio
 
 Para poder gestionar vendedores y que puedan hacer transacciones comerciales en tu sitio tienes que [crear un Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/introduction).
@@ -361,14 +328,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
 [Integrar por API](https://www.mercadopago.com.uy/developers/es/guides/payments/api/introduction/)
-
-## Cómo ofrecer descuentos
-
-Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. ¡Sin costos extras!
-
-Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.com.uy/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
-
-Lo puedes usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
 
 ## Cómo ofrecer cuotas sin interés
 
@@ -441,14 +400,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
 [Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
-
-## Cómo ofrecer descuentos
-
-Es muy simple: elige cuánto dinero quieres invertir, en qué momento, y listo. ¡Sin costos extras!
-
-Puedes [ofrecer descuentos y generar cupones](https://www.mercadopago.cl/settings/my-business) con montos de valores fijos o con un porcentaje aplicado a un producto desde tus botones o links de pago. Y habilitarlo para todos tus compradores o para algunos.
-
-Lo podés usar para ofrecer un 10% de descuento en tus productos o regalarle un monto fijo por cada pago a los compradores que quieras.
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 
