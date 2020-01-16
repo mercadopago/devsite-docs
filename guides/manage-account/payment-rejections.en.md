@@ -108,10 +108,12 @@ In order to optimize payment security validation and avoid rejected payments, yo
     "area_code" => "",
     "number" => "949 128 866"
   );
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   $payer->identification = array(
     "type" => "DNI",
     "number" => "12345678"
   );
+  ------------
   $payer->address = array(
     "street_name" => "Cuesta Miguel Armendáriz",
     "street_number" => 1004,
@@ -131,10 +133,12 @@ var payer = {
     area_code: "",
     number: "949 128 866"
   },
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: {
     type: "DNI",
     number: "12345678"
   },
+  ------------
   address: {
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
@@ -153,9 +157,11 @@ payer.setName("Charles")
      .setPhone(new Phone()
         .setAreaCode("")
         .setPhoneNumber("949 128 866"))
+     ----[mla, mlb, mlu, mco, mlc, mpe]----
      .setIdentification(new Identification()
         .setType("DNI")
         .setNumber("12345678"))
+     ------------
      .setAddress(new Address()
         .setStreetName("Cuesta Miguel Armendáriz")
         .setBuildingNumber("1004")
@@ -173,10 +179,12 @@ payer = MercadoPago::Payer.new({
     area_code: "",
     number: "949 128 866"
   })
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: MercadoPago::Identification.new({
     type: "DNI",
     number: "12345678"
   })
+  ------------
   address: MercadoPago::Address.new ({
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
@@ -200,11 +208,13 @@ Payer payer = new Payer()
         AreaCode = "",
         Number = "949 128 866"
     },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     Identification = new Identification()
     {
         Type = "DNI",
         Number = "12345678"
     },
+    ------------
     Address = new Address()
     {
         StreetName = "Cuesta Miguel Armendáriz",
