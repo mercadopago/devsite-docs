@@ -486,7 +486,7 @@ Ao criar uma preferência, associe o identificador correspondente a seu pixel do
 [[[
 ```php
 ===
-Adicione o código na preferência e substitua o valor `pixel_id` pelo seu identificador.
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
 <?php
   // Criar um objeto preferencia
@@ -509,7 +509,7 @@ Adicione o código na preferência e substitua o valor `pixel_id` pelo seu ident
 ```
 ```node
 ===
-Adicione o código na preferência e substitua o valor `pixel_id` pelo seu identificador.
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
   // Criar um objeto preferencia
 var preference = {
@@ -528,7 +528,7 @@ var preference = {
 ```
 ```java
 ===
-Adicione o código na preferência e substitua o valor `pixel_id` pelo seu identificador.
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
   // Criar um objeto preferencia
 Preference preference = new Preference();
@@ -548,7 +548,7 @@ preference.save();
 ```
 ```csharp
 ===
-Adicione o código na preferência e substitua o valor `pixel_id` pelo seu identificador.
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
 List<Track> tracks = new List<Track>();
   // Associar seu pixel do Facebook
@@ -572,7 +572,7 @@ preference.Save();
 ```
 ```curl
 ===
-Adicione o código na preferência e substitua o valor ‘pixel_id’ pelo seu identificador.
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
 
 curl -X POST \
@@ -616,7 +616,7 @@ Ao criar uma preferência, você pode associar uma tag para acompanhamento das c
 [[[
 ```php
 ===
-Adicione o código na preferência e substitua os valores `CONVERSION\_ID` e `CONVERSION\_LABEL` pelos dados da sua tag.
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
 ===
 
 <?php
@@ -641,7 +641,7 @@ Adicione o código na preferência e substitua os valores `CONVERSION\_ID` e `CO
 ```
 ```node
 ===
-Adicione o código na preferência e substitua os valores `CONVERSION\_ID` e `CONVERSION\_LABEL` pelos dados da sua tag.
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
 ===
   // Criar um objeto preferencia
 var preference = {
@@ -661,7 +661,7 @@ var preference = {
 ```
 ```java
 ===
-Adicione o código na preferência e substitua os valores `CONVERSION\_ID` e `CONVERSION\_LABEL` pelos dados da sua tag.
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
 ===
   // Criar um objeto preferencia
 Preference preference = new Preference();
@@ -683,7 +683,7 @@ preference.save();
 ```
 ```csharp
 ===
-Adicione o código na preferência e substitua os valores `CONVERSION\_ID` e `CONVERSION\_LABEL` pelos dados da sua tag.
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
 ===
 List<Track> tracks = new List<Track>();
   // Associar sua tag do Google ads
@@ -708,7 +708,7 @@ preference.Save();
 ```
 ```curl
 ===
-Adicione o código na preferência e substitua os valores `CONVERSION\_ID` e `CONVERSION\_LABEL` pelos dados da sua tag.
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
 ===
 curl -X POST \
   'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
