@@ -10,6 +10,8 @@ Para obter maiores informações sobre as possibilidades que a Loja Integrada of
 Os passos para começar a operar com Mercado Pago são os seguintes:
 
 1. Conectar sua conta Mercado Pago à Loja Integrada.
+- Checkout Transparente.
+- Mercado Pago Redirect.
 2. Configurar boleto.
 3. Configurar cartões de crédito.
 
@@ -18,15 +20,19 @@ Os passos para começar a operar com Mercado Pago são os seguintes:
 Para vincular sua conta do Mercado Pago à Loja Integrada siga estes passos:
 
 1. Acesse as configurações de formas de pagamento no menu da Loja Integrada.
-2. Clique em "MercadoPago V1".
-3. Clique em "Instalar aplicativo do MercadoPago V1".
+2. Clique em "MercadoPago".
+3. Clique em "Instalar aplicativo do MercadoPago".
 4. Clique em "Permitir".
 
     ![Installing Mercado Pago - Loja integrada](/images/lojaintegrada-connect-1.gif)
 
 Após vincular sua conta você tem a opção de ativar dois tipos de checkout:
-- Checkout transparente: o comprador fica no ambiente da sua loja durante todo o processo.
+- Checkout Transparente: o comprador fica no ambiente da sua loja durante todo o processo.
 - Mercado Pago Redirect: o comprador é direcionado ao Mercado Pago para fazer o pagamento e concluir a compra.
+
+Informe como você quer que sua loja seja apresentada na fatura do cartão do comprador:
+- Nome na Fatura do Comprador: Nome que deve aparecer na fatura do cartão do comprador. (Máximo de 11 caracteres).
+- Valor Mínimo: O valor mínimo aceito pelo Mercado Pago, por padrão, é de R$5,00.
 
     ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada-checkout-1.gif)
 
@@ -48,11 +54,12 @@ Para operar com boleto, siga estes passos:
 Para operar com cartões de crédito siga estes passos:
 
 1. Acesse as configurações de formas de pagamento no menu da Loja Integrada.
-2. Informe no campo "Nome na Fatura do Comprador" como você quer que sua loja seja apresentada na fatura do cartão do comprador.
+
 3. Navegue até o grupo "Configuração do parcelamento".
 4. Preencha os seguintes campos:
-- Valor mínimo da parcela: Valor mínimo para compras realizadas com cartão de crédito.
+- Marcar a opção: Utilizar o serviço de parcelamento externo do MercadoPago. *(Opção para utilizar as informações de quantidade de parcelas, taxa de juros e valores mínimos, diretamente configuradas em sua conta no MercadoPago. Apenas para pagamento transparente).*
 - Máximo de parcelas: Quantidade máxima de parcelas para pagamentos no modo transparente. (Esse campo deve estar de acordo com a configuração da sua conta Mercado Pago).
+- Valor mínimo da parcela: Valor mínimo para compras realizadas com cartão de crédito.
 - Máximo de parcelas para Redirect: Quantidade máxima de parcelas para pagamentos no modo redirecionado. (Esse campo deve estar de acordo com a configuração da sua conta Mercado Pago).
 - Parcelas sem juros: Número de parcelas sem juros para pagamentos no modo transparente. (Esse campo deve estar de acordo com a configuração da sua conta Mercado Pago).
 5. Clique em "Salvar alterações".
