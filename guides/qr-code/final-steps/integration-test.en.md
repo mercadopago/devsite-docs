@@ -18,7 +18,7 @@ Test users allow you to try the integration of your system with Mercado Pago wit
 
 Test user types | Description
 ----------------- | -------------------------------------
-Seller | **Test account that you use to obtain credentials to set up in your system and interact with Mercado Pago APIs**. You can also access Mercado Pago account and check approved transactions. 
+Seller | **Test account that you use to obtain credentials to set up in your system and interact with Mercado Pago APIs**. You can also access [Mercado Pago account](https://www.mercadopago.com.ar/activities) and check approved transactions. 
 Buyer | **Test account you use to test the buying process**. You must access Mercado Pago app with this user data. In case of having money in the account or saved cards, they wil be available as payment methods.
 
 
