@@ -15,7 +15,8 @@ You can adapt the integration to your business by adding attributes in the prefe
 
 If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) that you do not want to accept.
 
-You can also measure the effectiveness of your advertisements and follow your [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio). You can also measure the effectiveness of your advertisements and follow your [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+
 
 ## Example of a complete preference
 
@@ -340,18 +341,7 @@ curl -X POST \
 ```
 ]]]
 
-----[mla, mlb]----
-
-## Payments with Two Credit Cards
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
-You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
-To activate the payment option, go to your <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">business options</a> and choose the option _Receive payments with 2 credit cards_.
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
-
-------------
+------
 
 ## Optimize Ad Conversion
 
@@ -629,6 +619,101 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 > At the moment, only one label can be configured. For more information about Google Ads conversion tracking tags, visit the [Google's official website](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
 ---
+
+## Obtén información sobre tu negocio
+
+Utiliza `headers` en tu preferencia para obtener métricas de negocio. Solo tienes que agregar los códigos de identificación para el caso que corresponda. 
+
+Header | Tipo de código | Identificadores
+------ | ---------------| ---------
+`x-integrator-id` | Integrador | Desarrolladores o agencias que realizaron la integración.
+`x-platform-id` | Plataforma | Plataforma utilizada por la cuenta vendedor. 
+`x-corporation-id` | Corporaciones | Cuentas asociadas a una cuenta vendedor o grupo económico.
+---------------
+
+> ¿Sos desarrollador o agencia y necesitas tu identificador? [Solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true). 
+
+[[[
+```php
+===
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+===
+MercadoPago\SDK::setPlatformId("PLATFORM_ID");
+MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
+MercadoPago\SDK::setCorporationId("CORPORATION_ID");
+```
+```node
+===
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+===
+mercadopago.configure({
+    platform_id: 'PLATFORM_ID',
+    integrator_id: 'INTEGRATOR_ID',
+    corporation_id: 'CORPORATION_ID'
+});
+```
+```java
+===
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+===
+MercadoPago.SDK.setPlatformId("PLATFORM_ID");
+MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
+MercadoPago.SDK.setCorporationId("CORPORATION_ID");
+```
+```ruby
+===
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+===
+$mp.set_platform_id("PLATFORM_ID")
+$mp.set_integrator_id("INTERATOR_ID")
+$mp.set_corporation_id("CORPORATION_ID")
+```
+```csharp
+===
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+===
+MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
+MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
+MercadoPago.SDK.CorporationId = "CORPORATION_ID";
+```
+```curl
+===
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+===
+curl -X POST \
+'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"
+' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'x-corporation-id: CORPORATION_ID \
+  -H 'x-integrator-id: INTEGRATOR_ID \
+  -H 'x-platform-id: PLATFORM_ID \
+  -d '{
+    "items": [
+       ...
+       
+    ],
+    ...
+}'
+```
+]]]
+
+Al configurar los códigos de identificación, vas a poder tener información más completa sobre tu integración.
+
+------------
+
+----[mla, mlb]----
+
+## Payments with Two Credit Cards
+
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
+
+You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
+To activate the payment option, go to your <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">business options</a> and choose the option _Receive payments with 2 credit cards_.
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+
+----
 
 ### Next steps
 
