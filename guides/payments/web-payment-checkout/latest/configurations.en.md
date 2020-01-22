@@ -370,7 +370,7 @@ When creating a preference, associate the corresponding identifier to your Faceb
 [[[
 ```php
 ===
-Add the code in the preference and replace the value `PIXEL_ID` with your identifier.
+Add the code in the preference and replace the value PIXEL_ID with your identifier.
 ===
 <?php
   // Create a preference object
@@ -393,7 +393,7 @@ Add the code in the preference and replace the value `PIXEL_ID` with your identi
 ```
 ```node
 ===
-Add the code in the preference and replace the value `PIXEL_ID` with your identifier.
+Add the code in the preference and replace the value PIXEL_ID with your identifier.
 ===
   // Create a preference object
 var preference = {
@@ -412,7 +412,7 @@ var preference = {
 ```
 ```java
 ===
-Add the code in the preference and replace the value `PIXEL_ID` with your identifier.
+Add the code in the preference and replace the value PIXEL_ID with your identifier.
 ===
   // Create a preference object
 Preference preference = new Preference();
@@ -432,7 +432,7 @@ preference.save();
 ```
 ```csharp
 ===
-Add the code in the preference and replace the value `PIXEL_ID` with your identifier.
+Add the code in the preference and replace the value PIXEL_ID with your identifier.
 ===
 List<Track> tracks = new List<Track>();
   // Associate your Facebook Pixel
@@ -456,7 +456,7 @@ preference.Save();
 ```
 ```curl
 ===
-Add the code in the preference and replace the value `PIXEL_ID` with your identifier.
+Add the code in the preference and replace the value PIXEL_ID with your identifier.
 ===
 
 curl -X POST \
@@ -500,7 +500,7 @@ When creating a preference, you can associate a Google Ads conversion tracking t
 [[[
 ```php
 ===
-Add the code in the preference and replace the values ​​`CONVERSION\_ID` y `CONVERSION\_LABEL` with your tag data.
+Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
 ===
 
 <?php
@@ -525,7 +525,7 @@ Add the code in the preference and replace the values ​​`CONVERSION\_ID` y `
 ```
 ```node
 ===
-Add the code in the preference and replace the values ​​`CONVERSION\_ID` y `CONVERSION\_LABEL` with your tag data.
+Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
 ===
 // Configure your preference
 var preference = {
@@ -545,7 +545,7 @@ var preference = {
 ```
 ```java
 ===
-Add the code in the preference and replace the values ​​`CONVERSION\_ID` y `CONVERSION\_LABEL` with your tag data.
+Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
 ===
   // Create a preference object
 Preference preference = new Preference();
@@ -567,7 +567,7 @@ preference.save();
 ```
 ```csharp
 ===
-Add the code in the preference and replace the values ​​`CONVERSION\_ID` y `CONVERSION\_LABEL` with your tag data.
+Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
 ===
 List<Track> tracks = new List<Track>();
   // Associate your tag
@@ -592,7 +592,7 @@ preference.Save();
 ```
 ```curl
 ===
-Add the code in the preference and replace the values ​​`CONVERSION\_ID` y `CONVERSION\_LABEL` with your tag data.
+Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
 ===
 curl -X POST \
   'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \

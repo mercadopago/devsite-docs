@@ -500,7 +500,7 @@ Al momento de crear una preferencia, asocia el identificador correspondiente a t
 [[[
 ```php
 ===
-Agrega el código en la preferencia y reemplaza el valor `PIXEL_ID` por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
 ===
 <?php
   // Crear un objeto preferencia
@@ -523,7 +523,7 @@ Agrega el código en la preferencia y reemplaza el valor `PIXEL_ID` por tu ident
 ```
 ```node
 ===
-Agrega el código en la preferencia y reemplaza el valor `PIXEL_ID` por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
 ===
 // Configura tu preferencia
 var preference = {
@@ -542,7 +542,7 @@ var preference = {
 ```
 ```java
 ===
-Agrega el código en la preferencia y reemplaza el valor `PIXEL_ID` por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
 ===
 // Crea un objeto preferencia
 Preference preference = new Preference();
@@ -562,7 +562,7 @@ preference.save();
 ```
 ```csharp
 ===
-Agrega el código en la preferencia y reemplaza el valor `PIXEL_ID` por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
 ===
 List<Track> tracks = new List<Track>();
 // Asocia tu píxel de Facebook
@@ -586,7 +586,7 @@ preference.Save();
 ```
 ```curl
 ===
-Agrega el código en la preferencia y reemplaza el valor `PIXEL_ID` por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
 ===
 
 curl -X POST \
@@ -631,7 +631,7 @@ Al crear una preferencia, puedes asociarle una etiqueta para seguimiento de conv
 [[[
 ```php
 ===
-Agrega el código en la preferencia y reemplaza los valores `CONVERSION\_ID` y `CONVERSION\_LABEL` por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
 ===
 
 <?php
@@ -656,7 +656,7 @@ Agrega el código en la preferencia y reemplaza los valores `CONVERSION\_ID` y `
 ```
 ```node
 ===
-Agrega el código en la preferencia y reemplaza los valores `CONVERSION\_ID` y `CONVERSION\_LABEL` por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
 ===
 // Configura tu preferencia
 var preference = {
@@ -676,7 +676,7 @@ var preference = {
 ```
 ```java
 ===
-Agrega el código en la preferencia y reemplaza los valores `CONVERSION\_ID` y `CONVERSION\_LABEL` por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
 ===
 // Crea un objeto preferencia
 Preference preference = new Preference();
@@ -698,7 +698,7 @@ preference.save();
 ```
 ```csharp
 ===
-Agrega el código en la preferencia y reemplaza los valores `CONVERSION\_ID` y `CONVERSION\_LABEL` por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
 ===
 List<Track> tracks = new List<Track>();
 // Asocia tu etiqueta
@@ -723,7 +723,7 @@ preference.Save();
 ```
 ```curl
 ===
-Agrega el código en la preferencia y reemplaza los valores `CONVERSION\_ID` y `CONVERSION\_LABEL` por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
 ===
 curl -X POST \
   'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \

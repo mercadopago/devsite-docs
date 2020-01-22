@@ -18,7 +18,7 @@ Os usuários de teste lhe permitem checar a integração de seu sistema com Merc
 
 Tipos de usuários | Descrição
 ----------------- | -------------------------------------
-Vendedor | É a **conta de testes que você utiliza para obter as credenciais** a ser configuradas em seu sistema para poder interagir com os APIs de Mercado Pago. Também poderá acessar a conta Mercado Pago e revisar as transações comprovadas.  
+Vendedor | É a **conta de testes que você utiliza para obter as credenciais** a ser configuradas em seu sistema para poder interagir com os APIs de Mercado Pago. Também poderá acessar a [conta Mercado Pago](https://www.mercadopago.com.br/activities) e revisar as transações comprovadas.  
 Comprador | É a **conta de testes que você utiliza para comprovar o processo de compra**.  Deve acessar o app de Mercado Pago com os dados deste usuário. Se houver dinheiro disponível na conta ou cartões guardados, estarão habilitados como meio de pagamento. 
 
 
