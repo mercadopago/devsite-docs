@@ -10,7 +10,7 @@ sites_supported:
 ---
 
 
-# ¿Qué es el código QRaaaaaaa?
+# ¿Qué es el código QRcccc?
 
 El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te permite recibir pagos de un modo simple, rápido y seguro.
 
