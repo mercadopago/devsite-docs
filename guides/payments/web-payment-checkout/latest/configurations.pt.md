@@ -813,8 +813,6 @@ curl -X POST \
 ```
 ]]]
 
-Al configurar los códigos de identificación, vas a poder tener información más completa sobre tu integración.
-
 ---
 
 ----[mla, mlb]----
