@@ -746,7 +746,6 @@ De este modo, cuando se apruebe un pago a través de tu Checkout de Mercado Pago
 >
 > Por el momento, solo se puede configurar una etiqueta. Para más información sobre las etiquetas del seguimiento de conversiones de Google Ads, visita el [sitio oficial de Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
----
 
 ## Obtén información sobre tu negocio
 
@@ -758,13 +757,12 @@ Header | Tipo de código | Identificadores
 `x-platform-id` | Plataforma | Plataforma utilizada por la cuenta vendedor. 
 `x-corporation-id` | Corporaciones | Cuentas asociadas a una cuenta vendedor o grupo económico.
 ---------------
-
 > ¿Sos desarrollador o agencia y necesitas tu identificador? [Solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true). 
 
 [[[
 ```php
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
@@ -772,7 +770,7 @@ MercadoPago\SDK::setCorporationId("CORPORATION_ID");
 ```
 ```node
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -782,7 +780,7 @@ mercadopago.configure({
 ```
 ```java
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
@@ -790,7 +788,7 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ```
 ```ruby
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 $mp.set_platform_id("PLATFORM_ID")
 $mp.set_integrator_id("INTERATOR_ID")
@@ -798,7 +796,7 @@ $mp.set_corporation_id("CORPORATION_ID")
 ```
 ```csharp
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
 MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
@@ -806,7 +804,7 @@ MercadoPago.SDK.CorporationId = "CORPORATION_ID";
 ```
 ```curl
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 curl -X POST \
 'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"
@@ -840,7 +838,7 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
 ------------
-
+---
 ### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
