@@ -20,7 +20,7 @@ Se você oferece compras de valores altos, por exemplo, você pode aceitar [paga
 Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 
-A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio). Além disso, você pode medir a eficácia das suas publicidades e acompanhá-las ao integrar um [pixel do Facebook](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) ou [associando seus anúncios do Google](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+Através da preferência, você pode [obter informações de negócio](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio). Além disso, você pode mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) ou [associando seus anúncios do Google](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
 
 ## Exemplo de uma preferência completa
 
@@ -735,23 +735,24 @@ Desta forma, quando um pagamento é aprovado por meio do seu Checkout Mercado Pa
 
 ----
 
-## Obtén información sobre tu negocio
+## Saiba mais sobre seu negócio
 
-Utiliza `headers` en tu preferencia para obtener métricas de negocio. Solo tienes que agregar los códigos de identificación para el caso que corresponda. 
+Utilize `header` em sua preferência para obter métricas de negócio. Você só deve adicionar os códigos de identificação para o caso pertinente. 
+
+Por exemplo, pode ter uma equipe de desenvolvedores, estar integrado através de uma plataforma de comércio eletrônico ou ser parte de um grupo de contas associadas a um grupo vendedor.
 
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
-`x-integrator-id` | Integrador | Desarrolladores o agencias que realizaron la integración.
-`x-platform-id` | Plataforma | Plataforma utilizada por la cuenta vendedor. 
-`x-corporation-id` | Corporaciones | Cuentas asociadas a una cuenta vendedor o grupo económico.
+`x-integrator-id` | Integrador | Desenvolvedores ou agências que realizaram a integração.
+`x-platform-id` | Plataforma | [Plataforma](https://partners.mercadopago.com/) utilizada pela conta vendedor.
+`x-corporation-id` | Corporações | Contas associadas a uma conta vendedor ou grupo econômico.
 ---------------
-
-> ¿Sos desarrollador o agencia y necesitas tu identificador? [Solicita tu código ahora](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/viewform?edit_requested=true). 
+> Você é desenvolvedor ou agência e precisa do seu identificado? [Solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
 
 [[[
 ```php
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
@@ -759,7 +760,7 @@ MercadoPago\SDK::setCorporationId("CORPORATION_ID");
 ```
 ```node
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -769,7 +770,7 @@ mercadopago.configure({
 ```
 ```java
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
@@ -777,7 +778,7 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ```
 ```ruby
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 $mp.set_platform_id("PLATFORM_ID")
 $mp.set_integrator_id("INTERATOR_ID")
@@ -785,7 +786,7 @@ $mp.set_corporation_id("CORPORATION_ID")
 ```
 ```csharp
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
 MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
@@ -793,7 +794,7 @@ MercadoPago.SDK.CorporationId = "CORPORATION_ID";
 ```
 ```curl
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
 curl -X POST \
 'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"
@@ -826,8 +827,8 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
 
+------------
 ---
-
 ### Próximos passos
 
 > LEFT_BUTTON_REQUIRED_PT

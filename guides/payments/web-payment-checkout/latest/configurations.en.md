@@ -15,7 +15,7 @@ You can adapt the integration to your business by adding attributes in the prefe
 
 If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) that you do not want to accept.
 
-A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio). You can also measure the effectiveness of your advertisements and follow your [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+You can [get business information](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio)using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
 
 
 ## Example of a complete preference
@@ -620,23 +620,22 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 
 ---
 
-## Obtén información sobre tu negocio
+## Get information about your business
 
-Utiliza `headers` en tu preferencia para obtener métricas de negocio. Solo tienes que agregar los códigos de identificación para el caso que corresponda. 
+To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable.
 
-Header | Tipo de código | Identificadores
+Header | Code Type | Identifiers
 ------ | ---------------| ---------
-`x-integrator-id` | Integrador | Desarrolladores o agencias que realizaron la integración.
-`x-platform-id` | Plataforma | Plataforma utilizada por la cuenta vendedor. 
-`x-corporation-id` | Corporaciones | Cuentas asociadas a una cuenta vendedor o grupo económico.
+`x-integrator-id` | Integrator | Developers or agencies that conducted the integration.
+`x-platform-id` | Platform | [Platform](https://partners.mercadopago.com/) used by the seller's account.
+`x-corporation-id` | Corporations | Accounts associated with an economic group or seller's account.
 ---------------
-
-> ¿Sos desarrollador o agencia y necesitas tu identificador? [Solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true). 
+> Are you a developer or agency and need your identifier? [Request your code now.](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
 ```php
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
@@ -644,7 +643,7 @@ MercadoPago\SDK::setCorporationId("CORPORATION_ID");
 ```
 ```node
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -654,7 +653,7 @@ mercadopago.configure({
 ```
 ```java
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
@@ -662,7 +661,7 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ```
 ```ruby
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
 ===
 $mp.set_platform_id("PLATFORM_ID")
 $mp.set_integrator_id("INTERATOR_ID")
@@ -670,7 +669,7 @@ $mp.set_corporation_id("CORPORATION_ID")
 ```
 ```csharp
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
 ===
 MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
 MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
@@ -678,7 +677,7 @@ MercadoPago.SDK.CorporationId = "CORPORATION_ID";
 ```
 ```curl
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
 ===
 curl -X POST \
 'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"
@@ -711,8 +710,8 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
+------------
 ----
-
 ### Next steps
 
 > LEFT_BUTTON_REQUIRED_EN

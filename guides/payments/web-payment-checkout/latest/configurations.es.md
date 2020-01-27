@@ -751,13 +751,15 @@ De este modo, cuando se apruebe un pago a través de tu Checkout de Mercado Pago
 
 Utiliza `headers` en tu preferencia para obtener métricas de negocio. Solo tienes que agregar los códigos de identificación para el caso que corresponda. 
 
+Por ejemplo, puedes tener un equipo de desarrolladores, estar integrado a través de una plataforma de comercio eléctronico o ser parte de un grupo de cuentas asociadas a un grupo vendedor.
+
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
 `x-integrator-id` | Integrador | Desarrolladores o agencias que realizaron la integración.
-`x-platform-id` | Plataforma | Plataforma utilizada por la cuenta vendedor. 
+`x-platform-id` | Plataforma | [Plataforma](https://partners.mercadopago.com/) utilizada por la cuenta vendedor. 
 `x-corporation-id` | Corporaciones | Cuentas asociadas a una cuenta vendedor o grupo económico.
 ---------------
-> ¿Sos desarrollador o agencia y necesitas tu identificador? [Solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true). 
+> ¿Sos desarrollador o agencia y necesitas tu identificador? [Solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
 ```php
