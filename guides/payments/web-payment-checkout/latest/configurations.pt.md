@@ -456,7 +456,6 @@ curl -X POST \
 ```
 ]]]
 
-------------
 
 ## Otimize a conversão dos seus anúncios
 
