@@ -630,7 +630,6 @@ Header | Code Type | Identifiers
 `x-integrator-id` | Integrator | Developers or agencies that conducted the integration.
 `x-platform-id` | Platform | [Platform](https://partners.mercadopago.com/) used by the seller's account.
 `x-corporation-id` | Corporations | Accounts associated with an economic group or seller's account.
----------------
 > Are you a developer or agency and need your identifier? [Request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
