@@ -15,7 +15,7 @@ You can adapt the integration to your business by adding attributes in the prefe
 
 If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) that you do not want to accept.
 
-You can [get business information](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio)using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+You can [get business information](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
 
 
 ## Example of a complete preference
