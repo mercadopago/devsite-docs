@@ -624,13 +624,15 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 
 To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable.
 
+For example, you can have a developers team, be integrated through an e-commerce platform or be part of a group of accounts associated with a seller group.
+
 Header | Code Type | Identifiers
 ------ | ---------------| ---------
 `x-integrator-id` | Integrator | Developers or agencies that conducted the integration.
 `x-platform-id` | Platform | [Platform](https://partners.mercadopago.com/) used by the seller's account.
 `x-corporation-id` | Corporations | Accounts associated with an economic group or seller's account.
 ---------------
-> Are you a developer or agency and need your identifier? [Request your code now.](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
+> Are you a developer or agency and need your identifier? [Request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
 ```php
