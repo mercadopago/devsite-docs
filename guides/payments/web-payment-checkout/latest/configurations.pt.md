@@ -732,7 +732,6 @@ Desta forma, quando um pagamento é aprovado por meio do seu Checkout Mercado Pa
 >
 > Por enquanto, só é possível configurar uma tag. Para mais informação sobre as tags de acompanhamento das conversões do Google Ads, visite o [site oficial do Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
-----
 
 ## Saiba mais sobre seu negócio
 
