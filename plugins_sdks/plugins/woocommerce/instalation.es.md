@@ -98,4 +98,4 @@ Luego ejecuta los pasos de una **nueva instalación** para actualizar tu tienda 
 >
 > Configura tus preferencias de pago y haz ajustes según la experiencia que quieras ofrecer a tus clientes.
 >
-> [Preferencias](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Preferencias](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/preferences/)

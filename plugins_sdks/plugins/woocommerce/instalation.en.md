@@ -98,4 +98,4 @@ Then execute the steps of a **new installation** to update your page with the la
 >
 > Set your payment preferences and make adjustments according to the experience you want to offer your customers.
 >
-> [Preferences](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Preferences](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/preferences/)
