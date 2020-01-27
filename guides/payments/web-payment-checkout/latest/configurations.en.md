@@ -618,7 +618,6 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 >
 > At the moment, only one label can be configured. For more information about Google Ads conversion tracking tags, visit the [Google's official website](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
----
 
 ## Get information about your business
 
