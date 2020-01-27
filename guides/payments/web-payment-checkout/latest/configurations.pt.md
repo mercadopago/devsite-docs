@@ -745,7 +745,6 @@ Header | Tipo de código | Identificadores
 `x-integrator-id` | Integrador | Desenvolvedores ou agências que realizaram a integração.
 `x-platform-id` | Plataforma | [Plataforma](https://partners.mercadopago.com/) utilizada pela conta vendedor.
 `x-corporation-id` | Corporações | Contas associadas a uma conta vendedor ou grupo econômico.
----------------
 > Você é desenvolvedor ou agência e precisa do seu identificado? [Solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
 
 [[[
