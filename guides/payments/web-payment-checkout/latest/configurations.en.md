@@ -341,7 +341,6 @@ curl -X POST \
 ```
 ]]]
 
-------
 
 ## Optimize Ad Conversion
 
