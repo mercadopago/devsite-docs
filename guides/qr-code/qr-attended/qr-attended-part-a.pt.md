@@ -51,7 +51,7 @@ Explicamos a você o funcionamento do modelo atendido:
 (C) E confirma seu recebimento. 
 7. (A) O server do vendedor consulta o estado do pedido com o ID recebido na última notificação para saber se está fechado ou se continua aberto, pendente de pagamento. 
 (B) Mercado Pago restitui os dados correspondentes, como seu estado, informação  de pagamentos, entre outros. 
-8. Se o pedido estiver encerrado (**closed**), o comprovante pode ser impresso para finalizar a operação. 
+8. Se o pedido estiver encerrado (_closed_), o comprovante pode ser impresso para finalizar a operação. 
 
 > NOTE
 > 
