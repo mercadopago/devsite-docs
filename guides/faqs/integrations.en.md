@@ -34,7 +34,7 @@ This option allows you to collect through our web form within the safe environme
 
 Unlike Checkout Mercado Pago, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
 
-[Integrar Mobile Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)
+[Integrate Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
@@ -47,7 +47,7 @@ It's the simplified version of the Checkout Mercado Pago with a renewed user exp
 
 - **You will always be up to date.** You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/introduction)
+[Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/introduction)
 
 ### API
 
@@ -57,13 +57,7 @@ This way of integrating allows you to connect directly with our APIs.
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
-[Integrar por API](guides/payments/api/introduction)
-
-## How to offer discounts
-
-It's very simple, choose how much money you want to invest and when, and that's it. No extra costs!
-
-You can [offer discounts and generate coupons](https://www.mercadopago.com.ar/settings/my-business) with discounts of fixed or percentage values, according to what you need, from your buttons or payment links. And enable it for all your buyers or for only some of them.
+[Integrate by API](guides/payments/api/introduction)
 
 ## How to offer subscriptions
 

@@ -2,7 +2,6 @@
 
 Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura, manteniendo el control de la experiencia de compra que le brindas a tus usuarios.
 
-
 ## Captura los datos de tarjeta
 
 La captura de datos de tarjeta es realizada desde el navegador de tu comprador. Es **muy importante que los datos nunca lleguen a tus servidores por cuestiones de seguridad**.
@@ -334,11 +333,11 @@ var payment_data = {
 };
 // Save and posting the payment
 mercadopago.payment.save(payment_data).then(function (data) {
-      console.log(data);
-      res.send(data);
-    }).catch(function (error) {
-      console.log(error);
-    });
+console.log(data);
+  res.send(data);
+}).catch(function (error) {
+  console.log(error);
+});
 
 ```
 ```ruby
@@ -661,6 +660,12 @@ payment.Save();
 Es **muy importante** comunicar correctamente los resultados recibidos al crear un pago. Esto ayudará a mejorar la conversión en los casos de rechazos, y evitar contracargos en los casos de transacciones aprobadas.
 
 Te recomendamos leer el artículo sobre el [manejo de respuestas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses) y utilizar la comunicación sugerida en cada uno de los casos.
+
+> NOTE
+>
+> Nota
+>
+> Evita pagos rechazados con nuestras recomendaciones para [mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
 
 ## Recibir una notificación del pago
 

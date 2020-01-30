@@ -29,9 +29,9 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 
 Para continuar, é necessário realizar o passo a seguir: 
 
-**1. Acesso à conta de Mercado Pago ou Mercado Libre**
+**1. Acesso à conta de Mercado Pago ou Mercado Livre**
 
-Para poder começar a integração, é necessário **contar com uma conta de Mercado Pago ou Mercado Libre**. Se ainda não tiver uma, poderá [criar uma conta de Mercado Pago](https://www.mercadopago.com.br) quando quiser.
+Para poder começar a integração, é necessário **contar com uma conta de Mercado Pago ou Mercado Livre**. Se ainda não tiver uma, poderá [criar uma conta de Mercado Pago](https://www.mercadopago.com.br) quando quiser.
 
 
 > NOTE

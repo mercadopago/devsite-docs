@@ -1,5 +1,11 @@
 # Web Tokenize Checkout - Recuperações
 
+> NOTE
+>
+> Nota
+>
+> Evite pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
+
 No caso de um pagamento ser rejeitado, você pode oferecer ao comprador a opção de tentar novamente e recuperar a venda.
 
 Neste momento receberá como resposta o estado do pagamento *rejeitado* (`rejected`) e é recomendado informar ao usuário tal estado.

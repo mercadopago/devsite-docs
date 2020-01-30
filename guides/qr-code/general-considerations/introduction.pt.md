@@ -33,7 +33,7 @@ O QR é um **código único vinculado à sua conta de Mercado Pago**, que lhe pe
 * **Pagamentos imediatos**. Mercado Pago lembra os dados e cartões dos compradores, processando os pagamentos na hora. 
 * Permite receber com os principais [meios de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_264) de seu país.
 * Cobranças com **o custo mais baixo do mercado**.
-* Oferecer uma **experiência de compra segura desde qualquer dispositivo móvel** com o app de Mercado Pago ou Mercado Libre.
+* Oferecer uma **experiência de compra segura desde qualquer dispositivo móvel** com o app de Mercado Pago ou Mercado Livre.
 
 ## Como funciona?
 

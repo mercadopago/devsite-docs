@@ -11,7 +11,6 @@ El módulo de Mercado Pago para Magento ofrece las siguientes funcionalidades:
 | Pagos con dos tarjetas         	| ✔               	| ✔                      	|
 | Tarjetas guardadas             	|                 	| ✔                      	|
 | Suscripciones                  	| ✔               	|                        	|
-| Mercado Envíos                  	| ✔               	|                        	|
 | Devolución de Pagos            	| ✔               	| ✔                      	|
 | CRON (Actualización de Pedido) 	|                 	| ✔                      	|
 | Pagina de éxito personalizable 	|                 	| ✔                      	|
@@ -149,32 +148,6 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 4) ¡Listo! El Checkout Básico ha sido configurado y habilitado con éxito!
 
 ![Checkout redirect configurado existosamente Mercado Pago Magento](/images/magento/magento-save.png)
-
-
-## Configurar Mercado Envíos
-
-Este proceso explicará cómo configurar el módulo para aceptar Mercado Envíos:
-
-1) Es necesario [habilitar Mercado Envíos](http://shipping.mercadopago.com.ar/optin/doOptin) en su cuenta Mercado Pago.
-
-> 	IMPORTANTE: Su cuenta de Mercado Pago tiene que ser del tipo **Vendedor**.
-
-2) Vaya al menú **Systems > Configuration**, en la página de configuración vaya a la opción **Shipping Methods**:
-
-![Configurando Mercado Envíos en Mercado Pago Magento](/images/magento/magento-config-me-01.gif)
-
-3) Para habilitar Mercado Envíos **MercadoEnvios**, haga un clic en el botón  **Configure**. Vaya a la opción **Enable** y marque como **Yes**.
-
-![Habilitando Mercado envíos en Mercado Pago Magento](/images/magento/magento-config-me-02.gif)
-
-4) Vaya a la opción **Product attributes mapping** y seleccione de acuerdo con los atributos que tiene configurado en su tienda. Aproveche y configure los métodos de envío disponibles, en la opción **Available shipping methods**. Haga un click en **Save Config** para guardar las configuraciones realizadas:
-
-![Configurando productos en marketplace Mercado Pago Magento](/images/magento/magento-config-me-03.gif)
-
-5) ¡Listo! Mercado Envíos ha sido configurado y habilitado con éxito!
-
-![Mercado Envíos configurado exitosamente Mercado Pago Magento](/images/magento/magento-me_save.png)
-
 
 ## Configurar Suscripciones
 

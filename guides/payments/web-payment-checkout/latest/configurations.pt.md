@@ -20,6 +20,8 @@ Se você oferece compras de valores altos, por exemplo, você pode aceitar [paga
 Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 
+Através da preferência, você pode [obter informações de negócio](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio). Além disso, você pode mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) ou [associando seus anúncios do Google](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+
 ## Exemplo de uma preferência completa
 
 ----[mlm, mla, mlb, mlc, mlu]----
@@ -390,7 +392,7 @@ preference.appendItem(item1, item2);
 preference.save();
 ```
 ```ruby
-// Cria itens na preferência
+# Cria itens na preferência
 item = MercadoPago::Item.new({
   title:        "Meu produto",
   quantity:     1,
@@ -401,7 +403,7 @@ item2 = MercadoPago::Item.new({
   quantity:     2,
   unit_price:   96.56
 })
-// Cria um objeto preferência
+# Cria um objeto preferência
 preference = MercadoPago::Preference.new({
   items: [item, item2]
 })
@@ -454,9 +456,365 @@ curl -X POST \
 ```
 ]]]
 
+
+## Otimize a conversão dos seus anúncios
+
+Sabemos que é importante maximizar a eficácia dos seus anúncios. Por isto, oferecemos a possibilidade de integrar o Checkout Mercado Pago com as plataformas do Facebook Ads e Google Ads para associar pagamentos às suas campanhas.
+
+> NOTE
+>
+> Nota
+>
+> Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito ou débito, dinheiro no Mercado Pago ou com Mercado Créditos.
+
+### Associar um pixel do Facebook
+
+Ao criar uma preferência, associe o identificador correspondente a seu pixel do Facebook da seguinte maneira:
+
+[[[
+```php
+===
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
+===
+<?php
+  // Criar um objeto preferencia
+  $preference = new MercadoPago\Preference();
+
+  // Associar seu pixel do Facebook
+  $preference->tracks = array(
+    array(
+      'type' => 'facebook_ad',
+      'values'=> array(
+        'pixel_id' => 'PIXEL_ID'
+      )
+    )
+  );
+
+  // ...
+  // Salvar e postar a preferencia
+  $preference->save();
+?>
+```
+```node
+===
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
+===
+  // Criar um objeto preferencia
+var preference = {
+
+  // Asocia tu píxel de Facebook
+  tracks: [
+        {
+          type: "facebook_ad",
+          values: {
+            "pixel_id": 'PIXEL_ID'
+          }
+        }
+      ]
+  //...
+};
+```
+```java
+===
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
+===
+  // Criar um objeto preferencia
+Preference preference = new Preference();
+
+  // Associar seu pixel do Facebook
+Track trackFacebook = new Track()
+                .setType("facebook_ad")
+                .setValues(new TrackValues()
+                        .setPixelId("PIXEL_ID")
+                );
+
+Preference preference = new Preference()
+        .appendTrack(trackFacebook);
+
+  // Salvar e postar a preferencia
+preference.save();
+```
+```csharp
+===
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
+===
+List<Track> tracks = new List<Track>();
+  // Associar seu pixel do Facebook
+tracks.Add(
+    new Track
+    {
+        Type = "facebook_ad",
+        Values = new JObject
+        {
+            { "pixel_id", "PIXEL_ID" }
+        }
+    });
+
+MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+{
+    // ...
+    Tracks = tracks
+};
+
+preference.Save();
+```
+```curl
+===
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
+===
+
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"items": [
+        {
+            "id_product":1,
+            "quantity":1,
+            "unit_price": 234.33,
+            "titulo":"Mi producto"
+        }
+    ],
+    "tracks": [
+        {
+            "type": "facebook_ad",
+            "values": {
+                "pixel_id": "PIXEL_ID"
+            }
+        }
+    ]
+}'
+```
+]]]
+
+Ao configurar, quando um pagamento é aprovado por meio do seu Checkout Mercado Pago, você verá um evento `Purchase`associado ao pixel especificado.
+
+> NOTE
+>
+> Nota
+>
+> Por enquanto, só é possível configurar um pixel. Teste o funcionamento da sua integração utilizando a extensão do Chrome Facebook Pixel Helper. Para mais informação, visite o [site oficial do Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
+
+
+### Associar uma tag do Google Ads
+
+Ao criar uma preferência, você pode associar uma tag para acompanhamento das conversões do Google Ads da seguinte maneira:
+
+[[[
+```php
+===
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
+===
+
+<?php
+  // Criar um objeto preferencia
+  $preference = new MercadoPago\Preference();
+ 
+  // Associar sua tag do Google ads
+  $preference->tracks = array(
+    array(
+        'type' => 'google_ad',
+        'values' => array(
+          'conversion_id' => 'CONVERSION_ID',
+          'conversion_label' => 'CONVERSION_LABEL'
+        )
+    )
+  );
+
+  ...
+  // Salvar e postar a preferencia
+  $preference->save();
+?>
+```
+```node
+===
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
+===
+  // Criar um objeto preferencia
+var preference = {
+ 
+  // Associar sua tag do Google ads
+  tracks: [
+        {
+            type: "google_ad",
+            values: {
+              conversion_id: "CONVERSION_ID",
+              conversion_label: "CONVERSION_LABEL"
+            } 
+        }
+      ]
+  ...
+};
+```
+```java
+===
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
+===
+  // Criar um objeto preferencia
+Preference preference = new Preference();
+
+  // Associar sua tag do Google ads
+Track trackGoogle = new Track()
+                .setType("google_ad")
+                .setValues(new TrackValues()
+                        .setConversionId("CONVERSION_ID")
+                        .setConversionLabel("CONVERSION_LABEL")
+                );
+
+
+Preference preference = new Preference()
+        .appendTrack(Google);
+
+  // Salvar e postar a preferencia
+preference.save();
+```
+```csharp
+===
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
+===
+List<Track> tracks = new List<Track>();
+  // Associar sua tag do Google ads
+tracks.Add(
+    new Track
+    {
+        Type = "google_ad",
+        Values = new JObject
+        {
+            { "conversion_id", "CONVERSION_ID" },
+            { "conversion_label", "CONVERSION_LABEL" }
+        }
+    });
+
+MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+{
+    ...
+    Tracks = tracks
+};
+
+preference.Save();
+```
+```curl
+===
+Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
+===
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"items": [
+        {
+            "id_product":1,
+            "quantity":1,
+            "unit_price": 234.33,
+            "titulo":"Mi producto"
+        }
+    ],
+    "tracks": [
+        {
+            "type": "google_ad",
+            "values": {
+                "conversion_id", "CONVERSION_ID",
+                "conversion_label", "CONVERSION_LABEL"
+            }
+        }
+    ]
+}'
+```
+]]]
+
+Desta forma, quando um pagamento é aprovado por meio do seu Checkout Mercado Pago, será associada uma conversão à tag configurada.
+
+> NOTE
+>
+> Nota
+>
+> Por enquanto, só é possível configurar uma tag. Para mais informação sobre as tags de acompanhamento das conversões do Google Ads, visite o [site oficial do Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
+
+
+## Saiba mais sobre seu negócio
+
+Utilize `header` em sua preferência para obter métricas de negócio. Você só deve adicionar os códigos de identificação para o caso pertinente. 
+
+Por exemplo, pode ter uma equipe de desenvolvedores, estar integrado através de uma plataforma de comércio eletrônico ou ser parte de um grupo de contas associadas a um grupo vendedor.
+
+Header | Tipo de código | Identificadores
+------ | ---------------| ---------
+`x-integrator-id` | Integrador | Desenvolvedores ou agências que realizaram a integração.
+`x-platform-id` | Plataforma | [Plataforma](https://partners.mercadopago.com/) utilizada pela conta vendedor.
+`x-corporation-id` | Corporações | Contas associadas a uma conta vendedor ou grupo econômico.
+> Você é desenvolvedor ou agência e precisa do seu identificado? [Solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
+
+[[[
+```php
+===
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+===
+MercadoPago\SDK::setPlatformId("PLATFORM_ID");
+MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
+MercadoPago\SDK::setCorporationId("CORPORATION_ID");
+```
+```node
+===
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+===
+mercadopago.configure({
+    platform_id: 'PLATFORM_ID',
+    integrator_id: 'INTEGRATOR_ID',
+    corporation_id: 'CORPORATION_ID'
+});
+```
+```java
+===
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+===
+MercadoPago.SDK.setPlatformId("PLATFORM_ID");
+MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
+MercadoPago.SDK.setCorporationId("CORPORATION_ID");
+```
+```ruby
+===
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+===
+$mp.set_platform_id("PLATFORM_ID")
+$mp.set_integrator_id("INTERATOR_ID")
+$mp.set_corporation_id("CORPORATION_ID")
+```
+```csharp
+===
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+===
+MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
+MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
+MercadoPago.SDK.CorporationId = "CORPORATION_ID";
+```
+```curl
+===
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+===
+curl -X POST \
+'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"
+' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'x-corporation-id: CORPORATION_ID \
+  -H 'x-integrator-id: INTEGRATOR_ID \
+  -H 'x-platform-id: PLATFORM_ID \
+  -d '{
+    "items": [
+       ...
+       
+    ],
+    ...
+}'
+```
+]]]
+
+
 ----[mla, mlb]----
 
-## Pagamentos com 2 cartão de crédito
+## Pagamentos com 2 cartões de crédito
 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas_br.png)
 
@@ -466,9 +824,7 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)
 
 ------------
-
 ---
-
 ### Próximos passos
 
 > LEFT_BUTTON_REQUIRED_PT

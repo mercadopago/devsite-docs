@@ -9,9 +9,8 @@ sites_supported:
 ---
 
 # O que é o Checkout Mercado Pago?
-<br/>
 
-O Checkout Mercado Pago do Mercado Pago é a integração que **te permite cobrar através do nosso formulário web de qualquer dispositivo** de forma simples, rápida e segura.
+O Checkout Mercado Pago é a integração que **te permite cobrar através do nosso formulário web de qualquer dispositivo** de forma simples, rápida e segura.
 
 ![Basic-Checkout](/images/web-payment-checkout/cho-introduction-br.png)
 

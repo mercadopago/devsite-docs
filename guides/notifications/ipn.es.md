@@ -159,5 +159,5 @@ En caso contrario, la respuesta que se recibe si todavía **no se escaneó el QR
 >
 > ATENCIÓN
 >
-> Desde Mercado Pago requerimos para homologar la integración de pagos presenciales que tengan implementada la notificación (IPN) como método principal. La búsqueda de orden por external_reference deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
+> Desde Mercado Pago requerimos para homologar la integración de pagos presenciales que tengan implementada la notificación (IPN) como método principal. La búsqueda de orden por `external_reference` deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
 

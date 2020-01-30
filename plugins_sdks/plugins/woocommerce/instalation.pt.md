@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Instale o Mercado Pago no WooCommerce
 <br/>
 
@@ -108,4 +98,4 @@ A seguir, execute as etapas de uma **nova instalação** para atualizar sua loja
 >
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você queira oferecer aos seus clientes.
 >
-> [Preferencias](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Preferencias](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/preferences/)

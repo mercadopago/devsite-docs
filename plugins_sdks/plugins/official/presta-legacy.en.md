@@ -22,12 +22,10 @@ The module of Mercado Pago to Prestahop is integrated with the features and paym
 | Split payments (Two cards)          	| ✔              	| ✔               	|
 | One Click Pay (Customers and Cards) 	|                	| ✔               	|
 | Subscriptions                       	| ✔              	|                 	|
-| MercadoEnvios                       	| ✔              	|                 	|
 | Refunds of Payments                 	| ✔              	| ✔               	|
 | Order update via Cron               	|                	| ✔               	|
 | Customizable success page           	|                	| ✔               	|
 | Installments calculator             	| ✔              	| ✔               	|
-| Installments shipment calculator    	| ✔              	| ✔               	|
 
 
 ## Requirements
@@ -93,28 +91,6 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 ![Payment Method](/images/prestashop/prestashop_payment_method.png)
 
 5) Well done! You have enabled payments via Checkout Standard (redirected)!
-
-### Mercado Envíos Configuration
-
-> IMPORTANT: Mercado Envíos works with the Standard Checkout (redirected). When using it the other means of payment will be disabled.
-
-1) First, you need [enable Mercado Envíos in your account](http://shipping.mercadopago.com.ar/optin/doOptin).
-
-> NOTE
->
-> IMPORTANT
->
-> Your Mercado Pago account needs to be of the **Seller** type.
-> The submitted product must have its dimensions (width, height, length and weight) properly configured and within the rules and limits supported by the specified country.
-
-2) To enable the module, simply activate it by accessing the Prestashopp administrative panel in **IMPROVEMENTS -> Modules -> Modules and Services** and clicking **Configure** in the Mercado Pago module:
-
-3) In **Mercado Envíos** it is possible to configure a text to be displayed in the delivery through the field **Custom text to use with delivery**. To activate, mark the field **Enable Mercado Envíos** as **YES**.
-
-![Enable Mercado Envíos](/images/prestashop/prestashop_mercado_envios.png)
-
-4) Very good! Now you can offer Mercado Envíos as a means of transportation for your customers!
-
 
 ## Notifications
 

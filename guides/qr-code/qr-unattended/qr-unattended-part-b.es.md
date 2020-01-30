@@ -14,8 +14,8 @@ sites_supported:
 Para integrar el modelo desatendido es necesario:
 
   1. Crear el servicio que será invocado al recibir una intención de pago y su lógica asociada cuando:
-    A. La información de la orden **aún no está disponible**.
-    B. La información de la orden **está disponible**.
+    * A. La información de la orden **aún no está disponible**.
+    * B. La información de la orden **está disponible**.
 
   2. Declarar la URL de tu dominio a Mercado Pago.
 
