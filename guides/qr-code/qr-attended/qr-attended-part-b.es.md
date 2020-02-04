@@ -22,7 +22,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_tok
     "external_reference": "Factura-0001",
     "notification_url": "www.yourserver.com",
     "items" :[{
-    		   "title" : [FAKER][COMMERCE][PRODUCT_NAME],
+    		   "title" : "Producto 1",
     		   "currency_id" : [FAKER][CURRENCY][ACRONYM],
     		   "unit_price" : 120.00,
     	     "quantity" : 1,
@@ -30,7 +30,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_tok
            "picture_url": "https://bit.ly/2lCRcEN"
     		    },
             {
-    		   "title" : [FAKER][COMMERCE][PRODUCT_NAME],
+    		   "title" : "Producto 2",
     		   "currency_id" : [FAKER][CURRENCY][ACRONYM],
     		   "unit_price" : 100.00,
     		   "quantity" : 2
@@ -50,8 +50,8 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 
 Por defecto, la orden del QR expira a los 10 minutos de ser creada o automáticamente al ser cerrada. 
 
-Si se requiere un tiempo de expiración diferente, se puede enviar el header `X-Ttl-Store-Preference` con el tiempo deseado en segundos.
-Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el header `X-Ttl-Store-Preference`: 300.
+Si se requiere un tiempo de expiración diferente, se puede enviar el _header_ `X-Ttl-Store-Preference` con el tiempo deseado en segundos.
+Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el _header_ `X-Ttl-Store-Preference`: 300.
 
 ## Eliminar una orden
 
@@ -69,7 +69,7 @@ La respuesta será un `HTTP 204 No Content`.
 >
 > Integración avanzada
 >
-> Conoce las opciones que dispones para llegar la integración al siguiente nivel.
+> Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
 > [Integrar o modelo QR atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/)
 
