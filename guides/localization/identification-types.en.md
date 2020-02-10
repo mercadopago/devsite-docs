@@ -1,3 +1,13 @@
+---
+  sites_supported:
+      - mla
+	  - mlc
+	  - mlb
+	  - mco
+	  - mpe
+	  - mlu
+---
+
 # Identification types
 
 The types of documents accepted when making a payment through Mercado Pago vary by country.

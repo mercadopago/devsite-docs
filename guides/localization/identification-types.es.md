@@ -1,3 +1,13 @@
+---
+  sites_supported:
+      - mla
+	  - mlc
+	  - mlb
+	  - mco
+	  - mpe
+	  - mlu
+---
+
 # Tipos de documento
 
 Los tipos de documento aceptados a la hora de hacer un cobro a través de Mercado Pago varían según cada país.
