@@ -51,7 +51,7 @@ Te explicamos cómo funciona el modelo atendido:
    (C) Y confirma su recepción.
 7. (A) El servidor del vendedor consulta el estado de la orden con el ID recibido en la última notificación para saber si está cerrada o si sigue abierta, pendiente de pago.<br/>
    (B) Mercado Pago devuelve los datos correspondientes como su estado, información de pagos, entre otros.
-8. Si la orden se encuentra cerrada (**closed**), se puede imprimir el comprobante para finalizar la transacción.
+8. Si la orden se encuentra cerrada (_closed_), se puede imprimir el comprobante para finalizar la transacción.
 
 > NOTE
 > 

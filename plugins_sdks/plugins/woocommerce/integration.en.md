@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Integrate Mercado Pago
 <br/>
 

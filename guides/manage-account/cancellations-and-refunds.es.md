@@ -199,7 +199,7 @@ payment = MercadoPago::Payment.find_by_id(payment_id)
 refunds = payment.refund()
 ```
 ```curl
-curl -X POST \
+curl -X GET \
 -H "Content-Type: application/json" \
 'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
 ```

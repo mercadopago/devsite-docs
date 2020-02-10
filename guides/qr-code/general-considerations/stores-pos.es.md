@@ -28,7 +28,7 @@ Las **sucursales** y **cajas** son importantes para recibir pagos presenciales c
 
 ### ¿Cuáles son los beneficios de crear sucursales?
 
-Los beneficios de crear Sucursales son:
+Los beneficios de crear sucursales son:
 
 - **Lograr trazabilidad**. Cada pago quedará asociado a una sucursal y al momento de obtener tus reportes de conciliación será valioso para identificar transacciones por sucursal.
 - **Visibilidad en mapas de sucursales**. Las sucursales creadas aparecen en el mapa de las app de Mercado Pago o Mercado Libre a medida que vayan teniendo pagos. De esta manera, dan visibilidad a todos los clientes sobre la existencia de la tienda. 
@@ -86,7 +86,7 @@ Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguie
 
 | Término       |  Descripción                                                 |
 | ------------- | ------------------------------------------------------------ |
-| `EXTERNAL_STORE_ID`     | Vincula la Caja con la Sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
+| `EXTERNAL_STORE_ID`     | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
 | `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. |
 | `URL`           | Sólamente es utilizado en el modelo desatendido. En este campo se declara la URL de un servicio de tu dominio al cual Mercado Pago consultará si hay una orden disponible. |
 
@@ -106,7 +106,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
 
 Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/pos/_pos/post/).
 
-Una vez creada la caja, podremos ver en el “Response” los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
+Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 
 
 
