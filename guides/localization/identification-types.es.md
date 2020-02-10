@@ -1,13 +1,11 @@
 ---
-  sites_supported:
-	  - mla
-	  - mlm
-	  - mlc 
-	  - mlb
-	  - mlu
-	  - mco
-	  - mpe
-      - global
+sites_supported:
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlc
+  - mlb
 ---
 
 # Tipos de documento
