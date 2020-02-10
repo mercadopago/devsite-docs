@@ -1,11 +1,13 @@
 ---
   sites_supported:
-  	- mla
-	- mlc
-	- mlb
-	- mco
-	- mpe
-	- mlu
+	  - mla
+	  - mlm
+	  - mlc 
+	  - mlb
+	  - mlu
+	  - mco
+	  - mpe
+      - global
 ---
 
 # Identification types
