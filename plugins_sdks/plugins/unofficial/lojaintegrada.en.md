@@ -1,60 +1,117 @@
+---
+ sites_supported:
+  - mlb
+---
+
 # Loja Integrada
 
-## O que é Loja Integrada?
+## What is Loja Integrada?
 
-[Loja integrada](https://www.lojaintegrada.com.br/) é uma plataforma para sua loja virtual que permite processar pagamentos através do Mercado Pago.
-Para obter maiores informações sobre as possibilidades que a Loja Integrada oferece acesse [sua página de recursos](https://lojaintegrada.com.br/recursos/).
+[Loja integrada](https://www.lojaintegrada.com.br/) is a virtual platform that allows you to receive payments with Mercado Pago. 
+It is the only payment method available for free accounts. 
 
-## Configurar Loja Integrada para operar com Mercado Pago
+You can activate the option ++[sell directly on your site](#Set-payment-methods)++, ++[receive payments with Boleto Bancário](#Boleto-Bancário-setting)++ and ++[offer interest-free monthly installments](#Installments-settings)++.
 
-Os passos para começar a operar com Mercado Pago são os seguintes:
+## Setting steps
 
-1. Conectar sua conta Mercado Pago à Loja Integrada.
-2. Configurar boleto.
-3. Configurar cartões de crédito.
+The steps to **start charging with Mercado Pago** are the following: 
 
-### Conectar conta Mercado Pago
+1. Create a ++[seller account](https://www.mercadopago.com.br/activities)++ in Mercado Pago if you do not yet have one.
+2. Install the app on your site. 
+3. Set the payment methods with Mercado Pago.
 
-Para vincular sua conta do Mercado Pago à Loja Integrada siga estes passos:
+## Install Mercado Pago on your site
 
-1. Acesse as configurações de formas de pagamento no menu da Loja Integrada.
-2. Clique em "MercadoPago V1".
-3. Clique em "Instalar aplicativo do MercadoPago V1".
-4. Clique em "Permitir".
+To **associate your Mercado Pago account to Loja Integrada**, follow these steps: 
 
-    ![Installing Mercado Pago - Loja integrada](/images/lojaintegrada-connect-1.gif)
+1. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu.
+2. Click on “Mercado Pago” and then on **“Install Mercado Pago App”**.
+3. You are going to be redirected to Mercado Pago so that you can enter your account with your account information. To authorize the connection, click on **“Allow”**.
 
-Após vincular sua conta você tem a opção de ativar dois tipos de checkout:
-- Checkout transparente: o comprador fica no ambiente da sua loja durante todo o processo.
-- Mercado Pago Redirect: o comprador é direcionado ao Mercado Pago para fazer o pagamento e concluir a compra.
+    ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
-    ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada-checkout-1.gif)
+And that’s it! Mercado Pago is installed on your site and you can start charging.
 
-### Configurar boleto
+> NOTE
+>
+> Change the Mercado Pago account
+>
+> If you wish to change the Mercado Pago account associated to your site, it is necessary to close and reinstall the app.
+> 1. Close your Mercado Pago account if you have it open in your browser.
+> 2. Click “Options Menu” and then **“Exit”**.
+> 3. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu, click on “Mercado Pago” and finally, on **“Uninstall app”**.
+> 4. Finally, install ++[Mercado Pago on your site](#Install-Mercado-Pago-on-your-site)++ with your new account.
 
-Para operar com boleto, siga estes passos:
+   <!-- ![Uninstalling Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-disconnect-1.gif) -->
 
-1. Acesse as configurações de formas de pagamento no menu da Loja Integrada.
-2. Navegue até o grupo "Configuração de boleto".
-3. Ative o campo "Boleto bancário".
-4. Informe um valor mínimo para que a plataforma apresente a opção de boleto ao comprador. Caso todos os pedidos possam ser pagos com boleto deixe o campo zerado.
-5. Caso deseje que o pagamento com boleto tenha desconto marque a opção "Usar desconto no boleto?" e informe a porcentagem de desconto no campo "Desconto aplicado".
-6. Clique em "salvar alterações".
+## Set payment methods
 
-    ![Setting ticket - Loja Integrada](/images/lojaintegrada-ticket-1.gif)
+After associating your account, you have the option to activate two types of checkout: Transparent Checkout and Checkout Redirect. You will always have to activate one or the other. You can also ++[set payments with Boleto Bancário](#Boleto-Bancário-setting)++ and ++[interest-free monthly installments](#Installments-settings)++.
 
-### Configurar Cartões de Crédito
+You can check and configure the ++[Fees and Deadlines](https://www.mercadopago.com.br/settings/release-options)++ of your online sales whenever you want.
 
-Para operar com cartões de crédito siga estes passos:
 
-1. Acesse as configurações de formas de pagamento no menu da Loja Integrada.
-2. Informe no campo "Nome na Fatura do Comprador" como você quer que sua loja seja apresentada na fatura do cartão do comprador.
-3. Navegue até o grupo "Configuração do parcelamento".
-4. Preencha os seguintes campos:
-- Valor mínimo da parcela: Valor mínimo para compras realizadas com cartão de crédito.
-- Máximo de parcelas: Quantidade máxima de parcelas para pagamentos no modo transparente. (Esse campo deve estar de acordo com a configuração da sua conta Mercado Pago).
-- Máximo de parcelas para Redirect: Quantidade máxima de parcelas para pagamentos no modo redirecionado. (Esse campo deve estar de acordo com a configuração da sua conta Mercado Pago).
-- Parcelas sem juros: Número de parcelas sem juros para pagamentos no modo transparente. (Esse campo deve estar de acordo com a configuração da sua conta Mercado Pago).
-5. Clique em "Salvar alterações".
+#### Transparent Checkout
 
-    ![Setting credit card - Loja Integrada](/images/lojaintegrada-credit-card-1.gif)
+It allows the **client to complete the purchase on your site**, without being redirected. 
+
+1. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu and click on “Mercado Pago”.
+2. In the item “Transparent Checkout” change the option to **“Activated”**.
+3. Finally, click on **“Save changes”**.
+
+#### Mercado Pago Redirect
+
+In this case, the **buyer will be redirected to Mercado Pago to make the payment** and complete the purchase. 
+
+1. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu and click on “Mercado Pago”.
+2. In the item “Mercado Pago Redirect” change the option to **“Activated”**.
+3. Finally, click on **“Save changes”**.
+
+    ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
+
+Complete the information from your site that you want it to appear when your client make a payment:
+
+- **Invoice Purchaser’s Name**. Write the name that will appear in your client’s invoice so that they can recognize you. (Maximum 11 characters)
+- **Minimum value**. Set the minimum purchase value you desire. By default, it is R$5,00.
+- Click on **“Save changes”**.
+
+## Boleto Bancário setting
+
+Offer **Boleto Bancário as a payment option:**
+
+1. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu and click on “Mercado Pago” and navigate to “Boleto setting”.
+2. In the item “Boleto bancário” change the option to **“Activated”**.
+3. Then, set a **minimum value** for these payments. If you wish to receive all of them, leave the field with the value 0. 
+4. If you wish that your payments with Boleto Bancário have a discount, check the option **“Use discount in your Boletos?”** and complete the percentage that you want to offer as a discount in **“Discount applied”**.
+5. Finally, click **“Save changes”.**
+
+    ![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+
+## Installments settings
+
+**Offer the option to pay with interest-free monthly installments** on your site with Mercado Pago.
+
+> WARNING
+>
+> Important
+>
+> To ensure that this works properly, it is necessary to have the settings to offer interest-free monthly installments activated in your ++[Mercado Pago account](#Set-interest-free-monthly-installments-in-your-Mercado-Pago-account)++.
+
+1. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu and click on “Mercado Pago” and navigate to **“Installment settings”**.
+2. Complete the following fields: 
+- Only for Transparent Checkout payments, **check the option to use the Mercado Pago external installment service**.
+- **Complete the minimum and maximum value of installments** that you want to receive.
+- Lastly, according to your account settings, choose the number of interest-free monthly installments for your payments.
+3. Finally, click **“Save changes”**.
+
+    ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
+
+## Set interest-free monthly installments in your Mercado Pago account
+
+1. Log in to your Mercado Pago account and go to **“Settings”**.
+2. Access the option “Business”, navigate to “Offer interest-free monthly installments” and click **“Activate”**.
+3. Choose “How many do you want to offer?” and confirm the changes with the **“Activate”** button.
+
+    ![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
+
+> For more information, visit the ++[official Loja Integrada site](https://lojaintegrada.com.br/)++.
