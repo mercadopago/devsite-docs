@@ -240,12 +240,14 @@ search: [Function],
 This will allow you to execute operations, like, creating a payment:
 
 ```javascript
-mercadopago.payment.create({
-  description: 'Buying a PS4',
-  transaction_amount: 10500,
-  payment_method_id: 'rapipago',
-  payer: {
-    email: 'test_user_3931694@testuser.com',
+
+mercadopago.payment
+  .create({
+    description: "Buying a PS4",
+    transaction_amount: 10500,
+    payment_method_id: "rapipago",
+    payer: {
+      email: "test_user_3931694@testuser.com",
     ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
