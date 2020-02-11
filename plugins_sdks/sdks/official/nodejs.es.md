@@ -224,25 +224,24 @@ console.log(mercadopago.payment);
 Esto te permitira ejecutar operaciones como, por ejemplo, crear un pago:
 
 ```javascript
-mercadopago.payment
-  .create({
-    description: "Buying a PS4",
-    transaction_amount: 10500,
-    payment_method_id: "rapipago",
-    payer: {
-      email: "test_user_3931694@testuser.com",
-      identification: {
-        type: "DNI",
-        number: "34123123"
-      }
+mercadopago.payment.create({
+  description: 'Buying a PS4',
+  transaction_amount: 10500,
+  payment_method_id: 'rapipago',
+  payer: {
+    email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    identification: {
+      type: 'DNI',
+      number: '34123123'
     }
-  })
-  .then(function(mpResponse) {
-    console.log(mpResponse);
-  })
-  .catch(function(mpError) {
-    console.log(err);
-  });
+    ------------
+  }
+}).then(function (mpResponse) {
+  console.log(mpResponse);
+}).catch(function (mpError) {
+  console.log(err);
+});
 ```
 
 Como resultado obtendras:
@@ -374,11 +373,14 @@ var payment = {
   transaction_amount: 10500,
   payment_method_id: "rapipago",
   payer: {
-    email: "test_user_3931694@testuser.com",
+    email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: "DNI",
       number: "34123123"
     }
+    ------------
+
   }
 };
 
@@ -424,11 +426,13 @@ var payment = {
   transaction_amount: 10500,
   payment_method_id: "rapipago",
   payer: {
-    email: "test_user_3931694@testuser.com",
+    email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: "DNI",
       number: "34123123"
     }
+    ------------
   }
 };
 
@@ -706,11 +710,13 @@ const payment = {
   transaction_amount: 10,
   payment_method_id: "rapipago",
   payer: {
-    email: "test_user_3931694@testuser.com",
+    email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: "DNI",
       number: "34214577"
     }
+    ------------
   }
 };
 
@@ -737,20 +743,23 @@ mercadopago.payment
 ##### Con reintento
 
 ```javascript
-mercadopago.payment
-  .create({
-    description: "Descripción",
-    transaction_amount: 10,
-    payment_method_id: "rapipago",
-    payer: {
-      email: "test_user_3931694@testuser.com",
-      identification: {
-        type: "DNI",
-        number: "34214577"
-      }
+mercadopago.payment.create({
+  description: 'Descripción',
+  transaction_amount: 10,
+  payment_method_id: 'rapipago',
+  payer: {
+    email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    identification: {
+      type: 'DNI',
+      number: '34214577'
     }
-  })
-  .then(function(response) {
+    ------------
+  }
+}).then(function (response) {
+  console.log(response);
+}).catch(function (err) {
+  err.retry().then(function (response) {
     console.log(response);
   })
   .catch(function(err) {

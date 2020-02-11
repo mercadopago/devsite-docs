@@ -190,10 +190,12 @@ You must submit your buyer’s email.
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     "identification": {
       "type": "DNI",
       "number": "123456789"
     },
+    ------------
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
       "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
