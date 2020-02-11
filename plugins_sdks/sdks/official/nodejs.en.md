@@ -240,6 +240,7 @@ search: [Function],
 This will allow you to execute operations, like, creating a payment:
 
 ```javascript
+
 mercadopago.payment
   .create({
     description: "Buying a PS4",
@@ -247,10 +248,12 @@ mercadopago.payment
     payment_method_id: "rapipago",
     payer: {
       email: "test_user_3931694@testuser.com",
-      identification: {
-        type: "DNI",
-        number: "34123123"
-      }
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    identification: {
+      type: 'DNI',
+      number: '34123123'
+    }
+    ------------
     }
   })
   .then(function(mpResponse) {
@@ -386,11 +389,13 @@ var payment = {
   transaction_amount: 10500,
   payment_method_id: "rapipago",
   payer: {
-    email: "test_user_3931694@testuser.com",
+    email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: "DNI",
       number: "34123123"
     }
+    ------------
   }
 };
 
@@ -438,10 +443,12 @@ var payment = {
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
       number: '34123123'
     }
+    ------------
   }
 };
 
@@ -724,10 +731,12 @@ var payment = {
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com',
+----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
       number: '34214577'
     }
+    ------------
   }
 };
 
@@ -754,10 +763,12 @@ mercadopago.payment.create({
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
       number: '34214577'
     }
+    ------------
   }
 }).then(function (response) {
   console.log(response);

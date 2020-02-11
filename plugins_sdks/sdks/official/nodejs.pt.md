@@ -231,10 +231,12 @@ mercadopago.payment
     payment_method_id: "rapipago",
     payer: {
       email: "test_user_3931694@testuser.com",
-      identification: {
-        type: "DNI",
-        number: "34123123"
-      }
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    identification: {
+      type: 'DNI',
+      number: '34123123'
+    }
+    ------------
     }
   })
   .then(function(mpResponse) {
@@ -374,11 +376,12 @@ var payment = {
   transaction_amount: 10500,
   payment_method_id: "rapipago",
   payer: {
-    email: "test_user_3931694@testuser.com",
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: "DNI",
       number: "34123123"
     }
+    ------------
   }
 };
 
@@ -425,11 +428,12 @@ var payment = {
   transaction_amount: 10500,
   payment_method_id: "rapipago",
   payer: {
-    email: "test_user_3931694@testuser.com",
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: "DNI",
       number: "34123123"
     }
+    ------------
   }
 };
 
@@ -707,11 +711,13 @@ const payment = {
   transaction_amount: 10,
   payment_method_id: "rapipago",
   payer: {
-    email: "test_user_3931694@testuser.com",
+    email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: "DNI",
       number: "34214577"
     }
+    ------------
   }
 };
 
@@ -745,10 +751,12 @@ mercadopago.payment
     payment_method_id: "rapipago",
     payer: {
       email: "test_user_3931694@testuser.com",
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
       identification: {
-        type: "DNI",
-        number: "34214577"
+        type: 'DNI',
+        number: '34214577'
       }
+    ------------
     }
   })
   .then(function(response) {
