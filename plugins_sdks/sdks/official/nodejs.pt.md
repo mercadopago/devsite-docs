@@ -1,22 +1,27 @@
 # SDK Mercado Pago para Node
 
-* [Instalação](#bookmark_instalação)
-* [Configuração](#bookmark_configuração)
-* [Modo Sandbox](#bookmark_modo_sandbox)
-* [Callbacks e promessas](#bookmark_callbacks_y_promessas)
-* [Arquitetura](#bookmark_arquitetura)
-* [Uso](#bookmark_uso)
-* [Combatibilidade com versões anteriores](#bookmark_combatibilidade_com_versões_anteriores)
-* [Validação de esquema](#bookmark_validação_de_esquema)
-* [Resposta e erro](#bookmark_Resposta_e_erro)
-* [Paginação](#bookmark_paginação)
-* [Notificações IPN](#bookmark_notificações_IPN)
-
+- [Instalação](#bookmark_instalação)
+- [Configuração](#bookmark_configuração)
+- [Modo Sandbox](#bookmark_modo_sandbox)
+- [Callbacks e promises](#bookmark_callbacks_e_promises)
+- [Arquitetura](#bookmark_arquitetura)
+- [Uso](#bookmark_uso)
+- [Compatibilidade com versões anteriores](#bookmark_compatibilidade_com_versões_anteriores)
+- [Validação de esquema](#bookmark_validação_de_esquema)
+- [Respostas e erros](#bookmark_respostas_e_erros)
+- [Paginação](#bookmark_paginação)
+- [Notificações IPN](#bookmark_notificações_IPN)
 
 ## Instalação
 
-```
+```bash
 $ npm install mercadopago
+```
+
+ou 
+
+```bash
+$ yarn add mercadopago
 ```
 
 ### Suporte a Promises e Callbacks
@@ -24,61 +29,74 @@ $ npm install mercadopago
 Cada método suporta promises e callbacks. Por exemplo:
 
 ```javascript
-var at = mp.getAccessToken ();
-
-at.then (
-    function (accessToken) {
-        console.log (accessToken);
-    },
-    function (error) {
-        console.log (error);
-    });
+mp.getAccessToken().then(
+  function(accessToken) {
+    console.log(accessToken);
+  },
+  function(error) {
+    console.log(error);
+  }
+);
 ```
+
 é o mesmo que:
 
 ```javascript
-mp.getAccessToken(function (err, accessToken){
-    if (err) {
-        console.log (err);
-    } else {
-        console.log (accessToken);
-    }
+mp.getAccessToken(function(err, accessToken) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(accessToken);
+  }
 });
 ```
 
-Para utilizar callbacks, simplesmente passe uma função como último parâmetro.
+Para utilizar callbacks, simplesmente passe uma função como último parámetro.
+
+### Suporte a `async` / `await`
+
+Cada método suporta o uso de `await`.
+
+```javascript
+try {
+  const accessToken = await mp.getAccessToken();
+  console.log(accessToken);
+} catch (err) {
+  console.log(err);
+}
+```
 
 ## Configuração
 
-Obtenha seu **ACCESS_TOKEN** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
+Obtenha seu **ACCESS_TOKEN** na [sessão de Credenciais]([FAKER][CREDENTIALS][URL]).
 
-Para configurar o SDK deve-se usar o método **cofigure**. Este método recebe um objeto JSON. As configurações válidas são:
+Para configurar o SDK é preciso utilizar o método **configure**. Este método recebe um objeto JSON. As configurações válidas são:
 
-* client_id - String
-* client_secret - String
-* access_token - String
-* sandbox (defaults = false) - Boolean
-* show_promise_error (defaults = true) - Boolean
+- `client_id` - String
+- `client_secret` - String
+- `access_token` - String
+- `sandbox` (default: `false`) - Boolean
+- `show_promise_error` (default: `true`) - Boolean
 
 _Configuração de credenciais válidas:_
 
 ```javascript
 mercadopago.configure({
-    access_token: 'ACCESS_TOKEN'
+  access_token: "ACCESS_TOKEN"
 });
 ```
 
 ```javascript
 mercadopago.configure({
-    sandbox: true,
-    access_token: 'ACCESS_TOKEN'
+  sandbox: true,
+  access_token: "ACCESS_TOKEN"
 });
 ```
 
 ```javascript
 mercadopago.configure({
-    client_id: 'CLIENT_ID',
-    client_secret: 'CLIENT_SECRET'
+  client_id: "CLIENT_ID",
+  client_secret: "CLIENT_SECRET"
 });
 ```
 
@@ -88,105 +106,122 @@ _Configuração de credenciais inválidas:_
 mercadopago.configure({});
 ```
 
-> É preciso fornecer um object com as configurações.
+> É preciso disponibilizar um object como configuração.
 
 ```javascript
 mercadopago.configure({
-    sandbox: true
+  sandbox: true
 });
 ```
 
-> É preciso fornecer um método de autenticação (client_id & client_secret ou access_token).
+> É preciso disponibilizar um método de autenticação (`client_id` & `client_secret` ou `access_token`).
 
 ```javascript
 mercadopago.configure({
-    client_id: 'CLIENT_ID'
+  client_id: "CLIENT_ID"
 });
 ```
 
-> É preciso fornecer o client_id e client_secret.
+> É preciso disponibilizar `client_id` e `client_secret`.
 
 ```javascript
 mercadopago.configure({
-    client_secret: 'CLIENT_SECRET'
+  client_secret: "CLIENT_SECRET"
 });
 ```
 
-> Não se pode alterar o client_id ou client_secret porque já estão configurados.
-
+> Não é possível alterar o `client_id` ou `client_secret` pois já estão configurados.
 
 ## Modo Sandbox
 
-Caso vá utilizar nossa aplicação no modo Sandbox, é preciso informar o access_token.
+Para utilizar nossa aplicação no modo Sandbox, é preciso proporcionar o `access_token`.
 
-> Leve em conta que caso forneça o client_id e client_secret, o SDK gerará um access_token produtivo.
+> Tenha em conta que se disponilizar o `client_id` e `client_secret`, o SDK gerará um `access_token` produtivo.
 
 ```javascript
 mercadopago.configure({
-    sandbox: true,
-    access_token: 'ACCESS_TOKEN'
+  sandbox: true,
+  access_token: "ACCESS_TOKEN"
 });
 ```
-**O modo modo Sandbox funciona apenas com o access_token**
 
+**O modo Sandbox somente funciona com `access_token`**
 
-## Callbacks e promessas
+## Callbacks e promises
 
-Suportamos ambas. Para suportar versões de Node.js anteriores a 0.11.13 estamos utilizando internamente [bluebird](https://github.com/petkaantonov/bluebird).
+Suportamos ambos. Para suportar versões de Node.js anteriores a 0.11.13 estamos utilizando internamente [bluebird](https://github.com/petkaantonov/bluebird).
 
-_Callbacks:_
+### Callbacks
 
 ```javascript
-library.method(function (err, res) {
-    if (err) return console.log(err);
+library.method(function(err, res) {
+  if (err) return console.log(err);
 
-    console.log(res);
-})
+  console.log(res);
+});
 ```
 
-_Promessas:_
+### Promises
 
 ```javascript
-library.method().then(function (res) {
+library
+  .method()
+  .then(function(res) {
     console.log(res);
-}).catch(function (err) {
+  })
+  .catch(function(err) {
     console.log(err);
-});
+  });
 ```
 
-Pode utilizar o que preferir e adaptá-lo a sua aplicação.
+#### `async` / `await`
+
+É possível utilizar as promises com `await` ao invés de `.then(...)`.
+
+```javascript
+try {
+  const res = await library.method();
+  console.log(res);
+} catch (err) {
+  console.log(err);
+}
+```
+
+É possível utilizar como preferir e adaptar a sua aplicação.
 
 ## Arquitetura
 
-O SDK exporta um objeto JSON expondo os recursos ao integrador. Pode-se acessá-los para executar operações válidas. Os recursos são os seguintes:
+O SDK exporta um objeto JSON expondo os recursos ao integrador. É possível acessá-los para executar operações válidas. Os recuros são os seguintes:
 
-- payment
-- preferences
-- preapproval
-- customers
-- merchant_orders
-- money_requests
-- connect
-- ipn
+- `payment`
+- `preferences`
+- `preapproval`
+- `customers`
+- `merchant_orders`
+- `money_requests`
+- `connect`
+- `ipn`
 
-Pode-se acessá-los pelo SDK:
+É possível acessá-los através do SDK:
 
 ```javascript
-var mercadopago = require('mercadopago');
+const mercadopago = require("mercadopago");
 
 console.log(mercadopago.payment);
 
 /*
-...
-create: [Function],
-update: [Function],
-get: [Function],
-search: [Function],
-...
+{
+    ...
+    create: [Function],
+    update: [Function],
+    get: [Function],
+    search: [Function],
+    ...
+}
 */
 ```
 
-Isso permite executar operações como, por exemplo, criação de um pagamento:
+Isso permite executar operações como, por exemplo, criar um pagamento:
 
 ```javascript
 mercadopago.payment.create({
@@ -275,14 +310,14 @@ mercadopagoResponse {
 
 ### Como funciona
 
-Basicamente, o SDK é um Cliente REST melhorado com ferramentas poderosas. Cada recurso (Payments, Preference, etc.) têm métodos básicos:
+Basicamente, o SDK é um Cliente REST melhorado com ferramentas poderosas. Cada recurso (Payments, Preference, etc.) possui métodos básicos:
 
-- create (POST)
-- update (PUT)
-- get (GET)
-- remove (DELETE)
+- `create` (POST)
+- `update` (PUT)
+- `get` (GET)
+- `remove` (DELETE)
 
-Esses métodos são criados dinâmicamente pelo SDK. Cada um têm os seguintes parâmetros.
+Esses métodos são criados dinamicamente pelo SDK. Cada um tem os seguintes parâmetros.
 
 ```javascript
 mercadopago.resource.create( ..., configurations, callback );
@@ -292,29 +327,33 @@ mercadopago.resource.create( ..., configurations, callback );
 mercadopago.resource.create( ..., configurations ).then().catch();
 ```
 
-#### Configuração de parâmetos
+```javascript
+await mercadopago.resource.create( ..., configurations );
+```
 
-> Este parâmetro é opcional se não está utilizando callbacks. Isso se convertirá automáticamente em um objeto vazio.
+#### Configuração de parâmetros
+
+> Esse parâmetro é opcional se não estiver utilizando callbacks. Ele será convertido automaticamente em um objeto vazio.
 
 A configuração de parâmetros é um objeto JSON que permite os seguintes valores:
 
-- qs:
+- `qs`
 
-Esse é um objeto JSON com os parâmetros que deseja enviar através da cadeia de consulta. A seguir um exemplo de como obter todos os pagamentos.
+Esse é um objeto JSON com os parâmetros que se deseja enviar através da cadeia de consulta. Segue um exemplo de obtenção de todos os pagamentos.
 
-Se vemos a [API de Search](https://www.mercadopago.com.br/developers/pt/api-docs/account/payments/search/), isso será um GET, e devemos enviar payer.id = me na cadeia de consulta. Para isso, somente temos que por:
+Ao analisar a [API de Search](https://www.mercadopago.com.br/developers/pt/api-docs/account/payments/search/), o método será um GET, e devemos enviar payer.id = me na cadeia de consulta. Para isso, é preciso apenas utilizar:
 
 ```javascript
 var configurations = {
   qs: {
-    'payer.id': 'me'
+    "payer.id": "me"
   }
 };
 
 mercadopago.payment.search(configurations, callback);
 ```
 
-Enviando isso, o qs converterá a url de saída para:
+Enviando isso, o qs convertira a url de saída a:
 
 ```
 https://api.mercadopago.com/v1/payments/search?payer.id=me
@@ -322,39 +361,43 @@ https://api.mercadopago.com/v1/payments/search?payer.id=me
 
 - idempotência - idempotência uuid personalizada a ser enviada.
 
-Em alguns casos, um problema de conexão podería interromper a operação. Para assegurar-se de que a operação seja completada, pode-se tentar realizá-la novamente. Nesse caso, pode-se duplicá-la.
+Em alguns casos, um problema de conexão podería interromper a operação. Para assegurar-se de que a operação se complete, é possível tentar novamente. Caso volte a tentar, a operação pode ser duplicada.
 
-Para evitar esse comportamente, pode-se utilizar um UUID [(Identificador Único Universal)](https://en.wikipedia.org/wiki/Universally_unique_identifier) que identifica a operação. Esse UUID será um header na idempotencia de chamada de solicitação. Esses headers serão gerados automaticamente pela primeira operação.
+Para evitar esse comportamento, pode-se utilizar um UUID [(identificador único universal)](https://en.wikipedia.org/wiki/Universally_unique_identifier) que identifique a operação. Este UUID será um header na idempotência da chamada da requisição. Esses headers serão gerados automaticamente na primeira operação.
 
-Se uma operação falha, o erro terá a chave de idempotência enviada. Pode-se utilizá-la para tentar executá-la novamente. A seguir um exemplo:
+Se uma operação falha, o erro terá a chave de idempotência enviada. É possível utilizar isso para tentar novamente. A seguir um exemplo:
 
 ```javascript
 var payment = {
-  description: 'Buying a PS4',
+  description: "Buying a PS4",
   transaction_amount: 10500,
-  payment_method_id: 'rapipago',
+  payment_method_id: "rapipago",
   payer: {
     email: 'test_user_3931694@testuser.com',
     ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
-      type: 'DNI',
-      number: '34123123'
+      type: "DNI",
+      number: "34123123"
     }
     ------------
   }
 };
 
-mercadopago.payment.create(payment).then(function (mpResponse) {
-  console.log(mpResponse);
-}).catch(function (mpError) {
-  return mercadopago.payment.create(payment, {
-    qs: {
-      idempotency: mpError.idempotency
-    }
+mercadopago.payment
+  .create(payment)
+  .then(function(mpResponse) {
+    console.log(mpResponse);
+  })
+  .catch(function(mpError) {
+    return mercadopago.payment.create(payment, {
+      qs: {
+        idempotency: mpError.idempotency
+      }
+    });
+  })
+  .then(function(mpResponse) {
+    console.log(mpResponse);
   });
-}).then(function(mpResponse){
-  console.log(mpResponse);
-});
 ```
 
 A primeira resposta será:
@@ -369,41 +412,42 @@ mercadopagoError {
 }
 ```
 
-Na segunda tentativa, será enviada a mesma idempotencia que identifica a criação do pagamento anterior. Fazendo isso, se assegura de estar evitando que se duplique.
+A segunda tentativa enviará a mesmo idempotência que identifica a criação do pagamento anterior. Dessa forma se assegura estar evitando que se duplique.
 
 <
 
-- access_token
+- `access_token`
 
-Se desejar, pode-se anular o `access_token` configurado. Caso esteja utilizando MP Cpnnect, pode anulá-la na operação que **não deseja executar**. Por exemplo:
+Caso deseje, é possível anular o `access_token` configurado. Se está utilizando Mp Connect, pode-se anulá-lo na operação que **não deseje executar**. Por exemplo:
 
 ```javascript
 var payment = {
-  description: 'Buying a PS4',
+  description: "Buying a PS4",
   transaction_amount: 10500,
-  payment_method_id: 'rapipago',
+  payment_method_id: "rapipago",
   payer: {
     email: 'test_user_3931694@testuser.com',
     ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
-      type: 'DNI',
-      number: '34123123'
+      type: "DNI",
+      number: "34123123"
     }
     ------------
   }
 };
 
-mercadopago.payment.create(payment, {
-  access_token: 'MY_MERCHANT_ACCESS_TOKEN',
-}).then(function (mpResponse) {
-});
+mercadopago.payment
+  .create(payment, {
+    access_token: "MY_MERCHANT_ACCESS_TOKEN"
+  })
+  .then(function(mpResponse) {});
 ```
 
-Nesse exemplo, se criará um pagamento utilizando my merchant access_token ('MY_MERCHANT_ACCESS_TOKEN')
+Nesse exemplo, se cria um pagamento utilizando my merchant access-token ('MY_MERCHANT_ACCESS_TOKEN')
 
 #### Parâmetros de callback
 
-O callback é opcional. Caso utilize promessas pode-se evitar enviá-las:
+O callback é opcional. Se utilizar promises pode-se evitar enviá-las:
 
 ```javascript
 mercadopago.resource.create( ..., configurations, callback );
@@ -416,7 +460,7 @@ mercadopago.payment.get(1, {}, function(error, response){
 ```
 
 ```javascript
-mercadopago.resource.create( ... ).then().catch();
+mercadopago.resource.create(...).then().catch();
 
 mercadopago.payment.get(1).then(function (response) {
   console.log(response);
@@ -425,32 +469,47 @@ mercadopago.payment.get(1).then(function (response) {
 });
 ```
 
+ou com `await`:
+
+```javascript
+try {
+    await mercadopago.resource.create(...);
+    const response = await mercadopago.resource.get(1);
+
+    console.log(response)
+} catch (error) {
+    console.log('An error ocurred: ' + error.message);
+}
+
+
+```
+
 ### Parâmetros dinâmicos
 
-Já dissemos que os dois últimos parâmetros são _configurations_ e _callback_. Porém, o que ocorre com os primeiros parâmetros? Dependendo do método (POST, GET, etc.) e da rota, os parâmetros serão trocados.
+Conforme dito, os dois últimos parâmetros são _configurations_ e _callback_. Porêm, o que ocorre com os primeiros parâmetros? Dependendo do método (POST, GET, etc) e da rota, os parâmetros vão mudar.
 
-Em relação as rotas, temos diferentes paths:
+Primeiramente a respeito das rotas. Segue os distintos paths:
 
-- /v1/payments - No path variables
-- /v1/payments/:id - One path variable
-- /v1/customers/:id/cards/:card_id - Two path variables
+- `/v1/payments` - No path variables
+- `/v1/payments/:id` - One path variable
+- `/v1/customers/:id/cards/:card_id` - Two path variables
 
-Isso significa que o método ao que chama necessita obter está variável (id, card_id) de alguma maneira. Vemos alguns métodos.
+Isso significa que o método que chama precisa obter essa variável (id, card_id) de alguma maneira. Seguem alguns métodos.
 
 ```javascript
 payment.create = requestManager.describe({
-  path: '/v1/payments',
-  method: 'POST'
+  path: "/v1/payments",
+  method: "POST"
 });
 
 payment.update = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'PUT'
+  path: "/v1/payments/:id",
+  method: "PUT"
 });
 
 payment.get = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'GET'
+  path: "/v1/payments/:id",
+  method: "GET"
 });
 ```
 
@@ -461,211 +520,227 @@ Há uma diferença entre os métodos que recebem o JSON payload e os que não.
 
 #### Sem Payload
 
-GET, DELETE: Esses receberão as variáveis nos parâmetros. A seguir um exemplo:
+GET, DELETE: Esses vão receber variáveis nos primeiros parâmetros. Segue um exmplo:
 
 ```javascript
 payment.get = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'GET'
+  path: "/v1/payments/:id",
+  method: "GET"
 });
 
 // Calling the get
-mercadopago.payment.get(1, {}, function (){});
+mercadopago.payment.get(1, {}, function() {});
 ```
 
 ```javascript
 customers.cards.get = requestManager.describe({
-  path: '/v1/customers/:id/cards/:card_id',
-  method: 'GET'
+  path: "/v1/customers/:id/cards/:card_id",
+  method: "GET"
 });
 
 // Getting the card 10 from the customer 1
-mercadopago.customers.cards.get(1, 10, {}, function ()  {});
+mercadopago.customers.cards.get(1, 10, {}, function() {});
 ```
 
 #### Com Payload
-POST, PUT, PATH: Esses farão coincidir as variáveis com os payloads. A seguir um exemplo:
+
+POST, PUT, PATH: Esses vão fazer coincidr as variáveis com os payloads. Segue um exemplo:
 
 ```javascript
 payment.update = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'PUT'
+  path: "/v1/payments/:id",
+  method: "PUT"
 });
 
 // Calling the update
-mercadopago.payment.update({
-  id: 1,
-  status: 'cancelled'
-}, function (){});
+mercadopago.payment.update(
+  {
+    id: 1,
+    status: "cancelled"
+  },
+  function() {}
+);
 ```
 
 ```javascript
 customers.cards.update = requestManager.describe({
-  path: '/v1/customers/:id/cards/:card_id',
-  method: 'PUT'
+  path: "/v1/customers/:id/cards/:card_id",
+  method: "PUT"
 });
 
 // Calling the update
-mercadopago.customers.cards.update({
-  id: 1,
-  card_id: 10,
-  expiration_year: 2020
-}, function (){});
+mercadopago.customers.cards.update(
+  {
+    id: 1,
+    card_id: 10,
+    expiration_year: 2020
+  },
+  function() {}
+);
 ```
 
-O nome da variável do path deve ser o mesmo que o payload. Todos os nomes são os mesmo que necessitam enviar na atualização.
+O nome da variável do path deve ser o mesmo que no payload. Todos os nomes são os mesmos que necessitam enviar na atualização.
 
 Um bom exemplo é:
 
 ```javascript
-mercadolibre.payment.get(1).then(function (mpResponse) {
-  // Cancelling a payment
-  return mercadolibre.payment.update({
-    id: mpResponse.body.id,
-    status: 'cancelled'
+mercadolibre.payment
+  .get(1)
+  .then(function(mpResponse) {
+    // Cancelling a payment
+    return mercadolibre.payment.update({
+      id: mpResponse.body.id,
+      status: "cancelled"
+    });
+  })
+  .catch(function(error) {
+    console.log("An error ocurred updating the payment");
   });
-}).catch(function (error) {
-  console.log('An error ocurred updating the payment');
-});
 ```
 
-## Combatibilidade com versões anteriores
+## Compatibilidade com versões anteriores
 
-Se está implementando o [SDK antigo](https://github.com/mercadopago/sdk-nodejs), não necessita modificar nada. Simplesmente atualize o pacote NPM e receberá todos os métodos anteriores:
+Se está implementando um [SDK antigo](https://github.com/mercadopago/sdk-nodejs), não necessita modificar nada. Simplesmente atualize o pacote NPM e receberá todos os métodos anteriores:
 
-- sandboxMode
-- getAccessToken
-- get
-- post
-- put
-- delete
-- createPreference
-- updatePreference
-- getPreference
-- createPreapprovalPayment
-- updatePreapprovalPayment
-- getPreapprovalPayment
-- searchPayment
-- getPayment
-- getPaymentInfo
-- getAuthorizedPayment
-- refundPayment
-- cancelPayment
-- cancelPreapprovalPayment
+- `sandboxMode`
+- `getAccessToken`
+- `get`
+- `post`
+- `put`
+- `delete`
+- `createPreference`
+- `updatePreference`
+- `getPreference`
+- `createPreapprovalPayment`
+- `updatePreapprovalPayment`
+- `getPreapprovalPayment`
+- `searchPayment`
+- `getPayment`
+- `getPaymentInfo`
+- `getAuthorizedPayment`
+- `refundPayment`
+- `cancelPayment`
+- `cancelPreapprovalPayment`
 
-Quando usá-los, receberá uma advertência no console de que os métodos estão em desuso. Se eliminarão do SDK em futuras versões.
+Quando utilizar, receberá uma advertência no console de que esses métodos estão em desuso. Serão eliminados do SDK em versões futuras.
 
->Lembre-se, estão em desuso, somente registramos para que sua aplicação não caia. É preciso atualizar seu código para futuras atualizações.
+> Recorde-se, estão em desuso, os preservamos somente para que sua aplicação não quebre. Deve atualizar seu código para futuras atualizações.
 
-## Validação do esquema
+## Validação de esquema
 
-Cada vez que realizar uma operação que necessite enviar uma carga útil JSON, como criar um pagamento, um cliente, etc. O payload se validará automáticamente.
+Cada vez que realize uma operação que necessite enviar uma carga útil JSON, como criar um pagamento, um cliente e etc., o payload se validará automaticamente.
 
-Esta funcionalidade permitirá economizar tempo e evitar erros no momenta de integrar. As validaões são as seguintes:
+Essa funcionalidade permite economizar tempo e recursos no momento da integração. As validações são as seguintes:
 
 - Validações de tipo (Block)
-- Validações do nome do campo (Warning)
+- Validações de nome de campo (Warning)
 - Parâmetros Extra (Warning)
 
-#### Validações de bloqueio
+#### Validação de bloqueio
 
-Esse tipo de validação gerará um erro, não te permite executar a operação e evita um erro do servidor.
+Esse tipo de validação gerará um erro, não se permite executar a operação e evita um erro de servidor.
 
-#### Validações de Advertencia
+#### Validações de Advertência
 
-Esse tipo de validações emitirão uma advertência no console.
+Esse tipo de validação emitirá uma advertência no console.
 
-## Resposta e erros
+## Resposta e erro
 
-### Respostas e erros personalizados.
+### Respostas e erros personalizados
 
-Implementamos três novos objetos que ajudarão a tornar sua implementação muito mais fácil:
+Implementamos três novos objetos que ajudam a fazer sua primeira implementação muito mais fácil:
 
-- mercadopagoResponse
-- mercadopagoIpnResponse
-- mercadopagoError
+- `mercadopagoResponse`
+- `mercadopagoIpnResponse`
+- `mercadopagoError`
 
 ### mercadopagoResponse
 
-Esse é o objeto de resposta onde receberá todas as respostas dos seus recursos. Está composto pelas seguintes variáveis e funções:
+Esse é o objeto de resposta que receberá todas as respostas dos seus recuros. Está composto pelas seguintes variáveis e funções:
 
-- body - Object: Corpo da resposta
-- status - Integer: Estado da resposta
-- idempotency - String: Cabeçalho de idempotencia enviado na solicitação
-- pagination - Object: Objeto de resposta que provêm do endpoint que tem paginação como Payment Search
-- next - Function: Ir a página seguinte
-- hasNext - Function: Comprova se há próxima página (Boolean)
-- prev - Function: Volta a página anterior
-- hasPrev - Function: Comprova se há página anterior (Boolean)
+- `body` - Object: Corpo da resposta
+- `status` - Integer: Estado da resposta
+- `idempotency` - String: Cabeçalho de idempotência enviado na solicitação
+- `pagination` - Object: Objeto de resposta que vem do endpoint que tem paginação como Payment Search
+- `next` - Function: Ir a página seguinte
+- `hasNext` - Function: Comprova se há próxima página (Boolean)
+- `prev` - Function: Retornar a página anterior
+- `hasPrev` - Function: Comprova se há página anterior (Boolean)
 
 #### Idempotência
 
-A idempotência é um cabeçalho enviado ao MercadoPago para identificar a operação. Encontre mais informações sobre isto, [aqui](#bookmark_uso)
+A idempotência é um cabeçalho enviado ao Mercado Pago para identificar a operação. Encontrará mais informação sobre isso [aqui](#bookmark_uso).
 
 #### Paginação
 
-Encontre toda a informação de paginação [aqui](#bookmark_paginación).
+Se encontra toda a informação de paginação [aqui](#bookmark_paginação).
 
 ### mercadopagoIpnResponse
 
-Esta é a resposta que provirá do Administrador de IPN. Isto está composto pelas seguintes variáveis:
+Essa é a resposta que virá do Administrador de IPN. Isso será composto pelas seguintes variáveis: 
 
-- body - Object: Corpo resposta
-- status - Integer: Estado de resposta
-- Id - String: ID recebido do webhook
-- Topic - String: topic recebido do Webhook
+- `body` - Object: Corpo da resposta
+- `status` - Integer: Estado da respuesta
+- `Id` - String: ID recebido de Webhook
+- `Topic` - String: Topic recibido de Webhook
 
-Encontre mais informações sobre IPN [aqui](#bookmark_notificaciones_IPN).
+Se encontra mais informação sobre IPN [aqui](#bookmark_notificações_IPN).
 
 ### mercadopagoError
 
-Este é o objeto erro apresentado quando um recurso falha. Está composto pelas seguintes variáveis e funções:
+Esse é o objeto de erro recebido quando um recurso falha. É composto pelas seguintes variáveis e funções:
 
-- name - String: Nome do erro
-- message - String: Mensagem recebida da API de MercadoPago
-- cause - Array (Object): Causa do erro
-- stack - Stacktrace do erro
-- status - Integer: Estado da resposta
-- idempotency - String: Idempotência Id Header
-- retry - Função
+- `name` - String: Nome o erro
+- `message` - String: Mensagem recebida da API do Mercado Pago
+- `cause` - Array (Object): Causa do erro
+- `stack` - Stacktrace do erro
+- `status` - Integer: Estado da resposta
+- `idempotency` - String: Idempotency Id Header
+- `retry` - Função
 
-#### Tentar novamente
+#### Novas tentativas
 
-Se as solicitações falham por tempo de espera ou outros erros, expomos um método de tente novamente de chamada para ajudá-lo a executar a mesma operação novamente, reutilizando a idempotência e facilitando-lhe a forma de tentá-lo novamente. Se este método não existe, deverá guardar o request object e obter a idempotência do erro para construir a solicitação novamente. Vejamos uma comparação:
+Se as solicitações falham por tempo de espera ou outros erros, expomos um método de nova tentatica de chamada para ajudá-lo a executar a mesma operação novamente, reutilizando a idempotência e facilitando a forma de no nova tentativa. Se esse método não existe, deve-se guardar o request object e obter a idempotência do erro para construir a solicitação novamente. Segue uma comparação:
 
-##### Sem tentar novamente
+##### Sem novas tentativas
 
 ```javascript
-var payment = {
-  description: 'Descripción',
+const payment = {
+  description: "Descripción",
   transaction_amount: 10,
-  payment_method_id: 'rapipago',
+  payment_method_id: "rapipago",
   payer: {
     email: 'test_user_3931694@testuser.com',
     ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
-      type: 'DNI',
-      number: '34214577'
+      type: "DNI",
+      number: "34214577"
     }
     ------------
   }
 };
 
-mercadopago.payment.create(payment).then(function (response) {
-  console.log(response);
-}).catch(function (err) {
-  // Manually retry
-  mercadopago.payment.create(payment, {
-    idempotency: err.idempotency
-  }).then(function (response) {
+mercadopago.payment
+  .create(payment)
+  .then(function(response) {
     console.log(response);
-  }).catch(function () {
-    // Another Error
+  })
+  .catch(function(err) {
+    // Manually retry
+    mercadopago.payment
+      .create(payment, {
+        idempotency: err.idempotency
+      })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function() {
+        // Another Error
+      });
   });
-});
 ```
 
-##### Com tentar novamente
+##### Com novas tentativas
 
 ```javascript
 mercadopago.payment.create({
@@ -686,26 +761,35 @@ mercadopago.payment.create({
 }).catch(function (err) {
   err.retry().then(function (response) {
     console.log(response);
-  }).catch(function () {
-    // Another Error
+  })
+  .catch(function(err) {
+    err
+      .retry()
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function() {
+        // Another Error
+      });
   });
-});
 ```
 
 ## Paginação
 
 ### Wrapper Automático de paginação
 
-Há alguns endpoints que devolvem a resposta paginada. Por exemplo, se está procurando todos os pagamentos que se fizeram a partir de sua conta. Vejamos um exemplo:
+Há alguns endpoints que devolvem a resposta paginada. Por exemplo, se está buscando todos os pagamentos feitos na sua conta. Segue um exemplo:
 
 ```javascript
-mercadopago.payment.search({
-  qs: {
-    'collector.id': 'me'
-  }
-}).then(function (mpResponse) {
-  console.log(mpResponse);
-});
+mercadopago.payment
+  .search({
+    qs: {
+      "collector.id": "me"
+    }
+  })
+  .then(function(mpResponse) {
+    console.log(mpResponse);
+  });
 ```
 
 O output será:
@@ -750,97 +834,125 @@ mercadopagoResponse {
   pagination: { total: 110, limit: 30, offset: 0 } }
 ```
 
-Como pode ver, tem 100 pagamentos e 30 resultados por request.
+Como pode ver, há 100 pagamentos e 30 resultados por request.
 
-Se não deseja obter a seguinte página, deve executar manualmente a busca desta forma:
+Se não deseja obter a página seguinte, deve-se executar manualmente a busca dessa forma:
 
 ```javascript
-mercadopago.payment.search({
-  qs: {
-    'collector.id': 'me',
-    pagination: {
-      offset: 30
+mercadopago.payment
+  .search({
+    qs: {
+      "collector.id": "me",
+      pagination: {
+        offset: 30
+      }
     }
-  }
-}).then(function (mpResponse) {
-  console.log(mpResponse);
-});
+  })
+  .then(function(mpResponse) {
+    console.log(mpResponse);
+  });
 ```
 
-Para resolver isto, inserimos dois métodos à resposta:
+Para resolver isso, injetamos dois métodos na resposta:
 
-- next: devolve uma Promise() e também recebe um callback com a página seguinte
-- hasNext: devolve um booleano se existe uma página seguinte
-- prev: devolve uma Promise() e também recebe um callback com a página anterior
-- hasPrev: devolve um booleano se existe uma página anterior
+- `next`: retorno uma Promise() e também recebe um Callback com a página seguinte
+- `hasNext`: devolve um booleano se existe uma página seguinte
+- `prev`: devolve uma Promise() e também recebe um callback com a página anterior
+- `hasPrev`: devolve um booleano se existe uma página anterior
 
-Com isto, pode-se verificar se os resultados têm uma página seguinte ou anterior e os obter. Vejamos um exemplo com a seguinte página:
+Com isso pode-se verificar se os resultados possuem uma página seguinte ou anterior e obtê-las. Segue um exemplo com a seguinte página:
 
 ```javascript
-mercadopago.payment.search({
+mercadopago.payment
+  .search({
+    qs: {
+      "collector.id": "me"
+    }
+  })
+  .then(function(mpResponse) {
+    if (mpResponse.hasNext()) {
+      return mpRepsonse.next();
+    }
+  })
+  .then(function(nextPage) {
+    console.log(nextPage);
+  });
+```
+
+Ou com`await`
+
+```javascript
+const mpResponse = await mercadopago.payment.search({
   qs: {
-    'collector.id': 'me'
+    "collector.id": "me"
   }
-}).then(function (mpResponse) {
-  if (mpResponse.hasNext()) {
-    return mpRepsonse.next();
-  }
-}).then(function (nextPage) {
-  console.log(nextPage);
 });
+
+if (mpResponse.hasNext()) {
+  const nextPage = await mpRepsonse.next();
+  console.log(nextPage);
+}
 ```
 
 Também pode-se utilizar callbacks:
 
 ```javascript
-mercadopago.payment.search({
-  qs: {
-    'collector.id': 'me'
+mercadopago.payment.search(
+  {
+    qs: {
+      "collector.id": "me"
+    }
+  },
+  function(err, mpResponse) {
+    if (mpResponse.hasNext()) {
+      return mpRepsonse.next(function(nextPage) {
+        console.log(nextPage);
+      });
+    }
   }
-}, function(err, mpResponse) {
-  if (mpResponse.hasNext()) {
-    return mpRepsonse.next(function (nextPage) {
-      console.log(nextPage);
-    });
-  }
-});
+);
 ```
 
 ## Notificações IPN
 
-A API de MercadoPago envia notificações de pagamentos e assinaturas realizadas. A notificação vem com os seguintes parâmetros:
+A API de Mercado Pago envia notificações de pagamentos realizados. A notificação chega com os seguintes parâmetros:
 
-- topic: Identifica que tipo de recurso é
+- `topic`: identifica qual recurso éIdentifica qué tipo de recurso e
 
-  - merchant_order
-  - payment
-  - preapproval
-  - authorized_payment
+  - `merchant_order`
+  - `payment`
+  - `preapproval`
+  - `authorized_payment`
 
-- id: id único da notificação
+- `id`: id único da notificação
 
-Quando receber essa notificação, poderá obter a informação do pedido ou do pagamento.
+Quando receber essa notificação, poderá obter a informação do pedido ou do pagador.
 
 Merchant Order:
+
 ```
 /merchant_orders/[ID]?access_token=[ACCESS_TOKEN]
 ```
 
 Payment:
+
 ```
 /v1/payments/[ID]?access_token=[ACCESS_TOKEN]
 ```
 
 ### IPN Manager
 
-Para simplificar este fluxo, oferecemos um Administrador de IPN que realizará a solicitação. Para usá-lo, deve passar a solicitação ao IPN Manager. Vamos ver como funciona:
+Para simplificar este fluxo, disponibilizamos um Administrador de IPN que realizará a solicitação. Para usa-la, é preciso enviar a solicitação ao IPN Manager. Segue exemplo de funcionamento:
 
 ```javascript
-mercadopago.ipn.manage(request).then(function (response) {
-  console.log(response);
-}).then(function (error) {
-  console.log(error);
-});
+mercadopago.ipn
+  .manage(request)
+  .then(function(response) {
+    console.log(response);
+  })
+  .then(function(error) {
+    console.log(error);
+  });
 ```
 
 O output será:
@@ -904,4 +1016,4 @@ mercadopagoIpnResponse {
 }
 ```
 
-Dentro da resposta, você encontrará o ** tópico ** recebido na solicitação, para que você não precise obter o valor dele.
+Dentro da resposta encontrará o **topic** recebido na request, portanto não é necessário obter o valor do mesmo.
