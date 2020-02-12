@@ -7,15 +7,15 @@
 
 ## ¿Qué es Loja Integrada?
 
-[Loja integrada](https://www.lojaintegrada.com.br/) es una plataforma virtual que te permite recibir pagos con Mercado Pago. Es el único medio de pago disponible para cuentas gratuitas. 
+Loja integrada es una plataforma virtual que te permite recibir pagos con Mercado Pago. Es el único medio de pago disponible para cuentas gratuitas. 
 
-Puedes activar la opción de ++[vender directo en tu sitio](#Configura-las-formas-de-pago)++, ++[recibir pagos con boleto](#Configuración-de-boleto)++ y ++[ofrecer cuotas sin interés](#Configuración-de-cuotas)++. 
+Puedes activar la opción de [vender directo en tu sitio](https://www.mercadopago.com.br/developers/es/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_configura-las-formas-de-pago), [recibir pagos con boleto](https://www.mercadopago.com.br/developers/es/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_configuración-de-boleto) y [ofrecer cuotas sin interés](https://www.mercadopago.com.br/developers/es/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_configuración-de-cuotas).
 
 ## Pasos para configurar
 
 Los pasos para **comenzar a cobrar con Mercado Pago** son los siguientes:
 
-1. Crea una ++[cuenta vendedor](https://www.mercadopago.com.br/activities)++ en Mercado Pago si todavía no tienes una.
+1. Crea una [cuenta vendedor](https://www.mercadopago.com.br/activities) en Mercado Pago si todavía no tienes una.
 2. Instala la aplicación dentro de la tienda. 
 3. Configura las formas de pago con Mercado Pago.
 
@@ -41,7 +41,7 @@ Para **vincular su cuenta de Mercado Pago a Loja Integrada**, sigue estos pasos:
 > 3. Accede a las ++[configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ en el menú de Loja Integrada, haz clic en “Mercado Pago y por último, en **“Desinstalar aplicativo”**.
 > 4. Finalmente, vuelve a ++[instalar Mercado Pago dentro tu tienda](#Instala-Mercado-Pago-en-tu-tienda)++ con tu nueva cuenta.
 
-   <!-- ![Uninstalling Mercado Pago - Loja Integrada](/images/lojaintegrada-disconnect-1.gif) -->
+   <!-- ![Uninstalling Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-disconnect-1.gif) -->
 
 ## Configura las formas de pago
 
@@ -70,7 +70,7 @@ En este caso, el **comprador será redireccionado a Mercado Pago para realizar e
 Completa los datos de tu tienda que quieras que aparezcan al realizar un pago: 
 
 - **Nombre de la Factura del Comprador**. Escribe el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte. (Máximo de 11 caracteres)
-- **Valor mínimo**. Configura el valor mínimo de compra que quieras. Por defecto, es de R $5,00.
+- **Valor mínimo**. Configura el valor mínimo de compra que quieras. Por defecto, es de R$ 5,00.
 - Haz clic en **“Guardar cambios”**. 
 
 ## Configuración de boleto
@@ -106,10 +106,10 @@ Ofrece **boleto como opción de pago:**
 
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
-1. Ingresa a tu cuenta de Mercado Pago y ve a **“Configuraciones”**.
-2. Accede en la opción “Negocio”, navega hasta “Ofrecer cuotas sin interés” y haz clic en **“Activar”.**
+1. Ingresa a tu [cuenta de Mercado Pago](https://www.mercadopago.com.br/business) y ve a “Configuraciones”.
+2. Accede en la opción “Negocio”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 3. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón **“Activar”.**
 
     ![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
-> Para más información, visita el ++[sitio oficial de Loja Integrada](https://lojaintegrada.com.br/)++.
+> Para más información, visita el [sitio oficial de Loja Integrada](https://lojaintegrada.com.br/).

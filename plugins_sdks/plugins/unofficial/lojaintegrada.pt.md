@@ -7,15 +7,15 @@
 
 ## O que é Loja Integrada?
 
-[Loja integrada](https://www.lojaintegrada.com.br/) é uma **plataforma para sua loja virtual que permite processar pagamentos através do Mercado Pago**. Para contas gratuitas na Loja Integrada esse é o único meio de pagamento possível.
+Loja integrada é uma **plataforma para sua loja virtual que permite processar pagamentos através do Mercado Pago**. Para contas gratuitas na Loja Integrada esse é o único meio de pagamento possível.
 
-Você pode ativar a opção de ++[vender diretamente em seu site](#Configurar-as-formas-de-pagamento)++, ++[receber pagamentos por boleto](#Configuração-boleto)++ e ++[oferecer parcelamento sem juros](#Configuração-de-parcelamento)++.
+Você pode ativar a opção de [vender diretamente em seu site](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_configurar-as-formas-de-pagamento), [receber pagamentos por boleto](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_configuração-boleto) e [oferecer parcelamento sem juros](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_configuração-de-parcelamento).
 
 ## Etapas para configurar
 
 Os **passos para começar a operar com Mercado Pago** são os seguintes:
 
-1. Crie uma ++[conta de vendedor](https://www.mercadopago.com.br/activities)++ no Mercado Pago caso ainda não tenha uma.
+1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/activities) no Mercado Pago caso ainda não tenha uma.
 2. Instale o aplicativo dentro da loja.
 3. Configure as formas de pagamento Mercado Pago.
 
@@ -23,7 +23,7 @@ Os **passos para começar a operar com Mercado Pago** são os seguintes:
 
 Para **vincular sua conta do Mercado Pago à Loja Integrada**, siga os passos abaixo:
 
-1. Acesse as ++[configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ no menu da Loja Integrada.
+1. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada.
 2. Clique em “Mercado Pago” e depois em **“Instalar aplicativo do Mercado Pago”**. 
 3. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em **“Permitir”** para autorizar a conexão.
 
@@ -41,7 +41,7 @@ E pronto! O aplicativo do Mercado Pago já está instalado na sua loja e você p
 > 3. Acesse as ++[configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ no menu da Loja Integrada e clique em “Mercado Pago” e depois em **"Desinstalar aplicativo".** 
 > 4. Repita o procedimento para ++[Instalar Mercado Pago em sua loja](#Instalar-Mercado-Pago-em-sua-loja)++ com a nova conta.
 
-<!-- ![Uninstalling Mercado Pago - Loja Integrada](/images/lojaintegrada-disconnect-1.gif) -->
+<!-- ![Uninstalling Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-disconnect-1.gif) -->
 
 ## Configurar as formas de pagamento
 
@@ -70,7 +70,7 @@ O **comprador é direcionado ao Mercado Pago para fazer o pagamento** e concluir
 Informe como você quer que sua loja apareça para seu cliente quando for realizar a compra:
 
 - **Nome na Fatura do Comprador**. Preencha o nome que deve aparecer na fatura do cartão do comprador. (Máximo de 11 caracteres).
-- **Valor mínimo**. Informe o valor mínimo de compra pelo Mercado Pago da maneira que melhor desejar, por padrão, é de R$5,00.
+- **Valor mínimo**. Informe o valor mínimo de compra pelo Mercado Pago da maneira que melhor desejar, por padrão, é de R$ 5,00.
 - Clique em **“Salvar alterações”**.
 
 ## Configuração boleto
@@ -106,10 +106,10 @@ Operar com **boleto do Mercado Pago como opção de pagamento:**
 
 ## Configurando o parcelamento de sua conta Mercado Pago.
 
-1. Acesse sua conta Mercado Pago e clique em **"Configurações"**
+1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business) e clique em "Configurações".
 2. Clique na opção “Negócio”, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em **“Ativar”.**
 3. Escolha “Quantas parcelas você quer oferecer?” e clique em **“Ativar”** para confirmar as alterações.
 
 	![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
-> Para mais informação, visite o ++[site oficial do Loja integrada.](https://lojaintegrada.com.br/)++
+> Para mais informação, visite o [site oficial do Loja integrada](https://lojaintegrada.com.br/).

@@ -7,16 +7,16 @@
 
 ## What is Loja Integrada?
 
-[Loja integrada](https://www.lojaintegrada.com.br/) is a virtual platform that allows you to receive payments with Mercado Pago. 
+Loja integrada is a virtual platform that allows you to receive payments with Mercado Pago. 
 It is the only payment method available for free accounts. 
 
-You can activate the option ++[sell directly on your site](#Set-payment-methods)++, ++[receive payments with Boleto Bancário](#Boleto-Bancário-setting)++ and ++[offer interest-free monthly installments](#Installments-settings)++.
+You can activate the option [sell directly on your site](https://www.mercadopago.com.br/developers/en/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_set-payment-methods), [receive payments with Boleto Bancário](https://www.mercadopago.com.br/developers/en/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_boleto-bancário-setting) and [offer interest-free monthly installments](https://www.mercadopago.com.br/developers/en/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_installments-settings).
 
 ## Setting steps
 
 The steps to **start charging with Mercado Pago** are the following: 
 
-1. Create a ++[seller account](https://www.mercadopago.com.br/activities)++ in Mercado Pago if you do not yet have one.
+1. Create a [seller account](https://www.mercadopago.com.br/activities) in Mercado Pago if you do not yet have one.
 2. Install the app on your site. 
 3. Set the payment methods with Mercado Pago.
 
@@ -42,7 +42,7 @@ And that’s it! Mercado Pago is installed on your site and you can start chargi
 > 3. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu, click on “Mercado Pago” and finally, on **“Uninstall app”**.
 > 4. Finally, install ++[Mercado Pago on your site](#Install-Mercado-Pago-on-your-site)++ with your new account.
 
-   <!-- ![Uninstalling Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-disconnect-1.gif) -->
+   <!-- ![Uninstalling Mercado Pago - Loja Integrada](/images/lojaintegrada-disconnect-1.gif) -->
 
 ## Set payment methods
 
@@ -72,7 +72,7 @@ In this case, the **buyer will be redirected to Mercado Pago to make the payment
 Complete the information from your site that you want it to appear when your client make a payment:
 
 - **Invoice Purchaser’s Name**. Write the name that will appear in your client’s invoice so that they can recognize you. (Maximum 11 characters)
-- **Minimum value**. Set the minimum purchase value you desire. By default, it is R$5,00.
+- **Minimum value**. Set the minimum purchase value you desire. By default, it is R$ 5,00.
 - Click on **“Save changes”**.
 
 ## Boleto Bancário setting
@@ -95,7 +95,7 @@ Offer **Boleto Bancário as a payment option:**
 >
 > Important
 >
-> To ensure that this works properly, it is necessary to have the settings to offer interest-free monthly installments activated in your ++[Mercado Pago account](#Set-interest-free-monthly-installments-in-your-Mercado-Pago-account)++.
+> To ensure that this works properly, it is necessary to have the settings to offer interest-free monthly installments activated in your ++[Mercado Pago account](#Set-interest-free-installments-in-your-Mercado-Pago-account)++.
 
 1. Access the ++[payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar)++ in the Loja Integrada menu and click on “Mercado Pago” and navigate to **“Installment settings”**.
 2. Complete the following fields: 
@@ -106,12 +106,12 @@ Offer **Boleto Bancário as a payment option:**
 
     ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
 
-## Set interest-free monthly installments in your Mercado Pago account
+## Set interest free installments in your Mercado Pago account
 
-1. Log in to your Mercado Pago account and go to **“Settings”**.
-2. Access the option “Business”, navigate to “Offer interest-free monthly installments” and click **“Activate”**.
+1. Log in to your [Mercado Pago account and](https://www.mercadopago.com.br/business) go to “Settings”.
+2. Access the option “Business”, navigate to “Offering interest free installments” and click “Activate”.
 3. Choose “How many do you want to offer?” and confirm the changes with the **“Activate”** button.
 
     ![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
-> For more information, visit the ++[official Loja Integrada site](https://lojaintegrada.com.br/)++.
+> For more information, visit the [official Loja Integrada site](https://lojaintegrada.com.br/).
