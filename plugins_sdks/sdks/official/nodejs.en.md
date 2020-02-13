@@ -10,7 +10,7 @@
 * [Schema Validation](#bookmark_schema_validation)
 * [Response & Error](#bookmark_response_&_error)
 * [Pagination](#bookmark_pagination)
-* [IPN Notifications](#bookmark_IPN_notifications)
+* [IPN Notifications](#bookmark_ipn_notifications)
 
 ### Supported Node Versions:
 

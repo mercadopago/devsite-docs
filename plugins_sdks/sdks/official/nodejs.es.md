@@ -10,7 +10,7 @@
 - [Validación de esquema](#bookmark_validación_de_esquema)
 - [Respuesta y error](#bookmark_respuesta_y_error)
 - [Paginación](#bookmark_paginación)
-- [Notificaciones IPN](#bookmark_notificaciones_IPN)
+- [Notificaciones IPN](#bookmark_notificaciones_ipn)
 
 ## Instalación
 
