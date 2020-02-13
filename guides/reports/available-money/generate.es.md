@@ -1,16 +1,16 @@
 
-# ¿Cómo generar tu reporte de Dinero disponible?
+# ¿Cómo generar tu reporte de Dinero retirado?
 
 
 ## Canales de generación
 
-Existen tres formas de generar un reporte de Dinero disponible:
+Existen tres formas de generar un reporte de Dinero retirado:
 
 | Canales | Descripción |
 | ------- | ----------- |
 | Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de Reportes.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)<br/><br/> |
 | Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/api/) <br/><br/>|
-| Con el retiro de dinero | <br/>Genera un reporte automáticamente cada vez que retires tu saldo disponible a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/withdrawal/)<br/><br/> |
+| Por retiro | <br/>Genera un reporte automáticamente cada vez que retires tu dinero a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/withdrawal/)<br/><br/> |
 
 
 ## Características técnicas del reporte
@@ -46,7 +46,7 @@ Conoce las características de los elementos que conforman tu reporte.
 
 ### Exportación del reporte
 
-Todas las opciones que tienes disponible a la hora de descargar tu reporte.
+Todas las opciones que tienes disponibles a la hora de descargar tu reporte.
 
 | Elemento o acción | Características |
 | ------------ |	--------    |
@@ -61,7 +61,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > Nota
 >
-> Ten a mano el [Glosario del reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 

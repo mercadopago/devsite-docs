@@ -2,29 +2,29 @@
 # Generación por retiro
 
 
-Puedes crear un reporte de Dinero disponible de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API.
+Puedes crear un reporte de Dinero retirado de forma automática cada vez que hagas un retiro de dinero de tu cuenta de Mercado Pago a una cuenta bancaria. Programa esta opción desde tu panel de Mercado Pago o vía API.
 
 ## Generar desde el panel de Mercado Pago
 
 Desde la sección Reportes de Mercado Pago, programa la generación de reportes por retiro siguiendo estos pasos:
 
-1. Desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de *Reportes*.
+1. Desde tu cuenta de Mercado Pago, ve a [tus Reportes](https://www.mercadopago.com.ar/balance/reports) y de ahí a *Reportes de Dinero retirado*.
 1. Haz click en *Programar reportes* y confirma *Programar*.
 1. ¡Y listo! Cada vez que retires dinero, tendrás tu reporte disponible.
 
 Genera tus reportes cada vez que quieras consultar un retiro de dinero
 
-1. Desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de *Reportes*.
-1. Ve a tus [reportes de Dinero Disponible](https://www.mercadopago.com.ar/balance/reports?page=1#!/bank-report) y haz click en *Crear reporte*.
+1. Desde tu cuenta de Mercado Pago, ve a [tus Reportes](https://www.mercadopago.com.ar/balance/reports).
+1. Entra en la sección [Dinero retirado](https://www.mercadopago.com.ar/balance/reports?page=1#!/bank-report) y haz click en *Crear reporte*.
 1. Ubica tus retiros por **período de tiempo** y selecciona el retiro quieras consultar.
 
-<span style="margin-left:40px">¡Y listo! Vas a ver tu reporte *En Preparación*.</span>
+<span style="margin-left:40px">¡Y listo! Vas a ver tu reporte **en preparación**.</span>
 
 > NOTE
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/reports/available-money/glossary/) de  Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ## Generar por API
@@ -195,7 +195,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Importante
 >
-> La generación por retiro es una opción más de generación del reporte de Dinero disponible. No modifica la generación que configures desde tu panel de Mercado Pago o vía API.
+> La generación por retiro es una de las tres formas que tenemos de generar este reporte. No modifica la generación que configures desde tu panel de Mercado Pago o vía API. Explora el resto de la documentación para conocer de qué otras formas puedes generar tus reportes: desde el panel de Mercado Pago y por API. 
 
 <hr/>
 
@@ -205,7 +205,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Generación desde Mercado Pago
 >
-> Puedes generar tus reportes de Dinero Disponible desde el panel de Mercado Pago en tres simples pasos.
+> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
 >
 > [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)
 

@@ -38,9 +38,9 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Cómo usar el reporte
+> Reporte de Dinero retirado
 >
-> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
+> Qué es y para qué sirve el reporte de Dinero retirado. Descubre ejemplos y casos de uso.
 >
 > [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/how-to-use/)
 
