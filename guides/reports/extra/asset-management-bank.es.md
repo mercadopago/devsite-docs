@@ -4,9 +4,9 @@ sites_supported:
   - mlb
 ---
 
-# Los rendimientos en el reporte de Dinero disponible
+# Los rendimientos en el reporte de Dinero retirado
 
-Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pago en el reporte de Dinero disponible.
+Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pago en el reporte de Dinero retirado.
 
 ----[mla]----
 > NOTE
@@ -20,7 +20,7 @@ Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pag
 
 ----[mla]---- 
 
-Puedes ver dos tipos de movimientos según la la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero en cuenta: rendimientos positivos y negativos.
+Puedes ver dos tipos de movimientos según la la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero disponible: rendimientos positivos y negativos.
 
 ------------
 ----[mlb]---- 
@@ -49,11 +49,11 @@ Cuando en la columna `DESCRIPTION` aparece el valor `asset_management_retention`
 
 ### Rendimientos positivos
 
-![Ejemplo rendimiento positivo en reporte de Dinero disponible](/images/manage-account/reports/reports-information-details/asset-management-bank-positive.png)
+![Ejemplo rendimiento positivo en reporte de Dinero retirado](/images/manage-account/reports/reports-information-details/asset-management-bank-positive.png)
 
 ### Rendimientos negativos
 
-![Ejemplo rendimiento negativo en reporte de Dinero disponible](/images/manage-account/reports/reports-information-details/asset-management-bank-negative.png)
+![Ejemplo rendimiento negativo en reporte de Dinero retirado](/images/manage-account/reports/reports-information-details/asset-management-bank-negative.png)
 
 ----[mlb]---- 
 
@@ -71,18 +71,18 @@ Cuando en la columna `DESCRIPTION` aparece el valor `asset_management_retention`
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ### Próximos pasos
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Genera tu reporte de Dinero disponible
+> Genera tu reporte de Dinero retirado
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tu reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/generate/)
+> [Genera tu reporte de Dinero retirado](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
