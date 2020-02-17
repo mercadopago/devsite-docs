@@ -1,6 +1,14 @@
+
 # Tipos de documento
 
 Los tipos de documento aceptados a la hora de hacer un cobro a través de Mercado Pago varían según cada país.
+
+> WARNING 
+> 
+> Importante
+> 
+> Ten en cuenta que esta información no aplica para México.
+
 
 ## Obteniendo los tipos de documento
 
@@ -46,8 +54,6 @@ Los resultados incluídos en esta respuesta coincidirán con el país asociado a
 ## Tipos de documento por país
 
 A continuación se indican los tipos de documento aceptados para cada país.
-
-Sólo México no requiere esta información.
 
 ### Argentina
 
