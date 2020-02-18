@@ -24,7 +24,7 @@ Genera tus reportes cada vez que quieras consultar un retiro de dinero
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/reports/available-money/glossary/) de  Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ## Generar por API
