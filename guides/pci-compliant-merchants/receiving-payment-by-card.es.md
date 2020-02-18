@@ -189,13 +189,19 @@ Para implementar en tu sitio la generación del device debes agregar el siguient
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-Es importante que envíes el campo `MP_DEVICE_SESSION_ID` (generado automáticamente como variable global de javascript) a tu servidor y que al momento de crear el pago agregues el siguiente _header_ al _request_:
+Es importante que envíes el `device_id` generado por este script a tu servidor y que al momento de crear el pago agregues el siguiente _header_ al _request_:
 
 ```http
 X-meli-session-id: device_id
 ```
 
-Donde `device_id` sea reemplazado por el _ID_ obtenido en el paso anterior.
+Puedes obtener el `device_id` con una de estas formas:
+
+- Variable global de javascript `MP_DEVICE_SESSION_ID`
+   
+* Si tienes una etiqueta con identificador `id="deviceId"` se guarda el device_id como valor
+
+- El script acepta el atributo `output="ejemplo"` para guardar el device_id en la variable con el nombre elegido
 
 ### Implementación de _device_ en aplicaciones móviles nativas
 
