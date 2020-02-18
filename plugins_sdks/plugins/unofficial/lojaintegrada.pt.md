@@ -30,6 +30,7 @@ Para **vincular sua conta do Mercado Pago à Loja Integrada**, siga os passos ab
 
     ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
+
 E pronto! O aplicativo do Mercado Pago já está instalado na sua loja e você pode começar a receber pagamentos.
 
 
@@ -68,6 +69,7 @@ O **comprador é direcionado ao Mercado Pago para fazer o pagamento** e concluir
 
     ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
 
+
 Informe como você quer que sua loja apareça para seu cliente quando for realizar a compra:
 
 - **Nome na Fatura do Comprador**. Preencha o nome que deve aparecer na fatura do cartão do comprador (máximo de 11 caracteres).
@@ -86,6 +88,7 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 
 
     ![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+
 
 ## Configuração de parcelamento
 
@@ -115,5 +118,6 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 
 
 	![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
+
 
 > Para mais informação, visite o [site oficial do Loja integrada](https://lojaintegrada.com.br/).

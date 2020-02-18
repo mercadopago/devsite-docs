@@ -30,6 +30,7 @@ Para **vincular tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pasos:
 
     ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
+
 ¡Y listo! Mercado Pago ya se encuentra instalado en tu tienda y puedes empezar a cobrar.
 
 
@@ -41,7 +42,7 @@ Para **vincular tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pasos:
 > 1. Cierra tu cuenta de Mercado Pago si la tienes abierta en tu navegador.
 > 1. Haz clic en “Menú de opciones” y luego en “Salir”.
 > 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada, haz clic en “Mercado Pago" y por último, en “Desinstalar aplicativo”.
-> 1. Finalmente, vuelve a ++[instalar Mercado Pago dentro tu tienda](https://www.mercadopago.com.br/developers/es/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_instala-Mercado-Pago-en-tu-tienda)++ con tu nueva cuenta.
+> 1. Finalmente, vuelve a [instalar Mercado Pago dentro tu tienda](https://www.mercadopago.com.br/developers/es/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_instala-Mercado-Pago-en-tu-tienda) con tu nueva cuenta.
 
 ## Configura las formas de pago
 
@@ -68,6 +69,7 @@ En este caso, el **comprador será redireccionado a Mercado Pago para realizar e
 
     ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
 
+
 Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 
 - **Nombre de la Factura del Comprador**. Escribe el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte (máximo de 11 caracteres).
@@ -76,7 +78,7 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 
 ## Configuración de boleto
 
-Ofrece **boleto como opción de pago**:
+ **Ofrece boleto como opción de pago**:
 
 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada y haz clic en “Mercado Pago”.
 1. En el ítem “Boleto bancário” cambia a la opción “Activado”.
@@ -86,6 +88,7 @@ Ofrece **boleto como opción de pago**:
 
 
     ![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+
 
 ## Configuración de cuotas
 
@@ -107,6 +110,7 @@ Ofrece **boleto como opción de pago**:
 
     ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
 
+
 ### Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
 1. Ingresa a tu [cuenta de Mercado Pago](https://www.mercadopago.com.br/business) y ve a "Tu negocio".
@@ -115,5 +119,6 @@ Ofrece **boleto como opción de pago**:
 
 
     ![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
+
 
 > Para más información, visita el [sitio oficial de Loja Integrada](https://lojaintegrada.com.br/).

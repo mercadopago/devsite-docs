@@ -31,7 +31,8 @@ To **associate your Mercado Pago account to Loja Integrada**, follow these steps
 
     ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
-And that’s it! Mercado Pago is installed on your site and you can start charging.
+
+Done! Mercado Pago is installed on your site and you can start charging.
 
 > NOTE
 >
@@ -41,7 +42,7 @@ And that’s it! Mercado Pago is installed on your site and you can start chargi
 > 1. Close your Mercado Pago account if you have it open in your browser.
 > 1. Click “Options Menu” and then “Exit”.
 > 1. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu, click on “Mercado Pago” and finally, on “Uninstall app”.
-> 1. Finally, [install Mercado Pago on your site](https://www.mercadopago.com.br/developers/en/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_install-Mercado-Pago-on-your-site)++ with your new account.
+> 1. Finally, [install Mercado Pago on your site](https://www.mercadopago.com.br/developers/en/plugins_sdks/plugins/unofficial/lojaintegrada#bookmark_install-Mercado-Pago-on-your-site) with your new account.
 
 ## Set payment methods
 
@@ -69,6 +70,7 @@ In this case, **the buyer will be redirected to Mercado Pago to make the payment
 
     ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
 
+
 Complete the information from your site that you want it to appear when your client make a payment:
 
 - **Invoice Purchaser’s Name**. Write the name that will appear in your client’s invoice so that they can recognize you (maximum 11 characters).
@@ -80,13 +82,14 @@ Complete the information from your site that you want it to appear when your cli
 Offer **Bank Ticket as a payment option**:
 
 1. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu and click on “Mercado Pago” and navigate to “Bank Ticket setting”.
-1. In the item “Bank Ticket bancário” change the option to “Activated”.
+1. In the item “Bank Ticket” change the option to “Activated”.
 1. Then, set a minimum value for these payments. If you wish to receive all of them, leave the field with the value 0.
-1. If you wish that your payments with Bank Ticket have a discount, check the option **“Use discount in your Bank Tickets?”** and complete the percentage that you want to offer as a discount in “Discount applied”.
+1. If you wish that your payments with Bank Ticket have a discount, check the option “Use discount in your Bank Tickets?” and complete the percentage that you want to offer as a discount in “Discount applied”.
 1. Finally, click “Save changes”.
 
 
     ![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+
 
 ## Installments settings
 
@@ -108,9 +111,10 @@ Offer **Bank Ticket as a payment option**:
 
     ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
 
+
 ### Set interest free installments in your Mercado Pago account
 
-1. Log in to your [Mercado Pago account and](https://www.mercadopago.com.br/business) go to “Your business”.
+1. Log in to your [Mercado Pago account ] and(https://www.mercadopago.com.br/business) go to “Your business”.
 1. Access the option “Settings”, navigate to “Offering interest free installments” and click “Activate”.
 1. Choose “How many do you want to offer?” and confirm the changes with the “Activate” button.
 
