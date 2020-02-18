@@ -42,7 +42,7 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 
 ## Ejemplo de un reporte
 
-Observa cómo está compuesto el reporte de dinero retirado en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para identificar las secciones y leer tus propios reportes:
 
 ![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
 
