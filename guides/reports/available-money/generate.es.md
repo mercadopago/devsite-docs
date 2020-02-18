@@ -10,7 +10,7 @@ Existen tres formas de generar un reporte de Dinero retirado:
 | ------- | ----------- |
 | Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de Reportes.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)<br/><br/> |
 | Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/api/) <br/><br/>|
-| Por retiro | <br/>Genera un reporte automáticamente cada vez que retires tu dinero a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/withdrawal/)<br/><br/> |
+| Por retiro | <br/>Genera un reporte automáticamente cada vez que retires tu dinero a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/withdrawal/).<br/><br/> |
 
 
 ## Características técnicas del reporte
