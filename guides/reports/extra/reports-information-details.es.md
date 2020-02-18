@@ -38,8 +38,8 @@ Te explicamos cómo ver la información de tus rendimientos según el tipo de re
 
 ----[mla]----
 
-* [Reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-bank/)
-* [Reporte de Dinero en cuenta](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-settlement/)
+* [Reporte de Dinero retirado](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-bank/)
+* [Reporte de Todas tus transacciones](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-settlement/)
 
 ------------
 ----[mlb]----

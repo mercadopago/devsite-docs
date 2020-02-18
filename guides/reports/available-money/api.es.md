@@ -2,7 +2,7 @@
 # Generación por API
 
 
-Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero disponible las veces que quieras.
+Ganá tiempo y automatizá la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada. 
 
 
 ## Configurar tus reportes
@@ -422,7 +422,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ## Atributos configurables
 
-Conoce los campos que puedes configurar para ajustar tus preferencias:
+Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
 
 
 | Campos configurables | Descripción |
@@ -443,7 +443,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias:
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 
@@ -941,7 +941,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Generación desde Mercado Pago
 >
-> Puedes generar tus reportes de Dinero Disponible desde el panel de Mercado Pago en tres simples pasos.
+> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
 >
 > [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)
 
@@ -949,6 +949,6 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Generación por retiro
 >
-> Puedes generar un reporte cada vez que retires dinero disponible a una cuenta bancaria.
+> Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
 >
 > [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/withdrawal/)
