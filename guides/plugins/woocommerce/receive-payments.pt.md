@@ -4,7 +4,7 @@
 
 O módulo do Mercado Pago vem com um Sandbox teste ativo por padrão. Simule pagamentos na loja neste ambiente de teste e veja se tudo está funcionando bem antes de começar a receber pagamentos reais dos seus clientes. 
 
-Aqui é onde entram em jogo as credenciais de teste que estarão copiadas no módulo no momento de [integrar Mercado Pago à sua loja](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/integration/). Você precisará delas para poder testar o módulo.
+Aqui é onde entram em jogo as credenciais de teste que estarão copiadas no módulo no momento de [integrar Mercado Pago à sua loja](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/integration/). Você precisará delas para poder testar o módulo.
 
 Quando fizer os testes, confira se o fluxo de pagamentos está funcionando corretamente e se as preferências de pagamentos são as que você configurou. Tudo está certo? Desative os Testes e vá para o modo Produção para receber pagamentos reais.
 
@@ -32,7 +32,7 @@ Ative o modo Produção apenas quando você estiver pronto para vender e já ten
 >
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você queira oferecer aos seus clientes.
 >
-> [Preferencias](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Preferencias](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/receive-payments/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -41,4 +41,4 @@ Ative o modo Produção apenas quando você estiver pronto para vender e já ten
 > Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
 >
 > 
-> [Instalar](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/instalation/)
+> [Instalar](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/instalation/)

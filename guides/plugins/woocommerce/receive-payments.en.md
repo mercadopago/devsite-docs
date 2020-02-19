@@ -4,7 +4,7 @@
 
 The Mercado Pago module comes with the Sandbox environment active by default. Simulate payments in the store with this testing environment and verify that everything works well before you start receiving real payments from your customers.
  
-This is where the test credentials that you have copied into the module come into play when [integrating Mercado Pago to your store](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/integration/). You need them to be able to test the module.
+This is where the test credentials that you have copied into the module come into play when [integrating Mercado Pago to your store](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/integration/). You need them to be able to test the module.
 
 When testing, verify that the payment flow works correctly and that the payment preferences are what you have set. Do you see that everything is going well? Disable Testing and go to Production mode to receive real payments.
 
@@ -32,7 +32,7 @@ Activate Production mode only when you are ready to sell and have tested the mod
 >
 > Set your payment preferences and make adjustments according to the experience you want to offer your customers.
 >
-> [Preferences](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Preferences](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -41,4 +41,4 @@ Activate Production mode only when you are ready to sell and have tested the mod
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/instalation/)
+> [Install](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/instalation/)
