@@ -179,23 +179,38 @@ Una vez hayas obtenido el _Card Token_ de la tarjeta, puedes [crear el pago](htt
 
 ## Mejora la aprobación enviando el _Device Fingerprint_
 
-Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre el device del comprador, esto ayudará a evitar transacciones fraudulentas.
+Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre sobre los comportamientos de los clientes para detectar movimientos inusuales y poder evitar transacciones fraudulentas. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
 
-### Implementación de _device_ en Web
+### Implementación del _device_ en Web
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu _checkout_:
+Para **implementar en tu sitio la generación del Device** debes agregar el siguiente código a tu plataforma de pagos:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-Es importante que envíes el campo `MP_DEVICE_SESSION_ID` (generado automáticamente como variable global de javascript) a tu servidor y que al momento de crear el pago agregues el siguiente _header_ al _request_:
+**Es importante que envíes el `device_id` generado por este script a tu servidor** y que al momento de crear el pago agregues el siguiente header al request:
 
 ```http
 X-meli-session-id: device_id
 ```
+**Puedes obtener el `device_id` de dos formas:**
+- Usando una variable global de javascript de nombre predefinido o con el nombre que necesites
+- Sumando una etiqueta HTML en tu sitio.
 
-Donde `device_id` sea reemplazado por el _ID_ obtenido en el paso anterior.
+Usa el script para crear automáticamente una **variable global de javascript** con el nombre `MP_DEVICE_SESSION_ID` cuyo valor es el `device_id`. Y si lo necesitas, **indica el nombre de la variable que necesites** al sumar el atributo output.
+
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceFingerprint"></script>
+````
+
+También, puedes agregar una **etiqueta HTML en tu sitio** con el identificador `id="deviceId"`.
+
+```html
+<input type="hidden" id="deviceId">
+```
+
+El script va a agregar el atributo `value` y le asignará automáticamente el `device_id`.
 
 ### Implementación de _device_ en aplicaciones móviles nativas
 
