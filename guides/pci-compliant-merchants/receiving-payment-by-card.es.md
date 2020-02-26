@@ -195,7 +195,7 @@ Para **implementar en tu sitio la generación del Device** debes agregar el sigu
 X-meli-session-id: device_id
 ```
 **Puedes obtener el `device_id` de dos formas:**
-- Usando una variable global de javascript de nombre predefinido o con el nombre que necesites
+- Usando una variable global de javascript de nombre predefinido o con el nombre que necesites.
 - Sumando una etiqueta HTML en tu sitio.
 
 Usa el script para crear automáticamente una **variable global de javascript** con el nombre `MP_DEVICE_SESSION_ID` cuyo valor es el `device_id`. Y si lo necesitas, **indica el nombre de la variable que necesites** al sumar el atributo output.
