@@ -201,15 +201,6 @@ If you want to enable the payment of a preference with a certain duration, you c
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-### Sponsor ID
-
-The `sponsor_id` attribute is an identifier of the developer or software company that performs the Checkout Mercado Pago integration, this data is visible in the preference and in the payment.
-
-```json
-"sponsor_id": 123456789
-```
-
-
 ### Multiple Items
 
 If you need to create a preference for more than one item, you should only add them as a list within _items_.
@@ -625,16 +616,14 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 
 ## Get information about your business
 
-To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable.
-
-For example, you can have a developers team, be integrated through an e-commerce platform or be part of a group of accounts associated with a seller group.
+Our [Partners](https://partners.mercadopago.com/) can obtain business metrics. To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable. It is not required to complete the three fields mentioned.
 
 Header | Code Type | Identifiers
 ------ | ---------------| ---------
-`x-integrator-id` | Integrator | Developers or agencies that conducted the integration.
-`x-platform-id` | Platform | [Platform](https://partners.mercadopago.com/) used by the seller's account.
-`x-corporation-id` | Corporations | Accounts associated with an economic group or seller's account.
-> Are you a developer or agency and need your identifier? [Request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
+`x-integrator-id` | Integrator | For developers or agencies that conducted the integration.
+`x-platform-id` | Platform | For the platforms or modules that offer Mercado Pago in their solutions.
+`x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group.
+> If you need your `integrator_id` or your` platform_id`, [request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
 ```php
