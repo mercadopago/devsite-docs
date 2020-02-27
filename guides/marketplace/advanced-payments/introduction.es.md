@@ -37,6 +37,6 @@ La **funcionalidad de Split de Pagos** brinda una solución para los pagos de Ma
 
 #### Liberación de dinero de tus Vendedores 
 
-* La liberación del dinero de tus Vendedores será de 30 días por defecto.
+* El dinero de tus Vendedores se liberará en 30 días por defecto.
 
 [Comenzar a usar split de pagos en Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/advanced-payments/receive-split-payments/).
