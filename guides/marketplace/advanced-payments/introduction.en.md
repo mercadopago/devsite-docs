@@ -35,8 +35,8 @@ The Split Payment functionality provides a solution for Marketplace payments whe
 * The commission charged by the Marketplace applies to each payment.
 * This allows having different commissions for different Sellers and in turn different commissions according to the type or category of the product offered by a Seller.
 
-#### Release of money from your Sellers
+#### Release of your Sellers money
 
-* The release of money from your Sellers will be 30 days by default.
+* The money of your Sellers will be released in 30 days by default.
 
 [Start using split payments in Marketplace](https://www.mercadopago.com.br/developers/en/guides/marketplace/advanced-payments/receive-split-payments/).
