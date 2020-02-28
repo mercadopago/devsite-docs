@@ -455,10 +455,12 @@ Response:
 	},
 	"cardholder": {
 		"name": "Card holdername",
+   ----[mla, mlb, mlu, mco, mlc, mpe]---- 
 		"identification": {
 			"number": "12345678",
 			"type": "DNI"
 		}
+   ------------
 	},
 	"date_created": "2017-05-05T09:22:30.893-04:00",
 	"date_last_updated": "2017-05-05T09:22:30.893-04:00",
