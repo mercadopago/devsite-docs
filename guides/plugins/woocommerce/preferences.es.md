@@ -114,7 +114,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 > Pon a prueba el módulo y verifica que todo funcione bien para empezar a recibir el dinero de tus ventas en Mercado Pago.
 >
 >
-> [Recibir pagos](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -123,4 +123,4 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 > Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
 >
 > 
-> [Instalar](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/instalation/)
+> [Instalar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/instalation/)

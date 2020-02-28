@@ -61,7 +61,7 @@ Pronto! O módulo do Mercado Pago será instalado na sua loja virtual.
 
 Confira se tudo está ok no seu painel do WordPress. Você verá o módulo nos seus *Plugins instalados*. Ative-o para passar para a integração da sua conta e etapas de configuração. 
 
-Quando você ativar o plugin, o WordPress levará aos *Ajustes* do WooCommerce e depois para a seção de *Payments*, onde estão todos os [tipos de checkout](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que oferecemos para sua loja virtual: Checkout Mercado Pago e Checkout Personalizado.
+Quando você ativar o plugin, o WordPress levará aos *Ajustes* do WooCommerce e depois para a seção de *Payments*, onde estão todos os [tipos de checkout](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que oferecemos para sua loja virtual: Checkout Mercado Pago e Checkout Personalizado.
 
 > NOTE
 >
@@ -90,7 +90,7 @@ A seguir, execute as etapas de uma **nova instalação** para atualizar sua loja
 > Conecte sua conta do Mercado Pago ao módulo e capture os pagamentos que você receber pelas suas vendas on-line.  
 >
 > 
-> [Integrar](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/integration/)
+> [Integrar](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/integration/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -98,4 +98,4 @@ A seguir, execute as etapas de uma **nova instalação** para atualizar sua loja
 >
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você queira oferecer aos seus clientes.
 >
-> [Preferencias](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/woocommerce/preferences/)
+> [Preferencias](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/preferences/)

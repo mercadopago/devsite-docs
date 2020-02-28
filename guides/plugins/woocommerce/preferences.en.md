@@ -114,7 +114,7 @@ Choose what shopping experience your customers will have when paying:
 > Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
 >
 >
-> [Receive payments](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Receive payments](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/receive-payments/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -123,4 +123,4 @@ Choose what shopping experience your customers will have when paying:
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/woocommerce/instalation/)
+> [Install](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/instalation/)

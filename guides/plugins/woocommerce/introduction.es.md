@@ -57,7 +57,7 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 > Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
 >
 > 
-> [Instalar](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/instalation/)
+> [Instalar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/instalation/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -65,4 +65,4 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 >
 > Conecta tu cuenta de Mercado Pago al módulo y captura los pagos de tus ventas online.
 >
-> [Integrar](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/integration/)
+> [Integrar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/integration/)

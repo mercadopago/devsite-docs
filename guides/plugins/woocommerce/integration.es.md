@@ -36,7 +36,7 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 > Configura tus preferencias de pago y haz ajustes según la experiencia que quieras ofrecer a tus clientes  
 >
 >
-> [Preferencias](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/preferences/)
+> [Preferencias](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/preferences/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -44,4 +44,4 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 >
 > Pon a prueba el módulo y verifica que todo funcione bien para empezar a recibir el dinero de tus ventas en Mercado Pago.
 >
-> [Recibir pagos](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/woocommerce/receive-payments/)
+> [Recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
