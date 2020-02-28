@@ -7,7 +7,7 @@
 
 ## ¿Qué es Loja Integrada?
 
-Loja integrada es una **plataforma virtual que te permite recibir pagos con Mercado Pago.** Es el único medio de pago disponible para cuentas gratuitas. 
+Loja Integrada es una **plataforma virtual que te permite recibir pagos con Mercado Pago.** Es el único medio de pago disponible para cuentas gratuitas. 
 
 Puedes activar la opción de [vender directo en tu sitio](#bookmark_configura_las_formas_de_pago), [recibir pagos con boleto](#bookmark_configuración_de_boleto) y [ofrecer cuotas sin interés](#bookmark_configuración_de_cuotas).
 
@@ -38,7 +38,7 @@ Para **vincular tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pasos:
 >
 > Cambiar cuenta de Mercado Pago
 >
-> Si quieres cambiar la cuenta de Mercado Pago asociada a tu sitio, es necesarios cerrar y reinstalar el aplicativo.
+> Si quieres cambiar la cuenta de Mercado Pago asociada a tu sitio, es necesario cerrar y reinstalar el aplicativo.
 > 1. Cierra tu cuenta de Mercado Pago si la tienes abierta en tu navegador.
 > 2. Haz clic en “Menú de opciones” y luego en “Salir”.
 > 3. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada, haz clic en “Mercado Pago" y por último, en “Desinstalar aplicativo”.
@@ -52,7 +52,7 @@ Puedes consultar y configurar las [tasas y plazas](https://www.mercadopago.com.b
 
 ### Checkout Transparente
 
-Permite que el **cliente finaliza la compra en tu sitio**, sin ser redireccionado para otro.
+Permite que el **cliente finalice la compra en tu sitio**, sin ser redireccionado para otro.
 
 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada y haz clic en “Mercado Pago”.
 2. En el ítem “Checkout Transparente” cambia a la opción “Activado”.
@@ -102,7 +102,7 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 
 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada y haz clic en “Mercado Pago” y navega hasta “Configuración de cuotas”.
 2. Completa los siguientes campos:
-  - Solo para pagos de Checkout Transparentes, **marca la opción de utilizar el servicio de cuotas externo de Mercado Pago**.
+  - Solo para pagos de Checkout Transparente, **marca la opción de utilizar el servicio de cuotas externo de Mercado Pago**.
   - **Completa el valor mínimo y máximo de cuotas** que quieras recibir.
   - Y por último, según la configuración de tu cuenta, **elige el número de cuotas sin interés para tus pagos**.
 3. Finalmente, haz clic en “Guardar cambios”.
