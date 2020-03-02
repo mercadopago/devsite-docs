@@ -725,7 +725,7 @@ Desta forma, quando um pagamento é aprovado por meio do seu Checkout Mercado Pa
 
 ## Saiba mais sobre seu negócio
 
-Nossos [Parceiros](https://partners.mercadopago.com/) poderão obter métricas de negócio. Utilize `headers` na sua preferência de pagamento agregando o código de identificação para o caso que corresponda. Não é obrigatório completar os três campos mencionados.
+Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de negócio. Utilize `headers` na sua preferência de pagamento agregando o código de identificação para o caso que corresponda. Não é obrigatório completar os três campos mencionados.
 
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
