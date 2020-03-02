@@ -266,7 +266,7 @@ To make the payment, simply make an API call in the route defined in the form _a
 ```php
 <?php  
     ===
-    The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+    The **status** property value will indicate the payment status (**approved**, **rejected** or **in_process**).
     ===
 
     require_once 'vendor/autoload.php';
@@ -292,7 +292,7 @@ To make the payment, simply make an API call in the route defined in the form _a
 ```
 ```java
 ===
-The `getStatus()` value will indicate the payment status (`approved`, `rejected` or `in_process`).
+The **getStatus()** value will indicate the payment status (**approved**, **rejected** or **in_process**).
 ===
 
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
@@ -314,11 +314,11 @@ System.out.println(payment.getStatus());
 ```
 ```node
 ===
-The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+The **status** property value will indicate the payment status (**approved**, **rejected** or **in_process**).
 ===
 
 var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken("ENV_ACCESS_TOKEN"n);
+mercadopago.configurations.setAccessToken("ENV_ACCESS_TOKEN");
 
 var payment_data = {
     transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
@@ -342,7 +342,7 @@ var payment_data = {
 ```
 ```ruby
 ===
-The `status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+The **status** property value will indicate the payment status (**approved**, **rejected** or **in_process**).
 ===
 
 require 'mercadopago'
@@ -363,7 +363,7 @@ payment.save()
 ```
 ```csharp
 ===
-The `Status` property value will indicate the payment status (`approved`, `rejected` or `in_process`).
+The **Status** property value will indicate the payment status (**approved**, **rejected** or **in_process**).
 ===
 
 using MercadoPago;
