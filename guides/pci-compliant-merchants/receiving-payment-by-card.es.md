@@ -179,7 +179,7 @@ Una vez hayas obtenido el _Card Token_ de la tarjeta, puedes [crear el pago](htt
 
 ## Mejora la aprobación enviando el _Device Fingerprint_
 
-Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre sobre los comportamientos de los clientes para detectar movimientos inusuales y poder evitar transacciones fraudulentas. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
+Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible recomendamos enviar información sobre los comportamientos de los clientes para detectar movimientos inusuales y poder evitar transacciones fraudulentas. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
 
 ### Implementación del _device_ en Web
 
