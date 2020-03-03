@@ -10,7 +10,7 @@
 * [Schema Validation](#bookmark_schema_validation)
 * [Response & Error](#bookmark_response_&_error)
 * [Pagination](#bookmark_pagination)
-* [IPN Notifications](#bookmark_IPN_notifications)
+* [IPN Notifications](#bookmark_ipn_notifications)
 
 ### Supported Node Versions:
 
@@ -22,34 +22,52 @@ All node versions are supported
 $ npm install mercadopago
 ```
 
+or
+
+```
+$ yarn add mercadopago
+```
+
 ### Promises and Callbacks support
 
 Every method supports either promises and callbacks. For example:
 
 ```javascript
-var at = mp.getAccessToken ();
-
-at.then (
-    function (accessToken) {
-        console.log (accessToken);
-    },
-    function (error) {
-        console.log (error);
-    });
+mp.getAccessToken().then(
+  function(accessToken) {
+    console.log(accessToken);
+  },
+  function(error) {
+    console.log(error);
+  }
+);
 ```
 is the same as:
 
 ```javascript
-mp.getAccessToken(function (err, accessToken){
-    if (err) {
-        console.log (err);
-    } else {
-        console.log (accessToken);
-    }
+mp.getAccessToken(function(err, accessToken) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(accessToken);
+  }
 });
-```
+
 
 In order to use callbacks, simply pass a function as the last parameter.
+
+## Async / await support
+
+  Each method supports the use of waiting.
+
+  ```javascript
+try {
+  const accessToken = await mp.getAccessToken();
+  console.log(accessToken);
+} catch (err) {
+  console.log(err);
+}
+```
 
 ## Configure
 
@@ -59,31 +77,31 @@ In order to use callbacks, simply pass a function as the last parameter.
 
 To configure the SDK you must use the **cofigure** method. this method receives a JSON object. The valid configurations are:
 
-* client_id - String
-* client_secret - String
-* access_token - String
-* sandbox (defaults = false) - Boolean
-* show_promise_error (defaults = true) - Boolean
+* `client_id` - String
+* `client_secret` - String
+* `access_token` - String
+* `sandbox` (default: `false`) - Boolean
+* `show_promise_error` (default: `true`) - Boolean
 
 _Valid credential configurations:_
 
 ```javascript
 mercadopago.configure({
-    access_token: 'ACCESS_TOKEN'
+    access_token: "ACCESS_TOKEN"
 });
 ```
 
 ```javascript
 mercadopago.configure({
     sandbox: true,
-    access_token: 'ACCESS_TOKEN'
+    access_token: "ACCESS_TOKEN"
 });
 ```
 
 ```javascript
 mercadopago.configure({
-    client_id: 'CLIENT_ID',
-    client_secret: 'CLIENT_SECRET'
+    client_id: "CLIENT_ID",
+    client_secret: "CLIENT_SECRET"
 });
 ```
 
@@ -105,7 +123,7 @@ mercadopago.configure({
 
 ```javascript
 mercadopago.configure({
-    client_id: 'CLIENT_ID'
+    client_id: "CLIENT_ID"
 });
 ```
 
@@ -113,7 +131,7 @@ mercadopago.configure({
 
 ```javascript
 mercadopago.configure({
-    client_secret: 'CLIENT_SECRET'
+    client_secret: "CLIENT_SECRET"
 });
 ```
 
@@ -140,7 +158,7 @@ If you are going to use the application on our sandbox environment you *must pro
 ```javascript
 mercadopago.configure({
     sandbox: true,
-    access_token: 'ACCESS_TOKEN'
+    access_token: "ACCESS_TOKEN"
 });
 ```
 
@@ -153,22 +171,37 @@ We support both. To achieve this and support to Node.js versions previous to 0.1
 _Callbacks:_
 
 ```javascript
-library.method(function (err, res) {
-    if (err) return console.log(err);
+library.method(function(err, res) {
+  if (err) return console.log(err);
 
-    console.log(res);
-})
+  console.log(res);
+});
 ```
 
 _Promises:_
 
 ```javascript
-library.method().then(function (res) {
+library
+  .method()
+  .then(function(res) {
     console.log(res);
-}).catch(function (err) {
+  })
+  .catch(function(err) {
     console.log(err);
-});
+  });
 ```
+
+#### `async` / `await`
+
+You can use the promises with `await` instead of `.then(...)`.
+
+```javascript
+try {
+  const res = await library.method();
+  console.log(res);
+} catch (err) {
+  console.log(err);
+}
 
 Use the one that you prefer and adapt to your application.
 
@@ -178,19 +211,19 @@ Use the one that you prefer and adapt to your application.
 
 The SDK exports a JSON object exposing the resources to the integrator. You can access them to execute valid operations. The resources are the following:
 
-- payment
-- preferences
-- preapproval
-- customers
-- merchant_orders
-- money_requests
-- connect
-- ipn
+- `payment`
+- `preferences`
+- `preapproval`
+- `customers`
+- `merchant_orders`
+- `money_requests`
+- `connect`
+- `ipn`
 
 You can access them from the sdk:
 
 ```javascript
-var mercadopago = require('mercadopago');
+const mercadopago = require("mercadopago");
 
 console.log(mercadopago.payment);
 
@@ -207,16 +240,20 @@ search: [Function],
 This will allow you to execute operations, like, creating a payment:
 
 ```javascript
-mercadopago.payment.create({
-  description: 'Buying a PS4',
-  transaction_amount: 10500,
-  payment_method_id: 'rapipago',
-  payer: {
-    email: 'test_user_3931694@testuser.com',
+
+mercadopago.payment
+  .create({
+    description: "Buying a PS4",
+    transaction_amount: 10500,
+    payment_method_id: "rapipago",
+    payer: {
+      email: "test_user_3931694@testuser.com",
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
       number: '34123123'
     }
+    ------------
   }
 }).then(function (mpResponse) {
   console.log(mpResponse);
@@ -293,10 +330,10 @@ mercadopagoResponse {
 
 Basically the SDK is a super enhance REST Client with powerful tools. Almost each resource (Payment, Preference, etc...) have basic methods:
 
-- create (POST)
-- update (PUT)
-- get (GET)
-- remove (DELETE)
+- `create` (POST)
+- `update` (PUT)
+- `get` (GET)
+- `remove` (DELETE)
 
 Those methods are dynamically created by the SDK. Each one has the following parameters.
 
@@ -314,7 +351,7 @@ mercadopago.resource.create( ..., configurations ).then().catch();
 
 The configurations parameter is a JSON Object that allow the next values:
 
-- qs:
+- `qs`
 
 This is a JSON Object with the parameters you want to send over the querystring. Let's do an example trying to get all my payments.
 
@@ -323,7 +360,7 @@ If we see the [Search API](https://www.mercadopago.com.ar/developers/en/api-docs
 ```javascript
 var configurations = {
   qs: {
-    'payer.id': 'me'
+   "payer.id": "me"
   }
 };
 
@@ -346,29 +383,35 @@ If an operation fails the error is going to have the **Idempotency-Key** sended.
 
 ```javascript
 var payment = {
-  description: 'Buying a PS4',
+  description: "Buying a PS4",
   transaction_amount: 10500,
-  payment_method_id: 'rapipago',
+  payment_method_id: "rapipago",
   payer: {
     email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
-      type: 'DNI',
-      number: '34123123'
+      type: "DNI",
+      number: "34123123"
     }
+    ------------
   }
 };
 
-mercadopago.payment.create(payment).then(function (mpResponse) {
-  console.log(mpResponse);
-}).catch(function (mpError) {
-  return mercadopago.payment.create(payment, {
-    qs: {
-      idempotency: mpError.idempotency
-    }
+mercadopago.payment
+  .create(payment)
+  .then(function(mpResponse) {
+    console.log(mpResponse);
+  })
+  .catch(function(mpError) {
+    return mercadopago.payment.create(payment, {
+      qs: {
+        idempotency: mpError.idempotency
+      }
+    });
+  })
+  .then(function(mpResponse) {
+    console.log(mpResponse);
   });
-}).then(function(mpResponse){
-  console.log(mpResponse);
-});
 ```
 
 The first response is going to be:
@@ -398,10 +441,12 @@ var payment = {
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
       number: '34123123'
     }
+    ------------
   }
 };
 
@@ -428,7 +473,7 @@ mercadopago.payment.get(1, {}, function(error, response){
 ```
 
 ```javascript
-mercadopago.resource.create( ... ).then().catch();
+mercadopago.resource.create(...).then().catch();
 
 mercadopago.payment.get(1).then(function (response) {
   console.log(response);
@@ -437,32 +482,46 @@ mercadopago.payment.get(1).then(function (response) {
 });
 ```
 
+o con `await`:
+
+```javascript
+try {
+    await mercadopago.resource.create(...);
+    const response = await mercadopago.resource.get(1);
+
+    console.log(response)
+} catch (error) {
+    console.log('An error ocurred: ' + error.message);
+}
+```
+
+
 ### Dynamic Parameters
 
 We already said that the last two parameters are _configurations_ and _callback_, but what about the first parameters?. Depending on the **method** (POST, GET, etc...) and the *path* the parameters are going to change.
 
 First we are going to start talking about the path. Let's see the different type of paths:
 
-- /v1/payments - No path variables
-- /v1/payments/:id - One path variable
-- /v1/customers/:id/cards/:card_id - Two path variables
+- `/v1/payments` - No path variables
+- `/v1/payments/:id` - One path variable
+- `/v1/customers/:id/cards/:card_id` - Two path variables
 
 This means that the method you call needs to get this variable (id, card_id) on some way. **This is when the method comes in the way**. Let's see some methods
 
 ```javascript
 payment.create = requestManager.describe({
-  path: '/v1/payments',
-  method: 'POST'
+  path: "/v1/payments",
+  method: "POST"
 });
 
 payment.update = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'PUT'
+  path: "/v1/payments/:id",
+  method: "PUT"
 });
 
 payment.get = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'GET'
+  path: "/v1/payments/:id",
+  method: "GET"
 });
 ```
 
@@ -477,68 +536,77 @@ GET, DELETE: This are going to receive the variables on the parameters. Let's se
 
 ```javascript
 payment.get = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'GET'
+  path: "/v1/payments/:id",
+  method: "GET"
 });
 
 // Calling the get
-mercadopago.payment.get(1, {}, function (){});
+mercadopago.payment.get(1, {}, function() {});
 ```
 
 ```javascript
 customers.cards.get = requestManager.describe({
-  path: '/v1/customers/:id/cards/:card_id',
-  method: 'GET'
+  path: "/v1/customers/:id/cards/:card_id",
+  method: "GET"
 });
 
 // Getting the card 10 from the customer 1
-mercadopago.customers.cards.get(1, 10, {}, function ()  {});
+mercadopago.customers.cards.get(1, 10, {}, function() {});
 ```
-
 #### With Payload
 POST, PUT, PATH: This are going to match the variables with the ones on the payload. Let's see an example:
 
 ```javascript
 payment.update = requestManager.describe({
-  path: '/v1/payments/:id',
-  method: 'PUT'
+  path: "/v1/payments/:id",
+  method: "PUT"
 });
 
 // Calling the update
-mercadopago.payment.update({
-  id: 1,
-  status: 'cancelled'
-}, function (){});
+mercadopago.payment.update(
+  {
+    id: 1,
+    status: "cancelled"
+  },
+  function() {}
+);
 ```
 
 ```javascript
 customers.cards.update = requestManager.describe({
-  path: '/v1/customers/:id/cards/:card_id',
-  method: 'PUT'
+  path: "/v1/customers/:id/cards/:card_id",
+  method: "PUT"
 });
 
 // Calling the update
-mercadopago.customers.cards.update({
-  id: 1,
-  card_id: 10,
-  expiration_year: 2020
-}, function (){});
+mercadopago.customers.cards.update(
+  {
+    id: 1,
+    card_id: 10,
+    expiration_year: 2020
+  },
+  function() {}
+);
 ```
+
 
 The path variable name must be the same in the payload. All the names already are the same ones that you need to send on the update.
 
 A good example will be:
 
 ```javascript
-mercadolibre.payment.get(1).then(function (mpResponse) {
-  // Cancelling a payment
-  return mercadolibre.payment.update({
-    id: mpResponse.body.id,
-    status: 'cancelled'
+mercadolibre.payment
+  .get(1)
+  .then(function(mpResponse) {
+    // Cancelling a payment
+    return mercadolibre.payment.update({
+      id: mpResponse.body.id,
+      status: "cancelled"
+    });
+  })
+  .catch(function(error) {
+    console.log("An error ocurred updating the payment");
   });
-}).catch(function (error) {
-  console.log('An error ocurred updating the payment');
-});
 ```
 
 ## Backward Compatibility
@@ -547,25 +615,26 @@ mercadolibre.payment.get(1).then(function (mpResponse) {
 
 If you're implementing the [old SDK](https://github.com/mercadopago/sdk-nodejs), you don't need to do anything at first. Just update the NPM Package and you will received all of the previous methods:
 
-- sandboxMode
-- getAccessToken
-- get
-- post
-- put
-- delete
-- createPreference
-- updatePreference
-- getPreference
-- createPreapprovalPayment
-- updatePreapprovalPayment
-- getPreapprovalPayment
-- searchPayment
-- getPayment
-- getPaymentInfo
-- getAuthorizedPayment
-- refundPayment
-- cancelPayment
-- cancelPreapprovalPayment
+
+- `sandboxMode`
+- `getAccessToken`
+- `get`
+- `post`
+- `put`
+- `delete`
+- `createPreference`
+- `updatePreference`
+- `getPreference`
+- `createPreapprovalPayment`
+- `updatePreapprovalPayment`
+- `getPreapprovalPayment`
+- `searchPayment`
+- `getPayment`
+- `getPaymentInfo`
+- `getAuthorizedPayment`
+- `refundPayment`
+- `cancelPayment`
+- `cancelPreapprovalPayment`
 
 When you use them, you are going to receive a warning on the console that this methods are deprecated. They are going to be remove from the SDK in future versions.
 
@@ -599,9 +668,9 @@ This type of validations are going to output a warning on console.
 
 We implement two new objects that will help you make your implementation much more easier:
 
-- mercadopagoResponse
-- mercadopagoIpnResponse
-- mercadopagoError
+- `mercadopagoResponse`
+- `mercadopagoIpnResponse`
+- `mercadopagoError`
 
 ### mercadopagoResponse
 
@@ -660,10 +729,12 @@ var payment = {
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com',
+----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
       number: '34214577'
     }
+    ------------
   }
 };
 
@@ -690,10 +761,12 @@ mercadopago.payment.create({
   payment_method_id: 'rapipago',
   payer: {
     email: 'test_user_3931694@testuser.com',
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     identification: {
       type: 'DNI',
       number: '34214577'
     }
+    ------------
   }
 }).then(function (response) {
   console.log(response);

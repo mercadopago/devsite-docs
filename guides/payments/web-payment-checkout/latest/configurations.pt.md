@@ -17,10 +17,10 @@ Você pode adaptar a integração ao seu negócio adicionando atributos na prefe
 Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 ----[mlm, mlc, mlu, mco]----
-Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
+Se você oferece compras de valores altos, por exemplo, você pode [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 
-Através da preferência, você pode [obter informações de negócio](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio). Além disso, você pode mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) ou [associando seus anúncios do Google](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+Através da preferência, você pode [obter informações de negócio](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_saiba_mais_sobre_seu_negócio). Além disso, você pode mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_associar_um_pixel_do_facebook) ou [associando seus anúncios do Google](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_associar_uma_tag_do_google_ads).
 
 ## Exemplo de uma preferência completa
 
@@ -308,16 +308,6 @@ Se quiser ativar o pagamento de uma preferência com uma determinada duração, 
 "expiration_date_from": "2017-02-01T12:00:00.000-04:00",
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
-
-### Sponsor ID
-
-O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de software que faz a integração do  Checkout Mercado Pago, este dado é visível na preferência e no pagamento.
-
-
-```json
-"sponsor_id": 123456789
-```
-
 
 ### Diversos itens
 
@@ -735,16 +725,14 @@ Desta forma, quando um pagamento é aprovado por meio do seu Checkout Mercado Pa
 
 ## Saiba mais sobre seu negócio
 
-Utilize `header` em sua preferência para obter métricas de negócio. Você só deve adicionar os códigos de identificação para o caso pertinente. 
-
-Por exemplo, pode ter uma equipe de desenvolvedores, estar integrado através de uma plataforma de comércio eletrônico ou ser parte de um grupo de contas associadas a um grupo vendedor.
+Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de negócio. Utilize `headers` na sua preferência de pagamento agregando o código de identificação para o caso que corresponda. Não é obrigatório completar os três campos mencionados.
 
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
-`x-integrator-id` | Integrador | Desenvolvedores ou agências que realizaram a integração.
-`x-platform-id` | Plataforma | [Plataforma](https://partners.mercadopago.com/) utilizada pela conta vendedor.
-`x-corporation-id` | Corporações | Contas associadas a uma conta vendedor ou grupo econômico.
-> Você é desenvolvedor ou agência e precisa do seu identificado? [Solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
+`x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração.
+`x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções.
+`x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico.
+> Se você precisa do seu `integrator_id` ou `platform_id`, [solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
 
 [[[
 ```php

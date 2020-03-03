@@ -13,9 +13,14 @@ sites_supported:
 
 You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
-If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) that you do not want to accept.
+----[mla, mlb]----
+If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+------------
+----[mlm, mlc, mlu, mco]----
+If you offer purchases of high amounts, for example, you can [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+------------
 
-You can [get business information](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+You can [get business information](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_get_information_about_your_business) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_associate_a_facebook_pixel) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_associate_a_google_ads_tag).
 
 
 ## Example of a complete preference
@@ -195,15 +200,6 @@ If you want to enable the payment of a preference with a certain duration, you c
 "expiration_date_from": "2017-02-01T12:00:00.000-04:00",
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
-
-### Sponsor ID
-
-The `sponsor_id` attribute is an identifier of the developer or software company that performs the Checkout Mercado Pago integration, this data is visible in the preference and in the payment.
-
-```json
-"sponsor_id": 123456789
-```
-
 
 ### Multiple Items
 
@@ -620,16 +616,14 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 
 ## Get information about your business
 
-To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable.
-
-For example, you can have a developers team, be integrated through an e-commerce platform or be part of a group of accounts associated with a seller group.
+Our [Partners](https://partners.mercadopago.com/) can obtain business metrics. To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable. It is not required to complete the three fields mentioned.
 
 Header | Code Type | Identifiers
 ------ | ---------------| ---------
-`x-integrator-id` | Integrator | Developers or agencies that conducted the integration.
-`x-platform-id` | Platform | [Platform](https://partners.mercadopago.com/) used by the seller's account.
-`x-corporation-id` | Corporations | Accounts associated with an economic group or seller's account.
-> Are you a developer or agency and need your identifier? [Request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
+`x-integrator-id` | Integrator | For developers or agencies that conducted the integration.
+`x-platform-id` | Platform | For the platforms or modules that offer Mercado Pago in their solutions.
+`x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group.
+> If you need your `integrator_id` or your` platform_id`, [request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
 ```php

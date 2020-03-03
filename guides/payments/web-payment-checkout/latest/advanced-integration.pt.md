@@ -38,10 +38,12 @@ Recomendamos detalhar todas as informações possíveis sobre o item e o comprad
     "area_code" => "11",
     "number" => "4444-4444"
   );
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
   $payer->identification = array(
     "type" => "CPF",
     "number" => "19119119100"
   );
+    ------------
   $payer->address = array(
     "street_name" => "Street",
     "street_number" => 123,
@@ -61,10 +63,12 @@ var payer = {
     area_code: "11",
     number: "4444-4444"
   },
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: {
     type: "CPF",
     number: "19119119100"
   },
+  ------------
   address: {
     street_name: "Street",
     street_number: "123",
@@ -83,9 +87,11 @@ payer.setName("Joao")
      .setPhone(new Phone()
         .setAreaCode("11")
         .setPhoneNumber("4444-4444"))
+      ----[mla, mlb, mlu, mco, mlc, mpe]----
      .setIdentification(new Identification()
         .setType("CPF")
         .setNumber("19119119100"))
+      ------------
      .setAddress(new Address()
         .setStreetName("Street")
         .setBuildingNumber("123")
@@ -103,10 +109,12 @@ payer = MercadoPago::Payer.new({
     area_code: "11",
     number: "4444-4444"
   })
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: MercadoPago::Identification.new({
     type: "CPF",
     number: "19119119100"
   })
+  ------------
   address: MercadoPago::Address.new ({
     street_name: "Street",
     street_number: "123",
@@ -130,11 +138,13 @@ Payer payer = new Payer()
         AreaCode = "11",
         Number = "4444-4444"
     },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     Identification = new Identification()
     {
         Type = "CPF",
         Number = "19119119100"
     },
+    ------------
     Address = new Address()
     {
         StreetName = "Street",

@@ -1,13 +1,13 @@
 
 # Generación por panel de Mercado Pago
 
-Genera tus reportes de Dinero en cuenta desde tu panel de Mercado Pago.
+Genera los reportes de Todas las transacciones desde tu panel de Mercado Pago.
 
 
 Sigue estos pasos para generar tus reportes:
 
 1. Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus Informes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [tus Informes](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus Informes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus Informes](https://www.mercadopago.com.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus Informes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus Informes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [tus Informes](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y elige la opción de *Reportes*.
-1. Ve a ----[mla]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [reportes de Dinero en cuenta](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y haz clic en *Crear Reporte*.
+1. Ve a ----[mla]---- [reportes de Todas las transacciones](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [reportes de Todas las transacciones](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [reportes de Todas las transacciones](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [reportes de Todas las transacciones](https://www.mercadopago.com.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [reportes de Todas las transacciones](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [reportes de Todas las transacciones](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [reportes de Todas las transacciones](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y haz clic en *Crear Reporte*.
 1. Busca las operaciones por período de tiempo y selecciona las que quieras conciliar.
 
 <span style="margin-left:40px">¡Y listo! Vas a ver tu reporte *En preparación*.</span>
@@ -17,7 +17,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 <hr/>
 

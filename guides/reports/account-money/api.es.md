@@ -1,7 +1,7 @@
 
 # Generación por API
 
-Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero en cuenta las veces que quieras.
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y **automatiza la frecuencia de generación del reporte** de Todas las transacciones las veces que quieras.
 
 ## Configurar tus reportes
 
@@ -471,7 +471,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ## Generar de forma manual
