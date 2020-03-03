@@ -38,6 +38,7 @@ A funcionalidade de Split de Pagamentos fornece uma solução para os pagamentos
 #### Liberação do dinheiro dos vendedores
 
 
-* O dinheiro dos seus Vendedores será liberado em 30 dias por padrão.
+* O dinheiro dos seus vendedores será liberado em 30 dias por padrão.
+
 
 [Comece a usar pagamentos divididos no Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/advanced-payments/receive-split-payments/).
