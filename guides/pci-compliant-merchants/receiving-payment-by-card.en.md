@@ -179,7 +179,7 @@ Once you got the card_token, you can [create the payment](https://www.mercadopag
 
 ## Get approval faster by submitting the device fingerprint
 
-Mercado Pago has its own fraud prevention tools. We always recommend sending information about customer behaviors to detect unusual movements and avoid fraudulent transactions. And don't worry, we take care of your customers' data and we won't share them with anyone.
+Mercado Pago has its own fraud prevention tools. We always recommend sending information about customer behaviors to detect unusual movements and avoid fraudulent transactions. And don't worry, we take care of your customer's data and we won't share them with anyone.
 
 ### Device deployment on the web
 
