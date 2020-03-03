@@ -93,7 +93,7 @@ Dentro de la orden, agrega el campo `loyalty` con todos sus datos requeridos com
 
 Actualmente contamos con los siguientes programas de fidelización.
 
-| Programa de fidelización    | Atributo `program`.          | 
+| Programa de fidelización    | Atributo `program`          | 
 | ------------- | -----------------------------------------------|
 | Shell     | `CTC`          |
 | YPF  | `serviclub`          |    
@@ -101,7 +101,7 @@ Actualmente contamos con los siguientes programas de fidelización.
 
 ## Códigos de producto
 
-Les dejamos disponible los siguientes códigos de producto para los programas de fidelización activos. Los mismos deben agregarse en el campo `code` dentro del objeto `products`.
+Usa los siguientes códigos de producto para los programas de fidelización activos. Los mismos deben agregarse en el campo `code` dentro del objeto `products`.
 
 Códigos de producto **Shell (CTC)**:
 - 1 = NAFTA VPN
@@ -124,8 +124,8 @@ Códigos de producto **YPF (Serviclub)**:
 1. El parámetro `quantity` no puede contener más de 3 puntos decimales. 
 2. YPF no tiene productos de *Shop*.
 3. Para productos *Shop* en Shell, se hace el cálculo de `quantity` multiplicado por `unit_price` para calcular los puntos a cargar. Es por esto que debe ponerse `code = 7`, `quantity = 1` y `unit_price` = monto total de los productos vendidos en shop.
-4. La cantidad de puntos que se suman para combustibles, depende del código de producto (`code`) y la cantidad (`quantity`), validando la unidad en cuestión (unit`). Cada producto suma una cantidad distinta en base a la cantidad cargada. Esta lógica la aplica directamente el programa de beneficios.
-5. El `transaction_id` debe ser único no sólo para cada integrador, sino en todo el universo de operaciones de *loyalty*, recomendamos concatenarlo con el `store_id` y la cara del surtidor.
+4. La cantidad de puntos que se suman para combustibles, depende del código de producto (`code`) y la cantidad (`quantity`), validando la unidad en cuestión (`unit`). Cada producto suma una cantidad distinta en base a la cantidad cargada. Esta lógica la aplica directamente el programa de beneficios.
+5. El `transaction_id` debe ser único no solo para cada integrador, sino en todo el universo de operaciones de fidelización. Recomendamos concatenarlo con el `store_id` y la cara del surtidor.
 
 
 ---
@@ -136,6 +136,6 @@ Códigos de producto **YPF (Serviclub)**:
 >
 > Integrar QR modelo desatendido
 >
-> Revisa toda la información del modelo desatendido 
+> Conoce paso a paso cómo integrar este modelo.
 >
 >[Integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/)
