@@ -309,16 +309,6 @@ Se quiser ativar o pagamento de uma preferência com uma determinada duração, 
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-### Sponsor ID
-
-O atributo `sponsor_id` é um identificador do desenvolvedor ou empresa de software que faz a integração do  Checkout Mercado Pago, este dado é visível na preferência e no pagamento.
-
-
-```json
-"sponsor_id": 123456789
-```
-
-
 ### Diversos itens
 
 Se você precisar criar uma preferência para mais de um item, só deverá adicioná-los como uma lista dentro _dos items._
@@ -735,16 +725,14 @@ Desta forma, quando um pagamento é aprovado por meio do seu Checkout Mercado Pa
 
 ## Saiba mais sobre seu negócio
 
-Utilize `header` em sua preferência para obter métricas de negócio. Você só deve adicionar os códigos de identificação para o caso pertinente. 
-
-Por exemplo, pode ter uma equipe de desenvolvedores, estar integrado através de uma plataforma de comércio eletrônico ou ser parte de um grupo de contas associadas a um grupo vendedor.
+Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de negócio. Utilize `headers` na sua preferência de pagamento agregando o código de identificação para o caso que corresponda. Não é obrigatório completar os três campos mencionados.
 
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
-`x-integrator-id` | Integrador | Desenvolvedores ou agências que realizaram a integração.
-`x-platform-id` | Plataforma | [Plataforma](https://partners.mercadopago.com/) utilizada pela conta vendedor.
-`x-corporation-id` | Corporações | Contas associadas a uma conta vendedor ou grupo econômico.
-> Você é desenvolvedor ou agência e precisa do seu identificado? [Solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
+`x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração.
+`x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções.
+`x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico.
+> Se você precisa do seu `integrator_id` ou `platform_id`, [solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
 
 [[[
 ```php
