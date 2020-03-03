@@ -35,7 +35,7 @@ La **funcionalidad de Split de Pagos** brinda una solución para los pagos de Ma
 * La comisión que cobra el Marketplace se aplica pago a pago.
 * Esto permite tener distintas comisiones para distintos vendedores y a su vez distintas comisiones según el tipo o categoría del producto que ofrezca un vendedor.
 
-#### Liberación de dinero de tus Vendedores 
+#### Liberación de dinero de tus vendedores 
 
 * El dinero de tus Vendedores se liberará en 30 días por defecto.
 
