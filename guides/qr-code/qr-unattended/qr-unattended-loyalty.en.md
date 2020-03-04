@@ -8,13 +8,6 @@ sites_supported:
 
 # Programa de fidelización
 
-> WARNING 
-> 
-> ADVERTENCIA
-> 
-> Ten en cuenta que el programa de fidelización es exclusivo del [modelo desatendido de Código QR](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/).
-
-
 ## ¿Qué es el programa de fidelización?
 
 Programa de fidelización es un objeto utilizado en el modelo desatendido que **permite sumar puntos en programas seleccionados**. En cada una de las órdenes deben agregarse estos datos para poder cargar puntos.
