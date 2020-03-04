@@ -1,9 +1,8 @@
 ---
+indexable: false
+
 sites_supported:
 - mla
----
----
-indexable: false
 ---
 
 
@@ -15,9 +14,16 @@ indexable: false
 > 
 > Ten en cuenta que el programa de fidelización es exclusivo del [modelo desatendido de Código QR](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/).
 
+
 ## ¿Qué es el programa de fidelización?
 
 Programa de fidelización es un objeto utilizado en el modelo desatendido que **permite sumar puntos en programas seleccionados**. En cada una de las órdenes deben agregarse estos datos para poder cargar puntos.
+
+> WARNING 
+> 
+> ADVERTENCIA
+> 
+> Ten en cuenta que el programa de fidelización es exclusivo del [modelo desatendido de Código QR](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/).
 
 ## ¿Cómo funciona?
 
@@ -26,43 +32,39 @@ Dentro de la orden, agrega el campo `loyalty` con todos sus datos requeridos com
 ```JSON
 
 {
-"collector_id": 446566691,
-"sponsor_id": 446559784,
-"items":[
-{
-"title": "$500.00 de SUPER",
-"currency_id": "ARS",
-"description": "$500.00 de SUPER",
-"quantity": 1.0,
-"unit_price": 500.00
-}
-],
-"external_reference": "45ea80da",
-"notification_url": "https://www.tusitio.com",
+    "collector_id": 446566691,
+    "sponsor_id": 446559784,
+    "items":[{
+        "title": "$500.00 de SUPER",
+        "currency_id": "ARS",
+        "description": "$500.00 de SUPER",
+        "quantity": 1.0,
+        "unit_price": 500.00
+        }],
+    "external_reference": "45ea80da",
+    "notification_url": "https://www.tusitio.com",
 
-"loyalty": {
-"program": "serviclub",
-"transaction_id": "00029-45ea80da",
-"invoice_number": "45ea80da",
-"transaction_date": "2019-12-12T10:40:49.000+00:00",
-"transaction_amount": 500,
-"store_id": "00029",
-"products": [
-{
-"code": "2",
-"quantity": 11.2,
-"unit": "litre",
-"unit_price": 62.24
-}
-],
-"cashier_identification": {
-"type": "DNI",
-"number": "00000000"
-},
-"period": "0000",
-"shift": "1",
-"affinity_plan": "7"
-}
+    "loyalty": {
+        "program": "serviclub",
+        "transaction_id": "00029-45ea80da",
+        "invoice_number": "45ea80da",
+        "transaction_date": "2019-12-12T10:40:49.000+00:00",
+        "transaction_amount": 500,
+        "store_id": "00029",
+        "products": [{
+            "code": "2",
+            "quantity": 11.2,
+            "unit": "litre",
+            "unit_price": 62.24
+            }],
+        "cashier_identification": {
+            "type": "DNI",
+            "number": "00000000"
+        },
+        "period": "0000",
+        "shift": "1",
+        "affinity_plan": "7"
+    }
 }
 
 ```
@@ -136,6 +138,6 @@ Códigos de producto **YPF (Serviclub)**:
 >
 > Integrar QR modelo desatendido
 >
-> Conoce paso a paso cómo integrar este modelo.
+> Conoce paso a paso como integrar este modelo.
 >
 >[Integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/)
