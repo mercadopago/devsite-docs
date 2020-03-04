@@ -176,26 +176,37 @@ print(json.dumps(card_token, indent=4))
 
 Após obter o card_token, você pode [criar o pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card).
 
-## Obtenha aprovação mais rápida enviando o Device Fingerprint
+## Obtenha aprovação mais rápida enviando o device fingerprint
 
-O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o dispositivo do comprador, isso ajudará a evitar transações fraudulentas.
+O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
 
-### Implementação de dispositivo na Web
+### Implementação de dispositivo na web
 
-Para implementar a geração do dispositivo em seu site, adicione o seguinte código em seu checkout:
+Para **implementar a geração do dispositivo em seu site**, adicione o seguinte código em seu plataforma de pagos:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
- É importante que envie o campo `MP_DEVICE_SESSION_ID` (gerado automaticamente como uma variável javascript global) para o seu servidor, que no momento da criação do pagamento você adiciona o seguinte header ao request:
-
+**É importante que você envie o `device_id` gerado por esse código ao seu servidor** e que, ao criar o pagamento, adicione o seguinte header à request:
 
 ```http
 X-meli-session-id: device_id
 ```
+**Você pode obter o `device_id` de duas formas:**
 
-Onde `device_id` foi substituído pelo ID obtido no passo anterior.
+Uma variável global de javascript é criada automaticamente com o nome `MP_DEVICE_SESSION_ID`, cujo o valor é o `device_id`. Se você preferir atribuí-lo a outra variável, indique o nome adicionando o atributo `output`.
+
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
+````
+
+Você também pode adicionar uma tag HTML no seu site com o identificador `id="deviceId"`, e o código atribuirá automaticamente o valor `device_id`.
+
+```html
+<input type="hidden" id="deviceId">
+```
+
 
 ### Implementação de dispositivos em aplicativos móveis nativos
 

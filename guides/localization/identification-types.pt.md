@@ -1,6 +1,13 @@
+
 # Tipos de documentos
 
 Os tipos de documentos aceitos ao efetuar uma cobrança através do Mercado Pago variam de acordo com o país.
+
+> WARNING 
+> 
+> Importante
+> 
+> Lembre-se que essas informações não se aplicam ao México
 
 ## Obtenha os tipos de documentos
 

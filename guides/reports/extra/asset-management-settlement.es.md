@@ -4,9 +4,9 @@ sites_supported:
   - mlb
 ---
 
-# Los rendimientos en el reporte de Dinero en cuenta
+# Los rendimientos en el reporte de Todas las transacciones
 
-Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pago en el reporte de Dinero en cuenta.
+Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pago en el reporte de Todas las transacciones.
 
 ----[mla]----
 
@@ -22,7 +22,7 @@ Te mostramos cómo ver los rendimientos generados desde tu cuenta de Mercado Pag
 
 ----[mla]---- 
 
-Puedes ver dos tipos de movimientos según la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero en cuenta: rendimientos positivos y negativos.
+Puedes ver dos tipos de movimientos según la cantidad de [cuotapartes](https://www.mercadopago.com.ar/ayuda/Antes-de-invertir_4053) que adquieras en base a tu dinero disponible: rendimientos positivos y negativos.
 
 ------------
 ----[mlb]---- 
@@ -51,11 +51,11 @@ Para identificarlos en tus reportes, vas a encontrar que los datos de las column
 
 ### Rendimientos positivos
 
-![Ejemplo rendimiento positivo en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-positive.png)
+![Ejemplo rendimiento positivo en reporte de Todas las transacciones](/images/manage-account/reports/reports-information-details/asset-management-settlement-positive.png)
 
 ### Rendimientos negativos
 
-![Ejemplo rendimiento negativo en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-negative.png)
+![Ejemplo rendimiento negativo en reporte de Todas las transacciones](/images/manage-account/reports/reports-information-details/asset-management-settlement-negative.png)
 
 ----[mlb]---- 
 
@@ -73,18 +73,18 @@ Para identificarlos en tus reportes, vas a encontrar que los datos de las column
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ### Próximos pasos
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Genera tu reporte de Dinero en cuenta
+> Genera tu reporte de Todas las transacciones
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tu reporte de Dinero en cuenta](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)
+> [Genera tu reporte de Todas las transacciones](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
