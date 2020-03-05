@@ -131,6 +131,6 @@ Códigos de producto **YPF (Serviclub)**:
 >
 > Integrar QR modelo desatendido
 >
-> Conoce paso a paso como integrar este modelo.
+> Conoce paso a paso cómo integrar este modelo.
 >
 >[Integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/)
