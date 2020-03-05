@@ -255,6 +255,7 @@ script.setAttribute("output","vtex.deviceFingerprint");
 script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
+7. Salvar a configuração
 
 ## Credenciais
 

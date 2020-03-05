@@ -490,6 +490,8 @@ script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
 
+7. Seleccionar "guardar"
+
 ## Interpretar log de VTEX
 
 Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.

@@ -262,6 +262,8 @@ script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
 
+7. Select "save"
+
 ## Credentials
 
 To get Mercado Pago credentials you must follow this steps:
