@@ -183,13 +183,13 @@ Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre qu
 
 ### Implementación del device en web
 
-Para **implementar en tu sitio la generación del device** debes agregar el siguiente código a tu plataforma de pagos:
+Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu plataforma de pagos:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-**Es importante que envíes el `device_id` generado por este código a tu servidor** y que al momento de crear el pago agregues el siguiente header al request:
+Es importante que envíes el `device_id` generado por este código a tu servidor y que al momento de crear el pago agregues el siguiente header al request:
 
 ```http
 X-meli-session-id: device_id
