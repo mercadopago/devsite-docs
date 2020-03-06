@@ -1,43 +1,85 @@
----
-  indexable: false
----
+# Prevención de contracargos
 
-# Gestión de Contracargos
+Encuentra toda la información sobre los contracargos, cómo prevenirlos y gestionarlos por API.
+
+## ¿Qué es un contracargo?
+
+Se crea un contracargo cuando **el cliente disputa un cobro de su tarjeta de crédito o débito ante el banco emisor de su tarjeta y pide un reembolso del dinero.**
+
+Cuando esto ocurre, podemos retener el dinero del cobro hasta que el problema sea solucionado y gestionamos el caso con la entidad emisora de la tarjeta. Tenemos 10 días para presentar los comprobantes de la operación y el proceso de validación puede demorar hasta 140 días.
+
+> Si el cobro es con Point, el proceso demora hasta 75 días.
+
+En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
 
 > NOTE
 >
 > Nota
 >
-> **¿Qué es?** Cuando un comprador se comunica con la entidad que emitió su tarjeta (un banco, por ejemplo) y desconoce un pago realizado a través de ese medio, se genera un _contracargo_. [Más información &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249)
+> Si recibes un contracargo y no sabes que hacer, consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
 
-El contracargo, en principio, significa que Mercado Pago retendrá el dinero de la venta hasta que el problema sea solucionado.
+## Recomendaciones para prevenir contracargos
 
-Los contracargos pueden ser gestionados vía API.
-Es importante en este proceso mencionar cuáles son las instancias clave:
+No es posible evitar todos los contracargos pero puedes reducir la probabilidad de que un pago se convierta en uno.
 
-1. Aparición del contracargo
-2. Consulta del contracargo
-3. Entendimiento de la cobertura
-4. Disputa del contracargo
-5. Revisión por parte de Mercado Pago
-6. Resolución
+### Completa los datos de tu negocio
 
-Ahora entraremos en detalle en cada una de ellas.
+Si el comprador no reconoce el cargo en el resumen de su tarjeta puede realizar un contracargo. Para evitar estos casos, completa la [información de tu negocio](https://www.mercadopago.com.uy/settings/account) para definir cómo quieres aparecer en los resúmenes de tarjetas y en los SMS de confirmación de pago.
 
-## Aparición del contracargo
+### Suma el código de seguridad en tu sitio
 
-Vía [IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) te notificaremos instantáneamente cada vez que recibas un contracargo. Para que esto suceda, debes estar subscripto al tema `chargebacks` dentro de la [configuración](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad para prevenir el fraude. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
 
-## Consulta del contracargo
+Es muy simple. Agrega el script, configura la sección de tu sitio en la que se encuentra ¡y listo! Solo debes reemplazar el valor de `view` por el nombre de la página en la que quieras sumarlo.
 
-La notificación IPN va a contener el `ID` del contracargo.
-Con dicho `ID` podrás hacer un **GET** a `https://api.mercadopago.com/v1/chargebacks/ID?access_token=` 
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
+```
+
+#### Posibles valores para VIEW
+
+| Tipo                                                         | Descripción                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *home* | Página principal de tu sitio. |
+| *search* | Página de búsqueda o listado de productos. |
+| *item* | Página de un producto específico. |
+
+> NOTE
+>
+> Nota
+>
+> En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
+### Envía el comprobante de compra
+
+Es importante que mandes el comprobante del pago por e-mail o por mensaje de texto para ayudar a que tu cliente recuerde a qué se debe el pago que hizo.
+
+### Detalla toda la información sobre el pago
+
+Para optimizar la validación de seguridad de los pagos, envíanos la mayor cantidad de datos posibles al momento de crear el pago. Por ejemplo, si nos envías datos del comprador, podemos detectar si ese comprador realizó pagos sospechosos en otro momento y prevenirlo. Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+
+### Devuelve los pagos sospechosos
+
+Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte lo sucedido. Te recomendamos que [canceles la compra](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) y le devuelvas el dinero al comprador para evitar el contracargo.
+
+### Revisa los datos al cobrar con Point
+
+Pide el documento de tus compradores a la hora de hacer el pago y comprueba que los datos y la firma coinciden con los de la tarjeta.
+
+## Gestiona tus contracargos por API
+
+### Aparición del contracargo
+
+Te avisaremos vía [notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) cada vez que recibas un contracargo. Para [comenzar a recibir notificaciones](https://www.mercadopago.com.ar/herramientas/notificaciones), debes completar tus datos y elegir la opción Chargebacks.
+
+### Consulta del contracargo
+
+La notificación IPN va a contener el ID del contracargo. Usa el ID para obtener información particular del caso.
 
 ```
 curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
 ```
 
-para consultar su información:
+Vas a obtener la siguiente información:
 
 ```json
 {
@@ -66,46 +108,19 @@ para consultar su información:
 }
 ```
 
-## Entendimiento de cobertura
+### Entendimiento de cobertura
 
-Según la operatoria del vendedor, su acuerdo comercial - o ambos - puede variar la política de cobertura de cada contracargo por parte de Mercado Pago. El campo `coverage_elegible` define si el contracargo es posible de ser disputado o no.
+Según la operatoria del vendedor o su acuerdo comercial puede variar la política de cobertura de cada contracargo por parte de Mercado Pago. Como también, si se necesita presentar documentos.
 
-| Campo         | Valor           | Descripción
-| ----          | ----            | ----
-| `coverage_elegible` | **false** | Indica que el contracargo no puede ser disputado
-| `coverage_elegible` | **true**  |Indica que el contracargo sí puede ser disputado
+### Disputa del contracargo
 
-Además se cuenta con el campo `documentation_required` que indica si se requiere que se suba la documentación para ser cubierto. 
+Puedes enviar la información respaldatoria que valida la venta por API. 
 
-| Campo         | Valor           | Descripción
-| ----          | ----            | ----
-| `documentation_required` | **false** | Indica que no se requiere documentación para el contracargo
-| `documentation_required` | **true**  |Indica que se requiere documentación para el contracargo
-
-
-----[mla,mlc,mlm,mpe,mco,global]----
-En caso de que se requiera proveer documentación, se cuenta con un plazo de 7 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
-------------
-----[mlb]----
-En caso de que se requiera proveer documentación, se cuenta con un plazo de 10 días desde la creación del contracargo para subirla. En la respuesta de la consulta del contracargo se puede ver cuando expira este plazo en el campo `date_documentation_deadline`.
-------------
-
-> WARNING
-> 
-> Requisitos
->
-> Sólo es posible continuar con el resto de los pasos si el contracargo **puede ser disputado**, **se requiere que se suba documentación** y **el plazo no ha expirado.** 
-
-## Disputa del contracargo
-
-Si el contracargo sigue los criterios anteriormente mencionados, se puede enviar via API la información respaldatoria que valida que la venta ocurrió. [Más información &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249) 
-
-Para hacer esto, se debe hacer un **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` con la siguiente forma:
 ```
 curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
 ```
 
-La api responderá con status `200 OK` si se ha subido la documentación exitosamente. La respuesta cambiará el estado del atributo `documentation_status` a **review_pending**.
+Si se ha subido la documentación exitosamente, la API responderá con estado `200 OK` y cambiará el valor de `documentation_status` a `review_pending`.
 
 > NOTE
 >
@@ -113,17 +128,14 @@ La api responderá con status `200 OK` si se ha subido la documentación exitosa
 >
 > Los archivos podrán ser .jpg, .png, .pdf y en su conjunto no podrán exceder los 10mb.
 
-## Revisión por parte de Mercado Pago
+### Resolución
 
 Una vez enviada la documentación, un representante de Mercado Pago la revisará.
-
-## Resolución
-
-Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles:
+Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles en el campo `coverage_applied`:
 
 | Campo         | Valor           | Descripción
 | ----          | ----            | ----
-| `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor (se le devuelve el dinero al comprador)
-| `coverage_applied` | **true**  | Indica que Mercado Pago falló _a favor_ del vendedor (se le devuelve el dinero al vendedor)
+| `coverage_applied` | **true**  | Indica que Mercado Pago falló _a favor_ del vendedor y se le devuelve el dinero.
+| `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor y se le devuelve el dinero al comprador.
 
-Cuando la resolución suceda, independientemente del resultado, se enviará una nueva notificación vía **IPN** para que se pueda verificar qué sucedió.
+Al resolverse, se enviará una nueva notificación IPN para que puedas verificar el caso.
