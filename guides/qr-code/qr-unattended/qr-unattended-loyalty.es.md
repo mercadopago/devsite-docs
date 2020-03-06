@@ -1,8 +1,7 @@
 ---
 sites_supported:
 - mla
-
-indexable: false
+indexable: false  
 ---
 
 
