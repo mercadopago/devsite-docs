@@ -1,8 +1,7 @@
 ---
-indexable: false
-
 sites_supported:
 - mla
+indexable: false  
 ---
 
 
@@ -12,15 +11,15 @@ sites_supported:
 
 Programa de fidelización es un objeto utilizado en el modelo desatendido que **permite sumar puntos en programas seleccionados**. En cada una de las órdenes deben agregarse estos datos para poder cargar puntos.
 
-> WARNING 
-> 
+> WARNING
+>
 > ADVERTENCIA
-> 
+>
 > Ten en cuenta que el programa de fidelización es exclusivo del [modelo desatendido de Código QR](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/).
 
 ## ¿Cómo funciona?
 
-Dentro de la orden, agrega el campo `loyalty` con todos sus datos requeridos como en el siguiente ejemplo: 
+Dentro de la orden, agrega el campo `loyalty` con todos sus datos requeridos como en el siguiente ejemplo:
 
 ```JSON
 
@@ -88,7 +87,7 @@ Dentro de la orden, agrega el campo `loyalty` con todos sus datos requeridos com
 
 Actualmente contamos con los siguientes programas de fidelización.
 
-| Programa de fidelización    | Atributo `program`          | 
+| Programa de fidelización    | Atributo `program`          |
 | ------------- | -----------------------------------------------|
 | Shell     | `CTC`          |
 | YPF  | `serviclub`          |    
@@ -109,14 +108,14 @@ Códigos de producto **Shell (CTC)**:
 
 Códigos de producto **YPF (Serviclub)**:
 - 1 = SUPER XXI
-- 3 = ULTRADIESEL 
+- 3 = ULTRADIESEL
 - 4 = INFINIA
-- 6 = EURODIESEL 
+- 6 = EURODIESEL
 - 8 = D DIESEL 500
 
 ## Puntos a tener en cuenta
 
-1. El parámetro `quantity` no puede contener más de 3 puntos decimales. 
+1. El parámetro `quantity` no puede contener más de 3 puntos decimales.
 2. YPF no tiene productos de *Shop*.
 3. Para productos *Shop* en Shell, se hace el cálculo de `quantity` multiplicado por `unit_price` para calcular los puntos a cargar. Es por esto que debe ponerse `code = 7`, `quantity = 1` y `unit_price` = monto total de los productos vendidos en shop.
 4. La cantidad de puntos que se suman para combustibles, depende del código de producto (`code`) y la cantidad (`quantity`), validando la unidad en cuestión (`unit`). Cada producto suma una cantidad distinta en base a la cantidad cargada. Esta lógica la aplica directamente el programa de beneficios.

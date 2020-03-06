@@ -57,7 +57,7 @@ JSONObject payment = mp.post("/v1/card_tokens", "{"+
 ```
 ```csharp
 using mercadopago;
-using System;xº
+using System;
 using System.Collections;
 
 MP mp = new MP("ACCESS_TOKEN");
