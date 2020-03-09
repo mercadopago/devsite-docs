@@ -13,7 +13,7 @@ Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás desca
 * Desde un link de descarga que te enviaremos por e-mail.
 * Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus informes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [tus informes](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus informes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus informes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus informes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus informes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [tus informes](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y elige la opción *Reportes de Dinero en disponible*.
 
-## Valores del reporte
+### Valores del reporte
 
 Dependiendo de las [tasas y plazos](https://www.mercadopago.com.ar/settings/release-options) que elijas, el dinero que ganes por una venta se liberará un tiempo después de acreditado el cobro. Por esta razón, el valor total que verás en el reporte no siempre va a coincidir con tu saldo total o con el valor que veas en los reportes de facturación.
 

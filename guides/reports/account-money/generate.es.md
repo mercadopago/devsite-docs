@@ -70,7 +70,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > Generación desde Mercado Pago  
 >
-> Descarga tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
+> Crea tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
 >
 > [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/panel/)
 
