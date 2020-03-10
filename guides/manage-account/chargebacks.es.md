@@ -49,6 +49,7 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 > Nota
 >
 > En caso de no tener un valor disponible para la sección, puedes dejarlo vacío.
+
 ### Envía el comprobante de compra
 
 Es importante que mandes el comprobante del pago por e-mail o por mensaje de texto para ayudar a que tu cliente recuerde a qué se debe el pago que hizo.
@@ -73,7 +74,7 @@ Te avisaremos vía [notificaciones IPN](https://www.mercadopago.com.ar/developer
 
 ### Consulta del contracargo
 
-La notificación IPN va a contener el ID del contracargo. Usa el ID para obtener información particular del caso.
+La notificación IPN va a contener el ID del contracargo. Usa el ID para obtener información del pago.
 
 ```
 curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
@@ -108,9 +109,23 @@ Vas a obtener la siguiente información:
 }
 ```
 
+> NOTE
+>
+> Nota
+>
+> Puedes obtener más información en la [referencia de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
+
 ### Entendimiento de cobertura
 
-Según la operatoria del vendedor o su acuerdo comercial puede variar la política de cobertura de cada contracargo por parte de Mercado Pago. Como también, si se necesita presentar documentos.
+Según el caso puede variar la política de cobertura por parte de Mercado Pago.
+El campo `coverage_elegible` define si el contracargo puede ser cubierto y `documentation_required` indica si requiere documentación.
+Puedes ver el [Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) para más información.
+
+> WARNING
+>
+> Importante
+>
+>Solo es posible continuar con el resto de los pasos si el contracargo puede ser cubierto, se requiere que se suba documentación y el plazo no ha expirado.
 
 ### Disputa del contracargo
 
@@ -135,7 +150,7 @@ Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles en 
 
 | Campo         | Valor           | Descripción
 | ----          | ----            | ----
-| `coverage_applied` | **true**  | Indica que Mercado Pago falló _a favor_ del vendedor y se le devuelve el dinero.
-| `coverage_applied` | **false** | Indica que Mercado Pago falló _en contra_ del vendedor y se le devuelve el dinero al comprador.
+| `coverage_applied` | **true**  | Indica que se falló a favor del vendedor y se le devuelve el dinero.
+| `coverage_applied` | **false** | Indica que se falló en contra del vendedor y se le descuenta el dinero.
 
 Al resolverse, se enviará una nueva notificación IPN para que puedas verificar el caso.
