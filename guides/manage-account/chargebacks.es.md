@@ -1,4 +1,4 @@
-# Prevención de contracargos
+# Gestión de contracargos
 
 Encuentra toda la información sobre los contracargos, cómo prevenirlos y gestionarlos por API.
 
