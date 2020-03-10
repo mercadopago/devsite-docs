@@ -50,7 +50,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Genera tus reportes
 >
-> Elige la forma de generar tu reporte y sigue los pasos para configurar tus preferencias.
+> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
 > [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)
 
