@@ -29,7 +29,7 @@ Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre tu di
 
 > NOTE
 >
-> Nota
+> Nota 
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 

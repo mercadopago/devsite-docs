@@ -13,7 +13,7 @@ Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás desca
 * Desde un link de descarga que te enviaremos por e-mail.
 * Desde tu cuenta de Mercado Pago, en *Reportes de Dinero retirado*. 
 
-## Valores del reporte
+### Valores del reporte
 
 Dependiendo de las [tasas y plazos](https://www.mercadopago.com.ar/settings/release-options) que elijas, el dinero que ganes por una venta se va a liquidar un tiempo después de acreditado el cobro. Por esta razón, el valor total que verás en el reporte no siempre va a coincidir con tu saldo total o con el valor que veas en los reportes de facturación.
 
