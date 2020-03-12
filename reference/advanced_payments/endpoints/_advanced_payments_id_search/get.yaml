@@ -2,8 +2,8 @@
 resource: advanced_payments.raml
 metadata:
 samples:
-- search_curl.sh
-- search_curl_response.sh
+- curl.sh
+- curl_response.json
 use:
 - limit
 - offset
