@@ -148,9 +148,9 @@ Si se ha subido la documentación exitosamente, la API responderá con estado `2
 Una vez enviada la documentación, un representante de Mercado Pago la revisará.
 Eventualmente el contracargo podrá tener dos tipos de resoluciones posibles en el campo `coverage_applied`:
 
-| Campo         | Valor           | Descripción
-| ----          | ----            | ----
-| `coverage_applied` | **true**  | Indica que se falló a favor del vendedor y se le devuelve el dinero.
-| `coverage_applied` | **false** | Indica que se falló en contra del vendedor y se le descuenta el dinero.
+| Valor           | Descripción
+| ----            | ----
+| **true**  | Indica que se falló a favor del vendedor y se le devuelve el dinero.
+| **false** | Indica que se falló en contra del vendedor y se le descuenta el dinero.
 
 Al resolverse, se enviará una nueva notificación IPN para que puedas verificar el caso.
