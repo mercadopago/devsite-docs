@@ -85,6 +85,12 @@ print_r ($card_token);
 ```
 ]]]
 
+> NOTE
+>
+> ¡Mejora tu aprobación!
+>
+> Para mejorar tu aprobación, te sugerimos [seguir estos pasos](https://www.mercadopago.com.ar/developers/es/guides/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
+
 ### Realizá el cobro:
 
 Al estar usando un token creado con el card_id, deberás realizar el posteo del pago indicando el id del customer asociado a la tarjeta:
