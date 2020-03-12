@@ -9,6 +9,16 @@ Puedes ofrecer a tus clientes la posibilidad de pagar con tarjeta de crédito o 
 ----[mla,mlm,mlc,mlu,mpe]----
 Ofrece a tus clientes pagar con tarjeta de crédito, débito o el medio de pago que prefieran y [vender directo en tu sitio](#bookmark_configurar_las_formas_de_pago) o [cobrar por el sitio de Mercado Pago](#bookmark_configurar_las_formas_de_pago).  
 ------------
+----[mlu]----
+> NOTE
+>
+> Nota
+>
+> Tiendanube no está optimizada para operar en Uruguay, no conta con un medio de pago habilitado para poder cobrar el plan mensual de las tiendas de otros países y emitir facturas por el servicio brindado. Por eso, no existe la opción de elegir Uruguay para configurar desde un principio.
+>
+> Podés tener tu propia tienda online residiendo en el Uruguay. Lo que ofrece, es que puedas categorizarla como si fuese de alguno de los países habilitados (Argentina, Brasil, México, Colombia o Chile).
+------------
+ 
 ----[mco]----
 Ofrece a tus clientes pagar con tarjeta de crédito, banca en línea o efectivo y [vender directo en tu sitio](#bookmark_configurar_las_formas_de_pago) o [cobrar por el sitio de Mercado Pago](#bookmark_configurar_las_formas_de_pago).  
 ------------
@@ -63,8 +73,11 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 ----[mlb]---- 
     ![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
 ------------
-----[mla,mlm,mlc,mlu,mpe,mco]---- 
-    ![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
+----[mla]---- 
+    ![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
+------------
+----[mlm,mlc,mlu,mpe,mco]---- 
+    ![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
 ------------
 
 ¡Y listo! Mercado Pago ya se encuentra instalado en tu tienda.
@@ -74,6 +87,8 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 > Importante
 >
 > Por defecto, Tiendanube va a tomar información de la cuenta que está recibiendo el pago como la configuración de correo electrónico, país y la moneda correspondiente a su cuenta de Mercado Pago.
+
+ 
 
 > NOTE
 >
@@ -132,10 +147,13 @@ Permite que el **cliente finalice la compra en tu sitio**, sin ser redireccionad
 3. Finalmente, haz clic en “Guardar cambios”.
 
 ----[mlb]---- 
-    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_1.gif)
+    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
 ------------
-----[mla,mlm,mlc,mlu,mpe,mco]----
-    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_1.gif)
+----[mla]----
+    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
+------------
+----[mlm,mlc,mlu,mpe,mco]----
+    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
 ------------
 
 ### Checkout Mercado Pago
@@ -152,10 +170,13 @@ Permite que el **cliente finalice la compra en tu sitio**, sin ser redireccionad
 3. Finalmente, haz clic en “Guardar cambios”.
 
 ----[mlb]---- 
-    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_1.gif)
+    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
 ------------
-----[mla,mlm,mlc,mlu,mpe,mco]----
-    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_1.gif)
+----[mla]----
+    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif)
+------------
+----[mlm,mlc,mlu,mpe,mco]----
+    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
 ------------
 
 > NOTE
@@ -179,10 +200,13 @@ También puedes sincronizar los últimos cambios manualmente de la siguiente man
 3. Finalmente, haz clic en “Guardar cambios”. 
 
 ----[mlb]---- 
-    ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop-installments_1.gif)
+    ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
 ------------
-----[mla,mlm,mlc,mlu,mpe,mco]----
-    ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop-installments_1.gif)
+----[mla]----
+    ![Payments Installment - Nuvem Shop](/images/nuvemshop/ar_tiendanube_installments.gif)
+------------
+----[mlm,mlc,mlu,mpe,mco]----
+    ![Payments Installment - Nuvem Shop](/images/nuvemshop/mx_tiendanube_istallments.gif)
 ------------
 
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
@@ -212,10 +236,13 @@ También puedes sincronizar los últimos cambios manualmente de la siguiente man
 3. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”. 
 
 ----[mlb]----
-    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop-account-installments_1.gif)
+    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
 ------------
-----[mla,mlm,mlc,mlu,mpe,mco]----
-    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop-account-installments_1.gif)
+----[mla]----
+    ![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif)
+------------
+----[mlm,mlc,mlu,mpe,mco]----
+    ![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif)
 ------------
 
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
@@ -228,6 +255,8 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 > Por el momento, el servicio de Mercado Envíos no se encuentra disponible. 
 ------------
 
+ 
+ 
 ----[mlb]----
 > Para más información, visita el [sitio oficial de Tiendanube](https://www.nuvemshop.com.br/) 
 ------------  

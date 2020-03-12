@@ -32,6 +32,8 @@ Pronto! Sua conta Mercado Pago já está ativa!
 >
 > Por padrão, a Nuvemshop apresenta algumas informações da conta que está recebendo pagamento, são elas: e-mail, país e a moeda correspondente a sua conta Mercado Pago.
 
+ 
+
 > NOTE
 >
 > Alterar conta do Mercado Pago
@@ -58,7 +60,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 2. No item “Tipo de integração” altere para “Processo de compra sem sair da loja”.
 3. Clique em “Salvar alterações”.
 
-    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_1.gif)
+    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
 
 ### Checkout Mercado Pago
 
@@ -68,7 +70,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 2. No item “Tipo de integração” altere para “Processo de compra no site do Mercado Pago”.
 3. Clique em “Salvar alterações”.
 
-    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_1.gif)
+    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 > NOTE
 >
@@ -86,7 +88,7 @@ Caso queira **sincronização suas alterações manualmente**, realize os seguin
 2. No item “Parcelas” clique em “Ativar agora”.
 3. Clique em “Salvar alterações”.
 
-    ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop-installments_1.gif)
+    ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
 
 
 ## Configurando o parcelamento em sua conta Mercado Pago.
@@ -95,7 +97,7 @@ Caso queira **sincronização suas alterações manualmente**, realize os seguin
 2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
 3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
 
-    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop-account-installments_1.gif)
+    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
 
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
@@ -104,5 +106,7 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 > Importante
 >
 > Os serviços do Mercado Envios estão temporariamente indisponíveis, não sendo possível utilizar esse meio de envio na plataforma por tempo indeterminado.
+
+ 
 
 > Para mais informação, visite o [site oficial da Nuvemshop](https://www.nuvemshop.com.br/).
