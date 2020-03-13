@@ -9,14 +9,12 @@ Puedes ofrecer a tus clientes la posibilidad de pagar con tarjeta de crédito o 
 ----[mla,mlm,mlc,mlu,mpe]----
 Ofrece a tus clientes pagar con tarjeta de crédito, débito o el medio de pago que prefieran y [vender directo en tu sitio](#bookmark_configurar_las_formas_de_pago) o [cobrar por el sitio de Mercado Pago](#bookmark_configurar_las_formas_de_pago).  
 ------------
-----[mlu]----
-> NOTE
+----[mlu,mpe]----
+> WARNING
 >
-> Nota
+> Importante
 >
-> Tiendanube no está optimizada para operar en Uruguay, no conta con un medio de pago habilitado para poder cobrar el plan mensual de las tiendas de otros países y emitir facturas por el servicio brindado. Por eso, no existe la opción de elegir Uruguay para configurar desde un principio.
->
-> Podés tener tu propia tienda online residiendo en el Uruguay. Lo que ofrece, es que puedas categorizarla como si fuese de alguno de los países habilitados (Argentina, Brasil, México, Colombia o Chile).
+> Ten en cuenta que Tiendanube está optimizada para operar solo en los siguientes países: Argentina, Brasil, México, Colombia y Chile.
 ------------
  
 ----[mco]----
@@ -39,8 +37,8 @@ Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 ----[mlc]---- 
 1. Crea una [cuenta vendedor](https://www.mercadopago.cl/activities) en Mercado Pago si todavía no tienes una. 
 ------------
-----[mlu]---- [
-1. Crea una cuenta vendedor](https://www.mercadopago.com.uy/activities) en Mercado Pago si todavía no tienes una. 
+----[mlu]---- 
+1. Crea una [cuenta vendedor](https://www.mercadopago.com.uy/activities) en Mercado Pago si todavía no tienes una. 
 ------------
 ----[mpe]---- 
 1. Crea una [cuenta vendedor](https://www.mercadopago.com.pe/activities) en Mercado Pago si todavía no tienes una. 
@@ -89,7 +87,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 > Por defecto, Tiendanube va a tomar información de la cuenta que está recibiendo el pago como la configuración de correo electrónico, país y la moneda correspondiente a su cuenta de Mercado Pago.
 
  
-
+    
 > NOTE
 >
 > Cambiar cuenta de Mercado Pago
@@ -256,7 +254,7 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 ------------
 
  
- 
+   
 ----[mlb]----
 > Para más información, visita el [sitio oficial de Tiendanube](https://www.nuvemshop.com.br/) 
 ------------  
