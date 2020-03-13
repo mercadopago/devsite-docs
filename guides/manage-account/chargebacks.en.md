@@ -1,45 +1,86 @@
----
-  indexable: false
----
+# Chargeback Management
 
-# Chargeback management
+Find all the information about chargebacks, how to prevent them, and how to manage them via API.
+
+## What is a chargeback?
+
+A chargeback is created when a **customer disputes a credit or debit card charge with the card issuer bank and requests a money refund.**
+
+When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity.  10 days are allowed to submit the transaction vouchers. and the validation process may take up to 130 days.
+
+> If collection is with Point, the process takes up to 75 days.
+
+If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
 
 > NOTE
 >
 > Note
 >
-> **What is it?** When a buyer communicates with the entity that issued his card (a bank, for example) and disclaim a payment made through this means, a _chargeback_ is generated. [More information &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249)
+> If you receive a chargeback and don't know what to do, see our [FAQs](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
 
-The chargeback implies that Mercado Pago will retain the money from the sale until the problem is solved.
+## Recommendations for chargeback prevention
 
-Chargebacks can be managed via API.
+You cannot avoid all chargebacks but you can reduce the likelihood of having a payment charged back.
 
-It is important in this process to mention the key instances:
+### Fill out your business data
 
-1. Occurrence of the chargeback
-2. Consultation of the chargeback
-3. Understanding of coverage
-4. Dispute of the chargeback
-5. Review by Mercado Pago
-6. Resolution
+If the buyer doesn't recognize a charge in his/her credit card statement, a chargeback can be made.  To avoid these cases, fill out [your business data](https://www.mercadopago.com.uy/settings/account) to define how you want to appear in your card statements and payment confirmation SMS.
 
-Now we will go into detail in each of them.
+### Add security code to your site
 
-## Occurrence of the chargeback
+We help you detect any customer unusual behavior with our security code against fraud.
 
-Through [IPN](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) we will notify you instantly whenever you receive a chargeback. For this to happen, you must be subscribed to the subject `chargebacks` within the [configuration](https://www.mercadopago.com.ar/herramientas/notificaciones).
+It’s very simple.  Add the script, set up your site section where it is in and, ready!  You only need to replace the `view` value for the name of the page you want to add it on.
 
-## Consultation of the chargeback
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
+```
 
-The IPN notification will contain the `ID` of the chargeback.
+#### Possible VIEW values
 
-With this `ID` you can make a **GET** to` https://api.mercadopago.com/v1/chargebacks/ID?access_token=` 
+| Value                                                         | Section                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *home* | Your site home page. |
+| *search* | Search page or product list. |
+| *item* | Specific product page. |
+
+> NOTE
+>
+> Note
+>
+> If you have no available value for this section, you can leave it empty.
+
+### Send the purchase voucher
+
+Send the payment voucher by e-mail or sms so that your customer remembers what the payment was about.
+
+### Detail all payment data
+
+For enhanced validation of payment security, send us as much information as possible when creating the payment.  For example, if you send us information about the buyer, we can detect if that buyer made any suspicious payment some other time and prevent it.  Find more information about each attribute in [API References](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+
+### Return suspicious payments
+
+When we detect an irregular behavior or are notified that a stolen credit card was used, we will contact via e-mail to let you know what happened. We recommend you to [cancel the purchase](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) and refund the money to the buyer so that you can avoid a chargeback.
+
+### Check data when collecting with Point
+
+Ask your buyers for an ID when they make a payment and check that the data and signature match those on the card.
+
+## Manage your chargebacks by API
+
+### A chargeback emerges
+
+We will advise you via [IPN notifications](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) every time you receive a chargeback. To [start receiving notifications](https://www.mercadopago.com.ar/herramientas/notificaciones), fill out your data and choose Chargebacks.
+
+### Chargeback query
+
+The IPN notification will have a chargeback ID. Use that ID to get information about the payment.
 
 ```
 curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
 ```
 
-to check your information:
+You will get the following information:
 
 ```json
 {
@@ -68,64 +109,48 @@ to check your information:
 }
 ```
 
-## Understanding of coverage
+> NOTE
+>
+> Nota
+>
+> Find more information in [API References](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
 
-According to the vendor's operation, your commercial agreement - or both - may vary the coverage policy of each chargeback by Mercado Pago. The field `coverage_elegible` defines if the chargeback is possible to be disputed or not.
+### Understanding coverage
 
-| Field         | Value           | Description
-| ----          | ----            | ----
-| `coverage_elegible` | **false** | Indicates that the chargeback can not be disputed
-| `coverage_elegible` | **true**  | Indicates that the chargeback can be disputed
-
-In addition, there is a `documentation_required` field that indicates whether the documentation is required to be uploaded to be covered.
-
-| Field         | Value           | Description
-| ----          | ----            | ----
-| `documentation_required` | **false** | Indicates that no documentation is required for the chargeback
-| `documentation_required` | **true**  | Indicates that documentation is required for the chargeback
-
-
-----[mla,mlc,mlm,mpe,mco,global]----
-In case you need to provide documentation, you have a period of 7 days from the creation of the chargeback to upload it. In the response of the chargeback query you can see when this term expires in the `date_documentation_deadline` field.
-------------
-----[mlb]----
-In case you need to provide documentation, you have a period of 10 days from the creation of the chargeback to upload it. In the response of the chargeback query you can see when this term expires in the `date_documentation_deadline` field.
-------------
+Mercado Pago coverage policy may change on a case by case basis.
+The `coverage_elegible` field defines that a chargeback can be covered and `documentation_required` shows whether documentation is required.
+You can see the [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) for more information.
 
 > WARNING
-> 
-> Requisites
 >
-> It is only possible to continue with the rest of the steps if the chargeback **can be disputed**, **it is required to upload documentation** and **the term has not expired.** 
+> Important
+>
+> You can continue with the other steps only if the chargeback can be covered, documentation needs to be uploaded and the term has not expired.
 
-## Dispute of the chargeback
+### Chargeback dispute
 
-If the chargeback follows the criteria mentioned above, you can send via API the supporting information that validates that the sale occurred. [More information &raquo;](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249) 
+You can send supporting information validating the sale by API.
 
-To do this, you must make a **POST** to `https://api.mercadopago.com/v1/chargebacks/ID/documentation` with the following form:
 ```
 curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
 ```
 
-The api will respond with status `200 OK` if the documentation has been uploaded successfully. The response will change the state of the `documentation_status` attribute to **review_pending**.
+If the documentation has been successfully uploaded, the API will answer with `200 OK` state, and the `documentation_status` value will go to `review_pending`.
 
 > NOTE
 >
 > Note
 >
-> The files may be .jpg, .png, .pdf and as a whole they may not exceed 10mb.
+> Files can be .jpg, .png, .pdf and should not exceed 10mb overall.
 
-## Review by Mercado Pago
+### Resolution
 
-Once the documentation is sent, a Mercado Pago representative will review it.
+Once the documentation has been sent, a Mercado Pago representative will review it.
+Eventually, the chargeback may have two types of possible resolutions in the `coverage_applied` field:
 
-## Resolution
+| Value           | Description
+| ----            | ----
+| **true**  | Shows that the decision was for the seller and the money is refunded.
+| **false** | Shows that the decision was against the seller and the money is discounted.
 
-Eventually the chargeback may have two types of possible resolutions:
-
-| Field         | Value           | Description
-| ----          | ----            | ----
-| `coverage_applied` | **false** | Indicates that Mercado Pago failed _against_ the seller (the money is returned to the buyer)
-| `coverage_applied` | **true**  | Indicates that Mercado Pago failed _against_ the seller (the money is returned to the seller)
-
-When the resolution happens, regardless of the result, a new notification will be sent via **IPN** so that it can be verified what happened.
+Upon resolution, a new IPN notification will be sent so that you can verify the case.
