@@ -256,8 +256,8 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
  
    
 ----[mlb]----
-> Para más información, visita el [sitio oficial de Tiendanube](https://www.nuvemshop.com.br/) 
+> Para más información, visita el [sitio oficial de Tiendanube.](https://www.nuvemshop.com.br/) 
 ------------  
 ----[mla,mlm,mlc,mlu,mpe,mco]---- 
-> Para más información, visita el [sitio oficial de Tiendanube](https://www.tiendanube.com/) 
+> Para más información, visita el [sitio oficial de Tiendanube.](https://www.tiendanube.com/) 
 ------------

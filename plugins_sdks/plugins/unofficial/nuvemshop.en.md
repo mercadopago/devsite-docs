@@ -280,8 +280,8 @@ Done! You are offering installment interest-free, assuming the installment charg
 
   
 ----[mlb]---- 
-> For more information, visit the [official Nuvemshop site](https://www.nuvemshop.com.br/).
+> For more information, visit the [official Nuvemshop site.](https://www.nuvemshop.com.br/)
 ------------  
 ----[mla,mlm,mlc,mlu,mpe,mco]---- 
-> For more information, visit the [official Tiendanube site](https://www.tiendanube.com/).
+> For more information, visit the [official Tiendanube site.](https://www.tiendanube.com/)
 ------------
