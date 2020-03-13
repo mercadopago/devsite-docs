@@ -34,7 +34,7 @@ Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso cód
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-#### Possíveis valores para VIEW
+#### Possíveis valores para `view`
 
 | Tipo                                                         | Descripción                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

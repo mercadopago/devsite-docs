@@ -34,7 +34,7 @@ It’s very simple.  Add the script, set up your site section where it is in and
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-#### Possible VIEW values
+#### Possible `view` values
 
 | Value                                                         | Section                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
