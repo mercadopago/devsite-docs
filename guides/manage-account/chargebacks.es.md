@@ -8,8 +8,6 @@ Se crea un contracargo cuando **el cliente disputa un cobro de su tarjeta de cr�
 
 Cuando esto ocurre, podemos retener el dinero del cobro hasta que el problema sea solucionado y gestionamos el caso con la entidad emisora de la tarjeta. Tenemos 10 días para presentar los comprobantes de la operación y el proceso de validación puede demorar hasta 140 días.
 
-> Si el cobro es con Point, el proceso demora hasta 75 días.
-
 En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
 
 > NOTE

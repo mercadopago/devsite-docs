@@ -8,8 +8,6 @@ A chargeback is created when a **customer disputes a credit or debit card charge
 
 When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity.  10 days are allowed to submit the transaction vouchers. and the validation process may take up to 130 days.
 
-> If collection is with Point, the process takes up to 75 days.
-
 If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
 
 > NOTE
