@@ -112,7 +112,7 @@ También puedes sincronizar los últimos cambios manualmente de la siguiente man
     ![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif) ------------
 <p>&nbsp;</p>
 ----[mlb]----
-E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
+¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.
 ------------
 
 <!-- -->
