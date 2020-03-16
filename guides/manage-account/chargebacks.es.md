@@ -14,7 +14,7 @@ En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá 
 >
 > Nota
 >
-> Si recibes un contracargo y no sabes que hacer, consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
+> Si recibiste un contracargo y no sabes qué hacer, consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
 
 ## Recomendaciones para prevenir contracargos
 
@@ -54,11 +54,12 @@ Es importante que mandes el comprobante del pago por e-mail o por mensaje de tex
 
 ### Detalla toda la información sobre el pago
 
-Para optimizar la validación de seguridad de los pagos, envíanos la mayor cantidad de datos posibles al momento de crear el pago. Por ejemplo, si nos envías datos del comprador, podemos detectar si ese comprador realizó pagos sospechosos en otro momento y prevenirlo. Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Para optimizar la validación de seguridad de los pagos, envíanos la mayor cantidad de datos posibles al momento de crear el pago. Por ejemplo, si nos envías datos del comprador, podemos detectar si realizó pagos sospechosos en otro momento y prevenirlo.
+Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
 
 ### Devuelve los pagos sospechosos
 
-Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte lo sucedido. Te recomendamos que [canceles la compra](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) y le devuelvas el dinero al comprador para evitar el contracargo.
+Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte. Te recomendamos que [canceles la compra](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) y le devuelvas el dinero al comprador para evitar el contracargo.
 
 ### Revisa los datos al cobrar con Point
 
@@ -117,7 +118,7 @@ Vas a obtener la siguiente información:
 
 Según el caso puede variar la política de cobertura por parte de Mercado Pago.
 El campo `coverage_elegible` define si el contracargo puede ser cubierto y `documentation_required` indica si requiere documentación.
-Puedes ver el [Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) para más información.
+Para más información, puedes ver el [Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294).
 
 > WARNING
 >

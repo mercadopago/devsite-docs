@@ -14,7 +14,7 @@ Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvi
 >
 > Nota
 >
-> Se você recebeu uma contestação de pagamento e não sabe o que fazer, consulte as nossas [perguntas frequentes](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
+> Se você recebeu uma reclamação e não sabe o que fazer, consulte as nossas [perguntas frequentes](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
 
 ## Recomendações para prevenir contestações de pagamento
 
@@ -54,7 +54,8 @@ Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso cód
 
 ### Detalhe toda a informação sobre o pagamento
 
-Para otimizar a validação de segurança dos pagamentos, encaminhe para nós a maior quantidade de dados possíveis no momento de criar o pagamento. Por exemplo, se você encaminhar para nós os dados do comprador, podemos detectar se esse comprador realizou pagamentos suspeitos em outro momento e alertá-lo sobre isso. Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Para otimizar a validação de segurança dos pagamentos, encaminhe para nós a maior quantidade de dados possíveis no momento de criar o pagamento. Por exemplo, se você encaminhar para nós os dados do comprador, podemos detectar se realizou pagamentos suspeitos em outro momento e alertá-lo sobre isso.
+Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
 
 ### Faça a devolução de pagamentos suspeitos
 
@@ -117,7 +118,7 @@ Você vai obter as seguintes informações:
 
 Dependendo do caso, a política de cobertura pelo Mercado Pago pode variar.
 O campo `coverage_elegible` define se a contestação pode ser coberta e `documentation_required` indica se é necessário apresentar documentação.
-Você pode ver o [Programa de Proteção ao Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) para mais detalhes.
+Para mais detalhes, você pode ver o [Programa de Proteção ao Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294).
 
 > WARNING
 >
