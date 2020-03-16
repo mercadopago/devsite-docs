@@ -123,7 +123,9 @@ You can also manually synchronize the latest changes in the following way:
 <p>&nbsp;</p>
 ----[mlb]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif) ------------ ----[mla]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif) ------------
 <p>&nbsp;</p>
+----[mlb]----
 Done! You are offering installment interest-free, assuming the installment charges you have set.
+------------
 
 <!-- -->
 ----[mlb, mla]----

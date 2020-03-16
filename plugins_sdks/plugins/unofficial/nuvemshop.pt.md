@@ -101,7 +101,9 @@ Caso queira **sincronização suas alterações manualmente**, realize os seguin
 <p>&nbsp;</p>
     ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
 <p>&nbsp;</p>
+----[mlb]----
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
+------------
 
 ----[mlb, mla]----
 > WARNING
