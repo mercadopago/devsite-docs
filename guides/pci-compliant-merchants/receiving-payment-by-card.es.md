@@ -242,7 +242,7 @@ dependencies {
 
 ```swift
 ===
-Te recomendamos iniciarlo en el evento `didFinishLaunchingWithOptions` del `AppDelegate.
+Te recomendamos iniciarlo en el evento didFinishLaunchingWithOptions del AppDelegate.
 ===
 import MercadoPagoDevicesSDK
 ...
@@ -254,7 +254,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 ```objective-c
 ===
-Te recomendamos iniciarlo en el evento `didFinishLaunchingWithOptions` del `AppDelegate`.
+Te recomendamos iniciarlo en el evento didFinishLaunchingWithOptions del AppDelegate.
 ===
 @import ‘MercadoPagoDevicesSDK’;
 ...
@@ -266,7 +266,7 @@ Te recomendamos iniciarlo en el evento `didFinishLaunchingWithOptions` del `AppD
 ```
 ```java
 ===
-Te recomendamos iniciarlo en la clase `MainApplication.
+Te recomendamos iniciarlo en la clase MainApplication.
 ===
 import com.mercadolibre.android.devices.sdk.DeviceSDK;
 
@@ -303,7 +303,7 @@ String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // devuelve un
 
 ### 4. Envía la información
 
-Por último, envía la información en el campo `device al crear el `card_token`.
+Por último, envía la información en el campo `device` al crear el `card_token`.
 
 ```
 {
