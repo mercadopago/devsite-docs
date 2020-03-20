@@ -1,4 +1,4 @@
-# Instala o Mercado Pago para PrestaShop 1.6 & 1.7
+# Instale o Mercado Pago para PrestaShop 1.6 & 1.7
 <br/>
 
 Instale o Mercado Pago automaticamente pelo marketplace na PrestaShop ou manualmente, importando um arquivo .zip no seu diretório vía FTP.
