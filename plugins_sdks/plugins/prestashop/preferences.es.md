@@ -27,7 +27,7 @@ Ingresa el **nombre del negocio** para que aparezca en la factura de tus cliente
 >
 > Nota
 >
-> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-woocommerce) en Github.
+> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-prestashop-7) en Github.
 
 ## Configuración básica
 

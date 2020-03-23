@@ -13,7 +13,7 @@ Cuando hagas pruebas, verifica que el flujo de pagos funcione correctamente y qu
 >
 > Nota
 >
-> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-woocommerce) en Github.
+> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-prestashop-7) en Github.
 
 ## Ir a producción
 
