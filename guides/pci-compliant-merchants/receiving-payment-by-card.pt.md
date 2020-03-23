@@ -208,9 +208,9 @@ Você também pode adicionar uma tag HTML no seu site com o identificador `id="d
 ```
 
 
-### Implementação em aplicativos móveis nativos
+### Implementação do device em aplicações móveis nativas
 
-Se você possui uma aplicação nativa, pode capturar a informação do dispositivo com nossa SDK e enviá-la no momento de criação do token.
+Se você possui uma aplicação nativa, pode capturar a informação do dispositivo com nosso SDK e enviar no momento de criar o token.
 
 ### 1. Adicione a dependência
 
