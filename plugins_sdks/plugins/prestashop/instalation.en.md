@@ -88,7 +88,7 @@ These are the technical improvements you will find in our latest version:
  - Choose the expiration date.
  - Discount for paying with Mercado Pago.
 
-**We temporarily suspend some features from version 4.1.0 of the plugin:**
+**We temporarily suspended some features from version 4.1.0 of the plugin:**
 - Mercado Envíos.
 - Discount coupons.
 - Installment calculator.
