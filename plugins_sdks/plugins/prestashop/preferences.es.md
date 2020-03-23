@@ -13,7 +13,7 @@ Encuentra la configuración de las preferencias de pago en la opción Configurar
 
 Ingresa el **nombre del negocio** para que aparezca en la factura de tus clientes y les sea más fácil reconocer el pago cuando les llegue un resumen de compras. Selecciona a qué **categoría** pertenecen los productos o servicios que ofrece la tienda y haz otros ajustes según tus necesidades.
 
-![Información básica](/images/prestashop/preferences_es.png)
+![Información básica](/images/prestashop/preferences_es.jpg)
 
 > WARNING
 >
