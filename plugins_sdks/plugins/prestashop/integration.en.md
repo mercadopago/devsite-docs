@@ -23,7 +23,7 @@ Done! With this you can capture the payments you receive in PrestaShop with your
 >
 > Important
 >
-> The [credentials](https://www.mercadopago.com.ar/developers/en/guides/localization/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** with which to simulate online payments, use the test credentials. Use **production** credentials to receive real payments.
+> The [credentials](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/) are the keys that uniquely identify you within the platform. To operate in a **test environment** with which to simulate online payments, use the test credentials. Use **production** credentials to receive real payments.
 
 ### Next step
 
