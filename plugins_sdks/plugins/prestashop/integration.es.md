@@ -23,7 +23,7 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 >
 > Importante
 >
-> Las [credenciales](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/) son las claves que te identifican de forma única dentro de la plataforma. Para operar en un **entorno de pruebas** con el que simular pagos online, utiliza las credenciales de prueba. Usa las credenciales de **producción** para recibir pagos reales.
+> Las [credenciales](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/) son las claves que te identifican de forma única dentro de la plataforma. Para operar en un **entorno de pruebas** con el que simular pagos online, utiliza las credenciales de prueba. Usa las credenciales de **producción** para recibir pagos reales.
 
 ### Próximo paso
 
