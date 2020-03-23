@@ -480,24 +480,17 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 
 4. Ingresar en código.
 5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
+6. Copiar y pegar el siguiente código:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
-7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
-
-    ![Custom plan](/images/vtex-device-settings-3.png)
-
+7. Seleccionar "guardar"
 
 ## Interpretar log de VTEX
 

@@ -125,7 +125,7 @@ Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quis
 > 
 > IMPORTANTE
 > 
-> * Se não preencher o formulário de [Quero ir para produção](FAKER][CREDENTIALS][URL]), não poderá fazer qualquer tipo de restituição.
+> Se não preencher o formulário de [Quero ir para produção](FAKER][CREDENTIALS][URL]), não poderá fazer qualquer tipo de restituições. 
 
 ## Por que este processo é necessário? 
 

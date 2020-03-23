@@ -324,14 +324,6 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-### Sponsor ID
-
-El atributo `sponsor_id` es un identificador del desarrollador o compañía de software que realiza la integración del  Checkout Mercado Pago, este dato es visible en la preferencia y en el pago.
-
-```json
-"sponsor_id": 123456789
-```
-
 ### Múltiples ítems
 
 Si se necesita crear una preferencia para más de un ítems, solo debes agregarlos como una lista dentro de _items_.
@@ -748,16 +740,14 @@ De este modo, cuando se apruebe un pago a través de tu Checkout de Mercado Pago
 
 ## Obtén información sobre tu negocio
 
-Utiliza `headers` en tu preferencia para obtener métricas de negocio. Solo tienes que agregar los códigos de identificación para el caso que corresponda. 
-
-Por ejemplo, puedes tener un equipo de desarrolladores, estar integrado a través de una plataforma de comercio eléctronico o ser parte de un grupo de cuentas asociadas a un grupo vendedor.
+Nuestros [Partners](https://partners.mercadopago.com/) podrán obtener métricas de negocio. Utiliza `headers` en tu preferencia de pago agregando el código de identificación para el caso que corresponda. No es obligatorio completar los tres campos que se mencionan.
 
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
-`x-integrator-id` | Integrador | Desarrolladores o agencias que realizaron la integración.
-`x-platform-id` | Plataforma | [Plataforma](https://partners.mercadopago.com/) utilizada por la cuenta vendedor. 
-`x-corporation-id` | Corporaciones | Cuentas asociadas a una cuenta vendedor o grupo económico.
-> ¿Sos desarrollador o agencia y necesitas tu identificador? [Solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
+`x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración.
+`x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. 
+`x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico.
+> Si necesitas tu `integrator_id` o tu `platform_id`, [solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
 ```php

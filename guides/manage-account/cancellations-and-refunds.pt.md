@@ -10,6 +10,12 @@ Existem diferentes situações que podem dar origem ao cancelamento de uma venda
 
 	•	Se o `status` do pagamento for `approved`, significa que o comprador efetuou o pagamento, e a devolução poderá ser realizada caso necessário.
 
+> WARNING
+>
+> AVISO
+>
+> Lembre que para pagamentos com QR e POINT você só pode realizar restituições, mas não cancelamentos.
+
 ## Cancelamentos
 
 - Os cancelamentos podem ser realizados somente com status pending e in process

@@ -252,23 +252,17 @@ Uruguay: Oca.
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
+6. Copy and paste the following code:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
-7. Select "save", the final result should look like the example:
-
-    ![Custom plan](/images/vtex-device-settings-3.png)
+7. Select "save"
 
 ## Credentials
 

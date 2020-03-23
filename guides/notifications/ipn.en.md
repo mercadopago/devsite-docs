@@ -17,8 +17,7 @@
 
 **IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
-In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access.
-](https://www.mercadopago.com.ar/herramientas/notificaciones)
+To receive event notifications on your platform, you can [previously configure a notification_url accessible for Mercado Pago](https://www.mercadopago.com.ar/ipn-notifications).
 
 
 ## Events
@@ -60,6 +59,22 @@ Type               | URL                                                        
 payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
 chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/)
+
+### Merchant_orders notifications
+
+**If you are integrating in-person payments**, we recommend to use topic `merchant_order` IPN notifications. To do this, bear in mind the rules below:
+
+1. The `merchant_order` status field will remain **open** if there are no associated payments or, otherwise, if they are rejected or approved for an amount lower than total order amount.
+2. The `merchant_order` status field will be **closed** when the sum of approved payments is equal to or higher than total order amount.
+
+You will find all the payments in the order, under the payments object. [To make refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds/), it is important to get the id of payments with `status` = **approved**.
+
+
+> WARNING
+>
+> WARNING
+>
+> When the `merchant_order` is **closed**, check that the sum of payments with approved status is equal to or higher than total order amount.
 
 
 ### Implement the notification receiver using the following code as example:
@@ -105,3 +120,59 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 ```
 
 > To get your `ACCESS_TOKEN`, check the [Credentials]([FAKER][CREDENTIALS][URL]) section.
+
+## Order Search
+
+**If you are integrating in-person payments**, order search using its `external_reference` as search criterion should be implemented as a contingency measure.
+
+
+```curl
+curl -X GET https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE&access_token=$ACCESS_TOKEN -d
+```
+
+Find more information in [API Reference](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_search/get/).
+
+There are two ways to implement **search** by `external_reference`:
+
+| Ways	|	Description		|
+| ----------- | ----------------- |
+| **Manual** | The point of sale should include a search button.|
+| **Automatic** | After a reasonable time without getting any notification, order search begins, for example, at 5-second intervals. |
+
+Each QR scanning generates a different `merchant_order`. Consider that, if a customer scans more than once, an order will remain **open** indefinitely. To close the transaction, you should take the `merchant_order` with `status` = **closed**.
+
+If the search is made **after QR scanning**, all order-related data will be shown:
+
+```json
+{
+  "id": 1126664483,
+  "status": "closed",
+  "payments": [
+     {
+      "id": 4996721469,
+      "transaction_amount": 4,
+      "status": "rejected",
+      [...],
+    },
+     {
+      "id": 4996721476,
+      "transaction_amount": 4,
+      "status": "approved",
+      [...], }, 
+```
+
+Otherwise, if the order posted QR has **not been scanned yet**, the answer will be:
+
+```json
+{
+   "elements": null,
+   "next_offset": 0,
+   "total": 0
+ }
+```
+
+> WARNING
+>
+> CAUTION
+>
+> To approve the integration of in-person payments, Mercado Pago requires the implementation of notifications (IPN) as main method. Order search by `external_reference` should be used only as a contingency measure in the event of no notifications.

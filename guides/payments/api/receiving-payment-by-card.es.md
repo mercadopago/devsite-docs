@@ -363,7 +363,7 @@ payment.save()
 ```
 ```csharp
 ===
-El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected or **in_process**).
+El valor de la propiedad **status** indicara el estado de un pago (**approved**, **rejected** or **in_process**).
 ===
 
 using MercadoPago;
