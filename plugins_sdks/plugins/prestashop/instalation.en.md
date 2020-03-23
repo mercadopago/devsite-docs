@@ -45,7 +45,7 @@ Install Mercado Pago for PrestaShop automatically by following these steps from 
 
 Install the module by following these steps:
 
-1. [Download the .zip file](https://github.com/mercadopago/cart-prestashop-7/archive/master.zip) directly from our Github or from the Prestashop modules [directory](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html).
+1. [Download the .zip file](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) directly from our Github or from the Prestashop modules [directory](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html).
 2. Go to the "Module Manager" section in the 'Customize' section of your administrator.
 3. Click the 'Upload a Module' button in the upper right corner.
 4. Select or drag the previously downloaded mercadopago.zip file.
