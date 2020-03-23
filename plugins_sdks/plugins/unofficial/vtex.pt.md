@@ -2,7 +2,7 @@
 
 ## O que é VTEX?
 
-VTEX é uma **plataforma e-commerce (PCI Compliance) com operação em toda América Latina** para sua loja virtual, que permite processar pagamentos através do Mercado Pago.
+VTEX é uma **plataforma e-commerce (PCI Compliance)** para sua loja virtual, que permite processar pagamentos através do Mercado Pago.
 
 Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito) e [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) no próprio [checkout da sua loja ou redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_mercado_pago).
 
@@ -14,8 +14,7 @@ Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/activities) no Mercado Pago caso ainda não tenha uma.
 2. Cadastre uma afiliação de gateway de pagamento com o "Mercado Pago".
 3. Configure as condições de pagamento Mercado Pago.
-4. Configure as condições de pagamentos customizados usando MercadoPago (América Latina) 
-5. Configure DeviceID.
+4. Configure DeviceID.
 
 ## Criando afiliação de gateway Mercado Pago
 
@@ -47,15 +46,14 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 <p>&nbsp;</p>
 E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
-----[mla, mlm, mlc, mlu, mpe, mco]---- 
 > NOTE
 >
-> 
 > Modo de processamento Mercado Pago com a VTEX
 >
 > **Modo Agregador**
 > Receba pagamentos usando todos os cartões e promoções que o Mercado Pago oferece, além de transferências bancárias e métodos de pagamento off-line.
 >
+> ----[mla, mlm, mlc, mlu, mpe, mco]---- 
 > **Modo Gateway**
 > Receba pagamentos diretamente nos códigos comerciais do vendedor usando todas as promoções do vendedor.
 >
@@ -82,6 +80,7 @@ Para criar uma **condição de pagamento cartão de crédito** utilizando sua af
 <p>&nbsp;</p>
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_cartao_2.gif)
 <p>&nbsp;</p>
+
 ### Condição de pagamento boleto bancário
 
 Para criar uma **condição de pagamento [boleto bancário](#bookmark_condições_de_pagamentos_offline)** utilizando sua afiliação com o Mercado Pago, siga os passos abaixo:
@@ -96,6 +95,7 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
 <p>&nbsp;</p>
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
 <p>&nbsp;</p>
+
 ### Condição de pagamento Checkout Mercado Pago
 
 O comprador será **redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
@@ -111,151 +111,18 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 <p>&nbsp;</p>
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
 <p>&nbsp;</p>
-## Configure as condições de pagamentos customizados usando MercadoPago (América Latina) 
-
-Você pode usar o Mercado Pago para oferecer pagamentos customizados (usando cartões de crédito locais) na sua loja que atuam nos seguintes países da América Latina: Argentina, Chile, Colômbia e Uruguai.
-Para isso, você precisa primeiro cadastrar a afiliação de gateway MercadoPagoV1 com as informações do país correspondente a sua loja.
-
-### Condição de pagamento customizado (América Latina)
-
-Para criar uma **condição de pagamento customizada** utilizando sua afiliação com o Mercado Pago, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
-2. Na aba Pagamentos customizados, clique em um dos botões "Configurar" embaixo de Cartões da Loja (Co-Branded).
-3. Preencha os dados do formulário de acordo com o cartão escolhido, confira as informações dos cartões para [Argentina](#bookmark_cartões_locais_da_américa_latina_-_argentina), [Chile](#bookmark_cartões_locais_da_américa_latina_-_chile), [Colômbia](#bookmark_cartões_locais_da_américa_latina_-_colômbia) e [Uruguai](#bookmark_cartões_locais_da_américa_latina_-_uruguai).
-4. Clique em Salvar.
-<p>&nbsp;</p>
-    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_customizado_5-1.gif)
-<p>&nbsp;</p>
-1. Você será redirecionado para a tela de configuração da condição de pagamento.
-2. Informe o "nome da regra" para facilitar a identificação.
-3. Ative a condição de pagamento no campo "Status".
-4. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
-5. Se houver um antifraude configurado na sua loja, você pode ativá-lo para essa condição de pagamento marcando a caixa "Usar Antifraude."
-6. Em opções de parcelamento, escolha parcelamento “Automático”, onde utiliza as condições de parcelamento diretamente de sua conta Mercado Pago.
-7. Clique em “salvar”.
-<p>&nbsp;</p>
-    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_customizado_5-2.gif)
+> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas no Checkout.
 <p>&nbsp;</p>
 
-----[mlc]----
-### Condição de pagamento Webpay
+## Configurando o parcelamento em sua conta Mercado Pago.
 
-Para criar uma **condição de pagamento Webpay**, utilizando sua afiliação com o Mercado Pago, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
-2. Na aba "Condições de pagamento", clique no botão "+" (Adicionar nova condição de pagamento para...).
-3. Na seção "Outro", selecione a condição de pagamento "Webpay".
-4. Informe o "nome da regra" para facilitar a identificação.
-5. Ative a condição de pagamento no campo "Status".
-6. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
-7. Clique em “Salvar”.
+1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio".
+2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
+3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
 <p>&nbsp;</p>
-    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_webpay_8.gif)
-------------
+    ![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
 <p>&nbsp;</p>
-### Cartões locais da América Latina - Argentina
-
-###### Argencard
-- Nome: Argencard
-- Descrição: Argencard
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 501105-501105
-- Código de Pagamento em Adquirente (opcional): argencard
-
-###### Cencosud
-- Nome: Cencosud
-- Descrição: Cencosud
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 603493-603493
-- Código de Pagamento em Adquirente (opcional): cencosud
-
-###### CMR
-- Nome: CMR
-- Descrição: CMR
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 557039-557039
-- Código de Pagamento em Adquirente (opcional): cmr
-
-###### Cordial
-- Nome: Cordial
-- Descrição: Cordial
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 522135-522135,522137-522137,527555-527555
-- Código de Pagamento em Adquirente (opcional): cordial
-
-###### Cordobesa
-- Nome: Cordobesa
-- Descrição: Cordobesa
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 542702-542702,544764-544764,550073-550073,528824-528824
-- Código de Pagamento em Adquirente (opcional): cordobesa
-
-###### MercadoPago + Banco Patagonia
-- Nome: Mercado Pago - Patagonia
-- Descrição: Mercado Pago - Patagonia
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 515073-515073,515070-515070,532383-532383,532384-532384
-- Código de Pagamento em Adquirente (opcional): mercadopago_cc
-
-### Cartões locais da América Latina - Chile
-
-###### CMR
-- Nome: CMR
-- Descrição: CMR
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984
-- Código de Pagamento em Adquirente (opcional): cmr
-
-###### Magna
-- Nome: Magna
-- Descrição: Magna
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 568000-568099
-- Código de Pagamento em Adquirente (opcional): magna
-
-###### Presto
-- Nome: Presto
-- Descrição: Presto
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 920000-920099
-- Código de Pagamento em Adquirente (opcional): presto
-
-### Cartões locais da América Latina - Colômbia
-
-###### Codensa
-- Nome: Codensa
-- Descrição: Codensa
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 590712-590712
-- Código de Pagamento em Adquirente (opcional): codensa (minúscula)
-
-### Cartões locais da América Latina - Uruguai
-
-###### OCA
-- Nome: OCA
-- Descrição: OCA
-- Meio de Pagamento: Mastercard
-- Faixas de Bin{min}-{max},{min}-{max},{bin1},{bin2} (opcional): 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-5495762
-- Código de Pagamento em Adquirente (opcional): oca
-
-> NOTE
->
-> Condições de pagamentos Off-Line
-> 
-> As condições de pagamentos Off-Line são as modalidades de pagamentos onde são realizadas em dois passos:
->
-> - Primeiro, um ticket é gerado com instruções de pagamento.
-> - Em seguida, o pagamento é feito em dinheiro ou através de um caixa eletrônico seguindo as instruções do ticket.
-> 
-> Meios de Pagamentos Off-Line por país
-> - Argentina: PagoFácil, Rapipago, RedLink.
-> - Brasil: Boleto Bancário
-> - Chile: Servipag.
-> - Colombia: Efecty, Davivienda.
-> - México: Banamex, Bancomer, Oxxo.
-> - Perú: PagoEfectivo.
-> - Uruguay: Abitab, Redpagos.
+E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
 ## Configurar DeviceID
 
@@ -279,16 +146,7 @@ document.body.appendChild(dmlscript);
 ```
 <p>&nbsp;</p>
     ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
-<p>&nbsp;</p>    
-## Configurando o parcelamento em sua conta Mercado Pago.
-
-1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio"
-2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
-3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
-<p>&nbsp;</p>
-    ![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
-<p>&nbsp;</p>
-E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
+<p>&nbsp;</p>   
 
 ## Credenciais de sua conta Mercado Pago
 
@@ -300,7 +158,7 @@ Modo Produção - As chaves "Public key e Access token" do modo produção, são
 
 > Antes de iniciar sua operação em produção, assegure se de preencher o formulário ‘Ir para produção’. Caso já tenha realizado este passo o link não será apresentado.
 
-## Entendendo um pouco sobre os principais logs da VTEX
+## Entendendo sobre os principais logs da VTEX
 
 Os logs permitem revisar a informação que retorna MercadoPago e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação.
 
