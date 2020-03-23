@@ -45,7 +45,7 @@ Instale o Mercado Pago para PrestaShop automaticamente seguindo estas etapas na 
 
 Instale o módulo seguindo estas etapas:
 
-1. [Baixe o arquivo .zip](https://github.com/mercadopago/cart-prestashop-7/archive/master.zip) diretamente do nosso Github ou do [diretório](https://addons.prestashop.com/es/pago-tarjeta-carteras-digitales/23962-mercado-pago.html) de módulos do PrestaShop.
+1. [Baixe o arquivo .zip](https://github.com/mercadopago/cart-prestashop-7/archive/master.zip) diretamente do nosso Github ou do [diretório](https://addons.prestashop.com/pt/pagamento-carta-carteira/23962-mercado-pago.html) de módulos do PrestaShop.
 2. Vá à seção "Module Manager", na seção "Personalizar" do seu administrador.
 3. Clique no botão Enviar um módulo no canto superior direito.
 4. Selecione ou arraste o arquivo Mercadopago.zip baixado anteriormente.

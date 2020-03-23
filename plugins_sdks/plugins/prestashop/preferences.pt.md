@@ -82,7 +82,7 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 >
 > Nota
 >
-> Confira a [documentação do Checkout do Mercado Pago ](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para saber mais sobre todos os recursos e funcionalidades.
+> Confira a [documentação do Checkout do Mercado Pago ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/) para saber mais sobre todos os recursos e funcionalidades.
 
 ### Checkout Personalizado
 
@@ -99,4 +99,4 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 > Teste o módulo e confira se tudo está funcionando bem para começar a receber o dinheiro das suas vendas no Mercado Pago.
 >
 >
-> [Receber pagamentos](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/prestashop/receive-payments/)
+> [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/prestashop/receive-payments/)
