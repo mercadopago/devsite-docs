@@ -212,7 +212,7 @@ Você também pode adicionar uma tag HTML no seu site com o identificador `id="d
 
 Se você possui uma aplicação nativa, pode capturar a informação do dispositivo com nosso SDK e enviar no momento de criar o token.
 
-### 1. Adicione a dependência
+#### 1. Adicione a dependência
 
 [[[
 
@@ -234,7 +234,7 @@ dependencies {
 
 ]]]
 
-### 2. Inicialize o módulo
+#### 2. Inicialize o módulo
 
 [[[
 
@@ -274,7 +274,7 @@ DeviceSDK.getInstance().execute(this);
 
 ]]]
 
-### 3. Capture a informação
+#### 3. Capture a informação
 
 Execute alguma das funções abaixo para obter a informação no formato que precisar.
 
@@ -299,7 +299,7 @@ String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // Devolve uma
 
 ]]]
 
-### 4. Envie a informação
+#### 4. Envie a informação
 
 Por último, envie a informação obtida no campo `device` ao criar o `card_token`.
 
