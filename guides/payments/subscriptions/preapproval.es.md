@@ -89,7 +89,7 @@ print_r ($card_token);
 >
 > Nota
 >
-> Evita pagos rechazados siguiendo nuestros pasos para [mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
+> Sigue el paso a paso y evita pagos fraudulentos con nuestras recomendaciones para [mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
 
 ### Realizá el cobro:
 

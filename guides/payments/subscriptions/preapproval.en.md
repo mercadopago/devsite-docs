@@ -86,7 +86,7 @@ print_r ($card_token);
 >
 > Note
 >
-> Avoid rejected payments following our steps to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/pci-compliant-merchants/receiving-payment-by-card/#bookmark_get_approval_faster_by_submitting_the_device_fingerprint).
+> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
 
 ### Do the Payment:
 
