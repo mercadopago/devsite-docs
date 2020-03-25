@@ -4,7 +4,7 @@ La integración por API de pagos de Mercado Pago para tarjetas permite que pueda
 
 ## ¿Cómo funciona?
 
-![imagem fluxograma](image_fluxograma_pt)
+![API-integration-flowchart](/images/api/api_integration_flowchart.png)
 
 Al usar nuestra API de pagos de Mercado Pago, es importante tener en cuenta dos instancias: la de la captura de datos y el envío de confirmación del pago.
 
@@ -15,7 +15,7 @@ Tanto para el frontend como para el backend, tienes que utilizar nuestras librer
 
 > Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
 
-## Captura los datos de la tarjeta  CLIENT-SIDE.
+## Captura los datos de la tarjeta. [Client-side]
 
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**. 
 
@@ -99,7 +99,7 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 #### Obtener tipos de documentos
 
 Uno de los campos obligatorios es el tipo de número de documento. Utiliza la lista de documentos al momento de completar los datos. 
-Con el elemento de tipo `select con `id = docType` que se encuentra en el formulario, MercadoPago.js completará automáticamente las opciones disponibles.
+Con el elemento de tipo `select` con `id = docType` que se encuentra en el formulario, MercadoPago.js completará automáticamente las opciones disponibles.
 
 ```javascript 
 window.Mercadopago.getIdentificationTypes();
@@ -225,7 +225,7 @@ function sdkResponseHandler(status, response) {
         form.submit();
     }
 };
-````
+```
 
 El método `createToken` devolverá un `card_token` con la representación segura de la tarjeta. El segundo campo del método `createToken` es `sdkResponseHandler`, que se ejecuta al crear el token y lo usaremos para crear un campo oculto. De esta forma, almacenaremos el valor del ID para luego enviar el formulario a tus servidores.
 
@@ -235,13 +235,15 @@ El método `createToken` devolverá un `card_token` con la representación segur
 >
 > Ten en cuenta que el token tiene una validez de 7 días y solo se pueda usar una vez.
 
+
+
 > NOTE
 > 
 > Download
 > 
 > Sigue ejemplo completo del formulario de checkout para [download]().
 
-## Envía el pago a Mercado Pago SERVER-SIDE
+## Envía el pago a Mercado Pago [Server-side]
 
 Para realizar efectivamente el pago a Mercado Pago, es necesario que tu backend sepa recibir el atributo `action` del formulario con el token generado y los datos completados.
 
@@ -251,7 +253,9 @@ Ten en cuenta que para que este paso funcione. es necesario que tengas instalada
 
 
 [[[
+
 ```php
+
 <?php  
     ===
     Puedes encontrar el estado del pago en el valor status
@@ -277,8 +281,10 @@ Ten en cuenta que para que este paso funcione. es necesario que tengas instalada
     echo $payment->status;
     //...
 ?>
+
 ```
 ```java
+
 ===
 Puedes encontrar el estado del pago en el valor status
 ===
@@ -425,11 +431,13 @@ curl -X POST \
 
 ### Los posibles estados de un pago son:
 
+![payment-status](/images/api/api_payment_status.png)
+
 Para ayudar a mejorar la conversión de tus pagos, es fundamental que puedas comunicar correctamente a tus clientes los resultados al realizar o crear un pago.
 
 Esto ayudará a evitar casos de rechazos y contracargos en los casos de transacciones aprobadas. Por ejemplo, permite que se puedan corregir los errores de carga de datos o ayudar a cambiar el medio de pago. 
 
-Te recomendamos usar el [manejo de respuesta de error](https://docs.google.com/document/d/1Oa3iaof8xaDQMFczMoqtroROFbx6T-6KX75QJCo8Efk/edit#heading=h.3qsibgbnksci) y utilizar la comunicación sugerida en cada uno de los casos.
+Te recomendamos usar el [manejo de respuesta de error](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/#bookmark_manejo_de_respuesta_de_error) y utilizar la comunicación sugerida en cada uno de los casos.
 
 > NOTE
 > 
@@ -442,7 +450,7 @@ Te recomendamos usar el [manejo de respuesta de error](https://docs.google.com/d
 Por último, es importante que estés siempre informado sobre la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes. 
 
 [Configura notificaciones webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks/)
-
+[Configura notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/)
 
 ### Próximos pasos
 
@@ -452,7 +460,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
+> [Pruebas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/test-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -460,4 +468,4 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Conoce todas las opciones de pago disponibles y cómo ofrecerlas.
 >
-> [Integra otros medios de pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)
+> [Integra otros medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/api/integrates-other-payment-methods)
