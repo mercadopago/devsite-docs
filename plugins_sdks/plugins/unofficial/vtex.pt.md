@@ -20,46 +20,39 @@ Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 
 Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga os passos abaixo:
 
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Afiliações de Gateways**, clique no botão **"+"** (Quero receber pagamento pelo conector).
-3. Clique no conector **MercadoPagoV1**.
-4. Defina qual o nome que identificará a sua **Afiliação**.
-5. O campo **OAuth login** não é utilizado. Deixe-o como está.
-6. Preencha os campos de cadastro **PublicKey e AccessToken** com suas [credenciais da conta MercadoPago](#bookmark_credenciais_de_sua_conta_mercado_pago).
-7. Deixe os campos **RefreshToken, ExpiredTokenIn e Merchant Account Id** em branco.
-8. Em **Processing Mode**, escolha como você quer usar o MercadoPagoV1: como aggregator----[mla, mlm, mlc, mlu, mpe, mco]---- ou gateway------------.
-9. No campo **CountryName**, selecione o país da sua loja.
-10. Em **SoftDescriptor**, indique o que vai aparecer para identificar a transação realizada na sua loja.
-11. Já em **Description**, escreva uma breve descrição do seu negócio (o preenchimento é opcional).
-12. No campo **CategoryId**, escolha a categoria dos produtos que você vende na sua loja.
-13. Já o campo **Financial Institution** é opcional e deve ser preenchido apenas se sua loja operar do "Chile".
-14. Em Use **External Installments**, utilização as condições de parcelamento diretamente de sua conta Mercado Pago.
-15. No campo **Antifraud**, informe se deseja usar um antifraude.
-16. Em **Time Zone**, indique a região que define seu horário local.
-17. Em **orderExpirationHours**, defina por quantas horas o sistema deve checar o status do pedido antes de sua expiração. Quando essa opção não é preenchida, é adotado o padrão de 192 horas.
-18. No campo **maxInstallments**, escolha a quantidade máxima de parcelas enviadas ao MercadoPago.
-19. Em **Categoria Principal**, escolha a categoria que mais se encaixa com sua loja.
-20. Já o campo **Captura de segurança antecipada** é opcional e deve ser preenchido apenas por lojas na "Argentina e no Brasil". Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude).
-21. Clique em "Salvar".
+1. No painel de administração de sua loja, acesse Configurações do módulo de pagamentos.
+2. Na aba Afiliações de Gateways, clique no botão **"+"**.
+3. Clique no conector MercadoPagoV1.
+4. Preencha os campos correspondentes:
+
+| Campos                            | Dados necessários                                                                              |
+|-----------------------------------|------------------------------------------------------------------------------------------------|
+| Nome da afiliação                 | Defina o nome que identificará a sua Afiliação.                                                |
+| OAuth login                       | Não é utilizado. Deixe-o como está.                                                            |
+| PublicKey                         | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave pública. |
+| AccessToken                       | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave privada. |
+| RefreshToken                      | Deixar em branco.                                                                              |
+| ExpiredTokenIn                    | Deixar em branco.                                                                              |
+| Merchant Account Id               | Deixar em branco.                                                                              |
+| Processing Mode                   | Escolha aggregator, modo de processamento a partir de MercadoPagoV1.                           |
+| CountryName                       | Selecione o país da sua loja.                                                                  |
+| SoftDescriptor                    | Indique o nome que vai aparecer para identificar a transação realizada na sua loja.            |
+| Description                       | Escreva uma breve descrição do seu negócio (o preenchimento é opcional).                       |
+| CategoryId                        | Escolha a categoria dos produtos que você vende na sua loja.                                   |
+| Financial Institution             | Deixar em branco. Deve ser preenchido apenas se sua loja operar do "Chile".                    |
+| External Installments             | Sim. Utilização das condições de parcelamento diretamente de sua conta Mercado Pago.           |
+| Antifraud                         | Informe se deseja usar um antifraude.                                                          |
+| Time Zone                         | Indique a região que define seu horário local.                                                 |
+| OrderExpirationHours              | Defina por quantas horas o sistema deve checar o status do pedido antes de sua expiração. Quando essa opção não é preenchida, é adotado o padrão de 192 horas. |
+| MaxInstallments                   | Escolha a quantidade máxima de parcelas enviadas ao MercadoPago.                               |
+| Categoria Principal               | Escolha a categoria que mais se encaixa com sua loja.                                          |
+| Captura de segurança antecipada   | Opcional e deve ser preenchido apenas por lojas na "Argentina e no Brasil". Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
+
+5. Clique em "Salvar".
 <p>&nbsp;</p>
     ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
 <p>&nbsp;</p>
 E pronto! Sua afiliação com o Mercado Pago já está ativa!
-
-> NOTE
->
-> Modo de processamento Mercado Pago com a VTEX
->
-> **Modo Agregador**
-> Receba pagamentos usando todos os cartões e promoções que o Mercado Pago oferece, além de transferências bancárias e métodos de pagamento off-line.
->
-> ----[mla, mlm, mlc, mlu, mpe, mco]---- 
-> **Modo Gateway**
-> Receba pagamentos diretamente nos códigos comerciais do vendedor usando todas as promoções do vendedor.
->
-> **Modo All In**
-> Combine a operação Gateway e Agregador oferecendo ao comprador a melhor opção de pagamento.
-------------
 
 ## Configurar condições de pagamento
 
@@ -116,7 +109,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 
 ## Configurando o parcelamento em sua conta Mercado Pago.
 
-1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio".
+1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio"
 2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
 3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
 <p>&nbsp;</p>
@@ -134,15 +127,11 @@ Para configurar o DeviceID Mercado Pago, siga os passos abaixo:
 4. Copiar e colar o seguinte código e clique em salvar.
 <p>&nbsp;</p>
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 <p>&nbsp;</p>
     ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
