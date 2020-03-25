@@ -64,15 +64,15 @@ using System.Collections;
 MP mp = new MP("ACCESS_TOKEN");
 
 Hashtable card_token = mp.post("/v1/card_tokens", "{"+
-            "\"card_number\": \"450995xxxxxx3704\","+
-            "\"security_code\": \"123\","+
-            "\"expiration_month\": 6,"+
-            "\"expiration_year\": 2018,"+
-            "\"cardholder\": {"+
-                "\"name\": \"APRO\","+
-                "\"identification\": {"+
-                    "\"number\": \"12345678\","+
-                    "\"type\": \"DNI\""+
+            "'card_number': '450995xxxxxx3704',"+
+            "'security_code': '123',"+
+            "'expiration_month': 6,"+
+            "'expiration_year': 2018,"+
+            "'cardholder': {"+
+                "'name': 'APRO',"+
+                "'identification': {"+
+                    "'number': '12345678',"+
+                    "'type': 'DNI'"+
                 "}"+
             "}"+
         "}");
