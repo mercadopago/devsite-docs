@@ -59,7 +59,7 @@ Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y 
 
 Tendrás distintos ajustes disponibles según el tipo de checkout que actives en tu tienda. Personaliza la experiencia de compra con los ajustes avanzados que correspondan a cada uno. 
 
-### Ajustes comunes a todos los checkout
+### Ajustes comunes a todos los checkouts
 
 | Configuración                 | Descripción                                                               	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
