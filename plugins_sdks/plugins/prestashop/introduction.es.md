@@ -27,7 +27,7 @@ Instala nuestro procesador de pagos y lleva tus ventas a otro nivel con la mejor
 | Financiación                 	| Vende en cuotas y ofrece las promociones que desees.                    	                                               |
 | Liberación de dinero          | Al instante o con las tasas y plazos que mejor se adapten al negocio.    	                                               |
 | Medios de pago                | Acepta pagos con tarjeta de crédito y débito, pagos en efectivo y con dinero en cuenta de Mercado Pago.                  |
-| Tipos de checkout             | Checkout Mercado Pago, Checkout personalizado, Ticket Checkout.                                               	         |
+| Tipos de checkout             | Checkout Mercado Pago, Checkout Personalizado, Ticket Checkout.                                               	         |
 | Pago como invitado            | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en Prestashop.                             |
 | Modo binario                  | Aprueba o rechaza pagos al instante y de forma automática.                                                               |
 
@@ -41,7 +41,7 @@ Instala nuestro procesador de pagos y lleva tus ventas a otro nivel con la mejor
 
 Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las características para elegir cuál se adapta mejor al tuyo. 
 
-| Características | Checkout de Mercado Pago | Checkout personalizado | Ticket Checkout |
+| Características | Checkout de Mercado Pago | Checkout Personalizado | Ticket Checkout |
 |-----------------|--------------------------|------------------------|-----------------|
 | Medios de pago  | Pagos con tarjetas, en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito.| Pagos en efectivo. |
 | Experiencia de pago | Tus clientes pagan desde la página de Mercado Pago con un formato modal (dentro de tu tienda). | Tus clientes pagan sin salir de tu tienda online. | Tus clientes pagan sin salir de tu tienda online. |
