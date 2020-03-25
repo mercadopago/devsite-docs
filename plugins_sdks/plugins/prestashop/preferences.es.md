@@ -32,7 +32,7 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 ## Configuración básica
 
 * Define la experiencia que tendrán tus clientes:
- * Usa el **Checkout de Mercado Pago** para soportar pagos con tarjetas, en efectivo y dinero en cuenta. Le brindará seguridad y comodidad al usuario. ¡Y ahora también podrás configurarlo como modal para que se abra en tu tienda!
+ * Usa el Checkout de Mercado Pago para soportar pagos con tarjetas, en efectivo y dinero en cuenta. Le brindará seguridad y comodidad al usuario. ¡Y ahora también podrás configurarlo como modal para que se abra en tu tienda!
  * Usa el Checkout Personalizado y el Ticket Checkout para tener control sobre otras configuraciones. Activa los dos para ofrecer todos los medios de pago.
 
 > WARNING

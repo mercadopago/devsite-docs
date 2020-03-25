@@ -32,7 +32,7 @@ Enter the name of the business to appear on your customers' invoice and make it 
 ## Basic Configuration
 
 * Define the experience your customers will have:
- * Use the **Checkout Mercado Pago** to support payments with cards, cash and money in account. It will provide security and comfort to the user. And now you can also configure it as a modal to open in your store!
+ * Use the Checkout Mercado Pago to support payments with cards, cash and money in account. It will provide security and comfort to the user. And now you can also configure it as a modal to open in your store!
  * Use the Custom Checkout and Ticket Checkout to have control over other settings. Activate both to offer all means of payment.
 
 
