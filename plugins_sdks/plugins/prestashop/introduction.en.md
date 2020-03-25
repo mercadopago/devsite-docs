@@ -22,7 +22,7 @@ Install our payment processor and take your sales to another level with the best
 | Financing                 	  | Sell in installments and offer the promotions you want.                  	                                               |
 | Money Release                 | Instantly or with the rates and terms that best suit the business.    	                                                 |
 | Payment Methods               | Accept payments by credit and debit card, payments in cash and with money in Mercado Pago account.                       |
-| Checkout Types                | Checkout Mercado Pago, Custom Checkout, Ticket checkout.                                                 	               |
+| Checkout Types                | Checkout Mercado Pago, Custom Checkout, Ticket Checkout.                                                 	               |
 | Payment as a Guest            | Users do not need to be registered in Mercado Pago in order to pay in PrestaShop.                                        |
 | Binary Mode                   | Approve or reject payments instantly and automatically.                                                                  |
 
@@ -36,7 +36,7 @@ Install our payment processor and take your sales to another level with the best
 
 With these payment options we cover the needs of each business. Check the features to choose which one best suits yours.
 
-| Characteristics | Checkout Mercado Pago | Custom checkout | Ticket checkout |
+| Characteristics | Checkout Mercado Pago | Custom Checkout | Ticket Checkout |
 |-----------------|--------------------------|------------------------|-----------------|
 | Payment Methods | Payments with cards, in cash and with money in Mercado Pago account. | Payments with debit and credit cards. | Payments in cash. |
 | Payment Experience | Your customers pay from the Mercado Pago page with a modal format (within your store). | Your customers pay without leaving your online store. | Your customers pay without leaving your online store. |
