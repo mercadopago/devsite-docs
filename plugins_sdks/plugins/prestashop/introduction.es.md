@@ -35,7 +35,7 @@ Instala nuestro procesador de pagos y lleva tus ventas a otro nivel con la mejor
 >
 > Nota
 >
-> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-prestashop-7) en Github.
+> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones en Github](https://github.com/mercadopago/cart-prestashop-7).
 
 ## Tipos de checkout
 

@@ -27,7 +27,7 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 >
 > Nota
 >
-> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-prestashop-7) en Github.
+> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones en Github](https://github.com/mercadopago/cart-prestashop-7).
 
 ## Configuración básica
 
@@ -45,7 +45,7 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 
 * Establece el máximo de cuotas en el que podrán pagarte.
 
-* Indica el vencimiento de los pagos presenciales (sólo en Ticket Checkout).
+* Indica el vencimiento de los pagos presenciales (solo en Ticket Checkout).
 
 ## Configuración avanzada
 

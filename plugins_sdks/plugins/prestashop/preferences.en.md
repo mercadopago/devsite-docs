@@ -27,7 +27,7 @@ Enter the name of the business to appear on your customers' invoice and make it 
 >
 > Note
 >
-> All our modules have an open source license. Do you want to participate in its construction? [Suggest improvements and editions](https://github.com/mercadopago/cart-prestashop-7) in Github.
+> All our modules have an open source license. Do you want to participate in its construction? [Suggest improvements and editions in Github](https://github.com/mercadopago/cart-prestashop-7).
 
 ## Basic Configuration
 

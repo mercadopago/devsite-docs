@@ -28,7 +28,7 @@ Insira o nome do seu negócio para que apareça na fatura dos seus clientes e se
 >
 > Nota
 >
-> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições](https://github.com/mercadopago/cart-prestashop-7) no Github.
+> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições no Github](https://github.com/mercadopago/cart-prestashop-7).
 
 ## Configuração básica
 

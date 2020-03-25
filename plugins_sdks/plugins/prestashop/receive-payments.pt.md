@@ -13,7 +13,7 @@ Quando fizer os testes, confira se o fluxo de pagamentos está funcionando corre
 >
 > Nota
 >
-> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições](https://github.com/mercadopago/cart-prestashop-7) no Github.
+> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições no Github](https://github.com/mercadopago/cart-prestashop-7).
 
 ## Ir à produção
 

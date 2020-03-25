@@ -30,7 +30,7 @@ Instale nosso gateway de pagamento e leve suas vendas para outro nível com a me
 >
 > Nota
 >
-> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições](https://github.com/mercadopago/cart-prestashop-7) no Github.
+> Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições no Github](https://github.com/mercadopago/cart-prestashop-7).
 
 ## Tipos de checkout
 
