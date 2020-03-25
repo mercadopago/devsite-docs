@@ -19,7 +19,7 @@ Enter the name of the business to appear on your customers' invoice and make it 
 >
 > Important
 >
-> **Are you a Mercado Pago partner?** Do not forget to enter your Integrator_ID, so we identify all your transactions and know how many sales your account processes.
+> Do not forget to enter your integrator_id as a certified Mercado Pago [Partner](https://partners.mercadopago.com/). If you don't have it, you can [request it now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
 
 <span></span>
 

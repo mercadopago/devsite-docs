@@ -20,7 +20,7 @@ Insira o nome do seu negócio para que apareça na fatura dos seus clientes e se
 >
 > Importante
 >
-> **Você já trabalha com o Mercado Pago?** Não esqueça de inserir seu Integrator_ID, assim identificamos todas as suas transações e sabemos quantas vendas sua conta processa.
+> Não esqueça de inserir seu integrator_id como [Parceiro](https://partners.mercadopago.com/) certificado do Mercado Pago. Se você não o possui, pode [solicitá-lo agora](https://docs.google.com/forms/d/e/1FAIpQLScTwPlLRVW2rB_BnCxekUnfJu9rn-tUMh8ENAnqpxLeB8ULUw/viewform?usp=sf_link).
 
 <span></span>
 

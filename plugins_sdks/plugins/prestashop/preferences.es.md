@@ -19,7 +19,7 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 >
 > Importante
 >
-> **¿Eres partner de Mercado Pago?** No olvides ingresar tu Integrator_ID, así identificamos todas tus transacciones y sabemos cuántas ventas procesa tu cuenta.
+> No olvides ingresar tu integrator_id como [Partner](https://partners.mercadopago.com/) certificado de Mercado Pago. Si no lo tienes, puedes [solicitarlo ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
 
 <span></span>
 
