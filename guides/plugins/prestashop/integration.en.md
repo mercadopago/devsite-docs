@@ -33,4 +33,4 @@ Done! With this you can capture the payments you receive in PrestaShop with your
 > Set your payment preferences and make adjustments according to the experience you want to offer your customers.
 >
 >
-> [Preferences](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/prestashop/preferences/)
+> [Preferences](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/preferences/)

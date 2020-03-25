@@ -7,7 +7,7 @@ Find the payment preference settings in the *Configure* option once you have the
 >
 > Note
 >
-> Remember that we have different [types of checkout](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) that adapt to the needs of your business and that each one has its own settings.
+> Remember that we have different [types of checkout](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) that adapt to the needs of your business and that each one has its own settings.
 
 ## Business Information
 
@@ -99,4 +99,4 @@ Choose what shopping experience your customers will have when paying:
 > Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
 >
 >
-> [Recibir pagos](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/prestashop/receive-payments/)
+> [Recibir pagos](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/receive-payments/)

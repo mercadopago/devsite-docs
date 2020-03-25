@@ -108,4 +108,4 @@ Estas son las mejoras técnicas que encontrarás en nuestra última versión:
 > Conecta tu cuenta de Mercado Pago al módulo y captura los pagos que recibas por tus ventas online.
 >
 > 
-> [Integrar](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/prestashop/integration/)
+> [Integrar](https://www.mercadopago.com.ar/developers/es/guides/plugins/prestashop/integration/)

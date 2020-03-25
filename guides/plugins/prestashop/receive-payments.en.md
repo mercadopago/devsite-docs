@@ -5,7 +5,7 @@
 
 The Mercado Pago module comes with the Sandbox environment active by default. Simulate payments in the store with this testing environment and verify that everything works well before you start receiving real payments from your customers.
  
-This is where the test credentials that you copied into the module come into play when [integrating Mercado Pago to your store](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/prestashop/integration/). You need them to be able to test the module.
+This is where the test credentials that you copied into the module come into play when [integrating Mercado Pago to your store](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/integration/). You need them to be able to test the module.
 
 When you test, verify that the payment flow works correctly and that the payment preferences are what you have set. Do you see that everything is going well? Disable Sandbox mode and go to Production mode to receive real payments.
 

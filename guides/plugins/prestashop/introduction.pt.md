@@ -57,4 +57,4 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 > Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
 >
 > 
-> [Instalar](https://www.mercadopago.com.ar/developers/pt/plugins_sdks/plugins/prestashop/instalation/)
+> [Instalar](https://www.mercadopago.com.ar/developers/pt/guides/plugins/prestashop/instalation/)

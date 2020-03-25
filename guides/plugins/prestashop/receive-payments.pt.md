@@ -5,7 +5,7 @@
 
 O módulo do Mercado Pago vem com o ambiente Sandbox ativo por padrão. Simule pagamentos na loja neste ambiente de teste e veja se tudo está funcionando bem antes de começar a receber pagamentos reais dos seus clientes. 
  
-Aqui é onde entram em jogo as credenciais de teste que estarão copiadas no módulo no momento de [integrar Mercado Pago à sua loja](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/prestashop/integration/). Você precisará delas para poder testar o módulo.
+Aqui é onde entram em jogo as credenciais de teste que estarão copiadas no módulo no momento de [integrar Mercado Pago à sua loja](https://www.mercadopago.com.br/developers/pt/guides/plugins/prestashop/integration/). Você precisará delas para poder testar o módulo.
 
 Quando fizer os testes, confira se o fluxo de pagamentos está funcionando corretamente e se as preferências de pagamentos são as que você configurou. Tudo está certo? Desative o modo Sandbox e vá para o modo Produção para receber pagamentos reais.
 

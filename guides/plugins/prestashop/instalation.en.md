@@ -108,4 +108,4 @@ These are the technical improvements you will find in our latest version:
 > Connect your Mercado Pago account to the module and capture the payments you receive for your online sales.
 >
 > 
-> [Integrate](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/prestashop/integration/)
+> [Integrate](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/integration/)

@@ -34,4 +34,4 @@ Pronto! Assim você poderá capturar os pagamentos que receber no PrestaShop com
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você quer oferecer aos seus clientes.
 >
 >
-> [Preferências](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/prestashop/preferences/)
+> [Preferências](https://www.mercadopago.com.br/developers/pt/guides/plugins/prestashop/preferences/)

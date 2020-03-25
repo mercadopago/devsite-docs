@@ -57,4 +57,4 @@ With these payment options we cover the needs of each business. Check the featur
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](https://www.mercadopago.com.ar/developers/en/plugins_sdks/plugins/prestashop/instalation/)
+> [Install](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/instalation/)

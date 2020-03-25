@@ -7,7 +7,7 @@ Configure as preferências de pagamento para oferecer diversas opções na área
 >
 > Nota
 >
-> Lembre-se de que temos diversos [tipos de checkout](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) que se adaptam às necessidades do seu negócio e que cada um conta com a sua própria configuração. 
+> Lembre-se de que temos diversos [tipos de checkout](https://www.mercadopago.com.br/developers/pt/guides/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) que se adaptam às necessidades do seu negócio e que cada um conta com a sua própria configuração. 
 
 
 ## Informações do negócio
@@ -99,4 +99,4 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 > Teste o módulo e confira se tudo está funcionando bem para começar a receber o dinheiro das suas vendas no Mercado Pago.
 >
 >
-> [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/plugins_sdks/plugins/prestashop/receive-payments/)
+> [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/guides/plugins/prestashop/receive-payments/)

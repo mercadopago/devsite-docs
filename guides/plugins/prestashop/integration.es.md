@@ -34,4 +34,4 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 > Configura tus preferencias de pago y haz ajustes según la experiencia que quieras ofrecer a tus clientes  
 >
 >
-> [Preferencias](https://www.mercadopago.com.ar/developers/es/plugins_sdks/plugins/prestashop/preferences/)
+> [Preferencias](https://www.mercadopago.com.ar/developers/es/guides/plugins/prestashop/preferences/)
