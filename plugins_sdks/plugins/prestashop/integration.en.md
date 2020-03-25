@@ -1,5 +1,4 @@
 # Integrate Mercado Pago
-<br/>
 
 Connect a Mercado Pago account to the module to capture your sales charges in PrestaShop. It’s easy! You only need to have a merchant account in Mercado Pago and obtain the test and production credentials.
 

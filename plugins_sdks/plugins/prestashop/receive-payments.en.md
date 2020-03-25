@@ -1,5 +1,5 @@
 # Test and Receive payments
-<br>
+
 
 ## How to test the module
 

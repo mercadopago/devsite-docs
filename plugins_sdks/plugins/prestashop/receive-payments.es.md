@@ -1,5 +1,5 @@
 # Prueba y recibe pagos
-<br>
+
 
 ## Cómo probar el módulo
 

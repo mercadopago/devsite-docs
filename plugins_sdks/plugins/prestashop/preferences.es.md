@@ -1,7 +1,7 @@
 # Preferencias de pago
-<br/>
 
-Encuentra la configuración de las preferencias de pago en la opción Configurar una vez que tengas instalado el módulo. Una vez dentro, activa el checkout que quieras ofrecer y configura las opciones que prefieras.
+
+Encuentra la configuración de las preferencias de pago en la opción *Configurar* una vez que tengas instalado el módulo. Una vez dentro, activa el checkout que quieras ofrecer y configura las opciones que prefieras.
 
 > NOTE
 >
@@ -11,7 +11,7 @@ Encuentra la configuración de las preferencias de pago en la opción Configurar
 
 ## Información del negocio
 
-Ingresa el **nombre del negocio** para que aparezca en la factura de tus clientes y les sea más fácil reconocer el pago cuando les llegue un resumen de compras. Selecciona a qué **categoría** pertenecen los productos o servicios que ofrece la tienda y haz otros ajustes según tus necesidades.
+Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y les sea más fácil reconocer el pago cuando les llegue un resumen de compras. Selecciona a qué categoría pertenecen los productos o servicios que ofrece la tienda y haz otros ajustes según tus necesidades.
 
 ![Información básica](/images/prestashop/preferences_es.jpg)
 

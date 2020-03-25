@@ -1,5 +1,5 @@
 # Mercado Pago para PrestaShop 1.6 & 1.7
-<br/>
+
 
 Como você pode imaginar, um site sem processador de pagamento nada mais é do que um catálogo on-line. Seus clientes poderão ver seus produtos, mas não poderão pagar por eles.
 

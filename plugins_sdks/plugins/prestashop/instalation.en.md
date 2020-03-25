@@ -1,5 +1,5 @@
 # Install Mercado Pago for PrestaShop 1.6 & 1.7
-<br/>
+
 
 Install the Mercado Pago module automatically, through the marketplace or from your PrestaShop panel.
 
@@ -29,13 +29,13 @@ It is important that you review the requirements to install our module. Then fol
 >
 > Important
 >
-> You can use the HTTP protocol while in ‘Testing’ mode and not making real transactions. When you go to Production you must have an **SSL certificate** to offer a **secure navigation** that protects your data and those of your customers. Once you have it, the path to your online store must respond to the **HTTPS protocol**.
+> You can use the HTTP protocol while in "Testing" mode and not making real transactions. When you go to Production you must have an **SSL certificate** to offer a **secure navigation** that protects your data and those of your customers. Once you have it, the path to your online store must respond to the **HTTPS protocol**.
 
 ## Automatic Installation
 
-Install Mercado Pago for PrestaShop automatically by following these steps from the ‘Customize’ section in your administrator:
+Install Mercado Pago for PrestaShop automatically by following these steps from the "Customize" section in your administrator:
 
-1. Go to the Modules Catalog and look for “Mercado Pago” among the modules offer.
+1. Go to the Modules Catalog and look for "Mercado Pago" among the modules offer.
 2. Click Install and then look for it in the "Module Manager" section.
 3. Activate it to start configuring the module in your store.
 
@@ -46,8 +46,8 @@ Install Mercado Pago for PrestaShop automatically by following these steps from 
 Install the module by following these steps:
 
 1. [Download the .zip file](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) directly from our Github or from the Prestashop modules [directory](https://addons.prestashop.com/en/payment-card-wallet/23962-mercado-pago.html).
-2. Go to the "Module Manager" section in the 'Customize' section of your administrator.
-3. Click the 'Upload a Module' button in the upper right corner.
+2. Go to the "Module Manager" section in the "Customize" section of your administrator.
+3. Click the "Upload a Module" button in the upper right corner.
 4. Select or drag the previously downloaded mercadopago.zip file.
 5. Done! The Mercado Pago module will be installed in your online store.
 

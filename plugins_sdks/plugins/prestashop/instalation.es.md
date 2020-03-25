@@ -1,5 +1,5 @@
 # Instala Mercado Pago para PrestaShop 1.6 & 1.7
-<br/>
+
 
 Instala el módulo de Mercado Pago de forma automática, a través del marketplace o desde tu panel de PrestaShop. 
 
@@ -11,7 +11,7 @@ Instala el módulo de Mercado Pago de forma automática, a través del marketpla
 
 ## Requisitos de instalación
 
-Revisa los requisitos de instalación y sigue los pasos que te indicamos ¡solo te llevará unos minutos instalar el módulo! 
+Es importante que revises los requerimientos para poder instalar nuestro módulo. Luego sigue los pasos que te indicamos. ¡Sólo te llevará unos minutos!
 
 | Requisitos                    | Detalles                                                                  	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
@@ -29,14 +29,14 @@ Revisa los requisitos de instalación y sigue los pasos que te indicamos ¡solo 
 >
 > Importante
 >
-> Puedes usar el protocolo HTTP mientras estés en modo ‘Pruebas’ y no estés haciendo transacciones reales. Cuando vayas a Producción debes tener un **certificado SSL** para ofrecer una **navegación segura** que proteja tus datos y los de tus clientes. Una vez que lo tengas, la ruta de acceso a tu tienda online responderá al **protocolo HTTPS**.
+> Puedes usar el protocolo HTTP mientras estés en modo "Pruebas" y no estés haciendo transacciones reales. Cuando vayas a Producción debes tener un **certificado SSL** para ofrecer una **navegación segura** que proteja tus datos y los de tus clientes. Una vez que lo tengas, la ruta de acceso a tu tienda online responderá al **protocolo HTTPS**.
 
 ## Instalación automática
 
-Instala Mercado Pago para PrestaShop de forma automática siguiendo estos pasos desde la sección ‘Personalizar’ en tu administrador:
+Instala Mercado Pago para PrestaShop de forma automática siguiendo estos pasos desde la sección "Personalizar" en tu administrador:
 
-1. Ve a Catálogo de Módulos y busca “Mercado Pago” entre la oferta de módulos.
-2. Haz clic en Instalar y luego búscalo en la sección “Module Manager”. 
+1. Ve a Catálogo de Módulos y busca "Mercado Pago" entre la oferta de módulos.
+2. Haz clic en Instalar y luego búscalo en la sección "Module Manager". 
 3. Actívalo para empezar a configurar el módulo en tu tienda.
 
 **¡Excelente! verás el módulo instalado en la sección Personalizar de tu panel de administración.**
@@ -46,7 +46,7 @@ Instala Mercado Pago para PrestaShop de forma automática siguiendo estos pasos 
 Instala el módulo siguiendo estos pasos:
 
 1. [Descarga el archivo .zip](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) directo de nuestro Github o desde el [directorio](https://addons.prestashop.com/es/pago-tarjeta-carteras-digitales/23962-mercado-pago.html) de módulos de PrestaShop.
-2. Ve a la sección “Module Manager” en la sección ‘Personalizar’ de tu administrador.
+2. Ve a la sección "Module Manager" en la sección "Personalizar" de tu administrador.
 3. Haz clic en el botón Subir un Módulo en el extremo superior derecho.
 4. Seleccione o arrastre el archivo mercadopago.zip descargado anteriormente.
 5. ¡Y listo! El módulo de Mercado Pago se instalará en tu tienda online.

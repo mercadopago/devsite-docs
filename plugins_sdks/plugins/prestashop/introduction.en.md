@@ -1,5 +1,5 @@
 # Mercado Pago for PrestaShop 1.6 & 1.7
-<br/>
+
 
 As you can imagine, a website without a payment processor is nothing more than an online catalog. Your customers will be able to see your products but they won't be able to pay you for them.
 

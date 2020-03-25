@@ -1,5 +1,5 @@
 # Integre o Mercado Pago
-<br/>
+
 
 Conecte uma conta do Mercado Pago ao módulo para capturar os recebimentos das suas vendas no PrestaShop.  É fácil! Você só precisa ter uma conta de vendedor no Mercado Pago e ter as credenciais de teste e produção.
 

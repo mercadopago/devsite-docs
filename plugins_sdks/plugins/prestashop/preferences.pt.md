@@ -1,5 +1,5 @@
 # Preferências de pagamento
-<br/>
+
 
 Configure as preferências de pagamento para oferecer diversas opções na área de compras. Escolha qual você quer oferecer na sua loja virtual e faça os ajustes necessários para que tudo funcione bem.
 
@@ -12,7 +12,7 @@ Configure as preferências de pagamento para oferecer diversas opções na área
 
 ## Informações do negócio
 
-Insira o **nome do seu negócio** para que apareça na fatura dos seus clientes e seja mais fácil reconhecer o pagamento quando parecer no resumo da fatura. Selecione a qual **categoria** pertencem os produtos e/ou serviços que a loja oferece e faça outros ajustes de acordo com as suas necessidades. 
+Insira o nome do seu negócio para que apareça na fatura dos seus clientes e seja mais fácil reconhecer o pagamento quando parecer no resumo da fatura. Selecione a qual categoria pertencem os produtos e/ou serviços que a loja oferece e faça outros ajustes de acordo com as suas necessidades. 
 
 ![Informação básica](/images/prestashop/preferences_pt.png)
 

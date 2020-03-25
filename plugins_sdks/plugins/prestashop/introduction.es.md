@@ -1,5 +1,5 @@
 # Mercado Pago para PrestaShop 1.6 & 1.7
-<br/>
+
 
 <center>
   <iframe width="100%" height="350" src="https://www.youtube.com/embed/-0QDOCWY_dE" frameborder="0" allow="encrypted-media; picture-in-picture"></iframe>

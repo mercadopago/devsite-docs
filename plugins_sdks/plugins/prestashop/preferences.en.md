@@ -1,7 +1,7 @@
 # Payment Preferences
-<br/>
 
-Find the payment preference settings in the Configure option once you have the module installed. Once inside, activate the checkout you want to offer and configure the options you prefer.
+
+Find the payment preference settings in the *Configure* option once you have the module installed. Once inside, activate the checkout you want to offer and configure the options you prefer.
 
 > NOTE
 >
@@ -11,7 +11,7 @@ Find the payment preference settings in the Configure option once you have the m
 
 ## Business Information
 
-Enter the name of the business to appear on your customers' invoice and make it easier for them to recognize the payment when a purchase summary arrives. Select to which **category** the products or services offered by the store belong and make other adjustments according to your needs.
+Enter the name of the business to appear on your customers' invoice and make it easier for them to recognize the payment when a purchase summary arrives. Select to which category the products or services offered by the store belong and make other adjustments according to your needs.
 
 ![Basic information](/images/prestashop/preferences_en.png)
 
