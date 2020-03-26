@@ -37,4 +37,4 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 	&end_date=2020-01-01T23:59:59Z
 
 
-> Para mais informações sobre a programação de relatórios, [onsulte a documentação](https://www.mercadopago.com.ar/developers/pt/guides/reports/general-considerations/reconciliation-reports/). 
+> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago.com.ar/developers/pt/guides/reports/general-considerations/reconciliation-reports/). 
