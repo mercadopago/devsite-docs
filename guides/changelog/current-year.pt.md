@@ -17,13 +17,13 @@ Se você possui campanhas publicitárias para seu negócio, é importante acompa
 [Começar a medir a conversão de seus anúncios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/).
 
 
-## 27 de março de 2019
+## 27 de março de 2020
 
 Para ajudar a otimizar suas conciliações, implementamos melhorias na geração dos intervalos de datas para relatórios programados. A mudança é válida tanto para o relatório de Dinheiro retirado, como para o relatório de Todas as transações. Desde quarta-feira 1 de abril, para encontrar seus relatórios programados, busque-os por um segundo a menos.
 
 
-| Filtros do `search`| Data atual | Nova data |
-| :--------- | :------------------------ | :------------------------------- |
+Filtros do `search`| Data atual | Nova data |
+ --------- | ------------------------ | ------------------------------- |
 begin_date  | 01/01/2020 00:00:00 | 01/01/2020 00:00:00
 end_date | 02/01/2020 |  00:00:00 01/01/2020  23:59:59
 
@@ -37,8 +37,4 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 	&end_date=2020-01-01T23:59:59Z
 
 
-> NOTE
-> 
-> Nota
-> 
 > Para mais informações sobre a programação de relatórios, [onsulte a documentação](https://www.mercadopago.com.ar/developers/pt/guides/reports/general-considerations/reconciliation-reports/). 

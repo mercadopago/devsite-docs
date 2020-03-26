@@ -17,12 +17,12 @@ Si tienes campañas de publicidad para tu negocio, es importante que puedas segu
 [Comienza a medir la conversión de tus anuncios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/).
 
 
-## 27 de marzo de 2019
+## 27 de marzo de 2020
 
 Para ayudarte a optimizar tus conciliaciones, implementamos una mejora en la generación de los rangos de fechas para reportes programados. El cambio aplica tanto para el reporte de Dinero retirado, como al reporte de Todas las transacciones. Desde el miércoles 1 de abril, para encontrar tus reportes programados, vas a tener que buscarlos por un segundo menos. 
 
-| Filtros del `search`| Fecha atual | Nueva fecha |
-| :--------- | :------------------------ | :------------------------------- |
+ Filtros del `search`| Fecha atual | Nueva fecha |
+--------- | ------------------------ | ------------------------------- |
 begin_date  | 01/01/2020 00:00:00 | 01/01/2020 00:00:00
 end_date | 02/01/2020 |  00:00:00 01/01/2020  23:59:59
 
@@ -35,8 +35,5 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 	&end_date=2020-01-01T23:59:59Z
  
 
-> NOTE
-> 
-> Nota
-> 
+
 > Para más información sobre la programación de reportes, [consulta la documentación](https://www.mercadopago.com.ar/developers/es/guides/reports/general-considerations/reconciliation-reports/).  
