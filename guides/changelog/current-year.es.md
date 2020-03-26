@@ -24,7 +24,7 @@ Para ayudarte a optimizar tus conciliaciones, implementamos una mejora en la gen
  Filtros del `search`| Fecha atual | Nueva fecha |
 --------- | ------------------------ | ------------------------------- |
 begin_date  | 01/01/2020 00:00:00 | 01/01/2020 00:00:00
-end_date | 02/01/2020 |  00:00:00 01/01/2020  23:59:59
+end_date | 02/01/2020  00:00:00 | 01/01/2020  23:59:59
 
 Tu nuevo parámetro quedaría de la siguiente forma: 
  
