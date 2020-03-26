@@ -517,7 +517,7 @@ Para criar o pagamento, é importante enviar os dados indicados acima:
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 // ...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken("ff8080814c11e237014c1ff593b57b4d")
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(3)
