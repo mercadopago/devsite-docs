@@ -35,7 +35,7 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 	&end_date=2020-01-01T23:59:59Z
  
 
- > NOTE
+> NOTE
 > 
 > Nota
 > 
