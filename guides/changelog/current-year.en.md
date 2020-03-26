@@ -24,7 +24,7 @@ In order to help you optimize your reconciliations, we made some changes in the 
  `Search` Filters | Actual Date | New Date |
 --------- | ------------------------ | ------------------------------- |
 begin_date  | 01/01/2020 00:00:00 | 01/01/2020 00:00:00
-end_date | 02/01/2020 |  00:00:00 01/01/2020  23:59:59
+end_date | 02/01/2020 00:00:00 |  01/01/2020  23:59:59
 
 Your new parameter will look as follows:
 
@@ -36,4 +36,3 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 
 > For further information regarding scheduling your reports, [visit our documentation](https://www.mercadopago.com.ar/developers/en/guides/reports/general-considerations/reconciliation-reports/).
   
-
