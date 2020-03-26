@@ -23,14 +23,14 @@ end_date | 02/01/2020  00:00:00 | 01/01/2020  23:59:59
 
 Tu nuevo parámetro quedaría de la siguiente forma: 
  
-´´´
+```
 https://api.mercadolibre.com/account/bank_report/search?access_token={{access_token}}
 	&created_from=schedule
 	&user_id=290477154
 	&begin_date=2020-01-01T00:00:00Z
 	&end_date=2020-01-01T23:59:59Z
  
-´´´
+```
 
 > Para más información sobre la programación de reportes, [consulta la documentación](https://www.mercadopago.com.ar/developers/es/guides/reports/general-considerations/reconciliation-reports/).  
 
