@@ -17,6 +17,10 @@ Tanto para el frontend como para el backend, tienes que utilizar nuestras librer
 
 ## Captura los datos de la tarjeta. [Client-side]
 
+> CLIENT_SIDE
+> 
+> Captura los datos de la tarjeta.
+
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**. 
 
 ### 1. Incluye la librería MercadoPago.js
