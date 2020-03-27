@@ -13,9 +13,9 @@ sites_supported:
 
 Para integrar el modelo desatendido es necesario:
 
-  1. Crear el servicio que será invocado al recibir una intención de pago y su lógica asociada.
-    - A. La información de la orden aún no está disponible.
-    - B. La información de la orden está disponible.
+  1. Crear el servicio que será invocado al recibir una intención de pago y su lógica asociada cuando:
+    * A. La información de la orden **aún no está disponible**.
+    * B. La información de la orden **está disponible**.
 
   2. Declarar la URL de tu dominio a Mercado Pago.
 
@@ -66,8 +66,8 @@ La respuesta debe contener el siguiente mensaje de la orden a ser cobrada:
 
 ```json
 {
-   "collector_id": 178106235,
-   "sponsor_id": 334249281,
+   "collector_id": 446560529,
+   "sponsor_id": 446566691,
    "items":[
       {
          "title":" $500.00 de SUPER",
@@ -82,21 +82,21 @@ La respuesta debe contener el siguiente mensaje de la orden a ser cobrada:
 }
 ```
 
-Debes usar el campo external_reference para poder identificar la orden de tu sistema dentro de Mercado Pago.
+Debes usar el campo `external_reference` para poder identificar la orden de tu sistema dentro de Mercado Pago.
 
 ### Atributos
 
-| Atributo            | Tipo (type)       |  Descripción               |
+| Atributo            | Tipo (_type_)       |  Descripción               |
 | ------------- | ------------- | ------------------------------------------------------------ |
-| `collector_id` | Long     | Identificador de la cuenta Mercado Pago a la que se le acreditarán los pagos.  |
-| `sponsor_id` | Long           | Identificador de la cuenta Mercado Pago del sistema integrador. |
-| `items.title` | String           | Título del producto. |
-| `items.currency_id` | String(3)           | Identificador de moneda en formato ISO-4217. |
-| `items.description` | String     | Descripción del producto.  |
-| `items.quantity` | Integer           | Cantidad del producto en cuestión. |
-| `items.unit_price` | Decimal           | Precio unitario del producto. |
-| `external_reference` | String (256)           | Referencia para poder asociar la orden en Mercado Pago con la orden de compra, comanda o despacho en tu sistema. Generalmente se usa el número de factura. |
-| `notification_url` | String | URL a la cual se enviarán las notificaciones. |
+| `collector_id` | _Long_     | Identificador de la cuenta Mercado Pago a la que se le acreditarán los pagos.  |
+| `sponsor_id` | _Long_           | Identificador de la cuenta Mercado Pago del sistema integrador. |
+| `items.title` | _String_           | Título del producto. |
+| `items.currency_id` | _String (3)_           | Identificador de moneda en formato ISO-4217. |
+| `items.description` | _String_     | Descripción del producto.  |
+| `items.quantity` | _Integer_          | Cantidad del producto en cuestión. |
+| `items.unit_price` | _Decimal_          | Precio unitario del producto. |
+| `external_reference` | _String (256)_           | Referencia para poder asociar la orden en Mercado Pago con la orden de compra, comanda o despacho en tu sistema. Generalmente se usa el número de factura. |
+| `notification_url` | _String_ | URL a la cual se enviarán las notificaciones. |
 
 ## 2. Declarar la URL de tu dominio a Mercado Pago
 
@@ -117,7 +117,7 @@ Debes informar a tu asesor técnico asignado, la URL base de tu dominio a la que
 >
 > Integración avanzada
 >
-> Conoce las opciones que dispones para llegar la integración al siguiente nivel.
+> Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
 > [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/)
 

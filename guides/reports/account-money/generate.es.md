@@ -1,9 +1,9 @@
 
-# ¿Cómo generar tu reporte de Dinero en cuenta?
+# ¿Cómo generar tu reporte de Todas las transacciones?
 
 ## Canales de generación
 
-Existen dos formas de generar un reporte de Dinero en cuenta:
+Existen dos formas de generar un reporte de Todas las transacciones:
 
 | Canales | Descripción |
 | ------- | ----------- |
@@ -60,7 +60,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -70,7 +70,7 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 >
 > Generación desde Mercado Pago  
 >
-> Descarga tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
+> Crea tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
 >
 > [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/panel/)
 

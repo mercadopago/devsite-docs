@@ -192,10 +192,12 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
       "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
     },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     "identification": {
       "type": "DNI",
       "number": "123456789"
     },
+    ------------
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
       "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
@@ -444,6 +446,12 @@ Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincroniza
 
 Para mais informações, consulte a seção de [Notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
 
+### Evite recusas de pagamentos
+
+Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
+
+Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+
 ### Teste a integração
 
 Você pode testar sua integração antes de partir para a produção, a fim de verificar o funcionamento e fazer os ajustes necessários.
@@ -451,7 +459,6 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 Para isso, deve-se utilizar usuários e cartões de teste.
 
 Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/testing).
-
 
 ### Próximos passos
 

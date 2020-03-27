@@ -1,6 +1,13 @@
+
 # Identification types
 
 The types of documents accepted when making a payment through Mercado Pago vary by country.
+
+> WARNING 
+> 
+> Important
+> 
+> Keep in mind that this information does not apply to Mexico.
 
 ## Get the document types
 
@@ -48,8 +55,6 @@ The results included in this response will coincide with the country associated 
 ## Identification types by country
 
 The document types accepted by country are listed below.
-
-Only Mexico does not require this information.
 
 ### Argentina
 

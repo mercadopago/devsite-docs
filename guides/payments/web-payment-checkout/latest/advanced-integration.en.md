@@ -15,7 +15,7 @@ sites_supported:
 IPN (Instant Payment Notification) notifications are the **automatic form of notice of the creation of new payments and updates of their status.** For example if they were approved, rejected or if they are pending.
 They allow you to manage your stock and keep your system in sync.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Receive IPN notifications</a>
+<a href="https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/" target="_blank">Receive IPN notifications</a>
 
 ## Additional information for the preference
 
@@ -38,9 +38,11 @@ We recommend detailing all possible information about the item and the buyer.
     "area_code" => "",
     "number" => "949 128 866"
   );
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   $payer->identification = array(
     "type" => "DNI",
     "number" => "12345678"
+  ------------
   );
   $payer->address = array(
     "street_name" => "Cuesta Miguel Armendáriz",
@@ -61,9 +63,11 @@ var payer = {
     area_code: "",
     number: "949 128 866"
   },
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: {
     type: "DNI",
     number: "12345678"
+  ------------
   },
   address: {
     street_name: "Cuesta Miguel Armendáriz",
@@ -83,9 +87,11 @@ payer.setName("Charles")
      .setPhone(new Phone()
         .setAreaCode("")
         .setPhoneNumber("949 128 866"))
+      ----[mla, mlb, mlu, mco, mlc, mpe]----  
      .setIdentification(new Identification()
         .setType("DNI")
         .setNumber("12345678"))
+      ------------  
      .setAddress(new Address()
         .setStreetName("Cuesta Miguel Armendáriz")
         .setBuildingNumber("1004")
@@ -103,10 +109,12 @@ payer = MercadoPago::Payer.new({
     area_code: "",
     number: "949 128 866"
   })
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: MercadoPago::Identification.new({
     type: "DNI",
     number: "12345678"
   })
+  ------------
   address: MercadoPago::Address.new ({
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
@@ -130,11 +138,13 @@ Payer payer = new Payer()
         AreaCode = "",
         Number = "949 128 866"
     },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     Identification = new Identification()
     {
         Type = "DNI",
         Number = "12345678"
     },
+    ------------
     Address = new Address()
     {
         StreetName = "Cuesta Miguel Armendáriz",
@@ -284,19 +294,25 @@ Preference preference = new Preference();
 ```
 ]]]
 
+## Prevent payment rejection
+
+A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
+
+Avoid rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections" target="_blank">improve the approval process</a>.
+
 ## Cancellations and Returns
 
 Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.
 And the returns happen when the payment was made but the seller decides to cancel it totally or partially.
 
-You can find all the information in the <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds" target="_blank"> Returns and Cancellations section</a>.
+You can find all the information in the <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds" target="_blank"> Returns and Cancellations section</a>.
 
 ## Manage Chargebacks
 
 A _chargeback_ occurs when the buyer contacts the entity that issued the card and communicates that they do not recognize the payment.
 This means that the seller's money for that payment will be withheld from their Mercado Pago account until it is settled.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/" target="_blank"> Manage Chargebacks</a>
+<a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/chargebacks/" target="_blank"> Manage Chargebacks</a>
 
 ---
 

@@ -24,8 +24,8 @@ Durante os testes em modo sandbox, pode operar em HTTP, mas para a homologação
 
 ## Promoções e Financiamento
 
-Se oferece pagamentos com cartões de crédito com parcelamentos, deve deixar claro as promoções oferecidas pelo MercadoPago. Pode incluir um de nossos [banners de meio de pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/banners/introduction/), ou ainda direcionar o cliente para a [sessão de promoções](https://www.mercadopago.com.br/promocoes/).
-Também deve informar os juros que serão pagos pelo seu usuário, direcionando para a sessão [custos de parcelamento MercadoPago](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
+Se oferece pagamentos com cartões de crédito com parcelamentos, deve deixar claro as promoções oferecidas pelo Mercado Pago. Pode incluir um de nossos [banners de meio de pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/banners/introduction/), ou ainda direcionar o cliente para a [sessão de promoções](https://www.mercadopago.com.br/promocoes/).
+Também deve informar os juros que serão pagos pelo seu usuário, direcionando para a sessão [custos de parcelamento Mercado Pago](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
 > NOTE
@@ -44,6 +44,12 @@ Para isso, consulte os [possíveis códigos de erro da API](https://www.mercadop
 Além disso, quando o pagamento com cartão de crédito é aprovado, deverá mostrar na tela, assim como um possível envio de email do pagamento aprovado, como o comprador verá o resultado daquela compra na sua fatura de cartão de crédito, simplesmente mostre o valor do atributo `statement_descriptor` da resposta do pagamento.
 
 Se permite fazer devoluções de pagamentos, deixe claro que poderão ser feitas em até 90 dias depois da aprovação do pagamento.
+
+> NOTE
+>
+> Nota
+>
+> Obtenha benefícios para o seu negócio com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
 
 ### Termos e condições
 

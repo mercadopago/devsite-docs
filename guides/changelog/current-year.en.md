@@ -1,4 +1,4 @@
-# Mercado Pago's release notes 2019
+# Mercado Pago's release notes 2020
 
 Each release note describes the new changes applying to a version. This changes may include:
 
@@ -10,89 +10,34 @@ Each release note describes the new changes applying to a version. This changes 
 
 - **Documentation updates:** Guides, references and tutorials to help you monetize your business by integrating Mercado Pago.
 
-## December 5th, 2019
-
-At Mercado Pago we always try to optimize our platform offering the highest efficiency and security in payment processing.
-
-We are currently working on shutting down our Custom Checkout API version 0 in order to maintain the highest quality standards.
-
-After December 12th, 2019 version 0 will stop having support.
-
-The shutdown will involve the following resources:
-
-| Use                     | Method | Deprecated resource URI                  |
-|-------------------------|--------|------------------------------------------|
-| Payment                 | `POST` | /checkout/custom/create_payment          |
-| Payment Methods         | `GET`  | /checkout/custom/payment_methods         |
-| Payment Methods search  | `GET`  | /checkout/custom/payment_methods/search  |
-| Card issuers            | `GET`  | /checkout/custom/card_issuers            |
-
-You can find the equivalent resources in [this article](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction/).
-
-## November 25, 2019
-
-To meet the highest security standards, we seek to always be updated. Therefore, the old version of **IPN notifications (Instant Payment Notification)** will no longer be available from November 29.
-
-If you are using it, **you must check your version and update it to avoid problems and loss of service.** In case you don't want to do it, you can use other types of notifications that we offer.
-
-You can find all the necessary information in the [migration guide](https://www.mercadopago.com.br/developers/en/guides/changelog/migration-guides/ipn-ow-guide). 
-
-----[mlc, mco]----
-
-## September 25th, 2019
-
-**Flow improvements for PSE, Webpay y Khipu.**
-
-- If customer “callback_url” is set for the payment, user is redirected to the defined url after 15 seconds.
-- In case it is not defined, Mercado Pago´s success is displayed without redirection
-
-------------
-----[mlc]----
-
-**Improvements for rejected payments in Webpay**
-
-- Shopify: Problem solved when a client selects as payment method Debit in Webpay's flow. When the user tried to navigate backwards, the success receipt is no longer displayed, but the payment rejected screen is displayed.
-
-------------
-
-## June 26th, 2019
-
-Improvement in Gateway Model documentation
-
-## May 29th, 2019
-
-**Official modules with support from Mercado Pago**
-
-We always want to give you the best experience. Therefore, we list the modules that have official support from Mercado Pago and that you can have personalized service as needed:
-
-| Module                  | Versions                                                                                    |
-|-------------------------|---------------------------------------------------------------------------------------------|
-| WooCommerce             | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x                                          | 
-| PrestaShop              | Prestashop 1.6.x - 1.7.x                                                                    |
-| Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
-| Shopify                 | -                                                                                           |
-
-[View modules](https://www.mercadopago.com.ar/developers/en/plugins_sdks).
 
 
-> Please note that the modules and platforms not mentioned only have support from the community. 
+## March 27th, 2020
+ 
+In order to help you optimize your reconciliations, we made some changes in the generation of the date ranges for your scheduled reports. This change applies to both the Available Balance report and Account Balance report. After April 1st, 2020 to find your scheduled reports, you will have to search for them by one second less. 
+
+ `Search` Filters | Actual Date | New Date |
+--------- | ------------------------ | ------------------------------- |
+begin_date  | 01/01/2020 00:00:00 | 01/01/2020 00:00:00
+end_date | 02/01/2020 00:00:00 |  01/01/2020  23:59:59
+
+Your new parameter will look as follows:
+
+```
+https://api.mercadolibre.com/account/bank_report/search?access_token={{access_token}}
+	&created_from=schedule
+	&user_id=290477154
+	&begin_date=2020-01-01T00:00:00Z
+	&end_date=2020-01-01T23:59:59Z
+
+```
+
+> For further information regarding scheduling your reports, [visit our documentation](https://www.mercadopago.com.ar/developers/en/guides/reports/general-considerations/reconciliation-reports/).
+  
 
 
-## April 16th, 2019
+## January 9th, 2020 
 
-**Browsers compatible with Mercado Pago**
+If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Mercado Pago Checkout.
 
-We have updated our security protocols to meet the highest security standards.
-
-To continue using Mercado Pago without problems, you must do it from the versions supported by our domains:
-
-
-| Browser                 | Version            |
-|-------------------------|--------------------|
-| Internet Explorer       | 9 or later         | 
-| Chrome                  | 6 or later         |
-| Android Browser         | 2.3.3 or later     | 
-
-
-> Keep in mind that you will not be able to enter any Mercado Pago website using unsupported browsers.
-
+[Start now measuring the conversion of your ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/).

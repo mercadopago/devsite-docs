@@ -47,12 +47,12 @@ payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver docu
 chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
 
-### Tipo: merchant_orders
+### Notificaciones de merchant_orders
 
 **Si estas integrando pagos presenciales**, te recomendamos utilizar notificaciones IPN de topic `merchant_order`. Para ello, ten en cuenta las siguientes reglas:
 
-1. El campo `status` de la merchant_order permanecerá en **opened** cuando aún no tenga pagos asociados, o los tenga y estén rechazados o aprobados por un monto menor al total de la orden.
-2. El campo `status` de la merchant_order será **closed** cuando la suma de los pagos aprobados sea igual o mayor al total de la orden.
+1. El campo `status` de la `merchant_order` permanecerá en **opened** cuando aún no tenga pagos asociados, o los tenga y estén rechazados o aprobados por un monto menor al total de la orden.
+2. El campo `status` de la `merchant_order` será **closed** cuando la suma de los pagos aprobados sea igual o mayor al total de la orden.
 
 Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la misma. Es importante obtener el id de los pagos con `status` = **approved** para [poder realizar devoluciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/). 
 
@@ -60,7 +60,7 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 >
 > ADVERTENCIA
 >
-> * Cuando la merchant_order esté en estado **closed**, revisa que la sumatoria de los pagos en estado **approved** sea igual o mayor al total de la orden.
+> Cuando la `merchant_order` esté en estado **closed**, revisa que la sumatoria de los pagos en estado **approved** sea igual o mayor al total de la orden.
 
 ### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
 
@@ -108,7 +108,7 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 
 ## Búsqueda de la orden
 
-**Si estas integrando pagos presenciales**, se debe implementar como método de contingencia, la  **búsqueda de la orden** utilizando el external_reference de la misma como criterio de búsqueda. 
+**Si estas integrando pagos presenciales**, se debe implementar como método de contingencia, la  **búsqueda de la orden** utilizando el `external_reference` de la misma como criterio de búsqueda. 
 
 ```curl
 curl -X GET https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE&access_token=$ACCESS_TOKEN -d
@@ -116,7 +116,7 @@ curl -X GET https://api.mercadopago.com/merchant_orders?external_reference=$EXTE
 
 Más información en la [Referencia de API](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_search/get/).
 
-Se puede implementar la **búsqueda** por external_reference de dos formas:
+Se puede implementar la **búsqueda** por `external_reference` de dos formas:
 
 | Formas	|	Descripción		|
 | ----------- | ----------------- |
@@ -159,5 +159,5 @@ En caso contrario, la respuesta que se recibe si todavía **no se escaneó el QR
 >
 > ATENCIÓN
 >
-> * Desde Mercado Pago requerimos para homologar la integración de pagos presenciales que tengan implementada la notificación (IPN) como método principal. La búsqueda de orden por external_reference deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
+> Desde Mercado Pago requerimos para homologar la integración de pagos presenciales que tengan implementada la notificación (IPN) como método principal. La búsqueda de orden por `external_reference` deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
 

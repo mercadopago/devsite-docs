@@ -57,6 +57,8 @@ Los parámetros que se pueden incluir son:
 
 > WARNING
 >
+> Importante
+>
 > * Los campos marcados con (\*) son campos obligatorios.
 
 
@@ -66,6 +68,8 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 ## Integración vía Intent-Based
 
 > WARNING
+>
+> Importante
 >
 > * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
 
@@ -86,9 +90,11 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 
 > WARNING
 >
+> Importante
+>
 > * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
 > * No esta disponible para iOS.
-> * Para poder utilizar esta integración es necesario que te comuniques con [integracioneshispanos@mercadopago.com](mailto:integracioneshispanos@mercadopago.com) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
+> * Para poder utilizar esta integración es necesario que te comuniques con [soporte](https://www.mercadopago.com.ar/developers/es/support/) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
 
 La otra forma de integrarse con la aplicación de Mercado Pago para cobrar con nuestro Point es mediante nuestras API.
 
@@ -122,6 +128,8 @@ Los parámetros que se pueden incluir son:
 * `payer_email`: Es el email del pagador.
 
 > WARNING
+>
+> Importante
 >
 > * Los campos marcados con (\*) son campos obligatorios.
 

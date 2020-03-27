@@ -38,10 +38,12 @@ Te recomendamos detallar toda la información posible sobre el ítem y el compra
     "area_code" => "",
     "number" => "949 128 866"
   );
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   $payer->identification = array(
     "type" => "DNI",
     "number" => "12345678"
   );
+  ------------
   $payer->address = array(
     "street_name" => "Cuesta Miguel Armendáriz",
     "street_number" => 1004,
@@ -61,10 +63,12 @@ var payer = {
     area_code: "",
     number: "949 128 866"
   },
+   ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: {
     type: "DNI",
     number: "12345678"
   },
+  ------------
   address: {
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
@@ -83,9 +87,11 @@ payer.setName("Charles")
      .setPhone(new Phone()
         .setAreaCode("")
         .setPhoneNumber("949 128 866"))
+      ----[mla, mlb, mlu, mco, mlc, mpe]----
      .setIdentification(new Identification()
         .setType("DNI")
         .setNumber("12345678"))
+      ------------
      .setAddress(new Address()
         .setStreetName("Cuesta Miguel Armendáriz")
         .setBuildingNumber("1004")
@@ -103,10 +109,12 @@ payer = MercadoPago::Payer.new({
     area_code: "",
     number: "949 128 866"
   })
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: MercadoPago::Identification.new({
     type: "DNI",
     number: "12345678"
   })
+  ------------
   address: MercadoPago::Address.new ({
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
@@ -130,11 +138,13 @@ Payer payer = new Payer()
         AreaCode = "",
         Number = "949 128 866"
     },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     Identification = new Identification()
     {
         Type = "DNI",
         Number = "12345678"
     },
+    ------------
     Address = new Address()
     {
         StreetName = "Cuesta Miguel Armendáriz",
@@ -283,6 +293,12 @@ Preference preference = new Preference();
   preference.AutoReturn = AutoReturnType.approved;
 ```
 ]]]
+
+## Previene pagos rechazados
+
+Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema o porque no se cumple con los requisitos de seguridad necesarios.
+
+Evita pagos rechazados con nuestras recomendaciones y <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections" target="_blank">mejora la aprobación de tus pagos</a>.
 
 ## Cancelaciones y devoluciones
 
