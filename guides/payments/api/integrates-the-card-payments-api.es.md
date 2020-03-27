@@ -36,50 +36,48 @@ Para realizar la captura de datos sensibles de las tarjetas de tus clientes, **e
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas. 
 
 ```html
-<form action="/procesar_pago" method="post" id="pay" name="pay" >
+<form action="/procesar_pago.php" method="post" id="pay" name="pay" >
     <fieldset>
-        <ul>
-            <li>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" value="test_user_19653727@testuser.com" />
-            </li>
-            <li>
-                <label for="cardNumber">Número de la tarjeta:</label>
-                <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
-            </li>
-            <li>
-                <label for="securityCode">Código de seguridad:</label>
-                <input type="text" id="securityCode" data-checkout="securityCode" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
-            </li>
-            <li>
-                <label for="cardExpirationMonth">Mes de vencimiento:</label>
-                <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
-            </li>
-            <li>
-                <label for="cardExpirationYear">Año de vencimiento:</label>
-                <input type="text" id="cardExpirationYear" data-checkout="cardExpirationYear" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
-            </li>
-            <li>
-                <label for="cardholderName">Nombre y apellido:</label>
-                <input type="text" id="cardholderName" data-checkout="cardholderName" />
-            </li>
-            <li>
-                <label for="docType">Tipo de documento:</label>
-                <select id="docType" data-checkout="docType"></select>
-            </li>
-            <li>
-                <label for="docNumber">Número de documento:</label>
-                <input type="text" id="docNumber" data-checkout="docNumber" placeholder="12345678" />
-            </li>
-            <li>
-               <label for="installments">Cuotas:</label>
-               <select id="installments" class="form-control" name="installments"></select>
-          </li>
-        </ul>
-        <input type="hidden" name="amount" id="amount"/>
+        <p>
+            <label for="cardNumber">Número de la tarjeta:</label>
+            <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
+        </p>
+        <p>
+            <label for="cardholderName">Nombre y apellido:</label>
+            <input type="text" id="cardholderName" data-checkout="cardholderName" />
+        </p>                                    
+        <p>
+            <label for="cardExpirationMonth">Mes de vencimiento:</label>
+            <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
+        </p>
+        <p>
+            <label for="cardExpirationYear">Año de vencimiento:</label>
+            <input type="text" id="cardExpirationYear" data-checkout="cardExpirationYear" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
+        </p>
+        <p>
+            <label for="securityCode">Código de seguridad:</label>
+            <input type="text" id="securityCode" data-checkout="securityCode" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
+        </p>
+        <p>
+            <label for="installments">Cuotas:</label>
+            <select id="installments" class="form-control" name="installments"></select>
+        </p>
+        <p>
+            <label for="docType">Tipo de documento:</label>
+            <select id="docType" data-checkout="docType"></select>
+        </p>
+        <p>
+            <label for="docNumber">Número de documento:</label>
+            <input type="text" id="docNumber" data-checkout="docNumber"/>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="test@test.com"/>
+        </p>                                    
+        <input type="hidden" name="transaction_amount" id="transaction_amount"/>
         <input type="hidden" name="description"/>
-        <input type="hidden" name="paymentMethodId" />
-        <input type="submit" value="Pay!" />
+        <input type="hidden" name="payment_method_id" id="payment_method_id"/>
+        <input type="submit" value="Pagar"/>
     </fieldset>
 </form>
 ```
@@ -205,7 +203,7 @@ function doPay(event){
     if(!doSubmit){
         var $form = document.querySelector('#pay');
 
-        window.Mercadopago.createToken($form, sdkResponseHandler); // The function "sdkResponseHandler" is defined below
+        window.Mercadopago.createToken($form, sdkResponseHandler);
 
         return false;
     }
