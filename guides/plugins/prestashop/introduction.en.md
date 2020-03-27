@@ -13,7 +13,7 @@ As you can imagine, a website without a payment processor is nothing more than a
 >
 > **Are you a developer?** This guide is also designed to make your installation, integration and configuration work faster for our module in the most recognized e-commerce platforms worldwide.
 
-## What can I do with Mercado Pago para PrestaShop?
+## What can I do with Mercado Pago for PrestaShop?
 
 Install our payment processor and take your sales to another level with the best shopping experience:
 
