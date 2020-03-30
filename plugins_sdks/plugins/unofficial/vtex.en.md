@@ -5,7 +5,7 @@
 >
 > Importante
 >
-> We're sorry. This page is currently not available in English.
+> We're sorry. This page is currently not available in English.<br/>
 [View documentation in Portuguese](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/vtex//)
 
 ------------

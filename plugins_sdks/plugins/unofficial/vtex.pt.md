@@ -47,6 +47,7 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 | MaxInstallments | Escolha a quantidade máxima de parcelas enviadas ao Mercado Pago. |
 | Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
 | Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
+<span></span>
 <p>&nbsp;</p>
     ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
 <p>&nbsp;</p>
@@ -132,6 +133,7 @@ script.setAttribute("output","vtex.deviceFingerprint");
 script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
+<span></span>
 <p>&nbsp;</p>
     ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
@@ -158,8 +160,7 @@ Os dados mais significativos são os seguintes:
 | Status_detail | pending_capture | Detalhe do estado do pagamento. |
 | External_reference | 503451 | Identificador da VTEX enviado a Mercado Pago. |
 | First_six_digits | 450995 | Bin do cartão de crédito. |
-| Processing_mode | gateway | Modo de processamento do pagamento (Agregador / Gateway). |
-| Merchant_account_id | 83bb673420b8201f80aff598b3743864 | Código de comércio (somente para Gateway). |
+| Processing_mode | agregador | Modo de processamento do pagamento. |
 
 Quando confrontado com uma rejeição, é muito importante rever o `status_detail` que especifica o motivo do mesmo.
 
