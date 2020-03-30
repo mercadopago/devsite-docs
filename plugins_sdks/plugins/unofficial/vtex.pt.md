@@ -25,28 +25,28 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 3. Clique no conector MercadoPagoV1.
 4. Preencha os campos correspondentes:
 
-| Campos                            | Dados necessários                                                                              |
-|-----------------------------------|------------------------------------------------------------------------------------------------|
-| Nome da afiliação                 | Defina o nome que identificará a sua Afiliação.                                                |
-| OAuth login                       | Não é utilizado. Deixe-o como está.                                                            |
-| PublicKey                         | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave pública. |
-| AccessToken                       | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave privada. |
-| RefreshToken                      | Deixar em branco.                                                                              |
-| ExpiredTokenIn                    | Deixar em branco.                                                                              |
-| Merchant Account Id               | Deixar em branco.                                                                              |
-| Processing Mode                   | Escolha aggregator, modo de processamento a partir de MercadoPagoV1.                           |
-| CountryName                       | Selecione o país da sua loja.                                                                  |
-| SoftDescriptor                    | Indique o nome que vai aparecer para identificar a transação realizada na sua loja.            |
-| Description                       | Escreva uma breve descrição do seu negócio (o preenchimento é opcional).                       |
-| CategoryId                        | Escolha a categoria dos produtos que você vende na sua loja.                                   |
-| Financial Institution             | Deixar em branco. Preenchimento apenas se sua loja operar do "Chile".                          |
-| External Installments             | Sim. Utilização das condições de parcelamento diretamente de sua conta Mercado Pago.           |
-| Antifraud                         | Informe se deseja usar um antifraude.                                                          |
-| Time Zone                         | Indique a região que define seu horário local.                                                 |
-| OrderExpirationHours              | Defina por quantas horas o sistema deve checar o status do pedido antes de sua expiração. Quando essa opção não é preenchida, é adotado o padrão de 192 horas. |
-| MaxInstallments                   | Escolha a quantidade máxima de parcelas enviadas ao Mercado Pago.                              |
-| Categoria Principal               | Escolha a categoria que mais se encaixa com sua loja.                                          |
-| Captura de segurança antecipada   | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
+| Campos | Dados necessários |
+|-----------------------------------|-----------------------------------------------------------------------------------------------|
+| Nome da afiliação | Defina o nome que identificará a sua Afiliação. |
+| OAuth login | Não é utilizado. Deixe-o como está. |
+| PublicKey | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave pública. |
+| AccessToken | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave privada. |
+| RefreshToken | Deixar em branco. |
+| ExpiredTokenIn | Deixar em branco. |
+| Merchant Account Id | Deixar em branco. |
+| Processing Mode | Escolha aggregator, modo de processamento a partir de MercadoPagoV1. |
+| CountryName | Selecione o país da sua loja. |
+| SoftDescriptor | Indique o nome que vai aparecer para identificar a transação realizada na sua loja. |
+| Description | Escreva uma breve descrição do seu negócio (o preenchimento é opcional). |
+| CategoryId | Escolha a categoria dos produtos que você vende na sua loja. |
+| Financial Institution | Deixar em branco. Preenchimento apenas se sua loja operar do "Chile". |
+| External Installments | Sim. Utilização das condições de parcelamento diretamente de sua conta Mercado Pago. |
+| Antifraud | Informe se deseja usar um antifraude. |
+| Time Zone | Indique a região que define seu horário local. |
+| OrderExpirationHours | Defina por quantas horas o sistema deve checar o status do pedido antes de sua expiração. Quando essa opção não é preenchida, é adotado o padrão de 192 horas. |
+| MaxInstallments | Escolha a quantidade máxima de parcelas enviadas ao Mercado Pago. |
+| Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
+| Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
 
 5. Clique em "Salvar".
 
@@ -81,7 +81,7 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Condições de pagamento", clique no botão "+" (Adicionar nova condição de pagamento para...).
 3. Na seção "Boleto", escolha "Boleto Bancário" para adicionar ao meio de pagamento.
-4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
+4. Informe o "nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
 5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
@@ -128,7 +128,7 @@ Para configurar o device fingerprint, siga os passos abaixo:
 4. Copiar e colar o seguinte código e clique em salvar.
 <p>&nbsp;</p>
 
-```
+```javascript
 var script = document.createElement("script");
 script.src = "https://www.mercadopago.com/v2/security.js";
 script.setAttribute("output","vtex.deviceFingerprint");
@@ -162,7 +162,8 @@ Os dados mais significativos são os seguintes:
 | Status_detail | pending_capture | Detalhe do estado do pagamento. |
 | External_reference | 503451 | Identificador da VTEX enviado a Mercado Pago. |
 | First_six_digits | 450995 | Bin do cartão de crédito. |
-| Processing_mode | agregador | Modo de processamento do pagamento. |
+| Processing_mode | gateway | Modo de processamento do pagamento (Agregador / Gateway). |
+| Merchant_account_id | 83bb673420b8201f80aff598b3743864 | Código de comércio (somente para Gateway). |
 
 Quando confrontado com uma rejeição, é muito importante rever o "Status_detail" que especifica o motivo do mesmo.
 
@@ -175,3 +176,4 @@ Quando confrontado com uma rejeição, é muito importante rever o "Status_detai
 | Status_detail | cc_rejected_high_risk | Rejeição de Mercado Pago, risco de fraude. |
 
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/).
+
