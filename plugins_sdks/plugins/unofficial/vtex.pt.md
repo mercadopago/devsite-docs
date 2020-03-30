@@ -23,10 +23,10 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 1. No painel de administração de sua loja, acesse Configurações do módulo de pagamentos.
 2. Na aba Afiliações de Gateways, clique no botão **"+"**.
 3. Clique no conector MercadoPagoV1.
-4. Preencha os campos correspondentes:
+4. Preencha os campos correspondentes e clique em "Salvar"
 
 | Campos | Dados necessários |
-|-----------------------------------|-----------------------------------------------------------------------------------------------|
+|-------------------------------------------|---------------------------------------------------------------------------------------|
 | Nome da afiliação | Defina o nome que identificará a sua Afiliação. |
 | OAuth login | Não é utilizado. Deixe-o como está. |
 | PublicKey | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave pública. |
@@ -47,9 +47,6 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 | MaxInstallments | Escolha a quantidade máxima de parcelas enviadas ao Mercado Pago. |
 | Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
 | Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
-
-5. Clique em "Salvar".
-
 <p>&nbsp;</p>
     ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
 <p>&nbsp;</p>
@@ -135,7 +132,6 @@ script.setAttribute("output","vtex.deviceFingerprint");
 script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
-
 <p>&nbsp;</p>
     ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
@@ -165,7 +161,7 @@ Os dados mais significativos são os seguintes:
 | Processing_mode | gateway | Modo de processamento do pagamento (Agregador / Gateway). |
 | Merchant_account_id | 83bb673420b8201f80aff598b3743864 | Código de comércio (somente para Gateway). |
 
-Quando confrontado com uma rejeição, é muito importante rever o "Status_detail" que especifica o motivo do mesmo.
+Quando confrontado com uma rejeição, é muito importante rever o `status_detail` que especifica o motivo do mesmo.
 
 | Campo | Dado | Descrição |
 |-------------------|-------------------------------------|--------------------------------------------|
