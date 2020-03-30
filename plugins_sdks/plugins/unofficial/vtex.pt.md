@@ -21,7 +21,7 @@ Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse Configurações do módulo de pagamentos.
-2. Na aba Afiliações de Gateways, clique no botão **"+"**.
+2. Na aba Afiliações de Gateways, clique no botão "+".
 3. Clique no conector MercadoPagoV1.
 4. Preencha os campos correspondentes e clique em "Salvar".
 
@@ -61,7 +61,7 @@ Após ter criado sua afiliação com o Mercado Pago, você tem a opção de ofer
 Para criar uma **condição de pagamento cartão de crédito** utilizando sua afiliação com o Mercado Pago, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
-2. Na aba "Condições de pagamento", clique no botão "+" (Adicionar nova condição de pagamento para...).
+2. Na aba "Condições de pagamento", clique no botão "+".
 3. Na seção "Cartão de Crédito", escolha qual bandeira irá adicionar ao meio de pagamento.
 4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
 5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
@@ -76,7 +76,7 @@ Para criar uma **condição de pagamento cartão de crédito** utilizando sua af
 Para criar uma **condição de pagamento [boleto bancário](#bookmark_condições_de_pagamentos_offline) utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
-2. Na aba "Condições de pagamento", clique no botão "+" (Adicionar nova condição de pagamento para...).
+2. Na aba "Condições de pagamento", clique no botão "+".
 3. Na seção "Boleto", escolha "Boleto Bancário" para adicionar ao meio de pagamento.
 4. Informe o "nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
 5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
@@ -115,7 +115,7 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 
 ## Obtenha aprovação mais rápida enviando o device fingerprint
 
-O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
+O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, **recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas**. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
 
 Para configurar o device fingerprint, siga os passos abaixo:
 
@@ -143,7 +143,7 @@ Você conta com dois pares de chaves para conectar-se com a VTEX, uma para um am
 
 ## Entendendo sobre os principais logs da VTEX
 
-Os logs permitem revisar a informação que retorna Mercado Pago e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação. Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto. Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
+**Os logs permitem revisar a informação que retorna Mercado Pago** e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação. Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto. Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
 
 Acesse a transação da VTEX, então buscar pelo LOG que contenha o status response e clique em _ver mais_.
 
