@@ -4,14 +4,14 @@ La integración por API de pagos de Mercado Pago para tarjetas permite que pueda
 
 ## ¿Cómo funciona?
 
-![API-integration-flowchart](/images/api/api_integration_flowchart.png)
+![API-integration-flowchart](/images/api/api_integration_flowchart_es.png)
 
 Al usar nuestra API de pagos de Mercado Pago, es importante tener en cuenta dos instancias: la de la captura de datos y el envío de confirmación del pago.
 
 1. Primero, necesitas un frontend para que recolecte los datos de la tarjeta y que genere un token de seguridad con la información para poder crear el pago.
 2. Segundo, un backend que tome el token generado y los une a los datos del pago para poder confirmar y efectuar el pago, como por ejemplo el monto e ítem.
 
-Tanto para el frontend como para el backend, tienes que utilizar nuestras librerías para poder recolectar los datos sensibles de tus usuarios de manera segura. 
+Tanto para el frontend como para el backend, tienes que utilizar [nuestras librerías](https://www.mercadopago.com.ar/developers/es/plugins_sdks) para poder recolectar los datos sensibles de tus usuarios de manera segura. 
 
 > Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
 
@@ -36,7 +36,7 @@ La información de la tarjeta será convertida en un token para que envíes los 
 
 Para realizar la captura de datos sensibles de las tarjetas de tus clientes, **es muy importante que utilices nuestro formulario con los atributos correspondientes** para garantizar la seguridad de la información. Por ejemplo, los campos que tienen datos sensibles no cuentan con el atributo `name`, de esta forma nunca llegarán a tus servidores.
 
-Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas. 
+Puedes agregar todo lo que necesites, modificar el atributo `label` sugerido y sumarle el estilo que quieras sin problemas.
 
 ```html
 <form action="/procesar_pago.php" method="post" id="pay" name="pay" >
@@ -99,6 +99,8 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 	
 #### Obtener tipos de documentos
 
+---[mla, mlb, mlu, mlc, mpe, mco]---
+
 Uno de los campos obligatorios es el tipo de número de documento. Utiliza la lista de documentos al momento de completar los datos. 
 Con el elemento de tipo `select` con `id = docType` que se encuentra en el formulario, MercadoPago.js completará automáticamente las opciones disponibles.
 
@@ -108,91 +110,79 @@ window.Mercadopago.getIdentificationTypes();
 
 > Encuentra más detalle en la [sección de tipos de documentos](https://www.mercadopago.com.ar/developers/es/guides/localization/identification-types/).
 
-#### Obtener cantidad de cuotas
-
-Otro de los campos obligatorios para pagos con tarjetas es la cantidad de cuotas. Para obtener las cuotas disponibles, utiliza la función `setInstallmentsInfo`
-
-```javascript
-function setInstallmentInfo(status, response) {
-        var selectorInstallments = document.querySelector("#installments"),
-        fragment = document.createDocumentFragment();
-        selectorInstallments.options.length = 0;
-
-        if (response.length > 0) {
-            var option = new Option("Escolha...", '-1'),
-            payerCosts = response[0].payer_costs;
-            fragment.appendChild(option);
-
-            for (var i = 0; i < payerCosts.length; i++) {
-                fragment.appendChild(new Option(payerCosts[i].recommended_message, payerCosts[i].installments));
-            }
-
-            selectorInstallments.appendChild(fragment);
-            selectorInstallments.removeAttribute('disabled');
-        }
-    };
-```    
-
-> La función completará automáticamente el campo de tipo `select` con `id=installments`.
+------
 
 #### Obtener método de pago de la tarjeta
 
 Valida los datos de tus clientes mientras los completan para evitar errores y que puedan configurar correctamente las cuotas. Usa la función `getBin()` para identificar el medio de pago y el banco emisor con los primeros 6 dígitos de la tarjeta.
 
 ```javascript 
-document.querySelector('#cardNumber').addEventListener('keyup', guessingPaymentMethod);
-document.querySelector('#cardNumber').addEventListener('change', guessingPaymentMethod);
+document.getElementById('cardNumber').addEventListener('keyup', guessPaymentMethod);
+document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
 
-function getBin() {
-    const cardnumber = document.getElementById("cardNumber");
-    return cardnumber.value.substring(0,6);
-};
+function guessPaymentMethod(event) {
+    let cardnumber = document.getElementById("cardNumber").value;
 
-function guessingPaymentMethod(event) {
-    var bin = getBin();
-
-    if (event.type == "keyup") {
-        if (bin.length >= 6) {
-            window.Mercadopago.getPaymentMethod({
-                "bin": bin
-            }, setPaymentMethodInfo);
-        }
-    } else {
-        setTimeout(function() {
-            if (bin.length >= 6) {
-                window.Mercadopago.getPaymentMethod({
-                    "bin": bin
-                }, setPaymentMethodInfo);
-            }
-        }, 100);
+    if (cardnumber.length >= 6) {
+        let bin = cardnumber.substring(0,6);
+        window.Mercadopago.getPaymentMethod({
+            "bin": bin
+        }, setPaymentMethod);
     }
 };
 
-function setPaymentMethodInfo(status, response) {
+function setPaymentMethod(status, response) {
     if (status == 200) {
-        const paymentMethodElement = document.querySelector('input[name=paymentMethodId]');
-
-        if (paymentMethodElement) {
-            paymentMethodElement.value = response[0].id;
-        } else {
-            const input = document.createElement('input');
-            input.setAttribute('name', 'paymentMethodId');
-            input.setAttribute('type', 'hidden');
-            input.setAttribute('value', response[0].id);     
-
-            form.appendChild(input);
-        }
-
-        Mercadopago.getInstallments({
-            "bin": getBin(),
-            "amount": parseFloat(document.querySelector('#amount').value),
-        }, setInstallmentInfo);
-
+        let paymentMethodId = response[0].id;
+        let element = document.getElementById('payment_method_id');
+        element.value = paymentMethodId;
+        getInstallments();
     } else {
-        alert(`payment method info error: ${response}`);  
+        alert(`payment method info error: ${response}`);
+    }
+}
+
+doSubmit = false;
+document.querySelector('#pay').addEventListener('submit', doPay);
+
+function doPay(event){
+    event.preventDefault();
+    if(!doSubmit){
+        var $form = document.querySelector('#pay');
+
+        window.Mercadopago.createToken($form, sdkResponseHandler);
+
+        return false;
     }
 };
 ```
+#### Obtener cantidad de cuotas
+
+Otro de los campos obligatorios para pagos con tarjetas es la cantidad de cuotas. Para obtener las cuotas disponibles, utiliza la función `setInstallmentsInfo`
+
+```javascript
+function getInstallments(){
+    window.Mercadopago.getInstallments({
+        "payment_method_id": document.getElementById('payment_method_id').value,
+        "amount": parseFloat(document.getElementById('transaction_amount').value)
+        
+    }, function (status, response) {
+        if (status == 200) {
+            document.getElementById('installments').options.length = 0;
+            response[0].payer_costs.forEach( installment => {
+                let opt = document.createElement('option');
+                opt.text = installment.recommended_message;
+                opt.value = installment.installments;
+                document.getElementById('installments').appendChild(opt);
+            });
+        } else {
+            alert(`installments method info error: ${response}`);
+        }
+    });
+}
+```    
+
+> La función completará automáticamente el campo de tipo `select` con `id=installments`.
 
 ### 4. Crea el token de la tarjeta
 
@@ -201,6 +191,7 @@ Antes de enviar el pago, debes crear el token con toda la información de la tar
 ```javascript 
 doSubmit = false;
 document.querySelector('#pay').addEventListener('submit', doPay);
+
 function doPay(event){
     event.preventDefault();
     if(!doSubmit){
@@ -240,11 +231,15 @@ El método `createToken` devolverá un `card_token` con la representación segur
 
 > NOTE
 > 
-> Download
+> Descarga un ejemplo del formulario
 > 
-> Sigue ejemplo completo del formulario de checkout para [download]().
+> Si nunca desarrollaste un formulario y tienes dudas, te dejamos un [ejemplo completo del formulario de pago en GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/blob/master/checkout.html) para que puedas descargar.
 
-## Envía el pago a Mercado Pago [Server-side]
+
+
+> SERVER_SIDE
+> 
+> Captura los datos de la tarjeta.
 
 Para realizar efectivamente el pago a Mercado Pago, es necesario que tu backend sepa recibir el atributo `action` del formulario con el token generado y los datos completados.
 
