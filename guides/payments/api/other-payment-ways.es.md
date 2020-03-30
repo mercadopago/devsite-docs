@@ -1,20 +1,28 @@
-# Otros medios de pago
+# Integra otros medios de pago
 
-Existen otros medios de pago en cada país además de tarjetas de crédito o débito, con los que puedes recibir pagos. En su mayoría son lo que llamamos medios de pago "offline" o "en efectivo".
+Con la API de pagos de Mercado Pago puedes sumar otras alternativas de medios de pago para ofrecer a tus clientes a la hora de realizar el pago.
 
-Los tipos de medio de pago disponibles son:
+## Medios de pago
 
-* ticket
-* atm
-* bank_transfer
-* prepaid_card
+Además de tarjetas de crédito o débito, también existen otras opciones de pago que puedes ofrecer en tu sitio.
+
+Tipo de medio de pago | Medio de pago 
+------------ | -------------
+`ticket` | Rapipago
+`ticket` | Pago Fácil
+`ticket` | Provincia NET Pagos
+`ticket` | Carga Virtual
+`ticket` | Cobro Express
+`atm` | Red Link
 
 ## Obtén los medios de pago disponibles
 
-Puedes obtener el listado de medios de pago disponibles realizando un _request_ `HTTP GET`:
+Puedes consultar los medios de pago disponibles siempre que lo necesites.
 
 [[[
+
 ```php
+
 <?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -22,36 +30,54 @@ Puedes obtener el listado de medios de pago disponibles realizando un _request_ 
   $payment_methods = MercadoPago::get("/v1/payment_methods");
 
 ?>
-```
-```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```node
+
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 payment_methods = mercadopago.get("/v1/payment_methods");
+
+```
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
 ```
 ```ruby
+
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
 ```
 ```csharp
+
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+
 ```
+```curl
+
+curl -X GET \
+	-H 'accept: application/json' \
+	-H 'content-type: application/json' \
+	'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+
 ]]]
 
-El resultado será un _array_ con los medios de pago y sus propiedades:
 
-```json
+El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tiene como valor `ticket` se refiere a medio de pago en efectivo. 
+
+```json 
 [
     {
         "id": "rapipago",
@@ -81,12 +107,16 @@ El resultado será un _array_ con los medios de pago y sus propiedades:
 ]
 ```
 
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+
 ## Recibir pagos con un medio de pago en efectivo
 
-Para poder recibir pagos de medio en efectivo solamente debes recolectar el `email` del comprador. Luego es necesario hacer un request `HTTP POST` enviando el `transaction_amount`, `payment_method_id` y el `email` recolectado:
+Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente y el detalle del monto y el método de pago.
 
 [[[
+
 ```php
+
 <?php  
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -102,20 +132,6 @@ Para poder recibir pagos de medio en efectivo solamente debes recolectar el `ema
   $payment->save();
 
 ?>
-```
-```java
-
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-
-Payment payment = new Payment();
-
-payment.setTransactionAmount(100)
-      .setDescription('Title of what you are paying for')
-      .setPaymentMethodId("rapipago")
-      .setPayer(new Payer("test_user_19653727@testuser.com"));
-
-payment.save();
 
 ```
 ```node
@@ -139,6 +155,21 @@ mercadopago.payment.create(payment_data).then(function (data) {
 });
 
 ```
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100)
+      .setDescription('Title of what you are paying for')
+      .setPaymentMethodId("rapipago")
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
+
+payment.save();
+
+```
 ```ruby
 
 require 'mercadopago'
@@ -156,6 +187,7 @@ payment.save()
 
 ```
 ```csharp
+
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
@@ -174,12 +206,27 @@ Payment payment = new Payment()
 // Save and posting the payment
 payment.Save();
 //...
+
 ```
+```curl
+
+curl -X POST \
+  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título del producto",
+  payment_method_id: "rapipago",
+  payer: { email: "test_user_19653727@testuser.com" } 
+}'
+
+```
+
 ]]]
 
-Respuesta:
+La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. 
 
-```json
+```json 
 {
     ...,
     "status": "pending",
@@ -197,394 +244,43 @@ Respuesta:
 }
 ```
 
-Recibirás una respuesta con un `status` **pending** hasta que el comprador realice el pago.
-
-En el campo `external_resource_url` tienes una url que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el _link_ para acceda.
+En el campo `external_resource_url` vas a encontrar una dirección que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el enlace para que ingrese.
 
 > NOTE
 >
 > Nota
 >
-> Tu comprador tiene entre **3** a **5** días para pagar dependiendo del medio de pago. Luego de estas fechas **debes** cancelarlo.
+> El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
 
 ## Cancelar un pago
 
-Únicamente puedes cancelar pagos que se encuentren en un estado `pending` o `in_process`.
+Es importante que puedas cancelar los pagos luego de su vencimiento para evitar problemas con el cobro. Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días hábiles según el tiempo de cada uno. 
 
-Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días dependiendo del vencimiento de cada uno. Puedes ver el [listado de vencimientos completo](https://www.mercadopago.com.ar/activities).
+Ten en cuenta que solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado. 
 
-Si quieres cancelar un pago puedes hacerlo siguiendo la guía de [cancelaciones y devoluciones de pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
-
-La expiración de un pago se produce a los 30 días y la cancelación es automática, el status final del  mismo será cancelled/expired. 
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
-Cada medio de pago tiene su propia fecha de acreditación, en algunos casos esta es inmediata y en otros la demora es de hasta 3 días hábiles.
+Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Recomendamos revisar los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-vendedores_221).
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.ar/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
 
-## Devoluciones
 
-Si necesitas devolver el dinero a tu comprador podrás hacerlo con la API de *Refunds*. Todas las devoluciones de medios de pago en efectivo son devueltas en la cuenta de Mercado Pago de tu comprador.
+### Próximos pasos
 
-Si este no cuenta con una, recibirá un email en la dirección enviada en el pago con instrucciones de cómo retirar su dinero.
-
-Para más información puedes ver el artículo sobre [devoluciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
-
-----[mlc, global]----
-
-## Integrar Webpay (Chile)
-
-Webpay es uno de los medios de pago disponibles en Chile. Para poder procesar pagos con ellos es necesario que envíes la **dirección IP** del comprador, la **institución financiera** que procesará el pago y, opcionalmente, el **RUT** y el **tipo de persona**.
-
-> NOTE
+> LEFT_BUTTON_REQUIRED_ES
 >
-> Nota
+> Pruebas
 >
-> Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
-
-
-```json
-{
-  "id": "webpay",
-  "name": "RedCompra (Webpay)",
-  "payment_type_id": "bank_transfer",
-  ...
-  "financial_institutions": [
-    {
-      "id": "1234",
-      "description": "Transbank"
-    }
-  ]
-}
-```
-
-Para generar el pago utilizando Webpay debes enviar el `payment_method_id` **webpay** y el `financial_institution` **1234**:
-
-[[[
-```php
-<?php
-
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 10000;
-$payment->description = "Title of what you are paying for";
-$payment->payer = array (
-		"email" => "test_user_19653727@testuser.com",
-		"entity_type" => "individual"
-	);
-$payment->transaction_details = array(
-		"financial_institution" => 1234
-	);
-$payment->additional_info = array(
-		"ip_address" => "127.0.0.1"
-	);
-$payment->callback_url = "http://www.your-site.com";
-$payment->payment_method_id = "webpay";
-
-$payment->save();
-
-?>
-```
-```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-
-Payer payer = new Payer();
-payer.setEmail("test_user_19653727@testuser.com");
-payer.setEntityType("individual");
-
-TransactionDetails transactionDetails = new TransactionDetails();
-transactionDetails.financialInstitution = 1234;
-
-AdditionalInfo additionalInfo = new AdditionalInfo();
-additionalInfo.ipAddress = "127.0.0.1";
-
-Payment payment = new Payment();
-payment.setTransactionAmount(10000)
-      .setDescription('Title of what you are paying for')
-      .setPayer(payer)
-      .setTransactionDetails(transactionDetails)
-      .additionalInfo(additionalInfo)
-      .callbackUrl("http://www.your-site.com")
-      .setPaymentMethodId("webpay");
-
-payment.save();
-
-```
-```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
-
-var payment_data = {
-  ransaction_amount: 10000,
-  description: 'Title of what you are paying for',
-  payer: {
-    email: 'test_user_3931694@testuser.com',
-    entity_type: "individual"
-  },
-  transaction_details: {
-    financial_institution: 1234
-  },
-  additional_info: {
-    ip_address: "127.0.0.1"
-  },
-  callback_url: "http://www.your-site.com",
-  payment_method_id: "webpay"
-}
-
-mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
-}).catch(function (error) {
-  // Do Stuff...
-});
-
-```
-```ruby
-require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 10000
-payment.description = 'Title of what you are paying for'
-payment.payer = {
-  email: 'test_user_3931694@testuser.com',
-  entity_type: "individual"
-}
-payment.transaction_details = {
-  financial_institution: 1234
-}
-payment.additional_info = {
-  ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.your-site.com"
-payment.payment_method_id = "webpay"
-
-payment.save();
-```
-]]]
-
-> NOTE
+> Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> Nota
+> [Pruebas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/test-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas).
-
-La respuesta que recibirás:
-
-```json
-{
-	"id": 3692089,
-	"date_created": "2017-04-27T16:53:03.000-04:00",
-	"date_approved": null,
-	"date_last_updated": "2017-04-27T16:53:03.000-04:00",
-	"money_release_date": null,
-	"operation_type": "regular_payment",
-	"issuer_id": null,
-	"payment_method_id": "webpay",
-	"payment_type_id": "bank_transfer",
-	"status": "pending",
-	"status_detail": "pending_waiting_transfer",
-	...
-	"transaction_details": {
-		...
-		"external_resource_url": "https://www.mercadopago.com/mlc/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=251027719",
-		"installment_amount": 0,
-		"financial_institution": "1234",
-		"payment_method_reference_id": null
-	}
-}
-```
-
-Dirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks).
-
-------------
-
-
-----[mco, global]----
-
-## Integrar PSE (Colombia)
-
-> NOTE
+> Integración avanzada
 >
-> Nota
+> Completa tu integración y optimiza la gestión de tus cobros.
 >
-> Consulta todas las instituciones financieras (_financial\_institutions_) que tienes disponibles a través del recurso [payment_methods](#obten-los-medios-de-pago-disponibles):
-
-Para generar el pago utilizando PSE debes enviar el `payment_method_id` **pse** y el `financial_institution`:
-
-```json
-{
-  "id": "pse",
-  "name": "PSE",
-  "payment_type_id": "bank_transfer",
-  ...
-  "financial_institutions": [
-    {
-      "id": "1234",
-      "description": "financial_institution"
-    }
-  ]
-}
-```
-
-Redirige a tu cliente a la URL que encontrarás en el atributo `external_resource_url` dentro de `transaction_details` de la respuesta. Al finalizar el pago en PSE, será redirigido a la `callback_url` que indiques, y te llegará el resultado del pago vía [Webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks).
-
-
-> NOTE
->
-> Nota
->
-> Las preferencias de pago en PSE vencen a los 20 minutos si es que no se finalizó el flujo de pago, si ocurre esto, se informará mediante una notificación webhook.
-
-
-[[[
-```php
-<?php
-
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 10000;
-$payment->description = "Title of what you are paying for";
-$payment->payer = array (
-		"email" => "test_user_19653727@testuser.com",
-		"identification" => array(
-			"type" => "CC",
-			"number" => "76262349"
-		),
-		"entity_type" => "individual"
-	);
-$payment->transaction_details = array(
-		"financial_institution" => 1234
-	);
-$payment->additional_info = array(
-		"ip_address" => "127.0.0.1"
-	);
-$payment->callback_url = "http://www.your-site.com";
-$payment->payment_method_id = "pse";
-
-$payment->save();
-
-?>
-```
-```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-
-Payer payer = new Payer();
-payer.setEmail("test_user_19653727@testuser.com");
-payer.setIdentification(new Identification("CC", 76262349));
-payer.setEntityType("individual");
-
-TransactionDetails transactionDetails = new TransactionDetails();
-transactionDetails.financialInstitution = 1234;
-
-AdditionalInfo additionalInfo = new AdditionalInfo();
-additionalInfo.ipAddress = "127.0.0.1";
-
-Payment payment = new Payment();
-payment.setTransactionAmount(10000)
-      .setDescription('Title of what you are paying for')
-      .setPayer(payer)
-      .setTransactionDetails(transactionDetails)
-      .additionalInfo(additionalInfo)
-      .callbackUrl("http://www.your-site.com")
-      .setPaymentMethodId("pse");
-
-payment.save();
-
-```
-```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
-
-var payment_data = {
-  transaction_amount: 10000,
-  description: 'Title of what you are paying for',
-  payer: {
-    email: 'test_user_3931694@testuser.com',
-    identification: {
-      type: "CC",
-      number: "76262349"
-    },
-    entity_type: "individual"
-  },
-  transaction_details: {
-    financial_institution: 1234
-  },
-  additional_info: {
-    ip_address: "127.0.0.1"
-  },
-  callback_url: "http://www.your-site.com",
-  payment_method_id: "pse"
-}
-
-mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
-}).catch(function (error) {
-  // Do Stuff...
-});
-
-```
-```ruby
-require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 10000
-payment.description = 'Title of what you are paying for'
-payment.payer = {
-  email: 'test_user_3931694@testuser.com',
-  identification: {
-    type: "CC",
-    number: "76262349"
-  },
-  entity_type: "individual"
-}
-payment.transaction_details = {
-  financial_institution: 1234
-}
-payment.additional_info = {
-  ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.your-site.com"
-payment.payment_method_id = "pse"
-
-payment.save();
-```
-]]]
-
-> NOTE
->
-> Nota
->
-> Los `entity_type` esperados son `individual` (Personas) o `association` (Empresas).
-
-La respuesta que recibirás:
-
-```json
-{
-	"id": 3692089,
-	"date_created": "2017-04-27T16:53:03.000-04:00",
-	"date_approved": null,
-	"date_last_updated": "2017-04-27T16:53:03.000-04:00",
-	"money_release_date": null,
-	"operation_type": "regular_payment",
-	"issuer_id": null,
-	"payment_method_id": "pse",
-	"payment_type_id": "bank_transfer",
-	"status": "pending",
-	"status_detail": "pending_waiting_transfer",
-	...
-	"transaction_details": {
-		...
-		"external_resource_url": "https://www.mercadopago.com/mco/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=251027719",
-		"installment_amount": 0,
-		"financial_institution": "1234",
-		"payment_method_reference_id": null
-	}
-}
-
-------------
+> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration)
