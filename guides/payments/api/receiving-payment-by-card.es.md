@@ -452,11 +452,11 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Pruebas
+> Prueba tu integración
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/test-integration/)
+> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
