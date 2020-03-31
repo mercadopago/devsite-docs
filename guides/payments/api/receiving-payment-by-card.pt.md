@@ -453,7 +453,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Revise que esteja tudo bem com sua integração com os usuários de teste.
 >
-> [Testes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
+> [Teste sua integração](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

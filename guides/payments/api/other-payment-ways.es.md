@@ -67,9 +67,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```curl
 
 curl -X GET \
-	-H 'accept: application/json' \
-	-H 'content-type: application/json' \
-	'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
 ```
 
 ]]]
@@ -281,6 +281,6 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Integración avanzada
 >
-> Completa tu integración y optimiza la gestión de tus cobros.
+> Optimiza tu integración y mejora la gestión de tus ventas.
 >
 > [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration)
