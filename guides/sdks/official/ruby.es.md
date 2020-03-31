@@ -17,7 +17,7 @@
 ### Configura tus credenciales
 
 
-Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDENTIALS][URL_BASIC]).
+Obtén tu **CLIENT_ID** y **CLIENT_SECRET** en la sección [Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 
 ```ruby
 require 'mercadopago.rb'
@@ -102,11 +102,11 @@ result = $mp.refund_payment("ID");
 puts result
 ```
 
-## Checkout custom
+## Checkout API
 
 ### Configura tus credenciales
 
-Obtén tu **ACCESS_TOKEN** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
+Obtén tu **ACCESS_TOKEN** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
 
 
 ```ruby
@@ -114,6 +114,13 @@ require 'mercadopago.rb'
 
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
+
+> NOTE
+>
+> Nota
+>
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
+
 
 ### Crear un pago
 

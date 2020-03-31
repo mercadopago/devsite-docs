@@ -73,7 +73,7 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-Encontre seu **Client_id** e **Client_secret** na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+Encontre sua **Client id** e **Client secret** na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configurações do checkout básico. <br />
 
@@ -123,11 +123,11 @@ Encontre seu **Client_id** e **Client_secret** na [seção Credenciais]([FAKER][
 
   5. Em **Produto Mercado Pago** selecione **Carto de crédito - Checkout Transparente**
 
-  6. Agora configure com as suas credenciais. Para fazer isso, informe seu **access_token** na sessão de credenciais.
+  6. Agora configure com as suas credenciais. Para fazer isso, informe seu **Access token** na sessão de credenciais.
 
   ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
 
-Encontre seu **Public Key** e **Access Token** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
+Para poder encontrá-las, confira suas [credenciais]([FAKER][CREDENTIALS][URL]).
 
 ## Configuração do Checkout Transparente - Boleto
 
@@ -145,11 +145,17 @@ Encontre seu **Public Key** e **Access Token** na [seção Credenciais]([FAKER][
 
 5. Em **Mercado Pago Product** selecione **Ticket - Checkout Custom**
 
-6. Agora configure suas credenciais. Para fazer isso, preencha sua **public_key** e **access_token** na sessão de Credenciais.
+6. Agora configure suas credenciais. Para fazer isso, preencha sua **Public key** e **Access token** na sessão de Credenciais.
 
 ![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
 
 Encontre seu **Access Token** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
+
+> NOTE
+>
+> Nota
+>
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 ## Suporte
 

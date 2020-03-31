@@ -25,13 +25,18 @@ Após criar a aplicação, você só precisa executar o segundo e o terceiro pas
 
 ## Credenciais
 
-Assim como na API de Pagamentos, você conta com dois pares de chaves para conectar-se com a API. Estas chaves podem ser encontradas na seção [credenciais da sua conta]([FAKER][CREDENTIALS][URL]).
+Suas [credenciais]([FAKER][CREDENTIALS][URL]) são as chaves que te informamos para que você possa configurar suas integrações. Para este caso, você vai utilizar uma chave pública e outra privada.
 
-A **chave pública**, ou *public_key*, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e _tokenizar_.
+A chave pública, ou **Public key**, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e convertê-los em um token
+representativo que pode ser guardado de forma segura em seus servidores para criar um pagamento. 
 
-A **chave privada**, ou *access_token*, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
+A chave privada, ou **Access token**, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas confidencialmente em seus servidores de backend e nunca devem ser publicadas.
 
-> Ao clicar no botão “renovar credenciais”, você obterá novos pares de chaves e as anteriores deixarão de funcionar. Faça isso apenas se desconfiar que suas chaves privadas foram violadas ou por questões de segurança, semelhante à alteração de senha, a cada período de tempo. Lembre-se de substituir as credenciais em sua aplicação para mantê-la funcionando.
+> NOTE
+>
+> Nota
+>
+> Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 ## Modo _Sandbox_ e Modo de Produção
 

@@ -26,13 +26,19 @@ Después de crear la aplicación, sólo es necesario ejecutar el segundo y terce
 
 ## Credenciales
 
-Al igual que con el Checkout de Pagos, cuentas con un par de claves privadas para conectarte con la API. Estas claves las encuentras en la sección [credenciales de tu cuenta]([FAKER][CREDENTIALS][URL]).
+Las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra privada.
 
-Las **credenciales privadas** (también llamada `access_token`), se utilizan para todas las llamadas a las APIs, como procesar un pago, realizar reembolsos, y más. Las claves privadas deben ser mantenidas **confidencialmente** en tus servidores de _backend_ y nunca deben ser publicadas.
+La clave pública, o **Public key**, te sirve para acceder a los recursos que necesita tu frontend. Vas a poder recolectar los datos de las tarjetas de crédito y convertirlos en un token representativo que puedes guardar de forma segura en tus servidores para crear un pago.
 
-Antes de utilizar el Access Token se deberá completar el formulario de "Quiero ir a producción".
+Y la clave privada, o **Access token**, te va a permitir llamar al resto de las APIs. Por ejemplo, cómo procesar un pago, realizar un reembolso o almacenar tarjetas.
 
-Al estar utilizando el Checkout Mercado Pago, las credenciales que se deberán utilizar para la asociación de los vendedores a tu Marketplace (2º Paso) son el Client_id y Client_secret de la sección de Checkout Básico en la página de credenciales. 
+> NOTE
+>
+> Nota
+>
+> ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+
+Las [credenciales]([FAKER][CREDENTIALS][URL_BASIC]) que se deberán utilizar para la asociación de los vendedores a tu Marketplace (2º Paso) son el Client id y Client secret.
 
 
 #### [Comenzar a crear mi Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/create-marketplace)

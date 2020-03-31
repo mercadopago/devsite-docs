@@ -40,9 +40,15 @@ Ofereça aos seus usuários a melhor experiência de pagamento, tanto no Android
 ### Integrar o checkout é muito fácil:
 
 1. Inclua o SDK em seu projeto.
-2. Insira suas credenciais e crie a preferência de pagamentos.
+2. Insira suas <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a> e crie a preferência de pagamentos.
 3. Inicie o processo de pagamento a partir de um botão em sua aplicação.
 4. Receba as notificações de pagamento que lhe enviamos.
+
+> NOTE
+>
+> Nota
+>
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 ## Adicione a dependência ao seu projeto
 [[[

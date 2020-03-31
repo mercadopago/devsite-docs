@@ -75,7 +75,7 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-Encuentra tu **Client_id** y **Client_secret** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
+Encuentra tu **Client id** y **Client secret** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configuraciones del Checkout. <br/>
 
@@ -126,11 +126,11 @@ Encuentra tu **Client_id** y **Client_secret** en la [sección de Credenciales](
 
 5. En **Producto Mercado Pago** seleccionar **Tarjeta de crédito - Checkout personalizado**
 
-6. Configura tus credenciales. Para hacerlo, complete tu **access_token** en la sección de configuración de las credenciales.
+6. Configura tus credenciales. Para hacerlo, complete tu **Access token** en la sección de configuración de las credenciales.
 
 ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
+Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]).
 
 7. Configuración del checkout. <br/>
 
@@ -172,7 +172,13 @@ Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales
 
 ![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
 
-Puedes obtener tu **Public Key** y **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
+Puedes obtener tu **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
+
+> NOTE
+>
+> Nota
+>
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
 
 7. Configuración IPN. <br/>
 
