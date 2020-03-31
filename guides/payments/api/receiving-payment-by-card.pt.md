@@ -15,7 +15,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 > Obtenha mais informações nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
 
-#
+<br>
 
 > CLIENT_SIDE
 > 
@@ -115,6 +115,7 @@ window.Mercadopago.getIdentificationTypes();
 > Encontre mais detalhes na [seção de tipos de documentos](https://www.mercadopago.com.br/developers/pt/guides/localization/identification-types/).
 
 ------------
+<br>
 
 #### Obtenha o método de pagamento do cartão
 
@@ -216,7 +217,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 >
 > Tenha em conta que o token tem uma validez de 7 días e só pode ser usado uma única vez.
 
-#
+<br>
 
 > NOTE
 > 
@@ -224,7 +225,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 > 
 > Se nunca desenvolveu um formulário e têm dúvidas, te deixamos um [exemplo completo do formulário de pagamento no GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/blob/master/checkout.html) para que possa baixar.
 
-#
+<br>
 
 > SERVER_SIDE
 > 
@@ -410,7 +411,7 @@ curl -X POST \
 
 > Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
 
-#
+<br>
 
 > NOTE
 > 
@@ -423,6 +424,8 @@ curl -X POST \
 Os possíveis estados de um pagamento são:
 
 ![payment-status](/images/api/api_payment_status.png)
+<br>
+<br>
 
 Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que possa comunicar corretamente aos seus clientes os dados resultantes da criação de um pagamento.
 
@@ -440,9 +443,7 @@ Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadop
 
 Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estatos. Por exemplo se foram aprovados, rejeitados ou se se encontram pendentes.
 
-[Configure notificações Webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/)<br/>
-
-[Configure notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/)
+[Configure notificações webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/) ou [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/).
 
 ### Próximos passos
 
