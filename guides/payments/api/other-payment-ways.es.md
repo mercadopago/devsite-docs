@@ -1425,6 +1425,12 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que Webpay cancela automáticamente si no se realiza el pago a los 30 minutos.
+
 Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.cl/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
