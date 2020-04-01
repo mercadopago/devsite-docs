@@ -697,7 +697,7 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 >
 > Ayuda a tus clientes a completar sus pagos sin errores.
 >
-> [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/payments/api/configurations/)
+> [Manejo de respuestas de error](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
