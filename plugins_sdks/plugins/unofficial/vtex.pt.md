@@ -145,7 +145,7 @@ Você conta com dois pares de chaves para conectar-se com a VTEX, um para ambien
 
 **Os logs permitem revisar a informação que retorna Mercado Pago** e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação. Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto. Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
 
-Acesse a transação da VTEX, então buscar pelo LOG que contenha o status response e clique em _ver mais_.
+Acesse a transação da VTEX, então busque pelo LOG que contenha o status response e clique em _ver mais_.
 
 Os dados mais significativos são os seguintes:
 
