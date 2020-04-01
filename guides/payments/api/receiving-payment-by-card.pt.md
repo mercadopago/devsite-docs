@@ -2,7 +2,7 @@
 
 A integração por API de pagamentos do Mercado Pago para cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenhan que sair ao momento de realizar a compra.
 
-## ¿Cómo funciona?
+## Como funciona?
 
 ![API-integration-flowchart](/images/api/api_integration_flowchart_es.png)
 
@@ -18,6 +18,8 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 <br>
 
 > CLIENT_SIDE
+> 
+> h3
 > 
 > Capture os dados de cartão.
 
@@ -43,39 +45,39 @@ Você pode adicionar tudo o que necessite, modificar o atributo `label`sugerido 
 <form action="/processar_pagamento" method="post" id="pay" name="pay" >
     <fieldset>
         <p>
-            <label for="cardNumber">Número do cartão:</label>
+            <label for="cardNumber">Número do cartão:/label>
             <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
         <p>
-            <label for="cardholderName">Nome e Sobrenome:</label>
+            <label for="cardholderName">Nome e Sobrenome</label>
             <input type="text" id="cardholderName" data-checkout="cardholderName" />
         </p>                                    
         <p>
-            <label for="cardExpirationMonth">Mês de vencimento:</label>
+            <label for="cardExpirationMonth">Mês de vencimento</label>
             <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
         <p>
-            <label for="cardExpirationYear">Ano de vencimento:</label>
+            <label for="cardExpirationYear">Ano de vencimento</label>
             <input type="text" id="cardExpirationYear" data-checkout="cardExpirationYear" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
         <p>
-            <label for="securityCode">Código de segurança:</label>
+            <label for="securityCode">Código de segurança</label>
             <input type="text" id="securityCode" data-checkout="securityCode" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
         <p>
-            <label for="installments">Parcelas:</label>
+            <label for="installments">Parcelas</label>
             <select id="installments" class="form-control" name="installments"></select>
         </p>
         <p>
-            <label for="docType">Tipo de documento:</label>
+            <label for="docType">Tipo de documento</label>
             <select id="docType" data-checkout="docType"></select>
         </p>
         <p>
-            <label for="docNumber">Número do documento:</label>
+            <label for="docNumber">Número do documento</label>
             <input type="text" id="docNumber" data-checkout="docNumber"/>
         </p>
         <p>
-            <label for="email">Email:</label>
+            <label for="email">E-mail</label>
             <input type="email" id="email" name="email" value="test@test.com"/>
         </p>                                    
         <input type="hidden" name="transaction_amount" id="transaction_amount" value=100/>
@@ -228,6 +230,8 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 <br>
 
 > SERVER_SIDE
+> 
+> h3
 > 
 > Envie o pagamento ao Mercado Pago
 

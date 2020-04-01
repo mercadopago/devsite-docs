@@ -2,7 +2,8 @@
 
 Te contamos o que é preciso saber para poder integrar nossas APIs.
 
-## Tenha a mão as suas credenciais
+## Obtenha suas credenciais
+
 As credenciais são as **chaves que te proporcionamos para que possa configurar sua integração**. Você utilizará uma chave pública e outra chave privada.
 
 A chave pública, ou Public Key, é utilizada para acessar os recursos que necessita no seu frontend. Com ela você pode coletar os dados dos cartões de crédito e convertê-los em um token representativo que pode ser enviado de forma segura aos seus servidores para criar um pagamento.
@@ -17,6 +18,8 @@ Para poder encontrá-las, veja a [seção de Credenciais](https://www.mercadopag
 É importante que sempre utilize nossas bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus cliente, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
 
 > CLIENT_SIDE
+>
+> h3
 >
 > Inclua MercadoPago.js.
 
@@ -90,19 +93,19 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, c
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Integrar API de Mercado Pago con tarjeta
+> Integrar API do Mercado Pago com cartão
 >
-> Construye y configura tu propia experiencia de pagos.
+> Construa e configure sua própria experiência de pagamentos.
 >
-> [Integrar API de Mercado Pago con tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card/)
+> [Integrar API do Mercado Pago com cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card/)
 
 ---
 ### Próximos pasos
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Referencias de API
+> Referências de API
 >
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+> Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/)
+> [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/)

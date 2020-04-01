@@ -21,6 +21,8 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 
 > CLIENT_SIDE
 >
+> h3
+> 
 > Captura los datos de la tarjeta
 
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**.
@@ -232,6 +234,8 @@ El método `createToken` devolverá un `card_token` con la representación segur
 <br>
 
 > SERVER_SIDE
+>
+> h3
 >
 > Envía el pago a Mercado Pago
 
