@@ -50,7 +50,7 @@ curl -X POST \
 > * É possível gerar até 10 contas de usuários de teste simultâneamente. Por isso sugerimos que guarde o _email_ e _password_ de cada um.
 > * Os usuários de teste caducam após 60 días sem atividade no Mercado Pago.
 > * Para criar pagamentos de teste te recomendamos usar valores baixos.
-> * Os valores devem respeitar os ----[mla]---- [valores mínimos e máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos e máximos](hhttps://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ------------ ----[mlb]---- [valores mínimos e máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada meio de pagamento.
+> * Os valores devem respeitar os ----[mla]---- [valores mínimos e máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos e máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos e máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos e máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos e máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada meio de pagamento.
 
 ## Teste o fluxo de pagamento
 
@@ -98,7 +98,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 >
 > [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
 
-> RIGHT_BUTTON
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Referências de API
 >
