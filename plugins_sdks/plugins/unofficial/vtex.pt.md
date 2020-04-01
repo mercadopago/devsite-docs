@@ -137,7 +137,7 @@ document.body.appendChild(script);
 
 ## Credenciais de sua conta Mercado Pago
 
-Você conta com dois pares de chaves para conectar-se com a VTEX, uma para um ambiente de testes e a outra para o ambiente de produção. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials).
+Você conta com dois pares de chaves para conectar-se com a VTEX, um para ambiente de testes e outro para ambiente de produção. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials).
 
 > Antes de iniciar sua operação em produção, assegure se de preencher o formulário 'Ir para produção'. Caso já tenha realizado este passo o link não será apresentado.
 
@@ -171,4 +171,3 @@ Quando confrontado com uma rejeição, é muito importante rever o `status_detai
 | Status_detail | cc_rejected_high_risk | Rejeição de Mercado Pago, risco de fraude. |
 
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/).
-
