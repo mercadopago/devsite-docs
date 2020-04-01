@@ -209,68 +209,140 @@ Also, you can add an HTML tag on your site with the identificator `id =" deviceI
 <input type="hidden" id="deviceId">
 ```
 
-### Device deployment in native mobile applications
+### Device deployment on native mobile applications
 
-If you have a native application, you must submit information about your buyers’ device. You can do this by submitting the following information when creating a `card_token`:
+If you have a native application, you can capture the device information with our SDK and send it when creating the token.
 
-```
-{
-	...,
-	 "device":{
-	  "fingerprint":{
-	     "os":"iOS",
-	     "system_version":"8.3",
-	     "ram":18446744071562067968,
-	     "disk_space":498876809216,
-	     "model":"MacBookPro9,2",
-	     "free_disk_space":328918237184,
-	     "vendor_ids":[
-	        {
-	           "name":"vendor_id",
-	           "value":"C2508642-79CF-44E4-A205-284A4F4DE04C"
-	        },
-	        {
-	           "name":"uuid",
-	           "value":"AB28738B-8DC2-4EC2-B514-3ACF330482B6"
-	        }
-	     ],
-	     "vendor_specific_attributes":{
-	        "feature_flash":false,
-	        "can_make_phone_calls":false,
-	        "can_send_sms":false,
-	        "video_camera_available":true,
-	        "cpu_count":4,
-	        "simulator":true,
-	        "device_languaje":"en",
-	        "device_idiom":"Phone",
-	        "platform":"x86_64",
-	        "device_name":"iPhone Simulator",
-	        "device_family":4,
-	        "retina_display_capable":true,
-	        "feature_camera":false,
-	        "device_model":"iPhone Simulator",
-	        "feature_front_camera":false
-	     },
-	     "resolution":"375x667"
-	  }
-}
-```
-
-Our SDKs have features you can use to capture this information.
+#### 1. Add dependency
 
 [[[
 
+```ios
+===
+Add the following code in the **Podfile** file.
+===
+use_frameworks!
+pod ‘MercadoPagoDevicesSDK’
+```
 ```android
 ===
-The [Device](https://github.com/mercadopago/px-android/blob/master/px-services/src/main/java/com/mercadopago/android/px/model/Device.java) class will collect both device and fingerprint information.
+Add the following code in the **build.gradle** file.
 ===
-new Device(context);
-```
-```swift
-===
-The [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) class will collect both device and fingerprint information.
-===
-Device()
+dependencies {
+   implementation 'com.mercadolibre.android.device:sdk:1.0.9'
+}
 ```
 
 ]]]
+
+#### 2. Initialize module
+
+[[[
+
+```swift
+===
+We recommend initializing it in the _didFinishLaunchingWithOptions_ event of the _AppDelegate_.
+===
+import MercadoPagoDevicesSDK
+...
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        ...        
+        MercadoPagoDevicesSDK.shared.execute()
+        ...
+}
+```
+```objective-c
+===
+We recommend initializing it in the _didFinishLaunchingWithOptions_ event of the _AppDelegate_.
+===
+@import ‘MercadoPagoDevicesSDK’;
+...
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    ...
+    [[MercadoPagoDevicesSDK shared] execute];
+    ...
+}
+```
+```java
+===
+We recommend initializing it in the _MainApplication_ class.
+===
+import com.mercadolibre.android.devices.sdk.DeviceSDK;
+
+
+DeviceSDK.getInstance().execute(this);
+```
+
+]]]
+
+#### 3. Capture information
+
+Execute one of these functions to obtain the information in the format that you prefer.
+
+[[[
+
+```swift
+MercadoPagoDevicesSDK.shared.getInfo() // Returns a Codable Device Object
+MercadoPagoDevicesSDK.shared.getInfoAsJson() // Returns a JSON Library Data Object
+MercadoPagoDevicesSDK.shared.getInfoAsJsonString() // Returns a JSON String
+MercadoPagoDevicesSDK.shared.getInfoAsDictionary() // Returns a Dictionary<String,Any>
+```
+```objective-c
+[[[MercadoPagoDevicesSDK] shared] getInfoAsJson] // Returns a JSON Library Data Object
+[[[MercadoPagoDevicesSDK] shared] getInfoAsJsonString] // Returns a JSON String
+[[[MercadoPagoDevicesSDK] shared] getInfoAsDictionary] // Returns a Dictionary<String,Any>
+```
+```java
+Device device = DeviceSDK.getInstance().getInfo() // Returns a Serializable Device Object
+Map deviceMap = DeviceSDK.getInstance().getInfoAsMap()  // Returns a Map<String, Object>
+String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // Returns a JSON String
+```
+
+]]]
+
+#### 4. Send information
+
+Finally, send the information in the `device` field when creating the `card_token`.
+
+```
+{
+    ...,
+     "device":{
+      "fingerprint":{
+         "os":"iOS",
+         "system_version":"8.3",
+         "ram":18446744071562067968,
+         "disk_space":498876809216,
+         "model":"MacBookPro9,2",
+         "free_disk_space":328918237184,
+         "vendor_ids":[
+            {
+               "name":"vendor_id",
+               "value":"C2508642-79CF-44E4-A205-284A4F4DE04C"
+            },
+            {
+               "name":"uuid",
+               "value":"AB28738B-8DC2-4EC2-B514-3ACF330482B6"
+            }
+         ],
+         "vendor_specific_attributes":{
+            "feature_flash":false,
+            "can_make_phone_calls":false,
+            "can_send_sms":false,
+            "video_camera_available":true,
+            "cpu_count":4,
+            "simulator":true,
+            "device_languaje":"en",
+            "device_idiom":"Phone",
+            "platform":"x86_64",
+            "device_name":"iPhone Simulator",
+            "device_family":4,
+            "retina_display_capable":true,
+            "feature_camera":false,
+            "device_model":"iPhone Simulator",
+            "feature_front_camera":false
+         },
+         "resolution":"375x667"
+      }
+}
+```
