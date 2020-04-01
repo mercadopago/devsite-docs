@@ -4,9 +4,8 @@ Ofrece a tus clientes información clara y precisa sobre los posibles errores en
 
 Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación.
 
-### Resultados de creación de un cobro
+## Resultados de creación de un cobro
 
-#### HTTP Status 201 OK
 
 Estado | `status_detail` | Comunicación sugerida
 ------------ | ------------- | -------------
@@ -28,9 +27,12 @@ rejected | `cc_rejected_invalid_installments` | `payment_method_id` no procesa p
 rejected | `cc_rejected_max_attempts` | Llegaste al límite de intentos permitidos.<br/><br/>Elige otra tarjeta u otro medio de pago.
 rejected | `cc_rejected_other_reason` | `payment_method_id` no procesó el pago.
 
-### Errores de ingreso de datos
+> CLIENT_SIDE
+>
+> h2
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Errores de ingreso de datos
 
-#### HTTP Status 400 Bad Request
 
 Código | Descripción | Comunicación sugerida
 ------------ | ------------- | -------------
@@ -53,7 +55,7 @@ E302 | invalid parameter securityCode | Revisa el código de seguridad.
 326 | invalid parameter cardExpirationYear | El año es inválido
 default | Otro código de error | Revisa los datos.
 
-### Errores en la creación del token de tarjeta
+## Errores en la creación del token de tarjeta
 
 Estado | status_detail | Comunicación sugerida
 ------------ | ------------- | -------------
@@ -68,3 +70,22 @@ Estado | status_detail | Comunicación sugerida
 204 | Unavailable payment_method | `payment_method_id` no está disponible en este momento.<br/><br/>Elige otra tarjeta u otro medio de pago.
 801 | Already posted the same request in the last minute | Realizaste un pago similar hace instantes.<br/><br/>Intenta de nuevo en unos minutos.
 default | Otro código de error | No pudimos procesar tu pago.
+
+---
+### Próximos pasos
+
+> LEFT_BUTTON_
+>
+> Otras funcionalidades
+>
+> Adapta la integración a las necesidades específicas de tu negocio.
+>
+> [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-features/)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Referencias de API
+>
+> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+>
+> [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/)

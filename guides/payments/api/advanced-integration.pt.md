@@ -4,7 +4,7 @@
 
 Use nossas APIs para guardar a referência dos cartões dos seus clientes e poder oferecer uma melhor experiência. Dessa maneira, seus clientes não terão que completar seus dados todas as vezes e poderão finalizar seus pagamentos mais rápido.
 
-### Crie um cliente e um cartão
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crie um cliente e um cartão
 
 Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do e-mail e o token gerado.
 Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`. 
@@ -13,7 +13,7 @@ Cada cliente será guardado com o valor `customer` e cada cartão com o valor `c
 
 ```php
 
-<?php   
+<?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
@@ -144,7 +144,7 @@ Resposta
 > 
 > Te recomendamos armazenas os dados do cartão assim que realizar um pagamento de forma exitosa para guardar os dados corretos.
 
-### Adicione novos cartões a um cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicione novos cartões a um cliente
 
 Para adicionar novos cartões a um cliente, deve-se criar um token e fazer um `HTTP POST` ao `customer`.
 
@@ -300,11 +300,11 @@ Resposta
 }
 ```
 
-### Use cartões guardados para receber um pagamento
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use cartões guardados para receber um pagamento
 
 Para que um cliente possa fazer um pagamento com seus dados guardados, é necessário capturar novamente o código de segurança. Mercado Pago não pode armazenar essa informação por questões de segurança.
 
-#### 1. Mostre os cartões guardados ao seu cliente
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Mostre os cartões guardados ao seu cliente
 
 Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escolher com qual irá pagar:
 
@@ -393,7 +393,7 @@ E pode criar um formulário da seguinte maneira:
 </li>
 ```
 
-#### 2. Capture o código de segurança
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture o código de segurança
 
 O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
 
@@ -413,7 +413,7 @@ addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
 };
 ```
 
-#### 3. Crie o pagamento
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crie o pagamento
 
 Uma vez obtido o token, é possível criar o pagamento com o valor correspondente. Ao ser pago com um cartão guardado, deve-se enviar o ID do cliente junto do token.
 
@@ -506,7 +506,7 @@ curl -X POST \
   token: "ff8080814c11e237014c1ff593b57b4d",
   installments: 1,
   payer: { 
-  	type: "customer",
+      type: "customer",
     id: "123456789-jxOV430go9fx2e"
   } 
 }'
@@ -516,7 +516,7 @@ curl -X POST \
 ]]]
 
 
-### Busque um cliente criado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Busque um cliente criado
 
 Busque informação de um cliente caso necessário. Por exemplo, caso não saiba qual é o ID associado. O parâmetro requerido para obtê-lo é o e-mail.
 
@@ -569,7 +569,7 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
 curl -X GET \
   'https://api.mercadopago.com/v1/customers/search?access_token=ENV_ACCESS_TOKEN' \
   -d '{
-	"email": "test_user_19653727@testuser.com"
+    "email": "test_user_19653727@testuser.com"
 }'
 
 ```
@@ -692,7 +692,7 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Outras funcionalidades
 >
@@ -700,7 +700,7 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/api/configurations/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Referências de API
 >

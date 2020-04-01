@@ -30,7 +30,7 @@ curl -X POST \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
-### Resposta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json
 {
@@ -54,13 +54,13 @@ curl -X POST \
 
 ## Teste o fluxo de pagamento
 
-### 1. Configure a integração com os dados do seu usuário vendedor
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure a integração com os dados do seu usuário vendedor
 
 Configure a [chave pública de teste](https://www.mercadopago.com/mlb/account/credentials) do seu usuário vendedor no frontend da sua aplicação e a [chave privada de teste](https://www.mercadopago.com/mlb/account/credentials) no seu backend.
 
-### 2. Realize um pagamento com seu usuário comprador
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realize um pagamento com seu usuário comprador
 
-#### Testes com cartão de crédito
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testes com cartão de crédito
 
 Inicie sua integração configurada com as credenciais do seu usuário de teste vendedor:
 
@@ -90,7 +90,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 ---
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Integração avançada
 >
@@ -98,7 +98,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 >
 > [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Referências de API
 >

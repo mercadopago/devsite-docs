@@ -31,7 +31,7 @@ curl -X POST \
 ```
 
 
-### Respuesta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
@@ -55,13 +55,13 @@ curl -X POST \
 
 ## Prueba el flujo de Pago
 
-### 1. Configura la integración con los datos de tu usuario vendedor
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configura la integración con los datos de tu usuario vendedor
 
 Configura la [clave pública de prueba](https://www.mercadopago.com/mla/account/credentials) de tu usuario vendedor en el frontend de tu aplicación y la [clave privada de prueba](https://www.mercadopago.com/mla/account/credentials) en el backend.
 
-### 2. Realiza un pago con tu usuario comprador
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realiza un pago con tu usuario comprador
 
-#### Pruebas con tarjeta de crédito
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pruebas con tarjeta de crédito
 
 Inicia tu integración configurada con las credenciales de tu usuario de prueba vendedor:
 

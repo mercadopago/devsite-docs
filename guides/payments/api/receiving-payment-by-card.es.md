@@ -27,7 +27,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**.
 
-### 1. Incluye la librería MercadoPago.js
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Incluye la librería MercadoPago.js
 
 **Usa nuestra librería oficial para acceder a la API de Mercado Pago** desde tu aplicación y recolectar los datos de forma segura.
 
@@ -37,7 +37,7 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 
 La información de la tarjeta será convertida en un token para que envíes los datos a tus servidores de modo seguro.
 
-### 2. Agrega el formulario de pago
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de las tarjetas de tus clientes, **es muy importante que utilices nuestro formulario con los atributos correspondientes** para garantizar la seguridad de la información y la correcta generación del token. Por ejemplo, debes respetar los atributos `data-checkout` y no colocar el atributo `name` en los campos que tienen datos sensibles, de esta forma nunca llegarán a tus servidores.
 
@@ -81,7 +81,7 @@ Puedes agregar todo lo que necesites, modificar el atributo `label` sugerido y s
         <p>
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" value="test@test.com"/>
-        </p>                                    
+        </p>
         <input type="hidden" name="transaction_amount" id="transaction_amount" value=100/>
         <input type="hidden" name="description"/>
         <input type="hidden" name="payment_method_id" id="payment_method_id"/>
@@ -90,7 +90,7 @@ Puedes agregar todo lo que necesites, modificar el atributo `label` sugerido y s
 </form>
 ```
 
-### 3. Configura tu clave pública
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
 
 Agrega tu [clave pública](https://www.mercadopago.com/mla/account/credentials) de la siguiente manera:
 
@@ -100,13 +100,13 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 
 > Si aún no tienes cuenta para ver tus credenciales, [regístrate](https://www.mercadopago.com.ar/registration-mp).
 
-### 4. Obtén los datos para tu formulario
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtén los datos para tu formulario
 
-----[mla, mlb, mlu, mco, mlc, mpe]----	
+----[mla, mlb, mlu, mco, mlc, mpe]----
 
-#### Obtener tipos de documentos
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener tipos de documentos
 
-Uno de los campos obligatorios es el tipo de número de documento. Utiliza la lista de documentos al momento de completar los datos. 
+Uno de los campos obligatorios es el tipo de número de documento. Utiliza la lista de documentos al momento de completar los datos.
 
 Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en el formulario, MercadoPago.js completará automáticamente las opciones disponibles cuando llames a la siguiente función:
 
@@ -119,7 +119,7 @@ window.Mercadopago.getIdentificationTypes();
 ------------
 <br>
 
-#### Obtener método de pago de la tarjeta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener método de pago de la tarjeta
 
 Valida los datos de tus clientes mientras los completan para evitar errores y que puedas ofrecer correctamente las cuotas disponibles. Usa el siguiente código de ejemplo para identificar el medio de pago y el banco emisor con los primeros 6 dígitos de la tarjeta.
 
@@ -151,7 +151,8 @@ function setPaymentMethod(status, response) {
 ```
 
 <br>
-#### Obtener cantidad de cuotas
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener cantidad de cuotas
 
 Otro de los campos obligatorios para pagos con tarjetas es la cantidad de cuotas. Para obtener las cuotas disponibles, puedes utilizar la siguiente función de ejemplo para completar el campo sugerido de tipo _select_ denominado `installments`
 
@@ -177,7 +178,7 @@ function getInstallments(){
 }
 ```
 
-### 5. Crea el token de la tarjeta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Crea el token de la tarjeta
 
 Antes de enviar el pago, debes crear el token que contendrá de manera segura toda la información de la tarjeta. Lo debes generar de la siguiente manera:
 
@@ -236,8 +237,8 @@ El método `createToken` devolverá un `card_token` con la representación segur
 > SERVER_SIDE
 >
 > h2
-> 
-> Envía el pago a Mercado Pago
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Envía el pago a Mercado Pago
 
 Para continuar el proceso de pago hacia Mercado Pago, es necesario que tu backend sepa recibir la información del formulario con el token generado y los datos completados.
 
@@ -251,7 +252,7 @@ Recuerda también que para interactuar con nuestras APIs recomendamos utilizar l
 
 [[[
 ```php
-<?php  
+<?php
     ===
     Puedes encontrar el estado del pago en el valor status
     ===
@@ -380,7 +381,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
     -d '{
           "transaction_amount": [FAKER][NUMBER][BETWEEN][100, 200],
-          "token": "ff8080814c11e237014c1ff593b57b4d",          
+          "token": "ff8080814c11e237014c1ff593b57b4d",
           "description": "[FAKER][COMMERCE][PRODUCT_NAME]",
           "installments": 1,
           "payment_method_id": "visa",
@@ -393,7 +394,7 @@ curl -X POST \
 ```
 ]]]
 
-#### Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
@@ -416,9 +417,9 @@ curl -X POST \
 #
 
 > NOTE
-> 
+>
 > Nota
-> 
+>
 > ¿Necesitas otras alternativas de pago? Conoce e integra [otros medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-payment-ways/).
 
 ## Manejo de respuestas de error
@@ -438,7 +439,7 @@ Te recomendamos usar el [manejo de respuesta de error](https://www.mercadopago.c
 > NOTE
 >
 > Nota
-> 
+>
 > Evita pagos rechazados con nuestras [recomendaciones para mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections/).
 
 ## Recibe notificaciones de pago

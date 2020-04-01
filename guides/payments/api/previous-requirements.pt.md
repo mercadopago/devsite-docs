@@ -96,7 +96,7 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, c
 ---
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Integrar API do Mercado Pago com cartão
 >

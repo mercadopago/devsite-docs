@@ -18,14 +18,14 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 <br>
 
 > CLIENT_SIDE
-> 
+>
 > h2
-> 
-> Capture os dados de cartão.
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture os dados de cartão.
 
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
-### 1. Inclua a biblioteca MercadoPago.js
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Inclua a biblioteca MercadoPago.js
 
 **Use nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
  
@@ -35,7 +35,7 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
 
-### 2. Adicione o formulário de pagamento
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos cartões dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação e a geração correta do token. Por exemplo, é preciso respeitar os atributos `data-checkout` e não colocar o atributo `name` nos campos que tenham dados sensíveis, dessa forma nunca chegarão aos seus servidores.
 
@@ -79,7 +79,7 @@ Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido
         <p>
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" value="test@test.com"/>
-        </p>                                    
+        </p>
         <input type="hidden" name="transaction_amount" id="transaction_amount" value=100/>
         <input type="hidden" name="description"/>
         <input type="hidden" name="payment_method_id" id="payment_method_id"/>
@@ -88,7 +88,7 @@ Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido
 </form>
 ```
 
-### 3. Configure sua chave pública
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 
 
 Configure sua [chave pública](https://www.mercadopago.com/mlb/account/credentials) da seguinte forma:
@@ -100,11 +100,11 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 > Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago.com.br/registration-mp). 
 
 
-### 4. Obtenha os dados para seu formulário
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
-----[mla, mlb, mlu, mco, mlc, mpe]----	
+----[mla, mlb, mlu, mco, mlc, mpe]----
 
-#### Obtenha os tipos de documento
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
@@ -119,7 +119,7 @@ window.Mercadopago.getIdentificationTypes();
 ------------
 <br>
 
-#### Obtenha o método de pagamento do cartão
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha o método de pagamento do cartão
 
 Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
 
@@ -149,7 +149,7 @@ function setPaymentMethod(status, response) {
     }
 }
 ```
-#### Obtenha a quantidade de parcelas
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
 
 Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo 
 _select_ denominado `installments`
@@ -174,13 +174,13 @@ function getInstallments(){
         }
     });
 }
-```    
+```
 
-### 5. Crie o token do cartão
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Crie o token do cartão
 
 Antes de enviar o pagamento, crie o token que conterá de maneira segura toda a informação do cartão. Você deve gerá-lo da seguinte forma:
 
-```javascript 
+```javascript
 doSubmit = false;
 document.querySelector('#pay').addEventListener('submit', doPay);
 
@@ -382,7 +382,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
     -d '{
           "transaction_amount": [FAKER][NUMBER][BETWEEN][100, 200],
-          "token": "ff8080814c11e237014c1ff593b57b4d",          
+          "token": "ff8080814c11e237014c1ff593b57b4d",
           "description": "[FAKER][COMMERCE][PRODUCT_NAME]",
           "installments": 1,
           "payment_method_id": "visa",
@@ -395,7 +395,7 @@ curl -X POST \
 ```
 ]]]
 
-#### Resposta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json 
 {
@@ -451,7 +451,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Teste sua integração
 >
@@ -459,7 +459,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > [Teste sua integração](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Integrar outros meios de pagamento
 >

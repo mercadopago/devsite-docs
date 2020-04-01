@@ -4,9 +4,7 @@ Ofereça aos seus clientes informação clara e precisa sobre os possíveis erro
 
 Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se recomendar que se tente pagar novamente com outro meio de pagamento para completar a operação.
 
-### Resultados da criação de uma cobrança
-
-#### HTTP Status 201 OK
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resultados da criação de uma cobrança
 
 Estado | status_detail | Mensagem sugerida
 ------------ | ------------- | -------------
@@ -28,32 +26,30 @@ rejected | `cc_rejected_invalid_installments` | O `payment_method_id` não proce
 rejected | `cc_rejected_max_attempts` | Você atingiu o limite de tentativas permitido.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
 rejected | `cc_rejected_other_reason` | `payment_method_id` não processa o pagamento.
 
-### Erros de inserção de dados
-
-#### HTTP Status 400 Bad Request
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Erros de inserção de dados
 
 Código | Descrição | Mensagem sugerida
 ------------ | ------------- | -------------
-205     | parameter cardNumber can not be null/empty                         | Digite o número do seu cartão.                      
-208     | parameter cardExpirationMonth can not be null/empty                | Escolha um mês.                                     
-209     | parameter cardExpirationYear can not be null/empty                 | Escolha um ano.                                     
-212     | parameter docType can not be null/empty                            | Informe seu documento.                              
-213     | The parameter cardholder.document.subtype can not be null or empty | Informe seu documento.                              
-214     | parameter docNumber can not be null/empty                          | Informe seu documento.                              
-220     | parameter cardIssuerId can not be null/empty                       | Informe seu banco emissor.                          
-221     | parameter cardholderName can not be null/empty                     | Digite o nome e sobrenome.                          
-224     | parameter securityCode can not be null/empty                       | Digite o código de segurança.                       
+205     | parameter cardNumber can not be null/empty                         | Digite o número do seu cartão.
+208     | parameter cardExpirationMonth can not be null/empty                | Escolha um mês.
+209     | parameter cardExpirationYear can not be null/empty                 | Escolha um ano.
+212     | parameter docType can not be null/empty                            | Informe seu documento.
+213     | The parameter cardholder.document.subtype can not be null or empty | Informe seu documento.
+214     | parameter docNumber can not be null/empty                          | Informe seu documento.
+220     | parameter cardIssuerId can not be null/empty                       | Informe seu banco emissor.
+221     | parameter cardholderName can not be null/empty                     | Digite o nome e sobrenome.
+224     | parameter securityCode can not be null/empty                       | Digite o código de segurança.
 E301    | invalid parameter cardNumber                                       | Há algo de errado com esse número. Digite novamente.
-E302    | invalid parameter securityCode                                     | Confira o código de segurança.                      
-316     | invalid parameter cardholderName                                   | Por favor, digite um nome válido.                   
-322     | invalid parameter docType                                          | Confira seu documento.                              
-323     | invalid parameter cardholder.document.subtype                      | Confira seu documento.                              
-324     | invalid parameter docNumber                                        | Confira seu documento.                              
-325     | invalid parameter cardExpirationMonth                              | Confira a data.                                     
-326     | invalid parameter cardExpirationYear                               | Confira a data.                                     
-default | Outro código de erro                                               | Confira os dados.                                   
+E302    | invalid parameter securityCode                                     | Confira o código de segurança.
+316     | invalid parameter cardholderName                                   | Por favor, digite um nome válido.
+322     | invalid parameter docType                                          | Confira seu documento.
+323     | invalid parameter cardholder.document.subtype                      | Confira seu documento.
+324     | invalid parameter docNumber                                        | Confira seu documento.
+325     | invalid parameter cardExpirationMonth                              | Confira a data.
+326     | invalid parameter cardExpirationYear                               | Confira a data.
+default | Outro código de erro                                               | Confira os dados.
 
-### Erros na criação do token de cartão
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Erros na criação do token de cartão
 
 Estado | status_detail | Mensagem sugerida
 ------------ | ------------- | -------------
@@ -68,3 +64,22 @@ Estado | status_detail | Mensagem sugerida
 204 | Unavailable payment_method | O `payment_method_id` não está disponível nesse momento.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
 801 | Already posted the same request in the last minute | Você realizou um pagamento similar há poucos instantes.<br/><br/>Tente novamente em alguns minutos.
 default | Outro código de erro | Não pudemos processar seu pagamento.
+
+---
+### Próximos passos
+
+> LEFT_BUTTON_
+>
+> Outras funcionalidades
+>
+> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
+>
+> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-features/)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Referências de API
+>
+> Encontre toda a informação necessária para interagir com nossas APIs.
+>
+> [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/)

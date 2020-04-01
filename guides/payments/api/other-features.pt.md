@@ -135,11 +135,11 @@ Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores
 > * A reserva terá validez de 7 días. Se não capturá-la nesse período, será cancelada.
 > * Deve guardar o ID do pagamento para poder finalizar o processo.
 
-### Capture um pagamento autorizado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture um pagamento autorizado
 
 Para finalizar o pagamento, é necessário capturar os valores que reservou ao seu cliente. Pode-se capturar o valor total ou parcial.
 
-#### Capturar o valor total de uma reserva
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capturar o valor total de uma reserva
 
 Para fazer a captura do valor total deve apenas enviar o atributo `capture` como `true`.
 
@@ -201,7 +201,7 @@ A resposta devolverá que o pagamento se encontra aprovado e creditado.
 > 
 > Se não adicionar o valor, será capturado o total reservado.
 
-### Capturar um pagamento por um valor inferior ao reservado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capturar um pagamento por um valor inferior ao reservado
 
 ----[mla]----
 > WARNING
@@ -260,7 +260,7 @@ curl -X PUT \
 ```
 ]]]
 
-#### Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
@@ -282,7 +282,7 @@ curl -X PUT \
 >
 > Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserca e gerar uma nova.
 
-### Cancelar uma reserva
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancelar uma reserva
 
 Pode-se cancelar uma reserva e liberar o limite do cartão ao atualizar o atributo `status` do pagamento ao estado `cancelled`.
 
@@ -328,7 +328,7 @@ curl -X PUT \
 ```
 ]]]
 
-#### Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
@@ -344,7 +344,7 @@ curl -X PUT \
 ---
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Integração avançada
 >

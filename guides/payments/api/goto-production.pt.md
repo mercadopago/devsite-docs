@@ -37,7 +37,7 @@ Disponibilize uma política de termos e condições e aclare que é responsável
 ---
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Teste sua integração
 >
@@ -45,7 +45,7 @@ Disponibilize uma política de termos e condições e aclare que é responsável
 >
 > [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Referências de API
 >

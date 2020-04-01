@@ -19,7 +19,7 @@ Use nossos SDKs oficiais ou interaja diretamente com nossas APIs através das [R
 ---
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Requisitos para integrar
 >
@@ -27,7 +27,7 @@ Use nossos SDKs oficiais ou interaja diretamente com nossas APIs através das [R
 >
 > [Requisitos previos](https://www.mercadopago.com.br/developers/pt/guides/payments/api/previous-requirements/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Referéncias de API
 >

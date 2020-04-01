@@ -4,7 +4,7 @@
 
 Usa nuestras APIs para guardar la referencia de las tarjetas de tus clientes y poder brindarles una mejor experiencia. De esta manera, tus clientes no tienen que completar sus datos cada vez y pueden finalizar sus pagos más rápido.
 
-### Crear un cliente y una tarjeta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crear un cliente y una tarjeta
 
 Para crear un cliente y su tarjeta tienes que enviar el campo del e-mail y el token generado.
 Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
@@ -144,7 +144,7 @@ Respuesta
 >
 > Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos.
 
-### Agrega nuevas tarjetas a un cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrega nuevas tarjetas a un cliente
 
 Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP POST` al `customer`.
 
@@ -299,11 +299,11 @@ Respuesta
 }
 ```
 
-### Usa las tarjetas guardadas para un pago
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usa las tarjetas guardadas para un pago
 
 Para que un cliente pueda hacer un pago con sus datos guardados, es necesario volver a capturar el código de seguridad. Mercado Pago no puede almacenar esa información por cuestiones de seguridad. 
 
-#### 1. Muestra las tarjetas guardadas a tu cliente
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Muestra las tarjetas guardadas a tu cliente
 
 Primero, obtén el listado de guardadas para que tu cliente pueda elegir con cuál quiere pagar:
 
@@ -392,7 +392,7 @@ Y puedes armar el formulario de la siguiente manera:
 </li>
 ```
 
-#### 2. Captura el código de seguridad
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Captura el código de seguridad
 
 El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
 
@@ -412,7 +412,7 @@ addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
 };
 ```
 
-#### 3. Crea el pago
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crea el pago
 
 Una vez obtenido el token, puedes generar el pago por el monto correspondiente. Al ser un pago con tarjeta guardada, debes enviar el ID del cliente junto al token.
 
@@ -515,7 +515,7 @@ curl -X POST \
 ]]]
 
 
-### Busca un cliente creado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Busca un cliente creado
 
 Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el caso que no sepas cuál es el ID asignado. El parámetro requerido para obtenerlo es el e-mail.
 

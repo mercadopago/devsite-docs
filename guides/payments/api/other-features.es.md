@@ -134,11 +134,11 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 > * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
 
-### Captura un pago autorizado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captura un pago autorizado
 
 Para finalizar el pago, es necesario capturar los fondos que reservaste a tu cliente. Puede realizarse por el monto total o uno parcial.
 
-#### Capturar el monto total de una reserva
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capturar el monto total de una reserva
 
 Para hacer la captura por el monto total solo debes enviar el atributo `capture` como `true`.
 
@@ -200,7 +200,7 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 > 
 > Si no agregas un monto, se capturará el total reservado.
 
-### Captura un pago por un monto menor al reservado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captura un pago por un monto menor al reservado
 
 ----[mla]----
 > WARNING
@@ -259,7 +259,7 @@ curl -X PUT \
 ```
 ]]]
 
-#### Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
@@ -281,7 +281,7 @@ curl -X PUT \
 >
 > No es posible capturar un monto mayor al reservado, para eso es necesario cancelar la reserva y generar una nueva.
 
-### Cancelar una reserva
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancelar una reserva
 
 Puedes cancelar la reserva y liberar el dinero de la tarjeta al actualizar el atributo `status` del pago al estado `cancelled`.
 
@@ -327,7 +327,7 @@ curl -X PUT \
 ```
 ]]]
 
-#### Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
