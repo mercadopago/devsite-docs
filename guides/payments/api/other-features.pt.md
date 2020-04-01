@@ -1,14 +1,14 @@
-# Otras funcionalidades
+# Outras funcionalidades
 
-Suma funcionalidades específicas a tu integración según las necesidades de tu negocio.
+Adicione funcionalidades específicas a sua integração segundo as necessidades do seu negócio.
 
-## Autorización y captura de pagos
+## Autorização e Captura
 
-Ofrece la posibilidad de realizar una autorización antes de generar una captura de un pago. Esto te permite hacer una reserva de fondos en la tarjeta de tu comprador sin efectuar el pago.
+Ofereça a possibilidade de realizar uma autorização antes de gerar uma captura de um pagamento. Isso te permite fazer uma reserva de fundos no cartão do seu comprador sem efetuar o pagamento.
 
-### Realiza una reserva de fondos
+### Realize uma reserva de valores
 
-Para hacer una autorización de reserva de fondos solo tienes que agregar el atributo `capture=false` de la siguiente manera:
+Para fazer uma autorização de reserva de valores é preciso apenas adicionar o atributo `capture=false` da seguinte maneira:
 
 [[[
 ```php
@@ -111,7 +111,7 @@ curl -X POST \
     }'
 ]]]
 
-La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
+A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 
 ```json
 {
@@ -125,22 +125,23 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 }
 ```
 
-También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fondos autorizados no podrán ser utilizados por tu cliente hasta que no sean capturados. Te recomendamos realizar la captura lo antes posible.
+Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes. 
+
 
 > WARNING
 >
 > Importante
 >
-> * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
-> * Debes guardar el ID del pago para poder finalizar el proceso.
+> * A reserva terá validez de 7 días. Se não capturá-la nesse período, será cancelada.
+> * Deve guardar o ID do pagamento para poder finalizar o processo.
 
-### Captura un pago autorizado
+### Capture um pagamento autorizado
 
-Para finalizar el pago, es necesario capturar los fondos que reservaste a tu cliente. Puede realizarse por el monto total o uno parcial.
+Para finalizar o pagamento, é necessário capturar os valores que reservou ao seu cliente. Pode-se capturar o valor total ou parcial.
 
-#### Capturar el monto total de una reserva
+#### Capturar o valor total de uma reserva
 
-Para hacer la captura por el monto total solo debes enviar el atributo `capture` como `true`.
+Para fazer a captura do valor total deve apenas enviar o atributo `capture` como `true`.
 
 [[[
 ```php
@@ -181,7 +182,7 @@ curl -X PUT \
 ```
 ]]]
 
-La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
+A resposta devolverá que o pagamento se encontra aprovado e creditado.
 
 ```json
 {
@@ -198,19 +199,19 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 > 
 > Nota
 > 
-> Si no agregas un monto, se capturará el total reservado.
+> Se não adicionar o valor, será capturado o total reservado.
 
-### Captura un pago por un monto menor al reservado
+### Capturar um pagamento por um valor inferior ao reservado
 
 ----[mla]----
 > WARNING
 >
 > Importante
 >
-> Solo disponible para Visa, Cabal, Master y American Express.
+> Disponível somente para Visa, Cabal, Master e American Express.
 ------------
 
-Para capturar un monto menor al que reservaste, tienes que sumar el envío del atributo  `transaction_amount` con el nuevo valor.
+Para capturar um valor inferior ao reservado, é preciso adicionar o atributo `transaction_amount`com o novo valor.
 
 [[[
 ```php
@@ -279,11 +280,11 @@ curl -X PUT \
 >
 > Nota
 >
-> No es posible capturar un monto mayor al reservado, para eso es necesario cancelar la reserva y generar una nueva.
+> Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserca e gerar uma nova.
 
-### Cancelar una reserva
+### Cancelar uma reserva
 
-Puedes cancelar la reserva y liberar el dinero de la tarjeta al actualizar el atributo `status` del pago al estado `cancelled`.
+Pode-se cancelar uma reserva e liberar o limite do cartão ao atualizar o atributo `status` do pagamento ao estado `cancelled`.
 
 [[[
 ```php
@@ -341,20 +342,20 @@ curl -X PUT \
 ```
 
 ---
-### Próximos pasos
+### Próximos passos
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Integración avanzada
+> Integração avançada
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Otimize sua integração e melhore a gestão Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
 
 > RIGHT_BUTTON
 >
-> Referencias de API
+> Referências de API
 >
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+> Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/)
+> [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/)

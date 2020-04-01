@@ -1,6 +1,6 @@
 # Integración avanzada
 
-## Recuerda tus clientes y sus tarjetas
+## Armazene os dados dos seus clientes e cartões
 
 Usa nuestras APIs para guardar la referencia de las tarjetas de tus clientes y poder brindarles una mejor experiencia. De esta manera, tus clientes no tienen que completar sus datos cada vez y pueden finalizar sus pagos más rápido.
 
@@ -141,7 +141,11 @@ Respuesta
 > NOTE
 >
 > Nota
+<<<<<<< HEAD
 >
+=======
+> 
+>>>>>>> 7b21e5bdee092de4bafcc34f96c68ec5d31b74c4
 > Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos.
 
 ### Agrega nuevas tarjetas a un cliente
