@@ -13,7 +13,7 @@ Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
 
 ```php
 
-<?php   
+<?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
@@ -141,8 +141,8 @@ Respuesta
 > NOTE
 >
 > Nota
-> 
-> Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos. 
+>
+> Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos.
 
 ### Agrega nuevas tarjetas a un cliente
 
@@ -150,8 +150,7 @@ Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP
 
 [[[
 ```php
-
-<?php  
+<?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
@@ -261,7 +260,7 @@ curl -X POST \
 Respuesta
 
 
-```json 
+```json
 {
     "id": "1493990563105",
     "expiration_month": 12,
@@ -359,9 +358,9 @@ curl -X GET \
 
 ]]]
 
-Respuesta de datos de una tarjeta guardada: 
+Respuesta de datos de una tarjeta guardada:
 
-```json 
+```json
 [{
     "id": "1490022319978",
     "expiration_month": 12,
@@ -372,9 +371,9 @@ Respuesta de datos de una tarjeta guardada:
 }]
 ```
 
-Y puedes armar el formulario de la siguiente manera: 
+Y puedes armar el formulario de la siguiente manera:
 
-```html 
+```html
 <li>
     <label>Payment Method:</label>
     <select id="cardId" name="cardId" data-checkout='cardId'>
@@ -397,14 +396,14 @@ Y puedes armar el formulario de la siguiente manera:
 
 El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
 
-```javascript 
+```javascript
 doSubmit = false;
 addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
     event.preventDefault();
     if(!doSubmit){
         var $form = document.querySelector('#pay');
 
-        Mercadopago.createToken($form, sdkResponseHandler); 
+        Mercadopago.createToken($form, sdkResponseHandler);
 
 // The function "sdkResponseHandler" is defined below
 
@@ -420,7 +419,7 @@ Una vez obtenido el token, puedes generar el pago por el monto correspondiente. 
 [[[
 ```php
 
-<?php  
+<?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
@@ -505,10 +504,10 @@ curl -X POST \
   transaction_amount: 100,
   token: "ff8080814c11e237014c1ff593b57b4d",
   installments: 1,
-  payer: { 
-  	type: "customer",
+  payer: {
+      type: "customer",
     id: "123456789-jxOV430go9fx2e"
-  } 
+  }
 }'
 
 ```
@@ -569,7 +568,7 @@ Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el 
 curl -X GET \
   'https://api.mercadopago.com/v1/customers/search?access_token=ENV_ACCESS_TOKEN' \
   -d '{
-	"email": "test_user_19653727@testuser.com"
+    "email": "test_user_19653727@testuser.com"
 }'
 
 ```
@@ -578,7 +577,7 @@ curl -X GET \
 
 Respuesta
 
-```json 
+```json
 {
     "paging": {
         "limit": 10,
@@ -673,7 +672,7 @@ curl -X GET \
 
 Respuesta
 
-```json 
+```json
 [{
     "id": "1490022319978",
     "expiration_month": 12,
