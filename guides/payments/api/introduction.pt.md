@@ -1,20 +1,20 @@
 # APIs do Mercado Pago
 
-## Construa seu processador de pagamento
+## Construa seu processador de pagamentos
 
-Use nossas APIs para construir sua própria experiência de pagamento no seu website ou aplicação móvel. De configurações básicas a avançadas, controle a experiência.
+Use nossas APIs para construir sua própria experiência de pagamento no seu website ou aplicação móvel. De configurações básicas a avançadas, controle toda a experiência.
 
 Use nossos SDKs oficiais ou interaja diretamente com nossas APIs através das [Referências de API](https://www.mercadopago.com.ab/developers/pt/reference/payments/_payments/post/).
 
-![API-payment](/desktop/api/api-payment.png)
+![API-payment](/images/api/api-payment.png)
 
 ## Características
 
-* Crie sua própria plataforma de pagamentos dentro do seu site
-* Como desenvolvedor tenha o controle total. Gerencie todo o processo de coleta de dados no frontend onde seu cliente realiza a solicitação de pagamento.
-* Comunique-se diretamente com seus clientes através das mensagens de erro e respostas personalizadas.
-* Salve os cartões usados por seus clientes para futuros pagamentos.
-* É possível utilizar todos os meios de pagamento, ou também, apenas o que quiser.
+* Crie sua própria plataforma de pagamentos dentro do seu site.
+* Como desenvolvedor, tenha o controle total. Gerencie todo o processo de coleta de dados no frontend onde seu cliente realiza a solicitação de pagamento.
+* Comunique-se diretamente com seus clientes através das mensagens de erro com respostas personalizadas.
+* Salve os cartões usados por seus clientes para pagamentos futuros.
+* É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
 
 ---
 ### Próximos passos

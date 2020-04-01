@@ -5,9 +5,9 @@ Te contamos qué necesitas saber para poder integrar nuestras APIs.
 ## Ten a mano tus credenciales
 Las credenciales son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra clave privada.
 
-La clave pública, o Public key, te sirve para acceder a los recursos que necesita tu frontend. Con ella vas a poder recolectar los datos de las tarjetas de crédito y convertirlos en un token representativo que puedes enviar de forma segura a tus servidores para crear un pago.
+La clave pública, o _Public key_, te sirve para acceder a los recursos que necesita tu frontend. Con ella vas a poder recolectar los datos de las tarjetas de crédito y convertirlos en un token representativo que puedes enviar de forma segura a tus servidores para crear un pago.
 
-Y la clave privada, o Access token, te va a permitir llamar al resto de las APIs desde tus servidores. Por ejemplo, para procesar un pago, realizar un reembolso o almacenar tarjetas.
+Y la clave privada, o _Access token_, te va a permitir llamar al resto de las APIs desde tus servidores. Por ejemplo, para procesar un pago, realizar un reembolso o almacenar tarjetas.
 
 Para poder encontrarlas, ve la [sección de Credenciales](https://www.mercadopago.com/mla/account/credentials).
 
@@ -91,6 +91,9 @@ Al realizar tu integración, es necesario que tengas en cuenta todos los [requis
 
 Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tienes que completar el formulario para ir producción desde la [sección de Credenciales](https://www.mercadopago.com/mla/account/credentials).
 
+---
+### Próximos pasos
+
 > LEFT_BUTTON_REQUIRED_ES
 >
 > Integrar API de Mercado Pago con tarjeta
@@ -98,9 +101,6 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 > Construye y configura tu propia experiencia de pagos.
 >
 > [Integrar API de Mercado Pago con tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card/)
-
----
-### Próximos pasos
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

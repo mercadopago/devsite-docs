@@ -1,6 +1,6 @@
 # Integre a API para pagamentos com cartão
 
-A integração por API de pagamentos do Mercado Pago para cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenhan que sair ao momento de realizar a compra.
+A integração por API do Mercado Pago para pagamentos com cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenham que sair ao momento de realizar a compra.
 
 ## Como funciona?
 
@@ -37,15 +37,15 @@ A informação do cartão será convertida em um token para que envie os dados a
 
 ### 2. Adicione o formulário de pagamento
 
-Para realizar a captura dos dados sensíveis dos cartões dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação e a geração correta do token. Por exemplo, é preciso respeitar os atributos `data-checkout`e não colocar o atributo `name` nos campos que tenham dados sensíveis, dessa forma nunca chegarão aos seus servidores.
+Para realizar a captura dos dados sensíveis dos cartões dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação e a geração correta do token. Por exemplo, é preciso respeitar os atributos `data-checkout` e não colocar o atributo `name` nos campos que tenham dados sensíveis, dessa forma nunca chegarão aos seus servidores.
 
-Você pode adicionar tudo o que necessite, modificar o atributo `label`sugerido e adicionar o estilo que queira sem problemas.
+Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido e adicionar o estilo que queira sem problemas.
 
 ```html
 <form action="/processar_pagamento" method="post" id="pay" name="pay" >
     <fieldset>
         <p>
-            <label for="cardNumber">Número do cartão:/label>
+            <label for="cardNumber">Número do cartão/label>
             <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
         <p>
@@ -108,7 +108,7 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
-Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função dor chamada:
+Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
 
 ```javascript 
 window.Mercadopago.getIdentificationTypes();
@@ -178,7 +178,7 @@ function getInstallments(){
 
 ### 5. Crie o token do cartão
 
-Antes de enviar o pagamento, crie o token que conterá de maneira segura toda a informação do cartão. Você deve gera-lo da seguinte forma:
+Antes de enviar o pagamento, crie o token que conterá de maneira segura toda a informação do cartão. Você deve gerá-lo da seguinte forma:
 
 ```javascript 
 doSubmit = false;
@@ -235,13 +235,13 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 > 
 > Envie o pagamento ao Mercado Pago
 
-Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend saiba receber a informação do formulário com o token gerado e os dados completos.
+Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos.
 
 Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/processar_pagamento`, que foi definido no atributo `action` do formulário, para receber aí todos os dados assim que realizar a ação `submit`.
 
-Já estando no seu backendo com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos a enviar son: `token`,` transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos a enviar são: `token`,` transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
-Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](https://www.mercadopago.com/mla/account/credentials).
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](https://www.mercadopago.com/mlb/account/credentials).
 
 Lembre-se também que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/api/previous-requirements/#bookmark_instale_o_sdk_do_mercado_pago).
 
@@ -395,7 +395,7 @@ curl -X POST \
 ```
 ]]]
 
-#### Respuesta
+#### Resposta
 
 ```json 
 {
@@ -433,9 +433,9 @@ Os possíveis estados de um pagamento são:
 
 Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que possa comunicar corretamente aos seus clientes os dados resultantes da criação de um pagamento.
 
-Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corregir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
+Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corrigir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
 
-Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) e utilize a comunicação sugerida em cada um dos casos.
+Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
 
 > NOTE
 > 
@@ -443,9 +443,9 @@ Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadop
 > 
 > Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/payment-rejections/).
 
-## Reciba notificações de pagamento
+## Receba notificações de pagamento
 
-Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estatos. Por exemplo se foram aprovados, rejeitados ou se se encontram pendentes.
+Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou se se encontram pendentes.
 
 [Configure notificações webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/) ou [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/).
 
@@ -453,7 +453,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Testes
+> Teste sua integração
 >
 > Revise que esteja tudo bem com sua integração com os usuários de teste.
 >

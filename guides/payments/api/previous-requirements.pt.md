@@ -1,14 +1,14 @@
 # Pré-requisitos para começar
 
-Te contamos o que é preciso saber para poder integrar nossas APIs.
+Saiba o que é necessário para integrar nossas APIs.
 
 ## Obtenha suas credenciais
 
-As credenciais são as **chaves que te proporcionamos para que possa configurar sua integração**. Você utilizará uma chave pública e outra chave privada.
+As credenciais são as **chaves que te oferecemos para que possa configurar sua integração**. Você utilizará uma chave pública e outra chave privada.
 
-A chave pública, ou Public Key, é utilizada para acessar os recursos que necessita no seu frontend. Com ela você pode coletar os dados dos cartões de crédito e convertê-los em um token representativo que pode ser enviado de forma segura aos seus servidores para criar um pagamento.
+A chave pública, ou _Public Key_, é utilizada para acessar os recursos que necessita no seu frontend. Com ela você pode coletar os dados dos cartões de crédito e convertê-los em um token representativo que pode ser enviado de forma segura aos seus servidores para criar um pagamento.
 
-E a chave privada, ou Access token, te permite chamar o resto das APIs a partir dos seus servidores. Por exemplo, para processar um pagamento, realizar um reembolso ou armazenar cartões.
+E a chave privada, ou _Access token_, te permite chamar o resto das APIs a partir dos seus servidores. Por exemplo, para processar um pagamento, realizar um reembolso ou armazenar cartões.
 
 Para poder encontrá-las, veja a [seção de Credenciais](https://www.mercadopago.com/mlb/account/credentials).
 
@@ -19,8 +19,8 @@ Para poder encontrá-las, veja a [seção de Credenciais](https://www.mercadopag
 
 > CLIENT_SIDE
 >
-> h3
->
+> h2
+> 
 > Inclua MercadoPago.js.
 
 MercadoPago.js te permite criar um token de pagamento para enviar os dados dos cartões ao seu backend de forma segura. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
@@ -31,6 +31,8 @@ MercadoPago.js te permite criar um token de pagamento para enviar os dados dos c
 
 > SERVER_SIDE
 >
+> h2
+> 
 > Instale o SDK do Mercado Pago
 
 Instale o SDK oficial para simplificar sua integração com nossas APIs.
@@ -86,10 +88,13 @@ Se não pode utilizar nossos SDKs oficiais, tenha disponível toda a informaçã
 
 ## Cumpra com os requisitos para ir a produção
 
-Ao realizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/).
+Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/).
 Com esse processo, garante-se a segurança dos dados dos seus cliente, o cumprimento das normas e disposições legais de cada país e ofereça a melhor experiência de compra para suas vendas.
 
 Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção na [seção de Credenciais](https://www.mercadopago.com/mlb/account/credentials).
+
+---
+### Próximos passos
 
 > LEFT_BUTTON_REQUIRED_ES
 >
@@ -98,9 +103,6 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, c
 > Construa e configure sua própria experiência de pagamentos.
 >
 > [Integrar API do Mercado Pago com cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card/)
-
----
-### Próximos pasos
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

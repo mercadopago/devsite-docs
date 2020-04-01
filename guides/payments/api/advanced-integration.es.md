@@ -245,6 +245,10 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
 ```
 ```curl
+curl -X POST \
+'https://api.mercadopago.com/v1/customers?access_token=ENV_ACCESS_TOKEN' \
+  -H 'Content-Type: application/json' \
+  -d '{"email": "test@test.com"}'
 
 curl -X POST \
 'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards?access_token=ENV_ACCESS_TOKEN' \

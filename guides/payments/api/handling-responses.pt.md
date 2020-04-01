@@ -2,7 +2,7 @@
 
 Ofereça aos seus clientes informação clara e precisa sobre os possíveis erros na inserção de dados de cartão ou o estado dos pagamentos realizados. Isso permite notificá-los sobre que ação podem realizar para solucionar ou comunicar se há algum passo extra a ser realizado.
 
-Por exemplo, se o cartão no possui saldo suficiente para a compra, pode-se recomendar que se tente pagar nocamente com outro meio de pagamento para completar a operação.
+Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se recomendar que se tente pagar novamente com outro meio de pagamento para completar a operação.
 
 ### Resultados da criação de uma cobrança
 
@@ -11,13 +11,13 @@ Por exemplo, se o cartão no possui saldo suficiente para a compra, pode-se reco
 Estado | status_detail | Mensagem sugerida
 ------------ | ------------- | -------------
 approved | `accredited` | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como `statement_descriptor`.
-in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupte, em menos de 2 días úteis te avisaremos por e-mail se foi creditado.
-in_process | `pending_review_manual` | Estamos processando seu pagamento.<br/><br/>Não se preocupte, em menos de 2 días úteis te avisaremos por e-mail se foi creditado ou se necessitamos de mais informação.
+in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupe, em menos de 2 días úteis te avisaremos por e-mail se foi creditado.
+in_process | `pending_review_manual` | Estamos processando seu pagamento.<br/><br/>Não se preocupe, em menos de 2 días úteis te avisaremos por e-mail se foi creditado ou se necessitamos de mais informação.
 rejected | `cc_rejected_bad_filled_card_number` | Revise o número do cartão.
-rejected | `cc_rejected_bad_filled_date` | Revise a dara de vencimento.
+rejected | `cc_rejected_bad_filled_date` | Revise a data de vencimento.
 rejected | `cc_rejected_bad_filled_other` | Revise os dados.
 rejected | `cc_rejected_bad_filled_security_code` | Revise o código de segurança do cartão.
-rejected | `cc_rejected_blacklist` | Não pudemos processa seu pagamento.
+rejected | `cc_rejected_blacklist` | Não pudemos processar seu pagamento.
 rejected | `cc_rejected_call_for_authorize` | Você deve autorizar ao `payment_method_id` o pagamento do valor ao Mercado Pago.
 rejected | `cc_rejected_card_disabled` | Ligue para o `payment_method_id` para ativar seu cartão. O telefone está no verso do seu cartão.
 rejected | `cc_rejected_card_error` | Não conseguimos processar seu pagamento.
@@ -26,7 +26,7 @@ rejected | `cc_rejected_high_risk` | Seu pagamento foi recusado.<br/><br/>Escolh
 rejected | `cc_rejected_insufficient_amount` | O `payment_method_id` possui saldo insuficiente.
 rejected | `cc_rejected_invalid_installments` | O `payment_method_id` não processa pagamentos em `installments` parcelas.
 rejected | `cc_rejected_max_attempts` | Você atingiu o limite de tentativas permitido.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
-rejected | `cc_rejected_other_reason` | `payment_method_id` no procesó el pago.
+rejected | `cc_rejected_other_reason` | `payment_method_id` não processa o pagamento.
 
 ### Erros de inserção de dados
 
@@ -60,11 +60,11 @@ Estado | status_detail | Mensagem sugerida
 106 | Cannot operate between users from different countries | Não pode efetuar pagamentos a usuários de outros países.
 109 | Invalid number of shares for this payment_method_id | O `payment_method_id` não processa pagamentos parcelados. <br/><br/> Escolha outro cartão ou outra forma de pagamento.
 126 | The action requested is not valid for the current payment state | Não conseguimos processar seu pagamento.
-129 | Cannot pay this amount with this paymentMethod | `payment_method_id` não processa pagamentos para o valor selecionado.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
+129 | Cannot pay this amount with this paymentMethod | O `payment_method_id` não processa pagamentos para o valor selecionado.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
 145 | Invalid users involved | Não conseguimos processar seu pagamento.
 150 | The payer_id cannot do payments currently | Você não pode efetuar pagamentos.
 151 | The payer_id cannot do payments with this payment_method_id | Você não pode efetuar pagamentos.
 160 | Collector not allowed to operate | Não conseguimos processar seu pagamento.
-204 | Unavailable payment_method | `payment_method_id` não está disponível nesse momento.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
-801 | Already posted the same request in the last minute | Você realizou um pagamento similar a poucos instantes.<br/><br/>Tente novamente em alguns minutos.
+204 | Unavailable payment_method | O `payment_method_id` não está disponível nesse momento.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
+801 | Already posted the same request in the last minute | Você realizou um pagamento similar há poucos instantes.<br/><br/>Tente novamente em alguns minutos.
 default | Outro código de erro | Não pudemos processar seu pagamento.
