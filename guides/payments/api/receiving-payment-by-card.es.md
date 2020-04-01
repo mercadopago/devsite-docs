@@ -20,6 +20,8 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 <br>
 
 > CLIENT_SIDE
+> 
+> h2
 >
 > Captura los datos de la tarjeta
 
@@ -233,6 +235,8 @@ El método `createToken` devolverá un `card_token` con la representación segur
 
 > SERVER_SIDE
 >
+> h2
+> 
 > Envía el pago a Mercado Pago
 
 Para continuar el proceso de pago hacia Mercado Pago, es necesario que tu backend sepa recibir la información del formulario con el token generado y los datos completados.
