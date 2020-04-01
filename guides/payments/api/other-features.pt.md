@@ -352,7 +352,7 @@ curl -X PUT \
 >
 > [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
 
-> RIGHT_BUTTON
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Referências de API
 >

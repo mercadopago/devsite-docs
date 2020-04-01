@@ -694,11 +694,11 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Outras funcionalidades
+> Manipulação de respostas de erro
 >
-> Adapte a integração as necessidades específicas do seu negócio.
+> Ajude seus clientes a completar seus pagamentos sem erros.
 >
-> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/api/configurations/)
+> [Manipulação de respostas de erro](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
