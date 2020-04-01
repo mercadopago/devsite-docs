@@ -106,7 +106,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 ## Configurando o parcelamento em sua conta Mercado Pago
 
 1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio"
-2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
+2. Clique na opção "Configurações", navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
     ![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
