@@ -18,6 +18,8 @@ Es importante que siempre utilices nuestras librerías oficiales para tu integra
 
 > CLIENT_SIDE
 >
+> h2
+> 
 > Incluye MercadoPago.js.
 
 MercadoPago.js te permite crear un token de pago para enviar los datos de las tarjetas a tu backend de forma segura. Puedes utilizarla sumando el siguiente código en tu sitio:
@@ -28,6 +30,8 @@ MercadoPago.js te permite crear un token de pago para enviar los datos de las ta
 
 > SERVER_SIDE
 >
+> h2
+> 
 > Instala la SDK de Mercado Pago
 
 Instala el SDK oficial para simplificar tu interacción con nuestras APIs.

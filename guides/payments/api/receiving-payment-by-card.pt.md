@@ -19,7 +19,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 > CLIENT_SIDE
 > 
-> h3
+> h2
 > 
 > Capture os dados de cartão.
 
@@ -231,7 +231,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 
 > SERVER_SIDE
 > 
-> h3
+> h2
 > 
 > Envie o pagamento ao Mercado Pago
 

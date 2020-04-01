@@ -15,6 +15,8 @@ Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.*
 
 > SERVER_SIDE
 >
+> h2
+> 
 > Cómo crear usuarios
 
 Para comenzar, es necesario que tengas como mínimo dos usuarios de prueba: un comprador y un vendedor.
