@@ -141,11 +141,7 @@ Respuesta
 > NOTE
 >
 > Nota
-<<<<<<< HEAD
 >
-=======
-> 
->>>>>>> 7b21e5bdee092de4bafcc34f96c68ec5d31b74c4
 > Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos.
 
 ### Agrega nuevas tarjetas a un cliente
@@ -697,9 +693,9 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Otras funcionalidades
+> Manejo de respuestas de error
 >
-> Adapta la integración a las necesidades específicas de tu negocio. 
+> Ayuda a tus clientes a completar sus pagos sin errores.
 >
 > [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/payments/api/configurations/)
 
