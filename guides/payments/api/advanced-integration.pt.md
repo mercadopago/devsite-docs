@@ -578,7 +578,7 @@ curl -X GET \
 
 ]]]
 
-Respuesta
+Resposta
 
 ```json
 {

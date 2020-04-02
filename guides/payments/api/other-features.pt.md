@@ -132,7 +132,7 @@ Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores
 >
 > Importante
 >
-> * A reserva terá validez de 7 días. Se não capturá-la nesse período, será cancelada.
+> * A reserva terá validade de 7 dias. Se não capturá-la nesse período, será cancelada.
 > * Deve guardar o ID do pagamento para poder finalizar o processo.
 
 ## Capture um pagamento autorizado
