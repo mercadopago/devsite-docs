@@ -6,6 +6,8 @@ Usa nuestras APIs para construir tu propia experiencia de pago en tu sitio web o
 
 Puedes usar las SDKs oficiales o interactuar directamente con nuestras APIs a través de las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
 
+<br>
+
 ![API-payment](/images/api/api-intro-es.jpg)
 
 ## Características

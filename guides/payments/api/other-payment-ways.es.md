@@ -9,7 +9,7 @@ Con la API de pagos de Mercado Pago puedes sumar **otras alternativas de medios 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ------------------- | ---------------------------- |
+| --- | ---|
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
 | `ticket` | Provincia NET Pagos |
@@ -261,7 +261,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ------------------- | ---------------------------- |
+| --- | ---|
 | `ticket` | OXXO |
 | `atm` | Citibanamex |
 | `atm` | Santander |
@@ -594,7 +594,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Al finalizar, es importante que compartas con tus clientes la información de los distintos lugares en los que puede pagar.
 
 | Medio de pago | Tiendas disponibles
-| ------------------- | ---------------------------- |
+| --- | ---|
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
 | BBVA Bancomer | Extra |
@@ -616,7 +616,7 @@ Al finalizar, es importante que compartas con tus clientes la información de lo
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ---------------- | ------------------------ |
+| --- | ---|
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
@@ -881,7 +881,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ---------------- | ------------------------ |
+| --- | ---|
 | `ticket` | Efecty |
 | `ticket` | Davivienda |
 | `ticket` | Baloto |
@@ -1184,7 +1184,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ---------------- | ------------------------ |
+| --- | ---|
 | `ticket` | Sucursales Servipag |
 | `bank_transfer` | Redcompra Webpay |
 
@@ -1439,7 +1439,7 @@ Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado p
 >
 > Importante
 >
-> Ten en cuenta que Webpay cancela automáticamente si no se realiza el pago a los 30 minutos.
+> Ten en cuenta que Webpay cancelará automáticamente el pago si no se realizó a los 30 mintuos.
 
 Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.cl/developers/es/guides/manage-account/cancellations-and-refunds/).
 
@@ -1451,6 +1451,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 ------------
 
+
 ----[mpe]----
 
 ## Medios de pago
@@ -1458,7 +1459,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ---------------- | ------------------------ |
+| --- | ---|
 | `atm` | PagoEfectivo |
 
 
@@ -1719,3 +1720,4 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
 > [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration)
+
