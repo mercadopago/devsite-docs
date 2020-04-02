@@ -16,6 +16,8 @@ Para poder encontrarlas, ve la [sección de Credenciales](https://www.mercadopag
 ## Utiliza nuestras librerías siempre
 Es importante que siempre utilices nuestras librerías oficiales para tu integración. Esto permite cuidar los datos sensibles de tus clientes, cumplir con los estándares de seguridad requeridos y estar siempre actualizado.
 
+<br>
+
 > CLIENT_SIDE
 >
 > h3
