@@ -30,10 +30,6 @@ La clave pública, o **Public key**, te sirve para acceder a los recursos que ne
 
 Y la clave privada, o **Access token**, te va a permitir llamar al resto de las APIs. Por ejemplo, cómo procesar un pago, realizar un reembolso o almacenar tarjetas.
 
-> NOTE
->
-> Nota
->
 > ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 ## Modo _Sandbox_ y Productivo
