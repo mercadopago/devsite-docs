@@ -1,6 +1,6 @@
 # Requisitos para ir a produção
 
-Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção através da [seção de Credenciais](https://www.mercadopago.com/mlb/account/credentials).
+Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção através da [seção de Credenciais](FAKER][CREDENTIALS][URL]).
 
 ## Por que é necessário realizar esse processo?
 
