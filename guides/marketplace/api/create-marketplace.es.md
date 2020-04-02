@@ -163,7 +163,6 @@ curl -X POST \
   $payment->description = "Title of what you are paying for";
   $payment->installments = 1;
   $payment->payment_method_id = "visa";
-  $payment->user_token = "ENV_USER_TOKEN";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
@@ -184,7 +183,6 @@ payment.setTransactionAmount(100)
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
       .setPaymentMethodId("visa")
-      .setUserToken("ENV_USER_TOKEN")
       .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
@@ -201,7 +199,6 @@ var payment_data = {
   description: 'Title of what you are paying for',
   installments: 1,
   payment_method_id: 'visa',
-  user_token: "ENV_USER_TOKEN"
   payer: {
     email: 'test_user_3931694@testuser.com'
   }
@@ -225,7 +222,6 @@ payment.token = 'ff8080814c11e237014c1ff593b57b4d'
 payment.description = 'Title of what you are paying for'
 payment.installments = 1
 payment.payment_method_id = "visa"
-payment.user_token = "ENV_USER_TOKEN"
 payment.payer = {
   email: "test_user_19653727@testuser.com"
 }

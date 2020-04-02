@@ -17,7 +17,8 @@
 
 O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
-Para receber as notificações dos eventos na sua plataforma, deve-se configurar previamente uma [URL acessível ao Mercado Pago](https://www.mercadopago.com.ar/herramientas/notificaciones).
+Para receber notificações de eventos na sua plataforma, você pode [configurar previamente uma notification_url à qual Mercado Pago tiver acesso](https://www.mercadopago.com.br/ipn-notifications).
+
 
 
 ## Eventos
@@ -59,6 +60,21 @@ payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver docu
 chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
 
+
+### Notificações para pagamentos presenciais
+
+**Se você estiver integrando pagamentos presenciais**, recomendamos utilizar notificações IPN de topic `merchant_order`. Para isso, lembre das seguintes regras:
+ 
+1. O campo `status` da `merchant_order` permanecerá em **opened** quando ainda não tiver pagamentos associados, ou tiver pagamentos recusados ou aprovados por um valor menor ao total da ordem.
+2. O campo `status` da `merchant_order` será **closed** quando a soma dos pagamentos aprovados for igual ou superior ao total da ordem.
+ 
+Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status = approved para [poder realizar restituições](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/cancellations-and-refunds).
+ 
+> WARNING
+>
+> ATENÇÃO
+>
+> Quando o `status` da `merchant_order` for **closed**, certifique-se de que a soma dos pagamentos com `status` **approved** seja igual ou maior ao total da ordem.
 
 ### Implemente o receptor de notificações usando o seguinte código como exemplo:
 
@@ -103,3 +119,60 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 ```
 
 > Para obter seu `ACCESS_TOKEN`, verifique a seção de [Credenciais]([FAKER][CREDENTIALS][URL])
+
+## Pesquisa da ordem
+
+**Si estas integrando pagos presenciales**, se debe implementar como método de contingencia, la  **búsqueda de la orden** utilizando el `external_reference` de la misma como criterio de búsqueda.
+
+**Se você estiver integrando pagamentos presenciais**, é necessário aplicar como método de contingência a **pesquisa da ordem** utilizando o seu `external_reference` como critério de pesquisa.
+
+```curl
+curl -X GET https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE&access_token=$ACCESS_TOKEN -d
+```
+Mais informações na [Referência de API](https://www.mercadopago.com.br/developers/pt/reference/merchant_orders/_merchant_orders_search/get/).
+
+A **pesquisa** pode ser realizada por `external_reference` de duas formas:
+
+
+| Formas	|	Descrição		|
+| ----------- | ----------------- |
+| **Manual** | O ponto de venda deve incluir um botão para realizar a pesquisa. |
+| **Automática** | Após um tempo razoável sem ter recebido qualquer notificação, é iniciada uma pesquisa da ordem a cada um intervalo de, por exemplo, 5 segundos. |
+
+Por cada escaneamento do QR é gerada uma `merchant_order` diferente. Lembre que caso o cliente faça mais de um escaneamento, uma ordem ficará em **open** por tempo indefinido. Para encerrar a transação, a `merchant_order` deve ter `status` = **closed**.
+ 
+Caso a pesquisa seja realizada **após o escaneamento do QR**, vão se obter todos os dados referidos à ordem:
+
+```json
+{
+  "id": 1126664483,
+  "status": "closed",
+  "payments": [
+     {
+      "id": 4996721469,
+      "transaction_amount": 4,
+      "status": "rejected",
+      [...],
+    },
+     {
+      "id": 4996721476,
+      "transaction_amount": 4,
+      "status": "approved",
+      [...], }, 
+```
+
+Caso contrário, se o QR no qual a ordem foi publicada ainda **não foi escaneado**, a resposta será:
+
+```json
+{
+   "elements": null,
+   "next_offset": 0,
+   "total": 0
+ }
+```
+
+> WARNING
+>
+> ATENÇÃO
+>
+> Mercado Pago requer a integração de pagamentos presenciais que tiverem aplicada a notificação (IPN) como método principal para a homologação. A pesquisa de ordem por `external_reference` deverá ser somente utilizada como contingência no caso eventual de não se receberem notificações.
