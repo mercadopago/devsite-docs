@@ -18,7 +18,7 @@ gem install mercadopago-sdk
 
 ### Configure your credentials
 
-* Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
+* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
 ```ruby
 require 'mercadopago.rb'
@@ -109,13 +109,15 @@ puts result
 
 ### Configure your credentials
 
-* Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
+* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
 ```ruby
 require 'mercadopago.rb'
 
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
+
+> Find all the information about your credentials in our. [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
 ### Create payment
 

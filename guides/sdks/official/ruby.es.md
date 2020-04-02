@@ -17,7 +17,7 @@
 ### Configura tus credenciales
 
 
-Obtén tu **ACCESS_TOKEN** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
+Obtén tu **Access token** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
 
 
 ```ruby
@@ -107,7 +107,7 @@ puts result
 
 ### Configura tus credenciales
 
-Obtén tu **ACCESS_TOKEN** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
+Obtén tu **Access token** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
 
 
 ```ruby
@@ -116,10 +116,6 @@ require 'mercadopago.rb'
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
-> NOTE
->
-> Nota
->
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
 
 
