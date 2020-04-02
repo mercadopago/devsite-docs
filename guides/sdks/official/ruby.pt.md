@@ -2,7 +2,7 @@
 
 * [Instalação](#install)
 * [Checkout básico](#basic-checkout)
-* [Checkout customizado](#custom-checkout)
+* [Checkout customizado](#checkout-customizado)
 * [Métodos genéricos](#generic-methods)
 
 <a name="install"></a>
@@ -15,12 +15,12 @@
 
 ### Configure suas credenciais
 
-* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** na seção [Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+* Obtenha seu **ACCESS_TOKEN** na seção [Credenciais]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
 
-$mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
+$mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
 ### Preferências
@@ -101,7 +101,7 @@ puts result
 ```
 
 <a name="custom-checkout"></a>
-## Checkout API
+## Checkout customizado
 
 ### Configure suas credenciais
 
@@ -144,7 +144,9 @@ $mp.get ("/v1/customers/CUSTOMER_ID");
     * Colombia: [https://www.mercadopago.com.co/developers](https://www.mercadopago.com.co/developers)
 
 <a name="generic-methods"></a>
-## Métodos genéricos
+
+### Métodos genéricos
+
 Você pode acessar qualquer recurso da API do Mercado Pago usando métodos genéricos:
 
 ```ruby

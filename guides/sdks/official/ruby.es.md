@@ -3,8 +3,8 @@
 
 * [Instalación](#bookmark_instalación)
 * [Checkout Mercado Pago](#bookmark_checkout_mercado_pago)
-* [Customized checkout](#bookmark_checkout_custom)
-* [Generic methods](#bookmark_métodos_genéricos)
+* [Checkout personalizado](#bookmark_checkout_personalizado)
+* [Métodos genéricos](#bookmark_métodos_genéricos)
 
 
 ## Instalación
@@ -17,12 +17,13 @@
 ### Configura tus credenciales
 
 
-Obtén tu **CLIENT_ID** y **CLIENT_SECRET** en la sección [Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
+Obtén tu **ACCESS_TOKEN** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
+
 
 ```ruby
 require 'mercadopago.rb'
 
-$mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
+$mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
 ### Preferencias
@@ -102,7 +103,7 @@ result = $mp.refund_payment("ID");
 puts result
 ```
 
-## Checkout API
+## Checkout personalizado
 
 ### Configura tus credenciales
 
