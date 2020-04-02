@@ -1,6 +1,6 @@
 # Integra la API de pagos para tarjetas
 
-La integración por API de pagos de Mercado Pago para tarjetas permite que puedas ofrecer una opción de pagos totalmente en tu sitio. Toda la experiencia sucede en tu tienda para que los clientes no tenga que salir al momento de realizar la compra.
+La integración por API de pagos de Mercado Pago para tarjetas permite que puedas ofrecer una opción de pagos totalmente en tu sitio. Toda la experiencia sucede en tu tienda para que los clientes no tengan que salir al momento de realizar la compra.
 
 ## ¿Cómo funciona?
 
@@ -8,7 +8,7 @@ La integración por API de pagos de Mercado Pago para tarjetas permite que pueda
 
 <br>
 
-Al usar nuestra API de pagos de Mercado Pago, es importante tener en cuenta dos instancias: la de la captura de datos y el envío de confirmación del pago.
+Al usar nuestra API de pagos de Mercado Pago, es importante tener en cuenta dos instancias: la de la captura de datos y la del envío de confirmación del pago.
 
 1. Primero, necesitas un frontend para que recolecte los datos de la tarjeta y que genere un token de seguridad con la información para poder crear el pago.
 2. Segundo, un backend que tome el token generado y los datos del pago, como por ejemplo monto e ítem, pueda confirmar y efectuar el pago.
@@ -112,7 +112,7 @@ window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener tipos de documentos
 
-Uno de los campos obligatorios es el tipo de número de documento. Utiliza la lista de documentos al momento de completar los datos.
+Uno de los campos obligatorios es el tipo de documento. Utiliza la lista de documentos al momento de completar los datos.
 
 Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en el formulario, MercadoPago.js completará automáticamente las opciones disponibles cuando llames a la siguiente función:
 
