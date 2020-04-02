@@ -92,15 +92,15 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_REQUIRED_ES
 >
-> Integración avanzada
+> Manejo de respuestas de error
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Ayuda a tus clientes a completar sus pagos sin errores.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
+> [Manejo de respuestas de error](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON
 >
 > Referencias de API
 >

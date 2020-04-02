@@ -19,9 +19,9 @@ Para poder encontrá-las, veja a [seção de Credenciais](https://www.mercadopag
 
 > CLIENT_SIDE
 >
-> h2
-> 
-> Inclua MercadoPago.js.
+> h3
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclua MercadoPago.js.
 
 MercadoPago.js te permite criar um token de pagamento para enviar os dados dos cartões ao seu backend de forma segura. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
 
@@ -31,9 +31,9 @@ MercadoPago.js te permite criar um token de pagamento para enviar os dados dos c
 
 > SERVER_SIDE
 >
-> h2
-> 
-> Instale o SDK do Mercado Pago
+> h3
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instale o SDK do Mercado Pago
 
 Instale o SDK oficial para simplificar sua integração com nossas APIs.
 
@@ -104,7 +104,7 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, c
 >
 > [Integrar API do Mercado Pago com cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Referências de API
 >

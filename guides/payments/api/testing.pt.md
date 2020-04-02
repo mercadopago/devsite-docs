@@ -90,15 +90,15 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 ---
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_PT
+> LEFT_BUTTON_REQUIRED_PT
 >
-> Integração avançada
+> Manipulação de respostas de erro
 >
-> Otimize sua integração e melhore a gestão das suas vendas.
+> Ajude seus clientes a completar seus pagamentos sem erros.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
+> [Manipulação de respostas de erro](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON_
 >
 > Referências de API
 >

@@ -226,7 +226,6 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 > Baixe um exemplo do formulário
 > 
 > Se nunca desenvolveu um formulário e têm dúvidas, te deixamos um [exemplo completo do formulário de pagamento no GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/blob/master/checkout.html) para que possa baixar.
-
 <br>
 
 > SERVER_SIDE
@@ -265,11 +264,11 @@ Lembre-se também que para interagir com nossas APIs recomendamos utilizar o [SD
     $payment->payer = array(
     "email" => "[FAKER][INTERNET][FREE_EMAIL]"
     );
-    // Save and posting the payment
-    $payment->save();
+
+$payment->save();
     //...
-    // Print the payment status
-    echo $payment->status;
+
+echo $payment->status;
     //...
 ?>
 ```
@@ -292,7 +291,6 @@ var payment_data = {
   }
 };
 
-// Save and posting the payment
 mercadopago.payment.save(payment_data).then(function (data) {
       console.log(data);
       res.send(data);
@@ -315,10 +313,10 @@ payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
        .setPaymentMethodId("visa")
        .setPayer(new Payer()
          .setEmail("test@test.com"));
-// Save and posting the payment
+
 payment.save();
 //...
-// Print the payment status
+
 System.out.println(payment.getStatus());
 //...
 ```
@@ -339,7 +337,7 @@ payment.payment_method_id = "visa"
 payment.payer = {
   email: "test@test.com"
 }
-# Save and posting the payment
+
 payment.save()
 ```
 ```csharp
@@ -364,10 +362,10 @@ Payment payment = new Payment()
         Email = "test@test.com"
     }
 };
-// Save and posting the payment
+
 payment.Save();
 //...
-// Print the payment status
+
 console.log(payment.Status);
 //...
 ```

@@ -4,7 +4,7 @@ Ofereça aos seus clientes informação clara e precisa sobre os possíveis erro
 
 Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se recomendar que se tente pagar novamente com outro meio de pagamento para completar a operação.
 
-## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resultados da criação de uma cobrança
+## Resultados da criação de uma cobrança
 
 Estado | status_detail | Mensagem sugerida
 ------------ | ------------- | -------------
@@ -26,7 +26,7 @@ rejected | `cc_rejected_invalid_installments` | O `payment_method_id` não proce
 rejected | `cc_rejected_max_attempts` | Você atingiu o limite de tentativas permitido.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
 rejected | `cc_rejected_other_reason` | `payment_method_id` não processa o pagamento.
 
-## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Erros de inserção de dados
+## Erros de inserção de dados
 
 Código | Descrição | Mensagem sugerida
 ------------ | ------------- | -------------
@@ -49,7 +49,7 @@ E302    | invalid parameter securityCode                                     | C
 326     | invalid parameter cardExpirationYear                               | Confira a data.
 default | Outro código de erro                                               | Confira os dados.
 
-## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Erros na criação do token de cartão
+## Erros na criação do token de cartão
 
 Estado | status_detail | Mensagem sugerida
 ------------ | ------------- | -------------
@@ -68,7 +68,7 @@ default | Outro código de erro | Não pudemos processar seu pagamento.
 ---
 ### Próximos passos
 
-> LEFT_BUTTON_
+> LEFT_BUTTON
 >
 > Outras funcionalidades
 >

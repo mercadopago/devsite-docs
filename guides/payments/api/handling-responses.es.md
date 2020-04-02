@@ -31,7 +31,7 @@ rejected | `cc_rejected_other_reason` | `payment_method_id` no procesó el pago.
 >
 > h2
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Errores de ingreso de datos
+> Errores de ingreso de datos
 
 
 Código | Descripción | Comunicación sugerida
@@ -74,7 +74,7 @@ default | Otro código de error | No pudimos procesar tu pago.
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON_
+> LEFT_BUTTON
 >
 > Otras funcionalidades
 >

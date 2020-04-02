@@ -1,6 +1,6 @@
 # Integración avanzada
 
-## Armazene os dados dos seus clientes e cartões
+## Recuerda tus clientes y sus tarjetas
 
 Usa nuestras APIs para guardar la referencia de las tarjetas de tus clientes y poder brindarles una mejor experiencia. De esta manera, tus clientes no tienen que completar sus datos cada vez y pueden finalizar sus pagos más rápido.
 
@@ -116,7 +116,7 @@ curl -X POST \
 
 ]]]
 
-Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json 
 {
@@ -257,7 +257,7 @@ curl -X POST \
 
 ]]]
 
-Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 
 ```json
@@ -301,7 +301,9 @@ Respuesta
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usa las tarjetas guardadas para un pago
 
-Para que un cliente pueda hacer un pago con sus datos guardados, es necesario volver a capturar el código de seguridad. Mercado Pago no puede almacenar esa información por cuestiones de seguridad. 
+Para que un cliente pueda hacer un pago con sus datos guardados, es necesario volver a capturar el código de seguridad. Mercado Pago no puede almacenar esa información por cuestiones de seguridad.
+
+<br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Muestra las tarjetas guardadas a tu cliente
 
@@ -347,7 +349,7 @@ Primero, obtén el listado de guardadas para que tu cliente pueda elegir con cu�
 ```csharp
 
 customer = Customer.FindById("customer.Id");
-List<Card> cards = customer.Cards; 
+List<Card> cards = customer.Cards;
 
 ```
 ```curl
@@ -391,6 +393,7 @@ Y puedes armar el formulario de la siguiente manera:
     <input type="text" id="cvv" data-checkout="securityCode" placeholder="123" />
 </li>
 ```
+<br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Captura el código de seguridad
 
@@ -411,6 +414,7 @@ addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
     }
 };
 ```
+<br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crea el pago
 
@@ -575,7 +579,7 @@ curl -X GET \
 
 ]]]
 
-Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
@@ -670,7 +674,7 @@ curl -X GET \
 
 ]]]
 
-Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 [{
@@ -689,17 +693,18 @@ Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes 
 
 Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/).
 
+---
 ### Próximos pasos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_RECOMMENDED_ES
 >
-> Manejo de respuestas de error
+> Integración avanzada
 >
-> Ayuda a tus clientes a completar sus pagos sin errores.
+> Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Manejo de respuestas de error](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses/)
+> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_
 >
 > Referencias de API
 >

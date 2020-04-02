@@ -37,7 +37,7 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON
 >
 > Prueba tu integración
 >
@@ -45,7 +45,7 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 >
 > [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON
 >
 > Referencias de API
 >

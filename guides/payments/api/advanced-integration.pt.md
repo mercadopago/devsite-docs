@@ -116,7 +116,7 @@ curl -X POST \
 
 ]]]
 
-Resposta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json 
 {
@@ -258,10 +258,10 @@ curl -X POST \
 
 ]]]
 
-Resposta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 
-```json 
+```json
 {
     "id": "1493990563105",
     "expiration_month": 12,
@@ -303,6 +303,8 @@ Resposta
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use cartões guardados para receber um pagamento
 
 Para que um cliente possa fazer um pagamento com seus dados guardados, é necessário capturar novamente o código de segurança. Mercado Pago não pode armazenar essa informação por questões de segurança.
+
+<br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Mostre os cartões guardados ao seu cliente
 
@@ -374,7 +376,7 @@ Resposta dos dados de um cartão guardado:
 
 E pode criar um formulário da seguinte maneira:
 
-```html 
+```html
 <li>
     <label>Payment Method:</label>
     <select id="cardId" name="cardId" data-checkout='cardId'>
@@ -392,19 +394,20 @@ E pode criar um formulário da seguinte maneira:
     <input type="text" id="cvv" data-checkout="securityCode" placeholder="123" />
 </li>
 ```
+<br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture o código de segurança
 
 O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
 
-```javascript 
+```javascript
 doSubmit = false;
 addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
     event.preventDefault();
     if(!doSubmit){
         var $form = document.querySelector('#pay');
 
-        Mercadopago.createToken($form, sdkResponseHandler); 
+        Mercadopago.createToken($form, sdkResponseHandler);
 
 // The function "sdkResponseHandler" is defined below
 
@@ -412,6 +415,7 @@ addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
     }
 };
 ```
+<br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crie o pagamento
 
@@ -420,7 +424,7 @@ Uma vez obtido o token, é possível criar o pagamento com o valor correspondent
 [[[
 ```php
 
-<?php  
+<?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
@@ -505,10 +509,10 @@ curl -X POST \
   transaction_amount: 100,
   token: "ff8080814c11e237014c1ff593b57b4d",
   installments: 1,
-  payer: { 
+  payer: {
       type: "customer",
     id: "123456789-jxOV430go9fx2e"
-  } 
+  }
 }'
 
 ```
@@ -578,7 +582,7 @@ curl -X GET \
 
 Respuesta
 
-```json 
+```json
 {
     "paging": {
         "limit": 10,
@@ -671,9 +675,9 @@ curl -X GET \
 
 ]]]
 
-Resposta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
-```json 
+```json
 [{
     "id": "1490022319978",
     "expiration_month": 12,
@@ -690,17 +694,18 @@ Os cancelamentos se realizam quando um pagamento de boleto não se concretizou a
 
 Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/).
 
+---
 ### Próximos passos
 
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON_RECOMMENDED_PT
 >
-> Manipulação de respostas de erro
+> Integração avançada
 >
-> Ajude seus clientes a completar seus pagamentos sem erros.
+> Otimize sua integração e melhore a gestão das suas vendas.
 >
-> [Manipulação de respostas de erro](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/)
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON_
 >
 > Referências de API
 >

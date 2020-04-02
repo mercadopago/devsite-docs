@@ -8,14 +8,14 @@ Con la API de pagos de Mercado Pago puedes sumar **otras alternativas de medios 
 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
-Tipo de medio de pago | Medio de pago
------------- | -------------
-`ticket` | Rapipago
-`ticket` | Pago Fácil
-`ticket` | Provincia NET Pagos
-`ticket` | Carga Virtual
-`ticket` | Cobro Express
-`atm` | Red Link
+| Tipo de medio de pago | Medio de pago |
+| ----------------------------- | --------------------------------- |
+| `ticket` | Rapipago |
+| `ticket` | Pago Fácil |
+| `ticket` | Provincia NET Pagos |
+| `ticket` | Carga Virtual |
+| `ticket` | Cobro Express |
+| `atm` | Red Link |
 
 ## Obtén los medios de pago disponibles
 
@@ -66,6 +66,7 @@ curl -X GET \
 ```
 ]]]
 
+<br>
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
@@ -206,6 +207,7 @@ curl -X POST \
 ```
 ]]]
 
+<br>
 La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. El ID del cupón de pago es igual al ID de la transacción de Mercado Pago.
 
 ```json
@@ -258,13 +260,13 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
-Tipo de medio de pago | Medio de pago
------------- | -------------
-`ticket` | OXXO
-`atm` | Citibanamex
-`atm` | Santander
-`atm` | BBVA Bancomer
-`prepaid_card` | Tarjeta Mercado Pago
+| Tipo de medio de pago | Medio de pago |
+| ----------------------------- | --------------------------------- |
+| `ticket` | OXXO |
+| `atm` | Citibanamex |
+| `atm` | Santander |
+| `atm` | BBVA Bancomer |
+| `prepaid_card` | Tarjeta Mercado Pago |
 
 ## Obtén los medios de pago disponibles
 
@@ -315,6 +317,7 @@ curl -X GET \
 ```
 ]]]
 
+<br>
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
@@ -539,6 +542,7 @@ curl -X POST \
 ```
 ]]]
 
+<br>
 La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. El ID del cupón de pago es igual al ID de la transacción de Mercado Pago.
 
 ```json
@@ -611,10 +615,10 @@ Citibanamex| Citibanamex
 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
-Tipo de medio de pago | Medio de pago
------------- | -------------
-`ticket` | Abitab
-`ticket` | Redpagos
+| Tipo de medio de pago | Medio de pago |
+| ----------------------------- | --------------------------------- |
+| `ticket` | Abitab |
+| `ticket` | Redpagos |
 
 ## Obtén los medios de pago disponibles
 
@@ -665,6 +669,7 @@ curl -X GET \
 ```
 ]]]
 
+<br>
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
@@ -819,6 +824,7 @@ curl -X POST \
 ```
 ]]]
 
+<br>
 La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. El ID del cupón de pago es igual al ID de la transacción de Mercado Pago.
 
 ```json
@@ -874,12 +880,12 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
-Tipo de medio de pago | Medio de pago
------------- | -------------
-`ticket` | Efecty
-`ticket` | Davivienda
-`ticket` | Baloto
-`bank_transfer` | PSE
+| Tipo de medio de pago | Medio de pago |
+| ----------------------------- | --------------------------------- |
+| `ticket` | Efecty |
+| `ticket` | Davivienda |
+| `ticket` | Baloto |
+| `bank_transfer` | PSE |
 
 
 ## Obtén los medios de pago disponibles
@@ -931,6 +937,7 @@ curl -X GET \
 ```
 ]]]
 
+<br>
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
@@ -1120,6 +1127,7 @@ curl -X POST \
 ```
 ]]]
 
+<br>
 La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. El ID del cupón de pago es igual al ID de la transacción de Mercado Pago.
 
 ```json
@@ -1175,10 +1183,10 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
-Tipo de medio de pago | Medio de pago
------------- | -------------
-`ticket` | Sucursales Servipag
-`bank_transfer` | Redcompra Webpay
+| Tipo de medio de pago | Medio de pago |
+| ----------------------------- | --------------------------------- |
+| `ticket` | Sucursales Servipag |
+| `bank_transfer` | Redcompra Webpay |
 
 
 ## Obtén los medios de pago disponibles
@@ -1230,6 +1238,7 @@ curl -X GET \
 ```
 ]]]
 
+<br>
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
@@ -1386,6 +1395,7 @@ curl -X POST \
 ```
 ]]]
 
+<br>
 La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. El ID del cupón de pago es igual al ID de la transacción de Mercado Pago.
 
 ```json
@@ -1447,9 +1457,9 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
-Tipo de medio de pago | Medio de pago
------------- | -------------
-`atm` | PagoEfectivo
+| Tipo de medio de pago | Medio de pago |
+| ----------------------------- | --------------------------------- |
+| `atm` | PagoEfectivo |
 
 
 ## Obtén los medios de pago disponibles
@@ -1501,6 +1511,7 @@ curl -X GET \
 ```
 ]]]
 
+<br>
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
@@ -1632,6 +1643,7 @@ curl -X POST \
 ```
 ]]]
 
+<br>
 La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. El ID del cupón de pago es igual al ID de la transacción de Mercado Pago.
 
 ```json
@@ -1692,9 +1704,9 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_RECOMMENDED_ES
 >
-> Pruebas
+> Prueba tu integración
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
