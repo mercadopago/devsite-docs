@@ -260,7 +260,7 @@ curl -X PUT \
 ```
 ]]]
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json
 {
@@ -280,7 +280,7 @@ curl -X PUT \
 >
 > Nota
 >
-> Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserca e gerar uma nova.
+> Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
 
 ## Cancelar uma reserva
 
@@ -346,11 +346,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Integração avançada
+> Requisitos para ir a produção
 >
-> Otimize sua integração e melhore a gestão Optimiza tu integración y mejora la gestión de tus ventas.
+> Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
+> [Requisitos para ir a produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

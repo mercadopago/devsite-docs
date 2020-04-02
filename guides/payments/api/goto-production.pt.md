@@ -32,7 +32,7 @@ Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pag
 
 ## Disponibilize seus termos e condições
 
-Disponibilize uma política de termos e condições e aclare que é responsável por todos os dados que sejam ingressados no seu site.
+Disponibilize uma política de termos e condições e deixe claro que é responsável por todos os dados que sejam inserido no seu site.
 
 ---
 ### Próximos passos

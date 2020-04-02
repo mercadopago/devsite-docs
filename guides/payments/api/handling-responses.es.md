@@ -74,13 +74,13 @@ default | Otro código de error | No pudimos procesar tu pago.
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_ES
 >
-> Otras funcionalidades
+> Integración avanzada
 >
-> Adapta la integración a las necesidades específicas de tu negocio.
+> Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-features/)
+> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

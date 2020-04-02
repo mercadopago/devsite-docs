@@ -17,6 +17,8 @@ Para poder encontrá-las, veja a [seção de Credenciais](https://www.mercadopag
 ## Sempre utilize nossas bibliotecas
 É importante que sempre utilize nossas bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus cliente, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
 
+<br>
+
 > CLIENT_SIDE
 >
 > h3

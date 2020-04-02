@@ -578,7 +578,7 @@ curl -X GET \
 
 ]]]
 
-Resposta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json
 {
@@ -697,11 +697,11 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Integração avançada
+> Outras funcionalidades
 >
-> Otimize sua integração e melhore a gestão das suas vendas.
+> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
+> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-features/)
 
 > RIGHT_BUTTON
 >

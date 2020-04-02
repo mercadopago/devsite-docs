@@ -68,13 +68,13 @@ default | Outro código de erro | Não pudemos processar seu pagamento.
 ---
 ### Próximos passos
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_PT
 >
-> Outras funcionalidades
+> Integração avançada
 >
-> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
+> Otimize sua integração e melhore a gestão das suas vendas.
 >
-> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-features/)
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

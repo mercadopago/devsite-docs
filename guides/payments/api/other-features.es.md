@@ -346,11 +346,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Integración avanzada
+> Requisitos para ir a producción
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Conoce los requisitos necesarios para comenzar a recibir pago.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
+> [Requisitis para ir a producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

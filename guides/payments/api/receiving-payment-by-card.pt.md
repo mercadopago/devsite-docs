@@ -6,7 +6,7 @@ A integração por API do Mercado Pago para pagamentos com cartões permite que 
 
 ![API-integration-flowchart](/images/api/api_integration_flowchart_es.png)
 
-Ao usar nossa API de pagamentos do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envío de confirmação de pagamento.
+Ao usar nossa API de pagamentos do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
 
 1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
 2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o ítem, e possa confirmar e efetuar o pagamento.
@@ -423,12 +423,6 @@ curl -X POST \
 
 <br>
 
-> NOTE
-> 
-> Nota
-> 
-> Precisa de outras alternativas de pagamento? Conheça e integre [outros meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-payment-ways/).
-
 ## Manipulação de respostas de erro
 
 Os possíveis estados de um pagamento são:
@@ -463,7 +457,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Revise que esteja tudo bem com sua integração com os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
