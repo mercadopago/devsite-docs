@@ -21,7 +21,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 >
 > h2
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture os dados de cartão.
+> Capture os dados de cartão
 
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
@@ -222,16 +222,17 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 <br>
 
 > NOTE
-> 
+>
 > Baixe um exemplo do formulário
-> 
+>
 > Se nunca desenvolveu um formulário e têm dúvidas, te deixamos um [exemplo completo do formulário de pagamento no GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/blob/master/checkout.html) para que possa baixar.
+
 <br>
 
 > SERVER_SIDE
-> 
+>
 > h2
-> 
+>
 > Envie o pagamento ao Mercado Pago
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos.
