@@ -9,7 +9,7 @@ Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verific
 Tipos de usuarios | Descripción
 ------------ | -------------
 Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro.** |
-Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra.**<br/>. |
+Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra**<br/>. |
 
 <br>
 

@@ -9,7 +9,7 @@ Utilize cartões e usuários de teste para verificar que seus pagamentos sejam c
 Tipos de usuários | Descrição
 ------------ | -------------
 Vendedor | É a conta de teste utilizada para **configurar a aplicação e credenciais para a cobrança.** |
-Comprador | É a conta de teste utilizada para **testar o processo de compra.**<br/>. |
+Comprador | É a conta de teste utilizada para **testar o processo de compra**<br/>. |
 
 <br>
 
