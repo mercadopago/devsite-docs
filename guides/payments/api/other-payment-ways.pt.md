@@ -139,9 +139,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -178,7 +178,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -192,7 +192,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -214,6 +214,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -474,9 +475,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -513,7 +514,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -527,7 +528,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -549,6 +550,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -757,9 +759,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -795,7 +797,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -809,7 +811,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -831,6 +833,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -1060,9 +1063,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1098,7 +1101,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1112,7 +1115,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -1134,6 +1137,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -1328,9 +1332,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1366,7 +1370,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1380,7 +1384,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -1402,6 +1406,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -1577,9 +1582,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1615,7 +1620,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1629,7 +1634,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -1651,6 +1656,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 [
   {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -1865,9 +1871,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1934,7 +1940,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1963,7 +1969,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -2002,6 +2008,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 [
 {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,

@@ -139,9 +139,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -178,7 +178,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -192,7 +192,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -475,9 +475,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -514,7 +514,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -528,7 +528,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -759,9 +759,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -797,7 +797,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -811,7 +811,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -1063,9 +1063,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1101,7 +1101,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1115,7 +1115,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -1332,9 +1332,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1370,7 +1370,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1384,7 +1384,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -1582,9 +1582,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1620,7 +1620,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1634,7 +1634,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \
@@ -1871,9 +1871,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+  
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 ```
@@ -1940,7 +1940,7 @@ payment.save()
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
@@ -1969,7 +1969,7 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 ```
 ```curl
 curl -X POST \

@@ -264,7 +264,7 @@ Lembre-se também que para interagir com nossas APIs recomendamos utilizar o [SD
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-    //...
+    
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
     $payment->token = "ff8080814c11e237014c1ff593b57b4d";
@@ -276,10 +276,10 @@ Lembre-se também que para interagir com nossas APIs recomendamos utilizar o [SD
     );
 
 $payment->save();
-    //...
+    
 
 echo $payment->status;
-    //...
+    
 ?>
 ```
 ```node
@@ -314,7 +314,7 @@ Encontre o estado do pagamento no campo status
 ===
 
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
-//...
+
 Payment payment = new Payment();
 payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
        .setToken("ff8080814c11e237014c1ff593b57b4d")
@@ -325,10 +325,10 @@ payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
          .setEmail("test@test.com"));
 
 payment.save();
-//...
+
 
 System.out.println(payment.getStatus());
-//...
+
 ```
 ```ruby
 ===
@@ -358,9 +358,9 @@ Encontre o estado do pagamento no campo status
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-// ...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
-//...
+
 Payment payment = new Payment()
 {
     TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
@@ -374,10 +374,10 @@ Payment payment = new Payment()
 };
 
 payment.Save();
-//...
+
 
 console.log(payment.Status);
-//...
+
 ```
 ```curl
 ===
