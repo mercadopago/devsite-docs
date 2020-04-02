@@ -694,13 +694,13 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON
 >
-> Integración avanzada
+> Otras funcionalidades
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Adapta la integración a las necesidades específicas de tu negocio.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
+> [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-features/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
