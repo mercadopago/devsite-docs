@@ -24,9 +24,13 @@ After creating the application, you only need to take the second and third steps
 
 ## Credentials
 
-Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> are the **keys we provide so you can configure your integrations.**.
+Your credentials **are the keys we provide so you can configure your integrations.**
 
-The **private keys** (also known as `access_token`) are used for all the requests to the APIs, such as processing payments, refunds, etc. The private keys must be kept **confidentially** in your backend servers and should never be published.
+The public key , or **Public key**, is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
+
+And the private key, or **Access token**, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
+
+The <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> that should be used for the association of sellers to your Marketplace (Step 2) are the Client ID and Client Secret.
 
 > Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/).
 
