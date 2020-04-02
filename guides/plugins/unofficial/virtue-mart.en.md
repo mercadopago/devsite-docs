@@ -173,10 +173,6 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   Find your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).  
 
-> NOTE
->
-> Nota
->
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
   7. IPN settings.
