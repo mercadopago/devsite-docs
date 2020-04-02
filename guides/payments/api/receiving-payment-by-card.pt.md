@@ -1,6 +1,6 @@
 # Integre a API para pagamentos com cartão
 
-A integração por API do Mercado Pago para pagamentos com cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenham que sair ao momento de realizar a compra.
+A integração por API do Mercado Pago para pagamentos com cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenham que sair no momento de realizar a compra.
 
 ## Como funciona?
 
@@ -217,13 +217,13 @@ function sdkResponseHandler(status, response) {
 };
 ```
 
-O método `createToken` devolverá um `card_token` com a representação segura do cartão. O segundo campo do método `createToken` é a função de `callback` que processará a resposta (nesse caso usamos a função `sdkResponseHandler`). Então tomaremos o ID da resposta e guardaremos em um atributo oculto que chamaremos `token`, para em seguida envir o formulário aos seus servidores.
+O método `createToken` devolverá um `card_token` com a representação segura do cartão. O segundo campo do método `createToken` é a função de `callback` que processará a resposta (nesse caso usamos a função `sdkResponseHandler`). Então tomaremos o ID da resposta e guardaremos em um atributo oculto que chamaremos `token`, para em seguida enviar o formulário aos seus servidores.
 
 > WARNING
 >
 > Importante
 >
-> Tenha em conta que o token tem uma validez de 7 días e só pode ser usado uma única vez.
+> Tenha em conta que o token tem uma validade de 7 dias e só pode ser usado uma única vez.
 
 <br>
 
@@ -445,7 +445,7 @@ Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadop
 
 ## Receba notificações de pagamento
 
-Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou se se encontram pendentes.
+Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
 
 [Configure notificações webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/) ou [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/).
 

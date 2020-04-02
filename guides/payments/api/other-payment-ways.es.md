@@ -214,6 +214,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -549,6 +550,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -831,6 +833,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -1134,6 +1137,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -1402,6 +1406,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
 [
  {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -1651,6 +1656,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
 [
   {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -2002,6 +2008,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
 [
 {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
