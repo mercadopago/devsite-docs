@@ -423,12 +423,6 @@ curl -X POST \
 
 <br>
 
-> NOTE
-> 
-> Nota
-> 
-> Precisa de outras alternativas de pagamento? Conheça e integre [outros meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-payment-ways/).
-
 ## Manipulação de respostas de erro
 
 Os possíveis estados de um pagamento são:

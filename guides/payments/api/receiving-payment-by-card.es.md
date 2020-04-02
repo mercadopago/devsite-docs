@@ -425,13 +425,7 @@ curl -X POST \
 
 > Conoce todos los campos disponibles para realizar un pago completo en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
 
-#
-
-> NOTE
->
-> Nota
->
-> ¿Necesitas otras alternativas de pago? Conoce e integra [otros medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-payment-ways/).
+<br>
 
 ## Manejo de respuestas de error
 
