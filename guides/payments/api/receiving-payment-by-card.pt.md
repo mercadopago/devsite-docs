@@ -45,6 +45,14 @@ Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido
 <form action="/processar_pagamento" method="post" id="pay" name="pay" >
     <fieldset>
         <p>
+            <label for="description">Descrição</label>                        
+            <input type="text" name="description" id="description" value="Ítem selecionado"/>
+        </p>                    
+        <p>
+            <label for="transaction_amount">Valor a pagar</label>                        
+            <input name="transaction_amount" id="transaction_amount" value="100"/>
+        </p>        
+        <p>
             <label for="cardNumber">Número do cartão</label>
             <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
@@ -80,8 +88,6 @@ Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" value="test@test.com"/>
         </p>
-        <input type="hidden" name="transaction_amount" id="transaction_amount" value=100/>
-        <input type="hidden" name="description"/>
         <input type="hidden" name="payment_method_id" id="payment_method_id"/>
         <input type="submit" value="Pagar"/>
     </fieldset>
