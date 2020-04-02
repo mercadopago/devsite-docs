@@ -705,7 +705,7 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
 
-> RIGHT_BUTTON_
+> RIGHT_BUTTON
 >
 > Referências de API
 >

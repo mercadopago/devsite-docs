@@ -98,7 +98,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 >
 > [Manipulação de respostas de erro](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/)
 
-> RIGHT_BUTTON_
+> RIGHT_BUTTON
 >
 > Referências de API
 >

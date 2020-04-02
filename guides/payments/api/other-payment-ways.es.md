@@ -9,7 +9,7 @@ Con la API de pagos de Mercado Pago puedes sumar **otras alternativas de medios 
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ----------------------------- | --------------------------------- |
+| ------------------- | ---------------------------- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
 | `ticket` | Provincia NET Pagos |
@@ -261,7 +261,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ----------------------------- | --------------------------------- |
+| ------------------- | ---------------------------- |
 | `ticket` | OXXO |
 | `atm` | Citibanamex |
 | `atm` | Santander |
@@ -593,19 +593,19 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 Al finalizar, es importante que compartas con tus clientes la información de los distintos lugares en los que puede pagar.
 
-Medio de pago | Tiendas disponibles
----------------- | ------------------
-OXXO | OXXO
-BBVA Bancomer | 7-Eleven
-BBVA Bancomer | Extra
-BBVA Bancomer | K
-BBVA Bancomer | Círculo K
-BBVA Bancomer | Farmacias del Ahorro
-BBVA Bancomer | Casa Ley
-BBVA Bancomer | BBVA Bancomer
-Citibanamex| Chedraui
-Citibanamex| Telecomm
-Citibanamex| Citibanamex
+| Medio de pago | Tiendas disponibles
+| ------------------- | ---------------------------- |
+| OXXO | OXXO
+| BBVA Bancomer | 7-Eleven |
+| BBVA Bancomer | Extra |
+| BBVA Bancomer | K |
+| BBVA Bancomer | Círculo K |
+| BBVA Bancomer | Farmacias del Ahorro |
+| BBVA Bancomer | Casa Ley |
+| BBVA Bancomer | BBVA Bancomer |
+| Citibanamex| Chedraui |
+| Citibanamex| Telecomm |
+| Citibanamex| Citibanamex |
 
 ------------
 
@@ -616,7 +616,7 @@ Citibanamex| Citibanamex
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ----------------------------- | --------------------------------- |
+| ---------------- | ------------------------ |
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
@@ -881,7 +881,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ----------------------------- | --------------------------------- |
+| ---------------- | ------------------------ |
 | `ticket` | Efecty |
 | `ticket` | Davivienda |
 | `ticket` | Baloto |
@@ -1184,7 +1184,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ----------------------------- | --------------------------------- |
+| ---------------- | ------------------------ |
 | `ticket` | Sucursales Servipag |
 | `bank_transfer` | Redcompra Webpay |
 
@@ -1458,7 +1458,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| ----------------------------- | --------------------------------- |
+| ---------------- | ------------------------ |
 | `atm` | PagoEfectivo |
 
 

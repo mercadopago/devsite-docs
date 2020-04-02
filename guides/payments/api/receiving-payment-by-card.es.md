@@ -17,6 +17,8 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 
 > Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
 
+<br>
+
 > CLIENT_SIDE
 >
 > h2
@@ -215,6 +217,7 @@ El método `createToken` devolverá un `card_token` con la representación segur
 > Importante
 >
 > Ten en cuenta que el token tiene una validez de 7 días y solo se pueda usar una vez.
+
 <br>
 
 > NOTE
