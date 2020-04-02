@@ -1702,6 +1702,346 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 ------------
 
+----[mlb]----
+
+## Medios de pago
+
+Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
+
+| Tipo de medio de pago | Medio de pago |
+| --- | ---|
+| `ticket` | Boleto |
+| `ticket` | Pagamento em lotérica |
+
+## Obtén los medios de pago disponibles
+
+Puedes consultar los medios de pago disponibles siempre que lo necesites.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+payment_methods = mercadopago.get("/v1/payment_methods");
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+]]]
+
+<br>
+
+El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
+
+```json
+[
+    {
+        "id": "bolbradesco",
+        "name": "Boleto",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bolbradesco.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bolbradesco.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
+    },
+    {
+        "id": "pec",
+        "name": "Pagamento na lotérica sem boleto",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pec.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pec.gif",
+        "deferred_capture": "supported",
+        "settings": [],
+        "additional_info_needed": []
+    },
+    {
+        "...": "..."
+    }
+]
+```
+
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+
+## Recibir con boleto o pago en lotérica
+
+Para recibir pagos con boleto o pagos en lotérica solo tienes que enviar el detalle del monto y el método de pago y los datos de identificación y dirección de su comprador.
+
+[[[
+```php
+<?php  
+
+ require_once 'vendor/autoload.php';
+
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = 100;
+ $payment->description = "Título do produto";
+ $payment->payment_method_id = "bolbradesco";
+ $payment->payer = array(
+     "email" => "test@test.com",
+     "first_name" => "Test",
+     "last_name" => "User",
+     "identification" => array( 
+         "type" => "CPF",
+         "number" => "19119119100"
+      ),
+     "address"=>  array(
+         "zip_code" => "06233200",
+         "street_name" => "Av. das Nações Unidas",
+         "street_number" => "3003",
+         "neighborhood" => "Bonfim",
+         "city" => "Osasco",
+         "federal_unit" => "SP"
+      )
+   );
+
+ $payment->save();
+
+?>
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'bolbradesco',
+  payer: {
+    email: 'test@test.com',
+    first_name: 'Test',
+    last_name: 'User',
+    identification: { 
+        type: 'CPF',
+        number: '19119119100'
+    },
+    address:  {
+        zip_code: '06233200',
+        street_name: 'Av. das Nações Unidas',
+        street_number: '3003',
+        neighborhood: 'Bonfim',
+        city: 'Osasco',
+        federal_unit: 'SP'
+    }
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+```
+```java
+import com.mercadopago.*;
+
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100f)
+       .setDescription('Título do produto')
+       .setPaymentMethodId("bolbradesco")
+       .setPayer(new Payer()
+           .setEmail("test@test.com")
+           .setFirstName("Test")
+           .setLastName("User")
+           .setIdentification(new Identification()
+               .setType("CPF")
+               .setNumber("19119119100"))
+           .setAddress(new Address()
+               .setZipCode("06233200")
+               .setStreetName("Av. das Nações Unidas")
+               .setStreetNumber(3003)
+               .setNeighborhood("Bonfim")
+               .setCity("Osasco")
+               .setFederalUnit("SP")) 
+);
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_data = {
+  transaction_amount: 100,
+  description: "Título do produto",
+  payment_method_id: "bolbradesco",
+  payer: {
+    email: "test@test.com",
+    first_name: "Test",
+    last_name: "User",
+    identification: {
+        type: "CPF",
+        number: "191191191-00"
+    },
+    address: {
+        zip_code: "06233-200",
+        street_name: "Av. das Nações Unidas",
+        street_number: "3003",
+        neighborhood: "Bonfim",
+        city: "Osasco",
+        federal_unit: "SP"
+    }
+  }
+}
+
+payment.save()
+
+```
+```csharp
+
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+//...
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("105"),
+    Description = "Título do produto",
+    PaymentMethodId = "bolbradesco",
+    Payer = new Payer(){
+        Email = "test@test.com",
+        FirstName = "Test",
+        LastName = "User",
+        Identification = new Identification(){
+            Type = "CPF",
+            Number = "191191191-00"
+        },
+        Address = new Address(){
+            ZipCode = "06233-200",
+            StreetName = "Av. das Nações Unidas",
+            StreetNumber = "3003",
+            Neighborhood = "Bonfim",
+            City = "Osasco",
+            FederalUnit = "SP"
+
+        }
+    }
+};
+
+payment.Save();
+//...
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+      "transaction_amount": 100,
+      "description": "Título do produto",
+      "payment_method_id": "bolbradesco",
+      "payer": {
+        "email": "test@test.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "19119119100"
+        },
+        "address": {
+            "zip_code": "06233200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
+        }
+      }
+    }'
+```
+]]]
+
+<br>
+La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. El ID del cupón de pago es igual al ID de la transacción de Mercado Pago.
+
+```json
+[
+{
+    ...,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+    "transaction_details": {
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "http://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "installment_amount": 0,
+        "financial_institution": null,
+        "payment_method_reference_id": "1234567890"
+    }
+}
+]
+```
+
+En el campo `external_resource_url` vas a encontrar una dirección que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el enlace para que ingrese.
+
+> NOTE
+>
+> Nota
+>
+> El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
+
+## Cancelar un pago
+
+Es importante que puedas cancelar los pagos luego de su vencimiento para evitar problemas con el cobro. Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días hábiles según el tiempo de cada uno.
+
+Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
+
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/).
+
+## Tiempos de acreditación del pago
+
+Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
+
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) siempre que lo necesites.
+
+------------
+
 ---
 ### Próximos pasos
 
