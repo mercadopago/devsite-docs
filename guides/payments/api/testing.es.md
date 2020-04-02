@@ -95,7 +95,6 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 >
 > Ten en cuenta que nos es posible probar el flujo completo para medios de pago en efectivo.
 
-<br>
 
 ---
 ### Próximos pasos

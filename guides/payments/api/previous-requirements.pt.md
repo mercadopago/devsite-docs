@@ -31,6 +31,8 @@ MercadoPago.js te permite criar um token de pagamento para enviar os dados dos c
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
+<br>
+
 > SERVER_SIDE
 >
 > h3
