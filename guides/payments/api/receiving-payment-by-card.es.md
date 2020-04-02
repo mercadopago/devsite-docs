@@ -47,13 +47,21 @@ Puedes agregar todo lo que necesites, modificar el atributo `label` sugerido y s
 <form action="/procesar_pago.php" method="post" id="pay" name="pay" >
     <fieldset>
         <p>
+            <label for="description">Descripción</label>                        
+            <input type="text" name="description" id="description" value="Ítem seleccionado"/>
+        </p>                    
+        <p>
+            <label for="transaction_amount">Monto a pagar</label>                        
+            <input name="transaction_amount" id="transaction_amount" value="100"/>
+        </p>
+        <p>
             <label for="cardNumber">Número de la tarjeta</label>
             <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
         <p>
             <label for="cardholderName">Nombre y apellido</label>
             <input type="text" id="cardholderName" data-checkout="cardholderName" />
-        </p>
+        </p>                                    
         <p>
             <label for="cardExpirationMonth">Mes de vencimiento</label>
             <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
@@ -79,11 +87,9 @@ Puedes agregar todo lo que necesites, modificar el atributo `label` sugerido y s
             <input type="text" id="docNumber" data-checkout="docNumber"/>
         </p>
         <p>
-            <label for="email">E-mail</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" value="test@test.com"/>
-        </p>
-        <input type="hidden" name="transaction_amount" id="transaction_amount" value=100/>
-        <input type="hidden" name="description"/>
+        </p>  
         <input type="hidden" name="payment_method_id" id="payment_method_id"/>
         <input type="submit" value="Pagar"/>
     </fieldset>
