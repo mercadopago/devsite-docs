@@ -44,10 +44,6 @@ Ofereça aos seus usuários a melhor experiência de pagamento, tanto no Android
 3. Inicie o processo de pagamento a partir de um botão em sua aplicação.
 4. Receba as notificações de pagamento que lhe enviamos.
 
-> NOTE
->
-> Nota
->
 > Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 ## Adicione a dependência ao seu projeto
