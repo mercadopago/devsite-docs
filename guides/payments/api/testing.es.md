@@ -95,6 +95,11 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 >
 > Ten en cuenta que nos es posible probar el flujo completo para medios de pago en efectivo.
 
+## Comenzar a recibir pagos
+
+Para empezar a cobrar, debes cumplir los [requisitos para ir a producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) y completar el formulario <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Quiero ir a producción</a>.
+
+Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
 ---
 ### Próximos pasos
