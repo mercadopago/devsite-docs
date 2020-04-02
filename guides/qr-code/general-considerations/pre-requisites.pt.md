@@ -17,7 +17,7 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 
 | Termo                            | Descrição                                                  |
 | -----------------------------------| ------------------------------------------------------------ | 
-| Credenciais (Credentials)         | Suas credenciais são as senhas que lhe fornecemos para que você possa configurar suas integrações. Para poder achá-las, vá para suas [credenciais]([FAKER][CREDENTIALS][URL]) e selecione as **produtivas** na opção *Checkout personalizado*. |
+| Credenciais (Credentials)         | Suas credenciais são as senhas que lhe fornecemos para que você possa configurar suas integrações. Para poder achá-las, vá para suas [credenciais]([FAKER][CREDENTIALS][URL]) e selecione as produtivas na opção *Checkout personalizado*. |
 | `ACCESS_TOKEN` | É a senha privada do aplicativo para gerar pagamentos, dentro da secção [credenciais]([FAKER][CREDENTIALS][URL]). Deve utilizá-la para se identificar em suas integrações. Utiliza sempre as do **Modo Produção**.  |
 | `COLLECTOR_ID` | É o ID do usuário vendedor em Mercado Pago, são os últimos 9 dígitos do access_token, posterior hífen. Também conhecido como `USER_ID` |
 | `SPONSOR_ID` | É o ID do usuário fornecedor do sistema integrado com Mercado Pago, são os últimos 9 dígitos do `access_token`, posterior ao hífen. O `sponsor_ID` não pode ser igual que o `COLLECTOR_ID`. |

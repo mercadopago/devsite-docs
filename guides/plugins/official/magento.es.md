@@ -113,13 +113,13 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 
 ![Configurando tarjeta de crédito y otros medios de pago Mercado Pago Magento](/images/magento/magento-config-01.gif)
 
-2) Obtén tus credenciales **Public Key** y **Access Token** en la sección [Credenciales]([FAKER][CREDENTIALS][URL]).
+2) Obtén tus credenciales **Public Key** y **Access Token** en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ![Configurar las credenciales Mercado Pago Magento](/images/magento/magento-config-02.gif)
 
 > Existen dos tipos de credenciales:
 > * Modo Sandbox: Las credenciales de este modo se utilizan para realizar pruebas.
-> * Modo Produción: Las credenciales de este modo se utilizan para recibir los pagos en un entorno de producción. Para utilizar las credenciales del modo de producción debe completar el formulario de "Quiero ir a producción"
+> * Modo Produción: Las credenciales de este modo se utilizan para recibir los pagos en un entorno de producción. Para utilizar las credenciales del modo de producción debe completar el formulario de "Quiero ir a producción".<br>
 Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 3) Con las credenciales completadas, debe habilitar los métodos de pago. Haga un clic en el botón **Configure** y marque la opción **Enable** como **Yes**. Siga este proceso para **Checkout Custom - Credit Card** y para **Checkout Custom - Ticket** haga un clic en **Save Config** para guardar la configuración.
@@ -138,7 +138,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 ![Configurando Checkout Redirect, Iframe and LightBox Mercado Pago Magento](/images/magento/magento-config-01.gif)
 
-2) Obtén tus credenciales **Client id** y **Client secret** en la sección [Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
+2) Obtén tus credenciales **Client id** y **Client secret** en la [sección Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 
 ![Configurando credenciales - Checkout redirect Mercado Pago Magento](/images/magento/magento-config-04.gif)
 

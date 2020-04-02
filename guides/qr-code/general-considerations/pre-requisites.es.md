@@ -17,7 +17,7 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 | Término                            | Descripción                                                  |
 | -----------------------------------| ------------------------------------------------------------ | 
-| Credenciales (Credentials)         | Tus [credenciales]([FAKER][CREDENTIALS][URL]) son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus credenciales y selecciona las **productivas**. |
+| Credenciales (Credentials)         | Tus [credenciales]([FAKER][CREDENTIALS][URL]) son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus credenciales y selecciona las productivas. |
 | `ACCESS_TOKEN` | Es la clave privada de la aplicación para generar pagos, dentro de la sección [credenciales]([FAKER][CREDENTIALS][URL]). Debes usarla para identificarte en tus integraciones. Siempre usa las del Modo Producción. |
 | `COLLECTOR_ID` | ID de la cuenta de Mercado Pago. Se compone por los dígitos posteriores al guión medio del `access_token`. También lo puedes encontrar como _`USER_ID`_. |
 | `SPONSOR_ID` |  Es el `collector_ID` del usuario proveedor del sistema integrado con Mercado Pago. El `sponsor_ID` no puede ser igual al `collector_id`. |

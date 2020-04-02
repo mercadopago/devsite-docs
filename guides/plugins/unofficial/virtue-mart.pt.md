@@ -73,7 +73,7 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-Encontre sua **Client id** e **Client secret** na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+> Encontre sua **Client id** e **Client secret** na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Configurações do checkout básico. <br />
 
