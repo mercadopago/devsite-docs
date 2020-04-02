@@ -1,6 +1,6 @@
 # Integra la API de pagos para tarjetas
 
-La integración por API de pagos de Mercado Pago para tarjetas permite que puedas ofrecer una opción de pagos totalmente en tu sitio. Toda la experiencia sucede en tu tienda para que los clientes no tengan que salir al momento de realizar la compra.
+La integración por API de pagos de Mercado Pago para tarjetas permite que puedas ofrecer una opción de pagos completa dentro de tu sitio. Toda la experiencia sucede en tu tienda para que los clientes no tengan que salir al momento de realizar la compra.
 
 ## ¿Cómo funciona?
 
