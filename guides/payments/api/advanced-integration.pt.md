@@ -46,13 +46,9 @@ mercadopago.customers.create(customer_data).then(function (customer) {
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
-
-  }).catch(function (error) {
-   
+    console.log(card);
   });
 
-}).catch(function (error) {
- 
 });
 
 ```
@@ -188,11 +184,7 @@ mercadopago.searchCustomer({
 
   mercadopago.cards.create(card_data).then(function (card) {
     console.log(card);
-  }).catch(function (error) {
-   
   });
-}).catch(function (error) {
-  
 });
 
 
@@ -329,9 +321,7 @@ Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escol
   mercadopago.searchCustomer({
     qs: filters
   }).then(function (customer) {
-    
-  }).catch(function (error) {
-
+    console.log(customer);
   });
 
 ```
@@ -457,9 +447,7 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
+  console.log(data);
 });
 
 ```
@@ -546,9 +534,7 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
   mercadopago.searchCustomer({
     qs: filters
   }).then(function (customer) {
-    
-  }).catch(function (error) {
-    
+    console.log(customer);
   });
 
 ```
@@ -646,9 +632,7 @@ Consulte a lista de cartões de um cliente
   mercadopago.searchCustomer({
     qs: filters
   }).then(function (customer) {
-    
-  }).catch(function (error) {
-    
+    console.log(customer);
   });
 
 ```
