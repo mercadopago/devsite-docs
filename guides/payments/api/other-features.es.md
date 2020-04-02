@@ -1,12 +1,10 @@
-# Otras funcionalidades
+# Autorización y captura de pagos
 
 Suma funcionalidades específicas a tu integración según las necesidades de tu negocio.
 
-## Autorización y captura de pagos
-
 Ofrece la posibilidad de realizar una autorización antes de generar una captura de un pago. Esto te permite hacer una reserva de fondos en la tarjeta de tu comprador sin efectuar el pago.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realiza una reserva de fondos
+## Realiza una reserva de fondos
 
 Para hacer una autorización de reserva de fondos solo tienes que agregar el atributo `capture=false` de la siguiente manera:
 
@@ -134,11 +132,11 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 > * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captura un pago autorizado
+## Captura un pago autorizado
 
 Para finalizar el pago, es necesario capturar los fondos que reservaste a tu cliente. Puede realizarse por el monto total o uno parcial.
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capturar el monto total de una reserva
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspCapturar el monto total de una reserva
 
 Para hacer la captura por el monto total solo debes enviar el atributo `capture` como `true`.
 
@@ -200,7 +198,7 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 > 
 > Si no agregas un monto, se capturará el total reservado.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captura un pago por un monto menor al reservado
+## Captura un pago por un monto menor al reservado
 
 ----[mla]----
 > WARNING
@@ -259,7 +257,7 @@ curl -X PUT \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {
@@ -281,7 +279,7 @@ curl -X PUT \
 >
 > No es posible capturar un monto mayor al reservado, para eso es necesario cancelar la reserva y generar una nueva.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancelar una reserva
+## Cancelar una reserva
 
 Puedes cancelar la reserva y liberar el dinero de la tarjeta al actualizar el atributo `status` del pago al estado `cancelled`.
 
@@ -327,7 +325,7 @@ curl -X PUT \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
 ```json
 {

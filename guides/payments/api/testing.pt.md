@@ -87,6 +87,14 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 - EXPI: Recusado por problema com a data de vencimento.
 - FORM: Recusado por erro no formulário.
 
+> WARNING
+>
+> Importante
+>
+> Tenha em conta que não é possível testar o fluxo completo para pagamentos em boleto ou em lotérica.
+
+<br>
+
 ---
 ### Próximos passos
 
