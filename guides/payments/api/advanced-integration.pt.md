@@ -48,11 +48,11 @@ mercadopago.customers.create(customer_data).then(function (customer) {
   mercadopago.cards.create(card_data).then(function (card) {
 
   }).catch(function (error) {
-   // Do Stuff...
+   
   });
 
 }).catch(function (error) {
- // Do Stuff...
+ 
 });
 
 ```
@@ -189,10 +189,10 @@ mercadopago.searchCustomer({
   mercadopago.cards.create(card_data).then(function (card) {
     console.log(card);
   }).catch(function (error) {
-   // Do Stuff...
+   
   });
 }).catch(function (error) {
-  // Do Stuff...
+  
 });
 
 
@@ -329,9 +329,9 @@ Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escol
   mercadopago.searchCustomer({
     qs: filters
   }).then(function (customer) {
-    // customer.cards ...
+    
   }).catch(function (error) {
-    // Do Stuff...
+
   });
 
 ```
@@ -409,8 +409,6 @@ addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
 
         Mercadopago.createToken($form, sdkResponseHandler);
 
-// The function "sdkResponseHandler" is defined below
-
         return false;
     }
 };
@@ -459,9 +457,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+
 }).catch(function (error) {
-  // Do Stuff...
+
 });
 
 ```
@@ -548,9 +546,9 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
   mercadopago.searchCustomer({
     qs: filters
   }).then(function (customer) {
-    // customer.cards ...
+    
   }).catch(function (error) {
-    // Do Stuff...
+    
   });
 
 ```
@@ -648,9 +646,9 @@ Consulte a lista de cartões de um cliente
   mercadopago.searchCustomer({
     qs: filters
   }).then(function (customer) {
-    // customer.cards ...
+    
   }).catch(function (error) {
-    // Do Stuff...
+    
   });
 
 ```

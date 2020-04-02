@@ -230,7 +230,7 @@ El método `createToken` devolverá un `card_token` con la representación segur
 >
 > Descarga un ejemplo del formulario
 >
-> Si nunca desarrollaste un formulario y tienes dudas, te dejamos un [ejemplo completo del formulario de pago en GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/blob/master/checkout.html) para que puedas descargar.
+> Si nunca desarrollaste un formulario y tienes dudas, te dejamos un [ejemplo completo del formulario de pago en GitHub](hhttps://github.com/MercadoPagoDevelopers/api-frontend-sample/) para que puedas descargar.
 
 
 <br>
