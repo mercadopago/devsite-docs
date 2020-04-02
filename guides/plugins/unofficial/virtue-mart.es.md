@@ -174,10 +174,6 @@ Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]).
 
 Puedes obtener tu **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
-> NOTE
->
-> Nota
->
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
 
 7. Configuración IPN. <br/>
