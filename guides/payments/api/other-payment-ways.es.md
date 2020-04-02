@@ -104,7 +104,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 
 ## Recibir pagos con un medio de pago en efectivo
 
-Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente y el detalle del monto y el método de pago.
+Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente, el detalle del monto y el método de pago.
 
 [[[
 ```php
@@ -440,7 +440,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 
 ## Recibir pagos con un medio de pago en efectivo
 
-Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente y el detalle del monto y el método de pago.
+Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente, el detalle del monto y el método de pago.
 
 [[[
 ```php
@@ -725,7 +725,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 
 ## Recibir pagos con un medio de pago en efectivo
 
-Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente y el detalle del monto y el método de pago.
+Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente, el detalle del monto y el método de pago.
 
 [[[
 ```php
@@ -1029,7 +1029,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 
 ## Recibir pagos con un medio de pago en efectivo
 
-Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente y el detalle del monto y el método de pago.
+Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente, el detalle del monto y el método de pago.
 
 [[[
 ```php
@@ -1298,7 +1298,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 
 ## Recibir pagos con un medio de pago en efectivo
 
-Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente y el detalle del monto y el método de pago.
+Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente, el detalle del monto y el método de pago.
 
 [[[
 ```php
@@ -1548,7 +1548,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 
 ## Recibir pagos con un medio de pago en efectivo
 
-Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente y el detalle del monto y el método de pago.
+Para recibir pagos en efectivo solo tienes que enviar el e-mail de tu cliente, el detalle del monto y el método de pago.
 
 [[[
 ```php
@@ -1757,7 +1757,7 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
 ```
 ```curl
@@ -1806,11 +1806,11 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 
 ## Recibir con boleto o pago en lotérica
 
-Para recibir pagos con boleto o pagos en lotérica solo tienes que enviar el detalle del monto y el método de pago y los datos de identificación y dirección de su comprador.
+Para recibir pagos con boleto o pagos en lotérica solo tienes que enviar el detalle del monto, el método de pago, los datos de identificación y dirección de su comprador.
 
 [[[
 ```php
-<?php  
+<?php
 
  require_once 'vendor/autoload.php';
 
