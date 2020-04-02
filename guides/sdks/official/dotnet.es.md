@@ -45,10 +45,6 @@ MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
 MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 
-> NOTE
->
-> Nota
->
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
 
 3) Utiliza los recursos
