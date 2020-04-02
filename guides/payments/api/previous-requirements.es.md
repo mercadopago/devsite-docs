@@ -9,9 +9,9 @@ Las credenciales son las **claves que te proporcionamos para que puedas configur
 
 * Y la clave privada, o _Access token_, te va a permitir llamar al resto de las APIs desde tus servidores. Por ejemplo, para procesar un pago, realizar un reembolso o almacenar tarjetas.
 
-Para poder encontrarlas, ve la [sección de Credenciales](https://www.mercadopago.com/mla/account/credentials).
+Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
-> ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
 
 ## Utiliza nuestras librerías siempre
 Es importante que siempre utilices nuestras librerías oficiales para tu integración. Esto permite cuidar los datos sensibles de tus clientes, cumplir con los estándares de seguridad requeridos y estar siempre actualizado.
@@ -38,7 +38,7 @@ MercadoPago.js te permite crear un token de pago para enviar los datos de las ta
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instala la SDK de Mercado Pago
 
-Instala un [SDKs oficial](https://www.mercadopago.com.ar/developers/es/plugins_sdks#bookmark_sdk_title) para simplificar tu interacción con nuestras APIs.
+Instala un [SDKs oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/plugins_sdks#bookmark_sdk_title) para simplificar tu interacción con nuestras APIs.
 
 [[[
 ```php
@@ -87,13 +87,13 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ## Conoce nuestras Referencias de API
 
-Si no puedes utilizar nuestros SDK oficiales, tienes disponible toda la información sobre consultas y respuestas de datos para interactuar directamente con nuestras APIs en [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Si no puedes utilizar nuestros SDK oficiales, tienes disponible toda la información sobre consultas y respuestas de datos para interactuar directamente con nuestras APIs en [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post/).
 
 ## Cumple los requisitos para ir a producción
 
-Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para ir a producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
+Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
 
-Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tienes que completar el formulario para ir producción desde la [sección de Credenciales](https://www.mercadopago.com/mla/account/credentials).
+Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tienes que completar el formulario para ir producción desde la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ---
 ### Próximos pasos
@@ -104,7 +104,7 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 >
 > Construye y configura tu propia experiencia de pagos.
 >
-> [Integrar API de Mercado Pago con tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card/)
+> [Integrar API de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -112,4 +112,4 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)

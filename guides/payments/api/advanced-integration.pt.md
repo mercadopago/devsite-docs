@@ -674,7 +674,7 @@ curl -X GET \
 
 Os cancelamentos se realizam quando um pagamento de boleto não se concretizou antes da data de vencimento e o vendedor decide cancelá-lo. E as devoluções ocorrem quando o pagamento se realizou mas o vendedor decide anulá-lo total ou parcialmente.
 
-Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
 
 ---
 ### Próximos passos
@@ -685,7 +685,7 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
 >
-> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-features/)
+> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-features/)
 
 > RIGHT_BUTTON
 >
@@ -693,4 +693,4 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > Encontre toda informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)

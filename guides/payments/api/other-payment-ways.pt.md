@@ -100,7 +100,7 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Receba com meios de pagamento em dinheiro
 
@@ -245,13 +245,13 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
 Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
 
-Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.com.ar/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
 ------------
 
@@ -436,7 +436,7 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Receba com meios de pagamento em dinheiro
 
@@ -560,7 +560,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlm/payments/sandbox/ticket/helper?payment_id=24304328&payment_method_reference_id=24304329&caller_id=514522042&hash=00658b9b-8bce-4f6d-a4f6-35f68731eeb3",
+        "external_resource_url": "https://www.mercadopago.com/mlm/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -583,13 +583,13 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
 Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
 
-Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.com.mx/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
 ## Comunique onde seus clientes podem pagar
 
@@ -721,7 +721,7 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Receba com meios de pagamento em dinheiro
 
@@ -843,7 +843,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlu/payments/sandbox/ticket/helper?payment_id=24308187&payment_method_reference_id=24308188&caller_id=528372970&hash=f24ad377-9287-4fc5-a8f4-13786965b7b3",
+        "external_resource_url": "https://www.mercadopago.com/mlu/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -867,13 +867,13 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.com.uy/developers/es/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
 Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
 
-Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.com.uy/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
 ------------
 
@@ -1025,7 +1025,7 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Receba com meios de pagamento em dinheiro
 
@@ -1147,7 +1147,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
         "net_received_amount": 0,
         "total_paid_amount": 5000,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mco/payments/sandbox/ticket/helper?payment_id=24308387&payment_method_reference_id=24308386&caller_id=537481120&hash=e9266f07-6ed0-40a1-b5f3-d905d2af3285",
+        "external_resource_url": "https://www.mercadopago.com/mco/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -1171,13 +1171,13 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.com.co/developers/es/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
 Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
 
-Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.com.co/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
 ------------
 
@@ -1294,7 +1294,7 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Receba com meios de pagamento em dinheiro
 
@@ -1416,7 +1416,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlc/payments/sandbox/ticket/helper?payment_id=24308615&payment_method_reference_id=24308616&caller_id=537486028&hash=ca6419f2-6f4f-4c67-a8ef-43124d195807",
+        "external_resource_url": "https://www.mercadopago.com/mlc/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -1544,7 +1544,7 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Receba com meios de pagamento em dinheiro
 
@@ -1698,13 +1698,13 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.com.pe/developers/es/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
 Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
 
-Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.com.pe/ayuda/Medios-de-pago-para-tus-compradores_2433) sempre que necessite.
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-para-tus-compradores_2433) sempre que necessite.
 
 ------------
 
@@ -1802,7 +1802,7 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Receba com boleto ou pagamento em lotérica
 
@@ -2039,7 +2039,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
 
 ## Prazo de aprovação de pagamento
 
@@ -2058,7 +2058,7 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 >
 > Revise que esteja tudo bem com sua integração com usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/test-integration/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/test-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -2066,5 +2066,5 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 >
 > Otimize sua integração e melhore a gestão das suas vendas.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/advanced-integration)
 

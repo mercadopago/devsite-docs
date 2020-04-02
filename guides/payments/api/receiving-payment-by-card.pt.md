@@ -11,9 +11,9 @@ Ao usar nossa API de pagamentos do Mercado Pago, é importante ter em conta duas
 1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
 2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o ítem, e possa confirmar e efetuar o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago.com.br/developers/pt/plugins_sdks) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/plugins_sdks) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
-> Obtenha mais informações nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/).
+> Obtenha mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 <br>
 
@@ -105,7 +105,7 @@ Configure sua [chave pública](https://www.mercadopago.com/mlb/account/credentia
 window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago.com.br/registration-mp). 
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp). 
 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
@@ -122,7 +122,7 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de tipos de documentos](https://www.mercadopago.com.br/developers/pt/guides/localization/identification-types/).
+> Encontre mais detalhes na [seção de tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/identification-types/).
 
 ------------
 <br>
@@ -252,7 +252,7 @@ Já estando no seu backend com toda a informação coletada, é o momento de env
 
 Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](https://www.mercadopago.com/mlb/account/credentials).
 
-Lembre-se também que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/api/previous-requirements/#bookmark_instale_o_sdk_do_mercado_pago).
+Lembre-se também que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/#bookmark_instale_o_sdk_do_mercado_pago).
 
 [[[
 ```php
@@ -421,7 +421,7 @@ curl -X POST \
 }
 ```
 
-> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments/post/).
+> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post/).
 
 <br>
 
@@ -437,19 +437,19 @@ Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que pos
 
 Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corrigir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
 
-Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
+Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
 
 > NOTE
 > 
 > Nota
 > 
-> Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/payment-rejections/).
+> Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/payment-rejections/).
 
 ## Receba notificações de pagamento
 
 Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
 
-[Configure notificações webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/) ou [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/).
+[Configure notificações webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/) ou [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/).
 
 ### Próximos passos
 
@@ -459,7 +459,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Revise que esteja tudo bem com sua integração com os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/testing/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -467,4 +467,4 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Conheça todas as opções de pagamentos disponíveis e como oferê-las.
 >
-> [Integrar outros meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-payment-ways/)
+> [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-payment-ways/)

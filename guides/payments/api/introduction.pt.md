@@ -27,7 +27,7 @@ Use nossos SDKs oficiais ou interaja diretamente com nossas APIs.
 >
 > Conheça todos os requisitos necessários para começar a integrar.
 >
-> [Requisitos previos](https://www.mercadopago.com.br/developers/pt/guides/payments/api/previous-requirements/)
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -35,4 +35,4 @@ Use nossos SDKs oficiais ou interaja diretamente com nossas APIs.
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referencias de API](https://www.mercadopago.com.br/developers/pt/reference/)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)

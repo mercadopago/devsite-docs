@@ -350,7 +350,7 @@ curl -X PUT \
 >
 > Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Requisitos para ir a produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/)
+> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -358,4 +358,4 @@ curl -X PUT \
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)

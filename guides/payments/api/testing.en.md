@@ -5,7 +5,7 @@
 > Important
 >
 > We're sorry. This page is currently not available in English.<br>
-[View documentation in Portuguese](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing/)
+[View documentation in Portuguese](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/testing/)
 ------------
 ----[mla, mlm, mco, mlc, mpe, mlu]----
 <!-- -->
@@ -14,5 +14,5 @@
 > Important
 >
 > We're sorry. This page is currently not available in English.<br>
-[View documentation in Spanish](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
+[View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/testing/)
 ------------

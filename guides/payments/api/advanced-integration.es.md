@@ -673,7 +673,7 @@ curl -X GET \
 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ---
 ### Próximos pasos
@@ -684,7 +684,7 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 >
 > Adapta la integración a las necesidades específicas de tu negocio.
 >
-> [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-features/)
+> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/other-features/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -692,4 +692,4 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)

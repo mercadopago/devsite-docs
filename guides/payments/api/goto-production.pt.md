@@ -6,7 +6,7 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, c
 
 Com esse processo, se garante a segurança dos dados dos seus clientes, o cumprimento das normas e disposições legais de cada país e a melhor experiência de compra para as suas vendas.
 
-[Conheça os termos e condições do Mercado Pago](https://www.mercadopago.com.br/ajuda/termos-e-condicoes_300).
+[Conheça os termos e condições do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/termos-e-condicoes_300).
 
 ## Use as bibliotecas oficiais e cuide da segurança dos dados
 
@@ -20,7 +20,7 @@ Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um c
 
 ## Seja transparente com as promoções e financiamentos
 
-Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/banners/introduction/) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
+Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/introduction/) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
 > NOTE
@@ -43,7 +43,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Revise que esteja tudo bem com sua integração utilizando os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/testing/)
 
 > RIGHT_BUTTON
 >
@@ -51,4 +51,4 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)

@@ -100,7 +100,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Recibir pagos con un medio de pago en efectivo
 
@@ -245,13 +245,13 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
 Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.ar/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
 
 ------------
 
@@ -436,7 +436,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Recibir pagos con un medio de pago en efectivo
 
@@ -560,7 +560,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlm/payments/sandbox/ticket/helper?payment_id=24304328&payment_method_reference_id=24304329&caller_id=514522042&hash=00658b9b-8bce-4f6d-a4f6-35f68731eeb3",
+        "external_resource_url": "https://www.mercadopago.com/mlm/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -583,13 +583,13 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.mx/developers/es/guides/manage-account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
 Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.mx/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
 
 ## Comunica dónde pueden pagar tus clientes
 
@@ -721,7 +721,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Recibir pagos con un medio de pago en efectivo
 
@@ -843,7 +843,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlu/payments/sandbox/ticket/helper?payment_id=24308187&payment_method_reference_id=24308188&caller_id=528372970&hash=f24ad377-9287-4fc5-a8f4-13786965b7b3",
+        "external_resource_url": "https://www.mercadopago.com/mlu/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -867,13 +867,13 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.uy/developers/es/guides/manage-account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
 Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.uy/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
 
 ------------
 
@@ -1025,7 +1025,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Recibir pagos con un medio de pago en efectivo
 
@@ -1147,7 +1147,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
         "net_received_amount": 0,
         "total_paid_amount": 5000,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mco/payments/sandbox/ticket/helper?payment_id=24308387&payment_method_reference_id=24308386&caller_id=537481120&hash=e9266f07-6ed0-40a1-b5f3-d905d2af3285",
+        "external_resource_url": "https://www.mercadopago.com/mco/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -1171,13 +1171,13 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.co/developers/es/guides/manage-account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
 Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.co/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
 
 ------------
 
@@ -1294,7 +1294,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Recibir pagos con un medio de pago en efectivo
 
@@ -1416,7 +1416,7 @@ La respuesta va a mostrar el estado pendiente hasta que el comprador realice el 
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlc/payments/sandbox/ticket/helper?payment_id=24308615&payment_method_reference_id=24308616&caller_id=537486028&hash=ca6419f2-6f4f-4c67-a8ef-43124d195807",
+        "external_resource_url": "https://www.mercadopago.com/mlc/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
         "installment_amount": 0,
         "financial_institution": "",
         "payable_deferral_period": null,
@@ -1544,7 +1544,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Recibir pagos con un medio de pago en efectivo
 
@@ -1698,13 +1698,13 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.pe/developers/es/guides/manage-account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
 Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.pe/ayuda/Medios-de-pago-para-tus-compradores_2433) siempre que lo necesites.
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-para-tus-compradores_2433) siempre que lo necesites.
 
 ------------
 
@@ -1802,7 +1802,7 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Recibir con boleto o pago en lotérica
 
@@ -2039,7 +2039,7 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
@@ -2058,7 +2058,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/test-integration/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/test-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -2066,5 +2066,5 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/advanced-integration)
 

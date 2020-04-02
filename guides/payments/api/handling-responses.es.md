@@ -80,7 +80,7 @@ default | Otro código de error | No pudimos procesar tu pago.
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -88,4 +88,4 @@ default | Otro código de error | No pudimos procesar tu pago.
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)
