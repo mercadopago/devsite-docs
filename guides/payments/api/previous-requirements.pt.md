@@ -8,7 +8,7 @@ As credenciais são as **chaves que te oferecemos para que possa configurar sua 
 
 * A chave pública, ou _Public Key_, é utilizada para acessar os recursos que necessita no seu frontend. Com ela você pode coletar os dados dos cartões de crédito e convertê-los em um token representativo que pode ser enviado de forma segura aos seus servidores para criar um pagamento.
 
-* E a chave privada, ou _Access token_, te permite chamar o resto das APIs a partir dos seus servidores. Por exemplo, para processar um pagamento, realizar um reembolso ou armazenar cartões.
+* A chave privada, ou _Access token_, te permite chamar o resto das APIs a partir dos seus servidores. Por exemplo, para processar um pagamento, realizar um reembolso ou armazenar cartões.
 
 Para poder encontrá-las, veja a [seção de Credenciais](https://www.mercadopago.com/mlb/account/credentials).
 
