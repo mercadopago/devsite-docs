@@ -405,7 +405,7 @@ curl -X POST \
 }
 ```
 
-> Conoce todos los campos disponibles para realizar un pago completo en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/).
+> Conoce todos los campos disponibles para realizar un pago completo en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
 
 #
 
