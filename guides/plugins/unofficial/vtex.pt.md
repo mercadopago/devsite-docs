@@ -2,298 +2,172 @@
 
 ## O que é VTEX?
 
-[VTEX](https://www.vtex.com/pt/) é uma potente plataforma de e-commerce (PCI compliance) baseada no Brasil com operação em toda a América Latina que permite processar pagamentos através do Mercado Pago.
-Para obter maiores informações sobre as possibilidades que a VTEX oferece acesse [sua página de ajuda](help.vtex.com/pt).
+VTEX é uma **plataforma e-commerce para sua loja virtual** para sua loja virtual, que permite processar pagamentos através do Mercado Pago.
+
+Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito) e [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) no próprio [checkout da sua loja ou redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_mercado_pago).
+
+
+## Etapas para configurar
+
+Os **passos para começar a operar com Mercado Pago**, são os seguintes:
+
+1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/activities) no Mercado Pago caso ainda não tenha uma.
+2. Cadastre uma afiliação de gateway de pagamento com o "Mercado Pago".
+3. Configure as condições de pagamento Mercado Pago.
+4. Configure device fingerprint.
+
+## Criando afiliação de gateway Mercado Pago
+
+Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga os passos abaixo:
+
+1. No painel de administração de sua loja, acesse Configurações do módulo de pagamentos.
+2. Na aba Afiliações de Gateways, clique no botão "+".
+3. Clique no conector MercadoPagoV1.
+4. Preencha os campos correspondentes e clique em "Salvar".
+
+| Campos | Dados necessários |
+|-------------------------------------------|---------------------------------------------------------------------------------------|
+| Nome da afiliação | Defina o nome que identificará a sua Afiliação. |
+| OAuth login | Não é utilizado. Deixe-o como está. |
+| PublicKey | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave pública. |
+| AccessToken | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave privada. |
+| RefreshToken | Deixar em branco. |
+| ExpiredTokenIn | Deixar em branco. |
+| Merchant Account Id | Deixar em branco. |
+| Processing Mode | Escolha aggregator, modo de processamento a partir de MercadoPagoV1. |
+| CountryName | Selecione o país da sua loja. |
+| SoftDescriptor | Indique o nome que vai aparecer para identificar a transação realizada na sua loja. |
+| Description | Escreva uma breve descrição do seu negócio (o preenchimento é opcional). |
+| CategoryId | Escolha a categoria dos produtos que você vende na sua loja. |
+| Financial Institution | Deixar em branco. Preenchimento apenas se sua loja operar do "Chile". |
+| External Installments | Sim. Utilização das condições de parcelamento diretamente de sua conta Mercado Pago. |
+| Antifraud | Informe se deseja usar um antifraude. |
+| Time Zone | Indique a região que define seu horário local. |
+| OrderExpirationHours | Defina por quantas horas o sistema deve checar o status do pedido antes de sua expiração. Quando essa opção não é preenchida, é adotado o padrão de 192 horas. |
+| MaxInstallments | Escolha a quantidade máxima de parcelas enviadas ao Mercado Pago. |
+| Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
+| Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
+<br>
+    ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
+
+E pronto! Sua afiliação com o Mercado Pago já está ativa!
+
+## Configurar condições de pagamento
+
+Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e também pagamentos via [Checkout Mercado Pago](#bookmark_condição_de_pagamento_checkout_mercado_pago).
+
+### Condição de pagamento cartão de crédito
+
+Para criar uma **condição de pagamento cartão de crédito** utilizando sua afiliação com o Mercado Pago, siga os passos abaixo:
+
+1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
+2. Na aba "Condições de pagamento", clique no botão "+".
+3. Na seção "Cartão de Crédito", escolha qual bandeira irá adicionar ao meio de pagamento.
+4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
+5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
+6. Em opções de parcelamento, escolha parcelamento "Automático", onde utiliza as condições de **parcelamento diretamente de sua conta Mercado Pago**.
+7. Clique em "Salvar".
+<p>&nbsp;</p>
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_cartao_2.gif)
+<p>&nbsp;</p>
+
+### Condição de pagamento boleto bancário
+
+Para criar uma **condição de pagamento [boleto bancário](#bookmark_condições_de_pagamentos_offline) utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
+
+1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
+2. Na aba "Condições de pagamento", clique no botão "+".
+3. Na seção "Boleto", escolha "Boleto Bancário" para adicionar ao meio de pagamento.
+4. Informe o "nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
+5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
+6. Clique em "Salvar".
+<p>&nbsp;</p>
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
+<p>&nbsp;</p>
+
+### Condição de pagamento Checkout Mercado Pago
+
+**O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
+
+Para criar essa condição de pagamento, siga os passos abaixo:
+
+1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
+2. Na aba "Condições de pagamento", clique no botão "+".
+3. Na seção "Outro", selecione a condição de pagamento "Mercado Pago".
+4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
+5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
+6. Clique em "Salvar".
+<p>&nbsp;</p>
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
+<p>&nbsp;</p>
+
+> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas.
+
+## Configurando o parcelamento em sua conta Mercado Pago
 
-## Como posso operar com Mercado Pago na VTEX?
+1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio"
+2. Clique na opção "Configurações", navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
+3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
+<p>&nbsp;</p>
+    ![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
+<p>&nbsp;</p>
+E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
-VTEX permite processar pagamentos em todos os modos de operação que Mercado Pago oferece.
+## Obtenha aprovação mais rápida enviando o device fingerprint
 
-#### Modo Agregador
+O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, **recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas**. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
 
-Receba pagamentos usando todos os cartões e promoções que o Mercado Pago oferece, além de transferências bancárias e métodos de pagamento off-line.
+Para configurar o device fingerprint, siga os passos abaixo:
 
-#### Modo Gateway
+1. No painel de administração de sua loja, acesse Checkout do módulo "Configurações da Loja".
+2. Clique no ícone "editar", referente a configuração de seu site.
+3. Acessar a aba "Código" e clique em "checkout5-custom.js" no módulo arquivos.
+4. Copiar e colar o seguinte código e clique em "Salvar".
+<p>&nbsp;</p>
 
-Receba pagamentos diretamente nos códigos comerciais do vendedor usando todas as promoções do vendedor.
-
-#### Modo All In
-
-Combine a operação Gateway e Agregador oferecendo ao comprador a melhor opção de pagamento.
-
-### Configurar VTEX para operar em modo Agregador
-
-Os passos para configurar o modo Agregador são:
-
-1. Configurar Afiliação.
-1. Configurar Planos Nativos de Pagamento.
-1. Configurar Planos de Pagamento Off-Line.
-----[mlc]----
-1. Configurar plano de pagamento Webpay
-------------
-1. Configurar Planos de Pagamento Personalizados.
-1. Configurar DeviceID.
-
-### Configurar afiliação
-
-Para operar em modo Agregador sé é necessário configurar uma afiliação.
-
-1. Expanda o menu Catalog.
-2. Acesse PCI Gateway.
-
-    ![Setting affiliation in VTEX](/images/vtex-afiliation-1.png)
-
-3. Acesse menu lateral: Pagamento.
-4. Configurações.
-
-    ![VTEX Configuration Page](/images/vtex-config.png)
-
-5. Acesse menu superior: Afiliações de Gateways.
-6. Adicionar Nova Afiliação (Sinal de +).
-
-    ![Affiliation search bar](/images/vtex-afiliation.png)
-
-7. Buscar e selecionar MercadoPagoV1.
-
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)
-
-8. Completar as informações exigidas na afiliação.
-
-    ![Complete affliation information](/images/vtex-afiliation-4.png)
-
-- Nome da afiliação: Nome que identificará a afiliação.
-- OAuth login: Não se utiliza.
-- PublicKey: PublicKey do Mercado Pago, ver credenciais.
-- AccessToken: AccessToken do Mercado Pago, ver credenciais.
-- RefreshToken: Não se utiliza – deixar em branco.
-- ExpiredTokenIn: Não se utiliza – deixar em branco.
-- Merchant Account Id: Não se utiliza – deixar em branco.
-- Processing Mode: Selecionar agregador.
-- CountryName: Selecionar o país.
-- SoftDescriptor: Texto para o resumo da descrição do pagamento no cartão de crédito (somente para o Brasil).
-- Description: Descrição da operação (pode ser branco).
-- CategoryId: Categoria do produto – Selecionar da lista.
-- Financial Institution: Somente para o Chile - enviar 1234.
-- Use External Installments: Yes.
-- Antifraud: Yes.
-- Time Zone: Região que define a hora local.
-- orderExpirationHours: Durante quantas horas se consultará o estado do pedido no Mercado Pago.
-- maxInstallments: Quantidade máxima de cotas.
-- Categoria Principal: Categoria do produto - Selecionar da lista.
-- Captura de segurança antecipada: Quantidade de horas para realizar a captura automática (somente para Argentina e Brasil).
-
-### Configurar Condição de pagamento nativo
-
-Planos de pagamentos nativos são os cartões de crédito / débito que a Vtex tem integrados
-
-1. No menu superior.
-2. Clicar em condições de pagamento.
-3. No lado direito clicar adicionar nova condição.
-4. Proximo ao campo de busca.
-5. No botão (Sinal de +)
-
-    ![Payment terms bar](/images/vtex-afiliation-2.png)
-
-6. Buscar e selecionar o meio de pagamento que se quer adicionar, para o exemplo vamos usar American Express.
-
-    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
-
-7. Colocar uma descrição (pode ser em branco).
-8. Selecionar a afiliação.
-9. Selecionar cotas automáticas.
-10. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
-11. Salvar a configuração.
-
-    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
-
-12. Verificar se o plano nativo foi adicionado.
-
-    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
-
-###  Configurar Planos de Pagamento Offline
-
-Planos de pagamento Off-Line são os meios de pagamento cujos pagamentos se realizam em dois passos:
-- Primeiro, um ticket é gerado com instruções de pagamento.
-- Em seguida, o pagamento é feito em dinheiro ou através de um caixa eletrônico seguindo as instruções do ticket.
-
-#### Meios Off-Line por país
-
-- Argentina: PagoFacil, Rapipago, RedLink.
-- Chile: Servipag.
-- Colombia: Efecty, Davivienda.
-- México: Banamex, Bancomer, Oxxo.
-- Perú: PagoEfectivo.
-- Uruguay: Abitab, Redpagos.
-- Brasil: Boleto Bancario
-
-1. No menu superior
-2. Clicar em condições de pagamento.
-3. No lado direito clicar adicionar nova condição.
-4. Proximo ao campo de busca.
-5. No botão (Sinal de +)
-
-    ![Payment condition bar](/images/vtex-afiliation-2.png)
-
-6. Buscar e selecionar Boleto Bancário – Este plano de pagamento inclui todos os meios Off-Line do país.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
-
-7. Colocar uma descrição (pode ser em branco).
-8. Selecionar a afiliação.
-9. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
-10. Salvar a configuração.
-
-
-----[mlc]----
-### Configurar plano de pagamento Webpay
-
-1. Expanda o menu Catalog.
-2. Acessar PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-webpay-1.png)
-
-3. Ajustes.
-4. Planos de pagamento.
-5. Novo plano de pagamento.
-
-    ![Payment plan bar in VTEX](/images/vtex-webpay-2.png)
-
-6. Buscar e selecionar Webpay.
-
-    ![Webpay page in VTEX](/images/vtex-webpay-3.png)
-
-7. Colocar uma descrição (pode ser em branco).
-8. Selecionar a afiliação.
-9. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
-10. Salvar a configuração.
-
-    ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
-------------
-### Configurar plano de pagamento personalizado
-
-Plano de pagamento personalizado permite adicionar à VTEX cartões de crédito locais que VTEX não integra como um meio de pagamento nativo e podem ser utilizados com Mercado Pago.
-Meios de pagamento personalizados por país:
-Argentina: Argencard, Cencosud, CMR, Cordial, Cordobesa, Mercado Pago + Banco Patagonia.
-Chile: CMR, Magna, Presto.
-Colombia: Codensa.
-Uruguay: Oca.
-
-1. Expanda o menu Catalog.
-2. Acessar PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-custom-1.png)
-
-3. Ajustes.
-4. Pagamentos personalizados.
-5. Selecionar uma Cobrand para configurar.
-
-    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
-
-6. Completar s campos para configurar o cartão de crédito desejado. As instruções devem ser copiadas e coladas para evitar erros.
-7. Salvar a configuração.
-
-    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
-
-8. Colocar uma descrição (pode ser em branco).
-9. Selecionar a afiliação.
-10. Colocar Status Ativo para ativar o meio de pagamento no checkout - Pode ser configurado e ativado posteriormente.
-11. Selecionar automático.
-12. Salvar a configuração.
-
-![Payment Methods Configuration Page](/images/vtex-custom-4.png)
-
-### Configurar Plano de Pagamento Personalizado - Cartões da Argentina
-
-| Name                   | Descrição              | Meio de pagamento |       Bins {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pagamento no adquirente (opcional) |
-|----|----|----|:-----:|-----|
-| Argencard                | Argencard                | Mastercard    | 501105-501105                                           | argencard                                |
-| Cencosud                 | Cencosud                 | Mastercard    | 603493-603493                                           | cencosud                                 |
-| CMR                      | CMR                      | Mastercard    | 557039-557039                                           | cmr                                      |
-| Cordial                  | Cordial                  | Mastercard    | 522135-522135,522137-522137,527555-527555               | cordial                                  |
-| Cordobesa                | Cordobesa                | Mastercard    | 542702-542702,544764-544764,550073-550073,528824-528824 | cordobesa                                |
-| Mercado Pago - Patagonia | Mercado Pago - Patagonia | Mastercard    | 515073-515073,515070-515070,532383-532383,532384-532384 | mercadopago_cc                           |
-
-### Configurar Plano de Pagamento Personalizado – Cartões do Chile
-
-| Nome | Descrição | Meio de pagamento |                                   Bins {min}-{max},{min}-{max},{bin1},{bin2}                                   | Código de pagamento no adquiriente (opcional) |
-|---|-----|------|:-----:|-----|
-| Presto | Presto      | Mastercard    | 920000-920099                                                                                                   | presto                                   |
-| Magna  | Magna       | Mastercard    | 568000-568099                                                                                                   | magna                                    |
-| CMR    | CMR         | Mastercard    | 499847-499847,460072-460072,445596-445596,465375-465375,548740-548740,548742-548742,533187-533187,558984-558984 | cmr                                      |
-
-### Configurar Plano de Pagamento Personalizado – Cartões da Colombia
-
-| Nome  | Descrição | Meio de pagamento | Bins {min}-{max},{min}-{max},{bin1},{bin2} | Código de pagamento no adquirente (opcional) |
-|----|---|----|:----:|------|
-| Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
-
-### Configurar Plano de Pagamento Personalizado – Cartões do Uruguay
-
-| Nome | Descrição | Meio de pagamento |                     Bins {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pagamento no adquirente (opcional) |
-|----|-----|------|:-----:|------|
-| OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
-
-## Configurar DeviceID
-
-1. Expanda o menu Catalog.
-2. Acessar Portal.
-
-    ![Setting deviceID](/images/vtex-device-settings-1.png)
-
-3. Selecionar o ícone de ajustes.
-
-    ![Adjustment icon](/images/vtex-device-settings-2.png)
-
-4. Acessar código.
-5. Selecionar checkout5-custom.js.
-6. Copiar e colar o seguinte código:
-
-```
+```javascript
 var script = document.createElement("script");
 script.src = "https://www.mercadopago.com/v2/security.js";
 script.setAttribute("output","vtex.deviceFingerprint");
 script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
-7. Salvar a configuração
+<br>
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
-## Credenciais
+## Credenciais de sua conta Mercado Pago
 
-Para obter as credenciais deve seguir os seguintes passos:
+Você conta com dois pares de chaves para conectar-se com a VTEX, um para ambiente de testes e outro para ambiente de produção. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials).
 
-1. Faça login na conta do Mercado Pago
-2. Acesse [URL]([FAKER][CREDENTIALS][URL]).
-3. Selecione a guia checkout personalizado.
-4. Copiar e colar a Public key e Access token (Modo Produção para processar pagamentos reais / Modo Sandbox para realizar testes).
-5. Antes de passar à Produção assegure se de preencher o formulário ‘Eu quero ir para produção’ (Se já realizou este passo, o link não aparece).
+> Antes de iniciar sua operação em produção, assegure se de preencher o formulário 'Ir para produção'. Caso já tenha realizado este passo o link não será apresentado.
 
+## Entendendo sobre os principais logs da VTEX
 
-## Interpretar log da VTEX
-Os logs permitem revisar a informação que retorna MercadoPago e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação.
+**Os logs permitem revisar a informação que retorna Mercado Pago** e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação. Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto. Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
 
-Também em caso de modificação ou ativação de novos meios de pagamento, os logs nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto.
-
-Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
-
-Para acessar o Log deve acessar a transação da VTEX
-Então buscar o LOG que contenha o status response e clicar em _ver mais_.
+Acesse a transação da VTEX, então busque pelo LOG que contenha o status response e clique em _ver mais_.
 
 Os dados mais significativos são os seguintes:
 
-- `"Id":10302316` Número da transação de Mercado Pago.
-- `"Payment_method_id":"visa"`: Meio de pagamento.
-- `"Payment_type_id":"credit_card"`: Meio de pagamento.
-- `"Status":"authorized"`: Estado do pagamento.
-- `"Status_detail":"pending_capture"`: Detalhe do estado do pagamento.
-- `"External_reference":"503451"`: Identificador da VTEX enviado a Mercado Pago.
-- `"First_six_digits":"450995"`: Bin do cartão de crédito.
-- `"Processing_mode":"gateway"`: Modo de processamento do pagamento (Agregador / Gateway).
-- `"Merchant_account_id"`:"83bb673420b8201f80aff598b3743864": Código de comércio (somente para Gateway).
+| Campo | Dado | Descrição |
+|-------------------|-------------------------------------|--------------------------------------------|
+| ID | 10302316 | Número da transação de Mercado Pago. |
+| Payment_method_id | visa | Meio de pagamento. |
+| Payment_type_id | credit_card | Meio de pagamento. |
+| Status | authorized | Estado do pagamento. |
+| Status_detail | pending_capture | Detalhe do estado do pagamento. |
+| External_reference | 503451 | Identificador da VTEX enviado a Mercado Pago. |
+| First_six_digits | 450995 | Bin do cartão de crédito. |
+| Processing_mode | agregador | Modo de processamento do pagamento. |
 
-Quando confrontado com uma rejeição, é muito importante rever o `Status_detail` que especifica o motivo do mesmo.
+Quando confrontado com uma rejeição, é muito importante rever o `status_detail` que especifica o motivo do mesmo.
 
-- `"Status":"rejected"`: Pagamento rejeitado.
-- `"Status_detail":"cc_rejected_other_reason"`: Rejeição do cartão de crédito, sem informação do motivo.
-- `"Status_detail":"cc_rejected_call_for_authorize"`: Rejeição do cartão de crédito, o cliente deve ligar para autorizar o pagamento.
-- `"Status_detail":"cc_rejected_insufficient_amount"`: Rejeição do cartão de crédito, o cliente não tem saldo suficiente disponível.
-- `"Status_detail":"cc_rejected_high_risk"`: Rejeição de Mercado Pago, risco de fraude.
+| Campo | Dado | Descrição |
+|-------------------|-------------------------------------|--------------------------------------------|
+| Status | rejected | Pagamento rejeitado. |
+| Status_detail | cc_rejected_other_reason | Rejeição do cartão de crédito, sem informação do motivo. |
+| Status_detail | cc_rejected_call_for_authorize | Rejeição do cartão de crédito, o cliente deve ligar para autorizar o pagamento. |
+| Status_detail | cc_rejected_insufficient_amount | Rejeição do cartão de crédito, o cliente não tem saldo suficiente disponível. |
+| Status_detail | cc_rejected_high_risk | Rejeição de Mercado Pago, risco de fraude. |
+
+> Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/).
