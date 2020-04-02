@@ -1,49 +1,38 @@
+# APIs do Mercado Pago
+
+## Construa seu processador de pagamentos
+
+Use nossas APIs para construir sua própria experiência de pagamento no seu website ou aplicação móvel. De configurações básicas a avançadas, controle toda a experiência.
+
+Use nossos SDKs oficiais ou interaja diretamente com nossas APIs.
+
+<br>
+
+![API-payment](/images/api/api-intro-pt.png)
+
+## Características
+
+* Crie sua própria plataforma de pagamentos dentro do seu site.
+* Como desenvolvedor, tenha o controle total. Gerencie todo o processo de coleta de dados no frontend onde seu cliente realiza a solicitação de pagamento.
+* Comunique-se diretamente com seus clientes através das mensagens de erro com respostas personalizadas.
+* Salve os cartões usados por seus clientes para pagamentos futuros.
+* É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
+
 ---
-  description: Mercado Pago cuenta con APIs para poder recibir pagos de forma segura en tu sitio web, aplicación móvil, o donde desees, manteniendo la experiencia de compra.
----
+### Próximos passos
 
-# Introdução à nossa API de Pagamentos
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Requisitos para integrar
+>
+> Conheça todos os requisitos necessários para começar a integrar.
+>
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/)
 
-O Mercado Pago conta com APIs para receber pagamentos de forma segura em seu site, aplicativo móvel ou onde desejar.
-
-Com nossas APIs:
-
-* Você pode criar seu próprio checkout sem que seus compradores deixem o seu site.
-* Os dados do cartão nunca passarão por seus servidores, mantendo a segurança.
-* Você pode salvar os dados de cartão dos seus clientes para compras futuras.
-
-## Credenciais
-
-Você conta com dois pares de chaves para conectar-se com a API, uma para um ambiente de testes e a outra para o ambiente de produção. Estas chaves podem ser encontradas na seção [credenciais da sua conta]([FAKER][CREDENTIALS][URL]).
-
-A **chave pública**, ou *public key*, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e tokenizar.
-
-A **chave privada**, ou *access token*, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
-
-> Ao clicar no botão “renovar credenciais”, obterá novos pares de chaves e as anteriores deixarão de funcionar. Faça isso apenas se desconfiar que suas chaves privadas foram violadas ou por questões de segurança, semelhante à alteração de senha, a cada período de tempo. Lembre-se de substituir as credenciais em sua aplicação para mantê-la funcionando.
-
-## Modo Sandbox e Modo de Produção
-
-Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
-
-Forneceremos cartões de teste para que possa simular transações como se fossem reais.
-
-Assim que tiver [testado sua aplicação](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing), você deverá preencher o formulário “Quero ir para produção” que encontrará em suas [credenciais]([FAKER][CREDENTIALS][URL]).
-
-Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do sandbox pelas de produção em seu código.
-
-## Requisitos para ir a produção
-
-Depois de testar a sua aplicação no modo _Sandbox_, você deve completar o processo de homologação que consistindo em:
-
-* Usar o _SDK_ do mercadopago.js para verificar os métodos de pagamento, efetuar pagamentos, garantir uma boa experiência do usuário e evitar transações fraudulentas.
-* Usar o atributo `data_checkout` nas tags do `input` para manusear os dados de forma segura e evitar que eles sejam enviado para o seu servidor. Certifique-se de NÃO incluir o atributo de `name` nessas tags.
-* Tenha um certificado SSL para garantir uma navegação segura e que o formulário de pagamento seja enviado via HTTPS.
-* Comunique corretamente o resultado do pagamento ao usuário para tentar recuperar o pagamento em caso de rejeição. Para isso, [utilize os códigos de resposta](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses).
-* Comunique as [promoções e possibilidades de parcelamento](https://www.mercadopago.com.br/promocoes/) oferecidas pelo Mercado Pago. Você pode incluir nossos [banners institucionais](https://www.mercadopago.com.ar/developers/pt/guides/banners/introduction/).
-
-> Quando cumprir os requisitos, você deve preencher o formulário Eu quero ir para produção que está na seção das suas [credenciais]([FAKER][CREDENTIALS][URL])
-
-O não cumprimento destas regras pode envolver desde o não processamento do pagamento, a ações legais de acordo com os [termos e condições](https://www.mercadopago.com.br/ajuda/termos-e-condicoes_300). Você deve ter uma política de termos e condições, na qual você especifica que é responsável por todos os dados que foram inseridos em seu site.
-
-#### [Começar a integrar a API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card).
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Referéncias de API
+>
+> Encontre toda a informação necessária para interagir com nossas APIs.
+>
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)
