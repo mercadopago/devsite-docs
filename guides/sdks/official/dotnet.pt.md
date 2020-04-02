@@ -45,10 +45,6 @@ Nosso SDK é compatível com .NET versão 3.5 ou maior.
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```
 
-> NOTE
->
-> Nota
->
 > Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 3) Usando resource objects
