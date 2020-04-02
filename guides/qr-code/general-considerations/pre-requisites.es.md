@@ -25,10 +25,6 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 | Caja | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
 | Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado.
 
-> NOTE
->
-> Nota
->
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 ## Requisitos previos
