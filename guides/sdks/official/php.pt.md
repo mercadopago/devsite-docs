@@ -28,15 +28,6 @@ Nosso SDK é compatível com PHP versão 5.6 ou maior.
 
 2) Configure suas credenciais
 
-  Você tem dois tipos de credenciais:
-
-  * **Para Checkout Mercado Pago:**
-    ```php
-    MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
-    MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
-    ```
-
-  * **Para o uso com API:**
     ```php
     MercadoPago\SDK::setAccessToken("ACCESS_TOKEN");      // On Production
     MercadoPago\SDK::setAccessToken("TEST_ACCESS_TOKEN"); // On Sandbox

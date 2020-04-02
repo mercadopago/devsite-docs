@@ -29,13 +29,9 @@ Nosso SDK é compatível com Java versão 8 ou maior.
 ## Começo rápido
 
 1) Importar as classes básicas de Mercado Pago. `import import com.mercadopago.*;`
+
 2) Configure suas credenciais.
-  - **Para Checkout Mercado Pago:**
-    ```java
-      MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
-      MercadoPago.SDK.setClientId("CLIENT_ID_OK");
-    ```
-  - **Para o uso com API:**
+
     ```java
       MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```

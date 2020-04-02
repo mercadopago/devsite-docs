@@ -34,12 +34,6 @@ Nuesto SDK es compatible con las versiones de Java 8 o superior.
 
 2) Configura tus credenciales.
 
-  - **Para Checkout Mercado Pago:**
-    ```java
-      MercadoPago.SDK.setClientSecret("CLIENT_SECRET");
-      MercadoPago.SDK.setClientId("CLIENT_ID");
-    ```
-  - **Para el uso mediante API:**
     ```java
       MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```

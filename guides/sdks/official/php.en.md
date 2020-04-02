@@ -28,19 +28,16 @@ This SDK supports PHP version 5.6 or newer.
 
 2. Setup your credentials
 
-  You have two types of credentials:
-
-  * **For Checkout Mercado Pago:**
-    ```php
-    MercadoPago\SDK::setClientId("ENV_CLIENT_ID");
-    MercadoPago\SDK::setClientSecret("ENV_CLIENT_SECRET");
-    ```
-
-  * **For API or custom checkout:**
     ```php
     MercadoPago\SDK::setAccessToken("ACCESS_TOKEN");      // On Production
     MercadoPago\SDK::setAccessToken("TEST_ACCESS_TOKEN"); // On Sandbox
     ```
+
+> NOTE
+>
+> Note
+>
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
 3. Using resource objects.
 
