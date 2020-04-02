@@ -41,6 +41,8 @@ Para realizar a captura dos dados sensíveis dos cartões dos seus clientes, **�
 
 Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido e adicionar o estilo que queira sem problemas.
 
+No seguinte exemplo se assume que os dados `transaction_amount` e `description` formam obtidos em um passo anterior onde o cliente selecionou o produto ou serviço que deseja pagar.
+
 ```html
 <form action="/processar_pagamento" method="post" id="pay" name="pay" >
     <fieldset>

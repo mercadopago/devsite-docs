@@ -43,6 +43,8 @@ Para realizar la captura de datos sensibles de las tarjetas de tus clientes, **e
 
 Puedes agregar todo lo que necesites, modificar el atributo `label` sugerido y sumarle el estilo que quieras sin problemas.
 
+En el siguiente ejemplo se asume que los datos `transaction_amount`y `description` se obtuvieron en un paso previo donde el cliente pudo seleccionar el producto o servicio que desea pagar.
+
 ```html
 <form action="/procesar_pago.php" method="post" id="pay" name="pay" >
     <fieldset>
