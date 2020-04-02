@@ -38,10 +38,6 @@ Our SDK is compatible with Java 6 or grater. Our development team recomends to u
     ```java
       MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```
-> NOTE
->
-> Note
->
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 3. Using Resource objects.
