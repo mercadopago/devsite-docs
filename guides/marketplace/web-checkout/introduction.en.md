@@ -28,10 +28,6 @@ Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> are th
 
 The **private keys** (also known as `access_token`) are used for all the requests to the APIs, such as processing payments, refunds, etc. The private keys must be kept **confidentially** in your backend servers and should never be published.
 
-> NOTE
->
-> Nota
->
 > Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/).
 
 The [credencials]([FAKER][CREDENTIALS][URL_BASIC]) that should be used for the association of sellers to your Marketplace (Step 2) are the Client ID and Client Secret.
