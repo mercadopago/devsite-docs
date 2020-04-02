@@ -35,7 +35,7 @@ MercadoPago.js te permite criar um token de pagamento para enviar os dados dos c
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instale o SDK do Mercado Pago
 
-Instale o SDK oficial para simplificar sua integração com nossas APIs.
+Instale o [SDKs oficial](https://www.mercadopago.com.br/developers/pt/plugins_sdks#bookmark_sdk_title) para simplificar sua integração com nossas APIs.
 
 [[[
 ```php
