@@ -20,7 +20,7 @@ Para operar con boleto, siga estos pasos:
 2. Visita "Formas de Pagamento".
 3. Seleccione la pestaña "Boleto bancário".
 4. Haga clic en la opción "Boleto Bancário" que tenga en la columna "Adquirente / Gateway" la información "mercadopago_transparente".
-5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#bookmark_credenciales).
+5. Rellene los datos del grupo "Específico". Para obtener el Client id y el Client secret, ve a la sección de [Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 6. Haga clic en "salvar".
 
     ![Mercado Pago Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
@@ -33,22 +33,10 @@ Para operar con tarjetas de crédito siga estos pasos:
 2. Visita "Formas de Pagamento".
 3. Seleccione la pestaña "Cartão de Crédito".
 4. Busque las banderas que tienen en la columna "Adquirente / Gateway" la información "mercadopago_transparente".
-5. Rellene los datos del grupo "Específico". Para obtener el Client Id y el Client Secret, vea la sección [Credenciales](#bookmark_credenciales).
+5. Rellene los datos del grupo "Específico". Para obtener el Client id, el Client secretla y la Public key, vea la sección [Credenciales]([FAKER][CREDENTIALS][URL]).
 6. Seleccione el tipo de configuración de cuotas que desee en el campo "Tipo de parcelamento":
 - Dinâmico: La plataforma utilizará las configuraciones de interés de la cuenta de Mercado Pago.
 - Customizado: Deberá configurar las cuotas en la plataforma (total de cuotas, cuotas sin interés, porcentaje de interés y cuota mínima)
 7. Haga clic en salvar.
 
     ![Mercado Pago Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
-
->Estos pasos se deben realizar para todas las banderas que desea activar.
-
-## Credenciales
-
-Para obtener las credenciales debe seguir estes pasos:
-
-1. Iniciar sesión en la cuenta de Mercado Pago.
-2. Acceda a este [panel]([FAKER][CREDENTIALS][URL]).
-3. Seleccione la pestaña "Checkout básico" para ver el Client Id y el Client Secret.
-4. Seleccione la pestaña "Checkout transparente" para ver la Public Key y el Access Token ("modo de produção" para procesar pagos reales / "modo Sandbox" para realizar pruebas).
-5. Antes de pasar a la producción asegúrese de rellenar el formulario ‘Quiero ir a producción’ (Si ya ha realizado este paso, el vínculo no aparece).

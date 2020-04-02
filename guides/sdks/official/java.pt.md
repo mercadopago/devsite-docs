@@ -9,7 +9,8 @@ Nosso SDK é compatível com Java versão 8 ou maior.
 ## Instalação
 
 ### Usando Maven
-1. Anexe dependências do MercadoPago para pom.xml
+
+1) Anexe dependências do MercadoPago para pom.xml
 
   ```xml
     ...
@@ -23,22 +24,21 @@ Nosso SDK é compatível com Java versão 8 ou maior.
     ...
   ```
   
-2. Execute `mvn install`, isso é tudo, você tem o SDK do Mercadopago instalado.
+2) Execute `mvn install`, isso é tudo, você tem o SDK do Mercadopago instalado.
 
 ## Começo rápido
 
-1. Importar as classes básicas de Mercado Pago. `import import com.mercadopago.*;`
-2. Configure suas credenciais.
-  - **Para Checkout Mercado Pago:**
-    ```java
-      MercadoPago.SDK.setClientSecret("CLIENT_SECRET_OK");
-      MercadoPago.SDK.setClientId("CLIENT_ID_OK");
-    ```
-  - **Para API or Custom-checkout:**
+1) Importar as classes básicas de Mercado Pago. `import import com.mercadopago.*;`
+
+2) Configure suas credenciais.
+
     ```java
       MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```
-3. Usando objetos de recursos.
+
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+
+3) Usando objetos de recursos.
 
 ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 

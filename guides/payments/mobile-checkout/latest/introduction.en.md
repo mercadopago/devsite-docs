@@ -39,10 +39,11 @@ Offer the best payment experience to your users, on Android or iOS.
 ### It is very easy to integrate the checkout:
 
 1. Include the SDK in your project.
-2. Enter your credentials and create the payment preference.
+2. Enter your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> and create the payment preference.
 3. Start the payment process with a button on your application.
 4. Get to know when a payment is made with the notifications we send you.
 
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/).
 
 ## Add the dependency to your project
 [[[

@@ -25,13 +25,13 @@ Nosso SDK é compatível com .NET versão 3.5 ou maior.
 
 ## Início Rápido
 
-1. Você deve importar o Mercado Pago SDK.
+1) Você deve importar o Mercado Pago SDK.
 
 ```csharp
  using MercadoPago;
 ```
 
-2. Configure suas crecenciais.
+2) Configure suas crecenciais.
 -**Para Checkout Mercado Pago:**
 
 ```csharp
@@ -39,13 +39,15 @@ Nosso SDK é compatível com .NET versão 3.5 ou maior.
  MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
 ```
 
--**Para API ou custom checkout:**
+-**Para o uso com API:**
 
 ```csharp
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```
 
-3. Usando resource objects
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+
+3) Usando resource objects
 Você pode interagir com todos os recursos disponíveis na API pública para que cada recurso seja representado por classes de acordo com o seguinte diagrama:
 ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 

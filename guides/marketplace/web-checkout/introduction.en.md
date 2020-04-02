@@ -22,10 +22,17 @@ The Marketplace requires 3 steps:
 After creating the application, you only need to take the second and third steps for each subsequent vendor.
 
 
-## Credentials
+### Credentials
 
-Similar to the Checkout of Payments, you have a pair of private keys to connect to the API. You can find these keys in the [credentials section of your account]([FAKER][CREDENTIALS][URL]).
+Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are the **keys we provide so you can configure your integrations.**. 
 
-The **private keys** (also known as `access_token`) are used for all the requests to the APIs, such as processing payments, refunds, etc. The private keys must be kept **confidentially** in your backend servers and should never be published.
+* The public key, or **Public Key**, is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
+
+
+* The private key, or **Access Token**, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
+
+> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+
+ The [credencials]([FAKER][CREDENTIALS][URL_BASIC])  that should be used for the association of sellers to your Marketplace (Step 2) are the Client ID and Client Secret.
 
 #### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/create-marketplace)

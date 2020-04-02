@@ -14,7 +14,9 @@ Como primer paso, tienes que incluir el SDK en el HTML de tu aplicación:
 
 ##Configura tu clave pública
 
-Para comenzar a utilizar el SDK Javascript, debes proveer tú public key para que podamos identificarte al conectarte con MercadoPago.
+Para comenzar a utilizar el SDK Javascript, debes proveer tú [Public key]([FAKER][CREDENTIALS][URL]) para que podamos identificarte al conectarte con MercadoPago.
+
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 ```javascript
 Mercadopago.setPublishableKey("TEST-98638d24-eb00-4dd5-82d8-4e573fac6a80");
