@@ -45,13 +45,13 @@ Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido
 <form action="/processar_pagamento" method="post" id="pay" name="pay" >
     <fieldset>
         <p>
-            <label for="cardNumber">Número do cartão/label>
+            <label for="cardNumber">Número do cartão</label>
             <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
         </p>
         <p>
-            <label for="cardholderName">Nome e Sobrenome</label>
+            <label for="cardholderName">Nome e sobrenome</label>
             <input type="text" id="cardholderName" data-checkout="cardholderName" />
-        </p>                                    
+        </p> 
         <p>
             <label for="cardExpirationMonth">Mês de vencimento</label>
             <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
