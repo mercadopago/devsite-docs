@@ -15,10 +15,6 @@ Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 2. Crie algumas <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a> Access Token e Public Key e cole-as nos campos de Produção e Testes que estarão na configuração do módulo.
 3. Homologue a conta para [ir à Produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
 
-> NOTE
->
-> Nota
->
 > Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce com a sua conta do Mercado Pago.
