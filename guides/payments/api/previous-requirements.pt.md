@@ -6,9 +6,9 @@ Saiba o que é necessário para integrar nossas APIs.
 
 As credenciais são as **chaves que te oferecemos para que possa configurar sua integração**. Você utilizará uma chave pública e outra chave privada.
 
-A chave pública, ou _Public Key_, é utilizada para acessar os recursos que necessita no seu frontend. Com ela você pode coletar os dados dos cartões de crédito e convertê-los em um token representativo que pode ser enviado de forma segura aos seus servidores para criar um pagamento.
+* A chave pública, ou _Public Key_, é utilizada para acessar os recursos que necessita no seu frontend. Com ela você pode coletar os dados dos cartões de crédito e convertê-los em um token representativo que pode ser enviado de forma segura aos seus servidores para criar um pagamento.
 
-E a chave privada, ou _Access token_, te permite chamar o resto das APIs a partir dos seus servidores. Por exemplo, para processar um pagamento, realizar um reembolso ou armazenar cartões.
+* E a chave privada, ou _Access token_, te permite chamar o resto das APIs a partir dos seus servidores. Por exemplo, para processar um pagamento, realizar um reembolso ou armazenar cartões.
 
 Para poder encontrá-las, veja a [seção de Credenciais](https://www.mercadopago.com/mlb/account/credentials).
 
@@ -35,7 +35,7 @@ MercadoPago.js te permite criar um token de pagamento para enviar os dados dos c
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instale o SDK do Mercado Pago
 
-Instale o SDK oficial para simplificar sua integração com nossas APIs.
+Instale o [SDKs oficial](https://www.mercadopago.com.br/developers/pt/plugins_sdks#bookmark_sdk_title) para simplificar sua integração com nossas APIs.
 
 [[[
 ```php

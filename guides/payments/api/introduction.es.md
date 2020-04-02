@@ -4,7 +4,7 @@
 
 Usa nuestras APIs para construir tu propia experiencia de pago en tu sitio web o aplicación móvil. Desde configuraciones básicas a avanzadas, tú controlas la experiencia.
 
-Puedes usar las [SDKs oficiales](https://www.mercadopago.com.ar/developers/es/plugins_sdks#bookmark_sdk_title) o interactuar directamente con nuestras APIs a través de las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Puedes usar las SDKs oficiales o interactuar directamente con nuestras APIs.
 
 <br>
 
