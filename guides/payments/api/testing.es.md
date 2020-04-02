@@ -89,6 +89,14 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 - EXPI: Rechazado por problema con la fecha de expiración.
 - FORM: Rechazado por error en formulario.
 
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que nos es posible probar el flujo completo para medios de pago en efectivo.
+
+<br>
+
 ---
 ### Próximos pasos
 
