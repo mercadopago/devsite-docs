@@ -5,9 +5,9 @@ Te contamos qué necesitas saber para poder integrar nuestras APIs.
 ## Ten a mano tus credenciales
 Las credenciales son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra clave privada.
 
-La clave pública, o _Public key_, te sirve para acceder a los recursos que necesita tu frontend. Con ella vas a poder recolectar los datos de las tarjetas de crédito y convertirlos en un token representativo que puedes enviar de forma segura a tus servidores para crear un pago.
+* La clave pública, o _Public key_, te sirve para acceder a los recursos que necesita tu frontend. Con ella vas a poder recolectar los datos de las tarjetas de crédito y convertirlos en un token representativo que puedes enviar de forma segura a tus servidores para crear un pago.
 
-Y la clave privada, o _Access token_, te va a permitir llamar al resto de las APIs desde tus servidores. Por ejemplo, para procesar un pago, realizar un reembolso o almacenar tarjetas.
+* Y la clave privada, o _Access token_, te va a permitir llamar al resto de las APIs desde tus servidores. Por ejemplo, para procesar un pago, realizar un reembolso o almacenar tarjetas.
 
 Para poder encontrarlas, ve la [sección de Credenciales](https://www.mercadopago.com/mla/account/credentials).
 
