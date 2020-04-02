@@ -4,7 +4,7 @@ A integração por API do Mercado Pago para pagamentos com cartões permite que 
 
 ## Como funciona?
 
-![API-integration-flowchart](/images/api/api_integration_flowchart_es.png)
+![API-integration-flowchart](/images/api/api_integration_flowchart_pt.png)
 
 Ao usar nossa API de pagamentos do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
 
