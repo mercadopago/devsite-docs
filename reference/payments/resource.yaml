@@ -2,7 +2,7 @@
 type: object
 properties:
 - id:
-    type: Integer
+    type: Long
     description:
       en: Payment identifier.
       es: Identificador de pago.
