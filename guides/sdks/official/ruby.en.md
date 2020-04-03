@@ -18,7 +18,7 @@ gem install mercadopago-sdk
 
 ### Configure your credentials
 
-* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL])
+* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
@@ -41,15 +41,15 @@ puts $preferenceResult
 ```ruby
 
 preference_data = {
-			"items": [
-				{
-					"title": "testCreate",
-					"quantity": 1,
-					"unit_price": 10.2,
-					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
-				}
-			]
-		}
+            "items": [
+                {
+                    "title": "testCreate",
+                    "quantity": 1,
+                    "unit_price": 10.2,
+                    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
+                }
+            ]
+        }
 preference = $mp.create_preference(preference_data)
 
 puts preference
