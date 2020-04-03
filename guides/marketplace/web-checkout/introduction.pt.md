@@ -27,10 +27,10 @@ Após criar a aplicação, você só precisa executar o segundo e o terceiro pas
 
 Suas [credenciais]([FAKER][CREDENTIALS][URL]) são as chaves que te informamos para que você possa configurar suas integrações. Para este caso, você vai utilizar uma chave pública e outra privada.
 
-* A chave pública, ou **Public key**, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e convertê-los em um token
-representativo que pode ser guardado de forma segura em seus servidores para criar um pagamento. 
+* A chave pública, ou Public key, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e convertê-los em um token
+representativo que pode ser guardado de forma segura em seus servidores para criar um pagamento.
 
-* A chave privada, ou **Access token**, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas confidencialmente em seus servidores de backend e nunca devem ser publicadas.
+* A chave privada, ou Access token, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas confidencialmente em seus servidores de backend e nunca devem ser publicadas.
 
 > Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 

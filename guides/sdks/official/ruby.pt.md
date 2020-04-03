@@ -15,7 +15,7 @@
 
 ### Configure suas credenciais
 
-* Obtenha seu **Access token** na seção [Credenciais]([FAKER][CREDENTIALS][URL]).
+* Obtenha seu **Access token** na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
@@ -38,15 +38,15 @@ puts $preferenceResult
 ```ruby
 
 preference_data = {
-			"items": [
-				{
-					"title": "testCreate",
-					"quantity": 1,
-					"unit_price": 10.2,
-					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
-				}
-			]
-		}
+            "items": [
+                {
+                    "title": "testCreate",
+                    "quantity": 1,
+                    "unit_price": 10.2,
+                    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
+                }
+            ]
+        }
 preference = $mp.create_preference(preference_data)
 
 puts preference

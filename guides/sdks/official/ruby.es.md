@@ -17,7 +17,7 @@
 ### Configura tus credenciales
 
 
-Obtén tu **Access token** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
+Obtén tu **Access token** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
 
 ```ruby
@@ -41,15 +41,15 @@ puts $preferenceResult
 ```ruby
 
 preference_data = {
-			"items": [
-				{
-					"title": "testCreate",
-					"quantity": 1,
-					"unit_price": 10.2,
-					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
-				}
-			]
-		}
+            "items": [
+                {
+                    "title": "testCreate",
+                    "quantity": 1,
+                    "unit_price": 10.2,
+                    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
+                }
+            ]
+        }
 preference = $mp.create_preference(preference_data)
 
 puts preference

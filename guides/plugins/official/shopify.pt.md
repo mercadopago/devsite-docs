@@ -36,7 +36,7 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 
 2) Em **Accept credit cards**, selecione **Mercado Pago**.
 
-3) Preencha o **Client id** e **Client secret**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL_BASIC])
+3) Preencha o **Client id** e **Client secret**. [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
 
   ![Configurando client id e client secret no Mercado Pago Shopify](/images/shopify/shopify-config-2.gif)
 

@@ -71,7 +71,7 @@ try {
 
 ## Configure
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
+* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 

@@ -1,10 +1,10 @@
-#SDK Javascript#
+# DK Javascript#
 
 El SDK Javascript de Mercado Pago te facilita obtener los datos de las tarjetas de tus clientes de forma segura.
 
 Al usar el SDK, y seguir los pasos que te indicamos, la información sensible de la tarjeta nunca viajará a tus servidores, asegurando el nivel adecuado de cumplimiento de la norma PCI DSS.
 
-##Incluye el SDK de MercadoPago
+## Incluye el SDK de Mercado Pago
 
 Como primer paso, tienes que incluir el SDK en el HTML de tu aplicación:
 
@@ -12,9 +12,9 @@ Como primer paso, tienes que incluir el SDK en el HTML de tu aplicación:
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
-##Configura tu clave pública
+## Configura tu clave pública
 
-Para comenzar a utilizar el SDK Javascript, debes proveer tú [Public key]([FAKER][CREDENTIALS][URL]) para que podamos identificarte al conectarte con MercadoPago.
+Para comenzar a utilizar el SDK Javascript, debes proveer tú [Public key]([FAKER][CREDENTIALS][URL]) para que podamos identificarte al conectarte con Mercado Pago.
 
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
@@ -64,7 +64,7 @@ En la función de callback recibirás un objeto con las siguientes propiedades:
 }
 ```
 
-##Obtén información del medio de pago
+## Obtén información del medio de pago
 
 Puedes obtener información de la tarjeta ingresada o del medio de pago seleccionado utilizando:
 
@@ -79,13 +79,13 @@ Ejemplos:
 Obtener el medio de pago en base a los primeros 6 dígitos (bin) de la tarjeta:
 
 ```javascript
-object = { “bin” : bin }
+object = { "bin" : bin }
 ```
 
 Obtener el medio de pago mediante su identificador:
 
 ```javascript
-object = {“payment_method_id”: “visa”}
+object = {"payment_method_id": "visa"}
 ```
 
 Con la información del medio de pago podrás determinar si necesitas pedir a tu cliente datos adicionales para realizar el cobro.
@@ -129,7 +129,7 @@ Ejemplo de respuesta:
   }]
 ```
 
-##Obtén los tipos de documento
+## Obtén los tipos de documento
 
 El tipo y número de documento de identidad es un dato obligatorio en la mayoría de los países para poder pagar con tarjetas.
 
@@ -217,7 +217,7 @@ Ejemplo de respuesta con paymentMethodId = master:
 
 ```
 
-##Obtén las cuotas y costos de financiación
+## Obtén las cuotas y costos de financiación
 
 Para cobrar en cuotas y poder mostrar a tus clientes los costos de financiación, el SDK de Mercado Pago te brinda una función que retorna las cuotas disponibles para la tarjeta de tu cliente.
 
