@@ -12,6 +12,7 @@ sites_supported:
 Suas credenciais são as Chaves que proporcionamos para que você possa fazer suas integrações. 
 
 Suas credenciais são:
+
 | Chave               | Descrição                                                              	                                                 |
 |------------------------------------|-----------------------------------------------------------------------------------
 | Public key                 	| Chave pública da aplicação que normalmente será usada no frontend e te permitirá, por exemplo, conhecer os meios de pagamento e criptografar os dados do cartão.|
