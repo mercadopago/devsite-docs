@@ -68,7 +68,7 @@ try {
 
 ## Configuração
 
-Obtenha seu **ACCESS_TOKEN** na [sessão de Credenciais]([FAKER][CREDENTIALS][URL]).
+Obtenha sua **Access token** na sessão de [Credenciais]([FAKER][CREDENTIALS][URL]).
 
 > Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 

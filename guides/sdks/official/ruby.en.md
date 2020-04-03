@@ -109,7 +109,7 @@ puts result
 
 ### Configure your credentials
 
-* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL])
+* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
