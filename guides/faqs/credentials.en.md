@@ -22,7 +22,7 @@ Keep in mind that you have to replace the credentials you already used with the 
 
 ## I am already integrated and tested, how do I implement in production?
 
-You must fill the form "I want to go into production" found in the [Credentials section]([FAKER][CREDENTIALS][URL]).
+You must fill the form "Go to production" found in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 This form is necessary to make transactions with real money.
 
