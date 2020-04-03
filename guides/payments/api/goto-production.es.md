@@ -1,6 +1,6 @@
 # Requisitos para ir a producción
 
-Cuando tengas lista tu integración y quieras comenzar a recibir pagos, tienes que completar el formulario para ir producción desde la [sección de Credenciales](FAKER][CREDENTIALS][URL]).
+Cuando tengas lista tu integración y quieras comenzar a recibir pagos, tienes que completar el formulario para ir producción desde la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## ¿Por qué es necesario este proceso?
 
