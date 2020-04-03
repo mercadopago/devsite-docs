@@ -16,7 +16,7 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 
 Para ayudarte a optimizar tus conciliaciones, implementamos una mejora en la generación de los rangos de fechas para reportes programados. El cambio aplica tanto para el reporte de Dinero retirado, como al reporte de Todas las transacciones. Desde el miércoles 1 de abril, para encontrar tus reportes programados, vas a tener que buscarlos por un segundo menos. 
 
- Filtros del `search`| Fecha atual | Nueva fecha |
+ Filtros del `search`| Fecha actual | Nueva fecha |
 --------- | ------------------------ | ------------------------------- |
 begin_date  | 01/01/2020 00:00:00 | 01/01/2020 00:00:00
 end_date | 02/01/2020  00:00:00 | 01/01/2020  23:59:59
@@ -25,10 +25,10 @@ Tu nuevo parámetro quedaría de la siguiente forma:
  
 ```
 https://api.mercadolibre.com/account/bank_report/search?access_token={{access_token}}
-	&created_from=schedule
-	&user_id=290477154
-	&begin_date=2020-01-01T00:00:00Z
-	&end_date=2020-01-01T23:59:59Z
+    &created_from=schedule
+    &user_id=290477154
+    &begin_date=2020-01-01T00:00:00Z
+    &end_date=2020-01-01T23:59:59Z
  
 ```
 
