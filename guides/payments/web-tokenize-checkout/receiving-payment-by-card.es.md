@@ -24,7 +24,7 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
   </script>
 </form>
 ```
-Puedes encontrar tu public key en la página de [credenciales]([FAKER][CREDENTIALS][URL]).
+Puedes encontrar tu Public key en la página de [credenciales]([FAKER][CREDENTIALS][URL]).
 
 
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).

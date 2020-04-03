@@ -12,7 +12,7 @@ Conecte uma conta do Mercado Pago ao módulo para capturar os recebimentos das s
 Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.br%2Fcomo-cobrar) no Mercado Pago caso ainda não tenha uma.
-2. Crie algumas <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a> Access Token e Public Key e cole-as nos campos de Produção e Testes que estarão na configuração do módulo.
+2. Obtenha suas <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a> Access Token e Public Key e cole-as nos campos de Produção e Testes que estarão na configuração do módulo.
 3. Homologue a conta para [ir à Produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
 
 > Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).

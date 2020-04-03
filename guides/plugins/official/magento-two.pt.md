@@ -77,7 +77,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 1) Vá até o menu **Stores > Configuration > Sales > Payment Methods**:
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago** > **Credentials**, irá aparecer o campo da **Public key** e o campo do **Access token**. Obtenha suas credenciais na seção [Credenciais]([FAKER][CREDENTIALS][URL])
+2) Para configurar as credenciais acesse a opção **Mercado Pago** > **Credentials**, irá aparecer o campo da **Public key** e o campo do **Access token**. Obtenha suas credenciais na seção [Credenciais]([FAKER][CREDENTIALS][URL]).
 
 
 > Existem dois tipos de credenciais:
