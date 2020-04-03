@@ -57,7 +57,7 @@ curl -X POST \
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configura la integración con los datos de tu usuario vendedor
 
-Configura la [clave pública de prueba]([FAKER][CREDENTIALS][URL]) de tu usuario vendedor en el frontend de tu aplicación y la [clave privada de prueba]([discount-campaigns.pt.mdFAKER][CREDENTIALS][URL]) en el backend.
+Configura la [clave pública de prueba]([FAKER][CREDENTIALS][URL]) de tu usuario vendedor en el frontend de tu aplicación y la [clave privada de prueba]([FAKER][CREDENTIALS][URL]) en el backend.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realiza un pago con tu usuario comprador
 
