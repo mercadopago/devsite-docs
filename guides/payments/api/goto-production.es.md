@@ -27,7 +27,7 @@ Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [inclui
 >
 > Nota
 >
-> Debido a la Resolución E 51/2017 de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con exigencias adicionales.
+> Debido a la Resolución [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con [exigencias adicionales](https://www.mercadopago.com.ar/developers/es/guides/localization/considerations-argentina/).
 ------------
 
 ## Disponibiliza tus términos y condiciones

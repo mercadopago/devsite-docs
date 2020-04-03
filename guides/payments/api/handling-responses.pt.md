@@ -26,7 +26,12 @@ rejected | `cc_rejected_invalid_installments` | O `payment_method_id` não proce
 rejected | `cc_rejected_max_attempts` | Você atingiu o limite de tentativas permitido.<br/><br/>Escolha outro cartão ou outra forma de pagamento.
 rejected | `cc_rejected_other_reason` | `payment_method_id` não processa o pagamento.
 
-## Erros de inserção de dados
+> CLIENT_SIDE
+>
+> h2
+>
+> Erros de inserção de dados
+
 
 Código | Descrição | Mensagem sugerida
 ------------ | ------------- | -------------

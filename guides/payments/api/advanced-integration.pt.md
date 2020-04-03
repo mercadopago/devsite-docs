@@ -612,7 +612,7 @@ curl -X GET \
 }
 ```
 
-Consulte a lista de cartões de um cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consulte a lista de cartões de um cliente
 
 [[[
 ```php

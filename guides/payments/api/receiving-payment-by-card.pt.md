@@ -6,12 +6,14 @@ A integração por API do Mercado Pago para pagamentos com cartões permite que 
 
 ![API-integration-flowchart](/images/api/api_integration_flowchart_pt.png)
 
+<br>
+
 Ao usar nossa API de pagamentos do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
 
 1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
 2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o ítem, e possa confirmar e efetuar o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/plugins_sdks) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 > Obtenha mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
@@ -157,10 +159,12 @@ function setPaymentMethod(status, response) {
     }
 }
 ```
+
+<br>
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
 
-Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo 
-_select_ denominado `installments`
+Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
 
 ```javascript
 function getInstallments(){
@@ -250,15 +254,13 @@ Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/process
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos a enviar são: `token`,` transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
-Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](FAKER][CREDENTIALS][URL]).
-
-Lembre-se também que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/#bookmark_instale_o_sdk_do_mercado_pago).
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](FAKER][CREDENTIALS][URL]) e que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/#bookmark_instale_o_sdk_do_mercado_pago).
 
 [[[
 ```php
 <?php  
     ===
-    Encontre o estado do pagamento no campo status
+    Encontre o estado do pagamento no campo _status_.
     ===
 
     require_once 'vendor/autoload.php';
@@ -284,7 +286,7 @@ echo $payment->status;
 ```
 ```node
 ===
-Encontre o estado do pagamento no campo status
+Encontre o estado do pagamento no campo _status_.
 ===
 
 var mercadopago = require('mercadopago');
@@ -310,7 +312,7 @@ mercadopago.payment.save(payment_data).then(function (data) {
 ```
 ```java
 ===
-Encontre o estado do pagamento no campo status
+Encontre o estado do pagamento no campo _status_.
 ===
 
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
@@ -332,7 +334,7 @@ System.out.println(payment.getStatus());
 ```
 ```ruby
 ===
-Encontre o estado do pagamento no campo status
+Encontre o estado do pagamento no campo _status_.
 ===
 
 require 'mercadopago'
@@ -352,7 +354,7 @@ payment.save()
 ```
 ```csharp
 ===
-Encontre o estado do pagamento no campo status
+Encontre o estado do pagamento no campo _status_.
 ===
 
 using MercadoPago;
@@ -381,7 +383,7 @@ console.log(payment.Status);
 ```
 ```curl
 ===
-Encontre o estado do pagamento no campo status
+Encontre o estado do pagamento no campo _status_.
 ===
 
 curl -X POST \
