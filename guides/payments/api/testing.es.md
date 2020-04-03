@@ -93,7 +93,7 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 >
 > Importante
 >
-> Ten en cuenta que nos es posible probar el flujo completo para medios de pago en efectivo.
+> Ten en cuenta que no es posible probar el flujo completo para medios de pago en efectivo.
 
 ## Comenzar a recibir pagos
 

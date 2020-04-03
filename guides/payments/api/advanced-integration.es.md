@@ -611,7 +611,7 @@ curl -X GET \
 }
 ```
 
-Consulta el listado de tarjetas de un cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consulta el listado de tarjetas de un cliente
 
 [[[
 ```php

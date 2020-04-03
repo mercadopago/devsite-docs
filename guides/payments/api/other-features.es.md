@@ -139,7 +139,7 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 
 Para finalizar el pago, es necesario capturar los fondos que reservaste a tu cliente. Puede realizarse por el monto total o uno parcial.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspCapturar el monto total de una reserva
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capturar el monto total de una reserva
 
 Para hacer la captura por el monto total solo debes enviar el atributo `capture` como `true`.
 
