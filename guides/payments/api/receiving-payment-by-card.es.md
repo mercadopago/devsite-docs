@@ -199,7 +199,7 @@ function getInstallments(){
 
 Antes de enviar el pago, debes crear el token que contendrá de manera segura toda la información de la tarjeta. Lo debes generar de la siguiente manera:
 
-```javascript 
+```javascript
 doSubmit = false;
 document.querySelector('#pay').addEventListener('submit', doPay);
 
@@ -272,7 +272,7 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-    
+
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
     $payment->token = "ff8080814c11e237014c1ff593b57b4d";
@@ -284,10 +284,10 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
     );
 
     $payment->save();
-    
+
 
     echo $payment->status;
-    
+
 ?>
 ```
 ```node
@@ -323,7 +323,7 @@ Puedes encontrar el estado del pago en el valor _status_.
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken("ff8080814c11e237014c1ff593b57b4d")
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(1)
