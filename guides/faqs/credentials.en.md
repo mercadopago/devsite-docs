@@ -8,17 +8,18 @@ sites_supported:
 
 # Credentials
 
-## Where to find my credentials
+## What are my credentials and where can I find them
 
-Your credentials are the keys that we provided you so that you could make your integrations. They are available in your Mercado Pago account, in the [Credentials section]([FAKER][CREDENTIALS][URL]).
+Your credentials are the keys that we provided you so that you could make your integrations.
 
-## My credentials expired. How to renew them?
+Your credentials include:
 
-You can renew your credentials from the [Credentials section]([FAKER][CREDENTIALS][URL]).
+| Key | Description |
+| --- |--- |
+| Public key  | Public key of the application that you will use in your frontend and will allow you, for example, to know available payment methods and encrypt card data.|
+| Access token | Private key of the application that you will use in your backend to generate payments. It is very important that this data is protected on your servers and is not accessible by any system user or attacker. |
 
-For security reasons, the credentials expire but don't worry, you can renew them as many times as necessary.
-
-Keep in mind that you have to replace the credentials you already used with the new ones.
+They are available in your Mercado Pago account, in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ## I am already integrated and tested, how do I implement in production?
 
@@ -31,3 +32,11 @@ Keep in mind when completing the fields:
 - Document: refers to the type of document and the number without dots or bars.
 
 - Postal address: enter a contact e-mail of the site.
+
+## I want to update my credentials, how can I renew them?
+
+You can renew your credentials from the [Credentials section]([FAKER][CREDENTIALS][URL]).
+
+For exceptional security reasons, your credentials may need to be updated. But don't worry, you can renew them as many times as necessary.
+
+Keep in mind that you have to replace the credentials you already used with the new ones.

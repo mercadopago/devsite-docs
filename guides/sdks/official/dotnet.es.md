@@ -33,14 +33,6 @@ Nuesto SDK es compatible con las versiones de .NET 4.5 o superior.
 
 2) Configura tus credenciales
 
--**Para Checkout Mercado Pago:**
-
-```csharp
-MercadoPago.SDK.ClientId     = "YOUR_CLIENT_ID";
-MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
-```
--**Para el uso mediante API:**
-
 ```csharp
 MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
