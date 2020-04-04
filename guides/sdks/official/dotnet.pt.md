@@ -5,7 +5,7 @@
 Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações para a API do Mercado Pago.
 
 ### Versões do .net suportadas:
-Nosso SDK é compatível com .NET versão 3.5 ou maior.
+Nosso SDK é compatível com .NET versão 4.5 ou maior.
 
 ## Instalação
 
@@ -22,6 +22,8 @@ Nosso SDK é compatível com .NET versão 3.5 ou maior.
 **Usando Packet CLI**
 
 `> paket add mercadopago-sdk --version 1.2.0`
+
+Veja a versão mais recente [aqui](https://github.com/mercadopago/dx-dotnet/releases)
 
 ## Início Rápido
 
