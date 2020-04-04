@@ -1,59 +1,119 @@
-# Teste a Integração
+# Teste sua integração
 
-Antes de partir para a produção, é muito importante que realize testes do fluxo completo, verificando se a criação dos pagamentos é realizada corretamente e se as mensagens são eficientes na comunicação com o usuário.
+Utilize cartões e usuários de teste para verificar que seus pagamentos sejam criados corretamente e que as mensagens que queira comunicar sejam efetivas.
 
-Proporcionar uma boa experiência aos seus clientes no checkout ajuda a garantir a conversão.
+## Como testar sua integração
 
-Você conta com um par de [credenciais do sandbox]([FAKER][CREDENTIALS][URL]), que permitem testar toda a integração em uma réplica exata do Modo de Produção, podendo simular transações utilizando cartões de teste:
+**Os usuários de teste te permitem testar sua integração** ao gerar fluxos de pagamento em uma cópia exata da sua integração.
 
-| País       | Visa                | Mastercard          | American Express  |
-| ---------- | ------------------- | ------------------- | ----------------- |
-| Argentina  | 4509 9535 6623 3704 | 5031 7557 3453 0604 | 3711 803032 57522 |
-| Brasil     | 4235 6477 2802 5682 | 5031 4332 1540 6351 | 3753 651535 56885 |
-| Chile      | 4168 8188 4444 7115 | 5416 7526 0258 2580 | 3757 781744 61804 |
-| Colômbia   | 4013 5406 8274 6260 | 5254 1336 7440 3564 | 3743 781877 55283 |
-| México     | 4075 5957 1648 3764 | 5474 9254 3267 0366 | indisponível      |
-| Peru       | 4009 1753 3280 6176 | indisponível        | indisponível      |
-| Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061  | indisponível      |
+Tipos de usuários | Descrição
+------------ | -------------
+Vendedor | É a conta de teste utilizada para **configurar a aplicação e credenciais para a cobrança.** |
+Comprador | É a conta de teste utilizada para **testar o processo de compra**<br/>. |
 
-Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards).
+<br>
 
-## Capture os dados do cartão
+> SERVER_SIDE
+>
+> h2
+> 
+> Como criar usuários
 
-Com sua `public_key` você pode obter os dados do cartão de crédito inseridos no formulário. Certifique-se de inserir corretamente o método de pagamento disponível para o número do cartão inserido e o número de parcelas com o parcelamento correspondente.
+Para começar, é necessário que tenha no mínimo dois usuários de teste: um comprador e um vendedor.
 
-Verifique se o `card_token` gerado ao enviar o formulário contém alguma informação, verificando, por exemplo, se o atributo first_six_digits contém algum valor.
+Execute o seguinte curl para criar um usuário de teste:
 
-Caso algum dado inserido esteja incorreto, exibiremos um código de erro especificando qual dado deve ser corrigido.
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+"https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+```
 
-## Receba um pagamento
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
-Com seu `access_token` e `card_token` obtidos, você pode fazer um teste para criar um pagamento.
+```json
+{
+    "id": 123456,
+    "nickname": "TT123456",
+    "password": "qatest123456",
+    "site_status": "active",
+    "email": "test_user_123456@testuser.com"
+}
+```
 
-Se, ao criar o pagamento, obtiver algum erro relacionado ao método de pagamento selecionado ou as contas em funcionamento, você será informado com um HTTP Status 400 Bad Request e o código detalhando o erro para que faça a correção e tente criar o pagamento novamente.
+>WARNING
+>
+>Importante
+>
+> * Tanto o comprador como o vendedor devem ser usuários de teste.
+> * É possível gerar até 10 contas de usuários de teste simultâneamente. Por isso sugerimos que guarde o _email_ e _password_ de cada um.
+> * Os usuários de teste caducam após 60 días sem atividade no Mercado Pago.
+> * Para criar pagamentos de teste te recomendamos usar valores baixos.
+> * Os valores devem respeitar os ----[mla]---- [valores mínimos e máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos e máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos e máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos e máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos e máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada meio de pagamento.
 
-Testar todos os cenários possíveis de pagamento aprovado, pendente ou recusado. Para isso, no campo `card_holder_name` do formulário insira qualquer um dos prefixos a seguir:
+## Teste o fluxo de pagamento
 
-* **APRO**: Pagamento aprovado.  
-* **CONT**: Pagamento pendente.
-* **CALL**: Recusado, ligar para autorizar.  
-* **FUND**: Recusado por saldo insuficiente.  
-* **SECU**: Recusado por código de segurança.  
-* **EXPI**: Recusado por data de validade.
-* **FORM**: Recusado por erro no formulário.
-* **OTHE**: Recusado geral.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure a integração com os dados do seu usuário vendedor
 
-Em cada caso, deverá informar ao seu cliente o resultado do pagamento e qual o próximo passo a seguir. Para isso, você receberá um HTTP Status 201 OK informando que o pagamento foi criado corretamente e um código de resultado para que possa redirecionar o cliente para a página com a mensagem correta.
+Configure a [chave pública de teste]([FAKER][CREDENTIALS][URL]) do seu usuário vendedor no frontend da sua aplicação e a [chave privada de teste]([FAKER][CREDENTIALS][URL]) no seu backend.
 
-## Verifica ter recebido a notificação Webhook
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realize um pagamento com seu usuário comprador
 
-Mercado Pago te enviará uma notificação do evento ocorrido. Valida que a tenha recebido corretamente e tratado corretamente no seu sistema de gestão.
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testes com cartão de crédito
 
-## Cancele um pagamento
+Inicie sua integração configurada com as credenciais do seu usuário de teste vendedor:
 
-Realize a devolução de um pagamento aprovado ou o cancelamento de um pagamento pendente e verifique que recebeu a notificação com atualização correspondente ao recurso.
+1. Preencha os dados de um [cartão de teste](#bookmark_cartões_de_teste).
+1. Insira o e-mail do seu usuário de teste comprador.
+1. Confirme a compra, e pronto!
 
+## Cartões de teste
 
-## Teste a criação de um cliente
+Cartão | Número | CVV | Data de vencimento
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4170 0688 1010 8020 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
 
-Verifica que se crie o `customer` com o cartão associado e que seus dados de cartão sejam recuperados de modo correto quando carregar novamente o checkout.
+Para **testar resultados diferentes de pagamento**, complete o dado que queira no nome do titular do cartão:
+
+- APRO: Pagamento aprovado.
+- CONT: Pagamento pendente.
+- OTHE: Recusado por erro geral.
+- CALL: Recusado com validação para autorizar.
+- FUND: Recusado por quantia insuficiente.
+- SECU: Recusado por código de segurança inválido.
+- EXPI: Recusado por problema com a data de vencimento.
+- FORM: Recusado por erro no formulário.
+
+> WARNING
+>
+> Importante
+>
+> Tenha em conta que não é possível testar o fluxo completo para pagamentos em boleto ou em lotérica.
+
+## Começar a receber pagamentos
+
+Para começar a cobrar, você deve cumprir os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) e completar o formulário <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Quero ir para produção</a>.
+
+Ao terminar o formulário, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
+
+---
+### Próximos passos
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Manipulação de respostas de erro
+>
+> Ajude seus clientes a completar seus pagamentos sem erros.
+>
+> [Manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/)
+
+> RIGHT_BUTTON
+>
+> Referências de API
+>
+> Encontre toda informação necessária para interagir com nossas APIs.
+>
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)

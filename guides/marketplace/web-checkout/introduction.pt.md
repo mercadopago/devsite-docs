@@ -25,12 +25,16 @@ Após criar a aplicação, você só precisa executar o segundo e o terceiro pas
 
 ## Credenciais
 
-Assim como no Checkout de Pagamentos, você conta com um par de chaves privadas para conectar-se com a API. Essas chaves são encontradas na sessão de [credenciais da sua conta]([FAKER][CREDENTIALS][URL]).
+Suas [credenciais]([FAKER][CREDENTIALS][URL]) são as chaves que te informamos para que você possa configurar suas integrações. Para este caso, você vai utilizar uma chave pública e outra privada.
 
-As **chaves privadas** (também conhecidas como `access_token`) são utilizadas para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, etc. As chaves privadas devem ser mantidas **confidencialmente** em seus servidores de backend e nunca devem ser publicadas.
+* A chave pública, ou Public key, é utilizada para acessar todos os recursos que precisará de seu frontend para coletar dados de cartão de crédito e convertê-los em um token
+representativo que pode ser guardado de forma segura em seus servidores para criar um pagamento.
 
-Antes de utilizar o Access Token é preciso preencher o formulário "Quero ir para produção".
+* A chave privada, ou Access token, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas confidencialmente em seus servidores de backend e nunca devem ser publicadas.
 
-Ao utilizar o Checkout Mercado Pago, as credenciais que se deve utilizar para associação dos vendedores ao Marketplace (2º Passo) são o Client_id e Client_secret da sessão de Checkout Básico da página de credenciais.
+> Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+
+
+As [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) que se deve utilizar para associação dos vendedores ao Marketplace (2º Passo) são o Client id e Client secret.
 
 #### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/create-marketplace)

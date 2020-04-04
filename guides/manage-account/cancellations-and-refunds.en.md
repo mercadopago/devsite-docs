@@ -10,6 +10,11 @@ There are different situations in which you may want to cancel a sale:
 
 * If the payment `status` is `approved`, it means that the buyer was charged, so you can make a refund.
 
+> WARNING
+>
+> WARNING
+>
+> Note that for payments with QR and POINT, you can only make refunds but not cancellations.
 
 ## Cancellations
 
