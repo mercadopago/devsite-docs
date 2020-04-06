@@ -11,7 +11,7 @@ Tus credenciales son:
 | Clave | Descripción |
 | --- |--- |
 | Public key  | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta.|
-| Acess token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
+| Access token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
 
 Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).<br>
 Recomendamos usar primero tus credenciales de prueba para comprobar que todo funcione correctamente en Sandbox y luego podrás utilizar las productivas para comenzar a recibir pagos.
@@ -51,7 +51,7 @@ Tus credenciales son:
 | Clave | Descripción |
 | --- |--- |
 | Public key  | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta.|
-| Acess token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
+| Access token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
 
 
  Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
@@ -91,7 +91,7 @@ Tus credenciales son:
 | Clave | Descripción |
 | --- |--- |
 | Public key  | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta.|
-| Acess token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
+| Access token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
 
 
  Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
@@ -131,7 +131,7 @@ Tus credenciales son:
 | Clave | Descripción |
 | --- |--- |
 | Public key  | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta.|
-| Acess token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
+| Access token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
 
 
  Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
@@ -172,7 +172,7 @@ Tus credenciales son:
 | Clave | Descripción |
 | --- |--- |
 | Public key  | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta.|
-| Acess token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
+| Access token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
 
 
  Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
@@ -212,7 +212,7 @@ Tus credenciales son:
 | Clave | Descripción |
 | --- |--- |
 | Public key  | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta.|
-| Acess token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
+| Access token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
 
 
  Están disponibles en tu cuenta de Mercado Pago, en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).

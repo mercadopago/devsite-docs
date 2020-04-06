@@ -1,4 +1,4 @@
-# DK Javascript#
+# SDK Javascript#
 
 El SDK Javascript de Mercado Pago te facilita obtener los datos de las tarjetas de tus clientes de forma segura.
 

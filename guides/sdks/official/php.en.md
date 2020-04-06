@@ -10,23 +10,25 @@ This SDK supports PHP version 5.6 or newer.
 
 #### Using Composer
 
-1. Download [Composer](https://getcomposer.org/download/) if not already installed
-2. Go to your project directory and run `composer require "mercadopago/dx-php"` on the command line.
-3. This how your directory structure would look like.
+1) Download [Composer](https://getcomposer.org/download/) if not already installed.
+
+2) Go to your project directory and run `composer require "mercadopago/dx-php"` on the command line.
+
+3) This how your directory structure would look like.
 
 ![Structure of the Mercado Pago SDK for PHP](https://user-images.githubusercontent.com/864790/34394635-44f7745a-eb39-11e7-981d-77cf759cf05f.png)
 
-4. Thats all, you have Mercado Pago SDK installed.
+4) Thats all, you have Mercado Pago SDK installed.
 
 ### Quick Start
 
-1. You have to require the library from your Composer vendor folder.
+1) You have to require the library from your Composer vendor folder.
 
   ```php
   require __DIR__  . '/vendor/autoload.php';
   ```
 
-2. Setup your credentials
+2) Setup your credentials
 
     ```php
     MercadoPago\SDK::setAccessToken("ACCESS_TOKEN");      // On Production
@@ -35,7 +37,7 @@ This SDK supports PHP version 5.6 or newer.
 
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
-3. Using resource objects.
+3) Using resource objects.
 
   You can interact with all the resources available in the public API, to this each resource is represented by classes according to the following diagram:
 
