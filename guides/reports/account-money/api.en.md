@@ -634,7 +634,7 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
         "id": 12345678,
         "user_id": USER-ID,
         "begin_date": "2015-05-01T00:00:00Z",
-        "end_date": "2015-06-01T00:00:00Z",
+        "end_date": "2015-06-01T23:59:59Z",
         "file_name": "settlement-report-USER_ID-2016-01-20-131015.csv",
         "created_from": "manual",
         "date_created": "2016-01-20T10:07:53.000-04:00"
@@ -885,7 +885,7 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     "id": 2787882,
     "begin_date": "2019-08-15T06:00:00Z",
     "created_from": "schedule",
-    "end_date": "2019-08-16T06:00:00Z",
+    "end_date": "2019-08-16T05:59:59Z",
     "generation_date": "2019-08-16T02:00:00.000-04:00",
     "last_modified": "2019-08-15T15:41:53.681-04:00",
     "report_type": "settlement",
