@@ -799,7 +799,7 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     "id": 2541818,
     "user_id": "USER-ID",
     "begin_date": "2019-07-01T06:00:00Z",
-    "end_date": "2019-08-01T06:00:00Z",
+    "end_date": "2019-08-01T05:59:59Z",
     "created_from": "schedule",
     "status": "pending",
     "report_type": "settlement",
