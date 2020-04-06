@@ -114,7 +114,7 @@ curl -X POST \
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
-```json 
+```json
 {
     "id": "123456789-jxOV430go9fx2e",
     "email": "test@test.com",
@@ -460,7 +460,7 @@ payer.type = "customer";
 payer.id = "123456789-jxOV430go9fx2e";
 
 Payment payment = new Payment();
-payment.setTransactionAmount(100);
+payment.setTransactionAmount(100f);
 payment.setInstallments(1);
 payment.setToken('ff8080814c11e237014c1ff593b57b4d');
 payment.setPayer(payer);

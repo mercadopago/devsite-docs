@@ -55,7 +55,7 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
 ```
 ```curl
@@ -139,9 +139,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -151,7 +151,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setDescription('Título del producto')
       .setPaymentMethodId("rapipago")
       .setPayer(new Payer("test_user_19653727@testuser.com"));
@@ -475,9 +475,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -487,7 +487,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setDescription('Título del producto')
       .setPaymentMethodId("oxxo")
       .setPayer(new Payer("test_user_82045343@testuser.com"));
@@ -660,7 +660,7 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
 ```
 ```curl
@@ -759,9 +759,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -771,7 +771,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setDescription('Título del producto')
       .setPaymentMethodId("abitab")
       .setPayer(new Payer("test_user_84162205@testuser.com"));
@@ -929,7 +929,7 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods"); 
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
 ```
 ```curl
@@ -1063,9 +1063,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -1075,7 +1075,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(5000)
+payment.setTransactionAmount(5000f)
       .setDescription('Título del producto')
       .setPaymentMethodId("efecty")
       .setPayer(new Payer("test_user_19549678@testuser.com"));
@@ -1332,9 +1332,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -1344,7 +1344,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setDescription('Título del producto')
       .setPaymentMethodId("servipag")
       .setPayer(new Payer("test_user_15748052@testuser.com"));
@@ -1582,9 +1582,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -1594,7 +1594,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setDescription('Título del producto')
       .setPaymentMethodId("pagoefectivo_atm")
       .setPayer(new Payer("test_user_42972582@testuser.com"));
@@ -1824,7 +1824,7 @@ Para recibir pagos con boleto o pagos en lotérica solo tienes que enviar el det
      "email" => "test@test.com",
      "first_name" => "Test",
      "last_name" => "User",
-     "identification" => array( 
+     "identification" => array(
          "type" => "CPF",
          "number" => "19119119100"
       ),
@@ -1855,7 +1855,7 @@ var payment_data = {
     email: 'test@test.com',
     first_name: 'Test',
     last_name: 'User',
-    identification: { 
+    identification: {
         type: 'CPF',
         number: '19119119100'
     },
@@ -1871,9 +1871,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -1900,7 +1900,7 @@ payment.setTransactionAmount(100f)
                .setStreetNumber(3003)
                .setNeighborhood("Bonfim")
                .setCity("Osasco")
-               .setFederalUnit("SP")) 
+               .setFederalUnit("SP"))
 );
 
 payment.save();
@@ -2067,4 +2067,3 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
 > [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/advanced-integration)
-

@@ -40,7 +40,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
@@ -69,9 +69,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -125,7 +125,7 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 }
 ```
 
-Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes. 
+Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
 
 
 > WARNING
@@ -196,9 +196,9 @@ A resposta devolverá que o pagamento se encontra aprovado e creditado.
 ```
 
 > NOTE
-> 
+>
 > Nota
-> 
+>
 > Se não adicionar o valor, será capturado o total reservado.
 
 ## Capturar um pagamento por um valor inferior ao reservado

@@ -112,7 +112,7 @@ You should only make an *API call* including the data you received from the chec
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken(token)
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(installments)
