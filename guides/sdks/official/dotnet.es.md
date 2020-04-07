@@ -23,6 +23,8 @@ Nuesto SDK es compatible con las versiones de .NET 4.5 o superior.
 
 `> paket add mercadopago-sdk --version 1.2.0`
 
+Verifique la última versión [aquí](https://github.com/mercadopago/dx-dotnet/releases)
+
 ## Guía de inicio rápido
 
 1) Importa la SDK de Mercado Pago.

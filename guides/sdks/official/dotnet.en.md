@@ -23,6 +23,8 @@ This SDK supports .NET version 4.5 or newer.
 
 `> paket add mercadopago-sdk --version 1.2.0`
 
+Check the latest version [here](https://github.com/mercadopago/dx-dotnet/releases)
+
 ### Compatibility
 
 Our SDK is compatible with .NET 3.5 or grater. Our development team recomends to use .NET 4.5 or newer versions.
