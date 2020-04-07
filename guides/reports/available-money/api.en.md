@@ -607,7 +607,7 @@ You will receive `HTTP STATUS 200 (OK)` in response:
         "id": 12345678,
         "user_id": USER-ID,
         "begin_date": "2015-05-01T00:00:00Z",
-        "end_date": "2015-06-01T00:00:00Z",
+        "end_date": "2015-06-01T23:59:59Z",
         "file_name": "bank-report-USER_ID-2016-01-20-131015.csv",
         "created_from": "manual",
         "date_created": "2016-01-20T10:07:53.000-04:00"
