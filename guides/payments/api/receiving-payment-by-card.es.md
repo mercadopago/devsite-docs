@@ -4,7 +4,7 @@ La integración por API de pagos de Mercado Pago para tarjetas permite que pueda
 
 ## ¿Cómo funciona?
 
-![API-integration-flowchart](/images/api/api_integration_flowchart_es.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-es.png)
 
 <br>
 
@@ -433,7 +433,7 @@ curl -X POST \
 
 Los posibles estados de un pago son:
 
-![payment-status](/images/api/api_payment_status.png)
+![payment-status](/images/api/api-payment-status-es.png)
 <br>
 <br>
 
