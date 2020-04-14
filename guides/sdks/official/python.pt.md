@@ -44,7 +44,7 @@ Obtenha uma preferência de pagamento existente
 
 ``` python
     def index(req, **kwargs):
-        preferenceResult = mp.get_preference("PREFERENCE_ID")
+        preferenceResult = mp.preference.get("PREFERENCE_ID")
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -64,7 +64,7 @@ Crie uma preferência de pagamento
             ]
         }
 
-        preferenceResult = mp.create_preference(preference)
+        preferenceResult = mp.preference.create(preference)
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -84,7 +84,7 @@ Atualize uma preferência de pagamento existente:
                 ]
             }
 
-        preferenceResult = mp.update_preference(id, preference)
+        preferenceResult = mp.preference.update(id, preference)
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -100,7 +100,7 @@ Busque pagamentos:
             "external_reference": None
         }
 
-        searchResult = mp.search_payment(filters)
+        searchResult = mp.payment.search(filters)
 
         return json.dumps(searchResult, indent=4)
 ```
@@ -113,7 +113,7 @@ Obtenha a informação de um pagamento:
 
     def index(req, **kwargs):
         mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
-        paymentInfo = mp.get_payment (kwargs["id"])
+        paymentInfo = mp.payment.get(kwargs["id"])
 
         if paymentInfo["status"] == 200:
             return json.dumps(paymentInfo, indent=4)
@@ -125,7 +125,7 @@ Cancelamento (Somente para pagamentos pendentes)
 
 ``` python
     def index(req, **kwargs):
-        result = mp.cancel_payment("ID")
+        result = mp.payment.cancel("ID")
 
         // Show result
         return json.dumps(result, indent=4)
@@ -135,7 +135,7 @@ Devolução (Somente para pagamentos creditados)
 
 ``` python
     def index(req, **kwargs):
-        result = mp.refund_payment("ID")
+        result = mp.payment.get_refund("ID")
 
         // Show result
         return json.dumps(result, indent=4)
@@ -159,19 +159,19 @@ Obtenha seu **ACCESS_TOKEN** na [seção Credenciais]([FAKER][CREDENTIALS][URL])
 ### Crie um pagamento
 
 ``` python
-    mp.post ("/v1/payments", payment_data)
+    mp.payment.create (payment_data)
 ```
 
 ### Crie um customer
 
 ```python
-    mp.post ("/v1/customers", {"email": "email@test.com"})
+    mp.customer.create ({"email": "email@test.com"})
 ```
 
 ### Obtenha um customer
 
 ```python
-    mp.get ("/v1/customers/CUSTOMER_ID")
+    mp.customer.get (CUSTOMER_ID)
 ```
 
 > Para mais informações visite a sessão [API reference]https://www.mercadopago.com.br/developers/pt/reference).
@@ -182,26 +182,26 @@ Obtenha seu **ACCESS_TOKEN** na [seção Credenciais]([FAKER][CREDENTIALS][URL])
 
 ```python
     // Obter um recurso com parâmetros opcionais de URL. Também é possível desabilitar a autenticação para APIs públicas.
-        mp.get ("/resource/uri", [params], [authenticate=true]);
+        mp.genericcall.get ("/resource/uri", [params], [authenticate=true]);
 ```
 
 ```python
     // Criar um recurso com "data" e parâmetros opcionais de URL.
-    mp.post ("/resource/uri", data, [params]);
+    mp.genericcall.post ("/resource/uri", data, [params]);
 ```
 ```python
     // Atualizar um recurso com "data" e parâmetros opcionais de URL.
-    mp.put ("/resource/uri", data, [params]);
+    mp.genericcall.put ("/resource/uri", data, [params]);
 ```
 ```python
     // Eliminar um recurso com "data" e parâmetros opcionais de URL.
-    mp.delete ("/resource/uri", [params]);
+    mp.genericcall.delete ("/resource/uri", [params]);
 ```
 
 Por exemplo, se quiser obter a lista de sites disponíveis (sem parâmetros na autenticação):
 
 ```python
-    result = mp.get ("/sites", null, false);
+    result = mp.genericcall.get ("/sites", null, false);
 
     print (json.dumps(result, indent=4))
 ```

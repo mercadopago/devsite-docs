@@ -46,7 +46,7 @@ Get an existent Checkout preference
 
 ``` python
     def index(req, **kwargs):
-        preferenceResult = mp.get_preference("PREFERENCE_ID")
+        preferenceResult = mp.preference.get("PREFERENCE_ID")
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -66,7 +66,7 @@ Create a Checkout preference
             ]
         }
 
-        preferenceResult = mp.create_preference(preference)
+        preferenceResult = mp.preference.create(preference)
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -86,7 +86,7 @@ Update an existent Checkout preference
                 ]
             }
 
-        preferenceResult = mp.update_preference(id, preference)
+        preferenceResult = mp.preference.update(id, preference)
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -101,7 +101,7 @@ Search for payments
             "external_reference": None
         }
 
-        searchResult = mp.search_payment(filters)
+        searchResult = mp.payment.search(filters)
 
         return json.dumps(searchResult, indent=4)
 ```
@@ -114,7 +114,7 @@ Get payment data
 
     def index(req, **kwargs):
         mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
-        paymentInfo = mp.get_payment (kwargs["id"])
+        paymentInfo = mp.payment.get(kwargs["id"])
 
         if paymentInfo["status"] == 200:
             return json.dumps(paymentInfo, indent=4)
@@ -126,7 +126,7 @@ Cancel (only for pending payments)
 
 ``` python
     def index(req, **kwargs):
-        result = mp.cancel_payment("ID")
+        result = mp.payment.cancel("ID")
 
         // Show result
         return json.dumps(result, indent=4)
@@ -136,7 +136,7 @@ Refund (only for accredited payments)
 
 ``` python
     def index(req, **kwargs):
-        result = mp.refund_payment("ID")
+        result = mp.payment.get_refund("ID")
 
         // Show result
         return json.dumps(result, indent=4)
@@ -160,17 +160,17 @@ Configure your credentials
 
 Create payment
 
-    mp.post ("/v1/payments", payment_data)
+    mp.payment.create (payment_data)
 
 Create customer
 
 
-    mp.post ("/v1/customers", {"email": "email@test.com"})
+    mp.customer.create ({"email": "email@test.com"})
 
 Get customer
 
 
-    mp.get ("/v1/customers/CUSTOMER_ID")
+    mp.customer.get (CUSTOMER_ID)
 
 * View more Custom checkout related APIs in Developers Site
     * Argentina: `https://www.mercadopago.com.ar/developers <https://www.mercadopago.com.ar/developers>`_
@@ -186,21 +186,21 @@ You can access any other resource from the MercadoPago API using the generic met
 
 
     // Get a resource, with optional URL params. Also you can disable authentication for public APIs
-    mp.get ("/resource/uri", [params], [authenticate=true]);
+    mp.genericcall.get ("/resource/uri", [params], [authenticate=true]);
     
     // Create a resource with "data" and optional URL params.
-    mp.post ("/resource/uri", data, [params]);
+    mp.genericcall.post ("/resource/uri", data, [params]);
     
     // Update a resource with "data" and optional URL params.
-    mp.put ("/resource/uri", data, [params]);
+    mp.genericcall.put ("/resource/uri", data, [params]);
     
     // Delete a resource with optional URL params.
-    mp.delete ("/resource/uri", [params]);
+    mp.genericcall.delete ("/resource/uri", [params]);
 
 For example, if you want to get the Sites list (no params and no authentication):
 
 
-    result = mp.get ("/sites", null, false);
+    result = mp.genericcall.get ("/sites", null, false);
     
     print (json.dumps(result, indent=4))
 

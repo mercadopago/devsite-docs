@@ -45,7 +45,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
 
 ``` python
     def index(req, **kwargs):
-        preferenceResult = mp.get_preference("PREFERENCE_ID")
+        preferenceResult = mp.preference.get("PREFERENCE_ID")
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -65,7 +65,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
             ]
         }
 
-        preferenceResult = mp.create_preference(preference)
+        preferenceResult = mp.preference.create(preference)
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -85,7 +85,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
                 ]
             }
 
-        preferenceResult = mp.update_preference(id, preference)
+        preferenceResult = mp.preference.update(id, preference)
 
         return json.dumps(preferenceResult, indent=4)
 ```
@@ -101,7 +101,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
             "external_reference": None
         }
 
-        searchResult = mp.search_payment(filters)
+        searchResult = mp.payment.search(filters)
 
         return json.dumps(searchResult, indent=4)
 ```
@@ -114,7 +114,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
 
     def index(req, **kwargs):
         mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
-        paymentInfo = mp.get_payment (kwargs["id"])
+        paymentInfo = mp.payment.get(kwargs["id"])
 
         if paymentInfo["status"] == 200:
             return json.dumps(paymentInfo, indent=4)
@@ -126,7 +126,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
 
 ``` python
     def index(req, **kwargs):
-        result = mp.cancel_payment("ID")
+        result = mp.payment.cancel("ID")
 
         // Show result
         return json.dumps(result, indent=4)
@@ -136,7 +136,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
 
 ``` python
     def index(req, **kwargs):
-        result = mp.refund_payment("ID")
+        result = mp.payment.get_refund("ID")
 
         // Show result
         return json.dumps(result, indent=4)
@@ -160,19 +160,19 @@ Obtén tu **ACCESS_TOKEN** en la [sección de Credenciales]([FAKER][CREDENTIALS]
 ### Crear un pago
 
 ``` python
-    mp.post ("/v1/payments", payment_data)
+    mp.payment.create (payment_data)
 ```
 
 ### Crear un customer
 
 ```python
-    mp.post ("/v1/customers", {"email": "email@test.com"})
+    mp.customer.create ({"email": "email@test.com"})
 ```
 
 ### Obtener un customer
 
 ```python
-    mp.get ("/v1/customers/CUSTOMER_ID")
+    mp.customer.get (CUSTOMER_ID)
 ```
 
 > Para más información visita la sección [API reference]https://www.mercadopago.com.ar/developers/es/reference).
@@ -183,26 +183,26 @@ Puedes acceder a cualquier otro recurso de la API de Mercado Pago utilizando mé
 
 ```python
     // Obtener un recurso con URL params opcionales. También puedes deshabilitar la autenticación para APIs públicas.
-        mp.get ("/resource/uri", [params], [authenticate=true]);
+        mp.genericcall.get ("/resource/uri", [params], [authenticate=true]);
 ```
 
 ```python
     // Crear un recurso con "data"y URL params opcionales.
-    mp.post ("/resource/uri", data, [params]);
+    mp.genericcall.post ("/resource/uri", data, [params]);
 ```
 ```python
     // Actualizar un recurso con "data"y URL params opcionales.
-    mp.put ("/resource/uri", data, [params]);
+    mp.genericcall.put ("/resource/uri", data, [params]);
 ```
 ```python
     // Eliminar un recurso con "data" y URL params opcionales.
-    mp.delete ("/resource/uri", [params]);
+    mp.genericcall.delete ("/resource/uri", [params]);
 ```
 
 Por ejemplo, si quieres obtener la lista de sitios disponibles (sin parámetros ni autenticación):
 
 ```python
-    result = mp.get ("/sites", null, false);
+    result = mp.genericcall.get ("/sites", null, false);
 
     print (json.dumps(result, indent=4))
 ```

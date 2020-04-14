@@ -31,7 +31,7 @@ $mp = MercadoPago.new('ACCESS_TOKEN')
 #### Obtén una preferencia de pago existente
 
 ```ruby
-preference = $mp.get_preference('PREFERENCE_ID')
+preference = $mp.preference.get('PREFERENCE_ID')
 
 puts $preferenceResult
 ```
@@ -50,7 +50,7 @@ preference_data = {
                 }
             ]
         }
-preference = $mp.create_preference(preference_data)
+preference = $mp.preference.create(preference_data)
 
 puts preference
 ```
@@ -60,7 +60,7 @@ puts preference
 ```ruby
 preferenceDataToUpdate = Hash["items" => Array(Array["title"=>"testUpdated", "quantity"=>1, "unit_price"=>2])]
 
-preferenceUpdate = $mp.update_preference("PREFERENCE_ID", preferenceDataToUpdate)
+preferenceUpdate = $mp.preference.update("PREFERENCE_ID", preferenceDataToUpdate)
 
 puts preferenceUpdate
 ```
@@ -72,7 +72,7 @@ puts preferenceUpdate
 ```ruby    
 filters = Array["id"=>null, "site_id"=>null, "external_reference"=>null]
 
-searchResult = $mp.search_payment(filters)
+searchResult = $mp.payment.search(filters)
 
 puts searchResult
 ```
@@ -80,7 +80,7 @@ puts searchResult
 #### Obtener la información de un pago:
 
 ```ruby
-paymentInfo = $mp.get_payment("ID")
+paymentInfo = $mp.payment.get("ID")
 
 puts paymentInfo
 ```
@@ -88,7 +88,7 @@ puts paymentInfo
 #### Cancelar (Sólo para pagos pendientes)
 
 ```ruby
-result = $mp.cancel_payment("ID");
+result = $mp.payment.cancel("ID");
 
 // Show result
 puts result
@@ -97,7 +97,7 @@ puts result
 ### Refund (only for accredited payments)
 
 ```ruby
-result = $mp.refund_payment("ID");
+result = $mp.payment.get_refund("ID");
 
 // Show result
 puts result
@@ -122,19 +122,19 @@ $mp = MercadoPago.new('ACCESS_TOKEN')
 ### Crear un pago
 
 ```ruby
-$mp.post ("/v1/payments", payment_data);
+$mp.payment.create(payment_data);
 ```
 
 ### Crear un customer
 
 ```ruby
-$mp.post ("/v1/customers", Hash["email" => "email@test.com"]);
+$mp.customer.create(Hash["email" => "email@test.com"]);
 ```
 
 ### Obtener un customer
 
 ```ruby
-$mp.get ("/v1/customers/CUSTOMER_ID");
+$mp.customer.get(CUSTOMER_ID);
 ```
 
 > Para más información visita la sección [API reference]https://www.mercadopago.com.ar/developers/es/reference).
@@ -145,22 +145,22 @@ Puedes acceder a cualquier otro recurso de la API de Mercado Pago utilizando mé
 
 ```ruby
 // Obtener un recurso con URL params opcionales. También puedes deshabilitar la autenticación para APIs públicas.
-$mp.get ("/resource/uri", [params], [authenticate=true])
+$mp.genericcall.get ("/resource/uri", [params], [authenticate=true])
 
 // Crear un recurso con "data"y URL params opcionales.
-$mp.post ("/resource/uri", data, [params])
+$mp.genericcall.post ("/resource/uri", data, [params])
 
 // Actualizar un recurso con "data"y URL params opcionales.
-$mp.put ("/resource/uri", data, [params])
+$mp.genericcall.put ("/resource/uri", data, [params])
 
 // Eliminar un recurso con "data" y URL params opcionales.
-$mp.delete ("/resource/uri", [params])
+$mp.genericcall.delete ("/resource/uri", [params])
 ```
 
 Por ejemplo, si quieres obtener la lista de sitios disponibles (sin parámetros ni autenticación):
 
 ```ruby
-$sites = $mp.get ("/sites", null, false)
+$sites = $mp.genericcall.get ("/sites", null, false)
 
 puts $sites
 ```
