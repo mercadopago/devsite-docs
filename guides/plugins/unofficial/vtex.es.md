@@ -18,7 +18,7 @@
 
 [VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com/es).
+Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
 ## ¿Cómo puedo operar con Mercado Pago en VTEX?
 
@@ -266,15 +266,11 @@ Luego de configurar la afiliación es necesario agregar el plan de pago
 6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
@@ -326,7 +322,7 @@ Para ver más detalle de los estados posibles de un pago, ver sección de [posib
 
 [VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com/es).
+Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
 ## ¿Cómo puedo operar con Mercado Pago en VTEX?
 
@@ -623,15 +619,11 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
@@ -684,7 +676,7 @@ Para ver más detalle de los estados posibles de un pago, ver sección de [posib
 
 [VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com/es).
+Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
 ## ¿Cómo puedo operar con Mercado Pago en VTEX?
 
@@ -974,15 +966,11 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
@@ -1034,7 +1022,7 @@ Para ver más detalle de los estados posibles de un pago, ver sección de [posib
 
 [VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com/es).
+Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
 ## ¿Cómo puedo operar con Mercado Pago en VTEX?
 
@@ -1211,15 +1199,11 @@ Uruguay: Oca.
 6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
@@ -1271,7 +1255,7 @@ Para ver más detalle de los estados posibles de un pago, ver sección de [posib
 
 [VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com/es).
+Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
 ## ¿Cómo puedo operar con Mercado Pago en VTEX?
 
@@ -1560,15 +1544,11 @@ Luego de configurar la afiliación es necesario agregar el plan de pago:
 6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
@@ -1621,7 +1601,7 @@ Para ver más detalle de los estados posibles de un pago, ver sección de [posib
 
 [VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda] (help.vtex.com/es).
+Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
 ## ¿Cómo puedo operar con Mercado Pago en VTEX?
 
@@ -1823,15 +1803,11 @@ Luego de configurar la afiliación es necesario agregar el plan de pago
 6. Copiar y pegar el siguiente código, reemplazando el campo `publicKey` según corresponda:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
