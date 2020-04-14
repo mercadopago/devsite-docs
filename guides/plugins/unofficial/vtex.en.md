@@ -512,7 +512,7 @@ document.body.appendChild(script);
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 
@@ -771,7 +771,7 @@ document.body.appendChild(script);
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 
@@ -1030,7 +1030,7 @@ document.body.appendChild(script);
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 
@@ -1283,7 +1283,7 @@ document.body.appendChild(script);
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 

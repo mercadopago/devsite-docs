@@ -275,7 +275,7 @@ document.body.appendChild(script);
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 
 ## Interpretar log de VTEX
@@ -628,7 +628,7 @@ document.body.appendChild(script);
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 
 ## Interpretar log de VTEX
@@ -975,7 +975,7 @@ document.body.appendChild(script);
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 
 ## Interpretar log de VTEX
@@ -1208,7 +1208,7 @@ document.body.appendChild(script);
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 
 ## Interpretar log de VTEX
@@ -1553,7 +1553,7 @@ document.body.appendChild(script);
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 
 ## Interpretar log de VTEX
@@ -1812,7 +1812,7 @@ document.body.appendChild(script);
 
 7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 
 ## Interpretar log de VTEX
