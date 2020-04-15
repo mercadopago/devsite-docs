@@ -18,7 +18,7 @@
 
 [VTEX](https://www.vtex.com/en/) is a robust PCI compliance e-commerce platform based in Brazil with operations all around Latin America that provides the capability to process payments through Mercado Pago.
 
-For further information about VTEX features please check it's [support site](help.vtex.com).
+For further information about VTEX features please check it's [support site](https://help.vtex.com).
 
 ## Which products of Mercado Pago are available in VTEX?
 
@@ -302,7 +302,7 @@ In case of a rejection is important to check `Status_detail` field which specifi
 
 [VTEX](https://www.vtex.com/en/) is a robust PCI compliance e-commerce platform based in Brazil with operations all around Latin America that provides the capability to process payments through Mercado Pago.
 
-For further information about VTEX features please check it's [support site](help.vtex.com).
+For further information about VTEX features please check it's [support site](https://help.vtex.com).
 
 ## Which products of Mercado Pago are available in VTEX?
 
@@ -503,20 +503,16 @@ Uruguay: Oca.
 6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 
@@ -570,7 +566,7 @@ In case of a rejection is important to check `Status_detail` field which specifi
 
 [VTEX](https://www.vtex.com/en/) is a robust PCI compliance e-commerce platform based in Brazil with operations all around Latin America that provides the capability to process payments through Mercado Pago.
 
-For further information about VTEX features please check it's [support site](help.vtex.com).
+For further information about VTEX features please check it's [support site](https://help.vtex.com).
 
 ## Which products of Mercado Pago are available in VTEX?
 
@@ -766,20 +762,16 @@ Uruguay: Oca.
 6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 
@@ -832,7 +824,7 @@ In case of a rejection is important to check `Status_detail` field which specifi
 
 [VTEX](https://www.vtex.com/en/) is a robust PCI compliance e-commerce platform based in Brazil with operations all around Latin America that provides the capability to process payments through Mercado Pago.
 
-For further information about VTEX features please check it's [support site](help.vtex.com).
+For further information about VTEX features please check it's [support site](https://help.vtex.com).
 
 ## Which products of Mercado Pago are available in VTEX?
 
@@ -1029,20 +1021,16 @@ Uruguay: Oca.
 6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 
@@ -1096,7 +1084,7 @@ In case of a rejection is important to check `Status_detail` field which specifi
 
 [VTEX](https://www.vtex.com/en/) is a robust PCI compliance e-commerce platform based in Brazil with operations all around Latin America that provides the capability to process payments through Mercado Pago.
 
-For further information about VTEX features please check it's [support site](help.vtex.com).
+For further information about VTEX features please check it's [support site](https://help.vtex.com).
 
 ## Which products of Mercado Pago are available in VTEX?
 
@@ -1286,20 +1274,16 @@ Uruguay: Oca.
 6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
 
 ```
-var dmlscript = document.createElement("script");
-dmlscript.src = "https://http2.mlstatic.com/storage/bmsdk/js/dml-0.0.7.min.js";
-dmlscript.onload = () => {
-    new DMLSDK({
-        publicKey: "APP_USR-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        out: "vtex.deviceFingerprint"
-    });
-}
-document.body.appendChild(dmlscript);
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
 ```
 
 7. Select "save", the final result should look like the example:
 
-    ![Custom plan](/images/vtex-device-settings-3.png)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Credentials
 
