@@ -500,7 +500,7 @@ Uruguay: Oca.
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
+6. Copy and paste the following code:
 
 ```
 var script = document.createElement("script");
@@ -759,7 +759,7 @@ Uruguay: Oca.
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
+6. Copy and paste the following code:
 
 ```
 var script = document.createElement("script");
@@ -1018,7 +1018,7 @@ Uruguay: Oca.
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
+6. Copy and paste the following code:
 
 ```
 var script = document.createElement("script");
@@ -1271,7 +1271,7 @@ Uruguay: Oca.
 
 4. Select code.
 5. Select checkout5-custom.js.
-6. Copy and paste the following code, replacing the field `publicKey` with your credentials:
+6. Copy and paste the following code:
 
 ```
 var script = document.createElement("script");
