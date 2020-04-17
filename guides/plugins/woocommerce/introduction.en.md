@@ -58,11 +58,3 @@ With these payment options we cover the needs of each business. Review the featu
 >
 > 
 > [Install](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/instalation/)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Integrate Mercado Pagooin WooCommerce
->
-> Connect your Mercado Pago account to the module and capture the payments you receive for your online sales. 
->
-> [Integrate](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/integration/)

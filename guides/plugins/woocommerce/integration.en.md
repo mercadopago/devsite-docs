@@ -40,11 +40,3 @@ Done! With this you can capture the payments you receive in WooCommerce with you
 >
 >
 > [Preferences](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/preferences/)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Test and receive payments
->
-> Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
->
-> [Receive payments](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/receive-payments/)

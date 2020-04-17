@@ -91,11 +91,3 @@ Luego ejecuta los pasos de una **nueva instalación** para actualizar tu tienda 
 >
 > 
 > [Integrar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/integration/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Preferencias de pago
->
-> Configura tus preferencias de pago y haz ajustes según la experiencia que quieras ofrecer a tus clientes.
->
-> [Preferencias](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/preferences/)

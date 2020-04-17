@@ -91,11 +91,3 @@ A seguir, execute as etapas de uma **nova instalação** para atualizar sua loja
 >
 > 
 > [Integrar](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/integration/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Preferências de pagamento
->
-> Configure suas preferências de pagamento e faça ajustes conforme a experiência que você queira oferecer aos seus clientes.
->
-> [Preferencias](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/preferences/)

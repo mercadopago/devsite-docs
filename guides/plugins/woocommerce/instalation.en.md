@@ -91,11 +91,3 @@ Then execute the steps of a **new installation** to update your page with the la
 >
 > 
 > [Integrate](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/integration/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Payment preferences
->
-> Set your payment preferences and make adjustments according to the experience you want to offer your customers.
->
-> [Preferences](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/preferences/)
