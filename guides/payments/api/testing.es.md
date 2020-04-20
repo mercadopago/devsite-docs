@@ -112,7 +112,7 @@ Al terminar el formulario, verifica que las credenciales en tu integración sean
 >
 > [Manejo de respuestas de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Referencias de API
 >

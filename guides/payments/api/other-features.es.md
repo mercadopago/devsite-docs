@@ -344,7 +344,7 @@ curl -X PUT \
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_REQUIRED_ES
 >
 > Requisitos para ir a producción
 >

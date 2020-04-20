@@ -388,7 +388,7 @@ E pode criar um formulário da seguinte maneira:
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture o código de segurança
 
-O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
+O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/#bookmark_capture_os_dados_de_cartão). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
 
 ```javascript
 doSubmit = false;
