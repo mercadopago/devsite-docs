@@ -41,7 +41,7 @@ You need to have a policy on terms and conditions and make it clear that you are
 >
 > Test your integration
 >
-> Check your integration with test users.
+> Check that everything works in your integration with test users.
 >
 > [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/test-integration/)
 

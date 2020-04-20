@@ -680,11 +680,11 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 > LEFT_BUTTON
 >
-> Other functionalities
+> Other features
 >
 > Set up your integration to your specific business needs.
 >
-> [Other functionalities](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/other-features/)
+> [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/other-features/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

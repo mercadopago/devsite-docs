@@ -1,10 +1,10 @@
 # Integrate the payment API for cards
 
-Mercado Pago integration by payment API for cards helps you offer all payment methods on your website. All the experience takes place in your store, so customers can remain there when they make a purchase.
+Mercado Pago integration by payment API for cards helps you offer all types of payment methods on your website. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
 
 ## How does it work?
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-es.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-en.png)
 
 <br>
 
@@ -39,7 +39,7 @@ Card information will be turned into a token so that you can send data to your s
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
-To capture sensitive data from your customers' cards, **please use our form with the corresponding attributes,** which ensures information security and correct token generation. For example, you should observe `data-checkout` attributes and don't put the `name` attribute in fields containing sensitive data. This way your servers will never store data.
+To capture sensitive data from your customer's cards, **please use our form with the corresponding attributes,** which ensures information security and correct token generation. For example, you should observe `data-checkout` attributes and avoid putting the `name` attribute in fields containing sensitive data. This way your servers will never store data.
 
 You can easily include anything you need, change the suggested `label` attribute, and add your own style.
 
@@ -244,7 +244,7 @@ The `createToken` method will return a `card_token` with the secure card display
 >
 > Download Sample Form
 >
-> If you have doubts because you have never developed forms, you can [download a complete payment form sample from GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/).
+> If you have doubts, you can [download a complete payment form sample from GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/).
 
 
 <br>
@@ -255,11 +255,11 @@ The `createToken` method will return a `card_token` with the secure card display
 >
 > Payment submission to Mercado Pago
 
-To continue with Mercado Pago payment process, your backend should know how to receive form information with the generated token and the filled out data.
+To continue with the Mercado Pago payment process, your backend should know how to receive form information with the generated token and the filled out data.
 
-In the above example, after the `submit` action, your backend should make available a `/process_payment` endpoint, which was defined in the form `action` attribute, to receive all data.
+In the above example, after the `submit` action, your backend should display a `/process_payment` endpoint, which is defined in the form `action` attribute, to receive all data.
 
-Once the request –with all the collected information– is at your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`,`transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`,`transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
 
 For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/previous-requirements/#bookmark_install_Mercado_Pago_SDK).
 
@@ -439,7 +439,7 @@ Possible payment statuses are:
 
 For improved payment approval, you need to correctly inform results to your customers when making or creating a payment.
 
-This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment method.
+This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
 
 We recommend using [error response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/handling-responses/) and the suggested communication in each case.
 
@@ -462,7 +462,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Test your integration
 >
-> Check your integration with test users.
+> Check that everything works in your integration with test users.
 >
 > [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/testing/)
 

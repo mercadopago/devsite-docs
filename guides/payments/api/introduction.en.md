@@ -23,9 +23,9 @@ You can use the official SDKs or interact directly with our APIs.
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Integration Requirements
+> Integration requirements
 >
-> Learn all the requirements needed to start integration.
+> Learn all the requirements needed to start your integration.
 >
 > [Integration Requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/previous-requirements/)
 

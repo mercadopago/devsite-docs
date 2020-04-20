@@ -15,7 +15,7 @@ To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 
 ## Always use our libraries
-Please always use our official libraries for your integration. This helps protect your customers' sensitive data, meet the required security standards, and keep yourself up to date.
+Remember to always use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
 
 <br>
 
@@ -25,7 +25,7 @@ Please always use our official libraries for your integration. This helps protec
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include MercadoPago.js
 
-MercadoPago.js allows you to create a payment token to send card data to your backend securely. You can use it adding the following code to your website:
+MercadoPago.js allows you to create a payment token to send card data to your backend securely. You can use it by adding the following code to your website:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
@@ -88,13 +88,13 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ## Learn our API References
 
-If you cannot use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/).
+If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/).
 
 ## Meet the requirements for the production environment
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/). This process can ensure your customers' data security, compliance with legal standards or provisions in each country, and the best shopping experience for your sales.
+When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
-Once your integration is ready, to start receiving payments you just need to fill out the form for the production environment in the [Credentials section]([FAKER][CREDENTIALS][URL]).
+Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 
 
 ---

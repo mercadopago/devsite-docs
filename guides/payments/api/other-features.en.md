@@ -342,9 +342,9 @@ curl -X PUT \
 ```
 
 ---
-### Próximos pasos
+### Next steps
 
-> LEFT_BUTTON_RECOMMENDED_EN
+> LEFT_BUTTON_REQUIRED_EN
 >
 > Requirements for the production environment
 >

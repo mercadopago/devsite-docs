@@ -208,7 +208,7 @@ curl -X POST \
 ]]]
 
 <br>
-The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as Mercado Pago transaction ID.
+The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as the Mercado Pago transaction ID.
 
 ```json
 [
@@ -251,7 +251,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
 
 ------------
 
@@ -544,7 +544,7 @@ curl -X POST \
 ]]]
 
 <br>
-The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as Mercado Pago transaction ID.
+The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as the Mercado Pago transaction ID.
 
 ```json
 [
@@ -589,11 +589,11 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method]https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need.
+Check [credit times by payment method]https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
 
 ## Inform customer payment points
 
-Finally, you should share information of the different places where your customers can pay.
+Finally, you should share information about the different places where your customers can pay.
 
 | Payment method | Available stores |
 | --- | ---|
@@ -827,7 +827,7 @@ curl -X POST \
 ]]]
 
 <br>
-The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as Mercado Pago transaction ID.
+The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as the Mercado Pago transaction ID.
 
 ```json
 [
@@ -873,7 +873,7 @@ For more information, check the [Refunds and Cancellations section]https://www.m
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
 
 ------------
 
@@ -1131,7 +1131,7 @@ curl -X POST \
 ]]]
 
 <br>
-The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as Mercado Pago transaction ID.
+The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as the Mercado Pago transaction ID.
 
 ```json
 [
@@ -1177,7 +1177,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
 
 ------------
 
@@ -1400,7 +1400,7 @@ curl -X POST \
 ]]]
 
 <br>
-The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as Mercado Pago transaction ID.
+The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as the Mercado Pago transaction ID.
 
 ```json
 [
@@ -1452,7 +1452,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method](https://www.mercadopago.cl/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need.
+Check [credit times by payment method](https://www.mercadopago.cl/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
 
 ------------
 
@@ -1650,7 +1650,7 @@ curl -X POST \
 ]]]
 
 <br>
-The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as Mercado Pago transaction ID.
+The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as the Mercado Pago transaction ID.
 
 ```json
 [
@@ -1704,7 +1704,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-para-tus-compradores_2433) whenever you need.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-para-tus-compradores_2433) whenever you need to.
 
 ------------
 
@@ -2002,7 +2002,7 @@ curl -X POST \
 ]]]
 
 <br>
-The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as Mercado Pago transaction ID.
+The response will show pending status until the buyer makes the payment. The payment voucher ID is the same as the Mercado Pago transaction ID.
 
 ```json
 [
@@ -2045,7 +2045,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) whenever you need.
+Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) whenever you need to.
 
 ------------
 
@@ -2056,7 +2056,7 @@ Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meio
 >
 > Test your integration
 >
-> Check your integration with test users.
+> Check that everything works in your integration with test users.
 >
 > [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/test-integration/)
 
