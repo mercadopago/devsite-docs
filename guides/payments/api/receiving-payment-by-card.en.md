@@ -433,7 +433,7 @@ curl -X POST \
 
 Possible payment statuses are:
 
-![payment-status](/images/api/api-payment-status-es.png)
+![payment-status](/images/api/api-payment-status-en.png)
 <br>
 <br>
 
