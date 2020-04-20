@@ -4,7 +4,7 @@ Mercado Pago integration by payment API for cards helps you offer all payment me
 
 ## How does it work?
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-es.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-en.png)
 
 <br>
 
@@ -433,7 +433,7 @@ curl -X POST \
 
 Possible payment statuses are:
 
-![payment-status](/images/api/api-payment-status-es.png)
+![payment-status](/images/api/api-payment-status-en.png)
 <br>
 <br>
 
