@@ -12,7 +12,7 @@ Nuesto SDK es compatible con las versiones de PHP 5.6 o superior.
 
 1) Descargar [Composer](https://getcomposer.org/download/) (Si este no se encuentra instalado previamente).
 
-2) Dirigirse al directorio del proyecto y ejecutar `composer require "mercadopago/dx-php"` en la linea de comandos.
+2) Dirigirse al directorio del proyecto y ejecutar `php composer.phar require "mercadopago/dx-php"` en la linea de comandos.
 
 3) Ahora el directorio deberia verse asi.
 

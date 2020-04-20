@@ -58,7 +58,7 @@ If you don't have one yet, you can <a href="https://www.mercadopago.com.br/" tar
 
 Then run the following code on the command line:
 ===
-php composer.phar require "mercadopago/dx-php:dev-master"
+php composer.phar require "mercadopago/dx-php"
 ```
 ```node
 ===

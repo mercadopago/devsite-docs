@@ -58,7 +58,7 @@ Si aún no tienes una, puedes <a href="https://www.mercadopago.com.co/" target="
 
 Luego ejecuta el siguiente código en la línea de comandos:
 ===
-php composer.phar require "mercadopago/dx-php:dev-master"
+php composer.phar require "mercadopago/dx-php"
 ```
 ```node
 ===
