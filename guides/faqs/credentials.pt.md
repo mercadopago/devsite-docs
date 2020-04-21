@@ -9,7 +9,7 @@ sites_supported:
 
 ## O que são minhas credenciais e onde posso encontrá-las?
 
-Suas credenciais são as Chaves que proporcionamos para que você possa fazer suas integrações. 
+As credenciais são as Chaves que proporcionamos para que você possa fazer suas integrações. 
 
 Suas credenciais são:
 

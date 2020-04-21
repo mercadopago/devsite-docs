@@ -2,9 +2,9 @@
 
 # Credenciales
 
-## Que són mis credenciales y dónde puedo encontrarlas
+## Qué son mis credenciales y dónde puedo encontrarlas
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
+Las credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
 
 Tus credenciales son:
 
@@ -42,9 +42,9 @@ Tené en cuenta que tenés que reemplazar las credenciales que ya usabas por las
 
 # Credenciales
 
-## Que són mis credenciales y dónde puedo encontrarlas
+## Qué son mis credenciales y dónde puedo encontrarlas
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
+Las credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
 
 Tus credenciales son:
 
@@ -82,9 +82,9 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 # Credenciales
 
-## Que són mis credenciales y dónde puedo encontrarlas
+## Qué son mis credenciales y dónde puedo encontrarlas
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
+Las credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
 
 Tus credenciales son:
 
@@ -122,9 +122,9 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 # Credenciales
 
-## Que són mis credenciales y dónde puedo encontrarlas
+## Qué son mis credenciales y dónde puedo encontrarlas
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
+Las credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
 
 Tus credenciales son:
 
@@ -163,9 +163,9 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 # Credenciales
 
-## Que són mis credenciales y dónde puedo encontrarlas
+## Qué son mis credenciales y dónde puedo encontrarlas
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
+Las credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
 
 Tus credenciales son:
 
@@ -203,9 +203,9 @@ Ten en cuenta que tienes que reemplazar las credenciales que ya usabas por las n
 
 # Credenciales
 
-## Que són mis credenciales y dónde puedo encontrarlas
+## Qué son mis credenciales y dónde puedo encontrarlas
 
-Tus credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
+Las credenciales son las claves que te proporcionamos para que puedas hacer tus integraciones.
 
 Tus credenciales son:
 

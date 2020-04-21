@@ -10,7 +10,7 @@ sites_supported:
 
 ## What are my credentials and where can I find them
 
-Your credentials are the keys that we provided you so that you could make your integrations.
+The credentials are the keys that we provided you so that you could make your integrations.
 
 Your credentials include:
 
