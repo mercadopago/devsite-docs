@@ -48,7 +48,7 @@ Instale o [SDKs oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/
 
 Execute o seguinte código na sua linha de comando:
 ===
-php composer.phar require "mercadopago/dx-php:dev-master"
+php composer.phar require "mercadopago/dx-php"
 ```
 ```node
 ===
