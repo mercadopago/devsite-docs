@@ -6,7 +6,7 @@ Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se re
 
 ## Resultados da criação de uma cobrança
 
-Estado | status_detail | Mensagem sugerida
+Estado | `status_detail` | Mensagem sugerida
 ------------ | ------------- | -------------
 approved | `accredited` | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como `statement_descriptor`.
 in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupe, em menos de 2 días úteis te avisaremos por e-mail se foi creditado.
@@ -56,7 +56,7 @@ default | Outro código de erro                                               | 
 
 ## Erros na criação do token de cartão
 
-Estado | status_detail | Mensagem sugerida
+Estado | `status_detail` | Mensagem sugerida
 ------------ | ------------- | -------------
 106 | Cannot operate between users from different countries | Não pode efetuar pagamentos a usuários de outros países.
 109 | Invalid number of shares for this payment_method_id | O `payment_method_id` não processa pagamentos parcelados. <br/><br/> Escolha outro cartão ou outra forma de pagamento.

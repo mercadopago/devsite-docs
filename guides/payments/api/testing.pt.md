@@ -110,7 +110,7 @@ Ao terminar o formulário, certifique-se de que as credenciais na sua integraç�
 >
 > [Manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/)
 
-> RIGHT_BUTTON
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Referências de API
 >
