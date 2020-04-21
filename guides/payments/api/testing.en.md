@@ -1,4 +1,4 @@
-# Test your Integration
+# Test your integration
 
 We will explain how to use our test cards and users to check that your payments are correctly created and your messages are effective.
 
@@ -49,10 +49,10 @@ curl -X POST \
 >Importante
 >
 > * Both buyer and seller must be test users.
-> * You can generate up to 10 concurrent test user accounts. Therefore, we recommend you save each _email_ and _password_.
+> * You can generate up to 10 simultaneous test user accounts. Therefore, we recommend you save each _email_ and _password_.
 > * Test users expire after 60 days without activity in Mercado Pago.
 > * To make test payments we recommend using low amounts.
-> * Amounts should observe the ----[mla]---- [minimum and maximum values](https://www.mercadopago/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [minimum and maximum values](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [minimum and maximum values](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [minimum and maximum values](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [minimum and maximum values](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [minimum and maximum values](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [minimum and maximum values](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ for each payment method.
+> * Amounts should be within the ----[mla]---- [minimum and maximum values](https://www.mercadopago/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [minimum and maximum values](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [minimum and maximum values](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [minimum and maximum values](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [minimum and maximum values](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [minimum and maximum values](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [minimum and maximum values](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ for each payment method.
 
 ## Test the payment flow
 
@@ -93,7 +93,7 @@ To **test different payment results,** complete the information you want in the 
 >
 > Important
 >
-> Take into account that you cannot test the entire flow for cash payment methods.
+> Consider that you can't test the entire flow for cash payment methods.
 
 ## Start receiving payments
 

@@ -193,8 +193,6 @@ function getInstallments(){
 
 ------------
 
-<br>
-
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Crea el token de la tarjeta
 
 Antes de enviar el pago, debes crear el token que contendrá de manera segura toda la información de la tarjeta. Lo debes generar de la siguiente manera:

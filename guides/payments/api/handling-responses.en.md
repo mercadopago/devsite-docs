@@ -2,7 +2,7 @@
 
 Offer your customers clear and accurate information about possible card data entry or payment status errors. This way they are notified of the resolution actions they can take, or any additional step required.
 
-For example, if the card has no sufficient buyer credit balance, you can suggest trying again with another payment method to complete the transaction.
+For example, if the card has insufficiente balance, you can suggest trying again with another payment method to complete the transaction.
 
 
 ## Collection creation results
