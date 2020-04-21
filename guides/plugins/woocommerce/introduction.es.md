@@ -58,11 +58,3 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 >
 > 
 > [Instalar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/instalation/)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Integrar Mercado Pago en WooCommerce
->
-> Conecta tu cuenta de Mercado Pago al módulo y captura los pagos de tus ventas online.
->
-> [Integrar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/integration/)

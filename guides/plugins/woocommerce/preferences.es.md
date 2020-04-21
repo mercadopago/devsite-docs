@@ -115,12 +115,3 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 >
 > [Recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Instalar Mercado Pago en WooCommerce
->
-> Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
->
-> 
-> [Instalar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/instalation/)
