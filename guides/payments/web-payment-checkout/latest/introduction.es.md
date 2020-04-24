@@ -8,9 +8,9 @@ sites_supported:
   - mlc
 ---
 
-# ¿Qué es el Checkout Mercado Pago?
+# ¿Qué es el Checkout de Mercado Pago?
 
-Checkout Mercado Pago es la integración que **te permite cobrar a través de nuestro formulario web desde cualquier dispositivo** de manera simple, rápida y segura.
+Checkout de Mercado Pago es la integración que **te permite cobrar a través de nuestro formulario web desde cualquier dispositivo** de manera simple, rápida y segura.
 
 ----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
@@ -19,7 +19,7 @@ Checkout Mercado Pago es la integración que **te permite cobrar a través de nu
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
-## Checkout Mercado Pago ofrece:
+## Checkout de Mercado Pago ofrece:
 
 ----[mla]----
 * Pagar con los principales <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
@@ -46,10 +46,10 @@ Checkout Mercado Pago es la integración que **te permite cobrar a través de nu
 * **Pago con dos tarjetas.** Por ejemplo, para casos de montos altos.
 ------------
 
-## Diferencias de Checkout Mercado Pago con otras herramientas de Mercado Pago
+## Diferencias de Checkout de Mercado Pago con otras herramientas de Mercado Pago
 
 ----[mla, mlb]----
-                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
+                                   | Checkout de Mercado Pago|Web Tokenize Checkout|      API
 :---  | :--: | :--: | :--:
 Dificultad de integración 			  	     |     Baja    |       Media         |     Alta
 Diseño UI/UX 							  	           |      ✔      |         ✔           |
@@ -62,7 +62,7 @@ Pantalla de finalización de pago		     |      ✔      |                     |
 Pago con dos tarjetas					           |      ✔      |                     |
 ------------
 ----[mlm, mlu, mco, mlc]----
-                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
+                                   | Checkout de Mercado Pago|Web Tokenize Checkout|      API
 :---  | :--: | :--: | :--:
 Dificultad de integración 			  	     |     Baja    |       Media         |     Alta
 Diseño UI/UX 							  	           |      ✔      |         ✔           |
@@ -78,7 +78,7 @@ Pantalla de finalización de pago		     |      ✔      |                     |
 >
 > Nota
 >
-> Esta documentación refiere a la nueva versión del Checkout Mercado Pago. Para **ver la versión anterior**, ve a la [sección de Checkout Mercado Pago antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
+> Esta documentación refiere a la nueva versión del Checkout de Mercado Pago. Para **ver la versión anterior**, ve a la [sección de Checkout de Mercado Pago antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
 
 ---
 

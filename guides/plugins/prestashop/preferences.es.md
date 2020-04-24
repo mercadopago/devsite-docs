@@ -63,7 +63,7 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 >
 > Activar el modo binario puede afectar a la prevención de fraude. Déjalo inactivo para que podamos cuidar tus cobros.
 
-### Checkout Mercado Pago
+### Checkout de Mercado Pago
 
 | Configuración                   | Descripción                                                              	                                   |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 > Nota
 >
-> Consulta la [documentación del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 ### Checkout Personalizado
 

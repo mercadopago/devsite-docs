@@ -13,12 +13,12 @@ sites_supported:
 
 ## Esquema redirect
 
-El Checkout Mercado Pago permite cambiar su esquema de apertura.
+El Checkout de Mercado Pago permite cambiar su esquema de apertura.
 
 Los esquemas disponibles actualmente son:
 
-* **Redirect**: abre el Checkout Mercado Pago en una nueva ventana.
-* **Modal**: abre el Checkout Mercado Pago en tu sitio.
+* **Redirect**: abre el Checkout de Mercado Pago en una nueva ventana.
+* **Modal**: abre el Checkout de Mercado Pago en tu sitio.
 
 ----[mla]----
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
@@ -177,7 +177,7 @@ data-button-label="Comprar"
 >
 > Otras funcionalidades
 >
-> Configura tus pago y adapta Checkout Mercado Pago a tu negocio.
+> Configura tus pago y adapta Checkout de Mercado Pago a tu negocio.
 >
 > [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
 

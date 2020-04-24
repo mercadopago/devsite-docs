@@ -12,7 +12,7 @@ Adaltech permite operar Mercado Pago nas seguintes modalidades:
 
 Receba pagamentos em sua loja através de Cartão de Crédito Bancário no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma Adaltech.
 
-### Checkout Mercado Pago
+### Mercado Pago Checkout
 
 Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
 

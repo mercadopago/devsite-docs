@@ -1,11 +1,11 @@
 # Receive Payments
 
 ----[mla,mlb,mlc,mlm,mpe,mco,global]----
-> In this article you will create a **fixed amount tool**. If you want to build something advanced or customized read **[Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** guides.
+> In this article you will create a **fixed amount tool**. If you want to build something advanced or customized read **[Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** guides.
 ------------
 
 ----[mlu]----
-> In this article you will learn to create a **fixed amount tool**. If you want to build something advanced or customized read **[Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** guides.
+> In this article you will learn to create a **fixed amount tool**. If you want to build something advanced or customized read **[Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** guides.
 ------------
 
 On your Mercado Pago account, [you have the option to create a link](https://www.mercadopago.com.ar/tools/create) to be sent to your buyer for making the payment.
@@ -27,4 +27,4 @@ By clicking on this link, your buyers will be redirected to the checkout where t
 
 In addition, we will provide you with an **HTML Code** you can include in your website.
 
-> If you want to build something more advanced and personalized, check our **[Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** documentation.
+> If you want to build something more advanced and personalized, check our **[Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** documentation.

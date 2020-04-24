@@ -73,7 +73,7 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 ----[mlb]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) ------------ ----[mla]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif) ------------
 
 
-### Checkout Mercado Pago
+### Checkout de Mercado Pago
 
 **El comprador será redireccionado a Mercado Pago** para realizar el pago y terminar la compra.
 
@@ -81,7 +81,7 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 2. En el ítem "Tipo de integración" cambia a la opción "Proceso de compra en el sitio de Mercado Pago".
 3. Finalmente, haz clic en "Guardar cambios".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
+----[mlb]----    ![Payments Checkout de Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Checkout de Mercado Pago - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout de Mercado Pago - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
 
 > NOTE
 >

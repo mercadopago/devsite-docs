@@ -14,7 +14,7 @@ sites_supported:
 
 ## Cómo probar mi integración
 
-**Los usuarios de prueba te permiten probar tu Checkout Mercado Pago** al generar flujos de pagos en una copia exacta de tu integración.
+**Los usuarios de prueba te permiten probar tu Checkout de Mercado Pago** al generar flujos de pagos en una copia exacta de tu integración.
 
 Tipos de usuarios | Descripción
 ------------ | -------------
