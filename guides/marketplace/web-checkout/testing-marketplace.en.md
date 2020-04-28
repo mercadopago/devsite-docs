@@ -25,23 +25,19 @@ To simulate the entire payment process, you must create 3 test users: **marketpl
 
 You must make the following API request to create each of the users.
 
-Use the *site_id* to indicate the country where you want to run the test. Argentina: **MLA**, Brazil: **MLB**, Mexico: **MLM**, Chile: **MLC**, Uruguay: **MLU**, Peru: **MPE** and Colombia: **MCO**.
+### Request
 
-##### Request
 ```curl
-# Get access token
-AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token'
--d 'grant_type=client_credentials'
--d 'client_id=CLIENT_ID'
--d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
-
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=$AT" \
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-##### Response
-```curl
+
+
+### Response
+
+```json
 {
     "id": 123456,
     "nickname": "TT123456",

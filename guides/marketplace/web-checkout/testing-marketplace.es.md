@@ -24,23 +24,19 @@ Para simular el proceso de pago de punta a punta debes crear 3 usuarios de prueb
 
 Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios.
 
-Utiliza el dato *site_id* para indicar el país donde quieres realizar las pruebas. Argentina: **MLA**, Brasil: **MLB**, México: **MLM**, Chile: **MLC**, Uruguay: **MLU**, Perú: **MPE** y Colombia: **MCO**.
+### Solicitud
 
-##### _Request_
 ```curl
-# Get access token
-AT=`curl -s -X POST -H 'content-type: application/x-www-form-urlencoded' 'https://api.mercadopago.com/oauth/token'
--d 'grant_type=client_credentials'
--d 'client_id=CLIENT_ID'
--d 'client_secret=CLIENT_SECRET' | grep -o '"access_token":"[^"]*"' | sed -n 's/.*"access_token":"\(.*\)"/\1/p'`
-
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=$AT" \
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-##### _Response_
-```curl
+
+
+### Respuesta
+
+```json
 {
     "id": 123456,
     "nickname": "TT123456",
