@@ -10,8 +10,6 @@ sites_supported:
 
 # What's Mercado Pago Checkout?
 
-Mercado Pago Checkout is the integration that **allows you to charge through our web form from any device** in a simple, fast and secure way. 
-
 Mercado Pago Checkout is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
 
 ----[mla]----

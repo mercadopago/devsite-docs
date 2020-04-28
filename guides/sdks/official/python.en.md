@@ -2,7 +2,7 @@
 
 
 * [Install](#bookmark_install)
-* [Mercado Pago Checkout](#bookmark_checkout_mercado_pago)
+* [Mercado Pago Checkout](#bookmark_mercado_pago_checkout)
 * [Customized checkout](#bookmark_customized_checkout)
 * [Generic methods](#bookmark_generic_methods)
 
