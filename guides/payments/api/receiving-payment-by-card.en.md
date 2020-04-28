@@ -1,6 +1,6 @@
 # Integrate the payment API for cards
 
-Integrate the payment API for cards helps you offer all types of payment methods on your website. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
+Integrating Mercado Pago's payment API for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
 
 ## How does it work?
 
