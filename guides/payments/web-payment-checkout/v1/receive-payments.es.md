@@ -16,7 +16,7 @@ sites_supported:
 >
 > Esta documentación es sobre la versión antigua de Checkout.
 >
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
 

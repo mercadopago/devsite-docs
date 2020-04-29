@@ -4,7 +4,7 @@
 
 Mercado Pago's plugin for shopify has available the next features:
 
-| Feature                                                   | Checkout Mercado Pago 		  |
+| Feature                                                   | Mercado Pago Checkout 		  |
 |---------------------------------------------------------- |-------------------|
 | Credit card Payments                                      | ✔                 |
 | Other payment methods                                     | ✔                 |
@@ -14,7 +14,7 @@ Mercado Pago's plugin for shopify has available the next features:
 | IPN and webhooks                                          | ✔                 |
 | Mercado Pago coupon discounts                             | ✔                 |
 
-### Checkout Mercado Pago
+### Mercado Pago Checkout
 
 Great for merchants who want to get going quickly and easily.
 

@@ -2,7 +2,7 @@
 
 
 * [Instalación](#bookmark_instalación)
-* [Checkout Mercado Pago](#bookmark_checkout_mercado_pago)
+* [Checkout de Mercado Pago](#bookmark_checkout_de_mercado_pago)
 * [Checkout personalizado](#bookmark_checkout_personalizado)
 * [Métodos genéricos](#bookmark_métodos_genéricos)
 
@@ -12,7 +12,7 @@
 ```gem install mercadopago-sdk```
 
 
-## Checkout Mercado Pago
+## Checkout de Mercado Pago
 
 ### Configura tus credenciales
 
