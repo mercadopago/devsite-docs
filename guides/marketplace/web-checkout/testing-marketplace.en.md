@@ -30,7 +30,7 @@ You must make the following API request to create each of the users.
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
+"https://api.mercadopago.com/users/test_user?access_token=ACCESS_TOKEN" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
