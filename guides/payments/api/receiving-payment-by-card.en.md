@@ -1,6 +1,6 @@
 # Integrate the payment API for cards
 
-Mercado Pago integration by payment API for cards helps you offer all types of payment methods on your website. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
+Integrating Mercado Pago's payment API for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
 
 ## How does it work?
 
@@ -193,8 +193,6 @@ function getInstallments(){
 
 ------------
 
-<br>
-
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Create card token
 
 Before payment submission, you should create a token containing all card information securely. You should generate it as follows:
@@ -259,9 +257,9 @@ To continue with the Mercado Pago payment process, your backend should know how 
 
 In the above example, after the `submit` action, your backend should display a `/process_payment` endpoint, which is defined in the form `action` attribute, to receive all data.
 
-Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`,`transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
 
-For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/previous-requirements/#bookmark_install_Mercado_Pago_SDK).
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/previous-requirements/#bookmark_install_mercado_pago_sdk).
 
 [[[
 ```php

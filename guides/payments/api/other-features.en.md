@@ -4,10 +4,10 @@ Add specific features to your integration based on your business needs.
 
 Offer the possibility of granting an authorization before payment capture. This allows you to make a fund reserve in your buyer's card without making a payment.
 
-For example, to grant an authorization when you reserve a car, or for an estimated purchase price prior confirmation.
+For example, to grant an authorization when you reserve a car, or for an estimated purchase price prior to confirmation.
 
 
-## Make a fund reserve
+## Reserve Funds
 
 For fund reserve authorization, you just need to add the `capture=false` attribute like this:
 
@@ -137,11 +137,11 @@ It can be rejected or remain pending. Take into account that authorized funds ca
 
 ## Capture an authorized payment
 
-To complete the payment, you need to capture the funds reserved for your customer. You can capture the amount, in whole or in part.
+To complete the payment, you need to capture the funds reserved for your customer. You can capture the amount, entirely or partially.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture the whole reserve amount
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture the entire amount
 
-To capture the whole amount, you just need to submit the `capture` attribute as `true`.
+To capture the full amount, you just need to submit the `capture` attribute as `true`.
 
 [[[
 ```php

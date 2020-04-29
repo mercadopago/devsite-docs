@@ -2,7 +2,7 @@
 
 ## Remember your customers and cards
 
-Use our APIs to save your customer's card references and offer them a better experience. This way, your customers won't need to fill out their data all the times and their payments will be completed faster.
+Use our APIs to save your customer's card references and offer them a better experience. This way, your customers won't need to fill out their data every time and their payments will be completed faster.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
 
@@ -293,7 +293,7 @@ curl -X POST \
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use saved cards for payments
 
-For customers to make payments with their saved data, you need to capture the security code again. For security reasons, Mercado Pago cannot save that information.
+For customers to make payments with their saved data, you need to capture the security code again. For security reasons, Mercado Pago can't save that information.
 
 <br>
 
@@ -387,7 +387,7 @@ And you can prepare the form like this:
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture security code
 
-The customer needs to enter the security code in a flow like that for [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
+The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
 
 ```javascript
 doSubmit = false;
@@ -671,7 +671,7 @@ curl -X GET \
 
 ## Cancellations and refunds
 
-Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it, in whole or in part.
+Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
 
 For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/cancellations-and-refunds/).
 
