@@ -599,9 +599,7 @@ Finally, you should share information about the different places where your cust
 | --- | ---|
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
-| BBVA Bancomer | Extra |
 | BBVA Bancomer | K |
-| BBVA Bancomer | Círculo K |
 | BBVA Bancomer | Farmacias del Ahorro |
 | BBVA Bancomer | Casa Ley |
 | BBVA Bancomer | BBVA Bancomer |

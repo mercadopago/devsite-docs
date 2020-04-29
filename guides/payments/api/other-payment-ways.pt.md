@@ -599,9 +599,7 @@ Ao finalizar, é importante que compartilhe com seus clientes a informação dos
 | --- | ---|
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
-| BBVA Bancomer | Extra |
 | BBVA Bancomer | K |
-| BBVA Bancomer | Círculo K |
 | BBVA Bancomer | Farmacias del Ahorro |
 | BBVA Bancomer | Casa Ley |
 | BBVA Bancomer | BBVA Bancomer |
