@@ -12,6 +12,15 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 
 
 
+## 3 de abril de 2020
+
+### Actualización de documentación - API
+
+Renovamos la documentación para usar nuestras APIs de pagos. Agregamos un ejemplo básico del formulario en el frontend y sumamos diagramas de funcionamiento para ayudarte a la hora de integrar.
+
+[Ir a documentación de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+
+
 ## 27 de marzo de 2020
 
 Para ayudarte a optimizar tus conciliaciones, implementamos una mejora en la generación de los rangos de fechas para reportes programados. El cambio aplica tanto para el reporte de Dinero retirado, como al reporte de Todas las transacciones. Desde el miércoles 1 de abril, para encontrar tus reportes programados, vas a tener que buscarlos por un segundo menos. 
@@ -34,6 +43,15 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 
 > Para más información sobre la programación de reportes, [consulta la documentación](https://www.mercadopago.com.ar/developers/es/guides/reports/general-considerations/reconciliation-reports/).  
 
+
+## 19 de marzo de 2020
+
+### Nueva versión Prestashop 1.6 & 1.7
+
+Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkout de Mercado Pago a través de modal para que tus compradores puedan realizar una compra sin salir de tu sitio.
+Consulta en Github el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases).
+
+[Ir a documentación de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction/)
 
 
 ## 9 de enero de 2020
