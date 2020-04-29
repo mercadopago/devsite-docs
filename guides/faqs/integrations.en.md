@@ -59,16 +59,6 @@ This way of integrating allows you to connect directly with our APIs.
 
 [Integrate by API](guides/payments/api/introduction)
 
-## How to offer subscriptions
-
-You can create a subscription button that will allow you to receive payments periodically. You choose how much you want to charge and your customers can join the automatic debit with a credit card.
-
-You can use it for whatever you want, such as charging gym fees, rentals or receiving donations.
-
-It is very simple since it does not require knowledge about programming and if you have questions about how to set it up, you can access the [Configuration Guide](https://www.mercadopago.com.ar/ayuda/cobrar-debito-automatico-tarjeta_1141) in the Mercado Pago Help portal.
-
-[Create subscription button](http://www.mercadopago.com.ar/receive-payments/tools)
-
 ## How to offer interest-free installments
 
 We created a tool so you can offer promotions of installments with no interest and make your business more appealing.

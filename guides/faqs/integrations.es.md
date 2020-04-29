@@ -49,16 +49,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 [Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
 
-## Cómo ofrecer suscripciones
-
-Podés crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuánto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
-
-Lo podés usar para lo que quieras, como cobrar cuotas del gimnasio, alquileres o recibir donaciones.
-
-Es muy simple ya que no requiere que necesites saber de programación y si tienes dudas de como configurarlo, podés acceder a la [guía de configuración](https://www.mercadopago.com.ar/ayuda/cobrar-debito-automatico-tarjeta_1141) en el portal de ayuda de Mercado Pago.
-
-[Crear botón de suscripción](http://www.mercadopago.com.ar/receive-payments/tools)
-
 ## Cómo ofrecer cuotas sin interés
 
 Creamos una herramienta para que puedas ofrecer cuotas sin interés y hacer que tu negocio sea más atractivo.
@@ -128,16 +118,6 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
 [Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
-
-## Cómo ofrecer suscripciones
-
-Puedes crear un botón de suscripción que te permitirá recibir pagos de manera periódica. Eliges cada cuánto quieres cobrar y tus clientes podrán adherirse al débito automático con tarjeta de crédito.
-
-Lo puedes usar para lo que quieras, como cobrar cuotas del gimnasio, alquileres o recibir donaciones.
-
-Es muy simple ya que no requiere que necesites saber de programación y si tienes dudas de como configurarlo, puedes acceder a la [guía de configuración](https://www.mercadopago.com.mx/ayuda/cobrar-cargo-automatico-tarjeta_1277) en el portal de ayuda de Mercado Pago.
-
-[Crear botón de suscripción](http://www.mercadopago.com.mx/receive-payments/tools)
 
 ## Cómo ofrecer mensualidades sin intereses
 
