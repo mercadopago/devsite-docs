@@ -1,0 +1,33 @@
+{
+  "elements": [
+    {
+      "id": "202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
+      "client_id": "6295877106812064",
+      "collector_id": 202809963,
+      "concept_id": null,
+      "corporation_id": null,
+      "date_created": "2018-02-02T15:18:51.150-04:00",
+      "expiration_date_from": null,
+      "expiration_date_to": null,
+      "expires": false,
+      "external_reference": "",
+      "integrator_id": null,
+      "items": [
+          "Test Item"
+      ],
+      "last_updated": null,
+      "live_mode": true,
+      "marketplace": "NONE",
+      "operation_type": "regular_payment",
+      "payer_email": "",
+      "platform_id": "",
+      "processing_modes": null,
+      "product_id": "",
+      "purpose": "",
+      "site_id": "MLA",
+      "sponsor_id": 0
+  }
+  ],
+  "next_offset": 1,
+  "total": 1
+}
