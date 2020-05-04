@@ -20,7 +20,7 @@ Para fazer uma autorização de reserva de valores é preciso apenas adicionar o
 
   $payment->transaction_amount = 100;
   $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->description = "Title of what you are paying for";
+  $payment->description = "Título do produto";
   $payment->installments = 1;
   $payment->payment_method_id = "visa";
   $payment->payer = array(
@@ -42,7 +42,7 @@ Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
-      .setDescription('Title of what you are paying for')
+      .setDescription('Título do produto')
       .setInstallments(1)
       .setPaymentMethodId("visa")
       .setPayer(new Payer("test_user_19653727@testuser.com"))
@@ -59,7 +59,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: 'Title of what you are paying for',
+  description: 'Título do produto',
   installments: 1,
   payment_method_id: 'visa',
   payer: {
@@ -83,7 +83,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.new()
 payment.transaction_amount = 100
 payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Title of what you are paying for'
+payment.description = 'Título do produto'
 payment.installments = 1
 payment.payment_method_id = "visa"
 payment.payer = {
@@ -101,7 +101,7 @@ curl -X POST \
     -d '{
           "transaction_amount": 100,
           "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "Título de producto",
+          "description": "Título do produto",
           "installments": 1,
           "payment_method_id": "visa",
           "payer": {
@@ -328,7 +328,7 @@ curl -X PUT \
 ```
 ]]]
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json
 {
