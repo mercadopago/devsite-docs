@@ -12,6 +12,15 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 
 
+## 4 de maio de 2020
+
+### Nova versão SDK .NET
+
+Lançamos uma nova versão do SDK .NET.
+
+Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
+
+
 ## 3 de abril de 2020
 
 ### Atualização de documentação - API

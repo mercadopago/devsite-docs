@@ -11,6 +11,14 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
 
+## 4 de mayo de 2020
+
+### Nueva versión de SDK .NET
+
+Disponibilizamos una nueva versión de SDK .NET.
+
+Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
+
 
 ## 3 de abril de 2020
 
