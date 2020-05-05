@@ -6,8 +6,7 @@ Offer the possibility of granting an authorization before payment capture. This 
 
 For example, to grant an authorization when you reserve a car, or for an estimated purchase price prior to confirmation.
 
-
-## Reserve Funds
+## Reserve Funds
 
 For fund reserve authorization, you just need to add the `capture=false` attribute like this:
 

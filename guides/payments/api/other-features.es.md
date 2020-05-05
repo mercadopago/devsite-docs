@@ -6,7 +6,6 @@ Ofrece la posibilidad de realizar una autorización antes de generar una captura
 
 Por ejemplo, para realizar una autorización a la hora de reservar un auto o con un precio estimado de una compra previo a su confirmación.
 
-
 ## Realiza una reserva de fondos
 
 Para hacer una autorización de reserva de fondos solo tienes que agregar el atributo `capture=false` de la siguiente manera:

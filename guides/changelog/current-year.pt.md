@@ -60,7 +60,7 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 ### Nova versão Prestashop 1.6 & 1.7
 
 Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Mercado Pago através de modal para que seus compradores possam comprar sem sair de seu site.
-Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases).
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases).
 
 [Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
 

@@ -200,7 +200,7 @@ errors:
   - invalid_payment_methods:
       description:
         en: installments invalid. Should be a number between 1 and 36.
-        es: installments no válidas Debe ser un número entre 1 y 36.
+        es: installments no válidas. Debe ser un número entre 1 y 36.
         pt: installments invalid. Should be a number between 1 and 36.
   - invalid_marketplace_fee:
       description:
