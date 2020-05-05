@@ -13,13 +13,13 @@ Find the payment preference settings in the WooCommerce *Settings* once you have
 
 Enter the **name of the business** to appear on your customers' invoice and make it easier for them to recognize the payment when a purchase summary arrives. Select to which **category** the products or services offered by the store belong and make other adjustments according to your needs.
 
-![Basic information](/images/woocomerce/es_info_basica.png)
+![Basic information](/images/woocomerce/en_info_basica.png)
 
 > WARNING
 >
 > Important
 >
-> **Are you a Mercado Pago partner?** Don’t forget to enter your Sponsor_ID, so we can identify all your transactions and know how many orders your account processes.
+> Do not forget to enter your `integrator_id` as a certified Mercado Pago [Partner](https://partners.mercadopago.com/). If you don't have it, you can [request it now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
 
 <span></span>
 

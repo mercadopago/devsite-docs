@@ -9,16 +9,17 @@ Instala el módulo de Mercado Pago en WooCommerce de forma automática, desde tu
 
 Revisa los requisitos de instalación y sigue los pasos que te indicamos ¡solo te llevará unos minutos instalar el módulo! 
 
-| Requisitos                    | Detalles                                                                  	                  |
+| Requisitos                    | Detalles                                                                  	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
-| Versiones        	            | El módulo funciona para las versiones de WordPress 3.1.x - 4.9.x y WooCommerce 2.6.x - 3.4.x  |
+| WordPress        	            | Requerido 4.9.10 o superior. Probado hasta 5.4.1                                              |
+| WooCommerce      	            | Requerido 3.x o superior. Probado hasta 4.0.1                                                 |
 | Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
 | Sistema                     	| Linux x86, Windows x86-64                                                        	            |
-| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	      |
-| Versión PHP                 	| PHP 5.6, 5.5 y 5.4                                        	                                  |
-| Base de datos               	| MySql 5.6 o superior, MariaDB 10.0 o superior                            	                    |
+| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	    |
+| Versión PHP                 	| PHP 5.6, 5.5 y 5.4                                        	                                |
+| Base de datos               	| MySql 5.6 o superior (Oracle o Percona), MariaDB 10.0 o superior         	                    |
 | Dependencias de extensiones 	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API)         |
-| Configuraciones adicionales   | safe_mode off * memory_limite mayor que 256MB (512MB recomendado)                             |
+| Configuraciones adicionales   | safe_mode off * memory_limit mayor que 256MB (512MB recomendado)                              |
 | SSL                         	| Certificado SSL  	                                                                            |
 
 > WARNING
