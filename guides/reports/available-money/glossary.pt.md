@@ -30,6 +30,11 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | STORE_ID | ID da loja se o pagamento é feito em um comércio físico. |
 | STORE_NAME | Nome da loja para o pagamento feito em um comércio físico. |
 | EXTERNAL_STORE_ID | ID da lojal definido pelo usuário para o pagamento feito em um comércio físico. |
+| ORDER_ID | Ordem de compra. |
+| SHIPPING_ID | Identificador de envio. |
+| SHIPMENT_MODE | Modalidade de envio. |
+| PACK_ID | Identificador do pacote no carrinho. |
+| TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 
 
 <hr/>
