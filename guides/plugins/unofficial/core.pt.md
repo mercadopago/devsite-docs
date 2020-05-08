@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # CORE
 
 ## O que é CORE?
