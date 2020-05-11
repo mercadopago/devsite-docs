@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # SDK Mercado Pago para Python
 
 
