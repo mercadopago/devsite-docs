@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Mercado Pago SDK module for Payments integration
 
 

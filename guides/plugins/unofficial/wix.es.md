@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Wix
 
 ## ¿Qué es Wix?
