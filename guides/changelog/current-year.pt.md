@@ -12,6 +12,15 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 
 
+## 6 de maio de 2020
+
+### Nova versão SDK Java
+
+Lançamos uma nova versão do SDK Java 1.6.
+
+Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
+
+
 ## 4 de maio de 2020
 
 ### Nova versão SDK .NET

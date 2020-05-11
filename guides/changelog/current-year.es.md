@@ -11,6 +11,15 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
 
+## 6 de mayo de 2020
+
+### Nueva versión de SDK Java
+
+Disponibilizamos una nueva versión de SDK Java 1.6.
+
+Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
+
+
 ## 4 de mayo de 2020
 
 ### Nueva versión de SDK .NET
