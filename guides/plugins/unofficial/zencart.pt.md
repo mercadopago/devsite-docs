@@ -3,6 +3,12 @@
 ---
 # ZenCart - Mercado Pago Module (v1.5.x)
 
+> WARNING
+>
+> Oferecemos suporte somente para plugins oficiais
+>
+> Esta documentação não conta com o suporte oficial do Mercado Pago. Se você quiser fazer alterações, pode [modificar o código aberto no GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/zencart.pt.md).
+
 ## Funcionalidades
 
 O módulo do Mercado Pago para o ZenCart esta integrado com as seguintes funcionalidades e soluções de pagamento:

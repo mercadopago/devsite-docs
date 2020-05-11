@@ -3,6 +3,12 @@
 ---
 # WP-eCommerce
 
+> WARNING
+>
+> We only support official plugins
+>
+> We do not provide technical support of Mercado Pago for this documentation. If you wish to make any changes, you may [make modifications to our open code on GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/wp-ecommerce.en.md).
+
 # System Requirements
 ### Platform Version
 * <a href="https://wordpress.org/download/">WordPress</a> 4.1 or greater

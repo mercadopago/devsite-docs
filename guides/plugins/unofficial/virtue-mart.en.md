@@ -3,6 +3,12 @@
 ---
 # VirtueMart - Mercado Pago Module (v3.0.x)
 
+> WARNING
+>
+> We only support official plugins
+>
+> We do not provide technical support of Mercado Pago for this documentation. If you wish to make any changes, you may [make modifications to our open code on GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/virtue-mart.en.md).
+
 ## Requirements
 
 Basically, the requirements of this plugin are same as you need to run Virtuemart and Joomla. Your machine should have:

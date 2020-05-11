@@ -3,6 +3,12 @@
 ---
 # XTECH
 
+> WARNING
+>
+> Oferecemos suporte somente para plugins oficiais
+>
+> Esta documentação não conta com o suporte oficial do Mercado Pago. Se você quiser fazer alterações, pode [modificar o código aberto no GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/xtech.pt.md).
+
 ## O que é XTECH
 
 [XTECH](https://www.xtechcommerce.com/) é uma plataforma de ecommerce que disponibiliza a integração com Mercado Pago como meio de pagamento.

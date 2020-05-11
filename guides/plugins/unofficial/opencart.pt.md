@@ -3,6 +3,12 @@
 ---
 # OpenCart
 
+> WARNING
+>
+> Oferecemos suporte somente para plugins oficiais
+>
+> Esta documentação não conta com o suporte oficial do Mercado Pago. Se você quiser fazer alterações, pode [modificar o código aberto no GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/opencart.pt.md).
+
 #### Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)
 
 ## Funcionalidades

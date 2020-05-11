@@ -3,6 +3,12 @@
 ---
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
 
+> WARNING
+>
+> We only support official plugins
+>
+> We do not provide technical support of Mercado Pago for this documentation. If you wish to make any changes, you may [make modifications to our open code on GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/os-commerce.en.md).
+
 ## Features
 
 The module of Mercado Pago to OsCommerce is integrated with the feature and payment solutions:
