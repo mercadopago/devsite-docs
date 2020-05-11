@@ -2,6 +2,7 @@
 sites_supported:
   - mla
   - mco
+indexable: false
 ---
 
 # Pagamentos no modo Gateway em Advanced Payments

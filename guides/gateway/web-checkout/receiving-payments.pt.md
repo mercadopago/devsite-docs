@@ -3,6 +3,7 @@ sites_supported:
   - mla
   - mco
   - global
+indexable: false
 ---
 
 # Mercado Pago Gateway: Checkout Mercado Pago
