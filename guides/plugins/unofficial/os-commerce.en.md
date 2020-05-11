@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # osCommerce - Mercado Pago Module (v2.2 - 2.3)
 
 ## Features

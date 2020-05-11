@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # XTECH
 
 ## O que é XTECH

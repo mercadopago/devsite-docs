@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # OpenCart
 
 #### Mercado Pago Module (Opencart v1.4.9, 1.5.x, 2.x - 2.2, 2.3, 3.x)

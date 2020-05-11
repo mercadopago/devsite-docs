@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # VirtueMart – Módulo de Mercado Pago (v3.0.x)
 
 ## Requerimientos ##

@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # WP-eCommerce
 
 

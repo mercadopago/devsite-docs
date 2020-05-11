@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # ZenCart - Mercado Pago Module (v1.5.x)
 
 ## Funcionalidad
