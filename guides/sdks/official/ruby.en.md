@@ -2,7 +2,7 @@
 
 * [Install](#install)
 * [Basic checkout](#basic-checkout)
-* [Customized checkout](#custom-checkout)
+* [Customized checkout](#customized-checkout)
 * [Generic methods](#generic-methods)
 
 <a name="install"></a>
@@ -18,12 +18,12 @@ gem install mercadopago-sdk
 
 ### Configure your credentials
 
-* Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
+* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
 
-$mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
+$mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
 ### Preferences
@@ -41,15 +41,15 @@ puts $preferenceResult
 ```ruby
 
 preference_data = {
-			"items": [
-				{
-					"title": "testCreate",
-					"quantity": 1,
-					"unit_price": 10.2,
-					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
-				}
-			]
-		}
+            "items": [
+                {
+                    "title": "testCreate",
+                    "quantity": 1,
+                    "unit_price": 10.2,
+                    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
+                }
+            ]
+        }
 preference = $mp.create_preference(preference_data)
 
 puts preference
@@ -104,17 +104,20 @@ puts result
 ```
 
 <a name="custom-checkout"></a>
-## Customized checkout
+
+### Customized checkout
 
 ### Configure your credentials
 
-* Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
+* Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
 
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
+
+> Find all the information about your credentials in our. [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
 ### Create payment
 
@@ -141,7 +144,9 @@ $mp.get ("/v1/customers/CUSTOMER_ID");
     * Colombia: [https://www.mercadopago.com.co/developers](https://www.mercadopago.com.co/developers)
 
 <a name="generic-methods"></a>
-## Generic methods
+
+### Generic methods
+
 You can access any other resource from the Mercado Pago API using the generic methods:
 
 ```ruby

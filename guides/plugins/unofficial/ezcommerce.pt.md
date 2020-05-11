@@ -20,7 +20,7 @@ Para operar com boleto, siga estes passos:
 2. Acesse "Formas de Pagamento".
 3. Selecione a aba "Boleto bancário".
 4. Clique na opção "Boleto Bancário" que tenha na coluna "Adquirente / Gateway" a informação "mercadopago_transparente".
-5. Preencha os dados do grupo "Específico". Para obter o Client ID e o Client Secret veja a seção [Credenciais](#bookmark_credenciais).
+5. Preencha os dados do grupo Específico. Para obter o Client ID e Client Secret, veja a seção [Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
 6. Clique em salvar.
 
     ![Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
@@ -33,7 +33,7 @@ Para operar com cartões de crédito siga estes passos:
 2. Acesse "Formas de Pagamento".
 3. Selecione a aba "Cartão de Crédito".
 4. Localize as bandeiras que tenham na coluna "Adquirente / Gateway" a informação "mercadopago_transparente".
-5. Preencha os dados do grupo "Específico". Para obter o Client ID, o Client Secret e a Public Key veja a seção [Credenciais](#bookmark_credenciais).
+5. Preencha os dados do grupo "Específico". Para obter o Client Id, Client secret e a Public Key veja a seção [Credenciais]([FAKER][CREDENTIALS][URL]).
 6. Selecione o Tipo de parcelamento que deseja:
 - Dinâmico: A plataforma utilizará as configurações de juros da conta do Mercado Pago.
 - Customizado: Deverá configurar as informações de parcelamento na plataforma (total de parcelas, parcelas sem juros, porcentagem de juros e parcela mínima).
@@ -42,13 +42,3 @@ Para operar com cartões de crédito siga estes passos:
     ![Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
 
 >Esses passos devem ser executados para todas as BANDEIRAS que deseja ativar.
-
-## Credenciais
-
-Para obter as credenciais deve seguir esses passos:
-
-1. Faça login na conta do Mercado Pago
-2. Acesse esse [painel]([FAKER][CREDENTIALS][URL]).
-3. Selecione a guia "Checkout básico" para visualizar  Client ID e o Client Secret.
-4. Selecione a guia "Checkout transparente" para visualizar a Public Key e o Access Token (Modo Produção para processar pagamentos reais / Modo Sandbox para realizar testes).
-5. Antes de passar à Produção assegure se de preencher o formulário ‘Eu quero ir para produção’ (Se já realizou este passo, o link não aparece).

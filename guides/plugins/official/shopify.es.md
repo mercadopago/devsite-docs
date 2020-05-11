@@ -4,7 +4,7 @@
 
 O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
 
-| Funcionalidades                                           | Checkout Mercado Pago	    |
+| Funcionalidades                                           | Checkout de Mercado Pago	    |
 |---------------------------------------------------------- |-------------------|
 | Pago con tarjeta de crédito                               | ✔                 |
 | Otros medios de pago                                      | ✔                 |
@@ -14,7 +14,7 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 | IPN y webhooks                                            | ✔                 |
 | Descuentos con cupones de Mercado Pago                    | ✔                 |
 
-### Checkout Mercado Pago
+### Checkout de Mercado Pago
 
 Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
@@ -36,7 +36,7 @@ Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 
 2) En **Accept credit cards**, seleccione **Mercado Pago**.
 
-3) Llene el **CLIENT ID** e **CLIENT SECRET**. [Obtén tus credenciales]([FAKER][CREDENTIALS][URL])
+3) Llene el **Client id** e **Client secret**. [Obtén tus credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
 
   ![Configurar client id y client secret Mercado Pago Shopify](/images/shopify/shopify-config-2.gif)
 

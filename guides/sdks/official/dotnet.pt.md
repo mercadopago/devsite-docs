@@ -5,7 +5,7 @@
 Esta biblioteca fornece aos desenvolvedores um conjunto simples de ligações para a API do Mercado Pago.
 
 ### Versões do .net suportadas:
-Nosso SDK é compatível com .NET versão 3.5 ou maior.
+Nosso SDK é compatível com .NET versão 4.5 ou maior.
 
 ## Instalação
 
@@ -23,29 +23,25 @@ Nosso SDK é compatível com .NET versão 3.5 ou maior.
 
 `> paket add mercadopago-sdk --version 1.2.0`
 
+Veja a versão mais recente [aqui](https://github.com/mercadopago/dx-dotnet/releases)
+
 ## Início Rápido
 
-1. Você deve importar o Mercado Pago SDK.
+1) Você deve importar o Mercado Pago SDK.
 
 ```csharp
  using MercadoPago;
 ```
 
-2. Configure suas crecenciais.
--**Para Checkout Mercado Pago:**
-
-```csharp
- MercadoPago.SDK.ClientId = "YOUR_CLIENT_ID";
- MercadoPago.SDK.ClientSecret = "YOUR_CLIENT_SECRET";
-```
-
--**Para API ou custom checkout:**
+2) Configure suas crecenciais.
 
 ```csharp
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```
 
-3. Usando resource objects
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+
+3) Usando resource objects
 Você pode interagir com todos os recursos disponíveis na API pública para que cada recurso seja representado por classes de acordo com o seguinte diagrama:
 ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 

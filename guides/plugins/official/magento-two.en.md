@@ -20,7 +20,7 @@ SSL                         | It is a requirement that you have an SSL certifica
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
-* [Basic Checkout (Checkout Mercado Pago)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
+* [Basic Checkout (Mercado Pago Checkout)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
     * [Split payments (Two cards)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_payments_with_two_credit_cards)
     * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds/)
 
@@ -77,20 +77,11 @@ This process will explain how to configure the module to accept payments with Ch
 
 1) Go to **Stores > Configuration > Sales > Payment Methods**.
 
-2) To set up the credentials go to **Mercado Pago** > **Credentials**, you will see the field **Public Key** and **Access Token**. You can get the credentials at the link:
-
-* Argentina: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials]([FAKER][CREDENTIALS][URL])
-* Brazil: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials]([FAKER][CREDENTIALS][URL])
-* Chile: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials]([FAKER][CREDENTIALS][URL])
-* Colombia: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials]([FAKER][CREDENTIALS][URL])
-* Mexico: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials]([FAKER][CREDENTIALS][URL])
-* Uruguay: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials]([FAKER][CREDENTIALS][URL])
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials](https://www.mercadopago.com/mlv/account/credentials)
-* Peru: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials]([FAKER][CREDENTIALS][URL])
+2) To set up the credentials go to Mercado Pago > Credentials, you will see the field Public Key and Access Token. Get your credentials in [the Credentials section]([FAKER][CREDENTIALS][URL]).
 
 > There are two types of credentials:
-> * Modo Sandbox: The credentials in this way are used for testing.
-> * Modo Produção: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
+> * Trial credentials: The credentials in this way are used for testing.
+> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
 
 3) With your credentials filled, you need to enable payment methods. Go to **Custom Checkout - Credit And Debit Card**, click in **Configure** and check **Enable** as **Yes**. Make this process for **Custom Checkout - Offline Payments Methods (Ticket)** too and then click on **Save Config**.
 
@@ -105,16 +96,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 1) Go to **Stores > Configuration > Sales > Payment Methods**.
 
-2) To set up the credentials go to **Mercado Pago - Classic Checkout**, click in **Configure**. you will see the field **Client id** and **Client Secret**. You can get the credentials at the link:
-
-* Argentina: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mla/account/credentials?type=basic]([FAKER][CREDENTIALS][URL])
-* Brazil: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials?type=basic](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials?type=basic)
-* Chile: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials?type=basic](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlc/account/credentials?type=basic)
-* Colombia: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials?type=basic](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mco/account/credentials?type=basic)
-* Mexico: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials?type=basic](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlm/account/credentials?type=basic)
-* Uruguay: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials?type=basic](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlu/account/credentials?type=basic)
-* Venezuela: [https://www.mercadopago.com/mlv/account/credentials?type=basic](https://www.mercadopago.com/mlv/account/credentials?type=basic)
-* Peru: [https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mpe/account/credentials?type=basic]([FAKER][CREDENTIALS][URL])
+2) To set up the credentials go to Mercado Pago - Classic Checkout, click in Configure. you will see the field Client id and Client Secret. Get your credentials in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
 

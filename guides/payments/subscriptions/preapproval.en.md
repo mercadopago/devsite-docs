@@ -82,6 +82,12 @@ print_r ($card_token);
  ```
 ]]]
 
+> NOTE
+>
+> Note
+>
+> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
+
 ### Do the Payment:
 
  How are you using a token created with the card_id, you will have to post the payment indicating the customer id associated with the card:

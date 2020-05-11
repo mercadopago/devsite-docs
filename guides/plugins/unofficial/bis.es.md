@@ -12,7 +12,7 @@ Bis2Bis permite operar Mercado Pago en las siguientes modalidades:
 
 Reciba pagos en su tienda a través de la tarjeta de crédito en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma Adaltech.
 
-### Checkout Mercado Pago
+### Checkout de Mercado Pago
 
 Reciba pagos en su tienda utilizando el checkout del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 
@@ -28,7 +28,9 @@ Con la cuenta de MercadoPago ya creada, debe ingresar los datos a continuación 
 
 #### Credenciales
 
-[Public Key y Access Token](([FAKER][CREDENTIALS][URL]))
+[Public key y Access token](([FAKER][CREDENTIALS][URL]))
+
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
 
 ### Canal de soporte de la plataforma:
 

@@ -32,7 +32,7 @@ Enter the name of the business to appear on your customers' invoice and make it 
 ## Basic Configuration
 
 * Define the experience your customers will have:
- * Use the Checkout Mercado Pago to support payments with cards, cash and money in account. It will provide security and comfort to the user. And now you can also configure it as a modal to open in your store!
+ * Use the Mercado Pago Checkout to support payments with cards, cash and money in account. It will provide security and comfort to the user. And now you can also configure it as a modal to open in your store!
  * Use the Custom Checkout and Ticket Checkout to have control over other settings. Activate both to offer all means of payment.
 
 
@@ -64,7 +64,7 @@ You will have different settings available depending on the type of checkout you
 >
 > Activating the binary mode can affect fraud prevention. Leave it inactive so we can take care of your charges.
 
-### Checkout Mercado Pago
+### Mercado Pago Checkout
 
 | Configuration            | Description                                                              	                                   |
 |--------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Note
 >
-> Check [the documentation of the Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
+> Check [the documentation of the Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
 
 ### Custom Checkout
 

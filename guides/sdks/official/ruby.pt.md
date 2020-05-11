@@ -2,7 +2,7 @@
 
 * [Instalação](#install)
 * [Checkout básico](#basic-checkout)
-* [Checkout customizado](#custom-checkout)
+* [Checkout customizado](#checkout-customizado)
 * [Métodos genéricos](#generic-methods)
 
 <a name="install"></a>
@@ -15,12 +15,12 @@
 
 ### Configure suas credenciais
 
-* Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [no seguinte endereço]([FAKER][CREDENTIALS][URL_BASIC]).
+* Obtenha seu **Access token** na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
 
-$mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
+$mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
 ### Preferências
@@ -38,15 +38,15 @@ puts $preferenceResult
 ```ruby
 
 preference_data = {
-			"items": [
-				{
-					"title": "testCreate",
-					"quantity": 1,
-					"unit_price": 10.2,
-					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
-				}
-			]
-		}
+            "items": [
+                {
+                    "title": "testCreate",
+                    "quantity": 1,
+                    "unit_price": 10.2,
+                    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
+                }
+            ]
+        }
 preference = $mp.create_preference(preference_data)
 
 puts preference
@@ -103,15 +103,17 @@ puts result
 <a name="custom-checkout"></a>
 ## Checkout customizado
 
-### Configure your credentials
+### Configure suas credenciais
 
-* Obtenha seu **ACCESS_TOKEN** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
+* Obtenha seu **Access token** na seção [Credenciais]([FAKER][CREDENTIALS][URL]).
 
 ```ruby
 require 'mercadopago.rb'
 
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
+
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 ### Criar pagamentos
 
@@ -138,7 +140,9 @@ $mp.get ("/v1/customers/CUSTOMER_ID");
     * Colombia: [https://www.mercadopago.com.co/developers](https://www.mercadopago.com.co/developers)
 
 <a name="generic-methods"></a>
-## Métodos genéricos
+
+### Métodos genéricos
+
 Você pode acessar qualquer recurso da API do Mercado Pago usando métodos genéricos:
 
 ```ruby

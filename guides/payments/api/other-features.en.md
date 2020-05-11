@@ -1,36 +1,18 @@
----
-  sites_supported:
-      - mla
-      - mlb
-      - mpe
-      - global
----
+# Payment authorization and capture
 
-# Autorización y captura
+Add specific features to your integration based on your business needs.
 
-> WARNING
->
-> Pre-requisitos
->
-> * Tener implementado el [procesamiento de pagos con tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
->
-> Disponible solamente en:
->
-> * Argentina (Visa, Mastercard, American Express, Naranja, Cencosud, Cabal, Diners, Argencard y Tarjeta Shopping)
-> * Brasil
-> * Perú
+Offer the possibility of granting an authorization before payment capture. This allows you to make a fund reserve in your buyer's card without making a payment.
 
-Mercado Pago ofrece la posibilidad de realizar una autorización antes de generar una captura.
+For example, to grant an authorization when you reserve a car, or for an estimated purchase price prior to confirmation.
 
-La autorización es una reserva de fondos en la tarjeta de tu comprador. Esto significa que al realizarla todavía no se le generó un cobro a tu cliente en su tarjeta. Solo cuando se realice una captura el cliente verá el pago.
+## Reserve Funds
 
-## Realizar una reserva de fondos
-
-Realizar una autorización o reserva de los fondos es como realizar un pago, pero agregando el atributo `capture=false`:
+For fund reserve authorization, you just need to add the `capture=false` attribute like this:
 
 [[[
 ```php
-<?php  
+<?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
@@ -58,7 +40,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
@@ -87,9 +69,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  // Do Stuff...
+
 }).catch(function (error) {
-  // Do Stuff...
+
 });
 
 ```
@@ -109,12 +91,27 @@ payment.payer = {
 }
 payment.capture = false
 payment.save()
-
 ```
+```curl
+
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+          "transaction_amount": 100,
+          "token": "ff8080814c11e237014c1ff593b57b4d",
+          "description": "Título de producto",
+          "installments": 1,
+          "payment_method_id": "visa",
+          "payer": {
+            "email": "test_user_19653727@testuser.com"
+          },
+          "capture": "false"
+    }'
 ]]]
 
-
-Respuesta:
+The response indicates that the payment is authorized and pending to capture.
 
 ```json
 {
@@ -128,44 +125,22 @@ Respuesta:
 }
 ```
 
-La respuesta indica que el pago se encuentra **autorizado** y **pendiente de captura**.
+It can be rejected or remain pending. Take into account that authorized funds cannot be used by your customer until captured. You need to make the capture as soon as possible.
 
-Ten en cuenta que estos fondos no podrán ser utilizados por tu comprador hasta que no sean capturados, por lo cual recomendamos realizar la captura en el menor tiempo posible.
-
-----[mla]----
 > WARNING
 >
-> Consideraciones
+> Important
 >
-> * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento será cancelada.
-> * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
-------------
-----[mpe]----
-> WARNING
->
-> Consideraciones
->
-> * La reserva tendrá una validez de 7 días para Visa y 28 días para Mastercad, Amex y Diners. Si no la capturas hasta ese momento será cancelada.
-> * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
-------------
-----[mlb]----
-> WARNING
->
-> Consideraciones
->
-> * La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento será cancelada.
-> * La reserva también puede resultar rechazada o quedar pendiente, como cualquier otro pago normal.
-------------
+> * The reserve will be valid for 7 days. If you don't capture it within this term, it will be cancelled.
+> * You need to save the payment ID to complete the process.
 
-## Capturar un pago
+## Capture an authorized payment
 
-Para poder cobrarle a tu cliente es necesario capturar los fondos que reservaste.
+To complete the payment, you need to capture the funds reserved for your customer. You can capture the amount, entirely or partially.
 
-Es posible realizar la captura por el monto total o de forma parcial.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture the entire amount
 
-### Capturar el monto total de una reserva
-
-Para hacer la captura por el monto total solo debes enviar el atributo `capture` en **true** en un _request_ `HTTP PUT`.
+To capture the full amount, you just need to submit the `capture` attribute as `true`.
 
 [[[
 ```php
@@ -176,25 +151,19 @@ Para hacer la captura por el monto total solo debes enviar el atributo `capture`
   $payment = MercadoPago\Payment::find_by_id($payment_id);
   $payment->capture = true;
   $payment->update();
-
 ?>
 ```
 ```java
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-
 Payment payment = Payment.load(paymentId);
 payment.capture = true;
 payment.update();
-
-
 ```
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
-
-
 ```
 ```ruby
 require 'mercadopago'
@@ -203,11 +172,16 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.load(paymentId)
 payment.capture=true
 payment.update()
-
+```
+```curl
+curl -X PUT \
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ENV_ACCESS_TOKEN' \
+  -H 'Content-Type: application/json' \
+  -d '{"capture": true}'
 ```
 ]]]
 
-El _request_ actualizará el _status_ a `approved` con un `status_detail=accredited`:
+The answer will return that the payment is approved and accredited.
 
 ```json
 {
@@ -220,20 +194,23 @@ El _request_ actualizará el _status_ a `approved` con un `status_detail=accredi
 }
 ```
 
-Siempre que no especifiques un monto se capturará el monto total reservado.
-
 > NOTE
 >
-> Nota
+> Note
 >
-> Si la reserva había sido exitosa, la operación de captura siempre será exitosa también.
+> If you don't add an amount, the total reserved amount will be captured.
 
-### Capturar un pago por un monto menor al reservado
+## Capture payments for less than the reserved amount
 
-> En Argentina solo disponible para Visa, Cabal, Master y American Express
+----[mla]----
+> WARNING
+>
+> Important
+>
+> Only available for Visa, Cabal, Master, and American Express.
+------------
 
-Si decides capturar por un monto menor al reservado, es necesario que además de enviar el atributo `capture`, envies el atributo `transaction_amount` con el nuevo monto.
-
+To capture an amount lower than the reserve, you need to submit the `transaction_amount` attribute with the new value.
 
 [[[
 ```php
@@ -245,7 +222,6 @@ Si decides capturar por un monto menor al reservado, es necesario que además de
   $payment->transaction_amount = 75;
   $payment->capture = true;
   $payment->update();
-
 ?>
 ```
 ```java
@@ -257,14 +233,10 @@ Payment payment = Payment.load(paymentId);
 payment.transaction_amount = 75;
 payment.capture = true;
 payment.update();
-
-
 ```
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
-
-
 ```
 ```ruby
 require 'mercadopago'
@@ -274,12 +246,20 @@ payment = MercadoPago::Payment.load(paymentId)
 payment.transaction_amount = 75
 payment.capture=true
 payment.update()
+```
+```curl
 
+curl -X PUT \
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ENV_ACCESS_TOKEN' \
+  -H 'Content-Type: application/json' \
+  -d '{
+          "transaction_amount": 75,
+          "capture": true
+}'
 ```
 ]]]
 
-
-Respuesta:
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 ```json
 {
@@ -294,19 +274,16 @@ Respuesta:
 }
 ```
 
+
 > NOTE
 >
-> Nota
+> Note
 >
-> No es posible capturar un monto mayor al reservado, para eso es necesario realizar cancelar la reserva y generar una nueva.
+> You cannot capture an amount higher than the reserve; to do so, you need to cancel and make a new reserve.
 
+## Cancel a reserve
 
-## Cancelar una reserva
-
-Si no harás uso del dinero reservado, es importante que canceles la reserva para liberar el dinero de la tarjeta.
-
-Para hacer esto debes actualizar el atributo `status` del pago a un estado `cancelled`:
-
+If you update payment `status` to `cancelled`, you can cancel a reserve and release the card money.
 
 [[[
 ```php
@@ -317,7 +294,6 @@ Para hacer esto debes actualizar el atributo `status` del pago a un estado `canc
   $payment = MercadoPago\Payment::find_by_id($payment_id);
   $payment->status = "cancelled";
   $payment->update();
-
 ?>
 ```
 ```java
@@ -328,8 +304,6 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = Payment.load(paymentId);
 payment.status = "canceled";
 payment.update();
-
-
 ```
 ```node
 var mercadopago = require('mercadopago');
@@ -344,11 +318,16 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.load(paymentId)
 payment.status = "canceled"
 payment.update()
-
+```
+```curl
+curl -X PUT \
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ENV_ACCESS_TOKEN' \
+  -H 'Content-Type: application/json' \
+  -d '{"status": "cancelled"}'
 ```
 ]]]
 
-Respuesta:
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 ```json
 {
@@ -360,8 +339,22 @@ Respuesta:
   ...
 }
 ```
-> NOTE
+
+---
+### Next steps
+
+> LEFT_BUTTON_REQUIRED_EN
 >
-> Nota
+> Requirements for the production environment
 >
-> Las reservas que no hayan sido capturadas dentro del plazo mencionado, serán automáticamente canceladas. Serás notificado vía [Webhooks](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks) del cambio de estado del pago.
+> Learn all the requirements needed to start receiving payments.
+>
+> [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/)
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> API References
+>
+> Find all the information required to interact with our APIs.
+>
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)

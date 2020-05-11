@@ -1,10 +1,10 @@
-#SDK Javascript
+# SDK Javascript
 
 O SDK Javascript de Mercado Pago facilita a obtenção dos dados de cartões de seus clientes de forma segura.
 
 Ao usar o SDK e seguir os passos que recomendamos, a informação sensível dos cartões não passará pelos seus servidores, assegurando o nível adequado de cumprimento das normas PCI DSS.
 
-##Inclua o SDK de MercadoPago
+## Inclua o SDK de Mercado Pago
 
 Como primeiro passo, deve-se incluir o SDK no HTML da sua aplicação:
 
@@ -12,15 +12,17 @@ Como primeiro passo, deve-se incluir o SDK no HTML da sua aplicação:
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
-##Configure a sua chave pública
+## Configure a sua chave pública
 
-Para começar a utilizar o SDK Javascript, deve-se prover a sua public key para que possamos identificá-lo ao se conectar com o MercadoPago.
+Para começar a utilizar o SDK Javascript, deve-se prover a sua [Public key]([FAKER][CREDENTIALS][URL]) para que possamos identificá-lo ao se conectar com o Mercado Pago.
+
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 ```javascript
 Mercadopago.setPublishableKey("TEST-98638d24-eb00-4dd5-82d8-4e573fac6a80");
 ```
 
-##Obtenha o token de uso único para o cartão
+## Obtenha o token de uso único para o cartão
 
 Para cobrar os seus clientes de forma segura, sem ter que armazenar as informações sensíveis dos cartões do seu lado, deve-se converter os dados em um token de uso único que poderá passar pelos seus servidores.
 
@@ -63,7 +65,7 @@ A função callback receberá um objeto com as seguintes propriedades:
 }
 ```
 
-##Obtenha informação dos meios de pagamento
+## Obtenha informação dos meios de pagamento
 
 Pode-se obter informação do cartão inserido como meio de pagamento selecionado, usando:
 
@@ -79,13 +81,13 @@ Obter o meio de pagamento baseando-se nos 6 primeiros dígitos (bin) do cartão:
 
 
 ```javascript
-object = { “bin” : bin }
+object = { "bin" : bin }
 ```
 
 Obter o meio de pagamento mediante ao seu identificador:
 
 ```javascript
-object = {“payment_method_id”: “visa”}
+object = {"payment_method_id": "visa"}
 ```
 
 Com a informação do meio de pagamento você poderá determinar se é necessário pedir ao seu cliente dados adicionais para realizar a cobrança.
@@ -130,7 +132,7 @@ Exemplo de resposta:
   }]
 ```
 
-##Obtenha os tipos de documento
+## Obtenha os tipos de documento
 
 O tipo e o número de documento de identidade é um dado obrigatório na maioria dos países para realizar pagamentos com cartões.
 
@@ -177,7 +179,7 @@ Exemplo de resposta:
 
 ```
 
-##Obtenha os emissores dos cartões
+## Obtenha os emissores dos cartões
 
 Alguns cartões requerem que seja enviado uma informação adicional do emissor. Para isso, o SDK do MercadoPago provê uma função que permite obter os emissores de um cartão.
 ```javascript
@@ -219,7 +221,7 @@ Exemplo de resposta com `paymentMethodId = master`:
 
 ```
 
-##Obtenha as parcelas e custos de financiamento
+## Obtenha as parcelas e custos de financiamento
 
 Para cobrar em parcelas e poder mostrar aos seus clientes o custo de financiamento, o SDK do MercadoPago oferece uma função que retorna as parcelas disponíveis para o cartão do seu cliente.
 

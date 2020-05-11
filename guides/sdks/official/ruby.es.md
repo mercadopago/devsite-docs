@@ -2,9 +2,9 @@
 
 
 * [Instalación](#bookmark_instalación)
-* [Checkout Mercado Pago](#bookmark_checkout_mercado_pago)
-* [Customized checkout](#bookmark_checkout_custom)
-* [Generic methods](#bookmark_métodos_genéricos)
+* [Checkout de Mercado Pago](#bookmark_checkout_de_mercado_pago)
+* [Checkout personalizado](#bookmark_checkout_personalizado)
+* [Métodos genéricos](#bookmark_métodos_genéricos)
 
 
 ## Instalación
@@ -12,17 +12,18 @@
 ```gem install mercadopago-sdk```
 
 
-## Checkout Mercado Pago
+## Checkout de Mercado Pago
 
 ### Configura tus credenciales
 
 
-Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDENTIALS][URL_BASIC]).
+Obtén tu **Access token** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
+
 
 ```ruby
 require 'mercadopago.rb'
 
-$mp = MercadoPago.new('CLIENT_ID', 'CLIENT_SECRET')
+$mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
 ### Preferencias
@@ -40,15 +41,15 @@ puts $preferenceResult
 ```ruby
 
 preference_data = {
-			"items": [
-				{
-					"title": "testCreate",
-					"quantity": 1,
-					"unit_price": 10.2,
-					"currency_id": "[FAKER][CURRENCY][ACRONYM]"
-				}
-			]
-		}
+            "items": [
+                {
+                    "title": "testCreate",
+                    "quantity": 1,
+                    "unit_price": 10.2,
+                    "currency_id": "[FAKER][CURRENCY][ACRONYM]"
+                }
+            ]
+        }
 preference = $mp.create_preference(preference_data)
 
 puts preference
@@ -102,11 +103,11 @@ result = $mp.refund_payment("ID");
 puts result
 ```
 
-## Checkout custom
+## Checkout personalizado
 
 ### Configura tus credenciales
 
-Obtén tu **ACCESS_TOKEN** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
+Obtén tu **Access token** en la sección de [Credenciales]([FAKER][CREDENTIALS][URL]).
 
 
 ```ruby
@@ -114,6 +115,9 @@ require 'mercadopago.rb'
 
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
+
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
+
 
 ### Crear un pago
 

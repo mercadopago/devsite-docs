@@ -13,7 +13,7 @@ We offer different options so you can build the payment solution that best suits
 
 We have tools that are ready to use, such as SDKs, payment buttons, modules or plugins. In addition, we have a flexible and robust API so you can create your own payment experience.
 
-### Checkout Mercado Pago
+### Mercado Pago Checkout
 
 This option allows you to collect through our web form within the safe environment of Mercado Pago in a simple, fast and secure way
 
@@ -24,22 +24,22 @@ This option allows you to collect through our web form within the safe environme
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
 ----[mla, mlb]----
-[Integrate Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
+[Integrate Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
 ------------
 ----[mlm, mpe, mco, mlu, mlc]----
-[Integrate Checkout Mercado Pago](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
+[Integrate Mercado Pago Checkout](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
 ------------
 
 ### Mobile Checkout
 
-Unlike Checkout Mercado Pago, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
+Unlike Mercado Pago Checkout, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
 
 [Integrate Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
 
-It's the simplified version of the Checkout Mercado Pago with a renewed user experience.
+It's the simplified version of the Mercado Pago Checkout with a renewed user experience.
 
 - **Don't worry about the design.** We provide you with a form with design and front-end ready for you to use.
 
@@ -58,16 +58,6 @@ This way of integrating allows you to connect directly with our APIs.
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
 [Integrate by API](guides/payments/api/introduction)
-
-## How to offer subscriptions
-
-You can create a subscription button that will allow you to receive payments periodically. You choose how much you want to charge and your customers can join the automatic debit with a credit card.
-
-You can use it for whatever you want, such as charging gym fees, rentals or receiving donations.
-
-It is very simple since it does not require knowledge about programming and if you have questions about how to set it up, you can access the [Configuration Guide](https://www.mercadopago.com.ar/ayuda/cobrar-debito-automatico-tarjeta_1141) in the Mercado Pago Help portal.
-
-[Create subscription button](http://www.mercadopago.com.ar/receive-payments/tools)
 
 ## How to offer interest-free installments
 

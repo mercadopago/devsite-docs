@@ -20,7 +20,7 @@ To trade with ticket, follow this steps:
 2. Access "Formas de Pagamento".
 3. Select the "Boleto bancário" tab.
 4. Click the "Boleto Bancário" option that contains "mercadopago_transparente" in the "Adquirente / Gateway" column.
-5. Fill in the data for the "Específico" group. For Client ID and Client Secret, see the [Credentials section](#bookmark_credentials).
+5. Fill in the data for the "Specific" group. For Client id and Client secret, see the [Credentials section]([FAKER][CREDENTIALS][URL_BASIC]).
 6. Click "salvar".
 
     ![Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
@@ -34,7 +34,7 @@ To trade with credit cards, follow this steps:
 2. Access "Formas de Pagamento".
 3. Select the "Cartão de Crédito" tab.
 4. Find the credit card brands that contains "mercadopago_transparente" in the "Adquirente / Gateway" column.
-5. Fill in the data for the "Específico" group. For Client ID and Client Secret, see the [Credentials section](#bookmark_credentials).
+5. Fill in the data for the "Específico" group. For Client id, Client secret and Public key see the [Credentials section]([FAKER][CREDENTIALS][URL]).
 6. Choose one of the options for the "Tipo de parcelamento" field:
 - Dinâmico: The plataform will use the interests configured in Mercado Pago account.
 - Customizado: The interests must be configures in the plataform.
@@ -43,13 +43,3 @@ To trade with credit cards, follow this steps:
     ![Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
 
 >These steps should be performed for all credit card brands you want to enable.
-
-## Credentials
-
-To obtain the credentials you must follow these steps:
-
-1. Sign in to the Mercado Pago account.
-2. Acesse esse [painel]([FAKER][CREDENTIALS][URL]).
-3. Select the "Checkout básico" tab to visualize Client ID and Client Secret.
-4. Select the "Checkout transparente" tab to visualize Public Key and Access Token ("Modo Produção" to process real payments / "Modo Sandbox" to teste payments).
-5. Before proceeding to Production, make sure that you complete the 'Eu quero ir para produção' form (If you have already completed this step, the link does not appear).

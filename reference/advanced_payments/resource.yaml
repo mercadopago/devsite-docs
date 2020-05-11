@@ -2,7 +2,7 @@
 type: object
 properties:
 - id:
-    type: Integer
+    type: Long
     description:
       en: Advanced Payment Identifier.
       es: Identificador de Advanced Payment.

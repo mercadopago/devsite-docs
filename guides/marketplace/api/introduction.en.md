@@ -22,15 +22,16 @@ The Marketplace requires 3 steps:
 
 After creating the application, you only need to take the second and third steps for each subsequent vendor.
 
-## Credentials
+### Credentials
 
-Similar to the Payment API, you have a pair of private keys to connect to the API. You can find these keys in the [credentials of your account]([FAKER][CREDENTIALS][URL]).
+Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are the **keys we provide so you can configure your integrations.**. 
 
-The **credencial pública**, or *public\_key*, is used to access all features your frontend will need to collect the credit card info, and tokenize it.
+* The public key, or **Public Key**, is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
 
-The **credencial privada**, or *access\_token*, are used for all requests to the APIs, such as processing payments, refunds, storing cards, etc. The private keys must be kept **confidentially** in your backend servers and should never be published.
 
-> By clicking on the “renew credentials” button you get new pairs of keys and the previous ones will stop working. Use this only when you believe your private credentials have been compromised or for security reasons, similar to password change, every once in a while. Remember to replace the credentials in your application to keep it running.
+* The private key, or **Access Token**, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
+
+> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 
 ## Sandbox and Production Mode

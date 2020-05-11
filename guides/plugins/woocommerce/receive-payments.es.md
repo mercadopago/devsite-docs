@@ -26,19 +26,4 @@ Activa el modo Producción solo cuando estés listo para vender y hayas puesto a
 
 ![Flow homologación](/images/woocomerce/es_woo_homologacion.gif)
 
-> LEFT_BUTTON_REQUIRED_ES
->
-> Preferencias de pago
->
-> Configura tus preferencias de pago y haz ajustes según la experiencia que quieras ofrecer a tus clientes.
->
-> [Preferencias](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Instalar Mercado Pago en WooCommerce
->
-> Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
->
-> 
-> [Instalar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/instalation/)
+### **¡Listo! El módulo de Mercado Pago está preparado para recibir cobros online.**

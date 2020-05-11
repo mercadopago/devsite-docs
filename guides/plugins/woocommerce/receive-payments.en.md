@@ -26,19 +26,4 @@ Activate Production mode only when you are ready to sell and have tested the mod
 
 ![Homologation Flow](/images/woocomerce/es_woo_homologacion.gif)
 
-> LEFT_BUTTON_REQUIRED_ES
->
-> Payment preferences
->
-> Set your payment preferences and make adjustments according to the experience you want to offer your customers.
->
-> [Preferences](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Install Mercado Pago in WooCommerce
->
-> Follow these steps to install the Mercado Pago module in your online store.
->
-> 
-> [Install](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/instalation/)
+### **Done! The Mercado Pago module is ready to receive online payments.**

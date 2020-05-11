@@ -212,7 +212,98 @@ También, puedes agregar una etiqueta HTML en tu sitio con el identificador `id=
 
 ### Implementación del device en aplicaciones móviles nativas
 
-Si cuentas con una aplicación nativa deberás enviar información sobre el _device_ de tus compradores, esto lo puedes hacer enviando la siguiente información al momento de crear un `card_token`:
+Si tienes una aplicación nativa, puedes capturar la información del dispositivo con nuestro SDK y enviarla al momento de crear el token.
+
+#### 1. Agrega la dependencia
+
+[[[
+
+```ios
+===
+Agrega el siguiente código en el archivo **Podfile**.
+===
+use_frameworks!
+pod ‘MercadoPagoDevicesSDK’
+```
+```android
+===
+Agrega el siguiente código en el archivo **build.gradle**.
+===
+dependencies {
+   implementation 'com.mercadolibre.android.device:sdk:1.0.0'
+}
+```
+
+]]]
+
+#### 2. Inicializa el módulo
+
+[[[
+
+```swift
+===
+Te recomendamos iniciarlo en el evento didFinishLaunchingWithOptions del AppDelegate.
+===
+import MercadoPagoDevicesSDK
+...
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        ...        
+        MercadoPagoDevicesSDK.shared.execute()
+        ...
+}
+```
+```objective-c
+===
+Te recomendamos iniciarlo en el evento didFinishLaunchingWithOptions del AppDelegate.
+===
+@import ‘MercadoPagoDevicesSDK’;
+...
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    ...
+    [[MercadoPagoDevicesSDK shared] execute];
+    ...
+}
+```
+```java
+===
+Te recomendamos iniciarlo en la clase MainApplication.
+===
+import com.mercadolibre.android.devices.sdk.DeviceSDK;
+
+
+DeviceSDK.getInstance().execute(this);
+```
+
+]]]
+
+#### 3. Captura la información
+
+Ejecuta alguna de estas funciones para obtener la información en el formato que prefieras.
+
+[[[
+
+```swift
+MercadoPagoDevicesSDK.shared.getInfo() // devuelve un objeto Device que es Codable
+MercadoPagoDevicesSDK.shared.getInfoAsJson() // devuelve un objeto Data de la librería de JSON
+MercadoPagoDevicesSDK.shared.getInfoAsJsonString() // devuelve el json en formato de String
+MercadoPagoDevicesSDK.shared.getInfoAsDictionary() // devuelve un Dictionary<String,Any>
+```
+```objective-c
+[[[MercadoPagoDevicesSDK] shared] getInfoAsJson] // devuelve un objeto Data de la librería JSON
+[[[MercadoPagoDevicesSDK] shared] getInfoAsJsonString] // devuelve el json en formato de String
+[[[MercadoPagoDevicesSDK] shared] getInfoAsDictionary] // devuelve un Dictionary<String,Any>
+```
+```java
+Device device = DeviceSDK.getInstance().getInfo() // devuelve un objeto Device, serializable
+Map deviceMap = DeviceSDK.getInstance().getInfoAsMap()  // devuelve un Map<String, Object>
+String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // devuelve un String de tipo Json
+```
+
+]]]
+
+#### 4. Envía la información
+
+Por último, envía la información en el campo `device` al crear el `card_token`.
 
 ```
 {
@@ -256,22 +347,3 @@ Si cuentas con una aplicación nativa deberás enviar información sobre el _dev
 	  }
 }
 ```
-
-Nuestros SDKs cuentan con funciones que puedes utilizar para capturar esta información:
-
-[[[
-
-```android
-===
-La clase [Device](https://github.com/mercadopago/px-android/blob/master/px-services/src/main/java/com/mercadopago/android/px/model/Device.java) recolectará tanto la información del dispositivo como su fingerprint.
-===
-new Device(context);
-```
-```swift
-===
-La clase [Device](https://github.com/mercadopago/px-ios/blob/master/MercadoPagoSDK/MercadoPagoSDK/Device.swift) recolectará tanto la información del dispositivo como su fingerprint.
-===
-Device()
-```
-
-]]]

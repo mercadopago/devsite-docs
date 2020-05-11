@@ -37,7 +37,6 @@ curl -X POST \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
-
 ### Resposta
 
 ```json

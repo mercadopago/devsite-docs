@@ -74,7 +74,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-  You can obtain your **Client_id** and **Client_secret**,[in the following link]([FAKER][CREDENTIALS][URL]).
+ > You can obtain your **Client id** and **Client secret**,[in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
 
 5. Checkout settings. <br/>
 
@@ -129,7 +129,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
 
-  Find your **access_token** in the [Credentials section]([FAKER][CREDENTIALS][URL])
+  Find your **Public key** and **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
   7. Checkout settings. <br/>
 
@@ -171,7 +171,9 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   ![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
 
-  Find your **access_token** [Credentials section]([FAKER][CREDENTIALS][URL]).  
+  Find your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).  
+
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
   7. IPN settings.
   <br/>![Setting Notification - IPN](/images/virtuemart-ipn_settings.png) <br />

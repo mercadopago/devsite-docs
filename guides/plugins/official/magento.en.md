@@ -112,13 +112,14 @@ This process will explain how to configure the module to accept payments with Ch
 
 ![Configuring Credit Card and Ticket](/images/magento/magento-config-01.gif)
 
-2) To set up the credentials go to **Mercado Pago - Custom Checkout**, you will see the field **Public Key** and **Access Token**. [Get your credentials]([FAKER][CREDENTIALS][URL]) 
+2) Obtain your Public Key and Access Token credentials in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ![Configuring credentials in Magento](/images/magento/magento-config-02.gif)
 
 > There are two types of credentials:
-> * Modo Sandbox: The credentials in this way are used for testing.
-> * Modo Produção: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
+> * Trial credentials: The credentials in this way are used for testing.
+> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".<br>
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
 3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Make this process for **Checkout Custom - Credit Card** and **Checkout Custom - Ticket** and then click on **Save Config**.
 
@@ -137,7 +138,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 ![Configuring Checkout Redirect, Iframe and LightBox](/images/magento/magento-config-01.gif)
 
-2) To set up the credentials go to **Mercado Pago - Classic Checkout**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials]([FAKER][CREDENTIALS][URL]) 
+2) Obtain your Client id and Client secret credentials in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ![Configuring credentials - Checkout redirect](/images/magento/magento-config-04.gif)
 
@@ -157,7 +158,7 @@ This process will explain how to configure the module to accept recurring paymen
 
 ![Configuring recurring payments](/images/magento/magento-config-01.gif)
 
-2) To set up the credentials go to **Mercado Pago - Recurring Payments**, click in **Configure**. you will see the field **Client id** and **Client Secret**. [Get your credentials]([FAKER][CREDENTIALS][URL]) 
+2) Obtain your Client id and Client secret credentials in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 ![Enabling payment method in Magento - Recurring Payments](/images/magento/magento-config-re-02.gif)
 
