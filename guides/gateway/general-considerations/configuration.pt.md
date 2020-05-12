@@ -8,6 +8,12 @@ indexable: false
 
 # Mercado Pago Gateway: Configuração
 
+> WARNING
+>
+> Contato comercial necessário
+>
+> Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
+
 ## Introdução
 
 Desde o backoffice de Mercado Pago, você poderá configurar seus números de comércio, assim como seus acordos comerciais, com adquirentes e/ou emissores na hipótese de ter promoções. 

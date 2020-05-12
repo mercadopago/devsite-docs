@@ -7,6 +7,12 @@ indexable: false
 
 # Obtener un pago existente
 
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
 #### Request
 ```curl
 curl -X GET \

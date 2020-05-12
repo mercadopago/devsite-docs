@@ -12,6 +12,12 @@ indexable: false
 >
 > Unfortunately Mercado Pago's Gateway Configuration Section is not currently translated to english. Nonetheless this guide will be helpful to you to understand the configuration flow.
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 ## Introduction
 
 From Mercado Pago's backoffice you are able to configure both your merchant IDs and commercial agreements with acquirers or issuers in case of promotions.

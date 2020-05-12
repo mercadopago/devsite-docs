@@ -7,6 +7,13 @@ indexable: false
 
 # Pagos en modo Gateway en Advanced Payments
 
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
+
 ## Introducción
 
 La modalidad de `Gateway` en Advanced Payments permite realizar múltiples pagos con distintos números de comercio propios y un mismo card token. Esto implica que el comprador debe ingresar los datos de su tarjeta una única vez.

@@ -15,6 +15,12 @@ indexable: false
 
 > Have already integrated the [Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 ## Integration
 
 There is only one necessary change to support the **Gateway Model** in the Mercado Pago Checkout: add the `processing_modes` attribute when you create a preference:

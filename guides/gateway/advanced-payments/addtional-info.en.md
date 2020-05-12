@@ -7,6 +7,12 @@ indexable: false
 
 # Additional Information
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 It is possible to send information that can improve the fraud prevention analysis. To do this, you must send the `additional_info` field with information about the payer and the shipping address. The more information that is sent, the better the conversion rate of the payments.
 You can also send the `metadata` object with relevant information to your business that the seller wants to add. The information that this object can contain is of the key/value type.
 

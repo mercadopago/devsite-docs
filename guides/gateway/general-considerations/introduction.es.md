@@ -8,6 +8,12 @@ indexable: false
 
 # Mercado Pago Gateway: Introducción
 
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
 ## ¿Qué es?
 
 **Mercado Pago Gateway** es un modelo de operación que te permite procesar pagos con tarjeta de débito y crédito con tus propios números de comercio. En este modelo, Mercado Pago te ofrece toda su tecnología y robustez para poder operar con tus propios acuerdos con los adquirentes y emisores.

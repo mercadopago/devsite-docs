@@ -7,6 +7,12 @@ indexable: false
 
 # Payments in Gateway mode in Advanced Payments
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 ## Introduction
 
 The `Gateway` mode in Advanced Payments allows you to make multiple payments with different own merchant numbers and the same card token. This implies that the buyer must enter his card details only once.

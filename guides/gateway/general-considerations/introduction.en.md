@@ -8,6 +8,12 @@ indexable: false
 
 # Mercado Pago Gateway: Introduction
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 ## What is it?
 
 **Mercado Pago Gateway** is an operation model that allows your business to process credit and debit card payments with your own merchant IDs (also known as merchant of record). In this model, Mercado Pago offers you all its technology and sturdiness to operate with your own commercial agreements with acquirers or issuers.

@@ -7,6 +7,12 @@ indexable: false
 
 # Obtain an existing payment
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 #### Request
 ```curl
 curl -X GET \

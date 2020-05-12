@@ -7,6 +7,12 @@ indexable: false
 
 # Mercado Pago Gateway: API
 
+> WARNING
+>
+> Contato comercial necessário
+>
+> Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
+
 > NOTE
 >
 > Pre-requisito

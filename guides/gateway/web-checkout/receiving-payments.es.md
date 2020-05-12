@@ -25,6 +25,12 @@ indexable: false
 > Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout de Mercado Pago**
 ------------
 
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
 ## Integración
 
 La única modificación necesaria para soportar **Modelo Gateway** en el Checkout de Mercado Pago, es agregar el atributo `processing_modes` cuando creas una preferencia.

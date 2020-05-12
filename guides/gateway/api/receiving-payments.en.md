@@ -7,6 +7,12 @@ indexable: false
 
 # Mercado Pago Gateway: API
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 > NOTE
 >
 > Pre-requisites

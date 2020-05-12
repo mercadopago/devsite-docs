@@ -8,6 +8,12 @@ indexable: false
 
 # Mercado Pago Gateway: Reconciliation
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 You will find information below on how to reconcile your operations in Mercado Pago Gateway with the information of acquirers or issuers.
 
 ## Using a partner
