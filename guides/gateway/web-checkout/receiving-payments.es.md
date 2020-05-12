@@ -24,7 +24,7 @@ indexable: false
 
 > Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout de Mercado Pago**
 ------------
-
+</br>
 > WARNING
 >
 > Contacto comercial requerido

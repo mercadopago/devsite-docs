@@ -24,6 +24,7 @@ indexable: false
 
 > Ter realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout Mercado Pago**
 ------------
+</br>
 
 > WARNING
 >

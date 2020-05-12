@@ -15,6 +15,7 @@ indexable: false
 
 > Have already integrated the [Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
 
+</br>
 > WARNING
 >
 > Commercial contact required
