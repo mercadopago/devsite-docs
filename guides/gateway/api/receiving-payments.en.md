@@ -11,7 +11,7 @@ indexable: false
 >
 > Commercial contact required
 >
-> This product is only available through prior contact with one of our executives.
+> This product is only available through prior contact with one of our executives. <br>
 
 
 
