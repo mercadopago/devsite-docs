@@ -55,10 +55,6 @@ You can find all the necessary information in the [migration guide](https://www.
 
 ------------
 
-## June 26th, 2019
-
-Improvement in Gateway Model documentation
-
 ## May 29th, 2019
 
 **Official modules with support from Mercado Pago**

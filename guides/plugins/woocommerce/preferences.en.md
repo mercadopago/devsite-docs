@@ -64,7 +64,6 @@ You will have different settings available depending on the type of checkout you
 | Configuration                 | Description                                                                 	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | Binary Mode     	            | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
-| Gateway Mode              	  | If you operate with the [gateway mode](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/introduction/) as a payment processor and have your own trade numbers, you can set up discounts and commissions to your customers for paying with Mercado Pago.|
 
 ### Mercado Pago Checkout
 

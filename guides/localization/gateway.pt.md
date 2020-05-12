@@ -1,3 +1,7 @@
+---
+indexable: false
+---
+
 # Gateway
 
 A disponibilidade do **Mercado Pago Gateway** varia de acordo com o país.

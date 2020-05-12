@@ -3,6 +3,7 @@ sites_supported:
   - mla
   - mco
   - global
+indexable: false
 ---
 
 # Mercado Pago Gateway: Configuration
@@ -10,6 +11,14 @@ sites_supported:
 > NOTE
 >
 > Unfortunately Mercado Pago's Gateway Configuration Section is not currently translated to english. Nonetheless this guide will be helpful to you to understand the configuration flow.
+
+</br>
+
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
 
 ## Introduction
 

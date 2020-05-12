@@ -2,17 +2,16 @@
 sites_supported:
   - mla
   - mco
+indexable: false
 ---
 
 # Processing payments in Gateway mode
 
 > WARNING
 >
-> Important
+> Commercial contact required
 >
->
-Before you start, you should contact your account executive informing your application ID in order to request the activation of the Gateway mode.
-
+> This product is only available through prior contact with one of our executives.
 
 ####  split payment in Gateway mode.
 
