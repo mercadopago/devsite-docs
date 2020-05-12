@@ -1,4 +1,13 @@
+---
+  indexable: false
+---
 # ZenCart - Mercado Pago Module (v1.5.x)
+
+> WARNING
+>
+> Solo damos soporte a plugins oficiales
+>
+> Esta documentación no cuenta con soporte oficial de Mercado Pago. Si quieres realizar algún cambio, puedes [modificar el código abierto en GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/zencart.es.md).
 
 ## Funcionalidad
 
