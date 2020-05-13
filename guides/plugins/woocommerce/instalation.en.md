@@ -12,7 +12,7 @@ Review the installation requirements and follow the steps we indicate, it will o
 | Requirements                  | Details                                                                    	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | WordPress        	            | Required 4.9.10 or higher. Tested up to 5.4.1                                                 |
-| WooCommerce      	            | Required 3.x or higher. Tested up to 4.0.1                                                    |
+| WooCommerce      	            | Required 3.x or higher. Tested up to 4.1.0                                                    |
 | Environment                  	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
 | System                      	| Linux x86, Windows x86-64                                                        	            |
 | Web Server                  	| Apache 2.x, Nginx 1.7.x                                                               	    |
