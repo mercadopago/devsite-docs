@@ -1,4 +1,13 @@
+---
+  indexable: false
+---
 # XTECH
+
+> WARNING
+>
+> We only support official plugins
+>
+> We do not provide technical support of Mercado Pago for this documentation. If you wish to make any changes, you may [make modifications to our open code on GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/xtech.en.md).
 
 ## O que é XTECH
 

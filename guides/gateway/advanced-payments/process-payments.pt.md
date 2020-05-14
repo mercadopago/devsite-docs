@@ -2,15 +2,16 @@
 sites_supported:
   - mla
   - mco
+indexable: false
 ---
 
 # Procesando pagamentos no modo Gateway
 
 > WARNING
 >
-> Importante
+> Contato comercial necessário
 >
-> Antes de começar, você deverá entrar em contato com seu executivo de contas informando o ID de seu aplicativo, a fim de requerer a habilitação de sua modalidade Gateway.
+> Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
 
 #### Split de pagamentos no modo Gateway
 

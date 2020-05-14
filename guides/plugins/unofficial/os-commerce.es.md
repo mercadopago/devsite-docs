@@ -1,5 +1,13 @@
-# osCommerce - Mercado Pago Module (v2.2 - 2.3)
 ---
+  indexable: false
+---
+# osCommerce - Mercado Pago Module (v2.2 - 2.3)
+
+> WARNING
+>
+> Solo damos soporte a plugins oficiales
+>
+> Esta documentación no cuenta con soporte oficial de Mercado Pago. Si quieres realizar algún cambio, puedes [modificar el código abierto en GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/os-commerce.es.md).
 
 ## Features
 

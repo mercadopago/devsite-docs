@@ -3,6 +3,7 @@ sites_supported:
   - mla
   - mco
   - global
+indexable: false
 ---
 
 # Mercado Pago Gateway: Mercado Pago Checkout
@@ -13,6 +14,13 @@ sites_supported:
 >
 
 > Have already integrated the [Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
+
+</br>
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
 
 ## Integration
 

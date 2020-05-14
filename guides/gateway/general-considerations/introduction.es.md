@@ -3,9 +3,16 @@ sites_supported:
   - mla
   - mco
   - global
+indexable: false
 ---
 
 # Mercado Pago Gateway: Introducción
+
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
 
 ## ¿Qué es?
 
