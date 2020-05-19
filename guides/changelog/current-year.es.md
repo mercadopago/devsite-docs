@@ -11,6 +11,17 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
 
+## 13 de mayo de 2020
+
+### Nueva versión WooCommerce
+
+Lanzamos una nueva versión de WooCommerce.
+
+Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/introduction/)
+
+
 ## 6 de mayo de 2020
 
 ### Nueva versión de SDK Java
