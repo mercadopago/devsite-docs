@@ -1165,7 +1165,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 ## Receba com PSE
 
-Para receber pagamentos PSE, tienes que enviam a instituição financeira que processa o pago.
+Para receber pagamentos PSE, é preciso enviar a instituição financeira que processa o pagamento.
 
 [[[
 ```php
