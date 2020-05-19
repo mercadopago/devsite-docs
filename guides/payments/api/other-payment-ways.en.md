@@ -1656,7 +1656,7 @@ AdditionalInfo additionalInfo = new AdditionalInfo();
 additionalInfo.ipAddress = "127.0.0.1";
 
 Payment payment = new Payment();
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
 .setDescription('Product Title')
 .setPayer(payer)
 .setTransactionDetails(transactionDetails)

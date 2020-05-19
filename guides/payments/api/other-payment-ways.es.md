@@ -1202,7 +1202,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
 
 var payment_data = {
-transaction_amount: 10000,
+transaction_amount: 5000,
 description: 'Título del producto',
 payer: {
 email: 'test_user_19549678@testuser.com',
@@ -1244,7 +1244,7 @@ AdditionalInfo additionalInfo = new AdditionalInfo();
 additionalInfo.ipAddress = "127.0.0.1";
 
 Payment payment = new Payment();
-payment.setTransactionAmount(10000)
+payment.setTransactionAmount(5000f)
 .setDescription('Título del producto')
 .setPayer(payer)
 .setTransactionDetails(transactionDetails)
@@ -1257,7 +1257,7 @@ require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment = MercadoPago::Payment.new()
-payment.transaction_amount = 10000
+payment.transaction_amount = 5000
 payment.description = 'Título del producto'
 payment.payer = {
 email: 'test_user_19549678@testuser.com',
