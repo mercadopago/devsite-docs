@@ -1619,7 +1619,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
 
 var payment_data = {
-ransaction_amount: 100,
+transaction_amount: 100,
 description: 'Product Title',
 payer: {
 email: 'test_user_15748052@testuser.com',
