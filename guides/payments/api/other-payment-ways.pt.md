@@ -1313,7 +1313,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
 ```
 No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
 
-Al concluir o pagamento, o cliente será redirecionado para o `callback_url` que você especificar.
+Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que você especificar.
 
 ## Cancelar um pagamento
 
