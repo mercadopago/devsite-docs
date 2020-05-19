@@ -1,8 +1,5 @@
 ---
 resource: preferences.raml
-samples:
-- curl.sh
-- curl_response.json
 use:
 - items
 - payer
