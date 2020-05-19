@@ -1163,6 +1163,158 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 >
 > El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
 
+## Recibir pagos con PSE
+
+Para poder recibir pagos con PSE, también tienes que enviar la institución financiera que procesa el pago.
+
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 5000;
+$payment->description = "Título del producto";
+$payment->payer = array (
+"email" => "test_user_19549678@testuser.com",
+"identification" => array(
+"type" => "CC",
+"number" => "76262349"
+),
+"entity_type" => "individual"
+);
+$payment->transaction_details = array(
+"financial_institution" => 1234
+);
+$payment->additional_info = array(
+"ip_address" => "127.0.0.1"
+);
+$payment->callback_url = "http://www.tu-sitio.com";
+$payment->payment_method_id = "pse";
+
+$payment->save();
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+
+var payment_data = {
+transaction_amount: 5000,
+description: 'Título del producto',
+payer: {
+email: 'test_user_19549678@testuser.com',
+identification: {
+type: "CC",
+number: "76262349"
+},
+entity_type: "individual"
+},
+transaction_details: {
+financial_institution: 1234
+},
+additional_info: {
+ip_address: "127.0.0.1"
+},
+callback_url: "http://www.tu-sitio.com",
+payment_method_id: "pse"
+}
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.setEmail("test_user_19549678@testuser.com");
+payer.setIdentification(new Identification("CC", 76262349));
+payer.setEntityType("individual");
+
+TransactionDetails transactionDetails = new TransactionDetails();
+transactionDetails.financialInstitution = 1234;
+
+AdditionalInfo additionalInfo = new AdditionalInfo();
+additionalInfo.ipAddress = "127.0.0.1";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(5000f)
+.setDescription('Título del producto')
+.setPayer(payer)
+.setTransactionDetails(transactionDetails)
+.additionalInfo(additionalInfo)
+.callbackUrl("http://www.tu-sitio.com")
+.setPaymentMethodId("pse");
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 5000
+payment.description = 'Título del producto'
+payment.payer = {
+email: 'test_user_19549678@testuser.com',
+identification: {
+type: "CC",
+number: "76262349"
+},
+entity_type: "individual"
+}
+payment.transaction_details = {
+financial_institution: 1234
+}
+payment.additional_info = {
+ip_address: "127.0.0.1"
+}
+payment.callback_url = "http://www.tu-sitio.com"
+payment.payment_method_id = "pse"
+
+payment.save();
+```
+```curl
+curl -X POST \
+'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
+    -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 5000,
+  description: "Título del producto",
+  payment_method_id: "pse",
+  payer: { email: "test_user_19549678@testuser.com" },
+  transaction_details: { financial_institution: 1234 }
+}'
+```
+]]]
+
+La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago. 
+
+```json
+[
+ {
+    ...,
+	"status": "pending",
+	"status_detail": "pending_waiting_transfer"
+    ...,
+	"transaction_details": {
+		...,
+		"external_resource_url": "https://www.mercadopago.com/mco/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+		"installment_amount": 0,
+		"financial_institution": "1234",
+		"payment_method_reference_id": null
+	}
+ }
+]
+```
+En el campo `external_resource_url` vas a encontrar una dirección que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el enlace para que ingrese.
+
+Al finalizar el pago, el cliente va a ser redirigido a la `callback_url` que indiques.
+
 ## Cancelar un pago
 
 Es importante que puedas cancelar los pagos luego de su vencimiento para evitar problemas con el cobro. Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días hábiles según el tiempo de cada uno.
@@ -1431,6 +1583,163 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 > Nota
 >
 > El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
+
+## Recibir pagos con Webpay
+
+Para poder recibir pagos con Webpay, tienes que enviar la dirección IP del comprador, la institución financiera que procesa el pago y, opcionalmente, el RUT y el tipo de persona.
+
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 100;
+$payment->description = "Título del producto";
+$payment->payer = array (
+"email" => "test_user_15748052@testuser.com",
+"entity_type" => "individual"
+);
+$payment->transaction_details = array(
+"financial_institution" => 1234
+);
+$payment->additional_info = array(
+"ip_address" => "127.0.0.1"
+);
+$payment->callback_url = "http://www.tu-sitio.com";
+$payment->payment_method_id = "webpay";
+
+$payment->save();
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+
+var payment_data = {
+transaction_amount: 100,
+description: 'Título del producto',
+payer: {
+email: 'test_user_15748052@testuser.com',
+entity_type: "individual"
+},
+transaction_details: {
+financial_institution: 1234
+},
+additional_info: {
+ip_address: "127.0.0.1"
+},
+callback_url: "http://www.tu-sitio.com",
+payment_method_id: "webpay"
+}
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.setEmail("test_user_15748052@testuser.com");
+payer.setEntityType("individual");
+
+TransactionDetails transactionDetails = new TransactionDetails();
+transactionDetails.financialInstitution = 1234;
+
+AdditionalInfo additionalInfo = new AdditionalInfo();
+additionalInfo.ipAddress = "127.0.0.1";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(100)
+.setDescription('Título del producto')
+.setPayer(payer)
+.setTransactionDetails(transactionDetails)
+.additionalInfo(additionalInfo)
+.callbackUrl("http://www.tu-sitio.com")
+.setPaymentMethodId("webpay");
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Título del producto'
+payment.payer = {
+email: 'test_user_15748052@testuser.com',
+entity_type: "individual"
+}
+payment.transaction_details = {
+financial_institution: 1234
+}
+payment.additional_info = {
+ip_address: "127.0.0.1"
+}
+payment.callback_url = "http://www.tu-sitio.com"
+payment.payment_method_id = "webpay"
+
+payment.save();
+```
+```curl
+curl -X POST \
+'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
+    -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título del producto",
+  payment_method_id: "webpay",
+  payer: {
+    email: "test_user_15748052@testuser.com",
+    identification: {
+    type: "RUT",
+    number: 76262349
+},
+  entity_type: "individual"
+},
+  transaction_details: {
+    financial_institution: 1234
+},
+  additional_info: {
+  ip_address: “127.0.0.1”
+},
+  callback_url: "http://www.tu-sitio.com"
+}'
+```
+]]]
+
+> Los `entity_type` esperados son `individual` (personas) o `association` (empresas).
+
+La respuesta va a mostrar el estado pendiente hasta que el comprador realice el pago.
+
+```json
+[
+ {
+    ...,
+	"status": "pending",
+	"status_detail": "pending_waiting_transfer"
+    ...,
+	"transaction_details": {
+		...,
+		"external_resource_url": "https://www.mercadopago.com/mlc/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+		"installment_amount": 0,
+		"financial_institution": "1234",
+		"payment_method_reference_id": null
+	}
+ }
+]
+```
+
+En el campo `external_resource_url` vas a encontrar una dirección que contiene las instrucciones para que tu comprador pueda pagar. Puedes redirigirlo o enviarle el enlace para que ingrese.
+
+Al finalizar el pago, el cliente va a ser redirigido a la `callback_url` que indiques con los siguientes parámetros `payment_id=6725591786&payment_status=approved&external_reference=null&payment_method_id=webpay`.
 
 ## Cancelar un pago
 
