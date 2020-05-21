@@ -232,6 +232,22 @@ Attribute |	Description
  `back_url`| **_pending._** Return URL for pending payment.
   | **_failure._** Return URL for canceled payment.
 
+Through the `back_url` the following parameters will return:
+
+Parameter |	Description
+------------ 	|	--------
+`collection_id` | Returns the payment ID of Mercado Pago. |
+`collection_status` | Returns the status of the payment. Ex: `approved` for an approved payment or` pending` for an pending payment. |
+`external_reference` | Returns the value of the `external_reference` field that you sent when creating the payment preference. |
+`payment_type` | Returns the type of payment. Ex: `credit_card` for credit cards or` ticket` for cash payment methods. |
+`merchant_order_id` | Returns the ID of the payment order created in Mercado Pago. |
+`preference_id` | Returns the ID of the preference from which you are returning. |
+`site_id` | Returns the country ID of the seller's Mercado Pago account. Ex: MLA for Argentina, MLB for Brazil or MLM for Mexico. |
+`processing_mode` | Returns the value `aggregator`. |
+`merchant_account_id` | Returns with a value of `null`. |
+
+> Whether some of the parameters contain information will depend on whether the payer made the payment at the Mercado Pago Checkout and did not drop-off the flow before returning to your site through the `back_url` of **_failure._**.
+
 
 [[[
 ```php
