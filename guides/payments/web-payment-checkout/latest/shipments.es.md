@@ -457,7 +457,7 @@ preference.Save();
 ]]]
 
 
-# Ya integré Mercado Envíos en el checkout, ¿Cómo sigo?
+## Ya integré Mercado Envíos en el checkout, ¿Cómo sigo?
 
 Una vez hayas integrado Mercado Envíos y recibas una venta, solo queda preparar el paquete, entregarlo en un punto de despacho cercano y seguir el envio.
 
