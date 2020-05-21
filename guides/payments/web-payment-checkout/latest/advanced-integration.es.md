@@ -233,6 +233,24 @@ Atributo |	Descripción
   | **_failure._** URL de retorno ante pago cancelado.
 
 
+A través de las `back_url` retornarán los siguientes parámetros:
+
+Parámetro |	Descripción
+------------ 	|	--------
+`collection_id` | Retorna el ID del pago de Mercado Pago. |
+`collection_status` | Retorna el estado del pago. Ej.: `approved`para un pago aprobado o `pending` para un pago pendiente. |
+`external_reference` | Retorna el valor del campo `external_reference` que hayas enviado a la hora de crear la preferencia de pago. |
+`payment_type` | Retorna el tipo de pago. Ej.: `credit_card`para tarjetas de crédito o `ticket` para medios de pago en efectivo. |
+`merchant_order_id` | Retorna el ID de la orden de pago generada en Mercado Pago. |
+`preference_id` | Retorna el ID de la preferencia de pago a partir de la cuál se esta retornando. |
+`site_id` | Retorna el ID del país de la cuenta de Mercado Pago del vendedor. Ej.: MLA para Argentina, MLB para Brasil o MLM para México. |
+`processing_mode` | Retorna el valor `aggregator`. |
+`merchant_account_id` | Retorna con valor `null`. |
+
+> Que algunos de los parametros contengan información dependerá de si se el pagador concretó el pago en el Checkout de Mercado Pago y no abandonó el flujo antes de retornar a tu sitio a través de la `back_url` de **_failure._**
+
+
+
 [[[
 ```php
 <?php
