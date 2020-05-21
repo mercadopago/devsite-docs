@@ -17,7 +17,7 @@ La siguiente documentación te enseñará a sumar Mercado Envíos en el CheckOut
 
 
 ## Paso 1: Carga tu dirección
-Desde la cuenta del vendedor, ingresa al sector de [activación](http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=) y completa los datos que se solicitan. 
+Desde la cuenta del vendedor, ingresa al sector de <a href="http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=" target="_blank">activación</a> y completa los datos que se solicitan. 
 Usaremos ese domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
 
 
@@ -134,8 +134,8 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 
 #### Envíos gratis
 
-El costo de envío será debitado de la cuenta del vendedor cuando reciba un pago. Estos [son los costos de que tendrá]().
-Consultá los [id de medios de envío](https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true) disponibles para saber cuál poner en el código.
+El costo de envío será debitado de la cuenta del vendedor cuando reciba un pago.
+Consultá los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuál poner en el código.
 
 
 [[[
@@ -457,16 +457,16 @@ preference.Save();
 ]]]
 
 
-### Ya integré Mercado Envíos en el checkout, ¿Cómo sigo?
+# Ya integré Mercado Envíos en el checkout, ¿Cómo sigo?
 
 Una vez hayas integrado Mercado Envíos y recibas una venta, solo queda preparar el paquete, entregarlo en un punto de despacho cercano y seguir el envio.
 
-#### Preparar el paquete y entregarlo:
+### Preparar el paquete y entregarlo:
 
-* Cada vez que recibas un pago, te llegará ubn e-mail con un botón para imprimir la etiqueta. También podés ver los [pagos pendientes de impresión](https://www.mercadopago.com.ar/activities?type=facet_type_collection&status=facet_shipping_me_all) desde la cuenta de Mercado Pago del vendedor.
+* Cada vez que recibas un pago, te llegará ubn e-mail con un botón para imprimir la etiqueta. También podés ver los <a href="https://www.mercadopago.com.ar/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagos pendientes de impresión</a> desde la cuenta de Mercado Pago del vendedor.
 
 * Colocá lo que vendiste en una caja, pegale la etiqueta y entregala en algunos de los puntos de despacho cercanos al domicilio configurado.
 
-#### Seguir el envío:
+### Seguir el envío:
 
 Vas a podes seguir el curso del paquete desde la cuenta de Mercado Pago del vendedor.
