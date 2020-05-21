@@ -429,6 +429,11 @@ preference.Items.Add(
   }
 );
 
+MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
+    {
+      Email = "[FAKER][INTERNET][FREE_EMAIL]"
+    };
+
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
  {
      Mode = MercadoPago.Common.ShipmentMode.Me2,
@@ -444,9 +449,10 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
      }
  };
 
- preference.Shipments = shipments;
+preference.Payer = payer;
+preference.Shipments = shipments;
 
- preference.Save();
+preference.Save();
 ```
 ]]]
 
