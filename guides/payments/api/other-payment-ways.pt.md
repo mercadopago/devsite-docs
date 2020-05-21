@@ -2041,58 +2041,60 @@ Encontre toda informação na [seção Devoluções e cancelamentos](https://www
 
 ## Data de expiração de boleto
 
-A data de expiração padrão para pagamentos de boleto é de 3 días. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 días a partir da data atual.
+A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
 [[[
 ```php
 ===
-Data de expiração no formato yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-Data de expiração no formato yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-Data de expiração no formato yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-Data de expiração no formato yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
-Data de expiração no formato yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-dateOfExpiration = "2020-05-30T23:59:59.000-04:00",
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
-Data de expiração no formato yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
 
-> A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz. Horas e minutos não são levados em conta para expirar o pagamento
+O prazo de aprovação do boleto é de até 48h úteis. Por isso recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
 
-O prazo de aprovação do boleto é de até 48h. Por isso recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
-
-Caso o boleto seja pago depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+> WARNING
+>
+> Importante
+>
+> Caso o boleto seja pago depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
 
 ## Prazo de aprovação de pagamento
 
