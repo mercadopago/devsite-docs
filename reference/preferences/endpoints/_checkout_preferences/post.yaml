@@ -46,9 +46,9 @@ errors:
         pt: sponsor_id not found.
   - invalid_sponsor_id:
       description:
-        en: sponsor_id must be a number
-        es: sponsor_id must be a number.
-        pt: sponsor_id must be a number
+        en: invalid type (<type>) for field sponsor_id
+        es: invalid type (<type>) for field sponsor_id
+        pt: invalid type (<type>) for field sponsor_id
   - invalid_sponsor_id:
       description:
         en: sponsor_id should be different than collector_id.
@@ -244,6 +244,11 @@ errors:
         en: invalid shipments.default_shipping_method
         es: invalid shipments.default_shipping_method
         pt: invalid shipments.default_shipping_method
+  - invalid_shipments:
+      description:
+        en: shipments.cost invalid
+        es: shipments.cost invalid
+        pt: shipments.cost invalid
   - invalid_shipments:
       description:
         en: Invalid dimensions format
