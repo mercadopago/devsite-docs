@@ -297,7 +297,7 @@ preference.Shipments = shipments;
 ```
 ]]]
 
-**¡Y listo! Mercado envíos ya se encuentra integrado.** Una vez que se reciba una venta, solo hay que <a href="https://www.mercadopago.com.ar/ayuda/Preparar-un-paquete-enviarlo_1603" target="_blank">preparar el paquete y enviarlo</a>).
+**¡Y listo! Mercado envíos ya se encuentra integrado.** Una vez que se reciba una venta, solo hay que <a href="https://www.mercadopago.com.ar/ayuda/Preparar-un-paquete-enviarlo_1603" target="_blank">preparar el paquete y enviarlo</a>.
 
 
 > NOTE
