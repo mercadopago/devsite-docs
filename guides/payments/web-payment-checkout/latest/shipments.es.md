@@ -240,7 +240,7 @@ preference.Shipments = shipments;
 
 ### Retiro en domicilio
 
-También puedes ofrecer la posibilidad de retirar el producto por el local que configuraste, indicándole al comprador cuándo y dónde retirarlo. 
+También puedes ofrecer la posibilidad de retirar el producto por el domicilio que configuraste, indicándole al comprador cuándo y dónde retirarlo. 
 
 [[[
 ```php
