@@ -5,39 +5,68 @@
 
 ## O que é Wix?
 
-[Wix](https://pt.wix.com/) é uma plataforma online de criação e edição de sites onde é possível criar sua loja virtual e processar pagamentos através do Mercado Pago.
-Para obter maiores informações sobre as possibilidades que a Wix oferece acesse [sua página de recursos](https://pt.wix.com/ecommerce/sell-online).
+Wix é uma **plataforma e-commerce para sua loja virtual**, que permite processar pagamentos através do Mercado Pago.
 
-## Como posso operar com Mercado Pago na Wix?
+Você poderá oferecer aos seus clientes a possibilidade de pagar [diretamente no ambiente do Mercado Pago](#bookmark_configure_a_forma_de_pagamento).
 
-Wix permite operar Mercado Pago na seguinte modalidade:
+## Etapas para configurar
 
-### Checkout Mercado Pago
+Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 
-Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
+1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/activities) no Mercado Pago caso ainda não tenha uma.
+2. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
+3. Configure a forma de pagamento Mercado Pago.
 
-## Como habilitar Mercado Pago na Wix?
+## Adicione o Mercado Pago como meio de pagamento
 
-Os passos para começar a operar com Mercado Pago são os seguintes:
+Para **adicionar o Mercado Pago a sua loja Wix**, siga os seguintes passos:
 
-1. Acesse as configurações de formas de pagamento no menu da Wix através do caminho **Configurações > Pagamentos**.
+1. No painel de administração de sua loja, acesse "Pagamentos" do módulo de configurações.
+2. Clique no botão “Adicionar métodos de pagamento". 
+3. Na lista de métodos de pagamentos, selecione o "Mercado Pago" e clique em "Adicionar".
+<p>&nbsp;</p>
+    ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
+<p>&nbsp;</p>
+E pronto! O Mercado Pago já está instalado.
 
-![wix_configuration1](/images/wix_configuration1.png)
+## Configure a forma de pagamento
 
-2. Selecione o Mercado Pago e em seguida clique em **Conectar > Configurar conta**.
+A Wix permite operar com o **Checkout Mercado Pago**, onde o comprador será redirecionado ao site do Mercado Pago e uma vez finalizado o processo, voltará para sua loja.
 
-![wix_configuration2](/images/wix_configuration2.png)
+Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_mercado_pago) e consultar e configurar as [taxas e prazos](https://www.mercadopago.com.br/settings/release-options/) de suas vendas online quando quiser.
 
-3. Caso ainda não tenha conta no Mercado Pago clique em **Criar uma conta** e prossiga com o cadastro, caso contrário clique em **Conecte uma conta existente**.
+## Ative sua conta Mercado Pago
 
-![wix_configuration3](/images/wix_configuration3.png)
+Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos abaixo:
 
-4. Para conectar a conta são solicitadas duas informações: **ID DO CLIENTE** e **CLIENT_SECRET**. Esses dados são as credenciais da conta e estão disponíveis no seguinte [LINK]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago.
+1. No painel "Métodos de pagamentos", localize o "Mercado Pago" e clique em "Configurar conta para ativar".
+2. Clique no botão “Conecte uma conta existente". 
+3. Complete os campos "Client ID e Client Secret" que corresponde as credenciais de sua conta "Mercado Pago".
+4. Clique em "Conectar Minha Conta".
+<p>&nbsp;</p>
+    ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
+<p>&nbsp;</p>
+E pronto! O Mercado Pago já está ativado para receber pagamentos.
 
-![wix_configuration4](/images/wix_configuration4.png)
+## Configurando o parcelamento em sua conta Mercado Pago
 
-5. Após preencher clique em **Conecte minha conta**.
+1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio".
+2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
+3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
+<p>&nbsp;</p>
+    ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
+<p>&nbsp;</p>
+E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
-![wix_configuration5](/images/wix_configuration5.png)
+## Credenciais de sua conta Mercado Pago
 
-Com isso o Mercado pago estará instalado e ativado.
+Você conta com um par de chaves para conectar-se com a Wix, estas chaves podem ser encontradas no painel [credenciais da sua conta](https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials) na seção "Checkout de Mercado Pago".
+
+> WARNING
+>
+> Importante
+>
+> Antes de iniciar sua operação em produção, assegure se de preencher o formulário ‘Ir para produção’. Caso já tenha realizado este passo o link não será apresentado.
+
+<!-- -->
+> Para mais informação, visite o site [oficial da Wix](https://pt.wix.com/ecommerce/loja-virtual).
