@@ -1,14 +1,8 @@
 ---
-  indexable: false
----
----
+indexable: false
+
 sites_supported:
   - mla
-  - mlb
-  - mco
-  - mlu
-  - mlc
-  - mlm
 ---
 
 # Ofrecer Mercado Envíos
@@ -20,30 +14,32 @@ Integra Mercado Envíos para recibir el pago de tus productos y gestionar su env
 
 ### Activa Mercado Envíos
 
-Desde la cuenta del vendedor, ingresa a la sección de <a href="http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=" target="_blank">activación</a> y completa los datos que se solicitan. 
+Desde la cuenta del vendedor, ingresa a la sección de Tu negocio > Configuración y activa la opción de Mercado Envíos.
+
 Usaremos ese domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
 
 
-### Agrega envíos en tu preferencia
+## Agrega envíos en tu preferencia
 
 Configura en tu preferencia, el peso y las dimensiones de los paquetes tal como ves en el siguiente código. 
 
 [[[
 ```php
-
+===
+ Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso.
+===
 <?php
-  // Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso. 
 
   $preference = new MercadoPago\Preference();
 
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
   $shipments->dimensions = "30x30x30,500";
-  // No es obligatorio setear la propiedad receiver_address
+  // No es obligatorio configurar la propiedad receiver_address
   $shipments->receiver_address=array(
-    "zip_code" => "5700",
-    "street_number" => 123,
-    "street_name" => "Street",
+    "zip_code" => "[FAKER][ADDRESS][ZIP]",
+    "street_number" => [FAKER][NUMBER][BETWEEN][1000,2000],
+    "street_name" => "[FAKER][ADDRESS][STREET_NAME]",
     "floor" => "4",
     "apartment" => "C"
   );
@@ -53,36 +49,36 @@ Configura en tu preferencia, el peso y las dimensiones de los paquetes tal como 
 ?>
 ```
 ```java
-
-// Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso. 
-
+===
+ Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso.
+===
 Preference preference = new Preference();
 
 Shipments shipments = new Shipments();
 
-// No es obligatorio setear la propiedad AddressReceiver
+// No es obligatorio configurar la propiedad AddressReceiver
 shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
-    .setReceiverAddress(new AddressReceiver("5700", 123, "street", "4", "C"));
+    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP]", [FAKER][NUMBER][BETWEEN][1000,2000], "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
 
 preference.setShipments(shipments);
 
 
 ```
 ```node
-
-// Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso. 
-
+===
+ Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso.
+===
 var preference = {}
 
-// No es obligatorio setear la propiedad receiver_address
+// No es obligatorio configurar la propiedad receiver_address
 var shipments = {
   "mode": "me2",
   "dimensions": "30x30x30,500",
   "receiver_address": {
-    "zip_code": "5700",
-    "street_number": 123,
-    "street_name": "Street",
+    "zip_code": "[FAKER][ADDRESS][ZIP]",
+    "street_number": [FAKER][NUMBER][BETWEEN][1000,2000],
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "floor": "4",
     "apartment": "C"
   }
@@ -92,19 +88,19 @@ preference.shipments = shipments
 
 ```
 ```ruby
-
-# Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso. 
-
+===
+ Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso.
+===
 preference = new MercadoPago::Preference.new();
 
 shipment = MercadoPago::Shipment.new
 shipment.mode = me2
 shipment.dimensions = "30x30x30,500"
-# No es obligatorio setear la propiedad receiver_address
+# No es obligatorio configurar la propiedad receiver_address
 shipment.receiver_address = {
-  zip_code: "5700",
-  street_number: 123,
-  street_name: "Street",
+  zip_code: "[FAKER][ADDRESS][ZIP]",
+  street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
+  street_name: "[FAKER][ADDRESS][STREET_NAME]",
   floor: "4",
   apartment: "C"
 }
@@ -113,20 +109,20 @@ preference.shipment = shipment
 
 ```
 ```csharp
-
-// Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso. 
-
+===
+ Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso.
+===
 Preference preference = new Preference();
 
-// No es obligatorio setear la propiedad ReceiverAddress
+// No es obligatorio configurar la propiedad ReceiverAddress
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
  {
      Mode = MercadoPago.Common.ShipmentMode.Me2,
      Dimensions = "30x30x30,500",
      ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      Zip_code = "5700",
-      StreetNumber = 123,
-      StreetName = "Street",
+      Zip_code = "[FAKER][ADDRESS][ZIP]",
+      StreetNumber = [FAKER][NUMBER][BETWEEN][1000,2000],
+      StreetName = "[FAKER][ADDRESS][STREET_NAME]",
       Floor = "4",
       Apartment = "C"
      }
@@ -136,23 +132,25 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 ```
 ]]]
 
-> NOTE
+> WARNING
 >
-> Nota
+> Importante
 >
 > Las dimensiones que indiques deben coincidir con las del paquete para que el carrier no te rechace el envío. Si no lo rechaza y las dimensiones son incorrectas, descontaremos esa diferencia del monto total de la cuenta del vendedor.
 
 
 
-## Configura los tipos de envíos
+## Puedes agregar otros tipos de envío
 
-Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer envío gratis y/o retiro en domicilio.
+Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer º y/o retiro en domicilio.
 
 ### Envío gratis
 
 El costo de envío será debitado de la cuenta del vendedor cuando reciba un pago.
 
-Puedes ofrecer distintos métodos de envíos modificando el ID. Consultá los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuál poner en el código. En el código ejemplo, vas a ofrecer “shipping_modes”: “me2” 
+Puedes ofrecer distintos métodos de envíos modificando el ID. Consultá los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+
+Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envio normal a domicilio de Adreani.  
 
 
 [[[
@@ -162,10 +160,9 @@ Puedes ofrecer distintos métodos de envíos modificando el ID. Consultá los <a
 
   $shipments = new MercadoPago\Shipments();
   // ...
-  // 73328 = Normal a Domicilio, OCA Estándar
-  // 504945 = Normal a Domicilio, Andreani
   $shipments->free_methods = array(
-    array("id"=>73328, 504945) 
+    array("id"=>73328,
+          "id2"=>504945) 
   );
   // ...
 
@@ -177,8 +174,6 @@ Preference preference = new Preference();
 
 Shipments shipments = new Shipments();
 // ...
-// 73328 = Normal a Domicilio, OCA Estándar
-// 504945 = Normal a Domicilio, Andreani
 shipments.setFreeMethods(73328, 504945); 
 // ...
 preference.setShipments(shipments);
@@ -189,8 +184,6 @@ var preference = {}
 
 var shipments = {
   //..
-  // 73328 = Normal a Domicilio, OCA Estándar
-  // 504945 = Normal a Domicilio, Andreani
   "free_methods": [
       {
           "id": 73328
@@ -209,8 +202,6 @@ preference = new MercadoPago::Preference.new();
 
 shipments = MercadoPago::Shipment.new
 # ...
-# 73328 = Normal a Domicilio, OCA Estándar
-# 504945 = Normal a Domicilio, Andreani
 shipments.free_methods = [
   {
     id: 73328
@@ -228,15 +219,23 @@ Preference preference = new Preference();
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment();
 //...
-// 73328 = Normal a Domicilio, OCA Estándar
-// 504945 = Normal a Domicilio, Andreani
 shipments.FreeMethods = new List<int> { 73328, 504945 };
 //...
 preference.Shipments = shipments;
 ```
 ]]]
 
+#### Simulador de costos de envíos
 
+Puedes simular costos desde la <a href="https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_alto_x_ancho_x_largo_,_peso_" target="_blank">calculadora de envíos</a>. Para hacerlo, debes reemplazar los valores de sellerId, shippingMethod Id, price, zipCode, alto, ancho, largo, peso de tuy paquete.
+
+[[[
+```curl
+
+curl --location --request GET 'http://api.mercadolibre.com/users/179504451/shipping_options?free_method=182&item_price=718&zip_code=74474322&dimensions=2x11x16,88'
+
+```
+]]]
 
 ### Retiro en domicilio
 
@@ -297,7 +296,7 @@ preference.Shipments = shipments;
 ```
 ]]]
 
-**¡Y listo! Mercado envíos ya se encuentra integrado.** Una vez que se reciba una venta, solo hay que <a href="https://www.mercadopago.com.ar/ayuda/Preparar-un-paquete-enviarlo_1603" target="_blank">preparar el paquete y enviarlo</a>.
+**¡Y listo! Mercado envíos ya se encuentra integrado.** Una vez que se reciba una venta, solo hay que <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar el paquete y enviarlo</a>.
 
 
 > NOTE
@@ -330,12 +329,13 @@ preference.Shipments = shipments;
   $shipments->dimensions = "30x30x30,500";
   $shipment->default_shipping_method = 73328;
   $shipments->free_methods = array(
-    array("id"=>73328, 504945)
+    array("id"=>73328,
+          "id2"=>504945)
   );
   $shipments->receiver_address=array(
-    "zip_code" => "5700",
-    "street_number" => 123,
-    "street_name" => "Street",
+    "zip_code" => "[FAKER][ADDRESS][ZIP]",
+    "street_number" => [FAKER][NUMBER][BETWEEN][1000,2000],
+    "street_name" => "[FAKER][ADDRESS][STREET_NAME]",
     "floor" => "4",
     "apartment" => "C"
   );
@@ -365,7 +365,7 @@ payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
 Shipments shipments = new Shipments();
 shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
-    .setReceiverAddress(new AddressReceiver("5700", 123, "street", "4", "C"));
+    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP]", [FAKER][NUMBER][BETWEEN][1000,2000], "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
 
 shipments.setFreeMethods(73328, 504945); 
 
@@ -394,9 +394,9 @@ var shipments = {
   "mode": "me2",
   "dimensions": "30x30x30,500",
   "receiver_address": {
-    "zip_code": "5700",
-    "street_number": 123,
-    "street_name": "Street",
+    "zip_code": "[FAKER][ADDRESS][ZIP]",
+    "street_number": [FAKER][NUMBER][BETWEEN][1000,2000],
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "floor": "4",
     "apartment": "C"
   },
@@ -438,9 +438,9 @@ shipment = MercadoPago::Shipment.new
 shipment.mode = me2
 shipment.dimensions = "30x30x30,500"
 shipment.receiver_address = {
-  zip_code: "5700",
-  street_number: 123,
-  street_name: "Street",
+  zip_code: "[FAKER][ADDRESS][ZIP]",
+  street_number: [FAKER][NUMBER][BETWEEN][1000,2000],
+  street_name: "[FAKER][ADDRESS][STREET_NAME]",
   floor: "4",
   apartment: "C"
 }
@@ -484,9 +484,9 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
      LocalPickUp = true,
      FreeMethods = new List<int> { 73328, 504945 },
      ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      ZipCode = "5700",
-      StreetNumber = 123,
-      StreetName = "Street",
+      ZipCode = "[FAKER][ADDRESS][ZIP]",
+      StreetNumber = [FAKER][NUMBER][BETWEEN][1000,2000],
+      StreetName = "[FAKER][ADDRESS][STREET_NAME]",
       Floor = "4",
       Apartment = "C"
      }
@@ -499,12 +499,13 @@ preference.Save();
 ```
 ]]]
 
+---
 ### Próximos pasos
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_RECOMMENDED_ES
 >
 > Prueba tu integración
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/test-integration/)
