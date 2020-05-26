@@ -142,7 +142,7 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 
 ## Puedes añadir otros tipos de envío
 
-Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer y/o retiro en domicilio.
+Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer envío gratis y/o retiro en domicilio.
 
 ### Envío gratis
 
