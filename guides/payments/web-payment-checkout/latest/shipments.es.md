@@ -14,7 +14,7 @@ Integra Mercado Envíos para recibir el pago de tus productos y gestionar su env
 
 ### Activa Mercado Envíos
 
-Desde la cuenta del vendedor, <a href="http://shipping.mercadopago.com.ar/optin/doOptin?execution=e1s1&goUrl=&buttonText=" target="_blank">ingresa a la sección de Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
+Desde la cuenta del vendedor, <a href="https://www.mercadopago.com.ar/business#shipping" target="_blank">ingresa a la sección de Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
 
 Usaremos ese domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
 
