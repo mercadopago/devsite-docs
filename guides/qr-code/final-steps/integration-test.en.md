@@ -91,9 +91,7 @@ To test **different payments results**, complete the data you want in the cardho
 
 ### 1. With your seller user, assign an order to a Point of Sale. 
 
-Generate an order with the test user [credentials]([FAKER][CREDENTIALS][URL]) you want as seller:
-- For [attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-a/), send an order to the QR code previously created.
-- For [unattended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-a/), assign the order to the allocated URL. 
+To test attended model, generate an order with the test user credentials you want as seller and send an order to the QR code previously created
 
 ### 2. Make a payment with your buyer user.
 
