@@ -127,7 +127,7 @@ Los atributos que pueden agregarse y modificarse son los siguientes.
 - Productos: `data-summary-product`
 - Descuento: `data-summary-discount`
 - Envío: `data-summary-shipping`
-- Recargos: `data-summary-charges`
+- Recargos: `data-summary-charge`
 - Impuestos: `data-summary-taxes`
 - Saldo pendiente: `data-summary-arrears`
 
@@ -190,10 +190,10 @@ data-summary-shipping="10"
 
 #### Recargos
 
-Usando el atributo `data-summary-charges`, puedes especificar el monto de recargos en el detalle de la compra. Por ejemplo:
+Usando el atributo `data-summary-charge`, puedes especificar el monto de recargos en el detalle de la compra. Por ejemplo:
 
 ```html
-data-summary-charges="10"
+data-summary-charge="10"
 ```
 
 Aparecerá en el detalle de la compra bajo el concepto de *"Recargos"*.
