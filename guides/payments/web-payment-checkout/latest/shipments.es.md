@@ -140,9 +140,9 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 
 
 
-## Puedes agregar otros tipos de envío
+## Puedes añadir otros tipos de envío
 
-Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer º y/o retiro en domicilio.
+Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer y/o retiro en domicilio.
 
 ### Envío gratis
 
@@ -227,7 +227,7 @@ preference.Shipments = shipments;
 
 #### Simulador de costos de envíos
 
-Puedes simular costos desde la <a href="https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_alto_x_ancho_x_largo_,_peso_" target="_blank">calculadora de envíos</a>. Para hacerlo, debes reemplazar los valores de sellerId, shippingMethod Id, price, zipCode, alto, ancho, largo, peso de tuy paquete.
+Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores de sellerId, shippingMethod Id, price, zipCode, alto, ancho, largo,peso de tu paquete.
 
 [[[
 ```curl
