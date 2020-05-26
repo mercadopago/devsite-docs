@@ -5,7 +5,7 @@ sites_supported:
   - mla
 ---
 
-# Ofrecer Mercado Envíos
+# Ofrece Mercado Envíos
 
 Integra Mercado Envíos para recibir el pago de tus productos y gestionar su envío al mismo tiempo. Solo tienes que agregar los datos necesarios en tu preferencia y configurar los datos de tu negocio.
 
@@ -150,7 +150,7 @@ El costo de envío será debitado de la cuenta del vendedor cuando reciba un pag
 
 Puedes ofrecer distintos métodos de envíos modificando el ID. Consultá los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
 
-Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envio normal a domicilio de Adreani.  
+Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envio normal a domicilio de Andreani.  
 
 
 [[[
