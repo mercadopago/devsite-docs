@@ -11,6 +11,12 @@ sites_supported:
 
 # Pagos QR modelo desatendido
 
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
 ## ¿Qué es QR por modelo desatendido?
 
 Este modelo te **permite que no se tenga que crear explícitamente la orden de cobro en Mercado Pago**. La orden es generada con la selección de un producto o servicio y el escaneo del QR de la caja. 
@@ -62,6 +68,25 @@ Te explicamos cómo funciona el modelo desatendido:
 > Nota
 > 
 > En el punto 5 deberás ejecutar los pasos 8A y 8B para obtener el estado de la orden.
+
+## Cajas para el modelo desatendido
+
+Para crear las cajas del modelo desatendido, necesitas declarar la URL de un servicio de tu dominio al cual Mercado Pago consultará si hay una orden disponible.
+
+[[[
+ ```curl
+curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
+{
+  "name":"Caja Principal", 
+  "fixed_amount": true,
+  "category": 621102,
+  "external_store_id": "STORE001",
+  "external_id": "CAJA0001",
+  "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
+}
+```
+]]]
+
 
 ### Próximos pasos
 

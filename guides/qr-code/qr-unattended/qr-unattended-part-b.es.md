@@ -11,6 +11,13 @@ sites_supported:
 
 # Cómo integrar QR modelo desatendido
 
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
+
 Para integrar el modelo desatendido es necesario:
 
   1. Crear el servicio que será invocado al recibir una intención de pago y su lógica asociada cuando:

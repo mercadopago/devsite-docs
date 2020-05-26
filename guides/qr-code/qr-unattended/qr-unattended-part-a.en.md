@@ -11,6 +11,12 @@ sites_supported:
 
 # QR unattended model
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 
 ## What’s QR unattended model?
 
@@ -61,6 +67,24 @@ This is how the QR unattended model works:
 > Note
 > 
 > On point 5, you’ll have to follow steps 8A and 8B to get order status.
+
+## POS for the unattended model
+
+To create the points of sale(POS) of the unattended model, you need to declare the URL of a service of your domain to which Mercado Pago will consult if there is an order availab
+
+[[[
+ ```curl
+curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
+{
+  "name":"Caja Principal", 
+  "fixed_amount": true,
+  "category": 621102,
+  "external_store_id": "STORE001",
+  "external_id": "CAJA0001",
+  "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
+}
+```
+]]]
 
 
 ### Next steps
