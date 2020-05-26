@@ -69,7 +69,7 @@ Explicamos a você o funcionamento do modelo desatendido:
 > No item 5 deverá executar os passos 8A e 8B para obter o estado do pedido. 
 
 
-## Cajas para el modelo desatendido
+## Caixa para el modelo desatendido
 
 Para criar caixas de modelo desatendido, você precisa declarar a URL de um serviço do seu domínio ao qual o Mercado Pago consultará se há uma ordem disponível.
 
@@ -77,11 +77,11 @@ Para criar caixas de modelo desatendido, você precisa declarar a URL de um serv
  ```curl
 curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
 {
-  "name":"Caja Principal", 
+  "name":"Caixa Principal", 
   "fixed_amount": true,
   "category": 621102,
   "external_store_id": "STORE001",
-  "external_id": "CAJA0001",
+  "external_id": "CAIXA0001",
   "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
 }
 ```
