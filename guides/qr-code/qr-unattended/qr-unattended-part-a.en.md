@@ -70,7 +70,7 @@ This is how the QR unattended model works:
 
 ## POS for the unattended model
 
-To create the points of sale of the unattended model, you need to declare the URL of a service of your domain to which Mercado Pago will consult if there is an order availab
+To create Points of Sale for the the unattended model, you need to declare your web address, to which Mercado Pago will later make requests for available orders.
 
 [[[
  ```curl
