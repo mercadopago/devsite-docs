@@ -12,9 +12,9 @@ Integra Mercado Envíos para recibir el pago de tus productos y gestionar su env
 
 ## Requisito previo
 
-### Activa Mercado Envíos
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activa Mercado Envíos
 
-Desde la cuenta del vendedor, <a href="https://www.mercadopago.com.ar/business#shipping" target="_blank">ingresa a la sección de Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
+Desde la cuenta del vendedor, ingresa a la sección de <a href="https://www.mercadopago.com.ar/business#shipping" target="_blank">Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
 
 Usaremos ese domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
 
@@ -144,7 +144,7 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 
 Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer envío gratis y/o retiro en domicilio.
 
-### Envío gratis
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Envío gratis
 
 El costo de envío será debitado de la cuenta del vendedor cuando reciba un pago.
 
@@ -225,23 +225,26 @@ preference.Shipments = shipments;
 ```
 ]]]
 
-#### Simulador de costos de envíos
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulador de costos de envíos
 
-Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores de sellerId, shippingMethod Id, price, zipCode, alto, ancho, largo,peso de tu paquete.
+Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores de `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `altoxanchoxlargo,peso` de tu paquete.
+
+> NOTE
+>
+> https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_alto_x_ancho_x_largo_,_peso_
+>
+
 
 
 [[[
 ```curl
-===
-https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_alto_x_ancho_x_largo_,_peso_
-===
 
 curl --location --request GET 'http://api.mercadolibre.com/users/179504451/shipping_options?free_method=182&item_price=718&zip_code=74474322&dimensions=2x11x16,88'
 
 ```
 ]]]
 
-### Retiro en domicilio
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Retiro en domicilio
 
 También puedes ofrecer la posibilidad de retirar el producto por el domicilio que configuraste, indicándole al comprador cuándo y dónde retirarlo. 
 
