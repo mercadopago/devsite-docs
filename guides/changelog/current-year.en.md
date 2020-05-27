@@ -12,8 +12,9 @@ Each release note describes the new changes applying to a version. This changes 
 
 
 ## May 26th, 2020
-
-We have released a new version of JavaScript SDK
+### New version of Javascript SDK
+We have released the new version of Javascript SDK 1.3.0. From now on, it is compatible with Internet Explorer 11 so you can use it in your integrations without problems.
+[Go to Javascript SDK documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks/official/js/)
 
 ## May 13th, 2020
 
