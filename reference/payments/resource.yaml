@@ -303,6 +303,12 @@ properties:
       en: Amount of the coupon discount.
       es: Monto del cupón de descuento.
       pt: Valor do cupom de desconto.
+- date_of_expiration:
+    type: Date(ISO_8601)
+    description:
+      en: Payment’s expiration date.
+      es: Fecha de expiración del pago.
+      pt: Data de expiração do pagamento.
 - campaign_id:
     type: Integer
     description:
