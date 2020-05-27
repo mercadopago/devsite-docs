@@ -24,12 +24,12 @@ Você tem diferentes formas de fazê-lo. Consulte todas as informações disponi
 
 Oferece uma experiência mais completa para receber com QR por **integrar seu sistema com Mercado Pago**.
 
-Você pode receber, restituir pagamentos e receber notificações em seu sistema. Escolha um dos dois modelos possíveis de integração: 
+Você pode receber, restituir pagamentos e receber notificações em seu sistema. 
 
 | Tipo de integração                                                        | Características                                                  | Funcionamento |   Exemplos de negócios |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------ |
 | Modelo atendido | Requer intervenção do operador do ponto de venda. Mercado Pago como meio de pagamento. | O operador toma o pedido de venda. Depois o cliente escaneia o QR pagando o valor do pedido. | Loja de produtos,  restaurantes de [fast-food]. |
-| Modelo desatendido | Não requer intervenção de um operador.   | O cliente escaneia o QR. Depois que seu produto ou serviço estiver pronto, paga o valor do pedido que é a ele informado sem intervenção de um operador.  | Postos de gasolina,  máquinas de venda automática, negócios integrados com múltiplas carteiras virtuais.  |
+
 
 ### Próximos passos
 

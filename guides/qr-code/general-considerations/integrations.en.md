@@ -23,12 +23,12 @@ There are various ways of doing it. Consult all available information to [genera
 
 Provide a more complete experience for QR payments by **integrating your system with Mercado Pago**.
 
-You’ll be able to charge, refund and receive notifications in your system. Pick one of these integration models:
+You’ll be able to charge, refund and receive notifications in your system. 
 
 | Integration type                                                        | Features                                                  | Operation |   Business examples |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------ |
 | Attended model | Requires intervention from the operator in a point of sale. Select Mercado Pago as a payment method. | Operator takes the order. Next, client scans QR to pay for the order. | Stores, fast food restaurants. |
-| Unattended model | Intervention from an operator is not required.  | Client scans QR. Once product or service is ready, client pays the value informed by an operator.  | Gas stations, vending machines, business integrated with multiple virtual wallets. |
+
 
 ### Next steps
 

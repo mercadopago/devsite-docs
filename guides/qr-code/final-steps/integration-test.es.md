@@ -91,9 +91,7 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 
 ### 1. Con tu usuario vendedor, asigna una orden a un punto de venta. 
 
-Genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor:
-  - Para [modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/), envía una orden al QR previamente creado. 
-  - Para [modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/), disponibiliza la orden en la URL asignada.
+Parar probar el modelo desatendido, genera una orden con las (credenciales)[FAKER][CREDENTIALS][URL] del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
 
 ### 2. Realiza un pago con tu usuario comprador
   - A. Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.

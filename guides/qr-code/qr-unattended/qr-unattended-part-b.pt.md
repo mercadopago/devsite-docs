@@ -11,6 +11,12 @@ sites_supported:
 
 # Integrar o modelo autônomo do QR
 
+> WARNING
+>
+> Contato comercial necessário
+>
+> Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
+
 Para integrar o modelo desatendido, é necessário: 
   
 1.  Criar o serviço que será invocado ao receber uma intenção de pagamento e sua lógica associada quando: 
