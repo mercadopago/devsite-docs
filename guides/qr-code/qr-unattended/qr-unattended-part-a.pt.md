@@ -82,7 +82,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
   "category": 621102,
   "external_store_id": "STORE001",
   "external_id": "CAIXA0001",
-  "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
+  "url": "https://www.minhaempresa.com/pay-mp?locationId=6232&positionId=1"
 }
 ```
 ]]]
