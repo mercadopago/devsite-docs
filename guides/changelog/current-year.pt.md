@@ -12,6 +12,12 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 
 
+## 26 de maio de 2020
+### Nova versão SDK Javascript
+Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compatível com Internet Explorer 11 para que o possa usar em suas integrações sem problemas.
+[Ir para a documentação do SDK Javascript](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks/official/js/)
+
+
 ## 13 de maio de 2020
 
 ### Nova versão WooCommerce

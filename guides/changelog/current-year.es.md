@@ -11,6 +11,11 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
 
+## 26 de mayo de 2020
+### Nueva versíon SDK Javascript
+Lanzamos una nueva versión de SDK Javascript 1.3.0. A partir de ahora, es compatible con Internet Explorer 11 para que la puedas usar en tus integraciones sin problemas.
+[Ir a la documentación de SDK Javascript](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/)
+
 ## 13 de mayo de 2020
 
 ### Nueva versión WooCommerce
