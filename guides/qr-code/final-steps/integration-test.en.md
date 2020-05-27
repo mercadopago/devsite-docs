@@ -91,7 +91,7 @@ To test **different payments results**, complete the data you want in the cardho
 
 ### 1. With your seller user, assign an order to a Point of Sale. 
 
-To test attended model, generate an order with the test user credentials you want as seller and send an order to the QR code previously created
+To test attended model, generate an order with the test user (credentials)[FAKER][CREDENTIALS][URL] you want as seller and send an order to the QR code previously created
 
 ### 2. Make a payment with your buyer user.
 
