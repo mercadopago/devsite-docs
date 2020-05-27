@@ -127,7 +127,7 @@ The attributes that can be added and modified are the following.
 - Products: `data-summary-product`
 - Discount: `data-summary-discount`
 - Shipping: `data-summary-shipping`
-- Surcharges: `data-summary-charges`
+- Surcharges: `data-summary-charge`
 - Taxes: `data-summary-taxes`
 - Outstanding balance: `data-summary-arrears`
 
@@ -189,10 +189,10 @@ data-summary-shipping="10"
 
 #### Surcharges
 
-Using the attribute `data-summary-charges`, you can specify the amount of surcharges in the detail of the purchase. For example:
+Using the attribute `data-summary-charge`, you can specify the amount of surcharges in the detail of the purchase. For example:
 
 ```html
-data-summary-charges="10"
+data-summary-charge="10"
 ```
 
 It will appear in the detail of the purchase under the concept of *"Surcharges"*.

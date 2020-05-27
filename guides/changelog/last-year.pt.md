@@ -55,10 +55,6 @@ Confira todas as informações necessárias no [manual da migração](https://ww
 
 ------------
 
-## 26 de junho de 2019
-
-Melhorias na documentação do Mercado Pago Gateway
-
 ## 29 de maio de 2019
 
 **Módulos oficiais com suporte do Mercado Pago**

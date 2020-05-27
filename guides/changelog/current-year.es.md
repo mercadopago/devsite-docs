@@ -11,6 +11,43 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
 
+## 13 de mayo de 2020
+
+### Nueva versión WooCommerce
+
+Lanzamos una nueva versión de WooCommerce.
+
+Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/introduction/)
+
+
+## 6 de mayo de 2020
+
+### Nueva versión de SDK Java
+
+Disponibilizamos una nueva versión de SDK Java 1.6.
+
+Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
+
+
+## 4 de mayo de 2020
+
+### Nueva versión de SDK .NET
+
+Disponibilizamos una nueva versión de SDK .NET.
+
+Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
+
+
+## 3 de abril de 2020
+
+### Actualización de documentación - API
+
+Renovamos la documentación para usar nuestras APIs de pagos. Agregamos un ejemplo básico del formulario en el frontend y sumamos diagramas de funcionamiento para ayudarte a la hora de integrar.
+
+[Ir a documentación de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+
 
 ## 27 de marzo de 2020
 
@@ -34,6 +71,15 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 
 > Para más información sobre la programación de reportes, [consulta la documentación](https://www.mercadopago.com.ar/developers/es/guides/reports/general-considerations/reconciliation-reports/).  
 
+
+## 19 de marzo de 2020
+
+### Nueva versión Prestashop 1.6 & 1.7
+
+Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkout de Mercado Pago a través de modal para que tus compradores puedan realizar una compra sin salir de tu sitio.
+Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases).
+
+[Ir a documentación de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction/)
 
 
 ## 9 de enero de 2020

@@ -39,11 +39,3 @@ Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce co
 >
 >
 > [Preferências](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/preferences/)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Teste e receba pagamentos
->
-> Teste o módulo e verifique se tudo está funcionando bem para começar a receber o dinheiro das suas vendas no Mercado Pago.
->
-> [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/receive-payments/)

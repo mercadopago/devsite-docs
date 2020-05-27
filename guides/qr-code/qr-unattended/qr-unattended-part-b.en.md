@@ -11,6 +11,12 @@ sites_supported:
 
 # How to integrate QR unattended model 
 
+> WARNING
+>
+> Commercial contact required
+>
+> This product is only available through prior contact with one of our executives.
+
 To integrate QR unattended model you need to:
 
 1. Create a service that will be called when a payment request is received and its associate logic.

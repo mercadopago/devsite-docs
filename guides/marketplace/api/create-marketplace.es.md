@@ -25,7 +25,7 @@ Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario 
 
 Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id` el valor de `APP_ID` y la `redirect_uri` que obtuviste en el paso anterior:
 
-`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com`
+`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 Recibirás el código de autorización en la url que especificaste:
 
@@ -90,8 +90,8 @@ En la respuesta, además del `access_token` y `public_key` del vendedor que se h
 > Nota
 >
 > Las credenciales tienen un **tiempo de validez de 6 meses**.
-> Si no se renuevan las credenciales de los vendedores antes de los 6 meses, **las mismas perderán vigencia y se deberá volver a autorizar al vendedor**. 
-> Recomendación: Renovar las credenciales a los 5 meses de obtenerlas. 
+> Si no se renuevan las credenciales de los vendedores antes de los 6 meses, **las mismas perderán vigencia y se deberá volver a autorizar al vendedor**.
+> Recomendación: Renovar las credenciales a los 5 meses de obtenerlas.
 
 ### Renueva las credenciales de tus vendedores
 
@@ -178,7 +178,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
@@ -245,7 +245,7 @@ En el artículo de [notificaciones](https://www.mercadopago.com.ar/developers/es
 ### Devoluciones y cancelaciones
 
 Las devoluciones y cancelaciones podrán ser realizadas tanto por el _marketplace_ como por el vendedor, vía API o desde la cuenta de Mercado Pago.
-En caso de que las cancelaciones las haga el Marketplace, se deben utilizar las obtenidas para el vendedor. 
+En caso de que las cancelaciones las haga el Marketplace, se deben utilizar las obtenidas para el vendedor.
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
@@ -253,6 +253,6 @@ Puedes encontrar más información en el artículo sobre [devoluciones y cancela
 
 ### Probá tu Marketplace
 
-Puedes probar tu Marketplace utilizando las credenciales de Sandbox de tu cuenta tanto para asociar a los vendedores como para realizar los cobros/cancelaciones y demás. 
-Se podrá utilizar las tarjetas de test proporcionadas por Mercado Pago, y los distintos prefijos para manejar los mensajes de respuesta. 
-[Probá tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/) 
+Puedes probar tu Marketplace utilizando las credenciales de Sandbox de tu cuenta tanto para asociar a los vendedores como para realizar los cobros/cancelaciones y demás.
+Se podrá utilizar las tarjetas de test proporcionadas por Mercado Pago, y los distintos prefijos para manejar los mensajes de respuesta.
+[Probá tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)

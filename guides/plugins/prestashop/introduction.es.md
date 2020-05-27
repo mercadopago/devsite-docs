@@ -27,7 +27,7 @@ Instala nuestro procesador de pagos y lleva tus ventas a otro nivel con la mejor
 | Financiación                 	| Vende en cuotas y ofrece las promociones que desees.                    	                                               |
 | Liberación de dinero          | Al instante o con las tasas y plazos que mejor se adapten al negocio.    	                                               |
 | Medios de pago                | Acepta pagos con tarjeta de crédito y débito, pagos en efectivo y con dinero en cuenta de Mercado Pago.                  |
-| Tipos de checkout             | Checkout Mercado Pago, Checkout Personalizado, Ticket Checkout.                                               	         |
+| Tipos de checkout             | Checkout de Mercado Pago, Checkout Personalizado, Ticket Checkout.                                               	         |
 | Pago como invitado            | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en Prestashop.                             |
 | Modo binario                  | Aprueba o rechaza pagos al instante y de forma automática.                                                               |
 
@@ -51,7 +51,7 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 >
 > Nota
 >
-> Consulta la [documentación del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 ### Próximo paso
 

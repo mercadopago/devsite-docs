@@ -55,13 +55,6 @@ Puedes encontrar toda la información necesaria en la [guía de la migración](h
 
 ------------
 
-----[mla, mco]----
-
-## 26 de Junio de 2019
-
-Mejoras en documentación de Modelo Gateway
-
-------------
 ----[mlb, mlm, mlc, mco, mpe]----
 
 ## 29 de mayo de 2019

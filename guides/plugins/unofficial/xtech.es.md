@@ -1,4 +1,13 @@
+---
+  indexable: false
+---
 # XTECH
+
+> WARNING
+>
+> Solo damos soporte a plugins oficiales
+>
+> Esta documentación no cuenta con soporte oficial de Mercado Pago. Si quieres realizar algún cambio, puedes [modificar el código abierto en GitHub](https://github.com/mercadopago/devsite-docs/blob/development/guides/plugins/unofficial/xtech.es.md).
 
 ## ¿Qué es XTECH?
 
@@ -12,7 +21,7 @@ Adaltech permite operar con Mercado Pago en las siguientes modalidades:
 
 Reciba pagos en su tienda a través de la tarjeta de crédito en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma XTECH.
 
-### Checkout Mercado Pago
+### Checkout de Mercado Pago
 
 Reciba pagos en su tienda utilizando el checkout del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
 

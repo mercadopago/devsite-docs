@@ -25,7 +25,7 @@ Assim que criar a aplicação, você obterá o `APP_ID` (identificador de aplica
 
 Para operar no Mercado Pago em nome do seu vendedor, você deverá primeiro lhe solicitar uma autorização. Para isso, redirecione o usuário para a seguinte URL substituindo em `client_id` o valor de `APP_ID` e a `redirect_uri`que obteve no passo anterior:
 
-`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com`
+`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 Você receberá o código de autorização na URL que especificou:
 
@@ -89,8 +89,8 @@ Na resposta, além do `access_token` e da `public_key`do vendedor que foi vincul
 > Nota
 >
 > As credenciais têm um **prazo de validade de 6 meses**.
-> Se não se renovarem as credenciais dos vendedores antes dos 6 meses, **as mesmas perderão vigência e se deverá autorizar o vendedor novamente**. 
-> Recomendação: Renovar as credenciais a cada 5 meses. 
+> Se não se renovarem as credenciais dos vendedores antes dos 6 meses, **as mesmas perderão vigência e se deverá autorizar o vendedor novamente**.
+> Recomendação: Renovar as credenciais a cada 5 meses.
 
 
 ### Renove as credenciais de seus vendedores
@@ -177,7 +177,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
@@ -264,4 +264,4 @@ Para mais informações, consulte a seção de [devoluções e cancelamentos](ht
 
 Você pode usar os cartões de teste fornecidos pelo Mercado Pago e os diferentes prefixos para manipular as mensagens de resposta.
 
-[Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing) 
+[Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing)

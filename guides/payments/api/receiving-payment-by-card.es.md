@@ -4,7 +4,7 @@ La integración por API de pagos de Mercado Pago para tarjetas permite que pueda
 
 ## ¿Cómo funciona?
 
-![API-integration-flowchart](/images/api/api_integration_flowchart_es.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-es.png)
 
 <br>
 
@@ -159,7 +159,7 @@ function setPaymentMethod(status, response) {
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener cantidad de cuotas
 
-Otro de los campos obligatorios para pagos con tarjetas es la cantidad de cuotas. Para obtener las cuotas disponibles, puedes utilizar la siguiente función de ejemplo para completar el campo sugerido de tipo _select_ denominado `installments`
+Otro de los campos obligatorios para pagos con tarjetas es la cantidad de cuotas. Para obtener las cuotas disponibles, puedes utilizar la siguiente función de ejemplo para completar el campo sugerido de tipo _select_ denominado `installments`.
 
 ```javascript
 function getInstallments(){
@@ -193,13 +193,11 @@ function getInstallments(){
 
 ------------
 
-<br>
-
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Crea el token de la tarjeta
 
 Antes de enviar el pago, debes crear el token que contendrá de manera segura toda la información de la tarjeta. Lo debes generar de la siguiente manera:
 
-```javascript 
+```javascript
 doSubmit = false;
 document.querySelector('#pay').addEventListener('submit', doPay);
 
@@ -261,7 +259,7 @@ Según el ejemplo dado, tu backend debería disponibilizar un endpoint `/procesa
 
 Ya estando en tu backend con toda la información recolectada, es momento de enviar la solicitud a Mercado Pago a través de nuestras APIs. Los campos mínimos requeridos a enviar son: `token`,` transaction_amount`, `installments`, `payment_method_id` y el `payer.email`.
 
-Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada]([FAKER][CREDENTIALS][URL]) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/previous-requirements/#bookmark_instala_la_sdk_de_mercado_pago).
+Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada]([FAKER][CREDENTIALS][URL]) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/previous-requirements/#bookmark__instala_la_sdk_de_mercado_pago).
 
 [[[
 ```php
@@ -272,7 +270,7 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-    
+
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
     $payment->token = "ff8080814c11e237014c1ff593b57b4d";
@@ -284,10 +282,10 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
     );
 
     $payment->save();
-    
+
 
     echo $payment->status;
-    
+
 ?>
 ```
 ```node
@@ -323,7 +321,7 @@ Puedes encontrar el estado del pago en el valor _status_.
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken("ff8080814c11e237014c1ff593b57b4d")
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(1)
@@ -433,7 +431,7 @@ curl -X POST \
 
 Los posibles estados de un pago son:
 
-![payment-status](/images/api/api_payment_status.png)
+![payment-status](/images/api/api-payment-status-es.png)
 <br>
 <br>
 

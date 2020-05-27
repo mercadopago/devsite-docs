@@ -3,7 +3,7 @@ sites_supported:
   - mpe
 ---
 
-# Checkout Mercado Pago
+# Checkout de Mercado Pago
 
 Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
 
@@ -22,7 +22,7 @@ Contamos con la certificación [PCI DSS](https://www.pcisecuritystandards.org/),
 
 ## ¿Cómo funciona?
 
-![Flujo de creación de preferencia Mercado Pago Checkout Mercado Pago](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
+![Flujo de creación de preferencia Mercado Pago Checkout de Mercado Pago](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
 
 Integrar el checkout es muy fácil:
 

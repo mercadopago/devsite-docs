@@ -23,7 +23,7 @@ Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][U
 >
 > h3
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclua MercadoPago.js.
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclua MercadoPago.js
 
 MercadoPago.js te permite criar um token de pagamento para enviar os dados dos cartões ao seu backend de forma segura. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
 
@@ -48,7 +48,7 @@ Instale o [SDKs oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/
 
 Execute o seguinte código na sua linha de comando:
 ===
-php composer.phar require "mercadopago/dx-php:dev-master"
+php composer.phar require "mercadopago/dx-php"
 ```
 ```node
 ===

@@ -4,7 +4,7 @@ A integração por API do Mercado Pago para pagamentos com cartões permite que 
 
 ## Como funciona?
 
-![API-integration-flowchart](/images/api/api_integration_flowchart_pt.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-pt.png)
 
 <br>
 
@@ -30,7 +30,7 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Inclua a biblioteca MercadoPago.js
 
 **Use nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
- 
+
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
@@ -63,7 +63,7 @@ No seguinte exemplo se assume que os dados `transaction_amount` e `description` 
         <p>
             <label for="cardholderName">Nome e sobrenome</label>
             <input type="text" id="cardholderName" data-checkout="cardholderName" />
-        </p> 
+        </p>
         <p>
             <label for="cardExpirationMonth">Mês de vencimento</label>
             <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
@@ -103,11 +103,11 @@ No seguinte exemplo se assume que os dados `transaction_amount` e `description` 
 
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
-```javascript 
+```javascript
 window.Mercadopago.setPublishableKey("ENV_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp). 
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
@@ -120,7 +120,7 @@ Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documento
 
 Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
 
-```javascript 
+```javascript
 window.Mercadopago.getIdentificationTypes();
 ```
 
@@ -133,7 +133,7 @@ window.Mercadopago.getIdentificationTypes();
 
 Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
 
-```javascript 
+```javascript
 document.getElementById('cardNumber').addEventListener('keyup', guessPaymentMethod);
 document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
 
@@ -171,7 +171,7 @@ function getInstallments(){
     window.Mercadopago.getInstallments({
         "payment_method_id": document.getElementById('payment_method_id').value,
         "amount": parseFloat(document.getElementById('transaction_amount').value)
-        
+
     }, function (status, response) {
         if (status == 200) {
             document.getElementById('installments').options.length = 0;
@@ -254,7 +254,7 @@ Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/process
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos a enviar são: `token`,` transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
-Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]) e que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/#bookmark_instale_o_sdk_do_mercado_pago).
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]) e que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/#bookmark__instale_o_sdk_do_mercado_pago).
 
 [[[
 ```php
@@ -266,7 +266,7 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-    
+
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
     $payment->token = "ff8080814c11e237014c1ff593b57b4d";
@@ -278,10 +278,10 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
     );
 
 $payment->save();
-    
+
 
 echo $payment->status;
-    
+
 ?>
 ```
 ```node
@@ -318,7 +318,7 @@ Encontre o estado do pagamento no campo _status_.
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken("ff8080814c11e237014c1ff593b57b4d")
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(1)
@@ -407,7 +407,7 @@ curl -X POST \
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
-```json 
+```json
 {
     "status": "approved",
     "status_detail": "accredited",
@@ -431,7 +431,7 @@ curl -X POST \
 
 Os possíveis estados de um pagamento são:
 
-![payment-status](/images/api/api_payment_status.png)
+![payment-status](/images/api/api-payment-status-pt.png)
 <br>
 <br>
 
@@ -442,9 +442,9 @@ Isso ajudará a evitar casos de rejeição e estornos nos casos de transações 
 Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
 
 > NOTE
-> 
+>
 > Nota
-> 
+>
 > Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/payment-rejections/).
 
 ## Receba notificações de pagamento

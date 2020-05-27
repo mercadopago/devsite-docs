@@ -57,7 +57,7 @@ Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.br/" 
 <a href="https://getcomposer.org/download" target="_blank"> Instale o Composer </a> para usar o SDK.
 Em seguida, execute o seguinte código na linha de comandos:
 ===
-php composer.phar require "mercadopago/dx-php:dev-master"
+php composer.phar require "mercadopago/dx-php"
 ```
 ```node
 ===

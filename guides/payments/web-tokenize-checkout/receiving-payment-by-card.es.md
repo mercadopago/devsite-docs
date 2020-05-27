@@ -88,7 +88,7 @@ Solamente debes realizar un *API call* incluyendo los datos que recibiste del ch
 
 [[[
 ```php
-<?php 
+<?php
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -115,7 +115,7 @@ Solamente debes realizar un *API call* incluyendo los datos que recibiste del ch
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken(token)
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(installments)

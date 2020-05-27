@@ -19,7 +19,7 @@ Insira o **nome do seu negócio** para que apareça na fatura dos seus clientes 
 >
 > Importante
 >
-> **Você já trabalha com o Mercado Pago?** Não esqueça de inserir seu Sponsor_ID, assim identificamos todas as suas transações e sabemos quantas vendas sua conta processa. 
+> Não esqueça de inserir seu `integrator_id` como [Parceiro](https://partners.mercadopago.com/) certificado do Mercado Pago. Se você não o possui, pode [solicitá-lo agora](https://docs.google.com/forms/d/e/1FAIpQLScTwPlLRVW2rB_BnCxekUnfJu9rn-tUMh8ENAnqpxLeB8ULUw/viewform?usp=sf_link).
 
 <span></span>
 
@@ -64,7 +64,6 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 | Configuración                 | Descripción                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | Modo binário     	            | Ative esta opção quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.|
-| Modelo Gateway               	| Se você opera com o [modelo gateway](https://www.mercadopago.com.ar/developers/pt/guides/gateway/general-considerations/introduction/) como processador de pagamentos e tem seus próprios números de comércio, é possível configurar descontos e tarifas para os seus clientes por pagarem com Mercado Pago.|
 
 ### Checkout Mercado Pago
 
@@ -115,12 +114,3 @@ Escolha qual experiência de compra seus clientes terão na hora de pagar:
 >
 >
 > [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/receive-payments/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Instalar Mercado Pago no WooCommerce
->
-> Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
->
-> 
-> [Instalar](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/instalation/)

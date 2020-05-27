@@ -1,8 +1,11 @@
+---
+  indexable: false
+---
 # Mercado Pago SDK module for Payments integration
 
 
 * [Install](#bookmark_install)
-* [Checkout Mercado Pago](#bookmark_checkout_mercado_pago)
+* [Mercado Pago Checkout](#bookmark_mercado_pago_checkout)
 * [Customized checkout](#bookmark_customized_checkout)
 * [Generic methods](#bookmark_generic_methods)
 
@@ -21,7 +24,7 @@ On Python 3.x
 
 ``pip3 install mercadopago``
 
-## Checkout Mercado Pago
+## Mercado Pago Checkout
 
 
 Configure your credentials

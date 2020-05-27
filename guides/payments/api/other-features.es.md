@@ -6,7 +6,6 @@ Ofrece la posibilidad de realizar una autorización antes de generar una captura
 
 Por ejemplo, para realizar una autorización a la hora de reservar un auto o con un precio estimado de una compra previo a su confirmación.
 
-
 ## Realiza una reserva de fondos
 
 Para hacer una autorización de reserva de fondos solo tienes que agregar el atributo `capture=false` de la siguiente manera:
@@ -41,7 +40,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
@@ -70,9 +69,9 @@ var payment_data = {
 };
 
 mercadopago.payment.create(payment_data).then(function (data) {
-  
+
 }).catch(function (error) {
-  
+
 });
 
 ```
@@ -196,9 +195,9 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 ```
 
 > NOTE
-> 
+>
 > Nota
-> 
+>
 > Si no agregas un monto, se capturará el total reservado.
 
 ## Captura un pago por un monto menor al reservado
@@ -344,7 +343,7 @@ curl -X PUT \
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_REQUIRED_ES
 >
 > Requisitos para ir a producción
 >

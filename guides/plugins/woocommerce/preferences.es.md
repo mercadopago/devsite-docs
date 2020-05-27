@@ -19,7 +19,7 @@ Ingresa el **nombre del negocio** para que aparezca en la factura de tus cliente
 >
 > Importante
 >
-> **¿Eres partner de Mercado Pago?** No olvides ingresar tu Sponsor_ID, así identificamos todas tus transacciones y sabemos cuántas ventas procesa tu cuenta.
+> No olvides ingresar tu `integrator_id` como [Partner](https://partners.mercadopago.com/) certificado de Mercado Pago. Si no lo tienes, puedes [solicitarlo ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
 
 <span></span>
 
@@ -34,14 +34,14 @@ Ingresa el **nombre del negocio** para que aparezca en la factura de tus cliente
 Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y elige los medios de pago con los que podrán hacer la compra.
 
 * Activa un tipo de checkout
- * Usa Checkout Mercado Pago para soportar pagos con tarjetas, en efectivo y dinero en cuenta de Mercado Pago.
+ * Usa Checkout de Mercado Pago para soportar pagos con tarjetas, en efectivo y dinero en cuenta de Mercado Pago.
  * Usa el Checkout Personalizado para tener control sobre otras configuraciones.
 
 <!-- > WARNING
 >
 > Importante
 >
-> Ten en cuenta que el [Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
+> Ten en cuenta que el [Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
 
 * Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
 
@@ -53,7 +53,7 @@ Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y 
 >
 > Nota
 >
-> La opción de activar la conversión de moneda está disponible solo en el checkout personalizado. El Checkout Mercado Pago hace la conversión de forma automática.
+> La opción de activar la conversión de moneda está disponible solo en el checkout personalizado. El Checkout de Mercado Pago hace la conversión de forma automática.
 
 ## Configuración avanzada
 
@@ -64,11 +64,10 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 | Configuración                 | Descripción                                                               	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | Modo binario     	            | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática.|
-| Modelo Gateway               	| Si operas con el [modelo gateway](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/introduction/) como procesador de pagos y tienes tus propios números de comercio puedes configurar descuentos y comisiones a tus clientes por pagar con Mercado Pago.|
 
-### Checkout Mercado Pago
+### Checkout de Mercado Pago
 
-#### Experiencias de pago en Checkout Mercado Pago
+#### Experiencias de pago en Checkout de Mercado Pago
 
 Elige qué experiencia de compra tendrán tus clientes a la hora de pagar: 
 
@@ -81,7 +80,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 > Nota
 >
-> Consulta la [documentación del Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 | Configuración                 | Descripción                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
@@ -115,12 +114,3 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 >
 > [Recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Instalar Mercado Pago en WooCommerce
->
-> Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
->
-> 
-> [Instalar](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/instalation/)

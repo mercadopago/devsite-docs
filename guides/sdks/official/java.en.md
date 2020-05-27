@@ -9,7 +9,7 @@ This SDK supports Java version 8 or newer.
 ## Installation
 
 ### Using Maven
-1. Append MercadoPago dependencies to pom.xml
+1) Append MercadoPago dependencies to pom.xml
 
   ```xml
     ...
@@ -23,7 +23,7 @@ This SDK supports Java version 8 or newer.
     ...
   ```
   
-2. Run `mvn install` and thats all, you have Mercado Pago SDK installed.
+2) Run `mvn install` and thats all, you have Mercado Pago SDK installed.
 
 ### Compatibility
 
@@ -31,16 +31,17 @@ Our SDK is compatible with Java 6 or grater. Our development team recomends to u
 
 ## Quick Start
 
-1. Import Mercado Pago basic clases. `import import com.mercadopago.*;`
+1) Import Mercado Pago basic clases. `import import com.mercadopago.*;`
 
-2. Setup your credentials.
+2) Setup your credentials.
  
     ```java
       MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```
+
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
-3. Using Resource objects.
+3) Using Resource objects.
 
 ![SDK resource structure of Mercado Pago](https://user-images.githubusercontent.com/864790/34393059-9acad058-eb2e-11e7-9987-494eaf19d109.png)
 

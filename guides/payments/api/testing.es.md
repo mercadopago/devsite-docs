@@ -8,15 +8,15 @@ Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verific
 
 Tipos de usuarios | Descripción
 ------------ | -------------
-Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro.** |
-Comprador | Es la cuenta de prueba que usas para **probar el procesa de compra**<br/>. |
+Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
+Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra**. |
 
 <br>
 
 > SERVER_SIDE
 >
 > h2
-> 
+>
 > Cómo crear usuarios
 
 Para comenzar, es necesario que tengas como mínimo dos usuarios de prueba: un comprador y un vendedor.
@@ -51,7 +51,7 @@ curl -X POST \
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el _email_ y _password_ de cada uno.
 > * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
 > * Para hacer pagos de prueba te recomendamos usar montos bajos.
-> * Los montos deben respetar los ----[mla]---- [valores mínimos y máximos](https://www.mercadopago/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos y máximos](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos y máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos y máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos y máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada medio de pago.
+> * Los montos deben respetar los ----[mla]---- [valores mínimos y máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos y máximos](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos y máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos y máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos y máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada medio de pago.
 
 ## Prueba el flujo de pago
 
@@ -112,7 +112,7 @@ Al terminar el formulario, verifica que las credenciales en tu integración sean
 >
 > [Manejo de respuestas de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Referencias de API
 >

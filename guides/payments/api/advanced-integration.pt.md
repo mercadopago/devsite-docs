@@ -7,7 +7,7 @@ Use nossas APIs para guardar a referência dos cartões dos seus clientes e pode
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crie um cliente e um cartão
 
 Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do e-mail e o token gerado.
-Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`. 
+Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
 [[[
 
@@ -114,7 +114,7 @@ curl -X POST \
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
-```json 
+```json
 {
     "id": "123456789-jxOV430go9fx2e",
     "email": "test@test.com",
@@ -137,7 +137,7 @@ curl -X POST \
 > NOTE
 >
 > Nota
-> 
+>
 > Te recomendamos armazenas os dados do cartão assim que realizar um pagamento de forma exitosa para guardar os dados corretos.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicione novos cartões a um cliente
@@ -340,7 +340,7 @@ Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escol
 ```csharp
 
 customer = Customer.FindById("customer.Id");
-List<Card> cards = customer.Cards; 
+List<Card> cards = customer.Cards;
 
 ```
 ```curl
@@ -351,9 +351,9 @@ curl -X GET \
 
 ]]]
 
-Resposta dos dados de um cartão guardado: 
+Resposta dos dados de um cartão guardado:
 
-```json 
+```json
 [{
     "id": "1490022319978",
     "expiration_month": 12,
@@ -388,7 +388,7 @@ E pode criar um formulário da seguinte maneira:
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture o código de segurança
 
-O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
+O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/#bookmark_capture_os_dados_de_cartão). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
 
 ```javascript
 doSubmit = false;
@@ -461,7 +461,7 @@ payer.type = "customer";
 payer.id = "123456789-jxOV430go9fx2e";
 
 Payment payment = new Payment();
-payment.setTransactionAmount(100);
+payment.setTransactionAmount(100f);
 payment.setInstallments(1);
 payment.setToken('ff8080814c11e237014c1ff593b57b4d');
 payment.setPayer(payer);

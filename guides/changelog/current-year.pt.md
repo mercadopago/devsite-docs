@@ -12,6 +12,44 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 
 
+## 13 de maio de 2020
+
+### Nova versão WooCommerce
+
+Lançamos uma nova versão do WooCommerce.
+
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
+
+## 6 de maio de 2020
+
+### Nova versão SDK Java
+
+Lançamos uma nova versão do SDK Java 1.6.
+
+Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
+
+
+## 4 de maio de 2020
+
+### Nova versão SDK .NET
+
+Lançamos uma nova versão do SDK .NET.
+
+Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
+
+
+## 3 de abril de 2020
+
+### Atualização de documentação - API
+
+Renovamos a documentação para usar nossas APIs de pagamento. Adicionamos um exemplo básico do formulário no frontend e também diagramas de funcionamento para te ajudar na hora de integrar.
+
+[Ir para a documentação de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction/)
+
+
 ## 27 de março de 2020
 
 Para ajudar a otimizar suas conciliações, implementamos melhorias na geração dos intervalos de datas para relatórios programados. A mudança é válida tanto para o relatório de Dinheiro retirado, como para o relatório de Todas as transações. Desde quarta-feira 1 de abril, para encontrar seus relatórios programados, busque-os por um segundo a menos.
@@ -23,7 +61,7 @@ begin_date  | 01/01/2020 00:00:00 | 01/01/2020 00:00:00
 end_date | 02/01/2020  00:00:00 | 01/01/2020  23:59:59
 
 
-Seu novo parâmetro ficaria da seguinte forma: 
+Seu novo parâmetro ficaria da seguinte forma:
 
 ```
 https://api.mercadolibre.com/account/bank_report/search?access_token={{access_token}}
@@ -34,9 +72,17 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 
 ```
 
-> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago.com.ar/developers/pt/guides/reports/general-considerations/reconciliation-reports/). 
+> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago.com.ar/developers/pt/guides/reports/general-considerations/reconciliation-reports/).
 
 
+## 19 de março de 2020
+
+### Nova versão Prestashop 1.6 & 1.7
+
+Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Mercado Pago através de modal para que seus compradores possam comprar sem sair de seu site.
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases).
+
+[Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
 
 
 ## 9 de janeiro de 2020

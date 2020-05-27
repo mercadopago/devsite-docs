@@ -95,7 +95,7 @@ It allows the **client to complete the purchase on your site**, without being re
 2. In the item "Type of integration" change to the option "Purchase process on Mercado Pago site".
 3. Finally, click on "Save changes".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
+----[mlb]----    ![Payments Mercado Pago Checkout - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Mercado Pago Checkout - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Mercado Pago Checkout - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
 
 > NOTE
 >

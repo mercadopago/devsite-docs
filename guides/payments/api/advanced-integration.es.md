@@ -114,7 +114,7 @@ curl -X POST \
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
-```json 
+```json
 {
     "id": "123456789-jxOV430go9fx2e",
     "email": "test@test.com",
@@ -387,7 +387,7 @@ Y puedes armar el formulario de la siguiente manera:
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Captura el código de seguridad
 
-El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
+El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/#bookmark_captura_los_datos_de_la_tarjeta). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
 
 ```javascript
 doSubmit = false;
@@ -460,7 +460,7 @@ payer.type = "customer";
 payer.id = "123456789-jxOV430go9fx2e";
 
 Payment payment = new Payment();
-payment.setTransactionAmount(100);
+payment.setTransactionAmount(100f);
 payment.setInstallments(1);
 payment.setToken('ff8080814c11e237014c1ff593b57b4d');
 payment.setPayer(payer);

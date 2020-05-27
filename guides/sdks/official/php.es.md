@@ -10,8 +10,10 @@ Nuesto SDK es compatible con las versiones de PHP 5.6 o superior.
 
 #### Usando Composer
 
-1) Descargar [Composer](https://getcomposer.org/download/) (Si este no se encuentra instalado previamente)
-2) Dirigirse al directorio del proyecto y ejecutar `composer require "mercadopago/dx-php"` en la linea de comandos.
+1) Descargar [Composer](https://getcomposer.org/download/) (Si este no se encuentra instalado previamente).
+
+2) Dirigirse al directorio del proyecto y ejecutar `php composer.phar require "mercadopago/dx-php"` en la linea de comandos.
+
 3) Ahora el directorio deberia verse asi.
 
 ![Structure of the Mercado Pago SDK for PHP](https://user-images.githubusercontent.com/864790/34394635-44f7745a-eb39-11e7-981d-77cf759cf05f.png)
