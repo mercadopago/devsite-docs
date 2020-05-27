@@ -12,6 +12,11 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 
 
+## 26 de maio de 2020
+
+Lançamos uma nova versão do SDK JavaScript
+
+
 ## 13 de maio de 2020
 
 ### Nova versão WooCommerce

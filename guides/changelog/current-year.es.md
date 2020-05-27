@@ -11,6 +11,10 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
 
+## 26 de mayo de 2020
+
+Lanzamos una nueva versión de SDK JavaScript
+
 ## 13 de mayo de 2020
 
 ### Nueva versión WooCommerce

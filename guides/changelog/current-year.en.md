@@ -11,6 +11,9 @@ Each release note describes the new changes applying to a version. This changes 
 - **Documentation updates:** Guides, references and tutorials to help you monetize your business by integrating Mercado Pago.
 
 
+## May 26th, 2020
+
+We have released a new version of JavaScript SDK
 
 ## May 13th, 2020
 
