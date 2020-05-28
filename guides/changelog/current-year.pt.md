@@ -10,18 +10,107 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 
 - **Atualizações na documentação:** Guias, referências e tutoriais para te ajudar a monetizar seu negócio integrando Mercado Pago.
 
+## 15 de maio de 2020
 
-
-## 13 de maio de 2020
-
-### Nova versão WooCommerce
-
-Lançamos uma nova versão do WooCommerce.
+> CHANGELOG
+>
+> Lançamos uma nova versão do WooCommerce.
+>
+> NEW_VERSION
+>
+> WooCommerce
 
 Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
 [Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
 
+## 14 de maio de 2020
+
+> CHANGELOG
+>
+> Lançamos a nova documentação de API.
+>
+> NEW_DOCUMENTATION
+>
+> API
+
+Para maiores detalhes confira a [documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/).
+
+> GIT
+>
+> Baixe na versão 4.2.0
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+## 13 de maio de 2020
+
+> CHANGELOG
+>
+> Lançamos a funcionalidade de Assinaturas no Prestashop.
+>
+> FEATURE
+>
+> Prestashop
+
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
+## 12 de maio de 2020
+
+> CHANGELOG
+>
+> Aumente sua taxa de aprovação no Mercado Pago.
+>
+> NEWS
+>
+> Mercado Pago
+
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
+## 11 de maio de 2020
+
+> CHANGELOG
+>
+> Corrigimos erro de conversão no Magento.
+>
+> FIX
+>
+> Magento 2.X
+
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
+## 10 de maio de 2020
+
+> CHANGELOG
+>
+> Migramos Checkout Mercado Pago para V2.
+>
+> MIGRATION
+>
+> Checkout Mercado Pago
+
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
+## 09 de maio de 2020
+
+> CHANGELOG
+>
+> Teste com TAG errada.
+>
+> MIGRATIONNNN
+>
+> Checkout Mercado Pago
+
+Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
 
 ## 6 de maio de 2020
 
