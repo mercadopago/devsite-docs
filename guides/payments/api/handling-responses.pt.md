@@ -9,8 +9,8 @@ Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se re
 Estado | `status_detail` | Mensagem sugerida
 ------------ | ------------- | -------------
 approved | `accredited` | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como `statement_descriptor`.
-in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupe, em menos de 2 días úteis te avisaremos por e-mail se foi creditado.
-in_process | `pending_review_manual` | Estamos processando seu pagamento.<br/><br/>Não se preocupe, em menos de 2 días úteis te avisaremos por e-mail se foi creditado ou se necessitamos de mais informação.
+in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupe, em menos de 2 dias úteis informaremos por e-mail se foi creditado.
+in_process | `pending_review_manual` | Estamos processando seu pagamento.<br/><br/>Não se preocupe, em menos de 2 dias úteis informaremos por e-mail se foi creditado ou se necessitamos de mais informação.
 rejected | `cc_rejected_bad_filled_card_number` | Revise o número do cartão.
 rejected | `cc_rejected_bad_filled_date` | Revise a data de vencimento.
 rejected | `cc_rejected_bad_filled_other` | Revise os dados.
