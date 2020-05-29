@@ -91,7 +91,7 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ### 1. Com seu usuário vendedor, atribui um pedido a um ponto de venda. 
 
-Para testar o modelo atendido, gere um pedido com as (credenciais)[FAKER][CREDENTIALS][URL] do usuário de teste que deseja utilizar como vendedor e envie um pedido ao QR previamente criado.
+Para testar o modelo atendido, gere um pedido com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que deseja utilizar como vendedor e envie um pedido ao QR previamente criado.
 
 
 ### 2. Realize um pagamento com seu usuário comprador
