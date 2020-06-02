@@ -72,7 +72,7 @@ curl -X POST \
 ```
 Os parâmetros que você deve incluir são:
 
-* `client_secret`: seu `ACCESS_TOKEN`. Pode obter apartir das configurações da sua [aplicação.]([FAKER][CREDENTIALS][URL])
+* `client_secret`: seu `ACCESS_TOKEN`. Pode obter apartir das configurações da sua [aplicação]([FAKER][CREDENTIALS][URL]).
 * `code`: O código de autorização obtido ao redirecionar o usuário de volta para o seu site.
 * `redirect_uri`: Deve ser a mesmo Redirect URI que você configurou na sua aplicação.
 
