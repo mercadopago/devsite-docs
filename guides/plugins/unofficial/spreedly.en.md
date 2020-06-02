@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Integrate Spreedly
 
 Accept payments in a simple and secure way through Spreedly.
