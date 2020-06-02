@@ -1,30 +1,26 @@
-# Receba Pagamentos
+# Como criar um botão ou link de pagamento?
 
+Comece a receber pagamentos pelas redes sociais, e-mail ou site é muito fácil.
 
-----[mla,mlb,mlc,mlm,mpe,mco,global]----
-> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)**.
-------------
+## Configurações básicas
 
-----[mlu]----
-> Com este artigo, você aprenderá como criar uma **ferramenta de pagamento de quantia fixa**. Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)**.
-------------
+Ao criar um novo botão ou link de pagamento pela sua conta Mercado Pago, você precisa definir:
 
-Na sua conta no Mercado Pago, você tem a opção para [gerar um link](https://www.mercadopago.com.ar/tools/create) que pode ser enviado ao seu comprador para que efetue o pagamento. Você não precisa saber programação.
+1. **Título do seu produto ou serviço:** será o nome que seu comprador verá na hora de pagar. Lembre-se de que deve ser o mais detalhado possível para que o identifiquem melhor.
+1. **Preço:** é o valor final a ser pago pelos seus clientes.
+> NOTE
+> 
+> Nota
+> 
+> Saiba na hora de criar seu botão ou link quanto você deve pagar de tarifa conforme o preço que você definir. 
+1. **Foto (opcional):** você pode adicionar uma foto que represente o produto ou serviço que está vendendo. Lembre-se de que é importante para dar segurança aos seus compradores.
 
-Vamos orientá-lo para que você possa configurar:
-*	Preço, descrição e foto do que você vende.
-----[mla, mlm, global]----
-*	Se quiser utilizar o **Mercado Envios**.
-------------
-*	Meios de pagamentos aceitos: cartões de crédito e pagamentos em boleto.
-*	Data a partir da qual pretende permitir o pagamento.
-*	Código de referência para identificar a venda em seu backend.
-*	URL de redirecionamento ao seu site.
+## Configurações avançadas
+Antes de criar sua nova solução de pagamento, você pode definir outras características pelo botão “Mais opções”.
 
-Com esta configuração, você **receberá um link** que poderá enviar por e-mail, postar nas redes sociais ou onde quiser.
-
-Ao acessar este link, seus compradores serão redirecionados ao checkout, onde poderão ver os dados definidos por você e escolher como pagar. Eles podem fazer o pagamento sem a necessidade de se ter uma conta no Mercado Pago.
-
-Além disso, você receberá um **Código HTML** que poderá ser incluído em seu site.
-
->Se deseja construir algo mais avançado e personalizado, consulte nossa documentação de **[Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction)** ou **[API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)**.
+**Característica** | **Descrição**
+----------------- | -----------------
+Meios de pagamento a oferecer | Por aqui, você pode habilitar os meios de pagamento com os quais seus clientes poderão pagar.
+Código de referência | É uma identificação única para reconhecer seu produto ou serviço. Será útil na hora de buscá-lo na lista.
+Duração | Configure por quanto tempo você quer que sua ferramenta de pagamento funcione. Defina uma data de início e uma de término.
+Redirecionamento | Se precisar, você poderá enviar seus compradores ao site que quiser após a pagamento.
