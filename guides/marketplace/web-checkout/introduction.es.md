@@ -34,7 +34,5 @@ Las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> son l
 
 > ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
-Las [credenciales]([FAKER][CREDENTIALS][URL_BASIC]) que se deberán utilizar para la asociación de los vendedores a tu Marketplace (2º Paso) son el Client id y Client secret.
-
 
 #### [Comenzar a crear mi Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/create-marketplace)
