@@ -35,6 +35,4 @@ representativo que pode ser guardado de forma segura em seus servidores para cri
 > Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 
-As [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) que se deve utilizar para associação dos vendedores ao Marketplace (2º Passo) são o Client id e Client secret.
-
 #### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/create-marketplace)

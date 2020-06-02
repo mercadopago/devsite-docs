@@ -33,6 +33,5 @@ Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are t
 
 > Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
- The [credencials]([FAKER][CREDENTIALS][URL_BASIC])  that should be used for the association of sellers to your Marketplace (Step 2) are the Client ID and Client Secret.
 
 #### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/create-marketplace)
