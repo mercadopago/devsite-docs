@@ -1,32 +1,38 @@
-# Recibir pagos
+# ¿Cómo creo un botón o link de pago?
 
-----[mla, mlb, mlc, mlm, mco]----
-> En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)** o **[API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)**.
-------------
+Empezar a cobrar a través de las redes sociales, e-mail o tu sitio web es muy fácil.
 
-----[mpe]----
-> En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout de Mercado Pago](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction)** o **[API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)**.
-------------
+## Configuración básica
 
-----[mlu]----
-> En este artículo crearás una **herramienta de monto fijo**. Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de **[Checkout de Mercado Pago](https://www.mercadopago.com.uy/developers/es/guides/payments/web-payment-checkout/introduction)** o **[API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)**.
-------------
+Al crear un nuevo botón o link de pago desde tu cuenta de Mercado Pago, tendrás que definir:
 
-Desde tu cuenta de Mercado Pago, [tienes la opción de generar un botón o link](https://www.mercadopago.com.ar/tools/create) que le puedes enviar a tu comprador para que pueda efectuar el pago. No necesitas saber de programación.  
+1. **Título de tu producto o servicio:** será el nombre que verá tu comprador a la hora de pagar. Recuerda que debe ser lo más detallado posible para que lo identifiquen mejor.
+2. **Precio:** es el monto final a pagar por tus clientes.
 
-Te guiaremos para que puedas configurar:
+    > NOTE
+    > 
+    > Nota
+    > 
+    > Descubre al momento de crear tu botón o link cuánto debes pagar por comisión según el precio que configures.
 
-* Precio, descripción y foto de lo que vendes.
-----[mla, mlm, global]----
-* Si deseas utilizar envíos o no **(Mercado Envíos)**.
-------------
-* Medios de pago que aceptas: tarjetas de crédito o débito y pagos en efectivo.
-* Fecha entre las que deseas permitir el pago.
-* Código de referencia para identificar la venta en tu _backend_.
-* Url de redireccion hacia tu sitio web.
+3. **Foto (opcional):** puedes sumar una imagen que represente el producto o servicio que estás vendiendo. Ten en cuenta que es importante para darle seguridad a tus compradores.
 
-Al finalizar esta configuración **obtendrás un link** que puedes enviar por _e-mail_, publicar en redes sociales, o donde quieras.
+## Configuración avanzada
+Antes de crear tu nueva solución de cobro, puedes fijarle otras características a través del botón Más opciones.
 
-Ingresando a este _link_, tus compradores serán redirigidos a un formulario de pago donde verán los datos que configuraste y podrán elegir cómo pagar. Pueden realizar el pago como invitados, sin necesidad de tener una cuenta de Mercado Pago.
+**Característica** | **Descripción**
+----------------- | -----------------
+MMedios de pago a ofrecer | Desde aquí podrás habilitar los medios de pago con los que tus clientes podrán pagar.
+Código de referencia | Es una identificación única para reconocer tu producto o servicio. Te servirá a la hora de buscarlo en el listado.
+Tiempo | Configura cuánto tiempo quieres que tu herramienta de cobro funcione. Define una fecha de comienzo y una de vencimiento.
+Redireccionamiento | Si precisas, podrás enviar a tus compradores hacia el sitio web que quieras luego del pago.
 
-Además te brindaremos un **código HTML** que puedes incluir en tu sitio web.
+---
+Próximos pasos
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Compartir link de pago
+>
+> Una vez creado, solo falta elegir el medio con el que vas a cobrarle a tus clientes.
+>
+> [Compartir link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/…/)

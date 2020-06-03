@@ -26,7 +26,7 @@ Mais opções  (do seu navegador do celular) | Se você criou seu link pelo celu
 Se você tem um site, pode adicionar um botão para receber pagamentos.
 Basta copiar o código HTML gerado automaticamente e colar o código fonte da sua página.
 
-> WARNING 
+> WARNING
 > 
 > Importante
 > 
