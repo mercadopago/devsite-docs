@@ -7,31 +7,31 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 ## 1. Definiciones
  
-1.1 API: Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
+**1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
  
-1.2 Aplicación: Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
+**1.2 Aplicación:** Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
  
-1.3 Claves de Acceso: Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
+**1.3 Claves de Acceso:** Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
  
-1.4 Contenido de Mercado Pago: Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
+**1.4 Contenido de Mercado Pago:** Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
  
-1.5 Desarrolladores: Son todas aquellas personas humanas o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
+**1.5 Desarrolladores:** Son todas aquellas personas humanas o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
  
-1.6 Información Personal: Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
+**1.6 Información Personal:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
  
-1.7 Mercado Libre: Es MercadoLibre S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.7 Mercado Libre:** Es MercadoLibre S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
  
-1.8 Mercado Pago: Es una unidad de negocio de MercadoLibre S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos. 
+**1.8 Mercado Pago:** Es una unidad de negocio de MercadoLibre S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos. 
  
-1.9 Términos y Condiciones: Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-1.10 Sitio: Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.ar/developers) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.ar/developers) y todas sus versiones pertenecientes a Mercado Libre.
  
-1.11 Términos y Condiciones Generales: Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
 	
-1.12 Usuario de la Aplicación: Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.12 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
  
-1.13 Usuarios de Mercado Pago: Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.13 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -258,10 +258,10 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Argentin
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299)
-[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.ar/ayuda/terminos-y-con-qr_4269)
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.ar/ayuda/gateway_3145)
-[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.ar/ayuda/terminos-condiciones-point_2772)
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299) </br>
+[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.ar/ayuda/terminos-y-con-qr_4269) </br>
+[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.ar/ayuda/gateway_3145) </br>
+[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.ar/ayuda/terminos-condiciones-point_2772) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -292,31 +292,31 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 ## 1. Definiciones
  
-1.1 API: Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
+**1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
  
-1.2 Aplicación: Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
+**1.2 Aplicación:** Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
  
-1.3 Claves de Acceso: Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
+**1.3 Claves de Acceso:** Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
  
-1.4 Contenido de Mercado Pago: Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
+**1.4 Contenido de Mercado Pago:** Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
  
-1.5 Desarrolladores: Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
+**1.5 Desarrolladores:** Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
  
-1.6 Información Personal: Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
+**1.6 Información Personal:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
  
-1.7 Mercado Libre: Es MercadoLibre Chile Ltda. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.7 Mercado Libre:** Es MercadoLibre Chile Ltda. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
  
-1.8 Mercado Pago: Es Mercado Pago S.A. 
+**1.8 Mercado Pago:** Es Mercado Pago S.A. 
  
-1.9 Términos y Condiciones: Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-1.10 Sitio: Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.cl/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.cl/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
-1.11 Términos y Condiciones Generales: Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
-1.12 Usuario de la Aplicación: Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.12 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
  
-1.13 Usuarios de Mercado Pago: Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.13 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -538,7 +538,7 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Chile. C
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.cl/ayuda/terminos-y-condiciones-de-uso_299)
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.cl/ayuda/terminos-y-condiciones-de-uso_299) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -559,31 +559,31 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 ## 1. Definiciones
  
-1.1 API: Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
+**1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
  
-1.2 Aplicación: Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
+**1.2 Aplicación:** Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
  
-1.3 Claves de Acceso: Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
+**1.3 Claves de Acceso:** Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
  
-1.4 Contenido de Mercado Pago: Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
+**1.4 Contenido de Mercado Pago:** Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
  
-1.5 Desarrolladores: Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
+**1.5 Desarrolladores:** Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
  
-1.6 Información Personal: Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
+**1.6 Información Personal:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
  
-1.7 Mercado Libre: Es MercadoLibre Colombia LTDA. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.7 Mercado Libre:** Es MercadoLibre Colombia LTDA. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
  
-1.8 Mercado Pago: Es Mercado Pago Colombia Ltda.
+**1.8 Mercado Pago:** Es Mercado Pago Colombia Ltda.
  
-1.9 Términos y Condiciones: Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-1.10 Sitio: Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.co/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.co/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
-1.11 Términos y Condiciones Generales: Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
-1.12 Usuario de la Aplicación: Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.12 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
  
-1.13 Usuarios de Mercado Pago: Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.13 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -805,8 +805,8 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Colombia
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.co/ayuda/terminos-y-condiciones_299)
-[Términos y Condiciones de Mercado Pago Gateway](https://www.mercadopago.com.co/ayuda/3145)
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.co/ayuda/terminos-y-condiciones_299) </br>
+[Términos y Condiciones de Mercado Pago Gateway](https://www.mercadopago.com.co/ayuda/3145) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -827,31 +827,31 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 ## 1. Definiciones
  
-1.1 API: Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
+**1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
  
-1.2 Aplicación: Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
+**1.2 Aplicación:** Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
  
-1.3 Claves de Acceso: Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
+**1.3 Claves de Acceso:** Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
  
-1.4 Contenido de Mercado Pago: Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
+**1.4 Contenido de Mercado Pago:** Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
  
-1.5 Desarrolladores: Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
+**1.5 Desarrolladores:** Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
  
-1.6 Información Personal: Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
+**1.6 Información Personal:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
  
-1.7 Mercado Libre: Es Mercado Libre Perú S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.7 Mercado Libre:** Es Mercado Libre Perú S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
  
-1.8 Mercado Pago: Es una unidad de negocio de Mercado Libre Perú S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
+**1.8 Mercado Pago:** Es una unidad de negocio de Mercado Libre Perú S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
  
-1.9 Términos y Condiciones: Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-1.10 Sitio: Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.pe/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.pe/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
-1.11 Términos y Condiciones Generales: Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
-1.12 Usuario de la Aplicación: Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.12 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
  
-1.13 Usuarios de Mercado Pago: Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.13 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -1077,8 +1077,8 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en la Repú
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.pe/ayuda/terminos-condiciones-uso_299)
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.pe/ayuda/gateway_3529)
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.pe/ayuda/terminos-condiciones-uso_299) </br>
+[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.pe/ayuda/gateway_3529) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1099,31 +1099,31 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 ## 1. Definiciones
  
-1.1 API: Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
+**1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
  
-1.2 Aplicación: Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
+**1.2 Aplicación:** Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
  
-1.3 Claves de Acceso: Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
+**1.3 Claves de Acceso:** Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
  
-1.4 Contenido de Mercado Pago: Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
+**1.4 Contenido de Mercado Pago:** Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
  
-1.5 Desarrolladores: Son todas aquellas personas físicas o morales, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
+**1.5 Desarrolladores:** Son todas aquellas personas físicas o morales, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
  
-1.6 Información Personal: Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
+**1.6 Información Personal:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
  
-1.7 Mercado Libre: Es MercadoLibre, S. de R.L de C.V. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.7 Mercado Libre:** Es MercadoLibre, S. de R.L de C.V. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
  
-1.8 Mercado Pago: Es una unidad de negocio de MercadoLibre, S. de R.L de C.V. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos. 
+**1.8 Mercado Pago:** Es una unidad de negocio de MercadoLibre, S. de R.L de C.V. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos. 
  
-1.9 Términos y Condiciones: Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-1.10 Sitio: Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.mx/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.mx/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
-1.11 Términos y Condiciones Generales: Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
-1.12 Usuario de la Aplicación: Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.12 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
  
-1.13 Usuarios de Mercado Pago: Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.13 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -1342,11 +1342,11 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en los Esta
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.mx/ayuda/terminos-y-condiciones_299)
-[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/terminosycond-qr_4269)
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/terminos-condiciones-modelo-gateway_3529)
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.mx/ayuda/terminos-y-condiciones_299) </br>
+[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/terminosycond-qr_4269) </br>
+[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/terminos-condiciones-modelo-gateway_3529) </br>
 [Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/terminos-y-condiciones-point_1772)
-[Términos y Condiciones del Programa de Desarrolladores](#)
+[Términos y Condiciones del Programa de Desarrolladores](#) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1367,31 +1367,31 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 ## 1. Definiciones
  
-1.1 API: Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
+**1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
  
-1.2 Aplicación: Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
+**1.2 Aplicación:** Es la aplicación de software, el sitio web u otra interfaz que el Desarrollador desarrolle, posea u opere para interactuar con la API, con el Sitio y/o con los servicios prestados por Mercado Pago.
  
-1.3 Claves de Acceso: Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
+**1.3 Claves de Acceso:** Son las claves de seguridad confidenciales proporcionadas al Desarrollador por Mercado Pago para la utilización de la API, tales como el nombre de Usuario del Desarrollador, su clave de acceso a Mercado Pago y la clave de identificación de la Aplicación asignada automáticamente por Mercado Pago como así también aquellas compartidas por terceros con el fin de realizar desarrollos para esas cuentas.
  
-1.4 Contenido de Mercado Pago: Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
+**1.4 Contenido de Mercado Pago:** Es la información almacenada en las bases de datos de Mercado Pago, y que Mercado Pago, a su exclusiva discreción, pone a disposición de los Desarrolladores a través de la API. El Contenido de Mercado Pago no incluye la información obtenida por los Desarrolladores con independencia de Mercado Pago y de la API.
  
-1.5 Desarrolladores: Son todas aquellas personas físicas o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
+**1.5 Desarrolladores:** Son todas aquellas personas físicas o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
  
-1.6 Información Personal: Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
+**1.6 Información Personal:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones.
  
-1.7 Mercado Libre: Es Deremate.com de Uruguay S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.7 Mercado Libre:** Es Deremate.com de Uruguay S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
  
-1.8 Mercado Pago: Es una unidad de negocio de Deremate.com de Uruguay S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
+**1.8 Mercado Pago:** Es una unidad de negocio de Deremate.com de Uruguay S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
  
-1.9 Términos y Condiciones: Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-1.10 Sitio: Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.uy/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.uy/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
-1.11 Términos y Condiciones Generales: Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus Servicios a los Usuarios.
+**1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus Servicios a los Usuarios.
  
-1.12 Usuario de la Aplicación: Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.12 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
  
-1.13 Usuarios de Mercado Pago: Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.13 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -1618,7 +1618,7 @@ Este acuerdo estará regido en todos sus puntos por las leyes vigentes en la Rep
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.uy/ayuda/terminos-y-condiciones-uy_299)
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.uy/ayuda/terminos-y-condiciones-uy_299) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
