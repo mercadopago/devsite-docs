@@ -9,11 +9,11 @@ Ao criar um novo botão ou link de pagamento pela sua conta Mercado Pago, você 
 1. **Título do seu produto ou serviço:** será o nome que seu comprador verá na hora de pagar. Lembre-se de que deve ser o mais detalhado possível para que o identifiquem melhor.
 2. **Preço:** é o valor final a ser pago pelos seus clientes.
 
-> NOTE
-> 
-> Nota
-> 
-> Saiba na hora de criar seu botão ou link quanto você deve pagar de tarifa conforme o preço que você definir. 
+    > NOTE
+    > 
+    > Nota
+    > 
+    > Saiba na hora de criar seu botão ou link quanto você deve pagar de tarifa conforme o preço que você definir. 
 
 3. **Foto (opcional):** você pode adicionar uma foto que represente o produto ou serviço que está vendendo. Lembre-se de que é importante para dar segurança aos seus compradores.
 
@@ -28,7 +28,7 @@ Duração | Configure por quanto tempo você quer que sua ferramenta de pagament
 Redirecionamento | Se precisar, você poderá enviar seus compradores ao site que quiser após a pagamento.
 
 ---
-Próximas etapas
+Próximos passos
 > LEFT_BUTTON_REQUIRED_PT
 >
 > Compartilhar link de pagamento
