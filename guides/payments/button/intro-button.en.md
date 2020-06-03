@@ -12,7 +12,12 @@ If you don't have a website, the **payment link** will help you to charge online
 
 > It is not necessary for your customer to have a Mercado Pago account in order to make the payment!
 
-![How does it work](/images/button/byl_crear_compartir.png)
+----[mla, mco, mlm, mlc, mlu, mpe]----
+![Recibir pagos por redes sociales](/images/button/byl_crear_compartir.png)
+------------
+----[mlb]----
+![Receber pagamentos por redes sociais](/images/button/byl_criar_compartilhar.png)
+------------
 
 ## Characteristics
  - Offer all payment methods: debit, credit or cash. Even payment in installments!

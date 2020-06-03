@@ -13,7 +13,12 @@ Facebook or Twitter | Create a new post on your favorite social network and shar
 E-mail | Use your personal email address to send the payment link to anyone you want.
 More options  (from your cell phone browser) | If you created your link on your phone, it can be shared through all of your installed apps.
 
-![Receive payments from your social media](/images/button/byl_compartir.png)
+----[mla, mco, mlm, mlc, mlu, mpe]----
+![Recibir pagos por redes sociales](/images/button/byl_compartir.png)
+------------
+----[mlb]----
+![Receber pagamentos por redes sociais](/images/button/byl_compartilhar.png)
+------------
 
 > NOTE
 > 
