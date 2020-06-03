@@ -1345,7 +1345,7 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en los Esta
 [Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.mx/ayuda/terminos-y-condiciones_299) </br>
 [Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/terminosycond-qr_4269) </br>
 [Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/terminos-condiciones-modelo-gateway_3529) </br>
-[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/terminos-y-condiciones-point_1772)
+[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/terminos-y-condiciones-point_1772) </br>
 [Términos y Condiciones del Programa de Desarrolladores](#) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
