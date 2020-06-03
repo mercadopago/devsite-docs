@@ -1,30 +1,38 @@
-# Receive Payments
+# How to create a payment link and button?
 
-----[mla,mlb,mlc,mlm,mpe,mco,global]----
-> In this article you will create a **fixed amount tool**. If you want to build something advanced or customized read **[Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** guides.
-------------
+Receiving payments through social networks, email or website is very easy.
 
-----[mlu]----
-> In this article you will learn to create a **fixed amount tool**. If you want to build something advanced or customized read **[Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** guides.
-------------
+## Basic settings
 
-On your Mercado Pago account, [you have the option to create a link](https://www.mercadopago.com.ar/tools/create) to be sent to your buyer for making the payment.
+When creating a new payment link or button from your Mercado Pago account, you must define:
 
-You do not need to know programming.
+1. **The title of your product or service:** It will be the name that your buyer will see when making the payment. Remember that it should be as detailed as possible so that they can identify you better.
+2. **Price:** It is the final amount to be paid by your customers.
 
-We will guide you so that you can set the:
+    > NOTE
+    > 
+    > Note
+    > 
+    > Learn when creating your link or button what sale fee you will pay according to the price you set.
 
-* Price, description and photo of what you sell.
-* If you want to use **(Mercado Envíos)**.
-* Payment methods accepted: credit or debit cards and payments in cash.
-* Date in which payments are allowed.
-* Reference code to identify the sale on your backend.
-* URL redirecting to your website.
+3. **Photo (optional):** You can add a photo that represents the product or service you are selling. Remember that it is important to give security to your buyers.
 
-With this configuration, **you will get a link** that you can send by e-mail, post on social networks, or wherever you want.
+## Advanced Settings
+Before creating your new payment solution, you can define other features using the “More options” button.
 
-By clicking on this link, your buyers will be redirected to the checkout where they will see the information that you have configured and will be able to choose how to pay. They can make the payment without the need for a Mercado Pago account.
+**Characteristic** | **Description**
+----------------- | -----------------
+Payment methods to be offered | Here, you can enable the payment methods your customers can pay with.
+Reference code | It is a unique identification to recognize your product or service. It will be useful when looking for it in the list.
+Duration | Configure for how long you want your payment tool to work. Set a start date and an end date.
+Redirection | If needed, you can send your buyers to the website you want after payment.
 
-In addition, we will provide you with an **HTML Code** you can include in your website.
-
-> If you want to build something more advanced and personalized, check our **[Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)**, **[Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)** or **[API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction)** documentation.
+---
+Next steps
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Share payment link
+>
+> After created, just select the method with which you will charge your customers.
+>
+> [Compartilhar link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/…/)
