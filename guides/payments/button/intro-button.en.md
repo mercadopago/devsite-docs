@@ -28,7 +28,7 @@ If you don't have a website, the **payment link** will help you to charge online
 
 ---
 Next steps
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON_REQUIRED_EN
 >
 > Create payment link and button
 >

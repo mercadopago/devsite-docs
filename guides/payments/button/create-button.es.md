@@ -29,7 +29,7 @@ Redireccionamiento | Si precisas, podrás enviar a tus compradores hacia el siti
 
 ---
 Próximos pasos
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON_REQUIRED_ES
 >
 > Compartir link de pago
 >

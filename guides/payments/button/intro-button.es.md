@@ -23,7 +23,7 @@ Si no tienes un sitio web, el **link de pago** te ayudará a cobrar por medios o
 
 ---
 Próximos pasos
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON_REQUIRED_ES
 >
 > Crear botón y link de pago
 >

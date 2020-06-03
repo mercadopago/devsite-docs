@@ -29,7 +29,7 @@ Redirection | If needed, you can send your buyers to the website you want after 
 
 ---
 Next steps
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON_REQUIRED_EN
 >
 > Share payment link
 >
