@@ -12,6 +12,8 @@ Se você não tem um site, o **link de pagamento** te ajudará a cobrar por meio
 
 > Não é necessário que seu cliente tenha uma conta Mercado Pago para fazer o pagamento!
 
+![Como funciona](/images/button/byl_criar_compartilhar.png)
+
 ## Características
  - Ofereça todos os meios de pagamento: crédito, boleto, pagamento na lotérica, PayPal e Cartão de débito virtual Caixa. Até mesmo pagamento parcelado!
  - Gerencie todas as suas vendas pelo painel do Mercado Pago.

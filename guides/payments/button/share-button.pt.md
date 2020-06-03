@@ -13,6 +13,8 @@ Facebook ou Twitter | Crie um novo post na sua rede social favorita e compartilh
 E-mail | Use seu e-mail pessoal para enviar o link de pagamento para quem quiser.
 Mais opções  (do seu navegador do celular) | Se você criou seu link pelo celular, ele poderá ser compartilhado através de todos os seus aplicativos instalados.
 
+![Receber pagamentos por redes sociais](/images/button/byl_compartilhar.png)
+
 > NOTE
 > 
 > Nota
