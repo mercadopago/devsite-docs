@@ -29,4 +29,4 @@ Próximos passos
 >
 > Agora que você já sabe do que se trata, chegou a hora de começar a receber pagamentos on-line.
 >
-> [Criar botão e link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/…/)
+> [Criar botão e link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/create-button/)
