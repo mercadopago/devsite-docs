@@ -85,8 +85,6 @@ Mercado Pago podrá revocar cualquier Certificación otorgada si, a su exclusivo
 
 Mercado Pago podrá modificar los requisitos para acceder a la Certificación y beneficios asociados al Programa de Desarrolladores Certificados en cualquier momento, a su exclusiva discreción, en cuyo caso podrá exigir a los Desarrolladores o las Aplicaciones que hayan obtenido la Certificación que cumplan con los nuevos requisitos para que puedan mantenerla. Asimismo, las modificaciones que se introduzcan a una Aplicación con posterioridad a la obtención de la Certificación podrán quedar sujetas a una recertificación. 
 
-Conoce los requisitos para la Certificación de Desarrolladores y Aplicaciones y beneficios asociados aquí. Los requisitos y beneficios del Programa de Desarrolladores Certificados quedan incorporados a estos Términos y Condiciones mediante la presente referencia.
-
 ## 4. Marcas
 
 ### 4.1 Marcas de Mercado Pago
@@ -369,8 +367,6 @@ Mercado Pago podrá revocar cualquier Certificación otorgada si, a su exclusivo
 
 Mercado Pago podrá modificar los requisitos para acceder a la Certificación y beneficios asociados al Programa de Desarrolladores Certificados en cualquier momento, a su exclusiva discreción, en cuyo caso podrá exigir a los Desarrolladores o las Aplicaciones que hayan obtenido la Certificación que cumplan con los nuevos requisitos para que puedan mantenerla. Asimismo, las modificaciones que se introduzcan a una Aplicación con posterioridad a la obtención de la Certificación podrán quedar sujetas a una recertificación. 
 
-Conoce los requisitos para la Certificación de Desarrolladores y Aplicaciones y beneficios asociados aquí. Los requisitos y beneficios del Programa de Desarrolladores Certificados quedan incorporados a estos Términos y Condiciones mediante la presente referencia.
-
 ## 4. Marcas
 
 ### 4.1 Marcas de Mercado Pago
@@ -636,7 +632,6 @@ Mercado Pago podrá revocar cualquier Certificación otorgada si, a su exclusivo
 
 Mercado Pago podrá modificar los requisitos para acceder a la Certificación y beneficios asociados al Programa de Desarrolladores Certificados en cualquier momento, a su exclusiva discreción, en cuyo caso podrá exigir a los Desarrolladores o las Aplicaciones que hayan obtenido la Certificación que cumplan con los nuevos requisitos para que puedan mantenerla. Asimismo, las modificaciones que se introduzcan a una Aplicación con posterioridad a la obtención de la Certificación podrán quedar sujetas a una recertificación. 
 
-Conoce los requisitos para la Certificación de Desarrolladores y Aplicaciones y beneficios asociados aquí. Los requisitos y beneficios del Programa de Desarrolladores Certificados quedan incorporados a estos Términos y Condiciones mediante la presente referencia.
 
 ## 4. Marcas
 
@@ -904,7 +899,6 @@ Mercado Pago podrá revocar cualquier Certificación otorgada si, a su exclusivo
 
 Mercado Pago podrá modificar los requisitos para acceder a la Certificación y beneficios asociados al Programa de Desarrolladores Certificados en cualquier momento, a su exclusiva discreción, en cuyo caso podrá exigir a los Desarrolladores o las Aplicaciones que hayan obtenido la Certificación que cumplan con los nuevos requisitos para que puedan mantenerla. Asimismo, las modificaciones que se introduzcan a una Aplicación con posterioridad a la obtención de la Certificación podrán quedar sujetas a una recertificación. 
 
-Conoce los requisitos para la Certificación de Desarrolladores y Aplicaciones y beneficios asociados aquí. Los requisitos y beneficios del Programa de Desarrolladores Certificados quedan incorporados a estos Términos y Condiciones mediante la presente referencia.
 
 ## 4. Marcas
 
@@ -1169,7 +1163,6 @@ Mercado Pago podrá revocar cualquier Certificación otorgada si, a su exclusivo
 
 Mercado Pago podrá modificar los requisitos para acceder a la Certificación y beneficios asociados al Programa de Desarrolladores Certificados en cualquier momento, a su exclusiva discreción, en cuyo caso podrá exigir a los Desarrolladores o las Aplicaciones que hayan obtenido la Certificación que cumplan con los nuevos requisitos para que puedan mantenerla. Asimismo, las modificaciones que se introduzcan a una Aplicación con posterioridad a la obtención de la Certificación podrán quedar sujetas a una recertificación. 
 
-Conoce los requisitos para la Certificación de Desarrolladores y Aplicaciones y beneficios asociados aquí. Los requisitos y beneficios del Programa de Desarrolladores Certificados quedan incorporados a estos Términos y Condiciones mediante la presente referencia.
 
 ## 4. Marcas 
 
@@ -1346,7 +1339,6 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en los Esta
 [Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/terminosycond-qr_4269) </br>
 [Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/terminos-condiciones-modelo-gateway_3529) </br>
 [Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/terminos-y-condiciones-point_1772) </br>
-[Términos y Condiciones del Programa de Desarrolladores](#) </br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1444,8 +1436,6 @@ Mercado Pago podrá, a su exclusiva discreción, prohibir a cualquier Desarrolla
 Mercado Pago podrá revocar cualquier Certificación otorgada si, a su exclusivo criterio, un Desarrollador o una Aplicación hubiese dejado de cumplir con los requisitos exigidos para el otorgamiento de la Certificación o con estos Términos y Condiciones.
 
 Mercado Pago podrá modificar los requisitos para acceder a la Certificación y beneficios asociados al Programa de Desarrolladores Certificados en cualquier momento, a su exclusiva discreción, en cuyo caso podrá exigir a los Desarrolladores o las Aplicaciones que hayan obtenido la Certificación que cumplan con los nuevos requisitos para que puedan mantenerla. Asimismo, las modificaciones que se introduzcan a una Aplicación con posterioridad a la obtención de la Certificación podrán quedar sujetas a una recertificación. 
-
-Conoce los requisitos para la Certificación de Desarrolladores y Aplicaciones y beneficios asociados aquí. Los requisitos y beneficios del Programa de Desarrolladores Certificados quedan incorporados a estos Términos y Condiciones mediante la presente referencia.
 
 ## 4. Marcas 
 
