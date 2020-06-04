@@ -6,7 +6,7 @@ If you have a website, you can simply insert an HTML code that will show a **pay
 If you don't have a website, the **payment link** will help you to charge online using very simple steps.
 
 ## How does it work?
- - From your Mercado Pago account, access the [Payment Link and Button](https://www.mercadopago[FAKER][URL][DOMAIN]) and select the Create New option.
+ - From your Mercado Pago account, access the [Payment Link and Button](https://www.mercadopago[FAKER][URL][DOMAIN]/tools/list) and select the Create New option.
  - Set the title and price of your product or service. You can also add a photo.
  - Choose where you want to sell: social networks, email or website and you're done!
 

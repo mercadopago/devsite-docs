@@ -6,7 +6,7 @@ Se você tem um site, poderá inserir, de forma simples, um código HTML que mos
 Se você não tem um site, o **link de pagamento** te ajudará a cobrar por meios on-line em etapas muito simples.
 
 ## Como funciona?
- - Da sua conta Mercado Pago, acesse o [Botão e link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]) e selecione a opção de Criar novo.
+ - Da sua conta Mercado Pago, acesse o [Botão e link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/tools/list) e selecione a opção de Criar novo.
  - Defina o título e preço do seu produto ou serviço. Você também pode adicionar uma foto. 
  - Escolha por onde quer vender: redes sociais, e-mail ou site e pronto! 
 
