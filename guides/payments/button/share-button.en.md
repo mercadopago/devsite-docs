@@ -1,6 +1,6 @@
 # How to share my payment link?
 
-After creating your payment link from your Mercado Pago account, it's time to share it with your customers.
+After [creating your payment link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/create-button/) from your Mercado Pago account, it's time to share it with your customers.
 
 ## Receive payments via social networks
 
