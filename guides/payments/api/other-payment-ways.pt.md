@@ -239,6 +239,65 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
+## Data de expiração de meios de pagamento em dinheiro
+
+A data de expiração padrão para pagamentos em dinheiro é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+
+[[[
+```php
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado. 
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+
+> WARNING
+>
+> Importante
+>
+> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+
 ## Cancelar um pagamento
 
 É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
