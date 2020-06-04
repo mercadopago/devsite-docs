@@ -18,7 +18,7 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 >
 > NEW_VERSION
 >
-> WooCommerce
+> WOOCOMMERCE
 
 Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
@@ -50,7 +50,7 @@ Para maiores detalhes confira a [documentação de WooCommerce](https://www.merc
 >
 > FEATURE
 >
-> Prestashop
+> PRESTASHOP
 
 Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
@@ -64,7 +64,7 @@ Confira no GitHub o detalhe das [últimas atualizações produtivas](https://git
 >
 > NEWS
 >
-> Mercado Pago
+> MERCADO PAGO
 
 Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
@@ -78,7 +78,7 @@ Confira no GitHub o detalhe das [últimas atualizações produtivas](https://git
 >
 > FIX
 >
-> Magento 2.X
+> MAGENTO 2.X
 
 Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
@@ -92,7 +92,7 @@ Confira no GitHub o detalhe das [últimas atualizações produtivas](https://git
 >
 > MIGRATION
 >
-> Checkout Mercado Pago
+> CHECKOUT MERCADO PAGO
 
 Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
@@ -106,7 +106,7 @@ Confira no GitHub o detalhe das [últimas atualizações produtivas](https://git
 >
 > MIGRATIONNNN
 >
-> Checkout Mercado Pago
+> CHECKOUT MERCADO PAGO
 
 Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
