@@ -239,6 +239,65 @@ In the `external_resource_url` field you will find an address with payment instr
 >
 > Customers have 3 to 5 days to pay, depending on the payment method. After that, you should cancel it.
 
+## Expiration date of cash payment
+
+The default expiration date for cash payments is 3 days. Optionally, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+
+[[[
+```php
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+The deadline for approval of the cash payment is between 1 and 2 working days according to the payment method. Therefore, it is recommended to set the expiration date at least 3 days to ensure that the payment is paid.
+
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
+
+> WARNING
+>
+> Important
+>
+> If the cash payment is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
+
 ## Cancel payments
 
 To avoid collection issues, you need to cancel expired payments. Cash payments should be paid within 3 to 5 business days, based on their relevant term.
@@ -2339,6 +2398,63 @@ In the `external_resource_url` field you will find an address with payment instr
 > Note
 >
 > Customers have 3 to 5 days to pay, depending on the payment method. After that, you should cancel it.
+
+## Expiration date for boleto
+
+The default expiration date for boleto payments is 3 days. Optionally, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+
+[[[
+```php
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+The deadline for approval of the boleto is up to 48 working hours. Therefore, it is recommended to set the expiration date at least 3 days to ensure that the payment is paid.
+
+> WARNING
+>
+> Important
+>
+> If the boleto is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 
 ## Cancel payments
 
