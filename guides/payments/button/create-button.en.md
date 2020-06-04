@@ -35,4 +35,4 @@ Next steps
 >
 > After created, just select the method with which you will charge your customers.
 >
-> [Share payment link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/…/)
+> [Share payment link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/share-button/)
