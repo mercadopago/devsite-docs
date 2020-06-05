@@ -12,6 +12,7 @@ use:
 - expiration_date_from
 - expiration_date_to
 - expires
+- date_of_expiration
 - external_reference
 - integrator_id
 - items
