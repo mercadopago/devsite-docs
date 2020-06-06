@@ -128,7 +128,7 @@ data-header-color="#c0392b"
 #### Textos
 
 A cor do texto dos botões será determinado automaticamente dependendo do contraste da cor definida.
-Para uma cor de elemento claro, a color do texto será preta ou #000. Por exemplo:
+Para uma cor de elemento claro, a cor do texto será preta ou #000. Por exemplo:
 
 
 ```html
