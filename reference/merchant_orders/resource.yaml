@@ -47,9 +47,9 @@ properties:
         es: Orden con pagos que cubren el monto total.
         pt: Order with payments covering total amount.
     - expired:
-        en: 
+        en: Canceled order (canceled: true) that does not have approved or pending payments (all rejected or returned).
         es: Orden cancelada (cancelled:true) que no posee pagos aprobados ni pendientes (todos rechazados o devueltos).
-        pt: 
+        pt: Pedido cancelado (cancelado: verdadeiro) que não possui pagamentos aprovados ou pendentes (todos rejeitados ou devolvidos).
 - site_id:
     type: String
     description:
@@ -807,6 +807,6 @@ properties:
         es: Orden creada antes de la existencia del estado order_status.
         pt: Order created before the existence of the order_status status.
     - expired:
-        en: 
+        en: Canceled order (canceled: true) that does not have approved or pending payments (all rejected or returned).
         es: Orden cancelada (cancelled:true) que no posee pagos aprobados ni pendientes (todos rechazados o devueltos)
-        pt: 
+        pt: Pedido cancelado (cancelado: verdadeiro) que não possui pagamentos aprovados ou pendentes (todos rejeitados ou devolvidos).

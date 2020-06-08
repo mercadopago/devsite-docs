@@ -421,9 +421,9 @@ properties:
 - date_of_expiration:
     type: Date(ISO_8601)
     description:
-      en: 
-      es: Fecha de expiración del medio de pago en  efectivo.
-      pt: 
+      en: Expiration date of cash payment.
+      es: Fecha de vencimiento del medio de pago en efectivo.
+      pt: Data de expiração de meios de pagamento em dinheiro.
 - expiration_date_from:
     type: Date(ISO_8601)
     description:
