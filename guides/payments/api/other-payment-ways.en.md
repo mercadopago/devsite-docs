@@ -290,7 +290,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 
 The deadline for approval of the cash payment is between 1 and 2 working days according to the payment method. Therefore, it is recommended to set the expiration date at least 3 days to ensure that the payment is paid.
 
-Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) when configuring.
 
 > WARNING
 >
