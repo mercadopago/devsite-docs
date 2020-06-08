@@ -288,7 +288,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El período de acreditación es entre 1 y 2 días hábiles según el medio de pago. Por lo tanto, se recomienda establecer la fecha de vencimiento con al menos 3 días para asegurarse de que se abona el pago.
+El período de acreditación es de 1 y 2 días hábiles según el medio de pago. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarte de que se realice el pago.
 
 Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
 
