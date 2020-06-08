@@ -2448,7 +2448,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The deadline for approval of the boleto is up to 48 working hours. Therefore, it is recommended to set the expiration date at least 3 days to ensure that the payment is paid.
+The deadline for approval of the boleto is up to 48 working hours. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
 
 > WARNING
 >
