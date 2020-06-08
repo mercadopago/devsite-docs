@@ -2401,7 +2401,7 @@ In the `external_resource_url` field you will find an address with payment instr
 
 ## Expiration date for boleto
 
-The default expiration date for boleto payments is 3 days. Optionally, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+The default expiration date for boleto payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
 [[[
 ```php
