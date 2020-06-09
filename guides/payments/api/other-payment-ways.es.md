@@ -2399,7 +2399,7 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 >
 > El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
 
-## Fecha de expiración para pagos en boleto
+## Fecha de vencimiento para pagos con boleto
 
 Por defecto, la fecha de expiración los pagos en boleto es de 3 días. Opcionalmente, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
 
