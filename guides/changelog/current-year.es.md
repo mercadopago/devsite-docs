@@ -11,6 +11,14 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 - **Actualizaciones en la documentación:** Guías, referencias y tutoriales para ayudarte a monetizar tu negocio integrando Mercado Pago.
 
 
+## 11 de junio de 2020
+
+### Nueva versión de Botón y link de pago
+
+Lanzamos una nueva versión de Botón y link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, e-mail o redes sociales.
+
+[Ir a documentación de Botón y link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/intro-button/)
+
 ## 26 de mayo de 2020
 ### Nueva versíon SDK Javascript
 Lanzamos una nueva versión de SDK Javascript 1.3.0. A partir de ahora, es compatible con Internet Explorer 11 para que la puedas usar en tus integraciones sin problemas.
