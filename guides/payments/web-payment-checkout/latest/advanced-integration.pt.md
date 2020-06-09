@@ -230,6 +230,21 @@ Atributo |	Descrição
 `auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são `approved` e `all`.
  `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento rejeitado.
 
+A través de las `back_url` retornarán los siguientes parámetros:
+
+Parâmetro |	Descrição
+------------ 	|	--------
+`collection_id` | Retorna o ID do pagamento do Mercado Pago. |
+`collection_status` | Retorna o estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
+`external_reference` | Retorna o valor do campo `external_reference` que foi enviado no momento da criação da preferência de pagamento. |
+`payment_type` | Retorna o tipo de pagamento. Ex.: `credit_card` para cartões de crédito ou `ticket` para meios de pagamento em dinheiro. |
+`merchant_order_id` | Retorna o ID da ordem de pagamento gerada no Mercado Pago. |
+`preference_id` | Retorna o ID da preferência de pagamento a partir da qual se está retornando. |
+`site_id` | Retorna o ID do país da conta do Mercado Pago do vendedor. Ex.: MLA para Argentina, MLB para Brasil ou MLM para México. |
+`processing_mode` | Retorna o valor `aggregator`. |
+`merchant_account_id` | Retorna com valor `null`. |
+
+> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Mercado Pago e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure._**
 
 [[[
 ```php
