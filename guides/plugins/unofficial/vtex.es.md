@@ -1,6 +1,5 @@
 ----[mlb]----
 
-<!-- -->
 > WARNING
 >
 > Importante
@@ -10,309 +9,6 @@
 
 ------------
 
-----[mlc]----
-
-# VTEX
-
-## ¿Qué es VTEX?
-
-[VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
-
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
-
-## ¿Cómo puedo operar con Mercado Pago en VTEX?
-
-VTEX permite procesar pagos en todos los modos de operación que Mercado Pago ofrece.
-
-#### Modo Agregador
-
-Recibir pagos utilizando todas las tarjetas y promociones que Mercado Pago ofrece, además de transferencias bancarias y medios de pagos off-line.
-
-#### Modo Gateway
-
-Recibir pagos directamente en los códigos de comercio del vendedor utilizando todas las promociones propias del vendedor.
-
-#### Modo All In
-
-Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
-
-## Configurar afiliación en modo agregador
-
-Para operar en modo Agregador solo es necesario configurar una afiliación.
-
-1. Seleccione en el menú lateral la opción "Pago".
-2. Configuraciones.
-
-    ![VTEX Configuration Page](/images/vtex-config.png)
-
-3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
-4. Añadir nueva afiliación con el botón (+)
-
-    ![Affiliation search bar](/images/vtex-afiliation.png)
-
-5. Buscar y seleccionar "MercadoPagoV1".
-
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
-
-
-6. Completar la información requerida en la afiliación.
-
-    ![Complete affliation information](/images/vtex-afiliation-4.png)
-
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: No se utiliza - dejar en blanco.
-- Processing Mode: Seleccionar aggregator.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: Sólo para Chile - ingresar 1234.
-- Use External Installments: Yes.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: No se utiliza - dejar en blanco.
-
-
-## Configurar plan de pago Nativo en modo agregador
-
-Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
-
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
-
-    ![Payment terms bar](/images/vtex-afiliation-2.png)
-
-6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
-
-    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Seleccionar cuotas `automático`.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Salvar la configuración.
-
-    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
-
-12. Verificar que se agregó el plan de nativo.
-
-    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
-
-## Configurar Plan de Pago Off-Line en modo agregador
-
-Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
-- Primero se genera de un ticket con las instrucciones para el pago.
-- Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
-
-## Medios Off-Line por país en modo agregador
-
-- Argentina: PagoFacil, Rapipago, RedLink.
-- Chile: Servipag.
-- Colombia: Efecty, Davivienda, Baloto.
-- México: Banamex, Bancomer, Oxxo.
-- Perú: PagoEfectivo.
-- Uruguay: Abitab, Redpagos.
-- Brasil: Boleto Bancario
-
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
-
-    ![Payment condition bar](/images/vtex-afiliation-2.png)
-
-6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-4.png)
-
-## Configurar plan de pago personalizado
-
-Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
-
-Medios de pago personalizados por país:
-
-Argentina: Argencard, Cencosud, CMR, Cordial, Cordobesa, Mercado Pago + Banco Patagonia.
-Chile: CMR, Magna, Presto.
-Colombia: Codensa.
-Uruguay: Oca.
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-custom-1.png)
-
-3. Ajustes.
-4. Pagos personalizados.
-5. Seleccionar una Cobrand para configurar.
-
-    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
-
-6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
-7. Salvar la configuración.
-
-    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
-
-8. Colocar una descripción (puede ser blancos).
-9. Seleccionar la afiliación.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Seleccionar automático.
-12. Salvar la configuración.
-
-![Custom plan](/images/vtex-custom-4.png)
-
-
-### Configurar plan de pago Webpay en modo agregador
-
-1. Desplegar el menú de Catalog .
-2. Ingresar en PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-webpay-1.png)
-
-3. Ajustes.
-4. Planes de pago.
-5. Nuevo plan de pago.
-
-    ![Payment plan bar in VTEX](/images/vtex-webpay-2.png)
-
-6. Buscar y seleccionar Webpay.
-
-    ![Webpay page in VTEX](/images/vtex-webpay-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
-
-    ![Payment Methods Configuration Page in Vtex](/images/vtex-webpay-4.png)
-
-## Configurar afiliación checkout redireccionado
-Para utilizar el checkout redirect es necesario configurar una afiliación específica
-El checkout redirect puede convivir con el checkout transparente.
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![VTEX configuration page - Checkout redirect](/images/vtex-config.png)
-
-4. Afiliaciones
-5. Nueva Afiliación
-
- ![Gateway affiliation bar](/images/vtex-afiliation.png)
-
-6. Buscar y seleccionar "MercadoPago".
-7. Completar la siguiente información requerida en la afiliación.
-- Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Pais -> Seleccionar País
-- Time Zone -> Región que define la hora local
-- orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
-- maxInstallments -> Cantidad máxima de cuotas
-- Categoria Principal -> Categoría del producto
-- Tipo de Estorno
-    - Automatico sempre que possivel - Genera la devolución del pago en MP
-    - Notificaçao por E-mail - NO genera la devolución del pago en MP
-
-## Configurar plan de pago checkout redireccionado
-Luego de configurar la afiliación es necesario agregar el plan de pago
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![Setting payment plan - Checkout redirected](/images/vtex-config.png).
-
-4. Planes de pago
-5. Nuevo plan de pago
-6. Buscar en la grupo OTRO - Mercado Pago
-7. Colocar una descripción (puede ser blancos)
-8. Seleccionar la afiliación creada para redirect
-9. Seleccionar cuotas A vista
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-11. Salvar la configuración
-
-## Configurar DeviceID
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en Portal.
-
-    ![Setting deviceID](/images/vtex-device-settings-1.png)
-
-3. Seleccionar el ícono de ajustes.
-
-    ![Adjustment icon](/images/vtex-device-settings-2.png)
-
-4. Ingresar en código.
-5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
-
-```
-var script = document.createElement("script");
-script.src = "https://www.mercadopago.com/v2/security.js";
-script.setAttribute("output","vtex.deviceFingerprint");
-script.setAttribute("view","checkout");
-document.body.appendChild(script);
-```
-
-7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
-
-    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
-
-
-## Interpretar log de VTEX
-
-Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
-
-También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
-
-Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte a los vendedores y convertirse en una primer instancia de soporte.
-
-Para acceder al log hay que ingresar en la transacción de VTEX
-
-Luego buscar el LOG que contenga el status response y dar click en _ver más_.
-
-Los datos más significativos son los siguientes:
-
-- `"Id":10302316` Numero de transacción de Mercado Pago.
-- `"Payment_method_id":"visa"`: Medio de pago.
-- `"Payment_type_id":"credit_card"`: Medio de pago.
-- `"Status":"authorized"`: Estado del pago.
-- `"Status_detail":"pending_capture"`: Detalle del estado del pago.
-- `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
-- `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
-- `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
-
-Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
-
-- `"Status":"rejected"`: Pago rechazado.
-- `"Status":"approved"`: Pago aprobado.
-- `"Status":"authorized"`: Pago autorizado esperando que se capture.
-- `"Status":"pending"`: Pago pendiente.
-- `"Status":"cancelled"`: Pago cancelado.
-
-Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
-
-------------
 
 ----[mla]----
 
@@ -320,350 +16,512 @@ Para ver más detalle de los estados posibles de un pago, ver sección de [posib
 
 ## ¿Qué es VTEX?
 
-[VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
+[VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
+
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), 
+[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o 
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+
+
+## Etapas para configurar
+Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
+
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+2. Registra la afiliación con Mercado Pago.
+3. Configura las condiciones de pago.
+4. Agrega el device fingerprint.
+
+
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
+
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
+
+| Campos | Datos necesarios |
+| --- | --- |
+| Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
+| OAuth login | No es necesario. Dejar como está. |
+| PublicKey | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave pública]([FAKER][CREDENTIALS][URL]). |
+| AccessToken | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave privada]([FAKER][CREDENTIALS][URL]). |
+| RefreshToken | Dejar en blanco. |
+| ExpiredTokenIn | Dejar en blanco. |
+| Merchant Account Id | Dejar en blanco. |
+| Processing Mode | Elige `agregador` como modo de procesamiento a partir de MercadoPagoV1. |
+| CountryName | Argentina. |
+| Bill due date in days | Dejar en 1. |
+| SoftDescriptor | Indica el nombre que va a aparecer para identificar una transacción de tu tienda en el resumen de la tarjeta del usuario. |
+| Description | Escribe una breve descripción de tu negocio (opcional). |
+| CategoryId | Elige la categoría de tus productos.|
+| Financial Institution | Dejar en blanco. |
+| External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
+| Antifraud | Elegir `Yes / Si`. |
+| Time Zone | Indica la región que define tu horario local. |
+| Mercado Pago 3P payment due date. | Deshabilitar. |
+| 3P payment due date after MP expiration. | Deshabilitar. |
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
+| Refund Method | Elige “Online refund if possible” para hacer las devoluciones desde VTEX. Si las quieres desde Mercado Pago, deshabilitar. |
+| Plan ahora 12 | Dejar en blanco. |
+| Plan ahora 18 | Dejar en blanco. |
+| Plan ahora 3 | Dejar en blanco. |
+| Plan ahora 6 | Dejar en blanco. |
+| Plan ahora Z | Dejar en blanco. |
+| Charge Margine | Dejarlo en 0. |
+| Binary Mode | Si se desea operar sin estados pendientes, activarlo. De caso contrario, dejarlo deshabilitado. |
+| Enable pre-auth for GiftCards | Dejar desactivado. |
+| Marketplace | Dejar en blanco. |
+| Marketplace fee | Dejar en blanco. |
+| Auto Settle | Dejar por defecto. |
+| Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo quieres realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+<br>
+
+
+![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion-arg.gif)
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
-## ¿Cómo puedo operar con Mercado Pago en VTEX?
+**¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
 
-VTEX permite procesar pagos en todos los modos de operación que Mercado Pago ofrece.
 
-#### Modo Agregador
+## Configura las condiciones de pago
+Luego de tener creada tu afiliación con Mercado Pago, puedes configurar pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), 
+[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o 
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como  también, elegir la opción de [recibir pagos directamente en el Checkout de Mercado Pago] (#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+
+
+### Condición de pagos para el Checkout de VTEX
+Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
-Recibir pagos utilizando todas las tarjetas y promociones que Mercado Pago ofrece, además de transferencias bancarias y medios de pagos off-line.
+1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
+2. [Tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito),
+3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
+4. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
-#### Modo Gateway
 
-Recibir pagos directamente en los códigos de comercio del vendedor utilizando todas las promociones propias del vendedor.
+#### Condición de pagos para tarjeta de crédito
+Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
-#### Modo All In
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de crédito, elige el medio de pago que quieras agregar. Se deben agregar Visa, MasterCard, American Express, Diners, Nativa, Naranja, Cabal y Shopping
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-## Configurar afiliación en modo agregador
 
-Para operar en modo Agregador solo es necesario configurar una afiliación.
+![Imagen tarjeta](/images/vtex/vtex-hisp-credito.gif)
 
-1. Seleccione en el menú lateral la opción "Pago".
-2. Configuraciones.
 
-    ![VTEX Configuration Page](/images/vtex-config.png)
+#### Condición de pagos para tarjeta de débito
+Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
-3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
-4. Añadir nueva afiliación con el botón (+)
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de débito, elige el medio de pago que quieras agregar. Se deben agregar Visa débito, Master débito y Maestro. 
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-    ![Affiliation search bar](/images/vtex-afiliation.png)
 
-5. Buscar y seleccionar "MercadoPagoV1".
+#### Condición de pagos para medios de pago en efectivo
+Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
 
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Factura, elige Boleto Bancario para agregar el medio de pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status.
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
 
+En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
 
-6. Completar la información requerida en la afiliación.
+| Tipo de medio de pago | Medio de pago |
+| ---  | --- |
+| `ticket` | Rapipago |
+| `ticket` | Pago Fácil |
+| `ticket` | Provincia NET Pagos |
+| `atm` | Red Link |
 
-    ![Complete affliation information](/images/vtex-afiliation-4.png)
+> Los medios de pago Carga Virtual y Cobro Express no están disponibles para el Checkout de VTEX.
 
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: No se utiliza - dejar en blanco.
-- Processing Mode: Seleccionar aggregator.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: Yes.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: Cantidad de horas para realizar la captura automatica.
 
-## Configurar plan de pago Nativo en modo agregador
+![Imagen efectivo](/images/vtex/vtex-hisp-efectivo.gif)
 
-Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
+#### Condición de pagos con medios de pagos personalizados
+Los medios de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como una opción nativo y se pueden utilizar con Mercado Pago.
 
-    ![Payment terms bar](/images/vtex-afiliation-2.png)
+Para crear esta condición de pago, sigue estos pasos: 
 
-6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Pagos personalizados, busca la sección Cobrands y haz clic en Configurar.
+3. Se desplegará un formulario donde deberás ingresar Nombre, Descripción, Medio de pago (la marca bandera), Bines (validar en Mercado Pago los mismos) y el Código de Medio de Pago (es el nombre del medio de pago en Mercado Pago). 
+4. Haz clic en Guardar. 
+5. En la pestaña Planes de Pago, haz clic en +. 
+6. En la sección Pago personalizado, elige el medio de pago que habías creado para agregar el medio de pago.
+7. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+8. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+9. Haz clic en Guardar. 
 
-    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
 
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Seleccionar cuotas `automático`.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Salvar la configuración.
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
 
-12. Verificar que se agregó el plan de nativo.
+En VTEX, los medios de pago personalizados que se pueden agregar son:
 
-    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
+| Tipo de medio de pago | Medio de pago | Bandera de la tarjeta | Bines | Código de pago del adquirente | 
+| --- | --- | --- | --- | --- |
+| `credit_card` | Argencard | Mastercard | 501105-501105 | argencard |
+| `credit_card` | Tarjeta Cencosud | Mastercard | 603493-603493 | cencosud |
+| `credit_card` | Tarjeta CMR | Mastercard | 557039-557039 | cmr |
+| `credit_card` | Tarjeta Cordial | Mastercard | 522135-522135,522137-522137,527555-527555 | cordial |
+| `credit_card` | Tarjeta Cordobesa | Mastercard | 542702-542702,544764-544764,550073-550073,528824-528824 | cordobesa |
+| `credit_card` | Tarjeta Mercado Pago Patagonia | Mastercard | 515073-515073,515070-515070,532383-532383,532384-532384 | mercadopago_cc | 
 
-## Configurar Plan de Pago Off-Line en modo agregador
 
-Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
-- Primero se genera de un ticket con las instrucciones para el pago.
-- Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
+![Imagen personalizado](/images/vtex/vtex-hisp-personalizado.gif)
 
-## Medios Off-Line por país en modo agregador
 
-- Argentina: PagoFacil, Rapipago, RedLink.
-- Chile: Servipag.
-- Colombia: Efecty, Davivienda, Baloto.
-- México: Banamex, Bancomer, Oxxo.
-- Perú: PagoEfectivo.
-- Uruguay: Abitab, Redpagos.
-- Brasil: Boleto Bancario
+------------
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
 
-    ![Payment condition bar](/images/vtex-afiliation-2.png)
+----[mlm]----
 
-6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
+# VTEX
+## ¿Qué es VTEX?
+[VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), 
+[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
 
-    ![Adding ticket as payment method](/images/vtex-offline-plan-4.png)
+## Etapas para configurar
+Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
-## Configurar plan de pago personalizado
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+2. Registra la afiliación con Mercado Pago.
+3. Configura las condiciones de pago.
+4. Agrega el device fingerprint.
 
-Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
 
-Medios de pago personalizados por país:
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-Argentina: Argencard, Cencosud, CMR, Cordial, Cordobesa, Mercado Pago + Banco Patagonia.
-Chile: CMR, Magna, Presto.
-Colombia: Codensa.
-Uruguay: Oca.
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
 
-1. Desplegar el menú de Catalog.
-2. Ingresar en PCI Gateway.
+| Campos | Datos necesarios |
+| --- | --- |
+| Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
+| OAuth login | No es necesario. Dejar como está. |
+| PublicKey | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave pública]([FAKER][CREDENTIALS][URL]). |
+| AccessToken | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave privada]([FAKER][CREDENTIALS][URL]). |
+| RefreshToken | Dejar en blanco. |
+| ExpiredTokenIn | Dejar en blanco. |
+| Merchant Account Id | Dejar en blanco. |
+| Processing Mode | Elige `agregador` como modo de procesamiento a partir de MercadoPagoV1. |
+| CountryName | México. |
+| Bill due date in days | Dejar en 1. |
+| SoftDescriptor | Indica el nombre que va a aparecer para identificar una transacción de tu tienda en el resumen de la tarjeta del usuario.  |
+| Description | Escribe una breve descripción de tu negocio (opcional). |
+| CategoryId | Elige la categoría de tus productos.|
+| Financial Institution | Dejar en blanco. |
+| External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
+| Antifraud | Elegir `No`. |
+| Time Zone | Indica la región que define tu horario local. |
+| Mercado Pago 3P payment due date. | Deshabilitar. |
+| 3P payment due date after MP expiration. | Deshabilitar. |
+| OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
+| Refund Method | Elige “Online refund if possible” para hacer las devoluciones desde VTEX. Si las quieres desde Mercado Pago, deshabilitar. |
+| Binary Mode | Si se desea operar sin estados pendientes, activarlo. De caso contrario, dejarlo deshabilitado. |
+| Marketplace | Dejar en blanco. |
+| Marketplace fee | Dejar en blanco. |
+| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+<br>
 
-    ![PCI gateway page](/images/vtex-custom-1.png)
 
-3. Ajustes.
-4. Pagos personalizados.
-5. Seleccionar una Cobrand para configurar.
+> WARNING
+>
+> Importante
+>
+> En el caso del campo “Antifraud” seleccionar la opción `No` porque sino en el Checkout se le pedirá al cardholder un identification para avanzar con el pago. 
+<br>
 
-    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
 
-6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
-7. Salvar la configuración.
+![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
-    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
-
-8. Colocar una descripción (puede ser blancos).
-9. Seleccionar la afiliación.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Seleccionar automático.
-12. Salvar la configuración.
-
-![Custom plan](/images/vtex-custom-4.png)
-
-
-### Configurar Plan de Pago Personalizado en modo agregador
-
-| Nombre                   | Descripción              | Medio de pago |       Bines {min}-{max},{min}-{max},{bin1},{bin2}       | Código de pago en adquiriente (opcional) |
-|----|-----|-----|:------:|------|
-| Argencard                | Argencard                | Mastercard    | 501105-501105                                           | argencard                                |
-| Cencosud                 | Cencosud                 | Mastercard    | 603493-603493                                           | cencosud                                 |
-| CMR                      | CMR                      | Mastercard    | 557039-557039                                           | cmr                                      |
-| Cordial                  | Cordial                  | Mastercard    | 522135-522135,522137-522137,527555-527555               | cordial                                  |
-| Cordobesa                | Cordobesa                | Mastercard    | 542702-542702,544764-544764,550073-550073,528824-528824 | cordobesa                                |
-| Mercado Pago - Patagonia | Mercado Pago - Patagonia | Mastercard    | 515073-515073,515070-515070,532383-532383,532384-532384 | mercadopago_cc                           |
-
-
-
-## Configurar afiliación checkout redireccionado
-Para utilizar el checkout redirect es necesario configurar una afiliación específica
-El checkout redirect puede convivir con el checkout transparente.
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![VTEX configuration page - Checkout redirect](/images/vtex-config.png)
-
-4. Afiliaciones
-5. Nueva Afiliación
-
- ![Gateway affiliation bar](/images/vtex-afiliation.png)
-
-6. Buscar y seleccionar "MercadoPago".
-7. Completar la siguiente información requerida en la afiliación.
-- Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Pais -> Seleccionar País
-- Time Zone -> Región que define la hora local
-- orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
-- maxInstallments -> Cantidad máxima de cuotas
-- Categoria Principal -> Categoría del producto
-- Tipo de Estorno
-    - Automatico sempre que possivel - Genera la devolución del pago en MP
-    - Notificaçao por E-mail - NO genera la devolución del pago en MP
 
-## Configurar plan de pago checkout redireccionado
-Luego de configurar la afiliación es necesario agregar el plan de pago
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
+**¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
 
-    ![Setting payment plan - Checkout redirected](/images/vtex-config.png).
 
-4. Planes de pago
-5. Nuevo plan de pago
-6. Buscar en la grupo OTRO - Mercado Pago
-7. Colocar una descripción (puede ser blancos)
-8. Seleccionar la afiliación creada para redirect
-9. Seleccionar cuotas A vista
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-11. Salvar la configuración
+## Configura las condiciones de pago
+Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), 
+[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout de Mercado Pago] (#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-## Configurar afiliación para operar en modo Gateway
-Cuando tu asesor comercial te haya informado que ya están cargados los números de comercio y te haya pasado los `merchant_account_id` de cada número de comercio realizar los siguientes pasos para cada una de las tarjetas que tengas número de comercio:
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
 
-    ![VTEX Configuration Page - Gateway](/images/vtex-config.png).
+### Condición de pagos para el Checkout de VTEX
+Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
-4. Afiliaciones
-5. Nueva Afiliación
 
- ![Affiliation search bar - Gateway](/images/vtex-afiliation.png)
+1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
+2. [Tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
+3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
-6. Buscar y seleccionar "MercadoPagoV1".
 
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
+#### Condición de pagos para tarjeta de crédito
+Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
-7. Completar los campos que se describen a continuación:
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: Completar con el id que fueron compartidos por su asesor comercial correspondientes a cada tarjeta.
-- Processing Mode: Seleccionar gateway.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: No.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: Por defecto inmediato - cambiar si se quiere realizar captura diferida del pago.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de crédito, elige el medio de pago que quieras agregar. Se deben agregar Visa, MasterCard y American Express.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-## Configurar plan de pago para operar en modo Gateway
-Luego de configurar la afiliación es necesario agregar el plan de pago:
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-    ![Setting payment plan - gateway](/images/vtex-config.png).
 
-4. Planes de pago
-5. Nuevo plan de pago
+![Imagen tarjeta](/images/vtex/vtex-hisp-credito.gif)
 
-    ![Payment methods page - gateway](/images/vtex-native-plan-3.png).
 
-6. Seleccionar el medio de pago (crédito o débito) a cargar
-7. Colocar una descripción.
-8. Seleccionar la afiliación creada para este medio de pago
-9. Seleccionar cuotas En cuotas
-10. Cargar las cuotas y el interés correspondiente del medio de pago.
-11. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-12. Salvar la configuración
+#### Condición de pagos para tarjeta de débito
+Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de débito, elige el medio de pago que quieras agregar. Se deben agregar Visa débito y Master débito.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-## Configurar DeviceID
 
-1. Desplegar el menú de Catalog.
-2. Ingresar en Portal.
+#### Condición de pagos para medios de pago en efectivo
+Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
 
-    ![Setting deviceID](/images/vtex-device-settings-1.png)
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Factura, elige Boleto Bancario para agregar el medio de pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
 
-3. Seleccionar el ícono de ajustes.
 
-    ![Adjustment icon](/images/vtex-device-settings-2.png)
+En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
 
-4. Ingresar en código.
-5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
+| Tipo de medio de pago | Medio de pago |
+| --- | --- |
+| `ticket` | Oxxo |
+| `atm` | Citibanamex |
+| `atm` | BBVA Bancomer |
 
-```
-var script = document.createElement("script");
-script.src = "https://www.mercadopago.com/v2/security.js";
-script.setAttribute("output","vtex.deviceFingerprint");
-script.setAttribute("view","checkout");
-document.body.appendChild(script);
-```
+> El medio de pago Serfin no está disponible para el Checkout de VTEX.
 
-7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
 
-    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
+![Imagen efectivo](/images/vtex/vtex-hisp-efectivo.gif)
 
 
-## Interpretar log de VTEX
+------------
 
-Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
 
-También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
+----[mlc]----
 
-Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte a los vendedores y convertirse en una primer instancia de soporte.
+# VTEX
+## ¿Qué es VTEX?
+[VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-Para acceder al log hay que ingresar en la transacción de VTEX
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#book_mark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-Luego buscar el LOG que contenga el status response y dar click en _ver más_.
 
-Los datos más significativos son los siguientes:
+## Etapas para configurar
+Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
-- `"Id":10302316` Numero de transacción de Mercado Pago.
-- `"Payment_method_id":"visa"`: Medio de pago.
-- `"Payment_type_id":"credit_card"`: Medio de pago.
-- `"Status":"authorized"`: Estado del pago.
-- `"Status_detail":"pending_capture"`: Detalle del estado del pago.
-- `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
-- `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
-- `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+2. Registra la afiliación con Mercado Pago.
+3. Configura las condiciones de pago.
+4. Agrega el device fingerprint.
 
-Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
 
-- `"Status":"rejected"`: Pago rechazado.
-- `"Status":"approved"`: Pago aprobado.
-- `"Status":"authorized"`: Pago autorizado esperando que se capture.
-- `"Status":"pending"`: Pago pendiente.
-- `"Status":"cancelled"`: Pago cancelado.
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
+
+
+| Campos | Datos necesarios |
+| --- | --- |
+| Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
+| OAuth login | No es necesario. Dejar como está. |
+| PublicKey | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave pública]([FAKER][CREDENTIALS][URL]). |
+| AccessToken | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave privada]([FAKER][CREDENTIALS][URL]). |
+| RefreshToken | Dejar en blanco. |
+| ExpiredTokenIn | Dejar en blanco. |
+| Merchant Account Id | Dejar en blanco. |
+| Processing Mode | Elige `agregador` como modo de procesamiento a partir de MercadoPagoV1. |
+| CountryName | Chile. |
+| SoftDescriptor | Indica el nombre que va a aparecer para identificar una transacción de tu tienda. |
+| Description | Escribe una breve descripción de tu negocio (opcional). |
+| CategoryId | Elige la categoría de tus productos.|
+| Financial Institution | Ingresar el código `1234`. |
+| External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
+| Antifraud | Elegir `Yes / Si`. |
+| Time Zone | Indica la región que define tu horario local. |
+| Vencimiento de pagos 3P en Mercado Pago | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| Vencimiento de pagos 3P después del vencimiento en MP  | Elegir `12 horas`. Tiempo para el vencimiento del pago en VTEX después del vencimiento del pago 3P en Mercado Pago. Si no se completa, se utilizará el tiempo estándar de 7 días después de la creación del pedido.|
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
+| Refund Method | Elegir Online. Si selecciona Reembolso Online, ejecutaremos la llamada de la API de reembolso al procesador. Si se selecciona la opción Offline, enviaremos un correo electrónico al administrador para realizar un reembolso manual. Utilice esta opción con cuidado. |
+| Binary mode | Cuando está activo, los pagos solo pueden ser devueltos en el status authorised o denied (no se permite in_process). |
+| Marketplace | Sólo se debe completar cuando se utiliza el modelo marketplace. Origen del pago |
+| Marketplace Fee | Comisión de cada pago en el modelo marketplace |
+| Captura de seguridad antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+<br>
+
+
+> WARNING
+>
+> Importante
+>
+> En el caso del campo “Financial Institution” validar la documentación de WebPay de Mercado Pago para configurar dicho campo. Actualmente, es el valor “1234”. 
+> 
+> En el caso del campo “Captura de segurança antecipada” no se encuentra disponible por el momento para Chile.
+<br>
+
+
+![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
+
+
+**¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
+
+
+## Configura las condiciones de pago
+Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con  [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+
+
+### Condición de pagos para el Checkout de VTEX
+Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
+
+1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
+2. [Transferencia bancaria (WebPay)](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria)
+3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
+4. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
+
+
+#### Condición de pagos para tarjeta de crédito
+Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de crédito, elige el medio de pago que quieras agregar. Se deben agregar Visa, MasterCard y American Express. 
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
+
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
+
+
+![Imagen tarjeta](/images/vtex/vtex-hisp-credito.gif)
+
+
+#### Condición de pagos para medios de pago por transferencia bancaria
+Para crear una condición de pago con WebPay, sigue estos pasos: 
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección “Other”, elige “WebPay” para agregar el medio de pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
+
+
+![Imagen transferencia](/images/vtex/vtex-hisp-webpay.gif)
+
+
+#### Condición de pagos para medios de pago en efectivo
+Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Factura, elige Boleto Bancario para agregar el medio de pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status.
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
+
+En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
+
+| Tipo de medio de pago | Medio de pago |
+| --- | --- |
+| `ticket` | Sucursales Servipag |
+
+
+![Imagen efectivo](/images/vtex/vtex-hisp-efectivo.gif)
+
+
+#### Condición de pagos con medios de pagos personalizados
+Los medios de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como una opción nativo y se pueden utilizar con Mercado Pago.
+
+Para crear esta condición de pago, sigue estos pasos: 
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Pagos personalizados, busca la sección Cobrands y haz clic en Configurar.
+3. Se desplegará un formulario donde deberás ingresar Nombre, Descripción, Medio de pago (la marca bandera), Bines (validar en Mercado Pago los mismos) y el Código de Medio de Pago (es el nombre del medio de pago en Mercado Pago). 
+4. Haz clic en Guardar. 
+5. En la pestaña Planes de Pago, haz clic en +. 
+6. En la sección Pago personalizado, elige el medio de pago que habías creado para agregar el medio de pago.
+7. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+8. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+9. Haz clic en Guardar. 
+
+
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
+
+
+En VTEX, los medios de pago personalizados que se pueden agregar son:
+
+| Tipo de medio de pago | Medio de pago | Bandera de la tarjeta | Bines | Código de pago del adquirente |
+| --- | --- | --- | --- | --- |
+| `credit_card` | Presto | Mastercard | 920000 - 920099 | presto |
+| `credit_card` | Magna | Mastercard | 568000 - 569099 | magna |
+
+
+![Imagen personalizado](/images/vtex/vtex-hisp-personalizado.gif)
+
 
 ------------
 
@@ -671,1182 +529,534 @@ Para ver más detalle de los estados posibles de un pago, ver sección de [posib
 ----[mco]----
 
 # VTEX
-
 ## ¿Qué es VTEX?
+[VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-[VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
-## ¿Cómo puedo operar con Mercado Pago en VTEX?
+## Etapas para configurar
+Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
-VTEX permite procesar pagos en todos los modos de operación que Mercado Pago ofrece.
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+2. Registra la afiliación con Mercado Pago.
+3. Configura las condiciones de pago.
+4. Agrega el device fingerprint.
 
-#### Modo Agregador
 
-Recibir pagos utilizando todas las tarjetas y promociones que Mercado Pago ofrece, además de transferencias bancarias y medios de pagos off-line.
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-#### Modo Gateway
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
 
-Recibir pagos directamente en los códigos de comercio del vendedor utilizando todas las promociones propias del vendedor.
+| Campos | Datos necesarios |
+| --- | --- |
+| Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
+| OAuth login | No es necesario. Dejar como está. |
+| PublicKey | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave pública]([FAKER][CREDENTIALS][URL]). |
+| AccessToken | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave privada]([FAKER][CREDENTIALS][URL]). |
+| RefreshToken | Dejar en blanco. |
+| ExpiredTokenIn | Dejar en blanco. |
+| Merchant Account Id | Dejar en blanco. |
+| Processing Mode | Elige `agregador` como modo de procesamiento a partir de MercadoPagoV1. |
+| CountryName | Colombia. |
+| SoftDescriptor | Indica el nombre que va a aparecer para identificar una transacción de tu tienda en el resumen de la tarjeta del usuario.  |
+| Description | Escribe una breve descripción de tu negocio (opcional). |
+| CategoryId | Elige la categoría de tus productos.|
+| Financial Institution | Dejar en blanco. |
+| External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
+| Antifraud | Elegir `Yes / Si`. |
+| Time Zone | Indica la región que define tu horario local. |
+| OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
+| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+<br>
 
-#### Modo All In
 
-Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-## Configurar afiliación en modo agregador
 
-Para operar en modo Agregador solo es necesario configurar una afiliación.
+![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
-1. Seleccione en el menú lateral la opción "Pago".
-2. Configuraciones.
 
-    ![VTEX Configuration Page](/images/vtex-config.png)
+**¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
 
-3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
-4. Añadir nueva afiliación con el botón (+)
 
-    ![Affiliation search bar](/images/vtex-afiliation.png)
+## Configura las condiciones de pago
+Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-5. Buscar y seleccionar "MercadoPagoV1".
 
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
+### Condición de pagos para el Checkout de VTEX
+Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
+1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
+2. [Transferencia bancaria (PSE)](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria)
+3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
-6. Completar la información requerida en la afiliación.
 
-    ![Complete affliation information](/images/vtex-afiliation-4.png)
+#### Condición de pagos para tarjeta de crédito
+Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: No se utiliza - dejar en blanco.
-- Processing Mode: Seleccionar aggregator.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: Yes.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de crédito, elige el medio de pago que quieras agregar. Se deben agregar Visa, MasterCard y Diners. 
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
 
-## Configurar plan de pago Nativo en modo agregador
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
+![Imagen tarjeta](/images/vtex/vtex-hisp-credito.gif)
 
-    ![Payment terms bar](/images/vtex-afiliation-2.png)
 
-6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
+#### Condición de pagos para medios de pago por transferencia bancaria
+Para crear una condición de pago con PSE, sigue estos pasos: 
 
-    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de débito, elige el medio de pago que quieras agregar. Se deben agregar Débito online.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Seleccionar cuotas `automático`.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Salvar la configuración.
+> El medio de pago tarjeta Codensa no está disponible para el Checkout de VTEX.
 
-    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
 
-12. Verificar que se agregó el plan de nativo.
+![Imagen transferencia](/images/vtex/vtex-hisp-pse.gif)
 
-    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
 
-## Configurar Plan de Pago Off-Line en modo agregador
+#### Condición de pagos para medios de pago en efectivo
+Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
 
-Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
-- Primero se genera de un ticket con las instrucciones para el pago.
-- Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Factura, elige Boleto Bancario para agregar el medio de pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status.
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
 
-## Medios Off-Line por país en modo agregador
+En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
 
-- Argentina: PagoFacil, Rapipago, RedLink.
-- Chile: Servipag.
-- Colombia: Efecty, Davivienda, Baloto.
-- México: Banamex, Bancomer, Oxxo.
-- Perú: PagoEfectivo.
-- Uruguay: Abitab, Redpagos.
-- Brasil: Boleto Bancario
+| Tipo de medio de pago | Medio de pago |
+| --- | --- |
+| `ticket` | Efecty |
+| `ticket` | Baloto |
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
 
-    ![Payment condition bar](/images/vtex-afiliation-2.png)
+![Imagen efectivo](/images/vtex/vtex-hisp-efectivo.gif)
 
-6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-4.png)
-
-## Configurar plan de pago personalizado
-
-Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
-
-Medios de pago personalizados por país:
-
-Argentina: Argencard, Cencosud, CMR, Cordial, Cordobesa, Mercado Pago + Banco Patagonia.
-Chile: CMR, Magna, Presto.
-Colombia: Codensa.
-Uruguay: Oca.
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-custom-1.png)
-
-3. Ajustes.
-4. Pagos personalizados.
-5. Seleccionar una Cobrand para configurar.
-
-    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
-
-6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
-7. Salvar la configuración.
-
-    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
-
-8. Colocar una descripción (puede ser blancos).
-9. Seleccionar la afiliación.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Seleccionar automático.
-12. Salvar la configuración.
-
-![Custom plan](/images/vtex-custom-4.png)
-
-### Configurar Plan de Pago Personalizado en modo agregador
-
-| Nombre  | Descripción | Medio de pago | Bines {min}-{max},{min}-{max},{bin1},{bin2} | Código de pago en adquiriente (opcional) |
-|----|----|---|:---:|-----|
-| Codensa | Codensa     | Mastercard    | 590712-590712                               | codensa                                  |
-
-## Configurar afiliación checkout redireccionado
-Para utilizar el checkout redirect es necesario configurar una afiliación específica
-El checkout redirect puede convivir con el checkout transparente.
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![VTEX configuration page - Checkout redirect](/images/vtex-config.png)
-
-4. Afiliaciones
-5. Nueva Afiliación
-
- ![Gateway affiliation bar](/images/vtex-afiliation.png)
-
-6. Buscar y seleccionar "MercadoPago".
-7. Completar la siguiente información requerida en la afiliación.
-- Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Pais -> Seleccionar País
-- Time Zone -> Región que define la hora local
-- orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
-- maxInstallments -> Cantidad máxima de cuotas
-- Categoria Principal -> Categoría del producto
-- Tipo de Estorno
-    - Automatico sempre que possivel - Genera la devolución del pago en MP
-    - Notificaçao por E-mail - NO genera la devolución del pago en MP
-
-## Configurar plan de pago checkout redireccionado
-Luego de configurar la afiliación es necesario agregar el plan de pago
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![Setting payment plan - Checkout redirected](/images/vtex-config.png).
-
-4. Planes de pago
-5. Nuevo plan de pago
-6. Buscar en la grupo OTRO - Mercado Pago
-7. Colocar una descripción (puede ser blancos)
-8. Seleccionar la afiliación creada para redirect
-9. Seleccionar cuotas A vista
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-11. Salvar la configuración
-
-## Configurar afiliación para operar en modo Gateway
-Cuando tu asesor comercial te haya informado que ya están cargados los números de comercio y te haya pasado los `merchant_account_id` de cada número de comercio realizar los siguientes pasos para cada una de las tarjetas que tengas número de comercio:
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![VTEX Configuration Page - Gateway](/images/vtex-config.png).
-
-4. Afiliaciones
-5. Nueva Afiliación
-
- ![Affiliation search bar - Gateway](/images/vtex-afiliation.png)
-
-6. Buscar y seleccionar "MercadoPagoV1".
-
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
-
-7. Completar los campos que se describen a continuación:
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: Completar con el id que fueron compartidos por su asesor comercial correspondientes a cada tarjeta.
-- Processing Mode: Seleccionar gateway.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: No.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: Por defecto inmediato - cambiar si se quiere realizar captura diferida del pago.
-
-## Configurar plan de pago para operar en modo Gateway
-Luego de configurar la afiliación es necesario agregar el plan de pago:
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![Setting payment plan - gateway](/images/vtex-config.png).
-
-4. Planes de pago
-5. Nuevo plan de pago
-
-    ![Payment methods page - gateway](/images/vtex-native-plan-3.png).
-
-6. Seleccionar el medio de pago (crédito o débito) a cargar
-7. Colocar una descripción.
-8. Seleccionar la afiliación creada para este medio de pago
-9. Seleccionar cuotas En cuotas
-10. Cargar las cuotas y el interés correspondiente del medio de pago.
-11. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-12. Salvar la configuración
-
-
-## Configurar DeviceID
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en Portal.
-
-    ![Setting deviceID](/images/vtex-device-settings-1.png)
-
-3. Seleccionar el ícono de ajustes.
-
-    ![Adjustment icon](/images/vtex-device-settings-2.png)
-
-4. Ingresar en código.
-5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
-
-```
-var script = document.createElement("script");
-script.src = "https://www.mercadopago.com/v2/security.js";
-script.setAttribute("output","vtex.deviceFingerprint");
-script.setAttribute("view","checkout");
-document.body.appendChild(script);
-```
-
-7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
-
-    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
-
-
-## Interpretar log de VTEX
-
-Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
-
-También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
-
-Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte a los vendedores y convertirse en una primer instancia de soporte.
-
-Para acceder al log hay que ingresar en la transacción de VTEX
-
-Luego buscar el LOG que contenga el status response y dar click en _ver más_.
-
-Los datos más significativos son los siguientes:
-
-- `"Id":10302316` Numero de transacción de Mercado Pago.
-- `"Payment_method_id":"visa"`: Medio de pago.
-- `"Payment_type_id":"credit_card"`: Medio de pago.
-- `"Status":"authorized"`: Estado del pago.
-- `"Status_detail":"pending_capture"`: Detalle del estado del pago.
-- `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
-- `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
-- `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
-
-Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
-
-- `"Status":"rejected"`: Pago rechazado.
-- `"Status":"approved"`: Pago aprobado.
-- `"Status":"authorized"`: Pago autorizado esperando que se capture.
-- `"Status":"pending"`: Pago pendiente.
-- `"Status":"cancelled"`: Pago cancelado.
-
-Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
 
 ------------
+
 
 ----[mpe]----
 
 # VTEX
-
 ## ¿Qué es VTEX?
+[VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-[VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
+Puedes ofrecer a tus clientes la posibilidad de pagar con  [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), 
+[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
-## ¿Cómo puedo operar con Mercado Pago en VTEX?
+## Etapas para configurar
+Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
-VTEX permite procesar pagos en todos los modos de operación que Mercado Pago ofrece.
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+2. Registra la afiliación con Mercado Pago.
+3. Configura las condiciones de pago.
+4. Agrega el device fingerprint.
 
-#### Modo Agregador
 
-Recibir pagos utilizando todas las tarjetas y promociones que Mercado Pago ofrece, además de transferencias bancarias y medios de pagos off-line.
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-#### Modo Gateway
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
 
-Recibir pagos directamente en los códigos de comercio del vendedor utilizando todas las promociones propias del vendedor.
 
-#### Modo All In
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
 
-## Configurar afiliación en modo agregador
+| Campos | Datos necesarios |
+| --- | --- |
+| Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
+| OAuth login | No es necesario. Dejar como está. |
+| PublicKey | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave pública]([FAKER][CREDENTIALS][URL]). |
+| AccessToken | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave privada]([FAKER][CREDENTIALS][URL]). |
+| RefreshToken | Dejar en blanco. |
+| ExpiredTokenIn | Dejar en blanco. |
+| Merchant Account Id | Dejar en blanco. |
+| Processing Mode | Elige `agregador` como modo de procesamiento a partir de MercadoPagoV1. |
+| CountryName | Perú. |
+| Bill due date in days | Dejar en 1. |
+| SoftDescriptor | Indica el nombre que va a aparecer para identificar una transacción de tu tienda en el resumen de la tarjeta del usuario. |
+| Description | Escribe una breve descripción de tu negocio (opcional). |
+| CategoryId | Elige la categoría de tus productos.|
+| Financial Institution | Dejar en blanco. |
+| External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
+| Antifraud | Elegir `Yes / Si`. |
+| Time Zone | Indica la región que define tu horario local. |
+| Mercado Pago 3P payment due date | Disable. |
+| 3P payment due date after MP expiration | Disable. |
+| OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
+| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+<br>
 
-Para operar en modo Agregador solo es necesario configurar una afiliación.
 
-1. Seleccione en el menú lateral la opción "Pago".
-2. Configuraciones.
+> WARNING
+>
+> Importante
+>
+> En el caso del campo “Captura de segurança antecipada” no se encuentra disponible por el momento para Perú.<br>
 
-    ![VTEX Configuration Page](/images/vtex-config.png)
 
-3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
-4. Añadir nueva afiliación con el botón (+)
+![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
-    ![Affiliation search bar](/images/vtex-afiliation.png)
 
-5. Buscar y seleccionar "MercadoPagoV1".
+**¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
 
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
 
+## Configura las condiciones de pago
+Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), 
+[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o 
+[medios de pago en efectivo](#condición_de_pagos_para_medios_de_pago_en_efectivo).  Como también, elegir la opción de [recibir pagos directamente en el Checkout de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-6. Completar la información requerida en la afiliación.
 
-    ![Complete affliation information](/images/vtex-afiliation-4.png)
+### Condición de pagos para el Checkout de VTEX
+Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: No se utiliza - dejar en blanco.
-- Processing Mode: Seleccionar aggregator.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: Yes.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
+2. [Tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
+3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
 
-## Configurar plan de pago Nativo en modo agregador
+#### Condición de pagos para tarjeta de crédito
+Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
-Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de crédito, elige el medio de pago que quieras agregar. Se deben agregar Visa, MasterCard, American Express y Diners.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
 
-    ![Payment terms bar](/images/vtex-afiliation-2.png)
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
 
-    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
+![Imagen tarjeta](/images/vtex/vtex-hisp-credito.gif)
 
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Seleccionar cuotas `automático`.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Salvar la configuración.
 
-    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
+#### Condición de pagos para tarjeta de débito
+Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
-12. Verificar que se agregó el plan de nativo.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de débito, elige el medio de pago que quieras agregar. Se deben agregar Visa débito y Master débito.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
 
-## Configurar Plan de Pago Off-Line en modo agregador
+#### Condición de pagos para medios de pago en efectivo
+Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
 
-Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
-- Primero se genera de un ticket con las instrucciones para el pago.
-- Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Factura, elige Boleto Bancario para agregar el medio de pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status.
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
 
-## Medios Off-Line por país en modo agregador
+En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
 
-- Argentina: PagoFacil, Rapipago, RedLink.
-- Chile: Servipag.
-- Colombia: Efecty, Davivienda, Baloto.
-- México: Banamex, Bancomer, Oxxo.
-- Perú: PagoEfectivo.
-- Uruguay: Abitab, Redpagos.
-- Brasil: Boleto Bancario
+| Tipo de medio de pago | Medio de pago |
+| --- | --- |
+| `ticket` | Pago Efectivo |
+| `atm` | Pago Efectivo |
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
+> El ticket será emitido por Pago Efectivo pero el mismo podrá abonarse presencialmente en diferentes agencias y bancos de forma online, para más información visita el [sitio oficial de PagoEfectivo](https://pagoefectivo.pe/pe)
 
-    ![Payment condition bar](/images/vtex-afiliation-2.png)
 
-6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
+![Imagen efectivo](/images/vtex/vtex-hisp-efectivo.gif)
 
-    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-4.png)
-
-## Configurar plan de pago personalizado
-
-Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
-
-Medios de pago personalizados por país:
-
-Argentina: Argencard, Cencosud, CMR, Cordial, Cordobesa, Mercado Pago + Banco Patagonia.
-Chile: CMR, Magna, Presto.
-Colombia: Codensa.
-Uruguay: Oca.
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-custom-1.png)
-
-3. Ajustes.
-4. Pagos personalizados.
-5. Seleccionar una Cobrand para configurar.
-
-    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
-
-6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
-7. Salvar la configuración.
-
-    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
-
-8. Colocar una descripción (puede ser blancos).
-9. Seleccionar la afiliación.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Seleccionar automático.
-12. Salvar la configuración.
-
-![Custom plan](/images/vtex-custom-4.png)
-
-## Configurar DeviceID
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en Portal.
-
-    ![Setting deviceID](/images/vtex-device-settings-1.png)
-
-3. Seleccionar el ícono de ajustes.
-
-    ![Adjustment icon](/images/vtex-device-settings-2.png)
-
-4. Ingresar en código.
-5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
-
-```
-var script = document.createElement("script");
-script.src = "https://www.mercadopago.com/v2/security.js";
-script.setAttribute("output","vtex.deviceFingerprint");
-script.setAttribute("view","checkout");
-document.body.appendChild(script);
-```
-
-7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
-
-    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
-
-
-## Interpretar log de VTEX
-
-Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
-
-También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
-
-Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte a los vendedores y convertirse en una primer instancia de soporte.
-
-Para acceder al log hay que ingresar en la transacción de VTEX
-
-Luego buscar el LOG que contenga el status response y dar click en _ver más_.
-
-Los datos más significativos son los siguientes:
-
-- `"Id":10302316` Numero de transacción de Mercado Pago.
-- `"Payment_method_id":"visa"`: Medio de pago.
-- `"Payment_type_id":"credit_card"`: Medio de pago.
-- `"Status":"authorized"`: Estado del pago.
-- `"Status_detail":"pending_capture"`: Detalle del estado del pago.
-- `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
-- `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
-- `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
-
-Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
-
-- `"Status":"rejected"`: Pago rechazado.
-- `"Status":"approved"`: Pago aprobado.
-- `"Status":"authorized"`: Pago autorizado esperando que se capture.
-- `"Status":"pending"`: Pago pendiente.
-- `"Status":"cancelled"`: Pago cancelado.
-
-Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
 
 ------------
+
 
 ----[mlu]----
 
 # VTEX
-
 ## ¿Qué es VTEX?
+[VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-[VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) o 
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
 
-## ¿Cómo puedo operar con Mercado Pago en VTEX?
+## Etapas para configurar
+Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
-VTEX permite procesar pagos en todos los modos de operación que Mercado Pago ofrece.
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+2. Registra la afiliación con Mercado Pago.
+3. Configura las condiciones de pago.
+4. Agrega el device fingerprint.
 
-#### Modo Agregador
 
-Recibir pagos utilizando todas las tarjetas y promociones que Mercado Pago ofrece, además de transferencias bancarias y medios de pagos off-line.
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-#### Modo Gateway
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
 
-Recibir pagos directamente en los códigos de comercio del vendedor utilizando todas las promociones propias del vendedor.
 
-#### Modo All In
+## Configurar la afiliación de pasarela con Mercado Pago
+Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+3. Ingresa en el conector MercadoPagoV1.
+4. Completa los campos correspondientes y guarda los cambios. 
 
-## Configurar afiliación en modo agregador
+| Campos | Datos necesarios |
+| --- | --- |
+| Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
+| OAuth login | No es necesario. Dejar como está. |
+| PublicKey | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave pública]([FAKER][CREDENTIALS][URL]). |
+| AccessToken | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave privada]([FAKER][CREDENTIALS][URL]). |
+| RefreshToken | Dejar en blanco. |
+| ExpiredTokenIn | Dejar en blanco. |
+| Merchant Account Id | Dejar en blanco. |
+| Processing Mode | Elige `agregador` como modo de procesamiento a partir de MercadoPagoV1. |
+| CountryName | Uruguay. |
+| Bill due date in days | Dejar en 1. |
+| SoftDescriptor | Indica el nombre que va a aparecer para identificar una transacción de tu tienda en el resumen de la tarjeta del usuario. |
+| Description | Escribe una breve descripción de tu negocio (opcional). |
+| CategoryId | Elige la categoría de tus productos.|
+| Financial Institution | Dejar en blanco. |
+| External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
+| Antifraud | Elegir `Yes / Si`. |
+| Time Zone | Indica la región que define tu horario local. |
+| Mercado Pago 3P payment due date | Disable. |
+| 3P payment due date after MP expiration | Disable. |
+| OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
+| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+<br>
 
-Para operar en modo Agregador solo es necesario configurar una afiliación.
 
-1. Seleccione en el menú lateral la opción "Pago".
-2. Configuraciones.
+> WARNING
+>
+> Importante
+>
+> En el caso del campo “Captura de segurança antecipada” no se encuentra disponible por el momento para Uruguay.
+<br>
 
-    ![VTEX Configuration Page](/images/vtex-config.png)
 
-3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
-4. Añadir nueva afiliación con el botón (+)
+![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
-    ![Affiliation search bar](/images/vtex-afiliation.png)
 
-5. Buscar y seleccionar "MercadoPagoV1".
+**¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
 
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
 
+## Configura las condiciones de pago
+Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) o 
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
 
-6. Completar la información requerida en la afiliación.
 
-    ![Complete affliation information](/images/vtex-afiliation-4.png)
+### Condición de pagos para el Checkout de VTEX
+Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: No se utiliza - dejar en blanco.
-- Processing Mode: Seleccionar aggregator.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: Yes.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: No se utiliza - dejar en blanco.
+1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
+2. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
+3. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
-## Configurar plan de pago Nativo en modo agregador
 
-Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
+#### Condición de pagos para tarjeta de crédito
+Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. Luego, en la sección de Tarjetas de crédito, elige el medio de pago que quieras agregar. Se deben agregar Visa, MasterCard y Diners. 
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
+7. Haz clic en Guardar. 
 
-    ![Payment terms bar](/images/vtex-afiliation-2.png)
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
 
-    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
+![Imagen tarjeta](/images/vtex/vtex-hisp-credito.gif)
 
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Seleccionar cuotas `automático`.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Salvar la configuración.
 
-    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
+#### Condición de pagos para medios de pago en efectivo
+Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
 
-12. Verificar que se agregó el plan de nativo.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Factura, elige Boleto bancario para agregar el medio de pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
 
-    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
+En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
 
-## Configurar Plan de Pago Off-Line en modo agregador
+| Tipo de medio de pago | Medio de pago |
+| --- | --- |
+| `ticket` | Abitab |
+| `ticket` | Redpagos |
 
-Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
-- Primero se genera de un ticket con las instrucciones para el pago.
-- Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
 
-## Medios Off-Line por país en modo agregador
+![Imagen efectivo](/images/vtex/vtex-hisp-efectivo.gif)
 
-- Argentina: PagoFacil, Rapipago, RedLink.
-- Chile: Servipag.
-- Colombia: Efecty, Davivienda, Baloto.
-- México: Banamex, Bancomer, Oxxo.
-- Perú: PagoEfectivo.
-- Uruguay: Abitab, Redpagos.
-- Brasil: Boleto Bancario
 
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
+#### Condición de pagos con medios de pagos personalizados
+Los medios de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como una opción nativo y se pueden utilizar con Mercado Pago.
 
-    ![Payment condition bar](/images/vtex-afiliation-2.png)
+Para crear esta condición de pago, sigue estos pasos: 
 
-6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Pagos personalizados, busca la sección Cobrands y haz clic en Configurar.
+3. Se desplegará un formulario donde deberás ingresar Nombre, Descripción, Medio de pago (la marca bandera), Bines (validar en Mercado Pago los mismos) y el Código de Medio de Pago (es el nombre del medio de pago en Mercado Pago). 
+4. Haz clic en Guardar. 
+5. En la pestaña Planes de Pago, haz clic en +. 
+6. En la sección Pago personalizado, elige el medio de pago que habías creado para agregar el medio de pago.
+7. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+8. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+9. Haz clic en Guardar. 
 
-    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
 
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-    ![Adding ticket as payment method](/images/vtex-offline-plan-4.png)
 
-## Configurar plan de pago personalizado
+En VTEX, los medios de pago personalizados que se pueden agregar son:
 
-Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
+| Tipo de medio de pago | Medio de pago | Bandera de la tarjeta | Bines | Código de pago del adquirente |
+| --- | --- | --- | --- | --- |
+| `credit_card` | OCA | Mastercard | 589892, 542991, 549530, 549564, 549571, 549576 | oca |
+| `credit_card` | Creditel | Mastercard | 601933 | creditel |
+| `credit_card` | Lider | Mastercard | 501088,501109,505863,505866,505867,505868,505869,505870,505871,505872 | lider |
 
-Medios de pago personalizados por país:
 
-Argentina: Argencard, Cencosud, CMR, Cordial, Cordobesa, Mercado Pago + Banco Patagonia.
-Chile: CMR, Magna, Presto.
-Colombia: Codensa.
-Uruguay: Oca.
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-custom-1.png)
-
-3. Ajustes.
-4. Pagos personalizados.
-5. Seleccionar una Cobrand para configurar.
-
-    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
-
-6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
-7. Salvar la configuración.
-
-    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
-
-8. Colocar una descripción (puede ser blancos).
-9. Seleccionar la afiliación.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Seleccionar automático.
-12. Salvar la configuración.
-
-![Custom plan](/images/vtex-custom-4.png)
-
-### Configurar Plan de Pago Personalizado en modo agregador
-
-| Nombre | Descripción | Medio de pago |                     Bines {min}-{max},{min}-{max},{bin1},{bin2}                     | Código de pago en adquiriente (opcional) |
-|---|---|--------|:-----:|-----|
-| OCA    | OCA         | Mastercard    | 589892-589892,542991-542991,549530-549530,549564-549564,549571-549571,549576-549576 | oca                                      |
-
-## Configurar afiliación checkout redireccionado
-Para utilizar el checkout redirect es necesario configurar una afiliación específica
-El checkout redirect puede convivir con el checkout transparente.
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![VTEX configuration page - Checkout redirect](/images/vtex-config.png)
-
-4. Afiliaciones
-5. Nueva Afiliación
-
- ![Gateway affiliation bar](/images/vtex-afiliation.png)
-
-6. Buscar y seleccionar "MercadoPago".
-7. Completar la siguiente información requerida en la afiliación.
-- Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Pais -> Seleccionar País
-- Time Zone -> Región que define la hora local
-- orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
-- maxInstallments -> Cantidad máxima de cuotas
-- Categoria Principal -> Categoría del producto
-- Tipo de Estorno
-    - Automatico sempre que possivel - Genera la devolución del pago en MP
-    - Notificaçao por E-mail - NO genera la devolución del pago en MP
-
-## Configurar plan de pago checkout redireccionado
-Luego de configurar la afiliación es necesario agregar el plan de pago
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![Setting payment plan - Checkout redirected](/images/vtex-config.png).
-
-4. Planes de pago
-5. Nuevo plan de pago
-6. Buscar en la grupo OTRO - Mercado Pago
-7. Colocar una descripción (puede ser blancos)
-8. Seleccionar la afiliación creada para redirect
-9. Seleccionar cuotas A vista
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-11. Salvar la configuración
-
-## Configurar afiliación para operar en modo Gateway
-Cuando tu asesor comercial te haya informado que ya están cargados los números de comercio y te haya pasado los `merchant_account_id` de cada número de comercio realizar los siguientes pasos para cada una de las tarjetas que tengas número de comercio:
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![VTEX Configuration Page - Gateway](/images/vtex-config.png).
-
-4. Afiliaciones
-5. Nueva Afiliación
-
- ![Affiliation search bar - Gateway](/images/vtex-afiliation.png)
-
-6. Buscar y seleccionar "MercadoPagoV1".
-
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
-
-7. Completar los campos que se describen a continuación:
-- Nombre de la afiliación: Nombre que identificará la afiliación.
-- OAuth login: No se utiliza.
-- PublicKey PublicKey: PublicKey de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken Access: AccessToken de Mercado Pago, [ver credenciales]([FAKER][CREDENTIALS][URL]).
-- RefreshToken RefreshToken: No se utiliza - dejar en blanco.
-- ExpiredTokenIn: No se utiliza - dejar en blanco.
-- Merchant Account Id: Completar con el id que fueron compartidos por su asesor comercial correspondientes a cada tarjeta.
-- Processing Mode: Seleccionar gateway.
-- CountryName: Seleccionar país.
-- SoftDescriptor: No se utiliza - dejar en blanco.
-- Description: Descripción de la operación (puede ser blanco).
-- CategoryId: Categoría del producto - Seleccionar de la lista.
-- Financial Institution: No se utiliza - dejar en blanco.
-- Use External Installments: No.
-- Antifraud: Yes.
-- Time Zone: Región que define la hora local.
-- orderExpirationHours: Durante cuántas horas se consultará el estado del pedido a Mercado Pago.
-- maxInstallments: Cantidad máxima de cuotas.
-- Categoria Principal: Categoría del producto - Seleccionar de la lista.
-- Captura de segurança antecipada: Por defecto inmediato - cambiar si se quiere realizar captura diferida del pago.
-
-## Configurar plan de pago para operar en modo Gateway
-Luego de configurar la afiliación es necesario agregar el plan de pago:
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![Setting payment plan - gateway](/images/vtex-config.png).
-
-4. Planes de pago
-5. Nuevo plan de pago
-
-    ![Payment methods page - gateway](/images/vtex-native-plan-3.png).
-
-6. Seleccionar el medio de pago (crédito o débito) a cargar
-7. Colocar una descripción.
-8. Seleccionar la afiliación creada para este medio de pago
-9. Seleccionar cuotas En cuotas
-10. Cargar las cuotas y el interés correspondiente del medio de pago.
-11. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-12. Salvar la configuración
-
-
-## Configurar DeviceID
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en Portal.
-
-    ![Setting deviceID](/images/vtex-device-settings-1.png)
-
-3. Seleccionar el ícono de ajustes.
-
-    ![Adjustment icon](/images/vtex-device-settings-2.png)
-
-4. Ingresar en código.
-5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
-
-```
-var script = document.createElement("script");
-script.src = "https://www.mercadopago.com/v2/security.js";
-script.setAttribute("output","vtex.deviceFingerprint");
-script.setAttribute("view","checkout");
-document.body.appendChild(script);
-```
-
-7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
-
-    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
-
-
-## Interpretar log de VTEX
-
-Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
-
-También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
-
-Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte a los vendedores y convertirse en una primer instancia de soporte.
-
-Para acceder al log hay que ingresar en la transacción de VTEX
-
-Luego buscar el LOG que contenga el status response y dar click en _ver más_.
-
-Los datos más significativos son los siguientes:
-
-- `"Id":10302316` Numero de transacción de Mercado Pago.
-- `"Payment_method_id":"visa"`: Medio de pago.
-- `"Payment_type_id":"credit_card"`: Medio de pago.
-- `"Status":"authorized"`: Estado del pago.
-- `"Status_detail":"pending_capture"`: Detalle del estado del pago.
-- `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
-- `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
-- `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
-
-Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
-
-- `"Status":"rejected"`: Pago rechazado.
-- `"Status":"approved"`: Pago aprobado.
-- `"Status":"authorized"`: Pago autorizado esperando que se capture.
-- `"Status":"pending"`: Pago pendiente.
-- `"Status":"cancelled"`: Pago cancelado.
-
-Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+![Imagen personalizado](/images/vtex/vtex-hisp-personalizado.gif)
 
 
 ------------
 
-----[mlm]----
 
-# VTEX
+----[mla, mlm, mlc, mco, mpe, mlu]----
 
-## ¿Qué es VTEX?
 
-[VTEX](https://www.vtex.com/es/) es una potente plataforma de e-commerce PCI compliance basada en Brasil con operación en toda latinoamérica que permite procesar pagos a traves de Mercado Pago
+## Condición de pagos con Checkout de Mercado Pago
+**El comprador será redireccionado a Mercado Pago** para realizar el pago y terminar la compra. Incorpora todo los medios de pagos disponibles en el país e incluye la posibilidad de pagar con el dinero en la cuenta de Mercado Pago. 
 
-Para obtener mayor información sobre las posibilidades que VTEX ofrece ingresar a [su sitio de ayuda](https://help.vtex.com/es).
+Para crear esta condición de pago, sigue estos pasos: 
 
-## ¿Cómo puedo operar con Mercado Pago en VTEX?
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Otro, elige como condición de pago Mercado Pago.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
 
-VTEX permite procesar pagos en todos los modos de operación que Mercado Pago ofrece.
 
-#### Modo Agregador
+![Imagen cow](/images/vtex/vtex-hisp-cow.gif)
 
-Recibir pagos utilizando todas las tarjetas y promociones que Mercado Pago ofrece, además de transferencias bancarias y medios de pagos off-line.
 
-#### Modo Gateway
+> Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
 
-Recibir pagos directamente en los códigos de comercio del vendedor utilizando todas las promociones propias del vendedor.
 
-#### Modo All In
+## Configura las cuotas sin interés en tu cuenta de Mercado Pago
+1. Ingresa a tu cuenta de Mercado Pago y ve a Tu negocio.
+2. Accede en la opción Configuraciones, navega hasta Ofrecer cuotas sin interés y haz clic en Activar.
+3. Elige ¿Cuántas quieres ofrecer? y confirma los cambios con el botón Activar.
 
-Combinar la operación de Gateway y Agregador ofreciendo al comprador la mejor opción de pago.
 
-## Configurar afiliación en modo agregador
+![Imagen cuotas](/images/vtex/vtex-hisp-cuotas.gif)
 
-Para operar en modo Agregador solo es necesario configurar una afiliación.
 
-1. Seleccione en el menú lateral la opción "Pago".
-2. Configuraciones.
+¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.
 
-    ![VTEX Configuration Page](/images/vtex-config.png)
 
-3. Seleccionar en el menú superior la opción "Afiliaciones de Gateway"
-4. Añadir nueva afiliación con el botón (+)
+## Comprender los log de VTEX
+**Los logs permiten revisar la información que retorna Mercado Pago** y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción. También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
 
-    ![Affiliation search bar](/images/vtex-afiliation.png)
+Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte y convertirse en una primer instancia de soporte.
 
-5. Buscar y seleccionar "MercadoPagoV1".
-
-    ![Affiliations page in VTEX](/images/vtex-afiliation-3.png)    
-
-
-6. Completar la información requerida en la afiliación.
-
-    ![Complete affliation information](/images/vtex-afiliation-4.png)
-
-
-## Configurar plan de pago Nativo en modo agregador
-
-Plan de pago nativo son las tarjetas de crédito / débito que Vtex tiene integradas
-
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
-
-    ![Payment terms bar](/images/vtex-afiliation-2.png)
-
-6. Buscar y seleccionar el medio de pago que se quiere agregar, para el ejemplo vamos a usar American Express.
-
-    ![Setting payment method in VTEX](/images/vtex-native-plan-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Seleccionar cuotas `automático`.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Salvar la configuración.
-
-    ![VTEX payment method configuration page](/images/vtex-native-plan-4.png)
-
-12. Verificar que se agregó el plan de nativo.
-
-    ![Payment methods saved in VTEX](/images/vtex-native-plan-5.png)
-
-## Configurar Plan de Pago Off-Line en modo agregador
-
-Plan de pago Off-Line son los medios de pago cuyos pagos se realizan en dos pasos:
-- Primero se genera de un ticket con las instrucciones para el pago.
-- Segundo se realiza el pago en efectivo o via un ATM siguiendo las instrucciones del ticket.
-
-## Medios Off-Line por país en modo agregador
-
-- Argentina: PagoFacil, Rapipago, RedLink.
-- Chile: Servipag.
-- Colombia: Efecty, Davivienda, Baloto.
-- México: Banamex, Bancomer, Oxxo.
-- Perú: PagoEfectivo.
-- Uruguay: Abitab, Redpagos.
-- Brasil: Boleto Bancario
-
-1. El menu superior.
-2. Clic en condiciones de pago.
-3. En el lado derecho, haga clic en Agregar nueva condición.
-4. Cerca del campo de búsqueda.
-5. En el botón (+)
-
-    ![Payment condition bar](/images/vtex-afiliation-2.png)
-
-6. Buscar y seleccionar Boleto Bancario - Este plan de pago incluye todos los medios Off-Line del país.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-3.png)
-
-7. Colocar una descripción (puede ser blancos).
-8. Seleccionar la afiliación.
-9. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-10. Salvar la configuración.
-
-    ![Adding ticket as payment method](/images/vtex-offline-plan-4.png)
-
-## Configurar plan de pago personalizado
-
-Plan de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
-
-Medios de pago personalizados por país:
-
-Argentina: Argencard, Cencosud, CMR, Cordial, Cordobesa, Mercado Pago + Banco Patagonia.
-Chile: CMR, Magna, Presto.
-Colombia: Codensa.
-Uruguay: Oca.
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en PCI Gateway.
-
-    ![PCI gateway page](/images/vtex-custom-1.png)
-
-3. Ajustes.
-4. Pagos personalizados.
-5. Seleccionar una Cobrand para configurar.
-
-    ![Custom payments page in VTEX](/images/vtex-custom-2.png)
-
-6. Completar los campos para configurar la Tarjeta de crédito deseada. Se deben copiar y pegar los valores del instructivo para evitar errores.
-7. Salvar la configuración.
-
-    ![Credit Card Data Setup Page](/images/vtex-custom-3.png)
-
-8. Colocar una descripción (puede ser blancos).
-9. Seleccionar la afiliación.
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego.
-11. Seleccionar automático.
-12. Salvar la configuración.
-
-![Custom plan](/images/vtex-custom-4.png)
-
-## Configurar afiliación checkout redireccionado
-Para utilizar el checkout redirect es necesario configurar una afiliación específica
-El checkout redirect puede convivir con el checkout transparente.
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![VTEX configuration page - Checkout redirect](/images/vtex-config.png)
-
-4. Afiliaciones
-5. Nueva Afiliación
-
- ![Gateway affiliation bar](/images/vtex-afiliation.png)
-
-6. Buscar y seleccionar "MercadoPago".
-7. Completar la siguiente información requerida en la afiliación.
-- Nombre de la afiliación -> Nombre que identificara la Afiliación
-- Client_id PublicKey de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Client_secret -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- AccessToken de Mercado Pago -> Ver [Credenciales]([FAKER][CREDENTIALS][URL]).
-- Pais -> Seleccionar País
-- Time Zone -> Región que define la hora local
-- orderExpirationHours -> Durante cuántas horas se consultará el estado del pedido a MP
-- maxInstallments -> Cantidad máxima de cuotas
-- Categoria Principal -> Categoría del producto
-- Tipo de Estorno
-    - Automatico sempre que possivel - Genera la devolución del pago en MP
-    - Notificaçao por E-mail - NO genera la devolución del pago en MP
-
-## Configurar plan de pago checkout redireccionado
-Luego de configurar la afiliación es necesario agregar el plan de pago
-1. Desplegar el menú lateral
-2. Desplegar el menú de Pagos
-3. Ingresar en Configuración
-
-    ![Setting payment plan - Checkout redirected](/images/vtex-config.png).
-
-4. Planes de pago
-5. Nuevo plan de pago
-6. Buscar en la grupo OTRO - Mercado Pago
-7. Colocar una descripción (puede ser blancos)
-8. Seleccionar la afiliación creada para redirect
-9. Seleccionar cuotas A vista
-10. Colocar Status Activo para activar el medio de pago en el checkout - Puede configurarse y activarse luego
-11. Salvar la configuración
-
-## Configurar DeviceID
-
-1. Desplegar el menú de Catalog.
-2. Ingresar en Portal.
-
-    ![Setting deviceID](/images/vtex-device-settings-1.png)
-
-3. Seleccionar el ícono de ajustes.
-
-    ![Adjustment icon](/images/vtex-device-settings-2.png)
-
-4. Ingresar en código.
-5. Seleccionar checkout5-custom.js.
-6. Copiar y pegar el siguiente código:
-
-```
-var script = document.createElement("script");
-script.src = "https://www.mercadopago.com/v2/security.js";
-script.setAttribute("output","vtex.deviceFingerprint");
-script.setAttribute("view","checkout");
-document.body.appendChild(script);
-```
-
-7. Seleccionar "guardar", el resultado final debe verse como la pantalla de ejempo:
-
-    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
-
-
-## Interpretar log de VTEX
-
-Los logs permiten revisar la la información que retorna MercadoPago y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción.
-
-También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
-
-Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte a los vendedores y convertirse en una primer instancia de soporte.
-
-Para acceder al log hay que ingresar en la transacción de VTEX
-
-Luego buscar el LOG que contenga el status response y dar click en _ver más_.
+Ingresa en las transacciones de VTEX y busca el LOG que contenga el *status response* y haz clic en Ver más.
 
 Los datos más significativos son los siguientes:
 
-- `"Id":10302316` Numero de transacción de Mercado Pago.
-- `"Payment_method_id":"visa"`: Medio de pago.
-- `"Payment_type_id":"credit_card"`: Medio de pago.
-- `"Status":"authorized"`: Estado del pago.
-- `"Status_detail":"pending_capture"`: Detalle del estado del pago.
-- `"External_reference":"503451"`: Identificador de VTEX enviado a Mercado Pago.
-- `"First_six_digits":"450995"`: Bin de la tarjeta de crédito.
-- `"Processing_mode":"gateway"`: Modo de procesamiento del pago (Agregador / Gateway).
-- `"Merchant_account_id":"83bb673420b8201f80aff598b3743864"`: Código de comercio (solo para Gateway).
+| Campo | Dato | Descripción |
+| --- | --- | --- |
+| `id` | 10302316 | Número de transacción de Mercado Pago. |
+| `payment_method_id` | visa | Medio de pago. |
+| `payment_type_id` | credit_card | Medio de pago. |
+| `status` | authorized | Estado del pago. |
+| `status_detail` | pending_capture | Detalle del estado de pago.|
+| `external_reference` | 503451 | Identificador de VTEX enviado a Mercado Pago. |
+| `first_six_digits` | 450995 | Bin de la tarjeta. |
+| `processing_mode` | agregador | Modo de procesamiento del pago. |
 
-Ante un rechazo es muy importante revisar el `Status_detail` que especifica el motivo del mismo.
+Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/)
 
-- `"Status":"rejected"`: Pago rechazado.
-- `"Status":"approved"`: Pago aprobado.
-- `"Status":"authorized"`: Pago autorizado esperando que se capture.
-- `"Status":"pending"`: Pago pendiente.
-- `"Status":"cancelled"`: Pago cancelado.
 
-Para ver más detalle de los estados posibles de un pago, ver sección de [posibles respuestas de la API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+## Errores comunes
+Los errores más comunes son los siguientes:
+
+
+| Mensaje | Significado |
+|-------------------|--------------------------------------------|
+| `unauthorized_use_of_live_credentials` | Las credenciales de la cuenta de Mercado Pago no están habilitadas. Tienes que ir a la página de credenciales y completar el formulario de “Quiero ir a producción”. |
+| `invalid installments` | Se está intentando procesar el pago con una cuota que no está habilitada. Se debe ir a la configuración del medio de pago y definir las cuotas como Automáticas.  |
+| `invalid_users` | Se está intentando pagar con el mismo usuario que se está cobrando. Volver a intentar el pago con un mail pagador distinto |
+| `Cannot infer Payment Method` | Se quiere pagar con una tarjeta distinta al tipo de tarjeta seleccionado. Por ejemplo, se ingresó el número de una tarjeta de crédito en la opción de tarjeta de débito. |
+
+> Para más información, visita el [sitio oficial de VTEX](https://help.vtex.com/) y el [sitio de Status de Vtex](https://status.vtex.com/).
 
 ------------
