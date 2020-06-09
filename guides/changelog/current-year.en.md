@@ -92,3 +92,10 @@ We have released a new version of Prestashop 1.6 & 1.7. Our Mercado Pago Checkou
 If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Mercado Pago Checkout.
 
 [Start now measuring the conversion of your ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/).
+
+## June 11th, 2020
+
+### New version for Button and payment link
+
+We have lauched a new version for Button and payment link, totally renewed. We have designed and implemented a new experience when creating payment links to share online by chat, e-mail or social media.
+[Go to Button and payment link documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/intro-button/)
