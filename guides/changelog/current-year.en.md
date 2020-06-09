@@ -16,7 +16,7 @@ Each release note describes the new changes applying to a version. This changes 
 ### New version for Button and payment link
 
 We have lauched a new version for Button and payment link, totally renewed. We have designed and implemented a new experience when creating payment links to share online by chat, e-mail or social media.
-[Go to Button and payment link documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/intro-button/)
+ [Go to Button and payment link documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/intro-button/)
 
 ## May 26th, 2020
 ### New version of Javascript SDK
