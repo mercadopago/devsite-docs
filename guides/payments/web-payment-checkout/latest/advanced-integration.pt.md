@@ -239,7 +239,7 @@ Parâmetro |	Descrição
 `external_reference` | Valor do campo `external_reference` que foi enviado no momento da criação da preferência de pagamento. |
 `payment_type` | Tipo de pagamento. Ex.: `credit_card` para cartões de crédito ou `ticket` para meios de pagamento em dinheiro. |
 `merchant_order_id` | ID da ordem de pagamento gerada no Mercado Pago. |
-`preference_id` | Retorna o ID da preferência de pagamento a partir da qual se está retornando. |
+`preference_id` | ID da preferência de pagamento a partir da qual se está retornando. |
 `site_id` | Retorna o ID do país da conta do Mercado Pago do vendedor. Ex.: MLA para Argentina, MLB para Brasil ou MLM para México. |
 `processing_mode` | Retorna o valor `aggregator`. |
 `merchant_account_id` | Retorna com valor `null`. |
