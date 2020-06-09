@@ -243,7 +243,7 @@ Parámetro |	Descripción
 `payment_type` | Tipo de pago. Por ejemplo: `credit_card` para tarjetas de crédito o `ticket` para medios de pago en efectivo. |
 `merchant_order_id` | ID de la orden de pago generada en Mercado Pago. |
 `preference_id` | ID de la preferencia de pago de la que se está retornando. |
-`site_id` | Retorna el ID del país de la cuenta de Mercado Pago del vendedor. Ej.: MLA para Argentina, MLB para Brasil o MLM para México. |
+`site_id` | ID del país de la cuenta de Mercado Pago del vendedor. Por ejemplo: ----[mla]---- MLA para Argentina.------------ ----[mlb]---- MLB para Brasil.------------ ----[mlm]---- MLM para México.------------ ----[mpe]---- MPE para Perú.------------ ----[mlc]---- MLC para Chile.------------ ----[mco]---- MCO para Colombia.------------ ----[mlu]---- MLU para Uruguay.------------ |
 `processing_mode` | Valor `aggregator`. |
 `merchant_account_id` | Valor `null`. |
 
