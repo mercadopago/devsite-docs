@@ -244,7 +244,7 @@ Parâmetro |	Descrição
 `processing_mode` | Valor `aggregator`. |
 `merchant_account_id` | Valor `null`. |
 
-> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Mercado Pago e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure._**
+> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Mercado Pago e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure_**.
 
 [[[
 ```php
