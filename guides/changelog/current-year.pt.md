@@ -11,6 +11,12 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 - **Atualizações na documentação:** Guias, referências e tutoriais para te ajudar a monetizar seu negócio integrando Mercado Pago.
 
 
+## 11 de junho de 2020
+
+### Nova versão do Botão e link de pagamento
+
+Lançamos uma nova versão do Botão e do link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
+[Ir para a documentação de Botão e Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/intro-button/)
 
 ## 26 de maio de 2020
 ### Nova versão SDK Javascript
@@ -96,10 +102,3 @@ Confira no GitHub o detalhe das [últimas atualizações produtivas](https://git
 Se você possui campanhas publicitárias para seu negócio, é importante acompanhá-las e ver se elas estão lhe ajudando a concretizar vendas. Para poder melhorá-las e sejam cada vez mais eficientes, acrescentamos a possibilidade de associar um pixel do Facebook e uma tag de acompanhamento de conversões do Google Ads aos pagamentos de seu Checkout Mercado Pago.
 
 [Começar a medir a conversão de seus anúncios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/).
-
-## 11 de junho de 2020
-
-### Nova versão do Botão e link de pagamento
-
-Lançamos uma nova versão do Botão e do link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
-[Ir para a documentação de Botão e Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/intro-button/)
