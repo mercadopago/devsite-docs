@@ -236,7 +236,7 @@ Parâmetro |	Descrição
 ------------ 	|	--------
 `collection_id` | ID do pagamento do Mercado Pago. |
 `collection_status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
-`external_reference` | Retorna o valor do campo `external_reference` que foi enviado no momento da criação da preferência de pagamento. |
+`external_reference` | Valor do campo `external_reference` que foi enviado no momento da criação da preferência de pagamento. |
 `payment_type` | Retorna o tipo de pagamento. Ex.: `credit_card` para cartões de crédito ou `ticket` para meios de pagamento em dinheiro. |
 `merchant_order_id` | Retorna o ID da ordem de pagamento gerada no Mercado Pago. |
 `preference_id` | Retorna o ID da preferência de pagamento a partir da qual se está retornando. |
