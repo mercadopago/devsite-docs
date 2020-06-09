@@ -233,7 +233,7 @@ Atributo |	Descripción
   | **_failure._** URL de retorno ante pago cancelado.
 
 
-A través de las `back_url` retornarán los siguientes parámetros:
+A través de las `back_url`, *retornarán los siguientes parámetros*:
 
 Parámetro |	Descripción
 ------------ 	|	--------
