@@ -21,6 +21,7 @@ use:
 - auto_return
 - external_reference
 - expires
+- date_of_expiration
 - expiration_date_from
 - expiration_date_to
 - marketplace
@@ -89,6 +90,11 @@ errors:
         en: expiration_date_to invalid.
         es: expiration_date_to invalid.
         pt: expiration_date_to invalid.
+  - invalid_date:
+      description:
+        en: invalid date of expiration.
+        es: invalid date of expiration.
+        pt: invalid date of expiration.
   - invalid_expiration_date_from:
       description:
         en: expiration_date_from invalid.

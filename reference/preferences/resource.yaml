@@ -418,6 +418,12 @@ properties:
       en: Boolean value that determines if a preference expire.
       es: Preferencia que determina si una preferencia expira.
       pt: Preferência que determina se uma preferência expira.
+- date_of_expiration:
+    type: Date(ISO_8601)
+    description:
+      en: Expiration date of cash payment.
+      es: Fecha de vencimiento del medio de pago en efectivo.
+      pt: Data de expiração de meios de pagamento em dinheiro.
 - expiration_date_from:
     type: Date(ISO_8601)
     description:
