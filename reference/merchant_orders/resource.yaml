@@ -49,7 +49,7 @@ properties:
     - expired:
         en: Canceled order (canceled: true) that does not have approved or pending payments (all rejected or returned).
         es: Orden cancelada (cancelled: true) que no posee pagos aprobados ni pendientes (todos rechazados o devueltos).
-        pt: Pedido cancelado (cancelado: verdadeiro) que não possui pagamentos aprovados ou pendentes (todos rejeitados ou devolvidos).
+        pt: Pedido cancelado (cancelled: true) que não possui pagamentos aprovados ou pendentes (todos rejeitados ou devolvidos).
 - site_id:
     type: String
     description:
