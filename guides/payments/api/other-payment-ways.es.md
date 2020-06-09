@@ -2448,7 +2448,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El período de acreditación del boleto es de 48h hábiles. Por lo tanto, se recomienda establecer la fecha de vencimiento con al menos 3 días para asegurarse de que se abona el pago.
+El período de acreditación del boleto es de 48h hábiles. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarse de que se realice el pago.
 
 > WARNING
 >
