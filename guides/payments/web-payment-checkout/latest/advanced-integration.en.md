@@ -246,7 +246,7 @@ Parameter |	Description
 `processing_mode` | Value `aggregator`. |
 `merchant_account_id` | Returns with a value of `null`. |
 
-> Whether some of the parameters contain information will depend on whether the payer made the payment at the Mercado Pago Checkout and did not drop-off the flow before returning to your site through the `back_url` of **_failure._**.
+> The information of the parameters will depend on the finalization of the payment at the Checkout of Mercado Pago and on the fact that the flow has not been abandoned before returning to your site through the ** back_url` of ** _ failure _ **.
 
 
 [[[
