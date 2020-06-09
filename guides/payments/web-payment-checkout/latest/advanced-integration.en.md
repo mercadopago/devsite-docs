@@ -243,7 +243,7 @@ Parameter |	Description
 `merchant_order_id` | Payment order ID created in Mercado Pago. |
 `preference_id` | Preference ID from which you are returning. |
 `site_id` | Returns the country ID of the seller's Mercado Pago account. For example: ----[mla]---- MLA for Argentina.------------ ----[mlb]---- MLB for Brazil.------------ ----[mlm]---- MLM for Mexico.------------ ----[mpe]---- MPE for Peru.------------ ----[mlc]---- MLC for Chile.------------ ----[mco]---- MCO for Colombia.------------ ----[mlu]---- MLU for Uruguay.------------ |
-`processing_mode` | Returns the value `aggregator`. |
+`processing_mode` | Value `aggregator`. |
 `merchant_account_id` | Returns with a value of `null`. |
 
 > Whether some of the parameters contain information will depend on whether the payer made the payment at the Mercado Pago Checkout and did not drop-off the flow before returning to your site through the `back_url` of **_failure._**.
