@@ -239,7 +239,7 @@ Parameter |	Description
 `collection_id` | Payment ID of Mercado Pago. |
 `collection_status` | Returns the status of the payment. Ex: `approved` for an approved payment or` pending` for a pending payment. |
 `external_reference` | Value of the `external_reference` field that you sent when creating the payment preference. |
-`payment_type` | Returns the type of payment. Ex: `credit_card` for credit cards or` ticket` for cash payment methods. |
+`payment_type` | Payment type. For example: `credit_card` for credit cards or` ticket` for cash payment methods. |
 `merchant_order_id` | Returns the ID of the payment order created in Mercado Pago. |
 `preference_id` | Returns the ID of the preference from which you are returning. |
 `site_id` | Returns the country ID of the seller's Mercado Pago account. Ex: MLA for Argentina, MLB for Brazil or MLM for Mexico. |
