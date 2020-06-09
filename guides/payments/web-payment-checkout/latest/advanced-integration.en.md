@@ -236,7 +236,7 @@ Through the `back_url` *the following parameters will return*:
 
 Parameter |	Description
 ------------ 	|	--------
-`collection_id` | Returns the payment ID of Mercado Pago. |
+`collection_id` | Payment ID of Mercado Pago. |
 `collection_status` | Returns the status of the payment. Ex: `approved` for an approved payment or` pending` for a pending payment. |
 `external_reference` | Returns the value of the `external_reference` field that you sent when creating the payment preference. |
 `payment_type` | Returns the type of payment. Ex: `credit_card` for credit cards or` ticket` for cash payment methods. |
