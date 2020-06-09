@@ -241,7 +241,7 @@ Parâmetro |	Descrição
 `merchant_order_id` | ID da ordem de pagamento gerada no Mercado Pago. |
 `preference_id` | ID da preferência de pagamento a partir da qual se está retornando. |
 `site_id` | ID do país da conta do Mercado Pago do vendedor. Ex.: MLA para Argentina, MLB para Brasil ou MLM para México. |
-`processing_mode` | Retorna o valor `aggregator`. |
+`processing_mode` | Valor `aggregator`. |
 `merchant_account_id` | Retorna com valor `null`. |
 
 > Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Mercado Pago e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure._**
