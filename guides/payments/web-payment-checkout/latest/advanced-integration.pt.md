@@ -238,7 +238,7 @@ Parâmetro |	Descrição
 `collection_status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
 `external_reference` | Valor do campo `external_reference` que foi enviado no momento da criação da preferência de pagamento. |
 `payment_type` | Tipo de pagamento. Ex.: `credit_card` para cartões de crédito ou `ticket` para meios de pagamento em dinheiro. |
-`merchant_order_id` | Retorna o ID da ordem de pagamento gerada no Mercado Pago. |
+`merchant_order_id` | ID da ordem de pagamento gerada no Mercado Pago. |
 `preference_id` | Retorna o ID da preferência de pagamento a partir da qual se está retornando. |
 `site_id` | Retorna o ID do país da conta do Mercado Pago do vendedor. Ex.: MLA para Argentina, MLB para Brasil ou MLM para México. |
 `processing_mode` | Retorna o valor `aggregator`. |
