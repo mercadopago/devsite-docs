@@ -2401,7 +2401,7 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 
 ## Fecha de vencimiento para pagos con boleto
 
-Por defecto, la fecha de expiración los pagos en boleto es de 3 días. Opcionalmente, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+Por defecto, la fecha de vencimiento para los pagos con boleto es de 3 días. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
 
 [[[
 ```php
