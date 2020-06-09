@@ -296,7 +296,7 @@ Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.merca
 >
 > Importante
 >
-> Si el pago se realiza después de la fecha de vencimiento, el monto se reembolsará a la cuenta de Mercado Pago del pagador.
+> Si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
 
 ## Cancelar un pago
 
