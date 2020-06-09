@@ -15,7 +15,7 @@ Cada release note describe los cambios que aplican a una versión. Estos cambios
 
 ### Nueva versión de Botón y link de pago
 
-Lanzamos una nueva versión de Botón y link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, email o redes sociales.
+Lanzamos una nueva versión de Botón y link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, e-mail o redes sociales.
 
 [Ir a documentación de Botón y link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/intro-button/)
 
