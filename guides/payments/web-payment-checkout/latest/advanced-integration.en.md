@@ -232,7 +232,7 @@ Attribute |	Description
  `back_url`| **_pending._** Return URL for pending payment.
   | **_failure._** Return URL for canceled payment.
 
-Through the `back_url` the following parameters will return:
+Through the `back_url` *the following parameters will return*:
 
 Parameter |	Description
 ------------ 	|	--------
