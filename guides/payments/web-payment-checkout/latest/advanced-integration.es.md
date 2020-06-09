@@ -238,7 +238,7 @@ A través de las `back_url`, *retornarán los siguientes parámetros*:
 Parámetro |	Descripción
 ------------ 	|	--------
 `collection_id` | ID del pago de Mercado Pago. |
-`collection_status` | Retorna el estado del pago. Ej.: `approved`para un pago aprobado o `pending` para un pago pendiente. |
+`collection_status` | Estado del pago. Por ejemplo: `approved` para un pago aprobado o `pending` para un pago pendiente. |
 `external_reference` | Retorna el valor del campo `external_reference` que hayas enviado a la hora de crear la preferencia de pago. |
 `payment_type` | Retorna el tipo de pago. Ej.: `credit_card`para tarjetas de crédito o `ticket` para medios de pago en efectivo. |
 `merchant_order_id` | Retorna el ID de la orden de pago generada en Mercado Pago. |
