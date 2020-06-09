@@ -16,7 +16,8 @@ Cada release note descreve as alterações que se aplicam a uma versão. Essas a
 ### Nova versão do Botão e link de pagamento
 
 Lançamos uma nova versão do Botão e do link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
- [Ir para a documentação de Botão e Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/intro-button/)
+
+[Ir para a documentação de Botão e Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/intro-button/)
 
 ## 26 de maio de 2020
 ### Nova versão SDK Javascript
