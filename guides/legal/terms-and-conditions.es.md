@@ -553,7 +553,7 @@ Os termos em maiúscula que não esstejam definidos nestes Termos e Condições 
 ----[mlc]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación 15/06/2020_
+_Última modificación: 15/06/2020_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de Mercado Pago S.A., R.U.T. 76.516.950-K (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
  
