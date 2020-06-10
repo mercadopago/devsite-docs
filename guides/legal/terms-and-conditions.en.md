@@ -146,9 +146,9 @@ Los Desarrolladores no podrán recopilar ni almacenar bajo circunstancia alguna,
 
 ## 7. Actividades restringidas
 
-### 7.1 Los Desarrolladores no podrán acceder (ni facilitar o permitir a terceros el uso o el acceso) a la API, ni utilizarlas de ninguna manera que no esté expresamente permitida en virtud de los Términos y Condiciones. 
+7.1 Los Desarrolladores no podrán acceder (ni facilitar o permitir a terceros el uso o el acceso) a la API, ni utilizarlas de ninguna manera que no esté expresamente permitida en virtud de los Términos y Condiciones. 
 
-### 7.2 Los Desarrolladores no podrán realizar ni permitir a terceros realizar las siguientes actividades:
+7.2 Los Desarrolladores no podrán realizar ni permitir a terceros realizar las siguientes actividades:
 
 A. Comercializar o sublicenciar la API para su uso de y por terceros. Por lo tanto, no podrán crear una Aplicación que funcione sustancialmente de la misma manera que la API y ofrecer su uso para y por terceros.
 
