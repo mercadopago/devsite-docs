@@ -1,7 +1,7 @@
 ----[mla]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación 15/06/2020_
+_Última modificación: 15/06/2020_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona humana y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de MercadoLibre S.R.L., CUIT: 30-70308853-4 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
  
@@ -822,7 +822,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mco]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación 15/06/2020_
+_Última modificación: 15/06/2020_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de Mercado Pago Colombia Ltda., N.I.T.: 900116319-8 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
  
@@ -1091,7 +1091,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mpe]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación 15/06/2020_
+_Última modificación: 15/06/2020_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de Mercado Libre Perú S.R.L. (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
  
@@ -1363,7 +1363,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mlm]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación 15/06/2020_
+_Última modificación: 15/06/2020_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o moral que funge como Desarrollador pueda acceder y/o usar la interfaz de programación de aplicaciones de la unidad de negocio “Mercado Pago” de MercadoLibre, S. de R.L de C.V. (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
  
@@ -1630,7 +1630,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mlu]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación 15/06/2020_
+_Última modificación: 15/06/2020_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de Deremate.com de Uruguay S.R.L., R.U.T: 214111700011 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
  
