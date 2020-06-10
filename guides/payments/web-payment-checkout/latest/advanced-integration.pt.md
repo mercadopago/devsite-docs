@@ -230,7 +230,7 @@ Atributo |	Descrição
 `auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são `approved` e `all`.
  `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento rejeitado.
 
-Através das `back_url` serão retornados os seguintes parâmetros:
+Através das `back_url` *serão retornados os seguintes parâmetros*:
 
 Parâmetro |	Descrição
 ------------ 	|	--------
