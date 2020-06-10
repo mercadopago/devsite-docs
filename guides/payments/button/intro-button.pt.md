@@ -18,7 +18,7 @@ Se você não tem um site, o **link de pagamento** te ajudará a cobrar por meio
  - Ofereça todos os meios de pagamento: crédito, boleto, pagamento na lotérica, PayPal e Cartão de débito virtual Caixa. Até mesmo pagamento parcelado!
  - Gerencie todas as suas vendas pelo painel do Mercado Pago.
  - Defina tarifas e prazos que mais te agradem.
- - Organize seus negócios pela lista de produtos ou serviços. Você pode compartilhá-los quantas vezes quiser.
+ - Organize seus negócios pela lista de produtos ou serviços.
  - Você pode compartilhá-los quantas vezes quiser e deixá-lo ativo por quanto tempo decidir.
 
 ---
