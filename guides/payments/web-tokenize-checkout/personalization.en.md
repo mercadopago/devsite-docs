@@ -159,7 +159,7 @@ Using the attribute `data-max-insallments`, you can limit the maximum amount of 
 data-max-installments = 3
 ```
 
-> In case the maximum amount of installment is `1`, the checkout fees section will be skipped. The minimum value for this attribute is `1`.
+> In case the maximum amount of installment is `1`, the checkout installment section will be skipped. The minimum value for this attribute is `1`.
 
 
 #### Discount
