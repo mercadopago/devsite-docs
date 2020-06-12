@@ -41,7 +41,7 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
 
 1. No painel "Métodos de pagamentos", localize o "Mercado Pago" e clique em "Configurar conta para ativar".
 2. Clique no botão “Conecte uma conta existente". 
-3. Complete os campos "Client ID e Client Secret" que corresponde as credenciais de sua conta "Mercado Pago".
+3. Complete os campos "Client ID e Client Secret" que corresponde as [credenciais]([FAKER][CREDENTIALS][URL]) de sua conta "Mercado Pago".
 4. Clique em "Conectar Minha Conta".
 <p>&nbsp;</p>
     ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
