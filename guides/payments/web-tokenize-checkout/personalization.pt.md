@@ -123,6 +123,7 @@ Os atributos que podem ser adicionados e modificados são os seguintes.
 **Montantes numéricos:**
 
 - Produtos: `data-summary-product`
+- Quantidade máxima de parcelas: `data-max-installments`
 - Desconto: `data-summary-discount`
 - Envio: `data-summary-shipping`
 - Recarga: `data-summary-charge`
@@ -148,6 +149,17 @@ Mediante o atributo `data-summary-product`, você pode especificar o montante no
 ```html
 data-summary-product="654"
 ```
+
+
+#### Quantidade máxima de parcelas
+
+Usando o atributo `data-max-installments`, você pode limitar a quantidade máxima de parcelas que deseja oferecer ao seu pagador. Por exemplo:
+
+```html
+data-max-installemnts= 3
+```
+
+> Caso a quantidade máxima de parcelas seja `1`, a seção de pagamento será ignorada. O valor mínimo para este atributo é `1`.
 
 
 #### Desconto
