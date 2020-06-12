@@ -56,7 +56,7 @@ E pronto! O Mercado Pago já está ativado para receber pagamentos.
 <p>&nbsp;</p>
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
-E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
+E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) que você configurou.
 
 ## Credenciais de sua conta Mercado Pago
 
