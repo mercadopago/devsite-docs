@@ -943,7 +943,6 @@ Además de tarjetas, también existen otras opciones de pago que puedes ofrecer 
 | Tipo de medio de pago | Medio de pago |
 | --- | ---|
 | `ticket` | Efecty |
-| `ticket` | Davivienda |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
 
@@ -1016,24 +1015,6 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
         "min_allowed_amount": 5000,
         "max_allowed_amount": 4000000,
         "accreditation_time": 0,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "davivienda",
-        "name": "Davivienda",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/davivienda.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/davivienda.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 1600,
-        "max_allowed_amount": 150000000,
-        "accreditation_time": 10080,
         "financial_institutions": [],
         "processing_modes": [
             "aggregator"
