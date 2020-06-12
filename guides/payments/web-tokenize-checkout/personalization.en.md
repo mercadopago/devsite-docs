@@ -125,6 +125,7 @@ The attributes that can be added and modified are the following.
 **Numerical amounts:**
 
 - Products: `data-summary-product`
+- Maximum amount of installments: `data-max-installments`
 - Discount: `data-summary-discount`
 - Shipping: `data-summary-shipping`
 - Surcharges: `data-summary-charge`
@@ -149,6 +150,16 @@ Using the attribute `data-summary-product`, you can specify the amount in the de
 ```html
 data-summary-product="654"
 ```
+
+#### Maximum amount of installments
+
+Using the attribute `data-max-insallments`, you can limit the maximum amount of installments you want to offer your payer. For example:
+
+```html
+data-max-installments = 3
+```
+
+> In case the maximum amount of installment is `1`, the checkout fees section will be skipped. The minimum value for this attribute is `1`.
 
 
 #### Discount
