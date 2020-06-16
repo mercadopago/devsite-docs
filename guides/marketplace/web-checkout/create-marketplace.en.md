@@ -43,13 +43,17 @@ This `AUTHORIZATION_CODE` will be used to create the credentials and is valid fo
 
 > WARNING
 >
-> Advice:
+> Advice
 >
-> You can include a parameter in the `redirect_uri` to identify the seller corresponding to the authorization code you received, such as your email address, the user ID in your system or any other useful reference.
->Example:
->-Redirect_uri set in the application: https://www.mercadopago.com/mp.php
->-Redirect uri to use in the Oauth link: https://www.mercadopago.com/mp.php?user_id=001
->-Redirect_uri for the authorization with the security code from the Oauth process: https://www.mercadopago.com/mp.php?user_id=001
+> You can include the parameter `state` in the authorization URL to identify the seller corresponding to the authorization code you received, such as the _e-mail_, the user _ID_ in your system or any other useful reference. Do not send confidential information or credentials of the Mercado Pago account.
+>
+>Example: Let's imagine that you want to send the user _ID_ of your system and it has the value _12345_.
+>
+>Application authorization URL: `https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.url_de_retorno.com`
+>
+>Application authorization URL with `state` parameter: `https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=user_id=12345&redirect_uri=http://www.url_de_retorno.com`
+>
+>Redirect_uri to associate the seller with the security code from the Oauth process: `http://www.url_de_retorno.com?state=user_id=12345`
 
 
 ### Create your user’s credentials
