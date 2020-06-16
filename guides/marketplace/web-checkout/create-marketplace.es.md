@@ -47,12 +47,15 @@ Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene u
 >
 > Consejo
 >
-> Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su _e-mail_, el _ID_ de usuario en tu sistema o cualquier otra referencia útil.
->Ejemplo Práctico:
->-Redirect_uri seteado en la aplicación: https://www.mercadopago.com/mp.php
->-Redirect uri para pasar en el link de Oauth: https://www.mercadopago.com/mp.php?user_id=001
->-Redirect_uri a la hora de asociar al vendedor habiendo obtenido el código de seguridad con el Oauth: https://www.mercadopago.com/mp.php?user_id=001
-
+> Puedes incluir el parámetro `state` en la URL de autorización para identificar a qué vendedor corresponde el código de autorización que recibiste, como su _e-mail_, el _ID_ de usuario en tu sistema o cualquier otra referencia útil. No envíes información confidencial o credenciales de la cuenta de Mercado Pago.
+>
+>Ejemplo Práctico: Imaginemos que deseas enviar el _ID_ de usuario de tu sistema y que el mismo tiene el valor _12345_.
+>
+>URL de autorización de la aplicación: `https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.url_de_retorno.com`
+>
+>URL de autorización de la aplicación con el parámetro `state`: `https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=user_id=12345&redirect_uri=http://www.url_de_retorno.com`
+>
+>Redirect_uri a la hora de asociar al vendedor habiendo obtenido el código de seguridad con el Oauth: `http://www.url_de_retorno.com?state=user_id=12345`
 
 
 ### Crea las credenciales de tus vendedores
