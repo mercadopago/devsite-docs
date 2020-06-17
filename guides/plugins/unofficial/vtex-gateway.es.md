@@ -139,7 +139,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 <br>
 
 
-![Imagen Medio de Pago](/images/vtex/vtex-hisp-credito-gtw)
+![Imagen Medio de Pago](/images/vtex/vtex-hisp-credito-gtw.gif)
 
 
 <br>
