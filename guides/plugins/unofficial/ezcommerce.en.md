@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # EZ Commerce
 
 ## What is EZ Commerce?
