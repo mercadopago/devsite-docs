@@ -20,6 +20,7 @@ Para configurar pagos en efectivo y también elegir la opción de recibir pagos 
 
 
 ## Etapas para configurar
+
 Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
 1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
@@ -36,6 +37,7 @@ Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
 
 ## Configurar la afiliación de pasarela con Mercado Pago
+
 Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
 1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
@@ -63,10 +65,10 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | CategoryId | Elige la categoría de tus productos.|
 | Financial Institution | Dejar en blanco. |
 | External Installments | Elegir `No`. |
-| Antifraud | Elegir `Yes / Si`. |
+| Antifraud | Elegir `Yes / Sí`. |
 | Time Zone | Indica la región que define tu horario local. |
 | Vencimiento de pagos 3P en Mercado Pago | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
-| Vencimiento de pagos 3P después del vencimiento en MP  | Elegir `12 horas`. Tiempo para el vencimiento del pago en VTEX después del vencimiento del pago 3P en Mercado Pago. Si no se completa, se utilizará el tiempo estándar de 7 días después de la creación del pedido.|
+| Vencimiento de pagos 3P después del vencimiento en MP | Elegir `12 horas`. Tiempo para el vencimiento del pago en VTEX después del vencimiento del pago 3P en Mercado Pago. Si no se completa, se utilizará el tiempo estándar de 7 días después de la creación del pedido.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Refund Method | Elegir Online. Si selecciona Reembolso Online, ejecutaremos la llamada de la API de reembolso al procesador. Si se selecciona la opción Offline, enviaremos un correo electrónico al administrador para realizar un reembolso manual. Utilice esta opción con cuidado. |
 | Plan Ahora 12 | Activar si se necesita procesar con Ahora12. En caso de seleccionar `activo`, si el comprador opta por este plan enviaremos la cuota 7 a MercadoPago. |
@@ -81,7 +83,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Marketplace fee | Dejar en blanco. |
 | Auto Settle | Dejar por defecto. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo quieres realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 > WARNING
 >
@@ -102,22 +103,24 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 
 
 ## Configura las condiciones de pago
-Luego de tener creada tu afiliación con Mercado Pago, puedes configurar pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) y
-[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito).
+
+Luego de tener creada tu afiliación con Mercado Pago, puedes configurar pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) y [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito).
 
 
 ### Condición de pagos para el Checkout de VTEX
-Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
-1. [Tarjetas de crédito] (#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
+Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado:
+
+1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
 2. [Tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
 3. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
 
 #### Condición de pagos para tarjeta de crédito
+
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
-1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+1. En el panel de administración, ingresa en Configuraciones de medios de pago.
 2. En la pestaña Condiciones de pago, haz clic en +. 
 3. Luego, en la sección de Tarjetas de crédito, elige el medio de pago que quieras agregar. Se deben agregar Visa, MasterCard, American Express, Diners, Nativa, Naranja, Cabal y Shopping.
 4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
@@ -130,7 +133,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 >
 > Importante
 >
-> > Las configuración de las cuotas e intereses se debe realizar en VTEX. Es importante que en Mercado Pago esté creado el medio de pago para ser procesado como modelo gateway con todas las cuotas prendidas y con los intereses en 0. <br>
+> Las configuración de las cuotas e intereses se debe realizar en VTEX. Es importante que en Mercado Pago esté creado el medio de pago para ser procesado como modelo gateway con todas las cuotas prendidas y con los intereses en 0. <br>
 > 
 > En caso de estar configurando un medio de pago asociado a una afiliación para procesar un *Plan Ahora* o *Plan Z*, recuerda configurar la cuota correspondiente a dicho plan. 
 <br>
@@ -142,6 +145,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 <br>
 
 #### Condición de pagos para tarjeta de débito
+
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
@@ -157,10 +161,12 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 >
 > Importante
 >
-> Es importante que en Mercado Pago esté creado el medio de pago para ser procesado como modelo gateway.<br>
+> Es importante que en Mercado Pago esté creado el medio de pago para ser procesado como modelo gateway.
+<br>
 
 
 #### Condición de pagos con medios de pagos personalizados
+
 Los medios de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como un medio de pago nativo y se pueden utilizar con Mercado Pago.
 
 
@@ -180,7 +186,7 @@ Para crear esta condición de pago, sigue estos pasos:
 
 En VTEX, los medios de pago personalizados que se pueden agregar son:
 
-| Tipo de medio de pago | Medio de pago | Bandera de la tarjeta | Código de pago del adquirente | Bines |
+| Tipo | Medio de pago | Bandera de la tarjeta | Código de pago del adquirente | Bines |
 | --- | --- | --- | --- | --- |
 | `credit_card` | Argencard | Mastercard | argencard | 501105-501105 |
 | `credit_card` | Tarjeta Cencosud | Mastercard | cencosud | 603493-603493 |
@@ -202,22 +208,25 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 
 <br>
-> Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
+> Los cambios en las condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
 
 ------------
 
 ----[mco]----
 
 # VTEX
+
 ## ¿Qué es VTEX?
+
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
 Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) o [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria).
 
-Para configurar pagos en efectivo y también elegir la opción de recibir pagos directamente en el Checkout de Mercado Pago te recomendamos que vayas a la siguiente [documentación](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex/#bookmark_configurar_afiliacion_en_modo_agregador).
+> Para configurar pagos en efectivo y también elegir la opción de recibir pagos directamente en el Checkout de Mercado Pago te recomendamos que vayas a la siguiente [documentación](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex/#bookmark_configurar_afiliacion_en_modo_agregador).
 
 
 ## Etapas para configurar
+
 Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
 1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
@@ -234,14 +243,15 @@ Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
 
 ## Configurar la afiliación de pasarela con Mercado Pago
+
 Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
-1. Accede a las configuraciones del módulo en el panel de administración de tu tienda. 
-2. En la pestaña de Afiliación de Gateway, haz clic en el botón +. 
+1. Accede a las configuraciones del módulo en el panel de administración de tu tienda.
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón +.
 3. Ingresa en el conector MercadoPagoV1.
-4. Completa los campos correspondientes y guarda los cambios. 
+4. Completa los campos correspondientes y guarda los cambios.
 
-> Para poder avanzar con la configuración, ten a mano las `merchant-account-id` brindadas por Mercado Pago. Debes crear una afiliación por cada `merchant-account-id` que tengas. 
+> Para poder avanzar con la configuración, ten a mano las `merchant-account-id` brindadas por Mercado Pago. Debes crear una afiliación por cada `merchant-account-id` que tengas.
 
 <br>
 
@@ -261,7 +271,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | CategoryId | Elige la categoría de tus productos.|
 | Financial Institution | Dejar en blanco. |
 | External Installments | No. |
-| Antifraud | Yes. |
+| Antifraud | Elegir `Yes`. |
 | Time Zone | Indica la región que define tu horario local. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
@@ -291,10 +301,12 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 
 
 ## Configura las condiciones de pago
+
 Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) y [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria).
 
 
 ### Condición de pagos para el Checkout de VTEX
+
 Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
 1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
@@ -302,6 +314,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 #### Condición de pagos para tarjeta de crédito
+
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
@@ -326,6 +339,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 <br>
 
 #### Condición de pagos para medios de pago por transferencia bancaria
+
 Para crear una condición de pago con PSE, sigue estos pasos: 
 
 1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
@@ -345,25 +359,26 @@ Para crear una condición de pago con PSE, sigue estos pasos:
 <br>
 
 
-![Imagen transferencia](/images/vtex/vtex-hisp-pse.gif)
+![Imagen transferencia](/images/vtex/vtex-hispanos-pse.gif)
 
 
 <br>
-> Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
+> Los cambios en las condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
 
 ------------
 
 ----[mla, mco]----
 
 ## Obtén una mejor aprobación enviando el device fingerprint
-Mercado Pago tiene sus propias herramientas de prevención de fraude. **Te recomendamos que envíes información sobre el comportamiento de tus clientes para detectar movimientos inusuales y evitar transacciones fraudulentas. **Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
 
-Para configurar el device fingerprint, sigue estos pasos: 
+Mercado Pago tiene sus propias herramientas de prevención de fraude. **Te recomendamos que envíes información sobre el comportamiento de tus clientes para detectar movimientos inusuales y evitar transacciones fraudulentas**. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
+
+Para configurar el device fingerprint, sigue estos pasos:
 
 1. En el panel de administración, accede a tu Checkout desde el módulo en Configuraciones de la tienda.
-2. En la configuración de tu sitio, haz clic en Editar. 
+2. En la configuración de tu sitio, haz clic en Editar.
 3. En la pestaña Código, ingresa a “checkout5-custom.js” o a “checkout6-custom.js” (dependiendo de la versión de Checkout de VTEX que estés usando) desde el módulo de archivos.
-4. Copia y pega el siguiente código y guarda los cambios. 
+4. Copia y pega el siguiente código y guarda los cambios.
 
 
 ```javascript
@@ -376,6 +391,7 @@ document.body.appendChild(script);
 <br>
 
 ## Comprender los log de VTEX
+
 **Los logs permiten revisar la información que retorna Mercado Pago** y VTEX expone para poder tener un mayor entendimiento de lo que ocurrió con una transacción. También en caso de realizar modificaciones o prender nuevos medios de pago, los logs nos dan la posibilidad de poder validar que todo está funcionando según lo previsto.
 
 Por último, proveen un mayor entendimiento a los equipos comerciales para que puedan dar un mejor soporte y convertirse en una primer instancia de soporte.
@@ -395,18 +411,16 @@ Los datos más significativos son los siguientes:
 | `first_six_digits` | 450995 | Bin de la tarjeta. |
 | `processing_mode` | agregador | Modo de procesamiento del pago. |
 
-> Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/)
-
-<br>
+> Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/).
 
 ## Errores comunes
-Los errores más comunes son los siguientes:
 
+Los errores más comunes son los siguientes:
 
 | Mensaje | Significado |
 |-------------------|--------------------------------------------|
 | `unauthorized_use_of_live_credentials` | Las credenciales de la cuenta de Mercado Pago no están habilitadas. Tienes que ir a la página de credenciales y completar el formulario de “Quiero ir a producción”. |
-| `invalid installments` | Se está intentando procesar el pago con una cuota que no está habilitada. Se debe ir a la configuración del medio de pago y definir las cuotas como Automáticas.  |
+| `invalid installments` | Se está intentando procesar el pago con una cuota que no está habilitada. Se debe ir a la configuración del medio de pago y definir las cuotas como Automáticas. |
 | `invalid_users` | Se está intentando pagar con el mismo usuario que se está cobrando. Volver a intentar el pago con un mail pagador distinto |
 | `Cannot infer Payment Method` | Se quiere pagar con una tarjeta distinta al tipo de tarjeta seleccionado o no esta creado el medio de pago para el modo de procesamiento *gateway* en Mercado Pago. Por ejemplo, se ingresó el número de una tarjeta de crédito en la opción de tarjeta de débito. |
 
