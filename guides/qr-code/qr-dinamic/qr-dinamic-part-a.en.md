@@ -1,13 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
-  indexable: false  
+indexable: false  
 ---
 
 <!-- -->

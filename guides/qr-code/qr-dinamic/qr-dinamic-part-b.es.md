@@ -59,7 +59,7 @@ ID | Sub ID | Largo | Valor fijo | Valor ejemplo
 | - | 05 | 10 | - | ticket-123
 | - | 07 | 07 | - | CAJA001
 | - | 08 | 06 | - | Bebida
-63 | - | 04 | - | ----[mlb]---- 9D3B ------------ ----[mla]---- 392E ------------ ----[mlc]---- B680 ------------ ----[mlu]---- 9512 ------------ ----[mco]---- 2735 ------------ ----[mpe]---- 91B1 ------------ ----[mlm]---- C8D9 ------------ 
+63 | - | 04 | - | ----[mlb]---- 9D3B ------------ ----[mla]---- 5259 ------------ ----[mlc]---- B680 ------------ ----[mlu]---- 9512 ------------ ----[mco]---- 2735 ------------ ----[mpe]---- 91B1 ------------ ----[mlm]---- C8D9 ------------ 
 
 
 > NOTE
@@ -85,7 +85,7 @@ Unir según cada fila de la siguiente manera: `ID + Sub ID + Largo + Valor`
 
 Como por ejemplo, el resultado de los valores de tabla: 
 
-----[mlb]---- `00020101021243380016com.mercadolibre02011030958224599352045812530398654045.005802BR5909TuNegocio6009Sao Paulo62350510ticket-1230707CAJA0010806Bebida63049D3B` ------------ ----[mla]---- `00020101021243380016com.mercadolibre02011030944656669152045206530303254035.05802AR5909TuNegocio6012Buenos Aires62350510ticket-1230707CAJA0010806Bebida6304392E` ------------ ----[mlc]---- `00020101021243380016com.mercadolibre02011030958211500752045812530315254045.005802CL5909TuNegocio6008Santiago62350510ticket-1230707CAJA0010806Bebida6304B680` ------------ ----[mlu]---- `00020101021243380016com.mercadolibre02011030951925317952045812530385854045.005802UY5909TuNegocio6010Montevideo62350510ticket-1230707CAJA0010806Bebida63049512` ------------ ----[mco]---- `00020101021243380016com.mercadolibre02011030958224913752045812530317054045.005802CO5909TuNegocio6006Bogotá62350510ticket-1230707CAJA0010806Bebida63042735` ------------ ----[mpe]---- `00020101021243380016com.mercadolibre02011030958225213352045812530360454045.005802PE5909TuNegocio6004Lima62350510ticket-1230707CAJA0010806Bebida630491B1` ------------ ----[mlm]---- `00020101021243380016com.mercadolibre02011030958225636052045812530348454045.005802MX5909TuNegocio6011Guadalajara62350510ticket-1230707CAJA0010806Bebida6304C8D9` ------------ 
+----[mlb]---- `00020101021243380016com.mercadolibre02011030958224599352045812530398654045.005802BR5909TuNegocio6009Sao Paulo62350510ticket-1230707CAJA0010806Bebida63049D3B` ------------ ----[mla]---- `00020101021243380016com.mercadolibre02011030944656669152045206530303254035.05802AR5909TuNegocio6012Buenos Aires62350510ticket-1230707CAJA0010806Bebida63045259` ------------ ----[mlc]---- `00020101021243380016com.mercadolibre02011030958211500752045812530315254045.005802CL5909TuNegocio6008Santiago62350510ticket-1230707CAJA0010806Bebida6304B680` ------------ ----[mlu]---- `00020101021243380016com.mercadolibre02011030951925317952045812530385854045.005802UY5909TuNegocio6010Montevideo62350510ticket-1230707CAJA0010806Bebida63049512` ------------ ----[mco]---- `00020101021243380016com.mercadolibre02011030958224913752045812530317054045.005802CO5909TuNegocio6006Bogotá62350510ticket-1230707CAJA0010806Bebida63042735` ------------ ----[mpe]---- `00020101021243380016com.mercadolibre02011030958225213352045812530360454045.005802PE5909TuNegocio6004Lima62350510ticket-1230707CAJA0010806Bebida630491B1` ------------ ----[mlm]---- `00020101021243380016com.mercadolibre02011030958225636052045812530348454045.005802MX5909TuNegocio6011Guadalajara62350510ticket-1230707CAJA0010806Bebida6304C8D9` ------------ 
 
 Con los datos obtenidos, ¡ya puedes generar tu QR! 
 
