@@ -1,3 +1,7 @@
+---
+indexable: false  
+---
+
 # Cómo integrar QR dinámico
 
 ## Valores para el QR
@@ -6,27 +10,27 @@ El QR debe contener una serie de datos ordenados y avalados por el standard EMVC
 La siguiente tabla muestra todos los datos que contiene:
 
 
-ID | Significado en Mercado Pago | Tamaño | Presencia - Restricción
+ID | Significado en Mercado Pago | Tamaño | Presencia/Restricción
 ----------------- | ----------------- | ----------- | ---------
 ID 00: Payload Format Indicator | Versión del template del Código QR. | 02 | Obligatorio 
 ID 01: Point of Initiation Method | Identifica si la información del QR es dinámica o estática. | 02 | Obligatorio 
 ID 43.00 Merchant Account Information | Identificador de Mercado Libre.| 16 | Obligatorio 
-ID 43.02 | Versión del template de Mercado Pago. | hasta 2 | Obligatorio 
-ID 43.03 | Collector ID. | hasta 10 | Obligatorio 
-ID 43.04 | Sponsor ID. | hasta 10 | Opcional 
+ID 43.02 | Versión del template de Mercado Pago. | Hasta 2 | Obligatorio 
+ID 43.03 | Collector ID. | Hasta 10 | Obligatorio 
+ID 43.04 | Sponsor ID. | Hasta 10 | Opcional 
 ID 52: Merchant Category Code | Código para clasificar el negocio. | 04 | Obligatorio 
-ID 53: Transaction Currency | Moneda numérica correspondiente al monto total. ----[mlb]---- Brasil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Perú: 604 ------------ ----[mlm]---- México: 484 ------------ .  | 03 | Obligatorio 
-ID 54: Transaction Amount | Precio total de la compra. Ej: 10.00 | hasta 13 | Obligatorio 
-ID 58: Country Code | País del vendedor. ----[mlb]---- Brasil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Perú: `PE` ------------ ----[mlm]---- México: `MX` ------------ . | 02 | Obligatorio 
-ID 59: Merchant Name | Nombre de tu negocio | hasta 25 | Obligatorio 
-ID 60: Merchant City | Ciudad del vendedor.  | hasta 15 | Obligatorio 
-ID 62.05: Reference Label | ID definido por el integrador para asociar la transacción a un pago de Mercado Pago.  | hasta 25 | Obligatorio 
-ID 62.07: Terminal Label | *External_id* de la caja.  | hasta 10 | Opcional 
-ID 62.08: Purpose of Transaction | Título descriptivo que hace referencia al propósito de la compra.  | hasta 25 | Opcional 
+ID 53: Transaction Currency | Moneda numérica correspondiente al monto total. ----[mlb]---- Brasil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Perú: 604 ------------ ----[mlm]---- México: 484 ------------.  | 03 | Obligatorio 
+ID 54: Transaction Amount | Precio total de la compra. Ej: 10.00 | Hasta 13 | Obligatorio 
+ID 58: Country Code | País del vendedor. ----[mlb]---- Brasil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Perú: `PE` ------------ ----[mlm]---- México: `MX` ------------. | 02 | Obligatorio 
+ID 59: Merchant Name | Nombre de tu negocio. | Hasta 25 | Obligatorio 
+ID 60: Merchant City | Ciudad del vendedor.  | Hasta 15 | Obligatorio 
+ID 62.05: Reference Label | ID definido por el integrador para asociar la transacción a un pago de Mercado Pago.  | Hasta 25 | Obligatorio 
+ID 62.07: Terminal Label | *External_id* de la caja.  | Hasta 10 | Opcional 
+ID 62.08: Purpose of Transaction | Título descriptivo que hace referencia al propósito de la compra.  | Hasta 25 | Opcional 
 ID 63: CRC |  Checksum - Validación del contenido.  | 04 | Obligatorio 
 
 
->Para más información sobre los datos que tienes que completar sobre tu cuenta, [consulta el glosario](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/#bookmark_glosario).
+>Para más información sobre los datos que tienes que completar sobre tu cuenta, [consulta el glosario](hhttps://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/general-considerations/pre-requisites/#bookmark_glosario).
 
 
 
@@ -81,14 +85,14 @@ Unir según cada fila de la siguiente manera: `ID + Sub ID + Largo + Valor`
 
 Como por ejemplo, el resultado de los valores de tabla: 
 
-----[mlb]---- `00020101021243380016com.mercadolibre02011030958224599352045812530398654045.005802BR5909TuNegocio6009Sao Paulo62350510ticket-1230707CAJA0010806Bebida63049D3B` ------------ ----[mla]---- `00020101021243380016com.mercadolibre02011030944656669152045206530303254035.05802AR5909TuNegocio6012Buenos Aires62350510ticket-1230707CAJA0010806Camisa6304392E` ------------ ----[mlc]---- `00020101021243380016com.mercadolibre02011030958211500752045812530315254045.005802CL5909TuNegocio6008Santiago62350510ticket-1230707CAJA0010806Bebida6304B680` ------------ ----[mlu]---- `00020101021243380016com.mercadolibre02011030951925317952045812530385854045.005802UY5909TuNegocio6010Montevideo62350510ticket-1230707CAJA0010806Bebida63049512` ------------ ----[mco]---- `00020101021243380016com.mercadolibre02011030958224913752045812530317054045.005802CO5909TuNegocio6006Bogotá62350510ticket-1230707CAJA0010806Bebida63042735` ------------ ----[mpe]---- `00020101021243380016com.mercadolibre02011030958225213352045812530360454045.005802PE5909TuNegocio6004Lima62350510ticket-1230707CAJA0010806Bebida630491B1` ------------ ----[mlm]---- `00020101021243380016com.mercadolibre02011030958225636052045812530348454045.005802MX5909TuNegocio6011Guadalajara62350510ticket-1230707CAJA0010806Bebida6304C8D9` ------------ 
+----[mlb]---- `00020101021243380016com.mercadolibre02011030958224599352045812530398654045.005802BR5909TuNegocio6009Sao Paulo62350510ticket-1230707CAJA0010806Bebida63049D3B` ------------ ----[mla]---- `00020101021243380016com.mercadolibre02011030944656669152045206530303254035.05802AR5909TuNegocio6012Buenos Aires62350510ticket-1230707CAJA0010806Bebida6304392E` ------------ ----[mlc]---- `00020101021243380016com.mercadolibre02011030958211500752045812530315254045.005802CL5909TuNegocio6008Santiago62350510ticket-1230707CAJA0010806Bebida6304B680` ------------ ----[mlu]---- `00020101021243380016com.mercadolibre02011030951925317952045812530385854045.005802UY5909TuNegocio6010Montevideo62350510ticket-1230707CAJA0010806Bebida63049512` ------------ ----[mco]---- `00020101021243380016com.mercadolibre02011030958224913752045812530317054045.005802CO5909TuNegocio6006Bogotá62350510ticket-1230707CAJA0010806Bebida63042735` ------------ ----[mpe]---- `00020101021243380016com.mercadolibre02011030958225213352045812530360454045.005802PE5909TuNegocio6004Lima62350510ticket-1230707CAJA0010806Bebida630491B1` ------------ ----[mlm]---- `00020101021243380016com.mercadolibre02011030958225636052045812530348454045.005802MX5909TuNegocio6011Guadalajara62350510ticket-1230707CAJA0010806Bebida6304C8D9` ------------ 
 
 Con los datos obtenidos, ¡ya puedes generar tu QR! 
 
 
 ## Pruebas
 
-Para validar el QR, solo necesitas [crear un usuario de prueba](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/) para diseñar el QR y otro para escanear y pagar desde la App de Mercado Pago o Mercado Libre.
+Para validar el QR, solo necesitas [crear un usuario de prueba](hhttps://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/integration-test/) para diseñar el QR y otro para escanear y pagar desde la App de Mercado Pago o Mercado Libre.
 
 > NOTE
 >
@@ -98,9 +102,9 @@ Para validar el QR, solo necesitas [crear un usuario de prueba](https://www.merc
 
 ## Notificaciones
 
-Para obtener los datos del pago, es necesario configurar la URL de notificación en el [panel de Mercado Pago](https://www.mercadopago.com.ar/ipn-notifications). 
+Para obtener los datos del pago, es necesario configurar la URL de notificación en el [panel de Mercado Pago](hhttps://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications). 
 
-Al tener la URL configurada, ya se pueden validar las órdenes como lo indica la [sección de Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/).
+Al tener la URL configurada, ya se pueden validar las órdenes como lo indica la [sección de Notificaciones](hhttps://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/).
 
 
 ## Comenzar a recibir pagos
@@ -110,7 +114,7 @@ Para recibir pagos, solo tienes que asegurarte de tener todos tus datos producti
 Luego, muestra el QR a tu cliente del modo que prefieras para que lo pueda pagar ¡y listo!
 
 
-
+---
 ### Próximos pasos
 
 
@@ -120,5 +124,5 @@ Luego, muestra el QR a tu cliente del modo que prefieras para que lo pueda pagar
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integrar modelo QR dinamico](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/)
+> [Integrar modelo QR dinamico](hhttps://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/advanced-integration/)
 

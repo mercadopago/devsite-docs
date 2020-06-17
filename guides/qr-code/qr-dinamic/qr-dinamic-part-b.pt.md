@@ -7,6 +7,7 @@ sites_supported:
   - mlm
   - mlc
   - mlb
+  indexable: false  
 ---
 
 <!-- -->
@@ -16,4 +17,4 @@ sites_supported:
 >
 > Desculpe! No momento, esta página não está disponível em português.
 <br>
-[Ver documentação em espanhol](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)
+[Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)

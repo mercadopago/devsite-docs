@@ -1,8 +1,12 @@
+---
+indexable: false  
+---
+
 # Pagos QR modelo dinámico
 	
 ## ¿Qué es QR dinámico?
 
-El QR dinámico permite que el monto a cobrar ya se encuentre incluido en el QR. Es decir que cada QR representa una orden y un monto único. 
+El QR dinámico permite que el monto a cobrar ya se encuentre incluido en el QR. Es decir, cada QR representa una orden y un monto único. 
 
 Se recomienda usar para un **modelo de servicio a mesa**, para pagos con el monto incluido, entre otros.
 
@@ -21,6 +25,7 @@ Las características principales son:
 2. Luego, genera un QR con el contenido previamente creado.
 3. Por último, muestra el QR a tu cliente del modo que prefieras para que lo pueda pagar.
 
+---
 ### Próximos pasos
 
 
@@ -30,6 +35,4 @@ Las características principales son:
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Cómo integrar QR dinámico](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)
-
-
+> [Cómo integrar QR dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)
