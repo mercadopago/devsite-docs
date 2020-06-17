@@ -1047,7 +1047,7 @@ Para crear esta condición de pago, sigue estos pasos:
 6. Haz clic en Guardar. 
 
 
-![Imagen cow](images/vtex/vtex-hispanos-efectivo.gif)
+![Imagen cow](images/vtex/vtex-hispanos-cow.gif)
 
 
 > Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
@@ -1063,7 +1063,7 @@ Para crear esta condición de pago, sigue estos pasos:
 ![Imagen cuotas](/images/vtex/vtex-hisp-cuotas.gif)
 
 
-¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.
+**¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.**
 
 
 ## Comprender los log de VTEX
