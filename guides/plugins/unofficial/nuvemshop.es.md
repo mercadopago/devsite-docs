@@ -1,3 +1,12 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlc
+      - mco
+      - mlm
+---
+
 # Tiendanube
 ## ¿Qué es Tiendanube?
 
