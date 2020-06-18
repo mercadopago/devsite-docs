@@ -49,8 +49,8 @@ curl -X POST \
 				"street_name":"Av das Nacoes Unidas",
 				"street_number":3003,
 				"zip_code":"06233200",
-				"city_name": "Capital Federal",
-				"state_name": "Buenos Aires"
+				"city_name": "Buzios",
+				"state_name": "Rio de Janeiro"
 			}
 		}
   	}
