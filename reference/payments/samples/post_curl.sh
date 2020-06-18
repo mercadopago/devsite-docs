@@ -29,6 +29,10 @@ curl -X POST \
 		"payer":{
 			"first_name":"Nome",
 			"last_name":"Sobrenome",
+			"identification": {
+            			"number": "32659430",
+            			"type": "DNI"
+        		},
 			"address":{
 				"zip_code":"06233-200",
 				"street_name":"Av das Nacoes Unidas",
