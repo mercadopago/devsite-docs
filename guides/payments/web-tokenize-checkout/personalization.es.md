@@ -125,6 +125,7 @@ Los atributos que pueden agregarse y modificarse son los siguientes.
 **Montos numéricos:**
 
 - Productos: `data-summary-product`
+- Cantidad máxima de cuotas: `data-max-installments`
 - Descuento: `data-summary-discount`
 - Envío: `data-summary-shipping`
 - Recargos: `data-summary-charge`
@@ -150,6 +151,18 @@ Mediante el atributo `data-summary-product`, puedes especificar el monto en el d
 ```html
 data-summary-product="654"
 ```
+
+#### Cantidad máxima de cuotas
+
+Usando el atributo `data-max-installments`, puedes limitar la cantidad máxima de cuotas que deseas ofrecer a tu pagador. 
+Por ejemplo:
+
+```html
+data-max-installments = 3
+```
+
+> En caso de enviar el campo con el valor en `1`, se salteará la sección de cuotas del checkout. El valor minimo para este atributo es `1`. 
+
 
 
 #### Descuento
