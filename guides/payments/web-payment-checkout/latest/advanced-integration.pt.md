@@ -164,6 +164,8 @@ Payer payer = new Payer()
   $item = new MercadoPago\Item();
   $item->id = "1234";
   $item->title = "Heavy Duty Plastic Table";
+  $item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
+  $item->category_id = "home";
   $item->quantity = 7;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = 75.56;
@@ -176,6 +178,8 @@ items: [
     {
       id: '1234',
       title: 'Lightweight Paper Table',
+      description: 'Inspired by the classic foldable art of origami',
+      category_id: 'home',
       quantity: 3,
       currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 55.41
@@ -187,6 +191,8 @@ items: [
 Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
+    .setDescription("Inspired by the classic foldable art of origami")
+    .setCategoryId("home")
     .setQuantity(3)
     .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 55.41);
@@ -197,6 +203,8 @@ item.setId("1234")
 item = MercadoPago::Item.new({
   id: "1234",
   title: "Lightweight Paper Table",
+  description: "Inspired by the classic foldable art of origami",
+  category_id: "home",
   quantity: 3,
   currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
@@ -209,6 +217,8 @@ preference.Items.Add(
   {
     Id = "1234",
     Title = "Lightweight Paper Table",
+    Description = "Inspired by the classic foldable art of origami",
+    CategoryId = "home",
     Quantity = 3,
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)55.41
@@ -217,6 +227,9 @@ preference.Items.Add(
 // ...
 ```
 ]]]
+
+> Você pode encontrar a lista de categorias para o seu `item` no seguinte [link](https://api.mercadopago.com/item_categories). Se você não conseguir encontrar a categoria do seu produto, envie o valor `others` como `category_id`.
+
 
 ## URL de retorno
 
