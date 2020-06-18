@@ -7,7 +7,11 @@ curl -X POST \
 	"description":"Point Mini a maquininha que dá o dinheiro de suas vendas na hora",
 	"payment_method_id":"visa",
 	"payer":{
-		"email":"test_user_123456@testuser.com"
+		"email":"test_user_123456@testuser.com",
+		"identification": {
+                	"number": "19119119100",
+                	"type": "CPF"
+            	}
 	},
 	"notification_url":"https://www.suaurl.com/notificacoes/",
 	"sponsor_id":null,
@@ -16,23 +20,19 @@ curl -X POST \
 	"statement_descriptor":"MercadoPago",
 	"additional_info":{
 		"items":[
-			{
-				"id":"PR0001",
-				"title":"Point Mini",
-				"description": "Producto Point para cobros con tarjetas mediante bluetooth",
-				"picture_url":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
-				"category_id": "electronics",
-				"quantity":1,
-				"unit_price":58.80
-			}
+		{
+			"id":"PR0001",
+			"title":"Point Mini",
+			"description": "Producto Point para cobros con tarjetas mediante bluetooth",
+			"picture_url":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
+			"category_id": "electronics",
+			"quantity":1,
+			"unit_price":58.80
+		}
 		],
 		"payer":{
 			"first_name":"Nome",
 			"last_name":"Sobrenome",
-			"identification": {
-            			"number": "32659430",
-            			"type": "DNI"
-        		},
 			"address":{
 				"zip_code":"06233-200",
 				"street_name":"Av das Nacoes Unidas",
