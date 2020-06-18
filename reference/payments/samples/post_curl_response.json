@@ -28,13 +28,13 @@
         "last_name": "Test",
         "email": "test_user_80507629@testuser.com",
         "identification": {
-            "number": "32659430",
-            "type": "DNI"
-        },
+        	"number": "19119119100",
+                "type": "CPF"
+        }
         "phone": {
-            "area_code": "011",
-            "number": "987654321",
-            "extension": ""
+		"area_code": "011",
+		"number": "987654321",
+		"extension": ""
         },
         "type": "guest",
         "entity_type": null,
@@ -42,16 +42,16 @@
     },
     "metadata": {},
     "additional_info": {
-        "items": [
-           {
-				"id":"PR0001",
-				"title":"Point Mini",
-				"description": "Producto Point para cobros con tarjetas mediante bluetooth",
-				"picture_url":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
-				"category_id": "electronics",
-				"quantity":1,
-				"unit_price":58.80
-			}
+    	"items": [
+        {
+		"id":"PR0001",
+		"title":"Point Mini",
+		"description": "Producto Point para cobros con tarjetas mediante bluetooth",
+		"picture_url":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
+		"category_id": "electronics",
+		"quantity":1,
+		"unit_price":58.80
+	}
         ],
         "payer": {
             "phone": {
@@ -63,22 +63,18 @@
                 "street_name": "Av das Nacoes Unidas",
                 "street_number": "3003"
             },
-            "identification": {
-            	"number": "32659430",
-            	"type": "DNI"
-        	},
             "first_name": "Nome",
             "last_name": "Sobrenome",
             "registration_date": "2019-01-01T12:01:01.000-03:00"
         },
         "shipments": {
-            "receiver_address":{
-				"street_name":"Av das Nacoes Unidas",
-				"street_number":3003,
-				"zip_code":"06233200",
-				"city_name": "Buzios",
-				"state_name": "Rio de Janeiro"
-			}
+        	"receiver_address":{
+			"street_name":"Av das Nacoes Unidas",
+			"street_number":3003,
+			"zip_code":"06233200",
+			"city_name": "Buzios",
+			"state_name": "Rio de Janeiro"
+		}
         }
     },
     "order": {},
