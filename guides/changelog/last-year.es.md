@@ -82,7 +82,7 @@ Queremos darte la mejor experiencia, siempre. Por eso, te contamos cuáles son l
 | Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
 | Shopify                 | -                                                                                           |
 
-[Ver módulos](https://www.mercadopago.com.ar/developers/es/plugins_sdks).
+[Ver módulos](https://www.mercadopago.com.ar/developers/es/guides/plugins).
 
 
 ----[mlb, mlm, mlc, mco, mpe]----
