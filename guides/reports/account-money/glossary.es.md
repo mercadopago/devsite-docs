@@ -40,6 +40,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | SHIPPING_ID |  ----[mla, mlm]---- Identificador de envío. ------------ |
 | SHIPMENT_MODE |  ----[mla, mlm]---- Modalidad de envío. ------------ |
 | PACK_ID |  ----[mla, mlm]---- Identificador del paquete en el carrito. ------------ |
+| TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 
 <hr/>
 

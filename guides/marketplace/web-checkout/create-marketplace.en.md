@@ -1,4 +1,4 @@
-# How to Integrate the Marketplace in the Checkout Mercado Pago
+# How to Integrate the Marketplace in the Mercado Pago Checkout
 
 ----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
@@ -33,7 +33,7 @@ Once the application has been created, you will get the `APP_ID` (application id
 
 To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To do this, redirect the user to the following URL by sending in `client_id` the value of `APP_ID` and the `redirect_uri` that you got in the previous step:
 
-`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com`
+`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 You'll receive the authorization code in the URL that you specified:
 
@@ -64,16 +64,14 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_id=CLIENT_ID' \
-     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_secret=ACCESS_TOKEN' \
      -d 'grant_type=authorization_code' \
      -d 'code=AUTHORIZATION_CODE' \
      -d 'redirect_uri=REDIRECT_URI'
 ```
 The parameters you need to include are:
 
-* `client_id`: The value of `APP_ID`. You can get it from the detail of your [application.](https://applications.mercadopago.com/)
-* `client_secret`: Your `SECRET_KEY`. You can get it from the detail of your [application.](https://applications.mercadopago.com/)
+* `client_secret`: Your `ACCESS_TOKEN`. You can get it from the detail of your [application]([FAKER][CREDENTIALS][URL]).
 * `code`: The authorization code you got when redirecting the user back to your site.
 * `redirect_uri`: It must be the same Redirect URI that you set up in your application.
 
@@ -111,8 +109,7 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_id=CLIENT_ID' \
-     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_secret= ACCESS_TOKEN' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_RT'
 ```

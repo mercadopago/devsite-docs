@@ -1,13 +1,15 @@
 
 # Identification types
 
-The types of documents accepted when making a payment through Mercado Pago vary by country.
+The types of documents accepted when making a payment through Mercado Pago vary by country.<br>
 
-> WARNING 
-> 
+> WARNING
+>
 > Important
-> 
+>
 > Keep in mind that this information does not apply to Mexico.
+
+<br>
 
 ## Get the document types
 
@@ -18,12 +20,12 @@ You can get the document types accepted as follows:
 
 [[[
 ```php
-	<?php
-		require ('mercadopago.php');
-		$mp = new MP ('ACCESS_TOKEN');
-		$identification_types = $mp->get('/v1/identification_types');
-		print_r ($identification_types);
-	?>
+    <?php
+        require ('mercadopago.php');
+        $mp = new MP ('ACCESS_TOKEN');
+        $identification_types = $mp->get('/v1/identification_types');
+        print_r ($identification_types);
+    ?>
 ```
 ```curl
 curl -X GET \
@@ -37,20 +39,20 @@ curl -X GET \
 
 [[[
 ```json
-	[
-		{
-		    "id": "DNI",
-		    "name": "DNI",
-		    "type": "number",
-		    "min_length": 7,
-		    "max_length": 8
-  		},
-  		...
-  	]
+    [
+        {
+            "id": "DNI",
+            "name": "DNI",
+            "type": "number",
+            "min_length": 7,
+            "max_length": 8
+          },
+          ...
+      ]
 ```
 ]]]
 
-The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference]https://www.mercadopago.com.ar/developers/en/reference/identification_types/endpoints/_identification_types/get.yaml).
+The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference](https://www.mercadopago.com.ar/developers/en/reference/identification_types/endpoints/_identification_types/get.yaml).
 
 ## Identification types by country
 

@@ -1,45 +1,85 @@
----
-  indexable: false
----
+# Gerenciamento de operações contestadas
 
-# Gestão de compras contestadas
+Encontre toda a informação sobre contestação de pagamentos, como preveni-las e gerenciá-las pela API.
+
+## O que é uma contestação de pagamento?
+
+Uma contestação é criada quando o **cliente reclama de uma cobrança no seu cartão de crédito ou débito perante o banco emissor do seu cartão e solicita a devolução do dinheiro.**
+
+Quando isso acontece, podemos reter o dinheiro da cobrança até o problema ser solucionado e gerenciamos o caso com a entidade emissora do cartão. Temos 10 dias para apresentação dos comprovantes da operação e o processo de validação pode demorar até 140 dias.
+
+Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
 
 > NOTE
 >
 > Nota
 >
-> **O que é?** Quando o comprador se comunica com a entidade que emitiu o cartão (um banco, por exemplo) e desconhece um pagamento realizado através desse meio, é gerada uma _contestação_. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589)
+> Se você recebeu uma reclamação e não sabe o que fazer, consulte as nossas [perguntas frequentes](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
 
-A compra contestada, a princípio, significa que o Mercado Pago irá reter o dinheiro da venda até que o problema seja solucionado.
+## Recomendações para prevenir contestações de pagamento
 
-As contestações podem ser geridas via API.
-É importante, nesse processo, mencionar quais são as instâncias chave:
+Não é possível evitar todas as contestações, porém, você pode diminuir a probabilidade de que um pagamento vire uma contestação.
 
-1. Notificação da compra contestada
-2. Consulta da compra contestada
-3. Entendimento da cobertura
-4. Disputa da compra contestada
-5. Revisão por parte do Mercado Pago
-6. Resolução
+### Preencha os dados do seu negócio
 
-Agora entraremos em detalhe em cada uma delas:
+Caso o comprador não reconheça a cobrança na fatura do seu cartão, ele poderá contestá-la. Para evitá-las, preencha a [informação do seu negócio](https://www.mercadopago.com.ar/settings/account) para definir como você quer aparecer nas faturas de cartões e nos SMS de confirmação de pagamento.
 
-## Notificação da compra contestada
+### Adicione o código de segurança no seu site
 
-Vía [IPN](/guides/notifications/ipn.pt.md) será enviada uma notificação instantâneamente cada vez que uma contestação for recebida. Para que isso aconteça, deve-se cadastrar a opção `chargebacks` dentro da [configuração](https://www.mercadopago.com.br/ipn-notifications).
+Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso código de segurança para prevenir a fraude.
 
+É muito simples. Adicione o script, configure a seção do seu site na qual está e, pronto! Você só deve substituir o valor de `view`pelo nome da página na qual quiser adicioná-lo.
 
-## Consulta da contestação
+```html
+<script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
+```
 
-A notificação IPN vai conter o `ID` da compra contestada.
-Com esse `ID` pode-se realizar um **GET** a `https://api.mercadopago.com/v1/chargebacks/ID?access_token=` para consultar suas informaçõeso:
+#### Possíveis valores para `view`
+
+| Tipo                                                         | Descripción                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *home* | Página inicial do seu site. |
+| *search* | Página de pesquisa ou lista de produtos. |
+| *item* | Página de um produto específico. |
+
+> NOTE
+>
+> Nota
+>
+> Caso não tenha um valor disponível para a seção, você pode deixar vazio.
+
+### Envie o comprovante de compra
+
+É importante que você envie o comprovante de pagamento via email ou por mensagem de texto para ajudar seu cliente a lembrar o motivo do pagamento que ele fez.
+
+### Detalhe toda a informação sobre o pagamento
+
+Para otimizar a validação de segurança dos pagamentos, encaminhe para nós a maior quantidade de dados possíveis no momento de criar o pagamento. Por exemplo, se você encaminhar para nós os dados do comprador, podemos detectar se realizou pagamentos suspeitos em outro momento e alertá-lo sobre isso.
+Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+
+### Faça a devolução de pagamentos suspeitos
+
+Se detectarmos um comportamento irregular ou recebermos uma notificação de que o cartão utilizado foi roubado, entraremos em contato via email para avisar você dessa ocorrência. Recomendamos que [cancele a compra](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) e faça a devolução do dinheiro ao comprador para evitar a contestação do pagamento.
+
+### Revise os dados ao cobrar com Point
+
+Solicite a seus compradores a carteira de identidade no momento de fazer o pagamento e confira que os dados e a assinatura coincidam com os do cartão.
+
+## Gerencie suas operações contestadas pela API
+
+### Apresentação da contestação
+
+Vamos avisar via [notificações IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) toda vez que você receber uma contestação. Para [começar a receber notificações](https://www.mercadopago.com.ar/herramientas/notificaciones), você deve preencher seus dados e escolher a opção Chargebacks.
+
+### Consulte sobre a contestação
+
+A notificação IPN vai conter a ID da contestação. Utilize a ID para obter informação sobre esse pagamento.
 
 ```
 curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
 ```
 
-para consultar suas informações:
-
+Você vai obter as seguintes informações:
 
 ```json
 {
@@ -68,64 +108,49 @@ para consultar suas informações:
 }
 ```
 
-## Entendimento da cobertura
+> NOTE
+>
+> Nota
+>
+> Você pode obter mais informações nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
 
-De acordo com a operação do vendedor, seu acordo comercial, ou ambos, pode-se variar a política de cobertura de cada contestação por parte do Mercado Pago. O campo `coverage_elegible` define se a compra contestada é passível de ser disputado ou não.
+### Compreensão de cobertura
 
-| Campo               | Valor     | Descrição
-| ----                | ----      | ----
-| `coverage_elegible` | **false** | Indica que a compra contestada não pode ser disputado
-| `coverage_elegible` | **true**  | Indica que a compra contestada pode ser disputado
-
-Além disso conta-se com o campo `documentation_required` que indica se é preciso que se envie a documentação para análise.
-
-| Campo                    | Valor     | Descrição
-| ----                     | ----      | ----
-| `documentation_required` | **false** | Indica que não se requer documentação para a compra contestada
-| `documentation_required` | **true**  | Indica que se requer documentação para a compra contestada
-
-
-----[mla,mlc,mlm,mpe,mco,global]----
-Caso seja requerida a documentação, conta-se com um prazo de 7 dias desde a criação da contestação para enviá-la. Na resposta da sua consulta da compra contestada pode-se ver quando se expira este prazo no campo `date_documentation_deadline`.
-------------
-----[mlb]----
-Caso seja requerida a documentação, conta-se com um prazo de 10 dias desde a criação da contestação para enviá-la. Na resposta da sua consulta da compra contestada pode-se ver quando se expira esse prazo no campo `date_documentation_deadline`.
-------------
+Dependendo do caso, a política de cobertura pelo Mercado Pago pode variar.
+O campo `coverage_elegible` define se a contestação pode ser coberta e `documentation_required` indica se é necessário apresentar documentação.
+Para mais detalhes, você pode ver o [Programa de Proteção ao Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294).
 
 > WARNING
-> 
-> Requisitos
 >
-> Só é possível continuar com o resto dos passos se a contestação **pode ser disputada**, **se requer que se envie documentação** e **se o prazo ainda não foi expirado.** 
+> Importante
+>
+>Só é possível continuar com os outros passos caso a contestação possa ser coberta, é requerida a apresentação de documentação e o prazo não expirou.
 
-## Disputa da compra contestada
+### Disputa da contestação
 
-Se a contestação segue os critérios anteriormente mencionados, é possível enviar via API, os documentos e informações que comprovem que o produto foi entregue. [Mais informações aqui](https://www.mercadopago.com.br/ajuda/contestaram-um-pagamento-o-que-faco_589) 
+Você pode encaminhar informação que valide que a venda foi feita pela API.
 
-Para realizar o envio, deve-se fazer um **POST** a `https://api.mercadopago.com/v1/chargebacks/ID/documentation` da seguinte forma:
 ```
 curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
 ```
 
-A api responderá com status `200 OK` se a documentação foi enviada com sucesso. A resposta mudará o status do atributo `documentation_status` a **review_pending**.
+Se a documentação for carregada no site com sucesso, a API responderá com status '200 OK' e modificará o valor de `documentation_status` para `review_pending`.
 
 > NOTE
 >
 > Nota
 >
-> Os arquivos poderão ser .jpg, .png, .pdf e em seu conjunto não podem ultrapassar 10mb e 10 arquivos.
+> Os arquivos poderão ser .jpg, .png, .pdf e, no total, não poderão superar os 10mb.
 
-## Revisão por parte de Mercado Pago
+### Resolução
 
-Uma vez enviada a documentação, um representante de Mercado Pago a revisará.
+Enviada a documentação, um representante do Mercado Pago fará a revisão.
+Eventualmente, a contestação poderá ter dois tipos de resoluções possíveis no campo `coverage_applied`:
 
-## Resolução
 
-Eventualmente a contestação poderá ter dois tipos de resolução possíveis:
+| Valor           | Descrição
+| ----            | ----
+| **true**  | Indica que a decisão foi a favor do vendedor e o dinheiro será devolvido.
+| **false** | Indica que a decisão foi contra o vendedor e o dinheiro será descontado.
 
-| Campo              | Valor     | Descrição
-| ----               | ----      | ----
-| `coverage_applied` | **false** | Indica que a documentação enviada não é válida e o dinheiro será devolvido ao comprador.
-| `coverage_applied` | **true**  | Indica que a documentação enviada é válida e o dinheiro será devolvido ao vendedor.
-
-Quando a resolução acontece, independentemente do resultado, se enviará uma nova notificação via **IPN** para que se possa verificar o que houve.
+Após a resolução, será enviada uma nova notificação IPN para você conferir o caso.

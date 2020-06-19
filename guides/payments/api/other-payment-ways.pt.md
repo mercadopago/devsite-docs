@@ -1,17 +1,25 @@
-# Outros meios de pagamento
+# Integre outros meios de pagamento
 
-Existem outros meios de pagamento em cada país, além de cartões de crédito, com os quais você pode receber pagamentos. A maioria deles são o que chamamos de meios de pagamento “off-line” ou “em dinheiro”.
+Com a API de pagamentos do Mercado Pago você pode oferecer **outras alternativas de meios de pagamento para seus clientes**.
 
-Os tipos de meio de pagamento disponíveis são:
+----[mla]----
 
-* ticket
-* atm
-* bank_transfer
-* prepaid_card
+## Meios de pagamento
+
+Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+
+| Tipo de meio de pagamento | Meio de pagamento |
+| --- | ---|
+| `ticket` | Rapipago |
+| `ticket` | Pago Fácil |
+| `ticket` | Provincia NET Pagos |
+| `ticket` | Carga Virtual |
+| `ticket` | Cobro Express |
+| `atm` | Red Link |
 
 ## Obtenha os meios de pagamento disponíveis
 
-Obtenha uma lista dos meios de pagamento disponíveis fazendo uma requisição `HTTP GET`:
+Consulte os meios de pagamento disponíveis sempre que necessite.
 
 [[[
 ```php
@@ -23,11 +31,316 @@ Obtenha uma lista dos meios de pagamento disponíveis fazendo uma requisição `
 
 ?>
 ```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+payment_methods = mercadopago.get("/v1/payment_methods");
+```
 ```java
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+]]]
+
+<br>
+
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+```json
+[
+    {
+        "id": "rapipago",
+        "name": "Rapipago",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/2002.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2002.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
+    },
+    {
+        "id": "redlink",
+        "name": "RedLink",
+        "payment_type_id": "atm",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/2003.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2003.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
+    },
+    {
+        "...": "..."
+    }
+]
+```
+
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+
+## Receba com meios de pagamento em dinheiro
+
+Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = 100;
+  $payment->description = "Título do produto";
+  $payment->payment_method_id = "rapipago";
+  $payment->payer = array(
+    "email" => "test_user_19653727@testuser.com"
+  );
+
+  $payment->save();
+
+?>
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'rapipago',
+  payer: {
+    email: 'test_user_3931694@testuser.com'
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100f)
+      .setDescription('Título do produto')
+      .setPaymentMethodId("rapipago")
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Título do produto'
+payment.payment_method_id = "rapipago"
+payment.payer = {
+  email: "test_user_19653727@testuser.com"
+}
+
+payment.save()
+
+```
+```csharp
+
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("100"),
+    Description = "Título do produto",
+    PaymentMethodId = "rapipago",
+    Payer = new Payer(){
+        Email = "test_user_19653727@testuser.com"
+  }
+};
+
+payment.Save();
+
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título do produto",
+  payment_method_id: "rapipago",
+  payer: { email: "test_user_19653727@testuser.com" }
+}'
+```
+]]]
+
+<br>
+A resposta mostrará o estado pendente até que o comprador realize o pagamento. O ID do cupom de pagamento é igual ao ID da transação no Mercado Pago.
+
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+    "transaction_details": {
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "http://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "installment_amount": 0,
+        "financial_institution": null,
+        "payment_method_reference_id": "1234567890"
+    }
+ }
+]
+```
+
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+> NOTE
+>
+> Nota
+>
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+
+## Data de expiração de meios de pagamento em dinheiro
+
+A data de expiração padrão para pagamentos em dinheiro é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+
+[[[
+```php
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) para executar a configuração.
+
+> WARNING
+>
+> Importante
+>
+> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+
+## Cancelar um pagamento
+
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
+
+## Tempos de creditação do pagamento
+
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+
+------------
+
+----[mlm]----
+
+## Meios de pagamento
+
+Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+
+| Tipo de meio de pagamento | Meio de pagamento |
+| --- | ---|
+| `ticket` | OXXO |
+| `atm` | Citibanamex |
+| `atm` | Santander |
+| `atm` | BBVA Bancomer |
+| `prepaid_card` | Tarjeta Mercado Pago |
+
+## Obtenha os meios de pagamento disponíveis
+
+Consulte os meios de pagamento disponíveis sempre que necessite.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
 ```
 ```node
 var mercadopago = require('mercadopago');
@@ -35,21 +348,1777 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 payment_methods = mercadopago.get("/v1/payment_methods");
 ```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
 ```ruby
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
 ```
 ```csharp
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
 ```
 ]]]
 
-O resultado será uma _array_ com os meios de pagamento e suas propriedades:
+<br>
+
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+```json
+[
+  {
+        "id": "oxxo",
+        "name": "OXXO",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [],
+        "min_allowed_amount": 5,
+        "max_allowed_amount": 10000,
+        "accreditation_time": 2880,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+{
+        "id": "banamex",
+        "name": "Citibanamex",
+        "payment_type_id": "atm",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [],
+        "min_allowed_amount": 5,
+        "max_allowed_amount": 40000,
+        "accreditation_time": 60,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+{
+        "id": "serfin",
+        "name": "Santander",
+        "payment_type_id": "atm",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [],
+        "min_allowed_amount": 5,
+        "max_allowed_amount": 40000,
+        "accreditation_time": 60,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+ {
+        "id": "bancomer",
+        "name": "BBVA Bancomer",
+        "payment_type_id": "atm",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [],
+        "min_allowed_amount": 10,
+        "max_allowed_amount": 40000,
+        "accreditation_time": 60,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+{
+        "id": "mercadopagocard",
+        "name": "Tarjeta MercadoPago",
+        "payment_type_id": "prepaid_card",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
+        "deferred_capture": "supported",
+        "settings": [
+            {
+                "card_number": {
+                    "validation": "standard",
+                    "length": 16
+                },
+                "bin": {
+                    "pattern": "^539978",
+                    "installments_pattern": "^539978",
+                    "exclusion_pattern": null
+                },
+                "security_code": {
+                    "length": 3,
+                    "card_location": "back",
+                    "mode": "mandatory"
+                }
+            }
+        ],
+        "additional_info_needed": [
+            "cardholder_name"
+        ],
+        "min_allowed_amount": 5,
+        "max_allowed_amount": 300000,
+        "accreditation_time": 1440,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+]
+```
+
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+
+## Receba com meios de pagamento em dinheiro
+
+Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = 100;
+  $payment->description = "Título do produto";
+  $payment->payment_method_id = "oxxo";
+  $payment->payer = array(
+    "email" => "test_user_82045343@testuser.com"
+  );
+
+  $payment->save();
+
+?>
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'oxxo',
+  payer: {
+    email: 'test_user_82045343@testuser.com'
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100f)
+      .setDescription('Título do produto')
+      .setPaymentMethodId("oxxo")
+      .setPayer(new Payer("test_user_82045343@testuser.com"));
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Título do produto'
+payment.payment_method_id = "oxxo"
+payment.payer = {
+  email: "test_user_82045343@testuser.com"
+}
+
+payment.save()
+
+```
+```csharp
+
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("100"),
+    Description = "Título do produto",
+    PaymentMethodId = "oxxo",
+    Payer = new Payer(){
+        Email = "test_user_82045343@testuser.com"
+  }
+};
+
+payment.Save();
+
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título do produto",
+  payment_method_id: "oxxo",
+  payer: { email: "test_user_82045343@testuser.com" }
+}'
+```
+]]]
+
+<br>
+A resposta mostrará o estado pendente até que o comprador realize o pagamento. O ID do cupom de pagamento é igual ao ID da transação no Mercado Pago.
+
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+    "transaction_details": {
+        "payment_method_reference_id": "24304329",
+        "verification_code": "882430432923032000100001",
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mlm/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+        "installment_amount": 0,
+        "financial_institution": "",
+        "payable_deferral_period": null,
+    }
+  }
+]
+```
+
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+> NOTE
+>
+> Nota
+>
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+
+## Cancelar um pagamento
+
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
+
+## Tempos de creditação do pagamento
+
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+
+## Comunique onde seus clientes podem pagar
+
+Ao finalizar, é importante que compartilhe com seus clientes a informação dos distintos lugares em que pode realizar o pagamento.
+
+| Meio de pagamento | Lojas disponíveis
+| --- | ---|
+| OXXO | OXXO
+| BBVA Bancomer | 7-Eleven |
+| BBVA Bancomer | K |
+| BBVA Bancomer | Farmacias del Ahorro |
+| BBVA Bancomer | Casa Ley |
+| BBVA Bancomer | BBVA Bancomer |
+| Citibanamex| Chedraui |
+| Citibanamex| Telecomm |
+| Citibanamex| Citibanamex |
+
+------------
+
+----[mlu]----
+
+## Meios de pagamento
+
+Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+
+| Tipo de meio de pagamento | Meio de pagamento |
+| --- | ---|
+| `ticket` | Abitab |
+| `ticket` | Redpagos |
+
+## Obtenha os meios de pagamento disponíveis
+
+Consulte os meios de pagamento disponíveis sempre que necessite.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+payment_methods = mercadopago.get("/v1/payment_methods");
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+]]]
+
+<br>
+
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+```json
+
+[
+ {
+        "id": "abitab",
+        "name": "Abitab",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/abitab.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/abitab.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [
+            "identification_number"
+        ],
+        "min_allowed_amount": 1,
+        "max_allowed_amount": 150000,
+        "accreditation_time": 0,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+ {
+        "id": "redpagos",
+        "name": "Redpagos",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/redpagos.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/redpagos.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [
+            "identification_number"
+        ],
+        "min_allowed_amount": 1,
+        "max_allowed_amount": 150000,
+        "accreditation_time": 0,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    }
+]
+```
+
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+
+## Receba com meios de pagamento em dinheiro
+
+Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = 100;
+  $payment->description = "Título do produto";
+  $payment->payment_method_id = "abitab";
+  $payment->payer = array(
+    "email" => "test_user_84162205@testuser.com"
+  );
+
+  $payment->save();
+?>
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'abitab',
+  payer: {
+    email: 'test_user_84162205@testuser.com'
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100f)
+      .setDescription('Título do produto')
+      .setPaymentMethodId("abitab")
+      .setPayer(new Payer("test_user_84162205@testuser.com"));
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Título do produto'
+payment.payment_method_id = "abitab"
+payment.payer = {
+  email: "test_user_84162205@testuser.com"
+}
+
+payment.save()
+```
+```csharp
+
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("100"),
+    Description = "Título do produto",
+    PaymentMethodId = "rapipago",
+    Payer = new Payer(){
+        Email = "test_user_84162205@testuser.com"
+  }
+};
+
+payment.Save();
+
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título do produto",
+  payment_method_id: "abitab",
+  payer: { email: "test_user_84162205@testuser.com" }
+}'
+```
+]]]
+
+<br>
+A resposta mostrará o estado pendente até que o comprador realize o pagamento. O ID do cupom de pagamento é igual ao ID da transação no Mercado Pago.
+
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+   "transaction_details": {
+        "payment_method_reference_id": "24308188",
+        "verification_code": "24308188",
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mlu/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+        "installment_amount": 0,
+        "financial_institution": "",
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+   }
+  }
+]
+```
+
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+> NOTE
+>
+> Nota
+>
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+
+## Cancelar um pagamento
+
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
+
+## Tempos de creditação do pagamento
+
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+
+------------
+
+----[mco]----
+
+## Meios de pagamento
+
+Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+
+| Tipo de meio de pagamento | Meio de pagamento |
+| --- | ---|
+| `ticket` | Efecty |
+| `ticket` | Baloto |
+| `bank_transfer` | PSE |
+
+
+## Obtenha os meios de pagamento disponíveis
+
+Consulte os meios de pagamento disponíveis sempre que necessite.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+payment_methods = mercadopago.get("/v1/payment_methods");
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+]]]
+
+<br>
+
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+```json
+[
+  {
+        "id": "efecty",
+        "name": "Efecty",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/efecty.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/efecty.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [],
+        "min_allowed_amount": 5000,
+        "max_allowed_amount": 4000000,
+        "accreditation_time": 0,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+{
+        "id": "baloto",
+        "name": "Baloto",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/baloto.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/baloto.gif",
+        "deferred_capture": "supported",
+        "settings": [],
+        "additional_info_needed": [],
+        "min_allowed_amount": 1500,
+        "max_allowed_amount": 1000000,
+        "accreditation_time": 0,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+        ]
+    },
+{
+        "id": "pse",
+        "name": "PSE",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/pse.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [
+            "entity_type"
+        ],
+        "min_allowed_amount": 1600,
+        "max_allowed_amount": 30000000,
+        "accreditation_time": 30,
+        "financial_institutions": [
+            …,
+        ],
+        "processing_modes": [
+            "aggregator"
+        ]
+    }
+]
+```
+
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+
+## Receba com meios de pagamento em dinheiro
+
+Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = 5000;
+  $payment->description = "Título do produto";
+  $payment->payment_method_id = "efecty";
+  $payment->payer = array(
+    "email" => "test_user_19549678@testuser.com"
+  );
+
+  $payment->save();
+?>
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 5000,
+  description: 'Título do produto',
+  payment_method_id: 'efecty',
+  payer: {
+    email: 'test_user_19549678@testuser.com'
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(5000f)
+      .setDescription('Título do produto')
+      .setPaymentMethodId("efecty")
+      .setPayer(new Payer("test_user_19549678@testuser.com"));
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 5000
+payment.description = 'Título do produto'
+payment.payment_method_id = "efecty"
+payment.payer = {
+  email: "test_user_19549678@testuser.com"
+}
+
+payment.save()
+```
+```csharp
+
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("5000"),
+    Description = "Título do produto",
+    PaymentMethodId = "efecty",
+    Payer = new Payer(){
+        Email = "test_user_19549678@testuser.com"
+  }
+};
+
+payment.Save();
+
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 5000,
+  description: "Título do produto",
+  payment_method_id: "efecty",
+  payer: { email: "test_user_19549678@testuser.com" }
+}'
+```
+]]]
+
+<br>
+A resposta mostrará o estado pendente até que o comprador realize o pagamento. O ID do cupom de pagamento é igual ao ID da transação no Mercado Pago.
+
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+    "transaction_details": {
+        "payment_method_reference_id": "24308386",
+        "verification_code": "24308386",
+        "net_received_amount": 0,
+        "total_paid_amount": 5000,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mco/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+        "installment_amount": 0,
+        "financial_institution": "",
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+   }
+  }
+]
+```
+
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+> NOTE
+>
+> Nota
+>
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+
+## Receba com PSE
+
+Para receber pagamentos PSE, é preciso enviar a instituição financeira que processa o pagamento.
+
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 5000;
+$payment->description = "Título do produto";
+$payment->payer = array (
+"email" => "test_user_19549678@testuser.com",
+"identification" => array(
+"type" => "CC",
+"number" => "76262349"
+),
+"entity_type" => "individual"
+);
+$payment->transaction_details = array(
+"financial_institution" => 1234
+);
+$payment->additional_info = array(
+"ip_address" => "127.0.0.1"
+);
+$payment->callback_url = "http://www.sua-loja.com";
+$payment->payment_method_id = "pse";
+
+$payment->save();
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+
+var payment_data = {
+transaction_amount: 5000,
+description: 'Título do produto',
+payer: {
+email: 'test_user_19549678@testuser.com',
+identification: {
+type: "CC",
+number: "76262349"
+},
+entity_type: "individual"
+},
+transaction_details: {
+financial_institution: 1234
+},
+additional_info: {
+ip_address: "127.0.0.1"
+},
+callback_url: "http://www.sua-loja.com",
+payment_method_id: "pse"
+}
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.setEmail("test_user_19549678@testuser.com");
+payer.setIdentification(new Identification("CC", 76262349));
+payer.setEntityType("individual");
+
+TransactionDetails transactionDetails = new TransactionDetails();
+transactionDetails.financialInstitution = 1234;
+
+AdditionalInfo additionalInfo = new AdditionalInfo();
+additionalInfo.ipAddress = "127.0.0.1";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(5000f)
+.setDescription('Título do produto')
+.setPayer(payer)
+.setTransactionDetails(transactionDetails)
+.additionalInfo(additionalInfo)
+.callbackUrl("http://www.sua-loja.com")
+.setPaymentMethodId("pse");
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 5000
+payment.description = 'Título do produto'
+payment.payer = {
+email: 'test_user_19549678@testuser.com',
+identification: {
+type: "CC",
+number: "76262349"
+},
+entity_type: "individual"
+}
+payment.transaction_details = {
+financial_institution: 1234
+}
+payment.additional_info = {
+ip_address: "127.0.0.1"
+}
+payment.callback_url = "http://www.sua-loja.com"
+payment.payment_method_id = "pse"
+
+payment.save();
+```
+```curl
+curl -X POST \
+'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
+    -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 5000,
+  description: "Título do produto",
+  payment_method_id: "pse",
+  payer: { email: "test_user_19549678@testuser.com" },
+  transaction_details: { financial_institution: 1234 }
+}'
+```
+]]]
+
+A resposta mostrará o estado pendente até que o comprador realize o pagamento.
+
+```json
+[
+ {
+    ...,
+	"status": "pending",
+	"status_detail": "pending_waiting_transfer"
+    ...,
+	"transaction_details": {
+		...,
+		"external_resource_url": "https://www.mercadopago.com/mco/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+		"installment_amount": 0,
+		"financial_institution": "1234",
+		"payment_method_reference_id": null
+	}
+ }
+]
+```
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que você especificar.
+
+## Cancelar um pagamento
+
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
+
+## Tempos de creditação do pagamento
+
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+
+------------
+
+----[mlc]----
+
+## Meios de pagamento
+
+Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+
+| Tipo de meio de pagamento | Meio de pagamento |
+| --- | ---|
+| `ticket` | Sucursales Servipag |
+| `bank_transfer` | Redcompra Webpay |
+
+
+## Obtenha os meios de pagamento disponíveis
+
+Consulte os meios de pagamento disponíveis sempre que necessite.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+payment_methods = mercadopago.get("/v1/payment_methods");
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+]]]
+
+<br>
+
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+```json
+[
+ {
+        "id": "servipag",
+        "name": "Sucursales Servipag",
+        "payment_type_id": "ticket",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/servipag.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/servipag.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [],
+        "min_allowed_amount": 1,
+        "max_allowed_amount": 500000,
+        "accreditation_time": 0,
+        "financial_institutions": [],
+        "processing_modes": [
+            "aggregator"
+         ]
+    },
+ {
+        "id": "webpay",
+        "name": "Redcompra Webpay",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/webpay.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/webpay.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": [
+            "entity_type"
+        ],
+        "min_allowed_amount": 50,
+        "max_allowed_amount": 3000000,
+        "accreditation_time": 20,
+        "financial_institutions": [
+            {
+                "id": "1234",
+                "description": "Transbank"
+            }
+        ],
+        "processing_modes": [
+            "aggregator"
+        ]
+    }
+]
+```
+
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+
+## Receba com meios de pagamento em dinheiro
+
+Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = 100;
+  $payment->description = "Título do produto";
+  $payment->payment_method_id = "servipag";
+  $payment->payer = array(
+    "email" => "test_user_15748052@testuser.com"
+  );
+
+  $payment->save();
+?>
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'servipag',
+  payer: {
+    email: 'test_user_15748052@testuser.com'
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100f)
+      .setDescription('Título do produto')
+      .setPaymentMethodId("servipag")
+      .setPayer(new Payer("test_user_15748052@testuser.com"));
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Título do produto'
+payment.payment_method_id = "servipag"
+payment.payer = {
+  email: "test_user_15748052@testuser.com"
+}
+
+payment.save()
+```
+```csharp
+
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("100"),
+    Description = "Título do produto",
+    PaymentMethodId = "servipag",
+    Payer = new Payer(){
+        Email = "test_user_15748052@testuser.com"
+  }
+};
+
+payment.Save();
+
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título do produto",
+  payment_method_id: "servipag",
+  payer: { email: "test_user_15748052@testuser.com" }
+}'
+```
+]]]
+
+<br>
+A resposta mostrará o estado pendente até que o comprador realize o pagamento. O ID do cupom de pagamento é igual ao ID da transação no Mercado Pago.
+
+```json
+[
+ {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+   "transaction_details": {
+        "payment_method_reference_id": "24308616",
+        "verification_code": "24308615",
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mlc/payments/sandbox/ticket/helper?payment_id=1234&payment_method_reference_id=12345678&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+        "installment_amount": 0,
+        "financial_institution": "",
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+   }
+  }
+]
+```
+
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+> NOTE
+>
+> Nota
+>
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+
+## Receba com Webpay
+
+Para receber pagamentos com Webpay, você deve enviar o endereço IP do comprador, a instituição financeira que processa o pagamento e, opcionalmente, a RUT e o tipo de pessoa.
+
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 100;
+$payment->description = "Título do produto";
+$payment->payer = array (
+"email" => "test_user_15748052@testuser.com",
+"entity_type" => "individual"
+);
+$payment->transaction_details = array(
+"financial_institution" => 1234
+);
+$payment->additional_info = array(
+"ip_address" => "127.0.0.1"
+);
+$payment->callback_url = "http://www.sua-loja.com";
+$payment->payment_method_id = "webpay";
+
+$payment->save();
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+
+var payment_data = {
+transaction_amount: 100,
+description: 'Título do produto',
+payer: {
+email: 'test_user_15748052@testuser.com',
+entity_type: "individual"
+},
+transaction_details: {
+financial_institution: 1234
+},
+additional_info: {
+ip_address: "127.0.0.1"
+},
+callback_url: "http://www.sua-loja.com",
+payment_method_id: "webpay"
+}
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.setEmail("test_user_15748052@testuser.com");
+payer.setEntityType("individual");
+
+TransactionDetails transactionDetails = new TransactionDetails();
+transactionDetails.financialInstitution = 1234;
+
+AdditionalInfo additionalInfo = new AdditionalInfo();
+additionalInfo.ipAddress = "127.0.0.1";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(100f)
+.setDescription('Título do produto')
+.setPayer(payer)
+.setTransactionDetails(transactionDetails)
+.additionalInfo(additionalInfo)
+.callbackUrl("http://www.sua-loja.com")
+.setPaymentMethodId("webpay");
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Título do produto'
+payment.payer = {
+email: 'test_user_15748052@testuser.com',
+entity_type: "individual"
+}
+payment.transaction_details = {
+financial_institution: 1234
+}
+payment.additional_info = {
+ip_address: "127.0.0.1"
+}
+payment.callback_url = "http://www.sua-loja.com"
+payment.payment_method_id = "webpay"
+
+payment.save();
+```
+```curl
+curl -X POST \
+'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
+    -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título do produto",
+  payment_method_id: "webpay",
+  payer: {
+    email: "test_user_15748052@testuser.com",
+    identification: {
+    type: "RUT",
+    number: 76262349
+},
+  entity_type: "individual"
+},
+  transaction_details: {
+    financial_institution: 1234
+},
+  additional_info: {
+  ip_address: “127.0.0.1”
+},
+  callback_url: "http://www.sua-loja.com"
+}'
+```
+]]]
+
+> O tipo de entidade esperado é `individual` (pessoas) ou `association` (empresas).
+
+A resposta mostrará o estado pendente até que o comprador realize o pagamento.
+
+```json
+[
+ {
+    ...,
+	"status": "pending",
+	"status_detail": "pending_waiting_transfer"
+    ...,
+	"transaction_details": {
+		...,
+		"external_resource_url": "https://www.mercadopago.com/mlc/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+		"installment_amount": 0,
+		"financial_institution": "1234",
+		"payment_method_reference_id": null
+	}
+ }
+]
+```
+
+No campo external_resource_url você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que você indica com os seguintes parâmetros `payment_id=6725591786&payment_status=approved&external_reference=null&payment_method_id=webpay`.
+
+
+## Cancelar um pagamento
+
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+
+> WARNING
+>
+> Importante
+>
+> Tenha em conta que Webpay cancelará automaticamente o pagamento caso não se realize em 30 minutos.
+
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.cl/developers/es/guides/manage-account/cancellations-and-refunds/).
+
+## Tempos de creditação do pagamento
+
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.cl/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
+
+------------
+
+
+----[mpe]----
+
+## Meios de pagamento
+
+Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+
+| Tipo de meio de pagamento | Meio de pagamento |
+| --- | ---|
+| `atm` | PagoEfectivo |
+
+
+## Obtenha os meios de pagamento disponíveis
+
+Consulte os meios de pagamento disponíveis sempre que necessite.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+payment_methods = mercadopago.get("/v1/payment_methods");
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+]]]
+
+<br>
+
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+```json
+[
+  {
+      "id": "pagoefectivo_atm",
+      "name": "BCP, BBVA Continental u otros",
+      "payment_type_id": "atm",
+      "status": "active",
+      "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pagoefectivo_atm.gif",
+      "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/pagoefectivo_atm.gif",
+      "deferred_capture": "does_not_apply",
+      "settings": [],
+      "additional_info_needed": [],
+      "min_allowed_amount": 5,
+      "max_allowed_amount": 10000,
+      "accreditation_time": 2880,
+      "financial_institutions": [],
+      "processing_modes": [
+          "aggregator"
+      ]
+  }
+]
+```
+
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+
+## Receba com meios de pagamento em dinheiro
+
+Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = 100;
+  $payment->description = "Título do produto";
+  $payment->payment_method_id = "pagoefectivo_atm";
+  $payment->payer = array(
+    "email" => "test_user_42972582@testuser.com"
+  );
+
+  $payment->save();
+?>
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'pagoefectivo_atm',
+  payer: {
+    email: 'test_user_42972582@testuser.com'
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100f)
+      .setDescription('Título do produto')
+      .setPaymentMethodId("pagoefectivo_atm")
+      .setPayer(new Payer("test_user_42972582@testuser.com"));
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Título do produto'
+payment.payment_method_id = "pagoefectivo_atm"
+payment.payer = {
+  email: "test_user_42972582@testuser.com"
+}
+
+payment.save()
+```
+```csharp
+
+using MercadoPago;
+using MercadoPago.DataStructures.Payment;
+using MercadoPago.Resources;
+
+MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment()
+{
+    TransactionAmount = float.Parse("100"),
+    Description = "Título do produto",
+    PaymentMethodId = "pagoefectivo_atm",
+    Payer = new Payer(){
+        Email = "test_user_42972582@testuser.com"
+  }
+};
+
+payment.Save();
+
+```
+```curl
+curl -X POST \
+  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Título do produto",
+  payment_method_id: "pagoefectivo_atm",
+  payer: { email: "test_user_42972582@testuser.com" }
+}'
+```
+]]]
+
+<br>
+A resposta mostrará o estado pendente até que o comprador realize o pagamento. O ID do cupom de pagamento é igual ao ID da transação no Mercado Pago.
+
+```json
+[
+  {
+    ...,
+    "id": 5466310457,
+    "status": "pending",
+    "status_detail": "pending_waiting_payment",
+    ...,
+
+    "order": {},
+    "external_reference": null,
+    "transaction_amount": 100,
+    "transaction_amount_refunded": 0,
+    "coupon_amount": 0,
+    "differential_pricing_id": null,
+    "deduction_schema": null,
+    "transaction_details": {
+        "payment_method_reference_id": "123457986",
+        "verification_code": "24308767",
+        "net_received_amount": 0,
+        "total_paid_amount": 100,
+        "overpaid_amount": 0,
+        "external_resource_url": "https://www.mercadopago.com/mpe/payments/sandbox/atm/helper?payment_id=24308766&payment_method_reference_id=24308767&caller_id=537490079&hash=c96a61b0-10f4-40f6-afff-82fc0f0923da",
+        "installment_amount": 0,
+        "financial_institution": "PagoEfectivo",
+        "payable_deferral_period": null,
+        "acquirer_reference": null
+    }
+  }
+]
+```
+
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
+
+> NOTE
+>
+> Nota
+>
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+
+## Cancelar um pagamento
+
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
+
+## Tempos de creditação do pagamento
+
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-para-tus-compradores_2433) sempre que necessite.
+
+------------
+
+----[mlb]----
+
+## Meios de pagamento
+
+Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+
+| Tipo de meio de pagamento | Meio de pagamento |
+| --- | ---|
+| `ticket` | Boleto |
+| `ticket` | Pagamento em lotérica |
+
+## Obtenha os meios de pagamento disponíveis
+
+Consulte os meios de pagamento disponíveis sempre que necessite.
+
+[[[
+```php
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago::get("/v1/payment_methods");
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+payment_methods = mercadopago.get("/v1/payment_methods");
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+
+```
+```csharp
+using MercadoPago;
+MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+
+payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+
+```
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+```
+]]]
+
+<br>
+
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
 
 ```json
 [
@@ -58,24 +2127,22 @@ O resultado será uma _array_ com os meios de pagamento e suas propriedades:
         "name": "Boleto",
         "payment_type_id": "ticket",
         "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/2006.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2006.gif",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bolbradesco.gif",
+        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bolbradesco.gif",
         "deferred_capture": "does_not_apply",
         "settings": [],
-        "additional_info_needed": [],
-        "...": "..."
+        "additional_info_needed": []
     },
     {
         "id": "pec",
-        "name": "Pagamento na Lotérica",
+        "name": "Pagamento na lotérica sem boleto",
         "payment_type_id": "ticket",
         "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/12363.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/12363.gif",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pec.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pec.gif",
         "deferred_capture": "supported",
         "settings": [],
-        "additional_info_needed": [],
-        "...": "..."
+        "additional_info_needed": []
     },
     {
         "...": "..."
@@ -83,40 +2150,13 @@ O resultado será uma _array_ com os meios de pagamento e suas propriedades:
 ]
 ```
 
-## Receba pagamentos com meios de pagamento em dinheiro
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprador. Em seguida, você precisa fazer uma requisição `HTTP POST` enviando o `transaction_amount`, `payment_method_id` e o `email` obtidos:
+## Receba com boleto ou pagamento em lotérica
+
+Para receber pagamentos em boleto ou pagamento em lotérica envie os detalhes de valor e meio de pagamento além dos dados de identificação e endereço do seu comprador.
 
 [[[
-```curl
-  curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
-    -d '{
-      "date_of_expiration": "2018-06-30T21:52:49.000-04:00",
-      "transaction_amount": 100,
-      "description": "Title of what you are paying for",
-      "payment_method_id": "bolbradesco",
-      "payer": {
-        "email": "test_user_19653727@testuser.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "CPF",
-            "number": "19119119100"
-        },
-        "address": {
-            "zip_code": "06233200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
-        }
-      }
-    }'
-```
 ```php
 <?php  
 
@@ -125,15 +2165,14 @@ Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprad
  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
  $payment = new MercadoPago\Payment();
- $payment->date_of_expiration = "2018-06-30T21:52:49.000-04:00";
  $payment->transaction_amount = 100;
- $payment->description = "Title of what you are paying for";
+ $payment->description = "Título do produto";
  $payment->payment_method_id = "bolbradesco";
  $payment->payer = array(
-     "email" => "test_user_19653727@testuser.com",
+     "email" => "test@test.com",
      "first_name" => "Test",
      "last_name" => "User",
-     "identification" => array( 
+     "identification" => array(
          "type" => "CPF",
          "number" => "19119119100"
       ),
@@ -151,20 +2190,53 @@ Para receber pagamentos em dinheiro, você só precisa obter o e-mail do comprad
 
 ?>
 ```
-```java
+```node
 
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'bolbradesco',
+  payer: {
+    email: 'test@test.com',
+    first_name: 'Test',
+    last_name: 'User',
+    identification: {
+        type: 'CPF',
+        number: '19119119100'
+    },
+    address:  {
+        zip_code: '06233200',
+        street_name: 'Av. das Nações Unidas',
+        street_number: '3003',
+        neighborhood: 'Bonfim',
+        city: 'Osasco',
+        federal_unit: 'SP'
+    }
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
+```
+```java
 import com.mercadopago.*;
 
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setDateOfExpiration("2018-01-01T21:52:49.000-04:00")
-       .setTransactionAmount(100f)
-       .setDescription('Title of what you are paying for')
+payment.setTransactionAmount(100f)
+       .setDescription('Título do produto')
        .setPaymentMethodId("bolbradesco")
        .setPayer(new Payer()
-           .setEmail("test_user_19653727@testuser.com")
+           .setEmail("test@test.com")
            .setFirstName("Test")
            .setLastName("User")
            .setIdentification(new Identification()
@@ -176,23 +2248,21 @@ payment.setDateOfExpiration("2018-01-01T21:52:49.000-04:00")
                .setStreetNumber(3003)
                .setNeighborhood("Bonfim")
                .setCity("Osasco")
-               .setFederalUnit("SP")) 
+               .setFederalUnit("SP"))
 );
 
 payment.save();
 ```
 ```ruby
-require 'mercadopago.rb'
-
-mp = MercadoPago.new('ENV_ACCESS_TOKEN')
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_data = {
-  date_of_expiration: "2018-06-30T21:52:49.000-04:00",
   transaction_amount: 100,
-  description: "Title of what you are paying for",
+  description: "Título do produto",
   payment_method_id: "bolbradesco",
   payer: {
-    email: "test_user_8878491@testuser.com",
+    email: "test@test.com",
     first_name: "Test",
     last_name: "User",
     identification: {
@@ -210,53 +2280,83 @@ payment_data = {
   }
 }
 
-payment = mp.post('/v1/payments', payment_data)
+payment.save()
 
-puts payment
 ```
 ```csharp
+
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
-//...
+
 MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment()
 {
-  DateOfExpiration = "2018-06-30T21:52:49.000-04:00",
     TransactionAmount = float.Parse("105"),
-    Description = "Title of what you are paying for",
+    Description = "Título do produto",
     PaymentMethodId = "bolbradesco",
     Payer = new Payer(){
-        Email = "test_user_19653727@testuser.com",
+        Email = "test@test.com",
         FirstName = "Test",
         LastName = "User",
         Identification = new Identification(){
-          Type = "CPF",
-          Number = "191191191-00"
+            Type = "CPF",
+            Number = "191191191-00"
         },
         Address = new Address(){
-          ZipCode = "06233-200",
-          StreetName = "Av. das Nações Unidas",
-          StreetNumber = "3003",
-          Neighborhood = "Bonfim",
-          City = "Osasco",
-          FederalUnit = "SP"
+            ZipCode = "06233-200",
+            StreetName = "Av. das Nações Unidas",
+            StreetNumber = "3003",
+            Neighborhood = "Bonfim",
+            City = "Osasco",
+            FederalUnit = "SP"
 
-      }
-  }
+        }
+    }
 };
-// Save and posting the payment
+
 payment.Save();
-//...
+
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
+    -d '{
+      "transaction_amount": 100,
+      "description": "Título do produto",
+      "payment_method_id": "bolbradesco",
+      "payer": {
+        "email": "test@test.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "19119119100"
+        },
+        "address": {
+            "zip_code": "06233200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
+        }
+      }
+    }'
 ```
 ]]]
 
-Resposta:
+<br>
+A resposta mostrará o estado pendente até que o comprador realize o pagamento. O ID do cupom de pagamento é igual ao ID da transação no Mercado Pago.
 
 ```json
+[
 {
     ...,
+    "id": 5466310457,
     "status": "pending",
     "status_detail": "pending_waiting_payment",
     ...,
@@ -264,50 +2364,111 @@ Resposta:
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "http://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "http://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
     }
 }
+]
 ```
 
-Você receberá uma resposta com o `status` **pending** até que o comprador efetue o pagamento.
-
-O campo `external_resource_url` possui uma URL que contém as instruções para que o comprador possa pagar. Você pode redirecioná-lo ou enviar o link para acesso.
-
+No campo `external_resource_url` você encontrará um endereço que contêm as instruções para que o comprador possa pagar. Você pode redirecioná-lo ao link para que acesse.
 
 > NOTE
 >
 > Nota
 >
-> O comprador tem de **3** a **5** dias para pagar, dependendo do meio de pagamento. Após essas datas, **você deve** cancelá-lo.
+> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
+## Cancelar um pagamento
 
-## Cancele um pagamento
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
 
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`.
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
 
-As opções de pagamento em dinheiro devem ser pagas no prazo de 3 a 5 dias dependendo de cada caso. Veja a [lista completa de vencimentos](https://www.mercadopago.com.br/activities).
+## Data de expiração de boleto
 
-Se você quiser cancelar um pagamento, pode fazê-lo seguindo o guia [cancelamentos e devoluções de pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).
+A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
-A expiração de um pagamento ocorre após 30 dias e o cancelamento é automático, o status final deles será cancelled/expired. 
+[[[
+```php
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
 
-## Prazo de aprovação dos pagamentos
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
 
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
 
-Cada meio de pagamento tem a sua própria data de aprovação, em alguns casos é imediata e, em outros a espera é de até 3 dias úteis.
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
 
-Recomendamos que verifique os [prazos de aprovação por meio de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265).
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
 
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
 
-## Devoluções
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
 
+O prazo de aprovação do boleto é de até 48h úteis. Por isso recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
 
-Se for preciso devolver dinheiro ao comprador, utilize a API de Refunds. Todas as devoluções dos meios de pagamento em dinheiro são feitas na conta do Mercado Pago do seu comprador.
+> WARNING
+>
+> Importante
+>
+> Caso o boleto seja pago depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
 
-Caso o comprador não possua uma, ele receberá um e-mail no endereço enviado no pagamento com instruções sobre como resgatar seu dinheiro.
+## Prazo de aprovação de pagamento
 
-Para mais informações, consulte a seção sobre [devoluções](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).
+Cada meio de pagamento possui sua própria data de aprovação, em alguns casos a aprovação é imediata e em outros pode demorar até 3 días úteis.
+
+Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) sempre que necessite.
+
+------------
+
+---
+### Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Teste sua integração
+>
+> Revise que esteja tudo bem com sua integração com usuários de teste.
+>
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/test-integration/)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Integração avançada
+>
+> Otimize sua integração e melhore a gestão das suas vendas.
+>
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/advanced-integration)

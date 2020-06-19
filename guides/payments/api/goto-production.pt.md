@@ -1,56 +1,54 @@
-# Requisitos para ir à produção
+# Requisitos para ir a produção
 
-Quando tenha a aplicação pronta e funcionando na modalidade Sandbox e quiser começar a processar pagamentos reais, deverá completar a homologação da sua integração a partir da [página das credenciais.]([FAKER][CREDENTIALS][URL]) Mais tarde Mercado Pago pode verificar o seu site afim que sejam cumpridos todos os detalhes a seguir. Caso contrário, um assessor entrará em contato contigo para dizer se há algo que deve ser corrigido na sua integração.
+Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção através da [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
 
-## Por que é necessário esse processo?
+## Por que é necessário realizar esse processo?
 
-Porque assim garantimos (tanto o Mercado Pago quanto você) a segurança dos dados dos seus clientes e a adequação às normas legais de cada país, entre outras coisas. Além disso, seguindo esses conselhos, você poderá conseguir uma boa experiência de compra e ajudar a maximizar a conversão dos pagamentos que receber.
+Com esse processo, se garante a segurança dos dados dos seus clientes, o cumprimento das normas e disposições legais de cada país e a melhor experiência de compra para as suas vendas.
 
-O não cumprimento dessas normas poderá implicar desde o não processamento dos pagamentos até ações legais de acordo com o estabelecido nos [termos e condições](https://www.mercadopago.com.br/ajuda/termos-e-condicoes_300).
+[Conheça os termos e condições do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/termos-e-condicoes_300).
 
-## Uso do SDK Javascript mercadopago.js
+## Use as bibliotecas oficiais e cuide da segurança dos dados
 
-Deve importar a biblioteca mercadopago.js no seu site, da forma que é fornecida pelo Mercado Pago. Não pode modificá-la, nem armazená-las nos seus servidores. Ao garantir isso, podemos realizar todos os controles pertinentes ao usuário para melhorar a conversão dos pagamentos e evitar fraude.
+É importante que utilize a biblioteca MercadoPago.js como é fornecida pelo Mercado Pago. Não deve-se modificá-la nem armazená-la nos seus servidores. Assegure-se também de não incluir o atributo `name` ao criar um formulário de dados de cartão para prevenir que os dados cheguem aos seus servidores quando o cliente enviar o formulário.
 
-## Os dados dos cartões não devem chegar até os seus servidores
+Essas medidas permitem cuidar dos dados sensíveis, cumprir com os padrões de segurança requeridos e mantê-lo sempre atualizado.
 
-Ao criar um formulário para os dados de cartão, verifique de não incluir o atributo name nas tags input. Isso irá prevenir que os dados cheguem ao seu servidor quando o usuário envie o formulário. Não se preocupe, o SDK mercadopago.js identificará corretamente os parâmetros mediante ao atributo data-checkout e os enviará diretamente aos servidores do Mercado Pago.
-Ao não manusear os dados dos cartões evitará muita dor de cabeça e não será necessário cumprir com as normas PCI-DSS para prevenir uma possível vulnerabilidade dos dados. O Mercado Pago irá se encarregar do cumprimento dessas normas por você.
+## Tenha um certificado SSL
 
-## Certificado SSL
+Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um certificado SSL válido e que o formulário de pagamento seja disponibilizado em uma página HTTPS. Isso permite proteger as transações e os dados dos seus compradores. Durante os teste não é necessário tê-lo, mas é obrigatório para ir a produção.
 
-Tentamos garantir maior confiabilidade e segurança possível nas transações que são realizadas pelos seus clientes, e também, que seus dados não sejam roubados por terceiros. Para isso, é um requisito que tenha um certificado SSL e que o formulário de pagamentos esteja sobre uma página HTTPS.
-Durante os testes em modo sandbox, pode operar em HTTP, mas para a homologação, deverá adquirir o certificado caso não tenha.
+## Seja transparente com as promoções e financiamentos
 
-## Promoções e Financiamento
-
-Se oferece pagamentos com cartões de crédito com parcelamentos, deve deixar claro as promoções oferecidas pelo Mercado Pago. Pode incluir um de nossos [banners de meio de pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/banners/introduction/), ou ainda direcionar o cliente para a [sessão de promoções](https://www.mercadopago.com.br/promocoes/).
-Também deve informar os juros que serão pagos pelo seu usuário, direcionando para a sessão [custos de parcelamento Mercado Pago](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
+Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/introduction/) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
 > NOTE
 >
 > Nota
 >
-> Devido à [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) do Secretaría do Comércio da Argentina, sobre os preços transparentes, é necessário que você cumpra certos [requisitos adicionais](https://www.mercadopago.com.ar/developers/es/related/resolucion-e-512017/).
+> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigencias adicionales](https://www.mercadopago.com.ar/developers/es/guides/localization/considerations-argentina/).
 ------------
 
-## Comunicação dos estados
+## Disponibilize seus termos e condições
 
-Deve oferecer a melhor comunicação possível ao usuário no que diz respeito aos estados que o seu pagamento está, assim como os possíveis erros na inserção de dados do cartão. Isso fará melhorar a conversão do seu checkout, uma vez que oferece a seus clientes informações claras e o informa bem o que falta ou o que deve corrigir para finalizar o processo de pagamento.
+Disponibilize uma política de termos e condições e deixe claro que é responsável por todos os dados que sejam inserido no seu site.
 
-Para isso, consulte os [possíveis códigos de erro da API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses), junto a comunicação que sugerimos que seja implementada em cada caso.
+---
+### Próximos passos
 
-Além disso, quando o pagamento com cartão de crédito é aprovado, deverá mostrar na tela, assim como um possível envio de email do pagamento aprovado, como o comprador verá o resultado daquela compra na sua fatura de cartão de crédito, simplesmente mostre o valor do atributo `statement_descriptor` da resposta do pagamento.
-
-Se permite fazer devoluções de pagamentos, deixe claro que poderão ser feitas em até 90 dias depois da aprovação do pagamento.
-
-> NOTE
+> LEFT_BUTTON
 >
-> Nota
+> Teste sua integração
 >
-> Obtenha benefícios para o seu negócio com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections).
+> Revise que esteja tudo bem com sua integração utilizando os usuários de teste.
+>
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/testing/)
 
-### Termos e condições
-
-Deve disponibilizar uma politica de termos e condições, na qual especifique que se responsibiliza por todos os dados que estão sendo inseridos no seu site.
+> RIGHT_BUTTON
+>
+> Referências de API
+>
+> Encontre toda a informação necessária para interagir com nossas APIs.
+>
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)

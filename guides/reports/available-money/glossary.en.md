@@ -29,3 +29,8 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | STORE_ID | Branch ID if payment is made through a physical commerce. |
 | STORE_NAME | Branch name for payment made through a physical commerce. |
 | EXTERNAL_STORE_ID | User-defined branch ID for payment made through a physical commerce. |
+| ORDER_ID | Purchase Order. |
+| SHIPPING_ID | Shipping Identification. |
+| SHIPMENT_MODE | Shipping Mode. |
+| PACK_ID | Package identification in the cart. |
+| TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |

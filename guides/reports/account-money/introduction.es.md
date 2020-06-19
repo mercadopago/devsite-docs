@@ -17,7 +17,7 @@ Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás desca
 * Desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus reportes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [tus reportes](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus reportes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus reportes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus reportes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus reportes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [tus reportes](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y elige la opción *Todas tus transacciones*.
 
 
-## Valores del reporte
+### Valores del reporte
 
 Los movimientos de dinero se impactan automáticamente en el reporte cuando se aprueba la operación. Las operaciones pendientes o rechazadas, no estarán.
 

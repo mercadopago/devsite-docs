@@ -233,6 +233,24 @@ Atributo |	Descripción
   | **_failure._** URL de retorno ante pago cancelado.
 
 
+A través de las `back_url`, *retornarán los siguientes parámetros*:
+
+Parámetro |	Descripción
+------------ 	|	--------
+`collection_id` | ID del pago de Mercado Pago. |
+`collection_status` | Estado del pago. Por ejemplo: `approved` para un pago aprobado o `pending` para un pago pendiente. |
+`external_reference` | Valor del campo `external_reference` que hayas enviado a la hora de crear la preferencia de pago. |
+`payment_type` | Tipo de pago. Por ejemplo: `credit_card` para tarjetas de crédito o `ticket` para medios de pago en efectivo. |
+`merchant_order_id` | ID de la orden de pago generada en Mercado Pago. |
+`preference_id` | ID de la preferencia de pago de la que se está retornando. |
+`site_id` | ID del país de la cuenta de Mercado Pago del vendedor. Por ejemplo: ----[mla]---- MLA para Argentina.------------ ----[mlb]---- MLB para Brasil.------------ ----[mlm]---- MLM para México.------------ ----[mpe]---- MPE para Perú.------------ ----[mlc]---- MLC para Chile.------------ ----[mco]---- MCO para Colombia.------------ ----[mlu]---- MLU para Uruguay.------------ |
+`processing_mode` | Valor `aggregator`. |
+`merchant_account_id` | Valor `null`. |
+
+>  La información de los parámetros dependerá de la finalización del pago en el Checkout de Mercado Pago y de que no haya abandonado el flujo antes de retornar a tu sitio a través de la `back_url` de **_failure_**.
+
+
+
 [[[
 ```php
 <?php
@@ -323,7 +341,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Otras funcionalidades
 >
-> Configura tus pago y adapta Checkout Mercado Pago a tu negocio.
+> Configura tus pago y adapta Checkout de Mercado Pago a tu negocio.
 >
 > [Configurations](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
 

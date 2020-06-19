@@ -88,7 +88,7 @@ Tendo lojas criadas, você pode criar seus caixas. Considere o seguinte:
 | ------------- | ------------------------------------------------------------ |
 | `EXTERNAL_STORE_ID`     | Vincula o caixa com a loja. É um campo requerido e é o mesmo *external_id* da Sucursal previamente criada. |
 | `EXTERNAL_ID`           | Identifica univocamente cada caixa. É requerido e não se pode alterar nem repetir numa mesma conta de Mercado Pago. |
-| `URL`           | Somente é utilizado no modelo desatendido. Neste campo se declara o URL de um serviço de seu domínio ao qual  Mercado Pago consultará se houver um pedido disponível.  |
+
 
 [[[
  ```curl
@@ -98,8 +98,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
   "fixed_amount": true,
   "category": 621102,
   "external_store_id": "STORE001",
-  "external_id": "CAIXA0001",
-  "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
+  "external_id": "CAIXA0001"
 }
 ```
 ]]]
@@ -121,11 +120,3 @@ Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes ent
 >
 > [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-a/)
 
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Integrar o modelo autônomo do QR
->
-> Se a venda só pode ser concretizada com a ação do cliente, esse é o seu modelo!
->
-> [Integrar o modelo autônomo do QR](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-unattended/qr-unattended-part-a/)

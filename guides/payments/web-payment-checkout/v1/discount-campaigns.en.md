@@ -14,9 +14,9 @@ sites_supported:
 >
 > Note
 >
-> This documentation refers to the new version of the Checkout Mercado Pago.
+> This documentation refers to the new version of the Mercado Pago Checkout.
 >
-> Remember there is only active support and new functionalities for the [new version of the Checkout Mercado Pago.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Mercado Pago Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 Create discount campaigns to boost your sales using the marketing tools of your Mercado Pago account in the section Configuration for your Business: [Create discount](https://www.mercadopago.com.ar/campaigns/create).
 

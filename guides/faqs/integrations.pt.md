@@ -66,16 +66,6 @@ Isso porque os bancos emissores de cartão no Brasil ainda não dispõem de uma 
 
 Mas, não se preocupe, há outros [meios de pagamento disponíveis](https://www.mercadopago.com.br/ajuda/meios-de-pagamentos-vendedores_474) para oferecer para os seus compradores.
 
-## Como oferecer assinaturas
-
-Você pode criar um botão de assinatura que permitirá que você receba pagamentos periodicamente. Você escolhe quanto quer cobrar e seus clientes podem cadastrar o débito automático com um cartão de crédito.
-
-Você pode usá-lo para o que quiser, como cobrar mensalidades de academia, aluguéis ou receber doações.
-
-É muito simples, pois não requer conhecimento sobre programação e, caso tenha dúvidas sobre como configurá-lo, você pode acessar o [manual de configuração](https://www.mercadopago.com.br/ajuda/cobrar-debito-automatico-cartao_1181) no portal de ajuda do Mercado Pago.
-
-[Criar botão de assinatura](http://www.mercadopago.com.br/receive-payments/tools)
-
 ## Como oferecer parcelamento sem juros
 
 Criamos uma ferramenta para que você possa oferecer parcelamento sem juros e tornar seu negócio mais atrativo.

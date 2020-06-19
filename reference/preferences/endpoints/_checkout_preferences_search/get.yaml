@@ -1,0 +1,45 @@
+---
+resource: preferences.raml
+samples:
+- search_curl.sh
+- search_curl_response.json
+use:
+- client_id
+- collector_id
+- concept_id
+- corporation_id
+- date_created
+- expiration_date_from
+- expiration_date_to
+- expires
+- date_of_expiration
+- external_reference
+- integrator_id
+- items
+- last_updated
+- live_mode
+- marketplace
+- operation_type
+- payer_email
+- platform_id
+- product_id
+- purpose
+- sponsor_id
+errors:
+  - 400 BAD_REQUEST:
+    - ds_search_query:
+        description:
+          en: invalid query.
+          es: invalid query.
+          pt: invalid query.
+  - 401 UNAUTHORIZED:
+    - invalid_token:
+        description:
+          en: invalid_token.
+          es: invalid_token.
+          pt: invalid_token.
+    - invalid_caller_id:
+        description:
+          en: invalid caller_id
+          es: invalid caller_id
+          pt: invalid caller_id

@@ -5,7 +5,15 @@ You can find any information about generated payments using our APIs.
 ## Get created payments using your ID
 
 To get information about a payment using your ID, you need to make the following request:
-
+```curl
+curl -G -X GET \
+-H "accept: application/json" \
+"https://api.mercadopago.com/v1/payments/<payment_id>" \
+-d "access_token=ACCESS_TOKEN" \
+-d "status=approved" \
+-d "offset=0" \
+-d "limit=10"`
+```
 ```php
 <?php
 	require ('mercadopago.php');
@@ -17,15 +25,6 @@ To get information about a payment using your ID, you need to make the following
 	);
 ?>
 ```
-``curl -G -X GET \
--H "accept: application/json" \
-"https://api.mercadopago.com/v1/payments/<payment_id>" \
--d "access_token=ACCESS_TOKEN" \
--d "status=approved" \
--d "offset=0" \
--d "limit=10"`
-```
-
 
 Expected response:
 

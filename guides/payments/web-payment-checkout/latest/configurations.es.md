@@ -747,7 +747,7 @@ Header | Tipo de código | Identificadores
 `x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración.
 `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. 
 `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico.
-> Si necesitas tu `integrator_id` o tu `platform_id`, [Solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
+> Si necesitas tu `integrator_id` o tu `platform_id`, [solicita tu código ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 
 [[[
 ```php

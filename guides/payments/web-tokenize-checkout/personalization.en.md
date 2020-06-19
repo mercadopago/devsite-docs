@@ -125,9 +125,10 @@ The attributes that can be added and modified are the following.
 **Numerical amounts:**
 
 - Products: `data-summary-product`
+- Maximum amount of installments: `data-max-installments`
 - Discount: `data-summary-discount`
 - Shipping: `data-summary-shipping`
-- Surcharges: `data-summary-charges`
+- Surcharges: `data-summary-charge`
 - Taxes: `data-summary-taxes`
 - Outstanding balance: `data-summary-arrears`
 
@@ -149,6 +150,16 @@ Using the attribute `data-summary-product`, you can specify the amount in the de
 ```html
 data-summary-product="654"
 ```
+
+#### Maximum amount of installments
+
+Using the attribute `data-max-insallments`, you can limit the maximum amount of installments you want to offer your payer. For example:
+
+```html
+data-max-installments = 3
+```
+
+> In case the maximum amount of installment is `1`, the checkout installment section will be skipped. The minimum value for this attribute is `1`.
 
 
 #### Discount
@@ -189,10 +200,10 @@ data-summary-shipping="10"
 
 #### Surcharges
 
-Using the attribute `data-summary-charges`, you can specify the amount of surcharges in the detail of the purchase. For example:
+Using the attribute `data-summary-charge`, you can specify the amount of surcharges in the detail of the purchase. For example:
 
 ```html
-data-summary-charges="10"
+data-summary-charge="10"
 ```
 
 It will appear in the detail of the purchase under the concept of *"Surcharges"*.

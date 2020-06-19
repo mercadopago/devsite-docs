@@ -14,9 +14,9 @@ sites_supported:
 >
 > Note
 >
-> This documentation refers to the new version of the Checkout Mercado Pago.
+> This documentation refers to the new version of the Mercado Pago Checkout.
 >
-> Remember there is only active support and new functionalities for the [new version of the Checkout Mercado Pago.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Mercado Pago Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 In payment preferences, you can not only send information about the item to be paid, and the buyer’s, but also set the payment methods you do not want to accept, the return URL to your website after the payment, shipping options, etc.  
 

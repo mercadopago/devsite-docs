@@ -2,9 +2,16 @@
 sites_supported:
   - mla
   - mco
+indexable: false
 ---
 
 # Información adicional
+
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
 
 Es posible enviar información que puede mejorar el análisis de prevención de fraude. Para ello se debe enviar el campo `additional_info` con información del pagador y la dirección de envío. Mientras más información se envíe, mejor será la tasa de conversión de los pagos.
 

@@ -24,7 +24,7 @@ Once the application has been created, you will get the `APP_ID` (application id
 
 To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To do this, redirect the user to the following URL by sending in `client_id` the value of `APP_ID` and the `redirect_uri` that you got in the previous step:
 
-`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com`
+`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 You'll receive the authorization code in the URL that you specified:
 
@@ -142,7 +142,6 @@ If you want to charge a fee for each payment processed by your application on be
   $payment->description = "Title of what you are paying for";
   $payment->installments = 1;
   $payment->payment_method_id = "visa";
-  $payment->user_token = "ENV_USER_TOKEN";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
@@ -158,12 +157,11 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
       .setPaymentMethodId("visa")
-      .setUserToken("ENV_USER_TOKEN")
       .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
@@ -180,7 +178,6 @@ var payment_data = {
   description: 'Title of what you are paying for',
   installments: 1,
   payment_method_id: 'visa',
-  user_token: "ENV_USER_TOKEN"
   payer: {
     email: 'test_user_3931694@testuser.com'
   }
@@ -204,7 +201,6 @@ payment.token = 'ff8080814c11e237014c1ff593b57b4d'
 payment.description = 'Title of what you are paying for'
 payment.installments = 1
 payment.payment_method_id = "visa"
-payment.user_token = "ENV_USER_TOKEN"
 payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
@@ -220,14 +216,14 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
-In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago.com/mla/account/webhooks) in your account. 
+In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago.com/mla/account/webhooks) in your account.
 
 For more information, go to the [notifications section](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks).
 
 ### Refunds and cancellations
 
 The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the Mercado Pago account.
-In case the Marketplace is the one that does the refund/cancellation, you´ll have to use the credentials obtained for that user in the Oauth process. 
+In case the Marketplace is the one that does the refund/cancellation, you´ll have to use the credentials obtained for that user in the Oauth process.
 
 Cancellations can only be made using the cancellation API.
 
@@ -236,4 +232,4 @@ For more information, go to [refunds and cancellations.](https://www.mercadopago
 ### Test your integration
 
 You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
-[Test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing/) 
+[Test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing/)
