@@ -1,141 +1,160 @@
 ---
   indexable: false
 ---
+
+---
+ sites_supported:
+  - mlb
+---
+
 # CORE
 
 ## O que é CORE?
 
-[CORE Commerce](http://www.plataformacore.com.br) é um ecossistema focado em soluções multi canal para sua loja virtual que permite processar pagamentos através do Mercado Pago.
-Para obter maiores informações sobre as possibilidades que a CORE oferece acesse [sua página de recursos](http://www.plataformacore.com.br/recursos/).
+CORE Commerce é uma plataforma de e-commerce para sua loja virtual do grupo Linx commerce, que permite processar pagamentos através do Mercado Pago. 
+
+Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_configurando_os_dados_de_cartão_de_credito) e [boleto bancário](#bookmark_configurando_os_dados_de_boleto) no próprio checkout da sua loja.
 
-## Como posso operar com Mercado Pago na CORE
+## Etapas para configurar
 
-CORE permite operar Mercado Pago nas seguintes modalidades:
+Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 
-### Checkout Transparente
+1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/activities) no Mercado Pago caso ainda não tenha uma.
+2. Adicione o "Mercado Pago" como meio de pagamento dentro da sua loja.
+3. Configure a forma de pagamento Mercado Pago.
+4. Configure o meio de pagamento do contrato.
 
-Receba pagamentos em sua loja através de Cartão de Crédito e/ou Boleto Bancário no modo transparente, ou seja, tenha o layout do checkout customizado para a sua loja conforme disponibilizado pela plataforma CORE.
+## Adicione o Mercado Pago como meio de pagamento
 
-### Checkout Redirect
+Para **adicionar o Mercado Pago em sua loja**, siga os seguintes passos:
 
-Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
+1. No painel de administração de sua loja, acesse Meios de pagamentos no menu Configs.
+2. Clique no botão “Adicionar meio de pagamento". 
+3. Na lista de "Fornecedor de Serviço", selecione o "Mercado Pago V2" e clique em "Próximo Passo".
+4. Defina um "Nome" para o meio de pagamento Mercado Pago V2, selecione o status para "Ativo" e clique em salvar.
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_adicione_meio_pagamento-1.gif)
+<p>&nbsp;</p>
 
-## Conta Mercado Pago
+## Configure a forma de pagamento
 
-Antes de iniciar a configuração, é necessário que você possua uma conta válida no **Mercado Pago**, caso não tenha, pode realizar o cadastro acessando o [formulário de registro](https://www.mercadopago.com.br/registration-mp?mode=mp).
+Após ter adicionado o Mercado Pago, você tem a opção de oferecer no próprio checkout de sua loja pagamentos com [cartão de crédito](#bookmark_configurando_os_dados_de_cartão_de_credito) e [boleto bancário](#bookmark_configurando_os_dados_de_boleto).
 
-Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](https://www.mercadopago.com.br/).
+Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_mercado_pago) e consultar e configurar as [taxas e prazos](https://www.mercadopago.com.br/settings/release-options/) de suas vendas online quando quiser.
 
-## Como habilitar o Checkout Redirect
+### Configurando os dados da integração
 
-1. Acessar o painel administrativo de sua loja na plataforma.
+Para **configurar os dados de sua integração com o Mercado Pago em sua loja**, siga os seguintes passos:
 
-2. No menu Configs, selecionar a opção **MEIOS DE PAGAMENTO**.
+1. No painel de administração de sua loja, acesse Meios de pagamentos no menu Configs.
+2. Localize o meio de pagamento criado e clique em editar.
+3. Acesse a aba "Integração" e complete os campos "Public Key e Access Token Key" que correspondem as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) de "Produção" de sua conta "Mercado Pago" da seção "Integração".
+4. Preencha o nome que será informado na fatura de seu cliente.
+5. Na seção "Modo teste", selecione a opção "sim" caso queira habilitar transações de teste.
+6. Complete os campos "Public Key de teste e Access Token Key de teste" que correspondem as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) de "Sandbox" de sua conta "Mercado Pago".
+7. Na seção de "Parcelamento", selecione a configuração de parcelamento "Externo (API do Mercado Pago) onde utiliza as condições de parcelamento diretamente de sua conta Mercado Pago.
+8. Clique em "Salvar".
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_configurando_integracao-2.gif)
+<p>&nbsp;</p>
 
-    ![CORE Configuracao](/images/core1.png)
+### Configurando os dados de Cartão de Crédito
 
-3. Busque no menu pela opção **Integração MercadoPago** clique no quadro de seleção ao lado do logotipo Mercado Pago e depois clique no botão de editar representado por um lápis na lista de ações.
+Para **configurar os dados de Cartão de Crédito em sua loja**, siga os seguintes passos:
 
-    ![CORE Configuracao](/images/core19.png)
+1. No painel de administração de sua loja, acesse Meios de pagamentos no menu Configs.
+2. Localize o meio de pagamento criado e clique em editar.
+3. Acesse a aba "Cartões de Crédito", clique sobre a bandeira que deseja configurar e altere o status para "Ativo".
+4. Preencha os campos correspondentes caso necessário e clique em "Salvar".
 
-4. Na tela de dados gerais deixe o campo **ativo** como **sim**.
+| Campos | Dados necessários |
+|-------------------------------------------|---------------------------------------------------------------------------------------|
+| Porcentagem de juros | Caso deseje colocar uma porcentagem de juros, coloque um valor, caso não, deixe em 0,00. |
+| Tipo de juros | Emissor - Incluir juros no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir juros no total do pedido. |
+| Número total de parcelas | Coloque o número total de parcelas que será possível realizar o pedido. |
+| Número de parcelas sem juros | O número total de parcelas sem juros que será possível realizar o pedido. |
+| Parcela mínima | Valor mínimo disponível para cada parcela de uma compra. |
+| Identificador de Integração | Coloque um código que será identificado no seu ERP. |
+| Ordem | A ordem em que a bandeira aparecerá no Checkout. |
+| Caminho Imagem | O caminho de onde puxará a imagem para a bandeira do cartão. |
+<br>
 
-    ![CORE Configuracao](/images/core3.png)
+> WARNING
+>
+> Importante
+>
+> Ao utilizar configuração de parcelamento externo, todas as configurações de parcelamento realizadas na plataforma serão desconsideradas.
+> O parcelamento externo NÃO será mostrado em listagens ou no detalhe do produto.
 
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_configurando_cartao-3.gif)
+<p>&nbsp;</p>
 
-5. No menu **Integração** informe as [credenciais de sua conta mercado pago]([FAKER][CREDENTIALS][URL]).
+### Configurando os dados de Boleto
 
-    ![CORE Configuracao](/images/core0.png)
+Para configurar os dados de Boleto Bancário o em sua loja, siga os seguintes passos:
 
-6. No menu **Cartões de Crédito** navegue pelos paineis mudando o status de cada bandeira para **ativo**.
+1. No painel de administração de sua loja, acesse Meios de pagamentos no menu Configs.
+2. Localize o meio de pagamento criado e clique em editar.
+3. Acesse a aba "Boletos" e altere o status para "Ativo".
+4. Preencha o campo "Identificador de Integração" com  informação que será identificada em seu ERP.
+5. Informe a "Ordem" em que o boleto aparecerá em seu checkout e clique em "Salvar".
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_configurando_boleto-4.gif)
+<p>&nbsp;</p>
 
-    ![CORE Configuracao](/images/core6.png)
+## Configurando o parcelamento em sua conta Mercado Pago.
 
-7. No menu **Boletos** assim como feito para as bandeiras de cartão de crédito clique no status **ativo**.
+1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio"
+2. Clique na opção “Configurações”, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
+3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_parcelamento_conta-5.gif)
+<p>&nbsp;</p>
 
-    ![CORE Configuracao](/images/core7.png)
+E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
-8. Ativas as formas de pagamento de sua escolha e definidas as credenciais é preciso então ativar a configuração do contrato para que seja disponibilizado na loja, avance para o tópico **Como configurar contratos**.
+## Configurando meios de pagamento do contrato
 
-# Como habilitar o Checkout Transparente
+O contrato tem a finalidade de determinar configurações específicas que serão utilizadas pela sua loja.
 
-1. Acessar o painel administrativo de sua loja na plataforma.
+### Criando um contrato
 
-2. No menu Configs, selecionar a opção **MEIOS DE PAGAMENTO**.
+Para **criar um contrato em sua loja**, siga os seguintes passos:
 
-    ![CORE Configuracao](/images/core1.png)
+1. No painel de administração de sua loja, acesse Contratos no menu Backoffice.
+2. Clique no botão “Adicionar Contrato".
+3. Preencha um "Nome" para o contrato que está sendo criado e clique em salvar.
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_criando_um_contrato-6.gif)
+<p>&nbsp;</p>
 
-3. Busque no menu pela opção **MercadoPagoV2** clique no quadro de seleção ao lado do logotipo Mercado Pago e depois clique no botão de editar representado por um lápis na lista de ações.
+### Definindo os meios de pagamento do contrato
 
-    ![CORE Configuracao](/images/core2.png)
+Para **definir os meios de pagamento do contrato em sua loja**, siga os seguintes passos:
 
-4. Na tela de dados gerais deixe o campo **ativo** como **sim**.
+1. No painel de administração de sua loja, acesse Contratos no menu Backoffice.
+2. Localize o "Contrato" criado e clique em editar.
+3. Localize a sessão "Meios de Pagamento" e defina qual a opção que o contrato irá refletir para o meio de pagamento, sendo eles:
 
-    ![CORE Configuracao](/images/core4.png)
+- **Todos os meios de pagamento ativos na plataforma.** Irá permitir que todos os meios de pagamento habilitados na plataforma sejam refletidos para este contrato.
+- **Definidos abaixo.** Escolher quais os meios de pagamento irão fazer parte do contrato criado.
 
+4. Clique em "Salvar".
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_meio_pagamento_contrato-7.gif)
+<p>&nbsp;</p>
 
-5. No menu **Integração** informe as [credenciais de sua conta mercado pago]([FAKER][CREDENTIALS][URL]).
+### Atribuindo meio de pagamento do contrato a um canal
 
-    ![CORE Configuracao](/images/core5.png)
+Para **atribuir o meio de pagamento do contrato ao canal de sua loja**, siga os seguintes passos:
 
-6. No menu **Cartões de Crédito** navegue pelos paineis mudando o status de cada bandeira para **ativo**.
+1. No painel de administração de sua loja, acesse Canais no menu Canais.
+2. Localize o canal de sua loja e clique em editar.
+3. Na sessão "Contrato Padrão", adicione o contrato criado anteriormente.
+4. Clique em "Salvar".
+<p>&nbsp;</p>
+    ![CORE Configuracao](/images/core/core_atribuindo_contrato_ao_canal-8.gif)
+<p>&nbsp;</p>
 
-    ![CORE Configuracao](/images/core6.png)
-
-7. No menu **Boletos** assim como feito para as bandeiras de cartão de crédito clique no status **ativo**.
-
-    ![CORE Configuracao](/images/core7.png)
-
-8. Ativas as formas de pagamento de sua escolha e definidas as credenciais é preciso então ativar a configuração do contrato para que seja disponibilizado na loja, avance para o tópico **Como configurar contratos**.
-
-## Como configurar contratos
-
-1. Acessar o painel administrativo de sua loja na plataforma.
-
-2. No menu Backoffice, selecionar a opção **CONTRATOS**.
-
-    ![CORE Configuracao](/images/core8.png)
-
-3. Selecionar a opção **Adicionar Contrato**, ou edite um existente.
-
-    ![CORE Configuracao](/images/core9.png)
-
-4. Caso esteja criando um novo contrato estara selecionado o meio de pagamento do contrato padrão, selecionar a opção **Definidos abaixo**.
-
-    ![CORE Configuracao](/images/core10.png)
-
-5. Na tela de aviso, selecionar a opção **Sim**.
-
-    ![CORE Configuracao](/images/core11.png)
-
-6. Retornando ao menu do contrato, selecionar a opção **Selecione**.
-
-    ![CORE Configuracao](/images/core12.png)    
-
-7. Defina então para este contrato de Meio de Pagamento o Checkout que Configurou no tópico anterior clicando nas setas de maneira com que as formas de pagamento selecionadas mudem para o menu da direita, selecionar então a opção **salvar**.
-
-    ![CORE Configuracao](/images/core13.png)    
-
-## Como configurar multicanais
-
-1. Acessar o painel administrativo de sua loja na plataforma.
-
-2. No menu Canais, selecionar a opção **CANAIS**.
-
-    ![CORE Configuracao](/images/core14.png)
-
-3.  Selecionar a opção **Adicionar Canal**, ou edite um existente.
-
-    ![CORE Configuracao](/images/core15.png)
-
-4. No menu de definição do Tipo de Canal, selecionar a opção **Próximo passo**.
-
-    ![CORE Configuracao](/images/core16.png)
-
-5. Defina as informações de configuração do canal, rolar para baxio até encontrar a opção **Contrato Padrão**.
-
-    ![CORE Configuracao](/images/core17.png)
-
-6. Clique em **Selecione** e escolha o contrato configurado no tópico anterior, selecionar a opção **Salvar e fechar**.
-
-    ![CORE Configuracao](/images/core18.png)  
+> Para mais informação, visite o [site oficial da CoreCommerce - Linx](https://docs.linxcommerce.com.br/docs).
