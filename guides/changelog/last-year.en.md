@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Mercado Pago's release notes 2019
 
 Each release note describes the new changes applying to a version. This changes may include:

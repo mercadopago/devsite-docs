@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Release notes Mercado Pago 2019
 
 Cada release note descreve as alterações que se aplicam a uma versão. Essas alterações podem incluir:
