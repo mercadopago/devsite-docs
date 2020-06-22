@@ -29,8 +29,8 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 |-------------------------------------------|---------------------------------------------------------------------------------------|
 | Nome da afiliação | Defina o nome que identificará a sua Afiliação. |
 | OAuth login | Não é utilizado. Deixe-o como está. |
-| PublicKey | Refere-se às [credenciais da sua conta]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com sua chave pública. |
-| AccessToken | Refere-se às [credenciais da sua conta]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com sua chave privada. |
+| PublicKey | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com sua Public Key. |
+| AccessToken | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com seu Access Token. |
 | RefreshToken | Deixar em branco. |
 | ExpiredTokenIn | Deixar em branco. |
 | Merchant Account Id | Deixar em branco. |
@@ -176,4 +176,4 @@ Os erros mais comuns são os seguintes:
 > Antes de iniciar sua operação em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
-> Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status de Vtex](https://status.vtex.com/).
+> Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).
