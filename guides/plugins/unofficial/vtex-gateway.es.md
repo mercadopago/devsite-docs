@@ -418,7 +418,7 @@ Los datos más significativos son los siguientes:
 Los errores más comunes son los siguientes:
 
 | Mensaje | Significado |
-|-------------------|--------------------------------------------|
+| --- | --- |
 | `unauthorized_use_of_live_credentials` | Las credenciales de la cuenta de Mercado Pago no están habilitadas. Tienes que ir a la página de credenciales y completar el formulario de “Quiero ir a producción”. |
 | `invalid installments` | Se está intentando procesar el pago con una cuota que no está habilitada. Se debe ir a la configuración del medio de pago y definir las cuotas como Automáticas. |
 | `invalid_users` | Se está intentando pagar con el mismo usuario que se está cobrando. Volver a intentar el pago con un mail pagador distinto |

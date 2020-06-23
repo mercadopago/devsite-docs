@@ -161,6 +161,7 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
+<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
@@ -185,7 +186,7 @@ Para crear esta condición de pago, sigue estos pasos:
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-
+<br>
 En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 | Tipo | Medio de pago | Bandera de la tarjeta | Bines | Código de pago del adquirente |
@@ -506,6 +507,7 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
+<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
@@ -530,7 +532,7 @@ Para crear esta condición de pago, sigue estos pasos:
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-
+<br>
 En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 | Tipo | Medio de pago | Bandera de la tarjeta | Bines | Código de pago del adquirente |
@@ -997,6 +999,7 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
+<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
@@ -1090,7 +1093,6 @@ script.setAttribute("output","vtex.deviceFingerprint");
 script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
-<br>
 
 ## Comprender los log de VTEX
 
