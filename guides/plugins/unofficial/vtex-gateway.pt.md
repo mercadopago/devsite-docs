@@ -15,4 +15,3 @@ indexable: false
 <br>
 [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex-gateway/)
 
-------------
