@@ -121,3 +121,11 @@ Con esta información puedes realizar las actualizaciones necesarias en tu plata
 
 ?>
 ```
+
+## Recibir un solo tipo de notificación
+
+Si quieres recibir solamente las notificaciones de Webhooks, y no de IPN, puedes agregar en la *notification_url* el parámetro `source_news=webhooks`. Como por ejemplo:
+
+`https://www.yourserver.com/notifications?source_news=webhooks`
+
+> El cambio no afecta a los parámetros ya incluidos en la URL.

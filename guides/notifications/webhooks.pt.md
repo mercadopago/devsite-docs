@@ -125,3 +125,11 @@ Com essas informações, você poderá realizar as atualizações necessárias n
 
 ?>
 ```
+
+## Receber apenas um tipo de notificação
+
+Se deseja receber notificações apenas de Webhooks, e não de IPN, você pode adicionar na *notification_url* o parâmetro `source_news=webhooks`. Como por exemplo:
+
+`https://www.yourserver.com/notifications?source_news=webhooks`
+
+> A alteração não afeta os parâmetros já incluídos no URL.
