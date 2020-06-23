@@ -183,6 +183,5 @@ If you want to receive notifications only from IPN, and not from Webhooks, you c
 
 `https://www.yourserver.com/notifications?source_news=ipn`
 
-> And don't worry, the change doesn't affect the parameters already included in the URL.
-
+> The change doesn't affect the parameters already included in the URL.
 
