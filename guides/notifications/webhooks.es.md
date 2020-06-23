@@ -128,5 +128,4 @@ Si quieres recibir solamente las notificaciones de Webhooks, y no de IPN, puedes
 
 `https://www.yourserver.com/notifications?source_news=webhooks`
 
-> Y no te preocupes, el cambio no afecta a los parámetros ya incluidos en la URL.
-
+> El cambio no afecta a los parámetros ya incluidos en la URL.
