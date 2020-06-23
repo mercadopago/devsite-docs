@@ -183,4 +183,4 @@ Se deseja receber notificações apenas de IPN, e não de Webhooks, você pode a
 
 `https://www.yourserver.com/notifications?source_news=ipn`
 
-> E não se preocupe, a alteração não afeta os parâmetros já incluídos no URL.
+> A alteração não afeta os parâmetros já incluídos no URL.
