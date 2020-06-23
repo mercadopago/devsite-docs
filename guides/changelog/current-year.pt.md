@@ -1,6 +1,6 @@
 # Changelog
 
-Saiba mais sobre as novas versões e atualizações das integrações do Mercado Pago.
+Descubra tudo sobre as novas versões e atualizações das integrações do Mercado Pago.
 
 ---
 
@@ -48,11 +48,15 @@ Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compat
 > 
 > WooCommerce
 
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
 Lançamos uma nova versão do WooCommerce.
 
-Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+> GIT
+> 
+> Github
+> 
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
 
 ### 6 de maio
@@ -67,7 +71,11 @@ Confira no GitHub o detalhe das [últimas atualizações produtivas](https://git
 
 Lançamos uma nova versão do SDK Java 1.6.
 
-Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
+> GIT
+> 
+> Github
+> 
+> Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
 
 
 ### 4 de maio
@@ -82,7 +90,11 @@ Confira no Github o detalhe das [últimas atualizações produtivas](https://git
 
 Lançamos uma nova versão do SDK .NET.
 
-Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
+> GIT
+> 
+> Github
+> 
+> Confira no Github o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
 
 ---
 
@@ -149,10 +161,15 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 > 
 > Prestashop
 
-Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Mercado Pago através de modal para que seus compradores possam comprar sem sair de seu site.
-Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases).
-
 [Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
+
+Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Mercado Pago através de modal para que seus compradores possam comprar sem sair de seu site.
+
+> GIT
+> 
+> Github
+> 
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases).
 
 ---
 
@@ -162,7 +179,7 @@ Confira no GitHub o detalhe das [últimas atualizações produtivas](https://git
 
 > CHANGELOG
 > 
-> Saiba mais sobre seu negócio
+> Obtenha informações sobre seu negócio
 > 
 > FEATURE
 > 
