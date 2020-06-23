@@ -68,7 +68,7 @@ Queremos dar a melhor experiência para você sempre. Por isso, informamos quais
 | Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
 | Shopify                 | -                                                                                           |
 
-[Ver módulos](https://www.mercadopago.com.ar/developers/pt/plugins_sdks).
+[Ver módulos](https://www.mercadopago.com.ar/developers/pt/guides/plugins).
 
 > Lembre-se de que os módulos e plataformas não mencionados têm suporte apenas da comunidade. 
 

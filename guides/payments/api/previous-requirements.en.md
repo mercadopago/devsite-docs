@@ -39,7 +39,7 @@ MercadoPago.js allows you to create a payment token to send card data to your ba
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install Mercado Pago SDK
 
-Install an [official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/plugins_sdks#bookmark_sdk_title) to simplify your interaction with our APIs.
+Install an [official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks) to simplify your interaction with our APIs.
 
 [[[
 ```php

@@ -79,7 +79,7 @@ issuer_id = Request["issuer_id"]
 
 ### Passo 4: Realizar o pagamento
 
-Para realizar o pagamento, deverá efetuar uma chamada a API utilizando o [SDK do Mercado Pago](https://www.mercadopago.com.br/developers/pt/plugins_sdks) que corresponda a linguagem de programação que está utilizando em seu site.
+Para realizar o pagamento, deverá efetuar uma chamada a API utilizando o [SDK do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/sdks) que corresponda a linguagem de programação que está utilizando em seu site.
 
 Somente deverá incluir uma *chamada à API* incluindo os dados que recebeu do checkout:
 
