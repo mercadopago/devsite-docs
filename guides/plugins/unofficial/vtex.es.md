@@ -1071,7 +1071,26 @@ Para crear esta condición de pago, sigue estos pasos:
 
 
 **¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.**
+<br>
 
+## Obtén una mejor aprobación enviando el device fingerprint
+Mercado Pago tiene sus propias herramientas de prevención de fraude. **Te recomendamos que envíes información sobre el comportamiento de tus clientes para detectar movimientos inusuales y evitar transacciones fraudulentas**. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
+
+Para configurar el device fingerprint, sigue estos pasos:
+
+1. En el panel de administración, accede a tu Checkout desde el módulo en Configuraciones de la tienda.
+2. En la configuración de tu sitio, haz clic en Editar.
+3. En la pestaña Código, ingresa a “checkout5-custom.js” o a “checkout6-custom.js” (dependiendo de la versión de Checkout de VTEX que estés usando) desde el módulo de archivos.
+4. Copia y pega el siguiente código y guarda los cambios.
+
+```javascript
+var script = document.createElement("script");
+script.src = "https://www.mercadopago.com/v2/security.js";
+script.setAttribute("output","vtex.deviceFingerprint");
+script.setAttribute("view","checkout");
+document.body.appendChild(script);
+```
+<br>
 
 ## Comprender los log de VTEX
 
