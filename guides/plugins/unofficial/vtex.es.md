@@ -814,6 +814,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
+<br>
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
