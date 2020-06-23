@@ -31,7 +31,7 @@ Para **adicionar o Mercado Pago em sua loja**, siga os seguintes passos:
 1. No painel de administração de sua loja, acesse Meios de pagamentos no menu Configs.
 2. Clique no botão “Adicionar meio de pagamento". 
 3. Na lista de "Fornecedor de Serviço", selecione o "Mercado Pago V2" e clique em "Próximo Passo".
-4. Defina um "Nome" para o meio de pagamento Mercado Pago V2, selecione o status para "Ativo" e clique em salvar.
+4. Defina um "Nome" para o meio de pagamento Mercado Pago V2, selecione o status "Ativo".
 <p>&nbsp;</p>
     ![CORE Configuracao](/images/core/core_adicione_meio_pagamento-1.gif)
 <p>&nbsp;</p>
@@ -44,16 +44,14 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 
 ### Configurando os dados da integração
 
-Para **configurar os dados de sua integração com o Mercado Pago em sua loja**, siga os seguintes passos:
+Após ter adicionado o meio de pagamento, **continue configurando os dados de sua integração com o Mercado Pago em sua loja**, siga os seguintes passos:
 
-1. No painel de administração de sua loja, acesse Meios de pagamentos no menu Configs.
-2. Localize o meio de pagamento criado e clique em editar.
-3. Acesse a aba "Integração" e complete os campos "Public Key e Access Token Key" que correspondem as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) de "Produção" de sua conta "Mercado Pago" da seção "Integração".
-4. Preencha o nome que será informado na fatura de seu cliente.
-5. Na seção "Modo teste", selecione a opção "sim" caso queira habilitar transações de teste.
-6. Complete os campos "Public Key de teste e Access Token Key de teste" que correspondem as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) de "Sandbox" de sua conta "Mercado Pago".
-7. Na seção de "Parcelamento", selecione a configuração de parcelamento "Externo (API do Mercado Pago) onde utiliza as condições de parcelamento diretamente de sua conta Mercado Pago.
-8. Clique em "Salvar".
+1. Acesse a aba "Integração" e complete os campos "Public Key e Access Token Key" que correspondem as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) de "Produção" de sua conta "Mercado Pago" da seção "Integração".
+2. Preencha o nome que será informado na fatura de seu cliente.
+3. Na seção "Modo teste", selecione a opção "sim" caso queira habilitar transações de teste.
+4. Complete os campos "Public Key de teste e Access Token Key de teste" que correspondem as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) de "Sandbox" de sua conta "Mercado Pago".
+5. Na seção de "Parcelamento", selecione a configuração de parcelamento "Externo (API do Mercado Pago) onde utiliza as condições de parcelamento diretamente de sua conta Mercado Pago.
+6. Clique em "Salvar".
 <p>&nbsp;</p>
     ![CORE Configuracao](/images/core/core_configurando_integracao-2.gif)
 <p>&nbsp;</p>
@@ -157,4 +155,11 @@ Para **atribuir o meio de pagamento do contrato ao canal de sua loja**, siga os 
     ![CORE Configuracao](/images/core/core_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
 
+> WARNING
+>
+> Importante
+>
+> Antes de iniciar sua operação em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
+
+<!-- -->
 > Para mais informação, visite o [site oficial da CoreCommerce - Linx](https://docs.linxcommerce.com.br/docs).
