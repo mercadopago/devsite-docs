@@ -162,8 +162,8 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 > Importante
 >
 > Es importante que en Mercado Pago esté creado el medio de pago para ser procesado como modelo gateway.
-<br>
 
+<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
@@ -388,7 +388,6 @@ script.setAttribute("output","vtex.deviceFingerprint");
 script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
-<br>
 
 ## Comprender los log de VTEX
 
