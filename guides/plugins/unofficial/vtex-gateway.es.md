@@ -57,7 +57,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | AccessToken | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave privada]([FAKER][CREDENTIALS][URL]). |
 | RefreshToken | Dejar en blanco. |
 | ExpiredTokenIn | Dejar en blanco. |
-| Merchant Account Id | Deberás configurar este campo con la `merchant-account-id` brindada por Mercado Pago |
+| Merchant Account Id | Deberás configurar este campo con la `merchant-account-id` brindada por Mercado Pago. |
 | Processing Mode | Elige `gateway` como modo de procesamiento a partir de MercadoPagoV1. |
 | CountryName | Argentina. |
 | SoftDescriptor | Indica el nombre que va a aparecer para identificar una transacción de tu tienda en el resumen de la tarjeta del usuario. |
