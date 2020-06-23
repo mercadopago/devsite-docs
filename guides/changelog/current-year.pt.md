@@ -48,9 +48,9 @@ Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compat
 > 
 > WooCommerce
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
-
 Lançamos uma nova versão do WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
 
 > GIT
 > 
@@ -161,9 +161,9 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 > 
 > Prestashop
 
-[Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
-
 Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Mercado Pago através de modal para que seus compradores possam comprar sem sair de seu site.
+
+[Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
 
 > GIT
 > 
