@@ -200,7 +200,7 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 >
 > Importante
 >
-> Las configuración de las cuotas e intereses se debe realizar en VTEX. Es importante que en Mercado Pago esté creado el medio de pago para ser procesado como modelo gateway con todas las cuotas prendidas y con los intereses en 0. <br>
+> Las configuración de las cuotas e intereses se debe realizar en VTEX. Es importante que en Mercado Pago esté creado el medio de pago para ser procesado como modelo gateway con todas las cuotas prendidas y con los intereses en 0.
 <br>
 
 
