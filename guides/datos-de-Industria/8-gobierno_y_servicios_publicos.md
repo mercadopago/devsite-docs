@@ -1,29 +1,18 @@
-# Turismo
+# Gobierno y Servicios Públicos
 
 ## Campos a enviar: Additional Info
 
 ### **Items:**
 
-| Array: Items          | Tipo    | Descripción                        |
-| --------------------- | ------- | ---------------------------------- |
-| id                    | String  | Código de item                     |
-| title                 | String  | Nombre de item                     |
-| description           | String  | Descripción del item               |
-| category_id           | String  | Categoría del item                 |
-| quantity              | Integer | Cantidad de items                  |
-| unit_price            | Float   | Precio unitario                    |
-| category_descriptor   | Object  | Descripción de la categoría        |
-| passenger             | Object  | Información adicional del pasajero |
-| first_name            | String  | Nombre                             |
-| last_name             | String  | Apellido                           |
-| identification_type   | String  | Tipo de identificación             |
-| identification_number | String  | Número de identificación           |
-| route                 | Object  | Información de la ruta             |
-| departure             | String  | Salida                             |
-| destination           | String  | Llegada                            |
-| departure_date_time   | Date    | Fecha de salida                    |
-| arrival_date_time     | Date    | Fecha de llegada                   |
-| company               | String  | Compañía                           |
+| Array: Items | Tipo    | Descripción          |
+| ------------ | ------- | -------------------- |
+| id           | String  | Código de item       |
+| title        | String  | Nombre de item       |
+| description  | String  | Descripción del item |
+| category_id  | String  | Categoría del item   |
+| quantity     | Integer | Cantidad de items    |
+| unit_price   | Float   | Precio unitario      |
+| event_date   | Date    | Fecha del evento     |
 
 
 
@@ -51,6 +40,16 @@
 
 
 
+### **Shipments:**
+
+| Object: Shipment | Tipo    | Descripción                      |
+| ---------------- | ------- | -------------------------------- |
+| receiver_address | Object  | Datos de dirección del comprador |
+| zip_code         | String  | Código Postal                    |
+| state_name       | String  | Provincia                        |
+| city_name        | String  | Ciudad                           |
+| street_number    | Integer | Número de calle                  |
+
 ```json
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
 --header 'Content-Type: application/json' \
@@ -70,25 +69,12 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "id": "1234",
             "currency_id": "ARS",
             "title": "Test - Title",
+            "picture_url": "",
             "description": "Test - Description",
-            "category_id": "Travels",
-            "category_descriptor":{
-             "passenger": {
-               "first_name": "Test",
-               "last_name": "Tester",
-              	   	"type": "DNI",
-              	 	  "number": 12345678
-              },
-              "route": {
-            	 "departure": "Buenos Aires",
-            	 "destination": "Londres",
-            	 "departure_date_time": "2022-03-12T12:58:41.425-04:00",
-            	 "arrival_date_time": "2022-03-14T12:58:41.425-04:00",
-            	 "company": "Airlines"
-            }
-},
+            "category_id": "services",
             "quantity": 1,
-            "unit_price": 150
+            "unit_price": 150,
+            "event_date": "2020-06-02T12:58:41.425-04:00"
         }
     ],
     "payer": {
@@ -129,6 +115,16 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             }
         ],
         "installments": null
+    },
+    "shipments": {
+        "mode": "not_specified",
+        "receiver_address": {
+            "zip_code": "12345",
+            "street_name": "Street Name",
+            "city_name": "Rio de Janeiro",
+            "state_name": "Rio de Janeiro",
+            "street_number": 1234
+        }
     }
 }'
 ```

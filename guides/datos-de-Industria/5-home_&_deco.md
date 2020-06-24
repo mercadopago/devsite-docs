@@ -1,32 +1,18 @@
-# General: Additional Info
+# Home & Deco
 
-## Campos a enviar
+## Campos a enviar: Additional Info
 
 ### **Items:**
 
-| Array: Items          | Tipo    | Descripción                                              |
-| --------------------- | ------- | -------------------------------------------------------- |
-| id                    | String  | Código de item                                           |
-| title                 | String  | Nombre de item                                           |
-| description           | String  | Descripción del item                                     |
-| picture_url           | String  | URL de imagen                                            |
-| category_id           | String  | Categoría del item                                       |
-| quantity              | Integer | Cantidad de items                                        |
-| unit_price            | Float   | Precio unitario                                          |
-| warranty              | Boolean | True si el producto tiene garantía, False si no la tiene |
-| event_date            | Date    | Fecha del evento                                         |
-| passenger             | Object  | Información adicional del pasajero                       |
-| first_name            | String  | Nombre                                                   |
-| last_name             | String  | Apellido                                                 |
-| identification        | Object  | Identificación del pagador                               |
-| identification_type   | String  | Tipo de identificación                                   |
-| identification_number | String  | Número de identificación                                 |
-| route                 | Object  | Información de la ruta                                   |
-| departure             | String  | Salida                                                   |
-| destination           | String  | Llegada                                                  |
-| departure_date_time   | Date    | Fecha de salida                                          |
-| arrival_date_time     | Date    | Fecha de llegada                                         |
-| company               | String  | Compañía                                                 |
+| Array: Items | Tipo    | Descripción                                              |
+| ------------ | ------- | -------------------------------------------------------- |
+| id           | String  | Código de item                                           |
+| title        | String  | Nombre de item                                           |
+| description  | String  | Descripción del item                                     |
+| category_id  | String  | Categoría del item                                       |
+| quantity     | Integer | Cantidad de items                                        |
+| unit_price   | Float   | Precio unitario                                          |
+| warranty     | Boolean | True si el producto tiene garantía, False si no la tiene |
 
 
 
@@ -36,6 +22,9 @@
 | ------------------------ | ------- | ------------------------------------------------------------ |
 | first_name               | String  | Nombre                                                       |
 | last_name                | String  | Apellido                                                     |
+| identification           | Object  | Datos de identificación                                      |
+| identification_type      | String  | Tipo de identificación                                       |
+| identification_number    | String  | Número de identificación                                     |
 | phone                    | Object  | Datos de teléfono                                            |
 | area code                | Integer | Código de área                                               |
 | number                   | Integer | Número de teléfono                                           |
@@ -61,8 +50,6 @@
 | state_name       | String  | Provincia                                       |
 | city_name        | String  | Ciudad                                          |
 | street_number    | Integer | Número de calle                                 |
-| floor            | String  | Piso                                            |
-| apartment        | String  | Apartamento                                     |
 | express_shipment | Boolean | True si lo tiene, False si no lo tiene          |
 
 ```json
@@ -86,26 +73,10 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "title": "Test - Title",
             "picture_url": "",
             "description": "Test - Description",
-            "category_id": "others",
-            "passenger": {
-              "first_name": "Test",
-              "last_name": "Tester",
-              	 "identification": {
-              	   	"type": "DNI",
-              	 	  "number": 12345678
-              	 }
-              },
-            "route": {
-            	"departure": "Buenos Aires",
-            	"destination": "Londres",
-            	"departure_date_time": "2022-03-12T12:58:41.425-04:00",
-            	"arrival_date_time": "2022-03-14T12:58:41.425-04:00",
-            	"company": "Airlines"
-            },
-            "warranty": false,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
+            "category_id": "home",
             "quantity": 1,
-            "unit_price": 150
+            "unit_price": 150,
+            "warranty": false,
         }
     ],
     "payer": {
@@ -161,4 +132,3 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     }
 }'
 ```
-

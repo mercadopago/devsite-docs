@@ -1,4 +1,4 @@
-# Turismo
+# Hotelería
 
 ## Campos a enviar: Additional Info
 
@@ -8,22 +8,16 @@
 | --------------------- | ------- | ---------------------------------- |
 | id                    | String  | Código de item                     |
 | title                 | String  | Nombre de item                     |
-| description           | String  | Descripción del item               |
 | category_id           | String  | Categoría del item                 |
 | quantity              | Integer | Cantidad de items                  |
 | unit_price            | Float   | Precio unitario                    |
+| event_date            | Date    | Fecha del evento                   |
 | category_descriptor   | Object  | Descripción de la categoría        |
 | passenger             | Object  | Información adicional del pasajero |
 | first_name            | String  | Nombre                             |
 | last_name             | String  | Apellido                           |
 | identification_type   | String  | Tipo de identificación             |
 | identification_number | String  | Número de identificación           |
-| route                 | Object  | Información de la ruta             |
-| departure             | String  | Salida                             |
-| destination           | String  | Llegada                            |
-| departure_date_time   | Date    | Fecha de salida                    |
-| arrival_date_time     | Date    | Fecha de llegada                   |
-| company               | String  | Compañía                           |
 
 
 
@@ -49,8 +43,6 @@
 | is_first_purchase_online | Boolean | True si lo es, False si no lo es                             |
 | last_purchase            | Date    | Fecha de la última compra en el sitio                        |
 
-
-
 ```json
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
 --header 'Content-Type: application/json' \
@@ -72,22 +64,16 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "title": "Test - Title",
             "description": "Test - Description",
             "category_id": "Travels",
-            "category_descriptor":{
-             "passenger": {
-               "first_name": "Test",
-               "last_name": "Tester",
-              	   	"type": "DNI",
-              	 	  "number": 12345678
-              },
-              "route": {
-            	 "departure": "Buenos Aires",
-            	 "destination": "Londres",
-            	 "departure_date_time": "2022-03-12T12:58:41.425-04:00",
-            	 "arrival_date_time": "2022-03-14T12:58:41.425-04:00",
-            	 "company": "Airlines"
-            }
-},
+            "category_descriptor": {
+                "passenger": {
+                    "first_name": "Test",
+                    "last_name": "Tester",
+                    "type": "DNI",
+                    "number": 12345678
+                }
+            },
             "quantity": 1,
+            "event_date": "2020-06-02T12:58:41.425-04:00",
             "unit_price": 150
         }
     ],

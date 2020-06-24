@@ -1,138 +1,133 @@
 # Retail
 
-## Campos a enviar
-
-### **IP Address:**
-
-| Parámetro: IP Address | Tipo   | Descripción                                         |
-| --------------------- | ------ | --------------------------------------------------- |
-| ip_address            | String | dirección de IP desde donde se originó la solicitud |
-
-
+## Campos a enviar: Additional Info
 
 ### **Items:**
 
-| Parámetro: Item       | Tipo    | Descripción                                                 |
-| --------------------- | ------- | ----------------------------------------------------------- |
-| id                    | String  | Código de item                                              |
-| title                 | String  | Nombre de item                                              |
-| description           | String  | Descripción del item                                        |
-| picture_url           | String  | URL de imagen                                               |
-| category_id           | String  | Categoría del item                                          |
-| quantity              | Integer | Cantidad de items                                           |
-| unit_price            | Float   | Precio unitario                                             |
-| warranty              | Binary  | Garantía: 1 si el producto tiene garantía, 0 si no la tiene |
-| event_date            | Date    | Fecha del evento                                            |
-| Passenger             | Array   | Información adicional si se envia category_id               |
-| first_name            | String  | Nombre                                                      |
-| last_name             | String  | Apellido                                                    |
-| Identification        | Object  | Identificacion del pagador. Objeto dentro de Passenger      |
-| identification_type   | String  | Tipo de identificación                                      |
-| identification_number | String  | Número de identificación                                    |
-| Route                 | Array   | Información adicional si se envia category_id               |
-| departure             | String  | Salida                                                      |
-| destination           | String  | Llegada                                                     |
-| departure_date_time   | Date    | Fecha de salida                                             |
-| arrival_date_time     | Date    | Fecha de llegada                                            |
-| company               | String  | Compañía                                                    |
+| Array: Items | Tipo    | Descripción          |
+| ------------ | ------- | -------------------- |
+| id           | String  | Código de item       |
+| title        | String  | Nombre de item       |
+| description  | String  | Descripción del item |
+| picture_url  | String  | URL de imagen        |
+| category_id  | String  | Categoría del item   |
+| quantity     | Integer | Cantidad de items    |
+| unit_price   | Float   | Precio unitario      |
 
 
 
 ### **Payer:**
 
-| Parámetro: Payer         | Tipo    | Descripción                                                  |
+| Object: Payer            | Tipo    | Descripción                                                  |
 | ------------------------ | ------- | ------------------------------------------------------------ |
 | first_name               | String  | Nombre                                                       |
 | last_name                | String  | Apellido                                                     |
-| dni (excluir MLM)        | Integer | Identificación                                               |
-| Phone                    | Object  | Datos de teléfono                                            |
+| identification           | Object  | Datos de identificación                                      |
+| identification_type      | String  | Tipo de identificación                                       |
+| identification_number    | String  | Número de identificación                                     |
+| phone                    | Object  | Datos de teléfono                                            |
 | area code                | Integer | Código de área                                               |
 | number                   | Integer | Número de teléfono                                           |
-| Address                  | Object  | Datos de dirección                                           |
+| address                  | Object  | Datos de dirección                                           |
 | zip_code                 | String  | Código Postal                                                |
 | street_name              | String  | Nombre de calle                                              |
 | street_number            | Integer | Número de calle                                              |
-| authentication_type      | String  | Tipo de autenticación                                        |
+| authentication_type      | Enum    | Tipo de autenticación: ("Gmail"-"Facebook"-"Web Nativa"-"Otro") |
 | registration_date        | Date    | Fecha de registación del comprador en el sitio               |
-| is_prime_user            | Integer | Es usuario premium: 1 si lo es, 0 si no lo es, 2 si no existe |
-| is_first_purchase_online | Integer | Primera compra en el sitio: 1 si lo es, 0 si no lo es        |
+| is_prime_user            | Boolean | True si lo es, False si no lo es                             |
+| is_first_purchase_online | Boolean | True si lo es, False si no lo es                             |
 | last_purchase            | Date    | Fecha de la última compra en el sitio                        |
 
 
 
 ### **Shipments:**
 
-| Parámetro: Shipment | Tipo    | Descripción                                                  |
-| ------------------- | ------- | ------------------------------------------------------------ |
-| pick_up_on_seller   | Binary  | Retiro en sucursal: 1 si retira en sucursal, 0 si no lo hace |
-| Receiver_address    | Object  | Datos de dirección del comprador                             |
-| zip_code            | String  | Código Postal                                                |
-| state_name          | String  | Provincia                                                    |
-| city_name           | String  | Ciudad                                                       |
-| street_number       | Integer | Número de calle                                              |
-| floor               | String  | Piso                                                         |
-| apartment           | String  | Apartamento                                                  |
-| express_shipment    | Binary  | Envío express: 1 si lo tiene, 0 si no lo tiene               |
+| Object: Shipment | Tipo    | Descripción                                     |
+| ---------------- | ------- | ----------------------------------------------- |
+| local_pickup     | Boolean | True si retira en sucursal, False si no lo hace |
+| receiver_address | Object  | Datos de dirección del comprador                |
+| zip_code         | String  | Código Postal                                   |
+| state_name       | String  | Provincia                                       |
+| city_name        | String  | Ciudad                                          |
+| street_number    | Integer | Número de calle                                 |
+| express_shipment | Boolean | True si lo tiene, False si no lo tiene          |
 
 ```json
-curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN_ENV' \
-  -d '{
-	"token":"b3a7dbec3eb0d71798c4f19fec445795",
-	"installments":1,
-	"transaction_amount":58.80,
-	"description":"Point Mini maquina pequeña",
-	"payment_method_id":"visa",
-	"payer":{
-	"email":"test_user_123456@testuser.com"
-
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "auto_return": "approved",
+    "back_urls": {
+        "failure": "https://www.mercadopago.com/us/home/failure",
+        "pending": "https://www.mercadopago.com/us/home/pending",
+        "success": "https://www.mercadopago.com/us/home/success"
     },
-    "notification_url":"https://www.suurl.com/notificaciones/",
-    "sponsor_id":null,
-    "binary_mode":false,
-    "external_reference":"MP0001",
-    "statement_descriptor":"MercadoPago",
-    "additional_info":{
-    "items":[
-    	{
-    		"id":"PR0001",
-    		"title":"Point Mini",
-    		"picture_url":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mla-point-i_medium@2x.png",
-    		"quantity":1,
-    		"unit_price":58.80,
-            "category_id":"Accesorios PC",
-            "warranty":1
-    	}
+    "notification_url": "https://webhook.site/xyz",
+    "expires": false,
+    "external_reference": "order-123",
+    "date_of_expiration": "2025-03-12T12:58:41.425-04:00",
+    "items": [
+        {
+            "id": "1234",
+            "currency_id": "ARS",
+            "title": "Test - Title",
+            "picture_url": "",
+            "description": "Test - Description",
+            "category_id": "others",
+            "quantity": 1,
+            "unit_price": 150
+        }
     ],
-    "payer":{
-    	"first_name":"Nombre",
-    	"last_name":"Apellido"",
-    	"address":{
-    	"zip_code":"06233-200",
-    	"street_name":"Av de las Naciones Unidas",
-    	"street_number":3003,
-        "autentication_type":"Facebook",
-        "is_prime_user":0,
-        "last_purchase":"2018-11-11T12:01:01.000-03:00"
-          
+    "payer": {
+        "phone": {
+            "area_code": "11",
+            "number": "44445555"
+        },
+        "address": {
+            "zip_code": "12345",
+            "street_name": "Street Name",
+            "street_number": 1234
+        },
+        "identification": {
+          "identification_type": "DNI",
+          "identification_number": "12345678"
+        },
+        "email": "test_user_5043659@testuser.com",
+        "name": "Test",
+        "surname": "Tester",
+        "date_created": "",
+        "authentication_type": "Facebook",
+        "registration date": "2015-06-02T12:58:41.425-04:00",
+        "is_prime_user": false,
+        "is_first_purchase_online": false,
+        "last_purchase": "2020-01-02T12:58:41.425-04:00"
     },
-    "registration_date":"2019-01-01T12:01:01.000-03:00",
-    "phone":{
-    "area_code":"011",
-    "number":"987654321"
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": ""
+            }
+        ],
+        "default_installments": null,
+        "default_payment_method_id": null,
+        "excluded_payment_types": [
+            {
+                "id": ""
+            }
+        ],
+        "installments": null
+    },
+    "shipments": {
+        "mode": "not_specified",
+        "receiver_address": {
+            "zip_code": "12345",
+            "street_name": "Street Name",
+            "city_name": "Rio de Janeiro",
+            "state_name": "Rio de Janeiro",
+            "street_number": 1234
+        },
+        "express_shipment": false,
+        "local_pickup": false
     }
-
-},
-	"shipments":{
-    "pick_up_on_seller":0,
-    "express_shipment":0,
-	"receiver_address":{
-	"street_name":"Av de las Naciones Unidas",
-	"street_number":3003,
-	"zip_code":"06233200"
-	}
-   }
-  }
-}' 
+}'
 ```
-

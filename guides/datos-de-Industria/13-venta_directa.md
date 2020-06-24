@@ -1,32 +1,17 @@
-# General: Additional Info
+# Venta Directa
 
-## Campos a enviar
+## Campos a enviar: Additional Info
 
 ### **Items:**
 
-| Array: Items          | Tipo    | Descripción                                              |
-| --------------------- | ------- | -------------------------------------------------------- |
-| id                    | String  | Código de item                                           |
-| title                 | String  | Nombre de item                                           |
-| description           | String  | Descripción del item                                     |
-| picture_url           | String  | URL de imagen                                            |
-| category_id           | String  | Categoría del item                                       |
-| quantity              | Integer | Cantidad de items                                        |
-| unit_price            | Float   | Precio unitario                                          |
-| warranty              | Boolean | True si el producto tiene garantía, False si no la tiene |
-| event_date            | Date    | Fecha del evento                                         |
-| passenger             | Object  | Información adicional del pasajero                       |
-| first_name            | String  | Nombre                                                   |
-| last_name             | String  | Apellido                                                 |
-| identification        | Object  | Identificación del pagador                               |
-| identification_type   | String  | Tipo de identificación                                   |
-| identification_number | String  | Número de identificación                                 |
-| route                 | Object  | Información de la ruta                                   |
-| departure             | String  | Salida                                                   |
-| destination           | String  | Llegada                                                  |
-| departure_date_time   | Date    | Fecha de salida                                          |
-| arrival_date_time     | Date    | Fecha de llegada                                         |
-| company               | String  | Compañía                                                 |
+| Array: Items | Tipo    | Descripción          |
+| ------------ | ------- | -------------------- |
+| id           | String  | Código de item       |
+| title        | String  | Nombre de item       |
+| description  | String  | Descripción del item |
+| category_id  | String  | Categoría del item   |
+| quantity     | Integer | Cantidad de items    |
+| unit_price   | Float   | Precio unitario      |
 
 
 
@@ -36,6 +21,9 @@
 | ------------------------ | ------- | ------------------------------------------------------------ |
 | first_name               | String  | Nombre                                                       |
 | last_name                | String  | Apellido                                                     |
+| identification           | Object  | Datos de identificación                                      |
+| identification_type      | String  | Tipo de identificación                                       |
+| identification_number    | String  | Número de identificación                                     |
 | phone                    | Object  | Datos de teléfono                                            |
 | area code                | Integer | Código de área                                               |
 | number                   | Integer | Número de teléfono                                           |
@@ -55,7 +43,6 @@
 
 | Object: Shipment | Tipo    | Descripción                                     |
 | ---------------- | ------- | ----------------------------------------------- |
-| local_pickup     | Boolean | True si retira en sucursal, False si no lo hace |
 | receiver_address | Object  | Datos de dirección del comprador                |
 | zip_code         | String  | Código Postal                                   |
 | state_name       | String  | Provincia                                       |
@@ -63,7 +50,7 @@
 | street_number    | Integer | Número de calle                                 |
 | floor            | String  | Piso                                            |
 | apartment        | String  | Apartamento                                     |
-| express_shipment | Boolean | True si lo tiene, False si no lo tiene          |
+| local_pickup     | Boolean | True si retira en sucursal, False si no lo hace |
 
 ```json
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
@@ -87,25 +74,9 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "picture_url": "",
             "description": "Test - Description",
             "category_id": "others",
-            "passenger": {
-              "first_name": "Test",
-              "last_name": "Tester",
-              	 "identification": {
-              	   	"type": "DNI",
-              	 	  "number": 12345678
-              	 }
-              },
-            "route": {
-            	"departure": "Buenos Aires",
-            	"destination": "Londres",
-            	"departure_date_time": "2022-03-12T12:58:41.425-04:00",
-            	"arrival_date_time": "2022-03-14T12:58:41.425-04:00",
-            	"company": "Airlines"
-            },
-            "warranty": false,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
             "quantity": 1,
             "unit_price": 150
+            
         }
     ],
     "payer": {
@@ -123,8 +94,8 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_number": "12345678"
         },
         "email": "test_user_5043659@testuser.com",
-        "first_name": "Test",
-        "last_name": "Tester",
+        "name": "Test",
+        "surname": "Tester",
         "date_created": "",
         "authentication_type": "Facebook",
         "registration date": "2015-06-02T12:58:41.425-04:00",
@@ -149,16 +120,16 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     },
     "shipments": {
         "mode": "not_specified",
+        "local_pickup": false,
         "receiver_address": {
             "zip_code": "12345",
             "street_name": "Street Name",
             "city_name": "Rio de Janeiro",
             "state_name": "Rio de Janeiro",
-            "street_number": 1234
-        },
-        "express_shipment": false,
-        "local_pickup": false
+            "street_number": 1234,
+            "floor": "12",
+            "apartment": "B"
+        }
     }
 }'
 ```
-
