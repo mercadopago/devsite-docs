@@ -95,8 +95,8 @@ You can also set a payment method to appear by default or define the maximum num
 Attribute | Description
 ------------ | -------------
 _`payment_methods`_ | Class that describes the attributes and methods of payment methods.
-_`excluded_payment_methods`_ | Method that excludes by specific payment methods: Visa, Mastercard or American Express, among others.
-_`excluded_payment_types`_ | Method that excludes by type of payment method: cash, credit or debit cards.
+_`excluded_payment_methods`_ | Method that excludes by specific <a href="https://www.mercadopago.com.AR/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others.
+_`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago.com.AR/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">payment methods</a>: cash, credit or debit cards.
 _`installments`_ | Method that defines the amount of maximum number of installments to offer.
 
 [[[
@@ -337,6 +337,19 @@ curl -X POST \
 ```
 ]]]
 
+## Shipment cost
+
+If you already have estimated shipping from your website, you can define the amount and show it separately from the total when offering payment.
+
+To configure it, add the node ‘shipments’ with the value of the amount you want to charge in the attribute ‘cost’, and the value ‘not_specified’ in the attribute ‘mode’.
+```json
+{
+    "shipments":{
+        "cost": 1000,
+        "mode": "not_specified",
+  }
+}
+```
 
 ## Optimize Ad Conversion
 

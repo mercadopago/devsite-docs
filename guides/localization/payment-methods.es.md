@@ -135,6 +135,7 @@ Tarjeta Mercado Livre		| `credit_card`            | `melicard`
 Boleto Bancario			| `ticket`                 | `bolbradesco`
 Dinero en cuenta	       	| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
+Paypal							| `digital_wallet` | `paypal`
 
 ### Chile
 
@@ -182,6 +183,7 @@ Banamex    		       	| `atm`		           | `banamex`
 Santander    		       	| `atm`		           | `serfin`
 Dinero en cuenta	       	| `account_money`          | `account_money`
 Bitcoin	                	| `digital_currency`       | `bitcoin`
+Paypal					| `digital_wallet`| `paypal`
 
 ### Perú
 
