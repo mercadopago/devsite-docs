@@ -12,9 +12,9 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 > 
 > Nova versão do Botão e link de pagamento
 > 
-> NEW_VERSION
+> NEW_VERSION: NOVA VERSÃO
 > 
-> Botão e link de pagamento
+> PRODUCT: Botão e link de pagamento
 
 Lançamos uma nova versão do Botão e do link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
 
@@ -30,9 +30,9 @@ Lançamos uma nova versão do Botão e do link de pagamento, totalmente atualiza
 > 
 > Nova versão SDK Javascript
 > 
-> NEW_VERSION
+> NEW_VERSION: NOVA VERSÃO
 > 
-> SDK Javascript
+> PRODUCT: SDK Javascript
 
 Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compatível com Internet Explorer 11 para que o possa usar em suas integrações sem problemas.
 [Ir para a documentação do SDK Javascript](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks/official/js/)
@@ -44,9 +44,9 @@ Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compat
 > 
 > Nova versão WooCommerce
 > 
-> NEW_VERSION
+> NEW_VERSION: NOVA VERSÃO
 > 
-> WooCommerce
+> PRODUCT: WooCommerce
 
 Lançamos uma nova versão do WooCommerce.
 
@@ -65,9 +65,9 @@ Lançamos uma nova versão do WooCommerce.
 > 
 > Nova versão SDK Java
 > 
-> NEW_VERSION
+> NEW_VERSION: NOVA VERSÃO
 > 
-> SDK Java
+> PRODUCT: SDK Java
 
 Lançamos uma nova versão do SDK Java 1.6.
 
@@ -84,9 +84,9 @@ Lançamos uma nova versão do SDK Java 1.6.
 > 
 > Nova versão SDK .NET
 > 
-> NEW_VERSION
+> NEW_VERSION: NOVA VERSÃO
 > 
-> SDK .NET
+> PRODUCT: SDK .NET
 
 Lançamos uma nova versão do SDK .NET.
 
@@ -106,9 +106,9 @@ Lançamos uma nova versão do SDK .NET.
 > 
 > Atualização de documentação de API
 > 
-> NEW_DOCUMENTATION
+> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
 > 
-> API 
+> PRODUCT: API 
 
 Renovamos a documentação para usar nossas APIs de pagamento. Adicionamos um exemplo básico do formulário no frontend e também diagramas de funcionamento para te ajudar na hora de integrar.
 
@@ -124,9 +124,9 @@ Renovamos a documentação para usar nossas APIs de pagamento. Adicionamos um ex
 > 
 > Melhoramos seus relatórios programados
 > 
-> FEATURE
+> FEATURE: FEATURE
 > 
-> Relatórios
+> PRODUCT: Relatórios
 
 Para ajudar a otimizar suas conciliações, implementamos melhorias na geração dos intervalos de datas para relatórios programados. A mudança é válida tanto para o relatório de Dinheiro retirado, como para o relatório de Todas as transações. Desde quarta-feira 1 de abril, para encontrar seus relatórios programados, busque-os por um segundo a menos.
 
@@ -157,9 +157,9 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 > 
 > Nova versão Prestashop 1.6 & 1.7
 > 
-> NEW_VERSION
+> NEW_VERSION: NOVA VERSÃO
 > 
-> Prestashop
+> PRODUCT: Prestashop
 
 Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Mercado Pago através de modal para que seus compradores possam comprar sem sair de seu site.
 
@@ -181,9 +181,9 @@ Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout 
 > 
 > Obtenha informações sobre seu negócio
 > 
-> FEATURE
+> FEATURE: FEATURE
 > 
-> Checkout Mercado Pago
+> PRODUCT: Checkout Mercado Pago
 
 Se você possui campanhas publicitárias para seu negócio, é importante acompanhá-las e ver se elas estão lhe ajudando a concretizar vendas. Para poder melhorá-las e sejam cada vez mais eficientes, acrescentamos a possibilidade de associar um pixel do Facebook e uma tag de acompanhamento de conversões do Google Ads aos pagamentos de seu Checkout Mercado Pago.
 
