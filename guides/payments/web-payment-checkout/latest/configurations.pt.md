@@ -450,7 +450,7 @@ curl -X POST \
 
 Se você já possui o envio estimado pelo seu site, pode definir o valor e mostrá-lo separadamente do total ao oferecer o pagamento. 
 
-Para configurá-lo, adicione o item ‘shipments’ com o valor que quiser cobrar no atributo ‘cost’ e o valor ‘not_specified’ no atributo ‘mode’.
+Para configurá-lo, adicione o item `shipments` com o valor que quiser cobrar no atributo `cost` e o valor `not_specified` no atributo `mode`.
 
 ```json
 {

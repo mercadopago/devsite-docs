@@ -184,8 +184,8 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
+_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> : efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 ------------
 
@@ -193,8 +193,8 @@ _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago.com.co/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago.com.co/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
+_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 ------------
 
@@ -202,8 +202,8 @@ _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago.com.uy/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago.com.uy/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
+_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 ------------
 
@@ -211,8 +211,8 @@ _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago.cl/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago.cl/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
+_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 ------------
 
@@ -220,8 +220,8 @@ _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago.com.br/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago.com.br/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
+_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 ------------
 
@@ -230,8 +230,8 @@ _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago.com.mx/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a>  específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago.com.mx/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
+_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a>  específicos: Visa, Mastercard o American Express, entre otras.
+_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank"> medios de pago</a> : efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de mensualidades máximas a ofrecer.
 ------------
 
