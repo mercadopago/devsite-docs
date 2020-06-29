@@ -180,7 +180,7 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 ------------
 
 
----[mla, mco, mlb, mlu, mlc]----
+----[mla, mco, mlb, mlu, mlc]----
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
