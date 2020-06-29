@@ -178,8 +178,8 @@ Você também pode definir um meio de pagamento para que apareça por padrão ou
 Atributo | Descrição
 ------------ | -------------
 _`payment_methods`_ | Classe que descreve os atributos e métodos de meios de pagamento.
-_`excluded_payment_methods`_ | Método que exclui por <a href="https://www.mercadopago.com.br/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros.
-_`excluded_payment_types`_ | Método que exclui por tipo de <a href="https://www.mercadopago.com.br/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">meio de pagamento</a> : cartão de crédito ou ticket (boleto ou pagamento em lotérica).
+_`excluded_payment_methods`_ | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros.
+_`excluded_payment_types`_ | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica).
 _`installments`_ | Método que define o número máximo de parcelas a oferecer
 
 [[[
