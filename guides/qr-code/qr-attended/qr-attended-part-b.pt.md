@@ -23,7 +23,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_tok
     "notification_url": "www.yourserver.com",
     "items" :[{
     		   "title" : "Produto 1",
-    		   "currency_id" : ("[FAKER][CURRENCY][ACRONYM]"),
+    		   "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
     		   "unit_price" : 120.00,
     	     "quantity" : 1,
            "description": "Produto de Mercado Pago",
