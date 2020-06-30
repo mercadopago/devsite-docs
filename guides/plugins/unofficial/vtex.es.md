@@ -661,6 +661,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
+<br>
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con PSE, sigue estos pasos: 
@@ -679,6 +680,7 @@ Para crear una condición de pago con PSE, sigue estos pasos:
 ![Imagen transferencia](/images/vtex/vtex-hisp-pse.gif)
 
 
+<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -690,7 +692,7 @@ Para crear una condición de pago con medios de pago en efectivo, sigue estos pa
 5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
 6. Haz clic en Guardar. 
 
-En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
+En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos disponibles del país:
 
 | Tipo de medio de pago | Medio de pago |
 | --- | --- |
@@ -764,12 +766,12 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
 | Antifraud | Elegir `Yes / Sí`. |
 | Time Zone | Indica la región que define tu horario local. |
-| Mercado Pago 3P payment due date | Disable. |
-| 3P payment due date after MP expiration | Disable. |
+| Mercado Pago 3P payment due date | Deshabilitado. |
+| 3P payment due date after Mercado Pago expiration | Deshabilitado. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
-| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+| Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 <br>
 
 
@@ -777,7 +779,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > Importante
 >
-> En el caso del campo “Captura de segurança antecipada” no se encuentra disponible por el momento para Perú.<br>
+> El campo Early Security Capture no se encuentra disponible por el momento para Perú.<br>
 
 
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
@@ -850,7 +852,7 @@ Para crear una condición de pago con medios de pago en efectivo, sigue estos pa
 5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
 6. Haz clic en Guardar. 
 
-En VTEX, al seleccionar “Boleto Bancario” se incluyen todos los medios de pagos disponibles del país:
+En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos disponibles del país:
 
 | Tipo de medio de pago | Medio de pago |
 | --- | --- |
@@ -925,12 +927,12 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
 | Antifraud | Elegir `Yes / Sí`. |
 | Time Zone | Indica la región que define tu horario local. |
-| Mercado Pago 3P payment due date | Disable. |
-| 3P payment due date after MP expiration | Disable. |
+| Mercado Pago 3P payment due date | Deshabilitado. |
+| 3P payment due date after Mercado Pago expiration | Deshabilitado. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
-| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+| Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 <br>
 
 
@@ -938,7 +940,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > Importante
 >
-> En el caso del campo “Captura de segurança antecipada” no se encuentra disponible por el momento para Uruguay.
+> El campo Early Security Capture no se encuentra disponible por el momento para Uruguay.
 <br>
 
 
