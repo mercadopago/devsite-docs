@@ -288,7 +288,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 > 
 > El campo Early Security Capture no se encuentra disponible por el momento para Colombia.
 > 
-> Te recomendamos que le pongas a la afiliación un nombre claro que te permita luego poder identificar fácilmente el código de comercio para poder linkearlo al medio de pago.
+> Te recomendamos que en la afiliación indiques un nombre claro que te permita identificar fácilmente el código de comercio para poder relacionarlo al medio de pago.
 <br>
 
 
