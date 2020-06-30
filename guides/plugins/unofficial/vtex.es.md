@@ -271,7 +271,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > Importante
 >
-> En el caso del campo “Antifraud” seleccionar la opción `No` porque sino en el Checkout se le pedirá al cardholder un identification para avanzar con el pago.
+> En el campo Antifraud selecciona la opción `No` porque sino en el Checkout se le pedirá al pagador un identification para avanzar con el pago.
 <br>
 
 
