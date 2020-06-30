@@ -493,6 +493,7 @@ Para crear una condición de pago con WebPay, sigue estos pasos:
 ![Imagen transferencia](/images/vtex/vtex-hisp-webpay.gif)
 
 
+<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
