@@ -276,7 +276,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
-| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+| Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 <br>
 
 
