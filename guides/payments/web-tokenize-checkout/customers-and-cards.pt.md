@@ -196,7 +196,7 @@ Podendo obter uma lista completa de `Cards` de um cliente realizando um request 
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     // customer.cards ...
@@ -302,7 +302,7 @@ var filters = {
   id: "247711297-jxOV430go9fx2e"
 };
 
-mercadopago.searchCustomer({
+mercadopago.customers.search({
   qs: filters
 }).then(function (customer) {
   card_data = {
@@ -424,7 +424,7 @@ No caso em que não saiba qual é o `id` de seu `Customer`, poderá utilizar a A
     email: "test@test.com"
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     // customer.cards ...
@@ -517,7 +517,7 @@ Poderá obter uma lista completa de `Cards` de um cliente realizando um request 
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     // customer.cards ...
