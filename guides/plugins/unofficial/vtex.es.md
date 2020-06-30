@@ -429,7 +429,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > En el caso del campo “Financial Institution” validar la documentación de WebPay de Mercado Pago para configurar dicho campo. Actualmente, es el valor “1234”.
 >
-> En el caso del campo “Captura de segurança antecipada” no se encuentra disponible por el momento para Chile.
+> El campo Early Security Capture no se encuentra disponible por el momento para Chile.
 <br>
 
 
