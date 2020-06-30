@@ -20,34 +20,76 @@ You should check if:
 + It offers the payment methods you wish.
 + The payment experience is adequate and the payment result is reported.
 
-To test the integration, follow the steps below:
+## How to test my integration
 
-1. Configure the [sandbox public key]([FAKER][CREDENTIALS][URL])in your application.
-2. Create the preference on your server with the access token.
+**Test users allow you to test your integration** by generating payment flows in an exact copy of your integration.
+
+User types | Description
+------------ | -------------
+Seller | It is the test account you use to **configure the application and credentials for collection.**
+Buyer | It is the test account you use to **test the purchase process.**<br/>
+
+## How to create users
+To perform the tests **it is necessary that you have at least two users:** a buyer and a seller.
+
+Execute the following curl to generate a test user:
+
+### Request
+
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+```
+
+### Response
+
+```json
+{
+    "id": 123456,
+    "nickname": "TT123456",
+    "password": "qatest123456",
+    "site_status": "active",
+    "email": "test_user_123456@testuser.com"
+}
+```
+
+>WARNING
+>
+>Important
+>
+> * You can generate up to 10 test user accounts simultaneously. Therefore, we recommend you _save each email and password._
+> * Test users expire after 60 days without activity in Mercado Pago.
+> * To make test payments we recommend using low amounts.
+> * Both buyer and seller must be test users.
+> * Use test cards, since it is not possible to withdraw money.
+
+
+### To test the integration, follow the steps below:
+
+1. Configure the [Public Key]([FAKER][CREDENTIALS][URL]) in your application.
+2. Create the preference on your server with the [Access Token]([FAKER][CREDENTIALS][URL]).
 3. Complete the form, entering the digits of a test card. On the expiration date you must enter any date after the current date and a 3-or 4-digit security code, depending on the card.
-4. In the cardholder field you must enter the prefix corresponding to what you want to test:
+4. To **test different payment results,** complete the information you want in the name of the cardholder:
 
-* **APRO**: Payment approved.  
-* **CONT**: Pending payment.  
-* **CALL**: Payment declined, call to authorize.  
-* **FUND**: Payment declined due to insufficient funds.  
-* **SECU**: Payment declined by security code.  
-* **EXPI**: Payment declined by expiration date.  
-* **FORM**: Payment declined due to error in form.  
-* **OTHE**: General decline.  
+- APRO: Payment approved.
+- CONT: Payment pending.
+- OTHE: Rejected by general error.
+- CALL: Rejected with validation to authorize.
+- FUND: Rejected for insufficient amount.
+- SECU: Rejected by invalid security code.
+- EXPI: Rejected due to problem with expiration date.
+- FORM: Rejected by error in the form.
 
-### Test cards to test our checkout
+## Test Cards
 
 Use these test cards to test the different payment results.
 
-| Country 	 | Visa 				       | Mastercard        | American Express |
-| ---- 		   | ---- 				       | ----------        | ---------------- |
-| Argentina  | 4509 9535 6623 3704 |5031 7557 3453 0604|3711 803032 57522 |
-| Brazil  	 | 4235 6477 2802 5682 |5031 4332 1540 6351|3753 651535 56885 |
-| Chile   	 | 4168 8188 4444 7115 |5416 7526 0258 2580|3757 781744 61804 |
-| Colombia   | 4013 5406 8274 6260 |5254 1336 7440 3564|3743 781877 55283 |
-| Mexico  	 | 4075 5957 1648 3764 |5474 9254 3267 0366| unavailable      |
-| Peru    	 | 4009 1753 3280 6176 | unavailable       | unavailable      |
-| Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| unavailable      |
+Card | Number | CVV | Expiration Date
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4170 0688 1010 8020 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
 
 You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards).
