@@ -477,6 +477,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
+<br>
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con WebPay, sigue estos pasos: 
