@@ -454,6 +454,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 4. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
 
+<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
