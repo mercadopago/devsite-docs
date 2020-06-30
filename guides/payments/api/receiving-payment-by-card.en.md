@@ -238,7 +238,7 @@ The `createToken` method will return a `card_token` with the secure card display
 
 <br>
 
-> NOTE
+> GIT
 >
 > Download Sample Form
 >
