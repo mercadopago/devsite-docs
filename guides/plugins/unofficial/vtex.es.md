@@ -263,7 +263,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Binary Mode | Si se desea operar sin estados pendientes, activarlo. De caso contrario, dejarlo deshabilitado. |
 | Marketplace | Dejar en blanco. |
 | Marketplace fee | Dejar en blanco. |
-| Captura de segurança antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+| Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 <br>
 
 
