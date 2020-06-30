@@ -332,6 +332,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 7. Haz clic en Guardar.
 
 
+<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos:
