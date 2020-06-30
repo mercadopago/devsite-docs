@@ -637,6 +637,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
 
+<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
