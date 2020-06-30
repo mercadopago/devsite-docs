@@ -96,7 +96,7 @@ Attribute | Description
 ------------ | -------------
 _`payment_methods`_ | Class that describes the attributes and methods of payment methods.
 _`excluded_payment_methods`_ | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others.
-_`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">: cash, credit or debit cards.
+_`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards.
 _`installments`_ | Method that defines the amount of maximum number of installments to offer.
 
 [[[
