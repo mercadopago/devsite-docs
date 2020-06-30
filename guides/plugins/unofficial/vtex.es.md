@@ -254,7 +254,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
 | Antifraud | Elegir `No`. |
 | Time Zone | Indica la región que define tu horario local. |
-| Mercado Pago 3P payment due date. | Deshabilitar. |
+| Mercado Pago 3P payment due date | Deshabilitar. |
 | 3P payment due date after MP expiration. | Deshabilitar. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
