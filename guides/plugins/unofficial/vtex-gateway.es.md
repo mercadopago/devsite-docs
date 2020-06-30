@@ -67,8 +67,8 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | External Installments | Elegir `No`. |
 | Antifraud | Elegir `Yes / Sí`. |
 | Time Zone | Indica la región que define tu horario local. |
-| Vencimiento de pagos 3P en Mercado Pago | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
-| Vencimiento de pagos 3P después del vencimiento en Mercado Pago | Elegir `12 horas`. Tiempo para el vencimiento del pago en VTEX después del vencimiento del pago 3P en Mercado Pago. Si no se completa, se utilizará el tiempo estándar de 7 días después de la creación del pedido.|
+| Mercado Pago 3P payment due date | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| 3P payment due date after Mercad Pago expiration | Elegir `12 horas`. Tiempo para el vencimiento del pago en VTEX después del vencimiento del pago 3P en Mercado Pago. Si no se completa, se utilizará el tiempo estándar de 7 días después de la creación del pedido.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Refund Method | Elegir Online. Si selecciona Reembolso Online, ejecutaremos la llamada de la API de reembolso al procesador. Si se selecciona la opción Offline, enviaremos un correo electrónico al administrador para realizar un reembolso manual. Utilice esta opción con cuidado. |
 | Plan Ahora 12 | Activar si se necesita procesar con Ahora12. En caso de seleccionar `activo`, si el comprador opta por este plan enviaremos la cuota 7 a MercadoPago. |
