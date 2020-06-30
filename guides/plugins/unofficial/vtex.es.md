@@ -59,7 +59,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Antifraud | Elegir `Yes / Sí`. |
 | Time Zone | Indica la región que define tu horario local. |
 | Mercado Pago 3P payment due date | Deshabilitar. |
-| 3P payment due date after MP expiration. | Deshabilitar. |
+| 3P payment due date after Mercad Pago expiration | Deshabilitar. |
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Refund Method | Elige _Online refund if possible_ para hacer las devoluciones desde VTEX. Si las quieres desde Mercado Pago, deshabilitar. |
