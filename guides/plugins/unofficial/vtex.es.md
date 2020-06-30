@@ -411,7 +411,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | External Installments | Elegir `Yes / Sí`. Usa las opciones de pago directamente de tu cuenta de Mercado Pago. |
 | Antifraud | Elegir `Yes / Sí`. |
 | Time Zone | Indica la región que define tu horario local. |
-| Vencimiento de pagos 3P en Mercado Pago | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| Mercado Pago 3P payment due date | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
 | Vencimiento de pagos 3P después del vencimiento en MP | Elegir `12 horas`. Tiempo para el vencimiento del pago en VTEX después del vencimiento del pago 3P en Mercado Pago. Si no se completa, se utilizará el tiempo estándar de 7 días después de la creación del pedido.|
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
