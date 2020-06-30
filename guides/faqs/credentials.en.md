@@ -5,8 +5,8 @@ sites_supported:
   - global
 ---
 
-
 # Credentials
+---
 
 ## What are my credentials and where can I find them
 
