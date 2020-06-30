@@ -284,7 +284,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > Importante
 >
-> En el caso del campo “External Installments” seleccionar la opción `No` ya que las opciones de cuotas se van a configurar desde la configuración del medio de pago en VTEX.
+> En el campo External Installments selecciona la opción `No`, ya que las opciones de cuotas se van a configurar desde la configuración del medio de pago en VTEX.
 > 
 > En el caso del campo “Captura de segurança antecipada” no se encuentra disponible por el momento para Colombia.
 > 
