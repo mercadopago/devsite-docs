@@ -75,7 +75,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Plan Ahora 18 | Activar si se necesita procesar con Ahora18. En caso de seleccionar `activo`, si el comprador opta por este plan enviaremos la cuota 8 a MercadoPago. |
 | Plan Ahora 3 | Activar si se necesita procesar con Ahora3. En caso de seleccionar `activo`, si el comprador opta por este plan enviaremos la cuota 13 a MercadoPago. |
 | Plan Ahora 6 | Activar si se necesita procesar con Ahora6. En caso de seleccionar `activo`, si el comprador opta por este plan enviaremos la cuota 16 a MercadoPago. |
-| Plan Z | Activar si se necesita procesar con Plan Z. En caso de seleccionar `activo`, si el comprador opta por este plan enviaremos la cuota 11 a MercadoPago.. Sólo aplica para tarjeta Naranja |
+| Plan Z | Activar si se necesita procesar con Plan Z. En caso de seleccionar `activo`, si el comprador opta por este plan enviaremos la cuota 11 a MercadoPago. Solo aplica para tarjeta Naranja |
 | Charge Margine | Dejarlo en 0. |
 | Binary mode | Si se desea operar sin estados pendientes, activarlo. De caso contrario, dejarlo deshabilitado. |
 | Enable pre-auth for GiftCards | Dejar desactivado. |
