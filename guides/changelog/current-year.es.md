@@ -55,7 +55,7 @@ Lanzamos una nueva versión de WooCommerce.
 
 > GIT
 >
-> Github
+> GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
 
@@ -74,7 +74,7 @@ Disponibilizamos una nueva versión de SDK Java 1.6.
 
 > GIT
 >
-> Github
+> GitHub
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
 
@@ -93,7 +93,7 @@ Disponibilizamos una nueva versión de SDK .NET.
 
 > GIT
 >
-> Github
+> GitHub
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
 
@@ -166,7 +166,7 @@ Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkou
 
 > GIT
 >
-> Github
+> GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases).
 
