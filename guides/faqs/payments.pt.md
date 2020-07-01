@@ -66,8 +66,7 @@ Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Mercado Pago
 
-É possível remover a opção de boleto com uso de preferências de pagamento. Você pode encontrar mais detalhes em nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
-
+É possível remover a opção de boleto com uso de preferências de pagamento. Você pode encontrar mais detalhes em nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_atributos_para_a_preferência).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APIs Mercado Pago
 
