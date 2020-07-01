@@ -17,7 +17,7 @@ When you test, verify that the payment flow works correctly and that the payment
 
 ## Go to Production
 
-To start charging you must complete the form [I want to go to Production](https://www.mercadopago.com/mla/account/credentials/).
+To start charging you must [activate your credentials](https://www.mercadopago.com/mla/account/credentials/).
 
 > Check the [requirements to go to production](https://www.mercadopago.com.ar/developers/en/guides/payments/api/goto-production/) if you have any doubts during the process
 

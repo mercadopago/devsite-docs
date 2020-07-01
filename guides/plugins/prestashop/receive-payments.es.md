@@ -17,7 +17,7 @@ Cuando hagas pruebas, verifica que el flujo de pagos funcione correctamente y qu
 
 ## Ir a producción
 
-Para empezar a cobrar debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/).
+Para empezar a cobrar debes [activar tus credenciales](https://www.mercadopago.com/mla/account/credentials/).
 
 > Consulta los [requisitos para ir a producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) si tienes alguna duda con el proceso.
 
