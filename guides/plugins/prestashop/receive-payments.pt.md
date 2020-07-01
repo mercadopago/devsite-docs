@@ -21,7 +21,7 @@ Para começar a receber pagamentos, você deve preencher o formulario [Quero ir 
 
 > Confira os [requisitos para ir à produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) se tiver alguma dúvida com o processo.
 
-Quando o formulário estiver preenchido, verifique se as credenciais de Produção do módulo são as mesmas da conta que você recebe o dinheiro das vendas. 
+Verifique se as credenciais de Produção do módulo são as mesmas da conta que você recebe o dinheiro das vendas. 
 
 Ative o modo Produção apenas quando você estiver pronto para vender e já tenha testado o módulo com pagamentos simulados no Sandbox.
 

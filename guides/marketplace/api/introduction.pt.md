@@ -40,9 +40,9 @@ Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **M
 
 Forneceremos [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/testing-marketplace) para que possa simular transações como se fossem reais.
 
-Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/goto-production) e preencher o formulário “Quero ir para a produção”, que pode ser encontrado em suas [credenciais]([FAKER][CREDENTIALS][URL]).
+Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
-**Antes de utilizar as credenciais de produção é preciso completar o formulário de "Quero ir para produção" para ativa-las.** 
+**Antes de utilizar as credenciais de produção é preciso ativar suas credenciais** 
 Caso contrario se receberá o erro de "Invalid use of live credentials". 
 
 Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do _sandbox_ pelas de produção em seu código.

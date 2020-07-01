@@ -114,15 +114,15 @@ Caso | Resultado esperado | Observaciones
 **Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago.com.ar/activities).
 **Cancelar orden**. El usuario se arrepiente y decide pagar en efectivo. | Se elimina la orden, y por ende al escanear el QR sólo se muestra la pantalla de espera. | Eliminar la orden de la caja.
 
-## Quiero ir a Producción
+## Quiero ir a producción
 
-Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes completar el formulario [Quiero ir a producción]([FAKER][CREDENTIALS][URL]). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
+Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
 > WARNING
-> 
+>
 > IMPORTANTE
-> 
-> Si no completas el formulario de [Quiero ir a producción]([FAKER][CREDENTIALS][URL]), no podrás hacer ningun tipo de devoluciones.
+>
+> Si no [activas tus credenciales]([FAKER][CREDENTIALS][URL]), no podrás hacer ningun tipo de devoluciones.
 
 ## ¿Por qué es necesario este proceso?
 

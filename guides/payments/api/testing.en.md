@@ -97,9 +97,9 @@ To **test different payment results,** complete the information you want in the 
 
 ## Start receiving payments
 
-To start charging, you need to meet the [production environment requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/), and fill out the form <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Go to production</a>.
+To start charging, you need to meet the [production environment requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/), and must <a href="[FAKER][CREDENTIALS][URL]" target="_blank">activate your credentials</a>.
 
-Upon completing the form, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
+Before activating them, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
 
 ---
 ### Next steps

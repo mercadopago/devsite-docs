@@ -111,9 +111,9 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve preencher o formulário <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Quero ir para produção</a>.
+Para começar a cobrar, você deve <a href="[FAKER][CREDENTIALS][URL]" target="_blank">ativar suas credenciais</a>.
 
-Ao terminar o formulário, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
+Para ativá-los, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
 ---
 
