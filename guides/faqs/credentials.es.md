@@ -88,7 +88,7 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Para ir a producción, tenés que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 > Si ya se encuentran activas, no tienes que hacer nada.
 
@@ -122,7 +122,7 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Para ir a producción, tenés que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 > Si ya se encuentran activas, no tienes que hacer nada.
 
@@ -157,7 +157,7 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Para ir a producción, tenés que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 > Si ya se encuentran activas, no tienes que hacer nada.
 
@@ -191,7 +191,7 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Para ir a producción, tenés que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
 > Si ya se encuentran activas, no tienes que hacer nada.
 
