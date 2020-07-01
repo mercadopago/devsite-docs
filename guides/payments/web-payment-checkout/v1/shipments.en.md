@@ -1,4 +1,7 @@
 ---
+  indexable: false
+---
+---
 sites_supported:
   - mla
   - mlb
@@ -14,9 +17,9 @@ sites_supported:
 >
 > Note
 >
-> This documentation refers to the new version of the Smart Checkout.
+> This documentation refers to the new version of the Mercado Pago Checkout.
 >
-> Remember there is only active support and new functionalities for the [new version of the Smart Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Mercado Pago Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 Implement the logistics of your business with **Mercado Envíos**.
 

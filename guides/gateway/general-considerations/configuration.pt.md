@@ -3,9 +3,16 @@ sites_supported:
   - mla
   - mco
   - global
+indexable: false
 ---
 
 # Mercado Pago Gateway: Configuração
+
+> WARNING
+>
+> Contato comercial necessário
+>
+> Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
 
 ## Introdução
 
@@ -111,5 +118,5 @@ Entre em contato com seu executivo de conta.
 
 ### Próximos passos
 
-* [Integre o Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) no Modelo Gateway.
+* [Integre o Checkout Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) no Modelo Gateway.
 * [Integre o API](https://www.mercadopago.com.ar/developers/es/guides/gateway/api/receiving-payments) no Modelo Gateway.

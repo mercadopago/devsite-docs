@@ -27,7 +27,7 @@ Ademas el reporte refleja los conceptos contables del *debe* (dinero que tienes 
 >
 > Tu debe estará en la columna `NET_DEBIT`
 
-Verás el dinero disponible de las operaciones liberadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
+Verás el dinero disponible de las operaciones liquidadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
 **¿Qué pasa si un retiro falla?**
 
@@ -38,13 +38,13 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
-Observa cómo está compuesto el reporte de Dinero disponible en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-![Reporte de Dinero disponible Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
 
@@ -52,7 +52,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Importante: diferencias entre retiro parcial y retiro total
 >
-> Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero en cuenta liberado, el total de dinero disponible y el total del reporte no van a coincidir.
+> Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero listo para usar, el total de dinero retirado y el total del reporte no van a coincidir. 
 >
 >Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
 

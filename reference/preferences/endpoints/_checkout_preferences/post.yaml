@@ -26,6 +26,7 @@ use:
 - marketplace
 - marketplace_fee
 - differential_pricing
+- tracks
 errors:
 - 400 bad_request:
   - invalid_collector_id:
@@ -175,13 +176,6 @@ errors:
         pt: payment_methods invalid. Wrong format
   - invalid_payment_methods:
       description:
-        en: the combination of payment methods and payment types cannot exclude all
-          payment methods.
-        es: La combinación de payment methods y payment types no puede excluir todos los payment methods.
-        pt: the combination of payment methods and payment types cannot exclude all
-          payment methods.
-  - invalid_payment_methods:
-      description:
         en: amount cannot be paid with MercadoPago.
         es: El monto no puede ser pagado con Mercado Pago.
         pt: amount cannot be paid with MercadoPago.
@@ -225,16 +219,11 @@ errors:
         en: client_id must be a number.
         es: client_id debe ser un número.
         pt: client_id must be a number.
-  - invalid_installments:
+  - invalid_payment_methods:
       description:
-        en: installments invalid. Should be only 1, 3, 6, 9, 12, 15, 18, 21 or 24.
-        es: installments inválido. Sólo puede tomar los valores 1, 3, 6, 9, 12, 15, 18, 21 o 24.
-        pt: installments invalid. Should be only 1, 3, 6, 9, 12, 15, 18, 21 or 24.
-  - invalid_installments:
-      description:
-        en: installments must be a number.
-        es: installments debe ser un número.
-        pt: installments must be a number.
+        en: installments invalid. Should be a number between 1 and 36.
+        es: installments no válidas. Debe ser un número entre 1 y 36.
+        pt: installments invalid. Should be a number between 1 and 36.
   - invalid_marketplace_fee:
       description:
         en: marketplace_fee must be a number.

@@ -42,24 +42,20 @@ Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercad
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/introduction/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">¿Qué es el código QR?<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Configura las notificaciones de tus pagos.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/integrations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">¿Cómo generar el QR?<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Conoce las distintas opciones de cobrar con QR según tu negocio.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> ¿Qué es el código QR?
+>
+> Conoce cómo funciona cobrar con un código QR y cuáles son sus beneficios.
+>
+> [¿Qué es el código QR?](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/introduction/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> ¿Cómo generar el QR?
+>
+> Conoce las distintas opciones de cobrar con QR según tu negocio.
+>
+> [¿Cómo generar el QR?](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/integrations/)

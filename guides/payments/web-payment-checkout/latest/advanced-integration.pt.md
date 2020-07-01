@@ -10,12 +10,10 @@ sites_supported:
 
 # Integração avançada
 
-
 ## Receba notificações de pagamentos
 
  As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se foram aprovados, recusados ou se estão pendentes.
 Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
-
 
 <a href="https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/" target="_blank">Receber notificações IPN</a>
 
@@ -24,7 +22,6 @@ Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
 Melhore a aprovação dos pagamentos e a experiência dos seus compradores adicionando informações à sua preferência.
 
 Recomendamos detalhar todas as informações possíveis sobre o item e o comprador.
-
 
 ### Dados do comprador
 
@@ -41,10 +38,12 @@ Recomendamos detalhar todas as informações possíveis sobre o item e o comprad
     "area_code" => "11",
     "number" => "4444-4444"
   );
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
   $payer->identification = array(
     "type" => "CPF",
     "number" => "19119119100"
   );
+    ------------
   $payer->address = array(
     "street_name" => "Street",
     "street_number" => 123,
@@ -64,10 +63,12 @@ var payer = {
     area_code: "11",
     number: "4444-4444"
   },
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: {
     type: "CPF",
     number: "19119119100"
   },
+  ------------
   address: {
     street_name: "Street",
     street_number: "123",
@@ -86,9 +87,11 @@ payer.setName("Joao")
      .setPhone(new Phone()
         .setAreaCode("11")
         .setPhoneNumber("4444-4444"))
+      ----[mla, mlb, mlu, mco, mlc, mpe]----
      .setIdentification(new Identification()
         .setType("CPF")
         .setNumber("19119119100"))
+      ------------
      .setAddress(new Address()
         .setStreetName("Street")
         .setBuildingNumber("123")
@@ -106,10 +109,12 @@ payer = MercadoPago::Payer.new({
     area_code: "11",
     number: "4444-4444"
   })
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: MercadoPago::Identification.new({
     type: "CPF",
     number: "19119119100"
   })
+  ------------
   address: MercadoPago::Address.new ({
     street_name: "Street",
     street_number: "123",
@@ -133,11 +138,13 @@ Payer payer = new Payer()
         AreaCode = "11",
         Number = "4444-4444"
     },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
     Identification = new Identification()
     {
         Type = "CPF",
         Number = "19119119100"
     },
+    ------------
     Address = new Address()
     {
         StreetName = "Street",
@@ -285,11 +292,16 @@ Preference preference = new Preference();
 ```
 ]]]
 
+## Evite recusas de pagamentos
+
+Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
+
+Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+
 ## Cancelamentos e estornos
 
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
 As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
-
 
 Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos</a>.
 
@@ -297,7 +309,6 @@ Você pode encontrar todas as informações na <a href="https://www.mercadopago.
 
 Uma contestação ou chargeback acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento.
 Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da sua conta do Mercado Pago até que seja solucionada.
-
 
 <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/chargebacks/" target="_blank"> Gerenciar contestações</a>
 
@@ -310,7 +321,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Outras funcionalidades
 >
-> Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.
+> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
 >
 > [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
 

@@ -13,12 +13,12 @@ sites_supported:
 
 ## Esquema redirect
 
-O Smart Checkout permite alterar seu esquema de abertura.
+O Checkout Mercado Pago permite alterar seu esquema de abertura.
 
 Os esquemas disponíveis atualmente são:
 
-* **Redirect**: abre o Smart Checkout em uma nova janela.
-* **Modal**: abre o Smart Checkout no seu site.
+* **Redirect**: abre o Checkout Mercado Pago em uma nova janela.
+* **Modal**: abre o Checkout Mercado Pago no seu site.
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
@@ -172,7 +172,7 @@ data-button-label="Comprar"
 >
 > Outras funcionalidades
 >
-> Configure seus pagamentos e adapte o Smart Checkout ao seu negócio.
+> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
 >
 > [Outras funcionalidades](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
 

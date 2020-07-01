@@ -23,12 +23,9 @@ This _fragment of HTML code_ will insert a payment button. When the buyer presse
   </script>
 </form>
 ```
+You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
-> NOTE
->
-> Note
->
-> You can find the public key in the [credentials]([FAKER][CREDENTIALS][URL]) page.
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/).
 
 ### Step 3: Get the data
 
@@ -115,7 +112,7 @@ You should only make an *API call* including the data you received from the chec
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken(token)
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(installments)

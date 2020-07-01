@@ -1,7 +1,7 @@
 
 # Generación por API
 
-Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y automatiza la frecuencia de generación del reporte de Dinero en cuenta las veces que quieras.
+Puedes generar tu reporte por API, tanto de forma manual como de forma programada. Gana tiempo y **automatiza la frecuencia de generación del reporte** de Todas las transacciones las veces que quieras.
 
 ## Configurar tus reportes
 
@@ -471,7 +471,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Dinero en cuenta para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ## Generar de forma manual
@@ -637,7 +637,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
         "id": 12345678,
         "user_id": USER-ID,
         "begin_date": "2015-05-01T00:00:00Z",
-        "end_date": "2015-06-01T00:00:00Z",
+        "end_date": "2015-06-01T23:59:59Z",
         "file_name": "settlement-report-USER_ID-2016-01-20-131015.csv",
         "created_from": "manual",
         "date_created": "2016-01-20T10:07:53.000-04:00"
@@ -803,7 +803,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "id": 2541818,
     "user_id": "USER-ID",
     "begin_date": "2019-07-01T06:00:00Z",
-    "end_date": "2019-08-01T06:00:00Z",
+    "end_date": "2019-08-01T05:59:59Z",
     "created_from": "schedule",
     "status": "pending",
     "report_type": "settlement",
@@ -891,7 +891,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "id": 2787882,
     "begin_date": "2019-08-15T06:00:00Z",
     "created_from": "schedule",
-    "end_date": "2019-08-16T06:00:00Z",
+    "end_date": "2019-08-16T05:59:59Z",
     "generation_date": "2019-08-16T02:00:00.000-04:00",
     "last_modified": "2019-08-15T15:41:53.681-04:00",
     "report_type": "settlement",

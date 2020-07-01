@@ -24,12 +24,10 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
   </script>
 </form>
 ```
+Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTIALS][URL]).
 
-> NOTE
->
-> Nota
->
-> Puedes encontrar tu public key en la página de [credenciales]([FAKER][CREDENTIALS][URL])
+
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 
 ### Paso 3: Obtener los datos
@@ -90,7 +88,7 @@ Solamente debes realizar un *API call* incluyendo los datos que recibiste del ch
 
 [[[
 ```php
-<?php 
+<?php
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -117,7 +115,7 @@ Solamente debes realizar un *API call* incluyendo los datos que recibiste del ch
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken(token)
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(installments)

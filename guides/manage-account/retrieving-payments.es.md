@@ -5,7 +5,8 @@ Puedes encontrar toda la información de los pagos generados utilizando nuestras
 ## Obtener pagos creados a partir de su _ID_
 
 Para obtener la información de un pago a partir de su _ID_ debes hacer el siguiente _request_:
-``curl -G -X GET \
+```curl
+curl -G -X GET \
 -H "accept: application/json" \
 "https://api.mercadopago.com/v1/payments/<payment_id>" \
 -d "access_token=ACCESS_TOKEN" \

@@ -18,7 +18,7 @@ Los usuarios de prueba te permiten probar la integración de tu sistema con Merc
 
 Tipos de usuarios | Descripción
 ----------------- | -------------------------------------
-Vendedor | Es la **cuenta de pruebas que usas para obtener las credenciales** a configurar en tu sistema para poder interactuar con las APIs de Mercado Pago. También podrás acceder a la cuenta de Mercado Pago y revisar las transacciones probadas. 
+Vendedor | Es la **cuenta de pruebas que usas para obtener las credenciales** a configurar en tu sistema para poder interactuar con las APIs de Mercado Pago. También podrás acceder a la [cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) y revisar las transacciones probadas. 
 Comprador | Es la **cuenta de pruebas que usas para probar el proceso de compra**. Debes acceder a la app de Mercado Pago con los datos de este usuario. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medio de pago.
 
 
@@ -124,7 +124,7 @@ Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y qu
 > 
 > IMPORTANTE
 > 
-> * Si no completas el formulario de [Quiero ir a producción]([FAKER][CREDENTIALS][URL]), no podrás hacer ningun tipo de devoluciones.
+> Si no completas el formulario de [Quiero ir a producción]([FAKER][CREDENTIALS][URL]), no podrás hacer ningun tipo de devoluciones.
 
 ## ¿Por qué es necesario este proceso?
 

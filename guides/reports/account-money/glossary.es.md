@@ -10,14 +10,14 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | SOURCE_ID | ID de operación en Mercado Pago (por ejemplo, el pago de una venta). |
 | USER_ID | Código de la cuenta del vendedor. (Cust ID) |
 | PAYMENT_METHOD | Consulta los ----[mla]---- [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/#bookmark_chile) ------------ según el país con el que operes en Mercado Pago. |
-| PAYMENT_METHOD_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Tipo de medio de pago.<br/><br/> Puede ser:<br/><ul><li>*credit_card*: tarjeta de crédito.</li><li>*debit_card*: tarjeta de débito.</li><li>*bank_transfer*: transferencia.</li><li>*atm*: cajero</li><li>*ticket*: efectivo</li><li>*account_money*: dinero en cuenta.</li></ul></td></tr></table> |
+| PAYMENT_METHOD_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Tipo de medio de pago.<br/><br/> Puede ser:<br/><ul><li>*credit_card*: tarjeta de crédito.</li><li>*debit_card*: tarjeta de débito.</li><li>*bank_transfer*: transferencia.</li><li>*atm*: cajero</li><li>*ticket*: efectivo</li><li>*available_money*: Es el dinero que otros usuarios de Mercado Pago pueden usar para comprar y pagar.</li></ul></td></tr></table> |
 | SITE | ----[mla]---- MLA: Argentina ------------ ----[mlb]---- MLB: Brasil ------------ ----[mpe]---- MPE: Perú  ------------ ----[mco]---- MCO: Colombia  ------------ ----[mlm]---- MLM: México ------------ ----[mlu]---- MLU: Uruguay ------------ ----[mlc]---- MLC: Chile ------------  |
 | TRANSACTION_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Tipo de operación.<br/><br/> Puede ser:<br/><ul><li> *SETTLEMENT*: Pago aprobado.</li><li>*REFUND*: Pago devuelto total o parcialmente.</li><li>*CHARGEBACK*: El comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.</li><li>*DISPUTE*: El comprador inició un reclamo por ese pago.</li><li>*WITHDRAWAL*: Retiro a la cuenta bancaria.</li><li>*WITHDRAWAL_CANCEL*: Retiro a la cuenta bancaria que fue cancelado</li></ul></td></tr></table> |
 | TRANSACTION_AMOUNT | Monto bruto de la operación. |
 | TRANSACTION_CURRENCY | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Puede tomar algunos de estos valores según corresponda:<br/><ul><li> MXN (Peso mexicano)</li><li>CLP (Peso Chileno)</li><li>ARS (Peso Argentino)</li><li>BRL (Real Brasilero</li><li>PEN (Sol Peruano)</li><li>COP (Peso Colombiano)</li><li>UYU (Peso Uruguayo)</li><li>VES (Bolivar Venezolano)</li></ul></td></tr></table> |
 | TRANSACTION_DATE | Fecha de acreditación de la operación. |
 | FEE_AMOUNT | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. |
-| SETTLEMENT_NET_AMOUNT | Monto neto de la operación que impactó en el dinero en cuenta. Se le descontaron todas las comisiones involucradas del `TRANSACTION_AMOUNT`. |
+| SETTLEMENT_NET_AMOUNT | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del `TRANSACTION_AMOUNT`. |
 | SETTLEMENT_CURRENCY | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Puede tomar algunos de estos valores según corresponda:<br/><ul><li> MXN (Peso mexicano)</li><li>CLP (Peso Chileno)</li><li>ARS (Peso Argentino)</li><li>BRL (Real Brasilero</li><li>PEN (Sol Peruano)</li><li>COP (Peso Colombiano)</li><li>UYU (Peso Uruguayo)</li><li>VES (Bolivar Venezolano)</li></ul></td></tr></table> |
 | SETTLEMENT_DATE | Fecha en que se acreditó el dinero de la operación. |
 | REAL_AMOUNT | Monto neto de la operación, si es un *settlement*, se le descuentan los montos por contracargos, reclamos o devoluciones. |
@@ -40,6 +40,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | SHIPPING_ID |  ----[mla, mlm]---- Identificador de envío. ------------ |
 | SHIPMENT_MODE |  ----[mla, mlm]---- Modalidad de envío. ------------ |
 | PACK_ID |  ----[mla, mlm]---- Identificador del paquete en el carrito. ------------ |
+| TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 
 <hr/>
 
@@ -49,7 +50,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Cómo usar el reporte
 >
-> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
+> Conoce la composición del reporte y aprende a leerlo.    
 >
 > [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/how-to-use/)
 

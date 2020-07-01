@@ -3,16 +3,17 @@ sites_supported:
   - mla
   - mco
   - global
+indexable: false
 ---
 
-# Mercado Pago Gateway: Smart Checkout
+# Mercado Pago Gateway: Checkout de Mercado Pago
 ----[mla, mlb, mlc, mlm, mco, mlu]----
 > NOTE
 >
 > Pre-requisito
 >
 
-> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Smart Checkout**
+> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Checkout de Mercado Pago**
 ------------
 
 ----[mpe]----
@@ -21,12 +22,18 @@ sites_supported:
 > Pre-requisito
 >
 
-> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Smart Checkout**
+> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout de Mercado Pago**
 ------------
+</br>
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
 
 ## Integración
 
-La única modificación necesaria para soportar **Modelo Gateway** en el Smart Checkout, es agregar el atributo `processing_modes` cuando creas una preferencia.
+La única modificación necesaria para soportar **Modelo Gateway** en el Checkout de Mercado Pago, es agregar el atributo `processing_modes` cuando creas una preferencia.
 
 [[[
 ```php
@@ -43,9 +50,9 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Smart C
 ```
 ]]]
 
-¡Listo! Tu **Smart Checkout** ahora estará funcionando en Modelo Gateway.
+¡Listo! Tu **Checkout de Mercado Pago** ahora estará funcionando en Modelo Gateway.
 
-> **Modelo híbrido:** todavía no estamos soportando este modelo en Smart Checkout. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
+> **Modelo híbrido:** todavía no estamos soportando este modelo en Checkout de Mercado Pago. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
 
 ### Próximos pasos
 

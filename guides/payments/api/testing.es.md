@@ -1,61 +1,121 @@
 # Prueba tu integración
 
-Es muy importante que antes de salir a producción realices pruebas del flujo completo, verificando que la creación de pagos se realice en forma correcta y que los mensajes sean efectivos a la hora de comunicar al usuario.
+Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verificar que tus pagos sean creados correctamente y que los mensajes que quieras comunicar sean efectivos.
 
-Una buena experiencia de tus clientes en el _checkout_ ayuda a mejorar la conversión.
+## Cómo probar tu integración
 
-Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), que te permitián probar toda la integración en una réplica exacta del Modo Producción pudiendo simular transacciones utilizando las tarjetas de prueba:
+**Los usuarios de prueba te permiten probar tu integración** al generar flujos de pagos en una copia exacta de tu integración.
 
-| País     	 | Visa 				       | Mastercard        | American Express |
-| ---- 		   | ---- 				       | ----------        | ---------------- |
-| Argentina  | 4509 9535 6623 3704 |5031 7557 3453 0604|3711 803032 57522 |
-| Brasil  	 | 4235 6477 2802 5682 |5031 4332 1540 6351|3753 651535 56885 |
-| Chile   	 | 4168 8188 4444 7115 |5416 7526 0258 2580|3757 781744 61804 |
-| Colombia   | 4013 5406 8274 6260 |5254 1336 7440 3564|3743 781877 55283 |
-| México  	 | 4075 5957 1648 3764 |5474 9254 3267 0366| no disponible    |
-| Perú    	 | 4009 1753 3280 6176 | no disponible     | no disponible    |
-| Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| no disponible    |
+Tipos de usuarios | Descripción
+------------ | -------------
+Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
+Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra**. |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards).
+<br>
 
-## Captura los datos de la tarjeta
+> SERVER_SIDE
+>
+> h2
+>
+> Cómo crear usuarios
 
-Con tu `public_key` podrás obtener de manera segura los datos de tarjeta de crédito ingresados en el formulario. Valida que se cargue correctamente el método de pago disponible para el número de tarjeta ingresado y la cantidad de cuotas con su correspondiente financiación.
+Para comenzar, es necesario que tengas como mínimo dos usuarios de prueba: un comprador y un vendedor.
 
-Verifica que el `card_token` generado al enviar el formulario contiene información, por ejemplo verificando que el atributo `first_six_digits` contenga un valor.
+Ejecuta el siguiente curl para generar un usuario de prueba:
 
-En caso de que algún dato ingresado sea incorrecto, te brindaremos un código de error especificando qué dato es el que debe ser corregido.
-
-
-## Recibe un pago
-
-Con tu `access_token` y el `card_token` obtenido, podrás hacer la prueba de creación de un pago.
-
-Si al momento de la creación obtienes algún error vinculado al método de pago seleccionado o a las cuentas que están operando, te informaremos con un HTTP Status 400 Bad Request y el código detallando el error para que puedas efectuar la correción y reintento del pago.
-
-Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Para ello debes ingresar en el formulario en el campo `card_holder_name` alguno de los siguientes prefijos:
-
-* **APRO**: Pago aprobado.  
-* **CONT**: Pago pendiente.  
-* **CALL**: Rechazo llamar para autorizar.  
-* **FUND**: Rechazo por monto insuficiente.  
-* **SECU**: Rechazo por código de seguridad.  
-* **EXPI**: Rechazo por fecha de expiración.
-* **FORM**: Rechazo por error en formulario.  
-* **OTHE**: Rechazo general.
-
-En cada caso, debes comunicar a tu cliente el resultado del pago y qué debe hacer como próximo paso.
-Para ello te informaremos con un HTTP Status 201 OK que el pago ha sido creado correctamente y enviaremos un código de resultado para que puedas redirigir al cliente a la página con el mensaje correcto.
-
-## Verifica haber recibido la notificación Webhook
-
-Mercado Pago te enviará una notificación del evento ocurrido. Valida que la hayas recibido correctamente e impactado en forma correcta en tu sistema de gestión.
-
-### Efectúa la anulación del pago
-
-Realiza la devolución de un pago aprobado o la cancelación de un pago pendiente y verifica que te llegue la notificación con la novedad correspondiente al recurso.
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+```
 
 
-## Prueba la creación de un cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
 
-Verifica que se haya creado el `customer` con la tarjeta asociada y que sus datos de tarjeta sean recuperados en forma correcta cuando cargues nuevamente el _checkout_.
+```json
+{
+    "id": 123456,
+    "nickname": "TT123456",
+    "password": "qatest123456",
+    "site_status": "active",
+    "email": "test_user_123456@testuser.com"
+}
+```
+
+>WARNING
+>
+>Importante
+>
+> * Tanto el comprador como el vendedor deben ser usuarios de prueba.
+> * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el _email_ y _password_ de cada uno.
+> * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
+> * Para hacer pagos de prueba te recomendamos usar montos bajos.
+> * Los montos deben respetar los ----[mla]---- [valores mínimos y máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos y máximos](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos y máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos y máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos y máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada medio de pago.
+
+## Prueba el flujo de pago
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configura la integración con los datos de tu usuario vendedor
+
+Configura la [clave pública de prueba]([FAKER][CREDENTIALS][URL]) de tu usuario vendedor en el frontend de tu aplicación y la [clave privada de prueba]([FAKER][CREDENTIALS][URL]) en el backend.
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realiza un pago con tu usuario comprador
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pruebas con tarjeta de crédito
+
+Inicia tu integración configurada con las credenciales de tu usuario de prueba vendedor:
+
+1. Completa los datos de una [tarjeta de prueba](#bookmark_tarjetas_de_prueba).
+1. Ingresa el e-mail de tu usuario de prueba comprador.
+1. Confirma la compra, ¡y listo!
+
+
+## Tarjetas de prueba
+
+Tarjeta | Número | CVV | Fecha de vencimiento
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4170 0688 1010 8020 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
+
+Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
+
+- APRO: Pago aprobado.
+- CONT: Pago pendiente.
+- OTHE: Rechazado por error general.
+- CALL: Rechazado con validación para autorizar.
+- FUND: Rechazado por monto insuficiente.
+- SECU: Rechazado por código de seguridad inválido.
+- EXPI: Rechazado por problema con la fecha de expiración.
+- FORM: Rechazado por error en formulario.
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que no es posible probar el flujo completo para medios de pago en efectivo.
+
+## Comenzar a recibir pagos
+
+Para empezar a cobrar, debes cumplir los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) y completar el formulario <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Quiero ir a producción</a>.
+
+Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
+
+---
+### Próximos pasos
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Manejo de respuestas de error
+>
+> Ayuda a tus clientes a completar sus pagos sin errores.
+>
+> [Manejo de respuestas de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Referencias de API
+>
+> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+>
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)

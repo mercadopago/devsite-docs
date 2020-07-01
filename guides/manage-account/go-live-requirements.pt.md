@@ -2,7 +2,7 @@
 
 Quando você tiver sua integração pronta e quiser começar a receber pagamentos, preencha o formulário para ir à produção na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
-## Não se esqigueça de ter um certificado SSL
+## Não se esqueça de ter um certificado SSL
 
 Para você esteja seguro e possa cuidar dos dados, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. Isso permite proteger as transações realizadas pelos compradores e seus dados.
 Durante os testes, você pode não ter um, mas é obrigatório ir para produção.

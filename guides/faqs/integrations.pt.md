@@ -13,7 +13,7 @@ Oferecemos diferentes opções para que você possa elaborar a solução de paga
 
 Temos ferramentas prontas para uso como SDKs, botões de pagamento, módulos ou plugins e também uma API flexível e robusta para que você possa criar sua própria experiência de pagamento.
 
-### Smart Checkout
+### Checkout Mercado Pago
 
 Esta opção permite cobrar através do nosso formulário web dentro do ambiente seguro do Mercado Pago de maneira simples e rápida.
 
@@ -24,21 +24,21 @@ Esta opção permite cobrar através do nosso formulário web dentro do ambiente
 -   **Protegemos seu dinheiro, sempre.** Você não precisa se preocupar com nada. Caso tenha algum problema, você conta com o nosso respaldo através do [nosso Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/como-protegemos-vendedores_500).
 
 ----[mla, mlb]----
-[Integrar Smart Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction)
+[Integrar Checkout Mercado Pago.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction)
 ------------
 ----[mlm, mpe, mco, mlu]----
-[Integrar Smart Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)
+[Integrar Checkout Mercado Pago.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)
 ------------
 
 ### Mobile Checkout
 
-Diferente do Smart Checkout, facilitamos a criação de uma experiência de pagamento pelo app através do nosso SDK. É uma integração simples e rápida, para que você possa oferecer a melhor experiência e os melhores meios de pagamento.
+Diferente do Checkout Mercado Pago, facilitamos a criação de uma experiência de pagamento pelo app através do nosso SDK. É uma integração simples e rápida, para que você possa oferecer a melhor experiência e os melhores meios de pagamento.
 
 [Integrar Mobile Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
-É a versão simplificada do Smart Checkout com uma experiência de usuário renovada.
+É a versão simplificada do Checkout Mercado Pago com uma experiência de usuário renovada.
 
 - **Não se preocupe com o design.** Proporcionamos um formulário com design e front-end prontos para uso.
 
@@ -58,15 +58,6 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 
 [Integrar por API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
 
-## Como oferecer descontos
-
-É muito simples, você escolhe quanto e quando quer investir e pronto. Sem custos adicionais!
-
-Você pode [oferecer descontos e gerar cupons](https://www.mercadopago.com.br/settings/my-business) com descontos de valores fixos ou por uma porcentagem dos produtos pelos seus botões ou links de pagamento. Você também pode habilitá-los para todos os seus compradores ou somente para alguns deles.
-
-Você pode usá-lo para oferecer 10% ou 20% de desconto nos seus produtos, por exemplo, ou um desconto de valor fixo por cada pagamento aos compradores que quiser.
-
-
 ## Posso oferecer pagamentos com cartão de débito?
 
 Por enquanto, não oferecemos a opção de pagamento com cartão de débito.
@@ -74,16 +65,6 @@ Por enquanto, não oferecemos a opção de pagamento com cartão de débito.
 Isso porque os bancos emissores de cartão no Brasil ainda não dispõem de uma tecnologia 3DS ideal para poder oferecê-lo, que é a base para que este meio de pagamento funcione.
 
 Mas, não se preocupe, há outros [meios de pagamento disponíveis](https://www.mercadopago.com.br/ajuda/meios-de-pagamentos-vendedores_474) para oferecer para os seus compradores.
-
-## Como oferecer assinaturas
-
-Você pode criar um botão de assinatura que permitirá que você receba pagamentos periodicamente. Você escolhe quanto quer cobrar e seus clientes podem cadastrar o débito automático com um cartão de crédito.
-
-Você pode usá-lo para o que quiser, como cobrar mensalidades de academia, aluguéis ou receber doações.
-
-É muito simples, pois não requer conhecimento sobre programação e, caso tenha dúvidas sobre como configurá-lo, você pode acessar o [manual de configuração](https://www.mercadopago.com.br/ajuda/cobrar-debito-automatico-cartao_1181) no portal de ajuda do Mercado Pago.
-
-[[Criar botão de assinatura]](http://www.mercadopago.com.br/receive-payments/tools)
 
 ## Como oferecer parcelamento sem juros
 

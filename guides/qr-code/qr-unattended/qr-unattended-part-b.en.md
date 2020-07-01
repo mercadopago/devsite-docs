@@ -11,7 +11,7 @@ sites_supported:
 
 # How to integrate QR unattended model 
 
-Ton integrate QR unattended model you need to:
+To integrate QR unattended model you need to:
 
 1. Create a service that will be called when a payment request is received and its associate logic.
 - A. Order information isn’t available yet. 
@@ -52,7 +52,7 @@ In those cases, service must answer with an error message, so the user sees a wa
 | `invalid`           | Secondary parameters (Station ID, Position, etc.) reference an unknown location. |
 | `timeout`           | Merchant server couldn’t communicate with any internal system (For example, vending machine) and cancelled the operation. |
 
-`message` is a plain text that can come with the declared type and is optional.
+A `message` is a plain text that can come with the declared type and is optional.
 
 
 ### B. Order infromation is available
@@ -99,7 +99,7 @@ You should use the field `external_reference` to be able to identify the order f
 
 ## 2. Declare your domain URL to Mercado Pago
 
-You must inform your domain URL to your [assigned technical advisor](https://www.mercadopago.com.ar/developers/en/support). Mercado Pago will use it for each transaction. 
+You must inform your domain URL to your assigned technical advisor. Mercado Pago will use it for each transaction. 
 
 > WARNING
 > 
@@ -112,24 +112,20 @@ You must inform your domain URL to your [assigned technical advisor](https://www
 
 ### Next steps
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/advanced-integration/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Advanced Integration<span class="card-status-tag card-status-tag-required">REQUIRED</span></p>
-<p>Learn the options to take your integration to the next level.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Test your integration<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
-<p>Try the most frequent use cases to validate your integration.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Advanced Integration
+>
+> Learn the options to take your integration to the next level.
+>
+> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/advanced-integration/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Test your integration
+>
+> Try the most frequent use cases to validate your integration.
+>
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/)

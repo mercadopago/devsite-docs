@@ -1,6 +1,15 @@
+
 # Tipos de documentos
 
-Os tipos de documentos aceitos ao efetuar uma cobrança através do Mercado Pago variam de acordo com o país.
+Os tipos de documentos aceitos ao efetuar uma cobrança através do Mercado Pago variam de acordo com o país.<br>
+
+> WARNING
+>
+> Importante
+>
+> Lembre-se que essas informações não se aplicam ao México
+
+<br>
 
 ## Obtenha os tipos de documentos
 
@@ -11,12 +20,12 @@ Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
 
 [[[
 ```php
-	<?php
-		require ('mercadopago.php');
-		$mp = new MP ('ACCESS_TOKEN');
-		$identification_types = $mp->get('/v1/identification_types');
-		print_r ($identification_types);
-	?>
+    <?php
+        require ('mercadopago.php');
+        $mp = new MP ('ACCESS_TOKEN');
+        $identification_types = $mp->get('/v1/identification_types');
+        print_r ($identification_types);
+    ?>
 ```
 ```curl
 curl -X GET \
@@ -31,16 +40,16 @@ curl -X GET \
 
 [[[
 ```json
-	[
-		{
-		    "id": "DNI",
-		    "name": "DNI",
-		    "type": "number",
-		    "min_length": 7,
-		    "max_length": 8
-  		},
-  		...
-  	]
+    [
+        {
+            "id": "DNI",
+            "name": "DNI",
+            "type": "number",
+            "min_length": 7,
+            "max_length": 8
+          },
+          ...
+      ]
 ```
 ]]]
 

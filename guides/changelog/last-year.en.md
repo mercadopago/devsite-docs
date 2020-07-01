@@ -1,5 +1,4 @@
-# Mercado Pago's release notes 2018
-
+# Mercado Pago's release notes 2019
 
 Each release note describes the new changes applying to a version. This changes may include:
 
@@ -11,76 +10,85 @@ Each release note describes the new changes applying to a version. This changes 
 
 - **Documentation updates:** Guides, references and tutorials to help you monetize your business by integrating Mercado Pago.
 
-## December 10 2018
+## December 5th, 2019
 
 At Mercado Pago we always try to optimize our platform offering the highest efficiency and security in payment processing.
 
-We are currently working on migrating our API version 0 to version 1 in order to maintain the highest quality standards.
+We are currently working on shutting down our Custom Checkout API version 0 in order to maintain the highest quality standards.
 
-After this deadline, version 0 will stop having support.
+After December 12th, 2019 version 0 will stop having support.
 
-The migration will involve the following resources:
+The shutdown will involve the following resources:
 
-| Use                     | Method | Deprecated resource URI                      | Equivalent resource URI              |
-|-------------------------|--------|----------------------------------------|----------------------------------|
-| Refunds            | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds |
-| Refunds            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |
-| Payment updates  | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |
-| Payment updates  | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |
-| Payments                   | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |
-| Payments                   | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |
-| Payments notifications | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |
-| Payments search       | `GET`  | /payments/search                       | /v1/payments/search              |
-| Payments search       | `GET`  | /collections/search                    | /v1/payments/search              |
+| Use                     | Method | Deprecated resource URI                  |
+|-------------------------|--------|------------------------------------------|
+| Payment                 | `POST` | /checkout/custom/create_payment          |
+| Payment Methods         | `GET`  | /checkout/custom/payment_methods         |
+| Payment Methods search  | `GET`  | /checkout/custom/payment_methods/search  |
+| Card issuers            | `GET`  | /checkout/custom/card_issuers            |
 
-More information [in this article](https://www.mercadopago.com.ar/developers/en/guides/localization/migrating-v0-v1).
+You can find the equivalent resources in [this article](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction/).
 
-## September 13 2018
+## November 25, 2019
 
-**Mercado Envíos feature disabled for Mercado Pago integrations in Brazil**
+To meet the highest security standards, we seek to always be updated. Therefore, the old version of **IPN notifications (Instant Payment Notification)** will no longer be available from November 29.
 
-Due to performance problems, Mercado Envíos feature for Mercado Pago integrations in Brazil was disabled.
+If you are using it, **you must check your version and update it to avoid problems and loss of service.** In case you don't want to do it, you can use other types of notifications that we offer.
 
-Mercado Envíos within the Mercado Libre platform will continue to function normally.
+You can find all the necessary information in the [migration guide](https://www.mercadopago.com.br/developers/en/guides/changelog/migration-guides/ipn-ow-guide). 
 
-Please bear in mind that this change may affect some integrations made previously, in this case we request you contact our support team indicating the accounts with which you operated so that your case can be analyzed in particular.
+----[mlc, mco]----
 
-## June 30 2018
+## September 25th, 2019
 
-- We are working on the **end of support of TLS 1.0** for the domains [https://api.mercadopago.com](https://api.mercadopago.com) and [https://pagamento.mercadopago.com](https://pagamento.mercadopago.com) with the objective of maintaining the highest quality standards and promoting the security of our clients' data.
+**Flow improvements for PSE, Webpay y Khipu.**
 
-- As of June 30, 2018 we will require that the connections to these domains be through the encryption protocol TLS 1.1 or higher. More information in [this article](https://www.mercadopago.com.ar/developers/en/guides/pci-compliant-merchants/disabling-tls-10)
+- If customer “callback_url” is set for the payment, user is redirected to the defined url after 15 seconds.
+- In case it is not defined, Mercado Pago´s success is displayed without redirection
 
+------------
+----[mlc]----
 
-## June 14 2018
+**Improvements for rejected payments in Webpay**
 
-Due to a Information Disclosure issue, we'll be hidding some of the payer's contact information for **non approved payments**.
+- Shopify: Problem solved when a client selects as payment method Debit in Webpay's flow. When the user tried to navigate backwards, the success receipt is no longer displayed, but the payment rejected screen is displayed.
 
-This means that any `GET` or `POST` request over **/v1/payments**  will be giving a response like the following:
+------------
 
-```json
-...
-    "payer": {
-        "type": null,
-        "id": 12345,
-        "email": null,
-        "identification": {
-            "type": null,
-            "number": null
-        },
-        "phone": {
-            "area_code": null,
-            "number": null,
-            "extension": null
-        },
-        "first_name": null,
-        "last_name": null,
-        "entity_type": null
-    },
-```
+## May 29th, 2019
+
+**Official modules with support from Mercado Pago**
+
+We always want to give you the best experience. Therefore, we list the modules that have official support from Mercado Pago and that you can have personalized service as needed:
+
+| Module                  | Versions                                                                                    |
+|-------------------------|---------------------------------------------------------------------------------------------|
+| WooCommerce             | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x                                          | 
+| PrestaShop              | Prestashop 1.6.x - 1.7.x                                                                    |
+| Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
+| Shopify                 | -                                                                                           |
+
+[View modules](https://www.mercadopago.com.ar/developers/en/plugins_sdks).
 
 
+> Please note that the modules and platforms not mentioned only have support from the community. 
 
-- **What about Sandbox?**: We'll be giving you mock and static values.
-- This changes will have effect over payments **off**  Mercado Libre's platform.
-- This changes will have effect from June 16th.
+
+## April 16th, 2019
+
+**Browsers compatible with Mercado Pago**
+
+We have updated our security protocols to meet the highest security standards.
+
+To continue using Mercado Pago without problems, you must do it from the versions supported by our domains:
+
+
+| Browser                 | Version            |
+|-------------------------|--------------------|
+| Internet Explorer       | 9 or later         | 
+| Chrome                  | 6 or later         |
+| Android Browser         | 2.3.3 or later     | 
+
+
+> Keep in mind that you will not be able to enter any Mercado Pago website using unsupported browsers.
+

@@ -30,7 +30,11 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | STORE_ID | ID de sucursal si el pago se realiza a través de un comercio físico. |
 | STORE_NAME | Nombre de sucursal para el pago realizado a través de un comercio físico. |
 | EXTERNAL_STORE_ID | ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. |
-
+| ORDER_ID | Orden de compra. |
+| SHIPPING_ID | Identificador de envío. |
+| SHIPMENT_MODE | Modalidad de envío. |
+| PACK_ID | Identificador del paquete en el carrito. |
+| TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 
 <hr/>
 
@@ -38,9 +42,9 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Cómo usar el reporte
+> Reporte de Dinero retirado
 >
-> Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
+> Qué es y para qué sirve el reporte de Dinero retirado. Descubre ejemplos y casos de uso.
 >
 > [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/how-to-use/)
 

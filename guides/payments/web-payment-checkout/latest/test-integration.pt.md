@@ -14,7 +14,7 @@ sites_supported:
 
 ## Como testar minha integração
 
-**Os usuários de teste permitem que você faça testes no seu Smart Checkout** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
+**Os usuários de teste permitem que você faça testes no seu Checkout Mercado Pago** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
 
 Tipos de usuarios | Descrição
 ------------ | -------------
@@ -36,7 +36,6 @@ curl -X POST \
 "https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-
 
 ### Resposta
 

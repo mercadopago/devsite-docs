@@ -23,12 +23,9 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
   </script>
 </form>
 ```
+Você pode encontrar sua Public key na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
-> NOTE
->
-> Nota
->
-> Você pode encontrar seu public key na página de [credenciais]([FAKER][CREDENTIALS][URL])
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 ### Paso 3: Obter todos os dados
 
@@ -115,7 +112,7 @@ Somente deverá incluir uma *chamada à API* incluindo os dados que recebeu do c
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200])
+payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setToken(token)
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(installments)

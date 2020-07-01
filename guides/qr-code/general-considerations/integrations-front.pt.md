@@ -10,24 +10,24 @@ sites_supported:
 ---
 
 
-# Gerar QR desde o painel de Mercado Pago
+# Geração de QR pelo painel do Mercado Pago
 
 ## Como faço uma cobrança com QR?
 
-Para receber pagamentos com QR em seu negócio, **pode imprimi-lo e colá-lo em local visível e mostrá-lo em seu dispositivo móvel** e receber desde o app de Mercado Pago.
+Para receber pagamentos com QR em seu negócio, **pode imprimi-lo e colá-lo em local visível ou mostrá-lo em seu dispositivo móvel** e receber pelo app do Mercado Pago.
 
 Se receber com seu QR impresso, você pode colocar o valor a pagar desde seu computador ou simplesmente pedir ao cliente que o ingresse depois de escanear o código. 
 
 ## Como você coloca o valor? 
 
-1. Ingresse à secção Código QR em [sua conta de Mercado Pago](https://www.mercadopago.com.br/qr-code/amount).
+1. Ingresse à secção Código QR em [sua conta do Mercado Pago](https://www.mercadopago.com.br/qr-code/amount).
 2. Escolha o local e o caixa onde estiver recebendo. 
 3. Coloque o valor a ser pago. 
-4. Seu cliente escaneia o QR desde o app de Mercado Libre ou Mercado Pago e escolhe como lhe pagar. 
+4. Seu cliente escaneia o QR a partir do app do Mercado Libre ou Mercado Pago e escolhe como lhe pagar. 
 
 Você poderá ver a confirmação da cobrança no momento e o detalhe da atividade de sua conta de Mercado Pago.
 
-## Como receber desde o app?
+## Como receber pelo app?
 
 Ainda pode fazê-lo! Ingresse à secção Cobrar, coloque o valor no calculador e selecione a opção Cobrar com QR. Seus clientes terão que escanear o código que aparece em seu dispositivo móvel para pagar com o meio de pagamento que prefiram. 
 
@@ -41,24 +41,19 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 
 ### Próximos passos
 
-<div>
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/introduction/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Que é o código QR?<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Configura as notificações de seus pagamentos.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/integrations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Como gerar o QR?<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
-<p>Conheça as diferentes opções de receber com QR segundo seu negócio. </p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Que é o código QR?
+>
+> Configura as notificações de seus pagamentos.
+>
+> [Que é o código QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/introduction/)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Como gerar o QR?
+>
+> Conheça as diferentes opções de receber com QR segundo seu negócio.
+>
+> [Como gerar o QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/integrations/)

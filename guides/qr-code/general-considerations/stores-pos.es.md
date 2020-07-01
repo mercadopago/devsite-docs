@@ -28,7 +28,7 @@ Las **sucursales** y **cajas** son importantes para recibir pagos presenciales c
 
 ### ¿Cuáles son los beneficios de crear sucursales?
 
-Los beneficios de crear Sucursales son:
+Los beneficios de crear sucursales son:
 
 - **Lograr trazabilidad**. Cada pago quedará asociado a una sucursal y al momento de obtener tus reportes de conciliación será valioso para identificar transacciones por sucursal.
 - **Visibilidad en mapas de sucursales**. Las sucursales creadas aparecen en el mapa de las app de Mercado Pago o Mercado Libre a medida que vayan teniendo pagos. De esta manera, dan visibilidad a todos los clientes sobre la existencia de la tienda. 
@@ -86,7 +86,7 @@ Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguie
 
 | Término       |  Descripción                                                 |
 | ------------- | ------------------------------------------------------------ |
-| `EXTERNAL_STORE_ID`     | Vincula la Caja con la Sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
+| `EXTERNAL_STORE_ID`     | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
 | `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. |
 | `URL`           | Sólamente es utilizado en el modelo desatendido. En este campo se declara la URL de un servicio de tu dominio al cual Mercado Pago consultará si hay una orden disponible. |
 
@@ -106,30 +106,26 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
 
 Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/pos/_pos/post/).
 
-Una vez creada la caja, podremos ver en el “Response” los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
+Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 
 
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integrar QR modelo atendido<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Si en tu proceso de venta, es necesario que participe un operador, revisa este modelo!</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integrar QR modelo desatendido<span class="card-status-tag card-status-tag-recommended">RECOMENDADO</span></p>
- <p>Si puede concretarse la venta solamente con la acción del cliente, este es tu modelo!</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Integrar QR modelo atendido
+>
+> Si en tu proceso de venta, es necesario que participe un operador, revisa este modelo!
+>
+> [Integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Integrar QR modelo desatendido
+>
+> Si puede concretarse la venta solamente con la acción del cliente, este es tu modelo!
+>
+> [Integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/)

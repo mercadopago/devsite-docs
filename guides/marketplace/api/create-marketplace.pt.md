@@ -89,8 +89,8 @@ Na resposta, além do `access_token` e da `public_key`do vendedor que foi vincul
 > Nota
 >
 > As credenciais têm um **prazo de validade de 6 meses**.
-> Se não se renovarem as credenciais dos vendedores antes dos 6 meses, **as mesmas perderão vigência e se deverá autorizar o vendedor novamente**. 
-> Recomendação: Renovar as credenciais a cada 5 meses. 
+> Se não se renovarem as credenciais dos vendedores antes dos 6 meses, **as mesmas perderão vigência e se deverá autorizar o vendedor novamente**.
+> Recomendação: Renovar as credenciais a cada 5 meses.
 
 
 ### Renove as credenciais de seus vendedores
@@ -162,7 +162,6 @@ curl -X POST \
   $payment->description = "Title of what you are paying for";
   $payment->installments = 1;
   $payment->payment_method_id = "visa";
-  $payment->user_token = "ENV_USER_TOKEN";
   $payment->payer = array(
     "email" => "test_user_19653727@testuser.com"
   );
@@ -178,12 +177,11 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = new Payment();
 
-payment.setTransactionAmount(100)
+payment.setTransactionAmount(100f)
       .setToken('ff8080814c11e237014c1ff593b57b4d')
       .setDescription('Title of what you are paying for')
       .setInstallments(1)
       .setPaymentMethodId("visa")
-      .setUserToken("ENV_USER_TOKEN")
       .setPayer(new Payer("test_user_19653727@testuser.com"));
 
 payment.save();
@@ -200,7 +198,6 @@ var payment_data = {
   description: 'Title of what you are paying for',
   installments: 1,
   payment_method_id: 'visa',
-  user_token: "ENV_USER_TOKEN"
   payer: {
     email: 'test_user_3931694@testuser.com'
   }
@@ -224,7 +221,6 @@ payment.token = 'ff8080814c11e237014c1ff593b57b4d'
 payment.description = 'Title of what you are paying for'
 payment.installments = 1
 payment.payment_method_id = "visa"
-payment.user_token = "ENV_USER_TOKEN"
 payment.payer = {
   email: "test_user_19653727@testuser.com"
 }
@@ -268,4 +264,4 @@ Para mais informações, consulte a seção de [devoluções e cancelamentos](ht
 
 Você pode usar os cartões de teste fornecidos pelo Mercado Pago e os diferentes prefixos para manipular as mensagens de resposta.
 
-[Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing) 
+[Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing)

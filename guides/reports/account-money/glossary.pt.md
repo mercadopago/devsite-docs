@@ -16,7 +16,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TRANSACTION_AMOUNT | Valor bruto da transação. |
 | TRANSACTION_CURRENCY | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Moeda:<br/><ul><li> MXN (Peso mexicano)</li><li>CLP (Peso Chileno)</li><li>ARS (Peso Argentino)</li><li>BRL (Real Brasileiro)</li><li>PEN (Sol Peruano)</li><li>COP (Peso Colombiano)</li><li>UYU (Peso Uruguayo)</li><li>VES (Bolivar Venezolano)</li></ul></td></tr></table> |
 | TRANSACTION_DATE | Data de aprovação da transação. |
-| FEE_AMOUNT | É a somatória das tarifass de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. |
+| FEE_AMOUNT | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. |
 | SETTLEMENT_NET_AMOUNT | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da `TRANSACTION_AMOUNT`. |
 | SETTLEMENT_CURRENCY | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Moeda:<br/><ul><li> MXN (Peso mexicano)</li><li>CLP (Peso Chileno)</li><li>ARS (Peso Argentino)</li><li>BRL (Real Brasileiro)</li><li>PEN (Sol Peruano)</li><li>COP (Peso Colombiano)</li><li>UYU (Peso Uruguayo)</li><li>VES (Bolivar Venezolano)</li></ul></td></tr></table> |
 | SETTLEMENT_DATE | Data em que o valor da transação foi creditada. |
@@ -39,6 +39,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | SHIPPING_ID | Identificador de envio. |
 | SHIPMENT_MODE |  Modalidade de envio. |
 | PACK_ID |  Identificador do pacote no carrinho. |
+| TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 
 <hr/>
 

@@ -28,7 +28,7 @@ sites_supported:
 
 ### What are the benefits of creating stores?
 
-- **Tracking**. Each pay will be linked with a store. This will be useful to obtain reconciliation reports and identify transactions per store. 
+- **Tracking**. Each pay will be linked with a store. This will be useful to obtain reconciliation reports and identify transactions per store.
 - **Map Visibility**. Stores will appear on Mercado Pago and Mercado Libre maps, so user will be able to find you.
 - **Better organization for your POS**.
 
@@ -118,7 +118,7 @@ Once Point of Sale is created, you’ll be able to see the QR files in the “Re
 <div>
 <a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-a/" style="text-decoration:none;color:inherit">       
 <blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integrate QR attended model.<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
+<p class="card-note-title">Integrate QR attended model<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
 <p>Check this if your selling process needs an operator.</p>
 </blockquote>
 </a>    
@@ -136,3 +136,20 @@ Once Point of Sale is created, you’ll be able to see the QR files in the “Re
 <br/>
 <br/>
 <br/>
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Integrate QR attended model
+>
+> Check this if your selling process needs an operator.
+>
+> [Integrate QR attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-a/)
+
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Integrate QR unattended model
+>
+> If your selling process only needs a client action, this is the model for you.
+>
+> [Integrate QR unattended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-a/)

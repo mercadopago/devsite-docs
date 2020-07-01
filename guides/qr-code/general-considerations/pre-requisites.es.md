@@ -17,13 +17,15 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 | Término                            | Descripción                                                  |
 | -----------------------------------| ------------------------------------------------------------ | 
-| Credenciales (Credentials)         | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]) y selecciona las **productivas** en la opción _Checkout personalizado._ |
+| Credenciales (Credentials)         | Tus [credenciales]([FAKER][CREDENTIALS][URL]) son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus credenciales y selecciona las productivas. |
 | `ACCESS_TOKEN` | Es la clave privada de la aplicación para generar pagos, dentro de la sección [credenciales]([FAKER][CREDENTIALS][URL]). Debes usarla para identificarte en tus integraciones. Siempre usa las del Modo Producción. |
-| `COLLECTOR_ID` | Es el ID del usuario vendedor en Mercado Pago, son los últimos 9 dígitos del `access_token`, posterior al guión medio. También se lo conoce como `USER_ID` |
-| `SPONSOR_ID` | Es el ID del usuario proveedor del sistema integrado con Mercado Pago, son los últimos 9 dígitos del `access_token`, posterior al guión medio. El `sponsor_ID` no puede ser igual al `COLLECTOR_ID`. |
+| `COLLECTOR_ID` | ID de la cuenta de Mercado Pago. Se compone por los dígitos posteriores al guión medio del `access_token`. También lo puedes encontrar como _`USER_ID`_. |
+| `SPONSOR_ID` |  Es el `collector_ID` del usuario proveedor del sistema integrado con Mercado Pago. El `sponsor_ID` no puede ser igual al `collector_id`. |
 | Sucursal | Es una **tienda física** en la que tus clientes pueden adquirir tus productos o servicios. Puedes tener varias sucursales en una misma cuenta. |
 | Caja | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
 | Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado.
+
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 ## Requisitos previos
 
@@ -43,17 +45,11 @@ Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mer
 
 ### Próximos pasos
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/stores-pos/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Sucursales y Cajas<span class="card-status-tag card-status-tag-required">REQUERIDO</span></p>
- <p>Para realizar la integración, primero debes configurar tus sucursales y cajas.</p>
-</blockquote>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_ES
+>
+> Sucursales y Cajas
+>
+> Para realizar la integración, primero debes configurar tus sucursales y cajas.
+>
+> [Sucursales y Cajas](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/stores-pos/)

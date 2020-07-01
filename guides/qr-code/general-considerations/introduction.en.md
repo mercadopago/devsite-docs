@@ -52,18 +52,11 @@ In order to receive payments with QR, you can **print it and paste it in a visib
 ---
 ### Next steps
 
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">How to generate QR codes<span class="card-status-tag card-status-tag-required">REQUIRED</span></p>
-<p>Learn all the different methods to charge with QR code.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+> LEFT_BUTTON_REQUIRED_EN
+>
+> How to generate QR codes
+>
+> Learn all the different methods to charge with QR code.
+>
+> [How to generate QR codes](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations/)

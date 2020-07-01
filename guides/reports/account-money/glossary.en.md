@@ -42,6 +42,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | SHIPPING_ID | Shipping Identification. |
 | SHIPMENT_MODE | Shipping Mode. |
 | PACK_ID | Package identification in the cart. |
+| TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
 
 <hr/>
 

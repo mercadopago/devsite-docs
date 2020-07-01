@@ -5,7 +5,7 @@
 
 # Campanhas de desconto
 
-Crie campanhas de desconto para impulsionar suas vendas utilizando as ferramentas de marketing da sua conta no MercadoPago, entrando na seção Configurações para o seu Negócio: [Criar desconto](https://www.mercadopago.com.ar/campaigns/create).
+Crie campanhas de desconto para impulsionar suas vendas utilizando as ferramentas de marketing da sua conta no MercadoPago, entrando na seção Configurações para o seu Negócio: [Criar desconto](https://www.mercadopago[FAKER][URL][DOMAIN]/campaigns/create).
 
 Você pode criar dois tipos de campanhas:
 

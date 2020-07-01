@@ -3,9 +3,16 @@ sites_supported:
   - mla
   - mco
   - global
+indexable: false
 ---
 
 # Mercado Pago Gateway: Introducción
+
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
 
 ## ¿Qué es?
 
@@ -56,6 +63,6 @@ El costo dependerá según el volumen mensual operado del vendedor.
 ### Próximos pasos
 
 * [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/configuration) en el backoffice de Mercado Pago
-* [Integrá el Smart Checkout](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway
+* [Integrá el Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway
 * [Integrá la API](https://www.mercadopago.com.ar/developers/es/guides/gateway/api/receiving-payments) en Modelo Gateway
 * [Integrá pagos avanzados](https://www.mercadopago.com.ar/developers/es/guides/gateway/advanced/introduction) en Modelo Gateway
