@@ -23,15 +23,9 @@ They are available in your Mercado Pago account, in the [Credentials section]([F
 
 ## I am already integrated and tested, how do I implement in production?
 
-You must fill the form "Go to production" found in the [Credentials section]([FAKER][CREDENTIALS][URL]).
+To go to production, you must activate your credentials in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
-This form is necessary to make transactions with real money.
-
-Keep in mind when completing the fields:
-
-- Document: refers to the type of document and the number without dots or bars.
-
-- Postal address: enter a contact e-mail of the site.
+> If they are already active, you don't have to do anything.
 
 ## I want to update my credentials, how can I renew them?
 

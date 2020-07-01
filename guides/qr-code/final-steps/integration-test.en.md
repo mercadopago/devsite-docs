@@ -117,13 +117,13 @@ Event | Expected output | Comments
 
 ## Production mode
 
-When your app is **ready and working in test mode**, and you want to start processing real payments, you have to complete the form located in [credentials]([FAKER][CREDENTIALS][URL]). Afterwards, Mercado Pago will be able to audit your website, app or Point of Sale software, checking if all rules are being followed. If necessary, an advisor will contact you to discuss how to fix your integration. 
+When your app is **ready and working in test mode**, and you want to start processing real payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]). Afterwards, Mercado Pago will be able to audit your website, app or Point of Sale software, checking if all rules are being followed. If necessary, an advisor will contact you to discuss how to fix your integration. 
 
 > WARNING
 > 
 > IMPORTANT
 > 
-> * If you don’t complete the form, you won’t be able to do any type of returns.
+> * If you don’t activate your credentials, you won’t be able to do any type of returns.
 
 ## Why is this process needed?
 

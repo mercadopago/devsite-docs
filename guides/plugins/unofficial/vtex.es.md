@@ -1134,7 +1134,7 @@ Los errores más comunes son los siguientes:
 
 | Mensaje | Significado |
 | --- | --- |
-| `unauthorized_use_of_live_credentials` | Las credenciales de la cuenta de Mercado Pago no están habilitadas. Tienes que ir a la página de credenciales y completar el formulario de “Quiero ir a producción”. |
+| `unauthorized_use_of_live_credentials` | Las credenciales de la cuenta de Mercado Pago no están habilitadas. Tienes que ir a la página de credenciales y activarlas. |
 | `invalid installments` | Se está intentando procesar el pago con una cuota que no está habilitada. Se debe ir a la configuración del medio de pago y definir las cuotas como Automáticas. |
 | `invalid_users` | Se está intentando pagar con el mismo usuario que se está cobrando. Volver a intentar el pago con un mail pagador distinto |
 | `Cannot infer Payment Method` | Se quiere pagar con una tarjeta distinta al tipo de tarjeta seleccionado. Por ejemplo, se ingresó el número de una tarjeta de crédito en la opción de tarjeta de débito. |
