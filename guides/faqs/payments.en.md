@@ -68,13 +68,13 @@ Based on the type of checkout and integration used, the process may be different
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mercado Pago Checkout
 
-You can remove the ticket option through the payment preference. For more details please refer to our [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
+You can remove the ticket option through the payment preference. For more details please refer to our [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mercado Pago APIs
 
 You can remove it directly from your frontend. Get the payment methods excluding the ticket in the call with the parameter `"payment_type_id" = credit_card` as filter, for example.
 
-> For more details please refer to the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get/).
+> For more details please refer to the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get/).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins and e-commerce solutions ready to use
 
@@ -96,8 +96,6 @@ Verify if the id of the seller’s account is validated in the Mercado Pago pane
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add our security code into your website
 It is important to add to your integration all the necessary information to [improve the approval process of your payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/payment-rejections/#bookmark_tips_to_improve_the_approval_process).
-
-Es importante que sumes en tu integración toda la información necesaria para [mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/payment-rejections/#bookmark_recomendaciones_para_mejorar_tu_aprobación).
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A payment has been rejected
