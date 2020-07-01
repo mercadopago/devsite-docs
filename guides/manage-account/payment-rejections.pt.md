@@ -290,6 +290,10 @@ preference.Items.Add(
 
 Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments/post/).
 
+### Dados da indústria
+
+Você também pode verificar quais dados do setor enviar para melhorar sua aprovação [Aquí](https://www.mercadopago.com.ar/developers/es/guides/manage-account/industria-additionalinfo). 
+
 ### Auxilie os seus clientes com seus pagamentos recusados
 
 É importante que você explique aos seus clientes o motivo de recusa do pagamento e que ação pode realizar para solucioná-lo. Seus clientes terão todas as informações necessárias para pagar sem problemas.

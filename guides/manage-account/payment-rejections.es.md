@@ -79,7 +79,7 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 | Tipo                                                         | Descripción                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| *home* | Página principal de tu sitio. | 
+| *home* | Página principal de tu sitio. |
 | *search* | Página de búsqueda o listado de productos. |
 | *item* | Página de un producto específico. |
 
@@ -289,6 +289,10 @@ preference.Items.Add(
 ]]]
 
 Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+
+### Datos de industria
+
+También puedes revisar que datos de industria enviar para mejorar tu aprobación [Aquí](https://www.mercadopago.com.ar/developers/es/guides/manage-account/industria-additionalinfo).
 
 ### Ayuda a tus clientes con sus pagos rechazados
 
