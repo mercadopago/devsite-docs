@@ -4,6 +4,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Julio 2020
+
+### 08 de julio
+
+> CHANGELOG
+>
+> Cambios en la API de órdenes
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: ORDENES
+
+Para adecuarnos a nuevas medidas de seguridad en el manejo de datos de nuestros usuarios, vamos a dejar de mostrar el email del collector en la creación de órdenes desde el miércoles 08/07. Entendemos que este cambio no debería generar afectación ya que es el mismo email del usuario que se encuentra creando la orden.
+
+[Ir a documentación de Órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/)
+
+---
+
 ## Junho 2020
 
 ### 11 de junho

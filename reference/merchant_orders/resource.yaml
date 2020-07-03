@@ -97,9 +97,9 @@ properties:
     - email:
         type: String(256)
         description:
-          en: Collector e-mail address.
-          es: E-mail del collector.
-          pt: E-mail do collector.
+          en: Collector e-mail address. (Campo retornado como vacio desde 08/07/2020)
+          es: E-mail del collector. (Campo retornado como vacio desde 08/07/2020)
+          pt: E-mail do collector. (Campo retornado como vacio desde 08/07/2020)
     - nickname:
         type: String(256)
         description:
