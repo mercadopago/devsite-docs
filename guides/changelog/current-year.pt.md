@@ -4,9 +4,9 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Julio 2020
+## Julho 2020
 
-### 08 de julio
+### 8 de julho
 
 > CHANGELOG
 >

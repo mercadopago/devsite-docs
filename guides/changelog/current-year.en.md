@@ -4,7 +4,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
-## Julio 2020
+## July 2020
 
 ### 08 de julio
 

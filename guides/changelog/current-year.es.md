@@ -6,7 +6,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Julio 2020
 
-### 08 de julio
+### 8 de julio
 
 > CHANGELOG
 >
@@ -14,11 +14,11 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: ORDENES
+> PRODUCT: ÓRDENES
 
-Para adecuarnos a nuevas medidas de seguridad en el manejo de datos de nuestros usuarios, vamos a dejar de mostrar el email del collector en la creación de órdenes desde el miércoles 08/07. Entendemos que este cambio no debería generar afectación ya que es el mismo email del usuario que se encuentra creando la orden.
+Actualizamos nuestras medidas de seguridad de datos para cumplir con los más altos estándares de seguridad. Desde el miércoles 8 de julio, vamos a dejar de mostrar el e-mail del vendedor en la creación de órdenes. El cambio no debería generar ningún problema en la integración, ya que es información de la persona que se encuentra creando la orden. 
 
-[Ir a documentación de Órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/)
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/)
 
 ---
 
