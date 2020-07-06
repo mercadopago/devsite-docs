@@ -24,7 +24,7 @@ We have released a new version of SDK Java 1.3.2.
 >
 > [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.3.2) for further details regarding this release.
 
-### 1 de julho
+### July 1st
 
 > CHANGELOG
 >
