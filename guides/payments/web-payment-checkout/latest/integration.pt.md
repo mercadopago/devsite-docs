@@ -241,6 +241,12 @@ curl -X POST \
 
 Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Checkout Mercado Pago onde você quiser que ele apareça.
 
+> NOTE
+>
+> Nota
+>
+> Si tu sitio funciona en mobile, ten en cuenta que es necesario configurar las `back_urls`. Para más información puedes visitar la sección [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/). 
+
 [[[
 ```php
 <form action="/processar_pagamento" method="POST">

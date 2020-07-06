@@ -236,6 +236,12 @@ preference.Items.Add(
 No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
 Para isso, `back_urls` são usados. Esse redirecionamento pode ser automático através do atributo `auto_return` ou de um link que permite retornar ao site do vendedor.
 
+> NOTE
+>
+> Nota
+>
+> Ten en cuenta que las `backs_urls` solo funcionan para redirect y mobile. No al usar modo modal, como se detalla en el siguiente [link]() para volver al sitio toma la URL del `form action`. 
+
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
 Atributo |	Descrição
