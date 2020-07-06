@@ -10,15 +10,15 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
-> Cambios en la API de órdenes
+> API Orders changes
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: ORDENES
+> PRODUCT: ORDERS
 
-Para adecuarnos a nuevas medidas de seguridad en el manejo de datos de nuestros usuarios, vamos a dejar de mostrar el email del collector en la creación de órdenes desde el miércoles 08/07. Entendemos que este cambio no debería generar afectación ya que es el mismo email del usuario que se encuentra creando la orden.
+We update our data protection protocols to meet the highest security standards. After July 8th, we will stop displaying the seller's e-mail when creating orders. The change shouldn't cause any problems in the integration, since it's information of the person who is creating the order.
 
-[Ir a documentación de Órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/)
+You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource/)
 
 ---
 

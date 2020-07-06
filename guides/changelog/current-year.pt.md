@@ -10,15 +10,15 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Cambios en la API de órdenes
+> Alterações na API de odens
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: ORDENES
+> PRODUCT: ODENS
 
-Para adecuarnos a nuevas medidas de seguridad en el manejo de datos de nuestros usuarios, vamos a dejar de mostrar el email del collector en la creación de órdenes desde el miércoles 08/07. Entendemos que este cambio no debería generar afectación ya que es el mismo email del usuario que se encuentra creando la orden.
+Atualizamos nossas medidas de proteção de dados para atender aos mais altos padrões de segurança. A partir de quarta-feira, 8 de julho, deixaremos de exibir o e-mail do vendedor ao criar pedidos. A mudança não deve gerar nenhum problema na integração, pois são informações da pessoa que está criando o pedido.
 
-[Ir a documentación de Órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/)
+Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/resource/)
 
 ---
 
