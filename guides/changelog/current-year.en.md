@@ -4,6 +4,80 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## July 2020
+
+### July 7th
+
+> CHANGELOG
+>
+> New version of SDK NodeJS
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK NodeJS
+
+We have released a new version of SDK Java 1.3.2.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.3.2) for further details regarding this release.
+
+### 1 de julho
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+
+We have released a new version of SDK Java 1.7.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.7.0) for further details regarding this release.
+
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+
+We have released a new version of SDK Java 2.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-php/releases/tag/2.1.0) for further details regarding this release.
+
+
+> CHANGELOG
+>
+> Nueva versión SDK .NET
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK .NET
+
+We have released a new version of SDK .NET 1.8.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-dotnet/releases/tag/1.8.0) for further details regarding this release.
+
+---
+
 ## June 2020
 
 ### June 11th
