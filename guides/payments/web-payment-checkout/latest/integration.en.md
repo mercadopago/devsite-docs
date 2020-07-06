@@ -245,7 +245,7 @@ Finally, add the following code to show the payment button of your Mercado Pago 
 >
 > Nota
 >
-> Si tu sitio funciona en mobile, ten en cuenta que es necesario configurar las `back_urls`. Para más información puedes visitar la sección [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/). 
+> Si tu sitio funciona en mobile, ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información puedes visitar la sección [Integración avanzada](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration/). 
 
 [[[
 ```php

@@ -245,7 +245,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 >
 > Nota
 >
-> Si tu sitio funciona en mobile, ten en cuenta que es necesario configurar las `back_urls`. Para más información puedes visitar la sección [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/). 
+> Si tu sitio funciona en mobile, ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información puedes visitar la sección [Integración avanzada](http://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/test-integration/). 
 
 [[[
 ```php
