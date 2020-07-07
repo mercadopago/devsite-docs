@@ -14,7 +14,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
-> PRODUCT: SDK NodeJS
+> PRODUCT: SDK NODEJS
 
 Lanzamos una nueva versíon del SDK NodeJS 1.3.2.
 

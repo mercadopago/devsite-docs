@@ -14,7 +14,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: SDK NodeJS
+> PRODUCT: SDK NODEJS
 
 Lançamos uma nova versão do SDK NodeJS 1.3.2.
 

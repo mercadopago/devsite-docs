@@ -14,7 +14,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > NEW_VERSION: NEW VERSION
 >
-> PRODUCT: SDK NodeJS
+> PRODUCT: SDK NODEJS
 
 We have released a new version of SDK NodeJS 1.3.2.
 
