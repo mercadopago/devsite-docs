@@ -91,7 +91,6 @@
       ],
       "collector": {
         "id": 999999999,
-        "email": "collector@email.com",
         "nickname": null
       },
       "marketplace": "NONE",
