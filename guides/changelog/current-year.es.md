@@ -20,6 +20,76 @@ Actualizamos nuestras medidas de protección de datos para cumplir con los más 
 
 Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/).
 
+### 7 de julio
+
+> CHANGELOG
+>
+> Nueva versión SDK NodeJS
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK NODEJS
+
+Lanzamos una nueva versíon del SDK NodeJS 1.3.2.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.3.2).
+
+### 1 de julio
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+
+Lanzamos una nueva versión del SDK Java 1.7.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.7.0).
+
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+
+Lanzamos una nueva versión del SDK PHP 2.1.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-php/releases/tag/2.1.0).
+
+
+> CHANGELOG
+>
+> Nueva versión SDK .NET
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK .NET
+
+Lanzamos una nueva versión del SDK .NET 1.8.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-dotnet/releases/tag/1.8.0).
+
 ---
 
 ## Junio 2020
