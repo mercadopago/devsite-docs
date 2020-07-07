@@ -94,12 +94,6 @@ properties:
           en: Collector id.
           es: Identificador del collector.
           pt: Id do collector.
-    - email:
-        type: String(256)
-        description:
-          en: Collector e-mail address.
-          es: E-mail del collector.
-          pt: E-mail do collector.
     - nickname:
         type: String(256)
         description:
