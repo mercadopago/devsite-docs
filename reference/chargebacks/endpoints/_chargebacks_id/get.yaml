@@ -1,5 +1,4 @@
 ---
-resource: chargebacks.raml
 use:
 - id
 - payments

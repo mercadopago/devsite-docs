@@ -1,5 +1,4 @@
 ---
-resource: merchant_orders.raml
 samples:
 - curl.sh
 - curl_response.json
