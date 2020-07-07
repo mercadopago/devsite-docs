@@ -16,7 +16,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: SDK NodeJS
 
-We have released a new version of SDK Java 1.3.2.
+We have released a new version of SDK NodeJS 1.3.2.
 
 > GIT
 >
@@ -28,13 +28,13 @@ We have released a new version of SDK Java 1.3.2.
 
 > CHANGELOG
 >
-> Nueva versión SDK Java
+> New version of SDK Java
 >
-> NEW_VERSION: NUEVA VERSIÓN
+> NEW_VERSION: NEW VERSION
 >
 > PRODUCT: SDK JAVA
 
-We have released a new version of SDK Java 1.7.
+We have released a new version of SDK Java 1.7.0.
 
 > GIT
 >
@@ -45,13 +45,13 @@ We have released a new version of SDK Java 1.7.
 
 > CHANGELOG
 >
-> Nueva versión SDK PHP
+> New version of SDK PHP
 >
-> NEW_VERSION: NUEVA VERSIÓN
+> NEW_VERSION: NEW VERSION
 >
 > PRODUCT: SDK PHP
 
-We have released a new version of SDK Java 2.1.
+We have released a new version of SDK PHP 2.1.0.
 
 > GIT
 >
@@ -62,13 +62,13 @@ We have released a new version of SDK Java 2.1.
 
 > CHANGELOG
 >
-> Nueva versión SDK .NET
+> New version of SDK .NET
 >
-> NEW_VERSION: NUEVA VERSIÓN
+> NEW_VERSION: NEW VERSION
 >
 > PRODUCT: SDK .NET
 
-We have released a new version of SDK .NET 1.8.
+We have released a new version of SDK .NET 1.8.0.
 
 > GIT
 >

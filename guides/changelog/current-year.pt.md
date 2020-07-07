@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: SDK NodeJS
 
-Lançamos uma nova versão do SDK Java 1.3.2.
+Lançamos uma nova versão do SDK NodeJS 1.3.2.
 
 > GIT
 >
@@ -34,7 +34,7 @@ Lançamos uma nova versão do SDK Java 1.3.2.
 >
 > PRODUCT: SDK JAVA
 
-Lançamos uma nova versão do SDK Java 1.7.
+Lançamos uma nova versão do SDK Java 1.7.0.
 
 > GIT
 >
@@ -51,7 +51,7 @@ Lançamos uma nova versão do SDK Java 1.7.
 >
 > PRODUCT: SDK PHP
 
-Lançamos uma nova versão do SDK Java 2.1.
+Lançamos uma nova versão do SDK PHP 2.1.0.
 
 > GIT
 >
@@ -68,7 +68,7 @@ Lançamos uma nova versão do SDK Java 2.1.
 >
 > PRODUCT: SDK .NET
 
-Lançamos uma nova versão do SDK .NET 1.8.
+Lançamos uma nova versão do SDK .NET 1.8.0.
 
 > GIT
 >

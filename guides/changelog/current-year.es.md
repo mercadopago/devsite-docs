@@ -16,7 +16,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: SDK NodeJS
 
-Lanzamos una nueva versíon del SDK Java 1.3.2.
+Lanzamos una nueva versíon del SDK NodeJS 1.3.2.
 
 > GIT
 >
@@ -34,7 +34,7 @@ Lanzamos una nueva versíon del SDK Java 1.3.2.
 >
 > PRODUCT: SDK JAVA
 
-Lanzamos una nueva versión del SDK Java 1.7.
+Lanzamos una nueva versión del SDK Java 1.7.0.
 
 > GIT
 >
@@ -51,7 +51,7 @@ Lanzamos una nueva versión del SDK Java 1.7.
 >
 > PRODUCT: SDK PHP
 
-Lanzamos una nueva versión del SDK Java 2.1.
+Lanzamos una nueva versión del SDK PHP 2.1.0.
 
 > GIT
 >
@@ -68,7 +68,7 @@ Lanzamos una nueva versión del SDK Java 2.1.
 >
 > PRODUCT: SDK .NET
 
-Lanzamos una nueava versión del SDK .NET 1.8.
+Lanzamos una nueva versión del SDK .NET 1.8.0.
 
 > GIT
 >
