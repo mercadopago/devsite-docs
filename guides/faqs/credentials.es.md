@@ -1,6 +1,7 @@
 ----[mla, mlb]----
 
 # Credenciales
+---
 
 ## Qué son mis credenciales y dónde puedo encontrarlas
 
@@ -18,15 +19,9 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tenés que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tenés que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
-Este formulario es necesario para hacer operaciones con dinero real.
-
-Al completar los campos, tené en cuenta:
-
-- Documento: refiere al tipo de documento y el número sin puntos o barras, por ejemplo "DNI 12345678".
-
-- Dirección postal: ingresa un e-mail de contacto del sitio.
+> Si ya se encuentran activas, no tenés que hacer nada.
 
 ## Quiero actualizar mis credenciales, ¿cómo puedo renovarlas?
 
@@ -59,15 +54,9 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
-Este formulario es necesario para hacer operaciones con dinero real.
-
-Al completar los campos, ten en cuenta:
-
-- Documento: refiere al tipo de documento y el número sin puntos o barras.
-
-- Dirección postal: ingresa un e-mail de contacto del sitio.
+> Si ya se encuentran activas, no tienes que hacer nada.
 
 ## Quiero actualizar mis credenciales, ¿cómo puedo renovarlas?
 
@@ -99,15 +88,9 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
-Este formulario es necesario para hacer operaciones con dinero real.
-
-Al completar los campos, ten en cuenta:
-
-- Documento: refiere al tipo de documento y el número sin puntos o barras.
-
-- Dirección postal: ingresa un e-mail de contacto del sitio.
+> Si ya se encuentran activas, no tienes que hacer nada.
 
 ## Quiero actualizar mis credenciales, ¿cómo puedo renovarlas?
 
@@ -139,15 +122,9 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
-Este formulario es necesario para hacer operaciones con dinero real.
-
-Al completar los campos, ten en cuenta:
-
-- Documento: refiere al tipo de documento y el número sin puntos o barras.
-
-- Dirección postal: ingresa un e-mail de contacto del sitio.
+> Si ya se encuentran activas, no tienes que hacer nada.
 
 ## Quiero actualizar mis credenciales, ¿cómo puedo renovarlas?
 
@@ -180,15 +157,9 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
-Este formulario es necesario para hacer operaciones con dinero real.
-
-Al completar los campos, ten en cuenta:
-
-- Documento: refiere al tipo de documento y el número sin puntos o barras.
-
-- Dirección postal: ingresa un e-mail de contacto del sitio.
+> Si ya se encuentran activas, no tienes que hacer nada.
 
 ## Quiero actualizar mis credenciales, ¿cómo puedo renovarlas?
 
@@ -220,15 +191,9 @@ Recomendamos usar primero tus credenciales de prueba para comprobar que todo fun
 
 ## Ya estoy integrado e hice pruebas, ¿cómo implemento en producción?
 
-Tienes que completar el formulario "Quiero ir a producción" que se encuentra en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
+Para ir a producción, tienes que activar tus credenciales en la [sección Credenciales]([FAKER][CREDENTIALS][URL]).
 
-Este formulario es necesario para hacer operaciones con dinero real.
-
-Al completar los campos, ten en cuenta:
-
-- Documento: refiere al tipo de documento y el número sin puntos o barras.
-
-- Dirección postal: ingresa un e-mail de contacto del sitio.
+> Si ya se encuentran activas, no tienes que hacer nada.
 
 ## Quiero actualizar mis credenciales, ¿cómo puedo renovarlas?
 

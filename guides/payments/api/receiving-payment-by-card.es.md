@@ -238,7 +238,7 @@ El método `createToken` devolverá un `card_token` con la representación segur
 
 <br>
 
-> NOTE
+> GIT
 >
 > Descarga un ejemplo del formulario
 >

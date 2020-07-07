@@ -307,6 +307,18 @@ definitions:
                 en: Street name.
                 es: Calle.
                 pt: Rua.
+          - city_name:
+            type: String(256)
+            description:
+              en: City name.
+              es: Ciudad.
+              pt: Cidade.
+          - state_name:
+              type: String(256)
+              description:
+                en: State name.
+                es: Estado.
+                pt: Estado.                
           - street_number:
               type: Integer
               description:
@@ -323,7 +335,7 @@ definitions:
               type: String(256)
               description:
                 en: Apartment.
-                es: Apartmento.
+                es: Departamento.
                 pt: Apartamento.
   - back_urls:
       type: Object
@@ -341,9 +353,9 @@ definitions:
       - pending:
           type: String(600)
           description:
-            en: Pending payment URL.
-            es: URL de retorno ante pago pendiente.
-            pt: URL de retorno diante de pagamento pendente.
+          en: Pending or in process payment URL.
+          es: URL de retorno ante pago pendiente o en proceso.
+          pt: URL de retorno diante de pagamento pendente ou em processo.
       - failure:
           type: String(600)
           description:

@@ -198,7 +198,7 @@ You can get the complete list of `Cards` from a customer by doing a `HTTP GET` r
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     // customer.cards ...
@@ -304,7 +304,7 @@ var filters = {
   id: "247711297-jxOV430go9fx2e"
 };
 
-mercadopago.searchCustomer({
+mercadopago.customers.search({
   qs: filters
 }).then(function (customer) {
   card_data = {
@@ -426,7 +426,7 @@ In case you do not know what the `id` of your `Customer` is, you can use the `Cu
     email: "test@test.com"
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     // customer.cards ...
@@ -519,7 +519,7 @@ You can get the complete list of `Cards` of a client by making a `HTTP GET` requ
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     // customer.cards ...

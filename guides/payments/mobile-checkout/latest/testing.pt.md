@@ -9,7 +9,7 @@ sites_supported:
     - mlu
     - global
 ---
-# Teste a Integração
+# Teste sua integração
 
 Antes de partir para a produção, é muito importante que realize testes de fluxo de pagamentos, verificando se as configurações feitas nas preferências realmente estão no checkout.
 
@@ -20,34 +20,76 @@ Você deve verificar se:
 + Oferece os métodos de pagamento que deseja.
 + A experiência de pagamento é apropriada e se informa o resultado do pagamento.
 
-Para testar a integração siga estes passos:
+## Como testar minha integração
 
-1. Configure a public key do sandbox na sua aplicação.
-2. Crie a preferência no seu servidor com o access token.
+**Os usuários de teste permitem que você faça testes no sua integração** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
+
+Tipos de usuarios | Descrição
+------------ | -------------
+Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança.**
+Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>
+
+## Como criar usuários
+Para fazer os testes **é necessário que você tenha pelo menos dois usuários:** um comprador e um vendedor.
+
+Execute o seguinte curl para gerar um usuário de teste:
+
+### Solicitação
+
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+```
+
+### Resposta
+
+```json
+{
+    "id": 123456,
+    "nickname": "TT123456",
+    "password": "qatest123456",
+    "site_status": "active",
+    "email": "test_user_123456@testuser.com"
+}
+```
+
+>WARNING
+>
+>Importante
+>
+> * Você pode gerar até 10 contas de usuários de teste ao mesmo tempo. Por isso, recomendamos salvar o _e-mail_ e _senha_ de cada um.
+> * Os usuários de teste caducam após 60 dias sem atividade no Mercado Pago.
+> * Para fazer pagamentos de teste, recomendamos usar valore baixos.
+> * Tanto o comprador como o vendedor devem ser usuários de teste.
+> * Use cartões de teste, já que não é possível retirar o dinheiro.
+
+
+### Para testar a integração siga estes passos:
+
+1. Configure a [Public Key]([FAKER][CREDENTIALS][URL]) na sua aplicação.
+2. Crie a preferência no seu servidor com o [Access Token]([FAKER][CREDENTIALS][URL]).
 3. Preencha os dados do formulário, inserindo os dígitos de um cartão de teste. Na data de vencimento, é necessário inserir qualquer data posterior à data atual e o código de segurança de 3 ou 4 dígitos dependendo do cartão.
-4. No nome do titular do cartão, insira o prefixo correspondente ao que deseja testar:
+4. Para **testar diferentes resultados de pagamento**, preencha o dado que quiser no nome do titular do cartão:
 
-* **APRO**: Pagamento aprovado.  
-* **CONT**: Pagamento pendente.
-* **CALL**: Recusado, ligar para autorizar.  
-* **FUND**: Recusado por saldo insuficiente.  
-* **SECU**: Recusado por código de segurança.  
-* **EXPI**: Recusado por data de validade.
-* **FORM**: Recusado por erro no formulário.
-* **OTHE**: Recusado geral.
+- APRO: Pagamento aprovado.
+- CONT: Pagamento pendente.
+- OTHE: Recusado por erro geral.
+- CALL: Recusado com validação para autorizar.
+- FUND: Recusado por quantia insuficiente.
+- SECU: Recusado por código de segurança inválido.
+- EXPI: Recusado por problema com a data de vencimento.
+- FORM: Recusado por erro no formulário.
 
-### Cartões para testar nosso Checkout
+## Cartões de teste
 
 Utilize estes cartões de teste para testar os diferentes resultados do pagamento.
 
-| País       | Visa                | Mastercard          | American Express  |
-| ---------- | ------------------- | ------------------- | ----------------- |
-| Argentina  | 4509 9535 6623 3704 | 5031 7557 3453 0604 | 3711 803032 57522 |
-| Brasil     | 4235 6477 2802 5682 | 5031 4332 1540 6351 | 3753 651535 56885 |
-| Chile      | 4168 8188 4444 7115 | 5416 7526 0258 2580 | 3757 781744 61804 |
-| Colômbia   | 4013 5406 8274 6260 | 5254 1336 7440 3564 | 3743 781877 55283 |
-| México     | 4075 5957 1648 3764 | 5474 9254 3267 0366 | indisponível      |
-| Peru       | 4009 1753 3280 6176 | indisponível        | indisponível      |
-| Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061  | indisponível      |
+Cartão | Número | Código de segurança | Data de vencimento
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4170 0688 1010 8020 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
 
 Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards).

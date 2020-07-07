@@ -176,3 +176,11 @@ Caso contrário, se o QR no qual a ordem foi publicada ainda **não foi escanead
 > ATENÇÃO
 >
 > Mercado Pago requer a integração de pagamentos presenciais que tiverem aplicada a notificação (IPN) como método principal para a homologação. A pesquisa de ordem por `external_reference` deverá ser somente utilizada como contingência no caso eventual de não se receberem notificações.
+
+## Receber apenas um tipo de notificação
+
+Se deseja receber notificações apenas de IPN, e não de Webhooks, você pode adicionar na *notification_url* o parâmetro `source_news=ipn`. Como por exemplo:
+
+`https://www.yourserver.com/notifications?source_news=ipn`
+
+> A alteração não afeta os parâmetros já incluídos no URL.

@@ -174,7 +174,7 @@ var filters = {
   id: "247711297-jxOV430go9fx2e"
 };
 
-mercadopago.searchCustomer({
+mercadopago.customers.search({
   qs: filters
 }).then(function (customer) {
   card_data = {
@@ -318,7 +318,7 @@ Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escol
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);
@@ -531,7 +531,7 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
     email: "test@test.com"
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);
@@ -629,7 +629,7 @@ curl -X GET \
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);

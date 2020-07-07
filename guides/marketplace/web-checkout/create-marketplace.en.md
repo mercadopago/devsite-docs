@@ -31,26 +31,31 @@ Once the application has been created, you will get the `APP_ID` (application id
 
 ## 2. Connecting accounts
 
-To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To do this, redirect the user to the following URL by sending in `client_id` the value of `APP_ID` and the `redirect_uri` that you got in the previous step:
+To operate in Mercado Pago on behalf of your seller, you need to request their authorization first.
 
-`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
+2.1. To do so, redirect the user to the following URL replacing the value of `client_id` for the `APP_ID` and the same `redirect_uri` you set up in the previous step:
 
-You'll receive the authorization code in the URL that you specified:
+`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
+
+<br>
+2.2. You'll receive the authorization code in the URL that you specified:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-This `AUTHORIZATION_CODE` will be used to create the credentials and is valid for 10 minutes.
+This `AUTHORIZATION_CODE` will be used to create the credentials and will be valid for 10 minutes.
 
-> WARNING
->
-> Advice:
->
-> You can include a parameter in the `redirect_uri` to identify the seller corresponding to the authorization code you received, such as your email address, the user ID in your system or any other useful reference.
->Example:
->-Redirect_uri set in the application: https://www.mercadopago.com/mp.php
->-Redirect uri to use in the Oauth link: https://www.mercadopago.com/mp.php?user_id=001
->-Redirect_uri for the authorization with the security code from the Oauth process: https://www.mercadopago.com/mp.php?user_id=001
+<br>
+2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
 
+By including this parameter, the redirect URL will look like this:
+
+`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=id=RANDOM_ID=&redirect_uri=http://www.URL_de_retorno.com`
+
+You will now receive the authorization code and the secure identifier at the specified return URL:
+
+`hhttp://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
+
+> Don’t send confidential information or credentials of the Mercado Pago account.
 
 ### Create your user’s credentials
 

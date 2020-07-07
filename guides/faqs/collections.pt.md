@@ -1,8 +1,9 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - global
+  sites_supported:
+   - mla
+   - mlb
+   - global
+  indexable: false
 ---
 
 # Recebimentos

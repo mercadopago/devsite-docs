@@ -1,21 +1,70 @@
-# Test the Integration
+# Test the integration
 
-Before going into production, it is very important to test the complete payment flow, checking whether the creation of payments is carried out correctly and the messages efficiently communicate to the users.
-
+Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected.
 A good customer experience at the checkout helps to ensure the conversion.
 
-You have a pair of [sandbox keys]([FAKER][CREDENTIALS][URL]) which will allow you to test the whole integration based on an exact replica of the Production Mode, being able to simulate transactions using the test cards:
+You should check if:
+
++ The information about the product or service to be paid is correct.
++ If you recognize the customer’s account to send the email.
++ It offers the payment methods you wish.
++ The payment experience is adequate and the payment result is reported.
+
+## How to test my integration
+
+**Test users allow you to test your integration** by generating payment flows in an exact copy of your integration.
+
+User types | Description
+------------ | -------------
+Seller | It is the test account you use to **configure the application and credentials for collection.**
+Buyer | It is the test account you use to **test the purchase process.**<br/>
+
+## How to create users
+To perform the tests **it is necessary that you have at least two users:** a buyer and a seller.
+
+Execute the following curl to generate a test user:
+
+### Request
+
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+```
+
+### Response
+
+```json
+{
+    "id": 123456,
+    "nickname": "TT123456",
+    "password": "qatest123456",
+    "site_status": "active",
+    "email": "test_user_123456@testuser.com"
+}
+```
+
+>WARNING
+>
+>Important
+>
+> * You can generate up to 10 test user accounts simultaneously. Therefore, we recommend you _save each email and password._
+> * Test users expire after 60 days without activity in Mercado Pago.
+> * To make test payments we recommend using low amounts.
+> * Both buyer and seller must be test users.
+> * Use test cards, since it is not possible to withdraw money.
+
+## Test the payment flow
+
+You have a pair of [test credentials]([FAKER][CREDENTIALS][URL]) which will allow you to test the whole integration based on an exact replica of the Production Mode, being able to simulate transactions using the test cards:
 
 
-| Country 	 | Visa 				       | Mastercard        | American Express |
-| ---- 		   | ---- 				       | ----------        | ---------------- |
-| Argentina  | 4509 9535 6623 3704 |5031 7557 3453 0604|3711 803032 57522 |
-| Brazil  	 | 4235 6477 2802 5682 |5031 4332 1540 6351|3753 651535 56885 |
-| Chile   	 | 4168 8188 4444 7115 |5416 7526 0258 2580|3757 781744 61804 |
-| Colombia   | 4013 5406 8274 6260 |5254 1336 7440 3564|3743 781877 55283 |
-| Mexico  	 | 4075 5957 1648 3764 |5474 9254 3267 0366| unavailable      |
-| Peru    	 | 4009 1753 3280 6176 | unavailable       | unavailable      |
-| Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| unavailable      |
+Card | Number | CVV | Expiration Date
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4170 0688 1010 8020 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
 
 You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards).
 
@@ -23,20 +72,20 @@ You can also [use test credit cards from local payment methods in each country](
 
 You can simulate the creation of a payment using your `access_token` and `card_token`.
 
-If at the time of creation, you get an error associated with the payment method selected or the accounts in operation, you will receive an HTTP Status 400 Bad Request and the code detailing the error so that you can correct and retry the payment.
+If at the time of creation, you get an error associated with the payment method selected or the accounts in operation, you will receive an `HTTP Status 400 Bad Request` and the code detailing the error so that you can correct and retry the payment.
 
 Try all possible payment scenarios for payment approved, pending or declined. To do this, in the card_holder_name field of the form, enter any of the following prefixes:
 
-* **APRO**: Payment approved.  
-* **CONT**: Pending payment.  
-* **CALL**: Payment declined, call to authorize.  
-* **FUND**: Payment declined due to insufficient funds.  
-* **SECU**: Payment declined by security code.  
-* **EXPI**: Payment declined by expiration date.  
-* **FORM**: Payment declined due to error in form.  
-* **OTHE**: General decline.  
+- APRO: Payment approved.
+- CONT: Payment pending.
+- OTHE: Rejected by general error.
+- CALL: Rejected with validation to authorize.
+- FUND: Rejected for insufficient amount.
+- SECU: Rejected by invalid security code.
+- EXPI: Rejected due to problem with expiration date.
+- FORM: Rejected by error in the form.
 
-In each case, you must communicate the payment result and the next steps to your customer. For that, you will receive an HTTP Status 201 OK informing that the payment has been created correctly and we will send a result code so that you can redirect the customer to the page with the correct message.
+In each case, you must communicate the payment result and the next steps to your customer. For that, you will receive an `HTTP Status 201 OK` informing that the payment has been created correctly and we will send a result code so that you can redirect the customer to the page with the correct message.
 
 ## Check if you have received the Webhook notification
 

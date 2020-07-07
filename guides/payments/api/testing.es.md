@@ -97,9 +97,9 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 
 ## Comenzar a recibir pagos
 
-Para empezar a cobrar, debes cumplir los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) y completar el formulario <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Quiero ir a producción</a>.
+Para empezar a cobrar, debes cumplir los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) y <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> activar tus credenciales</a>.
 
-Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
+Antes de activarlas, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
 ---
 ### Próximos pasos
