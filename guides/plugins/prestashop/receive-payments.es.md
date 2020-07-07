@@ -17,11 +17,11 @@ Cuando hagas pruebas, verifica que el flujo de pagos funcione correctamente y qu
 
 ## Ir a producción
 
-Para empezar a cobrar debes completar el formulario [Quiero ir a producción](https://www.mercadopago.com/mla/account/credentials/).
+Para empezar a cobrar debes [activar tus credenciales](https://www.mercadopago.com/mla/account/credentials/).
 
 > Consulta los [requisitos para ir a producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) si tienes alguna duda con el proceso.
 
-Una vez completo el formulario, verifica que las credenciales de Producción del módulo sean las de la cuenta que reciba el dinero de las ventas. 
+Verifica que las credenciales de Producción del módulo sean las de la cuenta que reciba el dinero de las ventas. 
 
 Activa el modo Producción solo cuando estés listo para vender y hayas puesto a prueba el módulo con pagos simulados en Sandbox.
 

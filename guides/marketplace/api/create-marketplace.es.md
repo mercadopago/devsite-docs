@@ -23,30 +23,36 @@ Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario 
 
 ## 2. Vinculación de cuentas
 
-Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id` el valor de `APP_ID` y la `redirect_uri` que obtuviste en el paso anterior:
+Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización.
 
-`https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http%3A%2F%2Fwww.URL_de_retorno.com`
+2.1. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id`, el valor de `APP_ID` y la misma `redirect_uri` que configuraste en el paso anterior:
 
-Recibirás el código de autorización en la url que especificaste:
+`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
+
+<br>
+2.2. Recibirás el código de autorización en la URL que especificaste:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene un tiempo de validez de 10 minutos.
+El `AUTHORIZATION_CODE` será utilizado para crear las credenciales y tiene un tiempo de validez de 10 minutos.
 
-> WARNING
->
-> Consejo
->
-> Puedes incluir algún parámetro en `redirect_uri` para identificar a qué vendedor corresponde el código de autorización que recibiste, como su _e-mail_, el _ID_ de usuario en tu sistema o cualquier otra referencia útil.
->Ejemplo Práctico:
->-Redirect_uri seteado en la aplicación: https://www.mercadopago.com/mp.php
->-Redirect uri para pasar en el link de Oauth: https://www.mercadopago.com/mp.php?user_id=001
->-Redirect_uri a la hora de asociar al vendedor habiendo obtenido el código de seguridad con el Oauth: https://www.mercadopago.com/mp.php?user_id=001
+<br>
+2.3. También puedes incluir el parámetro `state` en la URL de autorización para identificar a quién corresponde el código que recibiste. Realiza esto de manera segura, asignando en dicho parámetro un identificador aleatorio que sea único por cada intento.
 
+Al incluir este parámetro, la URL de redirección quedaría de la siguiente forma:
+
+
+`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=id=RANDOM_ID=&redirect_uri=http://www.URL_de_retorno.com`
+
+Ahora recibirás en la URL de retorno especificada el código de autorización y también el identificador seguro:
+
+`hhttp://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
+
+> No envíes información confidencial o credenciales de la cuenta de Mercado Pago.
 
 ### Crea las credenciales de tus vendedores
 
-Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.  
+Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.
 
 Request:
 

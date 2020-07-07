@@ -88,7 +88,7 @@ Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguie
 | ------------- | ------------------------------------------------------------ |
 | `EXTERNAL_STORE_ID`     | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
 | `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. |
-| `URL`           | Sólamente es utilizado en el modelo desatendido. En este campo se declara la URL de un servicio de tu dominio al cual Mercado Pago consultará si hay una orden disponible. |
+
 
 [[[
  ```curl
@@ -98,8 +98,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
   "fixed_amount": true,
   "category": 621102,
   "external_store_id": "STORE001",
-  "external_id": "CAJA0001",
-  "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
+  "external_id": "CAJA0001"
 }
 ```
 ]]]
@@ -121,11 +120,3 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > [Integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/)
 
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Integrar QR modelo desatendido
->
-> Si puede concretarse la venta solamente con la acción del cliente, este es tu modelo!
->
-> [Integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/)

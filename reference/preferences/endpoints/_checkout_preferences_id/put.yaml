@@ -18,6 +18,7 @@ use:
 - auto_return
 - external_reference
 - expires
+- date_of_expiration
 - expiration_date_from
 - expiration_date_to
 - marketplace
@@ -28,7 +29,7 @@ errors:
   - invalid_collector_id:
       description:
         en: collector_id must be a number.
-        es: collector_id debe ser un número.
+        es: collector_id must be a number.
         pt: collector_id must be a number.
   - invalid_collector_id:
       description:
@@ -38,32 +39,32 @@ errors:
   - invalid_sponsor_id:
       description:
         en: sponsor_id not found.
-        es: No se ha encontrado el sponsor_id.
+        es: sponsor_id not found.
         pt: sponsor_id not found.
   - invalid_sponsor_id:
       description:
-        en: sponsor_id must be a number
-        es: sponsor_id debe ser un número.
-        pt: sponsor_id must be a number
+        en: invalid type (<type>) for field sponsor_id
+        es: invalid type (<type>) for field sponsor_id
+        pt: invalid type (<type>) for field sponsor_id
   - invalid_sponsor_id:
       description:
         en: sponsor_id should be different than collector_id.
-        es: El parámetro sponsor_id debe ser distinto del parámetro collector_id.
+        es: sponsor_id should be different than collector_id.
         pt: sponsor_id should be different than collector_id.
   - invalid_sponsor_id:
       description:
         en: sponsor_id site must be the same as collector_id.
-        es: El site del parámetro sponsor_id debe ser el mismo que el parámetro collector_id.
+        es: sponsor_id site must be the same as collector_id.
         pt: sponsor_id site must be the same as collector_id.
   - invalid_sponsor_id:
       description:
         en: sponsor_id didn't accept MercadoPago's Terms and Conditions.
-        es: El sponsor_id no aceptó los términos y condiciones de Mercado Pago.
+        es: sponsor_id didn't accept MercadoPago's Terms and Conditions.
         pt: sponsor_id didn't accept MercadoPago's Terms and Conditions.
   - invalid_sponsor_id:
       description:
         en: sponsor_id is not an active user.
-        es: El sponsor_id no es un usuario activo.
+        es: sponsor_id is not an active user.
         pt: sponsor_id is not an active user.
   - invalid_collector_email:
       description:
@@ -73,251 +74,225 @@ errors:
   - invalid_collector_email:
       description:
         en: collector is not collector_email owner
-        es: El collector no es dueño del collector_email.
+        es: collector is not collector_email owner
         pt: collector is not collector_email owner
   - invalid_operation_type:
       description:
         en: operation_type invalid.
-        es: operation_type inválido.
+        es: operation_type invalid.
         pt: operation_type invalid.
   - invalid_expiration_date_to:
       description:
         en: expiration_date_to invalid.
-        es: expiration_date_to inválido.
+        es: expiration_date_to invalid.
         pt: expiration_date_to invalid.
+  - invalid_date:
+      description:
+        en: invalid date of expiration.
+        es: invalid date of expiration.
+        pt: invalid date of expiration.
   - invalid_expiration_date_from:
       description:
         en: expiration_date_from invalid.
-        es: expiration_date_from inválido.
+        es: expiration_date_from invalid.
         pt: expiration_date_from invalid.
   - invalid_items:
       description:
         en: amount cannot be paid with Mercado Pago.
-        es: El monto no puede ser pagado con Mercado Pago.
+        es: amount cannot be paid with Mercado Pago.
         pt: amount cannot be paid with Mercado Pago.
   - invalid_items:
       description:
         en: items needed.
-        es: ítems requeridos.
+        es: items needed.
         pt: items needed.
   - invalid_items:
       description:
-        en: items invalid. Wrong format
-        es: ítems inválidos, error de formato.
-        pt: items invalid. Wrong format
+        en: items must be a array
+        es: items must be a array.
+        pt: items must be a array
   - invalid_items:
       description:
         en: currency_id needed.
-        es: currency_id es requerido.
+        es: currency_id needed.
         pt: currency_id needed.
   - invalid_items:
       description:
         en: currency_id invalid.
-        es: currency_id inválido.
+        es: currency_id invalid.
         pt: currency_id invalid.
   - invalid_items:
       description:
         en: quantity needed.
-        es: El parámetro quantity es requerido.
+        es: quantity needed.
         pt: quantity needed.
   - invalid_items:
       description:
-        en: quantity must be a number.
-        es: El parámetro quantity debe ser un número.
-        pt: quantity must be a number.
+        en: items.<number>.quantity must be a integer.
+        es: items.<number>.quantity must be a integer.
+        pt: items.<number>.quantity must be a integer.
   - invalid_items:
       description:
         en: unit_price needed.
-        es: El parámetro unit_price es requerido.
+        es: unit_price needed.
         pt: unit_price needed.
   - invalid_items:
       description:
         en: unit_price must be a number.
-        es: unit_price debe ser un número.
+        es: unit_price must be a number.
         pt: unit_price must be a number.
   - invalid_items:
       description:
         en: unit_price invalid.
-        es: unit_price inválido.
+        es: unit_price invalid.
         pt: unit_price invalid.
-  - invalid_payer:
-      description:
-        en: payer invalid. Wrong format
-        es: payer inválido, error de formato.
-        pt: payer invalid. Wrong format
-  - invalid_payer:
-      description:
-        en: payer name invalid. Max length 100.
-        es: Nombre del comprador inválido, la longitud máxima es 100 caracteres.
-        pt: payer name invalid. Max length 100.
-  - invalid_payer:
-      description:
-        en: payer surname invalid. Max length 100.
-        es: Apellido del comprador inválido, la longitud máxima es 100 caracteres.
-        pt: payer surname invalid. Max length 100.
-  - invalid_payer:
-      description:
-        en: payer email invalid. Max length 150.
-        es: Email del comprador inválido, la longitud máxima es 150 caractere
-        pt: payer email invalid. Max length 150.
   - invalid_back_urls:
       description:
         en: back_urls invalid. Wrong format
-        es: back_urls inválido, error de formato.
+        es: back_urls invalid. Wrong format
         pt: back_urls invalid. Wrong format
   - invalid_payment_methods:
       description:
         en: payment_methods invalid. Wrong format
-        es: payment_methods inválido, error de formato.
+        es: payment_methods invalid. Wrong format
         pt: payment_methods invalid. Wrong format
   - invalid_payment_methods:
       description:
         en: amount cannot be paid with MercadoPago.
-        es: El monto no puede ser pagado con Mercado Pago.
+        es: amount cannot be paid with MercadoPago.
         pt: amount cannot be paid with MercadoPago.
   - invalid_payment_methods:
       description:
         en: excluded_payment_methods invalid. Wrong format.
-        es: excluded_payment_methods inválido, error de formato.
+        es: excluded_payment_methods invalid. Wrong format.
         pt: excluded_payment_methods invalid. Wrong format.
   - invalid_payment_methods:
       description:
         en: id needed.
-        es: Identificador de pago requerido.
+        es: id needed.
         pt: id needed.
   - invalid_payment_methods:
       description:
         en: account_money cannot be excluded.
-        es: account_money no puede ser excluído.
+        es: account_money cannot be excluded.
         pt: account_money cannot be excluded.
   - invalid_payment_methods:
       description:
         en: cannot exclude all payments methods.
-        es: No es posible excluir todos los payments methods.
+        es: cannot exclude all payments methods.
         pt: cannot exclude all payments methods.
   - invalid_payment_methods:
       description:
         en: excluded_payment_types invalid. Wrong format.
-        es: excluded_payment_types inválido, error de formato.
+        es: excluded_payment_types invalid. Wrong format.
         pt: excluded_payment_types invalid. Wrong format.
   - invalid_payment_methods:
       description:
         en: cannot exclude all payments types.
-        es: No es posible excluir todos los payments types.
+        es: cannot exclude all payments types.
         pt: cannot exclude all payments types.
   - invalid_payment_methods:
       description:
         en: client_id invalid.
-        es: client_id inválido.
+        es: client_id invalid.
         pt: client_id invalid.
   - invalid_payment_methods:
       description:
         en: client_id must be a number.
-        es: client_id debe ser un número.
+        es: client_id must be a number.
         pt: client_id must be a number.
   - invalid_payment_methods:
       description:
         en: installments invalid. Should be a number between 1 and 36.
-        es: installments no válidas. Debe ser un número entre 1 y 36.
+        es: installments invalid. Should be a number between 1 and 36.
         pt: installments invalid. Should be a number between 1 and 36.
   - invalid_marketplace_fee:
       description:
-        en: marketplace_fee must be a number.
-        es: marketplace_fee debe ser un número.
-        pt: marketplace_fee must be a number.
-  - invalid_marketplace_fee:
-      description:
-        en: marketplace_fee must be a positive number.
-        es: marketplace_fee debe ser un número positivo.
-        pt: marketplace_fee must be a positive number.
+        en: invalid type (<type>) for field marketplace_fee.
+        es: invalid type (<type>) for field marketplace_fee.
+        pt: invalid type (<type>) for field marketplace_fee.
   - invalid_marketplace_fee:
       description:
         en: marketplace_fee must not be greater than total amount.
-        es: marketplace_fee no puede ser mayor al monto total.
+        es: marketplace_fee must not be greater than total amount.
         pt: marketplace_fee must not be greater than total amount.
   - invalid_id:
       description:
         en: preference_id not found.
-        es: preference_id no encontrado.
+        es: preference_id not found.
         pt: preference_id not found.
   - invalid_access_token:
       description:
         en: access denied
-        es: Acceso denegado.
+        es: access denied
         pt: access denied
   - invalid_shipments:
       description:
         en: invalid shipment mode
-        es: Método de envío inválido.
+        es: invalid shipment mode
         pt: invalid shipment mode
   - invalid_shipments:
       description:
         en: collector doesn't have me2 active.
-        es: El collector no tiene Mercado Envíos activo.
+        es: collector doesn't have me2 active.
         pt: collector doesn't have me2 active.
   - invalid_shipments:
       description:
-        en: shipments.dimensions invalid
-        es: shipments.dimensions inválido.
-        pt: shipments.dimensions invalid
-  - invalid_shipments:
-      description:
-        en: shipments.free_methods invalid
-        es: shipments.free_methods inválido.
-        pt: shipments.free_methods invalid
-  - invalid_shipments:
-      description:
-        en: shipments.free_methods ID must be a number
-        es: shipments.free_methods ID debe ser un número.
-        pt: shipments.free_methods ID must be a number
-  - invalid_shipments:
-      description:
         en: invalid free_methods
-        es: free_methods inválidos.
+        es: invalid free_methods
         pt: invalid free_methods
   - invalid_shipments:
       description:
-        en: shipments.local_pickup invalid
-        es: shipments.local_pickup inválido.
-        pt: shipments.local_pickup invalid
-  - invalid_shipments:
-      description:
-        en: shipments.default_shipping_method must be a number
-        es: shipments.default_shipping_method debe ser un número.
-        pt: shipments.default_shipping_method must be a number
-  - invalid_shipments:
-      description:
         en: invalid shipments.default_shipping_method
-        es: shipments.default_shipping_method inválido.
+        es: invalid shipments.default_shipping_method
         pt: invalid shipments.default_shipping_method
   - invalid_shipments:
       description:
-        en: shipments.free_shipping invalid
-        es: shipments.free_shipping inválido.
-        pt: shipments.free_shipping invalid
-  - invalid_shipments:
-      description:
-        en: shipments.cost must be a number
-        es: shipments.cost debe ser un número.
-        pt: shipments.cost must be a number
-  - invalid_shipments:
-      description:
         en: shipments.cost invalid
-        es: shipments.cost inválido.
+        es: shipments.cost invalid
         pt: shipments.cost invalid
   - invalid_shipments:
       description:
         en: Invalid dimensions format
-        es: Formato de dimensiones inválido.
+        es: Invalid dimensions format
         pt: Invalid dimensions format
   - invalid_shipments:
       description:
         en: Invalid dimension values
-        es: Dimensión inválida.
+        es: Invalid dimension values
         pt: Invalid dimension values
+  - invalid_shipments:
+       description:
+        en: invalid dimension configuration for me2.
+        es: invalid dimension configuration for me2.
+        pt: invalid dimension configuration for me2.       
   - invalid_shipments:
       description:
         en: Invalid total amount, with me2 it cannot be lesser than <limit>.
-        es: Monto total inválido, con Mercado Envíos no puede ser menor a <limit>.
+        es: Invalid total amount, with me2 it cannot be lesser than <limit>.
         pt: Invalid total amount, with me2 it cannot be lesser than <limit>.
-        
+  - invalid_shipments:
+      description:
+        en: invalid type (<type>) for field shipments.local_pickup.
+        es: invalid type (<type>) for field shipments.local_pickup.
+        pt: invalid type (<type>) for field shipments.local_pickup.
+  - invalid_shipments:
+      description:
+        en: invalid type (<type>) for field shipments.dimensions.
+        es: invalid type (<type>) for field shipments.dimensions.
+        pt: invalid type (<type>) for field shipments.dimensions.
+  - invalid_shipments:
+      description:
+        en: invalid type (<type>) for field shipments.free_shipping.
+        es: invalid type (<type>) for field shipments.free_shipping.
+        pt: invalid type (<type>) for field shipments.free_shipping.
+  - invalid_shipments:
+      description:
+        en: invalid type (<type>) for field shipments.default_shipping_method.
+        es: invalid type (<type>) for field shipments.default_shipping_method.
+        pt: invalid type (<type>) for field shipments.default_shipping_method.
+  - invalid_shipments:
+      description:
+        en: invalid type (<type>) for field shipments.cost.
+        es: invalid type (<type>) for field shipments.cost.
+        pt: invalid type (<type>) for field shipments.cost.

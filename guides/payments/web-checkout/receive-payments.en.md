@@ -17,7 +17,7 @@ A payment preference contains all the information about the product or service t
 * Payment methods accepted.
 * Reference ID of your system.
 
-To create a payment preference you must install [Mercado Pago SDK](https://www.mercadopago.com.ar/developers/en/plugins_sdks) and set up your [credentials]([FAKER][CREDENTIALS][URL]).
+To create a payment preference you must install [Mercado Pago SDK](https://www.mercadopago.com.ar/developers/en/guides/sdks) and set up your [credentials]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php

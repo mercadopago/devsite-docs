@@ -173,7 +173,7 @@ var filters = {
   id: "247711297-jxOV430go9fx2e"
 };
 
-mercadopago.searchCustomer({
+mercadopago.customers.search({
   qs: filters
 }).then(function (customer) {
   card_data = {
@@ -317,7 +317,7 @@ First, get the saved card list so that your customer can choose one to make the 
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);
@@ -530,7 +530,7 @@ You can search for customer information, if needed; for example, when you don't 
     email: "test@test.com"
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);
@@ -628,7 +628,7 @@ curl -X GET \
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);

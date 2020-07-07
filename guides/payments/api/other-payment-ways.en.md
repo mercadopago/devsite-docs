@@ -239,6 +239,65 @@ In the `external_resource_url` field you will find an address with payment instr
 >
 > Customers have 3 to 5 days to pay, depending on the payment method. After that, you should cancel it.
 
+## Expiration date of cash payment
+
+The default expiration date for cash payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+
+[[[
+```php
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+The deadline for approval of the cash payment is between 1 and 2 working days according to the payment method. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
+
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) when configuring.
+
+> WARNING
+>
+> Important
+>
+> If the cash payment is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
+
 ## Cancel payments
 
 To avoid collection issues, you need to cancel expired payments. Cash payments should be paid within 3 to 5 business days, based on their relevant term.
@@ -884,7 +943,6 @@ In addition to cards, you can offer other payment choices on your website.
 | Type of payment method | Payment method |
 | --- | ---|
 | `ticket` | Efecty |
-| `ticket` | Davivienda |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
 
@@ -957,24 +1015,6 @@ The result will be a list of payment methods and their features. For example, `p
         "min_allowed_amount": 5000,
         "max_allowed_amount": 4000000,
         "accreditation_time": 0,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "davivienda",
-        "name": "Davivienda",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/davivienda.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/davivienda.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 1600,
-        "max_allowed_amount": 150000000,
-        "accreditation_time": 10080,
         "financial_institutions": [],
         "processing_modes": [
             "aggregator"
@@ -1162,6 +1202,158 @@ In the `external_resource_url` field you will find an address with payment instr
 > Note
 >
 > Customers have 3 to 5 days to pay, depending on the payment method. After that, you should cancel it.
+
+## Receive PSE payments
+
+To receive payments with PSE, you also have to send the financial institution that processes the payment.
+
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 5000;
+$payment->description = "Product Title";
+$payment->payer = array (
+"email" => "test_user_19549678@testuser.com",
+"identification" => array(
+"type" => "CC",
+"number" => "76262349"
+),
+"entity_type" => "individual"
+);
+$payment->transaction_details = array(
+"financial_institution" => 1234
+);
+$payment->additional_info = array(
+"ip_address" => "127.0.0.1"
+);
+$payment->callback_url = "http://www.your-site.com";
+$payment->payment_method_id = "pse";
+
+$payment->save();
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+
+var payment_data = {
+transaction_amount: 5000,
+description: 'Product Title',
+payer: {
+email: 'test_user_19549678@testuser.com',
+identification: {
+type: "CC",
+number: "76262349"
+},
+entity_type: "individual"
+},
+transaction_details: {
+financial_institution: 1234
+},
+additional_info: {
+ip_address: "127.0.0.1"
+},
+callback_url: "http://www.your-site.com",
+payment_method_id: "pse"
+}
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.setEmail("test_user_19549678@testuser.com");
+payer.setIdentification(new Identification("CC", 76262349));
+payer.setEntityType("individual");
+
+TransactionDetails transactionDetails = new TransactionDetails();
+transactionDetails.financialInstitution = 1234;
+
+AdditionalInfo additionalInfo = new AdditionalInfo();
+additionalInfo.ipAddress = "127.0.0.1";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(5000f)
+.setDescription('Product Title')
+.setPayer(payer)
+.setTransactionDetails(transactionDetails)
+.additionalInfo(additionalInfo)
+.callbackUrl("http://www.your-site.com")
+.setPaymentMethodId("pse");
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 5000
+payment.description = 'Product Title'
+payment.payer = {
+email: 'test_user_19549678@testuser.com',
+identification: {
+type: "CC",
+number: "76262349"
+},
+entity_type: "individual"
+}
+payment.transaction_details = {
+financial_institution: 1234
+}
+payment.additional_info = {
+ip_address: "127.0.0.1"
+}
+payment.callback_url = "http://www.your-site.com"
+payment.payment_method_id = "pse"
+
+payment.save();
+```
+```curl
+curl -X POST \
+'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
+    -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 5000,
+  description: "Product Title",
+  payment_method_id: "pse",
+  payer: { email: "test_user_19549678@testuser.com" },
+  transaction_details: { financial_institution: 1234 }
+}'
+```
+]]]
+
+The response will show pending status until the buyer makes the payment.
+
+```json
+[
+ {
+    ...,
+	"status": "pending",
+	"status_detail": "pending_waiting_transfer"
+    ...,
+	"transaction_details": {
+		...,
+		"external_resource_url": "https://www.mercadopago.com/mco/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+		"installment_amount": 0,
+		"financial_institution": "1234",
+		"payment_method_reference_id": null
+	}
+ }
+]
+```
+In the `external_resource_url` field you will find an address with payment instructions for your buyer. You can redirect or send him/her the link.
+
+At the end of the payment, the client will be redirected to the `callback_url` you specify.
 
 ## Cancel payments
 
@@ -1431,6 +1623,163 @@ In the `external_resource_url` field you will find an address with payment instr
 > Note
 >
 > Customers have 3 to 5 days to pay, depending on the payment method. After that, you should cancel it.
+
+## Receive Webpay payments
+
+To receive payments with Webpay, you have to send the IP address of the buyer, the financial institution that processes the payment and, optionally, the RUT and the type of person.
+
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 100;
+$payment->description = "Product Title";
+$payment->payer = array (
+"email" => "test_user_15748052@testuser.com",
+"entity_type" => "individual"
+);
+$payment->transaction_details = array(
+"financial_institution" => 1234
+);
+$payment->additional_info = array(
+"ip_address" => "127.0.0.1"
+);
+$payment->callback_url = "http://www.your-site.com";
+$payment->payment_method_id = "webpay";
+
+$payment->save();
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(ENV_ACCESS_TOKEN);
+
+var payment_data = {
+transaction_amount: 100,
+description: 'Product Title',
+payer: {
+email: 'test_user_15748052@testuser.com',
+entity_type: "individual"
+},
+transaction_details: {
+financial_institution: 1234
+},
+additional_info: {
+ip_address: "127.0.0.1"
+},
+callback_url: "http://www.your-site.com",
+payment_method_id: "webpay"
+}
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+```
+```java
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payer payer = new Payer();
+payer.setEmail("test_user_15748052@testuser.com");
+payer.setEntityType("individual");
+
+TransactionDetails transactionDetails = new TransactionDetails();
+transactionDetails.financialInstitution = 1234;
+
+AdditionalInfo additionalInfo = new AdditionalInfo();
+additionalInfo.ipAddress = "127.0.0.1";
+
+Payment payment = new Payment();
+payment.setTransactionAmount(100f)
+.setDescription('Product Title')
+.setPayer(payer)
+.setTransactionDetails(transactionDetails)
+.additionalInfo(additionalInfo)
+.callbackUrl("http://www.your-site.com")
+.setPaymentMethodId("webpay");
+
+payment.save();
+```
+```ruby
+require 'mercadopago'
+MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+
+payment = MercadoPago::Payment.new()
+payment.transaction_amount = 100
+payment.description = 'Product Title'
+payment.payer = {
+email: 'test_user_15748052@testuser.com',
+entity_type: "individual"
+}
+payment.transaction_details = {
+financial_institution: 1234
+}
+payment.additional_info = {
+ip_address: "127.0.0.1"
+}
+payment.callback_url = "http://www.your-site.com"
+payment.payment_method_id = "webpay"
+
+payment.save();
+```
+```curl
+curl -X POST \
+'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
+    -H 'Content-Type: application/json' \
+  -d '{
+  transaction_amount: 100,
+  description: "Product Title",
+  payment_method_id: "webpay",
+  payer: {
+    email: "test_user_15748052@testuser.com",
+    identification: {
+    type: "RUT",
+    number: 76262349
+},
+  entity_type: "individual"
+},
+  transaction_details: {
+    financial_institution: 1234
+},
+  additional_info: {
+  ip_address: “127.0.0.1”
+},
+  callback_url: "http://www.your-site.com"
+}'
+```
+]]]
+
+> The expected `entity_type` are individual (individuals) or association (companies).
+
+The response will show pending status until the buyer makes the payment.
+
+```json
+[
+ {
+    ...,
+	"status": "pending",
+	"status_detail": "pending_waiting_transfer"
+    ...,
+	"transaction_details": {
+		...,
+		"external_resource_url": "https://www.mercadopago.com/mlc/payments/bank_transfer/sandbox/helper/commerce?id=3692089&caller_id=1234&hash=aaaaaa-bbb-cccc-dddd-eeeeeeee",
+		"installment_amount": 0,
+		"financial_institution": "1234",
+		"payment_method_reference_id": null
+	}
+ }
+]
+```
+
+In the `external_resource_url` field you will find an address with payment instructions for your buyer. You can redirect or send him/her the link.
+
+At the end of the payment, the client will be redirected to the `callback_url` that you specify with the following parameters `payment_id=6725591786&payment_status=approved&external_reference=null&payment_method_id=webpay`.
 
 ## Cancel payments
 
@@ -2030,6 +2379,63 @@ In the `external_resource_url` field you will find an address with payment instr
 > Note
 >
 > Customers have 3 to 5 days to pay, depending on the payment method. After that, you should cancel it.
+
+## Expiration date for boleto
+
+The default expiration date for boleto payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+
+[[[
+```php
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+The deadline for approval of the boleto is up to 48 working hours. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
+
+> WARNING
+>
+> Important
+>
+> If the boleto is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 
 ## Cancel payments
 

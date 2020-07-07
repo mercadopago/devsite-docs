@@ -91,9 +91,7 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 
 ### 1. Con tu usuario vendedor, asigna una orden a un punto de venta. 
 
-Genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor:
-  - Para [modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/), envía una orden al QR previamente creado. 
-  - Para [modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-a/), disponibiliza la orden en la URL asignada.
+Parar probar el modelo atendidio, genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
 
 ### 2. Realiza un pago con tu usuario comprador
   - A. Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.
@@ -116,15 +114,15 @@ Caso | Resultado esperado | Observaciones
 **Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago.com.ar/activities).
 **Cancelar orden**. El usuario se arrepiente y decide pagar en efectivo. | Se elimina la orden, y por ende al escanear el QR sólo se muestra la pantalla de espera. | Eliminar la orden de la caja.
 
-## Quiero ir a Producción
+## Quiero ir a producción
 
-Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes completar el formulario [Quiero ir a producción]([FAKER][CREDENTIALS][URL]). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
+Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
 > WARNING
-> 
+>
 > IMPORTANTE
-> 
-> Si no completas el formulario de [Quiero ir a producción]([FAKER][CREDENTIALS][URL]), no podrás hacer ningun tipo de devoluciones.
+>
+> Si no [activas tus credenciales]([FAKER][CREDENTIALS][URL]), no podrás hacer ningun tipo de devoluciones.
 
 ## ¿Por qué es necesario este proceso?
 

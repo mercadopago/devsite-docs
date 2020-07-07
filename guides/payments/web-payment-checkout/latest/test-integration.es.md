@@ -64,7 +64,7 @@ curl -X POST \
 
 ### 1. Configura el checkout con los datos de tu usuario vendedor
 
-Genera una preferencia con las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales</a> del usuario de prueba que quieras usar como vendedor.
+Genera una preferencia con las <a href="[FAKER][CREDENTIALS][URL]" target="_blank">credenciales</a> del usuario de prueba que quieras usar como vendedor.
 
 ### 2. Realiza un pago con tu usuario comprador
 
@@ -110,9 +110,9 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 
 ## Comenzar a recibir pagos
 
-Para empezar a cobrar, debes completar el formulario <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> Quiero ir a producción</a>.
+Para empezar a cobrar, debes <a href="[FAKER][CREDENTIALS][URL]" target="_blank">activar tus credenciales</a>.
 
-Al terminar el formulario, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
+Al activarlas, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
 ---
 

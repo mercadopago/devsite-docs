@@ -91,7 +91,7 @@ Once you created your stores, the next step is to generate your POS. Some consid
 | ------------- | ------------------------------------------------------------ |
 | `EXTERNAL_STORE_ID`     | Links a Point of Sale (POS) to a store. This is a required field and same as the Store *external_id* previously created. |
 | `EXTERNAL_ID`           | Identifies each Point of Sale (POS). This is required and can’t be modified nor repeated on the same Mercado Pago account. |
-| `URL`           | Will only be used in the Unattended model.  On this field you’ll declare your web address, to which Mercado Pago will later make requests for available orders. |
+
 
 [[[
  ```curl
@@ -101,8 +101,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
   "fixed_amount": true,
   "category": 621102,
   "external_store_id": "STORE001",
-  "external_id": "POS0001",
-  "url": "https://www.miempresa.com/pay-mp?locationId=6232&positionId=1"
+  "external_id": "POS0001"
 }
 ```
 ]]]
@@ -144,12 +143,3 @@ Once Point of Sale is created, you’ll be able to see the QR files in the “Re
 > Check this if your selling process needs an operator.
 >
 > [Integrate QR attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-a/)
-
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Integrate QR unattended model
->
-> If your selling process only needs a client action, this is the model for you.
->
-> [Integrate QR unattended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-a/)

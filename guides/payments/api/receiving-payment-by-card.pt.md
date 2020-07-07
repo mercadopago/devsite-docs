@@ -233,7 +233,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 
 <br>
 
-> NOTE
+> GIT
 >
 > Baixe um exemplo do formulário
 >

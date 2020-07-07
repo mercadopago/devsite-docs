@@ -91,10 +91,8 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ### 1. Com seu usuário vendedor, atribui um pedido a um ponto de venda. 
 
-Gera um pedido com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de testes que quiser utilizar como  vendedor:
+Para testar o modelo atendido, gere um pedido com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que deseja utilizar como vendedor e envie um pedido ao QR previamente criado.
 
-  - Para [modelo atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-a/), envia um pedido ao QR previamente criado.
-  - Para [modelo desatendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-unattended/qr-unattended-part-a/), disponibiliza o pedido no URL atribuído.
 
 ### 2. Realize um pagamento com seu usuário comprador
   - A. Inicie sessão no app de Mercado Pago com seu usuário de teste comprador. 
@@ -119,13 +117,13 @@ Caso | Resultado esperado | Observações
 
 ## Quero ir para Produção
 
-Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá preencher o formulário [Quero ir para produção]([FAKER][CREDENTIALS][URL]). Mais tarde, Mercado Pago poderá auditar seu website, app ou Software de Ponto de Venda, verificando que as regras detalhadas acima sejam atendidas. No caso contrário, um assessor entrará em contato com você para discutir se tem coisas para corrigir em sua integração. 
+Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). Mais tarde, Mercado Pago poderá auditar seu website, app ou Software de Ponto de Venda, verificando que as regras detalhadas acima sejam atendidas. No caso contrário, um assessor entrará em contato com você para discutir se tem coisas para corrigir em sua integração. 
 
 > WARNING
 > 
 > IMPORTANTE
 > 
-> Se não preencher o formulário de [Quero ir para produção]([FAKER][CREDENTIALS][URL]), não poderá fazer qualquer tipo de restituições. 
+> Se não [ativar suas credenciais]([FAKER][CREDENTIALS][URL]), não poderá fazer qualquer tipo de restituições. 
 
 ## Por que este processo é necessário? 
 

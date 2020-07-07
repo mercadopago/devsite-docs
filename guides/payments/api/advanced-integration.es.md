@@ -173,7 +173,7 @@ var filters = {
   id: "247711297-jxOV430go9fx2e"
 };
 
-mercadopago.searchCustomer({
+mercadopago.customers.search({
   qs: filters
 }).then(function (customer) {
   card_data = {
@@ -317,7 +317,7 @@ Primero, obtén el listado de guardadas para que tu cliente pueda elegir con cu�
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);
@@ -530,7 +530,7 @@ Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el 
     email: "test@test.com"
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);
@@ -628,7 +628,7 @@ curl -X GET \
     id: customer_id
   };
 
-  mercadopago.searchCustomer({
+  mercadopago.customers.search({
     qs: filters
   }).then(function (customer) {
     console.log(customer);

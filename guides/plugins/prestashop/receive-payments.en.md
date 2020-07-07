@@ -21,7 +21,7 @@ To start charging you must complete the form [I want to go to Production](https:
 
 > Check the [requirements to go to production](https://www.mercadopago.com.ar/developers/en/guides/payments/api/goto-production/) if you have any doubts during the process
 
-Once the form is completed, verify that the Production credentials of the module are those of the account that receives the money from the sales.
+Verify that the Production credentials of the module are those of the account that receives the money from the sales.
 
 Activate the Production mode only when you are ready to sell and have tested the module with simulated payments in Sandbox. 
 

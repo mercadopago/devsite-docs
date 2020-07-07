@@ -118,7 +118,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 > There are two types of credentials:
 > * Trial credentials: The credentials in this way are used for testing.
-> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".<br>
+> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must activate them.<br>
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
 
 3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Make this process for **Checkout Custom - Credit Card** and **Checkout Custom - Ticket** and then click on **Save Config**.

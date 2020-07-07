@@ -178,8 +178,8 @@ Você também pode definir um meio de pagamento para que apareça por padrão ou
 Atributo | Descrição
 ------------ | -------------
 _`payment_methods`_ | Classe que descreve os atributos e métodos de meios de pagamento.
-_`excluded_payment_methods`_ | Método que exclui por meios de pagamento específicos: Visa, Mastercard o American Express, entre outros.
-_`excluded_payment_types`_ | Método que exclui por tipo de meio de pagamento: cartão de crédito ou ticket (boleto ou pagamento em lotérica).
+_`excluded_payment_methods`_ | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros.
+_`excluded_payment_types`_ | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica).
 _`installments`_ | Método que define o número máximo de parcelas a oferecer
 
 [[[
@@ -446,6 +446,20 @@ curl -X POST \
 ```
 ]]]
 
+## Valor do envio
+
+Se você já possui o envio estimado pelo seu site, pode definir o valor e mostrá-lo separadamente do total ao oferecer o pagamento. 
+
+Para configurá-lo, adicione o item `shipments` com o valor que quiser cobrar no atributo `cost` e o valor `not_specified` no atributo `mode`.
+
+```json
+{
+    "shipments":{
+        "cost": 1000,
+        "mode": "not_specified",
+  }
+}
+```
 
 ## Otimize a conversão dos seus anúncios
 

@@ -6,6 +6,7 @@ sites_supported:
 ---
 
 # Credenciais
+---
 
 ## O que são minhas credenciais e onde posso encontrá-las?
 
@@ -23,17 +24,9 @@ Recomendamos usar primeiro suas credenciais de teste para comprovar que tudo fun
 
 ## Já estou integrado e fiz testes. Como implemento em produção?
 
-Para ir a produção, você deve preencher o formulário "Quero ir a produção" que se encontra na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
+Para ir a produção, Você precisa ativar suas credenciais em na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
-O formulário é necessário para fazer transações com dinheiro real.
-
-Lembre-se de preencher os campos:
-
-- Documento: referente ao tipo de documento e número, sem pontos ou barras.
-
-- Data de nascimento: se você usa um CNPJ, preencha com a data de criação ou fundação da empresa.
-
-- Endereço postal: insira um e-mail de contato do site.
+> Se eles já estiverem ativos, você não precisa fazer nada.
 
 ## Quero atualizar minhas credenciais, como posso renová-las?
 
