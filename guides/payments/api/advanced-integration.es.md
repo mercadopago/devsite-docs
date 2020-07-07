@@ -440,7 +440,7 @@ var payment_data = {
   token: 'ff8080814c11e237014c1ff593b57b4d',
   installments: 1,
   payer: {
-    type: "customer"
+    type: "customer",
     id: "123456789-jxOV430go9fx2e"
   }
 };
