@@ -18,7 +18,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 We update our data protection protocols to meet the highest security standards. After July 8th, we will stop displaying the seller's e-mail when creating orders. The change shouldn't cause any problems in the integration, since it's information of the person who is creating the order.
 
-You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource/)
+You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource/).
 
 ---
 

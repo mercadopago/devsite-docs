@@ -18,7 +18,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 Atualizamos nossas medidas de proteção de dados para atender aos mais altos padrões de segurança. A partir de quarta-feira, 8 de julho, deixaremos de exibir o e-mail do vendedor ao criar pedidos. A mudança não deve gerar nenhum problema na integração, pois são informações da pessoa que está criando o pedido.
 
-Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/resource/)
+Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/resource/).
 
 ---
 
