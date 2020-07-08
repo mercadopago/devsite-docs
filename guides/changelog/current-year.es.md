@@ -56,6 +56,7 @@ Lanzamos una nueva versión del SDK Java 1.7.0.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.7.0).
 
+<br>
 
 > CHANGELOG
 >
@@ -73,6 +74,7 @@ Lanzamos una nueva versión del SDK PHP 2.1.0.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-php/releases/tag/2.1.0).
 
+<br>
 
 > CHANGELOG
 >
