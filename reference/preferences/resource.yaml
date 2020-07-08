@@ -308,11 +308,11 @@ definitions:
                 es: Calle.
                 pt: Rua.
           - city_name:
-            type: String(256)
-            description:
-              en: City name.
-              es: Ciudad.
-              pt: Cidade.
+              type: String(256)
+              description:
+                en: City name.
+                es: Ciudad.
+                pt: Cidade.
           - state_name:
               type: String(256)
               description:
