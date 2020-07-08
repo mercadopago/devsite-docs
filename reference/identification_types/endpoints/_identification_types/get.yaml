@@ -1,5 +1,4 @@
 ---
-resource: identification_types.raml
 use:
 - id
 - name

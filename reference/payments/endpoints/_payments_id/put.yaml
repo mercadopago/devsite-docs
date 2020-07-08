@@ -1,5 +1,4 @@
 ---
-resource: payments.raml
 use:
 - status
 errors:

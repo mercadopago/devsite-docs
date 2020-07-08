@@ -1,125 +1,134 @@
----
-type: object
-properties:
-- id:
-    type: String
-    description:
-      en: Chargeback identifier
-      es: Identificador de Contracargo
-      pt: Identificador do Estorno
-- payments:
-    type: Array(Integer)
-    description:
-      en: List of payments ids associated to the case
-      es: Lista de pagos con identificadores asociados al caso
-      pt: Lista de ids de pagamentos associados ao caso
-- currency:
-    type: String
-    description:
-      en: 'Amount''s currency '
-      es: 'Monto de dinero '
-      pt: 'Valor da moeda '
-- amount:
-    type: Float
-    description:
-      en: Chargeback's amount
-      es: Devolución del importe
-      pt: Valor do Estorno
-- coverage_applied:
-    type: Boolean
-    description:
-      en: Whether the seller has been covered or not
-      es: Si el vendedor ha sido cubierto o no
-      pt: Se o vendedor está coberto ou não
-- coverage_elegible:
-    type: Boolean
-    description:
-      en: Whether the chargeback complies with the conditions to be covered
-      es: Si la devolución cumple con las condiciones para ser cubierta
-      pt: Se o estorno está em conformidade com as condições para ser coberto
-- documentation_required:
-    type: Boolean
-    description:
-      en: Whether the seller needs to send documentation for this chargeback
-      es: Si el vendedor debe enviar la documentación para el contracargo
-      pt: Se o vendedor precisa enviar a documentação para este estorno
-- documentation_status:
-    type: String
-    description:
-      en: Detail of decision taken for the documentation
-      es: Detalle de la decisión tomada por la documentación
-      pt: Detalhe da decisão tomada para a documentação
-    enum:
-    - pending:
-        en: No documentation has been received
-        es: No se ha recibido documentacion
-        pt: A documentação não foi recebida
-    - review_pending:
-        en: Documentation received, waiting for decision to be taken
-        es: Documentacion recibida, esperando por la toma de decision
-        pt: Documentação recebida, aguardando a tomada de decisão
-    - valid:
-        en: The documentation received is valid
-        es: La documentacion recibida es valida
-        pt: A documentação recebida é válida
-    - invalid:
-        en: The documentation received is invalid
-        es: La documentacion recibida es invalida
-        pt: A documentação recebida é inválida
-    - not_supplied:
-        en: The documentation wasn't supplied on time
-        es: La documentación no fue entregada a tiempo
-        pt: A documentação não foi entregue a tempo
-    - not_applicable:
-        en: Documentation wasn't needed for this chargeback
-        es: La documentacion no es necesaria para este contracargo
-        pt: A documentação não é necessária para esse estorno
-- documentation:
-    type: Array(Object)
-    description:
-      en: List of documentation received from the seller
-      es: Lista de documentación recibida del vendedor
-      pt: Lista de documentação recebida do vendedor
-    properties:
-    - type:
-        type: String
-        description:
-          en: Documentation's file type
-          es: Tipo de archivo de documentacion
-          pt: Tipo de arquivo da documentação
-    - url:
-        type: String
-        description:
-          en: Url to see the documentation file
-          es: Url para ver el archivo de documentación
-          pt: Url para ver o arquivo da documentação
-    - description:
-        type: String
-        description:
-          en: Documentation's description
-          es: Descripcion de la documentacion
-          pt: Descrição da documentação
-- date_documentation_deadline:
-    type: Date(ISO_8601)
-    description:
-      en: Chargeback's last day to send documentation
-      es: Último día para el envío de documentación del contracargo
-      pt: Último dia para o envio da documentação do estorno
-- date_created:
-    type: Date(ISO_8601)
-    description:
-      en: Chargeback’s creation date
-      es: Fecha de creación del contracargo
-      pt: Data de criação do Estorno
-- date_last_updated:
-    type: Date(ISO_8601)
-    description:
-      en: Chargeback's last modified date
-      es: Fecha de última modificación del contracargo
-      pt: Data da última modificação do estorno
-- live_mode:
-    type: Boolean
-    description:
-      en: Whether the chargeback will be processed in sandbox or in production mode
-      es: Si la devolución será procesada en el "sandbox" o en el modo de producción
-      pt: Se o estorno será processada em sandbox ou em modo de produção
+title: Chargebacks API
+key: chargebacks
+order: 4
+version: v1
+baseUri: https://api.mercadopago.com/
+paths:
+  /chargebacks/{id}:
+    methods:
+      - get
+definitions:
+  type: object
+  properties:
+  - id:
+      type: String
+      description:
+        en: Chargeback identifier
+        es: Identificador de Contracargo
+        pt: Identificador do Estorno
+  - payments:
+      type: Array(Integer)
+      description:
+        en: List of payments ids associated to the case
+        es: Lista de pagos con identificadores asociados al caso
+        pt: Lista de ids de pagamentos associados ao caso
+  - currency:
+      type: String
+      description:
+        en: 'Amount''s currency '
+        es: 'Monto de dinero '
+        pt: 'Valor da moeda '
+  - amount:
+      type: Float
+      description:
+        en: Chargeback's amount
+        es: Devolución del importe
+        pt: Valor do Estorno
+  - coverage_applied:
+      type: Boolean
+      description:
+        en: Whether the seller has been covered or not
+        es: Si el vendedor ha sido cubierto o no
+        pt: Se o vendedor está coberto ou não
+  - coverage_elegible:
+      type: Boolean
+      description:
+        en: Whether the chargeback complies with the conditions to be covered
+        es: Si la devolución cumple con las condiciones para ser cubierta
+        pt: Se o estorno está em conformidade com as condições para ser coberto
+  - documentation_required:
+      type: Boolean
+      description:
+        en: Whether the seller needs to send documentation for this chargeback
+        es: Si el vendedor debe enviar la documentación para el contracargo
+        pt: Se o vendedor precisa enviar a documentação para este estorno
+  - documentation_status:
+      type: String
+      description:
+        en: Detail of decision taken for the documentation
+        es: Detalle de la decisión tomada por la documentación
+        pt: Detalhe da decisão tomada para a documentação
+      enum:
+      - pending:
+          en: No documentation has been received
+          es: No se ha recibido documentacion
+          pt: A documentação não foi recebida
+      - review_pending:
+          en: Documentation received, waiting for decision to be taken
+          es: Documentacion recibida, esperando por la toma de decision
+          pt: Documentação recebida, aguardando a tomada de decisão
+      - valid:
+          en: The documentation received is valid
+          es: La documentacion recibida es valida
+          pt: A documentação recebida é válida
+      - invalid:
+          en: The documentation received is invalid
+          es: La documentacion recibida es invalida
+          pt: A documentação recebida é inválida
+      - not_supplied:
+          en: The documentation wasn't supplied on time
+          es: La documentación no fue entregada a tiempo
+          pt: A documentação não foi entregue a tempo
+      - not_applicable:
+          en: Documentation wasn't needed for this chargeback
+          es: La documentacion no es necesaria para este contracargo
+          pt: A documentação não é necessária para esse estorno
+  - documentation:
+      type: Array(Object)
+      description:
+        en: List of documentation received from the seller
+        es: Lista de documentación recibida del vendedor
+        pt: Lista de documentação recebida do vendedor
+      properties:
+      - type:
+          type: String
+          description:
+            en: Documentation's file type
+            es: Tipo de archivo de documentacion
+            pt: Tipo de arquivo da documentação
+      - url:
+          type: String
+          description:
+            en: Url to see the documentation file
+            es: Url para ver el archivo de documentación
+            pt: Url para ver o arquivo da documentação
+      - description:
+          type: String
+          description:
+            en: Documentation's description
+            es: Descripcion de la documentacion
+            pt: Descrição da documentação
+  - date_documentation_deadline:
+      type: Date(ISO_8601)
+      description:
+        en: Chargeback's last day to send documentation
+        es: Último día para el envío de documentación del contracargo
+        pt: Último dia para o envio da documentação do estorno
+  - date_created:
+      type: Date(ISO_8601)
+      description:
+        en: Chargeback’s creation date
+        es: Fecha de creación del contracargo
+        pt: Data de criação do Estorno
+  - date_last_updated:
+      type: Date(ISO_8601)
+      description:
+        en: Chargeback's last modified date
+        es: Fecha de última modificación del contracargo
+        pt: Data da última modificação do estorno
+  - live_mode:
+      type: Boolean
+      description:
+        en: Whether the chargeback will be processed in sandbox or in production mode
+        es: Si la devolución será procesada en el "sandbox" o en el modo de producción
+        pt: Se o estorno será processada em sandbox ou em modo de produção

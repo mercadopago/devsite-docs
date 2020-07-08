@@ -1,8 +1,7 @@
 ---
-resource: stores.raml
 samples:
-- byid_curl.sh
-- byid_curl_response.json
+- curl.sh
+- curl_response.json
 use:
 - id
 errors:

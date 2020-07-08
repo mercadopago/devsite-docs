@@ -1,8 +1,7 @@
 ---
-resource: pos.raml
 samples:
-- all_curl.sh
-- all_curl_response.json
+- curl.sh
+- curl_response.json
 use:
 - category
 - store_id

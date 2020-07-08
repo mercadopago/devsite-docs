@@ -1,8 +1,7 @@
 ---
-resource: merchant_orders.raml
 samples:
-- search_curl.sh
-- search_curl_response.json
+- curl.sh
+- curl_response.json
 use:
 - status
 - external_reference

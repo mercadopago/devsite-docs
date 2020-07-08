@@ -1,8 +1,7 @@
 ---
-resource: preferences.raml
 samples:
-- search_curl.sh
-- search_curl_response.json
+- curl.sh
+- curl_response.json
 use:
 - client_id
 - collector_id

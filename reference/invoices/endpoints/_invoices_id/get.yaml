@@ -1,5 +1,4 @@
 ---
-resource: resource.yaml
 use:
 - id
 - email
