@@ -240,7 +240,7 @@ Para isso, `back_urls` são usados. Esse redirecionamento pode ser automático a
 >
 > Nota
 >
-> Ten en cuenta que las `backs_urls` solo funcionan para redirect y mobile. No al usar modo modal, como se detalla en el siguiente [link](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/integration/) para volver al sitio toma la URL del `form action`. 
+> Observe que as `backs_urls` só funcionam para o modo redirect e mobile. Ao usar o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/integration/) é considerado a URL do `form action` para voltar ao site.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
