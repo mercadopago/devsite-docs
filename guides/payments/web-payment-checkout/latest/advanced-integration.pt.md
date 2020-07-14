@@ -236,6 +236,12 @@ preference.Items.Add(
 No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
 Para isso, `back_urls` são usados. Esse redirecionamento pode ser automático através do atributo `auto_return` ou de um link que permite retornar ao site do vendedor.
 
+> NOTE
+>
+> Nota
+>
+> Observe que as `backs_urls` só funcionam para o modo redirect e mobile. Ao usar o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/integration/) é considerado a URL do `form action` para voltar ao site.
+
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
 Atributo |	Descrição
