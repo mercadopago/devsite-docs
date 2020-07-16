@@ -158,7 +158,7 @@ Para **configurar as informações de pedido em sua loja**, siga os passos abaix
 
 1. Acesse "Formas de pagamento" da seção "Módulos" do painel administrativo de sua loja.
 2. Localize o "Mercado Pago" na lista de meios de pagamentos e acesse as "opções de configuração".
-3. Preencha os campos referente ao que deseja oferecer em sua loja.
+3. Preencha os campos referentes ao que deseja oferecer em sua loja.
 
   - **Informações ao usuário referente ao este tipo de pagamento.** Informe uma mensagem de texto no que será exibida antes da finalização do pagamento. 
   - **Informações ao usuário referente ao este tipo de pagamento.** Informe uma mensagem de texto no que será exibida depois da finalização do pagamento. 
