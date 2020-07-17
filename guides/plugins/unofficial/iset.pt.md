@@ -113,10 +113,10 @@ Configure a quantidade máxima de parcelas, valor mínimo de parcela e aplicaç�
 3. Selecione em "Categoria dos Produtos" a melhor categoria que representa o tipo de produto anunciado em sua loja.
 4. Preencha os seguintes campos de acordo com a configuração da sua conta Mercado Pago:
 
-- **Venda parcelada em até**. Selecione o número máximo de parcelas que deseja oferecer em sua loja.
-- **Valor mínimo de parcela R$**. Informe o valor mínimo de parcela que melhor desejar.
-- **Somente pedidos acima de R$**. Indique se deseja usar uma faixa de valor para aceitar pedidos em sua loja.
-- **Desconto para pagamento à vista (em %)**. Informe o valor do desconto para pagamentos à vista que melhor desejar.
+- **Venda parcelada em até**. Selecione o número máximo de parcelas que deseja oferecer.
+- **Valor mínimo de parcela R$**. Informe o valor mínimo de parcela que deseja oferecer.
+- **Somente pedidos acima de R$**. Indique se deseja usar uma faixa de valor mínimo para aceitar pedidos em sua loja.
+- **Desconto para pagamento à vista (em %)**. Informe o valor do desconto para pagamentos à vista que deseja oferecer.
 - **Acréscimo/Desconto**. Aplique acréscimo ou desconto sobre pedido que deseja oferecer em sua loja.
 
 5. Clique em "Fechar" e depois em "Salvar Alterações".
@@ -136,9 +136,9 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 
 ## Credenciais de sua conta Mercado Pago
 
-As credenciais são as senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações, são elas:
+As credenciais são as chaves com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações, são elas:
 
-- **Credenciais de produção.** Usadas para receber pagamentos on-line.
+- **Credenciais de produção.** Usadas para receber pagamentos reais.
 - **Credenciais de teste.** Usadas para simular pagamentos e testar suas integrações.
 
 Estas chaves podem ser encontradas na seção [credenciais da sua conta]([FAKER][CREDENTIALS][URL_BASIC]).
@@ -147,7 +147,7 @@ Estas chaves podem ser encontradas na seção [credenciais da sua conta]([FAKER]
 >
 > Nota
 >
-> Antes de iniciar sua operação em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
+> Antes de iniciar sua integração em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
 <p>&nbsp;</p>
     ![Payments Connect - iSET](/images/iset/iset_configuration_credentions_8.gif)
 <p>&nbsp;</p>
@@ -162,9 +162,9 @@ Para **configurar as informações de pedido em sua loja**, siga os passos abaix
 
   - **Informações ao usuário referente ao este tipo de pagamento.** Informe uma mensagem de texto no que será exibida antes da finalização do pagamento. 
   - **Informações ao usuário referente ao este tipo de pagamento.** Informe uma mensagem de texto no que será exibida depois da finalização do pagamento. 
-  - **Status para novos pedidos.** Selecione o status para novos pedidos que deseja oferecer em sua loja.
-  - **Status dos pedidos aprovados.** Selecione o status para pedidos aprovados que deseja oferecer em sua loja.
-  - **Status dos pedidos cancelados.** Selecione o status para pedidos cancelados que deseja oferecer em sua loja.
+  - **Status para novos pedidos.** Selecione o status para novos pedidos que deseja apresentar em sua loja.
+  - **Status dos pedidos aprovados.** Selecione o status para pedidos aprovados que deseja apresentar em sua loja.
+  - **Status dos pedidos cancelados.** Selecione o status para pedidos cancelados que deseja apresentar em sua loja.
   - **Utilizar campanha de desconto.** Informe se irá utilizar cupons de descontos providos pelo Mercado Pago em sua loja.
  
 4. Clique em "Fechar" e depois em "Salvar Alterações".
