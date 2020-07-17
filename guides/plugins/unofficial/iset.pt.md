@@ -147,7 +147,7 @@ Estas chaves podem ser encontradas na seção [credenciais da sua conta]([FAKER]
 >
 > Nota
 >
-> Antes de iniciar sua operação em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
+> Antes de iniciar sua integração em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
 <p>&nbsp;</p>
     ![Payments Connect - iSET](/images/iset/iset_configuration_credentions_8.gif)
 <p>&nbsp;</p>
