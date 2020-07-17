@@ -136,7 +136,7 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 
 ## Credenciais de sua conta Mercado Pago
 
-As credenciais são as senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações, são elas:
+As credenciais são as chaves com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações, são elas:
 
 - **Credenciais de produção.** Usadas para receber pagamentos on-line.
 - **Credenciais de teste.** Usadas para simular pagamentos e testar suas integrações.
