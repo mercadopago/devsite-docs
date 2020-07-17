@@ -162,7 +162,7 @@ Para **configurar as informações de pedido em sua loja**, siga os passos abaix
 
   - **Informações ao usuário referente ao este tipo de pagamento.** Informe uma mensagem de texto no que será exibida antes da finalização do pagamento. 
   - **Informações ao usuário referente ao este tipo de pagamento.** Informe uma mensagem de texto no que será exibida depois da finalização do pagamento. 
-  - **Status para novos pedidos.** Selecione o status para novos pedidos que deseja oferecer em sua loja.
+  - **Status para novos pedidos.** Selecione o status para novos pedidos que deseja apresentar em sua loja.
   - **Status dos pedidos aprovados.** Selecione o status para pedidos aprovados que deseja oferecer em sua loja.
   - **Status dos pedidos cancelados.** Selecione o status para pedidos cancelados que deseja oferecer em sua loja.
   - **Utilizar campanha de desconto.** Informe se irá utilizar cupons de descontos providos pelo Mercado Pago em sua loja.
