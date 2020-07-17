@@ -138,7 +138,7 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 
 As credenciais são as chaves com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações, são elas:
 
-- **Credenciais de produção.** Usadas para receber pagamentos on-line.
+- **Credenciais de produção.** Usadas para receber pagamentos reais.
 - **Credenciais de teste.** Usadas para simular pagamentos e testar suas integrações.
 
 Estas chaves podem ser encontradas na seção [credenciais da sua conta]([FAKER][CREDENTIALS][URL_BASIC]).
