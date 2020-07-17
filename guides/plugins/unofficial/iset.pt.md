@@ -116,7 +116,7 @@ Configure a quantidade máxima de parcelas, valor mínimo de parcela e aplicaç�
 - **Venda parcelada em até**. Selecione o número máximo de parcelas que deseja oferecer em sua loja.
 - **Valor mínimo de parcela R$**. Informe o valor mínimo de parcela que deseja oferecer.
 - **Somente pedidos acima de R$**. Indique se deseja usar uma faixa de valor para aceitar pedidos em sua loja.
-- **Desconto para pagamento à vista (em %)**. Informe o valor do desconto para pagamentos à vista que melhor desejar.
+- **Desconto para pagamento à vista (em %)**. Informe o valor do desconto para pagamentos à vista que deseja oferecer.
 - **Acréscimo/Desconto**. Aplique acréscimo ou desconto sobre pedido que deseja oferecer em sua loja.
 
 5. Clique em "Fechar" e depois em "Salvar Alterações".
