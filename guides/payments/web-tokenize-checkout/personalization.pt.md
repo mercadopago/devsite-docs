@@ -151,23 +151,19 @@ Mediante o atributo `data-summary-product`, você pode especificar o montante no
 data-summary-product="654"
 ```
 
-#### Quantidade mínima de parcelas
+#### Quantidade mínima e máxima de parcelas
 
-Usando o atributo `data-min-installments`, você pode limitar a quantidade mínima de parcelas que deseja oferecer ao seu pagador. Por exemplo:
-
-```html
-data-min-installemnts = 2
-```
-
-#### Quantidade máxima de parcelas
-
-Usando o atributo `data-max-installments`, você pode limitar a quantidade máxima de parcelas que deseja oferecer ao seu pagador. Por exemplo:
+Quantidade mínima e máxima de parcelas
+Usando o atributo `data-min-installments` ou `data-max-installments, você pode limitar o mínimo e máximo da quantidade de parcelas que deseja oferecer a seu pagador.
+Por exemplo:
 
 ```html
-data-max-installemnts = 3
+data-min-installments = 1
+
+data-max-installments = 6
 ```
 
-> Caso a quantidade máxima de parcelas seja `1`, a seção de pagamento será ignorada. O valor mínimo para este atributo é `1`.
+> O valor mínimo para ambos atributos é `1`. Se completar os atributos com o mesmo valor a seção de parcelas será saltada no checkout.
 
 
 #### Desconto

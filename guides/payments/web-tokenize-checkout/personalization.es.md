@@ -153,25 +153,18 @@ Mediante el atributo `data-summary-product`, puedes especificar el monto en el d
 data-summary-product="654"
 ```
 
-#### Cantidad mínima de cuotas
+#### Cantidad mínima y máxima de cuotas
 
-Usando el atributo `data-min-installments`, puedes limitar la cantidad mínima de cuotas que deseas ofrecer a tu pagador. 
+Usando el atributo `data-min-installments` o `data-max-installments`, puedes limitar el mínimo y máximo de la cantidad de cuotas que deseas ofrecer a tu pagador. 
 Por ejemplo:
 
 ```html
-data-min-installments = 2
+data-min-installments = 1
+
+data-max-installments = 6
 ```
 
-#### Cantidad máxima de cuotas
-
-Usando el atributo `data-max-installments`, puedes limitar la cantidad máxima de cuotas que deseas ofrecer a tu pagador. 
-Por ejemplo:
-
-```html
-data-max-installments = 3
-```
-
-> En caso de enviar el campo con el valor en `1`, se salteará la sección de cuotas del checkout. El valor minimo para este atributo es `1`. 
+> El valor mínimo para ambos atributos es `1`. Si completas los atributos con el mismo valor, se salteará la sección de cuotas del checkout.
 
 
 #### Descuento
