@@ -153,8 +153,7 @@ data-summary-product="654"
 
 #### Quantidade mínima e máxima de parcelas
 
-Quantidade mínima e máxima de parcelas
-Usando o atributo `data-min-installments` ou `data-max-installments, você pode limitar o mínimo e máximo da quantidade de parcelas que deseja oferecer a seu pagador.
+Usando o atributo `data-min-installments` ou `data-max-installments`, você pode limitar o mínimo e máximo da quantidade de parcelas que deseja oferecer a seu pagador.
 Por exemplo:
 
 ```html
