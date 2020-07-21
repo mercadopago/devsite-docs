@@ -15,7 +15,7 @@ La API de Advanced Payments permite realizar pagos con clientes y tarjetas guard
 >
 > Nota
 >
-> Para mayor información ver referencia de [Customers & Cards](https://www.mercadopago.com.ar/developers/es/guides/payments/api/customers-and-cards).
+> Para mayor información ver referencia de [Customers & Cards](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/).
 
 Para crear un pago usando `Customers`, se setea el ID del usuario y el tipo con el valor `customer`.
 
