@@ -1,7 +1,4 @@
 ---
-  indexable: false
----
----
 sites_supported:
   - mla
   - mlb
@@ -9,9 +6,10 @@ sites_supported:
   - mlu
   - mlc
   - mlm
+indexable: false
 ---
 
-# MercadoEnvíos
+# Mercado Envíos
 
 > WARNING
 >

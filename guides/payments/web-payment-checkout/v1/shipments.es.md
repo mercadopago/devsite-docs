@@ -1,7 +1,4 @@
 ---
-  indexable: false
----
----
 sites_supported:
   - mla
   - mlb
@@ -9,6 +6,7 @@ sites_supported:
   - mlu
   - mlc
   - mlm
+indexable: false
 ---
 
 # Agregando envíos
