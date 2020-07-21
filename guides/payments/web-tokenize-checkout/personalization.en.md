@@ -125,6 +125,7 @@ The attributes that can be added and modified are the following.
 **Numerical amounts:**
 
 - Products: `data-summary-product`
+- Minimum amount of installments: `data-min-installments`
 - Maximum amount of installments: `data-max-installments`
 - Discount: `data-summary-discount`
 - Shipping: `data-summary-shipping`
@@ -149,6 +150,14 @@ Using the attribute `data-summary-product`, you can specify the amount in the de
 
 ```html
 data-summary-product="654"
+```
+
+#### Minimum amount of installments
+
+Using the attribute `data-min-insallments`, you can limit the minimum amount of installments you want to offer your payer. For example:
+
+```html
+data-min-installments = 2
 ```
 
 #### Maximum amount of installments
