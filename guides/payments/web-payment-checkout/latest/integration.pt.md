@@ -257,7 +257,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 </form>
 ```
 ```node
-<form action="." method="POST">
+<form method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id='<%= global.id %>'>

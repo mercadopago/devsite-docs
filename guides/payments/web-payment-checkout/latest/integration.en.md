@@ -257,7 +257,7 @@ Finally, add the following code to show the payment button of your Mercado Pago 
 </form>
 ```
 ```node
-<form action="." method="POST">
+<form method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
    data-preference-id='<%= global.id %>'>

@@ -257,7 +257,7 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 </form>
 ```
 ```node
-<form action="." method="POST">
+<form method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
    data-preference-id='<%= global.id %>'>
