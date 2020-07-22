@@ -151,8 +151,8 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// This value replaces the String "<%= @init_point %>" in your HTML
-  global.init_point = response.body.init_point;
+// This value replaces the String "<%= global.id %>" in your HTML
+  global.id = response.body.id;
 }).catch(function(error){
   console.log(error);
 });
@@ -257,10 +257,10 @@ Finally, add the following code to show the payment button of your Mercado Pago 
 </form>
 ```
 ```node
-<form action="/payment-process" method="POST">
+<form action="." method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
+   data-preference-id='<%= global.id %>'>
   </script>
 </form>
 ```
