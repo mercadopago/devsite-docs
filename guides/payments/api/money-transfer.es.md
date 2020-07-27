@@ -65,7 +65,7 @@ En caso de que se mande el "concept_id" = "payroll" o "supply" sin que el APP ID
 
 ## Integración por API
 
-Esta solución consiste en la utilización de las API`s de Mercado Pago para llevar a cabo la correspondiente creación del pago. Toda la experiencia es manejada por el integrador.
+Esta solución consiste en la utilización de las API's de Mercado Pago para llevar a cabo la correspondiente creación del pago. Toda la experiencia es manejada por el integrador.
 
 Para el envío de dinero se puede especificar el receptor del pago de dos maneras:
 
