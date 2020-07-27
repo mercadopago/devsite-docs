@@ -26,7 +26,7 @@ This solution allows payment to suppliers and payment of salaries. For these cas
 -   For payment to suppliers must send the "concept_id" = "supply"
 -   For payment of salaries must send the "concept_id" = "payroll"
 
-## General Considerations
+## General considerations
 
 If at the moment of the payment generation some of the conditions mentioned in the previous point are not met, you will receive one of the following error messages:
 
