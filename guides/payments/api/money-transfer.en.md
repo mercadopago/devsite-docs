@@ -1,3 +1,9 @@
+---
+  sites_supported:
+      - mla
+  indexable: false
+---
+
 # Money transfer
 
 From Mercado Pago, we provide the necessary services to be able to send money immediately and without cost from your Mercado Pago account to another Mercado Pago account.
@@ -10,8 +16,7 @@ To create an application you must enter with your Mercado Pago account at: [http
 >
 > Considerations
 >
->The APP must be assigned the scope of "money_transfer", the payment must be with the 'payment_method_id' =  'account_money', and the 'operation_type' = 'money_transfer' field must be added.
-> 
+>The APP must be assigned the scope of "money_transfer", the payment must be with the `payment_method_id` =  `account_money`, and the `operation_type` = `money_transfer` field must be added.<br>
 > For payments that meet the conditions mentioned above, the transaction will have a commission of 0% and the money will be released immediately after creating the transaction.
 
 ## Payment to Suppliers and Payroll
