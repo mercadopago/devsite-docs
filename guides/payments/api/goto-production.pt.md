@@ -19,7 +19,7 @@ Essas medidas permitem cuidar dos dados sensíveis, cumprir com os padrões de s
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tenha um certificado SSL
 
-Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um certificado SSL válido e que o formulário de pagamento seja disponibilizado em uma página HTTPS. Isso permite proteger as transações e os dados dos seus compradores. Durante os teste não é necessário tê-lo, mas é obrigatório para ir a produção.
+Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um certificado SSL válido e que o formulário de pagamento seja disponibilizado em uma página HTTPS. Isso permite proteger as transações e os dados dos seus compradores. Durante os testes não é necessário tê-lo, mas é obrigatório para ir à produção.
 
 ## Envio das informações
 
@@ -31,14 +31,14 @@ Veja mais informações na [seção Melhore a aprovação](https://www.mercadopa
 ## Notificações e pesquisa de pagamento
 
 Para aproveitar ao máximo a integração do Mercado Pago, um dos principais pontos a destacar é o uso de notificações para atualizar pedidos em tempo real no seu sistema.
-Ambos os tipos de notificações, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/) ou [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/) são enviados de um servidor servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
+Ambos os tipos de notificações, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/) ou [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/) são enviadas de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 Ao implementar essas notificações, você poderá descobrir todas as atualizações de suas transações no momento.
 
 ## Experiência do usuário
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar mensagens de resposta corretas
 
-Conforme mencionado na [seção Manipulação de respostas] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/), você deve ser mostrado as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
+Conforme mencionado na [seção Manipulação de respostas] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/), deve-se mostrar as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seja transparente com as promoções e financiamentos
 
@@ -49,12 +49,12 @@ Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pag
 >
 > Nota
 >
-> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigencias adicionales](https://www.mercadopago.com.ar/developers/es/guides/localization/considerations-argentina/).
+> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigências adicionais](https://www.mercadopago.com.ar/developers/es/guides/localization/considerations-argentina/).
 ------------
 
 ## Disponibilize seus termos e condições
 
-Disponibilize uma política de termos e condições e deixe claro que é responsável por todos os dados que sejam inserido no seu site.
+Disponibilize uma política de termos e condições e deixe claro que é responsável por todos os dados que sejam inseridos no seu site.
 
 ---
 ### Próximos passos

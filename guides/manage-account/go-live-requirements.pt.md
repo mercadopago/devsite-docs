@@ -4,8 +4,8 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, v
 
 ## Não se esqueça de ter um certificado SSL
 
-Para você esteja seguro e possa cuidar dos dados, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. Isso permite proteger as transações realizadas pelos compradores e seus dados.
-Durante os testes, você pode não ter um, mas é obrigatório ir para produção.
+Para que você esteja seguro e possa cuidar dos dados, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. Isso permite proteger as transações realizadas pelos compradores e seus dados.
+Durante os testes, você pode não ter um, mas é obrigatório para ir à produção.
 
 ## Por que este processo é necessário?
 
