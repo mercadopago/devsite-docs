@@ -29,7 +29,7 @@ To prevent real payments being rejected by security non-compliance, you must add
 
 In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer have done suspicious payments in the past.
 
-You can see more information in the [Improves approval section].
+You can see more information in the [Improves approval section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/payment-rejections/).
 
 ## Notifications and payment search
 
