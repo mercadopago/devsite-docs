@@ -1,24 +1,49 @@
 # Requirements for the production environment
 
-Once your integration is ready, to start receiving payments you just need to fill out the form for the production environment in the [Credentials section]([FAKER][CREDENTIALS][URL]).
+Once your integration is ready, to start receiving payments you must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
 ## Why is this process required?
 
 This process can ensure your customers' data security, compliance with legal standards or the provisions in each country, and the best shopping experience for your sales.
 
-[Learn about Mercado Pago's terms and conditions](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/terminos-y-condiciones_299).
+[View the Terms and Conditions of Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/legal/terms-and-conditions).
 
-## Use the official libraries and ensure data security
+## What we validate?
+In order to ensure both the best integration quality and user experience for the end customer, from Mercado Pago we need certain conditions before going into production environment.
 
-On one hand, you need to use MercadoPago.js library, as provided by Mercado Pago. You can't change or host it on your servers. And, on the other, you need to make sure not to put the `name` attribute when creating a card data form. This way your servers will never store data when the customer sends the form.
+## Security
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use the official libraries and ensure data security
+
+On one hand, you need to use MercadoPago.js library, as provided by Mercado Pago. You can't change or host it on your servers. And, on the other, you need to make sure not to put the `name` attribute when creating a card form to take care of data security.
 
 These measures protect your customer's sensitive data, meet the required security standards, and keep yours up to date.
 
-## Don't forget to get an SSL certificate
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't forget to get an SSL certificate
 
 To ensure security and data protection, you need to have a valid SSL certificate and make the payment form available on an HTTPS page. This protects buyers' transactions and data. You may not have it while running tests, but it is mandatory for the production environment.
 
-## Be transparent with promotions and financing
+## Sending information
+
+To prevent real payments being rejected by security non-compliance, you must add as much information as you can while performing an operation.
+
+In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer have done suspicious payments in the past.
+
+You can see more information in the [Improves approval section].
+
+## Notifications and payment search
+
+In order to take full advantage of the Mercado Pago integration, one of the key points to highlight is the use of notifications to update orders in real time in your system.
+Both types of notifications, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/) or [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/), are sent from one server to another through an `HTTP POST` request informing your transactions.
+By implementing these notifications, you will be able to find out all the updates of your transactions at the moment.
+
+## User experience
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response Handling
+
+As mentioned in the [Handling Responses section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/handling-responses/), you should be shown the messages corresponding to the client, depending on the result of the payment, so that he can act in the correct way.
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be transparent with promotions and financing
 
 You need to be clear about which promotions are offered by Mercado Pago. You can [include a payment method banner](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/banners/introduction/) or [add a link to the promotions section](https://www.mercadopago.com/mla/credit_card_promos.htm). Besides, you need to inform [financing costs applicable to your customers](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
 
@@ -52,3 +77,4 @@ You need to have a policy on terms and conditions and make it clear that you are
 > Find all the information required to interact with our APIs.
 >
 > [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
+

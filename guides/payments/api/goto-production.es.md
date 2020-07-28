@@ -1,21 +1,21 @@
 # Requisitos para ir a producción
 
-Cuando tengas lista tu integración y quieras comenzar a recibir pagos, tienes que completar el formulario para ir producción desde la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
+Cuando tengas lista tu integración y quieras comenzar a recibir pagos, tienes que [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
 ## ¿Por qué es necesario este proceso?
 
 Con este proceso, se puede garantizar la seguridad de los datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
 
-[Conoce los términos y condiciones de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/terminos-y-condiciones_299).
+[Conoce los términos y condiciones de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/legal/terms-and-conditions).
 
 ## ¿Qué validamos?
-Con el fin de asegurar, tanto la mejor calidad de integración como experiencia de usuario para el cliente final, desde Mercado Pago necesitamos que se cumplan ciertos requisitos antes de salir a producción. En los siguientes puntos se pueden ver los requerimientos básicos que deben ser cumplidos en relacion a seguridad, experiencia de usuario y envío e integración de la información, entre otras. 
+Con el fin de asegurar tanto la mejor calidad de integración como experiencia de usuario para el cliente final, desde Mercado Pago necesitamos que se cumplan ciertos requisitos antes de salir a producción.
 
 ## Seguridad
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usa las librerías oficiales y cuida la seguridad de los datos
 
-Por un lado, es importante que utilices la librería MercadoPago.js como es provista por Mercado Pago. No puedes modificarla ni alojarla en tus servidores. Y por otro lado, asegúrate de no incluir el atributo `name` al crear un formulario de datos de tarjeta para prevenir que los datos no lleguen a tu servidor cuando el cliente envíe el formulario.
+Por un lado, es importante que utilices la librería MercadoPago.js como es provista por Mercado Pago. No puedes modificarla ni alojarla en tus servidores. Y por otro lado, asegúrate de no incluir el atributo `name` al crear un formulario de tarjeta para cuidar la seguridad de los datos.
 
 Estas medidas permiten cuidar los datos sensibles, cumplir con los estándares de seguridad requeridos y mantenerte siempre actualizado.
 
@@ -26,39 +26,22 @@ Para que seas seguro y que puedas cuidar los datos, es necesario que tengas un c
 ## Envío de información
 
 Para evitar que un pago real se rechace por no cumplir con las validaciones de seguridad, es necesario sumar toda la información posible a la hora de realizar la operación.
+
 Para optimizar la validación de seguridad de los pagos y mejorar las aprobaciones, puedes enviarnos los datos del comprador y del ítem para que los analicemos. Por ejemplo, si nos envías esta información, podemos detectar si ese comprador realizó pagos sospechosos en otro momento y prevenirlo.
-Puedes ver más información en la sección de [Mejora la aprobación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/payment-rejections/).
 
-----[mla]----
-> NOTE
->
-> Nota
->
-> Debido a la manera en la que trabaja MasterCard en Argentina, para ciertas tarjetas necesitamos que nos envíen el issuer_id (id del banco emisor) de la misma para poder procesar los pagos. 
-------------
-
-> WARNING
->
-> Importante
->
-> * Recomendamos la utilización del campo "external_reference" en cada pago. 
-> * El external_reference es un campo libre de 245 caractéres que sirve para la posterior conciliación de los pagos. Se suele ingresar número de pedido, orden, poliza, etc. 
-
-
+Puedes ver más información en la [sección de Mejora la aprobación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/payment-rejections/).
 
 ## Notificaciones y búsqueda de pagos
 
-Para poder aprovechar al máximo los beneficios que se plantean en la integración de Mercado Pago, uno de los puntos claves a destacar es la utilización de notificaciones para la actualización de los pedidos en tiempo real en tu sistema. 
-Ambos tipos de notificaciones, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/). o [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/), son notificaciónes que se envían de un servidor a otro mediante una llamada HTTP POST en relación a tus transacciones.
-Implementando estas notificaciones, podrás enterarte de todas las actualizaciones de tus transacciones en el momento. 
-
+Para poder aprovechar al máximo los beneficios de la integración de Mercado Pago, uno de los puntos claves a destacar es la utilización de notificaciones para la actualización de los pedidos en tiempo real en tu sistema.
+Ambos tipos de notificaciones, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/) o [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/), se envían de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
+Implementando estas notificaciones, podrás enterarte de todas las actualizaciones de tus transacciones en el momento.
 
 ## Experiencia de usuario
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar los correctos mensajes de respuesta
 
-Como se mencionó en la sección de [Manejo de respuestas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta. 
-
+Como se menciona en la [sección de Manejo de respuestas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sé transparente con las promociones y financiación
 
@@ -72,11 +55,9 @@ Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [inclui
 > Debido a la Resolución [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) de la Secretaría de Comercio Argentina, sobre precios transparentes, es necesario que cumplas con [exigencias adicionales](https://www.mercadopago.com.ar/developers/es/guides/localization/considerations-argentina/).
 ------------
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disponibiliza tus términos y condiciones
+## Disponibiliza tus términos y condiciones
 
 Debes disponer de una política de términos y condiciones y aclarar que sos responsable por todos los datos que sean ingresados en tu sitio.
-
-
 
 ---
 ### Próximos pasos
