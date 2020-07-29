@@ -1,4 +1,10 @@
-# Envío de Dinheiro
+---
+  sites_supported:
+      - mla
+  indexable: false
+---
+
+# Envío de dinheiro
 
 No Mercado Pago, provemos os serviços necessários para poder realizar envios de dinheiro de maneira imediata e sem custo, a partir da sua conta do Mercado Pago a outra conta do Mercado Pago.
 
@@ -10,18 +16,17 @@ Para criar uma aplicação é preciso acessar com a sua conta do Mercado Pago o 
 >
 > Considerações
 >
-> O APP ID deve possuir o escopo de "money_transfer", o pagamento deverá ter o 'payment_method_id' = 'account_money' e deve-se adicionar o campo 'operation_type' = 'money_transfer'.
-> 
+> O APP ID deve possuir o escopo de "money_transfer", o pagamento deverá ter o `payment_method_id` = `account_money` e deve-se adicionar o campo `operation_type` = `money_transfer`.<br>
 > Para os pagamentos que cumprem com as condições mencionadas anteriormente a operação terá uma comissão de 0% e o dinheiro será liberado imediatamente após a operação.
 
-## Pagamentos a Fornecedores e Salários
+## Pagamentos a fornecedores e salários
 
 Essa solução permite realizar pagamentos a fornecedores e o pagamento de salários. Nesses casos, é preciso adicionar o campo "concept_id" específico para poder identificar esses tipos de pagamentos:
     
 -   Para pagamentos a fornecedores deve-se enviar o "concept_id" = "supply"
 -   Para pagamentos de salário deve-se enviar o "concept_id" = "payroll"
 
-## Considerações Gerais
+## Considerações gerais
 
 Se no momento da geração do pagamento não se cumprir alguma das condições mencionadas no ponto anterior, será recebida alguma das seguintes mensagens de erro:
 
