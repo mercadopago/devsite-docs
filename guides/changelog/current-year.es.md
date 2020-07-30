@@ -250,7 +250,7 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 >
 > PRODUCT: PRESTASHOP
 
-Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkout de Mercado Pago a través de modal para que tus compradores puedan realizar una compra sin salir de tu sitio.
+Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkout Pro a través de modal para que tus compradores puedan realizar una compra sin salir de tu sitio.
 
 [Ir a documentación de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction/)
 
@@ -272,8 +272,8 @@ Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkou
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: CHECKOUT DE MERCADO PAGO
+> PRODUCT: CHECKOUT PRO
 
-Si tienes campañas de publicidad para tu negocio, es importante que puedas seguirlas y ver si te están ayudando a concretar ventas. Para poder mejorarlas y que sean cada más eficientes, sumamos la posibilidad de asociar un píxel de Facebook y una etiqueta de seguimiento de conversiones de Google Ads a los pagos de tu Checkout de Mercado Pago.
+Si tienes campañas de publicidad para tu negocio, es importante que puedas seguirlas y ver si te están ayudando a concretar ventas. Para poder mejorarlas y que sean cada más eficientes, sumamos la posibilidad de asociar un píxel de Facebook y una etiqueta de seguimiento de conversiones de Google Ads a los pagos de tu Checkout Pro.
 
 [Comienza a medir la conversión de tus anuncios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/).

@@ -64,7 +64,7 @@ El retorno de la llamada va a devolver el parámetro `transaction_details` que c
 
 En base al tipo de checkout e integración que estés realizando, el proceso puede ser diferente.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout de Mercado Pago
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Pro
 
 Es posible remover la opción de boleto a través de la preferencia de pago. Puedes encontrar más detalle en nuestra [documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
 

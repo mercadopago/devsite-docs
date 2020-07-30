@@ -32,7 +32,7 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 ## Configuración básica
 
 * Define la experiencia que tendrán tus clientes:
- * Usa el Checkout de Mercado Pago para soportar pagos con tarjetas, en efectivo y dinero en cuenta. Le brindará seguridad y comodidad al usuario. ¡Y ahora también podrás configurarlo como modal para que se abra en tu tienda!
+ * Usa el Checkout Pro para soportar pagos con tarjetas, en efectivo y dinero en cuenta. Le brindará seguridad y comodidad al usuario. ¡Y ahora también podrás configurarlo como modal para que se abra en tu tienda!
  * Usa el Checkout Personalizado y el Ticket Checkout para tener control sobre otras configuraciones. Activa los dos para ofrecer todos los medios de pago.
 
 > WARNING
@@ -63,7 +63,7 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 >
 > Activar el modo binario puede afectar a la prevención de fraude. Déjalo inactivo para que podamos cuidar tus cobros.
 
-### Checkout de Mercado Pago
+### Checkout Pro
 
 | Configuración                   | Descripción                                                              	                                   |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 > Nota
 >
-> Consulta la [documentación del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 ### Checkout Personalizado
 

@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentación es sobre la versión antigua de Checkout. 
 > 
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Implementa la logística de tu negocio con **Mercado Envíos**.
 
@@ -27,7 +27,7 @@ Implementa la logística de tu negocio con **Mercado Envíos**.
 
 ## Cómo funciona
 
-La siguiente documentación te permitirá ofrecer en el checkout de Mercado Pago una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
+La siguiente documentación te permitirá ofrecer en el Checkout Pro una opción de envío y que el cliente pague el costo del envío junto con el pago del producto.
 
 Te recomendamos integrar la calculadora de costos de envíos en tu checkout.
 
