@@ -753,7 +753,9 @@ De este modo, cuando se apruebe un pago a través de tu Checkout Pro, se asociar
 
 ## Obtén información sobre tu negocio
 
-Nuestros [Partners](https://partners.mercadopago.com/) podrán obtener métricas de negocio. Utiliza `headers` en tu preferencia de pago agregando el código de identificación para el caso que corresponda. No es obligatorio completar los tres campos que se mencionan.
+“Si sos un Partner podrás ser identificado y luego obtener métricas de negocio según corresponda. Utiliza `headers` en tu preferencia de pago agregando el código de identificación que te brindamos para el caso que corresponda. No es obligatorio completar este campo, por lo que si no sos Partner debes dejarlo vacío.”
+
+Para ser un [Partners](https://partners.mercadopago.com/) deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones como desarrollador de Mercado Pago dentro de su programa de partners y cómo obtener tu id, [dejanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform).
 
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
