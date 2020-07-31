@@ -15,11 +15,13 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 
 ![Información básica](/images/prestashop/preferences_es.jpg)
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
-> No olvides ingresar tu `integrator_id` como [Partner](https://partners.mercadopago.com/) certificado de Mercado Pago. Si no lo tienes, puedes [solicitarlo ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
+> El campo de `integrator_id` no es obligatorio a la hora de realizar una integración. Deberán completarlo los Partners de Mercado Pago, por lo que si no sos Partner debes dejarlo vacío.
+
+Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones como desarrollador de Mercado Pago dentro de su programa de partners y cómo obtener tu id, [dejanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform).
 
 <span></span>
 
