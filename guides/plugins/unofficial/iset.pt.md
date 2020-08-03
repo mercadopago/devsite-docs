@@ -13,7 +13,7 @@ Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de
 
 ## Etapas para configurar
 
-Os **passos para começar a receber com Mercado Pago**, são os seguintes:
+Os **passos para começar a receber com Mercado Pago** são os seguintes:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) no Mercado Pago caso ainda não tenha uma.
 2. Ative o Mercado Pago como meio de pagamento dentro da sua loja.
@@ -34,7 +34,7 @@ E pronto! O Mercado Pago já está ativado.
 
 ## Configure as formas de pagamento
 
-Após ativar o Mercado Pago, você tem a opção de oferecer os seguintes modelos de checkout: [Checkout Mercado Pago](#bookmark_checkout_mercado_pago), [Checkout Transparente](#bookmark_checkout_transparente) ou [Ambos os Checkouts](#bookmark_ambos_checkouts).
+Após ativar o Mercado Pago, você tem a opção de oferecer os seguintes modelos de checkout: [Checkout Mercado Pago](#bookmark_checkout_mercado_pago), [Checkout Transparente](#bookmark_checkout_transparente) ou [Ambos os checkouts](#bookmark_ambos_checkouts).
 
 Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
@@ -59,7 +59,7 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 2. Na lista de meios de pagamentos, selecione as "Opções de configuração" do Mercado Pago.
 3. Selecione a opção "Padrão" da seção Modelo de Checkout.
 4. Informe o [e-mail de cadastro na MercadoPago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu).
-5. Complete os campos Client ID e Client Secret que são as [credenciais da sua conta do Mercado Pago]([FAKER][CREDENTIALS][URL_BASIC]).
+5. Complete os campos Client ID e Client Secret que são as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) da sua conta do Mercado Pago.
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
     ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
@@ -85,7 +85,7 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 
 Onde poderá oferecer ao seu cliente a escolha de finalizar o pagamento diretamente em sua loja ou ser redirecionado ao site do Mercado Pago.
 
-Para ativar esse modelo de checkout, siga os passos abaixo:
+Para **ativar os dois checkout**, siga os passos abaixo:
 
 1. Acesse "Formas de pagamento" da seção Módulos do painel administrativo de sua loja.
 2. Na lista de meios de pagamentos, selecione as "Opções de configuração" do Mercado Pago.
