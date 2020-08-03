@@ -300,12 +300,6 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 #### ¡Excelente! Terminaste tu integración.
 _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
-> NOTE
->
-> Nota
->
-> Esta documentación refiere a la nueva versión del Checkout Pro. Para **ver la versión anterior**, ve a la [sección de Checkout Pro antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
-
 ---
 
 ### Próximos pasos

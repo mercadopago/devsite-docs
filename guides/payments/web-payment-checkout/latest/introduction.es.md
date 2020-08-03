@@ -74,12 +74,6 @@ Prevención de fraude               	     |      ✔      |         ✔         
 Pantalla de finalización de pago		     |      ✔      |                     |
 ------------
 
-> NOTE
->
-> Nota
->
-> Esta documentación refiere a la nueva versión del Checkout Pro. Para **ver la versión anterior**, ve a la [sección de Checkout Pro antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
-
 ---
 
 ### Próximos pasos
