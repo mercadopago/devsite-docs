@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlc
   - mlm
+indexable: false
 ---
 
 # Recibir pagos
