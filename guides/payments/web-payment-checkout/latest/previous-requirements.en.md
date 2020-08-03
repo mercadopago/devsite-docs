@@ -96,12 +96,6 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
 
-> NOTE
->
-> Note
->
-> This documentation refers to the new version of the Mercado Pago Checkout. **To view the previous version**, go to the [old Mercado Pago Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
-
  ---
 
 ### Next steps

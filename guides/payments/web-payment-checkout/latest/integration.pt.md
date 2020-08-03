@@ -299,12 +299,6 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 #### Excelente! Você concluiu sua integração.
 _Clique no link dentro do seu site e [teste a integração do seu Checkout Mercado Pago.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
-> NOTE
->
-> Nota
->
-> Esta documentação é referente à nova versão do Checkout Mercado Pago. **Para ver a versão anterior**, confira a [seção de Checkout Mercado Pago antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
-
 ---
 
 ### Próximos passos

@@ -74,13 +74,6 @@ Tela de finalização de pagamento 		     |      ✔      |                     
 
 ------------
 
-> NOTE
->
-> Nota
->
-> Esta documentação é referente à nova versão do Checkout Mercado Pago. **Para ver a versão anterior**, confira a [sessão de Checkout Mercado Pago antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
-
-
 ---
 
 ### Próximos passos

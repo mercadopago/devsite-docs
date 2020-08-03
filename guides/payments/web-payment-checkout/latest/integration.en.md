@@ -300,12 +300,6 @@ Finally, add the following code to show the payment button of your Mercado Pago 
 #### Excellent! You finished your integration.
 _Click on the link within your site and [test the integration of your Mercado Pago Checkout.](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
-> NOTE
->
-> Note
->
-> This documentation refers to the new version of the Mercado Pago Checkout. **To view the previous version**, go to the [old Mercado Pago Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
-
 ---
 
 ### Next steps

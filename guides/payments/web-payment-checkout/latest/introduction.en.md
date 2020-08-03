@@ -77,12 +77,6 @@ Order completed page		         |      ✔      |                     |
 
 ------------
 
-> NOTE
->
-> Note
->
-> This article is about the last version of Mercado Pago Checkout. **For the previous version**, please consult the [old Mercado Pago Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
-
 ---
 
 ### Next steps
