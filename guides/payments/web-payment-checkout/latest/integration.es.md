@@ -151,8 +151,8 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor reemplazará el string "$$init_point$$" en tu HTML
-  global.init_point = response.body.init_point;
+// Este valor reemplazará el string "<%= global.id %>" en tu HTML
+  global.id = response.body.id;
 }).catch(function(error){
   console.log(error);
 });
@@ -257,10 +257,10 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 </form>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
+<form method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
+   data-preference-id='<%= global.id %>'>
   </script>
 </form>
 ```

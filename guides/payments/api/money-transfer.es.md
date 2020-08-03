@@ -1,4 +1,10 @@
-# Envío de Dinero
+---
+  sites_supported:
+      - mla
+  indexable: false
+---
+
+# Envío de dinero
 
 Desde Mercado Pago, proveemos los servicios necesarios para poder realizar envíos de dinero de manera inmediata y sin costo desde tu cuenta de Mercado Pago a otra cuenta de Mercado Pago.
 
@@ -6,22 +12,22 @@ Desde Mercado Pago, proveemos los servicios necesarios para poder realizar enví
 
 Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: [https://applications.mercadopago.com/](https://applications.mercadopago.com/). Para poder operar con la API de envío de dinero  la aplicación deberá ser habilitada para tal fin. Estos permisos son asignados desde Mercado Pago, por lo que deberás enviarle a tu asesor comercial el APP ID obtenido para poder realizar la configuración correspondiente.
 
-> WARNING 
+> WARNING
 >
 > Consideraciones
 >
-> Al APP ID se le deberá asignar el scope de "money_transfer", el pago deberá ser con el 'payment_method_id' =  'account_money' y se deberá sumar el campo 'operation_type' = 'money_transfer'.
-> 
+> Al APP ID se le deberá asignar el scope de "money_transfer", el pago deberá ser con el `payment_method_id` =  `account_money` y se deberá sumar el campo `operation_type` = `money_transfer`.<br>
 > Para los pagos que cumplen con las condiciones mencionadas anteriormente la operación tendrá una comisión de 0% y el dinero se liberará inmediatamente al momento de crear los movimientos.
 
-## Pago a Proveedores y Sueldos
+
+## Pago a proveedores y sueldos
 
 Esta solución permite hacer pago a proveedores y el pago de sueldos. Para estos casos, hay que sumar el campo "concept_id" específico para poder identificar estos tipos de pagos:
     
 -   Para pago a proveedores deberán enviar el "concept_id" = "supply"
 -   Para pago de sueldos deberán enviar el "concept_id" = "payroll"
 
-## Consideraciones Generales
+## Consideraciones generales
 
 Si al momento de la generación del pago no se cumple con algunas de las condiciones mencionadas en el punto anterior, recibirás alguno de los siguientes mensajes de error:
 
