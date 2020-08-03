@@ -36,7 +36,7 @@ E pronto! O Mercado Pago já está ativado.
 
 Após ativar o Mercado Pago, você tem a opção de oferecer os seguintes modelos de checkout: [Checkout Mercado Pago](#bookmark_checkout_mercado_pago), [Checkout Transparente](#bookmark_checkout_transparente) ou [Ambos os Checkouts](#bookmark_ambos_checkouts).
 
-Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
+Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
 ### Configure os tipos de pagamentos
 
@@ -97,7 +97,7 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
     ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
 <p>&nbsp;</p>
 
-> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/)
+> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/).
 
 ## Configuração de parcelamento
 
@@ -107,7 +107,7 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 >
 > Importante
 >
-> Para que o parcelamento funcione corretamente, é necessário configurá-lo também no Mercado Pago, acessando a configuração de [parcelamento de sua conta](#bookmark_configurando_o_parcelamento_em_sua_conta_mercado_pago).
+> Para que o parcelamento funcione corretamente, é necessário configurá-lo também no Mercado Pago, acessando a configuração de [parcelamento de sua conta](#bookmark_configurando_o_parcelamento_em_sua_conta_do_mercado_pago).
 
 1. Acesse "Formas de pagamento" da seção Módulos do painel administrativo de sua loja.
 2. Na lista de meios de pagamentos, selecione as "Opções de configuração" do Mercado Pago.
@@ -129,7 +129,7 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 
 ## Configurando o parcelamento em sua conta do Mercado Pago
 
-1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio".
+1. Acesse a seção [Seu negocio](https://www.mercadopago.com.br/business/) na sua conta Mercado Pago.
 2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
