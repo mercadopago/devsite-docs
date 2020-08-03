@@ -130,7 +130,7 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 ## Configurando o parcelamento em sua conta do Mercado Pago
 
 1. Acesse a seção [Seu negocio](https://www.mercadopago.com.br/business/) na sua conta Mercado Pago.
-2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
+2. Procure por "Oferecer parcelamento sem juros" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
     ![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
