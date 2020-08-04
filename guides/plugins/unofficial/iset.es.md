@@ -130,7 +130,7 @@ Puedes establecer la cantidad máxima o mínima de cuotas y la aplicación de au
 
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
-1. Ingresa a tu cuenta de Mercado Pago y ve a “Tu negocio”.
+1. Ingresa a la sección [Tu negocio](https://www.mercadopago[FAKER][URL][DOMAIN]/business/) en tu cuenta de Mercado Pago.
 1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
 <p>&nbsp;</p>
