@@ -8,9 +8,9 @@ sites_supported:
   - mlc
 ---
 
-# What's Mercado Pago Checkout?
+# What's Checkout Pro?
 
-Mercado Pago Checkout is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
+Checkout Pro is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
 
 ----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
@@ -19,7 +19,7 @@ Mercado Pago Checkout is an integration that allows you to **charge your custome
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
-## Mercado Pago Checkout offers:
+## Checkout Pro offers:
 
 ----[mla]----
 * The most popular <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
@@ -47,10 +47,10 @@ Mercado Pago Checkout is an integration that allows you to **charge your custome
 * **Split Payments.** Customers can pay with two cards. This is a very useful feature in cases like high amount transactions.
 ------------
 
-## Mercado Pago Checkout vs. other Mercado Pago tools
+## Checkout Pro vs. other Mercado Pago tools
 
 ----[mla, mlb]----
-                                   | Mercado Pago Checkout|Web Tokenize Checkout|      API
+                                   | Checkout Pro|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |
@@ -64,7 +64,7 @@ Split payments		           |      ✔      |                     |
 
 ------------
 ----[mlm, mlu, mco, mlc]----
-                                   | Mercado Pago Checkout|Web Tokenize Checkout|      API
+                                   | Checkout Pro|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |

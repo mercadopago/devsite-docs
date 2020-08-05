@@ -66,7 +66,7 @@ The callback is going to return the parameter `transaction_details` containing t
 
 Based on the type of checkout and integration used, the process may be different.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mercado Pago Checkout
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Pro
 
 You can remove the ticket option through the payment preference. For more details please refer to our [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
 

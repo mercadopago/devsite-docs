@@ -250,7 +250,7 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 > PRODUCT: PRESTASHOP
 
 
-We have released a new version of Prestashop 1.6 & 1.7. Our Mercado Pago Checkout now works through a modal: your customers can complete their purchase without leaving the site.
+We have released a new version of Prestashop 1.6 & 1.7. Our Checkout Pro now works through a modal: your customers can complete their purchase without leaving the site.
 
 [Go to Prestashop 1.6 & 1.7 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction/)
 
@@ -274,6 +274,6 @@ We have released a new version of Prestashop 1.6 & 1.7. Our Mercado Pago Checkou
 >
 > PRODUCT: MERCADO PAGO CHECKOUT
 
-If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Mercado Pago Checkout.
+If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Checkout Pro.
 
 [Start now measuring the conversion of your ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/).

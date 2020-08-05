@@ -64,7 +64,7 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 >
 > A ativação do modo binário pode afetar a prevenção de fraude. Deixe-o inativo para que possamos cuidar dos pagamentos que você recebe.
 
-### Checkout Mercado Pago
+### Checkout Pro
 
 | Configuração               | Descrição                                                              	                                   |
 |----------------------------|----------------------------------------------------------------------------------------------------------------|

@@ -300,4 +300,4 @@ For instance, if a payment is rejected due to lack of funds, you can recommend t
 >
 > Note
 >
-> If you’re using Mercado Pago Checkout, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
+> If you’re using Checkout Pro, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).

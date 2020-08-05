@@ -9,15 +9,15 @@ sites_supported:
 indexable: false
 ---
 
-# Mercado Pago Checkout
+# Checkout Pro
 
 > WARNING
 >
 > Note
 >
-> This documentation refers to the new version of the Mercado Pago Checkout.
+> This documentation refers to the new version of the Checkout Pro.
 >
-> Remember there is only active support and new functionalities for the [new version of the Mercado Pago Checkout.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Checkout Pro.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
 Mercado Pago provides you with the necessary tools so that you can receive payments using our web form in a simple, fast and safe way.
 

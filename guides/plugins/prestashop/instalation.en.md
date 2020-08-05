@@ -69,11 +69,11 @@ These are the technical improvements you will find in our latest version:
 - In this version you must paste the public_key of sandbox and production to be able to sell. Before updating the plugin, activate the maintenance mode and do some tests to check that nothing breaks.
 
 **Fixes:**
-- We fixed the mobile layout of the Mercado Pago Checkout.
+- We fixed the mobile layout of the Checkout Pro.
 - We fixed the creation of the order, allowing the function to recover the value of the customer_secure_key.
 
 **Improvements:** 
-- Now the Mercado Pago Checkout works through a modal: your customers can complete the purchase without leaving the site.
+- Now the Checkout Pro works through a modal: your customers can complete the purchase without leaving the site.
 - We renew the plugin settings screen.
 - We renew the plugin code structure.
 - We merged the plugin versions for PS1.6 and PS1.7.

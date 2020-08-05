@@ -22,7 +22,7 @@ Contamos con la certificación [PCI DSS](https://www.pcisecuritystandards.org/),
 
 ## ¿Cómo funciona?
 
-![Flujo de creación de preferencia Mercado Pago Checkout Pro](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
+![Flujo de creación de preferencia de Checkout Pro](https://secure.mlstatic.com/developers/site/cloud/assets/Uploads/Basic-Checkout.png)
 
 Integrar el checkout es muy fácil:
 

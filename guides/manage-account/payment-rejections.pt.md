@@ -300,4 +300,4 @@ Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá reco
 >
 > Nota
 >
-> Se você utilizar o Checkout Mercado Pago, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).
+> Se você utilizar o Checkout Pro, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).
