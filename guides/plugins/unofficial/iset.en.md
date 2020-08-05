@@ -150,8 +150,8 @@ To **set the information for the orders on your store**, follow these steps:
     | --- | --- |
     | Information to the user about the type of payment | Instructions when making the payment. |
     | Information to the user about the type of payment | Instructions shown after payment is complete. |
-    | New orders status | Select a status for new orders.  
-    | Approved orders status | Select a status for approved orders.
+    | New orders status | Select a status for new orders. |
+    | Approved orders status | Select a status for approved orders. |
     | Cancelled orders status | Select a status for cancelled orders. |
     | Use discount campaign | Informs you if you have any discount coupons available from your Mercado Pago account. |
 
