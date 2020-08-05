@@ -4,22 +4,19 @@ indexable: false
 sites_supported:
   - mla
   - mlm
+  - mlb
 ---
 
 # Ofrece Mercado Envíos
-----[mla, mlm]----
 Integra Mercado Envíos para recibir el pago de tus productos y gestionar su envío al mismo tiempo. Solo tienes que agregar los datos necesarios en tu preferencia y configurar los datos de tu negocio.
-------------
 
 ## Requisito previo
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activa Mercado Envíos
 
-----[mla, mlm]----
-Desde la cuenta del vendedor, ingresa a la sección de <a href="https://www.mercadopago.com.ar/business#shipping" target="_blank">Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
+Desde la cuenta del vendedor, ingresa a la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping" target="_blank">Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
 
 Usaremos el domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
-------------
 
 ## Agrega envíos en tu preferencia
 
@@ -254,9 +251,7 @@ preference.Shipments = shipments;
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulador de costos de envíos
-----[mla, mlm]----
 Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `alto`, `ancho`, `largo`, `peso` de tu paquete.
------------- 
 
 > https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_alto_x_ancho_x_largo_,_peso
 
@@ -337,22 +332,12 @@ preference.Shipments = shipments;
 
 Una vez que se reciba una venta, solo hay que <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar el paquete y enviarlo</a>.
 
-----[mla]----
-
 > NOTE
 >
 > Gestión de etiquetas
 >
-> Cuando se efectúe una venta, te va a llegar un e-mail con un botón para imprimir la etiqueta que tendrás que pegar en el paquete. También podrás ver los <a href="https://www.mercadopago.com.ar/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagos pendientes de impresión</a> desde la cuenta de Mercado Pago que recibió la venta.
-------------
-----[mlm]----
+> Cuando se efectúe una venta, te va a llegar un e-mail con un botón para imprimir la etiqueta que tendrás que pegar en el paquete. También podrás ver los <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagos pendientes de impresión</a> desde la cuenta de Mercado Pago que recibió la venta.
 
-> NOTE
->
-> Gestión de etiquetas
->
-> Cuando se efectúe una venta, te va a llegar un e-mail con un botón para imprimir la etiqueta que tendrás que pegar en el paquete. También podrás ver los <a href="https://www.mercadopago.com.mx/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagos pendientes de impresión</a> desde la cuenta de Mercado Pago que recibió la venta.
-------------
 
 ## Ejemplo de una preferencia completa
 

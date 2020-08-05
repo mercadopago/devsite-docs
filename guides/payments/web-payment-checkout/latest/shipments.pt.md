@@ -2,6 +2,8 @@
 indexable: false
 
 sites_supported:
+  - mla
+  - mlm
   - mlb
 ---
 
@@ -14,7 +16,7 @@ Integre o Mercado Envios para receber o pagamento dos seus produtos e gerenciar 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ative o Mercado Envios
 
-Pela conta do vendedor, entre na seção do <a href="https://www.mercadopago.com.br/business#shipping" target="_blank">Seu negócio > Configurações</a> e ative a opção do Mercado Envios.
+Pela conta do vendedor, entre na seção do <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping" target="_blank">Seu negócio > Configurações</a> e ative a opção do Mercado Envios.
 
 Usaremos o endereço cadastrado para mostrar os pontos de envio próximos para onde o vendedor poderá levar os pacotes e calcular os custos de envio.
 
@@ -313,7 +315,7 @@ Quando receber uma venda, basta <a href="https://www.mercadopago[FAKER][URL][DOM
 >
 > Gestão de etiquetas
 >
-> Quando uma venda é feita, você receberá um e-mail com um botão para imprimir a etiqueta que será anexada no pacote. Você também pode ver os <a href="https://www.mercadopago.com.br/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagamentos pendentes de impressão</a> pela conta Mercado Pago que recebeu a venda..
+> Quando uma venda é feita, você receberá um e-mail com um botão para imprimir a etiqueta que será anexada no pacote. Você também pode ver os <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagamentos pendentes de impressão</a> pela conta Mercado Pago que recebeu a venda..
 
 
 ## Exemplo de uma preferência completa
