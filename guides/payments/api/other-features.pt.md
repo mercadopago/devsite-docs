@@ -165,6 +165,16 @@ payment.update();
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
+
+let paymentId = 123;
+
+mercadopago.payment.capture(paymentId, mercadopago, (error, response) => {
+    if (error){
+        console.log(error);
+    }else{
+        console.log(response)
+    }
+});
 ```
 ```ruby
 require 'mercadopago'
@@ -238,6 +248,16 @@ payment.update();
 ```node
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
+
+let captureInfo = {id: 123, transaction_amount: 5}
+
+mercadopago.payment.capturePartial(captureInfo, mercadopago, (error, response) => {
+    if (error){
+        console.log(error);
+    }else{
+        console.log(response)
+    }
+});
 ```
 ```ruby
 require 'mercadopago'
@@ -310,7 +330,15 @@ payment.update();
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
+let paymentToBeCanceled = 123;
 
+mercadopago.payment.cancel(paymentToBeCanceled, mercadopago, (error, response) => {
+    if (error){
+        console.log(error);
+    }else{
+        console.log(response)
+    }
+});
 ```
 ```ruby
 require 'mercadopago'
