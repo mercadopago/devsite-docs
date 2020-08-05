@@ -288,11 +288,11 @@ preference.Items.Add(
 ```
 ]]]
 
-Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments/post/).
+Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post/).
 
 ### Dados da indústria
 
-Você também pode verificar quais dados do setor enviar para melhorar sua aprovação [Aquí](https://www.mercadopago.com.ar/developers/es/guides/manage-account/industria-additionalinfo). 
+Você também pode enviar dados sobre seu industria para melhorar sua aprovação.[Ir para dados do industria](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/industria-additionalinfo).
 
 ### Auxilie os seus clientes com seus pagamentos recusados
 
@@ -304,4 +304,4 @@ Por exemplo, se um pagamento for recusado por fundos insuficientes, poderá reco
 >
 > Nota
 >
-> Se você utilizar o Checkout Mercado Pago, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/handling-responses).
+> Se você utilizar o Checkout Mercado Pago, não se preocupe, já tem as mensagens configuradas em cada caso. E se utilizar outro dos nossos produtos, recomendamos para você mostrar uma [mensagem específica por cada motivo de recusa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses).

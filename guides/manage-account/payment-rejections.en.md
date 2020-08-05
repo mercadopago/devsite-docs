@@ -288,11 +288,11 @@ preference.Items.Add(
 ```
 ]]]
 
-Learn all about these attributes in our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments/post/).
+Learn all about these attributes in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/).
 
 ### Industry Data
 
-You can also learn what industry data you can send to improve your approval [Here](https://www.mercadopago.com.ar/developers/es/guides/manage-account/industria-additionalinfo).
+You can also submit data about your industry to improve your approval.[Go to industry data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/industria-additionalinfo).
 
 ### Help your clients with their rejected payments
 
@@ -304,4 +304,4 @@ For instance, if a payment is rejected due to lack of funds, you can recommend t
 >
 > Note
 >
-> If you’re using Mercado Pago Checkout, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses).
+> If you’re using Mercado Pago Checkout, don’t worry! All your messages are already set up. If you’re using another product, we recommend showing [a specific message for each rejection reason](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/handling-responses).
