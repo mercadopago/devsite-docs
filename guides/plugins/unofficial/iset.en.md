@@ -99,7 +99,6 @@ To **activate both checkouts**, follow these steps:
 
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
 
-
 ## Installments settings
 
 You can set the maximum or minimum amount of installments and apply surcharges or discounts for the installments on your store.
@@ -119,8 +118,8 @@ You can set the maximum or minimum amount of installments and apply surcharges o
     | --- | --- |
     | Sale in installments up to | Select the maximum number of installments you wish to offer |
     | Minimum value of installment R$ | Indicate the minimum value of installments that you wish to offer in Reales |
-    | Only orders over R$ | Set if you want to use a minimum value range to accept orders on your store.
-    | Discounts for payments in cash (%) | Enter the discount value for cash payments that you want. 
+    | Only orders over R$ | Set if you want to use a minimum value range to accept orders on your store. |
+    | Discounts for payments in cash (%) | Enter the discount value for cash payments that you want. |
     | Surcharge/Discount | Apply a surcharge or discount on the order. | 
 
 1. Click on “Close” and then on “Save changes”.
@@ -141,7 +140,7 @@ And that’s it! You are now offering interest-free installments, with the finan
 
 ## Information for the orders on your store iSET
 
-To **set the information for the orders on your store **, follow these steps:
+To **set the information for the orders on your store**, follow these steps:
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store.
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
@@ -154,7 +153,7 @@ To **set the information for the orders on your store **, follow these steps:
     | New orders status | Select a status for new orders.  
     | Approved orders status | Select a status for approved orders.
     | Cancelled orders status | Select a status for cancelled orders. |
-    | Use discount campaign | Informs you if you have any discount coupons available from your Mercado Pago account.
+    | Use discount campaign | Informs you if you have any discount coupons available from your Mercado Pago account. |
 
 1. Click on “Close” and then on “Save changes”. 
 <p>&nbsp;</p>
