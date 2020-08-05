@@ -141,7 +141,7 @@ And that’s it! You are now offering interest-free installments, with the finan
 
 ## Information for the orders on your store iSET
 
-To **set the information for the orders on your store **, follow these steps:
+To **set the information for the orders on your store**, follow these steps:
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store.
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
