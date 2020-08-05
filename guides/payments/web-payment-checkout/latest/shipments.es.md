@@ -3,25 +3,32 @@ indexable: false
 
 sites_supported:
   - mla
+  - mlm
 ---
 
 # Ofrece Mercado Envíos
-
+----[mla, mlm]----
 Integra Mercado Envíos para recibir el pago de tus productos y gestionar su envío al mismo tiempo. Solo tienes que agregar los datos necesarios en tu preferencia y configurar los datos de tu negocio.
-
+------------
 
 ## Requisito previo
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activa Mercado Envíos
 
+----[mla, mlm]----
 Desde la cuenta del vendedor, ingresa a la sección de <a href="https://www.mercadopago.com.ar/business#shipping" target="_blank">Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
 
-Usaremos ese domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
-
+Usaremos el domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
+------------
 
 ## Agrega envíos en tu preferencia
 
+----[mla]----
 Configura en tu preferencia, el peso y las dimensiones de los paquetes tal como ves en el siguiente código. 
+------------
+----[mlm]----
+Configura en tu preferencia, el peso y las dimensiones de los paquetes tal como se ve en el siguiente código. 
+------------
 
 [[[
 ```php
@@ -131,27 +138,48 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
  preference.Shipments = shipments
 ```
 ]]]
-
+----[mla]----
 > WARNING
 >
 > Importante
 >
 > Las dimensiones que indiques deben coincidir con las del paquete para que el carrier no te rechace el envío. Si no lo rechaza y las dimensiones son incorrectas, descontaremos esa diferencia del monto total de la cuenta del vendedor.
-
-
+------------
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> Las dimensiones que indiques deben coincidir con las del paquete para que el carrier no te rechace el envío. Si no lo rechaza y las dimensiones son incorrectas, descontaremos esa diferencia del monto total de la cuenta del vendedor.
+------------
 
 ## Puedes añadir otros tipos de envío
 
+----[mla]----
 Por defecto, vas a tener configurado el envío a cargo del comprador. Si quieres, puedes ofrecer envío gratis y/o retiro en domicilio.
+------------
+----[mlm]----
+Por defecto, tendrás configurado el envío a cargo del comprador. Si quieres, podrás ofrecer envío gratis y/o recolección en domicilio.
+------------
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Envío gratis
 
-El costo de envío será debitado de la cuenta del vendedor cuando reciba un pago.
+----[mla]----
+El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envíos modificando el ID. Consultá los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envíos modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> envíos disponibles para saber cuáles agregar. 
 
-Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envío normal a domicilio de Andreani.  
+Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envío normal a domicilio de Adreani. 
+------------
+----[mlm]----
 
+El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
+
+Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+
+Por ejemplo, en el siguiente código se encuentra sumado el `ID 509247` que refiere a un envío estándar a domicilio y el `ID 509245` para envío prioritario a sucursal de correo. 
+
+------------
 
 [[[
 ```php
@@ -226,11 +254,11 @@ preference.Shipments = shipments;
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulador de costos de envíos
-
-Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores de `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `altoxanchoxlargo,peso` de tu paquete.
+----[mla, mlm]----
+Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `alto`, `ancho`, `largo`, `peso` de tu paquete.
+------------ 
 
 > https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_alto_x_ancho_x_largo_,_peso
-
 
 [[[
 ```curl
@@ -242,7 +270,13 @@ curl --location --request GET 'http://api.mercadolibre.com/users/179504451/shipp
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Retiro en domicilio
 
+----[mla]----
 También puedes ofrecer la posibilidad de retirar el producto por el domicilio que configuraste, indicándole al comprador cuándo y dónde retirarlo. 
+------------
+----[mlm]----
+También puedes ofrecer la posibilidad de recoger el producto en el domicilio que configuraste, indicándole al comprador cuándo y dónde retirarlo. 
+------------
+
 
 [[[
 ```php
@@ -303,14 +337,22 @@ preference.Shipments = shipments;
 
 Una vez que se reciba una venta, solo hay que <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar el paquete y enviarlo</a>.
 
+----[mla]----
 
 > NOTE
 >
 > Gestión de etiquetas
 >
 > Cuando se efectúe una venta, te va a llegar un e-mail con un botón para imprimir la etiqueta que tendrás que pegar en el paquete. También podrás ver los <a href="https://www.mercadopago.com.ar/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagos pendientes de impresión</a> desde la cuenta de Mercado Pago que recibió la venta.
+------------
+----[mlm]----
 
-
+> NOTE
+>
+> Gestión de etiquetas
+>
+> Cuando se efectúe una venta, te va a llegar un e-mail con un botón para imprimir la etiqueta que tendrás que pegar en el paquete. También podrás ver los <a href="https://www.mercadopago.com.mx/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagos pendientes de impresión</a> desde la cuenta de Mercado Pago que recibió la venta.
+------------
 
 ## Ejemplo de una preferencia completa
 
@@ -514,3 +556,4 @@ preference.Save();
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/test-integration/)
+
