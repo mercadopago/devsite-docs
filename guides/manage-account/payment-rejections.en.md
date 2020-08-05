@@ -290,6 +290,10 @@ preference.Items.Add(
 
 Learn all about these attributes in our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments/post/).
 
+### Industry Data
+
+You can also learn what industry data you can send to improve your approval [Here](https://www.mercadopago.com.ar/developers/es/guides/manage-account/industria-additionalinfo).
+
 ### Help your clients with their rejected payments
 
 It’s important to explain to your clients the reason for a payment rejection and how to fix it. Your customers will have all the information they need to be able to pay you without problems.
