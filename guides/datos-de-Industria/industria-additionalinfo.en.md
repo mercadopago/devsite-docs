@@ -1,4 +1,4 @@
-# Datos sobre industrias
+# Industry data  
 
 Check what fields you can submit according to your industry to improve your approval.
 
