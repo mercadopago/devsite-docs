@@ -124,7 +124,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -252,7 +252,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -374,7 +374,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -506,7 +506,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -742,7 +742,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -872,7 +872,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         }
@@ -960,7 +960,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
                    "number": 12345678
               },
               "route": {
-            	 "departure": "[FAKER][ADDRESS][CITY_NAME]",
+            	 "departure": "[FAKER][ADDRESS][CITY]",
             	 "destination": "Londres",
             	 "departure_date_time": "2022-03-12T12:58:41.425-04:00",
             	 "arrival_date_time": "2022-03-14T12:58:41.425-04:00",
@@ -1360,7 +1360,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
             "floor": "12",
@@ -1490,7 +1490,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "receiver_address": {
             "zip_code": "[FAKER][ADDRESS][ZIP]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-            "city_name": "[FAKER][ADDRESS][CITY_NAME]",
+            "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
             "floor": "12",
