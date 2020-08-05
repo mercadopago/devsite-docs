@@ -292,7 +292,7 @@ Puedes obtener más información sobre cada atributo en las [Referencias de API]
 
 ### Datos de industria
 
-También puedes enviar los datos sobre tu industria para mejorar tu aprobación.[Ir a datos sobre industrias.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/industria-additionalinfo).
+También puedes enviar los datos sobre tu industria para mejorar tu aprobación.[Ir a datos sobre industrias.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/datos-de-industria/industria-additionalinfo).
 
 ### Ayuda a tus clientes con sus pagos rechazados
 
