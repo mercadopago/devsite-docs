@@ -4,6 +4,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Agosto 2020
+
+### 7 de agosto
+
+> CHANGELOG
+>
+> Solicite as credenciais necessárias para integrar
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: CREDENCIAIS
+
+Vai integrar Mercado Pago para outra pessoa? Agora você pode solicitar acesso a suas credenciais de forma rápida e segura.
+
+[Saiba mais sobre como solicitar credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/)
+
+---
+
 ## Julho 2020
 
 ### 8 de julho
