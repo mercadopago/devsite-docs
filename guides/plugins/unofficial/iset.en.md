@@ -167,4 +167,4 @@ To **set the information for the orders on your store**, follow these steps:
 > Currently, it is not possible to use discount campaigns with Mercado Pago.
 
 <!-- -->
-> For more information, [visit iSET official website](https://www.iset.com.br/).
+> For more information, visit [iSET official website](https://www.iset.com.br/).
