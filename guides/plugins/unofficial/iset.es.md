@@ -1,146 +1,171 @@
-# ISET
+---
+ sites_supported:
+  - mlb
+---
 
-## ¿Qué es ISET?
+# iSET
 
-[ISET](https://www.iset.com.br/) es una plataforma de ecommerce que disponibiliza una integración con Mercado Pago como medio de pago.
+## ¿Qué es iSET?
 
-## ¿Cómo puedo operar con Mercado Pago en ISET?
 
-Adaltech permite operar con Mercado Pago en las siguientes modalidades:
+iSET es una **plataforma virtual que te permite recibir pagos con Mercado Pago**.
+Puedes ofrecer a tus clientes la posibilidad de pagar con tarjeta de crédito o boleto y [vender directo en tu sitio](#bookmark_checkout_transparente), [cobrar por el sitio de Mercado Pago](#bookmark_checkout_mercado_pago) o por [ambos checkouts](#bookmark_ambos_checkouts).
 
-### API
+## Pasos para configurar
 
-Reciba pagos en su tienda a través de la tarjeta de crédito en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma ISET.
+Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
-### Checkout de Mercado Pago
+1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.
+1. Activa a Mercado Pago como medio de pago dentro de tu tienda.
+1. Configura las formas de pago.
 
-Reciba pagos en su tienda utilizando el checkout del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
+## Activa Mercado Pago en tu tienda
 
-## Cuenta de Mercado Pago
+Para **activar tu cuenta de Mercado Pago en iSET**, sigue estos pasos:
 
-Antes de comenzar la configuración, debe tener una cuenta válida de **Mercado Pago**, si no la tiene, puede registrarse accediendo al [formulario de registro](https://www.mercadopago.com.ar/registration-mp?mode=mp).
+1. Accede a las “Formas de pago” en la sección de Módulos del panel de administración de tu tienda. 
+1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
+1. En el campo Status, selecciona la opción “Activo”.
+1. Haz clic en “Cerrar” y después en “Guardar cambios”.
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+<p>&nbsp;</p>
 
-Si desea obtener más información sobre **Mercado Pago**, visite nuestra [página principal](https://www.mercadopago.com.ar/).
+¡Y listo! Mercado Pago ya se encuentra instalado en tu tienda.
 
-## ¿Cómo habilitar Mercado Pago en la plataforma?
+## Configura las formas de pago
 
-1. Acceda al administrador de su tienda en la plataforma.
+Luego de activar Mercado Pago, tienes la opción de ofrecer los siguientes formas de pago: [Checkout Mercado Pago](#bookmark_checkout_mercado_pago), [Checkout Transparente](#bookmark_checkout_transparente) o [ambos checkouts](#bookmark_ambos_checkouts).
 
-    ![Iset Login Page](/images/iset-img1.png)
+También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) y configurar las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de tus ventas online cuando quieras.
 
-2. En el menú lateral en el item **Módulos**, seleccione la opción **Formas de Pagamento**
+### Configura los tipos de pago
 
-    ![Configuring Payment Modes - Iset](/images/iset-img2.png)
+1. Ingresa en “Formas de pago” en la sección de Módulos panel de administración de tu tienda. 
+1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
+1. Selecciona los tipos de pagos que quieras ofrecer: “Boleto bancario” y/o “Tarjeta de crédito”.
+1. Completa en "Breve descripción/Nombre de la tienda" el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte (máximo de 13 caracteres).
+1. Haz clic en “Cerrar” y después en “Guardar cambios”.
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
+<p>&nbsp;</p>
 
-3. Se cargará una lista con todos los medios de pago disponibles
+### Checkout Mercado Pago
 
-    ![Payment method page - Iset](/images/iset-img3.png)
+**El comprador será redireccionado a Mercado Pago** para realizar el pago y terminar la compra.
 
-4. Haga clic sobre el ícono de configuraciones
+Para activar este modelo, sigue estos pasos:
 
-    ![Mercado Pago Tool Icon - Iset](/images/iset-img13.png)
+1. Ingresa en “Formas de pago” en la sección de Módulos del panel de administración de tu tienda. 
+1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
+1. En la sección Modelo de checkout, elige la opción “Patrón”.
+1. Agrega el [e-mail de tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) en “E-mail de registro en Mercado Pago”.
+1. Completa los campos Client ID y Client Secret con las [credenciales]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. Haz clic en “Cerrar” y después en “Guardar cambios”.
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
+<p>&nbsp;</p>
 
-5. Se cargará la página de configuración de Mercado Pago
+### Checkout Transparente
 
-    ![Mercado Pago Payment Methods - Iset](/images/iset-img4.png)
+Permite que el **cliente finalice la compra en tu tienda** sin ser redireccionado para otro sitio.
 
-A continuación se detallan las configuraciones disponibles en la plataforma.
+Para activar este modelo, sigue estos pasos:
 
-### Activando medios de pago
+1. Ingresa en “Formas de pago” en la sección de Módulos del panel de administración de tu tienda. 
+1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
+1. En la sección Modelo de checkout, elige la opción “Transparente”.
+1. Completa el [e-mail de tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) en “E-mail de registro en Mercado Pago”.
+1. Completa en los campos Client ID, Client Secret y Public Key, las [credenciales]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. Haz clic en “Cerrar” y después en “Guardar cambios”.
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
+<p>&nbsp;</p>
 
-Para habilitar el método de pago, debe seleccionar una opción del campo **STATUS**:
+### Ambos checkouts
 
-     * Activo: _ Medios de pago habilitados para escritorio y dispositivos móviles_
-     * Solo computadora habilitada: _ pago solo de escritorio habilitado_
-     * Solo móvil habilitado: _Método de pago habilitado solo móvil_
+Puedes ofrecer a tus clientes la opción de finalizar el pago directamente en tu tienda o ser redirigidos al sitio web de Mercado Pago.
 
-Seleccione la opción de activos que mejor se adapte a su negocio, le recomendamos que esté habilitada tanto para computadoras de escritorio como para dispositivos móviles, de modo que el mercado de pago como método de pago estará disponible para sus clientes desde la computadora y el dispositivo móvil.
+Para **activar los dos checkouts**, sigue estos pasos:
 
-![Device integration configuration](/images/iset-img5.png)
+1. Ingresa en “Formas de pago” en la sección de Módulos del panel de administración de tu tienda. 
+1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
+1. En la sección Modelo de checkout elige la opción “Ambos”.
+1. Agrega el [e-mail de tu cuenta de Mercado Pago](https://www.mercadopago.com.br/profile#from-section=menu) en “E-mail de registro en Mercado Pago”.
+1. Completa los campos “Cliend ID, Clien Secret y Public Key” con las [credenciales de tu cuenta de Mercado Pago]([FAKER][CREDENTIALS][URL]).
+1. Haz clic en “Cerrar” y después en “Guardar cambios”.
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
+<p>&nbsp;</p>
 
-### Seleccionar métodos de pago
-
-En ISET, tiene la flexibilidad de seleccionar qué métodos de pago desea habilitar en su proceso de pago:
-
-     * Recibo bancario
-     * Tarjeta de crédito: VISA, MASTER, AMERICAN EXPRESS, DINNERS, ELO, HIPERCARD y Mercado Libre
-
-![Ticket and credit card setup - Iset](/images/iset-img6.png)
-
-### Elegir el tipo de Checkout
-
-Para elegir un pago transparente, seleccione la opción a través de **Plantilla de pago**.
-
-     * Predeterminado: _checkout redirect_
-     * Transparente: _checkout transparent_
-     * Ambos: _habilita ambos modelos de pago, redirigir y transparente_
-
-![Checkout button template - Iset](/images/iset-img7.png)
-
-### Configuración de credenciales de Mercado Pago
-
-Para acceder a las credenciales, simplemente vaya al [enlace]([FAKER][CREDENTIALS][URL]), para obtener los datos de public_key utilice la pestaña *checkout transparente* y para obtener client_id y client_secret usa la pestaña *checkout básico*:
-
-![Configuring the client Id and client secret - Iset](/images/iset-img14.png)
-
-### Configuraciones avanzadas
-
-#### Estados de pedidos personalizados
-
-Configuración que define estados personalizados para pedidos desde el estado de pago:
-
-![Order Status Setup - Iset](/images/iset-img8.png)
-
-#### Personalización de plazos
-
-Configuración que define la cantidad máxima de cuotas, valores mínimos y aplicación de descuentos en cuotas.
-
-![Setting the number of Installments - Iset](/images/iset-img10.png)
-
-Atención: esta configuración anulará la configuración obtenida por la API de Mercado Pago, si tiene acuerdos de Mercado Pago acordados de manera diferente, la configuración realizada en esta parte debe ser informada por el equipo de Mercado Pago. Si tiene alguna pregunta, contáctenos.(https://www.mercadopago.com.br/developers/pt/support).
-
-#### Textos en checkout
-
-La plataforma permite editar dos mensajes de texto que se mostrarán antes y después de finalizar el pago.
-
-![Setting up texts in Checkout - Iset](/images/iset-img11.png)
-
-### Habilitación de cupones de descuento
-
-La funcionalidad de cupones de descuento es exclusiva en Checkout for Mercado Pago como método de pago; a través de esta configuración, puede usar cupones de descuento promocionados por Mercado Pago o cupones que puede crear a través de su cuenta de Mercado Pago, visite [enlace](https://www.mercadopago.com.br/settings/my-business) en la sección **oferta de descuento**.
-
-![Enabling discount coupon - Iset](/images/iset-img9.png)
-
-**Después de completar la configuración, puede hacer clic en el botón CERRAR y luego en el botón "GUARDAR CAMBIOS"**.
-
-Aparecerá un mensaje de éxito en la parte inferior de la página:
- 
-
-![Settings successfully saved - Iset](/images/iset-img15.png)
-
-## Ejemplos
-
-Utilizamos una tienda de demostración de ISET para mostrar el resultado de los tipos de pago a los clientes.
-![Payment methods - Iset](/images/iset-checkout.png)
-
-### Apariencia del Checkout básico
-
-**_Tarjeta de Crédito_**
-
-![Visual Transparent Checkout - Iset](/images/iset-checkout-cartao.png)
-
-**_Boleto Bancário_**
-
-![Ticket - Iset](/images/iset-checkout-boleto.png)
-
-### Apariencia del Checkout redirect
-
-![Checkout redirect Visual- Iset](/images/iset-checkout-redirect.png)
-
-Después de hacer clic en **COMPROBAR**, el cliente será redirigido a una página de confirmación de la tienda:
-
-![Successfully created order page - Iset](/images/iset-checkout-redirect2.png)
-
-Para realizar el pago, debe hacer clic en el botón **Realizar pago**, luego el usuario será redirigido a una página de Mercado Pago:
-
-![Finalize the order in Mercado Pago - Checkout Redirect- Iset](/images/iset_gif01.png)
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
+
+## Configuración de cuotas
+
+Puedes establecer la cantidad máxima o mínima de cuotas y la aplicación de aumentos o descuentos para las cuotas en tu tienda.
+
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda.
+
+1. Ingresa en “Formas de pago” en la sección de Módulos del panel de administración de tu tienda. 
+1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
+1. Selecciona en “Categoría de productos” la categoría que aplica a tus productos. 
+1. Completa los siguientes campos según la configuración de tu cuenta de Mercado Pago:
+
+    | Campo | Descripción |
+    | --- | --- |
+    | Venta a plazos hasta | Selecciona el número máximo de cuotas que quieras ofrecer. |
+    | Valor mínimo de cuota R$ | Indica el valor mínimo de cuotas que quiera ofrecer en reales. |
+    | Solo pedidos superiores a R$ | Configura si quieres utilizar un rango de valor mínimo para aceptar pedidos en tu tienda. 
+    | Descuentos para pagos en efectivo (%) | Ingresa el valor de descuento para pagos en efectivo que quieras. 
+    | Adición/Descuento | Aplica un aumento o descuento en el pedido. | 
+
+1. Haz clic en “Cerrar” y después en “Guardar cambios”.
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
+<p>&nbsp;</p>
+
+## Configura las cuotas sin interés en tu cuenta de Mercado Pago
+
+1. Ingresa a la sección [Tu negocio](https://www.mercadopago[FAKER][URL][DOMAIN]/business/) en tu cuenta de Mercado Pago.
+1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
+1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
+<p>&nbsp;</p>
+
+¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.
+
+## Información para los pedidos de tu tienda iSET
+
+Para **configurar la información de los pedidos en tu tienda**, sigue estos pasos:
+
+1. Accede a las “Formas de pago” en la sección de Módulos del panel de administración de tu tienda.
+1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
+1. Completa los siguientes campos según la configuración de tu tienda:
+
+    | Campo | Descripción |
+    | --- | --- |
+    | Información al usuario sobre el tipo de pago | Instrucciones al momento de realizar el pago. |
+    | Información al usuario sobre el tipo de pago | Instrucciones para mostrarse luego de finalizado el pago |
+    | Estado de nuevos pedidos | Selecciona un estado para los nuevos pedidos. 
+    | Estado de pedidos aprobados | Selecciona un estado para los pedidos aprobados. 
+    | Estado de pedidos cancelados | Selecciona un estado para los pedidos cancelados. |
+    | Usar campaña de descuento | Informa si tienes disponibles cupones de descuentos desde tu cuenta de Mercado Pago. 
+
+1. Haz clic en “Cerrar” y después en “Guardar cambios”. 
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
+<p>&nbsp;</p>
+
+> WARNING
+>
+> Importante
+>
+> Por el momento, no es posible utilizar las campañas de descuentos con Mercado Pago. 
+
+<!-- -->
+> Para más información, visita el [sitio oficial de iSET](https://www.iset.com.br/).
