@@ -166,4 +166,4 @@ Para **configurar as informações de pedido em sua loja**, siga os passos abaix
 > A funcionalidade de campanha de descontos que existia no Mercado Pago foi descontinuada, desta forma, não é possível utilizar cupons de desconto do Mercado Pago.
 
 <!-- -->
-> Para mais informações, [visite o site oficial da iSET](https://www.iset.com.br/).
+> Para mais informações, visite o [site oficial da iSET](https://www.iset.com.br/).
