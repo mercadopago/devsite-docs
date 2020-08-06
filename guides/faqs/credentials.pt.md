@@ -21,13 +21,13 @@ Compartilhe suas credenciais de forma segura com quem te ajuda a integrar ou con
 
 Em [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), escolha a opção “Compartilhar minhas credenciais” e digite o e-mail da pessoa a quem você deseja dar acesso. Lembre-se de que o e-mail da pessoa deve estar cadastrado no Mercado Pago ou no Mercado Livre.
 
-> De suas credenciais compartilhadas, você pode [excluir essa permissões](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) quando sua integração é completa.
+> A partir das suas credenciais compartilhadas, você pode [excluir essas permissões](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) quando sua integração estiver completa.
 
 ## Solicitar acesso a chaves de outras contas
 
 Você pode solicitar acesso aos dados de outra conta para fazer uma integração com o Mercado Pago quando precisar e ter em mãos todas as informações em seu painel.
 
-Em [Credenciais > Outras credenciais](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials/share), clique em “Solicitar credenciais” y e digite o e-mail da conta para a qual você precisa dos dados. Lembre-se de que o e-mail deve estar cadastrado no Mercado Pago ou no Mercado Livre.
+Em [Credenciais > Outras credenciais](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials/share), clique em “Solicitar credenciais” e digite o e-mail da conta para a qual você precisa dos dados. Lembre-se de que o e-mail deve estar cadastrado no Mercado Pago ou no Mercado Livre.
 
 No final das integrações, remova as permissões de acesso para as credenciais que foram compartilhadas para cuidar da segurança dos dados.
 
