@@ -18,7 +18,7 @@ Add all the additional information you want.
 | `picture_url` | String | Picture URL |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 
 #### About the buyer
 
@@ -146,7 +146,7 @@ Add all the additional information you want.
 | `title` | String | Name |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 | `warranty` | Boolean | `True` if the product has a guarantee, `False` if it does not. |
 
 #### About the buyer
@@ -275,7 +275,7 @@ Add all the additional information you want.
 | `title` | String | Name |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 | `event_date` | Date | Event date |
 
 #### About the buyer
@@ -398,7 +398,7 @@ Add all the additional information you want.
 | `description` | String | Description |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 | `warranty` | Boolean | `True` if the product has a guarantee, `False` if it does not. |
 
 #### About the buyer
@@ -530,7 +530,7 @@ Add all the additional information you want.
 | `title` | String | Name |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 
 #### About the buyer
 
@@ -637,7 +637,7 @@ Add all the additional information you want.
 | `picture_url` | String | Picture URL |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 
 #### About the buyer
 
@@ -766,7 +766,7 @@ Add all the additional information you want.
 | `description` | String | Description |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 | `event_date` | Date | Event date |
 
 #### About the buyer
@@ -894,7 +894,7 @@ Add all the additional information you want.
 | `description` | String | Description |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 | `category_descriptor` | Object | Category description. |
 | `passenger` | Object | Additional passenger information. |
 | `first_name`| String | Name |
@@ -1026,7 +1026,7 @@ Add all the additional information you want.
 | `title` | String | Name |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 | `event_date` | Date | Event date |
 | `category_descriptor` | Object | Category description. |
 | `passenger` | Object | Additional passenger information. |
@@ -1146,7 +1146,7 @@ Add all the additional information you want.
 | `title` | String | Name |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 
 #### About the buyer
 
@@ -1252,7 +1252,7 @@ Add all the additional information you want.
 | `description` | String | Description |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 
 #### About the buyer
 
@@ -1384,7 +1384,7 @@ Add all the additional information you want.
 | `description` | String | Description |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 
 #### About the buyer
 
@@ -1514,7 +1514,7 @@ Add all the additional information you want.
 | `description` | String | Description |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit Price |
+| `unit_price` | Float | Unit price |
 
 #### About the buyer
 
