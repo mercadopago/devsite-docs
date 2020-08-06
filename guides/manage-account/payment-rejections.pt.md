@@ -294,7 +294,7 @@ Você pode obter mais informações sobre cada atributo nas [Referências de API
 
 Envia os dados sobre seu industria para melhorar sua aprovação.<br>
 
-[Ir para dados do industria](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/industry-data/industry-additionalinfo)
+[Ir para dados do industria](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/industry-data/additional-info)
 
 ### Auxilie os seus clientes com seus pagamentos recusados
 
