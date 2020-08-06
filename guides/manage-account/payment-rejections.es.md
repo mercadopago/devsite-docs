@@ -292,13 +292,15 @@ Puedes obtener más información sobre cada atributo en las [Referencias de API]
 
 ### Datos de industria
 
-También puedes enviar los datos sobre tu industria para mejorar tu aprobación.[Ir a datos sobre industrias.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/datos-de-industria/industria-additionalinfo).
+Envía los datos sobre tu industria para mejorar tu aprobación.<br>
+
+[Ir a datos sobre industrias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/industry-data/industry-additionalinfo)
 
 ### Ayuda a tus clientes con sus pagos rechazados
 
 Es importante que le expliques a tus clientes el motivo de rechazo del pago y qué acción puede hacer para solucionarlo. Tus clientes tendrán toda la información que necesitan para poder pagarte sin problemas.
 
-Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación. 
+Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación.
 
 
 > NOTE

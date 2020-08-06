@@ -292,7 +292,9 @@ Learn all about these attributes in our [API Reference](https://www.mercadopago[
 
 ### Industry Data
 
-You can also submit data about your industry to improve your approval.[Go to industry data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/datos-de-industria/industria-additionalinfo).
+Send data about your industry to improve your approval.<br>
+
+[Go to industry data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/industry-data/industry-additionalinfo)
 
 ### Help your clients with their rejected payments
 
