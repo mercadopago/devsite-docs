@@ -15,7 +15,7 @@ indexable: false
 >
 > Nota
 >
-> Esta documentação é referente à versão anterior do Checkout.
+> Esta documentação é referente à versão anterior do Checkout Pro.
 >
 > Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
