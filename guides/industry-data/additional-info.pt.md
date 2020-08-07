@@ -38,7 +38,7 @@ Adicione todas as informações adicionais que você deseja.
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` se é, `False`se nao é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se nao é. |
 | `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
