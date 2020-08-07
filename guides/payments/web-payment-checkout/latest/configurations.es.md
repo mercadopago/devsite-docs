@@ -753,7 +753,7 @@ De este modo, cuando se apruebe un pago a través de tu Checkout Pro, se asociar
 
 ## Obtén información sobre tu negocio
 
-“Si sos un Partner podrás ser identificado y luego obtener métricas de negocio según corresponda. Utiliza `headers` en tu preferencia de pago agregando el código de identificación que te brindamos para el caso que corresponda. No es obligatorio completar este campo, por lo que si no sos Partner debes dejarlo vacío.”
+Si sos un Partner podrás ser identificado y luego obtener métricas de negocio según corresponda. Utiliza `headers` en tu preferencia de pago agregando el código de identificación que te brindamos para el caso que corresponda. No es obligatorio completar este campo, por lo que si no sos Partner debes dejarlo vacío.
 
 Header | Tipo de código | Identificadores
 ------ | ---------------| ---------
