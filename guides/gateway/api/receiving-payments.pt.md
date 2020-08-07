@@ -19,7 +19,7 @@ indexable: false
 >
 > Pre-requisito
 >
-> Ter realizado a integração de [Checkout Transparente](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/introduction)
+> Ter realizado a integração do [Checkout Transparente](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/introduction)
 
 ## Novos conceitos
 
