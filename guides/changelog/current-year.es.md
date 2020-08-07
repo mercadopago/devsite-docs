@@ -1,6 +1,24 @@
 # Changelog
 
-Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago. 
+Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
+
+---
+
+## Agosto 2020
+
+### 7 de agosto
+
+> CHANGELOG
+>
+> Solicita las credenciales que necesitas para integrar
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: CREDENCIALES
+
+¿Vas a integrar Mercado Pago para otra cuenta? Ahora puedes solicitar el acceso a sus credenciales de forma rápida y segura.
+
+[Conocer más sobre cómo solicitar credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/)
 
 ---
 

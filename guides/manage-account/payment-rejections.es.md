@@ -79,7 +79,7 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 | Tipo                                                         | Descripción                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| *home* | Página principal de tu sitio. | 
+| *home* | Página principal de tu sitio. |
 | *search* | Página de búsqueda o listado de productos. |
 | *item* | Página de un producto específico. |
 
@@ -288,17 +288,24 @@ preference.Items.Add(
 ```
 ]]]
 
-Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post/).
+
+### Datos de industria
+
+Envía los datos sobre tu industria para mejorar tu aprobación.<br>
+
+[Ir a datos sobre industrias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/industry-data/additional-info)
 
 ### Ayuda a tus clientes con sus pagos rechazados
 
 Es importante que le expliques a tus clientes el motivo de rechazo del pago y qué acción puede hacer para solucionarlo. Tus clientes tendrán toda la información que necesitan para poder pagarte sin problemas.
 
-Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación. 
+Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación.
 
 
 > NOTE
 >
 > Nota
 >
->Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+>Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses).
+

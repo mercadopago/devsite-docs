@@ -4,6 +4,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## August 2020
+
+### August 7th
+
+> CHANGELOG
+>
+> Request the credentials you need to integrate
+>
+> NEWS: NEWS
+>
+> PRODUCT: CREDENTIALS
+
+Are you going to integrate Mercado Pago for another account? Now you can request access to their credentials quickly and safely.
+
+[Learn more about how to request credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/)
+
+---
+
 ## July 2020
 
 ### July 8th
