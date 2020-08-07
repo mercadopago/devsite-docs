@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir a [API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction) implementada.
+> * Possuir o [Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction) implementado.
 
 Para começar, você deve:
 
@@ -133,7 +133,7 @@ Resposta esperada:
 
 ## 3. Integre a API para receber pagamentos
 
-Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), utilizando o`access_token` e cada fornecedor para a sua aplicação.
+Para receber pagamentos em nome de seus vendedores, você deve integrar o [Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), utilizando o `access_token` e cada fornecedor para a sua aplicação.
 
 Se deseja cobrar uma taxa de comissão por cada pagamento processado pela sua aplicação em nome do seu usuário, simplesmente adicione esse valor no parâmetro  `application_fee` ao criar pagamento:
 

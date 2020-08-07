@@ -10,7 +10,7 @@ sites_supported:
 # Advanced Payments
 ## Introduction
 
-Advanced Payments is an API that allows processing payments with additional functionalities to the regular [API of Payments](https://www.mercadopago.com.br/developers/en/guides/payments/api/introduction/). It currently allows to make Marketplace split payments.
+Advanced Payments is an API that allows processing payments with additional functionalities to the regular [Checkout API](https://www.mercadopago.com.br/developers/en/guides/payments/api/introduction/) payments. It currently allows to make Marketplace split payments.
 
 #### Marketplace split payments
 
