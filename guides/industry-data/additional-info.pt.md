@@ -2,7 +2,7 @@
 
 Verifique quais campos você pode enviar de acordo com o seu setor para melhorar sua aprovação.
 
-## Vestuário
+## Apparel
 
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
