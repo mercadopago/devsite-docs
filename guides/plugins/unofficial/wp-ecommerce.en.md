@@ -47,7 +47,7 @@
 The module of Mercado Pago for WP eCommerce is integrated with the following features and payment solutions:
 
 ### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout of Mercado Pago in Wp Ecommerce](/images/wp-ecommerce-basic_checkout_payment.png)
+* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout Pro in Wp Ecommerce](/images/wp-ecommerce-basic_checkout_payment.png)
 
 ### Custom Checkout
 * [Payment with Credit Card - Checkout transparent](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/wp-ecommerce-order_custom.png)

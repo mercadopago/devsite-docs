@@ -27,7 +27,7 @@ Implement the logistics of your business with **Mercado Envíos**.
 
 ## How does it work?
 
-The documentation below allows you to offer in the checkout of Mercado Pago a shipping option, and also that the customer pays the shipping cost along with the payment of the product.
+The documentation below allows you to offer in the Checkout Pro a shipping option, and also that the customer pays the shipping cost along with the payment of the product.
 
 We recommend that you integrate the shipping cost calculator in your checkout.
 
