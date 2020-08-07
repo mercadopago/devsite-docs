@@ -272,7 +272,7 @@ We have released a new version of Prestashop 1.6 & 1.7. Our Checkout Pro now wor
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: MERCADO PAGO CHECKOUT
+> PRODUCT: CHECKOUT PRO
 
 If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Checkout Pro.
 

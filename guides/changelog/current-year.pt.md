@@ -273,7 +273,7 @@ Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout 
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: CHECKOUT MERCADO PAGO
+> PRODUCT: CHECKOUT PRO
 
 Se você possui campanhas publicitárias para seu negócio, é importante acompanhá-las e ver se elas estão lhe ajudando a concretizar vendas. Para poder melhorá-las e sejam cada vez mais eficientes, acrescentamos a possibilidade de associar um pixel do Facebook e uma tag de acompanhamento de conversões do Google Ads aos pagamentos de seu Checkout Pro.
 
