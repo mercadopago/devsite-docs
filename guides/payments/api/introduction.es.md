@@ -1,4 +1,4 @@
-# APIs de Mercado Pago
+# Checkout API
 
 ## Construye tu procesador de pago
 

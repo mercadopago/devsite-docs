@@ -1,4 +1,4 @@
-# APIs do Mercado Pago
+# Checkout Transparente
 
 ## Construa seu processador de pagamentos
 

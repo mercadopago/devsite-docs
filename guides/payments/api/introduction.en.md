@@ -1,4 +1,4 @@
-# Mercado Pago APIs
+# Checkout API
 
 ## Create your own payment processor
 

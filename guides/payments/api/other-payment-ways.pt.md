@@ -1,6 +1,6 @@
 # Integre outros meios de pagamento
 
-Com a API de pagamentos do Mercado Pago você pode oferecer **outras alternativas de meios de pagamento para seus clientes**.
+Com o Checkout Transparente do Mercado Pago você pode oferecer **outras alternativas de meios de pagamento para seus clientes**.
 
 ----[mla]----
 

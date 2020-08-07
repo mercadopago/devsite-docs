@@ -1,6 +1,6 @@
 # Integra otros medios de pago
 
-Con la API de pagos de Mercado Pago puedes sumar **otras alternativas de medios de pago para ofrecer a tus clientes a la hora de realizar el pago**.
+Con el Checkout API de Mercado Pago puedes sumar **otras alternativas de medios de pago para ofrecer a tus clientes a la hora de realizar el pago**.
 
 ----[mla]----
 

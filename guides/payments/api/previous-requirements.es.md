@@ -104,7 +104,7 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 >
 > Construye y configura tu propia experiencia de pagos.
 >
-> [Integrar API de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/)
+> [Integrar Checkout API de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
