@@ -44,7 +44,7 @@ Ideal para vendedores que buscan rapidez y agilidad en la integración. Sus prin
 
 *Disponible para Argentina, Brasil, Chile, Colômbia, México, Peru e Uruguai*
 
-**Checkout Transparente**
+**Checkout API**
 
 Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de pagos simple de usar:
 

@@ -40,7 +40,7 @@ Great for merchants who want to get going quickly and easily.
 
 *Available for Argentina, Brazil, Chile, Colombia, Mexico, Peru and Uruguay *
 
-**Custom Checkout**
+**Checkout API**
 
 Offer a checkout fully customized to your brand experience with our simple-to-use payments API.
 

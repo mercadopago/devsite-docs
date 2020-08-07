@@ -51,7 +51,7 @@ After associating your account, you have the option to activate two types of che
 You can check and configure the [Fees and Deadlines](https://www.mercadopago.com.br/settings/release-options) of your online sales whenever you want.
 
 
-### Transparent Checkout
+### Checkout API
 
 It allows the **client to complete the purchase on your site**, without being redirected.
 

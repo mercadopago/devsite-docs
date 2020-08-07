@@ -8,7 +8,7 @@
 
 Adaltech permite operar con Mercado Pago en las siguientes modalidades:
 
-### API
+### Checkout API
 
 Reciba pagos en su tienda a través de la tarjeta de crédito en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma Adaltech.
 

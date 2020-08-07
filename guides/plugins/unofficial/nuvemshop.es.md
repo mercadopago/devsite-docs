@@ -70,7 +70,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) y configurar las ----[mlb]---- [tasas y plazos](https://www.mercadopago.com.br/settings/release-options) ------------ ----[mla]---- [tasas y plazos](https://www.mercadopago.com.ar/settings/release-options) ------------ ----[mlm]---- [tasas y plazos](https://www.mercadopago.com.mx/settings/release-options) ------------ ----[mlc]---- [tasas y plazos](https://www.mercadopago.cl/settings/release-options) ------------ ----[mlu]---- [tasas y plazos](https://www.mercadopago.com.uy/settings/release-options) ------------ ----[mpe]---- [tasas y plazos](https://www.mercadopago.com.pe/settings/release-options) ------------ ----[mco]---- [tasas y plazos](https://www.mercadopago.com.co/settings/release-options) ------------ de tus ventas online cuando quieras.
 
 
-### Checkout Transparente
+### Checkout API
 
 Permite que el **cliente finalice la compra en tu tienda**, sin ser redireccionado para otro sitio.
 

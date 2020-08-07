@@ -13,7 +13,7 @@ Para obtener más información sobre las posibilidades que ofrece CORE, visite [
 
 CORE le permite operar Mercado Pago de las siguientes maneras:
 
-### Pago transparente
+### Checkout API
 
 Reciba pagos en su tienda a través de tarjeta de crédito y/o recibo bancario en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma CORE.
 

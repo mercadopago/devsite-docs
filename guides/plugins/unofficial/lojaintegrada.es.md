@@ -50,7 +50,7 @@ Después de vincular tu cuenta, tienes la **opción de activar dos tipos de aper
 
 Puedes consultar y configurar las [tasas y plazas](https://www.mercadopago.com.br/settings/release-options) de tus ventas online cuando quieras.
 
-### Checkout Transparente
+### Checkout API
 
 Permite que el **cliente finalice la compra en tu sitio**, sin ser redireccionado para otro.
 

@@ -86,7 +86,7 @@ Done! Mercado Pago is installed on your site.
 You also have the option to offer [interest-free installments](#bookmark_set_interest-free_installments_in_your_mercado_pago_account) and set the ----[mlb]---- [rates and terms](https://www.mercadopago.com.br/settings/release-options) ------------ ----[mla]---- [rates and terms](https://www.mercadopago.com.ar/settings/release-options) ------------ ----[mlm]---- [rates and terms](https://www.mercadopago.com.mx/settings/release-options) ------------ ----[mlc]---- [rates and terms](https://www.mercadopago.cl/settings/release-options) ------------ ----[mlu]---- [rates and terms](https://www.mercadopago.com.uy/settings/release-options) ------------ ----[mpe]---- [rates and terms](https://www.mercadopago.com.pe/settings/release-options) ------------ ----[mco]---- [rates and terms](https://www.mercadopago.com.co/settings/release-options) ------------ for your online sales whenever you want.
 
 
-### Transparent Checkout
+### Checkout API
 
 It allows the **client to complete the purchase on your site**, without being redirected.
 
