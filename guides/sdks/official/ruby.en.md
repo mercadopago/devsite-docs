@@ -137,7 +137,7 @@ $mp.post ("/v1/customers", Hash["email" => "email@test.com"]);
 $mp.get ("/v1/customers/CUSTOMER_ID");
 ```
 
-* View more Custom checkout related APIs in Developers Site
+* View more Checkout API related APIs in Developers Site
     * Argentina: [https://www.mercadopago.com.ar/developers](https://www.mercadopago.com.ar/developers)
     * Brazil: [https://www.mercadopago.com.br/developers](https://www.mercadopago.com.br/developers)
     * Mexico: [https://www.mercadopago.com.mx/developers](https://www.mercadopago.com.mx/developers)

@@ -145,7 +145,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
         return json.dumps(result, indent=4)
 ```
 
-## Checkout custom
+## Checkout API
 
 ### Configura tus credenciales
 

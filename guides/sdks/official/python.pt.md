@@ -144,7 +144,7 @@ Devolução (Somente para pagamentos creditados)
         return json.dumps(result, indent=4)
 ```
 
-## Checkout custom
+## Checkout API
 
 ### Configure suas credenciais
 

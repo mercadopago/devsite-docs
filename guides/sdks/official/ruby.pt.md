@@ -2,7 +2,7 @@
 
 * [Instalação](#install)
 * [Checkout básico](#basic-checkout)
-* [Checkout customizado](#checkout-customizado)
+* [Checkout Transparente](#checkout-transparente)
 * [Métodos genéricos](#generic-methods)
 
 <a name="install"></a>
@@ -101,7 +101,7 @@ puts result
 ```
 
 <a name="custom-checkout"></a>
-## Checkout customizado
+## Checkout Transparente
 
 ### Configure suas credenciais
 
@@ -133,7 +133,7 @@ $mp.post ("/v1/customers", Hash["email" => "email@test.com"]);
 $mp.get ("/v1/customers/CUSTOMER_ID");
 ```
 
-* Veja mais APIs relacionadas a Checkout Custom em Developers Site
+* Veja mais APIs relacionadas a Checkout Transparente em Developers Site
     * Argentina: [https://www.mercadopago.com.ar/developers](https://www.mercadopago.com.ar/developers)
     * Brazil: [https://www.mercadopago.com.br/developers](https://www.mercadopago.com.br/developers)
     * Mexico: [https://www.mercadopago.com.mx/developers](https://www.mercadopago.com.mx/developers)
