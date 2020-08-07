@@ -298,7 +298,7 @@ Finally, add the following code to show the payment button of your Checkout Pro 
 > Do not forget to access from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
 
 #### Excellent! You finished your integration.
-_Click on the link within your site and [test the integration of your Checkout Pro.](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Click on the link within your site and [test the integration of your Checkout Pro](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 ---
 
