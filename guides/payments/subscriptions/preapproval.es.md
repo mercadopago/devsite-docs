@@ -33,7 +33,7 @@ Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: 
 
 ## Cobrá el primer pago
 
-Para la primer transacción siempre se tendrán que solicitar los datos de la tarjeta, y cursar el pago con código de seguridad. Se podrá hacer siguiendo los pasos de nuestra integración por [API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
+Para la primer transacción siempre se tendrán que solicitar los datos de la tarjeta, y cursar el pago con código de seguridad. Se podrá hacer siguiendo los pasos de nuestra integración por [Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
 
 ## Crea un customer y asociale la tarjeta utilizada
 
