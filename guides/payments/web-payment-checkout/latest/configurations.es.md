@@ -760,7 +760,7 @@ Header | Tipo de código | Identificadores
 `x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración.
 `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. 
 `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico.
-> Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones como desarrollador de Mercado Pago dentro de su programa de partners y cómo obtener tu id, [dejanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform). 
+> Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones para desarrolladores de Mercado Pago y cómo obtener tu ID, [déjanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform). 
 
 [[[
 ```php
