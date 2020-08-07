@@ -18,7 +18,7 @@
 ## What is Tiendanube?
 ------------
 
-----[mlb]---- Nuvemshop ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- Tiendanube ------------ is an **ecommerce platform that allows you to receive payments with Mercado Pago**. You can offer your clients the option to pay ----[mlb]---- with credit card or boleto ------------ ----[mla, mlm, mlc, mlu, mpe]---- with credit or debit card, or their preferred method of payment ------------ ----[mco]---- with credit card, via home banking or cash ------------ and [sell directly on your site](#bookmark_transparent_checkout) or [charge through the Mercado Pago site](#bookmark_mercado_pago_checkout).
+----[mlb]---- Nuvemshop ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- Tiendanube ------------ is an **ecommerce platform that allows you to receive payments with Mercado Pago**. You can offer your clients the option to pay ----[mlb]---- with credit card or boleto ------------ ----[mla, mlm, mlc, mlu, mpe]---- with credit or debit card, or their preferred method of payment ------------ ----[mco]---- with credit card, via home banking or cash ------------ and [sell directly on your site](#bookmark_transparent_checkout) or [charge through the Mercado Pago site](#bookmark_checkout_pro).
 
 <!-- -->
 ----[mlu, mpe]----

@@ -5,7 +5,7 @@
 
 
 * [Install](#bookmark_install)
-* [Checkout Pro](#bookmark_mercado_pago_checkout)
+* [Checkout Pro](#bookmark_checkout_pro)
 * [Customized checkout](#bookmark_customized_checkout)
 * [Generic methods](#bookmark_generic_methods)
 
