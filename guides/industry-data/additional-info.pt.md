@@ -622,7 +622,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 }'
 ```
 
-## Varejo
+## Retail
 
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
