@@ -27,7 +27,7 @@ Implemente a logística do seu negócio utilizando o **Mercado Envios**.
 
 ## Como funciona
 
-A documentação a seguir lhe permitirá oferecer uma opção de envio no checkout do Mercado Pago, além do cliente poder pagar o custo do envio junto com o pagamento do produto.
+A documentação a seguir lhe permitirá oferecer uma opção de envio no Checkout Pro, além do cliente poder pagar o custo do envio junto com o pagamento do produto.
 
 Recomendamos integrar a calculadora de custos de frete em seu checkout.
 

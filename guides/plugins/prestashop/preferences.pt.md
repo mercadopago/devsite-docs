@@ -33,7 +33,7 @@ Insira o nome do seu negócio para que apareça na fatura dos seus clientes e se
 ## Configuração básica
 
 * Defina a experiência que seus clientes terão:
- * Use o Checkout do Mercado Pago para aceitar pagamento com cartão, boleto e dinheiro em conta. Você vai proporcionar segurança e conforto ao usuário. E agora, você também pode configurá-lo como um modal para abrir na sua loja!
+ * Use o Checkout Pro para aceitar pagamento com cartão, boleto e dinheiro em conta. Você vai proporcionar segurança e conforto ao usuário. E agora, você também pode configurá-lo como um modal para abrir na sua loja!
  * Use o Checkout Personalizado e o Ticket Checkout para ter controle sobre outras configurações. Ative ambos para oferecer todos os meios de pagamento.
 
 > WARNING
@@ -82,7 +82,7 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 >
 > Nota
 >
-> Confira a [documentação do Checkout do Mercado Pago ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/) para saber mais sobre todos os recursos e funcionalidades.
+> Confira a [documentação do Checkout Pro ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/) para saber mais sobre todos os recursos e funcionalidades.
 
 ### Checkout Personalizado
 
