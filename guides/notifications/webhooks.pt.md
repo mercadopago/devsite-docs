@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir a [API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction) implementada.
+> * Possuir o [Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction) implementado.
 
 Um **webhook** é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
