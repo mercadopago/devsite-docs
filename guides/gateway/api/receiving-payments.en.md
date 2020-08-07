@@ -19,7 +19,7 @@ indexable: false
 >
 > Pre-requisites
 >
-> Have already integrated the [Payments's API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction.en.md)
+> Have already integrated the [Checkout API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction.en.md)
 
 ## New concepts
 

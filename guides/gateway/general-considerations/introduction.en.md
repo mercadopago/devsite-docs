@@ -63,4 +63,4 @@ The service costs in the **Gateway Model** are negotiated one on one. The cost d
 
 * [Configure your merchant IDs and payment methods](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/configuration) in Mercado Pago's backoffice
 * [Integrate the Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/gateway/web-checkout/receiving-payments) for the Gateway Model
-* [Integrate the API](https://www.mercadopago.com.ar/developers/en/guides/gateway/api/receiving-payments) for the Gateway Model
+* [Integrate the Checkout API](https://www.mercadopago.com.ar/developers/en/guides/gateway/api/receiving-payments) for the Gateway Model

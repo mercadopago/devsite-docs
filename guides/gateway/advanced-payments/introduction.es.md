@@ -18,7 +18,7 @@ indexable: false
 
 La modalidad de `Gateway` en Advanced Payments permite realizar múltiples pagos con distintos números de comercio propios y un mismo card token. Esto implica que el comprador debe ingresar los datos de su tarjeta una única vez.
 
-Para poder realizar pagos en esta modalidad, debes cargar tus números de comercios, acuerdos y medios de pago asociados desde la configuración de tu cuenta de Mercado Pago. Los mismos serán utilizados en la integración con la API.
+Para poder realizar pagos en esta modalidad, debes cargar tus números de comercios, acuerdos y medios de pago asociados desde la configuración de tu cuenta de Mercado Pago. Los mismos serán utilizados en la integración con el Checkout API.
 ----[mco]----
 En el caso de que tu cuenta de Mercado Pago sea de Colombia, contáctate con tu ejecutivo de cuentas para poder cargar tus números de comercios, acuerdos y medios de pago asociados.
 ------------
@@ -34,7 +34,7 @@ Debes crear una cuenta desde el sitio de Mercado Pago del país a donde desees r
 
 ### Crear una aplicación
 
-La aplicación será utilizada para poder cargar los números de comercio, acuerdos y medios de pago y, posteriormente, realizar la integración con la API.
+La aplicación será utilizada para poder cargar los números de comercio, acuerdos y medios de pago y, posteriormente, realizar la integración con el Checkout API.
 Debes crear una aplicación accediendo a la página de aplicaciones de Mercado Pago del país correspondiente a tu cuenta y completando la información solicitada:
 
 * [Argentina](https://applications.mercadopago.com.ar)
@@ -49,10 +49,10 @@ Debes contactar a tu ejecutivo de cuentas informando el APP_ID de tu aplicación
 
 ### Cargar información correspondiente a números de comercios, acuerdos y medios de pago asociados
 
-Para poder realizar pagos en esta modalidad, debes cargar tus números de comercios, acuerdos y medios de pago asociados desde la configuración de tu cuenta de Mercado Pago. Los mismos serán utilizados en la integración con la API.
+Para poder realizar pagos en esta modalidad, debes cargar tus números de comercios, acuerdos y medios de pago asociados desde la configuración de tu cuenta de Mercado Pago. Los mismos serán utilizados en la integración con el Checkout API.
 
 En el caso de que tu cuenta de Mercado Pago sea de Colombia, contáctate con tu ejecutivo de cuentas para poder cargar tus números de comercios, acuerdos y medios de pago asociados.
 
 ### Generar un token de tarjeta
 
-Debes generar el token de tarjeta del pagador para poder procesar pagos con la API. Esta guía asume que sabes [cómo generar un token de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
+Debes generar el token de tarjeta del pagador para poder procesar pagos con el Checkout API. Esta guía asume que sabes [cómo generar un token de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
