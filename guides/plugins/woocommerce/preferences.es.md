@@ -21,7 +21,7 @@ Ingresa el **nombre del negocio** para que aparezca en la factura de tus cliente
 >
 > El campo de `integrator_id` no es obligatorio a la hora de realizar una integración. Deberán completarlo los Partners de Mercado Pago.
 >
-> Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones de Mercado Pago dentro de su programa de partners y cómo obtener tu id, [dejanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform).
+> Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones para desarrolladores de Mercado Pago y cómo obtener tu ID, [déjanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform). 
 
 <span></span>
 
