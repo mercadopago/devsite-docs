@@ -277,7 +277,7 @@ Caso não queira permitir que alguém acesse a preferência de pagamentos para e
 ```
 
 
-Para saber mais sobre os atributos da preferência, [consulte a documentação da API]https://www.mercadopago.com.br/developers/pt/reference/reference/preferences/_preferences/post/)
+Para saber mais sobre os atributos da preferência, consulte as [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/reference/preferences/_preferences/post/)
 
 ### Aqui você tem uma preferência completa
 

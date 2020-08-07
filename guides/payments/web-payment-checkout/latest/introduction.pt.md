@@ -46,7 +46,7 @@ O Checkout Mercado Pago é a integração que **te permite cobrar através do no
 
 ----[mla, mlb]----
 
-                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
+                                   | Checkout Mercado Pago|Web Tokenize Checkout|      Checkout API
 :---  | :---: | :---: | :---:
 Dificuldade de integração 			  	     |    Baixa    |       Media         |     Alta
 Desing UI/UX 							  	           |      ✔      |         ✔           |
@@ -61,7 +61,7 @@ Pagamento com dois cartões		           |      ✔      |                     |
 ------------
 
 ----[mlm, mlu, mco, mlc]----
-                                   | Checkout Mercado Pago|Web Tokenize Checkout|      API
+                                   | Checkout Mercado Pago|Web Tokenize Checkout|      Checkout API
 :---  | :---: | :---: | :---:
 Dificuldade de integração 			  	     |    Baixa    |       Media         |     Alta
 Desing UI/UX 							  	           |      ✔      |         ✔           |

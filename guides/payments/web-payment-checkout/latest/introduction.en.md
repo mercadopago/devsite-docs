@@ -50,7 +50,7 @@ Mercado Pago Checkout is an integration that allows you to **charge your custome
 ## Mercado Pago Checkout vs. other Mercado Pago tools
 
 ----[mla, mlb]----
-                                   | Mercado Pago Checkout|Web Tokenize Checkout|      API
+                                   | Mercado Pago Checkout|Web Tokenize Checkout|      Checkout API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |
@@ -64,7 +64,7 @@ Split payments		           |      ✔      |                     |
 
 ------------
 ----[mlm, mlu, mco, mlc]----
-                                   | Mercado Pago Checkout|Web Tokenize Checkout|      API
+                                   | Mercado Pago Checkout|Web Tokenize Checkout|      Checkout API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High
 UI/UX Design 							  	       |      ✔      |         ✔           |

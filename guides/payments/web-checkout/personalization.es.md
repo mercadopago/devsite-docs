@@ -288,7 +288,7 @@ Usa el atributo taxes para definir el valor que corresponda
 
 ------------
 
-Para conocer más sobre los atributos de la preferencia, [consultá la documentación de la API](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/)
+Para conocer más sobre los atributos de la preferencia, consultá las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/)
 
 
 

@@ -276,7 +276,7 @@ If you want to prevent access to the payment preference for making a payment aft
 ```
 
 
-To learn more about the preference attributes, [check the API docs]https://www.mercadopago.com.ar/developers/en/reference/reference/preferences/_preferences/post/).
+To learn more about the preference attributes, check the [API References](https://www.mercadopago.com.ar/developers/en/reference/reference/preferences/_preferences/post/).
 
 
 
