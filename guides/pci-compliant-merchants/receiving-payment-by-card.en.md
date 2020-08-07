@@ -6,7 +6,7 @@ Mercado Pago allows vendors who comply with PCI standards to tokenize cards via 
 >
 > Prerequisites
 >
-> * Implement the [payment processing via API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card#recibir-un-pago-con-tarjeta).
+> * Implement the [payment processing via Checkout API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card#recibir-un-pago-con-tarjeta).
 > * Possess the document Attestation of Compliance (AOC) signed by a QSA Consultant.
 > * For more information in order to post server to server payments being PCI compliant please contact us via the support form being logged in with your Mercado Pago account.
 

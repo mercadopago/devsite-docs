@@ -6,7 +6,7 @@ Mercado Pago permite a vendedores que cumplen con las normativas PCI, _tokenizar
 >
 > Pre-requisitos
 >
-> * Implementar el [procesamiento de pagos por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#recibir-un-pago-con-tarjeta).
+> * Implementar el [procesamiento de pagos por Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#recibir-un-pago-con-tarjeta).
 > * Tener el documento AOC (Attestation of Compliance) firmado por un consultor QSA.
 > * Para más información sobre como postear pagos server to server siendo PCI compliant por favor contactarnos a través de nuestro formulario de soporte estando logueado con tu cuenta de Mercado Pago. 
 
