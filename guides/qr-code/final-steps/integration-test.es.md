@@ -16,56 +16,27 @@ sites_supported:
 
 Los usuarios de prueba te permiten probar la integración de tu sistema con Mercado Pago sin usar dinero real. 
 
+Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor. 
+
+Si no generaste tus usuarios en este punto, puedes hacerlo en los [requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/)
+
+
 Tipos de usuarios | Descripción
 ----------------- | -------------------------------------
 Vendedor | Es la **cuenta de pruebas que usas para obtener las credenciales** a configurar en tu sistema para poder interactuar con las APIs de Mercado Pago. También podrás acceder a la [cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) y revisar las transacciones probadas. 
 Comprador | Es la **cuenta de pruebas que usas para probar el proceso de compra**. Debes acceder a la app de Mercado Pago con los datos de este usuario. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medio de pago.
 
 
-## Generar usuarios de prueba
-
-Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
-
-Ejecuta el siguiente comando para generar un usuario de prueba:  
-
-```curl
-curl -X POST \
-
--H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN
--d '{"site_id":"MLA"}'
-```
-
-> NOTE
-> 
-> Nota
-> 
-> Las credenciales usadas son las productivas de la cuenta con la cual vayas a operar.  
-
-Respuesta:
-
-```json
-{
-    "id": 123456,
-    "nickname": "TT123456",
-    "password": "qatest123456",
-    "site_status": "active",
-    "email": "test_user_123456@testuser.com"
-}
-```
-
-> WARNING
-> 
-> IMPORTANTE
-> 
-> * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
-> * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-> * Para hacer pagos de prueba te recomendamos usar montos bajos.
-> * Tanto el comprador como el vendedor deben ser usuarios de prueba.
-> * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
 
 ## Tarjetas de prueba 
 
+Datos del pagador
+Simulación de pago | Nombre del titular | Documento de identidad
+----------------- | -------------------- | --------------
+Pago aprobado | APRO | 123456789
+Pago rechazado | OTHE | 123456789
+
+Datos de la tarjeta
 Tarjeta | Número | CVV | Fecha de vencimiento
 ------------ | ------------------------ | ------------ | ------------------------
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25

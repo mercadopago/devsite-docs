@@ -11,12 +11,6 @@ sites_supported:
 
 # Integración avanzada
 
-## Recibe notificaciones de tus órdenes
-
-Las [notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/) (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevas órdenes y las actualizaciones de sus estados**. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
-
-Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contigencia.
-
 ## Devoluciones de tus pagos
 
 Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
@@ -27,6 +21,13 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 > Nota
 > 
 > Ten en cuenta que para pagos presenciales, solo puedes efectuar devoluciones pero no cancelaciones.
+
+## Vigencia de la orden
+
+Por defecto, la orden del QR expira a los 10 minutos de ser creada o automáticamente al ser cerrada. 
+
+Si se requiere un tiempo de expiración diferente, se puede enviar el _header_ `X-Ttl-Store-Preference` con el tiempo deseado en segundos.
+Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el _header_ `X-Ttl-Store-Preference`: 300.
 
 ## Genera reportes de tus ventas
 
