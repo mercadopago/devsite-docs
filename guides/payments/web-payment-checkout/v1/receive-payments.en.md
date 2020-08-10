@@ -19,7 +19,7 @@ indexable: false
 >
 > Remember there is only active support and new functionalities for the [new version of the Checkout Pro.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
 
-Receive payments simply and securely using the Mercado Pago’s Checkout.
+Receive payments simply and securely using the Checkout Pro.
 
 
 ## 1. Create a payment preference
