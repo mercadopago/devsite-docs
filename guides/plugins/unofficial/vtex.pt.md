@@ -54,7 +54,7 @@ E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
 ## Configurar condições de pagamento
 
-Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e também pagamentos via [Checkout Pro](#bookmark_condição_de_pagamento_checkout_mercado_pago).
+Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e também pagamentos via [Checkout Pro](#bookmark_condição_de_pagamento_checkout_pro).
 
 ### Condição de pagamento cartão de crédito
 
