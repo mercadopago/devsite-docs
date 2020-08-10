@@ -43,15 +43,6 @@ Mastercard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
 
-Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
-
-- APRO: Pago aprobado.
-- OTHE: Rechazado por error general.
-- CALL: Rechazado con validación para autorizar.
-- FUND: Rechazado por monto insuficiente.
-- SECU: Rechazado por código de seguridad inválido.
-- EXPI: Rechazado por problema con la fecha de expiración.
-
 > NOTE
 > 
 > Nota
@@ -60,9 +51,9 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 
 ## Prueba el flujo de pago
 
-### 1. Con tu usuario vendedor, asigna una orden a un punto de venta. 
+### 1. Con tu usuario vendedor, asigna una orden a una caja. 
 
-Parar probar el modelo atendidio, genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
+Para probar el modelo atendido, genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
 
 ### 2. Realiza un pago con tu usuario comprador
   - A. Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.

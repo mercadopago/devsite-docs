@@ -18,7 +18,6 @@ Las **sucursales** y **cajas** son importantes para recibir pagos presenciales c
 > ![Cajas y Sucursales](/images/stores_pos.es.png) 
 
 
-
 ## Sucursales
 
 Es una **tienda física** en la que tus clientes pueden adquirir tus productos o servicios. Puedes tener varias sucursales en una misma cuenta.
