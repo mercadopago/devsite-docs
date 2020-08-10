@@ -11,7 +11,7 @@
 
 ## O que é Linx Commerce?
 
-Linx Commerce é uma plataforma de e-commerce, que te permite receber pagamentos através do Mercado Pago em sua loja virtual. 
+Linx Commerce é uma plataforma, que te permite receber pagamentos com o Mercado Pago em sua loja virtual.
 
 Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_configurando_os_dados_de_cartão_de_credito) e [boleto bancário](#bookmark_configurando_os_dados_de_boleto) no próprio checkout da sua loja.
 
@@ -21,7 +21,7 @@ Os **passos para começar a receber com Mercado Pago**, são os seguintes:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) no Mercado Pago caso ainda não tenha uma.
 2. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
-3. Configure a forma de pagamento Mercado Pago.
+3. Configure a forma de pagamento como Mercado Pago.
 4. Configure o meio de pagamento do contrato.
 
 ## Adicione o Mercado Pago como meio de pagamento
@@ -56,7 +56,7 @@ Após adicionar o meio de pagamento, **configure os dados de sua integração co
     ![CORE Configuracao](/images/core/core_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
-> Encontre todas as informações sobre suas credenciais em [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
+> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/).
 
 ### Configurando os dados de Cartão de Crédito
 
@@ -64,19 +64,19 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 
 1. No painel administrativo de sua loja, acesse "Meios de pagamentos" no menu Configs.
 2. Localize o meio de pagamento criado e clique em "editar".
-3. Acesse a aba "Cartões de Crédito", clique sobre a bandeira que deseja configurar e altere o status para **Ativo**.
-4. Preencha os campos correspondentes caso necessário e clique em "Salvar".
+3. Acesse a aba "Cartões de Crédito", clique sobre a bandeira que deseja configurar e selecione o status "Ativo".
+4. Preencha os campos correspondentes, se necessário, e clique em "Salvar".
 
 | Campos | Dados necessários |
 |-------------------------------------------|---------------------------------------------------------------------------------------|
-| Porcentagem de juros | Caso deseje colocar uma porcentagem de juros, coloque um valor, caso não, deixe em 0,00. |
+| Porcentagem de juros | Caso queira adicionar uma porcentagem de juros, preencha um valor, caso não, deixe em 0,00. |
 | Tipo de juros | Emissor - Incluir juros no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir juros no total do pedido. |
-| Número total de parcelas | Coloque o número total de parcelas que será possível realizar o pedido. |
+| Número total de parcelas | Coloque o número total de parcelas que será possível escolher por compra. |
 | Número de parcelas sem juros | O número total de parcelas sem juros que será possível realizar o pedido. |
 | Parcela mínima | Valor mínimo disponível para cada parcela de uma compra. |
 | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
-| Ordem | A ordem em que a bandeira aparecerá no Checkout. |
-| Caminho Imagem | O caminho de onde puxará a imagem para a bandeira do cartão. |
+| Ordem | A ordem em que as bandeiras aparecerão no Checkout. |
+| Caminho Imagem | O caminho onde as imagem das bandeiras do cartão serão buscadas. |
 <br>
 
 > WARNING
@@ -96,7 +96,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 
 1. No painel administrativo de sua loja, acesse "Meios de pagamentos" no menu Configs.
 2. Localize o meio de pagamento criado e clique em "editar".
-3. Acesse a aba "Boletos" e altere o status para **Ativo**.
+3. Acesse a aba "Boletos" e selecione o status para "Ativo".
 4. Preencha o campo **Identificador de Integração** com a informação que será identificada em seu ERP.
 5. Informe a ordem em que o boleto aparecerá no seu checkout e clique em "Salvar".
 <p>&nbsp;</p>
@@ -112,7 +112,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
     ![CORE Configuracao](/images/core/core_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
 
-E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
+E pronto! Você está oferecendo parcelamento sem juros, assumindo as tarifas de parcelamento que você configurou.
 
 ## Configurando meios de pagamento do contrato
 
@@ -138,7 +138,7 @@ Para **definir os meios de pagamento do contrato em sua loja**, siga os passos a
 3. Localize a sessão meios de pagamento e defina qual a opção que o contrato irá refletir para o meio de pagamento, sendo eles:
 
 - **Todos os meios de pagamento ativos na plataforma.** Irá permitir que todos os meios de pagamento habilitados na plataforma sejam refletidos para este contrato.
-- **Definidos abaixo.** Escolher quais os meios de pagamento irão fazer parte do contrato criado.
+- **Definidos abaixo.** Escolher quais meios de pagamento irão fazer parte do contrato criado.
 
 4. Clique em "Salvar".
 <p>&nbsp;</p>
@@ -151,11 +151,11 @@ Para **atribuir o meio de pagamento do contrato ao canal de sua loja**, siga os 
 
 1. No painel administrativo de sua loja, acesse "Canais" no menu Canais.
 2. Localize o canal da sua loja e clique em "editar".
-3. Na sessão contrato padrão, adicione o contrato criado anteriormente.
+3. Na sessão contrato padrão, adicione o contrato que criou.
 4. Clique em "Salvar".
 <p>&nbsp;</p>
     ![CORE Configuracao](/images/core/core_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
 
 <!-- -->
-> Para mais informação, visite o [site oficial da Linx Commerce](https://docs.linxcommerce.com.br/docs).
+> Para mais informações, visite o [site oficial da Linx Commerce](https://docs.linxcommerce.com.br/docs).
