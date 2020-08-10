@@ -211,6 +211,7 @@ Disponibilizamos una nueva versión de SDK .NET.
 
 ### 3 de abril
 
+----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >
 > Actualización de documentación de Checkout API
@@ -218,10 +219,27 @@ Disponibilizamos una nueva versión de SDK .NET.
 > NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
 >
 > PRODUCT: CHECKOUT API
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Actualización de documentación de Checkout Transparente
+>
+> NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
+>
+> PRODUCT: CHECKOUT TRANSPARENTE
+------------
 
 Renovamos la documentación para usar nuestras APIs de pagos. Agregamos un ejemplo básico del formulario en el frontend y sumamos diagramas de funcionamiento para ayudarte a la hora de integrar.
 
+----[mlm, mla, mlc, mco, mpe, mlu]----
 [Ir a documentación de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+------------
+
+----[mlb]----
+[Ir a documentación de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+------------
 
 ---
 
