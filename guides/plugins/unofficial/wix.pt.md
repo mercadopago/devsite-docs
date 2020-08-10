@@ -14,7 +14,7 @@ Wix permite operar Mercado Pago na seguinte modalidade:
 
 ### Checkout Pro
 
-Receba pagamentos em sua loja utilizando o checkout do próprio Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
+Receba pagamentos em sua loja utilizando o Checkout Pro do Mercado Pago, neste modelo o usuário (cliente) será redirecionado para uma página do Mercado Pago para finalizar sua compra.
 
 ## Como habilitar Mercado Pago na Wix?
 
