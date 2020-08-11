@@ -68,7 +68,13 @@ En base al tipo de checkout e integración que estés realizando, el proceso pue
 
 Es posible remover la opción de boleto a través de la preferencia de pago. Puedes encontrar más detalle en nuestra [documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APIs de Mercado Pago
+----[mlb]----
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Transparente
+------------
+
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout API
+------------
 
 Puedes removerlo directamente desde tu frontend. Obtén los medios de pago y excluye a boleto en la llamada con el parámetro `"payment_type_id" = credit_card` como filtro, por ejemplo.
 

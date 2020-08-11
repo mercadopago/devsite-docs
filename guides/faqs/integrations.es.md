@@ -43,7 +43,13 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 [Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
@@ -51,7 +57,13 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
-[Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Integrar por Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
+
+----[mlb]----
+[Integrar por Checkout Transparente](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
 
 ## Cómo ofrecer cuotas sin interés
 
@@ -113,7 +125,13 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 [Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
@@ -121,7 +139,13 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
-[Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Integrar Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
+
+----[mlb]----
+[Integrar Checkout Transparente](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
 
 ## Cómo ofrecer mensualidades sin intereses
 
@@ -189,7 +213,13 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 [Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
@@ -197,7 +227,13 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 - Tu equipo técnico tiene el control total. Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
-[Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Integrar por Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
+
+----[mlb]----
+[Integrar por Checkout Transparente](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 
@@ -250,7 +286,13 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 [Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
@@ -258,7 +300,13 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
-[Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Integrar por Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
+
+----[mlb]----
+[Integrar por Checkout Transparente](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 
@@ -303,7 +351,13 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 [Integrar Web Tokenize](https://www.mercadopago.com.uy/developers/es/guides/payments/web-tokenize-checkout/introduction/)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
@@ -375,7 +429,13 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 [Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
@@ -383,7 +443,13 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
-[Integrar por API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Integrar Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
+
+----[mlb]----
+[Integrar Checkout Transparente](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+------------
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 

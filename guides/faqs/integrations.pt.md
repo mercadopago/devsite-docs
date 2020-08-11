@@ -12,7 +12,7 @@
 
 Oferecemos diferentes opções para que você possa elaborar a solução de pagamentos que melhor se adapte ao seu negócio.
 
-Temos ferramentas prontas para uso como SDKs, botões de pagamento, módulos ou plugins e também uma API flexível e robusta para que você possa criar sua própria experiência de pagamento.
+Temos ferramentas prontas para uso como SDKs, links de pagamento, módulos ou plugins e também uma API flexível e robusta para que você possa criar sua própria experiência de pagamento.
 
 ### Checkout Pro
 
@@ -49,7 +49,13 @@ Diferente do Checkout Pro, facilitamos a criação de uma experiência de pagame
 
 [Integrar Web Tokenize](https://www.mercadopago.com.br/developers/pt/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integração permite que você se conecte diretamente com as nossas APIs.
 
@@ -57,7 +63,13 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 
 - **Sua equipe técnica tem total controle.** Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
 
-[Integrar por API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Integrar Checkout API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+------------
+
+----[mlb]----
+[Integrar Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+------------
 
 ## Posso oferecer pagamentos com cartão de débito?
 

@@ -12,7 +12,7 @@
 
 We offer different options so you can build the payment solution that best suits your business.
 
-We have tools that are ready to use, such as SDKs, payment buttons, modules or plugins. In addition, we have a flexible and robust API so you can create your own payment experience.
+We have tools that are ready to use, such as SDKs, payment links, modules or plugins. In addition, we have a flexible and robust API so you can create your own payment experience.
 
 ### Checkout Pro
 
@@ -50,7 +50,7 @@ It's the simplified version of the Checkout Pro with a renewed user experience.
 
 [Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+### Checkout API
 
 This way of integrating allows you to connect directly with our APIs.
 
@@ -58,7 +58,7 @@ This way of integrating allows you to connect directly with our APIs.
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
-[Integrate by API](guides/payments/api/introduction)
+[Integrate Checkout API](guides/payments/api/introduction)
 
 ## How to offer interest-free installments
 

@@ -28,7 +28,7 @@ Vai integrar Mercado Pago para outra pessoa? Agora você pode solicitar acesso a
 
 > CHANGELOG
 >
-> Alterações na API de odens
+> Alterações na API de orders
 >
 > FEATURE: FEATURE
 >
@@ -118,15 +118,15 @@ Lançamos uma nova versão do SDK .NET 1.8.0.
 
 > CHANGELOG
 >
-> Nova versão do Botão e link de pagamento
+> Nova versão do Link de pagamento
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: BOTÃO E LINK DE PAGAMENTO
+> PRODUCT: LINK DE PAGAMENTO
 
-Lançamos uma nova versão do Botão e do link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
+Lançamos uma nova versão do Link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
 
-[Ir para a documentação de Botão e Link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/intro-button/)
+[Ir para a documentação de Link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/button/intro-button/)
 
 ---
 
@@ -210,17 +210,35 @@ Lançamos uma nova versão do SDK .NET.
 
 ### 3 de abril
 
+----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >
-> Atualização de documentação de API
+> Atualização de documentação de Checkout API
 >
 > NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
 >
-> PRODUCT: API
+> PRODUCT: CHECKOUT API
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Atualização de documentação de Checkout Transparente
+>
+> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
+>
+> PRODUCT: CHECKOUT TRANSPARENTE
+------------
 
 Renovamos a documentação para usar nossas APIs de pagamento. Adicionamos um exemplo básico do formulário no frontend e também diagramas de funcionamento para te ajudar na hora de integrar.
 
-[Ir para a documentação de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction/)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Ir para a documentação de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction/)
+------------
+
+----[mlb]----
+[Ir para a documentação de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction/)
+------------
 
 ---
 
@@ -295,4 +313,4 @@ Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout 
 
 Se você possui campanhas publicitárias para seu negócio, é importante acompanhá-las e ver se elas estão lhe ajudando a concretizar vendas. Para poder melhorá-las e sejam cada vez mais eficientes, acrescentamos a possibilidade de associar um pixel do Facebook e uma tag de acompanhamento de conversões do Google Ads aos pagamentos de seu Checkout Pro.
 
-[Começar a medir a conversão de seus anúncios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/).
+[Começar a medir a conversão de seus anúncios](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/).

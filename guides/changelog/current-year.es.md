@@ -118,15 +118,15 @@ Lanzamos una nueva versión del SDK .NET 1.8.0.
 
 > CHANGELOG
 >
-> Nueva versión de Botón y link de pago
+> Nueva versión de Link de pago
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
-> PRODUCT: BOTÓN Y LINK DE PAGO
+> PRODUCT: LINK DE PAGO
 
-Lanzamos una nueva versión de Botón y link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, e-mail o redes sociales.
+Lanzamos una nueva versión de Link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, e-mail o redes sociales.
 
-[Ir a documentación de Botón y link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/intro-button/)
+[Ir a documentación de Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/intro-button/)
 
 ---
 
@@ -211,17 +211,35 @@ Disponibilizamos una nueva versión de SDK .NET.
 
 ### 3 de abril
 
+----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >
-> Actualización de documentación de API
+> Actualización de documentación de Checkout API
 >
 > NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
 >
-> PRODUCT: API
+> PRODUCT: CHECKOUT API
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Actualización de documentación de Checkout Transparente
+>
+> NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
+>
+> PRODUCT: CHECKOUT TRANSPARENTE
+------------
 
 Renovamos la documentación para usar nuestras APIs de pagos. Agregamos un ejemplo básico del formulario en el frontend y sumamos diagramas de funcionamiento para ayudarte a la hora de integrar.
 
-[Ir a documentación de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Ir a documentación de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+------------
+
+----[mlb]----
+[Ir a documentación de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+------------
 
 ---
 
