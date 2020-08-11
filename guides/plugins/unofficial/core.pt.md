@@ -72,7 +72,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 | Porcentagem de juros | Caso queira adicionar uma porcentagem de juros, preencha um valor, caso não, deixe em 0,00. |
 | Tipo de juros | Emissor - Incluir juros no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir juros no total do pedido. |
 | Número total de parcelas | Coloque o número total de parcelas que será possível escolher por compra. |
-| Número de parcelas sem juros | O número total de parcelas sem juros que será possível realizar o pedido. |
+| Número de parcelas sem juros | O número total de parcelas sem juros que será possível escolher por compra. |
 | Parcela mínima | Valor mínimo disponível para cada parcela de uma compra. |
 | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
 | Ordem | A ordem em que as bandeiras aparecerão no Checkout. |
