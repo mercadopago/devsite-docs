@@ -50,13 +50,7 @@ It's the simplified version of the Checkout Pro with a renewed user experience.
 
 [Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/introduction)
 
-----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
-------------
-
-----[mlb]----
-### Checkout Transparente
-------------
 
 This way of integrating allows you to connect directly with our APIs.
 
