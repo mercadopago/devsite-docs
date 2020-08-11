@@ -6,14 +6,14 @@ sites_supported:
 indexable: false
 ---
 
-# Mercado Pago Gateway: Checkout de Mercado Pago
+# Mercado Pago Gateway: Checkout Pro
 ----[mla, mlb, mlc, mlm, mco, mlu]----
 > NOTE
 >
 > Pre-requisito
 >
 
-> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Checkout de Mercado Pago**
+> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Checkout Pro**
 ------------
 
 ----[mpe]----
@@ -22,7 +22,7 @@ indexable: false
 > Pre-requisito
 >
 
-> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout de Mercado Pago**
+> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout Pro**
 ------------
 </br>
 > WARNING
@@ -33,7 +33,7 @@ indexable: false
 
 ## Integración
 
-La única modificación necesaria para soportar **Modelo Gateway** en el Checkout de Mercado Pago, es agregar el atributo `processing_modes` cuando creas una preferencia.
+La única modificación necesaria para soportar **Modelo Gateway** en el Checkout Pro, es agregar el atributo `processing_modes` cuando creas una preferencia.
 
 [[[
 ```php
@@ -50,9 +50,9 @@ La única modificación necesaria para soportar **Modelo Gateway** en el Checkou
 ```
 ]]]
 
-¡Listo! Tu **Checkout de Mercado Pago** ahora estará funcionando en Modelo Gateway.
+¡Listo! Tu **Checkout Pro** ahora estará funcionando en Modelo Gateway.
 
-> **Modelo híbrido:** todavía no estamos soportando este modelo en Checkout de Mercado Pago. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
+> **Modelo híbrido:** todavía no estamos soportando este modelo en Checkout Pro. Estamos trabajando para tenerlo pronto. Te avisaremos cuando esté listo.
 
 ### Próximos pasos
 

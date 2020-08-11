@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlc
   - mlm
+indexable: false
 ---
 
 # Personalização
@@ -14,9 +15,9 @@ sites_supported:
 >
 > Nota
 >
-> Esta documentação é referente à versão anterior do Checkout.
+> Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
 Na preferência de pagamentos, é possível enviar as informações do item a ser pago, bem como do comprador, além de definir os meios de pagamento que não deseja aceitar, a URL de retorno ao seu site após o pagamento, os métodos de envio, etc.
 
