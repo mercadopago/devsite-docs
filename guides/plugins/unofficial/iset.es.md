@@ -9,11 +9,13 @@
 
 
 iSET es una **plataforma virtual que te permite recibir pagos con Mercado Pago**.
-Puedes ofrecer a tus clientes la posibilidad de pagar con tarjeta de crédito o boleto y [vender directo en tu sitio](#bookmark_checkout_transparente), [cobrar por el sitio de Mercado Pago](#bookmark_checkout_mercado_pago) o por [ambos checkouts](#bookmark_ambos_checkouts).
+Puedes ofrecer a tus clientes la posibilidad de pagar con tarjeta de crédito o boleto y [vender directo en tu sitio](#bookmark_checkout_transparente), [cobrar por el sitio de Mercado Pago](#bookmark_checkout_pro) o por [ambos checkouts](#bookmark_ambos_checkouts).
 
 ## Pasos para configurar
 
 Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
+
+### Checkout Pro
 
 1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.
 1. Activa a Mercado Pago como medio de pago dentro de tu tienda.
@@ -35,7 +37,7 @@ Para **activar tu cuenta de Mercado Pago en iSET**, sigue estos pasos:
 
 ## Configura las formas de pago
 
-Luego de activar Mercado Pago, tienes la opción de ofrecer los siguientes formas de pago: [Checkout Mercado Pago](#bookmark_checkout_mercado_pago), [Checkout Transparente](#bookmark_checkout_transparente) o [ambos checkouts](#bookmark_ambos_checkouts).
+Luego de activar Mercado Pago, tienes la opción de ofrecer los siguientes formas de pago: [Checkout Pro](#bookmark_checkout_pro), [Checkout Transparente](#bookmark_checkout_transparente) o [ambos checkouts](#bookmark_ambos_checkouts).
 
 También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) y configurar las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de tus ventas online cuando quieras.
 
@@ -50,7 +52,7 @@ También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_
     ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
-### Checkout Mercado Pago
+### Checkout Pro
 
 **El comprador será redireccionado a Mercado Pago** para realizar el pago y terminar la compra.
 

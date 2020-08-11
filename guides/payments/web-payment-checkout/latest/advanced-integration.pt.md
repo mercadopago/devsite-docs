@@ -263,7 +263,7 @@ Parâmetro |	Descrição
 `processing_mode` | Valor `aggregator`. |
 `merchant_account_id` | Valor `null`. |
 
-> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Mercado Pago e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure_**.
+> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure_**.
 
 [[[
 ```php
@@ -355,7 +355,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Outras funcionalidades
 >
-> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
+> Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
 >
 > [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
 

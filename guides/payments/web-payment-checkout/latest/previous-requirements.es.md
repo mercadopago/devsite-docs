@@ -19,7 +19,7 @@ Término | Descripción
 ------------ | -------------
 _Preferencia (preference)_ | Es la **información del producto o servicio que se quiere ofrecer.** Entre los atributos más importantes de una preferencia se definen: la descripción, el monto y los items. Al generarla se obtiene la URL para iniciar el flujo de pago.
 _Credenciales (credentials)_ | Tus credenciales son las **claves que te proporcionamos para que puedas configurar tus integraciones.**<br/><br/>**Public key**. Clave pública de la aplicación para conocer, por ejemplo, los medios de pago y cifrar datos de tarjeta. Debes usarla solo para tus integraciones.<br/>**Access token**. Clave privada de la aplicación para generar pagos. Debes usarla solo para tus integraciones.<br/><br/>Para poder encontrarlas, ve a tus <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> y selecciona las productivas.<br/><br/>
-_Punto de inicio (init_point)_ | **Es la URL que se obtiene al momento de generar la preferencia** y que da inicio al flujo de pago del Checkout de Mercado Pago.
+_Punto de inicio (init_point)_ | **Es la URL que se obtiene al momento de generar la preferencia** y que da inicio al flujo de pago del Checkout Pro.
 _Ítem (ítem)_ | Hace referencia al producto o servicio que se quiere ofrecer. Puede ser uno o una lista.
 _Aplicación (application)_ | Las aplicaciones sirven para procesar los pagos del vendedor. **Cada aplicación identifica a una integración en particular**, ya que cada una tiene sus <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a>propias. Una cuenta de Mercado Pago puede tener múltiples aplicaciones.<br/><br/>Puedes encontrar la información de cada una en credenciales. Al ingresar, se creará una automáticamente o puedes <a href="https://applications.mercadopago.com/" target="_blank"> crear una aplicación</a> cada vez que lo necesites.
 
@@ -96,19 +96,13 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
 
-> NOTE
->
-> Nota
->
-> Esta documentación refiere a la nueva versión del Checkout de Mercado Pago. Para **ver la versión anterior**, ve a la [sección de Checkout de Mercado Pago antigua](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/introduction/).
-
 ---
 
 ### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Integra Checkout de Mercado Pago
+> Integra Checkout Pro
 >
 > Sigue el paso a paso para comenzar a recibir pagos en tu sitio.
 >

@@ -5,7 +5,7 @@ sites_supported:
 
 # Recibir pagos
 
-Recibe pagos de manera simple y segura utilizando el Checkout de Mercado Pago.
+Recibe pagos de manera simple y segura utilizando el Checkout Pro.
 
 ## 1. Crea una preferencia de pago
 

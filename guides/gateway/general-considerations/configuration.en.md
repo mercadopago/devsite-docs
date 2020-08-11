@@ -125,5 +125,5 @@ Get in touch with your sales representative.
 ### Next steps
 
 
-* [Integrate the Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/gateway/web-checkout/receiving-payments) for the Gateway Model
+* [Integrate the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/gateway/web-checkout/receiving-payments) for the Gateway Model
 * [Integrate the API](https://www.mercadopago.com.ar/developers/en/guides/gateway/api/receiving-payments) for the Gateway Model

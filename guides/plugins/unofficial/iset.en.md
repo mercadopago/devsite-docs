@@ -8,7 +8,7 @@
 ## What is iSET?
 
 iSET is a **virtual platform that allows you to receive payments with Mercado Pago**. 
-You can offer your clients the possibility of paying by credit card or boleto and [you can sell directly on your site](#bookmark_transparent_checkout), [charge through Mercado Pago website](#bookmark_mercado_pago_checkout) or through [both checkouts](#bookmark_both_checkouts).
+You can offer your clients the possibility of paying by credit card or boleto and [you can sell directly on your site](#bookmark_transparent_checkout), [charge through Mercado Pago website](#bookmark_checkout_pro) or through [both checkouts](#bookmark_both_checkouts).
 
 ## Setting steps
 
@@ -34,7 +34,7 @@ Done! Mercado Pago is now installed on your store.
 
 ## Set payment methods
 
-After activating Mercado Pago, you have the option to offer the following payment methods: [Mercado Pago Checkout](#bookmark_mercado_pago_checkout), [Transparent Checkout](#bookmark_transparent_checkout) or [both checkouts](#bookmark_both_checkouts).
+After activating Mercado Pago, you have the option to offer the following payment methods: [Checkout Pro](#bookmark_checkout_pro), [Transparent Checkout](#bookmark_transparent_checkout) or [both checkouts](#bookmark_both_checkouts).
 
 You also have the option to [offer interest free installments](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) and set the [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) of your online sales whenever you want.
 
@@ -49,7 +49,7 @@ You also have the option to [offer interest free installments](#bookmark_set_int
     ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
-### Mercado Pago Checkout
+### Checkout Pro
 
 **The buyer will be redirected to Mercado Pago** to make the payment and complete the purchase.
 

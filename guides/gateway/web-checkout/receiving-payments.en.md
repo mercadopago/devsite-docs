@@ -6,14 +6,14 @@ sites_supported:
 indexable: false
 ---
 
-# Mercado Pago Gateway: Mercado Pago Checkout
+# Mercado Pago Gateway: Checkout Pro
 
 > NOTE
 >
 > Pre-requisites
 >
 
-> Have already integrated the [Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
+> Have already integrated the [Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction)
 
 </br>
 > WARNING
@@ -24,7 +24,7 @@ indexable: false
 
 ## Integration
 
-There is only one necessary change to support the **Gateway Model** in the Mercado Pago Checkout: add the `processing_modes` attribute when you create a preference:
+There is only one necessary change to support the **Gateway Model** in the Checkout Pro: add the `processing_modes` attribute when you create a preference:
 
 [[[
 ```php
@@ -41,9 +41,9 @@ There is only one necessary change to support the **Gateway Model** in the Merca
 ```
 ]]]
 
-Done! Your **Mercado Pago Checkout** is now working in the Gateway Model.
+Done! Your **Checkout Pro** is now working in the Gateway Model.
 
-> **Hybrid model:** the Mercado Pago Checkout doesn't support this mode yet. We are working to have this option soon. We'll let you know when is available to use.
+> **Hybrid model:** the Checkout Pro doesn't support this mode yet. We are working to have this option soon. We'll let you know when is available to use.
 
 ### Next steps
 

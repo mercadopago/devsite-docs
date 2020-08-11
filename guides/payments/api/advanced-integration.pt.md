@@ -683,7 +683,7 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > Outras funcionalidades
 >
-> Configure seus pagamentos e adapte a integração do Mercado Pago ao seu negócio.
+> Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
 >
 > [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-features/)
 

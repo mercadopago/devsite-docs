@@ -20,7 +20,7 @@ SSL                       | É um requisito que você tenha um certificado SSL.<
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Checkout Mercado Pago)](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/)
+* [Checkout básico (Checkout Pro)](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/)
     * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
     * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/)
 
@@ -103,7 +103,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 3) Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**.
 Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usuário deve retornar a sua loja ao finalizar o checkout (**Auto Redirect**).
 
-![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
+![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 4)  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
