@@ -1,11 +1,7 @@
 # Integrate other payment methods
 
-----[mlb]----
 With Checkout API of Mercado Pago, you can add **alternative payment methods for your customers to make their payments**.
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-With Checkout API of Mercado Pago, you can add **alternative payment methods for your customers to make their payments**.
-------------
+
 
 ----[mla]----
 
