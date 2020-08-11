@@ -6,6 +6,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## August 2020
 
+### August 12th
+
+> CHANGELOG
+>
+> New version of SDK .NET
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK .NET
+
+We have released a new version of SDK .NET 1.8.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-dotnet/releases/tag/1.8.1) for further details regarding this release.
+
 ### August 7th
 
 > CHANGELOG
