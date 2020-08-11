@@ -144,7 +144,7 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 ------------
 
 ----[mlb]----
-[Integrar por Checkout Transparente](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+[Integrar Checkout Transparente](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
 ------------
 
 ## Cómo ofrecer mensualidades sin intereses
