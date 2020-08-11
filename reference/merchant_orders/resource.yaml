@@ -1,342 +1,164 @@
----
-type: object
-properties:
-- id:
-    type: Integer
-    description:
-      en: Order identifier.
-      es: Identificador de orden.
-      pt: Identificador de ordem.
-- preference_id:
-    type: String(UUID)
-    description:
-      en: Payment preference identifier associated to the merchant order.
-      es: Identificador de la preferencia de pago asociado a la orden.
-      pt: Identificação da preferência de pagamento associados à ordem.
-- date_created:
-    type: Date(ISO_8601)
-    description:
-      en: Order's creation date.
-      es: Fecha de creación de la orden.
-      pt: Data de criação da ordem.
-- last_updated:
-    type: Date(ISO_8601)
-    description:
-      en: Order's last update date.
-      es: Fecha de última actulización de la orden.
-      pt: Data da última actualização da ordem.
-- application_id:
-    type: String
-    description:
-      en: application identifier.
-      es: Identificador de aplicación.
-      pt: Id do aplicativo.
-- status:
-    type: String
-    description:
-      en: Show the current merchant order state.
-      es: Muestra el estado actual de la orden.
-      pt: Exibe o estado atual da ordem.
-    enum:
-    - opened:
-        en: Order without payments.
-        es: Orden sin pagos.
-        pt: Order without payments.
-    - closed:
-        en: Order with payments covering total amount.
-        es: Orden con pagos que cubren el monto total.
-        pt: Order with payments covering total amount.
-- site_id:
-    type: String
-    description:
-      en: Country identifier that merchant order belongs to.
-      es: Identificador de país al que pertenece la orden.
-      pt: Identificador do país a que pertence a ordem.
-- payer:
-    type: Object
-    description:
-      en: Buyer Information.
-      es: Información del comprador.
-      pt: Informação do comprador.
-    properties:
-    - id:
-        type: Integer
-        description:
-          en: Buyer id.
-          es: Identificador del comprador.
-          pt: Id do comprador.
-    - email:
-        type: String(256)
-        description:
-          en: Buyer e-mail address.
-          es: E-mail del comprador.
-          pt: E-mail do comprador.
-    - nickname:
-        type: String(256)
-        description:
-          en: Buyer nickname.
-          es: Nickname del comprador.
-          pt: Nick do comprador.
-- collector:
-    type: Object
-    description:
-      en: Mercado Pago seller ID.
-      es: Identificador del vendedor en Mercado Pago.
-      pt: Id do vendedor no Mercado Pago.
-    properties:
-    - id:
-        type: Integer
-        description:
-          en: Collector id.
-          es: Identificador del collector.
-          pt: Id do collector.
-    - email:
-        type: String(256)
-        description:
-          en: Collector e-mail address.
-          es: E-mail del collector.
-          pt: E-mail do collector.
-    - nickname:
-        type: String(256)
-        description:
-          en: Collector nickname.
-          es: Nickname del collector.
-          pt: Nick do collector.
-- sponsor_id:
-    type: Integer
-    description:
-      en: Sponsor ID in Mercado Pago.
-      es: Identificador del sponsor en Mercado Pago.
-      pt: Sponsor ID in Mercado Pago.
-- payments:
-    type: Array(Object)
-    description:
-      en: Payments information.
-      es: Información de los pagos.
-      pt: Payments information.
-    properties:
-    - id:
-        type: Integer
-        description:
-          en: Payment id.
-          es: Identificador del pago.
-          pt: Id do pagamento.
-    - transaction_amount:
-        type: Float
-        description:
-          en: Product Cost.
-          es: Costo del producto.
-          pt: Custo do produto.
-    - total_paid_amount:
-        type: Float
-        description:
-          en: Total amount paid by the buyer.
-          es: Monto total pagado por el comprador.
-          pt: Montante total pago pelo comprador.
-    - shipping_cost:
-        type: Float
-        description:
-          en: Shipping fee.
-          es: Costo de envío.
-          pt: Custo de transporte.
-    - currency_id:
-        type: String(3)
-        description:
-          en: ID of the currency used in the payment.
-          es: Identificador de la moneda utilizada en el pago.
-          pt: Identificador da moeda utilizada no pagamento.
-        enum:
-        - ARS:
-            en: Argentine peso.
-            es: Peso argentino.
-            pt: Argentine peso.
-        - BRL:
-            en: Brasil real.
-            es: Real brasilero.
-            pt: Brasil real.
-        - CLP:
-            en: Chilean peso.
-            es: Peso chileno.
-            pt: Chilean peso.
-        - MXN:
-            en: Mexican peso.
-            es: Peso mexicano.
-            pt: Mexican peso.
-        - COP:
-            en: Colombian peso.
-            es: Peso colombiano.
-            pt: Colombian peso.
-        - PEN:
-            en: Peruvian sol.
-            es: Sol peruano.
-            pt: Peruvian sol.
-        - UYU:
-            en: Uruguayan peso.
-            es: Peso uruguayo.
-            pt: Uruguayan peso.
-    - status:
-        type: String
-        description:
-          en: Payment status.
-          es: Estado del pago.
-          pt: Estado do pagamento.
-        enum:
-          - pending:
-              en: The user has not yet completed the payment process.
-              es: El usuario no completó el proceso de pago todavía.
-              pt: The user has not yet completed the payment process.
-          - approved:
-              en: The payment has been approved and accredited.
-              es: El pago fue aprobado y acreditado.
-              pt: The payment has been approved and accredited.
-          - authorized:
-              en: The payment has been authorized but not captured yet.
-              es: El pago fue autorizado pero no capturado todavía.
-              pt: The payment has been authorized but not captured yet.
-          - in_process:
-              en: Payment is being reviewed.
-              es: El pago está en revisión.
-              pt: Payment is being reviewed.
-          - in_mediation:
-              en: Users have initiated a dispute.
-              es: El usuario inició una disputa.
-              pt: Users have initiated a dispute.
-          - rejected:
-              en: Payment was rejected. The user may retry payment.
-              es: El pago fue rechazado. El usuario podría reintentar el pago.
-              pt: Payment was rejected. The user may retry payment.
-          - cancelled:
-              en: Payment was cancelled by one of the parties or because time for payment has expired.
-              es: El pago fue cancelado por una de las partes o el pago expiró.
-              pt: Payment was cancelled by one of the parties or because time for payment has expired.
-          - refunded:
-              en: Payment was refunded to the user.
-              es: El pago fue devuelto al usuario.
-              pt: Payment was refunded to the user.
-          - charged_back:
-              en: Was made a chargeback in the buyer's credit card.
-              es: Se ha realizado un contracargo en la tarjeta de crédito del comprador.
-              pt: Was made a chargeback in the buyer's credit card.
-    - status_detail:
-        type: String
-        description:
-          en: Gives more detailed information on the current state or rejection cause.
-          es: Brinda más información del estado del pago o de la causa de rechazo.
-          pt: Fornece mais informações do status do pagamento ou da causa de rejeição.
-    - operation_type:
-        type: String
-        description:
-          en: Operation data_type.
-          es: data_type de la operación.
-          pt: data_type da operação.
-        enum:
-          - regular_payment:
-              en: Typification by default of a purchase being paid using Mercado Pago.
-              es: Tipificación por defecto de una compra pagada por Mercado Pago.
-              pt: Typification by default of a purchase being paid using Mercado Pago.
-          - payment_addition:
-              en: Addition of money to an existing payment, done in Mercado Pago's site.
-              es: Agregado de dinero a un pago ya realizado en Mercado Pago.
-              pt: Addition of money to an existing payment, done in Mercado Pago's site.
-          - money_transfer:
-              en: Funds transfer between two users.
-              es: Transferencia de fondos entre usuarios.
-              pt: Funds transfer between two users.
-          - recurring_payment:
-              en: Automatic recurring payment due to an active user subscription.
-              es: Pago recurrente automático por una suscripción de un usuario activo.
-              pt: Automatic recurring payment due to an active user subscription.
-          - account_fund:
-              en: Money income in the user's account.
-              es: Ingreso de fondos en la cuenta del usuario.
-              pt: Money income in the user's account,.
-          - cellphone_recharge:
-              en: Recharge of a user's cellophone account.
-              es: Recarga de la cuenta telefónica de un usuario.
-              pt: Recharge of an user's cellphone account.
-          - pos_payment:
-              en: Payment done through a Point Of Sale.
-              es: Pago realizado en un dispositivo POS.
-              pt: Payment done through a Point Of Sale.
-    - date_approved:
-        type: Date(ISO_8601)
-        description:
-          en: Payment's approvation date.
-          es: Fecha de aprobación del pago
-          pt: Data de aprovação do pagamento
-    - date_created:
-        type: Date(ISO_8601)
-        description:
-          en: Payment's creation date.
-          es: Fecha de creación del pago.
-          pt: Data de criação do pagamento.
-    - last_modified:
-        type: Date(ISO_8601)
-        description:
-          en: Payment's last modification date.
-          es: Fecha de última actualización del pago.
-          pt: Data da última atualização do pagamento.
-    - amount_refunded:
-        type: Float
-        description:
-          en: Amount refunded in this payment.
-          es: Monto reembolsado en este pago.
-          pt: Valor reembolsado a esse pagamento.
-- paid_amount:
-    type: Float
-    description:
-      en: Amount paid in this Order.
-      es: Monto pagado en la orden.
-      pt: Valor pago na ordem.
-- refunded_amount:
-    type: Float
-    description:
-      en: Amount refunded in this Order.
-      es: Monto reembolsado en la orden.
-      pt: Montante reembolsado no caso de na ordem.
-- shipping_cost:
-    type: Float
-    description:
-      en: Shipping fee.
-      es: Costo de envío.
-      pt: Custo de transporte.
-- cancelled:
-    type: Boolean
-    description:
-      en: If the Order is expired or not.
-      es: Indica si la orden está expirada o no.
-      pt: Indica se a ordem está expirada ou não.
-- items:
-    type: Array(Object)
-    description:
-      en: items information.
-      es: Información de los ítems.
-      pt: Informação do item.
-    properties:
-    - id:
-        type: String
-        description:
-          en: Item id.
-          es: Identificador del ítem.
-          pt: Id do anúncio.
-        enum:
-          - put:
-              en: Required in PUT
-              es: Requerido en PUT
-              pt: Required in PUT
-    - category_id:
-        type: String
-        description:
-          en: Item category.
-          es: Category del ítem.
-          pt: Categoria do item.
-    - currency_id:
-        type: String(3)
-        description:
-          en: ID of the currency used in the item price.
-          es: Identificador de la moneda utilizada en el precio del ítem.
-          pt: Identificador da moeda utilizada no preço do item.
-        enum:
+title: Merchant Orders API
+key: merchant_orders
+order: 11
+baseUri: https://api.mercadopago.com
+paths:
+  /merchant_orders:
+    methods:
+      - post
+  /merchant_orders/{id}:
+    methods:
+      - get
+      - put
+  /merchant_orders/search:
+    methods:
+      - get
+definitions:
+  type: object
+  properties:
+  - id:
+      type: Integer
+      description:
+        en: Order identifier.
+        es: Identificador de orden.
+        pt: Identificador de ordem.
+  - preference_id:
+      type: String(UUID)
+      description:
+        en: Payment preference identifier associated to the merchant order.
+        es: Identificador de la preferencia de pago asociado a la orden.
+        pt: Identificação da preferência de pagamento associados à ordem.
+  - date_created:
+      type: Date(ISO_8601)
+      description:
+        en: Order's creation date.
+        es: Fecha de creación de la orden.
+        pt: Data de criação da ordem.
+  - last_updated:
+      type: Date(ISO_8601)
+      description:
+        en: Order's last update date.
+        es: Fecha de última actulización de la orden.
+        pt: Data da última actualização da ordem.
+  - application_id:
+      type: String
+      description:
+        en: application identifier.
+        es: Identificador de aplicación.
+        pt: Id do aplicativo.
+  - status:
+      type: String
+      description:
+        en: Show the current merchant order state.
+        es: Muestra el estado actual de la orden.
+        pt: Exibe o estado atual da ordem.
+      enum:
+      - opened:
+          en: Order without payments.
+          es: Orden sin pagos.
+          pt: Order without payments.
+      - closed:
+          en: Order with payments covering total amount.
+          es: Orden con pagos que cubren el monto total.
+          pt: Order with payments covering total amount.
+      - expired:
+          en: "Canceled order (canceled: true) that does not have approved or pending payments (all rejected or returned)."
+          es: "Orden cancelada (cancelled: true) que no posee pagos aprobados ni pendientes (todos rechazados o devueltos)."
+          pt: "Pedido cancelado (cancelled: true) que não possui pagamentos aprovados ou pendentes (todos rejeitados ou devolvidos)."
+  - site_id:
+      type: String
+      description:
+        en: Country identifier that merchant order belongs to.
+        es: Identificador de país al que pertenece la orden.
+        pt: Identificador do país a que pertence a ordem.
+  - payer:
+      type: Object
+      description:
+        en: Buyer Information.
+        es: Información del comprador.
+        pt: Informação do comprador.
+      properties:
+      - id:
+          type: Integer
+          description:
+            en: Buyer id.
+            es: Identificador del comprador.
+            pt: Id do comprador.
+      - email:
+          type: String(256)
+          description:
+            en: Buyer e-mail address.
+            es: E-mail del comprador.
+            pt: E-mail do comprador.
+      - nickname:
+          type: String(256)
+          description:
+            en: Buyer nickname.
+            es: Nickname del comprador.
+            pt: Nick do comprador.
+  - collector:
+      type: Object
+      description:
+        en: Mercado Pago seller ID.
+        es: Identificador del vendedor en Mercado Pago.
+        pt: Id do vendedor no Mercado Pago.
+      properties:
+      - id:
+          type: Integer
+          description:
+            en: Collector id.
+            es: Identificador del collector.
+            pt: Id do collector.
+      - nickname:
+          type: String(256)
+          description:
+            en: Collector nickname.
+            es: Nickname del collector.
+            pt: Nick do collector.
+  - sponsor_id:
+      type: Integer
+      description:
+        en: Sponsor ID in Mercado Pago.
+        es: Identificador del sponsor en Mercado Pago.
+        pt: Sponsor ID in Mercado Pago.
+  - payments:
+      type: Array(Object)
+      description:
+        en: Payments information.
+        es: Información de los pagos.
+        pt: Payments information.
+      properties:
+      - id:
+          type: Integer
+          description:
+            en: Payment id.
+            es: Identificador del pago.
+            pt: Id do pagamento.
+      - transaction_amount:
+          type: Float
+          description:
+            en: Product Cost.
+            es: Costo del producto.
+            pt: Custo do produto.
+      - total_paid_amount:
+          type: Float
+          description:
+            en: Total amount paid by the buyer.
+            es: Monto total pagado por el comprador.
+            pt: Montante total pago pelo comprador.
+      - shipping_cost:
+          type: Float
+          description:
+            en: Shipping fee.
+            es: Costo de envío.
+            pt: Custo de transporte.
+      - currency_id:
+          type: String(3)
+          description:
+            en: ID of the currency used in the payment.
+            es: Identificador de la moneda utilizada en el pago.
+            pt: Identificador da moeda utilizada no pagamento.
+          enum:
           - ARS:
               en: Argentine peso.
               es: Peso argentino.
@@ -365,440 +187,635 @@ properties:
               en: Uruguayan peso.
               es: Peso uruguayo.
               pt: Uruguayan peso.
-    - description:
-        type: String
-        description:
-          en: Item description.
-          es: Descripción del ítem.
-          pt: Descrição do anúncio.
-    - picture_url:
-        type: String
-        description:
-          en: Item picture URL.
-          es: URL de imagen del ítem.
-          pt: URL da imagem do anúncio.
-    - quantity:
-        type: Integer
-        description:
-          en: Item quantity.
-          es: Cantidad de items.
-          pt: Item quantity.
-        enum:
-          - put:
-              en: This is the only field of item that can be modified in put
-              es: Este es el único campo de ítem que puede ser modificado con un put put
-              pt: This is the only field of item that can be modified in put
-    - unit_price:
-        type: Float
-        description:
-          en: Item unit price.
-          es: Precio unitario del ítem.
-          pt: Preço unitário do item.
-    - title:
-        type: String
-        description:
-          en: Item title.
-          es: Título del ítem.
-          pt: Título do item.
-- shipments:
-    type: Array(Object)
-    description:
-      en: Shipments information.
-      es: Información de los envíos.
-      pt: Shipments information.
-    properties:
-      - id:
-          type: Integer
-          description:
-            en: Shipping identifier.
-            es: Identificador del envío.
-            pt: Id do frete.
-      - shipment_type:
-          type: String
-          description:
-            en: Shipping type.
-            es: Tipo de envío.
-            pt: Tipo de transporte.
-      - shipping_mode:
-          type: String
-          description:
-            en: Shipping mode.
-            es: Modo de envío.
-            pt: Modo de envio.
-      - picking_type:
-          type: String
-          description:
-            en: Shipping picking type.
-            es: Tipo de retiro de envío.
-            pt: Taxa de remoção de envio.
       - status:
           type: String
           description:
-            en: Shipping picking type.
-            es: Tipo de retiro de envío.
-            pt: Taxa de remoção de envio.
-      - substatus:
+            en: Payment status.
+            es: Estado del pago.
+            pt: Estado do pagamento.
+          enum:
+            - pending:
+                en: The user has not yet completed the payment process.
+                es: El usuario no completó el proceso de pago todavía.
+                pt: The user has not yet completed the payment process.
+            - approved:
+                en: The payment has been approved and accredited.
+                es: El pago fue aprobado y acreditado.
+                pt: The payment has been approved and accredited.
+            - authorized:
+                en: The payment has been authorized but not captured yet.
+                es: El pago fue autorizado pero no capturado todavía.
+                pt: The payment has been authorized but not captured yet.
+            - in_process:
+                en: Payment is being reviewed.
+                es: El pago está en revisión.
+                pt: Payment is being reviewed.
+            - in_mediation:
+                en: Users have initiated a dispute.
+                es: El usuario inició una disputa.
+                pt: Users have initiated a dispute.
+            - rejected:
+                en: Payment was rejected. The user may retry payment.
+                es: El pago fue rechazado. El usuario podría reintentar el pago.
+                pt: Payment was rejected. The user may retry payment.
+            - cancelled:
+                en: Payment was cancelled by one of the parties or because time for payment has expired.
+                es: El pago fue cancelado por una de las partes o el pago expiró.
+                pt: Payment was cancelled by one of the parties or because time for payment has expired.
+            - refunded:
+                en: Payment was refunded to the user.
+                es: El pago fue devuelto al usuario.
+                pt: Payment was refunded to the user.
+            - charged_back:
+                en: Was made a chargeback in the buyer's credit card.
+                es: Se ha realizado un contracargo en la tarjeta de crédito del comprador.
+                pt: Was made a chargeback in the buyer's credit card.
+      - status_detail:
           type: String
           description:
-            en: Shipping picking type.
-            es: Tipo de retiro de envío.
-            pt: Taxa de remoção de envio.
-      - items:
-          type: Array(Object)
+            en: Gives more detailed information on the current state or rejection cause.
+            es: Brinda más información del estado del pago o de la causa de rechazo.
+            pt: Fornece mais informações do status do pagamento ou da causa de rejeição.
+      - operation_type:
+          type: String
           description:
-            en: Shipping items.
-            es: Ítems a enviar.
-            pt: Itens a enviar.
+            en: Operation data_type.
+            es: data_type de la operación.
+            pt: data_type da operação.
+          enum:
+            - regular_payment:
+                en: Typification by default of a purchase being paid using Mercado Pago.
+                es: Tipificación por defecto de una compra pagada por Mercado Pago.
+                pt: Typification by default of a purchase being paid using Mercado Pago.
+            - payment_addition:
+                en: Addition of money to an existing payment, done in Mercado Pago's site.
+                es: Agregado de dinero a un pago ya realizado en Mercado Pago.
+                pt: Addition of money to an existing payment, done in Mercado Pago's site.
+            - money_transfer:
+                en: Funds transfer between two users.
+                es: Transferencia de fondos entre usuarios.
+                pt: Funds transfer between two users.
+            - recurring_payment:
+                en: Automatic recurring payment due to an active user subscription.
+                es: Pago recurrente automático por una suscripción de un usuario activo.
+                pt: Automatic recurring payment due to an active user subscription.
+            - account_fund:
+                en: Money income in the user's account.
+                es: Ingreso de fondos en la cuenta del usuario.
+                pt: Money income in the user's account,.
+            - cellphone_recharge:
+                en: Recharge of a user's cellophone account.
+                es: Recarga de la cuenta telefónica de un usuario.
+                pt: Recharge of an user's cellphone account.
+            - pos_payment:
+                en: Payment done through a Point Of Sale.
+                es: Pago realizado en un dispositivo POS.
+                pt: Payment done through a Point Of Sale.
+      - date_approved:
+          type: Date(ISO_8601)
+          description:
+            en: Payment's approvation date.
+            es: Fecha de aprobación del pago
+            pt: Data de aprovação do pagamento
       - date_created:
           type: Date(ISO_8601)
           description:
-            en: Shipping's creation date.
-            es: Fecha de creación del envío.
-            pt: Data de criação do frete.
+            en: Payment's creation date.
+            es: Fecha de creación del pago.
+            pt: Data de criação do pagamento.
       - last_modified:
           type: Date(ISO_8601)
           description:
-            en: Shipping's last modification date.
-            es: Fecha de última actualización del envío.
-            pt: Data da última atualização do frete.
-      - date_first_printed:
-          type: Date(ISO_8601)
+            en: Payment's last modification date.
+            es: Fecha de última actualización del pago.
+            pt: Data da última atualização do pagamento.
+      - amount_refunded:
+          type: Float
           description:
-            en: Shipping's first printed date.
-            es: Primera fecha de impresión del envío.
-            pt: Primeira data de impressão do frete.
-      - service_id:
+            en: Amount refunded in this payment.
+            es: Monto reembolsado en este pago.
+            pt: Valor reembolsado a esse pagamento.
+  - paid_amount:
+      type: Float
+      description:
+        en: Amount paid in this Order.
+        es: Monto pagado en la orden.
+        pt: Valor pago na ordem.
+  - refunded_amount:
+      type: Float
+      description:
+        en: Amount refunded in this Order.
+        es: Monto reembolsado en la orden.
+        pt: Montante reembolsado no caso de na ordem.
+  - shipping_cost:
+      type: Float
+      description:
+        en: Shipping fee.
+        es: Costo de envío.
+        pt: Custo de transporte.
+  - cancelled:
+      type: Boolean
+      description:
+        en: If the Order is expired or not.
+        es: Indica si la orden está expirada o no.
+        pt: Indica se a ordem está expirada ou não.
+  - items:
+      type: Array(Object)
+      description:
+        en: items information.
+        es: Información de los ítems.
+        pt: Informação do item.
+      properties:
+      - id:
           type: String
           description:
-            en: Shipping service identifier.
-            es: Identificador de servicio del envío.
-            pt: Identificador de serviço do transporte.
-      - sender_id:
+            en: Item id.
+            es: Identificador del ítem.
+            pt: Id do anúncio.
+          enum:
+            - put:
+                en: Required in PUT
+                es: Requerido en PUT
+                pt: Required in PUT
+      - category_id:
+          type: String
+          description:
+            en: Item category.
+            es: Category del ítem.
+            pt: Categoria do item.
+      - currency_id:
+          type: String(3)
+          description:
+            en: ID of the currency used in the item price.
+            es: Identificador de la moneda utilizada en el precio del ítem.
+            pt: Identificador da moeda utilizada no preço do item.
+          enum:
+            - ARS:
+                en: Argentine peso.
+                es: Peso argentino.
+                pt: Argentine peso.
+            - BRL:
+                en: Brasil real.
+                es: Real brasilero.
+                pt: Brasil real.
+            - CLP:
+                en: Chilean peso.
+                es: Peso chileno.
+                pt: Chilean peso.
+            - MXN:
+                en: Mexican peso.
+                es: Peso mexicano.
+                pt: Mexican peso.
+            - COP:
+                en: Colombian peso.
+                es: Peso colombiano.
+                pt: Colombian peso.
+            - PEN:
+                en: Peruvian sol.
+                es: Sol peruano.
+                pt: Peruvian sol.
+            - UYU:
+                en: Uruguayan peso.
+                es: Peso uruguayo.
+                pt: Uruguayan peso.
+      - description:
+          type: String
+          description:
+            en: Item description.
+            es: Descripción del ítem.
+            pt: Descrição do anúncio.
+      - picture_url:
+          type: String
+          description:
+            en: Item picture URL.
+            es: URL de imagen del ítem.
+            pt: URL da imagem do anúncio.
+      - quantity:
           type: Integer
           description:
-            en: Sender identifier.
-            es: Identificador del emisor.
-            pt: Id do remetente.
-      - receiver_id:
-          type: Integer
+            en: Item quantity.
+            es: Cantidad de items.
+            pt: Item quantity.
+          enum:
+            - put:
+                en: This is the only field of item that can be modified in put
+                es: Este es el único campo de ítem que puede ser modificado con un put put
+                pt: This is the only field of item that can be modified in put
+      - unit_price:
+          type: Float
           description:
-            en: Receiver identifier.
-            es: Identificador del receptor.
-            pt: Id do receptor.
-      - receiver_address:
-          type: Object
+            en: Item unit price.
+            es: Precio unitario del ítem.
+            pt: Preço unitário do item.
+      - title:
+          type: String
           description:
-            en: Shipping address.
-            es: Dirección de envío.
-            pt: Endereço de envio.
-          properties:
-            - id:
-                type: Integer
-                description:
-                  en: Identifier of receiver address.
-                  es: Identifier of receiver address.
-                  pt: Identifier of receiver address.
-            - address_line:
-                type: String
-                description:
-                  en: Street name and number of receiver address.
-                  es: Street name and number of receiver address.
-                  pt: Street name and number of receiver address.
-            - apartment:
-                type: String(256)
-                description:
-                  en: Apartment.
-                  es: Apartmento.
-                  pt: Apartamento.
-            - city:
-                type: Object
-                description:
-                  en: Information about receiver address city.
-                  es: Information about receiver address city.
-                  pt: Information about receiver address city.
-                properties:
-                  - id:
-                      type: String
-                      description:
-                        en: City identifier.
-                        es: City Identifier.
-                        pt: City Identifier.
-                  - name:
-                      type: String
-                      description:
-                        en: City name.
-                        es: City name.
-                        pt: City name.
-            - country:
-                type: Object
-                description:
-                  en: Information about receiver address country.
-                  es: Inforamtion about receiver address country.
-                  pt: Information about receiver address country.
-                properties:
-                  - id:
-                      type: String
-                      description:
-                        en: Country identifier.
-                        es: Country identifier.
-                        pt: Country identifier.
-                  - name:
-                      type: String
-                      description:
-                        en: Country name.
-                        es: Country name.
-                        pt: Country name.
-            - state:
-                type: Object
-                description:
-                  en: Information about receiver address state.
-                  es: Information about receiver address state.
-                  pt: Information about receiver address state.
-                properties:
-                  - id:
-                      type: String
-                      description:
-                        en: State identifier.
-                        es: State identifier.
-                        pt: State identifier.
-                  - name:
-                      type: String
-                      description:
-                        en: State name.
-                        es: State name.
-                        pt: State name.
-            - comment:
-                type: String
-                description:
-                  en: Comment about receiver address.
-                  es: Comment about receiver address.
-                  pt: Comment about receiver address.
-            - contact:
-                type: String
-                description:
-                  en: Contact information.
-                  es: Contact information.
-                  pt: Contact information.
-            - zip_code:
-                type: String(256)
-                description:
-                  en: Zip code.
-                  es: Código postal.
-                  pt: Código postal.
-            - street_name:
-                type: String(256)
-                description:
-                  en: Street name.
-                  es: Calle.
-                  pt: Rua.
-            - street_number:
-                type: String(256)
-                description:
-                  en: Street number.
-                  es: Número.
-                  pt: O Número.
-            - floor:
-                type: String(256)
-                description:
-                  en: Floor.
-                  es: Piso.
-                  pt: Apartamento.
-            - phone:
-                type: String(256)
-                description:
-                  en: Receiver address phone.
-                  es: Receiver address phone.
-                  pt: Receiver address phone.
-            - latitude:
-                type: String(256)
-                description:
-                  en: Receiver address latitude.
-                  es: Receiver address latitude.
-                  pt: Receiver address latitude.
-            - longitude:
-                type: String(256)
-                description:
-                  en: Receiver address longitude.
-                  es: Receiver address longitude.
-                  pt: Receiver address longitude.
-      - shipping_option:
-          type: Object
-          description:
-            en: Shipping options.
-            es: Shipping options.
-            pt: Shipping options.
-          properties:
-            - cost:
-                type: Float
-                description:
-                  en: Net cost absorbed by the receiver.
-                  es: Net cost absorbed by the receiver.
-                  pt: Net cost absorbed by the receiver.
-            - currency_id:
-                type: String(3)
-                description:
-                  en: Currency identifier.
-                  es: Currency identifier.
-                  pt: Currency identifier.
-                enum:
-                  - ARS:
-                      en: Argentine peso.
-                      es: Peso argentino.
-                      pt: Argentine peso.
-                  - BRL:
-                      en: Brasil real.
-                      es: Real brasilero.
-                      pt: Brasil real.
-                  - CLP:
-                      en: Chilean peso.
-                      es: Peso chileno.
-                      pt: Chilean peso.
-                  - MXN:
-                      en: Mexican peso.
-                      es: Peso mexicano.
-                      pt: Mexican peso.
-                  - COP:
-                      en: Colombian peso.
-                      es: Peso colombiano.
-                      pt: Colombian peso.
-                  - PEN:
-                      en: Peruvian sol.
-                      es: Sol peruano.
-                      pt: Peruvian sol.
-                  - UYU:
-                      en: Uruguayan peso.
-                      es: Peso uruguayo.
-                      pt: Uruguayan peso.
-            - estimated_delivery:
-                type: Object
-                description:
-                  en: Estimated delivery time information.
-                  es: Estimated delivery time information.
-                  pt: Estimated delivery time information.
-                properties:
-                  - date:
-                      type: Date(ISO_8601)
-                      description:
-                        en: Estimated delivery date.
-                        es: Estimated delivery date.
-                        pt: Estimated delivery date.
-                  - time_from:
-                      type: String
-                      description:
-                        en: Estimated lower delivery time.
-                        es: Estimated lower delivery time.
-                        pt: Estimated lower delivery time.
-                  - time_to:
-                      type: String
-                      description:
-                        en: Estimated upper delivery time.
-                        es: Estimated upper delivery time.
-                        pt: Estimated upper delivery time.
-            - id:
-                type: Integer
-                description:
-                  en: Shipping option identifier.
-                  es: Shipping option identifier.
-                  pt: Shipping option identifier.
-            - list_cost:
-                type: Float
-                description:
-                  en: Net cost of the shipping.
-                  es: Net cost of the shipping.
-                  pt: Net cost of the shipping.
-            - name:
-                type: String
-                description:
-                  en: Option name.
-                  es: Option name.
-                  pt: Option name.
-            - shipping_method_id:
-                type: Integer
-                description:
-                  en: Shipping method identifier.
-                  es: Shipping method identifier.
-                  pt: Shipping method identifier.
-            - speed:
-                type: Object
-                description:
-                  en: Shipping time information.
-                  es: Shipping time information.
-                  pt: Shipping time information.
-                properties:
-                  - handling:
-                      type: Integer
-                      description:
-                        en: Handling time.
-                        es: Handling time.
-                        pt: Handling time.
-                  - shipping:
-                      type: Integer
-                      description:
-                        en: Shipping time.
-                        es: Shipping time.
-                        pt: Shipping time.
-- notification_url:
-    type: String(500)
-    description:
-      en: URL where you'd like to receive a payment notification.
-      es: URL en la que te gustaría recibir una notificación del estado del pago.
-      pt: URL em que você gostaria de receber uma notificação de status de pagamento.
-- additional_info:
-    type: String(600)
-    description:
-      en: Additional information.
-      es: Información adicional del pago.
-      pt: Informações adicionais do pagamento.
-- external_reference:
-    type: String(256)
-    description:
-      en: Reference you can synchronize with your payment system.
-      es: Referencia que puedes sincronizar con tu sistema de pagos.
-      pt: Referência que pode sincronizar com seu sistema de pagamentos.
-- marketplace:
-    type: String(256)
-    description:
-      en: "Origin of the payment. Default value: 'NONE'"
-      es: "Origen del pago. Valor predeterminado: 'NONE'"
-      pt: "Origem do pagamento. Valor padrão: 'NONE'"
-- total_amount:
-    type: Float
-    description:
-      en: Total amount of the order.
-      es: Costo total de la orden.
-      pt: Total amount of the order.
-- order_status:
-    type: String
-    description:
-      en: Current merchant order status given the payments status.
-      es: Estado actual de la orden según el estado de los pagos.
-      pt: Current merchant order status given the payments status.
-    enum:
-    - payment_required:
-        en: Order without payments or with all payments "rejected" or "cancelled".
-        es: Orden sin ningún pago o con todos los pagos "rejected" o "cancelled".
-        pt: Order without payments or with all payments "rejected" or "cancelled".
-    - reverted:
-        en: Order with all payments "refunded" or "chargeback".
-        es: Orden con todos los pagos en "refunded" o "chargeback".
-        pt: Order with all payments "refunded" or "chargeback".
-    - paid:
-        en: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
-        es: Orden con la suma de todos los pagos "approved", "chargeback" o "in_mediation" cubre el monto total de la orden.
-        pt: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
-    - partially_reverted:
-        en: Order with at least one payment "refunded" or "chargeback".
-        es: Orden con al menos un pago en "refunded" o "chargeback".
-        pt: Order with at least one payment "refunded" or "chargeback".
-    - partially_paid:
-        en: Order with at least one payment "approved" and not covering order total amount.
-        es: Orden con al menos un pago en "approved" y no cubre el total de la orden.
-        pt: Order with at least one payment "approved" and not covering order total amount.
-    - payment_in_process:
-        en: Order with payments "in_process", "pending" or "authorized".
-        es: Orden con pagos "in_process", "pending" or "authorized".
-        pt: Order with payments "in_process", "pending" or "authorized".  
-    - undefined:
-        en: Order created before the existence of the order_status status.
-        es: Orden creada antes de la existencia del estado order_status.
-        pt: Order created before the existence of the order_status status.
+            en: Item title.
+            es: Título del ítem.
+            pt: Título do item.
+  - shipments:
+      type: Array(Object)
+      description:
+        en: Shipments information.
+        es: Información de los envíos.
+        pt: Shipments information.
+      properties:
+        - id:
+            type: Integer
+            description:
+              en: Shipping identifier.
+              es: Identificador del envío.
+              pt: Id do frete.
+        - shipment_type:
+            type: String
+            description:
+              en: Shipping type.
+              es: Tipo de envío.
+              pt: Tipo de transporte.
+        - shipping_mode:
+            type: String
+            description:
+              en: Shipping mode.
+              es: Modo de envío.
+              pt: Modo de envio.
+        - picking_type:
+            type: String
+            description:
+              en: Shipping picking type.
+              es: Tipo de retiro de envío.
+              pt: Taxa de remoção de envio.
+        - status:
+            type: String
+            description:
+              en: Shipping picking type.
+              es: Tipo de retiro de envío.
+              pt: Taxa de remoção de envio.
+        - substatus:
+            type: String
+            description:
+              en: Shipping picking type.
+              es: Tipo de retiro de envío.
+              pt: Taxa de remoção de envio.
+        - items:
+            type: Array(Object)
+            description:
+              en: Shipping items.
+              es: Ítems a enviar.
+              pt: Itens a enviar.
+        - date_created:
+            type: Date(ISO_8601)
+            description:
+              en: Shipping's creation date.
+              es: Fecha de creación del envío.
+              pt: Data de criação do frete.
+        - last_modified:
+            type: Date(ISO_8601)
+            description:
+              en: Shipping's last modification date.
+              es: Fecha de última actualización del envío.
+              pt: Data da última atualização do frete.
+        - date_first_printed:
+            type: Date(ISO_8601)
+            description:
+              en: Shipping's first printed date.
+              es: Primera fecha de impresión del envío.
+              pt: Primeira data de impressão do frete.
+        - service_id:
+            type: String
+            description:
+              en: Shipping service identifier.
+              es: Identificador de servicio del envío.
+              pt: Identificador de serviço do transporte.
+        - sender_id:
+            type: Integer
+            description:
+              en: Sender identifier.
+              es: Identificador del emisor.
+              pt: Id do remetente.
+        - receiver_id:
+            type: Integer
+            description:
+              en: Receiver identifier.
+              es: Identificador del receptor.
+              pt: Id do receptor.
+        - receiver_address:
+            type: Object
+            description:
+              en: Shipping address.
+              es: Dirección de envío.
+              pt: Endereço de envio.
+            properties:
+              - id:
+                  type: Integer
+                  description:
+                    en: Identifier of receiver address.
+                    es: Identifier of receiver address.
+                    pt: Identifier of receiver address.
+              - address_line:
+                  type: String
+                  description:
+                    en: Street name and number of receiver address.
+                    es: Street name and number of receiver address.
+                    pt: Street name and number of receiver address.
+              - apartment:
+                  type: String(256)
+                  description:
+                    en: Apartment.
+                    es: Apartmento.
+                    pt: Apartamento.
+              - city:
+                  type: Object
+                  description:
+                    en: Information about receiver address city.
+                    es: Information about receiver address city.
+                    pt: Information about receiver address city.
+                  properties:
+                    - id:
+                        type: String
+                        description:
+                          en: City identifier.
+                          es: City Identifier.
+                          pt: City Identifier.
+                    - name:
+                        type: String
+                        description:
+                          en: City name.
+                          es: City name.
+                          pt: City name.
+              - country:
+                  type: Object
+                  description:
+                    en: Information about receiver address country.
+                    es: Inforamtion about receiver address country.
+                    pt: Information about receiver address country.
+                  properties:
+                    - id:
+                        type: String
+                        description:
+                          en: Country identifier.
+                          es: Country identifier.
+                          pt: Country identifier.
+                    - name:
+                        type: String
+                        description:
+                          en: Country name.
+                          es: Country name.
+                          pt: Country name.
+              - state:
+                  type: Object
+                  description:
+                    en: Information about receiver address state.
+                    es: Information about receiver address state.
+                    pt: Information about receiver address state.
+                  properties:
+                    - id:
+                        type: String
+                        description:
+                          en: State identifier.
+                          es: State identifier.
+                          pt: State identifier.
+                    - name:
+                        type: String
+                        description:
+                          en: State name.
+                          es: State name.
+                          pt: State name.
+              - comment:
+                  type: String
+                  description:
+                    en: Comment about receiver address.
+                    es: Comment about receiver address.
+                    pt: Comment about receiver address.
+              - contact:
+                  type: String
+                  description:
+                    en: Contact information.
+                    es: Contact information.
+                    pt: Contact information.
+              - zip_code:
+                  type: String(256)
+                  description:
+                    en: Zip code.
+                    es: Código postal.
+                    pt: Código postal.
+              - street_name:
+                  type: String(256)
+                  description:
+                    en: Street name.
+                    es: Calle.
+                    pt: Rua.
+              - street_number:
+                  type: String(256)
+                  description:
+                    en: Street number.
+                    es: Número.
+                    pt: O Número.
+              - floor:
+                  type: String(256)
+                  description:
+                    en: Floor.
+                    es: Piso.
+                    pt: Apartamento.
+              - phone:
+                  type: String(256)
+                  description:
+                    en: Receiver address phone.
+                    es: Receiver address phone.
+                    pt: Receiver address phone.
+              - latitude:
+                  type: String(256)
+                  description:
+                    en: Receiver address latitude.
+                    es: Receiver address latitude.
+                    pt: Receiver address latitude.
+              - longitude:
+                  type: String(256)
+                  description:
+                    en: Receiver address longitude.
+                    es: Receiver address longitude.
+                    pt: Receiver address longitude.
+        - shipping_option:
+            type: Object
+            description:
+              en: Shipping options.
+              es: Shipping options.
+              pt: Shipping options.
+            properties:
+              - cost:
+                  type: Float
+                  description:
+                    en: Net cost absorbed by the receiver.
+                    es: Net cost absorbed by the receiver.
+                    pt: Net cost absorbed by the receiver.
+              - currency_id:
+                  type: String(3)
+                  description:
+                    en: Currency identifier.
+                    es: Currency identifier.
+                    pt: Currency identifier.
+                  enum:
+                    - ARS:
+                        en: Argentine peso.
+                        es: Peso argentino.
+                        pt: Argentine peso.
+                    - BRL:
+                        en: Brasil real.
+                        es: Real brasilero.
+                        pt: Brasil real.
+                    - CLP:
+                        en: Chilean peso.
+                        es: Peso chileno.
+                        pt: Chilean peso.
+                    - MXN:
+                        en: Mexican peso.
+                        es: Peso mexicano.
+                        pt: Mexican peso.
+                    - COP:
+                        en: Colombian peso.
+                        es: Peso colombiano.
+                        pt: Colombian peso.
+                    - PEN:
+                        en: Peruvian sol.
+                        es: Sol peruano.
+                        pt: Peruvian sol.
+                    - UYU:
+                        en: Uruguayan peso.
+                        es: Peso uruguayo.
+                        pt: Uruguayan peso.
+              - estimated_delivery:
+                  type: Object
+                  description:
+                    en: Estimated delivery time information.
+                    es: Estimated delivery time information.
+                    pt: Estimated delivery time information.
+                  properties:
+                    - date:
+                        type: Date(ISO_8601)
+                        description:
+                          en: Estimated delivery date.
+                          es: Estimated delivery date.
+                          pt: Estimated delivery date.
+                    - time_from:
+                        type: String
+                        description:
+                          en: Estimated lower delivery time.
+                          es: Estimated lower delivery time.
+                          pt: Estimated lower delivery time.
+                    - time_to:
+                        type: String
+                        description:
+                          en: Estimated upper delivery time.
+                          es: Estimated upper delivery time.
+                          pt: Estimated upper delivery time.
+              - id:
+                  type: Integer
+                  description:
+                    en: Shipping option identifier.
+                    es: Shipping option identifier.
+                    pt: Shipping option identifier.
+              - list_cost:
+                  type: Float
+                  description:
+                    en: Net cost of the shipping.
+                    es: Net cost of the shipping.
+                    pt: Net cost of the shipping.
+              - name:
+                  type: String
+                  description:
+                    en: Option name.
+                    es: Option name.
+                    pt: Option name.
+              - shipping_method_id:
+                  type: Integer
+                  description:
+                    en: Shipping method identifier.
+                    es: Shipping method identifier.
+                    pt: Shipping method identifier.
+              - speed:
+                  type: Object
+                  description:
+                    en: Shipping time information.
+                    es: Shipping time information.
+                    pt: Shipping time information.
+                  properties:
+                    - handling:
+                        type: Integer
+                        description:
+                          en: Handling time.
+                          es: Handling time.
+                          pt: Handling time.
+                    - shipping:
+                        type: Integer
+                        description:
+                          en: Shipping time.
+                          es: Shipping time.
+                          pt: Shipping time.
+  - notification_url:
+      type: String(500)
+      description:
+        en: URL where you'd like to receive a payment notification.
+        es: URL en la que te gustaría recibir una notificación del estado del pago.
+        pt: URL em que você gostaria de receber uma notificação de status de pagamento.
+  - additional_info:
+      type: String(600)
+      description:
+        en: Additional information.
+        es: Información adicional del pago.
+        pt: Informações adicionais do pagamento.
+  - external_reference:
+      type: String(256)
+      description:
+        en: Reference you can synchronize with your payment system.
+        es: Referencia que puedes sincronizar con tu sistema de pagos.
+        pt: Referência que pode sincronizar com seu sistema de pagamentos.
+  - marketplace:
+      type: String(256)
+      description:
+        en: "Origin of the payment. Default value: 'NONE'"
+        es: "Origen del pago. Valor predeterminado: 'NONE'"
+        pt: "Origem do pagamento. Valor padrão: 'NONE'"
+  - total_amount:
+      type: Float
+      description:
+        en: Total amount of the order.
+        es: Costo total de la orden.
+        pt: Total amount of the order.
+  - order_status:
+      type: String
+      description:
+        en: Current merchant order status given the payments status.
+        es: Estado actual de la orden según el estado de los pagos.
+        pt: Current merchant order status given the payments status.
+      enum:
+      - payment_required:
+          en: Order without payments or with all payments "rejected" or "cancelled".
+          es: Orden sin ningún pago o con todos los pagos "rejected" o "cancelled".
+          pt: Order without payments or with all payments "rejected" or "cancelled".
+      - reverted:
+          en: Order with all payments "refunded" or "chargeback".
+          es: Orden con todos los pagos en "refunded" o "chargeback".
+          pt: Order with all payments "refunded" or "chargeback".
+      - paid:
+          en: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
+          es: Orden con la suma de todos los pagos "approved", "chargeback" o "in_mediation" cubre el monto total de la orden.
+          pt: Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
+      - partially_reverted:
+          en: Order with at least one payment "refunded" or "chargeback".
+          es: Orden con al menos un pago en "refunded" o "chargeback".
+          pt: Order with at least one payment "refunded" or "chargeback".
+      - partially_paid:
+          en: Order with at least one payment "approved" and not covering order total amount.
+          es: Orden con al menos un pago en "approved" y no cubre el total de la orden.
+          pt: Order with at least one payment "approved" and not covering order total amount.
+      - payment_in_process:
+          en: Order with payments "in_process", "pending" or "authorized".
+          es: Orden con pagos "in_process", "pending" or "authorized".
+          pt: Order with payments "in_process", "pending" or "authorized".  
+      - undefined:
+          en: Order created before the existence of the order_status status.
+          es: Orden creada antes de la existencia del estado order_status.
+          pt: Order created before the existence of the order_status status.
+      - expired:
+          en: "Canceled order (canceled: true) that does not have approved or pending payments (all rejected or returned)."
+          es: "Orden cancelada (cancelled: true) que no posee pagos aprobados ni pendientes (todos rechazados o devueltos)."
+          pt: "Pedido cancelado (cancelled: true) que não possui pagamentos aprovados ou pendentes (todos rejeitados ou devolvidos)."

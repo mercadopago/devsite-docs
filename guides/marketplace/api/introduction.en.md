@@ -40,10 +40,10 @@ Initially, your application will only be able to interact with Mercado Pago in *
 
 We will provide you with [test cards](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/testing-marketplace/), so that you can simulate transactions as if they were real.
 
-Once you have tested your application, you must complete the [homologation process](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/goto-production/) and complete the “I want to go to production” form that you will find in your credentials.
+Once you have tested your application, you must complete the [homologation process](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/goto-production/) and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
-**Before you can start using your production credentials you must complete the "I want to go to production" form in order to activate them.** 
-If not, you´ll get the "Invalid use of live credentials" error.  
+**Before you can start using your production credentials you must activate them.**
+If not, you´ll get the "Invalid use of live credentials" error.
 
 Your application will be automatically activated. All you have to do is replace the sandbox keys with the production ones in your code.
 

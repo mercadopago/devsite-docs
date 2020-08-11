@@ -164,6 +164,8 @@ Payer payer = new Payer()
   $item = new MercadoPago\Item();
   $item->id = "1234";
   $item->title = "Heavy Duty Plastic Table";
+  $item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
+  $item->category_id = "home";
   $item->quantity = 7;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = 75.56;
@@ -176,6 +178,8 @@ items: [
     {
       id: '1234',
       title: 'Lightweight Paper Table',
+      description: 'Inspired by the classic foldable art of origami',
+      category_id: 'home',
       quantity: 3,
       currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 55.41
@@ -187,6 +191,8 @@ items: [
 Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
+    .setDescription("Inspired by the classic foldable art of origami")
+    .setCategoryId("home")
     .setQuantity(3)
     .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 55.41);
@@ -197,6 +203,8 @@ item.setId("1234")
 item = MercadoPago::Item.new({
   id: "1234",
   title: "Lightweight Paper Table",
+  description: "Inspired by the classic foldable art of origami",
+  category_id: "home",
   quantity: 3,
   currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
@@ -209,6 +217,8 @@ preference.Items.Add(
   {
     Id = "1234",
     Title = "Lightweight Paper Table",
+    Description = "Inspired by the classic foldable art of origami",
+    CategoryId = "home",
     Quantity = 3,
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)55.41
@@ -218,10 +228,19 @@ preference.Items.Add(
 ```
 ]]]
 
+> Você pode encontrar a lista de categorias para o seu `item` no seguinte [link](https://api.mercadopago.com/item_categories). Se você não conseguir encontrar a categoria do seu produto, envie o valor `others` como `category_id`.
+
+
 ## URL de retorno
 
 No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
 Para isso, `back_urls` são usados. Esse redirecionamento pode ser automático através do atributo `auto_return` ou de um link que permite retornar ao site do vendedor.
+
+> NOTE
+>
+> Nota
+>
+> Observe que as `backs_urls` só funcionam para o modo redirect e mobile. Ao usar o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/integration/) é considerado a URL do `form action` para voltar ao site.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
@@ -230,6 +249,21 @@ Atributo |	Descrição
 `auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são `approved` e `all`.
  `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento rejeitado.
 
+Através das `back_url` *serão retornados os seguintes parâmetros*:
+
+Parâmetro |	Descrição
+------------ 	|	--------
+`collection_id` | ID do pagamento do Mercado Pago. |
+`collection_status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
+`external_reference` | Valor do campo `external_reference` que foi enviado no momento da criação da preferência de pagamento. |
+`payment_type` | Tipo de pagamento. Ex.: `credit_card` para cartões de crédito ou `ticket` para meios de pagamento em dinheiro. |
+`merchant_order_id` | ID da ordem de pagamento gerada no Mercado Pago. |
+`preference_id` | ID da preferência de pagamento a partir da qual se está retornando. |
+`site_id` | ID do país da conta do Mercado Pago do vendedor. Ex.: ----[mla]---- MLA para Argentina.------------ ----[mlb]---- MLB para Brasil.------------ ----[mlm]---- MLM para México.------------ ----[mpe]---- MPE para Perú.------------ ----[mlc]---- MLC para Chile.------------ ----[mco]---- MCO para Colombia.------------ ----[mlu]---- MLU para Uruguay.------------ |
+`processing_mode` | Valor `aggregator`. |
+`merchant_account_id` | Valor `null`. |
+
+> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Mercado Pago e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure_**.
 
 [[[
 ```php

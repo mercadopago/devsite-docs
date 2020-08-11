@@ -151,8 +151,8 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor reemplazará el string "$$init_point$$" en tu HTML
-  global.init_point = response.body.init_point;
+// Este valor reemplazará el string "<%= global.id %>" en tu HTML
+  global.id = response.body.id;
 }).catch(function(error){
   console.log(error);
 });
@@ -241,6 +241,12 @@ curl -X POST \
 
 Por último, suma el siguiente código para mostrar el botón de pago de tu Checkout de Mercado Pago en el lugar que quieras que aparezca.
 
+> NOTE
+>
+> Nota
+>
+> Si tu sitio funciona en mobile, ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, puedes visitar la sección [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/test-integration/). 
+
 [[[
 ```php
 <form action="/procesar-pago" method="POST">
@@ -251,10 +257,10 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 </form>
 ```
 ```node
-<form action="/procesar-pago" method="POST">
+<form method="POST">
   <script
    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
+   data-preference-id='<%= global.id %>'>
   </script>
 </form>
 ```
@@ -289,7 +295,7 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 >
 > Importante
 >
-> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
+> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/> 
 
 #### ¡Excelente! Terminaste tu integración.
 _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>

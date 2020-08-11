@@ -1,5 +1,4 @@
 ---
-resource: pos.raml
 samples:
 - curl.sh
 use:

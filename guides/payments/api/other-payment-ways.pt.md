@@ -239,6 +239,65 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
+## Data de expiração de meios de pagamento em dinheiro
+
+A data de expiração padrão para pagamentos em dinheiro é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+
+[[[
+```php
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) para executar a configuração.
+
+> WARNING
+>
+> Importante
+>
+> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+
 ## Cancelar um pagamento
 
 É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
@@ -884,7 +943,6 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | Tipo de meio de pagamento | Meio de pagamento |
 | --- | ---|
 | `ticket` | Efecty |
-| `ticket` | Davivienda |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
 
@@ -957,24 +1015,6 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
         "min_allowed_amount": 5000,
         "max_allowed_amount": 4000000,
         "accreditation_time": 0,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "davivienda",
-        "name": "Davivienda",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/davivienda.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/davivienda.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 1600,
-        "max_allowed_amount": 150000000,
-        "accreditation_time": 10080,
         "financial_institutions": [],
         "processing_modes": [
             "aggregator"

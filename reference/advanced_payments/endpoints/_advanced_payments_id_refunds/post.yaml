@@ -1,5 +1,4 @@
 ---
-resource: advanced_payments.raml
 use:
 - id
 errors:

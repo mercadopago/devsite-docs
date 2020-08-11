@@ -16,11 +16,11 @@ When testing, verify that the payment flow works correctly and that the payment 
 
 ## Go to production
 
-To start charging you must complete the form o go to production [I want to go to production](https://www.mercadopago.com/mla/account/credentials/).
+To start charging you must [activate your credentials](https://www.mercadopago.com/mla/account/credentials/).
 
 > Check out the [requirements to go to production](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) if you have any questions during the process.
 
-Once the form is completed, verify that the Production credentials of the module are those of the account that receives the money from the sales.
+Verify that the Production credentials of the module are those of the account that receives the money from the sales.
 
 Activate Production mode only when you are ready to sell and have tested the module with simulated payments in Sandbox.
 

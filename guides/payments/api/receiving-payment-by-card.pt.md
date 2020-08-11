@@ -233,7 +233,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 
 <br>
 
-> NOTE
+> GIT
 >
 > Baixe um exemplo do formulário
 >
@@ -294,7 +294,7 @@ mercadopago.configurations.setAccessToken("ENV_ACCESS_TOKEN");
 
 var payment_data = {
   transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
-  token: 'ff8080814c11e237014c1ff593b57b4d'
+  token: 'ff8080814c11e237014c1ff593b57b4d',
   description: '[FAKER][COMMERCE][PRODUCT_NAME]',
   installments: 1,
   payment_method_id: 'visa',

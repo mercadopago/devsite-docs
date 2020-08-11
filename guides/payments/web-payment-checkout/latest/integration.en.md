@@ -151,8 +151,8 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// This value replaces the String "<%= @init_point %>" in your HTML
-  global.init_point = response.body.init_point;
+// This value replaces the String "<%= global.id %>" in your HTML
+  global.id = response.body.id;
 }).catch(function(error){
   console.log(error);
 });
@@ -241,6 +241,12 @@ curl -X POST \
 
 Finally, add the following code to show the payment button of your Mercado Pago Checkout in the place you want it to appear.
 
+> NOTE
+>
+> Note
+>
+> If your site works on mobile, note that you need to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, you can visit the [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/test-integration/) section. 
+
 [[[
 ```php
 <form action="/payment-process" method="POST">
@@ -251,10 +257,10 @@ Finally, add the following code to show the payment button of your Mercado Pago 
 </form>
 ```
 ```node
-<form action="/payment-process" method="POST">
+<form method="POST">
   <script
    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
+   data-preference-id='<%= global.id %>'>
   </script>
 </form>
 ```

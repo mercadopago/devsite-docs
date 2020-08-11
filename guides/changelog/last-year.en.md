@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Mercado Pago's release notes 2019
 
 Each release note describes the new changes applying to a version. This changes may include:
@@ -68,7 +71,7 @@ We always want to give you the best experience. Therefore, we list the modules t
 | Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
 | Shopify                 | -                                                                                           |
 
-[View modules](https://www.mercadopago.com.ar/developers/en/plugins_sdks).
+[View modules](https://www.mercadopago.com.ar/developers/en/guides/plugins).
 
 
 > Please note that the modules and platforms not mentioned only have support from the community. 

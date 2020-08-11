@@ -164,6 +164,8 @@ Payer payer = new Payer()
   $item = new MercadoPago\Item();
   $item->id = "1234";
   $item->title = "Heavy Duty Plastic Table";
+  $item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
+  $item->category_id = "home";
   $item->quantity = 7;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = 75.56;
@@ -176,6 +178,8 @@ items: [
     {
       id: '1234',
       title: 'Lightweight Paper Table',
+      description: 'Inspired by the classic foldable art of origami',
+      category_id: 'home',
       quantity: 3,
       currency_id: '[FAKER][CURRENCY][ACRONYM]',
       unit_price: 55.41
@@ -187,6 +191,8 @@ items: [
 Item item = new Item();
 item.setId("1234")
     .setTitle("Lightweight Paper Table")
+    .setDescription("Inspired by the classic foldable art of origami")
+    .setCategoryId("home")
     .setQuantity(3)
     .setCurrencyId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 55.41);
@@ -197,6 +203,8 @@ item.setId("1234")
 item = MercadoPago::Item.new({
   id: "1234",
   title: "Lightweight Paper Table",
+  description: "Inspired by the classic foldable art of origami",
+  category_id: "home",
   quantity: 3,
   currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
@@ -209,6 +217,8 @@ preference.Items.Add(
   {
     Id = "1234",
     Title = "Lightweight Paper Table",
+    Description = "Inspired by the classic foldable art of origami",
+    CategoryId = "home",
     Quantity = 3,
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)55.41
@@ -218,10 +228,20 @@ preference.Items.Add(
 ```
 ]]]
 
+
+> You can find the list of categories for your `item` in the following [link](https://api.mercadopago.com/item_categories). If you cannot find the category of your product, send the value `others` as` category_id`.
+
+
 ## Return URL
 
 At the end of the payment process, you have the option to **redirect the buyer to your website.**
 For this, `back_urls`are used. This redirection can be automatic through the `auto_return` attribute or a link that allows returning to the seller's website.
+
+> NOTE
+>
+> Note
+>
+> Note that the `backs_urls` only work for redirect and mobile mode. Not using [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/integration/), since to return to the site take the URL of the `form action`.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
@@ -231,6 +251,22 @@ Attribute |	Description
  | **_success._** Return URL for approved payment.
  `back_url`| **_pending._** Return URL for pending payment.
   | **_failure._** Return URL for canceled payment.
+
+Through the `back_url` *the following parameters will return*:
+
+Parameter |	Description
+------------ 	|	--------
+`collection_id` | Payment ID of Mercado Pago. |
+`collection_status` | Payment status. For example: `approved` for an approved payment or` pending` for a pending payment. |
+`external_reference` | Value of the `external_reference` field that you sent when creating the payment preference. |
+`payment_type` | Payment type. For example: `credit_card` for credit cards or` ticket` for cash payment methods. |
+`merchant_order_id` | Payment order ID created in Mercado Pago. |
+`preference_id` | Preference ID from which you are returning. |
+`site_id` | Returns the country ID of the seller's Mercado Pago account. For example: ----[mla]---- MLA for Argentina.------------ ----[mlb]---- MLB for Brazil.------------ ----[mlm]---- MLM for Mexico.------------ ----[mpe]---- MPE for Peru.------------ ----[mlc]---- MLC for Chile.------------ ----[mco]---- MCO for Colombia.------------ ----[mlu]---- MLU for Uruguay.------------ |
+`processing_mode` | Value `aggregator`. |
+`merchant_account_id` | Value `null`. |
+
+> The information of the parameters will depend on the finalization of the payment at the Checkout of Mercado Pago and on the fact that the flow has not been abandoned before returning to your site through the `back_url` of **_failure_**.
 
 
 [[[

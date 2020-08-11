@@ -123,3 +123,11 @@ With this information you can make the necessary updates on your platform, such 
 
 ?>
 ```
+
+## Receive only one type of notification
+
+If you want to receive notifications only from Webhooks, and not from IPN, you can add in the *notification_url* the parameter `source_news=webhooks`. For example:
+
+`https://www.yourserver.com/notifications?source_news=webhooks`
+
+> The change doesn't affect the parameters already included in the URL.

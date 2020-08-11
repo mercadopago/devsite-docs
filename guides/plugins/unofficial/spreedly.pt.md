@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Integrar com Spreedly
 
 Receba pagamentos de maneira simples e segura de Mercado Pago através do Spreedly.

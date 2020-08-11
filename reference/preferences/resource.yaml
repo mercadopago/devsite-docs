@@ -1,524 +1,556 @@
----
-type: object
-properties:
-- items:
-    type: Array(Object)
-    description:
-      en: Items information.
-      es: Información sobre el ítem.
-      pt: Informações sobre o item.
-    properties:
-    - id:
-        type: String(256)
-        description:
-          en: Item ID.
-          es: Indentificador del ítem.
-          pt: Indentificador do item.
-    - title:
-        type: String(256)
-        description:
-          en: Item title. It will be displayed in the payment process.
-          es: Título del ítem, se mostrará en el flujo de pago.
-          pt: Título do item, é apresentado o fluxo de pagamento.
-    - description:
-        type: String(256)
-        description:
-          en: Item description.
-          es: Descripción del item.
-          pt: Descrição do artigo.
-    - picture_url:
-        type: String(600)
-        description:
-          en: Item image URL.
-          es: URL de imagen del ítem.
-          pt: URL da imagem do anúncio.
-    - category_id:
-        type: String(256)
-        description:
-          en: Item category ID.
-          es: Identificador de la categoría del ítem.
-          pt: Identificador da categoria do item.
-    - quantity:
-        type: Integer
-        description:
-          en: Item quantity.
-          es: Cantidad de ítems.
-          pt: Quantidade de itens.
-    - currency_id:
-        type: String(3)
-        description:
-          en: Currency ID. ISO_4217 code.
-          es: Identificador de moneda en formato ISO_4217.
-          pt: Identificador de moeda em formato ISO_4217.
-    - unit_price:
-        type: Float
-        description:
-          en: Unit price.
-          es: Precio unitario.
-          pt: Preço unitário.
-- payer:
-    type: Object
-    description:
-      en: Buyer Information.
-      es: Información sobre el comprador.
-      pt: Informações sobre o comprador.
-    properties:
-    - name:
-        type: String(256)
-        description:
-          en: Buyer name.
-          es: Nombre del comprador.
-          pt: Nome do comprador.
-    - surname:
-        type: String(256)
-        description:
-          en: Buyer last name.
-          es: Apellido del comprador.
-          pt: Apelido do comprador.
-    - email:
-        type: String(256)
-        description:
-          en: Buyer e-mail address.
-          es: Dirección de e-mail del comprador.
-          pt: Endereço de e-mail do comprador.
-    - phone:
-        type: Object
-        description:
-          en: Buyer phone.
-          es: Teléfono del comprador.
-          pt: Telefone do comprador.
-        properties:
-        - area_code:
-            type: String(256)
-            description:
-              en: Area code.
-              es: Código de área.
-              pt: Código de área.
-        - number:
-            type: String(256)
-            description:
-              en: Number.
-              es: Número.
-              pt: O Número.
-    - identification:
-        type: Object
-        description:
-          en: Personal identification.
-          es: Identificación personal.
-          pt: Identificação pessoal.
-        properties:
-        - type:
-            type: String(256)
-            description:
-              en: Identification Type.
-              es: Tipo de identificación.
-              pt: Tipo de identificação.
-        - number:
-            type: String(256)
-            description:
-              en: Number.
-              es: Número.
-              pt: O Número.
-    - address:
-        type: Object
-        description:
-          en: Buyer address.
-          es: Dirección del comprador.
-          pt: Endereço do comprador.
-        properties:
-        - zip_code:
-            type: String(256)
-            description:
-              en: Zip code.
-              es: Código postal.
-              pt: Código postal.
-        - street_name:
-            type: String(256)
-            description:
-              en: Street name.
-              es: Nombre de la calle.
-              pt: Nome da rua.
-        - street_number:
-            type: Integer
-            description:
-              en: Street number.
-              es: Número de la calle.
-              pt: Número da rua.
-    - date_created:
-        type: Date(ISO_8601)
-        description:
-          en: Registration date.
-          es: Fecha de registración.
-          pt: Data de registro.
-- payment_methods:
-    type: Object
-    description:
-      en: Set up payment methods to be excluded from the payment process.
-      es: Métodos de pago a ser excluídos del flujo de pago.
-      pt: Métodos de pagamento a ser excluídos do fluxo de pagamento.
-    properties:
-    - excluded_payment_methods:
-        type: Array(Object)
-        description:
-          en: Payment methods not allowed in payment process (except account_money).
-          es: Métodos de pago no permitidos en el flujo de pago (a excepción de account_money).
-          pt: Métodos de pagamento não são permitidos no fluxo de pagamento (à exceção
-            de account_money).
-        properties:
-        - id:
-            type: String(256)
-            description:
-              en: Payment method ID.
-              es: Identificador del método de pago.
-              pt: Identificador do método de pagamento.
-    - excluded_payment_types:
-        type: Array(Object)
-        description:
-          en: Payment types not allowed in payment process.
-          es: Tipos de pago no permitidos en el flujo de pago.
-          pt: Tipos de pagamento não são permitidos no fluxo de pagamento.
-        properties:
-        - id:
-            type: String(256)
-            description:
-              en: Payment method data_type ID.
-              es: Identificador de data_type del medio de pago.
-              pt: Identificador de data_type do meio de pagamento.
-    - default_payment_method_id:
-        type: String(256)
-        description:
-          en: Payment method to be preferred on the payments methods list.
-          es: Medio de pago preferido.
-          pt: Meio de pagamento preferido.
-    - installments:
-        type: Integer
-        description:
-          en: Maximum number of credit card installments to be accepted.
-          es: Máximo número de cuotas.
-          pt: Número Máximo de cotas.
-    - default_installments:
-        type: Integer
-        description:
-          en: Prefered number of credit card installments.
-          es: Preferencia de cuotas.
-          pt: Preferência de cotas.
-- shipments:
-    type: Object
-    description:
-      en: Shipments information.
-      es: Información de envío.
-      pt: Informações de envio.
-    properties:
-    - mode:
-        type: String
-        description:
-          en: Shipment mode.
-          es: Modo de envío.
-          pt: Modo de envio.
-        enum:
-        - custom:
-            en: Custom shipping.
-            es: Envío personalizado.
-            pt: Custom shipping.
-        - me2:
-            en: Mercado Envíos.
-            es: Mercado Envíos.
-            pt: Mercado Envíos.
-        - not_specified:
-            en: Shipping mode not specified.
-            es: Modo de envío no especificado.
-            pt: Shipping mode not specified.
-    - local_pickup:
-        type: Boolean
-        description:
-          en: The payer have the option to pick up the shipment in your store (mode:me2
-            only).
-          es: Preferencia de retiro de paquetes en sucursal(mode:me2 solamente).
-          pt: Preferência de remoção de pacotes em agência(mode:me2 somente).
-    - dimensions:
-        type: String
-        description:
-          en: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
-          es: Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)
-          pt: Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)
-    - default_shipping_method:
-        type: Integer
-        description:
-          en: Select default shipping method in checkout (mode:me2 only).
-          es: Elegir un método de envío predeterminado en el _checkout_(mode:me2 solamente).
-          pt: Escolha um método de envio padrão no _checkout_(mode:me2 somente).
-    - free_methods:
-        type: Array(Object)
-        description:
-          en: Offer a shipping method as free shipping (mode:me2 only).
-          es: Ofrecer un método de envío gratuito (mode:me2 solamente).
-          pt: Oferecer um método de frete grátis (mode:me2 somente).
-        properties:
-        - id:
-            type: Integer
-            description:
-              en: Shipping method ID.
-              es: Identificador de método de envío.
-              pt: Identificador do método de envio.
-    - cost:
-        type: Float
-        description:
-          en: Shipment cost (mode:custom only).
-          es: Costo del envío (mode:custom solamente).
-          pt: Custo do transporte (mode:custom somente).
-    - free_shipping:
-        type: Boolean
-        description:
-          en: Free shipping for mode:custom.
-          es: Preferencia de envío gratuito para mode:custom.
-          pt: Preferência de frete grátis para mode:custom.
-    - receiver_address:
-        type: Object
-        description:
-          en: Shipping address.
-          es: Dirección de envío.
-          pt: Endereço de envio.
-        properties:
-        - zip_code:
-            type: String(256)
-            description:
-              en: Zip code.
-              es: Código postal.
-              pt: Código postal.
-        - street_name:
-            type: String(256)
-            description:
-              en: Street name.
-              es: Calle.
-              pt: Rua.
-        - street_number:
-            type: Integer
-            description:
-              en: Street number.
-              es: Número.
-              pt: O Número.
-        - floor:
-            type: String(256)
-            description:
-              en: Floor.
-              es: Piso.
-              pt: Apartamento.
-        - apartment:
-            type: String(256)
-            description:
-              en: Apartment.
-              es: Apartmento.
-              pt: Apartamento.
-- back_urls:
-    type: Object
-    description:
-      en: URLs to return to the sellers website.
-      es: URLs de retorno al sitio del vendedor.
-      pt: Url de retorno ao site do vendedor.
-    properties:
-    - success:
-        type: String(600)
-        description:
-          en: Approved payment URL.
-          es: URL de retorno ante pago aprobado.
-          pt: URL de retorno ante o pagamento aprovado.
-    - pending:
-        type: String(600)
-        description:
-          en: Pending payment URL.
-          es: URL de retorno ante pago pendiente.
-          pt: URL de retorno diante de pagamento pendente.
-    - failure:
-        type: String(600)
-        description:
-          en: Canceled payment URL.
-          es: URL de retorno ante pago cancelado.
-          pt: URL de retorno ante o pagamento cancelado.
-- notification_url:
-    type: String(500)
-    description:
-      en: URL where you'd like to receive a payment notification.
-      es: URL a la cual te gustaría recibir notificaciones de pagos.
-      pt: URL para a qual você gostaria de receber notificações de pagamentos.
-- id:
-    type: String(UUID)
-    description:
-      en: Preference ID.
-      es: Identificador de preferencia.
-      pt: Identificação de preferência.
-- init_point:
-    type: String
-    description:
-      en: Checkout access URL.
-      es: URL de acceso al checkout.
-      pt: URL de acesso ao checkout.
-- sandbox_init_point:
-    type: String
-    description:
-      en: Sandbox checkout access URL.
-      es: URL de acceso al sandbox checkout.
-      pt: URL de acesso ao sandbox checkout.
-- date_created:
-    type: Date(ISO_8601)
-    description:
-      en: Preference's creation date.
-      es: Fecha de creación de la preferencia.
-      pt: Data de criação de sua preferência.
-- operation_type:
-    type: String
-    description:
-      en: Operation data_type.
-      es: data_type de la operación.
-      pt: data_type da operação.
-    enum:
-    - regular_payment:
-        en: Normal payment.
-        es: Pago regular.
-        pt: Normal payment.
-    - money_transfer:
-        en: Money request.
-        es: Solicitud de dinero.
-        pt: Money request.
-- additional_info:
-    type: String(600)
-    description:
-      en: Additional information.
-      es: Información adicional.
-      pt: Informações adicionais.
-- auto_return:
-    type: String
-    description:
-      en: If specified, your buyers will be redirected back to your site immediately
-        after completing the purchase.
-      es: En el caso de estar especificado tu comprador sera redirigido a tu sitio
-        inmediatamente después de la compra.
-      pt: No caso de estar especificado o comprador será redirecionado para o seu
-        site imediatamente após a compra.
-    enum:
-    - approved:
-        en: The redirection takes place only for approved payments.
-        es: La redirección solo se realiza si el pago fue aprobado.
-        pt: The redirection takes place only for approved payments.
-    - all:
-        en: The redirection takes place only for approved payments, forward compatibility
-          only if we change the default behavior
-        es: La redirección solo se realiza si el pago fue aprobado, brindando compatibilidad
-          solamente si se cambia el comportamiento por defecto.
-        pt: The redirection takes place only for approved payments, forward compatibility
-          only if we change the default behavior
-- external_reference:
-    type: String(256)
-    description:
-      en: Reference you can synchronize with your payment system.
-      es: Referencia que puedes sincronizar con tu sistema de pagos.
-      pt: Referência que pode sincronizar com seu sistema de pagamentos.
-- expires:
-    type: Boolean
-    description:
-      en: Boolean value that determines if a preference expire.
-      es: Preferencia que determina si una preferencia expira.
-      pt: Preferência que determina se uma preferência expira.
-- expiration_date_from:
-    type: Date(ISO_8601)
-    description:
-      en: Date since the preference will be active.
-      es: Fecha a partir de la cual la preferencia estará activa.
-      pt: Data a partir da qual a preferência estará ativa.
-- expiration_date_to:
-    type: Date(ISO_8601)
-    description:
-      en: Date when the preference will be expired.
-      es: Fecha en la que la preferencia expirará.
-      pt: Data em que a preferência expira.
-- collector_id:
-    type: Integer
-    description:
-      en: Your Mercado Pago seller ID.
-      es: Tu identificador como vendedor en Mercado Pago.
-      pt: Sua identificação como um vendedor no Mercado Pago.
-- client_id:
-    type: String
-    description:
-      en: Application owner ID that use Mercado Libre API.
-      es: Identificador del dueño de la aplicación que utiliza la API de Mercado Libre.
-      pt: Id do dono do aplicativo que usa a API do Mercado Livre.
-- marketplace:
-    type: String(256)
-    description:
-      en: 'Origin of the payment. Default value: NONE'
-      es: 'Origen del pago. Valor por defecto: NONE'
-      pt: 'Origem do pagamento. Valor por defeito: NENHUM'
-- marketplace_fee:
-    type: Float
-    description:
-      en: 'Marketplace''s fee charged by application owner. Default value: 0 in local currency'
-      es: 'Comisión de Marketplace cobrada por el dueño de la aplicación. Valor por defecto: 0 en moneda local'
-      pt: 'Comissão de Mercado cobrada pelo proprietário do aplicativo. Valor por defeito: 0 em moeda local'
-- differential_pricing:
-    type: Object
-    description:
-      en: Differential pricing configuration for this preference.
-      es: Configuración de precio diferencial para esta preferencia.
-      pt: Configuração de preço diferencial para esta preferência.
-    properties:
-    - id:
-        type: Integer
-        description:
-          en: Differential pricing ID.
-          es: Identificador de precio diferenciado.
-          pt: Identificador de preço diferenciado.
-- binary_mode:
-    type: Boolean
-    description:
-          en: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.
-          es: Cuando se configura como true los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.
-          pt: Quando definido como true, o pagamento só pode ter os status approved ou rejected. Caso contrário, o status in_process é adicionado.
-- taxes:
-    type: Array(Object)
-    description:
-      en: 'Differentiated taxes definition. Only available for Mercado Libre Colombia.'
-      es: 'Definición de impuestos diferenciados. Unicamente disponible para Mercado Libre Colombia.'
-      pt: 'Definição de impostos diferenciados. Disponível apenas para o Mercado Livre Colombia.'
-    properties:
-    - type:
-        type: String(3)
-        description:
-          en: 'Tax identifier. Only IVA and INC'
-          es: 'Identificador de impuesto. Solo se admiten los valores IVA e INC.'
-          pt: 'Identificador de imposto. Somente IVA e INC.'
-    - value:
-        type: Float
-        description:
-          en: 'Tax amount. A maximum of two decimal places is supported. For tax exempt items, zero must be reported.'
-          es: 'Monto del impuesto. Se admite un máximo de dos decimales. Para ítems exentos de impuestos se debe informar cero.'
-          pt: 'Valor do imposto. É suportado no máximo duas casas decimais. Para itens isentos de imposto, zero deve ser relatado.'
-- tracks:
-    type: Array (Object)
-    description:
-      en: Tracks to be executed during the users's interaction in the Checkout flow.
-      es: Tracks que se ejecutarán durante la interacción de los usuarios en el flujo de Pago.
-      pt: Tracks que serão executados durante a interação do usuário no fluxo de Pagamento.
-    properties:
-    - type:
-        type: String
-        description:
-          en: Track type. Specifies which tool the values belong to.
-          es: Tipo del track. Especifica a qué herramienta pertenecen los valores.
-          pt: Tipo da track. Especifique a herramienta pertenecen los valores.
-        enum:
-        - google_ad:
-            en: "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values: conversion_id and conversion_label."
-            es: "Permite configurar una etiqueta de seguimiento de conversiones de Google Ads de GTM. Valores necesarios: conversion_id y conversion_label."
-            pt: "Configure uma tag de acompanhamento de conversões do Google Ads no GTM. Valores necessários: conversion_id e conversion_label."
-        - facebook_ad:
-            en: "Allows configurations for Facebook Pixel. Necessary values: pixel_id."
-            es: "Permite configurar un Pixel de Facebook. Valores necesarios: pixel_id."
-            pt: "Permite configurar um pixel do Facebook. Valores necessários: pixel_id."
-    - values:
-        type: Map
-        description:
-          en: Configuration values according the track type.
-          es: Valores de configuración de acuerdo al tipo de track.
-          pt: Valores de configuração de acordo com o tipo de track.
-
-          
+title: Preferences API
+key: preferences
+order: 0
+version: 
+baseUri: https://api.mercadopago.com
+paths:
+  /checkout/preferences:
+    methods:
+      - post
+  /checkout/preferences/{id}:
+    methods:
+      - get
+      - put
+  /checkout/preferences/search:
+    methods:
+      - get
+definitions:
+  type: object
+  properties:
+  - items:
+      type: Array(Object)
+      description:
+        en: Items information.
+        es: Información sobre el ítem.
+        pt: Informações sobre o item.
+      properties:
+      - id:
+          type: String(256)
+          description:
+            en: Item ID.
+            es: Indentificador del ítem.
+            pt: Indentificador do item.
+      - title:
+          type: String(256)
+          description:
+            en: Item title. It will be displayed in the payment process.
+            es: Título del ítem, se mostrará en el flujo de pago.
+            pt: Título do item, é apresentado o fluxo de pagamento.
+      - description:
+          type: String(256)
+          description:
+            en: Item description.
+            es: Descripción del item.
+            pt: Descrição do artigo.
+      - picture_url:
+          type: String(600)
+          description:
+            en: Item image URL.
+            es: URL de imagen del ítem.
+            pt: URL da imagem do anúncio.
+      - category_id:
+          type: String(256)
+          description:
+            en: Item category ID.
+            es: Identificador de la categoría del ítem.
+            pt: Identificador da categoria do item.
+      - quantity:
+          type: Integer
+          description:
+            en: Item quantity.
+            es: Cantidad de ítems.
+            pt: Quantidade de itens.
+      - currency_id:
+          type: String(3)
+          description:
+            en: Currency ID. ISO_4217 code.
+            es: Identificador de moneda en formato ISO_4217.
+            pt: Identificador de moeda em formato ISO_4217.
+      - unit_price:
+          type: Float
+          description:
+            en: Unit price.
+            es: Precio unitario.
+            pt: Preço unitário.
+  - payer:
+      type: Object
+      description:
+        en: Buyer Information.
+        es: Información sobre el comprador.
+        pt: Informações sobre o comprador.
+      properties:
+      - name:
+          type: String(256)
+          description:
+            en: Buyer name.
+            es: Nombre del comprador.
+            pt: Nome do comprador.
+      - surname:
+          type: String(256)
+          description:
+            en: Buyer last name.
+            es: Apellido del comprador.
+            pt: Apelido do comprador.
+      - email:
+          type: String(256)
+          description:
+            en: Buyer e-mail address.
+            es: Dirección de e-mail del comprador.
+            pt: Endereço de e-mail do comprador.
+      - phone:
+          type: Object
+          description:
+            en: Buyer phone.
+            es: Teléfono del comprador.
+            pt: Telefone do comprador.
+          properties:
+          - area_code:
+              type: String(256)
+              description:
+                en: Area code.
+                es: Código de área.
+                pt: Código de área.
+          - number:
+              type: String(256)
+              description:
+                en: Number.
+                es: Número.
+                pt: O Número.
+      - identification:
+          type: Object
+          description:
+            en: Personal identification.
+            es: Identificación personal.
+            pt: Identificação pessoal.
+          properties:
+          - type:
+              type: String(256)
+              description:
+                en: Identification Type.
+                es: Tipo de identificación.
+                pt: Tipo de identificação.
+          - number:
+              type: String(256)
+              description:
+                en: Number.
+                es: Número.
+                pt: O Número.
+      - address:
+          type: Object
+          description:
+            en: Buyer address.
+            es: Dirección del comprador.
+            pt: Endereço do comprador.
+          properties:
+          - zip_code:
+              type: String(256)
+              description:
+                en: Zip code.
+                es: Código postal.
+                pt: Código postal.
+          - street_name:
+              type: String(256)
+              description:
+                en: Street name.
+                es: Nombre de la calle.
+                pt: Nome da rua.
+          - street_number:
+              type: Integer
+              description:
+                en: Street number.
+                es: Número de la calle.
+                pt: Número da rua.
+      - date_created:
+          type: Date(ISO_8601)
+          description:
+            en: Registration date.
+            es: Fecha de registración.
+            pt: Data de registro.
+  - payment_methods:
+      type: Object
+      description:
+        en: Set up payment methods to be excluded from the payment process.
+        es: Métodos de pago a ser excluídos del flujo de pago.
+        pt: Métodos de pagamento a ser excluídos do fluxo de pagamento.
+      properties:
+      - excluded_payment_methods:
+          type: Array(Object)
+          description:
+            en: Payment methods not allowed in payment process (except account_money).
+            es: Métodos de pago no permitidos en el flujo de pago (a excepción de account_money).
+            pt: Métodos de pagamento não são permitidos no fluxo de pagamento (à exceção
+              de account_money).
+          properties:
+          - id:
+              type: String(256)
+              description:
+                en: Payment method ID.
+                es: Identificador del método de pago.
+                pt: Identificador do método de pagamento.
+      - excluded_payment_types:
+          type: Array(Object)
+          description:
+            en: Payment types not allowed in payment process.
+            es: Tipos de pago no permitidos en el flujo de pago.
+            pt: Tipos de pagamento não são permitidos no fluxo de pagamento.
+          properties:
+          - id:
+              type: String(256)
+              description:
+                en: Payment method data_type ID.
+                es: Identificador de data_type del medio de pago.
+                pt: Identificador de data_type do meio de pagamento.
+      - default_payment_method_id:
+          type: String(256)
+          description:
+            en: Payment method to be preferred on the payments methods list.
+            es: Medio de pago preferido.
+            pt: Meio de pagamento preferido.
+      - installments:
+          type: Integer
+          description:
+            en: Maximum number of credit card installments to be accepted.
+            es: Máximo número de cuotas.
+            pt: Número Máximo de cotas.
+      - default_installments:
+          type: Integer
+          description:
+            en: Prefered number of credit card installments.
+            es: Preferencia de cuotas.
+            pt: Preferência de cotas.
+  - shipments:
+      type: Object
+      description:
+        en: Shipments information.
+        es: Información de envío.
+        pt: Informações de envio.
+      properties:
+      - mode:
+          type: String
+          description:
+            en: Shipment mode.
+            es: Modo de envío.
+            pt: Modo de envio.
+          enum:
+          - custom:
+              en: Custom shipping.
+              es: Envío personalizado.
+              pt: Custom shipping.
+          - me2:
+              en: Mercado Envíos.
+              es: Mercado Envíos.
+              pt: Mercado Envíos.
+          - not_specified:
+              en: Shipping mode not specified.
+              es: Modo de envío no especificado.
+              pt: Shipping mode not specified.
+      - local_pickup:
+          type: Boolean
+          description:
+            en: The payer have the option to pick up the shipment in your store (mode:me2
+              only).
+            es: Preferencia de retiro de paquetes en sucursal(mode:me2 solamente).
+            pt: Preferência de remoção de pacotes em agência(mode:me2 somente).
+      - dimensions:
+          type: String
+          description:
+            en: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
+            es: Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)
+            pt: Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)
+      - default_shipping_method:
+          type: Integer
+          description:
+            en: Select default shipping method in checkout (mode:me2 only).
+            es: Elegir un método de envío predeterminado en el _checkout_(mode:me2 solamente).
+            pt: Escolha um método de envio padrão no _checkout_(mode:me2 somente).
+      - free_methods:
+          type: Array(Object)
+          description:
+            en: Offer a shipping method as free shipping (mode:me2 only).
+            es: Ofrecer un método de envío gratuito (mode:me2 solamente).
+            pt: Oferecer um método de frete grátis (mode:me2 somente).
+          properties:
+          - id:
+              type: Integer
+              description:
+                en: Shipping method ID.
+                es: Identificador de método de envío.
+                pt: Identificador do método de envio.
+      - cost:
+          type: Float
+          description:
+            en: Shipment cost (mode:custom only).
+            es: Costo del envío (mode:custom solamente).
+            pt: Custo do transporte (mode:custom somente).
+      - free_shipping:
+          type: Boolean
+          description:
+            en: Free shipping for mode:custom.
+            es: Preferencia de envío gratuito para mode:custom.
+            pt: Preferência de frete grátis para mode:custom.
+      - receiver_address:
+          type: Object
+          description:
+            en: Shipping address.
+            es: Dirección de envío.
+            pt: Endereço de envio.
+          properties:
+          - zip_code:
+              type: String(256)
+              description:
+                en: Zip code.
+                es: Código postal.
+                pt: Código postal.
+          - street_name:
+              type: String(256)
+              description:
+                en: Street name.
+                es: Calle.
+                pt: Rua.
+          - city_name:
+              type: String(256)
+              description:
+                en: City name.
+                es: Ciudad.
+                pt: Cidade.
+          - state_name:
+              type: String(256)
+              description:
+                en: State name.
+                es: Estado.
+                pt: Estado.                
+          - street_number:
+              type: Integer
+              description:
+                en: Street number.
+                es: Número.
+                pt: O Número.
+          - floor:
+              type: String(256)
+              description:
+                en: Floor.
+                es: Piso.
+                pt: Apartamento.
+          - apartment:
+              type: String(256)
+              description:
+                en: Apartment.
+                es: Departamento.
+                pt: Apartamento.
+  - back_urls:
+      type: Object
+      description:
+        en: URLs to return to the sellers website.
+        es: URLs de retorno al sitio del vendedor.
+        pt: Url de retorno ao site do vendedor.
+      properties:
+      - success:
+          type: String(600)
+          description:
+            en: Approved payment URL.
+            es: URL de retorno ante pago aprobado.
+            pt: URL de retorno ante o pagamento aprovado.
+      - pending:
+          type: String(600)
+          description:
+          en: Pending or in process payment URL.
+          es: URL de retorno ante pago pendiente o en proceso.
+          pt: URL de retorno diante de pagamento pendente ou em processo.
+      - failure:
+          type: String(600)
+          description:
+            en: Canceled payment URL.
+            es: URL de retorno ante pago cancelado.
+            pt: URL de retorno ante o pagamento cancelado.
+  - notification_url:
+      type: String(500)
+      description:
+        en: URL where you'd like to receive a payment notification.
+        es: URL a la cual te gustaría recibir notificaciones de pagos.
+        pt: URL para a qual você gostaria de receber notificações de pagamentos.
+  - id:
+      type: String(UUID)
+      description:
+        en: Preference ID.
+        es: Identificador de preferencia.
+        pt: Identificação de preferência.
+  - init_point:
+      type: String
+      description:
+        en: Checkout access URL.
+        es: URL de acceso al checkout.
+        pt: URL de acesso ao checkout.
+  - sandbox_init_point:
+      type: String
+      description:
+        en: Sandbox checkout access URL.
+        es: URL de acceso al sandbox checkout.
+        pt: URL de acesso ao sandbox checkout.
+  - date_created:
+      type: Date(ISO_8601)
+      description:
+        en: Preference's creation date.
+        es: Fecha de creación de la preferencia.
+        pt: Data de criação de sua preferência.
+  - operation_type:
+      type: String
+      description:
+        en: Operation data_type.
+        es: data_type de la operación.
+        pt: data_type da operação.
+      enum:
+      - regular_payment:
+          en: Normal payment.
+          es: Pago regular.
+          pt: Normal payment.
+      - money_transfer:
+          en: Money request.
+          es: Solicitud de dinero.
+          pt: Money request.
+  - additional_info:
+      type: String(600)
+      description:
+        en: Additional information.
+        es: Información adicional.
+        pt: Informações adicionais.
+  - auto_return:
+      type: String
+      description:
+        en: If specified, your buyers will be redirected back to your site immediately
+          after completing the purchase.
+        es: En el caso de estar especificado tu comprador sera redirigido a tu sitio
+          inmediatamente después de la compra.
+        pt: No caso de estar especificado o comprador será redirecionado para o seu
+          site imediatamente após a compra.
+      enum:
+      - approved:
+          en: The redirection takes place only for approved payments.
+          es: La redirección solo se realiza si el pago fue aprobado.
+          pt: The redirection takes place only for approved payments.
+      - all:
+          en: The redirection takes place only for approved payments, forward compatibility
+            only if we change the default behavior
+          es: La redirección solo se realiza si el pago fue aprobado, brindando compatibilidad
+            solamente si se cambia el comportamiento por defecto.
+          pt: The redirection takes place only for approved payments, forward compatibility
+            only if we change the default behavior
+  - external_reference:
+      type: String(256)
+      description:
+        en: Reference you can synchronize with your payment system.
+        es: Referencia que puedes sincronizar con tu sistema de pagos.
+        pt: Referência que pode sincronizar com seu sistema de pagamentos.
+  - expires:
+      type: Boolean
+      description:
+        en: Boolean value that determines if a preference expire.
+        es: Preferencia que determina si una preferencia expira.
+        pt: Preferência que determina se uma preferência expira.
+  - date_of_expiration:
+      type: Date(ISO_8601)
+      description:
+        en: Expiration date of cash payment.
+        es: Fecha de vencimiento del medio de pago en efectivo.
+        pt: Data de expiração de meios de pagamento em dinheiro.
+  - expiration_date_from:
+      type: Date(ISO_8601)
+      description:
+        en: Date since the preference will be active.
+        es: Fecha a partir de la cual la preferencia estará activa.
+        pt: Data a partir da qual a preferência estará ativa.
+  - expiration_date_to:
+      type: Date(ISO_8601)
+      description:
+        en: Date when the preference will be expired.
+        es: Fecha en la que la preferencia expirará.
+        pt: Data em que a preferência expira.
+  - collector_id:
+      type: Integer
+      description:
+        en: Your Mercado Pago seller ID.
+        es: Tu identificador como vendedor en Mercado Pago.
+        pt: Sua identificação como um vendedor no Mercado Pago.
+  - client_id:
+      type: String
+      description:
+        en: Application owner ID that use Mercado Libre API.
+        es: Identificador del dueño de la aplicación que utiliza la API de Mercado Libre.
+        pt: Id do dono do aplicativo que usa a API do Mercado Livre.
+  - marketplace:
+      type: String(256)
+      description:
+        en: 'Origin of the payment. Default value: NONE'
+        es: 'Origen del pago. Valor por defecto: NONE'
+        pt: 'Origem do pagamento. Valor por defeito: NENHUM'
+  - marketplace_fee:
+      type: Float
+      description:
+        en: 'Marketplace''s fee charged by application owner. Default value: 0 in local currency'
+        es: 'Comisión de Marketplace cobrada por el dueño de la aplicación. Valor por defecto: 0 en moneda local'
+        pt: 'Comissão de Mercado cobrada pelo proprietário do aplicativo. Valor por defeito: 0 em moeda local'
+  - differential_pricing:
+      type: Object
+      description:
+        en: Differential pricing configuration for this preference.
+        es: Configuración de precio diferencial para esta preferencia.
+        pt: Configuração de preço diferencial para esta preferência.
+      properties:
+      - id:
+          type: Integer
+          description:
+            en: Differential pricing ID.
+            es: Identificador de precio diferenciado.
+            pt: Identificador de preço diferenciado.
+  - binary_mode:
+      type: Boolean
+      description:
+            en: When set to true, the payment can only be approved or rejected. Otherwise in_process status is added.
+            es: Cuando se configura como true los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.
+            pt: Quando definido como true, o pagamento só pode ter os status approved ou rejected. Caso contrário, o status in_process é adicionado.
+  - taxes:
+      type: Array(Object)
+      description:
+        en: 'Differentiated taxes definition. Only available for Mercado Libre Colombia.'
+        es: 'Definición de impuestos diferenciados. Unicamente disponible para Mercado Libre Colombia.'
+        pt: 'Definição de impostos diferenciados. Disponível apenas para o Mercado Livre Colombia.'
+      properties:
+      - type:
+          type: String(3)
+          description:
+            en: 'Tax identifier. Only IVA and INC'
+            es: 'Identificador de impuesto. Solo se admiten los valores IVA e INC.'
+            pt: 'Identificador de imposto. Somente IVA e INC.'
+      - value:
+          type: Float
+          description:
+            en: 'Tax amount. A maximum of two decimal places is supported. For tax exempt items, zero must be reported.'
+            es: 'Monto del impuesto. Se admite un máximo de dos decimales. Para ítems exentos de impuestos se debe informar cero.'
+            pt: 'Valor do imposto. É suportado no máximo duas casas decimais. Para itens isentos de imposto, zero deve ser relatado.'
+  - tracks:
+      type: Array (Object)
+      description:
+        en: Tracks to be executed during the users's interaction in the Checkout flow.
+        es: Tracks que se ejecutarán durante la interacción de los usuarios en el flujo de Pago.
+        pt: Tracks que serão executados durante a interação do usuário no fluxo de Pagamento.
+      properties:
+      - type:
+          type: String
+          description:
+            en: Track type. Specifies which tool the values belong to.
+            es: Tipo del track. Especifica a qué herramienta pertenecen los valores.
+            pt: Tipo da track. Especifique a herramienta pertenecen los valores.
+          enum:
+          - google_ad:
+              en: "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values: conversion_id and conversion_label."
+              es: "Permite configurar una etiqueta de seguimiento de conversiones de Google Ads de GTM. Valores necesarios: conversion_id y conversion_label."
+              pt: "Configure uma tag de acompanhamento de conversões do Google Ads no GTM. Valores necessários: conversion_id e conversion_label."
+          - facebook_ad:
+              en: "Allows configurations for Facebook Pixel. Necessary values: pixel_id."
+              es: "Permite configurar un Pixel de Facebook. Valores necesarios: pixel_id."
+              pt: "Permite configurar um pixel do Facebook. Valores necessários: pixel_id."
+      - values:
+          type: Map
+          description:
+            en: Configuration values according the track type.
+            es: Valores de configuración de acuerdo al tipo de track.
+            pt: Valores de configuração de acordo com o tipo de track.

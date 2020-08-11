@@ -27,7 +27,7 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 
 * Custom Checkout
     * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/guides/payments/api/receiving-payment-by-card/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/guides/payments/api/customers-and-cards/)
+    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/guides/payments/api/advanced-integration/)
     * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/guides/payments/api/other-payment-ways/)
     * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds)
 
@@ -81,7 +81,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 > There are two types of credentials:
 > * Trial credentials: The credentials in this way are used for testing.
-> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
+> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must activate your credentials.
 
 3) With your credentials filled, you need to enable payment methods. Go to **Custom Checkout - Credit And Debit Card**, click in **Configure** and check **Enable** as **Yes**. Make this process for **Custom Checkout - Offline Payments Methods (Ticket)** too and then click on **Save Config**.
 

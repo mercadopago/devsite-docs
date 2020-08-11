@@ -91,7 +91,7 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ### 1. Com seu usuário vendedor, atribui um pedido a um ponto de venda. 
 
-Para testar o modelo atendido, gere um pedido com as (credenciais)[FAKER][CREDENTIALS][URL] do usuário de teste que deseja utilizar como vendedor e envie um pedido ao QR previamente criado.
+Para testar o modelo atendido, gere um pedido com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que deseja utilizar como vendedor e envie um pedido ao QR previamente criado.
 
 
 ### 2. Realize um pagamento com seu usuário comprador
@@ -117,13 +117,13 @@ Caso | Resultado esperado | Observações
 
 ## Quero ir para Produção
 
-Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá preencher o formulário [Quero ir para produção]([FAKER][CREDENTIALS][URL]). Mais tarde, Mercado Pago poderá auditar seu website, app ou Software de Ponto de Venda, verificando que as regras detalhadas acima sejam atendidas. No caso contrário, um assessor entrará em contato com você para discutir se tem coisas para corrigir em sua integração. 
+Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). Mais tarde, Mercado Pago poderá auditar seu website, app ou Software de Ponto de Venda, verificando que as regras detalhadas acima sejam atendidas. No caso contrário, um assessor entrará em contato com você para discutir se tem coisas para corrigir em sua integração. 
 
 > WARNING
 > 
 > IMPORTANTE
 > 
-> Se não preencher o formulário de [Quero ir para produção]([FAKER][CREDENTIALS][URL]), não poderá fazer qualquer tipo de restituições. 
+> Se não [ativar suas credenciais]([FAKER][CREDENTIALS][URL]), não poderá fazer qualquer tipo de restituições. 
 
 ## Por que este processo é necessário? 
 

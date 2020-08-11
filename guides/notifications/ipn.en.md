@@ -176,3 +176,12 @@ Otherwise, if the order posted QR has **not been scanned yet**, the answer will 
 > CAUTION
 >
 > To approve the integration of in-person payments, Mercado Pago requires the implementation of notifications (IPN) as main method. Order search by `external_reference` should be used only as a contingency measure in the event of no notifications.
+
+## Receive only one type of notification
+
+If you want to receive notifications only from IPN, and not from Webhooks, you can add in the *notification_url* the parameter `source_news=ipn`. For example:
+
+`https://www.yourserver.com/notifications?source_news=ipn`
+
+> The change doesn't affect the parameters already included in the URL.
+

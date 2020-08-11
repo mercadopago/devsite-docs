@@ -239,6 +239,65 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 >
 > El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
 
+## Fecha de vencimiento para pagos en efectivo
+
+Por defecto, la fecha de vencimiento para los pagos en efectivo es de 3 días. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+
+[[[
+```php
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+El período de acreditación es de 1 y 2 días hábiles según el medio de pago. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarte de que se realice el pago.
+
+Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) para realizar la configuración.
+
+> WARNING
+>
+> Importante
+>
+> Si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
+
 ## Cancelar un pago
 
 Es importante que puedas cancelar los pagos luego de su vencimiento para evitar problemas con el cobro. Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días hábiles según el tiempo de cada uno.
@@ -884,7 +943,6 @@ Además de tarjetas, también existen otras opciones de pago que puedes ofrecer 
 | Tipo de medio de pago | Medio de pago |
 | --- | ---|
 | `ticket` | Efecty |
-| `ticket` | Davivienda |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
 
@@ -957,24 +1015,6 @@ El resultado será un listado con los medios de pago y sus propiedades. Por ejem
         "min_allowed_amount": 5000,
         "max_allowed_amount": 4000000,
         "accreditation_time": 0,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "davivienda",
-        "name": "Davivienda",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/davivienda.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/davivienda.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 1600,
-        "max_allowed_amount": 150000000,
-        "accreditation_time": 10080,
         "financial_institutions": [],
         "processing_modes": [
             "aggregator"
@@ -2339,6 +2379,63 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 > Nota
 >
 > El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
+
+## Fecha de vencimiento para pagos con boleto
+
+Por defecto, la fecha de vencimiento para los pagos con boleto es de 3 días. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+
+[[[
+```php
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+El período de acreditación del boleto es de 48h hábiles. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarse de que se realice el pago.
+
+> WARNING
+>
+> Importante
+>
+> Si el pago se realiza después de la fecha de vencimiento, el monto se reembolsará a la cuenta de Mercado Pago del pagador.
 
 ## Cancelar un pago
 

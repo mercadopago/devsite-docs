@@ -1,12 +1,9 @@
 ---
+  sites_supported:
+   - mla
+   - mlb
+   - global
   indexable: false
----
-
----
-sites_supported:
-  - mla
-  - mlb
-  - global
 ---
 
 # Contato
