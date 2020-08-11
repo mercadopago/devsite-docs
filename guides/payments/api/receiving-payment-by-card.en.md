@@ -1,5 +1,5 @@
 ----[mlb]----
-# Integrate the Transparent Checkout API payment for cards
+# Integrate the Checkout API payment for cards
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 # Integrate the Checkout API payment for cards
