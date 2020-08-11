@@ -102,7 +102,7 @@ Once your integration is ready, you just need to fill out the form for to go to 
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Integrate Mercado Pago API for cards
+> Integrate Checkout API for cards
 >
 > Create and configure your own payment experience.
 >

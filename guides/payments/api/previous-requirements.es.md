@@ -100,7 +100,7 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Integrar API de Mercado Pago con tarjeta
+> Integrar ----[mla, mlm, mlc, mco, mlu, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------ con tarjeta
 >
 > Construye y configura tu propia experiencia de pagos.
 >
