@@ -6,27 +6,54 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 
 ### Pagamentos:
 
+----[mlb]----
 |     Produto        | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :----------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Botão de pagamento | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Link de pagamento | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Checkout Pro       | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | Mobile Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
-| API                | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Chackout Transparente                | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|     Produto        | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Link de pagamento | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Checkout Pro       | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Mobile Checkout    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
+| Chackout API                | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+------------
 
 ### Assinaturas:
 
+----[mlb]----
 |    Produto         | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :----------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Botão de pagamento | ✔   | ✔   |     |     | ✔   |     |     |     |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Link de pagamento | ✔   | ✔   |     |     | ✔   |     |     |     |
 | Checkout Pro       | ✔   | ✔   |     |     | ✔   |     |     |     |
-| API                | ✔   | ✔   |     |     | ✔   |     |     |     |
+| Checkout Transparente                | ✔   | ✔   |     |     | ✔   |     |     |     |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|    Produto         | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Link de pagamento | ✔   | ✔   |     |     | ✔   |     |     |     |
+| Checkout Pro       | ✔   | ✔   |     |     | ✔   |     |     |     |
+| Checkout API                | ✔   | ✔   |     |     | ✔   |     |     |     |
+------------
 
 ### Marketplace:
 
+----[mlb]----
 |   Produto    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :----------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Checkout Pro | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Checkout Transparente          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|   Produto    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Checkout Pro | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Checkout API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+------------
 
 
 ## Funcionalidades de API por país
@@ -34,7 +61,7 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 A seguir uma lista de funcionalidades específicas de nossa API por país:
 
 |     Funcionalidade      | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :---------------------- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Autorização e captura   | ✔   | ✔   |     |     |     | ✔   |     |     |
 | Captura parcial         | ✔   | ✔   |     |     |     |     |     |     |
 | Reembolsos              | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |
@@ -50,83 +77,164 @@ Pode ser que alguns [meios de pagamento](https://www.mercadopago.com.br/develope
 
 ### Argentina
 
+----[mlb]----
 |    Produto    |     Solução     |                                                                            Meios de pagamento não disponíveis                                                                       |
-| :------------ | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pagamentos         | Botão de pagamento   | N/A                                                                                                                                                                                 |
+| :--- | :--- | :--- |
+| Pagamentos         | Link de pagamento   | N/A                                                                                                                                                                                 |
 | Pagamentos         | Checkout Pro    | N/A                                                                                                                                                                                 |
 | Pagamentos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
-| Pagamentos         | API             | N/A                                                                                                                                                                                 |
-| Assinaturas | Botão de pagamento   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
+| Pagamentos         | Checkout Transparente             | N/A                                                                                                                                                                                 |
+| Assinaturas | Link de pagamento   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
 Assinaturas | Checkout Pro    |`naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
-Assinaturas | API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Assinaturas | Checkout Transparente             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
-| Marketplace | API          | N/A |
+| Marketplace | Checkout Transparente          | N/A |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|    Produto    |     Solução     |                                                                            Meios de pagamento não disponíveis                                                                       |
+| :--- | :--- | :--- |
+| Pagamentos         | Link de pagamento   | N/A                                                                                                                                                                                 |
+| Pagamentos         | Checkout Pro    | N/A                                                                                                                                                                                 |
+| Pagamentos         | Mobile Checkout | `account_money`                                                                                                                                                                     |
+| Pagamentos         | Checkout API             | N/A                                                                                                                                                                                 |
+| Assinaturas | Link de pagamento   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
+Assinaturas | Checkout Pro    |`naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Assinaturas | Checkout API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+| Marketplace | Checkout Pro | N/A |
+| Marketplace | Checkout API          | N/A |
+------------
 
 ### Brasil
-
+----[mlb]----
 |    Produto    |     Solução     | Meios de pagamento não disponíveis |
-| :------------ | :-------------- | :---------------------------- |
-| Pagamentos         | Botão de pagamento   | N/A                           |
-| Pagamentos         | Checkout Pro    | N/A                           |
+| :--- | :--- | :--- |
+| Pagamentos         | Link de pagamento   | N/A                           |
+| Pagamentos         | Checkout Pro   | N/A                           |
 | Pagamentos         | Mobile Checkout | `account_money`               |
-| Pagamentos         | API             | N/A                           |
-| Assinaturas | Botão de pagamento   | `bolbradesco`, `giftcard`     |
-| Assinaturas | Checkout        | `bolbradesco`, `giftcard`     |
-| Assinaturas | API             | `bolbradesco`, `giftcard`     |
+| Pagamentos         | Checkout Transparente             | N/A                           |
+| Assinaturas | Link de pagamento   | `bolbradesco`, `giftcard`     |
+| Assinaturas | Checkout Pro     | `bolbradesco`, `giftcard`     |
+| Assinaturas | Checkout Transparente             | `bolbradesco`, `giftcard`     |
 | Marketplace   | Checkout Pro    | N/A                           |
-| Marketplace   | API             | N/A                           |
+| Marketplace   | Checkout Transparente             | N/A                           |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|    Produto    |     Solução     | Meios de pagamento não disponíveis |
+| :--- | :--- | :--- |
+| Pagamentos         | Link de pagamento   | N/A                           |
+| Pagamentos         | Checkout Pro   | N/A                           |
+| Pagamentos         | Mobile Checkout | `account_money`               |
+| Pagamentos         | Checkout API             | N/A                           |
+| Assinaturas | Link de pagamento   | `bolbradesco`, `giftcard`     |
+| Assinaturas | Checkout Pro     | `bolbradesco`, `giftcard`     |
+| Assinaturas | Checkout API             | `bolbradesco`, `giftcard`     |
+| Marketplace   | Checkout Pro    | N/A                           |
+| Marketplace   | Checkout API             | N/A                           |
+------------
+
 
 ### Chile
-
+----[mlb]----
 |   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
-| :---------- | :-------------- | :------------------------------------------ |
-| Pagamentos       | Botão de pagamento   | N/A                                         |
+| :--- | :--- | :--- |
+| Pagamentos       | Link de pagamento   | N/A                                         |
 | Pagamentos       | Checkout Pro    | N/A                                         |
 | Pagamentos       | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
-| Pagamentos       | API             | `khipu`                                     |
+| Pagamentos       | Checkout Transparente             | `khipu`                                     |
 | Marketplace | Checkout Pro    | N/A                                         |
-| Marketplace | API             | `khipu`                                     |
+| Marketplace | Checkout Transparente             | `khipu`              
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
+| :--- | :--- | :--- |
+| Pagamentos       | Link de pagamento   | N/A                                         |
+| Pagamentos       | Checkout Pro    | N/A                                         |
+| Pagamentos       | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
+| Pagamentos       | Checkout API             | `khipu`                                     |
+| Marketplace | Checkout Pro    | N/A                                         |
+| Marketplace | Checkout API             | `khipu`                                     |
+------------
+
 
 ### Colômbia
-
+----[mlb]----
 |   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
-| :---------- | :-------------- | :------------------------------------------ |
-| Pagamentos       | Botão de pagamento   | N/A                                         |
+| :--- | :--- | :--- |
+| Pagamentos       | Link de pagamento   | N/A                                         |
 | Pagamentos       | Checkout Pro    | N/A                                |
 | Pagamentos       | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
-| Pagamentos       | API             | `account_money`                                       |
+| Pagamentos       | Checkout Transparente             | `account_money`                                       |
 | Marketplace | Checkout Pro    | N/A                                |
-| Marketplace | API             | `account_money`                                       |
+| Marketplace | Checkout Transparente             | `account_money`                                       |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
+| :--- | :--- | :--- |
+| Pagamentos       | Link de pagamento   | N/A                                         |
+| Pagamentos       | Checkout Pro    | N/A                                |
+| Pagamentos       | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
+| Pagamentos       | Checkout API             | `account_money`                                       |
+| Marketplace | Checkout Pro    | N/A                                |
+| Marketplace | Checkout API             | `account_money`                                       |
+------------
+
 
 ### México
-
+----[mlb]----
 |    Produto    |     Solução     |                         Meios de pagamento não disponíveis                    |
-| :------------ | :-------------- | :---------------------------------------------------------------------------- |
-| Pagamentos         | Botão de pagamento   | N/A                                                                           |
+| :--- | :--- | :--- |
+| Pagamentos         | Link de pagamento   | N/A                                                                           |
 | Pagamentos         | Checkout Pro    | N/A                                                                           |
 | Pagamentos         | Mobile Checkout | `account_money`                                                               |
-| Pagamentos         | API             | N/A                                                                           |
-| Assinaturas | Botão de pagamento   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Pagamentos         | Checkout Transparente             | N/A                                                                           |
+| Assinaturas | Link de pagamento   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Assinaturas | Checkout Pro    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Assinaturas | API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Assinaturas | Checkout Transparente             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Marketplace   | Checkout Pro    | N/A                                                                           |
-| Marketplace   | API             | N/A                                                                           |
+| Marketplace   | Checkout Transparente             | N/A                                                                           |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|    Produto    |     Solução     |                         Meios de pagamento não disponíveis                    |
+| :--- | :--- | :--- |
+| Pagamentos         | Link de pagamento   | N/A                                                                           |
+| Pagamentos         | Checkout Pro    | N/A                                                                           |
+| Pagamentos         | Mobile Checkout | `account_money`                                                               |
+| Pagamentos         | Checkout API             | N/A                                                                           |
+| Assinaturas | Link de pagamento   | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Assinaturas | Checkout Pro    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Assinaturas | Checkout API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Marketplace   | Checkout Pro    | N/A                                                                           |
+| Marketplace   | Checkout API             | N/A                                                                           |
+------------
+
 
 ### Peru
-
+----[mlb]----
 |   Produto   |     Solução     | Meios de pagamento não disponíveis |
-| :---------- | :-------------- | :---------------------------- |
-| Pagamentos       | Botão de pagamento   | N/A                           |
+| :--- | :--- | :--- |
+| Pagamentos       | Link de pagamento   | N/A                           |
 | Pagamentos       | Checkout Pro    | N/A                           |
 | Pagamentos       | Mobile Checkout | `account_money`               |
-| Pagamentos       | API             | N/A                           |
+| Pagamentos       | Checkout Transparente             | N/A                           |
 | Marketplace | Checkout Pro    | N/A                           |
-| Marketplace | API             | N/A                           |
+| Marketplace | Checkout Transparente             | N/A                           |
+------------
+----[mla,mlm,mpe,mco,mlu,mlc]----
+|   Produto   |     Solução     | Meios de pagamento não disponíveis |
+| :--- | :--- | :--- |
+| Pagamentos       | Link de pagamento   | N/A                           |
+| Pagamentos       | Checkout Pro    | N/A                           |
+| Pagamentos       | Mobile Checkout | `account_money`               |
+| Pagamentos       | Checkout API             | N/A                           |
+| Marketplace | Checkout Pro    | N/A                           |
+| Marketplace | Checkout API             | N/A                           |
+------------
+
 
 ### Uruguai
 
 |   Produto   |    Solução    | Meios de pagamento não disponíveis |
-| :---------- | :------------ | :---------------------------- |
-| Pagamentos       | Botão de pagamento | N/A                           |
+| :--- | :--- | :--- |
+| Pagamentos       | Link de pagamento | N/A                           |
 | Pagamentos       | Checkout Pro  | N/A                           |
 | Marketplace | Checkout Pro  | N/A                           |
