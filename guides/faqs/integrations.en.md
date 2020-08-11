@@ -58,7 +58,7 @@ This way of integrating allows you to connect directly with our APIs.
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
-[Integrate by Checkout API](guides/payments/api/introduction)
+[Integrate Checkout API](guides/payments/api/introduction)
 
 ## How to offer interest-free installments
 
