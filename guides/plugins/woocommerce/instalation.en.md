@@ -62,7 +62,7 @@ Done! The Mercado Pago module will be installed in your online store.
 
 Check that everything went well from your WordPress desktop. You will see the module among your *Installed Plugins*. Activate it to proceed to the integration of your account and the configuration steps.
 
-When you activate the plugin, WordPress will take you to the WooCommerce *Settings* and, from there, to the *Payments* section, where you will have the [types of checkout](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/introduction/#bookmark_checkout_types) we offer for your online store: Mercado Pago Checkout and Custom Checkout.
+When you activate the plugin, WordPress will take you to the WooCommerce *Settings* and, from there, to the *Payments* section, where you will have the [types of checkout](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/introduction/#bookmark_checkout_types) we offer for your online store: Checkout Pro and Custom Checkout.
 
 > NOTE
 >

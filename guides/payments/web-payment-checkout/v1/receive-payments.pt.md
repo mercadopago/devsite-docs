@@ -6,6 +6,7 @@ sites_supported:
   - mlu
   - mlc
   - mlm
+indexable: false
 ---
 
 # Receba Pagamentos
@@ -14,11 +15,11 @@ sites_supported:
 >
 > Nota
 >
-> Esta documentação é referente à versão anterior do Checkout.
+> Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
 
-Receba pagamentos de forma simples e segura utilizando o Checkout do Mercado Pago.
+Receba pagamentos de forma simples e segura utilizando o Checkout Pro.
 
 ## 1. Crie uma preferência de pagamentos
 

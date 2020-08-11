@@ -1,18 +1,18 @@
-# Cómo integrar marketplace en el Checkout de Mercado Pago
+# Cómo integrar marketplace en el Checkout Pro
 
 ----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction).
+> * Tener implementado [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction).
 ------------
 ----[mpe]----
 > WARNING
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout](https://www.mercadopago.com.pe/developers/es/guides/payments/web-checkout/introduction).
+> * Tener implementado [Checkout Pro](https://www.mercadopago.com.pe/developers/es/guides/payments/web-checkout/introduction).
 ------------
 
 
@@ -138,10 +138,10 @@ Respuesta esperada:
 ## 3. Integra el checkout
 
 ----[mpe]----
-Para cobrar en nombre de tus vendedores debes integrar [Checkout de Mercado Pago](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
+Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
 ------------
 ----[mla,mlb,mlc,mlm,mco,mlu]----
-Para cobrar en nombre de tus vendedores debes integrar [Checkout de Mercado Pago](https://www.mercadopago.com.mx/developers/es/guides/payments/web-payment-checkout/introduction/), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
+Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago.com.mx/developers/es/guides/payments/web-payment-checkout/introduction/), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
 ------------
 
 Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:

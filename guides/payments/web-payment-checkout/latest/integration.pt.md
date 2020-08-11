@@ -8,7 +8,7 @@ sites_supported:
   - mlc
 ---
 
-# Integre o Checkout Mercado Pago
+# Integre o Checkout Pro
 
 
 
@@ -28,7 +28,7 @@ sites_supported:
 
 ## Etapas para se integrar
 
-Instalar o Checkout Mercado Pago requer duas etapas:
+Instalar o Checkout Pro requer duas etapas:
 
 ### 1. Gere sua preferência
 
@@ -239,7 +239,7 @@ curl -X POST \
 
 ### 2. Adicione o checkout ao seu site
 
-Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Checkout Mercado Pago onde você quiser que ele apareça.
+Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Checkout Pro onde você quiser que ele apareça.
 
 > NOTE
 >
@@ -297,13 +297,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 > Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
 
 #### Excelente! Você concluiu sua integração.
-_Clique no link dentro do seu site e [teste a integração do seu Checkout Mercado Pago.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
-
-> NOTE
->
-> Nota
->
-> Esta documentação é referente à nova versão do Checkout Mercado Pago. **Para ver a versão anterior**, confira a [seção de Checkout Mercado Pago antigua](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
+_Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 ---
 

@@ -1,11 +1,5 @@
 # Notificaciones Webhooks
 
-> WARNING
->
-> Pre-requisitos
->
-> * Tener implementado [API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction).
-
 Un **webhook** es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
 Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com/mla/account/webhooks).

@@ -1,6 +1,6 @@
 # Prerequisites to get started
 
-Find out what you need to know to integrate our APIs.
+Find out what you need to know to integrate our Checkout API.
 
 ## Have your credentials handy
 Your credentials are the **keys we provide you to configure your integrations**. In this case, you will use a public and a private key.
@@ -102,11 +102,12 @@ Once your integration is ready, you just need to fill out the form for to go to 
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Integrate Mercado Pago API for cards
+> Integrate Checkout API for cards
 >
 > Create and configure your own payment experience.
 >
-> [Integrate Mercado Pago API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/receiving-payment-by-card/)
+> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/receiving-payment-by-card/receiving-payment-by-card/)
+
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

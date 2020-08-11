@@ -463,7 +463,7 @@ Para configurá-lo, adicione o item `shipments` com o valor que quiser cobrar no
 
 ## Otimize a conversão dos seus anúncios
 
-Sabemos que é importante maximizar a eficácia dos seus anúncios. Por isto, oferecemos a possibilidade de integrar o Checkout Mercado Pago com as plataformas do Facebook Ads e Google Ads para associar pagamentos às suas campanhas.
+Sabemos que é importante maximizar a eficácia dos seus anúncios. Por isto, oferecemos a possibilidade de integrar o Checkout Pro com as plataformas do Facebook Ads e Google Ads para associar pagamentos às suas campanhas.
 
 > NOTE
 >
@@ -592,7 +592,7 @@ curl -X POST \
 ```
 ]]]
 
-Ao configurar, quando um pagamento é aprovado por meio do seu Checkout Mercado Pago, você verá um evento `Purchase`associado ao pixel especificado.
+Ao configurar, quando um pagamento é aprovado por meio do seu Checkout Pro, você verá um evento `Purchase`associado ao pixel especificado.
 
 > NOTE
 >
@@ -728,7 +728,7 @@ curl -X POST \
 ```
 ]]]
 
-Desta forma, quando um pagamento é aprovado por meio do seu Checkout Mercado Pago, será associada uma conversão à tag configurada.
+Desta forma, quando um pagamento é aprovado por meio do seu Checkout Pro, será associada uma conversão à tag configurada.
 
 > NOTE
 >
