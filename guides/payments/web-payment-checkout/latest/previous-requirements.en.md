@@ -19,7 +19,7 @@ Term | Description
 ------------ | -------------
 _Preference_ | It is the **information of the product or service that you want to offer.** Among the most important attributes of a preference are defined: the description, the amount and the items. When generating it, you get the URL to start the payment flow.
 _Credentials_ | Your credentials are the **keys we provide so you can configure your integrations.**<br/>There are two types:<br/><br/>**Public Key**. Public key of the application to know, for example, the payment methods and encrypt card details. You must use it only for your integrations.<br/>**Access Token**. Private key of the application to generate payments. You must use it only for your integrations.<br/><br/>To find them, go to your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> and select the productive ones.<br/><br/>
-_Initial Point (init_point)_ | **It is the URL obtained at the time of generating the preference** and that starts the payment flow of the Mercado Pago Checkout.
+_Initial Point (init_point)_ | **It is the URL obtained at the time of generating the preference** and that starts the payment flow of the Checkout Pro.
 _Ítem_ | It refers to the product or service you want to offer. It can be one or a list.
 _Application_ | The applications are used to process the seller's payments. **Each application identifies a particular integration**, since each one has its own <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a>. One Mercado Pago account can have multiple applications.<br/><br/>You can find the information of each one in Credentials. Upon entering, one will be created automatically or you can <a href="https://applications.mercadopago.com/" target="_blank"> create an application</a> every time you need one.
 
@@ -96,23 +96,17 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
 
-> NOTE
->
-> Note
->
-> This documentation refers to the new version of the Mercado Pago Checkout. **To view the previous version**, go to the [old Mercado Pago Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
-
  ---
 
 ### Next steps
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Integrate Mercado Pago Checkout
+> Integrate Checkout Pro
 >
 > Follow the step by step to start receiving payments on your website.
 >
-> [Integrate Mercado Pago Checkout](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/integration/)
+> [Integrate Checkout Pro](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

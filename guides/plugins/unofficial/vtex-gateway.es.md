@@ -16,7 +16,7 @@ indexable: false
 Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) o
 [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito).
 
-Para configurar pagos en efectivo y también elegir la opción de recibir pagos directamente en el Checkout de Mercado Pago te recomendamos que vayas a la siguiente [documentación](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex/#bookmark_configurar_afiliacion_en_modo_agregador).
+Para configurar pagos en efectivo y también elegir la opción de recibir pagos directamente en el Checkout Pro te recomendamos que vayas a la siguiente [documentación](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex/#bookmark_configurar_afiliacion_en_modo_agregador).
 
 
 ## Etapas para configurar
@@ -222,7 +222,7 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) o [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria).
 
-> Para configurar pagos en efectivo y también elegir la opción de recibir pagos directamente en el Checkout de Mercado Pago te recomendamos que vayas a la siguiente [documentación](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex/#bookmark_configurar_afiliacion_en_modo_agregador).
+> Para configurar pagos en efectivo y también elegir la opción de recibir pagos directamente en el Checkout Pro te recomendamos que vayas a la siguiente [documentación](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex/#bookmark_configurar_afiliacion_en_modo_agregador).
 
 
 ## Etapas para configurar

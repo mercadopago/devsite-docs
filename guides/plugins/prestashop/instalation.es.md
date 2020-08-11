@@ -69,11 +69,11 @@ Estas son las mejoras técnicas que encontrarás en nuestra última versión:
 - En esta versión debes pegar la public_key de sandbox y producción para poder vender. Antes de actualizar el plugin, activa el modo de mantenimiento y haz algunas pruebas para chequear que nada se rompa.
 
 **Fixes:**
-- Arreglamos el layout mobile del Checkout de Mercado Pago.
+- Arreglamos el layout mobile del Checkout Pro.
 - Arreglamos la creación del pedido, dejando que la función recupere el valor del customer_secure_key.
 
 **Mejoras:** 
-- Ahora el Checkout de Mercado Pago funciona a través de un modal: tus clientes podrán finalizar la compra sin abandonar el sitio.
+- Ahora el Checkout Pro funciona a través de un modal: tus clientes podrán finalizar la compra sin abandonar el sitio.
 - Renovamos la pantalla de configuraciones del plugin.
 - Renovamos la estructura del código del plugin. 
 - Unimos las versiones del plugin para PS1.6 y PS1.7.

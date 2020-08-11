@@ -266,7 +266,7 @@ Parameter |	Description
 `processing_mode` | Value `aggregator`. |
 `merchant_account_id` | Value `null`. |
 
-> The information of the parameters will depend on the finalization of the payment at the Checkout of Mercado Pago and on the fact that the flow has not been abandoned before returning to your site through the `back_url` of **_failure_**.
+> The information of the parameters will depend on the finalization of the payment at the Checkout Pro and on the fact that the flow has not been abandoned before returning to your site through the `back_url` of **_failure_**.
 
 
 [[[
@@ -359,7 +359,7 @@ This means that the seller's money for that payment will be withheld from their 
 >
 > Other functionalities
 >
-> Set up your payment and adapt the Mercado Pago Checkout to your business.
+> Set up your payment and adapt the Checkout Pro to your business.
 >
 > [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/)
 

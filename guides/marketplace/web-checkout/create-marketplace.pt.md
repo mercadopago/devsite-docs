@@ -1,4 +1,4 @@
-# Como integrar o Marketplace no Checkout Mercado Pago
+# Como integrar o Marketplace no Checkout Pro
 
 ----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING

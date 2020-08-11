@@ -15,7 +15,7 @@
 >
 > B. En caso de que usuarios o clientes existentes del Vendedor estuvieran siendo migrados a la plataforma de Pagos Recurrentes de Mercado Pago, el Vendedor deberá comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en el resumen verá el cargo como Mercado Pago/Mercado Libre” (*).
 >
-> C. Pre-Approval solo está disponible a través del checkout personalizado de Mercado Pago o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
+> C. Pre-Approval solo está disponible a través del Checkout Pro personalizado o Web Tokenize Checkout, es decir, vía la utilización de nuestras API’s.
 
 <br/>
 
