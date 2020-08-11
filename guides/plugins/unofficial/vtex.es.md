@@ -86,7 +86,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 
 ## Configura las condiciones de pago
 
-Luego de tener creada tu afiliación con Mercado Pago, puedes configurar pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout Pro] (#bookmark_condición_de_pagos_con_checkout_pro).
+Luego de tener creada tu afiliación con Mercado Pago, puedes configurar pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout Pro](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ### Condición de pagos para el Checkout de VTEX
