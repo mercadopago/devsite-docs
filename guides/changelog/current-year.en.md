@@ -118,7 +118,7 @@ We have released a new version of SDK .NET 1.8.0.
 
 > CHANGELOG
 >
-> New version for Payment link
+> New version for Payment Link
 >
 > NEW_VERSION: NEW VERSION
 >
