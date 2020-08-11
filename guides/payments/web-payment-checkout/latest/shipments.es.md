@@ -146,7 +146,7 @@ Por defecto, tendrás configurado el envío a cargo del comprador. Si quieres, p
 ----[mla]----
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envíos modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> envíos disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envíos modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> envíos disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envío normal a domicilio de Adreani. 
 
@@ -226,7 +226,7 @@ preference.Shipments = shipments;
 
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 509247` que refiere a un envío estándar a domicilio y el `ID 509245` para envío prioritario a sucursal de correo. 
 
@@ -306,7 +306,7 @@ preference.Shipments = shipments;
 
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 505345` que refiere a un envío estándar a domicilio y el `ID 100009` para envío prioritario a sucursal de correo. 
 
@@ -384,7 +384,7 @@ preference.Shipments = shipments;
 ------------
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulador de costos de envíos
-Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `alto`, `ancho`, `largo`, `peso` de tu paquete.
+Puedes simular costos desde la calculadora de envíos. Para hacerlo, debes reemplazar los valores de `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `altoxanchoxlargo,peso` de tu paquete.
 
 > https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_alto_x_ancho_x_largo_,_peso
 
@@ -458,7 +458,7 @@ preference.Shipments = shipments;
 
 **¡Y listo! Mercado envíos ya se encuentra integrado.** 
 
-Una vez que se reciba una venta, solo hay que <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar el paquete y enviarlo</a>.
+Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar el paquete y enviarlo</a>. ------------ ----[mlb]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_1603" target="_blank">preparar el paquete y enviarlo</a>. ------------
 
 > NOTE
 >

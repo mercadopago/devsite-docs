@@ -70,7 +70,7 @@ preference.setShipments(shipments);
 ```
 ```node
 ===
- As dimensões indicadas devem coincidir com as do pacote, para que a transportadora não rejeite o envio. Se não for rejeitado e as dimensões estiverem incorretas, deduziremos essa diferença do valor total da conta do vendedor.
+Respeite o formato das dimensões, em centímetros e gramas, conforme corresponda: alturaxlarguraxcomprimento, peso. 
 ===
 var preference = {}
 
@@ -139,7 +139,7 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 >
 > Importante
 >
-> As dimensões indicadas devem coincidir com as do pacote, para que a transportadora não rejeite o envio. Se não for rejeitado e as dimensões estiverem incorretas, deduziremos essa diferença do valor total da conta do vendedor.
+>Respeite o formato das dimensões, em centímetros e gramas, conforme corresponda: alturaxlarguraxcomprimento, peso. 
 
 
 ## Você pode adicionar outros tipos de envio
@@ -152,7 +152,7 @@ Por padrão, você terá configurado o envio por conta do comprador. Se quiser, 
 O custo do envio será debitado da conta do vendedor quando receber um pagamento. 
 
 Você pode oferecer diferentes formas de envio alterando o ID. Confira os
- <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
+ <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
 
 Por exemplo, no código a seguir, o `ID 505345` se encontra adicionado, referente a um envio normal em domicílio de Mercado Envios e o `ID 100009` para envio normal de Correios.
 
@@ -234,9 +234,9 @@ preference.Shipments = shipments;
 O custo do envio será debitado da conta do vendedor quando receber um pagamento. 
 
 Você pode oferecer diferentes formas de envio alterando o ID. Confira os
- <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
+ <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
 
-Por exemplo, no código a seguir, o `ID 73328` se encontra adicionado, referente a um envio normal em domicílio de Mercado Envios e o `ID 504945` para envio normal de Correios.
+Por exemplo, no código a seguir, o `ID 73328` se encontra adicionado, referente a um envio normal de OCA e o `ID 504945` para envio normal de Andreani.
 
 
 [[[
@@ -317,9 +317,9 @@ preference.Shipments = shipments;
 O custo do envio será debitado da conta do vendedor quando receber um pagamento. 
 
 Você pode oferecer diferentes formas de envio alterando o ID. Confira os
- <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=MLA&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
+ <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
 
-Por exemplo, no código a seguir, o `ID 505345` se encontra adicionado, referente a um envio normal em domicílio de Mercado Envios e o `ID 100009` para envio normal de Correios.
+Por exemplo, no código a seguir, o `ID 509247` se encontra adicionado, referente a um envio normal em domicílio e o `ID 509245` para envio prioritário para uma agência dos correios.
 
 
 [[[
@@ -330,8 +330,8 @@ Por exemplo, no código a seguir, o `ID 505345` se encontra adicionado, referent
   $shipments = new MercadoPago\Shipments();
   // ...
   $shipments->free_methods = array(
-    array("id"=>505345,
-          "id2"=>100009) 
+    array("id"=>509247,
+          "id2"=>509245) 
   );
   // ...
 
@@ -343,7 +343,7 @@ Preference preference = new Preference();
 
 Shipments shipments = new Shipments();
 // ...
-shipments.setFreeMethods(505345, 100009); 
+shipments.setFreeMethods(509247, 509245); 
 // ...
 preference.setShipments(shipments);
 
@@ -355,10 +355,10 @@ var shipments = {
   //..
   "free_methods": [
       {
-          "id": 505345
+          "id": 509247
       },
       {
-          "id": 100009
+          "id": 509245
       }
     ],
   //..
@@ -373,10 +373,10 @@ shipments = MercadoPago::Shipment.new
 # ...
 shipments.free_methods = [
   {
-    id: 505345
+    id: 509247
   }
   ,{
-    id: 100009
+    id: 509245
   }
 ]
 # ...
@@ -388,7 +388,7 @@ Preference preference = new Preference();
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment();
 //...
-shipments.FreeMethods = new List<int> { 505345, 100009 };
+shipments.FreeMethods = new List<int> { 509247, 509245 };
 //...
 preference.Shipments = shipments;
 ```
@@ -401,13 +401,12 @@ Você pode simular custos pela calculadora de envios. Para isso, você deve subs
 
 Como por exemplo:
 
-> https://api.mercadolibre.com/users/179504451/shipping_options?free_method=182&item_price=718&zip_code=[FAKER][ADDRESS][ZIP]&dimensions=2x11x16%2C88#json
-
+> https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_altura_x_largura_x_comprimento_,_peso
 
 [[[
 ```curl
 
-curl --location --request GET 'http://api.mercadolibre.com/users/179504451/shipping_options?free_method=182&item_price=718&zip_code=74474322&dimensions=2x11x16,88'
+curl --location --request GET 'http://api.mercadolibre.com/users/179504451/shipping_options?free_method=182&item_price=718&zip_code=[FAKER][ADDRESS][ZIP]&dimensions=2x11x16,88'
 
 ```
 ]]]
@@ -474,7 +473,7 @@ preference.Shipments = shipments;
 
 **Pronto! O Mercado Envios já está integrado.** 
 
-Quando receber uma venda, basta <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar o pacote e enviá-lo</a>.
+Quando receber uma venda, basta ----[mla, mlm]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar o pacote e enviá-lo</a>. ------------ ----[mlb]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_1603" target="_blank">preparar o pacote e enviá-lo</a>. ------------
 
 > NOTE
 >
