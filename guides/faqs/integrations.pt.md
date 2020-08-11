@@ -64,11 +64,11 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 - **Sua equipe técnica tem total controle.** Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
-[Integrar por Checkout API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+[Integrar Checkout API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
 ------------
 
 ----[mlb]----
-[Integrar por Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+[Integrar Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
 ------------
 
 ## Posso oferecer pagamentos com cartão de débito?
