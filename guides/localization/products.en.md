@@ -6,43 +6,41 @@ The products offered by Mercado Pago may vary by country.
 
 ### Payments:
 
-|     Product     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| Product | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Payment link      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Checkout Pro    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Mobile Checkout | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     | ✔   |
-| Checkout API             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Payment link | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Mobile Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | | ✔ |
+| Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 ### Subscriptions:
 
-|    Product     | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| Product | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Payment link     | ✔   | ✔   |     |     | ✔   |     |     |     |
-| Checkout Pro   | ✔   | ✔   |     |     | ✔   |     |     |     |
-| Checkout API            | ✔   | ✔   |     |     | ✔   |     |     |     |
+| Payment link | ✔ | ✔ | | | ✔ | | | |
+| Checkout Pro | ✔ | ✔ | | | ✔ | | | |
+| Checkout API | ✔ | ✔ | | | ✔ | | | |
 
 ### Marketplace:
 
-|   Product    | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| Product | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Checkout Pro | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Checkout API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 
 ## API features by country
 
 API features for each country are shown below:
 
-|      Feature               | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
+| Feature | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Authorization and capture  | ✔   | ✔   |     |     |     | ✔   |     |     |
-| Capture by smaller amount  | ✔   | ✔   |     |     |     |     |     |     |
-| Refunds                    | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
-| Partial refunds            | ✔   | ✔   | ✔   |     | ✔   |     |     | ✔   |
-| Payments without CVV       | ✔   | ✔   |     | ✔   | ✔   | ✔   | ✔   |     |
-| Soft descriptor            | ✔  |  ✔   |     |     |     |     |     | ✔   |
-
-
+| Authorization and capture | ✔ | ✔ | | | | ✔ | | |
+| Capture by smaller amount | ✔ | ✔ | | | | | | |
+| Refunds | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Partial refunds | ✔ | ✔ | ✔ | | ✔ | | | ✔ |
+| Payments without CVV | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
+| Soft descriptor | ✔ | ✔ | | | | | | ✔ |
 
 ## Unavailable payment methods
 
@@ -50,88 +48,88 @@ Certain [payment methods](payment-methods) may not be available for certain prod
 
 ### Argentina
 
-|    Product    |     Solution    |                                                                            Unavailable payment methods                                                                            |
-| :--- | :--- | :--- 
-| Payments      | Payment link      | N/A                                                                                                                                                                                 |
-| Payments      | Checkout Pro    | N/A                                                                                                                                                                                 |
-| Payments      | Mobile Checkout | `account_money`                                                                                                                                                                     |
-| Payments      | Checkout API             | N/A                                                                                                                                                                                 |
-| Subscriptions | Payment link      | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
-Subscriptions | Checkout Pro    | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
-Subscriptions | Checkout API             | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+| Product | Solution | Unavailable payment methods |
+| :--- | :--- | :--- |
+| Payments | Payment link | N/A |
+| Payments | Checkout Pro | N/A |
+| Payments | Mobile Checkout | `account_money` |
+| Payments | Checkout API | N/A |
+| Subscriptions | Payment link | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
+Subscriptions | Checkout Pro | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Subscriptions | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API          | N/A |
+| Marketplace | Checkout API | N/A |
 
 
 ### Brazil
 
-|    Product    |     Solution    | Unavailable payment methods   |
+| Product | Solution | Unavailable payment methods |
 | :--- | :--- | :--- |
-| Payments      | Payment link      | N/A                           |
-| Payments      | Checkout Pro    | N/A                           |
-| Payments      | Mobile Checkout | `account_money`               |
-| Payments      | Checkout API             | N/A                           |
-| Subscriptions | Payment link      | `bolbradesco`, `giftcard`     |
-| Subscriptions | Checkout        | `bolbradesco`, `giftcard`     |
-| Subscriptions | Checkout API             | `bolbradesco`, `giftcard`     |
-| Marketplace   | Checkout Pro    | N/A                           |
-| Marketplace   | Checkout API             | N/A                           |
+| Payments | Payment link | N/A |
+| Payments | Checkout Pro | N/A |
+| Payments | Mobile Checkout | `account_money` |
+| Payments | Checkout API | N/A |
+| Subscriptions | Payment link | `bolbradesco`, `giftcard` |
+| Subscriptions | Checkout | `bolbradesco`, `giftcard` |
+| Subscriptions | Checkout API | `bolbradesco`, `giftcard` |
+| Marketplace | Checkout Pro | N/A |
+| Marketplace | Checkout API | N/A |
 
 ### Chile
 
-|   Product   |     Solution    |        Unavailable payment methods          |
+| Product | Solution | Unavailable payment methods |
 | :--- | :--- | :--- |
-| Payments    | Payment link      | N/A                                         |
-| Payments    | Checkout Pro    | N/A                                         |
-| Payments    | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
-| Payments    | Checkout API             | `khipu`                                     |
-| Marketplace | Checkout Pro    | N/A                                         |
-| Marketplace | Checkout API             | `khipu`                                     |
+| Payments | Payment link | N/A |
+| Payments | Checkout Pro | N/A |
+| Payments | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
+| Payments | Checkout API | `khipu` |
+| Marketplace | Checkout Pro | N/A |
+| Marketplace | Checkout API | `khipu` |
 
 
 ### Colombia
 
-|   Product   |     Solution    |        Unavailable payment methods          |
+| Product | Solution | Unavailable payment methods |
 | :--- | :--- | :--- |
-| Payments    | Payment link      | N/A                                         |
-| Payments    | Checkout Pro    | N/A                                         |
-| Payments    | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
-| Payments    | Checkout API             | `account_money`                             |
-| Marketplace | Checkout Pro    | N/A                                         |
-| Marketplace | Checkout API             | `account_money`                             |
+| Payments | Payment link | N/A |
+| Payments   | Checkout Pro   | N/A                                 |
+| Payments | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
+| Payments | Checkout API | `account_money` |
+| Marketplace | Checkout Pro   | N/A                                 |
+| Marketplace | Checkout API | `account_money` |
 
 
 ### Mexico
 
-|    Product    |     Solution    |                         Unavailable payment methods                           |
+| Product | Solution | Unavailable payment methods |
 | :--- | :--- | :--- |
-| Payments      | Payment link      | N/A                                                                           |
-| Payments      | Checkout Pro    | N/A                                                                           |
-| Payments      | Mobile Checkout | `account_money`                                                               |
-| Payments      | Checkout API             | N/A                                                                           |
-| Subscriptions | Payment link      | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Subscriptions | Checkout Pro    | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Subscriptions | Checkout API             | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
-| Marketplace   | Checkout Pro    | N/A                                                                           |
-| Marketplace   | Checkout API             | N/A                                                                           |
+| Payments | Payment link | N/A |
+| Payments | Checkout Pro | N/A |
+| Payments | Mobile Checkout | `account_money` |
+| Payments | Checkout API | N/A |
+| Subscriptions | Payment link | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Subscriptions | Checkout Pro | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Subscriptions | Checkout API | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
+| Marketplace | Checkout Pro | N/A |
+| Marketplace | Checkout API | N/A |
 
 
 ### Peru
 
-|   Product   |     Solution    | Unavailable payment methods   |
+| Product | Solution | Unavailable payment methods |
 | :--- | :--- | :--- |
-| Payments    | Payment link      | N/A                           |
-| Payments    | Checkout Pro    | N/A                           |
-| Payments    | Mobile Checkout | `account_money`               |
-| Payments    | Checkout API             | N/A                           |
-| Marketplace | Checkout Pro    | N/A                           |
-| Marketplace | Checkout API             | N/A                           |
+| Payments | Payment link | N/A |
+| Payments | Checkout Pro | N/A |
+| Payments | Mobile Checkout | `account_money` |
+| Payments | Checkout API | N/A |
+| Marketplace | Checkout Pro | N/A |
+| Marketplace | Checkout API | N/A |
 
 
 ### Uruguay
 
-|   Product   |    Solution   | Unavailable payment methods   |
+| Product | Solution | Unavailable payment methods |
 | :--- | :--- | :--- |
-| Payments    | Payment link    | N/A                           |
-| Payments    | Checkout Pro  | N/A                           |
-| Marketplace | Checkout Pro  | N/A                           |
+| Payments | Payment link | N/A |
+| Payments | Checkout Pro | N/A |
+| Marketplace | Checkout Pro | N/A |
