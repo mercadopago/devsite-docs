@@ -6,6 +6,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Agosto 2020
 
+### 12 de agosto
+
+> CHANGELOG
+>
+> Nova versão SDK .NET
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+
+Lançamos uma nova versão do SDK .NET 1.3.2.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.8.1).
+
 ### 7 de agosto
 
 > CHANGELOG
