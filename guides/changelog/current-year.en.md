@@ -126,7 +126,7 @@ We have released a new version of SDK .NET 1.8.0.
 
 We have lauched a new version for Payment Link, totally renewed. We have designed and implemented a new experience when creating payment links to share online by chat, e-mail or social media.
 
-[Go to Payment link documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/intro-button/)
+[Go to Payment Link documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/intro-button/)
 
 ---
 
