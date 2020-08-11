@@ -1,6 +1,7 @@
 # Integrate other payment methods
 
-With Mercado Pago payment API, you can add **alternative payment methods for your customers to make their payments**.
+With Checkout API of Mercado Pago, you can add **alternative payment methods for your customers to make their payments**.
+
 
 ----[mla]----
 
