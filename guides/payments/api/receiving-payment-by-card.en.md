@@ -1,6 +1,16 @@
-# Integrate the payment API for cards
+----[mlb]----
+# Integrate the Transparent Checkout API payment for cards
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+# Integrate the Checkout API payment for cards
+------------
 
-Integrating Mercado Pago's payment API for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
+----[mlb]----
+Integrating Mercado Pago's Transparent Checkout for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Integrating Mercado Pago's Checkout API for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
+------------
 
 ## How does it work?
 
@@ -8,7 +18,12 @@ Integrating Mercado Pago's payment API for cards allows you to offer a complete 
 
 <br>
 
-With our Mercado Pago payment API, you should take into account two aspects: data capture and payment confirmation submission.
+----[mlb]----
+With our Mercado Pago Transparent Checkout, you should take into account two aspects: data capture and payment confirmation submission.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+With our Mercado Pago Checkout API, you should take into account two aspects: data capture and payment confirmation submission.
+------------
 
 1. First, you need a frontend to collect card data and generate a security token with the information required to create a payment.
 2. Then, you need a backend that takes the generated token and payment data, such as amount and item, to confirm and make a payment.
