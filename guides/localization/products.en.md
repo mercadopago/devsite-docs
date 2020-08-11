@@ -62,6 +62,7 @@ Subscriptions | Checkout API             | `naranja`, `nativa`, `shopping`, `deb
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API          | N/A |
 
+
 ### Brazil
 
 |    Product    |     Solution    | Unavailable payment methods   |
@@ -87,6 +88,7 @@ Subscriptions | Checkout API             | `naranja`, `nativa`, `shopping`, `deb
 | Marketplace | Checkout Pro    | N/A                                         |
 | Marketplace | Checkout API             | `khipu`                                     |
 
+
 ### Colombia
 
 |   Product   |     Solution    |        Unavailable payment methods          |
@@ -97,6 +99,7 @@ Subscriptions | Checkout API             | `naranja`, `nativa`, `shopping`, `deb
 | Payments    | Checkout API             | `account_money`                             |
 | Marketplace | Checkout Pro    | N/A                                         |
 | Marketplace | Checkout API             | `account_money`                             |
+
 
 ### Mexico
 
@@ -112,6 +115,7 @@ Subscriptions | Checkout API             | `naranja`, `nativa`, `shopping`, `deb
 | Marketplace   | Checkout Pro    | N/A                                                                           |
 | Marketplace   | Checkout API             | N/A                                                                           |
 
+
 ### Peru
 
 |   Product   |     Solution    | Unavailable payment methods   |
@@ -122,6 +126,7 @@ Subscriptions | Checkout API             | `naranja`, `nativa`, `shopping`, `deb
 | Payments    | Checkout API             | N/A                           |
 | Marketplace | Checkout Pro    | N/A                           |
 | Marketplace | Checkout API             | N/A                           |
+
 
 ### Uruguay
 

@@ -4,7 +4,7 @@
 
 VTEX é uma **plataforma e-commerce para sua loja virtual** para sua loja virtual, que permite processar pagamentos através do Mercado Pago.
 
-Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito) e [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) no próprio [checkout da sua loja ou redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_mercado_pago).
+Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito) e [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) no próprio [checkout da sua loja ou redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_pro).
 
 
 ## Etapas para configurar
@@ -54,7 +54,7 @@ E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
 ## Configurar condições de pagamento
 
-Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e também pagamentos via [Checkout Mercado Pago](#bookmark_condição_de_pagamento_checkout_mercado_pago).
+Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e também pagamentos via [Checkout Pro](#bookmark_condição_de_pagamento_checkout_pro).
 
 ### Condição de pagamento cartão de crédito
 
@@ -85,7 +85,7 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
 <p>&nbsp;</p>
 
-### Condição de pagamento Checkout Mercado Pago
+### Condição de pagamento Checkout Pro
 
 **O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
 
@@ -173,7 +173,7 @@ Os erros mais comuns são os seguintes:
 >
 > Importante
 >
-> Antes de iniciar sua operação em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
+> Antes de iniciar sua operação em produção, você deve <a href="https://www.mercadopago[FAKER][SITE][ID]/developers/panel/credentials" target="_blank">ativar suas credenciais</a>. Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).

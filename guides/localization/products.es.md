@@ -208,6 +208,7 @@ Suscripciones | Checkout API             | `naranja`, `nativa`, `shopping`, `deb
 | Marketplace   | Checkout API             | N/A                                                                           |
 ------------
 
+
 ### Perú
 
 ----[mlb]----
@@ -230,6 +231,7 @@ Suscripciones | Checkout API             | `naranja`, `nativa`, `shopping`, `deb
 | Marketplace | Checkout Pro    | N/A                           |
 | Marketplace | Checkout API             | N/A                           |
 ------------
+
 
 ### Uruguay
 

@@ -12,9 +12,9 @@
 
 We offer different options so you can build the payment solution that best suits your business.
 
-We have tools that are ready to use, such as SDKs, payment buttons, modules or plugins. In addition, we have a flexible and robust API so you can create your own payment experience.
+We have tools that are ready to use, such as SDKs, payment links, modules or plugins. In addition, we have a flexible and robust API so you can create your own payment experience.
 
-### Mercado Pago Checkout
+### Checkout Pro
 
 This option allows you to collect through our web form within the safe environment of Mercado Pago in a simple, fast and secure way
 
@@ -25,22 +25,22 @@ This option allows you to collect through our web form within the safe environme
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
 ----[mla, mlb]----
-[Integrate Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
+[Integrate Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
 ------------
 ----[mlm, mpe, mco, mlu, mlc]----
-[Integrate Mercado Pago Checkout](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
+[Integrate Checkout Pro](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
 ------------
 
 ### Mobile Checkout
 
-Unlike Mercado Pago Checkout, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
+Unlike Checkout Pro, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
 
 [Integrate Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
 
-It's the simplified version of the Mercado Pago Checkout with a renewed user experience.
+It's the simplified version of the Checkout Pro with a renewed user experience.
 
 - **Don't worry about the design.** We provide you with a form with design and front-end ready for you to use.
 
@@ -50,7 +50,7 @@ It's the simplified version of the Mercado Pago Checkout with a renewed user exp
 
 [Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+### Checkout API
 
 This way of integrating allows you to connect directly with our APIs.
 
@@ -58,7 +58,7 @@ This way of integrating allows you to connect directly with our APIs.
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
-[Integrate by API](guides/payments/api/introduction)
+[Integrate Checkout API](guides/payments/api/introduction)
 
 ## How to offer interest-free installments
 

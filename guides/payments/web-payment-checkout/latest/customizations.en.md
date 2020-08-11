@@ -13,12 +13,12 @@ sites_supported:
 
 ## Redirect Scheme
 
-The Mercado Pago Checkout allows you to change your opening scheme.
+The Checkout Pro allows you to change your opening scheme.
 
 The schemes currently available are:
 
-* **Redirect**: Opens the Mercado Pago Checkout in a new window.
-* **Modal**: Opens the Mercado Pago Checkout on your website.
+* **Redirect**: Opens the Checkout Pro in a new window.
+* **Modal**: Opens the Checkout Pro on your website.
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
 
@@ -172,7 +172,7 @@ data-button-label="Buy"
 >
 > Other functionalities
 >
-> Set up your payment and adapt Mercado Pago Checkout to your business.
+> Set up your payment and adapt Checkout Pro to your business.
 >
 > [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations/)
 

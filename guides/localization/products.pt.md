@@ -55,6 +55,7 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 | Checkout API          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 ------------
 
+
 ## Funcionalidades de API por país
 
 A seguir uma lista de funcionalidades específicas de nossa API por país:
@@ -131,6 +132,7 @@ Assinaturas | Checkout API             | `naranja`, `nativa`, `shopping`, `debvi
 | Marketplace   | Checkout API             | N/A                           |
 ------------
 
+
 ### Chile
 ----[mlb]----
 |   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
@@ -153,6 +155,7 @@ Assinaturas | Checkout API             | `naranja`, `nativa`, `shopping`, `debvi
 | Marketplace | Checkout API             | `khipu`                                     |
 ------------
 
+
 ### Colômbia
 ----[mlb]----
 |   Produto   |     Solução     |        Meios de pagamento não disponíveis   |
@@ -174,6 +177,7 @@ Assinaturas | Checkout API             | `naranja`, `nativa`, `shopping`, `debvi
 | Marketplace | Checkout Pro    | N/A                                |
 | Marketplace | Checkout API             | `account_money`                                       |
 ------------
+
 
 ### México
 ----[mlb]----
@@ -203,6 +207,7 @@ Assinaturas | Checkout API             | `naranja`, `nativa`, `shopping`, `debvi
 | Marketplace   | Checkout API             | N/A                                                                           |
 ------------
 
+
 ### Peru
 ----[mlb]----
 |   Produto   |     Solução     | Meios de pagamento não disponíveis |
@@ -224,6 +229,7 @@ Assinaturas | Checkout API             | `naranja`, `nativa`, `shopping`, `debvi
 | Marketplace | Checkout Pro    | N/A                           |
 | Marketplace | Checkout API             | N/A                           |
 ------------
+
 
 ### Uruguai
 

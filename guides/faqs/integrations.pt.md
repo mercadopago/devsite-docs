@@ -12,9 +12,9 @@
 
 Oferecemos diferentes opções para que você possa elaborar a solução de pagamentos que melhor se adapte ao seu negócio.
 
-Temos ferramentas prontas para uso como SDKs, botões de pagamento, módulos ou plugins e também uma API flexível e robusta para que você possa criar sua própria experiência de pagamento.
+Temos ferramentas prontas para uso como SDKs, links de pagamento, módulos ou plugins e também uma API flexível e robusta para que você possa criar sua própria experiência de pagamento.
 
-### Checkout Mercado Pago
+### Checkout Pro
 
 Esta opção permite cobrar através do nosso formulário web dentro do ambiente seguro do Mercado Pago de maneira simples e rápida.
 
@@ -25,21 +25,21 @@ Esta opção permite cobrar através do nosso formulário web dentro do ambiente
 -   **Protegemos seu dinheiro, sempre.** Você não precisa se preocupar com nada. Caso tenha algum problema, você conta com o nosso respaldo através do [nosso Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/como-protegemos-vendedores_500).
 
 ----[mla, mlb]----
-[Integrar Checkout Mercado Pago.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction)
+[Integrar Checkout Pro.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction)
 ------------
 ----[mlm, mpe, mco, mlu]----
-[Integrar Checkout Mercado Pago.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)
+[Integrar Checkout Pro.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)
 ------------
 
 ### Mobile Checkout
 
-Diferente do Checkout Mercado Pago, facilitamos a criação de uma experiência de pagamento pelo app através do nosso SDK. É uma integração simples e rápida, para que você possa oferecer a melhor experiência e os melhores meios de pagamento.
+Diferente do Checkout Pro, facilitamos a criação de uma experiência de pagamento pelo app através do nosso SDK. É uma integração simples e rápida, para que você possa oferecer a melhor experiência e os melhores meios de pagamento.
 
 [Integrar Mobile Checkout.](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
-É a versão simplificada do Checkout Mercado Pago com uma experiência de usuário renovada.
+É a versão simplificada do Checkout Pro com uma experiência de usuário renovada.
 
 - **Não se preocupe com o design.** Proporcionamos um formulário com design e front-end prontos para uso.
 
@@ -49,7 +49,13 @@ Diferente do Checkout Mercado Pago, facilitamos a criação de uma experiência 
 
 [Integrar Web Tokenize](https://www.mercadopago.com.br/developers/pt/guides/payments/web-tokenize-checkout/introduction)
 
-### API
+----[mlm, mla, mlc, mco, mpe, mlu]----
+### Checkout API
+------------
+
+----[mlb]----
+### Checkout Transparente
+------------
 
 Esta forma de integração permite que você se conecte diretamente com as nossas APIs.
 
@@ -57,7 +63,13 @@ Esta forma de integração permite que você se conecte diretamente com as nossa
 
 - **Sua equipe técnica tem total controle.** Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
 
-[Integrar por API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Integrar Checkout API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+------------
+
+----[mlb]----
+[Integrar Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction)
+------------
 
 ## Posso oferecer pagamentos com cartão de débito?
 

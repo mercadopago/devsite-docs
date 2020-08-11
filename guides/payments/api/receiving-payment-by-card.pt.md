@@ -1,6 +1,16 @@
-# Integre a API para pagamentos com cartão
+----[mlb]----
+# Integre o Checkout Transparente para pagamentos com cartão
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+# Integre o Checkout API para pagamentos com cartão
+------------
 
-A integração por API do Mercado Pago para pagamentos com cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenham que sair no momento de realizar a compra.
+----[mlb]----
+A integração por Checkout Transparente do Mercado Pago para pagamentos com cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenham que sair no momento de realizar a compra.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+A integração por Checkout API do Mercado Pago para pagamentos com cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenham que sair no momento de realizar a compra.
+------------
 
 ## Como funciona?
 
@@ -8,7 +18,12 @@ A integração por API do Mercado Pago para pagamentos com cartões permite que 
 
 <br>
 
-Ao usar nossa API de pagamentos do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
+----[mlb]----
+Ao usar nosso Checkout Transparente do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Ao usar nosso Checkout API do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
+------------
 
 1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
 2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o ítem, e possa confirmar e efetuar o pagamento.

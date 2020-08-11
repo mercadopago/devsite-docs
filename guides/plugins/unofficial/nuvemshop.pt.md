@@ -12,7 +12,7 @@
 ## O que é Nuvemshop?
 
 Nuvemshop é uma **plataforma e-commerce para sua loja virtual, que permite processar pagamentos através do Mercado Pago.**
-Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito e boleto bancário no [próprio checkout da sua loja](#bookmark_checkout_transparente) ou [redirecionado para o site do Mercado Pago](#bookmark_checkout_mercado_pago).
+Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito e boleto bancário no [próprio checkout da sua loja](#bookmark_checkout_transparente) ou [redirecionado para o site do Mercado Pago](#bookmark_checkout_pro).
 
 ## Etapas para configurar
 
@@ -71,7 +71,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
     ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
 
 
-### Checkout Mercado Pago
+### Checkout Pro
 
 **O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
 
@@ -79,7 +79,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 2. No item "Tipo de integração" altere para "Processo de compra no site do Mercado Pago".
 3. Clique em "Salvar alterações".
 <p>&nbsp;</p>
-    ![Payments Checkout Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 
 > NOTE

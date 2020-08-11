@@ -1,6 +1,7 @@
-# Integrate the payment API for cards
+# Integrate the Checkout API payment for cards
 
-Integrating Mercado Pago's payment API for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
+Integrating Mercado Pago's Checkout API for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
+
 
 ## How does it work?
 
@@ -8,7 +9,9 @@ Integrating Mercado Pago's payment API for cards allows you to offer a complete 
 
 <br>
 
-With our Mercado Pago payment API, you should take into account two aspects: data capture and payment confirmation submission.
+
+With our Mercado Pago Checkout API, you should take into account two aspects: data capture and payment confirmation submission.
+
 
 1. First, you need a frontend to collect card data and generate a security token with the information required to create a payment.
 2. Then, you need a backend that takes the generated token and payment data, such as amount and item, to confirm and make a payment.
