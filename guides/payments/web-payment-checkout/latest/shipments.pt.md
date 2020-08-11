@@ -59,7 +59,7 @@ Preference preference = new Preference();
 
 Shipments shipments = new Shipments();
 
-// No es obligatorio configurar la propiedad AddressReceiver
+// Não é obrigatório definir a propriedade AddressReceiver
 shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
     .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP]", [FAKER][NUMBER][BETWEEN][1000,2000], "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
@@ -117,7 +117,7 @@ preference.shipment = shipment
 ===
 Preference preference = new Preference();
 
-// No es obligatorio configurar la propiedad ReceiverAddress
+// Não é obrigatório definir a propriedade ReceiverAddress
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
  {
      Mode = MercadoPago.Common.ShipmentMode.Me2,
@@ -1067,4 +1067,4 @@ preference.Save();
 >
 > Certifique-se de que esteja tudo correto na sua integração com os usuários de teste.
 >
-> [Testes](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/test-integration/)
+> [Testes](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/test-integration/)

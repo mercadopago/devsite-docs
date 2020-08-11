@@ -24,7 +24,7 @@ Configure in your preferences, the weight and dimensions of the packages as you 
 [[[
 ```php
 ===
- Respeta el formato de las dimensiones, en centímetros y gramos según corresponda: altoxanchoxlargo, peso.
+ Respect the dimensions format, in centimeters and grams as appropriate: heightx width x length, weight. 
 ===
 <?php
 
@@ -1042,7 +1042,7 @@ preference.Save();
 > Test your integration
 >
 > Make sure everything is working well in your integration using test users. 
+>
 > [Testing](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/test-integration/)
-
 
 
