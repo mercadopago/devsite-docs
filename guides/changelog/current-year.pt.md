@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: SDK .NET
 
-Lançamos uma nova versão do SDK .NET 1.3.2.
+Lançamos uma nova versão do SDK .NET 1.8.1.
 
 > GIT
 >
