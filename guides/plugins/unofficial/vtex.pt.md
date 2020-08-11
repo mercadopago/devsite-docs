@@ -173,7 +173,7 @@ Os erros mais comuns são os seguintes:
 >
 > Importante
 >
-> Antes de iniciar sua operação em produção, assegure se de preencher o formulário <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/" target="_blank">ir à Produção</a>. Caso já tenha realizado este passo o link não será apresentado.
+> Antes de iniciar sua operação em produção, você deve <a href="https://www.mercadopago[FAKER][SITE][ID]/developers/panel/credentials" target="_blank">ativar suas credenciais</a>. Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).
