@@ -104,7 +104,12 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 >
 > Construye y configura tu propia experiencia de pagos.
 >
+----[mlb]----
+> [Integrar Checkout Transparente de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/)
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > [Integrar Checkout API de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/receiving-payment-by-card/)
+------------
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

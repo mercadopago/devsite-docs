@@ -1,6 +1,11 @@
 # Integre outros meios de pagamento
 
+----[mlb]----
 Com o Checkout Transparente do Mercado Pago você pode oferecer **outras alternativas de meios de pagamento para seus clientes**.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Com o Checkout API do Mercado Pago você pode oferecer **outras alternativas de meios de pagamento para seus clientes**.
+------------
 
 ----[mla]----
 
