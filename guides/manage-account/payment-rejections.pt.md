@@ -290,11 +290,11 @@ preference.Items.Add(
 
 Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post/).
 
-### Dados da indústria
+### Dados de indústria
 
-Envia os dados sobre seu industria para melhorar sua aprovação.<br>
+Envia os dados sobre sua indústria para melhorar sua aprovação.<br>
 
-[Ir para dados do industria](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/industry-data/additional-info)
+[Ir para dados de indústria](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/industry-data/additional-info)
 
 ### Auxilie os seus clientes com seus pagamentos recusados
 
