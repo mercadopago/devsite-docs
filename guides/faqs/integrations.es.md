@@ -140,7 +140,7 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
-[Integrar por Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+[Integrar Checkout API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
 ------------
 
 ----[mlb]----
