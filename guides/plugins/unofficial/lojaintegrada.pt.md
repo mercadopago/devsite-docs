@@ -42,7 +42,7 @@ E pronto! O aplicativo do Mercado Pago já está instalado na sua loja e você p
 > 1. Desconectar de sua conta Mercado Pago, caso conectada em um navegador.
 > 2. Clique no "Menu de opções" e depois em "Sair".
 > 3. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago” e depois em "Desinstalar aplicativo".
-> 4. Repita o procedimento para [Instalar Mercado Pago em sua loja](#bookmark_instalar_Mercado_Pago_em_sua_loja) com a nova conta.
+> 4. Repita o procedimento para [Instalar Mercado Pago em sua loja](#bookmark_instalar_mercado_pago_em_sua_loja) com a nova conta.
 
 ## Configurar as formas de pagamento
 

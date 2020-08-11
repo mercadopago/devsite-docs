@@ -17,7 +17,7 @@
 
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ## Etapas para configurar
@@ -213,7 +213,7 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito),[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito),[tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ## Etapas para configurar
@@ -370,7 +370,7 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#book_mark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#book_mark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ## Etapas para configurar
@@ -562,7 +562,7 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ## Etapas para configurar
@@ -715,7 +715,7 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
 Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o
-[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+[medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ## Etapas para configurar
@@ -876,7 +876,7 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_de_mercado_pago).
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ## Etapas para configurar

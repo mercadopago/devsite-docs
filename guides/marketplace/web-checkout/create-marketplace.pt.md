@@ -5,14 +5,14 @@
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implementado.
+> * Possuir o [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implementado.
 ------------
 ----[mpe]----
 > WARNING
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction) implementado.
+> * Possuir o [Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction) implementado.
 ------------
 
 Para começar, você deve:
