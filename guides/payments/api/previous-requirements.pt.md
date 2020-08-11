@@ -102,7 +102,12 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, c
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Integrar ----[mla, mlm, mlc, mco, mlu, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------ com cartão
+----[mlb]----
+> Integrar Checkout Transparente com cartão
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Integrar Checkout API com cartão
+------------
 >
 > Construa e configure sua própria experiência de pagamentos.
 >
