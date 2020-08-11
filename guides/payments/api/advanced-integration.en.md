@@ -682,7 +682,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 >
 > Other features
 >
-> Set up your integration to your specific business needs.
+> Set up your payment and adapt the integration of Mercado Pago to your business.
 >
 > [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/other-features/)
 
