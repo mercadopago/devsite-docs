@@ -34,6 +34,6 @@ As principais características são:
 >
 > Como integrar o QR dinâmico?
 >
-> Conheça passo a passo como integrar o modelo.
+> Conheça o passo a passo de como integrar o modelo.
 >
 > [Cómo integrar QR dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)

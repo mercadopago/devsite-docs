@@ -12,22 +12,22 @@ A tabela abaixo mostra todas as informações que ele contém:
 
 ID | Significado no Mercado Pago | Tamanho | Presença - Restrição
 ----------------- | ----------------- | ----------- | ---------
-ID 00: Payload Format Indicator | Versão do template do Código QR. | 02 | Mandatório 
-ID 01: Point of Initiation Method | Identifica se as informações do QR são dinâmicas ou estáticas. | 02 | Mandatório 
-ID 43.00 Merchant Account Information | Identificador do Mercado Livre.| 16 | Mandatório 
-ID 43.02 | Versão do template do Mercado Pago. | até 2 | Mandatório 
-ID 43.03 | User ID. | até 10 | Mandatório 
+ID 00: Payload Format Indicator | Versão do template do Código QR. | 02 | Obrigatório 
+ID 01: Point of Initiation Method | Identifica se as informações do QR são dinâmicas ou estáticas. | 02 | Obrigatório 
+ID 43.00 Merchant Account Information | Identificador do Mercado Livre.| 16 | Obrigatório 
+ID 43.02 | Versão do template do Mercado Pago. | até 2 | Obrigatório 
+ID 43.03 | User ID. | até 10 | Obrigatório 
 ID 43.04 | Sponsor ID. | até 10 | Opcional 
-ID 52: Merchant Category Code | Código para classificação da loja. | 04 | Mandatório 
-ID 53: Transaction Currency | Moeda numérica respectiva ao montante total. ----[mlb]---- Brasil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Perú: 604 ------------ ----[mlm]---- México: 484 ------------.  | 03 | Mandatório 
-ID 54: Transaction Amount | Preço total da compra. Ex.: 10.00 | até 13 | Mandatório 
-ID 58: Country Code | País do vendedor.  ----[mlb]---- Brasil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Perú: `PE` ------------ ----[mlm]---- México: `MX` ------------. | 02 | Mandatório 
-ID 59: Merchant Name | Nome da sua loja. | até 25 | Mandatório 
-ID 60: Merchant City | Cidade do vendedor.  | até 15 | Mandatório 
-ID 62.05: Reference Label | ID definido pelo integrador para associar a transação a um pagamento do Mercado Pago.   | até 25 | Mandatório 
+ID 52: Merchant Category Code | Código para classificação da loja. | 04 | Obrigatório 
+ID 53: Transaction Currency | Moeda numérica respectiva ao valor total. ----[mlb]---- Brasil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Perú: 604 ------------ ----[mlm]---- México: 484 ------------.  | 03 | Obrigatório 
+ID 54: Transaction Amount | Valor total da compra. Ex.: 10.00 | até 13 | Obrigatório 
+ID 58: Country Code | País do vendedor.  ----[mlb]---- Brasil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Perú: `PE` ------------ ----[mlm]---- México: `MX` ------------. | 02 | Obrigatório 
+ID 59: Merchant Name | Nome da sua loja. | até 25 | Obrigatório 
+ID 60: Merchant City | Cidade do vendedor.  | até 15 | Obrigatório 
+ID 62.05: Reference Label | ID definido pelo integrador para associar a transação à um pagamento do Mercado Pago.   | até 25 | Obrigatório 
 ID 62.07: Terminal Label | *External_id* da caixa. | até 10 | Opcional 
 ID 62.08: Purpose of Transaction | Título descritivo referido ao propósito da compra.  | até 25 | Opcional 
-ID 63: CRC |  Checksum - Validação do conteúdo.  | 04 | Obligatorio 
+ID 63: CRC |  Checksum - Validação do conteúdo.  | 04 | Obrigatório 
 
 
 >Para saber mais sobre as informações que você deve fornecer sobre a sua conta, [consulte o glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/general-considerations/pre-requisites/#bookmark_glosario).
@@ -65,16 +65,16 @@ ID | Sub ID | Comprimento | Valor fixo | Valor exemplo
 
 > NOTE
 >
-> Datos a tener en cuenta
+> Dados a serem considerados
 >
 > - Para o comprimento total do ID 43 e 62, que contêm 3 Sub IDs cada um, é necessário incluir o comprimento total de **todos os caracteres dentro do ID**. Por exemplo:
 ----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
-> - Caso o **cumprimento dos caracteres** seja menor que 10, um 0 deve ser incluído à esquerda do número inteiro. Por exemplo: “06”.
+> - Caso o **comprimento dos caracteres** seja menor que 10, um 0 deve ser incluído à esquerda do número inteiro. Por exemplo: “06”.
 > - O CRC é uma verificação do conteúdo. Você deve usar o método `CRC-16/CCITT-FALSE Hexadecimal`. 
 
 ## Criar o QR
 
-Já obtidas todas as informações, os valores acima explicados devem ser unificados a fim de o QR conter todas as informações da ordem.
+Com todas as informações obtidas, os valores explicados acima devem ser unificados para que o QR contenha todas as informações da ordem.
 
 Unir de acordo com cada fila da seguinte maneira: `ID + Sub ID + Comprimento + Valor`
 
@@ -93,26 +93,26 @@ Com as informações obtidas, você já pode gerar o seu QR!
 
 ## Testes
 
-Para validar o QR, você só precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/integration-test/) a fim de montar o QR e um outro para escanear e pagar no App de Mercado Pago ou Mercado Livre.
+Para criar o QR, você precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/integration-test/) para vender e um outro usuário para escanear e pagar no App de Mercado Pago ou Mercado Livre.
 
 > NOTE
 >
 > Nota
 >
-> Todo QR que não atender às restrições dos valores definidos será interpretado como QR inválido e você verá uma tela de erro no momento de escanear.
+> Todo QR que não atender às restrições dos valores definidos será interpretado como QR inválido e você verá uma tela de erro ao escanear.
 
 ## Notificações
 
 Para obter as informações do pagamento, é necessário configurar a URL de notificação no [painel do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications). 
 
-Com a URL já configurada, será possível validar as ordens, tal como indicado na [seção de Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/).
+Com a URL já configurada, será possível validar as ordens, como indicado na [seção de Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/).
 
 
 ## Começar a receber pagamentos
 
 Para receber pagamentos, você só deve se certificar de ter todas as suas informações produtivas bem definidas.  
 
-Após isso, mostre o QR ao seu cliente como você preferir para ele pagar, e pronto!
+Depois disso, mostre o QR ao seu cliente, como preferir, para que ele o pague. E pronto!
 
 
 ---
@@ -125,5 +125,4 @@ Após isso, mostre o QR ao seu cliente como você preferir para ele pagar, e pro
 >
 > Conheça as opções que você tem para levar sua integração ao próximo nível.
 >
-> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/advanced-integration/)
-
+> [Integrar modelo QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/advanced-integration/)
