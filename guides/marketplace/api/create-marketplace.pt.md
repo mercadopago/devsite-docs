@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir a ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][SITE][ID]/developers/pt/guides/payments/api/introduction) ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][SITE][ID]/developers/pt/guides/payments/api/introduction) ------------ implementado.
+> * Possuir a ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction) ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction) ------------ implementado.
 
 Para começar, você deve:
 
