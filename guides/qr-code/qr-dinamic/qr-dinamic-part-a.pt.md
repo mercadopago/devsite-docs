@@ -23,7 +23,7 @@ As principais características são:
 
 1. Crie o conteúdo do QR com todas as informações requeridas para fazer uma cobrança.
 2. Após isso, gere um QR com o conteúdo criado previamente.
-3. Por último, mostre o QR ao seu cliente como você preferir para ele pagar.
+3. Por último, mostre o QR ao seu cliente, como preferir, para que ele o pague.
 
 
 ---
