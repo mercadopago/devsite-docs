@@ -8,7 +8,7 @@ indexable: false
 
 O QR dinâmico permite que o valor a ser cobrado já esteja incluído no QR. Ou seja, cada QR representa uma ordem e um valor único.
 
-Recomenda-se seu uso para um **modelo de serviço na mesa**, para pagamentos com montante incluído, entre outros.
+Recomendado para um **modelo de serviço na mesa**, para pagamentos com valor incluído, entre outros.
 
 ## Características do modelo
 
