@@ -6,7 +6,7 @@ indexable: false
 	
 ## O que é o QR dinâmico?
 
-O QR dinâmico permite que o montante a ser cobrado já esteja incluído no QR. Isto e que cada QR representa uma ordem e um montante único. 
+O QR dinâmico permite que o valor a ser cobrado já esteja incluído no QR. Ou seja, cada QR representa uma ordem e um valor único.
 
 Recomenda-se seu uso para um **modelo de serviço na mesa**, para pagamentos com montante incluído, entre outros.
 
