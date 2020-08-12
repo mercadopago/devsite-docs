@@ -22,7 +22,7 @@ Pagina Principal          Jerarquía               Identificador     Idioma  For
 
 ```
 
-## Para contribuir: ##
+## Para contribuir ##
 
 1. Hacer un `fork` de este repositorio.
 2. Crear un `issue` con una descripción breve sobre la contribución.
