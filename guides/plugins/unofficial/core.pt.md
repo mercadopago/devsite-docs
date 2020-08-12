@@ -33,7 +33,7 @@ Para **adicionar o Mercado Pago em sua loja**, siga os passos abaixo:
 3. Na lista, Fornecedor de Serviço, selecione o "Mercado Pago V2" e clique em "Próximo Passo".
 4. Defina um **Nome** para o meio de pagamento Mercado Pago V2, selecione o status "Ativo".
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_adicione_meio_pagamento-1.gif)
+    ![LINX Configuracao](/images/linx/linx_adicione_meio_pagamento-1.gif)
 <p>&nbsp;</p>
 
 ## Configure a forma de pagamento
@@ -53,7 +53,7 @@ Após adicionar o meio de pagamento, **configure os dados de sua integração co
 5. Na seção de parcelamento, selecione "Externo (API do Mercado Pago)" onde você vai utilizar as condições de parcelamento diretamente da sua conta Mercado Pago.
 6. Clique em "Salvar".
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_configurando_integracao-2.gif)
+    ![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
 > Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/).
@@ -87,7 +87,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 > O parcelamento externo **não** será mostrado em listagens ou no detalhe do produto.
 
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_configurando_cartao-3.gif)
+    ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>
 
 ### Configurando os dados de Boleto
@@ -100,7 +100,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 4. Preencha o campo **Identificador de Integração** com a informação que será identificada em seu ERP.
 5. Informe a ordem em que o boleto aparecerá no seu checkout e clique em "Salvar".
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_configurando_boleto-4.gif)
+    ![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
 <p>&nbsp;</p>
 
 ## Configurando o parcelamento na sua conta do Mercado Pago.
@@ -109,7 +109,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 2. Procure por **Oferecer parcelamento sem juros** e clique em "Ativar".
 3. Escolha quantas parcelas você quer oferecer e clique em “Ativar” para confirmar as alterações.
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_parcelamento_conta-5.gif)
+    ![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
 
 E pronto! Você está oferecendo parcelamento sem juros, assumindo as tarifas de parcelamento que você configurou.
@@ -126,7 +126,7 @@ Para **criar um contrato em sua loja**, siga os passos abaixo:
 2. Clique em “Adicionar Contrato".
 3. Preencha um nome para o contrato que está sendo criado e clique em "salvar".
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_criando_um_contrato-6.gif)
+    ![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
 <p>&nbsp;</p>
 
 ### Definindo os meios de pagamento do contrato
@@ -142,7 +142,7 @@ Para **definir os meios de pagamento do contrato em sua loja**, siga os passos a
 
 4. Clique em "Salvar".
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_meio_pagamento_contrato-7.gif)
+    ![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
 <p>&nbsp;</p>
 
 ### Atribuindo meio de pagamento do contrato a um canal
@@ -154,7 +154,7 @@ Para **atribuir o meio de pagamento do contrato ao canal de sua loja**, siga os 
 3. Na sessão contrato padrão, adicione o contrato que criou.
 4. Clique em "Salvar".
 <p>&nbsp;</p>
-    ![CORE Configuracao](/images/core/core_atribuindo_contrato_ao_canal-8.gif)
+    ![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
 
 <!-- -->
