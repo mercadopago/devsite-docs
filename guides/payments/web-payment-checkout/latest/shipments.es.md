@@ -456,7 +456,7 @@ preference.Shipments = shipments;
 ```
 ]]]
 
-**¡Y listo! Mercado envíos ya se encuentra integrado.** 
+**¡Y listo! Mercado Envíos ya se encuentra integrado.** 
 
 Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar el paquete y enviarlo</a>. ------------ ----[mlb]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_1603" target="_blank">preparar el paquete y enviarlo</a>. ------------
 
