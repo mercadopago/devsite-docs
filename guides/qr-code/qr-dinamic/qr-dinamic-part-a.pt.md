@@ -13,7 +13,7 @@ Recomendado para um **modelo de serviço na mesa**, para pagamentos com valor in
 ## Características do modelo
 
 As principais características são:
-- O montante já vem configurado dentro do QR.
+- O valor já vem configurado dentro do QR.
 - Permite que você pague repetidamente o mesmo montante.
 - O modelo é baseado no padrão definido por EMVCo.
 - Permite a geração de códigos QR dinâmicos multicarteira e de modo offline.
