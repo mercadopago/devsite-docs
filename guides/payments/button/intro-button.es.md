@@ -1,12 +1,12 @@
-# ¿Qué son los botones y links de pago?
+# ¿Qué es Link de pago?
 
-Los botones y links de pago son soluciones de cobro prácticas y rápidas que te permiten vender online sin necesidad de tener conocimientos técnicos o de programación.
+Link de pago es una solución de cobro práctica y rápida que te permite vender online sin necesidad de tener conocimientos técnicos o de programación.
 
+El **link de pago** te ayudará a cobrar por medios online en simples pasos.
 Si tienes un sitio web, podrás insertar de forma sencilla un código HTML que mostrará un **botón de pago** en tu página.
-Si no tienes un sitio web, el **link de pago** te ayudará a cobrar por medios online en simples pasos.
 
 ## ¿Cómo funciona?
- - Desde tu cuenta de Mercado Pago, ve a [Botón y link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/tools/list) y elige la opción de Crear nuevo.
+ - Desde tu cuenta de Mercado Pago, ve a [Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/tools/list) y elige la opción de Crear nuevo.
  - Define título y precio de tu producto o servicio. Puedes sumarle una foto también.
  - Por último, elige por dónde quieres cobrar: redes sociales, e-mail o sitio web, ¡y listo!
 
@@ -29,4 +29,4 @@ Próximos pasos
 >
 > Ahora que conoces de qué se trata, es momento de empezar a cobrar online.
 >
-> [Crear botón y link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/create-button/)
+> [Crear link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/create-button/)

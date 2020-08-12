@@ -1,12 +1,12 @@
-# What are the Payment Links and Buttons?
+# What is Payment Link?
 
-The payment links and buttons are quick and practical payment solutions that allow you to sell online without the need for technical or programming knowledge.
+Payment Link is a quick and practical payment solution that allow you to sell online without the need for technical or programming knowledge.
 
+The **payment link** will help you to charge online using very simple steps.
 If you have a website, you can simply insert an HTML code that will show a **payment button** on your page.
-If you don't have a website, the **payment link** will help you to charge online using very simple steps.
 
 ## How does it work?
- - From your Mercado Pago account, access the [Payment Link and Button](https://www.mercadopago[FAKER][URL][DOMAIN]/tools/list) and select the Create New option.
+ - From your Mercado Pago account, access to [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/tools/list) and select the Create New option.
  - Set the title and price of your product or service. You can also add a photo.
  - Choose where you want to sell: social networks, email or website and you're done!
 
@@ -34,4 +34,4 @@ Next steps
 >
 > Now that you know what it’s about, it’s time to start charging online.
 >
-> [Create payment link and button](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/create-button/)
+> [Create payment link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/create-button/)
