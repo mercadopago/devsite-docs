@@ -14,7 +14,7 @@ Recomendado para um **modelo de serviço na mesa**, para pagamentos com valor in
 
 As principais características são:
 - O valor já vem configurado dentro do QR.
-- Permite que você pague repetidamente o mesmo montante.
+- Permite que repetidos pagamentos sejam feitos com o mesmo valor.
 - O modelo é baseado no padrão definido por EMVCo.
 - Permite a geração de códigos QR dinâmicos multicarteira e de modo offline.
 
