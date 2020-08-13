@@ -136,7 +136,7 @@ The Basic Checkout is the standard solution of Mercado Pago. The solution consis
 > * The user is redirected outside the application to make the payment.
 
 
-To carry out the integration, you must follow the documentation that you can find by entering the following [link] ("../guides/payments/web-checkout/introduction/")
+To carry out the integration, you must follow the documentation that you can find by entering the following [link] ("https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction")
 
 
 This is an example of the creation of the payment preference:

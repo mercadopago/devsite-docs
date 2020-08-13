@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mlb
-  - mla
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Outras funcionalidades
 
 
@@ -16,7 +6,7 @@ Você pode adaptar a integração ao seu negócio adicionando atributos na prefe
 ----[mla, mlb]----
 Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
-----[mlm, mlc, mlu, mco]----
+----[mlm, mlc, mlu, mco, mpe]----
 Se você oferece compras de valores altos, por exemplo, você pode [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 
@@ -24,7 +14,7 @@ Através da preferência, você pode [obter informações de negócio](https://w
 
 ## Exemplo de uma preferência completa
 
-----[mlm, mla, mlb, mlc, mlu]----
+----[mlm, mla, mlb, mlc, mlu, mpe]----
 
 ```json
 {
@@ -746,6 +736,7 @@ Header | Tipo de código | Identificadores
 `x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração.
 `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções.
 `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico.
+
 > Se você precisa do seu `integrator_id` ou `platform_id`, [solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
 
 [[[

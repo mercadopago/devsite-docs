@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mlb
-  - mla
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # O que é o Checkout Pro?
 
 O Checkout Pro é a integração que **te permite cobrar através do nosso formulário web de qualquer dispositivo** de forma simples, rápida e segura.
@@ -35,6 +25,9 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 ----[mlm]----
 * Pagar com os principais  <a href="https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> meios de pagamento</a> do país.
 ------------
+----[mpe]----
+* Pagar com os principais  <a href="https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> meios de pagamento</a> do país.
+------------
 * Uma **experiência de compra adaptada** e acessível de qualquer celular ou computador no seu site.
 * **Compras em um clique.** Ao pagar com uma conta do Mercado Pago, os dados e cartões dos compradores são salvos, o que lhes permite pagar informando apenas o código de segurança ou dinheiro na conta.
 * **Compras de convidados.** Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
@@ -60,7 +53,7 @@ Pagamento com dois cartões		           |      ✔      |                     |
 
 ------------
 
-----[mlm, mlu, mco, mlc]----
+----[mlm, mlu, mco, mlc, mpe]----
                                    | Checkout Pro|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Dificuldade de integração 			  	     |    Baixa    |       Media         |     Alta

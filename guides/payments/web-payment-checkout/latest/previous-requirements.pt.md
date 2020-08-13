@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mlb
-  - mla
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Pré-requisitos para começar
 
 
@@ -47,6 +37,9 @@ Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.cl/" targ
 ----[mlb]----
 Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.br/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
 ------------
+----[mpe]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.pe/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
 
 ### 2.  Instalação do SDK do Mercado Pago
 **Instale o SDK oficial** para simplificar sua integração com as nossas APIs.
@@ -83,7 +76,7 @@ gem install mercadopago-sdk
 ```
 ```csharp
 ===
-----[mla, mco, mlu, mlc, mlm]----
+----[mla, mco, mlu, mlc, mlm, mpe]----
 Use o  <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar o SDK .NET do Mercado Pago.
 ------------
 ----[mlb]----

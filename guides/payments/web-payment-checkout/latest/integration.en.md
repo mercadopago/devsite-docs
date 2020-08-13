@@ -1,16 +1,4 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Integrate Checkout Pro
-
-
 
 ## How do I integrate?
 
