@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mlb
-  - mla
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # O que é o Checkout Pro?
 
 O Checkout Pro é a integração que **te permite cobrar através do nosso formulário web de qualquer dispositivo** de forma simples, rápida e segura.
