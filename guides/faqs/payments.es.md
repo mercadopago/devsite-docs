@@ -83,48 +83,6 @@ En el caso de que vendas a través de nuestros plugins o soluciones de e-commerc
 Por defecto, la fecha de vencimiento es de 3 días corridos pero puedes [definir la fecha de vencimiento del boleto vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/other-payment-ways/) a través del campo `date_of_expiration`.
 ------------
 
-----[mlm, mla, mlc, mco, mpe, mlu]----
-## Los medios de pago no aparecen en mi checkout
-
-Mercado Pago cuenta con una validación de montos al momento de ofrecer los medios de pago disponibles.
-
-En el caso de que el monto no cumpla con las condiciones de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324" target="_blank">montos mínimos y máximos</a> del medio de pago, nuestro checkout solicitará el inicio sesión a la cuenta de Mercado Pago, ya que la única opción disponible para usar será dinero en cuenta. Por esto, tus clientes no podrán pagar como invitados.
-
-Esto genera que, según el monto elegido, puedas visualizar algunos medios de pagos y otros no debido a que no cumple con los requisitos necesarios. Es decir, en base al valor del producto y del mínimo o máximo permitido, se mostrarán los medios de pagos disponibles.
-
-## Cómo generar el mismo ticket nuevamente
-
-Para generar un duplicado del boleto es necesario que uses el [método GET de la API de Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get/) enviando el ID del pago y el Access Token del vendedor.
-
-La consulta sería de la siguiente forma:
-
-`https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ACCESS_TOKEN`
-
-El retorno de la llamada va a devolver el parámetro `transaction_details` que contendrá el `external_resource_url` con el link del boleto duplicado.
-
-## Quitar boleto como medio de pago
-
-En base al tipo de checkout e integración que estés realizando, el proceso puede ser diferente.
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Pro
-
-Es posible remover la opción de boleto a través de la preferencia de pago. Puedes encontrar más detalle en nuestra [documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout API
-
-Puedes removerlo directamente desde tu frontend. Obtén los medios de pago y excluye a boleto en la llamada con el parámetro `"payment_type_id" = credit_card` como filtro, por ejemplo.
-
-> Puedes encontrar más detalle en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get/).
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins y soluciones de e-commerce listas para usar
-
-En el caso de que vendas a través de nuestros plugins o soluciones de e-commerces listas para usar, y esa configuración fue disponibilizada por el plugin o plataforma, será necesario verificar la documentación o las configuraciones de medios de pago del panel de la respectiva solución.
-
-## Definir fecha de vencimiento para boleto
-
-Por defecto, la fecha de vencimiento es de 3 días corridos pero puedes [definir la fecha de vencimiento del boleto vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/other-payment-ways/) a través del campo `date_of_expiration`.
-------------
-
 ## Mejora la aprobación de tus pagos
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Verifica tu integración

@@ -83,48 +83,6 @@ Caso venda através de um de nossos plugins ou soluções de e-commerce prontas 
 Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-payment-ways/), através do campo `date_of_expiration`.
 ------------
 
-----[mlm, mla, mlc, mco, mpe, mlu]----
-## Os meios de pagamento não aparecem no meu checkout
-
-O Mercado Pago conta com uma validação de valores no momento de oferecer os meios de pagamento disponíveis.
-
-No caso em que o valor não cumpra com as condições de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324" target="_blank">valores mínimos e máximos</a> do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
-
-Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar alguns meios de pagamentos e outros não devido a não cumprir com os requisitos necessários. Ou seja, com base no valor do produto e do mínimo ou máximo permitido, serão mostrados os meios de pagamentos disponíveis.
-
-## Como gerar a segunda via do boleto
-
-Para gerar uma segunda via do boleto será necessário [utilizar o método GET da API de Payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get/) passando o ID do pagamento e a Access Token do vendedor.
-
-A consulta será da seguinte forma:
-
-`https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ACCESS_TOKEN`
-
-No retorno da chamada haverá o parâmetro `transaction_details` que conterá o  `external_resource_url` com o link da segunda via do boleto.
-
-## Remover o boleto como forma de pagamento
-
-Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Pro
-
-É possível remover a opção de boleto com uso de preferências de pagamento. Você pode encontrar mais detalhes em nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_atributos_para_a_preferência).
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout API
-
-A remoção é realizada diretamente no seu frontend. Você pode obter os meios de pagamento desejados ao excluir boleto da chamada ao método payment, inserindo o parâmetro `"payment_type_id" = credit_card` como filtro, por exemplo.
-
-> Você pode encontrar mais detalhes na [referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get/).
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins ou soluções de e-commerce prontas para usar
-
-Caso venda através de um de nossos plugins ou soluções de e-commerce prontas para usar, e se esta configuração for disponibilizada pelo plugin ou plataforma, será necessário verificar na documentação ou nas configurações da forma de pagamento do painel administrativo da respectiva solução.
-
-## Definir prazo de vencimento do boleto
-
-Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-payment-ways/), através do campo `date_of_expiration`.
-------------
-
 ## Melhore a aprovação de seus pagamentos
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Verifique como testar sua integração
