@@ -5,7 +5,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
 ------------
-----[mlc, mco, mlu, mlb, mlm]----
+----[mlc, mco, mlu, mlb, mlm, mpe]----
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
@@ -28,6 +28,9 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ------------
 ----[mlb]----
 * The most popular <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank">payment methods</a> in the country.
+------------
+----[mpe]----
+* The most popular <a href="https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
 ------------
 
 * A shopping experience on your site that's accessible across devices.
@@ -53,7 +56,7 @@ Order completed page		         |      ✔      |                     |
 Split payments		           |      ✔      |                     |
 
 ------------
-----[mlm, mlu, mco, mlc]----
+----[mlm, mlu, mco, mlc, mpe]----
                                    | Checkout Pro|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Integration difficulty		  	      |     Low    |       Medium         |     High

@@ -6,7 +6,7 @@ Puedes adaptar la integración a tu negocio sumando atributos en la preferencia.
 ----[mla, mlb]----
 Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 ------------
-----[mlm, mlc, mlu, mco]----
+----[mlm, mlc, mlu, mco, mpe]----
 Si ofreces compras de montos bajos, por ejemplo, puedes [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 ------------
 
@@ -14,7 +14,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 
 ## Ejemplo de una preferencia completa
 
-----[mlm, mla, mlb, mlc, mlu]----
+----[mlm, mla, mlb, mlc, mlu, mpe]----
 
 ```json
 {
@@ -160,7 +160,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 
 ### Definición de medios de pago
 
-----[mla, mco, mlb, mlu, mlc]----
+----[mla, mco, mlb, mlu, mlc, mpe]----
 Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
 También se puede definir un medio de pago para que aparezca por defecto o la cantidad de cuotas máximas a ofrecer.
 ------------
@@ -170,7 +170,7 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 ------------
 
 
-----[mla, mco, mlb, mlu, mlc]----
+----[mla, mco, mlb, mlu, mlc, mpe]----
 Atributo | Descripción
 ------ | -----
 _`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
@@ -750,6 +750,7 @@ Header | Tipo de código | Identificadores
 `x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración.
 `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. 
 `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico.
+
 > Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones para desarrolladores de Mercado Pago y cómo obtener tu ID, [déjanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform). 
 
 [[[

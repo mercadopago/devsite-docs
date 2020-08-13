@@ -37,6 +37,9 @@ If you don't have one yet, you can <a href="https://www.mercadopago.com.co/" tar
 ----[mlb]----
 If you don't have one yet, you can <a href="https://www.mercadopago.com.br/" target="_blank"> create a Mercado Pago account</a> whenever you want.
 ------------
+----[mpe]----
+If you don't have one yet, you can <a href="https://www.mercadopago.com.pe/" target="_blank"> create a Mercado Pago account</a> whenever you want.
+------------
 
 ### 2. Installations of Mercado Pago SDK
 **Install the official SDK** to simplify your interaction with our APIs.
@@ -77,7 +80,7 @@ gem install mercadopago-sdk
 ----[mlb]----
 Use <a href="https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
 ------------
-----[mla, mco, mlu, mlc, mlm]----
+----[mla, mco, mlu, mlc, mlm, mpe]----
 Use <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
 ------------
 To do this, run the following command in the NuGet Package Manager console:

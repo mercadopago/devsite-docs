@@ -5,7 +5,7 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 ----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
 ------------
-----[mlc, mco, mlu, mlb, mlm]----
+----[mlc, mco, mlu, mlb, mlm, mpe]----
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
@@ -29,7 +29,10 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 ----[mlb]----
 * Pagar con los principales <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank"> medios de pago</a> del país.
 ------------
-* Una **experiencia de compra adaptada** y accesible desde cualquier celular o computadora.  
+----[mpe]----
+* Pagar con los principales <a href="https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
+------------
+* Una **experiencia de compra adaptada** y accesible desde cualquier celular o computadora.
 * **Compras en un click.** Al pagar con una cuenta de Mercado Pago, se recuerdan los datos y tarjetas de los compradores, por lo que permite pagos ingresando solo el código de seguridad o dinero en cuenta.
 * **Compras de invitados.** No es necesario crear una cuenta de Mercado Pago para poder hacer el pago.
 ----[mla, mlb]----
@@ -51,7 +54,7 @@ Prevención de fraude               	     |      ✔      |         ✔         
 Pantalla de finalización de pago		     |      ✔      |                     |
 Pago con dos tarjetas					           |      ✔      |                     |
 ------------
-----[mlm, mlu, mco, mlc]----
+----[mlm, mlu, mco, mlc, mpe]----
                                    | Checkout Pro|Web Tokenize Checkout|      API
 :---  | :--: | :--: | :--:
 Dificultad de integración 			  	     |     Baja    |       Media         |     Alta

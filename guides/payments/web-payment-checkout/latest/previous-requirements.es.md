@@ -37,6 +37,9 @@ Si aún no tienes una, puedes <a href="https://www.mercadopago.cl/" target="_bla
 ----[mco]----
 Si aún no tienes una, puedes <a href="https://www.mercadopago.com.co/" target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
 ------------
+----[mpe]----
+Si aún no tienes una, puedes <a href="https://www.mercadopago.com.pe/" target="_blank"> crear una cuenta de Mercado Pago</a> cuando quieras.
+------------
 
 ### 2. Instalación de SDK de Mercado Pago
 **Instala el SDK oficial** para simplificar tu interacción con nuestras APIs.
@@ -77,7 +80,7 @@ gem install mercadopago-sdk
 ----[mlb]----
 Usa <a href="https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar el SDK .NET de Mercado Pago.
 ------------
-----[mla, mlm, mco, mlc, mlu]----
+----[mla, mlm, mco, mlc, mlu,mpe]----
 Usa <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar el SDK .NET de Mercado Pago.
 ------------
 Para hacerlo ejecuta el siguiente comando en la consola del NuGet Package Manager:
