@@ -1,5 +1,4 @@
 ---
-  indexable: false
 
 ---
  sites_supported:
