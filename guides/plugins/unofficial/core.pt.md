@@ -8,7 +8,7 @@
 
 ## O que é Linx Commerce?
 
-Linx Commerce é uma plataforma, que te permite receber pagamentos com o Mercado Pago em sua loja virtual.
+É uma **plataforma virtual que te permite receber pagamentos com o Mercado Pago**.
 
 Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_configurando_os_dados_de_cartão_de_credito) e [boleto bancário](#bookmark_configurando_os_dados_de_boleto) no próprio checkout da sua loja.
 
