@@ -1,4 +1,4 @@
-# Dados da industria
+# Dados de indústria
 
 Verifique quais campos você pode enviar de acordo com o seu setor para melhorar sua aprovação.
 
@@ -7,7 +7,7 @@ Verifique quais campos você pode enviar de acordo com o seu setor para melhorar
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição|
 | --- | --- | --- |
@@ -29,17 +29,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | Telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
-| `street_name` | String | Nome de rua |
+| `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False`se nao é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se nao é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 #### Sobre remessa
@@ -51,7 +51,7 @@ Adicione todas as informações adicionais que você deseja.
 | `state_name` | String | Província |
 | `city_name` | String | Cidade |
 | `street_number` | Integer | Número da rua |
-| `express_shipment` | Boolean | `True` sim é, `False` se não é. |
+| `express_shipment` | Boolean | `True` se é, `False` se não é. |
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
@@ -133,12 +133,12 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 }'
 ```
 
-## Electro
+## Eletro
 
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -158,17 +158,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | Telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 #### Sobre envios
@@ -181,7 +181,7 @@ Adicione todas as informações adicionais que você deseja.
 | `state_name` | String | Província |
 | `city_name` | String | Cidade |
 | `street_number` | Integer | Número da rua |
-| `express_shipment` | Boolean | `True` sim é, `False` se não é. |
+| `express_shipment` | Boolean | `True` se é, `False` se não é. |
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
@@ -262,12 +262,12 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 }'
 ```
 
-## Entretenimiento
+## Entretenimento
 
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -287,13 +287,13 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | Telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 
@@ -308,7 +308,7 @@ Adicione todas as informações adicionais que você deseja.
 | `state_name` | String | Província |
 | `city_name` | String | Cidade |
 | `street_number` | Integer | Número da rua |
-| `express_shipment` | Boolean | `True` sim é, `False` se não é. |
+| `express_shipment` | Boolean | `True` se é, `False` se não é. |
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
@@ -384,12 +384,12 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 }'
 ```
 
-## Home & deco
+## Casa e decoração
 
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -410,17 +410,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 #### Sobre envios
@@ -432,7 +432,7 @@ Adicione todas as informações adicionais que você deseja.
 | `state_name` | String | Província |
 | `city_name` | String | Cidade |
 | `street_number` | Integer | Número da rua |
-| `express_shipment` | Boolean | `True` sim é, `False` se não é. |
+| `express_shipment` | Boolean | `True` se é, `False` se não é. |
 
 
 ```curl
@@ -521,7 +521,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 
 | Array `items` | Tipo | Descrição |
@@ -541,17 +541,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 ```curl
@@ -627,7 +627,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -648,17 +648,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 #### Sobre envios
@@ -670,7 +670,7 @@ Adicione todas as informações adicionais que você deseja.
 | `state_name` | String | Província |
 | `city_name` | String | Cidade |
 | `street_number` | Integer | Número da rua |
-| `express_shipment` | Boolean | `True` sim é, `False` se não é. |
+| `express_shipment` | Boolean | `True` se é, `False` se não é. |
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
@@ -757,7 +757,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -778,17 +778,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 #### Sobre envios
@@ -885,7 +885,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -917,17 +917,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 
@@ -1018,7 +1018,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -1044,17 +1044,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 ```curl
@@ -1138,7 +1138,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -1157,17 +1157,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 ```curl
@@ -1243,7 +1243,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -1263,17 +1263,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 #### Sobre envios
@@ -1375,7 +1375,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -1395,16 +1395,16 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 #### Sobre envios
@@ -1505,7 +1505,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
 ### Campos para enviar
 Adicione todas as informações adicionais que você deseja.
 
-#### Sobre ítens
+#### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
@@ -1525,17 +1525,17 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação |
 | `identification_type` | String | Tipo de identificação |
 | `identification_number` | String | Número de identificação |
-| `phone` | Object | Teléfone |
+| `phone` | Object | telefone |
 | `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfone |
+| `number` | Integer | Número de telefone |
 | `address` | Object | Dados do endereço |
 | `zip_code` | String | Código postal |
 | `street_name` | String | Nome da rua |
 | `street_number` | Integer | Número da rua |
 | `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` sim é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` sim é, `False` se não é. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 ```curl

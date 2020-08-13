@@ -5,7 +5,7 @@
 
 
 * [Install](#bookmark_install)
-* [Mercado Pago Checkout](#bookmark_mercado_pago_checkout)
+* [Checkout Pro](#bookmark_checkout_pro)
 * [Customized checkout](#bookmark_customized_checkout)
 * [Generic methods](#bookmark_generic_methods)
 
@@ -24,7 +24,7 @@ On Python 3.x
 
 ``pip3 install mercadopago``
 
-## Mercado Pago Checkout
+## Checkout Pro
 
 
 Configure your credentials

@@ -10,7 +10,7 @@
 # Tiendanube
 ## ¿Qué es Tiendanube?
 
-Tiendanube es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago**. ----[mlb]---- Puedes ofrecer a tus clientes la posibilidad de pagar con tarjeta de crédito o boleto y [vender directo en tu sitio](#bookmark_checkout_transparente) o [cobrar por el sitio de Mercado Pago](#bookmark_checkout_de_mercado_pago). ------------ ----[mla, mlm, mlc, mlu, mpe]---- Ofrece a tus clientes pagar con tarjeta de crédito, débito o el medio de pago que prefieran y [vender directo en tu sitio](#bookmark_checkout_transparente) o [cobrar por el sitio de Mercado Pago](#bookmark_checkout_de_mercado_pago). ------------ ----[mco]---- Ofrece a tus clientes pagar con tarjeta de crédito, banca en línea o efectivo y [vender directo en tu sitio](#bookmark_checkout_transparente) o [cobrar por el sitio de Mercado Pago](#bookmark_checkout_de_mercado_pago). ------------
+Tiendanube es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago**. ----[mlb]---- Puedes ofrecer a tus clientes la posibilidad de pagar con tarjeta de crédito o boleto y [vender directo en tu sitio](#bookmark_checkout_transparente) o [cobrar por el sitio de Mercado Pago](#bookmark_checkout_pro). ------------ ----[mla, mlm, mlc, mlu, mpe]---- Ofrece a tus clientes pagar con tarjeta de crédito, débito o el medio de pago que prefieran y [vender directo en tu sitio](#bookmark_checkout_transparente) o [cobrar por el sitio de Mercado Pago](#bookmark_checkout_pro). ------------ ----[mco]---- Ofrece a tus clientes pagar con tarjeta de crédito, banca en línea o efectivo y [vender directo en tu sitio](#bookmark_checkout_transparente) o [cobrar por el sitio de Mercado Pago](#bookmark_checkout_pro). ------------
 
 <!-- -->
 ----[mlu, mpe]----
@@ -82,7 +82,7 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 ----[mlb]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) ------------ ----[mla]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif) ------------
 
 
-### Checkout de Mercado Pago
+### Checkout Pro
 
 **El comprador será redireccionado a Mercado Pago** para realizar el pago y terminar la compra.
 
@@ -90,7 +90,7 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 2. En el ítem "Tipo de integración" cambia a la opción "Proceso de compra en el sitio de Mercado Pago".
 3. Finalmente, haz clic en "Guardar cambios".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Checkout de Mercado Pago - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Checkout de Mercado Pago - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout de Mercado Pago - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
+----[mlb]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
 
 > NOTE
 >

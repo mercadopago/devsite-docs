@@ -353,7 +353,7 @@ To configure it, add the node `shipments` with the value of the amount you want 
 
 ## Optimize Ad Conversion
 
-We know it’s important to maximize your ads effectiveness. For this reason, we offer you the choice integrating Mercado Pago Checkout with Facebook Ads and Google Ads platforms, in order to associate payments to your campaigns.
+We know it’s important to maximize your ads effectiveness. For this reason, we offer you the choice integrating Checkout Pro with Facebook Ads and Google Ads platforms, in order to associate payments to your campaigns.
 
 > NOTE
 >
@@ -482,7 +482,7 @@ curl -X POST \
 ```
 ]]]
 
-Once set up, you’ll see a `Purchase` event for the specified Pixel everytime a payment is approved through your Mercado Pago Checkout.
+Once set up, you’ll see a `Purchase` event for the specified Pixel everytime a payment is approved through your Checkout Pro.
 
 > NOTE
 >
@@ -618,7 +618,7 @@ curl -X POST \
 ```
 ]]]
 
-Once set up, you’ll see a conversion associated to the configured label everytime a payment is approved through your Mercado Pago Checkout.
+Once set up, you’ll see a conversion associated to the configured label everytime a payment is approved through your Checkout Pro.
 
 > NOTE
 >
