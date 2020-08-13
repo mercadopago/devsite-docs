@@ -6,6 +6,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Agosto 2020
 
+### 13 de agosto
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK Java
+
+Lanzamos una nueva versíon del SDK .NET 1.7.1.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.7.1).
+
 ### 12 de agosto
 
 > CHANGELOG

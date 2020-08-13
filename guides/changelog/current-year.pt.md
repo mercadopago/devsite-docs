@@ -6,6 +6,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Agosto 2020
 
+### 13 de agosto
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK Java
+
+Lançamos uma nova versão do SDK .NET 1.7.1.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.7.1).
+
 ### 12 de agosto
 
 > CHANGELOG
