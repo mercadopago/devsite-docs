@@ -91,7 +91,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 
 Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos abaixo:
 
-1. No painel administrativo de sua loja, acesse "Meios de pagamentos" no menu Configs.
+1. No painel administrativo, acesse "Meios de pagamentos" no menu Configs.
 2. Localize o meio de pagamento criado e clique em "editar".
 3. Acesse a aba "Boletos" e selecione o status para "Ativo".
 4. Preencha o campo **Identificador de Integração** com a informação que será identificada em seu ERP.
