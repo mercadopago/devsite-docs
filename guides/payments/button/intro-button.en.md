@@ -30,7 +30,7 @@ If you have a website, you can simply insert an HTML code that will show a **pay
 Next steps
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Create payment link and button
+> Create payment link
 >
 > Now that you know what it’s about, it’s time to start charging online.
 >
