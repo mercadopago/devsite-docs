@@ -72,11 +72,25 @@ Start your integration with your test seller user credentials:
 
 ## Test Cards
 
+----[mlm, mla, mlc, mco, mpe, mlu]---- 
+
 Card | Number | CVV | Expiration Date
 ------------ | ------------- | ------------- | -------------
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
-American Express | 3711 8030 3257 522 | 1234 | 11/25
+American Express | 3711 803032 57522 | 1234 | 11/25
+
+------------
+
+----[mlb]----
+
+Card | Number | CVV | Expiration Date
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 4332 1540 6351 | 123 | 11/25
+Visa | 4235 6477 2802 5682 | 123 | 11/25
+American Express | 3753 651535 56885 | 1234 | 11/25
+
+------------
 
 To **test different payment results,** complete the information you want in the name of the cardholder:
 
