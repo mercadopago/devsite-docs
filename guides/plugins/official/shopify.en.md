@@ -1,9 +1,61 @@
-# Magento 1
+# Shopify  
 
-Mercado Pago supports the integration of payment checkouts on open source ecommerce platforms. Users are able to choose between several ecommerce platforms compatible with Mercado Pago. Mercado Pago does not endorse any particular platform.
+## Features
 
-If you’re currently working with Magento 1 as your ecommerce platform, we remind you that, on August 6th 2020, Adobe [announced](https://magento.com/blog/magento-news/support-magento-1-software-ends-june-30-2020) that Magento 1 and every related extensions would no longer be available on Magento’s repository.
+Mercado Pago's plugin for shopify has available the next features:
 
-Based on Adobe’s decision to discontinue Magento 1, Mercado Pago will no longer offer its module for Magento 1 nor support services related to its integration. In case you’re using Magento as your ecommerce platform, we recommend migrating to the latest version offered on Magento’s [website](https://magento.com/tech-resources/download).
+| Feature                                                   | Checkout Pro 		  |
+|---------------------------------------------------------- |-------------------|
+| Credit card Payments                                      | ✔                 |
+| Other payment methods                                     | ✔                 |
+| Payment with two payment methods	                     	  | ✔               	|
+| Mercado Pago's interface                                  | ✔                 |
+| Installments calculator                                   | ✔                 |
+| IPN and webhooks                                          | ✔                 |
+| Mercado Pago coupon discounts                             | ✔                 |
 
-We remind you that Mercado Pago isn’t responsible for the ecommerce platform chosen by each seller nor for vulnerabilities that given platform may have.
+### Checkout Pro
+
+Great for merchants who want to get going quickly and easily.
+
+* Easy website integration— no coding required.
+* Limited control of buying experience— display Checkout window as redirect, modal or iframe.
+* Store buyer’s card for fast checkout.
+* Accept tickets, bank transfer and account money in addition to cards.
+* Accept Mercado Pago's discount coupons.
+
+## Configuration
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLINrH8WB0A" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+1) In your Shopify admin panel, go to the menu **Settings > Payments**.
+
+![Configuring Mercado Pago in shopify](/images/shopify/shopify-config-1.gif)
+
+2) In Accept credit cards, select **MercadoPago**.
+
+3) Fill the **CLIENT ID** and **CLIENT SECRET**. [Get your credentials]([FAKER][CREDENTIALS][URL_BASIC]).
+
+  ![Configuring client id and client secret in shopify](/images/shopify/shopify-config-2.gif)
+
+4) Click the button "**Activate**".
+
+  ![Saving All Settings](/images/shopify/shopify-config-3.gif)
+
+5) Congrats! **Mercado Pago** was installed and configured!
+
+### Mapping of payment status
+
+The following scheme represents the correlation between the payment status in Mercado Pago and the status of the order in Shopify.
+
+| Mercado Pago status | Shopify order status |
+|---------------------|----------------------|
+| Approved            | Completed            |
+| Pending             | Pending              |
+| In process          | Pending              |
+| In Mediation        | Pending              |
+| Cancelled           | Failed               |
+| Refunded            | Failed               |
+| Rejected            | Failed               |
