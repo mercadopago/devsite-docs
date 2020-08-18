@@ -36,4 +36,4 @@ The main characteristics are:
 >
 > Learn step by step the model of this integration.
 >
-> [Cómo integrar QR dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)
+> [Como integrar QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)
