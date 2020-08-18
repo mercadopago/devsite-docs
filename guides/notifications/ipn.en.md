@@ -1,20 +1,5 @@
 # IPN Notifications
 
-----[mla,mlb,mlc,mlm,mco,mlu]----
-> WARNING
->
-> Prerequisites
->
-> * Have the [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implemented.
-------------
-----[mpe]----
-> WARNING
->
-> Prerequisites
->
-> * Have the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
-------------
-
 **IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
 To receive event notifications on your platform, you can [previously configure a notification_url accessible for Mercado Pago](https://www.mercadopago.com.ar/ipn-notifications).
