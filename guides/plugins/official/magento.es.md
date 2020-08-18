@@ -1,3 +1,7 @@
+---
+  indexable: false
+---
+
 # Magento 1
 
 Mercado Pago soporta la integración de checkouts de pago en plataformas de ecommerce "open source". Los usuarios vendedores pueden elegir distintas plataformas de ecommerce compatibles con Mercado Pago. Mercado Pago no recomienda ninguna plataforma en particular.  
