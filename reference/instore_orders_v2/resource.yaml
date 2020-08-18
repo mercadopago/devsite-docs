@@ -135,7 +135,7 @@ definitions:
           description:
             en: Mercado Pago's USER_ID of the integrator system.
             es: USER_ID de la cuenta de Mercado Pago del sistema integrador.
-            pt: USER_ID de conta de  Mercado Pago do sistema integrador.
+            pt: USER_ID da conta Mercado Pago do sistema integrador.
   - cash_out:
       type: Object
       description:
