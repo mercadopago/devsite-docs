@@ -65,7 +65,7 @@ ID | Sub ID | Length | Fixed value | Example value
 
 > NOTE
 >
-> Datos a tener en cuenta
+> Data to take into account
 >
 > - For total length of ID 43 and 62 with 3 Sub IDs each, the **total length of all characters within the ID** need to be included. For example:  
 ----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
@@ -129,4 +129,3 @@ Then, it shows QR code to your customer the way he/she prefers to pay.  And read
 > Learn about your options for your integration to reach the next level.
 >
 > [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/advanced-integration/)
-
