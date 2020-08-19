@@ -122,7 +122,7 @@ Then, it shows QR code to your customer the way he/she prefers to pay.  And read
 ### Next steps
 
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > Advanced Integration
 >
