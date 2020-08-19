@@ -14,7 +14,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
-> PRODUCT: SDK Java
+> PRODUCT: SDK JAVA
 
 Lanzamos una nueva versíon del SDK .NET 1.7.1.
 
