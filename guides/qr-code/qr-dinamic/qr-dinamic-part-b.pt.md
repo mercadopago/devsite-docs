@@ -93,7 +93,7 @@ Com as informações obtidas, você já pode gerar o seu QR!
 
 ## Testes
 
-Para criar o QR, você precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/integration-test/) para vender e um outro usuário para escanear e pagar no App de Mercado Pago ou Mercado Livre.
+Para criar o QR, você precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/final-steps/integration-test/) para vender e um outro usuário para escanear e pagar no App de Mercado Pago ou Mercado Livre.
 
 > NOTE
 >
