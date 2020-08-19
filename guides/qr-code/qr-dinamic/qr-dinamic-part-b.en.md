@@ -95,7 +95,7 @@ With data obtained, you can generate your QR!
 
 ## Tests
 
-To validate the QR, you only need to [create a test user](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/integration-test/) to design the QR and another one for scanning and paying from Mercado Pago or Mercado Libre App.
+To validate the QR, you only need to [create a test user](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/final-steps/integration-test/) to design the QR and another one for scanning and paying from Mercado Pago or Mercado Libre App.
 
 > NOTE
 >
