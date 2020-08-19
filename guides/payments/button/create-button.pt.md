@@ -1,10 +1,10 @@
-# Como criar um botão ou link de pagamento?
+# Como criar um link de pagamento?
 
 Comece a receber pagamentos pelas redes sociais, e-mail ou site é muito fácil.
 
 ## Configurações básicas
 
-Ao criar um novo botão ou link de pagamento pela sua conta Mercado Pago, você precisa definir:
+Ao criar um novo link de pagamento pela sua conta Mercado Pago, você precisa definir:
 
 1. **Título do seu produto ou serviço:** será o nome que seu comprador verá na hora de pagar. Lembre-se de que deve ser o mais detalhado possível para que o identifiquem melhor.
 2. **Preço:** é o valor final a ser pago pelos seus clientes.

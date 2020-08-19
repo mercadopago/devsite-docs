@@ -1,20 +1,10 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Prueba tu integración
 
 
 
 ## Cómo probar mi integración
 
-**Los usuarios de prueba te permiten probar tu Checkout de Mercado Pago** al generar flujos de pagos en una copia exacta de tu integración.
+**Los usuarios de prueba te permiten probar tu Checkout Pro** al generar flujos de pagos en una copia exacta de tu integración.
 
 Tipos de usuarios | Descripción
 ------------ | -------------

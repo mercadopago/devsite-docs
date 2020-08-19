@@ -9,6 +9,12 @@ Para recibir las notificaciones de los eventos en tu plataforma, puedes [configu
 
 ## Eventos
 
+> WARNING 
+> 
+> IMPORTANTE
+> 
+> Un evento es cualquier tipo de actualización sobre el objeto notificado, incluyendo cambios de estado o de atributos.
+
 Notificamos eventos referidos a tus órdenes (`merchant_orders`), pagos recibidos (`payment`) o contracargos recibidos (`chargebacks`).
 
 La `merchant_orders` es una entidad que agrupa tanto pagos como envíos. Tendrás que consultar los datos de las órdenes que te sean notificadas.
@@ -46,6 +52,14 @@ Tipo               | URL                                                        
 payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
 chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
+
+Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado o una orden cerrada. 
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que si se exceden los tiempos de respuesta es posible recibir notificaciones duplicadas de un evento.
 
 ### Notificaciones de merchant_orders
 

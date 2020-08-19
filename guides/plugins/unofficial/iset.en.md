@@ -8,7 +8,7 @@
 ## What is iSET?
 
 iSET is a **virtual platform that allows you to receive payments with Mercado Pago**. 
-You can offer your clients the possibility of paying by credit card or boleto and [you can sell directly on your site](#bookmark_transparent_checkout), [charge through Mercado Pago website](#bookmark_mercado_pago_checkout) or through [both checkouts](#bookmark_both_checkouts).
+You can offer your clients the possibility of paying by credit card or boleto and [you can sell directly on your site](#bookmark_transparent_checkout), [charge through Mercado Pago website](#bookmark_checkout_pro) or through [both checkouts](#bookmark_both_checkouts).
 
 ## Setting steps
 
@@ -34,7 +34,7 @@ Done! Mercado Pago is now installed on your store.
 
 ## Set payment methods
 
-After activating Mercado Pago, you have the option to offer the following payment methods: [Mercado Pago Checkout](#bookmark_mercado_pago_checkout), [Transparent Checkout](#bookmark_transparent_checkout) or [both checkouts](#bookmark_both_checkouts).
+After activating Mercado Pago, you have the option to offer the following payment methods: [Checkout Pro](#bookmark_checkout_pro), [Transparent Checkout](#bookmark_transparent_checkout) or [both checkouts](#bookmark_both_checkouts).
 
 You also have the option to [offer interest free installments](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) and set the [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) of your online sales whenever you want.
 
@@ -49,7 +49,7 @@ You also have the option to [offer interest free installments](#bookmark_set_int
     ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
-### Mercado Pago Checkout
+### Checkout Pro
 
 **The buyer will be redirected to Mercado Pago** to make the payment and complete the purchase.
 
@@ -99,7 +99,6 @@ To **activate both checkouts**, follow these steps:
 
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
 
-
 ## Installments settings
 
 You can set the maximum or minimum amount of installments and apply surcharges or discounts for the installments on your store.
@@ -108,7 +107,7 @@ You can set the maximum or minimum amount of installments and apply surcharges o
 >
 > Important
 >
-> Installments must be set as automatic to avoid any problems when processing payments. We are going to take the enabled installments in your Mercado Pago account as appropriate. 
+> Installments must be set as automatic to avoid any problems when processing payments. We are going to take the enabled [installments in your Mercado Pago account](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) as appropriate.
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store.
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
@@ -119,8 +118,8 @@ You can set the maximum or minimum amount of installments and apply surcharges o
     | --- | --- |
     | Sale in installments up to | Select the maximum number of installments you wish to offer |
     | Minimum value of installment R$ | Indicate the minimum value of installments that you wish to offer in Reales |
-    | Only orders over R$ | Set if you want to use a minimum value range to accept orders on your store.
-    | Discounts for payments in cash (%) | Enter the discount value for cash payments that you want. 
+    | Only orders over R$ | Set if you want to use a minimum value range to accept orders on your store. |
+    | Discounts for payments in cash (%) | Enter the discount value for cash payments that you want. |
     | Surcharge/Discount | Apply a surcharge or discount on the order. | 
 
 1. Click on “Close” and then on “Save changes”.
@@ -141,7 +140,7 @@ And that’s it! You are now offering interest-free installments, with the finan
 
 ## Information for the orders on your store iSET
 
-To **set the information for the orders on your store **, follow these steps:
+To **set the information for the orders on your store**, follow these steps:
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store.
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
@@ -151,10 +150,10 @@ To **set the information for the orders on your store **, follow these steps:
     | --- | --- |
     | Information to the user about the type of payment | Instructions when making the payment. |
     | Information to the user about the type of payment | Instructions shown after payment is complete. |
-    | New orders status | Select a status for new orders.  
-    | Approved orders status | Select a status for approved orders.
+    | New orders status | Select a status for new orders. |
+    | Approved orders status | Select a status for approved orders. |
     | Cancelled orders status | Select a status for cancelled orders. |
-    | Use discount campaign | Informs you if you have any discount coupons available from your Mercado Pago account.
+    | Use discount campaign | Informs you if you have any discount coupons available from your Mercado Pago account. |
 
 1. Click on “Close” and then on “Save changes”. 
 <p>&nbsp;</p>

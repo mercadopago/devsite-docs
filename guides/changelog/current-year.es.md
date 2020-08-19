@@ -1,6 +1,60 @@
 # Changelog
 
-Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago. 
+Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
+
+---
+
+## Agosto 2020
+
+### 13 de agosto
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+
+Lanzamos una nueva versíon del SDK .NET 1.7.1.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.7.1).
+
+### 12 de agosto
+
+> CHANGELOG
+>
+> Nueva versión SDK .NET
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK .NET
+
+Lanzamos una nueva versíon del SDK .NET 1.8.1.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-dotnet/releases/tag/1.8.1).
+
+### 7 de agosto
+
+> CHANGELOG
+>
+> Solicita las credenciales que necesitas para integrar
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: CREDENCIALES
+
+¿Vas a integrar Mercado Pago para otra cuenta? Ahora puedes solicitar el acceso a sus credenciales de forma rápida y segura.
+
+[Conocer más sobre cómo solicitar credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/)
 
 ---
 
@@ -100,15 +154,15 @@ Lanzamos una nueva versión del SDK .NET 1.8.0.
 
 > CHANGELOG
 >
-> Nueva versión de Botón y link de pago
+> Nueva versión de Link de pago
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
-> PRODUCT: BOTÓN Y LINK DE PAGO
+> PRODUCT: LINK DE PAGO
 
-Lanzamos una nueva versión de Botón y link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, e-mail o redes sociales.
+Lanzamos una nueva versión de Link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, e-mail o redes sociales.
 
-[Ir a documentación de Botón y link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/intro-button/)
+[Ir a documentación de Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/intro-button/)
 
 ---
 
@@ -193,17 +247,35 @@ Disponibilizamos una nueva versión de SDK .NET.
 
 ### 3 de abril
 
+----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >
-> Actualización de documentación de API
+> Actualización de documentación de Checkout API
 >
 > NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
 >
-> PRODUCT: API
+> PRODUCT: CHECKOUT API
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Actualización de documentación de Checkout Transparente
+>
+> NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
+>
+> PRODUCT: CHECKOUT TRANSPARENTE
+------------
 
 Renovamos la documentación para usar nuestras APIs de pagos. Agregamos un ejemplo básico del formulario en el frontend y sumamos diagramas de funcionamiento para ayudarte a la hora de integrar.
 
-[Ir a documentación de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+----[mlm, mla, mlc, mco, mpe, mlu]----
+[Ir a documentación de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+------------
+
+----[mlb]----
+[Ir a documentación de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+------------
 
 ---
 
@@ -250,7 +322,7 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 >
 > PRODUCT: PRESTASHOP
 
-Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkout de Mercado Pago a través de modal para que tus compradores puedan realizar una compra sin salir de tu sitio.
+Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkout Pro a través de modal para que tus compradores puedan realizar una compra sin salir de tu sitio.
 
 [Ir a documentación de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction/)
 
@@ -272,8 +344,8 @@ Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkou
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: CHECKOUT DE MERCADO PAGO
+> PRODUCT: CHECKOUT PRO
 
-Si tienes campañas de publicidad para tu negocio, es importante que puedas seguirlas y ver si te están ayudando a concretar ventas. Para poder mejorarlas y que sean cada más eficientes, sumamos la posibilidad de asociar un píxel de Facebook y una etiqueta de seguimiento de conversiones de Google Ads a los pagos de tu Checkout de Mercado Pago.
+Si tienes campañas de publicidad para tu negocio, es importante que puedas seguirlas y ver si te están ayudando a concretar ventas. Para poder mejorarlas y que sean cada más eficientes, sumamos la posibilidad de asociar un píxel de Facebook y una etiqueta de seguimiento de conversiones de Google Ads a los pagos de tu Checkout Pro.
 
 [Comienza a medir la conversión de tus anuncios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/).

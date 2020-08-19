@@ -15,11 +15,13 @@ Ingresa el **nombre del negocio** para que aparezca en la factura de tus cliente
 
 ![Información básica](/images/woocomerce/es_info_basica.png)
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
-> No olvides ingresar tu `integrator_id` como [Partner](https://partners.mercadopago.com/) certificado de Mercado Pago. Si no lo tienes, puedes [solicitarlo ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
+> El campo de `integrator_id` no es obligatorio a la hora de realizar una integración. Deberán completarlo los Partners de Mercado Pago.
+>
+> Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones para desarrolladores de Mercado Pago y cómo obtener tu ID, [déjanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform). 
 
 <span></span>
 
@@ -34,14 +36,14 @@ Ingresa el **nombre del negocio** para que aparezca en la factura de tus cliente
 Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y elige los medios de pago con los que podrán hacer la compra.
 
 * Activa un tipo de checkout
- * Usa Checkout de Mercado Pago para soportar pagos con tarjetas, en efectivo y dinero en cuenta de Mercado Pago.
+ * Usa Checkout Pro para soportar pagos con tarjetas, en efectivo y dinero en cuenta de Mercado Pago.
  * Usa el Checkout Personalizado para tener control sobre otras configuraciones.
 
 <!-- > WARNING
 >
 > Importante
 >
-> Ten en cuenta que el [Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
+> Ten en cuenta que el [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
 
 * Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
 
@@ -53,7 +55,7 @@ Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y 
 >
 > Nota
 >
-> La opción de activar la conversión de moneda está disponible solo en el checkout personalizado. El Checkout de Mercado Pago hace la conversión de forma automática.
+> La opción de activar la conversión de moneda está disponible solo en el checkout personalizado. El Checkout Pro hace la conversión de forma automática.
 
 ## Configuración avanzada
 
@@ -65,9 +67,9 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | Modo binario     	            | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática.|
 
-### Checkout de Mercado Pago
+### Checkout Pro
 
-#### Experiencias de pago en Checkout de Mercado Pago
+#### Experiencias de pago en Checkout Pro
 
 Elige qué experiencia de compra tendrán tus clientes a la hora de pagar: 
 
@@ -80,7 +82,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 > Nota
 >
-> Consulta la [documentación del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 | Configuración                 | Descripción                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|

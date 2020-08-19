@@ -1,16 +1,4 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
-# Integrate Mercado Pago Checkout
-
-
+# Integrate Checkout Pro
 
 ## How do I integrate?
 
@@ -28,7 +16,7 @@ sites_supported:
 
 ## Steps to integrate
 
-Installing the Mercado Pago Checkout consists of two steps:
+Installing the Checkout Pro consists of two steps:
 
 ### 1. Generate your preference
 
@@ -239,7 +227,7 @@ curl -X POST \
 
 ### 2. Add the checkout to your website
 
-Finally, add the following code to show the payment button of your Mercado Pago Checkout in the place you want it to appear.
+Finally, add the following code to show the payment button of your Checkout Pro in the place you want it to appear.
 
 > NOTE
 >
@@ -298,13 +286,7 @@ Finally, add the following code to show the payment button of your Mercado Pago 
 > Do not forget to access from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
 
 #### Excellent! You finished your integration.
-_Click on the link within your site and [test the integration of your Mercado Pago Checkout.](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
-
-> NOTE
->
-> Note
->
-> This documentation refers to the new version of the Mercado Pago Checkout. **To view the previous version**, go to the [old Mercado Pago Checkout section](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/introduction/).
+_Click on the link within your site and [test the integration of your Checkout Pro](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
 
 ---
 

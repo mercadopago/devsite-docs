@@ -1,24 +1,14 @@
----
-sites_supported:
-  - mlb
-  - mla
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Customizações
 
 
 ## Esquema redirect
 
-O Checkout Mercado Pago permite alterar seu esquema de abertura.
+O Checkout Pro permite alterar seu esquema de abertura.
 
 Os esquemas disponíveis atualmente são:
 
-* **Redirect**: abre o Checkout Mercado Pago em uma nova janela.
-* **Modal**: abre o Checkout Mercado Pago no seu site.
+* **Redirect**: abre o Checkout Pro em uma nova janela.
+* **Modal**: abre o Checkout Pro no seu site.
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
@@ -172,7 +162,7 @@ data-button-label="Comprar"
 >
 > Outras funcionalidades
 >
-> Configure seus pagamentos e adapte o Checkout Mercado Pago ao seu negócio.
+> Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
 >
 > [Outras funcionalidades](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
 

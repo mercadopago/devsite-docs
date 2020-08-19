@@ -15,7 +15,7 @@
 >
 > B. In the event that existing users or customers of the Seller are being migrated to the Payments Recurrent Payment Market platform, the Seller must communicate in writing indicating that Mercado Pago will process the payments, informing that in the summary it will see the charge as MercadoPago / MercadoLibre" (*).
 >
-> C. Pre-Approval is only available through the personalized checkout of Mercado Pago or web tokenize checkout, that is, via the use of our API's.
+> C. Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
 
 <br/>
 
