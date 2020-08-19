@@ -30,7 +30,7 @@ As principais características são:
 ### Próximos passos
 
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Como integrar o QR dinâmico?
 >
