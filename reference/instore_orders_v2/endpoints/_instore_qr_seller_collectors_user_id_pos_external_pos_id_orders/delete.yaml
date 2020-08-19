@@ -1,0 +1,29 @@
+---
+samples:
+- curl.sh
+use:
+- user_id
+- external_pos_id
+errors:
+- 400 BAD_REQUEST:
+  - invalid_collectorId:
+      description:
+        en: user_id must be a number.
+        es: user_id debe ser un número.
+        pt: user_id deve ser um número.
+  - invalid_externalPosId:
+      description:
+        en: externalPosId must be present.
+        es: externalPosId debe estar presente.
+        pt: externalPosId deve estar presente.
+  - invalid_access_token:
+      description:
+        en: Access denied.
+        es: Acceso denegado.
+        pt: Acesso negado.
+- 500 SERVER_ERROR:
+  - in_store_order_creation_error:
+      description:
+        en: Failed to delete order.
+        es: Error al intentar eliminar una orden.
+        pt: Erro ao tentar excluir uma ordem.
