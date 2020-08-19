@@ -143,7 +143,7 @@ curl -X POST \
 
 ## Dividir os pagamentos no modo Gateway com captura diferida
 
-A seguir vemos um exemplo de pagamento na modalidade Gateway com captura direta, utilizando a API REST de Advanced Payments.
+A seguir vemos um exemplo de pagamento na modalidade Gateway com captura diferida, utilizando a API REST de Advanced Payments.
 
 ### Request
 ```curl

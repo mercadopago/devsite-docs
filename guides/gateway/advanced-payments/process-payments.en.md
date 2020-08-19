@@ -143,7 +143,7 @@ curl -X POST \
 
 ## Split payments in Gateway mode with deferred capture
 
-Below is an example of payment in Gateway mode with direct capture, using the Advanced Payments REST API.
+Below is an example of payment in Gateway mode with deferred capture, using the Advanced Payments REST API.
 
 ### Request
 ```curl
