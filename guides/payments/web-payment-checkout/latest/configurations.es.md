@@ -147,7 +147,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
 	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
-  "purpose": "wallet_purchase",
+	"purpose": "wallet_purchase",
 	"taxes": [
 		{
 			"type": "IVA",
