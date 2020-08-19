@@ -30,7 +30,7 @@ ID 62.08: Purpose of Transaction | Título descritivo referido ao propósito da 
 ID 63: CRC |  Checksum - Validação do conteúdo.  | 04 | Obrigatório 
 
 
->Para saber mais sobre as informações que você deve fornecer sobre a sua conta, [consulte o glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/general-considerations/pre-requisites/#bookmark_glosario).
+>Para saber mais sobre as informações que você deve fornecer sobre a sua conta, [consulte o glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/general-considerations/pre-requisites/#bookmark_glosario).
 
 
 
