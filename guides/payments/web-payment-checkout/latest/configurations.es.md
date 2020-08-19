@@ -71,7 +71,8 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
-    "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
+    "expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+    "purpose": "wallet_purchase"
 }
 ```
 
@@ -146,6 +147,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
 	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+  "purpose": "wallet_purchase",
 	"taxes": [
 		{
 			"type": "IVA",
@@ -177,6 +179,7 @@ _`payment_methods`_ | Clase que describe los atributos y métodos de medios de p
 _`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
 _`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>: efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
+_`purpose`_ | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.
 ------------
 
 ----[mlm]----
@@ -186,6 +189,7 @@ _`payment_methods`_ | Clase que describe los atributos y métodos de medios de p
 _`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>  específicos: Visa, Mastercard o American Express, entre otras.
 _`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> : efectivo, tarjetas de crédito o débito.
 _`installments`_ | Método que define la cantidad de mensualidades máximas a ofrecer.
+_`purpose`_ | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.
 ------------
 
 [[[
@@ -449,6 +453,29 @@ curl -X POST \
 }'
 ```
 ]]]
+
+## Aceptar pagos únicamente de usuarios registrados
+
+Puedes aceptar pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjetas y dinero en cuenta, agregando el siguiente atributo:
+
+```json
+"purpose": "wallet_purchase"
+```
+
+Al agregarlo, tu preferencia quedaría de la siguiente manera:
+
+```json
+{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+}
+```
 
 ## Monto del envío
 

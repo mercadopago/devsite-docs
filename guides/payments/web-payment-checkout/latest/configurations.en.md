@@ -72,7 +72,8 @@ You can [get business information](https://www.mercadopago.com.ar/developers/en/
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
-    "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
+    "expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+    "purpose": "wallet_purchase"
 }
 ```
 
@@ -147,6 +148,7 @@ You can [get business information](https://www.mercadopago.com.ar/developers/en/
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
 	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+  "purpose": "wallet_purchase",
 	"taxes": [
 		{
 			"type": "IVA",
@@ -171,7 +173,7 @@ _`payment_methods`_ | Class that describes the attributes and methods of payment
 _`excluded_payment_methods`_ | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others.
 _`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards.
 _`installments`_ | Method that defines the amount of maximum number of installments to offer.
-
+_`purpose`_ | When the "wallet purchase" value is indicated, Checkout will accept payments exclusively from Mercado Pago registered users, with card and account balance.
 [[[
 ```php
 <?php
@@ -409,6 +411,29 @@ curl -X POST \
 }'
 ```
 ]]]
+
+## Accept payments from registered users only
+
+You can accept payments exclusively from Mercado Pago registered users, with card and account balance, adding the following attribute:
+
+```json
+"purpose": "wallet_purchase"
+```
+
+Al agregarlo, tu preferencia quedaría de la siguiente manera:
+
+```json
+{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+}
+```
 
 ## Shipment cost
 

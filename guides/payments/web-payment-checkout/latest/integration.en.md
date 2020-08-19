@@ -224,15 +224,16 @@ curl -X POST \
 ```
 ]]]
 
+> NOTE
+>
+> Nota
+>
+> If you want to accept payments only from registered users, with cards and money in Mercado Pago account, review [this section](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_accept_payments_from_registered_users_only) for more information.
 
 ### 2. Add the checkout to your website
 
 Finally, add the following code to show the payment button of your Checkout Pro in the place you want it to appear.
 
-> NOTE
->
-> Note
->
 > If your site works on mobile, note that you need to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, you can visit the [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/test-integration/) section. 
 
 [[[
@@ -302,8 +303,8 @@ _Click on the link within your site and [test the integration of your Checkout P
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Advanced integration
+> Accept payments from registered users only
 >
-> Optimize your integration and improve the management of your sales.
+> Add the attribute and allow payments only from Mercado Pago registered users, with card and account balance.
 >
-> [Advanced integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/)
+> [Other functionalities](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_accept_payments_from_registered_users_only)

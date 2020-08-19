@@ -71,7 +71,8 @@ Através da preferência, você pode [obter informações de negócio](https://w
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
-    "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
+    "expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+    "purpose": "wallet_purchase"
 }
 ```
 
@@ -146,6 +147,7 @@ Através da preferência, você pode [obter informações de negócio](https://w
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
 	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
+  "purpose": "wallet_purchase",
 	"taxes": [
 		{
 			"type": "IVA",
@@ -171,7 +173,7 @@ _`payment_methods`_ | Classe que descreve os atributos e métodos de meios de pa
 _`excluded_payment_methods`_ | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros.
 _`excluded_payment_types`_ | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica).
 _`installments`_ | Método que define o número máximo de parcelas a oferecer
-
+_`purpose`_ | Quando for indicado o valor "wallet_purchase", o Checkout aceitará pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta.
 [[[
 ```php
 <?php
@@ -435,6 +437,29 @@ curl -X POST \
 }'
 ```
 ]]]
+
+## Aceitar pagamentos somente de usuários cadastrados
+
+Você pode aceitar pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta, adicionando o seguinte atributo:
+
+```json
+"purpose": "wallet_purchase"
+```
+
+Ao adicioná-lo, sua preferência ficaria da seguinte forma:
+
+```json
+{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+}
+```
 
 ## Valor do envio
 

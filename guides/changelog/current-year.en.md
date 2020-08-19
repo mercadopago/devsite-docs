@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## August 2020
 
+### August 27th
+
+> CHANGELOG
+>
+> Optimize your sales by accepting payments from registered users
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+In order to optimize your sales, we have added a new attribute that will allow you to receive payments only from registered users, in the Checkout Pro. This means that your buyers will pay you exclusively with their saved cards or with their account balance.
+
+[Comenzar a recibir pagos solamente de usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_accept_payments_from_registered_users_only)
+
 ### August 12th
 
 > CHANGELOG
