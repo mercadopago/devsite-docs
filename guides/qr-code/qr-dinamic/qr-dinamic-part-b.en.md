@@ -30,7 +30,7 @@ ID 62.08: Purpose of Transaction | Description header making reference to purcha
 ID 63: CRC |  Checksum - Content validation.  | 04 | Mandatory 
 
 
->For more information about data to be filled out on your account, [see glosary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/general-considerations/pre-requisites/#bookmark_glosario).
+>For more information about data to be filled out on your account, [see glosary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/general-considerations/pre-requisites/#bookmark_glosario).
 
 
 
