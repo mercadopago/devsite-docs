@@ -2,14 +2,38 @@
 indexable: false  
 ---
 
-<!-- -->
-> WARNING
+# QR Payment - Dynamic Model
+	
+## What is dynamic QR?
+
+Dynamic QR allows to have the amount collectible already included in the QR. That is, each QR represents a single order and amount. 
+
+Recommended to use for **desk service model**, for payments with amount included, among others.
+
+
+## Model characteristics
+
+The main characteristics are:
+- The amount is already configured in the QR.
+- It allows for repeated payments with the same amount.
+- The model is based on an EMVCo defined standard.
+- It allows to generate multi-wallet and offline dynamic QR codes.
+
+## How does it work?
+
+1. Create QR content with all data required to make collection.
+2. Then, generate a QR code with previously created content.
+3. Finally, show the QR code the way you prefer for the customer to pay.
+
+
+---
+### Next steps
+
+
+> LEFT_BUTTON_REQUIRED_EN
 >
-
-
-> Important
+> How can dynamic QR be integrated?
 >
-> We're sorry! This page is currently not available in English.
-<br>
-[View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-a/)
-
+> Learn step by step the model of this integration.
+>
+> [How can dynamic QR be integrated](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)
