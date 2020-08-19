@@ -25,7 +25,7 @@ Si tienes un sitio web, podrás insertar de forma sencilla un código HTML que m
 Próximos pasos
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Crear botón y link de pago
+> Crear link de pago
 >
 > Ahora que conoces de qué se trata, es momento de empezar a cobrar online.
 >
