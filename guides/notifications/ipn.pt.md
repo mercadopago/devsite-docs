@@ -1,27 +1,16 @@
 # Notificações IPN
 
-----[mla, mlb, mlc, mlm, mco, mlu]----
-> WARNING
->
-> Pré-requisitos
->
-> * Possuir o [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implementado.
-------------
-----[mpe]----
-> WARNING
->
-> Pré-requisitos
->
-> * Possuir o [Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction) implementado.
-------------
-
 O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
 Para receber notificações de eventos na sua plataforma, você pode [configurar previamente uma notification_url à qual Mercado Pago tiver acesso](https://www.mercadopago.com.br/ipn-notifications).
 
-
-
 ## Eventos
+
+> WARNING 
+> 
+> IMPORTANTE
+> 
+> Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo.
 
 Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
 
@@ -60,6 +49,14 @@ payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver docu
 chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
 
+
+Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado o un pedido fechado.
+
+> WARNING
+>
+> IMPORTANTE
+>
+> Lembre-se de que, se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
 
 ### Notificações para pagamentos presenciais
 
