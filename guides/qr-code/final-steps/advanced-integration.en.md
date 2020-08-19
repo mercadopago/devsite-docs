@@ -11,13 +11,6 @@ sites_supported:
 
 # Advanced Integration
 
-## Receive notifications of your orders
-
-[IPN notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
-
-Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
-
-
 ## Refunds
 
 Refunds happen when a payment was completed but the seller decides to cancel it partially or totally. You can find information in [Refunds and cancellations](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds) section.
@@ -28,6 +21,13 @@ Refunds happen when a payment was completed but the seller decides to cancel it 
 > 
 > Remember that in the case QR payments, refunds are available but cancellations are not.
 
+
+## Order validity
+
+By default, QR orders expires 10 minutes after being created or automatically if it’s closed. 
+
+If you require a different expiration time, you can send the header `X-Ttl-Store-Preference` with the time you need expressed in seconds. I.e., if you want 5 minutes as the available time, you’ll have to send the header `X-Ttl-Store-Preference: 300`.
+
 ## Generate reports of your sales
 
 Integrate [Mercado Pago reports](https://www.mercadopago.com.ar/developers/en/guides/reports/general-considerations/reconciliation-reports/) with your system to make sales reconcilitation and know about your account movements.
@@ -35,9 +35,9 @@ Integrate [Mercado Pago reports](https://www.mercadopago.com.ar/developers/en/gu
 ## Test and validate your integration 
 
 We detailed all necessary cases you should try to make sure your system is succesfully integrated with Mercado Pago. 
-Find all this information in the Tests section.
+Find all this information in the [Tests section](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/).
 
-
+---
 ### Next steps
 
 

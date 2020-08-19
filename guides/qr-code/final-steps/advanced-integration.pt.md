@@ -11,12 +11,6 @@ sites_supported:
 
 # Integração avançada
 
-## Receba notificações de suas ordens 
-
-As [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
-
-Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_reference` como método de contingência.
-
 ## Devoluções de seus pagamentos 
 
 As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor decide anulá-lo total ou parcialmente. Você poderá achar todas as informações na [seção Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/).
@@ -26,6 +20,12 @@ As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor d
 > OBS.
 > 
 > Leve em consideração que para pagamentos presenciais somente poderá realizar devoluções, mas não cancelamentos. 
+
+## Validade do pedido
+
+Por defeito, o pedido do QR expira aos 10 minutos de ser criado ou automaticamente ao ser encerrado. 
+
+Se um tempo de expiração diverso for requerido, poderá enviar o header `X-Ttl-Store-Preference` com o tempo desejado em segundos. Por exemplo, para que esteja disponível durante 5 minutos, o header `X-Ttl-Store-Preference: 300` deverá ser enviado.
 
 ## Gere relatórios de suas vendas
 
@@ -37,6 +37,7 @@ Integre os [relatórios de conciliação de Mercado Pago](https://www.mercadopag
 Detalhamos todos os casos necessários que deve comprovar para validar que seu sistema esteja integrado corretamente com Mercado Pago. 
 Você pode achar todos os casos na [seção de Testes](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/final-steps/integration-test/).
 
+---
 ### Próximos passos
 
 

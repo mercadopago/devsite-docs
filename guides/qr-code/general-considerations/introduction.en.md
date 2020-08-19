@@ -40,6 +40,21 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 In order to receive payments with QR, you can **print it and paste it in a visible place or display it on your phone**.
 
 > ![Flujo QR](/images/qr_flujo.en.png)
+---
+
+> NOTE
+>
+> Note
+>
+> If your model does not require integration with a point of sale system, you can consult all the information available in [generate QR from the panel](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations-front/).
+
+## Main characteristics
+
+The main characteristics are:
+
+- Operator always works from its Point of Sale system, that was previously set up with a Mercado Pago charge function. From that option, the order is sent to the associated POS.
+- For a client to make a payment, an order needs to be linked to a POS.
+- Operator can see the completed payment on its system.
 
 ---
 
@@ -55,8 +70,8 @@ In order to receive payments with QR, you can **print it and paste it in a visib
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> How to generate QR codes
+> Previous requirements
 >
-> Learn all the different methods to charge with QR code.
+>  To integrate your system, it is important to know your account details and your access credentials.
 >
-> [How to generate QR codes](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations/)
+> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/pre-requisites/)

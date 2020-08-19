@@ -7,6 +7,7 @@ sites_supported:
   - mlm
   - mlc
   - mlb
+  indexable: false
 ---
 
 # ¿Cómo generar el QR?
@@ -29,6 +30,7 @@ Puedes cobrar, devolver pagos y recibir notificaciones en tu sistema.
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------ |
 | Modelo atendido | Requiere intervención del operador del punto de venta. Selecciona Mercado Pago como medio de pago. | El operador toma el pedido de venta. Luego el cliente escanea el QR pagando el valor del pedido. | Tienda de productos, restaurantes de comida rápida. |
 
+---
 ### Próximos pasos
 
 

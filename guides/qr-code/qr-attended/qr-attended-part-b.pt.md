@@ -13,6 +13,16 @@ sites_supported:
 
 Para receber por meio de um código QR modelo atendido, deverá criar um pedido e associá-lo ao caixa onde quiser receber. 
 
+## Fluxo do modelo
+
+Explicamos como funciona o modelo atendido:
+
+>![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/qr-user-flow.pt.png)
+---
+
+1. O ponto de venda registra um pedido (1a) e cria um pedido atribuído a uma caixa (1b). Neste momento, o pedido está disponível para leitura (2).
+2. Quando o cliente escaneia o QR (3) com o pedido e faz o pagamento (5), uma notificação IPN (4a e 6b) é recebida no servidor do vendedor. Com estes dados obtém-se o estado da encomenda (7a), para validar se está encerrada ou ainda em aberto, com pagamento pendente.
+
 ## Criar um pedido
 
 ```curl
@@ -40,19 +50,13 @@ https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_tok
 ```
 Pode obter mais informações em [Referências do API](https://www.mercadopago.com.br/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post/).
 
+Assim que o pedido for criado, ele estará disponível para ser **digitalizado e pago**.
+
 > NOTE
 > 
 > OBS.
 > 
 > Leve em consideração que se não fez previamente o carregamento do nome de seu negócio ou a logomarca em [sua conta de Mercado Pago](https://www.mercadopago.com.br/settings/account), o título e a imagem do pedido que o cliente veja no app serão as do item carregado. 
-
-
-
-## Validade do pedido
-
-Por defeito, o pedido do QR expira aos 10 minutos de ser criado ou automaticamente ao ser encerrado. 
-
-Se um tempo de expiração diverso for requerido, poderá enviar o header `X-Ttl-Store-Preference` com o tempo desejado em segundos. Por exemplo, para que esteja disponível durante 5 minutos, o header `X-Ttl-Store-Preference`: 300 deverá ser enviado.
 
 ## Remover um pedido
 
@@ -63,6 +67,15 @@ curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNA
 ```
 A resposta será um `HTTP 204 No Content`.
 
+## Receba notificações de suas ordens 
+
+As [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
+
+Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_reference` como método de contingência.
+
+<a href="https://www.mercadopago.com.ar/developers/pt/guides/notifications/ipn/" target="_blank"> Receber notificações IPN </a>
+
+---
 ### Próximos passos
 
 

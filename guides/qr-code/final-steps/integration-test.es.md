@@ -38,7 +38,7 @@ Pago rechazado | OTHE | 123456789
 
 Datos de la tarjeta
 Tarjeta | Número | CVV | Fecha de vencimiento
------------- | ------------------------ | ------------ | ------------------------
+------------ | ---------------- | ------------ | -------------------- |
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
@@ -73,7 +73,7 @@ Caso | Resultado esperado | Observaciones
 **Pago aprobado**. El usuario realiza un pago aprobado.| El sistema de Punto de Venta recibe la información de un pago aprobado.| Verifica recepción de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/).
 **Pago rechazado**. El usuario realiza un pago rechazado.| El sistema de Punto de Venta recibe la información de un pago rechazado y continua esperando el pago de la orden.| El `status` de la `merchant_order` debe ser **opened**
 **Segundo intento de pago**. El usuario realiza primero un pago rechazado y después un pago aprobado.| El sistema de Punto de Venta recibe la información de un pago rechazado y luego un pago aprobado.| No eliminar la orden luego de un pago rechazado.
-**Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago.com.ar/activities).
+**Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/#bookmark_devoluciones).
 **Cancelar orden**. El usuario se arrepiente y decide pagar en efectivo. | Se elimina la orden, y por ende al escanear el QR sólo se muestra la pantalla de espera. | Eliminar la orden de la caja.
 
 ## Quiero ir a producción

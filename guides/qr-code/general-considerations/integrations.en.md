@@ -7,6 +7,7 @@ sites_supported:
 - mlm
 - mlc
 - mlb
+  indexable: false
 ---
 
 # How to generate QR codes
@@ -29,7 +30,7 @@ You’ll be able to charge, refund and receive notifications in your system.
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------ |
 | Attended model | Requires intervention from the operator in a point of sale. Select Mercado Pago as a payment method. | Operator takes the order. Next, client scans QR to pay for the order. | Stores, fast food restaurants. |
 
-
+---
 ### Next steps
 
 

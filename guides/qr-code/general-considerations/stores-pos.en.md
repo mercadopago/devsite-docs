@@ -15,16 +15,12 @@ sites_supported:
 
 **Stores** and **Points of Sale** are the concepts you’ll use on Mercado Pago to manage your business and keep track of your accounts. You can have several POS in one Store.
 
-| Term       |  Description                                                 |
-| ------------- | ------------------------------------------------------------ |
-| Store      | A **physical shop** in which your clients can get products and services. You can have multiple stores on one account. |
-| POS           | A **place to execute a transaction** on a store or physical shop. Each POS will be linked with a unique QR code.  |
-
 > ![Cajas y Sucursales](/images/stores_pos.en.png) 
 
 
-
 ## Stores
+
+A **physical shop** in which your clients can get products and services. You can have multiple stores on one account.
 
 ### What are the benefits of creating stores?
 
@@ -33,9 +29,7 @@ sites_supported:
 - **Better organization for your POS**.
 
 
-
-
-### How to create a store
+### How to create a store?
 
 To create a store, is importante to declare name, working hours, location and an identifier. 
 
@@ -43,7 +37,7 @@ Run the next code to generate a store:
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/users/$COLLECTOR_ID/stores?access_token=PROD_ACCESS_TOKEN -d
+curl -X POST https://api.mercadopago.com/users/$USER_ID/stores?access_token=PROD_ACCESS_TOKEN -d
 {  
    "name":"Store 1",
    "business_hours":{  
@@ -80,15 +74,25 @@ curl -X POST https://api.mercadopago.com/users/$COLLECTOR_ID/stores?access_token
 
 Learn more with our [API reference](https://www.mercadopago.com.ar/developers/en/reference/stores/_users_user_id_stores/post/).
 
+> WARNING
+>
+> IMPORTANT
+>
+> 1. You must know your `country_id` of the country where you are in [our API of countries](https://api.mercadolibre.com/countries).
+> 2. The `state_name` must match the **states** according to the country in question (https://api.mercadolibre.com/countries/$country_id).
+> 3. The `city_name` must match the **cities** according to their states. (https://api.mercadolibre.com/states/$state_id).
 
 
 ## Point of Sale (POS)
 
+It is a **point of sale** that exists in a branch or physical store. Each POS will be linked with a unique QR code.
+
+### How to create a Point of Sale?
+
 Once you created your stores, the next step is to generate your POS. Some considerations:
 
-
-| Term       |  Description                                                 |
-| ------------- | ------------------------------------------------------------ |
+| Term       |  Description  | 
+| ------------- | -------------------------------------------- |
 | `EXTERNAL_STORE_ID`     | Links a Point of Sale (POS) to a store. This is a required field and same as the Store *external_id* previously created. |
 | `EXTERNAL_ID`           | Identifies each Point of Sale (POS). This is required and can’t be modified nor repeated on the same Mercado Pago account. |
 
@@ -108,38 +112,16 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
 
 Learn more with our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/pos/_pos/post/).
 
-Once Point of Sale is created, you’ll be able to see the QR files in the “Response” section, along with other relevant data. 
+Once Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
 
 
-
+---
 ### Next steps
-
-<div>
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-a/" style="text-decoration:none;color:inherit">       
-<blockquote class="next-step-card next-step-card-left">
-<p class="card-note-title">Integrate QR attended model<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
-<p>Check this if your selling process needs an operator.</p>
-</blockquote>
-</a>    
-<a href="https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-a/" style="text-decoration:none;color:inherit">
-<blockquote class="next-step-card next-step-card-right">
-<p class="card-note-title">Integrate QR unattended model<span class="card-status-tag card-status-tag-recommended">RECOMMENDED</span></p>
-<p>If your selling process only needs a client action, this is the model for you.</p>
-</blockquote>
-</a>
-</div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
 > Integrate QR attended model
 >
-> Check this if your selling process needs an operator.
+> Learn step by step how to integrate this model.
 >
-> [Integrate QR attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-a/)
+> [Integrate QR attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-b/)

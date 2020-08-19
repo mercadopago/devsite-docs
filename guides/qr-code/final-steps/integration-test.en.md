@@ -16,70 +16,30 @@ sites_supported:
 
 Test users allow you to try the integration of your system with Mercado Pago without using real money.
 
+To carry out the tests, you need to have at least two users: a buyer and a seller.
+
+If you did not generate your users at this point, you can do so in the [prerequisites](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/pre-requisites/)
+
+
 Test user types | Description
 ----------------- | -------------------------------------
 Seller | **Test account that you use to obtain credentials to set up in your system and interact with Mercado Pago APIs**. You can also access [Mercado Pago account](https://www.mercadopago.com.ar/activities) and check approved transactions. 
 Buyer | **Test account you use to test the buying process**. You must access Mercado Pago app with this user data. In case of having money in the account or saved cards, they wil be available as payment methods.
 
-
-## Generate test users
-
-To make tests is necessary to have at least two users: a buyer and a seller. 
-
-Execute the following command to generate a test user:
-
-```curl
-curl -X POST \
-
--H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN
--d '{"site_id":"MLA"}'
-```
-
-> NOTE
-> 
-> Note
-> 
-> **Productive credentials** should be used for the account you'll be operating with.
-
-Response:
-
-```json
-{
-"id": 123456,
-"nickname": "TT123456",
-"password": "qatest123456",
-"site_status": "active",
-"email": "test_user_123456@testuser.com"
-}
-```
-
-> WARNING
-> 
-> IMPORTANT
-> 
-> * You can generate up to 10 test accounts at the same time. Because of that, we recommend to save email and password for each one. 
-> * Test users expire after 60 days of no activity on Mercado Pago.
-> * To make test payments we recommend to use low amounts. 
-> * Both buyer and seller should test users. 
-> * Use test cards, because is not possible to withdraw money. 
-
 ## Test cards
 
+Payer details
+Payment simulation | Name of the holder | Identification document
+----------------- | -------------------- | --------------
+Payment approved | APRO | 123456789
+Payment rejected | OTHE | 123456789
+
+Card data
 Card | Number | CVV | Expiration date
------------- | ------------------------ | ------------ | ------------------------
+------------ | ------------------------ | ------------ | --------------
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
-
-To test **different payments results**, complete the data you want in the cardholder name:
-
-- APRO: Approved payment.
-- OTHE: Rejected due to general error.
-- CALL: Rejected with validation to authorize.
-- FUND: Rejected due to insufficient amount.
-- SECU: Rejected due to invalid CVV. 
-- EXPI: Rejected due to expiration date problem. 
 
 > NOTE
 > 
@@ -112,7 +72,7 @@ Event | Expected output | Comments
 **Approved payment**. User makes a successful payment. | Point of Sale system receives information about an approved payment.| Verify [notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/) were received. |
 **Rejected payment**. User makes a rejected payment.| Point of Sale system receives information about the rejected payment and keeps waiting for the order to be pay.| `merchant_order` status must be **opened**.
 **Second payment attempt**. User first performs a rejected payments and then execute an approved payment. | Point of sale system receives information about the rejected payment and an approved payment later.| Don’t remove the order after a rejected payment.|
-**Refunds**. These are performed from the Point of Sale.| Refunds impact in buyer account.| See [refunds](https://www.mercadopago.com.ar/activities).
+**Refunds**. These are performed from the Point of Sale.| Refunds impact in buyer account.| See [refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds/#bookmark_refunds).
 **Cancel order**. Users change their mind and decides to pay in cash. | Order is removed and, therefore, scanning the QR code only shows a waiting screen.  | Remove order from the Point of Sale.
 
 ## Production mode
@@ -123,7 +83,7 @@ When your app is **ready and working in test mode**, and you want to start proce
 > 
 > IMPORTANT
 > 
-> * If you don’t activate your credentials, you won’t be able to do any type of returns.
+> If you don’t activate your credentials, you won’t be able to do any type of returns.
 
 ## Why is this process needed?
 

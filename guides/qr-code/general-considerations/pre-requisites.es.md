@@ -87,7 +87,7 @@ Respuesta:
 
 Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración, creando las sucursales y cajas.
 
-
+---
 ### Próximos pasos
 
 

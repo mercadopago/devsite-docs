@@ -18,6 +18,7 @@ Para cobrar a través de un código QR modelo atendido, deberás crear una orden
 Te explicamos cómo funciona el modelo atendido: 
 
 >![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
+--- 
 
 1. El punto de venta registra un pedido (1a) y crea una orden asignada a una caja (1b). En este momento la orden se encuentra disponible para ser escaneada (2). 
 2. Cuando el cliente escanea el QR (3) con la orden y realiza el pago (5), se recibe una notificación IPN (4a y 6b) al servidor del vendedor. Con esos datos, se obtiene el estado de la orden (7a), para validar que esté cerrada o siga abierta, pendiente de pago.
@@ -77,6 +78,7 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 
 <a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
 
+---
 ### Próximos pasos
 
 
@@ -86,7 +88,7 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES

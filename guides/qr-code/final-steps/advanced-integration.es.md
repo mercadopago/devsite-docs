@@ -27,7 +27,7 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 Por defecto, la orden del QR expira a los 10 minutos de ser creada o automáticamente al ser cerrada. 
 
 Si se requiere un tiempo de expiración diferente, se puede enviar el _header_ `X-Ttl-Store-Preference` con el tiempo deseado en segundos.
-Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el _header_ `X-Ttl-Store-Preference`: 300.
+Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el _header_ `X-Ttl-Store-Preference: 300`.
 
 ## Genera reportes de tus ventas
 
@@ -38,6 +38,7 @@ Integra los [reportes de conciliación de Mercado Pago](https://www.mercadopago.
 Detallamos todos los casos necesarios que debes probar para validar que tu sistema esté integrado correctamente con Mercado Pago. 
 Puedes encontrar todos los casos en la [sección de Pruebas](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/).
 
+---
 ### Próximos pasos
 
 

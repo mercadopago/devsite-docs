@@ -41,6 +41,22 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 
 
 > ![Flujo QR](/images/qr_flujo.pt.png)
+---
+
+> NOTA
+>
+> Nota
+>
+> Caso seu modelo não necessite de integração com sistema de ponto de venda, você pode consultar todas as informações disponíveis em [gerar QR do painel](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/general-considerations/integrations-front/).
+
+## Características do modelo
+
+As características principais são:
+
+- O operador sempre trabalha desde seu sistema de ponto de venda onde a modalidade de Receber com Mercado Pago foi inclusa. Dessa opção, envia-se uma ordem ao caixa associado. 
+- Para o cliente realizar o pagamento, é preciso associar um pedido ao caixa. 
+- O operador vê a cobrança impactada em seu sistema. 
+
 
 ---
 
@@ -56,8 +72,8 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Como gerar o QR?
+> Pré-requisitos
 >
-> Conheça as diferentes formas de receber com um código QR.
+> Para integrar seu sistema, é importante saber os detalhes da sua conta e suas credenciais de acesso.
 >
-> [Como gerar o QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/integrations/)
+> [Pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/general-considerations/pre-requisites/)

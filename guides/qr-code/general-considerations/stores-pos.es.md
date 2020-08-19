@@ -91,8 +91,8 @@ Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja 
 
 Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguiente:
 
-| Término       |  Descripción                                                 |
-| ------------- | ------------------------------------------------------------ |
+| Término       |  Descripción                     |
+| ------------- | ---------------------------------------------------- |
 | `EXTERNAL_STORE_ID`     | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
 | `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. También lo puedes encontrar como `EXTERNAL_POS_ID`.|
 
@@ -115,7 +115,7 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 
 
-
+---
 ### Próximos pasos
 
 
