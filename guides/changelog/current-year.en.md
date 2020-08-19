@@ -14,7 +14,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > NEW_VERSION: NEW VERSION
 >
-> PRODUCT: SDK Java
+> PRODUCT: SDK JAVA
 
 We have released a new version of SDK .NET 1.7.1.
 
