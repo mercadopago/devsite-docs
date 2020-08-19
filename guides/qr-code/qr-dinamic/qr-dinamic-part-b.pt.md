@@ -119,7 +119,7 @@ Depois disso, mostre o QR ao seu cliente, como preferir, para que ele o pague. E
 ### Próximos passos
 
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Integração avançada
 >
