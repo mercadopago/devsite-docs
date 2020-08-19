@@ -1,5 +1,5 @@
 title: Instore Orders v2 API
-key: instore_orders
+key: instore_orders_v2
 order: 11
 version:
 baseUri: https://api.mercadopago.com
