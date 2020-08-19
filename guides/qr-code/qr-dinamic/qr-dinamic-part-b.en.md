@@ -128,4 +128,4 @@ Then, it shows QR code to your customer the way he/she prefers to pay.  And read
 >
 > Learn about your options for your integration to reach the next level.
 >
-> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/final-steps/advanced-integration/)
+> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/final-steps/advanced-integration/)
