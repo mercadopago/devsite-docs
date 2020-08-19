@@ -30,7 +30,7 @@ The main characteristics are:
 ### Next steps
 
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_EN
 >
 > How can dynamic QR be integrated?
 >
