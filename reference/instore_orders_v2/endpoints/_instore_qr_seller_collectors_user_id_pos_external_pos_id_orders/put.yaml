@@ -1,0 +1,162 @@
+---
+samples:
+- curl.sh
+use:
+- user_id
+- external_pos_id
+- external_reference
+- title
+- description
+- notification_url
+- expiration_date
+- total_amount
+- sponsor
+- cash_out
+errors:
+- 400 BAD_REQUEST:
+  - invalid_collectorId:
+      description:
+        en: user_id must be a number.
+        es: user_id debe ser un número.
+        pt: user_id deve ser um número.
+  - invalid_externalPosId:
+      description:
+        en: externalPosId must be present.
+        es: externalPosId debe estar presente.
+        pt: externalPosId deve estar presente.
+  - invalid_external_reference:
+      description:
+        en: external_reference must be string
+        es: external_reference debe ser un string.
+        pt: external_reference deve ser um string.
+  - invalid_total_amount:
+      description:
+        en: total_amount must be number.
+        es: total_amount debe ser un número.
+        pt: total_amount deve ser um número.
+  - invalid_items.sku_number:
+      description:
+        en: items.sku_number must be string.
+        es: items.sku_number debe ser un string.
+        pt: items.sku_number deve ser um string.
+  - invalid_items.category:
+      description:
+        en: items.category must be string.
+        es: items.category debe ser un string.
+        pt: items.category deve ser um string.
+  - invalid_items.title:
+      description:
+        en: items.title must be string.
+        es: items.title debe ser un string.
+        pt: items.title deve ser um string. 
+  - invalid_items.description:
+      description:
+        en: items.description must be string.
+        es: items.description debe ser un string.
+        pt: items.description deve ser um string.   
+  - invalid_items.unit_measure:
+      description:
+        en: items.unit_measure must be string.
+        es: items.unit_measure debe ser un string.
+        pt: items.unit_measure deve ser um string.    
+  - invalid_items.quantity:
+      description:
+        en: items.quantity must be number.
+        es: items.quantity debe ser un número.
+        pt: items.quantity deve ser um número.  
+  - invalid_items.currency_id:
+      description:
+        en: items.currency_id must be string.
+        es: items.currency_id debe ser un string.
+        pt: items.currency_id deve ser um string. 
+  - invalid_items.unit_price:
+      description:
+        en: items.unit_price must be number.
+        es: items.unit_price debe ser un número.
+        pt: items.unit_price deve ser um número.     
+  - invalid_items.total_amount:
+      description:
+        en: items.total_amount must be number.
+        es: items.total_amount debe ser un número.
+        pt: items.total_amount deve ser um número.                                     
+  - invalid_title:
+      description:
+        en: title must be present.
+        es: titulo debe estar presente.
+        pt: titulo deve estar presente.
+  - invalid_unit_measure:
+      description:
+        en: unit_measure must be present.
+        es: unit_measure debe estar presente.
+        pt: unit_measure deve estar presente.
+  - invalid_quantity:
+      description:
+        en: quantity must be present.
+        es: quantity debe estar presente.
+        pt: quantity deve estar presente.
+  - invalid_unit_price:
+      description:
+        en: unit_price must be present.
+        es: unit_price debe estar presente.
+        pt: unit_price deve estar presente.
+  - invalid_total_amount:
+      description:
+        en: total_amount must be present.
+        es: total_amount debe estar presente.
+        pt: total_amount deve estar presente. 
+  - invalid_title:
+      description:
+        en: title must be string.
+        es: title debe ser un string.
+        pt: title deve ser um string.     
+  - invalid_description:
+      description:
+        en: description must be string.
+        es: description debe ser un string.
+        pt: description deve ser um string.   
+  - invalid_sponsor.id:
+      description:
+        en: sponsor.id must be number.
+        es: sponsor.id debe ser un número.
+        pt: sponsor.id deve ser um número. 
+  - invalid_id:
+      description:
+        en: sponsor.id must be present.
+        es: sponsor.id debe estar presente.
+        pt: sponsor.id deve estar presente. 
+  - invalid_cash_out.amount:
+      description:
+        en: cash_out.amount must be number.
+        es: cash_out.amount debe ser un número.
+        pt: cash_out.amount deve ser um número. 
+  - invalid_amount:
+      description:
+        en: cash_out.amount must be present.
+        es: cash_out.amount debe estar presente.
+        pt: cash_out.amount deve estar presente.         
+  - invalid_external_reference:
+      description:
+        en: external_reference must be present.
+        es: external_reference debe estar presente.
+        pt: external_reference deve estar presente.
+  - invalid_description:
+      description:
+        en: description must be present.
+        es: description debe estar presente.
+        pt: description deve estar presente. 
+  - error_creating_seller_qr_order:
+      description:
+        en: The cash out is required when order has no items.
+        es: cash_out es requerido para una orden sin ítems.
+        pt: cash_out é necessário para uma ordem sem um item. 
+  - invalid_expiration_date:
+      description:
+        en: Expiration date must be a valid and future date.
+        es: Fecha de expiración debe ser una fecha futura válida.
+        pt: Data de expiração deve ser uma data futura válida.
+- 500 SERVER_ERROR:
+  - in_store_order_creation_error:
+      description:
+        en: Failed to create order.
+        es: Error al intentar crear una orden.
+        pt: Erro ao tentar criar uma ordem.
