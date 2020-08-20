@@ -10,6 +10,7 @@ use:
 - notification_url
 - expiration_date
 - total_amount
+- items
 - sponsor
 - cash_out
 errors:
