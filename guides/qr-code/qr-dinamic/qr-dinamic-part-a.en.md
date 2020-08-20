@@ -2,7 +2,7 @@
 indexable: false  
 ---
 
-# QR Payment - Dynamic Model
+# QR dynamic model
 	
 ## What is dynamic QR?
 

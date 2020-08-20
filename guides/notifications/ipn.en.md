@@ -7,10 +7,10 @@ To receive event notifications on your platform, you can [previously configure a
 
 ## Events
 
-> WARNING 
-> 
 > WARNING
-> 
+>
+> Important
+>
 > An event is any type of update on the reported object, including status or attribute changes.
 
 We notify events related to your orders (`merchant_orders`), received chargebacks (`chargebacks`) or received payments (`payment`).
@@ -72,7 +72,7 @@ You will find all the payments in the order, under the payments object. [To make
 
 > WARNING
 >
-> WARNING
+> Important
 >
 > When the `merchant_order` is **closed**, check that the sum of payments with approved status is equal to or higher than total order amount.
 
@@ -173,7 +173,7 @@ Otherwise, if the order posted QR has **not been scanned yet**, the answer will 
 
 > WARNING
 >
-> CAUTION
+> Important
 >
 > To approve the integration of in-person payments, Mercado Pago requires the implementation of notifications (IPN) as main method. Order search by `external_reference` should be used only as a contingency measure in the event of no notifications.
 
