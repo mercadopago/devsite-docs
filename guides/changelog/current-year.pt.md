@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: SDK JAVA
 
-Lançamos uma nova versão do SDK .NET 1.7.1.
+Lançamos uma nova versão do SDK Java 1.7.1.
 
 > GIT
 >

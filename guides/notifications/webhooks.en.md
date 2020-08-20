@@ -18,10 +18,10 @@ You can also configure the notification when you do the POST of the payment, ind
 
 ## Events
 
-> WARNING 
-> 
 > WARNING
-> 
+>
+> Important
+>
 > An event is any type of update on the reported object, including status or attribute changes.
 
 Whenever an event occurs, we will send you a notification in json format using HTTP POST to the URL that you specified.

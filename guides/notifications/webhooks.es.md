@@ -18,10 +18,10 @@ También puedes configurar la notificación cuando hagas el POST del pago, indic
 
 ## Eventos
 
-> WARNING 
-> 
-> IMPORTANTE
-> 
+> WARNING
+>
+> Importante
+>
 > Un evento es cualquier tipo de actualización sobre el objeto notificado, incluyendo cambios de estado o de atributos.
 
 Siempre que suceda un evento, te enviaremos una notificación en formato `json` usando `HTTP POST` a la URL que especificaste.

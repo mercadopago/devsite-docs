@@ -7,10 +7,10 @@ To receive event notifications on your platform, you can [previously configure a
 
 ## Events
 
-> WARNING 
-> 
 > WARNING
-> 
+>
+> Important
+>
 > An event is any type of update on the reported object, including status or attribute changes.
 
 We notify events related to your orders (`merchant_orders`), received chargebacks (`chargebacks`) or received payments (`payment`).

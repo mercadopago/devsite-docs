@@ -9,10 +9,10 @@ Para recibir las notificaciones de los eventos en tu plataforma, puedes [configu
 
 ## Eventos
 
-> WARNING 
-> 
-> IMPORTANTE
-> 
+> WARNING
+>
+> Importante
+>
 > Un evento es cualquier tipo de actualización sobre el objeto notificado, incluyendo cambios de estado o de atributos.
 
 Notificamos eventos referidos a tus órdenes (`merchant_orders`), pagos recibidos (`payment`) o contracargos recibidos (`chargebacks`).
