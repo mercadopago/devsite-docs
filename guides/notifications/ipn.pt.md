@@ -54,7 +54,7 @@ Com essas informações, você poderá realizar as atualizações necessárias n
 
 > WARNING
 >
-> IMPORTANTE
+> Importante
 >
 > Lembre-se de que, se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
 
@@ -69,7 +69,7 @@ Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos del
  
 > WARNING
 >
-> ATENÇÃO
+> Importante
 >
 > Quando o `status` da `merchant_order` for **closed**, certifique-se de que a soma dos pagamentos com `status` **approved** seja igual ou maior ao total da ordem.
 
@@ -170,7 +170,7 @@ Caso contrário, se o QR no qual a ordem foi publicada ainda **não foi escanead
 
 > WARNING
 >
-> ATENÇÃO
+> Importante
 >
 > Mercado Pago requer a integração de pagamentos presenciais que tiverem aplicada a notificação (IPN) como método principal para a homologação. A pesquisa de ordem por `external_reference` deverá ser somente utilizada como contingência no caso eventual de não se receberem notificações.
 

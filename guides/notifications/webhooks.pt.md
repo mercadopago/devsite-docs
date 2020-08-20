@@ -96,7 +96,7 @@ Com essas informações, você poderá realizar as atualizações necessárias n
 
 > WARNING
 >
-> IMPORTANTE
+> Importante
 >
 > Lembre-se de que, se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
 

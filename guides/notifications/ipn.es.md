@@ -72,7 +72,7 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 
 > WARNING
 >
-> ADVERTENCIA
+> Importante
 >
 > Cuando la `merchant_order` esté en estado **closed**, revisa que la sumatoria de los pagos en estado **approved** sea igual o mayor al total de la orden.
 
@@ -171,7 +171,7 @@ En caso contrario, la respuesta que se recibe si todavía **no se escaneó el QR
 
 > WARNING
 >
-> ATENCIÓN
+> Importante
 >
 > Desde Mercado Pago requerimos para homologar la integración de pagos presenciales que tengan implementada la notificación (IPN) como método principal. La búsqueda de orden por `external_reference` deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
 

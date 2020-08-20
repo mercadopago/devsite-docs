@@ -16,7 +16,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: SDK JAVA
 
-Lanzamos una nueva versíon del SDK Java 1.7.1.
+Lanzamos una nueva versión del SDK Java 1.7.1.
 
 > GIT
 >
