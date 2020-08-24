@@ -20,7 +20,7 @@ SSL                         | It is a requirement that you have an SSL certifica
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
-* [Basic Checkout (Mercado Pago Checkout)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
+* [Basic Checkout (Checkout Pro)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
     * [Split payments (Two cards)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_payments_with_two_credit_cards)
     * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds/)
 
@@ -100,7 +100,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
 
-![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
+![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 4) Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 

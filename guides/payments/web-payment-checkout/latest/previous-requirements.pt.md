@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mlb
-  - mla
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Pré-requisitos para começar
 
 
@@ -19,7 +9,7 @@ Termo | Descrição
 ------------ | -------------
 _Preferência (preference)_ | São as **informações do produto ou serviço que você quer oferecer.** Entre os atributos mais importantes de uma preferência são definidos: a descrição, o valor e os itens. Ao gerá-lo, você obtém uma URL para iniciar o fluxo de pagamento.
 _Credenciais (credentials)_ | Suas credenciais são as **chaves que te informamos para que você possa configurar suas integrações.**<br/>Existem dois tipos:<br/><br/>**Public key**. Chave pública da aplicação para saber, por exemplo, os meios de pagamento e criptografar os dados do cartão. Você deve usá-las somente para as suas integrações.<br/>**Access token**. Chave privada da aplicação para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/><br/>Para poder encontrá-las, confira suas <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a> e selecione as produtivas.<br/><br/>
-_Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar a preferência**  e que dá início ao fluxo de pagamento do Checkout Mercado Pago.
+_Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar a preferência**  e que dá início ao fluxo de pagamento do Checkout Pro.
 _Ítem (ítem)_ | Faz referência ao produto ou serviço que se quer oferecer. Pode ser um ou uma lista.
 _Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui suas próprias<a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a>. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma em credenciais. Ao entrar, um será criado automaticamente ou você poderá <a href="https://applications.mercadopago.com/" target="_blank"> criar uma aplicação</a> sempre que precisar.
 
@@ -46,6 +36,9 @@ Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.cl/" targ
 ------------
 ----[mlb]----
 Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.br/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
+------------
+----[mpe]----
+Caso você ainda não tenha uma, pode <a href="https://www.mercadopago.com.pe/" target="_blank"> criar uma conta do Mercado Pago</a> quando quiser.
 ------------
 
 ### 2.  Instalação do SDK do Mercado Pago
@@ -83,7 +76,7 @@ gem install mercadopago-sdk
 ```
 ```csharp
 ===
-----[mla, mco, mlu, mlc, mlm]----
+----[mla, mco, mlu, mlc, mlm, mpe]----
 Use o  <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar o SDK .NET do Mercado Pago.
 ------------
 ----[mlb]----
@@ -95,23 +88,17 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
 
-> NOTE
->
-> Nota
->
-> Esta documentação é referente à nova versão do Checkout Mercado Pago. **Para ver a versão anterior**, confira a [sessão de Checkout Mercado Pago antiga](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/introduction/).
-
 ---
 
 ### Próximos passos
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Integre o Checkout Mercado Pago
+> Integre o Checkout Pro
 >
 > Siga o passo a passo para começar a receber pagamentos no seu site.
 >
-> [Integre o Checkout Mercado Pago](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
+> [Integre o Checkout Pro](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

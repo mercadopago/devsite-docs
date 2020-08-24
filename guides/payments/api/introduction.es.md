@@ -1,4 +1,9 @@
-# APIs de Mercado Pago
+----[mlb]----
+# Checkout Transparente
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+# Checkout API
+------------
 
 ## Construye tu procesador de pago
 

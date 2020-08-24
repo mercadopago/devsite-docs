@@ -4,7 +4,7 @@
 
 O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
 
-| Funcionalidades                                           | Checkout de Mercado Pago	    |
+| Funcionalidades                                           | Checkout Pro	    |
 |---------------------------------------------------------- |-------------------|
 | Pago con tarjeta de crédito                               | ✔                 |
 | Otros medios de pago                                      | ✔                 |
@@ -14,7 +14,7 @@ O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a s
 | IPN y webhooks                                            | ✔                 |
 | Descuentos con cupones de Mercado Pago                    | ✔                 |
 
-### Checkout de Mercado Pago
+### Checkout Pro
 
 Excelente para los vendedores que quieren empezar a vender rápido y fácil.
 

@@ -9,7 +9,7 @@
 
 iSET é uma **plataforma virtual que te permite receber pagamentos com Mercado Pago**.
 
-Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito e boleto bancário no [próprio checkout da sua loja](#bookmark_checkout_transparente), [redirecionado para o site do Mercado Pago](#bookmark_checkout_mercado_pago) ou [ambos os checkouts](#bookmark_ambos_checkouts).
+Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito e boleto bancário no [próprio checkout da sua loja](#bookmark_checkout_transparente), [redirecionado para o site do Mercado Pago](#bookmark_checkout_pro) ou [ambos os checkouts](#bookmark_ambos_checkouts).
 
 ## Etapas para configurar
 
@@ -34,7 +34,7 @@ E pronto! O Mercado Pago já está ativado.
 
 ## Configure as formas de pagamento
 
-Após ativar o Mercado Pago, você tem a opção de oferecer os seguintes modelos de checkout: [Checkout Mercado Pago](#bookmark_checkout_mercado_pago), [Checkout Transparente](#bookmark_checkout_transparente) ou [Ambos os checkouts](#bookmark_ambos_checkouts).
+Após ativar o Mercado Pago, você tem a opção de oferecer os seguintes modelos de checkout: [Checkout Pro](#bookmark_checkout_pro), [Checkout Transparente](#bookmark_checkout_transparente) ou [Ambos os checkouts](#bookmark_ambos_checkouts).
 
 Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
@@ -49,7 +49,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
     ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
-### Checkout Mercado Pago
+### Checkout Pro
 
 Onde o **comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
 

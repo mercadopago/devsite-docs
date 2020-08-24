@@ -1,10 +1,10 @@
-# How to create a payment link and button?
+# How to create a payment link?
 
 Receiving payments through social networks, email or website is very easy.
 
 ## Basic settings
 
-When creating a new payment link or button from your Mercado Pago account, you must define:
+When creating a new payment link from your Mercado Pago account, you must define:
 
 1. **The title of your product or service:** It will be the name that your buyer will see when making the payment. Remember that it should be as detailed as possible so that they can identify you better.
 2. **Price:** It is the final amount to be paid by your customers.

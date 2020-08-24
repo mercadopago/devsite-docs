@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Integración avanzada
 
 ## Recibe notificaciones de pagos
@@ -266,7 +256,7 @@ Parámetro |	Descripción
 `processing_mode` | Valor `aggregator`. |
 `merchant_account_id` | Valor `null`. |
 
->  La información de los parámetros dependerá de la finalización del pago en el Checkout de Mercado Pago y de que no haya abandonado el flujo antes de retornar a tu sitio a través de la `back_url` de **_failure_**.
+>  La información de los parámetros dependerá de la finalización del pago en el Checkout Pro y de que no haya abandonado el flujo antes de retornar a tu sitio a través de la `back_url` de **_failure_**.
 
 
 
@@ -360,7 +350,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Otras funcionalidades
 >
-> Configura tus pago y adapta Checkout de Mercado Pago a tu negocio.
+> Configura tus pago y adapta Checkout Pro a tu negocio.
 >
 > [Configurations](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
 

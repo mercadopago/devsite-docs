@@ -1,20 +1,10 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Teste sua integração
 
 
 
 ## Como testar minha integração
 
-**Os usuários de teste permitem que você faça testes no seu Checkout Mercado Pago** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
+**Os usuários de teste permitem que você faça testes no seu Checkout Pro** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
 
 Tipos de usuarios | Descrição
 ------------ | -------------

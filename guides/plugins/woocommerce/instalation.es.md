@@ -11,8 +11,8 @@ Revisa los requisitos de instalación y sigue los pasos que te indicamos ¡solo 
 
 | Requisitos                    | Detalles                                                                  	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
-| WordPress        	            | Requerido 4.9.10 o superior. Probado hasta 5.4.1                                              |
-| WooCommerce      	            | Requerido 3.x o superior. Probado hasta 4.1.0                                                 |
+| WordPress        	            | Requerido 4.9.10 o superior. Probado hasta 5.4.2                                              |
+| WooCommerce      	            | Requerido 3.x o superior. Probado hasta 4.3.0                                                 |
 | Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
 | Sistema                     	| Linux x86, Windows x86-64                                                        	            |
 | Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	    |
@@ -62,7 +62,7 @@ De forma manual, instala el módulo siguiendo estos pasos:
 
 Revisa que todo haya salido bien desde tu escritorio de WordPress. Verás el módulo entre tus *Plugins instalados*. Actívalo para pasar a la integración de tu cuenta y los pasos de configuración. 
 
-Cuando actives el plugin, WordPress te llevará a los *Ajustes* de WooCommerce y, de allí, a la sección *Payments*, donde tendrás a mano los [tipos de checkout](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que ofrecemos para tu tienda online: Checkout de Mercado Pago y Checkout Personalizado.
+Cuando actives el plugin, WordPress te llevará a los *Ajustes* de WooCommerce y, de allí, a la sección *Payments*, donde tendrás a mano los [tipos de checkout](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que ofrecemos para tu tienda online: Checkout Pro y Checkout Personalizado.
 
 > NOTE
 >

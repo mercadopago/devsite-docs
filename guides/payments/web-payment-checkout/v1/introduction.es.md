@@ -6,17 +6,18 @@ sites_supported:
   - mlu
   - mlc
   - mlm
+ indexable: false
 ---
 
-# Checkout de Mercado Pago
+# Checkout Pro
 
 > WARNING
 >
 > Nota
 >
-> Esta documentación es sobre la versión antigua de Checkout.
+> Esta documentación es sobre la versión antigua de Checkout Pro.
 >
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
 
 Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
 

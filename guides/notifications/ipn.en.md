@@ -1,26 +1,17 @@
 # IPN Notifications
 
-----[mla,mlb,mlc,mlm,mco,mlu]----
-> WARNING
->
-> Prerequisites
->
-> * Have the [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implemented.
-------------
-----[mpe]----
-> WARNING
->
-> Prerequisites
->
-> * Have the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
-------------
-
 **IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
 To receive event notifications on your platform, you can [previously configure a notification_url accessible for Mercado Pago](https://www.mercadopago.com.ar/ipn-notifications).
 
 
 ## Events
+
+> WARNING
+>
+> Important
+>
+> An event is any type of update on the reported object, including status or attribute changes.
 
 We notify events related to your orders (`merchant_orders`), received chargebacks (`chargebacks`) or received payments (`payment`).
 
@@ -60,6 +51,15 @@ payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see docu
 chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/)
 
+With this information you can make the necessary updates on your platform, such as registering an approved payment or a closed order.
+
+> WARNING
+>
+> Important
+>
+> Keep in mind that if the response times are exceeded, it is possible to receive duplicate notifications of an event.
+
+
 ### Merchant_orders notifications
 
 **If you are integrating in-person payments**, we recommend to use topic `merchant_order` IPN notifications. To do this, bear in mind the rules below:
@@ -72,7 +72,7 @@ You will find all the payments in the order, under the payments object. [To make
 
 > WARNING
 >
-> WARNING
+> Important
 >
 > When the `merchant_order` is **closed**, check that the sum of payments with approved status is equal to or higher than total order amount.
 
@@ -173,7 +173,7 @@ Otherwise, if the order posted QR has **not been scanned yet**, the answer will 
 
 > WARNING
 >
-> CAUTION
+> Important
 >
 > To approve the integration of in-person payments, Mercado Pago requires the implementation of notifications (IPN) as main method. Order search by `external_reference` should be used only as a contingency measure in the event of no notifications.
 

@@ -7,7 +7,7 @@ sites_supported:
   - mlm
   - mlc
   - mlb
-    indexable: false
+indexable: false
 ---
 
 # Como gerar o QR?

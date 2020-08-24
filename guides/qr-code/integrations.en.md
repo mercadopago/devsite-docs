@@ -1,13 +1,13 @@
 ---
 sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
-  indexable: false
+  - mla
+  - mpe
+  - mco
+  - mlu
+  - mlm
+  - mlc
+  - mlb
+indexable: false
 ---
 
 # How to generate QR codes

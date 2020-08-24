@@ -1,11 +1,5 @@
 # Webhooks Notifications
 
-> WARNING
->
-> Prerequisites
->
-> * Have the [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction) implemented.
-
 A **webhook** is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
 In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago.com/mla/account/webhooks).
@@ -23,6 +17,12 @@ You can also configure the notification when you do the POST of the payment, ind
 ```
 
 ## Events
+
+> WARNING
+>
+> Important
+>
+> An event is any type of update on the reported object, including status or attribute changes.
 
 Whenever an event occurs, we will send you a notification in json format using HTTP POST to the URL that you specified.
 

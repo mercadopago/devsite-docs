@@ -11,8 +11,8 @@ Review the installation requirements and follow the steps we indicate, it will o
 
 | Requirements                  | Details                                                                    	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
-| WordPress        	            | Required 4.9.10 or higher. Tested up to 5.4.1                                                 |
-| WooCommerce      	            | Required 3.x or higher. Tested up to 4.1.0                                                    |
+| WordPress        	            | Required 4.9.10 or higher. Tested up to 5.4.2                                                 |
+| WooCommerce      	            | Required 3.x or higher. Tested up to 4.3.0                                                    |
 | Environment                  	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
 | System                      	| Linux x86, Windows x86-64                                                        	            |
 | Web Server                  	| Apache 2.x, Nginx 1.7.x                                                               	    |
@@ -62,7 +62,7 @@ Done! The Mercado Pago module will be installed in your online store.
 
 Check that everything went well from your WordPress desktop. You will see the module among your *Installed Plugins*. Activate it to proceed to the integration of your account and the configuration steps.
 
-When you activate the plugin, WordPress will take you to the WooCommerce *Settings* and, from there, to the *Payments* section, where you will have the [types of checkout](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/introduction/#bookmark_checkout_types) we offer for your online store: Mercado Pago Checkout and Custom Checkout.
+When you activate the plugin, WordPress will take you to the WooCommerce *Settings* and, from there, to the *Payments* section, where you will have the [types of checkout](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/introduction/#bookmark_checkout_types) we offer for your online store: Checkout Pro and Custom Checkout.
 
 > NOTE
 >
