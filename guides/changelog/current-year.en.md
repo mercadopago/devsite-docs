@@ -20,6 +20,24 @@ In order to optimize your sales, we have added a new attribute that will allow y
 
 [Comenzar a recibir pagos solamente de usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_accept_payments_from_registered_users_only)
 
+### August 13th
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+
+We have released a new version of SDK Java 1.7.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.7.1) for further details regarding this release.
+
 ### August 12th
 
 > CHANGELOG

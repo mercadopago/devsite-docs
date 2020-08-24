@@ -25,7 +25,7 @@ Se você tem um site, poderá inserir, de forma simples, um código HTML que mos
 Próximos passos
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Criar botão e link de pagamento
+> Criar link de pagamento
 >
 > Agora que você já sabe do que se trata, chegou a hora de começar a receber pagamentos on-line.
 >

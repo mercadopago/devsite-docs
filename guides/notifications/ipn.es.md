@@ -9,6 +9,12 @@ Para recibir las notificaciones de los eventos en tu plataforma, puedes [configu
 
 ## Eventos
 
+> WARNING
+>
+> Importante
+>
+> Un evento es cualquier tipo de actualización sobre el objeto notificado, incluyendo cambios de estado o de atributos.
+
 Notificamos eventos referidos a tus órdenes (`merchant_orders`), pagos recibidos (`payment`) o contracargos recibidos (`chargebacks`).
 
 La `merchant_orders` es una entidad que agrupa tanto pagos como envíos. Tendrás que consultar los datos de las órdenes que te sean notificadas.
@@ -47,6 +53,14 @@ payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver docu
 chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
 
+Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado o una orden cerrada. 
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que si se exceden los tiempos de respuesta es posible recibir notificaciones duplicadas de un evento.
+
 ### Notificaciones de merchant_orders
 
 **Si estas integrando pagos presenciales**, te recomendamos utilizar notificaciones IPN de topic `merchant_order`. Para ello, ten en cuenta las siguientes reglas:
@@ -58,7 +72,7 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 
 > WARNING
 >
-> ADVERTENCIA
+> Importante
 >
 > Cuando la `merchant_order` esté en estado **closed**, revisa que la sumatoria de los pagos en estado **approved** sea igual o mayor al total de la orden.
 
@@ -157,7 +171,7 @@ En caso contrario, la respuesta que se recibe si todavía **no se escaneó el QR
 
 > WARNING
 >
-> ATENCIÓN
+> Importante
 >
 > Desde Mercado Pago requerimos para homologar la integración de pagos presenciales que tengan implementada la notificación (IPN) como método principal. La búsqueda de orden por `external_reference` deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
 

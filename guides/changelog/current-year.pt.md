@@ -20,6 +20,24 @@ Para que você possa otimizar suas vendas, adicionamos um novo atributo que perm
 
 [Começar a receber pagamentos apenas de usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
 
+### 13 de agosto
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+
+Lançamos uma nova versão do SDK Java 1.7.1.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.7.1).
+
 ### 12 de agosto
 
 > CHANGELOG
