@@ -18,7 +18,7 @@ Depending on your business needs, you have different options when it comes to cr
 ## Generating QR by the Mercado Pago panel
 
 This is the simplest way to charge with QR: you **don't need an integration between your system and Mercado Pago in order to work**.
-There are various ways of doing it. Consult all available information to [generate reports from this panel](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations-front/).
+There are various ways of doing it. Consult all available information to [generate reports from this panel](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integrations-front/).
 
 ## Generating integrated QR 
 
@@ -40,4 +40,4 @@ You’ll be able to charge, refund and receive notifications in your system.
 >
 > To integrate your system, it’s important to know you account data and access credentials.
 >
-> [Previous Requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/pre-requisites/)
+> [Previous Requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)

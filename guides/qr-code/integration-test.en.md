@@ -18,7 +18,7 @@ Test users allow you to try the integration of your system with Mercado Pago wit
 
 To carry out the tests, you need to have at least two users: a buyer and a seller.
 
-If you did not generate your users at this point, you can do so in the [prerequisites](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/pre-requisites/)
+If you did not generate your users at this point, you can do so in the [prerequisites](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)
 
 
 Test user types | Description

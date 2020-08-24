@@ -48,7 +48,7 @@ You can check your sales in the activity list in your [Mercado Pago account](htt
 >
 > Learn about QR code integration.
 >
-> [¿What’s a QR code?](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/introduction/)
+> [¿What’s a QR code?](https://www.mercadopago.com.ar/developers/en/guides/qr-code/introduction/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -57,4 +57,4 @@ You can check your sales in the activity list in your [Mercado Pago account](htt
 >
 > Learn about all the options to charge with QR depending on your type of business.
 >
-> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations/)
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integrations/)

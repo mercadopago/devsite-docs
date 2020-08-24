@@ -35,7 +35,7 @@ Integre os [relatórios de conciliação de Mercado Pago](https://www.mercadopag
 ## Teste e valide sua integração
 
 Detalhamos todos os casos necessários que deve comprovar para validar que seu sistema esteja integrado corretamente com Mercado Pago. 
-Você pode achar todos os casos na [seção de Testes](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/final-steps/integration-test/).
+Você pode achar todos os casos na [seção de Testes](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/integration-test/).
 
 ---
 ### Próximos passos
@@ -47,4 +47,4 @@ Você pode achar todos os casos na [seção de Testes](https://www.mercadopago.c
 >
 > Realize os casos de uso mais frequentes para validar sua integração.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/integration-test/)
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/integration-test/)

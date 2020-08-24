@@ -7,6 +7,7 @@ sites_supported:
   - mlm
   - mlc
   - mlb
+indexable: false
 ---
 
 # Pagamentos QR modelo atendido
@@ -68,4 +69,4 @@ Explicamos a você o funcionamento do modelo atendido:
 >
 > Conheça passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended/qr-attended-part-b/)
+> [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended-part-b/)

@@ -93,4 +93,4 @@ Resposta:
 >
 > Para realizar a integração, primeiramente deverá configurar suas sucursais e caixas.
 >
-> [Lojas e Caixas](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/stores-pos/)
+> [Lojas e Caixas](https://www.mercadopago.com.br/developers/pt/guides/qr-code/stores-pos/)

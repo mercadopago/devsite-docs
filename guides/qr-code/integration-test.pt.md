@@ -17,7 +17,7 @@ Os usuários de teste lhe permitem checar a integração de seu sistema com Merc
 
 Pra realizar os testes, é necessário ter pelo menos dois usuários: um comprador e um vendedor.
 
-Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/general-considerations/pre-requisites/).
+Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/pre-requisites/).
 
 Tipos de usuários | Descrição
 ----------------- | -------------------------------------

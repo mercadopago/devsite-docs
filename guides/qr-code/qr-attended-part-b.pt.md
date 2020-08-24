@@ -85,7 +85,7 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 >
 > Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/advanced-integration/)
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_PT
@@ -94,4 +94,4 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 >
 > Realiza os casos de uso mais frequentes para validar sua integração.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/final-steps/integration-test/)
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/integration-test/)

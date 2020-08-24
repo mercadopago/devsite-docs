@@ -35,7 +35,7 @@ Integrate [Mercado Pago reports](https://www.mercadopago.com.ar/developers/en/gu
 ## Test and validate your integration 
 
 We detailed all necessary cases you should try to make sure your system is succesfully integrated with Mercado Pago. 
-Find all this information in the [Tests section](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/).
+Find all this information in the [Tests section](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integration-test/).
 
 ---
 ### Next steps
@@ -47,4 +47,4 @@ Find all this information in the [Tests section](https://www.mercadopago.com.ar/
 >
 > Perform the most frequent use cases to validate your integration.
 >
-> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/)
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integration-test/)

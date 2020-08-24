@@ -18,7 +18,7 @@ Según lo que tu negocio necesite, tienes distintas opciones para generar tu QR.
 
 Es la manera más simple para cobrar con QR, ya que **no se necesita de una integración entre tu sistema y Mercado Pago para funcionar**. 
 
-Tienes distintas formas para hacerlo. Consulta toda la información disponible en [generar QR desde el panel](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/integrations-front/).
+Tienes distintas formas para hacerlo. Consulta toda la información disponible en [generar QR desde el panel](https://www.mercadopago.com.ar/developers/es/guides/qr-code/integrations-front/).
 
 ## Generar QR integrado con tu sistema
 
@@ -40,4 +40,4 @@ Puedes cobrar, devolver pagos y recibir notificaciones en tu sistema.
 >
 > Para integrar tu sistema, es importante conocer los datos de tu cuenta y tus credenciales de acceso.
 >
-> [Requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/)
+> [Requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/pre-requisites/)

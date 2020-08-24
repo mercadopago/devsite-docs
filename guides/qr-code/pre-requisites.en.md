@@ -94,5 +94,5 @@ Response:
 >
 > To build the integration, you must set up your stores and POS first.
 >
-> [Stores and POS](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/stores-pos/)
+> [Stores and POS](https://www.mercadopago.com.ar/developers/en/guides/qr-code/stores-pos/)
 

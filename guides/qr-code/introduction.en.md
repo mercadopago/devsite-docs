@@ -46,7 +46,7 @@ In order to receive payments with QR, you can **print it and paste it in a visib
 >
 > Note
 >
-> If your model does not require integration with a point of sale system, you can consult all the information available in [generate QR from the panel](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/integrations-front/).
+> If your model does not require integration with a point of sale system, you can consult all the information available in [generate QR from the panel](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integrations-front/).
 
 ## Main characteristics
 
@@ -74,4 +74,4 @@ The main characteristics are:
 >
 >  To integrate your system, it is important to know your account details and your access credentials.
 >
-> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/general-considerations/pre-requisites/)
+> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)

@@ -48,7 +48,7 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 >
 > Configura as notificações de seus pagamentos.
 >
-> [Que é o código QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/introduction/)
+> [Que é o código QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/introduction/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -56,4 +56,4 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 >
 > Conheça as diferentes opções de receber com QR segundo seu negócio.
 >
-> [Como gerar o QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/general-considerations/integrations/)
+> [Como gerar o QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/integrations/)

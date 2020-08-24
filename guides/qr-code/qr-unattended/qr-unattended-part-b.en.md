@@ -125,7 +125,7 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 >
 > Learn the options to take your integration to the next level.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -134,4 +134,4 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 >
 > Try the most frequent use cases to validate your integration.
 >
-> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/final-steps/integration-test/)
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integration-test/)

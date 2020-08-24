@@ -97,4 +97,4 @@ Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración,
 >
 > Para realizar la integración, primero debes configurar tus sucursales y cajas.
 >
-> [Sucursales y Cajas](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/stores-pos/)
+> [Sucursales y Cajas](https://www.mercadopago.com.ar/developers/es/guides/qr-code/stores-pos/)

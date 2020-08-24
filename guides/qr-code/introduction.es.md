@@ -46,7 +46,7 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 > 
 > Nota
 > 
-> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/integrations-front/). 
+> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel](https://www.mercadopago.com.ar/developers/es/guides/qr-code/integrations-front/). 
 
 ## Características del modelo
 
@@ -74,5 +74,5 @@ Las características principales son:
 >
 > Para integrar tu sistema, es importante conocer los datos de tu cuenta y tus credenciales de acceso.
 >
-> [Requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/general-considerations/pre-requisites/)
+> [Requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/pre-requisites/)
 

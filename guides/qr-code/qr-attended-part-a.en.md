@@ -7,6 +7,7 @@ sites_supported:
 - mlm
 - mlc
 - mlb
+indexable: false
 ---
 
 # QR attended model
@@ -70,4 +71,4 @@ Here's an explanation of how this model works:
 >
 > Learn to integrate this model step by step.
 >
-> [How to Integrate attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-b/)
+> [How to Integrate attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended-part-b/)
