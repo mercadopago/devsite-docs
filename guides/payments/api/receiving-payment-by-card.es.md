@@ -193,7 +193,7 @@ function setPaymentMethod(status, response) {
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener banco emisor
 
-Es importante identificar el banco emisor de la tarjeta al momento de completar los datos  para evitar conflictos entre los distintos emisores y poder disponibilizar la información a los medios de pago que lo requieran.
+Es importante identificar el banco emisor de la tarjeta al momento de completar el formulario para evitar conflictos entre los distintos emisores y poder disponibilizar la información a los medios de pago que lo requieran.
 
 Agrega el siguiente código para obtener el `issuer_id`:
 
@@ -258,10 +258,9 @@ function setInstallments(status, response){
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Crea el token de la tarjeta
 
-Antes de enviar el pago, debes crear el token que contendrá de manera segura toda la información de la tarjeta. Lo debes generar de la siguiente manera:
+Antes de enviar el pago, debes crear el token que contendrá de manera segura toda la información de la tarjeta. Lo tienes que generar de la siguiente manera:
 
 ```javascript
-doSubmit = false;
 doSubmit = false;
 document.getElementById('paymentForm').addEventListener('submit', getCardToken);
 function getCardToken(event){
@@ -513,14 +512,14 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 > Descarga un ejemplo completo de Checkout API
 ------------
 >
-> Te dejamos ejemplos completos de integración en GitHub para [PHP](https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment) o [NodeJS](https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment) para que puedas descargar al instante.
+> Te dejamos <a href="https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment" target="_blank">ejemplos completos de integración</a> en GitHub para PHP o NodeJS para que puedas descargar al instante.
 
 <span></span>
 > GIT
 >
 > Descarga un ejemplo del formulario
 >
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago en GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/) para que puedas descargar.
+> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un <a href="https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment/client" target="_blank">ejemplo completo del formulario de pago</a> en GitHub para que puedas descargar.
 
 ---
 ### Próximos pasos

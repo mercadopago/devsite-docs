@@ -180,11 +180,11 @@ function setPaymentMethod(status, response) {
 
 ```
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get issuing bank
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain issuer
 
-It is important to identify the card issuing bank at the moment to complete the data to avoid conflicts between the different issuers and to be able to make the information available to payment methods that require it.
+It is important to identify the card's issuing bank when completing the form to avoid conflicts between different issuers and to be able to provide the relevant information to the payment methods that require it.
 
-Add the following code to get the `issuer_id`:
+Add the following code to obtain the `issuer_id`:
 
 ```javascript
 function getIssuers(paymentMethodId) {
@@ -247,10 +247,9 @@ function setInstallments(status, response){
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Create card token
 
-Before payment submission, you should create a token containing all card information securely. You should generate it as follows:
+Before payment submission, you must create a token containing all card information securely. You should generate it as follows:
 
 ```javascript
-doSubmit = false;
 doSubmit = false;
 document.getElementById('paymentForm').addEventListener('submit', getCardToken);
 function getCardToken(event){
@@ -497,14 +496,14 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Download Sample Checkout API
 >
-> Use our complete integration examples on GitHub in [PHP](https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment) or [NodeJS](https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment) to download instantly.
+> Use our <a href="https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment" target="_blank">complete integration examples</a> on GitHub in PHP or NodeJS to download instantly.
 
 <span></span>
 > GIT
 >
 > Download Sample Form
 >
-> If you want to deploy other technology in your server, you can [download a complete payment form sample from GitHub](https://github.com/MercadoPagoDevelopers/api-frontend-sample/).
+> If you want to deploy other technology in your server, you can <a href="https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment/client" target="_blank">download a complete payment form sample</a> from GitHub.
 
 ---
 ### Next steps
