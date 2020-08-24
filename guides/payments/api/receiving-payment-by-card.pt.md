@@ -230,7 +230,7 @@ function setIssuers(status, response) {
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
 
-> Se você não quiser oferecer quotas, ignore este passo.
+> Se você não quiser oferecer parcelamento, ignore esse passo.
 
 Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
 
@@ -290,7 +290,7 @@ function setCardTokenAndPay(status, response) {
 };
 ```
 
-O método `createToken` devolverá um `card_token` com a representação segura do cartão. O segundo campo do método `createToken` é a função de `callback` que processará a resposta (nesse caso usamos a função `setCardTokenAndPay`). Então tomaremos o ID da resposta e guardaremos em um atributo oculto que chamaremos `token`, para em seguida enviar o formulário aos seus servidores.
+O método `createToken` devolverá um `card_token` com a representação segura do cartão. O segundo campo do método `createToken` é a função de `callback` que processará a resposta (nesse caso usamos a função `setCardTokenAndPay`). Então tomaremos o ID da resposta e o guardaremos em um atributo oculto que chamaremos `token`, para em seguida enviar o formulário aos seus servidores.
 
 > WARNING
 >
@@ -308,9 +308,9 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos.
 
-Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/process_payment`, que foi definido no atributo `action` do formulário, para receber aí todos os dados assim que realizar a ação `submit`.
+Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/process_payment`, que foi definido no atributo `action` do formulário, para receber nele, todos os dados assim que realizar a ação `submit`.
 
-Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos a enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
 Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]) e que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/previous-requirements/#bookmark__instale_o_sdk_do_mercado_pago).
 
