@@ -9,7 +9,7 @@ sites_supported:
 - mlb
 ---
 
-# Previous requirements to integrate 
+# Previous requirements to integrate
 
 ## Glossary
 

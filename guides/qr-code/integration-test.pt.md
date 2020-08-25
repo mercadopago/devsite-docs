@@ -28,10 +28,18 @@ Comprador | É a **conta de testes que você utiliza para comprovar o processo d
 
 ### Detalhes do pagador
 
-| Simulação de pagamento | Nome do titular | Identidade |
-| --- | --- | --- |
-| Pagamento aprovado | APRO | 123456789 |
-| Pagamento rejeitado | OTHE | 123456789 |
+Simulação de pagamento | Nome do titular | Identidade
+----------------- | -------------------- | --------------
+Pagamento aprovado | APRO | 123456789
+Pagamento rejeitado | OTHE | 123456789
+
+### Dados do cartão
+
+Cartão | Número | CVV | Data de Validade
+------------ | ------------------------ | ------------ | -----------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4170 0688 1010 8020 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
 
 ### Dados do cartão
 
