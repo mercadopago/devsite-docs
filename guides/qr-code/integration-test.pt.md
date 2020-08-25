@@ -59,9 +59,9 @@ Para testar o modelo atendido, gere um pedido com as [credenciais]([FAKER][CREDE
 
 
 ### 2. Realize um pagamento com seu usuário comprador
-  - A. Inicie sessão no app de Mercado Pago com seu usuário de teste comprador. 
-  - B. Clique em Pagar com QR e escaneie o QR do ponto de venda. 
-  - C. Escolha um cartão já carregado ou preencha os dados com um cartão novo e faça o pagamento. 
+A) Inicie sessão no app de Mercado Pago com seu usuário de teste comprador. 
+A) Clique em Pagar com QR e escaneie o QR do ponto de venda. 
+A) Escolha um cartão já carregado ou preencha os dados com um cartão novo e faça o pagamento. 
 
 ### 3. Receba notificações do pedido
 

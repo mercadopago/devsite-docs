@@ -61,9 +61,9 @@ To test attended model, generate an order with the test user [credentials]([FAKE
 
 ### 2. Make a payment with your buyer user.
 
-- A. Log in the Mercado Pago app with your buyer test user. 
-- B. Click on Pay with QR and scan the QR code from the Point of Sale. 
-- C. Choose a saved card or complete the data with a new one and pay. 
+A) Log in the Mercado Pago app with your buyer test user. 
+A) Click on Pay with QR and scan the QR code from the Point of Sale. 
+A) Choose a saved card or complete the data with a new one and pay. 
 
 ### 3. Receive order notifications
 
