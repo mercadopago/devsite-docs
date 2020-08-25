@@ -420,14 +420,14 @@ You can accept payments exclusively from Mercado Pago registered users, with car
 "purpose": "wallet_purchase"
 ```
 
-Al agregarlo, tu preferencia quedaría de la siguiente manera:
+When you add it, your preference would be as follows:
 
 ```json
 {
     "purpose": "wallet_purchase",
     "items": [
         {
-            "title": "Mi producto",
+            "title": "My product",
             "quantity": 1,
             "unit_price": 75.76
         }

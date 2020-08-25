@@ -226,7 +226,7 @@ curl -X POST \
 
 > NOTE
 >
-> Nota
+> Note
 >
 > If you want to accept payments only from registered users, with cards and money in Mercado Pago account, review [this section](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_accept_payments_from_registered_users_only) for more information.
 

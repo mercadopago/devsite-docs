@@ -453,7 +453,7 @@ Ao adicioná-lo, sua preferência ficaria da seguinte forma:
     "purpose": "wallet_purchase",
     "items": [
         {
-            "title": "Mi producto",
+            "title": "Meu produto",
             "quantity": 1,
             "unit_price": 75.76
         }
