@@ -28,13 +28,15 @@ Buyer | **Test account you use to test the buying process**. You must access Mer
 
 ## Test cards
 
-Payer details
+### Payer details
+
 Payment simulation | Name of the holder | Identification document
 ----------------- | -------------------- | --------------
 Payment approved | APRO | 123456789
 Payment rejected | OTHE | 123456789
 
-Card data
+### Card data
+
 Card | Number | CVV | Expiration date
 ------------ | ------------------------ | ------------ | --------------
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25

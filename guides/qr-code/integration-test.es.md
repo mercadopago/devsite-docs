@@ -30,13 +30,15 @@ Comprador | Es la **cuenta de pruebas que usas para probar el proceso de compra*
 
 ## Tarjetas de prueba 
 
-Datos del pagador
+### Datos del pagador
+
 Simulación de pago | Nombre del titular | Documento de identidad
 ----------------- | -------------------- | --------------
 Pago aprobado | APRO | 123456789
 Pago rechazado | OTHE | 123456789
 
-Datos de la tarjeta
+### Datos de la tarjeta
+
 Tarjeta | Número | CVV | Fecha de vencimiento
 ------------ | ---------------- | ------------ | -------------------- |
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25
