@@ -323,19 +323,29 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
     MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
 
     $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
-    $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-    $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
-    $payment->installments = 1;
-    $payment->payment_method_id = "visa";
-    $payment->payer = array(
-    "email" => "[FAKER][INTERNET][FREE_EMAIL]"
+    $payment->transaction_amount = (float)$_POST['transactionAmount'];
+    $payment->token = $_POST['token'];
+    $payment->description = $_POST['description'];
+    $payment->installments = (int)$_POST['installments'];
+    $payment->payment_method_id = $_POST['paymentMethodId'];
+    $payment->issuer_id = (int)$_POST['issuer'];
+
+    $payer = new MercadoPago\Payer();
+    $payer->email = $_POST['email'];
+    $payer->identification = array( 
+        "type" => $_POST['docType'],
+        "number" => $_POST['docNumber']
     );
+    $payment->payer = $payer;
 
     $payment->save();
 
-
-    echo $payment->status;
+    $response = array(
+        'status' => $payment->status,
+        'status_detail' => $payment->status_detail,
+        'id' => $payment->id
+    );
+    echo json_encode($response);
 
 ?>
 ```
@@ -347,22 +357,32 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
 var payment_data = {
-  transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
-  token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  installments: 1,
-  payment_method_id: 'visa',
+  transaction_amount: Number(req.body.transactionAmount),
+  token: req.body.token,
+  description: req.body.description,
+  installments: Number(req.body.installments),
+  payment_method_id: req.body.paymentMethodId,
+  issuer_id: req.body.issuer,
   payer: {
-    email: 'test@test.com'
+    email: req.body.email,
+    identification: {
+      type: req.body.docType,
+      number: req.body.docNumber
+    }
   }
 };
 
-mercadopago.payment.save(payment_data).then(function (data) {
-      console.log(data);
-      res.send(data);
-    }).catch(function (error) {
-      console.log(error);
+mercadopago.payment.save(payment_data)
+  .then(function(response) {
+    res.status(response.status).json({
+      status: response.body.status,
+      status_detail: response.body.status_detail,
+      id: response.body.id
     });
+  })
+  .catch(function(error) {
+    res.status(response.status).send(error);
+  });
 ```
 ```java
 ===
@@ -372,16 +392,23 @@ Puedes encontrar el estado del pago en el valor _status_.
 MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
 
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
-       .setToken("ff8080814c11e237014c1ff593b57b4d")
-       .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
-       .setInstallments(1)
-       .setPaymentMethodId("visa")
-       .setPayer(new Payer()
-         .setEmail("test@test.com"));
+payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
+       .setToken(request.getParameter("token"))
+       .setDescription(request.getParameter("description"))
+       .setInstallments(Integer.valueOf(request.getParameter("installments")))
+       .setPaymentMethodId(request.getParameter("paymentMethodId"));
+
+Identification identification = new Identification();
+identification.setType(request.getParameter("docType"))
+              .setNumber(request.getParameter("docNumber"));
+
+Payer payer = new Payer();
+payer.setEmail(request.getParameter("email"))
+     .setIdentification(identification);
+
+payment.setPayer(payer);
 
 payment.save();
-
 
 System.out.println(payment.getStatus());
 
@@ -394,16 +421,17 @@ require 'mercadopago'
 MercadoPago::SDK.access_token = "YOUR_ACCESS_TOKEN";
 
 payment = MercadoPago::Payment.new()
-payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
-payment.installments = 1
-payment.payment_method_id = "visa"
+payment.transaction_amount = request.body.transactionAmount
+payment.token = request.body.token
+payment.description = request.body.description
+payment.installments = request.body.installments
+payment.payment_method_id = request.body.paymentMethodId
 payment.payer = {
-  email: "test@test.com"
+  email: request.body.email
 }
 
 payment.save()
+
 ```
 ```csharp
 ===
@@ -417,18 +445,21 @@ MercadoPago.SDK.SetAccessToken("YOUR_ACCESS_TOKEN");
 
 Payment payment = new Payment()
 {
-    TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
-    Token = "ff8080814c11e237014c1ff593b57b4d",
-    Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
-    Installments = 1,
-    PaymentMethodId = "visa",
+    TransactionAmount = float.Parse(Request["transactionAmount"]),
+    Token = Request["token"],
+    Description = Request["description"],
+    Installments = int.Parse(Request["installments"]),
+    PaymentMethodId = Request["paymentMethodId"],
     Payer = new Payer(){
-        Email = "test@test.com"
+        Email = Request["email"],
+        Identification = new Identification(){
+          Type = Request["docType"],
+          Number = Request["docNumber]
+        }
     }
 };
 
 payment.Save();
-
 
 console.log(payment.Status);
 
@@ -512,14 +543,14 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 > Descarga un ejemplo completo de Checkout API
 ------------
 >
-> Te dejamos <a href="https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment" target="_blank">ejemplos completos de integración</a> en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">ejemplos completos de integración</a> en GitHub para PHP o NodeJS para que puedas descargar al instante.
 
 <span></span>
 > GIT
 >
 > Descarga un ejemplo del formulario
 >
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un <a href="https://github.com/mercadolibre/fury_dx-samples/tree/feature/files-refactor/card-payment/client" target="_blank">ejemplo completo del formulario de pago</a> en GitHub para que puedas descargar.
+> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un <a href="http://github.com/mercadopago/card-payment-sample/client" target="_blank">ejemplo completo del formulario de pago</a> en GitHub para que puedas descargar.
 
 ---
 ### Próximos pasos
