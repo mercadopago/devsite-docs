@@ -54,9 +54,9 @@ Aquí podras encontrar mas [tarjetas de prueba](https://www.mercadopago.com.ar/d
 Para probar el modelo atendido, genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
 
 ### 2. Realiza un pago con tu usuario comprador
-A) Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.
-A) Haz clic en Pagar con QR y escanea el QR del punto de venta.
-A) Elige una tarjeta ya almacenada o completa los datos con una nueva y haz el pago.
+- A. Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.
+- B. Haz clic en Pagar con QR y escanea el QR del punto de venta.
+- C. Elige una tarjeta ya almacenada o completa los datos con una nueva y haz el pago.
 
 ### 3. Recibe notificaciones de la orden
 
@@ -78,7 +78,7 @@ Caso | Resultado esperado | Observaciones
 
 Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]). 
 
-Luego Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta y verificar que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
+Luego, Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta y verificar que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
 > WARNING
 >

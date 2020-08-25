@@ -33,6 +33,7 @@ Here's an explanation of how this model works:
 >![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.en.png)
 
 <span></span>
+
 > NOTE
 >
 > Note

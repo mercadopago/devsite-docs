@@ -32,6 +32,7 @@ Te explicamos cómo funciona el modelo atendido:
 >![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
 
 <span></span>
+
 > NOTE
 >
 > Nota
