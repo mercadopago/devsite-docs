@@ -18,7 +18,7 @@ Test users allow you to try the integration of your system with Mercado Pago wit
 
 To carry out the tests, you need to have at least two users: a buyer and a seller.
 
-> If you did not generate your users at this point, you can do so in the [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)
+> If you did not generate your users at this point, you can do so in the [previous requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/).
 
 
 Test user types | Description
@@ -39,17 +39,9 @@ Payment rejected | OTHE | 123456789
 
 Card | Number | CVV | Expiration date
 ------------ | ------------------------ | ------------ | --------------
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+MasterCard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
-
-### Card data
-
-| Card | Number | CVV | Expiration date |
-| --- | --- | --- | --- |
-| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
-| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
 
 Here you can find more [test cards](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards/).
 
@@ -57,7 +49,7 @@ Here you can find more [test cards](https://www.mercadopago.com.ar/developers/en
 
 ### 1. With your seller user, assign an order to a Point of Sale. 
 
-To test attended model, generate an order with the test user [credentials]([FAKER][CREDENTIALS][URL]) you want as seller and send an order to the QR code previously created
+To test attended model, generate an order with the test user [credentials]([FAKER][CREDENTIALS][URL]) you want as seller and send an order to the QR code previously created.
 
 ### 2. Make a payment with your buyer user.
 

@@ -16,9 +16,9 @@ sites_supported:
 
 Los usuarios de prueba te permiten probar la integración de tu sistema con Mercado Pago sin usar dinero real. 
 
-> Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor. 
+Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor. 
 
-Si no generaste tus usuarios en este punto, puedes hacerlo en los [requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/pre-requisites/)
+> Si no generaste tus usuarios en este punto, puedes hacerlo en los [requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/pre-requisites/).
 
 
 Tipos de usuarios | Descripción
@@ -41,7 +41,7 @@ Pago rechazado | OTHE | 123456789
 
 Tarjeta | Número | CVV | Fecha de vencimiento
 ------------ | ---------------- | ------------ | -------------------- |
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+MasterCard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
 

@@ -37,17 +37,9 @@ Pagamento rejeitado | OTHE | 123456789
 
 Cartão | Número | CVV | Data de Validade
 ------------ | ------------------------ | ------------ | -----------------
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+MasterCard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
-
-### Dados do cartão
-
-| Cartão | Número | CVV | Data de Validade |
-| --- | --- | --- | --- |
-| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
-| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
 
 Aqui você encontra mais [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards/).
 
@@ -79,7 +71,7 @@ Caso | Resultado esperado | Observações
 **Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es).
 **Cancelar ordem**. O usuário se arrepende e decide pagar em dinheiro.  | O pedido é eliminado e, portanto, ao escanear o QR somente é mostrada a tela de espera. | Remover a ordem de pagamento do caixa. 
 
-## Quero ir para Produção
+## Quero ir para produção
 
 Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). 
 

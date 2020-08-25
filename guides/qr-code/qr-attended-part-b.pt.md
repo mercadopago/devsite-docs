@@ -18,7 +18,8 @@ Para receber por meio de um código QR modelo atendido, deverá criar um pedido 
 Explicamos como funciona o modelo atendido:
 
 >![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/qr-user-flow.pt.png)
----
+
+<span></span>
 
 1. O ponto de venda registra um pedido (1a) e cria um pedido atribuído a uma caixa (1b). Neste momento, o pedido está disponível para leitura (2).
 2. Quando o cliente escaneia o QR (3) com o pedido e faz o pagamento (5), uma notificação IPN (4a e 6b) é recebida no servidor do vendedor. Com estes dados obtém-se o estado da encomenda (7a), para validar se está encerrada ou ainda em aberto, com pagamento pendente.
@@ -53,9 +54,9 @@ Pode obter mais informações em [Referências do API](https://www.mercadopago.c
 Assim que o pedido for criado, ele estará disponível para ser **digitalizado e pago**.
 
 > NOTE
-> 
-> OBS.
-> 
+>
+> Nota
+>
 > Leve em consideração que se não fez previamente o carregamento do nome de seu negócio ou a logomarca em [sua conta de Mercado Pago](https://www.mercadopago.com.br/settings/account), o título e a imagem do pedido que o cliente veja no app serão as do item carregado. 
 
 ## Remover um pedido

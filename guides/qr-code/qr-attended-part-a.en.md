@@ -30,7 +30,7 @@ The main characteristics are:
 
 Here's an explanation of how this model works:
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.en.png)
+> ![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.en.png)
 
 <span></span>
 
@@ -38,7 +38,7 @@ Here's an explanation of how this model works:
 >
 > Note
 >
-> `pos_id`  is an unique identifier of a POS inside Mercado Pago. You’ll get it at the same moment you create a POS and it’ll have an associated QR.
+> `pos_id` is an unique identifier of a POS inside Mercado Pago. You’ll get it at the same moment you create a POS and it’ll have an associated QR.
 
 1. (A) Point of Sale (POS) logs the order and sends the data to merchant server.<br/>
 (B) Merchant server sends order to Mercado Pago server with a `pos_id`. 
