@@ -17,7 +17,7 @@ As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor d
 
 > WARNING
 > 
-> OBS.
+> Nota
 > 
 > Leve em consideração que para pagamentos presenciais somente poderá realizar devoluções, mas não cancelamentos. 
 

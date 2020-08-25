@@ -31,7 +31,6 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 
 To continue, you must:
 
-<br>
 ### 1. Access to Mercado Pago or Mercado Libre account
 
 To start the integration, you must have a Mercado Pago or Mercado Libre account. 
