@@ -76,7 +76,7 @@ Você pode obter mais informações nas [Referências de API](https://www.mercad
 
 > WARNING
 >
-> IMPORTANTE
+> Importante
 >
 > 1. Você deve saber o `country_id` do país onde você está em [nossa API de países](https://api.mercadolibre.com/countries).
 > 2. O `state_name` deve corresponder aos **estados** de acordo com o país em questão (https://api.mercadolibre.com/countries/$country_id).

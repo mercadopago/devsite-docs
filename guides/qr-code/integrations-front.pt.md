@@ -37,10 +37,10 @@ Primeiramente, você deve [criar um link de pagamento](https://www.mercadopago.c
 
 ## Fique sabendo sobre suas cobranças recebidas
 
-Você pode consultar suas vendas na relação das atividades de [sua conta de Mercado Pago](https://www.mercadopago.com.br/activities), ou [integrar notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn) em seu sistema.
+Você pode consultar suas vendas na relação das atividades de [sua conta de Mercado Pago](https://www.mercadopago.com.br/activities) ou [integrar notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn) em seu sistema.
 
+---
 ### Próximos passos
-
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >

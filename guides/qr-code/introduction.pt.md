@@ -41,8 +41,8 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 
 
 > ![Flujo QR](/images/qr_flujo.pt.png)
----
 
+<span></span>
 > NOTA
 >
 > Nota

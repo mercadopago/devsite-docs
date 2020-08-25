@@ -40,8 +40,8 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 In order to receive payments with QR, you can **print it and paste it in a visible place or display it on your phone**.
 
 > ![Flujo QR](/images/qr_flujo.en.png)
----
 
+<span></span>
 > NOTE
 >
 > Note

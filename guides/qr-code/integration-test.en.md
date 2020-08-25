@@ -18,7 +18,7 @@ Test users allow you to try the integration of your system with Mercado Pago wit
 
 To carry out the tests, you need to have at least two users: a buyer and a seller.
 
-If you did not generate your users at this point, you can do so in the [prerequisites](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)
+> If you did not generate your users at this point, you can do so in the [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)
 
 
 Test user types | Description
@@ -28,24 +28,22 @@ Buyer | **Test account you use to test the buying process**. You must access Mer
 
 ## Test cards
 
-Payer details
-Payment simulation | Name of the holder | Identification document
------------------ | -------------------- | --------------
-Payment approved | APRO | 123456789
-Payment rejected | OTHE | 123456789
+### Payer details
 
-Card data
-Card | Number | CVV | Expiration date
------------- | ------------------------ | ------------ | --------------
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4170 0688 1010 8020 | 123 | 11/25
-American Express | 3711 8030 3257 522 | 1234 | 11/25
+| Payment simulation | Name of the holder | Identification document |
+| --- | --- | --- |
+| Payment approved | APRO | 123456789 |
+| Payment rejected | OTHE | 123456789 |
 
-> NOTE
-> 
-> Note
-> 
-> Here you can find more [test cards](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards/).
+### Card data
+
+| Card | Number | CVV | Expiration date |
+| --- | --- | --- | --- |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
+| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
+
+Here you can find more [test cards](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards/).
 
 ## Test payment process
 
@@ -77,7 +75,9 @@ Event | Expected output | Comments
 
 ## Production mode
 
-When your app is **ready and working in test mode**, and you want to start processing real payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]). Afterwards, Mercado Pago will be able to audit your website, app or Point of Sale software, checking if all rules are being followed. If necessary, an advisor will contact you to discuss how to fix your integration. 
+When your app is **ready and working in test mode**, and you want to start processing real payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]). 
+
+Afterwards, Mercado Pago will be able to audit your website, app or Point of Sale software, checking if all rules are being followed. If necessary, an advisor will contact you to discuss how to fix your integration. 
 
 > WARNING
 > 

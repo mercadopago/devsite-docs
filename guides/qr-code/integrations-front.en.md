@@ -37,11 +37,11 @@ First, you must create a [Pay Link](https://www.mercadopago.com.ar/tools/create)
 
 ## Be aware of your received payments
 
-You can check your sales in the activity list in your [Mercado Pago account](https://www.mercadopago.com.ar/activities), or [integrate notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) in your system.
+You can check your sales in the activity list in your [Mercado Pago account](https://www.mercadopago.com.ar/activities) or [integrate notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) in your system.
 
+---
 ### Next Steps
 
-  
 > LEFT_BUTTON_RECOMMENDED_EN
 >
 > ¿What’s a QR code?

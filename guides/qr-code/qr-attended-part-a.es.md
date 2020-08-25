@@ -31,12 +31,11 @@ Te explicamos cómo funciona el modelo atendido:
 
 >![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
 
----
-
+<span></span>
 > NOTE
-> 
+>
 > Nota
-> 
+>
 > El `pos_id`  es el identificador unívoco de la caja dentro de Mercado Pago. Se obtiene al momento de crear un caja y tiene un QR asociado.
 
 1. (A) El punto de venta registra la orden y le envía sus datos al servidor del vendedor.<br/>

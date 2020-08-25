@@ -16,7 +16,7 @@ sites_supported:
 
 Los usuarios de prueba te permiten probar la integración de tu sistema con Mercado Pago sin usar dinero real. 
 
-Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor. 
+> Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor. 
 
 Si no generaste tus usuarios en este punto, puedes hacerlo en los [requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/qr-code/pre-requisites/)
 
@@ -30,24 +30,22 @@ Comprador | Es la **cuenta de pruebas que usas para probar el proceso de compra*
 
 ## Tarjetas de prueba 
 
-Datos del pagador
-Simulación de pago | Nombre del titular | Documento de identidad
------------------ | -------------------- | --------------
-Pago aprobado | APRO | 123456789
-Pago rechazado | OTHE | 123456789
+### Datos del pagador
 
-Datos de la tarjeta
-Tarjeta | Número | CVV | Fecha de vencimiento
------------- | ---------------- | ------------ | -------------------- |
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4170 0688 1010 8020 | 123 | 11/25
-American Express | 3711 8030 3257 522 | 1234 | 11/25
+|Simulación de pago | Nombre del titular | Documento de identidad |
+| --- | --- | --- |
+| Pago aprobado | APRO | 123456789 |
+| Pago rechazado | OTHE | 123456789 |
 
-> NOTE
-> 
-> Nota
-> 
-> Aquí podras encontrar mas [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards/). 
+### Datos de la tarjeta
+
+| Tarjeta | Número | CVV | Fecha de vencimiento |
+| --- | --- | --- | --- |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
+| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
+
+Aquí podras encontrar mas [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards/). 
 
 ## Prueba el flujo de pago
 
@@ -56,9 +54,9 @@ American Express | 3711 8030 3257 522 | 1234 | 11/25
 Para probar el modelo atendido, genera una orden con las [credenciales]([FAKER][CREDENTIALS][URL]) del usuario de pruebas que quieras usar como vendedor y envía una orden al QR previamente creado.
 
 ### 2. Realiza un pago con tu usuario comprador
-  - A. Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.
-  - B. Haz clic en Pagar con QR y escanea el QR del punto de venta.
-  - C. Elige una tarjeta ya almacenada o completa los datos con una nueva y haz el pago.
+A) Inicia sesión en la app de Mercado Pago con tu usuario de prueba comprador.
+A) Haz clic en Pagar con QR y escanea el QR del punto de venta.
+A) Elige una tarjeta ya almacenada o completa los datos con una nueva y haz el pago.
 
 ### 3. Recibe notificaciones de la orden
 
@@ -78,7 +76,9 @@ Caso | Resultado esperado | Observaciones
 
 ## Quiero ir a producción
 
-Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]). Más tarde Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta, verificando que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
+Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]). 
+
+Luego Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta y verificar que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
 > WARNING
 >

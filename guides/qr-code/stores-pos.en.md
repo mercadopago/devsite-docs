@@ -76,7 +76,7 @@ Learn more with our [API reference](https://www.mercadopago.com.ar/developers/en
 
 > WARNING
 >
-> IMPORTANT
+> Important
 >
 > 1. You must know your `country_id` of the country where you are in [our API of countries](https://api.mercadolibre.com/countries).
 > 2. The `state_name` must match the **states** according to the country in question (https://api.mercadolibre.com/countries/$country_id).

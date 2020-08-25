@@ -38,10 +38,10 @@ Primero, debes [crear un link de pago](https://www.mercadopago.com.ar/tools/crea
 
 ## Entérate de tus cobros recibidos
 
-Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities), o [integrar notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) en tu sistema.
+Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) o [integrar notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) en tu sistema.
 
+---
 ### Próximos pasos
-
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >

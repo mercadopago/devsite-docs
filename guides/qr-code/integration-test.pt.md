@@ -17,7 +17,7 @@ Os usuários de teste lhe permitem checar a integração de seu sistema com Merc
 
 Pra realizar os testes, é necessário ter pelo menos dois usuários: um comprador e um vendedor.
 
-Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/pre-requisites/).
+> Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/pre-requisites/).
 
 Tipos de usuários | Descrição
 ----------------- | -------------------------------------
@@ -26,24 +26,22 @@ Comprador | É a **conta de testes que você utiliza para comprovar o processo d
 
 ## Cartões de teste
 
-Detalhes do pagador
-Simulação de pagamento | Nome do titular | Identidade
------------------ | -------------------- | --------------
-Pagamento aprovado | APRO | 123456789
-Pagamento rejeitado | OTHE | 123456789
+### Detalhes do pagador
 
-Dados do cartão
-Cartão | Número | CVV | Data de Validade
------------- | ------------------------ | ------------ | -----------------
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4170 0688 1010 8020 | 123 | 11/25
-American Express | 3711 8030 3257 522 | 1234 | 11/25
+| Simulação de pagamento | Nome do titular | Identidade |
+| --- | --- | --- |
+| Pagamento aprovado | APRO | 123456789 |
+| Pagamento rejeitado | OTHE | 123456789 |
 
-> NOTE
-> 
-> Nota
-> 
-> Aqui você encontra mais [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards/).
+### Dados do cartão
+
+| Cartão | Número | CVV | Data de Validade |
+| --- | --- | --- | --- |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
+| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
+
+Aqui você encontra mais [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards/).
 
 ## Teste o fluxo de pagamento
 
@@ -75,7 +73,9 @@ Caso | Resultado esperado | Observações
 
 ## Quero ir para Produção
 
-Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). Mais tarde, Mercado Pago poderá auditar seu website, app ou Software de Ponto de Venda, verificando que as regras detalhadas acima sejam atendidas. No caso contrário, um assessor entrará em contato com você para discutir se tem coisas para corrigir em sua integração. 
+Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). 
+
+Posteriormente, Mercado Pago poderá auditar seu website, app ou Software de Ponto de Venda, verificando que as regras detalhadas acima sejam atendidas. No caso contrário, um assessor entrará em contato com você para discutir se tem coisas para corrigir em sua integração. 
 
 > WARNING
 > 

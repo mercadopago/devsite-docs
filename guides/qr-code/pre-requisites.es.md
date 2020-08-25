@@ -31,6 +31,7 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 Para continuar, es necesario realizar los siguientes pasos:
 
+<br>
 **1. Acceso a cuenta de Mercado Pago o Mercado Libre**
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
@@ -89,7 +90,6 @@ Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración,
 
 ---
 ### Próximos pasos
-
 
 > LEFT_BUTTON_REQUIRED_ES
 >
