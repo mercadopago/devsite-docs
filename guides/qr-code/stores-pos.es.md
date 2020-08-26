@@ -15,16 +15,12 @@ sites_supported:
 
 Las **sucursales** y **cajas** son importantes para recibir pagos presenciales con QR. Te permiten crear tu tienda y asignar sus puntos de venta.
 
-| Término       |  Descripción                                                 |
-| ------------- | ------------------------------------------------------------ |
-| Sucursal      | Es una **tienda física** en la que tus clientes pueden adquirir tus productos o servicios. Puedes tener varias sucursales en una misma cuenta. |
-| Caja           | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
-
 > ![Cajas y Sucursales](/images/stores_pos.es.png) 
 
 
-
 ## Sucursales
+
+Es una **tienda física** en la que tus clientes pueden adquirir tus productos o servicios. Puedes tener varias sucursales en una misma cuenta.
 
 ### ¿Cuáles son los beneficios de crear sucursales?
 
@@ -36,13 +32,13 @@ Los beneficios de crear sucursales son:
 
 ### ¿Cómo crear una sucursal?
 
-Para crear un sucursal tienes que declarar su nombre, horarios de trabajo, ubicación y alguna referencia que lo identifique. 
+Para crear una sucursal tienes que declarar su nombre, horarios de trabajo, ubicación y alguna referencia que lo identifique. 
 
 Ejecuta el siguiente código para generarla:
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/users/$COLLECTOR_ID/stores?access_token=PROD_ACCESS_TOKEN -d
+curl -X POST https://api.mercadopago.com/users/$USER_ID/stores?access_token=PROD_ACCESS_TOKEN -d
 {  
    "name":"Sucursal Instore",
    "business_hours":{  
@@ -79,15 +75,26 @@ curl -X POST https://api.mercadopago.com/users/$COLLECTOR_ID/stores?access_token
 
 Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/stores/_users_user_id_stores/post/).
 
+> WARNING
+> 
+> Importante
+> 
+> 1. Debes conocer tu `country_id` del país donde te encuentres en [nuestra API de países](https://api.mercadolibre.com/countries).
+> 2. El `state_name` debe coincidir con los **estados** según el país en cuestión (https://api.mercadolibre.com/countries/$country_id).
+> 3. El `city_name` debe coincidir con las **ciudades** según sus estados. (https://api.mercadolibre.com/states/$state_id).
 
 ## Cajas
 
+Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco.
+
+### ¿Cómo crear una caja?
+
 Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguiente:
 
-| Término       |  Descripción                                                 |
-| ------------- | ------------------------------------------------------------ |
+| Término       |  Descripción                     |
+| ------------- | ---------------------------------------------------- |
 | `EXTERNAL_STORE_ID`     | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
-| `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. |
+| `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. También lo puedes encontrar como `EXTERNAL_POS_ID`.|
 
 
 [[[
@@ -108,7 +115,7 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 
 
-
+---
 ### Próximos pasos
 
 
@@ -116,7 +123,7 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Integrar QR modelo atendido
 >
-> Si en tu proceso de venta, es necesario que participe un operador, revisa este modelo!
+> Conoce paso a paso cómo integrar este modelo.
 >
-> [Integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-a/)
+> [Integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended-part-b/)
 
