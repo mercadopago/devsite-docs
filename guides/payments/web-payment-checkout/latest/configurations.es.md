@@ -18,6 +18,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 
 ```json
 {
+    "purpose": "wallet_purchase",
     "items": [
         {
             "id": "item-ID-1234",
@@ -71,8 +72,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
-    "expiration_date_to": "2016-02-28T12:00:00.000-04:00",
-    "purpose": "wallet_purchase"
+    "expiration_date_to": "2016-02-28T12:00:00.000-04:00"
 }
 ```
 
