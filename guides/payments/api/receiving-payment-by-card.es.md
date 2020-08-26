@@ -1,8 +1,8 @@
 ----[mlb]----
-# Integra el Checkout Transparente para pagos con tarjetas
+# Integra Checkout Transparente para pagos con tarjetas
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-# Integra el Checkout API para pagos con tarjetas
+# Integra Checkout API para pagos con tarjetas
 ------------
 
 ----[mlb]----

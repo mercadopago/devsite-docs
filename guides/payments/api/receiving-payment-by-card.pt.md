@@ -1,8 +1,8 @@
 ----[mlb]----
-# Integre o Checkout Transparente para pagamentos com cartão
+# Integre Checkout Transparente para pagamentos com cartão
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-# Integre o Checkout API para pagamentos com cartão
+# Integre Checkout API para pagamentos com cartão
 ------------
 
 ----[mlb]----
