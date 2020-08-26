@@ -6,6 +6,21 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## August 2020
 
+### August 27th
+
+> CHANGELOG
+>
+> Change in Payment ID length
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+Our payment IDs will now be 11 digits long. Our APIs and SDKs operate on data type `long` so this change should not impact your integration with Mercado Pago.
+If you have any doubts, we recommend reviewing how you manage and store our Payment ID in your integration in order to avoid any inconvenience.
+
+For further information, visit our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/).
+
 ### August 13th
 
 > CHANGELOG

@@ -6,6 +6,21 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Agosto 2020
 
+### 27 de agosto
+
+> CHANGELOG
+>
+> Alteração no comprimento do Payment ID
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Os IDs de pagamento passarão de 10 para 11 dígitos. Nossas APIs e SDKs operam com um tipo de dado `long`, portanto não haverá impacto na operação com o Mercado Pago. 
+Caso tenha dúvidas, recomendamos que revise a administração e armazenamento do nosso Payment ID na sua integração para evitar qualquer inconveniente. 
+
+Veja todas as informações em [Referência API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post/).
+
 ### 13 de agosto
 
 > CHANGELOG
