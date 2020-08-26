@@ -558,7 +558,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Formulario de pago
 >
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un <a href="http://github.com/mercadopago/card-payment-sample/client" target="_blank">ejemplo completo del formulario de pago</a> en GitHub para que puedas descargar.
+> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un <a href="https://github.com/mercadopago/card-payment-sample/tree/master/client" target="_blank">ejemplo completo del formulario de pago</a> en GitHub para que puedas descargar.
 
 ---
 ### Próximos pasos

@@ -542,7 +542,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Payment form
 >
-> If you want to deploy other technology in your server, you can <a href="http://github.com/mercadopago/card-payment-sample/client" target="_blank">download a complete payment form sample</a> from GitHub.
+> If you want to deploy other technology in your server, you can <a href="https://github.com/mercadopago/card-payment-sample/tree/master/client" target="_blank">download a complete payment form sample</a> from GitHub.
 
 ---
 ### Next steps
