@@ -528,18 +528,19 @@ We recommend using [error response handling](https://www.mercadopago[FAKER][URL]
 Finally, you always need to be notified of new payments and status updates.  For example, if they were approved, rejected, or are pending.
 
 [Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/).
-<br><br>
+
+## Prebuilt solutions
 
 > GIT
 >
-> Download Sample Checkout API
+> Checkout API
 >
 > Use our <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">complete integration examples</a> on GitHub in PHP or NodeJS to download instantly.
 
 <span></span>
 > GIT
 >
-> Download Sample Form
+> Payment form
 >
 > If you want to deploy other technology in your server, you can <a href="http://github.com/mercadopago/card-payment-sample/client" target="_blank">download a complete payment form sample</a> from GitHub.
 

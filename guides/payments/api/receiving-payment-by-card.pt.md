@@ -230,7 +230,7 @@ function setIssuers(status, response) {
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
 
-> Se você não quiser oferecer parcelamento, ignore esse passo.
+> Se não deseja oferecer parcelamento, ignore esse passo.
 
 Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
 
@@ -545,25 +545,26 @@ Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadop
 Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
 
 [Configure notificações webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/) ou [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/).
-<br><br>
+
+## Exemplos para download
 
 > GIT
 >
 ----[mlb]----
-> Baixe um exemplo completo do Checkout Transparente
+> Checkout Transparente
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Baixe um exemplo completo do Checkout API
+> Checkout API
 ------------
 >
-> Te deixamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+> Disponibilizamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
 
 <span></span>
 > GIT
 >
-> Baixe um exemplo do formulário
+> Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um <a href="http://github.com/mercadopago/card-payment-sample/client">exemplo completo do formulário de pagamento </a> no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um <a href="http://github.com/mercadopago/card-payment-sample/client" target="_blank">exemplo completo do formulário de pagamento </a> no GitHub para que possa baixar.
 
 ---
 ### Próximos passos
