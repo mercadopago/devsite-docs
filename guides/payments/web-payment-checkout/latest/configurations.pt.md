@@ -81,6 +81,7 @@ Através da preferência, você pode [obter informações de negócio](https://w
 
  ```json
 {
+  "purpose": "wallet_purchase",
 	"items": [
 		{
 			"id": "item-ID-1234",
@@ -147,7 +148,6 @@ Através da preferência, você pode [obter informações de negócio](https://w
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
 	"expiration_date_to": "2016-02-28T12:00:00.000-04:00",
-	"purpose": "wallet_purchase",
 	"taxes": [
 		{
 			"type": "IVA",

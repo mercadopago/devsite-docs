@@ -305,6 +305,6 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout
 >
 > Acepta pagos solo de usuarios registrados
 >
-> Integra el atributo y permite pagos solamente de usuarios registrados en Mercado Pago, con tarjetas y dinero en cuenta.
+> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero en cuenta.
 >
 > [Otras funcionalidades](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)

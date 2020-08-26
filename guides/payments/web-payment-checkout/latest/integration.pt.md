@@ -305,6 +305,6 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 >
 > Aceite pagamentos apenas de usuários cadastrados
 >
-> Integre o atributo e permita pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta.
+> Permite pagamentos apenas de usuários cadastrados no Mercado Pago, com cartão e dinheiro em conta.
 >
 > [Outras funcionalidades](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)

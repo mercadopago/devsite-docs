@@ -305,6 +305,6 @@ _Click on the link within your site and [test the integration of your Checkout P
 >
 > Accept payments from registered users only
 >
-> Add the attribute and allow payments only from Mercado Pago registered users, with card and account balance.
+> Allows payments only from users registered in Mercado Pago, with cards and money in account.
 >
 > [Other functionalities](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_accept_payments_from_registered_users_only)
