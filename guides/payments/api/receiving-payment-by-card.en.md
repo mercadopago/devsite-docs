@@ -529,7 +529,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 
 [Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/).
 
-## Prebuilt solutions
+## Sample projects
 
 > GIT
 >
