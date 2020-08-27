@@ -61,7 +61,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 1. No painel administrativo, acesse "Meios de pagamentos" no menu Configs.
 2. Localize o meio de pagamento criado e clique em "Editar".
 3. Acesse a aba "Cartões de Crédito", escolha a bandeira que deseja configurar e selecione o status "Ativo".
-4. Preencha os campos correspondentes, se necessário, e clique em "Salvar".
+4. Preencha os campos correspondentes, se necessário.
 
 | Campos | Dados necessários |
 |-------------------------------------------|---------------------------------------------------------------------------------------|
