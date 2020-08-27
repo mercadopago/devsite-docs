@@ -65,7 +65,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 
     | Campos | Dados |
     | --- | --- |
-| Porcentagem de juros | Caso queira adicionar uma porcentagem de juros, preencha um valor, caso não, deixe em 0,00. |
+    | Porcentagem de juros | Caso queira adicionar uma porcentagem de juros, preencha um valor, caso não, deixe em 0,00. |
 | Tipo de juros | Emissor - Incluir juros no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir juros no total do pedido. |
 | Número total de parcelas | Coloque o número total de parcelas que será possível escolher por compra. |
 | Número de parcelas sem juros | O número total de parcelas sem juros que será possível escolher por compra. |
