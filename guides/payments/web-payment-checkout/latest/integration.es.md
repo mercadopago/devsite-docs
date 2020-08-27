@@ -226,7 +226,7 @@ curl -X POST \
 
 > NOTE
 >
-> Nota
+> Acepta pagos solo de usuarios registrados
 >
 > Si quieres aceptar pagos únicamente de usuarios registrados, con tarjetas y dinero en cuenta de Mercado Pago, ingresa en [esta sección](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados) para más información. 
 

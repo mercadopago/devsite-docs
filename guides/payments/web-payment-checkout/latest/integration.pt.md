@@ -226,7 +226,7 @@ curl -X POST \
 
 > NOTE
 >
-> Nota
+> Aceite pagamentos apenas de usuários cadastrados
 >
 > Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
  
