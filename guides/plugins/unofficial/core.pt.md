@@ -54,7 +54,7 @@ Após adicionar o meio de pagamento, **configure os dados de sua integração co
 
 > Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/).
 
-### Configurando os dados de Cartão de Crédito
+### Configurando os dados de cartão de crédito
 
 Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos abaixo:
 
