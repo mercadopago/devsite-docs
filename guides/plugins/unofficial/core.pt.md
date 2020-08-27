@@ -41,7 +41,7 @@ Além disso, você pode [oferecer parcelas sem juros](#bookmark_configurando_o_p
 
 ### Configurando os dados da integração
 
-Após adicionar o meio de pagamento, **configure os dados de sua integração com o Mercado Pago**, através dos seguintes passos:
+Após adicionar o meio de pagamento, **configure os dados de sua integração com o Mercado Pago** através dos seguintes passos:
 
 1. Acesse a aba "Integração" e complete os campos **Public Key** e **Access Token Key** que correspondem às [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) de produção de sua conta do Mercado Pago.
 2. Preencha o nome que será informado na fatura de seu cliente.
