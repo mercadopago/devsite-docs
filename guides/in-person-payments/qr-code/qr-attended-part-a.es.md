@@ -7,6 +7,7 @@ sites_supported:
   - mlm
   - mlc
   - mlb
+indexable: false
 ---
 
 # Pagos QR modelo atendido
@@ -28,15 +29,15 @@ Las características principales son:
 
 Te explicamos cómo funciona el modelo atendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
+> ![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
 
----
+<span></span>
 
 > NOTE
-> 
+>
 > Nota
-> 
-> El `pos_id`  es el identificador unívoco de la caja dentro de Mercado Pago. Se obtiene al momento de crear un caja y tiene un QR asociado.
+>
+> El `pos_id` es el identificador unívoco de la caja dentro de Mercado Pago. Se obtiene al momento de crear un caja y tiene un QR asociado.
 
 1. (A) El punto de venta registra la orden y le envía sus datos al servidor del vendedor.<br/>
    (B) El servidor del vendedor le envía la orden al servidor de Mercado Pago para el `pos_id` asociado al punto de venta del cobro.
@@ -68,6 +69,6 @@ Te explicamos cómo funciona el modelo atendido:
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Cómo integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended/qr-attended-part-b/)
+> [Cómo integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended-part-b/)
 
 

@@ -126,7 +126,7 @@ Debes informar a tu asesor técnico asignado, la URL base de tu dominio a la que
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -135,4 +135,4 @@ Debes informar a tu asesor técnico asignado, la URL base de tu dominio a la que
 >
 > Realiza los casos de uso más frecuentes para validar tu integración.
 >
-> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/qr-code/final-steps/integration-test/)
+> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/qr-code/integration-test/)

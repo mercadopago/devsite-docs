@@ -7,6 +7,7 @@ sites_supported:
 - mlm
 - mlc
 - mlb
+indexable: false
 ---
 
 # QR attended model
@@ -29,15 +30,15 @@ The main characteristics are:
 
 Here's an explanation of how this model works:
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.en.png)
+> ![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.en.png)
 
----
+<span></span>
 
 > NOTE
-> 
-> Nota
-> 
-> `pos_id`  is an unique identifier of a POS inside Mercado Pago. You’ll get it at the same moment you create a POS and it’ll have an associated QR.
+>
+> Note
+>
+> `pos_id` is an unique identifier of a POS inside Mercado Pago. You’ll get it at the same moment you create a POS and it’ll have an associated QR.
 
 1. (A) Point of Sale (POS) logs the order and sends the data to merchant server.<br/>
 (B) Merchant server sends order to Mercado Pago server with a `pos_id`. 
@@ -70,4 +71,4 @@ Here's an explanation of how this model works:
 >
 > Learn to integrate this model step by step.
 >
-> [How to Integrate attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended/qr-attended-part-b/)
+> [How to Integrate attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended-part-b/)
