@@ -71,7 +71,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 | Número de parcelas sem juros | O número total de parcelas sem juros que será possível escolher por compra. |
 | Parcela mínima | Valor mínimo disponível para cada parcela de uma compra. |
 | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
-| Ordem | A ordem em que as bandeiras aparecerão no Checkout. |
+    | Ordem | Configure a ordem em que as bandeiras aparecerão no Checkout. |
 | Caminho Imagem | O caminho onde as imagem das bandeiras do cartão serão buscadas. |
 <br>
 
