@@ -82,6 +82,14 @@ Luego ejecuta los pasos de una **nueva instalación** para actualizar tu tienda 
 
 ---
 
+## Mira nuestras actualizaciones en GitHub
+
+> NOTE
+>
+> GitHub
+>
+> Consulte GitHub para obtener detalles sobre las [últimas actualizaciones productivas](https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md).
+
 ### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES

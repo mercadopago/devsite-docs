@@ -82,6 +82,14 @@ Then execute the steps of a **new installation** to update your page with the la
 
 ---
 
+## Check out our updates on GitHub
+
+> NOTE
+>
+> GitHub
+>
+> Check GitHub for details on the [latest productive updates](https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md).
+
 ### Next steps
 
 > LEFT_BUTTON_REQUIRED_ES
