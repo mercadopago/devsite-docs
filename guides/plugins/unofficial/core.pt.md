@@ -63,7 +63,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 3. Acesse a aba "Cartões de Crédito", escolha a bandeira que deseja configurar e selecione o status "Ativo".
 4. Preencha os campos correspondentes, se necessário.
 
-| Campos | Dados necessários |
+    | Campos | Dados |
     | --- | --- |
 | Porcentagem de juros | Caso queira adicionar uma porcentagem de juros, preencha um valor, caso não, deixe em 0,00. |
 | Tipo de juros | Emissor - Incluir juros no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir juros no total do pedido. |
