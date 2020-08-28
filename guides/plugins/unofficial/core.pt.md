@@ -72,7 +72,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
     | Parcela mínima | Valor mínimo disponível para cada parcela de uma compra. |
     | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
     | Ordem | Configure a ordem em que as bandeiras aparecerão no Checkout. |
-| Caminho Imagem | O caminho onde as imagem das bandeiras do cartão serão buscadas. |
+    | Caminho Imagem | Complete o caminho onde as imagem das bandeiras do cartão serão buscadas. |
 <br>
 
 > WARNING
