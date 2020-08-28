@@ -80,7 +80,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 > Importante
 >
 > Ao utilizar configuração de parcelamento externo, todas as configurações de parcelamento realizadas na plataforma serão desconsideradas.
-> O parcelamento externo **não** será mostrado em listagens ou no detalhe do produto.
+> O parcelamento externo não será mostrado em listagens ou no detalhe do produto.
 
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
