@@ -147,7 +147,7 @@ Para **definir os meios de pagamento do contrato**, siga os passos abaixo:
 Para **atribuir o meio de pagamento do contrato ao canal de sua loja**, siga os passos abaixo:
 
 1. No painel administrativo, acesse "Canais" no menu Canais.
-2. Localize o canal da sua loja e clique em "editar".
+2. Localize o canal da sua loja e clique em "Editar".
 3. Na sessão contrato padrão, adicione o contrato que criou.
 4. Clique em "Salvar".
 <p>&nbsp;</p>
