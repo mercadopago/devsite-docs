@@ -1,142 +1,167 @@
 ---
-  indexable: false
+ sites_supported:
+  - mlb
 ---
-# CORE
 
-![CORE Configuracao](/images/core18.png)
-## ¿Qué es CORE?
+# Linx Commerce
 
-[CORE Commerce](http://www.platformcore.com) es un ecosistema centrado en soluciones multicanal para su tienda en línea que le permite procesar pagos a través de Mercado Pago.
-Para obtener más información sobre las posibilidades que ofrece CORE, visite [su página de recursos](http://www.platformcore.com/resources/).
+## ¿Qué es Linx Commerce?
 
-## ¿Cómo puedo comerciar con Mercado Pago en CORE?
+Es una **plataforma virtual que te permite recibir pagos con Mercado Pago**.
 
-CORE le permite operar Mercado Pago de las siguientes maneras:
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjeta de crédito](#bookmark_configura_los_datos_para_tarjetas_de_crédito) y [boleto](#bookmark_configura_los_datos_para_boleto) en tu tienda.
 
-### Pago transparente
+## Pasos para configurar
 
-Reciba pagos en su tienda a través de tarjeta de crédito y/o recibo bancario en modo transparente, es decir, personalice el diseño de pago para su tienda según lo dispuesto por la plataforma CORE.
+Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
-### Redirección de pago
+1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.
+1. Agrega a Mercado Pago como medio de pago dentro de tu tienda.
+1. Configura las formas de pago con Mercado Pago.
+1. Configura los medios de pago del contrato.  
 
-Reciba pagos en su tienda utilizando el pago del propio Mercado Pago, en este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
+## Agrega a Mercado Pago como medio de pago
 
-## Cuenta de Mercado Pago
+Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 
-Antes de comenzar a configurar, debe tener una cuenta válida **Mercado Pago**, si no tiene una, puede registrarse accediendo al [formulario de registro](https://www.mercadopago.com.ar/registro-mp?modo=mp).
+1. Accede a “Medios de pago” en la sección de Configs del panel de administración de tu tienda. 
+1. Ingresa en “Adicionar medio de pago”.
+1. En la lista Proveedor de Servicio, busca a Mercado Pago y haz clic en “Próximo paso”.
+1. Define un nombre para el medio de pago Mercado Pago V2 y selecciona el estado “Activo”.
 
-Si desea saber más acerca de **Mercado Pago**, visite nuestra [página principal](https://www.mercadopago.com.ar/).
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_adicione_meio_pagamento-1.gif)
+<p>&nbsp;</p>
 
-## ¿Cómo habilitar el redireccionamiento de pago?
+## Configura las formas de pago
 
-1. Acceda al panel administrativo de su tienda en la plataforma.
+Luego de agregar a Mercado Pago, tienes la opción de ofrecer pagos con [tarjeta de crédito](#bookmark_configura_los_datos_para_tarjetas_de_crédito) y [boleto](#bookmark_configura_los_datos_para_boleto).
 
-2. En el menú Configuración, seleccione la opción **PAGO**.
+También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) y configurar las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de tus ventas online cuando quieras.
 
-    ![Configuración CORE](/images/core1.png)
+### Configura los datos para integrar
 
-3. Busque en el menú **Integración de Mercado Pago** haga clic en la casilla de verificación junto al logotipo de Mercado Pago y luego haga clic en el botón de edición representado por un lápiz en la lista de acciones.
+Después de agregar el medio de pago, **configura los datos para tu integración con Mercado Pago** de la siguiente manera: 
 
-    ![Configuración CORE](/images/core19.png)
+1. Accede a la pestaña “Integración” y completa los campos Public Key y Access Token Key que corresponden a las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. Completa el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte.
+1. Si quieres probar tus pagos, en la sección Modo de prueba, selecciona la opción “Sí”. Luego, completa los campos Public Key y Access Token key con las [credenciales de prueba]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago. 
+1. En la sección de Cuotas, selecciona “Externo (API de Mercado Pago) para utilizar las configuraciones de cuotas directamente de tu cuenta de Mercado Pago. 
+1. Por último, haz clic en “Guardar”.
 
-4. En la pantalla de datos generales, deje el campo **activo** como **sí**.
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
+<p>&nbsp;</p>
 
-    ![Configuración CORE](/images/core3.png)
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
 
+### Configura los datos para tarjetas de crédito 
 
-5. En el menú **Integración**, ingrese las [credenciales de su cuenta de mercado paga]([FAKER][CREDENTIALS][URL]).
+Para **configurar los datos de tarjetas de créditos en tu tienda**, sigue estos pasos:
 
-    ![Configuración CORE](/images/core0.png)
+1. Accede a “Medios de pago” en la sección de Configs del panel de administración de tu tienda. 
+1. Busca el medio de pago creado y haz clic en “Editar”.
+1. Ingresa en la pestaña “Tarjetas de Crédito”, elige la bandera que quieras configurar y selecciona el estado “Activo”. 
+1. Completa los campos correspondientes si es necesario:
 
-6. En el menú **Tarjetas de crédito** navegue por los paneles cambiando el estado de cada indicador a **activo**.
+    | Campos | Datos  |
+    | --- | ---|
+    | Porcentaje de interés | Completa el porcentaje de interés que quieras agregar. Si no quieres sumar ninguno, deja el dato en 0,00. |
+    | Tipo de interés | Emisor - Incluye intereses en el pedido total. Emisor - Intereses devengados por el emisor. Comerciante - Incluye interés en el pedido total. |
+    | Número total de cuotas | Ingresa el número total de cuotas que quieres ofrecer por venta. |
+    | Número de cuotas sin interés | Ingresa el número total de cuotas sin interés que quieres ofrecer por venta. |
+    | Cuota mínima | Valor mínimo disponible de cuotas para una compra. |
+    | Identificador de integración | Agrega un código para identificarse en su ERP. |
+    | Orden | Configura el orden en el que aparecerán las banderas al finalizar la compra. |
+    | Imagen de ruta | Completa la ruta para obtener la imagen de las banderas de la tarjeta. |
 
-    ![Configuración CORE](/images/core6.png)
+1. Haz clic en “Guardar”. 
 
-7. En el menú **Boletos** al igual que para los banners de tarjetas de crédito, haga clic en el estado **activo**.
+> WARNING
+>
+> Importante
+>
+> Si utilizas la configuración de cuotas externas, ten en cuenta que no se tomarán las configuraciones de cuotas realizadas en la plataforma.<br>
+> Las cuotas externas no se mostrarán en los listados o en los detalles del producto.
 
-    ![Configuración CORE](/images/core7.png)
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
+<p>&nbsp;</p>
 
-8. Active los métodos de pago que elija y establezca las credenciales, luego debe activar la configuración del contrato para que esté disponible en la tienda, continúe con el tema **Cómo configurar los contratos**.
+### Configura los datos para boleto
 
-## ¿Cómo habilitar Transparent Checkout?
+Para **configurar los datos para Boleto Bancário en su tienda**, sigue estos pasos: 
 
-1. Acceda al panel administrativo de su tienda en la plataforma.
+1. Accede a “Medios de pago” en la sección de Configs del panel de administración de tu tienda. 
+1. Busca el medio de pago creado y haz clic en “Editar”.
+1. Ingresa en la pestaña “Boleto” y selecciona el estado “Activo”. 
+1. Completa el campo Identificador de integración con la información que será identificada en su ERP. 
+1. Ingresa el orden en el que quieres que aparezca la opción de boleto en tu tienda. 
+1. Por último, haz clic en “Guardar”.
 
-2. En el menú Configuración, seleccione la opción **PAGO**.
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
+<p>&nbsp;</p>
 
-    ![Configuración CORE](/images/core1.png)
+## Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
-3. Busque el menú para **MercadoPagoV2** haga clic en la casilla de verificación junto al logotipo de Mercado Pago y luego haga clic en el botón de edición representado por un lápiz en la lista de acciones.
+1. Ingresa a tu cuenta de Mercado Pago y ve a “Tu negocio”.
+1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
+1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
 
-    ![Configuración CORE](/images/core2.png)
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
+<p>&nbsp;</p>
 
-4. En la pantalla de datos generales, deje el campo **activo** como **sí**.
+¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.
 
-    ![Configuración CORE](/images/core4.png)
+## Configura los medios de pago del contrato
 
+El contrato tiene como objetivo determinar las configuraciones específicas que utilizará tu tienda.
 
-5. En el menú **Integración**, ingrese las [credenciales de su cuenta de Mercado Pago]([FAKER][CREDENTIALS][URL]).
+### Crear un contrato
 
-    ![Configuración CORE](/images/core5.png)
+Para **crear un contrato en tu tienda**, sigue estos pasos: 
 
-6. En el menú **Tarjetas de crédito** navegue por los paneles cambiando el estado de cada indicador a **activo**.
+1. Desde Backoffice en el panel de administración, ingresa en “Contratos”.
+1. Haz clic en “Agregar Contrato”. 
+1. Completa el nombre para el contrato que estás creando 
+1. Por último, haz clic en “Guardar”.
 
-    ![Configuración CORE](/images/core6.png)
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
+<p>&nbsp;</p>
 
-7. En el menú **Boletos** al igual que para los banners de tarjetas de crédito, haga clic en el estado **activo**.
+### Define los medios de pago para el contrato
 
-    ![Configuración CORE](/images/core7.png)
+Para ** definir los medios de pago para el contrato**, sigue estos pasos: 
 
-8. Active los métodos de pago que elija y establezca las credenciales, luego debe activar la configuración del contrato para que esté disponible en la tienda, continúe con el tema **Cómo configurar los contratos**.
+1. Desde Backoffice en el panel de administración, ingresa en “Contratos”.
+1. Busca el contrato creado y haz clic en “Editar”.
+1. Encuentra la sección de medios de pago y define qué opción de contrato quieres utilizar:
 
-## ¿Cómo configurar contratos?
+    - ** Todos los medios de pago activos en la plataforma**. Permite que se muestren todos los métodos de pago habilitados en la plataforma.
+    - ** Definido a continuación**. Elige qué métodos de pago quieres que sean parte del contrato.
 
-1. Acceda al panel administrativo de su tienda en la plataforma.
 
-2. En el menú Backoffice, seleccione la opción **CONTRACTOS**.
+1. Por último, haz clic en “Guardar”.
 
-    ![Configuración CORE](/images/core8.png)
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
+<p>&nbsp;</p>
 
-3. Seleccione la opción **Agregar contrato** o edite una existente.
+### Asigna medios de pago del contrato a un canal
 
-    ![Configuración CORE](/images/core9.png)
+Para **asignar los medios de pago del contrato a un canal**, sigue estos pasos: 
 
-4. Si está creando un nuevo contrato, se seleccionará el método de pago predeterminado del contrato, seleccione la opción **Definida a continuación**.
+1. Desde Canales en el panel de administración, ingresa en “Canales”.
+1. Busca el canal de tu tienda y haz clic en “Editar”.
+1. En la sesión de contrato patrón, agrega el contrato que creaste.
+1. Por último, haz clic en “Guardar”.
 
-    ![Configuración CORE](/images/core10.png)
+<p>&nbsp;</p>
+    ![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
+<p>&nbsp;</p>
 
-5. En la pantalla de advertencia, seleccione **Sí**.
-
-    ![Configuración CORE](/images/core11.png)
-
-6. Volviendo al menú del contrato, seleccione la opción **Seleccionar**.
-
-    ![Configuración CORE](/images/core12.png)
-
-7. Luego, configure para este acuerdo de Método de pago el proceso de pago que configuró en el tema anterior haciendo clic en las flechas para que los métodos de pago seleccionados cambien al menú de la derecha, luego seleccione la opción **guardar**.
-
-    ![Configuración CORE](/images/core13.png)
-
-## Cómo configurar multicanal
-
-1. Acceda al panel administrativo de su tienda en la plataforma.
-
-2. En el menú Canales, seleccione **CANALES**.
-
-    ![Configuración CORE](/images/core14.png)
-
-3. Seleccione la opción **Agregar canal** o edite una existente.
-
-     ![Configuración CORE](/images/core15.png)
-
-4. En el menú de configuración Tipo de canal, seleccione **Siguiente paso**.
-
-     ![Configuración CORE](/images/core16.png)
-
-5. Configure la información de configuración del canal, desplácese hasta abajo hasta que encuentre **Contrato estándar**.
-
-     ![Configuración CORE](/images/core17.png)
-
-6. Haga clic en **Seleccionar** y elija el contrato configurado en el tema anterior, seleccione **Guardar y cerrar**
-
-     ![Configuración CORE](/images/core18.png)  
+<!-- -->
+> Para más información, visita el [sitio oficial de Linx Commerce](https://docs.linxcommerce.com.br/docs).
