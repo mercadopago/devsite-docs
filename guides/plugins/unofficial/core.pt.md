@@ -131,7 +131,7 @@ Para **criar um contrato em sua loja**, siga os passos abaixo:
 Para **definir os meios de pagamento do contrato em sua loja**, siga os passos abaixo:
 
 1. No painel administrativo, acesse "Contratos" no menu Backoffice.
-2. Localize o contrato criado e clique em "editar".
+2. Localize o contrato criado e clique em "Editar".
 3. Localize a sessão meios de pagamento e defina qual a opção que o contrato irá refletir para o meio de pagamento, sendo eles:
 
 - **Todos os meios de pagamento ativos na plataforma.** Irá permitir que todos os meios de pagamento habilitados na plataforma sejam refletidos para este contrato.
