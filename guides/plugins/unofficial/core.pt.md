@@ -74,7 +74,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
     | Ordem | Configure a ordem em que as bandeiras aparecerão no Checkout. |
     | Caminho Imagem | Complete o caminho onde as imagem das bandeiras do cartão serão buscadas. |
 <br>
-
+5. Clique em "Salvar".
 > WARNING
 >
 > Importante
