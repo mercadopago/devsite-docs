@@ -120,7 +120,7 @@ No seguinte exemplo se assume que os dados `transactionAmount` e `description` f
          <select type="text" id="installments" name="installments"></select>
        </div>
        <div>
-         <input type="hidden" name="transactionAmount" id="transactionAmount" value="0" />
+         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
          <input type="hidden" name="paymentMethodId" id="paymentMethodId" />
          <input type="hidden" name="description" id="description" />
          <br>
@@ -184,7 +184,7 @@ function setPaymentMethod(status, response) {
        } else {
            getInstallments(
                paymentMethod.id,
-               document.getElementById('amount').value
+               document.getElementById('transactionAmount').value
            );
        }
    } else {
@@ -219,7 +219,7 @@ function setIssuers(status, response) {
 
        getInstallments(
            document.getElementById('paymentMethodId').value,
-           document.getElementById('amount').value,
+           document.getElementById('transactionAmount').value,
            issuerSelect.value
        );
    } else {
@@ -235,10 +235,10 @@ function setIssuers(status, response) {
 Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
 
 ```javascript
-function getInstallments(paymentMethodId, amount, issuerId){
+function getInstallments(paymentMethodId, transactionAmount, issuerId){
    window.Mercadopago.getInstallments({
        "payment_method_id": paymentMethodId,
-       "amount": parseFloat(amount),
+       "amount": parseFloat(transactionAmount),
        "issuer_id": issuerId ? parseInt(issuerId) : undefined
    }, setInstallments);
 }
