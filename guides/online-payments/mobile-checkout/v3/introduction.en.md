@@ -66,4 +66,4 @@ pod 'MercadoPagoSDK', '3.7.2'
 ```
 ]]]
 
-- In [this artcile](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/v3/receive-payments) you will learn how to receive payments.
+- In [this artcile](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/receive-payments) you will learn how to receive payments.

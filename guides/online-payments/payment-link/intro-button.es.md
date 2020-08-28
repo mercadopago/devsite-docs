@@ -29,4 +29,4 @@ Próximos pasos
 >
 > Ahora que conoces de qué se trata, es momento de empezar a cobrar online.
 >
-> [Crear link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/create-button/)
+> [Crear link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/payment-link/create-button/)

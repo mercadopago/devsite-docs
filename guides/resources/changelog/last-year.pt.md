@@ -30,7 +30,7 @@ O desligamento afetará os seguintes recursos:
 | Busca de Meios de Pagamentos| `GET`  | /checkout/custom/payment_methods/search  |
 | Emissores                   | `GET`  | /checkout/custom/card_issuers            |
 
-[Neste link](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), você encontrará os recursos que vão substituir os que estão sendo depreciados.
+[Neste link](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction), você encontrará os recursos que vão substituir os que estão sendo depreciados.
 
 ## 24 de novembro de 2019
 

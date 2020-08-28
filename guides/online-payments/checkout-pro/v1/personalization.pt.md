@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/).
 
 Na preferência de pagamentos, é possível enviar as informações do item a ser pago, bem como do comprador, além de definir os meios de pagamento que não deseja aceitar, a URL de retorno ao seu site após o pagamento, os métodos de envio, etc.
 
@@ -358,4 +358,4 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
 Próximos passos
 
 * [Campanhas de desconto](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/discount-campaigns/)
-* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/testing/)

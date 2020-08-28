@@ -13,7 +13,7 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 
 1. Crea una [cuenta vendedor](https://www.mercadopago.com.ar/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago.com.ar%2Fcomo-cobrar) en Mercado Pago si todavía no tienes una.
 2. Obtén el par de [credenciales](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/) Access Token y Public Key y pégalas en los campos de Producción y Pruebas que encontrarás en la configuración del módulo.
-3. Homologa la cuenta para [ir a Producción](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) y recibir el dinero de tus ventas en Mercado Pago.
+3. Homologa la cuenta para [ir a Producción](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/goto-production/) y recibir el dinero de tus ventas en Mercado Pago.
 
 ¡Y listo! Con esto podrás capturar los pagos que recibas en Prestashop con tu cuenta de Mercado Pago.
 

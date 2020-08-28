@@ -196,7 +196,7 @@ Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/gui
 
 ### Diccionario de errores
 
-[Aquí](https://www.mercadopago.com.mx/developers/es/guides/payments/api/handling-responses/) podrás encontrar nuestro diccionario de errores.
+[Aquí](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-api/handling-responses/) podrás encontrar nuestro diccionario de errores.
 
 ## Reportes
 

@@ -13,7 +13,7 @@ indexable: false
 >
 > This product is only available through prior contact with one of our executives.
 
-The Advanced Payment API allows you to make [Authorization and Capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/other-features) payments. For these cases, an Advanced Payment must be created with the `capture` field set to `false`, which will reserve the amount until it is captured.
+The Advanced Payment API allows you to make [Authorization and Capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-features) payments. For these cases, an Advanced Payment must be created with the `capture` field set to `false`, which will reserve the amount until it is captured.
 
 To capture it, you have to do it like this:
 

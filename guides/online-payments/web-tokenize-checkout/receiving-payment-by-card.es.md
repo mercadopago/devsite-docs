@@ -226,7 +226,7 @@ Respuesta:
 
 ### Tarjetas de prueba
 
-Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing).
+Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/testing).
 
 ### Promociones
 

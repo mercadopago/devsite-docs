@@ -22,7 +22,7 @@ Installing the Checkout Pro consists of two steps:
 
 Write the following code consisting of three parts:
 
-1.1 Add the <a href="https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/previous-requirements#bookmark_pré-requisitos" target="_blank"> Mercado Pago SDK</a> in your project:
+1.1 Add the <a href="https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos" target="_blank"> Mercado Pago SDK</a> in your project:
 
 [[[
 ```php
@@ -233,7 +233,7 @@ Finally, add the following code to show the payment button of your Checkout Pro 
 >
 > Note
 >
-> If your site works on mobile, note that you need to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, you can visit the [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/test-integration/) section. 
+> If your site works on mobile, note that you need to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, you can visit the [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration/) section. 
 
 [[[
 ```php
@@ -286,7 +286,7 @@ Finally, add the following code to show the payment button of your Checkout Pro 
 > Do not forget to access from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
 
 #### Excellent! You finished your integration.
-_Click on the link within your site and [test the integration of your Checkout Pro](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/test-integration/)_.<br/><br/>
+_Click on the link within your site and [test the integration of your Checkout Pro](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
 
 ---
 
@@ -298,7 +298,7 @@ _Click on the link within your site and [test the integration of your Checkout P
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/test-integration/)
+> [Test your integration](http://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/test-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -306,4 +306,4 @@ _Click on the link within your site and [test the integration of your Checkout P
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/)
+> [Advanced integration](http://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/advanced-integration/)

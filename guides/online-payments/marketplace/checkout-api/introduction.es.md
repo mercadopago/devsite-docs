@@ -36,9 +36,9 @@ Las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> son l
 
 Inicialmente tu aplicación sólo podrá interactuar con Mercado Pago en **Modo Sandbox**, una réplica exacta de **Modo Producción**, diseñado con el objetivo de facilitar las pruebas durante la integración.
 
-Te brindaremos [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/testing-marketplace/), para que puedas simular transacciones como si fueran reales.
+Te brindaremos [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-pro/testing-marketplace/), para que puedas simular transacciones como si fueran reales.
 
-Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/goto-production/) y [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
+Una vez que hayas probado tu aplicación, deberás realizar el [proceso de homologación](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-api/goto-production/) y [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
 **Antes de utilizar las credenciales de producción tienes que activarlas.**
 Caso contrario se recibirá el error de "Invalid use of live credentials".
@@ -46,4 +46,4 @@ Caso contrario se recibirá el error de "Invalid use of live credentials".
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 
 
-#### [Comenzar a crear mi _Marketplace_](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/create-marketplace)
+#### [Comenzar a crear mi _Marketplace_](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-api/create-marketplace)

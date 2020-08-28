@@ -66,7 +66,7 @@ Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Pro
 
-É possível remover a opção de boleto com uso de preferências de pagamento. Você pode encontrar mais detalhes em nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_atributos_para_a_preferência).
+É possível remover a opção de boleto com uso de preferências de pagamento. Você pode encontrar mais detalhes em nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_atributos_para_a_preferência).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Transparente
 
@@ -80,7 +80,7 @@ Caso venda através de um de nossos plugins ou soluções de e-commerce prontas 
 
 ## Definir prazo de vencimento do boleto
 
-Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-payment-ways/), através do campo `date_of_expiration`.
+Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways/), através do campo `date_of_expiration`.
 ------------
 
 ## Melhore a aprovação de seus pagamentos

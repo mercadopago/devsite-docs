@@ -32,7 +32,7 @@ Puedes usar las SDKs oficiales o interactuar directamente con nuestras APIs.
 >
 > Conoce todos los requisitos necesarios para comenzar a integrar.
 >
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/previous-requirements/)
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

@@ -30,7 +30,7 @@ El apagado afecta a los siguientes recursos:
 | Búsqueda de Medios de Pagos| `GET`  | /checkout/custom/payment_methods/search  |
 | Emisores                   | `GET`  | /checkout/custom/card_issuers            |
 
-En [este artículo](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction) vas a encontrar los recursos equivalentes.
+En [este artículo](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/introduction) vas a encontrar los recursos equivalentes.
 
 ## 25 de Noviembre de 2019
 

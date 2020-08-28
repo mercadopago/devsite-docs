@@ -16,7 +16,7 @@ The *customers* represent your customers. The cards that you store will be valid
 
 To create a `Customer` and a `Card` at the same time it is necessary to send at least the `email` and `token` fields.
 
-The `token` is the one you capture when you [handle the answer](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card) of the *Web Tokenize Checkout*.
+The `token` is the one you capture when you [handle the answer](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card) of the *Web Tokenize Checkout*.
 
 
 > NOTE

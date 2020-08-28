@@ -35,4 +35,4 @@ representativo que pode ser guardado de forma segura em seus servidores para cri
 > Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
 
 
-#### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/create-marketplace)
+#### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-pro/create-marketplace)

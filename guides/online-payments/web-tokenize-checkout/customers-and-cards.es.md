@@ -6,7 +6,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementada la [captura de datos de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card#capturar-datos-de-tarjeta).
+> * Tener implementada la [captura de datos de tarjeta](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card#capturar-datos-de-tarjeta).
 
 Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **manera segura** para mejorar la experiencia de compra.
 
@@ -18,7 +18,7 @@ Los *customers* representan a tus clientes. Las tarjetas que almacenes serán pa
 
 Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
 
-El `token` es el que capturas cuando haces el [manejo de la respuesta](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses) del *Web Tokenize Checkout*.
+El `token` es el que capturas cuando haces el [manejo de la respuesta](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses) del *Web Tokenize Checkout*.
 
 
 > NOTE

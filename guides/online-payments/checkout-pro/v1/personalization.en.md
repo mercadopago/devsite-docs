@@ -17,7 +17,7 @@ indexable: false
 >
 > This documentation refers to the new version of the Checkout Pro.
 >
-> Remember there is only active support and new functionalities for the [new version of the Checkout Pro.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Checkout Pro.](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/)
 
 In payment preferences, you can not only send information about the item to be paid, and the buyer’s, but also set the payment methods you do not want to accept, the return URL to your website after the payment, shipping options, etc.  
 
@@ -358,4 +358,4 @@ To summarize all of the above, the following JSON shows all the data that can be
 ### Next steps
 
 * [Discount campaigns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/discount-campaigns/)
-* [Testing the integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing/)
+* [Testing the integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/v1/testing/)

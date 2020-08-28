@@ -98,7 +98,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Siga o passo a passo para começar a receber pagamentos no seu site.
 >
-> [Integre o Checkout Pro](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/integration/)
+> [Integre o Checkout Pro](http://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -106,4 +106,4 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Confira se está tudo em ordem na sua integração com os usuários de teste.
 >
-> [Teste a sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/test-integration/)
+> [Teste a sua integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)

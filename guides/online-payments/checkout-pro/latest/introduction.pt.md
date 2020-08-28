@@ -77,5 +77,5 @@ Tela de finalização de pagamento 		     |      ✔      |                     
 >
 > Para realizar a integração, você deve atender os requisitos necessários.
 >
-> [Requisitos para integrar](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/previous-requirements/)
+> [Requisitos para integrar](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/previous-requirements/)
 >

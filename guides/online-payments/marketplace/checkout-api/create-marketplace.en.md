@@ -4,7 +4,7 @@
 >
 > Prerequisites
 >
-> * Have the [Checkout API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction) implemented.
+> * Have the [Checkout API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction) implemented.
 
 To begin, you need to:
 
@@ -129,7 +129,7 @@ Expected response:
 
 ## 3. Integrate the API
 
-To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction), using the `access_token` of each seller for your application.
+To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction), using the `access_token` of each seller for your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the `application_fee` parameter when creating the preference:
 
@@ -237,4 +237,4 @@ For more information, go to [refunds and cancellations.](https://www.mercadopago
 ### Test your integration
 
 You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
-[Test your integration](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing/)
+[Test your integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/testing/)

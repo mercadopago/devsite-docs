@@ -62,7 +62,7 @@ El costo dependerá según el volumen mensual operado del vendedor.
 
 ### Próximos pasos
 
-* [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/configuration) en el backoffice de Mercado Pago
-* [Integrá el Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) en Modelo Gateway
-* [Integrá la API](https://www.mercadopago.com.ar/developers/es/guides/gateway/api/receiving-payments) en Modelo Gateway
+* [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/general-considerations/configuration) en el backoffice de Mercado Pago
+* [Integrá el Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/checkout-pro/receiving-payments) en Modelo Gateway
+* [Integrá la API](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/checkout-api/receiving-payments) en Modelo Gateway
 * [Integrá pagos avanzados](https://www.mercadopago.com.ar/developers/es/guides/gateway/advanced/introduction) en Modelo Gateway

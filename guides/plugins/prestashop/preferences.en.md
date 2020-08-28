@@ -82,7 +82,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Note
 >
-> Check [the documentation of the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
+> Check [the documentation of the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
 
 ### Custom Checkout
 

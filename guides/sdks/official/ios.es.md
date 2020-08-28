@@ -69,4 +69,4 @@ This project includes two Xcode Projects with examples using MercadoPagoSDK: Mer
 ## Documentation
 
 + [See the GitHub Project](https://github.com/mercadopago/px-ios).
-+ [Read the SDK quick integration guide](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction).
++ [Read the SDK quick integration guide](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/introduction).

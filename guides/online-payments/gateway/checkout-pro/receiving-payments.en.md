@@ -47,4 +47,4 @@ Done! Your **Checkout Pro** is now working in the Gateway Model.
 
 ### Next steps
 
-* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/reconciliation/)
+* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/general-considerations/reconciliation/)

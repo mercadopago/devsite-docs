@@ -38,9 +38,9 @@ Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are t
 
 Initially, your application will only be able to interact with Mercado Pago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
 
-We will provide you with [test cards](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/testing-marketplace/), so that you can simulate transactions as if they were real.
+We will provide you with [test cards](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-pro/testing-marketplace/), so that you can simulate transactions as if they were real.
 
-Once you have tested your application, you must complete the [homologation process](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/goto-production/) and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
+Once you have tested your application, you must complete the [homologation process](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-api/goto-production/) and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
 **Before you can start using your production credentials you must activate them.**
 If not, you´ll get the "Invalid use of live credentials" error.
@@ -48,4 +48,4 @@ If not, you´ll get the "Invalid use of live credentials" error.
 Your application will be automatically activated. All you have to do is replace the sandbox keys with the production ones in your code.
 
 
-#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/create-marketplace)
+#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-api/create-marketplace)

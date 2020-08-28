@@ -46,7 +46,7 @@ With these payment options we cover the needs of each business. Review the featu
 >
 > Note
 >
-> Check out the [Checkout Pro documentation](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its characteristics and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its characteristics and functionalities.
 
 ### Next steps
 

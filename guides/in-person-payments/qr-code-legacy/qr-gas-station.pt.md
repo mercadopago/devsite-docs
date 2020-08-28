@@ -275,7 +275,7 @@ Verifique os [dados de teste](https://www.mercadopago.com.br/developers/pt/guide
 
 ### Dicionário de erros
 
-[Aqui](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) você pode encontrar nosso dicionário de erros.
+[Aqui](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses/) você pode encontrar nosso dicionário de erros.
 
 ## Relatórios
 

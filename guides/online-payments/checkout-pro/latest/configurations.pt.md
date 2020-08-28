@@ -4,13 +4,13 @@
 Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago.com.br/developers/pt/reference/preferences/resource/) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
 
 ----[mla, mlb]----
-Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
+Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-Se você oferece compras de valores altos, por exemplo, você pode [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
+Se você oferece compras de valores altos, por exemplo, você pode [excluir meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
 ------------
 
-Através da preferência, você pode [obter informações de negócio](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_saiba_mais_sobre_seu_negócio). Além disso, você pode mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_associar_um_pixel_do_facebook) ou [associando seus anúncios do Google](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations#bookmark_associar_uma_tag_do_google_ads).
+Através da preferência, você pode [obter informações de negócio](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_saiba_mais_sobre_seu_negócio). Além disso, você pode mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_associar_um_pixel_do_facebook) ou [associando seus anúncios do Google](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_associar_uma_tag_do_google_ads).
 
 ## Exemplo de uma preferência completa
 
@@ -826,7 +826,7 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >
-> [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/advanced-integration/)
+> [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -834,4 +834,4 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Customizações](http://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/)
+> [Customizações](http://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/customizations/)

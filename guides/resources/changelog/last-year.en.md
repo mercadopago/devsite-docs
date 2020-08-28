@@ -30,7 +30,7 @@ The shutdown will involve the following resources:
 | Payment Methods search  | `GET`  | /checkout/custom/payment_methods/search  |
 | Card issuers            | `GET`  | /checkout/custom/card_issuers            |
 
-You can find the equivalent resources in [this article](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction/).
+You can find the equivalent resources in [this article](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction/).
 
 ## November 25, 2019
 

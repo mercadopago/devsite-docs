@@ -16,9 +16,9 @@ sites_supported:
 > Pré-requisitos
 >
 > Entre em contato com seu executivo de conta para configurar corretamente seu Marketplace.
-> Esse guia assume que seu [Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/introduction/) já foi criado e configurado corretamente e que já sabe como [gerar um token de cartão](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card).
+> Esse guia assume que seu [Marketplace](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-api/introduction/) já foi criado e configurado corretamente e que já sabe como [gerar um token de cartão](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card).
 >
-> Seus vendedores devem ter uma conta MP e devem [te dar permissões para cobrar pagamentos em seu nome](https://www.mercadopago.com.br/developers/pt/guides/marketplace/advanced-payments/sellers-permissions).
+> Seus vendedores devem ter uma conta MP e devem [te dar permissões para cobrar pagamentos em seu nome](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/advanced-payments/sellers-permissions).
 
 O modelo de negócio de carrinho de compras consiste em um pagamento do valor total da transação, feito pelo Comprador, que é dividido nos pagamentos correspondentes a cada Vendedor pela venda de seu produto. Por sua vez, para cada pagamento feito aos Vendedores, o Marketplace pode reter uma parte do valor da venda como comissão.
 

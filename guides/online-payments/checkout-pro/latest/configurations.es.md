@@ -4,13 +4,13 @@
 Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource/) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
 
 ----[mla, mlb]----
-Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-Si ofreces compras de montos bajos, por ejemplo, puedes [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de montos bajos, por ejemplo, puedes [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 ------------
 
-A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_Obtén_información_sobre_tu_negocio). Y también, medir la efectividad de tus publicidades y darles seguimiento al [integrar un píxel de Facebook](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_asocia_un_píxel_de_facebook) o al [asociar tus anuncios de Google](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_Obtén_información_sobre_tu_negocio). Y también, medir la efectividad de tus publicidades y darles seguimiento al [integrar un píxel de Facebook](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_un_píxel_de_facebook) o al [asociar tus anuncios de Google](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
 
 ## Ejemplo de una preferencia completa
 
@@ -840,7 +840,7 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+> [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -848,4 +848,4 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)

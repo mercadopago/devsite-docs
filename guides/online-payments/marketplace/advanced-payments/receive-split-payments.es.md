@@ -15,9 +15,9 @@ sites_supported:
 >
 > Pre-requisitos
 >
-> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card). De no ser el caso, contactate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
+> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card). De no ser el caso, contactate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
 >
-> Tus vendedores deben contar con una cuenta de Mercado Pago y tienen que [configurar los permisos necesarios para recibir los cobros](https://www.mercadopago.com.ar/developers/es/guides/marketplace/advanced-payments/sellers-permissions).
+> Tus vendedores deben contar con una cuenta de Mercado Pago y tienen que [configurar los permisos necesarios para recibir los cobros](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/advanced-payments/sellers-permissions).
 
 El modelo de negocio de carrito de compras consta de un pago por el monto total de la operación, efectuado por el comprador. Este pago se divide en los correspondientes pagos a cada Vendedor por la venta de su producto. A su vez, por cada pago realizado a los vendedores, el Marketplace puede retener una parte del monto de la venta en concepto de comisión.
 

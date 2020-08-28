@@ -1,6 +1,6 @@
 # ¿Cómo comparto mi link de pago?
 
-Una vez que hayas [creado tu link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/create-button/) desde tu cuenta de Mercado Pago, es hora de compartirlo con tus clientes.
+Una vez que hayas [creado tu link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/payment-link/create-button/) desde tu cuenta de Mercado Pago, es hora de compartirlo con tus clientes.
 
 ## Cobrar por redes sociales
 

@@ -9,7 +9,7 @@ Un pago puede ser rechazado por un error con el medio de pago o porque no se cum
 >
 > Nota
 >
-> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses).
 
 Para evitar pérdidas de ingresos de tu negocio y mejorar la experiencia de tus clientes, trabajamos con los emisores responsables de cada medio de pago y utilizamos las últimas tecnologías para evitar el fraude y aumentar la cantidad de pagos aprobados.
 
@@ -59,7 +59,7 @@ Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, pued
 >
 > Nota
 >
-> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses).
+> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses).
 
 ## Recomendaciones para mejorar tu aprobación
 
@@ -307,4 +307,4 @@ Por ejemplo, si un pago se rechaza por fondos insuficientes, puedes recomendarle
 >
 > Nota
 >
-> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses).
+> Si utilizas el Checkout Pro, no te preocupes, ya tienes configurados los mensajes según cada caso. Y si usas otro de nuestros productos, te recomendamos mostrar un [mensaje específico por cada motivo de rechazo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses).

@@ -34,4 +34,4 @@ Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are t
 > Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 
-#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/create-marketplace)
+#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-pro/create-marketplace)

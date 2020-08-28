@@ -456,8 +456,8 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Test](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/testing) section.
+For more information, go to the [Test](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/testing) section.
 
 ### Next steps
 
-- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/personalization) section.
+- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/personalization) section.

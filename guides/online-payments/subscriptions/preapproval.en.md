@@ -33,7 +33,7 @@
  
  ## Charge the first payment
  
- For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/receiving-payment-by-card/).
+ For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/).
  
  ## Create a customer and associate the used card
  
@@ -117,7 +117,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
  ## Retries
 
  If the payment without cvv is rejected, we recommend that you follow a retry logic according to the rejection status. For example, if the payment was rejected by expired card it does not make sense for a retry to be made. The client must be asked to inform another card to pay the following charges. In case the rejection is for insufficient funds, it makes sense that a logic of retries be made.
- You can see all the rejections [here](https://www.mercadopago.com.ar/developers/en/guides/payments/api/handling-responses)
+ You can see all the rejections [here](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/handling-responses)
  
  ## Test your integration
 

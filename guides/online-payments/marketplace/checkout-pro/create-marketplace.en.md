@@ -5,7 +5,7 @@
 >
 > Prerequisites
 >
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implemented.
+> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) implemented.
 ------------
 ----[mpe]----
 > WARNING

@@ -2471,4 +2471,4 @@ Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meio
 >
 > Enhance your integration and improve your sales management.
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/advanced-integration)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en//guides/online-payments/checkout-api/advanced-integration)

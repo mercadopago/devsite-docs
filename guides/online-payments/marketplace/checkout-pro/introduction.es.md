@@ -35,4 +35,4 @@ Las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> son l
 > ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
 
 
-#### [Comenzar a crear mi Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/web-checkout/create-marketplace)
+#### [Comenzar a crear mi Marketplace](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-pro/create-marketplace)

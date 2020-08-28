@@ -39,7 +39,7 @@ Para poder começar a integração, é necessário **contar com uma conta de Mer
 > 
 > Nota
 > 
-> Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/introduction/).
+> Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Marketplace](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-api/introduction/).
 
 ### 2. Gerar usuários de teste
 

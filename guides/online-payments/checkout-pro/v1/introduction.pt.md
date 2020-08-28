@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/).
 
 O Mercado Pago fornece as ferramentas necessárias para que você possa receber pagamentos através do nosso formulário web de forma simples, rápida e segura.
 
@@ -45,5 +45,5 @@ Integrar o checkout é muito fácil:
 
 Próximos passos
 
-* [Receba Pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/receive-payments/)
-* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)
+* [Receba Pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/receive-payments/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/testing/)

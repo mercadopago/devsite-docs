@@ -92,7 +92,7 @@ If you can't use our official SDKs, you will have all the information about data
 
 ## Meet the requirements for the production environment
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production/). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 
@@ -106,7 +106,7 @@ Once your integration is ready, you just need to fill out the form for to go to 
 >
 > Create and configure your own payment experience.
 >
-> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/receiving-payment-by-card/receiving-payment-by-card/)
+> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/receiving-payment-by-card/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN

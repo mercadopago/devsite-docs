@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/).
 
 Receba pagamentos de forma simples e segura utilizando o Checkout Pro.
 
@@ -397,7 +397,7 @@ Uma vez que a preferência é criada, use o URL que você encontra no attribute 
 </html>
 ```
 
-Você também pode personalizar o check-out inserindo este [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization)
+Você também pode personalizar o check-out inserindo este [Link](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/personalization)
 
 ## 3. Ative as notificações de pagamento
 
@@ -418,9 +418,9 @@ Você pode testar sua integração antes de partir para produção, a fim de ver
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a [seção de Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/v1/testing).
+Para mais informações, consulte a [seção de Testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/v1/testing).
 
 Próximos passos
 
-* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/personalization/)
-* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)
+* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/personalization/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/testing/)

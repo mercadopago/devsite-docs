@@ -52,4 +52,4 @@ Se sua conta Mercado Pago for da Colômbia, entre em contato com seu executivo d
 
 ### Gerar um token de cartão
 
-É necessário gerar o token de cartão do pagador para poder processar pagamentos com a API. Este guia assume que você já sabe [Como gerar um token de cartão](https://www.mercadopago.com.ar/developers/pt/guides/payments/api/receiving-payment-by-card).
+É necessário gerar o token de cartão do pagador para poder processar pagamentos com a API. Este guia assume que você já sabe [Como gerar um token de cartão](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card).

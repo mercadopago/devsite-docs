@@ -38,13 +38,13 @@ representativo que pode ser guardado de forma segura em seus servidores para cri
 
 Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 
-Forneceremos [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/marketplace/web-checkout/testing-marketplace) para que possa simular transações como se fossem reais.
+Forneceremos [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-pro/testing-marketplace) para que possa simular transações como se fossem reais.
 
-Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
+Assim que tiver testado sua aplicação, você deverá realizar o [processo de homologação](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
 **Antes de utilizar as credenciais de produção é preciso ativar suas credenciais** 
 Caso contrario se receberá o erro de "Invalid use of live credentials". 
 
 Sua aplicação será ativada automaticamente. Tudo o que deve fazer é substituir as chaves do _sandbox_ pelas de produção em seu código.
 
-#### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/create-marketplace).
+#### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-api/create-marketplace).

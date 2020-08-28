@@ -20,15 +20,15 @@ SSL                       | É um requisito que você tenha um certificado SSL.<
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Checkout Pro)](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/)
-    * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
+* [Checkout básico (Checkout Pro)](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/)
+    * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
     * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/)
 
 
 * Checkout Transparente
-    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card/)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/guides/payments/api/advanced-integration/)
-    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-payment-ways/)
+    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt//guides/online-payments/checkout-api/advanced-integration/)
+    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/other-payment-ways/)
     * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds)
 
 

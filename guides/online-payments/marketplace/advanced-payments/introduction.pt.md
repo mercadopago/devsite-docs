@@ -10,7 +10,7 @@ sites_supported:
 # Advanced Payments
 ## Introdução
 
-Advanced Payments é uma API que permite processar pagamentos com funcionalidades adicionais à [API de Payments](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction/) regular.
+Advanced Payments é uma API que permite processar pagamentos com funcionalidades adicionais à [API de Payments](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction/) regular.
 
 #### Pagamentos de Marketplace com split
 
@@ -20,7 +20,7 @@ A funcionalidade de Split de Pagamentos fornece uma solução para os pagamentos
 >
 > Nota
 >
-> Para mais informação dirija-se à documentação de [Marketplaces](https://www.mercadopago.com.br/developers/pt/guides/marketplace/api/introduction/).
+> Para mais informação dirija-se à documentação de [Marketplaces](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-api/introduction/).
 
 #### Divisão de pagamentos
 
@@ -41,4 +41,4 @@ A funcionalidade de Split de Pagamentos fornece uma solução para os pagamentos
 * O dinheiro dos seus vendedores será liberado em 30 dias por padrão.
 
 
-[Comece a usar pagamentos divididos no Marketplace](https://www.mercadopago.com.br/developers/pt/guides/marketplace/advanced-payments/receive-split-payments/).
+[Comece a usar pagamentos divididos no Marketplace](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/advanced-payments/receive-split-payments/).

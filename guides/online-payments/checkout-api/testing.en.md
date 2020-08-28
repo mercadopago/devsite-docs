@@ -97,7 +97,7 @@ To **test different payment results,** complete the information you want in the 
 
 ## Start receiving payments
 
-To start charging, you need to meet the [production environment requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/), and must <a href="[FAKER][CREDENTIALS][URL]" target="_blank">activate your credentials</a>.
+To start charging, you need to meet the [production environment requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production/), and must <a href="[FAKER][CREDENTIALS][URL]" target="_blank">activate your credentials</a>.
 
 Before activating them, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
 
@@ -110,7 +110,7 @@ Before activating them, verify that the credentials in your integration are thos
 >
 > Help your customers make error-free payments.
 >
-> [Error Response Handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/handling-responses/)
+> [Error Response Handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

@@ -2476,4 +2476,4 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 >
 > Otimize sua integração e melhore a gestão das suas vendas.
 >
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/advanced-integration)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt//guides/online-payments/checkout-api/advanced-integration)

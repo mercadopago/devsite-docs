@@ -41,7 +41,7 @@ By implementing these notifications, you will be able to find out all the update
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response Handling
 
-As mentioned in the [Handling Responses section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/handling-responses/), you should be shown the messages corresponding to the client, depending on the result of the payment, so that he can act in the correct way.
+As mentioned in the [Handling Responses section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/), you should be shown the messages corresponding to the client, depending on the result of the payment, so that he can act in the correct way.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be transparent with promotions and financing
 

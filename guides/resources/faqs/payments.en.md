@@ -68,7 +68,7 @@ Based on the type of checkout and integration used, the process may be different
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Pro
 
-You can remove the ticket option through the payment preference. For more details please refer to our [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_atributos_para_la_preferencia).
+You can remove the ticket option through the payment preference. For more details please refer to our [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout API
 
@@ -82,7 +82,7 @@ If you are selling through our plugins or e-commerce solutions ready to use, and
 
 ## Setting a date of expiration for the ticket
 
-By default, the date of expiration is 3 calendar days but you can set the [date of expiration for the ticket through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/other-payment-ways/) using the field `date_of_expiration`.
+By default, the date of expiration is 3 calendar days but you can set the [date of expiration for the ticket through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways/) using the field `date_of_expiration`.
 ------------
 
 ## Improve the approval process of your payments

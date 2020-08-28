@@ -40,7 +40,7 @@ Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mer
 >
 > Nota
 >
-> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/).
+> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-api/introduction/).
 
 
 ### 2. Generar usuarios de prueba

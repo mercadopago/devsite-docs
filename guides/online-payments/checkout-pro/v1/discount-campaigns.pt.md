@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/).
 
 Crie campanhas de desconto para impulsionar suas vendas utilizando as ferramentas de marketing da sua conta no Mercado Pago, entrando na seção Configurações para o seu Negócio: [Criar desconto](https://www.mercadopago.com.ar/campaigns/create).
 
@@ -38,5 +38,5 @@ Para saber se um pagamento teve algum desconto, veja se o atributo `coupon_id` n
 
 Próximos passos
 
-* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/personalization/)
-* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)
+* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/personalization/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/testing/)

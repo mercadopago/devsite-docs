@@ -230,7 +230,7 @@ Para isso, `back_urls` são usados. Esse redirecionamento pode ser automático a
 >
 > Nota
 >
-> Observe que as `backs_urls` só funcionam para o modo redirect e mobile. Ao usar o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/integration/) é considerado a URL do `form action` para voltar ao site.
+> Observe que as `backs_urls` só funcionam para o modo redirect e mobile. Ao usar o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration/) é considerado a URL do `form action` para voltar ao site.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
@@ -347,7 +347,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
 >
-> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/)
+> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON
 >
@@ -355,4 +355,4 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Customizações](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/customizations/)
+> [Customizações](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/customizations/)

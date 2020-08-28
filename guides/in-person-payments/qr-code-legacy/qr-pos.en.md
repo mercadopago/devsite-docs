@@ -196,7 +196,7 @@ Consult the [test data](https://www.mercadopago.com.mx/developers/es/guides/paym
 
 ### Errors
 
-[Here](https://www.mercadopago.com.mx/developers/en/guides/payments/api/handling-responses/) you can find our error dictionary.
+[Here](https://www.mercadopago.com.mx/developers/en/guides/online-payments/checkout-api/handling-responses/) you can find our error dictionary.
 
 ## Reports
 

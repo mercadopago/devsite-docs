@@ -40,7 +40,7 @@ If you don't have an account yet, you can [create one here](https://www.mercadop
 > 
 > Note
 > 
-> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/introduction/).
+> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-api/introduction/).
 
 ### 2. Generate test users
 

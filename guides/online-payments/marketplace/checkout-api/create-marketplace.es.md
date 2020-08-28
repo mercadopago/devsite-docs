@@ -4,7 +4,7 @@
 >
 > Pre-requisitos
 >
-> * Tener implementado ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction). ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction). ------------
+> * Tener implementado ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction). ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction). ------------
 
 Para comenzar debes:
 
@@ -132,7 +132,7 @@ Respuesta esperada:
 
 ## 3. Integra la API para recibir pagos
 
-Para recibir pagos en nombre de tus vendedores debes integrar la [API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction), utilizando el `access_token` de cada vendedor para tu aplicación.
+Para recibir pagos en nombre de tus vendedores debes integrar la [API](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/introduction), utilizando el `access_token` de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario, sólo debes agregar dicho monto en el parámetro `application_fee` al crear el pago:
 
@@ -261,4 +261,4 @@ Puedes encontrar más información en el artículo sobre [devoluciones y cancela
 
 Puedes probar tu Marketplace utilizando las credenciales de Sandbox de tu cuenta tanto para asociar a los vendedores como para realizar los cobros/cancelaciones y demás.
 Se podrá utilizar las tarjetas de test proporcionadas por Mercado Pago, y los distintos prefijos para manejar los mensajes de respuesta.
-[Probá tu integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/testing/)
+[Probá tu integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/testing/)

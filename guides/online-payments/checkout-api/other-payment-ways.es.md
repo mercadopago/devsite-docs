@@ -2475,4 +2475,4 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es//guides/online-payments/checkout-api/advanced-integration)

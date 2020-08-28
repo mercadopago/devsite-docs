@@ -38,7 +38,7 @@ Ao implementar essas notificações, você poderá descobrir todas as atualizaç
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar mensagens de resposta corretas
 
-Conforme mencionado na [seção Manipulação de respostas] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/), deve-se mostrar as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
+Conforme mencionado na [seção Manipulação de respostas] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/), deve-se mostrar as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seja transparente com as promoções e financiamentos
 
@@ -65,7 +65,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Revise que esteja tudo bem com sua integração utilizando os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/testing/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing/)
 
 > RIGHT_BUTTON
 >

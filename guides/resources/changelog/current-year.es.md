@@ -177,7 +177,7 @@ Lanzamos una nueva versión del SDK .NET 1.8.0.
 
 Lanzamos una nueva versión de Link de pago totalmente renovada. Diseñamos e implementamos una nueva experiencia a la hora de crear links de pago para compartir online por chat, e-mail o redes sociales.
 
-[Ir a documentación de Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/intro-button/)
+[Ir a documentación de Link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/payment-link/intro-button/)
 
 ---
 
@@ -285,11 +285,11 @@ Disponibilizamos una nueva versión de SDK .NET.
 Renovamos la documentación para usar nuestras APIs de pagos. Agregamos un ejemplo básico del formulario en el frontend y sumamos diagramas de funcionamiento para ayudarte a la hora de integrar.
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
-[Ir a documentación de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+[Ir a documentación de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction/)
 ------------
 
 ----[mlb]----
-[Ir a documentación de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/introduction/)
+[Ir a documentación de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction/)
 ------------
 
 ---
@@ -363,4 +363,4 @@ Lanzamos una nueva versión de Prestashop 1.6 & 1.7. Disponibilizamos el Checkou
 
 Si tienes campañas de publicidad para tu negocio, es importante que puedas seguirlas y ver si te están ayudando a concretar ventas. Para poder mejorarlas y que sean cada más eficientes, sumamos la posibilidad de asociar un píxel de Facebook y una etiqueta de seguimiento de conversiones de Google Ads a los pagos de tu Checkout Pro.
 
-[Comienza a medir la conversión de tus anuncios](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/).
+[Comienza a medir la conversión de tus anuncios](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations/).
