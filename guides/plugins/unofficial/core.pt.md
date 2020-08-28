@@ -134,7 +134,7 @@ Para **definir os meios de pagamento do contrato**, siga os passos abaixo:
 2. Localize o contrato criado e clique em "Editar".
 3. Localize a sessão meios de pagamento e defina qual a opção que o contrato quer refletir:
 
-- **Todos os meios de pagamento ativos na plataforma.** Irá permitir que todos os meios de pagamento habilitados na plataforma sejam refletidos para este contrato.
+- **Todos os meios de pagamento ativos na plataforma**. Irá permitir que todos os meios de pagamento habilitados na plataforma.
 - **Definidos abaixo.** Escolher quais meios de pagamento irão fazer parte do contrato criado.
 
 4. Clique em "Salvar".
