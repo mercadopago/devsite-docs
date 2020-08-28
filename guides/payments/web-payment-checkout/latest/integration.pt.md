@@ -303,7 +303,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Aceite pagamentos apenas de usuários cadastrados
+> Aceite somente usuários cadastrados
 >
 > Permite pagamentos apenas de usuários cadastrados no Mercado Pago, com cartão e dinheiro em conta.
 >
