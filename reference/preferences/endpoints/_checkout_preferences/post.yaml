@@ -16,6 +16,7 @@ use:
 - free_shipping
 - back_urls
 - notification_url
+- statement_descriptor
 - additional_info
 - auto_return
 - external_reference
