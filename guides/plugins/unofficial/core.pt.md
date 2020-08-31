@@ -119,7 +119,7 @@ Para **criar um contrato em sua loja**, siga os passos abaixo:
 1. No painel administrativo, acesse "Contratos" no menu Backoffice.
 1. Clique em “Adicionar Contrato".
 1. Preencha um nome para o contrato que está sendo criado.
-4. Por último, clique em "Salvar".
+1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
 <p>&nbsp;</p>
