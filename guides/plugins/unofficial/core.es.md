@@ -142,7 +142,6 @@ Para **definir los medios de pago para el contrato**, sigue estos pasos:
 - **Todos los medios de pago activos en la plataforma**. Permite que se muestren todos los métodos de pago habilitados en la plataforma.
 - **Definido a continuación**. Elige qué métodos de pago quieres que sean parte del contrato.
 
-
 1. Por último, haz clic en “Guardar”.
 
 <p>&nbsp;</p>
