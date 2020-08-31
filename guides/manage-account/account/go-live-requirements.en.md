@@ -11,4 +11,4 @@ During the tests you may not have it, but it is mandatory in order to go to prod
 
 With this process, you can guarantee the security of your customers' data, compliance with the regulations or legal provisions of each country and achieve the best shopping experience for your customers.
 
-[View the Terms and Conditions of Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/legal/terms-and-conditions).
+[View the Terms and Conditions of Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/legal/terms-and-conditions).

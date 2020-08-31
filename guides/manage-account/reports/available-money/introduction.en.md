@@ -57,7 +57,7 @@ In addition, you can use the report to know the history of balance available bet
 >
 > Learn the composition of the report and how to read it to make your reconciliation.
 >
-> [How to use the report](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/how-to-use/)
+> [How to use the report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_EN
 >
@@ -65,4 +65,4 @@ In addition, you can use the report to know the history of balance available bet
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your reports](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/generate/)
+> [Generate your reports](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/generate/)

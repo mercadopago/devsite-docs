@@ -309,7 +309,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -647,7 +647,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -929,7 +929,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -1366,7 +1366,7 @@ Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -1799,7 +1799,7 @@ Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com 
 >
 > Tenha em conta que Webpay cancelará automaticamente o pagamento caso não se realize em 30 minutos.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.cl/developers/es/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.cl/developers/es/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -2051,7 +2051,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -2392,7 +2392,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Data de expiração de boleto
 

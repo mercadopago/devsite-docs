@@ -414,7 +414,7 @@ To learn more about it, go to [Notifications](https://www.mercadopago.com.ar/dev
 
 The payment methods available for payments in cash must be paid from 3 to 5 days depending on each one.
 
-They **do not expire automatically**, so you’re required to [cancel the payment](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds) after expiration.
+They **do not expire automatically**, so you’re required to [cancel the payment](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds) after expiration.
 
 
 ## 5. Test the integration

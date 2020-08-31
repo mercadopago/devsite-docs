@@ -40,4 +40,4 @@ You’ll be able to charge, refund and receive notifications in your system.
 >
 > To integrate your system, it’s important to know you account data and access credentials.
 >
-> [Previous Requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)
+> [Previous Requirements](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/pre-requisites/)

@@ -141,7 +141,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/identification-types/).
+> Find more information in the [document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get card payment method
 
@@ -521,7 +521,7 @@ We recommend using [error response handling](https://www.mercadopago[FAKER][URL]
 >
 > Note
 >
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/payment-rejections/).
+> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections/).
 
 ## Receive payment notifications
 

@@ -8,9 +8,9 @@ Existen tres formas de generar un reporte de Dinero retirado:
 
 | Canales | Descripción |
 | ------- | ----------- |
-| Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de Reportes.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)<br/><br/> |
-| Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/api/) <br/><br/>|
-| Por retiro | <br/>Genera un reporte automáticamente cada vez que retires tu dinero a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/withdrawal/).<br/><br/> |
+| Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de Reportes.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/panel/)<br/><br/> |
+| Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/api/) <br/><br/>|
+| Por retiro | <br/>Genera un reporte automáticamente cada vez que retires tu dinero a una cuenta bancaria.<br/><br/>Sigue el paso a paso para [generar reportes por cada retiro de dinero](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/withdrawal/).<br/><br/> |
 
 
 ## Características técnicas del reporte
@@ -61,7 +61,7 @@ Todas las opciones que tienes disponibles a la hora de descargar tu reporte.
 >
 > Nota
 >
-> Ten a mano el [Glosario del reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -73,7 +73,7 @@ Todas las opciones que tienes disponibles a la hora de descargar tu reporte.
 >
 > Crea tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)
+> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -81,4 +81,4 @@ Todas las opciones que tienes disponibles a la hora de descargar tu reporte.
 >
 > Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
 >
-> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/api/)
+> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/api/)

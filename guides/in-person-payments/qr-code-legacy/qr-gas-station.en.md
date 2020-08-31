@@ -237,7 +237,7 @@ curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
 
 ## Refunds
 
-There will be times when you will need to [refund](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds/) a payment totally or partially.
+There will be times when you will need to [refund](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds/) a payment totally or partially.
 
 **Total Refund**
 

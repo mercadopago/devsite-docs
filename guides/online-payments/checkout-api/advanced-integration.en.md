@@ -673,7 +673,7 @@ curl -X GET \
 
 Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
 
 ---
 ### Next steps

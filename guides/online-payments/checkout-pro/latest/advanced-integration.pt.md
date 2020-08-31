@@ -320,21 +320,21 @@ Preference preference = new Preference();
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
 
 ## Cancelamentos e estornos
 
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
 As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
 
-Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos</a>.
+Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos</a>.
 
 ## Gerencie contestações
 
 Uma contestação ou chargeback acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento.
 Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da sua conta do Mercado Pago até que seja solucionada.
 
-<a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/chargebacks/" target="_blank"> Gerenciar contestações</a>
+<a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/chargebacks/" target="_blank"> Gerenciar contestações</a>
 
 ---
 

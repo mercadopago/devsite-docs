@@ -97,7 +97,7 @@ To **activate both checkouts**, follow these steps:
     ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
 <p>&nbsp;</p>
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
 
 ## Installments settings
 

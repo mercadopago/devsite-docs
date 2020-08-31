@@ -27,7 +27,7 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
 Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTIALS][URL]).
 
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 
 ### Paso 3: Obtener los datos
@@ -230,4 +230,4 @@ Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que u
 
 ### Promociones
 
-Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com.ar/developers/es/guides/banners/introduction/).
+Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com.ar/developers/es/guides/resources/banners/introduction/).

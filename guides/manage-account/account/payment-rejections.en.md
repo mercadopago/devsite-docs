@@ -294,7 +294,7 @@ Learn all about these attributes in our [API Reference](https://www.mercadopago[
 
 Send data about your industry to improve your approval.<br>
 
-[Go to industry data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/industry-data/additional-info)
+[Go to industry data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/industry-data/additional-info)
 
 ### Help your clients with their rejected payments
 

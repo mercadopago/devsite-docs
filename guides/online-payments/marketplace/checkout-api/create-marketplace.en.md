@@ -232,7 +232,7 @@ In case the Marketplace is the one that does the refund/cancellation, you´ll ha
 
 Cancellations can only be made using the cancellation API.
 
-For more information, go to [refunds and cancellations.](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds)
+For more information, go to [refunds and cancellations.](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds)
 
 ### Test your integration
 

@@ -410,7 +410,7 @@ Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es
 
 Los medios de pago en efectivo deben ser pagados entre los 3 a 5 días dependiendo de cada uno.
 
-El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds) luego del vencimiento.
+El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds) luego del vencimiento.
 
 
 ## 5. Prueba tu integración

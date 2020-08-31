@@ -153,7 +153,7 @@ Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en e
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encuentra más detalle en la [sección de tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/identification-types/).
+> Encuentra más detalle en la [sección de tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener método de pago de la tarjeta
 
@@ -532,7 +532,7 @@ Te recomendamos usar el [manejo de respuesta de error](https://www.mercadopago[F
 >
 > Nota
 >
-> Evita pagos rechazados con nuestras [recomendaciones para mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/payment-rejections/).
+> Evita pagos rechazados con nuestras [recomendaciones para mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections/).
 
 ## Recibe notificaciones de pago
 

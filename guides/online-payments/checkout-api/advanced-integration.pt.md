@@ -674,7 +674,7 @@ curl -X GET \
 
 Os cancelamentos se realizam quando um pagamento de boleto não se concretizou antes da data de vencimento e o vendedor decide cancelá-lo. E as devoluções ocorrem quando o pagamento se realizou mas o vendedor decide anulá-lo total ou parcialmente.
 
-Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/cancellations-and-refunds/).
+Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ---
 ### Próximos passos

@@ -165,7 +165,7 @@ curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTE
 
 ## Refunds
 
-There will be times when you will need to do a partial or total [refund](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds/).
+There will be times when you will need to do a partial or total [refund](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds/).
 
 **Total refund**
 

@@ -6,7 +6,7 @@ Once your integration is ready, to start receiving payments you must [activate y
 
 This process can ensure your customers' data security, compliance with legal standards or the provisions in each country, and the best shopping experience for your sales.
 
-[View the Terms and Conditions of Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/legal/terms-and-conditions).
+[View the Terms and Conditions of Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/legal/terms-and-conditions).
 
 ## What we validate?
 In order to ensure both the best integration quality and user experience for the end customer, from Mercado Pago we need certain conditions before going into production environment.
@@ -29,7 +29,7 @@ To prevent real payments being rejected by security non-compliance, you must add
 
 In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer have done suspicious payments in the past.
 
-You can see more information in the [Improves approval section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/payment-rejections/).
+You can see more information in the [Improves approval section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections/).
 
 ## Notifications and payment search
 
@@ -45,14 +45,14 @@ As mentioned in the [Handling Responses section](https://www.mercadopago[FAKER][
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be transparent with promotions and financing
 
-You need to be clear about which promotions are offered by Mercado Pago. You can [include a payment method banner](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/banners/introduction/) or [add a link to the promotions section](https://www.mercadopago.com/mla/credit_card_promos.htm). Besides, you need to inform [financing costs applicable to your customers](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
+You need to be clear about which promotions are offered by Mercado Pago. You can [include a payment method banner](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/banners/introduction/) or [add a link to the promotions section](https://www.mercadopago.com/mla/credit_card_promos.htm). Besides, you need to inform [financing costs applicable to your customers](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
 
 ----[mla]----
 > NOTE
 >
 > Note
 >
-> Per Resolution [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) from the Argentine Secretary of Trade, on transparent prices, you are required to comply with [additional requirements](https://www.mercadopago.com.ar/developers/en/guides/localization/considerations-argentina/).
+> Per Resolution [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) from the Argentine Secretary of Trade, on transparent prices, you are required to comply with [additional requirements](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/considerations-argentina/).
 ------------
 
 ## Make your terms and conditions available

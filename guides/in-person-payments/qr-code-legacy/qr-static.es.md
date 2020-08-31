@@ -34,4 +34,4 @@ Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado
 
 
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado](https://www.mercadopago.com.ar/developers/es/guides/qr-code-legacy/qr-pos)
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [QR integrado](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code-legacy/qr-pos)

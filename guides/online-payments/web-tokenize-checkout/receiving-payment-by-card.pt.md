@@ -25,7 +25,7 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
 ```
 Você pode encontrar sua Public key na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 ### Paso 3: Obter todos os dados
 
@@ -227,4 +227,4 @@ Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário
 
 ### Promoções
 
-Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago.com.ar/developers/pt/guides/banners/introduction/).
+Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago.com.ar/developers/pt/guides/resources/banners/introduction/).

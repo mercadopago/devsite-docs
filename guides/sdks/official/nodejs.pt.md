@@ -70,7 +70,7 @@ try {
 
 Obtenha sua **Access token** na sessão de [Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 Para configurar o SDK é preciso utilizar o método **configure**. Este método recebe um objeto JSON. As configurações válidas são:
 

@@ -37,7 +37,7 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.ar/developers/pt/guides/reports/available-money/glossary/) de Dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/available-money/glossary/) de Dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 
 ### Devoluções parciais
@@ -48,7 +48,7 @@ Se a devolução for maior ao montante que você ainda deve receber, não se pre
 
 ## Estornos
 
-Você pode ver no seu relatório quando um [estorno](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/chargebacks/) ou uma mediação é resolvido em favor do comprador. Você visualizará a lista com o detalhe de todas as parcelas, ou as que ainda não tenham sido liberadas, e o montante total pelo estorno do pagamento.
+Você pode ver no seu relatório quando um [estorno](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/chargebacks/) ou uma mediação é resolvido em favor do comprador. Você visualizará a lista com o detalhe de todas as parcelas, ou as que ainda não tenham sido liberadas, e o montante total pelo estorno do pagamento.
 
 Para identificar este caso, você pode ver na coluna `DESCRIPTION` o valor `chargeback` que corresponde aos estornos das parcelas que já tenham sido cobradas.
 
@@ -68,7 +68,7 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.ar/developers/pt/guides/reports/available-money/glossary/) de Dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/available-money/glossary/) de Dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 
 ### Próximos pasos
@@ -79,7 +79,7 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 >
 > Conheça as formas de gerar um relatório e siga os passos para configurar suas preferências.
 >
-> [Gere seu relatório de Dinheiro disponível](https://www.mercadopago.com.ar/developers/pt/guides/reports/available-money/generate/)
+> [Gere seu relatório de Dinheiro disponível](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -87,4 +87,4 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 >
 > Vamos lhe mostrar todas as informações necessárias sobre os dados dos seus relatórios e como lê-los.
 >
-> [Detalhamento de informações sobre seu relatório](https://www.mercadopago.com.ar/developers/pt/guides/reports/extra/reports-information-details/)
+> [Detalhamento de informações sobre seu relatório](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/extra/reports-information-details/)

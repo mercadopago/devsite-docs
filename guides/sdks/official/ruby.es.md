@@ -116,7 +116,7 @@ require 'mercadopago.rb'
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/). 
 
 
 ### Crear un pago

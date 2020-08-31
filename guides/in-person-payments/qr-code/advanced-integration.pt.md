@@ -13,7 +13,7 @@ sites_supported:
 
 ## Devoluções de seus pagamentos 
 
-As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor decide anulá-lo total ou parcialmente. Você poderá achar todas as informações na [seção Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/).
+As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor decide anulá-lo total ou parcialmente. Você poderá achar todas as informações na [seção Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 > WARNING
 > 
@@ -29,13 +29,13 @@ Se um tempo de expiração diverso for requerido, poderá enviar o header `X-Ttl
 
 ## Gere relatórios de suas vendas
 
-Integre os [relatórios de conciliação de Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/reports/general-considerations/reconciliation-reports/) com seu sistema para conciliar suas vendas e conhecer as movimentações de sua conta. 
+Integre os [relatórios de conciliação de Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/general-considerations/reconciliation-reports/) com seu sistema para conciliar suas vendas e conhecer as movimentações de sua conta. 
 
 
 ## Teste e valide sua integração
 
 Detalhamos todos os casos necessários que deve comprovar para validar que seu sistema esteja integrado corretamente com Mercado Pago. 
-Você pode achar todos os casos na [seção de Testes](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/integration-test/).
+Você pode achar todos os casos na [seção de Testes](https://www.mercadopago.com.ar/developers/pt/guides/in-person-payments/qr-code/integration-test/).
 
 ---
 ### Próximos passos
@@ -47,4 +47,4 @@ Você pode achar todos os casos na [seção de Testes](https://www.mercadopago.c
 >
 > Realize os casos de uso mais frequentes para validar sua integração.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/integration-test/)
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/integration-test/)

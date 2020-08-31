@@ -289,4 +289,4 @@ En caso de que la devolución la realice el Marketplace, se deberán utilizar la
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
+Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds).

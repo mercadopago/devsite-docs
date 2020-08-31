@@ -17,7 +17,7 @@ Os usuários de teste lhe permitem checar a integração de seu sistema com Merc
 
 Pra realizar os testes, é necessário ter pelo menos dois usuários: um comprador e um vendedor.
 
-> Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/pre-requisites/).
+> Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/in-person-payments/qr-code/pre-requisites/).
 
 Tipos de usuários | Descrição
 ----------------- | -------------------------------------
@@ -41,7 +41,7 @@ MasterCard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4170 0688 1010 8020 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
 
-Aqui você encontra mais [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards/).
+Aqui você encontra mais [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/local-cards/).
 
 ## Teste o fluxo de pagamento
 
@@ -68,7 +68,7 @@ Caso | Resultado esperado | Observações
 **Pagamento aprovado**. O usuário realiza um pagamento aprovado. | O sistema de Ponto de Venda recebe as informações de um pagamento aprovado. | Verifique recebimento de [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/).
 **Pagamento recusado**. O usuário realiza um pagamento recusado. | O sistema de Ponto de Venda recebe as informações de um pagamento recusado e continua esperando o pagamento do pedido.| O `status` da `merchant_order` deve ser **opened**.
 **Segunda tentativa de pagamento**. O usuário realiza primeiramente um pagamento recusado e depois um pagamento aprovado.| O sistema de Ponto de Venda recebe as informações de um pagamento recusado e depois um pagamento aprovado. | Não remover a ordem depois de um pagamento recusado. 
-**Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es).
+**Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es).
 **Cancelar ordem**. O usuário se arrepende e decide pagar em dinheiro.  | O pedido é eliminado e, portanto, ao escanear o QR somente é mostrada a tela de espera. | Remover a ordem de pagamento do caixa. 
 
 ## Quero ir para produção

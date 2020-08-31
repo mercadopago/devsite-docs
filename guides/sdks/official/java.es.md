@@ -38,7 +38,7 @@ Nuesto SDK es compatible con las versiones de Java 8 o superior.
       MercadoPago.SDK.setAccessToken("ACCESS_TOKEN");
     ```
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/). 
 
 3) Usando las clases del SDK.
 

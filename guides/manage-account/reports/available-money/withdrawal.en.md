@@ -24,7 +24,7 @@ Generate your reports every time you want to review a withdrawal
 >
 > Note
 >
-> Have the [Glossary](https://www.mercadopago.com/developers/en/guides/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
+> Have the [Glossary](https://www.mercadopago.com/developers/en/guides/manage-account/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 
 ## Generating through API
@@ -189,7 +189,7 @@ request(options, callback);
 >
 > You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
 >
-> [Generating from Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/panel/)
+> [Generating from Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/panel/)
 
 > RIGHT_BUTTON_REQUIRED_EN
 >
@@ -197,4 +197,4 @@ request(options, callback);
 >
 > Create reports in scheduled and manual ways through an integration with Mercado Pago.
 >
-> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/api/)
+> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/api/)

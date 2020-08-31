@@ -43,7 +43,7 @@ Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS
 3. Inicia el proceso de pago desde un botón en tu aplicación.
 4. Enterate del pago escuchando las notificaciones que te enviamos.
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 ## Añade la dependencia a tu proyecto
 [[[

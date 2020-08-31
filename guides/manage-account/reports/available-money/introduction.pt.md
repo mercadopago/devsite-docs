@@ -44,7 +44,7 @@ Além disso, você pode usar o relatório para saber o histórico do saldo dispo
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/glossary/) de dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/glossary/) de dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico
 
 <hr/>
 
@@ -56,7 +56,7 @@ Além disso, você pode usar o relatório para saber o histórico do saldo dispo
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
 >
-> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/how-to-use/)
+> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_PT
 >
@@ -64,4 +64,4 @@ Além disso, você pode usar o relatório para saber o histórico do saldo dispo
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/generate/)

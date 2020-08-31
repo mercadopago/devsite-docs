@@ -93,7 +93,7 @@ Ten en cuenta el paso de crear los dos usuarios de prueba, vendedor y comprador,
 Verifica si la identidad de la cuenta vendedor está validada en el panel de Mercado Pago. Ingresa en Mi cuenta > Mis datos > Verificar identidad.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suma nuestro código de seguridad en tu sitio
-Es importante que sumes en tu integración toda la información necesaria para [mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/payment-rejections/#bookmark_recomendaciones_para_mejorar_tu_aprobación).
+Es importante que sumes en tu integración toda la información necesaria para [mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections/#bookmark_recomendaciones_para_mejorar_tu_aprobación).
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Me rechazaron un pago

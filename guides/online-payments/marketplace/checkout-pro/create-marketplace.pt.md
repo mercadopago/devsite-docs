@@ -283,4 +283,4 @@ Caso a devolução seja realizada no Marketplace, deve-se utilizar as credenciai
 
 Os cancelamentos somente poderão ser efetuados utilizando a API de cancelamentos.
 
-Para mais informações, consulte a seção de [devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).
+Para mais informações, consulte a seção de [devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds).

@@ -165,7 +165,7 @@ curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTE
 
 ## Devoluciones
 
-Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) parcial o total de un pago.
+Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/) parcial o total de un pago.
 
 **Devolución total**
 

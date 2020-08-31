@@ -64,7 +64,7 @@ As características principais são:
 > 
 > Nota
 > 
-> Esta documentação refere-se à nova versão do QR Code. Para ver a versão anterior, vá para a seção [Código QR antigo](https://www.mercadopago.com.ar/developers/pt/guides/qr-code-legacy/introduction/).
+> Esta documentação refere-se à nova versão do QR Code. Para ver a versão anterior, vá para a seção [Código QR antigo](https://www.mercadopago.com.ar/developers/pt/guides/in-person-payments/qr-code-legacy/introduction/).
 
 ---
 ### Próximos passos
@@ -76,4 +76,4 @@ As características principais são:
 >
 > Para integrar seu sistema, é importante saber os detalhes da sua conta e suas credenciais de acesso.
 >
-> [Pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/pre-requisites/)
+> [Pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/in-person-payments/qr-code/pre-requisites/)

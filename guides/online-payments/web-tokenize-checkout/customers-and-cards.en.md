@@ -4,7 +4,7 @@
 >
 > Pre-requisites
 >
-> * Have the [card data capture](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/receiving-payment-by-card)implemented.
+> * Have the [card data capture](https://www.mercadopago.com.ar/developers/en/guides/online-payments/web-tokenize-checkout/receiving-payment-by-card)implemented.
 
 Customers and cards are the way to store card data of your customers **safely** to improve the shopping experience.
 

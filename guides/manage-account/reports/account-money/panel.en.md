@@ -16,7 +16,7 @@ Follow these steps to generate your reports:
 >
 > Note
 >
-> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
@@ -28,7 +28,7 @@ Follow these steps to generate your reports:
 >
 > Create reports in scheduled and manual ways through an integration with Mercado Pago.
 >
-> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/api)
+> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/api)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -36,4 +36,4 @@ Follow these steps to generate your reports:
 >
 > Know what each term means and the detail of the columns that make up the report.
 >
-> [Glossary](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/glossary)
+> [Glossary](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/glossary)

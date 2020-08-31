@@ -32,7 +32,7 @@ Las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> son l
 
 * La clave privada, o Access token, te va a permitir llamar al resto de las APIs. Por ejemplo, cómo procesar un pago, realizar un reembolso o almacenar tarjetas.
 
-> ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 
 #### [Comenzar a crear mi Marketplace](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-pro/create-marketplace)

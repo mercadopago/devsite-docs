@@ -471,7 +471,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ## Generar de forma manual
@@ -978,7 +978,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Descarga tus reportes de forma manual o programada desde tu cuenta de Mercado Pago.         
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/panel/)
+> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -986,4 +986,4 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/)
+> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/glossary/)

@@ -443,7 +443,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 
@@ -943,7 +943,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)
+> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -951,4 +951,4 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
 >
-> [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/withdrawal/)
+> [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/withdrawal/)

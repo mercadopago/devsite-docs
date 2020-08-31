@@ -4,13 +4,13 @@
 >
 > Nota
 >
-> Evita pagos rechazados con nuestras recomendaciones para [mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections).
+> Evita pagos rechazados con nuestras recomendaciones para [mejorar la aprobación de tus pagos](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections).
 
 En el caso de que un pago fuese rechazado puedes ofrecerle al comprador la opción de reintentarlo y recuperar la venta.
 
 En ese momento recibirás como respuesta el estado del pago *rechazado* (`rejected`) y es recomendable informarle al usuario dicho estado.
 
-Junto con la comunicación puedes ofrecer además la posibilidad de volver a ingresar los datos de tarjeta, **usando nuevamente el _Web Tokenize Checkout_**. También tienes la posibilidad de [cambiar el texto del botón](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/personalization) mediante el atributo `data-button-label` para complementar la comunicación.
+Junto con la comunicación puedes ofrecer además la posibilidad de volver a ingresar los datos de tarjeta, **usando nuevamente el _Web Tokenize Checkout_**. También tienes la posibilidad de [cambiar el texto del botón](https://www.mercadopago.com.ar/developers/es/guides/online-payments/web-tokenize-checkout/personalization) mediante el atributo `data-button-label` para complementar la comunicación.
 
 Por ejemplo:
 

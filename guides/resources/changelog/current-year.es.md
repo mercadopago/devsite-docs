@@ -69,7 +69,7 @@ Lanzamos una nueva versíon del SDK .NET 1.8.1.
 
 ¿Vas a integrar Mercado Pago para otra cuenta? Ahora puedes solicitar el acceso a sus credenciales de forma rápida y segura.
 
-[Conocer más sobre cómo solicitar credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/)
+[Conocer más sobre cómo solicitar credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/)
 
 ---
 
@@ -324,7 +324,7 @@ https://api.mercadolibre.com/account/bank_report/search?access_token={{access_to
 
 ```
 
-> Para más información sobre la programación de reportes, [consulta la documentación](https://www.mercadopago.com.ar/developers/es/guides/reports/general-considerations/reconciliation-reports/).
+> Para más información sobre la programación de reportes, [consulta la documentación](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/general-considerations/reconciliation-reports/).
 
 
 ### 19 de marzo

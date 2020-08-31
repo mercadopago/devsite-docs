@@ -95,7 +95,7 @@ Don’t forget to create both test users, seller and buyer, to avoid rejected pa
 Verify if the id of the seller’s account is validated in the Mercado Pago panel. Go to My account > My details > Verify identity.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add our security code into your website
-It is important to add to your integration all the necessary information to [improve the approval process of your payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/payment-rejections/#bookmark_tips_to_improve_the_approval_process).
+It is important to add to your integration all the necessary information to [improve the approval process of your payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections/#bookmark_tips_to_improve_the_approval_process).
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A payment has been rejected

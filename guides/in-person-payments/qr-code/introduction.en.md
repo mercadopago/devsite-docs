@@ -62,7 +62,7 @@ The main characteristics are:
 > 
 > Note
 > 
-> This documentation refers to the new version of QR Code. To see the previous version, go to the [Old QR Code section](https://www.mercadopago.com.ar/developers/en/guides/qr-code-legacy/introduction/).
+> This documentation refers to the new version of QR Code. To see the previous version, go to the [Old QR Code section](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code-legacy/introduction/).
 
 ---
 ### Next steps
@@ -74,4 +74,4 @@ The main characteristics are:
 >
 >  To integrate your system, it is important to know your account details and your access credentials.
 >
-> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/qr-code/pre-requisites/)
+> [Previous requirements](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/pre-requisites/)

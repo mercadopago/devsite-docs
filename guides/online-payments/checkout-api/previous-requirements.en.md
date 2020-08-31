@@ -11,7 +11,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
-> Do you have any questions about credentials? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/).
+> Do you have any questions about credentials? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials/).
 
 
 ## Always use our libraries

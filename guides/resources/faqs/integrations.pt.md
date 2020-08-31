@@ -47,7 +47,7 @@ Diferente do Checkout Pro, facilitamos a criação de uma experiência de pagame
 
 - **Você estará sempre atualizado.** Você pode oferecer para seus compradores uma experiência que o Mercado Pago mantém em constante aperfeiçoamento.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.br/developers/pt/guides/payments/web-tokenize-checkout/introduction)
+[Integrar Web Tokenize](https://www.mercadopago.com.br/developers/pt/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -93,7 +93,7 @@ Seu cliente paga sem juros, e você absorve o custo do financiamento, por isso, 
 
 Por enquanto, não oferecemos a opção de habilitar o Mercado Envios aos novos negócios que se integrem, porque isso pode gerar erro. Esta opção está disponível somente para as vendas no Mercado Livre.
 
-Sentimos muito, mas, lembre-se de que você pode usar as nossas [ferramentas exclusivas para vendedores](https://www.mercadopago.com.br/developers/pt/guides/faqs/myaccount) quando quiser.
+Sentimos muito, mas, lembre-se de que você pode usar as nossas [ferramentas exclusivas para vendedores](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/myaccount) quando quiser.
 
 ## Como gerenciar as vendas de clientes no meu site
 

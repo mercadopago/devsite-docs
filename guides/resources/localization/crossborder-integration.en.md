@@ -966,4 +966,4 @@ The refund of a payment is made in the local currency of the operation (for exam
 
 For this, it will be necessary for you to search for the payment by means of the `payment_id` and obtain the` currency_conversion`.
 
-You can get more information about the returns API in the following [link](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds).
+You can get more information about the returns API in the following [link](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds).

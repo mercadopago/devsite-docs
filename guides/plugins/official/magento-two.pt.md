@@ -22,14 +22,14 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 * [Checkout básico (Checkout Pro)](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/)
     * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/)
+    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds/)
 
 
 * Checkout Transparente
     * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
     * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt//guides/online-payments/checkout-api/advanced-integration/)
     * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/other-payment-ways/)
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds)
+    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds)
 
 
 * Outras funcionalidades
@@ -83,7 +83,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 > Existem dois tipos de credenciais:
 > * Modo Sandbox: As credenciais desse modo são utilizadas para realizar testes.
 > * Modo Produção: As credenciais desse modo são utilizadas para receber os pagamentos em Produção. Para utilizar as credenciais do Modo Produção é necessário ativar suas credenciais.
-> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 3) Com as credenciais preenchidas, é necessário habilitar os métodos de pagamento. Acesse a opção **Custom Checkout - Credit And Debit Card**, clique no botão **Configure** e marque a opção **Enable** como **Yes**. Faça esse processo também para **Custom Checkout - Offline Payments Methods (Ticket)** e logo seguida clique em **Save Config**.
 

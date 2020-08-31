@@ -41,7 +41,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 - **Siempre vas a estar actualizado.** Podés brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
+[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -123,7 +123,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 - **Siempre vas a estar actualizado.** Puedes brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
+[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -211,7 +211,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 - Siempre vas a estar actualizado. Puedes brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
+[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -284,7 +284,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 - **Siempre vas a estar actualizado.** Puedes brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
+[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -349,7 +349,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 - **Siempre vas a estar actualizado.** Puedes brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.uy/developers/es/guides/payments/web-tokenize-checkout/introduction/)
+[Integrar Web Tokenize](https://www.mercadopago.com.uy/developers/es/guides/online-payments/web-tokenize-checkout/introduction/)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -427,7 +427,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 - **Siempre vas a estar actualizado.** Puedes brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/payments/web-tokenize-checkout/introduction)
+[Integrar Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API

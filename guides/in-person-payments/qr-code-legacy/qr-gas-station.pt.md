@@ -238,7 +238,7 @@ Depois que o usuário fizer o pagamento, você poderá obter os dados usando qua
 
 ## Devoluções
 
-Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/) parcial ou total de um pagamento.
+Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds/) parcial ou total de um pagamento.
 
 **Devolução total**
 

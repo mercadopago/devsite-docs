@@ -32,7 +32,7 @@ representativo que pode ser guardado de forma segura em seus servidores para cri
 
 * A chave privada, ou Access token, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas confidencialmente em seus servidores de backend e nunca devem ser publicadas.
 
-> Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 
 #### [Começar a criar meu Marketplace](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-pro/create-marketplace)

@@ -142,7 +142,7 @@ Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), qu
 | Perú    	 | 4009 1753 3280 6176 | no disponible     | no disponible    |
 | Uruguay  	 | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible    |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/local-cards).
 
 Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Para ello debes ingresar en el formulario en el campo `card_holder_name` alguno de los siguientes prefijos:
 

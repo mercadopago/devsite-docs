@@ -90,7 +90,7 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > Learn the options to take your integration to the next level.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -99,4 +99,4 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > Try the most frequent use cases to validate your integration.
 >
-> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integration-test/)
+> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/integration-test/)

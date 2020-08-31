@@ -25,7 +25,7 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 | Caixa (POS) | É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado.  |
 | Ordem | É o pedido realizado pelo seu cliente. Contém uma relação de produtos com seu valor associado. 
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 ## Requisitos prévios
 
@@ -94,4 +94,4 @@ Uma vez que os usuários de teste são criados, você pode começar com a integr
 >
 > Para realizar a integração, primeiramente deverá configurar suas sucursais e caixas.
 >
-> [Lojas e Caixas](https://www.mercadopago.com.br/developers/pt/guides/qr-code/stores-pos/)
+> [Lojas e Caixas](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/stores-pos/)

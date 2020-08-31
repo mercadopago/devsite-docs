@@ -30,7 +30,7 @@ ID 62.08: Purpose of Transaction | Título descritivo referido ao propósito da 
 ID 63: CRC |  Checksum - Validação do conteúdo.  | 04 | Obrigatório 
 
 
->Para saber mais sobre as informações que você deve fornecer sobre a sua conta, [consulte o glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/pre-requisites/#bookmark_glosario).
+>Para saber mais sobre as informações que você deve fornecer sobre a sua conta, [consulte o glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/pre-requisites/#bookmark_glosario).
 
 
 
@@ -93,7 +93,7 @@ Com as informações obtidas, você já pode gerar o seu QR!
 
 ## Testes
 
-Para criar o QR, você precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/integration-test/) para vender e um outro usuário para escanear e pagar no App de Mercado Pago ou Mercado Livre.
+Para criar o QR, você precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integration-test/) para vender e um outro usuário para escanear e pagar no App de Mercado Pago ou Mercado Livre.
 
 > NOTE
 >
@@ -125,4 +125,4 @@ Depois disso, mostre o QR ao seu cliente, como preferir, para que ele o pague. E
 >
 > Conheça as opções que você tem para levar sua integração ao próximo nível.
 >
-> [Integrar modelo QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/advanced-integration/)
+> [Integrar modelo QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/advanced-integration/)

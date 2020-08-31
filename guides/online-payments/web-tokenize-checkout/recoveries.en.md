@@ -4,13 +4,13 @@
 >
 > Note
 >
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections).
+> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/payment-rejections).
 
 In the event that a payment is rejected you can offer the buyer the option to retry it and recover the sale.
 
 At that moment you will receive the response status *rejected* (`rejected`) and it is advisable to inform the user of said status.
 
-Along with the communication you can also offer the possibility of re-entering the card data, **using the _Web Tokenize Checkout_ again**. You also have the opportunity to [change the button text](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/personalization) using the `data-button-label` attribute to complement the communication.
+Along with the communication you can also offer the possibility of re-entering the card data, **using the _Web Tokenize Checkout_ again**. You also have the opportunity to [change the button text](https://www.mercadopago.com.ar/developers/en/guides/online-payments/web-tokenize-checkout/personalization) using the `data-button-label` attribute to complement the communication.
 
 For example:
 

@@ -24,7 +24,7 @@ Desde la preferencia de pagos no sólo puedes enviar información del item a pag
 
 ### Define tipos y métodos de pago
 
-Por defecto ofrecemos todos los medios de pago disponibles para el país en el estás que realizando la integración. Si tu modelo de negocio no soporta alguno de éstos [tipos de pago](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods), o bien no deseas aceptar algún [método en particular](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), puedes excluirlo cuando generas la preferencia de pagos.
+Por defecto ofrecemos todos los medios de pago disponibles para el país en el estás que realizando la integración. Si tu modelo de negocio no soporta alguno de éstos [tipos de pago](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/payment-methods), o bien no deseas aceptar algún [método en particular](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLA&marketplace=NONE), puedes excluirlo cuando generas la preferencia de pagos.
 
 Además puedes definir qué medio de pago o qué cantidad de cuotas deseas que se muestren por defecto, así como también la cantidad de cuotas máximas a ofrecer.
 

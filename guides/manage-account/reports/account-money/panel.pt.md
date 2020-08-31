@@ -17,7 +17,7 @@ Siga estas etapas para gerar seus relatórios:
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 <hr/>
 
@@ -29,7 +29,7 @@ Siga estas etapas para gerar seus relatórios:
 >
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
-> [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/api)
+> [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/api)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -37,4 +37,4 @@ Siga estas etapas para gerar seus relatórios:
 >
 > Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
 >
-> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary)
+> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/glossary)

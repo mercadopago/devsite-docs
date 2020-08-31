@@ -17,7 +17,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -29,7 +29,7 @@ Sigue estos pasos para generar tus reportes:
 >
 > Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
 >
-> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/api)
+> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/api)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -37,4 +37,4 @@ Sigue estos pasos para generar tus reportes:
 >
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary)
+> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/glossary)

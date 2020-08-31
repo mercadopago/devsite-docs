@@ -125,7 +125,7 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 >
 > Conheça as opções disponíveis para chegar à integração para o seguinte nível.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/qr-code/advanced-integration/)
+> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_PT
@@ -134,4 +134,4 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 >
 > Realiza os casos de uso mais frequentes para validar sua integração.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/qr-code/integration-test/)
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/integration-test/)

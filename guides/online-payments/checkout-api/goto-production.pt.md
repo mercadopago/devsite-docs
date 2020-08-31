@@ -6,7 +6,7 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, v
 
 Com esse processo, se garante a segurança dos dados dos seus clientes, o cumprimento das normas e disposições legais de cada país e a melhor experiência de compra para as suas vendas.
 
-[Conheça os termos e condições do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/legal/terms-and-conditions).
+[Conheça os termos e condições do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/legal/terms-and-conditions).
 
 ## O que validamos?
 A fim de garantir tanto a melhor qualidade de integração e experiência do usuário para o cliente final, no Mercado Pago precisamos que certos requisitos sejam atendidos antes de ir para produção.
@@ -26,7 +26,7 @@ Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um c
 Para evitar que um pagamento real seja recusado por não atender as validações de segurança, é necessário somar todas as informações possíveis na hora de realizar a operação.
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, você poderá enviar para nós os dados do comprador e do item para que os analisemos. Por exemplo, se você enviar essas informações para nós, poderemos detectar se esse comprador realizou pagamentos suspeitos em outro momento e preveni-lo.
 
-Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/payment-rejections/).
+Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections/).
 
 ## Notificações e pesquisa de pagamento
 
@@ -42,14 +42,14 @@ Conforme mencionado na [seção Manipulação de respostas] (https://www.mercado
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seja transparente com as promoções e financiamentos
 
-Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/introduction/) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
+Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction/) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
 > NOTE
 >
 > Nota
 >
-> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigências adicionais](https://www.mercadopago.com.ar/developers/es/guides/localization/considerations-argentina/).
+> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigências adicionais](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/considerations-argentina/).
 ------------
 
 ## Disponibilize seus termos e condições

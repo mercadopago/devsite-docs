@@ -45,7 +45,7 @@ Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y 
 >
 > Ten en cuenta que el [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
 
-* Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
+* Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
 
 * Establece el máximo de cuotas en el que podrán pagarte.
 

@@ -48,7 +48,7 @@ It's the simplified version of the Checkout Pro with a renewed user experience.
 
 - **You will always be up to date.** You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
 
-[Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/introduction)
+[Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/online-payments/web-tokenize-checkout/introduction)
 
 ### Checkout API
 

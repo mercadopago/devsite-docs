@@ -8,9 +8,9 @@ Há três formas de gerar um relatório de Dinheiro disponível:
 
 | Canais | Descrição |
 | ------- | ----------- |
-| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [Relatórios](https://www.mercadopago.com.br/balance/reports) e selecione uma opção de *Relatórios*.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel.](https://www.mercadopago.com.brar/developers/pt/guides/reports/available-money/panel/)<br/><br/> |
-| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API.](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/api/) <br/><br/>|
-| Com retirada de dinheiro | <br/>Gere um relatório automaticamente cada vez que retirar seu dinheiro disponível para uma conta bancária. <br/><br/>Siga o passo a passo para  [gerar relatórios para cada retirada de dinheiro.](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/withdrawal/)<br/><br/> |
+| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [Relatórios](https://www.mercadopago.com.br/balance/reports) e selecione uma opção de *Relatórios*.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel.](https://www.mercadopago.com.brar/developers/pt/guides/manage-account/reports/available-money/panel/)<br/><br/> |
+| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API.](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/api/) <br/><br/>|
+| Com retirada de dinheiro | <br/>Gere um relatório automaticamente cada vez que retirar seu dinheiro disponível para uma conta bancária. <br/><br/>Siga o passo a passo para  [gerar relatórios para cada retirada de dinheiro.](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/withdrawal/)<br/><br/> |
 
 
 ## Características técnicas do relatório
@@ -61,7 +61,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 <hr/>
 
@@ -73,7 +73,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 >
 > Crie seus relatórios de forma manual ou programada a partir da sua conta do Mercado Pago.
 >
-> [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/panel/)
+> [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -81,4 +81,4 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 >
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
-> [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/api/)
+> [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/api/)

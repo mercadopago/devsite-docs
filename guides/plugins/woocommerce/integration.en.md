@@ -17,7 +17,7 @@ Once the module is installed, follow these steps to integrate:
 
 Done! With this you can capture the payments you receive in WooCommerce with your Mercado Pago account.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/). 
 
 ![Credentials flow](/images/woocomerce/es_woo_credenciales.gif)
 
@@ -25,7 +25,7 @@ Done! With this you can capture the payments you receive in WooCommerce with you
 >
 > Important
 >
-> The [credentials](https://www.mercadopago.com.ar/developers/en/guides/localization/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** with which to simulate online payments, use the test credentials. Use **production** credentials to receive real payments.
+> The [credentials](https://www.mercadopago.com.ar/developers/en//guides/resources/localization/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** with which to simulate online payments, use the test credentials. Use **production** credentials to receive real payments.
 
 
 ---

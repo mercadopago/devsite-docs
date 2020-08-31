@@ -35,4 +35,4 @@ Las características principales son:
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Cómo integrar QR dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic/qr-dinamic-part-b/)
+> [Cómo integrar QR dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-dinamic/qr-dinamic-part-b/)

@@ -24,7 +24,7 @@ Genera tus reportes cada vez que quieras consultar un retiro de dinero
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com/developers/es/guides/manage-account/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ## Generar por API
@@ -207,7 +207,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/panel/)
+> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -215,4 +215,4 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 >
 > Crea reportes de forma programada y manual por medio de una integración con Mercado Pago.
 >
-> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/api/)
+> [Generación por API](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/api/)

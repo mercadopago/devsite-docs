@@ -11,7 +11,7 @@ Las credenciales son las **claves que te proporcionamos para que puedas configur
 
 Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
-> ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
+> ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
 
 ## Utiliza nuestras librerías siempre
 Es importante que siempre utilices nuestras librerías oficiales para tu integración. Esto permite cuidar los datos sensibles de tus clientes, cumplir con los estándares de seguridad requeridos y estar siempre actualizado.

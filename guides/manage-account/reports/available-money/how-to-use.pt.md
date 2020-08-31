@@ -34,7 +34,7 @@ Você verá o saldo disponível das transações liberadas nas colunas `NET_CRED
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório ](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório ](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 **Você quer adicionar detalhes à visualização das transações?**
 
@@ -71,7 +71,7 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -79,4 +79,4 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
 >
-> [Glossário](https://www.mercadopago.com.br/developers/pr/guides/reports/available-money/glossary/)
+> [Glossário](https://www.mercadopago.com.br/developers/pr/guides/manage-account/reports/available-money/glossary/)
