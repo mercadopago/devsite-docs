@@ -104,7 +104,6 @@ Para **configurar los datos para Boleto Bancário en su tienda**, sigue estos pa
 1. Ingresa a tu cuenta de Mercado Pago y ve a “Tu negocio”.
 1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
-
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
