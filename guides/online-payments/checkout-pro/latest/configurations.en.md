@@ -19,6 +19,7 @@ You can [get business information](https://www.mercadopago.com.ar/developers/en/
 
 ```json
 {
+    "purpose": "wallet_purchase",
     "items": [
         {
             "id": "item-ID-1234",
@@ -81,6 +82,7 @@ You can [get business information](https://www.mercadopago.com.ar/developers/en/
 
  ```json
 {
+  "purpose": "wallet_purchase",
 	"items": [
 		{
 			"id": "item-ID-1234",
@@ -171,6 +173,7 @@ _`payment_methods`_ | Class that describes the attributes and methods of payment
 _`excluded_payment_methods`_ | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others.
 _`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards.
 _`installments`_ | Method that defines the amount of maximum number of installments to offer.
+_`purpose`_ | When the "wallet purchase" value is indicated, Checkout will accept payments exclusively from Mercado Pago registered users, with card and account balance.
 
 [[[
 ```php
@@ -409,6 +412,29 @@ curl -X POST \
 }'
 ```
 ]]]
+
+## Accept payments from registered users only
+
+You can accept payments exclusively from Mercado Pago registered users, with card and account balance, adding the following attribute:
+
+```json
+"purpose": "wallet_purchase"
+```
+
+When you add it, your preference would be as follows:
+
+```json
+{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "My product",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+}
+```
 
 ## Shipment cost
 

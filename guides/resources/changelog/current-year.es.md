@@ -4,6 +4,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Septiembre 2020
+
+### 3 de septiembre
+
+> CHANGELOG
+>
+> Optimiza tus ventas aceptando pagos de usuarios registrados
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+Para que puedas optimizar tus ventas, agregamos un nuevo atributo que te permitirá recibir pagos solo de usuarios registrados, en el Checkout Pro. Esto significa que tus compradores te pagarán exclusivamente con sus tarjetas guardadas o con su dinero en cuenta.  
+
+[Comenzar a recibir pagos solamente de usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
+
+---
+
 ## Agosto 2020
 
 ### 27 de agosto

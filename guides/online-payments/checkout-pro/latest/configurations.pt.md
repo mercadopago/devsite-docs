@@ -18,6 +18,7 @@ Através da preferência, você pode [obter informações de negócio](https://w
 
 ```json
 {
+    "purpose": "wallet_purchase",
     "items": [
         {
             "id": "item-ID-1234",
@@ -80,6 +81,7 @@ Através da preferência, você pode [obter informações de negócio](https://w
 
  ```json
 {
+  "purpose": "wallet_purchase",
 	"items": [
 		{
 			"id": "item-ID-1234",
@@ -163,14 +165,13 @@ Através da preferência, você pode [obter informações de negócio](https://w
 Por padrão, todos os meios de pagamento são oferecidos. Se você quiser excluir algum deles, pode fazer isso pela preferência de pagamento.
 Você também pode definir um meio de pagamento para que apareça por padrão ou definir o número máximo de parcelas a oferecer.
 
-
-
 Atributo | Descrição
 ------------ | -------------
 _`payment_methods`_ | Classe que descreve os atributos e métodos de meios de pagamento.
 _`excluded_payment_methods`_ | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros.
 _`excluded_payment_types`_ | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica).
 _`installments`_ | Método que define o número máximo de parcelas a oferecer
+_`purpose`_ | Quando for indicado o valor "wallet_purchase", o Checkout aceitará pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta.
 
 [[[
 ```php
@@ -435,6 +436,29 @@ curl -X POST \
 }'
 ```
 ]]]
+
+## Aceitar pagamentos somente de usuários cadastrados
+
+Você pode aceitar pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta, adicionando o seguinte atributo:
+
+```json
+"purpose": "wallet_purchase"
+```
+
+Ao adicioná-lo, sua preferência ficaria da seguinte forma:
+
+```json
+{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Meu produto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+}
+```
 
 ## Valor do envio
 
