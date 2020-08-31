@@ -122,7 +122,6 @@ Para **crear un contrato en tu tienda**, sigue estos pasos:
 1. Haz clic en “Agregar Contrato”. 
 1. Completa el nombre para el contrato que estás creando 
 1. Por último, haz clic en “Guardar”.
-
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
 <p>&nbsp;</p>
