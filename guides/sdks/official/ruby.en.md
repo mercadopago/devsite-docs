@@ -117,7 +117,7 @@ require 'mercadopago.rb'
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
-> Find all the information about your credentials in our. [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
+> Find all the information about your credentials in our. [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/). 
 
 ### Create payment
 

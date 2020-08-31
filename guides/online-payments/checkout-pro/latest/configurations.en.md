@@ -4,13 +4,13 @@
 You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
 ----[mla, mlb]----
-If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-If you offer purchases of high amounts, for example, you can [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+If you offer purchases of high amounts, for example, you can [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
 ------------
 
-You can [get business information](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_get_information_about_your_business) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_associate_a_facebook_pixel) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/configurations#bookmark_associate_a_google_ads_tag).
+You can [get business information](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_get_information_about_your_business) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_facebook_pixel) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_google_ads_tag).
 
 
 ## Example of a complete preference
@@ -168,8 +168,8 @@ You can also set a payment method to appear by default or define the maximum num
 Attribute | Description
 ------------ | -------------
 _`payment_methods`_ | Class that describes the attributes and methods of payment methods.
-_`excluded_payment_methods`_ | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others.
-_`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards.
+_`excluded_payment_methods`_ | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others.
+_`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards.
 _`installments`_ | Method that defines the amount of maximum number of installments to offer.
 
 [[[
@@ -799,7 +799,7 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced Integration](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/advanced-integration/)
+> [Advanced Integration](http://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -807,4 +807,4 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 >
 > Adapt the style of your brand in the buying experience.
 >
-> [Customization](http://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/customizations/)
+> [Customization](http://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/customizations/)

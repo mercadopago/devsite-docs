@@ -118,5 +118,5 @@ Entre em contato com seu executivo de conta.
 
 ### Próximos passos
 
-* [Integre o Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/gateway/web-checkout/receiving-payments) no Modelo Gateway.
-* [Integre o API](https://www.mercadopago.com.ar/developers/es/guides/gateway/api/receiving-payments) no Modelo Gateway.
+* [Integre o Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/checkout-pro/receiving-payments) no Modelo Gateway.
+* [Integre o API](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/checkout-api/receiving-payments) no Modelo Gateway.

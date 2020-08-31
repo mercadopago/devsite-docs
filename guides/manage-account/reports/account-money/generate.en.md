@@ -7,8 +7,8 @@ There are two ways to generate an Available Balance report:
 
 | Channels | Description |
 | ------- | ----------- |
-| Mercado Pago panel | <br/> It's very simple and fast. To generate it from your Mercado Pago account, go to ----[mla]---- [your reports](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [your reports](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [your reports](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [your reports](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [your reports](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [your reports](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [your reports](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ and choose the Reports option.<br/><br/>Follow the step by step to [generate reports from this panel](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/panel/).<br/><br/> |
-| API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/api/). <br/><br/>|
+| Mercado Pago panel | <br/> It's very simple and fast. To generate it from your Mercado Pago account, go to ----[mla]---- [your reports](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [your reports](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [your reports](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [your reports](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [your reports](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [your reports](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [your reports](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ and choose the Reports option.<br/><br/>Follow the step by step to [generate reports from this panel](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/panel/).<br/><br/> |
+| API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/api/). <br/><br/>|
 
 <br/>
 
@@ -55,7 +55,7 @@ All the options you have available when downloading your report.
 >
 > Note
 >
-> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/glossary/) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
@@ -67,7 +67,7 @@ All the options you have available when downloading your report.
 >
 > Download your reports manually or scheduled from your Mercado Pago account.
 >
-> [Generating from Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/panel/)
+> [Generating from Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -75,4 +75,4 @@ All the options you have available when downloading your report.
 >
 > Create reports in a scheduled and manual way through an integration with Mercado Pago.
 >
-> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/api/)
+> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/api/)

@@ -20,7 +20,7 @@ indexable: false
 >
 > Pre-requisito
 >
-> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction) de **API**
+> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/introduction) de **API**
 
 
 ## Nuevos conceptos
@@ -153,4 +153,4 @@ curl -X POST \
 
 ### Próximos pasos
 
-* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/gateway/general-considerations/reconciliation/)
+* [Conciliá tus operaciones](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/general-considerations/reconciliation/)

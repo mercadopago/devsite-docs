@@ -515,10 +515,10 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/testing).
+Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/testing).
 
 
 ### Próximos passos
 
-- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/v3/personalization) para adequar o fluxo de pagamento às suas necessidades.
-- Para informações sobre como testar, vá para a seção [testando a integração](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/v3/testing).
+- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/v3/personalization) para adequar o fluxo de pagamento às suas necessidades.
+- Para informações sobre como testar, vá para a seção [testando a integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/v3/testing).

@@ -97,5 +97,5 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Cómo integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-unattended/qr-unattended-part-b/)
+> [Cómo integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b/)
 

@@ -31,7 +31,7 @@ Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are t
 
 * The private key, or Access Token, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
 
-> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 
-#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/create-marketplace)
+#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-pro/create-marketplace)

@@ -450,7 +450,7 @@ Para mais informações, consulte a seção de [Notificações](https://www.merc
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
 
 ### Teste a integração
 
@@ -458,8 +458,8 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/testing).
+Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/testing).
 
 ### Próximos passos
 
-- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/payments/mobile-checkout/personalization) para adequar o fluxo de pagamento às suas necessidades.
+- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/personalization) para adequar o fluxo de pagamento às suas necessidades.

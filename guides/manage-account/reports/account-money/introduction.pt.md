@@ -34,7 +34,7 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/glossary/) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/glossary/) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 
 ### Próximos passos
@@ -45,7 +45,7 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo.
 >
-> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/how-to-use/)
+> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_PT
 >
@@ -53,4 +53,4 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/account-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/generate/)

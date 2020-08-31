@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Possuir a ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction) ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/introduction) ------------ implementado.
+> * Possuir a ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) ------------ implementado.
 
 Para começar, você deve:
 
@@ -133,7 +133,7 @@ Resposta esperada:
 
 ## 3. Integre a API para receber pagamentos
 
-Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction), utilizando o`access_token` e cada fornecedor para a sua aplicação.
+Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction), utilizando o`access_token` e cada fornecedor para a sua aplicação.
 
 Se deseja cobrar uma taxa de comissão por cada pagamento processado pela sua aplicação em nome do seu usuário, simplesmente adicione esse valor no parâmetro  `application_fee` ao criar pagamento:
 
@@ -262,7 +262,7 @@ Caso a devolução se realize no marketplace, deve-se utilizar as credenciais ob
 
 Os cancelamentos somente poderão ser efetuados utilizando a API de cancelamentos.
 
-Para mais informações, consulte a seção de [devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds).
+Para mais informações, consulte a seção de [devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ### Teste seu Marketplace
 
@@ -270,4 +270,4 @@ Para mais informações, consulte a seção de [devoluções e cancelamentos](ht
 
 Você pode usar os cartões de teste fornecidos pelo Mercado Pago e os diferentes prefixos para manipular as mensagens de resposta.
 
-[Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/payments/api/testing)
+[Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/testing)

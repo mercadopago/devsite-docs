@@ -96,4 +96,4 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Integrar o modelo autônomo do QR](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-unattended/qr-unattended-part-b/)
+> [Integrar o modelo autônomo do QR](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b/)

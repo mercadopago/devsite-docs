@@ -448,7 +448,7 @@ To learn more about it, go to [Notifications.](https://www.mercadopago.com.ar/de
 
 A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
 
-Avoid rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/payment-rejections" target="_blank">improve the approval process</a>.
+Avoid rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/payment-rejections" target="_blank">improve the approval process</a>.
 
 ### Test the integration
 
@@ -456,8 +456,8 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Test](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/testing) section.
+For more information, go to the [Test](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/testing) section.
 
 ### Next steps
 
-- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/personalization) section.
+- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/personalization) section.

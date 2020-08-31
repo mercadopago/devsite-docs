@@ -15,8 +15,8 @@ Se pueden realizar pagos con medios de pago offline o en efectivo además de tar
 >
 > Nota
 >
-> Puedes consultar los [medios de pago offline](https://www.mercadopago.com.ar/developers/es/guides/payments/api/other-payment-ways) para más información.
-> También puedes ver los [medios de pago soportados](https://www.mercadopago.com.ar/developers/es/guides/marketplace/advanced-payments/supported-payment-methods) por la API de Advanced Payments.
+> Puedes consultar los [medios de pago offline](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/other-payment-ways) para más información.
+> También puedes ver los [medios de pago soportados](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/advanced-payments/supported-payment-methods) por la API de Advanced Payments.
 
 #### Request
 En el `body` del request debes definir el tipo de pago como `ticket` y el método según el país.

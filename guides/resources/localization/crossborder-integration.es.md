@@ -135,7 +135,7 @@ El Checkout Básico es la solución estandar de Mercado Pago. Dicha solución co
 > * El usuario es redigido fuera de la aplicación para realizar el pago.
 
 
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction)
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente [link](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction)
 
 
 Este sería un ejemplo de la creación de la preferencia de pago:
@@ -708,7 +708,7 @@ El Checkout Personalizado es la solución más customizable de Mercado Pago. Dic
 > * Debes integrar cada medio de pagos por separado.
 
 
-Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente  [link](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction)
+Para llevar a cabo la integración deberás seguir la documentación que podrás encontrar ingresando en el siguiente  [link](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/introduction)
 
 Deberás generar un formulario de tarjeta como se indica en la documentación que te permita obtener un card-token de la tarjeta del pagador para luego llevar a tu servidor y así hacer el POST del pago:
 
@@ -964,4 +964,4 @@ La devolución de los pagos se hacen por valor de la moneda local de la operaci�
 
 Para esto, será necesario que hagas la busqueda del pago mediante el `payment_id` y obtener el `currency_conversion`.
 
-Podes obtener más información de la API de devoluciones en el siguiente [link](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
+Podes obtener más información de la API de devoluciones en el siguiente [link](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds).

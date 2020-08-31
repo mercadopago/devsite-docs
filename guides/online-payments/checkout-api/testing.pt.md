@@ -95,7 +95,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve cumprir os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) e <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> ativar suas credenciais</a>.
+Para começar a cobrar, você deve cumprir os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production/) e <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> ativar suas credenciais</a>.
 
 Antes de ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
@@ -108,7 +108,7 @@ Antes de ativá-las, certifique-se de que as credenciais na sua integração sej
 >
 > Ajude seus clientes a completar seus pagamentos sem erros.
 >
-> [Manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/handling-responses/)
+> [Manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

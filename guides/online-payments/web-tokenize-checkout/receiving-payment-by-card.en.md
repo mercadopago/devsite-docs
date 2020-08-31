@@ -25,7 +25,7 @@ This _fragment of HTML code_ will insert a payment button. When the buyer presse
 ```
 You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/).
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/).
 
 ### Step 3: Get the data
 
@@ -223,8 +223,8 @@ Response:
 
 ### Test cards
 
-To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago.com.ar/developers/en/guides/payments/api/testing).
+To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/testing).
 
 ### Installments offer
 
-We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com.ar/developers/en/guides/banners/introduction/).
+We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com.ar/developers/en/guides/resources/banners/introduction/).

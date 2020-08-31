@@ -10,4 +10,4 @@ sites_supported:
 >
 > This page is currently not available in English.
 >
->[View documentation in Spanish](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-settlement/)
+>[View documentation in Spanish](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/asset-management-settlement/)

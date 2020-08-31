@@ -15,8 +15,8 @@ sites_supported:
 >
 > Nota
 >
-> É possível consultar os [meios de pagamento off-line](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-payment-ways) para mais informação.
-> Também é possível ver os [meios de pagamento suportados](https://www.mercadopago.com.br/developers/pt/guides/marketplace/advanced-payments/supported-payment-methods) pela API de Advanced Payments.
+> É possível consultar os [meios de pagamento off-line](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/other-payment-ways) para mais informação.
+> Também é possível ver os [meios de pagamento suportados](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/advanced-payments/supported-payment-methods) pela API de Advanced Payments.
 
 #### Request
 No `body` do request defina o tipo de pagamento como `ticket` e o meio de pagamento segundo o país.

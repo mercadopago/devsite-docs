@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentación es sobre la versión antigua de Checkout Pro. 
 > 
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction/).
 
 Implementa la logística de tu negocio con **Mercado Envíos**.
 

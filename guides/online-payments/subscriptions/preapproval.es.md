@@ -33,11 +33,11 @@ Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: 
 
 ## Cobrá el primer pago
 
-Para la primer transacción siempre se tendrán que solicitar los datos de la tarjeta, y cursar el pago con código de seguridad. Se podrá hacer siguiendo los pasos de nuestra integración por [API](https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card).
+Para la primer transacción siempre se tendrán que solicitar los datos de la tarjeta, y cursar el pago con código de seguridad. Se podrá hacer siguiendo los pasos de nuestra integración por [API](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card).
 
 ## Crea un customer y asociale la tarjeta utilizada
 
-Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](https://www.mercadopago.com.ar/developers/es/guides/payments/api/advanced-integration/)
+Una vez cursado el primer pago, y habiéndote asegurado que la tarjeta es válida, crea un Cliente que estará asociado a tu cuenta y asóciale una tarjeta. Podrás hacer esto siguiendo el paso a paso indicando en nuestra integración de [Usuarios y Tarjetas](https://www.mercadopago.com.ar/developers/es//guides/online-payments/checkout-api/advanced-integration/)
 
 ## Cobra de forma recurrente a tus clientes
 
@@ -122,7 +122,7 @@ Cada que vez que se curse un pago y haya una novedad sobre el pago, Mercado Pago
 
 Si el pago sin cvv es rechazado, te recomendamos que sigas una lógica de reintentos según el estado del rechazo. Por ejemplo, si el pago fue rechazado por tarjeta vencida no tiene sentido que se haga un reintento. Se le deberá solicitar al cliente que informa otra tarjeta para cursar los cobros siguientes. En caso que el rechazo sea por fondos insuficientes, tiene sentido que se haga una lógica de reintentos.
 
-Podrás ver todos los rechazos [aquí](https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses)
+Podrás ver todos los rechazos [aquí](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses)
 
 ## Prueba tu integración
 
@@ -142,7 +142,7 @@ Cuentas con un par de [credenciales de _sandbox_]([FAKER][CREDENTIALS][URL]), qu
 | Perú    	 | 4009 1753 3280 6176 | no disponible     | no disponible    |
 | Uruguay  	 | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible    |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/local-cards).
 
 Prueba todos los escenarios posibles de pago aprobado, pendiente o rechazado. Para ello debes ingresar en el formulario en el campo `card_holder_name` alguno de los siguientes prefijos:
 

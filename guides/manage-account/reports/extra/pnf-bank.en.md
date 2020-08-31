@@ -37,7 +37,7 @@ Column `DESCRIPTION` identifies each installment with `installment` value and to
 >
 > Nota
 >
-> Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
+> Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 
 ### Partial refund
@@ -48,7 +48,7 @@ If refund is higher than amount pending receipt, don't worry, the next report wi
 
 ## Chargebacks
 
-Your report shows when a [chargeback](https://www.mercadopago.com.ar/developers/en/guides/manage-account/chargebacks/) or mediation is resolved in favor of buyer. You will see a list of all installments, or those pending release, and the total amount for payment chargeback.
+Your report shows when a [chargeback](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/chargebacks/) or mediation is resolved in favor of buyer. You will see a list of all installments, or those pending release, and the total amount for payment chargeback.
 
 To identify this case, column `DESCRIPTION` show `chargeback` value for chargebacks of already collected installments. 
 
@@ -69,7 +69,7 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 >
 > Note
 >
-> Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
+> Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 
 ### Next steps
@@ -80,7 +80,7 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 >
 > Learn how to create a report and follow the steps to set up your references.
 >
-> [Create your Available Money report](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/generate/)
+> [Create your Available Money report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -88,4 +88,4 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 >
 > We will explain all the information necessary about your report data and how to read them.
 >
-> [Information detail about your report](https://www.mercadopago.com.ar/developers/en/guides/reports/extra/reports-information-details/)
+> [Information detail about your report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/extra/reports-information-details/)

@@ -5,7 +5,7 @@
 >
 > Prerequisites
 >
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implemented.
+> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) implemented.
 ------------
 ----[mpe]----
 > WARNING
@@ -255,4 +255,4 @@ For more information, go to the [notifications section](https://www.mercadopago.
 The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the Mercado Pago account.
 Cancellations can only be made using the cancellation API.
 
-For more information, go to [refunds and cancellations.](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds)
+For more information, go to [refunds and cancellations.](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds)

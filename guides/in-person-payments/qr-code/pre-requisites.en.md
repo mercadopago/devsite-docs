@@ -25,7 +25,7 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 | Point of sale (POS) | A **place to perform a transaction** on a store or physical shop. Each POS will be linked with a unique QR code. |
 | Order | A purchase made by your client. Contains a list of product with an associated cost. |
 
-> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 ## Previous requirements
 
@@ -40,7 +40,7 @@ If you don't have an account yet, you can [create one here](https://www.mercadop
 > 
 > Note
 > 
-> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/api/introduction/).
+> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-api/introduction/).
 
 ### 2. Generate test users
 
@@ -96,5 +96,5 @@ Once the test users are created, you can start with the integration and create t
 >
 > To build the integration, you must set up your stores and POS first.
 >
-> [Stores and POS](https://www.mercadopago.com.ar/developers/en/guides/qr-code/stores-pos/)
+> [Stores and POS](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/stores-pos/)
 

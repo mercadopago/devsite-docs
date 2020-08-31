@@ -32,4 +32,4 @@ Para cada producto puedes insertar una imagen, el precio y nombre del mismo.
 
 Puedes consultar tus ventas en el listado de actividades de la cuenta de Mercado Pago, o bien integrar [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) en tu sistema de gestión.
 
-> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](https://www.mercadopago.com.ar/developers/es/guides/mp-point/introduction/)
+> Si quieres construir algo más avanzado y personalizado, consulta nuestra documentación de [Point integrado](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/mp-point/introduction/)

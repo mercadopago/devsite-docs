@@ -58,7 +58,7 @@ curl -X POST \
 | Perú    	 | 4009 1753 3280 6176 | no disponible     | no disponible    |
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| no disponible    |
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/localization/local-cards).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/local-cards).
 
 
 ### Realiza las pruebas correspondientes

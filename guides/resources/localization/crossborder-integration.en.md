@@ -136,7 +136,7 @@ The Basic Checkout is the standard solution of Mercado Pago. The solution consis
 > * The user is redirected outside the application to make the payment.
 
 
-To carry out the integration, you must follow the documentation that you can find by entering the following [link] ("https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction")
+To carry out the integration, you must follow the documentation that you can find by entering the following [link] ("https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction")
 
 
 This is an example of the creation of the payment preference:
@@ -710,7 +710,7 @@ The Custom Checkout is the most customizable solution of Mercado Pago. This solu
 > * You must integrate each means of payment separately.
 
 
-In order to carry out the integration you will have to follow the documentation that you can find entering in the following [link](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction/)
+In order to carry out the integration you will have to follow the documentation that you can find entering in the following [link](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction/)
 
 You must generate a card form as indicated in the documentation that allows you to obtain a card-token from the payer card and then take it to your server and thus make the payment POST:
 
@@ -966,4 +966,4 @@ The refund of a payment is made in the local currency of the operation (for exam
 
 For this, it will be necessary for you to search for the payment by means of the `payment_id` and obtain the` currency_conversion`.
 
-You can get more information about the returns API in the following [link](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds).
+You can get more information about the returns API in the following [link](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds).

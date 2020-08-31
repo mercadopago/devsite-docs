@@ -165,7 +165,7 @@ curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTE
 
 ## Devoluciones
 
-Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/) parcial o total de un pago.
+Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/) parcial o total de un pago.
 
 **Devolución total**
 
@@ -183,7 +183,7 @@ curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_t
 
 Se deben crear dos usuarios de prueba: uno comprador y otro cobrador. Con el usuario cobrador se debe crear el QR y con el otro ingresar en las apps de Mercado Pago o Mercado Libre.
 
-Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/testing): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
+Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-pro/test-integration): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
 
 | Casos a probar                                               | Resultado esperado                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -196,7 +196,7 @@ Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/gui
 
 ### Diccionario de errores
 
-[Aquí](https://www.mercadopago.com.mx/developers/es/guides/payments/api/handling-responses/) podrás encontrar nuestro diccionario de errores.
+[Aquí](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-api/handling-responses/) podrás encontrar nuestro diccionario de errores.
 
 ## Reportes
 

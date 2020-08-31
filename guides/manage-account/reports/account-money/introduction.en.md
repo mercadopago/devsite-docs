@@ -34,7 +34,7 @@ In addition, you can use the report to view the history of your account balance 
 >
 > Note
 >
-> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/glossary/) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 
 
@@ -46,7 +46,7 @@ In addition, you can use the report to view the history of your account balance 
 >
 > Learn the composition of the report and how to read it.
 >
-> [How to use the report](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/how-to-use/)
+> [How to use the report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_EN
 >
@@ -54,4 +54,4 @@ In addition, you can use the report to view the history of your account balance 
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your reports](https://www.mercadopago.com.ar/developers/en/guides/reports/account-money/generate/)
+> [Generate your reports](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/generate/)

@@ -37,7 +37,7 @@ En la columna `DESCRIPTION` puedes identificar cada cuota con el valor `installm
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ### Devoluciones parciales
@@ -48,7 +48,7 @@ Si la devolución es mayor que el monto que te falta recibir, no te preocupes, e
 
 ## Contracargos
 
-Cuando un [contracargo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/) o una mediación se resuelve a favor del comprador puedes encontrar el detalle en el reporte. Aparecerá el listado con el detalle de todas las cuotas, o las que falten liberar, y el monto total por el contracargo del pago.
+Cuando un [contracargo](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/chargebacks/) o una mediación se resuelve a favor del comprador puedes encontrar el detalle en el reporte. Aparecerá el listado con el detalle de todas las cuotas, o las que falten liberar, y el monto total por el contracargo del pago.
 
 Para identificar este caso, puedes ver en la columna de `DESCRIPTION` el valor `chargeback` que corresponde a los contracargos de las cuotas que ya habían sido cobradas.
 
@@ -69,7 +69,7 @@ En la columna de `DESCRIPTION` puedes identificar cada cuota con el valor `insta
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/glossary/) de Dinero disponible para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 ### Próximos pasos
@@ -80,7 +80,7 @@ En la columna de `DESCRIPTION` puedes identificar cada cuota con el valor `insta
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tu reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/generate/)
+> [Genera tu reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -88,4 +88,4 @@ En la columna de `DESCRIPTION` puedes identificar cada cuota con el valor `insta
 >
 > Te explicamos toda la información necesaria sobre los datos de tus reportes y cómo leerlos.
 >
-> [Detalle de información sobre tu reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/reports-information-details/)
+> [Detalle de información sobre tu reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/reports-information-details/)

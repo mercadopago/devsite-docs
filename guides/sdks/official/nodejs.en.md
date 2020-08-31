@@ -73,7 +73,7 @@ try {
 
 * Get your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/). 
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/). 
 
 ### Configure Method
 

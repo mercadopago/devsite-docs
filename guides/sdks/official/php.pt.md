@@ -35,7 +35,7 @@ Nosso SDK é compatível com PHP versão 5.6 ou maior.
     MercadoPago\SDK::setAccessToken("TEST_ACCESS_TOKEN"); // On Sandbox
     ```
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 3) Usando objetos de recursos.
 

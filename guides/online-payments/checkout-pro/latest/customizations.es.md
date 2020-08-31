@@ -169,7 +169,7 @@ data-button-label="Comprar"
 >
 > Configura tus pago y adapta Checkout Pro a tu negocio.
 >
-> [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
+> [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -177,4 +177,4 @@ data-button-label="Comprar"
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/advanced-integration/)
+> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration/)

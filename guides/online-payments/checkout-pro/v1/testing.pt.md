@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/).
 
 Antes de partir para a produção, é muito importante que realize testes de fluxo de pagamentos, verificando se as configurações feitas nas preferências realmente estão no checkout.
 
@@ -98,7 +98,7 @@ curl -X POST \
 | Peru       | 4009 1753 3280 6176 | indisponível        | indisponível      |
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061  | indisponível      |
 
-Você também pode [usar cartões de teste para formas de pagamento locais de cada país.](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards)
+Você também pode [usar cartões de teste para formas de pagamento locais de cada país.](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/local-cards)
 
 ### Faça os testes correspondentes
 
@@ -134,4 +134,4 @@ O processo completo para testar o checkout é o seguinte:
 Próximos passos
 
 * [Campanhas de desconto](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/discount-campaigns/)
-* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/personalization/)
+* [Personalização](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/personalization/)

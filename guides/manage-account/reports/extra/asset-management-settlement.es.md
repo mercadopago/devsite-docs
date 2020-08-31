@@ -73,7 +73,7 @@ Para identificarlos en tus reportes, vas a encontrar que los datos de las column
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/glossary/) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
 
 ### Próximos pasos
@@ -84,7 +84,7 @@ Para identificarlos en tus reportes, vas a encontrar que los datos de las column
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tu reporte de Todas las transacciones](https://www.mercadopago.com.ar/developers/es/guides/reports/account-money/generate/)
+> [Genera tu reporte de Todas las transacciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/generate/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -92,4 +92,4 @@ Para identificarlos en tus reportes, vas a encontrar que los datos de las column
 >
 > Te explicamos toda la información necesaria sobre los datos de tus reportes y cómo leerlos.
 >
-> [Detalle de información sobre tu reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/reports-information-details/)
+> [Detalle de información sobre tu reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/reports-information-details/)

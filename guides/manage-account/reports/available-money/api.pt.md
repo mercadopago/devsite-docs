@@ -444,7 +444,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/glossary/) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 
 
@@ -871,7 +871,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples.
 >
-> [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/panel/)
+> [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -879,4 +879,4 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Gere um relatório a cada vez que retirar dinheiro para uma conta bancária.
 >
-> [Geração por retirada](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/withdrawal/)
+> [Geração por retirada](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/withdrawal/)

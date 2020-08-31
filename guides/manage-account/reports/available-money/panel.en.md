@@ -11,14 +11,14 @@ Follow these steps to generate your reports:
 
 <span style="margin-left:40px">Done! You will see your report *In preparation*.</span>
 
-You can also schedule the generation of these reports [for each money withdrawal](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/withdrawal/).
+You can also schedule the generation of these reports [for each money withdrawal](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/withdrawal/).
 
 
 > NOTE
 >
 > Note
 >
-> Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
+> Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
@@ -30,7 +30,7 @@ You can also schedule the generation of these reports [for each money withdrawal
 >
 > Create reports in scheduled and manual ways through an integration with Mercado Pago.
 >
-> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/api/)
+> [Generating through API](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/api/)
 
 > RIGHT_BUTTON_REQUIRED_EN
 >
@@ -38,4 +38,4 @@ You can also schedule the generation of these reports [for each money withdrawal
 >
 > You can generate a report every time you withdraw available money to a bank account.
 >
-> [Generating per withdrawal](https://www.mercadopago.com.ar/developers/en/guides/reports/available-money/withdrawal/)
+> [Generating per withdrawal](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/withdrawal/)

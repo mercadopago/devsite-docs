@@ -13,7 +13,7 @@ indexable: false
 > PRERREQUISITO
 >
 
-> Ter realizado [la integração](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) de **Checkout Pro**
+> Ter realizado [la integração](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) de **Checkout Pro**
 ------------
 
 ----[mpe]----
@@ -57,4 +57,4 @@ Pronto! Seu **Checkout Pro** agora estará funcionando no Modelo Gateway.
 
 ### Próximos passos
 
-* [Concilie suas operações](https://www.mercadopago.com.ar/developers/pt/guides/gateway/general-considerations/reconciliation)
+* [Concilie suas operações](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/gateway/general-considerations/reconciliation)

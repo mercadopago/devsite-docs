@@ -30,7 +30,7 @@ Con la cuenta de MercadoPago ya creada, debe ingresar los datos a continuación 
 
 [Public key y Access token](([FAKER][CREDENTIALS][URL]))
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/). 
 
 ### Canal de soporte de la plataforma:
 

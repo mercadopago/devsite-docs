@@ -18,7 +18,7 @@ When testing, verify that the payment flow works correctly and that the payment 
 
 To start charging you must [activate your credentials](https://www.mercadopago.com/mla/account/credentials/).
 
-> Check out the [requirements to go to production](https://www.mercadopago.com.ar/developers/es/guides/payments/api/goto-production/) if you have any questions during the process.
+> Check out the [requirements to go to production](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/goto-production/) if you have any questions during the process.
 
 Verify that the Production credentials of the module are those of the account that receives the money from the sales.
 

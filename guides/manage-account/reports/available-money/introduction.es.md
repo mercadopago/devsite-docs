@@ -45,7 +45,7 @@ Además, puedes usar el reporte para conocer el historial de dinero retirado ent
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -57,7 +57,7 @@ Además, puedes usar el reporte para conocer el historial de dinero retirado ent
 >
 > Conoce la composición del reporte y aprende a leerlo para hacer tu conciliación.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/how-to-use/)
+> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -65,4 +65,4 @@ Además, puedes usar el reporte para conocer el historial de dinero retirado ent
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/reports/available-money/generate/)
+> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/generate/)

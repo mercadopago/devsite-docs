@@ -6,7 +6,7 @@
 >
 > Se denomina *emisor* a la entidad financiera que emite un plástico (tarjeta de débito, crédito o prepaga) a una determinada persona o empresa. Dichas entidades suelen ser bancos pero hay excepciones.
 
-Los emisores soportados por Mercado Pago varían según cada país. Este recurso permite identificar un emisor a partir de un [medio de pago](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods) y un número de BIN.
+Los emisores soportados por Mercado Pago varían según cada país. Este recurso permite identificar un emisor a partir de un [medio de pago](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/payment-methods) y un número de BIN.
 
 ## Obteniendo los emisores
 

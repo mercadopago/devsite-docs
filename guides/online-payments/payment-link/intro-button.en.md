@@ -34,4 +34,4 @@ Next steps
 >
 > Now that you know what it’s about, it’s time to start charging online.
 >
-> [Create payment link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/button/create-button/)
+> [Create payment link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/payment-link/create-button/)

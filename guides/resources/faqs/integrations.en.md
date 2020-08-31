@@ -25,7 +25,7 @@ This option allows you to collect through our web form within the safe environme
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
 ----[mla, mlb]----
-[Integrate Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction)
+[Integrate Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction)
 ------------
 ----[mlm, mpe, mco, mlu, mlc]----
 [Integrate Checkout Pro](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
@@ -35,7 +35,7 @@ This option allows you to collect through our web form within the safe environme
 
 Unlike Checkout Pro, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
 
-[Integrate Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/introduction)
+[Integrate Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
@@ -48,7 +48,7 @@ It's the simplified version of the Checkout Pro with a renewed user experience.
 
 - **You will always be up to date.** You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
 
-[Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/payments/web-tokenize-checkout/introduction)
+[Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/online-payments/web-tokenize-checkout/introduction)
 
 ### Checkout API
 
@@ -72,7 +72,7 @@ Your customer pays no interest and you absorb the financing cost, therefore, ple
 
 ## How to manage customer sales on my site
 
-In order to manage sellers and for them to be able to perform commercial transactions in your site, you must [create a Marketplace](https://www.mercadopago.com.ar/developers/en/guides/marketplace/web-checkout/introduction).
+In order to manage sellers and for them to be able to perform commercial transactions in your site, you must [create a Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-pro/introduction).
 
 A Marketplace is a site or app that allows you to make collections on behalf of sellers and charge a commission for each one if you wish. When a payment is generated, the money is instantly divided between your seller's account and yours.
 

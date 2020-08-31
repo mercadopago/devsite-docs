@@ -73,7 +73,7 @@ A seguir uma lista de funcionalidades específicas de nossa API por país:
 
 ## Meios de pagamento não disponíveis
 
-Pode ser que alguns [meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
+Pode ser que alguns [meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
 
 ### Argentina
 

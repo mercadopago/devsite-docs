@@ -17,7 +17,7 @@ indexable: false
 >
 > This documentation refers to the new version of the Checkout Pro.
 >
-> Remember there is only active support and new functionalities for the [new version of the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/).
+> Remember there is only active support and new functionalities for the [new version of the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/).
 
 Before going into production, it is very important to test the payments flow, checking whether the configurations you made at the preference level are effectively reflected in the checkout.
 You should check if:
@@ -97,7 +97,7 @@ curl -X POST \
 | Peru    	 | 4009 1753 3280 6176 | unavailable       | unavailable      |
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061| unavailable      |
 
-You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards).
+You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/local-cards).
 
 ### Perform the corresponding tests
 
@@ -133,4 +133,4 @@ The complete process for testing the checkout is as follows:
 ### Next steps
 
 * [Discount campaigns](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/discount-campaigns/)
-* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/personalization/)
+* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/v1/personalization/)

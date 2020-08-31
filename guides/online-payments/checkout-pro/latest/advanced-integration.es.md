@@ -230,7 +230,7 @@ Para esto, se utilizan las `back_urls`. Esta redirección puede ser automática 
 >
 > Nota
 >
-> Ten en cuenta que las `backs_urls` solo funcionan para modo redirect y mobile. No al usar [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/integration/), ya que para volver al sitio toma la URL del `form action`. 
+> Ten en cuenta que las `backs_urls` solo funcionan para modo redirect y mobile. No al usar [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration/), ya que para volver al sitio toma la URL del `form action`. 
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
@@ -325,21 +325,21 @@ Preference preference = new Preference();
 
 Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema o porque no se cumple con los requisitos de seguridad necesarios.
 
-Evita pagos rechazados con nuestras recomendaciones y <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections" target="_blank">mejora la aprobación de tus pagos</a>.
+Evita pagos rechazados con nuestras recomendaciones y <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections" target="_blank">mejora la aprobación de tus pagos</a>.
 
 ## Cancelaciones y devoluciones
 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
 Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 
-Puedes encontrar toda la información en la <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds" target="_blank"> sección Devoluciones y cancelaciones</a>.
+Puedes encontrar toda la información en la <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds" target="_blank"> sección Devoluciones y cancelaciones</a>.
 
 ## Gestiona contracargos
 
 Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago.
 Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/chargebacks/" target="_blank"> Gestionar contracargos</a>
+<a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/chargebacks/" target="_blank"> Gestionar contracargos</a>
 
 ---
 
@@ -352,7 +352,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Configura tus pago y adapta Checkout Pro a tu negocio.
 >
-> [Configurations](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/configurations/)
+> [Configurations](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON
 >
@@ -360,4 +360,4 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/customizations/)
+> [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)

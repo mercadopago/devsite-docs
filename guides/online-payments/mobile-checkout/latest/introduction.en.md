@@ -43,7 +43,7 @@ Offer the best payment experience to your users, on Android or iOS.
 3. Start the payment process with a button on your application.
 4. Get to know when a payment is made with the notifications we send you.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/faqs/credentials/).
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/).
 
 ## Add the dependency to your project
 [[[
@@ -71,7 +71,7 @@ pod 'MercadoPagoSDK'
 
 > Note
 >
-> If you have version 3.x of the Mobile Checkout integrated you can visit the [integration docs of version 3](https://www.mercadopago.com.ar/developers/en/guides/payments/mobile-checkout/v3/introduction).
+> If you have version 3.x of the Mobile Checkout integrated you can visit the [integration docs of version 3](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/introduction).
 > Remember that active support is only provided to the latest major version and passive support to the previous one, so we recommend a migration to the new version.
 
 You can find the reference to the interface in the following links: [Android docs](http://mercadopago.github.io/px-android/) - [iOS docs](http://mercadopago.github.io/px-ios/v4/)

@@ -17,7 +17,7 @@ indexable: false
 >
 > Esta documentación es sobre la versión antigua de Checkout Pro.
 >
-> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/).
+> Ten en cuenta que solo hay soporte activo y nuevas funcionalidades en la [nueva versión del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction/).
 
 Recibe pagos de manera simple y segura utilizando el Checkout Pro.
 
@@ -396,7 +396,7 @@ Una vez creada la preferencia utiliza la URL que encontrarás en el atributo `in
 	</body>
 </html>
 ```
-Además, podés personalizar el checkout ingresando a este  [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization)
+Además, podés personalizar el checkout ingresando a este  [Link](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/personalization)
 
 ## 3. Activa las notificaciones de pagos
 
@@ -410,7 +410,7 @@ Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es
 
 Los medios de pago en efectivo deben ser pagados entre los 3 a 5 días dependiendo de cada uno.
 
-El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds) luego del vencimiento.
+El vencimiento de estos **no es automático**, por lo cuál es necesario que ejecutes la [cancelación del pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds) luego del vencimiento.
 
 
 ## 5. Prueba tu integración
@@ -419,9 +419,9 @@ Puedes probar tu integración antes de salir a producción, a fin de verificar e
 
 Para ello debes usar usuarios y tarjetas de prueba.
 
-Visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/testing) para más información.
+Visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/testing) para más información.
 
 ### Próximos pasos
 
-* [Probando la Integración](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/testing/)
-* [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization/)
+* [Probando la Integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/testing/)
+* [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/personalization/)

@@ -15,8 +15,8 @@ You can make payments with offline or cash payment methods in addition to credit
 >
 > Note
 >
-> You can view the [offline payment methods](https://www.mercadopago.com.br/developers/en/guides/payments/api/other-payment-ways) for more details.
-> You can also view the [supported payment methods](https://www.mercadopago.com.br/developers/en/guides/marketplace/advanced-payments/supported-payment-methods) through the Advanced Payments API.
+> You can view the [offline payment methods](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-api/other-payment-ways) for more details.
+> You can also view the [supported payment methods](https://www.mercadopago.com.br/developers/en/guides/online-payments/marketplace/advanced-payments/supported-payment-methods) through the Advanced Payments API.
 
 #### Request
 In the request `body` you must define the payment as `ticket` and the method according to the country.

@@ -66,7 +66,7 @@ Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Pro
 
-É possível remover a opção de boleto com uso de preferências de pagamento. Você pode encontrar mais detalhes em nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_atributos_para_a_preferência).
+É possível remover a opção de boleto com uso de preferências de pagamento. Você pode encontrar mais detalhes em nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_atributos_para_a_preferência).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkout Transparente
 
@@ -80,7 +80,7 @@ Caso venda através de um de nossos plugins ou soluções de e-commerce prontas 
 
 ## Definir prazo de vencimento do boleto
 
-Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-payment-ways/), através do campo `date_of_expiration`.
+Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways/), através do campo `date_of_expiration`.
 ------------
 
 ## Melhore a aprovação de seus pagamentos
@@ -93,7 +93,7 @@ Se atente no passo da criação dos usuários de teste vendedor e comprador, par
 Verifique se a identidade da conta vendedor está validada no painel do Mercado Pago. Acesse: Seu perfil > Validar identidade.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicione o nosso código de segurança em seu website
-É importante que acrescente em sua integração toda a informação necessária para [melhorar a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/payment-rejections/#bookmark_recomendações_para_melhorar_sua_aprovação).
+É importante que acrescente em sua integração toda a informação necessária para [melhorar a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections/#bookmark_recomendações_para_melhorar_sua_aprovação).
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
 > Se você ainda precisar de ajuda, recomendamos que entre em contato através da <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges" target="_blank">Ajuda</a>.

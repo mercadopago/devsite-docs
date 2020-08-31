@@ -96,4 +96,4 @@ curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d
 >
 > Learn how to set up this model step by step.
 >
-> [How to integrate QR unattended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-unattended/qr-unattended-part-b/)
+> [How to integrate QR unattended model](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b/)

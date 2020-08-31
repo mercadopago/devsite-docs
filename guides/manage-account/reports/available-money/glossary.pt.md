@@ -19,7 +19,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TAXES_AMOUNT | Impostos recebidos por retenção de receita bruta. |
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
-| PAYMENT METHOD | Meio de pagamento. ----[mla]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/localization/payment-methods/#bookmark_chile) ------------ |
+| PAYMENT METHOD | Meio de pagamento. ----[mla]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [Pode ser](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_chile) ------------ |
 | TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- Pode tomar os seguintes valores conforme a jurisdição: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | É o valor do imposto às empresas de telecomunicação descontado do valor bruto. |
 | TRANSACTION_APPROVAL_DATE | Data de aprovação da operação. |
@@ -46,7 +46,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo.
 >
-> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/how-to-use/)
+> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_PT
 >
@@ -54,4 +54,4 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/reports/available-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/generate/)

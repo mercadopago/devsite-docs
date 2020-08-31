@@ -17,14 +17,14 @@ indexable: false
 >
 > Esta documentação é referente à versão anterior do Checkout Pro.
 >
-> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/).
+> Lembre-se de que há suporte ativo e novas funcionalidades somente para a [nova versão do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/).
 
 Na preferência de pagamentos, é possível enviar as informações do item a ser pago, bem como do comprador, além de definir os meios de pagamento que não deseja aceitar, a URL de retorno ao seu site após o pagamento, os métodos de envio, etc.
 
 
 ### Defina os tipos e formas de pagamento
 
-Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLB&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
+Por padrão, oferecemos todos os meios de pagamento disponíveis para o país em que estiver realizando a integração. Caso seu modelo de negócios não aceite qualquer um destes [tipos de pagamento](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods), ou você não deseja aceitar algum [meio de pagamento específico](https://api.mercadopago.com/v1/payment_methods/search?site_id=MLB&marketplace=NONE), você poderá excluí-lo quando gerar a preferência de pagamentos.
 
 Além disso, você pode definir quais meios de pagamento ou o número de parcelas que deseja exibir por padrão, bem como o número máximo de parcelas a oferecer.
 
@@ -358,4 +358,4 @@ Para resumir todo lo anterior, a continuación se muestran todos los datos que s
 Próximos passos
 
 * [Campanhas de desconto](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/discount-campaigns/)
-* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/payments/web-payment-checkout/v1/testing/)
+* [Teste a Integração](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-pro/v1/testing/)

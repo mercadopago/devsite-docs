@@ -43,7 +43,7 @@ Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS
 3. Inicia el proceso de pago desde un botón en tu aplicación.
 4. Enterate del pago escuchando las notificaciones que te enviamos.
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 ## Añade la dependencia a tu proyecto
 [[[
@@ -71,7 +71,7 @@ pod 'MercadoPagoSDK'
 
 > Nota
 >
-> Si tienes la versión 3.x del Mobile Checkout integrado puedes visitar la [documentación de integración de la versión 3](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/v3/introduction).
+> Si tienes la versión 3.x del Mobile Checkout integrado puedes visitar la [documentación de integración de la versión 3](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/introduction).
 > Recuerda que solo se brinda soporte activo a la última versión major y soporte pasivo a la anterior por lo que recomendamos una migración a la nueva versión.
 
 Puedes encontrar la referencia de los métodos en los siguientes links: [Documentación Android](http://mercadopago.github.io/px-android/) - [Documentación iOS](http://mercadopago.github.io/px-ios/v4/)

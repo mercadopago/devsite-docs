@@ -49,7 +49,7 @@ Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercad
 >
 > Conoce cómo funciona cobrar con un código QR y cuáles son sus beneficios.
 >
-> [¿Qué es el código QR?](https://www.mercadopago.com.ar/developers/es/guides/qr-code/introduction/)
+> [¿Qué es el código QR?](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/introduction/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES

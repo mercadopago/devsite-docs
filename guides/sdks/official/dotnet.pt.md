@@ -39,7 +39,7 @@ Veja a versão mais recente [aqui](https://github.com/mercadopago/dx-dotnet/rele
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 3) Usando resource objects
 Você pode interagir com todos os recursos disponíveis na API pública para que cada recurso seja representado por classes de acordo com o seguinte diagrama:

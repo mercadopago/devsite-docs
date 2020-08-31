@@ -51,4 +51,4 @@ Utilize estes cartões de teste para testar os diferentes resultados do pagament
 | Uruguay  	 | 4157 2362 1173 6486 |5161 4413 1585 2061  | indisponível      |
 | Venezuela  | 4966 3823 3110 9310 | 5177 0761 6430 0010 | indisponível      |
 
-Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](https://www.mercadopago.com.br/developers/pt/guides/localization/local-cards).
+Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/local-cards).

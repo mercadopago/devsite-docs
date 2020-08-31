@@ -39,7 +39,7 @@ Verifique la última versión [aquí](https://github.com/mercadopago/dx-dotnet/r
 MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/). 
 
 3) Utiliza los recursos
 Puedes interactuar con todos los recursos disponibles en la API pública, cada recurso está representado por las clases en este diagrama:

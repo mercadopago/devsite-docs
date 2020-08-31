@@ -17,7 +17,7 @@ indexable: false
 >
 > This documentation refers to the new version of the Checkout Pro.
 >
-> Remember there is only active support and new functionalities for the [new version of the Checkout Pro.](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/)
+> Remember there is only active support and new functionalities for the [new version of the Checkout Pro.](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/)
 
 Receive payments simply and securely using the Checkout Pro.
 
@@ -400,7 +400,7 @@ Once the preference has been created, use the URL found in the attribute `init_p
 ```
 
 
-You can also customize the checkout by entering this [Link](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/v1/personalization)
+You can also customize the checkout by entering this [Link](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/personalization)
 
 ## 3. Enable payment notifications
 
@@ -414,7 +414,7 @@ To learn more about it, go to [Notifications](https://www.mercadopago.com.ar/dev
 
 The payment methods available for payments in cash must be paid from 3 to 5 days depending on each one.
 
-They **do not expire automatically**, so you’re required to [cancel the payment](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds) after expiration.
+They **do not expire automatically**, so you’re required to [cancel the payment](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds) after expiration.
 
 
 ## 5. Test the integration
@@ -423,9 +423,9 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Tests](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing) section.
+For more information, go to the [Tests](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/v1/testing) section.
 
 ### Next steps
 
-* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/personalization/)
-* [Test the integration](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/v1/testing/)  
+* [Customizations](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/v1/personalization/)
+* [Test the integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/v1/testing/)  

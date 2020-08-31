@@ -16,9 +16,9 @@ sites_supported:
 > Prerequisites
 >
 > Contact your account executive to correctly configure your Marketplace.
-> This guide assumes that you have already created and correctly configured your [Marketplace](https://www.mercadopago.com.br/developers/en/guides/marketplace/api/introduction/) and know how to [generate a card token](https://www.mercadopago.com.br/developers/en/guides/payments/api/receiving-payment-by-card).
+> This guide assumes that you have already created and correctly configured your [Marketplace](https://www.mercadopago.com.br/developers/en/guides/online-payments/marketplace/checkout-api/introduction/) and know how to [generate a card token](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
 >
-> Your sellers must have a MP account and must [give you permission to collect payments on their behalf](https://www.mercadopago.com.br/developers/en/guides/marketplace/advanced-payments/sellers-permissions).
+> Your sellers must have a MP account and must [give you permission to collect payments on their behalf](https://www.mercadopago.com.br/developers/en/guides/online-payments/marketplace/advanced-payments/sellers-permissions).
 
 The shopping cart business model consists of a payment for the total amount of the transaction, made by the Buyer, which is divided into the corresponding payments to each Seller for the sale of their product. In turn, for each payment made to Sellers, the Marketplace may retain a portion of the sale amount as commission.
 

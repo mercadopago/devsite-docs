@@ -25,7 +25,7 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 | Caja (POS) | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
 | Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado.
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 ## Requisitos previos
 
@@ -40,7 +40,7 @@ Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mer
 >
 > Nota
 >
-> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/marketplace/api/introduction/).
+> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-api/introduction/).
 
 
 ### 2. Generar usuarios de prueba
@@ -96,4 +96,4 @@ Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración 
 >
 > Para realizar la integración, primero debes configurar tus sucursales y cajas.
 >
-> [Sucursales y Cajas](https://www.mercadopago.com.ar/developers/es/guides/qr-code/stores-pos/)
+> [Sucursales y Cajas](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/stores-pos/)

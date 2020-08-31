@@ -512,10 +512,10 @@ Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/testing) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/testing) para más información.
 
 ### Próximos pasos
 
-- Visita la sección [Personalización](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/v3/personalization) para adecuar el flujo de pago a tus necesidades.
-- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/v3/testing).
+- Visita la sección [Personalización](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/personalization) para adecuar el flujo de pago a tus necesidades.
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/testing).
 

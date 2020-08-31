@@ -238,7 +238,7 @@ Depois que o usuário fizer o pagamento, você poderá obter os dados usando qua
 
 ## Devoluções
 
-Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/) parcial ou total de um pagamento.
+Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds/) parcial ou total de um pagamento.
 
 **Devolução total**
 
@@ -258,7 +258,7 @@ Para testar a integração, você deve criar dois usuários de teste: um comprad
 
 Você usará o usuário vendedor para criar o QR e completar o dado `collector_id`; Assim, com o usuário comprador, acesse o aplicativo Mercado Pago ou Mercado Livre e complete o fluxo.
 
-Verifique os [dados de teste](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/testing): teste usuários e cartões de teste que podem ser usados.
+Verifique os [dados de teste](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/v1/testing): teste usuários e cartões de teste que podem ser usados.
 
 > **NOTA**: Se nos testes você usar uma conta de teste, todas as contas devem ser de testes. Caso contrário, se você usar uma conta real, todas as contas relacionadas deverão ser reais. **Se o `sponsor_id` for adicionado na fase de teste, lembre-se de que você deve ser um usuário de teste.**
 
@@ -275,7 +275,7 @@ Verifique os [dados de teste](https://www.mercadopago.com.br/developers/pt/guide
 
 ### Dicionário de erros
 
-[Aqui](https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/) você pode encontrar nosso dicionário de erros.
+[Aqui](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses/) você pode encontrar nosso dicionário de erros.
 
 ## Relatórios
 

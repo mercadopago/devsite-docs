@@ -14,7 +14,7 @@ Encuentra información específica sobre los movimientos y operaciones que apare
 Mercado Pago te permite realizar la liberación de forma mensual de tus cobros según la cantidad de cuotas con las que se efectuó el pago. Es decir, la cantidad de cuotas con las que el comprador pague, determinará la cantidad de pagos que recibirá el vendedor.
 
 ### Cómo ver los cobros de cuotas mes a mes en tus reportes
-Te explicamos cómo ver la información de tus [cobros mensuales en el reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/pnf-bank).
+Te explicamos cómo ver la información de tus [cobros mensuales en el reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/pnf-bank).
 
 ------------
 
@@ -38,14 +38,14 @@ Te explicamos cómo ver la información de tus rendimientos según el tipo de re
 
 ----[mla]----
 
-* [Reporte de Dinero retirado](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-bank/)
-* [Reporte de Todas tus transacciones](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-settlement/)
+* [Reporte de Dinero retirado](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/asset-management-bank/)
+* [Reporte de Todas tus transacciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/asset-management-settlement/)
 
 ------------
 ----[mlb]----
 
-* [Rendimientos en el reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-bank/)
-* [Rendimientos en el reporte de Dinero en cuenta](https://www.mercadopago.com.ar/developers/es/guides/reports/extra/asset-management-settlement/)
+* [Rendimientos en el reporte de Dinero disponible](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/asset-management-bank/)
+* [Rendimientos en el reporte de Dinero en cuenta](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/asset-management-settlement/)
 
 ------------
 

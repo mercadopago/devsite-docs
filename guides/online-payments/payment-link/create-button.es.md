@@ -35,4 +35,4 @@ Próximos pasos
 >
 > Una vez creado, solo falta elegir el medio con el que vas a cobrarle a tus clientes.
 >
-> [Compartir link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/button/share-button/)
+> [Compartir link de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/payment-link/share-button/)

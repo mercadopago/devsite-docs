@@ -14,7 +14,7 @@ sites_supported:
 ## Devoluciones de tus pagos
 
 Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 > WARNING
 > 
@@ -31,12 +31,12 @@ Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el _head
 
 ## Genera reportes de tus ventas
 
-Integra los [reportes de conciliación de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/reports/general-considerations/reconciliation-reports/) con tu sistema para conciliar tus ventas y conocer los movimientos de tu cuenta.
+Integra los [reportes de conciliación de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/general-considerations/reconciliation-reports/) con tu sistema para conciliar tus ventas y conocer los movimientos de tu cuenta.
 
 ## Prueba y valida tu integración
 
 Detallamos todos los casos necesarios que debes probar para validar que tu sistema esté integrado correctamente con Mercado Pago. 
-Puedes encontrar todos los casos en la [sección de Pruebas](https://www.mercadopago.com.ar/developers/es/guides/qr-code/integration-test/).
+Puedes encontrar todos los casos en la [sección de Pruebas](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/integration-test/).
 
 ---
 ### Próximos pasos
@@ -48,4 +48,4 @@ Puedes encontrar todos los casos en la [sección de Pruebas](https://www.mercado
 >
 > Realiza los casos de uso más frecuentes para validar tu integración.
 >
-> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/qr-code/integration-test/)
+> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/integration-test/)

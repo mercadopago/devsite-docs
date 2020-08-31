@@ -19,7 +19,7 @@ indexable: false
 >
 > Pre-requisites
 >
-> Have already integrated the [Payments's API](https://www.mercadopago.com.ar/developers/en/guides/payments/api/introduction.en.md)
+> Have already integrated the [Payments's API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction.en.md)
 
 ## New concepts
 
@@ -149,4 +149,4 @@ curl -X POST \
 
 ### Next steps
 
-* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/gateway/general-considerations/reconciliation/)
+* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/general-considerations/reconciliation/)

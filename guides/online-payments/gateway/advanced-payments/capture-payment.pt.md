@@ -13,7 +13,7 @@ indexable: false
 >
 > Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
 
-A API de pagamento avançado permite pagamentos do tipo [Autorização e Captura](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/other-features). Para estes casos deve ser criado um Advanced Payment com o campo `capture` em ` false`, que reservará o valor até que seja capturado.
+A API de pagamento avançado permite pagamentos do tipo [Autorização e Captura](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-features). Para estes casos deve ser criado um Advanced Payment com o campo `capture` em ` false`, que reservará o valor até que seja capturado.
 
 Para capturá-lo, você deve fazer da seguinte maneira:
 
