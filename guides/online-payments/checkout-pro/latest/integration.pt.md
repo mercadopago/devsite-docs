@@ -224,15 +224,16 @@ curl -X POST \
 ```
 ]]]
 
+> NOTE
+>
+> Aceite pagamentos apenas de usuários cadastrados
+>
+> Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
 
 ### 2. Adicione o checkout ao seu site
 
 Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Checkout Pro onde você quiser que ele apareça.
 
-> NOTE
->
-> Nota
->
 > Se o seu site funciona em mobile, por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/). 
 
 [[[
@@ -301,8 +302,8 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Integração avançada
+> Aceite somente usuários cadastrados
 >
-> Otimize sua integração e melhore o gerenciamento das suas vendas.
+> Permite pagamentos apenas de usuários cadastrados no Mercado Pago, com cartão e dinheiro em conta.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
+> [Usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)

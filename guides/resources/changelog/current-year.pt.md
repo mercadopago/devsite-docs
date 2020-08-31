@@ -4,6 +4,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Setembro 2020
+
+### 3 de setembro
+
+> CHANGELOG
+>
+> Otimize suas vendas aceitando pagamentos de usuários cadastrados
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+Para que você possa otimizar suas vendas, adicionamos um novo atributo que permite receber pagamentos apenas de usuários cadastrados, no Checkout Pro. Isso significa que seus compradores pagarão exclusivamente com seus cartões salvos ou com saldo em conta.
+
+[Começar a receber pagamentos apenas de usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt//guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+
+---
+
 ## Agosto 2020
 
 ### 27 de agosto

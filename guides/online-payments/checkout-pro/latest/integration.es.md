@@ -224,15 +224,16 @@ curl -X POST \
 ```
 ]]]
 
+> NOTE
+>
+> Acepta pagos solo de usuarios registrados
+>
+> Si quieres aceptar pagos únicamente de usuarios registrados, con tarjetas y dinero en cuenta de Mercado Pago, ingresa en [esta sección](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados) para más información. 
 
 ### 2. Suma el checkout a tu sitio
 
 Por último, suma el siguiente código para mostrar el botón de pago de tu Checkout Pro en el lugar que quieras que aparezca.
 
-> NOTE
->
-> Nota
->
 > Si tu sitio funciona en mobile, ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, puedes visitar la sección [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration/). 
 
 [[[
@@ -302,8 +303,8 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Integración avanzada
+> Acepta pagos solo de usuarios registrados
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero en cuenta.
 >
-> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
+> [Usuarios regsitrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
