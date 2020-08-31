@@ -81,7 +81,6 @@ Para **configurar los datos de tarjetas de créditos en tu tienda**, sigue estos
 >
 > Si utilizas la configuración de cuotas externas, ten en cuenta que no se tomarán las configuraciones de cuotas realizadas en la plataforma.<br>
 > Las cuotas externas no se mostrarán en los listados o en los detalles del producto.
-
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>
