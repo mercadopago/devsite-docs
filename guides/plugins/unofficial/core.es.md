@@ -95,7 +95,6 @@ Para **configurar los datos para Boleto Bancário en su tienda**, sigue estos pa
 1. Completa el campo Identificador de integración con la información que será identificada en su ERP. 
 1. Ingresa el orden en el que quieres que aparezca la opción de boleto en tu tienda. 
 1. Por último, haz clic en “Guardar”.
-
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
 <p>&nbsp;</p>
