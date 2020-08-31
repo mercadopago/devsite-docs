@@ -16,7 +16,7 @@ Com ela você poderá, oferecer aos seus clientes a possibilidade de pagar com [
 Os passos para **começar a receber com Mercado Pago**, são os seguintes:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) no Mercado Pago caso ainda não tenha uma.
-2. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
+1. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
 3. Configure a forma de pagamento como Mercado Pago.
 4. Configure o meio de pagamento do contrato.
 
