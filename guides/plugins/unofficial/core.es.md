@@ -134,7 +134,7 @@ Para **crear un contrato en tu tienda**, sigue estos pasos:
 
 ### Define los medios de pago para el contrato
 
-Para ** definir los medios de pago para el contrato**, sigue estos pasos: 
+Para **definir los medios de pago para el contrato**, sigue estos pasos: 
 
 1. Desde Backoffice en el panel de administración, ingresa en “Contratos”.
 1. Busca el contrato creado y haz clic en “Editar”.
