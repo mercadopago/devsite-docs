@@ -184,7 +184,7 @@ curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_t
 
 Dois usuários de teste devem ser criados: um comprador e outro coletor. Com o usuário coletor o QR deve ser criado e com o outro entrar no aplicativo do Mercado Pago ou Mercado Livre.
 
-Consulta os [dados para testes](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/testing/): usuários de teste e cartões de teste que possam ser utilizados.
+Consulta os [dados para testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/): usuários de teste e cartões de teste que possam ser utilizados.
 
 | Casos de teste                                               | Resultado esperado                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

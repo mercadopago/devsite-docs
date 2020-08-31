@@ -183,7 +183,7 @@ curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_t
 
 Two test users must be created: one buyer and another collector. With the billing user, the QR must be created and with the other, enter the Mercado Pago or Mercado Libre apps.
 
-Consult the [test data](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/testing): test users and test cards that can be used.
+Consult the [test data](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-pro/test-integration): test users and test cards that can be used.
 
 | Test cases                                                   | Expected response                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
