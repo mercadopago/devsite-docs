@@ -91,7 +91,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 1. Localize o meio de pagamento criado e clique em "Editar".
 1. Acesse a aba "Boletos" e selecione o status para "Ativo".
 1. Preencha o campo **Identificador de Integração** com a informação que será identificada em seu ERP.
-5. Informe a ordem em que o boleto aparecerá no seu checkout.
+1. Informe a ordem em que o boleto aparecerá no seu checkout.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
