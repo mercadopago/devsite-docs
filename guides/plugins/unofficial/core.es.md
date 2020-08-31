@@ -137,7 +137,6 @@ Para **definir los medios de pago para el contrato**, sigue estos pasos:
 - **Definido a continuación**. Elige qué métodos de pago quieres que sean parte del contrato.
 
 1. Por último, haz clic en “Guardar”.
-
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
 <p>&nbsp;</p>
