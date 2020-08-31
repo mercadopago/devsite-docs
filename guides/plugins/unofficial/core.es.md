@@ -139,7 +139,6 @@ Para **definir los medios de pago para el contrato**, sigue estos pasos:
 1. Desde Backoffice en el panel de administración, ingresa en “Contratos”.
 1. Busca el contrato creado y haz clic en “Editar”.
 1. Encuentra la sección de medios de pago y define qué opción de contrato quieres utilizar:
-
 - **Todos los medios de pago activos en la plataforma**. Permite que se muestren todos los métodos de pago habilitados en la plataforma.
 - **Definido a continuación**. Elige qué métodos de pago quieres que sean parte del contrato.
 
