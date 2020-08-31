@@ -149,7 +149,6 @@ Para **asignar los medios de pago del contrato a un canal**, sigue estos pasos:
 1. Busca el canal de tu tienda y haz clic en “Editar”.
 1. En la sesión de contrato patrón, agrega el contrato que creaste.
 1. Por último, haz clic en “Guardar”.
-
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
