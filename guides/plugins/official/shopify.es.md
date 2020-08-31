@@ -2,7 +2,7 @@
 
 ## Funcionalidades
 
-O módulo do Mercado Pago para Shopify esta integrado com as funcionalidades a seguir:
+El módulo de Mercado Pago para Shopify está integrado con las siguientes funcionalidades:
 
 | Funcionalidades                                           | Checkout Pro	    |
 |---------------------------------------------------------- |-------------------|
