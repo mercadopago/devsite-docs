@@ -90,7 +90,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 1. No painel administrativo, acesse "Meios de pagamentos" no menu Configs.
 1. Localize o meio de pagamento criado e clique em "Editar".
 1. Acesse a aba "Boletos" e selecione o status para "Ativo".
-4. Preencha o campo **Identificador de Integração** com a informação que será identificada em seu ERP.
+1. Preencha o campo **Identificador de Integração** com a informação que será identificada em seu ERP.
 5. Informe a ordem em que o boleto aparecerá no seu checkout.
 6. Por último, clique em "Salvar".
 <p>&nbsp;</p>
