@@ -133,7 +133,7 @@ Para **definir os meios de pagamento do contrato**, siga os passos abaixo:
 3. Localize a sessão meios de pagamento e defina a opção de contrato que deseja utilizar:
 - **Todos os meios de pagamento ativos na plataforma**. Irá permitir que todos os meios de pagamento habilitados na plataforma.
 - **Definidos abaixo**. Escolher quais meios de pagamento irão fazer parte do contrato.
-4. Clique em "Salvar".
+1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
 <p>&nbsp;</p>
