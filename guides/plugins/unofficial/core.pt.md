@@ -144,7 +144,7 @@ Para **atribuir o meio de pagamento do contrato ao canal de sua loja**, siga os 
 
 1. No painel administrativo, acesse "Canais" no menu Canais.
 1. Localize o canal da sua loja e clique em "Editar".
-3. Na sessão contrato padrão, adicione o contrato que criou.
+1. Na sessão contrato padrão, adicione o contrato que criou.
 4. Por último, clique em "Salvar".
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
