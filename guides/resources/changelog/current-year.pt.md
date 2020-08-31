@@ -18,7 +18,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 Para que você possa otimizar suas vendas, adicionamos um novo atributo que permite receber pagamentos apenas de usuários cadastrados, no Checkout Pro. Isso significa que seus compradores pagarão exclusivamente com seus cartões salvos ou com saldo em conta.
 
-[Começar a receber pagamentos apenas de usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt//guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+[Começar a receber pagamentos apenas de usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
 
 ---
 
