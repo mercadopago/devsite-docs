@@ -36,7 +36,7 @@ To **add Mercado Pago to your store**, follow these steps:
 
 Once Mercado Pago is added, you can offer payment by [credit card](#bookmark_set_up_credit_card_data) and [Boleto](#bookmark_set_up_boleto_data).
 
-You can also [offer non interest-bearing instalments](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) and set up [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) of your online sales whenever you want.
+You can also [offer interest free installments](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) and set up [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) of your online sales whenever you want.
 
 ### Set up data for integration
 
