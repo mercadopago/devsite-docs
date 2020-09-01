@@ -29,9 +29,9 @@ definitions:
   - name:
       type: String
       description:
-        en: Store name.
-        es: Nombre de la Sucursal.
-        pt: Nome da loja.
+        en: Store name. (Required)
+        es: Nombre de la Sucursal. (Obligatorio)
+        pt: Nome da loja. (Mandatório)
   - business_hours:
       type: String
       description:
@@ -59,9 +59,9 @@ definitions:
   - location:
       type: Object
       description:
-        en: Store location.
-        es: Ubicación de la Sucursal.
-        pt: Localização da Loja.
+        en: Store location. (Required)
+        es: Ubicación de la Sucursal. (Obligatorio)
+        pt: Localização da Loja. (Mandatório)
       properties:
       - zip_code:
           type: String
@@ -72,39 +72,39 @@ definitions:
       - street_number:
           type: Integer
           description:
-            en: Number.
-            es: Número.
-            pt: Número.
+            en: Number. (Required)
+            es: Número. (Obligatorio)
+            pt: Número. (Mandatório)
       - street_name:
           type: String
           description:
-            en: Street name.
-            es: Calle.
-            pt: Rua.
+            en: Street name. (Required)
+            es: Calle. (Obligatorio)
+            pt: Rua. (Mandatório)
       - city_name:
           type: String
           description:
-            en: City.
-            es: Ciudad.
-            pt: Cidade.
+            en: City.(Required)
+            es: Ciudad. (Obligatorio)
+            pt: Cidade. (Mandatório)
       - state_name:
           type: Object
           description:
-            en: State.
-            es: Provincia.
-            pt: Estado.
+            en: State. (Required)
+            es: Provincia. (Obligatorio)
+            pt: Estado. (Mandatório)
       - latitude:
           type: String
           description:
-            en: Latitude.
-            es: Latitud.
-            pt: Latitude.
+            en: Latitude. (Required)
+            es: Latitud. (Obligatorio)
+            pt: Latitude. (Mandatório)
       - logitude:
           type: String
           description:
-            en: Longitude.
-            es: Longitud.
-            pt: Longitude.
+            en: Longitude. (Required)
+            es: Longitud. (Obligatorio)
+            pt: Longitude. (Mandatório)
       - reference:
           type: String
           description:

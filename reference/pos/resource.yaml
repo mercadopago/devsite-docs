@@ -25,15 +25,15 @@ definitions:
     - name:
         type: String
         description:
-            en: Name of the POS.
-            es: Nombre de la caja.
-            pt: Nome da caixa.
+            en: Name of the POS. (Required)
+            es: Nombre de la caja. (Obligatorio)
+            pt: Nome da caixa. (Mandatório)
     - fixed_amount:
         type: Boolean
         description:
-          en: Define if the customer can insert the amount to be paid.
-          es: Determina si el cliente puede insertar el monto a pagar.
-          pt: Determine se o cliente pode inserir o valor a ser pago.
+          en: Define if the customer can insert the amount to be paid. (Required)
+          es: Determina si el cliente puede insertar el monto a pagar. (Obligatorio)
+          pt: Determine se o cliente pode inserir o valor a ser pago. (Mandatório)
         enum:
         - true:
             en: The customer cannot choose the amount to be paid and must wait for the generation of an order.
@@ -87,9 +87,9 @@ definitions:
     - external_store_id:
         type: String
         description:
-          en: External_id of the store to which the pos belongs defined by integrator system.
-          es: External_id de la sucursal a la cual pertenece la caja, definido por el integrador.
-          pt: External_id da loja a que a caixa pertence, definido pelo sistema integrador.    
+          en: External_id of the store to which the pos belongs defined by integrator system. (Required)
+          es: External_id de la sucursal a la cual pertenece la caja, definido por el integrador. (Obligatorio)
+          pt: External_id da loja a que a caixa pertence, definido pelo sistema integrador. (Mandatório)    
     - external_id:
         type: String
         description:

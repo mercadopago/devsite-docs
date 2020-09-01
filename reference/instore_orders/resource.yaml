@@ -14,21 +14,21 @@ definitions:
   - user_id:
       type: String
       description:
-        en: User identifier.
-        es: Identificador del usuario.
-        pt: Identificador do usuário.
+        en: User identifier. (Required)
+        es: Identificador del usuario. (Obligatorio)
+        pt: Identificador do usuário. (Mandatório)
   - external_id:
       type: String
       description:
-        en: Unique identifier of the point of sale defined by integrator system.
-        es: Identificador único de la caja/punto de venta, definido por el integrador. 
-        pt: Identificador único do ponto de venda definido pelo sistema integrador.      
+        en: Unique identifier of the point of sale defined by integrator system. (Required)
+        es: Identificador único de la caja/punto de venta, definido por el integrador. (Obligatorio)
+        pt: Identificador único do ponto de venda definido pelo sistema integrador. (Mandatório)    
   - external_reference:
       type: String(256)
       description:
-        en: Reference you can synchronize with your sale system.
-        es: Referencia que puede sincronizar con su sistema de venta.
-        pt: Referência que pode sincronizar com seu sistema de vendas.
+        en: Reference you can synchronize with your sale system.  (Required)
+        es: Referencia que puede sincronizar con su sistema de venta. (Obligatorio)
+        pt: Referência que pode sincronizar com seu sistema de vendas. (Mandatório)
   - notification_url:
       type: String(500)
       description:
@@ -44,9 +44,9 @@ definitions:
   - items:
       type: Object
       description:
-        en: Information on the products involved in the order.
-        es: Información de los productos involucrados en la orden.
-        pt: Informações sobre os produtos envolvidos no ordem.
+        en: Information on the products involved in the order. (Required)
+        es: Información de los productos involucrados en la orden. (Obligatorio)
+        pt: Informações sobre os produtos envolvidos no ordem. (Mandatório)
       properties:
       - id:
           type: String
@@ -57,15 +57,15 @@ definitions:
       - title:
           type: String
           description:
-            en: Item title.
-            es: Título del producto.
-            pt: Título do item.        
+            en: Item title. (Required)
+            es: Título del producto. (Obligatorio)
+            pt: Título do item. (Mandatório)
       - currency_id:
           type: String(3)
           description:
-            en: Currency identifier in ISO_4217 format.
-            es: Identificador de moneda en formato ISO_4217.
-            pt: Identificador de moeda no formato ISO_4217.
+            en: Currency identifier in ISO_4217 format. (Required)
+            es: Identificador de moneda en formato ISO_4217. (Obligatorio)
+            pt: Identificador de moeda no formato ISO_4217. (Mandatório)
             enum:
               - ARS:
                   en: Argentine peso.
@@ -98,21 +98,21 @@ definitions:
       - unit_price:
           type: Float
           description:
-            en: Unit price of the item (maximum 2 decimals).
-            es: Precio unitario del producto (máximo 2 decimales).
-            pt: Preço unitário do produto (máximo de 2 decimais).
+            en: Unit price of the item (maximum 2 decimals).  (Required)
+            es: Precio unitario del producto (máximo 2 decimales). (Obligatorio)
+            pt: Preço unitário do produto (máximo de 2 decimais). (Mandatório)
       - quantity:
           type: Integer
           description:
-            en: Item quantity.
-            es: Cantidad de producto.
-            pt: Quantidade do produto.                        
+            en: Item quantity. (Required)
+            es: Cantidad de producto. (Obligatorio)
+            pt: Quantidade do produto. (Mandatório)                
       - description:
           type: String
           description:
-            en: Item description.
-            es: Descripción del producto.
-            pt: Descrição do produto.
+            en: Item description. (Required)
+            es: Descripción del producto. (Obligatorio)
+            pt: Descrição do produto. (Mandatório)
       - picture_url:
           type: String
           description:
