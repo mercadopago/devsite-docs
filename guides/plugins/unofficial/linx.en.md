@@ -9,7 +9,7 @@
 
 It is a **virtual platform that enables you to receive payments with Mercado Pago**.
 
-You can offer your customers payment by [credit card](#bookmark_set_up_credit_card_data) and [Boleto](#bookmark_set_up_boleto_data) in your store.
+You can offer your customers payment by [credit card](#bookmark_set_up_credit_card_data) and [boleto](#bookmark_set_up_boleto_data) in your store.
 
 ## Settings Steps
 
@@ -44,7 +44,7 @@ Once you added the method of payment, **set up data for integration with Mercado
 
 1. Go to “Integration” tab and fill out Public Key and Access Token Key fields with the relevant [production credentials]([FAKER][CREDENTIALS][URL]) of your Mercado Pago account.
 1. Fill out the name to appear on your invoice so that your customer can recognize you.
-1. If you want to test your payments, in "Test Mode" section, select "Yes". Then fill out Public Key and Access Token Key with [test credentials]([FAKER][CREDENTIALS][URL]) of your Mercado Pago account. 
+1. If you want to test your payments, in Test Mode section, select "Yes". Then fill out Public Key and Access Token Key with [test credentials]([FAKER][CREDENTIALS][URL]) of your Mercado Pago account. 
 1. In installment section, select "External (Mercado Pago API) to use instalment settings from your Mercado Pago account directly. 
 1. Finally, click on "Save".
 <p>&nbsp;</p>
@@ -67,7 +67,7 @@ To **set up credit card data in your store**, follow these steps:
     | Interest percentage | Fill out interest percentage you want to add. If you don't want to add any, leave 0.00. |
     | Type of interest | Issuer - Interest included in total order.<br> Issuer - Interest accrued by issuer.<br> Seller -Interest included in total order. |
     | Total number of instalments | Enter total number of instalments you want to offer per sale. |
-    | Total number of non-interest bearing instalments | Enter total number of non-interest bearing instalments you want to offer per sale. |
+    | Total number of interest free installments | Enter total number of interest free installments you want to offer per sale. |
     | Minimum instalment | Minimum instalment price available per purchase. |
     | Integration ID | Add code for ERP identification. |
     | Order | Set up order of flags to finalize purchase. |
@@ -84,9 +84,9 @@ To **set up credit card data in your store**, follow these steps:
 > If you use external instalment settings, take into account that instalments made in the platform will not be taken.<br>
 > External instalments will not be shown on lists or product details.<br>
 
-### Set up Boleto data
+### Set up boleto data
 
-To **set up Boleto data in your store**, follow these steps: 
+To **set up boleto data in your store**, follow these steps: 
 
 1. Go to "Methods of payment" in your store administration panel, Settings section. 
 1. Look for created method of payment and click on "Edit".
@@ -107,7 +107,7 @@ To **set up Boleto data in your store**, follow these steps:
     ![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
 
-Ready! You are already offering non-interest bearing installments with the configured financing cost.
+Ready! You are already offering interest free installments with the configured financing cost.
 
 ## Set up contract methods of payment
 

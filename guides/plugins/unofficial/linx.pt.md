@@ -44,7 +44,7 @@ Após adicionar o meio de pagamento, **configure os dados de sua integração co
 
 1. Acesse a aba "Integração" e complete os campos Public Key e Access Token com as [credenciais de produção]([FAKER][CREDENTIALS][URL]) de sua conta do Mercado Pago.
 1. Preencha o nome que será informado na fatura do seu cliente para que ele possa reconhecê-lo.
-1. Se deseja habilitar pagamentos de teste, na seção **Modo teste**, selecione a opção "Sim". Depois complete os campos Public Key e Access Token com as [credenciais de teste]([FAKER][CREDENTIALS][URL]) da sua conta do Mercado Pago.
+1. Se deseja habilitar pagamentos de teste, na seção Modo teste selecione a opção "Sim". Depois complete os campos Public Key e Access Token com as [credenciais de teste]([FAKER][CREDENTIALS][URL]) da sua conta do Mercado Pago.
 1. Na seção de Parcelamento, selecione "Externo (API do Mercado Pago)" onde você vai utilizar as condições de parcelamento diretamente da sua conta Mercado Pago.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
@@ -91,7 +91,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 1. No painel administrativo, acesse "Meios de pagamentos" no menu Configs.
 1. Localize o meio de pagamento criado e clique em "Editar".
 1. Acesse a aba "Boletos" e selecione o status para "Ativo".
-1. Preencha o campo **Identificador de Integração** com a informação que será identificada em seu ERP.
+1. Preencha o campo Identificador de Integração com a informação que será identificada em seu ERP.
 1. Informe a ordem em que o boleto aparecerá no seu checkout.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
@@ -101,7 +101,7 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 ## Configurando o parcelamento na sua conta do Mercado Pago
 
 1. Na seção [Seu negócio](https://www.mercadopago.com.br/business/) na sua conta do Mercado Pago.
-1. Procure por **Oferecer parcelamento sem juros** e clique em "Ativar".
+1. Procure por Oferecer parcelamento sem juros e clique em "Ativar".
 1. Escolha quantas parcelas você quer oferecer e clique em “Ativar” para confirmar as alterações.
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
