@@ -4,10 +4,14 @@ order: 11
 version:
 baseUri: https://api.mercadopago.com
 paths:
-  /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
+  /instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders:
     methods:
       - put
-      - delete
+ /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
+   methods:
+     - delete
+     - get
+
 definitions:
   type: object
   properties:
@@ -17,12 +21,18 @@ definitions:
         en: User identifier. (Required)
         es: Identificador del usuario. (Obligatorio)
         pt: Identificador do usuário. (Mandatório)  
+  - external_store_id:
+      type: String
+      description:
+        en: External_id of the store defined by integrator system. (Required)
+        es: External_id de la sucursal, definido por el integrador (external_id). (Obligatorio)
+        pt: External_id do loja definido pelo sistema integrador. (Mandatório)
   - external_pos_id:
       type: String
       description:
-        en: Unique identifier of the point of sale defined by integrator system. (Required)
-        es: Identificador único de la caja/punto de venta, definido por el integrador. (Obligatorio)
-        pt: Identificador único do ponto de venda definido pelo sistema integrador. (Mandatório)    
+        en: External_id of the point of sale defined by integrator system. (Required)
+        es: External_id de la caja/punto de venta, definido por el integrador. (Obligatorio)
+        pt: External_id  do ponto de venda definido pelo sistema integrador. (Mandatório)    
   - external_reference:
       type: String(256)
       description:

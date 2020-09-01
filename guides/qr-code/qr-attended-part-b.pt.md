@@ -27,29 +27,33 @@ Explicamos como funciona o modelo atendido:
 ## Criar um pedido
 
 ```curl
-curl -X POST 
-https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN -d
+curl -X PUT \
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN -d
 {
-    "external_reference": "Ticket-0001",
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
     "notification_url": "www.yourserver.com",
-    "items" :[{
-    		   "title" : "Produto 1",
-    		   "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
-    		   "unit_price" : 120.00,
-    	     "quantity" : 1,
-           "description": "Produto de Mercado Pago",
-           "picture_url": "https://bit.ly/2lCRcEN"
-    		    },
-            {
-    		   "title" : "Produto 1",
-    		   "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
-    		   "unit_price" : 100.00,
-    		   "quantity" : 2
-    		    }],
-    "sponsor_id": 446566691
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 100.0,
+    "items": [
+        {
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 20,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 100
+        }
+    ],
+    "sponsor": {
+        "id": 446566691
+    }
 }
 ```
-Pode obter mais informações em [Referências do API](https://www.mercadopago.com.br/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post/).
+Pode obter mais informações em [Referências do API](https://www.mercadopago.com.br/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/put/).
 
 Assim que o pedido for criado, ele estará disponível para ser **digitalizado e pago**.
 
@@ -64,7 +68,7 @@ Assim que o pedido for criado, ele estará disponível para ser **digitalizado e
 Para remover o pedido associado a um QR antes de que expire por validade ou seja encerrado, poderá fazê-lo por meio do método a seguir: 
 
 ```curl
-curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN  -d 
+curl -X DELETE https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
 ```
 A resposta será um `HTTP 204 No Content`.
 

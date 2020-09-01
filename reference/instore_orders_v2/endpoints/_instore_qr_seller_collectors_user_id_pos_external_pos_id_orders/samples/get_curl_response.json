@@ -1,0 +1,21 @@
+{
+    "external_reference": "order-id-1234",
+    "total_amount": 100.0,
+    "items": [{
+        "sku_number": "KS955RUR",
+        "category": "COMIDA",
+        "title": "Pasta",
+        "description": "Compra en Mercado Pago",
+        "unit_price": 20.0,
+        "quantity": 5,
+        "unit_measure": "unit",
+        "total_amount": 100.0
+    }],
+    "title": "Compra",
+    "description": "Compra en Mercado Pago",
+    "sponsor": {
+        "id": 446566691
+    },
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "notification_url": "www.yourserver.com"
+}

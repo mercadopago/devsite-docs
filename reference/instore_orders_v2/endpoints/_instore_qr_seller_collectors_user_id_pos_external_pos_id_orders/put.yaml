@@ -3,6 +3,7 @@ samples:
 - curl.sh
 use:
 - user_id
+- external_store_id
 - external_pos_id
 - external_reference
 - title
