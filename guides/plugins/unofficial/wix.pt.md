@@ -67,4 +67,4 @@ Você conta com um par de chaves para conectar-se com a Wix, estas chaves podem 
 > Antes de iniciar sua operação em produção, assegure se de preencher o formulário [‘Ir para produção’](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production). Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
-> Para mais informação, visite o site [oficial da Wix](https://pt.wix.com/ecommerce/loja-virtual).
+> Para mais informações, visite o [site oficial da Wix](https://pt.wix.com/ecommerce/loja-virtual).
