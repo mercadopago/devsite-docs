@@ -11,7 +11,7 @@ Com ela você poderá, oferecer aos seus clientes a possibilidade de pagar [dire
 
 ## Etapas para configurar
 
-Os **passos para começar a operar com Mercado Pago**, são os seguintes:
+Os passos para **começar a receber com Mercado Pago**, são os seguintes:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/activities) no Mercado Pago caso ainda não tenha uma.
 2. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
