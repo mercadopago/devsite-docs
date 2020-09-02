@@ -7,7 +7,7 @@
 
 Wix é uma **plataforma virtual que te permite receber pagamentos com o Mercado Pago**.
 
-Você poderá oferecer aos seus clientes a possibilidade de pagar [diretamente no site do Mercado Pago](#bookmark_configure_a_forma_de_pagamento).
+Com ela você poderá, oferecer aos seus clientes a possibilidade de pagar [diretamente no site do Mercado Pago](#bookmark_configure_a_forma_de_pagamento).
 
 ## Etapas para configurar
 
