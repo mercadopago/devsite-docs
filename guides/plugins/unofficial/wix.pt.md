@@ -45,7 +45,6 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
 <p>&nbsp;</p>
     ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
-E pronto! O Mercado Pago já está ativado para receber pagamentos.
 
 ## Configurando o parcelamento na sua conta do Mercado Pago
 
