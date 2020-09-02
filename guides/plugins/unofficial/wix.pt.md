@@ -19,7 +19,7 @@ Os passos para **começar a receber com Mercado Pago**, são os seguintes:
 
 ## Adicione o Mercado Pago como meio de pagamento
 
-Para **adicionar o Mercado Pago a sua loja Wix**, siga os seguintes passos:
+Para **adicionar o Mercado Pago a sua loja**, siga os seguintes passos:
 
 1. No painel de administração de sua loja, acesse "Pagamentos" no módulo de configurações.
 2. Clique no botão Adicionar métodos de pagamento. 
