@@ -50,7 +50,7 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
 
 1. Acesse sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/business/) e clique em "Seu negócio".
 1. Clique em "Configurações" e na seção oferecer parcelas sem acréscimo, clique em "Ativar".
-3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
+1. Escolha quantas parcelas você quer oferecer e clique em "Ativar".
 <p>&nbsp;</p>
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
