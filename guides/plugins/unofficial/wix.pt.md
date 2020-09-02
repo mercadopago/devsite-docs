@@ -5,7 +5,7 @@
 
 ## O que é Wix?
 
-Wix é uma **plataforma e-commerce para sua loja virtual**, que permite processar pagamentos através do Mercado Pago.
+Wix é uma **plataforma virtual que te permite receber pagamentos com o Mercado Pago**.
 
 Você poderá oferecer aos seus clientes a possibilidade de pagar [diretamente no site do Mercado Pago](#bookmark_configure_a_forma_de_pagamento).
 
