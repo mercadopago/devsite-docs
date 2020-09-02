@@ -27,7 +27,6 @@ Para **adicionar o Mercado Pago a sua loja**, siga os seguintes passos:
 <p>&nbsp;</p>
     ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
 <p>&nbsp;</p>
-Pronto! O Mercado Pago já está instalado.
 
 ## Configure a forma de pagamento
 
