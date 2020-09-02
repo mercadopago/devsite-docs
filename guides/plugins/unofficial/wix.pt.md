@@ -38,7 +38,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 
 Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos abaixo:
 
-1. No painel "Métodos de pagamentos", localize o "Mercado Pago" e clique em "Configurar conta para ativar".
+1. No painel métodos de pagamentos, busque por Mercado Pago e clique em "Configurar conta para ativar".
 2. Clique no botão “Conecte uma conta existente". 
 3. Complete os campos "Client ID e Client Secret" que corresponde as [credenciais]([FAKER][CREDENTIALS][URL]) de sua conta "Mercado Pago".
 4. Clique em "Conectar Minha Conta".
