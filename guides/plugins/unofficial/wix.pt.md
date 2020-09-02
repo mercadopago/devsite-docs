@@ -54,7 +54,7 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
 <p>&nbsp;</p>
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
-E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) que você configurou.
+E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) que você configurou.
 
 ## Credenciais de sua conta Mercado Pago
 
