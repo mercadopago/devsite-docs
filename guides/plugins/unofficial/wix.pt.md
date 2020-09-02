@@ -47,7 +47,7 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
 <p>&nbsp;</p>
 E pronto! O Mercado Pago já está ativado para receber pagamentos.
 
-## Configurando o parcelamento em sua conta Mercado Pago
+## Configurando o parcelamento na sua conta do Mercado Pago
 
 1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio".
 2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
