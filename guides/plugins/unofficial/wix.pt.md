@@ -46,6 +46,8 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
     ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
 
+> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/).
+
 ## Configurando o parcelamento na sua conta do Mercado Pago
 
 1. Acesse sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/business/) e clique em "Seu negócio".
@@ -55,16 +57,6 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
 E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) que você configurou.
-
-## Credenciais de sua conta Mercado Pago
-
-Você conta com um par de chaves para conectar-se com a Wix, estas chaves podem ser encontradas no painel [credenciais da sua conta](https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials) na seção "Checkout de Mercado Pago".
-
-> WARNING
->
-> Importante
->
-> Antes de iniciar sua operação em produção, assegure se de preencher o formulário [‘Ir para produção’](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production). Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
 > Para mais informações, visite o [site oficial da Wix](https://pt.wix.com/ecommerce/loja-virtual).
