@@ -31,4 +31,4 @@ If you're planning on optimizing your app with ProGuard, make sure that you excl
 ## Documentation
 
 + [See the GitHub project.](https://github.com/mercadopago/px-android).
-+ [Read the SDK quick integration guide](https://www.mercadopago.com.ar/developers/es/guides/payments/mobile-checkout/introduction).
++ [Read the SDK quick integration guide](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/introduction).

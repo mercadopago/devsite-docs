@@ -1125,7 +1125,7 @@ Los datos más significativos son los siguientes:
 | `first_six_digits` | 450995 | Bin de la tarjeta. |
 | `processing_mode` | agregador | Modo de procesamiento del pago. |
 
-Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/handling-responses/).
+Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/).
 
 ## Errores comunes
 

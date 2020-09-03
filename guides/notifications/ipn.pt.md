@@ -65,7 +65,7 @@ Com essas informações, você poderá realizar as atualizações necessárias n
 1. O campo `status` da `merchant_order` permanecerá em **opened** quando ainda não tiver pagamentos associados, ou tiver pagamentos recusados ou aprovados por um valor menor ao total da ordem.
 2. O campo `status` da `merchant_order` será **closed** quando a soma dos pagamentos aprovados for igual ou superior ao total da ordem.
  
-Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status = approved para [poder realizar restituições](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/cancellations-and-refunds).
+Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status = approved para [poder realizar restituições](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/cancellations-and-refunds).
  
 > WARNING
 >

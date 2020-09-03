@@ -42,7 +42,7 @@ Insira o nome do seu negócio para que apareça na fatura dos seus clientes e se
 >
 > Embora você possa ativar todos os checkouts, recomendamos selecionar apenas uma das experiências para não confundir seus clientes.
 
-* Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods/) para seus clientes conforme o país em que você opera e o tipo de checkout que você está configurando.
+* Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods/) para seus clientes conforme o país em que você opera e o tipo de checkout que você está configurando.
 
 * Defina o número máximo de parcelas nas quais podem pagar.
 
@@ -82,7 +82,7 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 >
 > Nota
 >
-> Confira a [documentação do Checkout Pro ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/) para saber mais sobre todos os recursos e funcionalidades.
+> Confira a [documentação do Checkout Pro ](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para saber mais sobre todos os recursos e funcionalidades.
 
 ### Checkout Personalizado
 
