@@ -20,16 +20,16 @@ SSL                         | It is a requirement that you have an SSL certifica
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
-* [Basic Checkout (Mercado Pago Checkout)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/introduction/)
-    * [Split payments (Two cards)](https://www.mercadopago.com.br/developers/en/guides/payments/web-payment-checkout/configurations/#bookmark_payments_with_two_credit_cards)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds/)
+* [Basic Checkout (Checkout Pro)](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/introduction/)
+    * [Split payments (Two cards)](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_payments_with_two_credit_cards)
+    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/account/cancellations-and-refunds/)
 
 
 * Custom Checkout
-    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/guides/payments/api/receiving-payment-by-card/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/guides/payments/api/customers-and-cards/)
-    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/guides/payments/api/other-payment-ways/)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/cancellations-and-refunds)
+    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/)
+    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en//guides/online-payments/checkout-api/advanced-integration/)
+    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-api/other-payment-ways/)
+    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/account/cancellations-and-refunds)
 
 
 * Other features
@@ -81,7 +81,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 > There are two types of credentials:
 > * Trial credentials: The credentials in this way are used for testing.
-> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must complete the form "I want to go to production".
+> * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must activate your credentials.
 
 3) With your credentials filled, you need to enable payment methods. Go to **Custom Checkout - Credit And Debit Card**, click in **Configure** and check **Enable** as **Yes**. Make this process for **Custom Checkout - Offline Payments Methods (Ticket)** too and then click on **Save Config**.
 
@@ -100,7 +100,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 3) With your credentials filled, you need to enable payment methods. Click in **Configure** and check **Enable** as **Yes**. Configure the **Type Checkout** and if the user must return to your store at the end of the checkout (**Auto Redirect**).
 
-![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
+![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 4) Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
 

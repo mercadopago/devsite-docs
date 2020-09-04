@@ -32,7 +32,7 @@ Enter the name of the business to appear on your customers' invoice and make it 
 ## Basic Configuration
 
 * Define the experience your customers will have:
- * Use the Mercado Pago Checkout to support payments with cards, cash and money in account. It will provide security and comfort to the user. And now you can also configure it as a modal to open in your store!
+ * Use the Checkout Pro to support payments with cards, cash and money in account. It will provide security and comfort to the user. And now you can also configure it as a modal to open in your store!
  * Use the Custom Checkout and Ticket Checkout to have control over other settings. Activate both to offer all means of payment.
 
 
@@ -42,7 +42,7 @@ Enter the name of the business to appear on your customers' invoice and make it 
 >
 > While you can activate all checkouts, we recommend selecting only one of the experiences so as not to confuse your customers.
 
-* Select the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods/) to your customers according to the country in which you operate and the type of checkout you are configuring.
+* Select the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/payment-methods/) to your customers according to the country in which you operate and the type of checkout you are configuring.
 
 * Set the maximum number of installments in which they can pay you.
 
@@ -64,7 +64,7 @@ You will have different settings available depending on the type of checkout you
 >
 > Activating the binary mode can affect fraud prevention. Leave it inactive so we can take care of your charges.
 
-### Mercado Pago Checkout
+### Checkout Pro
 
 | Configuration            | Description                                                              	                                   |
 |--------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Note
 >
-> Check [the documentation of the Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
+> Check [the documentation of the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
 
 ### Custom Checkout
 

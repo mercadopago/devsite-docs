@@ -2,7 +2,7 @@
 
 
 * [Instalación](#bookmark_instalación)
-* [Checkout de Mercado Pago](#bookmark_checkout_de_mercado_pago)
+* [Checkout Pro](#bookmark_checkout_pro)
 * [Checkout personalizado](#bookmark_checkout_personalizado)
 * [Métodos genéricos](#bookmark_métodos_genéricos)
 
@@ -12,7 +12,7 @@
 ```gem install mercadopago-sdk```
 
 
-## Checkout de Mercado Pago
+## Checkout Pro
 
 ### Configura tus credenciales
 
@@ -116,7 +116,7 @@ require 'mercadopago.rb'
 $mp = MercadoPago.new('ACCESS_TOKEN')
 ```
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/). 
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/). 
 
 
 ### Crear un pago

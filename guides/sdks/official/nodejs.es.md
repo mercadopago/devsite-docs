@@ -70,7 +70,7 @@ try {
 
 Obtén tu **Access token** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 
 Para configurar el SDK debes usar el método **cofigure**.Este método recibe un objeto JSON. Las configuraciones válidas son:
 

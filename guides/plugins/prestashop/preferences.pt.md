@@ -33,7 +33,7 @@ Insira o nome do seu negócio para que apareça na fatura dos seus clientes e se
 ## Configuração básica
 
 * Defina a experiência que seus clientes terão:
- * Use o Checkout do Mercado Pago para aceitar pagamento com cartão, boleto e dinheiro em conta. Você vai proporcionar segurança e conforto ao usuário. E agora, você também pode configurá-lo como um modal para abrir na sua loja!
+ * Use o Checkout Pro para aceitar pagamento com cartão, boleto e dinheiro em conta. Você vai proporcionar segurança e conforto ao usuário. E agora, você também pode configurá-lo como um modal para abrir na sua loja!
  * Use o Checkout Personalizado e o Ticket Checkout para ter controle sobre outras configurações. Ative ambos para oferecer todos os meios de pagamento.
 
 > WARNING
@@ -42,7 +42,7 @@ Insira o nome do seu negócio para que apareça na fatura dos seus clientes e se
 >
 > Embora você possa ativar todos os checkouts, recomendamos selecionar apenas uma das experiências para não confundir seus clientes.
 
-* Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/localization/payment-methods/) para seus clientes conforme o país em que você opera e o tipo de checkout que você está configurando.
+* Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods/) para seus clientes conforme o país em que você opera e o tipo de checkout que você está configurando.
 
 * Defina o número máximo de parcelas nas quais podem pagar.
 
@@ -64,7 +64,7 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 >
 > A ativação do modo binário pode afetar a prevenção de fraude. Deixe-o inativo para que possamos cuidar dos pagamentos que você recebe.
 
-### Checkout Mercado Pago
+### Checkout Pro
 
 | Configuração               | Descrição                                                              	                                   |
 |----------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 >
 > Nota
 >
-> Confira a [documentação do Checkout do Mercado Pago ](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/) para saber mais sobre todos os recursos e funcionalidades.
+> Confira a [documentação do Checkout Pro ](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para saber mais sobre todos os recursos e funcionalidades.
 
 ### Checkout Personalizado
 

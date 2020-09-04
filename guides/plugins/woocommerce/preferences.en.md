@@ -13,13 +13,13 @@ Find the payment preference settings in the WooCommerce *Settings* once you have
 
 Enter the **name of the business** to appear on your customers' invoice and make it easier for them to recognize the payment when a purchase summary arrives. Select to which **category** the products or services offered by the store belong and make other adjustments according to your needs.
 
-![Basic information](/images/woocomerce/es_info_basica.png)
+![Basic information](/images/woocomerce/en_info_basica.png)
 
 > WARNING
 >
 > Important
 >
-> **Are you a Mercado Pago partner?** Don’t forget to enter your Sponsor_ID, so we can identify all your transactions and know how many orders your account processes.
+> Do not forget to enter your `integrator_id` as a certified Mercado Pago [Partner](https://partners.mercadopago.com/). If you don't have it, you can [request it now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
 
 <span></span>
 
@@ -34,16 +34,16 @@ Enter the **name of the business** to appear on your customers' invoice and make
 Activate the checkout you want to offer your customers according to your preferences and choose the payment methods with which they can make the purchase.
 
 * Activate a checkout type
-  * Use Mercado Pago Checkout to support payments with cards, cash and money in the Mercado Pago account.
+  * Use Checkout Pro to support payments with cards, cash and money in the Mercado Pago account.
   * Use the Custom Checkout to have control over other settings.
 
 <!-- > WARNING
 >
 > Important
 >
-> Note that the [Mercado Pago Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
+> Note that the [Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
 
-* Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
+* Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
 * Set the maximum number of installments in which they can pay you.
 
@@ -53,7 +53,7 @@ Activate the checkout you want to offer your customers according to your prefere
 >
 > Note
 >
-> The option to the activate currency conversion is available only for the Custom Checkout. The Mercado Pago Checkout converts automatically.
+> The option to the activate currency conversion is available only for the Custom Checkout. The Checkout Pro converts automatically.
 
 ## Advanced configuration
 
@@ -65,9 +65,9 @@ You will have different settings available depending on the type of checkout you
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | Binary Mode     	            | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
 
-### Mercado Pago Checkout
+### Checkout Pro
 
-#### Payment experiences in Mercado Pago Checkout
+#### Payment experiences in Checkout Pro
 
 Choose what shopping experience your customers will have when paying: 
 
@@ -80,7 +80,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Nota
 >
-> Check out the [Mercado Pago Checkout documentation](https://www.mercadopago.com.ar/developers/en/guides/payments/web-payment-checkout/introduction/) to learn more about all its features and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
 
 | Configuration                 | Description                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|

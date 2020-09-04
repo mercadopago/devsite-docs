@@ -1,8 +1,7 @@
 ---
-resource: preferences.raml
 samples:
-- search_curl.sh
-- search_curl_response.json
+- curl.sh
+- curl_response.json
 use:
 - client_id
 - collector_id
@@ -12,6 +11,7 @@ use:
 - expiration_date_from
 - expiration_date_to
 - expires
+- date_of_expiration
 - external_reference
 - integrator_id
 - items

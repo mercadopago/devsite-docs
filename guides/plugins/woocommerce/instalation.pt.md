@@ -9,16 +9,17 @@ Instale o Mercado Pago no WooCommerce automaticamente pelo marketplace na WordPr
 
 Revise os requisitos de instalação e siga as etapas que indicamos. A instalação do módulo leva poucos minutos!
 
-| Requisitos                    | Detalhes                                                                  	                  |
+| Requisitos                    | Detalhes                                                                  	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
-| Versões         	            | O módulo funciona para as versões do WordPress 3.1.x - 4.9.x y WooCommerce 2.6.x - 3.4.x      |
-| Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP)                                                      	  |
+| WordPress        	            | Requerido 4.9.10 ou superior. Testado até 5.4.2                                               |
+| WooCommerce      	            | Requerido 3.x ou superior. Testado até 4.3.0                                                  |
+| Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP)                                                      	|
 | Sistema                     	| Linux x86, Windows x86-64                                                        	            |
-| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	      |
-| Versão PHP                  	| PHP 5.6 ou superior com suporte a curl                     	                                  |
-| Base de dados               	| MySql 5.6 ou superior, MariaDB 10.0 ou superior                            	                  |
+| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	    |
+| Versão PHP                  	| PHP 5.6 ou superior com suporte a curl                     	                                |
+| Base de dados               	| MySql 5.6 ou superior (Oracle o Percona), MariaDB 10.0 ou superior           	                |
 | Dependência de extensões     	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API)         |
-| Configuração adicional        | safe_mode off * memory_limite maior que 256MB (512MB recomendado)                             |
+| Configuração adicional        | safe_mode off * memory_limit maior que 256MB (512MB recomendado)                              |
 | SSL                         	| Certificado SSL  	                                                                            |
 
 > WARNING
@@ -61,7 +62,7 @@ Pronto! O módulo do Mercado Pago será instalado na sua loja virtual.
 
 Confira se tudo está ok no seu painel do WordPress. Você verá o módulo nos seus *Plugins instalados*. Ative-o para passar para a integração da sua conta e etapas de configuração. 
 
-Quando você ativar o plugin, o WordPress levará aos *Ajustes* do WooCommerce e depois para a seção de *Payments*, onde estão todos os [tipos de checkout](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que oferecemos para sua loja virtual: Checkout Mercado Pago e Checkout Personalizado.
+Quando você ativar o plugin, o WordPress levará aos *Ajustes* do WooCommerce e depois para a seção de *Payments*, onde estão todos os [tipos de checkout](https://www.mercadopago.com.br/developers/pt/guides/plugins/woocommerce/introduction/#bookmark_tipos_de_checkout) que oferecemos para sua loja virtual: Checkout Pro e Checkout Personalizado.
 
 > NOTE
 >

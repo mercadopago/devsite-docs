@@ -4,7 +4,7 @@
 
 VTEX é uma **plataforma e-commerce para sua loja virtual** para sua loja virtual, que permite processar pagamentos através do Mercado Pago.
 
-Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito) e [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) no próprio [checkout da sua loja ou redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_mercado_pago).
+Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito) e [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) no próprio [checkout da sua loja ou redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_pro).
 
 
 ## Etapas para configurar
@@ -29,8 +29,8 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 |-------------------------------------------|---------------------------------------------------------------------------------------|
 | Nome da afiliação | Defina o nome que identificará a sua Afiliação. |
 | OAuth login | Não é utilizado. Deixe-o como está. |
-| PublicKey | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave pública. |
-| AccessToken | Refere-se às [credenciais da sua conta](#bookmark_credenciais_de_sua_conta_mercado_pago) do Mercado Pago. Complete com sua chave privada. |
+| PublicKey | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com sua Public Key. |
+| AccessToken | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com seu Access Token. |
 | RefreshToken | Deixar em branco. |
 | ExpiredTokenIn | Deixar em branco. |
 | Merchant Account Id | Deixar em branco. |
@@ -54,7 +54,7 @@ E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
 ## Configurar condições de pagamento
 
-Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e também pagamentos via [Checkout Mercado Pago](#bookmark_condição_de_pagamento_checkout_mercado_pago).
+Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e também pagamentos via [Checkout Pro](#bookmark_condição_de_pagamento_checkout_pro).
 
 ### Condição de pagamento cartão de crédito
 
@@ -85,7 +85,7 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
 <p>&nbsp;</p>
 
-### Condição de pagamento Checkout Mercado Pago
+### Condição de pagamento Checkout Pro
 
 **O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
 
@@ -135,12 +135,6 @@ document.body.appendChild(script);
 <br>
     ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
-## Credenciais de sua conta Mercado Pago
-
-Você conta com dois pares de chaves para conectar-se com a VTEX, um para ambiente de testes e outro para ambiente de produção. Estas chaves podem ser encontradas na seção [credenciais da sua conta](https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=mp&go=https://www.mercadopago.com/mlb/account/credentials).
-
-> Antes de iniciar sua operação em produção, assegure se de preencher o formulário 'Ir para produção'. Caso já tenha realizado este passo o link não será apresentado.
-
 ## Entendendo sobre os principais logs da VTEX
 
 **Os logs permitem revisar a informação que retorna Mercado Pago** e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação. Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto. Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
@@ -162,12 +156,24 @@ Os dados mais significativos são os seguintes:
 
 Quando confrontado com uma rejeição, é muito importante rever o `status_detail` que especifica o motivo do mesmo.
 
-| Campo | Dado | Descrição |
-|-------------------|-------------------------------------|--------------------------------------------|
-| Status | rejected | Pagamento rejeitado. |
-| Status_detail | cc_rejected_other_reason | Rejeição do cartão de crédito, sem informação do motivo. |
-| Status_detail | cc_rejected_call_for_authorize | Rejeição do cartão de crédito, o cliente deve ligar para autorizar o pagamento. |
-| Status_detail | cc_rejected_insufficient_amount | Rejeição do cartão de crédito, o cliente não tem saldo suficiente disponível. |
-| Status_detail | cc_rejected_high_risk | Rejeição de Mercado Pago, risco de fraude. |
+Para mais informações acesse o link <a href="https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses/" target="_blank">Resultados da criação de uma cobrança</a>.
 
-> Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/).
+## Erros comuns
+
+Os erros mais comuns são os seguintes:
+
+| Mensagem | Significado |
+|-------------------|--------------------------------------------|
+| `unauthorized_use_of_live_credentials` | Isso significa que as credenciais da conta do Mercado Pago não estão ativadas. Você deve ir para a página de credenciais e ativá-las |
+| `invalid installments` | Está sendo feita uma tentativa de processar o pagamento com uma taxa que não está ativada. Você deve acessar a configuração do método de pagamento e definir as taxas como "Automático". |
+| `invalid_users` | Você está tentando pagar com o mesmo usuário que está cobrando. Repetir o pagamento com um email de pagador diferente.|
+| `Cannot infer Payment Method` | Você está tentando pagar com um cartão que não seja o tipo de cartão selecionado (por exemplo, um número de cartão de crédito foi inserido na opção de cartão de débito).|
+
+> WARNING
+>
+> Importante
+>
+> Antes de iniciar sua operação em produção, você deve <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials" target="_blank">ativar suas credenciais</a>. Caso já tenha realizado este passo o link não será apresentado.
+
+<!-- -->
+> Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).

@@ -15,11 +15,13 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 
 ![Información básica](/images/prestashop/preferences_es.jpg)
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
-> No olvides ingresar tu `integrator_id` como [Partner](https://partners.mercadopago.com/) certificado de Mercado Pago. Si no lo tienes, puedes [solicitarlo ahora](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
+> El campo de `integrator_id` no es obligatorio a la hora de realizar una integración. Deberán completarlo los Partners de Mercado Pago, por lo que si no sos Partner debes dejarlo vacío.
+>
+> Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones para desarrolladores de Mercado Pago y cómo obtener tu ID, [déjanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform). 
 
 <span></span>
 
@@ -32,7 +34,7 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 ## Configuración básica
 
 * Define la experiencia que tendrán tus clientes:
- * Usa el Checkout de Mercado Pago para soportar pagos con tarjetas, en efectivo y dinero en cuenta. Le brindará seguridad y comodidad al usuario. ¡Y ahora también podrás configurarlo como modal para que se abra en tu tienda!
+ * Usa el Checkout Pro para soportar pagos con tarjetas, en efectivo y dinero en cuenta. Le brindará seguridad y comodidad al usuario. ¡Y ahora también podrás configurarlo como modal para que se abra en tu tienda!
  * Usa el Checkout Personalizado y el Ticket Checkout para tener control sobre otras configuraciones. Activa los dos para ofrecer todos los medios de pago.
 
 > WARNING
@@ -41,7 +43,7 @@ Ingresa el nombre del negocio para que aparezca en la factura de tus clientes y 
 >
 > Si bien puedes activar todos los checkouts, te recomendamos seleccionar solo una de las experiencias para no confundir a tus clientes.
 
-* Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
+* Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
 
 * Establece el máximo de cuotas en el que podrán pagarte.
 
@@ -63,7 +65,7 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 >
 > Activar el modo binario puede afectar a la prevención de fraude. Déjalo inactivo para que podamos cuidar tus cobros.
 
-### Checkout de Mercado Pago
+### Checkout Pro
 
 | Configuración                   | Descripción                                                              	                                   |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -81,7 +83,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 > Nota
 >
-> Consulta la [documentación del Checkout de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 ### Checkout Personalizado
 

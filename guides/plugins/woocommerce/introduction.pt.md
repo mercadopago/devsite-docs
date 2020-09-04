@@ -14,7 +14,7 @@ Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro 
 | Financiamento                	| Venda parcelado e ofereça as promoções que deseja.                    	                                                                |
 | Liberação de dinheiro         | Instantaneamente ou com as taxas e termos que melhor se adequam ao negócio.    	                                                                |
 | Meios de pagamento            | Aceite pagamentos com cartão de crédito, boleto, pagamento em lotérica e saldo na conta do Mercado Pago.                                    |
-| Tipos de checkout             | Checkout Mercado Pago, Checkout personalizado.                                                               	                                    |
+| Tipos de checkout             | Checkout Pro, Checkout personalizado.                                                               	                                    |
 | Pague como convidado          | Os usuários não precisam estar registrados no Mercado Pago para pagar no WooCommerce.                                              |
 | Devolução de pagamentos       | Devolva pagamentos pela plataforma.                                                               	                                      |
 | Cancelamento de pagamentos    | Cancele pagamentos pendentes pela plataforma.                            	                                                            |
@@ -36,7 +36,7 @@ Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro 
 
 Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. Confira as características para escolher aquela que se adapte melhor ao seu negócio.
 
-| Características     | Checkout Mercado Pago                                                                                                                 | Checkout personalizado                                         |
+| Características     | Checkout Pro                                                                                                                 | Checkout personalizado                                         |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | Meios de pagamento  | Pagamento com cartões, em dinheiro e com dinheiro na conta do Mercado Pago.                                                    | Pagamentos com cartões de crédito ou pagamentos presenciais.   |
 | Experiência de pagamento | Seus clientes pagam na página do Mercado Pago com um formato redirect (fora da sua loja) ou modal (dentro da sua loja).   | Seus clientes pagam sem sair da sua loja virtual.              |
@@ -46,7 +46,7 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 >
 > Nota
 >
-> Veja a [documentação do Checkout Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Veja a [documentação do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
 
 ### Próximos passos
 

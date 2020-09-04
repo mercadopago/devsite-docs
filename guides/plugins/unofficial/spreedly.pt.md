@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Integrar com Spreedly
 
 Receba pagamentos de maneira simples e segura de Mercado Pago através do Spreedly.
@@ -12,7 +15,7 @@ Os métodos disponíveis de Spreedly com Mercado Pago são:
 
 Para integração com Spreedly é necessário obter e configurar as [credenciais]([FAKER][CREDENTIALS][URL]) Public key e Access token do Mercado Pago.
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 Por sua vez, também é necessário inserir o código do país:
 

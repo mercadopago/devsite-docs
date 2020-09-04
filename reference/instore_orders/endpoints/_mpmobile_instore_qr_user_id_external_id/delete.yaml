@@ -1,5 +1,4 @@
 ---
-resource: instore_orders.raml
 samples:
 - curl.sh
 use:

@@ -1,27 +1,16 @@
 # Notificações IPN
 
-----[mla, mlb, mlc, mlm, mco, mlu]----
-> WARNING
->
-> Pré-requisitos
->
-> * Possuir o [Checkout](https://www.mercadopago.com.ar/developers/es/guides/payments/web-payment-checkout/introduction) implementado.
-------------
-----[mpe]----
-> WARNING
->
-> Pré-requisitos
->
-> * Possuir o [Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction) implementado.
-------------
-
 O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
 Para receber notificações de eventos na sua plataforma, você pode [configurar previamente uma notification_url à qual Mercado Pago tiver acesso](https://www.mercadopago.com.br/ipn-notifications).
 
-
-
 ## Eventos
+
+> WARNING
+>
+> Importante
+>
+> Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo.
 
 Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
 
@@ -61,6 +50,14 @@ chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
 merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
 
 
+Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado o un pedido fechado.
+
+> WARNING
+>
+> Importante
+>
+> Lembre-se de que, se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
+
 ### Notificações para pagamentos presenciais
 
 **Se você estiver integrando pagamentos presenciais**, recomendamos utilizar notificações IPN de topic `merchant_order`. Para isso, lembre das seguintes regras:
@@ -68,11 +65,11 @@ merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]       
 1. O campo `status` da `merchant_order` permanecerá em **opened** quando ainda não tiver pagamentos associados, ou tiver pagamentos recusados ou aprovados por um valor menor ao total da ordem.
 2. O campo `status` da `merchant_order` será **closed** quando a soma dos pagamentos aprovados for igual ou superior ao total da ordem.
  
-Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status = approved para [poder realizar restituições](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/cancellations-and-refunds).
+Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status = approved para [poder realizar restituições](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/cancellations-and-refunds).
  
 > WARNING
 >
-> ATENÇÃO
+> Importante
 >
 > Quando o `status` da `merchant_order` for **closed**, certifique-se de que a soma dos pagamentos com `status` **approved** seja igual ou maior ao total da ordem.
 
@@ -173,6 +170,14 @@ Caso contrário, se o QR no qual a ordem foi publicada ainda **não foi escanead
 
 > WARNING
 >
-> ATENÇÃO
+> Importante
 >
 > Mercado Pago requer a integração de pagamentos presenciais que tiverem aplicada a notificação (IPN) como método principal para a homologação. A pesquisa de ordem por `external_reference` deverá ser somente utilizada como contingência no caso eventual de não se receberem notificações.
+
+## Receber apenas um tipo de notificação
+
+Se deseja receber notificações apenas de IPN, e não de Webhooks, você pode adicionar na *notification_url* o parâmetro `source_news=ipn`. Como por exemplo:
+
+`https://www.yourserver.com/notifications?source_news=ipn`
+
+> A alteração não afeta os parâmetros já incluídos no URL.

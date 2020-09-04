@@ -20,16 +20,16 @@ SSL                       | É um requisito que você tenha um certificado SSL.<
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Checkout Mercado Pago)](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/)
-    * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds/)
+* [Checkout básico (Checkout Pro)](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/)
+    * [Pagamento com dois cartões](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
+    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds/)
 
 
 * Checkout Transparente
-    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/guides/payments/api/receiving-payment-by-card/)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/guides/payments/api/customers-and-cards/)
-    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/guides/payments/api/other-payment-ways/)
-    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/cancellations-and-refunds)
+    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt//guides/online-payments/checkout-api/advanced-integration/)
+    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/other-payment-ways/)
+    * [Devolução de Pagamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds)
 
 
 * Outras funcionalidades
@@ -82,8 +82,8 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 > Existem dois tipos de credenciais:
 > * Modo Sandbox: As credenciais desse modo são utilizadas para realizar testes.
-> * Modo Produção: As credenciais desse modo são utilizadas para receber os pagamentos em Produção. Para utilizar as credenciais do Modo Produção é necessário preencher o formulário "Eu quero ir para produção".
-> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> * Modo Produção: As credenciais desse modo são utilizadas para receber os pagamentos em Produção. Para utilizar as credenciais do Modo Produção é necessário ativar suas credenciais.
+> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 3) Com as credenciais preenchidas, é necessário habilitar os métodos de pagamento. Acesse a opção **Custom Checkout - Credit And Debit Card**, clique no botão **Configure** e marque a opção **Enable** como **Yes**. Faça esse processo também para **Custom Checkout - Offline Payments Methods (Ticket)** e logo seguida clique em **Save Config**.
 
@@ -103,7 +103,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 3) Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**.
 Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usuário deve retornar a sua loja ao finalizar o checkout (**Auto Redirect**).
 
-![Mercado Pago Checkout Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
+![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
 4)  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 

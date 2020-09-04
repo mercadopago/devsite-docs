@@ -1,5 +1,4 @@
 ---
-resource: payment_methods.raml
 use:
 - id
 - name

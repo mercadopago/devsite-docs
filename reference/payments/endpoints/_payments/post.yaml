@@ -1,5 +1,4 @@
 ---
-resource: payments.raml
 samples:
 - curl.sh
 - curl_response.json
@@ -14,6 +13,7 @@ use:
 - coupon_code
 - description
 - differential_pricing_id
+- date_of_expiration
 - external_reference
 - installments
 - issuer_id
@@ -59,6 +59,11 @@ errors:
         en: Must provide your access_token to proceed.
         es: Debes proveer tu access_token para proceder.
         pt: Must provide your access_token to proceed.
+  - '23':
+    description:
+      en: The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+      es: El siguiente parámetro debe ser una fecha válida en formato (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+      pt: The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
   - '1000':
       description:
         en: Number of rows exceeded the limits.
@@ -407,3 +412,8 @@ errors:
         en: payer.email must be shorter than 254 characters.
         es: La longitud de payer.email debe ser menor que 254 caracteres.
         pt: payer.email must be shorter than 254 characters.
+  - '7523':
+      description:
+        en: Invalid expiration date.
+        es: Fecha de expiración inválida.
+        pt: Invalid expiration date.

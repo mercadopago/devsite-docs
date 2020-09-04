@@ -1,164 +1,179 @@
----
-type: object
-properties: 
-- id:
-    type: String
-    description:
-      en: Card ID.
-      es: Identificador de tarjeta.
-      pt: Identificador de cartão.
-- customer_id:
-    type: String
-    description:
-      en: Customer ID.
-      es: Identificador de cliente.
-      pt: Identificador de cliente.
-- expiration_month:
-    type: Integer
-    description:
-      en: Card's expiration month.
-      es: Mes de expiración de la tarjeta.
-      pt: Mês de validade do cartão.
-- expiration_year:
-    type: Integer
-    description:
-      en: Card's expiration year.
-      es: Año de expiración de la tarjeta.
-      pt: Ano de validade do cartão.
-- first_six_digits:
-    type: String
-    description:
-      en: Card's first six digits.
-      es: Primeros seis dígitos de la tarjeta.
-      pt: Os primeiros seis dígitos do cartão.
-- last_four_digits:
-    type: String
-    description:
-      en: Card's last four digits.
-      es: Últimos cuatro dígitos de la tarjeta.
-      pt: Últimos quatro dígitos do cartão.
-- payment_method:
-    type: Object
-    description:
-      en: Payment method information.
-      es: Información de los medios de pago.
-      pt: Informação dos meios de pagamento.
-    properties:
-    - id:
-        type: String
-        description:
-          en: Payment method ID.
-          es: Identificador del medio de pago.
-          pt: Id do meio de pagamento.
-    - name:
-        type: String
-        description:
-          en: Payment method name.
-          es: Nombre del medio de pago.
-          pt: Nome do meio de pagamento.
-    - payment_type_id:
-        type: String
-        description:
-          en: Payment method type.
-          es: Tipo del medio de pago.
-          pt: Tipo do meio de pagamento.
-    - thumbnail:
-        type: String
-        description:
-          en: Payment method thumbnail.
-          es: Thumbnail del medio de pago.
-          pt: Thumbnail do meio de pagamento.
-    - secure_thumbnail:
-        type: String
-        description:
-          en: Payment method secure thumbnail.
-          es: Secure thumbnail del medio de pago.
-          pt: Secure thumbnail do meio de pagamento.
-- security_code:
-    type: Object
-    description:
-      en: Security code information.
-      es: Información del código de seguridad.
-      pt: Informação do código de segurança.
-    properties:
-    - length:
-        type: Integer
-        description:
-          en: Security code's length.
-          es: Longitud del código de seguridad.
-          pt: Comprimento do código de segurança.
-    - card_location:
-        type: String
-        description:
-          en: Security code's card location.
-          es: Ubicación del código de seguridad en la tarjeta.
-          pt: Localização do código de segurança no cartão.
-- issuer:
-    type: Object
-    description:
-      en: Issuer information.
-      es: Información del emisor.
-      pt: Informações do emitente.
-    properties:
-    - id:
-        type: Integer
-        description:
-          en: Issuer Id.
-          es: Identificador del emisor.
-          pt: Id do remetente.
-    - name:
-        type: String
-        description:
-          en: Issuer name.
-          es: Nombre del emisor.
-          pt: Nome do emitente.
-- cardholder:
-    type: Object
-    description:
-      en: Card holder information.
-      es: Información del dueño de la tarjeta.
-      pt: Informações do dono do cartão.
-    properties:
-    - name:
-        type: Integer
-        description:
-          en: Card holder name.
-          es: Nombre.
-          pt: O nome.
-    - identification:
-        type: Integer
-        description:
-          en: Identification information.
-          es: Información de la identificación.
-          pt: Informação de identificação.
-        properties:
-        - number:
-            type: Integer
-            description:
-              en: Identification number.
-              es: Número de indentificación.
-              pt: Número de identificação.
-        - subtype:
-            type: String
-            description:
-              en: Identification subtype.
-              es: Subtipo de identificación.
-              pt: Subtipo de identificação.
-        - type:
-            type: String
-            description:
-              en: Identification type.
-              es: Tipo de identificación.
-              pt: Tipo de identificação.
-- date_created:
-    type: Date(ISO_8601)
-    description:
-      en: Card's date created.
-      es: Fecha de creación de la tarjeta.
-      pt: Data de criação do cartão.
-- date_last_updated:
-    type: Date(ISO_8601)
-    description:
-      en: Card's last modified date.
-      es: Última fecha de actualización de la tarjeta.
-      pt: Última data de atualização do cartão.
+title: Cards API
+key: cards
+order: 6
+version: v1
+baseUri: https://api.mercadopago.com/
+paths:
+  /customers/{customer_id}/cards:
+    methods:
+      - get
+      - post
+  /customers/{customer_id}/cards/{id}:
+    methods:
+      - get
+      - put
+      - delete
+definitions:
+  type: object
+  properties: 
+  - id:
+      type: String
+      description:
+        en: Card ID.
+        es: Identificador de tarjeta.
+        pt: Identificador de cartão.
+  - customer_id:
+      type: String
+      description:
+        en: Customer ID.
+        es: Identificador de cliente.
+        pt: Identificador de cliente.
+  - expiration_month:
+      type: Integer
+      description:
+        en: Card's expiration month.
+        es: Mes de expiración de la tarjeta.
+        pt: Mês de validade do cartão.
+  - expiration_year:
+      type: Integer
+      description:
+        en: Card's expiration year.
+        es: Año de expiración de la tarjeta.
+        pt: Ano de validade do cartão.
+  - first_six_digits:
+      type: String
+      description:
+        en: Card's first six digits.
+        es: Primeros seis dígitos de la tarjeta.
+        pt: Os primeiros seis dígitos do cartão.
+  - last_four_digits:
+      type: String
+      description:
+        en: Card's last four digits.
+        es: Últimos cuatro dígitos de la tarjeta.
+        pt: Últimos quatro dígitos do cartão.
+  - payment_method:
+      type: Object
+      description:
+        en: Payment method information.
+        es: Información de los medios de pago.
+        pt: Informação dos meios de pagamento.
+      properties:
+      - id:
+          type: String
+          description:
+            en: Payment method ID.
+            es: Identificador del medio de pago.
+            pt: Id do meio de pagamento.
+      - name:
+          type: String
+          description:
+            en: Payment method name.
+            es: Nombre del medio de pago.
+            pt: Nome do meio de pagamento.
+      - payment_type_id:
+          type: String
+          description:
+            en: Payment method type.
+            es: Tipo del medio de pago.
+            pt: Tipo do meio de pagamento.
+      - thumbnail:
+          type: String
+          description:
+            en: Payment method thumbnail.
+            es: Thumbnail del medio de pago.
+            pt: Thumbnail do meio de pagamento.
+      - secure_thumbnail:
+          type: String
+          description:
+            en: Payment method secure thumbnail.
+            es: Secure thumbnail del medio de pago.
+            pt: Secure thumbnail do meio de pagamento.
+  - security_code:
+      type: Object
+      description:
+        en: Security code information.
+        es: Información del código de seguridad.
+        pt: Informação do código de segurança.
+      properties:
+      - length:
+          type: Integer
+          description:
+            en: Security code's length.
+            es: Longitud del código de seguridad.
+            pt: Comprimento do código de segurança.
+      - card_location:
+          type: String
+          description:
+            en: Security code's card location.
+            es: Ubicación del código de seguridad en la tarjeta.
+            pt: Localização do código de segurança no cartão.
+  - issuer:
+      type: Object
+      description:
+        en: Issuer information.
+        es: Información del emisor.
+        pt: Informações do emitente.
+      properties:
+      - id:
+          type: Integer
+          description:
+            en: Issuer Id.
+            es: Identificador del emisor.
+            pt: Id do remetente.
+      - name:
+          type: String
+          description:
+            en: Issuer name.
+            es: Nombre del emisor.
+            pt: Nome do emitente.
+  - cardholder:
+      type: Object
+      description:
+        en: Card holder information.
+        es: Información del dueño de la tarjeta.
+        pt: Informações do dono do cartão.
+      properties:
+      - name:
+          type: Integer
+          description:
+            en: Card holder name.
+            es: Nombre.
+            pt: O nome.
+      - identification:
+          type: Integer
+          description:
+            en: Identification information.
+            es: Información de la identificación.
+            pt: Informação de identificação.
+          properties:
+          - number:
+              type: Integer
+              description:
+                en: Identification number.
+                es: Número de indentificación.
+                pt: Número de identificação.
+          - subtype:
+              type: String
+              description:
+                en: Identification subtype.
+                es: Subtipo de identificación.
+                pt: Subtipo de identificação.
+          - type:
+              type: String
+              description:
+                en: Identification type.
+                es: Tipo de identificación.
+                pt: Tipo de identificação.
+  - date_created:
+      type: Date(ISO_8601)
+      description:
+        en: Card's date created.
+        es: Fecha de creación de la tarjeta.
+        pt: Data de criação do cartão.
+  - date_last_updated:
+      type: Date(ISO_8601)
+      description:
+        en: Card's last modified date.
+        es: Última fecha de actualización de la tarjeta.
+        pt: Última data de atualização do cartão.
