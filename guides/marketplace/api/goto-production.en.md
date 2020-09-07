@@ -1,1 +1,0 @@
-../../payments/api/goto-production.en.md

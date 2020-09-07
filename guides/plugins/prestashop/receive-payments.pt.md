@@ -19,7 +19,7 @@ Quando fizer os testes, confira se o fluxo de pagamentos está funcionando corre
 
 Para começar a receber pagamentos, você deve preencher o formulario [Quero ir à produção](https://www.mercadopago.com/mlb/account/credentials/).
 
-> Confira os [requisitos para ir à produção](https://www.mercadopago.com.br/developers/pt/guides/payments/api/goto-production/) se tiver alguma dúvida com o processo.
+> Confira os [requisitos para ir à produção](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/goto-production/) se tiver alguma dúvida com o processo.
 
 Verifique se as credenciais de Produção do módulo são as mesmas da conta que você recebe o dinheiro das vendas. 
 

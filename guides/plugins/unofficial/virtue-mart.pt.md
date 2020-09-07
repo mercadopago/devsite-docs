@@ -160,7 +160,7 @@ Para poder encontrá-las, confira suas [credenciais]([FAKER][CREDENTIALS][URL]).
 
 Encontre seu **Access Token** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
 
 ## Suporte
 

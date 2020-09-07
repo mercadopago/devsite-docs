@@ -68,7 +68,7 @@ Con esta información puedes realizar las actualizaciones necesarias en tu plata
 1. El campo `status` de la `merchant_order` permanecerá en **opened** cuando aún no tenga pagos asociados, o los tenga y estén rechazados o aprobados por un monto menor al total de la orden.
 2. El campo `status` de la `merchant_order` será **closed** cuando la suma de los pagos aprobados sea igual o mayor al total de la orden.
 
-Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la misma. Es importante obtener el id de los pagos con `status` = **approved** para [poder realizar devoluciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/cancellations-and-refunds/). 
+Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la misma. Es importante obtener el id de los pagos con `status` = **approved** para [poder realizar devoluciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/). 
 
 > WARNING
 >

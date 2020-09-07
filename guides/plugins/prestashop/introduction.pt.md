@@ -46,7 +46,7 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 >
 > Nota
 >
-> Consulte a [documentação do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-payment-checkout/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Consulte a [documentação do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
 
 ### Próximo passo
 

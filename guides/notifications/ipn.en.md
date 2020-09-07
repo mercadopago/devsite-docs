@@ -67,7 +67,7 @@ With this information you can make the necessary updates on your platform, such 
 1. The `merchant_order` status field will remain **open** if there are no associated payments or, otherwise, if they are rejected or approved for an amount lower than total order amount.
 2. The `merchant_order` status field will be **closed** when the sum of approved payments is equal to or higher than total order amount.
 
-You will find all the payments in the order, under the payments object. [To make refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/cancellations-and-refunds/), it is important to get the id of payments with `status` = **approved**.
+You will find all the payments in the order, under the payments object. [To make refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds/), it is important to get the id of payments with `status` = **approved**.
 
 
 > WARNING
