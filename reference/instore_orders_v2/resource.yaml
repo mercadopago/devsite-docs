@@ -4,14 +4,13 @@ order: 11
 version:
 baseUri: https://api.mercadopago.com
 paths:
+  /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
+    methods:
+      - delete
+      - get
   /instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders:
     methods:
       - put
- /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
-   methods:
-     - delete
-     - get
-
 definitions:
   type: object
   properties:
