@@ -20,8 +20,8 @@ definitions:
   - external_id:
       type: String
       description:
-        en: Unique identifier of the point of sale defined by integrator system. (Required)
-        es: Identificador único de la caja/punto de venta, definido por el integrador. (Obligatorio)
+        en: Unique identifier of the Point of Sale defined by integrator system. (Required)
+        es: Identificador único de la caja o Punto de Venta definido por el integrador. (Obligatorio)
         pt: Identificador único do ponto de venda definido pelo sistema integrador. (Mandatório)    
   - external_reference:
       type: String(256)

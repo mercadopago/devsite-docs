@@ -46,9 +46,9 @@ definitions:
     - category:
         type: Long
         description:
-          en: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category
-          es: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoria generica.
-          pt: Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica
+          en: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.
+          es: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica.
+          pt: Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica.
         enum:
         - Argentina:
             en: Gastronomy - 621102 <br/> Gas station - 473000
@@ -99,6 +99,6 @@ definitions:
     - url:
         type: String
         description:
-          en: URL to get the order of the integrator system. It is optional and is used only in the disregarded integration model.
-          es: URL para obtener la orden del sistema integrador. Es opcional y se utiliza sólo en el modelo de integración desatendido.
-          pt: URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração autônoma.
+          en: URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.
+          es: URL para obtener la orden del sistema integrador. Es opcional y se utiliza solo en el modelo de integración desatendido.
+          pt: URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração desatendido.
