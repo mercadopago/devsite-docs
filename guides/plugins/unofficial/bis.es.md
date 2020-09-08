@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Bis2Bis
 
 ## ¿Qué es Bis2Bis?
