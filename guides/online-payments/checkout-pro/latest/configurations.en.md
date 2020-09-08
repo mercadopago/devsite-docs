@@ -70,6 +70,7 @@ You can [get business information](https://www.mercadopago.com.ar/developers/en/
         "installments": 12
     },
     "notification_url": "https://www.your-site.com/ipn",
+    "statement_descriptor": "MYBUSINESS",
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
@@ -145,6 +146,7 @@ You can [get business information](https://www.mercadopago.com.ar/developers/en/
 		}
 	},
 	"notification_url": "https://www.your-site.com/ipn",
+	"statement_descriptor": "MYBUSINESS",
 	"external_reference": "Reference_1234",
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
@@ -276,6 +278,20 @@ If you want to enable the payment of a preference with a certain duration, you c
 "expiration_date_from": "2017-02-01T12:00:00.000-04:00",
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
+
+### Description in the card summary
+
+You can send the name of your business in the attribute _`statement_descriptor`_ in this way in the summary of your payer's card the name of your business is shown and in this way the payer knows where made the purchase.
+
+```json
+"statement_descriptor": "MYBUSINESS"
+```
+
+> NOTE
+>
+> Note
+>
+> Whether the value of the attribute is shown in the summary of your payer's card will depend on the brand of card used.
 
 ### Multiple Items
 

@@ -69,6 +69,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
         "installments": 12
     },
     "notification_url": "https://www.your-site.com/ipn",
+    "statement_descriptor": "MINEGOCIO",
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
@@ -144,6 +145,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 		}
 	},
 	"notification_url": "https://www.your-site.com/ipn",
+	"statement_descriptor": "MINEGOCIO",
 	"external_reference": "Reference_1234",
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
@@ -319,6 +321,21 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 "expiration_date_from": "2017-02-01T12:00:00.000-04:00",
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
+
+### Descripción en el resumen de la tarjeta
+
+Puedes enviar el nombre de tu negocio en el atributo _`statement_descriptor`_ para que en el resumen de la tarjeta de tu pagador aparezca el nombre de tu negocio y de esta manera sepa donde realizó la compra.
+
+```json
+"statement_descriptor": "MINEGOCIO"
+```
+
+> NOTE
+>
+> Nota
+>
+> Que el valor del atributo se muestre en el resumen de la tarjeta de tu pagador dependerá de la marca de la tarjeta utilizada.
+
 
 ### Múltiples ítems
 

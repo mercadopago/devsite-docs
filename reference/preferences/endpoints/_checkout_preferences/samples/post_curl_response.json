@@ -66,6 +66,7 @@
         }
     },
     "notification_url": null,
+    "statement_descriptor": "MERCADOPAGO",
     "external_reference": "",
     "additional_info": "",
     "expires": false,

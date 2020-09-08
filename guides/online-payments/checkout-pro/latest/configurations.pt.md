@@ -69,6 +69,7 @@ Através da preferência, você pode [obter informações de negócio](https://w
         "installments": 12
     },
     "notification_url": "https://www.your-site.com/ipn",
+    "statement_descriptor": "MEUNEGOCIO",
     "external_reference": "Reference_1234",
     "expires": true,
     "expiration_date_from": "2016-02-01T12:00:00.000-04:00",
@@ -144,6 +145,7 @@ Através da preferência, você pode [obter informações de negócio](https://w
 		}
 	},
 	"notification_url": "https://www.your-site.com/ipn",
+	"statement_descriptor": "MEUNEGOCIO",
 	"external_reference": "Reference_1234",
 	"expires": true,
 	"expiration_date_from": "2016-02-01T12:00:00.000-04:00",
@@ -299,6 +301,20 @@ Se quiser ativar o pagamento de uma preferência com uma determinada duração, 
 "expiration_date_from": "2017-02-01T12:00:00.000-04:00",
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
+
+### Descrição no resumo do cartão
+
+Pode enviar o nome da sua empresa no atributo _`demonstrativo_descriptor`_ desta forma no resumo do seu cartão de pagador aparece o nome da sua empresa e desta forma o pagador sabe onde efectuou a compra.
+
+```json
+"statement_descriptor": "MEUNEGOCIO"
+```
+
+> NOTE
+>
+> Nota
+>
+> Se o valor do atributo é mostrado no resumo do cartão do seu pagador dependerá da marca do cartão utilizado.
 
 ### Diversos itens
 
