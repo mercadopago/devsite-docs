@@ -11,8 +11,8 @@ Review the installation requirements and follow the steps we indicate, it will o
 
 | Requirements                  | Details                                                                    	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
-| WordPress        	            | Required 4.9.10 or higher. Tested up to 5.4.2                                                 |
-| WooCommerce      	            | Required 3.x or higher. Tested up to 4.3.0                                                    |
+| WordPress        	            | Required 4.9.10 or higher. Tested up to 5.5.1                                                 |
+| WooCommerce      	            | Required 3.x or higher. Tested up to 4.4.1                                                    |
 | Environment                  	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
 | System                      	| Linux x86, Windows x86-64                                                        	            |
 | Web Server                  	| Apache 2.x, Nginx 1.7.x                                                               	    |
@@ -76,9 +76,14 @@ We advise you to make a **backup copy of your store** before making any changes.
 
 Then execute the steps of a **new installation** to update your page with the latest available version of the Mercado Pago module.
 
----
+> Keep the module always updated in the latest version.
 
-> Keep the module always updated in the latest version. 
+<span></span>
+> GIT
+>
+> Check our updates on GitHub
+>
+> Check GitHub for details on the [latest productive updates](https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md).
 
 ---
 
@@ -90,5 +95,5 @@ Then execute the steps of a **new installation** to update your page with the la
 >
 > Connect your Mercado Pago account to the module and capture the payments you receive for your online sales.
 >
-> 
+>
 > [Integrate](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/integration/)
