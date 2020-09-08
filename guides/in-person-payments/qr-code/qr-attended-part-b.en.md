@@ -28,30 +28,34 @@ We explain how the attended model works:
 ## Create an order
 
 ```curl
-curl -X POST 
-https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN -d
+curl -X PUT \
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN -d
 {
-    "external_reference": "Bill-0001",
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
     "notification_url": "www.yourserver.com",
-    "items" :[{
-    		   "title" : "Product 1",
-    		   "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
-    		   "unit_price" : 120.00,
-    	       "quantity" : 1,
-               "description": "Mercado Pago Item",
-               "picture_url": "https://bit.ly/2lCRcEN"
-    		    },
-            {
-    		   "title" : "Product 2",
-    		   "currency_id" : "[FAKER][CURRENCY][ACRONYM]",
-    		   "unit_price" : 100.00,
-    		   "quantity" : 2
-    		    }],
-    "sponsor_id": 446566691
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 100.0,
+    "items": [
+        {
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 20,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 100
+        }
+    ],
+    "sponsor": {
+        "id": 446566691
+    }
 }
 ```
 
-Obtain more information in our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post/).
+Obtain more information in our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/put/).
 
 Once the order is created, it is available to be **scanned and paid**.
 
@@ -68,7 +72,7 @@ Once the order is created, it is available to be **scanned and paid**.
 To delete a QR associated order before it’s closed or expires, you can use this following method:
 
 ```curl
-curl -X DELETE https://api.mercadopago.com/mpmobile/instore/qr/$USER_ID/$EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN  -d 
+curl -X DELETE https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
 ```
 Answer will be `HTTP 204 No Content`.
 
