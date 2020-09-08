@@ -19,21 +19,21 @@ definitions:
     - id:
         type: String
         description:
-        en: POS identifier, numerical and self-generated.
-        es: Identificador único de la caja, numérico y autogenerado.
-        pt: Identificador exclusivo da caixa, numérico e gerado automaticamente.
+          en: POS identifier, numerical and self-generated.
+          es: Identificador único de la caja, numérico y autogenerado.
+          pt: Identificador exclusivo da caixa, numérico e gerado automaticamente.
     - name:
         type: String
         description:
-        en: Name of the POS.
-        es: Nombre de la caja.
-        pt: Nome da caixa.
+            en: Name of the POS. (Required)
+            es: Nombre de la caja. (Obligatorio)
+            pt: Nome da caixa. (Mandatório)
     - fixed_amount:
         type: Boolean
         description:
-        en: Define if the customer can insert the amount to be paid.
-        es: Determina si el cliente puede insertar el monto a pagar.
-        pt: Determine se o cliente pode inserir o valor a ser pago.
+          en: Define if the customer can insert the amount to be paid. (Required)
+          es: Determina si el cliente puede insertar el monto a pagar. (Obligatorio)
+          pt: Determine se o cliente pode inserir o valor a ser pago. (Mandatório)
         enum:
         - true:
             en: The customer cannot choose the amount to be paid and must wait for the generation of an order.
@@ -46,9 +46,9 @@ definitions:
     - category:
         type: Long
         description:
-        en: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category
-        es: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoria generica.
-        pt: Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica
+          en: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.
+          es: Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica.
+          pt: Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica.
         enum:
         - Argentina:
             en: Gastronomy - 621102 <br/> Gas station - 473000
@@ -81,24 +81,24 @@ definitions:
     - store_id:
         type: String
         description:
-        en: Store identifier to which the point of sale belongs.
-        es: Identificador de la sucursal a la que pertenece el Punto de Venta.
-        pt: Identificador da loja à qual o caixa pertence.      
+          en: Store identifier to which the point of sale belongs.
+          es: Identificador de la sucursal a la que pertenece el Punto de Venta.
+          pt: Identificador da loja à qual o caixa pertence.      
     - external_store_id:
         type: String
         description:
-        en: Unique identifier of the store to which the pos belongs defined by integrator system.
-        es: Identificador único de la sucursal a la cual pertenece la caja, definido por el integrador.
-        pt: Identificador único da loja a que a caixa pertence, definido pelo sistema integrador.    
+          en: External_id of the store to which the pos belongs defined by integrator system. (Required)
+          es: External_id de la sucursal a la cual pertenece la caja, definido por el integrador. (Obligatorio)
+          pt: External_id da loja a que a caixa pertence, definido pelo sistema integrador. (Mandatório)    
     - external_id:
         type: String
         description:
-        en: Unique identifier of the pos defined by integrator system.
-        es: Identificador único de la caja definido por el integrador.
-        pt: Identificador único da caixa definido pelo sistema integrador.   
+          en: Unique identifier of the pos defined by integrator system.
+          es: Identificador único de la caja definido por el integrador.
+          pt: Identificador único da caixa definido pelo sistema integrador.   
     - url:
         type: String
         description:
-        en: URL to get the order of the integrator system. It is optional and is used only in the disregarded integration model.
-        es: URL para obtener la orden del sistema integrador. Es opcional y se utiliza sólo en el modelo de integración desatendido.
-        pt: URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração autônoma.
+          en: URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.
+          es: URL para obtener la orden del sistema integrador. Es opcional y se utiliza solo en el modelo de integración desatendido.
+          pt: URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração desatendido.
