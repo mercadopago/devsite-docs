@@ -11,8 +11,8 @@ Revisa los requisitos de instalación y sigue los pasos que te indicamos ¡solo 
 
 | Requisitos                    | Detalles                                                                  	                |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
-| WordPress        	            | Requerido 4.9.10 o superior. Probado hasta 5.4.2                                              |
-| WooCommerce      	            | Requerido 3.x o superior. Probado hasta 4.3.0                                                 |
+| WordPress        	            | Requerido 4.9.10 o superior. Probado hasta 5.5.1                                              |
+| WooCommerce      	            | Requerido 3.x o superior. Probado hasta 4.4.1                                                 |
 | Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
 | Sistema                     	| Linux x86, Windows x86-64                                                        	            |
 | Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	    |
@@ -76,9 +76,14 @@ Te aconsejamos hacer una **copia de seguridad de la tienda online** antes de efe
 
 Luego ejecuta los pasos de una **nueva instalación** para actualizar tu tienda con la última versión del módulo disponible.
 
----
-
 > Mantén el módulo actualizado siempre en la última versión.
+
+<span></span>
+> GIT
+>
+> Mira nuestras actualizaciones en GitHub
+>
+> Consulte GitHub para obtener detalles sobre las [últimas actualizaciones productivas](https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md).
 
 ---
 
