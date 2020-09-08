@@ -224,6 +224,14 @@ curl -X POST \
 ```
 ]]]
 
+----[mlc, mco]----
+> WARNING 
+> 
+> Alterar o valor unit_price
+> 
+> O valor de unit_price deve ser um número inteiro nos países Colômbia e Chile.
+——————
+
 > NOTE
 >
 > Aceite pagamentos apenas de usuários cadastrados
