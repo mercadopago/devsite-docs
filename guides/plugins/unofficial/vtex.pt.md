@@ -156,7 +156,7 @@ Os dados mais significativos são os seguintes:
 
 Quando confrontado com uma rejeição, é muito importante rever o `status_detail` que especifica o motivo do mesmo.
 
-Para mais informações acesse o link <a href="https://www.mercadopago.com.br/developers/pt/guides/payments/api/handling-responses/" target="_blank">Resultados da criação de uma cobrança</a>.
+Para mais informações acesse o link <a href="https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses/" target="_blank">Resultados da criação de uma cobrança</a>.
 
 ## Erros comuns
 
