@@ -96,6 +96,8 @@ MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
 <br/><br/>1.3 Set the preference according to your product or service:<br/>
 
+----[mla, mlb, mlu, mpe, mlm]----
+
 [[[
  ```php
 <?php
@@ -223,6 +225,147 @@ curl -X POST \
 }'
 ```
 ]]]
+
+------------
+
+----[mlc, mco]----
+
+[[[
+ ```php
+<?php
+// Mercado Pago SDK
+require __DIR__ .  '/vendor/autoload.php';
+
+// Add Your credentials
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+
+// Create a preference object
+$preference = new MercadoPago\Preference();
+
+// Create a preference item
+$item = new MercadoPago\Item();
+$item->title = 'My Item';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->save();
+?>
+```
+```node
+// Mercado Pago SDK
+const mercadopago = require ('mercadopago');
+
+// Add Your credentials
+mercadopago.configure({
+  access_token: 'PROD_ACCESS_TOKEN'
+});
+
+// Create a preference object
+let preference = {
+  items: [
+    {
+      title: 'My Item',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ]
+};
+
+mercadopago.preferences.create(preference)
+.then(function(response){
+// This value replaces the String "<%= global.id %>" in your HTML
+  global.id = response.body.id;
+}).catch(function(error){
+  console.log(error);
+});
+```
+```java
+// Mercado Pago SDK
+import com.mercadopago.MercadoPago;
+
+// Add Your credentials
+MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
+
+// Create a preference object
+Preference preference = new Preference();
+
+// Create a preference item
+Item item = new Item();
+item.setTitle("My Item")
+    .setQuantity(1)
+    .setUnitPrice((float) 75);
+preference.appendItem(item);
+preference.save();
+```
+```ruby
+# Mercado Pago SDK
+require 'mercadopago.rb'
+
+# Add Your credentials
+$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+
+# Create a preference object
+preference_data = {
+  "items": [
+    {
+      "title": "My Item",
+      "unit_price": 100,
+      "quantity": 1
+    }
+  ]
+}
+preference = $mp.create_preference(preference_data)
+
+# This value replaces the String "<%= @preference_id %>" in your HTML
+@preference_id = preference["response"]["id"]
+```
+```csharp
+// Mercado Pago SDK
+using MercadoPago;
+
+// Add Your credentials
+MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+
+// Create a preference object
+Preference preference = new Preference();
+
+// Create a preference item
+preference.Items.Add(
+  new Item()
+  {
+    Title = "My Item",
+    Quantity = 1,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
+    UnitPrice = (decimal)75
+  }
+);
+preference.Save()"
+```
+```curl
+curl -X POST \
+  'https://api.mercadolibre.com/checkout/preferences?access_token="**PROD_ACCESS_TOKEN**"' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}'
+```
+]]]
+
+> WARNING
+>
+> Important
+>
+> The value of `unit_price` must be an integer.
+
+------------
+<span></span>
 
 > NOTE
 >
