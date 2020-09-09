@@ -103,7 +103,7 @@
   "refunded_amount": 0,
   "payer": {
     "id": 999999999,
-    "email": "payer@email.com"
+    "email": ""
   },
   "items": [
     {
