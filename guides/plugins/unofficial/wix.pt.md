@@ -19,7 +19,7 @@ Os passos para **começar a receber com Mercado Pago**, são os seguintes:
 
 ## Adicione o Mercado Pago como meio de pagamento
 
-Para **adicionar o Mercado Pago a sua loja**, siga os seguintes passos:
+Para **adicionar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 1. No painel administrativo, acesse "Pagamentos" no módulo de configurações.
 1. Clique em "Adicionar métodos de pagamento". 
