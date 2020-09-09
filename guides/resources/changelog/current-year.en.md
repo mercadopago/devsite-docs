@@ -6,6 +6,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## September 2020
 
+### September 9th
+
+> CHANGELOG
+>
+> API Orders changes
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: ORDERS
+
+Actualizamos nuestras medidas de protección de datos para cumplir con los más altos estándares de seguridad. A partir del lunes 12 de octubre, vamos a dejar de mostrar el e-mail del comprador en la creación de órdenes.
+
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource/).
+
+---
+
+## September 2020
+
 ### September 3rd
 
 > CHANGELOG

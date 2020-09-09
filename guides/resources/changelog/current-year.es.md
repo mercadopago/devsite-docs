@@ -6,6 +6,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Septiembre 2020
 
+### 9 de septiembre
+
+> CHANGELOG
+>
+> Cambios en la API de órdenes
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: ÓRDENES
+
+Actualizamos nuestras medidas de protección de datos para cumplir con los más altos estándares de seguridad. A partir del lunes 12 de octubre, vamos a dejar de mostrar el e-mail del comprador en la creación de órdenes. 
+
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/).
+
+---
+
+## Septiembre 2020
+
 ### 3 de septiembre
 
 > CHANGELOG
