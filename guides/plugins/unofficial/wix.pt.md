@@ -34,7 +34,7 @@ A Wix te permite receber através do **Checkout Pro**, onde o comprador será re
 
 Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_na_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
-## Ative sua conta Mercado Pago
+## Ative sua conta do Mercado Pago
 
 Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos abaixo:
 
