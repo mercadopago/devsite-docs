@@ -304,7 +304,7 @@ Se quiser ativar o pagamento de uma preferência com uma determinada duração, 
 
 ### Descrição no resumo do cartão
 
-Pode enviar o nome da sua empresa no atributo _`demonstrativo_descriptor`_ desta forma no resumo do seu cartão de comprador aparece o nome da sua empresa e desta forma o comprador sabe onde efectuou a compra.
+Pode enviar o nome da sua empresa no atributo _`statement_descriptor`_ desta forma no resumo do seu cartão de comprador aparece o nome da sua empresa e desta forma o comprador sabe onde efectuou a compra.
 
 ```json
 "statement_descriptor": "MEUNEGOCIO"
