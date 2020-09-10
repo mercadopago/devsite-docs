@@ -79,11 +79,12 @@ Luego ejecuta los pasos de una **nueva instalación** para actualizar tu tienda 
 > Mantén el módulo actualizado siempre en la última versión.
 
 <span></span>
+
 > GIT
 >
 > Mira nuestras actualizaciones en GitHub
 >
-> Consulte GitHub para obtener detalles sobre las [últimas actualizaciones productivas](https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md).
+> Consulte GitHub para obtener detalles sobre las <a href="https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md" target="_blank"> últimas actualizaciones productivas</a>
 
 ---
 

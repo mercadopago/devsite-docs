@@ -324,7 +324,7 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 
 ### Descripción en el resumen de la tarjeta
 
-Puedes enviar el nombre de tu negocio en el atributo _`statement_descriptor`_ para que en el resumen de la tarjeta de tu pagador aparezca el nombre de tu negocio y de esta manera sepa donde realizó la compra.
+Puedes enviar el nombre de tu negocio en el atributo _`statement_descriptor`_ para que en el resumen de la tarjeta de tu comprador aparezca el nombre de tu negocio y de esta manera sepa donde realizó la compra.
 
 ```json
 "statement_descriptor": "MINEGOCIO"
@@ -334,7 +334,7 @@ Puedes enviar el nombre de tu negocio en el atributo _`statement_descriptor`_ pa
 >
 > Nota
 >
-> Que el valor del atributo se muestre en el resumen de la tarjeta de tu pagador dependerá de la marca de la tarjeta utilizada.
+> Que el valor del atributo se muestre en el resumen de la tarjeta de tu comprador dependerá de la marca de la tarjeta utilizada.
 
 
 ### Múltiples ítems

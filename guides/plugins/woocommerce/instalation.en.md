@@ -79,11 +79,12 @@ Then execute the steps of a **new installation** to update your page with the la
 > Keep the module always updated in the latest version.
 
 <span></span>
+
 > GIT
 >
 > Check our updates on GitHub
 >
-> Check GitHub for details on the [latest productive updates](https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md).
+> Check GitHub for details on the <a href="https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md" target="_blank">latest productive updates</a>[](https://github.com/mercadopago/cart-woocommerce/blob/master/CHANGELOG.md)
 
 ---
 
