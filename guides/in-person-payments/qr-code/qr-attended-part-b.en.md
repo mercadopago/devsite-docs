@@ -55,7 +55,7 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
 }
 ```
 
-Obtain more information in our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/put/).
+Obtain more information in our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put/).
 
 Once the order is created, it is available to be **scanned and paid**.
 

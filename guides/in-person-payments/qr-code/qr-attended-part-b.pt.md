@@ -53,7 +53,7 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
     }
 }
 ```
-Pode obter mais informações em [Referências do API](https://www.mercadopago.com.br/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/put/).
+Pode obter mais informações em [Referências do API](https://www.mercadopago.com.br/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put/).
 
 Assim que o pedido for criado, ele estará disponível para ser **digitalizado e pago**.
 
