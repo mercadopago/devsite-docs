@@ -6,7 +6,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Septiembre 2020
 
-### 9 de septiembre
+### 17 de septiembre
 
 > CHANGELOG
 >

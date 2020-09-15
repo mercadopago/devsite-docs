@@ -6,7 +6,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2020
 
-### 9 de setembro
+### 17 de setembro
 
 > CHANGELOG
 >
@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: ODENS
 
-Actualizamos nuestras medidas de protección de datos para cumplir con los más altos estándares de seguridad. A partir del lunes 12 de octubre, vamos a dejar de mostrar el e-mail del comprador en la creación de órdenes.
+Atualizamos nossas medidas de proteção de dados para atender aos mais altos padrões de segurança. A partir de segunda-feira, 12 de outubro, deixaremos de exibir o e-mail do comprador ao criar pedidos.
 
 Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/resource/).
 
