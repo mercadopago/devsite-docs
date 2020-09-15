@@ -4,6 +4,8 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+---
+
 ## Septiembre 2020
 
 ### 17 de septiembre
@@ -20,9 +22,6 @@ Actualizamos nuestras medidas de protección de datos para cumplir con los más 
 
 Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource/).
 
----
-
-## Septiembre 2020
 
 ### 3 de septiembre
 

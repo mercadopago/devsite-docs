@@ -4,6 +4,8 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+---
+
 ## September 2020
 
 ### September 17th
@@ -20,9 +22,6 @@ We update our data protection protocols to meet the highest security standards. 
 
 You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource/).
 
----
-
-## September 2020
 
 ### September 3rd
 
