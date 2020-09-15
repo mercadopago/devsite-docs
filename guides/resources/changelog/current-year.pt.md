@@ -4,8 +4,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
----
-
 ## Setembro 2020
 
 ### 17 de setembro

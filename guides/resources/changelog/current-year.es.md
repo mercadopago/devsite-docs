@@ -4,8 +4,6 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
----
-
 ## Septiembre 2020
 
 ### 17 de septiembre
