@@ -36,7 +36,7 @@ Si deseas obtener la orden vigente de una caja, también puedes hacerlo.
 ```curl
 curl -X GET https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
 ```
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get/).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get/).
 
 
 ## Genera reportes de tus ventas
