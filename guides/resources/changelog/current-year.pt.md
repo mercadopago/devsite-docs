@@ -14,7 +14,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: ODENS
+> PRODUCT: ORDENS
 
 Atualizamos nossas medidas de proteção de dados para atender aos mais altos padrões de segurança. A partir de segunda-feira, 12 de outubro, deixaremos de exibir o e-mail do comprador ao criar pedidos.
 
