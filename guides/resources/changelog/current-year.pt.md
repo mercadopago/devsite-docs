@@ -6,6 +6,21 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2020
 
+### 17 de setembro
+
+> CHANGELOG
+>
+> Alterações na API de ordens
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: ORDENS
+
+Atualizamos nossas medidas de proteção de dados para atender aos mais altos padrões de segurança. A partir de segunda-feira, 12 de outubro, deixaremos de exibir o e-mail do comprador ao criar pedidos.
+
+Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/resource/).
+
+
 ### 3 de setembro
 
 > CHANGELOG
