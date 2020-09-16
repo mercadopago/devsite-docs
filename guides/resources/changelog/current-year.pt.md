@@ -10,7 +10,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Alterações na API de odens
+> Alterações na API de ordens
 >
 > FEATURE: FEATURE
 >
