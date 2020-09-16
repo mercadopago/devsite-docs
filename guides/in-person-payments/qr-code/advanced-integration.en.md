@@ -28,6 +28,15 @@ By default, QR orders expires 10 minutes after being created or automatically if
 
 If you require a different expiration time, you can send the header `X-Ttl-Store-Preference` with the time you need expressed in seconds. I.e., if you want 5 minutes as the available time, you’ll have to send the header `X-Ttl-Store-Preference: 300`.
 
+## Get order data
+
+If you want to get the order assigned to a POS, you can do it.
+
+```curl
+curl -X GET https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
+```
+Obtain more information in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get/).
+
 ## Generate reports of your sales
 
 Integrate [Mercado Pago reports](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/general-considerations/reconciliation-reports/) with your system to make sales reconcilitation and know about your account movements.

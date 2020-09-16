@@ -83,7 +83,7 @@ Resposta:
 > * Tanto o comprador como o vendedor devem ser usuários de teste.
 > * Utiliza cartões de teste, já que não é possível sacar o dinheiro.
 
-Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as sucursais e caixas.
+Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as lojas e caixas.
 
 ---
 ### Próximos passos
@@ -92,6 +92,6 @@ Uma vez que os usuários de teste são criados, você pode começar com a integr
 >
 > Lojas e Caixas
 >
-> Para realizar a integração, primeiramente deverá configurar suas sucursais e caixas.
+> Para realizar a integração, primeiramente deverá configurar suas lojas e caixas.
 >
 > [Lojas e Caixas](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/stores-pos/)

@@ -27,6 +27,16 @@ Por defeito, o pedido do QR expira aos 10 minutos de ser criado ou automaticamen
 
 Se um tempo de expiração diverso for requerido, poderá enviar o header `X-Ttl-Store-Preference` com o tempo desejado em segundos. Por exemplo, para que esteja disponível durante 5 minutos, o header `X-Ttl-Store-Preference: 300` deverá ser enviado.
 
+## Obter dados do pedido
+
+Se você deseja obter o pedido atual de uma caixa, também pode fazê-lo.
+
+```curl
+curl -X GET https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
+```
+Pode obter mais informações em [Referências do API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get/).
+
+
 ## Gere relatórios de suas vendas
 
 Integre os [relatórios de conciliação de Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/general-considerations/reconciliation-reports/) com seu sistema para conciliar suas vendas e conhecer as movimentações de sua conta. 

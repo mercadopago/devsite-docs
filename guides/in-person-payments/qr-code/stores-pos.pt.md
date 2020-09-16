@@ -21,12 +21,12 @@ As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago par
 
 É um **estabelecimiento físico** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta.
 
-### Quais são os benefícios de criar sucursais?
+### Quais são os benefícios de criar lojas?
 
 Os benefícios de criar lojas são:
 
-- **Conseguir traçabilidade**. Cada pagamento ficará associado a uma sucursal e no momento de obter seus relatórios de conciliação será valioso para identificar transações por sucursal. 
-- **Visibilidade em mapas de sucursais**.  As sucursais criadas aparecem no mapa dos app de Mercado Pago ou Mercado Livre à medida que forem tendo pagamentos. Assim, conferem visibilidade a todos os clientes sobre a existência da loja. 
+- **Conseguir traçabilidade**. Cada pagamento ficará associado a uma loja e no momento de obter seus relatórios de conciliação será valioso para identificar transações por loja. 
+- **Visibilidade em mapas de lojas**.  As lojas criadas aparecem no mapa dos app de Mercado Pago ou Mercado Livre à medida que forem tendo pagamentos. Assim, conferem visibilidade a todos os clientes sobre a existência da loja. 
 - **Aportar uma melhor organização dos caixas**. 
 
 ### Como criar uma loja?
@@ -93,7 +93,7 @@ Tendo lojas criadas, você pode criar seus caixas. Considere o seguinte:
 
 | Termo       |  Descrição    |
 | ------------- | ------------------------------------------------- |
-| `EXTERNAL_STORE_ID`     | Vincula o caixa com a loja. É um campo requerido e é o mesmo *external_id* da Sucursal previamente criada. |
+| `EXTERNAL_STORE_ID`     | Vincula o caixa com a loja. É um campo requerido e é o mesmo *external_id* da loja previamente criada. |
 | `EXTERNAL_ID`           | Identifica univocamente cada caixa. É requerido e não se pode alterar nem repetir numa mesma conta de Mercado Pago. |
 
 
@@ -125,5 +125,4 @@ Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes ent
 >
 > Aprenda passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended-part-b/)
-
+> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b/)
