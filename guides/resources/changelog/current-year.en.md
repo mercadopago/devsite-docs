@@ -6,6 +6,22 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## September 2020
 
+### September 28th
+
+> CHANGELOG
+>
+> Create subscriptions to charge on a recurring basis
+>
+> NEW_DOCUMENTATION: NEW DOCUMENTATION
+>
+> PRODUCT: SUBSCRIPTIONS
+
+Mercado Pago subscriptions allow you to receive payments on a recurring basis, with a credit and debit card. You can set the payment frequency you want and the time you want to keep the subscription active.
+
+[Create subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/subscriptions/)
+
+---
+
 ### September 3rd
 
 > CHANGELOG
