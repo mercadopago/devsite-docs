@@ -1,2 +1,3 @@
 curl -X DELETE \
-     'https://api.mercadopago.com/pos/ID?access_token=PROD_ACCESS_TOKEN'
+     'https://api.mercadopago.com/pos/{id}' \
+     -H 'Authorization: Bearer PROD_ACCESS_TOKEN'
