@@ -1,0 +1,107 @@
+---
+samples:
+- curl.sh
+- curl_response.json
+use:
+- auto_recurring
+- back_url
+- collector_id
+- external_reference
+- payer_email
+- reason
+- status
+errors:
+- 400 BAD_REQUEST:
+  - '400':
+      description:
+        en: Card token was used, please generate new.
+        es: El card token ya fue usado, se debe crear uno nuevo.
+        pt: none.
+  - '400':
+      description:
+        en: Card token was generated without cvv validation.
+        es: No se aceptan pagos sin cvv.
+        pt: none.
+  - '400':
+      description:
+        en: Subscriptions are not available for this country yet.
+        es: Aplicación de un site distinto a MLA o MLB o MLM.
+        pt: none.
+  - '400':
+      description:
+        en: The payment method account money is not available in your country.
+        es: No se pueden crear suscripciones con dinero en cuenta.
+        pt: none.
+  - '400':
+      description:
+        en: Collector and Application can't be from different countries.
+        es: Se esta usando una aplicación que corresponda al site del collector..
+        pt: none.
+  - '400':
+      description:
+        en: card_token_id is required.
+        es: Si la suscripción se crea con un template asociado el card token id es requerido.
+        pt: none.
+  - '400':
+      description:
+        en: payer_email is required.
+        es: El email del pagador es requerido.
+        pt: none.
+  - '400':
+      description:
+        en: Invalid value for payer_email, must be a valid email address.
+        es: El email del pagador es inválido.
+        pt: none.
+  - '400':
+      description:
+        en: transaction_amount is required.
+        es: El monto de la suscripción es reauerido.
+        pt: none.
+- 401 UNAUTHORIZED:
+  - '401':
+      description:
+        en: CC_VAL_433 Credit card validation has failed.
+        es: Medio de pago rechazado, debe usar otro medio de pago.
+        pt: none.
+  - '401':
+      description:
+        en: Verification of collector's personal data is in process, come back later.
+        es: Se está analizando el vendedor desde KYC.
+        pt: none.
+  - '401':
+      description:
+        en: Unauthorized access to resource.
+        es: Access token no enviado o expirado.
+        pt: none.
+  - '401':
+      description:
+        en: This app can't create preapprovals without a plan.
+        es: El preapproval debe tener auto recurring.
+        pt: none.
+- 403 UNAUTHORIZED:
+  - '403':
+      description:
+        en: The collector does not meet the personal data verification requirements.
+        es: El vendedor no realizó las validaciones de kyc.
+        pt: none.
+  - '403':
+      description:
+        en: The caller is not authorized to access this resource.
+        es: Se esta usando un preapproval que no es propio de ese vendedor.
+        pt: none.
+  - '403':
+      description:
+        en: AM_VAL_01 Unauthorized seller for this feature..
+        es: El collector debe estar en whitelist para usar el medio de pago account money.
+        pt: none.
+- 404 NOT_FOUND:
+  - '404':
+      description:
+        en: The preapproval with id ${preapproval id} does not exist.
+        es: La suscroipción con id ${id} no existe.
+        pt: none.
+  - '404':
+      description:
+        en: Card token service not found.
+        es: Use un card token existente..
+        pt: none.

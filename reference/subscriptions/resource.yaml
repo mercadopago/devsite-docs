@@ -1,0 +1,139 @@
+title: Subscriptions API
+key: subscriptions
+order: 13
+version: 
+baseUri: https://api.mercadopago.com/
+paths:
+  /preapproval:
+    methods:
+      - post
+definitions:
+  type: object
+  properties:
+  - id:
+      type: String
+      description:
+        en: Preapproval ID.
+        es: Identificador de suscripción.
+        pt: Identificador de suscripción.
+  - preapproval_plan_id:
+      type: String
+      description:
+        en: Preapproval ID. 
+        es: Identificador de plan.
+        pt: none.
+  - payer_id:
+      type: String
+      description:
+        en: Payer ID. 
+        es: Identificador de pagador.
+        pt: none.
+  - payer_email:
+      type: String
+      description:
+        en: Customer's e-mail.
+        es: E-mail del cliente.
+        pt: none.
+  - back_url:
+      type: String
+      description:
+        en: Return URL.
+        es: url de retorno.
+        pt: none.
+  - collector_id:
+      type: String
+      description:
+        en: Seller ID. 
+        es: Identificador de vendedor.
+        pt: none.
+  - application_id:
+      type: String
+      description:
+        en: Application ID. 
+        es: Identificador de aplicación.
+        pt: none.
+  - status:
+      type: String
+      description:
+        en: Preapproval status. 
+        es: Estado de suscripción.
+        pt: none.
+  - reason:
+      type: String
+      description:
+        en: Preapproval titlte. 
+        es: Titulo de suscripción.
+        pt: none.
+  - external_reference:
+      type: String
+      description:
+        en: Preapproval reference value. 
+        es: Valor de referencia de suscripción.
+        pt: none.
+  - date_created:
+      type: Date(ISO_8601)
+      description:
+        en: preapproval's creation date.
+        es: Fecha de creación de suscripción.
+        pt: none.
+  - last_modified:
+      type: Date(ISO_8601)
+      description:
+        en: preapproval's last update date.
+        es: Fecha de última actualización de suscripción.
+        pt: none.
+  - init_point:
+      type: String
+      description:
+        en: Preapproval checkout link. 
+        es: Link de adhesión de suscripción.
+        pt: none.
+  - payment_method_id:
+      type: String
+      description:
+        en: Payment Method Id. 
+        es: Identificador de medio de pago.
+        pt: none.
+  - auto_recurring:
+      type: Object
+      description:
+        en: Recurring data.
+        es: Datos de recurrencia de suscripción.
+        pt: none.
+      properties:
+      - frequency:
+          type: Integer
+          description:
+            en: Recurring frecuency.
+            es: Cantidad de dias de la recurrencia.
+            pt: none.
+      - frequency_type:
+          type: String
+          description:
+            en: Recurring frecuency type (days or months).
+            es: Cantidad de dias de la recurrencia (dias o meses).
+            pt: none.
+      - transaction_amount:
+          type: Number
+          description:
+            en: Recurring amount.
+            es: Monto de la suscripción recurrencia.
+            pt: none.
+      - currency_id:
+          type: String
+          description:
+            en: Currency Id.
+            es: Identificador de moneda local.
+            pt: none.
+      - start_date:
+        type: Date(ISO_8601)
+        description:
+          en: preapproval's start date.
+          es: Fecha de inicio de suscripción.
+          pt: none.
+      - end_date:
+        type: Date(ISO_8601)
+        description:
+          en: preapproval's end date.
+          es: Fecha de fin de suscripción.
+          pt: none.
