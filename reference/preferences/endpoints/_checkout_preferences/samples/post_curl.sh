@@ -1,6 +1,7 @@
 curl -X POST \
-  'https://api.mercadopago.com/checkout/preferences?access_token=ACCESS_TOKEN_ENV' \
+  'https://api.mercadopago.com/checkout/preferences' \
   -H 'content-type:application/json' \
+  -H 'Authorization: Bearer ACCESS_TOKEN_ENV' \
   -d '{
         "items": [
             {
