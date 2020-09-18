@@ -218,7 +218,10 @@ Você deve criar um código QR para cada fornecedor ou bomba com uma `url` confi
 **API de criação de QRs**
 
 ```bash
-curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
+curl -X POST 
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/pos \
+-d
 '{
     "name":"Caixa principal", 
     "fixed_amount": true,
@@ -243,13 +246,17 @@ Haverá momentos em que você precisará efetuar a [devolução](https://www.mer
 **Devolução total**
 
 ```bash
-curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN
+curl -X POST 
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 ```
 
 **Devolução parcial**
 
 ```bash
-curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN -d '{ "amount": 10.50 }'
+curl -X POST 
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds -d '{ "amount": 10.50 }'
 ```
 
 ## Testes

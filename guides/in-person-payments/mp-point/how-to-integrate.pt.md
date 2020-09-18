@@ -111,8 +111,9 @@ O POST nessa API gera uma ordem, que é a que recebe a aplicação de Mercado Pa
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
 -d '{"amount":100,"description":"xícara","device_name":"dispositivo","cc_type":"credit_card"}' \
-'https://mobile.mercadopago.com/point/services/integrations/v1?access_token=ACCESS_TOKEN'
+'https://mobile.mercadopago.com/point/services/integrations/v1'
 ```
 
 Os parâmetros que se podem incluir são:
@@ -150,7 +151,8 @@ O GET nesta API, junto ao `order_id`, possibilita recuperar o estado da mesma pa
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://mobile.mercadopago.com/point/services/integrations/v1/:ID?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://mobile.mercadopago.com/point/services/integrations/v1/:ID'
 ```
 
 Se o status da ordem é `OPEN` quer dizer que a mesma ainda não foi paga. Se o status é `CLOSED` quer dizer que a ordem já foi paga e, portanto, obterá o `payment_id` com o resto da informação. A resposta terá o seguinte formato.
@@ -177,7 +179,8 @@ O DELETE nesta API possibilita eliminar uma ordem. Existem duas formas de elimin
 ```curl
 curl -X DELETE \
 -H "Content-Type: application/json" \
-'https://mobile.mercadopago.com/point/services/integrations/v1/attempt/device/:DEVICE_NAME?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://mobile.mercadopago.com/point/services/integrations/v1/attempt/device/:DEVICE_NAME'
 ```
 
 A resposta terá o seguinte formato.
@@ -195,7 +198,8 @@ Ou é possível eliminar a ordem por `order_id`:
 ```curl
 curl -X DELETE \
 -H "Content-Type: application/json" \
-'https://mobile.mercadopago.com/point/services/integrations/v1/:ID?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://mobile.mercadopago.com/point/services/integrations/v1/:ID'
 ```
 
 **Response status code: 204 OK**
@@ -208,7 +212,8 @@ O GET nesta API possibilita obter todos os dispositivos configurados e sincroniz
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://mobile.mercadopago.com/point/services/integrations/v1/devices?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://mobile.mercadopago.com/point/services/integrations/v1/devices'
 ```
 
 Se o status do dispositivo é `FREE` quer dizer que o dispositivo pode receber uma ordem nova. Se o status é `BUSY` quer dizer que o dispositivo já tem uma ordem associada. A resposta terá o seguinte formato.
@@ -238,7 +243,8 @@ O DELETE nesta API possibilita apagar algum dos dispositivos configurados e sinc
 ```curl
 curl -X DELETE \
 -H "Content-Type: application/json" \
-'https://mobile.mercadopago.com/point/services/integrations/v1/devices/:DEVICE_NAME?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://mobile.mercadopago.com/point/services/integrations/v1/devices/:DEVICE_NAME'
 ```
 
 A resposta terá o seguinte formato.
@@ -263,7 +269,15 @@ No artigo de [notificações](https://www.mercadopago.com.br/developers/pt/guide
 
 Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar mais informações no artigo de [API's](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/)
 
-Existe uma API exclusiva de Point que conta com informações adicionais do pagamento: `https://api.mercadolibre.com/point/services/payment/<payment_id>?access_token=<access_token>`
+Existe uma API exclusiva de Point que conta com informações adicionais do pagamento: 
+
+
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer <access_token>' \
+https://api.mercadolibre.com/point/services/payment/<payment_id>
+```
 
 A resposta terá o seguinte formato:
 

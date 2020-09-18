@@ -37,7 +37,10 @@ Run the next code to generate a store:
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/users/$USER_ID/stores?access_token=PROD_ACCESS_TOKEN -d
+curl -X POST 
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
+https://api.mercadopago.com/users/$USER_ID/stores \
+-d
 {  
    "name":"Store 1",
    "business_hours":{  
@@ -99,7 +102,10 @@ Once you created your stores, the next step is to generate your POS. Some consid
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
+curl -X POST 
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
+https://api.mercadopago.com/pos \
+-d     
 {
   "name":"Main Pos", 
   "fixed_amount": true,
