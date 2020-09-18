@@ -933,13 +933,13 @@ Cuando reciba esta notificación, podrá obtener la información del pedido o de
 Merchant Order:
 
 ```
-/merchant_orders/[ID]?access_token=[ACCESS_TOKEN]
+/merchant_orders/[ID]
 ```
 
 Payment:
 
 ```
-/v1/payments/[ID]?access_token=[ACCESS_TOKEN]
+/v1/payments/[ID]
 ```
 
 ### IPN Manager
