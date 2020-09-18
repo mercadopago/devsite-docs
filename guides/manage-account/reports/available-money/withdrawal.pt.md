@@ -38,7 +38,8 @@ Pronto! Agora, você terá um relatório por cada retirada de dinheiro que você
 curl -X PUT \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/bank_report/config' \
     -d '{
         "file_name_prefix": "bank-report-USER_ID",
         "include_withdrawal_at_end": false,
@@ -59,7 +60,8 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json'
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
         "file_name_prefix": "bank-report-USER_ID",
@@ -74,16 +76,17 @@ $data = '{
             "value": 1
         }
     }';
-$response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+$response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/config");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("PUT");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 connection.setDoOutput(true);
 
@@ -116,9 +119,8 @@ import requests
 headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 data = '{
             "file_name_prefix": "bank-report-USER_ID",
@@ -131,14 +133,15 @@ data = '{
 
         }'
 
-response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, params=params, data=data)
+response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
 ```
 ```node
 var request = require('request');
 
 var headers = {
     'accept': 'application/json',
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
 var dataString = '{
@@ -156,7 +159,7 @@ var dataString = '{
     }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/config?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/bank_report/config",
     method: 'PUT',
     headers: headers,
     body: dataString
