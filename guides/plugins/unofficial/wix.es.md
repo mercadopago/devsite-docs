@@ -1,43 +1,68 @@
 ---
-  indexable: false
+ sites_supported:
+  - mlb
 ---
+
 # Wix
 
 ## ¿Qué es Wix?
 
-[Wix](https://es.wix.com/) es una plataforma online de creación y edición de sitios donde es posible crear su tienda virtual y procesar pagos a través del Mercado Pago.
-Para obtener más información sobre las posibilidades que ofrece Wix, acceda a [su página de recursos](https://es.wix.com/ecommerce/sell-online).
+Wix es una **plataforma virtual que te permite recibir pagos con Mercado Pago**.
 
-## ¿Cómo puedo operar con Mercado Pago en Wix?
+Con ella, puedes ofrecer a tus clientes la posibilidad de [pagar directamente en el sitio de Mercado Pago](#bookmark_configura_las_formas_de_pago). 
 
-Wix permite operar Mercado Pago en la siguiente modalidad:
+## Pasos para configurar
 
-### Checkout Pro
+Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
-Recibir pagos en su tienda utilizando el Checkout Pro de Mercado Pago. En este modelo el usuario (cliente) será redirigido a una página de Mercado Pago para finalizar su compra.
+1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.
+1. Agrega a Mercado Pago como medio de pago dentro de tu tienda.
+1. Configura las formas de pago.
 
-## ¿Cómo habilitar Mercado de Pago en Wix?
+## Agrega a Mercado Pago como medio de pago
 
-Los pasos para empezar a operar con Mercado Pago son los siguientes:
+Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 
-1. Acceda a la configuración de formas de pago en el menú de Wix através de la ruta **Configuración > Pagos**.
+1. En la sección de configuraciones del panel de control, ingresa en “Pagos”.
+1. Haz clic en “Agregar medio de pago”
+1. Por último, en la lista de medios pago, selecciona a Mercado Pago y haz clic en “Agregar”.
 
-![wix_configuration1](/images/wix_configuration1.png)
+<p>&nbsp;</p>
+    ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
+<p>&nbsp;</p>
 
-2. Seleccione Mercado Pago y luego haga clic en **Conectar > Configurar cuenta**.
+## Configura las formas de pago
 
-![wix_configuration2](/images/wix_configuration2.png)
+Wix te permite recibir pagos con Checkout Pro, donde el comprador será redireccionado a Mercado Pago para realizar el pago y volverá a tu tienda al completarse la compra.
 
-3. Si aún no tiene cuenta en Mercado Pago haga clic en **Crear una cuenta** y continúe con el registro, de lo contrario haga clic en **Conecte una cuenta existente**.
+También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) y configurar las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de tus ventas online cuando quieras.
 
-![wix_configuration3](/images/wix_configuration3.png)
+## Activa tu cuenta de Mercado Pago
 
-4. Para conectar la cuenta se solicita dos informaciones: **ID DEL CLIENTE** y **CLIENT_SECRET**. Estos datos son las credenciales de Mercado Pago y están disponibles en el siguiente [LINK]([FAKER][CREDENTIALS][URL_BASIC]) de su cuenta.
+Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pasos
 
-![wix_configuration4](/images/wix_configuration4.png)
+1. En el panel de medios de pago, busca a Mercado Pago y selecciona “Configurar la cuenta para activar”.
+1. Haz clic en “Conectar una cuenta existente”.
+1. Completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. Por último, haz clic en “Conectar mi cuenta”.
 
-5. Después de rellenar haga clic en **Conecte mi cuenta**.
+<p>&nbsp;</p>
+    ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
+<p>&nbsp;</p>
 
-![wix_configuration5](/images/wix_configuration5.png)
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
 
-Con eso el Mercado Pago está instalado y activado.
+## Configura las cuotas sin interés en tu cuenta de Mercado Pago
+
+1. Ingresa a tu cuenta de Mercado Pago y ve a “Tu negocio”.
+1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
+1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
+
+<p>&nbsp;</p>
+    ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
+<p>&nbsp;</p>
+
+¡Y listo! Ya estás ofreciendo cuotas sin interés con el [costo de financiación](https://www.mercadopago.com.br/ajuda/_454) que hayas configurado.
+
+<!-- -->
+> Para más información, visita el [sitio oficial de Wix](https://pt.wix.com/ecommerce/loja-virtual).

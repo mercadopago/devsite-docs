@@ -1,43 +1,68 @@
 ---
-  indexable: false
+ sites_supported:
+  - mlb
 ---
+
 # Wix
 
 ## What is Wix?
 
-[Wix](https://pt.wix.com/) is an online site creation and editing platform where you can create your online store and process payments through Mercado Pago.
-For more information on the possibilities that Wix offers, visit [your features page](https://pt.wix.com/ecommerce/loja-virtual).
+Wix is a **virtual platform that enables you to receive payments with Mercado Pago**.
 
-## How can I trade with Mercado Pago on Wix?
+With it, you can offer your clients the possibility of [charging through Mercado Pago website](#bookmark_configure_a_forma_de_pagamento).
 
-Wix allows to operate Mercado Pago in the following modality:
+## Settings Steps
 
-### Checkout Pro
+1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) in Mercado Pago if you don't have one yet.
+1. Add Mercado Pago as method of payment in your store.
+1. Set up methods of payment.
 
-Receive payments in your store using the Checkout Pro itself, in this model the user (client) will be redirected to a page of Mercado Pago to finalize their purchase.
+## Add Mercado Pago as method of payment
 
-## How to enable Mercado Pago on Wix?
+To **add Mercado Pago to your store**, follow these steps:
 
-The steps to start trading with Mercado Pago are as follows:
+Go to “Payment methods” in the section Modules from the admin panel of your store.
 
-1. Access the forms of payment settings in the Wix menu via the path **Settings > Payments**.
+1. In the Settings section of the control panel, go to "Payments".
+1. Click on “Add method of payment”
+1. Finally, in the list of payment methods, select Mercado Pago and click on “Add”
 
-![wix_configuration1](/images/wix_configuration1.png)
+<p>&nbsp;</p>
+    ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
+<p>&nbsp;</p>
 
-2. Select Mercado Pago, and then click **Connect > Set Up Account**.
+## Set up methods of payment
 
-![wix_configuration2](/images/wix_configuration2.png)
+Wix allows you to receive payments with Checkout Pro, where the buyer will be redirected to Mercado Pago to make the payment and will return to your store when the purchase is completed.
 
-3. If you do not already have an account in Mercado Pago, click **Create an account** and proceed with the registration, otherwise click **Connect an existing account**.
+You can also [offer interest free installments](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) and set up [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) of your online sales whenever you want.
 
-![wix_configuration3](/images/wix_configuration3.png)
+## Activate your Mercado Pago account
 
-4. To connect the account, two information is requested: **CUSTOMER ID** and **CLIENT_SECRET**. This data is the credentials of Mercado Pago and is available at the following [LINK]([FAKER][CREDENTIALS][URL_BASIC]) of your account.
+To **set up the activation of your Mercado Pago account**, follow these steps:
 
-![wix_configuration4](/images/wix_configuration4.png)
+1. In the payment methods panel, look for Mercado Pago and select "Set up the account to activate."
+1. Click on “Connect an existing account”
+1. Complete the fields Client ID and Client Secret with the [production credentials]([FAKER][CREDENTIALS][URL]) of your Mercado Pago account.
+1. Finally, click on “Connect my account”.
 
-5. After completing click on **Connect my account**.
+<p>&nbsp;</p>
+    ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
+<p>&nbsp;</p>
 
-![wix_configuration5](/images/wix_configuration5.png)
+> Find all the information about your credentials in our [frequently asked questions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/).
 
-With this the Mercado Pago is installed and activated.
+## Set interest free installments in your Mercado Pago account
+
+1. Log in your Mercado Libre account and see "Your business".
+1. Go to "Settings" option, then to "Offering interest free installments" and click on "Activate".
+1. Choose "How many do you want to offer?" and push "Activate" button to confirm changes.
+
+<p>&nbsp;</p>
+    ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
+<p>&nbsp;</p>
+
+Ready! You are already offering interest free installments with the configured [financing cost](https://www.mercadopago.com.br/ajuda/_454).
+
+<!-- -->
+> For more information, go to [Wix official site](https://pt.wix.com/ecommerce/loja-virtual).
