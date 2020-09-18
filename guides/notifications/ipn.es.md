@@ -49,9 +49,9 @@ Luego de esto, puedes obtener la información completa del recurso notificado ac
 
 Tipo               | URL                                                         | Documentación
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
+payment            | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]| -
+merchant_orders    | /merchant\_orders/[ID]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado o una orden cerrada. 
 
@@ -125,7 +125,9 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 **Si estas integrando pagos presenciales**, se debe implementar como método de contingencia, la  **búsqueda de la orden** utilizando el `external_reference` de la misma como criterio de búsqueda. 
 
 ```curl
-curl -X GET https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE&access_token=$ACCESS_TOKEN -d
+curl -X GET 
+    -H 'Authorization: Bearer $ACCESS_TOKEN' \
+    https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE -d
 ```
 
 Más información en la [Referencia de API](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_search/get/).
