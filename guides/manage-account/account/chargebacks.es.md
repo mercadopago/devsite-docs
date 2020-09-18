@@ -76,7 +76,9 @@ Te avisaremos vía [notificaciones IPN](https://www.mercadopago.com.ar/developer
 La notificación IPN va a contener el ID del contracargo. Usa el ID para obtener información del pago.
 
 ```
-curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+curl -X GET 
+-H 'Authorization: Bearer <ACCESS_TOKEN>' \
+https://api.mercadopago.com/v1/chargebacks/ID
 ```
 
 Vas a obtener la siguiente información:
@@ -131,7 +133,11 @@ Para más información, puedes ver el [Programa de Protección al Vendedor](http
 Puedes enviar la información respaldatoria que valida la venta por API. 
 
 ```
-curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
+curl -X POST 
+-F 'files[]=@/path/to/file/file1.png' \
+-F 'files[]=@/path/to/file/file2.pdf' \
+-H 'Authorization: Bearer <ACCESS_TOKEN>' \
+https://api.mercadopago.com/v1/chargebacks/ID/documentation
 ```
 
 Si se ha subido la documentación exitosamente, la API responderá con estado `200 OK` y cambiará el valor de `documentation_status` a `review_pending`.

@@ -63,8 +63,9 @@ payment.update()
 ```curl
 curl -X PUT \
 -H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
 -d '{"status":"cancelled"}' \
-'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
+'https://api.mercadopago.com/v1/payments/:ID'
 ```
 ]]]
 
@@ -110,7 +111,8 @@ $payment->refund();
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID/refunds'
 ```
 ]]]
 
@@ -168,7 +170,8 @@ payment.refund(10.5);
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID/refunds' \
 -d '{"amount":10.5}'
 ```
 ]]]
@@ -201,7 +204,8 @@ refunds = payment.refund()
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID'
 ```
 ]]]
 
