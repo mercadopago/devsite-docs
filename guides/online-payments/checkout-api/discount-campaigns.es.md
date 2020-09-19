@@ -25,7 +25,8 @@ Para verificar, utiliza las [credenciales de tu aplicación]([FAKER][CREDENTIALS
 
 ```curl
 curl -H "Accept: application/json" \
-'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_85556797@testuser.com&access_token=ACCESS_TOKEN' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_85556797@testuser.com' \
 ```
 
 - El `transaction_amount` es el importe total del pago.
@@ -54,8 +55,11 @@ curl -H "Accept: application/json" \
 Para recibir un pago con una campaña que aplique a todos tus compradores, debes adicionar los campos `campaign_id` y `coupon_amount`:
 
 ```curl
-curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
-https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
+curl -X POST 
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments \
 -d '{
     "transaction_amount": 299.99,
     "description": "Title of what you are paying for",
@@ -104,7 +108,9 @@ Agrega un campo adicional en el formulario de pago para poder capturar el códig
 Para verificar, utiliza las [credenciales de tu aplicación]([FAKER][CREDENTIALS][URL]):
 
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'
+curl -X GET 
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP'
 ```
 
 - El `coupon_code` es el código insertado por el comprador. Este lo utilizarás cuando proceses el pago en caso de que el comprador tenga el descuento.
@@ -148,8 +154,11 @@ En este momento puedes mostrar que el cupón no es válido o ya no está disponi
 Para recibir un pago con un cupón de descuento debes adicionar el `coupon_code`:
 
 ```curl
-curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
-https://api.mercadolibre.com/v1/payments?access_token=ACCESS_TOKEN \
+curl -X POST 
+-H 'accept: application/json' \ 
+-H 'content-type: application/json' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadolibre.com/v1/payments \
 -d '{
     "transaction_amount": 299.99,
     "description": "Title of what you are paying for",

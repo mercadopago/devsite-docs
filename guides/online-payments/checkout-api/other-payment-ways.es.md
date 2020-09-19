@@ -67,7 +67,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -201,8 +202,9 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  'https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
   description: "Título del producto",
@@ -378,7 +380,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -596,8 +599,9 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  'https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
   description: "Título del producto",
@@ -729,7 +733,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -877,8 +882,9 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  'https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
   description: "Título del producto",
@@ -997,7 +1003,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -1162,8 +1169,9 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  'https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 5000,
   description: "Título del producto",
@@ -1325,8 +1333,9 @@ payment.save();
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
-    -H 'Content-Type: application/json' \
+'https://api.mercadopago.com/v1/payments' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer _ACCESS_TOKEN' \
   -d '{
   transaction_amount: 5000,
   description: "Título del producto",
@@ -1433,7 +1442,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -1583,8 +1593,9 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  'https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
   description: "Título del producto",
@@ -1735,8 +1746,9 @@ payment.save();
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/v1/payments?access_token=<access_token>' \
-    -H 'Content-Type: application/json' \
+'https://api.mercadopago.com/v1/payments' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
   description: "Título del producto",
@@ -1865,7 +1877,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -1990,8 +2003,9 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN \
+  'https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 100,
   description: "Título del producto",
@@ -2116,7 +2130,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -2327,7 +2342,8 @@ payment.Save();
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
       "description": "Título do produto",
