@@ -12,7 +12,8 @@
 curl -X PUT \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID?access_token=SELLER_TOKEN' \
+    -H 'Authorization: Bearer SELLER_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID' \
     -d '{...}'
 ```
 

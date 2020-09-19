@@ -41,6 +41,7 @@ Uma vez obtido esse ID, é preciso enviá-lo como header na firma da API.
 ```curl
 curl -X POST \
     -H 'X-Device-Session-Id: 5cf65fc6c5db631a47471bb0' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```

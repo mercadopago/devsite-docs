@@ -11,7 +11,8 @@ It is possible to send information that can improve the fraud prevention analysi
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=SELLER_TOKEN' \
+    -H 'Authorization: Bearer SELLER_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
 ```
 
 #### Body
