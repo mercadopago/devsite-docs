@@ -36,8 +36,9 @@ Realizando um **GET** ao endpoint /payments do API de Mercado Pago, você pode o
 
 ```curl
 curl -X GET \
-"https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN" \
+"https://api.mercadopago.com/v1/payments" \
 -H "Content-Type: application/json"
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 -d "{
   'status': 'approved'
 }"
