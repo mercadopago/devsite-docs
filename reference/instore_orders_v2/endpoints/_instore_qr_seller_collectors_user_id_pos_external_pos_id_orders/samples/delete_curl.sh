@@ -1,3 +1,3 @@
 curl -X DELETE \
-'https://api.mercadopago.com/instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders' \
+'https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders' \
  -H 'Authorization: Bearer PROD_ACCESS_TOKEN'

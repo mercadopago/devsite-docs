@@ -1,3 +1,3 @@
 curl -X DELETE \
- 'https://api.mercadopago.com/mpmobile/instore/qr/{user_id}/{external_id}' \
+ 'https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID' \
  -H 'Authorization: Bearer PROD_ACCESS_TOKEN'
