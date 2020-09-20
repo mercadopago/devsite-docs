@@ -58,7 +58,7 @@ To generate a duplicate of the ticket, it is necessary to use the [GET method fr
 
 The query would be as follows:
 
-`https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ACCESS_TOKEN`
+`https://api.mercadopago.com/v1/payments/PAYMENT_ID`
 
 The callback is going to return the parameter `transaction_details` containing the `external_resource_url` with the link for the duplicated ticket.
 

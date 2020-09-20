@@ -30,6 +30,7 @@ Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/identification_types?public_key=PUBLIC_KEY'
 ```
 ]]]
