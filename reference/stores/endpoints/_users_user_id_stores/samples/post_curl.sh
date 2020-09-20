@@ -1,5 +1,5 @@
 curl -X POST \
-  'https://api.mercadopago.com/users/{user_id}/stores' \
+  'https://api.mercadopago.com/users/USER_ID/stores' \
   -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
   -d '{  
    "name":"Sucursal Instore",
