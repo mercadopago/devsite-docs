@@ -18,7 +18,8 @@ It is possible to search through the Advanced Payments API.
 curl -X GET \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&limit=10&offset=0'
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/search?limit=10&offset=0'
 ```
 
 #### Response
@@ -76,7 +77,8 @@ It is also possible to search setting specific dates:
 curl -X GET \
     -H 'Accept":"application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/search?access_token=MKT_ACCESS_TOKEN&range=date_created&begin_date=2017-05-06T00:00:00.000-04:00&end_date=2017-05-06T23:59:59.999-04:00'
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/search?range=date_created&begin_date=2017-05-06T00:00:00.000-04:00&end_date=2017-05-06T23:59:59.999-04:00'
 ```
 
 ### Export Activities

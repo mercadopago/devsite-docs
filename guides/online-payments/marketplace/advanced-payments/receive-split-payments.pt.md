@@ -29,7 +29,8 @@ Em seguida, vemos como criar um Advanced Payment, em que o comprador paga com um
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=MKT_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```
 
