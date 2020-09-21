@@ -47,9 +47,9 @@ After that, you will be able to get full information about the notified resource
 
 Type               | URL                                                         | Documentation
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/)
+payment            | /v1/payments/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]| -
+merchant_orders    | /merchant\_orders/[ID]           | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/)
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment or a closed order.
 
@@ -127,7 +127,9 @@ You will find all the payments in the order, under the payments object. [To make
 
 
 ```curl
-curl -X GET https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE&access_token=$ACCESS_TOKEN -d
+curl -X GET 
+    -H 'Authorization: Bearer $ACCESS_TOKEN' \
+    https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE -d
 ```
 
 Find more information in [API Reference](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_search/get/).
