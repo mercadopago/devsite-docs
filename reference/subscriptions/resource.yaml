@@ -1,7 +1,7 @@
 title: Subscriptions API
 key: subscriptions
 order: 13
-version: 
+version:
 baseUri: https://api.mercadopago.com/
 paths:
   /preapproval:

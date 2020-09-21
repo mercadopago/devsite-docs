@@ -12,8 +12,8 @@ Los parámetros a sumar son opcionales y según los parámetros que se envían, 
 Por ejemplo, puedes buscar todas las suscripciones pausadas de un cliente: 
 
 [[[
-```curl --location --request GET 'https://api.mercadopago.com/preapproval/search?access_token=
-<APP_ACCESS_TOKEN>&status=paused&payer_email=[FAKER][INTERNET][FREE_EMAIL]
+```curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=[FAKER][INTERNET][FREE_EMAIL] \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 ```
 ]]]
 
@@ -27,8 +27,9 @@ Para __modificar la tarjeta__, debes indicar el nuevo token en el atributo _card
 Con el _application_id_ y el _collector_id_ de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
 [[[
-```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>?access_token=<APP_ACCESS_TOKEN>' \
+```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
   "application_id": 1234567812345678,
   "auto_recurring": {
@@ -50,8 +51,9 @@ Para __cancelar una suscripción__, solo debes especificar el valor _cancelled_ 
 Y para __pausar una suscripción__, tienes que indicar _paused_ en _status_. Esto discontinua el cobro de las cuotas y solo podrá estar pausada por 30 días. 
 
 [[[
-```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>?access_token=<APP_ACCESS_TOKEN>' \
+```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
   "status": "cancelled"
 }'
@@ -72,8 +74,9 @@ Con el _application_id_ y el _collector_id_ de la suscripción que quieras actua
 
 
 [[[
-```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>?access_token=<APP_ACCESS_TOKEN>' \
+```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
   "application_id": 1234567812345678,
   "collector_id": 100200300,
@@ -93,8 +96,9 @@ Con el _application_id_ y el _collector_id_ de la suscripción que quieras actua
 
 
 [[[
-```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>?access_token=<APP_ACCESS_TOKEN>' \
+```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
   "application_id": 1234567812345678,
   "collector_id": 100200300,

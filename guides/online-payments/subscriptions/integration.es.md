@@ -27,8 +27,9 @@ Al generar el plan vas a obtener el _preapproval_plan_id_ que vas a usar para re
 Para crear el plan, realiza la siguiente llamada a nuestra API con los datos que necesites:
 
 [[[
-```curl --location --request POST 'https://api.mercadopago.com/preapproval_plan?access_token=<APP_ACCESS_TOKEN>' \
+```curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
 	"back_url":"https://www.mercadopago[FAKER][URL][DOMAIN]",
 	"reason":"[FAKER][COMMERCE][PRODUCT_NAME]",
@@ -98,8 +99,9 @@ Atributo |	Descripción
 Una vez generado tu plan y obtenido tu _preapproval_plan_id_, crea tu suscripción por API de la siguiente manera
 
 [[[
-```curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=<APP_ACCESS_TOKEN> \
+```curl --location --request POST 'https://api.mercadopago.com/preapproval \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
    "preapproval_plan_id":"2c938084726e18d60172720000000000",
    "card_token_id":"9fca87c7338585abd000111222333444",
@@ -164,8 +166,9 @@ Si quieres usar una suscripción sin plan asociado, primero debes configurar el 
 Para crear una suscripción con estado authorized, se deben enviar los datos de la tarjeta asociada de la siguiente manera:
 
 [[[
-```curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=<APP_ACCESS_TOKEN>' \
+```curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
   "auto_recurring": {
     "currency_id": "[FAKER][CURRENCY][ACRONYM]",
@@ -224,8 +227,9 @@ Puedes crear una suscripción con estado _pending_ y sin medio de pago asociado.
 Para poder adherirse, la carga de los datos de la tarjeta se debe realizar con nuestro formulario. Solamente se deberá compartir el link retornado en la propiedad _init_point_ al pagador:
 
 [[[
-```curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=<APP_ACCESS_TOKEN>' \
+```curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
   "auto_recurring": {
     "currency_id": "[FAKER][CURRENCY][ACRONYM]",
