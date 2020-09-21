@@ -646,7 +646,7 @@ Usando o atributo `file_name`, você pode baixar o relatório na seguinte URL:
 
 [[[
 ```curl
-curl -X GET 
+curl -X GET \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/bank_report/:file_name'
 ```
@@ -838,8 +838,8 @@ Baixe o arquivo com este comando:
 
 [[[
 ```curl
-curl -X GET 
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+curl -X GET \
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/bank_report/:file_name'
 ```
 ```php

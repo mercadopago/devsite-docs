@@ -75,10 +75,10 @@ Para criar caixas de modelo desatendido, você precisa declarar a URL de um serv
 
 [[[
  ```curl
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
 https://api.mercadopago.com/pos \
--d     
+-d \
 {
   "name":"Caixa Principal", 
   "fixed_amount": true,

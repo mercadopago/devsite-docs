@@ -55,7 +55,7 @@ curl -H "Accept: application/json" \
 Para recibir un pago con una campaña que aplique a todos tus compradores, debes adicionar los campos `campaign_id` y `coupon_amount`:
 
 ```curl
-curl -X POST 
+curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
@@ -108,7 +108,7 @@ Agrega un campo adicional en el formulario de pago para poder capturar el códig
 Para verificar, utiliza las [credenciales de tu aplicación]([FAKER][CREDENTIALS][URL]):
 
 ```curl
-curl -X GET 
+curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP'
 ```
@@ -154,7 +154,7 @@ En este momento puedes mostrar que el cupón no es válido o ya no está disponi
 Para recibir un pago con un cupón de descuento debes adicionar el `coupon_code`:
 
 ```curl
-curl -X POST 
+curl -X POST \
 -H 'accept: application/json' \ 
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ACCESS_TOKEN' \

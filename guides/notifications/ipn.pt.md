@@ -124,7 +124,7 @@ Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos del
 **Se você estiver integrando pagamentos presenciais**, é necessário aplicar como método de contingência a **pesquisa da ordem** utilizando o seu `external_reference` como critério de pesquisa.
 
 ```curl
-curl -X GET 
+curl -X GET \
     -H 'Authorization: Bearer $ACCESS_TOKEN' \
     https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE -d
 ```

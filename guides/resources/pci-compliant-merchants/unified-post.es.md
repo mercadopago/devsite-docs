@@ -16,7 +16,7 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
 
 [[[
 ```curl
-      curl -X POST 
+      curl -X POST \
       -H "Content-Type: application/json" \
       -H 'Authorization: Bearer <<ACCESS_TOKEN>>' \
       -d '{

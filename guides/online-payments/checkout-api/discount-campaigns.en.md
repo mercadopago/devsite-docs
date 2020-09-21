@@ -106,7 +106,7 @@ Add an additional field on the payment form to capture the coupon code entered b
 To check it, use your [application’s credentials]([FAKER][CREDENTIALS][URL]):
 
 ```curl
-curl -X GET 
+curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP'
 ```
@@ -151,7 +151,7 @@ At this point, you can indicate that the coupon is invalid or is no longer avail
 To receive a payment with a discount coupon you must add the `coupon_code`:
 
 ```curl
-curl -X POST 
+curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ACCESS_TOKEN' \

@@ -31,7 +31,7 @@ We explain how the attended model works:
 curl -X PUT \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders \
--d
+-d \
 {
     "external_reference": "order-id-1234",
     "title": "Title",
@@ -74,7 +74,7 @@ Once the order is created, it is available to be **scanned and paid**.
 To delete a QR associated order before it’s closed or expires, you can use this following method:
 
 ```curl
-curl -X DELETE 
+curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders -d 
 ```

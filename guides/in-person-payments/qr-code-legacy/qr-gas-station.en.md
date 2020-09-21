@@ -218,10 +218,10 @@ You must create a QR code for each POS with an `url`.
 **API QR**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/pos \
--d
+-d \
 '{
     "name":"Principal Pump",
     "fixed_amount": true,
@@ -245,7 +245,7 @@ There will be times when you will need to [refund](https://www.mercadopago.com.a
 **Total Refund**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 ```
@@ -253,7 +253,7 @@ https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 **Parcial Refund**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
 -d '{ "amount": 10.50 }'

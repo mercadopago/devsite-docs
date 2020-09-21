@@ -211,7 +211,7 @@ preference.Save()"
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences?access_token="**PROD_ACCESS_TOKEN**"' \
+  'https://api.mercadolibre.com/checkout/preferences' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
   -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \

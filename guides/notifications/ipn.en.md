@@ -127,7 +127,7 @@ You will find all the payments in the order, under the payments object. [To make
 
 
 ```curl
-curl -X GET 
+curl -X GET \
     -H 'Authorization: Bearer $ACCESS_TOKEN' \
     https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE -d
 ```

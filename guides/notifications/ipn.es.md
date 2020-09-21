@@ -125,7 +125,7 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 **Si estas integrando pagos presenciales**, se debe implementar como método de contingencia, la  **búsqueda de la orden** utilizando el `external_reference` de la misma como criterio de búsqueda. 
 
 ```curl
-curl -X GET 
+curl -X GET \
     -H 'Authorization: Bearer $ACCESS_TOKEN' \
     https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE -d
 ```

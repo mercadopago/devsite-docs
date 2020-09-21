@@ -34,7 +34,7 @@ Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el _head
 Si deseas obtener la orden vigente de una caja, también puedes hacerlo.
 
 ```curl
-curl -X GET 
+curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders  -d 
 ```

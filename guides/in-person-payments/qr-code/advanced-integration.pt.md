@@ -32,7 +32,7 @@ Se um tempo de expiração diverso for requerido, poderá enviar o header `X-Ttl
 Se você deseja obter o pedido atual de uma caixa, também pode fazê-lo.
 
 ```curl
-curl -X GET 
+curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders -d 
 ```

@@ -76,7 +76,7 @@ Vamos avisar via [notificações IPN](https://www.mercadopago.com.ar/developers/
 A notificação IPN vai conter a ID da contestação. Utilize a ID para obter informação sobre esse pagamento.
 
 ```
-curl -X GET 
+curl -X GET \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 https://api.mercadopago.com/v1/chargebacks/ID
 ```
@@ -99,7 +99,7 @@ Você vai obter as seguintes informações:
   "documentation": [
     {
       "type": "image/png",
-      "url": "https://api.mercadopago.com/v1/chargebacks/documentation/op/op-4ccf4f39-b6f7-4c7b-a5ce-e8941a2a2b5f?access_token=TEST-7330838325999170-111309-c5e69fb44fb5dc008668f64e27653767-345521533",
+      "url": "https://api.mercadopago.com/v1/chargebacks/documentation/op/op-4ccf4f39-b6f7-4c7b-a5ce-e8941a2a2b5f",
       "description": "File: img.png, Size: 3324"
     }
   ],
@@ -133,7 +133,7 @@ Para mais detalhes, você pode ver o [Programa de Proteção ao Vendedor](https:
 Você pode encaminhar informação que valide que a venda foi feita pela API.
 
 ```
-curl -X POST 
+curl -X POST  \
 -F 'files[]=@/path/to/file/file1.png' \
 -F 'files[]=@/path/to/file/file2.pdf' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

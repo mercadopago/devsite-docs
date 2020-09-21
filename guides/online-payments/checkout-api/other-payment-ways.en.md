@@ -1438,7 +1438,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payment_methods?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -2126,7 +2127,7 @@ curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/payment_methods' \
+    'https://api.mercadopago.com/v1/payment_methods' 
 ```
 ]]]
 

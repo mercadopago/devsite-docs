@@ -141,7 +141,8 @@ Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nomb
 curl -X POST \
         -H 'accept: application/json' \
         -H 'content-type: application/json' \
-        https://api.mercadopago.com/v1/payments?access_token=USER_AT \
+        -H 'Authorization: Bearer USER_AT' \
+        https://api.mercadopago.com/v1/payments \
         -d '{
                 "transaction_amount": 100,
                 "token": "ff8080814c11e237014c1ff593b57b4d",

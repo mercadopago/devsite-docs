@@ -944,7 +944,7 @@ Descarga el archivo con este comando:
 
 [[[
 ```curl
-curl -X GET 
+curl -X GET \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/settlement_report/:file_name'
 ```

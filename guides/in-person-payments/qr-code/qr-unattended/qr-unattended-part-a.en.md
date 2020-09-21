@@ -74,10 +74,10 @@ To create Points of Sale for the the unattended model, you need to declare your 
 
 [[[
  ```curl
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
 https://api.mercadopago.com/pos \
--d     
+-d \
 {
   "name":"Main pos", 
   "fixed_amount": true,

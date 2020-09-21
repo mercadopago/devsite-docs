@@ -115,10 +115,10 @@ Deve-se criar um código QR para cada caixa com um `external_id`  que identifiqu
 **API de criação de QRs**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/pos \
--d
+-d \
 '{
     "name":"Caixa Principal", 
     "fixed_amount": true,
@@ -135,10 +135,10 @@ Para efetuar uma cobrança através de um código QR do Mercado Pago, deverá cr
 **API de criação de pedidos**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID \ 
--d
+-d \
 '{
     "external_reference": "id de transação interno",
 	"notification_url": "www.seuservidor.com.br/endpoint",
@@ -167,7 +167,7 @@ Depois que o usuário fizer o pagamento, você poderá obter os dados usando qua
 Se quiser eliminar um pedido associado a um QR antes que expire o tempo (`X-Ttl-Store-Preference`) ou seja pago.
 
 ```bash
-curl -X DELETE 
+curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID
 ```
@@ -179,7 +179,7 @@ havendo ocasiões que necessite realizar uma [devolução](https://www.mercadopa
 **Devolução total**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 ```
@@ -187,7 +187,7 @@ https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 **Devolução parcial**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
 -d '{ "amount": 10.50 }'

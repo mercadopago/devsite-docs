@@ -114,10 +114,10 @@ You must create a QR code for each POS with an `external_id` that identifies it.
 **API QR**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/pos \
--d
+-d \
 '{
     "name":"Principal POS",
     "fixed_amount": true,
@@ -134,10 +134,10 @@ To create a payment through a QR code you must create an order with the detail o
 **API Orders**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID \
--d
+-d \
 '{
     "external_reference": "internal id",
 	"notification_url": "www.yourserver.com/endpoint",
@@ -166,7 +166,7 @@ After the user makes the payment you can obtain the data using any of the follow
 If you want to delete the order associated with a QR before the time expires (`X-Ttl-Store-Preference`) or be paid.
 
 ```bash
-curl -X DELETE 
+curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID
 ```
@@ -178,7 +178,7 @@ There will be times when you will need to do a partial or total [refund](https:/
 **Total refund**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 ```
@@ -186,7 +186,7 @@ https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 **Parcial refund**
 
 ```bash
-curl -X POST 
+curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
 -d '{ "amount": 10.50 }'

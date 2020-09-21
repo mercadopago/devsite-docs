@@ -30,7 +30,7 @@ Explicamos como funciona o modelo atendido:
 curl -X PUT \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders \
--d
+-d \
 {
     "external_reference": "order-id-1234",
     "title": "Title",
@@ -70,7 +70,7 @@ Assim que o pedido for criado, ele estará disponível para ser **digitalizado e
 Para remover o pedido associado a um QR antes de que expire por validade ou seja encerrado, poderá fazê-lo por meio do método a seguir: 
 
 ```curl
-curl -X DELETE 
+curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders -d 
 ```

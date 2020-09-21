@@ -15,7 +15,7 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
 
 [[[
 ```curl
-      curl -X POST 
+      curl -X POST \
       -H "Content-Type: application/json" \
       -H 'Authorization: Bearer <<ACCESS_TOKEN>>' \
       -d '{

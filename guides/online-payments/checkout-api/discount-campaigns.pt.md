@@ -106,7 +106,7 @@ Adicione um campo adicional no formulário de pagamento para capturar o código 
 Para verificar, utilize as [credenciais da sua aplicação]([FAKER][CREDENTIALS][URL]):
 
 ```curl
-curl -X GET 
+curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP'
 ```
@@ -152,7 +152,7 @@ Nesse momento, você pode indicar que o cupom é inválido ou não está mais di
 Para receber um pagamento com cupom de desconto, você deve adicionar o  `coupon_code`:
 
 ```curl
-curl -X POST 
+curl -X POST \
 -H 'accept: application/json' \ 
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ACCESS_TOKEN' \

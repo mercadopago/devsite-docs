@@ -236,7 +236,7 @@ $ curl https://api.mercadopago.com/v1/payments \
 A seguir um exemplo de criação de pagamento de um salário:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments\
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
