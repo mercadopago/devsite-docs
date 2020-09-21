@@ -9,7 +9,7 @@
 
 Wix is a **virtual platform that enables you to receive payments with Mercado Pago**.
 
-With it, you can offer your clients the possibility of [charging through Mercado Pago website](#bookmark_configure_a_forma_de_pagamento).
+With it, you can offer your clients the possibility of [charging through Mercado Pago website](#bookmark_set_up_methods_of_payment).
 
 ## Settings Steps
 
