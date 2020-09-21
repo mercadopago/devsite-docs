@@ -52,7 +52,7 @@ Execute the following command to generate a test user:
 curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-"https://api.mercadopago.com/users/test_user
+"https://api.mercadopago.com/users/test_user"
 -d '{"site_id":"[FAKER][SITE][ID]"}'
 ```
 

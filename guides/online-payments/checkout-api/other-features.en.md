@@ -98,7 +98,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/payments \
+    'https://api.mercadopago.com/v1/payments' \
     -d '{
           "transaction_amount": 100,
           "token": "ff8080814c11e237014c1ff593b57b4d",
