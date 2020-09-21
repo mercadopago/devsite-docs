@@ -126,14 +126,14 @@ definitions:
             es: Identificador de moneda local.
             pt: none.
       - start_date:
-        type: Date(ISO_8601)
-        description:
-          en: preapproval's start date.
-          es: Fecha de inicio de suscripción.
-          pt: none.
+          type: Date(ISO_8601)
+          description:
+            en: preapproval's start date.
+            es: Fecha de inicio de suscripción.
+            pt: none.
       - end_date:
-        type: Date(ISO_8601)
-        description:
-          en: preapproval's end date.
-          es: Fecha de fin de suscripción.
-          pt: none.
+          type: Date(ISO_8601)
+          description:
+            en: preapproval's end date.
+            es: Fecha de fin de suscripción.
+            pt: none.

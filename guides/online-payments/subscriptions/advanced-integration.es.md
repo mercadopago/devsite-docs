@@ -1,7 +1,7 @@
 
 # Actualización de suscripciones
 
-Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el application_id que retorna luego de la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">creación</a>. 
+Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el _preapproval_id_ que retorna luego de la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">creación</a>. 
 
 ## Búsqueda de una suscripción
 
@@ -24,7 +24,7 @@ Si quieres modificar una tarjeta o el monto de una suscripción ya creada, tiene
 
 Para __modificar la tarjeta__, debes indicar el nuevo token en el atributo _card_token_id_. Y para __actualizar el monto__, envía el nuevo monto a través del _auto_recurring.transaction_amount_ y específica nuevamente el _auto_recurring.currency_id_.
 
-Con el _application_id_ y el _collector_id_ de la suscripción que quieras actualizar, realiza la siguiente llamada: 
+Con el _application_id_ de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
 [[[
 ```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
@@ -42,13 +42,13 @@ Con el _application_id_ y el _collector_id_ de la suscripción que quieras actua
 ```
 ]]]
 
-> Ten en cuenta que el token dura 7 días y se puede usar una sola vez, por lo tanto no debe guardarse este valor.
+>Ten en cuenta que el token dura 7 días y se puede usar una sola vez, por lo tanto no debe guardarse este valor.
 
 ## Cancelar o pausar
 
 Para __cancelar una suscripción__, solo debes especificar el valor _cancelled_ en _status_. Esta acción finaliza la suscripción y hace que no se pueda reactivar.
 
-Y para __pausar una suscripción__, tienes que indicar _paused_ en _status_. Esto discontinua el cobro de las cuotas y solo podrá estar pausada por 30 días. 
+Y para __pausar una suscripción__, tienes que indicar _paused_ en _status_.
 
 [[[
 ```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
@@ -64,13 +64,13 @@ Y para __pausar una suscripción__, tienes que indicar _paused_ en _status_. Est
 
 ### Activar suscripción con tiempo de fin
 
-Si quieres reactivar una suscripción que tenía determinado un tiempo específico, tienes que agregar el tiempo que estuvo pausada para poder cobrar la totalidad de cuotas estimadas. 
+Si quieres reactivar o extender el tiempo de una suscripción que tenía determinado un tiempo específico, tienes que agregar el tiempo que estuvo pausada o que quieras sumar para poder cobrar la totalidad de cuotas estimadas. 
 
 Por ejemplo, en el caso de querer cobrar todas las cuotas de una duración anual con una frecuencia mensual que fue pausada a los 6 meses por un mes, debes agregarle un mes más el tiempo de vida.
 
 Para hacerlo, actualiza el tiempo en el campo _auto_recurring.end_date_ y envía el valor _authorized_ en _status_.
 
-Con el _application_id_ y el _collector_id_ de la suscripción que quieras actualizar, realiza la siguiente llamada: 
+Con el _application_id_ de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
 
 [[[
@@ -92,8 +92,7 @@ Con el _application_id_ y el _collector_id_ de la suscripción que quieras actua
 
 Para reactivar una suscripción, envía el valor _authorized_ en _status_. Esto reactivará las cuotas según la recurrencia a partir de la fecha en la que se realizó el cambio de estado.
 
-Con el _application_id_ y el _collector_id_ de la suscripción que quieras actualizar, realiza la siguiente llamada: 
-
+Con el _application_id_ de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
 [[[
 ```curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
@@ -101,13 +100,12 @@ Con el _application_id_ y el _collector_id_ de la suscripción que quieras actua
 --header 'Authorization: Bearer APP_ACCESS_TOKEN' \
 --data-raw '{
   "application_id": 1234567812345678,
-  "collector_id": 100200300,
   "status": "authorized"
 }'
 ```
 ]]]
 
-> Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API</a>.
+>Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API</a>.
 
 
 ------------

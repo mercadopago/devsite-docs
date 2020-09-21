@@ -4,28 +4,17 @@
 ## Consideraciones y restricciones
 
 ----[mla]----
-Hay que tener en cuenta ciertas particularidades y restricciones para comenzar a recibir pagos: 
-
-* __Montos mínimos y máximos permitidos__. El monto mínimo permitido para crear una suscripción es de $ 2 y el máximo es de $ 250.000.
-* __Regulación de UIF__: Estamos adecuados a la normativa 76 de la UIF (Unidad de Información Financiera), que exige que solo podrán operar aquellos sellers que hayan declarado una determinada información personal y jurídica.
-Si aún no has validado tu identidad, hazlo desde __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions" target="_blank">suscripciones__</a>.
-
-> Si ingresas al link y ves al panel de suscripciones, significa que ya completaste tus datos previamente y estás listo para operar en este flujo.
+Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $ 2 y el máximo es de $ 250.000.
 
 ------------
 
 ----[mlb]----
-
 Ten en cuenta que el monto mínimo permitido para crear una suscripción es de R$ 0.5 y el máximo es de R$ 50.000.
 
 ------------
 
 ----[mlm]----
-Hay que tener en cuenta ciertas particularidades y restricciones para comenzar a recibir pagos: 
-
-* __Montos mínimos y máximos permitidos.__ El monto mínimo permitido para crear una suscripción es de $ 10 y el máximo es de R$ 200.000.
-* __Regulación de IFPE__: Debido a la regulación impuesta por IFPE (Instituciones de Fondos de Pago Electrónico) no estamos habilitados a operar con dinero en cuenta como medio de pago.
-Los únicos medios de pago aceptados serán tarjeta de crédito y débito.
+Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $ 10 y el máximo es de R$ 200.000.
 
 ------------
 
@@ -36,17 +25,29 @@ Para poder comenzar la integración, es necesario contar con una cuenta de Merca
 
 Si aún no tienes una, puedes <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">crear una cuenta en Mercado Pago</a> cuando quieras.
 
+### Ten a mano tus credenciales
+
+Las credenciales son las claves que te proporcionamos para que puedas configurar tu integración. Para este caso, vas a utilizar una clave pública y otra clave privada.
+
+Para poder encontrarlas, ve la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials/" target="_blank">Credenciales</a>.
+
+>¿Tienes dudas sobre credenciales? Puedes consultar nuestras <a href="https://www.mercadopago[FAKER][URL][DOMAIN]//" target="_blank">preguntas frecuentes</a>.
+
 ### Usa nuestras librerías oficiales
 
 Intégrate con nuestra <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">SDK Javascript de Mercado Pago</a>  que te permite crear un token de pago y enviar los datos de las tarjetas a tu backend de forma segura. 
 
-### Utiliza los usuarios de prueba 
+
+### Conoce los usuarios de prueba 
 
 Comienza a familiarizarte con la API o prueba tu integración, utilizando usuarios de prueba.
 
-### Crear usuarios de prueba
+#### Crear usuarios de prueba
+
+Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**: un comprador y un vendedor.
 
 Ejecuta el siguiente curl para generar un usuario de prueba:
+
 
 [[[
 ```curl -X POST \
@@ -65,7 +66,7 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
     "nickname": "TT123456",
     "password": "qatest123456",
     "site_status": "active",
-    "email": "test_user_123456@testuser.com"
+    "email": "test_user@testuser.com"
 }
 ```
 
@@ -78,6 +79,15 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 > * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
 > * Para hacer pagos de prueba, te recomendamos usar montos bajos.
 > * Los montos deben respetar los valores mínimos y máximos para cada medio de pago. 
+
+#### Tarjetas de prueba
+
+Tarjeta |   Número  | Código de seguridad   |   Fecha de vencimiento
+------------ 	 |	--------    |	--------    |	--------
+Mastercard       |  5031 7557 3453 0604 |   123 | 11/25            
+Visa             |  4509 9535 6623 3704 |   123 | 11/25   
+American Express |  3711 803032 57522   |   1234| 11/25   
+
 
 ------------
 ### Próximos pasos

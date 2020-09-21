@@ -40,12 +40,3 @@ El día del reintento de cobro de la cuota puede dar como resultado alguna de la
 > Actualiza, modifica o cancela tus suscripciones.
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advenced-integration/)
-
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Integra suscripciones
->
-> Elige tu forma de integrar y comienza a recibir pagos recurrentes. 
->
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/integration/)
