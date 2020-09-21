@@ -75,7 +75,7 @@ Para eliminar la orden asociada a un QR antes de que expire por vigencia, o se c
 ```curl
 curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders -d 
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders 
 ```
 La respuesta será un `HTTP 204 No Content`.
 

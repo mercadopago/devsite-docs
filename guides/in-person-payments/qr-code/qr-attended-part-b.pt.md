@@ -72,7 +72,7 @@ Para remover o pedido associado a um QR antes de que expire por validade ou seja
 ```curl
 curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders -d 
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
 A resposta será um `HTTP 204 No Content`.
 

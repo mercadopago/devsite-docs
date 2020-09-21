@@ -76,7 +76,7 @@ To delete a QR associated order before it’s closed or expires, you can use thi
 ```curl
 curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders -d 
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
 Answer will be `HTTP 204 No Content`.
 

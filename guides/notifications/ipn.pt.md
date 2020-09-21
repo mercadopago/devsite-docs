@@ -126,7 +126,7 @@ Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos del
 ```curl
 curl -X GET \
     -H 'Authorization: Bearer $ACCESS_TOKEN' \
-    https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE -d
+    https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
 ```
 Mais informações na [Referência de API](https://www.mercadopago.com.br/developers/pt/reference/merchant_orders/_merchant_orders_search/get/).
 
