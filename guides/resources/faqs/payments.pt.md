@@ -56,7 +56,7 @@ Para gerar uma segunda via do boleto será necessário [utilizar o método GET d
 
 A consulta será da seguinte forma:
 
-`https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ACCESS_TOKEN`
+`https://api.mercadopago.com/v1/payments/PAYMENT_ID`
 
 No retorno da chamada haverá o parâmetro `transaction_details` que conterá o  `external_resource_url` com o link da segunda via do boleto.
 

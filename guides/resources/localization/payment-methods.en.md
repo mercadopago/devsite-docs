@@ -19,6 +19,7 @@ You can get the payment methods as follows:
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE'
 ```
 ]]]

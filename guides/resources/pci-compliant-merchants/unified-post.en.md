@@ -15,7 +15,10 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
 
 [[[
 ```curl
-      curl -X POST -H "Content-Type: application/json" -d '{
+      curl -X POST 
+      -H "Content-Type: application/json" \
+      -H 'Authorization: Bearer <<ACCESS_TOKEN>>' \
+      -d '{
           "transaction_amount": 5,
           "card": {
           "card_number": "4509953566233704",
@@ -37,7 +40,7 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
         "payer": {
         "email": "testpayer@test.com"
         }
-      }' https://api.mercadopago.com/v1/secure_payments?access_token=<<ACCESS_TOKEN>>
+      }' https://api.mercadopago.com/v1/secure_payments
 ```
 ]]]
 

@@ -54,8 +54,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -184,8 +185,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -311,8 +313,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -436,8 +439,9 @@ Agrega toda la información adicional que quieras.
 
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -555,8 +559,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -673,8 +678,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -802,8 +808,9 @@ Agrega toda la información adicional que quieras.
 | `street_number` | Integer | Número de calle |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -932,8 +939,9 @@ Agrega toda la información adicional que quieras.
 
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1058,8 +1066,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1171,8 +1180,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1289,8 +1299,9 @@ Agrega toda la información adicional que quieras.
 | `local_pickup` | Boolean | `True` si se retira en sucursal, `False` si no lo hace. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1420,8 +1431,9 @@ Agrega toda la información adicional que quieras.
 | `local_pickup` | Boolean | `True` si se retira en sucursal, `False` si no lo hace. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1538,8 +1550,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
