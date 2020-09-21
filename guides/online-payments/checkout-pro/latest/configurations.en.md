@@ -407,9 +407,10 @@ preference.Save()"
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  'https://api.mercadolibre.com/checkout/preferences' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
   -d '{
 	"items": [
 	{
@@ -573,9 +574,10 @@ Add the code in the preference and replace the value PIXEL_ID with your identifi
 ===
 
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  'https://api.mercadolibre.com/checkout/preferences' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
   -d '{
 	"items": [
         {
@@ -708,9 +710,10 @@ preference.Save();
 Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
 ===
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"' \
+  'https://api.mercadolibre.com/checkout/preferences' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
   -d '{
 	"items": [
         {
@@ -802,13 +805,13 @@ MercadoPago.SDK.CorporationId = "CORPORATION_ID";
 Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
 ===
 curl -X POST \
-'https://api.mercadolibre.com/checkout/preferences?access_token="PROD_ACCESS_TOKEN"
-' \
+'https://api.mercadolibre.com/checkout/preferences' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -H 'x-corporation-id: CORPORATION_ID \
   -H 'x-integrator-id: INTEGRATOR_ID \
   -H 'x-platform-id: PLATFORM_ID \
+  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
   -d '{
     "items": [
        ...

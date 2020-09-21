@@ -11,7 +11,8 @@ Se utiliza el `id` del Advanced Payment realizando un `PUT` como muestra el ejem
 curl -X PUT \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID/refunds?access_token=SELLER_TOKEN' \
+    -H 'Authorization: Bearer SELLER_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID/refunds' \
 ```
 
 #### Response

@@ -24,7 +24,8 @@ Si se reembolsa el Advanced Payment completo, este quedará con el estado `refun
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID/refunds?access_token=MKT_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID/refunds' \
     -d '{...}'
 ```
 
@@ -33,7 +34,8 @@ curl -X POST \
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID/disbursements/DISBURSEMENT_ID/refunds?access_token=MKT_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID/disbursements/DISBURSEMENT_ID/refunds' \
     -d '{...}'
 ```
 

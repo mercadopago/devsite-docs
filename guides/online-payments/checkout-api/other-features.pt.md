@@ -97,7 +97,8 @@ payment.save()
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
     -d '{
           "transaction_amount": 100,
           "token": "ff8080814c11e237014c1ff593b57b4d",
@@ -186,8 +187,9 @@ payment.update()
 ```
 ```curl
 curl -X PUT \
-  'https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{"capture": true}'
 ```
 ]]]
@@ -271,8 +273,9 @@ payment.update()
 ```curl
 
 curl -X PUT \
-  'https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
           "transaction_amount": 75,
           "capture": true
@@ -350,8 +353,9 @@ payment.update()
 ```
 ```curl
 curl -X PUT \
-  'https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{"status": "cancelled"}'
 ```
 ]]]
