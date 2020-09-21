@@ -28,7 +28,9 @@ Explicamos como funciona o modelo atendido:
 
 ```curl
 curl -X PUT \
-https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN -d
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders \
+-d
 {
     "external_reference": "order-id-1234",
     "title": "Title",
@@ -68,7 +70,9 @@ Assim que o pedido for criado, ele estará disponível para ser **digitalizado e
 Para remover o pedido associado a um QR antes de que expire por validade ou seja encerrado, poderá fazê-lo por meio do método a seguir: 
 
 ```curl
-curl -X DELETE https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
+curl -X DELETE 
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders -d 
 ```
 A resposta será um `HTTP 204 No Content`.
 

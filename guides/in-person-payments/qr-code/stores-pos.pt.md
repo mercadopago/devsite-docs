@@ -37,7 +37,10 @@ Para gerá-la, execute o código a seguir:
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/users/$USER_ID/stores?access_token=PROD_ACCESS_TOKEN -d
+curl -X POST 
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
+https://api.mercadopago.com/users/$USER_ID/stores \
+-d
 {  
    "name":"Loja Instore",
    "business_hours":{  
@@ -99,7 +102,10 @@ Tendo lojas criadas, você pode criar seus caixas. Considere o seguinte:
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
+curl -X POST 
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
+https://api.mercadopago.com/pos \
+-d     
 {
   "name":"Caixa Principal", 
   "fixed_amount": true,
