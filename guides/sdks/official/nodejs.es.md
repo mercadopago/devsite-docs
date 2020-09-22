@@ -931,15 +931,17 @@ La API de MercadoPago envía notificaciones de pagos y suscripciones realizadas.
 Cuando reciba esta notificación, podrá obtener la información del pedido o del pago.
 
 Merchant Order:
-
-```
-/merchant_orders/[ID]
+```curl
+curl -X GET \
+  'https://api.mercadopago.com/merchant_orders/:id' \
+  -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
 Payment:
-
-```
-/v1/payments/[ID]
+```curl
+curl -X GET \
+    'https://api.mercadopago.com/v1/payments/:id' \
+     -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
 ### IPN Manager

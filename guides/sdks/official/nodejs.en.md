@@ -916,13 +916,17 @@ MercadoPago API sends notifications from [payments](https://www.mercadopago.com.
 When you receive this notification you need to do a request to the appropiate endpoint to get the information of the merchant order or from a payment.
 
 Merchant Order:
-```
-/merchant_orders/[ID]
+```curl
+curl -X GET \
+  'https://api.mercadopago.com/merchant_orders/:id' \
+  -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
 Payment:
-```
-/v1/payments/[ID]
+```curl
+curl -X GET \
+    'https://api.mercadopago.com/v1/payments/:id' \
+     -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
 ### IPN Manager
