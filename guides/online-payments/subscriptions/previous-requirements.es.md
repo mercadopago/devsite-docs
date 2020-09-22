@@ -70,9 +70,9 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 }
 ```
 
-> WARNING 
+>WARNING 
 > 
-> Importante
+>Importante
 > 
 > * Tanto el comprador como el vendedor deben ser usuarios de prueba.
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.

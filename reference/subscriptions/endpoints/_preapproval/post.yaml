@@ -12,96 +12,256 @@ use:
 - status
 errors:
 - 400 BAD_REQUEST:
-  - '400':
+  - 'Card token was used, please generate new':
       description:
         en: Card token was used, please generate new.
         es: El card token ya fue usado, se debe crear uno nuevo.
-        pt: none.
-  - '400':
+        pt: O token do cartão já foi usado, um novo deve ser criado.
+  - 'Card token was generated without cvv validation':
       description:
         en: Card token was generated without cvv validation.
         es: No se aceptan pagos sin cvv.
-        pt: none.
-  - '400':
+        pt: Pagamentos sem cvv não são aceitos.
+  - 'Subscriptions are not available for this country yet':
       description:
         en: Subscriptions are not available for this country yet.
         es: Aplicación de un site distinto a MLA o MLB o MLM.
-        pt: none.
-  - '400':
+        pt: Aplicação de um site diferente de MLA ou MLB ou MLM.
+  - 'The payment method account money is not available in your country':
       description:
         en: The payment method account money is not available in your country.
-        es: No se pueden crear suscripciones con dinero en cuenta.
-        pt: none.
-  - '400':
+        es: No se pueden crear suscripciones con dinero en cuenta en tu país.
+        pt: Você não pode criar assinaturas com dinheiro em conta no seu país.
+  - 'Collector and Application cannot be from different countries':
       description:
-        en: Collector and Application can't be from different countries.
-        es: Se esta usando una aplicación que corresponda al site del collector..
-        pt: none.
-  - '400':
+        en: Collector and Application cannot be from different countries.
+        es: Se esta usando una aplicación que no corresponda al site del collector.
+        pt: Um aplicativo que não corresponde ao site do coletor está sendo usado.
+  - 'card_token_id is required':
       description:
         en: card_token_id is required.
         es: Si la suscripción se crea con un template asociado el card token id es requerido.
-        pt: none.
-  - '400':
+        pt: Se a assinatura for criada com um modelo associado, o ID do token do cartão é necessário.
+  - 'payer_email is required':
       description:
         en: payer_email is required.
         es: El email del pagador es requerido.
-        pt: none.
-  - '400':
+        pt: O e-mail do pagador é obrigatório.
+  - 'Invalid value for payer_email, must be a valid email address':
       description:
         en: Invalid value for payer_email, must be a valid email address.
         es: El email del pagador es inválido.
-        pt: none.
-  - '400':
+        pt: O email do pagador é inválido.
+  - 'Invalid value for transaction amount, must be a positive number':
       description:
-        en: transaction_amount is required.
-        es: El monto de la suscripción es reauerido.
-        pt: none.
+        en: Invalid value for transaction amount, must be a positive number.
+        es: El monto de la suscripción es inválido, debe ser un numero positivo.
+        pt: O valor da assinatura é inválido, deve ser um número positivo.
+  - 'Invalid value for transaction amount, only two decimals are allowed':
+      description:
+        en: Invalid value for transaction amount, only two decimals are allowed.
+        es: El monto de la suscripción es inválido, se permiten solo 2 decimales.
+        pt: O valor da assinatura é inválido, apenas 2 casas decimais são permitidas.
+  - 'Cannot pay an amount lower than ${currency_id} ${min amount}':
+      description:
+        en: Cannot pay an amount lower than ${currency_id} ${min amount}.
+        es: El monto de la suscripción es inválido, es menor el limite para el país.
+        pt: O valor da assinatura é inválido, o limite para o país é menor.
+  - 'Cannot pay an amount greater than ${currency_id} ${max amount}':
+      description:
+        en: Cannot pay an amount greater than ${currency_id} ${max amount}.
+        es: El monto de la suscripción es inválido, es mayor el limite para el país.
+        pt: O valor da assinatura é inválido, o limite para o país é maior.
+  - 'The transaction_amount must be the same as preapproval_plan':
+      description:
+        en: The transaction_amount must be the same as preapproval_plan.
+        es: El monto de la suscripción y el del plan asociados, deben ser los mismos.
+        pt: O valor da assinatura e o plano associado devem ser os mesmos.
+  - 'You cannot create a new preapproval from a cancelled/inactive template':
+      description:
+        en: You cannot create a new preapproval from a cancelled/inactive template.
+        es: El plan o template asociado debe estar activo.
+        pt: O plano ou modelo associado deve estar ativo.
+  - 'back_url is required':
+      description:
+        en: back_url is required.
+        es: La url de retorno es requerida.
+        pt: O url de retorno é obrigatório.
+  - 'Invalid value for back url, must be a valid URL':
+      description:
+        en: Invalid value for back url, must be a valid URL.
+        es: La url de retorno es inválida, debe ser una url válida.
+        pt: O url de retorno é inválido, deve ser um url válido.
+  - 'reason is required':
+      description:
+        en: reason is required.
+        es: El título de la suscripción es requerido.
+        pt: O título da assinatura é obrigatório.
+  - 'reason has more than 255 characters':
+      description:
+        en: reason has more than 255 characters.
+        es: El título de la suscripción debe contener hasta 255 carácteres.
+        pt: O título da assinatura deve conter até 255 caracteres.
+  - 'reason has unsupported characters':
+      description:
+        en: reason has unsupported characters.
+        es: El título de la suscripción tiene carácteres inválidos.
+        pt: O título da assinatura contém caracteres inválidos.
+  - 'auto_recurring.frequency is required':
+      description:
+        en: auto_recurring.frequency is required.
+        es: La frecuencia es requerida.
+        pt: A frequência é necessária.
+  - 'Invalid value for frequency, must be a positive integer':
+      description:
+        en: Invalid value for frequency, must be a positive integer.
+        es: La frecuencia debe ser un valor positivo.
+        pt: A frequência deve ser um valor positivo.
+  - 'Invalid value for frequency type, valid ones are [days, months]':
+      description:
+        en: Invalid value for frequency type, valid ones are [days, months].
+        es: El tipo de la frecuencia debe ser días o meses.
+        pt: O tipo de frequência deve ser dias ou meses.
+  - 'auto_recurring.frequency_type is required':
+      description:
+        en: auto_recurring.frequency_type is required.
+        es: El tipo de la frecuencia es requerido.
+        pt: O tipo de frequência é obrigatório.
+  - 'auto_recurring.transaction_amount is required':
+      description:
+        en: auto_recurring.transaction_amount is required.
+        es: El monto de la suscripción es requerido.
+        pt: O valor da assinatura é necessário.
+  - 'auto_recurring.currency_id is required':
+      description:
+        en: auto_recurring.currency_id is required.
+        es: El identificador de moneda es requerido.
+        pt: O identificador de moeda é obrigatório.
+  - 'Invalid field -> auto_recurring.currency_id':
+      description:
+        en: Invalid field -> auto_recurring.currency_id.
+        es: El identificador de la moneda es inválido.
+        pt: O identificador da moeda é inválido.
+  - 'Invalid value for auto_recurring.end_date, the date must be after today':
+      description:
+        en: Invalid value for auto_recurring.end_date, the date must be after today.
+        es: La fecha de fin de la suscripción debe ser mayor a la feha actual.
+        pt: A data de término da assinatura deve ser posterior à data atual.
+  - 'auto_recurring.end_date must be after auto_recurring.start_date':
+      description:
+        en: auto_recurring.end_date must be after auto_recurring.start_date.
+        es: La fecha de fin de la suscripción no puede ser menor a la fecha de inicio.
+        pt: A data de término da assinatura não pode ser inferior à data de início.
+  - 'Invalid value for auto_recurring.start_date, the date must be after today':
+      description:
+        en: Invalid value for auto_recurring.start_date, the date must be after today.
+        es: La fecha de inicio no puede ser mayor a la fecha actual.
+        pt: A data de início não pode ser posterior à data atual.
+  - 'Invalid format in auto_recurring.start_date or auto_recurring.end_date':
+      description:
+        en: Invalid format in auto_recurring.start_date or auto_recurring.end_date.
+        es: Las fechas deben tener un formato válido.
+        pt: As datas devem estar em um formato válido.
+  - 'external_reference has more than 255 characters':
+      description:
+        en: external_reference has more than 255 characters.
+        es: La referencia external debe contener hasta 255 carácteres.
+        pt: A referência externa deve conter até 255 caracteres.
+  - 'external_reference has unsupported characters':
+      description:
+        en: external_reference has unsupported characters.
+        es: La referencia externa posee carácteres inválidos.
+        pt: A referência externa contém caracteres inválidos.
+  - 'Already exists a preapproval for user ${payer_email} and application ${application_id}':
+      description:
+        en: Already exists a preapproval for user ${payer_email} and application ${application_id}.
+        es: No puede haber más de una suscripción para el mismo pagador, debes cancelar el anterior.
+        pt: Não pode haver mais de uma assinatura para o mesmo pagador, você deve cancelar a anterior.
+  - 'Cannot operate between different countries':
+      description:
+        en: Cannot operate between different countries.
+        es: El pagador y el vendedor deben pertenecer al mismo site.
+        pt: O pagador e o vendedor devem pertencer ao mesmo site.
+  - 'Payer and collector cannot be the same user':
+      description:
+        en: Payer and collector cannot be the same user.
+        es: El pagador y el vendedor deben ser usuarios diferentes.
+        pt: O pagador e o vendedor devem ser usuários diferentes.
+  - 'Both payer and collector must be real or test users':
+      description:
+        en: Both payer and collector must be real or test users.
+        es: No se pueden combinar usuarios reales con usuarios de pruebas.
+        pt: Não é possível combinar usuários reais com usuários de teste.
+  - 'This preapproval cannot be created: The seller does not accept account_money':
+      description:
+        en: This preapproval cannott be created. The seller does not accept account_money.
+        es: El medio de pago dinero en cuenta no es soportado por el vendedor.
+        pt: O meio de pagamento em dinheiro na conta não é suportado pelo vendedor.
+  - 'This preapproval cannot be created only with payment method account_money':
+      description:
+        en: This preapproval can't be created only with payment method account_money.
+        es: No se pueden crear una suscripción solo con dinero en cuenta.
+        pt: Você não pode criar uma assinatura com apenas dinheiro na conta.
+  - 'You cannot create a preapproval with payment_method in status pending':
+      description:
+        en: You cannot create a preapproval with payment_method in status pending.
+        es: Una suscripciones que se crea poendiente no puede tener un medio de pago asociado.
+        pt: Uma assinatura criada pelo cliente não pode ter um meio de pagamento associado.
+  - 'Cannot create preapproval pending, the feature with account money is disabled for your country.':
+      description:
+        en: Cannot create preapproval pending, the feature with account money is disabled for your country.
+        es: Momentanemente no se pueden crear suscripciones pendientes en tu país.
+        pt: Você não pode criar assinaturas pendentes no momento em seu país.
+  - 'Invalid request data':
+      description:
+        en: Invalid request data.
+        es: Datos de la suscripción inválidos.
+        pt: Detalhes de assinatura inválidos.
 - 401 UNAUTHORIZED:
-  - '401':
+  - 'CC_VAL_433':
       description:
         en: CC_VAL_433 Credit card validation has failed.
         es: Medio de pago rechazado, debe usar otro medio de pago.
-        pt: none.
-  - '401':
+        pt: Método de pagamento rejeitado, você deve usar outro método de pagamento.
+  - 'Verification of collectors personal data is in process, come back later':
       description:
         en: Verification of collector's personal data is in process, come back later.
         es: Se está analizando el vendedor desde KYC.
-        pt: none.
-  - '401':
+        pt: O vendedor está sendo analisado pela KYC.
+  - 'Unauthorized access to resource':
       description:
         en: Unauthorized access to resource.
         es: Access token no enviado o expirado.
-        pt: none.
-  - '401':
+        pt: Token de acesso não enviado ou expirado.
+  - 'This app cannot create preapprovals without a plan':
       description:
         en: This app can't create preapprovals without a plan.
         es: El preapproval debe tener auto recurring.
-        pt: none.
+        pt: A pré-aprovação deve ter recorrência automática.
 - 403 UNAUTHORIZED:
-  - '403':
+  - 'The collector does not meet the personal data verification requirements':
       description:
         en: The collector does not meet the personal data verification requirements.
-        es: El vendedor no realizó las validaciones de kyc.
-        pt: none.
-  - '403':
+        es: El vendedor no realizó las validaciones de KYC.
+        pt: O vendedor não realizou as validações KYC.
+  - 'The caller is not authorized to access this resource':
       description:
         en: The caller is not authorized to access this resource.
         es: Se esta usando un preapproval que no es propio de ese vendedor.
-        pt: none.
-  - '403':
+        pt: Uma pré-aprovação está sendo usada e não pertence a esse vendedor.
+  - 'AM_VAL_01 Unauthorized seller for this feature':
       description:
-        en: AM_VAL_01 Unauthorized seller for this feature..
-        es: El collector debe estar en whitelist para usar el medio de pago account money.
-        pt: none.
+        en: AM_VAL_01 Unauthorized seller for this feature (account money) .
+        es: El collector debe estar en whitelist para usar el medio de pago dinero en cuenta.
+        pt: O cobrador deve estar na whitelist para utilizar o meio de pagamento dinheiro na conta.
 - 404 NOT_FOUND:
-  - '404':
+  - 'The preapproval with id ${preapproval id} does not exist':
       description:
         en: The preapproval with id ${preapproval id} does not exist.
-        es: La suscroipción con id ${id} no existe.
-        pt: none.
-  - '404':
+        es: La suscripción con id ${id} no existe.
+        pt: A assinatura com id $ {id} não existe.
+  - 'Card token service not found':
       description:
         en: Card token service not found.
-        es: Use un card token existente..
-        pt: none.
+        es: Se esta usando un card token que no existe.
+        pt: Você está usando um token de cartão que não existe.
