@@ -129,7 +129,7 @@ curl -X GET \
 curl -X POST \
         -H "content-type: application/json" \
         -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-        "https://api.mercadopago.com/v1/payments/:id/refunds?"
+        "https://api.mercadopago.com/v1/payments/:id/refunds"
 ```
 
 #### Devolución parcial

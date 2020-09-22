@@ -674,8 +674,6 @@ System.out.println(connection.getInputStream());
 import requests
 
 headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 

@@ -212,7 +212,7 @@ Para identificar si se trata de un pago a un proveedor ("supply") o un pago de s
 A continuación se puede ver un ejemplo de la creación del pago de un proveedor:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments\
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
