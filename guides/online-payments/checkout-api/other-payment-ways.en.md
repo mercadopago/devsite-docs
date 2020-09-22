@@ -595,7 +595,7 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments \
+  'https://api.mercadopago.com/v1/payments' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
@@ -878,7 +878,7 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments \
+  'https://api.mercadopago.com/v1/payments' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
@@ -1165,7 +1165,7 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments \
+  'https://api.mercadopago.com/v1/payments' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \   
   -d '{
@@ -1999,7 +1999,7 @@ payment.Save();
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments \
+  'https://api.mercadopago.com/v1/payments' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
