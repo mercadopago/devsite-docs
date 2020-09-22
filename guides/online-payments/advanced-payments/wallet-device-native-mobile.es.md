@@ -9,7 +9,6 @@ El integrador debe recolectar información del fingerprint y enviarla a la API d
 #### Request
 ```curl
 curl -X POST \
-    -H 'Authorization: Bearer ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/device_sessions/mobile_device?public_key=APP_PUBLIC_KEY' \
     -d '{
           "section": "my_marketplace_checkout",

@@ -30,7 +30,6 @@ You can get the document types accepted as follows:
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/identification_types?public_key=PUBLIC_KEY'
 ```
 ]]]

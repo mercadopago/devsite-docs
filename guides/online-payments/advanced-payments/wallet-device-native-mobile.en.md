@@ -9,7 +9,6 @@ Integrador must gather fingerprint information and send it to `DeviceSession` AP
 #### Request
 ```curl
 curl -X POST \
-    -H 'Authorization: Bearer ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/device_sessions/mobile_device?public_key=APP_PUBLIC_KEY' \
     -d '{
           "section": "my_marketplace_checkout",
