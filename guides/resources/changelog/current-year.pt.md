@@ -4,9 +4,9 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Setembro 2020
+## Outubro 2020
 
-### 28 de Setembro
+### 1 de Outubro
 
 > CHANGELOG
 >
@@ -21,6 +21,8 @@ As assinaturas do Mercado Pago permitem o recebimento de pagamentos recorrentes,
 [Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/subscriptions/)
 
 ---
+
+## Setembro 2020
 
 ### 3 de setembro
 

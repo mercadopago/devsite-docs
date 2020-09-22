@@ -33,6 +33,7 @@ Para poder encontrarlas, ve la sección de <a href="https://www.mercadopago[FAKE
 
 >¿Tienes dudas sobre credenciales? Puedes consultar nuestras <a href="https://www.mercadopago[FAKER][URL][DOMAIN]//" target="_blank">preguntas frecuentes</a>.
 
+
 ### Usa nuestras librerías oficiales
 
 Intégrate con nuestra <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">SDK Javascript de Mercado Pago</a>  que te permite crear un token de pago y enviar los datos de las tarjetas a tu backend de forma segura. 
@@ -50,9 +51,9 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 
 
 [[[
-```curl -X POST \
+```curl curl -X POST \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer APP_ACCESS_TOKEN" \
+-H "Authorization: Bearer ENV_ACCESS_TOKEN" \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
@@ -66,27 +67,20 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
     "nickname": "TT123456",
     "password": "qatest123456",
     "site_status": "active",
-    "email": "test_user@testuser.com"
+    "email": "test_user_XXXX@testuser.com"
 }
 ```
 
->WARNING 
-> 
+>WARNING
+>
 >Importante
-> 
+>
 > * Tanto el comprador como el vendedor deben ser usuarios de prueba.
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
 > * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
 > * Para hacer pagos de prueba, te recomendamos usar montos bajos.
 > * Los montos deben respetar los valores mínimos y máximos para cada medio de pago. 
 
-#### Tarjetas de prueba
-
-Tarjeta |   Número  | Código de seguridad   |   Fecha de vencimiento
------------- 	 |	--------    |	--------    |	--------
-Mastercard       |  5031 7557 3453 0604 |   123 | 11/25            
-Visa             |  4509 9535 6623 3704 |   123 | 11/25   
-American Express |  3711 803032 57522   |   1234| 11/25   
 
 
 ------------
