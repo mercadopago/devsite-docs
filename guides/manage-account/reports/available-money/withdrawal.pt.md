@@ -159,7 +159,7 @@ var dataString = '{
     }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/bank_report/config",
+    url: 'https://api.mercadopago.com/v1/account/bank_report/config',
     method: 'PUT',
     headers: headers,
     body: dataString
