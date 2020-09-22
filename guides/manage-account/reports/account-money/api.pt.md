@@ -627,8 +627,6 @@ headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN' 
 }
 
-params = { 'access_token': 'ENV_ACCESS_TOKEN' }
-
 response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/list', headers=headers)
 ```
 ```node
@@ -772,7 +770,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/account/settlement_report/schedule
+    'https://api.mercadopago.com/v1/account/settlement_report/schedule'
 ```
 ```php
 <?php

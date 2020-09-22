@@ -256,7 +256,8 @@ https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 ```bash
 curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds -d '{ "amount": 10.50 }'
+https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
+-d '{ "amount": 10.50 }'
 ```
 
 ## Testes
