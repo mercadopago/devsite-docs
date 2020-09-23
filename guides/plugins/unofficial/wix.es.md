@@ -26,7 +26,6 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 1. En la sección de configuraciones del panel de control, ingresa en “Pagos”.
 1. Haz clic en “Agregar medio de pago”
 1. Por último, en la lista de medios pago, selecciona a Mercado Pago y haz clic en “Agregar”.
-
 <p>&nbsp;</p>
     ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
 <p>&nbsp;</p>
