@@ -55,7 +55,6 @@ Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pas
 1. Ingresa a tu cuenta de Mercado Pago y ve a “Tu negocio”.
 1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
-
 <p>&nbsp;</p>
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
