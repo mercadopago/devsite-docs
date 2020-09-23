@@ -22,9 +22,9 @@ Por ejemplo, puedes buscar todas las suscripciones pausadas de un cliente:
 
 Si quieres modificar una tarjeta o el monto de una suscripción ya creada, tienes que volver a enviar los campos con los datos actualizados.
 
-Para __modificar la tarjeta__, debes indicar el nuevo token en el atributo `_card_token_id_`. Y para __actualizar el monto__, envía el nuevo monto a través del `_auto_recurring.transaction_amount_` y específica nuevamente el `_auto_recurring.currency_id_`.
+Para __modificar la tarjeta__, debes indicar el nuevo token en el atributo `card_token_id`. Y para __actualizar el monto__, envía el nuevo monto a través del `auto_recurring.transaction_amount` y específica nuevamente el `auto_recurring.currency_id`.
 
-Con el `_application_id_` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
+Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
 [[[
 ```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \

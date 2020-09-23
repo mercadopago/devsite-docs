@@ -53,7 +53,7 @@ Utiliza la  <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/daccount/creden
 
 Pruebas con tarjeta de crédito
 
-1. Accede a la suscripción y realiza el pago con tu usuario de prueba pagador.
+1. Accede a la suscripción que creaste y quieras revisar.
 1. Completa los datos de una **tarjeta de prueba**.
 1. Ingresa los datos de tu usuario de prueba comprador.
 1. Confirma la compra, ¡y listo!

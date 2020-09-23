@@ -13,7 +13,7 @@ Hay dos formas de integrar suscripciones:
 > 
 > Conceptos claves
 > 
-> ¿Tienes dudas sobre qué es un plan u otro concepto? Ten a mano los <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">conceptos claves</a> para revisarlos cuando los necesites.
+> ¿Tienes dudas sobre qué es un plan u otro concepto? Ten a mano los <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction" target="_blank">conceptos claves</a> para revisarlos cuando los necesites.
 
 
 ## Suscripciones con un plan asociado

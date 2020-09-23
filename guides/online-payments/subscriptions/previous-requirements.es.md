@@ -31,7 +31,7 @@ Las credenciales son las claves que te proporcionamos para que puedas configurar
 
 Para poder encontrarlas, ve la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials/" target="_blank">Credenciales</a>.
 
->¿Tienes dudas sobre credenciales? Puedes consultar nuestras <a href="https://www.mercadopago[FAKER][URL][DOMAIN]//" target="_blank">preguntas frecuentes</a>.
+>¿Tienes dudas sobre credenciales? Puedes consultar nuestras <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/" target="_blank">preguntas frecuentes</a>.
 
 
 ### Usa nuestras librerías oficiales
@@ -44,8 +44,6 @@ Intégrate con nuestra <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/deve
 Comienza a familiarizarte con la API o prueba tu integración, utilizando usuarios de prueba.
 
 #### Crear usuarios de prueba
-
-Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**: un comprador y un vendedor.
 
 Ejecuta el siguiente curl para generar un usuario de prueba:
 
@@ -79,7 +77,7 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
 > * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
 > * Para hacer pagos de prueba, te recomendamos usar montos bajos.
-> * Los montos deben respetar los valores mínimos y máximos para cada medio de pago. 
+> * Los montos deben respetar los <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/monto-minimo-maximo-medios-de-pago_620/" target="_blank">valores mínimos y máximos</a> para cada medio de pago. 
 
 
 
