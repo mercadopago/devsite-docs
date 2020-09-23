@@ -174,8 +174,7 @@ Para crear una suscripción con estado authorized, se deben enviar los datos de 
     "transaction_amount": 1100,
     "frequency": 1,
     "frequency_type": "months",
-    "end_date": "2022-07-20T11:59:52.581-04:00",
-   
+    "end_date": "2022-07-20T11:59:52.581-04:00"
   },
   "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
@@ -235,8 +234,7 @@ Para poder adherirse, la carga de los datos de la tarjeta se debe realizar con n
     "transaction_amount": 1100,
     "frequency": 1,
     "frequency_type": "months",
-    "end_date": "2022-07-20T11:59:52.581-04:00",
-   
+    "end_date": "2022-07-20T11:59:52.581-04:00"
   },
   "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
