@@ -25,7 +25,7 @@ Para comenzar debes:
 
 ## 1. Cómo crear tu aplicación
 
-[Crea tu aplicación](https://applications.mercadopago.com/), marcando la opción **MP Connect / Marketplace mode** y los **scopes** `read`, `write` y `offline_access`.
+[Crea tu aplicación](https://www.mercadopago.com/developers/panel/applications), marcando la opción **MP Connect / Marketplace mode** y los **scopes** `read`, `write` y `offline_access`.
 
 También debes completar una **Redirect URI** donde serán redireccionados los vendedores para poder ser vinculados correctamente.
 

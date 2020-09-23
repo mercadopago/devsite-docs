@@ -16,7 +16,7 @@ The account must be created from the Mercado Pago website in the country where y
 
 ### Create an application
 
-The application will be used to request access permits to payers. The application must be created by accessing `https://applications.mercadopago.com/` and completing the requested information. In the `Redirect URI` field, you must enter the address to which users will be redirected when the wallet usage authorization step is completed. Once the application is created, the `APP_ID` value will be obtained, which will be necessary for the following steps.
+The application will be used to request access permits to payers. The application must be created by accessing `https://www.mercadopago.com/developers/panel/applications` and completing the requested information. In the `Redirect URI` field, you must enter the address to which users will be redirected when the wallet usage authorization step is completed. Once the application is created, the `APP_ID` value will be obtained, which will be necessary for the following steps.
 
 ### Enable your application to receive payments in Wallet Connect mode 
 

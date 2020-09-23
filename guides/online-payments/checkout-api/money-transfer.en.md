@@ -10,7 +10,7 @@ From Mercado Pago, we provide the necessary services to be able to send money im
 
 ## Create an application
 
-To create an application you must enter with your Mercado Pago account at: [https://applications.mercadopago.com/](https://applications.mercadopago.com/). To operate with the money transfer API, the application must be enabled for this purpose. These permits are assigned from Mercado Pago, therefore you should send the obtained APP ID to your commercial advisor in order to make the corresponding configuration.
+To create an application you must enter with your Mercado Pago account at: [https://www.mercadopago.com/developers/panel/applications](https://www.mercadopago.com/developers/panel/applications). To operate with the money transfer API, the application must be enabled for this purpose. These permits are assigned from Mercado Pago, therefore you should send the obtained APP ID to your commercial advisor in order to make the corresponding configuration.
 
 > WARNING
 >

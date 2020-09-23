@@ -23,7 +23,7 @@ To begin, you need to:
 
 ## 1. How to create your application
 
-Create your application by accessing [this link](https://applications.mercadopago.com/), checking the option **MP Connect / Marketplace Mode** and the scopes `read`, `write` and `offline_access`.
+Create your application by accessing [this link](https://www.mercadopago.com/developers/panel/applications), checking the option **MP Connect / Marketplace Mode** and the scopes `read`, `write` and `offline_access`.
 
 You must also complete a **Redirect URI** where the sellers will be redirected in order to be linked correctly.
 

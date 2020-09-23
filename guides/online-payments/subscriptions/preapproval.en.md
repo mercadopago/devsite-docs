@@ -29,7 +29,7 @@
  
  ## Create an aplication
  
- To create an application you have to enter with your Mercado Pago account at: [https://applications.mercadopago.com/](https://applications.mercadopago.com/) To be able to operate payments without CVP, the application must be enabled for that purpose. These permits are assigned from Mercado Pago, so you must send us the APP ID obtained to make the corresponding configuration.
+ To create an application you have to enter with your Mercado Pago account at: [https://www.mercadopago.com/developers/panel/applications](https://www.mercadopago.com/developers/panel/applications) To be able to operate payments without CVP, the application must be enabled for that purpose. These permits are assigned from Mercado Pago, so you must send us the APP ID obtained to make the corresponding configuration.
  
  ## Charge the first payment
  

@@ -16,7 +16,7 @@ A conta deve ser criada no site do Mercado Pago no país em que você deseja rec
 
 ### Criar uma aplicação
 
-A aplicação será utilizada para solicitar permissões de acesso aos payers. A aplicação deve ser criada acessando `https://applications.mercadopago.com/` e completando as informações solicitadas. No campo `Redirect URI`, você deve inserir o endereço para o qual os usuários serão redirecionados quando a etapa de autorização de uso da carteira for concluída. Uma vez que o aplicativo é criado, o valor de `APP_ID` será obtido, o que será necessário para as etapas a seguir.
+A aplicação será utilizada para solicitar permissões de acesso aos payers. A aplicação deve ser criada acessando `https://www.mercadopago.com/developers/panel/applications` e completando as informações solicitadas. No campo `Redirect URI`, você deve inserir o endereço para o qual os usuários serão redirecionados quando a etapa de autorização de uso da carteira for concluída. Uma vez que o aplicativo é criado, o valor de `APP_ID` será obtido, o que será necessário para as etapas a seguir.
 
 ### Ativar sua aplicação para que receba pagamentos na modalidade Wallet Connect 
 

@@ -29,7 +29,7 @@ Con los pagos sin cvv, se podrán realizar cobros recurrentes con Mercado Pago t
 
 ## Crea una aplicación
 
-Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: [https://applications.mercadopago.com/](https://applications.mercadopago.com/), para poder operar pagos sin cvv la aplicación deberá ser habilitada para tal fin. Estos permisos son asignados desde Mercado Pago, por lo que deberás enviarnos el APP ID obtenido para poder realizar la configuración correspondiente.
+Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: [https://www.mercadopago.com/developers/panel/applications](https://www.mercadopago.com/developers/panel/applications), para poder operar pagos sin cvv la aplicación deberá ser habilitada para tal fin. Estos permisos son asignados desde Mercado Pago, por lo que deberás enviarnos el APP ID obtenido para poder realizar la configuración correspondiente.
 
 ## Cobrá el primer pago
 

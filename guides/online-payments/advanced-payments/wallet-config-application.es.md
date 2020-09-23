@@ -16,7 +16,7 @@ La cuenta debe crearse desde el sitio de Mercado Pago del país donde se desean 
 
 ### Crear una aplicación
 
-La aplicación será utilizada para solicitar los permisos de acceso a los payers. La aplicación debe crearse accediendo a `https://applications.mercadopago.com/` y completando la información solicitada. En el campo `Redirect URI`, se debe ingresar la dirección a la cual los usuarios serán redirigidos cuando se complete el paso de autorización de uso de billetera. Una vez creada la aplicación se obtendrá el valor de `APP_ID`, que será necesario para los siguientes pasos.
+La aplicación será utilizada para solicitar los permisos de acceso a los payers. La aplicación debe crearse accediendo a `https://www.mercadopago.com/developers/panel/applications` y completando la información solicitada. En el campo `Redirect URI`, se debe ingresar la dirección a la cual los usuarios serán redirigidos cuando se complete el paso de autorización de uso de billetera. Una vez creada la aplicación se obtendrá el valor de `APP_ID`, que será necesario para los siguientes pasos.
 
 ### Habilitar su aplicación para que reciba pagos en modalidad Wallet Connect 
 

@@ -35,8 +35,8 @@ You must create an account from the Mercado Pago website in the country where yo
 
 The application will be used to upload the merchant numbers, agreements and payment methods and, subsequently, perform the integration with the API. You must create an application by accessing the Mercado Pago applications page of the country corresponding to your account and completing the requested information:
 
-* [Argentina](https://applications.mercadopago.com.ar)
-* [Colombia](https://applications.mercadopago.com.co)
+* [Argentina](https://www.mercadopago.com.ar/developers/panel/applications)
+* [Colombia](https://www.mercadopago.com.co/developers/panel/applications)
 
 Once the application is created, you will get the value of APP_ID, which will be necessary for the next steps.
 

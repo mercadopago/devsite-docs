@@ -35,8 +35,8 @@ Você deve criar uma conta no website do Mercado Pago do país onde desejar rece
 
 A aplicação será utilizada para poder configurar os números de comércio, acordos e meios de pagamento e, depois, realizar a integração com a API. Deverá criar uma aplicação acessando a página de aplicações do Mercado Pago do país correspondente à sua conta e preenchendo as informações requisitadas:
 
-* [Argentina](https://applications.mercadopago.com.ar)
-* [Colombia](https://applications.mercadopago.com.co)
+* [Argentina](https://www.mercadopago.com.ar/developers/panel/applications)
+* [Colombia](https://www.mercadopago.com.co/developers/panel/applications)
 
 Uma vez criada a aplicação, será obtido o valor de APP_ID, que será necessário para os passos seguintes.
 
