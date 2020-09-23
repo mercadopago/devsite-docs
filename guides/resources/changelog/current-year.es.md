@@ -6,6 +6,22 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Septiembre 2020
 
+
+### 25 de septiembre
+
+> CHANGELOG
+>
+> Envío de Access Token por API
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: MERCADO PAGO
+
+A partir de ahora, deberás dejar de enviar tu Access Token por URL al consumir nuestras APIs y comenzar a sumarlo en los headers de la solicitud para mayor seguridad. Por el momento, ambas formas son válidas pero te recomendamos que comiences a usar la nueva. Si usas nuestras SDKs oficiales solo tienes que mantenerla actualizada a la última versión.
+
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
+
+
 ### 21 de septiembre
 
 > CHANGELOG
@@ -25,6 +41,7 @@ Lanzamos la nueva versión 4.4.0 para WooCommerce.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.4.0).
+
 
 ### 17 de septiembre
 
