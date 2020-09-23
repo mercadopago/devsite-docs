@@ -10,7 +10,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Envío de Access Token por API
+> Envio de Access Token por API
 >
 > NEWS: NOVIDADES
 >
