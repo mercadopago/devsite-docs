@@ -26,6 +26,7 @@ Go to “Payment methods” in the section Modules from the admin panel of your 
 1. In the Settings section of the control panel, go to "Payments".
 1. Click on “Add method of payment”
 1. Finally, in the list of payment methods, select Mercado Pago and click on “Add”
+
 <p>&nbsp;</p>
     ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
 <p>&nbsp;</p>
@@ -44,6 +45,7 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 1. Click on “Connect an existing account”
 1. Complete the fields Client ID and Client Secret with the [production credentials]([FAKER][CREDENTIALS][URL]) of your Mercado Pago account.
 1. Finally, click on “Connect my account”.
+
 <p>&nbsp;</p>
     ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
@@ -55,6 +57,7 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 1. Log in your Mercado Libre account and see "Your business".
 1. Go to "Settings" option, then to "Offering interest free installments" and click on "Activate".
 1. Choose "How many do you want to offer?" and push "Activate" button to confirm changes.
+
 <p>&nbsp;</p>
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>

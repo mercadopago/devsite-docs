@@ -26,6 +26,7 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 1. En la sección de configuraciones del panel de control, ingresa en “Pagos”.
 1. Haz clic en “Agregar medio de pago”
 1. Por último, en la lista de medios pago, selecciona a Mercado Pago y haz clic en “Agregar”.
+
 <p>&nbsp;</p>
     ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
 <p>&nbsp;</p>
@@ -44,6 +45,7 @@ Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pas
 1. Haz clic en “Conectar una cuenta existente”.
 1. Completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
 1. Por último, haz clic en “Conectar mi cuenta”.
+
 <p>&nbsp;</p>
     ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
@@ -55,6 +57,7 @@ Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pas
 1. Ingresa a tu cuenta de Mercado Pago y ve a “Tu negocio”.
 1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
+
 <p>&nbsp;</p>
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
