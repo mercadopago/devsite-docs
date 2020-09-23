@@ -1,7 +1,7 @@
 
 # Actualización de suscripciones
 
-Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el `_preapproval_id_` que retorna luego de la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">creación</a>. 
+Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el `preapproval_id` que retorna luego de la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">creación</a>. 
 
 ## Búsqueda de una suscripción
 
@@ -45,9 +45,9 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 
 ## Cancelar o pausar
 
-Para __cancelar una suscripción__, solo debes especificar el valor `_cancelled_` en `_status_`. Esta acción finaliza la suscripción y hace que no se pueda reactivar.
+Para __cancelar una suscripción__, solo debes especificar el valor `cancelled` en `status`. Esta acción finaliza la suscripción y hace que no se pueda reactivar.
 
-Y para __pausar una suscripción__, tienes que indicar `_paused_` en `_status_`. Puedes volver a activarla cuando quieras. 
+Y para __pausar una suscripción__, tienes que indicar `paused` en `status`. Puedes volver a activarla cuando quieras. 
 
 
 [[[
@@ -68,9 +68,9 @@ Si quieres reactivar o extender el tiempo de una suscripción que tenía determi
 
 Por ejemplo, en el caso de querer cobrar todas las cuotas de una duración anual con una frecuencia mensual que fue pausada a los 6 meses por un mes, debes agregarle un mes más el tiempo de vida.
 
-Para hacerlo, actualiza el tiempo en el campo `_auto_recurring.end_date_` y envía el valor `_authorized_` en `_status_`.
+Para hacerlo, actualiza el tiempo en el campo `auto_recurring.end_date` y envía el valor `authorized` en `status`.
 
-Con el `_application_id_` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
+Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
 
 [[[
@@ -89,9 +89,9 @@ Con el `_application_id_` de la suscripción que quieras actualizar, realiza la 
 
 ### Activar suscripción sin tiempo de fin
 
-Para reactivar una suscripción, envía el valor `_authorized_` en `_status_`. Esto reactivará las cuotas según la recurrencia a partir de la fecha en la que se realizó el cambio de estado.
+Para reactivar una suscripción, envía el valor `authorized` en `status`. Esto reactivará las cuotas según la recurrencia a partir de la fecha en la que se realizó el cambio de estado.
 
-Con el `_application_id_` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
+Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
 [[[
 ```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
