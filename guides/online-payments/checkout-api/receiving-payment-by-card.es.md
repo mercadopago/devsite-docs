@@ -478,7 +478,8 @@ Puedes encontrar el estado del pago en el valor _status_.
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/payments?access_token=YOUR_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
     -d '{
           "transaction_amount": [FAKER][NUMBER][BETWEEN][100, 200],
           "token": "ff8080814c11e237014c1ff593b57b4d",

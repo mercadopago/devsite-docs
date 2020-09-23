@@ -70,7 +70,8 @@ Utilize o *site_id* para indicar o país de onde quer realizar os testes.
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=ENV_ACCESS_TOKEN" \
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+"https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 ]]]

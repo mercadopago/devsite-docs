@@ -22,6 +22,7 @@ curl -X POST \
      -H 'X-Idempotency-Key: faDF8323asd298' \
      -H 'Accept: application/json' \
      -H 'Content-Type: application/json' \
-     'https://api.mercadopago.com/v1/advanced_payments?access_token=MKT_ACCESS_TOKEN' \
+     -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+     'https://api.mercadopago.com/v1/advanced_payments' \
      -d '{...}'
 ```

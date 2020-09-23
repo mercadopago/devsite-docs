@@ -24,7 +24,8 @@ To check it, use your [application’s credentials]([FAKER][CREDENTIALS][URL]):
 
 ```curl
 curl -H "Accept: application/json" \
-'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_85556797@testuser.com&access_token=ACCESS_TOKEN' \
+ -H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_85556797@testuser.com' \
 ```
 
 - The `transaction_amount` is the total payment amount.
@@ -53,8 +54,10 @@ curl -H "Accept: application/json" \
 To receive a payment with a campaign that applies to all your buyers, you must add the `campaign_id` and `coupon_amount` fields:
 
 ```curl
-curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
-https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN \
+curl -X POST -H 'accept: application/json' 
+-H 'content-type: application/json' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments \
 -d '{
     "transaction_amount": 299.99,
     "description": "Title of what you are paying for",
@@ -103,7 +106,9 @@ Add an additional field on the payment form to capture the coupon code entered b
 To check it, use your [application’s credentials]([FAKER][CREDENTIALS][URL]):
 
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP&access_token=ACCESS_TOKEN'
+curl -X GET \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/discount_campaigns?transaction_amount=299.99&payer_email=test_user_99525168@testuser.com&coupon_code=TESTMP'
 ```
 
 - The `coupon_code` is the code entered by the buyer. It will be used when processing the payment in case the buyer has the discount.
@@ -146,8 +151,11 @@ At this point, you can indicate that the coupon is invalid or is no longer avail
 To receive a payment with a discount coupon you must add the `coupon_code`:
 
 ```curl
-curl -X POST -H 'accept: application/json' -H 'content-type: application/json' \
-https://api.mercadolibre.com/v1/payments?access_token=ACCESS_TOKEN \
+curl -X POST \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadolibre.com/v1/payments \
 -d '{
     "transaction_amount": 299.99,
     "description": "Title of what you are paying for",

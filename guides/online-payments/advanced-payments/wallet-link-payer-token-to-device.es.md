@@ -15,7 +15,8 @@ Se debe recolectar información (fingerprint) del dispositivo mobile utilizado e
 #### Request
 ```curl
 curl -X POST \
-     'https://api.mercadopago.com/v1/device_sessions/login_mobile_device?access_token=PAYER_ACCESS_TOKEN' \
+     -H 'Authorization: Bearer PAYER_ACCESS_TOKEN' \
+     'https://api.mercadopago.com/v1/device_sessions/login_mobile_device' \
      -d '{
            "section": "my_marketplace_checkout_login",
            "fingerprint": {

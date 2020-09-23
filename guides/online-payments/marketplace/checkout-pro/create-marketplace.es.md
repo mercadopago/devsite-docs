@@ -153,7 +153,8 @@ Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombr
 curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
-'https://api.mercadolibre.com/checkout/preferences?access_token=SELLER_AT' \
+-H 'Authorization: Bearer SELLER_AT' \
+'https://api.mercadolibre.com/checkout/preferences' \
 -d '{
     "items": [
         {

@@ -58,6 +58,7 @@ You must capture `id` value from the response in order to send it into `X-Device
 ```curl
 curl -X POST \
     -H 'X-Device-Session-Id: AB5A1138729AF430C016231741AA3' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```

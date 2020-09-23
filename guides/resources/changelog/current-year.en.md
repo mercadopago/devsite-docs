@@ -6,6 +6,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## September 2020
 
+
 ### September 25th
 
 > CHANGELOG
@@ -19,6 +20,27 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 From now on, you must start adding your Access Token to the request headers instead of sending by URL when consuming our APIs in order to guarantee the security of your token. For now, both forms are valid but we recommend using the new one. If you use our official SDKs you just have to make sure you are using the latest version.
 
 You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+
+### September 21th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.4.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.4.0) for further details regarding this release.
+
 
 ### September 17th
 
@@ -34,6 +56,25 @@ We update our data protection protocols to meet the highest security standards. 
 
 You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource/).
 
+### September 10th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.3.1 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.3.1) for further details regarding this release.
 
 ### September 3rd
 
@@ -52,6 +93,26 @@ In order to optimize your sales, we have added a new attribute that will allow y
 ---
 
 ## August 2020
+
+### August 31th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.3.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.3.0) for further details regarding this release.
 
 ### August 27th
 
@@ -121,6 +182,26 @@ Are you going to integrate Mercado Pago for another account? Now you can request
 ---
 
 ## July 2020
+
+### July 27th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.2.2 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.2) for further details regarding this release.
 
 ### July 8th
 
@@ -243,6 +324,25 @@ We have lauched a new version for Payment Link, totally renewed. We have designe
 We have released the new version of Javascript SDK 1.3.0. From now on, it is compatible with Internet Explorer 11 so you can use it in your integrations without problems.
 [Go to Javascript SDK documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks/official/js/)
 
+### May 18th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.2.1 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.1) for further details regarding this release.
 
 ### May 13th
 
@@ -254,7 +354,7 @@ We have released the new version of Javascript SDK 1.3.0. From now on, it is com
 >
 > PRODUCT: WOOCOMMERCE
 
-We have released a new version of WooCommerce.
+We have released the new version v4.2.0 for WooCommerce.
 
 [Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
 
@@ -344,8 +444,8 @@ end_date | 02/01/2020 00:00:00 |  01/01/2020  23:59:59
 Your new parameter will look as follows:
 
 ```
-https://api.mercadolibre.com/account/bank_report/search?access_token={{access_token}}
-	&created_from=schedule
+https://api.mercadolibre.com/account/bank_report/search?
+	created_from=schedule
 	&user_id=290477154
 	&begin_date=2020-01-01T00:00:00Z
 	&end_date=2020-01-01T23:59:59Z
@@ -380,6 +480,26 @@ We have released a new version of Prestashop 1.6 & 1.7. Our Checkout Pro now wor
 
 ## January 2020
 
+### January 10th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.1.1 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.1.1) for further details regarding this release.
+
 ### January 9th
 
 > CHANGELOG
@@ -393,3 +513,23 @@ We have released a new version of Prestashop 1.6 & 1.7. Our Checkout Pro now wor
 If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Checkout Pro.
 
 [Start now measuring the conversion of your ads](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations/).
+
+### January 6th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.1.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.1.0) for further details regarding this release.

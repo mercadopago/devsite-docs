@@ -29,7 +29,8 @@ A continuación vemos un ejemplo de pago en modalidad Gateway con captura direct
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=APPLICATION_TOKEN' \
+    -H 'Authorization: Bearer APPLICATION_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```
 
@@ -150,7 +151,8 @@ A continuación vemos un ejemplo de pago en modalidad Gateway con captura diferi
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=APPLICATION_TOKEN' \
+    -H 'Authorization: Bearer APPLICATION_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```
 
