@@ -1,5 +1,6 @@
 curl -X POST \
-  'https://api.mercadopago.com/v1/customers?access_token=ACCESS_TOKEN_ENV' \ 
+  'https://api.mercadopago.com/v1/customers' \
+  -H 'Authorization: Bearer ACCESS_TOKEN_ENV' \
   -d '{
         "email": "bruno@gmail.com",
         "first_name": "Bruce",

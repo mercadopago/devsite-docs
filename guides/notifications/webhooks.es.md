@@ -83,10 +83,10 @@ Luego de esto, tienes que obtener la información completa del recurso notificad
 
 Tipo         | URL                                                | Documentación
 ------------ | -------------------------------------------------- | --------------------
-payment      | https://api.mercadopago.com/v1/payments/[ID]?access_token=[ACCESS_TOKEN]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
-plan         | https://api.mercadopago.com/v1/plans/[ID]?access_token=[ACCESS_TOKEN]         | -
-subscription | https://api.mercadopago.com/v1/subscriptions/[ID]?access_token=[ACCESS_TOKEN] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]?access_token=[ACCESS_TOKEN]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/invoices/_invoices_id/get/)
+payment      | https://api.mercadopago.com/v1/payments/[ID]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
+plan         | https://api.mercadopago.com/v1/plans/[ID]         | -
+subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | -
+invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/invoices/_invoices_id/get/)
 
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.

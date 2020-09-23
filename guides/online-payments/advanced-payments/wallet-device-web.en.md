@@ -41,6 +41,7 @@ Once ID has been obtained, we need to send it as a header on the API signature.
 ```curl
 curl -X POST \
     -H 'X-Device-Session-Id: 5cf65fc6c5db631a47471bb0' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```

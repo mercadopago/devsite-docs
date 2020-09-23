@@ -1,4 +1,6 @@
 ---
+samples:
+- curl.sh
 use:
 - id
 errors:

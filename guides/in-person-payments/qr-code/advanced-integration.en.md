@@ -33,7 +33,9 @@ If you require a different expiration time, you can send the header `X-Ttl-Store
 If you want to get the order assigned to a POS, you can do it.
 
 ```curl
-curl -X GET https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
+curl -X GET \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
 Obtain more information in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get/).
 

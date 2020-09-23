@@ -16,7 +16,10 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
 
 [[[
 ```curl
-      curl -X POST -H "Content-Type: application/json" -d '{
+      curl -X POST \
+      -H "Content-Type: application/json" \
+      -H 'Authorization: Bearer <<ACCESS_TOKEN>>' \
+      -d '{
           "transaction_amount": 5,
           "card": {
           "card_number": "4509953566233704",
@@ -38,7 +41,7 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
         "payer": {
         "email": "testpayer@test.com"
         }
-      }' https://api.mercadopago.com/v1/secure_payments?access_token=<<ACCESS_TOKEN>>
+      }' https://api.mercadopago.com/v1/secure_payments
 ```
 ]]]
 

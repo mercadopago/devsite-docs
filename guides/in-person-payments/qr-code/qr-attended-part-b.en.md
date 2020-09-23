@@ -29,7 +29,9 @@ We explain how the attended model works:
 
 ```curl
 curl -X PUT \
-https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN -d
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders \
+-d \
 {
     "external_reference": "order-id-1234",
     "title": "Title",
@@ -72,7 +74,9 @@ Once the order is created, it is available to be **scanned and paid**.
 To delete a QR associated order before it’s closed or expires, you can use this following method:
 
 ```curl
-curl -X DELETE https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders?access_token=ACCESS_TOKEN  -d 
+curl -X DELETE \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
 Answer will be `HTTP 204 No Content`.
 

@@ -74,10 +74,11 @@ Para o envio de dinheiro pode-se especificar o receptor do pagamento de duas man
 A seguir um exemplo de criação de pagamento utilizando o email:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,
@@ -97,10 +98,11 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 A seguir um exemplo de criação de pagamento utilizando o ID da conta:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,
@@ -209,10 +211,11 @@ Para identificar se trata-se de um pagamento a um fornecedor ("supply") ou um pa
 A seguir um exemplo de criação de pagamento a um fornecedor:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,
@@ -233,10 +236,11 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 A seguir um exemplo de criação de pagamento de um salário:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,

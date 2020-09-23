@@ -42,8 +42,9 @@ Cuando se realiza el **POST** a /payments se deben agregar los siguientes atribu
 
 ```curl
 curl -X POST \
-"https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN" \
+"https://api.mercadopago.com/v1/payments" \
 -H "Content-Type: application/json"
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 -d "{
   'transaction_amount': '100',
   'installments': 3,
@@ -132,8 +133,9 @@ Se puede customizar por cada pago que servicios (`merchant_services`) se desean 
 
 ```curl
 curl -X POST \
-"https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN" \
+"https://api.mercadopago.com/v1/payments" \
 -H "Content-Type: application/json"
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 -d "{
   'transaction_amount': '100',
   'token': 'ff8080814c11e237014c1ff593b57b4d',
