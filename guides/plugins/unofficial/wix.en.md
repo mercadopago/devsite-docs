@@ -26,7 +26,6 @@ Go to “Payment methods” in the section Modules from the admin panel of your 
 1. In the Settings section of the control panel, go to "Payments".
 1. Click on “Add method of payment”
 1. Finally, in the list of payment methods, select Mercado Pago and click on “Add”
-
 <p>&nbsp;</p>
     ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
 <p>&nbsp;</p>
