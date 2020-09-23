@@ -4,6 +4,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Octubre 2020
+
+### 1 de octubre
+
+> CHANGELOG
+>
+> Envío de Access Token por API
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: MERCADO PAGO
+
+A partir de ahora, deberás dejar de enviar tu Access Token por URL al consumir nuestras APIs y comenzar a sumarlo en los headers de la solicitud para mayor seguridad. Por el momento, ambas formas son válidas pero te recomendamos que comiences a usar la nueva. Si usas nuestras SDKs oficiales solo tienes que mantenerla actualizada a la última versión.
+
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
+
+---
+
 ## Septiembre 2020
 
 ### 17 de septiembre

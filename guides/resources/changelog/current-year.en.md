@@ -4,6 +4,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## October 2020
+
+### October 1st
+
+> CHANGELOG
+>
+> Sending Access Token by API
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+From now on, you must start adding your Access Token to the request headers instead of sending by URL when consuming our APIs in order to guarantee the security of your token. For now, both forms are valid but we recommend to start using the new one. If you use our official SDKs you just have to make sure you are using the latest version.
+
+You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
+
+---
+
 ## September 2020
 
 ### September 17th
