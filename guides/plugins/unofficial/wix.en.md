@@ -44,7 +44,6 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 1. Click on “Connect an existing account”
 1. Complete the fields Client ID and Client Secret with the [production credentials]([FAKER][CREDENTIALS][URL]) of your Mercado Pago account.
 1. Finally, click on “Connect my account”.
-
 <p>&nbsp;</p>
     ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
