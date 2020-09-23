@@ -2,6 +2,7 @@
 
 Integrating Mercado Pago's Checkout API for cards allows you to offer a complete payment option within the site. The entire experience takes place in your store, so customers avoid exiting your site while making a purchase.
 
+Use our [sample projects](#bookmark_sample_projects) for a complete integration. You can adapt them according to your needs.
 
 ## How does it work?
 

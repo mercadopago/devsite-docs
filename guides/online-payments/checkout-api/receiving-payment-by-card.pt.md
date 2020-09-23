@@ -12,6 +12,8 @@ A integração por Checkout Transparente do Mercado Pago para pagamentos com car
 A integração por Checkout API do Mercado Pago para pagamentos com cartões permite que você possa oferecer uma opção de pagamento totalmente no seu site. Toda a experiência acontece na sua loja para que os clientes não tenham que sair no momento de realizar a compra.
 ------------
 
+Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer a integração completa ou para ataptá-los de acordo com o que precisa.
+
 ## Como funciona?
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-pt.png)

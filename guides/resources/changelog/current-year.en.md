@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## September 2020
 
+### September 25th
+
+> CHANGELOG
+>
+> New sample projects
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT API
+
+We added sample projects to get your Checkout API up and running instantly. You can adapt them as needed using our documentation.
+
+[See sample projects](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_sample_projects)
+
 ### September 21th
 
 > CHANGELOG
