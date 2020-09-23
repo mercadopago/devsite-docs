@@ -10,7 +10,7 @@ Desde Mercado Pago, proveemos los servicios necesarios para poder realizar enví
 
 ## Crea una aplicación
 
-Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: [https://www.mercadopago.com/developers/panel/applications](https://www.mercadopago.com/developers/panel/applications). Para poder operar con la API de envío de dinero  la aplicación deberá ser habilitada para tal fin. Estos permisos son asignados desde Mercado Pago, por lo que deberás enviarle a tu asesor comercial el APP ID obtenido para poder realizar la configuración correspondiente.
+Para crear una aplicación tienes que ingresar con tu cuenta de Mercado Pago a: [https://applications.mercadopago.com/](https://applications.mercadopago.com/). Para poder operar con la API de envío de dinero  la aplicación deberá ser habilitada para tal fin. Estos permisos son asignados desde Mercado Pago, por lo que deberás enviarle a tu asesor comercial el APP ID obtenido para poder realizar la configuración correspondiente.
 
 > WARNING
 >
