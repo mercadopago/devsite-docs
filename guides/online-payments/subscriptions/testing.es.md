@@ -55,7 +55,7 @@ Pruebas con tarjeta de crédito
 
 1. Accede a la suscripción que creaste y quieras revisar.
 1. Completa los datos de una **tarjeta de prueba**.
-1. Ingresa los datos de tu usuario de prueba comprador.
+1. Ingresa los datos de tu usuario de prueba pagador.
 1. Confirma la compra, ¡y listo!
 
 ### Tarjetas de prueba
