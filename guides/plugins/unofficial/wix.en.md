@@ -55,7 +55,6 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 1. Log in your Mercado Libre account and see "Your business".
 1. Go to "Settings" option, then to "Offering interest free installments" and click on "Activate".
 1. Choose "How many do you want to offer?" and push "Activate" button to confirm changes.
-
 <p>&nbsp;</p>
     ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
