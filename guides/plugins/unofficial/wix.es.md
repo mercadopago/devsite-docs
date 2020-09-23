@@ -44,7 +44,6 @@ Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pas
 1. Haz clic en “Conectar una cuenta existente”.
 1. Completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
 1. Por último, haz clic en “Conectar mi cuenta”.
-
 <p>&nbsp;</p>
     ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
