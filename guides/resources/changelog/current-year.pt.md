@@ -4,7 +4,9 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Outubro 2020
+## Setembro 2020
+
+### 25 de setembro
 
 > CHANGELOG
 >
@@ -18,9 +20,6 @@ A partir de agora, você deve deixar de enviar seu Access Token por URL ao consu
 
 Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
----
-
-## Setembro 2020
 
 ### 17 de setembro
 
