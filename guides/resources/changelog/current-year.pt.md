@@ -32,6 +32,7 @@ Adicionamos exemplos de integração de pagamento com cartão para download, par
 
 [Ver exemplos para download](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_exemplos_para_download)
 
+<br>
 
 > CHANGELOG
 >
