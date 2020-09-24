@@ -24,7 +24,7 @@ Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 
 1. En la sección de configuraciones del panel de control, ingresa en “Pagos”.
-1. Haz clic en “Agregar medio de pago”
+1. Haz clic en “Agregar medio de pago”.
 1. Por último, en la lista de medios pago, selecciona a Mercado Pago y haz clic en “Agregar”.
 
 <p>&nbsp;</p>
@@ -39,7 +39,7 @@ También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_
 
 ## Activa tu cuenta de Mercado Pago
 
-Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pasos
+Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pasos:
 
 1. En el panel de medios de pago, busca a Mercado Pago y selecciona “Configurar la cuenta para activar”.
 1. Haz clic en “Conectar una cuenta existente”.
