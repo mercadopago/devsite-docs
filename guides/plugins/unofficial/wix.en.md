@@ -24,8 +24,8 @@ To **add Mercado Pago to your store**, follow these steps:
 Go to “Payment methods” in the section Modules from the admin panel of your store.
 
 1. In the Settings section of the control panel, go to "Payments".
-1. Click on “Add method of payment”
-1. Finally, in the list of payment methods, select Mercado Pago and click on “Add”
+1. Click on “Add method of payment”.
+1. Finally, in the list of payment methods, select Mercado Pago and click on “Add”.
 
 <p>&nbsp;</p>
     ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
@@ -41,8 +41,8 @@ You can also [offer interest free installments](#bookmark_set_interest_free_inst
 
 To **set up the activation of your Mercado Pago account**, follow these steps:
 
-1. In the payment methods panel, look for Mercado Pago and select "Set up the account to activate."
-1. Click on “Connect an existing account”
+1. In the payment methods panel, look for Mercado Pago and select "Set up the account to activate".
+1. Click on “Connect an existing account”.
 1. Complete the fields Client ID and Client Secret with the [production credentials]([FAKER][CREDENTIALS][URL]) of your Mercado Pago account.
 1. Finally, click on “Connect my account”.
 
