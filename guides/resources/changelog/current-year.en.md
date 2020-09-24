@@ -11,6 +11,17 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
+> New sample projects
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT API
+
+We added sample projects to get your Checkout API up and running instantly. You can adapt them as needed using our documentation.
+
+[See sample projects](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_sample_projects)
+
+
 > Sending Access Token by API
 >
 > NEWS: NEWS
@@ -20,6 +31,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 From now on, you must start adding your Access Token to the request headers instead of sending by URL when consuming our APIs in order to guarantee the security of your token. For now, both forms are valid but we recommend using the new one. If you use our official SDKs you just have to make sure you are using the latest version.
 
 You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+
 
 ### September 21th
 

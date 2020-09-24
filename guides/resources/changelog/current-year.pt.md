@@ -6,8 +6,32 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2020
 
-
 ### 25 de setembro
+
+----[mlm, mla, mlc, mco, mpe, mlu]----
+> CHANGELOG
+>
+> Novos exemplos para download
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT API
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Novos exemplos para download
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT TRANSPARENTE
+------------
+
+Adicionamos exemplos de integração de pagamento com cartão para download, para você experimentar o Checkout Transparente instantaneamente. Você pode adaptá-los conforme necessário usando a documentação.
+
+[Ver exemplos para download](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_exemplos_para_download)
+
 
 > CHANGELOG
 >

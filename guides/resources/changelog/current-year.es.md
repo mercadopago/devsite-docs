@@ -9,6 +9,31 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ### 25 de septiembre
 
+----[mlm, mla, mlc, mco, mpe, mlu]----
+> CHANGELOG
+>
+> Nuevos proyectos descargables
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT API
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Nuevos proyectos descargables
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT TRANSPARENTE
+------------
+
+Sumamos ejemplos descargables de integración de pagos con tarjeta para que pruebes Checkout API al instante. Puedes adaptarlos como lo necesites usando la documentación.
+
+[Ver ejemplos descargables](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_ejemplos_descargables)
+
+
 > CHANGELOG
 >
 > Envío de Access Token por API
