@@ -32,6 +32,20 @@ Adicionamos exemplos de integração de pagamento com cartão para download, par
 
 [Ver exemplos para download](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_exemplos_para_download)
 
+
+> CHANGELOG
+>
+> Envio de Access Token por API
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+A partir de agora, você deve deixar de enviar seu Access Token por URL ao consumir nossas APIs e começar a adicioná-lo nos headers da solicitação para maior segurança. No momento, ambas as formas são válidas, mas recomendamos que comece a usar a nova. Se usa nossos SDKs oficiais, basta mantê-los atualizados com a versão mais recente.
+
+Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+
+
 ### 21 de setembro
 
 > CHANGELOG
@@ -51,6 +65,7 @@ Lançamos a nova versão 4.4.0 para WooCommerce.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.4.0).
+
 
 ### 17 de setembro
 
