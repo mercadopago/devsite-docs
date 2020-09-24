@@ -28,7 +28,7 @@ Go to “Payment methods” in the section Modules from the admin panel of your 
 1. Finally, in the list of payment methods, select Mercado Pago and click on “Add”.
 
 <p>&nbsp;</p>
-    ![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
+![Setting connect in Wix](/images/wix/wix_connect_configuration_1.gif)
 <p>&nbsp;</p>
 
 ## Set up methods of payment
@@ -47,7 +47,7 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 1. Finally, click on “Connect my account”.
 
 <p>&nbsp;</p>
-    ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
+![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
 
 > Find all the information about your credentials in our [frequently asked questions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/).
@@ -59,7 +59,7 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 1. Choose "How many do you want to offer?" and push "Activate" button to confirm changes.
 
 <p>&nbsp;</p>
-    ![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
+![Payments Installments - Wix](/images/wix/wix_account_installment_3.gif)
 <p>&nbsp;</p>
 
 Ready! You are already offering interest free installments with the configured [financing cost](https://www.mercadopago.com.br/ajuda/_454).
