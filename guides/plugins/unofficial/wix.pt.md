@@ -33,7 +33,7 @@ Para **adicionar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 ## Configure a forma de pagamento
 
-A Wix te permite receber através do **Checkout Pro**, onde o comprador será redirecionado ao Mercado Pago para realizar o pagamento, e voltará para sua loja assim que finalizar esse processo.
+A Wix te permite receber através do Checkout Pro, onde o comprador será redirecionado ao Mercado Pago para realizar o pagamento, e voltará para sua loja assim que finalizar esse processo.
 
 Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_na_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 

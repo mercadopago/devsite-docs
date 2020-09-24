@@ -11,7 +11,7 @@ Wix is a **virtual platform that enables you to receive payments with Mercado Pa
 
 With it, you can offer your clients the possibility of [charging through Mercado Pago website](#bookmark_set_up_methods_of_payment).
 
-## Settings Steps
+## Settings steps
 
 1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) in Mercado Pago if you don't have one yet.
 1. Add Mercado Pago as method of payment in your store.
@@ -50,7 +50,7 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
 
-> Find all the information about your credentials in our [frequently asked questions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/).
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/).
 
 ## Set interest free installments in your Mercado Pago account
 
