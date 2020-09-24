@@ -21,7 +21,10 @@ We added sample projects to get your Checkout API up and running instantly. You 
 
 [See sample projects](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_sample_projects)
 
+<br>
 
+> CHANGELOG
+>
 > Sending Access Token by API
 >
 > NEWS: NEWS
