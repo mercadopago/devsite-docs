@@ -148,7 +148,7 @@ curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer SELLER_AT' \
-'https://api.mercadolibre.com/checkout/preferences' \
+'https://api.mercadopago.com/checkout/preferences' \
 -d '{
     "items": [
         {

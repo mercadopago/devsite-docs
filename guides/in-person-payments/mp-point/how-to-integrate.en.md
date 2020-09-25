@@ -112,7 +112,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 -d '{"amount":100,"description":"Cup","device_name":"device","cc_type":"credit_card"}' \
-'https://mobile.mercadopago.com/point/services/integrations/v1'
+'https://api.mercadopago.com/point/services/integrations/v1'
 ```
 
 The parameters that can be included are: 
@@ -151,7 +151,7 @@ The GET in this API, with the `order_id`, is the one that enables you to get the
 curl -X GET \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://mobile.mercadopago.com/point/services/integrations/v1/:ID'
+'https://api.mercadopago.com/point/services/integrations/v1/:ID'
 ```
 
 If the order status is `OPEN`, it means that it has not yet been paid. If the status is `CLOSED` it means that the order is paid, so you´ll get the `payment_id`with the rest of the information. The response will have the following format.  
@@ -179,7 +179,7 @@ By `device_name`:
 curl -X DELETE \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://mobile.mercadopago.com/point/services/integrations/v1/attempt/device/:DEVICE_NAME'
+'https://api.mercadopago.com/point/services/integrations/v1/attempt/device/:DEVICE_NAME'
 ```
 
 The response will have the following format. 
@@ -198,7 +198,7 @@ Or by `order_id`:
 curl -X DELETE \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://mobile.mercadopago.com/point/services/integrations/v1/:ID'
+'https://api.mercadopago.com/point/services/integrations/v1/:ID'
 ```
 
 **Response status code: 204 OK**
@@ -212,7 +212,7 @@ The GET in this API enables you to get the configured and sincronized devices fo
 curl -X GET \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://mobile.mercadopago.com/point/services/integrations/v1/devices'
+'https://api.mercadopago.com/point/services/integrations/v1/devices'
 ```
 
 If the status of the device is `FREE`, it means that the device can receive a new order. If the status is `BUSY`, it means that the device has an order already assigned to it. The response will have the following format.  
@@ -243,7 +243,7 @@ The DELETE in this API enables you to delete configured and sincronized devices 
 curl -X DELETE \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://mobile.mercadopago.com/point/services/integrations/v1/devices/:DEVICE_NAME'
+'https://api.mercadopago.com/point/services/integrations/v1/devices/:DEVICE_NAME'
 ```
 
 The answer will have the following format. 
@@ -274,7 +274,7 @@ On the other hand, we have an exclusive Point API that has some additional infor
 curl -X GET \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer <access_token>' \
-https://api.mercadolibre.com/point/services/payment/<payment_id>
+https://api.mercadopago.com/point/services/payment/<payment_id>
 ```
 
 The responde of the status will have the following format:
