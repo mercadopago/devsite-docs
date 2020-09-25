@@ -1,3 +1,7 @@
+---
+indexable: false
+---
+
 # Pruebas   
 
 ## Prueba tus suscripciones

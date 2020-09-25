@@ -1,3 +1,6 @@
+---
+indexable: false
+---
 
 # Requisitos previos para comenzar
 

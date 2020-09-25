@@ -10,13 +10,13 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Crie assinaturas para cobrar de maneira recorrente
+> Crie assinaturas para cobrar de forma recorrente
 >
 > NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
 >
 > PRODUCT: ASSINATURAS
 
-As assinaturas do Mercado Pago permitem o recebimento de pagamentos recorrentes, com cartão de crédito e débito. Você pode definir a frequência de pagamento desejada e o tempo que deseja manter a assinatura ativa.   
+As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.   
 
 [Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/subscriptions/)
 

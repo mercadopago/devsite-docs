@@ -1,3 +1,6 @@
+---
+indexable: false
+---
 
 # Actualización de suscripciones
 

@@ -1,3 +1,6 @@
+---
+indexable: false
+---
 
 # Lógica de reintentos de cobro
 
