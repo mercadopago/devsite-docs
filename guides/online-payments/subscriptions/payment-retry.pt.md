@@ -48,7 +48,7 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 ------------
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Integração avançada
 >
@@ -56,7 +56,7 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advenced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > testes
 >

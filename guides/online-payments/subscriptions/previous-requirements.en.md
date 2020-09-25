@@ -1,8 +1,95 @@
-<!-- -->
-> WARNING
+---
+indexable: false
+---
+
+# Prerequisites to get started
+
+## Considerations and restrictions
+
+----[mla]----
+Please note that the minimum amount allowed to create a subscription is $2 and the maximum is $250,000.
+
+------------
+
+----[mlb]----
+Please note that the minimum amount allowed to create a subscription is R$ 0.5 and the maximumm is R$ 50.000.
+
+------------
+
+----[mlm]----
+Please note that the minimum amount allowed to create a subscription is $ 10 and the maximum is R$ 200.000.
+
+------------
+
+## First steps
+
+### Access to the Mercado Pago or Mercado Libre account
+In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
+
+If you don't have one yet, you can <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">create a Mercado Pago account</a> whenever you want.
+
+### Keep your credentials handy
+
+The credentials are the keys that we provide you with so that you can configure your integration. For this case, you will use a public key and a private key.
+
+To find them, go to the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials/" target="_blank">Credentials</a> section.
+
+>Do you have questions about credentials? You can check our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/" target="_blank">Frequently Asked Questions</a>.
+
+
+### Use our official library
+
+Integrate with our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">Mercado Pago SDK Javascript</a> which allows you to create a token with your card details securely and send it to your backend for use in your payments. 
+
+
+### Learn about the test users
+
+Start familiarizing yourself with the API or test your integration, using test users.
+
+#### Create test users
+
+Run the following curl to generate a test user:
+
+
+[[[
+```curl curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ENV_ACCESS_TOKEN" \
+"https://api.mercadopago.com/users/test_user" \
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
+```
+]]]
+
+### Response
+`HTTP Status 200 OK`
+```json
+{
+    "id": 123456,
+    "nickname": "TT123456",
+    "password": "qatest123456",
+    "site_status": "active",
+    "email": "test_user_XXXX@testuser.com"
+}
+```
+
+>WARNING
 >
-> Important
+>Important
 >
-> We're sorry! This page is currently not available in English.
-<br>
-[View documentation in Spanish](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction/)
+> * Both the buyer and the seller must be test users.
+> * You can generate up to 10 test user accounts simultaneously. Therefore, we recommend that you save the e-mail address and password of each one.
+> * Test users expire after 60 days without activity in Mercado Pago.
+> * To make test payments, we recommend using low amounts.
+> * The amounts must respect the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/monto-minimo-maximo-medios-de-pago_620/" target="_blank">minimum and maximum values</a> or each payment method. 
+
+
+
+------------
+### Next steps
+> LEFT_BUTTON_REQUIRED_EN
+>
+> Integrate subscriptions
+>
+> Choose your way to integrate and start receiving recurring payments.
+>
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/integration/)

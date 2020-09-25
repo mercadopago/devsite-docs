@@ -111,7 +111,7 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
 ------------
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Testes
 >
@@ -120,7 +120,7 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
 
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Lógica de novas tentativas de cobrança
 >

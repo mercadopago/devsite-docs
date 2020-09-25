@@ -86,7 +86,7 @@ Execute o curl a seguir para gerar um usuário de teste:
 
 ------------
 ### Próximos passos
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Integre assinaturas
 >

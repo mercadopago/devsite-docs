@@ -32,7 +32,7 @@ Conceito |	Descrição
 
 ------------
 ### Próximos passos
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Requisitos para integrar
 >
