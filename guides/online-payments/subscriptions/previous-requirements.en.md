@@ -42,48 +42,6 @@ To find them, go to the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/acc
 Integrate with our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">Mercado Pago SDK Javascript</a> which allows you to create a token with your card details securely and send it to your backend for use in your payments. 
 
 
-### Learn about the test users
-
-Start familiarizing yourself with the API or test your integration, using test users.
-
-#### Create test users
-
-Run the following curl to generate a test user:
-
-
-[[[
-```curl curl -X POST \
--H "Content-Type: application/json" \
--H "Authorization: Bearer ENV_ACCESS_TOKEN" \
-"https://api.mercadopago.com/users/test_user" \
--d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
-```
-]]]
-
-### Response
-`HTTP Status 200 OK`
-```json
-{
-    "id": 123456,
-    "nickname": "TT123456",
-    "password": "qatest123456",
-    "site_status": "active",
-    "email": "test_user_XXXX@testuser.com"
-}
-```
-
->WARNING
->
->Important
->
-> * Both the buyer and the seller must be test users.
-> * You can generate up to 10 test user accounts simultaneously. Therefore, we recommend that you save the e-mail address and password of each one.
-> * Test users expire after 60 days without activity in Mercado Pago.
-> * To make test payments, we recommend using low amounts.
-> * The amounts must respect the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/monto-minimo-maximo-medios-de-pago_620/" target="_blank">minimum and maximum values</a> or each payment method. 
-
-
-
 ------------
 ### Next steps
 > LEFT_BUTTON_REQUIRED_EN

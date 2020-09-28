@@ -8,6 +8,13 @@ indexable: false
 
 Explicamos como usar nossos cartões e usuários de teste para verificar se suas assinaturas foram criadas corretamente.
 
+> NOTE
+> 
+> Limitações de teste de assinatura
+> 
+> No momento, com usuários experimentais só é possível realizar o fluxo de criação de uma assinatura e você não poderá ver o impacto ou registro da cota, seja através do painel Mercado Pago ou por API.
+
+
 ### Como testar sua integração
 
 **Os usuários de teste permitem testar suas assinaturas** ao gerar fluxos de pagamento com uma cópia exata das suas configurações.

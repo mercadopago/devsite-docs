@@ -46,11 +46,11 @@ With the `application_id` of the subscription you want to update, make the follo
 
 >Note that the token lasts 7 days and can be used only once, so this value should not be saved.
 
-## Cancelar o pausar
+## Cancel or pause
 
-Para __cancelar una suscripción__, solo debes especificar el valor `cancelled` en `status`. Esta acción finaliza la suscripción y hace que no se pueda reactivar.
+To __cancel a subscription__, just specify the `cancelled` value in `status`. This action terminates the subscription and makes it impossible to reactivate it.
 
-Y para __pausar una suscripción__, tienes que indicar `paused` en `status`. Puedes volver a activarla cuando quieras. 
+And to __pause a subscription__, you must indicate `paused` in the `status`. You can reactivate it whenever you want.  
 
 
 [[[
@@ -63,17 +63,17 @@ Y para __pausar una suscripción__, tienes que indicar `paused` en `status`. Pue
 ```
 ]]]
 
-## Reactivar una suscripción pausada
+## Reactivate a paused subscription
 
-### Activar suscripción con tiempo de fin
+### Activate subscription with end time
 
-Si quieres reactivar o extender el tiempo de una suscripción que tenía determinado un tiempo específico, tienes que agregar el tiempo que estuvo pausada o que quieras sumar para poder cobrar la totalidad de cuotas estimadas.  
+If you want to reactivate or extend the time of a subscription that had a specific time length determined, you must add the time that was paused or that you want to add in order to be able to collect the total estimated installments. 
 
-Por ejemplo, en el caso de querer cobrar todas las cuotas de una duración anual con una frecuencia mensual que fue pausada a los 6 meses por un mes, debes agregarle un mes más el tiempo de vida.
+For example, in the case of wanting to collect all the installments of an annual duration with a monthly frequency that was paused at 6 months for one month, you should add one month more the lifetime.
 
-Para hacerlo, actualiza el tiempo en el campo `auto_recurring.end_date` y envía el valor `authorized` en `status`.
+To do so, update the time in the `auto_recurring.end_date` field and send the value `authorized` in `status`.
 
-Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
+With the subscription `application_id` you want to update, make the following call: 
 
 
 [[[
@@ -90,11 +90,11 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 ```
 ]]]
 
-### Activar suscripción sin tiempo de fin
+### Activate subscription without end time
 
-Para reactivar una suscripción, envía el valor `authorized` en `status`. Esto reactivará las cuotas según la recurrencia a partir de la fecha en la que se realizó el cambio de estado.
+To reactivate a subscription, send the value `authorized` in `status`. This will reactivate the installments according to their recurrence from the date the status change was made.
 
-Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
+With the Subscription `application_id` you want to update, make the following call: 
 
 [[[
 ```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
@@ -107,25 +107,25 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 ```
 ]]]
 
->Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API</a>.
+>To get more information about the available fields, view the<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">API references.</a>.
 
 
 ------------
-### Próximos pasos
+### Next steps
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_EN
 >
-> Pruebas
+> Tests
 >
-> Revisa que tus suscripciones creadas estén bien configuradas con los usuarios de prueba. 
+> Check that your created subscriptions are properly configured with the test users.  
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
 
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Lógica de reintentos de cobros
+> Logic of collection retries
 >
-> Por si tienes inconvenientes, te explicamos la lógica de reintentos de cobros.
+> In case you have problems, we explain the logic of retrying collections.
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
