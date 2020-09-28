@@ -11,6 +11,27 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.2.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.2.0) for further details regarding this release.
+
+
+### September 25th
+
+> CHANGELOG
+>
 > New sample projects
 >
 > FEATURE: FEATURE

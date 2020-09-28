@@ -9,6 +9,27 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ### 25 de septiembre
 
+> CHANGELOG
+>
+> Nueva versión del plugin para PrestaShop
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: PRESTASHOP
+
+Lanzamos la nueva versión 4.2.0 para PrestaShop.
+
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.2.0).
+
+
+### 25 de septiembre
+
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >

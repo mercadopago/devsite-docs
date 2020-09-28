@@ -61,37 +61,7 @@ Then execute the steps of a new installation to update your page with the latest
 
 > Keep the module always updated in the latest version.
 
-## Version 4.1.0 - All you need to know
-
-These are the technical improvements you will find in our latest version:
-
-**Break Change**
-- In this version you must paste the public_key of sandbox and production to be able to sell. Before updating the plugin, activate the maintenance mode and do some tests to check that nothing breaks.
-
-**Fixes:**
-- We fixed the mobile layout of the Checkout Pro.
-- We fixed the creation of the order, allowing the function to recover the value of the customer_secure_key.
-
-**Improvements:** 
-- Now the Checkout Pro works through a modal: your customers can complete the purchase without leaving the site.
-- We renew the plugin settings screen.
-- We renew the plugin code structure.
-- We merged the plugin versions for PS1.6 and PS1.7.
-
-**We added:**
-- New translations for Chile and Uruguay.
-- Custom Checkout with:
- - Binary mode
- - Discount for paying with Mercado Pago.
-- Ticket Checkout with:
- - Select available payment methods.
- - Choose the expiration date.
- - Discount for paying with Mercado Pago.
-
-**We temporarily suspended some features from version 4.1.0 of the plugin:**
-- Mercado Envíos.
-- Discount coupons.
-- Installment calculator.
+<span></span>
 
 > NOTE
 >
