@@ -23,9 +23,6 @@ Quando uma parcela permanece no status de `recycling` ela entra em um esquema de
 
 Se o pagamento for recusado, ele é atualizado para uma nova data de cobrança adicionando 1 das 4 possibilidades dentro de dez dias como uma janela de tempo de nova tentativa à última data disponível.
 
-![Lógica de reintentos de cobro]
-(/images/subscriptions/payment-retry.png)
-
 Por padrão, o pagamento é tentado novamente dentro de uma janela de 10 dias. Caso a parcela tenha uma data de vencimento, a janela de tempo é ajustada a essa data e mantém a lógica de 4 tentativas.
 
 ----[mla]----

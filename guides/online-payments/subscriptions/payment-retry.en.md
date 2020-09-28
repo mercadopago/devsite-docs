@@ -21,10 +21,6 @@ When an instalment remains in `recycling` status, it enters a retry scheme with 
 
 If the payment is declined, it is updated to a new collection date by adding 1 of the 4 possibilities within ten days as a retry time window to the last available date.
 
-
-![Lógica de reintentos de cobro]
-(/images/subscriptions/payment-retry.png)
-
 By default the retry is within a 10 day window. In case the installment has an expiration date, the time window is adjusted to that date and maintains the logic of 4 retries.
 
 ----[mla]----

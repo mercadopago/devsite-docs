@@ -22,9 +22,6 @@ Cuando una cuota queda en el estado `recycling` entra en un esquema de reintento
 
 Si el pago resulta rechazado, se actualiza a una nueva fecha de cobro sumando 1 de las 4 posibilidades dentro de los diez días como ventana de tiempo de reintento a la última fecha de disponible.
 
-![Lógica de reintentos de cobro]
-(/images/subscriptions/payment-retry.png)
-
 Por defecto se reintenta dentro de una ventana de 10 días. En caso de que la cuota tenga fecha de expiración, la ventana de tiempo se ajusta a esa fecha y mantiene la lógica de 4 reintentos.
 
 ----[mla]----
