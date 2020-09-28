@@ -7,6 +7,21 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ## September 2020
 
 
+### September 29th
+
+> CHANGELOG
+>
+> New Transparent Checkout for Shopify
+>
+> NEWS: NEWS
+>
+> PRODUCT: SHOPIFY
+
+We have released a new Transparent Checkout for Shopify.
+
+You can check all the information in the [official documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/shopify/).
+
+
 ### September 25th
 
 > CHANGELOG

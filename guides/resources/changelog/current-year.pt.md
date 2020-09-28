@@ -7,6 +7,21 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ## Setembro 2020
 
 
+### 29 de setembro
+
+> CHANGELOG
+>
+> Novo Checkout Transparente para Shopify
+>
+> NEWS: NEWS
+>
+> PRODUCT: SHOPIFY
+
+Lançamos um novo Checkout Transparente para Shopify.
+
+Veja todas as informações na [documentação oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/shopify/).
+
+
 ### 25 de setembro
 
 > CHANGELOG
