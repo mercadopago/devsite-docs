@@ -7,6 +7,7 @@ Los medios de pago ofrecidos por Mercado Pago varían según cada país.
 Los medios pueden ser obtenidos de la siguiente forma:
 
 **GET /v1/payment_methods**
+
 [[[
 ```php
 	<?php
