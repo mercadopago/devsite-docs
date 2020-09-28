@@ -211,7 +211,7 @@ preference.Save()"
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences' \
+  'https://api.mercadopago.com/checkout/preferences' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
   -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
@@ -344,7 +344,7 @@ preference.Save()"
 ```
 ```curl
 curl -X POST \
-  'https://api.mercadolibre.com/checkout/preferences' \
+  'https://api.mercadopago.com/checkout/preferences' \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache' \
   -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \

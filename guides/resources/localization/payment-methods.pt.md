@@ -16,7 +16,12 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 		print_r ($payment_methods);
 	?>
 ```
-
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+```
 **Resposta**
 
 ```json

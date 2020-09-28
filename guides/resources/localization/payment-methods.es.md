@@ -20,7 +20,7 @@ Los medios pueden ser obtenidos de la siguiente forma:
 curl -X GET \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE'
 ```
 ]]]
 
@@ -39,7 +39,8 @@ A su vez, también se pueden consultar los medios de pago soportados para operac
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
 ```
 ]]]
 

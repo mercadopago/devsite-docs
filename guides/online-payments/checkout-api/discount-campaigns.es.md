@@ -158,7 +158,7 @@ curl -X POST \
 -H 'accept: application/json' \ 
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadolibre.com/v1/payments \
+https://api.mercadopago.com/v1/payments \
 -d '{
     "transaction_amount": 299.99,
     "description": "Title of what you are paying for",

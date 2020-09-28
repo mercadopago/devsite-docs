@@ -139,6 +139,31 @@ To collect on behalf of your sellers you must integrate the [Checkout](https://w
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the marketplace_fee  parameter when creating the preference:
 
 [[[
+
+```curl
+
+curl -X POST \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+-H 'Authorization: Bearer SELLER_AT' \
+'https://api.mercadopago.com/checkout/preferences' \
+-d '{
+    "items": [
+        {
+            "title": "Item title",
+            "description": "Description",
+            "quantity": 1,
+            "unit_price": 50,
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif"
+        }
+    ],
+    "marketplace_fee": 2.29
+}'
+
+```
+
+
 ```php
 
 <?php

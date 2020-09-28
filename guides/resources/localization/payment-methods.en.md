@@ -20,7 +20,7 @@ You can get the payment methods as follows:
 curl -X GET \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE'
 ```
 ]]]
 
@@ -40,7 +40,8 @@ Also, you can get the payment methods supported for recurring payments/payments 
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
 ```
 ]]]
 
