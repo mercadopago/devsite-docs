@@ -312,7 +312,7 @@ Along with the frequency, they define the installment cycle that a subscription 
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
