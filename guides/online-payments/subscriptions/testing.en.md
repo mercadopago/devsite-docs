@@ -57,7 +57,7 @@ Run the following curl to generate a test user:
 
 #### 1. Set the subscription with the data of your seller user
 
-Use the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/daccount/credentials" target="_blank">test public key</a> of your seller user at the time of creating the subscription you want to test.
+Use the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">test public key</a> of your seller user at the time of creating the subscription you want to test.
 
 #### 2. Make a payment with your buyer user
 
