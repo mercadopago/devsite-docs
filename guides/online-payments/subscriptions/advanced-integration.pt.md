@@ -4,7 +4,7 @@ indexable: false
 
 # Atualização de assinaturas
 
-Para atualizar, pausar, cancelar ou reativar uma assinatura já criada, é necessário usar o `preapproval_id` que retorna em seguida da <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">criação</a>. 
+Para atualizar, pausar, cancelar ou reativar uma assinatura já criada, é necessário usar o `preapproval_id` que retorna após a<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">criação</a>. 
 
 ## Busca de uma assinatura
 
@@ -65,13 +65,13 @@ E para __pausar uma assinatura__, você deve indicar  `paused` no `status`. Voc�
 
 ## Reativar uma assinatura pausada
 
-### Ativar assinatura no fim do prazo
+### Ativar assinatura com prazo final
 
-Por exemplo, se você quiser cobrar todas as parcelas por um ano com uma frequência mensal que foi pausada após 6 meses por um mês, você deve adicionar um mês a mais ao prazo.
+Por exemplo, se você quiser cobrar todas as parcelas por um ano com uma frequência mensal que após 6 meses foi pausada por um mês, você deve adicionar um mês a mais ao prazo.
 
 Para isso, atualize o prazo no campo `auto_recurring.end_date` e envie o valor`authorized` no `status`.
 
-Com o `application_id` que quiser atualizar, faça a seguinte chamada: 
+Com o `application_id` da assinatura que quiser atualizar, faça a seguinte chamada: 
 
 
 [[[
@@ -88,7 +88,7 @@ Com o `application_id` que quiser atualizar, faça a seguinte chamada:
 ```
 ]]]
 
-### Ativar assinatura sem prazo de fim
+### Ativar assinatura sem prazo final
 
 Para reativar uma assinatura, envie o valor `authorized` no `status`. Isso reativará as parcelas conforme sua recorrência a partir da data em que a alteração do status foi feita. 
 
