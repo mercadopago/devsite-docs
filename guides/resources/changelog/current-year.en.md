@@ -43,8 +43,6 @@ We have released the new version 4.2.0 for PrestaShop.
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.2.0) for further details regarding this release.
 
 
-### September 25th
-
 > CHANGELOG
 >
 > New sample projects

@@ -43,8 +43,6 @@ Lanzamos la nueva versión 4.2.0 para PrestaShop.
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.2.0).
 
 
-### 25 de septiembre
-
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >
