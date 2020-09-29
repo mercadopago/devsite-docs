@@ -86,7 +86,7 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
