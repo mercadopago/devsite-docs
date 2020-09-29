@@ -126,7 +126,7 @@ Attribute |	Definition
 > 
 > Important
 > 
-> ¿Do you have questions about how to create the payment token? Find all the information in the section of __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">Capture data from the card.</a>__.
+> ¿Do you have questions about how to create the payment token? Find all the information in the section of __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks/official/js/" target="_blank">Capture data from the card.</a>__.
 
 #### Response 
 `HTTP Status 200 OK`
