@@ -8,9 +8,9 @@ indexable: false
 
 There are two ways to integrate subscriptions: 
 
-* __With a plan associated__: Use this form when you need to use the same subscription on different occasions and want to organize them into identifiable groups. For example, for a monthly and annual subscription to a gym.  
+* __With an associated plan__: Use this form when you need to use the same subscription on different occasions and want to organize them into identifiable groups. For example, for a monthly and annual subscription to a gym.  
 
-* __Without a plan associated__: Use this form when you know that different subscriptions will not share any features because they will be very specific or specialized for each payer. For example, for a single month subscription with a special discount.
+* __Without an associated plan__: Use this form when you know that different subscriptions will not share any features because they will be very specific or specialized for each payer. For example, for a single month subscription with a special discount.
 
 > NOTE
 > 
@@ -19,7 +19,7 @@ There are two ways to integrate subscriptions:
 > Do you have questions about what a plan or other concept is? Keep the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction" target="_blank">key concepts</a> handy to review them when needed.
 
 
-## Subscriptions with a plan associated
+## Subscriptions with an associated plan
 
 If you want to use a subscription with an associated plan, you must first create a plan.  
 
@@ -160,7 +160,7 @@ Attribute |	Definition
 Done! You have already created a subscription with an associated plan.
 
 
-## Subscriptions without plan associated
+## Subscriptions without an associated plan 
 
 If you want to use a subscription without an associated plan, you must first set up the payment status.
 

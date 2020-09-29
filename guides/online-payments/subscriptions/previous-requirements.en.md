@@ -7,17 +7,17 @@ indexable: false
 ## Considerations and restrictions
 
 ----[mla]----
-Please note that the minimum amount allowed to create a subscription is $2 and the maximum is $250,000.
+Please note that the minimum amount allowed to create a subscription is $ 2 and the maximum is $ 250,000.
 
 ------------
 
 ----[mlb]----
-Please note that the minimum amount allowed to create a subscription is R$ 0.5 and the maximumm is R$ 50.000.
+Please note that the minimum amount allowed to create a subscription is R$ 0.5 and the maximum is R$ 50,000.
 
 ------------
 
 ----[mlm]----
-Please note that the minimum amount allowed to create a subscription is $ 10 and the maximum is R$ 200.000.
+Please note that the minimum amount allowed to create a subscription is $ 10 and the maximum is $ 200,000.
 
 ------------
 
@@ -30,7 +30,7 @@ If you don't have one yet, you can <a href="https://www.mercadopago[FAKER][URL][
 
 ### Keep your credentials handy
 
-The credentials are the keys that we provide you with so that you can configure your integration. For this case, you will use a public key and a private key.
+The credentials are the keys that we provide you with, so that you can configure your integration. For this case, you will use a public key and a private key.
 
 To find them, go to the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials/" target="_blank">Credentials</a> section.
 
