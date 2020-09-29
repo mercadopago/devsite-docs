@@ -117,7 +117,7 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
 >
 > Verifique se suas assinaturas criadas estão devidamente configuradas com os usuários de teste. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_PT
