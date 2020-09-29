@@ -38,4 +38,4 @@ Conceito |	Descrição
 >
 > Confira todos os requisitos necessários para começar a integrar.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/previous-requirements/)
