@@ -129,7 +129,7 @@ Siga estas etapas para processar pagamentos com o Checkout do Mercado Pago:
 >
 > Nota
 >
-> Confira a documentação do [Checkout do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Confira a documentação do [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/introduction/) para conhecer melhor todas as suas características e funcionalidades.
 
 
 ### Mapeamento de status de pagamento
