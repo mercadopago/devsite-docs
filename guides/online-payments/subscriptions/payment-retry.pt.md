@@ -59,4 +59,4 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 >
 > Verifique se suas assinaturas estão configuradas corretamente com os usuários de teste.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
