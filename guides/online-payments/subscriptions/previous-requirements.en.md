@@ -39,7 +39,7 @@ To find them, go to the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/acc
 
 ### Use our official library
 
-Integrate with our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">Mercado Pago SDK Javascript</a> which allows you to create a token with your card details securely and send it to your backend for use in your payments. 
+Integrate with our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks" target="_blank">Mercado Pago SDK Javascript</a> which allows you to create a token with your card details securely and send it to your backend for use in your payments. 
 
 
 ------------
