@@ -24,7 +24,7 @@ Tipos de usuario |   Descripción
 Vendedor       |  Es la cuenta de prueba que usas para configurar la suscripción y credenciales para el cobro           
 Pagador        |  Es la cuenta de prueba que usas para probar los pagos recurrentes.  
 
-### Cómo crear usuarios SERVER-SIDE
+### Cómo crear usuarios
 
 Para comenzar, es necesario que tengas como mínimo dos usuarios de prueba: un comprador y un vendedor.
 

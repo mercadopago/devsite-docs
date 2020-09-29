@@ -23,7 +23,7 @@ User types |   Description
 Seller       |  This is the test account you use to set up your subscription and billing credentials.           
 Payer        |  This is the test account that you use to test recurring payments.  
 
-### How to create users SERVER-SIDE
+### How to create users
 
 To start, you need to have at least two test users: a buyer and a seller.
 

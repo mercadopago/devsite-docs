@@ -24,7 +24,7 @@ Tipos de usuário |   Descrição
 Vendedor       |  Esta é a conta de teste que você usa para configurar a assinatura e credenciais para a cobrança.
 Pagador        |  É a conta de teste que você usa para testar os pagamentos recorrentes.  
 
-### Como criar usuários SERVER-SIDE
+### Como criar usuários
 
 Para começar, você precisa ter pelo menos dois usuários de teste: um comprador e um vendedor.
 
