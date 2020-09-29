@@ -43,7 +43,7 @@ Install the [app extension of our transparent checkout](https://apps.shopify.com
 Install Mercado Pago for Shopify automatically by following these steps from [Shopify app store](https://apps.shopify.com/):
 
 1. Enter the website [https://apps.shopify.com/](https://apps.shopify.com/) from your browser and log in to your account. You can also access it from the Apps section of your Shopify panel.
-1. Search for *“Mercado Pago Transparent Checkout”* in the apps offer.
+1. Search for “Mercado Pago Transparent Checkout” in the apps offer.
 1. Click on *Add app*.
 1. Go to the Apps section of your admin panel.
 
