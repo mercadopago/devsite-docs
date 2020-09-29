@@ -281,7 +281,7 @@ Para o cadastro, os detalhes do cartão devem ser informados usando nosso formul
 }
 ```
 
-> Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referência de API.</a>.
+> Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referência de API.</a>.
 
 
 Atributos
