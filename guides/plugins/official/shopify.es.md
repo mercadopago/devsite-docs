@@ -15,7 +15,7 @@ Elige la solución que mejor se adapte a tu negocio:
 
 __Checkout transparente Mercado Pago__: *app extension* de Shopify que brinda una experiencia de compra rápida y segura, ¡sin salir de tu tienda! Puedes instalarla desde el [app store de Shopify](https://apps.shopify.com/).
 ------------
-__Checkout redirect Mercado Pago__: configura el Checkout de Mercado Pago para que tus clientes finalicen su pago en nuestro sitio. Ya se encuentra pre-instalada en tu administrador de Shopify.
+__Checkout redirect Mercado Pago__: configura Checkout Pro para que tus clientes finalicen su pago en nuestro sitio. Ya se encuentra pre-instalada en tu administrador de Shopify.
 
 ----[mlb]----
 
