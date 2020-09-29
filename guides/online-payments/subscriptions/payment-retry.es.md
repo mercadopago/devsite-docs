@@ -28,7 +28,7 @@ Por defecto se reintenta dentro de una ventana de 10 días. En caso de que la cu
 
 ## Pagos en proceso
 
-Si una cuota se encuentra en el estado `waiting for gateway` y cuando se resuelve el pago resulta rechazada y se cumplió la fecha de expiración, la cuota automáticamente pasará a procesada con el estado `processed`. Caso contrario, entrará al esquema de reintento descrito en la imagen.
+Si una cuota se encuentra en el estado `waiting for gateway` y cuando se resuelve el pago resulta rechazada y se cumplió la fecha de expiración, la cuota automáticamente pasará a procesada con el estado `processed`. Caso contrario, entrará al esquema de reintento.
 
 ------------
 

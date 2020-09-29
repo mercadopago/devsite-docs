@@ -29,7 +29,7 @@ Por padrão, o pagamento é tentado novamente dentro de uma janela de 10 dias. C
 
 ## Pagamentos em processamento
 
-Se uma parcela está com o status `waiting for gateway` e quando o pagamento é resolvido resulta em rejeitado e a data de vencimento é cumprida, a parcela passará automaticamente a processada com o status `processed`. Caso contrário, entrará no esquema de nova tentativa descrito na imagem.
+Se uma parcela está com o status `waiting for gateway` e quando o pagamento é resolvido resulta em rejeitado e a data de vencimento é cumprida, a parcela passará automaticamente a processada com o status `processed`. Caso contrário, entrará no esquema de nova tentativa.
 
 
 ------------

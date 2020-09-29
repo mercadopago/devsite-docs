@@ -10,7 +10,7 @@ To update, pause, cancel or reactivate a subscription already created, you need 
 
 You can search your subscriptions whenever you need. 
 
-The parameters to be added are optional and depending on the parameters sent, they are combined to search for a subscription. 
+The parameters to be added are optional and, depending on the parameters sent, they are combined to search for a subscription. 
 
 For example, you can search for all of a customer's paused subscriptions: 
 
@@ -69,7 +69,7 @@ And to __pause a subscription__, you must indicate `paused` in the `status`. You
 
 If you want to reactivate or extend the time of a subscription that had a specific time length determined, you must add the time that was paused or that you want to add in order to be able to collect the total estimated installments. 
 
-For example, in the case of wanting to collect all the installments of an annual duration with a monthly frequency that was paused at 6 months for one month, you should add one month more the lifetime.
+For example, if you want to collect all the installments of an annual period with a monthly frequency that after 6 months was paused for one month, you should add one month more to the time period.
 
 To do so, update the time in the `auto_recurring.end_date` field and send the value `authorized` in `status`.
 
@@ -94,7 +94,7 @@ With the subscription `application_id` you want to update, make the following ca
 
 To reactivate a subscription, send the value `authorized` in `status`. This will reactivate the installments according to their recurrence from the date the status change was made.
 
-With the Subscription `application_id` you want to update, make the following call: 
+With the subscription `application_id` you want to update, make the following call: 
 
 [[[
 ```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
@@ -126,6 +126,6 @@ With the Subscription `application_id` you want to update, make the following ca
 >
 > Logic of collection retries
 >
-> In case you have problems, we explain the logic of retrying collections.
+> In case you have problems, we explain the logic of reattempting collections.
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)

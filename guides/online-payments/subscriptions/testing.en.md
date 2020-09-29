@@ -55,7 +55,7 @@ Run the following curl to generate a test user:
 
 ### Test the payment flow
 
-#### 1. Configure the subscription with the data of your seller user
+#### 1. Set the subscription with the data of your seller user
 
 Use the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/daccount/credentials" target="_blank">test public key</a> of your seller user at the time of creating the subscription you want to test.
 
@@ -66,7 +66,7 @@ Credit card testing
 1. Access the subscription you created and want to review.
 1. Enter the details of a **test card**.
 1. Enter the details of your test payer user.
-1. Confirm your purchase and you're done!!
+1. Confirm your purchase and you're done!
 
 ### Test cards
 
