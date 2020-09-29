@@ -48,7 +48,7 @@ the installment cannot be collected on the fourth reattempt, it will automatical
 >
 > Update, edit or cancel your subscriptions.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advenced-integration/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advenced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
