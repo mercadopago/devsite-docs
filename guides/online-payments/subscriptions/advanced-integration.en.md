@@ -119,7 +119,7 @@ With the subscription `application_id` you want to update, make the following ca
 >
 > Check that your created subscriptions are properly configured with the test users.  
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
