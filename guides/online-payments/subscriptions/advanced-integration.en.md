@@ -107,7 +107,7 @@ With the subscription `application_id` you want to update, make the following ca
 ```
 ]]]
 
->To get more information about the available fields, view the<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">API references.</a>.
+>To get more information about the available fields, view the<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API references.</a>.
 
 
 ------------
