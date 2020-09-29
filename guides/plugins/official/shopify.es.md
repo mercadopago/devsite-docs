@@ -44,7 +44,7 @@ Instala Mercado Pago para Shopify de forma automática siguiendo estos pasos des
 
 1. Ingresa al sitio [https://apps.shopify.com/](https://apps.shopify.com/) desde tu navegador y logueate a tu cuenta. También podrás acceder desde la sección Apps de tu panel de Shopify.
 1. Busca “Checkout transparente de Mercado Pago” entre la oferta de apps.
-1. Haz clic en *Agregar app*.
+1. Haz clic en "Agregar app".
 1. Dirígete a la sección Apps de tu panel de administración.
 
 **¡Excelente! El checkout ya está instalado en tu tienda, solo debes activarlo para empezar a vender.**
