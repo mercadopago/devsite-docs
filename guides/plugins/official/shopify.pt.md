@@ -5,7 +5,7 @@
 
 As soluções do Mercado Pago no Shopify permitem receber pagamentos on-line no seu site sem a necessidade de conhecimento técnico ou de programação.
 
-> Mercado Pago é um parceiro oficial do Shopify: oferecemos segurança a todos os pagamentos feitos em sua loja.
+> Mercado Pago é um parceiro oficial do Shopify: oferecemos segurança à todos os pagamentos feitos em sua loja.
 
 
 ### Tipos de integração
@@ -58,7 +58,7 @@ Depois que o checkout estiver instalado, siga estas etapas:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) no Mercado Pago se você ainda não tem uma.
 1. Obtenha as [credenciais]([FAKER][CREDENTIALS][URL]) **Public Key** e **Access Token**, e cole-as nos campos de Produção e Testes encontrados na configuração do app.
-1. Aprove a conta para [ir a Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
+1. Ative a conta para [ir a Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
 
 **Pronto! Com essa configuração, você pode começar a vender e obter os pagamentos recebidos na sua conta Mercado Pago.**
 
