@@ -129,7 +129,7 @@ Sigue estos pasos para procesar los pagos con Checkout Pro:
 >
 > Nota
 >
-> Consulta la documentación del [Checkout de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la documentación de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 
 ### Mapeo de estados de pago
