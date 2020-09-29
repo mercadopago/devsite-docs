@@ -114,7 +114,7 @@ Configure our module to finalize the purchase on Mercado Pago site during the pu
 
 ### How to configure Mercado Pago module?
 
-Follow these steps to process payments with Mercado Pago Checkout:
+Follow these steps to process payments with Checkout Pro:
 
 1. In Shopify admin panel, go to the *Payments* section under *Settings*.
 1. In the *Third-party providers* box, search for Mercado Pago and select it.
