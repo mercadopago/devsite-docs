@@ -129,7 +129,7 @@ Follow these steps to process payments with Checkout Pro:
 >
 > Nota
 >
-> Check [Mercado Pago Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/introduction/) documentation to learn more about all its features and functionalities.
+> Check [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/introduction/) documentation to learn more about all its features and functionalities.
 
 
 ### Payment status mapping
