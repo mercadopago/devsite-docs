@@ -50,4 +50,4 @@ Integre com nosso <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developer
 >
 > Escolha sua forma de integração e comece a receber pagamentos recorrentes.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/integration/)
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/integration/)
