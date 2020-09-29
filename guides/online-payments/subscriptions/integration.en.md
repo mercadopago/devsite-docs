@@ -281,7 +281,7 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
 }
 ```
 
-> You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">API reference</a>.
+> You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API reference</a>.
 
 
 Attributes
