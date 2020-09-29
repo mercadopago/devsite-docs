@@ -105,7 +105,7 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
 ```
 ]]]
 
->Para saber mais sobre os campos disponíveis, confira as <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referências de API.</a>.
+>Para saber mais sobre os campos disponíveis, confira as <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referências de API.</a>.
 
 
 ------------
