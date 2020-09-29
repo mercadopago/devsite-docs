@@ -58,7 +58,7 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 
 #### 1. Configura la suscripción con los datos de tu usuario vendedor
 
-Utiliza la  <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/daccount/credentials" target="_blank">clave pública de prueba</a> de tu usuario vendedor al momento de crear la suscripción que quieras probar
+Utiliza la  <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">clave pública de prueba</a> de tu usuario vendedor al momento de crear la suscripción que quieras probar
 
 #### 2. Realiza un pago con tu usuario comprador
 
