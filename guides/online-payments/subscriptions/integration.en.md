@@ -61,8 +61,8 @@ Attribute |	Definition
 Along with the frequency, they define the installment cycle that a subscription will have. For example, if every fifteen days you need to generate an instalment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount` | If we indicate the amount, it is fixed. If this field is blank, it is understood as a variable amount. A maximum of two decimals separated by a period is allowed. |
 `auto_recurring.currency_id (required)` | Identifies the currency that corresponds to the country. |
-`auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
-`auto_recurring.free_trial.frequency` | Defines an initial test period and delays the first collection. Indicates the length of time that the service will not be charged for based on the type of frequency. It must be consistent with `auto_recurring.frequency` |
+`auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
+`auto_recurring.free_trial.frequency` | Defines an initial test period and delays the first collection. Indicates the length of time that the service will not be charged, for based on the type of frequency. It must be consistent with `auto_recurring.frequency` |
 `auto_recurring.free_trial.frequency_type` | Indicates the number of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type` |
 
 #### Response
@@ -99,7 +99,7 @@ Done! We can now create the subscription and associate it to your plan.
 
 ### Create subscription
 
-Once you have generated your plan and obtained your `preapproval_plan_id`,  create the subscription  of the payer by API as follows: 
+Once you have generated your plan and obtained your `preapproval_plan_id`, create the subscription of the payer by API as follows: 
 
 [[[
 ```curl curl --location --request POST 'https://api.mercadopago.com/preapproval \
@@ -155,7 +155,7 @@ Attribute |	Definition
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->You can get more information about the fields in the  <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">API Reference</a>.
+>You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">API Reference</a>.
 
 Done! You have already created a subscription with an associated plan.
 
@@ -295,7 +295,7 @@ Attribute |	Definition
 Along with the frequency, they define the installment cycle that a subscription will have. For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount (required)` | Amount applicable to the subscription. |
 `auto_recurring.currency_id (required)` | Identifies the currency that corresponds to the country. |
-`auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified there is no limit. |
+`auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
 `auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency` |
 `auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type` |
 `collector_id (required)` | Seller's identifier. |
