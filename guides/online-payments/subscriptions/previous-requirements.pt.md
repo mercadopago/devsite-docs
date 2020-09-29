@@ -39,7 +39,7 @@ Para poder encontrá-las, confira a seção de <a href="https://www.mercadopago[
 
 ### Utilize nossa biblioteca oficial
 
-Integre com nosso <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">SDK Javascript do Mercado Pago</a> que te permite criar um token com os dados do cartão de forma segura e enviá-lo ao seu backend para usá-lo nos seus pagamentos.
+Integre com nosso <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks" target="_blank">SDK Javascript do Mercado Pago</a> que te permite criar um token com os dados do cartão de forma segura e enviá-lo ao seu backend para usá-lo nos seus pagamentos.
 
 
 ------------
