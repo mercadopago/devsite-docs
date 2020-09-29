@@ -114,7 +114,7 @@ Configura nuestro módulo para finalizar la compra en el sitio de Mercado Pago d
 
 ### ¿Cómo configurar el módulo de Mercado Pago?
 
-Sigue estos pasos para procesar los pagos con el Checkout de Mercado Pago:
+Sigue estos pasos para procesar los pagos con Checkout Pro:
 
 1. En el panel de administración de Shopify, dirígete a la sección *Payments* dentro de *Settings*.
 1. En el box *Third-party providers*, busca y selecciona Mercado Pago.
