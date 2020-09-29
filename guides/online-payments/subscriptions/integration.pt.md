@@ -16,7 +16,7 @@ Há duas formas de integrar assinaturas:
 > 
 > Conceitos-chave
 > 
-> Dúvidas sobre o que é um plano ou outro conceito? Tenha em mãos os <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction" target="_blank">conceitos-chave</a> para revisá-los quando necessário.
+> Dúvidas sobre o que é um plano ou outro conceito? Tenha em mãos os <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction" target="_blank">conceitos-chave</a> para revisá-los quando necessário.
 
 
 ## Assinaturas com um plano associado
