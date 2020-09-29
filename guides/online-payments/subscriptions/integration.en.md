@@ -16,7 +16,7 @@ There are two ways to integrate subscriptions:
 > 
 > Key concepts
 > 
-> Do you have questions about what a plan or other concept is? Keep the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction" target="_blank">key concepts</a> handy to review them when needed.
+> Do you have questions about what a plan or other concept is? Keep the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction" target="_blank">key concepts</a> handy to review them when needed.
 
 
 ## Subscriptions with an associated plan
