@@ -34,7 +34,7 @@ Las credenciales son las claves que te proporcionamos para que puedas configurar
 
 Para poder encontrarlas, ve la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials/" target="_blank">Credenciales</a>.
 
->¿Tienes dudas sobre credenciales? Puedes consultar nuestras <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/" target="_blank">preguntas frecuentes</a>.
+>¿Tienes dudas sobre credenciales? Puedes consultar nuestras <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/" target="_blank">preguntas frecuentes</a>.
 
 
 ### Usa nuestras librerías oficiales

@@ -34,7 +34,7 @@ The credentials are the keys that we provide you with, so that you can configure
 
 To find them, go to the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials/" target="_blank">Credentials</a> section.
 
->Do you have questions about credentials? You can check our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/" target="_blank">Frequently Asked Questions</a>.
+>Do you have questions about credentials? You can check our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/" target="_blank">FAQs</a>.
 
 
 ### Use our official library

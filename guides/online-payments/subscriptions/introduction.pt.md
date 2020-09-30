@@ -9,8 +9,8 @@ As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes 
 ## Funções disponíveis
 
 Há duas funções envolvidas: 
-1. O __vendedor__ ou __cobrador__, proprietário da assinatura e credor dos valores devidos.
-1. O __pagador__, que pagará os valores automaticamente com o meio de pagamento escolhido.
+1. O __vendedor__ ou __collector__, proprietário da assinatura e credor dos valores devidos.
+1. O __pagador__ ou __payer__, que pagará os valores automaticamente com o meio de pagamento escolhido.
 
 > NOTE
 > 

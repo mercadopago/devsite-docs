@@ -4,7 +4,7 @@ indexable: false
 
 # Subscription updates
 
-To update, pause, cancel or reactivate a subscription already created, you need to use the preapproval_id that returns after the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">creation</a>. 
+To update, pause, cancel or reactivate a subscription already created, you need to use the `preapproval_id` that returns after the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">creation</a>. 
 
 ## Search for a subscription
 
@@ -107,7 +107,7 @@ With the subscription `application_id` you want to update, make the following ca
 ```
 ]]]
 
->To get more information about the available fields, view the<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API references.</a>.
+>To get more information about the available fields, view the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API references</a>.
 
 
 ------------

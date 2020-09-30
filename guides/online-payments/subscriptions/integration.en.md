@@ -57,8 +57,7 @@ Attribute |	Definition
 --- | ---
 `reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
 `auto_recurring.frequency` (required) | Indicates the length of time  or cycle based on the type of frequency. |
-`auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days).
-Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an instalment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+`auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days). <br><br> Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an instalment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount` | If we indicate the amount, it is fixed. If this field is blank, it is understood as a variable amount. A maximum of two decimals separated by a period is allowed. |
 `auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
 `auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
@@ -126,7 +125,7 @@ Attribute |	Definition
 > 
 > Important
 > 
-> ¿Do you have questions about how to create the payment token? Find all the information in the section of __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks/official/js/" target="_blank">Capture data from the card</a>__.
+> ¿Do you have questions about how to create the payment token? Find all the information in the section of __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture" target="_blank">Capture data from the card</a>__.
 
 #### Response 
 `HTTP Status 200 OK`
@@ -291,8 +290,7 @@ Attribute |	Definition
 `reason` | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
 `status` | Subscription status. It can be `pending` or `authorized`. |
 `auto_recurring.frequency` | Indicates the length of time or cycle based on the type of frequency. |
-`auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days).
-Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
+`auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days). Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount` | Amount applicable to the subscription. |
 `auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
 `auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |

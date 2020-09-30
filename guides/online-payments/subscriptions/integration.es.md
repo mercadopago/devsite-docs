@@ -125,7 +125,7 @@ Atributos |	Descripción
 > 
 > Importante
 > 
-> ¿Tienes dudas sobre cómo crear el token de pago? Encuentra toda la información en la sección de __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">Capturar datos de la tarjeta</a>__.
+> ¿Tienes dudas sobre cómo crear el token de pago? Encuentra toda la información en la sección de __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_captura_los_datos_de_la_tarjeta" target="_blank">Capturar datos de la tarjeta</a>__.
 
 #### Respuesta 
 `HTTP Status 200 OK`
