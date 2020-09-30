@@ -10,7 +10,7 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 
 Existen dos roles involucrados:
 1. El __vendedor__ o __collector__, quien es dueño de la suscripción y acreedor de los importes que se debiten.
-1. El __pagador__ o __payer__, quien abonará los importes de forma automática desde el medio de pago que haya elegido
+1. El __pagador__ o __payer__, quien abonará los importes de forma automática desde el medio de pago que haya elegido.
 
 > NOTE
 > 

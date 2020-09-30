@@ -125,7 +125,7 @@ Attribute |	Definition
 > 
 > Important
 > 
-> ¿Do you have questions about how to create the payment token? Find all the information in the section of __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture" target="_blank">Capture data from the card</a>__.
+> ¿Do you have questions about how to create the payment token? Find all the information in the section of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture" target="_blank">Capture data from the card</a>.
 
 #### Response 
 `HTTP Status 200 OK`
