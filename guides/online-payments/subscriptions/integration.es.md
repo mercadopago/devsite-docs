@@ -119,7 +119,7 @@ Atributos |	Descripción
 --- | ---
 `preapproval_plan_id` (requerido) | Hace referencia al Template o Plan previamente generado.|
 `card_token_id`(requerido) | La información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
-`payer_email (requerido)` | E-mail del pagador. |
+`payer_email` (requerido) | E-mail del pagador. |
 
 > WARNING
 > 
