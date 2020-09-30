@@ -88,7 +88,7 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON
 >
 > Novas tentativas de cobrança
 >
