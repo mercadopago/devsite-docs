@@ -20,7 +20,7 @@ Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verific
 
 Tipos de usuario | Descripción  
 --- |	---
-Vendedor | Es la cuenta de prueba que usas para configurar la suscripción y credenciales para el cobro        
+Vendedor | Es la cuenta de prueba que usas para configurar la suscripción y credenciales para el cobro.       
 Pagador | Es la cuenta de prueba que usas para probar los pagos recurrentes.
 
 ## Cómo crear usuarios
