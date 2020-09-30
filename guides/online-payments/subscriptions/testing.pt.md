@@ -94,4 +94,4 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Caso você tenha problemas, explicamos a lógica de novas tentativas de cobrança. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Novas tentativas de cobrança](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry/)
