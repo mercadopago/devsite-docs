@@ -44,6 +44,7 @@ Lanzamos la nueva versión 4.2.0 para PrestaShop.
 
 <span></span>
 
+<br>
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >

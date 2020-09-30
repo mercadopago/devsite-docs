@@ -44,6 +44,7 @@ We have released the new version 4.2.0 for PrestaShop.
 
 <span></span>
 
+<br>
 > CHANGELOG
 >
 > New sample projects
