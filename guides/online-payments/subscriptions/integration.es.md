@@ -98,7 +98,7 @@ Atributo |	Descripción
 
 ### Crear suscripción
 
-Una vez generado tu plan y obtenido tu `preapproval_plan_id`, crea la suscripción por API de la siguiente manera
+Una vez generado tu plan y obtenido tu `preapproval_plan_id`, crea la suscripción por API de la siguiente manera:
 
 [[[
 ```curl curl --location --request POST 'https://api.mercadopago.com/preapproval \
