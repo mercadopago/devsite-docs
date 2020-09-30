@@ -289,7 +289,7 @@ Atributo |	Descripción
 ------------ 	|	--------
 `reason (requerido)` | Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
 `status (requerido)` | Estado de la suscripción. Puede ser `pending` o `authorized`. |
-`auto_recurring.frequency (requerido)` | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
+`auto_recurring.frequency` (requerido) | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
 `auto_recurring.frequency_type (requerido)` | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción. Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount (requerido)` | Monto que se aplica a la suscripción. |
 `auto_recurring.currency_id (requerido)` | Identifica la moneda que corresponde al país. |
