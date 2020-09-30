@@ -62,7 +62,7 @@ Atributo | Definição
 `auto_recurring.currency_id` (obrigatório) | Identifica a moeda que corresponde ao país. |
 `auto_recurring.repetitions` | Indica se a assinatura terá um limite. Se não for especificado, não há limite. Este limite se relaciona com `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
 `auto_recurring.free_trial.frequency` | Define um período de teste inicial e retarda a primeira cobrança. Indica o tempo pelo qual o serviço não será cobrado com base no tipo de frequência. Deve ser consistente com `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indica o número de parcelas que não serão cobradas pelo serviço. Deve ser consistente com `auto_recurring.frequency_type` |
+`auto_recurring.free_trial.frequency_type` | Indica o número de parcelas que não serão cobradas pelo serviço. Deve ser consistente com `auto_recurring.frequency_type`. |
 
 #### Resposta
 `HTTP Status 200 OK`

@@ -62,7 +62,7 @@ Atributo | Descripción
 `auto_recurring.currency_id` (requerido) | Identifica la moneda que corresponde al país. |
 `auto_recurring.repetitions` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. Este límite se relaciona con `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
 `auto_recurring.free_trial.frequency` | Define un período de prueba inicial  y retrasa el primer cobro. Indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type` |
+`auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type`. |
 
 #### Respuesta
 `HTTP Status 200 OK`
@@ -295,7 +295,7 @@ Atributo | Descripción
 `auto_recurring.currency_id` | Identifica la moneda que corresponde al país. |
 `auto_recurring.end_date` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. |
 `auto_recurring.free_trial.frequency` | Define un período de prueba inicial durante el cual podrás retrasar el primer cobro, indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type` |
+`auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type`. |
 `collector_id` | Identificador del vendedor. |
 `payer_email` | E-mail del pagador. |
 `card_token_id`| Si la suscripción ya fue autorizada, la información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |

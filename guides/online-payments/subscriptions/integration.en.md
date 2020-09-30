@@ -62,7 +62,7 @@ Attribute |	Definition
 `auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
 `auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
 `auto_recurring.free_trial.frequency` | Defines an initial test period and delays the first collection. Indicates the length of time that the service will not be charged, for based on the type of frequency. It must be consistent with `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indicates the number of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type` |
+`auto_recurring.free_trial.frequency_type` | Indicates the number of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
 
 #### Response
 `HTTP Status 200 OK`
@@ -295,7 +295,7 @@ Attribute |	Definition
 `auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
 `auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
 `auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type` |
+`auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
 `collector_id` | Seller's identifier. |
 `payer_email` | Payer's email address. |
 `card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
