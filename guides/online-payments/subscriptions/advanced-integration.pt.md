@@ -126,4 +126,4 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
 >
 > Caso você tenha problemas, explicamos a lógica de novas tentativas de cobrança.
 >
-> [Lógica de novas tentativas de cobrança](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Lógica de novas tentativas de cobrança](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry/)

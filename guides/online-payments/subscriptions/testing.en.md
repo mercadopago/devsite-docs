@@ -85,7 +85,7 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Update, edit or cancel your subscriptions.
 >
-> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)
 
 > RIGHT_BUTTON
 >
@@ -93,4 +93,4 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > In case you have problems, we explain the logic of retrying collections. 
 >
-> [Reattempts to collect](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Reattempts to collect](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry/)
