@@ -2,7 +2,6 @@
 indexable: false
 ---
 
-# Introducción
 # ¿Qué es suscripciones?
 
 Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente, con tarjeta de crédito y débito. La disponibilidad de los medios de pago varía según la forma de integración.
