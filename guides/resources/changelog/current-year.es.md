@@ -7,8 +7,44 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ## Septiembre 2020
 
 
+### 29 de septiembre
+
+> CHANGELOG
+>
+> Nuevo Checkout Transparente para Shopify
+>
+> NEWS: NEWS
+>
+> PRODUCT: SHOPIFY
+
+Lanzamos un nuevo Checkout Transparente para Shopify.
+
+Puedes ver toda la información en la [documentación oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/shopify/).
+
+
 ### 25 de septiembre
 
+> CHANGELOG
+>
+> Nueva versión del plugin para PrestaShop
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: PRESTASHOP
+
+Lanzamos la nueva versión 4.2.0 para PrestaShop.
+
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.2.0).
+
+<span></span>
+
+<br>
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 > CHANGELOG
 >
