@@ -57,7 +57,7 @@ Atributo |	Descripción
 ------------ 	|	--------
 `reason` (requerido) | Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
 `auto_recurring.frequency` (requerido) | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
-`auto_recurring.frequency_type (requerido)` | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción. Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
+`auto_recurring.frequency_type` (requerido) | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción. <br><br>Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount` | Si indicamos el monto, es fijo. Si no completamos este campo, se entiende como monto variable. Se admite un máximo de dos decimales separados por punto. |
 `auto_recurring.currency_id (requerido)` | Identifica la moneda que corresponde al país. |
 `auto_recurring.repetitions` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. Este límite se relaciona con `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
