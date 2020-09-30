@@ -2,29 +2,28 @@
 indexable: false
 ---
 
-# Pruebas   
-
-## Prueba tus suscripciones
+# Prueba tus suscripciones
 
 Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verificar que tus suscripciones sean creadas correctamente.
 
-> NOTE
+> WARNING
 > 
-> Limitaciones de pruebas en suscripciones:
+> Limitaciones de pruebas en suscripciones
 > 
 > Por el momento, con los usuarios de prueba solo es posible realizar el flujo de creación de una suscripción y no podrás ver el impacto o registro de la cuota, ya sea a través del panel de Mercado Pago o por API.
 
 
-### Cómo probar tu integración
+
+## Cómo probar tu integración
 
 **Los usuarios de prueba te permiten probar tus suscripciones** al generar flujos de pagos con una copia exacta de tus configuraciones.
 
-Tipos de usuario |   Descripción  
------------- 	 |	--------    
-Vendedor       |  Es la cuenta de prueba que usas para configurar la suscripción y credenciales para el cobro           
-Pagador        |  Es la cuenta de prueba que usas para probar los pagos recurrentes.  
+Tipos de usuario | Descripción  
+--- |	---
+Vendedor | Es la cuenta de prueba que usas para configurar la suscripción y credenciales para el cobro        
+Pagador | Es la cuenta de prueba que usas para probar los pagos recurrentes.
 
-### Cómo crear usuarios
+## Cómo crear usuarios
 
 Para comenzar, es necesario que tengas como mínimo dos usuarios de prueba: un comprador y un vendedor.
 
@@ -58,7 +57,7 @@ Ejecuta el siguiente curl para generar un usuario de prueba:
 
 #### 1. Configura la suscripción con los datos de tu usuario vendedor
 
-Utiliza la  <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">clave pública de prueba</a> de tu usuario vendedor al momento de crear la suscripción que quieras probar
+Utiliza la  <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">clave pública de prueba</a> de tu usuario vendedor al momento de crear la suscripción que quieras probar.<br>
 
 #### 2. Realiza un pago con tu usuario comprador
 
@@ -72,7 +71,7 @@ Pruebas con tarjeta de crédito
 ### Tarjetas de prueba
 
 Tarjeta |   Número  | Código de seguridad   |   Fecha de vencimiento
------------- 	 |	--------    |	--------    |	--------
+--- |	--- | --- | --- 
 Mastercard       |  5031 7557 3453 0604 |   123 | 11/25            
 Visa             |  4509 9535 6623 3704 |   123 | 11/25   
 American Express |  3711 803032 57522   |   1234| 11/25   
@@ -88,10 +87,10 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON
 >
 > Reintentos de cobros
 >
 > Por si tienes inconvenientes, te explicamos la lógica de reintentos de cobros. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Reintentos de cobros](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)

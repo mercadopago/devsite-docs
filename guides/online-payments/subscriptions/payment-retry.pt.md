@@ -45,18 +45,18 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 ------------
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_PT
+> LEFT_BUTTON
 >
 > Integração avançada
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advenced-integration/)
+> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advenced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON
 >
-> testes
+> Testes
 >
 > Verifique se suas assinaturas estão configuradas corretamente com os usuários de teste.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)

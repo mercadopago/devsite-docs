@@ -51,10 +51,10 @@ To create the plan, make the following call to our API with the data you need:
 ```
 ]]]
 
-Attributes
+#### Attributes
 
 Attribute |	Definition
------------- 	|	--------
+--- | ---
 `reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
 `auto_recurring.frequency` (required) | Indicates the length of time  or cycle based on the type of frequency. |
 `auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days).
@@ -114,10 +114,10 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
 ```
 ]]]
 
-Attributes
+#### Attributes
 
 Attribute |	Definition
------------- 	|	--------
+--- | ---
 `preapproval_plan_id` (required) | Refers to the previously generated plan.|
 `card_token_id` (required) | The information on the card will be converted into a token to send the data securely. |
 `payer_email` (required) | Payer's email address. |
@@ -287,20 +287,20 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
 Attributes
 
 Attribute |	Definition
------------- 	|	--------
-`reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
-`status` (required) | Subscription status. It can be `pending` or `authorized`. |
-`auto_recurring.frequency` (required) | Indicates the length of time or cycle based on the type of frequency. |
-`auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days).
-Along with the frequency, they define the installment cycle that a subscription will have. For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` (required) | Amount applicable to the subscription. |
-`auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
+--- | ---
+`reason` | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
+`status` | Subscription status. It can be `pending` or `authorized`. |
+`auto_recurring.frequency` | Indicates the length of time or cycle based on the type of frequency. |
+`auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days).
+Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
+`auto_recurring.transaction_amount` | Amount applicable to the subscription. |
+`auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
 `auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
-`auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency` |
+`auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency`. |
 `auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type` |
-`collector_id` (required) | Seller's identifier. |
-`payer_email` (required) | Payer's email address. |
-`card_token_id` (required) | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
+`collector_id` | Seller's identifier. |
+`payer_email` | Payer's email address. |
+`card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
 
 
 ------------
@@ -312,7 +312,7 @@ Along with the frequency, they define the installment cycle that a subscription 
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -320,4 +320,4 @@ Along with the frequency, they define the installment cycle that a subscription 
 >
 > Update, edit or cancel your subscriptions. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)

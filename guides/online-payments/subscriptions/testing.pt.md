@@ -2,29 +2,28 @@
 indexable: false
 ---
 
-# Testes   
-
-## Teste de assinaturas
+# Teste de assinaturas
 
 Explicamos como usar nossos cartões e usuários de teste para verificar se suas assinaturas foram criadas corretamente.
 
-> NOTE
+> WARNING
 > 
 > Limitações de teste de assinatura
 > 
 > No momento, com usuários experimentais só é possível realizar o fluxo de criação de uma assinatura e você não poderá ver o impacto ou registro da cota, seja através do painel Mercado Pago ou por API.
 
 
-### Como testar sua integração
+
+## Como testar sua integração
 
 **Os usuários de teste permitem testar suas assinaturas** ao gerar fluxos de pagamento com uma cópia exata das suas configurações.
 
-Tipos de usuário |   Descrição  
------------- 	 |	--------    
-Vendedor       |  Esta é a conta de teste que você usa para configurar a assinatura e credenciais para a cobrança.
-Pagador        |  É a conta de teste que você usa para testar os pagamentos recorrentes.  
+Tipos de usuário | Descrição  
+--- |	--- 
+Vendedor | Esta é a conta de teste que você usa para configurar a assinatura e credenciais para a cobrança.
+Pagador |  É a conta de teste que você usa para testar os pagamentos recorrentes.  
 
-### Como criar usuários
+## Como criar usuários
 
 Para começar, você precisa ter pelo menos dois usuários de teste: um comprador e um vendedor.
 
@@ -58,7 +57,7 @@ Execute o curl a seguir para gerar um usuário de teste:
 
 #### 1. Configure a assinatura com os dados do seu usuário vendedo
 
-Use a <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">chave pública de teste</a> do seu usuário vendedor na hora de criar a assinatura que quiser testar
+Use a <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">chave pública de teste</a> do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
 
 #### 2. Faça um pagamento com seu usuário comprador
 

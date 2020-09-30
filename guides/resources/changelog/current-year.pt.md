@@ -4,24 +4,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Outubro 2020
-
-### 1 de Outubro
-
-> CHANGELOG
->
-> Crie assinaturas para cobrar de forma recorrente
->
-> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
->
-> PRODUCT: ASSINATURAS
-
-As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.   
-
-[Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/subscriptions/)
-
----
-
 ## Setembro 2020
 
 ### 3 de setembro

@@ -51,14 +51,13 @@ Para criar o plano, faça a seguinte chamada à nossa API com os dados que preci
 ```
 ]]]
 
-Atributos
+#### Atributos
 
-Atributo |	Definição
------------- 	|	--------
+Atributo | Definição
+--- | ---
 `reason` (obrigatório) | Esta é a descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão. |
 `auto_recurring.frequency` (obrigatório) | Indica o tempo ou ciclo com base no tipo de frequência. |
-`auto_recurring.frequency_type` (obrigatório) | Indica o tipo de frequência. Pode ser por mês (months) ou por dia (days). Juntamente com a frequência, eles definem o ciclo de parcelas que uma assinatura terá. <br><br>Por exemplo, se a cada quinze dias fosse necessário gerar uma parcela para ser cobrada, seria assim: 
- `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
+`auto_recurring.frequency_type` (obrigatório) | Indica o tipo de frequência. Pode ser por mês (months) ou por dia (days). Juntamente com a frequência, eles definem o ciclo de parcelas que uma assinatura terá. <br><br>Por exemplo, se a cada quinze dias fosse necessário gerar uma parcela para ser cobrada, seria assim: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount` | Se indicarmos o valor, ele é fixo. Se não preenchermos este campo, entende-se que se trata de uma quantia variável. É permitido um máximo de duas casas decimais separadas por um ponto.|
 `auto_recurring.currency_id` (obrigatório) | Identifica a moeda que corresponde ao país. |
 `auto_recurring.repetitions` | Indica se a assinatura terá um limite. Se não for especificado, não há limite. Este limite se relaciona com `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
@@ -114,12 +113,12 @@ Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, cri
 ```
 ]]]
 
-Atributos
+#### Atributos
 
-Atributo |	Definição
------------- 	|	--------
+Atributo | Definição
+--- | ---
 `preapproval_plan_id` (obrigatório) | Refere-se ao plano gerado anteriormente.|
-`card_token_id` (obrigatório) | LAs informações no cartão serão convertidas em um token para enviar os dados com segurança. |
+`card_token_id` (obrigatório) | Las informações no cartão serão convertidas em um token para enviar os dados com segurança. |
 `payer_email` (obrigatório) | E-mail do pagador. |
 
 > WARNING
@@ -286,20 +285,20 @@ Para o cadastro, os detalhes do cartão devem ser informados usando nosso formul
 
 Atributos
 
-Atributo |	Definção
------------- 	|	--------
-`reason` (obrigatório) | Esta é a descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão. |
-`status` (obrigatório) | Status da assinatura. Pode ser `pending` ou `authorized`. |
-`auto_recurring.frequency` (obrigatório) | Indica o tempo ou ciclo com base no tipo de frequência. |
-`auto_recurring.frequency_type` (obrigatório) | Indica o tipo de frequência. Pode ser por mês (months) ou dias (days). Juntamente com a frequência, definem o ciclo de parcelas que uma assinatura terá. Por exemplo, se a cada duas semanas fosse necessário gerar uma parcela para ser cobrada, ficaria da seguinte forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` (obrigatório) | Valor aplicado à assinatura. |
-`auto_recurring.currency_id` (obrigatório) | Identifica a moeda que corresponde ao país. |
+Atributo | Definção
+--- | ---
+`reason` | Esta é a descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão. |
+`status` | Status da assinatura. Pode ser `pending` ou `authorized`. |
+`auto_recurring.frequency` | Indica o tempo ou ciclo com base no tipo de frequência. |
+`auto_recurring.frequency_type` | Indica o tipo de frequência. Pode ser por mês (months) ou dias (days). Juntamente com a frequência, definem o ciclo de parcelas que uma assinatura terá.<br><br> Por exemplo, se a cada duas semanas fosse necessário gerar uma parcela para ser cobrada, ficaria da seguinte forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
+`auto_recurring.transaction_amount` | Valor aplicado à assinatura. |
+`auto_recurring.currency_id` | Identifica a moeda que corresponde ao país. |
 `auto_recurring.end_date` | Indica se a assinatura terá um limite. Se não especificado, não há limite. |
 `auto_recurring.free_trial.frequency` | Indica o tempo pelo qual o serviço não será cobrado. Deve ser consistente com  `auto_recurring.frequency` |
-`auto_recurring.free_trial.frequency_type` | Indica o número de parcelas que não serão cobradas pelo serviço. Deve ser consistente com `auto_recurring.frequency_type` |
-`collector_id` (obrigatório) | Identificador do vendedor. |
-`payer_email` (obrigatório) | E-mail do pagador.  |
-`card_token_id` (obrigatório) | Se a assinatura já foi autorizada, as informações do cartão serão convertidas em um token para enviar os dados com segurança. |
+`auto_recurring.free_trial.frequency_type` | Indica o número de parcelas que não serão cobradas pelo serviço. Deve ser consistente com `auto_recurring.frequency_type`. |
+`collector_id` | Identificador do vendedor. |
+`payer_email` | E-mail do pagador.  |
+`card_token_id` | Se a assinatura já foi autorizada, as informações do cartão serão convertidas em um token para enviar os dados com segurança. |
 
 
 ------------
@@ -311,7 +310,7 @@ Atributo |	Definção
 >
 > Verifique se suas assinaturas estão configuradas corretamente com os usuários de teste. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -319,4 +318,4 @@ Atributo |	Definção
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)

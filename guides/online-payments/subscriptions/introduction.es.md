@@ -23,7 +23,7 @@ Existen dos roles involucrados:
 
 Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos claves:
 
-Concepto |	Descripción
+Concepto | Descripción
 --- |	---
 Plan o template | Es una plantilla que permite definir, entre otros atributos, el título, monto y frecuencia de las suscripciones creadas por el vendedor. Sirve para establecer características generales en las suscripciones que se creen a partir de esta entidad. Es importante aclarar que aquí todavía no se configura ningún medio de pago.|
 Suscripción o preapproval | Autorización del pagador para cobros recurrentes con un medio de pago definido que va ser la base para crear cuotas según la recurrencia que se defina. Tiene características similares al template, ya que puede crearse una suscripción a partir de un plan.|  
@@ -39,4 +39,4 @@ Pago de validación | Son pagos de monto mínimo que se realizan una sola vez po
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements/)
+> [Requisitos para integrar](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements/)

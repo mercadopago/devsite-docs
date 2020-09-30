@@ -2,28 +2,28 @@
 indexable: false
 ---
 
-# Test   
-
-## Test your subscriptions
+# Test your subscriptions
 
 We explain how to use our cards and test users to verify that your subscriptions are created correctly.
 
-> NOTE
+> WARNING
 > 
-> Subscription testing limitations:
+> Subscription testing limitations
 > 
 > At the moment, with test users it is only possible to carry out the flow of creating a subscription and you will not be able to see the impact or registration of the quota, either through the Mercado Pago panel or by API.
 
-### How to test your integration
+
+
+## How to test your integration
 
 **Test users allow you to test your subscriptions** by generating payment flows with an exact copy of your settings.
 
-User types |   Description  
------------- 	 |	--------    
-Seller       |  This is the test account you use to set up your subscription and billing credentials.           
-Payer        |  This is the test account that you use to test recurring payments.  
+User types | Description  
+--- |	---
+Seller | This is the test account you use to set up your subscription and billing credentials.        
+Payer  | This is the test account that you use to test recurring payments.
 
-### How to create users
+## How to create users
 
 To start, you need to have at least two test users: a buyer and a seller.
 
@@ -57,7 +57,7 @@ Run the following curl to generate a test user:
 
 #### 1. Set the subscription with the data of your seller user
 
-Use the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">test public key</a> of your seller user at the time of creating the subscription you want to test.
+Use the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">test public key</a> of your seller user at the time of creating the subscription you want to test.<br>
 
 #### 2. Make a payment with your buyer user
 
@@ -71,7 +71,7 @@ Credit card testing
 ### Test cards
 
 Card |   Number  | CVV   |   Expiration date
------------- 	 |	--------    |	--------    |	--------
+--- |	--- | --- | --- 
 Mastercard       |  5031 7557 3453 0604 |   123 | 11/25            
 Visa             |  4509 9535 6623 3704 |   123 | 11/25   
 American Express |  3711 803032 57522   |   1234| 11/25   
@@ -85,12 +85,12 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Update, edit or cancel your subscriptions.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_EN
+> RIGHT_BUTTON
 >
 > Reattempts to collect
 >
 > In case you have problems, we explain the logic of retrying collections. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Reattempts to collect](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)

@@ -4,7 +4,7 @@ indexable: false
 
 # Atualização de assinaturas
 
-Para atualizar, pausar, cancelar ou reativar uma assinatura já criada, é necessário usar o `preapproval_id` que retorna após a<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">criação</a>. 
+Para atualizar, pausar, cancelar ou reativar uma assinatura já criada, é necessário usar o `preapproval_id` que retorna após a <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">criação</a>. 
 
 ## Busca de uma assinatura
 
@@ -117,13 +117,13 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
 >
 > Verifique se suas assinaturas criadas estão devidamente configuradas com os usuários de teste. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
 
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON
 >
 > Lógica de novas tentativas de cobrança
 >
 > Caso você tenha problemas, explicamos a lógica de novas tentativas de cobrança.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Lógica de novas tentativas de cobrança](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)

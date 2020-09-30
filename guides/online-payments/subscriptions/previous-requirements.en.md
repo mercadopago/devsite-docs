@@ -50,4 +50,4 @@ Integrate with our <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/develope
 >
 > Choose your way to integrate and start receiving recurring payments.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/integration/)
+> [Integrate subscriptions](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/integration/)

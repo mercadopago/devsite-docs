@@ -42,18 +42,18 @@ the installment cannot be collected on the fourth reattempt, it will automatical
 ------------
 ### Next steps
 
-> LEFT_BUTTON_RECOMMENDED_EN
+> LEFT_BUTTON
 >
 > Advanced integration
 >
 > Update, edit or cancel your subscriptions.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advenced-integration/)
+> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advenced-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_EN
+> RIGHT_BUTTON
 >
 > Tests
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)

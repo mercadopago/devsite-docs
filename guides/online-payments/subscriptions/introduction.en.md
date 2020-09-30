@@ -23,7 +23,7 @@ There are two roles involved:
 
 In order to integrate subscriptions, you need to know four key concepts: 
 
-Concept |	Description
+Concept | Description
 --- |	---
 Plan o template | It is a template that allows you to define, among other attributes, the title, amount and frequency of subscriptions created by the seller. It serves to establish general characteristics in the subscriptions that are created from this entity. It is important to clarify that no payment method is set up here yet.|
 Subscription or pre-approval | Payer authorization for recurring payments with a defined payment method that will be the basis for creating installments according to the recurrence that is defined. It has similar characteristics to the template, since a subscription can be created from a plan. .|  
@@ -39,4 +39,4 @@ Validation payment | These are one-time minimum payments per subscription to ver
 >
 > View all the necessary requirements to start integrating.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/previous-requirements/)
+> [Requirements to integrate](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/previous-requirements/)
