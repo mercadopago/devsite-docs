@@ -57,7 +57,7 @@ Atributo | Definição
 --- | ---
 `reason` (obrigatório) | Esta é a descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão. |
 `auto_recurring.frequency` (obrigatório) | Indica o tempo ou ciclo com base no tipo de frequência. |
-`auto_recurring.frequency_type` (obrigatório) | Indica o tipo de frequência. Pode ser por mês (months) ou por dia (days). Juntamente com a frequência, eles definem o ciclo de parcelas que uma assinatura terá. <br><br>Por exemplo, se a cada quinze dias fosse necessário gerar uma parcela para ser cobrada, seria assim: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
+`auto_recurring.frequency_type` (obrigatório) | Indica o tipo de frequência. Pode ser por mês (months) ou por dia (days). Juntamente com a frequência, eles definem o ciclo de parcelas que uma assinatura terá. <br><br>Por exemplo, se a cada quinze dias fosse necessário gerar uma parcela para ser cobrada, seria assim: `auto_recurring.frequency`: 15 o `auto_recurring.frequency_type`: days |
 `auto_recurring.transaction_amount` | Se indicarmos o valor, ele é fixo. Se não preenchermos este campo, entende-se que se trata de uma quantia variável. É permitido um máximo de duas casas decimais separadas por um ponto.|
 `auto_recurring.currency_id` (obrigatório) | Identifica a moeda que corresponde ao país. |
 `auto_recurring.repetitions` | Indica se a assinatura terá um limite. Se não for especificado, não há limite. Este limite se relaciona com `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
@@ -125,7 +125,7 @@ Atributo | Definição
 > 
 > Importante
 > 
-> Dúvidas sobre como criar o token de pagamento? Encontre todas as informações na seção de __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_capture_os_dados_de_cart_o" target="_blank">Capturar dados do cartão</a>__.
+> Dúvidas sobre como criar o token de pagamento? Encontre todas as informações na seção de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_capture_os_dados_de_cart_o" target="_blank">Capturar dados do cartão</a>.
 
 #### Resposta 
 `HTTP Status 200 OK`

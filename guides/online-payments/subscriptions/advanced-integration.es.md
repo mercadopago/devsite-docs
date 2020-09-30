@@ -4,7 +4,7 @@ indexable: false
 
 # Actualización de suscripciones
 
-Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el `preapproval_id` que retorna luego de la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscriptions/integration/" target="_blank">creación</a>. 
+Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el `preapproval_id` que retorna luego de la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction/" target="_blank">creación</a>.
 
 ## Búsqueda de una suscripción
 
