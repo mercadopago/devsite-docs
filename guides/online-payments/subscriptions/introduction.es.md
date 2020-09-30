@@ -16,7 +16,7 @@ Existen dos roles involucrados:
 > 
 > ¿Quieres crear suscripciones de forma rápida y simple?
 > 
-> Ingresa en la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">Suscripciones</a> en el panel de tu cuenta de Mercado Pago, configura tus datos ¡y listo!
+> Ingresa en la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">Suscripciones</a> en el panel de tu cuenta de Mercado Pago, configura tus datos ¡y listo!.
 
 
 ## Conceptos claves

@@ -26,7 +26,7 @@ Observe que o valor mínimo permitido para criar uma assinatura é de $ 10 e o m
 ### Acesso à conta Mercado Pago ou Mercado Livre
 Para poder começar a integração, é necessário ter uma conta Mercado Pago ou Mercado Livre.
 
-Se você ainda não tem uma, pode <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">criar uma conta Mercado Pago</a> quando quiser.
+Se você ainda não tem uma, pode <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">criar uma conta</a> quando quiser.
 
 ### Tenha suas credenciais à mão
 

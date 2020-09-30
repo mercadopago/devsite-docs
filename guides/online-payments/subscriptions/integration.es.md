@@ -125,7 +125,7 @@ Atributos |	Descripción
 > 
 > Importante
 > 
-> ¿Tienes dudas sobre cómo crear el token de pago? Encuentra toda la información en la sección de __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">Capturar datos de la tarjeta.</a>__.
+> ¿Tienes dudas sobre cómo crear el token de pago? Encuentra toda la información en la sección de __<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks/official/js/" target="_blank">Capturar datos de la tarjeta</a>__.
 
 #### Respuesta 
 `HTTP Status 200 OK`
@@ -165,7 +165,7 @@ Si quieres usar una suscripción sin plan asociado, primero debes configurar el 
 
 ### Crear suscripción con pago autorizado
 
-Para crear una suscripción con estado authorized, se deben enviar los datos de la tarjeta a asociar de la siguiente manera:
+Para crear una suscripción con estado `authorized`, se deben enviar los datos de la tarjeta a asociar de la siguiente manera:
 
 [[[
 ```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
@@ -287,18 +287,18 @@ Atributos
 
 Atributo |	Descripción
 ------------ 	|	--------
-`reason (requerido)` | Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
-`status (requerido)` | Estado de la suscripción. Puede ser `pending` o `authorized`. |
+`reason` (requerido) | Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
+`status` (requerido) | Estado de la suscripción. Puede ser `pending` o `authorized`. |
 `auto_recurring.frequency` (requerido) | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
-`auto_recurring.frequency_type (requerido)` | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción. Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount (requerido)` | Monto que se aplica a la suscripción. |
-`auto_recurring.currency_id (requerido)` | Identifica la moneda que corresponde al país. |
+`auto_recurring.frequency_type` (requerido) | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción. Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
+`auto_recurring.transaction_amount` (requerido) | Monto que se aplica a la suscripción. |
+`auto_recurring.currency_id` (requerido) | Identifica la moneda que corresponde al país. |
 `auto_recurring.end_date` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. |
 `auto_recurring.free_trial.frequency` | Define un período de prueba inicial durante el cual podrás retrasar el primer cobro, indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency` |
 `auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type` |
-`collector_id (requerido)` | Identificador del vendedor. |
-`payer_email (requerido)` | E-mail del pagador. |
-`card_token_id (requerido)` | Si la suscripción ya fue autorizada, la información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
+`collector_id` (requerido) | Identificador del vendedor. |
+`payer_email` (requerido) | E-mail del pagador. |
+`card_token_id` (requerido) | Si la suscripción ya fue autorizada, la información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
 
 
 ------------

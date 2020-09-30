@@ -26,7 +26,7 @@ Please note that the minimum amount allowed to create a subscription is $ 10 and
 ### Access to the Mercado Pago or Mercado Libre account
 In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
 
-If you don't have one yet, you can <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">create a Mercado Pago account</a> whenever you want.
+If you don't have one yet, you can <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">create a account</a> whenever you want.
 
 ### Keep your credentials handy
 
