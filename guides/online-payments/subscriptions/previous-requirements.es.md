@@ -26,7 +26,7 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 ### Acceso a cuenta de Mercado Pago o Mercado Libre
 Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
 
-Si aún no tienes una, puedes <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">crear una cuenta en Mercado Pago</a> cuando quieras.
+Si aún no tienes una, puedes <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">crear una cuenta</a> cuando quieras.
 
 ### Ten a mano tus credenciales
 
