@@ -16,7 +16,7 @@ Há duas funções envolvidas:
 > 
 > Você quer criar assinaturas de forma rápida e fácil?
 > 
-> Entre na seção de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">Assinaturas</a> no painel da sua conta Mercado Pago, configure os dados que precisar e pronto!.
+> Entre na seção de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">Assinaturas</a> no painel da sua conta Mercado Pago, configure os dados que precisar e pronto!
 
 
 ## Conceitos-chave

@@ -16,7 +16,7 @@ There are two roles involved:
 > 
 > Do you want to create subscriptions quickly and easily?
 > 
-> Enter the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">Subscriptions</a> section on your Mercado Pago account panel, set the data you need and that's it!.
+> Enter the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">Subscriptions</a> section on your Mercado Pago account panel, set the data you need and that's it!
 
 
 ## Key concepts
