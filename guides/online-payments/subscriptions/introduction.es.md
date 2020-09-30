@@ -14,7 +14,10 @@ Existen dos roles involucrados:
 1. El __vendedor__ o __collector__, quien es dueño de la suscripción y acreedor de los importes que se debiten.
 1. El __pagador__ o __payer__, quien abonará los importes de forma automática desde el medio de pago que haya elegido
 
->¿Quieres crear suscripciones de forma rápida y simple?
+> NOTE
+> 
+> ¿Quieres crear suscripciones de forma rápida y simple?
+> 
 Ingresa en la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans" target="_blank">Suscripciones</a> en el panel de tu cuenta de Mercado Pago, configura tus datos ¡y listo!.
 
 
