@@ -82,7 +82,6 @@ You can [get business information](https://www.mercadopago.com.ar/developers/en/
 
  ```json
 {
-  "purpose": "wallet_purchase",
 	"items": [
 		{
 			"id": "item-ID-1234",
