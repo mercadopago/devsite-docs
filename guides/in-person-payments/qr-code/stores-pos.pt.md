@@ -131,4 +131,4 @@ Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes ent
 >
 > Aprenda passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-a/)

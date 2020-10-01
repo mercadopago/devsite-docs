@@ -131,4 +131,4 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
-> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-a/)
