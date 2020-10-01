@@ -7,18 +7,14 @@ As soluções do Mercado Pago no Shopify permitem receber pagamentos on-line no 
 
 > Mercado Pago é um parceiro oficial do Shopify: oferecemos segurança à todos os pagamentos feitos em sua loja.
 
-
-### Tipos de integração
-
 ----[mlb]----
+## Tipos de integração
+
 Escolha a solução que melhor se adequa ao seu negócio:
 
 __Checkout transparente Mercado Pago__: *app extension* do Shopify que oferece uma experiência de compra rápida e segura, sem sair da sua loja! Você pode instalá-lo na [app store do Shopify](https://apps.shopify.com/).
-------------
+
 __Checkout redirect Mercado Pago__: configure o Checkout Pro para que seus clientes finalizem o pagamento no nosso site. Ele já está pré-instalado no seu administrador do Shopify.
-
-
-----[mlb]----
 
 ## Checkout transparente
 

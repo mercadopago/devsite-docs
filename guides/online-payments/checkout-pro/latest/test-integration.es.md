@@ -51,7 +51,7 @@ curl -X POST \
 > * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
 
 
-## Prueba el flujo de Pago
+## Prueba el flujo de pago
 
 ### 1. Configura el checkout con los datos de tu usuario vendedor
 

@@ -6,7 +6,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Septiembre 2020
 
-
+----[mlb]----
 ### 29 de septiembre
 
 > CHANGELOG
@@ -20,7 +20,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 Lanzamos un nuevo Checkout Transparente para Shopify.
 
 Puedes ver toda la información en la [documentación oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/shopify/).
-
+------------
 
 ### 25 de septiembre
 

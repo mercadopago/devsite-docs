@@ -18,7 +18,6 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 
 ```json
 {
-    "purpose": "wallet_purchase",
     "items": [
         {
             "id": "item-ID-1234",
@@ -82,7 +81,6 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 
  ```json
 {
-  "purpose": "wallet_purchase",
 	"items": [
 		{
 			"id": "item-ID-1234",
