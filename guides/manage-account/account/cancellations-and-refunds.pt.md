@@ -77,7 +77,7 @@ curl -X PUT \
 É possível devolver um pagamento dentro de **360 dias** a partir de sua data de aprovação.
 ------------
 ----[mlb]----
-É possível devolver um pagamento dentro de **120 dias** a partir de sua data de aprovação.
+É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
 ------------
 ----[mlm]----
 É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.

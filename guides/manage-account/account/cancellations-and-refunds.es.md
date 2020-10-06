@@ -76,7 +76,7 @@ curl -X PUT \
 Puedes devolver un pago dentro de los **360 días** desde su acreditación.
 ------------
 ----[mlb]----
-Puedes devolver un pago dentro de los **120 días** desde su acreditación.
+Puedes devolver un pago dentro de los **180 días** desde su acreditación.
 ------------
 ----[mlm]----
 Puedes devolver un pago dentro de los **180 días** desde su acreditación.
