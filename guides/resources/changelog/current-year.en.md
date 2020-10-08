@@ -8,7 +8,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## October 2020
 
-### October 8th
+### October 15th
 
 > CHANGELOG
 >

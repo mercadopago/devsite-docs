@@ -8,7 +8,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Outubro 2020
 
-### 8 de outubro
+### 15 de outubro
 
 > CHANGELOG
 >

@@ -8,7 +8,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Octubre 2020
 
-### 8 de octubre
+### 15 de octubre
 
 > CHANGELOG
 >
