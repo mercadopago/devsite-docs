@@ -4,6 +4,25 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+----[mlb]----
+
+## Octubre 2020
+
+### 15 de octubre
+
+> CHANGELOG
+>
+> Nuevos plazos para devoluciones
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Extendimos los plazos de devoluciones a 180 días para todos los medios de pago.
+
+[Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
+------------
+
 ## Septiembre 2020
 
 ----[mlb]----
