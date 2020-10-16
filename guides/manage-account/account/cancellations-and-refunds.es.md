@@ -8,7 +8,7 @@ Existen diferentes situaciones en las que puedes querer anular una venta:
 
 * Si el status del pago es `pending`o `in_process` el dinero aún no se le ha cobrado al comprador, por lo que puedes efectuar una cancelación.
 
-* Si el `status` del pago es `approved` entonces tu comprador pudo efectuarlo y podrás realizar una devolución si lo deseas. 
+* Si el `status` del pago es `approved` entonces tu comprador pudo efectuarlo y podrás realizar una devolución si lo deseas.
 
 > WARNING
 >
@@ -20,13 +20,13 @@ Existen diferentes situaciones en las que puedes querer anular una venta:
 
 - Las cancelaciones se pueden hacer solo con _pending_ e _in process_.
 - Es importante para medios _off_.
-- La expiración de un pago se produce a los 30 días y la cancelación es automática, el status final del  mismo será cancelled/expired. 
+- La expiración de un pago se produce a los 30 días y la cancelación es automática, el status final del  mismo será cancelled/expired.
 
 Sólo puedes cancelar pagos que estén en estado `pending` o `in_process`. Cuando los canceles, ya no se aprobarán y podrás liberar el _stock_ que tengas pendiente de confirmación.
 
 Las cancelaciones se utilizan principalmente con **medios en efectivo**.
 
-Si bien los tickets de los medios off se vencen a los 5 días, el usuario puede volver a generarlos ingresando a la transacción en su cuenta de Mercado Pago. 
+Si bien los tickets de los medios off se vencen a los 5 días, el usuario puede volver a generarlos ingresando a la transacción en su cuenta de Mercado Pago.
 Para cancelarlos efectivamente y que no se puedan volver a generar por otros 5 días, evitando problemas de retención de stock por ejemplo, es necesario que ejecutes su cancelación.
 
 Para realizar la cancelación, realiza el siguiente request enviando el `status` en `cancelled`:
@@ -108,6 +108,15 @@ $payment->refund();
 
 ?>
 ```
+```node
+mercadopago.payment.refund(payment_id)
+  .then(function (response) {
+    //Procesar respuesta...
+  })
+  .catch(function (error) {
+    //Manejar el error...
+  });
+```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
@@ -159,9 +168,13 @@ Payment payment = Payment.findById(paymentId);
 payment.refund(10.5);
 ```
 ```node
-mercadopago.payment.refund(paymentId).then(function(data) {}
-  //Do Stuff ..
-});
+mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
+  .then(function (response) {
+    //Procesar respuesta...
+  })
+  .catch(function (error) {
+    //Manejar el error...
+  });
 ```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(paymnentId)
