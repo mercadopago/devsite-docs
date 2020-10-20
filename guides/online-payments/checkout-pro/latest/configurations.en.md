@@ -261,13 +261,14 @@ paymentmethods.Installments = 12;
 
 The default expiration date for cash payments is 30 days. If you want, you can change this date by sending the `date_of_expiration` field in the preference creation request. The configured date must be between 1 and 30 days from the preference creation date.
 
+[[[
 ```json
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00";
 ```
+]]]
 
 The deadline for approval of the cash payment is between 1 and 2 working days according to the payment method. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
 

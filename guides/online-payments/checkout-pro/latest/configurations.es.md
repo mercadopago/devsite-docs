@@ -304,13 +304,14 @@ Usa el atributo taxes para definir el valor que corresponda
 
 Por defecto, la fecha de vencimiento para los pagos en efectivo es de 30 días. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de la preferencia. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de creación de la preferencia de pago.
 
+[[[
 ```json
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00";
 ```
+]]]
 
 El período de acreditación es de 1 y 2 días hábiles según el medio de pago. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarte de que se realice el pago.
 
