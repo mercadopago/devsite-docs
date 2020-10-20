@@ -379,48 +379,38 @@ curl -X POST \
 
 Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Checkout Pro onde você quiser que ele apareça.
 
-> Se o seu site funciona em mobile, por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/). 
+> Por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/). 
 
 [[[
 ```php
-<form action="/processar_pagamento" method="POST">
   <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
    data-preference-id="<?php echo $preference->id; ?>">
   </script>
-</form>
 ```
 ```node
-<form method="POST">
   <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
    data-preference-id='<%= global.id %>'>
   </script>
-</form>
 ```
 ```java
-<form action="/processar_pagamento" method="POST">
   <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
    data-preference-id="${preference.id}">
   </script>
-</form>
 ```
 ```ruby
-<form action="/processar_pagamento" method="POST">
   <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
    data-preference-id="<%= @preference_id %>">
   </script>
-</form>
 ```
 ```csharp
-<form action="/processar_pagamento" method="POST">
   <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
    data-preference-id="@Html.DisplayFor(model => model.id)">
   </script>
-</form>
 ```
 ]]]
 

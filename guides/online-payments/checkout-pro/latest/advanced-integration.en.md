@@ -1,4 +1,4 @@
-# Advanced Integration
+ # Advanced Integration
 
 ## Receive Payment Notifications
 
@@ -219,42 +219,36 @@ preference.Items.Add(
 ]]]
 
 
-> You can find the list of categories for your `item` in the following [link](https://api.mercadopago.com/item_categories). If you cannot find the category of your product, send the value `others` as` category_id`.
+> You can find the list of categories for your `item` in the following [link](https://api.mercadopago.com/item_categories). If you cannot find the category of your product, send the value `others` as ` category_id`.
 
 
 ## Return URL
 
-At the end of the payment process, you have the option to **redirect the buyer to your website.**
-For this, `back_urls`are used. This redirection can be automatic through the `auto_return` attribute or a link that allows returning to the seller's website.
+At the end of the payment process you have the option to **redirect the buyer to your website.** In order to do this you need to add the `back_urls` attribute and define where you want the 'return to site' button to redirect the buyer depending on the payment status. 
+
+If you want this redirection to be made automatically you need to also add the `auto_return` attribute with value `success`. 
 
 > NOTE
 >
 > Note
 >
-> Note that the `backs_urls` only work for redirect and mobile mode. Not using [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration/), since to return to the site take the URL of the `form action`.
+> Note that the `auto_return` only works for redirect and mobile mode. It does not work for [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration/) since the buyer stays on your website.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
 Attribute |	Description
 ------------ 	|	--------
-`auto_return` | Automatically redirect to your site when the payment ends as approved. Possible values are _approved_ and _all_.
- | **_success._** Return URL for approved payment.
- `back_url`| **_pending._** Return URL for pending payment.
-  | **_failure._** Return URL for canceled payment.
+`auto_return` | Automatically redirect to your site when the payment is successful. Possible values are _approved_ and _all_.
+|`back_url`| **_success._** Return URL for approved payment.<br><br>**_pending._** Return URL for pending payment.<br><br>**_failure._** Return URL for canceled payment.
 
 Through the `back_url` *the following parameters will return*:
 
 Parameter |	Description
 ------------ 	|	--------
-`collection_id` | Payment ID of Mercado Pago. |
-`collection_status` | Payment status. For example: `approved` for an approved payment or` pending` for a pending payment. |
-`external_reference` | Value of the `external_reference` field that you sent when creating the payment preference. |
-`payment_type` | Payment type. For example: `credit_card` for credit cards or` ticket` for cash payment methods. |
+`payment_id` | Payment ID of Mercado Pago. |
+`status` | Payment status. For example: `approved` for an approved payment or ` pending` for a pending payment. |
+`external_reference` | Value that you sent when creating the payment preference. |
 `merchant_order_id` | Payment order ID created in Mercado Pago. |
-`preference_id` | Preference ID from which you are returning. |
-`site_id` | Returns the country ID of the seller's Mercado Pago account. For example: ----[mla]---- MLA for Argentina.------------ ----[mlb]---- MLB for Brazil.------------ ----[mlm]---- MLM for Mexico.------------ ----[mpe]---- MPE for Peru.------------ ----[mlc]---- MLC for Chile.------------ ----[mco]---- MCO for Colombia.------------ ----[mlu]---- MLU for Uruguay.------------ |
-`processing_mode` | Value `aggregator`. |
-`merchant_account_id` | Value `null`. |
 
 > The information of the parameters will depend on the finalization of the payment at the Checkout Pro and on the fact that the flow has not been abandoned before returning to your site through the `back_url` of **_failure_**.
 
