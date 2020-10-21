@@ -4,9 +4,23 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-----[mlb]----
-
 ## Octubre 2020
+
+### 22 de octubre
+ 
+> CHANGELOG
+>
+> Mejoramos la experiencia de las URLs de retorno
+>
+> NEWS: FEATURE
+>
+> Product: CHECKOUT PRO
+
+Ahora, para sumar el botón en tu sitio, ya no requieres de un formulario al momento de incorporar el script y puedes configurar cómo volver a tu sitio solo desde tu preferencia.  
+
+[Más información sobre URLs de retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno)
+
+----[mlb]----
 
 ### 15 de octubre
 
