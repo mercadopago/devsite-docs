@@ -1216,6 +1216,67 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 >
 > El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
 
+
+## Fecha de vencimiento para pagos en efectivo
+
+Por defecto, la fecha de vencimiento para los pagos en efectivo es de 3 días. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+
+[[[
+```php
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```csharp
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```curl
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+El período de acreditación es de 1 y 2 días hábiles según el medio de pago. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarte de que se realice el pago.
+
+Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) para realizar la configuración.
+
+> WARNING
+>
+> Importante
+>
+> Si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
+
+
 ## Recibir pagos con PSE
 
 Para poder recibir pagos con PSE, también tienes que enviar la institución financiera que procesa el pago.
