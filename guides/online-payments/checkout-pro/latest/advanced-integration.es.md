@@ -238,8 +238,8 @@ Si quieres que la redirección sea automática para pagos aprobados, tienes que 
 
 Atributo |	Descripción
 ------------ 	|	--------
-`auto_return` | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. Los valores posibles son _approved_ y _all_.
- |`back_url`| **_success._** URL de retorno ante pago aprobado.<br><br>**_pending._** URL de retorno ante pago pendiente.<br><br>**_failure._** URL de retorno ante pago cancelado.
+`auto_return` | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. El valor posible es `approved`.
+| `back_url` | `success`. URL de retorno ante pago aprobado.<br><br>`pending`. URL de retorno ante pago pendiente.<br><br>`failure`. URL de retorno ante pago cancelado.
 
 
 A través de las `back_url`, *retornarán los siguientes parámetros*:

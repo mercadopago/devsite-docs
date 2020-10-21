@@ -224,7 +224,7 @@ preference.Items.Add(
 ## URL de retorno
 
 No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
-Para isso, precisa adicionar o atributo `back_urls` e definir, segundo o status do pagamento, a onde quer que redirecionemos seu comprador quando ele clique no botão de 'voltar ao site'.
+Para isso, precisa adicionar o atributo `back_urls` e definir, segundo o status do pagamento, a onde quer que redirecionemos seu comprador quando ele clique no botão de voltar ao site.
 
 Se quer que o redirecionamento seja automático para os pagamentos aprovados, precisa adicionar também o atributo `auto_return` com valor `success`. 
 
@@ -238,8 +238,8 @@ Se quer que o redirecionamento seja automático para os pagamentos aprovados, pr
 
 Atributo |	Descrição
 ------------ 	|	--------
-`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são `approved` e `all`.
- `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento rejeitado.
+`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valor é `approved`.
+| `back_url` | `success`. URL de retorno perante pagamento aprovado.<br/><br/>`pending`. URL de retorno perante pagamento pendente.<br/><br/>`failure`. URL de retorno perante pagamento rejeitado.
 
 Através das `back_url` *serão retornados os seguintes parâmetros*:
 

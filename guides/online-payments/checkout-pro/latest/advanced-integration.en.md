@@ -238,8 +238,8 @@ If you want this redirection to be made automatically you need to also add the `
 
 Attribute |	Description
 ------------ 	|	--------
-`auto_return` | Automatically redirect to your site when the payment is successful. Possible values are _approved_ and _all_.
-|`back_url`| **_success._** Return URL for approved payment.<br><br>**_pending._** Return URL for pending payment.<br><br>**_failure._** Return URL for canceled payment.
+`auto_return` | Automatically redirect to your site when the payment is successful. Possible value is `approved`.
+| `back_url` | `success`. Return URL for approved payment.<br><br>`pending`. Return URL for pending payment.<br><br>`failure`. Return URL for canceled payment.
 
 Through the `back_url` *the following parameters will return*:
 
