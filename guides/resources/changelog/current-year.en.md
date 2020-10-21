@@ -18,7 +18,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 We do not require you to include a form along with the script in order to add the button to your site anymore. You can also configure ways to return to your site just through your preference. 
 
-[More information about return URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
+[More information about return URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration#bookmark_return_url)
 
 ----[mlb]----
 

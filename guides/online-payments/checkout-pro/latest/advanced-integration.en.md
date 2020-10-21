@@ -224,7 +224,7 @@ preference.Items.Add(
 
 ## Return URL
 
-At the end of the payment process you have the option to **redirect the buyer to your website.** In order to do this you need to add the `back_urls` attribute and define where you want the 'return to site' button to redirect the buyer depending on the payment status. 
+At the end of the payment process you have the option to **redirect the buyer to your website.** In order to do this you need to add the `back_urls` attribute and define where you want the return to site button to redirect the buyer depending on the payment status. 
 
 If you want this redirection to be made automatically you need to also add the `auto_return` attribute with value `success`. 
 
