@@ -98,6 +98,8 @@ MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
+> Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, puedes visitar la sección [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno). 
+
 [[[
  ```php
 <?php
@@ -377,8 +379,6 @@ curl -X POST \
 ### 2. Suma el checkout a tu sitio
 
 Por último, suma el siguiente código para mostrar el botón de pago de tu Checkout Pro en el lugar que quieras que aparezca.
-
-> Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, puedes visitar la sección [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno). 
 
 [[[
 ```php
