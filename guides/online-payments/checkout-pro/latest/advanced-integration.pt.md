@@ -224,34 +224,31 @@ preference.Items.Add(
 ## URL de retorno
 
 No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
-Para isso, `back_urls` são usados. Esse redirecionamento pode ser automático através do atributo `auto_return` ou de um link que permite retornar ao site do vendedor.
+Para isso, precisa adicionar o atributo `back_urls` e definir, segundo o status do pagamento, a onde quer que redirecionemos seu comprador quando ele clique no botão de voltar ao site.
+
+Se quer que o redirecionamento seja automático para os pagamentos aprovados, precisa adicionar também o atributo `auto_return` com valor `success`. 
 
 > NOTE
 >
 > Nota
 >
-> Observe que as `backs_urls` só funcionam para o modo redirect e mobile. Ao usar o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration/) é considerado a URL do `form action` para voltar ao site.
+> Tenha em conta que o atributo `auto_return` só funciona para o modo 'redirect' e 'mobile'. Isso não funciona quando usa o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration/) já que o comprador está sempre no site.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
 Atributo |	Descrição
 ------------ 	|	--------
-`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valores possíveis são `approved` e `all`.
- `back_url`| **_success._** URL de retorno perante pagamento aprovado.<br/><br/>**_pending._**  URL de retorno perante pagamento pendente.<br/><br/>**_failure._** URL de retorno perante pagamento rejeitado.
+`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valor é `approved`.
+| `back_url` | `success`. URL de retorno perante pagamento aprovado.<br/><br/>`pending`. URL de retorno perante pagamento pendente.<br/><br/>`failure`. URL de retorno perante pagamento rejeitado.
 
 Através das `back_url` *serão retornados os seguintes parâmetros*:
 
 Parâmetro |	Descrição
 ------------ 	|	--------
-`collection_id` | ID do pagamento do Mercado Pago. |
-`collection_status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
-`external_reference` | Valor do campo `external_reference` que foi enviado no momento da criação da preferência de pagamento. |
-`payment_type` | Tipo de pagamento. Ex.: `credit_card` para cartões de crédito ou `ticket` para meios de pagamento em dinheiro. |
+`payment_id` | ID do pagamento do Mercado Pago. |
+`status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
+`external_reference` | Valor que foi enviado no momento da criação da preferência de pagamento. |
 `merchant_order_id` | ID da ordem de pagamento gerada no Mercado Pago. |
-`preference_id` | ID da preferência de pagamento a partir da qual se está retornando. |
-`site_id` | ID do país da conta do Mercado Pago do vendedor. Ex.: ----[mla]---- MLA para Argentina.------------ ----[mlb]---- MLB para Brasil.------------ ----[mlm]---- MLM para México.------------ ----[mpe]---- MPE para Perú.------------ ----[mlc]---- MLC para Chile.------------ ----[mco]---- MCO para Colombia.------------ ----[mlu]---- MLU para Uruguay.------------ |
-`processing_mode` | Valor `aggregator`. |
-`merchant_account_id` | Valor `null`. |
 
 > Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure_**.
 

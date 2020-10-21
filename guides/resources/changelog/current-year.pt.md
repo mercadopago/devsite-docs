@@ -20,6 +20,20 @@ Agora, você pode adicionar a opção de receber pagamentos somente de usuários
 
 [Receber pagamentos com a carteira do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
 
+### 22 de outubro
+ 
+> CHANGELOG
+>
+> Melhoramos a experiência das URLs de retorno
+>
+> NEWS: FEATURE
+>
+> Product: CHECKOUT PRO
+
+Agora, para adicionar o botão ao seu site, você não precisa mais de um formulário ao incorporar o script e pode configurar como voltar ao seu site apenas com a sua preferência. 
+
+[Mais informações sobre URLs de retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno)
+
 ----[mlb]----
 ### 15 de outubro
 

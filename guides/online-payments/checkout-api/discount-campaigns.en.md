@@ -1,5 +1,6 @@
 ---
   description: Crea campañas de descuento para potenciar tus ventas utilizando las herramientas de marketing de tu cuenta de MercadoPago
+  indexable: false
 ---
 
 

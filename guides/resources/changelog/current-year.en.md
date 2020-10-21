@@ -20,6 +20,20 @@ Now, you can add the option to receive payments only from registered users with 
 
 [Receive payments by Mercado Pago wallet](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)
 
+### October 22nd
+ 
+> CHANGELOG
+>
+> Improved experience for return URLs
+>
+> NEWS: FEATURE
+>
+> Product: CHECKOUT PRO
+
+We do not require you to include a form along with the script in order to add the button to your site anymore. You can also configure ways to return to your site just through your preference. 
+
+[More information about return URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration#bookmark_return_url)
+
 ----[mlb]----
 ### October 15th
 
