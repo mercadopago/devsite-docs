@@ -35,6 +35,7 @@ Ahora, para sumar el botón en tu sitio, ya no requieres de un formulario al mom
 [Más información sobre URLs de retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno)
 
 ----[mlb]----
+
 ### 15 de octubre
 
 > CHANGELOG

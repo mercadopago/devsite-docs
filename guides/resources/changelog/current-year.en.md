@@ -35,6 +35,7 @@ We do not require you to include a form along with the script in order to add th
 [More information about return URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration#bookmark_return_url)
 
 ----[mlb]----
+
 ### October 15th
 
 > CHANGELOG

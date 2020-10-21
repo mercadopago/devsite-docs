@@ -35,6 +35,7 @@ Agora, para adicionar o botão ao seu site, você não precisa mais de um formul
 [Mais informações sobre URLs de retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno)
 
 ----[mlb]----
+
 ### 15 de outubro
 
 > CHANGELOG
