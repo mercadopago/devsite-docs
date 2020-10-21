@@ -62,13 +62,13 @@ You need to have a policy on terms and conditions and make it clear that you are
 ---
 ### Next steps
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_EN
 >
-> Test your integration
+> Accepts payments by Mercado Pago wallet
 >
-> Check that everything works in your integration with test users.
+> It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/test-integration/)
+> [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)
 
 > RIGHT_BUTTON
 >

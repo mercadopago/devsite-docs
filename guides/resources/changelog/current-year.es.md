@@ -4,10 +4,23 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-----[mlb]----
-
 ## Octubre 2020
 
+### 29 de octubre
+
+> CHANGELOG
+>
+> Recibe pagos solamente con la billetera de Mercado Pago
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+Ahora, puedes sumar la opción de recibir pagos solamente de usuarios registrados con el Checkout Pro modo billetera. Esto significa que tus compradores te pagarán exclusivamente con sus tarjetas guardadas o con su dinero disponible.
+
+[Recibir pagos con la billetera de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
+
+----[mlb]----
 ### 15 de octubre
 
 > CHANGELOG

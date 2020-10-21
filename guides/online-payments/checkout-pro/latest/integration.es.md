@@ -447,8 +447,8 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Acepta pagos solo de usuarios registrados
+> Acepta pagos con la billetera de Mercado Pago
 >
-> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero en cuenta.
+> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
 >
 > [Usuarios regsitrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)

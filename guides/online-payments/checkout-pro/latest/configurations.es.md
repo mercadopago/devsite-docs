@@ -474,13 +474,23 @@ curl -X POST \
 
 ## Aceptar pagos únicamente de usuarios registrados
 
-Puedes aceptar pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjetas y dinero en cuenta, agregando el siguiente atributo:
+Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas y dinero disponible.
+
+Esto permite que tus clientes puedan tener disponible la información de su cuenta al instante, como por ejemplo, sus tarjetas y domicilios guardados. 
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que agregando esta opción no podrás recibir pagos de usuarios que no tengan cuenta en Mercado Pago o Mercado Libre y tampoco podrás cobrar en efectivo ni transferencia.
+
+Para aceptar pagos exclusivamente de usuarios registrados, agrega el siguiente atributo en tu preferencia:
 
 ```json
 "purpose": "wallet_purchase"
 ```
 
-Al agregarlo, tu preferencia quedaría de la siguiente manera:
+Al hacerlo, tu preferencia quedaría de la siguiente manera:
 
 ```json
 {

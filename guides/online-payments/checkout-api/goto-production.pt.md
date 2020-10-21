@@ -59,13 +59,14 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 ---
 ### Próximos passos
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_PT
 >
-> Teste sua integração
+> Aceite pagamentos com a carteira Mercado Pago
 >
-> Revise que esteja tudo bem com sua integração utilizando os usuários de teste.
+> Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing/)
+> [Usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+
 
 > RIGHT_BUTTON
 >

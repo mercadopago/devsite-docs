@@ -62,13 +62,13 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_ES
 >
-> Prueba tu integración
+> Acepta pagos con la billetera de Mercado Pago
 >
-> Revisa que esté todo bien en tu integración utilizando los  usuarios de prueba.
+> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
 >
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing/)
+> [Usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
 
 > RIGHT_BUTTON
 >

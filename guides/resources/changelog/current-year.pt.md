@@ -4,10 +4,23 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-----[mlb]----
-
 ## Outubro 2020
 
+### 29 de outubro
+
+> CHANGELOG
+>
+> Receba pagamentos somente com a carteira do Mercado Pago
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+Agora, você pode adicionar a opção de receber pagamentos somente de usuários cadastrados com o Checkout Pro modo carteira. Isto significa que seus compradores pagarão exclusivamente com seus cartões salvos ou com saldo em conta.
+
+[Receber pagamentos com a carteira do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+
+----[mlb]----
 ### 15 de outubro
 
 > CHANGELOG

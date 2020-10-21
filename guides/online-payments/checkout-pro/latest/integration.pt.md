@@ -447,8 +447,8 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Aceite somente usuários cadastrados
+> Aceite pagamentos com a carteira Mercado Pago
 >
-> Permite pagamentos apenas de usuários cadastrados no Mercado Pago, com cartão e dinheiro em conta.
+> Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
 > [Usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
