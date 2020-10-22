@@ -238,10 +238,10 @@ Se quer que o redirecionamento seja automático para os pagamentos aprovados, pr
 
 Atributo |	Descrição
 ------------ 	|	--------
-`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. Os valor é `approved`.
-| `back_url` | `success`. URL de retorno perante pagamento aprovado.<br/><br/>`pending`. URL de retorno perante pagamento pendente.<br/><br/>`failure`. URL de retorno perante pagamento rejeitado.
+`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. O valor é `approved`.
+| `back_urls` | `success`. URL de retorno perante pagamento aprovado.<br/><br/>`pending`. URL de retorno perante pagamento pendente.<br/><br/>`failure`. URL de retorno perante pagamento rejeitado.
 
-Através das `back_url` *serão retornados os seguintes parâmetros*:
+Através das `back_urls` *serão retornados os seguintes parâmetros*:
 
 Parâmetro |	Descrição
 ------------ 	|	--------
@@ -250,7 +250,7 @@ Parâmetro |	Descrição
 `external_reference` | Valor que foi enviado no momento da criação da preferência de pagamento. |
 `merchant_order_id` | ID da ordem de pagamento gerada no Mercado Pago. |
 
-> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site através da `back_url` de **_failure_**.
+> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site através da `back_urls` de **_failure_**.
 
 [[[
 ```php

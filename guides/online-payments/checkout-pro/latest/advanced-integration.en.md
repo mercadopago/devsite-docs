@@ -239,9 +239,9 @@ If you want this redirection to be made automatically you need to also add the `
 Attribute |	Description
 ------------ 	|	--------
 `auto_return` | Automatically redirect to your site when the payment is successful. Possible value is `approved`.
-| `back_url` | `success`. Return URL for approved payment.<br><br>`pending`. Return URL for pending payment.<br><br>`failure`. Return URL for canceled payment.
+| `back_urls` | `success`. Return URL for approved payment.<br><br>`pending`. Return URL for pending payment.<br><br>`failure`. Return URL for canceled payment.
 
-Through the `back_url` *the following parameters will return*:
+Through the `back_urls` *the following parameters will return*:
 
 Parameter |	Description
 ------------ 	|	--------
@@ -250,7 +250,7 @@ Parameter |	Description
 `external_reference` | Value that you sent when creating the payment preference. |
 `merchant_order_id` | Payment order ID created in Mercado Pago. |
 
-> The information of the parameters will depend on the finalization of the payment at the Checkout Pro and on the fact that the flow has not been abandoned before returning to your site through the `back_url` of **_failure_**.
+> The information of the parameters will depend on the finalization of the payment at the Checkout Pro and on the fact that the flow has not been abandoned before returning to your site through the `back_urls` of **_failure_**.
 
 
 [[[
