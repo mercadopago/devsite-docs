@@ -26,7 +26,7 @@ Recomendamos detalhar todas as informações possíveis sobre o item e o comprad
   $payer->date_created = "2018-06-02T12:58:41.425-04:00";
   $payer->phone = array(
     "area_code" => "11",
-    "number" => "4444-4444"
+    "number" => 4444-4444
   );
     ----[mla, mlb, mlu, mco, mlc, mpe]----
   $payer->identification = array(
@@ -51,7 +51,7 @@ var payer = {
   date_created: "2015-06-02T12:58:41.425-04:00",
   phone: {
     area_code: "11",
-    number: "4444-4444"
+    number: 4444-4444
   },
   ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: {
@@ -76,7 +76,7 @@ payer.setName("Joao")
      .setDateCreated("2018-06-02T12:58:41.425-04:00")
      .setPhone(new Phone()
         .setAreaCode("11")
-        .setPhoneNumber("4444-4444"))
+        .setPhoneNumber(4444-4444))
       ----[mla, mlb, mlu, mco, mlc, mpe]----
      .setIdentification(new Identification()
         .setType("CPF")
@@ -97,7 +97,7 @@ payer = MercadoPago::Payer.new({
   date_created: Time.now
   phone: MercadoPago::Phone.new({
     area_code: "11",
-    number: "4444-4444"
+    number: 4444-4444
   })
   ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: MercadoPago::Identification.new({
@@ -126,7 +126,7 @@ Payer payer = new Payer()
     Phone = new Phone()
     {
         AreaCode = "11",
-        Number = "4444-4444"
+        Number = 4444-4444
     },
     ----[mla, mlb, mlu, mco, mlc, mpe]----
     Identification = new Identification()
