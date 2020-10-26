@@ -152,6 +152,9 @@ Diners Club International	| `credit_card`            | `diners`
 Tarjeta CMR             	| `credit_card`            | `cmr`
 Tarjeta Magna             	| `credit_card`            | `magna`
 Tarjeta Presto             	| `credit_card`            | `presto`
+Visa Debit             	| `debit_card`            | `debvisa`
+Mastercard Debit             	| `debit_card`            | `debmaster`
+Redcompra             	| `debit_card`            | `redcompra`
 Servipag      			| `ticket`                 | `servipag`
 Red Compras (Webpay)		| `bank_transfer`          | `webpay`
 Khipu      			| `bank_transfer`          | `khipu`
