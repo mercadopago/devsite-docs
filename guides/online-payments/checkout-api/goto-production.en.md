@@ -68,7 +68,7 @@ You need to have a policy on terms and conditions and make it clear that you are
 >
 > It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
-> [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)
+> [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/configurations/#bookmark_accept_payments_from_registered_users_only)
 
 > RIGHT_BUTTON
 >
