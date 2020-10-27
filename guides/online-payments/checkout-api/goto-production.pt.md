@@ -65,7 +65,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
-> [Usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+> [Usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/wallet-integration)
 
 
 > RIGHT_BUTTON
