@@ -68,7 +68,7 @@ You need to have a policy on terms and conditions and make it clear that you are
 >
 > It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
-> [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/configurations/#bookmark_accept_payments_from_registered_users_only)
+> [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/wallet-integration)
 
 > RIGHT_BUTTON
 >
@@ -77,4 +77,3 @@ You need to have a policy on terms and conditions and make it clear that you are
 > Find all the information required to interact with our APIs.
 >
 > [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
-
