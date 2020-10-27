@@ -1,6 +1,6 @@
 # Receive payments by Mercado Pago wallet
 
-Add in your integration the Checkout Pro wallet mode, so that **you receive payments only from Mercado Pago registered users with their cards and available balance.**
+Add in your integration the Checkout Pro wallet mode, so that **you receive payments only from Mercado Pago registered users with their cards and available balance**.
 
 This means that your customers have more ways to pay you and can access better benefits, without changing the dynamics of your Checkout API.
 
