@@ -4,7 +4,12 @@ Add in your integration the Checkout Pro wallet mode, so that **you receive paym
 
 This means that your customers have more ways to pay you and can access better benefits, without changing the dynamics of your Checkout API.
 
+----[mla, mlm, mlc, mco, mpe, mlu]----
 ![Checkout-Wallet](/images/web-payment-checkout/cho-wallet-landing.png)
+------------
+----[mlb]----
+![Checkout-Wallet](/images/web-payment-checkout/cho-wallet-landing-pt.png)
+------------
 
 ## Benefits of Mercado Pago wallet
 
