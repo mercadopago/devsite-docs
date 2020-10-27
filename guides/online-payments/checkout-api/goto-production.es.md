@@ -68,7 +68,7 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 >
 > Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
 >
-> [Usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
+> [Usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/wallet-integration)
 
 > RIGHT_BUTTON
 >
