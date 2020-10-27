@@ -266,13 +266,13 @@ The default expiration date for cash payments is 30 days. If you want, you can c
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-"date_of_expiration": "2020-05-30T23:59:59.000-04:00";
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
 ```
 ]]]
 
 The deadline for approval of the cash payment is between 1 and 2 working days according to the payment method. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
 
-Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) when configuring.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_221) when configuring.
 
 > WARNING
 >
