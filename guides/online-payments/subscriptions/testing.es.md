@@ -6,13 +6,6 @@ indexable: false
 
 Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verificar que tus suscripciones sean creadas correctamente.
 
-> WARNING
-> 
-> Limitaciones de pruebas en suscripciones
-> 
-> Por el momento, con los usuarios de prueba solo es posible realizar el flujo de creación de una suscripción y no podrás ver el impacto o registro de la cuota, ya sea a través del panel de Mercado Pago o por API.
-
-
 
 ## Cómo probar tu integración
 
