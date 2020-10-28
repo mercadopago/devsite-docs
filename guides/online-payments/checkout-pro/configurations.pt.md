@@ -454,7 +454,12 @@ curl -X POST \
 
 ## Aceitar pagamentos somente de usuários cadastrados
 
+----[mla,mlb]----
 Você pode aceitar pagamentos com a carteira do Mercado Pago exclusivamente de usuários cadastrados, com cartão, saldo disponível e Mercado Crédito.
+------------
+----[mlm, mlc, mco, mpe, mlu]----
+Você pode aceitar pagamentos com a carteira do Mercado Pago exclusivamente de usuários cadastrados, com cartão e saldo disponível.
+------------
 
 Isto permite que seus clientes tenham suas informações de conta disponíveis no ato, tais como seus cartões e endereços salvos. 
 

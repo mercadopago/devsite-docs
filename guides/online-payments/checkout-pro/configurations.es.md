@@ -474,7 +474,12 @@ curl -X POST \
 
 ## Aceptar pagos únicamente de usuarios registrados
 
+----[mla,mlb]----
+Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas, dinero disponible y Mercado Crédito.
+------------
+----[mlm, mlc, mco, mpe, mlu]----
 Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas y dinero disponible.
+------------
 
 Esto permite que tus clientes puedan tener disponible la información de su cuenta al instante, como por ejemplo, sus tarjetas y domicilios guardados. 
 
