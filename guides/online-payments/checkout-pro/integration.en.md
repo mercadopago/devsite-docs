@@ -438,8 +438,8 @@ _Click on the link within your site and [test the integration of your Checkout P
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Accept payments from registered users only
+> Accepts payments by Mercado Pago wallet
 >
-> Allows payments only from users registered in Mercado Pago, with cards and money in account.
+> It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
 > [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)

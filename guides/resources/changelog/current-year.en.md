@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## October 2020
 
+### October 29th
+
+> CHANGELOG
+>
+> Receive payments only by the Mercado Pago wallet
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+Now, you can add the option to receive payments only from registered users with the Checkout Pro wallet mode. This means that your buyers will pay you exclusively with their saved cards or with their account balance.
+
+[Receive payments by Mercado Pago wallet](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)
+
 ### October 26th
 
 > CHANGELOG

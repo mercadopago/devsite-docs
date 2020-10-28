@@ -430,13 +430,23 @@ curl -X POST \
 
 ## Accept payments from registered users only
 
-You can accept payments exclusively from Mercado Pago registered users, with card and account balance, adding the following attribute:
+You can accept payments with the Mercado Pago wallet exclusively from registered users, with cards and money in account.
+
+This allows your customers to have their account information available instantly, such as their saved cards and addresses.
+
+> WARNING
+>
+> Important
+>
+> Please note that by adding this option you will not be able to receive payments from users who do not have a Mercado Pago or Mercado Libre account and you will not be able to collect by cash or transfer.
+
+To accept payments from registered users only, add the following attribute to your preferences:
 
 ```json
 "purpose": "wallet_purchase"
 ```
 
-When you add it, your preference would be as follows:
+In doing so, your preference would be as follows:
 
 ```json
 {

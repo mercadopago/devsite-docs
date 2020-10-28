@@ -454,13 +454,23 @@ curl -X POST \
 
 ## Aceitar pagamentos somente de usuários cadastrados
 
-Você pode aceitar pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta, adicionando o seguinte atributo:
+Você pode aceitar pagamentos com a carteira do Mercado Pago exclusivamente de usuários cadastrados, com cartão, saldo disponível e Mercado Crédito.
+
+Isto permite que seus clientes tenham suas informações de conta disponíveis no ato, tais como seus cartões e endereços salvos. 
+
+> WARNING
+>
+> Importante
+>
+> Observe que, ao adicionar esta opção, você não poderá receber pagamentos de usuários que não possuem uma conta Mercado Pago ou Mercado Livre e não poderá receber via dinheiro ou transferência.
+
+Para aceitar pagamentos somente de usuários cadastrados, adicione o seguinte atributo às suas preferências:
 
 ```json
 "purpose": "wallet_purchase"
 ```
 
-Ao adicioná-lo, sua preferência ficaria da seguinte forma:
+Ao fazer isso, sua preferência seria a seguinte:
 
 ```json
 {
