@@ -562,7 +562,7 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
-Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
+Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
 ## Etapas para configurar
@@ -624,7 +624,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 
 ## Configura las condiciones de pago
 
-Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o
+Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito), [transferencia bancaria](#condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o
 [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout Pro](#bookmark_condición_de_pagos_con_checkout_pro).
 
 
@@ -633,8 +633,9 @@ Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con 
 Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
 1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
-2. [Transferencia bancaria (PSE)](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria)
-3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
+2. [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
+3. [Transferencia bancaria (PSE)](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria)
+4. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
 
 <br>
@@ -659,6 +660,21 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
+
+
+<br>
+#### Condición de pagos para tarjeta de débito
+
+Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago.
+2. En la pestaña Condiciones de pago, haz clic en +.
+3. Luego, en la sección de Tarjetas de débito, elige el medio de pago que quieras agregar. Se deben agregar Visa débito y Master débito.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status.
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago.
+7. Haz clic en Guardar.
+
 
 
 <br>
