@@ -6,6 +6,26 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## October 2020
 
+### October 26th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.5.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.5.0) for further details regarding this release.
+
 ### October 22nd
  
 > CHANGELOG
@@ -105,7 +125,7 @@ From now on, you must start adding your Access Token to the request headers inst
 You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
 
 
-### September 21th
+### September 21st
 
 > CHANGELOG
 >
@@ -178,7 +198,7 @@ In order to optimize your sales, we have added a new attribute that will allow y
 
 ## August 2020
 
-### August 31th
+### August 31st
 
 > CHANGELOG
 >
@@ -428,7 +448,7 @@ We have released the new version 4.2.1 for WooCommerce.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.1) for further details regarding this release.
 
-### May 13th
+### May 13rd
 
 > CHANGELOG
 >
