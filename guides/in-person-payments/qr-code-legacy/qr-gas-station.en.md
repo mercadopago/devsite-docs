@@ -265,7 +265,7 @@ Two test users must be created: one buyer and another collector. With the billin
 
 > **NOTE**: If in the tests you will use a test account, all accounts must be tested. Otherwise, if you use a real account, all related accounts must be real. **If the `sponsor_id` is added in the testing phase, remember that you must be a test user.**
 
-Consult the [test data](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/testing): test users and test cards that can be used.
+Consult the [test data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration): test users and test cards that can be used.
 
 | Test cases                                                   | Expected response                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

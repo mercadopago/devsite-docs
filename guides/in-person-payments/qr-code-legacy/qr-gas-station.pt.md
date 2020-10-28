@@ -266,7 +266,7 @@ Para testar a integração, você deve criar dois usuários de teste: um comprad
 
 Você usará o usuário vendedor para criar o QR e completar o dado `collector_id`; Assim, com o usuário comprador, acesse o aplicativo Mercado Pago ou Mercado Livre e complete o fluxo.
 
-Verifique os [dados de teste](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/v1/testing): teste usuários e cartões de teste que podem ser usados.
+Verifique os [dados de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration): teste usuários e cartões de teste que podem ser usados.
 
 > **NOTA**: Se nos testes você usar uma conta de teste, todas as contas devem ser de testes. Caso contrário, se você usar uma conta real, todas as contas relacionadas deverão ser reais. **Se o `sponsor_id` for adicionado na fase de teste, lembre-se de que você deve ser um usuário de teste.**
 

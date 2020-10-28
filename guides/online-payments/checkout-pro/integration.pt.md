@@ -1,28 +1,28 @@
-# Integra Checkout Pro
+# Integre o Checkout Pro
 
-## ¿Cómo me integro?
+## Como me integro?
 
 ![Integration](/images/web-payment-checkout/flow-v2.png)
 
-1. Genera tu preferencia
+1. Gere sua preferência
 
-	1.1 Suma la SDK descargada de Mercado Pago en tu proyecto.
+	1.1 Adicione o SDK baixado do Mercado Pago no seu projeto.
 
-	1.2 Agrega las credenciales para habilitar el uso de la SDK de Mercado Pago.
+	1.2 Adicione as credenciais para habilitar o uso do SDK do Mercado Pago.
 
-	1.3 Configura la preferencia según tu producto o servicio.
+	1.3 Configure a preferência conforme seu produto ou serviço.
 
-2. Suma el checkout a tu sitio
+2. Adicione o checkout ao seu site
 
-## Pasos para integrarte
+## Etapas para se integrar
 
-Instalar el Checkout Pro consta de dos pasos:
+Instalar o Checkout Pro requer duas etapas:
 
-### 1. Genera tu preferencia
+### 1. Gere sua preferência
 
-Escribe el siguiente código que consta de tres partes:
+Insira o seguinte código que consta de três partes:
 
-1.1 Suma la <a href="https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK de Mercado Pago</a> en tu proyecto:
+1.1 Adicione o <a href="https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos" target="_blank"> SDK do Mercado Pago</a> no seu projeto:
 
 [[[
 ```php
@@ -49,7 +49,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Agrega las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
+<br/><br/>1.2 Adicione as <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais</a> para habilitar o uso do SDK do Mercado Pago:<br/>
 
 [[[
 ```php
@@ -57,7 +57,7 @@ require 'mercadopago.rb'
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
@@ -65,7 +65,7 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 // SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-// Agrega credenciales
+// Configura credenciais
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
@@ -74,31 +74,31 @@ mercadopago.configure({
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
 # SDK de Mercado Pago
 require 'mercadopago.rb'
 
-# Agrega credenciales
+# Configura credenciais
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ]]]
 
 
-<br/><br/>1.3 Configura la preferencia según tu producto o servicio:<br/>
+<br/><br/>1.3 Configure a preferência conforme seu produto ou serviço:<br/>
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
-> Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, puedes visitar la sección [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno). 
+> Por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno). 
 
 [[[
  ```php
@@ -106,15 +106,15 @@ MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 $preference = new MercadoPago\Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 $item = new MercadoPago\Item();
-$item->title = 'Mi producto';
+$item->title = 'Meu produto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
@@ -125,16 +125,16 @@ $preference->save();
 // SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-// Agrega credenciales
+// Configura credenciais
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 let preference = {
   items: [
     {
-      title: 'Mi producto',
+      title: 'Meu produto',
       unit_price: 100,
       quantity: 1,
     }
@@ -143,7 +143,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
+// Este valor substituirá a string "<%= global.id %>" no seu HTML
   global.id = response.body.id;
 }).catch(function(error){
   console.log(error);
@@ -153,15 +153,15 @@ mercadopago.preferences.create(preference)
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 Preference preference = new Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 Item item = new Item();
-item.setTitle("Mi producto")
+item.setTitle("Meu produto")
     .setQuantity(1)
     .setUnitPrice((float) 75.56);
 preference.appendItem(item);
@@ -171,14 +171,14 @@ preference.save();
 # SDK de Mercado Pago
 require 'mercadopago.rb'
 
-# Agrega credenciales
+# Configura credenciais
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 
-# Crea un objeto de preferencia
+# Cria um objeto de preferência
 preference_data = {
   "items": [
     {
-      "title": "Mi producto",  
+      "title": "Meu produto",  
       "unit_price": 100,
       "quantity": 1
     }
@@ -186,24 +186,24 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
 @preference_id = preference["response"]["id"]
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 Preference preference = new Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 preference.Items.Add(
   new Item()
   {
-    Title = "Mi producto",
+    Title = "Meu produto",
     Quantity = 1,
     CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75.56
@@ -220,7 +220,7 @@ curl -X POST \
   -d '{
     "items": [
         {
-            "title": "Mi producto",
+            "title": "Meu produto",
             "quantity": 1,
             "unit_price": 75.76
         }
@@ -232,21 +232,22 @@ curl -X POST \
 ------------
 
 ----[mlc, mco]----
+
 [[[
  ```php
 <?php
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 $preference = new MercadoPago\Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 $item = new MercadoPago\Item();
-$item->title = 'Mi producto';
+$item->title = 'Meu produto';
 $item->quantity = 1;
 $item->unit_price = 75;
 $preference->items = array($item);
@@ -257,16 +258,16 @@ $preference->save();
 // SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
-// Agrega credenciales
+// Configura credenciais
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 let preference = {
   items: [
     {
-      title: 'Mi producto',
+      title: 'Meu produto',
       unit_price: 100,
       quantity: 1,
     }
@@ -275,7 +276,7 @@ let preference = {
 
 mercadopago.preferences.create(preference)
 .then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
+// Este valor substituirá a string "<%= global.id %>" no seu HTML
   global.id = response.body.id;
 }).catch(function(error){
   console.log(error);
@@ -285,15 +286,15 @@ mercadopago.preferences.create(preference)
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 Preference preference = new Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 Item item = new Item();
-item.setTitle("Mi producto")
+item.setTitle("Meu produto")
     .setQuantity(1)
     .setUnitPrice((float) 75);
 preference.appendItem(item);
@@ -303,14 +304,14 @@ preference.save();
 # SDK de Mercado Pago
 require 'mercadopago.rb'
 
-# Agrega credenciales
+# Configura credenciais
 $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 
-# Crea un objeto de preferencia
+# Cria um objeto de preferência
 preference_data = {
   "items": [
     {
-      "title": "Mi producto",
+      "title": "Meu produto",
       "unit_price": 100,
       "quantity": 1
     }
@@ -318,24 +319,24 @@ preference_data = {
 }
 preference = $mp.create_preference(preference_data)
 
-# Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
 @preference_id = preference["response"]["id"]
 ```
 ```csharp
 // SDK de Mercado Pago
 using MercadoPago;
 
-// Agrega credenciales
+// Configura credenciais
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crea un objeto de preferencia
+// Cria um objeto de preferência
 Preference preference = new Preference();
 
-// Crea un ítem en la preferencia
+// Cria um item na preferência
 preference.Items.Add(
   new Item()
   {
-    Title = "Mi producto",
+    Title = "Meu produto",
     Quantity = 1,
     CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
     UnitPrice = (decimal)75
@@ -352,7 +353,7 @@ curl -X POST \
   -d '{
     "items": [
         {
-            "title": "Mi producto",
+            "title": "Meu produto",
             "quantity": 1,
             "unit_price": 75
         }
@@ -365,80 +366,79 @@ curl -X POST \
 >
 > Importante
 >
-> El valor de `unit_price` debe ser entero.
+> O valor de `unit_price` deve ser um número inteiro.
 
 ------------
 <span></span>
 
 > NOTE
 >
-> Acepta pagos solo de usuarios registrados
+> Aceite pagamentos apenas de usuários cadastrados
 >
-> Si quieres aceptar pagos únicamente de usuarios registrados, con tarjetas y dinero en cuenta de Mercado Pago, ingresa en [esta sección](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados) para más información. 
+> Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
 
-### 2. Suma el checkout a tu sitio
+### 2. Adicione o checkout ao seu site
 
-Por último, suma el siguiente código para mostrar el botón de pago de tu Checkout Pro en el lugar que quieras que aparezca.
+Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Checkout Pro onde você quiser que ele apareça.
 
 [[[
 ```php
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<?php echo $preference->id; ?>">
-  </script>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
 ```
 ```node
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id='<%= global.id %>'>
-  </script>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id='<%= global.id %>'>
+</script>
 ```
 ```java
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="${preference.id}">
-  </script>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="${preference.id}">
+</script>
 ```
 ```ruby
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<%= @preference_id %>">
-  </script>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= @preference_id %>">
+</script>
 ```
 ```csharp
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="@Html.DisplayFor(model => model.id)">
-  </script>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="@Html.DisplayFor(model => model.id)">
+</script>
 ```
 ]]]
-
 
 > WARNING
 >
 > Importante
 >
-> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/> 
+> Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
 
-#### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
+#### Excelente! Você concluiu sua integração.
+_Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
 
 ---
 
-### Próximos pasos
+### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
-> Prueba tu integración
+> Teste sua integração
 >
-> Revisa que esté todo bien en tu integración con los usuarios de prueba.
+> Confira se está tudo em ordem na sua integração com os usuários de teste.
 >
-> [Pruebas](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/test-integration/)
+> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Acepta pagos con la billetera de Mercado Pago
+> Aceite pagamentos com a carteira Mercado Pago
 >
-> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
+> Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
-> [Usuarios regsitrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
+> [Usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
