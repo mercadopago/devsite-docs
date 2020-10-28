@@ -430,7 +430,7 @@ curl -X POST \
 
 ## Accept payments from registered users only
 
-----[mla,mlb]----
+----[mla, mlb]----
 You can accept payments with the Mercado Pago wallet exclusively from registered users, with cards, money in account and Mercado Crédito.
 ------------
 ----[mlm, mlc, mco, mpe, mlu]----
@@ -488,7 +488,7 @@ We know it’s important to maximize your ads effectiveness. For this reason, we
 >
 > Note
 >
-----[mla,mlb]----
+----[mla, mlb]----
 > Only instantly approved payments with credit or debit cards, money in Mercado Pago or with Mercado Credits will be associated.
 ------------
 ----[mlm, mlc, mco, mpe, mlu]----
