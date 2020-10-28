@@ -508,7 +508,12 @@ Sabemos que é importante maximizar a eficácia dos seus anúncios. Por isto, of
 >
 > Nota
 >
+----[mla,mlb]----
 > Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito ou débito, dinheiro no Mercado Pago ou com Mercado Créditos.
+------------
+----[mlm, mlc, mco, mpe, mlu]----
+> Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito ou débito, ou com dinheiro no Mercado Pago.
+------------
 
 ### Associar um pixel do Facebook
 

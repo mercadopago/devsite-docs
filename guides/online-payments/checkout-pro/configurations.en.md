@@ -483,7 +483,12 @@ We know it’s important to maximize your ads effectiveness. For this reason, we
 >
 > Note
 >
+----[mla,mlb]----
 > Only instantly approved payments with credit or debit cards, money in Mercado Pago or with Mercado Credits will be associated.
+------------
+----[mlm, mlc, mco, mpe, mlu]----
+> Only instantly approved payments with credit or debit cards, or with money in Mercado Pago will be associated.
+------------
 
 ### Associate a Facebook Pixel
 
