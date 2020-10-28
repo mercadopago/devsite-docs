@@ -61,7 +61,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Aceite pagamentos com a carteira Mercado Pago
+> Aceite a carteira Mercado Pago
 >
 > Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
